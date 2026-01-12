@@ -31,3 +31,6 @@ dist-ssr
 
 # Playwright screenshots
 .playwright-mcp/
+
+# Local Netlify folder
+.netlify

@@ -182,3 +182,38 @@ export const seedStudents = mutation({
     };
   },
 });
+
+
+/**
+ * Create a single test student user
+ * Username and password will both be the provided value
+ */
+export const createTestStudent = mutation({
+  args: {},
+  handler: async (ctx) => {
+    const username = "student";
+    const password = "student";
+    
+    // Check if user already exists
+    const existing = await ctx.db
+      .query("users")
+      .withIndex("by_username", (q) => q.eq("username", username))
+      .unique();
+
+    if (existing) {
+      return { success: false, message: "User 'student' already exists" };
+    }
+
+    const passwordHash = await hashPassword(password);
+    const userId = await ctx.db.insert("users", {
+      username,
+      passwordHash,
+      displayName: "Test Student",
+      role: "student",
+      batch: "test",
+      createdAt: Date.now(),
+    });
+
+    return { success: true, userId, message: "Created test student (username: student, password: student)" };
+  },
+});

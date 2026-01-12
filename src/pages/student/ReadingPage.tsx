@@ -32,6 +32,12 @@ export function ReadingPage() {
   const [activeTab, setActiveTab] = useState<TabType>("all");
   const [selectedBook, setSelectedBook] = useState<any>(null);
   const [searchQuery, setSearchQuery] = useState("");
+  
+  // Review form state
+  const [showReviewForm, setShowReviewForm] = useState(false);
+  const [reviewRating, setReviewRating] = useState(0);
+  const [reviewText, setReviewText] = useState("");
+  const [isSubmittingReview, setIsSubmittingReview] = useState(false);
 
   // Get all books
   const allBooks = useQuery(api.books.getAll);
@@ -51,6 +57,7 @@ export function ReadingPage() {
   // Mutations
   const startReading = useMutation(api.books.startReading);
   const updateStatus = useMutation(api.books.updateStatus);
+  const addReview = useMutation(api.books.addReview);
 
   const handleStartReading = async (bookId: string) => {
     if (!user) return;
@@ -75,12 +82,46 @@ export function ReadingPage() {
     });
   };
 
+  const handleOpenReviewForm = (existingRating?: number, existingReview?: string) => {
+    setReviewRating(existingRating || 0);
+    setReviewText(existingReview || "");
+    setShowReviewForm(true);
+  };
+
+  const handleSubmitReview = async () => {
+    if (!selectedBook?.myBook?._id || reviewRating === 0) return;
+    
+    setIsSubmittingReview(true);
+    try {
+      await addReview({
+        studentBookId: selectedBook.myBook._id as any,
+        rating: reviewRating,
+        review: reviewText || undefined,
+      });
+      setShowReviewForm(false);
+      // Update the selected book with new review data
+      setSelectedBook({
+        ...selectedBook,
+        myBook: {
+          ...selectedBook.myBook,
+          rating: reviewRating,
+          review: reviewText,
+        },
+      });
+    } catch (error) {
+      console.error("Failed to submit review:", error);
+    } finally {
+      setIsSubmittingReview(false);
+    }
+  };
+
   // Create a map of user's books for quick lookup
   interface StudentBook {
     _id: string;
     bookId: string;
     status: "reading" | "completed" | "presented";
     rating?: number;
+    review?: string;
     book?: any;
   }
   const myBooksMap = new Map<string, StudentBook>(
@@ -518,7 +559,7 @@ export function ReadingPage() {
 
       {/* Book Detail Modal Overlay */}
       <AnimatePresence>
-        {selectedBook && (
+        {selectedBook && !showReviewForm && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -531,7 +572,7 @@ export function ReadingPage() {
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="glass-card p-10 max-w-[600px] w-full max-h-[80vh] overflow-y-auto"
+              className="glass-card p-10 max-w-[600px] w-full max-h-[80vh] overflow-y-auto relative"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Close button */}
@@ -582,21 +623,29 @@ export function ReadingPage() {
                     )}
                   </div>
 
-                  {/* Rating */}
+                  {/* Rating display with edit button */}
                   {selectedBook.myBook?.rating && (
-                    <div className="flex items-center gap-1 mb-4">
-                      {[1, 2, 3, 4, 5].map((star) => (
-                        <span
-                          key={star}
-                          className={`text-xl ${
-                            star <= selectedBook.myBook.rating
-                              ? "text-[#ca8a04]"
-                              : "text-black/10"
-                          }`}
-                        >
-                          ★
-                        </span>
-                      ))}
+                    <div className="flex items-center gap-2 mb-4">
+                      <div className="flex items-center gap-1">
+                        {[1, 2, 3, 4, 5].map((star) => (
+                          <span
+                            key={star}
+                            className={`text-xl ${
+                              star <= selectedBook.myBook.rating
+                                ? "text-[#ca8a04]"
+                                : "text-black/10"
+                            }`}
+                          >
+                            ★
+                          </span>
+                        ))}
+                      </div>
+                      <button
+                        onClick={() => handleOpenReviewForm(selectedBook.myBook.rating, selectedBook.myBook.review)}
+                        className="text-xs opacity-50 hover:opacity-100 transition-opacity underline"
+                      >
+                        Edit
+                      </button>
                     </div>
                   )}
                 </div>
@@ -608,6 +657,26 @@ export function ReadingPage() {
                   <h3 className="font-display text-lg mb-2">About this book</h3>
                   <p className="font-body text-sm opacity-70 leading-relaxed">
                     {selectedBook.description}
+                  </p>
+                </div>
+              )}
+
+              {/* Review section */}
+              {selectedBook.myBook?.review && (
+                <div className="mt-6 p-4 bg-black/5 rounded-xl">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="font-display text-lg">My Review</h3>
+                    <button
+                      onClick={() => handleOpenReviewForm(selectedBook.myBook.rating, selectedBook.myBook.review)}
+                      className="text-xs opacity-50 hover:opacity-100 transition-opacity"
+                    >
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                      </svg>
+                    </button>
+                  </div>
+                  <p className="font-body text-sm opacity-70 italic">
+                    "{selectedBook.myBook.review}"
                   </p>
                 </div>
               )}
@@ -647,22 +716,114 @@ export function ReadingPage() {
                 )}
 
                 {selectedBook.myBook?.status === "completed" && (
-                  <button
-                    onClick={() => handleMarkPresented(selectedBook.myBook._id)}
-                    className="w-full btn btn-primary"
-                  >
-                    I Presented to My Class!
-                  </button>
+                  <>
+                    {!selectedBook.myBook.rating && (
+                      <button
+                        onClick={() => handleOpenReviewForm()}
+                        className="w-full btn btn-secondary"
+                      >
+                        Add Rating & Review
+                      </button>
+                    )}
+                    <button
+                      onClick={() => handleMarkPresented(selectedBook.myBook._id)}
+                      className="w-full btn btn-primary"
+                    >
+                      I Presented to My Class!
+                    </button>
+                  </>
                 )}
 
                 {selectedBook.myBook?.status === "presented" && (
-                  <div className="p-6 bg-[#15803d]/5 rounded-2xl text-center">
-                    <div className="text-[40px] mb-2">✨</div>
-                    <span className="text-[#15803d] font-display italic text-lg">
-                      You've completed this book journey!
-                    </span>
-                  </div>
+                  <>
+                    {!selectedBook.myBook.rating && (
+                      <button
+                        onClick={() => handleOpenReviewForm()}
+                        className="w-full btn btn-secondary mb-3"
+                      >
+                        Add Rating & Review
+                      </button>
+                    )}
+                    <div className="p-6 bg-[#15803d]/5 rounded-2xl text-center">
+                      <div className="text-[40px] mb-2">✨</div>
+                      <span className="text-[#15803d] font-display italic text-lg">
+                        You've completed this book journey!
+                      </span>
+                    </div>
+                  </>
                 )}
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Review Form Overlay */}
+      <AnimatePresence>
+        {showReviewForm && selectedBook?.myBook && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center p-6"
+            style={{ background: "rgba(253, 245, 208, 0.95)" }}
+            onClick={() => setShowReviewForm(false)}
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 20 }}
+              className="w-full max-w-[500px] p-10 text-center"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <h2 className="font-display italic text-[2rem] mb-2">
+                {selectedBook.myBook.rating ? "Edit Your Review" : "Rate & Review"}
+              </h2>
+              <p className="font-body opacity-60 mb-8">{selectedBook.title}</p>
+
+              {/* Star Rating */}
+              <div className="flex items-center justify-center gap-2 mb-8">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <button
+                    key={star}
+                    onClick={() => setReviewRating(star)}
+                    className="text-4xl transition-transform hover:scale-110"
+                  >
+                    <span className={star <= reviewRating ? "text-[#ca8a04]" : "text-black/20"}>
+                      ★
+                    </span>
+                  </button>
+                ))}
+              </div>
+
+              {/* Review Text */}
+              <div className="mb-8">
+                <textarea
+                  value={reviewText}
+                  onChange={(e) => setReviewText(e.target.value)}
+                  placeholder="What did you think about this book? (optional)"
+                  className="w-full bg-transparent border-none outline-none resize-none text-center font-display text-[20px] leading-[1.4] italic text-[#333] placeholder:text-black/30"
+                  rows={4}
+                />
+              </div>
+
+              {/* Actions */}
+              <div className="flex items-center justify-center gap-8">
+                <button
+                  onClick={() => setShowReviewForm(false)}
+                  className="bg-transparent border-none text-[14px] opacity-50 text-[#1a1a1a] cursor-pointer hover:opacity-100 transition-opacity"
+                  disabled={isSubmittingReview}
+                >
+                  CANCEL
+                </button>
+                <button
+                  onClick={handleSubmitReview}
+                  disabled={reviewRating === 0 || isSubmittingReview}
+                  className="btn btn-primary disabled:opacity-50"
+                  style={{ padding: "16px 48px" }}
+                >
+                  {isSubmittingReview ? "SAVING..." : "SAVE REVIEW"}
+                </button>
               </div>
             </motion.div>
           </motion.div>

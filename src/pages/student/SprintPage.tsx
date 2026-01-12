@@ -21,6 +21,15 @@ function getHabitButtonStyle(isCompleted: boolean, isToday: boolean): string {
   return "border-black/20";
 }
 
+// Edit icon SVG component
+function EditIcon({ className = "w-4 h-4" }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+    </svg>
+  );
+}
+
 /**
  * Sprint Page - Paper UI Kanban Design
  * 3-column layout: Rituals (habits), Objectives (goals), Flow (tasks)
@@ -32,6 +41,13 @@ export function SprintPage() {
   const [showTaskAssigner, setShowTaskAssigner] = useState(false);
   const [newGoalId, setNewGoalId] = useState<string | null>(null);
   const [newGoalTitle, setNewGoalTitle] = useState("");
+
+  // Edit states
+  const [editingGoal, setEditingGoal] = useState<any>(null);
+  const [editingHabit, setEditingHabit] = useState<any>(null);
+  // Inline edit state for action items (stores item ID being edited)
+  const [inlineEditItemId, setInlineEditItemId] = useState<string | null>(null);
+  const [inlineEditTitle, setInlineEditTitle] = useState("");
 
   // Get active sprint
   const activeSprint = useQuery(api.sprints.getActive);
@@ -53,8 +69,11 @@ export function SprintPage() {
 
   // Mutations
   const createGoal = useMutation(api.goals.create);
+  const updateGoal = useMutation(api.goals.update);
   const toggleActionItem = useMutation(api.goals.toggleActionItem);
+  const updateActionItem = useMutation(api.goals.updateActionItem);
   const createHabit = useMutation(api.habits.create);
+  const updateHabit = useMutation(api.habits.update);
   const toggleHabitCompletion = useMutation(api.habits.toggleCompletion);
 
   const handleCreateGoal = async (goalData: any) => {
@@ -74,8 +93,37 @@ export function SprintPage() {
     }
   };
 
+  const handleUpdateGoal = async (goalData: any) => {
+    if (!editingGoal) return;
+    await updateGoal({
+      goalId: editingGoal._id,
+      ...goalData,
+    });
+    setEditingGoal(null);
+  };
+
   const handleToggleAction = async (itemId: string) => {
     await toggleActionItem({ itemId: itemId as any });
+  };
+
+  const handleUpdateActionItem = async () => {
+    if (!inlineEditItemId || !inlineEditTitle.trim()) return;
+    await updateActionItem({
+      itemId: inlineEditItemId as any,
+      title: inlineEditTitle.trim(),
+    });
+    setInlineEditItemId(null);
+    setInlineEditTitle("");
+  };
+
+  const startInlineEdit = (item: any) => {
+    setInlineEditItemId(item._id);
+    setInlineEditTitle(item.title);
+  };
+
+  const cancelInlineEdit = () => {
+    setInlineEditItemId(null);
+    setInlineEditTitle("");
   };
 
   const handleToggleHabit = async (habitId: string, date: string) => {
@@ -85,6 +133,15 @@ export function SprintPage() {
       userId: user._id as any,
       date,
     });
+  };
+
+  const handleUpdateHabit = async (data: any) => {
+    if (!editingHabit) return;
+    await updateHabit({
+      habitId: editingHabit._id as any,
+      ...data,
+    });
+    setEditingHabit(null);
   };
 
   // No active sprint
@@ -176,8 +233,17 @@ export function SprintPage() {
 
           {habits && habits.length > 0 ? (
             habits.map((habit: any) => (
-              <div key={habit._id} className="card-white">
-                <strong className="font-display text-[20px] block mb-3">{habit.name}</strong>
+              <div key={habit._id} className="card-white group">
+                <div className="flex justify-between items-start mb-3">
+                  <strong className="font-display text-[20px] block">{habit.name}</strong>
+                  <button
+                    onClick={() => setEditingHabit(habit)}
+                    className="opacity-0 group-hover:opacity-60 hover:!opacity-100 transition-opacity p-1"
+                    title="Edit ritual"
+                  >
+                    <EditIcon />
+                  </button>
+                </div>
                 <div className="flex gap-2">
                   {weekDates.map((date) => {
                     const isCompleted = habit.completions?.some(
@@ -237,17 +303,26 @@ export function SprintPage() {
 
           {goals && goals.length > 0 ? (
             goals.map((goal: any) => {
-              const completedItems = goal.actionItems?.filter((i: any) => i.completed).length || 0;
+              const completedItems = goal.actionItems?.filter((i: any) => i.isCompleted).length || 0;
               const totalItems = goal.actionItems?.length || 0;
               const progress = totalItems > 0 ? (completedItems / totalItems) * 100 : 0;
 
               return (
-                <div key={goal._id} className="card-white p-6">
-                  <span
-                    className={`text-[10px] font-bold tracking-[0.1em] uppercase block mb-2 ${goalStatusColors[goal.status as GoalStatus]}`}
-                  >
-                    {goalStatusLabels[goal.status as GoalStatus]}
-                  </span>
+                <div key={goal._id} className="card-white p-6 group">
+                  <div className="flex justify-between items-start mb-2">
+                    <span
+                      className={`text-[10px] font-bold tracking-[0.1em] uppercase ${goalStatusColors[goal.status as GoalStatus]}`}
+                    >
+                      {goalStatusLabels[goal.status as GoalStatus]}
+                    </span>
+                    <button
+                      onClick={() => setEditingGoal(goal)}
+                      className="opacity-0 group-hover:opacity-60 hover:!opacity-100 transition-opacity p-1"
+                      title="Edit objective"
+                    >
+                      <EditIcon />
+                    </button>
+                  </div>
                   <h3 className="font-display text-[24px] mb-4">{goal.title}</h3>
                   <div className="h-2 bg-black/5 rounded-full overflow-hidden">
                     <motion.div
@@ -296,38 +371,80 @@ export function SprintPage() {
           </div>
 
           {allActionItems.length > 0 ? (
-            allActionItems.slice(0, 5).map((item: any, index: number) => (
-              <motion.div
-                key={item._id || index}
-                whileHover={{ x: 4 }}
-                className={`card-white flex gap-4 items-center cursor-pointer ${
-                  item.completed ? "opacity-60" : ""
-                }`}
-                onClick={() => handleToggleAction(item._id)}
-              >
-                <div
-                  className={`w-6 h-6 rounded-full border flex-shrink-0 flex items-center justify-center transition-all ${
-                    item.completed
-                      ? "bg-[#1a1a1a] border-[#1a1a1a]"
-                      : "border-black/20"
+            allActionItems.slice(0, 5).map((item: any, index: number) => {
+              const isEditing = inlineEditItemId === item._id;
+              
+              return (
+                <motion.div
+                  key={item._id || index}
+                  whileHover={isEditing ? {} : { x: 4 }}
+                  className={`card-white flex gap-4 items-center group ${
+                    item.isCompleted ? "opacity-60" : ""
                   }`}
                 >
-                  {item.completed && (
-                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                    </svg>
+                  <div
+                    onClick={() => !isEditing && handleToggleAction(item._id)}
+                    className={`w-6 h-6 rounded-full border flex-shrink-0 flex items-center justify-center cursor-pointer transition-all ${
+                      item.isCompleted
+                        ? "bg-[#1a1a1a] border-[#1a1a1a]"
+                        : "border-black/20"
+                    }`}
+                  >
+                    {item.isCompleted && (
+                      <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                      </svg>
+                    )}
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    {isEditing ? (
+                      <input
+                        type="text"
+                        value={inlineEditTitle}
+                        onChange={(e) => setInlineEditTitle(e.target.value)}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter") {
+                            e.preventDefault();
+                            handleUpdateActionItem();
+                          } else if (e.key === "Escape") {
+                            cancelInlineEdit();
+                          }
+                        }}
+                        onBlur={() => {
+                          // Save on blur if there's a change
+                          if (inlineEditTitle.trim() && inlineEditTitle !== item.title) {
+                            handleUpdateActionItem();
+                          } else {
+                            cancelInlineEdit();
+                          }
+                        }}
+                        autoFocus
+                        className="w-full text-[16px] bg-transparent border-b border-[#1a1a1a]/30 focus:border-[#1a1a1a] outline-none py-1"
+                      />
+                    ) : (
+                      <div className={`text-[16px] ${item.isCompleted ? "line-through" : ""}`}>
+                        {item.title}
+                      </div>
+                    )}
+                    <div className="text-[10px] mt-1 uppercase tracking-[0.05em] opacity-50">
+                      {item.goalTitle} • Today
+                    </div>
+                  </div>
+                  {!isEditing && (
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        startInlineEdit(item);
+                      }}
+                      className="opacity-0 group-hover:opacity-60 hover:!opacity-100 transition-opacity p-1 flex-shrink-0"
+                      title="Edit task"
+                    >
+                      <EditIcon className="w-3.5 h-3.5" />
+                    </button>
                   )}
-                </div>
-                <div>
-                  <div className={`text-[16px] ${item.completed ? "line-through" : ""}`}>
-                    {item.text}
-                  </div>
-                  <div className="text-[10px] mt-1 uppercase tracking-[0.05em] opacity-50">
-                    {item.goalTitle} • Today
-                  </div>
-                </div>
-              </motion.div>
-            ))
+                </motion.div>
+              );
+            })
           ) : (
             <div className="card-white text-center py-6">
               <p className="opacity-60 text-sm">
@@ -344,7 +461,7 @@ export function SprintPage() {
         </div>
       </div>
 
-      {/* Goal Editor Modal */}
+      {/* Create Goal Modal */}
       <Modal
         isOpen={showGoalEditor}
         onClose={() => setShowGoalEditor(false)}
@@ -357,7 +474,30 @@ export function SprintPage() {
         />
       </Modal>
 
-      {/* Habit Form Modal */}
+      {/* Edit Goal Modal */}
+      <Modal
+        isOpen={!!editingGoal}
+        onClose={() => setEditingGoal(null)}
+        title="Edit Objective"
+        size="lg"
+      >
+        {editingGoal && (
+          <GoalEditor
+            onSave={handleUpdateGoal}
+            onCancel={() => setEditingGoal(null)}
+            initialData={{
+              title: editingGoal.title,
+              specific: editingGoal.specific,
+              measurable: editingGoal.measurable,
+              achievable: editingGoal.achievable,
+              relevant: editingGoal.relevant,
+              timeBound: editingGoal.timeBound,
+            }}
+          />
+        )}
+      </Modal>
+
+      {/* Create Habit Form Modal */}
       <AnimatePresence>
         {showHabitForm && (
           <HabitFormOverlay
@@ -371,6 +511,22 @@ export function SprintPage() {
               setShowHabitForm(false);
             }}
             onClose={() => setShowHabitForm(false)}
+          />
+        )}
+      </AnimatePresence>
+
+      {/* Edit Habit Form Modal */}
+      <AnimatePresence>
+        {editingHabit && (
+          <HabitFormOverlay
+            onSave={handleUpdateHabit}
+            onClose={() => setEditingHabit(null)}
+            initialData={{
+              name: editingHabit.name,
+              whatIsHabit: editingHabit.whatIsHabit || "",
+              howToPractice: editingHabit.howToPractice || "",
+            }}
+            isEditing
           />
         )}
       </AnimatePresence>
@@ -398,13 +554,17 @@ export function SprintPage() {
 function HabitFormOverlay({
   onSave,
   onClose,
+  initialData,
+  isEditing = false,
 }: {
   onSave: (data: any) => void;
   onClose: () => void;
+  initialData?: { name: string; whatIsHabit: string; howToPractice: string };
+  isEditing?: boolean;
 }) {
-  const [name, setName] = useState("");
-  const [whatIsHabit, setWhatIsHabit] = useState("");
-  const [howToPractice, setHowToPractice] = useState("");
+  const [name, setName] = useState(initialData?.name || "");
+  const [whatIsHabit, setWhatIsHabit] = useState(initialData?.whatIsHabit || "");
+  const [howToPractice, setHowToPractice] = useState(initialData?.howToPractice || "");
 
   return (
     <motion.div
@@ -416,7 +576,7 @@ function HabitFormOverlay({
     >
       <div className="w-full max-w-[500px] p-10">
         <h2 className="font-display italic text-[2rem] text-center mb-10">
-          New Ritual
+          {isEditing ? "Edit Ritual" : "New Ritual"}
         </h2>
 
         <div className="space-y-6">
@@ -467,7 +627,7 @@ function HabitFormOverlay({
             className="btn btn-primary disabled:opacity-50"
             style={{ padding: "16px 48px" }}
           >
-            ADD RITUAL
+            {isEditing ? "SAVE CHANGES" : "ADD RITUAL"}
           </button>
         </div>
       </div>

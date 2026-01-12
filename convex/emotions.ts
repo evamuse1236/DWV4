@@ -46,6 +46,31 @@ export const saveCheckIn = mutation({
   },
 });
 
+
+/**
+ * Update an existing emotion check-in
+ */
+export const updateCheckIn = mutation({
+  args: {
+    checkInId: v.id("emotionCheckIns"),
+    categoryId: v.optional(v.id("emotionCategories")),
+    subcategoryId: v.optional(v.id("emotionSubcategories")),
+    journalEntry: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    const { checkInId, ...updates } = args;
+    const checkIn = await ctx.db.get(checkInId);
+    if (!checkIn) return { success: false };
+
+    const filteredUpdates = Object.fromEntries(
+      Object.entries(updates).filter(([_, v]) => v !== undefined)
+    );
+
+    await ctx.db.patch(checkInId, filteredUpdates);
+    return { success: true };
+  },
+});
+
 /**
  * Get today's check-in for a user
  */

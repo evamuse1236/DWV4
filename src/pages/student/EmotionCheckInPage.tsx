@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useMutation, useQuery } from "convex/react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -89,11 +89,13 @@ export function EmotionCheckInPage() {
   const navigate = useNavigate();
   const { user } = useAuth();
   const saveCheckIn = useMutation(api.emotions.saveCheckIn);
+  const updateCheckIn = useMutation(api.emotions.updateCheckIn);
 
   const [selectedEmotion, setSelectedEmotion] = useState<typeof emotions[0] | null>(null);
   const [journalEntry, setJournalEntry] = useState("");
   const [showJournal, setShowJournal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isEditing, setIsEditing] = useState(false);
 
   // Query emotion categories from Convex
   const categories = useQuery(api.emotions.getCategories);
@@ -103,6 +105,13 @@ export function EmotionCheckInPage() {
     api.emotions.getTodayCheckIn,
     user ? { userId: user._id as any } : "skip"
   );
+
+  // When editing, pre-fill the journal entry
+  useEffect(() => {
+    if (isEditing && todayCheckIn?.journalEntry) {
+      setJournalEntry(todayCheckIn.journalEntry);
+    }
+  }, [isEditing, todayCheckIn?.journalEntry]);
 
   const handleEmotionClick = (emotion: typeof emotions[0]) => {
     setSelectedEmotion(emotion);
@@ -127,12 +136,23 @@ export function EmotionCheckInPage() {
       const subcategoryId = category?.subcategories?.[0]?._id || categories?.[0]?.subcategories?.[0]?._id;
 
       if (categoryId && subcategoryId) {
-        await saveCheckIn({
-          userId: user._id as any,
-          categoryId: categoryId as any,
-          subcategoryId: subcategoryId as any,
-          journalEntry: journalEntry || undefined,
-        });
+        if (isEditing && todayCheckIn?._id) {
+          // Update existing check-in
+          await updateCheckIn({
+            checkInId: todayCheckIn._id as any,
+            categoryId: categoryId as any,
+            subcategoryId: subcategoryId as any,
+            journalEntry: journalEntry || undefined,
+          });
+        } else {
+          // Create new check-in
+          await saveCheckIn({
+            userId: user._id as any,
+            categoryId: categoryId as any,
+            subcategoryId: subcategoryId as any,
+            journalEntry: journalEntry || undefined,
+          });
+        }
       }
 
       // Navigate to dashboard
@@ -148,10 +168,19 @@ export function EmotionCheckInPage() {
     setShowJournal(false);
     setJournalEntry("");
     setSelectedEmotion(null);
+    setIsEditing(false);
   };
 
-  // If already checked in today
-  if (todayCheckIn) {
+  const handleEditClick = () => {
+    setIsEditing(true);
+    // Pre-fill with existing journal entry
+    if (todayCheckIn?.journalEntry) {
+      setJournalEntry(todayCheckIn.journalEntry);
+    }
+  };
+
+  // If already checked in today (and not editing)
+  if (todayCheckIn && !isEditing) {
     return (
       <div>
         <div className="text-center mb-20 fade-in-up">
@@ -179,12 +208,20 @@ export function EmotionCheckInPage() {
             )}
           </div>
 
-          <button
-            onClick={() => navigate("/dashboard")}
-            className="btn btn-secondary"
-          >
-            Back to Dashboard
-          </button>
+          <div className="flex items-center justify-center gap-4">
+            <button
+              onClick={handleEditClick}
+              className="btn btn-secondary"
+            >
+              Edit Check-in
+            </button>
+            <button
+              onClick={() => navigate("/dashboard")}
+              className="btn btn-primary"
+            >
+              Go to Dashboard
+            </button>
+          </div>
         </div>
       </div>
     );
@@ -196,7 +233,7 @@ export function EmotionCheckInPage() {
         {/* Header */}
         <div className="text-center mb-20 fade-in-up">
           <span className="font-display italic text-[24px] text-[#888]">
-            Step 1 of 2: Awareness
+            {isEditing ? "Edit Check-in" : "Step 1 of 2: Awareness"}
           </span>
           <h1 className="text-[4rem] mt-[10px]">
             How does your spirit<br />
@@ -232,6 +269,21 @@ export function EmotionCheckInPage() {
             </motion.div>
           ))}
         </div>
+
+        {/* Cancel edit button */}
+        {isEditing && (
+          <div className="text-center mt-8">
+            <button
+              onClick={() => {
+                setIsEditing(false);
+                setJournalEntry("");
+              }}
+              className="text-sm opacity-50 hover:opacity-100 transition-opacity"
+            >
+              Cancel Edit
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Full Screen Journal Overlay */}
@@ -256,7 +308,7 @@ export function EmotionCheckInPage() {
                 className="mb-10"
               >
                 <span className="font-display italic text-[24px]">
-                  Exploring: {selectedEmotion.name}
+                  {isEditing ? "Editing" : "Exploring"}: {selectedEmotion.name}
                 </span>
               </motion.div>
 
@@ -295,7 +347,7 @@ export function EmotionCheckInPage() {
                     padding: "16px 48px",
                   }}
                 >
-                  {isSubmitting ? "SAVING..." : "SAVE ENTRY"}
+                  {isSubmitting ? "SAVING..." : isEditing ? "UPDATE ENTRY" : "SAVE ENTRY"}
                 </button>
               </motion.div>
             </div>

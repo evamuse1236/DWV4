@@ -183,6 +183,32 @@ export const toggleActionItem = mutation({
   },
 });
 
+
+/**
+ * Update an action item's content or schedule
+ */
+export const updateActionItem = mutation({
+  args: {
+    itemId: v.id("actionItems"),
+    title: v.optional(v.string()),
+    description: v.optional(v.string()),
+    weekNumber: v.optional(v.number()),
+    dayOfWeek: v.optional(v.number()),
+  },
+  handler: async (ctx, args) => {
+    const { itemId, ...updates } = args;
+    const item = await ctx.db.get(itemId);
+    if (!item) return { success: false };
+
+    const filteredUpdates = Object.fromEntries(
+      Object.entries(updates).filter(([_, v]) => v !== undefined)
+    );
+    
+    await ctx.db.patch(itemId, filteredUpdates);
+    return { success: true };
+  },
+});
+
 /**
  * Delete an action item
  */
