@@ -84,14 +84,8 @@ export function LoginPage() {
           {/* Logo / Title */}
           <div className="mb-12">
             <h1 className="font-display text-[40px] leading-none text-[#1a1a1a]">
-              Deep Work
+              DeepWork
             </h1>
-            <p
-              className="mt-2 text-[11px] uppercase tracking-[0.2em]"
-              style={{ color: "#888" }}
-            >
-              Sanctuary for the Mind
-            </p>
           </div>
 
           {/* First-run setup banner */}
@@ -152,7 +146,7 @@ export function LoginPage() {
                 autoComplete="username"
                 disabled={isLoading}
               />
-              <label className="input-label-floating">Identity</label>
+              <label className="input-label-floating">Username</label>
             </div>
 
             {/* Password Input */}
@@ -166,7 +160,7 @@ export function LoginPage() {
                 autoComplete="current-password"
                 disabled={isLoading}
               />
-              <label className="input-label-floating">Key</label>
+              <label className="input-label-floating">Password</label>
             </div>
 
             {/* Submit Button */}
@@ -185,7 +179,7 @@ export function LoginPage() {
                 transition: "transform 0.2s",
               }}
             >
-              {isLoading ? "Opening..." : "Enter Sanctuary"}
+              {isLoading ? "Logging in..." : "Login"}
             </button>
           </form>
 

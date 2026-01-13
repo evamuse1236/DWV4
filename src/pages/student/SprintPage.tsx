@@ -225,7 +225,7 @@ export function SprintPage() {
         {/* COLUMN 1: Rituals (Habits) */}
         <div className="pastel-card pastel-blue p-8">
           <div className="flex justify-between items-center mb-6">
-            <h2 className="text-[24px] m-0">Rituals</h2>
+            <h2 className="text-[24px] m-0">Habits</h2>
             <svg className="w-5 h-5 opacity-40" fill="currentColor" viewBox="0 0 24 24">
               <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
             </svg>
@@ -239,7 +239,7 @@ export function SprintPage() {
                   <button
                     onClick={() => setEditingHabit(habit)}
                     className="opacity-0 group-hover:opacity-60 hover:!opacity-100 transition-opacity p-1"
-                    title="Edit ritual"
+                    title="Edit habit"
                   >
                     <EditIcon />
                   </button>
@@ -277,7 +277,7 @@ export function SprintPage() {
                 onClick={() => setShowHabitForm(true)}
                 className="btn btn-secondary text-xs"
               >
-                + Add Ritual
+                + Add Habit
               </button>
             </div>
           )}
@@ -287,7 +287,7 @@ export function SprintPage() {
               onClick={() => setShowHabitForm(true)}
               className="w-full mt-4 py-3 border border-dashed border-black/10 rounded-xl text-sm opacity-50 hover:opacity-100 transition-opacity"
             >
-              + Add Ritual
+              + Add Habit
             </button>
           )}
         </div>
@@ -295,7 +295,7 @@ export function SprintPage() {
         {/* COLUMN 2: Objectives (Goals) */}
         <div className="pastel-card pastel-green p-8">
           <div className="flex justify-between items-center mb-6">
-            <h2 className="text-[24px] m-0">Objectives</h2>
+            <h2 className="text-[24px] m-0">Goals</h2>
             <svg className="w-5 h-5 opacity-40" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
@@ -318,7 +318,7 @@ export function SprintPage() {
                     <button
                       onClick={() => setEditingGoal(goal)}
                       className="opacity-0 group-hover:opacity-60 hover:!opacity-100 transition-opacity p-1"
-                      title="Edit objective"
+                      title="Edit goal"
                     >
                       <EditIcon />
                     </button>
@@ -341,12 +341,12 @@ export function SprintPage() {
             })
           ) : (
             <div className="card-white text-center py-6">
-              <p className="opacity-60 text-sm mb-3">No objectives yet</p>
+              <p className="opacity-60 text-sm mb-3">No goals yet</p>
               <button
                 onClick={() => setShowGoalEditor(true)}
                 className="btn btn-secondary text-xs"
               >
-                + Add Objective
+                + Add Goal
               </button>
             </div>
           )}
@@ -356,7 +356,7 @@ export function SprintPage() {
               onClick={() => setShowGoalEditor(true)}
               className="w-full mt-4 py-3 border border-dashed border-black/10 rounded-xl text-sm opacity-50 hover:opacity-100 transition-opacity"
             >
-              + Add Objective
+              + Add Goal
             </button>
           )}
         </div>
@@ -364,7 +364,7 @@ export function SprintPage() {
         {/* COLUMN 3: Flow (Tasks) */}
         <div className="pastel-card pastel-purple p-8">
           <div className="flex justify-between items-center mb-6">
-            <h2 className="text-[24px] m-0">Flow</h2>
+            <h2 className="text-[24px] m-0">Actions</h2>
             <svg className="w-5 h-5 opacity-40" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
@@ -465,7 +465,7 @@ export function SprintPage() {
       <Modal
         isOpen={showGoalEditor}
         onClose={() => setShowGoalEditor(false)}
-        title="Create Objective"
+        title="Create Goal"
         size="lg"
       >
         <GoalEditor
@@ -478,7 +478,7 @@ export function SprintPage() {
       <Modal
         isOpen={!!editingGoal}
         onClose={() => setEditingGoal(null)}
-        title="Edit Objective"
+        title="Edit Goal"
         size="lg"
       >
         {editingGoal && (
@@ -576,7 +576,7 @@ function HabitFormOverlay({
     >
       <div className="w-full max-w-[500px] p-10">
         <h2 className="font-display italic text-[2rem] text-center mb-10">
-          {isEditing ? "Edit Ritual" : "New Ritual"}
+          {isEditing ? "Edit Habit" : "New Habit"}
         </h2>
 
         <div className="space-y-6">
@@ -588,7 +588,7 @@ function HabitFormOverlay({
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
-            <label className="input-label-floating">Ritual Name</label>
+            <label className="input-label-floating">Habit Name</label>
           </div>
 
           <div className="input-minimal-group">
@@ -599,7 +599,7 @@ function HabitFormOverlay({
               value={whatIsHabit}
               onChange={(e) => setWhatIsHabit(e.target.value)}
             />
-            <label className="input-label-floating">What is this ritual?</label>
+            <label className="input-label-floating">What is this habit?</label>
           </div>
 
           <div className="input-minimal-group">
@@ -627,7 +627,7 @@ function HabitFormOverlay({
             className="btn btn-primary disabled:opacity-50"
             style={{ padding: "16px 48px" }}
           >
-            {isEditing ? "SAVE CHANGES" : "ADD RITUAL"}
+            {isEditing ? "SAVE CHANGES" : "ADD HABIT"}
           </button>
         </div>
       </div>

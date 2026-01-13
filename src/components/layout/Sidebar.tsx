@@ -66,8 +66,8 @@ const Icons = {
 const studentNavItems: NavItem[] = [
   { path: "/dashboard", label: "Home", icon: Icons.home },
   { path: "/sprint", label: "Sprint", icon: Icons.listChecks },
-  { path: "/deep-work", label: "Deep Work", icon: Icons.book },
-  { path: "/reading", label: "Reading", icon: Icons.books },
+  { path: "/deep-work", label: "DeepWork", icon: Icons.book },
+  { path: "/reading", label: "Library", icon: Icons.books },
 ];
 
 // Admin navigation items
@@ -94,7 +94,7 @@ export function Sidebar() {
     <aside className="sidebar">
       {/* Logo */}
       <div className="font-display italic text-[28px] mb-[60px] text-[#1a1a1a]">
-        Deep Work
+        DeepWork
       </div>
 
       {/* Navigation */}
