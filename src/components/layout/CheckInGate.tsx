@@ -121,7 +121,7 @@ export function CheckInGate({ children }: CheckInGateProps) {
   const handleQuadrantClick = (key: QuadrantKey) => {
     if (activeQuadrant === key) return;
     setActiveQuadrant(key);
-    setSelectedShades([]); // Clear selections when changing quadrant
+    // Selections persist across quadrants - users can select from multiple palettes
   };
 
   // Toggle shade selection (multi-select)
@@ -298,20 +298,25 @@ export function CheckInGate({ children }: CheckInGateProps) {
                     className={`shade-tile ${isShadeSelected(shade) ? "selected" : ""}`}
                     style={{
                       backgroundColor: shade.color,
-                      border: isShadeSelected(shade) ? "3px solid #1a1a1a" : "1px solid rgba(255,255,255,0.5)",
-                      transform: isShadeSelected(shade) ? "scale(1.05)" : "scale(1)",
+                      border: isShadeSelected(shade)
+                        ? "2px solid rgba(255, 255, 255, 0.9)"
+                        : "1px solid rgba(255,255,255,0.5)",
+                      boxShadow: isShadeSelected(shade)
+                        ? `0 0 20px 8px ${shade.color}80, 0 0 40px 16px ${shade.color}40, inset 0 0 20px rgba(255,255,255,0.3)`
+                        : "0 4px 6px rgba(0, 0, 0, 0.02)",
+                      transform: isShadeSelected(shade) ? "scale(1.08)" : "scale(1)",
                     }}
                     initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: isShadeSelected(shade) ? 1.05 : 1 }}
+                    animate={{
+                      opacity: 1,
+                      scale: isShadeSelected(shade) ? 1.08 : 1,
+                    }}
                     transition={{ delay: idx * 0.03 }}
                     onClick={() => handleShadeClick(shade)}
                     onMouseEnter={(e) => showTooltip(e, shade.def)}
                     onMouseLeave={hideTooltip}
                   >
                     {shade.name}
-                    {isShadeSelected(shade) && (
-                      <span className="absolute top-2 right-2 text-sm">✓</span>
-                    )}
                   </motion.div>
                 ))}
               </motion.div>
