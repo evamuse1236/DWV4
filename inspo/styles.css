@@ -1,0 +1,839 @@
+/* =============================================================================
+   PAPER UI - ARTFUL (Inspo Adaptation)
+   ============================================================================= */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Lato:wght@300;400;700&family=Material+Icons+Outlined&display=swap');
+
+:root {
+    /* Colors - Inspo Palette */
+    --primary: #a8c5b5;
+    /* Sage Green */
+    --secondary: #f2c6c2;
+    /* Blush Pink */
+    --tertiary: #e8d5b5;
+    /* Beige */
+    --accent: #8eb8bf;
+    /* Muted Teal */
+
+    --bg-color: #fdfbf7;
+    /* Warm Off-White */
+    --text-color: #2f3a46;
+    --text-muted: #6b7280;
+
+    /* User Pastels (Retained but softened) */
+    --pastel-green: rgba(240, 255, 235, 0.6);
+    --pastel-blue: rgba(235, 241, 255, 0.6);
+    --pastel-yellow: rgba(253, 245, 208, 0.6);
+    --pastel-purple: rgba(238, 228, 241, 0.6);
+    --pastel-orange: rgba(255, 234, 214, 0.6);
+    --pastel-pink: rgba(251, 218, 220, 0.6);
+
+    /* Typography */
+    --font-display: 'Cormorant Garamond', serif;
+    --font-body: 'Lato', sans-serif;
+
+    /* Spacing & Radius */
+    --radius-lg: 24px;
+    --radius-xl: 40px;
+    /* More organic */
+
+    /* Glassmorphism */
+    --glass-bg: rgba(255, 255, 255, 0.4);
+    --glass-border: rgba(255, 255, 255, 0.6);
+    --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+    --backdrop-blur: blur(12px);
+
+    /* Texture */
+    --watercolor-texture: url('https://www.transparenttextures.com/patterns/watercolor.png');
+}
+
+/* Base */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-color);
+    background-image: var(--watercolor-texture);
+    color: var(--text-color);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Ambient Background Blobs (Fixed) */
+body::before {
+    content: "";
+    position: fixed;
+    top: -10%;
+    left: -10%;
+    width: 50vw;
+    height: 50vw;
+    background: var(--tertiary);
+    opacity: 0.4;
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: -1;
+    animation: float 20s infinite ease-in-out;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    bottom: -10%;
+    right: -5%;
+    width: 60vw;
+    height: 60vw;
+    background: var(--accent);
+    opacity: 0.3;
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: -1;
+    animation: float 25s infinite ease-in-out reverse;
+}
+
+/* GLOBAL CINEMA POLISH */
+
+/* 1. Paper Grain Texture */
+html::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Base64 Noise Texture for performance */
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='1'/%3E%3C/svg%3E");
+    opacity: 0.04;
+    z-index: 9999;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+}
+
+/* 2. Editorial Selection */
+::selection {
+    background: var(--secondary);
+    /* Blush Pink */
+    color: #1a1a1a;
+}
+
+/* 3. Minimal Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* 4. Tactile Interactions */
+.btn:active,
+.card:active,
+.book-3d-wrapper:active {
+    transform: scale(0.98);
+}
+
+.btn {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(20px, 20px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* Typography Overrides */
+h1,
+h2,
+h3,
+h4,
+.font-display {
+    font-family: var(--font-display);
+    font-weight: 400;
+    /* Lighter weight for elegance */
+    letter-spacing: -0.01em;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* -----------------------------------------------------------------------------
+   ARTFUL COMPONENTS (Glass & Organic)
+   ----------------------------------------------------------------------------- */
+
+/* Sidebar (Transparent & Ethereal) */
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    z-index: 50;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), transparent);
+    /* Fade out */
+    backdrop-filter: blur(4px);
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 0;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-family: var(--font-body);
+    font-size: 16px;
+    transition: all 0.3s ease;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    color: var(--text-color);
+    transform: translateX(4px);
+}
+
+.nav-link.active {
+    color: var(--text-color);
+}
+
+.nav-link i {
+    font-size: 20px;
+}
+
+/* LAYOUT GRIDS */
+.page-wrapper {
+    margin-left: 260px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+}
+
+/* GRID SYSTEMS (Retained but styled artfully) */
+.emotion-grid,
+.bento-grid,
+.kanban-grid {
+    display: grid;
+    gap: 32px;
+    width: 100%;
+}
+
+.emotion-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.bento-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, minmax(200px, auto));
+}
+
+.kanban-grid {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+}
+
+@media (max-width: 900px) {
+
+    .emotion-grid,
+    .bento-grid,
+    .kanban-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ARTFUL GLASS CARDS */
+.pastel-card,
+.pastel-col {
+    background: var(--glass-bg);
+    backdrop-filter: var(--backdrop-blur);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    border-radius: var(--radius-xl);
+    /* Big organic curves */
+    transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Apply specific tints essentially as overlays or gradient hints */
+.pastel-green {
+    background: linear-gradient(135deg, var(--pastel-green), rgba(255, 255, 255, 0.4));
+}
+
+.pastel-blue {
+    background: linear-gradient(135deg, var(--pastel-blue), rgba(255, 255, 255, 0.4));
+}
+
+.pastel-yellow {
+    background: linear-gradient(135deg, var(--pastel-yellow), rgba(255, 255, 255, 0.4));
+}
+
+.pastel-purple {
+    background: linear-gradient(135deg, var(--pastel-purple), rgba(255, 255, 255, 0.4));
+}
+
+.pastel-orange {
+    background: linear-gradient(135deg, var(--pastel-orange), rgba(255, 255, 255, 0.4));
+}
+
+.pastel-pink {
+    background: linear-gradient(135deg, var(--pastel-pink), rgba(255, 255, 255, 0.4));
+}
+
+.pastel-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 16px 40px 0 rgba(31, 38, 135, 0.1);
+    border-color: #fff;
+}
+
+.pastel-card h3 {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 28px;
+    margin-bottom: 4px;
+    color: #1a1a1a;
+}
+
+/* WHITE CARDS (Inner Items) */
+.card-white {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    margin-bottom: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    transition: transform 0.2s;
+}
+
+.card-white:hover {
+    transform: translateX(4px);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* Buttons & Chips */
+.pricing-cta,
+button {
+    font-family: var(--font-body);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* JOURNAL OVERLAY (Clean & Crisp) */
+.journal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s ease;
+}
+
+.journal-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.minimal-input {
+    font-family: var(--font-display);
+    font-size: 32px;
+    line-height: 1.4;
+    color: #333;
+    font-style: italic;
+}
+
+/* Animations */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.delay-1 {
+    animation-delay: 0.1s;
+}
+
+.delay-2 {
+    animation-delay: 0.2s;
+}
+
+/* RITUAL & DEEP WORK STYLES */
+.breathing-glow {
+    animation: breathe 4s ease-in-out infinite;
+}
+
+@keyframes breathe {
+    0% {
+        box-shadow: 0 0 0 0 rgba(168, 197, 181, 0.4);
+        transform: scale(1);
+    }
+
+    50% {
+        box-shadow: 0 0 20px 10px rgba(168, 197, 181, 0.2);
+        transform: scale(1.02);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(168, 197, 181, 0.4);
+        transform: scale(1);
+    }
+}
+
+.ritual-step {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.ritual-step::before {
+    content: "";
+    position: absolute;
+    left: 19px;
+    top: 40px;
+    bottom: -40px;
+    width: 2px;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.ritual-step:last-child::before {
+    display: none;
+}
+
+.ritual-number {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 20px;
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+/* 3D BOOK STYLES */
+.book-3d-wrapper {
+    perspective: 1000px;
+    height: 320px;
+    width: 220px;
+    cursor: pointer;
+}
+
+.book-cover-3d {
+    width: 100%;
+    height: 100%;
+    background: #eee;
+    border-radius: 4px 12px 12px 4px;
+    box-shadow:
+        5px 5px 15px rgba(0, 0, 0, 0.1),
+        inset 4px 0 10px rgba(0, 0, 0, 0.1);
+    /* Spine shadow */
+    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s;
+    transform: rotateY(-20deg) scale(0.9);
+    position: relative;
+    transform-style: preserve-3d;
+    background-size: cover;
+    background-position: center;
+}
+
+.book-3d-wrapper:hover .book-cover-3d {
+    transform: rotateY(0deg) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+.book-cover-3d::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 12px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0));
+    z-index: 2;
+    border-radius: 4px 0 0 4px;
+}
+
+.book-info-glass {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+    border-radius: 0 0 12px 4px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.book-3d-wrapper:hover .book-info-glass {
+    opacity: 1;
+}
+
+/* ACTIVITY CONNECTOR STYLES */
+.activity-path-container {
+    position: relative;
+    padding-left: 32px;
+}
+
+.activity-path-container::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    bottom: 10px;
+    width: 2px;
+    background: repeating-linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.1) 6px, transparent 6px, transparent 12px);
+}
+
+.activity-node {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.activity-node::after {
+    content: "";
+    position: absolute;
+    left: -21px;
+    top: 8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid var(--text-color);
+}
+
+.activity-node.completed::after {
+    background: var(--text-color);
+}
+
+.wisdom-note {
+    background: #fffbeb;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transform: rotate(2deg);
+    padding: 24px;
+    font-family: var(--font-body);
+    /* Using standard body font but styled to look like note */
+    position: sticky;
+    top: 40px;
+}
+
+/* MINIMAL INPUT STYLES */
+.input-minimal-group {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.input-minimal {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 12px 0;
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--text-color);
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-minimal:focus {
+    border-bottom-color: var(--text-color);
+}
+
+.input-minimal::placeholder {
+    color: transparent;
+    /* Hide placeholder for float effect */
+}
+
+.input-label-floating {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-minimal:focus+.input-label-floating,
+.input-minimal:not(:placeholder-shown)+.input-label-floating {
+    top: -10px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+
+
+/* EXPANDING GRID PALETTE STYLES */
+.mood-deck {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    /* Generous gap for breathing room */
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    /* More padding around deck */
+    transition: all 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+    flex-wrap: wrap;
+    max-width: 1400px;
+    /* Constrain width for large screens */
+    margin: 0 auto;
+}
+
+/* Definition Tooltip */
+.definition-tooltip {
+    position: fixed;
+    /* Changed to fixed for easier global positioning */
+    background: rgba(253, 251, 247, 0.9);
+    /* Warm off-white wash */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: #2f3a46;
+    padding: 12px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(-50%, -90%) scale(0.95);
+    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+    z-index: 2000;
+    width: max-content;
+    max-width: 280px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.definition-tooltip.visible {
+    opacity: 1;
+    transform: translate(-50%, -110%) scale(1);
+}
+
+.mood-card {
+    height: 200px;
+    /* Square */
+    width: 200px;
+    /* Square */
+    flex: 0 0 auto;
+    border-radius: 40px;
+    /* Softer rounded square */
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    gap: 15px;
+    /* Space between icon and text */
+}
+
+.mood-card i {
+    font-size: 64px !important;
+    /* Huge Icon */
+    opacity: 0.7 !important;
+    margin: 0 !important;
+    /* Reset margin */
+    transition: all 0.5s ease;
+}
+
+.mood-card .orb-label {
+    font-size: 16px !important;
+    /* Small Text */
+    line-height: 1.2;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+    color: #1a1a1a;
+    letter-spacing: 0.02em;
+}
+
+.mood-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.mood-card.active-primary {
+    transform: none;
+    opacity: 1;
+    height: 70px;
+    /* Small square tab */
+    width: 70px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    /* Removed flex-direction: row; and gap: 12px; as only icon is visible */
+}
+
+.mood-card.active-primary .orb-label {
+    display: none;
+    /* Hide text as requested */
+    font-size: 16px !important;
+    text-align: left;
+}
+
+.mood-card.active-primary i {
+    font-size: 28px !important;
+    /* Slightly larger icon for the tab */
+    margin: 0 !important;
+}
+
+.nuance-canvas {
+    width: 100%;
+    max-width: 840px;
+    /* Safe width for 4x180 + 3x20 gap */
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    pointer-events: none;
+
+    /* Flex Layout for perfect centering of 7 items */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nuance-canvas.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.shade-tile {
+    width: 180px;
+    /* Fixed width square */
+    height: 180px;
+    /* Fixed height square */
+    flex-shrink: 0;
+    /* Prevent squishing */
+    border-radius: 32px;
+    /* Matching soft corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+    background: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    /* Subtle border like primaries */
+    font-family: 'Cormorant Garamond';
+    font-style: italic;
+    font-weight: 600;
+    font-size: 20px;
+    /* Nicer fit */
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+    hyphens: auto;
+    /* Handle long words */
+    color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    /* Very subtle depth */
+}
+
+.shade-tile:hover {
+    transform: scale(1.03);
+    color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    /* Minimal shadow on hover only */
+}
+
+
+.orb-label {
+    font-family: 'Cormorant Garamond';
+    font-size: 26px;
+    font-style: italic;
+    color: #1a1a1a;
+    pointer-events: none;
+    transition: all 0.3s;
+}

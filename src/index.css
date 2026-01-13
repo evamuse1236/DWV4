@@ -472,6 +472,191 @@ h3 {
     pointer-events: all;
   }
 
+  /* =============================================================================
+     MOOD PALETTE - Emotional Check-in Styles
+     ============================================================================= */
+
+  /* Primary Mood Card Deck */
+  .mood-deck {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    transition: all 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .mood-deck::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Primary Mood Cards (4 Quadrants) */
+  .mood-card {
+    height: 200px;
+    width: 200px;
+    flex: 0 0 auto;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .mood-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  }
+
+  /* Collapsed state when a quadrant is active */
+  .mood-card.active-primary {
+    transform: none;
+    opacity: 1;
+    height: 70px;
+    width: 70px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mood-card.active-primary:hover {
+    transform: scale(1.1);
+  }
+
+  /* Label inside mood cards */
+  .orb-label {
+    font-family: var(--font-display);
+    font-size: 16px;
+    line-height: 1.2;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+    color: #1a1a1a;
+    letter-spacing: 0.02em;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+
+  /* Nuance Canvas (expanded emotion grid) */
+  .nuance-canvas {
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    pointer-events: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .nuance-canvas.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  /* Individual emotion tiles */
+  .shade-tile {
+    width: 160px;
+    height: 160px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+    background: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+  }
+
+  .shade-tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Tooltip for emotion definitions */
+  .definition-tooltip {
+    position: fixed;
+    background: rgba(253, 251, 247, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: #2f3a46;
+    padding: 12px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: var(--font-body);
+    font-weight: 500;
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(-50%, -90%) scale(0.95);
+    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+    z-index: 2000;
+    width: max-content;
+    max-width: 280px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .definition-tooltip.visible {
+    opacity: 1;
+    transform: translate(-50%, -110%) scale(1);
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .mood-card {
+      height: 140px;
+      width: 140px;
+      border-radius: 28px;
+    }
+
+    .shade-tile {
+      width: 120px;
+      height: 120px;
+      font-size: 14px;
+      border-radius: 24px;
+    }
+
+    .mood-deck {
+      gap: 16px;
+      padding: 20px;
+    }
+
+    .nuance-canvas {
+      gap: 12px;
+    }
+  }
+
   /* Minimal Inputs */
   .input-minimal-group {
     position: relative;
