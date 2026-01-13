@@ -1,6 +1,7 @@
 import { useState, type ReactNode } from "react";
 import { useMutation, useQuery } from "convex/react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Sun, Plant, Drop, CloudRain } from "@phosphor-icons/react";
 import { api } from "../../../convex/_generated/api";
 import { useAuth } from "../../hooks/useAuth";
 
@@ -8,7 +9,7 @@ import { useAuth } from "../../hooks/useAuth";
 const shadesData = {
   goodHigh: {
     label: "Good + High Energy",
-    icon: "☀️",
+    icon: Sun,
     color: "#FEF9C3",
     shades: [
       { name: "Excited", color: "#FFFBEB", def: "Feeling super energetic and happy because something fun is about to happen or is happening." },
@@ -22,7 +23,7 @@ const shadesData = {
   },
   goodLow: {
     label: "Good + Low Energy",
-    icon: "🌿",
+    icon: Plant,
     color: "#E0F7FA",
     shades: [
       { name: "Calm", color: "#F0FDF4", def: "Feeling steady and keeping your cool, even when things are busy or stressful." },
@@ -37,7 +38,7 @@ const shadesData = {
   },
   badLow: {
     label: "Bad + Low Energy",
-    icon: "💧",
+    icon: Drop,
     color: "#E5E7EB",
     shades: [
       { name: "Tired", color: "#F9FAFB", def: "Feeling like you have no energy and need to rest or sleep." },
@@ -52,7 +53,7 @@ const shadesData = {
   },
   badHigh: {
     label: "Bad + High Energy",
-    icon: "🌧️",
+    icon: CloudRain,
     color: "#FFE4E6",
     shades: [
       { name: "Stressed", color: "#FFF1F2", def: "Feeling like you have too much to do and not enough time or ability to handle it." },
@@ -76,6 +77,7 @@ interface CheckInGateProps {
 /**
  * CheckInGate - Forces students to complete emotional check-in before accessing the app
  * Uses the Palette of Presence design with 4 quadrants
+ * Allows selecting multiple emotions
  */
 export function CheckInGate({ children }: CheckInGateProps) {
   const { user } = useAuth();
@@ -83,7 +85,7 @@ export function CheckInGate({ children }: CheckInGateProps) {
 
   // State for the check-in flow
   const [activeQuadrant, setActiveQuadrant] = useState<QuadrantKey | null>(null);
-  const [selectedShade, setSelectedShade] = useState<Shade | null>(null);
+  const [selectedShades, setSelectedShades] = useState<Shade[]>([]); // Multiple selection
   const [journalEntry, setJournalEntry] = useState("");
   const [showJournal, setShowJournal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -119,17 +121,31 @@ export function CheckInGate({ children }: CheckInGateProps) {
   const handleQuadrantClick = (key: QuadrantKey) => {
     if (activeQuadrant === key) return;
     setActiveQuadrant(key);
-    setSelectedShade(null);
+    setSelectedShades([]); // Clear selections when changing quadrant
   };
 
+  // Toggle shade selection (multi-select)
   const handleShadeClick = (shade: Shade) => {
-    setSelectedShade(shade);
-    setShowJournal(true);
+    setSelectedShades((prev) => {
+      const isSelected = prev.some((s) => s.name === shade.name);
+      if (isSelected) {
+        return prev.filter((s) => s.name !== shade.name);
+      } else {
+        return [...prev, shade];
+      }
+    });
+  };
+
+  // Proceed to journal after selecting emotions
+  const handleProceed = () => {
+    if (selectedShades.length > 0) {
+      setShowJournal(true);
+    }
   };
 
   const handleReset = () => {
     setActiveQuadrant(null);
-    setSelectedShade(null);
+    setSelectedShades([]);
   };
 
   // Tooltip handlers
@@ -148,14 +164,15 @@ export function CheckInGate({ children }: CheckInGateProps) {
 
   // Save check-in
   const handleSave = async () => {
-    if (!user || !selectedShade || !activeQuadrant) return;
+    if (!user || selectedShades.length === 0 || !activeQuadrant) return;
 
     setIsSubmitting(true);
     setSaveError(false);
 
     try {
-      // Map our UI emotion to database category
-      const emotionName = selectedShade.name.toLowerCase();
+      // Use the first selected emotion for mapping to database
+      const primaryEmotion = selectedShades[0];
+      const emotionName = primaryEmotion.name.toLowerCase();
       const category = categories?.find(
         (c: any) =>
           c.name.toLowerCase().includes(emotionName) ||
@@ -166,12 +183,18 @@ export function CheckInGate({ children }: CheckInGateProps) {
       const subcategoryId =
         category?.subcategories?.[0]?._id || categories?.[0]?.subcategories?.[0]?._id;
 
+      // Include all selected emotions in journal entry
+      const emotionsList = selectedShades.map((s) => s.name).join(", ");
+      const fullJournalEntry = journalEntry
+        ? `Feeling: ${emotionsList}\n\n${journalEntry}`
+        : `Feeling: ${emotionsList}`;
+
       if (categoryId && subcategoryId) {
         await saveCheckIn({
           userId: user._id as any,
           categoryId: categoryId as any,
           subcategoryId: subcategoryId as any,
-          journalEntry: journalEntry || undefined,
+          journalEntry: fullJournalEntry,
         });
       }
     } catch (error) {
@@ -186,8 +209,13 @@ export function CheckInGate({ children }: CheckInGateProps) {
   const handleDiscard = () => {
     setShowJournal(false);
     setJournalEntry("");
-    setSelectedShade(null);
+    setSelectedShades([]);
     setActiveQuadrant(null);
+  };
+
+  // Check if a shade is selected
+  const isShadeSelected = (shade: Shade) => {
+    return selectedShades.some((s) => s.name === shade.name);
   };
 
   // Not checked in - show Palette of Presence UI
@@ -222,6 +250,7 @@ export function CheckInGate({ children }: CheckInGateProps) {
           {(Object.keys(shadesData) as QuadrantKey[]).map((key) => {
             const quadrant = shadesData[key];
             const isActive = activeQuadrant !== null;
+            const IconComponent = quadrant.icon;
 
             return (
               <motion.div
@@ -232,9 +261,11 @@ export function CheckInGate({ children }: CheckInGateProps) {
                 layout
                 transition={{ duration: 0.5, ease: [0.2, 0.8, 0.2, 1] }}
               >
-                <span className={`text-[64px] ${isActive ? "!text-[28px]" : ""} transition-all duration-500`}>
-                  {quadrant.icon}
-                </span>
+                <IconComponent
+                  weight="light"
+                  className={`transition-all duration-500 ${isActive ? "w-7 h-7" : "w-16 h-16"}`}
+                  style={{ opacity: 0.7 }}
+                />
                 {!isActive && (
                   <div className="orb-label">
                     {quadrant.label.split(" + ").map((part, i) => (
@@ -250,32 +281,61 @@ export function CheckInGate({ children }: CheckInGateProps) {
           })}
         </div>
 
-        {/* Nuance Canvas (Emotion Grid) */}
+        {/* Nuance Canvas (Emotion Grid) - Multi-select */}
         <AnimatePresence>
           {activeQuadrant && (
-            <motion.div
-              className="nuance-canvas visible"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 20 }}
-              transition={{ duration: 0.4, ease: [0.2, 0.8, 0.2, 1] }}
-            >
-              {shadesData[activeQuadrant].shades.map((shade, idx) => (
+            <>
+              <motion.div
+                className="nuance-canvas visible"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 20 }}
+                transition={{ duration: 0.4, ease: [0.2, 0.8, 0.2, 1] }}
+              >
+                {shadesData[activeQuadrant].shades.map((shade, idx) => (
+                  <motion.div
+                    key={shade.name}
+                    className={`shade-tile ${isShadeSelected(shade) ? "selected" : ""}`}
+                    style={{
+                      backgroundColor: shade.color,
+                      border: isShadeSelected(shade) ? "3px solid #1a1a1a" : "1px solid rgba(255,255,255,0.5)",
+                      transform: isShadeSelected(shade) ? "scale(1.05)" : "scale(1)",
+                    }}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: isShadeSelected(shade) ? 1.05 : 1 }}
+                    transition={{ delay: idx * 0.03 }}
+                    onClick={() => handleShadeClick(shade)}
+                    onMouseEnter={(e) => showTooltip(e, shade.def)}
+                    onMouseLeave={hideTooltip}
+                  >
+                    {shade.name}
+                    {isShadeSelected(shade) && (
+                      <span className="absolute top-2 right-2 text-sm">✓</span>
+                    )}
+                  </motion.div>
+                ))}
+              </motion.div>
+
+              {/* Proceed Button - Shows when at least one emotion selected */}
+              {selectedShades.length > 0 && (
                 <motion.div
-                  key={shade.name}
-                  className="shade-tile"
-                  style={{ backgroundColor: shade.color }}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: idx * 0.03 }}
-                  onClick={() => handleShadeClick(shade)}
-                  onMouseEnter={(e) => showTooltip(e, shade.def)}
-                  onMouseLeave={hideTooltip}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="text-center mt-8"
                 >
-                  {shade.name}
+                  <p className="text-sm text-[#666] mb-4">
+                    Selected: {selectedShades.map((s) => s.name).join(", ")}
+                  </p>
+                  <button
+                    onClick={handleProceed}
+                    className="btn btn-primary"
+                    style={{ padding: "16px 48px" }}
+                  >
+                    PROCEED →
+                  </button>
                 </motion.div>
-              ))}
-            </motion.div>
+              )}
+            </>
           )}
         </AnimatePresence>
 
@@ -300,7 +360,7 @@ export function CheckInGate({ children }: CheckInGateProps) {
 
       {/* Full Screen Journal Overlay */}
       <AnimatePresence>
-        {showJournal && selectedShade && (
+        {showJournal && selectedShades.length > 0 && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -308,7 +368,7 @@ export function CheckInGate({ children }: CheckInGateProps) {
             transition={{ duration: 0.6 }}
             className="journal-overlay active"
             style={{
-              background: `linear-gradient(to bottom, ${selectedShade.color}CC, rgba(255,255,255,0.95))`,
+              background: `linear-gradient(to bottom, ${selectedShades[0].color}CC, rgba(255,255,255,0.95))`,
             }}
           >
             <div className="w-full max-w-[800px] p-10 text-center">
@@ -320,9 +380,13 @@ export function CheckInGate({ children }: CheckInGateProps) {
                 className="mb-6"
               >
                 <span className="font-display italic text-[24px]">
-                  Feeling: {selectedShade.name}
+                  Feeling: {selectedShades.map((s) => s.name).join(", ")}
                 </span>
-                <p className="text-sm text-[#666] mt-2 max-w-md mx-auto">{selectedShade.def}</p>
+                {selectedShades.length === 1 && (
+                  <p className="text-sm text-[#666] mt-2 max-w-md mx-auto">
+                    {selectedShades[0].def}
+                  </p>
+                )}
               </motion.div>
 
               {/* Journal Textarea */}
