@@ -1,4 +1,4 @@
-import { useState, type ReactNode } from "react";
+import { useState, useEffect, type ReactNode } from "react";
 import { useMutation, useQuery } from "convex/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Sun, Plant, Drop, CloudRain } from "@phosphor-icons/react";
@@ -91,6 +91,17 @@ export function CheckInGate({ children }: CheckInGateProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [saveError, setSaveError] = useState(false);
   const [tooltip, setTooltip] = useState<{ text: string; x: number; y: number } | null>(null);
+
+  // Press Enter to proceed when emotions are selected
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Enter" && selectedShades.length > 0 && !showJournal) {
+        setShowJournal(true);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedShades, showJournal]);
 
   // Query emotion categories from database (for mapping)
   const categories = useQuery(api.emotions.getCategories);
