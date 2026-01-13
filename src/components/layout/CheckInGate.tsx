@@ -145,7 +145,7 @@ export function CheckInGate({ children }: CheckInGateProps) {
 
   const handleReset = () => {
     setActiveQuadrant(null);
-    setSelectedShades([]);
+    // Keep selectedShades so user can proceed from main view
   };
 
   // Tooltip handlers

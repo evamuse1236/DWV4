@@ -216,6 +216,35 @@ function formatDateKey(date: Date): string {
   return `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`;
 }
 
+/**
+ * Delete today's check-in for a user (for testing)
+ */
+export const deleteTodayCheckIn = mutation({
+  args: {
+    userId: v.id("users"),
+  },
+  handler: async (ctx, args) => {
+    const startOfDay = new Date();
+    startOfDay.setHours(0, 0, 0, 0);
+
+    const checkIns = await ctx.db
+      .query("emotionCheckIns")
+      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .collect();
+
+    const todayCheckIn = checkIns.find(
+      (c) => c.timestamp >= startOfDay.getTime()
+    );
+
+    if (todayCheckIn) {
+      await ctx.db.delete(todayCheckIn._id);
+      return { success: true, deleted: true };
+    }
+
+    return { success: true, deleted: false };
+  },
+});
+
 // Helper to calculate consecutive days streak
 function calculateStreak(checkIns: Array<{ timestamp: number }>): number {
   if (checkIns.length === 0) return 0;

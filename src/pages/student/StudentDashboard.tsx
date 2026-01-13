@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { useQuery } from "convex/react";
+import { useQuery, useMutation } from "convex/react";
 import { motion } from "framer-motion";
 import { api } from "../../../convex/_generated/api";
 import { useAuth } from "../../hooks/useAuth";
@@ -22,6 +22,15 @@ const getDomainColorClass = (name: string) => {
 export function StudentDashboard() {
   const { user } = useAuth();
   const navigate = useNavigate();
+
+  // DEV: Reset emotional check-in for testing
+  const resetCheckIn = useMutation(api.emotions.deleteTodayCheckIn);
+  const handleResetCheckIn = async () => {
+    if (user) {
+      await resetCheckIn({ userId: user._id as any });
+      window.location.reload();
+    }
+  };
 
   // Get domains from database
   const domains = useQuery(api.domains.getAll);
@@ -225,6 +234,14 @@ export function StudentDashboard() {
       )}
 
       {/* Note: Check-in reminder removed - gate enforces check-in before dashboard access */}
+
+      {/* DEV: Reset check-in button for testing */}
+      <button
+        onClick={handleResetCheckIn}
+        className="fixed bottom-4 right-4 text-xs opacity-30 hover:opacity-100 bg-gray-200 px-3 py-1 rounded transition-opacity"
+      >
+        Reset Check-in (Dev)
+      </button>
     </div>
   );
 }
