@@ -164,7 +164,7 @@ export function CheckInGate({ children }: CheckInGateProps) {
 
   // Save check-in
   const handleSave = async () => {
-    if (!user || selectedShades.length === 0 || !activeQuadrant) return;
+    if (!user || selectedShades.length === 0) return;
 
     setIsSubmitting(true);
     setSaveError(false);
@@ -280,6 +280,26 @@ export function CheckInGate({ children }: CheckInGateProps) {
             );
           })}
         </div>
+
+        {/* Proceed from main view - when selections exist but no quadrant expanded */}
+        {!activeQuadrant && selectedShades.length > 0 && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center mt-8"
+          >
+            <p className="text-sm text-[#666] mb-4">
+              Selected: {selectedShades.map((s) => s.name).join(", ")}
+            </p>
+            <button
+              onClick={handleProceed}
+              className="btn btn-primary"
+              style={{ padding: "16px 48px" }}
+            >
+              PROCEED →
+            </button>
+          </motion.div>
+        )}
 
         {/* Nuance Canvas (Emotion Grid) - Multi-select */}
         <AnimatePresence>
