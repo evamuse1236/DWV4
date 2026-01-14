@@ -50,7 +50,14 @@ TASK SCHEDULING RULES:
 - Spread tasks across multiple days, not all on one day
 - Suggest 3-6 realistic tasks
 
-IMPORTANT: Only output the JSON when you've naturally gathered all the information through conversation. Don't rush - let the student express themselves. Before outputting JSON, say something like "Great! I think I have a good picture now. Let me put together a goal for you..."`;
+IMPORTANT: Only output the JSON when you've naturally gathered all the information through conversation. Don't rush - let the student express themselves. Before outputting JSON, say something like "Great! I think I have a good picture now. Let me put together a goal for you..."
+
+HANDLING REVISIONS:
+If the conversation contains a "[REVISION REQUEST]" message, it means the student reviewed a goal you previously created and wants changes. In this case:
+1. Ask what they'd like to change (if not already specified)
+2. When they tell you the changes, acknowledge them briefly
+3. Output a NEW goal-ready JSON block with the updated goal
+4. Always output the full JSON block again after revisions - don't just describe the changes`;
 }
 
 // Default model for goal-setting chat

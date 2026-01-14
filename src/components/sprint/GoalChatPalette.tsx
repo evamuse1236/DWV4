@@ -107,6 +107,7 @@ export function GoalChatPalette({
   const [extractedGoal, setExtractedGoal] = useState<ExtractedGoal | null>(null);
   const [tasks, setTasks] = useState<SuggestedTask[]>([]);
   const [selectedModel, setSelectedModel] = useState(AI_MODELS[0].id);
+  const [pendingRevision, setPendingRevision] = useState<ExtractedGoal | null>(null);
 
   const chatAction = useAction(api.ai.chat);
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -146,10 +147,25 @@ export function GoalChatPalette({
 
     try {
       // Convert to API format (exclude initial greeting for cleaner context)
-      const apiMessages = messages
+      let apiMessages = messages
         .filter((m) => m.id !== "initial")
         .concat(userMessage)
         .map((m) => ({ role: m.role, content: m.content }));
+
+      // If we're in revision mode, inject context about the previous goal
+      if (pendingRevision) {
+        const revisionContext = {
+          role: "user" as const,
+          content: `[REVISION REQUEST] I reviewed the goal "${pendingRevision.title}" and want to make changes. Here's what I had: Specific: ${pendingRevision.specific}, Measurable: ${pendingRevision.measurable}`,
+        };
+        // Insert revision context before the last user message
+        apiMessages = [
+          ...apiMessages.slice(0, -1),
+          revisionContext,
+          apiMessages[apiMessages.length - 1],
+        ];
+        setPendingRevision(null); // Clear after using
+      }
 
       const response = await chatAction({
         messages: apiMessages,
@@ -210,6 +226,15 @@ export function GoalChatPalette({
   };
 
   const handleGoBack = () => {
+    // Store the goal for revision context, and show a friendly AI prompt
+    if (extractedGoal) {
+      setPendingRevision(extractedGoal);
+      setMessages((prev) => [
+        ...prev,
+        createMessage("assistant", "No problem! What would you like to change about this goal?"),
+      ]);
+    }
+
     setPhase("chatting");
     setExtractedGoal(null);
     setTasks([]);
