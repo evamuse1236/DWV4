@@ -1,194 +1,462 @@
-import { motion } from "framer-motion";
-import { Card } from "../paper";
-import { cn } from "../../lib/utils";
+import { useState } from "react";
+import { useQuery, useMutation } from "convex/react";
+import { motion, AnimatePresence } from "framer-motion";
+import { api } from "../../../convex/_generated/api";
+import type { Id } from "../../../convex/_generated/dataModel";
 
-interface HabitCompletion {
-  date: string;
-  completed: boolean;
-}
+// Day labels for the week (Mon-Sun)
+const DAY_LABELS = ["M", "T", "W", "T", "F", "S", "S"];
+
+// Available icons for the icon picker
+const AVAILABLE_ICONS = [
+  "ph-book-open",
+  "ph-plant",
+  "ph-drop",
+  "ph-pencil-simple",
+  "ph-barbell",
+  "ph-sun",
+  "ph-moon",
+  "ph-heart",
+  "ph-star",
+  "ph-lightning",
+  "ph-fire",
+  "ph-wind",
+  "ph-music-notes",
+  "ph-camera",
+  "ph-paint-brush",
+  "ph-code",
+  "ph-coffee",
+  "ph-bicycle",
+  "ph-airplane",
+  "ph-house",
+  "ph-tree",
+  "ph-mountains",
+  "ph-infinity",
+  "ph-brain",
+];
+
+// Color presets for habits
+const HABIT_COLORS = [
+  {
+    name: "blue",
+    tint: "var(--color-pastel-blue)",
+    color: "#8da4ef",
+    shadow: "rgba(141, 164, 239, 0.3)",
+  },
+  {
+    name: "green",
+    tint: "var(--color-pastel-green)",
+    color: "#88c999",
+    shadow: "rgba(136, 201, 153, 0.3)",
+  },
+  {
+    name: "aqua",
+    tint: "var(--color-pastel-blue)",
+    color: "#64b5f6",
+    shadow: "rgba(100, 181, 246, 0.3)",
+  },
+  {
+    name: "purple",
+    tint: "var(--color-pastel-purple)",
+    color: "#b39ddb",
+    shadow: "rgba(179, 157, 219, 0.3)",
+  },
+  {
+    name: "orange",
+    tint: "var(--color-pastel-orange)",
+    color: "#ffb74d",
+    shadow: "rgba(255, 183, 77, 0.3)",
+  },
+  {
+    name: "pink",
+    tint: "var(--color-pastel-pink)",
+    color: "#f48fb1",
+    shadow: "rgba(244, 143, 177, 0.3)",
+  },
+];
+
+// Default icons for new habits
+const DEFAULT_ICONS = [
+  "ph-book-open",
+  "ph-plant",
+  "ph-drop",
+  "ph-pencil-simple",
+  "ph-barbell",
+  "ph-star",
+];
 
 interface HabitTrackerProps {
-  name: string;
-  description?: string;
-  whatIsHabit: string;
-  howToPractice: string;
-  sprintStartDate: string;
-  completions: HabitCompletion[];
-  onToggle: (date: string) => void;
-  onEdit?: () => void;
-  onDelete?: () => void;
+  userId: Id<"users">;
+  sprintId: Id<"sprints">;
+  weekDates: { date: string; dayOfWeek: number; dayNum: number; displayIndex: number }[];
 }
 
-const dayLabels = ["S", "M", "T", "W", "T", "F", "S"];
+export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps) {
+  const [editingHabitId, setEditingHabitId] = useState<string | null>(null);
+  const [editingField, setEditingField] = useState<"name" | "description" | null>(null);
+  const [editValue, setEditValue] = useState("");
+  const [iconPickerOpen, setIconPickerOpen] = useState<string | null>(null);
+  const [showNewHabitForm, setShowNewHabitForm] = useState(false);
+  const [newHabitName, setNewHabitName] = useState("");
 
-/**
- * 14-day habit tracker grid
- */
-export function HabitTracker({
-  name,
-  description,
-  whatIsHabit,
-  howToPractice,
-  sprintStartDate,
-  completions,
-  onToggle,
-  onEdit,
-  onDelete,
-}: HabitTrackerProps) {
-  // Generate 14 days from sprint start
-  const days: { date: string; dayOfWeek: number; weekNum: number }[] = [];
-  const startDate = new Date(sprintStartDate);
+  const habits = useQuery(api.habits.getByUserAndSprint, { userId, sprintId });
 
-  for (let i = 0; i < 14; i++) {
-    const d = new Date(startDate);
-    d.setDate(d.getDate() + i);
-    days.push({
-      date: d.toISOString().split("T")[0],
-      dayOfWeek: d.getDay(),
-      weekNum: i < 7 ? 1 : 2,
+  const createHabit = useMutation(api.habits.create);
+  const updateHabit = useMutation(api.habits.update);
+  const toggleCompletion = useMutation(api.habits.toggleCompletion);
+  const removeHabit = useMutation(api.habits.remove);
+
+  function calculateStreak(completions: { date: string; completed: boolean }[] | undefined): number {
+    if (!completions || completions.length === 0) return 0;
+
+    const completedDates = completions
+      .filter((c) => c.completed)
+      .map((c) => c.date)
+      .sort()
+      .reverse();
+
+    if (completedDates.length === 0) return 0;
+
+    let streak = 0;
+    const today = new Date().toISOString().split("T")[0];
+    let checkDate = today;
+
+    for (const date of completedDates) {
+      if (date === checkDate) {
+        streak++;
+        const d = new Date(checkDate);
+        d.setDate(d.getDate() - 1);
+        checkDate = d.toISOString().split("T")[0];
+      } else if (date < checkDate) {
+        break;
+      }
+    }
+
+    return streak;
+  }
+
+  async function handleToggleCompletion(habitId: string, date: string): Promise<void> {
+    await toggleCompletion({
+      habitId: habitId as Id<"habits">,
+      userId,
+      date,
     });
   }
 
-  // Create completion map for quick lookup
-  const completionMap = new Map(
-    completions.map((c) => [c.date, c.completed])
-  );
+  async function handleSaveEdit(habitId: string): Promise<void> {
+    if (!editValue.trim()) {
+      setEditingHabitId(null);
+      setEditingField(null);
+      return;
+    }
 
-  // Calculate streak
-  const today = new Date().toISOString().split("T")[0];
-  let streak = 0;
-  for (let i = days.length - 1; i >= 0; i--) {
-    if (days[i].date > today) continue;
-    if (completionMap.get(days[i].date)) {
-      streak++;
-    } else {
-      break;
+    if (editingField === "name") {
+      await updateHabit({
+        habitId: habitId as Id<"habits">,
+        name: editValue.trim(),
+      });
+    } else if (editingField === "description") {
+      await updateHabit({
+        habitId: habitId as Id<"habits">,
+        whatIsHabit: editValue.trim(),
+      });
+    }
+
+    setEditingHabitId(null);
+    setEditingField(null);
+    setEditValue("");
+  }
+
+  async function handleSelectIcon(habitId: string, iconClass: string): Promise<void> {
+    await updateHabit({
+      habitId: habitId as Id<"habits">,
+      description: iconClass, // Using description field to store icon
+    });
+    setIconPickerOpen(null);
+  }
+
+  async function handleCreateHabit(): Promise<void> {
+    if (!newHabitName.trim()) return;
+
+    const iconIndex = (habits?.length || 0) % DEFAULT_ICONS.length;
+
+    await createHabit({
+      userId,
+      sprintId,
+      name: newHabitName.trim(),
+      whatIsHabit: "Define what this habit is",
+      howToPractice: "How you'll practice it",
+      description: DEFAULT_ICONS[iconIndex], // Store icon in description
+    });
+
+    setNewHabitName("");
+    setShowNewHabitForm(false);
+  }
+
+  async function handleDeleteHabit(habitId: string, habitName: string): Promise<void> {
+    if (confirm(`Delete "${habitName}"?`)) {
+      await removeHabit({ habitId: habitId as Id<"habits"> });
     }
   }
 
+  function getHabitIcon(habit: { description?: string }, index: number): string {
+    if (habit.description && habit.description.startsWith("ph-")) {
+      return habit.description;
+    }
+    return DEFAULT_ICONS[index % DEFAULT_ICONS.length];
+  }
+
+  function getHabitColor(index: number): (typeof HABIT_COLORS)[number] {
+    return HABIT_COLORS[index % HABIT_COLORS.length];
+  }
+
   return (
-    <Card>
-      <div className="flex items-start justify-between mb-4">
-        <div>
-          <h3 className="font-semibold text-gray-900">{name}</h3>
-          {description && (
-            <p className="text-sm text-gray-500">{description}</p>
-          )}
-        </div>
-        {streak > 0 && (
-          <div className="flex items-center gap-1 text-orange-500">
-            <span className="text-lg">🔥</span>
-            <span className="text-sm font-medium">{streak} day streak!</span>
-          </div>
-        )}
-      </div>
+    <div className="habit-section fade-in-up delay-2" style={{ marginTop: "80px" }}>
+      {/* Section Title */}
+      <h2 className="habit-section-title">
+        <i className="ph ph-sparkle" style={{ fontSize: "28px", color: "var(--color-accent)" }} />
+        Daily Rituals
+      </h2>
 
-      {/* 14-day grid */}
-      <div className="space-y-3">
-        {/* Week 1 */}
-        <div>
-          <p className="text-xs text-gray-500 mb-1">Week 1</p>
-          <div className="flex gap-1">
-            {days.slice(0, 7).map((day) => {
-              const isCompleted = completionMap.get(day.date);
-              const isToday = day.date === today;
-              const isFuture = day.date > today;
+      {/* Habits Container */}
+      <div className="habits-container">
+        <AnimatePresence mode="popLayout">
+          {habits?.map((habit: any, index: number) => {
+            const color = getHabitColor(index);
+            const icon = getHabitIcon(habit, index);
+            const streak = calculateStreak(habit.completions);
+            const isEditingName = editingHabitId === habit._id && editingField === "name";
+            const isEditingDesc = editingHabitId === habit._id && editingField === "description";
 
-              return (
-                <motion.button
-                  key={day.date}
-                  whileHover={!isFuture ? { scale: 1.1 } : {}}
-                  whileTap={!isFuture ? { scale: 0.95 } : {}}
-                  onClick={() => !isFuture && onToggle(day.date)}
-                  disabled={isFuture}
-                  className={cn(
-                    "w-9 h-9 rounded-lg flex flex-col items-center justify-center text-xs transition-colors",
-                    isFuture && "opacity-40 cursor-not-allowed",
-                    isToday && "ring-2 ring-primary-500 ring-offset-1",
-                    isCompleted
-                      ? "bg-green-500 text-white"
-                      : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+            return (
+              <motion.div
+                key={habit._id}
+                layout
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                className="art-habit-card"
+                style={{
+                  "--card-tint": color.tint,
+                  "--tint-color": color.color,
+                  "--tint-shadow": color.shadow,
+                } as React.CSSProperties}
+              >
+                {/* Habit Header */}
+                <div className="habit-header">
+                  <div className="habit-info">
+                    {/* Icon (clickable to change) */}
+                    <i
+                      className={`ph ${icon} habit-icon-trigger`}
+                      onClick={() => setIconPickerOpen(iconPickerOpen === habit._id ? null : habit._id)}
+                      style={{
+                        fontSize: "24px",
+                        color: color.color,
+                        marginBottom: "8px",
+                        cursor: "pointer",
+                      }}
+                      title="Click to change icon"
+                    />
+
+                    {/* Habit Name (editable) */}
+                    {isEditingName ? (
+                      <input
+                        type="text"
+                        value={editValue}
+                        onChange={(e) => setEditValue(e.target.value)}
+                        onBlur={() => handleSaveEdit(habit._id)}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter") {
+                            e.preventDefault();
+                            handleSaveEdit(habit._id);
+                          }
+                          if (e.key === "Escape") {
+                            setEditingHabitId(null);
+                            setEditingField(null);
+                          }
+                        }}
+                        autoFocus
+                        className="habit-edit-input"
+                        style={{ fontSize: "1.5rem" }}
+                      />
+                    ) : (
+                      <h3
+                        onClick={() => {
+                          setEditingHabitId(habit._id);
+                          setEditingField("name");
+                          setEditValue(habit.name);
+                        }}
+                        style={{ cursor: "text" }}
+                        title="Click to edit"
+                      >
+                        {habit.name}
+                      </h3>
+                    )}
+
+                    {/* Description (editable) */}
+                    {isEditingDesc ? (
+                      <input
+                        type="text"
+                        value={editValue}
+                        onChange={(e) => setEditValue(e.target.value)}
+                        onBlur={() => handleSaveEdit(habit._id)}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter") {
+                            e.preventDefault();
+                            handleSaveEdit(habit._id);
+                          }
+                          if (e.key === "Escape") {
+                            setEditingHabitId(null);
+                            setEditingField(null);
+                          }
+                        }}
+                        autoFocus
+                        className="habit-edit-input"
+                        style={{ fontSize: "13px", marginTop: "4px" }}
+                      />
+                    ) : (
+                      <p
+                        onClick={() => {
+                          setEditingHabitId(habit._id);
+                          setEditingField("description");
+                          setEditValue(habit.whatIsHabit || "");
+                        }}
+                        style={{
+                          fontSize: "13px",
+                          opacity: 0.6,
+                          marginTop: "4px",
+                          cursor: "text",
+                        }}
+                        title="Click to edit"
+                      >
+                        {habit.whatIsHabit || "Add description"}
+                      </p>
+                    )}
+                  </div>
+
+                  {/* Streak Badge */}
+                  <div className="habit-streak">
+                    <i className="ph ph-flame" />
+                    <span>{streak}</span> Days
+                  </div>
+                </div>
+
+                {/* Icon Picker (shown when open) */}
+                <AnimatePresence>
+                  {iconPickerOpen === habit._id && (
+                    <motion.div
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      className="icon-picker-inline"
+                    >
+                      <div className="icon-grid-inline">
+                        {AVAILABLE_ICONS.map((iconClass) => (
+                          <button
+                            key={iconClass}
+                            className={`icon-option ${icon === iconClass ? "selected" : ""}`}
+                            onClick={() => handleSelectIcon(habit._id, iconClass)}
+                          >
+                            <i className={`ph ${iconClass}`} />
+                          </button>
+                        ))}
+                      </div>
+                    </motion.div>
                   )}
+                </AnimatePresence>
+
+                {/* Week Visual (Day Orbs) */}
+                <div className="habit-week-visual">
+                  {weekDates.map((dayInfo, dayIndex) => {
+                    const isCompleted = habit.completions?.some(
+                      (c: any) => c.date === dayInfo.date && c.completed
+                    );
+
+                    return (
+                      <div
+                        key={dayInfo.date}
+                        className="day-orb-container"
+                        onClick={() => handleToggleCompletion(habit._id, dayInfo.date)}
+                      >
+                        <span className="day-label">{DAY_LABELS[dayIndex]}</span>
+                        <motion.div
+                          className={`day-orb ${isCompleted ? "completed" : ""}`}
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 0.95 }}
+                          animate={isCompleted ? { scale: [1, 1.15, 1] } : {}}
+                          transition={{ duration: 0.2 }}
+                          style={{
+                            "--tint-color": color.color,
+                            "--tint-shadow": color.shadow,
+                          } as React.CSSProperties}
+                        >
+                          <i className="ph ph-check" />
+                        </motion.div>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                {/* Delete button (shows on hover via CSS) */}
+                <button
+                  className="habit-delete-btn"
+                  onClick={() => handleDeleteHabit(habit._id, habit.name)}
+                  title="Delete habit"
                 >
-                  <span className="font-medium">{dayLabels[day.dayOfWeek]}</span>
-                  {isCompleted && <span className="text-[10px]">✓</span>}
-                </motion.button>
-              );
-            })}
-          </div>
-        </div>
+                  <i className="ph ph-trash" />
+                </button>
+              </motion.div>
+            );
+          })}
+        </AnimatePresence>
 
-        {/* Week 2 */}
-        <div>
-          <p className="text-xs text-gray-500 mb-1">Week 2</p>
-          <div className="flex gap-1">
-            {days.slice(7, 14).map((day) => {
-              const isCompleted = completionMap.get(day.date);
-              const isToday = day.date === today;
-              const isFuture = day.date > today;
-
-              return (
-                <motion.button
-                  key={day.date}
-                  whileHover={!isFuture ? { scale: 1.1 } : {}}
-                  whileTap={!isFuture ? { scale: 0.95 } : {}}
-                  onClick={() => !isFuture && onToggle(day.date)}
-                  disabled={isFuture}
-                  className={cn(
-                    "w-9 h-9 rounded-lg flex flex-col items-center justify-center text-xs transition-colors",
-                    isFuture && "opacity-40 cursor-not-allowed",
-                    isToday && "ring-2 ring-primary-500 ring-offset-1",
-                    isCompleted
-                      ? "bg-green-500 text-white"
-                      : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-                  )}
+        {/* Add New Habit Card */}
+        <motion.div
+          className="art-habit-card add-new-card"
+          onClick={() => setShowNewHabitForm(true)}
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+        >
+          {showNewHabitForm ? (
+            <div className="new-habit-form" onClick={(e) => e.stopPropagation()}>
+              <input
+                type="text"
+                value={newHabitName}
+                onChange={(e) => setNewHabitName(e.target.value)}
+                placeholder="Habit name..."
+                autoFocus
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") handleCreateHabit();
+                  if (e.key === "Escape") {
+                    setShowNewHabitForm(false);
+                    setNewHabitName("");
+                  }
+                }}
+                className="new-habit-input"
+              />
+              <div className="new-habit-actions">
+                <button
+                  onClick={() => {
+                    setShowNewHabitForm(false);
+                    setNewHabitName("");
+                  }}
+                  className="btn-cancel"
                 >
-                  <span className="font-medium">{dayLabels[day.dayOfWeek]}</span>
-                  {isCompleted && <span className="text-[10px]">✓</span>}
-                </motion.button>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-
-      {/* Habit details */}
-      <div className="mt-4 pt-4 border-t border-gray-100 text-sm">
-        <div className="grid grid-cols-2 gap-4">
-          <div>
-            <p className="text-gray-500 text-xs mb-1">What is this habit?</p>
-            <p className="text-gray-700">{whatIsHabit}</p>
-          </div>
-          <div>
-            <p className="text-gray-500 text-xs mb-1">How will I practice?</p>
-            <p className="text-gray-700">{howToPractice}</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Actions */}
-      {(onEdit || onDelete) && (
-        <div className="flex gap-2 mt-4 pt-4 border-t border-gray-100">
-          {onEdit && (
-            <button
-              onClick={onEdit}
-              className="text-sm text-gray-500 hover:text-gray-700"
-            >
-              Edit
-            </button>
+                  Cancel
+                </button>
+                <button onClick={handleCreateHabit} className="btn-create" disabled={!newHabitName.trim()}>
+                  Create
+                </button>
+              </div>
+            </div>
+          ) : (
+            <div className="add-new-content">
+              <i className="ph ph-plus" style={{ fontSize: "32px", color: "var(--color-text-muted)" }} />
+              <div className="add-new-label">New Ritual</div>
+            </div>
           )}
-          {onDelete && (
-            <button
-              onClick={onDelete}
-              className="text-sm text-gray-500 hover:text-red-600"
-            >
-              Delete
-            </button>
-          )}
-        </div>
-      )}
-    </Card>
+        </motion.div>
+      </div>
+    </div>
   );
 }
-
-export default HabitTracker;

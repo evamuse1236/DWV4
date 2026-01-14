@@ -1,66 +1,105 @@
-import { useState } from "react";
-import { useQuery, useMutation } from "convex/react";
+import { useState, useRef, useEffect } from "react";
+import { useQuery, useMutation, useAction } from "convex/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { api } from "../../../convex/_generated/api";
 import { Modal } from "../../components/paper";
-import { GoalChatPalette, GoalEditor } from "../../components/sprint";
+import { GoalEditor, HabitTracker } from "../../components/sprint";
 import { TaskAssigner } from "../../components/student/TaskAssigner";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "../../components/ui/select";
 import { useAuth } from "../../hooks/useAuth";
-import { goalStatusColors, goalStatusLabels, type GoalStatus } from "../../lib/status-utils";
+import { goalStatusLabels, type GoalStatus } from "../../lib/status-utils";
 
 const MS_PER_DAY = 1000 * 60 * 60 * 24;
+// Week runs Monday (index 0) to Sunday (index 6)
+const DAY_NAMES = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
-// Shared button style for transparent "ghost" buttons
-const GHOST_BUTTON_STYLE =
-  "bg-transparent border-none text-[14px] opacity-50 text-[#1a1a1a] cursor-pointer hover:opacity-100 transition-opacity";
+// Goal icons (cycle through these)
+const GOAL_ICONS = ["ph-plant", "ph-barbell", "ph-book-open", "ph-lightbulb", "ph-target", "ph-star"];
 
-// Get the appropriate border/background classes for habit tracking buttons
-function getHabitButtonStyle(isCompleted: boolean, isToday: boolean): string {
-  if (isCompleted) {
-    return "bg-[#1a1a1a] border-[#1a1a1a] text-white";
-  }
-  if (isToday) {
-    return "border-[#1a1a1a] border-2";
-  }
-  return "border-black/20";
+// Goal colors for visual distinction (with tint for corner accent)
+const GOAL_COLORS = [
+  { name: "sage", dot: "#a8c5b5", bg: "rgba(168, 197, 181, 0.15)", tint: "#88c999" },
+  { name: "coral", dot: "#e8a598", bg: "rgba(232, 165, 152, 0.15)", tint: "#f2a5a5" },
+  { name: "sky", dot: "#8cb4d4", bg: "rgba(140, 180, 212, 0.15)", tint: "#8da4ef" },
+];
+
+// Convert 24-hour time to 12-hour format (e.g., 14 -> "2pm")
+function formatHourLabel(hour24: number): string {
+  const suffix = hour24 < 12 ? "am" : "pm";
+  const hour12 = ((hour24 + 11) % 12) + 1;
+  return `${hour12}${suffix}`;
 }
 
-// Edit icon SVG component
-function EditIcon({ className = "w-4 h-4" }: { className?: string }) {
+// Time options from 6am to 10pm
+const TIME_OPTIONS = Array.from({ length: 17 }, (_, i) => formatHourLabel(6 + i));
+
+// Sentinel value for "no time selected" in the dropdown
+const NO_TIME_VALUE = "__no_time__";
+
+// X icon for close button
+function XIcon({ className = "w-4 h-4" }: { className?: string }) {
   return (
-    <svg className={className} fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+    <svg className={className} fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
     </svg>
   );
 }
 
-// Checkmark icon SVG component
-function CheckIcon({ className = "w-4 h-4" }: { className?: string }) {
+// Send icon
+function SendIcon({ className = "w-5 h-5" }: { className?: string }) {
   return (
     <svg className={className} fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
     </svg>
   );
 }
 
 /**
- * Sprint Page - Paper UI Kanban Design
- * 3-column layout: Rituals (habits), Objectives (goals), Flow (tasks)
+ * Sprint Page - New Week View Design
+ * Goals at top, 7-day week view in middle, habit tracker at bottom
  */
 export function SprintPage() {
   const { user } = useAuth();
-  const [showGoalChat, setShowGoalChat] = useState(false);
-  const [showHabitForm, setShowHabitForm] = useState(false);
   const [showTaskAssigner, setShowTaskAssigner] = useState(false);
   const [newGoalId, setNewGoalId] = useState<string | null>(null);
   const [newGoalTitle, setNewGoalTitle] = useState("");
 
+  // Muse (AI Chat) state
+  const [museExpanded, setMuseExpanded] = useState(false);
+
+  // Week toggle state (1 or 2)
+  const [activeWeek, setActiveWeek] = useState(1);
+
+  // Goal expansion state (track which goal ID is expanded)
+  const [expandedGoalId, setExpandedGoalId] = useState<string | null>(null);
+
+  // Selected task for keyboard navigation
+  const [selectedTaskId, setSelectedTaskId] = useState<string | null>(null);
+
   // Edit states
   const [editingGoal, setEditingGoal] = useState<any>(null);
   const [editingHabit, setEditingHabit] = useState<any>(null);
-  // Inline edit state for action items (stores item ID being edited)
-  const [inlineEditItemId, setInlineEditItemId] = useState<string | null>(null);
-  const [inlineEditTitle, setInlineEditTitle] = useState("");
+  const [openTimeSelectTaskId, setOpenTimeSelectTaskId] = useState<string | null>(null);
+
+  // Inline editing state - tracks which item (by ID) is being edited and its current value
+  // Each pair: [activeItemId, editValue] - null ID means nothing is being edited
+  const [editingTaskTitle, setEditingTaskTitle] = useState<string | null>(null);
+  const [taskTitleValue, setTaskTitleValue] = useState("");
+  const [editingGoalTitle, setEditingGoalTitle] = useState<string | null>(null);
+  const [goalTitleValue, setGoalTitleValue] = useState("");
+
+  // State for quick-add task picker
+  const [showingAddTaskForDay, setShowingAddTaskForDay] = useState<number | null>(null);
+
+  // Time select optimistic UI state
+  const [optimisticTaskTimes, setOptimisticTaskTimes] = useState<Record<string, string>>({});
+  const [timeSaveErrorTaskId, setTimeSaveErrorTaskId] = useState<string | null>(null);
 
   // Get active sprint
   const activeSprint = useQuery(api.sprints.getActive);
@@ -73,39 +112,29 @@ export function SprintPage() {
       : "skip"
   );
 
-  const habits = useQuery(
-    api.habits.getByUserAndSprint,
-    activeSprint && user
-      ? { userId: user._id as any, sprintId: activeSprint._id }
-      : "skip"
-  );
-
   // Mutations
   const createGoal = useMutation(api.goals.create);
   const updateGoal = useMutation(api.goals.update);
   const toggleActionItem = useMutation(api.goals.toggleActionItem);
   const updateActionItem = useMutation(api.goals.updateActionItem);
-  const createHabit = useMutation(api.habits.create);
   const updateHabit = useMutation(api.habits.update);
-  const toggleHabitCompletion = useMutation(api.habits.toggleCompletion);
-
   const addActionItem = useMutation(api.goals.addActionItem);
+  const removeGoal = useMutation(api.goals.remove);
+  const removeActionItem = useMutation(api.goals.removeActionItem);
 
-  // Handle AI-generated goal with tasks
+  // Handle AI-generated goal with tasks (called from Muse)
   const handleAIGoalComplete = async (
     goal: { title: string; specific: string; measurable: string; achievable: string; relevant: string; timeBound: string },
     tasks: { title: string; weekNumber: number; dayOfWeek: number }[]
   ) => {
     if (!user || !activeSprint) return;
 
-    // Create the goal
     const result = await createGoal({
       userId: user._id as any,
       sprintId: activeSprint._id,
       ...goal,
     });
 
-    // Create all action items
     if (result.goalId) {
       for (const task of tasks) {
         await addActionItem({
@@ -118,7 +147,7 @@ export function SprintPage() {
       }
     }
 
-    setShowGoalChat(false);
+    setMuseExpanded(false);
   };
 
   const handleUpdateGoal = async (goalData: any) => {
@@ -134,35 +163,6 @@ export function SprintPage() {
     await toggleActionItem({ itemId: itemId as any });
   };
 
-  const handleUpdateActionItem = async () => {
-    if (!inlineEditItemId || !inlineEditTitle.trim()) return;
-    await updateActionItem({
-      itemId: inlineEditItemId as any,
-      title: inlineEditTitle.trim(),
-    });
-    setInlineEditItemId(null);
-    setInlineEditTitle("");
-  };
-
-  const startInlineEdit = (item: any) => {
-    setInlineEditItemId(item._id);
-    setInlineEditTitle(item.title);
-  };
-
-  const cancelInlineEdit = () => {
-    setInlineEditItemId(null);
-    setInlineEditTitle("");
-  };
-
-  const handleToggleHabit = async (habitId: string, date: string) => {
-    if (!user) return;
-    await toggleHabitCompletion({
-      habitId: habitId as any,
-      userId: user._id as any,
-      date,
-    });
-  };
-
   const handleUpdateHabit = async (data: any) => {
     if (!editingHabit) return;
     await updateHabit({
@@ -171,6 +171,138 @@ export function SprintPage() {
     });
     setEditingHabit(null);
   };
+
+  // Handle task title update (inline edit)
+  const handleTaskTitleUpdate = async (taskId: string) => {
+    if (!taskTitleValue.trim()) {
+      setEditingTaskTitle(null);
+      return;
+    }
+    await updateActionItem({
+      itemId: taskId as any,
+      title: taskTitleValue.trim(),
+    });
+    setEditingTaskTitle(null);
+    setTaskTitleValue("");
+  };
+
+  // Handle goal title update (inline edit)
+  const handleGoalTitleUpdate = async (goalId: string) => {
+    if (!goalTitleValue.trim()) {
+      setEditingGoalTitle(null);
+      return;
+    }
+    await updateGoal({
+      goalId: goalId as any,
+      title: goalTitleValue.trim(),
+    });
+    setEditingGoalTitle(null);
+    setGoalTitleValue("");
+  };
+
+  // Quick add task with goal color selection
+  const handleQuickAddTask = async (dayOfWeek: number, goalId: string) => {
+    if (!user || !activeSprint) return;
+    await addActionItem({
+      goalId: goalId as any,
+      userId: user._id as any,
+      title: "New task",
+      weekNumber: activeWeek,
+      dayOfWeek,
+    });
+    setShowingAddTaskForDay(null);
+  };
+
+  // Keyboard handler for task navigation - must be before any early returns
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Disable global shortcuts while any inline editor/dropdown is active
+      if (openTimeSelectTaskId || editingTaskTitle || editingGoalTitle) return;
+
+      // Ignore if typing in an input field
+      const target = e.target as HTMLElement;
+      if (
+        target.tagName === "INPUT" ||
+        target.tagName === "TEXTAREA" ||
+        target.isContentEditable ||
+        target.closest("input, textarea, [contenteditable='true']")
+      ) {
+        return;
+      }
+
+      if (!selectedTaskId || !activeSprint || !goals) return;
+
+      // Get all action items for current week
+      const allItems = goals.flatMap((goal: any) =>
+        (goal.actionItems || []).map((item: any) => ({
+          ...item,
+          goalId: goal._id,
+        }))
+      );
+      const weekItems = allItems.filter((item: any) => item.weekNumber === activeWeek);
+      const task = weekItems.find((t: any) => t._id === selectedTaskId);
+      if (!task) return;
+
+      if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        // In display order: Mon(1) Tue(2) Wed(3) Thu(4) Fri(5) Sat(6) Sun(0)
+        // Moving left from Monday (JS day 1) goes to Sunday of previous week
+        if (task.dayOfWeek === 1 && activeWeek > 1) {
+          // Go to Sunday (day 0) of previous week
+          updateActionItem({ itemId: task._id as any, dayOfWeek: 0, weekNumber: activeWeek - 1 });
+          setActiveWeek(activeWeek - 1);
+        } else {
+          // Normal left movement: Mon→Sun wrap, otherwise decrement
+          // JS days: Sun=0, Mon=1, Tue=2... Sat=6
+          // Display order: Mon(1)→Sat(6)→Sun(0)
+          let newDay: number;
+          if (task.dayOfWeek === 1) newDay = 0; // Mon→Sun (can't go prev week)
+          else if (task.dayOfWeek === 0) newDay = 6; // Sun→Sat
+          else newDay = task.dayOfWeek - 1; // Normal decrement
+          updateActionItem({ itemId: task._id as any, dayOfWeek: newDay });
+        }
+      } else if (e.key === "ArrowRight") {
+        e.preventDefault();
+        // Moving right from Sunday (JS day 0) goes to Monday of next week
+        if (task.dayOfWeek === 0 && activeWeek < 2) {
+          // Go to Monday (day 1) of next week
+          updateActionItem({ itemId: task._id as any, dayOfWeek: 1, weekNumber: activeWeek + 1 });
+          setActiveWeek(activeWeek + 1);
+        } else {
+          // Normal right movement: Sun→Mon wrap, otherwise increment
+          let newDay: number;
+          if (task.dayOfWeek === 0) newDay = 1; // Sun→Mon (can't go next week)
+          else if (task.dayOfWeek === 6) newDay = 0; // Sat→Sun
+          else newDay = task.dayOfWeek + 1; // Normal increment
+          updateActionItem({ itemId: task._id as any, dayOfWeek: newDay });
+        }
+      } else if (e.key === "Escape") {
+        setSelectedTaskId(null);
+      } else if (e.key === " " || e.key === "Enter") {
+        e.preventDefault();
+        toggleActionItem({ itemId: task._id as any });
+      } else if (e.key === "Delete" || e.key === "Backspace") {
+        e.preventDefault();
+        if (confirm("Delete this task?")) {
+          removeActionItem({ itemId: task._id as any });
+          setSelectedTaskId(null);
+        }
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [
+    selectedTaskId,
+    activeSprint,
+    goals,
+    activeWeek,
+    updateActionItem,
+    toggleActionItem,
+    openTimeSelectTaskId,
+    editingTaskTitle,
+    editingGoalTitle,
+  ]);
 
   // No active sprint
   if (!activeSprint) {
@@ -204,302 +336,592 @@ export function SprintPage() {
     )
   );
 
-  // Get today's day index for habit tracking (0 = first day of sprint)
+  // Calculate dates for the sprint
   const sprintStart = new Date(activeSprint.startDate);
   const today = new Date();
+  const todayStr = today.toISOString().split("T")[0];
+
+  // Calculate which day of the sprint we're on (0-indexed)
   const dayIndex = Math.floor(
     (today.getTime() - sprintStart.getTime()) / MS_PER_DAY
   );
 
-  // Generate dates for the week
+  // Determine current week based on day index
+  const currentWeek = dayIndex < 7 ? 1 : 2;
+
+  // Convert JS day (0=Sun) to display index (0=Mon, 6=Sun)
+  const jsToDisplayDay = (jsDay: number) => (jsDay + 6) % 7;
+
+  // Generate week dates based on activeWeek toggle, ordered Mon-Sun
   const getWeekDates = () => {
-    const dates: string[] = [];
+    const dates: { date: string; dayOfWeek: number; dayNum: number; displayIndex: number }[] = [];
+    const weekOffset = (activeWeek - 1) * 7;
+
     for (let i = 0; i < 7; i++) {
       const date = new Date(sprintStart);
-      date.setDate(date.getDate() + Math.max(0, dayIndex - 3) + i);
-      dates.push(date.toISOString().split("T")[0]);
+      date.setDate(date.getDate() + weekOffset + i);
+      const jsDay = date.getDay();
+      dates.push({
+        date: date.toISOString().split("T")[0],
+        dayOfWeek: jsDay, // Keep JS convention for data lookup
+        dayNum: date.getDate(),
+        displayIndex: jsToDisplayDay(jsDay), // For ordering Mon-Sun
+      });
     }
-    return dates;
+    // Sort by display index (Mon=0 to Sun=6)
+    return dates.sort((a, b) => a.displayIndex - b.displayIndex);
   };
 
   const weekDates = getWeekDates();
 
-  // Calculate current week (1 or 2) and day of week for task filtering
-  const currentWeek = dayIndex < 7 ? 1 : 2;
-  const currentDayOfWeek = today.getDay(); // 0=Sunday through 6=Saturday
-
-  // Get all action items from goals
-  const allActionItems = goals?.flatMap((goal: any) =>
+  // Get all action items from goals, with goal index for color coding
+  const allActionItems = goals?.flatMap((goal: any, goalIndex: number) =>
     (goal.actionItems || []).map((item: any) => ({
       ...item,
       goalTitle: goal.title,
+      goalId: goal._id,
+      goalIndex, // For color coding
     }))
   ) || [];
 
-  // Filter to only show today's tasks
-  const todayActionItems = allActionItems.filter(
-    (item: any) => item.weekNumber === currentWeek && item.dayOfWeek === currentDayOfWeek
+  // Filter action items by selected week
+  const weekActionItems = allActionItems.filter(
+    (item: any) => item.weekNumber === activeWeek
+  );
+
+  // Group tasks by day of week
+  const tasksByDay: { [key: number]: any[] } = {};
+  for (let i = 0; i < 7; i++) {
+    tasksByDay[i] = weekActionItems.filter((item: any) => item.dayOfWeek === i);
+  }
+
+  // Toggle goal expansion
+  const handleGoalClick = (goalId: string) => {
+    setExpandedGoalId(expandedGoalId === goalId ? null : goalId);
+  };
+
+  // Open Muse for goal creation
+  const handleOpenGoalChat = () => {
+    setMuseExpanded(true);
+  };
+
+  // Render the goals container (3 slots) - FIXED to match inspo exactly
+  const renderGoalsContainer = () => {
+    const goalSlots = [];
+    const maxGoals = 3;
+
+    for (let i = 0; i < maxGoals; i++) {
+      const goal = goals?.[i];
+
+      if (goal) {
+        const isExpanded = expandedGoalId === goal._id;
+        const completedItems = goal.actionItems?.filter((item: any) => item.isCompleted).length || 0;
+        const totalItems = goal.actionItems?.length || 0;
+        const progress = totalItems > 0 ? (completedItems / totalItems) * 100 : 0;
+        const iconClass = GOAL_ICONS[i % GOAL_ICONS.length];
+
+        const goalColor = GOAL_COLORS[i % GOAL_COLORS.length];
+
+        goalSlots.push(
+          <motion.div
+            key={goal._id}
+            className={`goal-slot filled ${isExpanded ? "expanded" : ""}`}
+            onClick={() => handleGoalClick(goal._id)}
+            layout
+            style={{ position: "relative", "--goal-tint": goalColor.tint } as React.CSSProperties}
+          >
+            {/* Color dot indicator */}
+            <div
+              style={{
+                position: "absolute",
+                top: "12px",
+                left: "12px",
+                width: "10px",
+                height: "10px",
+                borderRadius: "50%",
+                background: goalColor.dot,
+              }}
+            />
+            {/* Goal header - matching inspo structure exactly */}
+            <div>
+              <i
+                className={`ph ${iconClass} goal-icon`}
+                style={{
+                  color: goalColor.dot,
+                }}
+              />
+              {/* Goal title (inline editable) */}
+              {editingGoalTitle === goal._id ? (
+                <input
+                  type="text"
+                  value={goalTitleValue}
+                  onChange={(e) => setGoalTitleValue(e.target.value)}
+                  onBlur={() => handleGoalTitleUpdate(goal._id)}
+                  onKeyDown={(e) => {
+                    e.stopPropagation();
+                    if (e.key === "Enter") {
+                      e.preventDefault();
+                      (e.target as HTMLInputElement).blur();
+                    }
+                    if (e.key === "Escape") {
+                      e.preventDefault();
+                      setGoalTitleValue("");
+                      setEditingGoalTitle(null);
+                    }
+                  }}
+                  autoFocus
+                  onClick={(e) => e.stopPropagation()}
+                  style={{
+                    width: "100%",
+                    fontFamily: "var(--font-display)",
+                    fontSize: "24px",
+                    fontStyle: "italic",
+                    padding: "4px 8px",
+                    border: "1px solid rgba(168, 197, 181, 0.5)",
+                    borderRadius: "6px",
+                    background: "transparent",
+                    margin: 0,
+                  }}
+                />
+              ) : (
+                <h3
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setEditingGoalTitle(goal._id);
+                    setGoalTitleValue(goal.title);
+                  }}
+                  style={{
+                    fontFamily: "var(--font-display)",
+                    fontSize: "24px",
+                    fontStyle: "italic",
+                    margin: 0,
+                    cursor: "text",
+                  }}
+                  title="Click to edit"
+                >
+                  {goal.title}
+                </h3>
+              )}
+              <div
+                style={{
+                  fontSize: "11px",
+                  textTransform: "uppercase",
+                  letterSpacing: "0.1em",
+                  opacity: 0.5,
+                  marginTop: "8px",
+                }}
+              >
+                {goalStatusLabels[goal.status as GoalStatus]}
+              </div>
+            </div>
+
+            {/* Goal Details (revealed on click) */}
+            <div className="goal-details">
+              <div style={{ fontSize: "10px", textTransform: "uppercase", fontWeight: 700, opacity: 0.5 }}>
+                Progress
+              </div>
+              <div className="goal-progress-mini">
+                <motion.div
+                  className="goal-progress-fill"
+                  initial={{ width: 0 }}
+                  animate={{ width: `${progress}%` }}
+                />
+              </div>
+
+              <div style={{ fontSize: "10px", textTransform: "uppercase", fontWeight: 700, opacity: 0.5, marginTop: "16px" }}>
+                Daily Actions
+              </div>
+              <ul className="action-list">
+                {goal.actionItems?.slice(0, 5).map((item: any) => (
+                  <li
+                    key={item._id}
+                    className={`action-item ${item.isCompleted ? "done" : ""}`}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleToggleAction(item._id);
+                    }}
+                  >
+                    <i className={`ph ${item.isCompleted ? "ph-check-circle" : "ph-circle"}`} />
+                    <span>{item.title}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <div style={{ display: "flex", gap: "16px", marginTop: "16px" }}>
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setEditingGoal(goal);
+                  }}
+                  style={{
+                    fontSize: "11px",
+                    textTransform: "uppercase",
+                    letterSpacing: "0.1em",
+                    opacity: 0.5,
+                    background: "transparent",
+                    border: "none",
+                    cursor: "pointer",
+                  }}
+                  className="hover:opacity-100 transition-opacity"
+                >
+                  Edit Goal
+                </button>
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    if (confirm(`Delete "${goal.title}" and all its tasks?`)) {
+                      removeGoal({ goalId: goal._id as any });
+                      setExpandedGoalId(null);
+                    }
+                  }}
+                  style={{
+                    fontSize: "11px",
+                    textTransform: "uppercase",
+                    letterSpacing: "0.1em",
+                    opacity: 0.5,
+                    background: "transparent",
+                    border: "none",
+                    cursor: "pointer",
+                    color: "#c44",
+                  }}
+                  className="hover:opacity-100 transition-opacity"
+                >
+                  Delete
+                </button>
+              </div>
+            </div>
+          </motion.div>
+        );
+      } else {
+        // Empty slot - matching inspo structure exactly
+        const emptySlotColor = GOAL_COLORS[i % GOAL_COLORS.length];
+        goalSlots.push(
+          <div
+            key={`empty-${i}`}
+            className="goal-slot"
+            onClick={handleOpenGoalChat}
+            style={{ "--goal-tint": emptySlotColor.tint } as React.CSSProperties}
+          >
+            <div style={{ opacity: 0.4 }}>
+              <i className="ph ph-plus" style={{ fontSize: "24px", display: "block", color: emptySlotColor.dot }} />
+              <div
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "18px",
+                  fontStyle: "italic",
+                  marginTop: "8px",
+                }}
+              >
+                Set Goal
+              </div>
+            </div>
+          </div>
+        );
+      }
+    }
+
+    return <div className="goals-container fade-in-up delay-1">{goalSlots}</div>;
+  };
+
+  // Render the week view
+  const renderWeekView = () => (
+    <div className="week-view-container fade-in-up delay-2">
+      <div className="week-view">
+        {weekDates.map((dayInfo) => {
+          const isToday = dayInfo.date === todayStr && activeWeek === currentWeek;
+          const dayTasks = tasksByDay[dayInfo.dayOfWeek] || [];
+
+          return (
+            <div
+              key={dayInfo.date}
+              className={`day-column ${isToday ? "active" : ""}`}
+            >
+              <div className="day-header">
+                <div className="day-name">{DAY_NAMES[dayInfo.displayIndex]}</div>
+                <div className="day-date">{dayInfo.dayNum}</div>
+              </div>
+
+              <AnimatePresence mode="popLayout">
+              {dayTasks.map((task: any) => {
+                const isSelected = selectedTaskId === task._id;
+                const isTimeSelectOpen = openTimeSelectTaskId === task._id;
+                const taskColor = GOAL_COLORS[task.goalIndex % GOAL_COLORS.length];
+                // Use optimistic value if pending, otherwise use server value
+                const serverTimeValue = task.scheduledTime || "";
+                const displayTimeValue = optimisticTaskTimes[task._id] ?? serverTimeValue;
+                const selectValue = displayTimeValue || undefined;
+                const hasCustomTime = displayTimeValue && !TIME_OPTIONS.includes(displayTimeValue);
+
+                return (
+                  <motion.div
+                    key={task._id}
+                    layoutId={task._id}
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      exit={{ opacity: 0, scale: 0.9 }}
+                      transition={{ duration: 0.2 }}
+                      className={`task-card ${task.isCompleted ? "completed" : ""} ${isSelected ? "selected" : ""}`}
+                      style={{ background: taskColor.bg }}
+                    whileHover={{ y: -2 }}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      if (isTimeSelectOpen || editingTaskTitle === task._id) return;
+                      // If clicking on an already selected task, toggle its completion
+                      if (isSelected) {
+                        handleToggleAction(task._id);
+                      } else {
+                          // Otherwise, select it
+                          setSelectedTaskId(task._id);
+                        }
+                      }}
+                      layout
+                    >
+                      {/* Header row with goal label and time */}
+                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "4px" }}>
+                        <div className="task-time-pill" style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+                          <span
+                            style={{
+                              width: "6px",
+                              height: "6px",
+                              borderRadius: "50%",
+                              background: taskColor.dot,
+                              flexShrink: 0,
+                            }}
+                          />
+                          {task.goalTitle}
+                      </div>
+                      {/* Editable time field */}
+                      <div onClick={(e) => e.stopPropagation()} title="Set time">
+                        <Select
+                          value={selectValue}
+                          open={isTimeSelectOpen}
+                          onOpenChange={(open) => setOpenTimeSelectTaskId(open ? task._id : null)}
+                          onValueChange={async (selectedValue) => {
+                            const newTime = selectedValue === NO_TIME_VALUE ? "" : selectedValue;
+                            if (newTime === displayTimeValue) return;
+
+                            // Optimistically update UI
+                            setTimeSaveErrorTaskId(null);
+                            setOptimisticTaskTimes((prev) => ({ ...prev, [task._id]: newTime }));
+
+                            // Persist to server
+                            try {
+                              await updateActionItem({
+                                itemId: task._id as any,
+                                scheduledTime: newTime,
+                              });
+                            } catch (err) {
+                              console.error("Failed to update scheduled time:", err);
+                              setTimeSaveErrorTaskId(task._id);
+                            }
+                          }}
+                        >
+                          <SelectTrigger
+                            className={[
+                              "h-5 min-w-[56px] px-2 py-0 text-[10px] font-body shadow-none",
+                              "bg-transparent border-[rgba(168,197,181,0.5)]",
+                              "focus:ring-0 focus:ring-offset-0",
+                              displayTimeValue ? "opacity-70" : "opacity-30",
+                              timeSaveErrorTaskId === task._id ? "border-red-400" : "",
+                            ].join(" ")}
+                            onPointerDown={(e) => e.stopPropagation()}
+                          >
+                            <SelectValue placeholder="time" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            <SelectItem value={NO_TIME_VALUE}>time</SelectItem>
+                            {hasCustomTime && (
+                              <SelectItem value={displayTimeValue}>{displayTimeValue}</SelectItem>
+                            )}
+                            {TIME_OPTIONS.map((opt) => (
+                              <SelectItem key={opt} value={opt}>
+                                {opt}
+                              </SelectItem>
+                            ))}
+                          </SelectContent>
+                        </Select>
+                      </div>
+                    </div>
+                      {/* Task title (inline editable) */}
+                      {editingTaskTitle === task._id ? (
+                        <input
+                          type="text"
+                          value={taskTitleValue}
+                          onChange={(e) => setTaskTitleValue(e.target.value)}
+                          onBlur={() => handleTaskTitleUpdate(task._id)}
+                          onKeyDown={(e) => {
+                            e.stopPropagation();
+                            if (e.key === "Enter") {
+                              e.preventDefault();
+                              (e.target as HTMLInputElement).blur();
+                            }
+                            if (e.key === "Escape") {
+                              e.preventDefault();
+                              setTaskTitleValue("");
+                              setEditingTaskTitle(null);
+                            }
+                          }}
+                          autoFocus
+                          onClick={(e) => e.stopPropagation()}
+                          style={{
+                            width: "100%",
+                            fontFamily: "var(--font-display)",
+                            fontSize: "16px",
+                            padding: "2px 4px",
+                            border: "1px solid rgba(168, 197, 181, 0.5)",
+                            borderRadius: "4px",
+                            background: "transparent",
+                          }}
+                        />
+                      ) : (
+                        <div
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setEditingTaskTitle(task._id);
+                            setTaskTitleValue(task.title);
+                          }}
+                          style={{
+                            fontFamily: "var(--font-display)",
+                            fontSize: "16px",
+                            textDecoration: task.isCompleted ? "line-through" : "none",
+                            cursor: "text",
+                          }}
+                          title="Click to edit"
+                        >
+                          {task.title}
+                        </div>
+                      )}
+                      {/* Selection hint */}
+                      {isSelected && (
+                        <div style={{ fontSize: "9px", opacity: 0.5, marginTop: "6px" }}>
+                          ← → move • Enter complete • Del delete • Esc deselect
+                        </div>
+                      )}
+                    </motion.div>
+                  );
+                })}
+              </AnimatePresence>
+
+              {dayTasks.length === 0 && (
+                <div className="text-center text-[12px] opacity-30 mt-8">
+                  No tasks
+                </div>
+              )}
+
+              {/* Quick add task button */}
+              {goals && goals.length > 0 && (
+                <div style={{ marginTop: "auto", paddingTop: "12px" }}>
+                  {showingAddTaskForDay === dayInfo.dayOfWeek ? (
+                    <div className="quick-add-goals">
+                      {goals.map((goal: any, idx: number) => (
+                        <motion.button
+                          key={goal._id}
+                          whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          onClick={() => handleQuickAddTask(dayInfo.dayOfWeek, goal._id)}
+                          style={{
+                            width: "20px",
+                            height: "20px",
+                            borderRadius: "50%",
+                            background: GOAL_COLORS[idx % GOAL_COLORS.length].dot,
+                            border: "none",
+                            cursor: "pointer",
+                          }}
+                          title={goal.title}
+                        />
+                      ))}
+                      <button
+                        onClick={() => setShowingAddTaskForDay(null)}
+                        style={{
+                          background: "transparent",
+                          border: "none",
+                          cursor: "pointer",
+                          opacity: 0.4,
+                          fontSize: "14px",
+                        }}
+                      >
+                        <i className="ph ph-x" />
+                      </button>
+                    </div>
+                  ) : (
+                    <button
+                      onClick={() => setShowingAddTaskForDay(dayInfo.dayOfWeek)}
+                      className="quick-add-btn"
+                    >
+                      <i className="ph ph-plus" style={{ fontSize: "14px" }} />
+                    </button>
+                  )}
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
   );
 
   return (
     <div>
       {/* Header */}
-      <div className="fade-in-up mb-[50px] flex justify-between items-end">
+      <div className="fade-in-up" style={{ marginBottom: "40px", display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
         <div>
-          <span className="text-[0.75rem] uppercase tracking-[0.2em] text-[#888] block mb-[10px] font-body">
-            Current Cycle
+          <span
+            style={{
+              display: "block",
+              marginBottom: "10px",
+              opacity: 0.6,
+              fontFamily: "var(--font-body)",
+              textTransform: "uppercase",
+              letterSpacing: "0.1em",
+              fontSize: "11px",
+              fontWeight: 700,
+            }}
+          >
+            Sprint Cycle
           </span>
-          <h1 className="text-[3.5rem] m-0 leading-none">{activeSprint.name}</h1>
+          <h1 style={{ fontSize: "3.5rem", margin: 0, lineHeight: 1 }}>{activeSprint.name}</h1>
         </div>
-        <div className="text-right">
-          <div className="text-[32px] font-display italic">{String(sprintDaysLeft).padStart(2, "0")}</div>
-          <div className="text-[11px] uppercase tracking-[0.1em] opacity-60">Days Left</div>
+
+        {/* Week Toggle */}
+        <div className="week-toggle">
+          <div
+            className={`toggle-btn ${activeWeek === 1 ? "active" : ""}`}
+            onClick={() => setActiveWeek(1)}
+          >
+            Week 1
+          </div>
+          <div
+            className={`toggle-btn ${activeWeek === 2 ? "active" : ""}`}
+            onClick={() => setActiveWeek(2)}
+          >
+            Week 2
+          </div>
         </div>
       </div>
 
-      {/* Kanban Grid */}
-      <div className="kanban-grid fade-in-up delay-1">
-        {/* COLUMN 1: Rituals (Habits) */}
-        <div className="pastel-card pastel-blue p-8">
-          <div className="flex justify-between items-center mb-6">
-            <h2 className="text-[24px] m-0">Habits</h2>
-            <svg className="w-5 h-5 opacity-40" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-            </svg>
-          </div>
+      {/* Goals Container */}
+      {renderGoalsContainer()}
 
-          {habits && habits.length > 0 ? (
-            habits.map((habit: any) => (
-              <div key={habit._id} className="card-white group">
-                <div className="flex justify-between items-start mb-3">
-                  <strong className="font-display text-[20px] block">{habit.name}</strong>
-                  <button
-                    onClick={() => setEditingHabit(habit)}
-                    className="opacity-0 group-hover:opacity-60 hover:!opacity-100 transition-opacity p-1"
-                    title="Edit habit"
-                  >
-                    <EditIcon />
-                  </button>
-                </div>
-                <div className="flex gap-2">
-                  {weekDates.map((date) => {
-                    const isCompleted = habit.completions?.some(
-                      (c: any) => c.date === date && c.completed
-                    );
-                    const isToday = date === today.toISOString().split("T")[0];
+      {/* Week View */}
+      {renderWeekView()}
 
-                    return (
-                      <motion.button
-                        key={date}
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        onClick={() => handleToggleHabit(habit._id, date)}
-                        className={`w-8 h-8 rounded-full border flex items-center justify-center cursor-pointer transition-all ${getHabitButtonStyle(isCompleted, isToday)}`}
-                      >
-                        {isCompleted && <CheckIcon />}
-                      </motion.button>
-                    );
-                  })}
-                </div>
-              </div>
-            ))
-          ) : (
-            <div className="card-white text-center py-6">
-              <p className="opacity-60 text-sm mb-3">No habits yet</p>
-              <button
-                onClick={() => setShowHabitForm(true)}
-                className="btn btn-secondary text-xs"
-              >
-                + Add Habit
-              </button>
-            </div>
-          )}
+      {/* Habit Tracker */}
+      {user && activeSprint && (
+        <HabitTracker
+          userId={user._id as any}
+          sprintId={activeSprint._id}
+          weekDates={weekDates}
+        />
+      )}
 
-          {habits && habits.length > 0 && (
-            <button
-              onClick={() => setShowHabitForm(true)}
-              className="w-full mt-4 py-3 border border-dashed border-black/10 rounded-xl text-sm opacity-50 hover:opacity-100 transition-opacity"
-            >
-              + Add Habit
-            </button>
-          )}
-        </div>
-
-        {/* COLUMN 2: Objectives (Goals) */}
-        <div className="pastel-card pastel-green p-8">
-          <div className="flex justify-between items-center mb-6">
-            <h2 className="text-[24px] m-0">Goals</h2>
-            <svg className="w-5 h-5 opacity-40" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-          </div>
-
-          {goals && goals.length > 0 ? (
-            goals.map((goal: any) => {
-              const completedItems = goal.actionItems?.filter((i: any) => i.isCompleted).length || 0;
-              const totalItems = goal.actionItems?.length || 0;
-              const progress = totalItems > 0 ? (completedItems / totalItems) * 100 : 0;
-
-              return (
-                <div key={goal._id} className="card-white p-6 group">
-                  <div className="flex justify-between items-start mb-2">
-                    <span
-                      className={`text-[10px] font-bold tracking-[0.1em] uppercase ${goalStatusColors[goal.status as GoalStatus]}`}
-                    >
-                      {goalStatusLabels[goal.status as GoalStatus]}
-                    </span>
-                    <button
-                      onClick={() => setEditingGoal(goal)}
-                      className="opacity-0 group-hover:opacity-60 hover:!opacity-100 transition-opacity p-1"
-                      title="Edit goal"
-                    >
-                      <EditIcon />
-                    </button>
-                  </div>
-                  <h3 className="font-display text-[24px] mb-4">{goal.title}</h3>
-                  <div className="h-2 bg-black/5 rounded-full overflow-hidden">
-                    <motion.div
-                      initial={{ width: 0 }}
-                      animate={{ width: `${progress}%` }}
-                      className="h-full bg-[#15803d]/60 rounded-full"
-                    />
-                  </div>
-                  {totalItems > 0 && (
-                    <p className="text-[10px] mt-2 opacity-50 uppercase tracking-wide">
-                      {completedItems}/{totalItems} tasks
-                    </p>
-                  )}
-                </div>
-              );
-            })
-          ) : (
-            <div className="card-white text-center py-6">
-              <p className="opacity-60 text-sm mb-3">No goals yet</p>
-              <button
-                onClick={() => setShowGoalChat(true)}
-                className="btn btn-secondary text-xs"
-              >
-                + Add Goal
-              </button>
-            </div>
-          )}
-
-          {goals && goals.length > 0 && (
-            <button
-              onClick={() => setShowGoalChat(true)}
-              className="w-full mt-4 py-3 border border-dashed border-black/10 rounded-xl text-sm opacity-50 hover:opacity-100 transition-opacity"
-            >
-              + Add Goal
-            </button>
-          )}
-        </div>
-
-        {/* COLUMN 3: Flow (Tasks) */}
-        <div className="pastel-card pastel-purple p-8">
-          <div className="flex justify-between items-center mb-6">
-            <h2 className="text-[24px] m-0">Actions</h2>
-            <svg className="w-5 h-5 opacity-40" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-          </div>
-
-          {todayActionItems.length > 0 ? (
-            todayActionItems.slice(0, 5).map((item: any, index: number) => {
-              const isEditing = inlineEditItemId === item._id;
-              
-              return (
-                <motion.div
-                  key={item._id || index}
-                  whileHover={isEditing ? {} : { x: 4 }}
-                  className={`card-white flex gap-4 items-center group ${
-                    item.isCompleted ? "opacity-60" : ""
-                  }`}
-                >
-                  <div
-                    onClick={() => !isEditing && handleToggleAction(item._id)}
-                    className={`w-6 h-6 rounded-full border flex-shrink-0 flex items-center justify-center cursor-pointer transition-all ${
-                      item.isCompleted
-                        ? "bg-[#1a1a1a] border-[#1a1a1a]"
-                        : "border-black/20"
-                    }`}
-                  >
-                    {item.isCompleted && <CheckIcon className="w-3 h-3 text-white" />}
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    {isEditing ? (
-                      <input
-                        type="text"
-                        value={inlineEditTitle}
-                        onChange={(e) => setInlineEditTitle(e.target.value)}
-                        onKeyDown={(e) => {
-                          if (e.key === "Enter") {
-                            e.preventDefault();
-                            handleUpdateActionItem();
-                          } else if (e.key === "Escape") {
-                            cancelInlineEdit();
-                          }
-                        }}
-                        onBlur={() => {
-                          // Save on blur if there's a change
-                          if (inlineEditTitle.trim() && inlineEditTitle !== item.title) {
-                            handleUpdateActionItem();
-                          } else {
-                            cancelInlineEdit();
-                          }
-                        }}
-                        autoFocus
-                        className="w-full text-[16px] bg-transparent border-b border-[#1a1a1a]/30 focus:border-[#1a1a1a] outline-none py-1"
-                      />
-                    ) : (
-                      <div className={`text-[16px] ${item.isCompleted ? "line-through" : ""}`}>
-                        {item.title}
-                      </div>
-                    )}
-                    <div className="text-[10px] mt-1 uppercase tracking-[0.05em] opacity-50">
-                      {item.goalTitle} • Today
-                    </div>
-                  </div>
-                  {!isEditing && (
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        startInlineEdit(item);
-                      }}
-                      className="opacity-0 group-hover:opacity-60 hover:!opacity-100 transition-opacity p-1 flex-shrink-0"
-                      title="Edit task"
-                    >
-                      <EditIcon className="w-3.5 h-3.5" />
-                    </button>
-                  )}
-                </motion.div>
-              );
-            })
-          ) : (
-            <div className="card-white text-center py-6">
-              <p className="opacity-60 text-sm">
-                Add action items to your objectives to see tasks here.
-              </p>
-            </div>
-          )}
-
-          {todayActionItems.length > 5 && (
-            <p className="text-center text-sm opacity-50 mt-4">
-              +{todayActionItems.length - 5} more tasks
-            </p>
-          )}
-        </div>
-      </div>
-
-      {/* AI Goal Chat */}
-      <AnimatePresence>
-        {showGoalChat && (
-          <GoalChatPalette
-            sprintDaysRemaining={sprintDaysLeft}
-            onComplete={handleAIGoalComplete}
-            onCancel={() => setShowGoalChat(false)}
-          />
-        )}
-      </AnimatePresence>
+      {/* The Muse: AI Chatbox */}
+      <TheMuse
+        expanded={museExpanded}
+        onToggle={() => setMuseExpanded(!museExpanded)}
+        onClose={() => setMuseExpanded(false)}
+        sprintDaysRemaining={sprintDaysLeft}
+        onGoalComplete={handleAIGoalComplete}
+      />
 
       {/* Edit Goal Modal */}
       <Modal
@@ -524,23 +946,6 @@ export function SprintPage() {
         )}
       </Modal>
 
-      {/* Create Habit Form Modal */}
-      <AnimatePresence>
-        {showHabitForm && (
-          <HabitFormOverlay
-            onSave={async (data) => {
-              if (!user || !activeSprint) return;
-              await createHabit({
-                userId: user._id as any,
-                sprintId: activeSprint._id,
-                ...data,
-              });
-              setShowHabitForm(false);
-            }}
-            onClose={() => setShowHabitForm(false)}
-          />
-        )}
-      </AnimatePresence>
 
       {/* Edit Habit Form Modal */}
       <AnimatePresence>
@@ -558,7 +963,7 @@ export function SprintPage() {
         )}
       </AnimatePresence>
 
-      {/* Task Assigner Modal - shown after goal creation */}
+      {/* Task Assigner Modal */}
       <AnimatePresence>
         {showTaskAssigner && newGoalId && user && (
           <TaskAssigner
@@ -577,7 +982,312 @@ export function SprintPage() {
   );
 }
 
-// Habit form as an overlay matching Paper UI style
+// =============================================================================
+// THE MUSE: Floating AI Chat Companion
+// =============================================================================
+
+interface MuseMessage {
+  id: string;
+  role: "user" | "assistant";
+  content: string;
+}
+
+interface ExtractedGoal {
+  title: string;
+  specific: string;
+  measurable: string;
+  achievable: string;
+  relevant: string;
+  timeBound: string;
+}
+
+interface SuggestedTask {
+  title: string;
+  weekNumber: number;
+  dayOfWeek: number;
+}
+
+const AI_MODELS = [
+  { id: "meta-llama/llama-3.3-70b-instruct:free", name: "Llama 3.3" },
+  { id: "xiaomi/mimo-v2-flash:free", name: "MiMo Flash" },
+  { id: "tngtech/deepseek-r1t2-chimera:free", name: "DeepSeek" },
+];
+
+function TheMuse({
+  expanded,
+  onToggle,
+  onClose,
+  sprintDaysRemaining,
+  onGoalComplete,
+}: {
+  expanded: boolean;
+  onToggle: () => void;
+  onClose: () => void;
+  sprintDaysRemaining: number;
+  onGoalComplete: (goal: ExtractedGoal, tasks: SuggestedTask[]) => void;
+}) {
+  const [messages, setMessages] = useState<MuseMessage[]>([]);
+  const [inputValue, setInputValue] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [selectedModel] = useState(AI_MODELS[0].id);
+  const [extractedGoal, setExtractedGoal] = useState<ExtractedGoal | null>(null);
+  const [tasks, setTasks] = useState<SuggestedTask[]>([]);
+  const [phase, setPhase] = useState<"chatting" | "reviewing">("chatting");
+
+  const chatAction = useAction(api.ai.chat);
+  const messagesEndRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  // Auto-scroll to bottom on new messages
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages]);
+
+  // Initial greeting when expanded
+  useEffect(() => {
+    if (expanded && messages.length === 0) {
+      setMessages([
+        {
+          id: "initial",
+          role: "assistant",
+          content: `Hi! I'm here to help you set a goal for your sprint. What would you like to accomplish in the next ${sprintDaysRemaining} days?`,
+        },
+      ]);
+    }
+  }, [expanded, sprintDaysRemaining]);
+
+  // Focus input when expanded
+  useEffect(() => {
+    if (expanded && phase === "chatting") {
+      setTimeout(() => inputRef.current?.focus(), 100);
+    }
+  }, [expanded, phase]);
+
+  const handleSend = async () => {
+    const trimmed = inputValue.trim();
+    if (!trimmed || isLoading) return;
+
+    const userMessage: MuseMessage = {
+      id: `user-${Date.now()}`,
+      role: "user",
+      content: trimmed,
+    };
+    setMessages((prev) => [...prev, userMessage]);
+    setInputValue("");
+    setIsLoading(true);
+
+    try {
+      const apiMessages = messages
+        .filter((m) => m.id !== "initial")
+        .concat(userMessage)
+        .map((m) => ({ role: m.role, content: m.content }));
+
+      const response = await chatAction({
+        messages: apiMessages,
+        sprintDaysRemaining,
+        model: selectedModel,
+      });
+
+      // Check if AI returned structured goal data
+      const goalMatch = response.content.match(/```goal-ready\n([\s\S]*?)\n```/);
+
+      if (goalMatch) {
+        try {
+          const data = JSON.parse(goalMatch[1]);
+          setExtractedGoal(data.goal);
+          setTasks(data.suggestedTasks || []);
+          setPhase("reviewing");
+          const textBeforeJson = response.content.split("```goal-ready")[0].trim();
+          setMessages((prev) => [
+            ...prev,
+            { id: `ai-${Date.now()}`, role: "assistant", content: textBeforeJson || "Here's your goal!" },
+          ]);
+          return;
+        } catch {
+          // JSON parse failed, continue as normal chat
+        }
+      }
+
+      setMessages((prev) => [
+        ...prev,
+        { id: `ai-${Date.now()}`, role: "assistant", content: response.content },
+      ]);
+    } catch (err) {
+      console.error("Chat error:", err);
+      setMessages((prev) => [
+        ...prev,
+        { id: `ai-${Date.now()}`, role: "assistant", content: "Sorry, I had trouble responding. Please try again." },
+      ]);
+    } finally {
+      setIsLoading(false);
+      // Re-focus input after AI responds
+      setTimeout(() => inputRef.current?.focus(), 50);
+    }
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Enter" && !e.shiftKey) {
+      e.preventDefault();
+      handleSend();
+    }
+  };
+
+  const handleGoBack = () => {
+    setPhase("chatting");
+    setExtractedGoal(null);
+    setTasks([]);
+    setMessages((prev) => [
+      ...prev,
+      { id: `ai-${Date.now()}`, role: "assistant", content: "No problem! What would you like to change?" },
+    ]);
+  };
+
+  const handleConfirm = () => {
+    if (extractedGoal) {
+      onGoalComplete(extractedGoal, tasks);
+      // Reset state
+      setMessages([]);
+      setExtractedGoal(null);
+      setTasks([]);
+      setPhase("chatting");
+    }
+  };
+
+  return (
+    <div className={`muse-container ${expanded ? "expanded" : ""}`}>
+      {/* Floating Blob Trigger */}
+      <div className="muse-blob-wrapper">
+        <div className="muse-blob" onClick={onToggle} />
+      </div>
+
+      {/* Expanded Chat Panel */}
+      <div className="muse-panel">
+        <div className="muse-header">
+          <div>
+            <span style={{ fontFamily: "var(--font-body)", fontSize: "10px", textTransform: "uppercase", letterSpacing: "0.2em", opacity: 0.5 }}>
+              AI Companion
+            </span>
+            <h3 style={{ fontFamily: "var(--font-display)", fontSize: "24px", fontStyle: "italic", margin: 0, lineHeight: 1 }}>
+              The Muse
+            </h3>
+          </div>
+          <button
+            onClick={onClose}
+            style={{ background: "none", border: "none", cursor: "pointer", opacity: 0.5, padding: "4px" }}
+          >
+            <XIcon className="w-4 h-4" />
+          </button>
+        </div>
+
+        {phase === "chatting" ? (
+          <>
+            <div className="muse-body">
+              {messages.map((msg) => (
+                <motion.div
+                  key={msg.id}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className={`chat-message ${msg.role === "user" ? "user" : "ai"}`}
+                >
+                  {msg.content}
+                </motion.div>
+              ))}
+              {isLoading && (
+                <div className="chat-message ai" style={{ display: "flex", gap: "4px" }}>
+                  <span className="animate-pulse">●</span>
+                  <span className="animate-pulse" style={{ animationDelay: "0.2s" }}>●</span>
+                  <span className="animate-pulse" style={{ animationDelay: "0.4s" }}>●</span>
+                </div>
+              )}
+              <div ref={messagesEndRef} />
+            </div>
+
+            <div className="muse-input-area">
+              <input
+                ref={inputRef}
+                type="text"
+                className="muse-input"
+                placeholder="Tell me about your goal..."
+                value={inputValue}
+                onChange={(e) => setInputValue(e.target.value)}
+                onKeyDown={handleKeyDown}
+                disabled={isLoading}
+              />
+              <button className="muse-send-btn" onClick={handleSend} disabled={isLoading || !inputValue.trim()}>
+                <SendIcon />
+              </button>
+            </div>
+          </>
+        ) : (
+          <div className="muse-body" style={{ padding: "24px" }}>
+            <div style={{ textAlign: "center", marginBottom: "20px" }}>
+              <span style={{ fontSize: "10px", textTransform: "uppercase", letterSpacing: "0.2em", opacity: 0.5 }}>
+                Your Goal
+              </span>
+              <h3 style={{ fontFamily: "var(--font-display)", fontSize: "22px", fontStyle: "italic", margin: "8px 0" }}>
+                {extractedGoal?.title}
+              </h3>
+            </div>
+
+            <div style={{ fontSize: "13px", lineHeight: 1.6, opacity: 0.8 }}>
+              <p><strong>Specific:</strong> {extractedGoal?.specific}</p>
+              <p style={{ marginTop: "8px" }}><strong>Measurable:</strong> {extractedGoal?.measurable}</p>
+            </div>
+
+            {tasks.length > 0 && (
+              <div style={{ marginTop: "16px" }}>
+                <span style={{ fontSize: "10px", textTransform: "uppercase", letterSpacing: "0.1em", opacity: 0.5 }}>
+                  {tasks.length} Tasks
+                </span>
+              </div>
+            )}
+
+            <div style={{ display: "flex", gap: "12px", marginTop: "auto", paddingTop: "20px" }}>
+              <button
+                onClick={handleGoBack}
+                style={{
+                  flex: 1,
+                  padding: "12px",
+                  background: "transparent",
+                  border: "1px solid rgba(0,0,0,0.1)",
+                  borderRadius: "12px",
+                  cursor: "pointer",
+                  fontSize: "12px",
+                  textTransform: "uppercase",
+                  letterSpacing: "0.05em",
+                }}
+              >
+                Edit
+              </button>
+              <button
+                onClick={handleConfirm}
+                style={{
+                  flex: 2,
+                  padding: "12px",
+                  background: "var(--color-text)",
+                  color: "white",
+                  border: "none",
+                  borderRadius: "12px",
+                  cursor: "pointer",
+                  fontSize: "12px",
+                  textTransform: "uppercase",
+                  letterSpacing: "0.05em",
+                }}
+              >
+                Create Goal
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// =============================================================================
+// Habit Form Overlay
+// =============================================================================
+
 function HabitFormOverlay({
   onSave,
   onClose,
@@ -642,7 +1352,17 @@ function HabitFormOverlay({
         </div>
 
         <div className="mt-12 flex items-center justify-center gap-8">
-          <button onClick={onClose} className={GHOST_BUTTON_STYLE}>
+          <button
+            onClick={onClose}
+            style={{
+              background: "transparent",
+              border: "none",
+              fontSize: "14px",
+              opacity: 0.5,
+              cursor: "pointer",
+            }}
+            className="hover:opacity-100 transition-opacity"
+          >
             CANCEL
           </button>
           <button

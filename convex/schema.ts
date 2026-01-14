@@ -92,6 +92,7 @@ export default defineSchema({
     description: v.optional(v.string()),
     weekNumber: v.number(),
     dayOfWeek: v.number(),
+    scheduledTime: v.optional(v.string()),
     isCompleted: v.boolean(),
     completedAt: v.optional(v.number()),
     order: v.number(),

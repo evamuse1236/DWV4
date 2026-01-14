@@ -194,6 +194,7 @@ export const updateActionItem = mutation({
     description: v.optional(v.string()),
     weekNumber: v.optional(v.number()),
     dayOfWeek: v.optional(v.number()),
+    scheduledTime: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
     const { itemId, ...updates } = args;
