@@ -53,16 +53,8 @@ TASK SCHEDULING RULES:
 IMPORTANT: Only output the JSON when you've naturally gathered all the information through conversation. Don't rush - let the student express themselves. Before outputting JSON, say something like "Great! I think I have a good picture now. Let me put together a goal for you..."`;
 }
 
-/**
- * Chat with the AI assistant for goal setting
- * Uses OpenRouter API for LLM access
- */
-// Available free models from OpenRouter
-export const AVAILABLE_MODELS = [
-  { id: "meta-llama/llama-3.3-70b-instruct:free", name: "Llama 3.3 70B", description: "Fast & capable" },
-  { id: "xiaomi/mimo-v2-flash:free", name: "MiMo Flash", description: "Quick responses" },
-  { id: "tngtech/deepseek-r1t2-chimera:free", name: "DeepSeek Chimera", description: "Deep reasoning" },
-] as const;
+// Default model for goal-setting chat
+const DEFAULT_MODEL = "meta-llama/llama-3.3-70b-instruct:free";
 
 export const chat = action({
   args: {
@@ -75,16 +67,15 @@ export const chat = action({
     sprintDaysRemaining: v.number(),
     model: v.optional(v.string()),
   },
-  handler: async (ctx, args) => {
+  handler: async (_ctx, args) => {
     const apiKey = process.env.OPENROUTER_API_KEY;
     if (!apiKey) {
-      throw new Error("OpenRouter API key not configured. Please set OPENROUTER_API_KEY in Convex environment variables.");
+      throw new Error(
+        "OpenRouter API key not configured. Please set OPENROUTER_API_KEY in Convex environment variables."
+      );
     }
 
-    // Build the system prompt
     const systemPrompt = buildSystemPrompt(args.sprintDaysRemaining);
-
-    // Prepare messages for API
     const apiMessages = [
       { role: "system" as const, content: systemPrompt },
       ...args.messages.map((m) => ({
@@ -93,42 +84,38 @@ export const chat = action({
       })),
     ];
 
-    try {
-      const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${apiKey}`,
-          "Content-Type": "application/json",
-          "HTTP-Referer": "https://deepwork-tracker.app",
-          "X-Title": "Deep Work Tracker",
-        },
-        body: JSON.stringify({
-          model: args.model || "meta-llama/llama-3.3-70b-instruct:free",
-          messages: apiMessages,
-          temperature: 0.7,
-          max_tokens: 1000,
-        }),
-      });
+    const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+        "HTTP-Referer": "https://deepwork-tracker.app",
+        "X-Title": "Deep Work Tracker",
+      },
+      body: JSON.stringify({
+        model: args.model || DEFAULT_MODEL,
+        messages: apiMessages,
+        temperature: 0.7,
+        max_tokens: 1000,
+      }),
+    });
 
-      if (!response.ok) {
-        const errorText = await response.text();
-        console.error("OpenRouter API error:", errorText);
-        throw new Error(`AI service error: ${response.status}`);
-      }
-
-      const data = await response.json();
-      
-      if (!data.choices || !data.choices[0] || !data.choices[0].message) {
-        throw new Error("Invalid response from AI service");
-      }
-
-      return {
-        content: data.choices[0].message.content,
-        usage: data.usage,
-      };
-    } catch (error) {
-      console.error("Chat action error:", error);
-      throw error;
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error("OpenRouter API error:", errorText);
+      throw new Error(`AI service error: ${response.status}`);
     }
+
+    const data = await response.json();
+    const messageContent = data.choices?.[0]?.message?.content;
+
+    if (!messageContent) {
+      throw new Error("Invalid response from AI service");
+    }
+
+    return {
+      content: messageContent,
+      usage: data.usage,
+    };
   },
 });

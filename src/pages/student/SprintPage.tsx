@@ -10,6 +10,10 @@ import { goalStatusColors, goalStatusLabels, type GoalStatus } from "../../lib/s
 
 const MS_PER_DAY = 1000 * 60 * 60 * 24;
 
+// Shared button style for transparent "ghost" buttons
+const GHOST_BUTTON_STYLE =
+  "bg-transparent border-none text-[14px] opacity-50 text-[#1a1a1a] cursor-pointer hover:opacity-100 transition-opacity";
+
 // Get the appropriate border/background classes for habit tracking buttons
 function getHabitButtonStyle(isCompleted: boolean, isToday: boolean): string {
   if (isCompleted) {
@@ -30,6 +34,15 @@ function EditIcon({ className = "w-4 h-4" }: { className?: string }) {
   );
 }
 
+// Checkmark icon SVG component
+function CheckIcon({ className = "w-4 h-4" }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+    </svg>
+  );
+}
+
 /**
  * Sprint Page - Paper UI Kanban Design
  * 3-column layout: Rituals (habits), Objectives (goals), Flow (tasks)
@@ -37,7 +50,6 @@ function EditIcon({ className = "w-4 h-4" }: { className?: string }) {
 export function SprintPage() {
   const { user } = useAuth();
   const [showGoalChat, setShowGoalChat] = useState(false);
-  const [showGoalEditor, setShowGoalEditor] = useState(false);
   const [showHabitForm, setShowHabitForm] = useState(false);
   const [showTaskAssigner, setShowTaskAssigner] = useState(false);
   const [newGoalId, setNewGoalId] = useState<string | null>(null);
@@ -78,23 +90,6 @@ export function SprintPage() {
   const toggleHabitCompletion = useMutation(api.habits.toggleCompletion);
 
   const addActionItem = useMutation(api.goals.addActionItem);
-
-  const handleCreateGoal = async (goalData: any) => {
-    if (!user || !activeSprint) return;
-    const result = await createGoal({
-      userId: user._id as any,
-      sprintId: activeSprint._id,
-      ...goalData,
-    });
-    setShowGoalEditor(false);
-
-    // After goal creation, show TaskAssigner
-    if (result.goalId) {
-      setNewGoalId(result.goalId);
-      setNewGoalTitle(goalData.title);
-      setShowTaskAssigner(true);
-    }
-  };
 
   // Handle AI-generated goal with tasks
   const handleAIGoalComplete = async (
@@ -301,11 +296,7 @@ export function SprintPage() {
                         onClick={() => handleToggleHabit(habit._id, date)}
                         className={`w-8 h-8 rounded-full border flex items-center justify-center cursor-pointer transition-all ${getHabitButtonStyle(isCompleted, isToday)}`}
                       >
-                        {isCompleted && (
-                          <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                          </svg>
-                        )}
+                        {isCompleted && <CheckIcon />}
                       </motion.button>
                     );
                   })}
@@ -432,11 +423,7 @@ export function SprintPage() {
                         : "border-black/20"
                     }`}
                   >
-                    {item.isCompleted && (
-                      <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                      </svg>
-                    )}
+                    {item.isCompleted && <CheckIcon className="w-3 h-3 text-white" />}
                   </div>
                   <div className="flex-1 min-w-0">
                     {isEditing ? (
@@ -655,10 +642,7 @@ function HabitFormOverlay({
         </div>
 
         <div className="mt-12 flex items-center justify-center gap-8">
-          <button
-            onClick={onClose}
-            className="bg-transparent border-none text-[14px] opacity-50 text-[#1a1a1a] cursor-pointer hover:opacity-100 transition-opacity"
-          >
+          <button onClick={onClose} className={GHOST_BUTTON_STYLE}>
             CANCEL
           </button>
           <button

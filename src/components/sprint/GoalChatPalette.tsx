@@ -30,7 +30,58 @@ interface GoalChatPaletteProps {
   onCancel: () => void;
 }
 
+type ChatPhase = "chatting" | "reviewing" | "scheduling";
+
 const DAYS_OF_WEEK = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+// Helper to create a message object with a unique ID
+function createMessage(role: "user" | "assistant", content: string): Message {
+  return {
+    id: `${role}-${Date.now()}`,
+    role,
+    content,
+  };
+}
+
+// Animated typing indicator shown while AI is responding
+function TypingIndicator() {
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="flex justify-start"
+    >
+      <div className="bg-white border border-black/10 rounded-2xl rounded-bl-md px-4 py-3">
+        <div className="flex gap-1">
+          {[0, 0.2, 0.4].map((delay, i) => (
+            <motion.span
+              key={i}
+              animate={{ opacity: [0.3, 1, 0.3] }}
+              transition={{ repeat: Infinity, duration: 1, delay }}
+              className="w-2 h-2 bg-black/40 rounded-full"
+            />
+          ))}
+        </div>
+      </div>
+    </motion.div>
+  );
+}
+
+// Get header title based on current phase
+function getPhaseTitle(phase: ChatPhase): string {
+  switch (phase) {
+    case "chatting":
+      return "Let's set your goal";
+    case "reviewing":
+      return "Review your goal";
+    case "scheduling":
+      return "Your tasks";
+  }
+}
+
+// Shared button style for transparent "ghost" buttons
+const GHOST_BUTTON_STYLE =
+  "bg-transparent border-none text-[14px] opacity-50 text-[#1a1a1a] cursor-pointer hover:opacity-100 transition-opacity";
 
 // Available AI models
 const AI_MODELS = [
@@ -52,7 +103,7 @@ export function GoalChatPalette({
   const [inputValue, setInputValue] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [phase, setPhase] = useState<"chatting" | "reviewing" | "scheduling">("chatting");
+  const [phase, setPhase] = useState<ChatPhase>("chatting");
   const [extractedGoal, setExtractedGoal] = useState<ExtractedGoal | null>(null);
   const [tasks, setTasks] = useState<SuggestedTask[]>([]);
   const [selectedModel, setSelectedModel] = useState(AI_MODELS[0].id);
@@ -84,14 +135,10 @@ export function GoalChatPalette({
   }, [phase]);
 
   const handleSend = async () => {
-    if (!inputValue.trim() || isLoading) return;
+    const trimmedInput = inputValue.trim();
+    if (!trimmedInput || isLoading) return;
 
-    const userMessage: Message = {
-      id: `user-${Date.now()}`,
-      role: "user",
-      content: inputValue.trim(),
-    };
-
+    const userMessage = createMessage("user", trimmedInput);
     setMessages((prev) => [...prev, userMessage]);
     setInputValue("");
     setIsLoading(true);
@@ -114,52 +161,46 @@ export function GoalChatPalette({
       const goalMatch = response.content.match(/```goal-ready\n([\s\S]*?)\n```/);
 
       if (goalMatch) {
-        try {
-          const goalData = JSON.parse(goalMatch[1]);
-          setExtractedGoal(goalData.goal);
-          setTasks(goalData.suggestedTasks || []);
+        const parsed = parseGoalData(goalMatch[1]);
+        if (parsed) {
+          setExtractedGoal(parsed.goal);
+          setTasks(parsed.tasks);
           setPhase("reviewing");
 
           // Add a friendly message (text before the JSON block)
           const textBeforeJson = response.content.split("```goal-ready")[0].trim();
-          const aiMessage: Message = {
-            id: `ai-${Date.now()}`,
-            role: "assistant",
-            content: textBeforeJson || "Great! I've put together a goal based on our conversation. Take a look!",
-          };
-          setMessages((prev) => [...prev, aiMessage]);
-        } catch (parseError) {
-          // JSON parse failed, treat as regular message
-          const aiMessage: Message = {
-            id: `ai-${Date.now()}`,
-            role: "assistant",
-            content: response.content,
-          };
-          setMessages((prev) => [...prev, aiMessage]);
+          const content = textBeforeJson || "Great! I've put together a goal based on our conversation. Take a look!";
+          setMessages((prev) => [...prev, createMessage("assistant", content)]);
+          return;
         }
-      } else {
-        // Regular chat response
-        const aiMessage: Message = {
-          id: `ai-${Date.now()}`,
-          role: "assistant",
-          content: response.content,
-        };
-        setMessages((prev) => [...prev, aiMessage]);
       }
+
+      // Regular chat response (or JSON parse failed)
+      setMessages((prev) => [...prev, createMessage("assistant", response.content)]);
     } catch (err) {
       console.error("Chat error:", err);
       setError("Oops! Something went wrong. Try again or create your goal manually.");
-      
-      const errorMessage: Message = {
-        id: `error-${Date.now()}`,
-        role: "assistant",
-        content: "I had trouble responding. Could you try saying that again?",
-      };
-      setMessages((prev) => [...prev, errorMessage]);
+      setMessages((prev) => [
+        ...prev,
+        createMessage("assistant", "I had trouble responding. Could you try saying that again?"),
+      ]);
     } finally {
       setIsLoading(false);
     }
   };
+
+  // Parse goal JSON from AI response, returns null on failure
+  function parseGoalData(jsonString: string): { goal: ExtractedGoal; tasks: SuggestedTask[] } | null {
+    try {
+      const data = JSON.parse(jsonString);
+      return {
+        goal: data.goal,
+        tasks: data.suggestedTasks || [],
+      };
+    } catch {
+      return null;
+    }
+  }
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "Enter" && !e.shiftKey) {
@@ -215,34 +256,7 @@ export function GoalChatPalette({
           ))}
         </AnimatePresence>
 
-        {/* Typing indicator */}
-        {isLoading && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="flex justify-start"
-          >
-            <div className="bg-white border border-black/10 rounded-2xl rounded-bl-md px-4 py-3">
-              <div className="flex gap-1">
-                <motion.span
-                  animate={{ opacity: [0.3, 1, 0.3] }}
-                  transition={{ repeat: Infinity, duration: 1 }}
-                  className="w-2 h-2 bg-black/40 rounded-full"
-                />
-                <motion.span
-                  animate={{ opacity: [0.3, 1, 0.3] }}
-                  transition={{ repeat: Infinity, duration: 1, delay: 0.2 }}
-                  className="w-2 h-2 bg-black/40 rounded-full"
-                />
-                <motion.span
-                  animate={{ opacity: [0.3, 1, 0.3] }}
-                  transition={{ repeat: Infinity, duration: 1, delay: 0.4 }}
-                  className="w-2 h-2 bg-black/40 rounded-full"
-                />
-              </div>
-            </div>
-          </motion.div>
-        )}
+        {isLoading && <TypingIndicator />}
 
         <div ref={messagesEndRef} />
       </div>
@@ -311,11 +325,8 @@ export function GoalChatPalette({
 
       {/* Actions */}
       <div className="flex items-center justify-center gap-6">
-        <button
-          onClick={handleGoBack}
-          className="bg-transparent border-none text-[14px] opacity-50 text-[#1a1a1a] cursor-pointer hover:opacity-100 transition-opacity"
-        >
-          ← EDIT MORE
+        <button onClick={handleGoBack} className={GHOST_BUTTON_STYLE}>
+          &larr; EDIT MORE
         </button>
         <button
           onClick={handleConfirmGoal}
@@ -384,11 +395,8 @@ export function GoalChatPalette({
 
       {/* Actions */}
       <div className="flex items-center justify-center gap-6">
-        <button
-          onClick={() => setPhase("reviewing")}
-          className="bg-transparent border-none text-[14px] opacity-50 text-[#1a1a1a] cursor-pointer hover:opacity-100 transition-opacity"
-        >
-          ← BACK
+        <button onClick={() => setPhase("reviewing")} className={GHOST_BUTTON_STYLE}>
+          &larr; BACK
         </button>
         <button
           onClick={handleComplete}
@@ -416,11 +424,7 @@ export function GoalChatPalette({
             <span className="text-[0.65rem] uppercase tracking-[0.15em] text-[#888]">
               AI Goal Assistant
             </span>
-            <h3 className="font-display text-lg mt-0.5">
-              {phase === "chatting" && "Let's set your goal"}
-              {phase === "reviewing" && "Review your goal"}
-              {phase === "scheduling" && "Your tasks"}
-            </h3>
+            <h3 className="font-display text-lg mt-0.5">{getPhaseTitle(phase)}</h3>
           </div>
           <div className="flex items-center gap-3">
             {/* Model selector */}
