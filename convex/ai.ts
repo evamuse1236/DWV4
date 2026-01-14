@@ -66,8 +66,87 @@ If the conversation contains a "[REVISION REQUEST]" message, it means the studen
 4. Always output the full JSON block again after revisions - don't just describe the changes`;
 }
 
-// Default model for goal-setting chat
-const DEFAULT_MODEL = "meta-llama/llama-3.3-70b-instruct:free";
+// Model configuration
+// Primary: Groq Kimi K2 (fast, high quality)
+// Fallback: OpenRouter Mimo V2 Flash (free tier)
+const GROQ_PRIMARY_MODEL = "moonshotai/kimi-k2-instruct";
+const OPENROUTER_FALLBACK_MODEL = "xiaomi/mimo-v2-flash:free";
+
+/**
+ * Call Groq API (primary)
+ */
+async function callGroq(
+  apiKey: string,
+  model: string,
+  messages: Array<{ role: string; content: string }>,
+): Promise<{ content: string; usage: unknown; provider: string }> {
+  const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${apiKey}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      model,
+      messages,
+      temperature: 0.7,
+      max_tokens: 1000,
+    }),
+  });
+
+  if (!response.ok) {
+    const errorText = await response.text();
+    throw new Error(`Groq API error (${response.status}): ${errorText}`);
+  }
+
+  const data = await response.json();
+  const messageContent = data.choices?.[0]?.message?.content;
+
+  if (!messageContent) {
+    throw new Error("Invalid response from Groq");
+  }
+
+  return { content: messageContent, usage: data.usage, provider: "groq" };
+}
+
+/**
+ * Call OpenRouter API (fallback)
+ */
+async function callOpenRouter(
+  apiKey: string,
+  model: string,
+  messages: Array<{ role: string; content: string }>,
+): Promise<{ content: string; usage: unknown; provider: string }> {
+  const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${apiKey}`,
+      "Content-Type": "application/json",
+      "HTTP-Referer": "https://deepwork-tracker.app",
+      "X-Title": "Deep Work Tracker",
+    },
+    body: JSON.stringify({
+      model,
+      messages,
+      temperature: 0.7,
+      max_tokens: 1000,
+    }),
+  });
+
+  if (!response.ok) {
+    const errorText = await response.text();
+    throw new Error(`OpenRouter API error (${response.status}): ${errorText}`);
+  }
+
+  const data = await response.json();
+  const messageContent = data.choices?.[0]?.message?.content;
+
+  if (!messageContent) {
+    throw new Error("Invalid response from OpenRouter");
+  }
+
+  return { content: messageContent, usage: data.usage, provider: "openrouter" };
+}
 
 export const chat = action({
   args: {
@@ -81,10 +160,12 @@ export const chat = action({
     model: v.optional(v.string()),
   },
   handler: async (_ctx, args) => {
-    const apiKey = process.env.OPENROUTER_API_KEY;
-    if (!apiKey) {
+    const groqKey = process.env.GROQ_API_KEY;
+    const openRouterKey = process.env.OPENROUTER_API_KEY;
+
+    if (!groqKey && !openRouterKey) {
       throw new Error(
-        "OpenRouter API key not configured. Please set OPENROUTER_API_KEY in Convex environment variables."
+        "No API keys configured. Please set GROQ_API_KEY and/or OPENROUTER_API_KEY in Convex environment variables."
       );
     }
 
@@ -97,38 +178,27 @@ export const chat = action({
       })),
     ];
 
-    const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        "Content-Type": "application/json",
-        "HTTP-Referer": "https://deepwork-tracker.app",
-        "X-Title": "Deep Work Tracker",
-      },
-      body: JSON.stringify({
-        model: args.model || DEFAULT_MODEL,
-        messages: apiMessages,
-        temperature: 0.7,
-        max_tokens: 1000,
-      }),
-    });
-
-    if (!response.ok) {
-      const errorText = await response.text();
-      console.error("OpenRouter API error:", errorText);
-      throw new Error(`AI service error: ${response.status}`);
+    // Try Groq first (primary), fallback to OpenRouter
+    if (groqKey) {
+      try {
+        console.log(`[AI] Calling Groq with model: ${GROQ_PRIMARY_MODEL}`);
+        const result = await callGroq(groqKey, GROQ_PRIMARY_MODEL, apiMessages);
+        console.log(`[AI] Groq success, tokens: ${JSON.stringify(result.usage)}`);
+        return result;
+      } catch (error) {
+        console.warn(`[AI] Groq failed: ${error instanceof Error ? error.message : error}`);
+        // Fall through to OpenRouter
+      }
     }
 
-    const data = await response.json();
-    const messageContent = data.choices?.[0]?.message?.content;
-
-    if (!messageContent) {
-      throw new Error("Invalid response from AI service");
+    // Fallback to OpenRouter
+    if (openRouterKey) {
+      console.log(`[AI] Falling back to OpenRouter with model: ${OPENROUTER_FALLBACK_MODEL}`);
+      const result = await callOpenRouter(openRouterKey, OPENROUTER_FALLBACK_MODEL, apiMessages);
+      console.log(`[AI] OpenRouter success, tokens: ${JSON.stringify(result.usage)}`);
+      return result;
     }
 
-    return {
-      content: messageContent,
-      usage: data.usage,
-    };
+    throw new Error("All AI providers failed");
   },
 });
