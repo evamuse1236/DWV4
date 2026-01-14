@@ -3,7 +3,7 @@ import { useQuery, useMutation } from "convex/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { api } from "../../../convex/_generated/api";
 import { Modal } from "../../components/paper";
-import { GoalEditor } from "../../components/sprint";
+import { GoalChatPalette, GoalEditor } from "../../components/sprint";
 import { TaskAssigner } from "../../components/student/TaskAssigner";
 import { useAuth } from "../../hooks/useAuth";
 import { goalStatusColors, goalStatusLabels, type GoalStatus } from "../../lib/status-utils";
@@ -36,6 +36,7 @@ function EditIcon({ className = "w-4 h-4" }: { className?: string }) {
  */
 export function SprintPage() {
   const { user } = useAuth();
+  const [showGoalChat, setShowGoalChat] = useState(false);
   const [showGoalEditor, setShowGoalEditor] = useState(false);
   const [showHabitForm, setShowHabitForm] = useState(false);
   const [showTaskAssigner, setShowTaskAssigner] = useState(false);
@@ -76,6 +77,8 @@ export function SprintPage() {
   const updateHabit = useMutation(api.habits.update);
   const toggleHabitCompletion = useMutation(api.habits.toggleCompletion);
 
+  const addActionItem = useMutation(api.goals.addActionItem);
+
   const handleCreateGoal = async (goalData: any) => {
     if (!user || !activeSprint) return;
     const result = await createGoal({
@@ -91,6 +94,36 @@ export function SprintPage() {
       setNewGoalTitle(goalData.title);
       setShowTaskAssigner(true);
     }
+  };
+
+  // Handle AI-generated goal with tasks
+  const handleAIGoalComplete = async (
+    goal: { title: string; specific: string; measurable: string; achievable: string; relevant: string; timeBound: string },
+    tasks: { title: string; weekNumber: number; dayOfWeek: number }[]
+  ) => {
+    if (!user || !activeSprint) return;
+
+    // Create the goal
+    const result = await createGoal({
+      userId: user._id as any,
+      sprintId: activeSprint._id,
+      ...goal,
+    });
+
+    // Create all action items
+    if (result.goalId) {
+      for (const task of tasks) {
+        await addActionItem({
+          goalId: result.goalId as any,
+          userId: user._id as any,
+          title: task.title,
+          weekNumber: task.weekNumber,
+          dayOfWeek: task.dayOfWeek,
+        });
+      }
+    }
+
+    setShowGoalChat(false);
   };
 
   const handleUpdateGoal = async (goalData: any) => {
@@ -196,6 +229,10 @@ export function SprintPage() {
 
   const weekDates = getWeekDates();
 
+  // Calculate current week (1 or 2) and day of week for task filtering
+  const currentWeek = dayIndex < 7 ? 1 : 2;
+  const currentDayOfWeek = today.getDay(); // 0=Sunday through 6=Saturday
+
   // Get all action items from goals
   const allActionItems = goals?.flatMap((goal: any) =>
     (goal.actionItems || []).map((item: any) => ({
@@ -203,6 +240,11 @@ export function SprintPage() {
       goalTitle: goal.title,
     }))
   ) || [];
+
+  // Filter to only show today's tasks
+  const todayActionItems = allActionItems.filter(
+    (item: any) => item.weekNumber === currentWeek && item.dayOfWeek === currentDayOfWeek
+  );
 
   return (
     <div>
@@ -343,7 +385,7 @@ export function SprintPage() {
             <div className="card-white text-center py-6">
               <p className="opacity-60 text-sm mb-3">No goals yet</p>
               <button
-                onClick={() => setShowGoalEditor(true)}
+                onClick={() => setShowGoalChat(true)}
                 className="btn btn-secondary text-xs"
               >
                 + Add Goal
@@ -353,7 +395,7 @@ export function SprintPage() {
 
           {goals && goals.length > 0 && (
             <button
-              onClick={() => setShowGoalEditor(true)}
+              onClick={() => setShowGoalChat(true)}
               className="w-full mt-4 py-3 border border-dashed border-black/10 rounded-xl text-sm opacity-50 hover:opacity-100 transition-opacity"
             >
               + Add Goal
@@ -370,8 +412,8 @@ export function SprintPage() {
             </svg>
           </div>
 
-          {allActionItems.length > 0 ? (
-            allActionItems.slice(0, 5).map((item: any, index: number) => {
+          {todayActionItems.length > 0 ? (
+            todayActionItems.slice(0, 5).map((item: any, index: number) => {
               const isEditing = inlineEditItemId === item._id;
               
               return (
@@ -453,26 +495,24 @@ export function SprintPage() {
             </div>
           )}
 
-          {allActionItems.length > 5 && (
+          {todayActionItems.length > 5 && (
             <p className="text-center text-sm opacity-50 mt-4">
-              +{allActionItems.length - 5} more tasks
+              +{todayActionItems.length - 5} more tasks
             </p>
           )}
         </div>
       </div>
 
-      {/* Create Goal Modal */}
-      <Modal
-        isOpen={showGoalEditor}
-        onClose={() => setShowGoalEditor(false)}
-        title="Create Goal"
-        size="lg"
-      >
-        <GoalEditor
-          onSave={handleCreateGoal}
-          onCancel={() => setShowGoalEditor(false)}
-        />
-      </Modal>
+      {/* AI Goal Chat */}
+      <AnimatePresence>
+        {showGoalChat && (
+          <GoalChatPalette
+            sprintDaysRemaining={sprintDaysLeft}
+            onComplete={handleAIGoalComplete}
+            onCancel={() => setShowGoalChat(false)}
+          />
+        )}
+      </AnimatePresence>
 
       {/* Edit Goal Modal */}
       <Modal
