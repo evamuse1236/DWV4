@@ -168,24 +168,6 @@ export function ReadingPage() {
     }
   };
 
-  const handleRequestPresentation = async (studentBookId: string) => {
-    await updateStatus({
-      studentBookId: studentBookId as any,
-      status: "presentation_requested",
-    });
-    // Update local state immediately to fix the bug
-    if (selectedBook) {
-      setSelectedBook({
-        ...selectedBook,
-        myBook: {
-          ...selectedBook.myBook,
-          status: "presentation_requested",
-          presentationRequestedAt: Date.now(),
-        },
-      });
-    }
-  };
-
   const handleOpenReviewForm = (existingRating?: number, existingReview?: string) => {
     setReviewRating(existingRating || 0);
     setReviewText(existingReview || "");
