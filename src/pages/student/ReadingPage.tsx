@@ -58,14 +58,26 @@ export function ReadingPage() {
   const startReading = useMutation(api.books.startReading);
   const updateStatus = useMutation(api.books.updateStatus);
   const addReview = useMutation(api.books.addReview);
+  const removeFromMyBooks = useMutation(api.books.removeFromMyBooks);
 
   const handleStartReading = async (bookId: string) => {
     if (!user) return;
-    await startReading({
-      userId: user._id as any,
-      bookId: bookId as any,
-    });
-    setSelectedBook(null);
+    try {
+      await startReading({
+        userId: user._id as any,
+        bookId: bookId as any,
+      });
+    } catch (error) {
+      console.error("Failed to start reading:", error);
+    }
+  };
+
+  const handleRemoveBook = async (studentBookId: string) => {
+    try {
+      await removeFromMyBooks({ studentBookId: studentBookId as any });
+    } catch (error) {
+      console.error("Failed to remove book:", error);
+    }
   };
 
   const handleMarkComplete = async (studentBookId: string) => {
@@ -407,9 +419,23 @@ export function ReadingPage() {
                       transition={{ delay: index * 0.05 }}
                       whileHover={{ scale: 1.02, y: -4 }}
                       whileTap={{ scale: 0.98 }}
-                      className={`pastel-card ${genreColor} p-5 cursor-pointer relative overflow-hidden`}
+                      className={`pastel-card ${genreColor} p-5 cursor-pointer relative overflow-hidden group`}
                       onClick={() => setSelectedBook({ ...item.book, myBook: item })}
                     >
+                      {/* Remove button (X) - visible on hover */}
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleRemoveBook(item._id);
+                        }}
+                        className="absolute top-2 left-2 z-10 opacity-0 group-hover:opacity-100 transition-opacity
+                                   bg-red-500 hover:bg-red-600 text-white rounded-full w-6 h-6
+                                   flex items-center justify-center text-sm font-bold shadow-md"
+                        title="Remove from My Books"
+                      >
+                        ×
+                      </button>
+
                       {/* Status badge */}
                       <div className="absolute top-4 right-4">
                         <span
@@ -683,36 +709,34 @@ export function ReadingPage() {
 
               {/* Actions */}
               <div className="mt-8 space-y-3">
-                {!selectedBook.myBook && (
-                  <button
-                    onClick={() => handleStartReading(selectedBook._id)}
-                    className="w-full btn btn-primary"
+                {/* Always show Open Book if URL exists */}
+                {selectedBook.readingUrl && (
+                  <a
+                    href={selectedBook.readingUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                    onClick={() => {
+                      // Auto-start reading when opening book
+                      if (!selectedBook.myBook) {
+                        handleStartReading(selectedBook._id);
+                      }
+                    }}
                   >
-                    Start Reading This Book
-                  </button>
+                    <button className="w-full btn btn-primary">
+                      📖 Open Book
+                    </button>
+                  </a>
                 )}
 
+                {/* Show Finish button if reading */}
                 {selectedBook.myBook?.status === "reading" && (
-                  <>
-                    {selectedBook.readingUrl && (
-                      <a
-                        href={selectedBook.readingUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block"
-                      >
-                        <button className="w-full btn btn-secondary">
-                          Open Book
-                        </button>
-                      </a>
-                    )}
-                    <button
-                      onClick={() => handleMarkComplete(selectedBook.myBook._id)}
-                      className="w-full btn btn-primary"
-                    >
-                      I Finished Reading!
-                    </button>
-                  </>
+                  <button
+                    onClick={() => handleMarkComplete(selectedBook.myBook._id)}
+                    className="w-full btn btn-secondary"
+                  >
+                    ✅ I Finished Reading!
+                  </button>
                 )}
 
                 {selectedBook.myBook?.status === "completed" && (

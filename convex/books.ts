@@ -197,6 +197,15 @@ export const remove = mutation({
   },
 });
 
+// Remove a book from student's reading list
+export const removeFromMyBooks = mutation({
+  args: { studentBookId: v.id("studentBooks") },
+  handler: async (ctx, args) => {
+    await ctx.db.delete(args.studentBookId);
+    return { success: true };
+  },
+});
+
 // Get reading stats for a student
 export const getReadingStats = query({
   args: { userId: v.id("users") },
