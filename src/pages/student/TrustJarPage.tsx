@@ -6,7 +6,7 @@ import { TrustJar } from "../../components/trustjar/TrustJar";
  * Student Trust Jar Page - Read-only view
  * Shows the class trust jar with current count
  */
-export function TrustJarPage(): JSX.Element {
+export function TrustJarPage() {
   const jarData = useQuery(api.trustJar.get);
 
   if (!jarData) {

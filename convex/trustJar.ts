@@ -1,6 +1,7 @@
 import { v } from "convex/values";
-import { mutation, query, MutationCtx } from "./_generated/server";
-import { Doc } from "./_generated/dataModel";
+import { mutation, query } from "./_generated/server";
+import type { MutationCtx } from "./_generated/server";
+import type { Doc } from "./_generated/dataModel";
 
 const MAX_COUNT = 50;
 
