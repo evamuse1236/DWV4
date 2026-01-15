@@ -3,13 +3,9 @@ import { useQuery, useMutation } from "convex/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { api } from "../../../convex/_generated/api";
 import { useAuth } from "../../hooks/useAuth";
-import {
-  getBookIndicatorColor,
-  getBookBadgeClass,
-  type BookStatus,
-} from "../../lib/status-utils";
+import { getBookBadgeClass, type BookStatus } from "../../lib/status-utils";
 
-type TabType = "all" | "my-books";
+type TabType = "library" | "reading" | "finished";
 
 // Genre color mapping
 const genreColors: Record<string, string> = {
@@ -23,13 +19,103 @@ const genreColors: Record<string, string> = {
   history: "pastel-orange",
 };
 
+// SVG icon paths (extracted for reuse)
+const BOOK_ICON_PATH = "M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25";
+const SEARCH_ICON_PATH = "M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z";
+const CHECK_ICON_PATH = "M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z";
+
+/**
+ * Book cover image with fallback icon
+ */
+interface BookCoverProps {
+  coverImageUrl?: string;
+  className?: string;
+  iconSize?: string;
+}
+
+function BookCover({ coverImageUrl, className = "w-full aspect-[3/4] rounded-xl", iconSize = "w-12 h-12" }: BookCoverProps) {
+  return (
+    <div
+      className={`${className} flex items-center justify-center`}
+      style={{
+        background: coverImageUrl
+          ? `url(${coverImageUrl})`
+          : "linear-gradient(135deg, rgba(0,0,0,0.05), rgba(0,0,0,0.1))",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      {!coverImageUrl && (
+        <svg className={`${iconSize} opacity-20`} fill="none" stroke="currentColor" strokeWidth={1} viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d={BOOK_ICON_PATH} />
+        </svg>
+      )}
+    </div>
+  );
+}
+
+/**
+ * Star rating display
+ */
+interface StarRatingProps {
+  rating: number;
+  size?: "sm" | "md" | "lg";
+}
+
+function StarRating({ rating, size = "sm" }: StarRatingProps) {
+  const sizeClass = size === "sm" ? "text-sm" : size === "md" ? "text-xl" : "text-4xl";
+  return (
+    <div className={`flex items-center ${size === "sm" ? "gap-0.5" : "gap-1"}`}>
+      {[1, 2, 3, 4, 5].map((star) => (
+        <span
+          key={star}
+          className={`${sizeClass} ${star <= rating ? "text-[#ca8a04]" : "text-black/10"}`}
+        >
+          ★
+        </span>
+      ))}
+    </div>
+  );
+}
+
+/**
+ * Empty state card component
+ */
+interface EmptyStateProps {
+  icon: "book" | "search" | "check";
+  title: string;
+  description: string;
+  actionLabel?: string;
+  onAction?: () => void;
+  buttonVariant?: "primary" | "secondary";
+}
+
+function EmptyState({ icon, title, description, actionLabel, onAction, buttonVariant = "primary" }: EmptyStateProps) {
+  const iconPath = icon === "book" ? BOOK_ICON_PATH : icon === "search" ? SEARCH_ICON_PATH : CHECK_ICON_PATH;
+  
+  return (
+    <div className="glass-card p-12 text-center">
+      <svg className="w-16 h-16 mx-auto opacity-20 mb-6" fill="none" stroke="currentColor" strokeWidth={1} viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d={iconPath} />
+      </svg>
+      <h3 className="font-display text-[2rem] italic mb-3">{title}</h3>
+      <p className="font-body opacity-60 mb-6">{description}</p>
+      {actionLabel && onAction && (
+        <button onClick={onAction} className={`btn btn-${buttonVariant}`}>
+          {actionLabel}
+        </button>
+      )}
+    </div>
+  );
+}
+
 /**
  * Reading Library Page - Paper UI Design
  * Browse books and track reading progress
  */
 export function ReadingPage() {
   const { user } = useAuth();
-  const [activeTab, setActiveTab] = useState<TabType>("all");
+  const [activeTab, setActiveTab] = useState<TabType>("library");
   const [selectedBook, setSelectedBook] = useState<any>(null);
   const [searchQuery, setSearchQuery] = useState("");
   
@@ -60,15 +146,17 @@ export function ReadingPage() {
   const addReview = useMutation(api.books.addReview);
   const removeFromMyBooks = useMutation(api.books.removeFromMyBooks);
 
-  const handleStartReading = async (bookId: string) => {
-    if (!user) return;
+  const handleStartReading = async (bookId: string): Promise<string | null> => {
+    if (!user) return null;
     try {
-      await startReading({
+      const studentBookId = await startReading({
         userId: user._id as any,
         bookId: bookId as any,
       });
+      return studentBookId;
     } catch (error) {
       console.error("Failed to start reading:", error);
+      return null;
     }
   };
 
@@ -80,18 +168,22 @@ export function ReadingPage() {
     }
   };
 
-  const handleMarkComplete = async (studentBookId: string) => {
+  const handleRequestPresentation = async (studentBookId: string) => {
     await updateStatus({
       studentBookId: studentBookId as any,
-      status: "completed",
+      status: "presentation_requested",
     });
-  };
-
-  const handleMarkPresented = async (studentBookId: string) => {
-    await updateStatus({
-      studentBookId: studentBookId as any,
-      status: "presented",
-    });
+    // Update local state immediately to fix the bug
+    if (selectedBook) {
+      setSelectedBook({
+        ...selectedBook,
+        myBook: {
+          ...selectedBook.myBook,
+          status: "presentation_requested",
+          presentationRequestedAt: Date.now(),
+        },
+      });
+    }
   };
 
   const handleOpenReviewForm = (existingRating?: number, existingReview?: string) => {
@@ -131,7 +223,7 @@ export function ReadingPage() {
   interface StudentBook {
     _id: string;
     bookId: string;
-    status: "reading" | "completed" | "presented";
+    status: "reading" | "completed" | "presentation_requested" | "presented";
     rating?: number;
     review?: string;
     book?: any;
@@ -164,8 +256,25 @@ export function ReadingPage() {
     });
   };
 
-  const filteredAllBooks = filterBooks(allBooks, false);
-  const filteredMyBooks = filterBooks(myBooks, true);
+  // Library tab: books NOT in myBooks (not started yet)
+  const libraryBooks = filterBooks(
+    allBooks?.filter((book: any) => !myBooksMap.has(book._id)),
+    false
+  );
+  
+  // Reading tab: books with status "reading", "completed" (legacy), or "presentation_requested"
+  const readingBooks = filterBooks(
+    myBooks?.filter((item: any) => 
+      item.status === "reading" || item.status === "completed" || item.status === "presentation_requested"
+    ),
+    true
+  );
+  
+  // Finished tab: books with status "presented"
+  const finishedBooks = filterBooks(
+    myBooks?.filter((item: any) => item.status === "presented"),
+    true
+  );
 
   return (
     <div>
@@ -219,17 +328,17 @@ export function ReadingPage() {
           </div>
           <div className="w-px h-[70px] bg-black/10" />
           <div>
-            <span className="font-display text-[56px] block leading-none text-[#15803d]">
-              {readingStats?.completed || 0}
+            <span className="font-display text-[56px] block leading-none text-[#7c3aed]">
+              {readingStats?.pendingPresentation || 0}
             </span>
-            <span className="text-[0.75rem] uppercase tracking-[0.2em] text-[#888]">Completed</span>
+            <span className="text-[0.75rem] uppercase tracking-[0.2em] text-[#888]">Pending</span>
           </div>
           <div className="w-px h-[70px] bg-black/10" />
           <div>
-            <span className="font-display text-[56px] block leading-none text-[#7c3aed]">
+            <span className="font-display text-[56px] block leading-none text-[#15803d]">
               {readingStats?.presented || 0}
             </span>
-            <span className="text-[0.75rem] uppercase tracking-[0.2em] text-[#888]">Presented</span>
+            <span className="text-[0.75rem] uppercase tracking-[0.2em] text-[#888]">Finished</span>
           </div>
         </div>
       </motion.div>
@@ -274,7 +383,7 @@ export function ReadingPage() {
 
         {/* Tab buttons */}
         <div className="flex gap-2 p-1.5 bg-white/50 rounded-full w-fit mx-auto backdrop-blur-sm border border-white/60">
-          {(["all", "my-books"] as TabType[]).map((tab) => (
+          {(["library", "reading", "finished"] as TabType[]).map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
@@ -284,8 +393,9 @@ export function ReadingPage() {
                   : "text-[#666] hover:text-[#1a1a1a]"
               }`}
             >
-              {tab === "all" && "All Books"}
-              {tab === "my-books" && "My Books"}
+              {tab === "library" && "Library"}
+              {tab === "reading" && "Reading"}
+              {tab === "finished" && "Finished"}
             </button>
           ))}
         </div>
@@ -293,19 +403,18 @@ export function ReadingPage() {
 
       {/* Tab Content */}
       <AnimatePresence mode="wait">
-        {/* All Books Tab */}
-        {activeTab === "all" && (
+        {/* Library Tab - Books not yet started */}
+        {activeTab === "library" && (
           <motion.div
-            key="all"
+            key="library"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             className="fade-in-up delay-3"
           >
-            {filteredAllBooks.length > 0 ? (
+            {libraryBooks.length > 0 ? (
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                {filteredAllBooks.map((book: any, index: number) => {
-                  const myBook = myBooksMap.get(book._id);
+                {libraryBooks.map((book: any, index: number) => {
                   const genreColor = getGenreColor(book.genre);
 
                   return (
@@ -317,34 +426,9 @@ export function ReadingPage() {
                       whileHover={{ scale: 1.02, y: -4 }}
                       whileTap={{ scale: 0.98 }}
                       className={`pastel-card ${genreColor} p-5 cursor-pointer relative overflow-hidden`}
-                      onClick={() => setSelectedBook({ ...book, myBook })}
+                      onClick={() => setSelectedBook({ ...book, myBook: null })}
                     >
-                      {/* Status indicator */}
-                      {myBook && (
-                        <div className="absolute top-4 right-4">
-                          <div
-                            className={`w-3 h-3 rounded-full ${getBookIndicatorColor(myBook.status as BookStatus)}`}
-                          />
-                        </div>
-                      )}
-
-                      {/* Book cover placeholder */}
-                      <div
-                        className="w-full aspect-[3/4] rounded-xl mb-4 flex items-center justify-center relative overflow-hidden"
-                        style={{
-                          background: book.coverImageUrl
-                            ? `url(${book.coverImageUrl})`
-                            : "linear-gradient(135deg, rgba(0,0,0,0.05), rgba(0,0,0,0.1))",
-                          backgroundSize: "cover",
-                          backgroundPosition: "center",
-                        }}
-                      >
-                        {!book.coverImageUrl && (
-                          <svg className="w-12 h-12 opacity-20" fill="none" stroke="currentColor" strokeWidth={1} viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                          </svg>
-                        )}
-                      </div>
+                      <BookCover coverImageUrl={book.coverImageUrl} className="w-full aspect-[3/4] rounded-xl mb-4" />
 
                       <h3 className="font-display text-[18px] leading-tight mb-1 line-clamp-2">
                         {book.title}
@@ -368,48 +452,38 @@ export function ReadingPage() {
                 })}
               </div>
             ) : searchQuery ? (
-              <div className="glass-card p-12 text-center">
-                <svg className="w-16 h-16 mx-auto opacity-20 mb-6" fill="none" stroke="currentColor" strokeWidth={1} viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                </svg>
-                <h3 className="font-display text-[2rem] italic mb-3">No Results</h3>
-                <p className="font-body opacity-60 mb-4">
-                  No books match "{searchQuery}"
-                </p>
-                <button
-                  onClick={() => setSearchQuery("")}
-                  className="btn btn-secondary"
-                >
-                  Clear Search
-                </button>
-              </div>
+              <EmptyState
+                icon="search"
+                title="No Results"
+                description={`No books match "${searchQuery}"`}
+                actionLabel="Clear Search"
+                onAction={() => setSearchQuery("")}
+                buttonVariant="secondary"
+              />
             ) : (
-              <div className="glass-card p-12 text-center">
-                <svg className="w-16 h-16 mx-auto opacity-20 mb-6" fill="none" stroke="currentColor" strokeWidth={1} viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                </svg>
-                <h3 className="font-display text-[2rem] italic mb-3">No Books Yet</h3>
-                <p className="font-body opacity-60">
-                  Your coach will add books to the library soon!
-                </p>
-              </div>
+              <EmptyState
+                icon="book"
+                title="All Caught Up!"
+                description="You've started all available books. Check the Reading tab!"
+              />
             )}
           </motion.div>
         )}
 
-        {/* My Books Tab */}
-        {activeTab === "my-books" && (
+        {/* Reading Tab - Books in progress or pending presentation */}
+        {activeTab === "reading" && (
           <motion.div
-            key="my-books"
+            key="reading"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             className="fade-in-up delay-3"
           >
-            {filteredMyBooks.length > 0 ? (
+            {readingBooks.length > 0 ? (
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                {filteredMyBooks.map((item: any, index: number) => {
+                {readingBooks.map((item: any, index: number) => {
                   const genreColor = getGenreColor(item.book?.genre);
+                  const isPending = item.status === "presentation_requested" || item.status === "completed";
 
                   return (
                     <motion.div
@@ -441,96 +515,116 @@ export function ReadingPage() {
                         <span
                           className={`text-[8px] font-bold uppercase tracking-[0.1em] px-2 py-1 rounded-full ${getBookBadgeClass(item.status as BookStatus)}`}
                         >
-                          {item.status}
+                          {isPending ? "Pending" : "Reading"}
                         </span>
                       </div>
 
-                      {/* Book cover */}
-                      <div
-                        className="w-full aspect-[3/4] rounded-xl mb-4 flex items-center justify-center"
-                        style={{
-                          background: item.book?.coverImageUrl
-                            ? `url(${item.book.coverImageUrl})`
-                            : "linear-gradient(135deg, rgba(0,0,0,0.05), rgba(0,0,0,0.1))",
-                          backgroundSize: "cover",
-                          backgroundPosition: "center",
-                        }}
-                      >
-                        {!item.book?.coverImageUrl && (
-                          <svg className="w-12 h-12 opacity-20" fill="none" stroke="currentColor" strokeWidth={1} viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                          </svg>
-                        )}
-                      </div>
+                      <BookCover coverImageUrl={item.book?.coverImageUrl} className="w-full aspect-[3/4] rounded-xl mb-4" />
 
                       <h3 className="font-display text-[18px] leading-tight mb-1 line-clamp-2">
                         {item.book?.title || "Unknown"}
                       </h3>
                       <p className="font-body text-xs opacity-60">{item.book?.author || "Unknown"}</p>
 
-                      {/* Rating stars */}
-                      {item.rating && (
-                        <div className="flex items-center gap-0.5 mt-2">
-                          {[1, 2, 3, 4, 5].map((star) => (
-                            <span
-                              key={star}
-                              className={`text-sm ${
-                                star <= item.rating ? "text-[#ca8a04]" : "text-black/10"
-                              }`}
-                            >
-                              ★
-                            </span>
-                          ))}
-                        </div>
-                      )}
+                      {item.rating && <StarRating rating={item.rating} size="sm" />}
                     </motion.div>
                   );
                 })}
               </div>
             ) : searchQuery ? (
-              <div className="glass-card p-12 text-center">
-                <svg className="w-16 h-16 mx-auto opacity-20 mb-6" fill="none" stroke="currentColor" strokeWidth={1} viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                </svg>
-                <h3 className="font-display text-[2rem] italic mb-3">No Results</h3>
-                <p className="font-body opacity-60 mb-4">
-                  No books in your collection match "{searchQuery}"
-                </p>
-                <button
-                  onClick={() => setSearchQuery("")}
-                  className="btn btn-secondary"
-                >
-                  Clear Search
-                </button>
-              </div>
+              <EmptyState
+                icon="search"
+                title="No Results"
+                description={`No books match "${searchQuery}"`}
+                actionLabel="Clear Search"
+                onAction={() => setSearchQuery("")}
+                buttonVariant="secondary"
+              />
             ) : (
-              <div className="glass-card p-12 text-center">
-                <svg className="w-16 h-16 mx-auto opacity-20 mb-6" fill="none" stroke="currentColor" strokeWidth={1} viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                </svg>
-                <h3 className="font-display text-[2rem] italic mb-3">No Books Yet</h3>
-                <p className="font-body opacity-60 mb-6">
-                  Start reading books from the library!
-                </p>
-                <button
-                  onClick={() => setActiveTab("all")}
-                  className="btn btn-primary"
-                >
-                  Browse Library
-                </button>
+              <EmptyState
+                icon="book"
+                title="No Books Yet"
+                description="Start reading books from the library!"
+                actionLabel="Browse Library"
+                onAction={() => setActiveTab("library")}
+              />
+            )}
+          </motion.div>
+        )}
+
+        {/* Finished Tab - Coach-approved books */}
+        {activeTab === "finished" && (
+          <motion.div
+            key="finished"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            className="fade-in-up delay-3"
+          >
+            {finishedBooks.length > 0 ? (
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                {finishedBooks.map((item: any, index: number) => {
+                  const genreColor = getGenreColor(item.book?.genre);
+
+                  return (
+                    <motion.div
+                      key={item._id}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: index * 0.05 }}
+                      whileHover={{ scale: 1.02, y: -4 }}
+                      whileTap={{ scale: 0.98 }}
+                      className={`pastel-card ${genreColor} p-5 cursor-pointer relative overflow-hidden`}
+                      onClick={() => setSelectedBook({ ...item.book, myBook: item })}
+                    >
+                      {/* Finished badge */}
+                      <div className="absolute top-4 right-4">
+                        <span className="text-[8px] font-bold uppercase tracking-[0.1em] px-2 py-1 rounded-full bg-[#15803d]/20 text-[#15803d]">
+                          Finished
+                        </span>
+                      </div>
+
+                      <BookCover coverImageUrl={item.book?.coverImageUrl} className="w-full aspect-[3/4] rounded-xl mb-4" />
+
+                      <h3 className="font-display text-[18px] leading-tight mb-1 line-clamp-2">
+                        {item.book?.title || "Unknown"}
+                      </h3>
+                      <p className="font-body text-xs opacity-60">{item.book?.author || "Unknown"}</p>
+
+                      {item.rating && <StarRating rating={item.rating} size="sm" />}
+                    </motion.div>
+                  );
+                })}
               </div>
+            ) : searchQuery ? (
+              <EmptyState
+                icon="search"
+                title="No Results"
+                description={`No finished books match "${searchQuery}"`}
+                actionLabel="Clear Search"
+                onAction={() => setSearchQuery("")}
+                buttonVariant="secondary"
+              />
+            ) : (
+              <EmptyState
+                icon="check"
+                title="No Finished Books Yet"
+                description="Complete your readings and get coach approval to see them here!"
+                actionLabel="View Reading"
+                onAction={() => setActiveTab("reading")}
+              />
             )}
           </motion.div>
         )}
       </AnimatePresence>
 
       {/* How It Works */}
-      <div className="fade-in-up delay-4 mt-16 max-w-[800px] mx-auto">
+      <div className="fade-in-up delay-4 mt-16 max-w-[600px] mx-auto">
         <div className="text-[0.75rem] uppercase tracking-[0.2em] text-[#888] text-center mb-10 font-body">
           The Reading Journey
         </div>
 
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-3 gap-6">
           <div className="text-center">
             <div
               className="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center"
@@ -540,21 +634,8 @@ export function ReadingPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
               </svg>
             </div>
-            <h4 className="font-display text-[18px] mb-1">Choose</h4>
-            <p className="font-body text-xs opacity-50">Pick something interesting</p>
-          </div>
-          <div className="text-center">
-            <div
-              className="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center"
-              style={{ background: "rgba(255,255,255,0.6)", backdropFilter: "blur(5px)" }}
-            >
-              <svg className="w-7 h-7 opacity-50" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-              </svg>
-            </div>
             <h4 className="font-display text-[18px] mb-1">Read</h4>
-            <p className="font-body text-xs opacity-50">Take your time, enjoy!</p>
+            <p className="font-body text-xs opacity-50">Pick a book and enjoy!</p>
           </div>
           <div className="text-center">
             <div
@@ -565,8 +646,8 @@ export function ReadingPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
-            <h4 className="font-display text-[18px] mb-1">Complete</h4>
-            <p className="font-body text-xs opacity-50">Finished? Check it off!</p>
+            <h4 className="font-display text-[18px] mb-1">Finish</h4>
+            <p className="font-body text-xs opacity-50">Request to present</p>
           </div>
           <div className="text-center">
             <div
@@ -574,11 +655,11 @@ export function ReadingPage() {
               style={{ background: "rgba(255,255,255,0.6)", backdropFilter: "blur(5px)" }}
             >
               <svg className="w-7 h-7 opacity-50" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
               </svg>
             </div>
-            <h4 className="font-display text-[18px] mb-1">Present</h4>
-            <p className="font-body text-xs opacity-50">Share with your class</p>
+            <h4 className="font-display text-[18px] mb-1">Complete</h4>
+            <p className="font-body text-xs opacity-50">Coach approves!</p>
           </div>
         </div>
       </div>
@@ -612,23 +693,7 @@ export function ReadingPage() {
               </button>
 
               <div className="flex gap-6">
-                {/* Book cover */}
-                <div
-                  className="w-36 h-52 rounded-2xl flex-shrink-0 flex items-center justify-center"
-                  style={{
-                    background: selectedBook.coverImageUrl
-                      ? `url(${selectedBook.coverImageUrl})`
-                      : "linear-gradient(135deg, rgba(0,0,0,0.05), rgba(0,0,0,0.1))",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                  }}
-                >
-                  {!selectedBook.coverImageUrl && (
-                    <svg className="w-16 h-16 opacity-20" fill="none" stroke="currentColor" strokeWidth={1} viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                    </svg>
-                  )}
-                </div>
+                <BookCover coverImageUrl={selectedBook.coverImageUrl} className="w-36 h-52 rounded-2xl flex-shrink-0" iconSize="w-16 h-16" />
 
                 <div className="flex-1">
                   <h2 className="font-display text-[2rem] leading-tight mb-1">
@@ -649,23 +714,9 @@ export function ReadingPage() {
                     )}
                   </div>
 
-                  {/* Rating display with edit button */}
                   {selectedBook.myBook?.rating && (
                     <div className="flex items-center gap-2 mb-4">
-                      <div className="flex items-center gap-1">
-                        {[1, 2, 3, 4, 5].map((star) => (
-                          <span
-                            key={star}
-                            className={`text-xl ${
-                              star <= selectedBook.myBook.rating
-                                ? "text-[#ca8a04]"
-                                : "text-black/10"
-                            }`}
-                          >
-                            ★
-                          </span>
-                        ))}
-                      </div>
+                      <StarRating rating={selectedBook.myBook.rating} size="md" />
                       <button
                         onClick={() => handleOpenReviewForm(selectedBook.myBook.rating, selectedBook.myBook.review)}
                         className="text-xs opacity-50 hover:opacity-100 transition-opacity underline"
@@ -707,9 +758,9 @@ export function ReadingPage() {
                 </div>
               )}
 
-              {/* Actions */}
+              {/* Actions - Simplified: Read and Finish buttons */}
               <div className="mt-8 space-y-3">
-                {/* Always show Open Book if URL exists */}
+                {/* Read button - opens book URL and auto-starts if not started */}
                 {selectedBook.readingUrl && (
                   <a
                     href={selectedBook.readingUrl}
@@ -720,44 +771,72 @@ export function ReadingPage() {
                       // Auto-start reading when opening book
                       if (!selectedBook.myBook) {
                         handleStartReading(selectedBook._id);
+                        // Update local state
+                        setSelectedBook({
+                          ...selectedBook,
+                          myBook: {
+                            _id: "pending",
+                            status: "reading",
+                            startedAt: Date.now(),
+                          },
+                        });
                       }
                     }}
                   >
                     <button className="w-full btn btn-primary">
-                      📖 Open Book
+                      Read
                     </button>
                   </a>
                 )}
 
-                {/* Show Finish button if reading */}
-                {selectedBook.myBook?.status === "reading" && (
+                {/* Show Finish button for not-started or reading status */}
+                {(!selectedBook.myBook || selectedBook.myBook?.status === "reading") && (
                   <button
-                    onClick={() => handleMarkComplete(selectedBook.myBook._id)}
+                    onClick={async () => {
+                      let studentBookId = selectedBook.myBook?._id;
+                      
+                      // If not started, start reading first and get the new ID
+                      if (!selectedBook.myBook) {
+                        studentBookId = await handleStartReading(selectedBook._id);
+                      }
+                      
+                      // Then request presentation using the ID
+                      if (studentBookId) {
+                        await updateStatus({
+                          studentBookId: studentBookId as any,
+                          status: "presentation_requested",
+                        });
+                        // Update local state
+                        setSelectedBook({
+                          ...selectedBook,
+                          myBook: {
+                            _id: studentBookId,
+                            status: "presentation_requested",
+                            presentationRequestedAt: Date.now(),
+                          },
+                        });
+                      }
+                    }}
                     className="w-full btn btn-secondary"
                   >
-                    ✅ I Finished Reading!
+                    Finish
                   </button>
                 )}
 
-                {selectedBook.myBook?.status === "completed" && (
-                  <>
-                    {!selectedBook.myBook.rating && (
-                      <button
-                        onClick={() => handleOpenReviewForm()}
-                        className="w-full btn btn-secondary"
-                      >
-                        Add Rating & Review
-                      </button>
-                    )}
-                    <button
-                      onClick={() => handleMarkPresented(selectedBook.myBook._id)}
-                      className="w-full btn btn-primary"
-                    >
-                      I Presented to My Class!
-                    </button>
-                  </>
+                {/* Pending presentation status */}
+                {(selectedBook.myBook?.status === "presentation_requested" || selectedBook.myBook?.status === "completed") && (
+                  <div className="p-6 bg-[#7c3aed]/5 rounded-2xl text-center">
+                    <div className="text-[40px] mb-2">🙋</div>
+                    <span className="text-[#7c3aed] font-display italic text-lg">
+                      Waiting for coach approval...
+                    </span>
+                    <p className="font-body text-sm opacity-60 mt-2">
+                      Your presentation request is pending
+                    </p>
+                  </div>
                 )}
 
+                {/* Finished status */}
                 {selectedBook.myBook?.status === "presented" && (
                   <>
                     {!selectedBook.myBook.rating && (

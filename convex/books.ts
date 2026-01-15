@@ -100,7 +100,8 @@ export const updateStatus = mutation({
     studentBookId: v.id("studentBooks"),
     status: v.union(
       v.literal("reading"),
-      v.literal("completed"),
+      v.literal("completed"), // Legacy status
+      v.literal("presentation_requested"),
       v.literal("presented")
     ),
   },
@@ -109,13 +110,15 @@ export const updateStatus = mutation({
 
     if (args.status === "completed") {
       updates.completedAt = Date.now();
+    } else if (args.status === "presentation_requested") {
+      updates.presentationRequestedAt = Date.now();
     } else if (args.status === "presented") {
       updates.presentedAt = Date.now();
     }
 
     await ctx.db.patch(args.studentBookId, updates);
   },
-});
+});;
 
 // Add rating and review
 export const addReview = mutation({
@@ -170,7 +173,7 @@ export const update = mutation({
     const { bookId, ...updates } = args;
     // Filter out undefined values
     const filteredUpdates = Object.fromEntries(
-      Object.entries(updates).filter(([_, v]) => v !== undefined)
+      Object.entries(updates).filter(([, v]) => v !== undefined)
     );
     await ctx.db.patch(bookId, filteredUpdates);
     return bookId;
@@ -215,17 +218,69 @@ export const getReadingStats = query({
       .filter((q) => q.eq(q.field("userId"), args.userId))
       .collect();
 
-    const completed = studentBooks.filter((sb) =>
-      sb.status === "completed" || sb.status === "presented"
+    const reading = studentBooks.filter((sb) => sb.status === "reading").length;
+    // Count both "completed" (legacy) and "presentation_requested" as pending
+    const pendingPresentation = studentBooks.filter((sb) => 
+      sb.status === "presentation_requested" || sb.status === "completed"
     ).length;
     const presented = studentBooks.filter((sb) => sb.status === "presented").length;
-    const reading = studentBooks.filter((sb) => sb.status === "reading").length;
 
     return {
       total: studentBooks.length,
-      completed,
-      presented,
       reading,
+      pendingPresentation,
+      presented,
     };
+  },
+});;
+
+
+// Get all pending presentation requests (for coach approval queue)
+export const getPresentationRequests = query({
+  args: {},
+  handler: async (ctx) => {
+    // Get all books pending presentation (both new and legacy statuses)
+    const allBooks = await ctx.db
+      .query("studentBooks")
+      .collect();
+    
+    const requests = allBooks.filter(
+      (sb) => sb.status === "presentation_requested" || sb.status === "completed"
+    );
+
+    // Fetch full details for each request
+    return await Promise.all(
+      requests.map(async (req) => {
+        const user = await ctx.db.get(req.userId);
+        const book = await ctx.db.get(req.bookId);
+        return {
+          ...req,
+          user,
+          book,
+        };
+      })
+    );
+  },
+});;
+
+// Approve or reject a presentation request
+export const approvePresentationRequest = mutation({
+  args: {
+    studentBookId: v.id("studentBooks"),
+    approved: v.boolean(),
+  },
+  handler: async (ctx, args) => {
+    if (args.approved) {
+      await ctx.db.patch(args.studentBookId, {
+        status: "presented",
+        presentedAt: Date.now(),
+      });
+    } else {
+      // Rejected - back to reading status
+      await ctx.db.patch(args.studentBookId, {
+        status: "reading",
+        presentationRequestedAt: undefined,
+      });
+    }
   },
 });

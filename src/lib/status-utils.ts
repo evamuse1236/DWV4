@@ -5,7 +5,7 @@
 
 export type ObjectiveStatus = "assigned" | "in_progress" | "viva_requested" | "mastered";
 export type GoalStatus = "not_started" | "in_progress" | "completed";
-export type BookStatus = "reading" | "completed" | "presented";
+export type BookStatus = "reading" | "completed" | "presentation_requested" | "presented";
 
 /**
  * Learning objective status configuration
@@ -31,8 +31,9 @@ export const goalStatusConfig: Record<GoalStatus, { label: string; variant: stri
  */
 export const bookStatusConfig: Record<BookStatus, { label: string; variant: string; emoji: string }> = {
   reading: { label: "Reading", variant: "warning", emoji: "📖" },
-  completed: { label: "Completed", variant: "success", emoji: "✅" },
-  presented: { label: "Presented", variant: "info", emoji: "🎤" },
+  completed: { label: "Completed", variant: "success", emoji: "✅" }, // Legacy status
+  presentation_requested: { label: "Pending Presentation", variant: "info", emoji: "🙋" },
+  presented: { label: "Finished", variant: "success", emoji: "✅" },
 };
 
 /**
@@ -84,15 +85,17 @@ export const goalStatusLabels: Record<GoalStatus, string> = {
 // Book status indicator colors (solid dots)
 export const bookStatusIndicatorColors: Record<BookStatus, string> = {
   reading: "bg-[#ca8a04]",
-  completed: "bg-[#15803d]",
-  presented: "bg-[#7c3aed]",
+  completed: "bg-[#15803d]", // Legacy status
+  presentation_requested: "bg-[#7c3aed]",
+  presented: "bg-[#15803d]",
 };
 
 // Book status badge colors for inline styling
 export const bookStatusBadgeColors: Record<BookStatus, { bg: string; text: string }> = {
   reading: { bg: "bg-[#ca8a04]/20", text: "text-[#ca8a04]" },
-  completed: { bg: "bg-[#15803d]/20", text: "text-[#15803d]" },
-  presented: { bg: "bg-[#7c3aed]/20", text: "text-[#7c3aed]" },
+  completed: { bg: "bg-[#15803d]/20", text: "text-[#15803d]" }, // Legacy status
+  presentation_requested: { bg: "bg-[#7c3aed]/20", text: "text-[#7c3aed]" },
+  presented: { bg: "bg-[#15803d]/20", text: "text-[#15803d]" },
 };
 
 /**

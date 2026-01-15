@@ -224,11 +224,13 @@ export default defineSchema({
     bookId: v.id("books"),
     status: v.union(
       v.literal("reading"),
-      v.literal("completed"),
+      v.literal("completed"), // Legacy status for existing data
+      v.literal("presentation_requested"),
       v.literal("presented")
     ),
     startedAt: v.number(),
-    completedAt: v.optional(v.number()),
+    completedAt: v.optional(v.number()), // Legacy field for existing data
+    presentationRequestedAt: v.optional(v.number()),
     presentedAt: v.optional(v.number()),
     rating: v.optional(v.number()),
     review: v.optional(v.string()),

@@ -56,6 +56,7 @@ export function AdminDashboard() {
   const students = useQuery(api.users.getAll);
   const activeSprint = useQuery(api.sprints.getActive);
   const vivaRequests = useQuery(api.objectives.getVivaRequests);
+  const presentationRequests = useQuery(api.books.getPresentationRequests);
   const todayCheckIns = useQuery(api.users.getTodayCheckInCount);
   const todayCheckInsDetails = useQuery(api.emotions.getTodayCheckIns);
   const objectives = useQuery(api.objectives.getAll);
@@ -71,11 +72,19 @@ export function AdminDashboard() {
 
   // Mutations
   const updateStatus = useMutation(api.objectives.updateStatus);
+  const approvePresentationRequest = useMutation(api.books.approvePresentationRequest);
 
   const handleApproveViva = async (studentObjectiveId: string): Promise<void> => {
     await updateStatus({
       studentObjectiveId: studentObjectiveId as any,
       status: "mastered",
+    });
+  };
+
+  const handleApprovePresentation = async (studentBookId: string): Promise<void> => {
+    await approvePresentationRequest({
+      studentBookId: studentBookId as any,
+      approved: true,
     });
   };
 
@@ -436,6 +445,69 @@ export function AdminDashboard() {
               <div className="text-center py-8">
                 <CheckCircle className="h-12 w-12 text-muted-foreground mx-auto mb-3" />
                 <p className="text-muted-foreground">No pending vivas.</p>
+                <p className="text-sm text-muted-foreground">All caught up!</p>
+              </div>
+            )}
+          </CardContent>
+        </Card>
+
+        {/* Presentation Queue */}
+        <Card>
+          <CardHeader>
+            <div className="flex items-center justify-between">
+              <CardTitle>Presentations</CardTitle>
+              <Badge variant={presentationRequests?.length ? "destructive" : "secondary"}>
+                {presentationRequests?.length || 0} pending
+              </Badge>
+            </div>
+            <CardDescription>Book presentations awaiting approval</CardDescription>
+          </CardHeader>
+          <CardContent>
+            {presentationRequests && presentationRequests.length > 0 ? (
+              <div className="space-y-3">
+                {presentationRequests.slice(0, 3).map((request: any) => (
+                  <div
+                    key={request._id}
+                    className="p-3 rounded-lg border bg-card hover:bg-accent/50 transition-colors"
+                  >
+                    <div className="flex items-start justify-between gap-2">
+                      <div className="min-w-0 flex-1">
+                        <p className="font-medium text-sm truncate">
+                          {request.user?.displayName}
+                        </p>
+                        <p className="text-xs text-muted-foreground truncate">
+                          {request.book?.title}
+                        </p>
+                        {request.book?.author && (
+                          <p className="text-xs text-muted-foreground truncate">
+                            by {request.book.author}
+                          </p>
+                        )}
+                      </div>
+                      <Button
+                        size="sm"
+                        onClick={() => handleApprovePresentation(request._id)}
+                      >
+                        <CheckCircle className="h-4 w-4" />
+                      </Button>
+                    </div>
+                  </div>
+                ))}
+                {presentationRequests.length > 3 && (
+                  <Button
+                    variant="outline"
+                    className="w-full"
+                    onClick={() => navigate("/admin/presentations")}
+                  >
+                    View All ({presentationRequests.length})
+                    <ChevronRight className="ml-1 h-4 w-4" />
+                  </Button>
+                )}
+              </div>
+            ) : (
+              <div className="text-center py-8">
+                <BookOpen className="h-12 w-12 text-muted-foreground mx-auto mb-3" />
+                <p className="text-muted-foreground">No pending presentations.</p>
                 <p className="text-sm text-muted-foreground">All caught up!</p>
               </div>
             )}

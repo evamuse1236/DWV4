@@ -35,6 +35,7 @@ import {
   LogOut,
   ChevronUp,
   Cookie,
+  Mic,
 } from "lucide-react";
 
 // Admin navigation items
@@ -44,6 +45,7 @@ const adminNavItems = [
   { path: "/admin/sprints", label: "Sprints", icon: Calendar },
   { path: "/admin/objectives", label: "Objectives", icon: Target },
   { path: "/admin/viva", label: "Viva Queue", icon: CheckCircle },
+  { path: "/admin/presentations", label: "Presentations", icon: Mic },
   { path: "/admin/books", label: "Books", icon: BookOpen },
   { path: "/admin/trust-jar", label: "Trust Jar", icon: Cookie },
 ];

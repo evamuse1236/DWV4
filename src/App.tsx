@@ -22,6 +22,7 @@ import {
   SprintsPage,
   ObjectivesPage,
   VivaQueuePage,
+  PresentationQueuePage,
   BooksPage,
 } from "./pages/admin";
 import { StudentDetailPage } from "./pages/admin/StudentDetailPage";
@@ -99,6 +100,7 @@ function App() {
               <Route path="/admin/sprints" element={<SprintsPage />} />
               <Route path="/admin/objectives" element={<ObjectivesPage />} />
               <Route path="/admin/viva" element={<VivaQueuePage />} />
+              <Route path="/admin/presentations" element={<PresentationQueuePage />} />
               <Route path="/admin/books" element={<BooksPage />} />
             </Route>
 

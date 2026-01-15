@@ -13,7 +13,6 @@ interface BookCardProps {
   rating?: number;
   onStartReading?: () => void;
   onMarkComplete?: () => void;
-  onMarkPresented?: () => void;
   onClick?: () => void;
 }
 
@@ -31,7 +30,6 @@ export function BookCard({
   rating,
   onStartReading,
   onMarkComplete,
-  onMarkPresented,
   onClick,
 }: BookCardProps) {
   const statusInfo = status ? bookStatusConfig[status] : null;
@@ -138,27 +136,19 @@ export function BookCard({
                 }}
                 className="w-full"
               >
-                ✅ Mark Complete
+                Request Presentation
               </Button>
             )}
 
-            {status === "completed" && onMarkPresented && (
-              <Button
-                size="sm"
-                variant="primary"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onMarkPresented();
-                }}
-                className="w-full"
-              >
-                🎤 Mark Presented
-              </Button>
+            {status === "presentation_requested" && (
+              <div className="text-center text-sm text-purple-600 font-medium">
+                Waiting for approval
+              </div>
             )}
 
             {status === "presented" && (
               <div className="text-center text-sm text-green-600 font-medium">
-                🎉 Shared with class!
+                Finished!
               </div>
             )}
           </div>
