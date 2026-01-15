@@ -237,4 +237,12 @@ export default defineSchema({
     .index("by_book", ["bookId"])
     .index("by_user_book", ["userId", "bookId"])
     .index("by_status", ["status"]),
+
+  // ============ TRUST JAR ============
+  trustJar: defineTable({
+    count: v.number(), // Current marble count (0-50)
+    timesCompleted: v.number(), // Number of times jar was filled and reset
+    updatedAt: v.number(), // Last update timestamp
+    updatedBy: v.optional(v.id("users")), // Who made the last change
+  }),
 });

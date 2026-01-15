@@ -59,6 +59,11 @@ const Icons = {
       <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
     </svg>
   ),
+  jar: (
+    <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l.8 6.75a.75.75 0 01-.75.825h-15a.75.75 0 01-.75-.825l.8-6.75m14.1 0a24.301 24.301 0 00-14.1 0" />
+    </svg>
+  ),
 };
 
 // Student navigation items
@@ -68,6 +73,7 @@ const studentNavItems: NavItem[] = [
   { path: "/sprint", label: "Sprint", icon: Icons.listChecks },
   { path: "/deep-work", label: "DeepWork", icon: Icons.book },
   { path: "/reading", label: "Library", icon: Icons.books },
+  { path: "/trust-jar", label: "Trust Jar", icon: Icons.jar },
 ];
 
 // Admin navigation items
@@ -78,6 +84,7 @@ const adminNavItems: NavItem[] = [
   { path: "/admin/objectives", label: "Objectives", icon: Icons.clipboard },
   { path: "/admin/viva", label: "Viva Queue", icon: Icons.check },
   { path: "/admin/books", label: "Books", icon: Icons.books },
+  { path: "/admin/trust-jar", label: "Trust Jar", icon: Icons.jar },
 ];
 
 /**

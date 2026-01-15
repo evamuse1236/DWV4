@@ -13,6 +13,7 @@ import { SprintPage } from "./pages/student/SprintPage";
 import { DeepWorkPage } from "./pages/student/DeepWorkPage";
 import { DomainDetailPage } from "./pages/student/DomainDetailPage";
 import { ReadingPage } from "./pages/student/ReadingPage";
+import { TrustJarPage } from "./pages/student/TrustJarPage";
 
 // Admin pages
 import {
@@ -24,6 +25,7 @@ import {
   BooksPage,
 } from "./pages/admin";
 import { StudentDetailPage } from "./pages/admin/StudentDetailPage";
+import { AdminTrustJarPage } from "./pages/admin/TrustJarPage";
 
 // Initialize Convex client
 // Note: Replace with your actual Convex URL after running `npx convex dev`
@@ -46,6 +48,26 @@ function App() {
               }
             />
             <Route path="/setup" element={<SetupPage />} />
+
+            {/* Trust Jar - Full screen (accessible to students) */}
+            <Route
+              path="/trust-jar"
+              element={
+                <ProtectedRoute allowedRoles={["student"]}>
+                  <TrustJarPage />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Trust Jar Admin - Full screen with controls */}
+            <Route
+              path="/admin/trust-jar"
+              element={
+                <ProtectedRoute allowedRoles={["admin"]}>
+                  <AdminTrustJarPage />
+                </ProtectedRoute>
+              }
+            />
 
             {/* Student routes */}
             <Route

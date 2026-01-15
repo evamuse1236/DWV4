@@ -20,6 +20,7 @@ import type * as objectives from "../objectives.js";
 import type * as progress from "../progress.js";
 import type * as seed from "../seed.js";
 import type * as sprints from "../sprints.js";
+import type * as trustJar from "../trustJar.js";
 import type * as users from "../users.js";
 import type * as utils from "../utils.js";
 
@@ -42,6 +43,7 @@ declare const fullApi: ApiFromModules<{
   progress: typeof progress;
   seed: typeof seed;
   sprints: typeof sprints;
+  trustJar: typeof trustJar;
   users: typeof users;
   utils: typeof utils;
 }>;
