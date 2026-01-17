@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+/* =========================================
+   DESIGN SYSTEM - Local Scoped
+   ========================================= */
+.deep-work-theme {
+  /* Palette */
+  --bg-warm: #fdfbf7;
+  --text-ink: #1a1a1a;
+  --text-soft: #666666;
+
+  /* Subject Colors (Pastel) */
+  --col-coding: #FEF9C3; /* Yellow */
+  --col-maths: #E0F2F1;  /* Teal */
+  --col-reading: #FFE4E6; /* Rose */
+  --col-writing: #FDF2F8; /* Pink */
+
+  /* Shadows */
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.02);
+  --shadow-float: 0 15px 35px rgba(0, 0, 0, 0.08), 0 5px 15px rgba(0, 0, 0, 0.03);
+
+  /* Fonts - Fallback to project fonts if specific ones aren't loaded, 
+     but prefer the Mock's selection if available */
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Inter', sans-serif;
+  
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 1. ATMOSPHERE */
+.watercolor-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  filter: blur(80px);
+  opacity: 0.6;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  animation: drift 20s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes drift {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(50px, -50px);
+  }
+}
+
+/* 2. LAYOUT */
+.spiral-stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1200px;
+  overflow: hidden;
+  /* Ensure it takes available space */
+  flex: 1;
+}
+
+.spiral-container {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  /* Responsive scaling - default to smaller size */
+  transform-origin: center center;
+  transition: transform 0.3s ease;
+  transform: scale(0.65);
+}
+
+@media (min-height: 900px) and (min-width: 1400px) {
+  .spiral-container {
+    transform: scale(0.85);
+  }
+}
+
+@media (min-height: 1000px) and (min-width: 1600px) {
+  .spiral-container {
+    transform: scale(1);
+  }
+}
+
+/* NODES */
+.node-base {
+  position: absolute;
+  background: white;
+  border-radius: 20px; /* Soft Squircle */
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+  z-index: 20;
+}
+
+.node-base:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: var(--shadow-float);
+}
+
+.node-base i, .node-base svg {
+  color: #999;
+  transition: 0.3s;
+}
+
+.node-base:hover i, .node-base:hover svg {
+  color: var(--text-ink);
+}
+
+/* SUBJECTS */
+.subject-node {
+  width: 120px;
+  height: 120px;
+  border-radius: 30px;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--text-ink);
+  text-align: center;
+  gap: 8px;
+  z-index: 30;
+}
+
+.subject-node i, .subject-node svg {
+  font-size: 32px;
+  color: var(--text-ink);
+}
+
+.subject-coding {
+  background: var(--col-coding);
+}
+
+.subject-maths {
+  background: var(--col-maths);
+}
+
+.subject-reading {
+  background: var(--col-reading);
+}
+
+.subject-writing {
+  background: var(--col-writing);
+}
+
+/* SKILL NODES */
+.skill-node {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  opacity: 0;
+  transform: scale(0.5);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.skill-node.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.skill-node.active {
+  border: 2px solid var(--text-ink) !important;
+  transform: scale(1.1);
+  box-shadow: var(--shadow-float);
+}
+
+/* TRANSITIONS */
+.subject-node.centered {
+  left: 340px !important; /* 400 - 60 */
+  top: 340px !important;
+  transform: scale(1.1);
+  box-shadow: var(--shadow-float);
+  pointer-events: none;
+  z-index: 40;
+}
+
+.subject-node.faded {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.8) translateY(20px);
+}
+
+/* CONNECTIONS */
+.connections-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+}
+
+.connection-line {
+  fill: none;
+  stroke: #d1d5db;
+  stroke-width: 1.5px;
+  stroke-dasharray: 4 4;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.connection-line.visible {
+  opacity: 0.6;
+}
+
+/* 4. SIDE PANEL */
+.details-panel {
+  width: 100%; /* Parent controls width */
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  transform: translateX(0);
+  transition: transform 0.5s ease;
+  overflow-y: auto;
+  position: relative;
+  z-index: 50;
+}
+
+.details-panel.hidden {
+  transform: translateX(100%);
+  display: none; 
+}
+
+.panel-header {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.5rem;
+  color: var(--text-soft);
+  margin-bottom: 2rem;
+}
+
+.mood-large-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 24px;
+  background: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  margin-bottom: 24px;
+  flex-shrink: 0;
+  color: var(--text-ink);
+}
+
+.mood-title {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  line-height: 1;
+  margin-bottom: 16px;
+  color: var(--text-ink);
+}
+
+.mood-manifest {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-soft);
+  margin-bottom: 30px;
+}
+
+/* CHECKLIST */
+.task-list {
+  list-style: none;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 12px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+  transition: 0.2s;
+}
+
+.task-item:hover {
+  transform: translateX(5px);
+}
+
+.task-checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 2px solid #ddd;
+  margin-right: 12px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  transition: 0.2s;
+}
+
+.task-checkbox.checked {
+  background: var(--text-ink);
+  border-color: var(--text-ink);
+}
+
+.task-checkbox.checked::after {
+  content: '✓';
+  color: white;
+  font-size: 14px;
+}
+
+.task-link {
+  text-decoration: none;
+  color: var(--text-ink);
+  font-weight: 500;
+  flex-grow: 1;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+}
+
+.task-link:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+/* VIVA BUTTON */
+.viva-btn {
+  padding: 16px 32px;
+  background: var(--text-ink);
+  color: white;
+  border: none;
+  border-radius: 100px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+  text-align: center;
+  opacity: 0.5;
+  pointer-events: none;
+  transform: translateY(10px);
+}
+
+.viva-btn.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.viva-btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.viva-btn.requested {
+  background: #059669; /* Green */
+}
+
+/* BACK BUTTON */
+.back-btn {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  background: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 100px;
+  font-family: var(--font-body);
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: var(--shadow-card);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: 100;
+  color: var(--text-ink);
+}
+
+.back-btn.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.back-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Icon Option (Habit Icons) */
+.icon-option {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.icon-option:hover {
+    background: var(--color-pastel-blue);
+    border-color: rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+  }
+
+  .icon-option.selected {
+    background: var(--color-primary);
+    color: white;
+  }
+
+  /* Delete button */
+  .habit-delete-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c44;
+    z-index: 10;
+  }
+
+  .art-habit-card:hover .habit-delete-btn {
+    opacity: 0.5;
+  }
+
+  .habit-delete-btn:hover {
+    opacity: 1 !important;
+    background: #fee;
+    transform: scale(1.1);
+  }
+
+  /* Add new card */
+  .art-habit-card.add-new-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: dashed;
+    border-color: rgba(0, 0, 0, 0.1);
+    min-height: 200px;
+    cursor: pointer;
+  }
+
+  .art-habit-card.add-new-card:hover {
+    border-color: var(--color-primary);
+    background: rgba(168, 197, 181, 0.1);
+  }
+
+  .add-new-content {
+    text-align: center;
+    opacity: 0.6;
+  }
+
+  .add-new-label {
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 8px;
+  }
+
+  /* New habit form */
+  .new-habit-form {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .new-habit-input {
+    width: 100%;
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-style: italic;
+    padding: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background: white;
+    outline: none;
+    margin-bottom: 12px;
+  }
+
+  .new-habit-input:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px rgba(168, 197, 181, 0.2);
+  }
+
+  .new-habit-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+  }
+
+  .btn-cancel {
+    padding: 8px 16px;
+    border: none;
+    background: transparent;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+  }
+
+  .btn-cancel:hover {
+    opacity: 1;
+  }
+
+  .btn-create {
+    padding: 8px 20px;
+    border: none;
+    background: var(--color-text);
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .btn-create:hover {
+    background: #1a1a1a;
+    transform: translateY(-1px);
+  }
+
+  .btn-create:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .habits-container {
+      grid-template-columns: 1fr;
+    }
+
+    .icon-grid-inline {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+/* =============================================================================
+   BOOK BUDDY - AI Book Recommendation
+   Styles are now inline in the component (BookBuddy.tsx) using Tailwind classes
+   to match GoalChatPalette styling
+   ============================================================================= */

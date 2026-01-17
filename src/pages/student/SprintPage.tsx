@@ -14,6 +14,9 @@ import {
 } from "../../components/ui/select";
 import { useAuth } from "../../hooks/useAuth";
 import { goalStatusLabels, type GoalStatus } from "../../lib/status-utils";
+import { cn } from "../../lib/utils";
+import styles from "./sprint.module.css";
+import museStyles from "../../styles/muse.module.css";
 
 const MS_PER_DAY = 1000 * 60 * 60 * 24;
 // Week runs Monday (index 0) to Sunday (index 6)
@@ -463,7 +466,7 @@ export function SprintPage() {
         goalSlots.push(
           <motion.div
             key={goal._id}
-            className={`goal-slot filled ${isExpanded ? "expanded" : ""}`}
+            className={cn(styles['goal-slot'], styles.filled, isExpanded && styles.expanded)}
             onClick={() => handleGoalClick(goal._id)}
             layout
             style={{ position: "relative", "--goal-tint": goalColor.tint } as React.CSSProperties}
@@ -483,7 +486,7 @@ export function SprintPage() {
             {/* Goal header - matching inspo structure exactly */}
             <div>
               <i
-                className={`ph ${iconClass} goal-icon`}
+                className={cn('ph', iconClass, styles['goal-icon'])}
                 style={{
                   color: goalColor.dot,
                 }}
@@ -554,13 +557,13 @@ export function SprintPage() {
             </div>
 
             {/* Goal Details (revealed on click) */}
-            <div className="goal-details">
+            <div className={styles['goal-details']}>
               <div style={{ fontSize: "10px", textTransform: "uppercase", fontWeight: 700, opacity: 0.5 }}>
                 Progress
               </div>
-              <div className="goal-progress-mini">
+              <div className={styles['goal-progress-mini']}>
                 <motion.div
-                  className="goal-progress-fill"
+                  className={styles['goal-progress-fill']}
                   initial={{ width: 0 }}
                   animate={{ width: `${progress}%` }}
                 />
@@ -569,11 +572,11 @@ export function SprintPage() {
               <div style={{ fontSize: "10px", textTransform: "uppercase", fontWeight: 700, opacity: 0.5, marginTop: "16px" }}>
                 Daily Actions
               </div>
-              <ul className="action-list">
+              <ul className={styles['action-list']}>
                 {goal.actionItems?.slice(0, 5).map((item: any) => (
                   <li
                     key={item._id}
-                    className={`action-item ${item.isCompleted ? "done" : ""}`}
+                    className={cn(styles['action-item'], item.isCompleted && styles.done)}
                     onClick={(e) => {
                       e.stopPropagation();
                       handleToggleAction(item._id);
@@ -636,7 +639,7 @@ export function SprintPage() {
         goalSlots.push(
           <div
             key={`empty-${i}`}
-            className="goal-slot"
+            className={styles['goal-slot']}
             onClick={handleOpenGoalChat}
             style={{ "--goal-tint": emptySlotColor.tint } as React.CSSProperties}
           >
@@ -658,13 +661,13 @@ export function SprintPage() {
       }
     }
 
-    return <div className="goals-container fade-in-up delay-1">{goalSlots}</div>;
+    return <div className={cn(styles['goals-container'], "fade-in-up delay-1")}>{goalSlots}</div>;
   };
 
   // Render the week view
   const renderWeekView = () => (
-    <div className="week-view-container fade-in-up delay-2">
-      <div className="week-view">
+    <div className={cn(styles['week-view-container'], "fade-in-up delay-2")}>
+      <div className={styles['week-view']}>
         {weekDates.map((dayInfo) => {
           const isToday = dayInfo.date === todayStr && activeWeek === currentWeek;
           const dayTasks = tasksByDay[dayInfo.dayOfWeek] || [];
@@ -672,11 +675,11 @@ export function SprintPage() {
           return (
             <div
               key={dayInfo.date}
-              className={`day-column ${isToday ? "active" : ""}`}
+              className={cn(styles['day-column'], isToday && styles.active)}
             >
-              <div className="day-header">
-                <div className="day-name">{DAY_NAMES[dayInfo.displayIndex]}</div>
-                <div className="day-date">{dayInfo.dayNum}</div>
+              <div className={styles['day-header']}>
+                <div className={styles['day-name']}>{DAY_NAMES[dayInfo.displayIndex]}</div>
+                <div className={styles['day-date']}>{dayInfo.dayNum}</div>
               </div>
 
               <AnimatePresence mode="popLayout">
@@ -698,7 +701,7 @@ export function SprintPage() {
                       animate={{ opacity: 1, scale: 1 }}
                       exit={{ opacity: 0, scale: 0.9 }}
                       transition={{ duration: 0.2 }}
-                      className={`task-card ${task.isCompleted ? "completed" : ""} ${isSelected ? "selected" : ""}`}
+                      className={cn(styles['task-card'], task.isCompleted && styles.completed, isSelected && styles.selected)}
                       style={{ background: taskColor.bg }}
                     whileHover={{ y: -2 }}
                     onClick={(e) => {
@@ -716,7 +719,7 @@ export function SprintPage() {
                     >
                       {/* Header row with goal label and time */}
                       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "4px" }}>
-                        <div className="task-time-pill" style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+                        <div className={styles['task-time-pill']} style={{ display: "flex", alignItems: "center", gap: "6px" }}>
                           <span
                             style={{
                               width: "6px",
@@ -850,7 +853,7 @@ export function SprintPage() {
               {goals && goals.length > 0 && (
                 <div style={{ marginTop: "auto", paddingTop: "12px" }}>
                   {showingAddTaskForDay === dayInfo.dayOfWeek ? (
-                    <div className="quick-add-goals">
+                    <div className={styles['quick-add-goals']}>
                       {goals.map((goal: any, idx: number) => (
                         <motion.button
                           key={goal._id}
@@ -884,7 +887,7 @@ export function SprintPage() {
                   ) : (
                     <button
                       onClick={() => setShowingAddTaskForDay(dayInfo.dayOfWeek)}
-                      className="quick-add-btn"
+                      className={styles['quick-add-btn']}
                     >
                       <i className="ph ph-plus" style={{ fontSize: "14px" }} />
                     </button>
@@ -921,15 +924,15 @@ export function SprintPage() {
         </div>
 
         {/* Week Toggle */}
-        <div className="week-toggle">
+        <div className={styles['week-toggle']}>
           <div
-            className={`toggle-btn ${activeWeek === 1 ? "active" : ""}`}
+            className={cn(styles['toggle-btn'], activeWeek === 1 && styles.active)}
             onClick={() => setActiveWeek(1)}
           >
             Week 1
           </div>
           <div
-            className={`toggle-btn ${activeWeek === 2 ? "active" : ""}`}
+            className={cn(styles['toggle-btn'], activeWeek === 2 && styles.active)}
             onClick={() => setActiveWeek(2)}
           >
             Week 2
@@ -1275,15 +1278,15 @@ function TheMuse({
   };
 
   return (
-    <div className={`muse-container ${expanded ? "expanded" : ""}`}>
+    <div className={cn(museStyles['muse-container'], expanded && museStyles.expanded)}>
       {/* Floating Blob Trigger */}
-      <div className="muse-blob-wrapper">
-        <div className="muse-blob" onClick={onToggle} />
+      <div className={museStyles['muse-blob-wrapper']}>
+        <div className={museStyles['muse-blob']} onClick={onToggle} />
       </div>
 
       {/* Expanded Chat Panel */}
-      <div className="muse-panel">
-        <div className="muse-header">
+      <div className={museStyles['muse-panel']}>
+        <div className={museStyles['muse-header']}>
           <div>
             <span style={{ fontFamily: "var(--font-body)", fontSize: "10px", textTransform: "uppercase", letterSpacing: "0.2em", opacity: 0.5 }}>
               AI Companion
@@ -1292,16 +1295,16 @@ function TheMuse({
               <h3 style={{ fontFamily: "var(--font-display)", fontSize: "24px", fontStyle: "italic", margin: 0, lineHeight: 1 }}>
                 {persona === "captain" ? "The Captain" : "The Muse"}
               </h3>
-              <div className="persona-toggle">
+              <div className={museStyles['persona-toggle']}>
                 <button
-                  className={`persona-btn ${persona === "muse" ? "active" : ""}`}
+                  className={cn(museStyles['persona-btn'], persona === "muse" && museStyles.active)}
                   onClick={() => handlePersonaChange("muse")}
                   title="Friendly, conversational (3-5 turns)"
                 >
                   Muse
                 </button>
                 <button
-                  className={`persona-btn ${persona === "captain" ? "active" : ""}`}
+                  className={cn(museStyles['persona-btn'], persona === "captain" && museStyles.active)}
                   onClick={() => handlePersonaChange("captain")}
                   title="Fast, direct (2-3 turns)"
                 >
@@ -1320,19 +1323,19 @@ function TheMuse({
 
         {phase === "chatting" ? (
           <>
-            <div className="muse-body">
+            <div className={museStyles['muse-body']}>
               {messages.map((msg) => (
                 <motion.div
                   key={msg.id}
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className={`chat-message ${msg.role === "user" ? "user" : "ai"}`}
+                  className={cn(museStyles['chat-message'], msg.role === "user" ? museStyles.user : museStyles.ai)}
                 >
                   {msg.content}
                 </motion.div>
               ))}
               {isLoading && (
-                <div className="chat-message ai" style={{ display: "flex", gap: "4px" }}>
+                <div className={cn(museStyles['chat-message'], museStyles.ai)} style={{ display: "flex", gap: "4px" }}>
                   <span className="animate-pulse">●</span>
                   <span className="animate-pulse" style={{ animationDelay: "0.2s" }}>●</span>
                   <span className="animate-pulse" style={{ animationDelay: "0.4s" }}>●</span>
@@ -1341,24 +1344,24 @@ function TheMuse({
               <div ref={messagesEndRef} />
             </div>
 
-            <div className="muse-input-area">
+            <div className={museStyles['muse-input-area']}>
               <input
                 ref={inputRef}
                 type="text"
-                className="muse-input"
+                className={museStyles['muse-input']}
                 placeholder="Tell me about your goal..."
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
                 onKeyDown={handleKeyDown}
                 disabled={isLoading}
               />
-              <button className="muse-send-btn" onClick={handleSend} disabled={isLoading || !inputValue.trim()}>
+              <button className={museStyles['muse-send-btn']} onClick={handleSend} disabled={isLoading || !inputValue.trim()}>
                 <SendIcon />
               </button>
             </div>
           </>
         ) : (
-          <div className="muse-body" style={{ padding: "24px" }}>
+          <div className={museStyles['muse-body']} style={{ padding: "24px" }}>
             <div style={{ textAlign: "center", marginBottom: "20px" }}>
               <span style={{ fontSize: "10px", textTransform: "uppercase", letterSpacing: "0.2em", opacity: 0.5 }}>
                 Your Goal

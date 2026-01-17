@@ -1,0 +1,407 @@
+/* =============================================================================
+   MOOD PALETTE - Emotional Check-in Styles
+   ============================================================================= */
+
+/* Primary Mood Card Deck */
+.mood-deck {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  transition: all 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.mood-deck::-webkit-scrollbar {
+  display: none;
+}
+
+/* Primary Mood Cards (4 Quadrants) */
+.mood-card {
+  height: 200px;
+  width: 200px;
+  flex: 0 0 auto;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  gap: 15px;
+}
+
+.mood-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+/* Collapsed state when a quadrant is active */
+.mood-card.active-primary {
+  transform: none;
+  opacity: 1;
+  height: 70px;
+  width: 70px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.mood-card.active-primary:hover {
+  transform: scale(1.1);
+}
+
+/* Label inside mood cards */
+.orb-label {
+  font-family: var(--font-display);
+  font-size: 16px;
+  line-height: 1.2;
+  font-style: italic;
+  font-weight: 600;
+  text-align: center;
+  color: #1a1a1a;
+  letter-spacing: 0.02em;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+/* Nuance Canvas (expanded emotion grid) */
+.nuance-canvas {
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  pointer-events: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nuance-canvas.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Individual emotion tiles */
+.shade-tile {
+  width: 160px;
+  height: 160px;
+  flex-shrink: 0;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  background: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.shade-tile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Tooltip for emotion definitions */
+.definition-tooltip {
+  position: fixed;
+  background: rgba(253, 251, 247, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #2f3a46;
+  padding: 12px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: var(--font-body);
+  font-weight: 500;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, -90%) scale(0.95);
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  z-index: 2000;
+  width: max-content;
+  max-width: 280px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.definition-tooltip.visible {
+  opacity: 1;
+  transform: translate(-50%, -110%) scale(1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mood-card {
+    height: 140px;
+    width: 140px;
+    border-radius: 28px;
+  }
+
+  .shade-tile {
+    width: 120px;
+    height: 120px;
+    font-size: 14px;
+    border-radius: 24px;
+  }
+
+  .mood-deck {
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .nuance-canvas {
+    gap: 12px;
+  }
+}
+
+/* Minimal Inputs */
+.input-minimal-group {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.input-minimal {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 12px 0;
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--color-text);
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-minimal:focus {
+  border-bottom-color: var(--color-text);
+}
+
+.input-minimal::placeholder {
+  color: transparent;
+}
+
+.input-label-floating {
+  position: absolute;
+  left: 0;
+  top: 12px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.input-minimal:focus + .input-label-floating,
+.input-minimal:not(:placeholder-shown) + .input-label-floating {
+  top: -10px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+/* Animation Classes */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+.delay-5 { animation-delay: 0.5s; }
+
+.breathing-glow {
+  animation: breathe 4s ease-in-out infinite;
+}
+
+/* Ritual Steps */
+.ritual-step {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.ritual-step::before {
+  content: "";
+  position: absolute;
+  left: 19px;
+  top: 40px;
+  bottom: -40px;
+  width: 2px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.ritual-step:last-child::before {
+  display: none;
+}
+
+.ritual-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 20px;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+/* Activity Path */
+.activity-path-container {
+  position: relative;
+  padding-left: 32px;
+}
+
+.activity-path-container::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1) 0,
+    rgba(0, 0, 0, 0.1) 6px,
+    transparent 6px,
+    transparent 12px
+  );
+}
+
+.activity-node {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.activity-node::after {
+  content: "";
+  position: absolute;
+  left: -21px;
+  top: 8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid var(--color-text);
+}
+
+.activity-node.completed::after {
+  background: var(--color-text);
+}
+
+/* Wisdom Note */
+.wisdom-note {
+  background: #fffbeb;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transform: rotate(2deg);
+  padding: 24px;
+  font-family: var(--font-body);
+  position: sticky;
+  top: 40px;
+  border-radius: 8px;
+}
+
+/* 3D Books */
+.book-3d-wrapper {
+  perspective: 1000px;
+  height: 320px;
+  width: 220px;
+  cursor: pointer;
+}
+
+.book-cover-3d {
+  width: 100%;
+  height: 100%;
+  background: #eee;
+  border-radius: 4px 12px 12px 4px;
+  box-shadow:
+    5px 5px 15px rgba(0, 0, 0, 0.1),
+    inset 4px 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s;
+  transform: rotateY(-20deg) scale(0.9);
+  position: relative;
+  transform-style: preserve-3d;
+  background-size: cover;
+  background-position: center;
+}
+
+.book-3d-wrapper:hover .book-cover-3d {
+  transform: rotateY(0deg) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.book-cover-3d::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 12px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.3),
+    rgba(0, 0, 0, 0.1) 40%,
+    rgba(0, 0, 0, 0)
+  );
+  z-index: 2;
+  border-radius: 4px 0 0 4px;
+}
+
+.book-info-glass {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: white;
+  border-radius: 0 0 12px 4px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.book-3d-wrapper:hover .book-info-glass {
+  opacity: 1;
+}
+

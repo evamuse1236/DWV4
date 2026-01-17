@@ -365,3 +365,94 @@ export const getVivaRequests = query({
     );
   },
 });
+
+// Get all tree data for skill tree visualization
+// This query is optimized to fetch all needed data in one query
+// Uses userId from args (authentication is handled at component level)
+export const getTreeData = query({
+  args: { userId: v.id("users") },
+  handler: async (ctx, args) => {
+    // Get all domains
+    const domains = await ctx.db.query("domains").collect();
+
+    // Get all student objectives for this user
+    const studentObjectives = await ctx.db
+      .query("studentObjectives")
+      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .collect();
+
+    // Build a map of objectives by domain
+    const objectivesByDomain: Record<string, any[]> = {};
+
+    // Process each student objective
+    for (const so of studentObjectives) {
+      const objective = await ctx.db.get(so.objectiveId);
+      if (!objective) continue;
+
+      const domainId = objective.domainId.toString();
+
+      // Get activities for this objective
+      const activities = await ctx.db
+        .query("activities")
+        .withIndex("by_objective", (q) => q.eq("objectiveId", so.objectiveId))
+        .collect();
+
+      // Get activity progress
+      const progress = await ctx.db
+        .query("activityProgress")
+        .withIndex("by_student_objective", (q) =>
+          q.eq("studentObjectiveId", so._id)
+        )
+        .collect();
+
+      const progressMap = new Map(progress.map((p) => [p.activityId.toString(), p]));
+
+      // Build the full objective data
+      const fullObjective = {
+        _id: so._id,
+        objectiveId: so.objectiveId,
+        status: so.status,
+        assignedAt: so.assignedAt,
+        objective: {
+          _id: objective._id,
+          title: objective.title,
+          description: objective.description,
+          difficulty: objective.difficulty,
+          createdAt: objective.createdAt,
+        },
+        activities: activities
+          .sort((a, b) => a.order - b.order)
+          .map((a) => ({
+            _id: a._id,
+            title: a.title,
+            url: a.url,
+            type: a.type,
+            order: a.order,
+            progress: progressMap.get(a._id.toString()),
+          })),
+      };
+
+      // Group by domain
+      if (!objectivesByDomain[domainId]) {
+        objectivesByDomain[domainId] = [];
+      }
+      objectivesByDomain[domainId].push(fullObjective);
+    }
+
+    // Sort objectives within each domain by difficulty tier then createdAt
+    const difficultyOrder = { beginner: 0, intermediate: 1, advanced: 2 };
+    for (const domainId of Object.keys(objectivesByDomain)) {
+      objectivesByDomain[domainId].sort((a: any, b: any) => {
+        const diffA = difficultyOrder[a.objective.difficulty as keyof typeof difficultyOrder] ?? 0;
+        const diffB = difficultyOrder[b.objective.difficulty as keyof typeof difficultyOrder] ?? 0;
+        if (diffA !== diffB) return diffA - diffB;
+        return a.objective.createdAt - b.objective.createdAt;
+      });
+    }
+
+    return {
+      domains,
+      objectivesByDomain,
+    };
+  },
+});

@@ -2162,7 +2162,26 @@ h3 {
 
 /* =============================================================================
    BOOK BUDDY - AI Book Recommendation (Card-Focused Design)
+   Uses muse-* classes as base with book-buddy-* overrides
    ============================================================================= */
+
+/* Blob override - round shape with book icon */
+.book-buddy-container .muse-blob {
+  border-radius: 50%;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Panel override - larger for book cards */
+.book-buddy-container .muse-panel {
+  width: 420px;
+  height: 600px;
+  max-height: calc(100vh - 100px);
+}
+
+/* Old standalone styles below - kept for fallback */
 
 /* Floating Bubble Trigger */
 .book-buddy-blob {

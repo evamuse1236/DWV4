@@ -321,209 +321,201 @@ export function BookBuddy({
   const showEmptyState = currentBooks.length === 0 && !isLoading;
 
   return (
-    <>
-      {/* Floating Bubble Trigger */}
-      <motion.button
-        className="book-buddy-blob"
-        onClick={handleToggle}
-        animate={{
-          scale: hasWaved ? 1 : [1, 1.1, 1],
-          rotate: hasWaved ? 0 : [0, -10, 10, 0],
-        }}
-        transition={{
-          duration: hasWaved ? 0.2 : 1.5,
-          repeat: hasWaved ? 0 : 2,
-        }}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.95 }}
-        style={{
-          background: `linear-gradient(135deg, ${config.bgColor}, ${config.bgColor}aa)`,
-        }}
-      >
-        <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-        </svg>
-      </motion.button>
+    // Muse-style container: fixed position bottom-right
+    <div className={`muse-container book-buddy-container ${expanded ? "expanded" : ""}`}>
+      {/* Floating Book Button - uses muse-blob styling with book icon */}
+      <div className="muse-blob-wrapper">
+        <motion.button
+          className="muse-blob book-buddy-blob-icon"
+          onClick={handleToggle}
+          animate={{
+            scale: hasWaved ? 1 : [1, 1.1, 1],
+            rotate: hasWaved ? 0 : [0, -10, 10, 0],
+          }}
+          transition={{
+            duration: hasWaved ? 0.2 : 1.5,
+            repeat: hasWaved ? 0 : 2,
+          }}
+          style={{
+            background: `linear-gradient(135deg, ${config.bgColor}, ${config.bgColor}dd)`,
+          }}
+        >
+          <svg className="w-7 h-7" fill="none" stroke={config.accentColor} strokeWidth={1.5} viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+          </svg>
+        </motion.button>
+      </div>
 
-      {/* Card Panel */}
-      <AnimatePresence>
-        {expanded && (
-          <motion.div
-            className="book-buddy-panel"
-            initial={{ opacity: 0, scale: 0.9, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.9, y: 20 }}
-            transition={{ type: "spring", damping: 25, stiffness: 300 }}
+      {/* Muse-style Panel - frosted glass, anchored to blob */}
+      <div className="muse-panel book-buddy-panel">
+        {/* Header */}
+        <div className="muse-header">
+          <div className="flex items-center gap-3">
+            <div
+              className="w-8 h-8 rounded-full flex items-center justify-center"
+              style={{ background: config.bgColor }}
+            >
+              <svg className="w-4 h-4" fill="none" stroke={config.accentColor} strokeWidth={2} viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+              </svg>
+            </div>
+            <div>
+              <span className="text-[0.6rem] uppercase tracking-[0.15em] text-[#888]">
+                Book Buddy
+              </span>
+              <h3 className="font-display text-base leading-tight">{config.name}</h3>
+            </div>
+          </div>
+
+          <button
+            onClick={() => setExpanded(false)}
+            className="w-8 h-8 rounded-full hover:bg-black/5 flex items-center justify-center transition-colors"
           >
-            {/* Header */}
-            <div className="book-buddy-header">
-              <div className="flex items-center gap-3">
-                <div
-                  className="w-8 h-8 rounded-full flex items-center justify-center"
-                  style={{ background: config.bgColor }}
-                >
-                  <svg className="w-4 h-4" fill="none" stroke={config.accentColor} strokeWidth={2} viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                  </svg>
-                </div>
-                <div>
-                  <span className="text-[0.6rem] uppercase tracking-[0.15em] text-[#888]">
-                    Book Buddy
-                  </span>
-                  <h3 className="font-display text-base leading-tight">{config.name}</h3>
-                </div>
-              </div>
+            <svg className="w-5 h-5 opacity-50" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
 
-              <button
-                onClick={() => setExpanded(false)}
-                className="w-8 h-8 rounded-full hover:bg-black/5 flex items-center justify-center transition-colors"
+        {/* Personality Toggle */}
+        <div className="book-buddy-personality-toggle">
+          {(["luna", "dash", "hagrid"] as Personality[]).map((p) => (
+            <button
+              key={p}
+              onClick={() => handlePersonalityChange(p)}
+              className={`personality-btn ${personality === p ? "active" : ""}`}
+              style={{
+                backgroundColor: personality === p ? personalities[p].bgColor : "transparent",
+                color: personality === p ? personalities[p].accentColor : "#666",
+              }}
+            >
+              {personalities[p].name}
+            </button>
+          ))}
+        </div>
+
+        {/* Book Cards Area - scrollable body like muse-body */}
+        <div className="muse-body book-buddy-cards-area">
+          {/* Loading Overlay */}
+          <AnimatePresence>
+            {isLoading && (
+              <motion.div
+                className="book-buddy-loading-overlay"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
               >
-                <svg className="w-5 h-5 opacity-50" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-
-            {/* Personality Toggle */}
-            <div className="book-buddy-personality-toggle">
-              {(["luna", "dash", "hagrid"] as Personality[]).map((p) => (
-                <button
-                  key={p}
-                  onClick={() => handlePersonalityChange(p)}
-                  className={`personality-btn ${personality === p ? "active" : ""}`}
-                  style={{
-                    backgroundColor: personality === p ? personalities[p].bgColor : "transparent",
-                    color: personality === p ? personalities[p].accentColor : "#666",
-                  }}
-                >
-                  {personalities[p].name}
-                </button>
-              ))}
-            </div>
-
-            {/* Book Cards Area */}
-            <div className="book-buddy-cards-area">
-              {/* Loading Overlay */}
-              <AnimatePresence>
-                {isLoading && (
-                  <motion.div
-                    className="book-buddy-loading-overlay"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                  >
-                    <div className="loading-spinner">
-                      <div className="flex gap-1">
-                        {[0, 0.15, 0.3].map((delay, i) => (
-                          <motion.span
-                            key={i}
-                            animate={{
-                              opacity: [0.3, 1, 0.3],
-                              scale: [1, 1.2, 1],
-                            }}
-                            transition={{
-                              repeat: Infinity,
-                              duration: personality === "dash" ? 0.6 : 1,
-                              delay
-                            }}
-                            className="w-3 h-3 rounded-full"
-                            style={{ backgroundColor: config.accentColor }}
-                          />
-                        ))}
-                      </div>
-                      <span className="text-sm text-black/50 mt-2">Finding books...</span>
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-
-              {/* Empty State / Intro */}
-              {showEmptyState && (
-                <div className="book-buddy-empty-state">
-                  <div
-                    className="empty-state-avatar"
-                    style={{ background: `linear-gradient(135deg, ${config.bgColor}80, ${config.bgColor})` }}
-                  >
-                    <svg className="w-10 h-10 opacity-60" fill="none" stroke={config.accentColor} strokeWidth={1.5} viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                    </svg>
+                <div className="loading-spinner">
+                  <div className="flex gap-1">
+                    {[0, 0.15, 0.3].map((delay, i) => (
+                      <motion.span
+                        key={i}
+                        animate={{
+                          opacity: [0.3, 1, 0.3],
+                          scale: [1, 1.2, 1],
+                        }}
+                        transition={{
+                          repeat: Infinity,
+                          duration: personality === "dash" ? 0.6 : 1,
+                          delay
+                        }}
+                        className="w-3 h-3 rounded-full"
+                        style={{ backgroundColor: config.accentColor }}
+                      />
+                    ))}
                   </div>
-                  <p className="empty-state-intro" style={{ color: config.accentColor }}>
-                    {config.intro}
-                  </p>
-                  <p className="empty-state-hint">
-                    Pick a topic below or type what you're looking for!
-                  </p>
+                  <span className="text-sm text-black/50 mt-2">Finding books...</span>
                 </div>
-              )}
+              </motion.div>
+            )}
+          </AnimatePresence>
 
-              {/* Book Cards Grid */}
-              {currentBooks.length > 0 && !isLoading && (
-                <div className="book-buddy-cards-grid">
-                  {lastRequest && (
-                    <div className="last-request-label">
-                      You asked for: <span>{lastRequest}</span>
-                    </div>
-                  )}
-                  {currentBooks.map((book, idx) => (
-                    <BookRecCard
-                      key={`${book.id}-${idx}`}
-                      book={book}
-                      personality={personality}
-                      coverUrl={getCoverUrl(book.id)}
-                      onStartReading={() => {
-                        onStartReading(book.id);
-                        setExpanded(false);
-                      }}
-                    />
-                  ))}
-                </div>
-              )}
+          {/* Empty State / Intro */}
+          {showEmptyState && (
+            <div className="book-buddy-empty-state">
+              <div
+                className="empty-state-avatar"
+                style={{ background: `linear-gradient(135deg, ${config.bgColor}80, ${config.bgColor})` }}
+              >
+                <svg className="w-10 h-10 opacity-60" fill="none" stroke={config.accentColor} strokeWidth={1.5} viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                </svg>
+              </div>
+              <p className="empty-state-intro" style={{ color: config.accentColor }}>
+                {config.intro}
+              </p>
+              <p className="empty-state-hint">
+                Pick a topic below or type what you're looking for!
+              </p>
             </div>
+          )}
 
-            {/* Prompt Chips */}
-            <div className="book-buddy-chips">
-              {suggestedReplies.map((reply) => (
-                <button
-                  key={reply.label}
-                  onClick={() => handleChipClick(reply)}
-                  disabled={isLoading}
-                  className="prompt-chip"
-                  style={{
-                    borderColor: `${config.accentColor}40`,
+          {/* Book Cards Grid */}
+          {currentBooks.length > 0 && !isLoading && (
+            <div className="book-buddy-cards-grid">
+              {lastRequest && (
+                <div className="last-request-label">
+                  You asked for: <span>{lastRequest}</span>
+                </div>
+              )}
+              {currentBooks.map((book, idx) => (
+                <BookRecCard
+                  key={`${book.id}-${idx}`}
+                  book={book}
+                  personality={personality}
+                  coverUrl={getCoverUrl(book.id)}
+                  onStartReading={() => {
+                    onStartReading(book.id);
+                    setExpanded(false);
                   }}
-                >
-                  {reply.label}
-                </button>
+                />
               ))}
             </div>
+          )}
+        </div>
 
-            {/* Input Area */}
-            <div className="book-buddy-input">
-              <input
-                ref={inputRef}
-                type="text"
-                value={inputValue}
-                onChange={(e) => setInputValue(e.target.value)}
-                onKeyDown={handleKeyDown}
-                placeholder="What kind of book do you want?"
-                disabled={isLoading}
-                className="flex-1"
-              />
-              <button
-                onClick={() => handleSend()}
-                disabled={!inputValue.trim() || isLoading}
-                style={{ backgroundColor: config.accentColor }}
-              >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
-                </svg>
-              </button>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </>
+        {/* Prompt Chips */}
+        <div className="book-buddy-chips">
+          {suggestedReplies.map((reply) => (
+            <button
+              key={reply.label}
+              onClick={() => handleChipClick(reply)}
+              disabled={isLoading}
+              className="prompt-chip"
+              style={{
+                borderColor: `${config.accentColor}40`,
+              }}
+            >
+              {reply.label}
+            </button>
+          ))}
+        </div>
+
+        {/* Input Area - muse-style */}
+        <div className="muse-input-area">
+          <input
+            ref={inputRef}
+            type="text"
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+            onKeyDown={handleKeyDown}
+            placeholder="What kind of book do you want?"
+            disabled={isLoading}
+            className="muse-input"
+          />
+          <button
+            onClick={() => handleSend()}
+            disabled={!inputValue.trim() || isLoading}
+            className="muse-send-btn"
+            style={{ color: config.accentColor }}
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
   );
 }
 

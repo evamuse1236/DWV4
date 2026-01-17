@@ -4,6 +4,8 @@ import { useMutation, useQuery } from "convex/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { api } from "../../../convex/_generated/api";
 import { useAuth } from "../../hooks/useAuth";
+import { cn } from "../../lib/utils";
+import styles from "./emotions.module.css";
 
 // 4-Quadrant Mood Data with kid-friendly definitions
 const shadesData = {
@@ -196,7 +198,7 @@ export function EmotionCheckInPage() {
   if (todayCheckIn && !isEditing) {
     return (
       <div>
-        <div className="text-center mb-20 fade-in-up">
+        <div className={cn("text-center mb-20", styles['fade-in-up'])}>
           <span className="font-display italic text-[24px] text-[#888]">Already Done</span>
           <h1 className="text-[4rem] mt-[10px]">
             You checked in
@@ -234,7 +236,7 @@ export function EmotionCheckInPage() {
       <div className="relative">
         {/* Header */}
         <div
-          className="text-center mb-8 fade-in-up transition-opacity duration-500"
+          className={cn("text-center mb-8 transition-opacity duration-500", styles['fade-in-up'])}
           style={{ opacity: activeQuadrant ? 0.4 : 1 }}
         >
           <span className="font-display italic text-[24px] text-[#666]">Reflecting</span>
@@ -256,7 +258,7 @@ export function EmotionCheckInPage() {
         )}
 
         {/* Primary Mood Cards (4 Quadrants) */}
-        <div className="mood-deck fade-in-up delay-1">
+        <div className={cn(styles['mood-deck'], styles['fade-in-up'], styles['delay-1'])}>
           {(Object.keys(shadesData) as QuadrantKey[]).map((key) => {
             const quadrant = shadesData[key];
             const isActive = activeQuadrant !== null;
@@ -265,7 +267,7 @@ export function EmotionCheckInPage() {
               <motion.div
                 key={key}
                 onClick={() => handleQuadrantClick(key)}
-                className={`mood-card primary ${isActive ? "active-primary" : ""}`}
+                className={cn(styles['mood-card'], isActive && styles['active-primary'])}
                 style={{ backgroundColor: quadrant.color }}
                 layout
                 transition={{ duration: 0.5, ease: [0.2, 0.8, 0.2, 1] }}
@@ -274,7 +276,7 @@ export function EmotionCheckInPage() {
                   {quadrant.icon}
                 </span>
                 {!isActive && (
-                  <div className="orb-label">
+                  <div className={styles['orb-label']}>
                     {quadrant.label.split(" + ").map((part, i) => (
                       <span key={i}>
                         {part}
@@ -292,7 +294,7 @@ export function EmotionCheckInPage() {
         <AnimatePresence>
           {activeQuadrant && (
             <motion.div
-              className="nuance-canvas visible"
+              className={cn(styles['nuance-canvas'], styles.visible)}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 20 }}
@@ -301,7 +303,7 @@ export function EmotionCheckInPage() {
               {shadesData[activeQuadrant].shades.map((shade, idx) => (
                 <motion.div
                   key={shade.name}
-                  className="shade-tile"
+                  className={styles['shade-tile']}
                   style={{ backgroundColor: shade.color }}
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
@@ -321,7 +323,7 @@ export function EmotionCheckInPage() {
         <AnimatePresence>
           {tooltip && (
             <motion.div
-              className="definition-tooltip visible"
+              className={cn(styles['definition-tooltip'], styles.visible)}
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}

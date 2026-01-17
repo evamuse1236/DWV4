@@ -3,6 +3,8 @@ import { useQuery, useMutation } from "convex/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { api } from "../../../convex/_generated/api";
 import type { Id } from "../../../convex/_generated/dataModel";
+import { cn } from "../../lib/utils";
+import styles from "../../pages/student/sprint.module.css";
 
 // Day labels for the week (Mon-Sun)
 const DAY_LABELS = ["M", "T", "W", "T", "F", "S", "S"];
@@ -213,13 +215,13 @@ export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps)
   return (
     <div className="habit-section fade-in-up delay-2" style={{ marginTop: "80px" }}>
       {/* Section Title */}
-      <h2 className="habit-section-title">
+      <h2 className={styles['habit-section-title']}>
         <i className="ph ph-sparkle" style={{ fontSize: "28px", color: "var(--color-accent)" }} />
         Daily Rituals
       </h2>
 
       {/* Habits Container */}
-      <div className="habits-container">
+      <div className={styles['habits-container']}>
         <AnimatePresence mode="popLayout">
           {habits?.map((habit: any, index: number) => {
             const color = getHabitColor(index);
@@ -235,7 +237,7 @@ export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps)
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
-                className="art-habit-card"
+                className={styles['art-habit-card']}
                 style={{
                   "--card-tint": color.tint,
                   "--tint-color": color.color,
@@ -243,11 +245,11 @@ export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps)
                 } as React.CSSProperties}
               >
                 {/* Habit Header */}
-                <div className="habit-header">
-                  <div className="habit-info">
+                <div className={styles['habit-header']}>
+                  <div className={styles['habit-info']}>
                     {/* Icon (clickable to change) */}
                     <i
-                      className={`ph ${icon} habit-icon-trigger`}
+                      className={cn('ph', icon, styles['habit-icon-trigger'])}
                       onClick={() => setIconPickerOpen(iconPickerOpen === habit._id ? null : habit._id)}
                       style={{
                         fontSize: "24px",
@@ -276,7 +278,7 @@ export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps)
                           }
                         }}
                         autoFocus
-                        className="habit-edit-input"
+                        className={styles['habit-edit-input']}
                         style={{ fontSize: "1.5rem" }}
                       />
                     ) : (
@@ -311,7 +313,7 @@ export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps)
                           }
                         }}
                         autoFocus
-                        className="habit-edit-input"
+                        className={styles['habit-edit-input']}
                         style={{ fontSize: "13px", marginTop: "4px" }}
                       />
                     ) : (
@@ -335,7 +337,7 @@ export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps)
                   </div>
 
                   {/* Streak Badge */}
-                  <div className="habit-streak">
+                  <div className={styles['habit-streak']}>
                     <i className="ph ph-flame" />
                     <span>{streak}</span> Days
                   </div>
@@ -348,13 +350,13 @@ export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps)
                       initial={{ opacity: 0, height: 0 }}
                       animate={{ opacity: 1, height: "auto" }}
                       exit={{ opacity: 0, height: 0 }}
-                      className="icon-picker-inline"
+                      className={styles['icon-picker-inline']}
                     >
-                      <div className="icon-grid-inline">
+                      <div className={styles['icon-grid-inline']}>
                         {AVAILABLE_ICONS.map((iconClass) => (
                           <button
                             key={iconClass}
-                            className={`icon-option ${icon === iconClass ? "selected" : ""}`}
+                            className={cn(styles['icon-option'], icon === iconClass && styles.selected)}
                             onClick={() => handleSelectIcon(habit._id, iconClass)}
                           >
                             <i className={`ph ${iconClass}`} />
@@ -366,7 +368,7 @@ export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps)
                 </AnimatePresence>
 
                 {/* Week Visual (Day Orbs) */}
-                <div className="habit-week-visual">
+                <div className={styles['habit-week-visual']}>
                   {weekDates.map((dayInfo, dayIndex) => {
                     const isCompleted = habit.completions?.some(
                       (c: any) => c.date === dayInfo.date && c.completed
@@ -375,12 +377,12 @@ export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps)
                     return (
                       <div
                         key={dayInfo.date}
-                        className="day-orb-container"
+                        className={styles['day-orb-container']}
                         onClick={() => handleToggleCompletion(habit._id, dayInfo.date)}
                       >
-                        <span className="day-label">{DAY_LABELS[dayIndex]}</span>
+                        <span className={styles['day-label']}>{DAY_LABELS[dayIndex]}</span>
                         <motion.div
-                          className={`day-orb ${isCompleted ? "completed" : ""}`}
+                          className={cn(styles['day-orb'], isCompleted && styles.completed)}
                           whileHover={{ scale: 1.1 }}
                           whileTap={{ scale: 0.95 }}
                           animate={isCompleted ? { scale: [1, 1.15, 1] } : {}}
@@ -399,7 +401,7 @@ export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps)
 
                 {/* Delete button (shows on hover via CSS) */}
                 <button
-                  className="habit-delete-btn"
+                  className={styles['habit-delete-btn']}
                   onClick={() => handleDeleteHabit(habit._id, habit.name)}
                   title="Delete habit"
                 >
@@ -412,13 +414,13 @@ export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps)
 
         {/* Add New Habit Card */}
         <motion.div
-          className="art-habit-card add-new-card"
+          className={cn(styles['art-habit-card'], styles['add-new-card'])}
           onClick={() => setShowNewHabitForm(true)}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
         >
           {showNewHabitForm ? (
-            <div className="new-habit-form" onClick={(e) => e.stopPropagation()}>
+            <div className={styles['new-habit-form']} onClick={(e) => e.stopPropagation()}>
               <input
                 type="text"
                 value={newHabitName}
@@ -432,27 +434,27 @@ export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps)
                     setNewHabitName("");
                   }
                 }}
-                className="new-habit-input"
+                className={styles['new-habit-input']}
               />
-              <div className="new-habit-actions">
+              <div className={styles['new-habit-actions']}>
                 <button
                   onClick={() => {
                     setShowNewHabitForm(false);
                     setNewHabitName("");
                   }}
-                  className="btn-cancel"
+                  className={styles['btn-cancel']}
                 >
                   Cancel
                 </button>
-                <button onClick={handleCreateHabit} className="btn-create" disabled={!newHabitName.trim()}>
+                <button onClick={handleCreateHabit} className={styles['btn-create']} disabled={!newHabitName.trim()}>
                   Create
                 </button>
               </div>
             </div>
           ) : (
-            <div className="add-new-content">
+            <div className={styles['add-new-content']}>
               <i className="ph ph-plus" style={{ fontSize: "32px", color: "var(--color-text-muted)" }} />
-              <div className="add-new-label">New Ritual</div>
+              <div className={styles['add-new-label']}>New Ritual</div>
             </div>
           )}
         </motion.div>
