@@ -1,0 +1,27 @@
+{
+  "content": "```buddy-response\n{\n  \"message\": \"Oh, you're looking to fall into a whole world and never come out! *eyes sparkle* Let me show you the most magical rabbit holes... Since you adored \\\"Unstoppable Us\\\" showing how humans achieved the impossible, you'll love watching Harry do the impossible with everyday magic! After exploring real human history in \\\"Unstoppable Us,\\\" now you can experience it firsthand with Jack and Annie!\",\n  \"suggestedReplies\": [\n    {\"label\": \"More books\", \"fullText\": \"Have you read any other great series?\"},\n    {\"label\": \"Different genre\", \"fullText\": \"Maybe something in a different genre?\"},\n    {\"label\": \"Surprise me\", \"fullText\": \"I'd love to discover a new favorite book!\"}\n  ],\n  \"books\": [\n    {\n      \"id\": \"5\",\n      \"title\": \"Harry Potter\",\n      \"author\": \"J.K. Rowling\",\n      \"teaser\": \"Picture this - a boy who survives the darkest magic discovers he's a wizard, and seven books of wonder await! You'll ride broomsticks, cast spells, and face the most terrifying dark lord through all of Hogwarts.\",\n      \"whyYoullLikeIt\": \"Since you adored \\\"Unstoppable Us\\\" showing how humans achieved the impossible, you'll love watching Harry do the impossible with everyday magic!\"\n    },\n    {\n      \"id\": \"7\",\n      \"title\": \"Magic Tree House\",\n      \"author\": \"Mary Pope Osborne\",\n      \"teaser\": \"Two kids find a tree house that spins them through time - dinosaurs, knights, ancient Egypt, over 60 adventures waiting! It's like having a library card to anywhere in history.\",\n      \"whyYoullLikeIt\": \"After exploring real human history in \\\"Unstoppable Us,\\\" now you can experience it firsthand with Jack and Annie!\"\n    }\n  ]\n}\n```",
+  "provider": "groq+groq-formatter",
+  "usage": {
+    "creative": {
+      "completion_time": 1.009145774,
+      "completion_tokens": 252,
+      "prompt_time": 0.053267805,
+      "prompt_tokens": 630,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "queue_time": 0.069575518,
+      "total_time": 1.062413579,
+      "total_tokens": 882
+    },
+    "formatter": {
+      "completion_time": 0.397430326,
+      "completion_tokens": 404,
+      "prompt_time": 0.052239182,
+      "prompt_tokens": 572,
+      "queue_time": 0.07954498,
+      "total_time": 0.449669508,
+      "total_tokens": 976
+    }
+  }
+}

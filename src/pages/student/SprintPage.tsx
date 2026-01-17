@@ -112,6 +112,14 @@ export function SprintPage() {
       : "skip"
   );
 
+  // Query for previous sprint goals (for AI import feature)
+  const previousSprintGoals = useQuery(
+    api.goals.getPreviousSprintGoals,
+    activeSprint && user
+      ? { userId: user._id as any, currentSprintId: activeSprint._id }
+      : "skip"
+  );
+
   // Mutations
   const createGoal = useMutation(api.goals.create);
   const updateGoal = useMutation(api.goals.update);
@@ -121,6 +129,8 @@ export function SprintPage() {
   const addActionItem = useMutation(api.goals.addActionItem);
   const removeGoal = useMutation(api.goals.remove);
   const removeActionItem = useMutation(api.goals.removeActionItem);
+  const duplicateGoal = useMutation(api.goals.duplicate);
+  const importGoal = useMutation(api.goals.importGoal);
 
   // Handle AI-generated goal with tasks (called from Muse)
   const handleAIGoalComplete = async (
@@ -148,6 +158,34 @@ export function SprintPage() {
     }
 
     setMuseExpanded(false);
+  };
+
+  // Handle AI duplicate goal action
+  const handleAIDuplicateGoal = async (goalId: string) => {
+    if (!activeSprint) return;
+    await duplicateGoal({
+      goalId: goalId as any,
+      targetSprintId: activeSprint._id,
+      includeActionItems: true,
+    });
+  };
+
+  // Handle AI import goal action
+  const handleAIImportGoal = async (goalId: string) => {
+    if (!activeSprint) return;
+    await importGoal({
+      goalId: goalId as any,
+      targetSprintId: activeSprint._id,
+      includeActionItems: true,
+    });
+  };
+
+  // Handle AI edit goal action
+  const handleAIEditGoal = async (goalId: string, updates: Partial<{ title: string; specific: string; measurable: string; achievable: string; relevant: string; timeBound: string }>) => {
+    await updateGoal({
+      goalId: goalId as any,
+      ...updates,
+    });
   };
 
   const handleUpdateGoal = async (goalData: any) => {
@@ -921,6 +959,11 @@ export function SprintPage() {
         onClose={() => setMuseExpanded(false)}
         sprintDaysRemaining={sprintDaysLeft}
         onGoalComplete={handleAIGoalComplete}
+        existingGoals={goals?.map((g: any) => ({ id: g._id, title: g.title })) || []}
+        previousSprintGoals={previousSprintGoals?.map((g: any) => ({ id: g._id, title: g.title, sprintName: g.sprintName })) || []}
+        onDuplicateGoal={handleAIDuplicateGoal}
+        onImportGoal={handleAIImportGoal}
+        onEditGoal={handleAIEditGoal}
       />
 
       {/* Edit Goal Modal */}
@@ -1013,18 +1056,30 @@ const AI_MODELS = [
   { id: "tngtech/deepseek-r1t2-chimera:free", name: "DeepSeek" },
 ];
 
+type AIPersona = "muse" | "captain";
+
 function TheMuse({
   expanded,
   onToggle,
   onClose,
   sprintDaysRemaining,
   onGoalComplete,
+  existingGoals,
+  previousSprintGoals,
+  onDuplicateGoal,
+  onImportGoal,
+  onEditGoal,
 }: {
   expanded: boolean;
   onToggle: () => void;
   onClose: () => void;
   sprintDaysRemaining: number;
   onGoalComplete: (goal: ExtractedGoal, tasks: SuggestedTask[]) => void;
+  existingGoals?: { id: string; title: string }[];
+  previousSprintGoals?: { id: string; title: string; sprintName: string }[];
+  onDuplicateGoal?: (goalId: string) => Promise<void>;
+  onImportGoal?: (goalId: string) => Promise<void>;
+  onEditGoal?: (goalId: string, updates: Partial<ExtractedGoal>) => Promise<void>;
 }) {
   const [messages, setMessages] = useState<MuseMessage[]>([]);
   const [inputValue, setInputValue] = useState("");
@@ -1033,6 +1088,7 @@ function TheMuse({
   const [extractedGoal, setExtractedGoal] = useState<ExtractedGoal | null>(null);
   const [tasks, setTasks] = useState<SuggestedTask[]>([]);
   const [phase, setPhase] = useState<"chatting" | "reviewing">("chatting");
+  const [persona, setPersona] = useState<AIPersona>("muse");
 
   const chatAction = useAction(api.ai.chat);
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -1043,18 +1099,32 @@ function TheMuse({
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
-  // Initial greeting when expanded
+  // Initial greeting when expanded or persona changes
   useEffect(() => {
     if (expanded && messages.length === 0) {
+      const greeting = persona === "captain"
+        ? `What do you want to accomplish? Quick: (1) the goal, (2) how you'll know it's done.`
+        : `Hi! I'm here to help you set a goal for your sprint. What would you like to accomplish in the next ${sprintDaysRemaining} days?`;
       setMessages([
         {
           id: "initial",
           role: "assistant",
-          content: `Hi! I'm here to help you set a goal for your sprint. What would you like to accomplish in the next ${sprintDaysRemaining} days?`,
+          content: greeting,
         },
       ]);
     }
-  }, [expanded, sprintDaysRemaining]);
+  }, [expanded, sprintDaysRemaining, persona]);
+
+  // Reset conversation when persona changes
+  const handlePersonaChange = (newPersona: AIPersona) => {
+    if (newPersona !== persona) {
+      setPersona(newPersona);
+      setMessages([]);
+      setExtractedGoal(null);
+      setTasks([]);
+      setPhase("chatting");
+    }
+  };
 
   // Focus input when expanded
   useEffect(() => {
@@ -1086,26 +1156,77 @@ function TheMuse({
         messages: apiMessages,
         sprintDaysRemaining,
         model: selectedModel,
+        persona,
+        existingGoals,
+        previousSprintGoals,
       });
 
-      // Check if AI returned structured goal data
-      const goalMatch = response.content.match(/```goal-ready\n([\s\S]*?)\n```/);
-
-      if (goalMatch) {
+      // Helper to parse AI action blocks and extract text before them
+      function parseActionBlock(blockType: string): { data: any; textBefore: string } | null {
+        const match = response.content.match(new RegExp(`\`\`\`${blockType}\\n([\\s\\S]*?)\\n\`\`\``));
+        if (!match) return null;
         try {
-          const data = JSON.parse(goalMatch[1]);
-          setExtractedGoal(data.goal);
-          setTasks(data.suggestedTasks || []);
-          setPhase("reviewing");
-          const textBeforeJson = response.content.split("```goal-ready")[0].trim();
-          setMessages((prev) => [
-            ...prev,
-            { id: `ai-${Date.now()}`, role: "assistant", content: textBeforeJson || "Here's your goal!" },
-          ]);
-          return;
+          return {
+            data: JSON.parse(match[1]),
+            textBefore: response.content.split(`\`\`\`${blockType}`)[0].trim(),
+          };
         } catch {
-          // JSON parse failed, continue as normal chat
+          return null;
         }
+      }
+
+      // Helper to add AI message
+      function addAIMessage(content: string) {
+        setMessages((prev) => [...prev, { id: `ai-${Date.now()}`, role: "assistant", content }]);
+      }
+
+      // Handle goal creation
+      const goalAction = parseActionBlock("goal-ready");
+      if (goalAction) {
+        setExtractedGoal(goalAction.data.goal);
+        setTasks(goalAction.data.suggestedTasks || []);
+        setPhase("reviewing");
+        addAIMessage(goalAction.textBefore || "Here's your goal!");
+        return;
+      }
+
+      // Handle duplicate goal
+      const duplicateAction = parseActionBlock("duplicate-goal");
+      if (duplicateAction && onDuplicateGoal) {
+        addAIMessage(duplicateAction.textBefore || "Duplicating your goal...");
+        try {
+          await onDuplicateGoal(duplicateAction.data.sourceGoalId);
+          addAIMessage("Done! Your goal has been duplicated.");
+        } catch (e) {
+          console.error("Duplicate failed:", e);
+        }
+        return;
+      }
+
+      // Handle import goal
+      const importAction = parseActionBlock("import-goal");
+      if (importAction && onImportGoal) {
+        addAIMessage(importAction.textBefore || "Importing your goal...");
+        try {
+          await onImportGoal(importAction.data.sourceGoalId);
+          addAIMessage("Done! Your goal has been imported from the previous sprint.");
+        } catch (e) {
+          console.error("Import failed:", e);
+        }
+        return;
+      }
+
+      // Handle edit goal
+      const editAction = parseActionBlock("edit-goal");
+      if (editAction && onEditGoal) {
+        addAIMessage(editAction.textBefore || "Updating your goal...");
+        try {
+          await onEditGoal(editAction.data.goalId, editAction.data.updates);
+          addAIMessage("Done! Your goal has been updated.");
+        } catch (e) {
+          console.error("Edit failed:", e);
+        }
+        return;
       }
 
       setMessages((prev) => [
@@ -1167,9 +1288,27 @@ function TheMuse({
             <span style={{ fontFamily: "var(--font-body)", fontSize: "10px", textTransform: "uppercase", letterSpacing: "0.2em", opacity: 0.5 }}>
               AI Companion
             </span>
-            <h3 style={{ fontFamily: "var(--font-display)", fontSize: "24px", fontStyle: "italic", margin: 0, lineHeight: 1 }}>
-              The Muse
-            </h3>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+              <h3 style={{ fontFamily: "var(--font-display)", fontSize: "24px", fontStyle: "italic", margin: 0, lineHeight: 1 }}>
+                {persona === "captain" ? "The Captain" : "The Muse"}
+              </h3>
+              <div className="persona-toggle">
+                <button
+                  className={`persona-btn ${persona === "muse" ? "active" : ""}`}
+                  onClick={() => handlePersonaChange("muse")}
+                  title="Friendly, conversational (3-5 turns)"
+                >
+                  Muse
+                </button>
+                <button
+                  className={`persona-btn ${persona === "captain" ? "active" : ""}`}
+                  onClick={() => handlePersonaChange("captain")}
+                  title="Fast, direct (2-3 turns)"
+                >
+                  Captain
+                </button>
+              </div>
+            </div>
           </div>
           <button
             onClick={onClose}

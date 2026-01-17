@@ -1,0 +1,24 @@
+{
+  "content": "```buddy-response\n{\n  \"message\": \"Blimey, yeh want adventure? I got just the thing! There's nothin' like a good adventure book ter get yer heart pumpin', eh?\",\n  \"suggestedReplies\": [\n    {\"label\": \"More books\", \"fullText\": \"More books, please!\"},\n    {\"label\": \"Different genre\", \"fullText\": \"Something different, maybe?\"},\n    {\"label\": \"Surprise me\", \"fullText\": \"Surprise me with a new book!\"}\n  ],\n  \"books\": [\n    {\n      \"id\": \"4\",\n      \"title\": \"Percy Jackson\",\n      \"author\": \"Rick Riordan\",\n      \"teaser\": \"This boy discovers he's actually a Greek demigod - son of Poseidon himself! Next thing yeh know, he's battlin' minotaurs and travelin' to the Underworld!\",\n      \"whyYoullLikeIt\": \"After readin' about real human history in 'Unstoppable Us,' yeh might enjoy how Percy Jackson brings ancient myths ter life in the modern world!\"\n    },\n    {\n      \"id\": \"7\",\n      \"title\": \"Magic Tree House\",\n      \"author\": \"Mary Pope Osborne\",\n      \"teaser\": \"Jack and Annie find a magic tree house that takes 'em anywhere in time! One minute they're with dinosaurs, next they're in ancient Egypt!\",\n      \"whyYoullLikeIt\": \"Since yeh enjoyed learnin' about human history, these books let yeh actually visit different times - like 'Unstoppable Us' but with time travel!\"\n    }\n  ]\n}\n```",
+  "provider": "groq+groq-formatter",
+  "usage": {
+    "creative": {
+      "completion_time": 0.935764746,
+      "completion_tokens": 273,
+      "prompt_time": 0.099639574,
+      "prompt_tokens": 641,
+      "queue_time": 0.073598493,
+      "total_time": 1.03540432,
+      "total_tokens": 914
+    },
+    "formatter": {
+      "completion_time": 0.326148138,
+      "completion_tokens": 351,
+      "prompt_time": 0.039067124,
+      "prompt_tokens": 597,
+      "queue_time": 0.076718605,
+      "total_time": 0.365215262,
+      "total_tokens": 948
+    }
+  }
+}

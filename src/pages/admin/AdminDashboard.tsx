@@ -62,30 +62,43 @@ export function AdminDashboard() {
   const objectives = useQuery(api.objectives.getAll);
 
   // Setup checklist: detect what's missing for a functioning learning cycle
+  const setupDataLoaded =
+    students !== undefined && activeSprint !== undefined && objectives !== undefined;
   const setupChecklist = {
     hasStudents: (students?.length ?? 0) > 0,
     hasActiveSprint: activeSprint !== null && activeSprint !== undefined,
     hasObjectives: (objectives?.length ?? 0) > 0,
   };
-  const isFullySetup = setupChecklist.hasStudents && setupChecklist.hasActiveSprint && setupChecklist.hasObjectives;
-  const needsSetup = students !== undefined && activeSprint !== undefined && objectives !== undefined && !isFullySetup;
+  const isFullySetup =
+    setupChecklist.hasStudents &&
+    setupChecklist.hasActiveSprint &&
+    setupChecklist.hasObjectives;
+  const needsSetup = setupDataLoaded && !isFullySetup;
 
   // Mutations
   const updateStatus = useMutation(api.objectives.updateStatus);
   const approvePresentationRequest = useMutation(api.books.approvePresentationRequest);
 
   const handleApproveViva = async (studentObjectiveId: string): Promise<void> => {
-    await updateStatus({
-      studentObjectiveId: studentObjectiveId as any,
-      status: "mastered",
-    });
+    try {
+      await updateStatus({
+        studentObjectiveId: studentObjectiveId as any,
+        status: "mastered",
+      });
+    } catch (err) {
+      console.error("Failed to approve viva:", err);
+    }
   };
 
   const handleApprovePresentation = async (studentBookId: string): Promise<void> => {
-    await approvePresentationRequest({
-      studentBookId: studentBookId as any,
-      approved: true,
-    });
+    try {
+      await approvePresentationRequest({
+        studentBookId: studentBookId as any,
+        approved: true,
+      });
+    } catch (err) {
+      console.error("Failed to approve presentation:", err);
+    }
   };
 
   const sprintDaysLeft = activeSprint
@@ -105,6 +118,27 @@ export function AdminDashboard() {
             : "Here's what's happening with your students today."}
         </p>
       </div>
+
+      {/* Setup complete banner */}
+      {setupDataLoaded && isFullySetup && (
+        <Card className="border-green-200 bg-green-50 dark:bg-green-950/30">
+          <CardContent className="pt-6">
+            <div className="flex items-center justify-between gap-4">
+              <p className="text-green-700 dark:text-green-400 font-medium">
+                You're all set! Your learning cycle is ready to run.
+              </p>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => navigate("/admin/sprints")}
+              >
+                Manage Sprint
+                <ChevronRight className="ml-1 h-4 w-4" />
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+      )}
 
       {/* Setup Checklist - shows when system needs configuration */}
       {needsSetup && (
@@ -234,14 +268,6 @@ export function AdminDashboard() {
                 )}
               </div>
             </div>
-
-            {isFullySetup && (
-              <div className="mt-4 p-3 rounded-lg bg-green-100 dark:bg-green-950/50 text-center">
-                <p className="text-green-700 dark:text-green-400 font-medium">
-                  You're all set! Your learning cycle is ready to run.
-                </p>
-              </div>
-            )}
           </CardContent>
         </Card>
       )}

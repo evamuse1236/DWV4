@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { api } from "../../../convex/_generated/api";
 import { useAuth } from "../../hooks/useAuth";
 import { getBookBadgeClass, type BookStatus } from "../../lib/status-utils";
+import BookBuddy from "../../components/reading/BookBuddy";
 
 type TabType = "library" | "reading" | "finished";
 
@@ -137,6 +138,12 @@ export function ReadingPage() {
   // Get reading stats
   const readingStats = useQuery(
     api.books.getReadingStats,
+    user ? { userId: user._id as any } : "skip"
+  );
+
+  // Get reading history for Book Buddy AI
+  const readingHistory = useQuery(
+    api.books.getReadingHistory,
     user ? { userId: user._id as any } : "skip"
   );
 
@@ -914,6 +921,29 @@ export function ReadingPage() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* Book Buddy AI Chat */}
+      {allBooks && (
+        <BookBuddy
+          readingHistory={readingHistory || []}
+          availableBooks={
+            allBooks
+              .filter((book: any) => !myBooksMap.has(book._id))
+              .map((book: any) => ({
+                id: book._id,
+                title: book.title,
+                author: book.author,
+                genre: book.genre,
+                description: book.description,
+                coverImageUrl: book.coverImageUrl,
+              }))
+          }
+          onStartReading={(bookId) => {
+            handleStartReading(bookId);
+            setActiveTab("reading");
+          }}
+        />
+      )}
     </div>
   );
 }

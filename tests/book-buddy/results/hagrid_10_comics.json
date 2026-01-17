@@ -1,0 +1,27 @@
+{
+  "content": "```buddy-response\n{\n  \"message\": \"Cor, yeh want comics with pictures? Blimey, do I have the PERFECT ones for yeh! These'll have yeh laughin' so hard, yer ribs'll hurt!\",\n  \"suggestedReplies\": [\n    {\"label\": \"Got more comics?\", \"fullText\": \"Got more comics?\"},\n    {\"label\": \"What about dragon books?\", \"fullText\": \"What about dragon books?\"},\n    {\"label\": \"Tell me 'bout Percy Jackson\", \"fullText\": \"Tell me 'bout Percy Jackson\"},\n    {\"label\": \"I'm done reading\", \"fullText\": \"I'm done reading\"}\n  ],\n  \"books\": [\n    {\n      \"id\": \"2\",\n      \"title\": \"Dog Man\",\n      \"author\": \"Dav Pilkey\",\n      \"teaser\": \"He's got a dog's head and a cop's body - and he's fightin' crime with slobbery kisses! The evil cat Petey's always cookin' up schemes, but Dog Man's tail-waggin' heroics save the day!\",\n      \"whyYoullLikeIt\": \"Since yeh loved learnin' about real stuff in 'Unstoppable Us,' this'll tickle yer brain with pure fun!\"\n    },\n    {\n      \"id\": \"8\",\n      \"title\": \"Captain Underpants\",\n      \"author\": \"Dav Pilkey\",\n      \"teaser\": \"George and Harold hypnotize their grumpy principal into thinkin' he's a wedgie-powered superhero! Watch him battle evil villains in nothin' but his underpants - tra-la-laaa!\",\n      \"whyYoullLikeIt\": \"It's packed with flip-o-rama pages so yeh can see the action jump right off the paper!\"\n    }\n  ]\n}\n```",
+  "provider": "groq+groq-formatter",
+  "usage": {
+    "creative": {
+      "completion_time": 1.062655871,
+      "completion_tokens": 283,
+      "prompt_time": 0.048190522,
+      "prompt_tokens": 645,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "queue_time": 0.088589257,
+      "total_time": 1.110846393,
+      "total_tokens": 928
+    },
+    "formatter": {
+      "completion_time": 0.344446442,
+      "completion_tokens": 387,
+      "prompt_time": 0.039771507,
+      "prompt_tokens": 606,
+      "queue_time": 0.077727486,
+      "total_time": 0.384217949,
+      "total_tokens": 993
+    }
+  }
+}

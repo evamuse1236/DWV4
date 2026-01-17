@@ -67,6 +67,96 @@ const emptyBookForm = {
   pageCount: "",
 };
 
+type BookFormState = typeof emptyBookForm;
+
+// Extracted outside component to prevent re-creation on every render
+function BookFormFields({
+  bookForm,
+  setBookForm,
+  error,
+}: {
+  bookForm: BookFormState;
+  setBookForm: (form: BookFormState) => void;
+  error: string | null;
+}) {
+  return (
+    <div className="space-y-4 py-4 max-h-[60vh] overflow-y-auto">
+      {error && (
+        <div className="p-3 text-sm text-destructive bg-destructive/10 rounded-md">
+          {error}
+        </div>
+      )}
+      <div className="grid grid-cols-2 gap-4">
+        <div className="space-y-2 col-span-2">
+          <label className="text-sm font-medium">Title *</label>
+          <Input
+            placeholder="Book title"
+            value={bookForm.title}
+            onChange={(e) => setBookForm({ ...bookForm, title: e.target.value })}
+          />
+        </div>
+        <div className="space-y-2 col-span-2">
+          <label className="text-sm font-medium">Author *</label>
+          <Input
+            placeholder="Author name"
+            value={bookForm.author}
+            onChange={(e) => setBookForm({ ...bookForm, author: e.target.value })}
+          />
+        </div>
+        <div className="space-y-2">
+          <label className="text-sm font-medium">Genre</label>
+          <Input
+            placeholder="e.g., Fiction, Science"
+            value={bookForm.genre}
+            onChange={(e) => setBookForm({ ...bookForm, genre: e.target.value })}
+          />
+        </div>
+        <div className="space-y-2">
+          <label className="text-sm font-medium">Grade Level</label>
+          <Input
+            placeholder="e.g., 3-5, Middle School"
+            value={bookForm.gradeLevel}
+            onChange={(e) => setBookForm({ ...bookForm, gradeLevel: e.target.value })}
+          />
+        </div>
+        <div className="space-y-2 col-span-2">
+          <label className="text-sm font-medium">Description</label>
+          <Input
+            placeholder="Brief description of the book"
+            value={bookForm.description}
+            onChange={(e) => setBookForm({ ...bookForm, description: e.target.value })}
+          />
+        </div>
+        <div className="space-y-2 col-span-2">
+          <label className="text-sm font-medium">Cover Image URL</label>
+          <Input
+            placeholder="https://..."
+            value={bookForm.coverImageUrl}
+            onChange={(e) => setBookForm({ ...bookForm, coverImageUrl: e.target.value })}
+          />
+        </div>
+        <div className="space-y-2 col-span-2">
+          <label className="text-sm font-medium">Reading URL</label>
+          <Input
+            placeholder="Link to read the book online"
+            value={bookForm.readingUrl}
+            onChange={(e) => setBookForm({ ...bookForm, readingUrl: e.target.value })}
+          />
+        </div>
+        <div className="space-y-2">
+          <label className="text-sm font-medium">Page Count</label>
+          <Input
+            type="number"
+            placeholder="e.g., 250"
+            value={bookForm.pageCount}
+            onChange={(e) => setBookForm({ ...bookForm, pageCount: e.target.value })}
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
 /**
  * Books Management Page
  * Add, edit, and delete books in the reading library
@@ -196,84 +286,6 @@ export function BooksPage() {
     }
   };
 
-  // Book form fields component (reused for add/edit)
-  const BookFormFields = () => (
-    <div className="space-y-4 py-4 max-h-[60vh] overflow-y-auto">
-      {error && (
-        <div className="p-3 text-sm text-destructive bg-destructive/10 rounded-md">
-          {error}
-        </div>
-      )}
-      <div className="grid grid-cols-2 gap-4">
-        <div className="space-y-2 col-span-2">
-          <label className="text-sm font-medium">Title *</label>
-          <Input
-            placeholder="Book title"
-            value={bookForm.title}
-            onChange={(e) => setBookForm({ ...bookForm, title: e.target.value })}
-          />
-        </div>
-        <div className="space-y-2 col-span-2">
-          <label className="text-sm font-medium">Author *</label>
-          <Input
-            placeholder="Author name"
-            value={bookForm.author}
-            onChange={(e) => setBookForm({ ...bookForm, author: e.target.value })}
-          />
-        </div>
-        <div className="space-y-2">
-          <label className="text-sm font-medium">Genre</label>
-          <Input
-            placeholder="e.g., Fiction, Science"
-            value={bookForm.genre}
-            onChange={(e) => setBookForm({ ...bookForm, genre: e.target.value })}
-          />
-        </div>
-        <div className="space-y-2">
-          <label className="text-sm font-medium">Grade Level</label>
-          <Input
-            placeholder="e.g., 3-5, Middle School"
-            value={bookForm.gradeLevel}
-            onChange={(e) => setBookForm({ ...bookForm, gradeLevel: e.target.value })}
-          />
-        </div>
-        <div className="space-y-2 col-span-2">
-          <label className="text-sm font-medium">Description</label>
-          <Input
-            placeholder="Brief description of the book"
-            value={bookForm.description}
-            onChange={(e) => setBookForm({ ...bookForm, description: e.target.value })}
-          />
-        </div>
-        <div className="space-y-2 col-span-2">
-          <label className="text-sm font-medium">Cover Image URL</label>
-          <Input
-            placeholder="https://..."
-            value={bookForm.coverImageUrl}
-            onChange={(e) => setBookForm({ ...bookForm, coverImageUrl: e.target.value })}
-          />
-        </div>
-        <div className="space-y-2 col-span-2">
-          <label className="text-sm font-medium">Reading URL</label>
-          <Input
-            placeholder="Link to read the book online"
-            value={bookForm.readingUrl}
-            onChange={(e) => setBookForm({ ...bookForm, readingUrl: e.target.value })}
-          />
-        </div>
-        <div className="space-y-2">
-          <label className="text-sm font-medium">Page Count</label>
-          <Input
-            type="number"
-            placeholder="e.g., 250"
-            value={bookForm.pageCount}
-            onChange={(e) => setBookForm({ ...bookForm, pageCount: e.target.value })}
-          />
-        </div>
-      </div>
-    </div>
-  );
-
   return (
     <div className="space-y-6">
       {/* Header */}
@@ -301,7 +313,7 @@ export function BooksPage() {
                 Add a book to the reading library for students to explore.
               </DialogDescription>
             </DialogHeader>
-            <BookFormFields />
+            <BookFormFields bookForm={bookForm} setBookForm={setBookForm} error={error} />
             <DialogFooter>
               <Button variant="outline" onClick={() => setIsAddDialogOpen(false)}>
                 Cancel
@@ -333,7 +345,7 @@ export function BooksPage() {
               Update the book details.
             </DialogDescription>
           </DialogHeader>
-          <BookFormFields />
+          <BookFormFields bookForm={bookForm} setBookForm={setBookForm} error={error} />
           <DialogFooter>
             <Button variant="outline" onClick={() => setIsEditDialogOpen(false)}>
               Cancel

@@ -1,0 +1,27 @@
+{
+  "content": "```buddy-response\n{\n  \"message\": \"*eyes sparkle like moonlight on water* Oh, this one's like stepping into a dream... Picture this!\",\n  \"suggestedReplies\": [\n    {\"label\": \"More books\", \"fullText\": \"More books like this one!\"},\n    {\"label\": \"Different genre\", \"fullText\": \"Something different from the usual!\"},\n    {\"label\": \"Surprise me\", \"fullText\": \"Tell me about something new!\"}\n  ],\n  \"books\": [\n    {\n      \"id\": \"4\",\n      \"title\": \"Percy Jackson\",\n      \"author\": \"Rick Riordan\",\n      \"teaser\": \"A boy discovers he's actually the son of a Greek god and gets chase by monsters straight out of mythology! He ends up at a summer camp where everyone has magical powers and epic quests await.\",\n      \"whyYoullLikeIt\": \"Since you adored learning about real history in 'Unstoppable Us,' you'll gobble up how Rick Riordan weaves actual Greek myths into this rollercoaster adventure!\"\n    }\n  ]\n}\n```",
+  "provider": "groq+groq-formatter",
+  "usage": {
+    "creative": {
+      "completion_time": 0.567024604,
+      "completion_tokens": 148,
+      "prompt_time": 0.022989625,
+      "prompt_tokens": 628,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "queue_time": 0.07071019,
+      "total_time": 0.590014229,
+      "total_tokens": 776
+    },
+    "formatter": {
+      "completion_time": 0.238217934,
+      "completion_tokens": 234,
+      "prompt_time": 0.03020295,
+      "prompt_tokens": 471,
+      "queue_time": 0.03634428,
+      "total_time": 0.268420884,
+      "total_tokens": 705
+    }
+  }
+}

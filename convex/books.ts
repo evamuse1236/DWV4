@@ -42,6 +42,33 @@ export const getStudentBooks = query({
   },
 });
 
+// Get reading history for AI context (Book Buddy)
+export const getReadingHistory = query({
+  args: { userId: v.id("users") },
+  handler: async (ctx, args) => {
+    const studentBooks = await ctx.db
+      .query("studentBooks")
+      .filter((q) => q.eq(q.field("userId"), args.userId))
+      .collect();
+
+    // Fetch book details and format for AI
+    const history = await Promise.all(
+      studentBooks.map(async (sb) => {
+        const book = await ctx.db.get(sb.bookId);
+        return {
+          title: book?.title || "Unknown",
+          author: book?.author || "Unknown",
+          genre: book?.genre,
+          rating: sb.rating,
+          status: sb.status,
+        };
+      })
+    );
+
+    return history;
+  },
+});
+
 // Get currently reading book
 export const getCurrentlyReading = query({
   args: { userId: v.id("users") },

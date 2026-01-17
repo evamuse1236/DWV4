@@ -36,6 +36,7 @@ import {
   ChevronUp,
   Cookie,
   Mic,
+  FolderKanban,
 } from "lucide-react";
 
 // Admin navigation items
@@ -43,6 +44,7 @@ const adminNavItems = [
   { path: "/admin", label: "Dashboard", icon: Home },
   { path: "/admin/students", label: "Students", icon: Users },
   { path: "/admin/sprints", label: "Sprints", icon: Calendar },
+  { path: "/admin/projects", label: "Projects", icon: FolderKanban },
   { path: "/admin/objectives", label: "Objectives", icon: Target },
   { path: "/admin/viva", label: "Viva Queue", icon: CheckCircle },
   { path: "/admin/presentations", label: "Presentations", icon: Mic },

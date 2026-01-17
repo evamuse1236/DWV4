@@ -1,0 +1,27 @@
+{
+  "content": "```buddy-response\n{\n  \"message\": \"*eyes sparkle like starlight on pages* Oh, quick reads are like capturing fireflies - here and gone, but magic while they last!\",\n  \"suggestedReplies\": [\n    {\"label\": \"More super quick ones!\", \"fullText\": \"More super quick ones!\"},\n    {\"label\": \"Graphic novels only\", \"fullText\": \"Graphic novels only\"},\n    {\"label\": \"Take me somewhere magical\", \"fullText\": \"Take me somewhere magical\"}\n  ],\n  \"books\": [\n    {\n      \"id\": \"8\",\n      \"title\": \"Captain Underpants\",\n      \"author\": \"Dav Pilkey\",\n      \"teaser\": \"Imagine turning your grumpy principal into a superhero in underwear! Two best friends draw the most ridiculous comics that actually come to life!\",\n      \"whyYoullLikeIt\": \"After exploring real human history in Unstoppable Us, these silly adventures will feel like diving into bubblegum-flavored clouds!\"\n    },\n    {\n      \"id\": \"2\",\n      \"title\": \"Dog Man\",\n      \"author\": \"Dav Pilkey\",\n      \"teaser\": \"Half dog, half police officer - all heart! This heroic pup fights crime one tail-wag at a time with pages that fly by faster than a frisbee!\",\n      \"whyYoullLikeIt\": \"Perfect bite-sized chapters when you want big adventure without a big time commitment!\"\n    }\n  ]\n}\n```",
+  "provider": "groq+groq-formatter",
+  "usage": {
+    "creative": {
+      "completion_time": 0.881219682,
+      "completion_tokens": 216,
+      "prompt_time": 0.017351867,
+      "prompt_tokens": 630,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "queue_time": 0.070534658,
+      "total_time": 0.898571549,
+      "total_tokens": 846
+    },
+    "formatter": {
+      "completion_time": 0.277629115,
+      "completion_tokens": 308,
+      "prompt_time": 0.033120453,
+      "prompt_tokens": 536,
+      "queue_time": 0.036567145,
+      "total_time": 0.310749568,
+      "total_tokens": 844
+    }
+  }
+}

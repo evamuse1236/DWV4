@@ -254,3 +254,154 @@ export const getActionItemsByDay = query({
     return itemsWithGoals;
   },
 });
+
+/**
+ * Get goals from the previous sprint (for import feature)
+ */
+export const getPreviousSprintGoals = query({
+  args: {
+    userId: v.id("users"),
+    currentSprintId: v.id("sprints"),
+  },
+  handler: async (ctx, args) => {
+    // Get all sprints to find the previous one
+    const sprints = await ctx.db
+      .query("sprints")
+      .order("desc")
+      .collect();
+
+    // Find the current sprint's index
+    const currentIndex = sprints.findIndex((s) => s._id === args.currentSprintId);
+
+    // Get the previous sprint (if exists)
+    const previousSprint = currentIndex >= 0 && currentIndex < sprints.length - 1
+      ? sprints[currentIndex + 1]
+      : null;
+
+    if (!previousSprint) {
+      return [];
+    }
+
+    // Get goals from the previous sprint
+    const goals = await ctx.db
+      .query("goals")
+      .withIndex("by_user_sprint", (q) =>
+        q.eq("userId", args.userId).eq("sprintId", previousSprint._id)
+      )
+      .collect();
+
+    return goals.map((goal) => ({
+      _id: goal._id,
+      title: goal.title,
+      specific: goal.specific,
+      measurable: goal.measurable,
+      achievable: goal.achievable,
+      relevant: goal.relevant,
+      timeBound: goal.timeBound,
+      sprintName: previousSprint.name,
+    }));
+  },
+});
+
+/**
+ * Copy action items from one goal to another (resets completion status)
+ */
+async function copyActionItems(
+  ctx: { db: any },
+  sourceGoalId: any,
+  targetGoalId: any
+): Promise<void> {
+  const actionItems = await ctx.db
+    .query("actionItems")
+    .withIndex("by_goal", (q: any) => q.eq("goalId", sourceGoalId))
+    .collect();
+
+  for (const item of actionItems) {
+    await ctx.db.insert("actionItems", {
+      goalId: targetGoalId,
+      userId: item.userId,
+      title: item.title,
+      description: item.description,
+      weekNumber: item.weekNumber,
+      dayOfWeek: item.dayOfWeek,
+      isCompleted: false,
+      order: item.order,
+    });
+  }
+}
+
+/**
+ * Duplicate an existing goal (optionally with action items)
+ */
+export const duplicate = mutation({
+  args: {
+    goalId: v.id("goals"),
+    targetSprintId: v.optional(v.id("sprints")),
+    includeActionItems: v.optional(v.boolean()),
+  },
+  handler: async (ctx, args) => {
+    const sourceGoal = await ctx.db.get(args.goalId);
+    if (!sourceGoal) {
+      return { success: false, error: "Goal not found" };
+    }
+
+    const now = Date.now();
+    const newGoalId = await ctx.db.insert("goals", {
+      userId: sourceGoal.userId,
+      sprintId: args.targetSprintId || sourceGoal.sprintId,
+      title: `${sourceGoal.title} (copy)`,
+      specific: sourceGoal.specific,
+      measurable: sourceGoal.measurable,
+      achievable: sourceGoal.achievable,
+      relevant: sourceGoal.relevant,
+      timeBound: sourceGoal.timeBound,
+      status: "not_started",
+      createdAt: now,
+      updatedAt: now,
+    });
+
+    if (args.includeActionItems !== false) {
+      await copyActionItems(ctx, args.goalId, newGoalId);
+    }
+
+    return { success: true, goalId: newGoalId };
+  },
+});
+
+/**
+ * Import a goal from a previous sprint to the current sprint
+ */
+export const importGoal = mutation({
+  args: {
+    goalId: v.id("goals"),
+    targetSprintId: v.id("sprints"),
+    includeActionItems: v.optional(v.boolean()),
+  },
+  handler: async (ctx, args) => {
+    const sourceGoal = await ctx.db.get(args.goalId);
+    if (!sourceGoal) {
+      return { success: false, error: "Goal not found" };
+    }
+
+    const now = Date.now();
+    const newGoalId = await ctx.db.insert("goals", {
+      userId: sourceGoal.userId,
+      sprintId: args.targetSprintId,
+      title: sourceGoal.title,
+      specific: sourceGoal.specific,
+      measurable: sourceGoal.measurable,
+      achievable: sourceGoal.achievable,
+      relevant: sourceGoal.relevant,
+      timeBound: sourceGoal.timeBound,
+      status: "not_started",
+      createdAt: now,
+      updatedAt: now,
+    });
+
+    if (args.includeActionItems !== false) {
+      await copyActionItems(ctx, args.goalId, newGoalId);
+    }
+
+    return { success: true, goalId: newGoalId };
+  },
+});

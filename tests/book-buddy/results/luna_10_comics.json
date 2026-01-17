@@ -1,0 +1,27 @@
+{
+  "content": "```buddy-response\n{\n  \"message\": \"Oh, what a delightful request! Picture this... books where the pictures dance across the page like dreams made visible! Imagine if your loyal dog became a police officer - that's Dog Man! This half-dog, half-cop hero will have you howling with laughter as he saves the day in the most pawsome ways possible. Just like how \\\"Unstoppable Us\\\" showed us amazing real stories, Dog Man's comic panels burst with pictures that make the adventure leap right off the page! Two pranksters hypnotize their grumpy principal into becoming the most ridiculous superhero ever - wearing just underwear and a cape! The comic pages practically wiggle with silly pictures that'll make milk shoot out your nose. Since you enjoyed the real human stories in \\\"Unstoppable Us,\\\" you'll love seeing these wild imaginary adventures come alive through comics!\",\n  \"suggestedReplies\": [\n    {\"label\": \"More comics!\", \"fullText\": \"More comics!\"},\n    {\"label\": \"Funny books!\", \"fullText\": \"Funny books!\"},\n    {\"label\": \"Adventure stories!\", \"fullText\": \"Adventure stories!\"},\n    {\"label\": \"Tell me about other Dog Man books!\", \"fullText\": \"Tell me about other Dog Man books!\"}\n  ],\n  \"books\": [\n    {\n      \"id\": \"2\",\n      \"title\": \"Dog Man\",\n      \"author\": \"Dav Pilkey\",\n      \"teaser\": \"Imagine if your loyal dog became a police officer - that's Dog Man! This half-dog, half-cop hero will have you howling with laughter as he saves the day in the most pawsome ways possible.\",\n      \"whyYoullLikeIt\": \"Just like how \\\"Unstoppable Us\\\" showed us amazing real stories, Dog Man's comic panels burst with pictures that make the adventure leap right off the page!\"\n    },\n    {\n      \"id\": \"8\",\n      \"title\": \"Captain Underpants\",\n      \"author\": \"Dav Pilkey\",\n      \"teaser\": \"Two pranksters hypnotize their grumpy principal into becoming the most ridiculous superhero ever - wearing just underwear and a cape! The comic pages practically wiggle with silly pictures that'll make milk shoot out your nose.\",\n      \"whyYoullLikeIt\": \"Since you enjoyed the real human stories in \\\"Unstoppable Us,\\\" you'll love seeing these wild imaginary adventures come alive through comics!\"\n    }\n  ]\n}\n```",
+  "provider": "groq+groq-formatter",
+  "usage": {
+    "creative": {
+      "completion_time": 0.962791309,
+      "completion_tokens": 260,
+      "prompt_time": 0.016300678,
+      "prompt_tokens": 629,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "queue_time": 0.069471909,
+      "total_time": 0.979091987,
+      "total_tokens": 889
+    },
+    "formatter": {
+      "completion_time": 0.471819864,
+      "completion_tokens": 516,
+      "prompt_time": 0.051592185,
+      "prompt_tokens": 580,
+      "queue_time": 0.077603471,
+      "total_time": 0.523412049,
+      "total_tokens": 1096
+    }
+  }
+}

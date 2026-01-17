@@ -247,4 +247,46 @@ export default defineSchema({
     updatedAt: v.number(), // Last update timestamp
     updatedBy: v.optional(v.id("users")), // Who made the last change
   }),
+
+  // ============ PROJECTS (6-week learning cycles) ============
+  projects: defineTable({
+    name: v.string(), // "Project 3: Renewable Energy"
+    description: v.optional(v.string()),
+    startDate: v.string(), // ISO date
+    endDate: v.string(),
+    isActive: v.boolean(),
+    cycleNumber: v.number(), // 1, 2, 3... for ordering
+    createdBy: v.id("users"),
+    createdAt: v.number(),
+  })
+    .index("by_active", ["isActive"])
+    .index("by_cycle", ["cycleNumber"]),
+
+  projectLinks: defineTable({
+    projectId: v.id("projects"),
+    userId: v.id("users"), // Student
+    url: v.string(),
+    title: v.string(), // "Final Presentation"
+    linkType: v.union(
+      v.literal("presentation"),
+      v.literal("document"),
+      v.literal("video"),
+      v.literal("other")
+    ),
+    addedAt: v.number(),
+  })
+    .index("by_project", ["projectId"])
+    .index("by_project_user", ["projectId", "userId"]),
+
+  projectReflections: defineTable({
+    projectId: v.id("projects"),
+    userId: v.id("users"),
+    didWell: v.optional(v.string()), // Q1: What they did well
+    projectDescription: v.optional(v.string()), // Q2: Describe their project
+    couldImprove: v.optional(v.string()), // Q3: What could improve
+    isComplete: v.boolean(),
+    updatedAt: v.number(),
+  })
+    .index("by_project", ["projectId"])
+    .index("by_project_user", ["projectId", "userId"]),
 });

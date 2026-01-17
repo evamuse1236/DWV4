@@ -20,11 +20,13 @@ import {
   AdminDashboard,
   StudentsPage,
   SprintsPage,
+  ProjectsPage,
   ObjectivesPage,
   VivaQueuePage,
   PresentationQueuePage,
   BooksPage,
 } from "./pages/admin";
+import { ProjectDetailPage } from "./pages/admin/ProjectDetailPage";
 import { StudentDetailPage } from "./pages/admin/StudentDetailPage";
 import { AdminTrustJarPage } from "./pages/admin/TrustJarPage";
 
@@ -60,16 +62,6 @@ function App() {
               }
             />
 
-            {/* Trust Jar Admin - Full screen with controls */}
-            <Route
-              path="/admin/trust-jar"
-              element={
-                <ProtectedRoute allowedRoles={["admin"]}>
-                  <AdminTrustJarPage />
-                </ProtectedRoute>
-              }
-            />
-
             {/* Student routes */}
             <Route
               element={
@@ -98,10 +90,13 @@ function App() {
               <Route path="/admin/students" element={<StudentsPage />} />
               <Route path="/admin/students/:studentId" element={<StudentDetailPage />} />
               <Route path="/admin/sprints" element={<SprintsPage />} />
+              <Route path="/admin/projects" element={<ProjectsPage />} />
+              <Route path="/admin/projects/:projectId" element={<ProjectDetailPage />} />
               <Route path="/admin/objectives" element={<ObjectivesPage />} />
               <Route path="/admin/viva" element={<VivaQueuePage />} />
               <Route path="/admin/presentations" element={<PresentationQueuePage />} />
               <Route path="/admin/books" element={<BooksPage />} />
+              <Route path="/admin/trust-jar" element={<AdminTrustJarPage />} />
             </Route>
 
             {/* Default redirect */}
