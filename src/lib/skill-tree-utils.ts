@@ -2,84 +2,76 @@ import type { Id } from "../../convex/_generated/dataModel";
 
 /**
  * Skill Tree positioning and configuration utilities
- * Handles polar coordinate calculations and domain/difficulty mappings
+ * Handles Adventure Map layout calculations (Horizontal scroll)
  */
 
-// Canvas center point (800x800 container)
+// Canvas settings
+export const CANVAS_HEIGHT = 600;
+export const CANVAS_PADDING = 100;
+export const CENTER_Y = CANVAS_HEIGHT / 2;
+
+// Subject distance from center (for Radial Menu)
+export const SUBJECT_DISTANCE = 180;
 export const CENTER = { x: 400, y: 400 };
 
 // Node sizes
 export const SUBJECT_NODE_SIZE = 120;
-export const MAJOR_NODE_SIZE = 86;
-export const SUB_NODE_SIZE = 54;
+export const MAJOR_NODE_SIZE = 100; // Larger for hierarchy
+export const SUB_NODE_SIZE = 60;    // Organic shape size
 
-// Distances for tree depth - relative to parent node
-export const MAJOR_DISTANCE = 220; // Distance from Subject node
-export const SUB_DIFFICULTY_DISTANCES: Record<string, number> = {
-  beginner: 140,    // Distance from Major node
-  intermediate: 180,
-  advanced: 220,
+// Spacing constants
+export const VERTICAL_SPREAD = 85;
+export const MIN_GAP_BETWEEN_MAJORS = 200;
+export const SUB_NODE_X_SPREAD = 60; // Horizontal spread for fan
+
+// Biome Colors
+export const BIOME_COLORS = {
+  beginner: "#ecfdf5",     // Grassy Plains
+  intermediate: "#fffbeb", // Misty Forest
+  advanced: "#eff6ff"      // Crystal Peaks
 };
-
-// Subject distance from center
-export const SUBJECT_DISTANCE = 180;
 
 // Domain configuration with angles, colors, and icons
 export interface DomainConfig {
-  color: string; // CSS variable or hex color
-  colorClass: string; // CSS class for background
-  iconName: string; // Phosphor icon name
+  color: string;
+  colorClass: string;
+  iconName: string;
 }
 
 /**
  * Get domain configuration based on domain name
- * Maps domain names to colors and icons
  */
 export function getDomainConfig(domainName: string): DomainConfig {
   const name = domainName.toLowerCase();
 
-  // Coding/Engineering
   if (name.includes("cod") || name.includes("engineer") || name.includes("programming")) {
-    return {
-      color: "var(--skill-col-coding)",
-      colorClass: "subject-coding",
-      iconName: "Code",
-    };
+    return { color: "var(--skill-col-coding)", colorClass: "subject-coding", iconName: "Code" };
   }
-
-  // Maths/Mathematics
   if (name.includes("math")) {
-    return {
-      color: "var(--skill-col-maths)",
-      colorClass: "subject-maths",
-      iconName: "Function",
-    };
+    return { color: "var(--skill-col-maths)", colorClass: "subject-maths", iconName: "Function" };
   }
-
-  // Reading/Literature
   if (name.includes("read") || name.includes("liter") || name.includes("book")) {
-    return {
-      color: "var(--skill-col-reading)",
-      colorClass: "subject-reading",
-      iconName: "BookOpen",
-    };
+    return { color: "var(--skill-col-reading)", colorClass: "subject-reading", iconName: "BookOpen" };
   }
-
-  // Writing
   if (name.includes("writ") || name.includes("essay") || name.includes("composition")) {
-    return {
-      color: "var(--skill-col-writing)",
-      colorClass: "subject-writing",
-      iconName: "Star",
-    };
+    return { color: "var(--skill-col-writing)", colorClass: "subject-writing", iconName: "Star" };
   }
+  return { color: "#f3f4f6", colorClass: "", iconName: "Star" };
+}
 
-  // Default fallback
-  return {
-    color: "#f3f4f6",
-    colorClass: "",
-    iconName: "Star",
-  };
+/**
+ * Objective with calculated position
+ */
+export interface PositionedSkillNode {
+  id: string;
+  type: "major" | "sub";
+  title: string;
+  description: string;
+  difficulty?: string;
+  position: { x: number; y: number };
+  parentPosition: { x: number; y: number };
+  parentId: string | null;
+  createdAt: number;
 }
 
 /**
@@ -108,27 +100,26 @@ export function getSubjectPosition(index: number, total: number): { x: number; y
 }
 
 /**
- * Objective with calculated position
+ * Calculate difficulty score for a major objective based on its subs
+ * Beginner = 1, Intermediate = 2, Advanced = 3
  */
-export interface PositionedSkillNode {
-  id: string;
-  type: "major" | "sub";
-  title: string;
-  description: string;
-  difficulty?: string;
-  position: { x: number; y: number };
-  parentPosition: { x: number; y: number };
-  parentId: string | null; // ID of parent objective or 'root' for subject node
-  createdAt: number;
+function getMajorDifficultyScore(subObjectives: any[]): number {
+  if (!subObjectives.length) return 0;
+  
+  const sum = subObjectives.reduce((acc, sub) => {
+    switch (sub.difficulty) {
+      case "advanced": return acc + 3;
+      case "intermediate": return acc + 2;
+      case "beginner":
+      default: return acc + 1;
+    }
+  }, 0);
+  
+  return sum / subObjectives.length;
 }
 
 /**
- * Calculate positions for major and sub objectives in a domain
- *
- * Algorithm:
- * 1. Subject node is the center of the skill tree
- * 2. Major objectives spread evenly around 360° from the subject
- * 3. Sub objectives branch outward from their parent major
+ * Calculate positions for the Adventure Map (Horizontal Layout)
  */
 export function calculateSkillTreePositions(
   majors: Array<{
@@ -144,54 +135,57 @@ export function calculateSkillTreePositions(
       createdAt: number;
     }>;
   }>,
-  _domainAngle: number // kept for API compatibility
-): PositionedSkillNode[] {
-  if (!majors.length) return [];
+  _domainAngle: number // Unused in horizontal layout but kept for signature compatibility
+): { nodes: PositionedSkillNode[], width: number } {
+  if (!majors.length) return { nodes: [], width: 800 };
 
-  const sortedMajors = [...majors].sort((a, b) => a.createdAt - b.createdAt);
-
-  // When expanded, the subject becomes the CENTER of the skill tree
-  // Use the canvas center as the origin for the tree
-  const subjectPosition = CENTER;
+  // 1. Sort Majors by Difficulty (Beginner -> Advanced)
+  const sortedMajors = [...majors].sort((a, b) => {
+    const scoreA = getMajorDifficultyScore(a.subObjectives);
+    const scoreB = getMajorDifficultyScore(b.subObjectives);
+    return scoreA - scoreB || a.createdAt - b.createdAt;
+  });
 
   const positioned: PositionedSkillNode[] = [];
+  
+  // Start X position (Subject is not in this list, but we assume it's at x=100)
+  // We start majors after the subject
+  let currentX = 300; 
 
-  // Distribute majors evenly around 360° from the subject node
-  sortedMajors.forEach((major, index) => {
-    // Each major gets an even slice of the circle
-    const majorAngle = (360 / sortedMajors.length) * index;
-
-    // Position major relative to subject (subject is the new center)
-    const majorPosition = polarToCartesian(majorAngle, MAJOR_DISTANCE, subjectPosition);
-
+  sortedMajors.forEach((major) => {
+    // Determine space needed based on sub-objectives count
+    // Position Major Node
+    const majorPosition = { x: currentX, y: CENTER_Y };
+    
     positioned.push({
       id: major._id,
       type: "major",
       title: major.title,
       description: major.description,
       position: majorPosition,
-      parentPosition: subjectPosition,
+      parentPosition: { x: 100, y: CENTER_Y }, // Connects back to Subject (approx)
       parentId: null,
       createdAt: major.createdAt,
     });
 
-    const sortedSubs = [...major.subObjectives].sort(
-      (a, b) => a.createdAt - b.createdAt
-    );
-
-    if (sortedSubs.length === 0) return;
-
-    // Subs fan out from the major, centered on the same angle (pointing outward)
-    const subSpread = Math.min(60, 20 + sortedSubs.length * 15);
-    const subAngles = distributeAngles(majorAngle, subSpread, sortedSubs.length);
+    // Position Sub Nodes (Fan Distribution)
+    // Sort subs: beginner -> advanced
+    const sortedSubs = [...major.subObjectives].sort((a, b) => {
+      const diffOrder = { beginner: 1, intermediate: 2, advanced: 3 };
+      return (diffOrder[a.difficulty] || 1) - (diffOrder[b.difficulty] || 1);
+    });
 
     sortedSubs.forEach((sub, subIndex) => {
-      const distance =
-        SUB_DIFFICULTY_DISTANCES[sub.difficulty] ||
-        SUB_DIFFICULTY_DISTANCES.beginner;
-
-      // Position sub relative to the major node (branching outward)
-      const subPosition = polarToCartesian(subAngles[subIndex], distance, majorPosition);
+      // Fan logic:
+      // Alternate Up/Down
+      const isTop = subIndex % 2 === 0;
+      const verticalOffset = (Math.floor(subIndex / 2) + 1) * VERTICAL_SPREAD;
+      const yPos = isTop ? CENTER_Y - verticalOffset : CENTER_Y + verticalOffset;
+      
+      // Fan out horizontally
+      // We shift them slightly right relative to major to create a forward momentum
+      const xOffset = 60 + (subIndex * 20); 
+      const xPos = currentX + xOffset;
 
       positioned.push({
         id: sub._id,
@@ -199,68 +193,26 @@ export function calculateSkillTreePositions(
         title: sub.title,
         description: sub.description,
         difficulty: sub.difficulty,
-        position: subPosition,
+        position: { x: xPos, y: yPos },
         parentPosition: majorPosition,
         parentId: major._id,
         createdAt: sub.createdAt,
       });
     });
+
+    // Advance X for next major
+    // Gap depends on how many subs this major had (to avoid overlap)
+    // The "cluster" width is roughly determined by the last sub's x-offset
+    const clusterWidth = sortedSubs.length > 0 ? (60 + (sortedSubs.length * 20)) : 0;
+    currentX += Math.max(MIN_GAP_BETWEEN_MAJORS, clusterWidth + 150);
   });
 
-  return resolveCollisions(positioned);
+  return { nodes: positioned, width: currentX + 200 };
 }
 
 /**
- * Distribute N angles evenly within a range centered on baseAngle
- */
-function distributeAngles(baseAngle: number, rangeSpread: number, count: number): number[] {
-  if (count === 1) return [baseAngle];
-
-  const startAngle = baseAngle - rangeSpread / 2;
-  const step = rangeSpread / (count - 1);
-
-  return Array.from({ length: count }, (_, i) => startAngle + i * step);
-}
-
-/**
- * Resolve collisions between nodes by pushing them apart
- */
-function resolveCollisions(nodes: PositionedSkillNode[]): PositionedSkillNode[] {
-  const MIN_DISTANCE = 85; // Minimum pixels between node centers
-  const MAX_ITERATIONS = 20;
-
-  for (let iteration = 0; iteration < MAX_ITERATIONS; iteration++) {
-    let hadCollision = false;
-
-    for (let i = 0; i < nodes.length; i++) {
-      for (let j = i + 1; j < nodes.length; j++) {
-        const dx = nodes[j].position.x - nodes[i].position.x;
-        const dy = nodes[j].position.y - nodes[i].position.y;
-        const distance = Math.sqrt(dx * dx + dy * dy);
-
-        if (distance < MIN_DISTANCE && distance > 0) {
-          hadCollision = true;
-          // Push nodes apart
-          const overlap = (MIN_DISTANCE - distance) / 2;
-          const angle = Math.atan2(dy, dx);
-
-          nodes[i].position.x -= Math.cos(angle) * overlap;
-          nodes[i].position.y -= Math.sin(angle) * overlap;
-          nodes[j].position.x += Math.cos(angle) * overlap;
-          nodes[j].position.y += Math.sin(angle) * overlap;
-        }
-      }
-    }
-
-    if (!hadCollision) break;
-  }
-
-  return nodes;
-}
-
-/**
- * Generate SVG path for a curved connection line
- * Creates a quadratic bezier curve that bows outward from center
+ * Generate SVG path for a curved "Adventure Path"
+ * Quadratic bezier with some randomness/organic feel
  */
 export function generateConnectionPath(
   start: { x: number; y: number },
@@ -269,33 +221,43 @@ export function generateConnectionPath(
   const midX = (start.x + end.x) / 2;
   const midY = (start.y + end.y) / 2;
 
-  // Vector from center to midpoint (for curve direction)
-  const vecX = midX - CENTER.x;
-  const vecY = midY - CENTER.y;
+  // Curvature: If horizontal distance is large, dip or arc more
+  const dx = end.x - start.x;
+  const dy = end.y - start.y;
+  
+  // For Adventure Map:
+  // If moving mostly horizontal (Subject -> Major), arc slightly up or down
+  // If moving to sub (fan), simple curve
+  
+  // Control point
+  // We want a nice organic curve. 
+  // Let's offset the control point perpendicular to the midpoint
+  
+  // Simple quadratic curve
+  // Control point X is midway
+  // Control point Y is offset to create curve
+  
+  let controlX = midX;
+  let controlY = midY;
 
-  // Control point pushes the curve outward from center
-  const controlX = midX + vecX * 0.3;
-  const controlY = midY + vecY * 0.3;
+  if (Math.abs(dx) > Math.abs(dy)) {
+    // Mostly horizontal
+    controlY += (start.y < end.y ? 30 : -30); 
+  } else {
+    // Mostly vertical
+    controlX += (start.x < end.x ? 20 : -20);
+  }
 
   return `M ${start.x} ${start.y} Q ${controlX} ${controlY} ${end.x} ${end.y}`;
 }
 
-/**
- * Get icon name for activity type
- */
 export function getActivityIcon(type: string): string {
   switch (type) {
-    case "video":
-      return "Play";
-    case "exercise":
-      return "PencilLine";
-    case "reading":
-      return "BookOpen";
-    case "project":
-      return "FolderOpen";
-    case "game":
-      return "GameController";
-    default:
-      return "Circle";
+    case "video": return "Play";
+    case "exercise": return "PencilLine";
+    case "reading": return "BookOpen";
+    case "project": return "FolderOpen";
+    case "game": return "GameController";
+    default: return "Circle";
   }
 }
