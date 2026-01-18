@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
+import { TreeStructure, Plant, Mountains } from "@phosphor-icons/react";
 import SubjectNode from "./SubjectNode";
 import SkillNode from "./SkillNode";
 import SVGConnections from "./SVGConnections";
@@ -6,6 +7,7 @@ import {
   getSubjectPosition,
   calculateSkillTreePositions,
   type PositionedSkillNode,
+  CENTER_Y
 } from "../../lib/skill-tree-utils";
 import type { Id } from "../../../convex/_generated/dataModel";
 import { cn } from "../../lib/utils";
@@ -67,14 +69,10 @@ interface SkillTreeCanvasProps {
 
 /**
  * SkillTreeCanvas - Main skill tree visualization
- *
- * Orchestrates:
- * - Subject nodes in a circle around center
- * - Major nodes branching from subjects
- * - Sub nodes branching from majors
- * - Connection lines between nodes
- * - Selection and animation states
- * - Keyboard navigation
+ * 
+ * Modes:
+ * 1. Radial Domain Selection (Hub)
+ * 2. Horizontal Adventure Map (Skill Tree)
  */
 export function SkillTreeCanvas({
   domains,
@@ -85,11 +83,12 @@ export function SkillTreeCanvas({
   onSelectNode,
 }: SkillTreeCanvasProps) {
   const [positionedNodes, setPositionedNodes] = useState<PositionedSkillNode[]>([]);
+  const [canvasWidth, setCanvasWidth] = useState(800);
   const [showSkills, setShowSkills] = useState(false);
 
   const selectedDomain = domains.find(d => d._id === selectedDomainId);
 
-  // Memoize to prevent infinite useEffect loops from new array references
+  // Memoize to prevent infinite useEffect loops
   const activeMajors = useMemo(() => {
     return selectedDomainId ? majorsByDomain[selectedDomainId] || [] : [];
   }, [selectedDomainId, majorsByDomain]);
@@ -118,7 +117,6 @@ export function SkillTreeCanvas({
         return record?.completed;
       }).length;
       const total = major.subObjectives.length;
-      // Check if any sub-objective is in progress (not just "assigned")
       const hasActiveWork = major.subObjectives.some((sub) => {
         const record = subStatusByObjectiveId.get(sub.objective._id.toString());
         return record?.status === "in_progress" || record?.status === "completed";
@@ -132,26 +130,16 @@ export function SkillTreeCanvas({
     return map;
   }, [activeMajors, subStatusByObjectiveId]);
 
-  // Track which major is expanded to show its sub-objectives
   const [expandedMajorId, setExpandedMajorId] = useState<string | null>(null);
 
-  // Determine which majors should show their sub-objectives
   const visibleSubMajorIds = useMemo(() => {
     const ids = new Set<string>();
-
-    // If a major is explicitly expanded, show its subs
-    if (expandedMajorId) {
-      ids.add(expandedMajorId);
-    }
-
-    // Also show subs for majors where student has active work
+    if (expandedMajorId) ids.add(expandedMajorId);
+    
     majorStatusById.forEach((status, majorId) => {
-      if (status.hasActiveWork) {
-        ids.add(majorId);
-      }
+      if (status.hasActiveWork) ids.add(majorId);
     });
 
-    // If a sub is selected, show its parent major's subs
     if (selectedNode?.type === "sub") {
       activeMajors.forEach((major) => {
         const hasSelectedSub = major.subObjectives.some(
@@ -162,7 +150,6 @@ export function SkillTreeCanvas({
         }
       });
     }
-
     return ids;
   }, [expandedMajorId, majorStatusById, selectedNode, activeMajors]);
 
@@ -170,6 +157,7 @@ export function SkillTreeCanvas({
     if (!selectedDomainId || !selectedDomain) {
       setShowSkills(false);
       setPositionedNodes([]);
+      setCanvasWidth(800); // Default radial width
       return;
     }
 
@@ -190,12 +178,14 @@ export function SkillTreeCanvas({
       })),
     }));
 
-    const positioned = calculateSkillTreePositions(majorsForPositioning, angle);
-    setPositionedNodes(positioned);
+    // Use Adventure Map Layout
+    const { nodes, width } = calculateSkillTreePositions(majorsForPositioning, angle);
+    setPositionedNodes(nodes);
+    setCanvasWidth(Math.max(width, window.innerWidth)); // Ensure full screen fill
 
     const timer = setTimeout(() => {
       setShowSkills(true);
-    }, 600);
+    }, 400);
 
     return () => clearTimeout(timer);
   }, [selectedDomainId, selectedDomain, activeMajors, domains]);
@@ -213,7 +203,6 @@ export function SkillTreeCanvas({
     (majorId: string) => {
       const node = { type: "major" as const, id: majorId };
       onSelectNode(node);
-      // Expand this major to show its sub-objectives
       setExpandedMajorId((prev) => (prev === majorId ? null : majorId));
     },
     [onSelectNode]
@@ -237,13 +226,9 @@ export function SkillTreeCanvas({
     (e: React.KeyboardEvent, type: "subject" | "major" | "sub", id: string) => {
       if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
-        if (type === "subject") {
-          handleSubjectClick(id);
-        } else if (type === "major") {
-          handleMajorClick(id);
-        } else {
-          handleSubClick(id);
-        }
+        if (type === "subject") handleSubjectClick(id);
+        else if (type === "major") handleMajorClick(id);
+        else handleSubClick(id);
       } else if (e.key === "Escape" && selectedDomainId) {
         handleBack();
       }
@@ -251,8 +236,8 @@ export function SkillTreeCanvas({
     [handleSubjectClick, handleMajorClick, handleSubClick, handleBack, selectedDomainId]
   );
 
-  // When a domain is selected, the subject moves to center
-  const subjectPosition = { x: 400, y: 400 };
+  // Subject Position in Adventure Mode
+  const adventureSubjectPos = { x: 100, y: CENTER_Y };
 
   return (
     <div className={styles['spiral-stage']}>
@@ -262,17 +247,38 @@ export function SkillTreeCanvas({
         onClick={handleBack}
         aria-label="Back to subjects"
       >
-        ← Back to Subjects
+        <span className="text-lg">←</span> Back to Map
       </button>
 
-      <div className={styles['spiral-container']}>
+      <div 
+        className={styles['spiral-container']} 
+        style={{ width: selectedDomainId ? `${canvasWidth}px` : '100%' }}
+      >
+        {/* Biome Backgrounds - Only visible in Adventure Mode */}
+        {selectedDomainId && (
+          <div className={styles['biome-layer']}>
+            <div className={cn(styles['biome-zone'], styles['biome-beginner'])}>
+              <Plant weight="duotone" className={styles['biome-icon']} />
+              <div className={styles['biome-label']}>Grassy Plains</div>
+            </div>
+            <div className={cn(styles['biome-zone'], styles['biome-intermediate'])}>
+              <TreeStructure weight="duotone" className={styles['biome-icon']} />
+              <div className={styles['biome-label']}>Misty Forest</div>
+            </div>
+            <div className={cn(styles['biome-zone'], styles['biome-advanced'])}>
+              <Mountains weight="duotone" className={styles['biome-icon']} />
+              <div className={styles['biome-label']}>Crystal Peaks</div>
+            </div>
+          </div>
+        )}
+
         <SVGConnections
           objectives={positionedNodes.filter(
             (node) =>
               node.type === "major" ||
               (node.parentId && visibleSubMajorIds.has(node.parentId))
           )}
-          subjectPosition={subjectPosition}
+          subjectPosition={selectedDomainId ? adventureSubjectPos : { x: 400, y: 400 }}
           isVisible={showSkills}
         />
 
@@ -281,8 +287,10 @@ export function SkillTreeCanvas({
           const isSelected = selectedDomainId === domain._id;
           const isFaded = selectedDomainId !== null && !isSelected;
 
-          // When selected, move subject to center; otherwise use original position
-          const position = isSelected ? { x: 400, y: 400, angle: originalPosition.angle } : originalPosition;
+          // In Adventure Mode, selected subject moves to start of path
+          const position = isSelected 
+            ? { x: 100, y: CENTER_Y, angle: 0 } 
+            : originalPosition;
 
           return (
             <SubjectNode
@@ -322,7 +330,6 @@ export function SkillTreeCanvas({
               );
             }
 
-            // Only show sub-nodes if their parent major is visible
             if (!node.parentId || !visibleSubMajorIds.has(node.parentId)) {
               return null;
             }

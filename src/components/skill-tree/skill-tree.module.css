@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
 
 /* =========================================
-   DESIGN SYSTEM - Local Scoped
+   ADVENTURE MAP THEME - Horizontal Layout
    ========================================= */
 .deep-work-theme {
   /* Palette */
@@ -9,16 +10,15 @@
   --text-ink: #1a1a1a;
   --text-soft: #666666;
 
-  /* Subject Colors (Pastel) */
-  --col-coding: #FEF9C3; /* Yellow */
-  --col-maths: #E0F2F1;  /* Teal */
-  --col-reading: #FFE4E6; /* Rose */
-  --col-writing: #FDF2F8; /* Pink */
+  /* Biome Colors */
+  --biome-beginner-bg: linear-gradient(to right, #ecfdf5, #f0fdf4);
+  --biome-intermediate-bg: linear-gradient(to right, #fffbeb, #fff7ed);
+  --biome-advanced-bg: linear-gradient(to right, #eff6ff, #eef2ff);
 
   /* Shadows */
-  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.02);
-  --shadow-float: 0 15px 35px rgba(0, 0, 0, 0.08), 0 5px 15px rgba(0, 0, 0, 0.03);
-  --shadow-popover: 0 20px 50px -10px rgba(0, 0, 0, 0.1), 0 10px 20px -5px rgba(0, 0, 0, 0.04);
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.02);
+  --shadow-float: 0 12px 24px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0, 0, 0, 0.03);
+  --shadow-organic: 2px 4px 10px rgba(0,0,0,0.06);
 
   /* Fonts */
   --font-display: 'Cormorant Garamond', serif;
@@ -28,150 +28,146 @@
   height: 100%;
   position: relative;
   overflow: hidden;
+  background: #fdfbf7;
 }
 
-/* 1. ATMOSPHERE */
-.watercolor-bg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  filter: blur(80px);
-  opacity: 0.6;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.blob {
-  position: absolute;
-  border-radius: 50%;
-  animation: drift 20s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@keyframes drift {
-  from {
-    transform: translate(0, 0);
-  }
-  to {
-    transform: translate(50px, -50px);
-  }
-}
-
-/* 2. LAYOUT */
+/* 1. SCROLLABLE CANVAS */
 .spiral-stage {
   position: relative;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  perspective: 1200px;
-  overflow: hidden;
-  /* Ensure it takes available space */
-  flex: 1;
+  overflow: auto; /* Allow scrolling */
+  cursor: grab;
+  /* Hide scrollbar for cleaner look but allow scrolling */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0,0,0,0.1) transparent;
+}
+
+.spiral-stage:active {
+  cursor: grabbing;
 }
 
 .spiral-container {
   position: relative;
-  width: 800px;
-  height: 800px;
-  /* Responsive scaling - default to smaller size */
-  transform-origin: center center;
-  transition: transform 0.3s ease;
-  transform: scale(0.65);
+  height: 100%;
+  /* Width set dynamically via inline style */
+  transform-origin: left center;
+  transition: width 0.3s ease;
+  min-width: 100%;
 }
 
-@media (min-height: 900px) and (min-width: 1400px) {
-  .spiral-container {
-    transform: scale(0.85);
-  }
+/* 2. BIOME BACKGROUNDS */
+.biome-layer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  pointer-events: none;
+  z-index: 0;
 }
 
-@media (min-height: 1000px) and (min-width: 1600px) {
-  .spiral-container {
-    transform: scale(1);
-  }
+.biome-zone {
+  flex: 1;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+  align-items: center;
+  border-right: 1px dashed rgba(0,0,0,0.05);
 }
 
-/* NODES */
+.biome-label {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: rgba(0,0,0,0.15);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+
+.biome-icon {
+  font-size: 3rem;
+  opacity: 0.1;
+  margin-bottom: 10px;
+}
+
+.biome-beginner { background: var(--biome-beginner-bg); }
+.biome-intermediate { background: var(--biome-intermediate-bg); }
+.biome-advanced { background: var(--biome-advanced-bg); }
+
+
+/* 3. NODES - ORGANIC SHAPES */
 .node-base {
   position: absolute;
   background: white;
-  border-radius: 20px; /* Soft Squircle */
-  box-shadow: var(--shadow-card);
+  box-shadow: var(--shadow-organic);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
   z-index: 20;
+  border: 2px solid transparent;
 }
 
 .node-base:hover {
-  transform: translateY(-5px) scale(1.05);
+  transform: translateY(-5px) scale(1.1) rotate(2deg); /* Fun hover effect */
   box-shadow: var(--shadow-float);
+  z-index: 50;
 }
 
 .node-base i, .node-base svg {
-  color: #999;
+  color: #888;
   transition: 0.3s;
 }
 
 .node-base:hover i, .node-base:hover svg {
   color: var(--text-ink);
+  transform: scale(1.1);
 }
 
-/* SUBJECTS */
+/* SUBJECT - The Start Point */
 .subject-node {
   width: 120px;
   height: 120px;
-  border-radius: 30px;
+  /* Organic blob shape */
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; 
   font-family: var(--font-display);
   font-size: 1.2rem;
   color: var(--text-ink);
   text-align: center;
-  gap: 8px;
   z-index: 30;
+  border: 4px solid rgba(255,255,255,0.5);
 }
 
-.subject-node i, .subject-node svg {
-  font-size: 32px;
-  color: var(--text-ink);
-}
-
-.subject-coding {
-  background: var(--col-coding);
-}
-
-.subject-maths {
-  background: var(--col-maths);
-}
-
-.subject-reading {
-  background: var(--col-reading);
-}
-
-.subject-writing {
-  background: var(--col-writing);
+.subject-node.centered {
+  /* No longer strictly centered in viewport, but fixed at start */
+  /* But for compatibility with existing logic, we keep the class */
 }
 
 /* SKILL NODES */
 .skill-node {
   opacity: 0;
   transform: scale(0.5);
-  border: 1px solid rgba(0,0,0,0.05);
 }
 
 .major-node {
-  width: 86px;
-  height: 86px;
-  border-radius: 22px;
+  width: 100px;
+  height: 100px;
+  /* Slightly irregular circle */
+  border-radius: 50% 45% 55% 50% / 50% 55% 45% 50%;
+  background: #ffffff;
 }
 
 .sub-node {
-  width: 54px;
-  height: 54px;
-  border-radius: 14px;
+  width: 60px;
+  height: 60px;
+  /* Pebble shape */
+  border-radius: 60% 40% 50% 50% / 50% 60% 40% 60%;
+  background: #ffffff;
 }
 
 .skill-node.visible {
@@ -179,62 +175,42 @@
   transform: scale(1);
 }
 
+/* Active State - Selection Ring */
 .skill-node.active {
-  border: 2px solid var(--text-ink) !important;
-  transform: scale(1.1);
+  border-color: var(--text-ink) !important;
+  transform: scale(1.15) rotate(-3deg);
   box-shadow: var(--shadow-float);
+  background: #fff;
 }
 
+/* STATUS COLORS */
 .status-assigned {
   background: white;
+  border-color: #e5e7eb;
 }
 
 .status-in_progress {
-  background: #fef3c7;
-  border-color: #f59e0b;
+  background: #fffbeb; /* Amber tint */
+  border-color: #fcd34d;
 }
 
 .status-completed {
-  background: #dcfce7;
-  border-color: #16a34a;
+  background: #f0fdf4; /* Green tint */
+  border-color: #86efac;
 }
 
 .status-viva_requested {
-  background: #fde68a;
-  border-color: #d97706;
+  background: #fff7ed; /* Orange tint */
+  border-color: #fdba74;
 }
 
 .status-mastered {
-  background: #bbf7d0;
-  border-color: #16a34a;
+  background: #ecfdf5; /* Emerald tint */
+  border-color: #6ee7b7;
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.2);
 }
 
-.node-ready {
-  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.35);
-}
-
-.node-expanded {
-  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12), var(--shadow-float);
-  transform: scale(1.08);
-}
-
-/* TRANSITIONS */
-.subject-node.centered {
-  left: 340px !important; /* 400 - 60 */
-  top: 340px !important;
-  transform: scale(1.1);
-  box-shadow: var(--shadow-float);
-  pointer-events: none;
-  z-index: 40;
-}
-
-.subject-node.faded {
-  opacity: 0;
-  pointer-events: none;
-  transform: scale(0.8) translateY(20px);
-}
-
-/* CONNECTIONS */
+/* CONNECTIONS - Treasure Map Style */
 .connections-layer {
   position: absolute;
   inset: 0;
@@ -242,210 +218,40 @@
   overflow: visible;
   width: 100%;
   height: 100%;
+  z-index: 10;
 }
 
 .connection-line {
   fill: none;
-  stroke: #d1d5db;
-  stroke-width: 1.5px;
-  stroke-dasharray: 4 4;
+  stroke: #9ca3af;
+  stroke-width: 2.5px;
+  stroke-dasharray: 6 6; /* Dashed trail */
+  stroke-linecap: round;
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity 0.8s ease;
 }
 
 .connection-line.visible {
-  opacity: 0.6;
-}
-
-/* POPOVER (New Distinctive Design) */
-.popover-card {
-  position: absolute;
-  width: 340px;
-  background: rgba(253, 251, 247, 0.95); /* Warm white glass */
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-radius: 24px;
-  padding: 24px;
-  box-shadow: var(--shadow-popover);
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  z-index: 100;
-  transform-origin: center left;
-  animation: popover-in 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-@keyframes popover-in {
-  from {
-    opacity: 0;
-    transform: scale(0.9) translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1) translateY(0);
-  }
-}
-
-.popover-header {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  margin-bottom: 20px;
-}
-
-.popover-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  color: var(--text-ink);
-  background: rgba(0,0,0,0.03);
-}
-
-.popover-title {
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  line-height: 1.1;
-  color: var(--text-ink);
-  font-weight: 600;
-  margin-bottom: 4px;
-}
-
-.popover-desc {
-  font-family: var(--font-body);
-  font-size: 0.9rem;
-  line-height: 1.5;
-  color: var(--text-soft);
-}
-
-.popover-close {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  color: var(--text-soft);
-  transition: 0.2s;
-  background: transparent;
-  border: none;
-}
-
-.popover-close:hover {
-  background: rgba(0,0,0,0.05);
-  color: var(--text-ink);
-}
-
-/* CHECKLIST */
-.task-list {
-  list-style: none;
-  margin-bottom: 24px;
-  padding: 0;
-}
-
-.task-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 8px;
-  padding: 10px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
-  transition: 0.2s;
-  border: 1px solid transparent;
-}
-
-.task-item:hover {
-  transform: translateX(2px);
-  border-color: rgba(0,0,0,0.05);
-}
-
-.task-checkbox {
-  width: 20px;
-  height: 20px;
-  border-radius: 6px;
-  border: 2px solid #e5e7eb;
-  margin-right: 12px;
-  cursor: pointer;
-  display: grid;
-  place-items: center;
-  flex-shrink: 0;
-  transition: 0.2s;
-}
-
-.task-checkbox.checked {
-  background: var(--text-ink);
-  border-color: var(--text-ink);
-}
-
-.task-checkbox.checked::after {
-  content: '✓';
-  color: white;
-  font-size: 12px;
-}
-
-.task-link {
-  text-decoration: none;
-  color: var(--text-ink);
-  font-weight: 500;
-  flex-grow: 1;
-  font-size: 0.9rem;
-  display: flex;
-  align-items: center;
-}
-
-.task-link:hover {
-  color: #000;
-}
-
-/* VIVA BUTTON */
-.viva-btn {
-  padding: 12px 24px;
-  background: var(--text-ink);
-  color: white;
-  border: none;
-  border-radius: 12px;
-  font-family: var(--font-body);
-  font-size: 0.95rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: 0.3s;
-  width: 100%;
-  text-align: center;
   opacity: 0.5;
-  pointer-events: none;
+  animation: dash-draw 20s linear infinite; /* Subtle movement */
 }
 
-.viva-btn.active {
-  opacity: 1;
-  pointer-events: auto;
+@keyframes dash-draw {
+  from { stroke-dashoffset: 100; }
+  to { stroke-dashoffset: 0; }
 }
 
-.viva-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.viva-btn.requested {
-  background: #059669; /* Green */
-}
-
-/* BACK BUTTON */
+/* UI ELEMENTS */
 .back-btn {
-  position: absolute;
-  top: 40px;
-  left: 40px;
+  position: fixed; /* Fixed so it stays while scrolling */
+  top: 20px;
+  left: 20px;
   background: white;
   border: none;
-  padding: 12px 24px;
+  padding: 10px 20px;
   border-radius: 100px;
   font-family: var(--font-body);
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   box-shadow: var(--shadow-card);
   opacity: 0;
@@ -453,6 +259,9 @@
   transition: 0.3s;
   z-index: 100;
   color: var(--text-ink);
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .back-btn.visible {
@@ -461,102 +270,5 @@
 }
 
 .back-btn:hover {
-  transform: scale(1.05);
-}
-
-/* RIGHT PANEL (Objective Details) - Centered, auto-height */
-.right-panel {
-  position: fixed;
-  right: 24px;
-  top: 50%;
-  transform: translateY(-50%);
-  max-height: calc(100vh - 80px);
-  background: rgba(253, 251, 247, 0.97);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-radius: 24px;
-  box-shadow: var(--shadow-popover);
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  z-index: 200;
-  display: flex;
-  flex-direction: row;
-  animation: panel-slide-in 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-@keyframes panel-slide-in {
-  from {
-    transform: translateY(-50%) translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(-50%) translateX(0);
-    opacity: 1;
-  }
-}
-
-.panel-content {
-  flex: 1;
-  padding: 28px 24px;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Resize Handle - on left side now */
-.resize-handle {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 8px;
-  height: 100%;
-  cursor: ew-resize;
-  background: transparent;
-  transition: background 0.2s;
-  border-radius: 24px 0 0 24px;
-}
-
-.resize-handle:hover,
-.resize-handle.active {
-  background: rgba(0, 0, 0, 0.08);
-}
-
-.resize-handle::after {
-  content: '';
-  position: absolute;
-  left: 2px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 3px;
-  height: 40px;
-  border-radius: 2px;
-  background: rgba(0, 0, 0, 0.1);
-  transition: background 0.2s;
-}
-
-.resize-handle:hover::after,
-.resize-handle.active::after {
-  background: rgba(0, 0, 0, 0.25);
-}
-
-/* Canvas Blur Overlay */
-.canvas-backdrop {
-  position: fixed;
-  inset: 0;
-  background: rgba(253, 251, 247, 0.3);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  z-index: 150;
-  cursor: pointer;
-  animation: backdrop-fade-in 0.3s ease;
-}
-
-@keyframes backdrop-fade-in {
-  from {
-    opacity: 0;
-    backdrop-filter: blur(0);
-  }
-  to {
-    opacity: 1;
-    backdrop-filter: blur(4px);
-  }
+  transform: translateX(-5px);
 }
