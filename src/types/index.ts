@@ -125,9 +125,21 @@ export interface Domain {
 
 export type Difficulty = "beginner" | "intermediate" | "advanced";
 
+export interface MajorObjective {
+  _id: Id<"majorObjectives">;
+  domainId: Id<"domains">;
+  title: string;
+  description: string;
+  difficulty?: Difficulty;
+  estimatedHours?: number;
+  createdBy: Id<"users">;
+  createdAt: number;
+}
+
 export interface LearningObjective {
   _id: Id<"learningObjectives">;
   domainId: Id<"domains">;
+  majorObjectiveId?: Id<"majorObjectives">;
   title: string;
   description: string;
   difficulty: Difficulty;
@@ -156,10 +168,26 @@ export type ObjectiveStatus =
   | "viva_requested"
   | "mastered";
 
+export type SubObjectiveStatus =
+  | "assigned"
+  | "in_progress"
+  | "completed";
+
 export interface StudentObjective {
   _id: Id<"studentObjectives">;
   userId: Id<"users">;
   objectiveId: Id<"learningObjectives">;
+  majorObjectiveId?: Id<"majorObjectives">;
+  assignedBy: Id<"users">;
+  assignedAt: number;
+  status: SubObjectiveStatus;
+  adminNotes?: string;
+}
+
+export interface StudentMajorObjective {
+  _id: Id<"studentMajorObjectives">;
+  userId: Id<"users">;
+  majorObjectiveId: Id<"majorObjectives">;
   assignedBy: Id<"users">;
   assignedAt: number;
   status: ObjectiveStatus;

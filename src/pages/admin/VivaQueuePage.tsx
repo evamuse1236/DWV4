@@ -58,7 +58,7 @@ export function VivaQueuePage() {
     if (!confirmDialog.request) return;
 
     await updateStatus({
-      studentObjectiveId: confirmDialog.request._id as any,
+      studentMajorObjectiveId: confirmDialog.request._id as any,
       status: confirmDialog.type === "approve" ? "mastered" : "in_progress",
     });
 

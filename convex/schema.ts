@@ -136,8 +136,25 @@ export default defineSchema({
     order: v.number(),
   }),
 
+  majorObjectives: defineTable({
+    domainId: v.id("domains"),
+    title: v.string(),
+    description: v.string(),
+    difficulty: v.optional(
+      v.union(
+        v.literal("beginner"),
+        v.literal("intermediate"),
+        v.literal("advanced")
+      )
+    ),
+    estimatedHours: v.optional(v.number()),
+    createdBy: v.id("users"),
+    createdAt: v.number(),
+  }).index("by_domain", ["domainId"]),
+
   learningObjectives: defineTable({
     domainId: v.id("domains"),
+    majorObjectiveId: v.optional(v.id("majorObjectives")),
     title: v.string(),
     description: v.string(),
     difficulty: v.union(
@@ -148,7 +165,9 @@ export default defineSchema({
     estimatedHours: v.optional(v.number()),
     createdBy: v.id("users"),
     createdAt: v.number(),
-  }).index("by_domain", ["domainId"]),
+  })
+    .index("by_domain", ["domainId"])
+    .index("by_major_objective", ["majorObjectiveId"]),
 
   activities: defineTable({
     objectiveId: v.id("learningObjectives"),
@@ -171,6 +190,31 @@ export default defineSchema({
   studentObjectives: defineTable({
     userId: v.id("users"),
     objectiveId: v.id("learningObjectives"),
+    majorObjectiveId: v.optional(v.id("majorObjectives")),
+    assignedBy: v.id("users"),
+    assignedAt: v.number(),
+    // Note: mastered/viva_requested are legacy - new logic uses studentMajorObjectives
+    status: v.union(
+      v.literal("assigned"),
+      v.literal("in_progress"),
+      v.literal("completed"),
+      v.literal("mastered"),        // Legacy - kept for data compatibility
+      v.literal("viva_requested")   // Legacy - kept for data compatibility
+    ),
+    vivaRequestedAt: v.optional(v.number()),
+    masteredAt: v.optional(v.number()),
+    adminNotes: v.optional(v.string()),
+  })
+    .index("by_user", ["userId"])
+    .index("by_objective", ["objectiveId"])
+    .index("by_user_objective", ["userId", "objectiveId"])
+    .index("by_user_major", ["userId", "majorObjectiveId"])
+    .index("by_status", ["status"]),
+
+  // Student assignments to major objectives (viva requests live here)
+  studentMajorObjectives: defineTable({
+    userId: v.id("users"),
+    majorObjectiveId: v.id("majorObjectives"),
     assignedBy: v.id("users"),
     assignedAt: v.number(),
     status: v.union(
@@ -184,8 +228,8 @@ export default defineSchema({
     adminNotes: v.optional(v.string()),
   })
     .index("by_user", ["userId"])
-    .index("by_objective", ["objectiveId"])
-    .index("by_user_objective", ["userId", "objectiveId"])
+    .index("by_major_objective", ["majorObjectiveId"])
+    .index("by_user_major", ["userId", "majorObjectiveId"])
     .index("by_status", ["status"]),
 
   // Track individual activity completion

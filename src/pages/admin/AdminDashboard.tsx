@@ -79,10 +79,10 @@ export function AdminDashboard() {
   const updateStatus = useMutation(api.objectives.updateStatus);
   const approvePresentationRequest = useMutation(api.books.approvePresentationRequest);
 
-  const handleApproveViva = async (studentObjectiveId: string): Promise<void> => {
+  const handleApproveViva = async (studentMajorObjectiveId: string): Promise<void> => {
     try {
       await updateStatus({
-        studentObjectiveId: studentObjectiveId as any,
+        studentMajorObjectiveId: studentMajorObjectiveId as any,
         status: "mastered",
       });
     } catch (err) {

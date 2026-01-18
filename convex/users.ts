@@ -136,6 +136,15 @@ export const remove = mutation({
       await ctx.db.delete(obj._id);
     }
 
+    // Delete associated student major objectives
+    const majorObjectives = await ctx.db
+      .query("studentMajorObjectives")
+      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .collect();
+    for (const major of majorObjectives) {
+      await ctx.db.delete(major._id);
+    }
+
     // Delete associated activity progress
     const progress = await ctx.db
       .query("activityProgress")

@@ -12,7 +12,7 @@ import {
   TextAUnderline,
   Star,
 } from "@phosphor-icons/react";
-import { SKILL_NODE_SIZE } from "../../lib/skill-tree-utils";
+import { MAJOR_NODE_SIZE, SUB_NODE_SIZE } from "../../lib/skill-tree-utils";
 import { cn } from "../../lib/utils";
 import styles from "./skill-tree.module.css";
 
@@ -41,7 +41,11 @@ interface SkillNodeProps {
   isActive: boolean;
   isVisible: boolean;
   delay: number; // Stagger animation delay in ms
-  difficulty: string;
+  difficulty?: string;
+  variant: "major" | "sub";
+  status?: string;
+  isReady?: boolean;
+  isExpanded?: boolean; // For major nodes - whether its sub-objectives are visible
   onClick: () => void;
   onKeyDown?: (e: React.KeyboardEvent) => void;
 }
@@ -63,6 +67,10 @@ export function SkillNode({
   isVisible,
   delay,
   difficulty,
+  variant,
+  status,
+  isReady,
+  isExpanded,
   onClick,
   onKeyDown,
 }: SkillNodeProps) {
@@ -131,21 +139,31 @@ export function SkillNode({
   };
 
   // CSS for positioning (centered on position)
+  const nodeSize = variant === "major" ? MAJOR_NODE_SIZE : SUB_NODE_SIZE;
   const style: React.CSSProperties = {
-    left: `${position.x - SKILL_NODE_SIZE / 2}px`,
-    top: `${position.y - SKILL_NODE_SIZE / 2}px`,
+    left: `${position.x - nodeSize / 2}px`,
+    top: `${position.y - nodeSize / 2}px`,
     transitionDelay: `${delay}ms`,
   };
 
   return (
     <div
-      className={cn(styles['node-base'], styles['skill-node'], shouldAnimate && styles.visible, isActive && styles.active)}
+      className={cn(
+        styles['node-base'],
+        styles['skill-node'],
+        variant === "major" ? styles['major-node'] : styles['sub-node'],
+        status && styles[`status-${status}`],
+        isReady && styles['node-ready'],
+        isExpanded && styles['node-expanded'],
+        shouldAnimate && styles.visible,
+        isActive && styles.active
+      )}
       style={style}
       onClick={onClick}
       onKeyDown={onKeyDown}
       tabIndex={0}
       role="button"
-      aria-label={`${title} skill, ${difficulty} difficulty`}
+      aria-label={`${title} ${variant} skill${difficulty ? `, ${difficulty} difficulty` : ""}`}
       aria-pressed={isActive}
       data-skill-id={id}
     >

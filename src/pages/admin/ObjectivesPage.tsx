@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "../../../convex/_generated/api";
 import { useAuth } from "@/hooks/useAuth";
@@ -55,7 +55,8 @@ import {
 
 type ActivityType = "video" | "exercise" | "reading" | "project" | "game";
 
-// Activity type icons
+type Difficulty = "beginner" | "intermediate" | "advanced";
+
 const ACTIVITY_ICONS: Record<ActivityType, React.ReactNode> = {
   video: <Video className="h-4 w-4" />,
   exercise: <Dumbbell className="h-4 w-4" />,
@@ -64,41 +65,64 @@ const ACTIVITY_ICONS: Record<ActivityType, React.ReactNode> = {
   game: <Gamepad2 className="h-4 w-4" />,
 };
 
-/**
- * Learning Objectives Management Page
- * Create and manage learning objectives organized by domain
- * Includes assignment functionality and activity management
- */
 export function ObjectivesPage() {
   const { user } = useAuth();
   const domains = useQuery(api.domains.getAll);
   const students = useQuery(api.users.getAll);
-  const createObjective = useMutation(api.objectives.create);
-  const updateObjective = useMutation(api.objectives.update);
-  const removeObjective = useMutation(api.objectives.remove);
+
+  const createMajor = useMutation(api.objectives.create);
+  const updateMajor = useMutation(api.objectives.update);
+  const removeMajor = useMutation(api.objectives.remove);
+
+  const createSubObjective = useMutation(api.objectives.createSubObjective);
+  const updateSubObjective = useMutation(api.objectives.updateSubObjective);
+  const removeSubObjective = useMutation(api.objectives.removeSubObjective);
   const assignToMultiple = useMutation(api.objectives.assignToMultipleStudents);
 
-  // Activity mutations
   const createActivity = useMutation(api.activities.create);
   const updateActivity = useMutation(api.activities.update);
   const removeActivity = useMutation(api.activities.remove);
 
   const [selectedDomain, setSelectedDomain] = useState<string | null>(null);
-
-  // Derive active domain: use selected or default to first domain
   const activeDomainId = selectedDomain || domains?.[0]?._id || null;
 
-  const [isAddDialogOpen, setIsAddDialogOpen] = useState(false);
-  const [isEditObjectiveDialogOpen, setIsEditObjectiveDialogOpen] = useState(false);
-  const [editingObjective, setEditingObjective] = useState<any>(null);
-  const [isAssignDialogOpen, setIsAssignDialogOpen] = useState(false);
-  const [selectedObjective, setSelectedObjective] = useState<any>(null);
-  const [selectedStudentIds, setSelectedStudentIds] = useState<Set<string>>(new Set());
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  const majors = useQuery(
+    api.objectives.getByDomain,
+    activeDomainId ? { domainId: activeDomainId as any } : "skip"
+  );
 
-  // Activity management state
-  const [expandedObjectiveId, setExpandedObjectiveId] = useState<string | null>(null);
+  const [isAddMajorDialogOpen, setIsAddMajorDialogOpen] = useState(false);
+  const [isEditMajorDialogOpen, setIsEditMajorDialogOpen] = useState(false);
+  const [editingMajor, setEditingMajor] = useState<any>(null);
+  const [newMajor, setNewMajor] = useState({
+    title: "",
+    description: "",
+    difficulty: "beginner" as Difficulty,
+    estimatedHours: 1,
+    domainId: "",
+  });
+  const [editMajorForm, setEditMajorForm] = useState({
+    title: "",
+    description: "",
+    difficulty: "beginner" as Difficulty,
+    estimatedHours: 1,
+  });
+
+  const [isSubDialogOpen, setIsSubDialogOpen] = useState(false);
+  const [editingSubObjective, setEditingSubObjective] = useState<any>(null);
+  const [selectedMajorForSub, setSelectedMajorForSub] = useState<any>(null);
+  const [newSubObjective, setNewSubObjective] = useState({
+    title: "",
+    description: "",
+    difficulty: "beginner" as Difficulty,
+    estimatedHours: 1,
+  });
+
+  const [isAssignDialogOpen, setIsAssignDialogOpen] = useState(false);
+  const [selectedSubObjective, setSelectedSubObjective] = useState<any>(null);
+  const [selectedStudentIds, setSelectedStudentIds] = useState<Set<string>>(new Set());
+
+  const [expandedSubObjectiveId, setExpandedSubObjectiveId] = useState<string | null>(null);
   const [isActivityDialogOpen, setIsActivityDialogOpen] = useState(false);
   const [editingActivity, setEditingActivity] = useState<any>(null);
   const [newActivity, setNewActivity] = useState({
@@ -108,59 +132,43 @@ export function ObjectivesPage() {
     platform: "",
   });
 
-  // Form state for edit objective
-  const [editObjectiveForm, setEditObjectiveForm] = useState({
-    title: "",
-    description: "",
-    difficulty: "beginner" as "beginner" | "intermediate" | "advanced",
-    estimatedHours: 1,
-  });
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  // Form state for new objective
-  const [newObjective, setNewObjective] = useState({
-    title: "",
-    description: "",
-    difficulty: "beginner" as "beginner" | "intermediate" | "advanced",
-    estimatedHours: 1,
-    domainId: "",
-  });
-
-  // Get objectives for active domain (selected or first)
-  const objectives = useQuery(
-    api.objectives.getByDomain,
-    activeDomainId ? { domainId: activeDomainId as any } : "skip"
-  );
-
-  // Get assigned students for selected objective
   const assignedStudents = useQuery(
     api.objectives.getAssignedStudents,
-    selectedObjective ? { objectiveId: selectedObjective._id } : "skip"
+    selectedSubObjective ? { objectiveId: selectedSubObjective._id } : "skip"
   );
 
-  // Get activities for expanded objective
   const activities = useQuery(
     api.activities.getByObjective,
-    expandedObjectiveId ? { objectiveId: expandedObjectiveId as any } : "skip"
+    expandedSubObjectiveId ? { objectiveId: expandedSubObjectiveId as any } : "skip"
   );
 
-  const handleCreateObjective = async () => {
-    if (!user?._id || !newObjective.domainId) return;
+  const availableStudents = useMemo(() => {
+    const alreadyAssignedIds = new Set(
+      assignedStudents?.map((a: any) => a.userId) || []
+    );
+    return students?.filter((s: any) => !alreadyAssignedIds.has(s._id)) || [];
+  }, [assignedStudents, students]);
 
+  const handleCreateMajor = async () => {
+    if (!user?._id || !newMajor.domainId) return;
     setIsLoading(true);
     setError(null);
 
     try {
-      await createObjective({
-        domainId: newObjective.domainId as any,
-        title: newObjective.title,
-        description: newObjective.description,
-        difficulty: newObjective.difficulty,
-        estimatedHours: newObjective.estimatedHours,
+      await createMajor({
+        domainId: newMajor.domainId as any,
+        title: newMajor.title,
+        description: newMajor.description,
+        difficulty: newMajor.difficulty,
+        estimatedHours: newMajor.estimatedHours,
         createdBy: user._id as any,
       });
 
-      setIsAddDialogOpen(false);
-      setNewObjective({
+      setIsAddMajorDialogOpen(false);
+      setNewMajor({
         title: "",
         description: "",
         difficulty: "beginner",
@@ -168,14 +176,137 @@ export function ObjectivesPage() {
         domainId: activeDomainId || "",
       });
     } catch (err) {
-      setError("An error occurred while creating the objective");
+      setError("An error occurred while creating the major objective");
     } finally {
       setIsLoading(false);
     }
   };
 
+  const handleUpdateMajor = async () => {
+    if (!editingMajor) return;
+    setIsLoading(true);
+    setError(null);
+
+    try {
+      await updateMajor({
+        objectiveId: editingMajor._id,
+        title: editMajorForm.title,
+        description: editMajorForm.description,
+        difficulty: editMajorForm.difficulty,
+        estimatedHours: editMajorForm.estimatedHours,
+      });
+
+      setIsEditMajorDialogOpen(false);
+      setEditingMajor(null);
+      setEditMajorForm({
+        title: "",
+        description: "",
+        difficulty: "beginner",
+        estimatedHours: 1,
+      });
+    } catch (err) {
+      setError("An error occurred while updating the major objective");
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleDeleteMajor = async (objectiveId: string) => {
+    if (!confirm("Delete this major objective and all its sub objectives?")) return;
+
+    try {
+      await removeMajor({ objectiveId: objectiveId as any });
+    } catch (err) {
+      setError("Failed to delete major objective");
+    }
+  };
+
+  const handleOpenEditMajor = (major: any) => {
+    setEditingMajor(major);
+    setEditMajorForm({
+      title: major.title,
+      description: major.description,
+      difficulty: major.difficulty || "beginner",
+      estimatedHours: major.estimatedHours || 1,
+    });
+    setIsEditMajorDialogOpen(true);
+  };
+
+  const handleOpenSubDialog = (major: any, sub?: any) => {
+    setSelectedMajorForSub(major);
+    if (sub) {
+      setEditingSubObjective(sub);
+      setNewSubObjective({
+        title: sub.title,
+        description: sub.description,
+        difficulty: sub.difficulty,
+        estimatedHours: sub.estimatedHours || 1,
+      });
+    } else {
+      setEditingSubObjective(null);
+      setNewSubObjective({
+        title: "",
+        description: "",
+        difficulty: "beginner",
+        estimatedHours: 1,
+      });
+    }
+    setIsSubDialogOpen(true);
+  };
+
+  const handleSaveSubObjective = async () => {
+    if (!selectedMajorForSub || !newSubObjective.title || !newSubObjective.description) return;
+    setIsLoading(true);
+    setError(null);
+
+    try {
+      if (editingSubObjective) {
+        await updateSubObjective({
+          objectiveId: editingSubObjective._id,
+          title: newSubObjective.title,
+          description: newSubObjective.description,
+          difficulty: newSubObjective.difficulty,
+          estimatedHours: newSubObjective.estimatedHours,
+        });
+      } else {
+        await createSubObjective({
+          majorObjectiveId: selectedMajorForSub._id,
+          title: newSubObjective.title,
+          description: newSubObjective.description,
+          difficulty: newSubObjective.difficulty,
+          estimatedHours: newSubObjective.estimatedHours,
+          createdBy: user?._id as any,
+        });
+      }
+
+      setIsSubDialogOpen(false);
+      setEditingSubObjective(null);
+      setSelectedMajorForSub(null);
+      setNewSubObjective({
+        title: "",
+        description: "",
+        difficulty: "beginner",
+        estimatedHours: 1,
+      });
+    } catch (err) {
+      setError("An error occurred while saving the sub objective");
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleDeleteSubObjective = async (objectiveId: string) => {
+    if (!confirm("Delete this sub objective and its activities?")) return;
+
+    try {
+      await removeSubObjective({ objectiveId: objectiveId as any });
+    } catch (err) {
+      setError("Failed to delete sub objective");
+    }
+  };
+
   const handleAssignClick = (objective: any) => {
-    setSelectedObjective(objective);
+    setSelectedSubObjective(objective);
     setSelectedStudentIds(new Set());
     setIsAssignDialogOpen(true);
   };
@@ -191,20 +322,20 @@ export function ObjectivesPage() {
   };
 
   const handleAssignStudents = async () => {
-    if (!user?._id || !selectedObjective || selectedStudentIds.size === 0) return;
+    if (!user?._id || !selectedSubObjective || selectedStudentIds.size === 0) return;
 
     setIsLoading(true);
     setError(null);
 
     try {
       await assignToMultiple({
-        objectiveId: selectedObjective._id,
+        objectiveId: selectedSubObjective._id,
         studentIds: Array.from(selectedStudentIds) as any[],
         assignedBy: user._id as any,
       });
 
       setIsAssignDialogOpen(false);
-      setSelectedObjective(null);
+      setSelectedSubObjective(null);
       setSelectedStudentIds(new Set());
     } catch (err) {
       setError("An error occurred while assigning students");
@@ -213,9 +344,8 @@ export function ObjectivesPage() {
     }
   };
 
-  // Activity handlers
-  const handleOpenActivityDialog = (objectiveId: string, activity?: any) => {
-    setExpandedObjectiveId(objectiveId);
+  const handleOpenActivityDialog = (subObjectiveId: string, activity?: any) => {
+    setExpandedSubObjectiveId(subObjectiveId);
     if (activity) {
       setEditingActivity(activity);
       setNewActivity({
@@ -237,7 +367,7 @@ export function ObjectivesPage() {
   };
 
   const handleSaveActivity = async () => {
-    if (!expandedObjectiveId || !newActivity.title || !newActivity.url) return;
+    if (!expandedSubObjectiveId || !newActivity.title || !newActivity.url) return;
 
     setIsLoading(true);
     setError(null);
@@ -254,7 +384,7 @@ export function ObjectivesPage() {
       } else {
         const activityCount = activities?.length || 0;
         await createActivity({
-          objectiveId: expandedObjectiveId as any,
+          objectiveId: expandedSubObjectiveId as any,
           title: newActivity.title,
           type: newActivity.type,
           url: newActivity.url,
@@ -283,58 +413,6 @@ export function ObjectivesPage() {
     }
   };
 
-  // Objective edit/delete handlers
-  const handleOpenEditObjectiveDialog = (objective: any) => {
-    setEditingObjective(objective);
-    setEditObjectiveForm({
-      title: objective.title,
-      description: objective.description,
-      difficulty: objective.difficulty,
-      estimatedHours: objective.estimatedHours || 1,
-    });
-    setIsEditObjectiveDialogOpen(true);
-  };
-
-  const handleUpdateObjective = async () => {
-    if (!editingObjective) return;
-
-    setIsLoading(true);
-    setError(null);
-
-    try {
-      await updateObjective({
-        objectiveId: editingObjective._id,
-        title: editObjectiveForm.title,
-        description: editObjectiveForm.description,
-        difficulty: editObjectiveForm.difficulty,
-        estimatedHours: editObjectiveForm.estimatedHours,
-      });
-
-      setIsEditObjectiveDialogOpen(false);
-      setEditingObjective(null);
-      setEditObjectiveForm({
-        title: "",
-        description: "",
-        difficulty: "beginner",
-        estimatedHours: 1,
-      });
-    } catch (err) {
-      setError("An error occurred while updating the objective");
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
-  const handleDeleteObjective = async (objectiveId: string) => {
-    if (!confirm("Are you sure you want to delete this objective? This will also delete all associated activities and student assignments.")) return;
-
-    try {
-      await removeObjective({ objectiveId: objectiveId as any });
-    } catch (err) {
-      setError("Failed to delete objective");
-    }
-  };
-
   const getDifficultyColor = (difficulty: string) => {
     switch (difficulty) {
       case "beginner":
@@ -348,38 +426,27 @@ export function ObjectivesPage() {
     }
   };
 
-  // Get already assigned student IDs
-  const alreadyAssignedIds = new Set(
-    assignedStudents?.map((a: any) => a.userId) || []
-  );
-
-  // Filter out already assigned students
-  const availableStudents = students?.filter(
-    (s: any) => !alreadyAssignedIds.has(s._id)
-  );
-
   return (
     <div className="space-y-6">
-      {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
           <h1 className="text-2xl font-serif font-semibold">Learning Objectives</h1>
           <p className="text-muted-foreground">
-            Manage deep work objectives organized by domain
+            Create major objectives and attach sub objectives with activities
           </p>
         </div>
-        <Dialog open={isAddDialogOpen} onOpenChange={setIsAddDialogOpen}>
+        <Dialog open={isAddMajorDialogOpen} onOpenChange={setIsAddMajorDialogOpen}>
           <DialogTrigger asChild>
             <Button>
               <Plus className="mr-2 h-4 w-4" />
-              Add Objective
+              Add Major Objective
             </Button>
           </DialogTrigger>
           <DialogContent>
             <DialogHeader>
-              <DialogTitle>Create Learning Objective</DialogTitle>
+              <DialogTitle>Create Major Objective</DialogTitle>
               <DialogDescription>
-                Add a new learning objective that students can work towards mastering.
+                Major objectives act as the main nodes in the skill tree.
               </DialogDescription>
             </DialogHeader>
             <div className="space-y-4 py-4">
@@ -391,9 +458,9 @@ export function ObjectivesPage() {
               <div className="space-y-2">
                 <label className="text-sm font-medium">Domain *</label>
                 <Select
-                  value={newObjective.domainId}
+                  value={newMajor.domainId}
                   onValueChange={(value) =>
-                    setNewObjective({ ...newObjective, domainId: value })
+                    setNewMajor({ ...newMajor, domainId: value })
                   }
                 >
                   <SelectTrigger>
@@ -411,20 +478,20 @@ export function ObjectivesPage() {
               <div className="space-y-2">
                 <label className="text-sm font-medium">Title *</label>
                 <Input
-                  placeholder="e.g., Basic Addition"
-                  value={newObjective.title}
+                  placeholder="e.g., Fractions Fundamentals"
+                  value={newMajor.title}
                   onChange={(e) =>
-                    setNewObjective({ ...newObjective, title: e.target.value })
+                    setNewMajor({ ...newMajor, title: e.target.value })
                   }
                 />
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-medium">Description *</label>
                 <Input
-                  placeholder="What will students learn?"
-                  value={newObjective.description}
+                  placeholder="What does this major unlock?"
+                  value={newMajor.description}
                   onChange={(e) =>
-                    setNewObjective({ ...newObjective, description: e.target.value })
+                    setNewMajor({ ...newMajor, description: e.target.value })
                   }
                 />
               </div>
@@ -432,9 +499,9 @@ export function ObjectivesPage() {
                 <div className="space-y-2">
                   <label className="text-sm font-medium">Difficulty</label>
                   <Select
-                    value={newObjective.difficulty}
-                    onValueChange={(value: "beginner" | "intermediate" | "advanced") =>
-                      setNewObjective({ ...newObjective, difficulty: value })
+                    value={newMajor.difficulty}
+                    onValueChange={(value: Difficulty) =>
+                      setNewMajor({ ...newMajor, difficulty: value })
                     }
                   >
                     <SelectTrigger>
@@ -452,10 +519,10 @@ export function ObjectivesPage() {
                   <Input
                     type="number"
                     min="1"
-                    value={newObjective.estimatedHours}
+                    value={newMajor.estimatedHours}
                     onChange={(e) =>
-                      setNewObjective({
-                        ...newObjective,
+                      setNewMajor({
+                        ...newMajor,
                         estimatedHours: parseInt(e.target.value) || 1,
                       })
                     }
@@ -466,33 +533,32 @@ export function ObjectivesPage() {
             <DialogFooter>
               <Button
                 variant="outline"
-                onClick={() => setIsAddDialogOpen(false)}
+                onClick={() => setIsAddMajorDialogOpen(false)}
               >
                 Cancel
               </Button>
               <Button
-                onClick={handleCreateObjective}
+                onClick={handleCreateMajor}
                 disabled={
                   isLoading ||
-                  !newObjective.title ||
-                  !newObjective.description ||
-                  !newObjective.domainId
+                  !newMajor.title ||
+                  !newMajor.description ||
+                  !newMajor.domainId
                 }
               >
                 {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-                Create Objective
+                Create Major
               </Button>
             </DialogFooter>
           </DialogContent>
         </Dialog>
       </div>
 
-      {/* Edit Objective Dialog */}
-      <Dialog open={isEditObjectiveDialogOpen} onOpenChange={(open) => {
-        setIsEditObjectiveDialogOpen(open);
+      <Dialog open={isEditMajorDialogOpen} onOpenChange={(open) => {
+        setIsEditMajorDialogOpen(open);
         if (!open) {
-          setEditingObjective(null);
-          setEditObjectiveForm({
+          setEditingMajor(null);
+          setEditMajorForm({
             title: "",
             description: "",
             difficulty: "beginner",
@@ -502,9 +568,9 @@ export function ObjectivesPage() {
       }}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Edit Objective</DialogTitle>
+            <DialogTitle>Edit Major Objective</DialogTitle>
             <DialogDescription>
-              Update the learning objective details.
+              Update the major objective details.
             </DialogDescription>
           </DialogHeader>
           <div className="space-y-4 py-4">
@@ -516,20 +582,20 @@ export function ObjectivesPage() {
             <div className="space-y-2">
               <label className="text-sm font-medium">Title *</label>
               <Input
-                placeholder="e.g., Basic Addition"
-                value={editObjectiveForm.title}
+                placeholder="e.g., Fractions Fundamentals"
+                value={editMajorForm.title}
                 onChange={(e) =>
-                  setEditObjectiveForm({ ...editObjectiveForm, title: e.target.value })
+                  setEditMajorForm({ ...editMajorForm, title: e.target.value })
                 }
               />
             </div>
             <div className="space-y-2">
               <label className="text-sm font-medium">Description *</label>
               <Input
-                placeholder="What will students learn?"
-                value={editObjectiveForm.description}
+                placeholder="What does this major unlock?"
+                value={editMajorForm.description}
                 onChange={(e) =>
-                  setEditObjectiveForm({ ...editObjectiveForm, description: e.target.value })
+                  setEditMajorForm({ ...editMajorForm, description: e.target.value })
                 }
               />
             </div>
@@ -537,9 +603,9 @@ export function ObjectivesPage() {
               <div className="space-y-2">
                 <label className="text-sm font-medium">Difficulty</label>
                 <Select
-                  value={editObjectiveForm.difficulty}
-                  onValueChange={(value: "beginner" | "intermediate" | "advanced") =>
-                    setEditObjectiveForm({ ...editObjectiveForm, difficulty: value })
+                  value={editMajorForm.difficulty}
+                  onValueChange={(value: Difficulty) =>
+                    setEditMajorForm({ ...editMajorForm, difficulty: value })
                   }
                 >
                   <SelectTrigger>
@@ -557,10 +623,10 @@ export function ObjectivesPage() {
                 <Input
                   type="number"
                   min="1"
-                  value={editObjectiveForm.estimatedHours}
+                  value={editMajorForm.estimatedHours}
                   onChange={(e) =>
-                    setEditObjectiveForm({
-                      ...editObjectiveForm,
+                    setEditMajorForm({
+                      ...editMajorForm,
                       estimatedHours: parseInt(e.target.value) || 1,
                     })
                   }
@@ -571,16 +637,16 @@ export function ObjectivesPage() {
           <DialogFooter>
             <Button
               variant="outline"
-              onClick={() => setIsEditObjectiveDialogOpen(false)}
+              onClick={() => setIsEditMajorDialogOpen(false)}
             >
               Cancel
             </Button>
             <Button
-              onClick={handleUpdateObjective}
+              onClick={handleUpdateMajor}
               disabled={
                 isLoading ||
-                !editObjectiveForm.title ||
-                !editObjectiveForm.description
+                !editMajorForm.title ||
+                !editMajorForm.description
               }
             >
               {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
@@ -590,11 +656,110 @@ export function ObjectivesPage() {
         </DialogContent>
       </Dialog>
 
-      {/* Assign Students Dialog */}
+      <Dialog open={isSubDialogOpen} onOpenChange={(open) => {
+        setIsSubDialogOpen(open);
+        if (!open) {
+          setEditingSubObjective(null);
+          setSelectedMajorForSub(null);
+          setNewSubObjective({
+            title: "",
+            description: "",
+            difficulty: "beginner",
+            estimatedHours: 1,
+          });
+        }
+      }}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>{editingSubObjective ? "Edit Sub Objective" : "Add Sub Objective"}</DialogTitle>
+            <DialogDescription>
+              {selectedMajorForSub?.title ? `Major: ${selectedMajorForSub.title}` : "Attach a sub objective to a major"}
+            </DialogDescription>
+          </DialogHeader>
+          <div className="space-y-4 py-4">
+            {error && (
+              <div className="p-3 text-sm text-destructive bg-destructive/10 rounded-md">
+                {error}
+              </div>
+            )}
+            <div className="space-y-2">
+              <label className="text-sm font-medium">Title *</label>
+              <Input
+                placeholder="e.g., Add fractions with like denominators"
+                value={newSubObjective.title}
+                onChange={(e) =>
+                  setNewSubObjective({ ...newSubObjective, title: e.target.value })
+                }
+              />
+            </div>
+            <div className="space-y-2">
+              <label className="text-sm font-medium">Description *</label>
+              <Input
+                placeholder="What will students master in this step?"
+                value={newSubObjective.description}
+                onChange={(e) =>
+                  setNewSubObjective({ ...newSubObjective, description: e.target.value })
+                }
+              />
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-2">
+                <label className="text-sm font-medium">Difficulty</label>
+                <Select
+                  value={newSubObjective.difficulty}
+                  onValueChange={(value: Difficulty) =>
+                    setNewSubObjective({ ...newSubObjective, difficulty: value })
+                  }
+                >
+                  <SelectTrigger>
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="beginner">Beginner</SelectItem>
+                    <SelectItem value="intermediate">Intermediate</SelectItem>
+                    <SelectItem value="advanced">Advanced</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+              <div className="space-y-2">
+                <label className="text-sm font-medium">Est. Hours</label>
+                <Input
+                  type="number"
+                  min="1"
+                  value={newSubObjective.estimatedHours}
+                  onChange={(e) =>
+                    setNewSubObjective({
+                      ...newSubObjective,
+                      estimatedHours: parseInt(e.target.value) || 1,
+                    })
+                  }
+                />
+              </div>
+            </div>
+          </div>
+          <DialogFooter>
+            <Button variant="outline" onClick={() => setIsSubDialogOpen(false)}>
+              Cancel
+            </Button>
+            <Button
+              onClick={handleSaveSubObjective}
+              disabled={
+                isLoading ||
+                !newSubObjective.title ||
+                !newSubObjective.description
+              }
+            >
+              {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+              {editingSubObjective ? "Save Changes" : "Add Sub Objective"}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
       <Dialog open={isAssignDialogOpen} onOpenChange={(open) => {
         setIsAssignDialogOpen(open);
         if (!open) {
-          setSelectedObjective(null);
+          setSelectedSubObjective(null);
           setSelectedStudentIds(new Set());
         }
       }}>
@@ -602,11 +767,10 @@ export function ObjectivesPage() {
           <DialogHeader>
             <DialogTitle>Assign Students</DialogTitle>
             <DialogDescription>
-              Select students to assign to "{selectedObjective?.title}"
+              Select students to assign to "{selectedSubObjective?.title}"
             </DialogDescription>
           </DialogHeader>
           <div className="py-4">
-            {/* Already assigned students */}
             {assignedStudents && assignedStudents.length > 0 && (
               <div className="mb-4">
                 <p className="text-sm font-medium mb-2 text-muted-foreground">
@@ -622,12 +786,11 @@ export function ObjectivesPage() {
               </div>
             )}
 
-            {/* Available students */}
             <p className="text-sm font-medium mb-2">
-              Available students ({availableStudents?.length || 0})
+              Available students ({availableStudents.length})
             </p>
             <div className="max-h-[300px] overflow-y-auto space-y-2">
-              {availableStudents && availableStudents.length > 0 ? (
+              {availableStudents.length > 0 ? (
                 availableStudents.map((student: any) => (
                   <div
                     key={student._id}
@@ -657,7 +820,7 @@ export function ObjectivesPage() {
                 ))
               ) : (
                 <p className="text-sm text-muted-foreground text-center py-4">
-                  All students are already assigned to this objective
+                  All students are already assigned to this sub objective
                 </p>
               )}
             </div>
@@ -677,7 +840,6 @@ export function ObjectivesPage() {
         </DialogContent>
       </Dialog>
 
-      {/* Activity Dialog */}
       <Dialog open={isActivityDialogOpen} onOpenChange={(open) => {
         setIsActivityDialogOpen(open);
         if (!open) {
@@ -766,7 +928,6 @@ export function ObjectivesPage() {
         </DialogContent>
       </Dialog>
 
-      {/* Domain tabs */}
       {domains && domains.length > 0 ? (
         <Tabs
           value={activeDomainId || ""}
@@ -798,160 +959,211 @@ export function ObjectivesPage() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  {activeDomainId === domain._id && objectives && objectives.length > 0 ? (
-                    <div className="space-y-3">
-                      {objectives.map((objective: any) => {
-                        const isExpanded = expandedObjectiveId === objective._id;
-                        return (
-                          <div
-                            key={objective._id}
-                            className="rounded-lg border bg-card overflow-hidden"
-                          >
-                            {/* Objective header */}
-                            <div className="flex items-start gap-4 p-4 hover:bg-accent/50 transition-colors">
-                              <div className="p-2 rounded-lg bg-primary/10">
-                                <Target className="h-5 w-5 text-primary" />
-                              </div>
-                              <div className="flex-1 min-w-0">
-                                <div className="flex items-center gap-2 flex-wrap">
-                                  <p className="font-medium">{objective.title}</p>
-                                  <Badge
-                                    className={getDifficultyColor(objective.difficulty)}
-                                  >
-                                    {objective.difficulty}
-                                  </Badge>
-                                </div>
-                                <p className="text-sm text-muted-foreground mt-1">
-                                  {objective.description}
-                                </p>
-                                <div className="flex items-center gap-4 mt-2">
-                                  {objective.estimatedHours && (
-                                    <p className="text-xs text-muted-foreground">
-                                      ~{objective.estimatedHours} hours
-                                    </p>
-                                  )}
-                                </div>
-                              </div>
-                              <div className="flex items-center gap-1">
-                                <Button
-                                  variant="ghost"
-                                  size="icon"
-                                  className="h-8 w-8"
-                                  onClick={() => handleOpenEditObjectiveDialog(objective)}
-                                  title="Edit objective"
-                                >
-                                  <Edit2 className="h-4 w-4" />
-                                </Button>
-                                <Button
-                                  variant="ghost"
-                                  size="icon"
-                                  className="h-8 w-8 text-destructive hover:text-destructive"
-                                  onClick={() => handleDeleteObjective(objective._id)}
-                                  title="Delete objective"
-                                >
-                                  <Trash2 className="h-4 w-4" />
-                                </Button>
-                                <Button
-                                  variant="ghost"
-                                  size="sm"
-                                  onClick={() => setExpandedObjectiveId(isExpanded ? null : objective._id)}
-                                >
-                                  {isExpanded ? (
-                                    <ChevronUp className="h-4 w-4" />
-                                  ) : (
-                                    <ChevronDown className="h-4 w-4" />
-                                  )}
-                                </Button>
-                                <Button
-                                  variant="outline"
-                                  size="sm"
-                                  onClick={() => handleAssignClick(objective)}
-                                >
-                                  <Users className="h-4 w-4 mr-1" />
-                                  Assign
-                                </Button>
-                              </div>
+                  {activeDomainId === domain._id && majors && majors.length > 0 ? (
+                    <div className="space-y-4">
+                      {majors.map((major: any) => (
+                        <div
+                          key={major._id}
+                          className="rounded-lg border bg-card overflow-hidden"
+                        >
+                          <div className="flex items-start gap-4 p-4 hover:bg-accent/50 transition-colors">
+                            <div className="p-2 rounded-lg bg-primary/10">
+                              <Target className="h-5 w-5 text-primary" />
                             </div>
-
-                            {/* Activities section (expandable) */}
-                            {isExpanded && (
-                              <div className="border-t bg-muted/30 p-4">
-                                <div className="flex items-center justify-between mb-3">
-                                  <h4 className="text-sm font-medium">
-                                    Activities ({activities?.length || 0})
-                                  </h4>
-                                  <Button
-                                    size="sm"
-                                    variant="outline"
-                                    onClick={() => handleOpenActivityDialog(objective._id)}
-                                  >
-                                    <Plus className="h-3 w-3 mr-1" />
-                                    Add Activity
-                                  </Button>
-                                </div>
-                                {activities && activities.length > 0 ? (
-                                  <div className="space-y-2">
-                                    {activities.map((activity: any) => (
-                                      <div
-                                        key={activity._id}
-                                        className="flex items-center gap-3 p-3 bg-background rounded-lg border"
-                                      >
-                                        <div className="p-1.5 rounded bg-muted">
-                                          {ACTIVITY_ICONS[activity.type as ActivityType] || <FileText className="h-4 w-4" />}
-                                        </div>
-                                        <div className="flex-1 min-w-0">
-                                          <p className="text-sm font-medium truncate">
-                                            {activity.title}
-                                          </p>
-                                          <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                                            <span className="capitalize">{activity.type}</span>
-                                            {activity.platform && (
-                                              <>
-                                                <span>•</span>
-                                                <span>{activity.platform}</span>
-                                              </>
-                                            )}
-                                          </div>
-                                        </div>
-                                        <div className="flex items-center gap-1">
-                                          <Button
-                                            variant="ghost"
-                                            size="icon"
-                                            className="h-8 w-8"
-                                            onClick={() => window.open(activity.url, "_blank")}
-                                          >
-                                            <ExternalLink className="h-3 w-3" />
-                                          </Button>
-                                          <Button
-                                            variant="ghost"
-                                            size="icon"
-                                            className="h-8 w-8"
-                                            onClick={() => handleOpenActivityDialog(objective._id, activity)}
-                                          >
-                                            <Edit2 className="h-3 w-3" />
-                                          </Button>
-                                          <Button
-                                            variant="ghost"
-                                            size="icon"
-                                            className="h-8 w-8 text-destructive hover:text-destructive"
-                                            onClick={() => handleDeleteActivity(activity._id)}
-                                          >
-                                            <Trash2 className="h-3 w-3" />
-                                          </Button>
-                                        </div>
-                                      </div>
-                                    ))}
-                                  </div>
-                                ) : (
-                                  <p className="text-sm text-muted-foreground text-center py-4">
-                                    No activities yet. Add videos, readings, or exercises for students.
-                                  </p>
+                            <div className="flex-1 min-w-0">
+                              <div className="flex items-center gap-2 flex-wrap">
+                                <p className="font-medium">{major.title}</p>
+                                {major.difficulty && (
+                                  <Badge className={getDifficultyColor(major.difficulty)}>
+                                    {major.difficulty}
+                                  </Badge>
                                 )}
+                                <Badge variant="outline">
+                                  {major.subObjectives?.length || 0} sub objectives
+                                </Badge>
                               </div>
+                              <p className="text-sm text-muted-foreground mt-1">
+                                {major.description}
+                              </p>
+                            </div>
+                            <div className="flex items-center gap-1">
+                              <Button
+                                variant="ghost"
+                                size="icon"
+                                className="h-8 w-8"
+                                onClick={() => handleOpenEditMajor(major)}
+                                title="Edit major"
+                              >
+                                <Edit2 className="h-4 w-4" />
+                              </Button>
+                              <Button
+                                variant="ghost"
+                                size="icon"
+                                className="h-8 w-8 text-destructive hover:text-destructive"
+                                onClick={() => handleDeleteMajor(major._id)}
+                                title="Delete major"
+                              >
+                                <Trash2 className="h-4 w-4" />
+                              </Button>
+                              <Button
+                                variant="outline"
+                                size="sm"
+                                onClick={() => handleOpenSubDialog(major)}
+                              >
+                                <Plus className="h-4 w-4 mr-1" />
+                                Add Sub
+                              </Button>
+                            </div>
+                          </div>
+
+                          <div className="border-t bg-muted/30 p-4 space-y-3">
+                            {major.subObjectives && major.subObjectives.length > 0 ? (
+                              major.subObjectives.map((sub: any) => {
+                                const isExpanded = expandedSubObjectiveId === sub._id;
+                                return (
+                                  <div key={sub._id} className="rounded-lg border bg-background overflow-hidden">
+                                    <div className="flex items-start gap-4 p-3">
+                                      <div className="p-2 rounded-lg bg-muted">
+                                        <BookOpen className="h-4 w-4 text-muted-foreground" />
+                                      </div>
+                                      <div className="flex-1 min-w-0">
+                                        <div className="flex items-center gap-2 flex-wrap">
+                                          <p className="text-sm font-medium">{sub.title}</p>
+                                          <Badge className={getDifficultyColor(sub.difficulty)}>
+                                            {sub.difficulty}
+                                          </Badge>
+                                        </div>
+                                        <p className="text-xs text-muted-foreground mt-1">
+                                          {sub.description}
+                                        </p>
+                                      </div>
+                                      <div className="flex items-center gap-1">
+                                        <Button
+                                          variant="ghost"
+                                          size="icon"
+                                          className="h-8 w-8"
+                                          onClick={() => handleOpenSubDialog(major, sub)}
+                                          title="Edit sub objective"
+                                        >
+                                          <Edit2 className="h-4 w-4" />
+                                        </Button>
+                                        <Button
+                                          variant="ghost"
+                                          size="icon"
+                                          className="h-8 w-8 text-destructive hover:text-destructive"
+                                          onClick={() => handleDeleteSubObjective(sub._id)}
+                                          title="Delete sub objective"
+                                        >
+                                          <Trash2 className="h-4 w-4" />
+                                        </Button>
+                                        <Button
+                                          variant="ghost"
+                                          size="sm"
+                                          onClick={() => setExpandedSubObjectiveId(isExpanded ? null : sub._id)}
+                                        >
+                                          {isExpanded ? (
+                                            <ChevronUp className="h-4 w-4" />
+                                          ) : (
+                                            <ChevronDown className="h-4 w-4" />
+                                          )}
+                                        </Button>
+                                        <Button
+                                          variant="outline"
+                                          size="sm"
+                                          onClick={() => handleAssignClick(sub)}
+                                        >
+                                          <Users className="h-4 w-4 mr-1" />
+                                          Assign
+                                        </Button>
+                                      </div>
+                                    </div>
+
+                                    {isExpanded && (
+                                      <div className="border-t bg-muted/20 p-4">
+                                        <div className="flex items-center justify-between mb-3">
+                                          <h4 className="text-sm font-medium">
+                                            Activities ({activities?.length || 0})
+                                          </h4>
+                                          <Button
+                                            size="sm"
+                                            variant="outline"
+                                            onClick={() => handleOpenActivityDialog(sub._id)}
+                                          >
+                                            <Plus className="h-3 w-3 mr-1" />
+                                            Add Activity
+                                          </Button>
+                                        </div>
+                                        {activities && activities.length > 0 ? (
+                                          <div className="space-y-2">
+                                            {activities.map((activity: any) => (
+                                              <div
+                                                key={activity._id}
+                                                className="flex items-center gap-3 p-3 bg-background rounded-lg border"
+                                              >
+                                                <div className="p-1.5 rounded bg-muted">
+                                                  {ACTIVITY_ICONS[activity.type as ActivityType] || <FileText className="h-4 w-4" />}
+                                                </div>
+                                                <div className="flex-1 min-w-0">
+                                                  <p className="text-sm font-medium truncate">
+                                                    {activity.title}
+                                                  </p>
+                                                  <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                                                    <span className="capitalize">{activity.type}</span>
+                                                    {activity.platform && (
+                                                      <>
+                                                        <span>•</span>
+                                                        <span>{activity.platform}</span>
+                                                      </>
+                                                    )}
+                                                  </div>
+                                                </div>
+                                                <div className="flex items-center gap-1">
+                                                  <Button
+                                                    variant="ghost"
+                                                    size="icon"
+                                                    className="h-8 w-8"
+                                                    onClick={() => window.open(activity.url, "_blank")}
+                                                  >
+                                                    <ExternalLink className="h-3 w-3" />
+                                                  </Button>
+                                                  <Button
+                                                    variant="ghost"
+                                                    size="icon"
+                                                    className="h-8 w-8"
+                                                    onClick={() => handleOpenActivityDialog(sub._id, activity)}
+                                                  >
+                                                    <Edit2 className="h-3 w-3" />
+                                                  </Button>
+                                                  <Button
+                                                    variant="ghost"
+                                                    size="icon"
+                                                    className="h-8 w-8 text-destructive hover:text-destructive"
+                                                    onClick={() => handleDeleteActivity(activity._id)}
+                                                  >
+                                                    <Trash2 className="h-3 w-3" />
+                                                  </Button>
+                                                </div>
+                                              </div>
+                                            ))}
+                                          </div>
+                                        ) : (
+                                          <p className="text-sm text-muted-foreground text-center py-4">
+                                            No activities yet. Add videos, readings, or exercises for students.
+                                          </p>
+                                        )}
+                                      </div>
+                                    )}
+                                  </div>
+                                );
+                              })
+                            ) : (
+                              <p className="text-sm text-muted-foreground text-center py-4">
+                                No sub objectives yet. Add the first sub objective for this major.
+                              </p>
                             )}
                           </div>
-                        );
-                      })}
+                        </div>
+                      ))}
                     </div>
                   ) : (
                     <div className="text-center py-8">
@@ -959,20 +1171,20 @@ export function ObjectivesPage() {
                         <BookOpen className="h-6 w-6 text-muted-foreground" />
                       </div>
                       <p className="text-muted-foreground">
-                        No objectives in this domain yet
+                        No major objectives in this domain yet
                       </p>
                       <Button
                         variant="link"
                         onClick={() => {
-                          setNewObjective({
-                            ...newObjective,
+                          setNewMajor({
+                            ...newMajor,
                             domainId: domain._id,
                           });
-                          setIsAddDialogOpen(true);
+                          setIsAddMajorDialogOpen(true);
                         }}
                         className="mt-2"
                       >
-                        Add the first objective
+                        Add the first major objective
                       </Button>
                     </div>
                   )}

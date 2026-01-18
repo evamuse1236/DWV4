@@ -4,6 +4,7 @@
  */
 
 export type ObjectiveStatus = "assigned" | "in_progress" | "viva_requested" | "mastered";
+export type SubObjectiveStatus = "assigned" | "in_progress" | "completed";
 export type GoalStatus = "not_started" | "in_progress" | "completed";
 export type BookStatus = "reading" | "completed" | "presentation_requested" | "presented";
 
@@ -15,6 +16,12 @@ export const objectiveStatusConfig: Record<ObjectiveStatus, { label: string; var
   in_progress: { label: "In Progress", variant: "warning", emoji: "🔄" },
   viva_requested: { label: "Viva Requested", variant: "info", emoji: "🙋" },
   mastered: { label: "Mastered!", variant: "success", emoji: "🏆" },
+};
+
+export const subObjectiveStatusConfig: Record<SubObjectiveStatus, { label: string; variant: string; emoji: string }> = {
+  assigned: { label: "Not Started", variant: "default", emoji: "📌" },
+  in_progress: { label: "In Progress", variant: "warning", emoji: "🔧" },
+  completed: { label: "Completed", variant: "success", emoji: "✅" },
 };
 
 /**
@@ -60,12 +67,24 @@ export const objectiveStatusColors: Record<ObjectiveStatus, { bg: string; text: 
   mastered: { bg: "bg-[#15803d]/10", text: "text-[#15803d]" },
 };
 
+export const subObjectiveStatusColors: Record<SubObjectiveStatus, { bg: string; text: string }> = {
+  assigned: { bg: "bg-black/5", text: "text-[#888]" },
+  in_progress: { bg: "bg-[#0ea5e9]/10", text: "text-[#0ea5e9]" },
+  completed: { bg: "bg-[#15803d]/10", text: "text-[#15803d]" },
+};
+
 // Objective status labels for inline display
 export const objectiveStatusLabels: Record<ObjectiveStatus, string> = {
   assigned: "Assigned",
   in_progress: "In Progress",
   viva_requested: "Viva Requested",
   mastered: "Mastered",
+};
+
+export const subObjectiveStatusLabels: Record<SubObjectiveStatus, string> = {
+  assigned: "Assigned",
+  in_progress: "In Progress",
+  completed: "Completed",
 };
 
 // Goal status colors for inline styling
@@ -103,6 +122,11 @@ export const bookStatusBadgeColors: Record<BookStatus, { bg: string; text: strin
  */
 export function getObjectiveStatusClass(status: ObjectiveStatus): string {
   const colors = objectiveStatusColors[status];
+  return `${colors.bg} ${colors.text}`;
+}
+
+export function getSubObjectiveStatusClass(status: SubObjectiveStatus): string {
+  const colors = subObjectiveStatusColors[status];
   return `${colors.bg} ${colors.text}`;
 }
 

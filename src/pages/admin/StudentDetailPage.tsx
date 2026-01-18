@@ -33,7 +33,6 @@ import {
   Target,
   Plus,
   Trash2,
-  Check,
   Clock,
   AlertCircle,
   Award,
@@ -49,43 +48,40 @@ export function StudentDetailPage() {
   const navigate = useNavigate();
   const { user } = useAuth();
 
-  // Queries
   const student = useQuery(
     api.users.getById,
     studentId ? { userId: studentId as any } : "skip"
   );
-  const assignedObjectives = useQuery(
+  const assignedMajors = useQuery(
     api.objectives.getAssignedToStudent,
     studentId ? { userId: studentId as any } : "skip"
   );
   const domains = useQuery(api.domains.getAll);
-  const allObjectives = useQuery(api.objectives.getAll);
+  const allSubObjectives = useQuery(api.objectives.getAllSubObjectives);
 
-  // Mutations
   const assignObjective = useMutation(api.objectives.assignToStudent);
   const unassignObjective = useMutation(api.objectives.unassignFromStudent);
 
-  // State
   const [isAssignDialogOpen, setIsAssignDialogOpen] = useState(false);
   const [selectedDomainId, setSelectedDomainId] = useState<string>("all");
-  const [selectedObjectiveId, setSelectedObjectiveId] = useState<string>("");
+  const [selectedSubObjectiveId, setSelectedSubObjectiveId] = useState<string>("");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  // Get objectives already assigned to this student
-  const assignedObjectiveIds = new Set(
-    assignedObjectives?.map((a: any) => a.objectiveId) || []
+  const assignedSubObjectiveIds = new Set(
+    assignedMajors?.flatMap((major: any) =>
+      major.subObjectives.map((sub: any) => sub.objective._id)
+    ) || []
   );
 
-  // Filter available objectives (not already assigned)
-  const availableObjectives = allObjectives?.filter(
+  const availableSubObjectives = allSubObjectives?.filter(
     (obj: any) =>
-      !assignedObjectiveIds.has(obj._id) &&
+      !assignedSubObjectiveIds.has(obj._id) &&
       (selectedDomainId === "all" || obj.domainId === selectedDomainId)
   );
 
   const handleAssignObjective = async () => {
-    if (!user?._id || !studentId || !selectedObjectiveId) return;
+    if (!user?._id || !studentId || !selectedSubObjectiveId) return;
 
     setIsLoading(true);
     setError(null);
@@ -93,12 +89,12 @@ export function StudentDetailPage() {
     try {
       await assignObjective({
         userId: studentId as any,
-        objectiveId: selectedObjectiveId as any,
+        objectiveId: selectedSubObjectiveId as any,
         assignedBy: user._id as any,
       });
 
       setIsAssignDialogOpen(false);
-      setSelectedObjectiveId("");
+      setSelectedSubObjectiveId("");
       setSelectedDomainId("all");
     } catch (err) {
       setError("Failed to assign objective");
@@ -109,7 +105,7 @@ export function StudentDetailPage() {
 
   const handleUnassignObjective = async (objectiveId: string) => {
     if (!studentId) return;
-    if (!confirm("Are you sure you want to unassign this objective from the student?")) return;
+    if (!confirm("Are you sure you want to unassign this sub objective from the student?")) return;
 
     try {
       await unassignObjective({
@@ -152,30 +148,28 @@ export function StudentDetailPage() {
     );
   }
 
-  // Group objectives by domain
-  const objectivesByDomain = assignedObjectives?.reduce((acc: any, assignment: any) => {
-    const domainId = assignment.domain?._id || "unknown";
+  const majorsByDomain = assignedMajors?.reduce((acc: any, entry: any) => {
+    const domainId = entry.domain?._id || "unknown";
     if (!acc[domainId]) {
       acc[domainId] = {
-        domain: assignment.domain,
-        objectives: [],
+        domain: entry.domain,
+        majors: [],
       };
     }
-    acc[domainId].objectives.push(assignment);
+    acc[domainId].majors.push(entry);
     return acc;
   }, {});
 
-  // Calculate stats
-  const totalAssigned = assignedObjectives?.length || 0;
-  const masteredCount = assignedObjectives?.filter((a: any) => a.status === "mastered").length || 0;
-  const inProgressCount = assignedObjectives?.filter((a: any) => a.status === "in_progress").length || 0;
-  const vivaRequestedCount = assignedObjectives?.filter((a: any) => a.status === "viva_requested").length || 0;
+  const totalAssigned = assignedMajors?.length || 0;
+  const masteredCount = assignedMajors?.filter((a: any) => a.assignment?.status === "mastered").length || 0;
+  const inProgressCount = assignedMajors?.filter((a: any) => a.assignment?.status === "in_progress").length || 0;
+  const vivaRequestedCount = assignedMajors?.filter((a: any) => a.assignment?.status === "viva_requested").length || 0;
 
   return (
     <div className="space-y-6">
-      {/* Back button and header */}
       <div className="flex items-center gap-4">
-        <Button variant="ghost" size="icon" onClick={() => navigate("/admin/students")}>
+        <Button variant="ghost" size="icon" onClick={() => navigate("/admin/students")}
+        >
           <ArrowLeft className="h-5 w-5" />
         </Button>
         <div>
@@ -186,7 +180,6 @@ export function StudentDetailPage() {
         </div>
       </div>
 
-      {/* Student info card */}
       <Card>
         <CardContent className="pt-6">
           <div className="flex flex-col sm:flex-row sm:items-center gap-6">
@@ -235,13 +228,12 @@ export function StudentDetailPage() {
         </CardContent>
       </Card>
 
-      {/* Assign Objective Dialog */}
       <Dialog open={isAssignDialogOpen} onOpenChange={setIsAssignDialogOpen}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Assign Objective</DialogTitle>
+            <DialogTitle>Assign Sub Objective</DialogTitle>
             <DialogDescription>
-              Select an objective to assign to {student.displayName}
+              Select a sub objective to assign to {student.displayName}
             </DialogDescription>
           </DialogHeader>
           <div className="space-y-4 py-4">
@@ -260,28 +252,29 @@ export function StudentDetailPage() {
                   <SelectItem value="all">All domains</SelectItem>
                   {domains?.map((domain: any) => (
                     <SelectItem key={domain._id} value={domain._id}>
-                      {domain.icon} {domain.name}
+                      {domain.name}
                     </SelectItem>
                   ))}
                 </SelectContent>
               </Select>
             </div>
+
             <div className="space-y-2">
-              <label className="text-sm font-medium">Select Objective *</label>
-              <Select value={selectedObjectiveId} onValueChange={setSelectedObjectiveId}>
+              <label className="text-sm font-medium">Select Sub Objective *</label>
+              <Select value={selectedSubObjectiveId} onValueChange={setSelectedSubObjectiveId}>
                 <SelectTrigger>
-                  <SelectValue placeholder="Choose an objective" />
+                  <SelectValue placeholder="Choose a sub objective" />
                 </SelectTrigger>
                 <SelectContent>
-                  {availableObjectives && availableObjectives.length > 0 ? (
-                    availableObjectives.map((obj: any) => (
+                  {availableSubObjectives && availableSubObjectives.length > 0 ? (
+                    availableSubObjectives.map((obj: any) => (
                       <SelectItem key={obj._id} value={obj._id}>
-                        {obj.title}
+                        {obj.majorObjective?.title ? `${obj.majorObjective.title} → ` : ""}{obj.title}
                       </SelectItem>
                     ))
                   ) : (
                     <SelectItem value="none" disabled>
-                      No available objectives
+                      No available sub objectives
                     </SelectItem>
                   )}
                 </SelectContent>
@@ -294,7 +287,7 @@ export function StudentDetailPage() {
             </Button>
             <Button
               onClick={handleAssignObjective}
-              disabled={isLoading || !selectedObjectiveId}
+              disabled={isLoading || !selectedSubObjectiveId || selectedSubObjectiveId === "none"}
             >
               {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
               Assign
@@ -303,7 +296,6 @@ export function StudentDetailPage() {
         </DialogContent>
       </Dialog>
 
-      {/* Assigned Objectives */}
       <Card>
         <CardHeader>
           <div className="flex items-center justify-between">
@@ -314,54 +306,54 @@ export function StudentDetailPage() {
               </CardDescription>
             </div>
             <Button onClick={() => setIsAssignDialogOpen(true)}>
-              <Plus className="mr-2 h-4 w-4" />
-              Assign Objective
+              <Plus className="h-4 w-4 mr-2" />
+              Assign Sub Objective
             </Button>
           </div>
         </CardHeader>
         <CardContent>
-          {assignedObjectives && assignedObjectives.length > 0 ? (
+          {assignedMajors && assignedMajors.length > 0 ? (
             <div className="space-y-6">
-              {Object.entries(objectivesByDomain || {}).map(([domainId, group]: [string, any]) => (
-                <div key={domainId}>
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xl">{group.domain?.icon || "📚"}</span>
+              {Object.entries(majorsByDomain || {}).map(([domainId, group]: [string, any]) => (
+                <div key={domainId} className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <Target className="h-4 w-4 text-primary" />
                     <h3 className="font-semibold">{group.domain?.name || "Unknown Domain"}</h3>
-                    <Badge variant="secondary" className="ml-auto">
-                      {group.objectives.length} objective{group.objectives.length !== 1 ? "s" : ""}
-                    </Badge>
+                    <Badge variant="outline">{group.majors.length} majors</Badge>
                   </div>
-                  <div className="space-y-2 ml-8">
-                    {group.objectives.map((assignment: any) => (
-                      <div
-                        key={assignment._id}
-                        className="flex items-center gap-4 p-3 rounded-lg border bg-card hover:bg-accent/50 transition-colors"
-                      >
-                        <div className="p-2 rounded-lg bg-primary/10">
-                          <Target className="h-4 w-4 text-primary" />
+
+                  <div className="space-y-3">
+                    {group.majors.map((major: any) => (
+                      <div key={major.majorObjective._id} className="rounded-lg border bg-card">
+                        <div className="p-4 flex items-start justify-between gap-4">
+                          <div>
+                            <p className="font-medium">{major.majorObjective.title}</p>
+                            <p className="text-sm text-muted-foreground mt-1">
+                              {major.majorObjective.description}
+                            </p>
+                            <div className="mt-2">
+                              {getStatusBadge(major.assignment?.status || "assigned")}
+                            </div>
+                          </div>
                         </div>
-                        <div className="flex-1 min-w-0">
-                          <p className="font-medium">{assignment.objective?.title}</p>
-                          <p className="text-sm text-muted-foreground truncate">
-                            {assignment.objective?.description}
-                          </p>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          {getStatusBadge(assignment.status)}
-                          {assignment.status !== "mastered" && (
-                            <Button
-                              variant="ghost"
-                              size="icon"
-                              className="h-8 w-8 text-destructive hover:text-destructive"
-                              onClick={() => handleUnassignObjective(assignment.objectiveId)}
-                              title="Unassign objective"
-                            >
-                              <Trash2 className="h-4 w-4" />
-                            </Button>
-                          )}
-                          {assignment.status === "mastered" && (
-                            <Check className="h-5 w-5 text-green-600" />
-                          )}
+                        <div className="border-t bg-muted/20 p-4 space-y-2">
+                          {major.subObjectives.map((sub: any) => (
+                            <div key={sub._id} className="flex items-center justify-between gap-3 p-2 rounded bg-background">
+                              <div>
+                                <p className="text-sm font-medium">{sub.objective.title}</p>
+                                <p className="text-xs text-muted-foreground">{sub.objective.description}</p>
+                              </div>
+                              <Button
+                                variant="ghost"
+                                size="icon"
+                                className="h-8 w-8 text-destructive hover:text-destructive"
+                                onClick={() => handleUnassignObjective(sub.objective._id)}
+                                title="Unassign sub objective"
+                              >
+                                <Trash2 className="h-4 w-4" />
+                              </Button>
+                            </div>
+                          ))}
                         </div>
                       </div>
                     ))}
@@ -370,17 +362,17 @@ export function StudentDetailPage() {
               ))}
             </div>
           ) : (
-            <div className="text-center py-12">
-              <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center mx-auto mb-4">
-                <Target className="h-6 w-6 text-muted-foreground" />
-              </div>
+            <div className="text-center py-8">
               <p className="text-muted-foreground">No objectives assigned yet</p>
-              <p className="text-sm text-muted-foreground mb-4">
+              <p className="text-sm text-muted-foreground">
                 Assign learning objectives to track this student's progress
               </p>
-              <Button onClick={() => setIsAssignDialogOpen(true)}>
-                <Plus className="mr-2 h-4 w-4" />
-                Assign First Objective
+              <Button
+                variant="outline"
+                className="mt-4"
+                onClick={() => setIsAssignDialogOpen(true)}
+              >
+                Assign First Sub Objective
               </Button>
             </div>
           )}

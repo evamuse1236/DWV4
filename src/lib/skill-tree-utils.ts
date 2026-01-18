@@ -10,13 +10,15 @@ export const CENTER = { x: 400, y: 400 };
 
 // Node sizes
 export const SUBJECT_NODE_SIZE = 120;
-export const SKILL_NODE_SIZE = 60;
+export const MAJOR_NODE_SIZE = 86;
+export const SUB_NODE_SIZE = 54;
 
-// Distance tiers for skill nodes based on difficulty
-export const DIFFICULTY_DISTANCES: Record<string, number> = {
-  beginner: 160,
-  intermediate: 240,
-  advanced: 320,
+// Distances for tree depth - relative to parent node
+export const MAJOR_DISTANCE = 220; // Distance from Subject node
+export const SUB_DIFFICULTY_DISTANCES: Record<string, number> = {
+  beginner: 140,    // Distance from Major node
+  intermediate: 180,
+  advanced: 220,
 };
 
 // Subject distance from center
@@ -24,7 +26,6 @@ export const SUBJECT_DISTANCE = 180;
 
 // Domain configuration with angles, colors, and icons
 export interface DomainConfig {
-  angle: number; // degrees from 12 o'clock position
   color: string; // CSS variable or hex color
   colorClass: string; // CSS class for background
   iconName: string; // Phosphor icon name
@@ -32,54 +33,49 @@ export interface DomainConfig {
 
 /**
  * Get domain configuration based on domain name
- * Maps domain names to fixed positions around the circle
+ * Maps domain names to colors and icons
  */
 export function getDomainConfig(domainName: string): DomainConfig {
   const name = domainName.toLowerCase();
 
-  // Coding/Engineering → top (12 o'clock)
+  // Coding/Engineering
   if (name.includes("cod") || name.includes("engineer") || name.includes("programming")) {
     return {
-      angle: -90,
       color: "var(--skill-col-coding)",
       colorClass: "subject-coding",
       iconName: "Code",
     };
   }
 
-  // Maths/Mathematics → bottom-left (7 o'clock)
+  // Maths/Mathematics
   if (name.includes("math")) {
     return {
-      angle: 150,
       color: "var(--skill-col-maths)",
       colorClass: "subject-maths",
       iconName: "Function",
     };
   }
 
-  // Reading/Literature → bottom-right (5 o'clock)
+  // Reading/Literature
   if (name.includes("read") || name.includes("liter") || name.includes("book")) {
     return {
-      angle: 30,
       color: "var(--skill-col-reading)",
       colorClass: "subject-reading",
       iconName: "BookOpen",
     };
   }
 
-  // Writing → right side (3 o'clock)
+  // Writing
   if (name.includes("writ") || name.includes("essay") || name.includes("composition")) {
     return {
-      angle: -30,
       color: "var(--skill-col-writing)",
       colorClass: "subject-writing",
       iconName: "Star",
     };
   }
 
-  // Default fallback - use a neutral position
+  // Default fallback
   return {
-    angle: 90,
     color: "#f3f4f6",
     colorClass: "",
     iconName: "Star",
@@ -94,7 +90,7 @@ export function polarToCartesian(
   distance: number,
   center = CENTER
 ): { x: number; y: number } {
-  const angleRadians = angleDegrees * (Math.PI / 180);
+  const angleRadians = (angleDegrees - 90) * (Math.PI / 180); // -90 to start from top
   return {
     x: center.x + distance * Math.cos(angleRadians),
     y: center.y + distance * Math.sin(angleRadians),
@@ -102,21 +98,24 @@ export function polarToCartesian(
 }
 
 /**
- * Calculate subject node position based on domain config
+ * Calculate subject node position based on index and total count
+ * Distributes subjects evenly around the circle
  */
-export function getSubjectPosition(domainName: string): { x: number; y: number } {
-  const config = getDomainConfig(domainName);
-  return polarToCartesian(config.angle, SUBJECT_DISTANCE);
+export function getSubjectPosition(index: number, total: number): { x: number; y: number; angle: number } {
+  const angle = (360 / total) * index;
+  const pos = polarToCartesian(angle, SUBJECT_DISTANCE);
+  return { ...pos, angle };
 }
 
 /**
  * Objective with calculated position
  */
-export interface PositionedObjective {
+export interface PositionedSkillNode {
   id: string;
+  type: "major" | "sub";
   title: string;
   description: string;
-  difficulty: string;
+  difficulty?: string;
   position: { x: number; y: number };
   parentPosition: { x: number; y: number };
   parentId: string | null; // ID of parent objective or 'root' for subject node
@@ -124,125 +123,90 @@ export interface PositionedObjective {
 }
 
 /**
- * Calculate positions for all skill nodes in a domain
+ * Calculate positions for major and sub objectives in a domain
  *
  * Algorithm:
- * 1. Group objectives by difficulty tier
- * 2. Sort by createdAt within each tier for stable ordering
- * 3. Spread nodes evenly within ±30° of parent's angle
- * 4. Beginner → connects to subject (root)
- * 5. Intermediate → connects to oldest beginner
- * 6. Advanced → connects to oldest intermediate
+ * 1. Subject node is the center of the skill tree
+ * 2. Major objectives spread evenly around 360° from the subject
+ * 3. Sub objectives branch outward from their parent major
  */
-export function calculateSkillPositions(
-  objectives: Array<{
-    _id: Id<"learningObjectives">;
+export function calculateSkillTreePositions(
+  majors: Array<{
+    _id: Id<"majorObjectives">;
     title: string;
     description: string;
-    difficulty: "beginner" | "intermediate" | "advanced";
     createdAt: number;
+    subObjectives: Array<{
+      _id: Id<"learningObjectives">;
+      title: string;
+      description: string;
+      difficulty: "beginner" | "intermediate" | "advanced";
+      createdAt: number;
+    }>;
   }>,
-  domainAngle: number
-): PositionedObjective[] {
-  if (!objectives.length) return [];
+  _domainAngle: number // kept for API compatibility
+): PositionedSkillNode[] {
+  if (!majors.length) return [];
 
-  // Sort by createdAt for stable ordering
-  const sorted = [...objectives].sort((a, b) => a.createdAt - b.createdAt);
+  const sortedMajors = [...majors].sort((a, b) => a.createdAt - b.createdAt);
 
-  // Group by difficulty
-  const byDifficulty = {
-    beginner: sorted.filter(o => o.difficulty === "beginner"),
-    intermediate: sorted.filter(o => o.difficulty === "intermediate"),
-    advanced: sorted.filter(o => o.difficulty === "advanced"),
-  };
+  // When expanded, the subject becomes the CENTER of the skill tree
+  // Use the canvas center as the origin for the tree
+  const subjectPosition = CENTER;
 
-  const positioned: PositionedObjective[] = [];
-  const rootPosition = polarToCartesian(domainAngle, SUBJECT_DISTANCE);
+  const positioned: PositionedSkillNode[] = [];
 
-  // Spread angle range (±30° from parent)
-  const spreadRange = 60;
+  // Distribute majors evenly around 360° from the subject node
+  sortedMajors.forEach((major, index) => {
+    // Each major gets an even slice of the circle
+    const majorAngle = (360 / sortedMajors.length) * index;
 
-  // Position beginner nodes (connect to subject/root)
-  if (byDifficulty.beginner.length > 0) {
-    const beginnerAngles = distributeAngles(
-      domainAngle,
-      spreadRange,
-      byDifficulty.beginner.length
+    // Position major relative to subject (subject is the new center)
+    const majorPosition = polarToCartesian(majorAngle, MAJOR_DISTANCE, subjectPosition);
+
+    positioned.push({
+      id: major._id,
+      type: "major",
+      title: major.title,
+      description: major.description,
+      position: majorPosition,
+      parentPosition: subjectPosition,
+      parentId: null,
+      createdAt: major.createdAt,
+    });
+
+    const sortedSubs = [...major.subObjectives].sort(
+      (a, b) => a.createdAt - b.createdAt
     );
 
-    byDifficulty.beginner.forEach((obj, i) => {
+    if (sortedSubs.length === 0) return;
+
+    // Subs fan out from the major, centered on the same angle (pointing outward)
+    const subSpread = Math.min(60, 20 + sortedSubs.length * 15);
+    const subAngles = distributeAngles(majorAngle, subSpread, sortedSubs.length);
+
+    sortedSubs.forEach((sub, subIndex) => {
+      const distance =
+        SUB_DIFFICULTY_DISTANCES[sub.difficulty] ||
+        SUB_DIFFICULTY_DISTANCES.beginner;
+
+      // Position sub relative to the major node (branching outward)
+      const subPosition = polarToCartesian(subAngles[subIndex], distance, majorPosition);
+
       positioned.push({
-        id: obj._id,
-        title: obj.title,
-        description: obj.description,
-        difficulty: obj.difficulty,
-        position: polarToCartesian(beginnerAngles[i], DIFFICULTY_DISTANCES.beginner),
-        parentPosition: rootPosition,
-        parentId: null, // Root
-        createdAt: obj.createdAt,
+        id: sub._id,
+        type: "sub",
+        title: sub.title,
+        description: sub.description,
+        difficulty: sub.difficulty,
+        position: subPosition,
+        parentPosition: majorPosition,
+        parentId: major._id,
+        createdAt: sub.createdAt,
       });
     });
-  }
+  });
 
-  // Position intermediate nodes (connect to oldest beginner)
-  if (byDifficulty.intermediate.length > 0) {
-    // Find the oldest beginner to connect to
-    const oldestBeginner = positioned.find(p => p.difficulty === "beginner");
-    const parentPos = oldestBeginner?.position || rootPosition;
-    const parentAngle = oldestBeginner
-      ? Math.atan2(parentPos.y - CENTER.y, parentPos.x - CENTER.x) * (180 / Math.PI)
-      : domainAngle;
-
-    const intermediateAngles = distributeAngles(
-      parentAngle,
-      spreadRange * 0.8, // Slightly narrower spread
-      byDifficulty.intermediate.length
-    );
-
-    byDifficulty.intermediate.forEach((obj, i) => {
-      positioned.push({
-        id: obj._id,
-        title: obj.title,
-        description: obj.description,
-        difficulty: obj.difficulty,
-        position: polarToCartesian(intermediateAngles[i], DIFFICULTY_DISTANCES.intermediate),
-        parentPosition: parentPos,
-        parentId: oldestBeginner?.id || null,
-        createdAt: obj.createdAt,
-      });
-    });
-  }
-
-  // Position advanced nodes (connect to oldest intermediate)
-  if (byDifficulty.advanced.length > 0) {
-    // Find the oldest intermediate to connect to
-    const oldestIntermediate = positioned.find(p => p.difficulty === "intermediate");
-    const parentPos = oldestIntermediate?.position
-      || positioned.find(p => p.difficulty === "beginner")?.position
-      || rootPosition;
-    const parentAngle = Math.atan2(parentPos.y - CENTER.y, parentPos.x - CENTER.x) * (180 / Math.PI);
-
-    const advancedAngles = distributeAngles(
-      parentAngle,
-      spreadRange * 0.6, // Even narrower
-      byDifficulty.advanced.length
-    );
-
-    byDifficulty.advanced.forEach((obj, i) => {
-      positioned.push({
-        id: obj._id,
-        title: obj.title,
-        description: obj.description,
-        difficulty: obj.difficulty,
-        position: polarToCartesian(advancedAngles[i], DIFFICULTY_DISTANCES.advanced),
-        parentPosition: parentPos,
-        parentId: oldestIntermediate?.id || positioned.find(p => p.difficulty === "beginner")?.id || null,
-        createdAt: obj.createdAt,
-      });
-    });
-  }
-
-  // Check for collisions and adjust if needed
   return resolveCollisions(positioned);
 }
 
@@ -261,9 +225,9 @@ function distributeAngles(baseAngle: number, rangeSpread: number, count: number)
 /**
  * Resolve collisions between nodes by pushing them apart
  */
-function resolveCollisions(nodes: PositionedObjective[]): PositionedObjective[] {
-  const MIN_DISTANCE = 70; // Minimum pixels between node centers
-  const MAX_ITERATIONS = 10;
+function resolveCollisions(nodes: PositionedSkillNode[]): PositionedSkillNode[] {
+  const MIN_DISTANCE = 85; // Minimum pixels between node centers
+  const MAX_ITERATIONS = 20;
 
   for (let iteration = 0; iteration < MAX_ITERATIONS; iteration++) {
     let hadCollision = false;

@@ -2,7 +2,7 @@ import { useState, useMemo } from "react";
 import { useQuery } from "convex/react";
 import { api } from "../../../convex/_generated/api";
 import { useAuth } from "../../hooks/useAuth";
-import { SkillTreeCanvas, DetailsPanel } from "../../components/skill-tree";
+import { SkillTreeCanvas, ObjectivePopover } from "../../components/skill-tree";
 import type { Id } from "../../../convex/_generated/dataModel";
 import styles from "../../components/skill-tree/skill-tree.module.css";
 
@@ -12,7 +12,7 @@ import styles from "../../components/skill-tree/skill-tree.module.css";
  * A gamified learning interface showing:
  * - Subject nodes (domains) arranged in a circle
  * - Skill nodes (objectives) branching from subjects
- * - Activity checklist in side panel
+ * - Activity checklist in left panel
  * - Viva request workflow
  */
 export function DeepWorkPage() {
@@ -20,7 +20,7 @@ export function DeepWorkPage() {
 
   // Selection state
   const [selectedDomainId, setSelectedDomainId] = useState<string | null>(null);
-  const [selectedObjectiveId, setSelectedObjectiveId] = useState<string | null>(null);
+  const [selectedNode, setSelectedNode] = useState<{ type: "major" | "sub"; id: string } | null>(null);
 
   // Fetch tree data (domains + objectives grouped by domain)
   const treeData = useQuery(
@@ -30,27 +30,60 @@ export function DeepWorkPage() {
 
   // Extract domains and objectives
   const domains = treeData?.domains ?? [];
-  const objectivesByDomain = treeData?.objectivesByDomain ?? {};
+  const majorsByDomain = treeData?.majorsByDomain ?? {};
 
-  // Find selected objective for details panel
-  const selectedObjective = useMemo(() => {
-    if (!selectedDomainId || !selectedObjectiveId) return null;
+  const selectedNodeDetails = useMemo(() => {
+    if (!selectedDomainId || !selectedNode) return null;
 
-    const domainObjectives = objectivesByDomain[selectedDomainId] ?? [];
-    return domainObjectives.find(
-      (o: any) => o.objective._id === selectedObjectiveId
-    ) ?? null;
-  }, [selectedDomainId, selectedObjectiveId, objectivesByDomain]);
+    const domainMajors = majorsByDomain[selectedDomainId] ?? [];
 
-  // Get selected domain name for panel
+    if (selectedNode.type === "major") {
+      const entry = domainMajors.find(
+        (major: any) => major.majorObjective._id === selectedNode.id
+      );
+      return entry
+        ? { type: "major" as const, data: entry }
+        : null;
+    }
+
+    const majorEntry = domainMajors.find((major: any) =>
+      major.subObjectives.some(
+        (sub: any) => sub.objective._id === selectedNode.id
+      )
+    );
+
+    if (!majorEntry) return null;
+    const subObjective = majorEntry.subObjectives.find(
+      (sub: any) => sub.objective._id === selectedNode.id
+    );
+
+    if (!subObjective) return null;
+
+    return {
+      type: "sub" as const,
+      data: {
+        majorObjective: majorEntry.majorObjective,
+        subObjective,
+      },
+    };
+  }, [selectedDomainId, selectedNode, majorsByDomain]);
+
+  // Get selected domain name for popover
   const selectedDomainName = useMemo(() => {
     if (!selectedDomainId) return null;
     return domains.find((d: any) => d._id === selectedDomainId)?.name ?? null;
   }, [selectedDomainId, domains]);
 
-  // Handle objective selection
-  const handleSelectObjective = (objective: any | null) => {
-    setSelectedObjectiveId(objective?.objective?._id ?? null);
+  // Handle objective selection (position no longer needed)
+  const handleSelectNode = (
+    node: { type: "major" | "sub"; id: string } | null
+  ) => {
+    setSelectedNode(node);
+  };
+
+  // Handle panel close (clicking backdrop)
+  const handleClosePanel = () => {
+    setSelectedNode(null);
   };
 
   // Loading state
@@ -91,6 +124,9 @@ export function DeepWorkPage() {
     );
   }
 
+  // Whether panel is open (node selected)
+  const isPanelOpen = selectedNode !== null;
+
   return (
     <div className={styles['deep-work-theme']}>
       <div className={styles['watercolor-bg']}>
@@ -98,22 +134,32 @@ export function DeepWorkPage() {
         <div className={styles.blob} style={{ width: '400px', height: '400px', background: '#E0F2F1', bottom: '10%', right: '20%' }}></div>
       </div>
 
-      <div className="page-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 450px', height: '100vh', width: '100%', overflow: 'hidden' }}>
-        {/* Left: Skill Tree Canvas */}
+      <div className="w-full h-screen overflow-hidden relative">
+        {/* Backdrop - click to close panel */}
+        {isPanelOpen && (
+          <div
+            className={styles['canvas-backdrop']}
+            onClick={handleClosePanel}
+            aria-label="Close panel"
+          />
+        )}
+
+        {/* Skill Tree Canvas */}
         <SkillTreeCanvas
           domains={domains}
-          objectivesByDomain={objectivesByDomain}
+          majorsByDomain={majorsByDomain}
           selectedDomainId={selectedDomainId}
-          selectedObjectiveId={selectedObjectiveId}
+          selectedNode={selectedNode}
           onSelectDomain={setSelectedDomainId}
-          onSelectObjective={handleSelectObjective}
+          onSelectNode={handleSelectNode}
         />
 
-        {/* Right: Details Panel */}
-        <DetailsPanel
+        {/* Left Panel (Details) */}
+        <ObjectivePopover
           userId={user._id as Id<"users">}
           domainName={selectedDomainName}
-          selectedObjective={selectedObjective}
+          selectedNode={selectedNodeDetails}
+          onClose={handleClosePanel}
         />
       </div>
     </div>

@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { generateConnectionPath } from "../../lib/skill-tree-utils";
-import type { PositionedObjective } from "../../lib/skill-tree-utils";
+import type { PositionedSkillNode } from "../../lib/skill-tree-utils";
 import { cn } from "../../lib/utils";
 import styles from "./skill-tree.module.css";
 
 interface SVGConnectionsProps {
-  objectives: PositionedObjective[];
+  objectives: PositionedSkillNode[];
   subjectPosition: { x: number; y: number };
   isVisible: boolean;
   baseDelay?: number; // Base delay before lines start appearing
