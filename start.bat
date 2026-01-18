@@ -5,17 +5,17 @@
 echo Starting DW app...
 echo.
 
-:: Set the project directory
-cd /d C:\projects\DWV4
+:: Use the directory where this batch file is located
+cd /d "%~dp0"
 
 :: Start Convex dev server in one terminal
-start "Convex Dev" cmd /k "cd /d C:\projects\DWV4 && bunx convex dev"
+start "Convex Dev" cmd /k "cd /d "%~dp0" && bunx convex dev"
 
 :: Wait a moment for Convex to initialize
 timeout /t 3 /nobreak > nul
 
 :: Start Vite dev server in another terminal
-start "Vite Dev" cmd /k "cd /d C:\projects\DWV4 && bun run dev"
+start "Vite Dev" cmd /k "cd /d "%~dp0" && bun run dev"
 
 echo.
 echo Both servers starting in separate windows:
