@@ -85,6 +85,45 @@ export function HorizontalTreeCanvas({
     const [showSkills, setShowSkills] = useState(false);
     const containerRef = useRef<HTMLDivElement>(null);
 
+    // Animation state - tree content visibility only (domain slides via CSS animation)
+    const [showTreeContent, setShowTreeContent] = useState(false);
+
+    // Drag-to-scroll state
+    const isDragging = useRef(false);
+    const startX = useRef(0);
+    const scrollLeft = useRef(0);
+
+    // Drag-to-scroll handlers
+    const handleMouseDown = useCallback((e: React.MouseEvent) => {
+        if (!containerRef.current) return;
+        isDragging.current = true;
+        startX.current = e.pageX - containerRef.current.offsetLeft;
+        scrollLeft.current = containerRef.current.scrollLeft;
+        containerRef.current.style.cursor = 'grabbing';
+    }, []);
+
+    const handleMouseUp = useCallback(() => {
+        isDragging.current = false;
+        if (containerRef.current) {
+            containerRef.current.style.cursor = 'grab';
+        }
+    }, []);
+
+    const handleMouseMove = useCallback((e: React.MouseEvent) => {
+        if (!isDragging.current || !containerRef.current) return;
+        e.preventDefault();
+        const x = e.pageX - containerRef.current.offsetLeft;
+        const walk = (x - startX.current) * 1.5; // Scroll speed multiplier
+        containerRef.current.scrollLeft = scrollLeft.current - walk;
+    }, []);
+
+    const handleMouseLeave = useCallback(() => {
+        isDragging.current = false;
+        if (containerRef.current) {
+            containerRef.current.style.cursor = 'grab';
+        }
+    }, []);
+
     // Status mapping logic (reused from SkillTreeCanvas for consistency)
     const subStatusByObjectiveId = useMemo(() => {
         const map = new Map<string, { status: string; completed: boolean }>();
@@ -145,14 +184,25 @@ export function HorizontalTreeCanvas({
         );
 
         setPositionedNodes(positioned);
-
-        // Animate in
-        const timer = setTimeout(() => {
-            setShowSkills(true);
-        }, 100);
-
-        return () => clearTimeout(timer);
     }, [domain, majors]);
+
+    // Entry animation: show tree after a short delay (domain slides via CSS)
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowTreeContent(true);
+            setShowSkills(true);
+        }, 400); // Delay to let domain slide animation start
+        return () => clearTimeout(timer);
+    }, []);
+
+    // Handle back - simplified, tree fades first then navigate
+    const handleBack = useCallback(() => {
+        setShowTreeContent(false);
+        setShowSkills(false);
+        setTimeout(() => {
+            onBack();
+        }, 300);
+    }, [onBack]);
 
     // Scroll active node into view if needed
     useEffect(() => {
@@ -170,6 +220,23 @@ export function HorizontalTreeCanvas({
             }
         }
     }, [selectedNode, positionedNodes]);
+
+    // Enable wheel-to-horizontal scroll for premium feel
+    useEffect(() => {
+        const container = containerRef.current;
+        if (!container) return;
+
+        const handleWheel = (e: WheelEvent) => {
+            if (e.deltaY === 0) return;
+            // Prevent default vertical scroll
+            e.preventDefault();
+            // Scroll horizontally instead
+            container.scrollLeft += e.deltaY;
+        };
+
+        container.addEventListener("wheel", handleWheel, { passive: false });
+        return () => container.removeEventListener("wheel", handleWheel);
+    }, []);
 
     const handleMajorClick = useCallback(
         (majorId: string) => {
@@ -203,16 +270,13 @@ export function HorizontalTreeCanvas({
         DOMAIN_X
     ) + 300; // Extra padding
 
-    // Domain position is fixed
-    const domainPos = { x: DOMAIN_X, y: CENTER_Y };
-
     return (
         <div className={styles['horizontal-stage']}>
 
             <button
                 type="button"
                 className={styles['back-btn-floating']}
-                onClick={onBack}
+                onClick={handleBack}
                 aria-label="Back to subjects"
             >
                 <CaretLeft size={18} weight="bold" />
@@ -222,26 +286,39 @@ export function HorizontalTreeCanvas({
             <div
                 className={styles['horizontal-scroll-container']}
                 ref={containerRef}
+                onMouseDown={handleMouseDown}
+                onMouseUp={handleMouseUp}
+                onMouseMove={handleMouseMove}
+                onMouseLeave={handleMouseLeave}
             >
                 <div style={{ width: maxNodeX, height: 800, position: 'relative' }}>
-                    <SVGConnections
-                        objectives={positionedNodes}
-                        subjectPosition={domainPos}
-                        isVisible={showSkills}
-                        layout="horizontal"
-                    />
+                    {/* Fixed domain position - CSS animation handles the slide */}
+                    {(() => {
+                        const domainPos = { x: DOMAIN_X, y: CENTER_Y };
+                        return (
+                            <>
+                                <SVGConnections
+                                    objectives={positionedNodes}
+                                    subjectPosition={domainPos}
+                                    isVisible={showTreeContent}
+                                    layout="horizontal"
+                                />
 
-                    <SubjectNode
-                        id={domain._id}
-                        name={domain.name}
-                        position={domainPos}
-                        isSelected={true} // Always "active" as root
-                        isFaded={false}
-                        onClick={onBack} // clicking domain goes back
-                        onKeyDown={e => handleKeyDown(e, "domain", domain._id)}
-                    />
+                                <SubjectNode
+                                    id={domain._id}
+                                    name={domain.name}
+                                    position={domainPos}
+                                    isSelected={true}
+                                    isFaded={false}
+                                    onClick={handleBack}
+                                    onKeyDown={e => handleKeyDown(e, "domain", domain._id)}
+                                    className={styles['subject-sliding']}
+                                />
+                            </>
+                        );
+                    })()}
 
-                    {showSkills && positionedNodes.map((node, index) => {
+                    {showTreeContent && positionedNodes.map((node, index) => {
                         if (node.type === "major") {
                             const majorState = majorStatusById.get(node.id);
                             return (

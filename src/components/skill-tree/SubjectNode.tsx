@@ -21,6 +21,7 @@ interface SubjectNodeProps {
   isFaded: boolean;
   onClick: () => void;
   onKeyDown?: (e: React.KeyboardEvent) => void;
+  className?: string; // For additional styling/animation classes
 }
 
 /**
@@ -40,6 +41,7 @@ export function SubjectNode({
   isFaded,
   onClick,
   onKeyDown,
+  className,
 }: SubjectNodeProps) {
   const config = getDomainConfig(name);
 
@@ -52,7 +54,8 @@ export function SubjectNode({
     styles['subject-node'],
     styles[config.colorClass as keyof typeof styles],
     isSelected && styles.centered,
-    isFaded && styles.faded
+    isFaded && styles.faded,
+    className
   );
 
   // CSS for positioning (centered on position)

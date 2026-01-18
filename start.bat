@@ -1,21 +1,21 @@
 @echo off
-:: start.bat - Launches the DW app (Vite + Convex) in WSL
-:: Run this from Windows to start both dev servers
+:: start.bat - Launches the DW app (Vite + Convex) natively on Windows
+:: Run this from the project root to start both dev servers
 
 echo Starting DW app...
 echo.
 
-:: Get the WSL path from Windows path
-:: This bat file should be in the project root
+:: Set the project directory
+cd /d C:\projects\DWV4
 
 :: Start Convex dev server in one terminal
-start "Convex Dev" wsl -e bash -c "cd ~/WProjects/DW && npx convex dev"
+start "Convex Dev" cmd /k "cd /d C:\projects\DWV4 && bunx convex dev"
 
 :: Wait a moment for Convex to initialize
 timeout /t 3 /nobreak > nul
 
 :: Start Vite dev server in another terminal
-start "Vite Dev" wsl -e bash -c "cd ~/WProjects/DW && npm run dev"
+start "Vite Dev" cmd /k "cd /d C:\projects\DWV4 && bun run dev"
 
 echo.
 echo Both servers starting in separate windows:

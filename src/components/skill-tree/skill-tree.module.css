@@ -142,6 +142,21 @@
   z-index: 30;
 }
 
+/* Entry animation for horizontal tree - slides from center to left */
+.subject-sliding {
+  animation: slide-to-left 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes slide-to-left {
+  from {
+    transform: translateX(calc(50vw - 150px - 60px));
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
 .subject-node i,
 .subject-node svg {
   font-size: 32px;
@@ -586,7 +601,6 @@
   z-index: 10;
   overflow: hidden;
   background: transparent;
-  pointer-events: none;
 }
 
 .horizontal-scroll-container {
@@ -615,7 +629,9 @@
   position: fixed;
   top: 2rem;
   left: 340px;
-  z-index: 100;
+  z-index: 9999;
+  /* Max z-index to ensure it sits above everything */
+  pointer-events: auto;
   display: flex;
   align-items: center;
   gap: 0.5rem;

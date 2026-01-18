@@ -10,9 +10,9 @@ export const DOMAIN_X = 150; // Fixed Left position for Domain
 export const CENTER_Y = CANVAS_HEIGHT / 2;
 
 // Spacing constants
-export const HORIZONTAL_SPACING = 250; // Distance between major steps
+export const HORIZONTAL_SPACING = 350; // Distance between major steps (increased for clearer separation)
 export const VERTICAL_OFFSET = 120; // How much majors go up/down from center
-export const SUB_OFFSET_X = 100; // Horizontal distance to sub-nodes
+export const SUB_OFFSET_X = 120; // Horizontal distance to sub-nodes
 export const SUB_OFFSET_Y = 80; // Vertical spread for sub-nodes
 
 /**
@@ -78,24 +78,21 @@ export function calculateHorizontalPositions(
         // Or based on user preference. Let's do: 0 -> UP, 1 -> DOWN
         const dir = index % 2 === 0 ? -1 : 1; // -1 is Up (smaller Y)
 
-        // X progresses linearly
-        const majorX = DOMAIN_X + HORIZONTAL_SPACING * (index + 1);
+        // X progresses linearly, but first step is wider
+        const FIRST_STEP_EXTRA_SPACING = 200; // Extra "breath" before first node
+
+        let majorX = DOMAIN_X + HORIZONTAL_SPACING * (index + 1);
+        if (index >= 0) {
+            // Shift everything right to account for the first gap
+            majorX += FIRST_STEP_EXTRA_SPACING;
+        }
+
         const majorY = CENTER_Y + (VERTICAL_OFFSET * dir);
 
         const majorPos = { x: majorX, y: majorY };
 
-        // Parent for the first major could be Domain
-        // Parent for subsequent majors? 
-        // The prompt implies a "branching" from domain.
-        // But if it's a timeline, they might connect to previous major?
-        // "domain will be on the left it will branch out ... into objectives"
-        // Usually means structure is Domain -> Major 1, Domain -> Major 2.
-        // But if spaced horizontally 200px, 400px, 600px... having them all connect back to x=100 looks like a fan.
-        // The "start" node in the image connects to 'Variables', which connects to 'Constants'.
-        // This implies a LINKED LIST structure: Domain -> Major 1 -> Major 2 -> Major 3.
-
         const actualParentPos = index === 0 ? domainPos : {
-            x: DOMAIN_X + HORIZONTAL_SPACING * index,
+            x: DOMAIN_X + HORIZONTAL_SPACING * index + FIRST_STEP_EXTRA_SPACING, // Parent also shifted
             y: CENTER_Y + (VERTICAL_OFFSET * ((index - 1) % 2 === 0 ? -1 : 1))
         };
 
