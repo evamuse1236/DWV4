@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { generateConnectionPath } from "../../lib/skill-tree-utils";
+import { generateHorizontalConnectionPath } from "../../lib/horizontal-tree-utils";
 import type { PositionedSkillNode } from "../../lib/skill-tree-utils";
 import { cn } from "../../lib/utils";
 import styles from "./skill-tree.module.css";
@@ -9,6 +10,7 @@ interface SVGConnectionsProps {
   subjectPosition: { x: number; y: number };
   isVisible: boolean;
   baseDelay?: number; // Base delay before lines start appearing
+  layout?: "radial" | "horizontal";
 }
 
 /**
@@ -28,6 +30,7 @@ export function SVGConnections({
   subjectPosition,
   isVisible,
   baseDelay = 300,
+  layout = "radial",
 }: SVGConnectionsProps) {
   const [visibleLines, setVisibleLines] = useState<Set<string>>(new Set());
 
@@ -67,7 +70,10 @@ export function SVGConnections({
           ? subjectPosition // Connect to subject node
           : obj.parentPosition;
 
-        const path = generateConnectionPath(startPos, obj.position);
+        const path = layout === "horizontal"
+          ? generateHorizontalConnectionPath(startPos, obj.position)
+          : generateConnectionPath(startPos, obj.position);
+
         const isLineVisible = visibleLines.has(obj.id);
 
         return (

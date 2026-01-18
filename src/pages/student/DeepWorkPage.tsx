@@ -3,6 +3,7 @@ import { useQuery } from "convex/react";
 import { api } from "../../../convex/_generated/api";
 import { useAuth } from "../../hooks/useAuth";
 import { SkillTreeCanvas, ObjectivePopover } from "../../components/skill-tree";
+import HorizontalTreeCanvas from "../../components/skill-tree/HorizontalTreeCanvas";
 import type { Id } from "../../../convex/_generated/dataModel";
 import styles from "../../components/skill-tree/skill-tree.module.css";
 
@@ -10,8 +11,8 @@ import styles from "../../components/skill-tree/skill-tree.module.css";
  * Deep Work Page - Skill Tree Visualization
  *
  * A gamified learning interface showing:
- * - Subject nodes (domains) arranged in a circle
- * - Skill nodes (objectives) branching from subjects
+ * - Subject nodes (domains) arranged in a circle for selection
+ * - Horizontal branching tree for detailed domain view
  * - Activity checklist in left panel
  * - Viva request workflow
  */
@@ -71,13 +72,18 @@ export function DeepWorkPage() {
   }, [selectedDomainId, selectedNode, majorsByDomain]);
 
   // Get selected domain name for popover
-  const selectedDomainName = useMemo(() => {
+  const selectedDomain = useMemo(() => {
     if (!selectedDomainId) return null;
-    return domains.find((d: any) => d._id === selectedDomainId)?.name ?? null;
+    return domains.find((d: any) => d._id === selectedDomainId) ?? null;
   }, [selectedDomainId, domains]);
 
   // Clear selection (clicking backdrop)
   const handleClosePanel = () => {
+    setSelectedNode(null);
+  };
+
+  const handleBackToSubjects = () => {
+    setSelectedDomainId(null);
     setSelectedNode(null);
   };
 
@@ -139,20 +145,34 @@ export function DeepWorkPage() {
           />
         )}
 
-        {/* Skill Tree Canvas */}
-        <SkillTreeCanvas
-          domains={domains}
-          majorsByDomain={majorsByDomain}
-          selectedDomainId={selectedDomainId}
-          selectedNode={selectedNode}
-          onSelectDomain={setSelectedDomainId}
-          onSelectNode={setSelectedNode}
-        />
+        {/* View Switching Logic */}
+        {!selectedDomainId ? (
+          // Circular View for Selecting a Domain
+          <SkillTreeCanvas
+            domains={domains}
+            majorsByDomain={majorsByDomain}
+            selectedDomainId={null} // Force null to keep it in "Subject Selection Mode"
+            selectedNode={null}
+            onSelectDomain={setSelectedDomainId}
+            onSelectNode={() => { }} // No node selection in this view
+          />
+        ) : (
+          // Horizontal View for Exploring Objectives
+          selectedDomain && (
+            <HorizontalTreeCanvas
+              domain={selectedDomain}
+              majors={majorsByDomain[selectedDomainId] || []}
+              selectedNode={selectedNode}
+              onSelectNode={setSelectedNode}
+              onBack={handleBackToSubjects}
+            />
+          )
+        )}
 
         {/* Right Panel (Details) */}
         <ObjectivePopover
           userId={user._id as Id<"users">}
-          domainName={selectedDomainName}
+          domainName={selectedDomain?.name || null}
           selectedNode={selectedNodeDetails}
           onSelectSubObjective={(id) => setSelectedNode({ type: "sub", id })}
         />
