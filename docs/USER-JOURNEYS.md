@@ -129,15 +129,31 @@ SkillTreeCanvas
 └─ Selection triggers ObjectivePopover (right panel)
 ```
 
-**ObjectivePopover shows:**
+**ObjectivePopover (Right Panel) shows:**
+
+*For Major Objectives:*
+- Objective title & description
+- Sub-objectives list (clickable → navigates to sub-objective)
+- Checkmarks indicate completion status (read-only)
+- "Request for Viva" button (only appears when ALL activities complete)
+
+*For Sub-Objectives:*
 - Objective title & description
 - Activity checklist (videos, exercises, games)
-- Progress indicator
-- "Request Viva" button (when ready for mastery check)
+- Checkboxes with optimistic updates (instant UI feedback)
+- "Request Viva for Major Objective" button (when all siblings complete)
 
 **Mastery Flow:**
 ```
-Complete activities → Request Viva → Coach approves → "Mastered" badge
+Complete all activities in sub-objectives
+    ↓
+"Request for Viva" button appears
+    ↓
+Click button → Status changes to "Viva Requested!" (instant, no modal)
+    ↓
+Coach approves in /admin/viva
+    ↓
+Status: "Mastered" badge
 ```
 
 ### 5. Feature: Sprint Planning & Goals
