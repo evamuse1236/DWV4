@@ -226,6 +226,7 @@ export default defineSchema({
     vivaRequestedAt: v.optional(v.number()),
     masteredAt: v.optional(v.number()),
     adminNotes: v.optional(v.string()),
+    vivaRequestNotes: v.optional(v.string()),
   })
     .index("by_user", ["userId"])
     .index("by_major_objective", ["majorObjectiveId"])

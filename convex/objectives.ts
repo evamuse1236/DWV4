@@ -614,12 +614,17 @@ export const updateStatus = mutation({
   args: {
     studentMajorObjectiveId: v.id("studentMajorObjectives"),
     status: majorStatus,
+    vivaRequestNotes: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
     const updates: any = { status: args.status };
 
     if (args.status === "viva_requested") {
       updates.vivaRequestedAt = Date.now();
+      // Save notes if provided when requesting viva
+      if (args.vivaRequestNotes !== undefined) {
+        updates.vivaRequestNotes = args.vivaRequestNotes;
+      }
     } else if (args.status === "mastered") {
       updates.masteredAt = Date.now();
     }
@@ -760,16 +765,14 @@ export const migrateObjectivesToMajorSub = mutation({
       const pairKey = `${assignment.userId}-${majorObjectiveId}`;
       const existingMajor = majorAssignmentMap.get(pairKey);
 
-      // Cast to string for legacy migration - old data may have different status values
+      // Map legacy status to valid major objective status
       const legacyStatus = assignment.status as string;
-      const legacyMajorStatus =
-        legacyStatus === "mastered"
-          ? "mastered"
-          : legacyStatus === "viva_requested"
-            ? "viva_requested"
-            : legacyStatus === "in_progress"
-              ? "in_progress"
-              : "assigned";
+      const statusMapping: Record<string, "assigned" | "in_progress" | "viva_requested" | "mastered"> = {
+        mastered: "mastered",
+        viva_requested: "viva_requested",
+        in_progress: "in_progress",
+      };
+      const legacyMajorStatus = statusMapping[legacyStatus] ?? "assigned";
 
       if (!existingMajor) {
         const created = await ctx.db.insert("studentMajorObjectives", {
@@ -797,12 +800,14 @@ export const migrateObjectivesToMajorSub = mutation({
         });
       }
 
-      const mappedSubStatus =
-        legacyStatus === "mastered" || legacyStatus === "viva_requested"
-          ? "completed"
-          : legacyStatus === "in_progress"
-            ? "in_progress"
-            : "assigned";
+      // Map legacy status to sub-objective status (mastered/viva_requested become completed)
+      type SubStatus = "assigned" | "in_progress" | "completed";
+      const subStatusMapping: Record<string, SubStatus> = {
+        mastered: "completed",
+        viva_requested: "completed",
+        in_progress: "in_progress",
+      };
+      const mappedSubStatus: SubStatus = subStatusMapping[legacyStatus] ?? "assigned";
 
       if (assignment.status !== mappedSubStatus) {
         await ctx.db.patch(assignment._id, { status: mappedSubStatus });

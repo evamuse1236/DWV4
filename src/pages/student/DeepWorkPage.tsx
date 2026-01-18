@@ -64,6 +64,8 @@ export function DeepWorkPage() {
       data: {
         majorObjective: majorEntry.majorObjective,
         subObjective,
+        majorAssignment: majorEntry.assignment,
+        allSubObjectives: majorEntry.subObjectives,
       },
     };
   }, [selectedDomainId, selectedNode, majorsByDomain]);
@@ -74,14 +76,7 @@ export function DeepWorkPage() {
     return domains.find((d: any) => d._id === selectedDomainId)?.name ?? null;
   }, [selectedDomainId, domains]);
 
-  // Handle objective selection (position no longer needed)
-  const handleSelectNode = (
-    node: { type: "major" | "sub"; id: string } | null
-  ) => {
-    setSelectedNode(node);
-  };
-
-  // Handle panel close (clicking backdrop)
+  // Clear selection (clicking backdrop)
   const handleClosePanel = () => {
     setSelectedNode(null);
   };
@@ -151,15 +146,15 @@ export function DeepWorkPage() {
           selectedDomainId={selectedDomainId}
           selectedNode={selectedNode}
           onSelectDomain={setSelectedDomainId}
-          onSelectNode={handleSelectNode}
+          onSelectNode={setSelectedNode}
         />
 
-        {/* Left Panel (Details) */}
+        {/* Right Panel (Details) */}
         <ObjectivePopover
           userId={user._id as Id<"users">}
           domainName={selectedDomainName}
           selectedNode={selectedNodeDetails}
-          onClose={handleClosePanel}
+          onSelectSubObjective={(id) => setSelectedNode({ type: "sub", id })}
         />
       </div>
     </div>

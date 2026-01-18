@@ -68,6 +68,11 @@ interface SubNode {
     description: string;
   };
   subObjective: SubObjectiveNode;
+  majorAssignment: {
+    _id: Id<"studentMajorObjectives">;
+    status: string;
+  } | null;
+  allSubObjectives: SubObjectiveNode[];
 }
 
 type SelectedNode =
@@ -78,8 +83,8 @@ interface ObjectivePopoverProps {
   userId: Id<"users">;
   domainName: string | null;
   selectedNode: SelectedNode | null;
-  onClose: () => void;
   onVivaRequested?: () => void;
+  onSelectSubObjective?: (subObjectiveId: string) => void;
 }
 
 // Min and max panel widths in pixels
@@ -87,12 +92,18 @@ const MIN_WIDTH = 280;
 const MAX_WIDTH = 500;
 const DEFAULT_WIDTH = 360;
 
+// Check if a sub-objective is completed (all activities done, or no activities)
+function isSubObjectiveCompleted(sub: SubObjectiveNode): boolean {
+  if (sub.activities.length === 0) return true;
+  return sub.activities.every((activity) => activity.progress?.completed);
+}
+
 export function ObjectivePopover({
   userId,
   domainName,
   selectedNode,
-  onClose: _onClose,
   onVivaRequested,
+  onSelectSubObjective,
 }: ObjectivePopoverProps) {
   const toggleActivity = useMutation(api.progress.toggleActivity);
   const updateStatus = useMutation(api.objectives.updateStatus);
@@ -100,6 +111,8 @@ export function ObjectivePopover({
   // Panel width state for resizing
   const [panelWidth, setPanelWidth] = useState(DEFAULT_WIDTH);
   const [isResizing, setIsResizing] = useState(false);
+  // Optimistic state: track activities being toggled (activityId -> optimistic completed state)
+  const [optimisticToggles, setOptimisticToggles] = useState<Record<string, boolean>>({});
   const panelRef = useRef<HTMLDivElement>(null);
 
   // Handle resize drag
@@ -136,44 +149,61 @@ export function ObjectivePopover({
 
   const domainConfig = domainName ? getDomainConfig(domainName) : null;
 
-  const handleToggleActivity = async (
+  const handleToggleActivity = (
     activityId: Id<"activities">,
-    studentObjectiveId: Id<"studentObjectives">
+    studentObjectiveId: Id<"studentObjectives">,
+    currentCompleted: boolean
   ) => {
-    await toggleActivity({
+    // Optimistically update UI immediately
+    setOptimisticToggles((prev) => ({
+      ...prev,
+      [activityId]: !currentCompleted,
+    }));
+
+    // Fire mutation (don't await - let it sync in background)
+    toggleActivity({
       userId,
       activityId,
       studentObjectiveId,
+    }).then(() => {
+      // Clear optimistic state once server confirms (data will be fresh)
+      setOptimisticToggles((prev) => {
+        const next = { ...prev };
+        delete next[activityId];
+        return next;
+      });
     });
   };
 
-  const handleVivaRequest = async () => {
-    if (selectedNode.type !== "major" || !selectedNode.data.assignment) return;
-
-    await updateStatus({
-      studentMajorObjectiveId: selectedNode.data.assignment._id,
-      status: "viva_requested",
-    });
-
-    onVivaRequested?.();
+  // Helper to get effective completed state (optimistic or server)
+  const getActivityCompleted = (activityId: string, serverCompleted: boolean) => {
+    if (activityId in optimisticToggles) {
+      return optimisticToggles[activityId];
+    }
+    return serverCompleted;
   };
 
   const handleCheckboxKeyDown = (
     e: React.KeyboardEvent,
     activityId: Id<"activities">,
-    studentObjectiveId: Id<"studentObjectives">
+    studentObjectiveId: Id<"studentObjectives">,
+    currentCompleted: boolean
   ) => {
     if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
-      handleToggleActivity(activityId, studentObjectiveId);
+      handleToggleActivity(activityId, studentObjectiveId, currentCompleted);
     }
   };
 
   if (selectedNode.type === "sub") {
-    const { subObjective } = selectedNode.data;
+    const { subObjective, majorAssignment, allSubObjectives } = selectedNode.data;
     const { objective, activities } = subObjective;
     const firstActivityType = activities[0]?.type || "default";
     const IconComponent = activityIcons[firstActivityType] || activityIcons.default;
+
+    const allSiblingsCompleted = allSubObjectives.every(isSubObjectiveCompleted);
+    const vivaRequested = majorAssignment?.status === "viva_requested";
+    const mastered = majorAssignment?.status === "mastered";
 
     return (
       <div
@@ -200,7 +230,8 @@ export function ObjectivePopover({
               {activities
                 .sort((a, b) => a.order - b.order)
                 .map((activity) => {
-                  const isCompleted = activity.progress?.completed ?? false;
+                  const serverCompleted = activity.progress?.completed ?? false;
+                  const isCompleted = getActivityCompleted(activity._id, serverCompleted);
                   const ActivityIcon =
                     activityIcons[activity.type] || activityIcons.default;
 
@@ -212,10 +243,10 @@ export function ObjectivePopover({
                           isCompleted && styles.checked
                         )}
                         onClick={() =>
-                          handleToggleActivity(activity._id, subObjective._id)
+                          handleToggleActivity(activity._id, subObjective._id, isCompleted)
                         }
                         onKeyDown={(e) =>
-                          handleCheckboxKeyDown(e, activity._id, subObjective._id)
+                          handleCheckboxKeyDown(e, activity._id, subObjective._id, isCompleted)
                         }
                         tabIndex={0}
                         role="checkbox"
@@ -240,6 +271,36 @@ export function ObjectivePopover({
                 })}
             </ul>
           )}
+
+          {/* Show viva button when all sub-objectives complete */}
+          {!mastered && majorAssignment && (allSiblingsCompleted || vivaRequested) && (
+            <button
+              type="button"
+              className={cn(
+                styles['viva-btn'],
+                styles.active,
+                vivaRequested && styles.requested
+              )}
+              onClick={() => {
+                if (!vivaRequested) {
+                  updateStatus({
+                    studentMajorObjectiveId: majorAssignment._id,
+                    status: "viva_requested",
+                  });
+                  onVivaRequested?.();
+                }
+              }}
+              disabled={vivaRequested}
+            >
+              {vivaRequested ? "Viva Requested!" : "Request Viva for Major Objective"}
+            </button>
+          )}
+
+          {mastered && (
+            <div className="text-center py-2 text-green-600 font-medium font-display italic text-lg">
+              Mastered
+            </div>
+          )}
         </div>
 
         {/* Resize handle */}
@@ -252,13 +313,8 @@ export function ObjectivePopover({
   }
 
   const { majorObjective, subObjectives, assignment } = selectedNode.data;
-  const completedSubs = subObjectives.filter((sub) =>
-    sub.activities.length === 0
-      ? true
-      : sub.activities.every((activity) => activity.progress?.completed)
-  ).length;
-  const totalSubs = subObjectives.length;
-  const allSubsCompleted = totalSubs > 0 && completedSubs === totalSubs;
+  const completedCount = subObjectives.filter(isSubObjectiveCompleted).length;
+  const allSubsCompleted = subObjectives.length > 0 && completedCount === subObjectives.length;
   const vivaRequested = assignment?.status === "viva_requested";
   const mastered = assignment?.status === "mastered";
 
@@ -284,37 +340,43 @@ export function ObjectivePopover({
 
         {subObjectives.length > 0 && (
           <ul className={styles['task-list']}>
-            {subObjectives.map((sub) => {
-              const isCompleted =
-                sub.activities.length === 0 ||
-                sub.activities.every((activity) => activity.progress?.completed);
-
-              return (
-                <li key={sub._id} className={styles['task-item']}>
-                  <div
-                    className={cn(
-                      styles['task-checkbox'],
-                      isCompleted && styles.checked
-                    )}
-                    aria-hidden="true"
-                  />
-                  <span className={styles['task-link']}>{sub.objective.title}</span>
-                </li>
-              );
-            })}
+            {subObjectives.map((sub) => (
+              <li
+                key={sub._id}
+                className={cn(styles['task-item'], 'cursor-pointer hover:bg-gray-50 rounded -mx-2 px-2')}
+                onClick={() => onSelectSubObjective?.(sub.objective._id)}
+              >
+                <div
+                  className={cn(
+                    styles['task-checkbox'],
+                    isSubObjectiveCompleted(sub) && styles.checked
+                  )}
+                  aria-hidden="true"
+                />
+                <span className={styles['task-link']}>{sub.objective.title}</span>
+              </li>
+            ))}
           </ul>
         )}
 
-        {!mastered && assignment && (
+        {!mastered && assignment && (allSubsCompleted || vivaRequested) && (
           <button
             type="button"
             className={cn(
               styles['viva-btn'],
-              allSubsCompleted && styles.active,
+              styles.active,
               vivaRequested && styles.requested
             )}
-            onClick={handleVivaRequest}
-            disabled={!allSubsCompleted || vivaRequested}
+            onClick={() => {
+              if (!vivaRequested) {
+                updateStatus({
+                  studentMajorObjectiveId: assignment._id,
+                  status: "viva_requested",
+                });
+                onVivaRequested?.();
+              }
+            }}
+            disabled={vivaRequested}
           >
             {vivaRequested ? "Viva Requested!" : "Request for Viva"}
           </button>
