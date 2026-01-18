@@ -1,476 +1,174 @@
-# Patterns & Conventions
+# Patterns and Conventions
 
-## Naming Conventions
+## Naming and structure
 
 | Item | Convention | Example |
-|------|------------|---------|
-| Files (components) | PascalCase | `StudentDashboard.tsx` |
-| Files (hooks) | camelCase with prefix | `useAuth.tsx`, `use-mobile.tsx` |
-| Files (utilities) | camelCase | `utils.ts`, `domain-utils.tsx` |
-| Files (Convex) | camelCase | `objectives.ts`, `auth.ts` |
-| Components | PascalCase | `EmotionWheel`, `GoalEditor` |
-| Functions | camelCase | `formatRelativeDate()`, `cn()` |
-| Constants | camelCase or SCREAMING_SNAKE | `TOKEN_KEY` |
-| Types/Interfaces | PascalCase | `User`, `AuthContextType` |
-| CSS Modules | kebab-case | `sprint.module.css` |
-| CSS classes | kebab-case | `emotion-wheel`, `goal-card` |
+| --- | --- | --- |
+| Components | PascalCase | `GoalChatPalette.tsx` |
+| Hooks | `use*` camelCase | `useAuth.tsx` |
+| Convex files | camelCase | `projectReflections.ts` |
+| CSS modules | kebab-case | `sprint.module.css` |
+| UI groups | feature folders | `components/reading/`, `pages/admin/` |
 
-## File Organization
-
-### Component Structure
-
-Components are organized by feature domain:
+Preferred layout:
 
 ```
-src/components/
-├── auth/           # Authentication-related
-│   ├── LoginForm.tsx
-│   ├── ProtectedRoute.tsx
-│   └── index.ts    # Re-exports
-├── emotions/       # Emotion check-in feature
-│   ├── EmotionWheel.tsx
-│   ├── EmotionCard.tsx
-│   ├── EmotionJournal.tsx
-│   ├── EmotionHistory.tsx
-│   └── index.ts
-├── paper/          # Paper UI design system
-│   ├── Button.tsx
-│   ├── Card.tsx
-│   ├── Input.tsx
-│   └── index.ts
-└── ui/             # shadcn components
-    ├── button.tsx
-    ├── card.tsx
-    └── index.ts
-```
-
-### Page Structure
-
-Pages mirror the routing structure:
-
-```
-src/pages/
-├── admin/
-│   ├── AdminDashboard.tsx
-│   ├── StudentsPage.tsx
-│   ├── StudentDetailPage.tsx
-│   └── index.ts    # Re-exports all admin pages
-├── student/
-│   ├── StudentDashboard.tsx
-│   ├── SprintPage.tsx
-│   ├── DeepWorkPage.tsx
-│   └── sprint.module.css  # Page-specific styles
-├── LoginPage.tsx
-└── SetupPage.tsx
-```
-
-### Convex Structure
-
-Backend functions organized by domain:
-
-```
+src/
+  components/
+  pages/
+  hooks/
+  lib/
+  types/
 convex/
-├── schema.ts       # All table definitions
-├── auth.ts         # Authentication functions
-├── users.ts        # User CRUD
-├── emotions.ts     # Emotion check-ins
-├── objectives.ts   # Learning objectives
-├── progress.ts     # Progress tracking
-└── seed.ts         # Database seeding
+  schema.ts
+  <feature>.ts
 ```
 
-## Import Order
+Why: feature folders keep the UI and data logic aligned (a matching Convex file usually exists for a page or feature).
 
-```typescript
-// 1. React and external libraries
-import { useState, useEffect, useCallback, type ReactNode } from "react";
-import { useQuery, useMutation } from "convex/react";
-import { motion } from "framer-motion";
+## TypeScript and import rules
 
-// 2. Convex API (auto-generated)
-import { api } from "../../convex/_generated/api";
+### Type-only imports (required in Convex)
+`verbatimModuleSyntax` requires explicit type imports in Convex files.
 
-// 3. Internal utilities and hooks
-import { cn, formatRelativeDate } from "@/lib/utils";
-import { useAuth } from "@/hooks/useAuth";
+```ts
+// Correct
+import type { MutationCtx } from "./_generated/server";
 
-// 4. Internal components
-import { Button, Card } from "@/components/ui";
-import { EmotionWheel } from "@/components/emotions";
+// Incorrect
+import { MutationCtx } from "./_generated/server";
+```
 
-// 5. Types (using `import type` for Convex)
-import type { User, AuthContextType } from "@/types";
+### Do not annotate React returns with JSX.Element
+
+```ts
+// Correct
+export function MyComponent() {
+  return <div />;
+}
+
+// Incorrect
+export function MyComponent(): JSX.Element {
+  return <div />;
+}
+```
+
+### Use generated Convex types when available
+
+```ts
 import type { Id } from "../../convex/_generated/dataModel";
-
-// 6. Styles (last)
-import styles from "./Component.module.css";
 ```
 
-## Code Patterns
+`src/types/index.ts` is a temporary fallback and does not mirror the full schema.
 
-### Convex Query Pattern
+## Data access patterns (Convex)
 
-```typescript
-// Always use skip for conditional queries
-const currentUser = useQuery(
-  api.auth.getCurrentUser,
-  token ? { token } : "skip"  // "skip" prevents query when no token
+### Queries with conditional args
+
+```ts
+const data = useQuery(
+  api.books.getCurrentlyReading,
+  user ? { userId: user._id } : "skip"
 );
-
-// Check loading state (undefined = loading, null = no result)
-const isLoading = currentUser === undefined;
-const hasUser = currentUser !== null;
 ```
 
-### Convex Mutation Pattern
+- `undefined` means loading; `null` means no data.
+- Always guard queries with `"skip"` when prerequisites are missing.
 
-```typescript
-// Define mutation hook
-const createGoal = useMutation(api.goals.create);
+### Mutations and patching
 
-// Call with proper error handling
-const handleCreate = async () => {
-  try {
-    const goalId = await createGoal({
-      userId: user._id,
-      title: "My Goal",
-      // ... other fields
-    });
-    // Handle success
-  } catch (error) {
-    console.error("Failed to create goal:", error);
-    // Show user-friendly error
-  }
-};
+```ts
+const updateSprint = useMutation(api.sprints.update);
+await updateSprint({ sprintId, name, endDate });
 ```
 
-### Auth Context Pattern
+Convex mutations typically filter out `undefined` fields before patching. Follow that pattern in new mutations.
 
-```typescript
-// Provider wraps app
-export function AuthProvider({ children }: { children: ReactNode }) {
-  const [token, setToken] = useState<string | null>(() => {
-    // Initialize from localStorage
-    return localStorage.getItem(TOKEN_KEY);
-  });
+### Actions for external services
 
-  // ... auth logic
-
-  return (
-    <AuthContext.Provider value={{ user, isLoading, login, logout }}>
-      {children}
-    </AuthContext.Provider>
-  );
-}
-
-// Hook throws if used outside provider
-export function useAuth(): AuthContextType {
-  const context = useContext(AuthContext);
-  if (context === undefined) {
-    throw new Error("useAuth must be used within an AuthProvider");
-  }
-  return context;
-}
+```ts
+const response = await useAction(api.ai.libraryChat)(args);
 ```
 
-### Protected Route Pattern
+Actions are used for AI calls because they can reach external APIs. Queries and mutations should stay data-only.
 
-```typescript
-// Role-based route protection
+## Auth and routing
+
+### Token handling
+- Local storage key: `deep-work-tracker-token`.
+- Auth provider: `src/hooks/useAuth.tsx`.
+
+### Guarded routes
+
+```tsx
 <ProtectedRoute allowedRoles={["student"]}>
   <DashboardLayout />
 </ProtectedRoute>
-
-// Inside ProtectedRoute component
-if (isLoading) return <LoadingSpinner />;
-if (!user) return <Navigate to="/login" replace />;
-if (!allowedRoles.includes(user.role)) return <Navigate to="/" replace />;
-return children;
 ```
 
-### CSS Utility Pattern
+`ProtectedRoute` redirects by role and shows `LoadingSpinner` while `useAuth` resolves.
 
-```typescript
-// cn() combines clsx + tailwind-merge
-import { clsx, type ClassValue } from "clsx";
-import { twMerge } from "tailwind-merge";
+## UI patterns
 
-export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs));
-}
+### Dual design systems
+- Student pages use Paper UI (`src/components/paper/`).
+- Admin pages use shadcn UI (`src/components/ui/`).
 
-// Usage
-<div className={cn(
-  "base-class",
-  isActive && "active-class",
-  variant === "primary" ? "bg-blue" : "bg-gray"
-)} />
+Why: the student UI optimizes for calm focus; the admin UI optimizes for density and speed.
+
+### Layout usage
+- Student: `DashboardLayout` wraps routes and includes `CheckInGate`.
+- Admin: `AdminLayout` provides a sidebar and header based on route.
+
+### CSS and tokens
+- Global tokens live in `src/index.css`.
+- Page-specific styles use CSS modules (for example `src/pages/student/sprint.module.css`).
+- `src/styles/muse.module.css` provides special AI-themed styling.
+
+## AI response contracts
+
+Several UI components parse structured JSON from AI actions. Keep these formats stable:
+
+### Goal chat (`api.ai.chat`)
+```text
+```goal-ready
+{ "goal": { ... }, "suggestedTasks": [ ... ] }
+```
 ```
 
-## TypeScript Patterns
-
-### Type-Only Imports (Required for Convex)
-
-```typescript
-// CORRECT - required by verbatimModuleSyntax
-import type { Id } from "../../convex/_generated/dataModel";
-import type { MutationCtx } from "./_generated/server";
-
-// WRONG - will cause build errors
-import { Id } from "../../convex/_generated/dataModel";
+### Book Buddy (`api.ai.libraryChat`)
+```text
+```buddy-response
+{ "message": "...", "suggestedReplies": [ ... ], "books": [ ... ] }
+```
 ```
 
-### No JSX.Element Return Types
-
-```typescript
-// CORRECT - omit return type
-export function MyComponent() {
-  return <div>Hello</div>;
-}
-
-// WRONG - don't use JSX.Element
-export function MyComponent(): JSX.Element {
-  return <div>Hello</div>;
-}
+### Project data chat (`api.ai.projectDataChat`)
+```text
+```project-data
+{ "students": [ ... ], "summary": "..." }
+```
 ```
 
-### Branded ID Types
+The UI falls back to plain text if parsing fails, so keep responses strict when updating prompts.
 
-```typescript
-// Pattern used in src/types/index.ts
-type Id<T extends string> = string & { __tableName: T };
+## State and status rules
 
-// Usage
-interface User {
-  _id: Id<"users">;
-  // ...
-}
-```
+- Use `api.progress.toggleActivity` to update activity completion; it recalculates `studentObjectives.status` and may adjust `studentMajorObjectives.status`.
+- Use `api.objectives.updateStatus` to change major objective status (viva workflow).
+- Use `api.books.updateStatus` to move `studentBooks` through reading/presentation states.
 
-## Error Handling
+## Tests
 
-### Convex Error Pattern
+- Runner: Vitest (`npm run test`, `npm run test:run`).
+- Location: tests live next to source files (`*.test.ts` / `*.test.tsx`).
 
-```typescript
-// In Convex functions
-export const deleteUser = mutation({
-  args: { userId: v.id("users") },
-  handler: async (ctx, args) => {
-    const user = await ctx.db.get(args.userId);
-    if (!user) {
-      throw new Error("User not found");
-    }
-    await ctx.db.delete(args.userId);
-  },
-});
-```
+## Gotchas (project-specific)
 
-### Frontend Error Pattern
-
-```typescript
-// Try-catch with user feedback
-try {
-  await mutation(args);
-  // Show success toast or update UI
-} catch (error) {
-  console.error("[functionName]", error);
-  // Show error message to user
-  setError("Something went wrong. Please try again.");
-}
-```
-
-### Session Expiry Pattern
-
-```typescript
-// Clear token if session is invalid
-useEffect(() => {
-  if (token && currentUser === null) {
-    // Token exists but user is null - session expired
-    localStorage.removeItem(TOKEN_KEY);
-    setToken(null);
-  }
-}, [token, currentUser]);
-```
-
-## Component Patterns
-
-### Dual Design System
-
-```typescript
-// Student pages use Paper UI components
-import { Button, Card } from "@/components/paper";
-
-// Admin pages use shadcn components
-import { Button, Card } from "@/components/ui";
-```
-
-### Index Re-exports
-
-```typescript
-// src/components/emotions/index.ts
-export { EmotionWheel } from "./EmotionWheel";
-export { EmotionCard } from "./EmotionCard";
-export { EmotionJournal } from "./EmotionJournal";
-
-// Usage - clean imports
-import { EmotionWheel, EmotionCard } from "@/components/emotions";
-```
-
-### Layout Wrapper Pattern
-
-```typescript
-// Layout with outlet for nested routes
-function DashboardLayout() {
-  return (
-    <div className="flex">
-      <Sidebar />
-      <main className="flex-1">
-        <CheckInGate>  {/* Enforces daily check-in */}
-          <Outlet />   {/* Renders child route */}
-        </CheckInGate>
-      </main>
-    </div>
-  );
-}
-```
-
-## Testing Approach
-
-| Test Type | Location | Naming | Runner |
-|-----------|----------|--------|--------|
-| Unit | Same folder | `*.test.ts` | Vitest |
-| Component | Same folder | `*.test.tsx` | Vitest + Testing Library |
-
-### Test Pattern
-
-```typescript
-// src/components/paper/Button.test.tsx
-import { render, screen } from "@testing-library/react";
-import { Button } from "./Button";
-
-describe("Button", () => {
-  it("renders children", () => {
-    render(<Button>Click me</Button>);
-    expect(screen.getByText("Click me")).toBeInTheDocument();
-  });
-
-  it("applies variant styles", () => {
-    render(<Button variant="primary">Primary</Button>);
-    expect(screen.getByRole("button")).toHaveClass("btn-primary");
-  });
-});
-```
-
-### Test Setup
-
-```typescript
-// src/test/setup.ts
-import "@testing-library/jest-dom";
-// Additional setup here
-```
-
-## Gotchas & Anti-Patterns
-
-### DO NOT: Use wrong localStorage key
-
-```typescript
-// WRONG
-localStorage.getItem("auth_token");
-
-// CORRECT
-localStorage.getItem("deep-work-tracker-token");
-```
-
-### DO NOT: Import types without `type` keyword in Convex
-
-```typescript
-// WRONG - breaks build
-import { MutationCtx } from "./_generated/server";
-
-// CORRECT
-import type { MutationCtx } from "./_generated/server";
-```
-
-### DO NOT: Use JSX.Element as return type
-
-```typescript
-// WRONG
-function Component(): JSX.Element { ... }
-
-// CORRECT
-function Component() { ... }
-```
-
-### DO NOT: Forget to handle loading states
-
-```typescript
-// WRONG - undefined check missing
-if (!data) return <Empty />;
-
-// CORRECT - distinguish loading from empty
-if (data === undefined) return <Loading />;
-if (data === null || data.length === 0) return <Empty />;
-```
-
-### DO NOT: Run mutations on wrong database
-
-```bash
-# WRONG - might hit prod
-npx convex run users:create
-
-# CORRECT - explicitly target dev
-npx convex run users:create  # (dev is default with `convex dev`)
-
-# CORRECT - explicitly target prod
-npx convex run users:create --prod
-```
-
-## Project-Specific Rules
-
-1. **Two Databases**: Dev (`ardent-penguin-515`) and Prod (`greedy-marten-449`). Always know which you're targeting.
-
-2. **Token Key**: Use `"deep-work-tracker-token"` for localStorage auth token.
-
-3. **Type Imports**: Use `import type` for all type-only imports in Convex files.
-
-4. **Student vs Admin UI**: Student pages use Paper UI (calm aesthetic), Admin pages use shadcn (functional).
-
-5. **Check-in Gate**: Students must complete daily emotion check-in before accessing content.
-
-6. **Session Expiry**: Sessions last 7 days. Handle `null` user gracefully.
-
-## Useful Commands
-
-| Command | Purpose |
-|---------|---------|
-| `npm run dev` | Start Vite dev server |
-| `npx convex dev` | Start Convex dev backend |
-| `npm run build` | Production build |
-| `npm run test` | Run tests in watch mode |
-| `npm run test:run` | Run tests once |
-| `npm run lint` | Check code style |
-| `npx convex run <function>` | Run Convex function (dev) |
-| `npx convex run <function> --prod` | Run Convex function (prod) |
-| `npx convex deploy` | Deploy to production |
-
-## Design Principles
-
-### Student Pages
-- Calm, spacious, minimal choices
-- Soft pastel colors
-- Paper UI components
-- Flow-state inducing
-
-### Admin Pages
-- Functional, data-dense, action-oriented
-- Standard shadcn components
-- Tables, forms, queues
-
-### Error Handling
-- Always guide forward, never dead-end
-- Show retry buttons on failures
-- Clear error messages
-
-### Confirmations
-- High-stakes actions (delete, approve) require explicit confirmation
-- Use dialogs for destructive actions
+- Two Convex deployments exist: dev `ardent-penguin-515`, prod `greedy-marten-449`. Always verify which database you are targeting.
+- Use `import type` in Convex files; missing this breaks builds.
+- Do not annotate React components with `JSX.Element` return types.
+- Use `deep-work-tracker-token` for localStorage auth token (not `auth_token`).
+- `studentObjectives.status` includes legacy values (`mastered`, `viva_requested`). Prefer `studentMajorObjectives` for viva/milestones.
+- `studentBooks.status` treats `completed` as legacy and still feeds the presentation queue.
+- Admin trust jar mutations require the admin session token passed as `adminToken`.

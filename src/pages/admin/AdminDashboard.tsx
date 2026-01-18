@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "../../../convex/_generated/api";
 import { useAuth } from "@/hooks/useAuth";
+import { toast } from "sonner";
 import {
   Card,
   CardContent,
@@ -12,6 +14,12 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Skeleton } from "@/components/ui/skeleton";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import {
   Users,
   Clock,
@@ -23,6 +31,7 @@ import {
   Plus,
   Heart,
   MessageSquare,
+  X,
 } from "lucide-react";
 
 // Milliseconds per day constant
@@ -48,9 +57,17 @@ function calculateDaysLeft(endDate: string): number {
  * Admin Dashboard - shadcn/UI version
  * Main landing page for coaches with overview stats and quick actions
  */
+// localStorage key for banner dismissal
+const SETUP_BANNER_KEY = "admin-setup-banner-dismissed";
+
 export function AdminDashboard() {
   const { user } = useAuth();
   const navigate = useNavigate();
+
+  // State for dismissible banner
+  const [showSetupBanner, setShowSetupBanner] = useState(() => {
+    return localStorage.getItem(SETUP_BANNER_KEY) !== "true";
+  });
 
   // Queries
   const students = useQuery(api.users.getAll);
@@ -79,27 +96,103 @@ export function AdminDashboard() {
   const updateStatus = useMutation(api.objectives.updateStatus);
   const approvePresentationRequest = useMutation(api.books.approvePresentationRequest);
 
-  const handleApproveViva = async (studentMajorObjectiveId: string): Promise<void> => {
+  const handleApproveViva = async (studentMajorObjectiveId: string, studentName: string): Promise<void> => {
     try {
       await updateStatus({
         studentMajorObjectiveId: studentMajorObjectiveId as any,
         status: "mastered",
       });
+      toast.success(`Viva approved for ${studentName}`);
     } catch (err) {
       console.error("Failed to approve viva:", err);
+      toast.error("Failed to approve viva. Please try again.");
     }
   };
 
-  const handleApprovePresentation = async (studentBookId: string): Promise<void> => {
+  const handleApprovePresentation = async (studentBookId: string, studentName: string): Promise<void> => {
     try {
       await approvePresentationRequest({
         studentBookId: studentBookId as any,
         approved: true,
       });
+      toast.success(`Presentation approved for ${studentName}`);
     } catch (err) {
       console.error("Failed to approve presentation:", err);
+      toast.error("Failed to approve presentation. Please try again.");
     }
   };
+
+  const handleDismissBanner = () => {
+    localStorage.setItem(SETUP_BANNER_KEY, "true");
+    setShowSetupBanner(false);
+  };
+
+  // Show skeleton while loading
+  const isLoading =
+    students === undefined ||
+    activeSprint === undefined ||
+    vivaRequests === undefined ||
+    presentationRequests === undefined ||
+    todayCheckIns === undefined;
+
+  if (isLoading) {
+    return (
+      <div className="space-y-6">
+        {/* Welcome header skeleton */}
+        <div>
+          <Skeleton className="h-8 w-64 mb-2" />
+          <Skeleton className="h-4 w-80" />
+        </div>
+
+        {/* Stats cards skeleton */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          {[...Array(4)].map((_, i) => (
+            <Card key={i}>
+              <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                <Skeleton className="h-4 w-24" />
+                <Skeleton className="h-4 w-4" />
+              </CardHeader>
+              <CardContent>
+                <Skeleton className="h-8 w-12 mb-1" />
+                <Skeleton className="h-3 w-32" />
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        {/* Main content grid skeleton */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <Card className="lg:col-span-2">
+            <CardHeader>
+              <Skeleton className="h-6 w-40 mb-2" />
+              <Skeleton className="h-4 w-48" />
+            </CardHeader>
+            <CardContent className="space-y-3">
+              {[...Array(3)].map((_, i) => (
+                <div key={i} className="flex items-center gap-3 p-3">
+                  <Skeleton className="h-10 w-10 rounded-full" />
+                  <div className="flex-1">
+                    <Skeleton className="h-4 w-32 mb-1" />
+                    <Skeleton className="h-3 w-24" />
+                  </div>
+                </div>
+              ))}
+            </CardContent>
+          </Card>
+          <Card>
+            <CardHeader>
+              <Skeleton className="h-6 w-24" />
+            </CardHeader>
+            <CardContent className="space-y-3">
+              {[...Array(2)].map((_, i) => (
+                <Skeleton key={i} className="h-20 w-full" />
+              ))}
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    );
+  }
 
   const sprintDaysLeft = activeSprint
     ? calculateDaysLeft(activeSprint.endDate)
@@ -119,22 +212,32 @@ export function AdminDashboard() {
         </p>
       </div>
 
-      {/* Setup complete banner */}
-      {setupDataLoaded && isFullySetup && (
+      {/* Setup complete banner - dismissible */}
+      {setupDataLoaded && isFullySetup && showSetupBanner && (
         <Card className="border-green-200 bg-green-50 dark:bg-green-950/30">
           <CardContent className="pt-6">
             <div className="flex items-center justify-between gap-4">
               <p className="text-green-700 dark:text-green-400 font-medium">
                 You're all set! Your learning cycle is ready to run.
               </p>
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => navigate("/admin/sprints")}
-              >
-                Manage Sprint
-                <ChevronRight className="ml-1 h-4 w-4" />
-              </Button>
+              <div className="flex items-center gap-2">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => navigate("/admin/sprints")}
+                >
+                  Manage Sprint
+                  <ChevronRight className="ml-1 h-4 w-4" />
+                </Button>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="h-8 w-8 text-green-700 hover:text-green-900 hover:bg-green-100"
+                  onClick={handleDismissBanner}
+                >
+                  <X className="h-4 w-4" />
+                </Button>
+              </div>
             </div>
           </CardContent>
         </Card>
@@ -327,7 +430,19 @@ export function AdminDashboard() {
             ) : (
               <>
                 <div className="text-2xl font-bold text-muted-foreground">None</div>
-                <p className="text-xs text-muted-foreground">No active sprint</p>
+                <p className="text-xs text-muted-foreground mb-2">No active sprint</p>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="w-full"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    navigate("/admin/sprints");
+                  }}
+                >
+                  <Plus className="mr-1 h-3 w-3" />
+                  Create Sprint
+                </Button>
               </>
             )}
           </CardContent>
@@ -444,15 +559,23 @@ export function AdminDashboard() {
                           {request.domain?.name}
                         </Badge>
                       </div>
-                      <Button
-                        size="sm"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          handleApproveViva(request._id);
-                        }}
-                      >
-                        <CheckCircle className="h-4 w-4" />
-                      </Button>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <Button
+                            size="sm"
+                            onDoubleClick={(e) => {
+                              e.stopPropagation();
+                              handleApproveViva(request._id, request.user?.displayName || "Student");
+                            }}
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            <CheckCircle className="h-4 w-4" />
+                          </Button>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Double-click to approve viva</p>
+                        </TooltipContent>
+                      </Tooltip>
                     </div>
                   </div>
                 ))}
@@ -510,12 +633,20 @@ export function AdminDashboard() {
                           </p>
                         )}
                       </div>
-                      <Button
-                        size="sm"
-                        onClick={() => handleApprovePresentation(request._id)}
-                      >
-                        <CheckCircle className="h-4 w-4" />
-                      </Button>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <Button
+                            size="sm"
+                            onDoubleClick={() => handleApprovePresentation(request._id, request.user?.displayName || "Student")}
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            <CheckCircle className="h-4 w-4" />
+                          </Button>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Double-click to approve presentation</p>
+                        </TooltipContent>
+                      </Tooltip>
                     </div>
                   </div>
                 ))}

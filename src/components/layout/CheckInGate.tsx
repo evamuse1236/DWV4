@@ -4,6 +4,36 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Sun, Plant, Drop, CloudRain } from "@phosphor-icons/react";
 import { api } from "../../../convex/_generated/api";
 import { useAuth } from "../../hooks/useAuth";
+import { Skeleton } from "../ui/skeleton";
+
+/**
+ * Skeleton loading state for the Palette of Presence UI.
+ * Shows 4 quadrant card placeholders matching the actual layout.
+ */
+function CheckInSkeleton() {
+  return (
+    <div className="min-h-screen bg-[#FFFBF5]">
+      <main className="max-w-6xl mx-auto px-6 py-12">
+        {/* Header skeleton */}
+        <div className="text-center mb-8">
+          <Skeleton className="h-6 w-24 mx-auto mb-2" />
+          <Skeleton className="h-12 w-80 mx-auto" />
+        </div>
+
+        {/* 4 Quadrant cards skeleton */}
+        <div className="mood-deck">
+          {[1, 2, 3, 4].map((i) => (
+            <Skeleton
+              key={i}
+              className="mood-card rounded-[30px] h-[200px]"
+              style={{ backgroundColor: "rgba(0,0,0,0.05)" }}
+            />
+          ))}
+        </div>
+      </main>
+    </div>
+  );
+}
 
 // 4-Quadrant Mood Data with kid-friendly definitions
 const shadesData = {
@@ -112,16 +142,9 @@ export function CheckInGate({ children }: CheckInGateProps) {
     user ? { userId: user._id as any } : "skip"
   );
 
-  // Still loading
+  // Still loading - show skeleton that matches the Palette of Presence layout
   if (todayCheckIn === undefined || categories === undefined) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-[#FFFBF5]">
-        <div className="text-center">
-          <div className="text-4xl mb-4 animate-pulse">✨</div>
-          <p className="font-body opacity-60">Preparing your space...</p>
-        </div>
-      </div>
-    );
+    return <CheckInSkeleton />;
   }
 
   // Already checked in - render children (the actual app)
@@ -332,17 +355,17 @@ export function CheckInGate({ children }: CheckInGateProps) {
                       border: isShadeSelected(shade)
                         ? "2px solid rgba(255, 255, 255, 0.9)"
                         : "1px solid rgba(255,255,255,0.5)",
+                      // Simplified shadow: single layer instead of 3-layer glow
                       boxShadow: isShadeSelected(shade)
-                        ? `0 0 20px 8px ${shade.color}80, 0 0 40px 16px ${shade.color}40, inset 0 0 20px rgba(255,255,255,0.3)`
-                        : "0 4px 6px rgba(0, 0, 0, 0.02)",
-                      transform: isShadeSelected(shade) ? "scale(1.08)" : "scale(1)",
+                        ? `0 0 16px 4px ${shade.color}60`
+                        : "0 2px 4px rgba(0, 0, 0, 0.02)",
                     }}
-                    initial={{ opacity: 0, scale: 0.9 }}
+                    initial={{ opacity: 0, scale: 0.95 }}
                     animate={{
                       opacity: 1,
-                      scale: isShadeSelected(shade) ? 1.08 : 1,
+                      scale: isShadeSelected(shade) ? 1.05 : 1,
                     }}
-                    transition={{ delay: idx * 0.03 }}
+                    transition={{ delay: idx * 0.02 }}
                     onClick={() => handleShadeClick(shade)}
                     onMouseEnter={(e) => showTooltip(e, shade.def)}
                     onMouseLeave={hideTooltip}

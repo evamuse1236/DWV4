@@ -1,191 +1,167 @@
 # Architecture Overview
 
-## Purpose
+## What this is
+Deep Work Tracker is a student-facing learning companion with an admin coaching console. The student experience is calm and flow-focused (daily check-in, sprint goals, deep work objectives, reading), while the admin experience is dense and operational (students, sprints, objectives, queues, projects). The architecture intentionally splits the UI and data flows to keep those experiences distinct while sharing the same Convex backend.
 
-Deep Work Tracker is a mindful learning companion designed for focused skill mastery. It provides students with a calm, flow-state-inducing interface for tracking their learning progress through emotion check-ins, goal setting, deep work sessions, and reading activities. Coaches (admins) get a functional dashboard to manage students, create learning objectives, and track progress.
+## System shape
 
-**Primary users:**
-- **Students** - Track daily emotions, work on assigned learning objectives, set sprint goals, and log reading
-- **Coaches/Admins** - Manage students, create sprints, assign objectives, approve viva requests
+```
+[Browser]
+  React 19 + React Router 7
+  Vite app (src/main.tsx -> src/App.tsx)
+  |
+  | ConvexReactClient + useQuery/useMutation/useAction
+  v
+[Convex backend]
+  schema: convex/schema.ts (23 tables)
+  functions: convex/*.ts (queries/mutations)
+  actions: convex/ai.ts (external AI providers)
+  |
+  v
+[Convex DB + external AI]
+  tables + indexes
+  Groq / OpenRouter (AI actions)
+```
 
-## Tech Stack
+Why this shape:
+- Convex handles real-time queries and simplified backend deployment.
+- Actions are isolated in `convex/ai.ts` so external API calls do not block database reads.
+- The front-end owns the UX complexity while keeping data rules in Convex functions.
 
-| Layer | Technology | Notes |
-|-------|------------|-------|
-| **Frontend** | React 19, TypeScript, Vite | Single-page app |
-| **UI Components** | shadcn/ui (admin), Paper UI (student) | Dual design system |
-| **Styling** | Tailwind CSS v4, CSS Modules | Custom pastel color palette |
-| **Animation** | Framer Motion | Subtle, calming transitions |
-| **Backend** | Convex (serverless) | Real-time, reactive queries |
-| **Routing** | React Router v7 | Role-based protected routes |
-| **Testing** | Vitest, Testing Library | Unit + component tests |
-| **Hosting** | Netlify (frontend) | Convex handles backend |
-
-## Project Structure
+## Project layout (what lives where)
 
 ```
 DW/
-├── src/
-│   ├── components/
-│   │   ├── auth/           # Login form, protected routes
-│   │   ├── deepwork/       # Domain cards, learning objective cards
-│   │   ├── emotions/       # Emotion wheel, journal, check-in components
-│   │   ├── layout/         # Sidebar, Header, DashboardLayout, AdminLayout, CheckInGate
-│   │   ├── paper/          # Paper UI design system (student-facing)
-│   │   ├── projects/       # Project cards, project data chat
-│   │   ├── reading/        # Book cards, BookBuddy
-│   │   ├── skill-tree/     # Visual skill tree (SVG connections, nodes)
-│   │   ├── sprint/         # Goal editor, goal cards, habit tracker
-│   │   ├── student/        # Task assigner
-│   │   ├── trustjar/       # Trust jar marble animation
-│   │   └── ui/             # shadcn components (admin-facing)
-│   ├── hooks/
-│   │   ├── useAuth.tsx     # Auth context + session management
-│   │   └── use-mobile.tsx  # Mobile detection hook
-│   ├── lib/
-│   │   ├── utils.ts        # cn() helper, formatRelativeDate
-│   │   ├── emotions.ts     # Emotion category utilities
-│   │   ├── domain-utils.tsx # Domain icon/color helpers
-│   │   ├── status-utils.ts # Status display utilities
-│   │   └── skill-tree-utils.ts # Skill tree layout calculations
-│   ├── pages/
-│   │   ├── admin/          # Admin dashboard, students, objectives, viva queue, etc.
-│   │   ├── student/        # Dashboard, check-in, sprint, deep work, reading
-│   │   ├── LoginPage.tsx   # Login with bootstrap detection
-│   │   └── SetupPage.tsx   # First admin creation
-│   ├── styles/
-│   │   └── muse.module.css # Special muse styling
-│   ├── test/
-│   │   └── setup.ts        # Vitest setup
-│   ├── types/
-│   │   └── index.ts        # TypeScript interfaces
-│   ├── App.tsx             # Router + providers
-│   ├── main.tsx            # Entry point
-│   └── index.css           # Paper UI design tokens + global styles
-│
-├── convex/
-│   ├── schema.ts           # Database schema (18 tables)
-│   ├── auth.ts             # Login, sessions, bootstrap check
-│   ├── users.ts            # User CRUD + batch management
-│   ├── emotions.ts         # Check-in categories + daily check-ins
-│   ├── sprints.ts          # Sprint CRUD
-│   ├── goals.ts            # SMART goals
-│   ├── habits.ts           # Habit tracking + completions
-│   ├── domains.ts          # Learning domains
-│   ├── objectives.ts       # Major + learning objectives + student assignments
-│   ├── activities.ts       # Activity CRUD + progress
-│   ├── progress.ts         # Progress summaries
-│   ├── books.ts            # Reading library
-│   ├── projects.ts         # 6-week project cycles
-│   ├── projectLinks.ts     # Student project submissions
-│   ├── projectReflections.ts # Student reflections
-│   ├── trustJar.ts         # Trust jar state
-│   ├── ai.ts               # AI integration (if any)
-│   ├── utils.ts            # Shared Convex utilities
-│   └── seed.ts             # Database seeding
-│
-├── public/                 # Static assets
-├── docs/                   # Documentation (this folder)
-└── mockup/                 # Design mockups
+  src/
+    App.tsx                     # Router, role-based guards
+    main.tsx                    # React entrypoint
+    components/
+      auth/                     # ProtectedRoute/PublicOnlyRoute, LoginForm
+      layout/                   # DashboardLayout, AdminLayout, CheckInGate
+      paper/                    # Student UI system
+      ui/                       # Admin UI system (shadcn)
+      sprint/                   # GoalChatPalette, GoalEditor, HabitTracker
+      reading/                  # BookBuddy, BookCard
+      projects/                 # ProjectDataChat
+      trustjar/                 # TrustJar (Matter.js physics)
+      skill-tree/               # SkillTreeCanvas, nodes, connections
+      deepwork/                 # DomainCard, LearningObjectiveCard
+    hooks/                      # useAuth, use-mobile
+    pages/
+      student/                  # Student routes
+      admin/                    # Admin routes
+    lib/                        # Domain/status/emotion helpers
+    types/                      # Temporary types (pre-Convex generated types)
+  convex/
+    schema.ts                   # Database schema (23 tables)
+    auth.ts                     # Auth + sessions
+    users.ts                    # Student/admin queries
+    emotions.ts                 # Check-in data
+    sprints.ts                  # Sprint lifecycle
+    goals.ts                    # Goals + action items
+    habits.ts                   # Habit tracking
+    domains.ts                  # Learning domains
+    objectives.ts               # Major/sub objectives + assignments
+    activities.ts               # Objective activities
+    progress.ts                 # Activity completion + status updates
+    books.ts                    # Reading library
+    projects.ts                 # 6-week projects
+    projectLinks.ts             # Project submissions
+    projectReflections.ts       # Project reflections
+    trustJar.ts                 # Trust jar state
+    ai.ts                       # AI actions (goal chat, book buddy, project data)
+    seed.ts                     # Initial data seeding
+  docs/                         # Architecture + data model + patterns
 ```
 
-## Key Components
+## Runtime entry points
+- `src/main.tsx` mounts the React app.
+- `src/App.tsx` wires providers and routes, including role-based protection.
+- `convex/schema.ts` defines the tables and indexes used by all Convex functions.
 
-### Authentication (`src/hooks/useAuth.tsx`)
-- **Purpose:** Manages user sessions using Convex backend
-- **Pattern:** React Context + localStorage for token persistence
-- **Key exports:** `AuthProvider`, `useAuth()`, `useSessionToken()`
+## Routing (from `src/App.tsx`)
 
-### Layout System
-- **DashboardLayout** (`src/components/layout/DashboardLayout.tsx`)
-  - Wraps student pages with sidebar + header
-  - Applies Paper UI aesthetic
-- **AdminLayout** (`src/components/layout/AdminLayout.tsx`)
-  - Wraps admin pages with functional sidebar
-  - Uses shadcn components
-- **CheckInGate** (`src/components/layout/CheckInGate.tsx`)
-  - Enforces daily emotion check-in before accessing content
+### Public
+| Path | Component | Notes |
+| --- | --- | --- |
+| `/login` | `src/pages/LoginPage.tsx` | Redirects to dashboards when already authenticated |
+| `/setup` | `src/pages/SetupPage.tsx` | First-time admin bootstrap + seed |
 
-### Design Systems
-- **Paper UI** (`src/components/paper/`)
-  - Calm, ethereal components for students
-  - Soft pastels, generous whitespace
-  - Components: Button, Card, Input, Modal, Checkbox, Badge, ProgressBar
-- **shadcn/ui** (`src/components/ui/`)
-  - Functional, data-dense components for admins
-  - Standard shadcn patterns
+### Student (role: student)
+| Path | Component | Notes |
+| --- | --- | --- |
+| `/dashboard` | `src/pages/student/StudentDashboard.tsx` | Primary student landing |
+| `/check-in` | `src/pages/student/EmotionCheckInPage.tsx` | Check-in view (also enforced by gate) |
+| `/sprint` | `src/pages/student/SprintPage.tsx` | Goals and habits |
+| `/deep-work` | `src/pages/student/DeepWorkPage.tsx` | Domain list |
+| `/deep-work/:domainId` | `src/pages/student/DomainDetailPage.tsx` | Objectives + activities |
+| `/reading` | `src/pages/student/ReadingPage.tsx` | Library + Book Buddy |
+| `/trust-jar` | `src/pages/student/TrustJarPage.tsx` | Full-screen jar view (outside layout) |
 
-## Entry Points
+### Admin (role: admin)
+| Path | Component | Notes |
+| --- | --- | --- |
+| `/admin` | `src/pages/admin/AdminDashboard.tsx` | Admin landing |
+| `/admin/students` | `src/pages/admin/StudentsPage.tsx` | Student list |
+| `/admin/students/:studentId` | `src/pages/admin/StudentDetailPage.tsx` | Student detail |
+| `/admin/sprints` | `src/pages/admin/SprintsPage.tsx` | Sprint management |
+| `/admin/projects` | `src/pages/admin/ProjectsPage.tsx` | Projects list |
+| `/admin/projects/:projectId` | `src/pages/admin/ProjectDetailPage.tsx` | Project detail |
+| `/admin/objectives` | `src/pages/admin/ObjectivesPage.tsx` | Objective management |
+| `/admin/viva` | `src/pages/admin/VivaQueuePage.tsx` | Viva queue |
+| `/admin/presentations` | `src/pages/admin/PresentationQueuePage.tsx` | Reading presentations |
+| `/admin/books` | `src/pages/admin/BooksPage.tsx` | Library management |
+| `/admin/trust-jar` | `src/pages/admin/TrustJarPage.tsx` | Jar controls |
 
-| Entry Point | File | Description |
-|-------------|------|-------------|
-| App startup | `src/main.tsx` | Renders React app into DOM |
-| Router | `src/App.tsx` | Defines all routes + providers |
-| API layer | `convex/*.ts` | All backend queries/mutations |
+## Key UI subsystems (why they exist)
 
-## Architecture Diagram
+- Auth and routing (`src/hooks/useAuth.tsx`, `src/components/auth/ProtectedRoute.tsx`)
+  - Why: Single source of session truth and predictable redirects for role-based UX.
+  - Uses localStorage key `deep-work-tracker-token` and `api.auth.getCurrentUser`.
 
-```
-┌────────────────────────────────────────────────────────────────────┐
-│                            BROWSER                                  │
-├────────────────────────────────────────────────────────────────────┤
-│                                                                      │
-│   ┌─────────────┐     ┌─────────────┐     ┌──────────────────────┐ │
-│   │   React     │────▶│  Convex     │────▶│    Convex Cloud      │ │
-│   │   Frontend  │◀────│  React      │◀────│    Backend           │ │
-│   │             │     │  Client     │     │                      │ │
-│   └─────────────┘     └─────────────┘     └──────────────────────┘ │
-│         │                                           │               │
-│         │                                           │               │
-│   ┌─────▼─────┐                              ┌─────▼─────┐         │
-│   │ localStorage│                             │ Convex DB │         │
-│   │ (token)    │                             │ (18 tables)│         │
-│   └───────────┘                              └───────────┘         │
-│                                                                      │
-└────────────────────────────────────────────────────────────────────┘
-```
+- Check-in gate (`src/components/layout/CheckInGate.tsx`)
+  - Why: The product requires a daily emotional check-in before other student activity.
+  - Uses `api.emotions.getTodayCheckIn` to gate and `api.emotions.saveCheckIn` to persist.
 
-## Route Structure
+- Dual design system (`src/components/paper/` vs `src/components/ui/`)
+  - Why: Students need a calm, spacious interface; admins need dense, functional UI.
+  - Student pages prefer Paper UI. Admin pages prefer shadcn components.
 
-### Student Routes (requires student role)
-| Path | Component | Description |
-|------|-----------|-------------|
-| `/dashboard` | `StudentDashboard` | Bento grid with quick access cards |
-| `/check-in` | `EmotionCheckInPage` | Daily emotion check-in |
-| `/sprint` | `SprintPage` | Goals + habits |
-| `/deep-work` | `DeepWorkPage` | Domain list |
-| `/deep-work/:domainId` | `DomainDetailPage` | Objectives + activities |
-| `/reading` | `ReadingPage` | Book library |
-| `/trust-jar` | `TrustJarPage` | Marble jar (full screen) |
+- Sprint goal AI (`src/components/sprint/GoalChatPalette.tsx`)
+  - Why: Convert short conversations into SMART goals and suggested tasks.
+  - Uses `api.ai.chat` action and expects a `goal-ready` JSON block.
 
-### Admin Routes (requires admin role)
-| Path | Component | Description |
-|------|-----------|-------------|
-| `/admin` | `AdminDashboard` | Stats + setup checklist |
-| `/admin/students` | `StudentsPage` | Student CRUD |
-| `/admin/students/:studentId` | `StudentDetailPage` | Individual student |
-| `/admin/sprints` | `SprintsPage` | Sprint management |
-| `/admin/projects` | `ProjectsPage` | 6-week projects |
-| `/admin/objectives` | `ObjectivesPage` | Learning objectives |
-| `/admin/viva` | `VivaQueuePage` | Viva approval queue |
-| `/admin/presentations` | `PresentationQueuePage` | Book presentations |
-| `/admin/books` | `BooksPage` | Book library CRUD |
-| `/admin/trust-jar` | `AdminTrustJarPage` | Manage trust jar |
+- Book Buddy AI (`src/components/reading/BookBuddy.tsx`)
+  - Why: Personalized reading recommendations from available books + history.
+  - Uses `api.ai.libraryChat` action and expects a `buddy-response` JSON block.
 
-## External Dependencies
+- Project data AI (`src/components/projects/ProjectDataChat.tsx`)
+  - Why: Reduce admin data entry by extracting links/reflections from chat.
+  - Uses `api.ai.projectDataChat` action and expects a `project-data` JSON block.
 
-- **Convex Cloud** - Serverless backend (database + functions)
-- **Google Fonts** - Cormorant Garamond + Lato typography
-- **Lucide React** - Icon library (admin)
-- **Phosphor Icons** - Icon library (alternate)
-- **Framer Motion** - Animation library
+- Trust Jar (`src/components/trustjar/TrustJar.tsx`)
+  - Why: Visual, physics-based shared reward mechanism.
+  - Uses Matter.js for physics and `api.trustJar` queries/mutations for state.
 
-## Environment Variables
+## Backend design (why it is organized this way)
 
-| Variable | Purpose |
-|----------|---------|
-| `VITE_CONVEX_URL` | Convex deployment URL (dev vs prod) |
+- Domain-based files in `convex/` align to UI features (emotions, sprints, goals, projects).
+- `convex/objectives.ts` keeps major/sub objective logic together to maintain consistent status rules.
+- `convex/progress.ts` centralizes activity completion so status updates are not duplicated in the UI.
+- `convex/ai.ts` is isolated to actions to keep network calls separate from pure data reads/writes.
+- `convex/seed.ts` enables bootstrapping from `SetupPage` and local test data.
 
-**Important:** Two separate databases exist:
-- **Dev:** `ardent-penguin-515` (local development)
-- **Prod:** `greedy-marten-449` (deployed)
+## Configuration and environments
+
+- `VITE_CONVEX_URL` (frontend) points at the Convex deployment used by the React client.
+- Convex uses two deployments:
+  - Dev: `ardent-penguin-515` (local `npx convex dev`)
+  - Prod: `greedy-marten-449` (`npx convex deploy`)
+
+## Architecture gotchas
+
+- The student check-in gate runs inside `DashboardLayout`, so all student routes under that layout are blocked until a check-in exists for today.
+- The trust jar admin mutations require the session token (admin token) from localStorage, not a server-side admin flag.
+- AI features are actions and require Convex environment variables (`GROQ_API_KEY`, `OPENROUTER_API_KEY`).
+
+See `docs/DATA-MODEL.md` and `docs/PATTERNS.md` for schema and coding conventions.

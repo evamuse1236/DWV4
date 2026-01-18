@@ -1,8 +1,47 @@
+import { useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import { useQuery, useMutation } from "convex/react";
 import { motion } from "framer-motion";
 import { api } from "../../../convex/_generated/api";
 import { useAuth } from "../../hooks/useAuth";
+import { Skeleton } from "../../components/ui/skeleton";
+
+/**
+ * Skeleton loading state for the dashboard bento grid.
+ * Matches the layout of the actual content for a smooth transition.
+ */
+function DashboardSkeleton() {
+  return (
+    <div>
+      {/* Header skeleton */}
+      <div className="mb-[60px]">
+        <Skeleton className="h-4 w-32 mb-5" />
+        <Skeleton className="h-16 w-64 mb-2" />
+        <Skeleton className="h-12 w-40" />
+      </div>
+
+      {/* Bento Grid skeleton */}
+      <div className="bento-grid">
+        {/* Main Focus Card skeleton */}
+        <Skeleton className="col-span-2 row-span-2 rounded-[40px] h-[340px]" />
+        {/* Sprint Card skeleton */}
+        <Skeleton className="rounded-[30px] h-[160px]" />
+        {/* Reading Card skeleton */}
+        <Skeleton className="rounded-[30px] h-[160px]" />
+      </div>
+
+      {/* Domains Row skeleton */}
+      <div className="mt-[60px]">
+        <Skeleton className="h-4 w-32 mb-6" />
+        <div className="grid grid-cols-4 gap-6">
+          {[1, 2, 3, 4].map((i) => (
+            <Skeleton key={i} className="h-[140px] rounded-[30px]" />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
 
 // Domain color classes based on name
 const getDomainColorClass = (name: string) => {
@@ -66,14 +105,20 @@ export function StudentDashboard() {
       )
     : 0;
 
-  // Calculate tasks left
-  const tasksLeft = goals?.filter((g: any) => g.status !== "completed").length || 0;
+  // Memoized: Calculate tasks left (only recomputes when goals change)
+  const tasksLeft = useMemo(
+    () => goals?.filter((g: any) => g.status !== "completed").length || 0,
+    [goals]
+  );
 
-  // Calculate total mastered
-  const totalMastered = domainProgress?.reduce((sum: number, p: any) => sum + p.mastered, 0) || 0;
+  // Memoized: Calculate total mastered (only recomputes when domainProgress changes)
+  const totalMastered = useMemo(
+    () => domainProgress?.reduce((sum: number, p: any) => sum + p.mastered, 0) || 0,
+    [domainProgress]
+  );
 
-  // Find most relevant domain: prioritize in-progress, then assigned/not-started, then by incomplete count
-  const getMostRelevantDomainPath = () => {
+  // Memoized: Find most relevant domain path (expensive computation)
+  const mostRelevantDomainPath = useMemo(() => {
     if (!domainProgress || domainProgress.length === 0) return "/deep-work";
 
     // First, find domain with in-progress work
@@ -94,7 +139,7 @@ export function StudentDashboard() {
     }
 
     return "/deep-work";
-  };
+  }, [domainProgress]);
 
   // Get greeting based on time of day
   const getGreeting = () => {
@@ -105,6 +150,11 @@ export function StudentDashboard() {
   };
 
   const firstName = user?.displayName?.split(" ")[0] || "there";
+
+  // Show skeleton while critical data is loading
+  if (domains === undefined || domainProgress === undefined) {
+    return <DashboardSkeleton />;
+  }
 
   return (
     <div>
@@ -126,7 +176,7 @@ export function StudentDashboard() {
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           className="pastel-card pastel-orange col-span-2 row-span-2 p-10 flex flex-col justify-between cursor-pointer"
-          onClick={() => navigate(getMostRelevantDomainPath())}
+          onClick={() => navigate(mostRelevantDomainPath)}
         >
           <div className="flex justify-between items-start">
             <div>

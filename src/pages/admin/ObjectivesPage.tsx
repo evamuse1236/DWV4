@@ -1022,7 +1022,10 @@ export function ObjectivesPage() {
                                 const isExpanded = expandedSubObjectiveId === sub._id;
                                 return (
                                   <div key={sub._id} className="rounded-lg border bg-background overflow-hidden">
-                                    <div className="flex items-start gap-4 p-3">
+                                    <div
+                                      className="flex items-start gap-4 p-3 cursor-pointer hover:bg-accent/50 transition-colors"
+                                      onClick={() => setExpandedSubObjectiveId(isExpanded ? null : sub._id)}
+                                    >
                                       <div className="p-2 rounded-lg bg-muted">
                                         <BookOpen className="h-4 w-4 text-muted-foreground" />
                                       </div>
@@ -1042,7 +1045,10 @@ export function ObjectivesPage() {
                                           variant="ghost"
                                           size="icon"
                                           className="h-8 w-8"
-                                          onClick={() => handleOpenSubDialog(major, sub)}
+                                          onClick={(e) => {
+                                            e.stopPropagation();
+                                            handleOpenSubDialog(major, sub);
+                                          }}
                                           title="Edit sub objective"
                                         >
                                           <Edit2 className="h-4 w-4" />
@@ -1051,26 +1057,28 @@ export function ObjectivesPage() {
                                           variant="ghost"
                                           size="icon"
                                           className="h-8 w-8 text-destructive hover:text-destructive"
-                                          onClick={() => handleDeleteSubObjective(sub._id)}
+                                          onClick={(e) => {
+                                            e.stopPropagation();
+                                            handleDeleteSubObjective(sub._id);
+                                          }}
                                           title="Delete sub objective"
                                         >
                                           <Trash2 className="h-4 w-4" />
                                         </Button>
-                                        <Button
-                                          variant="ghost"
-                                          size="sm"
-                                          onClick={() => setExpandedSubObjectiveId(isExpanded ? null : sub._id)}
-                                        >
+                                        <div className="p-2">
                                           {isExpanded ? (
-                                            <ChevronUp className="h-4 w-4" />
+                                            <ChevronUp className="h-4 w-4 text-muted-foreground" />
                                           ) : (
-                                            <ChevronDown className="h-4 w-4" />
+                                            <ChevronDown className="h-4 w-4 text-muted-foreground" />
                                           )}
-                                        </Button>
+                                        </div>
                                         <Button
                                           variant="outline"
                                           size="sm"
-                                          onClick={() => handleAssignClick(sub)}
+                                          onClick={(e) => {
+                                            e.stopPropagation();
+                                            handleAssignClick(sub);
+                                          }}
                                         >
                                           <Users className="h-4 w-4 mr-1" />
                                           Assign

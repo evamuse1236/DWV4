@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useState, useDeferredValue } from "react";
 import { useQuery, useMutation } from "convex/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { api } from "../../../convex/_generated/api";
 import { useAuth } from "../../hooks/useAuth";
 import { getBookBadgeClass, type BookStatus } from "../../lib/status-utils";
 import BookBuddy from "../../components/reading/BookBuddy";
+import { Skeleton } from "../../components/ui/skeleton";
 
 type TabType = "library" | "reading" | "finished";
 
@@ -26,7 +27,26 @@ const SEARCH_ICON_PATH = "M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.
 const CHECK_ICON_PATH = "M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z";
 
 /**
- * Book cover image with fallback icon
+ * Skeleton loading state for book grids.
+ * Shows 8 book card placeholders in a responsive grid.
+ */
+function BookGridSkeleton() {
+  return (
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
+        <div key={i} className="rounded-[30px] p-5 bg-white/40">
+          <Skeleton className="w-full aspect-[3/4] rounded-xl mb-4" />
+          <Skeleton className="h-5 w-3/4 mb-2" />
+          <Skeleton className="h-3 w-1/2" />
+        </div>
+      ))}
+    </div>
+  );
+}
+
+/**
+ * Book cover image with fallback icon and lazy loading.
+ * Uses native lazy loading for better performance on scroll.
  */
 interface BookCoverProps {
   coverImageUrl?: string;
@@ -35,18 +55,27 @@ interface BookCoverProps {
 }
 
 function BookCover({ coverImageUrl, className = "w-full aspect-[3/4] rounded-xl", iconSize = "w-12 h-12" }: BookCoverProps) {
+  const [imgError, setImgError] = useState(false);
+  const showFallback = !coverImageUrl || imgError;
+
   return (
     <div
-      className={`${className} flex items-center justify-center`}
+      className={`${className} flex items-center justify-center overflow-hidden`}
       style={{
-        background: coverImageUrl
-          ? `url(${coverImageUrl})`
-          : "linear-gradient(135deg, rgba(0,0,0,0.05), rgba(0,0,0,0.1))",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
+        background: showFallback
+          ? "linear-gradient(135deg, rgba(0,0,0,0.05), rgba(0,0,0,0.1))"
+          : undefined,
       }}
     >
-      {!coverImageUrl && (
+      {coverImageUrl && !imgError ? (
+        <img
+          src={coverImageUrl}
+          alt=""
+          loading="lazy"
+          className="w-full h-full object-cover"
+          onError={() => setImgError(true)}
+        />
+      ) : (
         <svg className={`${iconSize} opacity-20`} fill="none" stroke="currentColor" strokeWidth={1} viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" d={BOOK_ICON_PATH} />
         </svg>
@@ -63,14 +92,20 @@ interface StarRatingProps {
   size?: "sm" | "md" | "lg";
 }
 
+const STAR_SIZE_CLASSES = {
+  sm: { text: "text-sm", gap: "gap-0.5" },
+  md: { text: "text-xl", gap: "gap-1" },
+  lg: { text: "text-4xl", gap: "gap-1" },
+} as const;
+
 function StarRating({ rating, size = "sm" }: StarRatingProps) {
-  const sizeClass = size === "sm" ? "text-sm" : size === "md" ? "text-xl" : "text-4xl";
+  const { text, gap } = STAR_SIZE_CLASSES[size];
   return (
-    <div className={`flex items-center ${size === "sm" ? "gap-0.5" : "gap-1"}`}>
+    <div className={`flex items-center ${gap}`}>
       {[1, 2, 3, 4, 5].map((star) => (
         <span
           key={star}
-          className={`${sizeClass} ${star <= rating ? "text-[#ca8a04]" : "text-black/10"}`}
+          className={`${text} ${star <= rating ? "text-[#ca8a04]" : "text-black/10"}`}
         >
           ★
         </span>
@@ -119,6 +154,8 @@ export function ReadingPage() {
   const [activeTab, setActiveTab] = useState<TabType>("library");
   const [selectedBook, setSelectedBook] = useState<any>(null);
   const [searchQuery, setSearchQuery] = useState("");
+  // Deferred value for search - prevents jank during rapid typing
+  const deferredSearchQuery = useDeferredValue(searchQuery);
   
   // Review form state
   const [showReviewForm, setShowReviewForm] = useState(false);
@@ -230,12 +267,12 @@ export function ReadingPage() {
     return "pastel-blue";
   };
 
-  // Filter books by search query
+  // Filter books by search query (uses deferred value for smoother typing)
   const filterBooks = (books: any[] | undefined, isMyBooks = false) => {
     if (!books) return [];
-    if (!searchQuery.trim()) return books;
+    if (!deferredSearchQuery.trim()) return books;
 
-    const query = searchQuery.toLowerCase();
+    const query = deferredSearchQuery.toLowerCase();
     return books.filter((item: any) => {
       const book = isMyBooks ? item.book : item;
       const title = (book?.title || "").toLowerCase();
@@ -382,9 +419,7 @@ export function ReadingPage() {
                   : "text-[#666] hover:text-[#1a1a1a]"
               }`}
             >
-              {tab === "library" && "Library"}
-              {tab === "reading" && "Reading"}
-              {tab === "finished" && "Finished"}
+              {tab.charAt(0).toUpperCase() + tab.slice(1)}
             </button>
           ))}
         </div>
@@ -401,7 +436,10 @@ export function ReadingPage() {
             exit={{ opacity: 0, y: -10 }}
             className="fade-in-up delay-3"
           >
-            {libraryBooks.length > 0 ? (
+            {/* Show skeleton while books are loading */}
+            {allBooks === undefined ? (
+              <BookGridSkeleton />
+            ) : libraryBooks.length > 0 ? (
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {libraryBooks.map((book: any, index: number) => {
                   const genreColor = getGenreColor(book.genre);
@@ -468,7 +506,9 @@ export function ReadingPage() {
             exit={{ opacity: 0, y: -10 }}
             className="fade-in-up delay-3"
           >
-            {readingBooks.length > 0 ? (
+            {myBooks === undefined ? (
+              <BookGridSkeleton />
+            ) : readingBooks.length > 0 ? (
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {readingBooks.map((item: any, index: number) => {
                   const genreColor = getGenreColor(item.book?.genre);
@@ -550,7 +590,9 @@ export function ReadingPage() {
             exit={{ opacity: 0, y: -10 }}
             className="fade-in-up delay-3"
           >
-            {finishedBooks.length > 0 ? (
+            {myBooks === undefined ? (
+              <BookGridSkeleton />
+            ) : finishedBooks.length > 0 ? (
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {finishedBooks.map((item: any, index: number) => {
                   const genreColor = getGenreColor(item.book?.genre);

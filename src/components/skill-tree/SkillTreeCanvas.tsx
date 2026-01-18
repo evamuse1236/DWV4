@@ -311,7 +311,7 @@ export function SkillTreeCanvas({
                   position={node.position}
                   isActive={selectedNode?.type === "major" && selectedNode.id === node.id}
                   isVisible={showSkills}
-                  delay={index * 100}
+                  delay={Math.min(index * 30, 500)}
                   variant="major"
                   status={majorState?.status}
                   isReady={majorState?.isReady}
@@ -336,7 +336,7 @@ export function SkillTreeCanvas({
                 position={node.position}
                 isActive={selectedNode?.type === "sub" && selectedNode.id === node.id}
                 isVisible={showSkills}
-                delay={index * 100}
+                delay={Math.min(index * 30, 500)}
                 difficulty={node.difficulty}
                 variant="sub"
                 status={subState?.status}

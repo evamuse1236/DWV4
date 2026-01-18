@@ -3,6 +3,8 @@ import { ConvexProvider, ConvexReactClient } from "convex/react";
 import { AuthProvider } from "./hooks/useAuth";
 import { ProtectedRoute, PublicOnlyRoute } from "./components/auth";
 import { DashboardLayout, AdminLayout } from "./components/layout";
+import { Toaster } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 // Pages
 import LoginPage from "./pages/LoginPage";
@@ -39,8 +41,9 @@ function App() {
   return (
     <ConvexProvider client={convex}>
       <AuthProvider>
-        <BrowserRouter>
-          <Routes>
+        <TooltipProvider>
+          <BrowserRouter>
+            <Routes>
             {/* Public routes */}
             <Route
               path="/login"
@@ -102,8 +105,10 @@ function App() {
             {/* Default redirect */}
             <Route path="/" element={<Navigate to="/login" replace />} />
             <Route path="*" element={<Navigate to="/login" replace />} />
-          </Routes>
-        </BrowserRouter>
+            </Routes>
+            <Toaster />
+          </BrowserRouter>
+        </TooltipProvider>
       </AuthProvider>
     </ConvexProvider>
   );

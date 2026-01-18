@@ -1,4 +1,7 @@
-import { NavLink, Outlet, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
+import { useQuery } from "convex/react";
+import { api } from "../../../convex/_generated/api";
 import {
   Sidebar,
   SidebarContent,
@@ -15,6 +18,7 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -23,6 +27,14 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import {
+  CommandDialog,
+  CommandInput,
+  CommandList,
+  CommandEmpty,
+  CommandGroup,
+  CommandItem,
+} from "@/components/ui/command";
 import { Separator } from "@/components/ui/separator";
 import { useAuth } from "@/hooks/useAuth";
 import {
@@ -37,6 +49,7 @@ import {
   Cookie,
   Mic,
   FolderKanban,
+  Search,
 } from "lucide-react";
 
 // Admin navigation items
@@ -70,6 +83,29 @@ function isNavItemActive(itemPath: string, currentPath: string): boolean {
 export function AdminLayout() {
   const { user, logout } = useAuth();
   const location = useLocation();
+  const navigate = useNavigate();
+
+  // Search dialog state
+  const [searchOpen, setSearchOpen] = useState(false);
+  const students = useQuery(api.users.getAll);
+
+  // Global Cmd+K shortcut
+  useEffect(() => {
+    const down = (e: KeyboardEvent) => {
+      if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
+        e.preventDefault();
+        setSearchOpen((open) => !open);
+      }
+    };
+
+    document.addEventListener("keydown", down);
+    return () => document.removeEventListener("keydown", down);
+  }, []);
+
+  const handleSelectStudent = (studentId: string) => {
+    setSearchOpen(false);
+    navigate(`/admin/students/${studentId}`);
+  };
 
   return (
     <SidebarProvider>
@@ -170,10 +206,22 @@ export function AdminLayout() {
         <header className="flex h-14 shrink-0 items-center gap-2 border-b px-4">
           <SidebarTrigger className="-ml-1 md:hidden" />
           <Separator orientation="vertical" className="mr-2 h-4" />
-          <h1 className="font-serif text-lg font-semibold">
+          <h1 className="font-serif text-lg font-semibold flex-1">
             {adminNavItems.find((item) => isNavItemActive(item.path, location.pathname))?.label ||
               "Admin"}
           </h1>
+          <Button
+            variant="outline"
+            size="sm"
+            className="hidden md:flex items-center gap-2 text-muted-foreground"
+            onClick={() => setSearchOpen(true)}
+          >
+            <Search className="h-4 w-4" />
+            <span>Search students...</span>
+            <kbd className="pointer-events-none hidden h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-xs font-medium opacity-100 sm:flex">
+              <span className="text-xs">⌘</span>K
+            </kbd>
+          </Button>
         </header>
 
         {/* Main content area */}
@@ -181,6 +229,33 @@ export function AdminLayout() {
           <Outlet />
         </main>
       </SidebarInset>
+
+      {/* Global search dialog */}
+      <CommandDialog open={searchOpen} onOpenChange={setSearchOpen}>
+        <CommandInput placeholder="Search students..." />
+        <CommandList>
+          <CommandEmpty>No students found.</CommandEmpty>
+          <CommandGroup heading="Students">
+            {students?.map((student: any) => (
+              <CommandItem
+                key={student._id}
+                onSelect={() => handleSelectStudent(student._id)}
+                className="flex items-center gap-3"
+              >
+                <Avatar className="h-8 w-8">
+                  <AvatarFallback className="bg-primary text-primary-foreground text-xs">
+                    {student.displayName?.charAt(0) || "?"}
+                  </AvatarFallback>
+                </Avatar>
+                <div className="flex flex-col">
+                  <span className="font-medium">{student.displayName}</span>
+                  <span className="text-xs text-muted-foreground">@{student.username}</span>
+                </div>
+              </CommandItem>
+            ))}
+          </CommandGroup>
+        </CommandList>
+      </CommandDialog>
     </SidebarProvider>
   );
 }

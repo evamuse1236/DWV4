@@ -91,7 +91,7 @@ export function ObjectivePopover({
   userId,
   domainName,
   selectedNode,
-  onClose,
+  onClose: _onClose,
   onVivaRequested,
 }: ObjectivePopoverProps) {
   const toggleActivity = useMutation(api.progress.toggleActivity);
