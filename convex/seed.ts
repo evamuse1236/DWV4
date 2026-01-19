@@ -850,3 +850,269 @@ export const seedTestActivities = mutation({
     };
   },
 });
+
+
+/**
+ * Migrate curriculum: Delete all test data and populate with new structure
+ * - Deletes all curriculum data (cascade order)
+ * - Renames "Writing" domain to "English"
+ * - Inserts new curriculum with sequential timestamps for ordering
+ */
+export const migrateCurriculum = mutation({
+  args: {},
+  handler: async (ctx) => {
+    // Get admin user for createdBy
+    const admin = await ctx.db
+      .query("users")
+      .filter((q) => q.eq(q.field("role"), "admin"))
+      .first();
+
+    if (!admin) {
+      return { success: false, message: "No admin user found" };
+    }
+
+    // ========== STEP 1: CASCADE DELETE (child → parent) ==========
+
+    // 1. Delete activityProgress
+    const allProgress = await ctx.db.query("activityProgress").collect();
+    for (const p of allProgress) {
+      await ctx.db.delete(p._id);
+    }
+
+    // 2. Delete activities
+    const allActivities = await ctx.db.query("activities").collect();
+    for (const a of allActivities) {
+      await ctx.db.delete(a._id);
+    }
+
+    // 3. Delete studentObjectives
+    const allStudentObj = await ctx.db.query("studentObjectives").collect();
+    for (const so of allStudentObj) {
+      await ctx.db.delete(so._id);
+    }
+
+    // 4. Delete studentMajorObjectives
+    const allStudentMajor = await ctx.db.query("studentMajorObjectives").collect();
+    for (const sm of allStudentMajor) {
+      await ctx.db.delete(sm._id);
+    }
+
+    // 5. Delete learningObjectives
+    const allLearning = await ctx.db.query("learningObjectives").collect();
+    for (const lo of allLearning) {
+      await ctx.db.delete(lo._id);
+    }
+
+    // 6. Delete majorObjectives
+    const allMajor = await ctx.db.query("majorObjectives").collect();
+    for (const mo of allMajor) {
+      await ctx.db.delete(mo._id);
+    }
+
+    // ========== STEP 2: RENAME "Writing" TO "English" ==========
+    const writingDomain = await ctx.db
+      .query("domains")
+      .filter((q) => q.eq(q.field("name"), "Writing"))
+      .first();
+
+    if (writingDomain) {
+      await ctx.db.patch(writingDomain._id, { name: "English" });
+    }
+
+    // ========== STEP 3: GET DOMAIN IDs ==========
+    const mathDomain = await ctx.db
+      .query("domains")
+      .filter((q) => q.eq(q.field("name"), "Math"))
+      .first();
+
+    const englishDomain = await ctx.db
+      .query("domains")
+      .filter((q) => q.eq(q.field("name"), "English"))
+      .first();
+
+    const codingDomain = await ctx.db
+      .query("domains")
+      .filter((q) => q.eq(q.field("name"), "Coding"))
+      .first();
+
+    if (!mathDomain || !englishDomain || !codingDomain) {
+      return {
+        success: false,
+        message: `Missing domains: Math=${!!mathDomain}, English=${!!englishDomain}, Coding=${!!codingDomain}`,
+      };
+    }
+
+    // ========== STEP 4: INSERT NEW CURRICULUM ==========
+    // Use incrementing timestamp to preserve order
+    let timestamp = Date.now();
+
+    // Helper to insert a major objective with its sub-objectives
+    const insertMajorWithSubs = async (
+      domainId: typeof mathDomain._id,
+      title: string,
+      subs: string[]
+    ) => {
+      const majorId = await ctx.db.insert("majorObjectives", {
+        domainId,
+        title,
+        description: title,
+        createdBy: admin._id,
+        createdAt: timestamp++,
+      });
+
+      for (const subTitle of subs) {
+        await ctx.db.insert("learningObjectives", {
+          domainId,
+          majorObjectiveId: majorId,
+          title: subTitle,
+          description: subTitle,
+          difficulty: "intermediate",
+          createdBy: admin._id,
+          createdAt: timestamp++,
+        });
+      }
+
+      return majorId;
+    };
+
+    // ========== MATHEMATICS (14 major objectives) ==========
+
+    // 1. Arithmetic Foundation
+    await insertMajorWithSubs(mathDomain._id, "Arithmetic Foundation", [
+      "Multi digit multiplication and division",
+    ]);
+
+    // 2. Fractions Foundation
+    await insertMajorWithSubs(mathDomain._id, "Fractions Foundation", [
+      "I can add and subtract mixed fractions",
+      "I can multiply a fraction with another fraction",
+      "I can divide a fraction with a whole number",
+      "I can solve word problems involving addition, subtraction, multiplication, Division of fractions using equations and visual models",
+    ]);
+
+    // 3. Decimals Foundation
+    await insertMajorWithSubs(mathDomain._id, "Decimals Foundation", [
+      "I can add decimals upto hundreths place value",
+      "I can subtract decimals upto hundreths place value",
+    ]);
+
+    // 4. Arithmetic MYP 1
+    await insertMajorWithSubs(mathDomain._id, "Arithmetic MYP 1", [
+      "SWBAT multiply multi-digit numbers using the standard algorithm",
+      "SWBAT divide multi-digit numbers using the long division algorithm",
+      "SWBAT solve multi-step word problems involving all four operations",
+      "SWBAT use estimation to verify reasonableness of answers",
+      "SWBAT round numbers to specified place values",
+      "SWBAT understand and represent negative numbers on a number line",
+      "SWBAT add and subtract negative numbers",
+      "SWBAT multiply and divide negative numbers",
+    ]);
+
+    // 5. Factors and Multiples
+    await insertMajorWithSubs(mathDomain._id, "Factors and Multiples", [
+      "SWBAT find all factor pairs of a number",
+      "SWBAT list multiples of a number",
+      "SWBAT apply divisibility rules for 2, 3, 4, 5, 6, 9, and 10",
+      "SWBAT identify prime and composite numbers",
+      "SWBAT find LCM of two or more numbers",
+      "SWBAT find HCF/GCD of two or more numbers",
+    ]);
+
+    // 6. Fractions
+    await insertMajorWithSubs(mathDomain._id, "Fractions", [
+      "SWBAT add and subtract fractions with unlike denominators",
+      "SWBAT add and subtract mixed fractions",
+      "SWBAT multiply fractions and mixed numbers",
+      "SWBAT divide fractions by whole numbers",
+      "SWBAT divide fractions by fractions",
+      "SWBAT solve word problems involving fraction operations",
+    ]);
+
+    // 7. Decimals
+    await insertMajorWithSubs(mathDomain._id, "Decimals", [
+      "SWBAT add and subtract decimals to thousandths",
+      "SWBAT multiply decimals by whole numbers",
+      "SWBAT multiply decimals by decimals",
+      "SWBAT divide decimals by whole numbers",
+      "SWBAT divide decimals by decimals",
+      "SWBAT multiply and divide by powers of 10",
+      "SWBAT solve word problems involving decimal operations",
+    ]);
+
+    // 8. Geometry
+    await insertMajorWithSubs(mathDomain._id, "Geometry", [
+      "SWBAT plot and identify points on the coordinate plane",
+      "SWBAT understand the relationship between 2D and 3D shapes",
+      "SWBAT classify triangles by sides and angles",
+      "SWBAT classify and measure properties of quadrilaterals",
+    ]);
+
+    // 9. Measurement and Areas
+    await insertMajorWithSubs(mathDomain._id, "Measurement and Areas", [
+      "SWBAT apply area formulas for rectangles and squares",
+      "SWBAT calculate area of triangles, parallelograms, and trapezoids",
+    ]);
+
+    // 10. Algebra Foundations
+    await insertMajorWithSubs(mathDomain._id, "Algebra Foundations", [
+      "SWBAT understand and evaluate expressions with exponents",
+      "SWBAT evaluate algebraic expressions with substitution",
+      "SWBAT identify and extend numerical patterns",
+      "SWBAT apply order of operations (PEMDAS/BODMAS)",
+    ]);
+
+    // 11. Algebra
+    await insertMajorWithSubs(mathDomain._id, "Algebra", [
+      "SWBAT use variables to represent unknown quantities",
+      "SWBAT write expressions from word phrases",
+      "SWBAT distinguish between constants, coefficients, and variables",
+      "SWBAT apply properties of operations (commutative, associative, distributive)",
+      "SWBAT solve one-step and two-step equations",
+      "SWBAT solve word problems using algebraic equations",
+      "SWBAT graph relationships on the coordinate plane",
+    ]);
+
+    // 12. Rates
+    await insertMajorWithSubs(mathDomain._id, "Rates", [
+      "SWBAT calculate and interpret unit rates",
+      "SWBAT solve word problems involving rates",
+    ]);
+
+    // 13. Percentage
+    await insertMajorWithSubs(mathDomain._id, "Percentage", [
+      "SWBAT understand percent as a rate per 100",
+      "SWBAT convert between fractions, decimals, and percents",
+      "SWBAT find a percent of a number",
+      "SWBAT find what percent one number is of another",
+      "SWBAT calculate percent increase, decrease, and discount",
+    ]);
+
+    // 14. Data
+    await insertMajorWithSubs(mathDomain._id, "Data", [
+      "SWBAT read and interpret line graphs",
+      "SWBAT create line graphs from data",
+    ]);
+
+    // ========== ENGLISH (1 major objective) ==========
+    await insertMajorWithSubs(englishDomain._id, "Reading", [
+      "SWBAT cite evidence from informational text (explicit)",
+      "SWBAT find and cite implicit evidence to draw logical inferences",
+    ]);
+
+    // ========== CODING (1 major objective) ==========
+    await insertMajorWithSubs(codingDomain._id, "Programming Fundamentals", [
+      "I can spot bigger repeating patterns made of smaller ones and write programs using nested loops",
+      "I can understand when to use \"if\" and \"if-else\" in my programs and use them correctly",
+      "I can create variables, save information in them, and use random numbers in my programs",
+    ]);
+
+    // ========== SUMMARY ==========
+    const newMajors = await ctx.db.query("majorObjectives").collect();
+    const newSubs = await ctx.db.query("learningObjectives").collect();
+
+    return {
+      success: true,
+      message: `Migration complete! Deleted ${allMajor.length} old majors, ${allLearning.length} old subs, ${allStudentMajor.length} student major assignments, ${allStudentObj.length} student sub assignments, ${allActivities.length} activities, ${allProgress.length} progress records. Created ${newMajors.length} majors and ${newSubs.length} sub-objectives.`,
+    };
+  },
+});
