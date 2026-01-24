@@ -4,6 +4,7 @@ import { useQuery, useMutation } from "convex/react";
 import { motion } from "framer-motion";
 import { api } from "../../../convex/_generated/api";
 import { useAuth } from "../../hooks/useAuth";
+import { useDelayedLoading } from "../../hooks/useDelayedLoading";
 import { Skeleton } from "../../components/ui/skeleton";
 
 /**
@@ -151,9 +152,17 @@ export function StudentDashboard() {
 
   const firstName = user?.displayName?.split(" ")[0] || "there";
 
-  // Show skeleton while critical data is loading
-  if (domains === undefined || domainProgress === undefined) {
+  // Delayed skeleton - only show if loading takes >200ms to avoid flash
+  const isLoading = domains === undefined || domainProgress === undefined;
+  const showSkeleton = useDelayedLoading(isLoading);
+
+  if (showSkeleton) {
     return <DashboardSkeleton />;
+  }
+
+  // Data still loading but under threshold - render nothing briefly
+  if (isLoading) {
+    return null;
   }
 
   return (

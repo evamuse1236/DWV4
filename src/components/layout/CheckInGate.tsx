@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Sun, Plant, Drop, CloudRain } from "@phosphor-icons/react";
 import { api } from "../../../convex/_generated/api";
 import { useAuth } from "../../hooks/useAuth";
+import { useDelayedLoading } from "../../hooks/useDelayedLoading";
 import { Skeleton } from "../ui/skeleton";
 
 /**
@@ -142,9 +143,18 @@ export function CheckInGate({ children }: CheckInGateProps) {
     user ? { userId: user._id as any } : "skip"
   );
 
-  // Still loading - show skeleton that matches the Palette of Presence layout
-  if (todayCheckIn === undefined || categories === undefined) {
+  // Delayed skeleton - only show if loading takes >200ms to avoid flash
+  const isLoading = todayCheckIn === undefined || categories === undefined;
+  const showSkeleton = useDelayedLoading(isLoading);
+
+  // Show skeleton only after delay threshold
+  if (showSkeleton) {
     return <CheckInSkeleton />;
+  }
+
+  // Data still loading but under threshold - render nothing briefly
+  if (isLoading) {
+    return null;
   }
 
   // Already checked in - render children (the actual app)

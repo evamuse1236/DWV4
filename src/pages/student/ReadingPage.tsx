@@ -3,6 +3,7 @@ import { useQuery, useMutation } from "convex/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { api } from "../../../convex/_generated/api";
 import { useAuth } from "../../hooks/useAuth";
+import { useDelayedLoading } from "../../hooks/useDelayedLoading";
 import { getBookBadgeClass, type BookStatus } from "../../lib/status-utils";
 import BookBuddy from "../../components/reading/BookBuddy";
 import { Skeleton } from "../../components/ui/skeleton";
@@ -258,6 +259,12 @@ export function ReadingPage() {
     myBooks?.map((mb: any) => [mb.bookId, mb]) || []
   );
 
+  // Delayed skeleton - only show if loading takes >200ms to avoid flash
+  const allBooksLoading = allBooks === undefined;
+  const myBooksLoading = myBooks === undefined;
+  const showAllBooksSkeleton = useDelayedLoading(allBooksLoading);
+  const showMyBooksSkeleton = useDelayedLoading(myBooksLoading);
+
   // Get genre color class
   const getGenreColor = (genre: string) => {
     const key = genre?.toLowerCase() || "";
@@ -436,10 +443,10 @@ export function ReadingPage() {
             exit={{ opacity: 0, y: -10 }}
             className="fade-in-up delay-3"
           >
-            {/* Show skeleton while books are loading */}
-            {allBooks === undefined ? (
+            {/* Show skeleton while books are loading (delayed to avoid flash) */}
+            {showAllBooksSkeleton ? (
               <BookGridSkeleton />
-            ) : libraryBooks.length > 0 ? (
+            ) : allBooksLoading ? null : libraryBooks.length > 0 ? (
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {libraryBooks.map((book: any, index: number) => {
                   const genreColor = getGenreColor(book.genre);
@@ -506,9 +513,9 @@ export function ReadingPage() {
             exit={{ opacity: 0, y: -10 }}
             className="fade-in-up delay-3"
           >
-            {myBooks === undefined ? (
+            {showMyBooksSkeleton ? (
               <BookGridSkeleton />
-            ) : readingBooks.length > 0 ? (
+            ) : myBooksLoading ? null : readingBooks.length > 0 ? (
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {readingBooks.map((item: any, index: number) => {
                   const genreColor = getGenreColor(item.book?.genre);
@@ -590,9 +597,9 @@ export function ReadingPage() {
             exit={{ opacity: 0, y: -10 }}
             className="fade-in-up delay-3"
           >
-            {myBooks === undefined ? (
+            {showMyBooksSkeleton ? (
               <BookGridSkeleton />
-            ) : finishedBooks.length > 0 ? (
+            ) : myBooksLoading ? null : finishedBooks.length > 0 ? (
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {finishedBooks.map((item: any, index: number) => {
                   const genreColor = getGenreColor(item.book?.genre);

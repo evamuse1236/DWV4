@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "../../../convex/_generated/api";
 import { useAuth } from "@/hooks/useAuth";
+import { useDelayedLoading } from "@/hooks/useDelayedLoading";
 import { toast } from "sonner";
 import {
   Card,
@@ -127,7 +128,7 @@ export function AdminDashboard() {
     setShowSetupBanner(false);
   };
 
-  // Show skeleton while loading
+  // Check if data is still loading
   const isLoading =
     students === undefined ||
     activeSprint === undefined ||
@@ -135,7 +136,10 @@ export function AdminDashboard() {
     presentationRequests === undefined ||
     todayCheckIns === undefined;
 
-  if (isLoading) {
+  // Delayed skeleton - only show if loading takes >200ms to avoid flash
+  const showSkeleton = useDelayedLoading(isLoading);
+
+  if (showSkeleton) {
     return (
       <div className="space-y-6">
         {/* Welcome header skeleton */}
@@ -192,6 +196,11 @@ export function AdminDashboard() {
         </div>
       </div>
     );
+  }
+
+  // Data still loading but under threshold - render nothing briefly
+  if (isLoading) {
+    return null;
   }
 
   const sprintDaysLeft = activeSprint
