@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { Sidebar } from "./Sidebar";
 import { CheckInGate } from "./CheckInGate";
+import { Changelog } from "./Changelog";
 
 /**
  * Main dashboard layout with Paper UI sidebar and content area
@@ -13,6 +14,9 @@ export function DashboardLayout() {
       <div className="min-h-screen">
         {/* Sidebar - Uses CSS class from index.css */}
         <Sidebar />
+
+        {/* Changelog notification - top right */}
+        <Changelog />
 
         {/* Main content - Uses page-wrapper class */}
         <main className="page-wrapper">
