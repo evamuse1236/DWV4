@@ -569,8 +569,8 @@ export function SprintPage() {
               }}>
                 Daily Actions
               </div>
-              <ul className={styles['action-list']}>
-                {goal.actionItems?.slice(0, 5).map((item: any) => (
+              <ul className={cn(styles['action-list'], styles['action-list-scrollable'])}>
+                {goal.actionItems?.map((item: any) => (
                   <li
                     key={item._id}
                     className={cn(styles['action-item'], item.isCompleted && styles.done)}

@@ -305,6 +305,38 @@
   margin: 12px 0 0 0;
 }
 
+/* Scrollable action list with elegant minimal scrollbar */
+.action-list-scrollable {
+  max-height: 180px;
+  overflow-y: auto;
+  padding-right: 8px;
+  margin-right: -4px;
+
+  /* Elegant scrollbar styling */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(120, 107, 98, 0.25) transparent;
+}
+
+/* Webkit (Chrome, Safari, Edge) scrollbar */
+.action-list-scrollable::-webkit-scrollbar {
+  width: 6px;
+}
+
+.action-list-scrollable::-webkit-scrollbar-track {
+  background: rgba(120, 107, 98, 0.08);
+  border-radius: 3px;
+}
+
+.action-list-scrollable::-webkit-scrollbar-thumb {
+  background: rgba(120, 107, 98, 0.2);
+  border-radius: 3px;
+  transition: background 0.2s ease;
+}
+
+.action-list-scrollable::-webkit-scrollbar-thumb:hover {
+  background: rgba(120, 107, 98, 0.35);
+}
+
 .action-item {
   display: flex;
   align-items: center;
