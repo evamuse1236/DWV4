@@ -76,8 +76,8 @@ export function SprintPage() {
   // Week toggle state (1 or 2)
   const [activeWeek, setActiveWeek] = useState(1);
 
-  // Goal expansion state (track which goal ID is expanded)
-  const [expandedGoalId, setExpandedGoalId] = useState<string | null>(null);
+  // Goal expansion state - all goals expand/collapse together
+  const [goalsExpanded, setGoalsExpanded] = useState(false);
 
   // Selected task for keyboard navigation
   const [selectedTaskId, setSelectedTaskId] = useState<string | null>(null);
@@ -433,9 +433,9 @@ export function SprintPage() {
     tasksByDay[i] = weekActionItems.filter((item: any) => item.dayOfWeek === i);
   }
 
-  // Toggle goal expansion
-  const handleGoalClick = (goalId: string) => {
-    setExpandedGoalId(expandedGoalId === goalId ? null : goalId);
+  // Toggle all goals expansion together
+  const handleGoalClick = () => {
+    setGoalsExpanded((prev) => !prev);
   };
 
   // Open Muse for goal creation
@@ -452,7 +452,7 @@ export function SprintPage() {
       const goal = goals?.[i];
 
       if (goal) {
-        const isExpanded = expandedGoalId === goal._id;
+        const isExpanded = goalsExpanded;
         const completedItems = goal.actionItems?.filter((item: any) => item.isCompleted).length || 0;
         const totalItems = goal.actionItems?.length || 0;
         const progress = totalItems > 0 ? (completedItems / totalItems) * 100 : 0;
@@ -460,11 +460,10 @@ export function SprintPage() {
         const goalColor = GOAL_COLORS[i % GOAL_COLORS.length];
 
         goalSlots.push(
-          <motion.div
+          <div
             key={goal._id}
             className={cn(styles['goal-slot'], styles.filled, isExpanded && styles.expanded)}
-            onClick={() => handleGoalClick(goal._id)}
-            layout
+            onClick={handleGoalClick}
             style={{ position: "relative", "--goal-tint": goalColor.tint } as React.CSSProperties}
           >
             {/* Status pill - top right */}
@@ -611,7 +610,6 @@ export function SprintPage() {
                     e.stopPropagation();
                     if (confirm(`Delete "${goal.title}" and all its tasks?`)) {
                       removeGoal({ goalId: goal._id as any });
-                      setExpandedGoalId(null);
                     }
                   }}
                   style={{
@@ -631,7 +629,7 @@ export function SprintPage() {
                 </button>
               </div>
             </div>
-          </motion.div>
+          </div>
         );
       } else {
         // Empty slot - clean HUD style
