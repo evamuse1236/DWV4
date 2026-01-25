@@ -1,135 +1,170 @@
 /* =============================================================================
- SPRINT PAGE - New Week View Design
+ SPRINT PAGE - Structured Serenity Design System
+ Light Academia aesthetic + modern productivity usability
  ============================================================================= */
 
 /* Week View Container */
 .week-view-container {
   position: relative;
+  margin-top: 32px;
 }
 
-/* Week View (7 columns) */
+/* Week View (7 columns) - Grounded swimlane design */
 .week-view {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 12px;
+  gap: 0; /* No gap - use borders for separation */
+  background: transparent;
 }
 
-/* Day Column */
+/* Day Column - Grounded with vertical separators */
 .day-column {
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 16px;
-  min-height: 400px;
-  padding: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  transition: all 0.3s ease;
+  background: transparent;
+  min-height: 420px;
+  padding: 16px 14px;
+  border-right: 1px solid #DDD5CC; /* Darker divider for visibility */
+  transition: background-color 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.day-column:first-child {
+  border-left: 1px solid #DDD5CC; /* Add left border to first column */
+}
+
+.day-column:last-child {
+  border-right: 1px solid #DDD5CC; /* Keep right border on last column */
 }
 
 .day-column:hover {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Today's column gets a subtle highlight */
+.day-column.active {
+  background: rgba(255, 255, 255, 0.35);
 }
 
 .day-column.active .day-name {
-  color: var(--color-text);
-  font-weight: 700;
+  color: var(--color-espresso, #2D2420);
+  font-weight: 600;
 }
 
 .day-column.active .day-date {
-  color: #d97706;
+  color: var(--color-espresso, #2D2420);
 }
 
-
+/* Day Header - Improved hierarchy */
 .day-header {
   text-align: center;
-  margin-bottom: 16px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: none; /* Remove border - cleaner look */
 }
 
+/* Day Name - Small, tracked uppercase */
 .day-name {
-  font-size: 11px;
+  font-family: var(--font-body, 'DM Sans', sans-serif);
+  font-size: 10px;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--color-text-muted);
+  letter-spacing: 0.15em;
+  color: var(--color-taupe, #786B62);
   margin-bottom: 4px;
 }
 
+/* Day Date - Large, bold, Espresso color */
 .day-date {
-  font-family: var(--font-display);
-  font-size: 20px;
-  font-style: italic;
+  font-family: var(--font-body, 'DM Sans', sans-serif);
+  font-size: 28px;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--color-espresso, #2D2420);
+  line-height: 1;
 }
 
-/* Task Card */
+/* Task Card - "The Card Lift" Design */
 .task-card {
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(4px);
-  border-radius: 12px;
-  padding: 12px;
-  margin-bottom: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.9);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  background: var(--color-card-active, #FFFFFF);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border: none; /* Remove borders - shadow defines shape */
+  box-shadow: 0px 2px 8px rgba(45, 36, 32, 0.05);
   font-size: 13px;
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
+/* Remove the left bar - cleaner sticker look */
 .task-card::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: var(--color-text-muted);
-  opacity: 0.3;
+  display: none;
 }
 
 .task-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 16px rgba(45, 36, 32, 0.08);
   z-index: 10;
 }
 
 .task-card.selected {
-  border: 2px solid var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(168, 197, 181, 0.3), 0 8px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 2px var(--color-primary, #a8c5b5), 0px 6px 16px rgba(45, 36, 32, 0.1);
   transform: translateY(-2px);
 }
 
 .task-card.selected::before {
-  background: var(--color-primary);
-  opacity: 1;
-  width: 4px;
+  display: none;
 }
 
+/* Completed State - Muted text, subtle background tint */
 .task-card.completed {
-  opacity: 0.5;
+  opacity: 1; /* Don't reduce opacity of whole card */
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 1px 4px rgba(45, 36, 32, 0.03);
+}
+
+/* Text inside completed cards gets muted */
+.task-card.completed .task-title,
+.task-card.completed [style*="font-family"] {
+  color: var(--color-taupe, #786B62) !important;
+  text-decoration: none !important; /* Remove strikethrough */
 }
 
 .task-card.completed::before {
-  background: var(--color-primary);
-  opacity: 1;
+  display: none;
 }
 
+/* Task Time Pill / Goal Label */
 .task-time-pill {
-  display: inline-block;
-  font-size: 9px;
-  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-body, 'DM Sans', sans-serif);
+  font-size: 10px;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  opacity: 0.6;
-  margin-bottom: 4px;
+  letter-spacing: 0.03em;
+  color: var(--color-taupe, #786B62);
+  margin-bottom: 6px;
 }
 
-/* Goals Container */
+/* Task Title */
+.task-title {
+  font-family: var(--font-body, 'DM Sans', sans-serif);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-espresso, #2D2420);
+  line-height: 1.4;
+}
+
+/* Goals Container - HUD Style Dashboard */
 .goals-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-bottom: 40px;
-  align-items: start;
+  gap: 16px;
+  margin-bottom: 32px;
+  align-items: stretch;
 }
 
 @media (max-width: 900px) {
@@ -138,72 +173,47 @@
   }
 }
 
-/* Goal Slot */
+/* Goal Slot - Slim HUD Cards */
 .goal-slot {
-  background: rgba(255, 255, 255, 0.4);
-  border: 1px dashed rgba(0, 0, 0, 0.1);
-  border-radius: 28px;
-  padding: 28px;
-  min-height: 160px;
+  background: var(--color-card-active, #FFFFFF);
+  border: none;
+  border-radius: 16px;
+  padding: 16px 20px;
+  min-height: 80px; /* 50% smaller than before */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start; /* Left align content */
   justify-content: center;
-  text-align: center;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: left;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   overflow: hidden;
   position: relative;
+  box-shadow: 0px 2px 8px rgba(45, 36, 32, 0.05);
 }
 
-/* Decorative Corner Accent */
+/* Remove the corner accent for cleaner HUD look */
 .goal-slot::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 60px;
-  height: 60px;
-  background: radial-gradient(circle at top right, var(--goal-tint, #e0f5e0), transparent 70%);
-  opacity: 0.4;
-  transition: all 0.4s ease;
-  pointer-events: none;
+  display: none;
 }
 
 .goal-slot:hover {
-  border-color: #8eb8bf;
-  background: rgba(255, 255, 255, 0.7);
-  transform: translateY(-6px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
-}
-
-.goal-slot:hover::before {
-  opacity: 0.6;
-  width: 100px;
-  height: 100px;
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 20px rgba(45, 36, 32, 0.08);
 }
 
 .goal-slot.filled {
-  border-style: solid;
-  border-color: rgba(255, 255, 255, 0.9);
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.5));
+  background: var(--color-card-active, #FFFFFF);
   justify-content: flex-start;
-  padding-top: 32px;
+  padding: 16px 20px;
 }
 
+/* Expanded state - grows to show details */
 .goal-slot.expanded {
-  min-height: 400px;
-  background: #fff;
-  border-color: #a8c5b5;
-  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.1);
-  transform: scale(1.03);
+  min-height: 320px;
+  box-shadow: 0px 12px 32px rgba(45, 36, 32, 0.12);
+  transform: translateY(-4px);
   z-index: 50;
-}
-
-.goal-slot.expanded::before {
-  width: 150px;
-  height: 150px;
-  opacity: 0.3;
 }
 
 /* Goal Details (expanded content) */
@@ -211,7 +221,7 @@
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
   width: 100%;
   text-align: left;
   margin-top: 0;
@@ -220,84 +230,112 @@
 .goal-slot.expanded .goal-details {
   max-height: 500px;
   opacity: 1;
-  margin-top: 24px;
-  padding-top: 20px;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-divider, #E5DED6);
 }
 
+/* Goal Progress Bar */
 .goal-progress-mini {
-  height: 8px;
-  background: rgba(0, 0, 0, 0.05);
-  border-radius: 10px;
-  margin: 12px 0;
+  height: 4px;
+  background: rgba(45, 36, 32, 0.08);
+  border-radius: 4px;
+  margin: 10px 0;
   overflow: hidden;
   cursor: pointer;
 }
 
 .goal-progress-fill {
   height: 100%;
-  background: #a8c5b5;
-  border-radius: 10px;
+  background: var(--color-primary, #a8c5b5);
+  border-radius: 4px;
   transition: width 0.4s ease;
 }
 
-/* Goal Icon */
+/* Goal Icon - Smaller for HUD style */
 .goal-icon {
-  font-size: 36px;
-  margin-bottom: 14px;
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-right: 12px;
   opacity: 0.9;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   cursor: pointer;
-  padding: 8px;
-  border-radius: 12px;
+  padding: 0;
+  border-radius: 0;
+  display: none; /* Hide icons in HUD mode - status pill replaces them */
 }
 
 .goal-icon:hover {
-  background: rgba(0, 0, 0, 0.05);
   transform: scale(1.1);
 }
 
-/* Goal Label (Pill Badge) */
+/* Goal Status Pill - Top right of card */
+.goal-status-pill {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-family: var(--font-body, 'DM Sans', sans-serif);
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: var(--color-ss-sage, #D4E0D6);
+  color: var(--color-espresso, #2D2420);
+}
+
+/* Goal Label (Pill Badge) - Now used for status in HUD */
 .goal-label {
+  font-family: var(--font-body, 'DM Sans', sans-serif);
   font-size: 10px;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
-  font-weight: 700;
-  opacity: 0.5;
-  margin-top: 10px;
-  padding: 4px 12px;
-  background: rgba(0, 0, 0, 0.03);
-  border-radius: 20px;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  color: var(--color-taupe, #786B62);
+  margin-top: 4px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
 }
 
 .action-list {
   list-style: none;
   padding: 0;
-  margin: 16px 0 0 0;
+  margin: 12px 0 0 0;
 }
 
 .action-item {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
+  font-family: var(--font-body, 'DM Sans', sans-serif);
   font-size: 13px;
-  margin-bottom: 10px;
-  color: var(--color-text);
+  font-weight: 400;
+  margin-bottom: 8px;
+  color: var(--color-espresso, #2D2420);
+  cursor: pointer;
+  padding: 4px 0;
+  transition: opacity 0.2s ease;
+}
+
+.action-item:hover {
+  opacity: 0.8;
 }
 
 .action-item i {
   font-size: 16px;
-  opacity: 0.4;
+  color: var(--color-taupe, #786B62);
 }
 
+/* Completed action - muted color, no strikethrough */
 .action-item.done {
-  opacity: 0.6;
-  text-decoration: line-through;
+  color: var(--color-taupe, #786B62);
+  text-decoration: none; /* Remove strikethrough */
 }
 
 .action-item.done i {
-  color: var(--color-primary);
-  opacity: 1;
+  color: var(--color-primary, #a8c5b5);
 }
 
 /* Habit Tracker */
@@ -361,25 +399,26 @@
   font-weight: bold;
 }
 
-/* Quick Add Button */
+/* Quick Add Button - Darker dashed outline */
 .quick-add-btn {
   width: 100%;
-  padding: 8px;
-  border: 2px dashed rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  padding: 10px;
+  border: 2px dashed var(--color-add-btn, #C0B5AD);
+  border-radius: 8px;
   background: transparent;
   cursor: pointer;
-  opacity: 0.4;
+  opacity: 0.6;
   transition: all 0.2s ease;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--color-taupe, #786B62);
 }
 
 .quick-add-btn:hover {
   opacity: 1;
-  border-color: var(--color-primary);
-  background: rgba(168, 197, 181, 0.1);
+  border-color: var(--color-primary, #a8c5b5);
+  background: rgba(168, 197, 181, 0.08);
 }
 
 .quick-add-goals {
@@ -387,10 +426,10 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 8px;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  background: var(--color-card-active, #FFFFFF);
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(45, 36, 32, 0.08);
 }
 
 .goal-dot-btn {
@@ -407,33 +446,38 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Week Toggle */
+/* Week Toggle - Clean pill toggle */
 .week-toggle {
   display: flex;
-  background: rgba(0, 0, 0, 0.05);
-  border-radius: 30px;
-  padding: 4px;
+  background: rgba(45, 36, 32, 0.06);
+  border-radius: 24px;
+  padding: 3px;
   width: max-content;
 }
 
 .toggle-btn {
-  padding: 8px 24px;
-  border-radius: 24px;
+  font-family: var(--font-body, 'DM Sans', sans-serif);
+  padding: 8px 20px;
+  border-radius: 20px;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--color-text-muted);
+  letter-spacing: 0.08em;
+  color: var(--color-taupe, #786B62);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
   border: none;
   background: transparent;
 }
 
+.toggle-btn:hover {
+  color: var(--color-espresso, #2D2420);
+}
+
 .toggle-btn.active {
-  background: white;
-  color: var(--color-text);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background: var(--color-card-active, #FFFFFF);
+  color: var(--color-espresso, #2D2420);
+  box-shadow: 0 2px 6px rgba(45, 36, 32, 0.08);
 }
 
 /* Responsive Week View */
@@ -456,103 +500,106 @@
    HABIT TRACKER - Artistic Card Design
    ========================================================================== */
 
+/* Habit Section Title - Serif heading */
 .habit-section-title {
-  font-family: var(--font-display);
-  font-size: 2.5rem;
+  font-family: var(--font-display, 'Fraunces', serif);
+  font-size: 2rem;
+  font-weight: 400;
   font-style: italic;
-  color: var(--color-text);
-  margin-bottom: 32px;
+  color: var(--color-espresso, #2D2420);
+  margin-bottom: 28px;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
 }
 
 .habit-section-title::after {
   content: "";
   flex: 1;
   height: 1px;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), transparent);
+  background: linear-gradient(to right, var(--color-divider, #E5DED6), transparent);
 }
 
 .habits-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 24px;
-  margin-bottom: 60px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+  margin-bottom: 48px;
 }
 
 .art-habit-card {
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  border-radius: 24px;
-  padding: 24px;
-  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  background: var(--color-card-active, #FFFFFF);
+  border: none;
+  border-radius: 16px;
+  padding: 20px;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
   position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  box-shadow: 0px 2px 8px rgba(45, 36, 32, 0.05);
 }
 
 .art-habit-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
-  border-color: var(--tint-color);
+  transform: translateY(-4px);
+  box-shadow: 0px 8px 24px rgba(45, 36, 32, 0.08);
 }
 
-/* Tinted background wash - always visible */
+/* Subtle tinted background wash */
 .art-habit-card::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, var(--card-tint), transparent 60%);
-  opacity: 0.5;
+  background: linear-gradient(135deg, var(--card-tint, rgba(212, 224, 214, 0.2)), transparent 70%);
+  opacity: 0.4;
   pointer-events: none;
   z-index: 0;
 }
 
-/* Hover radial gradient effect */
+/* Hover radial gradient effect - more subtle */
 .art-habit-card::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at top right, var(--card-tint), transparent 50%);
+  background: radial-gradient(circle at top right, var(--card-tint, rgba(212, 224, 214, 0.3)), transparent 60%);
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.3s ease;
   z-index: 0;
 }
 
 .art-habit-card:hover::after {
-  opacity: 0.3;
+  opacity: 0.25;
 }
 
 .habit-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   position: relative;
   z-index: 1;
 }
 
 .habit-info h3 {
-  font-family: var(--font-display);
-  font-size: 1.5rem;
+  font-family: var(--font-display, 'Fraunces', serif);
+  font-size: 1.25rem;
+  font-weight: 400;
   font-style: italic;
   margin: 0;
-  line-height: 1.2;
+  line-height: 1.3;
+  color: var(--color-espresso, #2D2420);
 }
 
 .habit-streak {
-  font-size: 12px;
-  font-weight: 700;
-  color: #d97706;
+  font-family: var(--font-body, 'DM Sans', sans-serif);
+  font-size: 11px;
+  font-weight: 600;
+  color: #b45309;
   display: flex;
   align-items: center;
   gap: 4px;
-  background: rgba(217, 119, 6, 0.1);
-  padding: 6px 12px;
-  border-radius: 20px;
+  background: rgba(180, 83, 9, 0.08);
+  padding: 5px 10px;
+  border-radius: 14px;
 }
 
 .habit-week-visual {

@@ -22,14 +22,11 @@ const MS_PER_DAY = 1000 * 60 * 60 * 24;
 // Week runs Monday (index 0) to Sunday (index 6)
 const DAY_NAMES = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
-// Goal icons (cycle through these)
-const GOAL_ICONS = ["ph-plant", "ph-barbell", "ph-book-open", "ph-lightbulb", "ph-target", "ph-star"];
-
-// Goal colors for visual distinction (with tint for corner accent)
+// Goal colors for visual distinction - Structured Serenity palette
 const GOAL_COLORS = [
-  { name: "sage", dot: "#a8c5b5", bg: "rgba(168, 197, 181, 0.15)", tint: "#88c999" },
-  { name: "coral", dot: "#e8a598", bg: "rgba(232, 165, 152, 0.15)", tint: "#f2a5a5" },
-  { name: "sky", dot: "#8cb4d4", bg: "rgba(140, 180, 212, 0.15)", tint: "#8da4ef" },
+  { name: "sage", dot: "#7FAE8C", bg: "rgba(212, 224, 214, 0.25)", tint: "#D4E0D6", pillBg: "#D4E0D6" },
+  { name: "clay", dot: "#C9A196", bg: "rgba(235, 205, 195, 0.25)", tint: "#EBCDC3", pillBg: "#EBCDC3" },
+  { name: "mist", dot: "#8BA5B3", bg: "rgba(218, 228, 232, 0.25)", tint: "#DAE4E8", pillBg: "#DAE4E8" },
 ];
 
 // Convert 24-hour time to 12-hour format (e.g., 14 -> "2pm")
@@ -459,7 +456,6 @@ export function SprintPage() {
         const completedItems = goal.actionItems?.filter((item: any) => item.isCompleted).length || 0;
         const totalItems = goal.actionItems?.length || 0;
         const progress = totalItems > 0 ? (completedItems / totalItems) * 100 : 0;
-        const iconClass = GOAL_ICONS[i % GOAL_ICONS.length];
 
         const goalColor = GOAL_COLORS[i % GOAL_COLORS.length];
 
@@ -471,27 +467,28 @@ export function SprintPage() {
             layout
             style={{ position: "relative", "--goal-tint": goalColor.tint } as React.CSSProperties}
           >
-            {/* Color dot indicator */}
+            {/* Status pill - top right */}
             <div
               style={{
                 position: "absolute",
-                top: "12px",
-                left: "12px",
-                width: "10px",
-                height: "10px",
-                borderRadius: "50%",
-                background: goalColor.dot,
+                top: "14px",
+                right: "16px",
+                fontFamily: "var(--font-body, 'DM Sans', sans-serif)",
+                fontSize: "10px",
+                fontWeight: 600,
+                textTransform: "uppercase",
+                letterSpacing: "0.05em",
+                padding: "4px 10px",
+                borderRadius: "10px",
+                background: goalColor.pillBg,
+                color: "#2D2420",
               }}
-            />
-            {/* Goal header - matching inspo structure exactly */}
-            <div>
-              <i
-                className={cn('ph', iconClass, styles['goal-icon'])}
-                style={{
-                  color: goalColor.dot,
-                }}
-              />
-              {/* Goal title (inline editable) */}
+            >
+              {goalStatusLabels[goal.status as GoalStatus]}
+            </div>
+            {/* Goal header - HUD style: title top left */}
+            <div style={{ width: "100%", paddingRight: "80px" }}>
+              {/* Goal title (inline editable) - Sans-serif, bold */}
               {editingGoalTitle === goal._id ? (
                 <input
                   type="text"
@@ -514,14 +511,15 @@ export function SprintPage() {
                   onClick={(e) => e.stopPropagation()}
                   style={{
                     width: "100%",
-                    fontFamily: "var(--font-display)",
-                    fontSize: "24px",
-                    fontStyle: "italic",
+                    fontFamily: "var(--font-body, 'DM Sans', sans-serif)",
+                    fontSize: "15px",
+                    fontWeight: 600,
                     padding: "4px 8px",
                     border: "1px solid rgba(168, 197, 181, 0.5)",
                     borderRadius: "6px",
                     background: "transparent",
                     margin: 0,
+                    color: "#2D2420",
                   }}
                 />
               ) : (
@@ -532,44 +530,43 @@ export function SprintPage() {
                     setGoalTitleValue(goal.title);
                   }}
                   style={{
-                    fontFamily: "var(--font-display)",
-                    fontSize: "24px",
-                    fontStyle: "italic",
+                    fontFamily: "var(--font-body, 'DM Sans', sans-serif)",
+                    fontSize: "15px",
+                    fontWeight: 600,
+                    fontStyle: "normal",
                     margin: 0,
                     cursor: "text",
+                    color: "#2D2420",
+                    lineHeight: 1.3,
                   }}
                   title="Click to edit"
                 >
                   {goal.title}
                 </h3>
               )}
-              <div
-                style={{
-                  fontSize: "11px",
-                  textTransform: "uppercase",
-                  letterSpacing: "0.1em",
-                  opacity: 0.5,
-                  marginTop: "8px",
-                }}
-              >
-                {goalStatusLabels[goal.status as GoalStatus]}
-              </div>
+              {/* Progress bar - mini version below title */}
+              {totalItems > 0 && (
+                <div className={styles['goal-progress-mini']} style={{ marginTop: "10px", marginBottom: 0 }}>
+                  <motion.div
+                    className={styles['goal-progress-fill']}
+                    initial={{ width: 0 }}
+                    animate={{ width: `${progress}%` }}
+                    style={{ background: goalColor.dot }}
+                  />
+                </div>
+              )}
             </div>
 
             {/* Goal Details (revealed on click) */}
             <div className={styles['goal-details']}>
-              <div style={{ fontSize: "10px", textTransform: "uppercase", fontWeight: 700, opacity: 0.5 }}>
-                Progress
-              </div>
-              <div className={styles['goal-progress-mini']}>
-                <motion.div
-                  className={styles['goal-progress-fill']}
-                  initial={{ width: 0 }}
-                  animate={{ width: `${progress}%` }}
-                />
-              </div>
-
-              <div style={{ fontSize: "10px", textTransform: "uppercase", fontWeight: 700, opacity: 0.5, marginTop: "16px" }}>
+              <div style={{
+                fontFamily: "var(--font-body, 'DM Sans', sans-serif)",
+                fontSize: "10px",
+                textTransform: "uppercase",
+                fontWeight: 600,
+                letterSpacing: "0.08em",
+                color: "#786B62",
+              }}>
                 Daily Actions
               </div>
               <ul className={styles['action-list']}>
@@ -595,10 +592,12 @@ export function SprintPage() {
                     setEditingGoal(goal);
                   }}
                   style={{
+                    fontFamily: "var(--font-body, 'DM Sans', sans-serif)",
                     fontSize: "11px",
+                    fontWeight: 500,
                     textTransform: "uppercase",
-                    letterSpacing: "0.1em",
-                    opacity: 0.5,
+                    letterSpacing: "0.08em",
+                    color: "#786B62",
                     background: "transparent",
                     border: "none",
                     cursor: "pointer",
@@ -616,14 +615,15 @@ export function SprintPage() {
                     }
                   }}
                   style={{
+                    fontFamily: "var(--font-body, 'DM Sans', sans-serif)",
                     fontSize: "11px",
+                    fontWeight: 500,
                     textTransform: "uppercase",
-                    letterSpacing: "0.1em",
-                    opacity: 0.5,
+                    letterSpacing: "0.08em",
+                    color: "#c44",
                     background: "transparent",
                     border: "none",
                     cursor: "pointer",
-                    color: "#c44",
                   }}
                   className="hover:opacity-100 transition-opacity"
                 >
@@ -634,23 +634,30 @@ export function SprintPage() {
           </motion.div>
         );
       } else {
-        // Empty slot - matching inspo structure exactly
+        // Empty slot - clean HUD style
         const emptySlotColor = GOAL_COLORS[i % GOAL_COLORS.length];
         goalSlots.push(
           <div
             key={`empty-${i}`}
             className={styles['goal-slot']}
             onClick={handleOpenGoalChat}
-            style={{ "--goal-tint": emptySlotColor.tint } as React.CSSProperties}
+            style={{
+              "--goal-tint": emptySlotColor.tint,
+              border: "2px dashed #C0B5AD",
+              background: "transparent",
+              justifyContent: "center",
+              alignItems: "center",
+            } as React.CSSProperties}
           >
-            <div style={{ opacity: 0.4 }}>
-              <i className="ph ph-plus" style={{ fontSize: "24px", display: "block", color: emptySlotColor.dot }} />
+            <div style={{ opacity: 0.5, textAlign: "center" }}>
+              <i className="ph ph-plus" style={{ fontSize: "20px", display: "block", color: "#786B62" }} />
               <div
                 style={{
-                  fontFamily: "var(--font-display)",
-                  fontSize: "18px",
-                  fontStyle: "italic",
-                  marginTop: "8px",
+                  fontFamily: "var(--font-body, 'DM Sans', sans-serif)",
+                  fontSize: "13px",
+                  fontWeight: 500,
+                  marginTop: "6px",
+                  color: "#786B62",
                 }}
               >
                 Set Goal
@@ -783,7 +790,7 @@ export function SprintPage() {
                         </Select>
                       </div>
                     </div>
-                      {/* Task title (inline editable) */}
+                      {/* Task title (inline editable) - Sans-serif, no strikethrough */}
                       {editingTaskTitle === task._id ? (
                         <input
                           type="text"
@@ -806,12 +813,14 @@ export function SprintPage() {
                           onClick={(e) => e.stopPropagation()}
                           style={{
                             width: "100%",
-                            fontFamily: "var(--font-display)",
-                            fontSize: "16px",
+                            fontFamily: "var(--font-body, 'DM Sans', sans-serif)",
+                            fontSize: "14px",
+                            fontWeight: 500,
                             padding: "2px 4px",
                             border: "1px solid rgba(168, 197, 181, 0.5)",
                             borderRadius: "4px",
                             background: "transparent",
+                            color: "#2D2420",
                           }}
                         />
                       ) : (
@@ -822,10 +831,13 @@ export function SprintPage() {
                             setTaskTitleValue(task.title);
                           }}
                           style={{
-                            fontFamily: "var(--font-display)",
-                            fontSize: "16px",
-                            textDecoration: task.isCompleted ? "line-through" : "none",
+                            fontFamily: "var(--font-body, 'DM Sans', sans-serif)",
+                            fontSize: "14px",
+                            fontWeight: 500,
+                            color: task.isCompleted ? "#786B62" : "#2D2420",
+                            textDecoration: "none", /* No strikethrough */
                             cursor: "text",
+                            lineHeight: 1.4,
                           }}
                           title="Click to edit"
                         >
@@ -903,24 +915,34 @@ export function SprintPage() {
 
   return (
     <div>
-      {/* Header */}
-      <div className="fade-in-up" style={{ marginBottom: "40px", display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
+      {/* Header - Serif title with sans-serif label */}
+      <div className="fade-in-up" style={{ marginBottom: "32px", display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
         <div>
           <span
             style={{
               display: "block",
-              marginBottom: "10px",
-              opacity: 0.6,
-              fontFamily: "var(--font-body)",
+              marginBottom: "8px",
+              fontFamily: "var(--font-body, 'DM Sans', sans-serif)",
               textTransform: "uppercase",
-              letterSpacing: "0.1em",
+              letterSpacing: "0.12em",
               fontSize: "11px",
-              fontWeight: 700,
+              fontWeight: 600,
+              color: "#786B62",
             }}
           >
             Sprint Cycle
           </span>
-          <h1 style={{ fontSize: "3.5rem", margin: 0, lineHeight: 1 }}>{activeSprint.name}</h1>
+          <h1 style={{
+            fontFamily: "var(--font-display, 'Fraunces', serif)",
+            fontSize: "2.75rem",
+            fontWeight: 400,
+            fontStyle: "italic",
+            margin: 0,
+            lineHeight: 1,
+            color: "#2D2420",
+          }}>
+            {activeSprint.name}
+          </h1>
         </div>
 
         {/* Week Toggle */}

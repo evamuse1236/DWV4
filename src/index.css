@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
 
 @plugin "tailwindcss-animate";
 
@@ -18,10 +18,23 @@
   --color-tertiary: #e8d5b5;          /* Beige */
   --color-accent: #8eb8bf;            /* Muted Teal */
 
+  /* Structured Serenity Palette */
+  --color-canvas: #F7F2EB;            /* Warm Oatmeal background */
+  --color-card-active: #FFFFFF;       /* Pure White for cards */
+  --color-espresso: #2D2420;          /* Deep Espresso - primary text */
+  --color-taupe: #786B62;             /* Warm Taupe - secondary text */
+  --color-divider: #E5DED6;           /* Column separators */
+  --color-add-btn: #C0B5AD;           /* New task button dashes */
+
+  /* Structured Serenity Accent Colors */
+  --color-ss-sage: #D4E0D6;           /* Soft sage for tags */
+  --color-ss-clay: #EBCDC3;           /* Soft clay for tags */
+  --color-ss-mist: #DAE4E8;           /* Soft mist for tags */
+
   /* Background & Text */
-  --color-bg: #fdfbf7;                /* Warm Off-White */
-  --color-text: #2f3a46;
-  --color-text-muted: #6b7280;
+  --color-bg: #F7F2EB;                /* Updated: Warm Oatmeal */
+  --color-text: #2D2420;              /* Updated: Deep Espresso */
+  --color-text-muted: #786B62;        /* Updated: Warm Taupe */
 
   /* Pastel Tints (for cards) */
   --color-pastel-green: rgba(240, 255, 235, 0.6);
@@ -52,9 +65,10 @@
   --color-domain-coding: #8eb8bf;
   --color-domain-writing: #e8d5b5;
 
-  /* Typography */
-  --font-display: 'Cormorant Garamond', serif;
-  --font-body: 'Lato', sans-serif;
+  /* Typography - Structured Serenity */
+  --font-display: 'Fraunces', 'Cormorant Garamond', serif;  /* Editorial serif for headings */
+  --font-body: 'DM Sans', sans-serif;                        /* Clean geometric sans for UI */
+  --font-serif: 'Fraunces', serif;                           /* Pure serif alias */
 
   /* Spacing & Radius */
   --radius-lg: 24px;
