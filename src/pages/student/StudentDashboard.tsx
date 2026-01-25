@@ -98,6 +98,16 @@ export function StudentDashboard() {
     user ? { userId: user._id as any } : "skip"
   );
 
+  // Get standalone tasks for both weeks (tasks not associated with any goal)
+  const standaloneTasksWeek1 = useQuery(
+    api.goals.getStandaloneActionItems,
+    user ? { userId: user._id as any, weekNumber: 1 } : "skip"
+  );
+  const standaloneTasksWeek2 = useQuery(
+    api.goals.getStandaloneActionItems,
+    user ? { userId: user._id as any, weekNumber: 2 } : "skip"
+  );
+
   // Calculate sprint day
   const sprintDay = activeSprint
     ? Math.ceil(
@@ -106,11 +116,31 @@ export function StudentDashboard() {
       )
     : 0;
 
-  // Memoized: Calculate tasks left (only recomputes when goals change)
-  const tasksLeft = useMemo(
-    () => goals?.filter((g: any) => g.status !== "completed").length || 0,
-    [goals]
-  );
+  // Memoized: Calculate today's incomplete tasks
+  const tasksLeft = useMemo(() => {
+    if (!activeSprint) return 0;
+
+    const today = new Date();
+    const todayDayOfWeek = today.getDay();
+    const sprintStart = new Date(activeSprint.startDate);
+    const daysSinceStart = Math.floor((today.getTime() - sprintStart.getTime()) / (1000 * 60 * 60 * 24));
+    const currentWeek = daysSinceStart < 7 ? 1 : 2;
+
+    const isTodayIncomplete = (item: { weekNumber: number; dayOfWeek: number; isCompleted: boolean }) =>
+      item.weekNumber === currentWeek && item.dayOfWeek === todayDayOfWeek && !item.isCompleted;
+
+    // Count from goal action items
+    const goalTaskCount = (goals ?? [])
+      .flatMap((goal) => goal.actionItems ?? [])
+      .filter(isTodayIncomplete).length;
+
+    // Count from standalone tasks
+    const standaloneTasks = currentWeek === 1 ? standaloneTasksWeek1 : standaloneTasksWeek2;
+    const standaloneCount = (standaloneTasks ?? [])
+      .filter((item) => item.dayOfWeek === todayDayOfWeek && !item.isCompleted).length;
+
+    return goalTaskCount + standaloneCount;
+  }, [goals, activeSprint, standaloneTasksWeek1, standaloneTasksWeek2]);
 
   // Memoized: Calculate total mastered (only recomputes when domainProgress changes)
   const totalMastered = useMemo(

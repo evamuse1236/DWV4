@@ -29,6 +29,15 @@ const GOAL_COLORS = [
   { name: "mist", dot: "#8BA5B3", bg: "rgba(218, 228, 232, 0.25)", tint: "#DAE4E8", pillBg: "#DAE4E8" },
 ];
 
+// Standalone task color (no goal association)
+const STANDALONE_COLOR = {
+  name: "standalone",
+  dot: "#9CA3AF",  // gray-400
+  bg: "rgba(156, 163, 175, 0.08)",
+  tint: "rgba(156, 163, 175, 0.15)",
+  pillBg: "rgba(156, 163, 175, 0.15)",
+};
+
 // Convert 24-hour time to 12-hour format (e.g., 14 -> "2pm")
 function formatHourLabel(hour24: number): string {
   const suffix = hour24 < 12 ? "am" : "pm";
@@ -101,6 +110,9 @@ export function SprintPage() {
   const [optimisticTaskTimes, setOptimisticTaskTimes] = useState<Record<string, string>>({});
   const [timeSaveErrorTaskId, setTimeSaveErrorTaskId] = useState<string | null>(null);
 
+  // Optimistic completion state for instant checkbox feedback
+  const [optimisticCompletions, setOptimisticCompletions] = useState<Record<string, boolean>>({});
+
   // Get active sprint
   const activeSprint = useQuery(api.sprints.getActive);
 
@@ -118,6 +130,16 @@ export function SprintPage() {
     activeSprint && user
       ? { userId: user._id as any, currentSprintId: activeSprint._id }
       : "skip"
+  );
+
+  // Query for standalone tasks (tasks without a goal)
+  const standaloneTasksWeek1 = useQuery(
+    api.goals.getStandaloneActionItems,
+    user ? { userId: user._id as any, weekNumber: 1 } : "skip"
+  );
+  const standaloneTasksWeek2 = useQuery(
+    api.goals.getStandaloneActionItems,
+    user ? { userId: user._id as any, weekNumber: 2 } : "skip"
   );
 
   // Mutations
@@ -197,8 +219,19 @@ export function SprintPage() {
     setEditingGoal(null);
   };
 
-  const handleToggleAction = async (itemId: string) => {
-    await toggleActionItem({ itemId: itemId as any });
+  const handleToggleAction = async (itemId: string, currentCompleted: boolean) => {
+    // Optimistically toggle immediately for instant feedback
+    setOptimisticCompletions((prev) => ({ ...prev, [itemId]: !currentCompleted }));
+
+    try {
+      await toggleActionItem({ itemId: itemId as any });
+    } finally {
+      // Clear optimistic state after server responds (real data takes over)
+      setOptimisticCompletions((prev) => {
+        const { [itemId]: _, ...rest } = prev;
+        return rest;
+      });
+    }
   };
 
   const handleUpdateHabit = async (data: any) => {
@@ -238,13 +271,13 @@ export function SprintPage() {
     setGoalTitleValue("");
   };
 
-  // Quick add task with goal color selection
-  const handleQuickAddTask = async (dayOfWeek: number, goalId: string) => {
+  // Quick add task with goal color selection (or standalone if goalId is null)
+  const handleQuickAddTask = async (dayOfWeek: number, goalId: string | null) => {
     if (!user || !activeSprint) return;
     await addActionItem({
-      goalId: goalId as any,
+      goalId: goalId ? (goalId as any) : undefined,
       userId: user._id as any,
-      title: "New task",
+      title: goalId ? "New task" : "Quick task",
       weekNumber: activeWeek,
       dayOfWeek,
     });
@@ -268,15 +301,17 @@ export function SprintPage() {
         return;
       }
 
-      if (!selectedTaskId || !activeSprint || !goals) return;
+      if (!selectedTaskId || !activeSprint) return;
 
-      // Get all action items for current week
-      const allItems = goals.flatMap((goal: any) =>
+      // Get all action items for current week (from goals + standalone)
+      const goalItems = (goals || []).flatMap((goal: any) =>
         (goal.actionItems || []).map((item: any) => ({
           ...item,
           goalId: goal._id,
         }))
       );
+      const currentStandaloneTasks = (activeWeek === 1 ? standaloneTasksWeek1 : standaloneTasksWeek2) || [];
+      const allItems = [...goalItems, ...currentStandaloneTasks];
       const weekItems = allItems.filter((item: any) => item.weekNumber === activeWeek);
       const task = weekItems.find((t: any) => t._id === selectedTaskId);
       if (!task) return;
@@ -340,6 +375,8 @@ export function SprintPage() {
     openTimeSelectTaskId,
     editingTaskTitle,
     editingGoalTitle,
+    standaloneTasksWeek1,
+    standaloneTasksWeek2,
   ]);
 
   // No active sprint
@@ -413,7 +450,7 @@ export function SprintPage() {
   const weekDates = getWeekDates();
 
   // Get all action items from goals, with goal index for color coding
-  const allActionItems = goals?.flatMap((goal: any, goalIndex: number) =>
+  const goalActionItems = goals?.flatMap((goal: any, goalIndex: number) =>
     (goal.actionItems || []).map((item: any) => ({
       ...item,
       goalTitle: goal.title,
@@ -421,6 +458,18 @@ export function SprintPage() {
       goalIndex, // For color coding
     }))
   ) || [];
+
+  // Get standalone tasks for the active week
+  const standaloneTasks = (activeWeek === 1 ? standaloneTasksWeek1 : standaloneTasksWeek2) || [];
+  const standaloneActionItems = standaloneTasks.map((item: any) => ({
+    ...item,
+    goalTitle: null,
+    goalId: null,
+    goalIndex: -1, // Marker for standalone
+  }));
+
+  // Combine goal tasks and standalone tasks
+  const allActionItems = [...goalActionItems, ...standaloneActionItems];
 
   // Filter action items by selected week
   const weekActionItems = allActionItems.filter(
@@ -570,17 +619,12 @@ export function SprintPage() {
               </div>
               <ul className={cn(styles['action-list'], styles['action-list-scrollable'])}>
                 {goal.actionItems?.map((item: any) => (
-                  <li
+                  <ActionListItem
                     key={item._id}
-                    className={cn(styles['action-item'], item.isCompleted && styles.done)}
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      handleToggleAction(item._id);
-                    }}
-                  >
-                    <i className={`ph ${item.isCompleted ? "ph-check-circle" : "ph-circle"}`} />
-                    <span>{item.title}</span>
-                  </li>
+                    item={item}
+                    isCompleted={optimisticCompletions[item._id] ?? item.isCompleted}
+                    onToggle={() => handleToggleAction(item._id, item.isCompleted)}
+                  />
                 ))}
               </ul>
 
@@ -691,7 +735,11 @@ export function SprintPage() {
               {dayTasks.map((task: any) => {
                 const isSelected = selectedTaskId === task._id;
                 const isTimeSelectOpen = openTimeSelectTaskId === task._id;
-                const taskColor = GOAL_COLORS[task.goalIndex % GOAL_COLORS.length];
+                // Use standalone color for tasks without a goal
+                const isStandalone = task.goalId === undefined || task.goalId === null;
+                const taskColor = isStandalone
+                  ? STANDALONE_COLOR
+                  : GOAL_COLORS[task.goalIndex % GOAL_COLORS.length];
                 // Use optimistic value if pending, otherwise use server value
                 const serverTimeValue = task.scheduledTime || "";
                 const displayTimeValue = optimisticTaskTimes[task._id] ?? serverTimeValue;
@@ -712,14 +760,9 @@ export function SprintPage() {
                     onClick={(e) => {
                       e.stopPropagation();
                       if (isTimeSelectOpen || editingTaskTitle === task._id) return;
-                      // If clicking on an already selected task, toggle its completion
-                      if (isSelected) {
-                        handleToggleAction(task._id);
-                      } else {
-                          // Otherwise, select it
-                          setSelectedTaskId(task._id);
-                        }
-                      }}
+                      // Select the task (completion handled by checkbox)
+                      setSelectedTaskId(task._id);
+                    }}
                       layout
                     >
                       {/* Header row with goal label and time */}
@@ -734,7 +777,7 @@ export function SprintPage() {
                               flexShrink: 0,
                             }}
                           />
-                          {task.goalTitle}
+                          {isStandalone ? "Quick Task" : task.goalTitle}
                       </div>
                       {/* Editable time field */}
                       <div onClick={(e) => e.stopPropagation()} title="Set time">
@@ -822,25 +865,15 @@ export function SprintPage() {
                           }}
                         />
                       ) : (
-                        <div
-                          onClick={(e) => {
-                            e.stopPropagation();
+                        <TaskTitleDisplay
+                          task={task}
+                          isCompleted={optimisticCompletions[task._id] ?? task.isCompleted}
+                          onToggle={() => handleToggleAction(task._id, task.isCompleted)}
+                          onEditStart={() => {
                             setEditingTaskTitle(task._id);
                             setTaskTitleValue(task.title);
                           }}
-                          style={{
-                            fontFamily: "var(--font-body, 'DM Sans', sans-serif)",
-                            fontSize: "14px",
-                            fontWeight: 500,
-                            color: task.isCompleted ? "#786B62" : "#2D2420",
-                            textDecoration: "none", /* No strikethrough */
-                            cursor: "text",
-                            lineHeight: 1.4,
-                          }}
-                          title="Click to edit"
-                        >
-                          {task.title}
-                        </div>
+                        />
                       )}
                       {/* Selection hint */}
                       {isSelected && (
@@ -859,12 +892,12 @@ export function SprintPage() {
                 </div>
               )}
 
-              {/* Quick add task button */}
-              {goals && goals.length > 0 && (
+              {/* Quick add task button - always show (can add standalone tasks even without goals) */}
+              {user && (
                 <div style={{ marginTop: "auto", paddingTop: "12px" }}>
                   {showingAddTaskForDay === dayInfo.dayOfWeek ? (
                     <div className={styles['quick-add-goals']}>
-                      {goals.map((goal: any, idx: number) => (
+                      {goals?.map((goal: any, idx: number) => (
                         <motion.button
                           key={goal._id}
                           whileHover={{ scale: 1.2 }}
@@ -877,10 +910,43 @@ export function SprintPage() {
                             background: GOAL_COLORS[idx % GOAL_COLORS.length].dot,
                             border: "none",
                             cursor: "pointer",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            fontFamily: "var(--font-body, 'DM Sans', sans-serif)",
+                            fontSize: "11px",
+                            fontWeight: 600,
+                            color: "#fff",
                           }}
                           title={goal.title}
-                        />
+                        >
+                          {idx + 1}
+                        </motion.button>
                       ))}
+                      {/* Standalone task button (gray "+") */}
+                      <motion.button
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.9 }}
+                        onClick={() => handleQuickAddTask(dayInfo.dayOfWeek, null)}
+                        style={{
+                          width: "20px",
+                          height: "20px",
+                          borderRadius: "50%",
+                          background: STANDALONE_COLOR.dot,
+                          border: "none",
+                          cursor: "pointer",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          fontFamily: "var(--font-body, 'DM Sans', sans-serif)",
+                          fontSize: "13px",
+                          fontWeight: 600,
+                          color: "#fff",
+                        }}
+                        title="Quick task (no goal)"
+                      >
+                        +
+                      </motion.button>
                       <button
                         onClick={() => setShowingAddTaskForDay(null)}
                         style={{
@@ -1071,6 +1137,85 @@ interface SuggestedTask {
   title: string;
   weekNumber: number;
   dayOfWeek: number;
+}
+
+// =============================================================================
+// ActionListItem: Checkbox item in goal's expanded action list
+// =============================================================================
+
+interface ActionListItemProps {
+  item: { _id: string; title: string };
+  isCompleted: boolean;
+  onToggle: () => void;
+}
+
+function ActionListItem({ item, isCompleted, onToggle }: ActionListItemProps) {
+  return (
+    <li className={cn(styles['action-item'], isCompleted && styles.done)}>
+      <motion.div
+        className={cn(styles['task-checkbox'], styles['checkbox-sm'], isCompleted && styles.completed)}
+        onClick={(e) => {
+          e.stopPropagation();
+          onToggle();
+        }}
+        whileTap={{ scale: 0.9 }}
+      >
+        <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
+          <path d="M2.5 6L5 8.5L9.5 3.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      </motion.div>
+      <span style={{ textDecoration: isCompleted ? "line-through" : "none" }}>{item.title}</span>
+    </li>
+  );
+}
+
+// =============================================================================
+// TaskTitleDisplay: Extracted component for task title with checkbox
+// =============================================================================
+
+interface TaskTitleDisplayProps {
+  task: { _id: string; title: string };
+  isCompleted: boolean;
+  onToggle: () => void;
+  onEditStart: () => void;
+}
+
+function TaskTitleDisplay({ task, isCompleted, onToggle, onEditStart }: TaskTitleDisplayProps) {
+  return (
+    <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+      <motion.div
+        className={cn(styles['task-checkbox'], isCompleted && styles.completed)}
+        onClick={(e) => {
+          e.stopPropagation();
+          onToggle();
+        }}
+        whileTap={{ scale: 0.9 }}
+        title={isCompleted ? "Mark incomplete" : "Mark complete"}
+      >
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+          <path d="M2.5 6L5 8.5L9.5 3.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      </motion.div>
+      <div
+        onClick={(e) => {
+          e.stopPropagation();
+          onEditStart();
+        }}
+        style={{
+          fontFamily: "var(--font-body, 'DM Sans', sans-serif)",
+          fontSize: "14px",
+          fontWeight: 500,
+          color: isCompleted ? "#786B62" : "#2D2420",
+          textDecoration: isCompleted ? "line-through" : "none",
+          cursor: "text",
+          lineHeight: 1.4,
+        }}
+        title="Click to edit"
+      >
+        {task.title}
+      </div>
+    </div>
+  );
 }
 
 const AI_MODELS = [

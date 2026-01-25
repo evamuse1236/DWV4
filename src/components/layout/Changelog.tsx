@@ -10,6 +10,12 @@ interface ChangelogEntry {
 const CHANGELOG: ChangelogEntry[] = [
   {
     date: "Jan 25",
+    title: "Better Task Checkboxes",
+    description:
+      "Tasks now have clear square checkboxes that toggle instantly. No more double-clicking! The home page also shows today's remaining tasks instead of total goals.",
+  },
+  {
+    date: "Jan 25",
     title: "Sprint View Overhaul",
     description:
       "Completely redesigned the sprint page with the Structured Serenity design system. Goals now expand together to show scrollable task lists, and the Trust Jar is now part of your dashboard.",
