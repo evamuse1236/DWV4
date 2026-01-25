@@ -45,25 +45,30 @@ export function TrustJar({
   onRemove,
   onReset,
 }: TrustJarProps) {
+  const containerRef = useRef<HTMLDivElement>(null);
   const stageRef = useRef<HTMLDivElement>(null);
   const engineRef = useRef<Matter.Engine | null>(null);
   const marblesRef = useRef<{ body: Matter.Body; element: HTMLDivElement }[]>(
     []
   );
   const prevCountRef = useRef(0);
+  const dimensionsRef = useRef({ width: 800, height: 600 });
   const [showModal, setShowModal] = useState(false);
 
   // Initialize physics engine
   useEffect(() => {
-    if (!stageRef.current) return;
+    if (!stageRef.current || !containerRef.current) return;
 
     const Engine = Matter.Engine;
     const Composite = Matter.Composite;
     const Bodies = Matter.Bodies;
     const Runner = Matter.Runner;
 
-    const WIDTH = window.innerWidth;
-    const HEIGHT = window.innerHeight;
+    // Use container dimensions instead of window
+    const rect = containerRef.current.getBoundingClientRect();
+    const WIDTH = rect.width;
+    const HEIGHT = rect.height;
+    dimensionsRef.current = { width: WIDTH, height: HEIGHT };
     const cx = WIDTH / 2;
 
     // Create engine
@@ -71,15 +76,19 @@ export function TrustJar({
     engine.world.gravity.y = 1;
     engineRef.current = engine;
 
-    // Create boundaries (invisible funnel shape)
-    const ground = Bodies.rectangle(cx, HEIGHT + 40, 500, WALL_THICKNESS, {
+    // Create boundaries (invisible funnel shape) - scale with container
+    const wallOffset = Math.min(WIDTH * 0.3, 240); // Scale wall offset
+    const wallHeight = Math.min(HEIGHT * 1.2, 800);
+    const groundWidth = Math.min(WIDTH * 0.6, 500);
+
+    const ground = Bodies.rectangle(cx, HEIGHT + 40, groundWidth, WALL_THICKNESS, {
       isStatic: true,
     });
-    const leftWall = Bodies.rectangle(cx - 240, HEIGHT - 300, WALL_THICKNESS, 800, {
+    const leftWall = Bodies.rectangle(cx - wallOffset, HEIGHT - wallHeight * 0.375, WALL_THICKNESS, wallHeight, {
       isStatic: true,
       angle: -0.15,
     });
-    const rightWall = Bodies.rectangle(cx + 240, HEIGHT - 300, WALL_THICKNESS, 800, {
+    const rightWall = Bodies.rectangle(cx + wallOffset, HEIGHT - wallHeight * 0.375, WALL_THICKNESS, wallHeight, {
       isStatic: true,
       angle: 0.15,
     });
@@ -119,15 +128,16 @@ export function TrustJar({
 
   // Sync marbles with count from Convex
   useEffect(() => {
-    if (!engineRef.current || !stageRef.current) return;
+    if (!engineRef.current || !stageRef.current || !containerRef.current) return;
 
     const engine = engineRef.current;
     const stage = stageRef.current;
     const Composite = Matter.Composite;
     const Bodies = Matter.Bodies;
 
-    const WIDTH = window.innerWidth;
-    const HEIGHT = window.innerHeight;
+    // Use stored container dimensions
+    const WIDTH = dimensionsRef.current.width;
+    const HEIGHT = dimensionsRef.current.height;
     const cx = WIDTH / 2;
 
     const currentMarbleCount = marblesRef.current.length;
@@ -217,7 +227,7 @@ export function TrustJar({
   }
 
   return (
-    <div className="trust-jar-container">
+    <div className="trust-jar-container" ref={containerRef}>
       {/* Artistic Background */}
       <div className="art-layer">
         <div className="blob b1"></div>

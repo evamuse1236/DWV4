@@ -12,23 +12,28 @@
   --bg: #fdfbf8;
   --text: #7b8ca0;
 
-  position: fixed;
-  inset: 0;
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 120px); /* Account for dashboard padding */
+  min-height: 500px;
   background-color: var(--bg);
   font-family: "Outfit", "Lato", sans-serif;
   overflow: hidden;
   user-select: none;
   touch-action: none;
+  border-radius: 30px;
 }
 
 /* 1. Background Art (Z: 0) */
 .trust-jar-container .art-layer {
-  position: fixed;
+  position: absolute;
   inset: 0;
   z-index: 0;
   filter: blur(80px) contrast(1.2);
   transform: scale(1.2);
   opacity: 0.5;
+  overflow: hidden;
+  border-radius: inherit;
 }
 
 .trust-jar-container .blob {
@@ -195,7 +200,7 @@
 
 /* 6. Modal (Z: 200) */
 .trust-jar-container .modal-blur {
-  position: fixed;
+  position: absolute;
   inset: 0;
   background: rgba(253, 251, 248, 0.6);
   backdrop-filter: blur(8px);
@@ -206,6 +211,7 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.5s;
+  border-radius: inherit;
 }
 
 .trust-jar-container .modal-blur.active {

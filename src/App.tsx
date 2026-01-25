@@ -55,16 +55,6 @@ function App() {
             />
             <Route path="/setup" element={<SetupPage />} />
 
-            {/* Trust Jar - Full screen (accessible to students) */}
-            <Route
-              path="/trust-jar"
-              element={
-                <ProtectedRoute allowedRoles={["student"]}>
-                  <TrustJarPage />
-                </ProtectedRoute>
-              }
-            />
-
             {/* Student routes */}
             <Route
               element={
@@ -79,6 +69,7 @@ function App() {
               <Route path="/deep-work" element={<DeepWorkPage />} />
               <Route path="/deep-work/:domainId" element={<DomainDetailPage />} />
               <Route path="/reading" element={<ReadingPage />} />
+              <Route path="/trust-jar" element={<TrustJarPage />} />
             </Route>
 
             {/* Admin routes */}
