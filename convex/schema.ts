@@ -86,7 +86,7 @@ export default defineSchema({
 
   // ============ ACTION ITEMS ============
   actionItems: defineTable({
-    goalId: v.id("goals"),
+    goalId: v.optional(v.id("goals")), // Optional - null for standalone/quick tasks
     userId: v.id("users"),
     title: v.string(),
     description: v.optional(v.string()),
@@ -334,4 +334,11 @@ export default defineSchema({
   })
     .index("by_project", ["projectId"])
     .index("by_project_user", ["projectId", "userId"]),
+
+  // ============ AI CHAT LOGS (Dev) ============
+  chatLogs: defineTable({
+    type: v.string(),
+    data: v.any(),
+    timestamp: v.number(),
+  }).index("by_timestamp", ["timestamp"]),
 });

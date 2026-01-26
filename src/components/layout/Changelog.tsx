@@ -9,6 +9,12 @@ interface ChangelogEntry {
 
 const CHANGELOG: ChangelogEntry[] = [
   {
+    date: "Jan 26",
+    title: "Smart Week Toggle",
+    description:
+      "The sprint page now automatically opens to the current week. No more manually switching from Week 1 to Week 2 mid-sprint.",
+  },
+  {
     date: "Jan 25",
     title: "Better Task Checkboxes",
     description:

@@ -160,26 +160,30 @@
 
 /* Goals Container - HUD Style Dashboard */
 .goals-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 16px;
   margin-bottom: 32px;
   align-items: stretch;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  scroll-snap-type: x mandatory;
 }
 
 @media (max-width: 900px) {
   .goals-container {
-    grid-template-columns: 1fr;
+    padding-bottom: 12px;
   }
 }
 
 /* Goal Slot - Slim HUD Cards */
 .goal-slot {
+  flex: 0 0 280px;
   background: var(--color-card-active, #FFFFFF);
   border: none;
   border-radius: 16px;
   padding: 16px 20px;
   min-height: 80px; /* 50% smaller than before */
+  scroll-snap-align: start;
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Left align content */
@@ -452,6 +456,7 @@
   border-color: var(--color-primary, #a8c5b5);
   background: rgba(168, 197, 181, 0.08);
 }
+
 
 .quick-add-goals {
   display: flex;

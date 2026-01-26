@@ -12,6 +12,7 @@ import type * as activities from "../activities.js";
 import type * as ai from "../ai.js";
 import type * as auth from "../auth.js";
 import type * as books from "../books.js";
+import type * as chatLogs from "../chatLogs.js";
 import type * as domains from "../domains.js";
 import type * as emotions from "../emotions.js";
 import type * as goals from "../goals.js";
@@ -38,6 +39,7 @@ declare const fullApi: ApiFromModules<{
   ai: typeof ai;
   auth: typeof auth;
   books: typeof books;
+  chatLogs: typeof chatLogs;
   domains: typeof domains;
   emotions: typeof emotions;
   goals: typeof goals;

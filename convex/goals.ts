@@ -133,11 +133,11 @@ export const remove = mutation({
 });
 
 /**
- * Add an action item to a goal
+ * Add an action item to a goal (or standalone task if goalId is null)
  */
 export const addActionItem = mutation({
   args: {
-    goalId: v.id("goals"),
+    goalId: v.optional(v.id("goals")), // Optional - null for standalone tasks
     userId: v.id("users"),
     title: v.string(),
     description: v.optional(v.string()),
@@ -145,16 +145,37 @@ export const addActionItem = mutation({
     dayOfWeek: v.number(),
   },
   handler: async (ctx, args) => {
-    // Get current max order for this goal
-    const existingItems = await ctx.db
-      .query("actionItems")
-      .withIndex("by_goal", (q) => q.eq("goalId", args.goalId))
-      .collect();
+    let maxOrder = -1;
 
-    const maxOrder = existingItems.reduce((max, item) => Math.max(max, item.order), -1);
+    if (args.goalId) {
+      // Get current max order for this goal
+      const existingItems = await ctx.db
+        .query("actionItems")
+        .withIndex("by_goal", (q) => q.eq("goalId", args.goalId))
+        .collect();
+      maxOrder = existingItems.reduce((max, item) => Math.max(max, item.order), -1);
+    } else {
+      // For standalone tasks, get max order across user's tasks for this week/day
+      const existingItems = await ctx.db
+        .query("actionItems")
+        .withIndex("by_user_day", (q) =>
+          q
+            .eq("userId", args.userId)
+            .eq("weekNumber", args.weekNumber)
+            .eq("dayOfWeek", args.dayOfWeek)
+        )
+        .filter((q) => q.eq(q.field("goalId"), undefined))
+        .collect();
+      maxOrder = existingItems.reduce((max, item) => Math.max(max, item.order), -1);
+    }
 
     const itemId = await ctx.db.insert("actionItems", {
-      ...args,
+      goalId: args.goalId, // Will be undefined for standalone tasks
+      userId: args.userId,
+      title: args.title,
+      description: args.description,
+      weekNumber: args.weekNumber,
+      dayOfWeek: args.dayOfWeek,
       isCompleted: false,
       order: maxOrder + 1,
     });
@@ -243,15 +264,40 @@ export const getActionItemsByDay = query({
       )
       .collect();
 
-    // Get goal info for each item
+    // Get goal info for each item (null for standalone tasks)
     const itemsWithGoals = await Promise.all(
       items.map(async (item) => {
-        const goal = await ctx.db.get(item.goalId);
+        const goal = item.goalId ? await ctx.db.get(item.goalId) : null;
         return { ...item, goal };
       })
     );
 
     return itemsWithGoals;
+  },
+});
+
+/**
+ * Get standalone action items (tasks without a goal) for a user in a given week
+ */
+export const getStandaloneActionItems = query({
+  args: {
+    userId: v.id("users"),
+    weekNumber: v.number(),
+  },
+  handler: async (ctx, args) => {
+    // Get all action items for the user in this week
+    const allItems = await ctx.db
+      .query("actionItems")
+      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .filter((q) =>
+        q.and(
+          q.eq(q.field("weekNumber"), args.weekNumber),
+          q.eq(q.field("goalId"), undefined)
+        )
+      )
+      .collect();
+
+    return allItems.sort((a, b) => a.order - b.order);
   },
 });
 

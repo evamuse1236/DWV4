@@ -9,13 +9,11 @@ interface Message {
   content: string;
 }
 
-interface ExtractedGoal {
+interface GoalSummary {
   title: string;
-  specific: string;
-  measurable: string;
-  achievable: string;
-  relevant: string;
-  timeBound: string;
+  what: string;
+  when: string;
+  howLong: string;
 }
 
 interface SuggestedTask {
@@ -24,9 +22,16 @@ interface SuggestedTask {
   dayOfWeek: number;
 }
 
+interface GoalDraft {
+  what: string | null;
+  when: string | null;
+  howLong: string | null;
+  awaitingConfirm?: boolean;
+}
+
 interface GoalChatPaletteProps {
   sprintDaysRemaining: number;
-  onComplete: (goal: ExtractedGoal, tasks: SuggestedTask[]) => void;
+  onComplete: (goal: GoalSummary, tasks: SuggestedTask[]) => void;
   onCancel: () => void;
 }
 
@@ -104,10 +109,11 @@ export function GoalChatPalette({
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [phase, setPhase] = useState<ChatPhase>("chatting");
-  const [extractedGoal, setExtractedGoal] = useState<ExtractedGoal | null>(null);
+  const [extractedGoal, setExtractedGoal] = useState<GoalSummary | null>(null);
   const [tasks, setTasks] = useState<SuggestedTask[]>([]);
   const [selectedModel, setSelectedModel] = useState(AI_MODELS[0].id);
-  const [pendingRevision, setPendingRevision] = useState<ExtractedGoal | null>(null);
+  const [pendingRevision, setPendingRevision] = useState<GoalSummary | null>(null);
+  const [goalDraft, setGoalDraft] = useState<GoalDraft | null>(null);
 
   const chatAction = useAction(api.ai.chat);
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -126,6 +132,7 @@ export function GoalChatPalette({
       content: `Hi there! 👋 I'm here to help you set a goal for this sprint. What would you like to accomplish in the next ${sprintDaysRemaining} days?`,
     };
     setMessages([greeting]);
+    setGoalDraft(null);
   }, [sprintDaysRemaining]);
 
   // Focus input when phase changes to chatting
@@ -156,7 +163,7 @@ export function GoalChatPalette({
       if (pendingRevision) {
         const revisionContext = {
           role: "user" as const,
-          content: `[REVISION REQUEST] I reviewed the goal "${pendingRevision.title}" and want to make changes. Here's what I had: Specific: ${pendingRevision.specific}, Measurable: ${pendingRevision.measurable}`,
+          content: `[REVISION REQUEST] I reviewed the goal "${pendingRevision.title}" and want to make changes. Here's what I had: What: ${pendingRevision.what}, When: ${pendingRevision.when}, How long: ${pendingRevision.howLong}.`,
         };
         // Insert revision context before the last user message
         apiMessages = [
@@ -171,10 +178,21 @@ export function GoalChatPalette({
         messages: apiMessages,
         sprintDaysRemaining,
         model: selectedModel,
+        draft: goalDraft
+          ? {
+              what: goalDraft.what ?? undefined,
+              when: goalDraft.when ?? undefined,
+              howLong: goalDraft.howLong ?? undefined,
+            }
+          : undefined,
       });
+      const responseData = response as { content: string; draft?: GoalDraft | null };
+      if (responseData.draft !== undefined) {
+        setGoalDraft(responseData.draft ?? null);
+      }
 
       // Check if AI returned structured goal data
-      const goalMatch = response.content.match(/```goal-ready\n([\s\S]*?)\n```/);
+      const goalMatch = responseData.content.match(/```goal-ready\n([\s\S]*?)\n```/);
 
       if (goalMatch) {
         const parsed = parseGoalData(goalMatch[1]);
@@ -184,15 +202,16 @@ export function GoalChatPalette({
           setPhase("reviewing");
 
           // Add a friendly message (text before the JSON block)
-          const textBeforeJson = response.content.split("```goal-ready")[0].trim();
+          const textBeforeJson = responseData.content.split("```goal-ready")[0].trim();
           const content = textBeforeJson || "Great! I've put together a goal based on our conversation. Take a look!";
           setMessages((prev) => [...prev, createMessage("assistant", content)]);
+          setGoalDraft(null);
           return;
         }
       }
 
       // Regular chat response (or JSON parse failed)
-      setMessages((prev) => [...prev, createMessage("assistant", response.content)]);
+      setMessages((prev) => [...prev, createMessage("assistant", responseData.content)]);
     } catch (err) {
       console.error("Chat error:", err);
       setError("Oops! Something went wrong. Try again or create your goal manually.");
@@ -206,7 +225,7 @@ export function GoalChatPalette({
   };
 
   // Parse goal JSON from AI response, returns null on failure
-  function parseGoalData(jsonString: string): { goal: ExtractedGoal; tasks: SuggestedTask[] } | null {
+  function parseGoalData(jsonString: string): { goal: GoalSummary; tasks: SuggestedTask[] } | null {
     try {
       const data = JSON.parse(jsonString);
       return {
@@ -327,24 +346,16 @@ export function GoalChatPalette({
       {/* SMART components */}
       <div className="bg-white rounded-2xl p-6 shadow-sm space-y-4 mb-6">
         <div>
-          <label className="text-[10px] uppercase tracking-wide text-black/50 font-bold">Specific</label>
-          <p className="text-[15px] mt-1">{extractedGoal?.specific}</p>
+          <label className="text-[10px] uppercase tracking-wide text-black/50 font-bold">What</label>
+          <p className="text-[15px] mt-1">{extractedGoal?.what}</p>
         </div>
         <div>
-          <label className="text-[10px] uppercase tracking-wide text-black/50 font-bold">Measurable</label>
-          <p className="text-[15px] mt-1">{extractedGoal?.measurable}</p>
+          <label className="text-[10px] uppercase tracking-wide text-black/50 font-bold">When</label>
+          <p className="text-[15px] mt-1">{extractedGoal?.when}</p>
         </div>
         <div>
-          <label className="text-[10px] uppercase tracking-wide text-black/50 font-bold">Achievable</label>
-          <p className="text-[15px] mt-1">{extractedGoal?.achievable}</p>
-        </div>
-        <div>
-          <label className="text-[10px] uppercase tracking-wide text-black/50 font-bold">Relevant</label>
-          <p className="text-[15px] mt-1">{extractedGoal?.relevant}</p>
-        </div>
-        <div>
-          <label className="text-[10px] uppercase tracking-wide text-black/50 font-bold">Time-bound</label>
-          <p className="text-[15px] mt-1">{extractedGoal?.timeBound}</p>
+          <label className="text-[10px] uppercase tracking-wide text-black/50 font-bold">How long</label>
+          <p className="text-[15px] mt-1">{extractedGoal?.howLong}</p>
         </div>
       </div>
 

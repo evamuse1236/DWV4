@@ -116,6 +116,14 @@ export function SprintPage() {
   // Get active sprint
   const activeSprint = useQuery(api.sprints.getActive);
 
+  // Default to current week when sprint loads
+  useEffect(() => {
+    if (!activeSprint) return;
+    const sprintStart = new Date(activeSprint.startDate);
+    const dayIndex = Math.floor((Date.now() - sprintStart.getTime()) / MS_PER_DAY);
+    setActiveWeek(dayIndex < 7 ? 1 : 2);
+  }, [activeSprint?._id]);
+
   // Get user's goals and habits for the sprint
   const goals = useQuery(
     api.goals.getByUserAndSprint,
@@ -154,17 +162,43 @@ export function SprintPage() {
   const duplicateGoal = useMutation(api.goals.duplicate);
   const importGoal = useMutation(api.goals.importGoal);
 
+  const buildSmartGoalFromSummary = (goal: GoalSummary) => {
+    const whenLower = goal.when.toLowerCase();
+    const timesMatch = whenLower.match(/(\d+)\s*x\s*per\s*week/);
+    const measurable = timesMatch
+      ? `Complete ${timesMatch[1]} sessions per week.`
+      : whenLower.includes("every day")
+        ? "Complete the habit every day."
+        : whenLower.includes("weekdays")
+          ? "Complete the habit on weekdays."
+          : whenLower.includes("weekends")
+            ? "Complete the habit on weekends."
+            : whenLower.startsWith("on ")
+              ? `Complete the habit ${goal.when}.`
+              : "Complete the scheduled sessions.";
+
+    return {
+      title: goal.title,
+      specific: `${goal.what} — ${goal.when}, ${goal.howLong} each`,
+      measurable,
+      achievable: `This fits in a ${sprintDaysLeft}-day sprint.`,
+      relevant: "Builds consistency toward your goals.",
+      timeBound: `By the end of this ${sprintDaysLeft}-day sprint`,
+    };
+  };
+
   // Handle AI-generated goal with tasks (called from Muse)
   const handleAIGoalComplete = async (
-    goal: { title: string; specific: string; measurable: string; achievable: string; relevant: string; timeBound: string },
+    goal: GoalSummary,
     tasks: { title: string; weekNumber: number; dayOfWeek: number }[]
   ) => {
     if (!user || !activeSprint) return;
 
+    const smartGoal = buildSmartGoalFromSummary(goal);
     const result = await createGoal({
       userId: user._id as any,
       sprintId: activeSprint._id,
-      ...goal,
+      ...smartGoal,
     });
 
     if (result.goalId) {
@@ -492,29 +526,23 @@ export function SprintPage() {
     setMuseExpanded(true);
   };
 
-  // Render the goals container (3 slots) - FIXED to match inspo exactly
+  // Render the goals container (scrollable)
   const renderGoalsContainer = () => {
-    const goalSlots = [];
-    const maxGoals = 3;
+    const goalSlots = (goals || []).map((goal: any, i: number) => {
+      const isExpanded = goalsExpanded;
+      const completedItems = goal.actionItems?.filter((item: any) => item.isCompleted).length || 0;
+      const totalItems = goal.actionItems?.length || 0;
+      const progress = totalItems > 0 ? (completedItems / totalItems) * 100 : 0;
 
-    for (let i = 0; i < maxGoals; i++) {
-      const goal = goals?.[i];
+      const goalColor = GOAL_COLORS[i % GOAL_COLORS.length];
 
-      if (goal) {
-        const isExpanded = goalsExpanded;
-        const completedItems = goal.actionItems?.filter((item: any) => item.isCompleted).length || 0;
-        const totalItems = goal.actionItems?.length || 0;
-        const progress = totalItems > 0 ? (completedItems / totalItems) * 100 : 0;
-
-        const goalColor = GOAL_COLORS[i % GOAL_COLORS.length];
-
-        goalSlots.push(
-          <div
-            key={goal._id}
-            className={cn(styles['goal-slot'], styles.filled, isExpanded && styles.expanded)}
-            onClick={handleGoalClick}
-            style={{ position: "relative", "--goal-tint": goalColor.tint } as React.CSSProperties}
-          >
+      return (
+        <div
+          key={goal._id}
+          className={cn(styles['goal-slot'], styles.filled, isExpanded && styles.expanded)}
+          onClick={handleGoalClick}
+          style={{ position: "relative", "--goal-tint": goalColor.tint } as React.CSSProperties}
+        >
             {/* Status pill - top right */}
             <div
               style={{
@@ -674,41 +702,37 @@ export function SprintPage() {
               </div>
             </div>
           </div>
-        );
-      } else {
-        // Empty slot - clean HUD style
-        const emptySlotColor = GOAL_COLORS[i % GOAL_COLORS.length];
-        goalSlots.push(
+      );
+    });
+
+    goalSlots.push(
+      <div
+        key="add-goal"
+        className={styles['goal-slot']}
+        onClick={handleOpenGoalChat}
+        style={{
+          border: "2px dashed #C0B5AD",
+          background: "transparent",
+          justifyContent: "center",
+          alignItems: "center",
+        } as React.CSSProperties}
+      >
+        <div style={{ opacity: 0.5, textAlign: "center" }}>
+          <i className="ph ph-plus" style={{ fontSize: "20px", display: "block", color: "#786B62" }} />
           <div
-            key={`empty-${i}`}
-            className={styles['goal-slot']}
-            onClick={handleOpenGoalChat}
             style={{
-              "--goal-tint": emptySlotColor.tint,
-              border: "2px dashed #C0B5AD",
-              background: "transparent",
-              justifyContent: "center",
-              alignItems: "center",
-            } as React.CSSProperties}
+              fontFamily: "var(--font-body, 'DM Sans', sans-serif)",
+              fontSize: "13px",
+              fontWeight: 500,
+              marginTop: "6px",
+              color: "#786B62",
+            }}
           >
-            <div style={{ opacity: 0.5, textAlign: "center" }}>
-              <i className="ph ph-plus" style={{ fontSize: "20px", display: "block", color: "#786B62" }} />
-              <div
-                style={{
-                  fontFamily: "var(--font-body, 'DM Sans', sans-serif)",
-                  fontSize: "13px",
-                  fontWeight: 500,
-                  marginTop: "6px",
-                  color: "#786B62",
-                }}
-              >
-                Set Goal
-              </div>
-            </div>
+            Set Goal
           </div>
-        );
-      }
-    }
+        </div>
+      </div>
+    );
 
     return <div className={cn(styles['goals-container'], "fade-in-up delay-1")}>{goalSlots}</div>;
   };
@@ -1010,18 +1034,20 @@ export function SprintPage() {
         </div>
 
         {/* Week Toggle */}
-        <div className={styles['week-toggle']}>
-          <div
-            className={cn(styles['toggle-btn'], activeWeek === 1 && styles.active)}
-            onClick={() => setActiveWeek(1)}
-          >
-            Week 1
-          </div>
-          <div
-            className={cn(styles['toggle-btn'], activeWeek === 2 && styles.active)}
-            onClick={() => setActiveWeek(2)}
-          >
-            Week 2
+        <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+          <div className={styles['week-toggle']}>
+            <div
+              className={cn(styles['toggle-btn'], activeWeek === 1 && styles.active)}
+              onClick={() => setActiveWeek(1)}
+            >
+              Week 1
+            </div>
+            <div
+              className={cn(styles['toggle-btn'], activeWeek === 2 && styles.active)}
+              onClick={() => setActiveWeek(2)}
+            >
+              Week 2
+            </div>
           </div>
         </div>
       </div>
@@ -1124,6 +1150,13 @@ interface MuseMessage {
   content: string;
 }
 
+interface GoalSummary {
+  title: string;
+  what: string;
+  when: string;
+  howLong: string;
+}
+
 interface ExtractedGoal {
   title: string;
   specific: string;
@@ -1133,11 +1166,32 @@ interface ExtractedGoal {
   timeBound: string;
 }
 
+interface GoalDraft {
+  what: string | null;
+  when: string | null;
+  howLong: string | null;
+  awaitingConfirm?: boolean;
+}
+
 interface SuggestedTask {
   title: string;
   weekNumber: number;
   dayOfWeek: number;
 }
+
+const PROMPT_CHIPS_INITIAL = [
+  "eat breakfast every morning for 30 mins",
+  "practice piano",
+  "read every night",
+  "exercise 3 times a week for 1 hour",
+  "study math after school",
+];
+
+type ChatResponse = {
+  content: string;
+  draft?: GoalDraft | null;
+  promptChips?: string[];
+};
 
 // =============================================================================
 // ActionListItem: Checkbox item in goal's expanded action list
@@ -1242,7 +1296,7 @@ function TheMuse({
   onToggle: () => void;
   onClose: () => void;
   sprintDaysRemaining: number;
-  onGoalComplete: (goal: ExtractedGoal, tasks: SuggestedTask[]) => void;
+  onGoalComplete: (goal: GoalSummary, tasks: SuggestedTask[]) => void;
   existingGoals?: { id: string; title: string }[];
   previousSprintGoals?: { id: string; title: string; sprintName: string }[];
   onDuplicateGoal?: (goalId: string) => Promise<void>;
@@ -1253,14 +1307,49 @@ function TheMuse({
   const [inputValue, setInputValue] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [selectedModel] = useState(AI_MODELS[0].id);
-  const [extractedGoal, setExtractedGoal] = useState<ExtractedGoal | null>(null);
+  const [extractedGoal, setExtractedGoal] = useState<GoalSummary | null>(null);
   const [tasks, setTasks] = useState<SuggestedTask[]>([]);
   const [phase, setPhase] = useState<"chatting" | "reviewing">("chatting");
   const [persona, setPersona] = useState<AIPersona>("muse");
+  const [goalDraft, setGoalDraft] = useState<GoalDraft | null>(null);
+  const [promptChips, setPromptChips] = useState<string[]>(PROMPT_CHIPS_INITIAL);
 
   const chatAction = useAction(api.ai.chat);
+  const logMutation = useMutation(api.chatLogs.log);
+  const clearLogsMutation = useMutation(api.chatLogs.clearAll);
+  const exportLogsAction = useAction(api.chatLogs.exportLogs);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  // Auto-log to Convex (fire and forget)
+  const addChatLog = (type: string, data: any) => {
+    console.log(`[AI Chat] ${type}:`, data);
+    logMutation({ type, data }).catch((e) => console.error("[AI Chat] Log failed:", e));
+  };
+
+  const clearChatLogs = () => {
+    clearLogsMutation({}).then(() => {
+      console.log("[AI Chat] Logs cleared");
+    });
+  };
+
+  const exportChatLogs = async () => {
+    try {
+      const logsJson = await exportLogsAction({ limit: 500 });
+      const blob = new Blob([logsJson], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `ai-chat-logs-${new Date().toISOString().split("T")[0]}.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      console.log("[AI Chat] Logs exported");
+    } catch (e) {
+      console.error("[AI Chat] Export failed:", e);
+    }
+  };
 
   // Auto-scroll to bottom on new messages
   useEffect(() => {
@@ -1271,7 +1360,7 @@ function TheMuse({
   useEffect(() => {
     if (expanded && messages.length === 0) {
       const greeting = persona === "captain"
-        ? `What do you want to accomplish? Quick: (1) the goal, (2) how you'll know it's done.`
+        ? "What do you want to accomplish this sprint? Short answer is fine — include how you'll know it's done."
         : `Hi! I'm here to help you set a goal for your sprint. What would you like to accomplish in the next ${sprintDaysRemaining} days?`;
       setMessages([
         {
@@ -1280,6 +1369,8 @@ function TheMuse({
           content: greeting,
         },
       ]);
+      setGoalDraft(null);
+      setPromptChips(PROMPT_CHIPS_INITIAL);
     }
   }, [expanded, sprintDaysRemaining, persona]);
 
@@ -1291,6 +1382,8 @@ function TheMuse({
       setExtractedGoal(null);
       setTasks([]);
       setPhase("chatting");
+      setGoalDraft(null);
+      setPromptChips(PROMPT_CHIPS_INITIAL);
     }
   };
 
@@ -1301,8 +1394,8 @@ function TheMuse({
     }
   }, [expanded, phase]);
 
-  const handleSend = async () => {
-    const trimmed = inputValue.trim();
+  const handleSend = async (overrideText?: string) => {
+    const trimmed = (overrideText ?? inputValue).trim();
     if (!trimmed || isLoading) return;
 
     const userMessage: MuseMessage = {
@@ -1314,11 +1407,25 @@ function TheMuse({
     setInputValue("");
     setIsLoading(true);
 
+    addChatLog("user", { message: trimmed });
+    addChatLog("state", { persona, draft: goalDraft, messageCount: messages.length });
+
     try {
       const apiMessages = messages
         .filter((m) => m.id !== "initial")
         .concat(userMessage)
         .map((m) => ({ role: m.role, content: m.content }));
+
+      addChatLog("api_request", {
+        messageCount: apiMessages.length,
+        messages: apiMessages,
+        sprintDaysRemaining,
+        model: selectedModel,
+        persona,
+        existingGoals,
+        previousSprintGoals,
+        draft: goalDraft,
+      });
 
       const response = await chatAction({
         messages: apiMessages,
@@ -1327,46 +1434,78 @@ function TheMuse({
         persona,
         existingGoals,
         previousSprintGoals,
+        draft: goalDraft
+          ? {
+              what: goalDraft.what ?? undefined,
+              when: goalDraft.when ?? undefined,
+              howLong: goalDraft.howLong ?? undefined,
+              awaitingConfirm: goalDraft.awaitingConfirm ?? undefined,
+            }
+          : undefined,
       });
+      const responseData = response as ChatResponse;
+
+      addChatLog("api_response", {
+        content: responseData.content,
+        draft: responseData.draft,
+        promptChips: responseData.promptChips,
+      });
+
+      if (responseData.promptChips) {
+        setPromptChips(responseData.promptChips);
+      } else {
+        setPromptChips([]);
+      }
+      if (responseData.draft !== undefined) {
+        addChatLog("state", { draftUpdated: responseData.draft });
+        setGoalDraft(responseData.draft ?? null);
+      }
 
       // Helper to parse AI action blocks and extract text before them
       function parseActionBlock(blockType: string): { data: any; textBefore: string } | null {
-        const match = response.content.match(new RegExp(`\`\`\`${blockType}\\n([\\s\\S]*?)\\n\`\`\``));
+        const match = responseData.content.match(new RegExp(`\`\`\`${blockType}\\n([\\s\\S]*?)\\n\`\`\``));
         if (!match) return null;
         try {
-          return {
+          const parsed = {
             data: JSON.parse(match[1]),
-            textBefore: response.content.split(`\`\`\`${blockType}`)[0].trim(),
+            textBefore: responseData.content.split(`\`\`\`${blockType}`)[0].trim(),
           };
-        } catch {
+          addChatLog("action", { type: blockType, parsed });
+          return parsed;
+        } catch (e) {
+          addChatLog("error", { type: "parse_action_block", blockType, error: String(e) });
           return null;
         }
       }
 
       // Helper to add AI message
-      function addAIMessage(content: string) {
+      function addAIMessageToChat(content: string) {
         setMessages((prev) => [...prev, { id: `ai-${Date.now()}`, role: "assistant", content }]);
       }
 
       // Handle goal creation
       const goalAction = parseActionBlock("goal-ready");
       if (goalAction) {
+        addChatLog("action", { type: "goal_created", goal: goalAction.data.goal, tasks: goalAction.data.suggestedTasks });
         setExtractedGoal(goalAction.data.goal);
         setTasks(goalAction.data.suggestedTasks || []);
         setPhase("reviewing");
-        addAIMessage(goalAction.textBefore || "Here's your goal!");
+        addAIMessageToChat(goalAction.textBefore || "Here's your goal!");
+        setPromptChips([]);
+        setGoalDraft(null);
         return;
       }
 
       // Handle duplicate goal
       const duplicateAction = parseActionBlock("duplicate-goal");
       if (duplicateAction && onDuplicateGoal) {
-        addAIMessage(duplicateAction.textBefore || "Duplicating your goal...");
+        addChatLog("action", { type: "duplicate_goal", data: duplicateAction.data });
+        addAIMessageToChat(duplicateAction.textBefore || "Duplicating your goal...");
         try {
           await onDuplicateGoal(duplicateAction.data.sourceGoalId);
-          addAIMessage("Done! Your goal has been duplicated.");
+          addAIMessageToChat("Done! Your goal has been duplicated.");
         } catch (e) {
-          console.error("Duplicate failed:", e);
+          addChatLog("error", { type: "duplicate_failed", error: String(e) });
         }
         return;
       }
@@ -1374,12 +1513,13 @@ function TheMuse({
       // Handle import goal
       const importAction = parseActionBlock("import-goal");
       if (importAction && onImportGoal) {
-        addAIMessage(importAction.textBefore || "Importing your goal...");
+        addChatLog("action", { type: "import_goal", data: importAction.data });
+        addAIMessageToChat(importAction.textBefore || "Importing your goal...");
         try {
           await onImportGoal(importAction.data.sourceGoalId);
-          addAIMessage("Done! Your goal has been imported from the previous sprint.");
+          addAIMessageToChat("Done! Your goal has been imported from the previous sprint.");
         } catch (e) {
-          console.error("Import failed:", e);
+          addChatLog("error", { type: "import_failed", error: String(e) });
         }
         return;
       }
@@ -1387,22 +1527,24 @@ function TheMuse({
       // Handle edit goal
       const editAction = parseActionBlock("edit-goal");
       if (editAction && onEditGoal) {
-        addAIMessage(editAction.textBefore || "Updating your goal...");
+        addChatLog("action", { type: "edit_goal", data: editAction.data });
+        addAIMessageToChat(editAction.textBefore || "Updating your goal...");
         try {
           await onEditGoal(editAction.data.goalId, editAction.data.updates);
-          addAIMessage("Done! Your goal has been updated.");
+          addAIMessageToChat("Done! Your goal has been updated.");
         } catch (e) {
-          console.error("Edit failed:", e);
+          addChatLog("error", { type: "edit_failed", error: String(e) });
         }
         return;
       }
 
+      addChatLog("state", { type: "plain_response" });
       setMessages((prev) => [
         ...prev,
-        { id: `ai-${Date.now()}`, role: "assistant", content: response.content },
+        { id: `ai-${Date.now()}`, role: "assistant", content: responseData.content },
       ]);
     } catch (err) {
-      console.error("Chat error:", err);
+      addChatLog("error", { type: "chat_error", error: String(err) });
       setMessages((prev) => [
         ...prev,
         { id: `ai-${Date.now()}`, role: "assistant", content: "Sorry, I had trouble responding. Please try again." },
@@ -1423,11 +1565,25 @@ function TheMuse({
 
   const handleGoBack = () => {
     setPhase("chatting");
+    // Fix #3: Preserve draft when going back to edit
+    // Instead of clearing the draft, repopulate it from extractedGoal
+    if (extractedGoal) {
+      setGoalDraft({
+        what: extractedGoal.what,
+        when: extractedGoal.when,
+        howLong: extractedGoal.howLong,
+      });
+      // Show edit-focused chips
+      setPromptChips(["Change schedule", "Change duration", "Change activity", "Start over"]);
+    } else {
+      setGoalDraft(null);
+      setPromptChips(PROMPT_CHIPS_INITIAL);
+    }
     setExtractedGoal(null);
     setTasks([]);
     setMessages((prev) => [
       ...prev,
-      { id: `ai-${Date.now()}`, role: "assistant", content: "No problem! What would you like to change?" },
+      { id: `ai-${Date.now()}`, role: "assistant", content: "Got it — what should we change?" },
     ]);
   };
 
@@ -1439,6 +1595,8 @@ function TheMuse({
       setExtractedGoal(null);
       setTasks([]);
       setPhase("chatting");
+      setGoalDraft(null);
+      setPromptChips(PROMPT_CHIPS_INITIAL);
     }
   };
 
@@ -1478,12 +1636,29 @@ function TheMuse({
               </div>
             </div>
           </div>
-          <button
-            onClick={onClose}
-            style={{ background: "none", border: "none", cursor: "pointer", opacity: 0.5, padding: "4px" }}
-          >
-            <XIcon className="w-4 h-4" />
-          </button>
+          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+            {/* Debug: Export/Clear logs */}
+            <button
+              onClick={exportChatLogs}
+              style={{ background: "none", border: "none", cursor: "pointer", opacity: 0.4, padding: "4px", fontSize: "10px" }}
+              title="Export chat logs as JSON"
+            >
+              <i className="ph ph-download-simple" style={{ fontSize: "14px" }} />
+            </button>
+            <button
+              onClick={clearChatLogs}
+              style={{ background: "none", border: "none", cursor: "pointer", opacity: 0.4, padding: "4px", fontSize: "10px" }}
+              title="Clear chat logs"
+            >
+              <i className="ph ph-trash" style={{ fontSize: "14px" }} />
+            </button>
+            <button
+              onClick={onClose}
+              style={{ background: "none", border: "none", cursor: "pointer", opacity: 0.5, padding: "4px" }}
+            >
+              <XIcon className="w-4 h-4" />
+            </button>
+          </div>
         </div>
 
         {phase === "chatting" ? (
@@ -1509,6 +1684,21 @@ function TheMuse({
               <div ref={messagesEndRef} />
             </div>
 
+            {promptChips.length > 0 && (
+              <div className={museStyles['muse-chips']}>
+                {promptChips.map((chip) => (
+                  <button
+                    key={chip}
+                    className={museStyles['muse-chip']}
+                    onClick={() => handleSend(chip)}
+                    disabled={isLoading}
+                  >
+                    {chip}
+                  </button>
+                ))}
+              </div>
+            )}
+
             <div className={museStyles['muse-input-area']}>
               <input
                 ref={inputRef}
@@ -1520,7 +1710,7 @@ function TheMuse({
                 onKeyDown={handleKeyDown}
                 disabled={isLoading}
               />
-              <button className={museStyles['muse-send-btn']} onClick={handleSend} disabled={isLoading || !inputValue.trim()}>
+              <button className={museStyles['muse-send-btn']} onClick={() => handleSend()} disabled={isLoading || !inputValue.trim()}>
                 <SendIcon />
               </button>
             </div>
@@ -1537,8 +1727,9 @@ function TheMuse({
             </div>
 
             <div style={{ fontSize: "13px", lineHeight: 1.6, opacity: 0.8 }}>
-              <p><strong>Specific:</strong> {extractedGoal?.specific}</p>
-              <p style={{ marginTop: "8px" }}><strong>Measurable:</strong> {extractedGoal?.measurable}</p>
+              <p><strong>What:</strong> {extractedGoal?.what}</p>
+              <p style={{ marginTop: "8px" }}><strong>When:</strong> {extractedGoal?.when}</p>
+              <p style={{ marginTop: "8px" }}><strong>How long:</strong> {extractedGoal?.howLong}</p>
             </div>
 
             {tasks.length > 0 && (
