@@ -22,6 +22,14 @@ const MS_PER_DAY = 1000 * 60 * 60 * 24;
 // Week runs Monday (index 0) to Sunday (index 6)
 const DAY_NAMES = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
+/** Format a Date as YYYY-MM-DD in the user's local timezone */
+function getLocalDateStr(date: Date): string {
+  const y = date.getFullYear();
+  const m = String(date.getMonth() + 1).padStart(2, "0");
+  const d = String(date.getDate()).padStart(2, "0");
+  return `${y}-${m}-${d}`;
+}
+
 // Goal colors for visual distinction - Structured Serenity palette
 const GOAL_COLORS = [
   { name: "sage", dot: "#7FAE8C", bg: "rgba(212, 224, 214, 0.25)", tint: "#D4E0D6", pillBg: "#D4E0D6" },
@@ -448,7 +456,7 @@ export function SprintPage() {
   // Calculate dates for the sprint
   const sprintStart = new Date(activeSprint.startDate);
   const today = new Date();
-  const todayStr = today.toISOString().split("T")[0];
+  const todayStr = getLocalDateStr(today);
 
   // Calculate which day of the sprint we're on (0-indexed)
   const dayIndex = Math.floor(
@@ -471,7 +479,7 @@ export function SprintPage() {
       date.setDate(date.getDate() + weekOffset + i);
       const jsDay = date.getDay();
       dates.push({
-        date: date.toISOString().split("T")[0],
+        date: getLocalDateStr(date),
         dayOfWeek: jsDay, // Keep JS convention for data lookup
         dayNum: date.getDate(),
         displayIndex: jsToDisplayDay(jsDay), // For ordering Mon-Sun

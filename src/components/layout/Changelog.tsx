@@ -10,6 +10,12 @@ interface ChangelogEntry {
 const CHANGELOG: ChangelogEntry[] = [
   {
     date: "Jan 26",
+    title: "Daily Rituals Fix",
+    description:
+      "The ritual counter now correctly shows how many days you completed this week (e.g. 6/7) instead of a confusing streak number. Day orbs also respond instantly when clicked.",
+  },
+  {
+    date: "Jan 26",
     title: "Batch Trust Jars",
     description:
       "The Trust Jar now works independently per batch. Each batch earns marbles separately, and admins can switch between batches with a dropdown selector.",

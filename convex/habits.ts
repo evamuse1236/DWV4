@@ -179,7 +179,9 @@ export const getCompletionsInRange = query({
 });
 
 /**
- * Get streak for a habit
+ * Get streak for a habit.
+ * NOTE: Uses server UTC time for "today". For accurate timezone-aware streaks,
+ * use the client-side calculateStreak in HabitTracker.tsx instead.
  */
 export const getStreak = query({
   args: {

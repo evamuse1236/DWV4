@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { useQuery, useMutation } from "convex/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { api } from "../../../convex/_generated/api";
@@ -100,6 +100,7 @@ export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps)
   const [iconPickerOpen, setIconPickerOpen] = useState<string | null>(null);
   const [showNewHabitForm, setShowNewHabitForm] = useState(false);
   const [newHabitName, setNewHabitName] = useState("");
+  const [optimisticCompletions, setOptimisticCompletions] = useState<Record<string, boolean>>({});
 
   const habits = useQuery(api.habits.getByUserAndSprint, { userId, sprintId });
 
@@ -108,42 +109,29 @@ export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps)
   const toggleCompletion = useMutation(api.habits.toggleCompletion);
   const removeHabit = useMutation(api.habits.remove);
 
-  function calculateStreak(completions: { date: string; completed: boolean }[] | undefined): number {
+  function countWeeklyCompletions(completions: { date: string; completed: boolean }[] | undefined): number {
     if (!completions || completions.length === 0) return 0;
 
-    const completedDates = completions
-      .filter((c) => c.completed)
-      .map((c) => c.date)
-      .sort()
-      .reverse();
+    const weekDateSet = new Set(weekDates.map((d) => d.date));
+    return completions.filter((c) => c.completed && weekDateSet.has(c.date)).length;
+  }
 
-    if (completedDates.length === 0) return 0;
-
-    let streak = 0;
-    const today = new Date().toISOString().split("T")[0];
-    let checkDate = today;
-
-    for (const date of completedDates) {
-      if (date === checkDate) {
-        streak++;
-        const d = new Date(checkDate);
-        d.setDate(d.getDate() - 1);
-        checkDate = d.toISOString().split("T")[0];
-      } else if (date < checkDate) {
-        break;
-      }
+  const handleToggleCompletion = useCallback(async (habitId: string, date: string, currentCompleted: boolean) => {
+    const key = `${habitId}:${date}`;
+    setOptimisticCompletions((prev) => ({ ...prev, [key]: !currentCompleted }));
+    try {
+      await toggleCompletion({
+        habitId: habitId as Id<"habits">,
+        userId,
+        date,
+      });
+    } finally {
+      setOptimisticCompletions((prev) => {
+        const { [key]: _, ...rest } = prev;
+        return rest;
+      });
     }
-
-    return streak;
-  }
-
-  async function handleToggleCompletion(habitId: string, date: string): Promise<void> {
-    await toggleCompletion({
-      habitId: habitId as Id<"habits">,
-      userId,
-      date,
-    });
-  }
+  }, [toggleCompletion, userId]);
 
   async function handleSaveEdit(habitId: string): Promise<void> {
     if (!editValue.trim()) {
@@ -178,9 +166,9 @@ export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps)
   }
 
   async function handleCreateHabit(): Promise<void> {
-    if (!newHabitName.trim()) return;
+    if (!newHabitName.trim() || !habits) return;
 
-    const iconIndex = (habits?.length || 0) % DEFAULT_ICONS.length;
+    const iconIndex = habits.length % DEFAULT_ICONS.length;
 
     await createHabit({
       userId,
@@ -188,11 +176,12 @@ export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps)
       name: newHabitName.trim(),
       whatIsHabit: "Define what this habit is",
       howToPractice: "How you'll practice it",
-      description: DEFAULT_ICONS[iconIndex], // Store icon in description
+      description: DEFAULT_ICONS[iconIndex],
     });
 
     setNewHabitName("");
     setShowNewHabitForm(false);
+    setIconPickerOpen(null);
   }
 
   async function handleDeleteHabit(habitId: string, habitName: string): Promise<void> {
@@ -226,7 +215,7 @@ export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps)
           {habits?.map((habit: any, index: number) => {
             const color = getHabitColor(index);
             const icon = getHabitIcon(habit, index);
-            const streak = calculateStreak(habit.completions);
+            const completedCount = countWeeklyCompletions(habit.completions);
             const isEditingName = editingHabitId === habit._id && editingField === "name";
             const isEditingDesc = editingHabitId === habit._id && editingField === "description";
 
@@ -336,10 +325,10 @@ export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps)
                     )}
                   </div>
 
-                  {/* Streak Badge */}
+                  {/* Weekly Completion Badge */}
                   <div className={styles['habit-streak']}>
-                    <i className="ph ph-flame" />
-                    <span>{streak}</span> Days
+                    <i className="ph ph-check-circle" />
+                    <span>{completedCount}</span>/{weekDates.length}
                   </div>
                 </div>
 
@@ -370,15 +359,19 @@ export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps)
                 {/* Week Visual (Day Orbs) */}
                 <div className={styles['habit-week-visual']}>
                   {weekDates.map((dayInfo, dayIndex) => {
-                    const isCompleted = habit.completions?.some(
+                    const optimisticKey = `${habit._id}:${dayInfo.date}`;
+                    const serverCompleted = habit.completions?.some(
                       (c: any) => c.date === dayInfo.date && c.completed
-                    );
+                    ) ?? false;
+                    const isCompleted = optimisticKey in optimisticCompletions
+                      ? optimisticCompletions[optimisticKey]
+                      : serverCompleted;
 
                     return (
                       <div
                         key={dayInfo.date}
                         className={styles['day-orb-container']}
-                        onClick={() => handleToggleCompletion(habit._id, dayInfo.date)}
+                        onClick={() => handleToggleCompletion(habit._id, dayInfo.date, serverCompleted)}
                       >
                         <span className={styles['day-label']}>{DAY_LABELS[dayIndex]}</span>
                         <motion.div
