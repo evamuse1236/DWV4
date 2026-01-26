@@ -146,6 +146,7 @@ export const getCurrentUser = query({
       displayName: user.displayName,
       role: user.role,
       avatarUrl: user.avatarUrl,
+      batch: user.batch,
       createdAt: user.createdAt,
       lastLoginAt: user.lastLoginAt,
     };

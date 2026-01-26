@@ -27,13 +27,18 @@ async function verifyAdmin(
 }
 
 /**
- * Get current trust jar count
+ * Get current trust jar count for a specific batch
  * Public - no auth required since everyone can see the jar
  */
 export const get = query({
-  args: {},
-  handler: async (ctx) => {
-    const jar = await ctx.db.query("trustJar").first();
+  args: {
+    batch: v.string(),
+  },
+  handler: async (ctx, args) => {
+    const jar = await ctx.db
+      .query("trustJar")
+      .withIndex("by_batch", (q) => q.eq("batch", args.batch))
+      .unique();
     return {
       count: jar?.count ?? 0,
       maxCount: MAX_COUNT,
@@ -49,6 +54,7 @@ export const get = query({
 export const add = mutation({
   args: {
     adminToken: v.string(),
+    batch: v.string(),
   },
   handler: async (ctx, args) => {
     const user = await verifyAdmin(ctx, args.adminToken);
@@ -56,7 +62,10 @@ export const add = mutation({
       return { success: false, error: "Unauthorized" };
     }
 
-    const jar = await ctx.db.query("trustJar").first();
+    const jar = await ctx.db
+      .query("trustJar")
+      .withIndex("by_batch", (q) => q.eq("batch", args.batch))
+      .unique();
 
     if (jar) {
       if (jar.count >= MAX_COUNT) {
@@ -69,6 +78,7 @@ export const add = mutation({
       });
     } else {
       await ctx.db.insert("trustJar", {
+        batch: args.batch,
         count: 1,
         timesCompleted: 0,
         updatedAt: Date.now(),
@@ -86,6 +96,7 @@ export const add = mutation({
 export const remove = mutation({
   args: {
     adminToken: v.string(),
+    batch: v.string(),
   },
   handler: async (ctx, args) => {
     const user = await verifyAdmin(ctx, args.adminToken);
@@ -93,7 +104,10 @@ export const remove = mutation({
       return { success: false, error: "Unauthorized" };
     }
 
-    const jar = await ctx.db.query("trustJar").first();
+    const jar = await ctx.db
+      .query("trustJar")
+      .withIndex("by_batch", (q) => q.eq("batch", args.batch))
+      .unique();
 
     if (!jar || jar.count <= 0) {
       return { success: false, error: "Jar is empty" };
@@ -116,6 +130,7 @@ export const remove = mutation({
 export const reset = mutation({
   args: {
     adminToken: v.string(),
+    batch: v.string(),
   },
   handler: async (ctx, args) => {
     const user = await verifyAdmin(ctx, args.adminToken);
@@ -123,7 +138,10 @@ export const reset = mutation({
       return { success: false, error: "Unauthorized" };
     }
 
-    const jar = await ctx.db.query("trustJar").first();
+    const jar = await ctx.db
+      .query("trustJar")
+      .withIndex("by_batch", (q) => q.eq("batch", args.batch))
+      .unique();
     if (!jar) {
       return { success: true };
     }

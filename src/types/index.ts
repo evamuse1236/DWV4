@@ -13,6 +13,7 @@ export interface User {
   role: UserRole;
   displayName: string;
   avatarUrl?: string;
+  batch?: string;
   createdAt: number;
   lastLoginAt?: number;
 }

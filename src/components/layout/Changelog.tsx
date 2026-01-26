@@ -10,6 +10,12 @@ interface ChangelogEntry {
 const CHANGELOG: ChangelogEntry[] = [
   {
     date: "Jan 26",
+    title: "Batch Trust Jars",
+    description:
+      "The Trust Jar now works independently per batch. Each batch earns marbles separately, and admins can switch between batches with a dropdown selector.",
+  },
+  {
+    date: "Jan 26",
     title: "Book Buddy Redesign",
     description:
       "Book Buddy now matches the app's warm design. The personality toggle is a compact cycling icon next to the name, and chips are transparent so you see more books.",

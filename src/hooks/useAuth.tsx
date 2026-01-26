@@ -49,6 +49,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         displayName: currentUser.displayName,
         role: currentUser.role,
         avatarUrl: currentUser.avatarUrl,
+        batch: currentUser.batch,
         createdAt: currentUser.createdAt,
         lastLoginAt: currentUser.lastLoginAt,
       }

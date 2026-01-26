@@ -287,11 +287,12 @@ export default defineSchema({
 
   // ============ TRUST JAR ============
   trustJar: defineTable({
+    batch: v.string(), // "2153" or "2156"
     count: v.number(), // Current marble count (0-50)
     timesCompleted: v.number(), // Number of times jar was filled and reset
     updatedAt: v.number(), // Last update timestamp
     updatedBy: v.optional(v.id("users")), // Who made the last change
-  }),
+  }).index("by_batch", ["batch"]),
 
   // ============ PROJECTS (6-week learning cycles) ============
   projects: defineTable({
