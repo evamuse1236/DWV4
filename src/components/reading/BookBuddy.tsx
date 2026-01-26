@@ -34,13 +34,17 @@ interface BookBuddyProps {
   readingHistory: ReadingHistoryItem[];
   availableBooks: AvailableBook[];
   onStartReading: (bookId: string) => void;
+  disabled?: boolean;
 }
 
 // Personality configuration
+const PERSONALITY_ORDER: Personality[] = ["luna", "dash", "hagrid"];
+
 const personalities: Record<Personality, {
   name: string;
   icon: string;
-  intro: string;  // Brief intro shown in empty state
+  symbol: string;  // Compact icon shown in header
+  intro: string;   // Brief intro shown in empty state
   gradient: string;
   accentColor: string;
   bgColor: string;
@@ -48,6 +52,7 @@ const personalities: Record<Personality, {
   luna: {
     name: "Luna",
     icon: "moon-icon",
+    symbol: "☽",
     intro: "Hello, dear reader... What kind of adventure calls to you today?",
     gradient: "from-purple-300 via-indigo-200 to-blue-200",
     accentColor: "#7E22CE",
@@ -56,6 +61,7 @@ const personalities: Record<Personality, {
   dash: {
     name: "Dash",
     icon: "bolt-icon",
+    symbol: "⚡",
     intro: "Hey!! Ready to find your next favorite book? Let's GO!",
     gradient: "from-orange-300 via-amber-200 to-yellow-200",
     accentColor: "#C2410C",
@@ -64,6 +70,7 @@ const personalities: Record<Personality, {
   hagrid: {
     name: "Hagrid",
     icon: "tree-icon",
+    symbol: "🌿",
     intro: "Well, hello there! Lookin' fer somethin' good ter read, are yeh?",
     gradient: "from-stone-400 via-amber-700/40 to-emerald-900/40",
     accentColor: "#44403C",
@@ -155,6 +162,14 @@ function BookRecCard({
         borderColor: `${config.bgColor}80`,
       }}
       onClick={onStartReading}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e: React.KeyboardEvent) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          onStartReading();
+        }
+      }}
     >
       {/* Cover - larger */}
       <div
@@ -187,6 +202,7 @@ function BookRecCard({
 
         {/* Start button */}
         <button
+          type="button"
           className="book-rec-start-btn"
           style={{ backgroundColor: config.accentColor }}
         >
@@ -206,6 +222,7 @@ export function BookBuddy({
   readingHistory,
   availableBooks,
   onStartReading,
+  disabled,
 }: BookBuddyProps) {
   const [expanded, setExpanded] = useState(false);
   const [personality, setPersonality] = useState<Personality>("luna");
@@ -215,9 +232,12 @@ export function BookBuddy({
   const [hasWaved, setHasWaved] = useState(false);
   const [suggestedReplies, setSuggestedReplies] = useState<SuggestedReply[]>(defaultSuggestions);
   const [lastRequest, setLastRequest] = useState<string>("");
+  const [aiMessage, setAiMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const libraryChat = useAction(api.ai.libraryChat);
   const inputRef = useRef<HTMLInputElement>(null);
+  const requestIdRef = useRef(0);
 
   const config = personalities[personality];
 
@@ -234,6 +254,13 @@ export function BookBuddy({
     return () => clearTimeout(timer);
   }, []);
 
+  // Close panel when disabled
+  useEffect(() => {
+    if (disabled) {
+      setExpanded(false);
+    }
+  }, [disabled]);
+
   // Reset books and suggestions when personality changes
   const handlePersonalityChange = (newPersonality: Personality) => {
     setPersonality(newPersonality);
@@ -242,17 +269,31 @@ export function BookBuddy({
     setLastRequest("");
   };
 
+  // Cycle to next personality on symbol click
+  const cyclePersonality = () => {
+    const idx = PERSONALITY_ORDER.indexOf(personality);
+    const next = PERSONALITY_ORDER[(idx + 1) % PERSONALITY_ORDER.length];
+    handlePersonalityChange(next);
+  };
+
   const handleToggle = () => {
+    if (disabled) return;
     setExpanded(!expanded);
   };
 
   const handleSend = async (text?: string) => {
+    if (disabled) return;
     const messageText = text || inputValue.trim();
     if (!messageText || isLoading) return;
 
     setInputValue("");
     setIsLoading(true);
     setLastRequest(messageText);
+    setErrorMessage(null);
+    setAiMessage("");
+
+    requestIdRef.current += 1;
+    const requestId = requestIdRef.current;
 
     try {
       // Prepare available books for AI
@@ -272,11 +313,15 @@ export function BookBuddy({
         availableBooks: booksForAI,
       });
 
+      // Stale response guard
+      if (requestId !== requestIdRef.current) return;
+
       // Try to parse as structured buddy-response JSON
       const parsed = parseBuddyResponse(response.content);
 
       if (parsed) {
         // AI returned proper JSON format
+        setAiMessage(parsed.message || "");
         setCurrentBooks(parsed.books || []);
 
         // Update suggested replies from AI
@@ -289,13 +334,20 @@ export function BookBuddy({
       } else {
         // JSON parsing failed - log for debugging
         console.warn("BookBuddy: Failed to parse buddy-response JSON. Raw content:", response.content.substring(0, 200));
+        setCurrentBooks([]);
+        setAiMessage("");
+        setErrorMessage("Sorry - I couldn't understand that response. Try again?");
         setSuggestedReplies(defaultSuggestions);
       }
     } catch (err) {
       console.error("BookBuddy error:", err);
-      // Keep current books on error, just show error state could be added here
+      if (requestId !== requestIdRef.current) return;
+      setCurrentBooks([]);
+      setErrorMessage("Something went wrong. Please try again.");
     } finally {
-      setIsLoading(false);
+      if (requestId === requestIdRef.current) {
+        setIsLoading(false);
+      }
     }
   };
 
@@ -317,15 +369,17 @@ export function BookBuddy({
     return book?.coverImageUrl;
   };
 
-  // Show empty state (intro) when no books yet
-  const showEmptyState = currentBooks.length === 0 && !isLoading;
+  // Show empty state (intro) when no books yet and no AI message/error
+  const showEmptyState = currentBooks.length === 0 && !isLoading && !aiMessage && !errorMessage;
 
   return (
     // Muse-style container: fixed position bottom-right
-    <div className={`muse-container book-buddy-container ${expanded ? "expanded" : ""}`}>
+    <div className={`muse-container book-buddy-container ${expanded ? "expanded" : ""}${disabled ? " disabled" : ""}`} aria-hidden={disabled}>
       {/* Floating Book Button - uses muse-blob styling with book icon */}
       <div className="muse-blob-wrapper">
         <motion.button
+          type="button"
+          aria-label="Open Book Buddy"
           className="muse-blob book-buddy-blob-icon"
           onClick={handleToggle}
           animate={{
@@ -350,48 +404,66 @@ export function BookBuddy({
       <div className="muse-panel book-buddy-panel">
         {/* Header */}
         <div className="muse-header">
-          <div className="flex items-center gap-3">
-            <div
-              className="w-8 h-8 rounded-full flex items-center justify-center"
-              style={{ background: config.bgColor }}
-            >
-              <svg className="w-4 h-4" fill="none" stroke={config.accentColor} strokeWidth={2} viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-              </svg>
-            </div>
-            <div>
-              <span className="text-[0.6rem] uppercase tracking-[0.15em] text-[#888]">
-                Book Buddy
-              </span>
-              <h3 className="font-display text-base leading-tight">{config.name}</h3>
+          <div>
+            <span style={{
+              fontFamily: "var(--font-body)",
+              fontSize: "10px",
+              textTransform: "uppercase",
+              letterSpacing: "0.2em",
+              color: "var(--color-taupe)",
+              fontWeight: 600,
+            }}>
+              Book Buddy
+            </span>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <h3 style={{
+                fontFamily: "var(--font-display)",
+                fontSize: "22px",
+                fontStyle: "italic",
+                fontWeight: 400,
+                margin: 0,
+                lineHeight: 1,
+                color: "var(--color-espresso)",
+              }}>
+                {config.name}
+              </h3>
+              <motion.button
+                type="button"
+                aria-label="Switch character"
+                onClick={cyclePersonality}
+                title={`Switch to ${personalities[PERSONALITY_ORDER[(PERSONALITY_ORDER.indexOf(personality) + 1) % PERSONALITY_ORDER.length]].name}`}
+                whileTap={{ scale: 0.85, rotate: -15 }}
+                whileHover={{ scale: 1.15 }}
+                style={{
+                  background: config.bgColor,
+                  border: "none",
+                  borderRadius: "50%",
+                  width: "28px",
+                  height: "28px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  cursor: "pointer",
+                  fontSize: "14px",
+                  lineHeight: 1,
+                  boxShadow: "0 1px 4px rgba(45, 36, 32, 0.08)",
+                }}
+              >
+                {config.symbol}
+              </motion.button>
             </div>
           </div>
 
           <button
+            type="button"
+            aria-label="Close Book Buddy"
             onClick={() => setExpanded(false)}
             className="w-8 h-8 rounded-full hover:bg-black/5 flex items-center justify-center transition-colors"
           >
-            <svg className="w-5 h-5 opacity-50" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+            <svg className="w-5 h-5" style={{ opacity: 0.4 }} fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
-        </div>
-
-        {/* Personality Toggle */}
-        <div className="book-buddy-personality-toggle">
-          {(["luna", "dash", "hagrid"] as Personality[]).map((p) => (
-            <button
-              key={p}
-              onClick={() => handlePersonalityChange(p)}
-              className={`personality-btn ${personality === p ? "active" : ""}`}
-              style={{
-                backgroundColor: personality === p ? personalities[p].bgColor : "transparent",
-                color: personality === p ? personalities[p].accentColor : "#666",
-              }}
-            >
-              {personalities[p].name}
-            </button>
-          ))}
         </div>
 
         {/* Book Cards Area - scrollable body like muse-body */}
@@ -432,12 +504,17 @@ export function BookBuddy({
 
           {/* Empty State / Intro */}
           {showEmptyState && (
-            <div className="book-buddy-empty-state">
+            <motion.div
+              className="book-buddy-empty-state"
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+            >
               <div
                 className="empty-state-avatar"
-                style={{ background: `linear-gradient(135deg, ${config.bgColor}80, ${config.bgColor})` }}
+                style={{ background: `linear-gradient(145deg, ${config.bgColor}90, ${config.bgColor})` }}
               >
-                <svg className="w-10 h-10 opacity-60" fill="none" stroke={config.accentColor} strokeWidth={1.5} viewBox="0 0 24 24">
+                <svg className="w-7 h-7" style={{ opacity: 0.7 }} fill="none" stroke={config.accentColor} strokeWidth={1.5} viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
                 </svg>
               </div>
@@ -445,9 +522,19 @@ export function BookBuddy({
                 {config.intro}
               </p>
               <p className="empty-state-hint">
-                Pick a topic below or type what you're looking for!
+                Pick a topic below or type what you&apos;re looking for!
               </p>
-            </div>
+            </motion.div>
+          )}
+
+          {/* AI Message */}
+          {aiMessage && (
+            <div className="book-buddy-message">{aiMessage}</div>
+          )}
+
+          {/* Error Message */}
+          {errorMessage && (
+            <div className="book-buddy-error">{errorMessage}</div>
           )}
 
           {/* Book Cards Grid */}
@@ -478,9 +565,10 @@ export function BookBuddy({
         <div className="book-buddy-chips">
           {suggestedReplies.map((reply) => (
             <button
+              type="button"
               key={reply.label}
               onClick={() => handleChipClick(reply)}
-              disabled={isLoading}
+              disabled={isLoading || disabled}
               className="prompt-chip"
               style={{
                 borderColor: `${config.accentColor}40`,
@@ -500,12 +588,14 @@ export function BookBuddy({
             onChange={(e) => setInputValue(e.target.value)}
             onKeyDown={handleKeyDown}
             placeholder="What kind of book do you want?"
-            disabled={isLoading}
+            disabled={isLoading || disabled}
             className="muse-input"
           />
           <button
+            type="button"
+            aria-label="Send message"
             onClick={() => handleSend()}
-            disabled={!inputValue.trim() || isLoading}
+            disabled={!inputValue.trim() || isLoading || disabled}
             className="muse-send-btn"
             style={{ color: config.accentColor }}
           >

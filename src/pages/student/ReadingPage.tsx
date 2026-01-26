@@ -991,6 +991,7 @@ export function ReadingPage() {
             handleStartReading(bookId);
             setActiveTab("reading");
           }}
+          disabled={Boolean(selectedBook || showReviewForm)}
         />
       )}
     </div>

@@ -91,6 +91,7 @@ vi.mock("../../../convex/_generated/api", () => ({
       toggleCompletion: "habits.toggleCompletion",
     },
     ai: { chat: "ai.chat" },
+    chatLogs: { log: "chatLogs.log", clearAll: "chatLogs.clearAll", exportLogs: "chatLogs.exportLogs" },
   },
 }));
 
@@ -915,9 +916,9 @@ describe("Integration Tests: User Journeys", () => {
         </MemoryRouter>
       );
 
-      // All 3 slots should show "Set Goal"
+      // Single "Set Goal" add-slot is shown when there are no goals
       const setGoalButtons = screen.getAllByText(/set goal/i);
-      expect(setGoalButtons).toHaveLength(3);
+      expect(setGoalButtons).toHaveLength(1);
     });
 
     it("StudentDashboard displays correct task counts from goals", () => {

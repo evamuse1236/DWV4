@@ -10,6 +10,18 @@ interface ChangelogEntry {
 const CHANGELOG: ChangelogEntry[] = [
   {
     date: "Jan 26",
+    title: "Book Buddy Redesign",
+    description:
+      "Book Buddy now matches the app's warm design. The personality toggle is a compact cycling icon next to the name, and chips are transparent so you see more books.",
+  },
+  {
+    date: "Jan 26",
+    title: "Quick Duplicate Last Week",
+    description:
+      "The Muse now has a 'Duplicate last week' command chip that instantly imports all your previous sprint goals — no AI conversation needed.",
+  },
+  {
+    date: "Jan 26",
     title: "Smart Week Toggle",
     description:
       "The sprint page now automatically opens to the current week. No more manually switching from Week 1 to Week 2 mid-sprint.",

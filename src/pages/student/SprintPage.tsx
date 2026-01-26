@@ -1179,13 +1179,11 @@ interface SuggestedTask {
   dayOfWeek: number;
 }
 
-const PROMPT_CHIPS_INITIAL = [
-  "eat breakfast every morning for 30 mins",
-  "practice piano",
-  "read every night",
-  "exercise 3 times a week for 1 hour",
-  "study math after school",
+const COMMAND_CHIPS: { label: string; command: string }[] = [
+  { label: "Duplicate last week", command: "duplicate_last_week" },
 ];
+
+const PROMPT_CHIPS_INITIAL = COMMAND_CHIPS.map((c) => c.label);
 
 type ChatResponse = {
   content: string;
@@ -1556,6 +1554,57 @@ function TheMuse({
     }
   };
 
+  const handleCommandChip = async (chipLabel: string) => {
+    const command = COMMAND_CHIPS.find((c) => c.label === chipLabel);
+    if (!command) {
+      handleSend(chipLabel);
+      return;
+    }
+
+    setMessages((prev) => [...prev, { id: `user-${Date.now()}`, role: "user", content: chipLabel }]);
+    setPromptChips([]);
+    setIsLoading(true);
+
+    if (command.command === "duplicate_last_week") {
+      if (!previousSprintGoals || previousSprintGoals.length === 0) {
+        setMessages((prev) => [
+          ...prev,
+          {
+            id: `ai-${Date.now()}`,
+            role: "assistant",
+            content: "There are no goals from last week to duplicate. Try creating a new goal instead!",
+          },
+        ]);
+        setPromptChips(PROMPT_CHIPS_INITIAL);
+      } else {
+        try {
+          for (const goal of previousSprintGoals) {
+            await onImportGoal?.(goal.id);
+          }
+          setMessages((prev) => [
+            ...prev,
+            {
+              id: `ai-${Date.now()}`,
+              role: "assistant",
+              content: `Done! I've duplicated ${previousSprintGoals.length} goal${previousSprintGoals.length > 1 ? "s" : ""} from last week. You can see them on your sprint page now.`,
+            },
+          ]);
+        } catch {
+          setMessages((prev) => [
+            ...prev,
+            {
+              id: `ai-${Date.now()}`,
+              role: "assistant",
+              content: "Sorry, something went wrong while duplicating. Please try again.",
+            },
+          ]);
+          setPromptChips(PROMPT_CHIPS_INITIAL);
+        }
+      }
+    }
+    setIsLoading(false);
+  };
+
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
@@ -1690,7 +1739,7 @@ function TheMuse({
                   <button
                     key={chip}
                     className={museStyles['muse-chip']}
-                    onClick={() => handleSend(chip)}
+                    onClick={() => handleCommandChip(chip)}
                     disabled={isLoading}
                   >
                     {chip}

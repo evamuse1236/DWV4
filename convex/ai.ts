@@ -41,11 +41,7 @@ ASK (too vague):
 
 const PROMPT_CHIPS = {
   initial: [
-    "eat breakfast every morning for 30 mins",
-    "practice piano",
-    "read every night",
-    "exercise 3 times a week for 1 hour",
-    "study math after school",
+    "Duplicate last week",
   ],
   confirmation: [
     "Yes, looks good!",
