@@ -200,9 +200,9 @@ describe("BookBuddy", () => {
     });
   });
 
-  // 3) Switching personality clears book cards and resets suggested replies
+  // 3) Switching personality clears chat and shows new intro
   describe("personality switch", () => {
-    it("clears book cards and resets suggested replies to defaults", async () => {
+    it("clears chat, book cards, and shows new personality intro", async () => {
       const user = userEvent.setup();
 
       mockLibraryChat.mockResolvedValueOnce({
@@ -227,15 +227,22 @@ describe("BookBuddy", () => {
       await user.click(screen.getByRole("button", { name: /open book buddy/i }));
       await user.click(screen.getByRole("button", { name: /something funny/i }));
 
-      // Wait for book card
-      expect(await screen.findByText("The Great Book")).toBeInTheDocument();
+      // Wait for AI message and book card
+      expect(await screen.findByText("Luna's picks")).toBeInTheDocument();
+      expect(screen.getByText("The Great Book")).toBeInTheDocument();
       expect(screen.getByRole("button", { name: "Luna custom" })).toBeInTheDocument();
 
       // Cycle to Dash (Luna → Dash)
       await user.click(screen.getByRole("button", { name: /switch character/i }));
 
+      // AI message should be cleared
+      expect(screen.queryByText("Luna's picks")).not.toBeInTheDocument();
+
       // Book cards should be cleared
       expect(screen.queryByText("The Great Book")).not.toBeInTheDocument();
+
+      // Dash's intro should now be visible (empty state shows)
+      expect(screen.getByText(/ready to find your next favorite book/i)).toBeInTheDocument();
 
       // Suggested replies reset to defaults
       expect(screen.getByRole("button", { name: /something funny/i })).toBeInTheDocument();

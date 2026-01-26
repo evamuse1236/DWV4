@@ -261,12 +261,14 @@ export function BookBuddy({
     }
   }, [disabled]);
 
-  // Reset books and suggestions when personality changes
+  // Reset everything when personality changes — fresh intro from new character
   const handlePersonalityChange = (newPersonality: Personality) => {
     setPersonality(newPersonality);
-    setCurrentBooks([]);  // Clear books when switching character
+    setCurrentBooks([]);
     setSuggestedReplies(defaultSuggestions);
     setLastRequest("");
+    setAiMessage("");
+    setErrorMessage(null);
   };
 
   // Cycle to next personality on symbol click
