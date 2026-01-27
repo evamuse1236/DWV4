@@ -2,13 +2,7 @@ import { useMemo, useState } from "react";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "../../../convex/_generated/api";
 import { useAuth } from "@/hooks/useAuth";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
@@ -50,7 +44,6 @@ import {
   FileText,
   Dumbbell,
   ChevronDown,
-  ChevronUp,
 } from "lucide-react";
 
 type ActivityType = "video" | "exercise" | "reading" | "project" | "game";
@@ -122,6 +115,7 @@ export function ObjectivesPage() {
   const [selectedSubObjective, setSelectedSubObjective] = useState<any>(null);
   const [selectedStudentIds, setSelectedStudentIds] = useState<Set<string>>(new Set());
 
+  const [expandedMajorIds, setExpandedMajorIds] = useState<Set<string>>(new Set());
   const [expandedSubObjectiveId, setExpandedSubObjectiveId] = useState<string | null>(null);
   const [isActivityDialogOpen, setIsActivityDialogOpen] = useState(false);
   const [editingActivity, setEditingActivity] = useState<any>(null);
@@ -424,6 +418,15 @@ export function ObjectivesPage() {
       default:
         return "";
     }
+  };
+
+  const toggleMajor = (id: string) => {
+    setExpandedMajorIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
   };
 
   return (
@@ -948,99 +951,125 @@ export function ObjectivesPage() {
 
           {domains.map((domain: any) => (
             <TabsContent key={domain._id} value={domain._id} className="mt-6">
-              <Card>
-                <CardHeader>
-                  <div className="flex items-center gap-2">
-                    <span className="text-2xl">{domain.icon}</span>
-                    <div>
-                      <CardTitle>{domain.name}</CardTitle>
-                      <CardDescription>{domain.description}</CardDescription>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  {activeDomainId === domain._id && majors && majors.length > 0 ? (
-                    <div className="space-y-4">
-                      {majors.map((major: any) => (
-                        <div
-                          key={major._id}
-                          className="rounded-lg border bg-card overflow-hidden"
-                        >
-                          <div className="flex items-start gap-4 p-4 hover:bg-accent/50 transition-colors">
-                            <div className="p-2 rounded-lg bg-primary/10">
-                              <Target className="h-5 w-5 text-primary" />
-                            </div>
-                            <div className="flex-1 min-w-0">
-                              <div className="flex items-center gap-2 flex-wrap">
-                                <p className="font-medium">{major.title}</p>
-                                {major.difficulty && (
-                                  <Badge className={getDifficultyColor(major.difficulty)}>
-                                    {major.difficulty}
-                                  </Badge>
-                                )}
-                                <Badge variant="outline">
-                                  {major.subObjectives?.length || 0} sub objectives
-                                </Badge>
-                              </div>
-                              <p className="text-sm text-muted-foreground mt-1">
+                {activeDomainId === domain._id && majors && majors.length > 0 ? (
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                  {majors.map((major: any) => (
+                    <div
+                      key={major._id}
+                      className="rounded-xl border bg-card shadow-sm overflow-hidden"
+                    >
+                      {/* Major objective header — click to expand */}
+                      <div
+                        className="group flex items-center gap-4 p-5 cursor-pointer hover:bg-accent/40 transition-colors"
+                        onClick={() => toggleMajor(major._id)}
+                      >
+                        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                          <Target className="h-5 w-5 text-primary" />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <p className="font-semibold text-base">{major.title}</p>
+                          {major.description &&
+                            major.description.toLowerCase().trim() !== major.title.toLowerCase().trim() && (
+                              <p className="text-sm text-muted-foreground mt-0.5 line-clamp-1">
                                 {major.description}
                               </p>
-                            </div>
-                            <div className="flex items-center gap-1">
-                              <Button
-                                variant="ghost"
-                                size="icon"
-                                className="h-8 w-8"
-                                onClick={() => handleOpenEditMajor(major)}
-                                title="Edit major"
-                              >
-                                <Edit2 className="h-4 w-4" />
-                              </Button>
-                              <Button
-                                variant="ghost"
-                                size="icon"
-                                className="h-8 w-8 text-destructive hover:text-destructive"
-                                onClick={() => handleDeleteMajor(major._id)}
-                                title="Delete major"
-                              >
-                                <Trash2 className="h-4 w-4" />
-                              </Button>
-                              <Button
-                                variant="outline"
-                                size="sm"
-                                onClick={() => handleOpenSubDialog(major)}
-                              >
-                                <Plus className="h-4 w-4 mr-1" />
-                                Add Sub
-                              </Button>
-                            </div>
+                            )}
+                          <div className="flex items-center gap-2 mt-1.5">
+                            {major.difficulty && (
+                              <Badge className={getDifficultyColor(major.difficulty)}>
+                                {major.difficulty}
+                              </Badge>
+                            )}
+                            <span className="text-xs text-muted-foreground">
+                              {major.subObjectives?.length || 0} sub-objectives
+                            </span>
                           </div>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <Button
+                              variant="ghost"
+                              size="icon"
+                              className="h-8 w-8"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                handleOpenEditMajor(major);
+                              }}
+                              title="Edit major"
+                            >
+                              <Edit2 className="h-4 w-4" />
+                            </Button>
+                            <Button
+                              variant="ghost"
+                              size="icon"
+                              className="h-8 w-8 text-destructive hover:text-destructive"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                handleDeleteMajor(major._id);
+                              }}
+                              title="Delete major"
+                            >
+                              <Trash2 className="h-4 w-4" />
+                            </Button>
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                handleOpenSubDialog(major);
+                              }}
+                            >
+                              <Plus className="h-4 w-4 mr-1" />
+                              Add Sub
+                            </Button>
+                          </div>
+                          <ChevronDown
+                            className={`h-4 w-4 text-muted-foreground transition-transform ${
+                              expandedMajorIds.has(major._id) ? "rotate-180" : ""
+                            }`}
+                          />
+                        </div>
+                      </div>
 
-                          <div className="border-t bg-muted/30 p-4 space-y-3">
-                            {major.subObjectives && major.subObjectives.length > 0 ? (
-                              major.subObjectives.map((sub: any) => {
-                                const isExpanded = expandedSubObjectiveId === sub._id;
-                                return (
-                                  <div key={sub._id} className="rounded-lg border bg-background overflow-hidden">
-                                    <div
-                                      className="flex items-start gap-4 p-3 cursor-pointer hover:bg-accent/50 transition-colors"
-                                      onClick={() => setExpandedSubObjectiveId(isExpanded ? null : sub._id)}
-                                    >
-                                      <div className="p-2 rounded-lg bg-muted">
-                                        <BookOpen className="h-4 w-4 text-muted-foreground" />
+                      {/* Collapsible sub-objectives */}
+                      {expandedMajorIds.has(major._id) && (
+                        <div className="border-t bg-muted/20 px-5 py-4 space-y-3">
+                          {major.subObjectives && major.subObjectives.length > 0 ? (
+                            major.subObjectives.map((sub: any) => {
+                              const isExpanded = expandedSubObjectiveId === sub._id;
+                              return (
+                                <div
+                                  key={sub._id}
+                                  className="group/sub rounded-lg border bg-background overflow-hidden"
+                                >
+                                  <div
+                                    className="flex items-center gap-3 p-3.5 cursor-pointer hover:bg-accent/30 transition-colors"
+                                    onClick={() =>
+                                      setExpandedSubObjectiveId(isExpanded ? null : sub._id)
+                                    }
+                                  >
+                                    <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-muted">
+                                      <BookOpen className="h-4 w-4 text-muted-foreground" />
+                                    </div>
+                                    <div className="flex-1 min-w-0">
+                                      <p className="text-sm font-medium">{sub.title}</p>
+                                      {sub.description &&
+                                        sub.description.toLowerCase().trim() !==
+                                          sub.title.toLowerCase().trim() && (
+                                          <p className="text-xs text-muted-foreground mt-0.5 line-clamp-1">
+                                            {sub.description}
+                                          </p>
+                                        )}
+                                      <div className="flex items-center gap-2 mt-1">
+                                        <Badge
+                                          className={`text-[11px] ${getDifficultyColor(sub.difficulty)}`}
+                                        >
+                                          {sub.difficulty}
+                                        </Badge>
                                       </div>
-                                      <div className="flex-1 min-w-0">
-                                        <div className="flex items-center gap-2 flex-wrap">
-                                          <p className="text-sm font-medium">{sub.title}</p>
-                                          <Badge className={getDifficultyColor(sub.difficulty)}>
-                                            {sub.difficulty}
-                                          </Badge>
-                                        </div>
-                                        <p className="text-xs text-muted-foreground mt-1">
-                                          {sub.description}
-                                        </p>
-                                      </div>
-                                      <div className="flex items-center gap-1">
+                                    </div>
+                                    <div className="flex items-center gap-1">
+                                      <div className="flex items-center gap-1 opacity-0 group-hover/sub:opacity-100 transition-opacity">
                                         <Button
                                           variant="ghost"
                                           size="icon"
@@ -1065,13 +1094,6 @@ export function ObjectivesPage() {
                                         >
                                           <Trash2 className="h-4 w-4" />
                                         </Button>
-                                        <div className="p-2">
-                                          {isExpanded ? (
-                                            <ChevronUp className="h-4 w-4 text-muted-foreground" />
-                                          ) : (
-                                            <ChevronDown className="h-4 w-4 text-muted-foreground" />
-                                          )}
-                                        </div>
                                         <Button
                                           variant="outline"
                                           size="sm"
@@ -1084,120 +1106,140 @@ export function ObjectivesPage() {
                                           Assign
                                         </Button>
                                       </div>
+                                      <ChevronDown
+                                        className={`h-4 w-4 text-muted-foreground transition-transform ${
+                                          isExpanded ? "rotate-180" : ""
+                                        }`}
+                                      />
                                     </div>
+                                  </div>
 
-                                    {isExpanded && (
-                                      <div className="border-t bg-muted/20 p-4">
-                                        <div className="flex items-center justify-between mb-3">
-                                          <h4 className="text-sm font-medium">
-                                            Activities ({activities?.length || 0})
-                                          </h4>
-                                          <Button
-                                            size="sm"
-                                            variant="outline"
-                                            onClick={() => handleOpenActivityDialog(sub._id)}
-                                          >
-                                            <Plus className="h-3 w-3 mr-1" />
-                                            Add Activity
-                                          </Button>
-                                        </div>
-                                        {activities && activities.length > 0 ? (
-                                          <div className="space-y-2">
-                                            {activities.map((activity: any) => (
-                                              <div
-                                                key={activity._id}
-                                                className="flex items-center gap-3 p-3 bg-background rounded-lg border"
-                                              >
-                                                <div className="p-1.5 rounded bg-muted">
-                                                  {ACTIVITY_ICONS[activity.type as ActivityType] || <FileText className="h-4 w-4" />}
-                                                </div>
-                                                <div className="flex-1 min-w-0">
-                                                  <p className="text-sm font-medium truncate">
-                                                    {activity.title}
-                                                  </p>
-                                                  <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                                                    <span className="capitalize">{activity.type}</span>
-                                                    {activity.platform && (
-                                                      <>
-                                                        <span>•</span>
-                                                        <span>{activity.platform}</span>
-                                                      </>
-                                                    )}
-                                                  </div>
-                                                </div>
-                                                <div className="flex items-center gap-1">
-                                                  <Button
-                                                    variant="ghost"
-                                                    size="icon"
-                                                    className="h-8 w-8"
-                                                    onClick={() => window.open(activity.url, "_blank")}
-                                                  >
-                                                    <ExternalLink className="h-3 w-3" />
-                                                  </Button>
-                                                  <Button
-                                                    variant="ghost"
-                                                    size="icon"
-                                                    className="h-8 w-8"
-                                                    onClick={() => handleOpenActivityDialog(sub._id, activity)}
-                                                  >
-                                                    <Edit2 className="h-3 w-3" />
-                                                  </Button>
-                                                  <Button
-                                                    variant="ghost"
-                                                    size="icon"
-                                                    className="h-8 w-8 text-destructive hover:text-destructive"
-                                                    onClick={() => handleDeleteActivity(activity._id)}
-                                                  >
-                                                    <Trash2 className="h-3 w-3" />
-                                                  </Button>
+                                  {isExpanded && (
+                                    <div className="border-t bg-muted/10 p-4">
+                                      <div className="flex items-center justify-between mb-3">
+                                        <h4 className="text-sm font-medium">
+                                          Activities ({activities?.length || 0})
+                                        </h4>
+                                        <Button
+                                          size="sm"
+                                          variant="outline"
+                                          onClick={() => handleOpenActivityDialog(sub._id)}
+                                        >
+                                          <Plus className="h-3 w-3 mr-1" />
+                                          Add Activity
+                                        </Button>
+                                      </div>
+                                      {activities && activities.length > 0 ? (
+                                        <div className="space-y-2">
+                                          {activities.map((activity: any) => (
+                                            <div
+                                              key={activity._id}
+                                              className="group/activity flex items-center gap-3 p-3 bg-background rounded-lg border"
+                                            >
+                                              <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded bg-muted">
+                                                {ACTIVITY_ICONS[
+                                                  activity.type as ActivityType
+                                                ] || <FileText className="h-4 w-4" />}
+                                              </div>
+                                              <div className="flex-1 min-w-0">
+                                                <p className="text-sm font-medium truncate">
+                                                  {activity.title}
+                                                </p>
+                                                <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                                                  <span className="capitalize">
+                                                    {activity.type}
+                                                  </span>
+                                                  {activity.platform && (
+                                                    <>
+                                                      <span>&middot;</span>
+                                                      <span>{activity.platform}</span>
+                                                    </>
+                                                  )}
                                                 </div>
                                               </div>
-                                            ))}
-                                          </div>
-                                        ) : (
-                                          <p className="text-sm text-muted-foreground text-center py-4">
-                                            No activities yet. Add videos, readings, or exercises for students.
-                                          </p>
-                                        )}
-                                      </div>
-                                    )}
-                                  </div>
-                                );
-                              })
-                            ) : (
-                              <p className="text-sm text-muted-foreground text-center py-4">
-                                No sub objectives yet. Add the first sub objective for this major.
-                              </p>
-                            )}
-                          </div>
+                                              <div className="flex items-center gap-1 opacity-0 group-hover/activity:opacity-100 transition-opacity">
+                                                <Button
+                                                  variant="ghost"
+                                                  size="icon"
+                                                  className="h-8 w-8"
+                                                  onClick={() =>
+                                                    window.open(activity.url, "_blank")
+                                                  }
+                                                >
+                                                  <ExternalLink className="h-3 w-3" />
+                                                </Button>
+                                                <Button
+                                                  variant="ghost"
+                                                  size="icon"
+                                                  className="h-8 w-8"
+                                                  onClick={() =>
+                                                    handleOpenActivityDialog(
+                                                      sub._id,
+                                                      activity
+                                                    )
+                                                  }
+                                                >
+                                                  <Edit2 className="h-3 w-3" />
+                                                </Button>
+                                                <Button
+                                                  variant="ghost"
+                                                  size="icon"
+                                                  className="h-8 w-8 text-destructive hover:text-destructive"
+                                                  onClick={() =>
+                                                    handleDeleteActivity(activity._id)
+                                                  }
+                                                >
+                                                  <Trash2 className="h-3 w-3" />
+                                                </Button>
+                                              </div>
+                                            </div>
+                                          ))}
+                                        </div>
+                                      ) : (
+                                        <p className="text-sm text-muted-foreground text-center py-4">
+                                          No activities yet. Add videos, readings, or exercises
+                                          for students.
+                                        </p>
+                                      )}
+                                    </div>
+                                  )}
+                                </div>
+                              );
+                            })
+                          ) : (
+                            <p className="text-sm text-muted-foreground text-center py-4">
+                              No sub objectives yet. Add the first sub objective for this
+                              major.
+                            </p>
+                          )}
                         </div>
-                      ))}
+                      )}
                     </div>
-                  ) : (
-                    <div className="text-center py-8">
-                      <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center mx-auto mb-4">
-                        <BookOpen className="h-6 w-6 text-muted-foreground" />
-                      </div>
-                      <p className="text-muted-foreground">
-                        No major objectives in this domain yet
-                      </p>
-                      <Button
-                        variant="link"
-                        onClick={() => {
-                          setNewMajor({
-                            ...newMajor,
-                            domainId: domain._id,
-                          });
-                          setIsAddMajorDialogOpen(true);
-                        }}
-                        className="mt-2"
-                      >
-                        Add the first major objective
-                      </Button>
+                  ))}
+                  </div>
+                ) : (
+                  <div className="text-center py-8">
+                    <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center mx-auto mb-4">
+                      <BookOpen className="h-6 w-6 text-muted-foreground" />
                     </div>
-                  )}
-                </CardContent>
-              </Card>
+                    <p className="text-muted-foreground">
+                      No major objectives in this domain yet
+                    </p>
+                    <Button
+                      variant="link"
+                      onClick={() => {
+                        setNewMajor({
+                          ...newMajor,
+                          domainId: domain._id,
+                        });
+                        setIsAddMajorDialogOpen(true);
+                      }}
+                      className="mt-2"
+                    >
+                      Add the first major objective
+                    </Button>
+                  </div>
+                )}
             </TabsContent>
           ))}
         </Tabs>

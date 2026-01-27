@@ -70,6 +70,9 @@ export function AdminDashboard() {
     return localStorage.getItem(SETUP_BANNER_KEY) !== "true";
   });
 
+  // State for expanding check-ins list
+  const [showAllCheckIns, setShowAllCheckIns] = useState(false);
+
   // Queries
   const students = useQuery(api.users.getAll);
   const activeSprint = useQuery(api.sprints.getActive);
@@ -702,7 +705,7 @@ export function AdminDashboard() {
         <CardContent>
           {todayCheckInsDetails && todayCheckInsDetails.length > 0 ? (
             <div className="space-y-3">
-              {todayCheckInsDetails.slice(0, 5).map((checkIn: any) => (
+              {(showAllCheckIns ? todayCheckInsDetails : todayCheckInsDetails.slice(0, 5)).map((checkIn: any) => (
                 <div
                   key={checkIn._id}
                   className="p-4 rounded-lg border bg-card hover:bg-accent/50 transition-colors cursor-pointer"
@@ -754,9 +757,14 @@ export function AdminDashboard() {
                 </div>
               ))}
               {todayCheckInsDetails.length > 5 && (
-                <p className="text-sm text-muted-foreground text-center pt-2">
-                  +{todayCheckInsDetails.length - 5} more check-ins today
-                </p>
+                <button
+                  onClick={() => setShowAllCheckIns(!showAllCheckIns)}
+                  className="w-full text-sm text-muted-foreground text-center pt-2 hover:text-foreground transition-colors"
+                >
+                  {showAllCheckIns
+                    ? "Show less"
+                    : `+${todayCheckInsDetails.length - 5} more check-ins today`}
+                </button>
               )}
             </div>
           ) : (
