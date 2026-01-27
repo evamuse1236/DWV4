@@ -34,34 +34,7 @@
   overflow: hidden;
 }
 
-/* 1. ATMOSPHERE */
-.watercolor-bg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  filter: blur(80px);
-  opacity: 0.6;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.blob {
-  position: absolute;
-  border-radius: 50%;
-  animation: drift 20s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@keyframes drift {
-  from {
-    transform: translate(0, 0);
-  }
-
-  to {
-    transform: translate(50px, -50px);
-  }
-}
-
-/* 2. LAYOUT */
+/* 1. LAYOUT */
 .spiral-stage {
   position: relative;
   width: 100%;

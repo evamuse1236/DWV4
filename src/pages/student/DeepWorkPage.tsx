@@ -130,11 +130,6 @@ export function DeepWorkPage() {
 
   return (
     <div className={styles['deep-work-theme']}>
-      <div className={styles['watercolor-bg']}>
-        <div className={styles.blob} style={{ width: '500px', height: '500px', background: '#FEF9C3', top: '-10%', left: '-10%' }}></div>
-        <div className={styles.blob} style={{ width: '400px', height: '400px', background: '#E0F2F1', bottom: '10%', right: '20%' }}></div>
-      </div>
-
       <div className="w-full h-screen overflow-hidden relative">
         {/* Backdrop - click to close panel */}
         {isPanelOpen && (
