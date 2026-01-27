@@ -343,6 +343,25 @@ export function ObjectivesPage() {
     setSelectedStudentIds(newSet);
   };
 
+  const handleSelectBatch = (batch: string) => {
+    const batchStudentIds = availableStudents
+      .filter((s: any) => s.batch === batch)
+      .map((s: any) => s._id);
+    const allSelected = batchStudentIds.every((id: string) => selectedStudentIds.has(id));
+    const newSet = new Set(selectedStudentIds);
+    if (allSelected) {
+      batchStudentIds.forEach((id: string) => newSet.delete(id));
+    } else {
+      batchStudentIds.forEach((id: string) => newSet.add(id));
+    }
+    setSelectedStudentIds(newSet);
+  };
+
+  const availableBatches = useMemo(() => {
+    const batches = new Set(availableStudents.map((s: any) => s.batch).filter(Boolean));
+    return Array.from(batches).sort() as string[];
+  }, [availableStudents]);
+
   const handleAssignStudents = async () => {
     if (!user?._id || selectedStudentIds.size === 0) return;
     if (!selectedSubObjective && !selectedMajorForAssign) return;
@@ -832,9 +851,35 @@ export function ObjectivesPage() {
               </div>
             )}
 
-            <p className="text-sm font-medium mb-2">
-              Available students ({availableStudents.length})
-            </p>
+            <div className="flex items-center gap-2 mb-2">
+              <p className="text-sm font-medium">
+                Available students ({availableStudents.length})
+              </p>
+              {availableBatches.length > 0 && (
+                <div className="flex gap-1 ml-auto">
+                  {availableBatches.map((batch) => {
+                    const batchIds = availableStudents
+                      .filter((s: any) => s.batch === batch)
+                      .map((s: any) => s._id);
+                    const allSelected = batchIds.length > 0 && batchIds.every((id: string) => selectedStudentIds.has(id));
+                    return (
+                      <button
+                        key={batch}
+                        type="button"
+                        className={`px-2 py-0.5 text-xs rounded-md border transition-colors ${
+                          allSelected
+                            ? "bg-primary text-primary-foreground border-primary"
+                            : "bg-muted/50 hover:bg-muted border-border"
+                        }`}
+                        onClick={() => handleSelectBatch(batch)}
+                      >
+                        {batch}
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
             <div className="max-h-[300px] overflow-y-auto space-y-2">
               {availableStudents.length > 0 ? (
                 availableStudents.map((student: any) => (
