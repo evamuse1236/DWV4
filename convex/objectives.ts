@@ -609,6 +609,126 @@ export const getAssignedStudents = query({
   },
 });
 
+// Get students assigned to ALL sub-objectives of a chapter (admin)
+export const getAssignedStudentsForChapter = query({
+  args: { majorObjectiveId: v.id("majorObjectives") },
+  handler: async (ctx, args) => {
+    // Get all sub-objectives for this major
+    const subObjectives = await ctx.db
+      .query("learningObjectives")
+      .withIndex("by_major_objective", (q) =>
+        q.eq("majorObjectiveId", args.majorObjectiveId)
+      )
+      .collect();
+
+    if (subObjectives.length === 0) {
+      return [];
+    }
+
+    // Get all studentMajorObjective assignments for this chapter
+    const majorAssignments = await ctx.db
+      .query("studentMajorObjectives")
+      .withIndex("by_major_objective", (q) =>
+        q.eq("majorObjectiveId", args.majorObjectiveId)
+      )
+      .collect();
+
+    // For each student with a major assignment, check if they have ALL sub-objectives
+    const fullyAssigned = [];
+    for (const ma of majorAssignments) {
+      const studentSubAssignments = await ctx.db
+        .query("studentObjectives")
+        .withIndex("by_user_major", (q) =>
+          q.eq("userId", ma.userId).eq("majorObjectiveId", args.majorObjectiveId)
+        )
+        .collect();
+
+      if (studentSubAssignments.length >= subObjectives.length) {
+        const user = await ctx.db.get(ma.userId);
+        fullyAssigned.push({ ...ma, user });
+      }
+    }
+
+    return fullyAssigned;
+  },
+});
+
+// Assign all sub-objectives of a chapter to multiple students
+export const assignChapterToMultipleStudents = mutation({
+  args: {
+    majorObjectiveId: v.id("majorObjectives"),
+    studentIds: v.array(v.id("users")),
+    assignedBy: v.id("users"),
+  },
+  handler: async (ctx, args) => {
+    const major = await ctx.db.get(args.majorObjectiveId);
+    if (!major) {
+      throw new Error("Major objective not found");
+    }
+
+    // Get all sub-objectives for this major
+    const subObjectives = await ctx.db
+      .query("learningObjectives")
+      .withIndex("by_major_objective", (q) =>
+        q.eq("majorObjectiveId", args.majorObjectiveId)
+      )
+      .collect();
+
+    let assignedCount = 0;
+
+    for (const userId of args.studentIds) {
+      // Ensure major assignment exists
+      const existingMajor = await ctx.db
+        .query("studentMajorObjectives")
+        .withIndex("by_user_major", (q) =>
+          q.eq("userId", userId).eq("majorObjectiveId", args.majorObjectiveId)
+        )
+        .first();
+
+      if (!existingMajor) {
+        await ctx.db.insert("studentMajorObjectives", {
+          userId,
+          majorObjectiveId: args.majorObjectiveId,
+          assignedBy: args.assignedBy,
+          status: "assigned",
+          assignedAt: Date.now(),
+        });
+      }
+
+      // Assign each sub-objective
+      for (const sub of subObjectives) {
+        const existing = await ctx.db
+          .query("studentObjectives")
+          .filter((q) =>
+            q.and(
+              q.eq(q.field("userId"), userId),
+              q.eq(q.field("objectiveId"), sub._id)
+            )
+          )
+          .first();
+
+        if (!existing) {
+          await ctx.db.insert("studentObjectives", {
+            userId,
+            objectiveId: sub._id,
+            majorObjectiveId: args.majorObjectiveId,
+            assignedBy: args.assignedBy,
+            status: "assigned",
+            assignedAt: Date.now(),
+          });
+          assignedCount++;
+        }
+      }
+    }
+
+    return {
+      studentsCount: args.studentIds.length,
+      subObjectivesCount: subObjectives.length,
+      newAssignments: assignedCount,
+    };
+  },
+});
+
 // Update major objective status (viva workflow)
 export const updateStatus = mutation({
   args: {

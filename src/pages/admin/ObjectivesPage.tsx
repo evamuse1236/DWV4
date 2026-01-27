@@ -71,6 +71,7 @@ export function ObjectivesPage() {
   const updateSubObjective = useMutation(api.objectives.updateSubObjective);
   const removeSubObjective = useMutation(api.objectives.removeSubObjective);
   const assignToMultiple = useMutation(api.objectives.assignToMultipleStudents);
+  const assignChapterToMultiple = useMutation(api.objectives.assignChapterToMultipleStudents);
 
   const createActivity = useMutation(api.activities.create);
   const updateActivity = useMutation(api.activities.update);
@@ -113,6 +114,7 @@ export function ObjectivesPage() {
 
   const [isAssignDialogOpen, setIsAssignDialogOpen] = useState(false);
   const [selectedSubObjective, setSelectedSubObjective] = useState<any>(null);
+  const [selectedMajorForAssign, setSelectedMajorForAssign] = useState<any>(null);
   const [selectedStudentIds, setSelectedStudentIds] = useState<Set<string>>(new Set());
 
   const [expandedMajorIds, setExpandedMajorIds] = useState<Set<string>>(new Set());
@@ -134,17 +136,26 @@ export function ObjectivesPage() {
     selectedSubObjective ? { objectiveId: selectedSubObjective._id } : "skip"
   );
 
+  const chapterAssignedStudents = useQuery(
+    api.objectives.getAssignedStudentsForChapter,
+    selectedMajorForAssign ? { majorObjectiveId: selectedMajorForAssign._id } : "skip"
+  );
+
   const activities = useQuery(
     api.activities.getByObjective,
     expandedSubObjectiveId ? { objectiveId: expandedSubObjectiveId as any } : "skip"
   );
 
+  const currentAssignedStudents = selectedMajorForAssign
+    ? chapterAssignedStudents
+    : assignedStudents;
+
   const availableStudents = useMemo(() => {
     const alreadyAssignedIds = new Set(
-      assignedStudents?.map((a: any) => a.userId) || []
+      currentAssignedStudents?.map((a: any) => a.userId) || []
     );
     return students?.filter((s: any) => !alreadyAssignedIds.has(s._id)) || [];
-  }, [assignedStudents, students]);
+  }, [currentAssignedStudents, students]);
 
   const handleCreateMajor = async () => {
     if (!user?._id || !newMajor.domainId) return;
@@ -301,6 +312,14 @@ export function ObjectivesPage() {
 
   const handleAssignClick = (objective: any) => {
     setSelectedSubObjective(objective);
+    setSelectedMajorForAssign(null);
+    setSelectedStudentIds(new Set());
+    setIsAssignDialogOpen(true);
+  };
+
+  const handleAssignChapterClick = (major: any) => {
+    setSelectedMajorForAssign(major);
+    setSelectedSubObjective(null);
     setSelectedStudentIds(new Set());
     setIsAssignDialogOpen(true);
   };
@@ -316,20 +335,30 @@ export function ObjectivesPage() {
   };
 
   const handleAssignStudents = async () => {
-    if (!user?._id || !selectedSubObjective || selectedStudentIds.size === 0) return;
+    if (!user?._id || selectedStudentIds.size === 0) return;
+    if (!selectedSubObjective && !selectedMajorForAssign) return;
 
     setIsLoading(true);
     setError(null);
 
     try {
-      await assignToMultiple({
-        objectiveId: selectedSubObjective._id,
-        studentIds: Array.from(selectedStudentIds) as any[],
-        assignedBy: user._id as any,
-      });
+      if (selectedMajorForAssign) {
+        await assignChapterToMultiple({
+          majorObjectiveId: selectedMajorForAssign._id,
+          studentIds: Array.from(selectedStudentIds) as any[],
+          assignedBy: user._id as any,
+        });
+      } else {
+        await assignToMultiple({
+          objectiveId: selectedSubObjective._id,
+          studentIds: Array.from(selectedStudentIds) as any[],
+          assignedBy: user._id as any,
+        });
+      }
 
       setIsAssignDialogOpen(false);
       setSelectedSubObjective(null);
+      setSelectedMajorForAssign(null);
       setSelectedStudentIds(new Set());
     } catch (err) {
       setError("An error occurred while assigning students");
@@ -763,24 +792,29 @@ export function ObjectivesPage() {
         setIsAssignDialogOpen(open);
         if (!open) {
           setSelectedSubObjective(null);
+          setSelectedMajorForAssign(null);
           setSelectedStudentIds(new Set());
         }
       }}>
         <DialogContent className="max-w-lg">
           <DialogHeader>
-            <DialogTitle>Assign Students</DialogTitle>
+            <DialogTitle>
+              {selectedMajorForAssign ? "Assign Chapter" : "Assign Students"}
+            </DialogTitle>
             <DialogDescription>
-              Select students to assign to "{selectedSubObjective?.title}"
+              {selectedMajorForAssign
+                ? `Assign all sub-objectives in "${selectedMajorForAssign.title}" (${selectedMajorForAssign.subObjectives?.length || 0} sub-objectives)`
+                : `Select students to assign to "${selectedSubObjective?.title}"`}
             </DialogDescription>
           </DialogHeader>
           <div className="py-4">
-            {assignedStudents && assignedStudents.length > 0 && (
+            {currentAssignedStudents && currentAssignedStudents.length > 0 && (
               <div className="mb-4">
                 <p className="text-sm font-medium mb-2 text-muted-foreground">
-                  Already assigned ({assignedStudents.length})
+                  Already assigned ({currentAssignedStudents.length})
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {assignedStudents.map((assignment: any) => (
+                  {currentAssignedStudents.map((assignment: any) => (
                     <Badge key={assignment._id} variant="secondary">
                       {assignment.user?.displayName}
                     </Badge>
@@ -1010,6 +1044,17 @@ export function ObjectivesPage() {
                               title="Delete major"
                             >
                               <Trash2 className="h-4 w-4" />
+                            </Button>
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                handleAssignChapterClick(major);
+                              }}
+                            >
+                              <Users className="h-4 w-4 mr-1" />
+                              Assign
                             </Button>
                             <Button
                               variant="outline"
