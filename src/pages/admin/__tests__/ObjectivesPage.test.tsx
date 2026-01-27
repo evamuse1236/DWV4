@@ -390,8 +390,12 @@ describe("ObjectivesPage", () => {
       expect(screen.getByText("Algebra Basics")).toBeInTheDocument();
     });
 
-    it("displays sub-objectives under major objectives", () => {
+    it("displays sub-objectives under major objectives", async () => {
+      const user = userEvent.setup();
       render(<ObjectivesPage />);
+
+      // Expand the first major to reveal sub-objectives
+      await user.click(screen.getByText("Fractions Fundamentals"));
 
       expect(screen.getByText("Add fractions with like denominators")).toBeInTheDocument();
       expect(screen.getByText("Subtract fractions")).toBeInTheDocument();
@@ -411,8 +415,8 @@ describe("ObjectivesPage", () => {
     it("shows sub-objective count badge for majors", () => {
       render(<ObjectivesPage />);
 
-      expect(screen.getByText("2 sub objectives")).toBeInTheDocument();
-      expect(screen.getByText("0 sub objectives")).toBeInTheDocument();
+      expect(screen.getByText("2 sub-objectives")).toBeInTheDocument();
+      expect(screen.getByText("0 sub-objectives")).toBeInTheDocument();
     });
   });
 
@@ -446,7 +450,7 @@ describe("ObjectivesPage", () => {
       expect(emptyMessages.length).toBeGreaterThan(0);
     });
 
-    it("shows empty state for sub-objectives when major has none", () => {
+    it("shows empty state for sub-objectives when major has none", async () => {
       (useQuery as any).mockImplementation((query: string, args: any) => {
         if (args === "skip") return undefined;
         if (query === "domains.getAll") return mockDomains;
@@ -457,7 +461,11 @@ describe("ObjectivesPage", () => {
         return undefined;
       });
 
+      const user = userEvent.setup();
       render(<ObjectivesPage />);
+
+      // Expand the major to reveal the empty sub-objectives section
+      await user.click(screen.getByText("Algebra Basics"));
 
       expect(
         screen.getByText("No sub objectives yet. Add the first sub objective for this major.")
@@ -738,6 +746,9 @@ describe("ObjectivesPage", () => {
       const user = userEvent.setup();
       render(<ObjectivesPage />);
 
+      // Expand major to reveal sub-objectives
+      await user.click(screen.getByText("Fractions Fundamentals"));
+
       const editSubButtons = screen.getAllByTitle("Edit sub objective");
       await user.click(editSubButtons[0]);
 
@@ -747,6 +758,8 @@ describe("ObjectivesPage", () => {
     it("pre-fills form with existing sub-objective data when editing", async () => {
       const user = userEvent.setup();
       render(<ObjectivesPage />);
+
+      await user.click(screen.getByText("Fractions Fundamentals"));
 
       const editSubButtons = screen.getAllByTitle("Edit sub objective");
       await user.click(editSubButtons[0]);
@@ -758,6 +771,8 @@ describe("ObjectivesPage", () => {
     it("calls update sub-objective mutation with correct args", async () => {
       const user = userEvent.setup();
       render(<ObjectivesPage />);
+
+      await user.click(screen.getByText("Fractions Fundamentals"));
 
       const editSubButtons = screen.getAllByTitle("Edit sub objective");
       await user.click(editSubButtons[0]);
@@ -785,6 +800,8 @@ describe("ObjectivesPage", () => {
 
       render(<ObjectivesPage />);
 
+      await user.click(screen.getByText("Fractions Fundamentals"));
+
       const deleteSubButtons = screen.getAllByTitle("Delete sub objective");
       await user.click(deleteSubButtons[0]);
 
@@ -809,6 +826,9 @@ describe("ObjectivesPage", () => {
       const user = userEvent.setup();
       render(<ObjectivesPage />);
 
+      // Expand major to reveal sub-objectives
+      await user.click(screen.getByText("Fractions Fundamentals"));
+
       // Click on a sub-objective to expand it
       const subObjective = screen.getByText("Add fractions with like denominators");
       await user.click(subObjective);
@@ -823,6 +843,7 @@ describe("ObjectivesPage", () => {
       const user = userEvent.setup();
       render(<ObjectivesPage />);
 
+      await user.click(screen.getByText("Fractions Fundamentals"));
       const subObjective = screen.getByText("Add fractions with like denominators");
       await user.click(subObjective);
 
@@ -833,7 +854,8 @@ describe("ObjectivesPage", () => {
       const user = userEvent.setup();
       render(<ObjectivesPage />);
 
-      // Expand sub-objective
+      // Expand major, then sub-objective
+      await user.click(screen.getByText("Fractions Fundamentals"));
       const subObjective = screen.getByText("Add fractions with like denominators");
       await user.click(subObjective);
 
@@ -850,6 +872,7 @@ describe("ObjectivesPage", () => {
       const user = userEvent.setup();
       render(<ObjectivesPage />);
 
+      await user.click(screen.getByText("Fractions Fundamentals"));
       const subObjective = screen.getByText("Add fractions with like denominators");
       await user.click(subObjective);
 
@@ -867,7 +890,8 @@ describe("ObjectivesPage", () => {
       const user = userEvent.setup();
       render(<ObjectivesPage />);
 
-      // Expand sub-objective
+      // Expand major, then sub-objective
+      await user.click(screen.getByText("Fractions Fundamentals"));
       const subObjective = screen.getByText("Add fractions with like denominators");
       await user.click(subObjective);
 
@@ -907,6 +931,7 @@ describe("ObjectivesPage", () => {
       const user = userEvent.setup();
       render(<ObjectivesPage />);
 
+      await user.click(screen.getByText("Fractions Fundamentals"));
       const subObjective = screen.getByText("Add fractions with like denominators");
       await user.click(subObjective);
 
@@ -919,6 +944,7 @@ describe("ObjectivesPage", () => {
       const user = userEvent.setup();
       render(<ObjectivesPage />);
 
+      await user.click(screen.getByText("Fractions Fundamentals"));
       const subObjective = screen.getByText("Add fractions with like denominators");
       await user.click(subObjective);
 
@@ -930,7 +956,8 @@ describe("ObjectivesPage", () => {
       const user = userEvent.setup();
       render(<ObjectivesPage />);
 
-      // Expand sub-objective
+      // Expand major, then sub-objective
+      await user.click(screen.getByText("Fractions Fundamentals"));
       const subObjective = screen.getByText("Add fractions with like denominators");
       await user.click(subObjective);
 
@@ -948,7 +975,8 @@ describe("ObjectivesPage", () => {
       const user = userEvent.setup();
       render(<ObjectivesPage />);
 
-      // Expand sub-objective
+      // Expand major, then sub-objective
+      await user.click(screen.getByText("Fractions Fundamentals"));
       const subObjective = screen.getByText("Add fractions with like denominators");
       await user.click(subObjective);
 
@@ -984,7 +1012,8 @@ describe("ObjectivesPage", () => {
 
       render(<ObjectivesPage />);
 
-      // Expand sub-objective
+      // Expand major, then sub-objective
+      await user.click(screen.getByText("Fractions Fundamentals"));
       const subObjective = screen.getByText("Add fractions with like denominators");
       await user.click(subObjective);
 
@@ -1022,7 +1051,8 @@ describe("ObjectivesPage", () => {
       const user = userEvent.setup();
       render(<ObjectivesPage />);
 
-      // Expand first sub-objective
+      // Expand major, then first sub-objective
+      await user.click(screen.getByText("Fractions Fundamentals"));
       const subObjective = screen.getByText("Add fractions with like denominators");
       await user.click(subObjective);
 
@@ -1035,7 +1065,8 @@ describe("ObjectivesPage", () => {
       const user = userEvent.setup();
       render(<ObjectivesPage />);
 
-      // Expand
+      // Expand major, then sub-objective
+      await user.click(screen.getByText("Fractions Fundamentals"));
       const subObjective = screen.getByText("Add fractions with like denominators");
       await user.click(subObjective);
 
@@ -1055,9 +1086,11 @@ describe("ObjectivesPage", () => {
       setupDefaultQueries();
     });
 
-    it("shows Assign button on sub-objectives", () => {
+    it("shows Assign button on sub-objectives", async () => {
+      const user = userEvent.setup();
       render(<ObjectivesPage />);
 
+      await user.click(screen.getByText("Fractions Fundamentals"));
       const assignButtons = screen.getAllByText("Assign");
       expect(assignButtons.length).toBeGreaterThan(0);
     });
@@ -1066,6 +1099,7 @@ describe("ObjectivesPage", () => {
       const user = userEvent.setup();
       render(<ObjectivesPage />);
 
+      await user.click(screen.getByText("Fractions Fundamentals"));
       const assignButtons = screen.getAllByText("Assign");
       await user.click(assignButtons[0]);
 
@@ -1079,6 +1113,7 @@ describe("ObjectivesPage", () => {
       const user = userEvent.setup();
       render(<ObjectivesPage />);
 
+      await user.click(screen.getByText("Fractions Fundamentals"));
       const assignButtons = screen.getAllByText("Assign");
       await user.click(assignButtons[0]);
 
@@ -1090,6 +1125,7 @@ describe("ObjectivesPage", () => {
       const user = userEvent.setup();
       render(<ObjectivesPage />);
 
+      await user.click(screen.getByText("Fractions Fundamentals"));
       const assignButtons = screen.getAllByText("Assign");
       await user.click(assignButtons[0]);
 
@@ -1102,6 +1138,7 @@ describe("ObjectivesPage", () => {
       const user = userEvent.setup();
       render(<ObjectivesPage />);
 
+      await user.click(screen.getByText("Fractions Fundamentals"));
       const assignButtons = screen.getAllByText("Assign");
       await user.click(assignButtons[0]);
 
@@ -1125,6 +1162,7 @@ describe("ObjectivesPage", () => {
       const user = userEvent.setup();
       render(<ObjectivesPage />);
 
+      await user.click(screen.getByText("Fractions Fundamentals"));
       const assignButtons = screen.getAllByText("Assign");
       await user.click(assignButtons[0]);
 
@@ -1143,6 +1181,7 @@ describe("ObjectivesPage", () => {
       const user = userEvent.setup();
       render(<ObjectivesPage />);
 
+      await user.click(screen.getByText("Fractions Fundamentals"));
       const assignButtons = screen.getAllByText("Assign");
       await user.click(assignButtons[0]);
 
@@ -1177,6 +1216,7 @@ describe("ObjectivesPage", () => {
       const user = userEvent.setup();
       render(<ObjectivesPage />);
 
+      await user.click(screen.getByText("Fractions Fundamentals"));
       const assignButtons = screen.getAllByText("Assign");
       await user.click(assignButtons[0]);
 
@@ -1212,6 +1252,7 @@ describe("ObjectivesPage", () => {
       const user = userEvent.setup();
       render(<ObjectivesPage />);
 
+      await user.click(screen.getByText("Fractions Fundamentals"));
       const assignButtons = screen.getAllByText("Assign");
       await user.click(assignButtons[0]);
 
@@ -1224,6 +1265,7 @@ describe("ObjectivesPage", () => {
       const user = userEvent.setup();
       render(<ObjectivesPage />);
 
+      await user.click(screen.getByText("Fractions Fundamentals"));
       const assignButtons = screen.getAllByText("Assign");
       await user.click(assignButtons[0]);
 
@@ -1243,6 +1285,7 @@ describe("ObjectivesPage", () => {
       const user = userEvent.setup();
       render(<ObjectivesPage />);
 
+      await user.click(screen.getByText("Fractions Fundamentals"));
       const assignButtons = screen.getAllByText("Assign");
       await user.click(assignButtons[0]);
 
@@ -1365,6 +1408,7 @@ describe("ObjectivesPage", () => {
       const user = userEvent.setup();
       render(<ObjectivesPage />);
 
+      await user.click(screen.getByText("Fractions Fundamentals"));
       const assignButtons = screen.getAllByText("Assign");
       await user.click(assignButtons[0]);
 
@@ -1393,7 +1437,8 @@ describe("ObjectivesPage", () => {
       const user = userEvent.setup();
       render(<ObjectivesPage />);
 
-      // Expand sub-objective
+      // Expand major, then sub-objective
+      await user.click(screen.getByText("Fractions Fundamentals"));
       const subObjective = screen.getByText("Add fractions with like denominators");
       await user.click(subObjective);
 

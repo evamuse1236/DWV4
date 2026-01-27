@@ -28,6 +28,7 @@ import type * as sprints from "../sprints.js";
 import type * as trustJar from "../trustJar.js";
 import type * as users from "../users.js";
 import type * as utils from "../utils.js";
+import type * as visionBoard from "../visionBoard.js";
 
 import type {
   ApiFromModules,
@@ -56,6 +57,7 @@ declare const fullApi: ApiFromModules<{
   trustJar: typeof trustJar;
   users: typeof users;
   utils: typeof utils;
+  visionBoard: typeof visionBoard;
 }>;
 
 /**

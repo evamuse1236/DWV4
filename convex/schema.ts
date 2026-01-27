@@ -342,4 +342,73 @@ export default defineSchema({
     data: v.any(),
     timestamp: v.number(),
   }).index("by_timestamp", ["timestamp"]),
+
+  // ============ VISION BOARD ============
+  visionBoardAreas: defineTable({
+    userId: v.id("users"),
+    name: v.string(),
+    emoji: v.string(),
+    isPreset: v.boolean(),
+  }).index("by_user", ["userId"]),
+
+  visionBoardCards: defineTable({
+    userId: v.id("users"),
+    areaId: v.id("visionBoardAreas"),
+    cardType: v.union(
+      v.literal("image_hero"),
+      v.literal("counter"),
+      v.literal("progress"),
+      v.literal("streak"),
+      v.literal("habits"),
+      v.literal("mini_tile"),
+      v.literal("motivation"),
+      v.literal("journal"),
+    ),
+    title: v.string(),
+    subtitle: v.optional(v.string()),
+    emoji: v.optional(v.string()),
+    colorVariant: v.union(
+      v.literal("green"),
+      v.literal("blue"),
+      v.literal("pink"),
+      v.literal("purple"),
+      v.literal("orange"),
+      v.literal("yellow"),
+    ),
+    size: v.union(
+      v.literal("sm"),
+      v.literal("md"),
+      v.literal("lg"),
+      v.literal("tall"),
+      v.literal("wide"),
+      v.literal("hero"),
+    ),
+    order: v.number(),
+    // image_hero
+    imageUrl: v.optional(v.string()),
+    progressPercent: v.optional(v.number()),
+    // counter
+    currentCount: v.optional(v.number()),
+    targetCount: v.optional(v.number()),
+    countLabel: v.optional(v.string()),
+    // progress
+    description: v.optional(v.string()),
+    totalSteps: v.optional(v.number()),
+    completedSteps: v.optional(v.number()),
+    stepsLabel: v.optional(v.string()),
+    // streak
+    quote: v.optional(v.string()),
+    streakCount: v.optional(v.number()),
+    // habits
+    habits: v.optional(
+      v.array(v.object({ label: v.string(), done: v.boolean() })),
+    ),
+    dayCount: v.optional(v.number()),
+    // journal
+    textContent: v.optional(v.string()),
+    entryDate: v.optional(v.string()),
+    createdAt: v.number(),
+  })
+    .index("by_user", ["userId"])
+    .index("by_user_area", ["userId", "areaId"]),
 });

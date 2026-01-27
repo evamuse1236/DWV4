@@ -5,7 +5,6 @@ import { api } from "../../../convex/_generated/api";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -146,106 +145,98 @@ export function VivaQueuePage() {
       </div>
 
       {/* Queue */}
-      <Card>
-        <CardHeader>
-          <CardTitle>Pending Viva Requests</CardTitle>
-          <CardDescription>
-            Students ready to demonstrate mastery of their learning objectives
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          {vivaRequests && vivaRequests.length > 0 ? (
-            <div className="space-y-4">
-              {vivaRequests.map((request: any) => (
-                <div
-                  key={request._id}
-                  className="flex flex-col sm:flex-row sm:items-center gap-4 p-4 rounded-lg border bg-card hover:bg-accent/50 transition-colors cursor-pointer"
-                  onClick={() => navigate(`/admin/students/${request.userId}`)}
-                  title="View student details"
-                >
-                  {/* Student info */}
-                  <div className="flex items-center gap-3 flex-1 min-w-0">
-                    <Avatar className="h-10 w-10">
-                      <AvatarImage
-                        src={request.user?.avatarUrl}
-                        alt={request.user?.displayName}
-                      />
-                      <AvatarFallback className="bg-primary text-primary-foreground">
-                        {request.user?.displayName?.charAt(0) || "?"}
-                      </AvatarFallback>
-                    </Avatar>
-                    <div className="min-w-0 flex-1">
-                      <p className="font-medium truncate">
-                        {request.user?.displayName}
-                      </p>
-                      <p className="text-sm text-muted-foreground truncate">
-                        @{request.user?.username}
-                      </p>
-                    </div>
-                  </div>
+      <div>
+        <h2 className="text-lg font-semibold mb-1">Pending Viva Requests</h2>
+        <p className="text-sm text-muted-foreground mb-4">
+          Students ready to demonstrate mastery of their learning objectives
+        </p>
+      </div>
 
-                  {/* Objective info */}
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2 mb-1">
-                      <BookOpen className="h-4 w-4 text-muted-foreground" />
-                      <p className="font-medium text-sm truncate">
-                        {request.objective?.title}
-                      </p>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Badge variant="outline">{request.domain?.name}</Badge>
-                      <Badge variant="secondary">
-                        {request.objective?.difficulty}
-                      </Badge>
-                    </div>
-                  </div>
-
-                  {/* Time */}
-                  <div className="text-sm text-muted-foreground">
-                    {request.vivaRequestedAt
-                      ? formatDate(request.vivaRequestedAt)
-                      : "Unknown"}
-                  </div>
-
-                  {/* Actions */}
-                  <div className="flex items-center gap-2">
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        openConfirmDialog("reject", request);
-                      }}
-                    >
-                      Not Yet
-                    </Button>
-                    <Button
-                      size="sm"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        openConfirmDialog("approve", request);
-                      }}
-                    >
-                      <CheckCircle className="mr-1 h-4 w-4" />
-                      Approve
-                    </Button>
-                  </div>
+      {vivaRequests && vivaRequests.length > 0 ? (
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          {vivaRequests.map((request: any) => (
+            <div
+              key={request._id}
+              className="group rounded-xl border bg-card shadow-sm p-5 hover:bg-accent/40 transition-colors cursor-pointer"
+              onClick={() => navigate(`/admin/students/${request.userId}`)}
+              title="View student details"
+            >
+              <div className="flex items-center gap-3 mb-3">
+                <Avatar className="h-10 w-10">
+                  <AvatarImage
+                    src={request.user?.avatarUrl}
+                    alt={request.user?.displayName}
+                  />
+                  <AvatarFallback className="bg-primary text-primary-foreground">
+                    {request.user?.displayName?.charAt(0) || "?"}
+                  </AvatarFallback>
+                </Avatar>
+                <div className="min-w-0 flex-1">
+                  <p className="font-medium truncate">
+                    {request.user?.displayName}
+                  </p>
+                  <p className="text-sm text-muted-foreground truncate">
+                    @{request.user?.username}
+                  </p>
                 </div>
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-12">
-              <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center mx-auto mb-4">
-                <CheckCircle className="h-6 w-6 text-muted-foreground" />
+                <span className="text-xs text-muted-foreground">
+                  {request.vivaRequestedAt
+                    ? formatDate(request.vivaRequestedAt)
+                    : "Unknown"}
+                </span>
               </div>
-              <p className="text-muted-foreground">No pending viva requests</p>
-              <p className="text-sm text-muted-foreground">
-                Students will appear here when they request mastery verification
-              </p>
+
+              <div className="flex items-center gap-2 mb-3">
+                <BookOpen className="h-4 w-4 text-muted-foreground shrink-0" />
+                <p className="font-medium text-sm truncate">
+                  {request.objective?.title}
+                </p>
+              </div>
+
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <Badge variant="outline">{request.domain?.name}</Badge>
+                  <Badge variant="secondary">
+                    {request.objective?.difficulty}
+                  </Badge>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      openConfirmDialog("reject", request);
+                    }}
+                  >
+                    Not Yet
+                  </Button>
+                  <Button
+                    size="sm"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      openConfirmDialog("approve", request);
+                    }}
+                  >
+                    <CheckCircle className="mr-1 h-4 w-4" />
+                    Approve
+                  </Button>
+                </div>
+              </div>
             </div>
-          )}
-        </CardContent>
-      </Card>
+          ))}
+        </div>
+      ) : (
+        <div className="text-center py-12">
+          <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center mx-auto mb-4">
+            <CheckCircle className="h-6 w-6 text-muted-foreground" />
+          </div>
+          <p className="text-muted-foreground">No pending viva requests</p>
+          <p className="text-sm text-muted-foreground">
+            Students will appear here when they request mastery verification
+          </p>
+        </div>
+      )}
 
       {/* Confirmation Dialog */}
       <Dialog open={confirmDialog.isOpen} onOpenChange={(open) => !open && closeConfirmDialog()}>

@@ -4,7 +4,6 @@ import { api } from "../../../convex/_generated/api";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -144,102 +143,94 @@ export function PresentationQueuePage() {
       </div>
 
       {/* Queue */}
-      <Card>
-        <CardHeader>
-          <CardTitle>Pending Presentation Requests</CardTitle>
-          <CardDescription>
-            Students ready to present their book readings to the class
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          {presentationRequests && presentationRequests.length > 0 ? (
-            <div className="space-y-4">
-              {presentationRequests.map((request: any) => (
-                <div
-                  key={request._id}
-                  className="flex flex-col sm:flex-row sm:items-center gap-4 p-4 rounded-lg border bg-card hover:bg-accent/50 transition-colors"
-                >
-                  {/* Student info */}
-                  <div className="flex items-center gap-3 flex-1 min-w-0">
-                    <Avatar className="h-10 w-10">
-                      <AvatarImage
-                        src={request.user?.avatarUrl}
-                        alt={request.user?.displayName}
-                      />
-                      <AvatarFallback className="bg-primary text-primary-foreground">
-                        {request.user?.displayName?.charAt(0) || "?"}
-                      </AvatarFallback>
-                    </Avatar>
-                    <div className="min-w-0 flex-1">
-                      <p className="font-medium truncate">
-                        {request.user?.displayName}
-                      </p>
-                      <p className="text-sm text-muted-foreground truncate">
-                        @{request.user?.username}
-                      </p>
-                    </div>
-                  </div>
+      <div>
+        <h2 className="text-lg font-semibold mb-1">Pending Presentation Requests</h2>
+        <p className="text-sm text-muted-foreground mb-4">
+          Students ready to present their book readings to the class
+        </p>
+      </div>
 
-                  {/* Book info */}
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2 mb-1">
-                      <BookOpen className="h-4 w-4 text-muted-foreground" />
-                      <p className="font-medium text-sm truncate">
-                        {request.book?.title}
-                      </p>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      {request.book?.genre && (
-                        <Badge variant="outline">{request.book.genre}</Badge>
-                      )}
-                      {request.book?.author && (
-                        <span className="text-sm text-muted-foreground">
-                          by {request.book.author}
-                        </span>
-                      )}
-                    </div>
-                  </div>
-
-                  {/* Time */}
-                  <div className="text-sm text-muted-foreground">
-                    {request.presentationRequestedAt
-                      ? formatDate(request.presentationRequestedAt)
-                      : "Unknown"}
-                  </div>
-
-                  {/* Actions */}
-                  <div className="flex items-center gap-2">
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      onClick={() => openConfirmDialog("reject", request)}
-                    >
-                      Not Yet
-                    </Button>
-                    <Button
-                      size="sm"
-                      onClick={() => openConfirmDialog("approve", request)}
-                    >
-                      <CheckCircle className="mr-1 h-4 w-4" />
-                      Approve
-                    </Button>
-                  </div>
+      {presentationRequests && presentationRequests.length > 0 ? (
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          {presentationRequests.map((request: any) => (
+            <div
+              key={request._id}
+              className="group rounded-xl border bg-card shadow-sm p-5 hover:bg-accent/40 transition-colors"
+            >
+              <div className="flex items-center gap-3 mb-3">
+                <Avatar className="h-10 w-10">
+                  <AvatarImage
+                    src={request.user?.avatarUrl}
+                    alt={request.user?.displayName}
+                  />
+                  <AvatarFallback className="bg-primary text-primary-foreground">
+                    {request.user?.displayName?.charAt(0) || "?"}
+                  </AvatarFallback>
+                </Avatar>
+                <div className="min-w-0 flex-1">
+                  <p className="font-medium truncate">
+                    {request.user?.displayName}
+                  </p>
+                  <p className="text-sm text-muted-foreground truncate">
+                    @{request.user?.username}
+                  </p>
                 </div>
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-12">
-              <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center mx-auto mb-4">
-                <CheckCircle className="h-6 w-6 text-muted-foreground" />
+                <span className="text-xs text-muted-foreground">
+                  {request.presentationRequestedAt
+                    ? formatDate(request.presentationRequestedAt)
+                    : "Unknown"}
+                </span>
               </div>
-              <p className="text-muted-foreground">No pending presentation requests</p>
-              <p className="text-sm text-muted-foreground">
-                Students will appear here when they finish reading and request to present
-              </p>
+
+              <div className="flex items-center gap-2 mb-1">
+                <BookOpen className="h-4 w-4 text-muted-foreground shrink-0" />
+                <p className="font-medium text-sm truncate">
+                  {request.book?.title}
+                </p>
+              </div>
+              {request.book?.author && (
+                <p className="text-sm text-muted-foreground mb-3 ml-6">
+                  by {request.book.author}
+                </p>
+              )}
+
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  {request.book?.genre && (
+                    <Badge variant="outline">{request.book.genre}</Badge>
+                  )}
+                </div>
+                <div className="flex items-center gap-2">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() => openConfirmDialog("reject", request)}
+                  >
+                    Not Yet
+                  </Button>
+                  <Button
+                    size="sm"
+                    onClick={() => openConfirmDialog("approve", request)}
+                  >
+                    <CheckCircle className="mr-1 h-4 w-4" />
+                    Approve
+                  </Button>
+                </div>
+              </div>
             </div>
-          )}
-        </CardContent>
-      </Card>
+          ))}
+        </div>
+      ) : (
+        <div className="text-center py-12">
+          <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center mx-auto mb-4">
+            <CheckCircle className="h-6 w-6 text-muted-foreground" />
+          </div>
+          <p className="text-muted-foreground">No pending presentation requests</p>
+          <p className="text-sm text-muted-foreground">
+            Students will appear here when they finish reading and request to present
+          </p>
+        </div>
+      )}
 
       {/* Confirmation Dialog */}
       <Dialog open={confirmDialog.isOpen} onOpenChange={(open) => !open && closeConfirmDialog()}>

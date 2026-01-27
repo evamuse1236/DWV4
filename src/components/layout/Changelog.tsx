@@ -9,6 +9,18 @@ interface ChangelogEntry {
 
 const CHANGELOG: ChangelogEntry[] = [
   {
+    date: "Jan 27",
+    title: "Vision Board",
+    description:
+      "New Vision Board page where you can visualize your goals across different life areas. Add cards for counters, habits, streaks, journal entries, and more — all saved to the cloud.",
+  },
+  {
+    date: "Jan 27",
+    title: "Queue Pages Refresh",
+    description:
+      "The Presentation Queue and Viva Queue pages got a cleaner layout with better card design and less visual clutter.",
+  },
+  {
     date: "Jan 26",
     title: "Daily Rituals Fix",
     description:

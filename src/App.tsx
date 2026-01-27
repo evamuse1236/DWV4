@@ -16,6 +16,7 @@ import { DeepWorkPage } from "./pages/student/DeepWorkPage";
 import { DomainDetailPage } from "./pages/student/DomainDetailPage";
 import { ReadingPage } from "./pages/student/ReadingPage";
 import { TrustJarPage } from "./pages/student/TrustJarPage";
+import { VisionBoardPage } from "./pages/student/VisionBoardPage";
 
 // Admin pages
 import {
@@ -71,6 +72,7 @@ function App() {
               <Route path="/deep-work/:domainId" element={<DomainDetailPage />} />
               <Route path="/reading" element={<ReadingPage />} />
               <Route path="/trust-jar" element={<TrustJarPage />} />
+              <Route path="/vision-board" element={<VisionBoardPage />} />
             </Route>
 
             {/* Admin routes */}
