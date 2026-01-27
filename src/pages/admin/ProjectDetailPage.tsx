@@ -117,30 +117,47 @@ export function ProjectDetailPage() {
       const matchesBatch =
         batchFilter === "all" || student.batch === batchFilter;
 
-      // Status filter
+      // Status filter (must match badge logic in StudentProjectCard)
       let matchesStatus = true;
-      if (statusFilter === "complete") {
-        matchesStatus = student.reflection?.isComplete === true;
-      } else if (statusFilter === "partial") {
-        matchesStatus =
-          student.reflection !== null && !student.reflection.isComplete;
-      } else if (statusFilter === "empty") {
-        matchesStatus = student.reflection === null;
+      if (statusFilter !== "all") {
+        const hasLinks = student.links.length > 0;
+        const hasPartialReflection = !!(
+          student.reflection?.didWell ||
+          student.reflection?.projectDescription ||
+          student.reflection?.couldImprove
+        );
+        const isComplete = hasLinks && student.reflection?.isComplete;
+
+        if (statusFilter === "complete") {
+          matchesStatus = !!isComplete;
+        } else if (statusFilter === "partial") {
+          matchesStatus = (hasLinks || hasPartialReflection) && !isComplete;
+        } else if (statusFilter === "empty") {
+          matchesStatus = !hasLinks && !hasPartialReflection;
+        }
       }
 
       return matchesSearch && matchesBatch && matchesStatus;
     });
   }, [studentsWithData, searchQuery, batchFilter, statusFilter]);
 
-  // Calculate stats
+  // Calculate stats (must match badge logic in StudentProjectCard)
   const stats = useMemo(() => {
     const total = studentsWithData.length;
-    const complete = studentsWithData.filter(
-      (s) => s.reflection?.isComplete
-    ).length;
-    const partial = studentsWithData.filter(
-      (s) => s.reflection && !s.reflection.isComplete
-    ).length;
+    const complete = studentsWithData.filter((s) => {
+      const hasLinks = s.links.length > 0;
+      return hasLinks && s.reflection?.isComplete;
+    }).length;
+    const partial = studentsWithData.filter((s) => {
+      const hasLinks = s.links.length > 0;
+      const hasPartialReflection = !!(
+        s.reflection?.didWell ||
+        s.reflection?.projectDescription ||
+        s.reflection?.couldImprove
+      );
+      const isComplete = hasLinks && s.reflection?.isComplete;
+      return (hasLinks || hasPartialReflection) && !isComplete;
+    }).length;
     const empty = total - complete - partial;
     return { total, complete, partial, empty };
   }, [studentsWithData]);
