@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookBuddy Chat Test Interface</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0f0f0f;
+      color: #e0e0e0;
+      min-height: 100vh;
+      padding: 32px;
+      font-size: 16px;
+    }
+    .container { max-width: 1600px; margin: 0 auto; }
+    h1 { text-align: center; margin-bottom: 12px; color: #fff; font-weight: 500; font-size: 28px; }
+    .subtitle { text-align: center; color: #666; margin-bottom: 32px; font-size: 18px; }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 420px 1fr;
+      gap: 28px;
+    }
+
+    /* Left Panel - Config */
+    .config-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .config-section {
+      background: #1a1a1a;
+      border-radius: 14px;
+      border: 1px solid #333;
+      overflow: hidden;
+    }
+
+    .config-header {
+      padding: 16px 20px;
+      border-bottom: 1px solid #333;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .config-header strong { font-size: 16px; }
+    .config-header button {
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 1px solid #444;
+      background: #222;
+      color: #ccc;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .config-header button:hover { background: #333; }
+
+    .config-content { padding: 16px 20px; }
+
+    /* Personality Toggle */
+    .personality-toggle {
+      display: flex;
+      gap: 10px;
+      padding: 16px 20px;
+    }
+    .personality-btn {
+      flex: 1;
+      padding: 14px;
+      border-radius: 10px;
+      border: 2px solid transparent;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .personality-btn.luna { background: #2a1a3a; color: #a78bfa; }
+    .personality-btn.luna.active { border-color: #7E22CE; background: #3a2a4a; }
+    .personality-btn.dash { background: #3a2a1a; color: #fb923c; }
+    .personality-btn.dash.active { border-color: #C2410C; background: #4a3a2a; }
+    .personality-btn.hagrid { background: #2a2a1a; color: #a8a29e; }
+    .personality-btn.hagrid.active { border-color: #44403C; background: #3a3a2a; }
+
+    /* JSON Editor */
+    .json-editor {
+      width: 100%;
+      min-height: 220px;
+      padding: 16px;
+      border: none;
+      background: #111;
+      color: #e0e0e0;
+      font-size: 14px;
+      line-height: 1.5;
+      font-family: 'Monaco', 'Menlo', monospace;
+      resize: vertical;
+    }
+    .json-editor:focus { outline: none; }
+
+    /* Right Panel - Chat */
+    .chat-section {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .chat-area {
+      background: #1a1a1a;
+      border-radius: 18px;
+      border: 1px solid #333;
+      overflow: hidden;
+      flex: 1;
+    }
+
+    .chat-header {
+      padding: 18px 24px;
+      border-bottom: 1px solid #333;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .chat-header-left { display: flex; align-items: center; gap: 16px; }
+    .chat-header .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+    .chat-header .icon.luna { background: linear-gradient(135deg, #7E22CE, #a855f7); }
+    .chat-header .icon.dash { background: linear-gradient(135deg, #C2410C, #f97316); }
+    .chat-header .icon.hagrid { background: linear-gradient(135deg, #44403C, #78716c); }
+
+    .chat-header .status {
+      font-size: 14px;
+      padding: 6px 14px;
+      border-radius: 14px;
+      background: #333;
+      color: #aaa;
+    }
+    .chat-header .status.thinking { background: #4a3d2d; color: #fbbf24; }
+    .chat-header .status.complete { background: #166534; color: #86efac; }
+    .chat-header .status.error { background: #7f1d1d; color: #fca5a5; }
+
+    /* Chat Messages */
+    .chat-messages {
+      height: 350px;
+      overflow-y: auto;
+      padding: 20px;
+    }
+    .message {
+      margin-bottom: 16px;
+      padding: 16px 20px;
+      border-radius: 14px;
+      max-width: 90%;
+      line-height: 1.6;
+    }
+    .message.user { background: #2a3a4a; margin-left: auto; }
+    .message.ai { background: #252525; }
+    .message pre { white-space: pre-wrap; font-family: inherit; margin: 0; font-size: 16px; }
+
+    /* Suggestions */
+    .suggestions {
+      padding: 16px 20px;
+      border-top: 1px solid #2a2a2a;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .suggestion-chip {
+      padding: 12px 18px;
+      border-radius: 20px;
+      border: 1px solid #444;
+      background: #252525;
+      color: #ccc;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    .suggestion-chip:hover { background: #333; border-color: #666; }
+    .suggestion-chip.luna:hover { border-color: #7E22CE; }
+    .suggestion-chip.dash:hover { border-color: #C2410C; }
+    .suggestion-chip.hagrid:hover { border-color: #44403C; }
+
+    /* Chat Input */
+    .chat-input {
+      border-top: 1px solid #333;
+      padding: 18px;
+      display: flex;
+      gap: 14px;
+    }
+    .chat-input input {
+      flex: 1;
+      padding: 16px 18px;
+      border-radius: 12px;
+      border: 1px solid #333;
+      background: #222;
+      color: #e0e0e0;
+      font-size: 16px;
+    }
+    .chat-input input:focus { outline: none; border-color: #4a9eff; }
+    .chat-input input:disabled { opacity: 0.5; }
+    .chat-input button {
+      padding: 0 28px;
+      border-radius: 12px;
+      border: none;
+      background: #4a9eff;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+    .chat-input button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    /* Book Cards Preview */
+    .books-preview {
+      background: #1a1a1a;
+      border-radius: 14px;
+      border: 1px solid #333;
+      overflow: hidden;
+    }
+    .books-preview-header {
+      padding: 16px 20px;
+      border-bottom: 1px solid #333;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #888;
+    }
+    .books-preview-content {
+      padding: 20px;
+      min-height: 140px;
+    }
+    .books-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+    .book-card {
+      background: #252525;
+      border-radius: 12px;
+      padding: 18px;
+      border: 1px solid #333;
+    }
+    .book-card h4 { font-size: 17px; margin-bottom: 6px; color: #fff; }
+    .book-card .author { font-size: 14px; color: #888; margin-bottom: 10px; }
+    .book-card .teaser { font-size: 15px; color: #aaa; line-height: 1.5; margin-bottom: 8px; }
+    .book-card .why { font-size: 14px; color: #666; font-style: italic; }
+    .book-card .id-badge {
+      font-size: 12px;
+      padding: 4px 10px;
+      background: #333;
+      border-radius: 6px;
+      color: #888;
+      margin-top: 10px;
+      display: inline-block;
+    }
+
+    .empty-state { color: #555; font-style: italic; font-size: 16px; }
+
+    /* Debug Log Panel */
+    .log-panel {
+      background: #0a0a0a;
+      border-radius: 14px;
+      border: 1px solid #333;
+      margin-top: 28px;
+      overflow: hidden;
+    }
+    .log-header {
+      padding: 14px 20px;
+      border-bottom: 1px solid #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .log-header strong { color: #4ade80; font-size: 14px; text-transform: uppercase; }
+    .log-header button {
+      padding: 8px 14px;
+      border-radius: 6px;
+      border: 1px solid #333;
+      background: #1a1a1a;
+      color: #888;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .log-content {
+      height: 300px;
+      overflow-y: auto;
+      padding: 16px;
+      font-family: 'Monaco', 'Menlo', monospace;
+      font-size: 14px;
+      line-height: 1.6;
+      white-space: pre-wrap;
+    }
+    .log-entry { margin-bottom: 10px; padding: 10px 12px; border-radius: 6px; }
+    .log-entry.info { background: #1a1a2a; color: #93c5fd; }
+    .log-entry.success { background: #0d1f0d; color: #86efac; }
+    .log-entry.error { background: #1f0d0d; color: #fca5a5; }
+    .log-entry.warn { background: #1f1a0d; color: #fde047; }
+    .log-entry.stage1 { background: #1a2a2a; color: #67e8f9; border-left: 4px solid #06b6d4; }
+    .log-entry.stage2 { background: #2a1a2a; color: #f0abfc; border-left: 4px solid #d946ef; }
+    .log-entry .label { color: #888; margin-right: 10px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>BookBuddy Chat Test Interface</h1>
+    <p class="subtitle">Test the two-stage AI pipeline: Kimi K2 (creative) → Llama 8B (formatter)</p>
+
+    <div class="layout">
+      <!-- Left Panel - Config -->
+      <div class="config-panel">
+        <!-- Personality Selector -->
+        <div class="config-section">
+          <div class="config-header">
+            <strong>Personality</strong>
+          </div>
+          <div class="personality-toggle">
+            <button class="personality-btn luna active" onclick="setPersonality('luna')">Luna</button>
+            <button class="personality-btn dash" onclick="setPersonality('dash')">Dash</button>
+            <button class="personality-btn hagrid" onclick="setPersonality('hagrid')">Hagrid</button>
+          </div>
+        </div>
+
+        <!-- Mock Books Editor -->
+        <div class="config-section">
+          <div class="config-header">
+            <strong>Available Books</strong>
+            <button onclick="resetBooks()">Reset</button>
+          </div>
+          <textarea class="json-editor" id="books-editor" rows="14"></textarea>
+        </div>
+
+        <!-- Reading History Editor -->
+        <div class="config-section">
+          <div class="config-header">
+            <strong>Reading History</strong>
+            <button onclick="resetHistory()">Reset</button>
+          </div>
+          <textarea class="json-editor" id="history-editor" rows="10"></textarea>
+        </div>
+      </div>
+
+      <!-- Right Panel - Chat -->
+      <div class="chat-section">
+        <div class="chat-area">
+          <div class="chat-header">
+            <div class="chat-header-left">
+              <div class="icon luna" id="personality-icon">📚</div>
+              <div>
+                <strong id="personality-name" style="font-size: 18px;">Luna</strong>
+                <div style="font-size: 14px; color: #888;">Book Buddy</div>
+              </div>
+            </div>
+            <div style="display: flex; gap: 12px; align-items: center;">
+              <button onclick="resetChat()" style="padding: 10px 16px; border-radius: 8px; border: 1px solid #444; background: #222; color: #ccc; font-size: 15px; cursor: pointer;">Clear</button>
+              <span class="status" id="status">Ready</span>
+            </div>
+          </div>
+
+          <div class="chat-messages" id="messages"></div>
+          <div class="suggestions" id="suggestions"></div>
+
+          <div class="chat-input">
+            <input type="text" id="prompt-input" placeholder="Ask for book recommendations..." onkeydown="handleKey(event)">
+            <button onclick="sendMessage()" id="send-btn">Send</button>
+          </div>
+        </div>
+
+        <!-- Book Cards Preview -->
+        <div class="books-preview">
+          <div class="books-preview-header">Book Cards Preview</div>
+          <div class="books-preview-content" id="books-preview">
+            <span class="empty-state">Book recommendations will appear here...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Debug Log Panel -->
+    <div class="log-panel">
+      <div class="log-header">
+        <strong>Debug Log (Stage 1 + Stage 2)</strong>
+        <div style="display: flex; gap: 8px;">
+          <button onclick="clearLog()">Clear</button>
+        </div>
+      </div>
+      <div class="log-content" id="log-content"></div>
+    </div>
+  </div>
+
+  <script type="module">
+    const CONVEX_URL = 'https://ardent-penguin-515.convex.cloud';
+
+    // Default mock data
+    const DEFAULT_BOOKS = [
+      { id: "book-001", title: "The Dragon's Quest", author: "Sarah Smith", genre: "Fantasy", description: "A young girl discovers she can talk to dragons and must save her kingdom" },
+      { id: "book-002", title: "Mystery at Midnight Manor", author: "James Chen", genre: "Mystery", description: "Twins solve a 100-year-old mystery in their grandmother's spooky mansion" },
+      { id: "book-003", title: "Space Pirates of Neptune", author: "Alex Rivera", genre: "Sci-Fi", description: "A crew of young space pirates discovers a hidden alien civilization" },
+      { id: "book-004", title: "The Laughing Llama", author: "Maria Garcia", genre: "Comedy", description: "A llama who tells jokes goes on a hilarious road trip adventure" },
+      { id: "book-005", title: "Soccer Stars Academy", author: "David Park", genre: "Sports", description: "Underdog team trains for the world championship against all odds" },
+      { id: "book-006", title: "The Secret Garden Club", author: "Emma Wilson", genre: "Adventure", description: "Kids discover a magical garden with plants that grant wishes" },
+      { id: "book-007", title: "Robot Best Friend", author: "Nina Patel", genre: "Sci-Fi", description: "A lonely kid builds a robot that becomes their best friend" },
+    ];
+
+    const DEFAULT_HISTORY = [
+      { title: "Harry Potter and the Sorcerer's Stone", author: "J.K. Rowling", genre: "Fantasy", rating: 5, status: "completed" },
+      { title: "Diary of a Wimpy Kid", author: "Jeff Kinney", genre: "Comedy", rating: 4, status: "completed" },
+      { title: "Percy Jackson", author: "Rick Riordan", genre: "Fantasy", rating: 5, status: "reading" },
+    ];
+
+    const DEFAULT_SUGGESTIONS = [
+      { label: "Something funny", fullText: "I want something funny" },
+      { label: "Big adventure", fullText: "Show me adventure books" },
+      { label: "Mystery", fullText: "I like mysteries" },
+      { label: "Surprise me!", fullText: "Surprise me with something good!" },
+    ];
+
+    const PERSONALITY_CONFIG = {
+      luna: { name: "Luna", color: "#7E22CE", intro: "Hello, dear reader... What kind of adventure calls to you today?" },
+      dash: { name: "Dash", color: "#C2410C", intro: "Hey!! Ready to find your next favorite book? Let's GO!" },
+      hagrid: { name: "Hagrid", color: "#44403C", intro: "Well, hello there! Lookin' fer somethin' good ter read, are yeh?" },
+    };
+
+    let currentPersonality = 'luna';
+    let conversationHistory = [];
+    let isLoading = false;
+    let currentBooks = [];
+    let currentSuggestions = DEFAULT_SUGGESTIONS;
+
+    // DOM Elements
+    const elements = {
+      messages: () => document.getElementById('messages'),
+      suggestions: () => document.getElementById('suggestions'),
+      status: () => document.getElementById('status'),
+      promptInput: () => document.getElementById('prompt-input'),
+      sendBtn: () => document.getElementById('send-btn'),
+      booksPreview: () => document.getElementById('books-preview'),
+      booksEditor: () => document.getElementById('books-editor'),
+      historyEditor: () => document.getElementById('history-editor'),
+      personalityIcon: () => document.getElementById('personality-icon'),
+      personalityName: () => document.getElementById('personality-name'),
+      logContent: () => document.getElementById('log-content'),
+    };
+
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    function log(message, type = 'info', data) {
+      const logContent = elements.logContent();
+      const entry = document.createElement('div');
+      entry.className = 'log-entry ' + type;
+
+      const timestamp = new Date().toLocaleTimeString();
+      let content = '<span class="label">[' + timestamp + ']</span> ' + escapeHtml(message);
+
+      if (data !== undefined) {
+        content += typeof data === 'object'
+          ? '\n' + escapeHtml(JSON.stringify(data, null, 2))
+          : ' ' + escapeHtml(String(data));
+      }
+
+      entry.innerHTML = content;
+      logContent.appendChild(entry);
+      logContent.scrollTop = logContent.scrollHeight;
+      console.log('[' + type.toUpperCase() + ']', message, data !== undefined ? data : '');
+    }
+
+    function clearLog() {
+      elements.logContent().innerHTML = '';
+      log('Log cleared');
+    }
+    window.clearLog = clearLog;
+
+    function setStatus(text, type = '') {
+      const statusEl = elements.status();
+      statusEl.textContent = text;
+      statusEl.className = 'status' + (type ? ' ' + type : '');
+    }
+
+    function setLoading(loading) {
+      isLoading = loading;
+      elements.promptInput().disabled = loading;
+      elements.sendBtn().disabled = loading;
+      if (loading) setStatus('Thinking...', 'thinking');
+    }
+
+    // Personality Management
+    function setPersonality(p) {
+      currentPersonality = p;
+      const config = PERSONALITY_CONFIG[p];
+
+      // Update UI
+      document.querySelectorAll('.personality-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.classList.contains(p));
+      });
+
+      const icon = elements.personalityIcon();
+      icon.className = 'icon ' + p;
+      elements.personalityName().textContent = config.name;
+
+      // Update suggestions styling
+      renderSuggestions(currentSuggestions);
+
+      log('Personality changed to: ' + config.name);
+    }
+    window.setPersonality = setPersonality;
+
+    // Parse buddy-response JSON
+    function parseBuddyResponse(content) {
+      const patterns = [
+        /```buddy-response\s*([\s\S]*?)\s*```/,
+        /```buddy-response\n([\s\S]*?)\n```/,
+        /```buddy-response([\s\S]*?)```/,
+      ];
+
+      for (const pattern of patterns) {
+        const match = content.match(pattern);
+        if (match) {
+          try {
+            const jsonStr = match[1].trim();
+            return JSON.parse(jsonStr);
+          } catch (e) {
+            log('Parse failed with pattern, trying next...', 'warn');
+          }
+        }
+      }
+
+      // Fallback: try to find any JSON object with "message"
+      const jsonMatch = content.match(/\{[\s\S]*"message"[\s\S]*\}/);
+      if (jsonMatch) {
+        try {
+          return JSON.parse(jsonMatch[0]);
+        } catch {
+          log('Failed to parse extracted JSON object', 'warn');
+        }
+      }
+
+      return null;
+    }
+
+    // Render Functions
+    function renderMessages() {
+      const container = elements.messages();
+      container.innerHTML = conversationHistory.map(msg => {
+        return '<div class="message ' + msg.role + '"><pre>' + escapeHtml(msg.text) + '</pre></div>';
+      }).join('');
+      container.scrollTop = container.scrollHeight;
+    }
+
+    function renderSuggestions(suggestions) {
+      const container = elements.suggestions();
+      if (!container) return;
+      container.innerHTML = '';
+
+      suggestions.forEach(s => {
+        const btn = document.createElement('button');
+        btn.className = 'suggestion-chip ' + currentPersonality;
+        btn.textContent = s.label;
+        btn.addEventListener('click', () => sendMessage(s.fullText));
+        container.appendChild(btn);
+      });
+    }
+
+    function renderBookCards(books) {
+      const container = elements.booksPreview();
+      if (!books || books.length === 0) {
+        container.innerHTML = '<span class="empty-state">Book recommendations will appear here...</span>';
+        return;
+      }
+
+      const cardsHtml = books.map(book => `
+        <div class="book-card">
+          <h4>${escapeHtml(book.title)}</h4>
+          <div class="author">${escapeHtml(book.author)}</div>
+          <div class="teaser">${escapeHtml(book.teaser || '')}</div>
+          ${book.whyYoullLikeIt ? `<div class="why">${escapeHtml(book.whyYoullLikeIt)}</div>` : ''}
+          <div class="id-badge">ID: ${escapeHtml(book.id)}</div>
+        </div>
+      `).join('');
+
+      container.innerHTML = '<div class="books-grid">' + cardsHtml + '</div>';
+    }
+
+    // API Call
+    async function callLibraryChat(messages, personality, readingHistory, availableBooks) {
+      log('=====================================');
+      log('Calling ai:libraryChat');
+      log('Personality: ' + personality);
+      log('Messages: ' + messages.length);
+      log('Available Books: ' + availableBooks.length);
+      log('Reading History: ' + readingHistory.length);
+
+      const response = await fetch(CONVEX_URL + '/api/action', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          path: 'ai:libraryChat',
+          args: { messages, personality, readingHistory, availableBooks },
+          format: 'json'
+        })
+      });
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        log('API Error: ' + errorText, 'error');
+        throw new Error('Convex error (' + response.status + '): ' + errorText);
+      }
+
+      const data = await response.json();
+
+      if (data.status === 'error') {
+        log('API returned error: ' + data.errorMessage, 'error');
+        throw new Error(data.errorMessage || 'Unknown error');
+      }
+
+      log('API Success - Provider: ' + data.value.provider, 'success');
+      return data.value;
+    }
+
+    // Send Message
+    async function sendMessage(text) {
+      const messageText = text || elements.promptInput().value.trim();
+      if (!messageText || isLoading) return;
+
+      elements.promptInput().value = '';
+      log('USER: ' + messageText);
+
+      conversationHistory.push({ role: 'user', text: messageText });
+      renderMessages();
+
+      setLoading(true);
+      renderSuggestions([]);
+
+      try {
+        // Get mock data from editors
+        let availableBooks, readingHistory;
+        try {
+          availableBooks = JSON.parse(elements.booksEditor().value);
+        } catch {
+          log('Invalid books JSON, using defaults', 'warn');
+          availableBooks = DEFAULT_BOOKS;
+        }
+        try {
+          readingHistory = JSON.parse(elements.historyEditor().value);
+        } catch {
+          log('Invalid history JSON, using defaults', 'warn');
+          readingHistory = DEFAULT_HISTORY;
+        }
+
+        // Call API
+        const response = await callLibraryChat(
+          [{ role: 'user', content: messageText }],
+          currentPersonality,
+          readingHistory,
+          availableBooks
+        );
+
+        // Log raw response
+        log('=== STAGE 1 + 2 OUTPUT ===', 'stage1');
+        log('Raw response content:', 'stage2', response.content.substring(0, 500) + (response.content.length > 500 ? '...' : ''));
+
+        // Parse response
+        const parsed = parseBuddyResponse(response.content);
+
+        if (parsed) {
+          log('Parsed successfully!', 'success');
+          log('Message: ' + (parsed.message || '').substring(0, 100), 'success');
+          log('Books: ' + (parsed.books?.length || 0), 'success');
+          log('Suggestions: ' + (parsed.suggestedReplies?.length || 0), 'success');
+
+          // Update UI
+          conversationHistory.push({ role: 'ai', text: parsed.message || response.content });
+          currentBooks = parsed.books || [];
+          currentSuggestions = parsed.suggestedReplies?.length > 0 ? parsed.suggestedReplies : DEFAULT_SUGGESTIONS;
+
+          renderMessages();
+          renderBookCards(currentBooks);
+          renderSuggestions(currentSuggestions);
+          setStatus('Complete', 'complete');
+        } else {
+          log('Failed to parse buddy-response JSON', 'error');
+          log('Raw content: ' + response.content.substring(0, 300), 'warn');
+
+          conversationHistory.push({ role: 'ai', text: response.content });
+          renderMessages();
+          renderSuggestions(DEFAULT_SUGGESTIONS);
+          setStatus('Parse Error', 'error');
+        }
+
+      } catch (error) {
+        log('ERROR: ' + error.message, 'error');
+        conversationHistory.push({ role: 'ai', text: 'Error: ' + error.message });
+        renderMessages();
+        setStatus('Error', 'error');
+        renderSuggestions(DEFAULT_SUGGESTIONS);
+      }
+
+      setLoading(false);
+    }
+    window.sendMessage = sendMessage;
+
+    function handleKey(event) {
+      if (event.key === 'Enter' && !event.shiftKey) {
+        event.preventDefault();
+        sendMessage();
+      }
+    }
+    window.handleKey = handleKey;
+
+    function resetChat() {
+      conversationHistory = [];
+      currentBooks = [];
+      currentSuggestions = DEFAULT_SUGGESTIONS;
+
+      const config = PERSONALITY_CONFIG[currentPersonality];
+      conversationHistory.push({ role: 'ai', text: config.intro });
+
+      renderMessages();
+      renderBookCards([]);
+      renderSuggestions(DEFAULT_SUGGESTIONS);
+      setStatus('Ready', '');
+      log('Chat reset');
+    }
+    window.resetChat = resetChat;
+
+    function resetBooks() {
+      elements.booksEditor().value = JSON.stringify(DEFAULT_BOOKS, null, 2);
+      log('Books reset to defaults');
+    }
+    window.resetBooks = resetBooks;
+
+    function resetHistory() {
+      elements.historyEditor().value = JSON.stringify(DEFAULT_HISTORY, null, 2);
+      log('Reading history reset to defaults');
+    }
+    window.resetHistory = resetHistory;
+
+    // Initialize
+    elements.booksEditor().value = JSON.stringify(DEFAULT_BOOKS, null, 2);
+    elements.historyEditor().value = JSON.stringify(DEFAULT_HISTORY, null, 2);
+    resetChat();
+    log('BookBuddy Test Interface initialized');
+    log('Convex URL: ' + CONVEX_URL);
+  </script>
+</body>
+</html>

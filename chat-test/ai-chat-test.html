@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Prompt Test Interface</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0f0f0f;
+      color: #e0e0e0;
+      min-height: 100vh;
+      padding: 24px;
+    }
+    .container { max-width: 1200px; margin: 0 auto; }
+    h1 { text-align: center; margin-bottom: 8px; color: #fff; font-weight: 500; }
+    .subtitle { text-align: center; color: #666; margin-bottom: 24px; font-size: 14px; }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .prompt-editor {
+      background: #1a1a1a; border-radius: 16px; border: 1px solid #333;
+      overflow: hidden;
+    }
+    .prompt-header {
+      padding: 14px 20px; border-bottom: 1px solid #333;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .prompt-header strong { color: #a78bfa; }
+    .prompt-header button {
+      padding: 6px 12px; border-radius: 6px; border: 1px solid #444;
+      background: #222; color: #ccc; font-size: 12px; cursor: pointer;
+    }
+    .prompt-header button:hover { background: #333; }
+    .prompt-header button.active { background: #4a9eff; border-color: #4a9eff; color: #fff; }
+    .prompt-textarea {
+      width: 100%; height: 500px; padding: 16px; border: none;
+      background: #111; color: #e0e0e0; font-size: 13px; line-height: 1.5;
+      font-family: 'Monaco', 'Menlo', monospace; resize: none;
+    }
+    .prompt-textarea:focus { outline: none; }
+
+    .chat-section {
+      display: flex; flex-direction: column; gap: 16px;
+    }
+
+    .chat-area {
+      background: #1a1a1a; border-radius: 16px; border: 1px solid #333;
+      overflow: hidden; flex: 1;
+    }
+    .chat-header {
+      padding: 14px 20px; border-bottom: 1px solid #333;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .chat-header-left { display: flex; align-items: center; gap: 12px; }
+    .chat-header .icon {
+      width: 36px; height: 36px; border-radius: 10px;
+      display: flex; align-items: center; justify-content: center; font-size: 18px;
+      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    }
+    .chat-header .status {
+      font-size: 12px; padding: 4px 10px; border-radius: 12px; background: #333; color: #aaa;
+    }
+    .chat-header .status.thinking { background: #4a3d2d; color: #fbbf24; }
+    .chat-header .status.complete { background: #166534; color: #86efac; }
+    .chat-header .status.error { background: #7f1d1d; color: #fca5a5; }
+
+    .chat-messages { height: 280px; overflow-y: auto; padding: 16px; }
+    .message {
+      margin-bottom: 12px; padding: 12px 16px; border-radius: 12px;
+      max-width: 90%; line-height: 1.5;
+    }
+    .message.user { background: #2a3a4a; margin-left: auto; }
+    .message.ai { background: #252525; }
+    .message pre { white-space: pre-wrap; font-family: inherit; margin: 0; }
+
+    .suggestions {
+      padding: 12px 16px; border-top: 1px solid #2a2a2a;
+      display: flex; flex-wrap: wrap; gap: 8px;
+    }
+    .suggestion-chip {
+      padding: 8px 14px; border-radius: 16px; border: 1px solid #444;
+      background: #252525; color: #ccc; font-size: 13px; cursor: pointer;
+    }
+    .suggestion-chip:hover { background: #333; border-color: #666; }
+
+    .chat-input {
+      border-top: 1px solid #333; padding: 14px; display: flex; gap: 10px;
+    }
+    .input-wrapper {
+      flex: 1; position: relative; background: #222; border-radius: 10px;
+    }
+    .chat-input textarea {
+      width: 100%; padding: 12px 14px; border-radius: 10px; border: 1px solid #333;
+      background: transparent; color: #e0e0e0; font-size: 14px; resize: none;
+      font-family: inherit; height: 46px; box-sizing: border-box;
+      position: relative; z-index: 2;
+    }
+    .chat-input textarea:focus { outline: none; border-color: #4a9eff; }
+    .chat-input textarea:disabled { opacity: 0.5; }
+    .autocomplete-ghost {
+      position: absolute; top: 0; left: 0; right: 0; z-index: 1;
+      padding: 12px 14px; font-size: 14px; font-family: inherit;
+      pointer-events: none; white-space: pre;
+      overflow: hidden; height: 46px; line-height: 22px; border-radius: 10px;
+    }
+    .autocomplete-ghost .typed { color: transparent; }
+    .autocomplete-ghost .completion { color: #666; }
+    .chat-input button {
+      padding: 0 20px; border-radius: 10px; border: none;
+      background: #4a9eff; color: #fff; font-size: 14px; cursor: pointer; font-weight: 500;
+    }
+    .chat-input button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    .output-panel {
+      background: #1a1a1a; border-radius: 12px; border: 1px solid #333; overflow: hidden;
+    }
+    .output-header {
+      padding: 12px 16px; border-bottom: 1px solid #333;
+      font-size: 12px; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.5px; color: #888;
+    }
+    .output-content { padding: 16px; min-height: 120px; font-size: 13px; line-height: 1.6; }
+
+    .goal-card {
+      background: linear-gradient(135deg, #1e1e2e, #252535);
+      border-radius: 12px; padding: 16px; border: 1px solid #3b3b5c;
+    }
+    .goal-card h3 {
+      color: #a78bfa; margin-bottom: 12px; font-size: 16px; font-weight: 600;
+    }
+    .goal-field {
+      margin-bottom: 8px; padding: 8px 12px; background: #1a1a2a; border-radius: 6px;
+    }
+    .goal-field .label { color: #888; font-size: 10px; text-transform: uppercase; margin-bottom: 2px; }
+    .goal-field .value { color: #e0e0e0; font-size: 13px; }
+
+    .task-list { margin-top: 12px; }
+    .task-item {
+      padding: 6px 10px; background: #1a2a1a; border-radius: 4px;
+      margin-bottom: 4px; font-size: 12px; color: #86efac;
+      border-left: 2px solid #4ade80;
+    }
+
+    .empty-state { color: #555; font-style: italic; }
+
+    .log-panel {
+      background: #0a0a0a; border-radius: 12px; border: 1px solid #333;
+      margin-top: 20px; overflow: hidden;
+    }
+    .log-header {
+      padding: 10px 16px; border-bottom: 1px solid #333;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .log-header strong { color: #4ade80; font-size: 12px; text-transform: uppercase; }
+    .log-header button {
+      padding: 4px 10px; border-radius: 4px; border: 1px solid #333;
+      background: #1a1a1a; color: #888; font-size: 11px; cursor: pointer;
+    }
+    .log-content {
+      height: 200px; overflow-y: auto; padding: 12px; font-family: 'Monaco', 'Menlo', monospace;
+      font-size: 11px; line-height: 1.6; white-space: pre-wrap;
+    }
+    .log-entry { margin-bottom: 8px; padding: 6px 8px; border-radius: 4px; }
+    .log-entry.info { background: #1a1a2a; color: #93c5fd; }
+    .log-entry.success { background: #0d1f0d; color: #86efac; }
+    .log-entry.error { background: #1f0d0d; color: #fca5a5; }
+    .log-entry.warn { background: #1f1a0d; color: #fde047; }
+    .log-entry .label { color: #888; margin-right: 8px; }
+
+    .provider-badge {
+      font-size: 10px; padding: 2px 6px; border-radius: 4px;
+      background: #333; color: #888; margin-left: 8px;
+    }
+
+    .temp-control {
+      display: flex; align-items: center; gap: 8px; margin-top: 8px;
+      padding: 8px 16px; background: #151515; border-radius: 8px;
+    }
+    .temp-control label { font-size: 12px; color: #888; }
+    .temp-control input[type="range"] { flex: 1; }
+    .temp-control span { font-size: 12px; color: #a78bfa; min-width: 30px; }
+
+    .model-control {
+      display: flex; align-items: center; gap: 8px; margin-top: 8px;
+      padding: 8px 16px; background: #151515; border-radius: 8px;
+    }
+    .model-control label { font-size: 12px; color: #888; }
+    .model-control select {
+      flex: 1; padding: 6px 10px; border-radius: 6px; border: 1px solid #333;
+      background: #222; color: #e0e0e0; font-size: 12px;
+    }
+    .model-control select:focus { outline: none; border-color: #4a9eff; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>AI Prompt Test Interface</h1>
+    <p class="subtitle">Edit the prompt on the left, test it on the right. Uses real AI backend.</p>
+
+    <div class="layout">
+      <div class="prompt-editor">
+        <div class="prompt-header">
+          <strong>System Prompt</strong>
+          <div style="display: flex; gap: 8px;">
+            <button onclick="resetPrompt()">Reset</button>
+            <button onclick="copyPrompt()">Copy</button>
+          </div>
+        </div>
+        <textarea class="prompt-textarea" id="system-prompt"></textarea>
+        <div class="model-control">
+          <label>Model:</label>
+          <select id="model-select">
+            <option value="llama-3.1-8b-instant" selected>Llama 3.1 8B (fast)</option>
+            <option value="moonshotai/kimi-k2-instruct">Kimi K2 (smart)</option>
+            <option value="llama-3.3-70b-versatile">Llama 3.3 70B (balanced)</option>
+          </select>
+        </div>
+        <div class="temp-control">
+          <label>Temperature:</label>
+          <input type="range" min="0" max="100" value="60" id="temp-slider" oninput="updateTempDisplay()">
+          <span id="temp-display">0.6</span>
+        </div>
+      </div>
+
+      <div class="chat-section">
+        <div class="chat-area">
+          <div class="chat-header">
+            <div class="chat-header-left">
+              <div class="icon">*</div>
+              <div>
+                <strong>Test Chat</strong>
+                <div style="font-size: 12px; color: #888;">Simple goal framework</div>
+              </div>
+            </div>
+            <div style="display: flex; gap: 8px; align-items: center;">
+              <button onclick="resetChat()" style="padding: 6px 12px; border-radius: 6px; border: 1px solid #444; background: #222; color: #ccc; font-size: 12px; cursor: pointer;">Clear</button>
+              <span class="status" id="status">Ready</span>
+            </div>
+          </div>
+
+          <div class="chat-messages" id="messages"></div>
+          <div class="suggestions" id="suggestions"></div>
+
+          <div class="chat-input">
+            <div class="input-wrapper">
+              <textarea id="prompt-input" placeholder="Test a goal..." onkeydown="handleKey(event)" oninput="updateAutocomplete()"></textarea>
+              <div class="autocomplete-ghost" id="autocomplete-ghost"></div>
+            </div>
+            <button onclick="sendMessage()" id="send-btn">Send</button>
+          </div>
+        </div>
+
+        <div class="output-panel">
+          <div class="output-header">Parsed Output</div>
+          <div class="output-content" id="output-preview">
+            <span class="empty-state">AI structured output will appear here...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="log-panel">
+      <div class="log-header">
+        <strong>Debug Log</strong>
+        <div style="display: flex; gap: 8px;">
+          <button onclick="runTests()" style="background: #2a4a2a; border-color: #4a8a4a;">Run Tests</button>
+          <button onclick="clearLog()">Clear</button>
+        </div>
+      </div>
+      <div class="log-content" id="log-content"></div>
+    </div>
+  </div>
+
+  <script type="module">
+    const CONVEX_URL = 'https://ardent-penguin-515.convex.cloud';
+
+    const DEFAULT_PROMPT = `You help kids set goals. Extract the SPECIFIC activity from what they say.
+
+RULES:
+- Return ONLY 1-4 words (the activity itself)
+- If vague ("something", "stuff", "things"), ask what specifically
+- No quotes, no explanation - just the activity or a question
+
+GOOD:
+"watch anime" → watch anime
+"practice piano" → piano practice
+"read books" → reading
+"get better at math" → studying math
+
+ASK (too vague):
+"watch something" → What do you want to watch?
+"do stuff" → What kind of stuff?
+"work on things" → What things?`;
+
+    let conversationHistory = [];
+    let apiMessages = [];
+    let isLoading = false;
+    let parsedGoal = null;
+    let pendingGoal = null;
+
+    const SUGGESTIONS = {
+      initial: [
+        "eat breakfast every morning for 30 mins",
+        "practice piano",
+        "read every night",
+        "exercise 3 times a week for 1 hour",
+        "study math after school"
+      ],
+      confirmation: ["Yes, looks good!", "No, change the days", "Make it fewer days", "Add more days"],
+      duration: ["15 minutes", "30 minutes", "45 minutes", "1 hour"],
+      schedule: ["every day", "every morning", "3 times a week", "on weekends", "after school"]
+    };
+
+    const AUTOCOMPLETE_WORDS = [
+      'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday',
+      'minutes', 'minute', 'hours', 'hour',
+      'every', 'morning', 'evening', 'afternoon', 'night', 'daily', 'weekly',
+      'weekdays', 'weekends', 'after', 'before', 'school', 'times',
+      'practice', 'exercise', 'study', 'read', 'watch', 'play', 'learn',
+      'yes', 'yeah', 'sure', 'okay', 'no', 'nope',
+    ];
+
+    let currentCompletion = '';
+
+    const elements = {
+      messages: () => document.getElementById('messages'),
+      suggestions: () => document.getElementById('suggestions'),
+      status: () => document.getElementById('status'),
+      promptInput: () => document.getElementById('prompt-input'),
+      autocompleteGhost: () => document.getElementById('autocomplete-ghost'),
+      sendBtn: () => document.getElementById('send-btn'),
+      preview: () => document.getElementById('output-preview'),
+      systemPrompt: () => document.getElementById('system-prompt'),
+      tempSlider: () => document.getElementById('temp-slider'),
+      tempDisplay: () => document.getElementById('temp-display'),
+      modelSelect: () => document.getElementById('model-select')
+    };
+
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    function getAutocomplete(text) {
+      if (!text) return '';
+      const words = text.split(/\s+/);
+      const lastWord = words[words.length - 1].toLowerCase();
+      if (lastWord.length < 2) return '';
+
+      for (const word of AUTOCOMPLETE_WORDS) {
+        if (word.startsWith(lastWord) && word !== lastWord) {
+          return word.slice(lastWord.length);
+        }
+      }
+      return '';
+    }
+
+    function updateAutocomplete() {
+      const input = elements.promptInput();
+      const ghost = elements.autocompleteGhost();
+      const text = input.value;
+
+      currentCompletion = getAutocomplete(text);
+
+      if (currentCompletion) {
+        ghost.innerHTML = '<span class="typed">' + escapeHtml(text) + '</span><span class="completion">' + escapeHtml(currentCompletion) + '</span>';
+      } else {
+        ghost.innerHTML = '';
+      }
+    }
+
+    function acceptAutocomplete() {
+      if (!currentCompletion) return false;
+      const input = elements.promptInput();
+      input.value += currentCompletion;
+      currentCompletion = '';
+      elements.autocompleteGhost().innerHTML = '';
+      return true;
+    }
+
+    function normalizeInput(text) {
+      return text
+        .replace(/\bevr?e?y\b/gi, 'every')
+        .replace(/\bdaiy\b/gi, 'daily')
+        .replace(/\b(mornign|moning|morining|mornig|mornng)\b/gi, 'morning')
+        .replace(/\bnite\b/gi, 'night')
+        .replace(/\bwek\b/gi, 'week')
+        .replace(/\btims?\b/gi, 'times')
+        .replace(/\b(\d+)\s*(?:minits?|minuts?|minz?|mins?|m)\b/gi, '$1 minutes')
+        .replace(/\b(\d+)\s*(?:hours?|hrs?|hor|h)\b/gi, '$1 hours')
+        .replace(/\bhalf\s+(?:an\s+)?hour\b/gi, '30 minutes')
+        .replace(/\ban\s+hour\b/gi, '1 hour')
+        .replace(/\b(\d+)x\/wk\b/gi, '$1 times a week')
+        .replace(/\b(\d+)x\s*\/\s*week\b/gi, '$1 times a week');
+    }
+
+    function removeFiller(text) {
+      return text
+        .replace(/\b(h+m+|u+m+|u+h+|e+r+|a+h+)\b/gi, '')
+        .replace(/\b(was thinking of|thinking of|working on|getting better at|get better at|improve my|improve at)\b/gi, '')
+        .replace(/\b(hey|hi|hello|okay|ok|like|so|basically|really|just|actually|i guess|i think|i want to|i need to|i'd like to|try to|maybe|probably|perhaps|around|about|approximately|or so|or something|single)\b/gi, '')
+        .replace(/\s+/g, ' ')
+        .trim();
+    }
+
+    const DURATION_PATTERNS = [
+      /for\s+(\d+)\s*(minutes?|hours?)/i,
+      /(\d+)\s*(minutes?|hours?)\s*(?:each|per|a)?\s*(?:time|day|session)?/i,
+      /(\d+)\s*(minutes?|hours?)$/i,
+      /(\d+)\s*(minutes?|hours?)/i,
+    ];
+
+    const SCHEDULE_PATTERNS = [
+      { pattern: /every\s+(morning|night|evening|afternoon|day)/i, extract: m => `every ${m[1]}` },
+      { pattern: /every\s*day/i, extract: () => 'every day' },
+      { pattern: /daily/i, extract: () => 'every day' },
+      { pattern: /(\d+)\s*(?:times?|x)\s*(?:a|per)\s*week/i, extract: m => `${m[1]}x per week` },
+      { pattern: /(?:on\s+)?(weekends?)/i, extract: m => `on ${m[1]}` },
+      { pattern: /(?:on\s+)?(weekdays?)/i, extract: m => `on ${m[1]}` },
+      { pattern: /(?:on\s+)?(mon(?:day)?s?|tue(?:sday)?s?|wed(?:nesday)?s?|thu(?:rsday)?s?|fri(?:day)?s?|sat(?:urday)?s?|sun(?:day)?s?)/i, extract: m => `on ${m[1]}` },
+      { pattern: /after\s+(school|work|dinner|lunch|breakfast)/i, extract: m => `after ${m[1]}` },
+      { pattern: /before\s+(school|work|dinner|lunch|breakfast|bed)/i, extract: m => `before ${m[1]}` },
+      { pattern: /in\s+the\s+(morning|evening|afternoon)/i, extract: m => `in the ${m[1]}` },
+      { pattern: /at\s+(\d{1,2}(?::\d{2})?\s*(?:am|pm)?)/i, extract: m => `at ${m[1]}` },
+    ];
+
+    function parseGoalInput(text) {
+      const normalized = normalizeInput(text.toLowerCase().trim());
+      const cleaned = removeFiller(normalized);
+      const input = cleaned;
+      const result = { what: null, when: null, howLong: null, confidence: 0 };
+
+      for (const pat of DURATION_PATTERNS) {
+        const match = input.match(pat);
+        if (match) {
+          const num = match[1];
+          const unit = match[2].startsWith('h') ? 'hour' : 'minute';
+          result.howLong = `${num} ${unit}${num !== '1' ? 's' : ''}`;
+          result.confidence++;
+          break;
+        }
+      }
+
+      for (const { pattern, extract } of SCHEDULE_PATTERNS) {
+        const match = input.match(pattern);
+        if (match) {
+          result.when = extract(match);
+          result.confidence++;
+          break;
+        }
+      }
+
+      let activity = input
+        .replace(/for\s+\d+\s*(?:minutes?|hours?)/gi, '')
+        .replace(/\d+\s*(?:minutes?|hours?)\s*(?:each|per|a)?\s*(?:time|day|session)?/gi, '')
+        .replace(/every\s+(?:morning|night|evening|afternoon|day)/gi, '')
+        .replace(/every\s*day/gi, '')
+        .replace(/daily/gi, '')
+        .replace(/\d+\s*(?:times?|x)\s*(?:a|per)\s*week/gi, '')
+        .replace(/(?:on\s+)?(?:weekends?|weekdays?)/gi, '')
+        .replace(/(?:on\s+)?(?:mon(?:day)?s?|tue(?:sday)?s?|wed(?:nesday)?s?|thu(?:rsday)?s?|fri(?:day)?s?|sat(?:urday)?s?|sun(?:day)?s?)/gi, '')
+        .replace(/(?:after|before)\s+(?:school|work|dinner|lunch|breakfast|bed)/gi, '')
+        .replace(/in\s+the\s+(?:morning|evening|afternoon)/gi, '')
+        .replace(/at\s+\d{1,2}(?::\d{2})?\s*(?:am|pm)?/gi, '')
+        .replace(/\s+/g, ' ')
+        .trim();
+
+      if (activity.length > 2 && /[a-z]/i.test(activity)) {
+        result.what = activity;
+        result.confidence++;
+      }
+
+      return result;
+    }
+
+    function formatDuration(num, unit) {
+      const unitName = unit.startsWith('h') ? 'hour' : 'minute';
+      return `${num} ${unitName}${num !== '1' ? 's' : ''}`;
+    }
+
+    function parseDuration(text) {
+      const normalized = normalizeInput(text.toLowerCase().trim());
+      const cleaned = removeFiller(normalized);
+      const input = cleaned || normalized;
+
+      if (/half\s+(?:an?\s+)?hour/i.test(input)) return '30 minutes';
+      if (/^an?\s+hour$/i.test(input)) return '1 hour';
+
+      const match = input.match(/(\d+)\s*(minutes?|mins?|hours?|hrs?)/i);
+      if (match) {
+        return formatDuration(match[1], match[2]);
+      }
+      return null;
+    }
+
+    function parseSchedule(text) {
+      const normalized = normalizeInput(text.toLowerCase().trim());
+      const cleaned = removeFiller(normalized);
+      const input = cleaned || normalized;
+
+      const dayPattern = /\b(mon|tues?|tue|wed(?:nes)?|thur?s?|fri|sat(?:ur)?|sun)(day)?s?\b/gi;
+      const dayMatches = input.match(dayPattern);
+      if (dayMatches && dayMatches.length > 0) {
+        const dayMap = { mon: 'mon', tue: 'tue', wed: 'wed', thu: 'thu', fri: 'fri', sat: 'sat', sun: 'sun' };
+        const days = dayMatches.map(d => {
+          const lower = d.toLowerCase();
+          for (const [prefix, short] of Object.entries(dayMap)) {
+            if (lower.startsWith(prefix)) return short;
+          }
+          return lower.slice(0, 3);
+        });
+        const uniqueDays = [...new Set(days)];
+        const timeOfDay = input.match(/\b(morning|evening|afternoon|night)\b/i);
+        const suffix = timeOfDay ? ` ${timeOfDay[1]}s` : '';
+        return `on ${uniqueDays.join(', ')}${suffix}`;
+      }
+
+      const patterns = [
+        { pattern: /every\s+(morning|night|evening|afternoon|day)/i, extract: m => `every ${m[1]}` },
+        { pattern: /\b(mornings?|evenings?|afternoons?|nights?)\b/i, extract: m => `every ${m[1].replace(/s$/, '')}` },
+        { pattern: /every\s*day/i, extract: () => 'every day' },
+        { pattern: /daily/i, extract: () => 'every day' },
+        { pattern: /(\d+)\s*(?:times?|x)\s*(?:a|per)\s*week/i, extract: m => `${m[1]}x per week` },
+        { pattern: /(?:on\s+)?(weekends?)/i, extract: m => `on ${m[1]}` },
+        { pattern: /(?:on\s+)?(weekdays?)/i, extract: m => `on ${m[1]}` },
+        { pattern: /after\s+(school|work|dinner|lunch|breakfast)/i, extract: m => `after ${m[1]}` },
+        { pattern: /before\s+(school|work|dinner|lunch|breakfast|bed)/i, extract: m => `before ${m[1]}` },
+        { pattern: /in\s+the\s+(morning|evening|afternoon)/i, extract: m => `in the ${m[1]}` },
+        { pattern: /at\s+(\d{1,2}(?::\d{2})?\s*(?:am|pm)?)/i, extract: m => `at ${m[1]}` },
+      ];
+
+      for (const { pattern, extract } of patterns) {
+        const match = input.match(pattern);
+        if (match) return extract(match);
+      }
+      return null;
+    }
+
+    function generateTitle(what) {
+      if (!what) return 'New Goal';
+      const text = what.toLowerCase().trim();
+
+      const verbMap = {
+        watch: 'Watching', play: 'Playing', practice: 'Practice',
+        study: 'Study', learn: 'Learning', read: 'Reading', write: 'Writing',
+        draw: 'Drawing', paint: 'Painting', cook: 'Cooking', bake: 'Baking',
+        make: 'Making', build: 'Building', create: 'Creating'
+      };
+
+      const mealMap = { breakfast: 'Morning Breakfast', lunch: 'Lunch Time', dinner: 'Evening Dinner' };
+      const activityMap = {
+        exercise: 'Daily Exercise', workout: 'Workout', run: 'Running', jog: 'Jogging',
+        walk: 'Walking', swim: 'Swimming', yoga: 'Yoga', meditate: 'Meditation'
+      };
+
+      const verbMatch = text.match(/^(watch|play|practice|study|learn|read|write|draw|paint|cook|bake|make|build|create)\s+(.+)$/i);
+      if (verbMatch) {
+        const noun = verbMatch[2].split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+        return `${noun} ${verbMap[verbMatch[1].toLowerCase()] || ''}`.trim();
+      }
+
+      const mealMatch = text.match(/^eat\s+(breakfast|lunch|dinner)$/i);
+      if (mealMatch) return mealMap[mealMatch[1].toLowerCase()];
+
+      const actMatch = text.match(/^(exercise|workout|run|jog|walk|swim|yoga|meditate)$/i);
+      if (actMatch) return activityMap[actMatch[1].toLowerCase()];
+
+      const taskMatch = text.match(/^do\s+(my\s+)?(homework|chores)$/i);
+      if (taskMatch) return taskMatch[2].charAt(0).toUpperCase() + taskMatch[2].slice(1);
+
+      return text.split(' ').slice(0, 3).map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    }
+
+    function generateTasks(what, when) {
+      const tasks = [];
+      const days = { sun: 0, mon: 1, tue: 2, wed: 3, thu: 4, fri: 5, sat: 6 };
+      const whenLower = (when || '').toLowerCase();
+
+      let selectedDays = [];
+      if (whenLower.includes('every day') || whenLower.includes('daily')) {
+        selectedDays = [0, 1, 2, 3, 4, 5, 6];
+      } else if (whenLower.includes('weekday')) {
+        selectedDays = [1, 2, 3, 4, 5];
+      } else if (whenLower.includes('weekend')) {
+        selectedDays = [0, 6];
+      } else if (/(\d+)x?\s*per\s*week/.test(whenLower)) {
+        const times = parseInt(whenLower.match(/(\d+)/)[1]);
+        selectedDays = [1, 3, 5].slice(0, times);
+      } else {
+        for (const [day, num] of Object.entries(days)) {
+          if (whenLower.includes(day)) selectedDays.push(num);
+        }
+        if (selectedDays.length === 0) selectedDays = [1, 3, 5];
+      }
+
+      for (const week of [1, 2]) {
+        for (const day of selectedDays) {
+          tasks.push({ title: what, weekNumber: week, dayOfWeek: day });
+        }
+      }
+      return tasks;
+    }
+
+    function canCreateGoal(parsed) {
+      return parsed.what && parsed.when && parsed.howLong;
+    }
+
+    function log(message, type = 'info', data) {
+      const logContent = document.getElementById('log-content');
+      const entry = document.createElement('div');
+      entry.className = 'log-entry ' + type;
+
+      const timestamp = new Date().toLocaleTimeString();
+      let content = '<span class="label">[' + timestamp + ']</span> ' + escapeHtml(message);
+
+      if (data !== undefined) {
+        content += typeof data === 'object'
+          ? '\n' + escapeHtml(JSON.stringify(data, null, 2))
+          : ' ' + escapeHtml(String(data));
+      }
+
+      entry.innerHTML = content;
+      logContent.appendChild(entry);
+      logContent.scrollTop = logContent.scrollHeight;
+      console.log('[' + type.toUpperCase() + ']', message, data !== undefined ? data : '');
+    }
+
+    function clearLog() {
+      document.getElementById('log-content').innerHTML = '';
+      log('Log cleared');
+    }
+
+    window.clearLog = clearLog;
+
+    async function callTestChat(messages, systemPrompt, temperature, model) {
+      log('Calling AI...');
+      log('Model: ' + model);
+      log('Temperature: ' + temperature);
+      log('Messages count: ' + messages.length);
+
+      const response = await fetch(CONVEX_URL + '/api/action', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          path: 'ai:testChat',
+          args: { messages, systemPrompt, temperature, model },
+          format: 'json'
+        })
+      });
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        log('API Error: ' + errorText, 'error');
+        throw new Error('Convex error (' + response.status + '): ' + errorText);
+      }
+
+      const data = await response.json();
+
+      if (data.status === 'error') {
+        log('API returned error: ' + data.errorMessage, 'error');
+        throw new Error(data.errorMessage || 'Unknown error');
+      }
+
+      log('API Success - Provider: ' + data.value.provider, 'success');
+      return data.value;
+    }
+
+    function setStatus(text, type = '') {
+      const statusEl = elements.status();
+      statusEl.textContent = text;
+      statusEl.className = 'status' + (type ? ' ' + type : '');
+    }
+
+    function setLoading(loading) {
+      isLoading = loading;
+      elements.promptInput().disabled = loading;
+      elements.sendBtn().disabled = loading;
+      if (loading) {
+        setStatus('Thinking...', 'thinking');
+      }
+    }
+
+    function renderMessages() {
+      const container = elements.messages();
+      container.innerHTML = conversationHistory.map(function(msg) {
+        const providerBadge = msg.provider ? '<span class="provider-badge">' + msg.provider + '</span>' : '';
+        return '<div class="message ' + msg.role + '"><pre>' + escapeHtml(msg.text) + '</pre>' + providerBadge + '</div>';
+      }).join('');
+      container.scrollTop = container.scrollHeight;
+    }
+
+    function detectContext(aiResponse) {
+      if (!aiResponse) return 'initial';
+      const lower = aiResponse.toLowerCase();
+
+      if (/does this look good|look good\?|does that work|sound good\?|confirm|say yes|here'?s your plan|here is your plan/.test(lower)) {
+        return 'confirmation';
+      }
+      if (/how long|for how many minutes|how many minutes|duration/.test(lower)) {
+        return 'duration';
+      }
+      if (/when do you|what days|which days|how often/.test(lower)) {
+        return 'schedule';
+      }
+      return 'initial';
+    }
+
+    function renderSuggestions(suggestions) {
+      const list = Array.isArray(suggestions) ? suggestions : (SUGGESTIONS[suggestions] || SUGGESTIONS.initial);
+      const container = elements.suggestions();
+      if (!container) return;
+      container.innerHTML = '';
+
+      list.forEach(function(s) {
+        const btn = document.createElement('button');
+        btn.className = 'suggestion-chip';
+        btn.textContent = s;
+        btn.addEventListener('click', async function() {
+          elements.promptInput().value = s;
+          await sendMessage();
+        });
+        container.appendChild(btn);
+      });
+    }
+
+    function renderGoalPreview(parsed) {
+      if (parsed.goalReady && parsed.goalReady.goal) {
+        const goal = parsed.goalReady.goal;
+        const tasks = parsed.goalReady.suggestedTasks || [];
+        const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+        let html = '<div class="goal-card">' +
+          '<h3>' + escapeHtml(generateTitle(goal.what)) + '</h3>' +
+          '<div class="goal-field"><div class="label">What</div><div class="value">' + escapeHtml(goal.what) + '</div></div>' +
+          '<div class="goal-field"><div class="label">When</div><div class="value">' + escapeHtml(goal.when) + '</div></div>' +
+          '<div class="goal-field"><div class="label">How Long</div><div class="value">' + escapeHtml(goal.howLong) + '</div></div>';
+
+        if (tasks.length > 0) {
+          html += '<div class="task-list">';
+          tasks.forEach(function(t) {
+            html += '<div class="task-item">Week ' + t.weekNumber + ', ' + (dayNames[t.dayOfWeek] || '') + ': ' + escapeHtml(t.title) + '</div>';
+          });
+          html += '</div>';
+        }
+
+        html += '</div>';
+        elements.preview().innerHTML = html;
+        parsedGoal = parsed.goalReady;
+        setStatus('Goal Ready!', 'complete');
+      } else {
+        elements.preview().innerHTML = '<span class="empty-state">Waiting for complete goal (what + when + how long)...</span>';
+        setStatus('Chatting', '');
+      }
+    }
+
+    function updateTempDisplay() {
+      const value = elements.tempSlider().value / 100;
+      elements.tempDisplay().textContent = value.toFixed(2);
+    }
+
+    function isConfirmation(text) {
+      const lower = text.toLowerCase().trim();
+      return /^(yes|yeah|yep|yup|sure|ok|okay|looks good|perfect|confirm|do it|go ahead|that's? (good|right|correct))/.test(lower);
+    }
+
+    function isModificationRequest(text) {
+      const lower = text.toLowerCase().trim();
+      if (/^(no|nope|change|switch|make it|instead|actually|but|wait|not|only|just)/.test(lower)) return true;
+      if (/(instead of|change to|switch to|rather than|not .+, |fewer|more|less|different)/.test(lower)) return true;
+      return false;
+    }
+
+    function parseDaysFromText(text) {
+      const lower = text.toLowerCase();
+      const dayNames = [];
+
+      if (/mon/.test(lower)) dayNames.push('Mon');
+      if (/tue/.test(lower)) dayNames.push('Tue');
+      if (/wed/.test(lower)) dayNames.push('Wed');
+      if (/thu/.test(lower)) dayNames.push('Thu');
+      if (/fri/.test(lower)) dayNames.push('Fri');
+      if (/sat/.test(lower)) dayNames.push('Sat');
+      if (/sun/.test(lower)) dayNames.push('Sun');
+      if (/weekday/.test(lower)) return 'on weekdays';
+      if (/weekend/.test(lower)) return 'on weekends';
+      if (/every\s*day|daily/.test(lower)) return 'every day';
+
+      return dayNames.length > 0 ? `on ${dayNames.join(', ')}` : null;
+    }
+
+    function parseModification(text, currentGoal) {
+      let lower = text.toLowerCase().trim()
+        .replace(/^(actually|wait|hmm|um|uh|well|nope)[,]?\s*/i, '')
+        .replace(/\s*(instead|please|thanks)$/i, '');
+
+      const onlyMatch = lower.match(/^(?:no[,]?\s*)?(?:just|only)\s+(.+)$/);
+      if (onlyMatch) {
+        const rest = onlyMatch[1];
+        const newWhen = parseDaysFromText(rest);
+        if (newWhen) return { ...currentGoal, when: newWhen };
+        const durMatch = rest.match(/(\d+)\s*(min|hour|hr)/);
+        if (durMatch) {
+          const unit = durMatch[2].startsWith('h') ? 'hour' : 'minute';
+          return { ...currentGoal, howLong: `${durMatch[1]} ${unit}s` };
+        }
+      }
+
+      const noMatch = lower.match(/^no[,]?\s+(.+)$/);
+      if (noMatch) {
+        const newWhen = parseDaysFromText(noMatch[1]);
+        if (newWhen) return { ...currentGoal, when: newWhen };
+      }
+
+      const changeMatch = lower.match(/^(?:change|switch|make it)\s+(?:to\s+)?(.+)$/);
+      if (changeMatch) {
+        const newValue = changeMatch[1];
+        const newWhen = parseDaysFromText(newValue);
+        if (newWhen) return { ...currentGoal, when: newWhen };
+        const durMatch = newValue.match(/(\d+)\s*(min|hour|hr)/);
+        if (durMatch) {
+          const unit = durMatch[2].startsWith('h') ? 'hour' : 'minute';
+          return { ...currentGoal, howLong: `${durMatch[1]} ${unit}s` };
+        }
+      }
+
+      const directWhen = parseDaysFromText(lower);
+      if (directWhen) return { ...currentGoal, when: directWhen };
+
+      const directDur = lower.match(/(\d+)\s*(min|hour|hr)/);
+      if (directDur) {
+        const unit = directDur[2].startsWith('h') ? 'hour' : 'minute';
+        return { ...currentGoal, howLong: `${directDur[1]} ${unit}s` };
+      }
+
+      return null;
+    }
+
+    function formatPlan(goal) {
+      const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+      const tasks = generateTasks(goal.what, goal.when);
+      const week1Days = tasks.filter(t => t.weekNumber === 1).map(t => dayNames[t.dayOfWeek]).join(', ');
+
+      return `Here's your plan:\n` +
+        `• ${goal.what}\n` +
+        `• ${goal.when}, ${goal.howLong} each\n` +
+        `• Days: ${week1Days}\n\n` +
+        `Say "yes" to confirm!`;
+    }
+
+    async function sendMessage() {
+      const input = elements.promptInput();
+      const text = input.value.trim();
+      if (!text || isLoading) return;
+
+      log('=====================================');
+      log('USER: ' + text);
+
+      conversationHistory.push({ role: 'user', text });
+      renderMessages();
+      input.value = '';
+      currentCompletion = '';
+      elements.autocompleteGhost().innerHTML = '';
+
+      if (pendingGoal && canCreateGoal(pendingGoal)) {
+        if (isConfirmation(text)) {
+          log('User confirmed! Creating goal', 'success');
+
+          const tasks = generateTasks(pendingGoal.what, pendingGoal.when);
+          const goalReady = { ready: true, goal: pendingGoal, suggestedTasks: tasks };
+
+          log('GOAL CREATED!', 'success');
+          log('Title: ' + generateTitle(pendingGoal.what), 'success');
+          log('What: ' + pendingGoal.what, 'success');
+          log('When: ' + pendingGoal.when, 'success');
+          log('How Long: ' + pendingGoal.howLong, 'success');
+
+          conversationHistory.push({ role: 'ai', text: 'Goal created!', provider: 'local' });
+          renderMessages();
+          renderGoalPreview({ goalReady });
+          pendingGoal = null;
+          renderSuggestions('initial');
+          return;
+        }
+
+        if (isModificationRequest(text)) {
+          log('Modification request detected');
+          const modified = parseModification(text, pendingGoal);
+          if (modified) {
+            log('Parsed modification:', 'success', modified);
+            pendingGoal = modified;
+            conversationHistory.push({ role: 'ai', text: formatPlan(pendingGoal), provider: 'local' });
+            renderMessages();
+            renderSuggestions('confirmation');
+            return;
+          }
+        }
+      }
+
+      if (pendingGoal && pendingGoal.what) {
+        const duration = parseDuration(text);
+        const schedule = parseSchedule(text);
+
+        if (duration) {
+          pendingGoal.howLong = duration;
+          log('Parsed duration locally: ' + duration, 'success');
+        }
+        if (schedule) {
+          pendingGoal.when = schedule;
+          log('Parsed schedule locally: ' + schedule, 'success');
+        }
+
+        if (canCreateGoal(pendingGoal)) {
+          conversationHistory.push({ role: 'ai', text: formatPlan(pendingGoal), provider: 'local' });
+          renderMessages();
+          renderSuggestions('confirmation');
+          setStatus('Awaiting confirmation', '');
+          return;
+        }
+
+        const hasUnparsedInput = text.length > 0 && !duration && !schedule;
+        if (!pendingGoal.howLong) {
+          const msg = hasUnparsedInput
+            ? "I need a time like '15 minutes', '30 mins', or '1 hour'. How long each time?"
+            : 'How long each time?';
+          conversationHistory.push({ role: 'ai', text: msg, provider: 'local' });
+          renderMessages();
+          renderSuggestions('duration');
+          return;
+        }
+        if (!pendingGoal.when) {
+          const msg = hasUnparsedInput
+            ? "I need a schedule like 'every day', '3 times a week', or 'mon wed fri'. How often?"
+            : 'How often?';
+          conversationHistory.push({ role: 'ai', text: msg, provider: 'local' });
+          renderMessages();
+          renderSuggestions('schedule');
+          return;
+        }
+      }
+
+      log('Calling AI to extract activity...');
+      apiMessages.push({ role: 'user', content: text });
+      setLoading(true);
+      renderSuggestions([]);
+
+      try {
+        const systemPrompt = elements.systemPrompt().value;
+        const temperature = elements.tempSlider().value / 100;
+        const model = elements.modelSelect().value;
+
+        const response = await callTestChat(apiMessages, systemPrompt, temperature, model);
+        const aiText = response.content.trim().replace(/^["']|["']$/g, '');
+
+        log('AI response: ' + aiText, 'success');
+
+        const isActivity = aiText.length < 50 && !aiText.includes('?');
+
+        if (isActivity) {
+          const activity = aiText.toLowerCase();
+          pendingGoal = { what: activity, when: null, howLong: null };
+          log('Activity extracted: ' + activity, 'success');
+
+          conversationHistory.push({ role: 'ai', text: `Got it - ${activity}! How long each time?`, provider: response.provider });
+          apiMessages.push({ role: 'assistant', content: activity });
+          renderMessages();
+          renderSuggestions('duration');
+        } else {
+          conversationHistory.push({ role: 'ai', text: aiText, provider: response.provider });
+          apiMessages.push({ role: 'assistant', content: aiText });
+          renderMessages();
+          renderSuggestions('initial');
+        }
+
+      } catch (error) {
+        log('ERROR: ' + error.message, 'error');
+        conversationHistory.push({ role: 'ai', text: 'Error: ' + error.message });
+        renderMessages();
+        setStatus('Error', 'error');
+        renderSuggestions('initial');
+      }
+
+      setLoading(false);
+    }
+
+    function resetChat() {
+      conversationHistory = [];
+      apiMessages = [];
+      parsedGoal = null;
+      pendingGoal = null;
+
+      conversationHistory.push({
+        role: 'ai',
+        text: 'What would you like to work on?',
+        provider: 'local'
+      });
+
+      renderMessages();
+      elements.preview().innerHTML = '<span class="empty-state">AI structured output will appear here...</span>';
+      setStatus('Ready', '');
+      renderSuggestions('initial');
+    }
+
+    function resetPrompt() {
+      elements.systemPrompt().value = DEFAULT_PROMPT;
+    }
+
+    function copyPrompt() {
+      navigator.clipboard.writeText(elements.systemPrompt().value);
+      alert('Prompt copied to clipboard!');
+    }
+
+    async function handleKey(event) {
+      if ((event.key === 'Tab' || event.key === 'ArrowRight') && currentCompletion) {
+        const input = elements.promptInput();
+        if (input.selectionStart === input.value.length) {
+          event.preventDefault();
+          acceptAutocomplete();
+          return;
+        }
+      }
+
+      if (event.key === 'Enter' && !event.shiftKey) {
+        event.preventDefault();
+        await sendMessage();
+      }
+    }
+
+    const TEST_CASES = {
+      straightforward: [
+        { input: 'watch anime every day for 30 minutes', expect: { what: 'watch anime', when: 'every day', howLong: '30 minutes' } },
+        { input: 'practice piano 3 times a week for 1 hour', expect: { what: 'practice piano', when: '3x per week', howLong: '1 hour' } },
+        { input: 'read books every night for 45 mins', expect: { what: 'read books', when: 'every night', howLong: '45 minutes' } },
+        { input: 'exercise daily for 20 minutes', expect: { what: 'exercise', when: 'every day', howLong: '20 minutes' } },
+        { input: 'study math after school for 1 hr', expect: { what: 'study math', when: 'after school', howLong: '1 hour' } },
+        { input: 'do homework on weekends for 2 hours', expect: { what: 'do homework', when: /weekend/, howLong: '2 hours' } },
+      ],
+      vague: [
+        { input: 'practice piano', expect: { what: 'practice piano', when: null, howLong: null }, note: 'missing when + duration' },
+        { input: 'every morning', expect: { what: null, when: 'every morning', howLong: null }, note: 'missing what + duration' },
+        { input: '30 minutes', expect: { what: null, when: null, howLong: '30 minutes' }, note: 'duration only' },
+        { input: 'something fun', expect: { what: 'something fun', when: null, howLong: null }, note: 'vague activity' },
+      ],
+      chatty: [
+        { input: 'hey so like i want to watch anime every day for maybe 30 mins', expect: { what: /watch anime/, when: 'every day', howLong: '30 minutes' } },
+        { input: 'um i guess practice piano would be cool like 3x a week for an hour', expect: { what: /piano/, when: '3x per week', howLong: '1 hour' } },
+        { input: 'so basically i need to do homework after school for about 45 minutes or so', expect: { what: /homework/, when: 'after school', howLong: '45 minutes' } },
+        { input: 'i think maybe read books every night for like half an hour', expect: { what: /read/, when: 'every night', howLong: '30 minutes' } },
+      ],
+      typos: [
+        { input: 'wacth anime evrey day for 30 minuts', expect: { what: /wacth anime/, when: 'every day', howLong: '30 minutes' }, note: 'evrey→every, minuts→minutes' },
+        { input: 'practise piano 3 times a wek for 1 hour', expect: { what: /practi[sc]e piano/, when: '3x per week', howLong: '1 hour' }, note: 'wek→week' },
+        { input: 'exersize daily for 20 mins', expect: { what: /exersize/, when: 'every day', howLong: '20 minutes' } },
+      ],
+      edgeCases: [
+        { input: '', expect: { what: null, when: null, howLong: null }, note: 'empty input' },
+        { input: 'hello', expect: { what: /hello/, when: null, howLong: null }, note: 'greeting - returns as-is, AI decides' },
+        { input: 'what can you do?', expect: { what: /what can you do/, when: null, howLong: null }, note: 'question - returns as-is' },
+        { input: '!!!???', expect: { what: null, when: null, howLong: null }, note: 'symbols only' },
+        { input: '   ', expect: { what: null, when: null, howLong: null }, note: 'whitespace only' },
+      ],
+      confusing: [
+        { input: 'watch anime and read books every day for 30 minutes', expect: { what: /anime.*and.*read|read.*anime/, when: 'every day', howLong: '30 minutes' }, note: 'two activities - keeps both' },
+        { input: 'practice piano every day 3 times a week', expect: { what: /piano/, when: /every day|3x/, howLong: null }, note: 'conflicting schedule - takes first' },
+        { input: 'exercise for 30 minutes for 1 hour', expect: { what: /exercise/, when: null, howLong: /30 minutes|1 hour/ }, note: 'conflicting duration - takes first' },
+      ],
+      modifications: [
+        { input: 'no wed and mon', pending: { what: 'piano', when: 'on Mon, Wed, Fri', howLong: '1 hour' }, expect: { when: /wed.*mon|mon.*wed/i } },
+        { input: 'just friday', pending: { what: 'piano', when: 'on Mon, Wed, Fri', howLong: '1 hour' }, expect: { when: /fri/i } },
+        { input: 'only weekends', pending: { what: 'piano', when: 'on Mon, Wed, Fri', howLong: '1 hour' }, expect: { when: /weekend/i } },
+        { input: 'change to weekends', pending: { what: 'piano', when: 'on Mon, Wed, Fri', howLong: '1 hour' }, expect: { when: /weekend/i } },
+        { input: 'make it 45 minutes', pending: { what: 'piano', when: 'every day', howLong: '1 hour' }, expect: { howLong: /45/ } },
+      ],
+      confirmations: [
+        { input: 'yes', isConfirm: true },
+        { input: 'yeah looks good', isConfirm: true },
+        { input: 'yep', isConfirm: true },
+        { input: 'sure', isConfirm: true },
+        { input: 'ok', isConfirm: true },
+        { input: 'okay', isConfirm: true },
+        { input: 'perfect', isConfirm: true },
+        { input: "that's good", isConfirm: true },
+        { input: 'no', isConfirm: false },
+        { input: 'wait', isConfirm: false },
+        { input: 'change it', isConfirm: false },
+        { input: 'actually', isConfirm: false },
+      ],
+    };
+
+    function runTests() {
+      const results = { passed: 0, failed: 0, details: [] };
+
+      function matchValue(actual, expected) {
+        if (expected === null) return actual === null;
+        if (expected instanceof RegExp) return expected.test(actual || '');
+        if (typeof expected === 'string') return (actual || '').toLowerCase().includes(expected.toLowerCase());
+        return actual === expected;
+      }
+
+      for (const [category, tests] of Object.entries(TEST_CASES)) {
+        if (category === 'modifications' || category === 'confirmations') continue;
+
+        for (const test of tests) {
+          const parsed = parseGoalInput(test.input);
+          const pass = matchValue(parsed.what, test.expect.what) &&
+                       matchValue(parsed.when, test.expect.when) &&
+                       matchValue(parsed.howLong, test.expect.howLong);
+
+          if (pass) results.passed++;
+          else results.failed++;
+
+          results.details.push({
+            category,
+            input: test.input,
+            expected: test.expect,
+            actual: { what: parsed.what, when: parsed.when, howLong: parsed.howLong },
+            pass,
+            note: test.note
+          });
+        }
+      }
+
+      for (const test of TEST_CASES.modifications) {
+        const modified = parseModification(test.input, test.pending);
+        let pass = false;
+        if (modified) {
+          pass = Object.entries(test.expect).every(([key, val]) => matchValue(modified[key], val));
+        }
+
+        if (pass) results.passed++;
+        else results.failed++;
+
+        results.details.push({
+          category: 'modifications',
+          input: test.input,
+          pending: test.pending,
+          expected: test.expect,
+          actual: modified,
+          pass
+        });
+      }
+
+      for (const test of TEST_CASES.confirmations) {
+        const isConfirm = isConfirmation(test.input);
+        const pass = isConfirm === test.isConfirm;
+
+        if (pass) results.passed++;
+        else results.failed++;
+
+        results.details.push({
+          category: 'confirmations',
+          input: test.input,
+          expected: test.isConfirm,
+          actual: isConfirm,
+          pass
+        });
+      }
+
+      const titleTests = [
+        { what: 'watch anime', expect: /anime.*watch/i },
+        { what: 'practice piano', expect: /piano.*practice/i },
+        { what: 'eat breakfast', expect: /breakfast/i },
+        { what: 'exercise', expect: /exercise/i },
+        { what: 'do homework', expect: /homework/i },
+      ];
+      for (const test of titleTests) {
+        const title = generateTitle(test.what);
+        const pass = test.expect.test(title);
+
+        if (pass) results.passed++;
+        else results.failed++;
+
+        results.details.push({
+          category: 'titles',
+          input: test.what,
+          expected: test.expect.toString(),
+          actual: title,
+          pass
+        });
+      }
+
+      return results;
+    }
+
+    function displayTestResults(results) {
+      log('========== TEST RESULTS ==========');
+      const statusType = results.failed === 0 ? 'success' : 'error';
+      log(`TOTAL: ${results.passed + results.failed} | PASSED: ${results.passed} | FAILED: ${results.failed}`, statusType);
+
+      const byCategory = {};
+      for (const d of results.details) {
+        if (!byCategory[d.category]) byCategory[d.category] = { passed: 0, failed: 0, failures: [] };
+        if (d.pass) byCategory[d.category].passed++;
+        else {
+          byCategory[d.category].failed++;
+          byCategory[d.category].failures.push(d);
+        }
+      }
+
+      log('--- By Category ---');
+      for (const [cat, stats] of Object.entries(byCategory)) {
+        const status = stats.failed === 0 ? 'PASS' : 'FAIL';
+        log(`${status} ${cat}: ${stats.passed}/${stats.passed + stats.failed}`, stats.failed === 0 ? 'success' : 'warn');
+
+        for (const f of stats.failures) {
+          log(`  FAIL: "${f.input}"`, 'error');
+          log(`    Expected: ${JSON.stringify(f.expected)}`, 'error');
+          log(`    Actual: ${JSON.stringify(f.actual)}`, 'error');
+          if (f.note) log(`    Note: ${f.note}`);
+        }
+      }
+
+      if (results.failed === 0) {
+        log('All tests passed! Parser is working correctly.', 'success');
+      } else {
+        log(`${results.failed} test(s) need attention.`, 'warn');
+      }
+
+      return results;
+    }
+
+    window.runTests = function() {
+      const results = runTests();
+      displayTestResults(results);
+      return results;
+    };
+
+    window.handleKey = handleKey;
+    window.sendMessage = sendMessage;
+    window.resetChat = resetChat;
+    window.resetPrompt = resetPrompt;
+    window.copyPrompt = copyPrompt;
+    window.updateTempDisplay = updateTempDisplay;
+    window.updateAutocomplete = updateAutocomplete;
+
+    elements.systemPrompt().value = DEFAULT_PROMPT;
+    resetChat();
+  </script>
+</body>
+</html>
