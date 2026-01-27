@@ -140,6 +140,7 @@ export default defineSchema({
     domainId: v.id("domains"),
     title: v.string(),
     description: v.string(),
+    curriculum: v.optional(v.string()), // "MYP Y1", "PYP Y2", etc.
     difficulty: v.optional(
       v.union(
         v.literal("beginner"),

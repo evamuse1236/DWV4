@@ -1284,6 +1284,7 @@ export const seedMathFromPlaylist = mutation({
         domainId: mathDomain._id,
         title: majorTitle,
         description: majorTitle,
+        curriculum: "MYP Y1",
         createdBy: admin._id,
         createdAt: timestamp++,
       });
@@ -2805,6 +2806,576 @@ export const seedMathFromPlaylist = mutation({
     return {
       success: true,
       message: `Deleted ${deletedMajors} majors, ${deletedLearning} learning objectives, ${deletedActivities} activities, ${deletedProgress} progress, ${deletedStudentObj} student objectives, ${deletedStudentMajor} student major objectives. Created ${createdMajors} majors, ${createdLearning} learning objectives, ${createdActivities} activities.`,
+    };
+  },
+});
+
+/**
+ * Seed PYP Year 2 Math objectives (gap-filling foundational content).
+ * Creates 8 major objectives, 53 learning objectives, and activities
+ * with Khan Academy links. Only deletes/replaces PYP Y2 curriculum data.
+ *
+ * Run: npx convex run seed:seedPypMathFromPlaylist
+ */
+export const seedPypMathFromPlaylist = mutation({
+  args: {},
+  handler: async (ctx) => {
+    const admin = await ctx.db
+      .query("users")
+      .filter((q) => q.eq(q.field("role"), "admin"))
+      .first();
+
+    if (!admin) {
+      return { success: false, message: "No admin user found" };
+    }
+
+    let mathDomain = await ctx.db
+      .query("domains")
+      .filter((q) => q.eq(q.field("name"), "Mathematics"))
+      .first();
+
+    if (!mathDomain) {
+      mathDomain = await ctx.db
+        .query("domains")
+        .filter((q) => q.eq(q.field("name"), "Math"))
+        .first();
+    }
+
+    if (!mathDomain) {
+      return { success: false, message: "Math/Mathematics domain not found" };
+    }
+
+    // ========== STEP 1: DELETE ONLY PYP Y2 OBJECTIVES ==========
+
+    const existingMajors = await ctx.db
+      .query("majorObjectives")
+      .withIndex("by_domain", (q) => q.eq("domainId", mathDomain._id))
+      .collect();
+
+    const pypMajors = existingMajors.filter((m: any) => m.curriculum === "PYP Y2");
+
+    let deletedProgress = 0;
+    let deletedActivities = 0;
+    let deletedStudentObj = 0;
+    let deletedStudentMajor = 0;
+    let deletedLearning = 0;
+    let deletedMajors = 0;
+
+    for (const major of pypMajors) {
+      const learningObjs = await ctx.db
+        .query("learningObjectives")
+        .withIndex("by_major_objective", (q) => q.eq("majorObjectiveId", major._id))
+        .collect();
+
+      for (const lo of learningObjs) {
+        const activities = await ctx.db
+          .query("activities")
+          .withIndex("by_objective", (q) => q.eq("objectiveId", lo._id))
+          .collect();
+
+        for (const act of activities) {
+          const progress = await ctx.db
+            .query("activityProgress")
+            .withIndex("by_activity", (q) => q.eq("activityId", act._id))
+            .collect();
+          for (const p of progress) {
+            await ctx.db.delete(p._id);
+            deletedProgress++;
+          }
+          await ctx.db.delete(act._id);
+          deletedActivities++;
+        }
+
+        const studentObjs = await ctx.db
+          .query("studentObjectives")
+          .withIndex("by_objective", (q) => q.eq("objectiveId", lo._id))
+          .collect();
+        for (const so of studentObjs) {
+          await ctx.db.delete(so._id);
+          deletedStudentObj++;
+        }
+
+        await ctx.db.delete(lo._id);
+        deletedLearning++;
+      }
+
+      const studentMajors = await ctx.db
+        .query("studentMajorObjectives")
+        .withIndex("by_major_objective", (q) => q.eq("majorObjectiveId", major._id))
+        .collect();
+      for (const sm of studentMajors) {
+        await ctx.db.delete(sm._id);
+        deletedStudentMajor++;
+      }
+
+      await ctx.db.delete(major._id);
+      deletedMajors++;
+    }
+
+    // ========== STEP 2: INSERT PYP Y2 CURRICULUM ==========
+
+    let timestamp = Date.now();
+    let createdMajors = 0;
+    let createdLearning = 0;
+    let createdActivities = 0;
+
+    const insertPypMajor = async (
+      majorTitle: string,
+      subs: Array<{
+        title: string;
+        description: string;
+        activities: Array<{
+          title: string;
+          type: "video" | "exercise";
+          platform: string;
+          url: string;
+        }>;
+      }>
+    ) => {
+      const majorId = await ctx.db.insert("majorObjectives", {
+        domainId: mathDomain._id,
+        title: majorTitle,
+        description: majorTitle,
+        curriculum: "PYP Y2",
+        difficulty: "beginner",
+        createdBy: admin._id,
+        createdAt: timestamp++,
+      });
+      createdMajors++;
+
+      for (const sub of subs) {
+        const loId = await ctx.db.insert("learningObjectives", {
+          domainId: mathDomain._id,
+          majorObjectiveId: majorId,
+          title: sub.title,
+          description: sub.description,
+          difficulty: "beginner",
+          createdBy: admin._id,
+          createdAt: timestamp++,
+        });
+        createdLearning++;
+
+        for (let i = 0; i < sub.activities.length; i++) {
+          const act = sub.activities[i];
+          await ctx.db.insert("activities", {
+            objectiveId: loId,
+            title: act.title,
+            type: act.type,
+            platform: act.platform,
+            url: act.url,
+            order: i,
+          });
+          createdActivities++;
+        }
+      }
+    };
+
+    // Number Crunching (Arithmetic - 12 LOs)
+    await insertPypMajor("Number Crunching", [
+      {
+        title: "SWBAT read and write multi-digit numbers in standard, word, and expanded form.",
+        description: "SWBAT read and write multi-digit numbers in standard, word, and expanded form.",
+        activities: [
+          { title: "Khan Academy: 4th Grade - Place value", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-place-value-and-rounding" },
+        ],
+      },
+      {
+        title: "SWBAT explain that each digit is 10\u00d7 the value of the digit to its right and 1/10 of the digit to its left.",
+        description: "SWBAT explain that each digit is 10\u00d7 the value of the digit to its right and 1/10 of the digit to its left.",
+        activities: [
+          { title: "Khan Academy: Powers of ten", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/powers-of-ten" },
+        ],
+      },
+      {
+        title: "SWBAT Add and Subtract multi-digit numbers using algo",
+        description: "SWBAT Add and Subtract multi-digit numbers using algo",
+        activities: [
+          { title: "Khan Academy: Multi-digit multiplication and division", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division" },
+        ],
+      },
+      {
+        title: "SWBAT do efficient Add & Sub by using properties like: commutative, associative, breaking nos, multiples of 10, Counting up/down etc.",
+        description: "SWBAT do efficient Add & Sub by using properties like: commutative, associative, breaking nos, multiples of 10, Counting up/down etc.",
+        activities: [
+          { title: "Khan Academy: 4th Grade - Place value and rounding (mental math strategies)", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-place-value-and-rounding" },
+        ],
+      },
+      {
+        title: "SWBAT multiply up to 4-digit \u00d7 1-digit using algo, area model, etc.",
+        description: "SWBAT multiply up to 4-digit \u00d7 1-digit using algo, area model, etc.",
+        activities: [
+          { title: "Khan Academy: Multi-digit multiplication and division", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division" },
+        ],
+      },
+      {
+        title: "SWBAT to do efficient multiplication by using properties like: doubling, skip counting, associative, distributive",
+        description: "SWBAT to do efficient multiplication by using properties like: doubling, skip counting, associative, distributive",
+        activities: [
+          { title: "Khan Academy: 4th Grade - Factors, multiples and patterns", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-factors-multiples-and-patterns" },
+        ],
+      },
+      {
+        title: "SWBAT divide up to 4-digit \u00f7 1-digit, finding quotients and remainders using place value.",
+        description: "SWBAT divide up to 4-digit \u00f7 1-digit, finding quotients and remainders using place value.",
+        activities: [
+          { title: "Khan Academy: Multi-digit multiplication and division", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division" },
+        ],
+      },
+      {
+        title: "SWBAT Multi-step word problem of add/sub/mul/div, using equations with Unknowns.",
+        description: "SWBAT Multi-step word problem of add/sub/mul/div, using equations with Unknowns.",
+        activities: [
+          { title: "Khan Academy: Multi-digit multiplication and division", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division" },
+        ],
+      },
+      {
+        title: "SWBAT multiply two 2-digit numbers using place-value, and algo method.",
+        description: "SWBAT multiply two 2-digit numbers using place-value, and algo method.",
+        activities: [
+          { title: "Khan Academy: Multi-digit multiplication and division", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division" },
+        ],
+      },
+      {
+        title: "SWBAT use BODMAS/PEDMAS to do order of operations.",
+        description: "SWBAT use BODMAS/PEDMAS to do order of operations.",
+        activities: [
+          { title: "Khan Academy: Algebraic thinking", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-algebraic-thinking" },
+        ],
+      },
+      {
+        title: "SWBAT verify calculations using inverse operations (mul \u2194 div; add \u2194 sub)",
+        description: "SWBAT verify calculations using inverse operations (mul \u2194 div; add \u2194 sub)",
+        activities: [
+          { title: "Khan Academy: Multi-digit multiplication and division", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division" },
+        ],
+      },
+      {
+        title: "SWBAT Verify calculation using estimation and rounding.",
+        description: "SWBAT Verify calculation using estimation and rounding.",
+        activities: [
+          { title: "Khan Academy: Multi-digit multiplication and division", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division" },
+        ],
+      },
+    ]);
+
+    // Fraction Adventures (Fractions - 14 LOs)
+    await insertPypMajor("Fraction Adventures", [
+      {
+        title: "SWBAT relate fractions to real objects: (x/y means y \u201cequal\u201d pieces and then take x out of it.)",
+        description: "SWBAT relate fractions to real objects: (x/y means y \u201cequal\u201d pieces and then take x out of it.)",
+        activities: [
+          { title: "Khan Academy: 3rd Grade - Understand fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-third-grade-math/imp-fractions" },
+        ],
+      },
+      {
+        title: "SWBAT mark fractions on a number line.",
+        description: "SWBAT mark fractions on a number line.",
+        activities: [
+          { title: "Khan Academy: 3rd Grade - Understand fractions (fractions on the number line)", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-third-grade-math/imp-fractions" },
+        ],
+      },
+      {
+        title: "SWBAT compare fractions using models and the number line.",
+        description: "SWBAT compare fractions using models and the number line.",
+        activities: [
+          { title: "Khan Academy: 4th Grade - Equivalent fractions and comparing fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/comparing-fractions-and-equivalent-fractions" },
+        ],
+      },
+      {
+        title: "SWBAT find equivalent fraction of a given fraction.",
+        description: "SWBAT find equivalent fraction of a given fraction.",
+        activities: [
+          { title: "Khan Academy: 4th Grade - Equivalent fractions and comparing fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/comparing-fractions-and-equivalent-fractions" },
+        ],
+      },
+      {
+        title: "SWBAT Add and Subtract like fractions.",
+        description: "SWBAT Add and Subtract like fractions.",
+        activities: [
+          { title: "Khan Academy: Add and subtract fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-3" },
+        ],
+      },
+      {
+        title: "SWBAT Multiply a fraction by a whole number and another fraction.",
+        description: "SWBAT Multiply a fraction by a whole number and another fraction.",
+        activities: [
+          { title: "Khan Academy: Multiply fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/5th-multiply-fractions" },
+        ],
+      },
+      {
+        title: "SWBAT Simplify a given fraction.",
+        description: "SWBAT Simplify a given fraction.",
+        activities: [
+          { title: "Khan Academy: 4th Grade - Equivalent fractions and comparing fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/comparing-fractions-and-equivalent-fractions" },
+        ],
+      },
+      {
+        title: "SWBAT Convert mixed to improper fraction",
+        description: "SWBAT Convert mixed to improper fraction",
+        activities: [
+          { title: "Khan Academy: Add and subtract fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-3" },
+        ],
+      },
+      {
+        title: "SWBAT Convert improper to mixed fraction.",
+        description: "SWBAT Convert improper to mixed fraction.",
+        activities: [
+          { title: "Khan Academy: Add and subtract fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-3" },
+        ],
+      },
+      {
+        title: "SWBAT Compare unlike fractions",
+        description: "SWBAT Compare unlike fractions",
+        activities: [
+          { title: "Khan Academy: Add and subtract fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-3" },
+        ],
+      },
+      {
+        title: "SWBAT express a fraction (a/b, where a > 1) as a sum of unit fractions (1/b).",
+        description: "SWBAT express a fraction (a/b, where a > 1) as a sum of unit fractions (1/b).",
+        activities: [
+          { title: "Khan Academy: 4th Grade - Add and subtract fractions (decomposing fractions)", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2" },
+        ],
+      },
+      {
+        title: "SWBAT Add and Sub unlike fractions",
+        description: "SWBAT Add and Sub unlike fractions",
+        activities: [
+          { title: "Khan Academy: Add and subtract fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-3" },
+        ],
+      },
+      {
+        title: "SWBAT Add and Sub mixed fractions",
+        description: "SWBAT Add and Sub mixed fractions",
+        activities: [
+          { title: "Khan Academy: Add and subtract fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-3" },
+        ],
+      },
+      {
+        title: "SWBAT solve word problems involving add and sub of fractions (Unlike and mixed)",
+        description: "SWBAT solve word problems involving add and sub of fractions (Unlike and mixed)",
+        activities: [
+          { title: "Khan Academy: Add and subtract fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-3" },
+        ],
+      },
+    ]);
+
+    // Decimal Explorers (Decimal - 9 LOs)
+    await insertPypMajor("Decimal Explorers", [
+      {
+        title: "SWBAT show decimals up to hundredth place on a number line.",
+        description: "SWBAT show decimals up to hundredth place on a number line.",
+        activities: [
+          { title: "Khan Academy: Decimal place value", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-place-value-and-decimals" },
+        ],
+      },
+      {
+        title: "SWBAT compare and order decimals upto hundredths place",
+        description: "SWBAT compare and order decimals upto hundredths place",
+        activities: [
+          { title: "Khan Academy: Decimal place value", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-place-value-and-decimals" },
+        ],
+      },
+      {
+        title: "SWBAT convert fractions with denominator 100 to decimals and vice versa",
+        description: "SWBAT convert fractions with denominator 100 to decimals and vice versa",
+        activities: [
+          { title: "Khan Academy: Decimal place value", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-place-value-and-decimals" },
+        ],
+      },
+      {
+        title: "SWBAT convert fractions to decimal notation.",
+        description: "SWBAT convert fractions to decimal notation.",
+        activities: [
+          { title: "Khan Academy: Decimal place value", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-place-value-and-decimals" },
+        ],
+      },
+      {
+        title: "SWBAT add a decimal with whole no. and another decimal.",
+        description: "SWBAT add a decimal with whole no. and another decimal.",
+        activities: [
+          { title: "Khan Academy: Add decimals", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-addition-and-subtraction-3" },
+        ],
+      },
+      {
+        title: "SWBAT sub a decimal with whole no. and another decimal.",
+        description: "SWBAT sub a decimal with whole no. and another decimal.",
+        activities: [
+          { title: "Khan Academy: Subtract decimals", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/subtract-decimals" },
+        ],
+      },
+      {
+        title: "SWBAT multiply a decimal with whole no.",
+        description: "SWBAT multiply a decimal with whole no.",
+        activities: [
+          { title: "Khan Academy: Multiply decimals", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-multiplication-and-division-3" },
+        ],
+      },
+      {
+        title: "SWBAT divide 2 whole numbers to get a decimal quotient.",
+        description: "SWBAT divide 2 whole numbers to get a decimal quotient.",
+        activities: [
+          { title: "Khan Academy: Divide decimals", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/divide-decimals" },
+        ],
+      },
+      {
+        title: "SWBAT solve multi-digit computation problems that too word problems involving decimals.",
+        description: "SWBAT solve multi-digit computation problems that too word problems involving decimals.",
+        activities: [
+          { title: "Khan Academy: 5th Grade - Spread across Add/Sub/Mul/Div decimals units (U2, U3, U8, U9)", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-addition-and-subtraction-3" },
+        ],
+      },
+    ]);
+
+    // Measuring the World (Measurement - 8 LOs)
+    await insertPypMajor("Measuring the World", [
+      {
+        title: "SWBAT convert common units (km\u2013m\u2013cm; kg\u2013g; l\u2013ml; hr\u2013min\u2013sec)",
+        description: "SWBAT convert common units (km\u2013m\u2013cm; kg\u2013g; l\u2013ml; hr\u2013min\u2013sec)",
+        activities: [
+          { title: "Khan Academy: Converting units of measure", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-measurement-and-data-3" },
+        ],
+      },
+      {
+        title: "SWBAT solve real-world problems about distance, time, volume, mass, and money.",
+        description: "SWBAT solve real-world problems about distance, time, volume, mass, and money.",
+        activities: [
+          { title: "Khan Academy: 4th Grade - Units of measurement", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-measurement-and-data-2" },
+        ],
+      },
+      {
+        title: "SWBAT calculate area for rectangles and composite rectangles",
+        description: "SWBAT calculate area for rectangles and composite rectangles",
+        activities: [
+          { title: "Khan Academy: 4th Grade - Area and perimeter", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/area-perimeter" },
+        ],
+      },
+      {
+        title: "SWBAT calculate perimeter for triangles, rectangles, and composite shapes",
+        description: "SWBAT calculate perimeter for triangles, rectangles, and composite shapes",
+        activities: [
+          { title: "Khan Academy: 4th Grade - Area and perimeter", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/area-perimeter" },
+        ],
+      },
+      {
+        title: "SWBAT solve word problems involving area and perimeter of rectangles.",
+        description: "SWBAT solve word problems involving area and perimeter of rectangles.",
+        activities: [
+          { title: "Khan Academy: 4th Grade - Area and perimeter", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/area-perimeter" },
+        ],
+      },
+      {
+        title: "SWBAT understand and calculate volume of cube and rectangular prism.",
+        description: "SWBAT understand and calculate volume of cube and rectangular prism.",
+        activities: [
+          { title: "Khan Academy: Volume", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/5th-volume" },
+        ],
+      },
+      {
+        title: "SWBAT compute the surface area of rectangular prism/composite figures",
+        description: "SWBAT compute the surface area of rectangular prism/composite figures",
+        activities: [
+          { title: "Khan Academy: 6th Grade - Geometry (surface area section)", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic" },
+        ],
+      },
+      {
+        title: "SWBAT solve word problems of surface area and volume.",
+        description: "SWBAT solve word problems of surface area and volume.",
+        activities: [
+          { title: "Khan Academy: Volume", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/5th-volume" },
+        ],
+      },
+    ]);
+
+    // Angle Detectives (Geometry Angles - 4 LOs)
+    await insertPypMajor("Angle Detectives", [
+      {
+        title: "SWBAT Identify common angles like 30, 45, 60, 90, right, acute, and obtuse.",
+        description: "SWBAT Identify common angles like 30, 45, 60, 90, right, acute, and obtuse.",
+        activities: [
+          { title: "Khan Academy: 4th Grade - Measuring angles", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2" },
+        ],
+      },
+      {
+        title: "SWBAT measure and sketch angles with protractor",
+        description: "SWBAT measure and sketch angles with protractor",
+        activities: [
+          { title: "Khan Academy: 4th Grade - Measuring angles", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2" },
+        ],
+      },
+      {
+        title: "SWBAT calculate complementary and supplementary angles.",
+        description: "SWBAT calculate complementary and supplementary angles.",
+        activities: [
+          { title: "Khan Academy: 4th Grade - Measuring angles (angles in circles section)", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2" },
+        ],
+      },
+      {
+        title: "SWBAT solve word problems involving angles",
+        description: "SWBAT solve word problems involving angles",
+        activities: [
+          { title: "Khan Academy: 4th Grade - Measuring angles", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2" },
+        ],
+      },
+    ]);
+
+    // Shape Safari (2D Shapes - 3 LOs)
+    await insertPypMajor("Shape Safari", [
+      {
+        title: "SWBAT identify and classify triangles (Right, isosceles, equilateral)",
+        description: "SWBAT identify and classify triangles (Right, isosceles, equilateral)",
+        activities: [
+          { title: "Khan Academy: Properties of shapes", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/properties-of-shapes" },
+        ],
+      },
+      {
+        title: "SWBAT identify and differentiate common 2D figures by angles, side-lengths, parallel lines.",
+        description: "SWBAT identify and differentiate common 2D figures by angles, side-lengths, parallel lines.",
+        activities: [
+          { title: "Khan Academy: Properties of shapes", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/properties-of-shapes" },
+        ],
+      },
+      {
+        title: "SWBAT recognize lines of symmetry in 2D figures.",
+        description: "SWBAT recognize lines of symmetry in 2D figures.",
+        activities: [
+          { title: "Khan Academy: Properties of shapes", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/properties-of-shapes" },
+        ],
+      },
+    ]);
+
+    // Map Makers (Coordinate Geometry - 2 LOs)
+    await insertPypMajor("Map Makers", [
+      {
+        title: "SWBAT plot points, Lines, and shapes on the coordinate plane.",
+        description: "SWBAT plot points, Lines, and shapes on the coordinate plane.",
+        activities: [
+          { title: "Khan Academy: Coordinate plane", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-geometry-3" },
+        ],
+      },
+      {
+        title: "SWBAT solve problems, like distances between 2 points their midpoints.",
+        description: "SWBAT solve problems, like distances between 2 points their midpoints.",
+        activities: [
+          { title: "Khan Academy: Coordinate plane", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-geometry-3" },
+        ],
+      },
+    ]);
+
+    // Data Detectives (Data - 1 LO)
+    await insertPypMajor("Data Detectives", [
+      {
+        title: "SWBAT interpret and plot data in various graphs.",
+        description: "SWBAT interpret and plot data in various graphs.",
+        activities: [
+          { title: "Khan Academy: Line plots", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/line-plots" },
+        ],
+      },
+    ]);
+
+    return {
+      success: true,
+      message: `PYP Y2: Deleted ${deletedMajors} majors, ${deletedLearning} LOs, ${deletedActivities} activities. Created ${createdMajors} majors, ${createdLearning} LOs, ${createdActivities} activities.`,
     };
   },
 });

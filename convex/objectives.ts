@@ -300,6 +300,7 @@ export const create = mutation({
     domainId: v.id("domains"),
     title: v.string(),
     description: v.string(),
+    curriculum: v.optional(v.string()),
     difficulty: v.optional(difficulty),
     estimatedHours: v.optional(v.number()),
     createdBy: v.id("users"),

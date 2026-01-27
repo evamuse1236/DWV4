@@ -20,6 +20,7 @@ const mockCreateSubObjective = vi.fn().mockResolvedValue({ _id: "sub_new" });
 const mockUpdateSubObjective = vi.fn().mockResolvedValue({});
 const mockRemoveSubObjective = vi.fn().mockResolvedValue({});
 const mockAssignToMultiple = vi.fn().mockResolvedValue({ results: [] });
+const mockAssignChapterToMultiple = vi.fn().mockResolvedValue({ results: [] });
 const mockCreateActivity = vi.fn().mockResolvedValue({ _id: "activity_new" });
 const mockUpdateActivity = vi.fn().mockResolvedValue({});
 const mockRemoveActivity = vi.fn().mockResolvedValue({});
@@ -35,6 +36,7 @@ vi.mock("convex/react", () => ({
     if (mutation === "objectives.updateSubObjective") return mockUpdateSubObjective;
     if (mutation === "objectives.removeSubObjective") return mockRemoveSubObjective;
     if (mutation === "objectives.assignToMultipleStudents") return mockAssignToMultiple;
+    if (mutation === "objectives.assignChapterToMultipleStudents") return mockAssignChapterToMultiple;
     if (mutation === "activities.create") return mockCreateActivity;
     if (mutation === "activities.update") return mockUpdateActivity;
     if (mutation === "activities.remove") return mockRemoveActivity;
@@ -50,6 +52,7 @@ vi.mock("../../../../convex/_generated/api", () => ({
     objectives: {
       getByDomain: "objectives.getByDomain",
       getAssignedStudents: "objectives.getAssignedStudents",
+      getAssignedStudentsForChapter: "objectives.getAssignedStudentsForChapter",
       create: "objectives.create",
       update: "objectives.update",
       remove: "objectives.remove",
@@ -57,6 +60,7 @@ vi.mock("../../../../convex/_generated/api", () => ({
       updateSubObjective: "objectives.updateSubObjective",
       removeSubObjective: "objectives.removeSubObjective",
       assignToMultipleStudents: "objectives.assignToMultipleStudents",
+      assignChapterToMultipleStudents: "objectives.assignChapterToMultipleStudents",
     },
     activities: {
       getByObjective: "activities.getByObjective",
@@ -346,6 +350,7 @@ describe("ObjectivesPage", () => {
       if (query === "users.getAll") return mockStudents;
       if (query === "objectives.getByDomain") return mockMajorObjectives;
       if (query === "objectives.getAssignedStudents") return mockAssignedStudents;
+      if (query === "objectives.getAssignedStudentsForChapter") return [];
       if (query === "activities.getByObjective") return mockActivities;
       return undefined;
     });
@@ -1101,7 +1106,8 @@ describe("ObjectivesPage", () => {
 
       await user.click(screen.getByText("Fractions Fundamentals"));
       const assignButtons = screen.getAllByText("Assign");
-      await user.click(assignButtons[0]);
+      // Index 0 is chapter-level Assign on the major header; index 1 is the sub-objective Assign
+      await user.click(assignButtons[1]);
 
       expect(screen.getByText("Assign Students")).toBeInTheDocument();
       expect(
@@ -1115,7 +1121,8 @@ describe("ObjectivesPage", () => {
 
       await user.click(screen.getByText("Fractions Fundamentals"));
       const assignButtons = screen.getAllByText("Assign");
-      await user.click(assignButtons[0]);
+      // Index 0 is chapter-level Assign on the major header; index 1 is the sub-objective Assign
+      await user.click(assignButtons[1]);
 
       expect(screen.getByText(/already assigned \(1\)/i)).toBeInTheDocument();
       expect(screen.getByText("Alice")).toBeInTheDocument();
@@ -1127,7 +1134,8 @@ describe("ObjectivesPage", () => {
 
       await user.click(screen.getByText("Fractions Fundamentals"));
       const assignButtons = screen.getAllByText("Assign");
-      await user.click(assignButtons[0]);
+      // Index 0 is chapter-level Assign on the major header; index 1 is the sub-objective Assign
+      await user.click(assignButtons[1]);
 
       expect(screen.getByText(/available students \(2\)/i)).toBeInTheDocument();
       expect(screen.getByText("Bob")).toBeInTheDocument();
@@ -1140,7 +1148,8 @@ describe("ObjectivesPage", () => {
 
       await user.click(screen.getByText("Fractions Fundamentals"));
       const assignButtons = screen.getAllByText("Assign");
-      await user.click(assignButtons[0]);
+      // Index 0 is chapter-level Assign on the major header; index 1 is the sub-objective Assign
+      await user.click(assignButtons[1]);
 
       // Click on Bob to select
       const bobCard = screen.getByText("Bob").closest("div[class*='cursor-pointer']");
@@ -1164,7 +1173,8 @@ describe("ObjectivesPage", () => {
 
       await user.click(screen.getByText("Fractions Fundamentals"));
       const assignButtons = screen.getAllByText("Assign");
-      await user.click(assignButtons[0]);
+      // Index 0 is chapter-level Assign on the major header; index 1 is the sub-objective Assign
+      await user.click(assignButtons[1]);
 
       // Select Bob
       const bobCard = screen.getByText("Bob").closest("div[class*='cursor-pointer']");
@@ -1183,7 +1193,8 @@ describe("ObjectivesPage", () => {
 
       await user.click(screen.getByText("Fractions Fundamentals"));
       const assignButtons = screen.getAllByText("Assign");
-      await user.click(assignButtons[0]);
+      // Index 0 is chapter-level Assign on the major header; index 1 is the sub-objective Assign
+      await user.click(assignButtons[1]);
 
       // Select Bob
       const bobCard = screen.getByText("Bob").closest("div[class*='cursor-pointer']");
@@ -1218,7 +1229,8 @@ describe("ObjectivesPage", () => {
 
       await user.click(screen.getByText("Fractions Fundamentals"));
       const assignButtons = screen.getAllByText("Assign");
-      await user.click(assignButtons[0]);
+      // Index 0 is chapter-level Assign on the major header; index 1 is the sub-objective Assign
+      await user.click(assignButtons[1]);
 
       // The submit Assign button should be disabled
       const submitButtons = screen.getAllByRole("button", { name: /^assign$/i });
@@ -1245,6 +1257,7 @@ describe("ObjectivesPage", () => {
             { _id: "a3", userId: "student_3", user: mockStudents[2] },
           ];
         }
+        if (query === "objectives.getAssignedStudentsForChapter") return [];
         if (query === "activities.getByObjective") return mockActivities;
         return undefined;
       });
@@ -1254,7 +1267,8 @@ describe("ObjectivesPage", () => {
 
       await user.click(screen.getByText("Fractions Fundamentals"));
       const assignButtons = screen.getAllByText("Assign");
-      await user.click(assignButtons[0]);
+      // Index 0 is chapter-level Assign on the major header; index 1 is the sub-objective Assign
+      await user.click(assignButtons[1]);
 
       expect(
         screen.getByText("All students are already assigned to this sub objective")
@@ -1267,7 +1281,8 @@ describe("ObjectivesPage", () => {
 
       await user.click(screen.getByText("Fractions Fundamentals"));
       const assignButtons = screen.getAllByText("Assign");
-      await user.click(assignButtons[0]);
+      // Index 0 is chapter-level Assign on the major header; index 1 is the sub-objective Assign
+      await user.click(assignButtons[1]);
 
       const bobCard = screen.getByText("Bob").closest("div[class*='cursor-pointer']");
       if (bobCard) {
@@ -1287,7 +1302,8 @@ describe("ObjectivesPage", () => {
 
       await user.click(screen.getByText("Fractions Fundamentals"));
       const assignButtons = screen.getAllByText("Assign");
-      await user.click(assignButtons[0]);
+      // Index 0 is chapter-level Assign on the major header; index 1 is the sub-objective Assign
+      await user.click(assignButtons[1]);
 
       expect(screen.getByText("Batch A")).toBeInTheDocument();
       expect(screen.getByText("Batch B")).toBeInTheDocument();
@@ -1410,7 +1426,8 @@ describe("ObjectivesPage", () => {
 
       await user.click(screen.getByText("Fractions Fundamentals"));
       const assignButtons = screen.getAllByText("Assign");
-      await user.click(assignButtons[0]);
+      // Index 0 is chapter-level Assign on the major header; index 1 is the sub-objective Assign
+      await user.click(assignButtons[1]);
 
       const bobCard = screen.getByText("Bob").closest("div[class*='cursor-pointer']");
       if (bobCard) {
@@ -1517,6 +1534,158 @@ describe("ObjectivesPage", () => {
 
       // Button should show loading state (disabled)
       expect(createButton).toBeDisabled();
+    });
+  });
+
+  describe("PYP Year 2 collapsible section", () => {
+    const mockMypMajor = {
+      _id: "major_myp_1",
+      title: "Fractions Fundamentals",
+      description: "Master the basics of fractions",
+      difficulty: "beginner",
+      estimatedHours: 5,
+      domainId: "domain_1",
+      curriculum: "MYP Y1",
+      subObjectives: [
+        {
+          _id: "sub_myp_1",
+          title: "Add fractions with like denominators",
+          description: "Learn to add fractions",
+          difficulty: "beginner",
+          estimatedHours: 1,
+          majorObjectiveId: "major_myp_1",
+        },
+      ],
+    };
+
+    const mockPypMajors = [
+      {
+        _id: "major_pyp_1",
+        title: "Number Crunching",
+        description: "Number Crunching",
+        difficulty: "beginner",
+        estimatedHours: 3,
+        domainId: "domain_1",
+        curriculum: "PYP Y2",
+        subObjectives: [
+          {
+            _id: "sub_pyp_1",
+            title: "Addition within 100",
+            description: "Practice adding numbers",
+            difficulty: "beginner",
+            estimatedHours: 1,
+            majorObjectiveId: "major_pyp_1",
+          },
+        ],
+      },
+      {
+        _id: "major_pyp_2",
+        title: "Fraction Adventures",
+        description: "Fraction Adventures",
+        difficulty: "beginner",
+        estimatedHours: 4,
+        domainId: "domain_1",
+        curriculum: "PYP Y2",
+        subObjectives: [],
+      },
+    ];
+
+    const mockMixedMajors = [mockMypMajor, ...mockPypMajors];
+
+    const setupMixedQueries = () => {
+      (useQuery as any).mockImplementation((query: string, args: any) => {
+        if (args === "skip") return undefined;
+        if (query === "domains.getAll") return mockDomains;
+        if (query === "users.getAll") return mockStudents;
+        if (query === "objectives.getByDomain") return mockMixedMajors;
+        if (query === "objectives.getAssignedStudents") return [];
+        if (query === "objectives.getAssignedStudentsForChapter") return [];
+        if (query === "activities.getByObjective") return [];
+        return undefined;
+      });
+    };
+
+    it("shows PYP Year 2 header when PYP objectives exist", () => {
+      setupMixedQueries();
+      render(<ObjectivesPage />);
+
+      expect(screen.getByText("PYP Year 2")).toBeInTheDocument();
+    });
+
+    it("shows MYP Year 1 header when both MYP and PYP exist", () => {
+      setupMixedQueries();
+      render(<ObjectivesPage />);
+
+      expect(screen.getByText("MYP Year 1")).toBeInTheDocument();
+    });
+
+    it("shows Gap-filling badge on PYP section", () => {
+      setupMixedQueries();
+      render(<ObjectivesPage />);
+
+      expect(screen.getByText("Gap-filling")).toBeInTheDocument();
+    });
+
+    it("shows PYP topic count badge", () => {
+      setupMixedQueries();
+      render(<ObjectivesPage />);
+
+      expect(screen.getByText("2 topics")).toBeInTheDocument();
+    });
+
+    it("PYP section is collapsed by default", () => {
+      setupMixedQueries();
+      render(<ObjectivesPage />);
+
+      // PYP header visible
+      expect(screen.getByText("PYP Year 2")).toBeInTheDocument();
+      // PYP objectives NOT visible (collapsed)
+      expect(screen.queryByText("Number Crunching")).not.toBeInTheDocument();
+      expect(screen.queryByText("Fraction Adventures")).not.toBeInTheDocument();
+    });
+
+    it("expands PYP section when clicking header", async () => {
+      setupMixedQueries();
+      const user = userEvent.setup();
+      render(<ObjectivesPage />);
+
+      // Click PYP header to expand
+      await user.click(screen.getByText("PYP Year 2"));
+
+      // PYP objectives now visible
+      expect(screen.getByText("Number Crunching")).toBeInTheDocument();
+      expect(screen.getByText("Fraction Adventures")).toBeInTheDocument();
+    });
+
+    it("collapses PYP section when clicking header again", async () => {
+      setupMixedQueries();
+      const user = userEvent.setup();
+      render(<ObjectivesPage />);
+
+      // Expand
+      await user.click(screen.getByText("PYP Year 2"));
+      expect(screen.getByText("Number Crunching")).toBeInTheDocument();
+
+      // Collapse
+      await user.click(screen.getByText("PYP Year 2"));
+      expect(screen.queryByText("Number Crunching")).not.toBeInTheDocument();
+    });
+
+    it("MYP objectives are always visible (not collapsed)", () => {
+      setupMixedQueries();
+      render(<ObjectivesPage />);
+
+      // MYP major should be visible even though PYP section exists
+      expect(screen.getByText("Fractions Fundamentals")).toBeInTheDocument();
+    });
+
+    it("does not show section headers when no PYP data exists", () => {
+      // Use default mock without PYP data (mockMajorObjectives has no curriculum field)
+      setupDefaultQueries();
+      render(<ObjectivesPage />);
+
+      expect(screen.queryByText("MYP Year 1")).not.toBeInTheDocument();
+      expect(screen.queryByText("PYP Year 2")).not.toBeInTheDocument();
     });
   });
 });
