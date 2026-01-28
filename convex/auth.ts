@@ -289,6 +289,51 @@ export const initializeStudent = mutation({
 });
 
 /**
+ * One-off: seed additional admin accounts.
+ * Idempotent — skips usernames that already exist.
+ * Run: npx convex run auth:seedAdmins
+ */
+export const seedAdmins = mutation({
+  args: {},
+  handler: async (ctx) => {
+    const admins = [
+      { username: "devisha", displayName: "devisha" },
+      { username: "vishwa", displayName: "vishwa" },
+    ];
+
+    const created: string[] = [];
+    for (const admin of admins) {
+      const existing = await ctx.db
+        .query("users")
+        .withIndex("by_username", (q) => q.eq("username", admin.username))
+        .unique();
+
+      const passwordHash = await hashPassword(admin.username);
+
+      if (existing) {
+        // Fix password if it doesn't match
+        if (existing.passwordHash !== passwordHash) {
+          await ctx.db.patch(existing._id, { passwordHash });
+          created.push(admin.username + " (password fixed)");
+        }
+        continue;
+      }
+
+      await ctx.db.insert("users", {
+        username: admin.username,
+        passwordHash,
+        displayName: admin.displayName,
+        role: "admin",
+        createdAt: Date.now(),
+      });
+      created.push(admin.username);
+    }
+
+    return { created, skipped: admins.length - created.length };
+  },
+});
+
+/**
  * Clean up expired sessions
  * Should be called periodically to prevent sessions table from growing
  */
