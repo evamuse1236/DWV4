@@ -20,6 +20,8 @@ export function VisionBoardPage() {
     updateCard,
     deleteCard,
     addArea,
+    updateArea,
+    deleteArea,
     incrementCounter,
     incrementProgress,
     incrementStreak,
@@ -52,6 +54,14 @@ export function VisionBoardPage() {
     setDetailOpen(open);
     if (!open) setSelectedCardId(null);
   }, []);
+
+  const handleDeleteArea = useCallback(
+    (id: string) => {
+      deleteArea(id);
+      if (selectedAreaId === id) setSelectedAreaId(null);
+    },
+    [deleteArea, selectedAreaId],
+  );
 
   return (
     <div>
@@ -113,6 +123,9 @@ export function VisionBoardPage() {
         onSelectArea={setSelectedAreaId}
         onNewGoal={() => setCreatorOpen(true)}
         onAddArea={addArea}
+        onUpdateArea={updateArea}
+        onDeleteArea={handleDeleteArea}
+        cards={cards}
       />
     </div>
   );

@@ -1,8 +1,10 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Plus, Check, ArrowLeft } from "@phosphor-icons/react";
-import type { VisionBoardArea } from "@/hooks/useVisionBoard";
+import { Plus, Check, ArrowLeft, PencilSimple, Trash } from "@phosphor-icons/react";
+import type { VisionBoardArea, VisionBoardCard } from "@/hooks/useVisionBoard";
 import { PhIcon, ICON_OPTIONS } from "./PhIcon";
+
+type MenuView = "list" | "create" | "edit";
 
 interface Props {
   areas: VisionBoardArea[];
@@ -10,6 +12,9 @@ interface Props {
   onSelectArea: (id: string | null) => void;
   onNewGoal: () => void;
   onAddArea: (name: string, emoji: string) => void;
+  onUpdateArea: (id: string, patch: { name?: string; emoji?: string }) => void;
+  onDeleteArea: (id: string) => void;
+  cards: VisionBoardCard[];
 }
 
 export function VisionBoardFAB({
@@ -18,13 +23,24 @@ export function VisionBoardFAB({
   onSelectArea,
   onNewGoal,
   onAddArea,
+  onUpdateArea,
+  onDeleteArea,
+  cards,
 }: Props) {
   const [open, setOpen] = useState(false);
-  const [creatingArea, setCreatingArea] = useState(false);
+  const [view, setView] = useState<MenuView>("list");
   const [newAreaName, setNewAreaName] = useState("");
   const [newAreaIcon, setNewAreaIcon] = useState("Star");
+
+  // Edit state
+  const [editingAreaId, setEditingAreaId] = useState<string | null>(null);
+  const [editName, setEditName] = useState("");
+  const [editIcon, setEditIcon] = useState("Star");
+  const [confirmDeleteAreaId, setConfirmDeleteAreaId] = useState<string | null>(null);
+
   const containerRef = useRef<HTMLDivElement>(null);
   const nameInputRef = useRef<HTMLInputElement>(null);
+  const editNameInputRef = useRef<HTMLInputElement>(null);
 
   // Close on outside click
   useEffect(() => {
@@ -46,8 +62,10 @@ export function VisionBoardFAB({
     if (!open) return;
     function handleKey(e: KeyboardEvent) {
       if (e.key === "Escape") {
-        if (creatingArea) {
-          setCreatingArea(false);
+        if (confirmDeleteAreaId) {
+          setConfirmDeleteAreaId(null);
+        } else if (view !== "list") {
+          setView("list");
         } else {
           setOpen(false);
         }
@@ -55,32 +73,66 @@ export function VisionBoardFAB({
     }
     document.addEventListener("keydown", handleKey);
     return () => document.removeEventListener("keydown", handleKey);
-  }, [open, creatingArea]);
+  }, [open, view, confirmDeleteAreaId]);
 
-  // Reset creation state when menu closes
+  // Reset all state when menu closes
   useEffect(() => {
     if (!open) {
-      setCreatingArea(false);
+      setView("list");
       setNewAreaName("");
       setNewAreaIcon("Star");
+      setEditingAreaId(null);
+      setEditName("");
+      setEditIcon("Star");
+      setConfirmDeleteAreaId(null);
     }
   }, [open]);
 
-  // Auto-focus name input when entering creation mode
+  // Auto-focus name input
   useEffect(() => {
-    if (creatingArea) {
-      nameInputRef.current?.focus();
-    }
-  }, [creatingArea]);
+    if (view === "create") nameInputRef.current?.focus();
+    if (view === "edit") editNameInputRef.current?.focus();
+  }, [view]);
 
   function handleCreateArea() {
     const name = newAreaName.trim();
     if (!name) return;
     onAddArea(name, newAreaIcon);
-    setCreatingArea(false);
+    setView("list");
     setNewAreaName("");
     setNewAreaIcon("Star");
   }
+
+  function startEditing(area: VisionBoardArea) {
+    setEditingAreaId(area.id);
+    setEditName(area.name);
+    setEditIcon(area.emoji);
+    setConfirmDeleteAreaId(null);
+    setView("edit");
+  }
+
+  function handleSaveEdit() {
+    if (!editingAreaId) return;
+    const name = editName.trim();
+    if (!name) return;
+    onUpdateArea(editingAreaId, { name, emoji: editIcon });
+    setView("list");
+    setEditingAreaId(null);
+  }
+
+  function handleDeleteArea() {
+    if (!confirmDeleteAreaId) return;
+    onDeleteArea(confirmDeleteAreaId);
+    setConfirmDeleteAreaId(null);
+    setEditingAreaId(null);
+    setView("list");
+  }
+
+  const cardCountForArea = (areaId: string) =>
+    cards.filter((c) => c.areaId === areaId).length;
+
+  // Determine which form view to show
+  const showForm = view === "create" || view === "edit";
 
   return (
     <div
@@ -98,10 +150,10 @@ export function VisionBoardFAB({
             className="mb-3 flex flex-col gap-2 min-w-[220px]"
           >
             <AnimatePresence mode="wait">
-              {creatingArea ? (
-                /* ---- New Area form ---- */
+              {showForm ? (
+                /* ---- Create / Edit Area form ---- */
                 <motion.div
-                  key="create-area"
+                  key={view === "create" ? "create-area" : "edit-area"}
                   initial={{ opacity: 0, x: 30 }}
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -30 }}
@@ -112,24 +164,33 @@ export function VisionBoardFAB({
                   <div className="flex items-center gap-2">
                     <button
                       type="button"
-                      onClick={() => setCreatingArea(false)}
+                      onClick={() => {
+                        setView("list");
+                        setConfirmDeleteAreaId(null);
+                      }}
                       className="w-7 h-7 rounded-full flex items-center justify-center hover:bg-black/5 transition-colors"
                     >
                       <ArrowLeft size={14} weight="bold" className="opacity-50" />
                     </button>
                     <span className="text-[11px] font-bold uppercase tracking-[0.1em] opacity-50">
-                      New Area
+                      {view === "create" ? "New Area" : "Edit Area"}
                     </span>
                   </div>
 
                   {/* Name input */}
                   <input
-                    ref={nameInputRef}
+                    ref={view === "create" ? nameInputRef : editNameInputRef}
                     type="text"
-                    value={newAreaName}
-                    onChange={(e) => setNewAreaName(e.target.value)}
+                    value={view === "create" ? newAreaName : editName}
+                    onChange={(e) =>
+                      view === "create"
+                        ? setNewAreaName(e.target.value)
+                        : setEditName(e.target.value)
+                    }
                     onKeyDown={(e) => {
-                      if (e.key === "Enter") handleCreateArea();
+                      if (e.key === "Enter") {
+                        view === "create" ? handleCreateArea() : handleSaveEdit();
+                      }
                     }}
                     placeholder="Area name..."
                     className="w-full px-3 py-2 rounded-xl border border-black/5 bg-white/60 text-sm font-body
@@ -142,34 +203,92 @@ export function VisionBoardFAB({
                       Icon
                     </label>
                     <div className="grid grid-cols-6 gap-1">
-                      {ICON_OPTIONS.map((name) => (
-                        <button
-                          key={name}
-                          type="button"
-                          onClick={() => setNewAreaIcon(name)}
-                          className={`w-8 h-8 rounded-lg flex items-center justify-center transition-all ${
-                            newAreaIcon === name
-                              ? "bg-[var(--color-primary)]/15 ring-2 ring-[var(--color-primary)]/40 scale-110"
-                              : "hover:bg-black/5 hover:scale-105"
-                          }`}
-                        >
-                          <PhIcon name={name} size={16} className="opacity-70" />
-                        </button>
-                      ))}
+                      {ICON_OPTIONS.map((iconName) => {
+                        const selected =
+                          view === "create"
+                            ? newAreaIcon === iconName
+                            : editIcon === iconName;
+                        return (
+                          <button
+                            key={iconName}
+                            type="button"
+                            onClick={() =>
+                              view === "create"
+                                ? setNewAreaIcon(iconName)
+                                : setEditIcon(iconName)
+                            }
+                            className={`w-8 h-8 rounded-lg flex items-center justify-center transition-all ${
+                              selected
+                                ? "bg-[var(--color-primary)]/15 ring-2 ring-[var(--color-primary)]/40 scale-110"
+                                : "hover:bg-black/5 hover:scale-105"
+                            }`}
+                          >
+                            <PhIcon name={iconName} size={16} className="opacity-70" />
+                          </button>
+                        );
+                      })}
                     </div>
                   </div>
 
-                  {/* Create button */}
+                  {/* Action button */}
                   <button
                     type="button"
-                    onClick={handleCreateArea}
-                    disabled={!newAreaName.trim()}
+                    onClick={view === "create" ? handleCreateArea : handleSaveEdit}
+                    disabled={
+                      view === "create" ? !newAreaName.trim() : !editName.trim()
+                    }
                     className="w-full py-2 rounded-xl bg-[var(--color-text)] text-white text-sm font-semibold
                                transition-all hover:brightness-110 active:scale-[0.97]
                                disabled:opacity-30 disabled:cursor-not-allowed"
                   >
-                    Create Area
+                    {view === "create" ? "Create Area" : "Save Changes"}
                   </button>
+
+                  {/* Delete danger zone — only in edit mode */}
+                  {view === "edit" && editingAreaId && (
+                    <div className="pt-2 border-t border-black/[0.06]">
+                      {confirmDeleteAreaId === editingAreaId ? (
+                        <div className="space-y-2">
+                          <p className="text-xs text-red-600 font-body text-center">
+                            Delete this area and{" "}
+                            <span className="font-bold">
+                              {cardCountForArea(editingAreaId)} card
+                              {cardCountForArea(editingAreaId) !== 1 ? "s" : ""}
+                            </span>
+                            ?
+                          </p>
+                          <div className="flex gap-2">
+                            <button
+                              type="button"
+                              onClick={() => setConfirmDeleteAreaId(null)}
+                              className="flex-1 py-1.5 rounded-lg text-xs font-semibold font-body
+                                         bg-black/5 hover:bg-black/10 transition-colors"
+                            >
+                              Cancel
+                            </button>
+                            <button
+                              type="button"
+                              onClick={handleDeleteArea}
+                              className="flex-1 py-1.5 rounded-lg text-xs font-semibold font-body
+                                         bg-red-500 text-white hover:bg-red-600 transition-colors"
+                            >
+                              Delete
+                            </button>
+                          </div>
+                        </div>
+                      ) : (
+                        <button
+                          type="button"
+                          onClick={() => setConfirmDeleteAreaId(editingAreaId)}
+                          className="flex items-center justify-center gap-2 w-full py-2 rounded-xl text-xs font-semibold font-body
+                                     text-red-500 hover:bg-red-500/10 transition-colors"
+                        >
+                          <Trash size={14} weight="bold" />
+                          Delete Area
+                        </button>
+                      )}
+                    </div>
+                  )}
                 </motion.div>
               ) : (
                 /* ---- Normal menu ---- */
@@ -201,13 +320,14 @@ export function VisionBoardFAB({
                           onSelectArea(area.id);
                           setOpen(false);
                         }}
+                        onEdit={() => startEditing(area)}
                       />
                     ))}
 
                     {/* New Area button */}
                     <button
                       type="button"
-                      onClick={() => setCreatingArea(true)}
+                      onClick={() => setView("create")}
                       className="flex items-center gap-3 w-full px-4 py-2.5 rounded-xl text-left font-body text-[12px]
                                  text-[var(--color-primary)] hover:bg-[var(--color-primary)]/5 transition-all
                                  font-semibold tracking-wide mt-0.5 border-t border-black/[0.04]"
@@ -221,7 +341,7 @@ export function VisionBoardFAB({
             </AnimatePresence>
 
             {/* New Goal action — always visible */}
-            {!creatingArea && (
+            {!showForm && (
               <button
                 type="button"
                 onClick={() => {
@@ -268,27 +388,45 @@ function AreaButton({
   icon,
   label,
   onClick,
+  onEdit,
 }: {
   active: boolean;
   icon: string;
   label: string;
   onClick: () => void;
+  onEdit?: () => void;
 }) {
   return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={`flex items-center gap-3 w-full px-4 py-2.5 rounded-xl text-left font-body text-sm transition-all ${
-        active
-          ? "bg-[var(--color-primary)]/15 text-[var(--color-text)] font-semibold"
-          : "text-[var(--color-text-muted)] hover:bg-black/[0.03] hover:text-[var(--color-text)]"
-      }`}
-    >
-      <PhIcon name={icon} size={18} className="opacity-70 shrink-0" />
-      <span className="truncate">{label}</span>
-      {active && (
-        <Check size={16} weight="bold" className="ml-auto opacity-60 shrink-0" />
+    <div className="group relative">
+      <button
+        type="button"
+        onClick={onClick}
+        className={`flex items-center gap-3 w-full px-4 py-2.5 rounded-xl text-left font-body text-sm transition-all ${
+          active
+            ? "bg-[var(--color-primary)]/15 text-[var(--color-text)] font-semibold"
+            : "text-[var(--color-text-muted)] hover:bg-black/[0.03] hover:text-[var(--color-text)]"
+        }`}
+      >
+        <PhIcon name={icon} size={18} className="opacity-70 shrink-0" />
+        <span className="truncate">{label}</span>
+        {active && (
+          <Check size={16} weight="bold" className="ml-auto opacity-60 shrink-0" />
+        )}
+      </button>
+      {onEdit && (
+        <button
+          type="button"
+          onClick={(e) => {
+            e.stopPropagation();
+            onEdit();
+          }}
+          className="absolute right-2 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full flex items-center justify-center
+                     opacity-0 group-hover:opacity-100 hover:bg-black/10 transition-all"
+          aria-label={`Edit ${label}`}
+        >
+          <PencilSimple size={12} weight="bold" className="opacity-50" />
+        </button>
       )}
-    </button>
+    </div>
   );
 }

@@ -84,6 +84,45 @@ export const addArea = mutation({
   },
 });
 
+export const updateArea = mutation({
+  args: {
+    areaId: v.id("visionBoardAreas"),
+    name: v.optional(v.string()),
+    emoji: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    const { areaId, ...fields } = args;
+    const updates: Record<string, unknown> = { isPreset: false };
+    if (fields.name !== undefined) updates.name = fields.name;
+    if (fields.emoji !== undefined) updates.emoji = fields.emoji;
+    await ctx.db.patch(areaId, updates);
+    return { success: true };
+  },
+});
+
+export const deleteArea = mutation({
+  args: { areaId: v.id("visionBoardAreas") },
+  handler: async (ctx, args) => {
+    const area = await ctx.db.get(args.areaId);
+    if (!area) throw new Error("Area not found");
+
+    // Cascade-delete all cards in this area
+    const cards = await ctx.db
+      .query("visionBoardCards")
+      .withIndex("by_user_area", (q) =>
+        q.eq("userId", area.userId).eq("areaId", args.areaId),
+      )
+      .collect();
+
+    for (const card of cards) {
+      await ctx.db.delete(card._id);
+    }
+
+    await ctx.db.delete(args.areaId);
+    return { success: true };
+  },
+});
+
 // ---------------------------------------------------------------------------
 // Mutations — cards CRUD
 // ---------------------------------------------------------------------------

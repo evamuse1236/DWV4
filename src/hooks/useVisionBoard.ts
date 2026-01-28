@@ -168,6 +168,8 @@ export function useVisionBoard() {
   const updateCardMut = useMutation(api.visionBoard.updateCard);
   const deleteCardMut = useMutation(api.visionBoard.deleteCard);
   const addAreaMut = useMutation(api.visionBoard.addArea);
+  const updateAreaMut = useMutation(api.visionBoard.updateArea);
+  const deleteAreaMut = useMutation(api.visionBoard.deleteArea);
   const incrementCounterMut = useMutation(api.visionBoard.incrementCounter);
   const incrementProgressMut = useMutation(api.visionBoard.incrementProgress);
   const incrementStreakMut = useMutation(api.visionBoard.incrementStreak);
@@ -233,6 +235,23 @@ export function useVisionBoard() {
     [userId, addAreaMut],
   );
 
+  const updateArea = useCallback(
+    (id: string, patch: { name?: string; emoji?: string }) => {
+      updateAreaMut({
+        areaId: id as Id<"visionBoardAreas">,
+        ...patch,
+      });
+    },
+    [updateAreaMut],
+  );
+
+  const deleteArea = useCallback(
+    (id: string) => {
+      deleteAreaMut({ areaId: id as Id<"visionBoardAreas"> });
+    },
+    [deleteAreaMut],
+  );
+
   // ---- Interaction helpers ----
 
   const incrementCounter = useCallback(
@@ -288,6 +307,8 @@ export function useVisionBoard() {
     updateCard,
     deleteCard,
     addArea,
+    updateArea,
+    deleteArea,
     incrementCounter,
     incrementProgress,
     incrementStreak,

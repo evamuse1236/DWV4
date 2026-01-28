@@ -40,6 +40,7 @@ import {
   CheckSquare,
   Notebook,
   ArrowLeft,
+  Trash,
 } from "@phosphor-icons/react";
 
 // ---------------------------------------------------------------------------
@@ -87,6 +88,7 @@ const ICON_MAP: Record<string, React.ComponentType<IconProps>> = {
   CheckSquare,
   Notebook,
   ArrowLeft,
+  Trash,
 };
 
 // ---------------------------------------------------------------------------
