@@ -1,0 +1,94 @@
+{
+  "description": "KA URL additions and replacements for coverage gaps and content mismatches identified in audit",
+  "created": "2026-01-29",
+  "assignments": [
+    {
+      "curriculum": "MYP Y1",
+      "row": 57,
+      "topic": "Percentage",
+      "learning_objective_abbrev": "Find percent of a number",
+      "mode": "add",
+      "ka_unit_name": "Percent problems (6th grade)",
+      "ka_unit_url": "https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:cc-6th-rates-and-percentages/cc-6th-percent-problems",
+      "match_quality": "strong",
+      "note": "Specific percent calculation topic — better match than general Pre-Algebra percentages unit"
+    },
+    {
+      "curriculum": "MYP Y1",
+      "row": 60,
+      "topic": "Data",
+      "learning_objective_abbrev": "Read and interpret a line graph",
+      "mode": "add",
+      "ka_unit_name": "Represent and interpret data",
+      "ka_unit_url": "https://www.khanacademy.org/kmap/measurement-and-data-d/represent-interpret-data",
+      "match_quality": "strong",
+      "note": "Data interpretation unit — complements existing Brilliant statistics content"
+    },
+    {
+      "curriculum": "MYP Y1",
+      "row": 61,
+      "topic": "Data",
+      "learning_objective_abbrev": "Plot a line graph",
+      "mode": "add",
+      "ka_unit_name": "Represent and interpret data",
+      "ka_unit_url": "https://www.khanacademy.org/kmap/measurement-and-data-d/represent-interpret-data",
+      "match_quality": "strong",
+      "note": "Data representation unit — plotting and reading graphs"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 4,
+      "topic": "Geometry ( Angles)",
+      "learning_objective_abbrev": "Measure and sketch angles with protractor",
+      "mode": "add",
+      "ka_unit_name": "Measuring angles",
+      "ka_unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2/imp-measuring-angles",
+      "match_quality": "strong",
+      "note": "Direct match — 4th grade protractor measurement topic"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 8,
+      "topic": "Geometry (2D shapes)",
+      "learning_objective_abbrev": "Classify triangles (right, isosceles, equilateral)",
+      "mode": "add",
+      "ka_unit_name": "Classifying triangles",
+      "ka_unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/plane-figures/imp-classifying-triangles",
+      "match_quality": "strong",
+      "note": "Direct match — classifying by sides and angles at 4th grade level"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 33,
+      "topic": "Fractions",
+      "learning_objective_abbrev": "Convert mixed to improper fraction",
+      "mode": "add",
+      "ka_unit_name": "Mixed numbers (4th grade)",
+      "ka_unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2/imp-mixed-numbers",
+      "match_quality": "strong",
+      "note": "Specific mixed numbers topic — more focused than general Arithmetic review"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 35,
+      "topic": "Fractions",
+      "learning_objective_abbrev": "Compare unlike fractions",
+      "mode": "add",
+      "ka_unit_name": "Equivalent fractions and comparing fractions",
+      "ka_unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/comparing-fractions-and-equivalent-fractions",
+      "match_quality": "strong",
+      "note": "Comparing fractions with unlike denominators"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 39,
+      "topic": "Fractions",
+      "learning_objective_abbrev": "Solve word problems (add/sub fractions)",
+      "mode": "add",
+      "ka_unit_name": "Adding/subtracting fractions word problems",
+      "ka_unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-3/imp-adding-and-subtracting-fractions-with-unlike-denominators-word-problems",
+      "match_quality": "strong",
+      "note": "Specific word problems topic — better match than general add/subtract fractions unit"
+    }
+  ]
+}

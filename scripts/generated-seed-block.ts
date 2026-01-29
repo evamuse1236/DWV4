@@ -4,33 +4,33 @@
         title: "Intuition of fraction",
         description: "Fraction Fundamentals: Intuition of fraction",
         activities: [
-        { title: "3rd Grade - Understand fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-third-grade-math/imp-fractions" }
+        { title: "Understand fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-third-grade-math/imp-fractions" }
         ],
       },
       {
         title: "LCM and Comparing fractions",
         description: "Fraction Fundamentals: LCM and Comparing fractions",
         activities: [
-        { title: "4th Grade - Equivalent fractions and comparing fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/comparing-fractions-and-equivalent-fractions" },
-        { title: "Arithmetic Thinking: comparing-numerators", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/comparing-fractions/comparing-numerators/" },
-        { title: "Arithmetic Thinking: same-numerator", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/comparing-fractions/same-numerator/" },
-        { title: "Arithmetic Thinking: den-multiples", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/comparing-fractions/den-multiples/" },
-        { title: "Arithmetic Thinking: not-multiples", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/comparing-fractions/not-multiples/" },
-        { title: "Arithmetic Thinking: greatest-fraction", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/comparing-fractions/greatest-fraction/" }
+        { title: "Equivalent fractions and comparing fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/comparing-fractions-and-equivalent-fractions" },
+        { title: "Arithmetic Thinking: Comparing Numerators", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/comparing-fractions/comparing-numerators/" },
+        { title: "Arithmetic Thinking: Comparing Denominators", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/comparing-fractions/same-numerator/" },
+        { title: "Arithmetic Thinking: Comparing Equivalents", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/comparing-fractions/den-multiples/" },
+        { title: "Arithmetic Thinking: Comparing More Equivalents", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/comparing-fractions/not-multiples/" },
+        { title: "Arithmetic Thinking: Identifying the Greatest", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/comparing-fractions/greatest-fraction/" }
         ],
       },
       {
         title: "GCF and Simplifying fractions",
         description: "Fraction Fundamentals: GCF and Simplifying fractions",
         activities: [
-
+        { title: "Equivalent fractions and comparing fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/comparing-fractions-and-equivalent-fractions" }
         ],
       },
       {
         title: "Add, Subtract fractions & Multiply fractions",
         description: "Fraction Fundamentals: Add, Subtract fractions & Multiply fractions",
         activities: [
-        { title: "4th Grade - Add and subtract fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2" }
+        { title: "Add and subtract fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2" }
         ],
       }
     ]);
@@ -48,86 +48,86 @@
         title: "Do multi-digit division problems using algorithm (4-digit by 2 digit)",
         description: "SWBAT do multi-digit division problems using algorithm (4-digit by 2 digit)",
         activities: [
-
+        { title: "Division", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/division" }
         ],
       },
       {
         title: "Solve simple word problems using addition, subtraction, multiplication, and division",
         description: "SWBAT solve simple word problems using addition, subtraction, multiplication, and division",
         activities: [
-
+        { title: "Intro to multiplication", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-third-grade-math/intro-to-multiplication" }
         ],
       },
       {
         title: "Solve multi-step word problems using addition, subtraction, multiplication, and division.",
         description: "SWBAT solve multi-step word problems using addition, subtraction, multiplication, and division.",
         activities: [
-
+        { title: "Multiplication and division", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/cc-4th-mult-div-topic" }
         ],
       },
       {
         title: "Mentally estimate results of operations on multi-digit numbers using rounding strategies.",
         description: "SWBAT mentally estimate results of operations on multi-digit numbers using rounding strategies.\nExample: 43 × 13 should be roughly 500 since (43×10)= 430",
         activities: [
-
+        { title: "Addition, subtraction, and estimation", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-third-grade-math/imp-addition-and-subtraction" }
         ],
       },
       {
         title: "Use rounding strategies and inverse operations to verify and cross-check answers to word problems",
         description: "SWBAT use rounding strategies and inverse operations to verify and cross-check answers to word problems",
         activities: [
-
+        { title: "More with multiplication and division", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-third-grade-math/imp-multiplication-and-division" }
         ],
       },
       {
         title: "Basics of negative numbers",
         description: "Deepwork: Basics of negative numbers",
         activities: [
-        { title: "Arithmetic Thinking: numeric-expressions-1", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-1/" },
-        { title: "Arithmetic Thinking: numeric-expressions-3", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-3/" },
-        { title: "Arithmetic Thinking: numeric-expressions-2", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-2/" },
-        { title: "Arithmetic Thinking: numeric-expressions-4", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-4/" },
-        { title: "Arithmetic Thinking: numeric-expressions-205", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-205/" },
-        { title: "Arithmetic Thinking: numeric-expressions-21", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-21/" },
-        { title: "Arithmetic Thinking: numeric-expressions-25", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-25/" },
-        { title: "Arithmetic Thinking: numeric-expressions-26", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-26/" },
-        { title: "Arithmetic Thinking: number-line-subtraction-1", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/number-line-subtraction-1/" },
-        { title: "Arithmetic Thinking: numeric-expressions-22", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-22/" },
-        { title: "Arithmetic Thinking: numeric-order-magnitude-1", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-magnitude-1/" },
-        { title: "Arithmetic Thinking: numeric-order-magnitude-2", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-magnitude-2/" },
-        { title: "Arithmetic Thinking: numeric-order-magnitude-4", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-magnitude-4/" },
-        { title: "Arithmetic Thinking: numeric-order-magnitude-5", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-magnitude-5/" },
-        { title: "Arithmetic Thinking: numeric-order-and-magnitude-6", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-and-magnitude-6/" },
-        { title: "Arithmetic Thinking: numeric-order-and-magnitude-7", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-and-magnitude-7/" },
-        { title: "Arithmetic Thinking: distance-1", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-1/" },
-        { title: "Arithmetic Thinking: distance-2", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-2/" },
-        { title: "Arithmetic Thinking: distance-3", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-3/" },
-        { title: "Arithmetic Thinking: distance-4", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-4/" },
-        { title: "Arithmetic Thinking: distance-6", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-6/" }
+        { title: "Arithmetic Thinking: Positives and Negatives", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-1/" },
+        { title: "Arithmetic Thinking: Negative Numbers", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-3/" },
+        { title: "Arithmetic Thinking: Making Integers", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-2/" },
+        { title: "Arithmetic Thinking: Addition", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-4/" },
+        { title: "Arithmetic Thinking: The Number Line", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-205/" },
+        { title: "Arithmetic Thinking: Addition on the Number Line", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-21/" },
+        { title: "Arithmetic Thinking: Adding Large Integers", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-25/" },
+        { title: "Arithmetic Thinking: Adding Several Integers", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-26/" },
+        { title: "Arithmetic Thinking: Subtraction from 0", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/number-line-subtraction-1/" },
+        { title: "Arithmetic Thinking: Subtraction on the Number Line", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-22/" },
+        { title: "Arithmetic Thinking: Ordering Integers", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-magnitude-1/" },
+        { title: "Arithmetic Thinking: Ordering Negatives", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-magnitude-2/" },
+        { title: "Arithmetic Thinking: Absolute Value", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-magnitude-4/" },
+        { title: "Arithmetic Thinking: Adding and Absolute Value", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-magnitude-5/" },
+        { title: "Arithmetic Thinking: Absolute Value Inequalities", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-and-magnitude-6/" },
+        { title: "Arithmetic Thinking: Reasoning with Absolute Value", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-and-magnitude-7/" },
+        { title: "Arithmetic Thinking: Distance Between Integers", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-1/" },
+        { title: "Arithmetic Thinking: A Pair at Every Distance", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-2/" },
+        { title: "Arithmetic Thinking: Subtracting to Find Distance", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-3/" },
+        { title: "Arithmetic Thinking: Absolute Value and Distance", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-4/" },
+        { title: "Arithmetic Thinking: Reasoning About Distance", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-6/" }
         ],
       },
       {
         title: "Operations with negative numbers",
         description: "Deepwork: Operations with negative numbers",
         activities: [
-        { title: "6th Grade - Negative numbers", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic" },
-        { title: "Arithmetic Thinking: numeric-expressions-5", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-5/" },
-        { title: "Arithmetic Thinking: numeric-expressions-6", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-6/" },
-        { title: "Arithmetic Thinking: numeric-expressions-7", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-7/" },
-        { title: "Arithmetic Thinking: numeric-expressions-8", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-8/" },
-        { title: "Arithmetic Thinking: numeric-expressions-9", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-9/" },
-        { title: "Arithmetic Thinking: numeric-expressions-10", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-10/" },
-        { title: "Arithmetic Thinking: numeric-expressions-11", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-11/" },
-        { title: "Arithmetic Thinking: numeric-expressions-12", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-12/" },
-        { title: "Arithmetic Thinking: numeric-expressions-13", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-13/" },
-        { title: "Arithmetic Thinking: numeric-expressions-16b", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-16b/" },
-        { title: "Arithmetic Thinking: numeric-expressions-15", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-15/" },
-        { title: "Arithmetic Thinking: numeric-expressions-16", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-16/" },
-        { title: "Arithmetic Thinking: numeric-expression-17", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expression-17/" },
-        { title: "Arithmetic Thinking: numeric-expressions-18", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expressions-18/" },
-        { title: "Arithmetic Thinking: numeric-expressions-18b", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expressions-18b/" },
-        { title: "Arithmetic Thinking: numeric-expressions-19", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expressions-19/" },
-        { title: "Arithmetic Thinking: numeric-expressions-20", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expressions-20/" }
+        { title: "Negative numbers", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic" },
+        { title: "Arithmetic Thinking: Increasing Value", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-5/" },
+        { title: "Arithmetic Thinking: Decreasing Value", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-6/" },
+        { title: "Arithmetic Thinking: Zero", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-7/" },
+        { title: "Arithmetic Thinking: Opposites", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-8/" },
+        { title: "Arithmetic Thinking: Adding Negatives", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-9/" },
+        { title: "Arithmetic Thinking: Adding Negatives and Positives", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-10/" },
+        { title: "Arithmetic Thinking: Missing Values", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-11/" },
+        { title: "Arithmetic Thinking: Subtracting Positives", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-12/" },
+        { title: "Arithmetic Thinking: Subtracting Negatives", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-13/" },
+        { title: "Arithmetic Thinking: Subtracting From Zero", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-16b/" },
+        { title: "Arithmetic Thinking: Subtracting Positives 2", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-15/" },
+        { title: "Arithmetic Thinking: Subtracting Negatives 2", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-16/" },
+        { title: "Arithmetic Thinking: Adding The Opposite", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expression-17/" },
+        { title: "Arithmetic Thinking: Subtracting Using Addition", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expressions-18/" },
+        { title: "Arithmetic Thinking: Subtracting the Opposite", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expressions-18b/" },
+        { title: "Arithmetic Thinking: Order in Subtraction", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expressions-19/" },
+        { title: "Arithmetic Thinking: Adding in Any Order", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expressions-20/" }
         ],
       }
     ]);
@@ -196,14 +196,14 @@
         title: "Prime and Composite",
         description: "Deepwork: Prime and Composite",
         activities: [
-        { title: "4th Grade - Factors, multiples and patterns", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-factors-multiples-and-patterns" }
+        { title: "Factors, multiples and patterns", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-factors-multiples-and-patterns" }
         ],
       },
       {
         title: "Least Common Multiple",
         description: "Deep Work: Least Common Multiple",
         activities: [
-        { title: "Pre-Algebra - Factors and multiples", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/pre-algebra/pre-algebra-factors-multiples" },
+        { title: "Factors and multiples", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/pre-algebra/pre-algebra-factors-multiples" },
         { title: "Number Theory: the-lcm", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/gcd-and-lcm-2/the-lcm/" },
         { title: "Number Theory: billiard-tables", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/gcd-and-lcm-2/billiard-tables/" },
         { title: "Number Theory: number-jumping-i", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/gcd-and-lcm-2/number-jumping-i/" },
@@ -238,16 +238,16 @@
         title: "Add and subtract mixed fractions",
         description: "SWBAT add and subtract mixed fractions",
         activities: [
-
+        { title: "Add and subtract mixed numbers", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/arithmetic-home/arith-review-fractions/add-sub-mixed-numbers" }
         ],
       },
       {
         title: "Multiply a fraction with whole number and another fraction",
         description: "SWBAT multiply a fraction with whole number and another fraction",
         activities: [
-        { title: "Arithmetic Thinking: fraction-by-integer", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/fraction-by-integer/" },
-        { title: "Arithmetic Thinking: expressing-multiples", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/expressing-multiples/" },
-        { title: "Arithmetic Thinking: multiplying-fractions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/multiplying-fractions/" }
+        { title: "Arithmetic Thinking: Multiples of Fractions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/fraction-by-integer/" },
+        { title: "Arithmetic Thinking: Expressing Multiples", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/expressing-multiples/" },
+        { title: "Arithmetic Thinking: Multiplying Fractions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/multiplying-fractions/" }
         ],
       },
       {
@@ -261,14 +261,14 @@
         title: "Divide a fraction with another fraction",
         description: "SWBAT divide a fraction with another fraction ",
         activities: [
-
+        { title: "Fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/pre-algebra/pre-algebra-fractions" }
         ],
       },
       {
         title: "Solve word problems involving addition, subtraction, multiplicaiton, division of Fractions using equations and visual models.",
         description: "SWBAT solve word problems involving addition, subtraction, multiplicaiton, division of Fractions using equations and visual models.",
         activities: [
-
+        { title: "Add and subtract fractions (different denominators)", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/arithmetic/x18ca194a:add-and-subtract-fractions-different-denominators" }
         ],
       }
     ]);
@@ -294,7 +294,7 @@
         title: "Decimal Multiplication",
         description: "Deep Work: Decimal Multiplication",
         activities: [
-
+        { title: "Arithmetic decimals", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/arithmetic/arith-decimals" }
         ],
       },
       {
@@ -308,7 +308,7 @@
         title: "Dividing Decimals by Decimals",
         description: "Deep Work: Dividing Decimals by Decimals",
         activities: [
-
+        { title: "Decimals", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/arithmetic-home/arith-review-decimals" }
         ],
       },
       {
@@ -345,7 +345,7 @@
         title: "Solve word problems involving addition, subtraction, multiplication, division of Decimals using equations and visual models.",
         description: "SWBAT solve word problems involving addition, subtraction, multiplication, division of Decimals using equations and visual models.",
         activities: [
-
+        { title: "Get ready for adding and subtracting decimals", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/get-ready-for-5th-grade/x01d8909412c13b9d:get-ready-for-adding-subtracting-decimals" }
         ],
       }
     ]);
@@ -427,7 +427,7 @@
         title: "Solve real-world problems involving the area of other two-dimensional figures (Triangles, Parallelograms, composite shapes)  (exception Circles)",
         description: "SWBAT solve real-world problems involving the area of other two-dimensional figures (Triangles, Parallelograms, composite shapes)  (exception Circles)",
         activities: [
-        { title: "6th Grade - Geometry (area of parallelograms, triangles, composite figures)", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic" },
+        { title: "Geometry (area of parallelograms, triangles, composite figures)", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic" },
         { title: "Geometry Fundamentals: surface-area-2", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/geometry-fundamentals/surface-area/surface-area-2/" },
         { title: "Geometry Fundamentals: surface-area-shortcut", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/geometry-fundamentals/surface-area/surface-area-shortcut/" },
         { title: "Geometry Fundamentals: pyramids-cones-2", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/geometry-fundamentals/surface-area/pyramids-cones-2/" },
@@ -528,7 +528,7 @@
         title: "Use the order of operations to correctly evaluate numerical expressions with parentheses, brackets, and braces.",
         description: "SWBAT use the order of operations to correctly evaluate numerical expressions with parentheses, brackets, and braces.\nExpression: 3 × (4 + 2)\n“First add 4 + 2 = 6, then 3 × 6 = 18.”",
         activities: [
-
+        { title: "Exponents intro and order of operations", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/pre-algebra/xb4832e56:exponents-intro-and-order-of-operations" }
         ],
       }
     ]);
@@ -560,7 +560,7 @@
         title: "Distinguish variables and constants in an expression/equation.",
         description: "SWBAT distinguish variables and constants in an expression/equation. \nIdentify the constant and variable in each:\na. 4x + 7\nb. X is the number of tickets bought. Cost of each ticket is 50 Rs. I pay a total cost according to the number of tickets bought.  T = 50X ",
         activities: [
-        { title: "6th Grade - Variables & expressions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables" }
+        { title: "Variables & expressions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables" }
         ],
       },
       {
@@ -615,7 +615,7 @@
         title: "Solve word problems and solving equations of the form x + p = q and px = q (with non-negative rational numbers).",
         description: "SWBAT solve word problems and solving equations of the form x + p = q and px = q (with non-negative rational numbers).\neg. A pen and a notebook together cost ₹120. The pen costs ₹45. How much is the notebook?”\nEquation: 45 + n = 120 → n = 120 – 45 = 75.",
         activities: [
-        { title: "6th Grade - Equations & inequalities", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities" },
+        { title: "Equations & inequalities", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities" },
         { title: "Solving Equations: unbalanced-scales", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/pre-algebra/inequalities/unbalanced-scales/" },
         { title: "Solving Equations: inequalities-both-ways", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/pre-algebra/inequalities/inequalities-both-ways/" },
         { title: "Solving Equations: balancing-scales-3", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/pre-algebra/inequalities/balancing-scales-3/" },
@@ -691,7 +691,7 @@
         title: "Understand a unit rate a/b as a ratio a:b and use correct “per” language in context.",
         description: "SWBAT understand a unit rate a/b as a ratio a:b and use correct “per” language in context.\neg. “3 cups flour for 4 cups sugar” → unit rate is  3/4th cup flour per 1 cup sugar; \nA car travels 150 miles in 3 hours. What is the unit rate in miles per hour?\n",
         activities: [
-        { title: "6th Grade - Rates and percentages", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:cc-6th-rates-and-percentages" },
+        { title: "Rates and percentages", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:cc-6th-rates-and-percentages" },
         { title: "Proportional Relationships: new-color-1", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/proportional-relationships/setting-up-ratios/new-color-1/" },
         { title: "Proportional Relationships: scale-up-color", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/proportional-relationships/setting-up-ratios/scale-up-color/" },
         { title: "Proportional Relationships: make-smaller-color", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/proportional-relationships/setting-up-ratios/make-smaller-color/" },
@@ -742,28 +742,29 @@
         title: "Understand a percent as a rate per 100 and as a fraction and decimal.",
         description: "SWBAT understand a percent as a rate per 100 and as a fraction and decimal.\neg. 25% means 25 out of 100, so 25%=25/100=1/4=0.25",
         activities: [
-        { title: "Arithmetic Thinking: intro-to-percentages", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-using-percentages/intro-to-percentages/" },
-        { title: "Arithmetic Thinking: calculating-percentages", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-using-percentages/calculating-percentages/" },
-        { title: "Arithmetic Thinking: battery-percentages", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-using-percentages/battery-percentages/" },
-        { title: "Arithmetic Thinking: fraction-equivalence-blanks", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-using-percentages/fraction-equivalence-blanks/" }
+        { title: "Arithmetic Thinking: Intro to Percentages", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-using-percentages/intro-to-percentages/" },
+        { title: "Arithmetic Thinking: Working out Percentages", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-using-percentages/calculating-percentages/" },
+        { title: "Arithmetic Thinking: Percentages and Batteries", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-using-percentages/battery-percentages/" },
+        { title: "Arithmetic Thinking: Percentages as Fractions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-using-percentages/fraction-equivalence-blanks/" }
         ],
       },
       {
         title: "Convert a number from fraction to percent and decimal, and vice versa.",
         description: "SWBAT convert a number from fraction to percent and decimal, and vice versa.\neg. 3/5=0.6=60%\n0.08=8%",
         activities: [
-        { title: "Arithmetic Thinking: tenths-equivalence", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/tenths-equivalence/" },
-        { title: "Arithmetic Thinking: hundredths-equivalence", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/hundredths-equivalence/" },
-        { title: "Arithmetic Thinking: finding-the-percentage", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/finding-the-percentage/" },
-        { title: "Arithmetic Thinking: converting-to-decimals", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/converting-to-decimals/" },
-        { title: "Arithmetic Thinking: calculating-the-percentage", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/calculating-the-percentage/" }
+        { title: "Arithmetic Thinking: Percentages as Tenths", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/tenths-equivalence/" },
+        { title: "Arithmetic Thinking: Percentages as Hundredths", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/hundredths-equivalence/" },
+        { title: "Arithmetic Thinking: Finding the Percentage", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/finding-the-percentage/" },
+        { title: "Arithmetic Thinking: Percentages as Decimals", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/converting-to-decimals/" },
+        { title: "Arithmetic Thinking: Calculating the Percentage", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/calculating-the-percentage/" }
         ],
       },
       {
         title: "Find a given percent of a number, using models or equations.",
         description: "SWBAT Find a given percent of a number, using models or equations.\neg. Find  30% of 50\nA class of 40 students: 25% are absent, how many are absent",
         activities: [
-
+        { title: "Percentages", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/pre-algebra/xb4832e56:percentages" },
+        { title: "Percent problems (6th grade)", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:cc-6th-rates-and-percentages/cc-6th-percent-problems" }
         ],
       },
       {
@@ -779,18 +780,18 @@
         title: "Solve real-world problems involving percent increase, decrease, discounts, tips, and taxes.",
         description: "SWBAT solve real-world problems involving percent increase, decrease, discounts, tips, and taxes.\neg. Discount: A shirt costs $200 with 20% off. How much is the final cost?\nIncrease: A population grows from 1,000 to 1,200. How much % has it grown?",
         activities: [
-        { title: "Arithmetic Thinking: percent-increase", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-percent-increase/percent-increase/" },
-        { title: "Arithmetic Thinking: price-increase", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-percent-increase/price-increase/" },
-        { title: "Arithmetic Thinking: percent-increase-blanks", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-percent-increase/percent-increase-blanks/" },
-        { title: "Arithmetic Thinking: percent-decrease", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-percent-decrease/percent-decrease/" },
-        { title: "Arithmetic Thinking: percentage-decrease-blanks", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-percent-decrease/percentage-decrease-blanks/" },
-        { title: "Arithmetic Thinking: finding-the-original-price", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-percent-decrease/finding-the-original-price/" },
-        { title: "Arithmetic Thinking: reversing-percentages", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-percent-decrease/reversing-percentages/" },
-        { title: "Arithmetic Thinking: compound-changes-receipts", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/compound-changes-receipts/" },
-        { title: "Arithmetic Thinking: compound-calculations-receipts", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/compound-calculations-receipts/" },
-        { title: "Arithmetic Thinking: splitting-percent-changes", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/splitting-percent-changes/" },
-        { title: "Arithmetic Thinking: compound-calculations-bars", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/compound-calculations-bars/" },
-        { title: "Arithmetic Thinking: exponential-growth-percentages", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/exponential-growth-percentages/" }
+        { title: "Arithmetic Thinking: Percent Increase", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-percent-increase/percent-increase/" },
+        { title: "Arithmetic Thinking: Price Increase", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-percent-increase/price-increase/" },
+        { title: "Arithmetic Thinking: Calculating Percent Increase", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-percent-increase/percent-increase-blanks/" },
+        { title: "Arithmetic Thinking: Percent Decrease", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-percent-decrease/percent-decrease/" },
+        { title: "Arithmetic Thinking: Calculating Percent Decrease", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-percent-decrease/percentage-decrease-blanks/" },
+        { title: "Arithmetic Thinking: Finding the Original Price", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-percent-decrease/finding-the-original-price/" },
+        { title: "Arithmetic Thinking: Reversing Percentages", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-percent-decrease/reversing-percentages/" },
+        { title: "Arithmetic Thinking: Compound Changes", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/compound-changes-receipts/" },
+        { title: "Arithmetic Thinking: Compound Calculations", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/compound-calculations-receipts/" },
+        { title: "Arithmetic Thinking: Splitting Percent Changes", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/splitting-percent-changes/" },
+        { title: "Arithmetic Thinking: Growing and Shrinking", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/compound-calculations-bars/" },
+        { title: "Arithmetic Thinking: Exponential Growth", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/exponential-growth-percentages/" }
         ],
       }
     ]);
@@ -801,6 +802,7 @@
         title: "Read and interpret a line graph",
         description: "SWBAT read and interpret a line graph",
         activities: [
+        { title: "Represent and interpret data", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/kmap/measurement-and-data-d/represent-interpret-data" },
         { title: "Everyday Statistics: ds-mean-0", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/means/ds-mean-0/" },
         { title: "Everyday Statistics: edv-mean-7", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/means/edv-mean-7/" },
         { title: "Everyday Statistics: ds-distributions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/means/ds-distributions/" },
@@ -821,6 +823,7 @@
         description: "SWBAT plot a line graph",
         activities: [
         { title: "Line plots", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/line-plots" },
+        { title: "Represent and interpret data", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/kmap/measurement-and-data-d/represent-interpret-data" },
         { title: "Everyday Statistics: ds-median-1", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/median/ds-median-1/" },
         { title: "Everyday Statistics: ds-median-2", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/median/ds-median-2/" },
         { title: "Everyday Statistics: ds-median-3", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/median/ds-median-3/" },
@@ -843,7 +846,7 @@
         title: "SWBAT Identify common angles like 30, 45, 60, 90,  right, acute, and obtuse.",
         description: "SWBAT Identify common angles like 30, 45, 60, 90,  right, acute, and obtuse.",
         activities: [
-        { title: "4th Grade - Measuring angles", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2" },
+        { title: "Measuring angles", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2" },
         { title: "Geometry Fundamentals: angle-facts-3", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/geometry-fundamentals/angles/angle-facts-3/" },
         { title: "Geometry Fundamentals: parallel-lines-2", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/geometry-fundamentals/angles/parallel-lines-2/" },
         { title: "Geometry Fundamentals: triangle-sides-and-angles-2", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/geometry-fundamentals/angles/triangle-sides-and-angles-2/" }
@@ -853,6 +856,7 @@
         title: "SWBAT measure and sketch angles with protractor",
         description: "SWBAT measure and sketch angles with protractor",
         activities: [
+        { title: "Measuring angles", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2/imp-measuring-angles" },
         { title: "Geometry Fundamentals: perimeters-2", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/geometry-fundamentals/angles-and-lengths/perimeters-2/" },
         { title: "Geometry Fundamentals: circles-9", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/geometry-fundamentals/angles-and-lengths/circles-9/" },
         { title: "Geometry Fundamentals: circles-10", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/geometry-fundamentals/angles-and-lengths/circles-10/" }
@@ -895,6 +899,7 @@
         title: "SWBAT identify and classify triangles (Right, isoceles, equilateral)",
         description: "SWBAT identify and classify triangles (Right, isoceles, equilateral)",
         activities: [
+        { title: "Classifying triangles", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/plane-figures/imp-classifying-triangles" },
         { title: "Geometry Fundamentals: pythagorean-theorem-diagrammar-2", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/geometry-fundamentals/pythagoras-geometry-3/pythagorean-theorem-diagrammar-2/" },
         { title: "Geometry Fundamentals: using-the-pythagorean-theorem", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/geometry-fundamentals/pythagoras-geometry-3/using-the-pythagorean-theorem/" },
         { title: "Geometry Fundamentals: square-roots", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/geometry-fundamentals/pythagoras-geometry-3/square-roots/" },
@@ -961,63 +966,63 @@
         title: "SWBAT read and write multi-digit numbers in standard, word, and expanded form.",
         description: "SWBAT read and write multi-digit numbers in standard, word, and expanded form.",
         activities: [
-        { title: "4th Grade - Place value", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-place-value-and-rounding" }
+        { title: "Place value", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-place-value-and-rounding" }
         ],
       },
       {
         title: "SWBAT explain that each digit is 10× the value of the digit to its right and 1/10 of the digit to its left.",
         description: "SWBAT explain that each digit is 10× the value of the digit to its right and 1/10 of the digit to its left.",
         activities: [
-
+        { title: "Place value and rounding", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/k-8-grades/cc-third-grade-math/cc-3rd-place-value-rounding" }
         ],
       },
       {
         title: "SWBAT Add and Subtract multi-digit numbers using algo",
         description: "SWBAT Add and Subtract multi-digit numbers using algo",
         activities: [
-
+        { title: "Place value, rounding, and algorithms", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/4th-engage-ny/engage-4th-module-1" }
         ],
       },
       {
         title: "SWBAT do efficient Add & Sub by using properties like: commutative, associative, breaking nos, multiples of 10, Counting up/down etc.",
         description: "SWBAT do efficient Add & Sub by using properties like: commutative, associative, breaking nos, multiples of 10, Counting up/down etc.",
         activities: [
-
+        { title: "Addition, subtraction, and estimation", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-third-grade-math/imp-addition-and-subtraction" }
         ],
       },
       {
         title: "SWBAT multiply up to 4-digit × 1-digit using algo, area model, etc. ",
         description: "SWBAT multiply up to 4-digit × 1-digit using algo, area model, etc. ",
         activities: [
-
+        { title: "Multiplication and division", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2" }
         ],
       },
       {
         title: "SWBAT to do efficient multiplication by using properties like: doubling, skip counting, associative, distributive",
         description: "SWBAT to do efficient multiplication by using properties like: doubling, skip counting, associative, distributive",
         activities: [
-
+        { title: "1-digit multiplication", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-third-grade-math/3rd-basic-multiplication" }
         ],
       },
       {
         title: "SWBAT divide up to 4-digit ÷ 1-digit, finding quotients and remainders using place value.",
         description: "SWBAT divide up to 4-digit ÷ 1-digit, finding quotients and remainders using place value.",
         activities: [
-
+        { title: "Division", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/division" }
         ],
       },
       {
         title: "SWBAT Multi-step word problem of add/sub/mul/div, using equations with Unknowns.",
         description: "SWBAT Multi-step word problem of add/sub/mul/div, using equations with Unknowns.",
         activities: [
-
+        { title: "Multiplication and division", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/cc-4th-mult-div-topic" }
         ],
       },
       {
         title: "SWBAT multiply two 2-digit numbers using place-value, and algo method.",
         description: "SWBAT multiply two 2-digit numbers using place-value, and algo method.",
         activities: [
-
+        { title: "Multiply by 2-digit numbers", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2" }
         ],
       },
       {
@@ -1031,14 +1036,14 @@
         title: "SWBAT verify calculations using inverse operations (mul ↔ div; add ↔ sub) ",
         description: "SWBAT verify calculations using inverse operations (mul ↔ div; add ↔ sub) ",
         activities: [
-
+        { title: "More with multiplication and division", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-third-grade-math/imp-multiplication-and-division" }
         ],
       },
       {
         title: "SWBAT Verify calculation using estimation and rounding.",
         description: "SWBAT Verify calculation using estimation and rounding.",
         activities: [
-
+        { title: "Place value and rounding", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/k-8-grades/cc-fourth-grade-math/cc-4th-place-value-rounding" }
         ],
       }
     ]);
@@ -1049,44 +1054,44 @@
         title: "SWBAT relate fractions to real objects: (x/y means y “equal” pieces and then take x out of it.)",
         description: "SWBAT relate fractions to real objects: (x/y means y “equal” pieces and then take x out of it.)",
         activities: [
-        { title: "Arithmetic Thinking: find-half", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/find-half/" },
-        { title: "Arithmetic Thinking: combining-parts", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/combining-parts/" },
-        { title: "Arithmetic Thinking: take-more-than-one", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/take-more-than-one/" },
-        { title: "Arithmetic Thinking: shade-this-much", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/shade-this-much/" },
-        { title: "Arithmetic Thinking: equal-nths", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/equal-nths/" }
+        { title: "Arithmetic Thinking: Finding Half", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/find-half/" },
+        { title: "Arithmetic Thinking: Combining Parts", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/combining-parts/" },
+        { title: "Arithmetic Thinking: Splitting Parts", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/take-more-than-one/" },
+        { title: "Arithmetic Thinking: Splitting and Combining", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/shade-this-much/" },
+        { title: "Arithmetic Thinking: Equal Parts", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/equal-nths/" }
         ],
       },
       {
         title: "SWBAT mark fractions on a number line.",
         description: "SWBAT mark fractions on a number line.",
         activities: [
-
+        { title: "Fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/k-8-grades/cc-third-grade-math/cc-3rd-fractions-topic" }
         ],
       },
       {
         title: "SWBAT compare fractions using models and the number line.",
         description: "SWBAT compare fractions using models and the number line.",
         activities: [
-
+        { title: "Fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/cc-4th-fractions-topic" }
         ],
       },
       {
         title: "SWBAT find equivalent fraction of a given fraction.",
         description: "SWBAT find equivalent fraction of a given fraction.",
         activities: [
-        { title: "Arithmetic Thinking: equal-fractions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/equal-fractions/" },
-        { title: "Arithmetic Thinking: equal-fractions-2", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/equal-fractions-2/" },
-        { title: "Arithmetic Thinking: making-equivalent", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/making-equivalent/" },
-        { title: "Arithmetic Thinking: equivalent-fractions-3", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/equivalent-fractions-3/" },
-        { title: "Arithmetic Thinking: wodb-equivalents", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/wodb-equivalents/" }
+        { title: "Arithmetic Thinking: Sixths and Twelfths", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/equal-fractions/" },
+        { title: "Arithmetic Thinking: Eighths and Sixteenths", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/equal-fractions-2/" },
+        { title: "Arithmetic Thinking: Making Equivalent Fractions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/making-equivalent/" },
+        { title: "Arithmetic Thinking: Equivalent Fractions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/equivalent-fractions-3/" },
+        { title: "Arithmetic Thinking: Identifying Equivalents", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/wodb-equivalents/" }
         ],
       },
       {
         title: "SWBAT Add and Subtract like fractions.",
         description: "SWBAT Add and Subtract like fractions.",
         activities: [
-        { title: "Arithmetic Thinking: adding-fractions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/adding-fractions/adding-fractions/" },
-        { title: "Arithmetic Thinking: add-unit-fractions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/adding-fractions/add-unit-fractions/" }
+        { title: "Arithmetic Thinking: Adding Fractions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/adding-fractions/adding-fractions/" },
+        { title: "Arithmetic Thinking: Adding Same-Sized Fractions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/adding-fractions/add-unit-fractions/" }
         ],
       },
       {
@@ -1100,60 +1105,63 @@
         title: "SWBAT Simplify a given fraction.",
         description: "SWBAT Simplify a given fraction.",
         activities: [
-        { title: "Arithmetic Thinking: simplifying-fractions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/simplifying-fractions/" }
+        { title: "Arithmetic Thinking: Simplifying Fractions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/simplifying-fractions/" }
         ],
       },
       {
         title: "SWBAT Convert mixed to improper fraction",
         description: "SWBAT Convert mixed to improper fraction",
         activities: [
-
+        { title: "Mixed numbers and improper fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/arithmetic-home/arith-review-fractions/mixed-number" },
+        { title: "Mixed numbers (4th grade)", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2/imp-mixed-numbers" }
         ],
       },
       {
         title: "SWBAT Convert improper to mixed fraction.",
         description: "SWBAT Convert improper to mixed fraction.",
         activities: [
-
+        { title: "Mixed numbers and improper fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/arithmetic-home/arith-review-fractions/mixed-number" }
         ],
       },
       {
         title: "SWBAT Compare unlike fractions",
         description: "SWBAT Compare unlike fractions",
         activities: [
-
+        { title: "Fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/cc-4th-fractions-topic" },
+        { title: "Equivalent fractions and comparing fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/comparing-fractions-and-equivalent-fractions" }
         ],
       },
       {
         title: "SWBAT express a fraction (a/b, where a > 1) as a sum of unit fractions (1/b).",
         description: "SWBAT express a fraction (a/b, where a > 1) as a sum of unit fractions (1/b).",
         activities: [
-        { title: "Arithmetic Thinking: fractions-of-fractions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/fractions-of-fractions/" },
-        { title: "Arithmetic Thinking: expressing-fouf", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/expressing-fouf/" },
-        { title: "Arithmetic Thinking: fractions-of-fractions-2", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/fractions-of-fractions-2/" }
+        { title: "Arithmetic Thinking: Fractions of Unit Fractions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/fractions-of-fractions/" },
+        { title: "Arithmetic Thinking: Products of Unit Fractions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/expressing-fouf/" },
+        { title: "Arithmetic Thinking: Fraction of Any Fraction", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/fractions-of-fractions-2/" }
         ],
       },
       {
         title: "SWBAT Add and Sub unlike fractions",
         description: "SWBAT Add and Sub unlike fractions",
         activities: [
-        { title: "Arithmetic Thinking: adding-different", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/adding-fractions/adding-different/" },
-        { title: "Arithmetic Thinking: adding-nonmultiples", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/adding-fractions/adding-nonmultiples/" },
-        { title: "Arithmetic Thinking: adding-unlike", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/adding-fractions/adding-unlike/" }
+        { title: "Arithmetic Thinking: Adding Unlike Parts", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/adding-fractions/adding-different/" },
+        { title: "Arithmetic Thinking: Adding Unit Fractions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/adding-fractions/adding-nonmultiples/" },
+        { title: "Arithmetic Thinking: Adding Any Fractions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/adding-fractions/adding-unlike/" }
         ],
       },
       {
         title: "SWBAT Add and Sub mixed fractions",
         description: "SWBAT Add and Sub mixed fractions",
         activities: [
-
+        { title: "Add and subtract mixed numbers", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/arithmetic-home/arith-review-fractions/add-sub-mixed-numbers" }
         ],
       },
       {
         title: "SWBAT solve word problems involving add and sub of fractions (Unlike and mixed)",
         description: "SWBAT solve word problems involving add and sub of fractions (Unlike and mixed)",
         activities: [
-
+        { title: "Add and subtract fractions (different denominators)", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/arithmetic/x18ca194a:add-and-subtract-fractions-different-denominators" },
+        { title: "Adding/subtracting fractions word problems", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-3/imp-adding-and-subtracting-fractions-with-unlike-denominators-word-problems" }
         ],
       }
     ]);
@@ -1171,7 +1179,7 @@
         title: "SWBAT solve real-world problems about distance, time, volume, mass, and money.",
         description: "SWBAT solve real-world problems about distance, time, volume, mass, and money.",
         activities: [
-        { title: "4th Grade - Units of measurement", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-measurement-and-data-2" }
+        { title: "Units of measurement", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-measurement-and-data-2" }
         ],
       },
       {
@@ -1188,14 +1196,14 @@
         title: "SWBAT calculate perimeter for triangles, rectangles, and composite shapes",
         description: "SWBAT calculate perimeter for triangles, rectangles, and composite shapes",
         activities: [
-
+        { title: "Perimeter", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/k-8-grades/cc-third-grade-math/imp-perimeter" }
         ],
       },
       {
         title: "SWBAT solve word problesm involving area and perimeter of rectangles.",
         description: "SWBAT solve word problesm involving area and perimeter of rectangles.",
         activities: [
-        { title: "4th Grade - Area and perimeter", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/area-perimeter" },
+        { title: "Area and perimeter", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/area-perimeter" },
         { title: "Geometry Fundamentals: surface-area-2", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/geometry-fundamentals/surface-area/surface-area-2/" },
         { title: "Geometry Fundamentals: surface-area-shortcut", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/geometry-fundamentals/surface-area/surface-area-shortcut/" },
         { title: "Geometry Fundamentals: pyramids-cones-2", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/geometry-fundamentals/surface-area/pyramids-cones-2/" }
@@ -1212,14 +1220,14 @@
         title: "SWBAT compute the surface area of rectangular prism/composite figures",
         description: "SWBAT compute the surface area of rectangular prism/composite figures",
         activities: [
-
+        { title: "Area, surface area, and volume (6th Engage NY)", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/6th-engage-ny/engage-6th-module-5" }
         ],
       },
       {
         title: "SWBAT solve word problems of surface area and volume.",
         description: "SWBAT solve word problems of surface area and volume.",
         activities: [
-
+        { title: "Unit 1: Area and Surface Area (6th Illustrative Math)", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/6th-grade-illustrative-math/unit-1-area-and-surface-area" }
         ],
       }
     ]);
@@ -1350,56 +1358,56 @@
         title: "SWBAT compare and order decimals upto hundredths place",
         description: "SWBAT compare and order decimals upto hundredths place",
         activities: [
-
+        { title: "Place value and decimals", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/k-8-grades/cc-fifth-grade-math/cc-5th-place-value-decimals-top" }
         ],
       },
       {
         title: "SWBAT convert fractions with denominator 100 to decimals and vice versa",
         description: "SWBAT convert fractions with denominator 100 to decimals and vice versa",
         activities: [
-
+        { title: "Place value and decimal fractions (5th Engage NY)", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/5th-engage-ny/engage-5th-module-1" }
         ],
       },
       {
         title: "SWBAT convert fractions to decimal notation.",
         description: "SWBAT convert fractions to decimal notation.",
         activities: [
-
+        { title: "Decimal fractions (4th Engage NY)", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/4th-engage-ny/engage-4th-module-6" }
         ],
       },
       {
         title: "SWBAT add a decimal with whole no. and another decimal.",
         description: "SWBAT add a decimal with whole no. and another decimal.",
         activities: [
-
+        { title: "Get ready for adding and subtracting decimals", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/get-ready-for-5th-grade/x01d8909412c13b9d:get-ready-for-adding-subtracting-decimals" }
         ],
       },
       {
         title: "SWBAT sub a decimal with whole no. and another decimal.",
         description: "SWBAT sub a decimal with whole no. and another decimal.",
         activities: [
-
+        { title: "Subtract decimals", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/subtract-decimals" }
         ],
       },
       {
         title: "SWBAT multiply a decimal with whole no.",
         description: "SWBAT multiply a decimal with whole no.",
         activities: [
-
+        { title: "Multiply decimals (5th grade FL)", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/grade-5-math-fl-best/x7a7f452d9f51baa9:multiply-decimals" }
         ],
       },
       {
         title: "SWBAT divide 2 whole numbers to get a decimal quotient.",
         description: "SWBAT divide 2 whole numbers to get a decimal quotient.",
         activities: [
-
+        { title: "Divide decimals", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/divide-decimals" }
         ],
       },
       {
         title: "SWBAT solve multi-digit computation problems that too word problems involving decimals.",
         description: "SWBAT solve multi-digit computation problems that too word problems involving decimals.",
         activities: [
-
+        { title: "Arithmetic decimals", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/arithmetic/arith-decimals" }
         ],
       }
     ]);

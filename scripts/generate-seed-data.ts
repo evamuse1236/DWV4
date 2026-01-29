@@ -20,6 +20,7 @@ const __dirname = path.dirname(__filename);
 interface Lesson {
   lesson_slug: string;
   url: string;
+  title?: string; // Human-readable title from brilliant_links.json
 }
 
 interface BrilliantChapter {
@@ -29,6 +30,7 @@ interface BrilliantChapter {
   chapter_slug: string;
   lessons: Lesson[];
   match_quality: string;
+  activity_type?: string;
 }
 
 interface KhanEntry {
@@ -37,6 +39,8 @@ interface KhanEntry {
   unit_url: string;
   match_quality: string;
   note?: string;
+  display_title?: string;
+  activity_type?: string;
 }
 
 interface LearningObjective {
@@ -143,17 +147,21 @@ function main() {
 
       // KA activities
       for (const ka of lo.playlist_links.khan_academy) {
+        const kaTitle = ka.display_title || ka.unit_name;
+        const kaType = ka.activity_type || "video";
         activities.push(
-          `        { title: "${escapeString(ka.unit_name)}", type: "video", platform: "Khan Academy", url: "${escapeString(ka.unit_url)}" }`
+          `        { title: "${escapeString(kaTitle)}", type: "${kaType}", platform: "Khan Academy", url: "${escapeString(ka.unit_url)}" }`
         );
         totalActivities++;
       }
 
       // Brilliant activities
       for (const ch of lo.playlist_links.brilliant) {
+        const brilliantType = ch.activity_type || "exercise";
         for (const lesson of ch.lessons) {
+          const lessonTitle = lesson.title || lesson.lesson_slug;
           activities.push(
-            `        { title: "${escapeString(ch.course_name)}: ${escapeString(lesson.lesson_slug)}", type: "exercise", platform: "Brilliant", url: "${escapeString(lesson.url)}" }`
+            `        { title: "${escapeString(ch.course_name)}: ${escapeString(lessonTitle)}", type: "${brilliantType}", platform: "Brilliant", url: "${escapeString(lesson.url)}" }`
           );
           totalActivities++;
         }
@@ -228,17 +236,21 @@ function main() {
       const activities: string[] = [];
 
       for (const ka of lo.playlist_links.khan_academy) {
+        const kaTitle = ka.display_title || ka.unit_name;
+        const kaType = ka.activity_type || "video";
         activities.push(
-          `        { title: "${escapeString(ka.unit_name)}", type: "video", platform: "Khan Academy", url: "${escapeString(ka.unit_url)}" }`
+          `        { title: "${escapeString(kaTitle)}", type: "${kaType}", platform: "Khan Academy", url: "${escapeString(ka.unit_url)}" }`
         );
         pypActivities++;
         totalActivities++;
       }
 
       for (const ch of lo.playlist_links.brilliant) {
+        const brilliantType = ch.activity_type || "exercise";
         for (const lesson of ch.lessons) {
+          const lessonTitle = lesson.title || lesson.lesson_slug;
           activities.push(
-            `        { title: "${escapeString(ch.course_name)}: ${escapeString(lesson.lesson_slug)}", type: "exercise", platform: "Brilliant", url: "${escapeString(lesson.url)}" }`
+            `        { title: "${escapeString(ch.course_name)}: ${escapeString(lessonTitle)}", type: "${brilliantType}", platform: "Brilliant", url: "${escapeString(lesson.url)}" }`
           );
           pypActivities++;
           totalActivities++;

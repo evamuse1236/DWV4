@@ -26,7 +26,9 @@
             "unit_name": "3rd Grade - Understand fractions",
             "unit_url": "https://www.khanacademy.org/math/cc-third-grade-math/imp-fractions",
             "match_quality": "suggested",
-            "note": "Foundational fractions - covered in KA 3rd/4th grade, not 5th grade CC"
+            "note": "Foundational fractions - covered in KA 3rd/4th grade, not 5th grade CC",
+            "display_title": "Understand fractions",
+            "activity_type": "video"
           }
         ],
         "brilliant": []
@@ -46,7 +48,9 @@
             "unit_name": "4th Grade - Equivalent fractions and comparing fractions",
             "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/comparing-fractions-and-equivalent-fractions",
             "match_quality": "suggested",
-            "note": "LCM and fraction comparison are 4th grade foundations"
+            "note": "LCM and fraction comparison are 4th grade foundations",
+            "display_title": "Equivalent fractions and comparing fractions",
+            "activity_type": "video"
           }
         ],
         "brilliant": [
@@ -58,26 +62,32 @@
             "lessons": [
               {
                 "lesson_slug": "comparing-numerators",
-                "url": "https://brilliant.org/courses/math-fundamentals/comparing-fractions/comparing-numerators/"
+                "url": "https://brilliant.org/courses/math-fundamentals/comparing-fractions/comparing-numerators/",
+                "title": "Comparing Numerators"
               },
               {
                 "lesson_slug": "same-numerator",
-                "url": "https://brilliant.org/courses/math-fundamentals/comparing-fractions/same-numerator/"
+                "url": "https://brilliant.org/courses/math-fundamentals/comparing-fractions/same-numerator/",
+                "title": "Comparing Denominators"
               },
               {
                 "lesson_slug": "den-multiples",
-                "url": "https://brilliant.org/courses/math-fundamentals/comparing-fractions/den-multiples/"
+                "url": "https://brilliant.org/courses/math-fundamentals/comparing-fractions/den-multiples/",
+                "title": "Comparing Equivalents"
               },
               {
                 "lesson_slug": "not-multiples",
-                "url": "https://brilliant.org/courses/math-fundamentals/comparing-fractions/not-multiples/"
+                "url": "https://brilliant.org/courses/math-fundamentals/comparing-fractions/not-multiples/",
+                "title": "Comparing More Equivalents"
               },
               {
                 "lesson_slug": "greatest-fraction",
-                "url": "https://brilliant.org/courses/math-fundamentals/comparing-fractions/greatest-fraction/"
+                "url": "https://brilliant.org/courses/math-fundamentals/comparing-fractions/greatest-fraction/",
+                "title": "Identifying the Greatest"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -90,7 +100,16 @@
       "learning_objective": "",
       "dw_handout": "Fraction Fundamentals: GCF and Simplifying fractions",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Equivalent fractions and comparing fractions",
+            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/comparing-fractions-and-equivalent-fractions",
+            "match_quality": "strong",
+            "note": "Same URL as MYP Row 5 — strong match for simplifying fractions content",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -108,7 +127,9 @@
             "unit_name": "4th Grade - Add and subtract fractions",
             "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2",
             "match_quality": "suggested",
-            "note": "Basic fraction operations - bridging from 4th to 5th grade"
+            "note": "Basic fraction operations - bridging from 4th to 5th grade",
+            "display_title": "Add and subtract fractions",
+            "activity_type": "video"
           }
         ],
         "brilliant": []
@@ -127,7 +148,8 @@
             "source": "Khan Academy",
             "unit_name": "Multi-digit multiplication and division",
             "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division",
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "video"
           }
         ],
         "brilliant": []
@@ -141,7 +163,16 @@
       "learning_objective": "SWBAT do multi-digit division problems using algorithm (4-digit by 2 digit)",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Division (4th grade)",
+            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/division",
+            "match_quality": "strong",
+            "display_title": "Division",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -153,7 +184,15 @@
       "learning_objective": "SWBAT solve simple word problems using addition, subtraction, multiplication, and division",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Intro to multiplication",
+            "unit_url": "https://www.khanacademy.org/math/cc-third-grade-math/intro-to-multiplication",
+            "match_quality": "strong",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -165,7 +204,16 @@
       "learning_objective": "SWBAT solve multi-step word problems using addition, subtraction, multiplication, and division.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Multiplication and division (4th grade)",
+            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/cc-4th-mult-div-topic",
+            "match_quality": "strong",
+            "display_title": "Multiplication and division",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -177,7 +225,16 @@
       "learning_objective": "SWBAT mentally estimate results of operations on multi-digit numbers using rounding strategies.\nExample: 43 × 13 should be roughly 500 since (43×10)= 430",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Addition, subtraction, and estimation (3rd grade)",
+            "unit_url": "https://www.khanacademy.org/math/cc-third-grade-math/imp-addition-and-subtraction",
+            "match_quality": "strong",
+            "display_title": "Addition, subtraction, and estimation",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -189,7 +246,17 @@
       "learning_objective": "SWBAT use rounding strategies and inverse operations to verify and cross-check answers to word problems",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "More with multiplication and division (3rd grade)",
+            "unit_url": "https://www.khanacademy.org/math/cc-third-grade-math/imp-multiplication-and-division",
+            "match_quality": "partial",
+            "note": "Closest match — covers estimation/verification of multiplication/division results",
+            "display_title": "More with multiplication and division",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -211,22 +278,27 @@
             "lessons": [
               {
                 "lesson_slug": "numeric-expressions-1",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-1/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-1/",
+                "title": "Positives and Negatives"
               },
               {
                 "lesson_slug": "numeric-expressions-3",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-3/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-3/",
+                "title": "Negative Numbers"
               },
               {
                 "lesson_slug": "numeric-expressions-2",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-2/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-2/",
+                "title": "Making Integers"
               },
               {
                 "lesson_slug": "numeric-expressions-4",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-4/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-4/",
+                "title": "Addition"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -236,30 +308,37 @@
             "lessons": [
               {
                 "lesson_slug": "numeric-expressions-205",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-205/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-205/",
+                "title": "The Number Line"
               },
               {
                 "lesson_slug": "numeric-expressions-21",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-21/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-21/",
+                "title": "Addition on the Number Line"
               },
               {
                 "lesson_slug": "numeric-expressions-25",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-25/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-25/",
+                "title": "Adding Large Integers"
               },
               {
                 "lesson_slug": "numeric-expressions-26",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-26/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-26/",
+                "title": "Adding Several Integers"
               },
               {
                 "lesson_slug": "number-line-subtraction-1",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/number-line-subtraction-1/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/number-line-subtraction-1/",
+                "title": "Subtraction from 0"
               },
               {
                 "lesson_slug": "numeric-expressions-22",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-22/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-22/",
+                "title": "Subtraction on the Number Line"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -269,30 +348,37 @@
             "lessons": [
               {
                 "lesson_slug": "numeric-order-magnitude-1",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-magnitude-1/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-magnitude-1/",
+                "title": "Ordering Integers"
               },
               {
                 "lesson_slug": "numeric-order-magnitude-2",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-magnitude-2/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-magnitude-2/",
+                "title": "Ordering Negatives"
               },
               {
                 "lesson_slug": "numeric-order-magnitude-4",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-magnitude-4/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-magnitude-4/",
+                "title": "Absolute Value"
               },
               {
                 "lesson_slug": "numeric-order-magnitude-5",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-magnitude-5/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-magnitude-5/",
+                "title": "Adding and Absolute Value"
               },
               {
                 "lesson_slug": "numeric-order-and-magnitude-6",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-and-magnitude-6/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-and-magnitude-6/",
+                "title": "Absolute Value Inequalities"
               },
               {
                 "lesson_slug": "numeric-order-and-magnitude-7",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-and-magnitude-7/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-and-magnitude-7/",
+                "title": "Reasoning with Absolute Value"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -302,26 +388,32 @@
             "lessons": [
               {
                 "lesson_slug": "distance-1",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-1/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-1/",
+                "title": "Distance Between Integers"
               },
               {
                 "lesson_slug": "distance-2",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-2/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-2/",
+                "title": "A Pair at Every Distance"
               },
               {
                 "lesson_slug": "distance-3",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-3/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-3/",
+                "title": "Subtracting to Find Distance"
               },
               {
                 "lesson_slug": "distance-4",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-4/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-4/",
+                "title": "Absolute Value and Distance"
               },
               {
                 "lesson_slug": "distance-6",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-6/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-6/",
+                "title": "Reasoning About Distance"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -340,7 +432,9 @@
             "unit_name": "6th Grade - Negative numbers",
             "unit_url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic",
             "match_quality": "suggested",
-            "note": "Negative number operations - 6th/7th grade topic"
+            "note": "Negative number operations - 6th/7th grade topic",
+            "display_title": "Negative numbers",
+            "activity_type": "video"
           }
         ],
         "brilliant": [
@@ -352,30 +446,37 @@
             "lessons": [
               {
                 "lesson_slug": "numeric-expressions-5",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-5/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-5/",
+                "title": "Increasing Value"
               },
               {
                 "lesson_slug": "numeric-expressions-6",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-6/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-6/",
+                "title": "Decreasing Value"
               },
               {
                 "lesson_slug": "numeric-expressions-7",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-7/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-7/",
+                "title": "Zero"
               },
               {
                 "lesson_slug": "numeric-expressions-8",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-8/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-8/",
+                "title": "Opposites"
               },
               {
                 "lesson_slug": "numeric-expressions-9",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-9/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-9/",
+                "title": "Adding Negatives"
               },
               {
                 "lesson_slug": "numeric-expressions-10",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-10/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-10/",
+                "title": "Adding Negatives and Positives"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -385,30 +486,37 @@
             "lessons": [
               {
                 "lesson_slug": "numeric-expressions-11",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-11/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-11/",
+                "title": "Missing Values"
               },
               {
                 "lesson_slug": "numeric-expressions-12",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-12/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-12/",
+                "title": "Subtracting Positives"
               },
               {
                 "lesson_slug": "numeric-expressions-13",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-13/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-13/",
+                "title": "Subtracting Negatives"
               },
               {
                 "lesson_slug": "numeric-expressions-16b",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-16b/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-16b/",
+                "title": "Subtracting From Zero"
               },
               {
                 "lesson_slug": "numeric-expressions-15",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-15/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-15/",
+                "title": "Subtracting Positives 2"
               },
               {
                 "lesson_slug": "numeric-expressions-16",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-16/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-16/",
+                "title": "Subtracting Negatives 2"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -418,26 +526,32 @@
             "lessons": [
               {
                 "lesson_slug": "numeric-expression-17",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expression-17/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expression-17/",
+                "title": "Adding The Opposite"
               },
               {
                 "lesson_slug": "numeric-expressions-18",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expressions-18/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expressions-18/",
+                "title": "Subtracting Using Addition"
               },
               {
                 "lesson_slug": "numeric-expressions-18b",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expressions-18b/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expressions-18b/",
+                "title": "Subtracting the Opposite"
               },
               {
                 "lesson_slug": "numeric-expressions-19",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expressions-19/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expressions-19/",
+                "title": "Order in Subtraction"
               },
               {
                 "lesson_slug": "numeric-expressions-20",
-                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expressions-20/"
+                "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expressions-20/",
+                "title": "Adding in Any Order"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -475,7 +589,8 @@
                 "url": "https://brilliant.org/courses/basic-number-theory/factorization/counting-divisors/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -505,7 +620,8 @@
                 "url": "https://brilliant.org/courses/basic-number-theory/factorization/how-many-prime-numbers-are-there/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -551,7 +667,8 @@
                 "url": "https://brilliant.org/courses/basic-number-theory/factorization/digital-roots/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -596,7 +713,8 @@
                 "url": "https://brilliant.org/courses/basic-number-theory/modular-arithmetic-i/die-hard-decanting-ii/"
               }
             ],
-            "match_quality": "partial"
+            "match_quality": "partial",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -633,7 +751,8 @@
                 "url": "https://brilliant.org/courses/basic-number-theory/modular-arithmetic-ii/perfect-shuffling/"
               }
             ],
-            "match_quality": "partial"
+            "match_quality": "partial",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -666,7 +785,8 @@
                 "url": "https://brilliant.org/courses/basic-number-theory/digits-and-divisibility/even-more-cryptograms/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -699,7 +819,8 @@
                 "url": "https://brilliant.org/courses/basic-number-theory/divisibility-in-other-bases/last-digits-in-other-bases/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -718,7 +839,9 @@
             "unit_name": "4th Grade - Factors, multiples and patterns",
             "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-factors-multiples-and-patterns",
             "match_quality": "suggested",
-            "note": "Prime and composite - 4th grade CC standard"
+            "note": "Prime and composite - 4th grade CC standard",
+            "display_title": "Factors, multiples and patterns",
+            "activity_type": "video"
           }
         ],
         "brilliant": []
@@ -738,7 +861,9 @@
             "unit_name": "Pre-Algebra - Factors and multiples",
             "unit_url": "https://www.khanacademy.org/math/pre-algebra/pre-algebra-factors-multiples",
             "match_quality": "suggested",
-            "note": "LCM - covered in pre-algebra / 6th grade"
+            "note": "LCM - covered in pre-algebra / 6th grade",
+            "display_title": "Factors and multiples",
+            "activity_type": "video"
           }
         ],
         "brilliant": [
@@ -769,7 +894,8 @@
                 "url": "https://brilliant.org/courses/basic-number-theory/gcd-and-lcm-2/billiard-tables-revisited-i/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -815,7 +941,8 @@
                 "url": "https://brilliant.org/courses/basic-number-theory/gcd-and-lcm-2/billiard-tables-revisited-ii/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -833,7 +960,8 @@
             "source": "Khan Academy",
             "unit_name": "Add and subtract fractions",
             "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-3",
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "video"
           }
         ],
         "brilliant": []
@@ -847,7 +975,16 @@
       "learning_objective": "SWBAT add and subtract mixed fractions",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Add and subtract mixed numbers (Arithmetic)",
+            "unit_url": "https://www.khanacademy.org/math/arithmetic-home/arith-review-fractions/add-sub-mixed-numbers",
+            "match_quality": "strong",
+            "display_title": "Add and subtract mixed numbers",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -869,18 +1006,22 @@
             "lessons": [
               {
                 "lesson_slug": "fraction-by-integer",
-                "url": "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/fraction-by-integer/"
+                "url": "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/fraction-by-integer/",
+                "title": "Multiples of Fractions"
               },
               {
                 "lesson_slug": "expressing-multiples",
-                "url": "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/expressing-multiples/"
+                "url": "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/expressing-multiples/",
+                "title": "Expressing Multiples"
               },
               {
                 "lesson_slug": "multiplying-fractions",
-                "url": "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/multiplying-fractions/"
+                "url": "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/multiplying-fractions/",
+                "title": "Multiplying Fractions"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -898,7 +1039,8 @@
             "source": "Khan Academy",
             "unit_name": "Divide fractions",
             "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/divide-fractions",
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "video"
           }
         ],
         "brilliant": []
@@ -912,7 +1054,16 @@
       "learning_objective": "SWBAT divide a fraction with another fraction ",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Fractions (Pre-Algebra)",
+            "unit_url": "https://www.khanacademy.org/math/pre-algebra/pre-algebra-fractions",
+            "match_quality": "strong",
+            "display_title": "Fractions",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -924,7 +1075,15 @@
       "learning_objective": "SWBAT solve word problems involving addition, subtraction, multiplicaiton, division of Fractions using equations and visual models.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Add and subtract fractions (different denominators)",
+            "unit_url": "https://www.khanacademy.org/math/arithmetic/x18ca194a:add-and-subtract-fractions-different-denominators",
+            "match_quality": "strong",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -942,14 +1101,16 @@
             "unit_name": "Add decimals",
             "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-addition-and-subtraction-3",
             "match_quality": "partial",
-            "note": "Addition portion; subtraction covered in Unit 3"
+            "note": "Addition portion; subtraction covered in Unit 3",
+            "activity_type": "video"
           },
           {
             "source": "Khan Academy",
             "unit_name": "Subtract decimals",
             "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/subtract-decimals",
             "match_quality": "partial",
-            "note": "Subtraction portion; addition covered in Unit 2"
+            "note": "Subtraction portion; addition covered in Unit 2",
+            "activity_type": "video"
           }
         ],
         "brilliant": []
@@ -968,7 +1129,8 @@
             "source": "Khan Academy",
             "unit_name": "Multiply decimals",
             "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-multiplication-and-division-3",
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "video"
           }
         ],
         "brilliant": []
@@ -982,7 +1144,16 @@
       "learning_objective": "SWBAT multiply 2 decimal numbers ",
       "dw_handout": "Deep Work: Decimal Multiplication",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Arithmetic decimals",
+            "unit_url": "https://www.khanacademy.org/math/arithmetic/arith-decimals",
+            "match_quality": "strong",
+            "note": "Broad arithmetic decimals course — covers multiplying decimal×decimal",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -999,7 +1170,8 @@
             "source": "Khan Academy",
             "unit_name": "Divide decimals",
             "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/divide-decimals",
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "video"
           }
         ],
         "brilliant": []
@@ -1013,7 +1185,16 @@
       "learning_objective": "SWBAT divide a decimal with another decimal",
       "dw_handout": "Deep Work: Dividing Decimals by Decimals",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Decimals (Arithmetic review)",
+            "unit_url": "https://www.khanacademy.org/math/arithmetic-home/arith-review-decimals",
+            "match_quality": "strong",
+            "display_title": "Decimals",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -1054,7 +1235,8 @@
                 "url": "https://brilliant.org/courses/exponents-and-radicals/exponent-basics/exponent-basics-5/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -1091,7 +1273,8 @@
                 "url": "https://brilliant.org/courses/exponents-and-radicals/exponents-and-number-line/exponents-number-line-6/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -1124,7 +1307,8 @@
                 "url": "https://brilliant.org/courses/exponents-and-radicals/squares-and-roots/squares-and-roots-6/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -1157,7 +1341,8 @@
                 "url": "https://brilliant.org/courses/exponents-and-radicals/higher-powers-and-roots/higher-powers-7/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -1170,7 +1355,16 @@
       "learning_objective": "SWBAT solve word problems involving addition, subtraction, multiplication, division of Decimals using equations and visual models.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Get ready for adding and subtracting decimals",
+            "unit_url": "https://www.khanacademy.org/math/get-ready-for-5th-grade/x01d8909412c13b9d:get-ready-for-adding-subtracting-decimals",
+            "match_quality": "partial",
+            "note": "Get-ready module covers decimal concepts; word problems span multiple units",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -1188,7 +1382,8 @@
             "unit_name": "Coordinate plane",
             "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-geometry-3",
             "match_quality": "partial",
-            "note": "KA 5th grade covers Quadrant 1 only; all quadrants is 6th grade"
+            "note": "KA 5th grade covers Quadrant 1 only; all quadrants is 6th grade",
+            "activity_type": "video"
           }
         ],
         "brilliant": [
@@ -1211,7 +1406,8 @@
                 "url": "https://brilliant.org/courses/transformations/coordinate-translation/translate-into-region/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -1236,7 +1432,8 @@
                 "url": "https://brilliant.org/courses/transformations/coordinate-wise-rotation/rotating-by-coordinates/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -1265,7 +1462,8 @@
                 "url": "https://brilliant.org/courses/transformations/reflections-in-coordinates/choosing-coordinate-reflection/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -1295,7 +1493,8 @@
                 "url": "https://brilliant.org/courses/geometry-fundamentals/scaling/similarity-2/"
               }
             ],
-            "match_quality": "partial"
+            "match_quality": "partial",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -1312,7 +1511,8 @@
                 "url": "https://brilliant.org/courses/geometry-fundamentals/scaling-and-volume/pyramids-cones-volume-2/"
               }
             ],
-            "match_quality": "partial"
+            "match_quality": "partial",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -1333,7 +1533,8 @@
                 "url": "https://brilliant.org/courses/transformations/similarity/identifying-similarity/"
               }
             ],
-            "match_quality": "partial"
+            "match_quality": "partial",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -1371,7 +1572,8 @@
                 "url": "https://brilliant.org/courses/basic-2d-geometry/triangles-5/currys-paradox/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -1396,7 +1598,8 @@
                 "url": "https://brilliant.org/courses/basic-2d-geometry/mastering-triangles/pegboard-triangles-2/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -1421,7 +1624,8 @@
                 "url": "https://brilliant.org/courses/basic-2d-geometry/triangle-centers/anatomy-of-a-triangle/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -1439,7 +1643,8 @@
             "source": "Khan Academy",
             "unit_name": "Properties of shapes",
             "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/properties-of-shapes",
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "video"
           }
         ],
         "brilliant": []
@@ -1478,7 +1683,8 @@
                 "url": "https://brilliant.org/courses/geometry-fundamentals/areas/scaling-areas-1/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -1497,7 +1703,9 @@
             "unit_name": "6th Grade - Geometry (area of parallelograms, triangles, composite figures)",
             "unit_url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic",
             "match_quality": "suggested",
-            "note": "Area of triangles/parallelograms - 6th grade geometry topic"
+            "note": "Area of triangles/parallelograms - 6th grade geometry topic",
+            "display_title": "Geometry (area of parallelograms, triangles, composite figures)",
+            "activity_type": "video"
           }
         ],
         "brilliant": [
@@ -1520,7 +1728,8 @@
                 "url": "https://brilliant.org/courses/geometry-fundamentals/surface-area/pyramids-cones-2/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -1549,7 +1758,8 @@
                 "url": "https://brilliant.org/courses/basic-2d-geometry/composite-polygons-2/invariant-areas/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -1568,7 +1778,8 @@
             "unit_name": "Powers of ten",
             "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/powers-of-ten",
             "match_quality": "partial",
-            "note": "Powers of 10 specifically; general exponent concept overlaps"
+            "note": "Powers of 10 specifically; general exponent concept overlaps",
+            "activity_type": "video"
           }
         ],
         "brilliant": [
@@ -1599,7 +1810,8 @@
                 "url": "https://brilliant.org/courses/exponents-and-radicals/exponent-basics/exponent-basics-5/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -1636,7 +1848,8 @@
                 "url": "https://brilliant.org/courses/exponents-and-radicals/exponents-and-number-line/exponents-number-line-6/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -1682,7 +1895,8 @@
                 "url": "https://brilliant.org/courses/exponents-and-radicals/squares-and-roots/squares-and-roots-6/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -1715,7 +1929,8 @@
                 "url": "https://brilliant.org/courses/exponents-and-radicals/higher-powers-and-roots/higher-powers-7/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -1753,7 +1968,8 @@
                 "url": "https://brilliant.org/courses/systems-of-equations/patterns/patterns-sketching/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -1782,7 +1998,8 @@
                 "url": "https://brilliant.org/courses/systems-of-equations/linear-expressions/patterns-constant-5/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -1803,7 +2020,8 @@
                 "url": "https://brilliant.org/courses/systems-of-equations/building-linear/pattern-mix/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -1836,7 +2054,8 @@
                 "url": "https://brilliant.org/courses/systems-of-equations/quadratic-patterns/rectangle-patterns-2/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -1869,7 +2088,8 @@
                 "url": "https://brilliant.org/courses/systems-of-equations/quadratic-expressions/monster-jaw/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -1906,7 +2126,8 @@
                 "url": "https://brilliant.org/courses/systems-of-equations/quadratic-growth/quadratic-vs-linear/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -1927,7 +2148,8 @@
                 "url": "https://brilliant.org/courses/systems-of-equations/exponential-patterns/writing-exponential/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -1956,7 +2178,8 @@
                 "url": "https://brilliant.org/courses/systems-of-equations/linear-or-exponential/kinds-of-growth/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -1969,7 +2192,16 @@
       "learning_objective": "SWBAT use the order of operations to correctly evaluate numerical expressions with parentheses, brackets, and braces.\nExpression: 3 × (4 + 2)\n“First add 4 + 2 = 6, then 3 × 6 = 18.”",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Exponents intro and order of operations (Pre-Algebra)",
+            "unit_url": "https://www.khanacademy.org/math/pre-algebra/xb4832e56:exponents-intro-and-order-of-operations",
+            "match_quality": "strong",
+            "display_title": "Exponents intro and order of operations",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -2006,7 +2238,8 @@
                 "url": "https://brilliant.org/courses/pre-algebra/variables/understanding-equations-1-ss-exp-2/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -2048,7 +2281,8 @@
                 "url": "https://brilliant.org/courses/using-variables/writing-formulas/more-than-one-variable/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -2067,7 +2301,9 @@
             "unit_name": "6th Grade - Variables & expressions",
             "unit_url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables",
             "match_quality": "suggested",
-            "note": "Variables vs constants - 6th grade algebra topic"
+            "note": "Variables vs constants - 6th grade algebra topic",
+            "display_title": "Variables & expressions",
+            "activity_type": "video"
           }
         ],
         "brilliant": []
@@ -2102,7 +2338,8 @@
                 "url": "https://brilliant.org/courses/pre-algebra/factoring/strategic-moves-ss-exp/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -2135,7 +2372,8 @@
                 "url": "https://brilliant.org/courses/pre-algebra/combining-and-rearranging/bringing-it-together/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -2164,7 +2402,8 @@
                 "url": "https://brilliant.org/courses/systems-of-equations/equivalent-expressions/va-finale-1/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -2210,7 +2449,8 @@
                 "url": "https://brilliant.org/courses/pre-algebra/solving-by-substitution/substitution-8-ss-exp-2/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -2239,7 +2479,8 @@
                 "url": "https://brilliant.org/courses/pre-algebra/solving-equations/distributing-2-ss-exp/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -2272,7 +2513,8 @@
                 "url": "https://brilliant.org/courses/pre-algebra/reasoning-by-balancing/reasoning-building-10/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -2301,7 +2543,8 @@
                 "url": "https://brilliant.org/courses/pre-algebra/reasoning-about-equations/consequences-4/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -2320,7 +2563,9 @@
             "unit_name": "6th Grade - Equations & inequalities",
             "unit_url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities",
             "match_quality": "suggested",
-            "note": "Equation word problems - 6th grade equations topic"
+            "note": "Equation word problems - 6th grade equations topic",
+            "display_title": "Equations & inequalities",
+            "activity_type": "video"
           }
         ],
         "brilliant": [
@@ -2355,7 +2600,8 @@
                 "url": "https://brilliant.org/courses/pre-algebra/inequalities/graphing-solutions-2/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -2388,7 +2634,8 @@
                 "url": "https://brilliant.org/courses/pre-algebra/solving-inequalities/solving-inequalities-4/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -2421,7 +2668,8 @@
                 "url": "https://brilliant.org/courses/pre-algebra/systems-of-equations-1/simple-systems-9/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -2442,7 +2690,8 @@
                 "url": "https://brilliant.org/courses/pre-algebra/eliminating-systems/simple-systems-8/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -2484,7 +2733,8 @@
                 "url": "https://brilliant.org/courses/introduction-to-functions/graphing-functions/interpreting-graphed-functions/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -2509,7 +2759,8 @@
                 "url": "https://brilliant.org/courses/introduction-to-functions/applied-functions/tide-depth/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -2538,7 +2789,8 @@
                 "url": "https://brilliant.org/courses/linear-functions/constant-change/nonlinear-functions/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -2563,7 +2815,8 @@
                 "url": "https://brilliant.org/courses/linear-functions/making-linear-predictions/using-two-points/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -2596,7 +2849,8 @@
                 "url": "https://brilliant.org/courses/linear-functions/computing-slope/slope-complete-computation/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -2633,7 +2887,8 @@
                 "url": "https://brilliant.org/courses/linear-functions/writing-linear-expressions/find-both-terms/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -2670,7 +2925,8 @@
                 "url": "https://brilliant.org/courses/linear-functions/equations-of-lines/equations-in-point-slope-form/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -2689,7 +2945,9 @@
             "unit_name": "6th Grade - Rates and percentages",
             "unit_url": "https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:cc-6th-rates-and-percentages",
             "match_quality": "suggested",
-            "note": "Ratios and rates - 6th grade topic"
+            "note": "Ratios and rates - 6th grade topic",
+            "display_title": "Rates and percentages",
+            "activity_type": "video"
           }
         ],
         "brilliant": [
@@ -2716,7 +2974,8 @@
                 "url": "https://brilliant.org/courses/proportional-relationships/setting-up-ratios/new-ratio/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -2741,7 +3000,8 @@
                 "url": "https://brilliant.org/courses/proportional-relationships/equivalent-ratios/ratio-scale-factor/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -2766,7 +3026,8 @@
                 "url": "https://brilliant.org/courses/proportional-relationships/scaling-ratios/finding-parts/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -2795,7 +3056,8 @@
                 "url": "https://brilliant.org/courses/proportional-relationships/unit-rates/compare-mixtures/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -2829,7 +3091,8 @@
                 "url": "https://brilliant.org/courses/proportional-relationships/proportional-relationships/comparing-rates-3/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -2862,7 +3125,8 @@
                 "url": "https://brilliant.org/courses/proportional-relationships/graphing-prs/unitrate-to-graph/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -2887,7 +3151,8 @@
                 "url": "https://brilliant.org/courses/proportional-relationships/pr-equations/graphing-comparisons/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -2912,7 +3177,8 @@
                 "url": "https://brilliant.org/courses/using-variables/pricing-and-proportions/using-unit-rates-2/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -2935,22 +3201,27 @@
             "lessons": [
               {
                 "lesson_slug": "intro-to-percentages",
-                "url": "https://brilliant.org/courses/math-fundamentals/percentages-using-percentages/intro-to-percentages/"
+                "url": "https://brilliant.org/courses/math-fundamentals/percentages-using-percentages/intro-to-percentages/",
+                "title": "Intro to Percentages"
               },
               {
                 "lesson_slug": "calculating-percentages",
-                "url": "https://brilliant.org/courses/math-fundamentals/percentages-using-percentages/calculating-percentages/"
+                "url": "https://brilliant.org/courses/math-fundamentals/percentages-using-percentages/calculating-percentages/",
+                "title": "Working out Percentages"
               },
               {
                 "lesson_slug": "battery-percentages",
-                "url": "https://brilliant.org/courses/math-fundamentals/percentages-using-percentages/battery-percentages/"
+                "url": "https://brilliant.org/courses/math-fundamentals/percentages-using-percentages/battery-percentages/",
+                "title": "Percentages and Batteries"
               },
               {
                 "lesson_slug": "fraction-equivalence-blanks",
-                "url": "https://brilliant.org/courses/math-fundamentals/percentages-using-percentages/fraction-equivalence-blanks/"
+                "url": "https://brilliant.org/courses/math-fundamentals/percentages-using-percentages/fraction-equivalence-blanks/",
+                "title": "Percentages as Fractions"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -2973,26 +3244,32 @@
             "lessons": [
               {
                 "lesson_slug": "tenths-equivalence",
-                "url": "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/tenths-equivalence/"
+                "url": "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/tenths-equivalence/",
+                "title": "Percentages as Tenths"
               },
               {
                 "lesson_slug": "hundredths-equivalence",
-                "url": "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/hundredths-equivalence/"
+                "url": "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/hundredths-equivalence/",
+                "title": "Percentages as Hundredths"
               },
               {
                 "lesson_slug": "finding-the-percentage",
-                "url": "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/finding-the-percentage/"
+                "url": "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/finding-the-percentage/",
+                "title": "Finding the Percentage"
               },
               {
                 "lesson_slug": "converting-to-decimals",
-                "url": "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/converting-to-decimals/"
+                "url": "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/converting-to-decimals/",
+                "title": "Percentages as Decimals"
               },
               {
                 "lesson_slug": "calculating-the-percentage",
-                "url": "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/calculating-the-percentage/"
+                "url": "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/calculating-the-percentage/",
+                "title": "Calculating the Percentage"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -3005,7 +3282,23 @@
       "learning_objective": "SWBAT Find a given percent of a number, using models or equations.\neg. Find  30% of 50\nA class of 40 students: 25% are absent, how many are absent",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Percentages (Pre-Algebra)",
+            "unit_url": "https://www.khanacademy.org/math/pre-algebra/xb4832e56:percentages",
+            "match_quality": "strong",
+            "display_title": "Percentages",
+            "activity_type": "video"
+          },
+          {
+            "source": "Khan Academy",
+            "unit_name": "Percent problems (6th grade)",
+            "unit_url": "https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:cc-6th-rates-and-percentages/cc-6th-percent-problems",
+            "match_quality": "strong",
+            "note": "Specific percent calculation topic — better match than general Pre-Algebra percentages unit"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -3038,7 +3331,8 @@
                 "url": "https://brilliant.org/courses/using-variables/discounts-and-percentages/working-with-percentages-2/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -3061,18 +3355,22 @@
             "lessons": [
               {
                 "lesson_slug": "percent-increase",
-                "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-increase/percent-increase/"
+                "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-increase/percent-increase/",
+                "title": "Percent Increase"
               },
               {
                 "lesson_slug": "price-increase",
-                "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-increase/price-increase/"
+                "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-increase/price-increase/",
+                "title": "Price Increase"
               },
               {
                 "lesson_slug": "percent-increase-blanks",
-                "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-increase/percent-increase-blanks/"
+                "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-increase/percent-increase-blanks/",
+                "title": "Calculating Percent Increase"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -3082,22 +3380,27 @@
             "lessons": [
               {
                 "lesson_slug": "percent-decrease",
-                "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-decrease/percent-decrease/"
+                "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-decrease/percent-decrease/",
+                "title": "Percent Decrease"
               },
               {
                 "lesson_slug": "percentage-decrease-blanks",
-                "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-decrease/percentage-decrease-blanks/"
+                "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-decrease/percentage-decrease-blanks/",
+                "title": "Calculating Percent Decrease"
               },
               {
                 "lesson_slug": "finding-the-original-price",
-                "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-decrease/finding-the-original-price/"
+                "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-decrease/finding-the-original-price/",
+                "title": "Finding the Original Price"
               },
               {
                 "lesson_slug": "reversing-percentages",
-                "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-decrease/reversing-percentages/"
+                "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-decrease/reversing-percentages/",
+                "title": "Reversing Percentages"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -3107,26 +3410,32 @@
             "lessons": [
               {
                 "lesson_slug": "compound-changes-receipts",
-                "url": "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/compound-changes-receipts/"
+                "url": "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/compound-changes-receipts/",
+                "title": "Compound Changes"
               },
               {
                 "lesson_slug": "compound-calculations-receipts",
-                "url": "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/compound-calculations-receipts/"
+                "url": "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/compound-calculations-receipts/",
+                "title": "Compound Calculations"
               },
               {
                 "lesson_slug": "splitting-percent-changes",
-                "url": "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/splitting-percent-changes/"
+                "url": "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/splitting-percent-changes/",
+                "title": "Splitting Percent Changes"
               },
               {
                 "lesson_slug": "compound-calculations-bars",
-                "url": "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/compound-calculations-bars/"
+                "url": "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/compound-calculations-bars/",
+                "title": "Growing and Shrinking"
               },
               {
                 "lesson_slug": "exponential-growth-percentages",
-                "url": "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/exponential-growth-percentages/"
+                "url": "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/exponential-growth-percentages/",
+                "title": "Exponential Growth"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -3139,7 +3448,15 @@
       "learning_objective": "SWBAT read and interpret a line graph",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Represent and interpret data",
+            "unit_url": "https://www.khanacademy.org/kmap/measurement-and-data-d/represent-interpret-data",
+            "match_quality": "strong",
+            "note": "Data interpretation unit — complements existing Brilliant statistics content"
+          }
+        ],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -3168,7 +3485,8 @@
                 "url": "https://brilliant.org/courses/basic-math/means/ds-balance-5/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -3193,7 +3511,8 @@
                 "url": "https://brilliant.org/courses/basic-math/more-means/edv-mean-groups-8/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -3218,7 +3537,8 @@
                 "url": "https://brilliant.org/courses/basic-math/adding-data/ds-adding-lists/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -3237,7 +3557,15 @@
             "unit_name": "Line plots",
             "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/line-plots",
             "match_quality": "partial",
-            "note": "Line plots vs line graphs differ; closest KA match at 5th grade level"
+            "note": "Line plots vs line graphs differ; closest KA match at 5th grade level",
+            "activity_type": "video"
+          },
+          {
+            "source": "Khan Academy",
+            "unit_name": "Represent and interpret data",
+            "unit_url": "https://www.khanacademy.org/kmap/measurement-and-data-d/represent-interpret-data",
+            "match_quality": "strong",
+            "note": "Data representation unit — plotting and reading graphs"
           }
         ],
         "brilliant": [
@@ -3268,7 +3596,8 @@
                 "url": "https://brilliant.org/courses/basic-math/median/ds-median-lists/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -3297,7 +3626,8 @@
                 "url": "https://brilliant.org/courses/basic-math/more-medians/ds-quartiles-2/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -3316,7 +3646,9 @@
             "unit_name": "4th Grade - Measuring angles",
             "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2",
             "match_quality": "suggested",
-            "note": "Angle identification and types - 4th grade geometry topic"
+            "note": "Angle identification and types - 4th grade geometry topic",
+            "display_title": "Measuring angles",
+            "activity_type": "video"
           }
         ],
         "brilliant": [
@@ -3339,7 +3671,8 @@
                 "url": "https://brilliant.org/courses/geometry-fundamentals/angles/triangle-sides-and-angles-2/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -3352,7 +3685,15 @@
       "learning_objective": "SWBAT measure and sketch angles with protractor",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Measuring angles",
+            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2/imp-measuring-angles",
+            "match_quality": "strong",
+            "note": "Direct match — 4th grade protractor measurement topic"
+          }
+        ],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -3373,7 +3714,8 @@
                 "url": "https://brilliant.org/courses/geometry-fundamentals/angles-and-lengths/circles-10/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -3415,7 +3757,8 @@
                 "url": "https://brilliant.org/courses/basic-2d-geometry/angles-4/advanced-angle-hunts/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -3453,7 +3796,8 @@
                 "url": "https://brilliant.org/courses/basic-2d-geometry/triangles-5/currys-paradox/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -3478,7 +3822,8 @@
                 "url": "https://brilliant.org/courses/basic-2d-geometry/mastering-triangles/pegboard-triangles-2/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -3503,7 +3848,8 @@
                 "url": "https://brilliant.org/courses/basic-2d-geometry/triangle-centers/anatomy-of-a-triangle/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -3516,7 +3862,15 @@
       "learning_objective": "SWBAT identify and classify triangles (Right, isoceles, equilateral)",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Classifying triangles",
+            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/plane-figures/imp-classifying-triangles",
+            "match_quality": "strong",
+            "note": "Direct match — classifying by sides and angles at 4th grade level"
+          }
+        ],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -3545,7 +3899,8 @@
                 "url": "https://brilliant.org/courses/geometry-fundamentals/pythagoras-geometry-3/applying-the-pythagorean-theorem-3/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -3570,7 +3925,8 @@
                 "url": "https://brilliant.org/courses/basic-2d-geometry/triangles-5/currys-paradox/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -3595,7 +3951,8 @@
                 "url": "https://brilliant.org/courses/basic-2d-geometry/mastering-triangles/pegboard-triangles-2/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -3620,7 +3977,8 @@
                 "url": "https://brilliant.org/courses/basic-2d-geometry/triangle-centers/anatomy-of-a-triangle/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -3666,7 +4024,8 @@
                 "url": "https://brilliant.org/courses/basic-2d-geometry/regular-polygons-4/dissections/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -3708,7 +4067,8 @@
                 "url": "https://brilliant.org/courses/transformations/translations/undoing-translations/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -3733,7 +4093,8 @@
                 "url": "https://brilliant.org/courses/transformations/rotation/composing-rotations/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -3766,7 +4127,8 @@
                 "url": "https://brilliant.org/courses/transformations/reflections/reversing-reflection/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -3799,7 +4161,8 @@
                 "url": "https://brilliant.org/courses/transformations/congruence-and-symmetry/symmetry-and-congruence/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -3818,7 +4181,9 @@
             "unit_name": "4th Grade - Place value",
             "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-place-value-and-rounding",
             "match_quality": "suggested",
-            "note": "Place value basics - 4th grade place value topic"
+            "note": "Place value basics - 4th grade place value topic",
+            "display_title": "Place value",
+            "activity_type": "video"
           }
         ],
         "brilliant": []
@@ -3832,7 +4197,16 @@
       "learning_objective": "SWBAT explain that each digit is 10× the value of the digit to its right and 1/10 of the digit to its left.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Place value and rounding (3rd grade K-8)",
+            "unit_url": "https://www.khanacademy.org/math/k-8-grades/cc-third-grade-math/cc-3rd-place-value-rounding",
+            "match_quality": "strong",
+            "display_title": "Place value and rounding",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -3844,7 +4218,16 @@
       "learning_objective": "SWBAT Add and Subtract multi-digit numbers using algo",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Module 1: Place value, rounding, and algorithms",
+            "unit_url": "https://www.khanacademy.org/math/4th-engage-ny/engage-4th-module-1",
+            "match_quality": "strong",
+            "display_title": "Place value, rounding, and algorithms",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -3856,7 +4239,17 @@
       "learning_objective": "SWBAT do efficient Add & Sub by using properties like: commutative, associative, breaking nos, multiples of 10, Counting up/down etc.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Addition, subtraction, and estimation (3rd grade)",
+            "unit_url": "https://www.khanacademy.org/math/cc-third-grade-math/imp-addition-and-subtraction",
+            "match_quality": "strong",
+            "note": "Covers efficient strategies including commutative/associative properties, counting up/down",
+            "display_title": "Addition, subtraction, and estimation",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -3868,7 +4261,16 @@
       "learning_objective": "SWBAT multiply up to 4-digit × 1-digit using algo, area model, etc. ",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Multiplication and division (4th grade)",
+            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2",
+            "match_quality": "strong",
+            "display_title": "Multiplication and division",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -3880,7 +4282,16 @@
       "learning_objective": "SWBAT to do efficient multiplication by using properties like: doubling, skip counting, associative, distributive",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "1-digit multiplication (3rd grade)",
+            "unit_url": "https://www.khanacademy.org/math/cc-third-grade-math/3rd-basic-multiplication",
+            "match_quality": "strong",
+            "display_title": "1-digit multiplication",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -3892,7 +4303,17 @@
       "learning_objective": "SWBAT divide up to 4-digit ÷ 1-digit, finding quotients and remainders using place value.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Division (4th grade)",
+            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/division",
+            "match_quality": "strong",
+            "note": "4th grade division covers long division with remainders using place value",
+            "display_title": "Division",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -3904,7 +4325,17 @@
       "learning_objective": "SWBAT Multi-step word problem of add/sub/mul/div, using equations with Unknowns.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Multiplication and division (4th grade)",
+            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/cc-4th-mult-div-topic",
+            "match_quality": "strong",
+            "note": "Covers multi-step word problems with equations and unknowns",
+            "display_title": "Multiplication and division",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -3916,7 +4347,17 @@
       "learning_objective": "SWBAT multiply two 2-digit numbers using place-value, and algo method.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Multiply by 2-digit numbers (4th grade)",
+            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2",
+            "match_quality": "strong",
+            "note": "Same unit as Row 16 — covers both multi-digit multiplication patterns",
+            "display_title": "Multiply by 2-digit numbers",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -3933,7 +4374,8 @@
             "source": "Khan Academy",
             "unit_name": "Algebraic thinking",
             "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-algebraic-thinking",
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "video"
           }
         ],
         "brilliant": []
@@ -3947,7 +4389,17 @@
       "learning_objective": "SWBAT verify calculations using inverse operations (mul ↔ div; add ↔ sub) ",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "More with multiplication and division (3rd grade)",
+            "unit_url": "https://www.khanacademy.org/math/cc-third-grade-math/imp-multiplication-and-division",
+            "match_quality": "partial",
+            "note": "Covers checking multiplication with division and vice versa",
+            "display_title": "More with multiplication and division",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -3959,7 +4411,16 @@
       "learning_objective": "SWBAT Verify calculation using estimation and rounding.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Place value and rounding (4th grade)",
+            "unit_url": "https://www.khanacademy.org/math/k-8-grades/cc-fourth-grade-math/cc-4th-place-value-rounding",
+            "match_quality": "strong",
+            "display_title": "Place value and rounding",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -3981,26 +4442,32 @@
             "lessons": [
               {
                 "lesson_slug": "find-half",
-                "url": "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/find-half/"
+                "url": "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/find-half/",
+                "title": "Finding Half"
               },
               {
                 "lesson_slug": "combining-parts",
-                "url": "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/combining-parts/"
+                "url": "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/combining-parts/",
+                "title": "Combining Parts"
               },
               {
                 "lesson_slug": "take-more-than-one",
-                "url": "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/take-more-than-one/"
+                "url": "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/take-more-than-one/",
+                "title": "Splitting Parts"
               },
               {
                 "lesson_slug": "shade-this-much",
-                "url": "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/shade-this-much/"
+                "url": "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/shade-this-much/",
+                "title": "Splitting and Combining"
               },
               {
                 "lesson_slug": "equal-nths",
-                "url": "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/equal-nths/"
+                "url": "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/equal-nths/",
+                "title": "Equal Parts"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -4013,7 +4480,16 @@
       "learning_objective": "SWBAT mark fractions on a number line.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Fractions (3rd grade K-8)",
+            "unit_url": "https://www.khanacademy.org/math/k-8-grades/cc-third-grade-math/cc-3rd-fractions-topic",
+            "match_quality": "strong",
+            "display_title": "Fractions",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -4025,7 +4501,17 @@
       "learning_objective": "SWBAT compare fractions using models and the number line.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Fractions (4th grade K-8)",
+            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/cc-4th-fractions-topic",
+            "match_quality": "strong",
+            "note": "4th grade fractions includes comparing fractions using visual models",
+            "display_title": "Fractions",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -4047,26 +4533,32 @@
             "lessons": [
               {
                 "lesson_slug": "equal-fractions",
-                "url": "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/equal-fractions/"
+                "url": "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/equal-fractions/",
+                "title": "Sixths and Twelfths"
               },
               {
                 "lesson_slug": "equal-fractions-2",
-                "url": "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/equal-fractions-2/"
+                "url": "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/equal-fractions-2/",
+                "title": "Eighths and Sixteenths"
               },
               {
                 "lesson_slug": "making-equivalent",
-                "url": "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/making-equivalent/"
+                "url": "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/making-equivalent/",
+                "title": "Making Equivalent Fractions"
               },
               {
                 "lesson_slug": "equivalent-fractions-3",
-                "url": "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/equivalent-fractions-3/"
+                "url": "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/equivalent-fractions-3/",
+                "title": "Equivalent Fractions"
               },
               {
                 "lesson_slug": "wodb-equivalents",
-                "url": "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/wodb-equivalents/"
+                "url": "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/wodb-equivalents/",
+                "title": "Identifying Equivalents"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -4089,14 +4581,17 @@
             "lessons": [
               {
                 "lesson_slug": "adding-fractions",
-                "url": "https://brilliant.org/courses/math-fundamentals/adding-fractions/adding-fractions/"
+                "url": "https://brilliant.org/courses/math-fundamentals/adding-fractions/adding-fractions/",
+                "title": "Adding Fractions"
               },
               {
                 "lesson_slug": "add-unit-fractions",
-                "url": "https://brilliant.org/courses/math-fundamentals/adding-fractions/add-unit-fractions/"
+                "url": "https://brilliant.org/courses/math-fundamentals/adding-fractions/add-unit-fractions/",
+                "title": "Adding Same-Sized Fractions"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -4114,7 +4609,8 @@
             "source": "Khan Academy",
             "unit_name": "Multiply fractions",
             "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/5th-multiply-fractions",
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "video"
           }
         ],
         "brilliant": []
@@ -4138,10 +4634,12 @@
             "lessons": [
               {
                 "lesson_slug": "simplifying-fractions",
-                "url": "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/simplifying-fractions/"
+                "url": "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/simplifying-fractions/",
+                "title": "Simplifying Fractions"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -4154,7 +4652,23 @@
       "learning_objective": "SWBAT Convert mixed to improper fraction",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Mixed numbers and improper fractions (Arithmetic)",
+            "unit_url": "https://www.khanacademy.org/math/arithmetic-home/arith-review-fractions/mixed-number",
+            "match_quality": "strong",
+            "display_title": "Mixed numbers and improper fractions",
+            "activity_type": "video"
+          },
+          {
+            "source": "Khan Academy",
+            "unit_name": "Mixed numbers (4th grade)",
+            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2/imp-mixed-numbers",
+            "match_quality": "strong",
+            "note": "Specific mixed numbers topic — more focused than general Arithmetic review"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -4166,7 +4680,17 @@
       "learning_objective": "SWBAT Convert improper to mixed fraction.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Mixed numbers and improper fractions (Arithmetic)",
+            "unit_url": "https://www.khanacademy.org/math/arithmetic-home/arith-review-fractions/mixed-number",
+            "match_quality": "strong",
+            "note": "Same unit as Row 33 — covers conversion both directions",
+            "display_title": "Mixed numbers and improper fractions",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -4178,7 +4702,23 @@
       "learning_objective": "SWBAT Compare unlike fractions",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Fractions (4th grade K-8)",
+            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/cc-4th-fractions-topic",
+            "match_quality": "strong",
+            "display_title": "Fractions",
+            "activity_type": "video"
+          },
+          {
+            "source": "Khan Academy",
+            "unit_name": "Equivalent fractions and comparing fractions",
+            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/comparing-fractions-and-equivalent-fractions",
+            "match_quality": "strong",
+            "note": "Comparing fractions with unlike denominators"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -4200,18 +4740,22 @@
             "lessons": [
               {
                 "lesson_slug": "fractions-of-fractions",
-                "url": "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/fractions-of-fractions/"
+                "url": "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/fractions-of-fractions/",
+                "title": "Fractions of Unit Fractions"
               },
               {
                 "lesson_slug": "expressing-fouf",
-                "url": "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/expressing-fouf/"
+                "url": "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/expressing-fouf/",
+                "title": "Products of Unit Fractions"
               },
               {
                 "lesson_slug": "fractions-of-fractions-2",
-                "url": "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/fractions-of-fractions-2/"
+                "url": "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/fractions-of-fractions-2/",
+                "title": "Fraction of Any Fraction"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -4234,18 +4778,22 @@
             "lessons": [
               {
                 "lesson_slug": "adding-different",
-                "url": "https://brilliant.org/courses/math-fundamentals/adding-fractions/adding-different/"
+                "url": "https://brilliant.org/courses/math-fundamentals/adding-fractions/adding-different/",
+                "title": "Adding Unlike Parts"
               },
               {
                 "lesson_slug": "adding-nonmultiples",
-                "url": "https://brilliant.org/courses/math-fundamentals/adding-fractions/adding-nonmultiples/"
+                "url": "https://brilliant.org/courses/math-fundamentals/adding-fractions/adding-nonmultiples/",
+                "title": "Adding Unit Fractions"
               },
               {
                 "lesson_slug": "adding-unlike",
-                "url": "https://brilliant.org/courses/math-fundamentals/adding-fractions/adding-unlike/"
+                "url": "https://brilliant.org/courses/math-fundamentals/adding-fractions/adding-unlike/",
+                "title": "Adding Any Fractions"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -4258,7 +4806,16 @@
       "learning_objective": "SWBAT Add and Sub mixed fractions",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Add and subtract mixed numbers (Arithmetic)",
+            "unit_url": "https://www.khanacademy.org/math/arithmetic-home/arith-review-fractions/add-sub-mixed-numbers",
+            "match_quality": "strong",
+            "display_title": "Add and subtract mixed numbers",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -4270,7 +4827,22 @@
       "learning_objective": "SWBAT solve word problems involving add and sub of fractions (Unlike and mixed)",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Add and subtract fractions (different denominators)",
+            "unit_url": "https://www.khanacademy.org/math/arithmetic/x18ca194a:add-and-subtract-fractions-different-denominators",
+            "match_quality": "strong",
+            "activity_type": "video"
+          },
+          {
+            "source": "Khan Academy",
+            "unit_name": "Adding/subtracting fractions word problems",
+            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-3/imp-adding-and-subtracting-fractions-with-unlike-denominators-word-problems",
+            "match_quality": "strong",
+            "note": "Specific word problems topic — better match than general add/subtract fractions unit"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -4287,7 +4859,8 @@
             "source": "Khan Academy",
             "unit_name": "Converting units of measure",
             "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-measurement-and-data-3",
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "video"
           }
         ],
         "brilliant": []
@@ -4307,7 +4880,9 @@
             "unit_name": "4th Grade - Units of measurement",
             "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-measurement-and-data-2",
             "match_quality": "suggested",
-            "note": "Broad measurement word problems - spans multiple units and grade levels"
+            "note": "Broad measurement word problems - spans multiple units and grade levels",
+            "display_title": "Units of measurement",
+            "activity_type": "video"
           }
         ],
         "brilliant": []
@@ -4346,7 +4921,8 @@
                 "url": "https://brilliant.org/courses/geometry-fundamentals/areas/scaling-areas-1/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -4359,7 +4935,16 @@
       "learning_objective": "SWBAT calculate perimeter for triangles, rectangles, and composite shapes",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Perimeter (3rd grade K-8)",
+            "unit_url": "https://www.khanacademy.org/math/k-8-grades/cc-third-grade-math/imp-perimeter",
+            "match_quality": "strong",
+            "display_title": "Perimeter",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -4377,7 +4962,9 @@
             "unit_name": "4th Grade - Area and perimeter",
             "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/area-perimeter",
             "match_quality": "suggested",
-            "note": "Area/perimeter word problems - 4th grade topic"
+            "note": "Area/perimeter word problems - 4th grade topic",
+            "display_title": "Area and perimeter",
+            "activity_type": "video"
           }
         ],
         "brilliant": [
@@ -4400,7 +4987,8 @@
                 "url": "https://brilliant.org/courses/geometry-fundamentals/surface-area/pyramids-cones-2/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -4418,7 +5006,8 @@
             "source": "Khan Academy",
             "unit_name": "Volume",
             "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/5th-volume",
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "video"
           }
         ],
         "brilliant": []
@@ -4432,7 +5021,16 @@
       "learning_objective": "SWBAT compute the surface area of rectangular prism/composite figures",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Module 5: Area, surface area, and volume (6th Engage NY)",
+            "unit_url": "https://www.khanacademy.org/math/6th-engage-ny/engage-6th-module-5",
+            "match_quality": "strong",
+            "display_title": "Area, surface area, and volume (6th Engage NY)",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -4444,7 +5042,15 @@
       "learning_objective": "SWBAT solve word problems of surface area and volume.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Unit 1: Area and Surface Area (6th Illustrative Math)",
+            "unit_url": "https://www.khanacademy.org/math/6th-grade-illustrative-math/unit-1-area-and-surface-area",
+            "match_quality": "strong",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -4493,7 +5099,8 @@
                 "url": "https://brilliant.org/courses/coordinate-plane/points/applied-coordinates/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -4526,7 +5133,8 @@
                 "url": "https://brilliant.org/courses/coordinate-plane/the-four-quadrants/temperature-coordinates/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -4555,7 +5163,8 @@
                 "url": "https://brilliant.org/courses/coordinate-plane/lines/interpreting-lines/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -4588,7 +5197,8 @@
                 "url": "https://brilliant.org/courses/coordinate-plane/inequalities/accounting-inequalities/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -4621,7 +5231,8 @@
                 "url": "https://brilliant.org/courses/coordinate-plane/gridline-distance/temperature-differences/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -4659,7 +5270,8 @@
                 "url": "https://brilliant.org/courses/coordinate-geometry/separating-points/comparing-distance/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -4684,7 +5296,8 @@
                 "url": "https://brilliant.org/courses/coordinate-geometry/estimating-distance/estimating-distance/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -4717,7 +5330,8 @@
                 "url": "https://brilliant.org/courses/coordinate-geometry/measuring-area/polygon-area/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -4742,7 +5356,8 @@
                 "url": "https://brilliant.org/courses/coordinate-geometry/unknown-values/leaving-the-plane/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -4767,7 +5382,8 @@
                 "url": "https://brilliant.org/courses/coordinate-geometry/selecting-shapes/compound-shape-expressions/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -4796,7 +5412,8 @@
                 "url": "https://brilliant.org/courses/coordinate-geometry/pythagoras/proving-pythagoras/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -4821,7 +5438,8 @@
                 "url": "https://brilliant.org/courses/coordinate-geometry/using-pythagoras/distance-from-coordinates/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -4846,7 +5464,8 @@
                 "url": "https://brilliant.org/courses/coordinate-geometry/radial-distance/points-on-a-circle/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -4875,7 +5494,8 @@
                 "url": "https://brilliant.org/courses/coordinate-geometry/circles/plotting-circles/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -4900,7 +5520,8 @@
                 "url": "https://brilliant.org/courses/coordinate-geometry/shifted-circles/plotting-from-the-equation/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -4938,7 +5559,8 @@
                 "url": "https://brilliant.org/courses/basic-math/quartiles/ds-quartiles-6/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -4963,7 +5585,8 @@
                 "url": "https://brilliant.org/courses/basic-math/whiskers/comparing-distribution/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           },
           {
             "source": "Brilliant.org",
@@ -4992,7 +5615,8 @@
                 "url": "https://brilliant.org/courses/basic-math/outliers/outside-the-whiskers/"
               }
             ],
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "exercise"
           }
         ]
       }
@@ -5010,7 +5634,8 @@
             "source": "Khan Academy",
             "unit_name": "Decimal place value",
             "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-place-value-and-decimals",
-            "match_quality": "strong"
+            "match_quality": "strong",
+            "activity_type": "video"
           }
         ],
         "brilliant": []
@@ -5024,7 +5649,16 @@
       "learning_objective": "SWBAT compare and order decimals upto hundredths place",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Place value and decimals (5th grade K-8)",
+            "unit_url": "https://www.khanacademy.org/math/k-8-grades/cc-fifth-grade-math/cc-5th-place-value-decimals-top",
+            "match_quality": "strong",
+            "display_title": "Place value and decimals",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -5036,7 +5670,16 @@
       "learning_objective": "SWBAT convert fractions with denominator 100 to decimals and vice versa",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Module 1: Place value and decimal fractions (5th Engage NY)",
+            "unit_url": "https://www.khanacademy.org/math/5th-engage-ny/engage-5th-module-1",
+            "match_quality": "strong",
+            "display_title": "Place value and decimal fractions (5th Engage NY)",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -5048,7 +5691,16 @@
       "learning_objective": "SWBAT convert fractions to decimal notation.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Module 6: Decimal fractions (4th Engage NY)",
+            "unit_url": "https://www.khanacademy.org/math/4th-engage-ny/engage-4th-module-6",
+            "match_quality": "strong",
+            "display_title": "Decimal fractions (4th Engage NY)",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -5060,7 +5712,15 @@
       "learning_objective": "SWBAT add a decimal with whole no. and another decimal.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Get ready for adding and subtracting decimals",
+            "unit_url": "https://www.khanacademy.org/math/get-ready-for-5th-grade/x01d8909412c13b9d:get-ready-for-adding-subtracting-decimals",
+            "match_quality": "strong",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -5072,7 +5732,17 @@
       "learning_objective": "SWBAT sub a decimal with whole no. and another decimal.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Subtract decimals (5th grade)",
+            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/subtract-decimals",
+            "match_quality": "strong",
+            "note": "Same as unit 3 from original mapping — already assigned to MYP Row 29. Different curriculum row.",
+            "display_title": "Subtract decimals",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -5084,7 +5754,15 @@
       "learning_objective": "SWBAT multiply a decimal with whole no.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Multiply decimals (5th grade FL)",
+            "unit_url": "https://www.khanacademy.org/math/grade-5-math-fl-best/x7a7f452d9f51baa9:multiply-decimals",
+            "match_quality": "strong",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -5096,7 +5774,17 @@
       "learning_objective": "SWBAT divide 2 whole numbers to get a decimal quotient.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Divide decimals (5th grade)",
+            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/divide-decimals",
+            "match_quality": "strong",
+            "note": "Covers dividing to get decimal quotients — already assigned to MYP Row 32. Different curriculum.",
+            "display_title": "Divide decimals",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     },
@@ -5108,7 +5796,16 @@
       "learning_objective": "SWBAT solve multi-digit computation problems that too word problems involving decimals.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [],
+        "khan_academy": [
+          {
+            "source": "Khan Academy",
+            "unit_name": "Arithmetic decimals",
+            "unit_url": "https://www.khanacademy.org/math/arithmetic/arith-decimals",
+            "match_quality": "strong",
+            "note": "Comprehensive decimal operations including word problems",
+            "activity_type": "video"
+          }
+        ],
         "brilliant": []
       }
     }
