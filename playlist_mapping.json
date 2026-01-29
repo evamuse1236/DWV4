@@ -90,15 +90,7 @@
       "learning_objective": "",
       "dw_handout": "Fraction Fundamentals: GCF and Simplifying fractions",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "4th Grade - Factors, multiples and patterns",
-            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-factors-multiples-and-patterns",
-            "match_quality": "suggested",
-            "note": "GCF and simplifying fractions - foundational skill, 4th grade level"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -149,14 +141,7 @@
       "learning_objective": "SWBAT do multi-digit division problems using algorithm (4-digit by 2 digit)",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Multi-digit multiplication and division",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -168,14 +153,7 @@
       "learning_objective": "SWBAT solve simple word problems using addition, subtraction, multiplication, and division",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Multi-digit multiplication and division",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -187,14 +165,7 @@
       "learning_objective": "SWBAT solve multi-step word problems using addition, subtraction, multiplication, and division.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Multi-digit multiplication and division",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -203,18 +174,10 @@
       "row": 13,
       "subject": "Math",
       "topic": "Arithmetic MYP 1",
-      "learning_objective": "SWBAT mentally estimate results of operations on multi-digit numbers using rounding strategies.\nExample: 43 \u00d7 13 should be roughly 500 since (43\u00d710)= 430",
+      "learning_objective": "SWBAT mentally estimate results of operations on multi-digit numbers using rounding strategies.\nExample: 43 × 13 should be roughly 500 since (43×10)= 430",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Multi-digit multiplication and division",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division",
-            "match_quality": "partial",
-            "note": "Estimation is covered within multi-digit multiplication estimation lessons"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -226,15 +189,7 @@
       "learning_objective": "SWBAT use rounding strategies and inverse operations to verify and cross-check answers to word problems",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Multi-digit multiplication and division",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division",
-            "match_quality": "partial",
-            "note": "Rounding and verification strategies covered as part of estimation lessons"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -246,15 +201,7 @@
       "learning_objective": "SWBAT compare and order positive and negative numbers to determine which is greater or less.",
       "dw_handout": "Deepwork: Basics of negative numbers",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "6th Grade - Negative numbers",
-            "unit_url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic",
-            "match_quality": "suggested",
-            "note": "Negative numbers - 6th grade topic, not in KA 5th grade CC"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -500,18 +447,10 @@
       "row": 17,
       "subject": "Math",
       "topic": "Factors and Multiples",
-      "learning_objective": "SWBAT find every factor pair for numbers 1\u2013100. Eg. For 12, the factor pairs are:\n1 \u00d7 12 = 12, 2 \u00d7 6 = 12, 3 \u00d7 4 = 12. \n",
+      "learning_objective": "SWBAT find every factor pair for numbers 1–100. Eg. For 12, the factor pairs are:\n1 × 12 = 12, 2 × 6 = 12, 3 × 4 = 12. \n",
       "dw_handout": "Deep Work: Factors and Multiples",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "4th Grade - Factors, multiples and patterns",
-            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-factors-multiples-and-patterns",
-            "match_quality": "suggested",
-            "note": "Factors and multiples - primarily 4th grade CC standard"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -549,15 +488,7 @@
       "learning_objective": "SWBAT understand that every whole number is a multiple of its factors. Eg. 12 is a multiple of its factors: 1, 2, 3, 4, 6, and 12.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "4th Grade - Factors, multiples and patterns",
-            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-factors-multiples-and-patterns",
-            "match_quality": "suggested",
-            "note": "Factor-multiple relationship - 4th grade CC standard"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -587,15 +518,7 @@
       "learning_objective": "SWBAT determine if a whole number is a multiple of a given one-digit number (Divisibility rules)\n",
       "dw_handout": "Deepwork: Divisibility rules",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "4th Grade - Factors, multiples and patterns",
-            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-factors-multiples-and-patterns",
-            "match_quality": "suggested",
-            "note": "Divisibility rules - 4th grade foundations / pre-algebra"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -786,7 +709,7 @@
       "row": 20,
       "subject": "Math",
       "topic": "Factors and Multiples",
-      "learning_objective": "SWBAT classify a whole number (1\u2013100) as prime or composite.",
+      "learning_objective": "SWBAT classify a whole number (1–100) as prime or composite.",
       "dw_handout": "Deepwork: Prime and Composite",
       "playlist_links": {
         "khan_academy": [
@@ -859,15 +782,7 @@
       "learning_objective": "SWBAT find HCF of any 2 numbers",
       "dw_handout": "Deep Work: Highest Common Factor",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Pre-Algebra - Factors and multiples",
-            "unit_url": "https://www.khanacademy.org/math/pre-algebra/pre-algebra-factors-multiples",
-            "match_quality": "suggested",
-            "note": "HCF/GCF - covered in pre-algebra / 6th grade"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -932,14 +847,7 @@
       "learning_objective": "SWBAT add and subtract mixed fractions",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Add and subtract fractions",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-3",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -951,14 +859,7 @@
       "learning_objective": "SWBAT multiply a fraction with whole number and another fraction",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Multiply fractions",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/5th-multiply-fractions",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -1011,14 +912,7 @@
       "learning_objective": "SWBAT divide a fraction with another fraction ",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Divide fractions",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/divide-fractions",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -1030,15 +924,7 @@
       "learning_objective": "SWBAT solve word problems involving addition, subtraction, multiplicaiton, division of Fractions using equations and visual models.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Divide fractions",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/divide-fractions",
-            "match_quality": "partial",
-            "note": "Division word problems covered here; addition/subtraction word problems in Unit 4"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -1096,14 +982,7 @@
       "learning_objective": "SWBAT multiply 2 decimal numbers ",
       "dw_handout": "Deep Work: Decimal Multiplication",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Multiply decimals",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-multiplication-and-division-3",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -1134,14 +1013,7 @@
       "learning_objective": "SWBAT divide a decimal with another decimal",
       "dw_handout": "Deep Work: Dividing Decimals by Decimals",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Divide decimals",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/divide-decimals",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -1153,14 +1025,7 @@
       "learning_objective": "SWBAT explain patterns in the number of zeros when multiplying by powers of 10 and in the placement of the decimal point when multiplying or dividing by powers of 10,\n(using whole-number exponents to denote powers of 10).\"",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Powers of ten",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/powers-of-ten",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -1305,15 +1170,7 @@
       "learning_objective": "SWBAT solve word problems involving addition, subtraction, multiplication, division of Decimals using equations and visual models.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "5th Grade - Spread across Add/Sub/Mul/Div decimals units (U2, U3, U8, U9)",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-addition-and-subtraction-3",
-            "match_quality": "suggested",
-            "note": "Decimal word problems span Units 2, 3, 8, 9 - not a single standalone unit"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -1335,171 +1192,6 @@
           }
         ],
         "brilliant": [
-          {
-            "source": "Brilliant.org",
-            "course_name": "Coordinate Plane",
-            "course_slug": "coordinate-plane",
-            "chapter_slug": "points",
-            "lessons": [
-              {
-                "lesson_slug": "coordinates-2",
-                "url": "https://brilliant.org/courses/coordinate-plane/points/coordinates-2/"
-              },
-              {
-                "lesson_slug": "coordinate-pairs",
-                "url": "https://brilliant.org/courses/coordinate-plane/points/coordinate-pairs/"
-              },
-              {
-                "lesson_slug": "axes",
-                "url": "https://brilliant.org/courses/coordinate-plane/points/axes/"
-              },
-              {
-                "lesson_slug": "x-and-y-coords",
-                "url": "https://brilliant.org/courses/coordinate-plane/points/x-and-y-coords/"
-              },
-              {
-                "lesson_slug": "plotting-points",
-                "url": "https://brilliant.org/courses/coordinate-plane/points/plotting-points/"
-              },
-              {
-                "lesson_slug": "identifying-points",
-                "url": "https://brilliant.org/courses/coordinate-plane/points/identifying-points/"
-              },
-              {
-                "lesson_slug": "applied-coordinates",
-                "url": "https://brilliant.org/courses/coordinate-plane/points/applied-coordinates/"
-              }
-            ],
-            "match_quality": "strong"
-          },
-          {
-            "source": "Brilliant.org",
-            "course_name": "Coordinate Plane",
-            "course_slug": "coordinate-plane",
-            "chapter_slug": "the-four-quadrants",
-            "lessons": [
-              {
-                "lesson_slug": "negative-coordinates",
-                "url": "https://brilliant.org/courses/coordinate-plane/the-four-quadrants/negative-coordinates/"
-              },
-              {
-                "lesson_slug": "identifying-quadrants",
-                "url": "https://brilliant.org/courses/coordinate-plane/the-four-quadrants/identifying-quadrants/"
-              },
-              {
-                "lesson_slug": "point-in-quadrant",
-                "url": "https://brilliant.org/courses/coordinate-plane/the-four-quadrants/point-in-quadrant/"
-              },
-              {
-                "lesson_slug": "plotting-negative-coords",
-                "url": "https://brilliant.org/courses/coordinate-plane/the-four-quadrants/plotting-negative-coords/"
-              },
-              {
-                "lesson_slug": "identifying-negative-coords",
-                "url": "https://brilliant.org/courses/coordinate-plane/the-four-quadrants/identifying-negative-coords/"
-              },
-              {
-                "lesson_slug": "temperature-coordinates",
-                "url": "https://brilliant.org/courses/coordinate-plane/the-four-quadrants/temperature-coordinates/"
-              }
-            ],
-            "match_quality": "strong"
-          },
-          {
-            "source": "Brilliant.org",
-            "course_name": "Coordinate Plane",
-            "course_slug": "coordinate-plane",
-            "chapter_slug": "lines",
-            "lessons": [
-              {
-                "lesson_slug": "points-to-lines",
-                "url": "https://brilliant.org/courses/coordinate-plane/lines/points-to-lines/"
-              },
-              {
-                "lesson_slug": "horizontal-lines",
-                "url": "https://brilliant.org/courses/coordinate-plane/lines/horizontal-lines/"
-              },
-              {
-                "lesson_slug": "vertical-lines",
-                "url": "https://brilliant.org/courses/coordinate-plane/lines/vertical-lines/"
-              },
-              {
-                "lesson_slug": "horiz-and-vert-lines",
-                "url": "https://brilliant.org/courses/coordinate-plane/lines/horiz-and-vert-lines/"
-              },
-              {
-                "lesson_slug": "interpreting-lines",
-                "url": "https://brilliant.org/courses/coordinate-plane/lines/interpreting-lines/"
-              }
-            ],
-            "match_quality": "strong"
-          },
-          {
-            "source": "Brilliant.org",
-            "course_name": "Coordinate Plane",
-            "course_slug": "coordinate-plane",
-            "chapter_slug": "inequalities",
-            "lessons": [
-              {
-                "lesson_slug": "y-inequalities",
-                "url": "https://brilliant.org/courses/coordinate-plane/inequalities/y-inequalities/"
-              },
-              {
-                "lesson_slug": "x-inequalities",
-                "url": "https://brilliant.org/courses/coordinate-plane/inequalities/x-inequalities/"
-              },
-              {
-                "lesson_slug": "identifying-regions",
-                "url": "https://brilliant.org/courses/coordinate-plane/inequalities/identifying-regions/"
-              },
-              {
-                "lesson_slug": "or-equal-to-plane",
-                "url": "https://brilliant.org/courses/coordinate-plane/inequalities/or-equal-to-plane/"
-              },
-              {
-                "lesson_slug": "marking-boundaries",
-                "url": "https://brilliant.org/courses/coordinate-plane/inequalities/marking-boundaries/"
-              },
-              {
-                "lesson_slug": "accounting-inequalities",
-                "url": "https://brilliant.org/courses/coordinate-plane/inequalities/accounting-inequalities/"
-              }
-            ],
-            "match_quality": "strong"
-          },
-          {
-            "source": "Brilliant.org",
-            "course_name": "Coordinate Plane",
-            "course_slug": "coordinate-plane",
-            "chapter_slug": "gridline-distance",
-            "lessons": [
-              {
-                "lesson_slug": "distance-between-points",
-                "url": "https://brilliant.org/courses/coordinate-plane/gridline-distance/distance-between-points/"
-              },
-              {
-                "lesson_slug": "vertical-separation",
-                "url": "https://brilliant.org/courses/coordinate-plane/gridline-distance/vertical-separation/"
-              },
-              {
-                "lesson_slug": "distance-absolute-value",
-                "url": "https://brilliant.org/courses/coordinate-plane/gridline-distance/distance-absolute-value/"
-              },
-              {
-                "lesson_slug": "selecting-for-distance",
-                "url": "https://brilliant.org/courses/coordinate-plane/gridline-distance/selecting-for-distance/"
-              },
-              {
-                "lesson_slug": "giving-coordinates",
-                "url": "https://brilliant.org/courses/coordinate-plane/gridline-distance/giving-coordinates/"
-              },
-              {
-                "lesson_slug": "temperature-differences",
-                "url": "https://brilliant.org/courses/coordinate-plane/gridline-distance/temperature-differences/"
-              }
-            ],
-            "match_quality": "strong"
-          },
           {
             "source": "Brilliant.org",
             "course_name": "Transformations",
@@ -1586,15 +1278,7 @@
       "learning_objective": "\nSWBAT understand the relationship between two-dimensional figures and three-dimensional objects.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Properties of shapes",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/properties-of-shapes",
-            "match_quality": "partial",
-            "note": "2D/3D relationship is partially covered; more depth in 6th grade"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -1662,44 +1346,8 @@
       "learning_objective": "SWBAT identify and classify different categories of triangles and their properties",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Properties of shapes",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/properties-of-shapes",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
-          {
-            "source": "Brilliant.org",
-            "course_name": "Geometry Fundamentals",
-            "course_slug": "geometry-fundamentals",
-            "chapter_slug": "pythagoras-geometry-3",
-            "lessons": [
-              {
-                "lesson_slug": "pythagorean-theorem-diagrammar-2",
-                "url": "https://brilliant.org/courses/geometry-fundamentals/pythagoras-geometry-3/pythagorean-theorem-diagrammar-2/"
-              },
-              {
-                "lesson_slug": "using-the-pythagorean-theorem",
-                "url": "https://brilliant.org/courses/geometry-fundamentals/pythagoras-geometry-3/using-the-pythagorean-theorem/"
-              },
-              {
-                "lesson_slug": "square-roots",
-                "url": "https://brilliant.org/courses/geometry-fundamentals/pythagoras-geometry-3/square-roots/"
-              },
-              {
-                "lesson_slug": "special-right-triangles-3",
-                "url": "https://brilliant.org/courses/geometry-fundamentals/pythagoras-geometry-3/special-right-triangles-3/"
-              },
-              {
-                "lesson_slug": "applying-the-pythagorean-theorem-3",
-                "url": "https://brilliant.org/courses/geometry-fundamentals/pythagoras-geometry-3/applying-the-pythagorean-theorem-3/"
-              }
-            ],
-            "match_quality": "strong"
-          },
           {
             "source": "Brilliant.org",
             "course_name": "Beautiful Geometry",
@@ -1794,41 +1442,7 @@
             "match_quality": "strong"
           }
         ],
-        "brilliant": [
-          {
-            "source": "Brilliant.org",
-            "course_name": "Beautiful Geometry",
-            "course_slug": "basic-2d-geometry",
-            "chapter_slug": "regular-polygons-4",
-            "lessons": [
-              {
-                "lesson_slug": "angles-of-regular-polygons",
-                "url": "https://brilliant.org/courses/basic-2d-geometry/regular-polygons-4/angles-of-regular-polygons/"
-              },
-              {
-                "lesson_slug": "defining-regular-polygons",
-                "url": "https://brilliant.org/courses/basic-2d-geometry/regular-polygons-4/defining-regular-polygons/"
-              },
-              {
-                "lesson_slug": "polygon-areas-and-lengths",
-                "url": "https://brilliant.org/courses/basic-2d-geometry/regular-polygons-4/polygon-areas-and-lengths/"
-              },
-              {
-                "lesson_slug": "matchstick-polygons",
-                "url": "https://brilliant.org/courses/basic-2d-geometry/regular-polygons-4/matchstick-polygons/"
-              },
-              {
-                "lesson_slug": "stellations",
-                "url": "https://brilliant.org/courses/basic-2d-geometry/regular-polygons-4/stellations/"
-              },
-              {
-                "lesson_slug": "dissections",
-                "url": "https://brilliant.org/courses/basic-2d-geometry/regular-polygons-4/dissections/"
-              }
-            ],
-            "match_quality": "strong"
-          }
-        ]
+        "brilliant": []
       }
     },
     {
@@ -1839,15 +1453,7 @@
       "learning_objective": "SWBAT apply area and perimeter formulas for rectangles and squares to solve real-world and mathematical problems (e.g., finding an unknown width from area).",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "4th Grade - Area and perimeter",
-            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/area-perimeter",
-            "match_quality": "suggested",
-            "note": "Area/perimeter of rectangles - 4th grade CC standard; formulas applied in 6th grade"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -1953,7 +1559,7 @@
       "row": 42,
       "subject": "Math",
       "topic": "Algebra foundations",
-      "learning_objective": "SWBAT read and write simple powers with small exponents and explain them as repeated multiplication.\neg. 3\u00b2 \u2192 \u201cthree squared = 3 \u00d7 3.\u201d 2\u00b3 \u2192 \u201ctwo cubed = 2 \u00d7 2 \u00d7 2.\u201d 10\u00b2= \u201cten squared= 10 x 10 = 100\u201d",
+      "learning_objective": "SWBAT read and write simple powers with small exponents and explain them as repeated multiplication.\neg. 3² → “three squared = 3 × 3.” 2³ → “two cubed = 2 × 2 × 2.” 10²= “ten squared= 10 x 10 = 100”",
       "dw_handout": "",
       "playlist_links": {
         "khan_academy": [
@@ -2040,18 +1646,10 @@
       "row": 43,
       "subject": "Math",
       "topic": "Algebra foundations",
-      "learning_objective": "SWBAT write and evaluate numerical expressions involving whole-number exponents.\neg. Evaluate: 2\u00b3 + 5\u00b2",
+      "learning_objective": "SWBAT write and evaluate numerical expressions involving whole-number exponents.\neg. Evaluate: 2³ + 5²",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Algebraic thinking",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-algebraic-thinking",
-            "match_quality": "partial",
-            "note": "Evaluating expressions covered; exponents extend beyond 5th grade scope"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -2130,14 +1728,7 @@
       "learning_objective": "SWBAT identify the rule governing number/shape patterns and find the unknowns based on it.\neg. 1, 4, 9, 16, 25 , X",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Algebraic thinking",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-algebraic-thinking",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -2375,17 +1966,10 @@
       "row": 45,
       "subject": "Math",
       "topic": "Algebra foundations",
-      "learning_objective": "SWBAT use the order of operations to correctly evaluate numerical expressions with parentheses, brackets, and braces.\nExpression: 3 \u00d7 (4 + 2)\n\u201cFirst add 4 + 2 = 6, then 3 \u00d7 6 = 18.\u201d",
+      "learning_objective": "SWBAT use the order of operations to correctly evaluate numerical expressions with parentheses, brackets, and braces.\nExpression: 3 × (4 + 2)\n“First add 4 + 2 = 6, then 3 × 6 = 18.”",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Algebraic thinking",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-algebraic-thinking",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -2397,15 +1981,7 @@
       "learning_objective": "SWBAT represent an unknown number using a letter/symbol.\neg. I am thinking of a number that, when added to 19 gives 40. Can you write an equation?\n19 + x = 40. ",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "6th Grade - Variables & expressions",
-            "unit_url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables",
-            "match_quality": "suggested",
-            "note": "Variables and expressions - 6th grade algebra topic"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -2431,42 +2007,6 @@
               }
             ],
             "match_quality": "strong"
-          },
-          {
-            "source": "Brilliant.org",
-            "course_name": "Solving Equations",
-            "course_slug": "pre-algebra",
-            "chapter_slug": "reasoning-about-variables",
-            "lessons": [
-              {
-                "lesson_slug": "consequences-11",
-                "url": "https://brilliant.org/courses/pre-algebra/reasoning-about-variables/consequences-11/"
-              },
-              {
-                "lesson_slug": "consequences-12",
-                "url": "https://brilliant.org/courses/pre-algebra/reasoning-about-variables/consequences-12/"
-              },
-              {
-                "lesson_slug": "consequences-13",
-                "url": "https://brilliant.org/courses/pre-algebra/reasoning-about-variables/consequences-13/"
-              },
-              {
-                "lesson_slug": "consequences-14",
-                "url": "https://brilliant.org/courses/pre-algebra/reasoning-about-variables/consequences-14/"
-              },
-              {
-                "lesson_slug": "consequences-15",
-                "url": "https://brilliant.org/courses/pre-algebra/reasoning-about-variables/consequences-15/"
-              },
-              {
-                "lesson_slug": "consequences-16",
-                "url": "https://brilliant.org/courses/pre-algebra/reasoning-about-variables/consequences-16/"
-              },
-              {
-                "lesson_slug": "constraints-in-inequalities",
-                "url": "https://brilliant.org/courses/pre-algebra/reasoning-about-variables/constraints-in-inequalities/"
-              }
-            ]
           }
         ]
       }
@@ -2476,18 +2016,10 @@
       "row": 47,
       "subject": "Math",
       "topic": "Algebra",
-      "learning_objective": "SWBAT write expressions using letters to stand for unknowns from simple word phrases.\neg. Subtract 3 from a number y, then triple the result\u201d \u2192 3(y \u2013 3).",
+      "learning_objective": "SWBAT write expressions using letters to stand for unknowns from simple word phrases.\neg. Subtract 3 from a number y, then triple the result” → 3(y – 3).",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "6th Grade - Variables & expressions",
-            "unit_url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables",
-            "match_quality": "suggested",
-            "note": "Writing algebraic expressions - 6th grade topic"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -2538,36 +2070,7 @@
             "note": "Variables vs constants - 6th grade algebra topic"
           }
         ],
-        "brilliant": [
-          {
-            "source": "Brilliant.org",
-            "course_name": "Solving Equations",
-            "course_slug": "pre-algebra",
-            "chapter_slug": "reasoning-about-groups-of-variables",
-            "lessons": [
-              {
-                "lesson_slug": "consequences-6",
-                "url": "https://brilliant.org/courses/pre-algebra/reasoning-about-groups-of-variables/consequences-6/"
-              },
-              {
-                "lesson_slug": "consequences-8",
-                "url": "https://brilliant.org/courses/pre-algebra/reasoning-about-groups-of-variables/consequences-8/"
-              },
-              {
-                "lesson_slug": "consequences-9",
-                "url": "https://brilliant.org/courses/pre-algebra/reasoning-about-groups-of-variables/consequences-9/"
-              },
-              {
-                "lesson_slug": "packing-reasoning",
-                "url": "https://brilliant.org/courses/pre-algebra/reasoning-about-groups-of-variables/packing-reasoning/"
-              },
-              {
-                "lesson_slug": "packing-reasoning-2",
-                "url": "https://brilliant.org/courses/pre-algebra/reasoning-about-groups-of-variables/packing-reasoning-2/"
-              }
-            ]
-          }
-        ]
+        "brilliant": []
       }
     },
     {
@@ -2578,15 +2081,7 @@
       "learning_objective": "SWBAT use properties of operations (distributive, commutative, associative) to rewrite expressions in equivalent forms.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "6th Grade - Variables & expressions",
-            "unit_url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables",
-            "match_quality": "suggested",
-            "note": "Properties of operations with expressions - 6th grade topic"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -2670,66 +2165,6 @@
               }
             ],
             "match_quality": "strong"
-          },
-          {
-            "source": "Brilliant.org",
-            "course_name": "Visual Algebra",
-            "course_slug": "systems-of-equations",
-            "chapter_slug": "combining-linear-expressions",
-            "lessons": [
-              {
-                "lesson_slug": "two-shapes",
-                "url": "https://brilliant.org/courses/systems-of-equations/combining-linear-expressions/two-shapes/"
-              },
-              {
-                "lesson_slug": "two-shapes-2",
-                "url": "https://brilliant.org/courses/systems-of-equations/combining-linear-expressions/two-shapes-2/"
-              },
-              {
-                "lesson_slug": "two-shapes-3",
-                "url": "https://brilliant.org/courses/systems-of-equations/combining-linear-expressions/two-shapes-3/"
-              },
-              {
-                "lesson_slug": "two-shapes-4",
-                "url": "https://brilliant.org/courses/systems-of-equations/combining-linear-expressions/two-shapes-4/"
-              },
-              {
-                "lesson_slug": "taking-a-bite",
-                "url": "https://brilliant.org/courses/systems-of-equations/combining-linear-expressions/taking-a-bite/"
-              }
-            ]
-          },
-          {
-            "source": "Brilliant.org",
-            "course_name": "Visual Algebra",
-            "course_slug": "systems-of-equations",
-            "chapter_slug": "comparing-linear-expressions",
-            "lessons": [
-              {
-                "lesson_slug": "two-comp",
-                "url": "https://brilliant.org/courses/systems-of-equations/comparing-linear-expressions/two-comp/"
-              },
-              {
-                "lesson_slug": "two-comp-2",
-                "url": "https://brilliant.org/courses/systems-of-equations/comparing-linear-expressions/two-comp-2/"
-              },
-              {
-                "lesson_slug": "navigating-a-table",
-                "url": "https://brilliant.org/courses/systems-of-equations/comparing-linear-expressions/navigating-a-table/"
-              },
-              {
-                "lesson_slug": "comparing-rates",
-                "url": "https://brilliant.org/courses/systems-of-equations/comparing-linear-expressions/comparing-rates/"
-              },
-              {
-                "lesson_slug": "comparing-rates-2",
-                "url": "https://brilliant.org/courses/systems-of-equations/comparing-linear-expressions/comparing-rates-2/"
-              },
-              {
-                "lesson_slug": "comparing-expressions-2",
-                "url": "https://brilliant.org/courses/systems-of-equations/comparing-linear-expressions/comparing-expressions-2/"
-              }
-            ]
           }
         ]
       }
@@ -2739,18 +2174,10 @@
       "row": 50,
       "subject": "Math",
       "topic": "Algebra",
-      "learning_objective": "SWBAT solve an equation to find an unknown (methods: substitution, adding/subtracting on both sides, multiplying/dividing on both sides, etc)\n1. 3x = 12\nTry x = 4 \u2192 3\u00d74 = 12 (true).\nTry x = 5 \u2192 3\u00d75 = 15 (not true).\nSo x = 4 is a solution\n2. 2x + 7 = 10\n2x= 3 (subtracting 7 from both sides)\nx= 3/2  (dividing by 2 on both sides)\n",
+      "learning_objective": "SWBAT solve an equation to find an unknown (methods: substitution, adding/subtracting on both sides, multiplying/dividing on both sides, etc)\n1. 3x = 12\nTry x = 4 → 3×4 = 12 (true).\nTry x = 5 → 3×5 = 15 (not true).\nSo x = 4 is a solution\n2. 2x + 7 = 10\n2x= 3 (subtracting 7 from both sides)\nx= 3/2  (dividing by 2 on both sides)\n",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "6th Grade - Equations & inequalities",
-            "unit_url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities",
-            "match_quality": "suggested",
-            "note": "Solving equations - 6th grade equations and inequalities topic"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -2884,7 +2311,7 @@
       "row": 51,
       "subject": "Math",
       "topic": "Algebra",
-      "learning_objective": "SWBAT solve word problems and solving equations of the form x + p = q and px = q (with non-negative rational numbers).\neg. A pen and a notebook together cost \u20b9120. The pen costs \u20b945. How much is the notebook?\u201d\nEquation: 45 + n = 120 \u2192 n = 120 \u2013 45 = 75.",
+      "learning_objective": "SWBAT solve word problems and solving equations of the form x + p = q and px = q (with non-negative rational numbers).\neg. A pen and a notebook together cost ₹120. The pen costs ₹45. How much is the notebook?”\nEquation: 45 + n = 120 → n = 120 – 45 = 75.",
       "dw_handout": "",
       "playlist_links": {
         "khan_academy": [
@@ -3025,18 +2452,10 @@
       "row": 52,
       "subject": "Math",
       "topic": "Algebra",
-      "learning_objective": "SWBAT represent two changing quantities with variables, write an equation connecting them, and analyze the relationship using tables and graphs.\neg. A taxi charges a fixed \u20b950 + \u20b920 per km. Can you plot fare vs distance?\nVariables: d = distance (km), C = total cost (\u20b9).\nEquation: C = 20d + 50.",
+      "learning_objective": "SWBAT represent two changing quantities with variables, write an equation connecting them, and analyze the relationship using tables and graphs.\neg. A taxi charges a fixed ₹50 + ₹20 per km. Can you plot fare vs distance?\nVariables: d = distance (km), C = total cost (₹).\nEquation: C = 20d + 50.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "6th Grade - Equations & inequalities (dependent/independent variables)",
-            "unit_url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities",
-            "match_quality": "suggested",
-            "note": "Dependent/independent variables and graphing relationships - 6th grade topic"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -3261,7 +2680,7 @@
       "row": 53,
       "subject": "Math",
       "topic": "Rates",
-      "learning_objective": "SWBAT understand a unit rate a/b as a ratio a:b and use correct \u201cper\u201d language in context.\neg. \u201c3 cups flour for 4 cups sugar\u201d \u2192 unit rate is  3/4th cup flour per 1 cup sugar; \nA car travels 150 miles in 3 hours. What is the unit rate in miles per hour?\n",
+      "learning_objective": "SWBAT understand a unit rate a/b as a ratio a:b and use correct “per” language in context.\neg. “3 cups flour for 4 cups sugar” → unit rate is  3/4th cup flour per 1 cup sugar; \nA car travels 150 miles in 3 hours. What is the unit rate in miles per hour?\n",
       "dw_handout": "",
       "playlist_links": {
         "khan_academy": [
@@ -3386,18 +2805,10 @@
       "row": 54,
       "subject": "Math",
       "topic": "Rates",
-      "learning_objective": "SWBAT solve word problems involving unit rates (eg. unit pricing, constant speed, work done per hr)\nUnit pricing: $18 for 3 pounds apples \u2192 $6 per pound; which is better, $6/lb or $25 for 5 lb?\nSpeed: 240 km in 3 hours \u2192 80 km per hour; at that rate, distance in 5 hours = 80\u00d75=400km",
+      "learning_objective": "SWBAT solve word problems involving unit rates (eg. unit pricing, constant speed, work done per hr)\nUnit pricing: $18 for 3 pounds apples → $6 per pound; which is better, $6/lb or $25 for 5 lb?\nSpeed: 240 km in 3 hours → 80 km per hour; at that rate, distance in 5 hours = 80×5=400km",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "6th Grade - Rates and percentages",
-            "unit_url": "https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:cc-6th-rates-and-percentages",
-            "match_quality": "suggested",
-            "note": "Unit rate word problems - 6th grade topic"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -3514,15 +2925,7 @@
       "learning_objective": "SWBAT understand a percent as a rate per 100 and as a fraction and decimal.\neg. 25% means 25 out of 100, so 25%=25/100=1/4=0.25",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "6th Grade - Rates and percentages (percentages section)",
-            "unit_url": "https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:cc-6th-rates-and-percentages",
-            "match_quality": "suggested",
-            "note": "Percent concept - 6th grade topic"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -3560,15 +2963,7 @@
       "learning_objective": "SWBAT convert a number from fraction to percent and decimal, and vice versa.\neg. 3/5=0.6=60%\n0.08=8%",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "6th Grade - Rates and percentages (percentages section)",
-            "unit_url": "https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:cc-6th-rates-and-percentages",
-            "match_quality": "suggested",
-            "note": "Fraction-percent-decimal conversions - 6th grade topic"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -3610,15 +3005,7 @@
       "learning_objective": "SWBAT Find a given percent of a number, using models or equations.\neg. Find  30% of 50\nA class of 40 students: 25% are absent, how many are absent",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "6th Grade - Rates and percentages (percent problems)",
-            "unit_url": "https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:cc-6th-rates-and-percentages",
-            "match_quality": "suggested",
-            "note": "Finding percent of a number - 6th grade topic"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -3630,15 +3017,7 @@
       "learning_objective": "SWBAT given two quantities, find what percent one is of the other.\neg. What percent of 80 is 20?\n20/80=0.25=25%\nA student scores 18 out of 24. How much % did he score?\n18/24=0.75=75%",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "6th Grade - Rates and percentages (percent problems)",
-            "unit_url": "https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:cc-6th-rates-and-percentages",
-            "match_quality": "suggested",
-            "note": "Percent of quantity - 6th grade topic"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -3672,15 +3051,7 @@
       "learning_objective": "SWBAT solve real-world problems involving percent increase, decrease, discounts, tips, and taxes.\neg. Discount: A shirt costs $200 with 20% off. How much is the final cost?\nIncrease: A population grows from 1,000 to 1,200. How much % has it grown?",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "6th Grade - Rates and percentages (percent word problems)",
-            "unit_url": "https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:cc-6th-rates-and-percentages",
-            "match_quality": "suggested",
-            "note": "Percent applications (increase/decrease/discount) - 6th/7th grade topic"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -3768,15 +3139,7 @@
       "learning_objective": "SWBAT read and interpret a line graph",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Line plots",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/line-plots",
-            "match_quality": "partial",
-            "note": "Line plots vs line graphs differ; line plots are dot plots on a number line"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -3989,15 +3352,7 @@
       "learning_objective": "SWBAT measure and sketch angles with protractor",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "4th Grade - Measuring angles",
-            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2",
-            "match_quality": "suggested",
-            "note": "Protractor use - 4th grade geometry topic"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -4031,15 +3386,7 @@
       "learning_objective": "SWBAT calculate complementary and supplementary angles.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "4th Grade - Measuring angles (angles in circles section)",
-            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2",
-            "match_quality": "suggested",
-            "note": "Complementary/supplementary angles - 4th grade geometry foundations"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -4081,15 +3428,7 @@
       "learning_objective": "SWBAT solve word problems involving angles",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "4th Grade - Measuring angles",
-            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2",
-            "match_quality": "suggested",
-            "note": "Angle word problems - 4th grade geometry topic"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -4177,14 +3516,7 @@
       "learning_objective": "SWBAT identify and classify triangles (Right, isoceles, equilateral)",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Properties of shapes",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/properties-of-shapes",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -4301,14 +3633,7 @@
       "learning_objective": "SWBAT identify and differentiate common 2D figures by angles, side-lengths, parallel lines.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Properties of shapes",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/properties-of-shapes",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -4354,15 +3679,7 @@
       "learning_objective": "SWBAT recognize lines of symmetry in 2D figures.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Properties of shapes",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/properties-of-shapes",
-            "match_quality": "partial",
-            "note": "Symmetry covered within properties of shapes but not primary focus"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -4512,18 +3829,10 @@
       "row": 13,
       "subject": "Math",
       "topic": "Arithmetic",
-      "learning_objective": "SWBAT explain that each digit is 10\u00d7 the value of the digit to its right and 1/10 of the digit to its left.",
+      "learning_objective": "SWBAT explain that each digit is 10× the value of the digit to its right and 1/10 of the digit to its left.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Powers of ten",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/powers-of-ten",
-            "match_quality": "partial",
-            "note": "Place value relationship to powers of 10"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -4535,15 +3844,7 @@
       "learning_objective": "SWBAT Add and Subtract multi-digit numbers using algo",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Multi-digit multiplication and division",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division",
-            "match_quality": "partial",
-            "note": "Add/subtract is foundational; unit focuses on multiplication and division"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -4555,15 +3856,7 @@
       "learning_objective": "SWBAT do efficient Add & Sub by using properties like: commutative, associative, breaking nos, multiples of 10, Counting up/down etc.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "4th Grade - Place value and rounding (mental math strategies)",
-            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-place-value-and-rounding",
-            "match_quality": "suggested",
-            "note": "Efficient mental math strategies - not a standalone KA unit; spread across various levels"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -4572,17 +3865,10 @@
       "row": 16,
       "subject": "Math",
       "topic": "Arithmetic",
-      "learning_objective": "SWBAT multiply up to 4-digit \u00d7 1-digit using algo, area model, etc. ",
+      "learning_objective": "SWBAT multiply up to 4-digit × 1-digit using algo, area model, etc. ",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Multi-digit multiplication and division",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -4594,15 +3880,7 @@
       "learning_objective": "SWBAT to do efficient multiplication by using properties like: doubling, skip counting, associative, distributive",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "4th Grade - Factors, multiples and patterns",
-            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-factors-multiples-and-patterns",
-            "match_quality": "suggested",
-            "note": "Efficient multiplication strategies - not a standalone KA unit; foundational across grades"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -4611,17 +3889,10 @@
       "row": 18,
       "subject": "Math",
       "topic": "Arithmetic",
-      "learning_objective": "SWBAT divide up to 4-digit \u00f7 1-digit, finding quotients and remainders using place value.",
+      "learning_objective": "SWBAT divide up to 4-digit ÷ 1-digit, finding quotients and remainders using place value.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Multi-digit multiplication and division",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -4633,14 +3904,7 @@
       "learning_objective": "SWBAT Multi-step word problem of add/sub/mul/div, using equations with Unknowns.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Multi-digit multiplication and division",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -4652,14 +3916,7 @@
       "learning_objective": "SWBAT multiply two 2-digit numbers using place-value, and algo method.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Multi-digit multiplication and division",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -4687,18 +3944,10 @@
       "row": 22,
       "subject": "Math",
       "topic": "Arithmetic",
-      "learning_objective": "SWBAT verify calculations using inverse operations (mul \u2194 div; add \u2194 sub) ",
+      "learning_objective": "SWBAT verify calculations using inverse operations (mul ↔ div; add ↔ sub) ",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Multi-digit multiplication and division",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division",
-            "match_quality": "partial",
-            "note": "Covered implicitly within estimation and verification lessons"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -4710,15 +3959,7 @@
       "learning_objective": "SWBAT Verify calculation using estimation and rounding.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Multi-digit multiplication and division",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division",
-            "match_quality": "partial",
-            "note": "Estimation covered in multi-digit multiplication estimation lessons"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -4727,18 +3968,10 @@
       "row": 26,
       "subject": "Math",
       "topic": "Fractions",
-      "learning_objective": "SWBAT relate fractions to real objects: (x/y means y \u201cequal\u201d pieces and then take x out of it.)",
+      "learning_objective": "SWBAT relate fractions to real objects: (x/y means y “equal” pieces and then take x out of it.)",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "3rd Grade - Understand fractions",
-            "unit_url": "https://www.khanacademy.org/math/cc-third-grade-math/imp-fractions",
-            "match_quality": "suggested",
-            "note": "Basic fraction concept - 3rd grade foundational topic"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -4780,15 +4013,7 @@
       "learning_objective": "SWBAT mark fractions on a number line.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "3rd Grade - Understand fractions (fractions on the number line)",
-            "unit_url": "https://www.khanacademy.org/math/cc-third-grade-math/imp-fractions",
-            "match_quality": "suggested",
-            "note": "Fractions on number line - 3rd grade foundational topic"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -4800,46 +4025,8 @@
       "learning_objective": "SWBAT compare fractions using models and the number line.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "4th Grade - Equivalent fractions and comparing fractions",
-            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/comparing-fractions-and-equivalent-fractions",
-            "match_quality": "suggested",
-            "note": "Comparing fractions - 3rd/4th grade topic"
-          }
-        ],
-        "brilliant": [
-          {
-            "source": "Brilliant.org",
-            "course_name": "Arithmetic Thinking",
-            "course_slug": "math-fundamentals",
-            "chapter_slug": "comparing-fractions",
-            "lessons": [
-              {
-                "lesson_slug": "comparing-numerators",
-                "url": "https://brilliant.org/courses/math-fundamentals/comparing-fractions/comparing-numerators/"
-              },
-              {
-                "lesson_slug": "same-numerator",
-                "url": "https://brilliant.org/courses/math-fundamentals/comparing-fractions/same-numerator/"
-              },
-              {
-                "lesson_slug": "den-multiples",
-                "url": "https://brilliant.org/courses/math-fundamentals/comparing-fractions/den-multiples/"
-              },
-              {
-                "lesson_slug": "not-multiples",
-                "url": "https://brilliant.org/courses/math-fundamentals/comparing-fractions/not-multiples/"
-              },
-              {
-                "lesson_slug": "greatest-fraction",
-                "url": "https://brilliant.org/courses/math-fundamentals/comparing-fractions/greatest-fraction/"
-              }
-            ],
-            "match_quality": "strong"
-          }
-        ]
+        "khan_academy": [],
+        "brilliant": []
       }
     },
     {
@@ -4850,15 +4037,7 @@
       "learning_objective": "SWBAT find equivalent fraction of a given fraction.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "4th Grade - Equivalent fractions and comparing fractions",
-            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/comparing-fractions-and-equivalent-fractions",
-            "match_quality": "suggested",
-            "note": "Equivalent fractions - 4th grade topic"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -4900,15 +4079,7 @@
       "learning_objective": "SWBAT Add and Subtract like fractions.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Add and subtract fractions",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-3",
-            "match_quality": "partial",
-            "note": "KA unit focuses on unlike denominators; like fractions is more foundational"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -4957,15 +4128,7 @@
       "learning_objective": "SWBAT Simplify a given fraction.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "4th Grade - Equivalent fractions and comparing fractions",
-            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/comparing-fractions-and-equivalent-fractions",
-            "match_quality": "suggested",
-            "note": "Simplifying fractions - 4th grade / pre-algebra topic"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -4991,15 +4154,7 @@
       "learning_objective": "SWBAT Convert mixed to improper fraction",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Add and subtract fractions",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-3",
-            "match_quality": "partial",
-            "note": "Prerequisite skill covered within the unit"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -5011,15 +4166,7 @@
       "learning_objective": "SWBAT Convert improper to mixed fraction.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Add and subtract fractions",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-3",
-            "match_quality": "partial",
-            "note": "Prerequisite skill covered within the unit"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -5031,15 +4178,7 @@
       "learning_objective": "SWBAT Compare unlike fractions",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Add and subtract fractions",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-3",
-            "match_quality": "partial",
-            "note": "Comparing fractions used as prerequisite in add/subtract with unlike denominators"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -5051,15 +4190,7 @@
       "learning_objective": "SWBAT express a fraction (a/b, where a > 1) as a sum of unit fractions (1/b).",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "4th Grade - Add and subtract fractions (decomposing fractions)",
-            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2",
-            "match_quality": "suggested",
-            "note": "Decomposing fractions into unit fractions - 4th grade topic"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -5093,14 +4224,7 @@
       "learning_objective": "SWBAT Add and Sub unlike fractions",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Add and subtract fractions",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-3",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -5134,14 +4258,7 @@
       "learning_objective": "SWBAT Add and Sub mixed fractions",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Add and subtract fractions",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-3",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -5153,14 +4270,7 @@
       "learning_objective": "SWBAT solve word problems involving add and sub of fractions (Unlike and mixed)",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Add and subtract fractions",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-3",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -5169,7 +4279,7 @@
       "row": 41,
       "subject": "Math",
       "topic": "Measurement",
-      "learning_objective": "SWBAT convert common units (km\u2013m\u2013cm; kg\u2013g; l\u2013ml; hr\u2013min\u2013sec)",
+      "learning_objective": "SWBAT convert common units (km–m–cm; kg–g; l–ml; hr–min–sec)",
       "dw_handout": "",
       "playlist_links": {
         "khan_academy": [
@@ -5211,15 +4321,7 @@
       "learning_objective": "SWBAT calculate area for rectangles and composite rectangles",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "4th Grade - Area and perimeter",
-            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/area-perimeter",
-            "match_quality": "suggested",
-            "note": "Area of rectangles - 4th grade measurement topic"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -5257,15 +4359,7 @@
       "learning_objective": "SWBAT calculate perimeter for triangles, rectangles, and composite shapes",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "4th Grade - Area and perimeter",
-            "unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/area-perimeter",
-            "match_quality": "suggested",
-            "note": "Perimeter of shapes - 4th grade measurement topic"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -5338,15 +4432,7 @@
       "learning_objective": "SWBAT compute the surface area of rectangular prism/composite figures",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "6th Grade - Geometry (surface area section)",
-            "unit_url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic",
-            "match_quality": "suggested",
-            "note": "Surface area - 6th grade geometry topic"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -5358,15 +4444,7 @@
       "learning_objective": "SWBAT solve word problems of surface area and volume.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Volume",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/5th-volume",
-            "match_quality": "partial",
-            "note": "Volume word problems covered; surface area is 6th grade content"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -5378,14 +4456,7 @@
       "learning_objective": "SWBAT plot points, Lines, and shapes on the coordinate plane.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Coordinate plane",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-geometry-3",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -5563,15 +4634,7 @@
       "learning_objective": "SWBAT solve problems, like distances between 2 points their midpoints.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Coordinate plane",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-geometry-3",
-            "match_quality": "partial",
-            "note": "Distance/midpoints go beyond standard 5th grade coordinate plane"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -5850,15 +4913,7 @@
       "learning_objective": "SWBAT interpret and plot data in various graphs.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Line plots",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/line-plots",
-            "match_quality": "partial",
-            "note": "Line plots are one type; LO covers various graph types"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": [
           {
             "source": "Brilliant.org",
@@ -5969,14 +5024,7 @@
       "learning_objective": "SWBAT compare and order decimals upto hundredths place",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Decimal place value",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-place-value-and-decimals",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -5988,14 +5036,7 @@
       "learning_objective": "SWBAT convert fractions with denominator 100 to decimals and vice versa",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Decimal place value",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-place-value-and-decimals",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -6007,14 +5048,7 @@
       "learning_objective": "SWBAT convert fractions to decimal notation.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Decimal place value",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-place-value-and-decimals",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -6026,14 +5060,7 @@
       "learning_objective": "SWBAT add a decimal with whole no. and another decimal.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Add decimals",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-addition-and-subtraction-3",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -6045,14 +5072,7 @@
       "learning_objective": "SWBAT sub a decimal with whole no. and another decimal.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Subtract decimals",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/subtract-decimals",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -6064,14 +5084,7 @@
       "learning_objective": "SWBAT multiply a decimal with whole no.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Multiply decimals",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-multiplication-and-division-3",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -6083,14 +5096,7 @@
       "learning_objective": "SWBAT divide 2 whole numbers to get a decimal quotient.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "Divide decimals",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/divide-decimals",
-            "match_quality": "strong"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     },
@@ -6102,15 +5108,7 @@
       "learning_objective": "SWBAT solve multi-digit computation problems that too word problems involving decimals.",
       "dw_handout": "",
       "playlist_links": {
-        "khan_academy": [
-          {
-            "source": "Khan Academy",
-            "unit_name": "5th Grade - Spread across Add/Sub/Mul/Div decimals units (U2, U3, U8, U9)",
-            "unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-addition-and-subtraction-3",
-            "match_quality": "suggested",
-            "note": "Decimal word problems span multiple KA units (U2, U3, U8, U9) - not a single standalone unit"
-          }
-        ],
+        "khan_academy": [],
         "brilliant": []
       }
     }

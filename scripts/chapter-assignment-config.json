@@ -1,0 +1,477 @@
+{
+  "description": "Maps each duplicated Brilliant chapter to a single sub-objective (or splits at lesson level). Keys are 'course_slug/chapter_slug'. Value is either a target row number (assign whole chapter) or an object with lesson-level splits.",
+  "within_topic_assignments": {
+    "Factors and Multiples": {
+      "basic-number-theory/factorization": {
+        "type": "split",
+        "splits": {
+          "17": {
+            "target_description": "Find every factor pair for numbers 1-100",
+            "lessons": ["prime-factor-trees", "prime-factorization", "factoring-factorials", "counting-divisors"]
+          },
+          "18": {
+            "target_description": "Understand every whole number is a multiple of its factors",
+            "lessons": ["100-doors", "how-many-prime-numbers-are-there"]
+          },
+          "19": {
+            "target_description": "Divisibility rules",
+            "lessons": ["divisibility-shortcuts-i", "divisibility-shortcuts-ii", "divisibility-by-9-and", "last-digits-2", "arithmetic-with-remainders", "digital-roots"]
+          },
+          "20": {
+            "target_description": "Prime and composite numbers",
+            "lessons": []
+          }
+        },
+        "note": "Row 20 (prime/composite) already has unique chapters; factorization lessons split by relevance"
+      },
+      "basic-number-theory/gcd-and-lcm-2": {
+        "type": "split",
+        "splits": {
+          "21": {
+            "target_description": "Find the LCM",
+            "lessons": ["the-lcm", "billiard-tables", "number-jumping-i", "number-jumping-ii", "billiard-tables-revisited-i"]
+          },
+          "22": {
+            "target_description": "Find the HCF",
+            "lessons": ["100-doors-revisited", "the-gcd", "dots-on-the-diagonal", "number-jumping-iii", "relating-gcd-and-lcm", "billiard-tables-revisited-ii"]
+          }
+        }
+      }
+    },
+
+    "Fractions": {
+      "math-fundamentals/adding-fractions": {
+        "type": "split",
+        "splits": {
+          "30": {
+            "target_description": "Add and Subtract like fractions",
+            "lessons": ["adding-fractions", "add-unit-fractions"]
+          },
+          "37": {
+            "target_description": "Add and Sub unlike fractions",
+            "lessons": ["adding-different", "adding-nonmultiples", "adding-unlike"]
+          },
+          "23": {
+            "target_description": "Add and subtract fractions with unlike denominators (advanced)",
+            "lessons": []
+          },
+          "24": {
+            "target_description": "Add and subtract mixed fractions",
+            "lessons": []
+          }
+        },
+        "note": "Rows 23/24 are advanced fraction operations that already get KA coverage; Brilliant lessons go to foundational rows 30/37"
+      },
+      "math-fundamentals/multiplying-fractions": {
+        "type": "split",
+        "splits": {
+          "25": {
+            "target_description": "Multiply a fraction with whole number and another fraction",
+            "lessons": ["fraction-by-integer", "expressing-multiples", "multiplying-fractions"]
+          },
+          "31": {
+            "target_description": "Multiply a fraction by a whole number and another fraction (PYP)",
+            "lessons": []
+          },
+          "36": {
+            "target_description": "Express a fraction as a sum of unit fractions",
+            "lessons": ["fractions-of-fractions", "expressing-fouf", "fractions-of-fractions-2"]
+          }
+        },
+        "note": "Row 31 is PYP-level and covered by KA; advanced fraction-of-fraction lessons go to Row 36"
+      },
+      "math-fundamentals/mt-fractions-intro": {
+        "type": "assign",
+        "target_row": 26,
+        "target_description": "Relate fractions to real objects",
+        "note": "Intro fractions (find-half, combining-parts, shade-this-much) maps to understanding fractions conceptually"
+      },
+      "math-fundamentals/equivalent-fractions": {
+        "type": "split",
+        "splits": {
+          "29": {
+            "target_description": "Find equivalent fraction of a given fraction",
+            "lessons": ["equal-fractions", "equal-fractions-2", "making-equivalent", "equivalent-fractions-3", "wodb-equivalents"]
+          },
+          "32": {
+            "target_description": "Simplify a given fraction",
+            "lessons": ["simplifying-fractions"]
+          }
+        }
+      }
+    },
+
+    "Measurement and Areas": {
+      "geometry-fundamentals/areas": {
+        "type": "assign",
+        "target_row": 40,
+        "target_description": "Area and perimeter formulas for rectangles and squares"
+      },
+      "geometry-fundamentals/surface-area": {
+        "type": "assign",
+        "target_row": 41,
+        "target_description": "Area of triangles, parallelograms, composite shapes",
+        "note": "Surface area is more advanced, fits with composite shapes"
+      },
+      "basic-2d-geometry/composite-polygons-2": {
+        "type": "assign",
+        "target_row": 41,
+        "target_description": "Area of triangles, parallelograms, composite shapes"
+      }
+    },
+
+    "Algebra foundations": {
+      "exponents-and-radicals/exponent-basics": {
+        "type": "assign",
+        "target_row": 42,
+        "target_description": "Read and write simple powers with small exponents"
+      },
+      "exponents-and-radicals/exponents-and-number-line": {
+        "type": "assign",
+        "target_row": 42,
+        "target_description": "Read and write simple powers with small exponents"
+      },
+      "exponents-and-radicals/squares-and-roots": {
+        "type": "assign",
+        "target_row": 43,
+        "target_description": "Write and evaluate numerical expressions with exponents"
+      },
+      "exponents-and-radicals/higher-powers-and-roots": {
+        "type": "assign",
+        "target_row": 43,
+        "target_description": "Write and evaluate numerical expressions with exponents"
+      },
+      "systems-of-equations/patterns": {
+        "type": "assign",
+        "target_row": 44,
+        "target_description": "Identify the rule governing number/shape patterns",
+        "note": "Cross-topic: also in Algebra Row 52, will be removed there"
+      },
+      "systems-of-equations/linear-expressions": {
+        "type": "assign",
+        "target_row": 44,
+        "target_description": "Identify the rule governing number/shape patterns",
+        "note": "Cross-topic: also in Algebra Row 52, will be removed there"
+      },
+      "systems-of-equations/building-linear": {
+        "type": "assign",
+        "target_row": 44,
+        "target_description": "Identify the rule governing number/shape patterns",
+        "note": "Cross-topic: also in Algebra Row 52, will be removed there"
+      }
+    },
+
+    "Algebra": {
+      "pre-algebra/variables": {
+        "type": "assign",
+        "target_row": 46,
+        "target_description": "Represent an unknown number using a letter/symbol"
+      },
+      "using-variables/writing-formulas": {
+        "type": "assign",
+        "target_row": 47,
+        "target_description": "Write expressions using letters for unknowns"
+      },
+      "systems-of-equations/equivalent-expressions": {
+        "type": "assign",
+        "target_row": 49,
+        "target_description": "Use properties of operations (distributive, commutative, associative)",
+        "note": "Visual Algebra equivalent-expressions chapter, unique to Row 49 - not duplicated but confirming assignment"
+      },
+      "pre-algebra/factoring": {
+        "type": "assign",
+        "target_row": 49,
+        "target_description": "Use properties of operations (distributive, commutative, associative)"
+      },
+      "pre-algebra/combining-and-rearranging": {
+        "type": "assign",
+        "target_row": 49,
+        "target_description": "Use properties of operations"
+      },
+      "pre-algebra/solving-equations": {
+        "type": "assign",
+        "target_row": 50,
+        "target_description": "Solve an equation to find an unknown"
+      },
+      "pre-algebra/solving-by-substitution": {
+        "type": "assign",
+        "target_row": 50,
+        "target_description": "Solve an equation to find an unknown"
+      },
+      "pre-algebra/reasoning-by-balancing": {
+        "type": "assign",
+        "target_row": 50,
+        "target_description": "Solve an equation to find an unknown"
+      },
+      "pre-algebra/reasoning-about-equations": {
+        "type": "assign",
+        "target_row": 50,
+        "target_description": "Solve an equation to find an unknown"
+      },
+      "pre-algebra/inequalities": {
+        "type": "assign",
+        "target_row": 51,
+        "target_description": "Solve word problems with equations x+p=q and px=q"
+      },
+      "pre-algebra/solving-inequalities": {
+        "type": "assign",
+        "target_row": 51,
+        "target_description": "Solve word problems with equations x+p=q and px=q"
+      },
+      "pre-algebra/systems-of-equations-1": {
+        "type": "assign",
+        "target_row": 51,
+        "target_description": "Solve word problems with equations x+p=q and px=q"
+      },
+      "pre-algebra/eliminating-systems": {
+        "type": "assign",
+        "target_row": 51,
+        "target_description": "Solve word problems with equations x+p=q and px=q"
+      },
+      "pre-algebra/reasoning-about-groups-of-variables": {
+        "type": "assign",
+        "target_row": 52,
+        "target_description": "Represent two changing quantities, analyze with tables/graphs"
+      },
+      "pre-algebra/reasoning-about-variables": {
+        "type": "assign",
+        "target_row": 52,
+        "target_description": "Represent two changing quantities, analyze with tables/graphs"
+      },
+      "systems-of-equations/comparing-linear-expressions": {
+        "type": "assign",
+        "target_row": 52,
+        "target_description": "Represent two changing quantities, analyze with tables/graphs"
+      },
+      "systems-of-equations/combining-linear-expressions": {
+        "type": "assign",
+        "target_row": 52,
+        "target_description": "Represent two changing quantities, analyze with tables/graphs"
+      },
+      "systems-of-equations/patterns": {
+        "type": "remove",
+        "note": "Cross-topic duplicate: assigned to Algebra foundations Row 44"
+      },
+      "systems-of-equations/linear-expressions": {
+        "type": "remove",
+        "note": "Cross-topic duplicate: assigned to Algebra foundations Row 44"
+      },
+      "systems-of-equations/building-linear": {
+        "type": "remove",
+        "note": "Cross-topic duplicate: assigned to Algebra foundations Row 44"
+      }
+    },
+
+    "Rates": {
+      "proportional-relationships/setting-up-ratios": {
+        "type": "assign",
+        "target_row": 53,
+        "target_description": "Understand unit rate as ratio, use 'per' language"
+      },
+      "proportional-relationships/equivalent-ratios": {
+        "type": "assign",
+        "target_row": 53,
+        "target_description": "Understand unit rate as ratio"
+      },
+      "proportional-relationships/scaling-ratios": {
+        "type": "assign",
+        "target_row": 53,
+        "target_description": "Understand unit rate as ratio"
+      },
+      "proportional-relationships/unit-rates": {
+        "type": "assign",
+        "target_row": 53,
+        "target_description": "Understand unit rate as ratio"
+      },
+      "proportional-relationships/proportional-relationships": {
+        "type": "assign",
+        "target_row": 54,
+        "target_description": "Solve word problems involving unit rates"
+      },
+      "proportional-relationships/graphing-prs": {
+        "type": "assign",
+        "target_row": 54,
+        "target_description": "Solve word problems involving unit rates"
+      },
+      "proportional-relationships/pr-equations": {
+        "type": "assign",
+        "target_row": 54,
+        "target_description": "Solve word problems involving unit rates"
+      },
+      "using-variables/pricing-and-proportions": {
+        "type": "assign",
+        "target_row": 54,
+        "target_description": "Solve word problems involving unit rates"
+      }
+    },
+
+    "Percentage": {
+      "math-fundamentals/percentages-percent-decrease": {
+        "type": "assign",
+        "target_row": 59,
+        "target_description": "Solve problems with percent increase/decrease/discounts/tips/taxes",
+        "note": "Percent decrease content fits better with increase/decrease topic than finding-percent-of-number"
+      },
+      "using-variables/discounts-and-percentages": {
+        "type": "assign",
+        "target_row": 58,
+        "target_description": "Given two quantities, find what percent one is of the other"
+      }
+    },
+
+    "Data": {
+      "basic-math/means": {
+        "type": "assign",
+        "target_row": 60,
+        "target_description": "Read and interpret a line graph"
+      },
+      "basic-math/more-means": {
+        "type": "assign",
+        "target_row": 60,
+        "target_description": "Read and interpret a line graph"
+      },
+      "basic-math/adding-data": {
+        "type": "assign",
+        "target_row": 60,
+        "target_description": "Read and interpret a line graph"
+      },
+      "basic-math/median": {
+        "type": "assign",
+        "target_row": 61,
+        "target_description": "Plot a line graph"
+      },
+      "basic-math/more-medians": {
+        "type": "assign",
+        "target_row": 61,
+        "target_description": "Plot a line graph"
+      },
+      "basic-math/quartiles": {
+        "type": "assign",
+        "target_row": 52,
+        "target_description": "Interpret and plot data in various graphs",
+        "note": "Row 52 in Data topic context (different from Algebra Row 52)"
+      },
+      "basic-math/whiskers": {
+        "type": "assign",
+        "target_row": 52,
+        "target_description": "Interpret and plot data in various graphs"
+      },
+      "basic-math/outliers": {
+        "type": "assign",
+        "target_row": 52,
+        "target_description": "Interpret and plot data in various graphs"
+      }
+    },
+
+    "Geometry ( Angles)": {
+      "geometry-fundamentals/angles": {
+        "type": "assign",
+        "target_row": 3,
+        "target_description": "Identify common angles (30, 45, 60, 90, right, acute, obtuse)"
+      },
+      "geometry-fundamentals/angles-and-lengths": {
+        "type": "assign",
+        "target_row": 4,
+        "target_description": "Measure and sketch angles with protractor"
+      },
+      "basic-2d-geometry/angles-4": {
+        "type": "assign",
+        "target_row": 5,
+        "target_description": "Calculate complementary and supplementary angles"
+      },
+      "basic-2d-geometry/triangles-5": {
+        "type": "assign",
+        "target_row": 6,
+        "target_description": "Solve word problems involving angles"
+      },
+      "basic-2d-geometry/mastering-triangles": {
+        "type": "assign",
+        "target_row": 6,
+        "target_description": "Solve word problems involving angles"
+      },
+      "basic-2d-geometry/triangle-centers": {
+        "type": "assign",
+        "target_row": 6,
+        "target_description": "Solve word problems involving angles"
+      }
+    },
+
+    "Measurement": {
+      "geometry-fundamentals/areas": {
+        "type": "assign",
+        "target_row": 43,
+        "target_description": "Calculate area for rectangles and composite rectangles"
+      },
+      "geometry-fundamentals/surface-area": {
+        "type": "assign",
+        "target_row": 45,
+        "target_description": "Solve word problems involving area and perimeter of rectangles",
+        "note": "Rows 43 gets areas, 44 (perimeter) has no brilliant, 45 gets surface-area for problem-solving"
+      }
+    }
+  },
+
+  "cross_topic_assignments": {
+    "note": "Cross-curriculum duplicates where the same Brilliant chapter appears in different topics across MYP Y1 and PYP Y2.",
+    "basic-2d-geometry/regular-polygons-4": {
+      "type": "cross_assign",
+      "keep": { "curriculum": "PYP Y2", "topic": "Geometry (2D shapes)", "row": 9 },
+      "remove_from": [
+        { "curriculum": "MYP Y1", "topic": "Geometry", "row": 39 }
+      ],
+      "note": "Regular polygons = identifying shapes, better fit for PYP 2D shapes identification"
+    },
+    "coordinate-plane/points": {
+      "type": "cross_assign",
+      "keep": { "curriculum": "PYP Y2", "topic": "Coordinate Geometry", "row": 50 },
+      "remove_from": [
+        { "curriculum": "MYP Y1", "topic": "Geometry", "row": 36 }
+      ],
+      "note": "Dedicated Coordinate Geometry topic in PYP Y2"
+    },
+    "coordinate-plane/the-four-quadrants": {
+      "type": "cross_assign",
+      "keep": { "curriculum": "PYP Y2", "topic": "Coordinate Geometry", "row": 50 },
+      "remove_from": [
+        { "curriculum": "MYP Y1", "topic": "Geometry", "row": 36 }
+      ]
+    },
+    "coordinate-plane/lines": {
+      "type": "cross_assign",
+      "keep": { "curriculum": "PYP Y2", "topic": "Coordinate Geometry", "row": 50 },
+      "remove_from": [
+        { "curriculum": "MYP Y1", "topic": "Geometry", "row": 36 }
+      ]
+    },
+    "coordinate-plane/inequalities": {
+      "type": "cross_assign",
+      "keep": { "curriculum": "PYP Y2", "topic": "Coordinate Geometry", "row": 50 },
+      "remove_from": [
+        { "curriculum": "MYP Y1", "topic": "Geometry", "row": 36 }
+      ]
+    },
+    "coordinate-plane/gridline-distance": {
+      "type": "cross_assign",
+      "keep": { "curriculum": "PYP Y2", "topic": "Coordinate Geometry", "row": 50 },
+      "remove_from": [
+        { "curriculum": "MYP Y1", "topic": "Geometry", "row": 36 }
+      ]
+    },
+    "geometry-fundamentals/pythagoras-geometry-3": {
+      "type": "cross_assign",
+      "keep": { "curriculum": "PYP Y2", "topic": "Geometry (2D shapes)", "row": 8 },
+      "remove_from": [
+        { "curriculum": "MYP Y1", "topic": "Geometry", "row": 38 }
+      ],
+      "note": "Pythagoras = right triangles, PYP Row 8 explicitly about right/isosceles/equilateral"
+    },
+    "math-fundamentals/comparing-fractions": {
+      "type": "cross_assign",
+      "keep": { "curriculum": "MYP Y1", "topic": "Fractions Foundation", "row": 5 },
+      "remove_from": [
+        { "curriculum": "PYP Y2", "topic": "Fractions", "row": 28 }
+      ],
+      "note": "MYP handout explicitly about 'LCM and Comparing fractions'"
+    }
+  }
+}
