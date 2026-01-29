@@ -1,0 +1,153 @@
+{
+  "shortcode": "bihj",
+  "name": "Measure angles 1",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 80,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Use a protractor to measure angles between 0° and 90°",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use a protractor to measure angles between 90° and 180°",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use a protractor to measure angles between 180° and 270°",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 93378,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/27f42737-f772-4e23-827c-76f6ee688765.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Making sure one of the lines of the angle goes through a zero on the protractor makes it easier to measure an angle. Diagram A is positioned in this way. It is not impossible to measure the angle with Diagram B but you would have to perform a calculation as well as measuring which makes it more difficult.",
+        "B": "This way of measuring an angle would be quite difficult. To find the angle you would have to read off the measurements for both lines and subtract one from the other to work out the angle between them both.",
+        "C": "The way of measuring an angle with B would be quite difficult. To find the angle you would have to read off the measurements for both lines and subtract one from the other to work out the angle between them both.",
+        "D": "The easiest way to use a protractor is to have one line of the angle going through zero."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 93393,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/319efdda-81e6-469a-a90b-4965036b9dd3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The easiest way to measure an angle with a protractor is to make sure one line of the angle goes through one of the zeros on the protractor, either the one on the left, which means you measure using the outer scale, or the zero on the right, which means you measure using the inner scale.",
+        "B": "The easiest way to measure an angle with a protractor is to make sure one line of the angle goes through one of the zeros on the protractor, either the one on the left, which means you measure using the outer scale, or the zero on the right, which means you measure using the inner scale.",
+        "C": "A starting point of zero makes it easier to measure an angle. Both diagrams are positioned in this way. In each case, care should be taken to ensure the measurement is taken from the correct scale. Diagram A would measure using the outside scale, whereas Diagram B uses the inner scale.",
+        "D": "The easiest way to measure an angle with a protractor is to make sure one line of the angle goes through one of the zeros on the protractor, either the one on the left, which means you measure using the outer scale, or the zero on the right, which means you measure using the inner scale."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 93379,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2f315171-1780-4548-93ba-a5ff00303893.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Start at the 0° on the right-hand side, as this is where one of the lines goes through. Take care to use the inner scale because this is the one which increases from the 0° at the right-hand side. The other red line is between 60° and 70°, and is 5 small divisions more than 60° which means an angle of 65°.",
+        "B": "I think you have forgotten the value increases in an anti-clockwise direction here. The line is between 60° and 70°, so cannot be 75°.",
+        "C": "I think here you have used the incorrect scale. Take care to use the scale which starts at the 0° your line passes through.",
+        "D": "I think here you have used the incorrect scale. Take care to use the scale which starts at the 0° your line passes through."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 120798,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e413f4b1-f589-4b1e-bd75-254ffb5637df.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have used the correct side of the protractor but the wrong scale. We want to use the scale that starts with 0° not 180°.",
+        "B": "I think here you have used the incorrect scale. We want to measure using the right side of the protractor starting at 0°.",
+        "C": "Be careful. Think about the two numbers on the protractor that the line passes between. 85 would go between 80 and 90.",
+        "D": "Start at the 0° on the right-hand side and use the inner scale. The other red line is between 70° and 80°, and is 5 small divisions more than 70° which means an angle of 75°."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 93380,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/24f97a9f-931a-4493-88b0-05894152fd90.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have used the wrong scale. Be sure to use the scale that increases from the 0 your line goes through (in this question, the left-hand side).",
+        "B": "I think you may have used a combination of two scales. Be sure to use the scale that increases around from the 0° your line goes through (in this question, the left-hand side). You can check your answer is sensible by looking at the two tens your line is between and making sure your answer is in between them.",
+        "C": "Start at the 0° your line goes through (the left-hand side here). Use the scale which increases from the left in a clockwise direction (the outer scale). Following the outer scale and going up in tens, we can see that the other red line lies between 140° and 150°, and is 7 small divisions more than 140° which means an angle of 147°.",
+        "D": "I think you may have used a combination of two scales. Be sure to use the scale that increases around from the 0° your line goes through (in this question, the left-hand side). You can check your answer is sensible by looking at the two tens your line is between and making sure your answer is in between them."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 93395,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/407a27a9-1c0a-4cc8-9518-b0e37633f773.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Start at the 0° your line goes through (the left-hand side here). Use the scale which increases from the left in a clockwise direction (the outer scale). Following the outer scale and going up in tens, we can see that the other red line lies between 90° and 100°, and is 6 small divisions more than 90° which means an angle of 96°.",
+        "B": "I think you may have used the wrong scale. Be sure to use the scale that increases around from the 0° your line goes through (in this question, the left-hand side).",
+        "C": "I think you may have used a combination of two scales. Be sure to use the scale that increases around from the 0° your line goes through (in this question, the left-hand side). You can check your answer is sensible by looking at the two tens your line is between and making sure your answer is in-between them.",
+        "D": "I think you may have used a combination of two scales. Be sure to use the scale that increases around from the 0° your line goes through (in this question, the left-hand side). You can check your answer is sensible by looking at the two tens your line is between and making sure your answer is in-between them."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 93381,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/45a1ca66-ee76-4ccc-ad37-eec1971670a5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have used the wrong scale. Be sure to use the scale that increases around from the 0° your line goes through (in this question, the left-hand side).",
+        "B": "Start at the 0° your line goes through (the top here). Use the scale which increases from the top in a clockwise direction (the outer scale). Following the outer scale and going up in tens, we can see that the other red line lies between 160° and 170°, and is 5 small divisions more than 160° which means an angle of 165°.",
+        "C": "I think you may have been thrown off by the line going through 0° at the top. The other line that creates the angle does show on the scale at a value. Count around in a clockwise direction until you reach the second line, and read off your measurement.",
+        "D": "I think the protractor being rotated may have thrown you off here. It might help to turn your head a little so you can read the protractor more easily. Take note of where the two red lines go through - one through a 0°, count around from this to the other red line for your measurement."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 93396,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c4386fa2-34cd-48b6-b091-096aa5a4bae0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have used the wrong scale. Be sure to use the scale that increases around from the 0° your line goes through (in this question, the left-hand side or top of the image).",
+        "B": "I think you may have used a combination of two scales. Be sure to use the scale that increases around from the 0° your line goes through (in this question, the left-hand side or top of the image). You can check your answer is sensible by looking at the two tens your line is between and making sure your answer is in-between them.",
+        "C": "Start at the 0° your line goes through (the left-hand side or top of the image here). Use the scale which increases from the top in a clockwise direction (the outer scale). Following the outer scale and going up in tens, we can see that the other red line lies between 120° and 130°, and is 8 small divisions more than 120° which means an angle of 128°.",
+        "D": "I think the protractor being rotated may have thrown you off here. It might help to turn your head a little so you can read the protractor more easily. Take note of where the two red lines go through - one through a 0°, count around from this to the other red line for your measurement."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 93382,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a34ccf3a-c4d6-404c-9cd7-5a785c968fbf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You're almost there - you need to take an extra step to measure the red angle.",
+        "B": "This question can be looked at in two ways. Firstly, we can measure the angle of the white part (where the marked angle is not), which is 150°, then using the fact that angles around a point add up to 360°, subtract 150° to get 210°. Alternatively, you can measure the part of the marked angle that can be measured using the protractor, 30°, and recognise that the rest of the angle is 180° as it creates a straight line, then you can add 180° and 30° to get 210° in total for the marked angle.",
+        "C": "Not quite, the \"marked\" angle is the red bit, can you find the angle of that sector?",
+        "D": "One of them is, in fact, correct. You can measure the white sector and then use a fact about angles around a point to get the size of the angle. You could also use a fact about angles on a straight line and measure the red sector that can be measured using the protractor to get the size of the angle."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 93397,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1300d78c-dd4b-4be2-bebe-abd79c51281b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You're almost there - you need to use an angle fact and to do an extra calculation to measure the red angle.",
+        "B": "You're almost there - you need to use an angle fact and to do an extra calculation to measure the red angle.",
+        "C": "Not quite, both Jo and Paul need to do an extra step each to find the size of the red angle. Both methods will be different, however their answers will be the same. One of them needs to use their knowledge about angles around a point, and the other needs to use their knowledge about angles on a straight line.",
+        "D": "This question can be looked at in two ways. Firstly, we can measure the angle of the white part (where the marked angle is not), which is 120°, then using the fact that angles around a point add up to 360°, subtract 120° to get 240°. Alternatively, you can measure the part of the marked angle that can be measured using the protractor, 60°, and recognise that the rest of the angle is 180° as it creates a straight line, then you can add 180° and 60° to get 240° in total for the marked angle."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

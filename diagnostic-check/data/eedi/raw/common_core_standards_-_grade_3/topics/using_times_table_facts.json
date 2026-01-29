@@ -1,0 +1,141 @@
+{
+  "shortcode": "bita",
+  "name": "Using times table facts",
+  "collectionId": 33,
+  "level": 1,
+  "sequence": 3,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Know times tables up to 12 x 12",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158722,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/58b095be-275c-4d60-a5a5-89ffc72020d7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you added 7 and 6. There are 6 boxes, with 7 chocolates in each, so we need to do 6 x 7.",
+        "B": "I think you subtracted 6 from 7. There are 6 boxes, with 7 chocolates in each, so we need to do 6 x 7.",
+        "C": "There are 6 boxes of 7, so we do 6 x 7 = 42",
+        "D": "Close! This is the answer to 6 x 6, but we want 6 x 7. Try adding on another 6..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158921,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c8440ad1-30f8-4334-a2c6-895e2c3d40fe.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you subtracted 7 from 12. There are 7 boxes, with 12 chocolates in each, so we need to do 7 x 12.",
+        "B": "Close! This is the answer to 7 x 11, but we want 7 x 12. Try adding on another 12!",
+        "C": "I think you added 12 and 7. There are 7 boxes, with 12 chocolates in each, so we need to do 7 x 12.",
+        "D": "There are 7 boxes of 12, so we do 7 x 12 = 84"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158723,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d8d55a40-605b-40c2-b86e-7631daf0d27f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you added 9 and 7. Julie runs 9 miles 7 times, so we need to do 9 x 7.",
+        "B": "Julie runs 9 miles 7 times, so we do 9 x 7 = 63.",
+        "C": "I think you subtracted 7 from 9. Julie runs 9 miles 7 times, so we need to do 9 x 7.",
+        "D": "Close! This is the answer to 9 x 8, but we want 9 x 7. Think about the answer to 10 x 7, can 9 x 7 be more than that?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158922,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2bf1f0ce-1042-48e3-8434-befdc09e0acb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Close! This is the answer to 6 x 6, but we want 6 x 5....",
+        "B": "Julie runs 6 miles 5 times, so we do 6 x 5 = 30.",
+        "C": "I think you added 6 and 5. Julie runs 6 miles 5 times, so we need to do 6 x 5.",
+        "D": "I think you subtracted 5 from 6. Julie runs 6 miles 5 times, so we need to do 6 x 5."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158724,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d7af0c9-7a1a-40dd-865e-be266e27f8b7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "9 x 8 = 72, so if 8 people get 9 cupcakes each that gives us the total of 72 that we started with.",
+        "B": "I think you did 72 - 9, but that would tell us how many cupcakes are left after one person takes 9 cupcakes. The question says everyone takes 9 cupcakes, so how many 9s are in 72?",
+        "C": "I think you did 72 + 9, but that would mean there are more people than cakes! The question says everyone takes 9 cupcakes, so how many 9s are in 72?",
+        "D": "Close! If 9 people got 7 cakes each, that would make 63 in total. We need 72 in total, so how many people might that be?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158923,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/61d25ba6-7c9b-43d9-bb1c-fbc8b12282c8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you did 60 + 5, but that would mean there are more people than cakes! The question says everyone takes 5 cupcakes, so how many 5s are in 60?",
+        "B": "Close! If 10 people got 5 cakes each, that would make 50 in total. We need 60 in total, so how many people might that be?",
+        "C": "I think you did 60 - 5, but that would tell us how many cupcakes are left after one person takes 5 cupcakes. The question says everyone takes 5 cupcakes, so how many 5s are in 60?",
+        "D": "5 x 12 = 60, so if 12 people get 5 cupcakes each that gives us the total of 60 that we started with."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158725,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5dbc3266-0707-4a9e-a622-8d04bce747e3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Close! 7 packs of 6 cans would make 42 cans in total, but we need 48.",
+        "B": "I think you added cans in one pack and cans in all the packs, but we want to know how many packs would make 48 cans in total. There are 6 cans in a pack, so how many 6s are in 48?",
+        "C": "I think you subtracted 6 from 48, but we want to know how many packs would make 48 cans in total. There are 6 cans in a pack, so how many 6s are in 48?",
+        "D": "8 x 6 = 48, so 8 packs of 6 would make 48 cans in total."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158924,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7820ed12-cc83-4b6a-8002-025563600e22.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Close! 7 packs of 12 cans would make 84 cans in total, but we need 72...",
+        "B": "I think you added cans in one pack and cans in all the packs, but we want to know how many packs would make 72 cans in total. There are 12 cans in a pack, so how many 12s are in 72?",
+        "C": "6 x 12 = 72, so 6 packs of 12 would make 72 cans in total.",
+        "D": "I think you subtracted 12 from 72, but we want to know how many packs would make 72 cans in total. There are 12 cans in a pack, so how many 12s are in 72?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158726,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/12764703-f1c4-40dc-a0ab-424cae543c95.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you added bananas in one bunch and total bananas, but we want to know how many bunches would make 81 bananas. There are 9 bananas in a bunch, so how many 9s in 81?",
+        "B": "I think you subtracted bananas in one bunch from total bananas, but we want to know how many bunches would make 81 bananas. There are 9 bananas in a bunch, so how many 9s in 81?",
+        "C": "9 x 9 = 81, so 9 bunches of 9 would be enough for the race.",
+        "D": "Close! 8 bunches of 9 would be 72 bananas total, but we need 81."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158925,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e284b066-ce8b-434b-9be4-4f49c0fffdf5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "7 x 7 = 49, so 7 bunches of 7 would be enough for the competition.",
+        "B": "I think you subtracted bananas in one bunch from total bananas, but we want to know how many bunches would make 49 bananas. There are 7 bananas in a bunch, so how many 7s in 49?",
+        "C": "I think you added bananas in one bunch and total bananas, but we want to know how many bunches would make 49 bananas. There are 7 bananas in a bunch, so how many 7s in 49?",
+        "D": "Close! 6 bunches of 7 would be 42 bananas total, but we need 49..."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

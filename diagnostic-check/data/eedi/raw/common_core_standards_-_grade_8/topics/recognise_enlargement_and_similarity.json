@@ -1,0 +1,153 @@
+{
+  "shortcode": "v09",
+  "name": "Recognise enlargement and similarity",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 120,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify whether two shapes are similar or not",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve length problems involving similar shapes where the missing length is the longer one",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve length problems involving similar shapes where the missing length is the shorter one",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 146066,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/750c20f2-ba40-46a2-8a56-1463c569ff96.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "For 2 shapes to be similar, the lengths of all their sides must have been enlarged by the same scale factor (multiplied by the same number). Compare the lengths of the shorter sides of the rectangles and then compare the lengths of the longer sides of the rectangles.",
+        "B": "For 2 shapes to be similar, the lengths of all their sides must have been enlarged by the same scale factor. Only Katie is correct because all the sides of her rectangle have been enlarged by the same scale factor, 2, when compared with the original rectangle. Therefore they are similar. For Tom's rectangle, the shorter side has been enlarged by scale factor 1.5. Therefore, for Tom's rectangle to be similar to the original one, the longer side would also have to be enlarged by scale factor 1.5, making it 4.5 squares long. This is not the case, so Tom's rectangle is not similar to the original one.",
+        "C": "For 2 shapes to be similar, the lengths of all their sides must have been enlarged by the same scale factor (multiplied by the same number). Compare the lengths of the shorter sides of the rectangles and then compare the lengths of the longer sides of the rectangles.",
+        "D": "For 2 shapes to be similar, the lengths of all their sides must have been enlarged by the same scale factor (multiplied by the same number). Compare the lengths of the shorter sides of the rectangles and then compare the lengths of the longer sides of the rectangles."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146086,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/de7ed617-4252-4ee8-b14c-5e4a08c33c99.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "For 2 shapes to be similar, the lengths of all their sides must have been enlarged by the same scale factor (multiplied by the same number). Compare the lengths of the shorter sides of the rectangles and then compare the lengths of the longer sides of the rectangles.",
+        "B": "For 2 shapes to be similar, the lengths of all their sides must have been enlarged by the same scale factor. Only Katie is correct because all the sides of her rectangle have been enlarged by the same scale factor, 2, when compared with the original rectangle. Therefore they are similar. For Tom's rectangle, the shorter side has been enlarged by scale factor 2 (doubled in length). Therefore, for Tom's rectangle to be similar to the original one, the longer side would also have to be enlarged by scale factor 2, making it 6 squares long. This is not the case, so Tom's rectangle is not similar to the original one.",
+        "C": "For 2 shapes to be similar, the lengths of all their sides must have been enlarged by the same scale factor (multiplied by the same number). Compare the lengths of the shorter sides of the rectangles and then compare the lengths of the longer sides of the rectangles.",
+        "D": "For 2 shapes to be similar, the lengths of all their sides must have been enlarged by the same scale factor (multiplied by the same number). Compare the lengths of the shorter sides of the rectangles and then compare the lengths of the longer sides of the rectangles."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146067,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/240af84b-193e-4bfc-a344-b535562bbb9b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "For 2 shapes to be similar, the lengths of all their sides must have been enlarged by the same scale factor. Only Tom is correct because all the sides of his rectangle have been halved when compared with the original rectangle. Therefore they are similar. For Katie's rectangle, the shorter side has been enlarged by scale factor 1.5 (4cm ✕ 1.5=6cm). Therefore, for Katie's rectangle to be similar to the original one, the longer side would also have to be enlarged by scale factor 1.5, making it 7cm ✕ 1.5=10.5cm long. This is not the case, so Katie's rectangle is not similar to the original one.",
+        "B": "For 2 shapes to be similar, the lengths of all their sides must have been enlarged by the same scale factor (multiplied by the same number). Compare the lengths of the shorter sides of the rectangles and then compare the lengths of the longer sides of the rectangles.",
+        "C": "For 2 shapes to be similar, the lengths of all their sides must have been enlarged by the same scale factor (multiplied by the same number). Compare the lengths of the shorter sides of the rectangles and then compare the lengths of the longer sides of the rectangles.",
+        "D": "For 2 shapes to be similar, the lengths of all their sides must have been enlarged by the same scale factor (multiplied by the same number). Compare the lengths of the shorter sides of the rectangles and then compare the lengths of the longer sides of the rectangles."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146087,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/737a7220-81e7-489d-8ad7-2e43ef1194ab.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "For 2 shapes to be similar, the lengths of all their sides must have been enlarged by the same scale factor (multiplied by the same number). Compare the lengths of the shorter sides of the rectangles and then compare the lengths of the longer sides of the rectangles.",
+        "B": "For 2 shapes to be similar, the lengths of all their sides must have been enlarged by the same scale factor (multiplied by the same number). Compare the lengths of the shorter sides of the rectangles and then compare the lengths of the longer sides of the rectangles.",
+        "C": "For 2 shapes to be similar, the lengths of all their sides must have been enlarged by the same scale factor. Tom is correct because all the sides of his rectangle have been enlarged by scale factor ¼ (divided by 4) when compared with the original rectangle. Therefore they are similar. Katie is also correct. For Katie's rectangle, all sides have been enlarged by scale factor 2. Therefore, Katie's rectangle is also similar to the original rectangle.",
+        "D": "For 2 shapes to be similar, the lengths of all their sides must have been enlarged by the same scale factor (multiplied by the same number). Compare the lengths of the shorter sides of the rectangles and then compare the lengths of the longer sides of the rectangles."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146068,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/70dbabde-14b8-45f6-8b28-4256be36ce89.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Because the two triangles are similar, we know that all sides will have been enlarged by the same scale factor. We first need to calculate the scale factor by comparing the corresponding sides. The 4cm side in the smaller triangle corresponds to the 6cm side in the larger triangle. 6 ÷ 4 = 1.5. Therefore, we know that the 5cm side in the smaller triangle must be multiplied by 1.5 to find the corresponding length in the larger triangle. 5 ✕ 1.5 = 7.5cm",
+        "B": "I think you have multiplied by 2 to find x. To find the scale factor, what would you multiply 4 by to get 6? Once you know this, you can use this fact to work out the value of x.",
+        "C": "I think you have rounded your answer. To find the scale factor, what would you multiply 4 by to get 6? Once you know this, you can use this fact to work out the value of x.",
+        "D": "I think you have added 2 to find x. To find the scale factor, what would you multiply 4 by to get 6? Once you know this, you can use this fact to work out the value of x."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146088,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/781e7352-1acf-47f5-bfc9-8433ee27042f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have assumed that you would just add 2.5 on. Look at the length that corresponds with 5cm on the new shape to work out the scale factor.",
+        "B": "I think you have assumed that all of the dimensions have doubled. Look at the length that corresponds with 5cm on the new shape to work out the scale factor.",
+        "C": "I think you may be estimating. The dimensions have been multiplied by a scale factor to calculate the lengths of the new shape. Look at the length that corresponds with 5cm on the new shape to work out the scale factor.",
+        "D": "The dimensions of the shape have been increased by a scale factor of 1.5 as 7.5/5 = 1.5. Therefore, x would be 7x1.5=10.5cm"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146069,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db79db82-edd6-421d-b666-490e4bc6c5be.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "150/60 = 2.5 so the scale factor is 2.5. 70/2.5 = 28 so y = 28 cm",
+        "B": "I think you may be estimating. The dimensions have been multiplied by a scale factor to calculate the lengths of the new shape. Look at the length that corresponds with 60cm on the new shape to work out the scale factor.",
+        "C": "I think you may be estimating. The dimensions have been multiplied by a scale factor to calculate the lengths of the new shape. Look at the length that corresponds with 60cm on the new shape to work out the scale factor.",
+        "D": "I think you may be estimating. The dimensions have been multiplied by a scale factor to calculate the lengths of the new shape. Look at the length that corresponds with 60cm on the new shape to work out the scale factor."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146089,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/17404b7f-460a-4aad-b635-7378a9d648eb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may be estimating. The dimensions have been multiplied by a scale factor to calculate the lengths of the new shape. Look at the length that corresponds with 40cm on the new shape to work out the scale factor.",
+        "B": "I think you may be estimating. The dimensions have been multiplied by a scale factor to calculate the lengths of the new shape. Look at the length that corresponds with 40cm on the new shape to work out the scale factor.",
+        "C": "100/40 = 2.5 so the scale factor is 2.5. 60/2.5 = 24 so y = 24 cm",
+        "D": "I think you have assumed that all of the dimensions have doubled. Look at the length that corresponds with 40cm on the new shape to work out the scale factor."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146070,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3cfe1dba-a0c1-4909-974c-d304913d78d8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The relationship between the length and width will remain the same in similar shapes.",
+        "B": "Consider a rectangle of width 4 and height 2. Is the relationship between the sides the same in a similar rectangle of width 8 and height 4?",
+        "C": "Consider a rectangle of width 4 and height 2. Is the relationship between the sides the same in a similar rectangle of width 8 and height 4?",
+        "D": "Consider a rectangle of width 4 and height 2. Is the relationship between the sides the same in a similar rectangle of width 8 and height 4?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146090,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ca0ab427-9883-4a23-9410-2e3593beaa0b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The relationship between the length and width will remain the same between similar shapes.",
+        "B": "Consider a rectangle of width 4 and height 2, and a rectangle of width 8 and height 4. What is the relationship between the dimensions of the two rectangles?",
+        "C": "Consider a rectangle of width 4 and height 2, and a rectangle of width 8 and height 4. What is the relationship between the dimensions of the two rectangles?",
+        "D": "Consider a rectangle of width 4 and height 2, and a rectangle of width 8 and height 4. What is the relationship between the dimensions of the two rectangles?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

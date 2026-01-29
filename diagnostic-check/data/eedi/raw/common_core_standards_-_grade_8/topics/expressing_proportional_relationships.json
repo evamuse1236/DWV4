@@ -1,0 +1,147 @@
+{
+  "shortcode": "vze",
+  "name": "Expressing proportional relationships",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 41,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Write a direct proportion statement correctly",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Write an inverse proportion statement correctly",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 135082,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/deb6dd1d-ea25-400e-a1e0-ed37c99791b5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, think about the symbol. t is directly proportional to, not equal to",
+        "B": "Not quite, this would be inversely proportional to",
+        "C": "Not quite, 1/p would mean inversely proportional to and we want directly proportional to. Also, think about the symbol as they are in proportion to each other, not equal to each other.",
+        "D": "t is directly proportional to p' is written with the proportion symbol in place of an equal sign"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135102,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a10f84e1-327d-4619-b033-d1706c1d77ea.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, think about the symbol. p is directly proportional to, not equal to q",
+        "B": "Not quite, this would be inversely proportional to",
+        "C": "p is directly proportional to q' is written with the proportion symbol in place of an equal sign",
+        "D": "Not quite, 1/p would mean inversely proportional to, and we want directly proportional to. Also, think about the symbol as they are in proportion to each other, not equal to each other."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135083,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0f5433db-d139-4243-a96e-d2bb0b8821f3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, think about the symbol. t is directly proportional to p squared, not equal to it",
+        "B": "Not quite, this would be inversely proportional to p squared",
+        "C": "Not quite, 1/p² would mean inversely proportional to and we want directly proportional to. Also, think about the symbol as they are in proportion to each other, not equal to each other.",
+        "D": "t is directly proportional to the square of p is written with the proportional symbol in place of an equals"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135103,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/42836dd1-596f-49bf-b84c-67cda72affb9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, think about the symbol. r is directly proportional to, not equal to s³",
+        "B": "Not quite, this would be r is directly proportional to s, we want s³",
+        "C": "r is directly proportional to s³ is written with the proportional symbol in place of an equals",
+        "D": "Not quite, 1/s³ would mean inversely proportional to and we want directly proportional to."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135084,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6f36299-6da6-4a49-9a53-648d7413de0c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, this is t is equal to p. What symbol do we use for proportionality? Then we need the inverse of p.",
+        "B": "t is inversely proportional to p is written with the proportional symbol in place of an equals and 1/p to show inversely",
+        "C": "Nearly! The statement says inversely proportional to, not equal to. What symbol could you use in place of the equal sign?",
+        "D": "Almost, this is for directly proportional, we want inversely proportional."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135104,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/02bd7103-d7e8-4159-8018-a2accfdaa670.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, this is p is equal to q, what symbol do we use for proportionality? Then we need the inverse of q",
+        "B": "Almost, this is for directly proportional, we want inversely proportional",
+        "C": "Nearly! Think about the symbol, they are not equal but proportional.",
+        "D": "p is inversely proportional to q is written with the proportional symbol in place of an equals and 1/q to show inversely."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135085,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c1bb2962-9e2c-4511-b68a-02ac9f8201a6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost, this is t is directly proportional to p squared - we want the square root of p",
+        "B": "Not quite this is inversely proportional to p squared, we want directly proportional to the square root of p",
+        "C": "Nearly! This is inversely proportional to, we want directly proportional to.",
+        "D": "t is directly proportional (so we use the symbol not an equals) to the square root of p, so p is under the square root sign."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135105,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1faa652b-7518-4892-81b3-6411f4fa1422.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite - this says r is directly proportional to s squared, we want directly proportional to the square root of s.",
+        "B": "r is directly proportional (so we use the symbol not an equals) to the square root of s, so s is under the square root sign.",
+        "C": "Not quite, this is inversely proportional to s squared, we need directly proportional to the square root of s",
+        "D": "Almost, this is inversely proportional and we want directly proportional"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135086,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/57ee8e99-32b3-4378-80c9-cf425ec23309.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, this is t is directly proportional to p squared. We want inversely proportional to the square root of p",
+        "B": "Almost, this is inversely proportional to p squared - we want the square root of p",
+        "C": "t is inversely proportional is written as 1/ In this question we want the denominator to be the square root of p",
+        "D": "Nearly! This is directly proportional, we want inversely proportional."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135106,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6283652d-1a0a-46c9-b3dd-907771e594e8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, this is directly proportional and we want inversely proportional",
+        "B": "Nearly! This is inversely proportional to b, we want inversely proportional to the square root of b",
+        "C": "Almost! This is inversely proportional to b squared, we want the square root of b",
+        "D": "a is inversely proportional is written as 1/ In this question we want the denominator to be the square root of b"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

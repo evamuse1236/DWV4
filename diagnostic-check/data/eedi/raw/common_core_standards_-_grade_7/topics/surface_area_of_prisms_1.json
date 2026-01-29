@@ -1,0 +1,147 @@
+{
+  "shortcode": "vw1",
+  "name": "Surface area of prisms 1",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 206,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate the surface area of a cuboid where the dimensions are given in the same units",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given the area of a rectangle, calculate a missing dimension",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 110052,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4686f9db-ecbc-4332-a863-64e17065c090.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "6cm x 3cm would give the area of the base and the top of the cuboid, rather than the side labelled P.",
+        "B": "The face 𝑃 is a rectangle which has a base of 3cm and a height of 4cm. This means its area is 4 cm × 3 cm.",
+        "C": "6cm x 4cm would give the area of the front and the back of the cuboid, rather than the side labelled P.",
+        "D": "It looks like you're calculating the volume of the cuboid. Here we only want to find the area of one of the sides of the cuboid, labelled P."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 110068,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b8a5ad62-3533-43f7-affe-5ae4c35fe347.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you're calculating the volume of the cuboid. Here we only want to find the area of one of the sides of the cuboid, labelled P.",
+        "B": "4cm x 7cm would give the area of the front and the back of the cuboid, rather than the side labelled P.",
+        "C": "4cm x 2cm would give the area of the base and the top of the cuboid, rather than the side labelled P.",
+        "D": "The face 𝑃 is a rectangle which has a base of length 2cm and a height of length 7cm. This means its area is 2cm × 7cm."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 110053,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e28a6e7b-63e2-4029-950a-7766934b7079.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The face 𝑄 is a rectangle on the top of the cuboid, which has sides of length 6cm and 3cm. This means its area is 6cm × 3cm.",
+        "B": "4cm x 3cm would give the area of the right side and left side of the cuboid, rather than the top, labelled Q.",
+        "C": "6cm x 4cm would give the area of the front and the back of the cuboid, rather than the top, labelled Q.",
+        "D": "It looks like you're calculating the volume of the cuboid. Here we only want to find the area of the top of the cuboid, labelled Q."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 110069,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/72190c33-0029-4a7d-9262-5fdf10f72e13.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you're calculating the volume of the cuboid. Here we only want to find the area of the bottom of the cuboid, labelled Q.",
+        "B": "4cm x 7cm would give the area of the front and the back of the cuboid, rather than the bottom, labelled Q.",
+        "C": "The face 𝑄 is a rectangle which has sides of length 4cm and 2cm. This means its area is 4cm × 2cm.",
+        "D": "2cm x 7cm would give the area of the left side and the right side of the cuboid, rather than the bottom, labelled Q."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 110054,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1bf65dff-ac59-4d5b-af1e-7bec00be52fe.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "6cm x 3cm would give the area of the base and the top of the cuboid, rather than the front, labelled R.",
+        "B": "4cm x 3cm would give the area of the left side and the right side of the cuboid, rather than the front, labelled R.",
+        "C": "The face 𝑅 is a rectangle which has a base of 6cm and a height of 4cm. This means its area is 6cm × 4cm.",
+        "D": "It looks like you're calculating the volume of the cuboid. Here we only want to find the area of the front of the cuboid, labelled R."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 110070,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e702ced6-5139-41fd-94c3-ee428bf36929.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you're calculating the volume of the cuboid. Here we only want to find the area of the front of the cuboid, labelled R.",
+        "B": "The face 𝑅 is a rectangle which has a base of 4cm and a height of 7cm. This means its area is 4cm × 7cm.",
+        "C": "4cm x 2cm would give the area of the top and of the bottom of the cuboid, rather than the front, labelled R.",
+        "D": "2cm x 7cm would give the area of the right side and the left side of the cuboid, rather than the front, labelled R."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 110055,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/28616408-31f3-4738-87ad-577ec15237a7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You're very close. Check whether you have you added together the area of ALL of the sides?",
+        "B": "It looks like you've calculated the volume. Remember to find the surface area, you need to find the area of all of the sides on the cuboid and add them together.",
+        "C": "You're doing some of the right calculations here. Remember that to find the total surface area of a cuboid, you find the area of all the sides, and add them up",
+        "D": "The cuboid has 6 faces. Opposite faces of a cuboid are equal, which means that to calculate the surface area, find the area of three different faces and multiply by 2: 6 × 4 is the front face, 6 × 3 is the base, 4 × 3 is the side. These values are added together and then multiplied by 2 for the total surface area."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 110071,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c2775eac-b781-4f72-b173-7bbc5e495b4e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You're very close. Check whether you have you added together the area of ALL of the sides?",
+        "B": "The cuboid has 6 faces. Opposite faces of a cuboid are equal, to calculate the surface area, find the area of three different faces, find the total and multiply by 2: 2 × 7 is the side face, 4 × 2 is the top, 4 × 7 is the front. Add all of these values together and then multiply by 2 at the end for the total surface area.",
+        "C": "You're doing some of the right calculations here. Remember that to find the total surface area of a cuboid, you find the area of all the sides, and total them",
+        "D": "It looks like you've calculated the volume. Remember to find the surface area, you need to find the area of all of the sides on the cuboid and add them together."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 110056,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/86f95384-1db7-409f-b485-7d7d065d7116.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Think about how you would find the area of this rectangle. Would you add the two lengths?",
+        "B": "The area of the shaded face = 400 cm² = base × height. The base is ★ and the height is 15cm. This gives 400 = 15 × ★, dividing both sides by 15 gives ★ = 400/15.",
+        "C": "I think you might be mistaking 400cm² as the volume. Think about how you would find the area of the shaded rectangle if you had both of the measurements.",
+        "D": "Notice that 400cm² is the area of the shaded rectangle. Here we are trying to find what the value is that would replace the star, how would you work out the area of the rectangle if you had the value below the star?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 110072,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5e821a31-59a3-4bca-8d20-106033724c9a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Think about how you would find the area of this rectangle. Would you add the two lengths?",
+        "B": "The area of the shaded face = 250 cm² = base × height. The base is ★ and the height is 8cm. This gives 250 = 8 × ★, dividing both sides by 8 gives ★ = 250/8.",
+        "C": "I think you might be mistaking 250cm² as the volume. Think about how you would find the area of the shaded rectangle if you had both of the measurements.",
+        "D": "Notice that 250cm² is the area of the shaded rectangle. Here we are trying to find what the value is that would replace the star, how would you work out the area of the rectangle if you had the value below the star?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

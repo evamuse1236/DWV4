@@ -1,0 +1,153 @@
+{
+  "shortcode": "bigw",
+  "name": "Converting units of length",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 57,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Convert between m and cm",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Convert between m and mm",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Complete multi-step conversions of length that use multiplication",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 107578,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/275fb21f-5392-4a0b-ba21-ddc96c7e62e8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember there are 100cm in 1m, what will 1 metre 6 centimetres be in metres?",
+        "B": "Remember there are 1000 metres in 1 kilometre. What will 25km be in metres?",
+        "C": "I think you've forgotten to convert the measurements first. Remember that 1m=100cm, and 1km=1000m.",
+        "D": "The measurement of 1½ metres is the same as 1m and 50 centimetres and so Tom is incorrect. Also, 25 km is equal to 25000 m, and so Katie is incorrect."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107588,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c80dc477-683e-4153-bdf3-217391255002.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember that 1km = 1000m, what will 8980m be in km?",
+        "B": "The distance 9 km is equal to 9000 m, and so Katie is incorrect. The measurement 2¼ m is equal to 2.25 metres, and so Tom is correct.",
+        "C": "I think you've forgotten to convert the measurements first. Remember that 1m=100cm, and 1km=1000m.",
+        "D": "I think you've forgotten to convert the measurements first. Remember that 1m=100cm, and 1km=1000m."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107579,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d1340748-b03c-4556-839f-26a82529598b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you've chopped off 0.1m, rather than 0.1cm.",
+        "B": "I think you've chopped off 0.1m, and converted your answer to cm, rather than mm",
+        "C": "I think you've chopped off 0.1mm, rather than cm",
+        "D": "One metre is equal to 100 cm, and so the length of rope that remains is 100 – 0.1 = 99.9 cm long. There are 10 mm in a centimetre, and so we have 99.9 cm = 99.9 × 10 = 999 mm"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 124601,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cc7ba0ad-5b17-479d-93e2-39ffeb8ec3f9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you've chopped off 0.5mm, rather than 0.5cm.",
+        "B": "Two metres is equal to 200 cm, and so the length of rope that remains is 200 – 0.5 = 199.5 cm long. There are 10 mm in a centimetre, and so we have 199.5 cm = 199.5 × 10 = 1995 mm",
+        "C": "I think you've chopped off 5cm, rather than 0.5cm",
+        "D": "It looks like you've given your answer in cm, rather than mm. Remember that 1cm = 10mm."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129142,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d93ba249-60a0-4d1a-b179-4da91d687c25.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have divided 45 by 100. The number 100 is the correct conversion but think carefully about the operation we need. If we change to a smaller unit, we'll have more of them.",
+        "B": "Not quite. Remember 'cent' in the word centimetre means a hundredth. And do we need to multiply or divide? Centimetres are smaller than metres so we would expect more of them.",
+        "C": "Not quite. Remember 'cent' in the word centimetre means a hundredth. What do we need to multiply 45 by to get from metres to centimetres?",
+        "D": "1 m = 100 cm so to get from m to cm we need to multiply by 100. 45 x 100 = 4500."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129282,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d0745a58-f7b2-442d-8c2b-4ccb4b542c77.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember 'cent' in the word centimetre means a hundredth. What do we need to multiply 1.2 by to get from metres to centimetres?",
+        "B": "1 m = 100 cm so to get from m to cm we need to multiply by 100. 1.2 x 100 = 120.",
+        "C": "You are right that the 1 m part of 1.2 m will become 100 cm because there are 100 cm in 1 m. But what about the 0.2m? We need to multiply that by 100 as well.",
+        "D": "Not quite. Remember 'cent' in the word centimetre means a hundredth. And do we need to multiply or divide? Centimetres are smaller than metres so we would expect more of them."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129143,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cbfc6825-fbbb-4a8c-82c7-8b5b80371f28.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember 'milli' in the word millimetre means a thousandth. What do we need to multiply by to get from metres to millimetres?",
+        "B": "Not quite. Remember 'milli' in the word millimetre means a thousandth. What do we need to multiply by to get from metres to millimetres?",
+        "C": "1 m = 1000 mm so to get from m to mm we need to multiply by 1000. 5 x 1000 = 5000.",
+        "D": "Not quite. Remember 'milli' in the word millimetre means a thousandth. What do we need to multiply by to get from metres to millimetres?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129283,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b306a996-6c58-4f89-8e4a-0f0408a9c465.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "1 m = 1000 mm so to get from m to mm we need to multiply by 1000. 2 x 1000 = 2000.",
+        "B": "Not quite. Remember 'milli' in the word millimetre means a thousandth. What do we need to multiply by to get from metres to millimetres?",
+        "C": "Not quite. Remember 'milli' in the word millimetre means a thousandth. What do we need to multiply by to get from metres to millimetres?",
+        "D": "Not quite. Remember 'milli' in the word millimetre means a thousandth. What do we need to multiply by to get from metres to millimetres?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129144,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8e172d10-edd0-49a2-819c-dfdbfdcf4d09.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Start by converting 1 kilometre into metres. Remember that 'kilo' means 'thousand'.",
+        "B": "I think you have converted 1 km into metres by multiplying by 1000. That's a great start but we need to keep going and convert 1000 m into millimetres (mm). What does 'milli' tell us?",
+        "C": "You are right that we need to multiply but what do we need to multiply by? Start by converting 1 kilometre into metres. Remember that 'kilo' means 'thousand'.",
+        "D": "1 km = 1000 m but we still need to convert 1000 m to mm. 1 m = 1000 mm so to get from m to mm we need to multiply by 1000. 1000 x 1000 = 1,000,000 or one million."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129284,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6166a2c0-b1b1-4d56-bb7b-06b1649d2d36.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Firstly, 1 km = 1000 m so 2 km = 2 x 1000 = 2000 m. Then we need to convert 2000 m to mm. 1 m = 1000 mm so to get from m to mm we need to multiply by 1000. 2000 x 1000 = 2,000,000 or two million.",
+        "B": "You are right that we need to multiply but what do we need to multiply by? Start by converting 2 kilometres into metres. Remember that 'kilo' means 'thousand'.",
+        "C": "I think you have converted 2 km into metres by multiplying by 1000. That's a great start but we need to keep going and convert 2000 m into millimetres (mm). What does 'milli' tell us?",
+        "D": "Start by converting 2 kilometres into metres. Remember that 'kilo' means 'thousand'."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

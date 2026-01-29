@@ -1,0 +1,153 @@
+{
+  "shortcode": "vno",
+  "name": "Written division 1 (no remainders)",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 52,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Divide integers of 3 or more digits using short division",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Set out short division calculations correctly",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Divide integers using short division where the answer is not an integer",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 102216,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4e6175de-f0aa-4d50-b80b-8a540a1107d2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You may have mixed up where the number being divided goes with where the answer goes.",
+        "B": "You may have mixed up where the number being divided goes, where the divisor goes and where the answer goes. Hint: The answer goes on top of the \"bus stop\"",
+        "C": "The number that is being divided goes in the ‘bus stop’ and the divisor goes outside, as shown in answer C. This is always the case, whatever numbers are in the calculation.",
+        "D": "You may have mixed up where the number being divided goes with where the divisor goes."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 102226,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/51524c27-c9de-41d5-ba1d-d1607a1ecf94.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You may have mixed up where the number being divided goes with where the answer goes.",
+        "B": "The number that is being divided goes in the ‘bus stop’ and the divisor goes outside, as shown in answer B. This is always the case, whatever numbers are in the calculation.",
+        "C": "You may have mixed up where the number being divided goes, where the divisor goes and where the answer goes. Hint: The answer goes on top of the \"bus stop\"",
+        "D": "You may have mixed up where the number being divided goes with where the divisor goes."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 102217,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/41755aa3-be7d-45a1-bdf5-70035044323e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Maybe you tried to work out 5 ÷ 3 rather than 3 ÷ 5",
+        "B": "Maybe you thought you just carried the number being divided. Remember you carry the remainder after you reach the highest possible multiple of 5.",
+        "C": "Maybe you thought you just carried the number you are dividing by. Remember you carry the remainder after you reach the highest possible multiple of 5. So in this case you need to carry 3 as 0 is the highest possible multiple of 5 and there are 3 left over.",
+        "D": "The calculation has been done correctly. To check this, note that 75 × 5 = 375, as should be the case."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 102227,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/43a5e4e2-4404-4a55-a1bb-dd5f0fe3dc2f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Maybe you thought you just carried the number you are dividing by. Remember you carry the remainder after you reach the highest possible multiple of 8. So in this case you need to carry 6 as 0 is the highest possible multiple of 8 and there are 6 left over.",
+        "B": "The first digit, 6, has been carried over, so working out 65 ÷ 8 = 8 remainder 1 leads to an 8 being placed above the 5 (as has happened) and then a 1 should be carried, not 5 as is shown.",
+        "C": "You may have made a numerical error with your division. Have another go",
+        "D": "You may have thought 60 was part of the 8 times table. Remember 8 x 8 = 64."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 102218,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a1f2e313-7d91-4502-a99b-d6d1d04b035a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Maybe you divided each digit by two but ignored any remainder. Remember 70 divided by 2 is 35.",
+        "B": "Put the 674 in the ‘bus stop’ and the 2 outside to the left. Starting with 6 ÷ 2 = 3, the 3 then goes above the line, directly above the 6. Now 7 ÷ 2 = 3 remainder 1, so write the 3 next to the 6 and carry the 1 over so that the next calculation is 14 ÷ 2 = 7. The 7 goes next to the 3 to give a complete answer of 337.",
+        "C": "You may have started your \"bus stop\" from the right hand side and worked backwards. Make sure you start from the left.",
+        "D": "Maybe you misread the question as a subtraction. Remember ÷ means divide"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 102228,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/61a8e233-0107-4f35-8bca-5efddeff3789.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Maybe you divided each digit by three but ignored any remainder. Remember 7 divided by 3 is 2, remainder 1.",
+        "B": "Maybe you misread the question as a subtraction. Remember ÷ means divide",
+        "C": "You may have started your \"bus stop\" from the right hand side and worked backwards. Make sure you start from the left.",
+        "D": "Put the 795 in the ‘bus stop’ and the 3 outside to the left. Starting with 7 ÷ 3 = 2 remainder 1, the 2 then goes above the line, directly above the 7 and the remainder of 1 is carried over for 19 ÷ 3 = 6 remainder 1, so write the 6 next to the 2 and carry the 1 over so that the next calculation is 15 ÷ 3 = 5. The 5 goes next to the 6 to give a complete answer of 265."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 102219,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea8acc48-c334-4c90-b352-1ca07732e4a6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You may have forgotten to carry the remainders. Remember if 8 does not exactly divide by 3 we need to carry the remaining amount onto the next digit.",
+        "B": "You may have multiplied the 2 numbers together. We need to work backwards to find the missing value so we need to use the inverse of multiplication which is division.",
+        "C": "The question is stating ‘3 × missing number = 384’. In order to work out the missing number we have to do the opposite of × 3, which is ÷ 3. The calculation to perform is then 384 ÷ 3. Put the 384 in the bus stop and begin: 3 ÷ 3 = 1, then 8 ÷ 3 = 2 remainder 2, so the final calculation becomes 24 ÷ 3 = 8. These digits make up the answer: 128.",
+        "D": "You may have started your \"bus stop\" from the right hand side and worked backwards. Make sure you start from the left."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 102229,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/213f7e7d-40c5-4eca-b42d-60e2129a9bc9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You may have forgotten to carry the 1. Remember 9 does not divide exactly by 4 so we have to add the remainder onto our next digit.",
+        "B": "The question is stating ‘4 × missing number = 492’. In order to work out the missing number we have to do the opposite of × 4, which is ÷ 4. The calculation to perform is then 492÷ 4. Put the 492 in the bus stop and begin: 4 ÷ 4 = 1, then 9 ÷ 4 = 2 remainder 1. The final calculation becomes 12 ÷ 4 = 3. These digits make up the answer: 123.",
+        "C": "You may have multiplied the 2 numbers together. We need to work backwards to find the missing value so we need to use the inverse of multiplication which is division.",
+        "D": "You may have started your \"bus stop\" from the right hand side and worked backwards. Make sure you start from the left."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 102220,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/975853e3-f1fc-4d4d-b4df-9704c218687a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Put the 2143 in the ‘bus stop’ and the 4 outside to the left. Starting with 2 ÷ 4 = 0 remainder 2, the 0 then goes above the line, directly above the 2. Now the next calculation is 21 ÷ 4 = 5 remainder 1, so write the 5 next to the 0 and carry the 1 over so that the next calculation is 14 ÷ 4 = 3 remainder 2. The 3 goes next to the 5 and the 2 is carried over so that the next calculation is 23 ÷ 4 = 5 remainder 3. The calculation gives a complete value of 535 remainder 3, so the answer required is 3.",
+        "B": "Maybe you wrote 1 as 2143 is 1 away from the next multiple of 4. Instead we need to work out how much greater it is than the previous multiple of 4.",
+        "C": "You have found the remainder, but expressed it as a fraction.",
+        "D": "You may have started your \"bus stop\" from the right hand side and worked backwards. Make sure you start from the left."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 102230,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/58fcd7fc-6251-4bcb-a208-65dd5f8809fa.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You may have seen that the last digit is a 6 and assumed there was no remainder. This is not always the case. Perform a \"bus stop\" calculation to work out the remainder.",
+        "B": "You may have started your \"bus stop\" from the right hand side and worked backwards. Make sure you start from the left.",
+        "C": "You have found the remainder, but expressed it as a fraction.",
+        "D": "Put the 7586 in the ‘bus stop’ and the 6 outside to the left. Starting with 7 ÷ 6 = 1 remainder 1, the 1 then goes above the line, directly above the 7 and the other 1 is carried over for the next calculation of 15 ÷ 6 = 2 remainder 3, so write the 2 next to the 1 and carry the 3 over so that the next calculation is 38 ÷ 6 = 6 remainder 2. The 6 goes next to the 2 and the other 2 is carried over so that the next calculation is 26 ÷ 6 = 4 remainder 2. The calculation gives a complete value of 1264 remainder 2, so the answer required is 2."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

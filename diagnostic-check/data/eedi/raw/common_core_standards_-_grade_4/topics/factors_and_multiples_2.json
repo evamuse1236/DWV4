@@ -1,0 +1,153 @@
+{
+  "shortcode": "bifq",
+  "name": "Factors and multiples 2",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 10,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify factors of a number",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify common factors of two numbers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify multiples of a number",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 89780,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/35cde933-0dee-4b55-929a-0817f9d0c0af.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! A factor of a number is another number that divides into it exactly, leaving no remainder. There are numbers that you can divide into 11 that would leave no remainder.",
+        "B": "Not quite! Remember a factor of a number is another number that divides into it exactly, leaving no remainder.",
+        "C": "The number 11 is a prime number. By definition, this means that the only factors it has are 1 and itself, which means a total of two factors.",
+        "D": "Good try! 11 is a factor of 11, but the question is asking you to find the number of factors that 11 has."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89794,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6d10c89-cb4b-41c9-bbc2-8b9daf7a5529.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Remember a factor of a number is another number that divides into it exactly, leaving no remainder.",
+        "B": "Not quite! Remember a factor of a number is another number that divides into it exactly, leaving no remainder.",
+        "C": "Factors are numbers that divide exactly into another number. For the number 9, factors are 1, 3 and 9. The factor pairs are 1 and 9, 3 and 3. We count the 3 once. Because 9 is a square number, it has an odd number of factors.",
+        "D": "Almost! Check your list of factors to make sure you have no repeats."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89781,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/afdf3796-cf73-475a-974c-7b4f7b7f4def.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This will always be true as square numbers have a repeated factor. For example, 16 = 1 ✕ 16, 2 ✕ 8 and 4 ✕ 4 so the factors of 16 are 1, 2, 4, 8 and 16 with 4 only being included once in the list.",
+        "B": "Not quite! Try a few square numbers to check. Remember multiplying a number by itself will give you a square number.",
+        "C": "Not quite! Try a few square numbers to check. Multiplying a number by itself will give you a square number and a factor of a number is another number that divides into it exactly, leaving no remainder.",
+        "D": "Not quite! Try to find the factors of a few square numbers to check. Multiplying a number by itself will give you a square number and a factor of a number is another number that divides into it exactly, leaving no remainder."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 120806,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/622c6777-67a2-4ff4-a2cd-21bddce125a0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. To help answer the question try to list the factors of some cube numbers. 1, 8 and 27 are cube numbers. How many factors do they have?",
+        "B": "Cube numbers have an odd number of factors only some of the time. 1 is a cube number and it only has one factor (one is odd) where as 8 is a cube number and has 4 factors.",
+        "C": "Not quite! To help answer the question try to list the factors of some cube numbers. 1, 8 and 27 are cube numbers. How many factors do they have?",
+        "D": "Not quite! Try a to find the factors of a few cube numbers to check. Multiplying a number by itself three times will give you a cube number and a factor of a number is another number that divides into it exactly, leaving no remainder."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89789,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6ad63144-4578-453a-9dc2-0ef12c977676.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Factors are numbers that divide exactly into another number. So the factors of 6 are 1,2,3 and 6. Factors of 9 are 1, 3 and 9. The factors that 6 and 9 have in common are 1 and 3, so 3 is the correct answer as it is the only option which appears in the choice of answers.",
+        "B": "Be careful! 6 is a factor of 6 but it is not a factor of 9. Remember a factor of a number is another number that divides into it exactly, leaving no remainder.",
+        "C": "Be careful! 9 is a factor of 9 but it is not a factor of 6. Remember a factor of a number is another number that divides into it exactly, leaving no remainder.",
+        "D": "Not quite! I think you have found a common multiple of 6 and 9 not a common factor. Remember a factor of a number is another number that divides into it exactly, leaving no remainder."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89803,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/87568928-6202-44c0-87ce-cdb21dc3102e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! I think you have found a common multiple of 8 and 20 not a common factor. Remember a factor of a number is another number that divides into it exactly, leaving no remainder.",
+        "B": "Be careful! 20 is a factor of 20 but it is not a factor of 8. Remember a factor of a number is another number that divides into it exactly, leaving no remainder.",
+        "C": "Be careful! 8 is a factor of 8 but it is not a factor of 20. Remember a factor of a number is another number that divides into it exactly, leaving no remainder.",
+        "D": "Factors are numbers that divide exactly into another number. So the factors of 8 are 1,2, 4 and 8. Factors of 20 are 1, 2, 4, 5, 10 and 20. The factors that 8 and 20 have in common are 1, 2 and 4, so 4 is the correct answer as it is the only option which appears in the choice of answers."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89790,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fcf0d360-2ac7-4804-ad6f-511c9ca33c2b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful! For a number to be a common factor then it must be a factor of both numbers. Are all of Tom's numbers factors of both 6 and 12?",
+        "B": "Be careful! For a number to be a common factor then it must be a factor of both numbers. Are all of Katie's numbers factors of both 12 and 18?",
+        "C": "Be careful! At least one of them is incorrect. Remember a factor of a number is another number that divides into it exactly, leaving no remainder. And for a number to be a common factor then it must be a factor of all given numbers.",
+        "D": "Factors of 6 are 1, 2, 3 and 6. Factors of 12 are 1, 2, 3, 4, 6 and 12. Factors of 18 are 1, 2, 3, 6, 9, 18. So Tom's statement is incorrect because 4 is not a factor of 6. Katie's statement is also incorrect because 4 is not a factor of 18."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89804,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cc58e880-7fe3-4cb4-bc7b-537f798efb05.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Listing and then comparing the factors of 24 and 60 will help you decide who is correct.",
+        "B": "Not quite! Listing and then comparing the factors of 24 and 60 will help you decide who is correct.",
+        "C": "Factors of 24 are 1, 2, 3, 4, 6, 8, 12 and 24. Factors of 60 are 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30 and 60. The common factors of 24 and 60 are 1, 2, 3, 4, 6, 12. So both Jo and Paul's statement are correct because the numbers that they list are all common factors of 24 and 60.",
+        "D": "Be careful! At least one of them is correct. Remember for a number to be a common factor then it must be a factor of all given numbers. Listing and then comparing the factors of 24 and 60 will help you decide who is correct."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 99570,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/96f1c021-99dc-4465-b7d1-79058b96f74e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "So close! 28 would be the second number in the list. What would be the third?",
+        "B": "Ascending means arranged from smallest to largest. A multiple of 14 is the result of multiplying 14 by a whole number. The first multiple of 14 is 1 ✕ 14 = 14, the second multiple is 2 ✕ 14 = 28 and the third multiple is 3 ✕ 14 = 42.",
+        "C": "Not quite! 56 would be the fourth multiple in the list not the third. Remember, the first multiple will be found by calculating 1 ✕ 14.",
+        "D": "Be careful! 7 is a factor of 14 not a multiple. Remember, a multiple of a number can be found by multiplying that number by any other positive whole number. For example, a multiple of 2 is 6 as 2 ✕ 3 = 6"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 99585,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8ed0ab5f-583b-4942-974f-e298b420ce34.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "So close! 60 would be the fourth number in the list. What would be the fifth?",
+        "B": "Not quite! 45 would be the third multiple in the list not the fifth. Try writing the multiples down to see which one would be the fifth.",
+        "C": "Not quite! 90 would be the sixth multiple in the list not the fifth. Remember, the first multiple will be found by calculating 1 ✕ 15.",
+        "D": "Ascending means arranged from smallest to largest. A multiple of 15 is the result of multiplying 15 by a whole number. The first multiple of 15 is 1 ✕ 15 = 15, the second multiple is 2 ✕ 15 = 30, the third multiple is 3 ✕ 15 = 45, the fourth multiple is 4 ✕ 15 = 60 and the fifth multiple is 5 ✕ 15 = 75."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

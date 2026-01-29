@@ -1,0 +1,141 @@
+{
+  "shortcode": "big0",
+  "name": "Converting customary units of mass",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 61,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Converting between customary units of weight",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158015,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9460cdd5-cbb9-4285-b369-1f7b88d82468.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have multiplied by 10 but there are 16 ounces in a pound...",
+        "B": "I think you have multiplied by 100 but there are 16 ounces in a pound...",
+        "C": "This is how many ounces there are in 1 pound...",
+        "D": "There are 16 ounces in a pound so to go from pounds to ounces you multiply by 16. 2 x 16 = 32"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158182,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9e8307a2-66aa-4334-bbea-c47d10f8025b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There are 16 ounces in a pound so to go from pounds to ounces you multiply by 16. 3 x 16 = 48",
+        "B": "This is how many ounces there are in 1 pound...",
+        "C": "I think you have multiplied by 100 but there are 16 ounces in a pound...",
+        "D": "I think you have multiplied by 10 but there are 16 ounces in a pound..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158016,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea0d3a3f-900e-447c-99ad-8d43eb7492e8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have multiplied by 100 but there are 16 ounces in a pound...",
+        "B": "I think you have used 12 which is how we convert feet to inches.. There are 16 ounces in a pound!",
+        "C": "There are 16 ounces in a pound so to go from pounds to ounces you multiply by 16. 0.5 x 16 = 8",
+        "D": "You have accidentally doubled 16 instead of halving it!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158183,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3a16bbb9-345b-437a-9b04-1574fcc06091.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have accidentally done 16 ÷ 0.8 instead of multiplying the numbers...",
+        "B": "I think you have multiplied by 1000 but there are 16 ounces in a pound...",
+        "C": "I think you have used 12 which is how we convert feet to inches.. There are 16 ounces in a pound!",
+        "D": "There are 16 ounces in a pound so to go from pounds to ounces you multiply by 16. 0.8 x 16 = 12.8"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158017,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/470417b8-c303-48af-bdaf-460ce126982d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There are 16 ounces in a pound so to go from pounds to ounces you multiply by 16. 1.5 x 16 = 24",
+        "B": "I think you have multiplied by 10 but there are 16 ounces in a pound...",
+        "C": "I think you have multiplied by 14 but there are 16 ounces in a pound...",
+        "D": "I think you have used 12 which is how we convert feet to inches.. There are 16 ounces in a pound!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158184,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e3d13165-58aa-411f-a7f0-81f897a7e187.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have multiplied by 10 but there are 16 ounces in a pound...",
+        "B": "I think you have used 12 which is how we convert feet to inches.. There are 16 ounces in a pound!",
+        "C": "There are 16 ounces in a pound so to go from pounds to ounces you multiply by 16. 3.75 x 16 = 60",
+        "D": "I think you have multiplied by 14 but there are 16 ounces in a pound..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158018,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/027164bb-0a0b-409a-b22f-bd4b6f020992.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have multiplied by 100 but there are 16 ounces in a pound...",
+        "B": "3 and 1/4 as a decimal is 3.25 and there are 16 ounces in a pound so to go from pounds to ounces you multiply by 16. 3.25 x 16 = 52",
+        "C": "I think you have used 12 which is how we convert feet to inches.. There are 16 ounces in a pound!",
+        "D": "I think you have multiplied by 14 but there are 16 ounces in a pound..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158185,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c5c49a1f-b06b-4f4a-ae90-b6de081ce37f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "2 and 3/8 as a decimal is 2.375 and there are 16 ounces in a pound so to go from pounds to ounces you multiply by 16. 2.375 x 16 = 38",
+        "B": "I think you have used 12 which is how we convert feet to inches.. There are 16 ounces in a pound!",
+        "C": "I think you have multiplied by 14 but there are 16 ounces in a pound...",
+        "D": "I think you have multiplied by 100 but there are 16 ounces in a pound..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158019,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e3c414a2-ec2d-463e-a58a-fef97fb40dcc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have used 14 ounces = 1 pound but there are 16 ounces in a pound...",
+        "B": "I think you have multiplied by 100 but there are 16 ounces in a pound...",
+        "C": "You need to convert the 2 pounds into ounces so multiply the 2 by 16, not the 6...",
+        "D": "There are 16 ounces in a pound so in 2 pounds there are 32 ounces. 32 - 6 = 26 so there will be 26 ounces remaining in the bag of flour!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158186,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/43055fa1-4d71-41f5-8d26-7adf92fad6ed.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You need to convert the 3 pounds into ounces so multiply the 3 by 16, not the 4...",
+        "B": "There are 16 ounces in a pound so in 3 pounds there are 48 ounces. 48 - 4 = 44 so there will be 44 ounces remaining in the bag of flour!",
+        "C": "I think you have used 14 ounces = 1 pound but there are 16 ounces in a pound...",
+        "D": "I think you have multiplied by 100 but there are 16 ounces in a pound..."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

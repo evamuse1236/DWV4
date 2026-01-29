@@ -1,0 +1,147 @@
+{
+  "shortcode": "eeke",
+  "name": "Tape Diagram Ratio Problems",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 26,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Given one side of a ratio, find the other side, supported by a tape diagram (US)",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given the total represented by a ratio, compare the sides, supported by a tape diagram (US)",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166143,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4452852f-6c94-416b-88e5-47967c71419e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have worked it out for buying 24 dog treats, but it was 24 cat treats.",
+        "B": "It looks like you have given the total number of treats but the question asks for the number of dog treats.",
+        "C": "I think you have assumed that each part of the tape diagram represents 24 treats but 24 is the number of cat treats. How many parts of the tape diagram are represented by the 24 cat treats? Can you use that to find what 1 part represents?",
+        "D": "Cats have 2 parts of the tape diagram which represents 24 treats, so 1 part represents 24 ÷ 2 = 12 treats. Dogs have 3 parts of the tape diagram, so 3 × 12 = 36 treats for dogs."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166370,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dcabe5ab-e5d7-45b8-9309-bfc1b602275c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Birds have 2 parts of the tape diagram which represents 8 pets, so 1 part represents 8 ÷ 2 = 4 pets. Dogs have 4 parts of the tape diagram, so 4 × 4 = 16 dogs.",
+        "B": "I think you have worked it out for the class having 8 dogs, but it was 8 birds that they had.",
+        "C": "It looks like you have given the total number of pets but the question asks for the number of pets that are dogs.",
+        "D": "I think you have assumed that each part of the tape diagram represents 8 pets but 8 is the number of birds. How many parts of the tape diagram are represented by the 8 birds? Can you use that to find what 1 part represents?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166144,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a722c1d4-2ed1-458a-843d-40ef3b64fad8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have done worked out 5 ÷ 8, but the 5 parts represent the gas and the 8 represents the total number of parts in the tape diagram. We know that oil has 1 part and that 0.8 gallons of oil is used, so 1 part = 0.8 gallons. If 1 part = 0.8 gallons, how many gallons in 5 parts?",
+        "B": "Oil has 1 part of the tape diagram which represents 0.8 gallons. Gas has 5 parts of the tape diagram, so 5 × 0.8 = 4 so there are 4 gallons of gas in the mixture.",
+        "C": "This is the total gallons in the mixture of gas and oil, the question asks for just the gallons of gas in the mixture.",
+        "D": "I think you have used the '2-cycle' in the question but that is telling us about the type of engine. We are told that 0.8 gallons of oil is used and we can see that oil has 1 part of the tape diagram and gas has 5 parts. If 1 part = 0.8 gallons, how many gallons in 5 parts?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166371,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/75ac0e5e-3d6f-42eb-ab4d-f9bd05e83fb7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the total gallons in the mixture of oil and vinegar, the question asks for just the gallons of oil in the mixture.",
+        "B": "I think you have worked it out for 0.75 gallons of oil, but it was 0.75 gallons of vinegar.",
+        "C": "I think you have worked out 5 ÷ 0.25. If 1 part = 0.25 gallons, 5 parts will be 5 times bigger. Which operation should you use?",
+        "D": "Vinegar has 3 parts of the tape diagram which represents 0.75 gallons, so 1 part represents 0.75 ÷ 3 = 0.25 gallons. Oil has 5 parts of the tape diagram, so 5 × 0.25 = 1.25, so there are 1.25 gallons of oil in the mixture."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166145,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3cafc516-1ed3-4679-85f4-29f50ff54e0a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have assumed that 63 is the total number of pies, but 63 is just the number of grape pies.",
+        "B": "It looks like you have assumed that 63 is the total number of pies, but 63 is just the number of grape pies. If we know that 7 parts = 63 pies, how can we work out the number of pies in 1 part and therefore, the number of apple pies?",
+        "C": "You have worked out that 1 part of the tape diagram represents 9 pies, but how many parts of the diagram do the apple pies have?",
+        "D": "Grape pies have 7 parts of the tape diagram which represents 63 pies, so 1 part represents 63 ÷ 7 = 9 pies. Apple pies have 2 parts of the tape diagram, so 2 × 9 = 18 apple pies!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166372,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f2d7c0e8-af9e-4a78-a634-97887438bbeb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have worked out that 1 part of the tape diagram represents 13 juices, but how many parts of the diagram does the apple juice have?",
+        "B": "Grape juice has 5 parts of the tape diagram which represents 65 juices, so 1 part represents 65 ÷ 5 = 13 juices. Apple juice has 6 parts of the tape diagram, so 6 × 13 = 78 apple juices!",
+        "C": "I think you have worked it out for 65 apple juices, but it was 65 grape juices.",
+        "D": "This is the total number of juices, the question asks for just the number of apple juices."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166146,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7c7f6847-4d00-4b55-893c-78c649cbdc05.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have divided by 7 as there are 7 parts in total, but how many parts represent the 'Total Money Earned'?",
+        "B": "He earned $252 which represents 6 parts of the tape diagram. 252 ÷ 6 = 42, so 1 part = $42. The total saved is just 1 part of the tape diagram, so he saved $42.",
+        "C": "This is the amount that he earned but did not save. The question asks for the amount he saved.",
+        "D": "I think you have divided by 7 as there are 7 parts in total, but how many parts represent the 'Total Money Earned'? Remember, the question asks for how much he saved, not how much he did not save."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166373,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/586ea52d-9864-4bcc-85c6-96b33618c2d5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have divided by 10 as there are 10 parts in total, but how many parts represent the 'Total Money Earned'? Remember, the question asks for how much he saved, not how much he did not save.",
+        "B": "I think you have divided by 10 as there are 10 parts in total, but how many parts represent the 'Total Money Earned'?",
+        "C": "She earned $406 which represents 7 parts of the tape diagram. 406 ÷ 7 = 58, so 1 part = $58. The total saved is 3 parts of the tape diagram, 3 × 58 = 174, so she saved $174.",
+        "D": "This is the amount that he earned but did not save. The question asks for the amount he saved."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166147,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9f7ebc0d-c1bf-40b2-9920-414d713569a2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is how many cars Mike sold. We are looking for how many more cars Kelly sold than Mike...",
+        "B": "You have correctly worked out how many cars each part of the tape diagram represents... Can you use this to work out how many more cars Kelly sold than Mike!?",
+        "C": "They sold 88 cars which is represented by 8 parts on the tape diagram. Therefore, 1 part = 11 cars because 88 ÷ 11 = 8. We are looking for how many more cars Kelly sold, which is 2 parts so 2 x 11 = 22 cars!",
+        "D": "This is how many cars Kelly sold. We are looking for how many MORE cars Kelly sold than Mike..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166374,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9c113cbe-1df9-45f6-ad22-3a23b7e658c6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Anna and Jon read 108 books which is represented by 12 parts on the tape diagram. Therefore, 1 part = 9 books because 108 ÷ 12 = 9. We are looking for how many more books Anna read, which is 2 parts so 2 x 9 = 18 books!",
+        "B": "This is how many books Jon read. We are looking for how many more books Anna read than Jon...",
+        "C": "This is how many books Anna read. We are looking for how many MORE books Anna read than Jon...",
+        "D": "You have correctly worked out how many books each part of the tape diagram represents... Can you use this to work out how many more books Anna read than Jon!?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

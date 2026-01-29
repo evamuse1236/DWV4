@@ -1,0 +1,159 @@
+{
+  "shortcode": "vtz",
+  "name": "Division with decimals",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 84,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Multiply two decimals together with the same number of decimal places",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Divide a decimal by an integer",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Divide an integer by a decimal",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Divide two decimals with the same number of decimal places",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 103733,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7b5d25e1-b4c3-4637-b65d-3d8c762e7bd7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have subtracted rather than divided. You can use 5 divided by 2 to help you",
+        "B": "Almost, but just check your place value",
+        "C": "I think you have multiplied rather than divided.",
+        "D": "Half of 5 is 2.5, but we have half of 0.5 so it needs to be ten times smaller. The answer is 0.25"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103741,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/293c2944-c617-4224-a431-e7d144f4dcb4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have subtracted 0.1 from 0.4. We are dividing 0.1 by 4.",
+        "B": "We know that 1 divided by 4 is a quarter or 0.25. We have started with a number that is ten times smaller, so the answer is also ten times smaller.",
+        "C": "I think you have multiplied rather than divided.",
+        "D": "Almost, this is 1 divided by 4, but we have 0.1 divided by 4. What effect will this have on the answer?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103734,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/04352ac1-113b-4ebd-91c9-3598021b961c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Think of this as a fraction, 2/0.5. We multiply the top and bottom by 10 to get 20/5. This means 20 divided by 5 which is 4",
+        "B": "I think you have combined the digits rather than dividing. Writing this as a fraction might help you",
+        "C": "I think you have found half of 2, rather than how many halves are in 2.",
+        "D": "I think you did the division backwards, working out 0.5 divided by 2."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103742,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/79a1f089-3726-40ba-9711-4e97f1ba8d0f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have multiplied rather than divided. Try writing the question as a fraction to help you.",
+        "B": "I think you have combined the digits rather than dividing. Writing this as a fraction might help you",
+        "C": "Think of this as a fraction, 4/0.1. We multiply the top and bottom by 10 to get 40/1. This means 40 divided by 1 which is 40",
+        "D": "Not quite, 4 divided by 1 is 4, but we have 4 divided by 0.1. Try writing it as a fraction to help you."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103735,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/13ee0f1f-064e-4c59-ba11-cb7cabd305c7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have multiplied rather than divided. Writing this as a fraction might help",
+        "B": "Think of this as a fraction, 0.2/0.4. We multiply the top and bottom by 10 to get 2/4. This is the same as 1/2 = 0.5",
+        "C": "I think you have tried to multiply. Writing this as a fraction might help.",
+        "D": "I think you did 0.4 divided by 0.2. Try writing this as a fraction to help you"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103743,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8bdae6cf-52e0-4a51-859e-3b6c2d23937f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you subtracted rather than divided. Writing this as a fraction will help.",
+        "B": "I think you did 0.8 divided by 0.4. Try writing this as a fraction to help you",
+        "C": "I think you have multiplied rather than divided.",
+        "D": "Think of this as a fraction, 0.4/0.8. We multiply the top and bottom by 10 to get 4/8. This is the same as 1/2 = 0.5"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103737,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2a5dc81e-b507-4fcc-9990-ae9be0906199.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "0.3/★ = 1.2. Multiply both sides by ★ to give 0.3 = 1.2 × ★. Now, to get ★ on its own divide by 1.2. ★ = 0.3/1.2. Multiplying numerator and denominator by 10 and then simplifying gives 3/12 = 1/4 = 0.25",
+        "B": "I think you might have chosen the 0.4 because 0.3 x 4 = 1.2, but this is a division. Try rearranging to get the star on its own",
+        "C": "I think you might have chosen 4 because 0.3 x 4 = 1.2, but this is a division. Try rearranging to get the star on its own",
+        "D": "I think you have found the missing number if this was an addition, but it is a division. You will need to do some rearranging to get the value of the star on its own."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 122114,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/130b771b-07c8-4c24-a7a9-fb1d6758cc89.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might have chosen the 0.5 because 0.3 x 5 = 1.5, but this is a division. Try rearranging to get the star on its own",
+        "B": "I think you have multiplied these numbers to find the star. However, this is not how we get the star on it's own. Try writing it as a fraction and then rearranging.",
+        "C": "I think you have added these numbers rather than rearranging to find the star.",
+        "D": "0.3/★ = 1.5. Multiply both sides by ★ to give 0.3 = 1.5 × ★. Now, to get ★ on its own divide by 1.5. ★ = 0.3/1.5. Multiplying numerator and denominator by 10 and then simplifying gives 3/15 = 1/5 = 0.2"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103738,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dde33a80-a170-4bd4-8179-31fc4054d595.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "★/0.3 = 1.2. Multiply both sides by 0.3 give ★ = 1.2 × 0.3, so ★ = 0.36",
+        "B": "I think you divided 0.3 by 1.2. To rearrange and get the star on it's own we need to 'undo' the division. What is the opposite of dividing?",
+        "C": "I think you did 1.2 divided by 0.3. When we are rearranging we need to do the opposite operation",
+        "D": "I think you subtracted to find the star. To 'undo' the divide be 0.3 we need to use the opposite of divide. What is this?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 122115,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6fc1893d-81ff-4072-995b-ce4b8a531be2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have tried to divide 1.5 by 0.3 to get the answer. We need to 'undo' the divide by 0.3. What is the opposite of dividing?",
+        "B": "Almost. I think you have tried to multiply to find the star. Just be careful of your place value",
+        "C": "I think you added to find the star. To 'undo' the divide be 0.3 we need to use the opposite of divide. What is this?",
+        "D": "I think you divided 0.3 by 1.5. To get the star on its own we need to 'undo' the divide by 0.3. What is the opposite of divide?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

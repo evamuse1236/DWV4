@@ -1,0 +1,153 @@
+{
+  "shortcode": "eja1",
+  "name": "Written multiplicatoin",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 26,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Interpret the value of digits in multiplication calculations using long multiplication",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiply 3 digit integers by 2 digit integers using long multiplication",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiply 4 or more digit integers by 2 digit integers using long multiplication",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 95228,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6b931a4c-0ea5-422b-b62e-4a51b677e8a2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The first step, when multiplying by the 2, is to make J 0, as the 2 represents 2 tens (20). That means I will be found by doing 2 x 7. We write down the units and carry the tens, so I will be 4.",
+        "B": "I think you forgot that the J will be a 0, so did 2 x 6 plus the carried 1. If J is 0, what do we multiply to get I?",
+        "C": "I think you may have done 2 x 6 to find this number, but remember the J is a 0 because we are multiplying by 20 not 2. If J is 0, what do we multiply to get I?",
+        "D": "I think you have given me the value for J. Think about what you would multiply together to give I if the J is the 0."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 95245,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/12fb4b4d-1b83-4817-a879-fc56349b2744.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think that you got this by doing 2 x 9 plus the carried 1. Remember that the J is the 0, so I is found by doing 2 x 7. What do we multiply to get H?",
+        "B": "I think that you got this by doing 2 x 9. Remember that the J is the 0, so I is found by doing 2 x 7. What do we multiply to get H? Remember to include anything that is carried.",
+        "C": "I think you've given me the value for I. Remember that the J is the 0, so I is found by doing 2 x 7. What do we multiply to get H? Remember to include anything that is carried.",
+        "D": "The first step, when multiplying by the 2, is to make J 0, as this 2 represents 2 tens (20). Therefore, I is 2 x 7 which is 14, so we write the 4 and carry the 10. H is 2 x 6 which is 12, plus the carried 1 which is 13. We write the units and carry the tens, so H is 3."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 95229,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a90dcc78-232f-4ec5-a90f-056ccb049070.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The 8 in 3847 stands for 800 and the 2 in 28 stands for 20. Multiplying 800 by 20 you get 16000 as 800 x 20 = 8 x 2 x 100 x 10 = 16000.",
+        "B": "Not quite. Recheck the place value of the circled digits. What does the 8 stand for in the number 3847? What does the 2 stand for in 28? What would you get if you multiplied these numbers together?",
+        "C": "Not quite. Recheck the place value of the circled digits. What does the 8 stand for in the number 3847? What does the 2 stand for in 28? What would you get if you multiplied these numbers together?",
+        "D": "Not quite. Recheck the place value of the circled digits. What does the 8 stand for in the number 3847? What does the 2 stand for in 28? What would you get if you multiplied these numbers together?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 95246,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bd8ade1e-5c4a-4e71-89b7-f0aaa8e13bba.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Recheck the place value of the circled digits. What does the 3 stand for in the number 3847? What does the 7 stand for in 78? What would you get if you multiplied these numbers together?",
+        "B": "Not quite. Recheck the place value of the circled digits. What does the 3 stand for in the number 3847? What does the 7 stand for in 78? What would you get if you multiplied these numbers together?",
+        "C": "Not quite. Recheck the place value of the circled digits. What does the 3 stand for in the number 3847? What does the 7 stand for in 78? What would you get if you multiplied these numbers together?",
+        "D": "The 3 in 3847 stands for 3000 and the 7 in 78 stands for 70. Multiplying 3000 by 70 you get 210,000 as 3000 x 70 = 3 x 7 x 1000 x 10 = 210,000."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 102202,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a527b33e-f275-4b16-bda3-a0023f87adf7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have thought this because 3 × 8 is 24. Before we multiply by the 8 we multiply by the 1 and this goes in the top row.",
+        "B": "I think you may have tried to add the digits together but this question is a multiplication not an addition.",
+        "C": "I think you may have thought this because 30 × 80 is 2400 but in long multiplication we do not just multiply the two numbers in the same column and we do not partition the numbers to take account of their place value. The first step is to multiply every digit in the number 437 by the 1.",
+        "D": "Each square of the first row contains one of each of the digits from the answer to 437 × 1. Because the answer to this is 437 and ★ is the second digit from the right, the answer is 3."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 102212,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d8f42c71-69d3-480a-a98f-1f1b1546370f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "So close! Just be careful with your place value. Remember you can't put two digits in a single column",
+        "B": "I think you may have multiplied the 6 by 7, carried over the 4 tens and then tried to add the 2, 2 and 4 together. But remember we are multiplying, so once you have carried over the 4 tens you should multiply the 6 by the 2 and then add the 4 on.",
+        "C": "Each square of the first row contains the answer to the calculation 127 × 6. To work this out, start with 7 × 6 = 42. Write 2 below the 6, carry the 4 to the tens column and then calculate 2 × 6 = 12. Adding the carried 4 gives 16, so ★ = 6 and the 1 is carried to the hundreds column.",
+        "D": "So close! You just need to remember to add on then number that was carried over from the calculation 6 x 7."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129054,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7611a951-7694-48b6-b67b-ac74d6a44bdd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. In our first line of working we need to multiply each digit of 276 by 4. Start on the right hand side with 4 x 6, then work along to 4 x 7 and 4 x 2. Remember to carry into the next column if needed!",
+        "B": "I think you have tried to work out the previous step of 7 x 4 which gives us 21 and the 2 carries over into the hundreds column. But we need to check any previous steps and continue with the calculation. Write out your workings in full and see if you can spot what else we need to include here.",
+        "C": "4 x 2 does give us 8, but we need to check whether any of the previous calculations (4 x 6 or 4 x 7) would have meant any numbers were carried over into this column. Start from the right and write your full method down.",
+        "D": "We start by working out 4 x 6. This gives us 24 so the 4 stays in the ones column and the 2 moves into the tens. Then we work out 4 x 7 which gives us 28. We need to add the 2 which was carried over from before so we now have 30. The 0 stays in the tens column and we carry the 3 into the hundreds column. Finally we work out 4 x 2 which gives us 8. We need to add the 3 which was carried over. This now gives us 11. So we have 1 in our hundreds column and 1 in our thousands column."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129194,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ff8d7012-8b70-4cc2-a6a5-62ea55f370b1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "6 x 3 does give us 18, which would lead to 8 in the hundreds column and 1 in the thousands, but we need to check whether any of the previous calculations (6 x 8 or 6 x 1) would have meant any numbers were carried over into this column. Start from the right and write your full method down.",
+        "B": "We start by working out 6 x 1 which gives us 6 so we put the 6 in the ones column and nothing carries over. We can now work out 6 x 8 which gives us 48. The 8 stays in the tens column and we carry the 4 over to the hundreds column. Finally we work out 6 x 3. This gives us 18, but we need to add on the 4 that we carried over. We get 22 so 2 stays in the hundreds column and 2 moves into the thousands.",
+        "C": "I think you might have multiplied 3 x 3 here. Remember we need to start from the right hand side. Start by working out 6 x 1, working from right to left and write your full method down.",
+        "D": "I think you may have made a mistake with carrying or you might have added our 2 numbers together here. Start by working out 6 x 1, then 6 x 8 and 6 x 3."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 155767,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/70c0173b-beac-4890-a320-be76cdde6212.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have done 4 x 3. However to show we are doing 40 x 3 what do we first need to replace the square with?",
+        "B": "I think you may have done 4 x 3. However to show we are doing 40 x 3 what do we first need to replace the square with?",
+        "C": "I think you may have done 5 x 3 but for this row we are multiplying 123 by 4. However, the 4 is actually 40 so what do we replace the square with to show this?",
+        "D": "To show the 4 represents 40, we place a 0 where the square is and the begin the multiplying in the next column."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 155785,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4dc48198-b238-4847-bea6-068dab7a2e9f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This row of numbers comes from multiplying 146 by 2. The first calculation we need to do in this row is 2 x 6, but because the value of the 2 is actually 20, we need to replace the star with 0 before doing 2 x 6.",
+        "B": "I think you may have done 2 x 6. However to show we are doing 20 x 6 what do we first need to replace the square with?",
+        "C": "I think you may have done 2 x 6. However to show we are doing 20 x 6 what do we first need to replace the square with?",
+        "D": "I think you may have done 3 x 6. However, for this row we will multiplying 146 by the 2. Because the value of the 2 is actually 20, what do we first need to replace the square with?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

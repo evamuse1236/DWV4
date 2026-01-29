@@ -1,0 +1,159 @@
+{
+  "shortcode": "vu8",
+  "name": "Which operation?",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 135,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify that a problem needs to be solved using addition",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify that a problem needs to be solved using subtraction",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify that a problem needs to be solved using multiplication",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify that a problem needs to be solved using division",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 136994,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/89d80502-2a38-4e24-8393-e2c73264b921.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. We use division when we want to share equally or find out how many of one thing is in another. In this question we want to know how much the plant has grown, the difference in the plants height. Which of these calculations finds difference?",
+        "B": "The height of the plant changed from 7cm to 35cm. Finding the difference between these heights will tell us how much the plant has grown. To find the difference we subtract.",
+        "C": "Not quite. This would find the height of the plant if it grew by 35cm. We want the calculation that will tell us how much did the plant grew if it now has a height of 35cm?",
+        "D": "Not quite. Multiplication will not find the change in the plants height. It will tell us how tall the plant would be if it got 35 times taller. Which calculation will tell us how much the plant has grown, the difference in its height?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 137004,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4be812c6-9b02-4d5b-85a8-28154ab3ce13.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. This would find the height of the plant if it grew by 36cm. We want the calculation that will tell us how much did the plant grew if it now has a height of 36cm?",
+        "B": "Not quite. Multiplication will not find the change in the plants height. It will tell us how tall the plant would be if it got 36 times taller. Which calculation will tell us how much the plant has grown, the difference in its height?",
+        "C": "Not quite. We use division when we want to share equally or find out how many of one thing is in another. In this question we want to know how much the plant has grown, the difference in the plants height. Which of these calculations find difference?",
+        "D": "The height of the plant changed from 9cm to 36cm. Finding the difference between these heights will tell us how much the plant has grown. To find the difference we subtract."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 136995,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f7fcbb3b-7c81-4e8c-9473-0e032a4a228c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. We use division when we want to share equally or find out how many of one thing is in another. In this question we want to know how much the plant has grown in total. Which calculation will work out the total change in height if it grows 7cm every week for 35 weeks?",
+        "B": "Not quite. This calculation will work out the change in height if a plant grew from 7cm to 35cm. In this question we want to know how much the plant has grown in total. Which calculation will work out the total change in height if it grows 7cm every week for 35 weeks?",
+        "C": "Not quite. This would find the height of the plant if it grew by 35cm. We are told the plant grows 7cm every week for 35 weeks.",
+        "D": "The plant grows 7cm every week for 35 weeks. After week 1 the plant has grown 7cm, after week 2 the plant has grown 14 cm ( 2 ✕ 7), after week 3 the plant has grown 21 cm (3 ✕ 7). This will continue until week 35 where the plant would have grown by 245 cm (35 ✕ 7)"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 137005,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a7eae95b-a7b6-4910-a95e-7aa1f1881ad8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. This would find the height of the plant if it grew by 36cm. We are told the plant grows 9cm every week for 36 weeks.",
+        "B": "The plant grows 9cm every week for 36 weeks. After week 1 the plant has grown 9cm, after week 2 the plant has grown 18 cm ( 2 ✕ 9), after week 3 the plant has grown 27 cm (3 ✕ 9). This will continue until week 36 where the plant would have grown by 324 cm (36 ✕ 9)",
+        "C": "Not quite. We use division when we want to share equally or find out how many of one thing is in another. In this question we want to know how much the plant has grown in total. Which calculation will work out the total change in height if it grows 9cm every week for 36 weeks?",
+        "D": "Not quite. This calculation will work out the change in height if a plant grew from 7cm to 36cm. In this question we want to know how much the plant has grown in total. Which calculation will work out the total change in height if it grows 9cm every week for 36 weeks?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 136996,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c07c365d-3284-4d97-b338-64aa12e8e856.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "After 7 weeks the plant is 35cm tall and we are told the plant grows by the same amount each week. We therefore we want to share the 35cm equally between the 7 weeks. Division is the operation we use when we want to share out equally.",
+        "B": "Not quite. This calculation will work out the change in height if a plant grew from 7cm to 35cm. In this question we want to know how much the plant grows each week if it grows 35cm in 7 weeks. Remember the plant grows by the same amount each week. Which calculation can we use to share the 35cm between the 7 weeks?",
+        "C": "Not quite. This would find the height of the plant if it grew by 35cm. We are told the plant grows 35cm in 7 weeks. Remember the plant grows by the same amount each week. Which calculation can we use to share the 35cm between the 7 weeks?",
+        "D": "Not quite. This would find the change in height of the plant if it grew by 7cm every week for 35 weeks. We are told the plant grows 35cm in 7 weeks. Remember the plant grows by the same amount each week. Which calculation can we use to share the 35cm between the 7 weeks?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 137006,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/22923d24-c988-4b70-995f-d9e5224705f5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. This would find the height of the plant if it grew by 36cm. We are told the plant grows to 9 times its original height. Which calculation will help you find the number you would times by 9 to get 36?",
+        "B": "Not quite. This would find the change in height of the plant if it grew by 9cm every week for 36 weeks. We are told the plant grows to 9 times its original height. Which calculation will help you find the number you would times by 9 to get 36?",
+        "C": "If the plant is 36cm tall and it has grown to 9 times its original height, then there must be some number you can multiply by 9 to get 36. To answer this question we can use the inverse of multiplication, division. Therefore we would calculate 36 ÷ 9 to work out the plants original height.",
+        "D": "Not quite. This calculation will work out the change in height if a plant grew from 9cm to 36cm. We are told the plant grows to 9 times its original height. Which calculation will help you find the number you would times by 9 to get 36?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 136997,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/be793b75-1d6b-49a0-8d8e-1aea8c51e882.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. We use division when we want to share equally or find out how many of one thing is in another. In this question we want to know how tall the plant is after it grows 7cm. Which calculation will help us find the total height of the plant?",
+        "B": "Not quite. This calculation will work out the change in height if a plant grew from 7cm to 35cm. In this question we want to know how tall the plant is after it grows 7cm. Which calculation will help us find the total height of the plant?",
+        "C": "The plant was 35cm and grew 7cm more. Calculating 35 + 7 will tell us how tall the plant is now.",
+        "D": "Not quite. This would find the change in height of the plant if it grew by 7cm every week for 35 weeks. In this question we want to know how tall the plant is after it grows 7cm. Which calculation will help us find the total height of the plant?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 137007,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/58c06dc2-9128-4e2e-86c2-8fc77befe17f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The plant was 9cm and grew 36cm more. Calculating 9 + 36 will tell us how tall the plant is now.",
+        "B": "Not quite. This would find the change in height of the plant if it grew by 36cm every week for 9 weeks. In this question we want to know how tall the plant is after it grows by 36cm once. Which calculation will help us find the total height of the plant?",
+        "C": "Not quite. We use division when we want to share equally or find out how many of one thing is in another. In this question we want to know how tall the plant is after it grows 36cm. Which calculation will help us find the total height of the plant?",
+        "D": "Not quite. This calculation will work out the change in height if a plant grew from 9cm to 36cm. In this question we want to know how tall the plant is after it grows by 36cm. Which calculation will help us find the total height of the plant?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 136998,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1efb6920-852d-4c99-89e3-1e7409b23b04.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If the plant is 35cm tall and grew to 7 times its original height, then there must be some number you can multiply by 7 to get 35. To answer this question we can use the inverse of multiplication, division. Therefore we would calculate 35 ÷ 7 to work out the plants original height.",
+        "B": "Not quite. This calculation will work out the change in height if a plant grew from 7cm to 35cm. We are told the plant grows to 7 times its original height. Which calculation will help you find the number you would times by 7 to get 35?",
+        "C": "Not quite. This would find the height of the plant if it grew by 35cm. We are told the plant grows to 7 times its original height. Which calculation will help you find the number you would times by 7 to get 35?",
+        "D": "Not quite. This would find the change in height of the plant if it grew by 7cm every week for 35 weeks. We are told the plant grows to 7 times its original height. Which calculation will help you find the number you would times by 7 to get 35?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 137008,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/54b53e25-f4b4-428c-8be1-78182ab7923c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. This would find the height of the plant if it grew by 36cm. We are told the plant grows 36cm in 9 weeks. Remember the plant grows by the same amount each week. Which calculation can we use to share the 36cm between the 9 weeks?",
+        "B": "Not quite. This would find the change in height of the plant if it grew by 9cm every week for 36 weeks. We are told the plant grows 36cm in 9 weeks. Remember the plant grows by the same amount each week. Which calculation can we use to share the 36cm between the 9 weeks?",
+        "C": "After 9 weeks the plant is 36cm tall and we are told the plant grows by the same amount each week. We therefore we want to share the 36cm equally between the 9 weeks. Division is the operation we use when we want to share out equally.",
+        "D": "Not quite. This calculation will work out the change in height if a plant grew from 9cm to 36cm. In this question we want to know how much the plant grows each week if it grows 36cm in 9 weeks. Remember the plant grows by the same amount each week. Which calculation can we use to share the 36cm between the 9 weeks?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

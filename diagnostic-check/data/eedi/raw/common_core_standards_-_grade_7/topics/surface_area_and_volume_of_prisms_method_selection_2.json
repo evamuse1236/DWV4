@@ -1,0 +1,165 @@
+{
+  "shortcode": "vw6",
+  "name": "Surface area and volume of prisms method selection 2",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 211,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Convert between cm³ and m³",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Convert between m³ and cm³",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the surface area of a triangular based prism where the dimensions are given in the same units",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the volume of a triangular-based prism when the dimensions are given in the same units",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given the volume of a cuboid, work out missing information",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 77182,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/184c14ed-1ae4-4ee1-89e4-dd5c77cd3825.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! 4 x 3 x ? = 120. So ? = 120 ÷ 4 ÷ 3. You have successfully divided 120 by 4, but you also need to divide by 3. You'll be ready next time! :)",
+        "B": "Not quite! 4 x 3 x ? = 120. So ? = 120 ÷ 3 ÷ 4. You have successfully divided 120 by 3, but you also need to divide by 4. You'll be ready next time! :)",
+        "C": "Volume = length x width x height. 3 x 4 x ? = 120. 3 x 4 = 12. 120 ÷ 12 = 10cm. So the missing side is 10cm.",
+        "D": "Not quite! 4 x 3 x ? = 120. So ? = 120 ÷ (4 x 3) = 120 ÷ 12. You have successfully multiplied 4 and 3 to get 12. However, you have not divided the volume by this. You'll be ready next time! :)"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79012,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6608aad3-41be-4118-9aa6-f1fdba351316.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Volume = length x width x height. 5 x 4 x ? = 100. 5 x 4 = 20. 100 ÷ 20 = 5 cm. So the missing side is 5 cm.",
+        "B": "Not quite! 5 x 4 x ? = 100. So ? = 100 ÷ 5 ÷ 4. You have successfully divided 100 by 5, but you also need to divide by 4. You'll be ready next time! :)",
+        "C": "Not quite! 5 x 4 x ? = 100. So ? = 100 ÷ 5 ÷ 4. You have successfully divided 100 by 4, but you also need to divide by 5. You'll be ready next time! :)",
+        "D": "Volume = length x width x height, If the missing length was 100 cm, the volume would be 2000cm³! What can you do to find a number that multiplies by 5x4 to get 100?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 77183,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/48a5f378-47ea-47ae-b57f-21745d3caf03.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you are converting from m to cm but you need to convert from m³ to cm³...",
+        "B": "I think you have used the conversion 10cm = 1m but this is incorrect. There are 100 cm in a m.",
+        "C": "How many cm are there in a m? You need to cube this to find out how many cm³ are in a m³. If you are struggling with this, I would recommend revising cubic conversions!",
+        "D": "There are 100 cm in a metre, so there are 100³ =1,000,000 cm³ in a m³. We can multiply 0.45 by 1,000,000 to get 450,000."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79013,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ae3f76cf-e0f9-4524-8d32-3cf8775135c3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you are converting from m to cm but you need to convert from m³ to cm³...",
+        "B": "I think you have accidentally converted from m² to cm². How many cm are there in a m? You need to cube this to find out how many cm³ are in a m³...",
+        "C": "There are 100 cm in a metre, so 100³ cm³ in a m³- that's 1,000,000 cm³! Multiplying 0.035 by 1,000,000 gives 35,000.",
+        "D": "Double check your multiplying... did you mean to multiply by 10,000,000? Remember there are 100³ cm³ in 1m³."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 77184,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7fa5ffac-94db-4655-97bc-5c35eb484d56.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. How many cm are in a m? So how many cm³ are in a m³? We need to divide by this value to convert from cm³ to m³...",
+        "B": "There are 100 cm in a metre, so there are 100³ =1,000,000 cm³ in a m³. We can divide 2,500,000 by 1,000,000 to get 2.5.",
+        "C": "Not quite. How many cm are in a m? So how many cm³ are in a m³? We need to divide by this value to convert from cm³ to m³...",
+        "D": "I think you are converting from cm to m rather than cm³ in a m³..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79014,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f73f0688-db99-4dcb-9fe9-dfb6f9e50f19.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There are 100 cm in a metre, so 100³ cm³ in a m³. Dividing 450,000 by 100³ = 1 000 000 gives 0.45.",
+        "B": "Did you mean to divide by 100,000? Remember there are 100³ cm³ in 1m³.",
+        "C": "I think you have converted from cm² to m² instead of cm³ to m³. Remember there are 100³ cm³ in 1m³.",
+        "D": "There are 100 cm in a m so how many cm³ are in a m³? We need to divide by this value to convert from cm³ to m³..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 77186,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7b1069c6-d232-4017-b6b8-8a13ee60f7b5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember, not all the faces of the shape are visible, have you calculated the area of the sides that you can't see?",
+        "B": "Read the question carefully, we are looking for the surface area, not the volume...",
+        "C": "Almost! How do you find the area of a triangle? Make sure you do base x height then divide it by 2...",
+        "D": "We have two triangular faces and 3 rectangular faces, so the surface area is (4 ×2 / 2) × 2 + 8 × 10 + 2 × 10 + 4 × 10 = 148."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79016,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e66440d6-76b8-4362-8908-27553fb36dd2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The triangular faces have area 3 × 4/2 = 6. We have two of these and 3 rectangular faces, so the surface area is 6 + 6 + 5 × 8 + 4 × 8 + 3 × 8 = 6 + 6 + 40 + 32 + 24 = 108.",
+        "B": "Almost! How do you find the area of a triangle? Make sure you do base x height then divide it by 2...",
+        "C": "Read the question carefully, we are looking for the surface area, not the volume...",
+        "D": "Not all the faces of the shape are visible on the picture. Have you calculated the area of the sides that you can't see?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 77187,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dde2bacc-61f8-4819-9523-4531ef97f766.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This shape has the largest volume, which is 3 × 8/2 × 14 = 168. The cube has volume 125 and the cuboid has volume 160.",
+        "B": "I think you may have picked the shape with the smallest volume. The question is asking for the shape with the largest volume...",
+        "C": "To find the volume of a cuboid: length x height x width. I think you may have multiplied by the height twice.",
+        "D": "A cube has sides with all the same length. To find the volume of a cube or a cuboid: length x height x width. To find the volume of the triangular prism, work out the area of the triangular face & multiply it by the length of the shape. With these helpful hints, can you work out which has the largest volume of the 3 shapes?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79017,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a68b0c4c-2132-47e0-ba4e-fb7dff0a644a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find the volume of the triangular prism: work out the area of the triangular face & multiply it by the length of the shape. To find the area of the triangular face multiply the base by the perpendicular height then divide your answer by 2.",
+        "B": "This cube has volume 6³ = 216, whereas A has volume 192 and C has volume 120.",
+        "C": "To find the volume of a cuboid: length x height x width. I think you may have multiplied by the height twice.",
+        "D": "To find the volume of a cube or a cuboid: length x height x width. To find the volume of the triangular prism, work out the area of the triangular face & multiply it by the length of the shape. With these helpful hints, can you work out which has the largest volume of the 3 shapes?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

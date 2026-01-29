@@ -1,0 +1,141 @@
+{
+  "shortcode": "bihc",
+  "name": "Applying perimeter formulas for rectangles in the real world",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 73,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Area and perimeter of rectangles in the real world",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 157992,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/166fdc53-6e04-4ce6-be6a-bf3afd4cd3e3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find the perimeter we add the lengths of the all the sides together... 68 + 105 + 68 + 105 = 346 m therefore only Tom is correct.",
+        "B": "Katie has calculated the area of the pitch instead of the perimeter. To find the perimeter add the lengths of the all the sides together...",
+        "C": "You can only have one value for the perimeter... To find the perimeter add the lengths of the all the sides together",
+        "D": "Remember to find the perimeter add the lengths of the all the sides together!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158159,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f280c2a7-a1c8-4a71-ad13-8d38e24c868d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom has calculated the area of the pitch instead of the perimeter. To find the perimeter add the lengths of the all the sides together...",
+        "B": "To find the perimeter we add the lengths of the all the sides together... 90 + 120 + 90 + 120 = 420 m therefore only Katie is correct.",
+        "C": "You can only have one value for the perimeter... To find the perimeter add the lengths of the all the sides together",
+        "D": "Remember to find the perimeter add the lengths of the all the sides together!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 157993,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/afc30827-4185-4626-9839-945208e1d090.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have forgotten there are 4 sides of the rectangle, not just two...",
+        "B": "I think you have missed off one side of the rectangle... 10 + 14 + 10 + 14 = ?",
+        "C": "To find the perimeter add the lengths of the all the sides together... 10 + 14 + 10 + 14 = ?",
+        "D": "To find the perimeter we add the lengths of the all the sides together: 10 + 14 + 10 + 14 = 48 therefore the perimeter is 48 ft."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158160,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2b30fab9-b9e6-41fe-ba8c-85c573ebf67b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have forgotten there are 4 sides of the rectangle, not just two...",
+        "B": "To find the perimeter we add the lengths of the all the sides together: 20 + 22 + 20 + 22 = 84 therefore the perimeter is 84 ft.",
+        "C": "To find the perimeter add the lengths of the all the sides together... 20 + 22 + 20 + 22 = ?",
+        "D": "I think you have missed off one side of the rectangle... 20 + 22 + 20 + 22 = ?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 157994,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/15d75188-b4d2-4fc5-b86b-3bca9f1d54dd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have forgotten there are 4 sides of the rectangle, not just two...",
+        "B": "I think you have missed off one side of the rectangle... 120 + 200 + 120 + 200 = ?",
+        "C": "To find the perimeter we add the lengths of the all the sides together: 120 + 200 + 120 + 200 = 640 therefore the perimeter is 640 ft.",
+        "D": "I think you have confused area and perimeter... To find the perimeter we add the lengths of the all the sides together"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158161,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c18d058f-82cc-4c55-b3d6-26e2df8de722.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find the perimeter we add the lengths of the all the sides together: 180 + 240 + 180 + 240 = 840 therefore the perimeter is 840 ft.",
+        "B": "I think you have confused area and perimeter... To find the perimeter we add the lengths of the all the sides together",
+        "C": "I think you have forgotten there are 4 sides of the rectangle, not just two...",
+        "D": "I think you have missed off one side of the rectangle... 180 + 240 + 180 + 240 = ?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 157995,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a4045d74-16a9-4557-b741-07820b48ff8e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is half of the perimeter of the park, remember a rectangle has 4 sides, not two...",
+        "B": "This is the perimeter of Central Park but she runs around it 3 times so you need to multiply this value by 3...",
+        "C": "If Central Park is 0.5 miles by 2.5 miles, we do 0.5 + 2.5 + 0.5 + 2.5 = 6 miles to find the perimeter. Jennifer runs around it 3 times 6 x 3 = 18 therefore she ran 18 miles in total.",
+        "D": "I think you have confused area and perimeter... To find the perimeter we add the lengths of the all the sides together"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158162,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/889352c8-12df-413a-983a-fd52ecf72e54.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have confused area and perimeter... To find the perimeter we add the lengths of the all the sides together",
+        "B": "This is half of the perimeter of the mall, remember a rectangle has 4 sides, not two...",
+        "C": "This is the perimeter of Rosedale Mall but she walks around it 4 times so you need to multiply this value by 4...",
+        "D": "If Rosedale Mall is 1.25 miles by 0.75 miles, we do 1.25 + 0.75 + 1..25 + 0.75 = 4 miles to find the perimeter. Sandra walks around it 4 times 4 x 4 = 16 therefore she walked 16 miles in total."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 157996,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2693f981-a4c1-401a-8a45-e027c2de58c1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have confused area and perimeter... The perimeter is all the sides added together",
+        "B": "This is the total minus one width but we need to subtract two widths from the total and then halve this value to find the length...",
+        "C": "This represents two lengths of the room...",
+        "D": "The total length of lights is 15.4m. The width of Fatima's room is 3.5m so we can do 3.5 + 3.5 = 7m and take this off the total to find the total of the other two sides. 15.4 - 7 = 8.4 therefore the length of the room is 8.4 ÷ 2 = 4.2m."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158163,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/24e8a20d-6585-41e5-a079-386c4874a2fe.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This represents two lengths of the room...",
+        "B": "I think you have confused area and perimeter... The perimeter is all the sides added together",
+        "C": "The total length of lights is 21.2m. The width of Catherine's room is 4.8m so we can do 4.8+ 4.8 = 9.6m and take this off the total to find the total of the other two sides. 21.2 - 9.6 = 11.6 therefore the length of the room is 11.6 ÷ 2 = 5.8m.",
+        "D": "This is the total minus one width but we need to subtract two widths from the total and then halve this value to find the length..."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

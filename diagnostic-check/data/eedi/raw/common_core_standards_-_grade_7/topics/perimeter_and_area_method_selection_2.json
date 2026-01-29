@@ -1,0 +1,165 @@
+{
+  "shortcode": "vw0",
+  "name": "Perimeter and area method selection 2",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 205,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Given the area of a square, calculate a missing dimension",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given the area of a right-angled triangle, calculate a missing dimension",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the perimeter of a rectilinear shape by adding lengths expressed in the same units",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given the perimeter, work out a missing length requiring knowledge of the geometrical properties of the shape",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate compound area involving rectangles, squares and triangles, where the dimensions are given in the same units",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 77169,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2d405fb0-b013-48cf-acdb-79c553c7cbfa.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly, this is the length of one side, so what is the whole perimeter?",
+        "B": "I think you found one side by dividing the area by 4. You need to think about what number you multiply by itself to get 196, this is the length of each side.",
+        "C": "I think you included the line joining the square and pentagon, remember the perimeter is only the distance around the outside of the shape.",
+        "D": "The side length of the square is √196 = 14, so the perimeter is 7 × 14 = 98."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78999,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5c0b2c5e-f2ca-491c-9b8f-123608560c1a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you included the line joining the square and pentagon, remember the perimeter is only the distance around the outside of the shape.",
+        "B": "The lengths of the square are √144 = 12, so the perimeter is 7 × 12 = 84.",
+        "C": "I think you found one side by dividing the area by 4. You need to think about what number you multiply by itself to get 144, this is the length of each side.",
+        "D": "This is the length of one side, but what is the perimeter of the shape?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 77170,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8dbb8750-33db-4d3f-b12f-f4a78cafe773.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have found the area rather than the perimeter. What is the distance all the way around the shape?",
+        "B": "You are so close, just check your units",
+        "C": "The missing side length is 4 - 2 = 2, so we have 4 + 2 + 2 + 6 + 2 + 8 = 24 cm.",
+        "D": "Almost, you just need to add on the length of the side that isn't labelled. Think about how you can work out its length"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79000,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8964e951-dcb9-4777-a4e4-bbb34ef3a16c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost, you just need to add on the length of the side that isn't labelled. Think about how you can work out its length",
+        "B": "I think you have found the area rather than the perimeter. What is the distance all the way around the shape?",
+        "C": "You are so close, just check your units",
+        "D": "The missing side length is 5 - 2 = 3 cm, so the perimeter is 3 + 3 + 6 + 2 + 9 + 5 = 28cm."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 77171,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a336a6f6-9860-41f0-9e7e-9bfabc5626fa.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The square has side lengths √25 = 5, so the larger rectangle has side lengths (50 - 5 - 5)/2 = 20. The area is then 20 × 5= 100.",
+        "B": "I think you have found the length of the square, but made a mistake when working out the length of the rectangle. If the side of the square is 5, and all the way round the whole shape is 50, can you find the length of the rectangle to help you answer the question.",
+        "C": "This is the side length of the square. If the side of the square is 5, and all the way round the whole shape is 50, can you find the length of the rectangle to help you answer the question.",
+        "D": "Nearly, I think you have added on the area of the square twice."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79001,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/875732cf-6470-404d-8b09-85acaec4e683.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the side length of the square. If the side of the square is 4, and all the way round the whole shape is 30, can you find the length of the rectangle to help you answer the question.",
+        "B": "Nearly, I think you have added on the area of the square twice.",
+        "C": "The square has side length √16 = 4, so the side length of the rectangle is (30 - 4 - 4)/2 = 11cm. Then the area is 11 × 4 = 44.",
+        "D": "I think you have found the length of the square, but made a mistake when working out the length of the rectangle. If the side of the square is 4, and all the way round the whole shape is 30, can you find the length of the rectangle to help you answer the question."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 77172,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/39c4199d-38d2-4846-824b-a9a9d4e842de.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. You are told the area and need to work backwards to find the missing length",
+        "B": "Not quite. You are told the area and need to work backwards to find the missing length. Remember with triangles to get the area you do base x perpendicular height divided by 2",
+        "C": "9 x height /2 = 3.6. If we multiply by 2 we get 9 x height = 7.2. Then dividing both sides by 9 we get height = 0.8",
+        "D": "You are really close. Remember that with triangles we do base x height divided by 2. You need to 'undo' the divide by 2"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79002,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2e1eee2b-3b03-4755-9082-0ebf51e2d8fa.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. You are told the area and need to work backwards to find the missing length. Remember with triangles to get the area you do base x perpendicular height divided by 2",
+        "B": "We have 6 × h/2 = 2.4. If we multiply by 2 we get 6 x h = 4.8, and then divide by 6 to get h = 0.8.",
+        "C": "You are really close. Remember that with triangles we do base x height divided by 2. You need to 'undo' the divide by 2",
+        "D": "Not quite. You are told the area and need to work backwards to find the missing length"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 77174,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d4945d93-df4d-4a17-b208-7c33747a62c6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The shape can be split up into 2 parts; a rectangle with area 8 × 5 = 40, and a triangle with area (12 - 5) × (8 - 3)/2 =17.5. Adding these together gives the answer.",
+        "B": "I think you used 12 for the base of the triangle. 12 is the length all the way across, how long is just the base of the triangle?",
+        "C": "I think you have tried to split the shape up into two triangles, but we don't know if the sloped line goes to the top left corner. Try splitting it into a rectangle and a right angled triangle.",
+        "D": "I think you have tried to split the shape up into two triangles, but we don't know if the sloped line goes to the top left corner. Try splitting it into a rectangle and a right angled triangle. Remember to divide by 2 when finding the area of a triangle."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79004,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/113e7acf-bf18-4660-aa3d-45074f8c5e08.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have tried to split the shape up into two triangles, but we don't know if the sloped line goes to the top left corner. Try splitting it into a rectangle and a right angled triangle. Remember to divide by 2 when finding the area of a triangle.",
+        "B": "I think you have tried to split the shape up into two triangles, but we don't know if the sloped line goes to the top left corner. Try splitting it into a rectangle and a right angled triangle.",
+        "C": "The rectangle has area 6 × 4 = 24, and the triangle has area (10 - 4) × (6 - 2)/2 = 6 × 4/2 = 12. Adding these together gives 36.",
+        "D": "I think you used 10 for the base of the triangle. 10 is the length all the way across, how long is just the base of the triangle?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

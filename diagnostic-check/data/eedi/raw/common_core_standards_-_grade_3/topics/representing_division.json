@@ -1,0 +1,141 @@
+{
+  "shortcode": "bis9",
+  "name": "Representing Division",
+  "collectionId": 33,
+  "level": 1,
+  "sequence": 2,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Recognise visual representations of division times table facts",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158717,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c632f1a3-cdb3-477f-a079-ef6e5f300b7a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There are 15 circles in total, shared into 3 equal groups. We can write that as the calculation 15 ÷ 3.",
+        "B": "Not quite. If we were dividing by 6 the 15 would be split into 6 groups but we have 15 shared into 3 groups. Which calculation is that?",
+        "C": "This would mean starting with 15 and taking away 3, but we have 15 shared into 3 groups. Which calculation is that?",
+        "D": "This would mean 15 groups of 3 or 3 groups of 15, but we have 15 total shared into 3 groups. Which calculation is that?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158916,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a477b00d-0aa1-43ec-aa8b-d70df2b933e3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might have miscounted the circles. The circles are split into 4 groups of 5, so which calculation could show that correctly?",
+        "B": "There are 20 circles in total, shared into 4 equal groups. We can write that as the calculation 20 ÷ 4.",
+        "C": "This would mean starting with 20 and taking away 4, but we have 20 shared into 4 groups. Which calculation is that?",
+        "D": "This would mean 20 groups of 4 or 4 groups of 20, but we have a total of 20 shared into 4 groups. Which calculation is that?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158718,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/96976215-947c-4218-84a1-ff064b43cc5a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Make sure you are only counting dots, not the big circles. Each group has 3 dots in, how many is that altogether?",
+        "B": "You have counted the dots correctly, but each big circle counts as one group, so how many groups are there?",
+        "C": "Each big circle has 3 dots in, and there are 5 big circles, so we have 5 x 3 = 15 dots total, in 5 groups.",
+        "D": "Almost, but make sure you give the number of groups, not the number of dots in a group."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158917,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2705ab3d-6754-4a0f-9366-3e9ef7bf86b1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Each big circle has 4 dots in, and there are 4 big circles, so we have 4 x 4 = 16 dots total, in 4 groups.",
+        "B": "You have counted the dots correctly, but each big circle counts as one group, so how many groups are there?",
+        "C": "Make sure you are only counting dots, not the big circles. Each group has 4 dots in, how many is that altogether?",
+        "D": "Not quite. Make sure you give the total number of dots, not the number of dots in one group."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158719,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bf7129e5-a555-4d05-a2fc-8b04eac63796.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We can think of 20 ÷ 5 as 20 shared by 5 or \"how many 5s in 20?\", and this diagram shows that there are four 5s in 20.",
+        "B": "We can think of 20 ÷ 5 as 20 shared by 5 or \"how many 5s in 20?\", and this diagram shows 20 triangles shared into 5 groups of 4.",
+        "C": "We can think of 20 ÷ 5 as 20 shared by 5 or \"how many 5s in 20?\", and this diagram shows that there are four 5s in 20 - it's ok that one group of 5 is turned around.",
+        "D": "This diagram shows 20 shared into 5 groups, but for division they have to be equal groups, so it does not represent 20 ÷ 5."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158918,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ec08477f-b538-4ee4-ab58-bfda57671dd1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We can think of 12 ÷ 4 as 12 shared by 4 or \"how many 4s in 12?\", and this diagram shows that there are three 4s in 12.",
+        "B": "This diagram shows 12 shared into 4 groups, but for division they have to be equal groups, so it does not represent 12 ÷ 4.",
+        "C": "We can think of 12 ÷ 4 as 12 shared into 4 groups. This diagram shows that there are 4 groups of 3 in 12 - it's ok that one group of 3 is turned around.",
+        "D": "We can think of 12 ÷ 4 as 12 shared into 4 groups. This diagram shows that there are 4 groups of 3 in 12."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158720,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/98139016-02e2-44b1-90b9-318bdcaecd20.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The diagram has 32 squares split into 4 rows, so it does represent 32 ÷ 4. Which calculation does not match the layout of the diagram?",
+        "B": "The diagram has 32 squares split into 8 columns, so it does represent 32 ÷ 8. Which calculation does not match the layout of the diagram?",
+        "C": "The diagram is split into 8 columns and 4 rows, so it does not show division by 16. We could use it to help with this division, but it is not represented on the diagram without adding more shading or splitting the shape in half.",
+        "D": "The diagram has 8 rows of 4, so it does represent 8 x 4. Which calculation does not match the layout of the diagram?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158919,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b818fab3-e613-49f7-a0c1-2a7aaf28ff93.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The diagram is split into 7 columns and 6 rows, so it does not show division by 21. We could use it to help with this division, but it is not represented on the diagram without adding more shading or splitting the shape in half.",
+        "B": "The diagram has 42 squares split into 6 rows, so it does represent 42 ÷ 6. Which calculation does not match the layout of the diagram?",
+        "C": "The diagram has 42 squares split into 7 columns, so it does represent 42 ÷ 7. Which calculation does not match the layout of the diagram?",
+        "D": "The diagram has 6 rows of 7, so it does represent 6 x 7. Which calculation does not match the layout of the diagram?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158721,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/21232db4-0a1d-4d32-8c17-0169ca4320d7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The block has 12 squares, and they are arranged in 3 columns and 4 rows, so it represents dividing 12 by 3 and 4.",
+        "B": "There are 12 squares, but are they arranged in groups of 6 to show 12 ÷ 6? Check the number of rows and columns they are grouped into.",
+        "C": "There are 12 squares, but are they arranged in groups of 6 to show 12 ÷ 6? Check the number of rows and columns they are grouped into.",
+        "D": "There are 12 squares, but are they arranged in 2 groups to show 12 ÷2? Check the number of rows and columns they are grouped into."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158920,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/922a9260-23df-44e4-9c64-4e1239bb91b2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There are 20 squares, but are they arranged in 2 groups to show 20 ÷ 2? Check the number of rows and columns they are grouped into.",
+        "B": "There are 20 squares, but are they arranged in 2 groups to show 20 ÷ 2? Check the number of rows and columns they are grouped into.",
+        "C": "There are 20 squares, but are they arranged in 10 groups to show 20 ÷ 10? Check the number of rows and columns they are grouped into.",
+        "D": "The block has 20 squares, and they are arranged in 5 columns and 4 rows, so it represents dividing 20 by 5 and 4."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

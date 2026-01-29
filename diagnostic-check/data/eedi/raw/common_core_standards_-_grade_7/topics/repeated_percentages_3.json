@@ -1,0 +1,159 @@
+{
+  "shortcode": "vst",
+  "name": "Repeated percentages 3",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 39,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Understand the elements of the formula for compound percentage decrease",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Work out the final amount in compound percentage increase problems",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Work out the number of time periods in compound percentage increase problems ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Recognise an exponential graph from its shape",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 76815,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/93ca5f31-3cc6-4b76-a7dc-c0aa339d58ef.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have found the calculation if there is an increase of 10%, depreciation means the cost has decreased.",
+        "B": "It looks like you have used 0.1 as the multiplier, but 10% isn't the multiplier. We are losing 10%, think about what we will have left, and what this will be as a multiplier.",
+        "C": "The multiplier is 1 - 0.1 = 0.9, and as we are using compound depreciation, we have 3 as the power.",
+        "D": "Not quite, we don't multiply by 3. The number of years is in the power as we have to apply the change 3 times."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78849,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0513a1c7-25dd-4009-8a6c-22f8a32608c0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The multiplier is 1 - 0.15 = 0.85, and as we are using compound interest, we raise this to the power of 3.",
+        "B": "It looks like you have used the multiplier to a 50% increase, we are looking for a 15% decrease.",
+        "C": "Not quite, we don't multiply by 3. The number of years is in the power as we have to apply the change 3 times.",
+        "D": "It looks like you have used 0.15 as the multiplier, but 15% isn't the multiplier. We are losing 15%, think about what we will have left, and what this will be as a multiplier."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 76821,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/70f2874e-b053-4fd2-9fcc-d63b37477c4c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "As its is a decrease, we need 100% - 8% which is 92% which is the same as 0.92. We then use the number of years as the power of 4.",
+        "B": "It looks like you have used the 8% (or 0.08) as the multiplier but we need a decrease of 8% (from 100%) as the multiplier.",
+        "C": "It looks like you have found the multiplier for an increase of 8% but we need to find the decrease.",
+        "D": "Not quite, we don't multiply by 4. The number of years is in the power as we have to apply the change 4 times."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78855,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d45ab1b0-8fbc-4cd0-9e43-81fd3420cc17.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have used the 5% (or 0.05) as the multiplier but we need a decrease of 5% (from 100%) as the multiplier.",
+        "B": "Not quite, we don't multiply by 5. The number of years is in the power as we have to apply the change 5 times.",
+        "C": "As its is a decrease, we need 100% - 5% which is 95% which is the same as 0.95. We then use the number of years as the power of 5.",
+        "D": "It looks like you have found the multiplier for an increase of 5% but we need to find the decrease."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 81295,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/64e9b498-3b7f-411c-9b7f-f1682899ddfa.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you used the multiplier for a 90% increase (1.9). Which multiplier would give a 9% increase?",
+        "B": "I think you have used simple interest. How do we work out compound increases? What is the multiplier?",
+        "C": "To calculate the interest over 6 years, we can use a decimal multiplier of 1.09 raised to the power of 6. 10,000 x 1.09^6 = 16,771",
+        "D": "I think you have mixed up the multiplier and the number of years."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 81470,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f5f65839-8b2b-49bb-97c9-d4182eb4d661.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To calculate the interest over 3 years, we can use a decimal multiplier of 1.05 raised to the power of 3. 8000x 1.05^3 = £9,261.",
+        "B": "I think you used the multiplier for a 50% increase (1.5). Which multiplier would give a 5% increase?",
+        "C": "I think you calculated the amount after 4 years rather than 3 years",
+        "D": "I think you have used simple interest. How do we work out compound increases? What is the multiplier?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 81296,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f5b779de-7c2f-47eb-862a-920fc167e7d1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have used simple interest. How do we work out compound increases? What is the multiplier?",
+        "B": "Invested for 9 years, £10,000 would become 10000 x 1.09^9 = £21,719 to the nearest whole pound. 8 years would become 10000 x 1.09^8 = £19,926, so we know that 9 years are needed.",
+        "C": "Not quite. Invested for 8 years, £10,000 would become £19,926 at this interest rate. This is not double the value.",
+        "D": "Invested for 10 years, £10,000 would become £23,674 at this interest rate. This is more than double the value, but is there a lower number of years that will meet the target of £20,000?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 81471,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/026d89dc-f11a-47b1-843b-58a898542621.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Invested for 11 years, £8,000 would become £18,653 at this interest rate. This is more than double the value, but is there a lower number of years that will meet the target of £16,000?",
+        "B": "Invested for 9 years, £8,000 would become £15,992 at this interest rate. This is not double the value. So we know we need to invest for longer.",
+        "C": "I think you have used simple interest. How do we work out compound increases? What is the multiplier?",
+        "D": "Invested for 10 years, £8,000 would become 8000 x 1.08^10 = £17,271 at this interest rate. 9 years would become 8000 x 1.08^9 = £15,992, so we know that 10 years are needed."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 81297,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9ba67e37-ff16-4057-acbf-d142b1fdb50c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Graph A shows an increasing value where gradient increases over time. This shows the effect of compound increase with its concave line and best represents the growth in value of an investment over time.",
+        "B": "Graph B is a straight line. This would be correct for a value that increases by the same amount every year. However, our investment will increase by a larger value each year.",
+        "C": "Graph C increases every year, but the value of that increase gets smaller and smaller. We are looking for a graph that shows an increasing gradient over time.",
+        "D": "Graph D shows a value that depreciates, or decreases, over time. We are looking for a graph that increases."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 81472,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8ca1520a-55df-4e73-b689-fe5fe842fad4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Graph A is a straight line. This would be correct for a value that increases by the same amount every year. However, our investment will increase by a larger value each year.",
+        "B": "Graph B increases every year, but the value of that increase gets smaller and smaller. We are looking for a graph that shows an increasing gradient over time.",
+        "C": "Graph C shows a value that depreciates, or decreases, over time. We are looking for a graph that increases.",
+        "D": "Graph D shows an increasing value where gradient increases over time. This shows the effect of compound increase with its concave line and best represents the growth in value of an investment over time."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

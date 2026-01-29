@@ -1,0 +1,141 @@
+{
+  "shortcode": "eayj",
+  "name": "Expressions involving nested brackets",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 2,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Use the order of operations to carry out calculations involving nested brackets",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 165779,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4867faba-af10-4a9b-aa01-cc20991d9e68.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "What does the P stand for in PEMDAS?",
+        "B": "What does the P stand for in PEMDAS?",
+        "C": "Thinking about PEMDAS we have to do the parentheses first, we started with 3 + 5 so now we have 8 x 4 in the square bracket so we do that next!",
+        "D": "Re-read the question, I think you have missed the first step that was given to you..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165784,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1cbf2849-bd06-4825-9679-c2f213b002a3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Re-read the question, I think you have missed the first step that was given to you...",
+        "B": "What does the P stand for in PEMDAS?",
+        "C": "What does the P stand for in PEMDAS?",
+        "D": "Thinking about PEMDAS we have to do the parentheses first, we started with 4 + 6 so now we have 10 x 3 in the square bracket so we do that next!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165780,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7935f25b-a28f-45b4-8a15-a7da3bc7bb73.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Following PEMDAS we start with the parentheses, specifically 3 x 2 = 6 so now the sum says 60 - [10 + 6]. We then do the square brackets giving us 60 - 16, which equals 44!",
+        "B": "I think you have done the calculation from left to right but remember PEMDAS... We have to follow the order of operations!",
+        "C": "You have correctly worked out the calculations in the parentheses but now you need to complete the sum by taking this value from 60!",
+        "D": "I think you have gone from left to right within the parentheses but we do the sum in the curved brackets first and then the sum in the square brackets!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165785,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b254842b-042d-4ef5-8c45-8e6f9abcf860.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have correctly worked out the calculations in the parentheses but now you need to complete the sum by taking this value from 90!",
+        "B": "I think you have gone from left to right within the parentheses but we do the sum in the curved brackets first and then the sum in the square brackets!",
+        "C": "Following PEMDAS we start with the parentheses, specifically 4 x 3 = 12 so now the sum says 90 - [20 + 12]. We then do the square brackets giving us 90 - 32, which equals 58!",
+        "D": "I think you have done the calculation from left to right but remember PEMDAS... We have to follow the order of operations!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165781,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b448998a-3ad3-454d-83ac-fa0e2e7fc434.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This would be the first step, the question is asking for the final step... Use PEMDAS to help you!",
+        "B": "This would be the final step within the [ ]. What would be the final step overall?",
+        "C": "This would be the final step within the parentheses... What would be the final step overall?",
+        "D": "Following PEMDAS we complete all the calculations in the parentheses leaving us with 2 x -3 so the final step is x 2!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165786,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cb7a3eb1-6b56-4bc3-a467-caa9b1560a57.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Following PEMDAS we complete all the calculations in the parentheses leaving us with 3 x 22 so the final step is x 3!",
+        "B": "This would be the first step, the question is asking for the final step... Use PEMDAS to help you!",
+        "C": "This would be the final step within the [ ]. What would be the final step overall?",
+        "D": "This would be the final step within the parentheses... What would be the final step overall?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165782,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2d29725c-a106-446e-959b-a8895954a587.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Following PEMDAS we start with the parentheses, specifically 2 + 3 = 5 so now the sum says 30 - [4 x 5]. We then do the square brackets giving us 30 - 20, which equals 10! Therefore, only Tom is correct.",
+        "B": "I think you have done the calculation from left to right but remember PEMDAS... We have to follow the order of operations!",
+        "C": "Calculations like this only have one correct answer. Complete the operations in the correct order by following PEMDAS to see if either Katie or Tom are correct!",
+        "D": "At least one of them is correct, complete the operations in the correct order using PEMDAS!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165787,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1fb5196e-72c2-4d83-890e-7b54aa04faf2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Calculations like this only have one correct answer. Complete the operations in the correct order by following PEMDAS to see if either Katie or Tom are correct!",
+        "B": "I think you have done the calculation from left to right but remember PEMDAS... We have to follow the order of operations!",
+        "C": "Following PEMDAS we start with the parentheses, specifically 2 + 6 = 8 so now the sum says 40 - [3 x 8]. We then do the square brackets giving us 40 - 24, which equals 16! Therefore, only Katie is correct.",
+        "D": "At least one of them is correct, complete the operations in the correct order using PEMDAS!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165783,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/56aed8dd-19f7-46d6-a2bb-08c13ed09b12.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This would be the largest value if we were only considering the square brackets [] but we need to apply every operation!",
+        "B": "Following PEMDAS we get A = 55, B = 60, C = 50 and D = 8 therefore B is the largest value!",
+        "C": "I think you have selected this answer as it only contains + and x... The best thing to do is use PEMDAS to calculate each answer and then compare them to find the largest!",
+        "D": "I think you have accidentally selected the smallest value but the question is asking for the largest..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165788,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/372687f3-3173-41b1-9bc1-86caf3bc5605.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have accidentally selected the smallest value but the question is asking for the largest...",
+        "B": "I think you have selected this answer as it only contains + and x... The best thing to do is use PEMDAS to calculate each answer and then compare them to find the largest!",
+        "C": "Following PEMDAS we get A = 9, B = 120, C = 170 and D = 140, therefore C is the largest value!",
+        "D": "This would be the largest value if we were only considering the square brackets [] but we need to apply every operation!"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,159 @@
+{
+  "shortcode": "bihr",
+  "name": "Properties of triangles",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 89,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify an equilateral triangle from a description of the properties",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use the properties of an equilateral triangle to find missing lengths",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Describe the properties of an isosceles triangle",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify a right-angled triangle when presented non-conventionally",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 132167,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b5e342ca-22d2-4aa9-8dd2-94b74930414e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "These are the angle sizes for an equilateral triangle. The angles in a triangle sum to 180° and in an equilateral triangle there are three equal angles 180°/3 = 60°.",
+        "B": "This is the description of a right-angled triangle. You can get isosceles triangles with right-angles but not all isosceles triangles have them so it is not a defining property.",
+        "C": "This is the description of an equilateral triangle rather than an isosceles",
+        "D": "All isosceles triangles have two equal sides and at the base of these equal sides are two equal angles."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134165,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4189e959-f4cf-4fc5-bdae-6679e64b3aab.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the description of a scalene triangle rather than an isosceles",
+        "B": "All isosceles triangles have two equal sides and at the base of these equal sides are two equal angles.",
+        "C": "This would not be possible. A triangle cannot have a pair of parallel sides otherwise you would need at least two other sides to join them up.",
+        "D": "This is the description of an equilateral triangle rather than an isosceles"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 132168,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/82aca42b-9c95-4c4e-b8b9-b7e2942fd2e1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "What does the word equilateral mean? If side AC is 5cm and the triangle is equilateral, think about what side BC will be.",
+        "B": "What does the word equilateral mean? If side AC is 5cm and the triangle is equilateral, think about what side BC will be.",
+        "C": "The triangle ABC is equilateral, this means all the sides are the same length. AC is labelled on the diagram as 5cm so that means BC must also be 5cm.",
+        "D": "What does the word equilateral mean? If side AC is 5cm and the triangle is equilateral, think about what side BC will be."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134163,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3c6755c9-7ce1-4b5c-a62d-c2f8cdb76ae5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "What does the word equilateral mean? If side BC is 8cm and the triangle is equilateral, think about what side AC will be.",
+        "B": "What does the word equilateral mean? If side BC is 8cm and the triangle is equilateral, think about what side AC will be.",
+        "C": "The triangle ABC is equilateral, this means all the sides are the same length. BC is labelled on the diagram as 8cm so that means AC must also be 8cm.",
+        "D": "What does the word equilateral mean? If side BC is 8cm and the triangle is equilateral, think about what side AC will be."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 132169,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/568ec0d4-5440-4a6f-9d3a-c971f6935278.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the description of a right-angled triangle. You can get isosceles triangles with right-angles but not all isosceles triangles have them so it is not a defining property.",
+        "B": "An isosceles triangle has two sides of equal length and at the base of these sides are two equal angles.",
+        "C": "This is the description of an equilateral triangle, rather than an isosceles",
+        "D": "This is the description of a scalene triangle rather than an isosceles"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134162,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e1b528ca-8e7d-4fec-9414-402567bf276b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This would not be possible. A triangle cannot have a pair of parallel sides, otherwise you would need at least two more sides to join them up.",
+        "B": "This is the description of an equilateral triangle rather than an isosceles",
+        "C": "An isosceles triangle has two sides of equal length and at the base of these sides are two equal angles.",
+        "D": "This is the description of a scalene triangle rather than an isosceles"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 132170,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d22fbdd9-0eff-40db-b192-e36ebd33e97e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. To be right-angled one of the angles has to be 90 degrees.",
+        "B": "Not quite. To be isosceles two of the angles must be equal, but all 3 are the same here",
+        "C": "All 3 sides and angles are equal which means we have an equilateral triangle",
+        "D": "Not quite. A scalene triangle has all different angles and side lengths"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134161,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/538cc971-d220-4c82-8662-b6495ae58d27.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. A scalene triangle has all different angles and side lengths",
+        "B": "Not quite. To be right-angled one of the angles has to be 90 degrees.",
+        "C": "Not quite. To be isosceles two of the angles must be equal, but all 3 are the same here",
+        "D": "All 3 sides and angles are equal which means we have an equilateral triangle"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 132177,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4ad3d354-fa1f-4e0e-9d6d-9cdbf2463875.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A scalene triangle has no equal sides, from the information given, we cannot work out the lengths and so instead let's look at the angles. Shape ABCD is a rectangle. What do the angles in a rectangle each equal? Looking at triangle BCD one of its angles is the same as the rectangle's angle so which type of triangle is it?",
+        "B": "An isosceles triangle has two sides of equal length. Neither BD, BC or CD are equal in length. We need to use the fact shape ABCD is a rectangle. What do the angles in a rectangle each equal? Looking at triangle BCD one of its angles is the same as the rectangle's angle so which type of triangle is it, if it has this property?",
+        "C": "The triangle BCD is a right-angled triangle. This is because the angle BCD is also an angle in a rectangle which is 90 degrees.",
+        "D": "An equilateral triangle has three sides of equal length. BD, BC and CD are not all equal in length. We need to use the fact shape ABCD is a rectangle. What do the angles in a rectangle each equal? Looking at triangle BCD one of its angles is the same as the rectangle's angle so which type of triangle is it, if it has this property?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134164,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fbd576c8-dc91-4db4-a32a-3c33dc5120a4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A scalene triangle has three sides that are all different lengths. From the information given in the question we cannot work out the lengths of BD and DC, they could be equal. Let's look at what the question says: shape ABDE is a square so what does that make the angle BDE? Using this angle can you work out angle BDC? What kind of triangle does that make BDC?",
+        "B": "An equilateral triangle has three equal sides. From the information given, we cannot work out if the lengths of BD, DC and CB are equal. Let's look at what the question says: shape ABDE is a square so what does that make the angle BDE? Using this angle can you work out angle BDC? What kind of triangle does that make BDC?",
+        "C": "An isosceles triangle has two equal sides. From the information given, we cannot work out if the lengths of BD and DC are equal. Let's look at what the question says: shape ABDE is a square so what does that make the angle BDE? Using this angle can you work out angle BDC? What kind of triangle does that make BDC?",
+        "D": "Angle BDE is a right angle as it is an angle in a square. EDC is a straight line. The angles on a straight line sum to 180° so to find angle BDC: 180° - 90° = 90° therefore angle BDC is also a right-angle making the triangle BCD a right-angled triangle."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

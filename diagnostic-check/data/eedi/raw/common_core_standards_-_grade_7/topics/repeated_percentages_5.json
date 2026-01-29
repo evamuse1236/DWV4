@@ -1,0 +1,165 @@
+{
+  "shortcode": "vsv",
+  "name": "Repeated percentages 5",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 41,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Understand the elements of the formula for compound percentage decrease",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Work out the final amount in compound percentage increase problems",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Work out the number of time periods in compound percentage increase problems ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Work out the final amount in compound percentage decrease problems",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Work out the number of time periods in compound percentage decrease problems",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 135207,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/84a7256b-3213-448b-96c6-2d94cbaadbfe.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have confused the percentage increase and the number of years. The painting increases in value by 9% every year for 12 years NOT 12% for 9 years.",
+        "B": "Not quite, the value of the painting does not increase by the same amount every year. As the value of the painting changes so does the amount it increases by. Remember, in year 1 the painting will be worth 9% more than what it was originally, therefore the value of the painting in year 2 will be 9% more than the year 1 value not the original amount.",
+        "C": "I think you have used an incorrect multiplier. 1.9 = 190%. 190% is an increase of 90% per year NOT 9%. What is the multiplier if the painting increases in value by 9% every year?",
+        "D": "The painting increases in value by 9% every year. Increasing by 9% is the same as calculating 109% of the paintings current value. Therefore In 1 year the painting is worth 120,000 ✕ 1.09 (109% = 1.09), in 2 years the painting is worth 120,000 ✕ 1.09² and in 12 years the painting will be worth £120,000 ✕ 1.09¹² = £337,520 (to the nearest pound)."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135227,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7464fde1-c8da-43ca-9d05-c19ca0620efd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The painting increases in value by 2.5% every year. Increasing by 2.5% is the same as calculating 102.5% of the paintings current value. Therefore In 1 year the painting is worth 120,000 ✕ 1.025 (102.5% = 1.025), in 2 years the painting is worth 120,000 ✕ 1.025² and in 8 years the painting will be worth £150,000 ✕ 1.025 ⁸ = £182,760 (to the nearest pound).",
+        "B": "I think you have used an incorrect multiplier. 2.5 = 250%. 250% is an increase of 150% per year NOT 2.5%. What is the multiplier if the painting increases in value by 2.5% every year? Remember 150,000 is 100%.",
+        "C": "I think you have used an incorrect multiplier. 1.25 = 125%. 125% is an increase of 25% per year NOT 2.5%. What is the multiplier if the painting increases in value by 2.5% every year?",
+        "D": "I think you have rounded incorrectly. The question is asking us to round to the nearest pound NOT the nearest £10,000."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135208,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7bd1104d-de0e-4204-b534-0db458b99bdb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have used an incorrect multiplier. 0.09 = 9%. 9% is a decrease of 91% per year NOT 9%. What is the multiplier if the car decreases in value by 9% every year? Remember to take the original value of the car as your 100%.",
+        "B": "The car decreases in value by 9% every year. Decreasing by 9% is the same as calculating 91% of the cars current value. Therefore In 1 year the car is worth 120,000 ✕ 0.91 (91% = 0.91), in 2 years the car is worth 120,000 ✕ 0.91² and in 5 years the car will be worth £120,000 ✕ 0.91⁵ = £74,884 (to the nearest pound).",
+        "C": "You have confused the percentage decrease and the number of years. The car decreases in value by 9% every year for 5 years NOT 5% for 9 years.",
+        "D": "Not quite, the value of the car does not decrease by the same amount every year. As the value of the car changes so does the amount it decreases by. Remember, in year 1 the car will be worth 9% less than what it was originally, therefore the value of the car in year 2 will be 9% less than the year 1 value not the original amount."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135228,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/181670d1-d419-4548-938d-5eb930bf1e0c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Your multiplier should be less than one not more than one as the value of the car is decreasing NOT increasing.",
+        "B": "Not quite, the value of the car does not decrease by the same amount every year. As the value of the car changes so does the amount it decreases by. Remember, in year 1 the car will be worth 7% less than what it was originally, therefore the value of the car in year 2 will be 7% less than the year 1 value not the original amount.",
+        "C": "Not quite, I think you have worked out the multiplier incorrectly. Remember to take the original value of the car as your 100%. If we decrease this by 7%, what percentage will we have left? How can you use this to find the value of the car after year 1? year 2?",
+        "D": "The car decreases in value by 7% every year. Decreasing by 7% is the same as calculating 93% of the cars current value. Therefore in 1 year the car is worth 150,000 ✕ 0.93 (93% = 0.93), in 2 years the car is worth 150,000 ✕ 0.93² and in 12 years the car will be worth £150,000 ✕ 0.93¹² = £62,789 (to the nearest pound)."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135209,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/78b7ddea-688c-46d8-934e-c08fa395e30b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Multiplying 1,000,000 by 1.07 five times does not give us an answer of 1,500,730. How many times do we need to multiply 1,000,000 by 1.07? How many years does this correspond to?",
+        "B": "Using trial and improvement we can tell that it will take Nia 6 years to have £1,500,730 in her bank account as 1,000,000 ✕ 1.07⁶ = 1,500,730.",
+        "C": "Not quite. Multiplying 1,000,000 by 1.07 seven times does not give us an answer of 1,500,730. How many times do we need to multiply 1,000,000 by 1.07? How many years does this correspond to?",
+        "D": "Not quite. Multiplying 1,000,000 by 1.07 eight times does not give us an answer of 1,500,730. How many times do we need to multiply 1,000,000 by 1.07? How many years does this correspond to?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135229,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a320438c-0098-4eaa-9d82-96524ef9889d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Multiplying 1,000,000 by 1.09 two times does not give us an answer that is double 1,000,000. How many times do we need to multiply 1,000,000 by 1.09? How many years does this correspond to?",
+        "B": "Not quite. Multiplying 1,000,000 by 1.09 eight times does not give us an answer that is double 1,000,000. How many times do we need to multiply 1,000,000 by 1.09? How many years does this correspond to?",
+        "C": "Using trial and improvement we can tell that it will take Nia 9 years to have over £2,000,000 in her bank account. 1,000,000 ✕ 1.09⁸ = 1,992,563 (to the nearest pound) and 1,000,000 ✕ 1.09⁹ = 2,171,893 (to the nearest pound)",
+        "D": "Not quite. Multiplying 1,000,000 by 1.09 twelve times does give us an answer that is double 1,000,000, but we can reach this amount in a fewer number of years. How many years will it take Nia to first exceed double 1,000,000?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135210,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d27bb31a-fe19-40b0-b767-01bf6156be53.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Multiplying 200,000 by 0.85 does not give us an answer of 75,430 (to the nearest pound). How many times do we need to multiply 200,000 by 0.85? How many years does this correspond to?",
+        "B": "Not quite. Multiplying 200,000 by 0.85 five times does not give us an answer of 75,430 (to the nearest pound). How many times do we need to multiply 200,000 by 0.85? How many years does this correspond to?",
+        "C": "Using trial and improvement we can tell that it will take 6 years for Nia's Bitcoin portfolio to have a value of £75,430 as 200,000 ✕ 0.85⁶ = 75,430 (to the nearest pound).",
+        "D": "Not quite. Multiplying 200,000 by 0.85 seven times does not give us an answer of 75,430 (to the nearest pound). How many times do we need to multiply 200,000 by 0.85? How many years does this correspond to?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135230,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2fa4d998-f93f-4328-9916-5cf1bf064d7c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Multiplying 20,000 by 0.85 two times does not give us an answer of less than £10,000. How many times do we need to multiply 20,000 by 0.85? How many years does this correspond to?",
+        "B": "Using trial and improvement we can tell that it will take Nia's Bitcoin portfolio 5 years to fall below £10,000. 20,000 ✕ 0.85⁴ = 10,440 (to the nearest pound) and 20,000 ✕ 0.85⁵ = 8,874 (to the nearest pound)",
+        "C": "Not quite. Multiplying 20,000 by 0.85 six times does give us an answer that is less than £10,000, but we can reach this amount in a fewer number of years.",
+        "D": "Not quite. Multiplying 20,000 by 0.85 ten times does give us an answer that is less than £10,000, but we can reach this amount in a fewer number of years."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135211,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/93524f20-0100-4f2c-9308-cd444f61e7be.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember r is a power. Would we want to multiply p by q 2000 times? Using a decimal multiplier how much would the TV be worth after one year? two years? three years? Use this to help you decide what value r should take.",
+        "B": "Not quite, we would use the 25 to work out the decimal multiplier, it is not the value of r. If we reduce the TV by 25%, what percentage do we have left? Turning this percentage into a decimal gives you the decimal multiplier. How could you use this to calculate the value of the TV after 1 year? 2 years? Use this to help you decide what value r should take.",
+        "C": "Not quite, 0.75 is the decimal multiplier. Multiplying the original value by 0.75 will tell you how much the TV is worth after a 25% reduction. How could you use this decimal multiplier to calculate the value of the TV after 1 year? 2 years? Use this to help you decide what value r should take.",
+        "D": "In this formula p stands for the original amount (£2000), q stands for the decimal multiplier (0.75) and r stands for the number of years. As we want the value of the TV after 10 years, r = 10."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135231,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a9c4a070-bd86-47c1-bd35-0adda69e2e35.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "In this formula q stands for the decimal multiplier (0.83), r stands for the number of years, 5, and p stands for the original amount the TV is worth. As Nia bought the TV for £1200, p = 1200.",
+        "B": "Not quite, we would use the 17 to work out the decimal multiplier, it is not the value of p. If we reduce the TV by 17%, what percentage do we have left? Turning this percentage into a decimal gives you the decimal multiplier. How could you use this to calculate the value of the TV after 1 year? 2 years? Use this to help you decide what value p should take.",
+        "C": "Not quite, 0.83 is the decimal multiplier. How could you use this decimal multiplier to calculate the value of the TV after 1 year? 2 years? Use this to help you decide what value p should take.",
+        "D": "Not quite, r represents the number of reductions. As the value of the TV is being reduced every year for 5 years, r = 5. Use a decimal multiplier to calculate the value of the TV after 1 year, 2 years then use this to help you determine what value p should take."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

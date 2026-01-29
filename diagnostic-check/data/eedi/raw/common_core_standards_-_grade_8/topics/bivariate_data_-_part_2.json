@@ -1,0 +1,153 @@
+{
+  "shortcode": "v1z",
+  "name": "Bivariate Data - Part 2",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 154,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Read data from a scatter diagram",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use a scatter diagram to make predictions",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Represent data in two way tables",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 78413,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dd20c4fb-07f5-4dae-a4b4-4f418f0731f6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have picked the student with the lowest score on the maths test, rather than the highest score.",
+        "B": "I think you have accidentally chosen the student who has done the best overall, scoring high in science and maths but the question wants the student who scored highest in maths. We don't need to consider their science mark.",
+        "C": "Look at the labels on the axes, you have found the student with the highest science score, not the highest mark in maths.",
+        "D": "The maths test score is shown along the x-axis. Student D achieved the highest maths mark as the point is furthest along the x-axis. They got a score of 8."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78707,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d9316a51-d16a-4c71-8317-07d3851936a1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Look at the labels on the axes, you have found the student with the highest science score, not the highest mark in maths.",
+        "B": "The maths test score is shown along the x-axis. Student B achieved the highest maths mark as the point is furthest along the x-axis. They got a score of 9.",
+        "C": "I think you have picked the student with the lowest score on the maths test, rather than the highest score.",
+        "D": "I think you have accidentally chosen the student who has done the best overall, scoring high in science and maths but the question wants the student who scored highest in maths. We don't need to consider their science mark."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 78414,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ac232b2b-12b1-4621-b156-198cffad8856.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Student A achieved a mark of 2 in maths and 4 in science. 4 is twice as much as 2.",
+        "B": "This student scored 6 in their maths exam and their science exam. However, the question doesn't ask for the student who scores the same amount in their exams, the question is asking for the student who got a score in science that is double their maths score. Which student is this?",
+        "C": "I think you have accidentally swapped the phrasing of the question round. You have found the student whose maths mark is double their science mark, you need to find the student whose science mark is double their maths mark.",
+        "D": "I think you have accidentally tripled the maths score instead of doubling it."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78708,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9a198404-c00c-4495-839b-8c543ff0eddf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have accidentally chosen a student who scored 4 times higher in their science score compared to their maths. We only want a student who has scored double their science score, in maths. The best way to answer this question is read off each students' science score, double it and then see if that is their maths score.",
+        "B": "I think you have accidentally swapped the phrasing of the question round. You have found the student whose maths mark is double their science mark, you need to find the student whose science mark is double their maths mark.",
+        "C": "This student got 3 on the Maths test and 6 on the Science test. 3 x 2 =6.",
+        "D": "This student scored 7 in their maths exam and their science exam. However, the question doesn't ask for the student who scores the same amount in their exams, the question is asking for the student who got a score in science that is double their maths score. Which student is this?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 78420,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/da8f63b4-fe20-4f39-9551-2838a84a624f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! I think you have added 10 to 100. Try going up the side to 10 and read over to where it hits the orange line.",
+        "B": "Reading across from 10 to the orange line, gives a reading of 114 on the IQ axis.",
+        "C": "Not quite! I think might you have counted 10 points in. Try reading off at 10, until you hit the red line.",
+        "D": "Not quite! I think you may have counted 10 points along. Try reading off at 10, until you hit the orange line."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78714,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7f4336e6-78c1-450d-8bc2-d85aa4c93ac8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! I think you may have counted 8 points along. Try reading off at 8, until you hit the orange line.",
+        "B": "Close! I think you have read across at 8, but haven't read over the whole way to the orange line.",
+        "C": "Reading across from 8 to the orange line, gives a reading of 111 on the IQ axis.",
+        "D": "Not quite! I think might you have counted 8 points in. Try reading off at 8, until you hit the orange line."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129114,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d4f55a34-2ae1-4993-970e-bf431f0309cc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A is a year 5 student with no siblings, but Anna has a sister so has 1 sibling.",
+        "B": "B represents a year 5 student with 1 sibling, which matches Anna.",
+        "C": "C represents a year 6 student with no siblings, but Anna is in year 5 and has a sister.",
+        "D": "D represents a year 6 students with one sibling, but Anna is in year 5."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129254,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2f82d93d-f9f0-4229-95ec-5a1afc524f87.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A is a year 5 student with no siblings, but Anna is in year 6 and she has 1 brother",
+        "B": "B represents a year 5 student with 1 sibling, but Anna is in year 6",
+        "C": "C represents a year 6 student with no siblings, but Anna has a brother.",
+        "D": "D represents a year 6 students with one sibling, which matches Anna"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131645,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a14520c5-4bf4-4421-8978-a1a05c80196b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, this is the number of children that like Maths and Guitar. To find Maths and Piano, read across from Maths and down from Piano to find where they would cross over.",
+        "B": "To find the value that represents how many children like Maths and Piano, we need to read across the Maths row and down the Piano column to see where they would cross over. This shows us that 7 children like Maths and Piano.",
+        "C": "Not quite, this is the number of children that like English and Piano. To find Maths and Piano, read across from Maths and down from Piano to find where they would cross over.",
+        "D": "Not quite, this is the number of children that like Maths and Recorder. To find Maths and Piano, read across from Maths and down from Piano to find where they would cross over."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133838,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f0926948-0a76-4449-b441-720562c689c4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, this is the number of children that like Maths and Recorder. To find Art and Recorder, read across from Art and down from Recorder to find where they would cross over.",
+        "B": "Not quite, this is the number of children that like Art and Piano. To find Art and Recorder, read across from Art and down from Recorder to find where they would cross over.",
+        "C": "Not quite, this is the number of children that like Art and Guitar. To find Art and Recorder, read across from Art and down from Recorder to find where they would cross over.",
+        "D": "To find the value that represents how many children like Art and Recorder, we need to read across the Art row and down the Recorder column to see where they would cross over. This shows us that 4 children like Art and Recorder."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

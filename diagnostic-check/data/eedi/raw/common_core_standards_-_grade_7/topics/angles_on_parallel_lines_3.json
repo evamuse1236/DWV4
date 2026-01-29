@@ -1,0 +1,165 @@
+{
+  "shortcode": "vwx",
+  "name": "Angles on parallel lines 3",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 202,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify corresponding angles",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify alternate angles",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify co-interior angles",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find missing angles on parallel lines using more than one angle fact",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify a transversal",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 93408,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e06cebf8-f412-4f43-b719-be852380c6f8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "What do you know about corresponding angles on parallel lines? Is 120.001 the same as 120.000?",
+        "B": "As the lines aren't quite parallel, they will eventually meet (or \"intersect\").",
+        "C": "One definition of parallel lines is lines that will never meet (or \"intersect\")",
+        "D": "\"Intersect\" means \"meet\". Any lines which are not parallel will eventually meet."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 120834,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c5c34d9e-02af-4288-8016-317179eb67d5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If the two lines were parallel these angles would have to be equal. What shape are these angles making?",
+        "B": "Tom is wrong because the angles would be equal if the lines were parallel. Katie is correct, these angles are corresponding as they make an F shape.",
+        "C": "What do we know about the F shape angles in parallel lines?",
+        "D": "At least one of them is correct. Think about the F shape angles that we have here."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 93409,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6e2f2e2c-e957-4e08-8cb8-4d9a886f2517.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Parallel lines are \"lines that never meet\", they have the same direction.",
+        "B": "Corresponding means \"equivalent\" or \"matching\"",
+        "C": "Alternate is a type of angle relationship, as in \"alternate angles are equal\"",
+        "D": "The red line is a transversal because it cuts across the two dotted lines."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 120835,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c7242784-1c0e-4107-a2f5-672f7b8af8be.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Transversals intersect with at least 2 other lines. Is blue a transversal, is it the only one?",
+        "B": "Transversals intersect with at least 2 other lines. Is red a transversal, is it the only one?",
+        "C": "Transversals intersect with at least 2 other lines. Both the blue and red intersect with two other lines, so are both transversals.",
+        "D": "Transversals intersect with at least 2 other lines. At least one of these is a transversal."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 93413,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8c4a037f-222a-44d0-9776-fe1a0d8738b1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Even though the lines are not parallel, these are still alternate angles (but are not equal)",
+        "B": "Are any of the lines here parallel?",
+        "C": "Are any of the lines here parallel?",
+        "D": "Usually we use alternate angle facts on parallel lines, but \"alternate\" is defined even if the lines aren't parallel."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 120836,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/04f2fe17-b27c-4919-972b-6e16559d9389.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Even though the lines are not parallel, these are still alternate angles (but are not equal). Therefore Tom is correct",
+        "B": "Think carefully about where angles need to be to be alternate. What do we need in order to use parallel line facts?",
+        "C": "Think carefully about where angles need to be to be alternate. What do we need in order to use parallel line facts?",
+        "D": "At least one person is correct. Think carefully about where angles need to be to be alternate. What do we need in order to use parallel line facts?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 93414,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b958836b-ec46-4bd9-82b8-3462d3569989.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "What kind of angle is 125? Is it bigger or smaller than a right angle?",
+        "B": "Check your subtraction carefully",
+        "C": "180 − 125 = 55",
+        "D": "Can you find any alternate, co-interior, corresponding or vertically opposite angles on the diagram?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 93429,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/60665c67-a54c-464f-8e00-fc8fe6a7d9e1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "What kind of angle is 79? Is it bigger or smaller than a right angle?",
+        "B": "180 − 79 = 101",
+        "C": "Check your subtraction carefully",
+        "D": "Can you find any alternate, co-interior, corresponding or vertically opposite angles on the diagram?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 93415,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2c0c2ee3-231d-4c71-bd7c-bc83388e1beb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Co-interior angles are sometimes called \"C\" or \"U\" angles. Corresponding angles are sometimes called \"F\" angles.",
+        "B": "Corresponding angles are equal, but co-interior angles add to 180",
+        "C": "Co-interior angles are sometimes called \"C\" or \"U\" angles. If one is acute, what is the other?",
+        "D": "Corresponding angles are sometimes called \"F\" angles and are in matching corners."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 120837,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cd4f609b-5efe-4bf6-81b3-241419358bf4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Co-interior angles are on the inside of a U shape. Can you use other angle facts to find relationships between the angles?",
+        "B": "Co-interior angles are on the inside of a U shape, so they are not co-interior. p is corresponding to the angle next to q, and they would form a straight line. Katie is correct, p + q = 180",
+        "C": "At least one person is incorrect. Can you use angle facts to find relationships between the angles?",
+        "D": "At least one person is correct. Can you use angle facts to find relationships between the angles?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

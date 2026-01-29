@@ -1,0 +1,165 @@
+{
+  "shortcode": "biik",
+  "name": "Written multiplication - method selection",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 24,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Multiply 3 digit integers by 1 digit integers using long multiplication",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiply 3 digit integers by 2 digit integers using long multiplication",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiply 2 digit integers by 2 digit integers using the grid method",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiply 3 digit integers by 2 digit integers using the grid method",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiply 3 digit integers by 2 digit integers using Napier’s bones",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 129051,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/60734b35-6089-478c-ae30-c9e53d6b741b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have read the correct row and column, but then you have added these numbers together. The question is asking us to multiply.",
+        "B": "The star is in the 7 column and the 40 row so we need to do 7 x 40. 7 x 4 is 28 so 7 x 40 is 280.",
+        "C": "You have read the correct row and column, but made a mistake with your calculation. 4 x 7 is 28. What is 40 x 7?",
+        "D": "Not quite. If 4 x 7 is 28, what is 40 x 7?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129191,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/31204e67-befb-4022-a391-838eb0bbfb44.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have read the correct row and column, but made a mistake with your calculation. 2 x 5 is 10. What is 20 x 5?",
+        "B": "You have read the correct row and column, but made a mistake with your calculation. If 2 x 5 is 10, what is 20 x 5?",
+        "C": "You have read the correct row and column, but then you have added these numbers together. The question is asking us to multiply.",
+        "D": "The star is in the 5 column and the 20 row so we need to do 5 x 20. 5 x 2 is 10 so 5 x 20 is 100."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129052,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e995a879-6bb2-42a5-ab9d-8a1aca20adbd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly! You have identified the correct numbers to multiply together but have made a mistake with your calculation. Start with 5 x 6, then 50 x 6 then 50 x 60.",
+        "B": "Nearly! You need to remember the place value of the 5 and 6 here. Start with 5 x 6, then 50 x 6 then 50 x 60.",
+        "C": "Not quite. You have identified the correct row and column, but you have added the numbers together. Here we need to multiply.",
+        "D": "We have to work out 50 x 60. If 5 x 6 is 30, then 50 x 6 is 300 and 50 x 60 is 3000."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129192,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1eaa6290-9b9f-4cdb-af38-bf4c2c6ad21c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. You have identified the correct row and column, but you have added the numbers together. Here we need to multiply.",
+        "B": "We have to work out 30 x 70. If 3 x 7 = 21 then 30 x 7 = 210 and 30 x 70 = 2100.",
+        "C": "Nearly! You have identified the correct numbers to multiply together but have made a mistake with your calculation. Start with 3 x 7, then 30 x 7, then 30 x 70.",
+        "D": "Nearly! You have identified the correct numbers to multiply together but have made a mistake with your calculation. Start with 3 x 7, then 30 x 7, then 30 x 70."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129053,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b275e48e-92b3-459b-bcbd-e135d77f8e1b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. You do get a 1 in this column when you work out 7 x 3, but we also have something in this column that was carried over from when we worked out 7 x 8. Write out your workings in full and see if you can spot it.",
+        "B": "When we work out 7 x 8 we get 56. The 6 would stay in the ones column, but the 5 would carry over to the tens. Then when we work out 7 x 3 we get 21. The 1 would stay in the tens column and the 2 would carry over to the hundreds. This leaves us with a 5 and a 1 in the tens column. We add these together to get 6.",
+        "C": "Not quite. We have to start by multiplying 8 by 7. What will stay in the ones columns? What will move to the tens column? Now try the same with 3 x 7.",
+        "D": "I think you have worked out the first step correctly. 7 x 8 gives us 56 and the 5 carries over into the tens column. But when we continue with the calculation where does the answer to 7 x 3 go?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129193,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/afca2faf-9cb0-4d4f-a80b-cd4d1e35c869.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. We have to start by multiplying 2 by 8. What will stay in the ones columns? What will move to the tens column? Now try the same with 6 x 8.",
+        "B": "I think you have worked out the first step correctly. 2 x 8 gives us 16 and the 1 carries over into the tens column. But when we continue with the calculation where does the answer to 6 x 8 go?",
+        "C": "Not quite. You do get an 8 in this column when you work out 6 x 8, but we also have something in this column that was carried over from when we worked out 2 x 8. Write out your workings in full and see if you can spot it.",
+        "D": "When we work out 2 x 8 we get 16. The 6 would stay in the ones column, but the 1 would carry over to the tens. Then when we work out 6 x 8 we get 48. The 8 would stay in the tens column and the 4 would carry over to the hundreds. This leaves us with a 1 and an 8 in the tens column. We add these together to get 9."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129054,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7611a951-7694-48b6-b67b-ac74d6a44bdd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. In our first line of working we need to multiply each digit of 276 by 4. Start on the right hand side with 4 x 6, then work along to 4 x 7 and 4 x 2. Remember to carry into the next column if needed!",
+        "B": "I think you have tried to work out the previous step of 7 x 4 which gives us 21 and the 2 carries over into the hundreds column. But we need to check any previous steps and continue with the calculation. Write out your workings in full and see if you can spot what else we need to include here.",
+        "C": "4 x 2 does give us 8, but we need to check whether any of the previous calculations (4 x 6 or 4 x 7) would have meant any numbers were carried over into this column. Start from the right and write your full method down.",
+        "D": "We start by working out 4 x 6. This gives us 24 so the 4 stays in the ones column and the 2 moves into the tens. Then we work out 4 x 7 which gives us 28. We need to add the 2 which was carried over from before so we now have 30. The 0 stays in the tens column and we carry the 3 into the hundreds column. Finally we work out 4 x 2 which gives us 8. We need to add the 3 which was carried over. This now gives us 11. So we have 1 in our hundreds column and 1 in our thousands column."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129194,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ff8d7012-8b70-4cc2-a6a5-62ea55f370b1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "6 x 3 does give us 18, which would lead to 8 in the hundreds column and 1 in the thousands, but we need to check whether any of the previous calculations (6 x 8 or 6 x 1) would have meant any numbers were carried over into this column. Start from the right and write your full method down.",
+        "B": "We start by working out 6 x 1 which gives us 6 so we put the 6 in the ones column and nothing carries over. We can now work out 6 x 8 which gives us 48. The 8 stays in the tens column and we carry the 4 over to the hundreds column. Finally we work out 6 x 3. This gives us 18, but we need to add on the 4 that we carried over. We get 22 so 2 stays in the hundreds column and 2 moves into the thousands.",
+        "C": "I think you might have multiplied 3 x 3 here. Remember we need to start from the right hand side. Start by working out 6 x 1, working from right to left and write your full method down.",
+        "D": "I think you may have made a mistake with carrying or you might have added our 2 numbers together here. Start by working out 6 x 1, then 6 x 8 and 6 x 3."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129055,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f6fe3f78-33d7-4d19-b562-0fbc363eb017.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It is the digit 5, but it has a different place value. When we write our answer from the Napier's bones method, we need to consider our diagonal groupings. The furthest right grouping (the number 8) would be the ones, the next would be the tens and so on. What place value group is our 5 in?",
+        "B": "Not quite. When we write our answer from the Napier's bones method, we need to consider our diagonal groupings. The furthest right grouping (the number 8) would be the ones, the next would be the tens and so on. What place value group is our 5 in?",
+        "C": "When we look at our diagonal groupings, the furthest right represents the ones (this contains the number 8). The next along represents the tens (this contains 4, 1 and 5), then the group we are interested in must represent the hundreds (5, 5, 1 and 9). So 5 represents 500. This makes sense because in this box we are actually working out 50 x 90 which would give us 4,500.",
+        "D": "Not quite. When we write our answer from the Napier's bones method, we need to consider our diagonal groupings. The furthest right grouping (the number 8) would be the ones, the next would be the tens and so on. What place value group is our 5 in?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129195,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a1f789c1-d06d-43cb-acf7-3ffb7f7c9002.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It is the digit 7, but it has a different place value. When we write our answer from the Napier's bones method, we need to consider our diagonal groupings. The furthest right grouping (the number 8) would be the ones, the next would be the tens and so on. What place value group is our 7 in?",
+        "B": "Not quite. When we write our answer from the Napier's bones method, we need to consider our diagonal groupings. The furthest right grouping (the number 8) would be the ones, the next would be the tens and so on. What place value group is our 7 in?",
+        "C": "Not quite. When we write our answer from the Napier's bones method, we need to consider our diagonal groupings. The furthest right grouping (the number 8) would be the ones, the next would be the tens and so on. What place value group is our 7 in?",
+        "D": "When we look at our diagonal groupings, the furthest right represents the ones (this contains the number 8). The next along represents the tens (this contains 4, 1 and 5), the next represents the hundreds (5, 5, 1 and 9), then the group we are interested in must represent the thousands (4, 7 and 0). So 7 represents 7,000. This makes sense because in this box we are actually working out 300 x 90 which would give us 27,000."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

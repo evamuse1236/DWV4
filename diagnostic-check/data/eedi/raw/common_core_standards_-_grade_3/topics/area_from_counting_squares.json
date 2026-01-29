@@ -1,0 +1,159 @@
+{
+  "shortcode": "biud",
+  "name": "Area from counting squares",
+  "collectionId": 33,
+  "level": 1,
+  "sequence": 44,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Find the area of rectilinear shapes by counting squares",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find the area of non-rectilinear shapes by counting squares, where all squares are either whole or exactly half-squares",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Estimate the area of non-rectilinear shapes by counting squares, where some squares are neither whole or exactly half-squares",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Understands the conservation of perimeter",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 98459,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8eb9414e-6aa1-4909-a595-1acea36b8c15.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The area of a shape is a measure of space inside that shape. The given shape has an area of 3 because it is made up of 3 square centimetres (or 3 squares on the grid).",
+        "B": "I think you've calculated the perimeter instead of the area. How much space is there inside the shape?",
+        "C": "I think you've found the area of the whole grid, rather than the area of the red shape.",
+        "D": "I think you've found the area of the square this would make, rather than only the area inside the red shape."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 98471,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/81ed63ac-4f14-48d5-9023-8acec8bb9942.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've found the area of the whole grid, rather than the area of the orange coloured shape.",
+        "B": "I think you've calculated the perimeter instead of the area. How much space is there inside the shape?",
+        "C": "I think you've found the area of the rectangle this could make, rather than only the area inside of the orange shaded shape.",
+        "D": "The area of a shape is a measure of space inside that shape. The given shape has an area of 5 because it is made up of 5 square centimetres (or 5 squares on the grid)."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 98460,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/504add10-74ec-468c-9e32-8ed744406109.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The area of a shape is a measure of space inside that shape. The given shape has an area of 3 because it is made up of 2 whole squares and 2 half squares (=1 whole square), giving a total of 3 squares.",
+        "B": "I think you've calculated the perimeter instead of the area,. How much space is there inside the shape?",
+        "C": "I think you may have miscounted the half squares. How many half squares are there here?",
+        "D": "I think you've counted half squares as whole squares. How many half squares make a whole square?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 98472,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e21894c3-3caa-49ce-b659-29f14c4a3ba0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've tried to find the perimeter instead of the area. How much space is there inside the shape?",
+        "B": "I think might have tried to use the formula for area of a triangle, but forgotten an important step. Or maybe you tried to find perimeter? For area, we need the space inside the shape.",
+        "C": "The area of a shape is a measure of space inside that shape. The shape has an area of 4.5 because it is made up of 3 whole squares and 3 half (=1.5) squares, giving a total of 4.5. You could also think of it as half of a square that is 3x3.",
+        "D": "I think you may have miscounted the half squares. How many half squares are there here?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 98461,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7fc5dba5-2cc9-4dca-be91-0cfe3aa56ebf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find the areas, we can count the number of smaller squares in the grid within each square. The blue square has an area of 9 whereas the red square has an area of 8 (4 whole squares and 8 half squares), so the blue square has a larger area.",
+        "B": "I think you may have miscounted the squares in the red square. Make sure you count the half squares as half, rather than wholes.",
+        "C": "I think you may have miscounted. You can find the area of the two squares by counting up the total number of smaller, grid squares in each shape. Make sure any half squares are counted as halves and not wholes.",
+        "D": "You can find the area of each square by counting up the total number of smaller, grid squares in each shape. Make sure any half squares are counted as halves and not wholes."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 124905,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/324db8cc-92de-4f05-8e8d-6a8871b11059.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To compare the two areas, carefully count the number of squares in each shape.",
+        "B": "To compare the two areas, carefully count the number of squares in each shape.",
+        "C": "The area of the two rectangles are equal; the blue rectangle has a total of 12 squares inside, and the red rectangle has a total of 12 squares inside too.",
+        "D": "To compare the two areas, try counting the number of squares in each shape."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 98464,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d441de90-20de-45df-9598-09b42a1a2365.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Make sure you carefully count the squares inside each diagram (area), and count the square lengths around the outside (perimeter) of each diagram, and then compare them all.",
+        "B": "Removing a square each time means that the area decreases. However, if you find the perimeter of all of the shapes, they all have a perimeter of 12, so the perimeter stays the same.",
+        "C": "Make sure you carefully count the squares inside each diagram (area), and count the square lengths around the outside (perimeter) of each diagram, and then compare them all.",
+        "D": "Make sure you carefully count the squares inside each diagram (area), and count the square lengths around the outside (perimeter) of each diagram, and then compare them all."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 98476,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/24e227fb-8a27-4288-a9e4-dab8be50efbc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Make sure you carefully count the squares inside each diagram (area), and count the square lengths around the outside (perimeter) of each diagram, and then compare them all.",
+        "B": "Make sure you carefully count the squares inside each diagram (area), and count the square lengths around the outside (perimeter) of each diagram, and then compare them all.",
+        "C": "Removing a square each time means that the area decreases by 1 each time. Counting the square lengths around the outside of each diagram, the first has a perimeter of 14, the second has a perimeter of 16, the third has a perimeter of 18 and the fourth has a perimeter of 20. This means both the perimeter and the area change.",
+        "D": "Make sure you carefully count the squares inside each diagram (area), and count the square lengths around the outside (perimeter) of each diagram, and then compare them all."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 98466,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c58bc83d-f7bc-46eb-a879-9c0558972238.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To answer this question, you could count the squares inside the shape: whole squares and part squares. It would help to consider whether the part squares are more or less than half of one whole square.",
+        "B": "If we count the total squares in the shape, we have 11 whole squares, and then 4 part squares. Each of the part squares are more than half of one square, and 4 half squares = 2 wholes. 11+2=13, so the area must be larger than 13.",
+        "C": "Think carefully about the part squares - are they equal to, smaller than or larger than half of a square?",
+        "D": "To answer this question, you could count the squares inside the shape: whole squares and part squares. It would help to consider whether the part squares are more or less than half of one whole square."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 124904,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e8d77cf2-c557-43de-8ddf-48586c1aff53.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To answer this question, you could count the squares inside the shape: whole squares and part squares. It would help to consider whether the part squares are more or less than half of one whole square.",
+        "B": "If we count the total squares in the shape, we have 8 whole squares, and then 4 part squares. Each of the part squares are more than half of one square, and 4 half squares = 2 wholes. 8+2=10, so the area must be larger than 10.",
+        "C": "Think carefully about the part squares - are they equal to, smaller than or larger than half of a square?",
+        "D": "To answer this question, you could count the squares inside the shape: whole squares and part squares. It would help to consider whether the part squares are more or less than half of one whole square."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

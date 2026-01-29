@@ -1,0 +1,147 @@
+{
+  "shortcode": "bigi",
+  "name": "Equivalent fractions 3",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 41,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify equivalent fractions when presented as shapes or objects",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify equivalent fractions when presented as numbers",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 156565,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/afb0ec22-fb07-4d85-8582-6c5b8797c34e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We can look at the fraction of each shape that is shaded. Are they equivalent fractions?",
+        "B": "We can look at the fraction of each shape that is shaded. Are they equivalent fractions?",
+        "C": "Shape P has 6/12 parts shaded and Shape Q has 2/4 parts shaded. Both fractions simplify to 1/2.",
+        "D": "We can look at the fraction of each shape that is shaded. Are they equivalent fractions?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 156583,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e5981129-e179-47ea-97a1-29611f085a36.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We can look at the fraction of each shape that is shaded. Are they equivalent fractions?",
+        "B": "We can look at the fraction of each shape that is shaded. Are they equivalent fractions?",
+        "C": "Shape P has 9/12 parts shaded. Shape Q has 3/4 parts shaded. 9/12 is equivalent to 3/4, so they have the same proportion shaded.",
+        "D": "We can look at the fraction of each shape that is shaded. Are they equivalent fractions?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 156566,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/916962e0-d4f0-4c46-90ed-c8620b50965e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We can look at the fraction of each shape that is shaded. Are they equivalent fractions?",
+        "B": "We can look at the fraction of each shape that is shaded. Are they equivalent fractions?",
+        "C": "Shape P has 4/16 parts shaded. Shape Q has 1/4 parts shaded. They are equivalent fractions. Therefore, the same proportion is shaded.",
+        "D": "We can look at the fraction of each shape that is shaded. Are they equivalent fractions?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 156584,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eb566a67-4af4-4010-b3aa-16827e86e7c9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Shape P has 8/16 parts shaded. Shape Q has 1/4 parts shaded. 8/16 is equivalent to 2/4, not 1/4, so they do not have the same proportion shaded. Shape P has a greater proportion shaded.",
+        "B": "We can look at the fraction of each shape that is shaded. Are they equivalent fractions?",
+        "C": "We can look at the fraction of each shape that is shaded. Are they equivalent fractions?",
+        "D": "We can look at the fraction of each shape that is shaded. Are they equivalent fractions?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158031,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/86c809ca-2068-443d-a00d-81d78ffc0359.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "1/4 is shown in the first diagram and 3/12 is shown in the second. The images are the same size showing that 1/4 is equivalent to 3/12",
+        "B": "1/4 is larger than 1/12 but look at the purple parts, what do you notice about their sizes? Therefore what can you say about 1/4 and 3/12?",
+        "C": "I think you are saying 1/4 is less than 3/12 because it is only 1 piece and the other is 3 pieces but we need to look at the size not the number of pieces. What do you notice about the sizes?",
+        "D": "It is one of the above... Look at the sizes of the purple pieces, what do you notice about them? Therefore what can you conclude about 1/4 and 3/12?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158198,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d612b0dc-31c2-4113-a71f-6dff54159470.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "1/3 is larger than 1/9 but look at the yellow parts, what do you notice about their sizes? Therefore what can you say about 1/3 and 3/9?",
+        "B": "I think you are saying 1/3 is less than 3/9 because it is only 1 piece and the other is 3 pieces but we need to look at the size not the number of pieces. What do you notice about the sizes?",
+        "C": "1/3 is shown in the first diagram and 3/9 is shown in the second. The images are the same size showing that 1/3 is equivalent to 3/9",
+        "D": "It is one of the above... Look at the sizes of the yellow pieces, what do you notice about them? Therefore what can you conclude about 1/3 and 3/9?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158032,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7fc1df1c-07f6-46f4-814d-77518d43480c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We are looking for a diagram where the wholes are the same size and the size of the purple parts are too. Can you spot it?!",
+        "B": "We are looking for a diagram where the wholes are the same size and the size of the purple parts are too. Can you spot it?!",
+        "C": "The first diagram shows 3/5 and the second 6/10. The wholes are the same size and the size of the purple parts are too therefore this diagram shows 3/5 = 6/10.",
+        "D": "We are looking for a diagram where the wholes are the same size and the size of the purple parts are too. Can you spot it?!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158199,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/32d554c4-1751-4eac-9188-4bd75f5a4bab.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We are looking for a diagram where the wholes are the same size and the size of the purple parts are too. Can you spot it?!",
+        "B": "We are looking for a diagram where the wholes are the same size and the size of the purple parts are too. Can you spot it?!",
+        "C": "We are looking for a diagram where the wholes are the same size and the size of the purple parts are too. Can you spot it?!",
+        "D": "The first diagram shows 2/5 and the second 4/10. The wholes are the same size and the size of the purple parts are too therefore this diagram shows 2/5 = 4/10."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158033,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a4c97a46-0183-4b4e-9289-3dfc1fe549ca.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is incorrect because when finding equivalent fractions you can multiply OR divide the numerator and denominator by the same value. Re-read the question to decide who is correct!",
+        "B": "This is incorrect because when finding equivalent fractions you can multiply OR divide the numerator and denominator by the same value. Re-read the question to decide who is correct!",
+        "C": "When finding equivalent fractions you can multiply OR divide the numerator and denominator by the same value therefore both Tom and Katie are correct because 1/4 x 2/2 = 2/8 and 2/8 ÷ 2/2 = 1/4",
+        "D": "To find equivalent fractions you can multiply OR divide the numerator and denominator by the same value. Now you have this information, re-read the question to decide who is correct!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158200,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/80e8d891-ff0b-4567-b0e3-ba1138ba0298.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is incorrect because when finding equivalent fractions you can multiply OR divide the numerator and denominator by the same value. Re-read the question to decide who is correct!",
+        "B": "This is incorrect because when finding equivalent fractions you can multiply OR divide the numerator and denominator by the same value. Re-read the question to decide who is correct!",
+        "C": "When finding equivalent fractions you can multiply OR divide the numerator and denominator by the same value therefore both Tom and Katie are correct because 3/5 x 2/2 = 6/10 and 6/10 ÷ 2/2 = 3/5",
+        "D": "To find equivalent fractions you can multiply OR divide the numerator and denominator by the same value. Now you have this information, re-read the question to decide who is correct!"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

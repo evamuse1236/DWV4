@@ -1,0 +1,147 @@
+{
+  "shortcode": "vq9",
+  "name": "Describing the shape of a data distribution",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 219,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Describe the shape of data when presented visually",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify whether a data set is skewed from a visual representation",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 154811,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/882ae7b6-0c8b-4d1d-814e-8238bc80e55d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Where would the line of symmetry be if this was symmetrical? The middle part looks symmetrical, but once you include all the data it loses its symmetry",
+        "B": "The most common amount of time spent was 7 hours. We can see this from the graph as there is a peak (highest point) at 7",
+        "C": "There is a gap in the data as no student spent 10 or 11 hours on the project. Check the other statements carefully",
+        "D": "There are 8 students who took longer than 7 hours to complete the project. How many students are there in total? You don't need to calculate an exact figure, but should be able to see from the diagram that most of the dots are NOT to the right of 7 hours"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 154816,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d7cb8bab-53eb-4aca-9fe0-cd1b7f91a549.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Where would the line of symmetry be if this was symmetrical? I'm not sure it shows any symmetry. Check the other statements carefully",
+        "B": "The greatest height recorded was 13 cm, but is that what is meant by the peak? The peak here refers to the most common height recorded.",
+        "C": "There is a gap in the data between 2 cm and 5 cm. We can see this from the graph as there are no data points between 2 cm and 5 cm.",
+        "D": "There are 6 seedlings that grew to greater than 10 cm. Is this most of the group?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 154812,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/80ed03f2-1d7a-4d4e-b1fa-d119d70ef221.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This DOES match the data set shown as 17 out of 18 data points are greater than 40 cm. Which statement does NOT match the data?",
+        "B": "There IS a large cluster of data between 40 and 80 cm. This means most of the data points lie in this range. Which statement does NOT match the data?",
+        "C": "I think there IS a clear outlier in the data. There is a value of 1 cm which is far away from the main cluster of data points. Which statement does NOT match the data?",
+        "D": "Between 40 and 70 cm the data looks pretty symmetrical, but if we look at the entire shape of the data it loses its symmetry. Therefore this statement does NOT match the data"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 154817,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/133920dc-c53f-401f-94dc-85262189dfad.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "18 out of 21 data points are greater than 20 seconds so this statement is correct. Which statement does NOT match the data set?",
+        "B": "There are no values recorded between 50 and 60 seconds so this DOES match the data set. Which statement does NOT match the data we have?",
+        "C": "There is NOT a clear outlier in the data set as there is not one point which is far away from the main cluster. Therefore this is the only statement which does not match the data",
+        "D": "If we look just at the section between 10 and 50 seconds, so the leaves matching the 1, 2, 3, 4 stems then we DO have symmetrical data. Which statement does NOT match our data set?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 154813,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/47f353c2-9724-455f-b887-1a7dc42ad128.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Where would the line of symmetry be if this was symmetrical?",
+        "B": "This data is left-skewed, meaning the majority of the data is clustered to the right, but some extreme values create a tail out towards the left",
+        "C": "Not quite. Data that is right-skewed would have the main body of the data sitting towards the left and a tail that is skewed out towards the right. How does the data we have compare?",
+        "D": "This data is skewed, but is it left-skewed or right-skewed? Think about what direction extreme values are pulling the data in."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 154818,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b53416a9-cf2e-4a31-ae68-3a23ee6d4659.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Where would the line of symmetry be if this was symmetrical?",
+        "B": "Not quite. Data that is left-skewed would have the main body of the data sitting towards the right and a tail that is skewed out towards the left. How does the data we have compare?",
+        "C": "This data is right-skewed, meaning the majority of the data is clustered to the left, but some extreme values create a tail out towards the right",
+        "D": "This data is skewed, but is it left-skewed or right-skewed? Think about what direction extreme values are pulling the data in."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 154814,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/461e93f7-3da9-4b62-986e-8d5c49e0ea91.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If this was symmetrical then we could expect the median to be in the middle of the box, and the tails to be relatively even. What type of skew is shown here?",
+        "B": "Not quite. Data that is left-skewed would have the main body of the data sitting towards the right and a tail that is skewed out towards the left. How does the data we have compare?",
+        "C": "This data is right-skewed, meaning the majority of the data is clustered to the left, but some extreme values create a tail out towards the right",
+        "D": "This data is skewed, but is it left-skewed or right-skewed? Think about what direction extreme values are pulling the data in."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 154819,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fa25b35f-0b68-41fa-adcf-33ee0bc095a5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If this was symmetrical then we could expect the median to be in the middle of the box, and the tails to be relatively even. What type of skew is shown here?",
+        "B": "This data is left-skewed, meaning the majority of the data is clustered to the right, but some extreme values create a tail out towards the left",
+        "C": "Not quite. Data that is right-skewed would have the main body of the data sitting towards the left and a tail that is skewed out towards the right. How does the data we have compare?",
+        "D": "This data is skewed, but is it left-skewed or right-skewed? Think about what direction extreme values are pulling the data in."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 154815,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5c850e96-99e9-4b00-9f0b-99b9bb34e3fd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This data is symmetrical, meaning there is no skew. Which diagram shows that extreme values to the left of the median are affecting its shape?",
+        "B": "This data is left-skewed, meaning the majority of the data is clustered to the right, but some extreme values create a tail out towards the left",
+        "C": "Not quite. This diagram shows data that is right-skewed because the main body of the data sits towards the left and extreme values towards the right affect the shape of the distribution. Which diagram would show left-skew?",
+        "D": "This data set shows neither symmetry or skewness. Try to find a diagram where extreme values towards the left of the data set affect its shape"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 154820,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1381e841-0248-4429-94b0-24db59ae60ab.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This data is symmetrical, meaning there is no skew. Which diagram shows that extreme values either to the left or the right are affecting its shape?",
+        "B": "This data is symmetrical, meaning there is no skew. Which diagram shows that extreme values either to the left or the right are affecting its shape?",
+        "C": "This data set shows neither symmetry or skewness. Try to find a diagram where extreme values towards either the left or the right affect its shape",
+        "D": "This data is left-skewed, meaning the majority of the data is clustered to the right, but some extreme values create a tail out towards the left, affecting the shape of the distribution"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

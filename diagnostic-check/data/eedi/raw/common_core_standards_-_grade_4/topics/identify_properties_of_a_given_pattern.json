@@ -1,0 +1,141 @@
+{
+  "shortcode": "bifz",
+  "name": "Identify properties of a given pattern",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 19,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify properties of a pattern",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158045,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f956b5fb-31fa-49c0-b49d-ecacf29e4e20.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "For the numbers to be even, they need to end in 0, 2, 4, 6 or 8 some of these end in 1 so they are odd. You are right to look at the ending of the numbers though, what do you notice?",
+        "B": "For the numbers to be odd, they need to end in 1, 3, 5, 7 or 9 some of these end in 6 so they are even. You are right to look at the ending of the numbers though, what do you notice?",
+        "C": "Some of the numbers end in 1, others end in 6 so some are odd and some are even. None of them are in the 15 times table, therefore they are not multiples of 15, so the only statement that must be true is option C and we can see the numbers in the pattern alternate by terminating in 1 and 6 so it is!",
+        "D": "We would need to multiply by 15, not add, to make them multiples of 15. To find the true statement, look at the ending of the numbers in the pattern..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158212,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/15d78b6e-c730-46ae-8174-d019d938dea9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Some of the numbers end in 3, others end in 8 so some are odd and some are even. None of them are in the 15 times table, therefore they are not multiples of 15, so the only statement that must be true is option A and we can see the numbers in the pattern alternate by terminating in 3 and 8 so it is!",
+        "B": "We would need to multiply by 15, not add, to make them multiples of 15. To find the true statement, look at the ending of the numbers in the pattern...",
+        "C": "For the numbers to be odd, they need to end in 1, 3, 5, 7 or 9 some of these end in 8 so they are even. You are right to look at the ending of the numbers though, what do you notice?",
+        "D": "For the numbers to be even, they need to end in 0, 2, 4, 6 or 8 some of these end in 3 so they are odd. You are right to look at the ending of the numbers though, what do you notice?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158046,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/01a3568b-949d-4974-a28d-0300bf60d14d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You are looking for the statement that is not true, all the numbers are multiples of 2. Pick which is not true: they are all multiples of 3, 4, the sequence increasing by more each time...",
+        "B": "4 is not a multiple of 3 therefore this statement is not true about this pattern",
+        "C": "You are looking for the statement that is not true, all the numbers are multiples of 4. Pick which is not true: they are all multiples of 2, 3, the sequence increasing by more each time...",
+        "D": "You are looking for the statement that is not true, the pattern is increasing by more each step. Pick which is not true: they are all multiples of 2, 3, or 4..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158213,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/23f99d5d-2311-4956-b183-40b8da0407c0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You are looking for the statement that is not true, the pattern is increasing by more each step. Pick which is not true: they are all multiples of 2, 3, or 5...",
+        "B": "You are looking for the statement that is not true, all the numbers are multiples of 2. Pick which is not true: they are all multiples of 3, 5, the sequence increasing by more each time...",
+        "C": "You are looking for the statement that is not true, all the numbers are multiples of 5. Pick which is not true: they are all multiples of 2, 3, the sequence increasing by more each time...",
+        "D": "10 is not a multiple of 3 therefore this statement is not true about this pattern"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158047,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ef7c7d9d-6bb5-4e52-bb5f-a0861db852eb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have selected this option as the pattern starts with 2 but if you write out the first few numbers in the pattern, you get: 2, 7, 12, 17, 22, 27, 32 etc and not all of these are divisible by 2. Which of the statements is correct about the numbers in the pattern?",
+        "B": "I think you have selected this option because 5 is odd but if you write out the first few numbers in the pattern, you get: 2, 7, 12, 17, 22, 27, 32 etc and not all of these are odd. Which of the statements is correct about the numbers in the pattern?",
+        "C": "If you write out the first few numbers in the pattern, you get: 2, 7, 12, 17, 22, 27, 32 etc therefore the numbers in the pattern are alternating between odd and even so this statement is true.",
+        "D": "I think you have selected this option as you are adding 5 each time but if you write out the first few numbers in the pattern, you get: 2, 7, 12, 17, 22, 27, 32 etc and not all of these are divisible by 5. Which of the statements is correct about the numbers in the pattern?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158214,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/565178b6-ef67-4adf-9f34-e21d70f8c66b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have selected this option because 3 is odd but if you write out the first few numbers in the pattern, you get: 4, 7, 10, 13, 16, 19, 22 etc and not all of these are odd. Which of the statements is correct about the numbers in the pattern?",
+        "B": "If you write out the first few numbers in the pattern, you get: 4, 7, 10, 13, 16, 19, 22 etc therefore the numbers in the pattern are alternating between odd and even so this statement is true.",
+        "C": "I think you have selected this option as you are adding 3 each time but if you write out the first few numbers in the pattern, you get: 4, 7, 10, 13, 16, 19, 22 etc and not all of these are divisible by 3. Which of the statements is correct about the numbers in the pattern?",
+        "D": "I think you have selected this option as the pattern starts with 4 but if you write out the first few numbers in the pattern, you get: 4, 7, 10, 13, 16, 19, 22 etc and not all of these are divisible by 4. Which of the statements is correct about the numbers in the pattern?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158048,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eaca9d83-2f7d-4517-b140-2577b67a76d5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The sequence starts with 75 which is an odd number so all the numbers can't be even. Here are the first few numbers in the pattern: 75, 69, 63, 57, 51, 45 etc. Read the statements again, which is true?",
+        "B": "I think you have selected this option as the pattern starts with 75 but if you write out the first few numbers in the pattern, you get: 75, 69, 63, 57, 51, 45 etc and not all of these are factors of 75. Which of the statements is true about the numbers in the pattern?",
+        "C": "If you write out the first few numbers in the pattern, you get: 75, 69, 63, 57, 51, 45 etc and all these numbers are divisible by 3 so this statement is true.",
+        "D": "I think you have selected this option as you are subtracting 6 each time but if you write out the first few numbers in the pattern, you get: 75, 69, 63, 57, 51, 45 etc and not all of these are divisible by 6. Which of the statements is true about the numbers in the pattern?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158215,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea9bbc39-e5c0-415e-84ca-1d430f6d45b8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If you write out the first few numbers in the pattern, you get: 85, 75, 65, 55, 45 etc and all these numbers are divisible by 5 so this statement is true.",
+        "B": "I think you have selected this option as you are subtracting 10 each time but if you write out the first few numbers in the pattern, you get: 85, 75, 65, 55, 45 etc and these are not divisible by 10. Which of the statements is true about the numbers in the pattern?",
+        "C": "I think you have selected this option as the pattern starts with 85 but if you write out the first few numbers in the pattern, you get: 85, 75, 65, 55, 45 etc and not all of these are factors of 85. Which of the statements is true about the numbers in the pattern?",
+        "D": "The sequence starts with 85 which is an odd number so all the numbers can't be even. Here are the first few numbers in the pattern: 85, 75, 65, 55, 45 etc. Read the statements again, which is true?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158049,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8c36caba-b510-4855-81fa-abb6842a5246.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You are looking for the statement that is not true, because we are multiplying by 5 each time, every number is divisible by 5. Here are the first few numbers in the pattern: 15, 75, 375, 1875 etc. Read the statements again, which is not true?",
+        "B": "You are looking for the statement that is not true, because we started with 15 and are multiplying by 5 each time, every number is divisible by 15. Here are the first few numbers in the pattern: 15, 75, 375, 1875 etc. Read the statements again, which is not true?",
+        "C": "You are looking for the statement that is not true, if you write out the first few numbers in the pattern, you get: 15, 75, 375, 1875 etc. so they do all end in 5. Read the other statements to find out which is not true...",
+        "D": "If you write out the first few numbers in the pattern, you get: 15, 75, 375, 1875 etc therefore the numbers are always ending in 5 so this statement saying they alternate between 0 and 5 is not true"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158216,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c6a91435-c748-4c0c-ba0e-1985243488ab.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You are looking for the statement that is not true, because we started with 50 and are multiplying by 6 each time, every number is divisible by 50. Here are the first few numbers in the pattern: 50, 300, 1800 etc. Read the statements again, which is not true?",
+        "B": "You are looking for the statement that is not true, because we are multiplying by 6 each time, every number is divisible by 6. Here are the first few numbers in the pattern: 50, 300, 1800 etc. Read the statements again, which is not true?",
+        "C": "If you write out the first few numbers in the pattern, you get: 50, 300, 1800 etc therefore the numbers are always ending in 0 so this statement saying they alternate between 6 and 0 is not true",
+        "D": "You are looking for the statement that is not true, if you write out the first few numbers in the pattern, you get: 50, 300, 1800 etc. so they do all end in 0. Read the other statements to find out which is not true..."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

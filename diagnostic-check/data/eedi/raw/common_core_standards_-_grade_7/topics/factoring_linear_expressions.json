@@ -1,0 +1,141 @@
+{
+  "shortcode": "ehd6",
+  "name": "Factoring Linear Expressions",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 133,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Factorise a single bracket containing a linear expression by taking out a single numeric common factor (e.g. 6)",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166298,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/31ee6750-934d-4696-8274-44c74ba10496.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have found a common factor of -18𝑥 and -12 but it is not the greatest common factor",
+        "B": "-9 is a factor of -18𝑥 but it is not a factor of -12. You need to find the greatest common factor of -18𝑥 and -12.",
+        "C": "Watch out for the signs here, does 6 × 3𝑥 give us -18𝑥?",
+        "D": "The greatest common factor of -18𝑥 and -12 is -6 so that goes outside the bracket. -6 × 3𝑥 = -18𝑥 and -6 × 2 = -12 so we get: -6(3𝑥 + 2)"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166525,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b4978bfe-572e-4dc5-b04e-7e1785565723.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "-4 is a factor of -20𝑥 but it is not a factor of -10. You need to find the greatest common factor of -20𝑥 and -10.",
+        "B": "You have found a common factor of -20𝑥 and -10 but it is not the greatest common factor",
+        "C": "The greatest common factor of -20𝑥 and -10 is -10 so that goes outside the bracket. -10 × 2𝑥 = -20𝑥 and -10 × 1 = -10 so we get: -10(2𝑥 + 1)",
+        "D": "Watch out for the signs here, does 10 × 2𝑥 give us -20𝑥?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166299,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0a8281f7-acb2-4fc7-9ca4-73271460b395.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have subtracted 4 from both terms but we actually need to divide both terms by 4 as 4 is the greatest common factor of -12𝑥 and 8.",
+        "B": "The greatest common factor of 12𝑥 + 8 is 4. 12𝑥/4 = 3𝑥 and 8/4 = 2 so we get 4(3𝑥 + 2).",
+        "C": "You have correctly divided 12𝑥 by 4 but remember you need to divide both terms by 4. ",
+        "D": "You have correctly divided 8 by 4 but remember you need to divide both terms by 4. "
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166526,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3593e08b-b342-4285-889f-7bc667b1cd7e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have subtracted 4 from both terms but we actually need to divide both terms by 4 as 4 is the greatest common factor of -16𝑥 and 12.",
+        "B": "You have correctly divided 12 by 4 but remember you need to divide both terms by 4. ",
+        "C": "You have correctly divided 16𝑥 by 4 but remember you need to divide both terms by 4. ",
+        "D": "The greatest common factor of 16𝑥 + 12 is 4. 16𝑥/4 = 4𝑥 and 12/4 = 3 so we get 4(4𝑥 + 3)."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166300,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9e0e8add-d211-4653-98f2-bbd08a6a1510.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The greatest common factor of 36𝑥 – 6 is 6. 36𝑥/6 = 6𝑥 and -6/6 = -1 so we get 6(6𝑥 – 1).",
+        "B": "Remember, the number outside the bracket should be the greatest common factor of both terms.",
+        "C": "Remember, the number outside the bracket should be the greatest common factor of both terms.",
+        "D": "It looks like you have only factored out a factor of the first term. You need to find the greatest common factor of both terms."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166527,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b93ec60d-ae7b-4d8e-9780-565168e6746f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember, the number outside the bracket should be the greatest common factor of both terms.",
+        "B": "The greatest common factor of 64𝑥 – 8 is 8. 64𝑥/8 = 8𝑥 and -8/8 = -1 so we get 8(8𝑥 – 1).",
+        "C": "It looks like you have only factored out a factor of the first term. You need to find the greatest common factor of both terms.",
+        "D": "Remember, the number outside the bracket should be the greatest common factor of both terms."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166301,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d743716-0e18-469f-af05-42afa51eebef.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember, the number outside the bracket should be the greatest common factor of both terms.",
+        "B": "Almost, but you need to check -54/-18... A negative divided by a negative gives what type of answer?",
+        "C": "The greatest common factor of -18𝑥 – 54 is -18. -18𝑥/-18 = 𝑥 and -54/-18 = 3 so we get -18(𝑥 + 3).",
+        "D": "It looks like you have only factored out the greatest common factor from the first term...."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166528,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/450e9221-923d-4874-b452-e36254c990e1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember, the number outside the bracket should be the greatest common factor of both terms.",
+        "B": "The greatest common factor of -16𝑥 – 48 is -16. -16𝑥/-16 = 𝑥 and -48/-16 = 3 so we get -16(𝑥 + 3).",
+        "C": "Almost, but you need to check -48/-16... A negative divided by a negative gives what type of answer?",
+        "D": "It looks like you have only factored out the greatest common factor from the first term...."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166302,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1962d549-a042-49d3-8110-087995664be8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember we need to find the greatest common factor of -25𝑥 and 150 to go outside of the bracket.",
+        "B": "Tom has not found the greatest common factor of -25𝑥 and 150 so his is not fully factored. Katie has found the greatest common factor and if we expand 25(-𝑥 + 6) we get -25𝑥 + 150 so only katie is correct.",
+        "C": "Have another look, have both Tom and Katie found the greatest common factor of -25𝑥 and 150 to go outside of their bracket?",
+        "D": "At least one of them is correct. Remember to fully factor an expression we need to start by finding the greatest common factor of -25𝑥 and 150."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166529,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bca1ea69-eb0c-482d-b06f-a136db8ef182.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom has not used the greatest common factor of -15𝑥 and 90 so he has not fully factored the expression.",
+        "B": "Expand both Tom's and Katie's expressions. Does Katie's give you -15𝑥 + 90? Remember to fully factor an expression, you need the greatest common factor of both terms.",
+        "C": "Remember you need to find the greatest common factor of both terms to fully factor an expression. Also, check the signs on the terms in both factored expressions.",
+        "D": "Tom has not fully factored the expression as 5 is not the greatest common factor of -15𝑥 and 90. If you expand Katie's expression, you get 15𝑥 + 90 but it needed to be -15𝑥 + 90 so neither are correct."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

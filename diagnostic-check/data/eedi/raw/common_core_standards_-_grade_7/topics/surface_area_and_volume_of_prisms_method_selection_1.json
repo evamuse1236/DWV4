@@ -1,0 +1,159 @@
+{
+  "shortcode": "vw5",
+  "name": "Surface area and volume of prisms method selection 1",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 210,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate the surface area of a cuboid where the dimensions are given in the same units",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the volume of a cuboid when the dimensions are given in the same units",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the volume of a triangular-based prism when the dimensions are given in the same units",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify a prism from a diagram",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 77180,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c197022b-7090-499e-b688-0f9fe3f0e854.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Here we have multiplied all of the numbers together. We should only include 3 once.",
+        "B": "Not quite! This is a correct possible method. Multiplying by 4 and then dividing by 2 is the same as multiplying by 2, so even though this isn't the most straightforward way of calculating the volume, it would work.",
+        "C": "Not quite! This is how we calculate the volume of a cuboid: length x width x height.",
+        "D": "Not quite! This is a correct possible method. Multiplying by 2 and by 5 is the same as multiplying by 10, so even though this isn't the most obvious way of calculating the volume, it would work."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79010,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d48a2e0e-da66-4f4a-8742-800694062e2a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! This is how we calculate the volume of a cuboid: length x width x height.",
+        "B": "Not quite! This is a correct possible method. Multiplying by 6 and then dividing by 2 is the same as multiplying by 3, so even though this isn't the most straightforward way of calculating the volume, it would work.",
+        "C": "Not quite! This is a correct possible method. Multiplying by 2 and by 4 is the same as multiplying by 8, so even though this isn't the most obvious way of calculating the volume, it would work.",
+        "D": "Here all of the dimensions have been multiplied together, but the 4 has been incorrectly multiplied twice."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 77181,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/91755e21-9d1a-42fb-8897-16f483618444.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The volume of a cube or cuboid is length × width × height. Calculate each volume first then pick the odd one out.",
+        "B": "The volume of a cube or cuboid is length × width × height. Calculate each volume first then pick the odd one out.",
+        "C": "The volume of a cube or cuboid is length × width × height. Calculate each volume first then pick the odd one out.",
+        "D": "This cuboid has volume 8 × 2 × 2 = 32. The other shapes have a volume of 64."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79011,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/112839d8-0287-41d3-a9a1-a4df7be0de23.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The volume of a cube or cuboid is length × width × height. Calculate each volume first then pick the odd one out.",
+        "B": "This cuboid has volume 1 × 16 × 2 = 32. The other shapes have a volume of 64.",
+        "C": "The volume of a cube or cuboid is length × width × height. Calculate each volume first then pick the odd one out.",
+        "D": "The volume of a cube or cuboid is length × width × height. Calculate each volume first then pick the odd one out."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 78377,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9042c45c-372c-4331-878c-44fcf3e106cb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is a cylinder. A prism has two end faces that are identical and parallel to each other. A prism has no curved edges.",
+        "B": "This is a sphere. A prism has two end faces that are identical and parallel to each other. A prism has no curved edges.",
+        "C": "This is a pyramid. A prism has two end faces that are identical and parallel to each other. A prism has no curved edges.",
+        "D": "A prism has two end faces that are identical and parallel to each other. A prism has only straight edges. Therefore none of these shapes are prisms."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78671,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/371856ef-8496-4b56-9807-3c384813682d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is a sphere. A prism has two end faces that are identical and parallel to each other. A prism has no curved edges.",
+        "B": "This is a pyramid. A prism has two end faces that are identical and parallel to each other.",
+        "C": "This is a prism, as it has two identical end faces that are parallel to each other. The cross-section of this shape is the same all along its length.",
+        "D": "This is a cone. A prism has two end faces that are identical and parallel to each other."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 78378,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/980f0893-f2f2-43d9-bdc0-3a82ff05bbee.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have calculated the volume. The surface area is the total area of all six rectangular faces.",
+        "B": "I think you have only calculated the surface area of the three faces you can see. What about the other three faces?",
+        "C": "Not quite. The surface area is the total area of all six rectangular faces.",
+        "D": "The total area of the six rectangular faces is 2(2×5 + 2×10 + 10×5) = 160 cm²."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78672,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/11543a06-351c-4c66-94b1-4a3c4f4bb34a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have only calculated the surface area of the three faces you can see. What about the other three faces?",
+        "B": "Not quite. The surface area is the total area of all six rectangular faces.",
+        "C": "The total area of the six rectangular faces is 2(3×6 + 3×12 + 12×6) = 252 cm².",
+        "D": "I think you have calculated the volume. The surface area is the total area of all six rectangular faces."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 78379,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eb5c152a-773f-4fd8-83e5-5e04cdb6b935.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Don't forget to divide by 2 when you are calculating the area of the front triangular face.",
+        "B": "I think you have just added together the lengths you can see. The volume of a prism is the area of the cross section (in this case the triangle) multiplied by the length.",
+        "C": "The volume of a prism is the area of the cross section (in this case the triangle) multiplied by the length. (½ × 6 × 2) × 12 = 72 cm³.",
+        "D": "There is enough information. The volume of a prism is the area of the cross section (in this case the triangle) multiplied by the length."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78673,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d51d7caf-09ea-45a2-ba3f-a6cfcd4f39ee.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Don't forget to divide by 2 when you are calculating the area of the front triangular face.",
+        "B": "The volume of a prism is the area of the cross section (in this case the triangle) multiplied by the length. (½ × 8 × 3) × 10 = 120 cm³.",
+        "C": "I think you have just added together the lengths you can see. The volume of a prism is the area of the cross section (in this case the triangle) multiplied by the length.",
+        "D": "There is enough information. The volume of a prism is the area of the cross section (in this case the triangle) multiplied by the length."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

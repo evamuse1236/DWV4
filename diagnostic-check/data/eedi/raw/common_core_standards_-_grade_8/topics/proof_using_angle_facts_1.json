@@ -1,0 +1,165 @@
+{
+  "shortcode": "v1c",
+  "name": "Proof using angle facts 1",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 127,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Use angles around a point with algebra to prove results",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use corresponding angles to form and solve algebraic equations",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Derive the fact that interior angles in a quadrilateral add up to 360°",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use facts about interior angles in polygons with algebra to prove results",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Derive the fact that interior angles in a triangle add up to 180°",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 131856,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/91f8d2ac-3f53-4e11-8c7a-af0a4fca6347.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The angles around a point add to 360, so we have m + 100 + 260 - 2m + 2m - n = 360. Simplifying we have m - n + 360 = 360. Subtracting 360 from both sides we have m - n = 0, so m = n",
+        "B": "To help you with this question, start by setting up an equation to show that the angles around a point add to 360. Then you can simplify this and rearrange to get the correct equation.",
+        "C": "To help you with this question, start by setting up an equation to show that the angles around a point add to 360. Then you can simplify this and rearrange to get the correct equation.",
+        "D": "To help you with this question, start by setting up an equation to show that the angles around a point add to 360. Then you can simplify this and rearrange to get the correct equation."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134049,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f44f3b88-d5ed-41e0-8c07-751bce30500d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To help you with this question, start by setting up an equation to show that the angles around a point add to 360. Then you can simplify this and rearrange to get the correct equation.",
+        "B": "The angles around a point add to 360, so we have m + 50 + 220 - 2m + 2m + n = 360. Simplifying we have m + n + 270 = 360. Subtracting 270 from both sides we have m + n = 90",
+        "C": "To help you with this question, start by setting up an equation to show that the angles around a point add to 360. Then you can simplify this and rearrange to get the correct equation.",
+        "D": "To help you with this question, start by setting up an equation to show that the angles around a point add to 360. Then you can simplify this and rearrange to get the correct equation."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131857,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0e8d9e4d-4b68-43f6-bd92-2c1d78c0a66d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have recognised correctly that we are looking to prove an angle fact, but none of the marked angles are vertically opposite to each other. What can the marked angles tell us about the triangle in the diagram?",
+        "B": "We can see that the three angles at the bottom of the diagram add up to 180 degrees as they lie around one point on a straight line. They are the same angles as the three angles inside the triangle in the diagram (as the green angles are alternate to each other and so are the orange angles) therefore the interior angles of the triangle have to add up to 180 degrees",
+        "C": "You have recognised correctly that we are looking to prove an angle fact, but none of the marked angles go all the way around a point . What can the marked angles tell us about the triangle in the diagram?",
+        "D": "You have recognised correctly that we are looking to prove an angle fact, but the marked angles are on the interior of the triangle not the exterior of the triangle. What can the marked angles tell us about the interior angles of the triangle?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134050,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c8b4bde4-b57a-4596-92e7-ae9d270fbeda.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have recognised correctly that we are looking to prove an angle fact about the interior angles of the triangle but we don't have information about the lengths of the sides so we don't know the individual sizes of each angle. What can we tell about the sum of the angles?",
+        "B": "You have recognised correctly that we are looking to prove an angle fact, but the marked angles are on the interior of the triangle not the exterior of the triangle. What can the marked angles tell us about the interior angles of the triangle?",
+        "C": "You have recognised correctly that we are looking to prove an angle fact about the interior angles of a triangle but triangles don't have opposite angles. You might have been thinking about base angles in an isosceles triangle being equal but we dont know whether this triangle is isosceles. What can the diagram tell us about the sum of the marked angles?",
+        "D": "We can see that the three angles at the bottom of the diagram add up to 180 degrees as they lie around one point on a straight line. They are the same angles as the three angles inside the triangle in the diagram (as the green angles are alternate to each other and so are the orange angles) therefore the interior angles of the triangle have to add up to 180 degrees"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131858,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5e91bbe8-2950-4abe-bc6f-2796a5de3e47.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost! I think you have recognised that these are corresponding angles but then have just made n and m equal as opposed to making the expressions equal to each other.",
+        "B": "The angles are corresponding and therefore are equal. if you make m-20=n+70 and then rearrange you get m-n=90",
+        "C": "You have correctly recognised that you can use the fact that corresponding angles are equal to form an equation m-20=n+70 but have made a mistake when rearranging. How can we create an equation with m and n on the same side?",
+        "D": "You have correctly recognised that they can use the fact that corresponding angles are equal to form an equation m-20=n+70 but have made a mistake when rearranging. Do we need to add or subtract 20 from both sides?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134051,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2838d501-e321-4c12-a49c-b71b35b1029e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost! I think you have recognised that these are corresponding angles but then have just made n and m equal as opposed to making the expressions equal to each other",
+        "B": "You have correctly recognised that you can use the fact that corresponding angles are equal to form an equation m+40=130-n but have made a mistake when rearranging. When getting m and n on the same side of the equation do I need to add or subtract n?",
+        "C": "The angles are corresponding and therefore are equal. iI you make m+40=130-n and then rearrange you get m+n=90",
+        "D": "You have correctly recognised that you can use the fact that corresponding angles are equal to form an equation m+40=130-n but have made a mistake when rearranging. How could you end up with n on the left hand side of your equation? Do I need to add or subtract 40 from both sides?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131859,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/71beddf6-4278-4da4-9d8b-4eda49ec9580.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "By splitting this quadrilateral into two triangles we are able to find that the interior angles of a quadrilateral add to 360 degrees, as the interior angles of each triangle sum to 180.",
+        "B": "Not quite! How can we use the fact that the interior angles in a triangle sum to 180 degrees to make a statement about the whole quadrilateral?",
+        "C": "Not quite! Although this diagram does tell us something about 360 degrees we are not looking at angles around any of the points",
+        "D": "Not quite, exterior angles are on the outside of a shape and we are looking at angles that are on the inside of the quadrilateral. Think carefully about what shapes the quadrilateral has been split into."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134052,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9470982d-1804-4e27-a211-4e6c0228d037.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Although this diagram does tell us something about 360 degrees we are not looking at angles around any of the points",
+        "B": "Not quite, exterior angles are on the outside of a shape and we are looking at angles that are on the inside of the quadrilateral. Think carefully about what shapes the quadrilateral has been split into.",
+        "C": "By splitting this quadrilateral into two triangles we are able to find that the interior angles of a quadrilateral add to 360 degrees, as the interior angles of each triangle sum to 180.",
+        "D": "In this diagram the opposite angles are not necessarily equal. Look at which angles are highlighted and what they tell us about the sum of the interior angles of this shape"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131860,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d3303bd0-5b7f-4cfb-9685-0278f4143949.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Start by adding all the angles together and collecting like terms. What should the interior angles of a quadrilateral add up to?",
+        "B": "Not quite. Start by adding all the angles together and collecting like terms. What should the interior angles of a quadrilateral add up to?",
+        "C": "If we collect together all the angles we get m + n + 180. We know that the interior angles of a quadrilateral add to 360 so we can write m + n + 180 = 360. By subtracting 180 from both sides we get m + n = 180",
+        "D": "Not quite. Start by adding all the angles together and collecting like terms. What should the interior angles of a quadrilateral add up to?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134053,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d7575b6c-973b-4970-bfb9-1ebf1344e29a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Start by adding all the angles together and collecting like terms. What should the interior angles of a quadrilateral add up to?",
+        "B": "Not quite. Start by adding all the angles together and collecting like terms. What should the interior angles of a quadrilateral add up to?",
+        "C": "If we collect together all the angles we get m + n + 90. We know that the interior angles of a quadrilateral add to 360 so we can write m + n + 90 = 360. By subtracting 90 from both sides we get m + n = 270",
+        "D": "Not quite. Start by adding all the angles together and collecting like terms. What should the interior angles of a quadrilateral add up to?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

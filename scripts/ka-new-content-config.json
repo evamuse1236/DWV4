@@ -1,0 +1,398 @@
+{
+  "description": "New Khan Academy URLs to fill 42 empty rows in playlist_mapping.json. Each URL is a KA unit/topic page that has NOT been assigned to this specific row before.",
+  "created": "2026-01-29",
+  "assignments": [
+    {
+      "curriculum": "MYP Y1",
+      "row": 6,
+      "topic": "Fractions Foundation",
+      "learning_objective_abbrev": "GCF and Simplifying fractions",
+      "ka_unit_name": "Equivalent fractions and comparing fractions",
+      "ka_unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/comparing-fractions-and-equivalent-fractions",
+      "match_quality": "strong",
+      "note": "Same URL as MYP Row 5 — strong match for simplifying fractions content"
+    },
+    {
+      "curriculum": "MYP Y1",
+      "row": 10,
+      "topic": "Arithmetic MYP 1",
+      "learning_objective_abbrev": "Multi-digit division (4-digit by 2-digit)",
+      "ka_unit_name": "Division (4th grade)",
+      "ka_unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/division",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "MYP Y1",
+      "row": 11,
+      "topic": "Arithmetic MYP 1",
+      "learning_objective_abbrev": "Simple word problems (add/sub/mul/div)",
+      "ka_unit_name": "Intro to multiplication",
+      "ka_unit_url": "https://www.khanacademy.org/math/cc-third-grade-math/intro-to-multiplication",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "MYP Y1",
+      "row": 12,
+      "topic": "Arithmetic MYP 1",
+      "learning_objective_abbrev": "Multi-step word problems",
+      "ka_unit_name": "Multiplication and division (4th grade)",
+      "ka_unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/cc-4th-mult-div-topic",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "MYP Y1",
+      "row": 13,
+      "topic": "Arithmetic MYP 1",
+      "learning_objective_abbrev": "Mental estimation using rounding",
+      "ka_unit_name": "Addition, subtraction, and estimation (3rd grade)",
+      "ka_unit_url": "https://www.khanacademy.org/math/cc-third-grade-math/imp-addition-and-subtraction",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "MYP Y1",
+      "row": 14,
+      "topic": "Arithmetic MYP 1",
+      "learning_objective_abbrev": "Verify answers with rounding/inverse operations",
+      "ka_unit_name": "More with multiplication and division (3rd grade)",
+      "ka_unit_url": "https://www.khanacademy.org/math/cc-third-grade-math/imp-multiplication-and-division",
+      "match_quality": "partial",
+      "note": "Closest match — covers estimation/verification of multiplication/division results"
+    },
+    {
+      "curriculum": "MYP Y1",
+      "row": 24,
+      "topic": "Fractions",
+      "learning_objective_abbrev": "Add and subtract mixed fractions",
+      "ka_unit_name": "Add and subtract mixed numbers (Arithmetic)",
+      "ka_unit_url": "https://www.khanacademy.org/math/arithmetic-home/arith-review-fractions/add-sub-mixed-numbers",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "MYP Y1",
+      "row": 27,
+      "topic": "Fractions",
+      "learning_objective_abbrev": "Divide fraction by fraction",
+      "ka_unit_name": "Fractions (Pre-Algebra)",
+      "ka_unit_url": "https://www.khanacademy.org/math/pre-algebra/pre-algebra-fractions",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "MYP Y1",
+      "row": 28,
+      "topic": "Fractions",
+      "learning_objective_abbrev": "Fraction word problems (all operations)",
+      "ka_unit_name": "Add and subtract fractions (different denominators)",
+      "ka_unit_url": "https://www.khanacademy.org/math/arithmetic/x18ca194a:add-and-subtract-fractions-different-denominators",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "MYP Y1",
+      "row": 31,
+      "topic": "Decimals",
+      "learning_objective_abbrev": "Multiply 2 decimal numbers",
+      "ka_unit_name": "Arithmetic decimals",
+      "ka_unit_url": "https://www.khanacademy.org/math/arithmetic/arith-decimals",
+      "match_quality": "strong",
+      "note": "Broad arithmetic decimals course — covers multiplying decimal×decimal"
+    },
+    {
+      "curriculum": "MYP Y1",
+      "row": 33,
+      "topic": "Decimals",
+      "learning_objective_abbrev": "Divide decimal by decimal",
+      "ka_unit_name": "Decimals (Arithmetic review)",
+      "ka_unit_url": "https://www.khanacademy.org/math/arithmetic-home/arith-review-decimals",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "MYP Y1",
+      "row": 35,
+      "topic": "Decimals",
+      "learning_objective_abbrev": "Decimal word problems (all operations)",
+      "ka_unit_name": "Get ready for adding and subtracting decimals",
+      "ka_unit_url": "https://www.khanacademy.org/math/get-ready-for-5th-grade/x01d8909412c13b9d:get-ready-for-adding-subtracting-decimals",
+      "match_quality": "partial",
+      "note": "Get-ready module covers decimal concepts; word problems span multiple units"
+    },
+    {
+      "curriculum": "MYP Y1",
+      "row": 45,
+      "topic": "Algebra foundations",
+      "learning_objective_abbrev": "Order of operations (BODMAS)",
+      "ka_unit_name": "Exponents intro and order of operations (Pre-Algebra)",
+      "ka_unit_url": "https://www.khanacademy.org/math/pre-algebra/xb4832e56:exponents-intro-and-order-of-operations",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "MYP Y1",
+      "row": 57,
+      "topic": "Percentage",
+      "learning_objective_abbrev": "Find percent of a number",
+      "ka_unit_name": "Percentages (Pre-Algebra)",
+      "ka_unit_url": "https://www.khanacademy.org/math/pre-algebra/xb4832e56:percentages",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 13,
+      "topic": "Arithmetic",
+      "learning_objective_abbrev": "Place value (10× relationship)",
+      "ka_unit_name": "Place value and rounding (3rd grade K-8)",
+      "ka_unit_url": "https://www.khanacademy.org/math/k-8-grades/cc-third-grade-math/cc-3rd-place-value-rounding",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 14,
+      "topic": "Arithmetic",
+      "learning_objective_abbrev": "Add/Sub multi-digit numbers",
+      "ka_unit_name": "Module 1: Place value, rounding, and algorithms",
+      "ka_unit_url": "https://www.khanacademy.org/math/4th-engage-ny/engage-4th-module-1",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 15,
+      "topic": "Arithmetic",
+      "learning_objective_abbrev": "Efficient Add/Sub strategies",
+      "ka_unit_name": "Addition, subtraction, and estimation (3rd grade)",
+      "ka_unit_url": "https://www.khanacademy.org/math/cc-third-grade-math/imp-addition-and-subtraction",
+      "match_quality": "strong",
+      "note": "Covers efficient strategies including commutative/associative properties, counting up/down"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 16,
+      "topic": "Arithmetic",
+      "learning_objective_abbrev": "Multiply 4-digit × 1-digit",
+      "ka_unit_name": "Multiplication and division (4th grade)",
+      "ka_unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 17,
+      "topic": "Arithmetic",
+      "learning_objective_abbrev": "Efficient multiplication strategies",
+      "ka_unit_name": "1-digit multiplication (3rd grade)",
+      "ka_unit_url": "https://www.khanacademy.org/math/cc-third-grade-math/3rd-basic-multiplication",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 18,
+      "topic": "Arithmetic",
+      "learning_objective_abbrev": "Divide 4-digit ÷ 1-digit",
+      "ka_unit_name": "Division (4th grade)",
+      "ka_unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/division",
+      "match_quality": "strong",
+      "note": "4th grade division covers long division with remainders using place value"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 19,
+      "topic": "Arithmetic",
+      "learning_objective_abbrev": "Multi-step word problems",
+      "ka_unit_name": "Multiplication and division (4th grade)",
+      "ka_unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/cc-4th-mult-div-topic",
+      "match_quality": "strong",
+      "note": "Covers multi-step word problems with equations and unknowns"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 20,
+      "topic": "Arithmetic",
+      "learning_objective_abbrev": "Multiply 2-digit × 2-digit",
+      "ka_unit_name": "Multiply by 2-digit numbers (4th grade)",
+      "ka_unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2",
+      "match_quality": "strong",
+      "note": "Same unit as Row 16 — covers both multi-digit multiplication patterns"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 22,
+      "topic": "Arithmetic",
+      "learning_objective_abbrev": "Verify with inverse operations",
+      "ka_unit_name": "More with multiplication and division (3rd grade)",
+      "ka_unit_url": "https://www.khanacademy.org/math/cc-third-grade-math/imp-multiplication-and-division",
+      "match_quality": "partial",
+      "note": "Covers checking multiplication with division and vice versa"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 23,
+      "topic": "Arithmetic",
+      "learning_objective_abbrev": "Verify with estimation/rounding",
+      "ka_unit_name": "Place value and rounding (4th grade)",
+      "ka_unit_url": "https://www.khanacademy.org/math/k-8-grades/cc-fourth-grade-math/cc-4th-place-value-rounding",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 27,
+      "topic": "Fractions",
+      "learning_objective_abbrev": "Fractions on number line",
+      "ka_unit_name": "Fractions (3rd grade K-8)",
+      "ka_unit_url": "https://www.khanacademy.org/math/k-8-grades/cc-third-grade-math/cc-3rd-fractions-topic",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 28,
+      "topic": "Fractions",
+      "learning_objective_abbrev": "Compare fractions using models",
+      "ka_unit_name": "Fractions (4th grade K-8)",
+      "ka_unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/cc-4th-fractions-topic",
+      "match_quality": "strong",
+      "note": "4th grade fractions includes comparing fractions using visual models"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 33,
+      "topic": "Fractions",
+      "learning_objective_abbrev": "Convert mixed to improper fraction",
+      "ka_unit_name": "Mixed numbers and improper fractions (Arithmetic)",
+      "ka_unit_url": "https://www.khanacademy.org/math/arithmetic-home/arith-review-fractions/mixed-number",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 34,
+      "topic": "Fractions",
+      "learning_objective_abbrev": "Convert improper to mixed",
+      "ka_unit_name": "Mixed numbers and improper fractions (Arithmetic)",
+      "ka_unit_url": "https://www.khanacademy.org/math/arithmetic-home/arith-review-fractions/mixed-number",
+      "match_quality": "strong",
+      "note": "Same unit as Row 33 — covers conversion both directions"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 35,
+      "topic": "Fractions",
+      "learning_objective_abbrev": "Compare unlike fractions",
+      "ka_unit_name": "Fractions (4th grade K-8)",
+      "ka_unit_url": "https://www.khanacademy.org/math/cc-fourth-grade-math/cc-4th-fractions-topic",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 38,
+      "topic": "Fractions",
+      "learning_objective_abbrev": "Add/Sub mixed fractions",
+      "ka_unit_name": "Add and subtract mixed numbers (Arithmetic)",
+      "ka_unit_url": "https://www.khanacademy.org/math/arithmetic-home/arith-review-fractions/add-sub-mixed-numbers",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 39,
+      "topic": "Fractions",
+      "learning_objective_abbrev": "Fraction word problems (unlike/mixed)",
+      "ka_unit_name": "Add and subtract fractions (different denominators)",
+      "ka_unit_url": "https://www.khanacademy.org/math/arithmetic/x18ca194a:add-and-subtract-fractions-different-denominators",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 44,
+      "topic": "Measurement",
+      "learning_objective_abbrev": "Perimeter of shapes",
+      "ka_unit_name": "Perimeter (3rd grade K-8)",
+      "ka_unit_url": "https://www.khanacademy.org/math/k-8-grades/cc-third-grade-math/imp-perimeter",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 47,
+      "topic": "Measurement",
+      "learning_objective_abbrev": "Surface area of rectangular prism",
+      "ka_unit_name": "Module 5: Area, surface area, and volume (6th Engage NY)",
+      "ka_unit_url": "https://www.khanacademy.org/math/6th-engage-ny/engage-6th-module-5",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 48,
+      "topic": "Measurement",
+      "learning_objective_abbrev": "Word problems - surface area/volume",
+      "ka_unit_name": "Unit 1: Area and Surface Area (6th Illustrative Math)",
+      "ka_unit_url": "https://www.khanacademy.org/math/6th-grade-illustrative-math/unit-1-area-and-surface-area",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 57,
+      "topic": "Decimal",
+      "learning_objective_abbrev": "Compare/order decimals to hundredths",
+      "ka_unit_name": "Place value and decimals (5th grade K-8)",
+      "ka_unit_url": "https://www.khanacademy.org/math/k-8-grades/cc-fifth-grade-math/cc-5th-place-value-decimals-top",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 58,
+      "topic": "Decimal",
+      "learning_objective_abbrev": "Convert fractions (denom 100) to decimals",
+      "ka_unit_name": "Module 1: Place value and decimal fractions (5th Engage NY)",
+      "ka_unit_url": "https://www.khanacademy.org/math/5th-engage-ny/engage-5th-module-1",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 59,
+      "topic": "Decimal",
+      "learning_objective_abbrev": "Convert fractions to decimal notation",
+      "ka_unit_name": "Module 6: Decimal fractions (4th Engage NY)",
+      "ka_unit_url": "https://www.khanacademy.org/math/4th-engage-ny/engage-4th-module-6",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 60,
+      "topic": "Decimal",
+      "learning_objective_abbrev": "Add decimal with whole number/decimal",
+      "ka_unit_name": "Get ready for adding and subtracting decimals",
+      "ka_unit_url": "https://www.khanacademy.org/math/get-ready-for-5th-grade/x01d8909412c13b9d:get-ready-for-adding-subtracting-decimals",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 61,
+      "topic": "Decimal",
+      "learning_objective_abbrev": "Subtract decimal with whole number/decimal",
+      "ka_unit_name": "Subtract decimals (5th grade)",
+      "ka_unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/subtract-decimals",
+      "match_quality": "strong",
+      "note": "Same as unit 3 from original mapping — already assigned to MYP Row 29. Different curriculum row."
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 62,
+      "topic": "Decimal",
+      "learning_objective_abbrev": "Multiply decimal with whole number",
+      "ka_unit_name": "Multiply decimals (5th grade FL)",
+      "ka_unit_url": "https://www.khanacademy.org/math/grade-5-math-fl-best/x7a7f452d9f51baa9:multiply-decimals",
+      "match_quality": "strong"
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 63,
+      "topic": "Decimal",
+      "learning_objective_abbrev": "Divide whole numbers to get decimal quotient",
+      "ka_unit_name": "Divide decimals (5th grade)",
+      "ka_unit_url": "https://www.khanacademy.org/math/cc-fifth-grade-math/divide-decimals",
+      "match_quality": "strong",
+      "note": "Covers dividing to get decimal quotients — already assigned to MYP Row 32. Different curriculum."
+    },
+    {
+      "curriculum": "PYP Y2",
+      "row": 64,
+      "topic": "Decimal",
+      "learning_objective_abbrev": "Decimal word problems",
+      "ka_unit_name": "Arithmetic decimals",
+      "ka_unit_url": "https://www.khanacademy.org/math/arithmetic/arith-decimals",
+      "match_quality": "strong",
+      "note": "Comprehensive decimal operations including word problems"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "shortcode": "bihi",
+  "name": "Understanding angles",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 79,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Understanding angles as a number of 360ths of a circle",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158114,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4d88efa7-9e2d-4b8a-af1a-1aaa17bc7088.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is how many degrees are in one turn to find out how many degrees are in 1/360 of a turn you need to do 360 x 1/360...",
+        "B": "This would be how many degrees in 1/10 of a turn. In a full turn there are 360 degrees so to find how many degrees in 1/360 of a turn do 360 x 1/360...",
+        "C": "There are 360 degrees in a turn so in 1/360 of a turn there is 1 degree because 360 x 1/360 = 1",
+        "D": "In a full turn there are 360 degrees so to find how many degrees in 1/360 of a turn do 360 x 1/360..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158281,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/11309027-770e-4ab6-be1b-ccbfe8e2c427.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There are 360 degrees in a turn so in 1/45 of a turn there is 8 degrees because 360 x 1/45 = 8",
+        "B": "In a full turn there are 360 degrees so to find how many degrees in 1/45 of a turn do 360 x 1/45...",
+        "C": "This would be how many degrees in 1/10 of a turn. In a full turn there are 360 degrees so to find how many degrees in 1/45 of a turn do 360 x 1/45...",
+        "D": "This is the denominator but to find out how many degrees are in 1/45 of a turn you need to do 360 x 1/45..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158115,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e264785c-9c08-4cd5-a7a4-27812116593a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "What has 10 been multiplied by to get 360? Do the same to the numerator...",
+        "B": "What has 10 been multiplied by to get 360? Do the same to the numerator...",
+        "C": "10 x 36 = 360 so we need to do the same to the numerator 1 x 36 = 36 therefore the missing value from the boxes is 36",
+        "D": "10 is 1/10 of 100 but we need to do 1/10 of 360..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158282,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a1a85590-cfd8-4f19-becf-552dc81d05a7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "What has 5 been multiplied by to get 360? Do the same to the numerator...",
+        "B": "What has 5 been multiplied by to get 360? Do the same to the numerator...",
+        "C": "20 is 1/5 of 100 but we need to do 1/5 of 360...",
+        "D": "5 x 72 = 360 so we need to do the same to the numerator 1 x 72 = 72 therefore the missing value from the boxes is 72"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158116,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/36d7364f-9ba6-4598-8475-72b0fe0c742b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "What has 3 been multiplied by to get 360? Do the same to the numerator...",
+        "B": "3 x 120 = 360 we need to do the same to the numerator 1 x 120 = 120 therefore the missing value from the boxes is 120",
+        "C": "We don't subtract/ add to when finding equivalent fractions, we divide/ multiply. What has 3 been multiplied by to get 360? Do the same to the numerator...",
+        "D": "This would be 1/3 of 100 but we need to find 1/3 of 360..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158283,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c2214d76-603b-4bd9-be00-fe6a04c10c03.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "9 x 40 = 360 we need to do the same to the numerator 4 x 40 = 160 therefore the missing value from the boxes is 160",
+        "B": "We don't subtract/ add to when finding equivalent fractions, we divide/ multiply. What has 9 been multiplied by to get 360? Do the same to the numerator...",
+        "C": "This would be 4/9 of 100 but we need to find 4/9 of 360...",
+        "D": "What has 9 been multiplied by to get 360? Do the same to the numerator..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158117,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d4c5b1d0-f3f8-43a8-a3c6-4e1cf16a88f3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is 1/8 of 360 but we need 5/8...",
+        "B": "8 x 45 = 360 so to find the numerator we do 5 x 45 = 225 therefore the missing number from the boxes is 225",
+        "C": "This is 360 ÷ 5 but we need to do 360 ÷ 8 to find 1/8 of 360 and then multiply this value by 5...",
+        "D": "We don't subtract/ add to when finding equivalent fractions, we divide/ multiply. What has 8 been multiplied by to get 360? Do the same to the numerator..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158284,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6d3dfea6-cc10-48ce-8c32-025405c586c2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We don't subtract/ add to when finding equivalent fractions, we divide/ multiply. What has 9 been multiplied by to get 360? Do the same to the numerator...",
+        "B": "This is 1/9 of 360 but we need 7/9...",
+        "C": "9 x 40 = 360 so to find the numerator we do 7 x 40 = 280 therefore the missing number from the boxes is 280",
+        "D": "This is 360 ÷ 7 but we need to do 360 ÷ 9 to find 1/9 of 360 and then multiply this value by 7..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158118,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/013ccb87-2a8f-4363-b06d-a2e0d2e0d135.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find the size of the angle think about what 179/180 is as fraction of 360: 179/180 = ?/360...",
+        "B": "You have the correct method of multiplying 179 by 2 but you've made a mistake in your calculation...",
+        "C": "There are 360 degrees in a circle. 179/180 = 358/360 therefore the angle is 358 degrees",
+        "D": "179 is one less than 180 but there are two pieces of 180 in 360... Think about what 179/180 is as fraction of 360: 179/180 = ?/360..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158285,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a35e69c9-4b91-4642-aaa0-6ef69ab24df6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have the correct method of multiplying 77 by 3 but you've made a mistake in your calculation...",
+        "B": "77 is 43 less than 120 but there are three pieces of 120 in 360... Think about what 77/120 is as fraction of 360: 77/120 = ?/360...",
+        "C": "To find the size of the angle think about what 77/120 is as fraction of 360: 77/120 = ?/360...",
+        "D": "There are 360 degrees in a circle. 77/120 = 231/360 therefore the angle is 231 degrees"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

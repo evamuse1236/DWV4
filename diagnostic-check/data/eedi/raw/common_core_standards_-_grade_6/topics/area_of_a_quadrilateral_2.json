@@ -1,0 +1,159 @@
+{
+  "shortcode": "vqo",
+  "name": "Area of a quadrilateral 2",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 192,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify a unit of area",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the area of a parallelogram where the dimensions are given in the same units",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the area of a trapezium where the dimensions are given in the same units",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given the area of a parallelogram, calculate a missing dimension",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 98485,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/580295c3-3961-4b9f-82ed-711fc7013908.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might have multiplied all 3 sides together. To find the area of a parallelogram, we need to multiply base by perpendicular height.",
+        "B": "I think you have multiplied the 10 and the 4 together. But we need to make sure we are using the perpendicular height when calculating area.",
+        "C": "Area of parallelogram = base x perpendicular height. In this diagram, the base is 10 cm and the perpendicular height is 3 cm because this is at right angles to the base. So the area = 10 ✕ 3 = 30 square centimetres.",
+        "D": "I think you might have muddled up parallelograms and triangles. To find the area of a parallelogram, we multiply the base by the perpendicular height. We do not need to divide it by 2."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 98497,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/63ba3c0a-415b-4392-8119-c6f5323e3a6d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Area of parallelogram = base x perpendicular height. In this diagram, the base is 7 cm and the perpendicular height is 3 cm because this is at right angles to the base. Therefore, area = 7 ✕ 3 = 21 square centimetres.",
+        "B": "I think you have worked out the perimeter. To find the area of a parallelogram, we multiply the base by the perpendicular height.",
+        "C": "I think you have multiplied the 7 and the 4 together. But we need to make sure we are using the perpendicular height when calculating area.",
+        "D": "I think you might have multiplied all 3 sides together. To find the area of a parallelogram, we need to multiply base by perpendicular height."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 98486,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b91ea0f4-36b3-4e10-ae88-e70aacdc4f20.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have tried to work backwards by subtracting the 12cm. This is not quite right. How would we work out the area of a parallelogram?",
+        "B": "Not quite. I think you have found the perpendicular height and then doubled it, but m is not the perpendicular height.",
+        "C": "Not quite. I think you have found the perpendicular height, but m is not the perpendicular height.",
+        "D": "Area of parallelogram = base ✕ perpendicular height. In this diagram, the base could be represented by the 12cm, but that would not make m the perpendicular height as they do not form a right angle. We would be able to find the perpendicular height by working backwards from our area, but not m."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 98498,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/030de765-9fae-41b6-8971-dfc7aaab9ced.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have tried to work backwards by subtracting the 8cm. This is not quite right. How would we work out the area of a parallelogram?",
+        "B": "Area of parallelogram = base ✕ perpendicular height. In this diagram, the base is m, and the perpendicular height is 8 cm (because the top side is parallel to the base, the 8 cm is perpendicular to both). 56 = m ✕ 8, meaning m = 56 ÷ 8 = 7 cm.",
+        "C": "I think you were probably using the correct method, but may have made a calculation error. Can you check again?",
+        "D": "We do actually have enough information here. Because the 8cm is perpendicular to the top length, it will also be perpendicular to the base length (as top and base are parallel). Can you remember how to use the perpendicular height to calculate the area of a parallelogram?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 109430,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/45848c85-76e4-4ccf-9548-482a6b127a50.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have confused units of area with units of volume.",
+        "B": "The units for area always involve a squared element. Answer B of m² is the only squared unit. Answer A is a unit of volume, and C and D are units of length.",
+        "C": "Not quite. m stands for metres which is a unit of length, not area.",
+        "D": "Not quite. cm stands for centimetres which is a unit of length, not area."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 109435,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea3e7a50-90a6-4438-8385-6db7043e9249.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. m stands for metres which is a unit of length, not area.",
+        "B": "Not quite. cm stands for centimetres which is a unit of length, not area.",
+        "C": "I think you have confused units of area with units of volume.",
+        "D": "The units for area always involve a squared element. Answer D of mm² is the only squared unit. Answer C is a unit of volume, and A and B are units of length."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 109431,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/23070158-df68-4c21-999e-da110bb05569.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. The letters 𝑎 and 𝑏 refer to the parallel sides of a trapezium. Which sides are parallel?",
+        "B": "The lengths 𝑎 and 𝑏 are always the parallel sides of a trapezium, as indicated by the arrows, so 𝑎 + 𝑏 = 9 + 10.",
+        "C": "Not quite. The letters 𝑎 and 𝑏 refer to the parallel sides of a trapezium. Which sides are parallel?",
+        "D": "Not quite. The letters 𝑎 and 𝑏 refer to the parallel sides of a trapezium. Which sides are parallel?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 109436,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/56b20c6e-5913-4c23-b108-ce4bb16dd18a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. The letters 𝑎 and 𝑏 refer to the parallel sides of a trapezium. I think the orientation of the shape has confused you, but make sure you look out for the parallel side notation.",
+        "B": "Not quite. The letters 𝑎 and 𝑏 refer to the parallel sides of a trapezium. I think the orientation of the shape has confused you, but make sure you look out for the parallel side notation.",
+        "C": "The lengths 𝑎 and 𝑏 are always the parallel sides of a trapezium, as indicated by the arrows, so 𝑎 + 𝑏 = 3 + 8.",
+        "D": "Not quite. The letters 𝑎 and 𝑏 refer to the parallel sides of a trapezium. I think the orientation of the shape has confused you, but make sure you look out for the parallel side notation."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 109432,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c04e34ef-aae3-4fcb-901d-c14eae969e23.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The 𝘩 is always the perpendicular height (measured between the two parallel sides), so 𝘩 is 6 cm.",
+        "B": "Not quite, you have chosen a slant height, but we need the perpendicular height.",
+        "C": "Not quite, you have chosen a slant height, but we need the perpendicular height.",
+        "D": "Not quite, you have chosen one of the parallel sides which would be labelled as 𝑎 or 𝑏 , but 𝘩 represents the perpendicular height."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 109437,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/264440a2-0f79-4e5c-a9d2-3bb0a9f67630.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, you have chosen a slant height, but we need the perpendicular height.",
+        "B": "Not quite, you have chosen a slant height, but we need the perpendicular height.",
+        "C": "The 𝘩 is always the perpendicular height (measured between the two parallel sides), so 𝘩 is 7 cm.",
+        "D": "Not quite, you have chosen one of the parallel sides which would be labelled as 𝑎 or 𝑏 , but 𝘩 represents the perpendicular height."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

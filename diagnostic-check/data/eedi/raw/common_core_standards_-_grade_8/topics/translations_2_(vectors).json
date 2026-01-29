@@ -1,0 +1,165 @@
+{
+  "shortcode": "v0z",
+  "name": "Translations 2 (vectors)",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 109,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Add column vectors each containing two elements",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Describe simple directions to translate a shape or object using words not vectors",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Write a given translation in vector notation",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Describe a translation using vector notation where all values are positive",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Describe a translation using vector notation where at least one value is negative",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 131531,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1b4b6a5b-ef8e-46c7-9668-93aaf2e1b610.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we start at P and move 4 squares right and 2 squares up, we will get to Q.",
+        "B": "Not quite, I think you are counting the square you are starting on as 'one.' The point where you start at is zero.",
+        "C": "Not quite, I think you are going from Q to P. This question wants you to go from P to Q.",
+        "D": "Not quite, I think you are counting the square you are starting on as 'one.' The point where you start at is zero."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133724,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f30ee170-9112-4e37-a0a9-db1f1a911cf8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you are going from Q to P. This question wants you to go from P to Q.",
+        "B": "Not quite, I think you are counting the square you are starting on as 'one.' The point where you start at is zero.",
+        "C": "If we start at P and move 3 squares right and 2 squares up, we will get to Q.",
+        "D": "Not quite, I think you are counting the square you are starting on as 'one.' The point where you start at is zero."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131532,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/046c676e-277d-47f9-892c-48e11bfe0234.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you might have got mixed up with your vector. Remember, the top number in the vector tells you the movement from left to right. The bottom number tells you up or down.",
+        "B": "The 4 in the top part of the vector tells us we must move 4 squares right. The 2 on the bottom half tells us to move 2 squares up.",
+        "C": "Nearly! Check the bottom number on your vector. This -2 tells us to move 2 down. Would this be correct to go from P to Q?",
+        "D": "Nearly! Check your counting again carefully. I think you are counting the square you are starting on as 'one.' The point where you start at is zero."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133725,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7e42249c-386c-4699-ab9e-14e287098214.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly! Check the bottom number on your vector. This -2 tells us to move 2 down. Would this be correct to go from P to Q?",
+        "B": "Nearly! Check your counting again carefully. I think you are counting the square you are starting on as 'one.' The point where you start at is zero.",
+        "C": "Not quite, I think you might have got mixed up with your vector. Remember, the top number in the vector tells you the movement from left to right. The bottom number tells you up or down.",
+        "D": "The 3 in the top part of the vector tells us we must move 3 squares right. The 2 on the bottom half tells us to move 2 squares up."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131533,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f837d35c-34c8-414e-adc8-6c18e053ab71.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you might have got mixed up with your vector. Remember, the top number in the vector tells you the movement from left to right. The bottom number tells you up or down.",
+        "B": "Nearly! Check the bottom number on your vector. This 2 tells us to move 2 up. Would this be correct to go from P to Q?",
+        "C": "The 4 in the top part of the vector tells us we must move 4 squares right. The -2 on the bottom half tells us to move 2 squares down. This is how we go from P to Q.",
+        "D": "Not quite, I think you might have got mixed up with your vector. Remember, the top number in the vector tells you the movement from left to right. The bottom number tells you up or down."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133726,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3f4f94fd-9d3f-4be8-a607-ee479bd47e9e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The 3 in the top part of the vector tells us we must move 3 squares right. The -2 on the bottom half tells us to move 2 squares down. This is how we go from P to Q.",
+        "B": "Not quite, I think you might have got mixed up with your vector. Remember, the top number in the vector tells you the movement from left to right. The bottom number tells you up or down.",
+        "C": "Not quite, I think you might have got mixed up with your vector. Remember, the top number in the vector tells you the movement from left to right. The bottom number tells you up or down. Also, remember we need to move down to get from P to Q, so the bottom half of our vector will be negative",
+        "D": "Nearly! Check the bottom number on your vector. This 2 tells us to move 2 up. Would this be correct to go from P to Q?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131534,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1fc6063b-e6f7-45fd-8068-9a5833cff2b3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, remember, the bottom part of a vector tells us the movement up or down. In the question, it says we need to move 'five down.'",
+        "B": "Not quite, remember, the bottom part of a vector tells us the movement up or down. In the question, it says we need to move 'five down.'",
+        "C": "Nearly! In the question, it says we need to move 'five down.' The number 5 means 5 up. How could we represent a downwards movement?",
+        "D": "The bottom part of the vector represents the up/down movement. We need to move five down so we write -5 in place of the circle"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133727,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3cdbd1b7-e1c1-452a-8e59-fc9402b41ac1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly! '3' on the top part of the vector means 3 to the right. We want to move 3 to the left.",
+        "B": "The top part of the vector represents the left/right movement. We need to move three left so we write -3 in place of the triangle",
+        "C": "Not quite, remember, the top part of a vector tells us the movement left or right. In the question, it says we need to move 'three left.'",
+        "D": "Not quite, remember, the top part of a vector tells us the movement left or right. In the question, it says we need to move 'three left.'"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131535,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3c083c96-8a44-4f0a-b2fa-3896e3752ae6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we add the top parts of each vector we get 1 and adding the bottom parts gives us 3. So we can write our answer as a vector with 1 on the top and 3 on the bottom.",
+        "B": "Nearly, I think you have multiplied the top parts of the two vectors, instead of adding.",
+        "C": "Nearly, I think you have multiplied the top and bottoms parts of the two vectors, instead of adding.",
+        "D": "Nearly, I think you have calculated 2 + 1, rather than 2 + (-1)."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133728,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/befa99c0-b124-4a63-b6bb-f88eb60de251.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly, I think you have multiplied the top and bottom parts of the two vectors, instead of adding.",
+        "B": "Nearly, I think you have multiplied the top parts of the two vectors, instead of adding.",
+        "C": "If we add the top parts of each vector we get -3 and adding the bottom parts gives us 3. So we can write our answer as a vector with -3 on the top and 3 on the bottom.",
+        "D": "Nearly, I think you have calculated -2 + 1, rather than -2 + (-1)."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

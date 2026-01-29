@@ -1,0 +1,141 @@
+{
+  "shortcode": "v1j",
+  "name": "Using diagrams to model Pythagoras’ theorem",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 134,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Using diagrams to model Pythagoras’ theorem",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 155055,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/970654df-e7b1-48eb-a244-37c75846a1f2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Look carefully at the labels. y is the area of the yellow square and x is the side length of the red square. If a square has a side length of 8, what is its area? If a square has an area of 100, what is its side length?",
+        "B": "x is the side length of the red square. We are told the area of this square is 100 cm². To find the side length, we need to square root the area. √100 = 10, therefore x = 10. y is the area of the yellow square. The area can be found by squaring the side length. 8² = 64, so y = 64.",
+        "C": "Not quite. I think you saw the 6 in the diagram and thought you had to use this. But look carefully at the labels. y is the area of the yellow square and x is the side length of the red square. If a square has a side length of 8, what is its area? If a square has an area of 100, what is its side length?",
+        "D": "Almost! I think you thought y was the side length of the yellow square, but y is the area. How do we find the area of a square, that has a side length of 8 cm?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 155060,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/144c236d-036e-40a8-994c-fdc16801d3b1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Look carefully at the labels. y is the area of the blue square and x is the side length of the red square. If a square has a side length of 3, what is its area? If a square has an area of 25, what is its side length?",
+        "B": "Not quite. I think you doubled rather than squared. y is the area of the blue square. To find the area of a square, we need to square the side length, and squaring means multiplying by itself.",
+        "C": "Not quite. y is the area of a square with side length 3cm. How do we find the area of a square? x is the side length of a square with area 25 cm². How do we work backwards from area to find the side length?",
+        "D": "x is the side length of the red square. We are told the area of this square is 25 cm². To find the side length, we need to square root the area. √25 = 5, therefore x = 5. y is the area of the blue square. The area can be found by squaring the side length. 3² = 9, so y = 9."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 155056,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ca65776a-1f41-4b87-8edc-6b92da5369d7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Think about the area of the squares here. What expression could we use to describe the area of the red square? What is the relationship between the areas of the red, blue and yellow squares?",
+        "B": "Not quite. Think about the area of the squares here. What expression could we use to describe the area of the red square? What is the relationship between the areas of the red, blue and yellow squares?",
+        "C": "Nearly! We do need to add together the squares of the shorter sides, but will they be equal to the length of the longest side?",
+        "D": "This diagram shows that the square of the longest side is equal to the sum of the squares of the shorter sides, Pythagoras' Theorem."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 155061,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3659de6b-8e8c-408d-adeb-b2881900e5e9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Pythagoras' theorem states that the square of the longest side is equal to the sum of the squares of the two smaller sides. We can see from the formula that the squares of a and b are being added together so they must be the shorter sides, making c the longest side.",
+        "B": "Not quite. Look carefully at which sides are labelled a, b and c. From the formula we have been given which side must be the longest side?",
+        "C": "Not quite. Look carefully at which sides are labelled a, b and c. From the formula we have been given which side must be the longest side?",
+        "D": "Not quite. Look carefully at which sides are labelled a, b and c. From the formula we have been given which side must be the longest side?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 155057,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/664d5bfe-be68-4c59-81a9-8a094a082d45.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have subtracted 64 from 225, but Pythagoras' theorem states that the sum of the squares of the smaller sides will be equal to the square of the longest side. Which are the two smaller squares?",
+        "B": "Not quite. Pythagoras' theorem states that the sum of the squares of the smaller sides will be equal to the square of the longest side. What do we get if we add together the area of the two smaller squares shown?",
+        "C": "Pythagoras' theorem states that the sum of the squares of the smaller sides will be equal to the square of the longest side. Therefore 64 + 225 = x so x = 289",
+        "D": "I think you might have used the area of a triangle formula instead. Pythagoras' theorem states that the sum of the squares of the smaller sides will be equal to the square of the longest side. What do we get if we add together the area of the two smaller squares shown?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 155062,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8f7c1059-fb20-4ef1-ab42-e5079ae7b4bf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might have used the area of a triangle formula instead. Pythagoras' theorem states that the sum of the squares of the smaller sides will be equal to the square of the longest side. What do we get if we add together the area of the two smaller squares shown?",
+        "B": "Pythagoras' theorem states that the sum of the squares of the smaller sides will be equal to the square of the longest side. Therefore 36 + 64 = x so x = 100",
+        "C": "I think you have subtracted 36 from 64, but Pythagoras' theorem states that the sum of the squares of the smaller sides will be equal to the square of the longest side. Which are the two smaller squares?",
+        "D": "Nearly! I think you might have just square rooted your answer to find the side length. What are we asked for in the question?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 155058,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e14dc5c9-b822-4f65-a419-269d190810dc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Pythagoras' theorem states that the sum of the squares of the smaller sides will be equal to the square of the longest side. Therefore 5² + 12² = x², simplifying this gives 169 = x², then square rooting both sides gives us x = 13cm",
+        "B": "Not quite. Pythagoras' theorem states that the sum of the squares of the smaller sides will be equal to the square of the longest side. Can you start by squaring the two shorter sides?",
+        "C": "I think you've forgotten an important step when using Pythagoras' theorem. The sum of the SQUARES of the two smaller sides is equal to the SQUARE of the longest side.",
+        "D": "Nearly! You have found the sum of the squares of the two shorter sides, but this will give us the SQUARE of the longest side. How can we use this to find the side length?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 155063,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5590f495-523f-46d2-9d01-177859da031f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Pythagoras' theorem states that the sum of the squares of the smaller sides will be equal to the square of the longest side. Can you start by squaring the two shorter sides?",
+        "B": "Pythagoras' theorem states that the sum of the squares of the smaller sides will be equal to the square of the longest side. Therefore 9² + 12² = x², simplifying this gives 225 = x², then square rooting both sides gives us x = 15cm",
+        "C": "I think you've forgotten an important step when using Pythagoras' theorem. The sum of the SQUARES of the two smaller sides is equal to the SQUARE of the longest side.",
+        "D": "Nearly! You have found the sum of the squares of the two shorter sides, but this will give us the SQUARE of the longest side. How can we use this to find the side length?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 155059,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0380822d-54db-4c88-9f58-b572234f79b2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Pythagoras' theorem states that the sum of the squares of the smaller sides of a right-angled triangle will be equal to the square of the longest side. Therefore we need to find two smaller squares, such that when we calculate their area, we can add up the values to get the area of the larger square",
+        "B": "Pythagoras' theorem states that the sum of the squares of the smaller sides of a right-angled triangle will be equal to the square of the longest side. Therefore we need to find two smaller squares, such that when we calculate their area, we can add up the values to get the area of the larger square",
+        "C": "Pythagoras' theorem states that the sum of the squares of the smaller sides of a right-angled triangle will be equal to the square of the longest side. Therefore we need to find two smaller squares, such that when we calculate their area, we can add up the values to get the area of the larger square",
+        "D": "Pythagoras' theorem states that the sum of the squares of the smaller sides of a right-angled triangle will be equal to the square of the longest side. Therefore we need to find two smaller squares, such that when we calculate their area, we can add up the values to get the area of the larger square. 4.5² + 6² = 56.25, which is equal to 7.5²"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 155064,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/79f9787c-daed-4801-a2e4-2c62420b2d96.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Pythagoras' theorem states that the sum of the squares of the smaller sides of a right-angled triangle will be equal to the square of the longest side. Therefore we need to find two smaller squares, such that when we calculate their area, we can add up the values to get the area of the larger square",
+        "B": "Pythagoras' theorem states that the sum of the squares of the smaller sides of a right-angled triangle will be equal to the square of the longest side. Therefore we need to find two smaller squares, such that when we calculate their area, we can add up the values to get the area of the larger square",
+        "C": "Pythagoras' theorem states that the sum of the squares of the smaller sides of a right-angled triangle will be equal to the square of the longest side. Therefore we need to find two smaller squares, such that when we calculate their area, we can add up the values to get the area of the larger square. 3² + 4² = 25, which is equal to 5²",
+        "D": "Pythagoras' theorem states that the sum of the squares of the smaller sides of a right-angled triangle will be equal to the square of the longest side. Therefore we need to find two smaller squares, such that when we calculate their area, we can add up the values to get the area of the larger square."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

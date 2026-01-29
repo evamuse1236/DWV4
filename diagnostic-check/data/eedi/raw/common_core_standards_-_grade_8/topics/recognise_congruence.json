@@ -1,0 +1,159 @@
+{
+  "shortcode": "v01",
+  "name": "Recognise congruence",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 112,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify congruence in shapes other than triangles",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Distinguish between congruency and similarity",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify whether two shapes are similar or not",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Understand the meaning of congruency",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 131526,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/428e8b37-0aec-4f02-a7dc-56f7862614a2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember congruent means they are the same size and shape",
+        "B": "Congruent means they are the same size and shape. Tom's are different sizes so he is wrong. Katie's are the same size and shape, one is just upside down, so she is correct",
+        "C": "Not quite. Remember congruent means they are the same size and shape",
+        "D": "At least one person is correct. Remember congruent means they are the same size and shape"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134119,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bc1b4ca1-b4cc-4f1c-839a-31af63c62626.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Congruent means they are the same size and shape. Katie's are different sizes so she is wrong.Tom's are the same size and shape, one is just rotated, so he is correct",
+        "B": "Not quite. Remember congruent means they are the same size and shape",
+        "C": "Not quite. Remember congruent means they are the same size and shape",
+        "D": "At least one person is correct. Remember congruent means they are the same size and shape"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131527,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cd81afb1-4813-45a9-a6d5-f47704ad8e6c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom is correct as they are the same size and shape, just in different positions. Katie is not correct as the shapes are not the same size.",
+        "B": "Not quite. In order to be congruent the shapes must be the same size and shape.",
+        "C": "Not quite. In order to be congruent the shapes must be the same size and shape.",
+        "D": "Shapes that are congruent are the same shape and size. Remember that shapes can be in different positions and still be congruent."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134120,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a53a73ab-14b3-496c-b70d-5177fd74c091.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. In order to be congruent the shapes must be the same size and shape.",
+        "B": "Not quite. In order to be congruent the shapes must be the same size and shape.",
+        "C": "In order to be congruent the shapes must be the same size and shape.",
+        "D": "Neither pair of stars are the same size or shape as each other, so neither are congruent. That means Tom and Katie are both incorrect."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131528,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/35ddd38b-9ccc-432e-989f-fa378adf781c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, remember, for two shapes to be congruent, they must be the same shape and size. Which transformations result in a shape that is the same size as the original?",
+        "B": "Katie is correct. When we rotate a shape, the size of the shape remains the same, and so the two shapes will be congruent.",
+        "C": "Not quite, remember, for two shapes to be congruent, they must be the same shape and size. Which transformations result in a shape that is the same size as the original?",
+        "D": "Not quite, remember, for two shapes to be congruent, they must be the same shape and size. Which transformations result in a shape that is the same size as the original?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134121,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/066e840a-7f92-4242-b9d2-6d5053579e5a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, remember, for two shapes to be congruent, they must be the same shape and size. Think about if reflecting and rotating a shape would change its shape and size.",
+        "B": "Not quite, remember, for two shapes to be congruent, they must be the same shape and size. Think about if reflecting and rotating a shape would change its shape and size.",
+        "C": "Tom and Katie are both correct. When we rotate or reflect a shape, the size of the shape remains the same, and so the two shapes will be congruent.",
+        "D": "Not quite, remember, for two shapes to be congruent, they must be the same shape and size. Think about if reflecting and rotating a shape would change its shape and size."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131529,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/898941e4-b386-4c8b-86b4-1d9bbd99a342.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember, for two shapes to be congruent, they must be the same in shape AND size.",
+        "B": "Katie is correct, the two shapes are similar as one is an enlargement of the other. The two shapes are not congruent as they not identical in shape AND size. So Tom is incorrect.",
+        "C": "Not quite, remember, for two shapes to be congruent, they must be the same in shape AND size. For two shapes to be similar, one is an enlargement of the other",
+        "D": "Not quite, remember, for two shapes to be congruent, they must be the same in shape AND size. For two shapes to be similar, one is an enlargement of the other"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134122,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/655a976f-bba2-44dd-bbe2-11f032a5e7ee.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, remember, for two shapes to be congruent, they must be the same in shape AND size. For two shapes to be similar, one is an enlargement of the other",
+        "B": "Not quite, remember, for two shapes to be congruent, they must be the same in shape AND size. For two shapes to be similar, one is an enlargement of the other",
+        "C": "Both Tom and Katie are correct. Tom's shapes are congruent as they are the same in shape AND size. It does not matter that one has been rotated. Katie's shapes are similar as one is an enlargement of the other.",
+        "D": "Not quite, remember, for two shapes to be congruent, they must be the same in shape AND size. For two shapes to be similar, one is an enlargement of the other"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131530,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fce72a10-4b99-4e2f-8658-502eeae836e7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom is correct as the smaller rectangle has been enlarged by scale factor of 1.5. Katie is incorrect as the sides of the smaller shape have not been multiplied by the same number to get the sides of the larger shape",
+        "B": "Not quite, have another look. Is the larger rectangle an enlargement of the smaller one? Are all scale factors the same of each length?",
+        "C": "Not quite, have another look. In both cases, has each length of the smaller rectangle been enlarged by the same scale factor?",
+        "D": "Not quite, have another look. In either case, has each length of the smaller rectangle been enlarged by the same scale factor?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134123,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cd58bf47-0a72-4aa2-9e30-4b4d0f2047e0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, have another look. Is the larger rectangle an enlargement of the smaller one? Are all scale factors the same of each length?",
+        "B": "Not quite, have another look. Is the larger rectangle an enlargement of the smaller one? Are all scale factors the same of each length?",
+        "C": "Not quite, have another look. In both cases, has each length of the smaller rectangle been enlarged by the same scale factor?",
+        "D": "Neither Tom nor Katie are correct! In both cases, the larger rectangle is not an enlargement of the smaller. The length scale factor is not the same for each side of the rectangle."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

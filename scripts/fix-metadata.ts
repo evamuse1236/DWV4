@@ -7,8 +7,8 @@
  * 3. Activity types: assigns types based on URL patterns
  *
  * Usage:
- *   npx tsx scripts/fix-metadata.ts           # Apply changes
- *   npx tsx scripts/fix-metadata.ts --dry-run  # Preview only
+ *   node --experimental-strip-types scripts/fix-metadata.ts            # Apply changes
+ *   node --experimental-strip-types scripts/fix-metadata.ts --dry-run  # Preview only
  */
 
 import * as fs from "fs";

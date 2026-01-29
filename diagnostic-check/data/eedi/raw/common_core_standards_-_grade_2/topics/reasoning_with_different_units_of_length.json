@@ -1,0 +1,153 @@
+{
+  "shortcode": "bi87",
+  "name": "Reasoning with different units of length",
+  "collectionId": 35,
+  "level": 1,
+  "sequence": 23,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Measure and estimate the length and heights of objects in terms of other objects",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Reasoning with different units of length (US)",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Measure lengths using a ruler (US)",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 159372,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ecc02c2f-816b-4e43-a7c1-119a3b08bf64.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we count each of the paper clips that is right underneath the pencil, there are 6.",
+        "B": "I think you started counting at the beginning of the row of paperclips, but we only want to count the ones right under the pencil.",
+        "C": "Hmm, you have counted too many paperclips... Make sure you only count the ones right under the pencil.",
+        "D": "That is all the paperclips, but which ones are right under the pencil showing its length?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159594,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/107978d8-04ea-4e5f-9148-5662e7a93246.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you started counting at the beginning of the row of paperclips, but we only want to count the ones right under the pencil.",
+        "B": "That is all the paperclips, but which ones are right under the pencil showing its length?",
+        "C": "Hmm, you have counted too many paperclips... Make sure you only count the ones right under the pencil.",
+        "D": "If we count each of the paper clips that is right underneath the pencil, there are 5."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 159373,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f59297db-a35b-40d5-9e3a-2fc6cf2cbac0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The pencil starts at 2cm, but you need to find the difference between where it starts and where it ends.",
+        "B": "That's the full length of the ruler, but we just want the length of the part from the start to the end of the pencil.",
+        "C": "You found the end of the pencil correctly, but does it start at 0?",
+        "D": "The pencil starts at 2cm on the ruler and ends at 15cm. 15 - 2 = 13, so the pencil is 13cm long."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159595,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/921e1cad-6cca-404e-8982-60ba3556eb3d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You found the end of the pencil correctly, but does it start at 0?",
+        "B": "The pencil starts at 4cm on the ruler and ends at 18cm. 18 - 4 = 14, so the pencil is 14cm long.",
+        "C": "The pencil starts at 4cm, but you need to find the difference between where it starts and where it ends.",
+        "D": "That's the full length of the ruler, but we just want the length of the part from the start to the end of the pencil."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 159374,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4a8f62f5-bb37-4e06-80ac-aa97e0eea8af.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Centimeters and inches are not the same. Is 1 inch less than 1cm, or more?",
+        "B": "1 inch is more than 1 cm, so will 8 inches be less than 8 cm?",
+        "C": "1 inch is more than 1 cm (it's about 2.5cm), so 8 inches is more than 8 cm.",
+        "D": "Can you picture 1 inch? Is it bigger or smaller than 1cm? So will 8 inches be bigger or smaller than 8cm?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159596,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/81595b84-ab21-45aa-abdd-ee6f2b3cacf5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "1 cm is less than 1 inch (it's about 0.4 inches), so 16 cm is LESS than 16 inches.",
+        "B": "1 cm is less than 1 inch, so will 16cm be more than 16 inches?",
+        "C": "Centimeters and inches are not the same. Is 1 cm less than 1 inch, or more?",
+        "D": "Can you picture 1cm? Is it bigger or smaller than 1 inch? So will 16cm be bigger or smaller than 16 inches?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 159375,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/055deabe-e945-4310-bb97-c25c19fd3330.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Yards and meters are very similar measurements, but they're not exactly the same. Do you remember if a yard is bigger or smaller than a meter?",
+        "B": "1 yard is less than 1m (it's about 0.9m) so 8 yards is less than 8m",
+        "C": "1 yd is less than 1m, so is 8 yd more than 8m?",
+        "D": "Can you picture 1 yard? Is it bigger or smaller than 1m? So will 8 yards be bigger or smaller than 8m?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159597,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/33a7b1db-8e4b-4f38-8283-e82315525334.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "1m is more than 1 yd, so is 10m less than 10 yd?",
+        "B": "Yards and meters are very similar measurements, but they're not exactly the same. Do you remember if a meter is bigger or smaller than a yard?",
+        "C": "1 meter is more than 1 yard (it's about 1.1 yards) so 10 meters is more than 10 yards.",
+        "D": "Can you picture 1 meter? Is it bigger or smaller than 1 yd? So will 10 m be bigger or smaller than 10 yards?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 159376,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/20342a26-6506-4ee0-97cc-16bba80b7e35.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The cup is 12 cm tall, that's not the same as 12mm. Will it be more than 12mm, or less?",
+        "B": "Is 1 cm less than 1mm? So is 12 cm less than 12mm?",
+        "C": "Each cm is equal to 10mm, so 12cm will be 120mm. It takes more mm than cm to make the same length, because they are smaller.",
+        "D": "Can you picture 1 cm? Is it bigger or smaller than 1 mm? So will 12 cm be bigger or smaller than 12 mm?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159598,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/02aec858-85c8-4f1a-ab51-63a18d736c21.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Is 1 mm less than 1cm? So is 140mm more than 140cm?",
+        "B": "Every 10 mm is equal to 1 cm, so 140mm will be 14cm. It takes less cm than mm to make the same length, because they are bigger.",
+        "C": "The cup is 140mm tall, that's not the same as 140cm. Will it be more than 140cm, or less?",
+        "D": "Can you picture 1 mm? Is it bigger or smaller than 1 cm? So will 140mm be bigger or smaller than 140cm?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

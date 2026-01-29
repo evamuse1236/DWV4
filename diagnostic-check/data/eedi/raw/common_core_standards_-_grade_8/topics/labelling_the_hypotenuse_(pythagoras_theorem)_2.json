@@ -1,0 +1,141 @@
+{
+  "shortcode": "v1i",
+  "name": "Labelling the hypotenuse (Pythagoras theorem) 2",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 133,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify the hypotenuse in a 2D right-angled triangle",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 107529,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/53f767f8-ccd4-4497-81d9-3b95c5a02803.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. What kind of triangles have a hypotenuse? What kind of triangle is this?",
+        "B": "Not quite. What kind of triangles have a hypotenuse? What kind of triangle is this?",
+        "C": "Not quite. What kind of triangles have a hypotenuse? What kind of triangle is this?",
+        "D": "This triangle does not have a hypotenuse because it is not a right-angled triangle."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107539,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ca7c20b5-333f-478c-b896-7c68d9041596.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This triangle does not have a hypotenuse because it is not a right-angled triangle.",
+        "B": "Not quite. What kind of triangles have a hypotenuse? What kind of triangle is this?",
+        "C": "Not quite. What kind of triangles have a hypotenuse? What kind of triangle is this?",
+        "D": "Not quite. What kind of triangles have a hypotenuse? What kind of triangle is this?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107530,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ff6e07f4-71f9-42c1-a6bd-ced4a1003e6e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the hypotenuse. It is the longest side in a right angled triangle and it is opposite the right angle.",
+        "B": "Not quite. Remember the hypotenuse is the longest side in a right-angled triangle. It is opposite the right angle.",
+        "C": "Not quite. Remember the hypotenuse is the longest side in a right-angled triangle. It is opposite the right angle.",
+        "D": "Not quite. Remember the hypotenuse is the longest side in a right-angled triangle. It is opposite the right angle."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107540,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c7d8d85a-0e28-4d6c-a76c-98d59411ec8b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember the hypotenuse is the longest side in a right-angled triangle. It is opposite the right angle.",
+        "B": "Not quite. Remember the hypotenuse is the longest side in a right-angled triangle. It is opposite the right angle.",
+        "C": "This is the hypotenuse. It is the longest side in a right angled triangle and it is opposite the right angle.",
+        "D": "Not quite. Remember the hypotenuse is the longest side in a right-angled triangle. It is opposite the right angle."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107531,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d40f0b96-8fac-4046-bf70-1738a2b35669.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. What kind of triangles have a hypotenuse? What kind of triangle is this?",
+        "B": "Not quite. What kind of triangles have a hypotenuse? What kind of triangle is this?",
+        "C": "Not quite. What kind of triangles have a hypotenuse? What kind of triangle is this?",
+        "D": "This triangle does not have a hypotenuse because it is not a right-angled triangle."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107541,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3d2a5341-e443-451b-89a8-2e720f1fb177.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. What kind of triangles have a hypotenuse? What kind of triangle is this?",
+        "B": "Not quite. What kind of triangles have a hypotenuse? What kind of triangle is this?",
+        "C": "Not quite. What kind of triangles have a hypotenuse? What kind of triangle is this?",
+        "D": "This triangle does not have a hypotenuse because it is not a right-angled triangle."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107532,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4b5e7c1c-bfd6-4817-8a11-c79a56dd36fc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "What is the value of the missing angle? Do all triangles have a hypotenuse?",
+        "B": "What is the value of the missing angle? Do all triangles have a hypotenuse?",
+        "C": "What is the value of the missing angle? Do all triangles have a hypotenuse?",
+        "D": "This triangle does not have a hypotenuse because it is not a right-angled triangle. The missing angle is 180° - 52° - 48° = 80°, not 90°."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107542,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4d244343-2944-4a32-8163-822bdf99ac62.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "What is the value of the missing angle? Can we use this to find the hypotenuse?",
+        "B": "The missing angle is 180° - 56° - 34° = 90°, and so this is a right-angled triangle. B is the longest side, so this is the hypotenuse.",
+        "C": "What is the value of the missing angle? Can we use this to find the hypotenuse?",
+        "D": "What is the value of the missing angle? Check your calculations carefully."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107533,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a71b08e7-efec-4df7-81b5-6c1f84c62104.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The missing angle is 180° - 52° - 38° = 90°, and so this is a right-angle triangle. The longest side (the hypotenuse) is always opposite the right angle, so A is the correct answer.",
+        "B": "What is the value of the missing angle? Can we use this to find the hypotenuse?",
+        "C": "What is the value of the missing angle? Can we use this to find the hypotenuse?",
+        "D": "What is the value of the missing angle? Check your calculations carefully."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107543,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5d3081b7-99b9-4e45-bd4d-74b8e911dade.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "What is the value of the missing angle? Do all triangles have a hypotenuse?",
+        "B": "What is the value of the missing angle? Do all triangles have a hypotenuse?",
+        "C": "What is the value of the missing angle? Do all triangles have a hypotenuse?",
+        "D": "This triangle does not have a hypotenuse because it is not a right-angled triangle. The missing angle is 180° - 62° - 38° = 80°, not 90°."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

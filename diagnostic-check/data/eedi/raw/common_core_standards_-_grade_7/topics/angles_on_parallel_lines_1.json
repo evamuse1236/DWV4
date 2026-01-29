@@ -1,0 +1,159 @@
+{
+  "shortcode": "vwv",
+  "name": "Angles on parallel lines 1",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 200,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify corresponding angles",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find missing angles on parallel lines using corresponding angles",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find missing angles on parallel lines using alternate angles",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find missing angles on parallel lines using more than one angle fact",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 76852,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/be429baf-14b1-4fe9-85ec-98a1a584e227.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember, angles on a line sum to 180°",
+        "B": "We can find a corresponding angle to a, and then use angles on a straight line to do 180 - 103 = 77",
+        "C": "What kind of angle is a? Are these equal?",
+        "D": "Remember, angles on a line sum to 180. Can you use the parallel lines to find equal angles?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78975,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/323f0f4d-7176-423b-9447-ba69ee7c3c8a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "What kind of angle is a? Are these equal?",
+        "B": "Remember, angles on a line sum to 180. Can you use the parallel lines to find equal angles?",
+        "C": "Remember, angles on a line sum to 180. Can you use the parallel lines to find equal angles?",
+        "D": "We can find a corresponding angle to a, and then use angles on a straight line to do 180 - 114 = 66"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 76854,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/68f8f2a6-1dad-4782-a67b-870bd70bcfde.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "How do we mark parallel lines? Look carefully at which lines are parallel.",
+        "B": "How do we mark parallel lines? Look carefully at which lines are parallel.",
+        "C": "d and l are corresponding, as they are in matching corners on parallel lines",
+        "D": "Corresponding angles are in matching corners on parallel lines"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78977,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b9d7be6a-f3cd-485b-ac4a-c8ad35365c30.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "How do we mark parallel lines? Look carefully at which lines are parallel.",
+        "B": "c and k are corresponding, as they are in matching corners on parallel lines",
+        "C": "I think you may be thinking of co-interior angles. Corresponding angles are in matching corners on parallel lines",
+        "D": "How do we mark parallel lines? Look carefully at which lines are parallel."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 76855,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/780fabb7-5ee9-4ba7-8e62-d6b73c1f3c35.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "12+78 would make a right angle. Would these fit together to make a right angle?",
+        "B": "Corresponding angles are equal.",
+        "C": "I think you may be thinking of co-interior angles, which sum to 180. What kind of angles are these?",
+        "D": "I think you may be thinking of angles around a point, which sum to 360. What kind of angles are these?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78978,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eac7499b-4571-4426-ac5b-7190d7777ecb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "15+65 would make a right angle. Would these fit together to make a right angle?",
+        "B": "I think you may be thinking of co-interior angles, which sum to 180. What kind of angles are these?",
+        "C": "Corresponding angles are equal.",
+        "D": "I think you may be thinking of angles around a point, which sum to 360. What kind of angles are these?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 93406,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/46cb41c5-97c7-473a-a4e1-5cff7dab4922.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Corresponding angles are equal.",
+        "B": "I think you may be thinking of co-interior angles, which sum to 180. What kind of angles are these?",
+        "C": "What kind of angles are these? e.g. Alternate, co-interior, corresponding, vertically opposite, etc.",
+        "D": "Try marking parallel lines with arrows, does this look any more familiar?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 93421,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0f3efe96-9cdc-42bf-8623-77e75b7b94f1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "What kind of angles are these? e.g. Alternate, co-interior, corresponding, vertically opposite, etc.",
+        "B": "I think you may be thinking of co-interior angles, which sum to 180. What kind of angles are these?",
+        "C": "Corresponding angles are equal.",
+        "D": "Try marking parallel lines with arrows, does this look any more familiar?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 132121,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a79918fe-7951-4866-b0e8-36230c7a7b0c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Angles on a straight line add up to 180° but these two angles are alternate angles. What is the rule for alternate angles?",
+        "B": "I think you might have estimated the size of the angle but we can work it out. We have two alternate angles here. What do we know about alternate angles?",
+        "C": "Angle q and the 125° angle marked on the diagram are alternate angles on a pair of parallel lines. We know that alternate angles are equal so angle q must also equal 125°.",
+        "D": "We can use a rule about angles on parallel lines to work this out. Are the two angles shown corresponding, alternate or on a straight line?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 132081,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4f497313-3cfb-45f9-9e42-d242c65fc66b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Angle q and the 65° angle marked on the diagram are alternate angles on a pair of parallel lines. We know that alternate angles are equal so angle q must also equal 65°.",
+        "B": "Angles on a straight line add up to 180° but these two angles are alternate angles. What is the rule for alternate angles?",
+        "C": "I think you might have estimated the size of the angle but we can work it out. We have two alternate angles here. What do we know about alternate angles?",
+        "D": "We can use a rule about angles on parallel lines to work this out. Are the two angles shown corresponding, alternate or on a straight line?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

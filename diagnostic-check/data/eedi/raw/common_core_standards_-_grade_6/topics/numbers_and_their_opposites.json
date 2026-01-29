@@ -1,0 +1,153 @@
+{
+  "shortcode": "ehiv",
+  "name": "Numbers and their opposites",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 76,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Find the opposite of a given integer",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Know that 0 is the opposite of itself",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify the meaning of 0 in real life contexts involving positive and negative numbers",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166757,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7e501740-220e-4f3e-a2b2-0fbd86c3a7e9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This would be 1m above sea level, we are looking for the city that is not above or below the sea...",
+        "B": "This city has the lowest elevation, it is below sea level, we are looking for the city that is not above or below the sea...",
+        "C": "We are looking for the city at sea level so it's not above or below the sea. Santo Domingo has an elevation of 0m therefore, it is at sea level!",
+        "D": "This city has the highest elevation so is the highest city above sea level, we are looking for the city that is not above or below the sea..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167007,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7d4bd0be-7d8f-4740-98e2-4641c16d1905.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This city has the lowest elevation, it is below sea level, we are looking for the city that is not above or below the sea...",
+        "B": "We are looking for the city at sea level so it's not above or below the sea. Singapore has an elevation of 0m therefore, it is at sea level!",
+        "C": "This would be 1m above sea level, we are looking for the city that is not above or below the sea...",
+        "D": "This city has the highest elevation so is the highest city above sea level, we are looking for the city that is not above or below the sea..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166758,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9d05450f-78ae-490c-97e4-7c913561c4a6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Depth is measured from the surface, so a depth of 0 is at the surface.",
+        "B": "Not quite - think about where we measure depth from. It's not measured from the bottom up.",
+        "C": "Think about where we start measuring depth from - it doesn't start in the middle of the lake.",
+        "D": "Almost, but think about the exact point where we start measuring depth."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167008,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a383bb0e-b5a9-43aa-9b43-77b5d9e979ac.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite - think about where we measure depth from. It's not measured from the bottom up.",
+        "B": "Think about where we start measuring depth from - it doesn't start in the middle of the sea.",
+        "C": "Depth is measured from the surface, so a depth of 0 is at the surface.",
+        "D": "Almost, but think about the exact point where we start measuring depth."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166759,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/decd99e6-0af2-488e-a265-45c853811790.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Opposites don't have to be negative! The opposite of 6 is -6 so what is the opposite of -6?",
+        "B": "I think you are confused because a value plus its opposite equal 0... -6 + ? = 0",
+        "C": "If the opposite of 6 is -6 then the opposite of -6 is 6!",
+        "D": "Opposites don't have to be more negative! There's a clue in the question, the opposite of 6 is -6 so, what is the opposite of -6?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167009,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7d09f49e-0b5b-4546-af19-f520d2722d3b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you are confused because a value plus its opposite equal 0... -4 + ? = 0",
+        "B": "Opposites don't have to be more negative! There's a clue in the question, the opposite of 4 is -4 so, what is the opposite of -4?",
+        "C": "Opposites don't have to be negative! The opposite of 4 is -4 so what is the opposite of -4?",
+        "D": "If the opposite of 4 is -4 then the opposite of -4 is 4!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166760,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c655b8ea-5370-445b-a7c9-fe04f79d57a1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A value plus its opposite equals 0. 0 + 0 = 0 therefore, 0 is its own opposite!",
+        "B": "1 + 1 = 2. The opposite of 1 would be -1. A value plus its opposite equals 0, which of these numbers can you add to itself to give 0?",
+        "C": "0.1 + 0.1 = 0.2, not 0. The opposite of 0.1 would be -0.1. A value plus its opposite needs to equal 0, which of these numbers can you add to itself to give 0?",
+        "D": "1/2 + 1/2 = 1 but opposites add to give 0. Which of these numbers can you add to itself to give 0?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167010,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/20f6b00b-3bd6-407f-badd-470f33b1a369.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A value plus its opposite equals 0! 1 + 1 = 2 therefore, it isn't it's own opposite. But, are there any other values that aren't?",
+        "B": "A value plus its opposite equals 0. 0 + 0 = 0 therefore, 0 is its own opposite! We are looking for the number which isn't its own opposite...",
+        "C": "A value plus its opposite equals 0! 1/2 + 1/2 = 1 therefore, it isn't it's own opposite. But, are there any other values that aren't?",
+        "D": "A value plus its opposite equals 0. 1 + 1 = 2 and 1/2 + 1/2 = 1 therefore, they are not their own opposites. 0 + 0 = 0 therefore, 0 is its own opposite!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166761,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/44b52269-0e50-4b1d-8ac3-5d1ae5e2a3f3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You are not completely incorrect! You need to remember that a value plus its opposite equals 0...",
+        "B": "You are not completely incorrect: -𝑦 is the opposite of 𝑦! But, re-read the question, if 𝑥 is the opposite of 𝑦. Then what must be the opposite of 𝑥?",
+        "C": "We are told in the question that 𝑦 is the opposite of 𝑥 therefore, 𝑥 must be the opposite of 𝑦. We also know that a value plus its opposite equals 0 and -𝑦 + 𝑦 = 0 therefore -𝑦 and 𝑦 are opposites. 𝑥 can equal -𝑦. Therefore both Tom and Katie are correct!",
+        "D": "Re-read the question, if 𝑥 is the opposite of 𝑦. Then what must be the opposite of 𝑥? Also, a value plus its opposite equals 0. With these in mind, have another go at the question!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167011,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/73a2b376-12c1-4ce4-91b5-0a417eb15387.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Re-read the question, if 𝑐 is the opposite of 𝑑. Then what must be the opposite of 𝑑? Also, a value plus its opposite equals 0. With these in mind, have another go at the question!",
+        "B": "You are not completely incorrect! You need to remember that a value plus its opposite equals 0...",
+        "C": "You are not completely incorrect: -𝑐 is the opposite of 𝑐! But, re-read the question, if 𝑐 is the opposite of 𝑑. Then what must be the opposite of 𝑑?",
+        "D": "We are told in the question that 𝑐 is the opposite of 𝑑 therefore, 𝑑 must be the opposite of 𝑐. We also know that a value plus its opposite equals 0 and -𝑐 + 𝑐 = 0 therefore -𝑐 and 𝑐 are opposites. 𝑑 can equal -𝑐. Therefore both Tom and Katie are correct!"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

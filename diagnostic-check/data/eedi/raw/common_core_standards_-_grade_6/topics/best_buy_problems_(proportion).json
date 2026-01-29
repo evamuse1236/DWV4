@@ -1,0 +1,147 @@
+{
+  "shortcode": "vm9",
+  "name": "Best buy problems (proportion)",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 29,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Solve best value problems by comparing price for a fixed unit bought",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve best value problems by comparing units bought for a fixed price",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 131691,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e8e3451a-ae57-42b0-ab69-edcd0c0cf4b0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "1 litre is 1000ml. If 1000 ml is £1.60 then 100ml will be 1.60 ÷ 10 which is 16p. There is another option that is cheaper per 100ml than this :)",
+        "B": "If 500ml is 75p, then 100ml will be 75 ÷ 5 = 15p. This is better value than the other options.",
+        "C": "If 330ml is 55p, we can find the value for 100ml by dividing by 3.3. 55 ÷ 3.3 = 16.67p. This is not the lowest value per 100ml, so not the best value. Try using this method on the other options to find the best value drink.",
+        "D": "If 200ml is 35p, we can find the value for 100ml by dividing by 2. 35 ÷ 2 = 17.5p. This is not the lowest value per 100ml, so not the best value. Try using this method on the other options to find the best value drink."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133884,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/72ba8f2f-55dd-4756-8b33-2ea48f51cf02.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "1 litre is 1000ml. If 1000 ml is £3.30 then 100ml will be 3.30 ÷ 10 which is 33p. There is another option that is cheaper per 100ml than this :)",
+        "B": "If 500ml is £1.70, we can find the value for 100ml by dividing by 5. 170 ÷ 5 = 34p. This is not the lowest value per 100ml, so not the best value. Try using this method on the other options to find the best value drink.",
+        "C": "If 330ml is 95p, then to find 100ml we can divide by 3.3. This gives us 95 ÷ 3.3 = 28.79p. This is better value than the other options.",
+        "D": "If 200ml is 70p, we can find the value for 100ml by dividing by 2. 70 ÷ 2 = 35p. This is not the lowest value per 100ml, so not the best value. Try using this method on the other options to find the best value drink."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131692,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1d6b9bdf-56e2-48d4-9afd-2e345e70ec2f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! We need to calculate the difference between the prices for 1200g, not for 400g and 600g. How many small jars do you need for 1200g of sauce? How much does this cost? How many large jars do you need? How much does this cost? Which is the better value?",
+        "B": "Almost. Is buying the three small jars the cheapest option?",
+        "C": "Not quite! We need to calculate the difference between the prices for 1200g, not for 400g and 600g. How many small jars do you need for 1200g of sauce? How much does this cost? How many large jars do you need? How much does this cost? Which is the better value?",
+        "D": "We need to calculate the difference between the prices for 1200g. The 600g jars cost 85p each, so for 1200g they cost £1.70. The 400g jars cost 60p each, so for 1200g they cost £1.80. We are looking for the cheapest option, which is 2 big jars."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133885,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/76b23fb4-bd61-45d7-97f3-ac1ef05c4a70.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! We need to calculate the difference between the prices for 1200g, not for 400g and 600g. How many small jars do you need for 1200g of sauce? How much does this cost? How many large jars do you need? How much does this cost? Which is the better value?",
+        "B": "We need to calculate the difference between the prices for 1200g. The 400g jars cost 90p each, so for 1200g they cost £2.70. The 600g jars cost £1.45 each, so for 1200g they cost £2.90. We are looking for the cheapest option, which is 3 small jars.",
+        "C": "Not quite! We need to calculate the difference between the prices for 1200g, not for 400g and 600g. How many large jars do you need for 1200g of sauce? How much does this cost? How many small jars do you need? How much does this cost? Which is the better value?",
+        "D": "Almost. Is buying two big jars the cheapest option?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131693,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7abb890c-e419-4c46-9868-a03dbabb23d6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We can compare best values by seeing how much we can get for £1 in each scenario. For Tom's statement we need to double from 50p to £1, and therefore we also double 140g and compare the values. How can we compare Katie's values as well?",
+        "B": "We can compare best values by seeing how much we can get for £1 in each scenario. For Katie's statement we need to halve from £2 to £1, and therefore we also halve 500g and compare the values. How can we compare Tom's values as well?",
+        "C": "Tom is correct, as 50p for 140g is equivalent to £1 for 280g, which is not as good value as £1 for 300g. Katie is correct, as £2 for 500g is equivalent to £1 for 250g which is not as good value as £1 for 300g.",
+        "D": "Not quite! At least one of the is correct. Remember when looking at Best Buys we want more grams for the same amount of money. We can compare best values by seeing how much we can get for £1 in each scenario."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133886,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/200ec884-f04e-4f2e-877a-faff756a0c25.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom is correct, as £2 for 1kg is equivalent to £1 for 500g, which is not as good value as £1 for 600g. Katie is incorrect, as 50p for 400g is equivalent to £1 for 800g which is better value than £1 for 600g.",
+        "B": "Not quite! Remember when looking at Best Buys we want more grams for the same amount of money. We can compare best values by seeing how much we can get for £1 in each scenario. Remember that 1kg is the same as 1000g.",
+        "C": "Not quite! We can compare best values by seeing how much we can get for £1 in each scenario. For Tom's statement we need to halve £2 to £1, and therefore we also halve 1kg and compare the values. How can we compare Katie's values as well?",
+        "D": "Not quite! At least one of them is correct. When looking at Best Buys we want more grams for the same amount of money. We can compare best values by seeing how much we can get for £1 in each scenario. Remember that 1kg is the same as 1000g."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131694,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/00ff73f6-43e2-4841-a92d-13206bb34569.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If 1 litre is £3, then for £1 we calculate 1 ÷ 3, which is 0.333L. This is not the best value, can you calculate the others and see which is best value for £1?",
+        "B": "If 500ml is £1.60 we have to divide 500 by 1.6 to see the amount for £1. This gives us 312.5ml which is not the best value. Can you calculate the others and see which is best value for £1?",
+        "C": "If 330ml is £1.10 we have to calculate 330 ÷ 1.1 to see the amount for £1. This gives us 300ml (or 0.3L) which is not the best value. Can you calculate the others and see which is best value for £1?",
+        "D": "We can calculate the amount of drink each price will get for £1. Because 55p = £0.55, if we calculate 200 ÷ 0.55 it tells us we get 0.363L (or 363ml) for £1. Which is the best value of all the options."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133887,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/de265236-1452-4d52-a4db-535d37542878.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If 1litre is £2 we can calculate how much you get for £1 by dividing by 2. This means you would get 500ml for £1, which is not the best value. Can you calculate the others and see which is best value for £1?",
+        "B": "If 500ml is £1.20 we have to calculate 500 ÷ 1.2 to see the amount for £1. This gives us 416 ml which is not the best value. Can you calculate the others and see which is best value for £1?",
+        "C": "To find the best value price, we can calculate the amount of drink each option will get for £1. Because 65p = £0.65, if we calculate 330 ÷ 0.65 it tells us we get 507ml for £1. Which is the best value of all the options.",
+        "D": "If 200ml is 50p we can see how much we would get for £1 by multiplying by 2. This means we would get 400ml for £1 which is not the best value. Can you calculate the others and see which is best value for £1?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131695,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/13a51395-30d9-4ac4-baa0-06a0736f814e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! If Tom buys 4 small jars, he'll have 1000g of sauce. How many grams of sauce would he get if he spent his £6 on big jars? What is the difference in the sauce amounts?",
+        "B": "If Tom buys 4 small jars, he'll have 1000g. If he buys 3 big jars with the £6, he'll have 900g. The difference is 100g.",
+        "C": "If Tom buys 3 big jars, he'll have 900g of sauce. How many grams of sauce would he get if he spent his £6 on small jars? What is the difference in the sauce amounts?",
+        "D": "If Tom buys 3 big jars, he'll have 900g of sauce. How many grams of sauce would he get if he spent his £6 on small jars? ? What is the difference in the sauce amounts?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133888,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ecac60f3-c5ca-4d6a-ab75-e00e4b4764ce.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If Tom buys 4 small jars, he'll have 1200g of sauce. How many grams of sauce would he get if he spent his £6 on big jars? What is the difference in the sauce amounts?",
+        "B": "If Tom buys 4 small jars, he'll have 1200g of sauce. How many grams of sauce would he get if he spent his £6 on big jars? What is the difference in the sauce amounts?",
+        "C": "If Tom buys 3 big jars, he'll have 900g of sauce. How many grams of sauce would he get if he spent his £6 on small jars? What is the difference in the sauce amounts?",
+        "D": "If Tom buys 4 small jars, he'll have 1200g. If he buys 3 big jars with the £6, he'll have 1320g. The difference is 120g."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

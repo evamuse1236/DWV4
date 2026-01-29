@@ -1,0 +1,153 @@
+{
+  "shortcode": "vxw",
+  "name": "Experimental probability",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 238,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Use relative frequency to estimate probabilities",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use relative frequency to predict the outcome of a series of events",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Compare relative frequencies in order to determine which prediction is likely to be more reliable",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 131616,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e5127a61-3f75-4234-b210-200940245604.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You've identified 11 as being the frequency, but the 'relative' part is needed to give us an idea of how this compares with the group as a whole; in other words, it tells us out of how many.",
+        "B": "You've identified 11 as being the frequency and have correctly used this value as the numerator. The 'relative' part gives us an idea of how this compares with the group as a whole, so think about how many people were surveyed and how this can be incorporated into your answer.",
+        "C": "Eleven people do not eat meat, and this is out of a total of 50 surveyed. This can be expressed as a fraction: 11/50, which gives the value for relative frequency.",
+        "D": "You've identified 11 as being the frequency and have correctly used this value as the numerator. The 'relative' part gives us an idea of how this compares with the group as a whole, so think about how many people were surveyed and how this can be incorporated into your answer."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133809,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fe6dc151-53c1-4409-a374-99eabc380a86.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Twelve people cannot drive, and this is out of a total of 40 surveyed. This can be expressed as a fraction: 12/40, which gives the value for relative frequency .",
+        "B": "You've identified 12 as being the frequency and have correctly used this value as the numerator. The 'relative' part gives us an idea of how this compares with the group as a whole, so think about how many people were surveyed and how this can be incorporated into your answer.",
+        "C": "You've identified 12 as being the frequency, but the 'relative' part is needed to give us an idea of how this compares with the group as a whole; in other words, it tells us out of how many.",
+        "D": "You've identified 12 as being the frequency and have correctly used this value as the numerator. The 'relative' part gives us an idea of how this compares with the group as a whole, so think about how many people were surveyed and how this can be incorporated into your answer."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131617,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/151b1460-4fc7-41d3-8006-5190fcff0e70.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Supposing we reword this question with extremes and imagine that for Town A, one person was asked, and for Town B, everyone living there was asked. In this situation, which would be more reliable?",
+        "B": "The result of asking 200 people in Town B will be more reliable: the greater the number of people sampled, the greater the chance of those results bearing more similarity to Town B as a whole.",
+        "C": "Supposing we reword this question with extremes and imagine that for Town A, one person was asked, and for Town B, everyone living there was asked. In this situation, which would be more reliable?",
+        "D": "Supposing we reword this question with extremes and imagine that for Town A, one person was asked, and for Town B, everyone living there was asked. In this situation, which would be more reliable?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133810,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3929070f-3a0b-4430-ac34-808f7ac0fad7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Supposing we reword this question with extremes and imagine that for Town A, one person was asked, and for Town B, everyone living there was asked. In this situation, which would be more reliable?",
+        "B": "The result of asking 150 people in Town B will be more reliable: the greater the number of people sampled, the greater the chance of those results bearing more similarity to Town B as a whole.",
+        "C": "Supposing we reword this question with extremes and imagine that for Town A, one person was asked, and for Town B, everyone living there was asked. In this situation, which would be more reliable?",
+        "D": "Supposing we reword this question with extremes and imagine that for Town A, one person was asked, and for Town B, everyone living there was asked. In this situation, which would be more reliable?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131618,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7578a039-6132-4983-85b2-45c9f014729f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "11 do not eat meat, and this is out of a total of 50, so the fraction of people not eating meat is 11/50. This enables us to make a 'best guess' at the number if 300 were to be asked: If we multiply the numerator and denominator by 6 we would get 66/300 so we could expect 66 to answer NO if we asked 300 people",
+        "B": "An answer of 261 means that over half do not eat meat. Is this what the table shows? Ask yourself what fraction of those surveyed (shown in the table) do not eat meat. The best guess for 300 people will be an equivalent fraction to this, but with 300 as the denominator",
+        "C": "An answer of 33 is three times the number shown in the table, but are 3 times as many people being considered for a total of 300?",
+        "D": "11 would be the best guess if 50 people were asked again. We need to scale this up for 300 people. How many times more people are there?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133811,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9a1315dc-3f1f-45d5-9dea-350151c19b43.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "An answer of 48 is 4 times the number shown in the table, but are 4 times as many people being considered for a total of 200?",
+        "B": "12 would be the best guess if 40 people were asked. We need to scale this up for 200 people. How many times more people are there?",
+        "C": "12 cannot drive, and this is out of a total of 40, so the fraction of people that cannot drive is 12/40. This enables us to make a 'best guess' at the number if 200 were to be asked. If we multiply the numerator and denominator by 5 we would get 60/200 so we could expect 60 to answer NO if we asked 200 people",
+        "D": "An answer of 172 means that well over half cannot drive. Is this what the table shows? Ask yourself what fraction of those surveyed (shown in the table) cannot drive. The best guess for 200 people will be an equivalent fraction to this, but with 200 as the denominator"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131619,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e06dbeff-5470-47b0-9741-b909cca12b88.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If the die was fair, then you'd be right, but this isn't the case because it is biased; in the question we are told that 19 sixes were recorded! How can you express this as a fraction of the total rolls of the die?",
+        "B": "You've recorded the 19 but the denominator needs to be the total number of rolls of the die. 21 is the number of rolls that weren't a 6",
+        "C": "19 sixes are recorded out of a total of 40 rolls of the die. This can be expressed as a fraction: 19/40, which gives the value for relative frequency.",
+        "D": "You've identified 19 as being the frequency, but are missing the 'relative' part. We need to write it as a fraction of the total number of sixes out of the total number of rolls"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133812,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e8dd813d-74d2-4e90-a98a-e57e59700a06.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "27 sixes are recorded out of a total of 80 rolls of the die. This can be expressed as a fraction: 27/80, which gives the value for relative frequency.",
+        "B": "You've identified 27 as being the frequency, but are missing the 'relative' part. We need to write it as a fraction of the total number of sixes out of the total number of rolls",
+        "C": "If the die was fair, then you'd be right, but this isn't the case because it is biased; in the question we are told that 27 sixes were recorded! How can you express this as a fraction of the total rolls of the die?",
+        "D": "You've recorded the 27 but the denominator needs to be the total number of rolls of the die. 53 is the number of rolls that weren't a 6"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131620,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ecf5c41e-90cc-4bfb-8e18-37b42a7a865d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've worked this out as if it were a fair die, which isn't the case here. Ask yourself what fraction of the time is a 6 rolled, then you can work out the best guess by finding this fraction of 1000.",
+        "B": "Nineteen is the frequency of 6s recorded for 40 rolls of the die, so the fraction of 6s recorded is 19/40. This enables us to make a 'best guess' at the number if 1000 were to be rolled: 19/40 × 1000 = (19 × 1000) ÷ 40 = 475. Another way of looking at this is to say there are 1000 ÷ 40 = 25 times more rolls, so the best guess is that there will be 25 times more 6s = 25 × 19 = 475.",
+        "C": "Nineteen would be the best guess if there were 40 rolls of the die. We need to scale this up for 1000 rolls. How many times more than 40 is this?",
+        "D": "You've worked out how many times bigger 1000 is than 40, which is useful! What effect will this have on the best guess answer?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133813,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d1433d12-a901-48c2-97af-e965c3939895.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Twenty-seven would be the best guess if there were 80 rolls of the die. We need to scale this up for 400 rolls. How many times more than 80 is this?",
+        "B": "You've worked out how many times bigger 400 is than 80, which is useful! What effect will this have on the best guess answer?",
+        "C": "I think you've worked this out as if it were a fair die, which isn't the case here. Ask yourself what fraction of the time is a 6 rolled, then you can work out the best guess by finding this fraction of 400.",
+        "D": "Twenty-seven is the frequency of 6s recorded for 80 rolls of the die, so the fraction is 27/80. This enables us to make a 'best guess' at the number if 400 were to be rolled: 27/80 × 400 = (27 × 400) ÷ 80 = 135. Another way of looking at this is to say there are 400 ÷ 80 = 5 times more rolls, so the best guess is that there will be 55 times more 6s = 5 × 27 = 135."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

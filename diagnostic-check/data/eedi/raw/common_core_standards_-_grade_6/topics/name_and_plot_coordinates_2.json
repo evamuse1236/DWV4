@@ -1,0 +1,165 @@
+{
+  "shortcode": "vod",
+  "name": "Name and plot coordinates 2",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 81,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Describe a point in the first quadrant of a 2D grid by giving its coordinates, where both values are integers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Mark a point in the first quadrant of a 2D grid having been given its coordinates, where both values are integers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Describe a point in the second quadrant of a 2D grid by giving its coordinates, where both values are integers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Describe a point on the axes of a 2D grid by giving its coordinates, where the non-zero value is an integer",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Mark a point on the axes of a 2D grid having been given its coordinates, where the non-zero value is an integer",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 97991,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/83133d0d-b415-42e8-943e-89e32c66daa8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "When reading or plotting coordinates you read from (0,0). Read across first to the left or right and then up or down. Looking at the position of the point, it is at −4 on the x axis. 4 to the left from (0,0)and 2 on the y axis, 2 up from (0,0), giving coordinates of (−4, 2).",
+        "B": "It looks like you have read the values in the wrong order.",
+        "C": "It looks like you have read the x co-ordinate in the wrong direction, omitting the negative value.",
+        "D": "It looks like you have read the values in the wrong order and misread the y co-ordinate as a negative."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 124913,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b5de08dc-d1d8-4ba7-b829-47bad15c8edb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have read the values in the wrong order. When reading or plotting coordinates you read from (0,0). Read across first to the left or right and then up or down.",
+        "B": "When reading or plotting coordinates you read from (0,0). Read across first to the left or right and then up or down. Looking at the position of the point, it is at −2 on the x axis. 2 to the left from (0,0) and 4 on the y axis, 4 up from (0,0), giving coordinates of (-2, 4).",
+        "C": "It looks like you have read the x co-ordinate in the wrong direction, omitting the negative value.",
+        "D": "It looks like you have read the values in the wrong order and misread the y co-ordinate as a negative."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 97993,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c0142af4-5871-4d69-bbb2-82fb547171b6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Starting from the origin (0, 0), there is no movement in the horizontal direction, so the x coordinate is 0. There is a move down of 3, which means a y coordinate value of −3, meaning the marked point is at (0, −3).",
+        "B": "It looks like you've mixed up the x and y coordinates. Remember it's across and then down",
+        "C": "To read a coordinate, start from the origin (0,0). The first movement is horizontal and is represented by the first value, right if positive and left if negative, The second movement is vertical and is represented by the second value, up if positive and down if negative. Look again at how you have moved from (0,0).",
+        "D": "To read a coordinate, start from the origin (0,0). The first movement is horizontal and is represented by the first value, right if positive and left if negative, The second movement is vertical and is represented by the second value, up if positive and down if negative. You have said you need to move 1 to the right, is this the case here?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 98008,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1c1a29a2-accd-435b-b0ba-87ecf4a36fc3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To read a coordinate, start from the origin (0,0). The first movement is horizontal and is represented by the first value, right if positive and left if negative, The second movement is vertical and is represented by the second value, up if positive and down if negative. Look again at how you have moved from (0,0).",
+        "B": "It looks like you've mixed up the x and y coordinates. Remember it's across and then down",
+        "C": "Starting from the origin (0, 0), there is a movement in the horizontal direction of 2 to the left, so the x coordinate is −2. The point is on the x axis, and so there is no movement vertically, up or down, which means a y coordinate value of 0, so the coordinate is (−2, 0).",
+        "D": "To read a coordinate, start from the origin (0,0). The first movement is horizontal and is represented by the first value, right if positive and left if negative, The second movement is vertical and is represented by the second value, up if positive and down if negative. You have said you need to move 1up, is that the case here?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107116,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f8159240-0421-4ada-9748-a7f0a276bcc6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Starting from the origin (0, 0), the star is a move of 2 across (along the 𝑥 axis) and 4 up (along the 𝑦 axis). The rule is to put these values in brackets, stating the 𝑥 coordinate first, so (2, 4).",
+        "B": "It looks like you have read the coordinates in the wrong order.",
+        "C": "It seems you have read the midpoint values rather than the 𝑥 and 𝑦 values on the axes.",
+        "D": "It looks like you have read the coordinates in the wrong order, mixing up 𝑥 and 𝑦 and thought the lines represent midpoints."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107120,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db57efd1-7d0d-4b90-94cc-66034f6c5292.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It seems you have read the midpoint values rather than the 𝑥 and 𝑦 values on the axes.",
+        "B": "It looks like you have read the coordinates in the wrong order, mixing up 𝑥 and 𝑦 and thought the lines represent midpoints.",
+        "C": "Starting from the origin (0, 0), the star is a move of 4 across (along the 𝑥 axis) and 3 up (along the 𝑦 axis). so, the rule is to put these values in brackets, stating the 𝑥 coordinate first, meaning the star is at (4, 3).",
+        "D": "It looks like you have read the coordinates in the wrong order, mixing up 𝑥 and 𝑦"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107117,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/167d4a89-9191-4f59-92e1-7b5f9c82495f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You seem to have moved along the 𝑥 axes by the correct amount. Think about the value of the y co-ordinate.",
+        "B": "It looks like you have misread this co-ordinate. From (0,0) B has only moved along the y-axis. (3,1) means there are movements along both axes.",
+        "C": "The coordinates (3, 1) tell us that starting from the origin (0, 0) a move of 3 to the right (along the 𝑥 axis) and 1 up (along the 𝑦 axis) is needed. Therefore, C represents (3,1).",
+        "D": "It looks like you have read the 𝑥 and 𝑦 co-ordinates in the wrong order."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107121,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8bcc5425-9ed1-4314-a74f-bed00687c566.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You seem to have mixed up the 𝑥 and 𝑦 co-ordiantes. Remember the starting point is (0,0)",
+        "B": "Remember the starting point is (0,0). You seemed to have started from 1 on the 𝑥 axis.",
+        "C": "It looks like you have read the 𝑥 and 𝑦 co-ordinates in the wrong order.",
+        "D": "The coordinates (1, 2) tell us that starting from the origin (0, 0) a move of 1 to the right (along the 𝑥 axis) and 2 up (along the 𝑦 axis) is needed. Therefore, D represents (1,2)"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107119,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4e087481-ca72-44a4-9f78-175468e78279.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A coordinate is made up of 2 values, the first representing the movement along the on the 𝑥 axis and the second, the movement along the 𝑦 axis. If a point lies on the y axis, think about the movement made from (0,0).",
+        "B": "If a coordinate lies on the y axis, there is only a vertical movement from the origin (0,0). Remember coordinates are (x, y)",
+        "C": "If a coordinate lies on the y axis, there is only a vertical movement from the origin (0,0). Remember coordinates are (x, y)",
+        "D": "Any coordinate on the 𝑦 axis has no movement along the 𝑥 (horizontal) axis. This means that the first coordinate is 0. The answer that fits this condition is D (0, −12), which indicates 0 in the 𝑥 direction and a move of −12 in the 𝑦 direction, 12 down from the origin (0,0)."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107123,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/227dde1b-f56b-4040-bf75-f6d120dc56f0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Any coordinate on the x axis has no movement along the y (vertical) axis. This means that the second coordinate is 0. (-2,0) indicates 2 to the lft in the x direction from the origin (0,0) and 0 in the 𝑦 direction.",
+        "B": "If a coordinate lies on the x axis, there is only a horizontal movement from the origin (0,0). Remember coordinates are (x, y)",
+        "C": "If a coordinate lies on the x axis, there is only a horizontal movement from the origin (0,0). Remember coordinates are (x, y)",
+        "D": "A coordinate is made up of 2 values, the first representing the movement along the on the 𝑥 axis and the second, the movement along the 𝑦 axis. If a point lies on the x axis, think about the movement made from (0,0)."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

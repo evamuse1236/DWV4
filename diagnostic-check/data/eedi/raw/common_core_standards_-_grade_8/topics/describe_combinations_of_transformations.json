@@ -1,0 +1,165 @@
+{
+  "shortcode": "v1a",
+  "name": "Describe combinations of transformations",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 123,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Describe a 90° or 270° rotation giving the angle and direction of rotation, and the coordinates of the centre of rotation, where the centre of rotation lies within the object ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Describe the combination of two transformations as a single transformation, where neither transformation is an enlargement",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Describe the combination of two transformations as a single transformation, where at least one transformation is an enlargement",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Describe the combination of three or more transformations as a single transformation",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Understand how to reverse a rotation to go from image to object ",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 135738,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/48a51686-5c41-4975-b9a7-68961c2d161f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you have selected a point between the two shapes but it is not the centre. Count how you would get from the suggested centre to P. If you rotated this movement 90° clockwise would it take you to P'?",
+        "B": "To go from the centre (3, 5) to P we move 1 right and 3 up. If we rotate this 90° clockwise it would be 1 down and 3 right which does indeed take us to P'.",
+        "C": "Not quite, I think you have selected a point between two of the corners on the shapes but it is not the centre. Count how you would get from the suggested centre to P. If you rotated this movement 90° clockwise would it take you to P'?",
+        "D": "Not quite, I think you have selected a point between two of the corners on the shapes but it is not the centre. Count how you would get from the suggested centre to P. If you rotated this movement 90° clockwise would it take you to P'?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 155419,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3cfe97a4-48f5-48ba-88db-2beb9cc0ab50.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To go from the centre (4, 5) to D we move 4 right. If we rotate this 90° anticlockwise it would be 4 up which does indeed take us to D'.",
+        "B": "Not quite, I think you have selected a point between the two shapes but it is not the centre. Count how you would get from the suggested centre to D. If you rotated this movement 90° anticlockwise would it take you to D'?",
+        "C": "Not quite, I think you have selected a point between the two shapes but it is not the centre. Count how you would get from the suggested centre to D. If you rotated this movement 90° anticlockwise would it take you to D'?",
+        "D": "Not quite. I think you have selected a point that is the corner of both shapes, however they are not corresponding corners so this is not the centre of rotation. Count how you would get from the suggested centre to D. If you rotated this movement 90° anticlockwise would it take you to D'?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135739,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a8e828c1-618e-4b39-8312-741fdb9f136a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "90° clockwise would take us back to Shape 1, but what if we kept turning anticlockwise? How far would we have to go to get back to the start?",
+        "B": "270° anticlockwise would take us all the way back to Shape 1, but what if we reversed the direction? How far would we have to turn to get back to the start?",
+        "C": "90° clockwise is the opposite of 90° anticlockwise, so Tom is correct and that will take it back to Shape 1. If Shape 2 has rotated one quarter turn from Shape 1, then rotating 270° (three more quarter turns) in the same direction will take it back round to the beginning, so Katie is also correct.",
+        "D": "If we kept rotating anticlockwise, how much further would the shape have to turn to get back to where it started? If we reversed direction and went clockwise, how far would the shape have to turn to get back to where it started? Remember there are 360° in a full turn."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135759,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/90af9619-e2a7-4837-8d6c-a0b0f700db34.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If the shape rotates 90° clockwise and then another 90° clockwise, how far has it gone altogether? Would this take it back to the beginning?",
+        "B": "Remember 270° is three quarter turns. If the shape rotates one quarter turn clockwise, then three quarter turns anticlockwise, will it end up back at the beginning?",
+        "C": "Picture rotating the shape, and pay careful attention to the direction... Remember 90° is one quarter turn and 270° is three quarter turns.",
+        "D": "If the shape is rotated 90° clockwise and then another 90° clockwise it will be 180° away from its original position, so Tom is incorrect. If it is rotated 90° clockwise and then reverses direction, 90° would take it back to its original position but 270° will take it too far, so Katie is also incorrect."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135740,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b97a4297-566b-4907-a4a2-87ba0389c97e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Reflecting in x = 6 then rotating around (6,7) gives us shape R with coordinates at (2,3), (3,7), (5,6) and (5,4). That's directly above shape P, and upside down, so we can get from P up to R by reflecting in the line y = 7.",
+        "B": "Almost! Shape R does end up above shape P, but rotating P won't quite get it to the right place.",
+        "C": "I think you may have made a mistake with at least one of your transformations. Shape R should end up above shape P, so a vertical reflection wouldn't take P to R.",
+        "D": "Remember we're trying to get from P to R, so you need to take into account the reflection too. Try sketching the shape after it has been reflected and rotated, and then trying to get there from shape P."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135760,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5d805427-e058-46a4-92ac-080c83ea36c6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Reflecting in x = 1 would reflect shape P directly to the right, but that won't have the same effect as a 90 degree rotation and a reflection. Try sketching the shape after it has been reflected and rotated, and then trying to get there from shape P.",
+        "B": "Remember we're trying to get from P to R, so you need to take into account the reflection too. Try sketching the shape after it has been reflected and rotated, and then trying to get there from shape P.",
+        "C": "Remember we're trying to get from P to R, so you need to take into account the rotation too. Try sketching the shape after it has been reflected and rotated, and then trying to get there from shape P.",
+        "D": "Rotating 90 degrees around (1,1) and then reflecting in y=1 gives shape R with corners at (1,1), (6,1), (4,-1) and (3,0). To get directly from shape P to R, we need to reflect in the diagonal line through (0,0), (1,1) etc which is the line y = x"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135741,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5c25baf0-8144-4edb-a8fc-8e00ec65af16.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The line 𝑥 = 3, is a vertical line going through 3 on the 𝑥 axis. If we reflect shape P in this line, it will flip horizontally and so shape R would be in exactly the same position as shape P. This is not where shape R is.",
+        "B": "Enlarging by scale factor 2 from centre (0,2) gives shape Q with corners at (4,4), (6,10), (8,4) and (6,2). Enlarging this shape by scale factor -0.5 from (4,8) gives shape R with corners at (2,10), (3,11), (4,10) and (3,7), which is the same as rotating P 180 degrees around (3, 6.5).",
+        "C": "If you did this transformation, then shape R would end up the correct size and orientation. However,it would not be in the correct position: point (3,6) would still be at (3,6) when enlarging from point (3,6), which isn't the case for shape R.",
+        "D": "A translation will keep a shape in the same orientation (the same way up). But shape R is upside down, when compared with shape P, due to one of the enlargements having a negative scale factor."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135761,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dc0a9aac-f3c7-471e-bf94-7563fdf0b4d3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The first enlargement gives shape Q with corners at (2.5,1.5), (2.5,4), (1.5,3.5) and (1.5,2.5). Then, the enlargement of shape Q gives R with corners at (9,10), (9,8), (7,7) and (7,12).",
+        "B": "A translation will keep a shape in the same orientation (the same way up). But shape R is upside down, when compared with shape P, due to one of the enlargements having a negative scale factor.",
+        "C": "Reflection in that downwards diagonal line would put R in roughly the right place, but it wouldn't be in the correct orientation. R is upside down relative to P, what type of transformation does that?",
+        "D": "That rotation would not put R in quite the right position... Check all the centres of rotation you have used, and the distance of each shape from the centre."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135742,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/31dc0c4b-5c00-4d42-babe-e33027d85a66.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like your might have skipped the reflection in the middle... make sure you do every transformation.",
+        "B": "Double check your centres of rotation, and how far you turned the shape each time. The shape was rotated 90° clockwise, reflected horizontally and rotated 90° clockwise again, it should have ended up with the same orientation (the same way up) as it started.",
+        "C": "This transformation is equivalent to option B, but neither of these is correct... Double check your centres of rotation, and how far you turned the shape each time. The shape was rotated 90° clockwise, reflected horizontally and rotated 90° clockwise again, it should have ended up with the same orientation (the same way up) as it started.",
+        "D": "The first rotation gives shape Q with corners at (3,6), (4,7), (6,6) and (4,5). Reflecting that in the vertical line x=7 gives R with corners at (8,6), (10,7), (11,6) and (10,5). Finally, rotating R gives S with corners at (3,4), (4,6), (5,4) and (4,3). Each of these points is one right and one up from the corresponding corner of P, so the single transformation is a translation."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 157584,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a9d3041b-f059-41fe-9b31-235aaf72f623.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The first reflection gives shape X with corners at (7,2), (8,3), (7,5) and (6,3). Enlarging that with scale factor -1 gives Y with corners at (1,7), (2,9), (1,10) and (0,9). Finally, rotating Y gives Z with corners at (8,3), (9,5), (10,3) and (9,2). Each of these points is 6 right from the corresponding corner of W, so the single transformation is a translation with this vector.",
+        "B": "Almost, I think you have gone from Z to W rather than W to Z.",
+        "C": "Almost, I think you have made a mistake with horizontal and vertical parts of the vector, and gone from Z to W rather than W to Z. Remember the top number tells you to go left (if negative) or right (if positive). The bottom numbers tell you to go down (if negative) or up (if positive).",
+        "D": "Almost, I think you have made a mistake with horizontal and vertical parts of the vector. The top number tells you to go left (if negative) or right (if positive). The bottom numbers tell you to go down (if negative) or up (if positive)."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

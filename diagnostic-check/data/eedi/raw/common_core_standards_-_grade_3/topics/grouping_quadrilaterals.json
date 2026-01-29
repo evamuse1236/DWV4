@@ -1,0 +1,165 @@
+{
+  "shortcode": "biun",
+  "name": "Grouping quadrilaterals",
+  "collectionId": 33,
+  "level": 1,
+  "sequence": 54,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Use the properties of a square to find missing lengths",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given the name of a parallelogram, draw or identify a corresponding diagram",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use the properties of a parallelogram to find missing lengths",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify a rhombus from a diagram",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Describe the properties of a trapezium",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 132165,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5df7f106-68ef-4e79-bbba-c2c0007401c2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Is this the exact length of the side of the square. What is the same in all squares?",
+        "B": "A square is a quadrilateral with equal sides and equal angles. If we know AD equals 7.2cm, then DC is also 7.2cm.",
+        "C": "It looks like you are thinking about the size of the angles, rather than the side lengths.",
+        "D": "You seem to have added the 2 sides together. What would 1 side be?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134166,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/24472810-788b-4ec2-a2ed-c3277d51fd81.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A square is a quadrilateral with equal sides and equal angles. If we know DCis also 6.3cm then BC is also 6.3cm.",
+        "B": "It looks like you are thinking about the size of the angles, rather than the side lengths.",
+        "C": "You seem to have added the 2 sides together. What would 1 side be?",
+        "D": "Is this the exact length of the side of the square. What is the same in all squares?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158902,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ec58b7e2-7f39-4eb7-b525-9ab8f2676774.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A square is a rhombus as it has four equal sides. Which of the shapes shown does not have equal sides?",
+        "B": "A diamond can be a rhombus as it has equal sides. Which of the shapes shown does not have equal sides?",
+        "C": "This is a rhombus because it has equal sides. Which of the shapes shown does not have equal sides?",
+        "D": "A property of a rhombus is that it has equal sides, this shape does not have equal sides therefore it is not a rhombus."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159101,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c9de7dde-a3e2-4bd9-87a7-9aa8ce36a22c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is a rhombus because it has equal sides. Which of the shapes shown does not have equal sides?",
+        "B": "A square is a rhombus as it has four equal sides. Which of the shapes shown does not have equal sides?",
+        "C": "A property of a rhombus is that it has equal sides, this shape does not have equal sides therefore it is not a rhombus.",
+        "D": "A diamond can be a rhombus as it has equal sides. Which of the shapes shown does not have equal sides?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158903,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d185b518-a51f-4d76-94ae-1994458bcb54.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This rectangle is a parallelogram as it has two pairs of opposite sides that are parallel. Which shape given does not have two pairs of parallel sides?",
+        "B": "A parallelogram has 2 pairs of opposite sides that are parallel. This trapezoid only has one pair of parallel, opposite sides therefore it is not a parallelogram.",
+        "C": "This is a parallelogram as it has two pairs of opposite sides that are parallel. Which shape given does not have two pairs of parallel sides?",
+        "D": "This square is a parallelogram as it has two pairs of opposite sides that are parallel. Which shape given does not have two pairs of parallel sides?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159102,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/202d1f28-2152-4b56-930e-1172f242948e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This rectangle is a parallelogram as it has two pairs of opposite sides that are parallel. Which shape given does not have two pairs of parallel sides?",
+        "B": "This is a parallelogram as it has two pairs of opposite sides that are parallel. Which shape given does not have two pairs of parallel sides?",
+        "C": "This square is a parallelogram as it has two pairs of opposite sides that are parallel. Which shape given does not have two pairs of parallel sides?",
+        "D": "A parallelogram has 2 pairs of opposite sides that are parallel. This trapezoid only has one pair of parallel, opposite sides therefore it is not a parallelogram."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158904,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4b79af43-ede2-4ce3-b9d0-9bfa10e47964.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This trapezoid is not isosceles, so the side does not have to be the same as the other side. Do we need to follow any rules for the length of the missing side or could it be anything?",
+        "B": "The length does not need to be the same as the base side... Do we need to follow any rules for the length of the missing side or could it be anything?",
+        "C": "The length does not need to be the same as the top side... Do we need to follow any rules for the length of the missing side or could it be anything?",
+        "D": "Trapezoids don't have any specific properties related to the length of the sides. The side could be any length therefore we cannot tell its value!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159103,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/420284dd-ccd7-49f1-a38e-71e9a58dabdf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This trapezoid is not isosceles, so the side does not have to be the same as the other side. Do we need to follow any rules for the length of the missing side or could it be anything?",
+        "B": "I think you might have just estimated based on the diagram... 8 looks like it could possibly be the length, but can you be absolutely sure based on the properties of the trapezoid?",
+        "C": "The length does not need to be the same as the base side... Do we need to follow any rules for the length of the missing side or could it be anything?",
+        "D": "Trapezoids don't have any specific properties related to the length of the sides. The side could be any length therefore we cannot tell its value!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158905,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ebd1c72c-dbe9-43ae-aa83-e24608e3e177.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the length of the base. Remember in a parallelogram the opposite sides are equal... What is the side length opposite the ?",
+        "B": "In a parallelogram the opposite sides are equal. The side length opposite the ? is 5 therefore this side is also 5",
+        "C": "I think you have added the 5 and 7 but remember in a parallelogram the opposite sides are equal... What is the side length opposite the ?",
+        "D": "We can tell... Remember in a parallelogram the opposite sides are equal, what is the side length opposite the ?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159104,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/889e709f-a489-48e6-8a88-83d4dd3b38bd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "In a parallelogram the opposite sides are equal. The side length opposite the ? is 4, therefore this side is also 4.",
+        "B": "This is the length of the base. Remember in a parallelogram the opposite sides are equal... What is the side length opposite the ?",
+        "C": "I think you have added the 4 and 9 but remember in a parallelogram the opposite sides are equal... What is the side length opposite the ?",
+        "D": "We can tell... Remember in a parallelogram the opposite sides are equal, what is the side length opposite the ?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

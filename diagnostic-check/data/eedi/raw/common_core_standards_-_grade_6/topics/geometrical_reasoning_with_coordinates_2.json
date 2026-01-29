@@ -1,0 +1,153 @@
+{
+  "shortcode": "vq0",
+  "name": "Geometrical reasoning with coordinates 2",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 208,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Describe simple directions to translate a shape or object using words not vectors",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Understand key loci terms like equidistant and perpendicular",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Compare the lengths of diagonal line segments without calculating the exact length",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 97994,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5eabfdd8-2817-4eb7-8033-6fbbfe38990d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have miscounted the horizontal movement. Start at Y and count how many squares to the right you need to move in order to reach Z",
+        "B": "I think you have mixed up left and right",
+        "C": "The question tells us to start at point Y (because this is the point we are moving from). To then get to Z, a move of 3 right is required, followed by a move of 1 up",
+        "D": "I think you might have described the movements to get from Z to Y. Ready the question carefully"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 98009,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1f1bcc75-7792-4ca9-89f5-e8ebb1aae347.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have miscounted the horizontal movement. Start at V and count how many squares to the left you need to move in order to reach W",
+        "B": "The question tells us to start at point V (because this is the point we are moving from). To then get to W, a move of 5 to the left is required, followed by a move of 3 down",
+        "C": "I think you might have described the movements to get from W to V. Ready the question carefully",
+        "D": "Almost. Just check the direction you are moving to start at V and go to W."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 97995,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/be280eac-0931-4d42-913a-e2a4fc512496.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The x coordinate changes from 5 to 0, which indicates a move in the horizontal direction to the left a total of 5 squares. The y coordinate changes from −2 to 1, which indicates a move upwards in the vertical direction a total of 3 squares.",
+        "B": "I think you might have forgotten the negative sign. Try to picture where this coordinate is on a graph",
+        "C": "I think you have described movements from (0,1) to (5,-2). How will this affect your answer?",
+        "D": "Nearly! Your directions are correct, but I think you have miscounted your steps."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 98010,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fa64a1d7-bf5e-4277-8bfd-6a6abbcf731d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Try sketching these out on a graph and make sure you start from (3,6)",
+        "B": "I think you might have forgotten the negative sign. Try to picture where this coordinate is on a graph",
+        "C": "The x coordinate changes from 3 to 8, which indicates a move in the horizontal direction to the right a total of 5 squares. The y coordinate changes from 6 to −2, which indicates a move downwards in the vertical direction a total of 8 squares.",
+        "D": "Nearly! Your directions are correct, but I think you have miscounted your steps. Remember we count steps rather than numbers"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 97996,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9004adb5-b3d8-45db-af22-ee6d3f39279e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have looked at the horizontal distance only",
+        "B": "I think you have looked at the vertical distance only",
+        "C": "Imagine each line segment as the diagonal of a rectangle. For K, this means a rectangle of base 3 and height 2 units. For L, this means a rectangle of base 2 units and height 3 units. Essentially, the rectangles are the same size, just a different orientation; therefore, the diagonals will have the same length.",
+        "D": "Try to imagine the lines as if they are joining up opposite corners in a rectangle. What size would the rectangles be?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 98011,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ce67e26c-8231-44b0-8683-acee23265056.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Imagine each line segment as the diagonal of a rectangle. For K, this means a rectangle of base 5 and height 1 units. For L, this means a rectangle of base 1 units and height 4 units. This means that the rectangles are different sizes, and therefore so are the diagonals K and L, with K being the longer diagonal",
+        "B": "Try to imagine the lines as if they are joining up opposite corners in a rectangle. What size would the rectangles be?",
+        "C": "Try to imagine the lines as if they are joining up opposite corners in a rectangle. What size would the rectangles be?",
+        "D": "Try to imagine the lines as if they are joining up opposite corners in a rectangle. What size would the rectangles be?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 97998,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/350b2dc8-a588-4ff5-a801-76bee0628e63.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Parallel refers to 2 lines with the same gradient, that will never meet. Like train tracks.",
+        "B": "Not quite. \"Opposite\" is often used to describe vertically opposite angles, not coordinates. There is nothing for these points to be opposite",
+        "C": "Not quite. Perpendicular refers to 2 lines which meet at right-angles. Like the wall and the floor",
+        "D": "The term ‘equidistant’ means at equal distance, in this case from the origin (0, 0). The point on the x axis is (3, 0) and the point on the y axis is (0, -3). Both are a distance of 3 squares from the origin, and so are equidistant."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 98013,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/86f4cf63-0423-4355-b1fa-024aca1a5fe3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Parallel refers to 2 lines with the same gradient, that will never meet. Like train tracks. The red line is parallel to the x axis, but not the y axis",
+        "B": "Not quite. \"Opposite\" is often used to describe vertically opposite angles, not coordinates. There is nothing for these points to be opposite",
+        "C": "The term ‘perpendicular’ means it is at right angles to something – in this case, the y axis. There are 4 angles that we could look at between the y axis and the red line, each of them is ¼ of a turn or 90 degrees.",
+        "D": "Not quite. The end points of the line are equidistant from the y axis, but we need to consider the line as a whole."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 97999,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ce3c6b53-61b9-4140-b04b-a606dbf69966.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Consider Tom’s coordinates and imagine a line joining the origin to (3, −2), and another line joining the origin to (2, −3). These lines will have the same length as they cover the same distance, described in a different order (‘3 across, 2 down’ is the same distance as ‘2 across 3 down’). However, if you imagine similar lines for Katie’s coordinates, the distance represented by ‘4 across and 1 up’ will be different from that of ‘7 across and 2 down’.",
+        "B": "Not quite, maybe you added the coordinates? Instead try to think about how far each coordinate is from the origin. To get from (0,0) to (3,-2) we need to travel \"3 right and 2 down\"",
+        "C": "Not quite, maybe you added the coordinates? Instead try to think about how far each coordinate is from the origin. To get from (0,0) to (3,-2) we need to travel \"3 right and 2 down\"",
+        "D": "At least one person is correct. Try to think about how far each coordinate is from the origin. To get from (0,0) to (3,-2) we need to travel \"3 right and 2 down\""
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 98014,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/045ac334-6672-4170-b830-b0579871c3f0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Maybe the negatives have confused you here. Try to imagine how far each coordinate is from the origin. For example, to get from (0,0) to (-5,-2) we must go 5 left and 2 down.",
+        "B": "Maybe the negatives have confused you here. Try to imagine how far each coordinate is from the origin. For example, to get from (0,0) to (-5,-2) we must go 5 left and 2 down.",
+        "C": "Consider Jo’s coordinates and imagine a line joining the origin to (4, −3), and another line joining the origin to (3, −4). These lines will have the same length as they cover the same distance, described in a different order (‘4 across, 3 down’ is the same distance as ‘3 across 4 down’). By a similar argument, Paul’s statement is also correct.",
+        "D": "At least one person is correct. Try to think about how far each coordinate is from the origin. To get from (0,0) to (-5,-2) we need to travel \"5 left and 2 down\""
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

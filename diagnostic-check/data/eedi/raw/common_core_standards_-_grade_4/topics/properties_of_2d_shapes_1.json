@@ -1,0 +1,165 @@
+{
+  "shortcode": "bihs",
+  "name": "Properties of 2D shapes 1",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 90,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify a trapezium from a description of the properties",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Sort and class quadrilaterals into hierarchical families",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify an isosceles triangle from a diagram",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify a right-angled triangle from a description of the properties",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given the name of a polygon identify the number of sides",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 77597,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5b074e26-54dd-4ea3-a014-d30330049896.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is a right-angled triangle, as one of the angles is 90°.",
+        "B": "What angle do all right-angled triangles contain? How many of the angles are the same in an isosceles triangle?",
+        "C": "What angle do all right-angled triangles contain? How many of the angles are the same in an isosceles triangle?",
+        "D": "What angle do all right-angled triangles contain? How many of the angles are the same in an isosceles triangle?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79025,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/46d99f9a-1083-460e-8d04-9c226170c554.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "What angle do all right-angled triangles contain? How many of the angles are the same in an isosceles triangle?",
+        "B": "What angle do all right-angled triangles contain? How many of the angles are the same in an isosceles triangle?",
+        "C": "This is a right-angled triangle, as one of the angles is 90°. This is also isosceles as two of the angles are equal.",
+        "D": "What angle do all right-angled triangles contain? How many of the angles are the same in an isosceles triangle?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 77598,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7b9e76ac-5e1d-4f08-9d7f-ff26fe3bd085.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This shape has three sides of equal length, shown by the three dashes.",
+        "B": "What do the dashes on this shape mean? How many sides are the same length?",
+        "C": "Not quite. If a triangle has two equal angles it must also have two sides of equal length.",
+        "D": "What do the dashes on this shape mean? How many sides are the same length?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79026,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1afeaa1a-0160-425b-b6b5-e9180fa5ac91.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Isosceles triangles have two sides of equal length. What do the dashes on this shape mean?",
+        "B": "Isosceles triangles have two angles of equal size. What do the angle markers on this shape mean?",
+        "C": "Isosceles triangles have two sides of equal length. What do the dashes on this shape mean?",
+        "D": "This shape is not isosceles, as there are no markings to show that the angles or side lengths are equal."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 95491,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d54e4e9a-161e-471f-b510-88f575605dec.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. A trapezium is a quadrilateral because it has four sides.",
+        "B": "Not quite. A kite is a quadrilateral because it has four sides.",
+        "C": "Not quite. A parallelogram is a quadrilateral because it has four sides.",
+        "D": "A pentagon is a polygon with five sides. The others - trapezium, kite and parallelogram - are all quadrilaterals."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 122102,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/888a796a-5c20-4ef0-b0cd-15e9aa3a27fa.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. A parallelogram has 4 sides.",
+        "B": "A nonagon is a polygon with nine sides. Nine is odd. All the other shapes have an even number of sides.",
+        "C": "Not quite. A hexagon has 6 sides.",
+        "D": "Not quite. A dodecagon has 12 sides."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 95493,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3e320b59-4754-4027-ab68-2b1ceeaeafb6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember a parallelogram has to have two pairs of parallel sides. Does a square or rhombus have this property too?",
+        "B": "Remember a parallelogram has to have two pairs of parallel sides. Does a square or rhombus have this property too?",
+        "C": "A parallelogram is a quadrilateral with two pairs of parallel sides. Both a square and a rhombus (a ‘pushed-over’ square) have two pairs of parallel sides, and so are also parallelograms. They are special types of parallelograms, having additional properties.",
+        "D": "Remember a parallelogram has to have two pairs of parallel sides. Does a square or rhombus have this property too?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 122103,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/601ad69d-2bc6-41cd-ad9a-8a15ff51b9bd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember a parallelogram has to have two pairs of parallel sides. Does a rectangle or rhombus have this property too?",
+        "B": "Remember a parallelogram has to have two pairs of parallel sides. Does a rectangle or rhombus have this property too?",
+        "C": "A parallelogram is a quadrilateral with two pairs of parallel sides. Both a rectangle and a rhombus (a ‘pushed-over’ square) have two pairs of parallel sides, and so are also parallelograms. They are special types of parallelograms, having additional properties.",
+        "D": "Remember a parallelogram has to have two pairs of parallel sides. Does a rectangle or rhombus have this property too?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 95494,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7ff2d9df-e529-4c9e-9702-2fba35438bb6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A square actually has two pairs of parallel lines",
+        "B": "A rectangle actually has two pairs of parallel lines",
+        "C": "A trapezium has only one pair of parallel lines, by definition. All the other shapes listed have two pairs of parallel lines.",
+        "D": "A parallelogram actually has two pairs of parallel sides."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 122104,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/69eb80cc-fb58-41d1-9462-bc0cd661d255.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A rhombus actually has two pairs of parallel sides, which is too many.",
+        "B": "A rectangle actually has two pairs of parallel sides, which is too many.",
+        "C": "A trapezium has exactly one pair of parallel sides, all the others have two pairs.",
+        "D": "A parallelogram actually has two pairs of parallel sides, which is too many."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

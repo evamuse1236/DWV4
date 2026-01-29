@@ -1,0 +1,147 @@
+{
+  "shortcode": "v1o",
+  "name": "Distance between two coordinates 2",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 141,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate the distance between two coordinates in 2D, where all the values are integers but at least one is negative",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Substitute negative integer values into expressions involving no powers or roots",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 107763,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fa24a819-cad2-4904-81f7-bd711f375cec.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Using Pythagoras’ theorem, the distance is √(11² + 5²) = √(121 + 25) = √146",
+        "B": "I think you have multiplied the numbers, but we need to use Pythagoras here",
+        "C": "Almost, remember in Pythagoras we square the numbers, we don't multiply them by 2",
+        "D": "Almost, but we are looking for the longest side so we add"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107774,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/524b6312-bfbc-4449-92ed-0938aa895e1b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have multiplied the numbers, but we need to use Pythagoras here",
+        "B": "Almost, remember in Pythagoras we square the numbers, we don't multiply them by 2",
+        "C": "Using Pythagoras’ theorem, the distance is √(4² + 9²) = √(16 + 81) = √97",
+        "D": "Almost, but we are looking for the longest side so we add"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107764,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5cbedc71-0347-45c9-81c0-080f04bc8f63.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is Pythagoras’ theorem, which finds the distance between two sets of coordinates (𝑥₁ , 𝑦₁ ) and (𝑥₂, 𝑦₂) .",
+        "B": "This is the formula for finding the midpoint of the line. We need to use Pythagoras",
+        "C": "This is the formula for finding the gradient of the line. We need to use Pythagoras",
+        "D": "You are really close, just check the signs"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107775,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e06feb9a-00ef-4d23-a39b-91dffede53b4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You are really close, just check the signs",
+        "B": "This is Pythagoras’ theorem, which finds the distance between two sets of coordinates (𝑥₁, 𝑦₁) and (𝑥₂, 𝑦₂) .",
+        "C": "This is the formula for finding the midpoint of the line. We need to use Pythagoras",
+        "D": "This is the formula for finding the gradient of the line. We need to use Pythagoras"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107765,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6900a886-eeab-4fb1-8ed8-2979b9b2feec.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The first bracket is (𝑥₂ − 𝑥₁)² = (−7 − 2)² = (−9)²",
+        "B": "I think you have made a sign error here. What is -7 - 2?",
+        "C": "I think you have done x1 - x2. Try doing them the other way round",
+        "D": "I think you have done x1 - x2, and made a sign error. Try doing them the other way round"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107776,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b067c6a2-25a9-49b1-9f44-57705817cb50.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have done y2 - x1. Is this what the first bracket asks you to do?",
+        "B": "The first bracket is (𝑥₂ − 𝑥₁)² = (−5 − 1)² = (−6)²",
+        "C": "I think you have made a sign error here. What is -5 - 1?",
+        "D": "I think you have done x1 - y2 or y1 - x2. Is this what the first bracket asks you to do?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107766,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6b5da307-1d21-4603-b04e-01e79f8b3706.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have made a sign error here. What is 1 - - 5?",
+        "B": "The second bracket is (𝑦₂ − 𝑦₁)² = (1 − (−5))² = (1 + 5)² = (6)²",
+        "C": "I think you have done y1 - y2, and made a sign error. Try doing them the other way round",
+        "D": "I think you have done y1 - y2. Try doing them the other way round"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107777,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3dea0070-4336-4790-b161-6bc0e1958d25.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have done y1 - y2. Try doing them the other way round",
+        "B": "I think you have made a sign error here. What is 2 - - 6?",
+        "C": "The second bracket is (𝑦₂ − 𝑦₁)² = (2 − (−6))² =(2 + 6)² = (8)²",
+        "D": "I think you have done y1 - y2, and made a sign error. Try doing them the other way round"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107767,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b184333f-71cc-4a32-bbdf-2adf158aaab5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might have doubled the numbers rather than squaring them.",
+        "B": "I think you might have doubled the numbers rather than squaring them.",
+        "C": "Not quite. Remember when we square a negative it becomes a positive",
+        "D": "We have √(−9)² + (6)² = √(81 + 36) = √117"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107778,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b1661f90-fd98-4619-83cd-61354e5c2b86.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have done -6 + 8 = 14, whereas it would be 2. But -6 needs squaring and 8 needs squaring. ",
+        "B": "Not quite. Remember when we square a negative it becomes a positive",
+        "C": "We have √(−6)² + (8)² = √(36 + 64) = √100",
+        "D": "I think you forgot to square before you added the numbers"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

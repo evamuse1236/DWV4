@@ -1,0 +1,159 @@
+{
+  "shortcode": "efkc",
+  "name": "Absolute value of rational numbers",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 100,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Use inequality notation to order negative integers with the same number of digits ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find the absolute value of a number",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Compare absolute values using inequality notation",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Relate a negative number as an absolute distance from 0 on a number line",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166190,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/52e7b1d9-830c-4283-a017-0ff8ed01fc71.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite - distance can't be a negative value, even when it is a negative number.",
+        "B": "It seems like you might have added the positive and negative version together, but remember we are counting how far away it is from 0!",
+        "C": "-10 is 10 numbers back from 0, so the distance would be 10.",
+        "D": "The distance is how many numbers a value is away from something. Try thinking about how many jumps on a number line you'd have to make to get from 0 to -10!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166417,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a62b375a-9871-4f5a-9969-72395f44f704.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It seems like you might have added the positive and negative version together, but remember we are counting how far away it is from 0!",
+        "B": "-20 is 20 numbers back from 0, so the distance would be 20.",
+        "C": "Not quite - distance can't be a negative value, even when it is a negative number.",
+        "D": "The distance is how many numbers a value is away from something. Try thinking about how many jumps on a number line you'd have to make to get from 0 to -20!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166191,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4c0318e0-71be-436b-9f6a-d8a522c3af4d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "8 is 8 numbers away from 0, so the distance would be 8.",
+        "B": "It seems like you might have just given the negative version of the number, but remember we are counting how far away it is from 0!",
+        "C": "It seems like you might have added the positive and negative version together, but remember we are counting how far away it is from 0!",
+        "D": "∣8∣ means the absolute value of 8, which is asking you how far away from 0 the number 8 is! Think about it as counting jumps of 1."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166418,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a0ac8553-3190-4303-9389-8553d6992220.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It seems like you might have just given the negative version of the number, but remember we are counting how far away it is from 0!",
+        "B": "It seems like you might have added the positive and negative version together, but remember we are counting how far away it is from 0!",
+        "C": "4 is 4 numbers away from 0, which means the absolute value of 4 is 4.",
+        "D": "∣4∣ means the absolute value of 4, which is asking you how far away from 0 the number 4 is! Think about it as counting jumps of 1."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166192,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/98f5b943-e168-41ca-bf87-f40ea8b5e40b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "> means greater than, and -60 is closer to 0 than -75 which means it has a greater value.",
+        "B": "For negative numbers, the closer it is to 0, the greater it is. These two numbers definitely aren't equal to each other as they don't have the same digits!",
+        "C": "It seems like you might think that a number further away from 0 means it is bigger, however we are thinking about which number is greater and for negative numbers they are greater the closer they get to 0.",
+        "D": "A number will always be greater than, equal to or less than another number. If we placed these on a number line, which one would be the greatest?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166419,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b7237945-ba3a-4906-8d09-9b1a929462df.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It seems like you might think that a number further away from 0 means it is bigger, however we are thinking about which number is greater and for negative numbers they are greater the closer they get to 0.",
+        "B": "For negative numbers, the closer it is to 0, the greater it is. These two numbers definitely aren't equal to each other as they don't have the same digits!",
+        "C": "> means greater than, and -40 is closer to 0 than -60 which means it has a greater value.",
+        "D": "A number will always be greater than, equal to or less than another number. If we placed these on a number line, which one would be the greatest?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166193,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/97ee3a50-aa6d-42d9-949c-295be56d1216.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember that |x| notation means absolute value, so here we are comparing which one is further from 0.",
+        "B": "I think you may have misread what numbers we are comparing here!",
+        "C": "The absolute value of -14 is less than the absolute value of -41 as it is much closer to 0.",
+        "D": "We can still use inequalities to compare absolute values of numbers!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166420,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/24d6cb36-93a2-4491-89e1-7749a8d3e8dd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The absolute value of -62 is greater than the absolute value of -26 as it is much further away from 0.",
+        "B": "I think you may have misread what numbers we are comparing here!",
+        "C": "Remember that |x| notation means absolute value, so here we are comparing which one is further from 0.",
+        "D": "We can still use inequalities to compare absolute values of numbers!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166194,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1c7c8e95-75a9-43b1-a94b-233c38a54413.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember that |x| notation means absolute value, so here we are comparing how far away the numbers are from 0 rather than the numbers themselves.",
+        "B": "Both 42 and -42 have an absolute value of 42 away from 0. This means their absolute values are both equal!",
+        "C": "Remember that |x| notation means absolute value, so here we are comparing how far away the numbers are from 0.",
+        "D": "We can still use inequalities to compare absolute values of numbers!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166421,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/20b92ada-98ed-4384-b84a-a3e27330caa2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember that |x| notation means absolute value, so here we are comparing how far away the numbers are from 0 rather than the numbers themselves.",
+        "B": "Remember that |x| notation means absolute value, so here we are comparing how far away the numbers are from 0.",
+        "C": "Both 35 and -35 have an absolute value of 35 away from 0. This means their absolute values are both equal!",
+        "D": "We can still use inequalities to compare absolute values of numbers!"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

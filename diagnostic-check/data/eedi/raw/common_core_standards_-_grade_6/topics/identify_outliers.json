@@ -1,0 +1,153 @@
+{
+  "shortcode": "vrn",
+  "name": "Identify outliers",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 236,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Order fractions whose denominators are multiples of the same number ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the mean as an average from a list of data",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify outliers from a list of data",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 147128,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a5dcd989-2d39-4a53-89f0-8e4674616a30.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "An outlier is a value that is much higher or lower than the other values in the data set. 172 is significantly different to the others, which are all between 89 and 105, so it must be the outlier.",
+        "B": "An outlier is a value that is much higher or lower than the other values in the data set. 93 is similar to the other numbers which are generally close to 100. Which value could be considered an outlier?",
+        "C": "I think you have just chosen the smallest number. An outlier is a value that is much higher or lower than the other values in the data set. Which value could be considered an outlier?",
+        "D": "I think you may have just chosen a rounded number. An outlier is a value that is much higher or lower than the other values in the data set. Which value could be considered an outlier?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 147148,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a38fb541-a56e-4d9c-b3da-66d7823a71ec.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have assumed 202 was the outlier as it doesn’t end in 0 or 5 like the other numbers. An outlier is a value that is much higher or lower than the other values in the data set. 202 is similar to the other numbers which are generally close to 200. Which value could be considered an outlier?",
+        "B": "An outlier is a value that is much higher or lower than the other values in the data set. 305 is not similar to the other values, which are all between 190 and 205, so it must be the outlier.",
+        "C": "I think you have just chosen the smallest number. An outlier is a value that is much higher or lower than the other values in the data set. Which value could be considered an outlier?",
+        "D": "I think you may have just chosen a rounded number. An outlier is a value that is much higher or lower than the other values in the data set. Which value could be considered an outlier?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 147129,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/703aa7b8-2976-4863-b812-e1d09ff40016.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have chosen 2 because it is the only whole number. This does not automatically make it an outlier. An outlier is a value that is much higher or lower than the other values in the data set. Which value could be considered an outlier?",
+        "B": "An outlier is a value that is much higher or lower than the other values in the data set. 7.9 is ssignificantly different to the other values, which are all between 1.8 and 3.12, so it must be the outlier.",
+        "C": "I think you may have chosen 3.12 because it is the only value with two decimal places. This does not automatically make it an outlier. An outlier is a value that is much higher or lower than the other values in the data set. Which value could be considered an outlier?",
+        "D": "I think you may have chosen 1.8 because it is the only number that begins with a 1. This does not automatically make it an outlier. An outlier is a value that is much higher or lower than the other values in the data set. Which value could be considered an outlier?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 147149,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d7183065-59c5-47e8-9af0-046acad2b3dd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have chosen 5 because it is the only whole number. This does not automatically make it an outlier. An outlier is a value that is much higher or lower than the other values in the data set. Which value could be considered an outlier?",
+        "B": "I think you may have chosen 4.90 because it is the only value with two decimal places. This does not automatically make it an outlier. An outlier is a value that is much higher or lower than the other values in the data set. Which value could be considered an outlier?",
+        "C": "An outlier is a value that is much higher or lower than the other values in the data set. 0.9 is not similar to the other values, which are all between 4.6 and 6.3, so it must be the outlier.",
+        "D": "I think you may have chosen 5.3 because it is the only number that begins with a 5. This does not automatically make it an outlier. An outlier is a value that is much higher or lower than the other values in the data set. Which value could be considered an outlier?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 147130,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/50e468a8-7d1c-4006-ac7a-679943ece234.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have chosen 3 because it seems bigger than some of the negative numbers. This does not automatically make it an outlier. An outlier is a value that is much higher or lower than the other values in the data set. Which value could be considered an outlier?",
+        "B": "I think you may have chosen 0 because it has no value. This does not automatically make it an outlier. An outlier is a value that is much higher or lower than the other values in the data set. Which value could be considered an outlier?",
+        "C": "I think you may have chosen -2 because it is a negative number. This does not automatically make it an outlier. An outlier is a value that is much higher or lower than the other values in the data set. Which value could be considered an outlier?",
+        "D": "An outlier is a value that is much higher or lower than the other values in the data set. 9 is significantly different to the other values, which are all between -1 and 3, so it must be the outlier."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 147150,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/36a768d3-de8d-458a-8e88-77518643db4a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have chosen -5 because is it the only odd number. This does not automatically make it an outlier. An outlier is a value that is much higher or lower than the other values in the data set. Which value could be considered an outlier?",
+        "B": "I think you may have chosen -10 because it appears twice. This does not automatically make it an outlier. An outlier is a value that is much higher or lower than the other values in the data set. Which value could be considered an outlier?",
+        "C": "I think you may have chosen -8 because it doesn’t seem to pair or match with another number. This does not automatically make it an outlier. An outlier is a value that is much higher or lower than the other values in the data set. Which value could be considered an outlier?",
+        "D": "An outlier is a value that is much higher or lower than the other values in the data set. 6 is significantly different to the other values, which are all between -10 and -5, so it must be the outlier."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 147131,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2cc32d44-9893-439b-8405-e297cc7fc0f1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have chosen 41/50 because it looks different to the other numbers. This does not automatically make it an outlier. An outlier is a value that is much higher or lower than the other values in the data set. Converting all the fractions so that they have the same denominator will help you spot the outlier.",
+        "B": "An outlier is a value that is much higher or lower than the other values in the data set. 7/20 is equivalent to 35/100 and is significantly different to the other values, which are all between 77/100 and 82/100 when written as equivalent fractions out of 100, so it must be the outlier.",
+        "C": "I think you may have chosen 0.77 because it is the only number expressed as a decimal. This does not automatically make it an outlier. An outlier is a value that is much higher or lower than the other values in the data set. Converting all the fractions so that they have the same denominator will help you spot the outlier.",
+        "D": "I think you may have chosen 79/100 because the numerator is the biggest number of the list. This does not automatically make it an outlier. An outlier is a value that is much higher or lower than the other values in the data set. Converting all the fractions so that they have the same denominator will help you spot the outlier."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 147151,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c934a8f4-d9fc-45c6-950d-e2d652523db0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have chosen 2/10 because it has not been simplified. This does not automatically make it an outlier. An outlier is a value that is much higher or lower than the other values in the data set. Converting all the fractions so that they have the same denominator will help you spot the outlier.",
+        "B": "I think you may have chosen 19/100 because the denominator is the biggest number of the list. This does not automatically make it an outlier. An outlier is a value that is much higher or lower than the other values in the data set. Converting all the fractions so that they have the same denominator will help you spot the outlier.",
+        "C": "I think you may have chosen 0.21 because it is the only number expressed as a decimal. This does not automatically make it an outlier. An outlier is a value that is much higher or lower than the other values in the data set. Converting all the fractions so that they have the same denominator will help you spot the outlier.",
+        "D": "An outlier is a value that is much higher or lower than the other values in the data set. 9/20 is equivalent to 45/100 and is significantly different than the other values, which are all between 18/100 and 21/100 when written as equivalent fractions out of 100, so it must be the outlier."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 147132,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/77ad0869-ddf5-4cd0-9835-190ea90ba656.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Consider how you calculate both the mean and the range, and what will change if the largest or smallest value (outlier) is removed.",
+        "B": "Not quite. Consider how you calculate both the mean and the range, and what will change if the largest or smallest value (outlier) is removed",
+        "C": "Removing an outlier from a set of data will change the range. The value being an outlier means it would be the smallest or largest value, which would change the calculation for the range when removed. So Tom is correct. Removing an outlier from a set of data will change the mean also. The value being removed will changed both the total and the frequency, which would change the calculation for the mean. So Katie is correct too.",
+        "D": "Not quite. An outlier is a value that is much higher or lower than the other values in the data set. Consider how you calculate both the mean and the range, and what will change if the largest or smallest value (outlier) is removed."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 147152,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/31ee5788-24b0-49ab-808b-e1a5d2392779.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Calculating the range includes using the largest and smallest value. Removing the outlier would change one of these values – how would this change the range?",
+        "B": "Not quite. Consider how you calculate the range, and what will change if the largest or smallest value (outlier) is removed.",
+        "C": "Removing an outlier from a set of data will decrease the range. The value being an outlier means it would be the smallest or largest value, which would change the calculation for the range when removed. The smallest and largest value would now be closer together.",
+        "D": "Not quite. An outlier is a value that is much higher or lower than the other values in the data set. Consider how you calculate the range, and what will change if the largest or smallest value (outlier) is removed."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

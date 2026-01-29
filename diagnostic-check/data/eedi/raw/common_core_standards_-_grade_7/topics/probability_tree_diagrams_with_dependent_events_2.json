@@ -1,0 +1,153 @@
+{
+  "shortcode": "vx8",
+  "name": "Probability tree diagrams with dependent events 2",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 250,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Answer questions involving dependent events expressed as fractions or decimals, where the result of more than one path across a tree diagram needs to be calculated",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the probability of two dependent events occurring without drawing a tree diagram",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Fill in the probabilities of the second branch of a tree diagram representing dependent events where these probabilities are decimals",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 78407,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1c31e583-5d96-4c18-ba63-f4124dc45cd0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Keep going! You've found the probability of getting 2 blue counters, however we could also get 2 yellow counters, so need to take this probability into account as well.",
+        "B": "We can either get blue, blue or yellow, yellow. The probability of getting two blue counters is 5/8 X 4/7 = 20/56. The probability of getting two yellow counters is 3/8 X 2/7 = 6/56. We need to add these together to give 26/56 as our overall probability.",
+        "C": "Remember, the counters are not replaced after the first pick, therefore how many counters are left in the bag to pick from at second pick, and how many of each colour are there left?",
+        "D": "Remember, the counters are not replaced after the first pick, therefore how many counters are left in the bag to pick from at second pick?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78701,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db1c9035-55df-41e1-b16e-0d521a8f6ebd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The probability of picking a blue, then a yellow is 4/6 × 2/5 = 8/30, and the probability of picking a yellow, then a blue is 2/6 × 4/5 = 8/30. Adding these together gives 16/30.",
+        "B": "Keep going! You have found the probability of one combination of yellow and blue counters, however there are two possible paths through the tree to get the desired outcome.",
+        "C": "Have another look - think carefully about when you are adding fractions. The denominators don't get added together.",
+        "D": "Have another look - I think you have found the probability of blue, yellow and yellow, yellow. Remember we want to find the probabilities of blue, yellow, and yellow, blue, then add them together."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 78408,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fa5ba11e-77bc-46cb-9ffa-c7cb8f4663e6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! You've found the probability that the bus is late here. We want the probability that he fails his test given that the bus is late.",
+        "B": "Not quite! This is the probability that Ben fails the test when the bus is on time.",
+        "C": "The probability of failing is 1 - 0.6 = 0.4, as the probability of passing given the bus is late is 0.6, and pass or fail are the only possible outcomes.",
+        "D": "Have another think! The test is either pass or fail, and the probability that he passes when the bus is late is 0.6, therefore how do we calculate the probability of the only other outcome in this bottom part of the probability tree?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78702,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8c335910-2af8-4da6-ae08-2c0f5d71c7df.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! You have given the probability of passing the test when arriving late; we want the probability of failing the test when arriving on time.",
+        "B": "The probability of failing the test when arriving on time is 1 - 0.9 = 0.1, since the probability of passing is 0.9 and pass or fail are the only possible outcomes.",
+        "C": "Not quite! You have given the probability of arriving late; we want the probability of failing the test when arriving on time.",
+        "D": "Not quite! You have given the probability of failing the test when arriving late; we want the probability of failing the test when arriving on time."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 78409,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/02e27ab2-aeab-46bb-9eed-1bee990af238.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Have another think. The maximum value a probability can be is 1, therefore this answer doesn't make sense. It looks like you have added the probabilities of passing together, however we need to also take into account the probability of arriving on time or late in our calculations. Remember to multiply along each branch",
+        "B": "Not quite! It looks like you have made a calculation error here. Which paths through the tree give us the desired outcome of passing the test? How do we calculate the probability of each path?",
+        "C": "Keep going! You have calculated the probability of Ben passing the test if the bus arrived on time, but we also need to add in the probability that he passes when the bus is late",
+        "D": "The probability that Ben passes the test if the bus is on time is 0.8 X 0.7 = 0.56. The probability that Ben passes the test if the bus is late is 0.2 X 0.4 = 0.08. Adding these together gives 0.64"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78703,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fe6f25c9-3cd7-4ce4-9735-0a240d7b369f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! You seem to have multiplied the probability of a pass from each branch, however we need to work our way along each branch first. 0.4 x 0.9 gives us the probability he will pass if the bus is on time. What is the probability he will pass if the bus is late?",
+        "B": "The probability that Ben passes the test if the bus is on time is 0.4 × 0.9 = 0.36. The probability that Ben passes the test if the bus is late is 0.6 X 0.8 = 0.48. Adding these together gives 0.84",
+        "C": "Almost! But I think you have multiplied your probabilities for each path rather than adding them",
+        "D": "Have another think. The maximum value a probability can be is 1, therefore this answer doesn't make sense. It looks like you have added the probabilities of passing together, however we need to also take into account the probability of arriving on time or late. Remember to multiply along each branch!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 78410,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4e49a685-ae23-4b85-add8-6426ff114d63.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Keep going! You have correctly calculated the probability of getting 2 blue counters, but we need to add the probability of two yellow counters too.",
+        "B": "The probability of blue blue is 5/8 ✕ 4/7 = 20/56. (The probability of the second blue has changed as one blue has already been removed, so there are only 4 blues left and 7 in total). Similarly the probability of yellow yellow is 3/8 ✕ 2/7 = 6/56. Adding these probabilities together we get 26/56.",
+        "C": "Not quite! Note in the question it states that the counters are not replaced. You have found the probability of blue blue and yellow yellow given that there is replacement.",
+        "D": "Almost! Here you have found the correct numerator but have forgotten to decrease the denominators by 1 for the second pick (when one counter has been removed and not replaced)."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78704,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f4ec2f59-367c-48a0-9c50-014de4c4a736.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The probability of picking a blue, then a yellow is 4/6 × 2/5 = 8/30, and the probability of picking a yellow, then a blue is 2/6 × 4/5 = 8/30. Adding these together gives 16/30.",
+        "B": "Keep going! I think you have found the probability of one combination, but remember, we could pick blue then yellow OR pick yellow then blue",
+        "C": "Not quite! I think you have made a calculation error when adding your fractions at the final step.",
+        "D": "Not quite! I think you have made a calculation error when working with fractions here."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 78411,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/386f4d9b-604a-480b-b0b3-db9c3d521847.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Our outcomes could either be pass, fail or fail, pass or pass, pass. The probability she passes French but fails German is 0.8 x 0.15 = 0.12. The probability she fails French but passes German is 0.2 x 0.15 = 0.03. The probability she passes French and passes German is 0.8 x 0.85 = 0.68. Adding these together we get 0.83",
+        "B": "Not quite! I think you have found two outcomes (pass pass and fail pass), but you've forgotten to include the probability of passing French and failing German.",
+        "C": "Nearly! You've found the probability they fail both exams here. We want the probability that she passes at least one of them. How will these values be related?",
+        "D": "Not quite! You have found the probability that she passes French and fails German, however there are other outcomes that fulfil the criteria of her passing at least one of the tests."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78705,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0525c2a6-fffc-435b-a3d6-8376ff11e98f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! I think you have made a calculation error. Remember, we are looking for the probability that they pass at least 1 test, so they could pass the English, the maths, or both of them. What are the probabilities of each of these outcomes, and how do we combine them for our final answer?",
+        "B": "Not quite! I think you have made a calculation error. Remember, we are looking for the probability that they pass at least 1 test, so they could pass the English, the maths, or both of them. What are the probabilities of each of these outcomes, and how do we combine them for our final answer?",
+        "C": "Nearly! You've found the probability they fail both tests here. We want the probability that she passes at least one of them. How will these values be related?",
+        "D": "Our outcomes could either be pass, fail or fail, pass or pass, pass. The probability she passes English but fails Maths is 0.65 x 0.3 = 0.195. The probability she fails English but passes Maths is 0.35 x 0.4 = 0.14. The probability she passes English and passes Maths is 0.65 x 0.7 = 0.455. Adding these together we get 0.79"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

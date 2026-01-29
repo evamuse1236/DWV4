@@ -1,0 +1,147 @@
+{
+  "shortcode": "ehjk",
+  "name": "Comparing algebraic and arithmetic solutions to problems",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 173,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Solve two-step linear equations, with the variable on one side, with all positive integers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Compare algebraic and arithmetic methods when solving problems",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166790,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cb40a394-733a-4467-8e47-0961d80df7ee.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This method is correct. Double check the arithmetic approach too...",
+        "B": "This method is correct. Double check the algebraic approach too...",
+        "C": "Looking at the algebraic method, 𝑥 is the number, we multiply it by 3 and add 6 to get 3𝑥 + 6. This equals 30 so 3𝑥 + 6 = 30. We then need to undo each operation so -6 first and then ÷3. We can do the same arithmetically: 30 - 6 and then this answer ÷3, so both methods are correct!",
+        "D": "If we multiply by 3 and then +6 to undo these operations we need to apply the inverse in the opposite order. So first -6 and then ÷3. Do either of these methods do this?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167040,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2fbc4c87-0bf8-47dd-aaea-2d05c86bbef9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we multiply by 6 and then +5 to undo these operations we need to apply the inverse in the opposite order. So first -5 and then ÷6. Do either of these methods do this?",
+        "B": "Looking at the algebraic method, 𝑥 is the number, we multiply it by 6 and add 5 to get 6𝑥 + 5. This equals 23 so 6𝑥 + 5 = 23. We then need to undo each operation so -5 first and then ÷6. We can do the same arithmetically: 23 - 5 and then this answer ÷6 so both methods are correct!",
+        "C": "This method is correct. Double check the arithmetic approach too...",
+        "D": "This method is correct. Double check the algebraic approach too..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166791,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2ca15eb3-bb52-49c2-8115-47ba95f8a591.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The first step to solving this question does involve the x3 but we need to do the inverse of it, to undo it... What is the inverse of x3?",
+        "B": "Remember to solve a question like this, you need to apply the inverse operation in the opposite direction! What was the last thing that happened? So, this is the first thing we undo.",
+        "C": "To solve this question we need to apply the inverse operations. The last thing we did was x3 so the first thing we need to do to solve it is the opposite, which is ÷3!",
+        "D": "You have correctly applied the inverse operation but we need to do the inverse of the last thing we did..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167041,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c7c101ac-3cf8-42f5-b2a7-82907c71d3ba.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have correctly applied the inverse operation but we need to do the inverse of the last thing we did...",
+        "B": "To solve this question we need to apply the inverse operations. The last thing we did was x4 so the first thing we need to do to solve it is the opposite, which is ÷4!",
+        "C": "The first step to solving this question does involve the x4 but we need to do the inverse of it, to undo it... What is the inverse of x4?",
+        "D": "Remember to solve a question like this, you need to apply the inverse operation in the opposite direction! What was the last thing that happened? So, this is the first thing we undo."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166792,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9c57cce9-ffe6-48b9-a0a0-44770136f2d9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The last operation we performed in the question was 'adds an extra $5' so we need to do the opposite of this, which would be subtract $5!",
+        "B": "The first step to solving this question does involve the $5 (as this was the last thing we did) but we need to do the inverse of adding it to undo it... What would that be?",
+        "C": "You have correctly applied the inverse operation, but we need to do the inverse of the last thing we did...",
+        "D": "Remember to solve a question like this, you need to apply the inverse operation in the opposite direction! What was the last thing that happened? So, this is the first thing we undo."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167042,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fe13c9be-b312-40df-b5dd-cde2c94777b5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have correctly applied the inverse operation but we need to do the inverse of the last thing we did...",
+        "B": "Remember to solve a question like this, you need to apply the inverse operation in the opposite direction! What was the last thing that happened? So, this is the first thing we undo.",
+        "C": "The first step to solving this question does involve the $15 (as this was the last thing we did), but we need to do the inverse of adding it to undo it... What would that be?",
+        "D": "The last operation we performed in the question was 'adds an extra $15' so we need to do the opposite of this, which would be subtract $15!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166793,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e0272a40-a4d2-4384-b35a-bc3946742bc8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This would be the correct order to undo the operations and solve the problem but you have forgotten to apply the inverse operations...",
+        "B": "Remember, to solve the problem, you need to apply the inverse operations in the opposite direction!",
+        "C": "You have correctly identified the inverse operations, but to solve the problem, you need to do them in the opposite order than they were applied!",
+        "D": "To solve this problem we need to apply the inverse operations in the opposite order. In the question, we +9 and then ÷5 so we need to x5 and then -9."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167043,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/14ea71d9-6b27-4700-bd37-1625da8cb931.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To solve this problem we need to apply the inverse operations in the opposite order. In the question, we +12 and then ÷3 so we need to x3 and then -12.",
+        "B": "You have correctly identified the inverse operations, but to solve the problem, you need to do them in the opposite order than they were applied!",
+        "C": "Remember, to solve the problem, you need to apply the inverse operations in the opposite direction!",
+        "D": "This would be the correct order to undo the operations and solve the problem, but you have forgotten to apply the inverse operations..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166794,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea984f16-677b-4a40-9fe3-3821203a4408.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom has applied the inverse operations but in the wrong order, so he is incorrect. Have a look at Katie's solution. Has she applied the inverse operations in the opposite order than the operations were applied in the question?",
+        "B": "Tom has applied the inverse operations but in the wrong order, so he is incorrect. Katie has applied the inverse operations in the opposite order to how the operations were applied in the question, therefore her solution is correct. So, only Katie is correct!",
+        "C": "The order is very important when solving a problem like this. You need to apply the inverse operations in the opposite order to how the operations were applied in the question. Who has done that?",
+        "D": "At least one person is correct. To solve a problem like this, you need to apply the inverse operations in the opposite order to how the operations were applied in the question. Who has done that?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167044,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/842b8f34-3ccf-4ca5-8e56-1f09e4bc77ee.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The order is very important when solving a problem like this. You need to apply the inverse operations in the opposite order to how the operations were applied in the question. Who has done that?",
+        "B": "Katie has applied the inverse operations but in the wrong order, so she is incorrect. Have a look at Tom's solution, has he applied the inverse operations in the opposite order than the operations were applied in the question?",
+        "C": "Katie has applied the inverse operations but in the wrong order, so she is incorrect. Tom has applied the inverse operations in the opposite order to how the operations were applied in the question, therefore his solution is correct. So, only Tom is correct!",
+        "D": "At least one person is correct. To solve a problem like this, you need to apply the inverse operations in the opposite order to how the operations were applied in the question. Who has done that?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

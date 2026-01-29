@@ -1,0 +1,159 @@
+{
+  "shortcode": "vyi",
+  "name": "Fractions and recurring decimals 2",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 8,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Write a fraction with a single digit denominator as a recurring decimal",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Write a fraction with a double digit denominator as a recurring decimal",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Write a recurring decimal with a single digit recurring pattern as a fraction",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Write a recurring decimal with a double digit recurring pattern as a fraction",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 81307,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/374e5e7a-d6d0-4b3f-9212-772531b159cc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is 0.4, but what happens when we have the 4 recurring?",
+        "B": "Not quite. This is 0.40404040",
+        "C": "You are almost there, you just need to simplify your answer.",
+        "D": "If we let x = 0.444..., and then 10x = 4.4444, we can subtract the two to get 9x = 4. Rearranging for x gives 4/9."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 81482,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/935d0f64-ae43-497c-8e31-01e59c153b86.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we let x = 0.888..., and then 10x = 8.8888, we can subtract the two to get 9x = 8. Rearranging for x gives 8/9.",
+        "B": "You are almost there, you just need to simplify your answer.",
+        "C": "Not quite. This is 0.80808080",
+        "D": "This is 0.8, but what happens when we have the 8 recurring?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 81308,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/342d8dcb-e662-45cd-891a-99f0f40a03cd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we let x = 0.414141... and then 100x = 41.414141, we can subtract the two to get 99x = 41. Rearranging gives x = 41/99.",
+        "B": "Not quite. We are subtracting x from 100x. How does this help us?",
+        "C": "Not quite. This is 0.444444. What do we have to do if two numbers are being repeated?",
+        "D": "This is 0.41, but what happens when we have the recurring dots?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 81483,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2ff63f25-1093-409c-9d58-1d14b917dd4b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is 0.33333333, but the question is 0.323232... How do we take account of the two numbers being repeated?",
+        "B": "This is 0.32, but what happens when we have the recurring dots?",
+        "C": "If we let x = 0.32323232... and then 100x = 32.323232, we can subtract the two to get 99x = 32. Rearranging gives x = 32/99.",
+        "D": "Not quite. We are subtracting x from 100x. How does this help us?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 81309,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/675d6094-2d2c-4056-9a17-65fff68d5f68.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. This would be the case if both the 4 and 1 were repeated, but only 1 is being repeated. How will this change the answer?",
+        "B": "Almost. Try writing out the 10x and x on top of each other to see what you would get if you subtracted.",
+        "C": "If we let x = 0.41111..., then 10x = 4.11111. Subtracting gives 9x = 3.7, so by rearranging we have x = 3.7/9 or 37/90.",
+        "D": "This is 0.41, but what happens when we have the recurring dot?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 81484,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1bdccba6-600f-4e00-b191-2a70d5a6630c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we let x = 0.52222..., then 10x=5.22222. Subtracting gives 9x =4.7, so by rearranging we have x = 4.7/9 or 47/90.",
+        "B": "Almost. Try writing out the 10x and x on top of each other to see what you would get if you subtracted.",
+        "C": "This is 0.55555555 but what happens when it is just the 2 that is repeated. Try writing out the 10x and x on top of each other to see what you would get if you subtracted.",
+        "D": "This is 0.52, but what happens when we have the recurring dot?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103974,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1db5ab39-bd5c-4041-8e59-9e7f333b2096.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Try doing a bus stop division where the 7 goes underneath, and the 9 is on the outside.",
+        "B": "Not quite. Try doing a bus stop division where the 7 goes underneath, and the 9 is on the outside.",
+        "C": "To work out a value for 7/9, we can think of it as 7 ÷ 9, so put 7.000... in the ‘bus stop’ and 9 outside. Starting with 7 ÷ 9 = 0 remainder 7, the next calculation is 70 ÷ 9 = 7 remainder 7. So the next calculation is 70 ÷ 9 again, producing the same remainder, etc. to give a decimal answer of 0.777...",
+        "D": "Not quite. Try doing a bus stop division where the 7 goes underneath, and the 9 is on the outside."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 122136,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/015544db-b5a2-42fc-8593-aa42bed2af8c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Try doing a bus stop division where the 5 goes underneath, and the 9 is on the outside.",
+        "B": "To work out a value for 5/9, we can think of it as 5 ÷ 9, so put 5.000... in the ‘bus stop’ and 9 outside. Starting with 5 ÷ 9 = 0 remainder 5, the next calculation is 50 ÷ 9 = 5 remainder 5. So the next calculation is 50 ÷ 9 again, producing the same remainder, etc. to give a decimal answer of 0.555...",
+        "C": "Not quite. Try doing a bus stop division where the 5 goes underneath, and the 9 is on the outside.",
+        "D": "Not quite. Try doing a bus stop division where the 5 goes underneath, and the 9 is on the outside."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103975,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eb0f7ed3-aa76-49aa-b935-4dd200eb2825.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To work out a value for 71/99, we can think of it as 71 ÷ 99, and work this out using a bus stop where 71 is under the bus stop, and 99 is on the outside. This gives 0.717171... In fact, any whole number less than 99 in place of 71 will produce a repeated version of itself when converted to a decimal.",
+        "B": "Almost, just check your bus stop division, it isn't just the 1 that is repeated.",
+        "C": "Almost, just check your bus stop division, it isn't just the 9 that is repeated.",
+        "D": "Not quite. Try doing a bus stop division where the 71 goes underneath, and the 99 is on the outside."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103983,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e65d39b7-ee46-457b-99df-e36d058c92eb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost, just check your bus stop division, it isn't just the 3 that is repeated.",
+        "B": "To work out a value for 1/33, put 1 under the bus stop, and 33 on the outside. This will give the answer 0.030303... , which is represented in answer B using the dot notation.",
+        "C": "Almost, just check your bus stop division, it isn't just the 3 that is repeated.",
+        "D": "Not quite. To work out a value for 1/33, put 1 under the bus stop, and 33 on the outside."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

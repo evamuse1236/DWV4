@@ -1,0 +1,141 @@
+{
+  "shortcode": "bikd",
+  "name": "Introduction to coordinates",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 98,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Basic terminology of graphs",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158477,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1881df30-9ce8-4abb-bc8e-180035f1ef5f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The line going across the middle of the graph is called the x axis, but what do we call both the yellow lines together?",
+        "B": "These lines are called the axes - going across is the x axis, and up/down is the y axis.",
+        "C": "The origin is the center of the graph, where both lines are 0. What do we call the lines?",
+        "D": "The line going down the middle of the graph is called the y axis, but what do we call both the yellow lines together?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158590,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1c8bb960-8e89-4e23-88f7-ecf6a4d7d157.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The line going down the middle of the graph is called the y axis, but what do we call both the yellow lines together?",
+        "B": "The line going across the middle of the graph is called the x axis, but what do we call both the yellow lines together?",
+        "C": "The origin is the center of the graph, where both lines are 0. What do we call the lines?",
+        "D": "These lines are called the axes - going across is the x axis, and down is the y axis."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158478,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8c4e7f01-6d7f-43cb-b6de-32b7d4aa409d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The line going across the middle of the graph is called the x axis, but what do we call the point in the middle of both axes?",
+        "B": "The two lines are the axes, but what do we call the point where they cross, where both lines are 0?",
+        "C": "Where the two axes cross (at 0), we call that point the origin.",
+        "D": "The line going down the middle of the graph is called the y axis, but what do we call the point in the middle of both axes?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158591,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/243af068-6fef-45da-93d2-4238f0288ff3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The line going down the middle of the graph is called the y axis, but what do we call the point in the middle of both axes?",
+        "B": "Where the two axes cross (at 0), we call that point the origin.",
+        "C": "The two lines are the axes, but what do we call the point where they cross, at 0?",
+        "D": "The line going across the middle of the graph is called the x axis, but what do we call the point in the middle of both axes?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158479,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/237e042a-349f-4861-a553-dee321b1290c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost, but the x axis goes across the graph (think \"x is a cross\")",
+        "B": "Only one of the axes is highlighted yellow, is it the x axis or the y axis?",
+        "C": "The origin is the center of the graph, labeled 0. What do we call the lines?",
+        "D": "The line going up and down the middle of the graph is called the y axis (think \"y to the sky\")"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158592,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b351039b-8203-465d-b89e-84c0582ca5af.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Exactly, the x axis goes across the graph (think \"x is a cross\").",
+        "B": "Only one of the axes is highlighted yellow, is it the x axis or the y axis?",
+        "C": "The origin is the center of the graph, labeled 0. What do we call the lines? Which one is highlighted?",
+        "D": "The line going up and down the middle of the graph is called the y axis (think \"y to the sky\"). What do we call the line going across?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158480,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6da6be97-b8c7-42aa-93e5-95d39bbf842d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The x axis is the horizontal line across the middle of the graph, so is 2 the x-coordinate or the y-coordinate?",
+        "B": "The x-coordinate tells us how far along the point is from 0 - this point is 2 along.",
+        "C": "The y axis is the vertical line down the middle of the graph, so is 2 the x-coordinate or the y-coordinate?",
+        "D": "I think you have mixed up x and y - the y coordinate tells us how far up the point is from 0, but this point is not 2 up, it's 2 to the right."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158593,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1a1fd349-e9b5-4893-9d49-074145eddbb9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The x axis is the horizontal line across the middle of the graph, so is 5 the x-coordinate or the y-coordinate?",
+        "B": "I think you have mixed up x and y - the x coordinate tells us how far along the point is from 0, but this point is not 5 to the right, it's 5 up...",
+        "C": "The y axis is the vertical line down the middle of the graph, so is 5 the x-coordinate or the y-coordinate?",
+        "D": "The y-coordinate tells us how far up the point is from 0 - this point is 5 up."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158481,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/909e3941-bd63-4e57-a5a5-19ae6be8fa86.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "2 is the x-coordinate, telling us to move 2 right in the x-direction from 0 to get to the point P.",
+        "B": "I think you have mixed up x and y - the 5 tells us how far to move up in the y-direction from 0 to get to P.",
+        "C": "Could this be more accurate? If we went 2 across from the edge of the graph, we wouldn't get to P...",
+        "D": "If we go up 2 from the bottom of the graph, or from the axis, would we get to P? Think about which direction the 2 is telling us to move, and where from."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158594,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ac61ae79-fc90-4cd2-ab31-c576480c1072.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we go across 5 from the bottom of the graph, or from the axis, would we get to P? Think about which direction the 5 is telling us to move, and where from...",
+        "B": "5 is the y-coordinate, telling us to go up 5 in the y-direction from 0 to get to the point P.",
+        "C": "I think you have mixed up x-axis and y-axis...",
+        "D": "Could this be more accurate? If we went 5 up from the edge of the graph, we wouldn't get to P..."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

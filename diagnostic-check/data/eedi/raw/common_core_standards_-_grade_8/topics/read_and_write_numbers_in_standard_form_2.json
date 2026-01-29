@@ -1,0 +1,159 @@
+{
+  "shortcode": "vy5",
+  "name": "Read and write numbers in standard form 2",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 32,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Convert from non-standard form into standard form for numbers greater than 1",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Convert from non-standard form into standard form for numbers less than 1",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Order numbers in standard form that are greater than 1",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Order numbers in standard form that are between 0 and 1 ",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 78135,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0a53a99c-2cf2-45df-985f-e9b557c6f475.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This number has the highest power of 10, so it is the largest.",
+        "B": "Not quite. I think you've looked at the biggest base number. Focus on the index numbers instead, this tells us the place value of the number.",
+        "C": "I think you've looked for the base number with the most digits. Look at the power of 10 instead, this tells us the place value of the number.",
+        "D": "Not quite. The power of 10 is negative, and is therefore the smallest value of all powers here. Which is the biggest?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78428,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eac0db75-1c7b-458b-b4ef-244c0449371c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, It looks like you have picked the number with the largest base number. Look at the powers to see what place value column the number is in",
+        "B": "I think you have picked the number with the most digits. This does not mean the number is bigger. Look at the power instead, this tells us the place value of the number.",
+        "C": "You may not have spotted the negative sign on the power. negative powers will result in smaller numbers compared to positive powers.",
+        "D": "This number has the largest power, so it is the biggest number."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 78136,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/470e391c-d427-408d-a3c2-5810bcce84fd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Both of these numbers are the same. Which ones are not equal to each other?",
+        "B": "Both of these numbers are the same. Which ones are not equal to each other?",
+        "C": "Both of these numbers are the same. Which ones are not equal to each other?",
+        "D": "Statement D is false. The biggest number is the one with the highest power of 10."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78429,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9756fe4a-692a-4616-bbd3-523722adcb84.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "These numbers show the same value.",
+        "B": "These values are equal to each other.",
+        "C": "7.3 × 10^5 is much larger than 8.6 × 10^3, as the power on the 10 is greater.",
+        "D": "These values are both equal"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 78137,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/379b303c-6e37-41be-ba8a-9df62d51ae2b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. To compare, convert them all into normal numbers first",
+        "B": "I think you have missed the negative index value. This will have a smaller value than positive indices. For an easier comparison, convert all numbers into normal numbers",
+        "C": "The first number has a negative index and must be the smallest. For comparison purposes, convert all numbers into normal numbers",
+        "D": "The first number has a negative index and must be the smallest. The other numbers are in the correct ascending order. To compare, the numbers should all be converted into normal numbers. We have 0.0035, 3100, 3200, 30000"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78430,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aa5eeb96-a8f7-4fc7-a2cb-4bfe1928391e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. It looks like you have missed the negative power. This will be the smallest number.",
+        "B": "Not quite, try converting all the numbers into normal numbers and then order them",
+        "C": "The smallest number has a negative power and the other numbers follow the correct order. It is useful to convert all numbers into normal numbers. We have 0.0003, 803, 810, 82000.",
+        "D": "The smallest number has a negative power, so you've started off correctly. By writing them as normal numbers it will be easier to compare them"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103988,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/786d16bc-349b-4668-8949-8c9eea37df15.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have reduced the value of the power because 40 has been divided by 10. The two sides are equal, so how can we cancel out a divide by 10?",
+        "B": "The power of 10 shouldn't remain the same if the base number has changed. 40 has been divided by 10, so how can we cancel out a divide by 10",
+        "C": "Comparing the numbers, we can see that there is 40 on the left-hand side and 4 on the right-hand side. Noting that 40 = 4 × 10¹, we can substitute this in to the left-hand side to give 4 × 10¹ × 10(^6). We have two powers of 10 which are multiplied, meaning we can add the powers to give 4 × 10(^7). This now looks like the right-hand side, and so ★ = 7.",
+        "D": "Not quite. It looks like you think because 4 has been multiplied by 10, the same is done with the power. How many times do you have to multiply 4 by 10 to get 40, and then take into account the x 10 ^ 6"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103994,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1264f208-406d-4c07-9b4f-8e3a36aaf08a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Comparing the numbers, we can see that there is 200 on the left-hand side and 2 on the right-hand side. Noting that 200 = 2 × 10², we can substitute this in to the left-hand side to give 2 × 10² × 10(^8). We have two powers of 10 which are multiplied, meaning we can add the powers to give 2 × 10(^10). This now looks like the right-hand side, and so ★ = 10",
+        "B": "I think you have reduced the value of the power because 200 has been divided by 100. The two sides are equal, so how can we cancel out a divide by 100?",
+        "C": "If the base number changes, the power of 10 should also change. 200 has been divided by 100, so how can we cancel out a divide by 100",
+        "D": "Not quite. 200 has been divided by 100, so how can we cancel out a divide by 100"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103989,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/486cee6a-a1fa-4f5a-aa23-7e9baa17df9e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Multiplying by a positive power of 10 moves the digits to the left according to the index value. 0.4 will move 6 times to the left. 4 is ten times bigger than 0.4, so it will move its digits to the left, but 1 less, and so ★ = 5",
+        "B": "Not quite, if the base numbers are different, the power cannot be the same. 0.4 has been multiplied by 10, how can we cancel out a multiply by 10?",
+        "C": "I think you have increased the value of the power because 0.4 has been multiplied by 10. The two sides are equal, so how can we cancel out a multiply by 10?",
+        "D": "It looks like you have multiplied the power by 10 because 0.4 has been multiplied by 10. How can we cancel out a multiply by 10, and how can we show this using the power?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103995,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dc5d021e-7c42-4621-9b31-b7f3889c9001.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have increased the value of the power because 0.02 has been multiplied by 100. The two sides are equal, so how can we cancel out a multiply by 100?",
+        "B": "Multiplying by a positive power of 10 moves the digits to the left according to the index value. 0.02 will move 8 times to the left. 2 is one hundred times bigger than 0.02, so its digits will move to the left, but 2 times less, and so ★ = 6.",
+        "C": "Not quite, if the base numbers are different, the power cannot be the same. 0.02 has been multiplied by 100, how can we cancel this out?",
+        "D": "Almost! 0.02 has been multiplied by 100. The two sides are equal, so how can we cancel out a multiply by 100?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

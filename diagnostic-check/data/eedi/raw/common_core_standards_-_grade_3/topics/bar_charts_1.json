@@ -1,0 +1,147 @@
+{
+  "shortcode": "bit6",
+  "name": "Bar charts 1",
+  "collectionId": 33,
+  "level": 1,
+  "sequence": 37,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Interpret a bar chart",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Compare two or more bar charts",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 77196,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6eabbdc-33f0-42ba-bf81-7ab295ab80f5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. I think you have subtracted the numbers, rather than adding them.",
+        "B": "15 children cycle and 20 students take taxis. Adding the two numbers gives 35.",
+        "C": "Almost. This is the numbers of children who take taxis, but we also need those who cycle.",
+        "D": "Almost. This is the numbers of children who cycle, but we also need those who take taxis"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79066,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/607f685e-baf5-4740-9ab7-802c5ef9ba0c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the number of children that cycle, but we also need the people who walk.",
+        "B": "Not quite. Check that you have found the number of children who cycle, those that walk, and then added these together",
+        "C": "This is the number of children that walk, but we also need the people who cycle.",
+        "D": "15 children cycle and 45 walk, so in total there are 60 children."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 77197,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/24c10799-58eb-4e57-93be-7a34428fac25.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might have confused \"most\" and \"least\". We need the biggest bar for the most popular",
+        "B": "Not quite. The bar for bananas is also smaller than the orange bar",
+        "C": "Kiwi is the most popular as this bar is the biggest.",
+        "D": "Not quite. The orange bar is the second tallest, so it is the second most popular fruit"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79067,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e3ecdd84-e49b-483c-89ea-7b9fefd18072.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. To be the most popular pineapple would have to be the biggest bar",
+        "B": "Not quite. Kiwi is also taller than orange so is liked more.",
+        "C": "I think you might have confused most and least. The most popular will be the tallest bar",
+        "D": "The bar for Apples is the second largest, making it the second most popular fruit."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 77198,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/533c9a94-18b0-4c86-9591-309f0315af28.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. The bar is correct",
+        "B": "Not quite. The bar is correct",
+        "C": "Not quite. The bar is correct",
+        "D": "The bar for kiwi should be halfway between 50 and 40."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79068,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dbcbb241-ede3-4950-8dbb-3a112dd6e5ca.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. The bar is correct",
+        "B": "20 children like Pineapple, but the bar reads 25.",
+        "C": "Not quite. The bar is correct",
+        "D": "Not quite. The bar is correct"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 77199,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8922678c-faec-49c3-b68e-eb6368710f64.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The bar for banana reaches 30 and the bar for orange reaches 35.",
+        "B": "Not quite. Check your bar for orange",
+        "C": "These are the categories that are missing, but we need the numbers. Use the heights of the bars to find these",
+        "D": "Not quite. Check your scale to make sure the numbers are correct."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79069,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/736ba758-4ed7-48d2-a665-ff1ec8eb15db.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Check your bar for orange",
+        "B": "Not quite. Check your bar for apple",
+        "C": "These are the categories that are missing, but we need the numbers. Use the heights of the bars to find these",
+        "D": "20 children like Apples and 35 like Oranges."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 77202,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9f28deca-72c8-4341-bb74-703d1907715b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. There are 2 girls and 4 boys. Be careful to check the scales",
+        "B": "Not quite. There are 7 girls and 13 boys. Be careful to check the scales",
+        "C": "Not quite. There are 3 girls and 1 boy. Be careful to check the scales",
+        "D": "11 girls and boys picked rugby."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79072,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e08febd1-37d0-478c-a0d7-54bccc57dbed.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. Tennis was picked by 2 more boys than girls. We need it to be 2 more girls than boys",
+        "B": "Not quite. There are 7 girls and 13 boys. Be careful to check the scales",
+        "C": "Netball was picked by 3 girls and 1 boy, so this is the sport",
+        "D": "Not quite. There are 11 girls and 11 boys. Be careful to check the scales"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

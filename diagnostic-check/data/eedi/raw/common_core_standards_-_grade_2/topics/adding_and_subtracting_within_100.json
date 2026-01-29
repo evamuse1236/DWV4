@@ -1,0 +1,159 @@
+{
+  "shortcode": "cry6",
+  "name": "Adding and subtracting within 100",
+  "collectionId": 35,
+  "level": 1,
+  "sequence": 17,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Add integers up to 2 digits using a written method where carrying is not needed",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Add integers up to 2 digits using a written method where carrying is needed",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Subtract integers up to 2 digits using a written method where carrying is not needed",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Subtract integers up to 2 digits using a written method where carrying is needed",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 159335,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fa011369-2534-42c5-a7b0-0aa7615a79cf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "4 is smaller than 7 so we borrow 10 and do 14 - 7 = 7 for the ones digit. That leaves 5 - 2 = 3 for the tens digit, so the final answer is 37.",
+        "B": "I think you forgot to reduce the number in the column that you borrowed from. If you have 6 tens and you take one to make 14 in the ones column, then you will only have 5 tens left. ",
+        "C": "You have done 64 + 27 but this question is 64 - 27.",
+        "D": "You have subtracted 4 from 7 because it's smaller, but you need to subtract all of 27 from all of 64. Try borrowing 10 so that you can start with 14 - 7 for the ones digit."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159557,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8d6a2e4e-64b2-4fb7-bb7d-07f0efc13bbb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have subtracted 3 from 8 because it's smaller, but you need to subtract all of 18 from all of 73. Try borrowing 10 so that you can start with 13 - 8 for the ones digit.",
+        "B": "3 is smaller than 8 so we borrow 10 and do 13 - 8 = 5 for the ones digit. That leaves 6 - 1 = 5 for the tens digit, so the final answer is 55.",
+        "C": "Almost! I think you rounded 18 to 20 and subtracted from 73. 73 - 20 = 53. But then you subtracted 2 rather than add 2.",
+        "D": "You have done 73 + 18 but this question is 73 - 18."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 159336,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cbb1ce73-a75b-4e49-bf2a-f81cb0501ee0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have done 75 - 18, but this question is 75 + 18.",
+        "B": "Almost! I think you forgot to carry the 10. 5 + 8 = 13, so we have an extra 10 to add up with the 70 and 10...",
+        "C": "Not quite - I think you started counting up on 75 instead of 76. Count 76, 77, 78, ... Or add 10 and then 8.",
+        "D": "5 + 8 = 13 so the ones digit is 3 and we carry the ten into the next column. 7 + 1 + 1 = 9 tens, so the final answer is 93."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159558,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0a47e18b-db34-44ba-aea9-650beeba774b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost! I think you forgot to carry the 10. 6 + 7 = 13, so we have an extra 10 to add up with the 40 and 20...",
+        "B": "Not quite - I think you started counting up on 46 instead of 47. Count 47, 48, 49, ... Or add 20 and then 7.",
+        "C": "6 + 7 = 13 so the ones digit is 3 and we carry the ten into the next column. 4 + 2 + 1 = 7 tens, so the final answer is 73.",
+        "D": "You have done 46 - 27, but this question is 46 + 27."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 161468,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5d9e8b14-19da-49d0-ada4-80c85128904a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. I think you subtracted rather than added.",
+        "B": "Starting in the right hand column 4 + 3 = 7. Moving to the left we have 6 + 3 = 9.",
+        "C": "Not quite. I think you counted your starting number when adding on. So when adding 3 to 4, remember it's 5, 6, 7.",
+        "D": "I think you made a tiny slip. Just check 6 + 3."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 161471,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/51483bed-5929-42a1-b90a-a7cac833c276.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. I think you subtracted rather than added.",
+        "B": "Starting in the right hand column 6 + 3 = 9. Moving to the left we have 5 + 3 = 8",
+        "C": "Not quite. I think you counted your starting number when adding on. So when adding 3 to 6, remember it's 7, 8, 9.",
+        "D": "I think you made a tiny slip. Just check 5 + 3."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 161469,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/caee40cd-43be-4525-afec-676a2f808d4c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you added by mistake.",
+        "B": "I think you made a mistake when counting back. Remember when doing 9 - 2, you would go back one to 8, and then one to 7.",
+        "C": "Starting in the right column 9 - 2 is 7. Moving to the left 7 - 4 is 3.",
+        "D": "I think you made a tiny slip. Check 7 - 4."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 161472,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/28e549b2-3640-4060-bc61-ee2f7baffae1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you added by mistake.",
+        "B": "I think you made a tiny slip. Check 5 - 2.",
+        "C": "I think you made a mistake when counting back. Remember when doing 6 - 3, you would go back one to 5, then one to 4, and then one to 3.",
+        "D": "Starting in the right column 6 - 3 is 3. Moving to the left 5 - 2 is 3."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 161470,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/168d27b6-aa93-4368-ac2e-8c6c71cda393.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. I think you spotted that they had to borrow for the subtraction in the right hand column, but you made the first number 1 bigger rather than 1 smaller",
+        "B": "Not quite. I think you added 5 and 3, but remember 1 was borrowed for the units column.",
+        "C": "5 + 3 is 8, but 1 was borrowed for the units column subtraction, so you need to add that back on, giving 9.",
+        "D": "I think you did 5 - 3. Remember we want to know what we would have subtracted from to get a 3 in the tens column. Make sure you take into account the 1 that is borrowed for the units column."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 161473,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/72653c7b-ce1b-4ef6-95c3-daf9fd8f74af.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you did 4 - 3. Remember we want to know what we would have subtracted from to get a 3 in the tens column. Make sure you take into account the 1 that is borrowed for the units column.",
+        "B": "Not quite. I think you added 4 and 3, but remember 1 was borrowed for the units column.",
+        "C": "4 + 3 is 7, but 1 was borrowed for the units column subtraction, so you need to add that back on, giving 8.",
+        "D": "Almost. I think you spotted that they had to borrow for the subtraction in the right hand column, but you made the first number 1 bigger rather than 1 smaller"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

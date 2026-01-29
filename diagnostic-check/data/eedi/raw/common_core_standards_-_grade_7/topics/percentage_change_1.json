@@ -1,0 +1,165 @@
+{
+  "shortcode": "vsj",
+  "name": "Percentage change 1",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 29,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Express one quantity as a percentage of another mentally",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Increase a number by a given percentage mentally where the percent is a multiple of 10",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Increase a number by a given percentage mentally where the percent is an integer",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Decrease a number by a given percentage mentally where the percent is an integer",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given a final total, work out what the percentage decrease has been mentally",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 73604,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/048c5a3f-4f6f-4466-898e-d37a0efdff01.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly! You have increased the price by 10% but we need to increase the price by 20%. What will that give you? :)",
+        "B": "You've found 20%, now we need to increase the price by 20%, so how can we do that? :)",
+        "C": "10% of 600 = 60 so 20% = 2x60 = 120. Therefore a 20% increase would be 600 + 120 = 720",
+        "D": "I think you have just added 20 onto 600, rather than 20%. How can we find 20%? Remember you can start off with 10% :)"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 73810,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/562f7cc9-0bc6-4af3-9a2b-7d0b804f06da.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly! You have increased the price by 10% but we need to increase the price by 20%. What will that give you? :)",
+        "B": "I think you have just added 25 onto 500, rather than 25%. How can we find 25%? Remember you can start off with 10% :)",
+        "C": "You've found 25%, now we need to increase the price by 25%, so how can we do that? :)",
+        "D": "50% of 500 = 250 and therefore 25% = 125. A 25% increase would be 500 + 125 = 625"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 73605,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d14c122-18af-40f1-9d93-ad9f9d46c685.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have only added on an extra 10% of the 50%. You are increasing the new full amount (150%) by 10%",
+        "B": "I think you have added the percentages together, but they are relating to different amounts. Remember we always start with 100%. If I add on 50% what percentage do I now have? Now what if I add on 10% of my new amount?",
+        "C": "If I increase by 50% I now have 150%. We then increase by 10% of the new amount and 10% of 150 is 15 so we add on another 15% to get 165%",
+        "D": "I think you have misread the question and given the new price. The question asks for the overall percentage after the two increases."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 73811,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/caf868a5-713c-4b63-bbe8-19efe050961a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added the percentages together, but they are relating to different amounts. Remember we always start with 100%. If I add on 60% what percentage do I now have? Now what if I add on 10% of my new amount?",
+        "B": "If I increase by 60% I now have 160%. We then increase by 10% of the new amount and 10% of 160 is 16 so we add on another 16% to get 176%",
+        "C": "I think you have added on 10% of 60 rather than 10% of the 160% you have after the initial 60% increase.",
+        "D": "I think you have calculated the final amount after the two increases. The question asks what percentage of the original amount you would have after the increases are applied."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 73606,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b4c91ae7-8d0f-4316-a216-4077f8852999.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "400 - 300 = 100 , then we need to divide this by the original cost. 100/400 = 1/4 or 0.25 which is 25%",
+        "B": "I think you have calculated what fraction it has decreased by. What would 1/4 be as a percentage?",
+        "C": "I think you have calculated the decrease in pounds. What would this be as a percentage of the original 400?",
+        "D": "I think you have calculated the percentage change from 300 to 400. The original amount is 400, and it decreases to 300. Remember to divide by the original value"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 73812,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2a59260e-afce-47e6-8a3f-4b3ed434cca3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have calculated a percentage increase from 400 to 500. The original amount was 500. Always divide by the original amount",
+        "B": "I think you have calculated the change as a fraction of the original. What would one fifth be as a percentage?",
+        "C": "I think you have calculated the change in pounds. What would 100 be as a percentage of the original 500?",
+        "D": "500 - 400 = 100. Then we need to divide this by the original cost. 100/500 = 1/5 or 0.2 which is 20%"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101545,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/69634130-3314-488e-995d-742a1226a3f5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "10% of 160 = 16, so 30% of 160 = 3x16 = 48. We need to increase 160 by 30%, so we add that on: 160 ＋ 48 = 208.",
+        "B": "I think you have just added 30 onto 160 rather than 30% of 160. You need to find 30% of 160, and then add that on",
+        "C": "You have successfully found 30% of 160! However, the question wants us to increase 160 by that amount, so you need to do one extra step :)",
+        "D": "It looks like you have multiplied by 30. We need to find 30% of 160 and then add that on."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101560,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/32a9ad02-3861-49b1-8f3a-64e6b3f402da.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have multiplied by 40. We need to find 40% of 160 and then add that on.",
+        "B": "I think you have just added 40 onto 220 rather than 40% of 220. You need to find 40% of 220, and then add that on.",
+        "C": "You have successfully found 40% of 220! However, the question wants us to increase 220 by that amount, so you need to do one extra step :)",
+        "D": "10% of 220 = 22, so 40% of 220 = 4x22 = 88. We need to increase 220 by that amount so we add it on: 220 ＋ 88 = 308."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101546,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/56368239-7fe1-45b3-9662-d29cf0820495.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "10% of 220 = 22, so 5% is half of that; 5% = 11. We can find 15% = 10% + 5% = 22 + 11 = 33. We need to decrease 220 by 15%, so 220 - 33 = 187.",
+        "B": "I think you have divided 220 by 15. Think carefully about how to find 15%. We can start off by finding 10% and 5%.",
+        "C": "You have managed to find 15% of 220 :) Now we have an extra step, because we need to decrease 220 by that amount :)",
+        "D": "I think you have subtracted 15 from 220 rather than subtracting 15% of 220. Remember that to find 15% we can find 10% first and use that to help :)"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 124612,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5e5b762b-1de1-48db-9c11-6983d8bc9c95.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have managed to find 15% of 360 :) Now we have an extra step, because we need to decrease 360 by that amount :)",
+        "B": "I think you have subtracted 15 from 360 rather than subtracting 15% of 360. Remember that to find 15% we can find 10% first and use that to help :)",
+        "C": "10% of 360 = 36, so 5% is half of that; 5% = 18. We can find 15% = 10% + 5% = 36 + 18 = 54. We need to decrease 360 by 15%, so 360 - 54 = 306.",
+        "D": "I think you have divided 360 by 15. Think carefully about how to find 15%. We can start off by finding 10% and 5%."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,141 @@
+{
+  "shortcode": "ehjd",
+  "name": "Drawing and interpreting histograms (equal class width)",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 231,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Interpret a bar chart",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166780,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c4433c5c-72ff-47e2-b647-4a9544836b88.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have noted the frequency of the histogram. We need to find a data set that could be represented by the histogram. Which data set has 4 data points greater than or equal to 0, but less than 10?",
+        "B": "It seems you just gave the end points on the time axis. We need to find a data set that could be represented by the histogram. Which data set has 4 data points between 0 and 10?",
+        "C": "Remember, the endpoints are located in bin to the right.",
+        "D": "The first bin has a frequency of 4 and bin values 0 ≤ x < 10, so 1, 5, 8, 9 meet this criteria. The second bin has a frequency of 7 and bin values of 10 ≤ x < 20, so 11, 13, 13, 15, 16, 18, 19 meet this criteria. The third bin has a frequency of 3 and bin values of 20 ≤ x < 30, so 21, 25, 28 meet this criteria. This data set matches the histogram."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167030,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/78581b5b-b5a8-4ed4-876d-af7812ceed8c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember, the endpoints are located in bin to the right.",
+        "B": "The first bin has a frequency of 2 and bin values 0 ≤ x < 10, so 4, 7 meet this criteria. The second bin has a frequency of 6 and bin values of 10 ≤ x < 20, so 12, 14, 15, 16, 17, 19 meet this criteria. The third bin has a frequency of 5 and bin values of 20 ≤ x < 30, so 22, 24, 25, 27, 27 meet this criteria. This data set matches the histogram.",
+        "C": "It seems you just gave the end points on the time axis. We need to find a data set that could be represented by the histogram. Which data set has 2 data points greater than or equal to 0, but less than 10?",
+        "D": "It looks like you have noted the frequency of the histogram. We need to find a data set that could be represented by the histogram. Which data set has 2 data points greater than or equal to 0, but less than 10?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166781,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fb7d062b-2d45-4d48-abf7-bd6ef3890ba6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "While 0 is the lower boundary, we can't know how many, if any of the data values are 0 seconds. What range would the quickest time be in?",
+        "B": "While 10 is the upper boundary, we can't know how many, if any of the data values are 10 seconds. What range would the quickest time be in?",
+        "C": "It seems you have confused the quickest time with the range of longest times. Which range is the shortest times?",
+        "D": "We don't know the exact value but we know the quickest time is located between 0 and 10 seconds."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167031,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/76069d36-325b-4014-8e9f-3dc0f327ac99.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We don't know the exact value but the slowest time is located between 20 and 30 seconds.",
+        "B": "While 20 is the lower boundary, we can't know how many, if any of the data values are 20 seconds. What range would the slowest time be in?",
+        "C": "It seems you have confused the slowest time with the range of shortest times. Which range is the slowest times?",
+        "D": "While 30 is the upper boundary, we can't know how many, if any of the data values are 30 seconds. What range would the slowest time be in?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166782,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ae70b5a2-a6f3-49d9-a9ee-e706b242ff27.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have noted the frequency of the histogram. We need to find a data set that could be represented by the histogram. Which data set has 2 data points greater than or equal to 0, but less than 10?",
+        "B": "The first bin has a frequency of 2 and bin values 0 ≤ x < 10, so 1, 5 meet this criteria. The second bin has a frequency of 5 and bin values of 10 ≤ x < 20, so 11, 13, 15, 18, 19 meet this criteria. The third bin has a frequency of 4 and bin values of 20 ≤ x < 30, so 22, 25, 28, 29 meet this criteria. The fourth bin has a frequency of 1 and bin values 30 ≤ x < 40, so 35 meets this criteria. This data set matches the histogram.",
+        "C": "It seems you just gave the end points on the time axis. We need to find a data set that could be represented by the histogram. Which data set has 2 data points between 0 and 10?",
+        "D": "Remember, the endpoints are located in bin to the right."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167032,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ad009b03-03dd-4b27-ab19-10af249d90a2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It seems you just gave the end points on the time axis. We need to find a data set that could be represented by the histogram. Which data set has 4 data points between 10 and 20?",
+        "B": "It looks like you have noted the frequency of the histogram. We need to find a data set that could be represented by the histogram. Which data set has 4 data points greater than or equal to 10, but less than 20?",
+        "C": "23, 24, 27, 29 would all go in the 20 ≤ x < 30 bin but looking at the histogram we need 3 data points in this bin",
+        "D": "The first bin has a frequency of 4 and bin values 10 ≤ x < 20, so 12, 15, 17, 19 meet this criteria. The second bin has a frequency of 3 and bin values of 20 ≤ x < 30, so 24, 25, 28 meet this criteria. The third bin has a frequency of 5 and bin values of 30 ≤ x < 40, so 31, 32, 35, 36, 37 meet this criteria. The fourth bin has a frequency of 2 and bin values 40 ≤ x < 50, so 43, 46 meet this criteria. This data set matches the histogram."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166783,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8d401d5a-2120-48a8-ac1e-7b5853b69577.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "While we can tell 10cm is in the bin with the highest frequency, can we tell how many, if any values in that bin have a height of 10cm?",
+        "B": "20cm is an endpoint and would be located in the bin to the right. Can we tell by looking at a histogram how many specific heights are located in a bin?",
+        "C": "I think you found the midpoint of the tallest bar in your histogram. While that is a good estimate, can we be sure how many, if any values in that bin have a height of 15cm?",
+        "D": "We can tell from the frequency which bin has the most data values, but we cannot tell what the most common height is because we can't see specific data values in a histogram."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167033,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2f84ebab-49d5-48d4-a6a2-4b453c0076df.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We can tell from the frequency which bin has the most data values, but we cannot tell what the most common height is because we can't see specific data values in a histogram.",
+        "B": "I think you found the midpoint of the tallest bar in your histogram. While that is a good estimate, can we be sure how many, if any values in that bin have a height of 45cm?",
+        "C": "While we can tell 30cm is in the bin with the highest frequency, can we tell how many, if any values in that bin have a height of 30cm?",
+        "D": "50cm is an endpoint and would be located in the bin to the right. Can we tell by looking at a histogram how many specific heights are located in a bin?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166784,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ce93a4f8-ec1f-4ec9-b2ba-7e27ad325db7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The existing value in the bin is greater than or equal to 30, but less than 40. Is 40 greater than that range?",
+        "B": "I think you believe the value has to be within the range of the largest bin, but the height axis could be extended.",
+        "C": "There is already 1 value in this bin, and that value is at least 30, so another value of 30 cannot be the tallest, but would be, at best, equal in height.",
+        "D": "If the existing value in the bin is 30cm, then is 31 greater than 30?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167034,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5ed48446-d199-4726-aa11-a29348056ea7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The existing values in the bin are greater than or equal to 40, but less than 50. Is 50 greater than that range?",
+        "B": "I think you believe the value has to be within the range of the largest bin, but the height axis could be extended.",
+        "C": "If the existing values in the bin are all 40cm, then is 41 greater than 40?",
+        "D": "There are already 2 values in this bin, and those values are at least 40, so another value of 40 cannot be the tallest, but would be, at best, equal in height."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

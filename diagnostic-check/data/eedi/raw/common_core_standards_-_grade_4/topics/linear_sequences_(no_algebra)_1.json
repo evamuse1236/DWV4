@@ -1,0 +1,165 @@
+{
+  "shortcode": "bifu",
+  "name": "Linear sequences (no algebra) 1",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 14,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Describe an ascending linear sequence in words",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Describe a descending linear sequence in words",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given a description of an ascending linear sequence in words, write some terms of that sequence",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given a description of a descending linear sequence in words, write some terms of that sequence",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Write the next term of an ascending integer linear sequence",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 130146,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f9469356-dc01-4541-a83f-8ebb8e105690.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A term-to-term rule tells us how to get from one term to the next. Here we start at 12 and add 3 each time.",
+        "B": "Not quite. A position-to-term rule is written in terms of n. A term-to-term rule tells us how to get from one term to the next.",
+        "C": "We read the sequence from left to right. Are we adding 3 each time or subtracting 3?",
+        "D": "What is the first number in our sequence. It isn't 9."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130166,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/14cb4d7e-faa6-4108-86f6-3ca0e4d33b0d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Check your calculations carefully. What is being added each time?",
+        "B": "A term-to-term rule tells us how to get from one term to the next. Here we start at 4 and add 11 each time.",
+        "C": "Not quite. A position-to-term rule is written in terms of n. A term-to-term rule tells us how to get from one term to the next.",
+        "D": "Check your calculations carefully. What is being added each time?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130147,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/acc8faf5-8c74-4be7-90fb-acdf3dfcfd26.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We read the sequence from left to right. Are we adding 5 each time or subtracting 5?",
+        "B": "Not quite. A position-to-term rule is written in terms of n. A term-to-term rule tells us how to get from one term to the next.",
+        "C": "This is correct. A term-to-term rule tells us how to get from one term to the next. Here we start at 7 and subtract 5 each time.",
+        "D": "What is the first number in our sequence. It isn't 12."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130167,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8d0af619-585f-4dee-9d62-eadcdb5b887c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "What is the first number in our sequence. It isn't 100.",
+        "B": "We read the sequence from left to right. Are we adding 10 each time or subtracting 10?",
+        "C": "Not quite. A position-to-term rule is written in terms of n. A term-to-term rule tells us how to get from one term to the next.",
+        "D": "This is correct. A term-to-term rule tells us how to get from one term to the next. Here we start at 90 and subtract 10 each time."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130148,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/451f5e04-465a-4301-a035-421a7ad36a59.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the second term. We need to find the third term.",
+        "B": "The first term is 8. The second term is 8 + 6 = 14. The third term is 14 + 6 = 20.",
+        "C": "I think you have started at 6 and added 8 each time. We need to start at 8 and add 6 each time.",
+        "D": "This is the fourth term. We need to find the third term."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130168,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/64b7d56a-7fe4-4a3b-97fc-b2299b1433e5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have started at 7 and added 10 each time. We need to start at 10 and add 7 each time.",
+        "B": "I think you have used 10 as the first term, instead of the second term.",
+        "C": "The second term is 10. The third term is 10 + 7 = 17. The fourth term is 17 + 7 = 24. The fifth term is 24 + 7 = 31. The 6th term is 31 + 7 = 38.",
+        "D": "This is the third term. We need to find the sixth term."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130149,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1aecb356-78e2-4e03-bdab-8686804795e8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the second term in the sequence. We need to find the 10th term.",
+        "B": "To get to the 2nd term we subtract 5 one time. To get to the 10th term we subtract 5 nine times. This gives 55.",
+        "C": "Close. This is the 11th term. Try writing out the sequence to find the 10th term.",
+        "D": "This is how much we subtract in total to get to the 10th term. If the 1st term is 100, what does that give us?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130169,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7f836ad7-e276-447a-be29-4a371b0b963a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The 3rd term is 8. The 4th term is 8 − 2 = 6. The 5th term is 6 − 2 = 4. The 6th term is 4 - 2 = 2. The 7th term is 2 - 2 = 0.",
+        "B": "Close. This is the 8th term. Try writing out the sequence to find the 7th term.",
+        "C": "Close. This is the 9th term. Try writing out the sequence to find the 7th term. Remember 8 is the third term in the sequence NOT the first term.",
+        "D": "This is the next term in the sequence, which is the 4th term. We need to find the 7th term."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130150,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c45ba964-67d9-4a22-a47e-3953384c28cc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the term-to-term rule. Can you use this to find the next term?",
+        "B": "This is the first term. Work out how much is being added each time. Can you use this to find the next term after 18?",
+        "C": "Not quite. Look again carefully at what is being added each time.",
+        "D": "To get from one term to the next we add 4 each time. So the next term is 18 + 4 = 22."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130170,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5d24ea1f-f688-45a6-8f27-8cc51c7d5ca6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Look again carefully at what is being added each time.",
+        "B": "Not quite. Look again carefully at what is being added each time.",
+        "C": "To get from one term to the next we add 8 each time. So the next term is 14 + 8 = 22.",
+        "D": "Look at what is being added each time. We can use that to find the next term."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

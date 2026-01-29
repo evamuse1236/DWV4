@@ -5,7 +5,7 @@
  * deduplicates Brilliant chapter/lesson assignments so each chapter
  * is assigned to exactly one sub-objective per topic.
  *
- * Usage: npx tsx scripts/distribute-brilliant-lessons.ts [--dry-run]
+ * Usage: node --experimental-strip-types scripts/distribute-brilliant-lessons.ts [--dry-run]
  */
 
 import * as fs from "fs";
@@ -74,7 +74,8 @@ interface TopicConfig {
 
 interface Config {
   description: string;
-  within_topic_assignments: Record<string, TopicConfig>;
+  within_topic_assignments?: Record<string, TopicConfig>;
+  within_curriculum_topic_assignments?: Record<string, Record<string, TopicConfig>>;
   cross_topic_assignments: Record<string, unknown>;
 }
 
@@ -103,125 +104,138 @@ function main() {
   const report: string[] = [];
   report.push("=== Brilliant Lesson Distribution Report ===\n");
 
-  // Process each topic in the config
-  for (const [topicName, topicConfig] of Object.entries(
-    config.within_topic_assignments
-  )) {
-    report.push(`\n## Topic: ${topicName}`);
+  const curriculumTopicAssignments =
+    config.within_curriculum_topic_assignments ??
+    (config.within_topic_assignments
+      ? { "(all curricula)": config.within_topic_assignments }
+      : {});
 
-    // Get all LOs for this topic
-    const topicLOs = mapping.learning_objectives.filter(
-      (lo) => lo.topic === topicName
-    );
+  // Process each curriculum + topic in the config
+  for (const [curriculum, topics] of Object.entries(curriculumTopicAssignments)) {
+    report.push(`\n# Curriculum: ${curriculum}`);
 
-    if (topicLOs.length === 0) {
-      report.push(`  WARNING: No LOs found for topic "${topicName}"`);
-      continue;
-    }
+    for (const [topicName, topicConfig] of Object.entries(topics)) {
+      report.push(`\n## Topic: ${topicName}`);
 
-    for (const [chapKey, assignment] of Object.entries(topicConfig)) {
-      const [courseSlug, chapterSlug] = chapKey.split("/");
+      // Get all LOs for this curriculum/topic (or all curricula in legacy mode)
+      const topicLOs = mapping.learning_objectives.filter((lo) =>
+        curriculum === "(all curricula)"
+          ? lo.topic === topicName
+          : lo.curriculum === curriculum && lo.topic === topicName
+      );
 
-      if (assignment.type === "assign") {
-        // Assign entire chapter to a single target row
-        const targetRow = assignment.target_row!;
+      if (topicLOs.length === 0) {
         report.push(
-          `  ${chapKey} → Row ${targetRow} (${assignment.target_description})`
+          `  WARNING: No LOs found for ${curriculum} topic "${topicName}"`
         );
+        continue;
+      }
 
-        for (const lo of topicLOs) {
-          const hasChapter = lo.playlist_links.brilliant.some(
-            (b) => b.course_slug === courseSlug && b.chapter_slug === chapterSlug
+      for (const [chapKey, assignment] of Object.entries(topicConfig)) {
+        const [courseSlug, chapterSlug] = chapKey.split("/");
+
+        if (assignment.type === "assign") {
+          // Assign entire chapter to a single target row
+          const targetRow = assignment.target_row!;
+          report.push(
+            `  ${chapKey} → Row ${targetRow} (${assignment.target_description})`
           );
-          if (!hasChapter) continue;
 
-          if (lo.row === targetRow) {
-            // Keep it
-            report.push(`    ✓ Kept in Row ${lo.row}`);
-          } else {
-            // Remove it
-            lo.playlist_links.brilliant = lo.playlist_links.brilliant.filter(
+          for (const lo of topicLOs) {
+            const hasChapter = lo.playlist_links.brilliant.some(
               (b) =>
-                !(
-                  b.course_slug === courseSlug &&
-                  b.chapter_slug === chapterSlug
-                )
+                b.course_slug === courseSlug && b.chapter_slug === chapterSlug
             );
-            report.push(`    ✗ Removed from Row ${lo.row} (${loLabel(lo)})`);
+            if (!hasChapter) continue;
+
+            if (lo.row === targetRow) {
+              // Keep it
+              report.push(`    ✓ Kept in Row ${lo.row}`);
+            } else {
+              // Remove it
+              lo.playlist_links.brilliant = lo.playlist_links.brilliant.filter(
+                (b) =>
+                  !(
+                    b.course_slug === courseSlug &&
+                    b.chapter_slug === chapterSlug
+                  )
+              );
+              report.push(`    ✗ Removed from Row ${lo.row} (${loLabel(lo)})`);
+            }
           }
-        }
-      } else if (assignment.type === "split") {
-        // Split chapter lessons across multiple target rows
-        report.push(`  ${chapKey} → SPLIT across rows`);
-        const splits = assignment.splits!;
+        } else if (assignment.type === "split") {
+          // Split chapter lessons across multiple target rows
+          report.push(`  ${chapKey} → SPLIT across rows`);
+          const splits = assignment.splits!;
 
-        // Build a map: row -> set of lesson slugs to keep
-        const rowLessons = new Map<number, Set<string>>();
-        for (const [rowStr, splitDef] of Object.entries(splits)) {
-          const row = parseInt(rowStr, 10);
-          rowLessons.set(row, new Set(splitDef.lessons));
-          if (splitDef.lessons.length > 0) {
-            report.push(
-              `    Row ${row}: ${splitDef.lessons.length} lessons (${splitDef.target_description})`
-            );
-          } else {
-            report.push(
-              `    Row ${row}: 0 lessons - chapter removed (${splitDef.target_description})`
-            );
+          // Build a map: row -> set of lesson slugs to keep
+          const rowLessons = new Map<number, Set<string>>();
+          for (const [rowStr, splitDef] of Object.entries(splits)) {
+            const row = parseInt(rowStr, 10);
+            rowLessons.set(row, new Set(splitDef.lessons));
+            if (splitDef.lessons.length > 0) {
+              report.push(
+                `    Row ${row}: ${splitDef.lessons.length} lessons (${splitDef.target_description})`
+              );
+            } else {
+              report.push(
+                `    Row ${row}: 0 lessons - chapter removed (${splitDef.target_description})`
+              );
+            }
           }
-        }
 
-        for (const lo of topicLOs) {
-          const chapterIdx = lo.playlist_links.brilliant.findIndex(
-            (b) => b.course_slug === courseSlug && b.chapter_slug === chapterSlug
-          );
-          if (chapterIdx === -1) continue;
-
-          const chapter = lo.playlist_links.brilliant[chapterIdx];
-          const targetLessons = rowLessons.get(lo.row);
-
-          if (targetLessons === undefined) {
-            // This row is not in the split config — remove the chapter entirely
-            lo.playlist_links.brilliant.splice(chapterIdx, 1);
-            report.push(
-              `    ✗ Removed entirely from Row ${lo.row} (not in split config)`
-            );
-          } else if (targetLessons.size === 0) {
-            // Explicitly assigned 0 lessons — remove chapter
-            lo.playlist_links.brilliant.splice(chapterIdx, 1);
-            report.push(
-              `    ✗ Removed from Row ${lo.row} (0 lessons assigned)`
-            );
-          } else {
-            // Filter lessons to only those assigned to this row
-            const originalCount = chapter.lessons.length;
-            chapter.lessons = chapter.lessons.filter((l) =>
-              targetLessons.has(l.lesson_slug)
-            );
-            report.push(
-              `    ✓ Row ${lo.row}: ${originalCount} → ${chapter.lessons.length} lessons`
-            );
-          }
-        }
-      } else if (assignment.type === "remove") {
-        // Remove this chapter from all LOs in this topic
-        report.push(
-          `  ${chapKey} → REMOVED from topic (${assignment.note || "cross-topic duplicate"})`
-        );
-
-        for (const lo of topicLOs) {
-          const hadIt = lo.playlist_links.brilliant.some(
-            (b) => b.course_slug === courseSlug && b.chapter_slug === chapterSlug
-          );
-          if (hadIt) {
-            lo.playlist_links.brilliant = lo.playlist_links.brilliant.filter(
+          for (const lo of topicLOs) {
+            const chapterIdx = lo.playlist_links.brilliant.findIndex(
               (b) =>
-                !(
-                  b.course_slug === courseSlug &&
-                  b.chapter_slug === chapterSlug
-                )
+                b.course_slug === courseSlug && b.chapter_slug === chapterSlug
             );
-            report.push(`    ✗ Removed from Row ${lo.row} (${loLabel(lo)})`);
+            if (chapterIdx === -1) continue;
+
+            const chapter = lo.playlist_links.brilliant[chapterIdx];
+            const targetLessons = rowLessons.get(lo.row);
+
+            if (targetLessons === undefined) {
+              // This row is not in the split config — remove the chapter entirely
+              lo.playlist_links.brilliant.splice(chapterIdx, 1);
+              report.push(
+                `    ✗ Removed entirely from Row ${lo.row} (not in split config)`
+              );
+            } else if (targetLessons.size === 0) {
+              // Explicitly assigned 0 lessons — remove chapter
+              lo.playlist_links.brilliant.splice(chapterIdx, 1);
+              report.push(`    ✗ Removed from Row ${lo.row} (0 lessons assigned)`);
+            } else {
+              // Filter lessons to only those assigned to this row
+              const originalCount = chapter.lessons.length;
+              chapter.lessons = chapter.lessons.filter((l) =>
+                targetLessons.has(l.lesson_slug)
+              );
+              report.push(
+                `    ✓ Row ${lo.row}: ${originalCount} → ${chapter.lessons.length} lessons`
+              );
+            }
+          }
+        } else if (assignment.type === "remove") {
+          // Remove this chapter from all LOs in this topic
+          report.push(
+            `  ${chapKey} → REMOVED from topic (${assignment.note || "cross-topic duplicate"})`
+          );
+
+          for (const lo of topicLOs) {
+            const hadIt = lo.playlist_links.brilliant.some(
+              (b) =>
+                b.course_slug === courseSlug && b.chapter_slug === chapterSlug
+            );
+            if (hadIt) {
+              lo.playlist_links.brilliant = lo.playlist_links.brilliant.filter(
+                (b) =>
+                  !(
+                    b.course_slug === courseSlug &&
+                    b.chapter_slug === chapterSlug
+                  )
+              );
+              report.push(`    ✗ Removed from Row ${lo.row} (${loLabel(lo)})`);
+            }
           }
         }
       }

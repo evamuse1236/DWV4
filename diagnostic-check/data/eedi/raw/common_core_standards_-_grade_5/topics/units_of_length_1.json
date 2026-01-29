@@ -1,0 +1,159 @@
+{
+  "shortcode": "bijv",
+  "name": "Units of length 1",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 78,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify a unit of length",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Convert between cm and m",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Convert between m and cm",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Convert between m and mm",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 107575,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fe8f6403-fa5a-446f-9815-0ca8580f3185.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "cm is a unit of length; cm represents centimetres, which is one hundredth of one metre. When calculating the perimeter, you are using lengths; cm can be used.",
+        "B": "ml represents millilitres, which is a measure of volume. When calculating the perimeter, you use lengths, and so ml is an incorrect unit for the perimeter.",
+        "C": "mm is a unit of length; mm represents millimetres, which is one thousandth of one metre. When calculating the perimeter, you are using lengths; mm can be used.",
+        "D": "km is a unit of length; km represents kilometres, which is one thousand metres. When calculating the perimeter, you are using lengths; km can be used."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107585,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a8ef91da-190f-42fa-9926-76cb0c123553.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "mm is a unit of length; mm represents millimetres, which is one thousandth of one metre. When calculating the perimeter, you are using lengths; mm can be used.",
+        "B": "m is a unit of length; m represents metres. When calculating the perimeter, you are using lengths; m can be used.",
+        "C": "cl represents centilitres, which is a measure of volume. When calculating the perimeter, you use lengths, and so cl is an incorrect unit for the perimeter.",
+        "D": "km is a unit of length; km represents kilometres, which is one thousand metres. When calculating the perimeter, you are using lengths; km can be used."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107576,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4e887615-3447-4cd5-a07a-0b719787430a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember there are 100cm in 1m. Consider first what 7cm is in metres",
+        "B": "There are 100 cm in a metre, and so 7 cm = 7/100 = 0.07 m. Adding this to the other 5 m gives 5.07 m.",
+        "C": "Remember there are 100cm in 1m. Consider first what 7cm is in metres",
+        "D": "It looks like you've written your answer in centimetres, however, we want to find the answer in metres."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107586,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4df755c3-0c18-46e4-826e-0aab13d1e485.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There are 100 cm in a metre, and so 40 cm = 40/100 = 0.4 m. Adding this to the other 3 m gives 3.4 m.",
+        "B": "I think you've made an error in your calculation, remember you already have 3 whole metres plus some more, so your answer cannot be less than 3m.",
+        "C": "Remember there are 100cm in 1m. Consider first what 40cm is in metres",
+        "D": "Remember there are 100cm in 1m. Consider first what 40cm is in metres"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107577,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2df5fc31-dba6-4a72-96b3-c0e929beae04.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have changed the km into m correctly, but remember centimetres are shorter than metres. 1m = 100cm.",
+        "B": "There are 100 centimetres in a metre and so 7 cm = 7/100 = 0.07 metres. 1 kilometre is 1000 metres, , so 5 km = 5 × 1000 = 5000 m. Adding the two together gives 5000.07 m.",
+        "C": "I think you've forgotten to convert 7cm into metres as well",
+        "D": "Remember centimetres are shorter than metres. 1m = 100cm, what will 7cm be equal to?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107587,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aeba2472-4b62-4a1e-b9ae-3e4494124a86.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember centimetres are shorter than metres. 1m = 100cm, what will 40cm be equal to?",
+        "B": "I think you've forgotten to convert 40cm into metres as well :)",
+        "C": "There are 100 centimetres in a metre and so 40 cm = 40/100 = 0.4 metres. 1 kilometre is 1000m,, so 3 km = 3 × 1000 = 3000 m. Adding the two together gives 3000.4 m.",
+        "D": "I think you have converted the 3km into m correctly. Remember 1 metre = 100 centimetres, what will 40cm be equal to?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107578,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/275fb21f-5392-4a0b-ba21-ddc96c7e62e8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember there are 100cm in 1m, what will 1 metre 6 centimetres be in metres?",
+        "B": "Remember there are 1000 metres in 1 kilometre. What will 25km be in metres?",
+        "C": "I think you've forgotten to convert the measurements first. Remember that 1m=100cm, and 1km=1000m.",
+        "D": "The measurement of 1½ metres is the same as 1m and 50 centimetres and so Tom is incorrect. Also, 25 km is equal to 25000 m, and so Katie is incorrect."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107588,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c80dc477-683e-4153-bdf3-217391255002.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember that 1km = 1000m, what will 8980m be in km?",
+        "B": "The distance 9 km is equal to 9000 m, and so Katie is incorrect. The measurement 2¼ m is equal to 2.25 metres, and so Tom is correct.",
+        "C": "I think you've forgotten to convert the measurements first. Remember that 1m=100cm, and 1km=1000m.",
+        "D": "I think you've forgotten to convert the measurements first. Remember that 1m=100cm, and 1km=1000m."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107579,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d1340748-b03c-4556-839f-26a82529598b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you've chopped off 0.1m, rather than 0.1cm.",
+        "B": "I think you've chopped off 0.1m, and converted your answer to cm, rather than mm",
+        "C": "I think you've chopped off 0.1mm, rather than cm",
+        "D": "One metre is equal to 100 cm, and so the length of rope that remains is 100 – 0.1 = 99.9 cm long. There are 10 mm in a centimetre, and so we have 99.9 cm = 99.9 × 10 = 999 mm"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 124601,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cc7ba0ad-5b17-479d-93e2-39ffeb8ec3f9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you've chopped off 0.5mm, rather than 0.5cm.",
+        "B": "Two metres is equal to 200 cm, and so the length of rope that remains is 200 – 0.5 = 199.5 cm long. There are 10 mm in a centimetre, and so we have 199.5 cm = 199.5 × 10 = 1995 mm",
+        "C": "I think you've chopped off 5cm, rather than 0.5cm",
+        "D": "It looks like you've given your answer in cm, rather than mm. Remember that 1cm = 10mm."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

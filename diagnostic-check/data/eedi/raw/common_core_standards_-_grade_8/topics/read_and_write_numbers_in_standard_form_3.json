@@ -1,0 +1,165 @@
+{
+  "shortcode": "vy6",
+  "name": "Read and write numbers in standard form 3",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 33,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Recognise when a number is written in standard form",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Write numbers greater than 1 in standard form",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Write numbers between 0 and 1 in standard form",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Convert standard form notation into non-standard form for numbers more than 1",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Convert from non-standard form into standard form for numbers greater than 1",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 131741,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/be5f09b2-7e96-42a2-a1e7-52a87c9b9192.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Standard form a useful way of writing very big or very small numbers. The conditions are that the number is written in two parts. The first part involves using the digits in a way that the value is greater than or equal to 1 but less than 10, and the second part which is × 10 to a power. Both these conditions are met, and this is in standard form.",
+        "B": "Standard form a useful way of writing very big or very small numbers. The conditions are that the number is written in two parts. The first part involves using the digits in a way that the value is greater than or equal to 1 but less than 10, and the second part which is × 10 to a power. 10 means 10 to the power of 1, so both these conditions are met, and this is in standard form.",
+        "C": "Standard form a useful way of writing very big or very small numbers. The conditions are that the number is written in two parts. The first part involves using the digits in a way that the value is greater than or equal to 1 but less than 10, and the second part which is × 10 to a power. Both these conditions are met, and this is in standard form.",
+        "D": "Standard form a useful way of writing very big or very small numbers. The conditions are that the number is written in two parts. The first part involves using the digits in a way that the value is greater than or equal to 1 but less than 10, and the second part which is × 10 to a power. Looking at the values in D, the issue is that the value of the first part for answer D does not fit this rule because 15.1> 10. Therefore, this is not in standard form."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133934,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6467c63b-1ae2-48d4-bd44-d5d1351de8e0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Standard form a useful way of writing very big or very small numbers. The conditions are that the number is written in two parts. The first part involves using the digits in a way that the value is greater than or equal to 1 but less than 10, and the second part which is × 10 to a power. Both of these conditions are met, therefore, this is in standard form.",
+        "B": "Standard form a useful way of writing very big or very small numbers. The conditions are that the number is written in two parts. The first part involves using the digits in a way that the value is greater than or equal to 1 but less than 10, and the second part which is × 10 to a power. Looking at the values in B, the issue is that the value of the first part for answer B does not fit this rule because 0.28 <1. Therefore, this is not in standard form.",
+        "C": "Standard form a useful way of writing very big or very small numbers. The conditions are that the number is written in two parts. The first part involves using the digits in a way that the value is greater than or equal to 1 but less than 10, and the second part which is × 10 to a power. Both these conditions are met, and this is in standard form.",
+        "D": "Standard form a useful way of writing very big or very small numbers. The conditions are that the number is written in two parts. The first part involves using the digits in a way that the value is greater than or equal to 1 but less than 10, and the second part which is × 10 to a power. 10 means 10 to the power of 1, so both these conditions are met, and this is in standard form."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131742,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/38d21b38-49d9-42df-b1cd-824dae7b6b51.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Standard form has 2 parts The first part involves using the digits in a way that the value is greater than or equal to 1 but less than 10, and the second part which is × 10 to a power. 50200 would be written as 5.02. The power is the number of times we need to multiply this by 10 to get the original number, this is 4",
+        "B": "The 0 between the 5 and 2 has been omitted in the answer. This has changed the value completely.",
+        "C": "The power is found by counting the number of times we need to multiply the first part (5.02 here) to get back to the original number",
+        "D": "The 0 between the 5 and 2 has been omitted in the answer and the power is found by counting the number of times we need to multiply the first part to get back to the original number"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133935,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a0745687-f7c2-4d27-a3e0-8e14684917fd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Standard form has 2 parts. The first part involves using the digits in a way that the value is greater than or equal to 1 but less than 10, and the second part which is × 10 to a power. 300200 would be written as 3.002. We need to multiply this by ten 5 times to get back to the original number, so it is 3.002 x 10^5",
+        "B": "The two 0's between the 3 and 2 has been omitted in the answer. This has changed the value completely.",
+        "C": "The power is found by counting the number of times we need to multiply the first part (3.002 here) to get back to the original number",
+        "D": "The two 0's between the 3 and 2 has been omitted in the answer and the power is found by counting the number of times we need to multiply the first part to get back to the original number"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131743,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/277b1362-9c72-4196-87ba-5c4a4e463e87.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you used the number of decimal places as the power. The power will be negative, and is found by counting the number of times we need to divide the first part by 10 to get back to the original.",
+        "B": "The 0 between the 5 and 2 has been omitted in the answer. This has changed the value completely. The power is found by counting the number of times we need to divide the first part by 10 to get back to the original.",
+        "C": "Standard form has 2 parts. The first part involves using the digits in a way that the value is greater than or equal to 1 but less than 10, and the second part which is × 10 to a power. 502 would be written as 5.02. We would need to divide this by 10 twice to get back to the original, so it is 5.02 x 10^-2",
+        "D": "The 0 between the 5 and 2 has been omitted in the answer, which changes the value."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133936,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2e76ce17-1683-47c6-8593-4d8f653e8479.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Standard form has 2 parts. The first part involves using the digits in a way that the value is greater than or equal to 1 but less than 10, and the second part which is × 10 to a power. 3002 would be written as 3.002. We would need to divide this by 10 twice to get back to the original, so it is 3.002 x 10^-2",
+        "B": "The 0 between the 3 and 2 has been omitted in the answer. This has changed the value completely.",
+        "C": "I think you found the power by counting the number of decimal places. The power is found by counting the number of times we need to divide the first part by 10 to get back to the original.",
+        "D": "The 0 between the 3 and 2 has been omitted in the answer. The power is found by counting the number of times we need to divide the first part by 10 to get back to the original."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131744,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a8114d4c-75af-4f30-9e02-efe5f8d75a7b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "3.4 x 10^5 is the same as 340000. if we multiply 3.4 by 100 the power decreases by 2, making it the same answer but written as 340 x 10^3",
+        "B": "You seemed to have multiplied the number 3.4 by 100, but you have not compensated for this by changing the power of the 10",
+        "C": "You have multiplied 3.4 by 100, and also increased the power. Think about what will happen to the power if the number is multiplied by 100",
+        "D": "You seemed to have multiplied the number 3.4 by 100, but compensated in the wrong way"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133937,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/50f3cb89-72aa-4a01-9ad7-f6d74d373e0d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You seemed to have multiplied the number 2.1 by 10, but compensated in the wrong way",
+        "B": "You seem to have multiplied 2.1 by 10, but not changed the power",
+        "C": "2.1 x 10^4 is the same as 21000. if we multiply 2.1 by 10 the power decreases by 1, making it the same answer but written as 21 x 10^3",
+        "D": "You seemed to have multiplied the number 2.1 by 10, but not compensated for this by changing the power of 10"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131745,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7190c4ad-e595-4b0a-85c0-25dbcbbacab5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You're almost there, but I think you subtracted the power. Think about how many times 2.7 has to be multiplied by 10 in total",
+        "B": "This is the 2700 in standard form, but you still need to take into account the x 10⁵",
+        "C": "I think you added 2 to the power because of the two zeros. Think about how many times you will need to multiply 2.7 by 10 in total.",
+        "D": "2700 is 2.7 x 10³ when written in standard form . Then we need to multiply this by 10⁵, which means we need to add the powers = 2.7 x 10⁸"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133938,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1c3d3500-2fd1-4201-98fd-ece27debdff1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the 4800 in standard form, but you still need to take into account the x 10⁵",
+        "B": "Not quite, Think about how many times you will need to multiply 4.8 by 10 to get to 4800, and then how many times this means we are multiplying by 10 in total.",
+        "C": "I think you added 4 to the power as there are 4 digits in 4800. Think about how many times you will need to multiply 4.8 by 10 to get to 4800, and then how many times this means we are multiplying by 10 in total.",
+        "D": "4800 is 4.8 x 10³ when written in standard form . Then we need to multiply this by 10⁵, which means we need to add the powers = 4.8 x 10⁸"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

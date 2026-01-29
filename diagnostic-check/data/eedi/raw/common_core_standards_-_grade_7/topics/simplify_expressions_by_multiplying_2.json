@@ -1,0 +1,159 @@
+{
+  "shortcode": "vu5",
+  "name": "Simplify expressions by multiplying 2",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 130,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Multiply algebraic terms, where both are linear versions of different letters (e.g. 4a x 2b)",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiply algebraic terms, involving non-linear versions of the same letter (e.g. 4a² x 2a)",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiply algebraic terms, involving non-linear versions of different letters (e.g. 4a² x 5ab)",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Write algebraic expressions with correct algebraic convention involving powers",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 104965,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0b150a75-18a1-415b-85ec-9418e0a338aa.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added the 6 and 4 together. We need to multiply the numbers as well as multiplying the letters.",
+        "B": "You have multiplied the numbers and the letters correctly, but we need them combined into one term.",
+        "C": "Given that 6𝑎 = 6 × 𝑎 and 4𝑏 = 4 × 𝑏, and using the fact that multiplication is commutative (so the order doesn't matter), we can write 6𝑎 × 4𝑏 as 6 × 4 × 𝑎 × 𝑏. Then we can simplify to get 24𝑎𝑏",
+        "D": "You might be thinking of when we collect terms as we cannot add different letters together, but we can multiply them. How would we write a x b?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104983,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5a52153c-8000-4d3b-8ff3-473489c64206.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added the 3 and 9 together. We need to multiply the numbers, as well as multiplying the letters.",
+        "B": "Given that 3𝑚 = 3 × 𝑚 and 9𝑛 = 9 × 𝑛, and using the fact that multiplication is commutative (so the order doesn't matter), we can write 3𝑚 × 9𝑛 as 3 × 9 × 𝑚 × 𝑛 and then simplify to get 27𝑚𝑛",
+        "C": "You have multiplied the numbers and the letters correctly, but we need them combined into one term.",
+        "D": "You might be thinking of when we collect terms as we cannot add different letters together, but we can multiply them. How would we write m x n?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 104966,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c39cc24b-9ebf-4956-88ae-0313fdff81ac.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Given that 6𝑎 = 6 × 𝑎 and 4𝑎𝑏 = 4 × 𝑎 × 𝑏, and using the fact that multiplication is commutative (so the order doesn't matter), we can write 6𝑎 × 4𝑎𝑏 as 6 × 4 × 𝑎 × 𝑎 × 𝑏 which then simplifies to 24𝑎²𝑏, meaning only Tom is correct.",
+        "B": "Not quite. b² means b x b. Is b being multiplied by itself anywhere in this calculation?",
+        "C": "Not quite. The power (²) is in a different place in their answers. Which letter ends up being multiplied by itself in this calculation?",
+        "D": "One of these is correct. Think about where the power (²) should be placed. Which letter ends up being multiplied by itself in this calculation?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104984,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/952733ad-318b-4eda-8e31-d0ee2d424b47.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Given that 3𝑚𝑛= 3 × 𝑚 × 𝑛 and 9𝑛𝑝 = 9 × 𝑛 × 𝑝, and using the fact that multiplication is commutative (so the order doesn't matter), we can write 3𝑚𝑛 × 9𝑛𝑝 as 3 × 9 × 𝑚 × 𝑛 × 𝑛 × 𝑝 which simplifies to 27𝑚𝑛²𝑝, meaning only Jo is correct.",
+        "B": "Not quite. p² means p x p. Is p being multiplied by itself anywhere in this calculation?",
+        "C": "Not quite. The power (²) is in a different place in their answers. Which letter ends up being multiplied by itself in this calculation?",
+        "D": "One of these is correct. Think about where the power (²) should be placed. Which letter ends up being multiplied by itself in this calculation?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 104974,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1cf5024b-2ac0-437d-bcca-f7bcfd3bc2db.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly! I think you have missed one part. Take time to focus first on your numbers, then on the letter a, then on the letter b.",
+        "B": "Nearly! I think you have missed one part. Take time to focus first on your numbers, then on the letter a, then on the letter b",
+        "C": "Given that 6𝑎𝑏 = 6 × 𝑎 × 𝑏; and 4𝑏 = 4 × 𝑏; and 2𝑎 = 2 × 𝑎, and using the fact that multiplication is commutative (so the order doesn't matter), we can write 6𝑎𝑏 × 4𝑏 × 2𝑎 as 6 × 4 × 2 𝑎 × 𝑎 × 𝑏 × 𝑏 which simplifies to 48𝑎²𝑏²",
+        "D": "You might be thinking of when we collect terms as we cannot add different letters together, but we can multiply them. How would we write a x b?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104992,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/746c9560-4c0c-40c6-afea-4f2a3781110f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Given that 3𝑛 × 2𝑛𝑝 = 3 × 𝑛 × 2 × 𝑛 ×𝑝 and 5𝑛 × 4𝑝𝑛 = 5 × 𝑛 × 4 × 𝑝 × 𝑛, and using the fact that multiplication is commutative (so the order doesn't matter), we can write this as 3 × 2 × 5 × 4 × 𝑛 × 𝑛 × 𝑛 × 𝑛 × 𝑝 × 𝑝 = 120𝑛⁴𝑝², answer A.",
+        "B": "Not quite. As all of these terms are being multiplied together we can focus on our numbers first (3 x 2 x 5 x 4) then the letter n (n x n x n x n) then the letter p (p x p)",
+        "C": "I think you have confused this with addition where 2np + 4pn would give us 6np. How would we write n x n?",
+        "D": "You might be thinking of when we collect terms as we cannot add different letters together, but we can multiply them. How would we write n x p?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 104976,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/43c66827-74f9-4c7c-aa96-abfc5e56aec0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Everything inside the brackets is squared, or multiplied by itself, so another way of writing this is 3𝑎 × 3𝑎. Remembering that multiplication is commutative (the order doesn't matter), we can write this as 3 × 3 × 𝑎 × 𝑎 which simplifies to 9𝑎².",
+        "B": "You have squared the letter a, but you have doubled the number 3. What is the square of 3?",
+        "C": "You have squared the a, but forgotten about the 3. As the 3 is in the brackets, it also needs to be squared.",
+        "D": "You have squared the 3, but forgotten about the a. As the a is in the brackets, it also needs to be squared."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104994,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3211d56b-fc90-414d-9297-7abd4d018cd5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have cubed the p, but forgotten about the 2. As the 2 is in the brackets, it also needs to be cubed.",
+        "B": "You have cubed the letter p, but you have multiplied the 2 by 3. We need to cube the 2.",
+        "C": "Everything inside the brackets is cubed, so the value is multiplied by itself and then by itself again. Another way of writing this is 2𝑝 × 2𝑝 × 2𝑝. Remembering that multiplication is commutative (the order doesn't matter), we can write this as 2 × 2 × 2 × 𝑝 × 𝑝 × 𝑝 which simplifies to 8𝑝³, answer C.",
+        "D": "You have cubed the 2, but forgotten about the p. As the p is in the brackets, it also needs to be cubed."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 104977,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b2fdfcb3-8932-4141-aa34-931f14396b3b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly! You have correctly squared the coefficient (3), but made a mistake with the powers. What is our rule for calculating a power of a power?",
+        "B": "Everything inside the brackets is squared, or multiplied by itself, so another way of writing this is 3𝑎³ × 3𝑎³ = 3 × 𝑎 × 𝑎 × 𝑎 × 3 × 𝑎 × 𝑎 × 𝑎. Remembering that multiplication is commutative (the order doesn't matter), we can write this as 3 × 3 × 𝑎 × 𝑎 × 𝑎 × 𝑎 × 𝑎 × 𝑎 which simplifies to 9𝑎⁶, answer B.",
+        "C": "Nearly! You have correctly squared the coefficient (3), but made a mistake with the powers. What is our rule for calculating a power of a power?",
+        "D": "Nearly! You have correctly squared the coefficient (3), but made a mistake with the powers. What is our rule for calculating a power of a power?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104995,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e4ae34e2-1ca0-422b-a93d-36b67c03fbe6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. We need to cube the coefficient (2) and then use our laws of indices to simplify the letter part. What is our rule for calculating a power of a power?",
+        "B": "Nearly! You have correctly cubed the coefficient (2), but made a mistake with the powers. What is our rule for calculating a power of a power?",
+        "C": "Not quite. We need to cube the coefficient (2) and then use our laws of indices to simplify the letter part. What is our rule for calculating a power of a power?",
+        "D": "Everything inside the brackets is cubed, so the value is multiplied by itself and then by itself again. Another way of writing this is 2𝑝² × 2𝑝² × 2𝑝² = 2 × 𝑝 × 𝑝 × 2 × 𝑝 × 𝑝 × 2 × 𝑝 × 𝑝. Remembering that multiplication is commutative (the order doesn't matter), we can write this as 2 × 2 × 2 × 𝑝 × 𝑝 × 𝑝 × 𝑝 × 𝑝 × 𝑝 which simplifies to 8𝑝⁶, answer D."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

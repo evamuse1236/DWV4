@@ -1,0 +1,147 @@
+{
+  "shortcode": "vyo",
+  "name": "Ordering rational and irrational numbers",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 14,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Solve problems involving converting between fractions, decimals and percentages",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Ordering rational and irrational numbers",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 155004,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/352871f7-5bbb-4f9a-9b5e-7844d35ed654.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have made some errors in your conversions. It is easiest to convert them all to decimals here. To change 65% to a decimal, divide it by 100. To change the fractions to decimals carry out the divisons, so 2 divided by 3 and 5 divided by 8.",
+        "B": "I think you have made some errors in your conversions. It is easiest to convert them all to decimals here. To change 65% to a decimal, divide it by 100. To change the fractions to decimals carry out the divisons, so 2 divided by 3 and 5 divided by 8.",
+        "C": "Converting the numbers to decimals gives us Sam = 0.7, Will = 0.66... , George = 0.625 and Amelie = 0.65. So from smallest to largest that is George, Amelie, Will and Sam which is 5/8, 65%, 2/3 and 0.7",
+        "D": "I think you have ordered these from largest to smallest, we are asked to order them from smallest to largest."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 155009,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f4318cdb-82ef-4753-9246-0ff0455c78a0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Converting the numbers to decimals gives us Rachel = 0.4, Adam = 0.33... , Benjamin = 0.375 and Molly = 0.35. So from smallest to largest that is Adam, Molly, Benjamin and Rachel which is 1/3, 35%, 3/8 and 0.4",
+        "B": "I think you have ordered these from largest to smallest, we are asked to order them from smallest to largest.",
+        "C": "I think you have made some errors in your conversions. It is easiest to convert them all to decimals here. To change 35% to a decimal, divide it by 100. To change the fractions to decimals carry out the divisons, so 1 divided by 3 and 3 divided by 8.",
+        "D": "I think you have made some errors in your conversions. It is easiest to convert them all to decimals here. To change 35% to a decimal, divide it by 100. To change the fractions to decimals carry out the divisons, so 1 divided by 3 and 3 divided by 8."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 155005,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4d3045e9-6d8f-4260-ab3b-a08af7935285.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "As we are ordering smallest to largest we know the negative numbers will come before the positive numbers. -23/4 is -5 3/4 as a mixed number. 3/4 = 0.75, so -5 3/4 = -5.75, which is larger than -5.9(0). So the first two numbers in the list should be -5.9, then -23/4. To change a percentage to a decimal we divide by 100, so 58% = 0.58, which is smaller than 5.78. Therefore, our final order is: -5.9, -23/4, 58%, 5.78.",
+        "B": "I think you have made a mistake converting/ordering your negative numbers. -23/4 is -5 3/4 as a mixed number. What is the decimal for 3/4? So what is the decimal for -5 3/4? How does this compare to -5.9(0)?",
+        "C": "I think you have made a mistake converting your percentage to a decimal. We do this by dividing by 100. How would this compare to 5.78?",
+        "D": "Remember negative numbers are smaller than positive numbers, and it is easiest to convert everything to decimal numbers. Comparing the two negatives first: -23/4 is -5 3/4 as a mixed number. What is the decimal for 3/4? So what is the decimal for -5 3/4? How does this compare to -5.9(0)? To convert a percentage to a decimal we divide it by 100."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 155010,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/072f0ad6-2115-45d1-93f8-3fd7947c49d4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have made a mistake converting/ordering your negative numbers. -29/4 is -7 1/4 as a mixed number. What is the decimal for 1/4? So what is the decimal for -7 1/4? How does this compare to -7.38?",
+        "B": "As we are ordering smallest to largest we know the negative numbers will come before the positive numbers. -29/4 is -7 1/4 as a mixed number. 1/4 = 0.25, so -7 1/4 = -7.25, which is larger than -7.38. So the first two numbers in the list should be -7.38, then -29/4. To change a percentage to a decimal we divide by 100, so 74% = 0.74, which is smaller than 7.4. Therefore, our final order is: -7.38, -29/4, 74%, 7.4.",
+        "C": "You have remembered that negative numbers are smaller than positive numbers but have struggled to order the two pairs. It is easiest to convert everything to decimal numbers. Comparing the two negatives first: -29/4 is -7 1/4 as a mixed number. What is the decimal for 1/4? So what is the decimal for -7 1/4? How does this compare to -7.38? To convert a percentage to a decimal we divide it by 100.",
+        "D": "Almost! I think you have ordered these largest to smallest, is that what you were asked to do?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 155006,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6db325b5-3b4a-454e-af6a-fef6b5493c1e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you are unsure of the size of 3√15. √15 is a little bit smaller than √16, which is 4. So 3√15 is a bit smaller than 3 x 4. How would that compare to the other two results?",
+        "B": "The mixed number is equivalent to 12.4, making it greater than 12.33. √15 is a little bit smaller than √16, which is 4. So 3√15 is a bit smaller than 3 x 4 = 12, making it the smallest of the three results. So in order from the greatest we have: 12 2/5, 12.33, 3√15.",
+        "C": "I think you are unsure what 12 2/5 is as a decimal, or how that compares to 12.33. 1/5 = 0.2, so what would 2/5 be? So what would 12 2/5 be? How does this compare to 12.33? Try making sure both numbers have two decimal places before you compare them.",
+        "D": "I think you are unsure what 12 2/5 is as a decimal, or how that compares to 12.33 and I think you have also ordered them from least to greatest, we want greatest to least. 1/5 = 0.2, so what would 2/5 be? So what would 12 2/5 be? How does this compare to 12.33? Try making sure both numbers have two decimal places before you compare them."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 155011,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b13e58ea-e1d6-48e0-a1a0-c5f97de170d4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you are unsure of the size of 5√10, and have ordered these from smallest to largest by mistake. √10 is a little bit bigger than √9, which is 3. So 5√10 is a bit bigger than 5 x 3. How would that compare to the other two results? Now check how we are asked to order them.",
+        "B": "Almost! I think you have ordered these from smallest to largest, is this what we were asked to do?",
+        "C": "I think you are unsure of the size of 5√10. √10 is a little bit bigger than √9, which is 3. So 5√10 is a bit bigger than 5 x 3. How would that compare to the other two results?",
+        "D": "The mixed number is equivalent to 14.8, making it greater than 14.75. √10 is a little bit bigger than √9, which is 3. So 5√10 is a bit bigger than 5 x 3 = 15, making it the largest of the three results. So in order from the greatest we have: 5√10, 14 4/5, 14.75"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 155007,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6b97c13b-0891-40b0-b5bf-75c1c809ecc1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "√9 = 3, so √9/3 = 1. 2π = 2 x 3.14... = 6.28... So we need the answer that is NOT between 1 and 6.28... π/9 is roughly 3/9 so 1/3 = 0.3..., so this is NOT located between the numbers as it is less than 1.",
+        "B": "√9 is 3, which would lie between these numbers. √9 = 3, so √9/3 = ?. 2π = 2 x 3.14... = ? So we need the answer that is NOT between these.",
+        "C": "π is 3.14..., which would lie between these numbers. √9 = 3, so √9/3 = ?. 2π = 2 x 3.14... = ? So we need the answer that is NOT between these.",
+        "D": "π is 3.14..., so π²/9 is a bit bigger than 3²/9, so a bit bigger than 1, which would lie between these numbers. √9 = 3, so √9/3 = ?. 2π = 2 x 3.14... = ? So we need the answer that is NOT between these."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 155012,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/add1e629-1bad-4c5a-8315-df8638843ffe.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "π is 3.14..., so π²/4 is a bit bigger than 3²/4, so a bit bigger than 2.25, which would lie between these numbers. √16 = 4, so √16/4 = ?. 3π = 3 x 3.14... = ? So we need the answer that is NOT between these.",
+        "B": "√16 is 4, which would lie between these numbers. √16 = 4, so √16/4 = ?. 3π = 3 x 3.14... = ? So we need the answer that is NOT between these.",
+        "C": "π is 3.14..., which would lie between these numbers. √16 = 4, so √16/4 = ?. 3π = 3 x 3.14... = ? So we need the answer that is NOT between these.",
+        "D": "√16 = 4, so √16/4 = 1. 3π = 3 x 3.14... = 9.42... So we need the answer that is NOT between 1 and 9.42... π/4 is roughly 3/4 so 0.75, so this is NOT located between the numbers as it is less than 1."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 155008,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ac16e996-3c3a-4f47-af5b-d6dc17be3185.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We need to estimate the sizes of 9π and √3/2. 9π is a bit larger than 9 x 3 = ?. √3/2 is a bit less than √4/2 = 2/2 = ?. Can you compare these to 26.5 and hence determine the order?",
+        "B": "Almost! I think you have ordered these from smallest to largest area, is that what we were asked to do?",
+        "C": "I think you are unsure of the value of √3/2. √3/2 is a bit less than √4/2 = 2/2 = ?. How would this compare to the other areas?",
+        "D": "9π is a bit larger than 9 x 3 = 27. √3/2 is a bit less than √4/2 = 2/2 = 1. Therefore, circle P has the largest area, and circle Q has the smallest, giving us P R Q."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 155013,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/906af95d-f839-41fc-9b63-28fdbb7e4264.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you are unsure of the value of 6π. 6π is a bit larger than 6 x 3 = ?. How would this compare to 17.5?",
+        "B": "Almost! I think you have ordered these from smallest to largest area, is that what we were asked to do?",
+        "C": "I think you are unsure of the value of √10/2. √10/2 is a bit more than √9/2 = 3/2 = ?. How would this compare to the other areas?",
+        "D": "6π is a bit larger than 6 x 3 = 18. √10/2 is a bit larger than √9/2 = 3/2 = 1.5. Therefore, circle P has the largest area, and circle Q has the smallest, giving us P R Q."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

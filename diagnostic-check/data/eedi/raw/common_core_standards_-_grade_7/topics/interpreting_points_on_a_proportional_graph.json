@@ -1,0 +1,141 @@
+{
+  "shortcode": "ehjg",
+  "name": "Interpreting points on a proportional graph",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 28,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Interpret points on real life proportional graphs",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166817,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d7721edd-2748-4292-9b81-56fb6f43f9f0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember to read the labels from the 𝑥 and 𝑦 axes. Nowhere does it mention anything about days worked...",
+        "B": "Remember to read the labels from the 𝑥 and 𝑦 axes. Nowhere does it mention anything about days worked...",
+        "C": "I think you may have mixed up the labels for the values. Read the labels on the axes and make sure that line up with the correct numbers...",
+        "D": "Using the labels for the axes on our graph, we see 𝑥 stands for \"number of hours\" and 𝑦 is \"amount earned.\" That means (1,12) would mean for every 1 hour worked, $12 is earned."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167067,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cd059938-6e85-4915-9e0c-538e6a6111ea.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have mixed up the labels for the values. Read the labels on the axes and make sure that line up with the correct numbers...",
+        "B": "Using the labels for the axes on our graph, we see 𝑥 stands for \"number of hours\" and 𝑦 is \"amount earned.\" That means (1,10) would mean the person earns $10 for every 1 hour worked.",
+        "C": "Remember to read the labels from the 𝑥 and 𝑦 axes. Nowhere does it mention anything about days worked...",
+        "D": "Remember to read the labels from the 𝑥 and 𝑦 axes. Nowhere does it mention anything about days or totals. What does the 10 represent in this situation?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166818,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db5a2e54-d92e-4a4b-9f25-7f8d05a5b380.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have thought that 𝑦 stands for the number of weeks. Be sure to read the labels on the graph to help understand what the point (1,𝑦) stands for...",
+        "B": "You may have calculated your answer using the 5 work days in a week, but remember there are 7 days in a whole week. What would our answer be using 7?",
+        "C": "Although Gregg tells us how many grams he feeds his dog in a week, the point on the graph is not showing weeks. Read the label for the 𝑥-axis and use that information to help solve for 𝑦.",
+        "D": "Since Gregg feeds his dog 2800 grams of food in 1 week, we could divide by 7 to find out how much he feeds in one day. 2800 ÷ 7 = 400, so that means that he feeds his dog 400 grams per day."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167068,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/602082f5-58a6-4632-b765-ac3c7f50e844.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Since Ben feeds his cat 2100 grams of food in 1 week, we could divide by 7 to find out how much he feeds in one day. 2100 ÷ 7 = 300, so that means that he feeds his cat 300 grams per day.",
+        "B": "I think you may have thought that 𝑦 stands for the number of weeks. Be sure to read the labels on the graph to help understand what the point (1,𝑦) stands for...",
+        "C": "You may have calculated your answer using the 5 work days in a week, but remember there are 7 days in a whole week. What would our answer be using 7?",
+        "D": "Although Ben tells us how many grams he feeds his cat in a week, the point on the graph is not showing weeks. Read the label for the 𝑥-axis and use that information to help solve for 𝑦."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166819,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5da8a313-630d-4345-86ae-f64b9170d968.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember that we have the point (0,0) and each number should stand for something. Although one 0 does stand for chocolate bars, do not forget about the second 0...",
+        "B": "Even though the first point on the graph is (0,0), it does not necessarily mean that the first chocolate bar cost $0. Look at the labels on the 𝑥 and 𝑦 axes and apply them the correct values to interpret what our point means.",
+        "C": "The 𝑥-axis indicates that 𝑥 values represent the number of chocolate bars and the 𝑦-axis indicates that 𝑦 values represent the cost in dollars ($). Since our point is (0,0) and points are in the format (𝑥,𝑦), we can state that 0 chocolate bars would cost $0.",
+        "D": "Even though the first point on the graph is (0,0), it does not necessarily mean that the chocolate bars are free. Look at the labels on the 𝑥 and 𝑦 axes and apply them the correct values to interpret what our point means."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167069,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3326fd19-7298-4c26-8391-96e4f5d1be17.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Even though the first point on the graph is (0,0), it does not necessarily mean that the first can of lemonade costs $0. Look at the labels on the 𝑥 and 𝑦 axes and apply them the correct values to interpret what our point means.",
+        "B": "The 𝑥-axis indicates that 𝑥 values represent the number of cans of lemonade and the 𝑦-axis indicates that 𝑦 values represent the cost in dollars ($). Since our point is (0,0) and points are in the format (𝑥,𝑦), we can state that 0 cans of lemonade would cost $0.",
+        "C": "Even though the first point on the graph is (0,0), it does not necessarily mean that the cans of lemonade are free. Look at the labels on the 𝑥 and 𝑦 axes and apply them the correct values to interpret what our point means.",
+        "D": "Remember that we have the point (0,0) and each number should stand for something. Although one 0 does stand for cans of lemonade, do not forget about the second 0..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166820,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d59ceb26-03a5-4828-9afc-adeadf66f4b8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Though we are told that there is a straight line which would lead to a constant speed, we are specifically looking at the point (0,0). Using the information from the problem, what exactly does the point (0,0) represent in this situation?",
+        "B": "The question tells us that the values on the graph represent miles travelled and hours travelled. Applying those to our point allows us to state that (0,0) represents the fact that at 0 hours, the car has travelled 0 miles.\n",
+        "C": "Remember that (0,0) represents one point on the graph for the journey, not the whole journey itself. Since it stands for one specific part of the travels, what specific part would it represent?",
+        "D": "The unit rate is given at the point (1,𝑟), not when 𝑥 = 0. Remember that points in the form (𝑥,𝑦) can be interpreted using labels and context form the problem. Have a look at the problem to see what information is represented and use that to describe what (0,0) represents..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167070,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/72212bde-6b5a-4755-994a-4dd5f5c7980b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The question tells us that the values on the graph represent kilometres travelled and hours travelled. Applying those to our point allows us to state that (0,0) represents the fact that at 0 hours, the bike has travelled 0 kilometres.\n",
+        "B": "The unit rate is given at the point (1,𝑟), not when 𝑥 = 0. Remember that points in the form (𝑥,𝑦) can be interpreted using labels and context form the problem. Have a look at the problem to see what information is represented and use that to describe what (0,0) represents...",
+        "C": "Though we are told that there is a straight line which would lead to a constant speed, we are specifically looking at the point (0,0). Using the information from the problem, what exactly does the point (0,0) represent in this situation?",
+        "D": "Remember that (0,0) represents one point on the graph for the journey, not the whole journey itself. Since it stands for one specific part of the travel, what specific part would it represent?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166821,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c08b2041-1b00-469d-a419-fda96a0d83b4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have tried to find the unit rate in the form (𝑟,1), but actually unit rates for proportional graphs can be found (1,𝑟). What would the unit rate be in the form (1,𝑟)?",
+        "B": "Unit rates on proportional graphs can be found and represented by the point (1,𝑟). Since we know 10 cupcakes cost $25, we can represent that with the point (10,25). We can divide both numbers by 10 to find the cost of one cupcake, which would be $2.5. This is represented by the point (1,2.5)",
+        "C": "This is the coordinate from the data given in the question, but we want the coordinate of the point that gives us the unit rate. What is the point representing the unit rate in this situation?",
+        "D": "Although you have simplified the point (10,25) to (2,5), remember that unit rate needs to have an 𝑥 value of 1. If you simplified further, what would the coordinate of the unit rate be?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167071,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a4014220-8baf-4349-bca7-7d60429599e8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the coordinate from the data given in the question, but we want the coordinate of the point that gives us the unit rate. What is the point representing the unit rate in this situation?",
+        "B": "Although you have simplified the point (8,12) to (2,3), remember that unit rate needs to have an 𝑥 value of 1. If you simplified further, what would the coordinate of the unit rate be?",
+        "C": "Unit rates on proportional graphs can be found and represented by the point (1,𝑟). Since we know 8 ice creams cost $12, we can represent that with the point (8,12). We can divide both numbers by 8 to find the cost of one ice cream, which would be $1.5. This is represented by the point (1,1.5).",
+        "D": "I think you may have tried to find the unit rate in the form (𝑟,1), but actually unit rates for proportional graphs can be found (1,𝑟). What would the unit rate be in the form (1,𝑟)?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

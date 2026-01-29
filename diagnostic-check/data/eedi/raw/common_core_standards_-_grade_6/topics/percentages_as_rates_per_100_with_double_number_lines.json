@@ -1,0 +1,147 @@
+{
+  "shortcode": "eekx",
+  "name": "Percentages as rates per 100 with Double Number Lines",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 33,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate percentage of an amount mentally where the percent is an integer",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find the whole amount given a percentage of the amount mentally",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166148,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/946542e6-8117-44a6-ae74-b1fb8b574bfc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we have 100% (60 kids) and need 20% then one method would be to divide by 5, as 100/20 = 5. 60/5 = 12, so 12 kids were wearing a hat. Another method would be to calculate 60/10 = 6 to find 10% and then 6x2=12 to find 20%.",
+        "B": "I think you have worked out 10% of 60, so now you are ready to work out 20%.",
+        "C": "I think you did 60-20. To answer this question we need to work out 20% of 60. One method is to focus first on working out 10% of 60, and then you can double your answer to get 20%.",
+        "D": "I think you divided 60 by 20. The diagram helps us see that 60 kids is 100% and we are asked to find 20%. One method we could use is to first work out 10% of 60 and then double our answer to get 20%."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166375,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8cc99254-1eed-41e6-bcd5-0faa2050648e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you did 80-20. To answer this question we need to work out 20% of 80. One method is to focus first on working out 10% of 80, and then you can double your answer to get 20%.",
+        "B": "If we have 100% (80 kids) and need 20% then one method would be to divide by 5, as 100 divided by 20 is 5. 80/5 = 16, so 16 kids were wearing a coat. Another method would be to calculate 80/10 = 8 to find 10%, and then 8x2=16 to find 20%.",
+        "C": "I think you divided 80 by 20. The diagram helps us see that 80 kids is 100% and we are asked to find 20%. One method we could use is to first work out 10% of 80, and then double our answer to get 20%.",
+        "D": "I think you have worked out 10% of 80, so now you are ready to work out 20%."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166149,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4ba71e2b-868b-4775-8c37-7c11e05c92b4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you did 7x4. Focus first on the 4%, and the 100%. What do we need to multiply 4 by to get 100? You could then multiply 7 by that same number to work out the total number of counsellors.",
+        "B": "Focus first on the 4% and the 100%, on the diagram. What do we need to multiply 4 by to get 100? You could then multiply 7 by that same number to work out the total number of counsellors.",
+        "C": "Focus first on the 4% and the 100%, on the diagram. What do we need to multiply 4 by to get 100? You could then multiply 7 by that same number to work out the total number of counsellors.",
+        "D": "We are told that 7 is 4% of the total number of counsellors and we need to calculate 100%. 100/4 = 25. So, as 4% x 25 = 100%, 7 x 25 = 175. So the total number of counsellors is 175."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166376,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cb63141f-7acb-4bcd-b4d5-eca779d4f69a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Focus first on the 2% and the 100%, on the diagram. What do we need to multiply 2 by to get 100? You could then multiply 6 by that same number to work out the total number of counsellors.",
+        "B": "We are told that 6 is 2% of the total number of counsellors, and we need to calculate 100%. 100/2 = 50. So, as 2% x 50 = 100%, 6 x 50 = 300. So the total number of counsellors is 300.",
+        "C": "Focus first on the 2% and the 100%, on the diagram. What do we need to multiply 2 by to get 100? You could then multiply 6 by that same number to work out the total number of counsellors.",
+        "D": "It looks like you did 6x2=12, but that isn't the correct method. Focus first on the 2%, and the 100% on the diagram. What do we need to multiply 2 by to get 100? You could then multiply 6 by that same number to work out the total number of counsellors."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166150,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9d0e8eb4-40ad-4c47-bc4e-4878831e4038.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, 8 is less than 25% of 200. On the diagram, see that 100% equals 200 people. Can you use that fact to work out what 25% would equal?",
+        "B": "100% is 200 people, so 1% would be 2 people. Then we can do 25x2=50 to work out 25% of 200. Another method is to do 100% divided by 25% equals 4, and so we can then do 200 divided by 4, which also gives us the answer 50.",
+        "C": "On the diagram, see that 100% equals 200 people. Can you use that fact to work out what 25% would equal?",
+        "D": "Not quite, 125 is more than 25% of 200. On the diagram, see that 100% equals 200 people. Can you use that fact to work out what 25% would equal?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166377,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0343cfcb-fe4f-4a1a-afbe-c35d3a5cad1f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "100% is 300 people, so 1% would be 3 people. Then to work out 25% we would do 25x3=75 people. Another method would be to compare 100% and 25%, calculate that 100/25=4, and then work out 300 divided by 4.",
+        "B": "Not quite, as 25% of 300 would be higher than 25. On the diagram, see that 100% equals 300 people. Can you use that fact to work out how many people 1% would equal? Then you can work out 25%.",
+        "C": "Not quite. On the diagram, see that 100% equals 300 people. Can you use that fact to work out how many people 1% would equal? Then you can work out 25%",
+        "D": "Not quite. On the diagram, see that 100% equals 300 people. Can you use that fact to work out how many people 1% would equal? Then you can work out 25%"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166151,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8a47e4a5-25e6-4974-88cf-9cb581788962.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you treated 12 as the 100%, but it is actually 30%. As 100% divided by 30% does not give a whole number answer, think about how you could work out 10%, and after that you could then work out 100%.",
+        "B": "Use the diagram to help you focus on the fact that 12 is 30%. As 100% divided by 30% does not give a whole number answer, think about how you could work out 10%, and after that you could then work out 100%.",
+        "C": "The diagram helps us focus on the fact that 12 is 30%. As 100% divided by 30% does not give a whole number answer, it would be good to first divide by 3 to get that 4 is 10%. We can then times by 10 to work out that 40 is 100%.",
+        "D": "I think you worked out 30% of 12. Use the diagram to help you focus on the fact that 12 is 30%. As 100% divided by 30% does not give a whole number answer, think about how you could work out 10%, and after that you could then work out 100%."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166378,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/af8d043e-156a-494a-8c3b-85712ed0e2e1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you worked out 30% of 9. Use the diagram to help you focus on the fact that 9 is 30%. As 100% divided by 30% does not give a whole number answer, think about how you could work out 10%, and after that you could then work out 100%.",
+        "B": "Not quite, I think you treated the 9 as if it was 100%, but it is actually 30%. As 100% divided by 30% does not give a whole number answer, think about how you could work out 10%, and after that you could then work out 100%.",
+        "C": "The diagram helps us focus on the fact that 9 is 30%. As 100% divided by 30% does not give a whole number answer, it would be good to first divide by 3 to get that 3 is 10%. We can then times by 10 to work out that 30 is 100%.",
+        "D": "Use the diagram to help you focus on the fact that 9 is 30%. As 100% divided by 30% does not give a whole number answer, think about how you could work out 10%, and after that you could then work out 100%."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166152,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b7028466-694b-4357-adeb-db33430de1c5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you worked out 40% of 160. Use the diagram to help you focus on the fact that 160 is 40%. As 100% divided by 40% does not give a whole number answer, think about how you could work out 10%, and after that you could then work out 100%.",
+        "B": "The diagram helps us focus on the fact that 160 is 40%. As 100% divided by 40% does not give a whole number answer, it would be good to first divide by 4 to get that 40 grams is 10%. We can then times by 10 to work out that 400 grams is 100%.",
+        "C": "Use the diagram to help you focus on the fact that 160 grams is 40%. As 100% divided by 40% does not give a whole number answer, think about how you could work out 10%, and after that you could then work out 100%.",
+        "D": "It looks like you treated 160 as the 100%, but it is actually 40%. As 100% divided by 40% does not give a whole number answer, think about how you could work out 10%, and after that you could then work out 100%."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166379,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2bbf20e0-3e50-405a-8160-fd97ba6ca31c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Use the diagram to help you focus on the fact that 120 grams is 40%. As 100% divided by 40% does not give a whole number answer, think about how you could work out 10%, and after that you could then work out 100%.",
+        "B": "It looks like you treated 120 as the 100%, but it is actually 40%. As 100% divided by 40% does not give a whole number answer, think about how you could work out 10%, and after that you could then work out 100%.",
+        "C": "The diagram helps us focus on the fact that 120 is 40%. As 100% divided by 40% does not give a whole number answer, it would be good to first divide by 4 to get that 30 grams is 10%. We can then times by 10 to work out that 300 grams is 100%.",
+        "D": "I think you worked out 40% of 120. Use the diagram to help you focus on the fact that 120 is 40%. As 100% divided by 40% does not give a whole number answer, think about how you could work out 10%, and after that you could then work out 100%."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

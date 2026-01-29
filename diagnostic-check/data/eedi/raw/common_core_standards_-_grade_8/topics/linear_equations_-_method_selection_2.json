@@ -1,0 +1,159 @@
+{
+  "shortcode": "vzt",
+  "name": "Linear equations - method selection 2",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 60,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Solve two-step linear equations, with the variable on one side, with all positive integers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve linear equations with the variable appearing on both sides, with all positive integers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve linear equations with the variable appearing on both sides, involving negative integers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve a linear equation using a function machine",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 77143,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a459043e-4e6b-42e5-a98e-b1838109d7df.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We add 4 to both sides to get 6 = 3a, then divide by 3 to get a = 2.",
+        "B": "I think you have subtracted 4, rather than adding.",
+        "C": "I think you have subtracted 4, and then multiplied by 3. When solving equations we need to do the opposite operation",
+        "D": "Not quite. I think you have subtracted 4, but you needed to do the opposite and add 4. This would tell you what 3a is worth, but then you need to work out what a single a is."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78920,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0c58773c-a398-4fa4-9d09-d2f3d41f7013.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! It looks like you added 5 to both sides to get 8 = 2a. What do you need to do to work out what a single a is worth?",
+        "B": "I think you have subtracted 5, and then multiplied by 2. When solving equations we need to do the opposite operation",
+        "C": "Very close! I think you have subtracted 5 rather than adding 5. The second step was correct though.",
+        "D": "Adding 5 to both sides gives 2a = 3 + 5 = 8, and then dividing by 2 gives a = 4."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 77144,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/09387425-0917-4fde-a477-fb9bb00c34b2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "So close! Remember that the first step in solving an equation would be the inverse of the last step. The last step is subtracting 3 so what will be the first step when solving?",
+        "B": "Not quite. 6 ÷ 2 = 3 and 3 - 3 = 0. so x = 0. But if we put 0 into the equation we get 0 ÷ 2 = 0 and 0 + 3 = 3 NOT 6. Remember we use inverses to solve equations.",
+        "C": "The inverse operation for -3 is +3, and the inverse operation for ÷ 2 is ×2.",
+        "D": "So close! You have correctly identified one step you would need to do to solve this equation. Remember to solve equations we use inverses. Which of these two steps is not an inverse of one of those in the function?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78921,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/204585d8-ee13-48ed-a5c7-36340da6bd23.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "So close! Remember that the first step in solving an equation would be the inverse of the last step. The last step is adding 4 so what will be the first step when solving?",
+        "B": "Not quite. I think you have just copied down the two operations given in the function machine. Remember to use inverse operations when solving equations.",
+        "C": "So close! You have correctly identified one step you would need to do to solve this equation. Remember to solve equations we use inverses. Which of these two steps is not an inverse of one of those in the function?",
+        "D": "We perform the inverse operations of +4 and ÷3, which are -4 and ×3."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 77145,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a2fdeb95-5fcb-4ca2-bfe5-9a911f416c1a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To undo the step +5 we must subtract 5 from both sides. -9 subtract 5 becomes -14 so this is the incorrect step in solving the equation.",
+        "B": "Not quite. To solve the equation we need to make sure that all the unknowns, the p's, are on the same side of the equation. This is done by subtracting 2p from both sides. This has been done correctly here. If inverses have been correctly applied in this step, which step has not correctly applied an inverse?",
+        "C": "Not quite. To solve the equation we must divide both sides by 2, as we know 2 x p = -4. This has been done correctly here. If inverses have been correctly applied in this step, which step has not correctly applied an inverse?",
+        "D": "Not quite. One of these steps is incorrect. You can check this by substituting p = -2 into both sides of the equation and seeing that 4p + 5 does not equal 2p - 9. To help, remember we use inverses to solve equations. Which step has not correctly applied an inverse operation?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78922,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d3e6e897-5296-472e-929c-eada2b59677d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. To solve the equation we need to make sure that all the numbers are on the same side of the equation. This is done by subtracting 3 from both sides. This has been done correctly here as -5 - 3 = - 8. If inverses have been correctly applied in this step, which step has not correctly applied an inverse?",
+        "B": "To solve this equation all the unknowns, the p's, should be on the same side of the equation. To do this we must subtract p from both sides. In this working p has been subtracted from the right hand side, but added to the left hand side, which is the incorrect step.",
+        "C": "Not quite. To solve the equation we must divide both sides by 4, as we know 4 x p = -8. This has been done correctly here. If inverses have been correctly applied in this step, which step has not correctly applied an inverse?",
+        "D": "Not quite. One of these steps is incorrect. You can check this by substituting p = -2 into both sides of the equation and seeing that 3p + 3 does not equal p - 5. To help, remember we use inverses to solve equations. Which step has not correctly applied an inverse operation?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 77146,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2ab111c2-2849-4b7f-9500-fa785d5ca6f6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. This working has added an x to the left, but taken one from the right. It has also subtracted 3 from the left, but added 3 to the right. Remember to solve an equation we must use inverses and do the same thing to both sides. To get rid of a +3 we must -3 from both sides.",
+        "B": "Not quite. In the first step we have an equals sign, not an addition sign. This tells us 2x + 3 = x + 4 NOT 3x = 7. To solve such an equation we need to use inverses. Which step uses inverses correctly?",
+        "C": "Not quite. Adding an x to the left hand side will not remove the x from the right hand side to leave 3x = 1. Remember you must apply an operation to both sides of the equation. Adding an x to both sides will leave the equation 3x = 2x + 1. What inverse operation will we need to apply to get all the unknowns on one side?",
+        "D": "We begin with 2x + 3 = x + 4, subtracting x from both sides we get x + 3 = 4, subtracting 3 from both sides we get x = 1."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78923,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/54508dc6-b3e7-4d88-9d13-c7ca29dcb09b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We begin with x + 4 = 2x + 2, subtracting x from both sides we get 4 = x + 2, subtracting 2 from both sides we get 2 = x which is the same as x = 2.",
+        "B": "Not quite. In the first step we have an equals sign, not an addition sign. This tells us x + 4 =2x + 2 NOT 3x = 6. To solve such an equation we need to use inverses. Which step uses inverses correctly?",
+        "C": "Not quite. Adding 2x to the left hand side will not remove the 2x from the right hand side. Remember you must apply an operation to both sides of the equation. Adding an x to both sides will leave the equation 2x + 2 = 3x. What inverse operation will we need to apply to get all the unknowns on one side?",
+        "D": "Not quite. This working has added 2x to the left, but taken 2x from the right. It has also subtracted 4 from the left, but added 4 to the right. Remember to solve an equation we must use inverses and do the same to each side. To get rid of a +2 we must -2 from both sides."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 106677,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/de3d4ac8-696d-4fd4-95b2-e5772f2bd0cf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If d=0 we would have 0-3 = 0-9, but these are not equal to each other.",
+        "B": "If d=12 we would have 144-3 = 144-9, but these are not equal to each other.",
+        "C": "If d=-12 we would have -144-3 = -144-9, but these are not equal to each other.",
+        "D": "In order to gather like terms, we must subtract 12𝑑 from both sides. This gives an unusual result of −3 = −9, which is obviously impossible, and so we can conclude that this equation has no solutions."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 120910,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2ec95ec7-fd0f-4ab0-99bb-e6689f6c9cf7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If d=-2.5 we would have -5 - 5 = -5 - 10, but these are not equal to each other.",
+        "B": "If d=2.5 we would have 5 - 5 = 5 - 10, but these are not equal to each other.",
+        "C": "If d=0 we would have 0 - 5 = 0 - 10, but these are not equal to each other.",
+        "D": "In order to gather like terms, we must subtract 2𝑑 from both sides. This gives an unusual result of −5 = −10, which is obviously impossible, and so we can conclude that this equation has no solutions."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,147 @@
+{
+  "shortcode": "vxb",
+  "name": "Use random sampling to draw inferences about a population",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 216,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Understand how random sampling works",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use random samples to draw inferences about a population",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 155270,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/24b46d4c-a911-4ab0-bc64-6d8d02a36e63.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Amy got 16 votes in our sample, but Carly only got 10. This means we would expect Carly to lose the election.",
+        "B": "Ben scored the most votes within our sample. Because we used a random sample we can assume that this reflects the opinions of the whole school population. Therefore we would expect Ben to win.",
+        "C": "Not quite. Think carefully about the language used here. We have asked a sample of students so we can only make a prediction, not know for definite who will win or lose.",
+        "D": "Not quite. Ben received 24 votes in our sample, but that was not the real election, it is just a tool we can use to predict how the students will vote. We do not know that he will definitely win or that he will get exactly 24 votes. What can we predict instead?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 155317,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/250d83ca-ab0c-4a5e-855d-286dccafd3c0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Michael got 16 votes in our sample, but Nate only got 12. This means we would expect Nate to lose the election.",
+        "B": "Not quite. Olivia received 32 votes in our sample, but that was not the real election, it is just a tool we can use to predict how the students will vote. We do not know that she will get exactly 32 votes in the real election. What can we predict instead?",
+        "C": "Not quite. Think carefully about the language used here. We have asked a sample of students so we can only make a prediction, not know for definite who will win or lose.",
+        "D": "Olivia scored the most votes within our sample. Because we used a random sample we can assume that this reflects the opinions of the whole school population. Therefore we would expect Olivia to win."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 155313,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fbd910c9-7b57-4bda-9d7b-0ec95ae1397e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is not a random sample as not every member of the town has an equal chance of being chosen. In which option does everyone have an equal chance of being chosen?",
+        "B": "This is not likely to represent the town's population as the sample is biased towards people who are already members at the sports centre. In which option does everyone from the town have an equal chance of being chosen?",
+        "C": "This is opportunistic sampling, it is not a random sample as not everyone in the town had an equal chance of being chosen. In which option does everyone have an equal chance of being chosen?",
+        "D": "Olivia needs a random sample, so each member of the population must have an equal chance of getting chosen. Therefore using the electoral register is best as it contains everyone in the town."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 155314,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a1679b80-e02c-422f-a598-39af09e269df.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is not a random sample as not everyone in the school has an equal chance of being chosen, for example they may not have seen the poster, they may not have their phone on them, or it might only attract those willing to help. In which option does everyone have an equal chance of being chosen?",
+        "B": "This is not likely to represent the student population as the sample is biased towards those of the same age group. In which option does everyone from the school have an equal chance of being chosen?",
+        "C": "Matt needs a random sample, so each member of the population must have an equal chance of getting chosen. Therefore using the whole school student list is best as it contains everyone in the school",
+        "D": "This is not likely to represent the student population as the sample is biased towards those who enjoy football. In which option does everyone from the school have an equal chance of being chosen?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 155315,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c0e28e12-dfc5-40a1-b3d2-aaa0df700351.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is not likely to represent the student population as the sample is biased towards those of the same age group. In which option does everyone from the school have an equal chance of being chosen?",
+        "B": "A sample size of 5 is quite small and might not reflect the whole student population very accurately. The greater the sample size the more accurate the prediction will be.",
+        "C": "Using a random sample means every student has an equal chance of being chosen. This means it avoids any bias and is most likely to reflect the opinions of the whole school population",
+        "D": "This is not likely to represent the student population as the sample is biased towards a certain group of friends who are likely to share similar opinions. In which option does everyone from the school have an equal chance of being chosen?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 155316,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f10c720a-4e8b-4213-bdc9-a87347934a01.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is not likely to represent the student population as the sample is biased towards those who happen to be in the gymnasium at that time, maybe those with a sporting interest. In which option does everyone from the school have an equal chance of being chosen?",
+        "B": "A teacher's opinion of whether they are likely to win will not necessarily be accurate. It is better to gather some opinions from students in the school as they will be the ones voting",
+        "C": "A sample size of 6 is quite small and might not reflect the whole student population very accurately. The greater the sample size the more accurate the prediction will be.",
+        "D": "Using a random sample means every student has an equal chance of being chosen. This means it avoids any bias and is most likely to reflect the opinions of the whole school population"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 155318,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9603fda9-1b53-4f89-b9c2-61761da2f765.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. 10% of the field has been sampled, but that does not tell us about the proportion covered by weeds. What was the most common percentage of weeds in the samples?",
+        "B": "The most common percentage of weeds in the samples was 20%. Because the samples were randomly generated it means they should accurately represent the population, so we would also expect 20% of the total field to be covered in weeds",
+        "C": "Not quite. There are 30 samples, but that does not mean that 30% of the field is covered by weeds. What was the most common percentage of weeds in the samples?",
+        "D": "Because the samples were randomly generated it means that they should accurately represent the whole population (i.e. the entire field) so we can use the results from our samples to make a prediction. What was the most common percentage of weeds in the samples?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 155319,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/34685936-07ce-4dc3-8a24-412e5b2a8fdb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. The samples are 0.2% the size of the whole jar, but that doesn't tell us about the proportion of red sweets in the jar. What was the most common percentage of red sweets in the samples?",
+        "B": "Not quite. There are 10 sweets in each sample, but that does not mean that 10% of the sweets will be red. What was the most common percentage of red sweets in the samples?",
+        "C": "The most common percentage of red sweets in the samples was 60%. Because Tanya used random sampling it means they should accurately represent the population, so we would also expect 60% of the total jar to be red sweets",
+        "D": "Because Tanya used random sampling it means that the samples should accurately represent the contents of the whole jar so we can use the results from our samples to make a prediction. What was the most common percentage of red sweets in the samples?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 155323,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d9f9c95a-99af-4783-bf24-1aa64b0438fe.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This was the number of people in the sample who liked each type of pizza, but there were only 15 people in the sample and there are 90 guests coming to the party. How could we scale this up?",
+        "B": "I think you might have estimated based on the pizza's popularity. But we can be more specific. 4/15 people liked Margarita pizzas in the sample. How can we scale this up to find out how many of the 90 guests we'd expect to like Margaritas?",
+        "C": "Because Brett used a random sample it means that the views of the sample should reflect the views of the population. In the sample 4/15 liked Margaritas so we can do 4/15 x 90 to work out that we need to buy 24 Margarita pizzas for the party. Similarly 9/15 x 90 tells us we need 54 Pepperoni pizzas and 2/15 x 90 tells us we need 12 Hawaiian pizzas.",
+        "D": "You have seen that Pepperoni was the most popular choice in the sample, but not everyone would be happy with this. Try to think about the proportion of the sample that liked each type and then scale that up for the 90 guests"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 155322,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7aed5b46-ddff-4b62-8079-87423d188bb4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This was the number of people in the sample who liked each flavour of crisp, but there were only 20 people in the sample and there are 120 guests coming to the party. How could we scale this up?",
+        "B": "You've chosen to buy equal numbers of each flavour, but from our sample we can see that some flavours were more popular than others. How could we scale up the fact that 3 out of 20 people in our sample liked Ready Salted best?",
+        "C": "You've kept the flavours in the same proportions as the bar chart which is great, but yours add up to 200 crisps in total. Tegan only wants to buy 120 packets. How could you scale up the proportions so they add to 120 exactly?",
+        "D": "Because Tegan used a random sample it means that the views of the sample should reflect the views of the population. In the sample 3/20 liked Ready Salted so we can do 3/20 x 120 to work out that we need to buy 18 packets of Ready Salted for the party. Similarly 11/20 x 120 tells us we need 66 packets of Cheese and Onion and 6/20 x 120 tells us we need 36 packets of Barbecue."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

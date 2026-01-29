@@ -1,0 +1,153 @@
+{
+  "shortcode": "vzz",
+  "name": "Solve linear simultaneous equations 1",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 67,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Manipulate one equation so that it is in a form to be added or subtracted",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Manipulate both equations so that they are in a form to be added or subtracted",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Recognise whether you need to add or subtract linear equations in order to eliminate a variable",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 106883,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ece0b19b-2f7d-4698-a027-9f385e30de70.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have made one mistake. Look at the signs of the variable you are trying to eliminate, and consider the acronym STOP - Same sign, we Takeaway. Opposite sign, we Plus.",
+        "B": "You have made two mistakes. Look at the signs of the variable you are trying to eliminate, and consider the acronym STOP - Same sign, we Takeaway. Opposite sign, we Plus.",
+        "C": "You have made one mistake. Look at the signs of the variable you are trying to eliminate, and consider the acronym STOP - Same sign, we Takeaway. Opposite sign, we Plus.",
+        "D": "For both pairs, we are eliminating q. The terms, +2q and +2q, and then -2q and -2q, have the same signs, so we must subtract them."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 106894,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d0de36d-de63-46ec-b19e-6c2bde84b9fe.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have made one mistake. Look at the signs of the variable you are trying to eliminate, and consider the acronym STOP - Same sign, we Takeaway. Opposite sign, we Plus.",
+        "B": "For both pairs, we are eliminating q. The two terms, -4q and +4q, have opposite signs, so we must add them.",
+        "C": "You have made one mistake. Look at the signs of the variable you are trying to eliminate, and consider the acronym STOP - Same sign, we Takeaway. Opposite sign, we Plus.",
+        "D": "You have made two mistakes. Look at the signs of the variable you are trying to eliminate, and consider the acronym STOP - Same sign, we Takeaway. Opposite sign, we Plus."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 106884,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9f33bc93-f7ed-426e-94d5-daac4fa47c61.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have made one mistake. Look at the signs of the variable you are trying to eliminate, and consider the acronym STOP - Same sign, we Takeaway. Opposite sign, we Plus.",
+        "B": "For both pairs, we are eliminating q. The terms, +2q and -2q, and then -2q and +2q, have different signs, so we must add them.",
+        "C": "You have made one mistake. Look at the signs of the variable you are trying to eliminate, and consider the acronym STOP - Same sign, we Takeaway. Opposite sign, we Plus.",
+        "D": "You have made two mistakes. Look at the signs of the variable you are trying to eliminate, and consider the acronym STOP - Same sign, we Takeaway. Opposite sign, we Plus."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 106895,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d1a790f6-8e08-4cb4-ae0a-0b6c56e91ea3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "For pair 1, the two terms of the variable we are trying to eliminate, +4q and -4q, have opposite signs, so we would add. For pair 2, the two terms of the variable we are trying to eliminate, -4q and -4q, have the same sign, so we would add.",
+        "B": "You have made one mistake. Look at the signs of the variable you are trying to eliminate, and consider the acronym STOP - Same sign, we Takeaway. Opposite sign, we Plus.",
+        "C": "You have made two mistakes. Look at the signs of the variable you are trying to eliminate, and consider the acronym STOP - Same sign, we Takeaway. Opposite sign, we Plus.",
+        "D": "You have made one mistake. Look at the signs of the variable you are trying to eliminate, and consider the acronym STOP - Same sign, we Takeaway. Opposite sign, we Plus."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 106885,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3bc33be0-69bb-47d2-bf1e-af55b4a74d5b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have made one mistake. Look at the signs of the variable you are trying to eliminate, and consider the acronym STOP - Same sign, we Takeaway. Opposite sign, we Plus.",
+        "B": "For both pairs, we are eliminating q. The two terms, -2q and +2q, have opposite signs, so we would add them.",
+        "C": "You have made one mistake. Look at the signs of the variable you are trying to eliminate, and consider the acronym STOP - Same sign, we Takeaway. Opposite sign, we Plus.",
+        "D": "You have made two mistakes. Look at the signs of the variable you are trying to eliminate, and consider the acronym STOP - Same sign, we Takeaway. Opposite sign, we Plus."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 106896,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/369a6d01-8f92-4a59-84fb-369818f6b77b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have made two mistakes. Look at the signs of the variable you are trying to eliminate, and consider the acronym STOP - Same sign, we Takeaway. Opposite sign, we Plus.",
+        "B": "You have made one mistake. Look at the signs of the variable you are trying to eliminate, and consider the acronym STOP - Same sign, we Takeaway. Opposite sign, we Plus.",
+        "C": "For both pairs, we are eliminating q. For Pair 1, the q terms have the same sign, so we would subtract. For Pair 2, the q terms have opposite signs, so we would add.",
+        "D": "You have made one mistake. Look at the signs of the variable you are trying to eliminate, and consider the acronym STOP - Same sign, we Takeaway. Opposite sign, we Plus."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 106886,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/927259ca-6c9f-4756-8aa5-8caf4bcee284.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. To keep the equation balanced 2n will need to be added to both sides of equation 1. This will give us 3m + n = 30 + 2n. Comparing this equation to equation 2 shows us that the coefficient in front of the n's is different in both equations, meaning we will not be able to eliminate n. Which transformation will ensure that the coefficient of n is the same in both equations?",
+        "B": "Not quite. To keep the equation balanced 4n will need to be added to both sides of equation 1. This will give us 3m + 3n = 30 + 4n. Subtracting equation 2 from this equation will leave us with m = 8 + 4n, which has not eliminated the n's. Which transformation will change the coefficient AND allow you to eliminate the variable n?",
+        "C": "Multiplying equation 1 by 3 gives 9m - 3n = 90. Isaac will now be able to add this equation to equation 2 to eliminate the n's as -3n + 3n = 0",
+        "D": "Not quite. The aim of transforming one of the equations is to make the coefficient in front of one of the variables the same in both equations. By multiplying equation 2 by 3 Isaac will end up with 6m + 9n = 66, which does not match the coefficients of the variables in equation 1. Which of the other transformations will ensure that the coefficient in front of one of the variables is the same for both equations?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 106897,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/04e57c84-4df0-46fd-b8c7-440f4707b29f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Multiplying equation 1 by 4 gives 12a - 8b = 76. Isaac will now be able to add this equation to equation 2 to eliminate the b's as -8b + 8b = 0",
+        "B": "Not quite. The aim of transforming one of the equations is to make the coefficient in front of one of the variables the same in both equations. By multiplying equation 2 by 4 Isaac will end up with 20a + 32b = 84, which does not match the coefficients of the variables in equation 1. Which of the other transformations will ensure that the coefficient in front of one of the variables is the same for both equations?",
+        "C": "Not quite. To keep the equation balanced 6b will need to be added to both sides of equation 1. This will give us 3a + 4b = 19 + 6b. Comparing this equation to equation 2 shows us that the coefficient in front of the b's is different in both equations, meaning we will not be able to eliminate b. Which transformation will ensure that the coefficient of b is the same in both equations?",
+        "D": "Not quite. To keep the equation balanced 10b will need to be added to both sides of equation 1. This will give us 3a + 8b = 19 + 10b. Subtracting this equation from equation 2 will leave us with 2a = 2 + 10b, which has not eliminated the b's. Which transformation will change the coefficient AND allow you to eliminate the variable b?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 106887,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/650e42a0-a1b9-418a-a086-7413000bff08.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. The aim of transforming the equations is to make the coefficient in front of m the same for both equations. Multiplying equation 1 by 3 gives 9m - 3n = 90 and multiplying equation 2 by 2 gives 4m + 6n = 44. 9m is not the same as 4m, therefore we will not be able to eliminate m. Which of the other transformations will ensure that the coefficients in front of the m is the same for both equations?",
+        "B": "To eliminate the variable m we need the coefficient of m to be the same in both equations. Multiplying equation 1 by 2 gives 6m - 2n = 60. Multiplying equation 2 by 3 gives 6m + 9n = 66. As both coefficients are now +6 we can subtract one of the equations from the other to eliminate the variable m.",
+        "C": "Not quite. To keep the equation balanced m will need to be added to both sides of equation 2. This will give us 3m + 3n = 22 + m. Subtracting this from equation 1 leaves us with -4n = 8 - m, which has not eliminated the m's. Which of the transformations will change the coefficients AND allow you to eliminate the variable m?",
+        "D": "Not quite. The aim of transforming the equations is to make the coefficient in front of m the same for both equations. Multiplying equation 1 by 6 gives 18m - 6n = 180 and multiplying equation 2 by 6 gives 12m + 18n = 132. 18m is not the same as 12m, therefore we will not be able to eliminate m. Which of the other transformations will ensure that the coefficients in front of the m is the same for both equations?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 106898,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/128065f8-e52e-4b70-8574-55d6fc7d27db.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. If we were to add 2a, to keep the equation balanced 2a will need to be added to both sides of equation 1. This will give us 5a + 2b = 19 + 2a. Subtracting this from equation 2 leaves us with 10b = 2 - 2a, which has not eliminated the a's. Which of the transformations will change the coefficients AND allow you to eliminate the variable a?",
+        "B": "Not quite. The aim of transforming the equations is to make the coefficient in front of a the same for both equations. Multiplying equation 1 by 15 gives 45a - 30b = 285 and multiplying equation 2 by 15 gives 75a + 120b = 315. 45a is not the same as 75a, therefore we will not be able to eliminate a. Which of the other transformations will ensure that the coefficients in front of the a is the same for both equations?",
+        "C": "Not quite. The aim of transforming the equations is to make the coefficient in front of a the same for both equations. Multiplying equation 1 by 3 gives 9a - 6b = 57 and multiplying equation 2 by 5 gives 25a + 40b = 105. 9a is not the same as 25a, therefore we will not be able to eliminate a. Which of the other transformations will ensure that the coefficients in front of the a is the same for both equations?",
+        "D": "To eliminate the variable a we need the coefficient of a to be the same in both equations. Multiplying equation 1 by 5 gives 15a - 10b = 95. Multiplying equation 2 by 3 gives 15a + 40b = 63. As both coefficients are now +15 we can subtract one of the equations from the other to eliminate the variable a."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,165 @@
+{
+  "shortcode": "vs5",
+  "name": "Positive and Negative Numbers - Part 1",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 54,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Order negative decimals with the same number of digits",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Carry out missing number subtraction problems involving negative integers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Perform calculations with temperature when given in the same units",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find the absolute value of a number",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Count backwards through zero starting from a positive integer",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 89403,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9fa419da-02de-4972-95cd-605a0acf5ab7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It takes 1 to get to floor 3, 2 to get to 2, 3 to get to 1, 4 to get to 0, 5 to get to -1,",
+        "B": "Read carefully what floor the gym is on.",
+        "C": "Does John need to travel at all to remain on floor 4? How many does it take to get to floor 3? 2? ...",
+        "D": "There are 4 floors in BETWEEN John and the gym, but how many jumps is this?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89421,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9993b681-d358-4216-bc3a-e19e3340b016.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Does Asha need to travel at all to remain on floor 7? How many does it take to get to floor 6? 5? ...",
+        "B": "Read carefully what floor the car park is on.",
+        "C": "Asha needs to go down 7 floors to get to floor 0, then she has an additional 2 floors to go down in order to get to floor -2.",
+        "D": "Count the number of \"jumps\" Asha needs to take."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89405,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/23870ce1-725b-4f9c-9180-432dd7b946f6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Look carefully at the signs of the numbers, is -7 the same as 7?",
+        "B": "You've worked out the difference correctly, but which one is colder?",
+        "C": "Look carefully at the signs of the numbers, is 5 the same as -5?",
+        "D": "5 is 5 above zero, and -7 is 7 below zero, so the difference between them is 12."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89423,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bbfb7f62-bf12-4cb8-b3c0-3a826ea7f692.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Look carefully at the signs of the numbers, is 2 the same as -2?",
+        "B": "-5 is 5 below zero, and 2 is 2 above zero, so the difference between them is 7.",
+        "C": "Look carefully at the signs of the numbers, is 5 the same as -5?",
+        "D": "You've worked out the difference correctly, but which one is colder?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89407,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6593e1d4-d5eb-41d4-9a31-337f78480bac.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "-8.3m means 8.3 metres below the surface. Is this the deepest?",
+        "B": "\"Deepest\" means furthest away from the surface. I think you have done the closest to the surface first.",
+        "C": "-9 is the lowest, then -8.3, then -7 is the closest to the surface.",
+        "D": "The starfish is only 7m below the surface. You need to put the deepest animal first."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89425,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b6010f5f-46c3-4858-aee7-4195314ea935.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "-2.6m means 2.6 metres below the surface. Which creature is deeper than this?",
+        "B": "The Ling is only 1.5m below sea level. Which creature is furthest from the surface?",
+        "C": "\"Deepest\" means furthest away from the surface (0m). I think you started with the creature closest to the surface.",
+        "D": "-6 is the lowest, then -2.6, then -1.5 is the closest to the surface."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89410,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/123029b4-f387-4498-a891-1986c36adc9a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember absolute value looks at how large a number is, it does not take the sign of the number into account.",
+        "B": "The absolute value of a number is how large the number is irrespective of its sign. Therefore the absolute value of -3 is 3.",
+        "C": "Not quite. Remember absolute value looks at how large a number is, it does not take the sign of the number into account.",
+        "D": "Not quite. I think you have squared three. The absolute value looks at how large a number is, it does not take the sign of the number into account."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89428,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c91a6891-554e-49c4-8c72-077a3b65277c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember absolute value looks at how large a number is, it does not take the sign of the number into account.",
+        "B": "Not quite. I think you have square rooted 16. Remember absolute value looks at how large a number is, it does not take the sign of the number into account.",
+        "C": "The absolute value of a number is how large the number is irrespective of its sign. Therefore the absolute value of -16 is 16.",
+        "D": "Not quite. Remember absolute value looks at how large a number is, it does not take the sign of the number into account."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 154242,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/151e568e-b6b1-4605-be0a-ba81ddb8f26e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We have to work out what we need to subtract to get from -4 to 3. Because we need to move up the number line the only way to do this with a subtraction is to subtract a negative. -4 - -7 = 3 because subtracting -7 is the same as adding +7",
+        "B": "Not quite. Imagine a numberline. How far do I need to move up the numberline to get from -4 to +3? How can I do this using a subtraction?",
+        "C": "Nearly! If I was starting at -4 and subtracting 7 I would end up at -11. How can we move further up the numberline while still using subtraction?",
+        "D": "Not quite. Imagine a numberline. How far do I need to move up the numberline to get from -4 to +3? How can I do this using a subtraction?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 154241,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f0fe2513-cb50-4c6b-a9d9-a5cc56791895.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Imagine a numberline. How far do I need to move up the numberline to get from -3 to +5? How can I do this using a subtraction?",
+        "B": "Not quite. Imagine a numberline. How far do I need to move up the numberline to get from -3 to +5? How can I do this using a subtraction?",
+        "C": "Nearly! If I was starting at -3 and subtracting 8 I would end up at -11. How can we move further up the numberline while still using subtraction?",
+        "D": "We have to work out what we need to subtract to get from -3 to 5. Because we need to move up the number line the only way to do this with a subtraction is to subtract a negative. -3 - -8 = 5 because subtracting -8 is the same as adding +8"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

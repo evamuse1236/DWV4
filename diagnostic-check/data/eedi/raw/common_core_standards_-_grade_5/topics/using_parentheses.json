@@ -1,0 +1,147 @@
+{
+  "shortcode": "bihz",
+  "name": "Using parentheses",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 1,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Use the order of operations to carry out calculations involving brackets",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Insert brackets to make a calculation correct",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 75937,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/33bb60be-d172-484b-b164-9cb5869b8372.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "With order of operations brackets are done first, then division is done before subtraction. This would give us 16 - 10 ÷ 2 = 16 - 5 = 11 NOT 7.",
+        "B": "With order of operations brackets are done first, then division is done before subtraction. This would give us 10 + 4 ÷ 2 = 10 + 2 = 12 NOT 7.",
+        "C": "With order of operations brackets are done first, then division is done before subtraction. Putting the brackets around the division, will not change the order. 16 - 6 + (4 ÷ 2) = 16 - 6 + 2 = 12 NOT 7",
+        "D": "Inside the bracket we work left to right, so we get 14 ÷ 2 which is 7"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 76085,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0acc8250-8ddc-4a66-90b3-3c31540208cb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "With order of operations brackets are done first, then division is done before subtraction. We would have 22 - 18 ÷ 4 = 22 - 4.5 = 17.5",
+        "B": "Did adding in brackets here change the order at all?",
+        "C": "Inside the bracket we work left to right, so we get 20 ÷ 4 which is 5",
+        "D": "Did adding in brackets here change the order at all?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89314,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5323eb94-8311-44c8-8675-b6685f896574.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom is correct because the inclusion of brackets means that 3 ＋ 6 is performed before the multiplication. For Katie's 3 ＋ 6 ✕ 2, the multiplication takes priority over addition, so her answer is 15.",
+        "B": "You may have forgotten your order of operations. Multiplication must be carried out before addition, unless brackets show otherwise.",
+        "C": "You may have forgotten your order of operations. Multiplication must be carried out before addition, unless brackets show otherwise.",
+        "D": "You may have forgotten your order of operations. Multiplication must be carried out before addition, unless brackets show otherwise."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89326,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8c64f27f-ac74-4db1-866b-ad5919d5d24b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You may have forgotten your order of operations. Multiplication must be carried out before addition, unless brackets show otherwise.",
+        "B": "You may have forgotten your order of operations. Multiplication must be carried out before addition, unless brackets show otherwise.",
+        "C": "You may have forgotten your order of operations. Multiplication must be carried out before addition, unless brackets show otherwise.",
+        "D": "Jo is correct because the inclusion of brackets means that 5 ＋ 8 is performed before the multiplication. For Paul's 5 ＋ 8 ✕ 3, the multiplication takes priority over addition, so his answer is 29."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131582,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/12650a37-f12e-4519-b641-b88d2d2a0754.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you forgot to do the brackets first. Work out what is inside the brackets and then continue with B I DM AS",
+        "B": "I think you did the addition first, and then divided by what was in the bracket. Remember to use B I DM AS (order of operations)",
+        "C": "I think you did the calculation from left to right. Remember to use B I DM AS (order of operations)",
+        "D": "Using our order of operations we do the brackets first. That leaves 3 + 6 ÷ 3. Then we do division to get 3 + 2 = 5"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133775,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/de748aa4-0812-4d6e-b9b5-5837b8312b03.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you did the calculation from left to right. Remember to use B I DM AS (order of operations)",
+        "B": "Using our order of operations we do the brackets first. That leaves 4 + 12 ÷ 4. Then we do division to get 4 + 3 = 7",
+        "C": "I think you forgot to do the brackets first. Work out what is inside the brackets and then continue with B I DM AS",
+        "D": "I think you did the addition first, and then divided by what was in the bracket. Remember to use B I DM AS (order of operations)"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 155834,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/84702f27-2e3e-42e4-a32c-d65e958ecbd9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have added 5 to 8, rather than subtracted.",
+        "B": "I think you have applied the order of operations incorrectly. We can use the acronym BIDMAS to remember which order to carry out operations in. Would we calculate the brackets or multiply by 7 first?",
+        "C": "I think you have assumed that you could write the 7 and 8 together to make 78. The 7 at the front of the bracket actually means that we are multiplying the value of the bracket by 7.",
+        "D": "Using BIDMAS to remember our order of operations, we would calculate the bracket first before multiplying by 7. Therefore, 7(8 - 5) = 7 x 3 = 21"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 155852,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b6b580de-7ce1-4d77-b8d9-e1632049afae.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have added 3 to 9, rather than subtracted.",
+        "B": "Using BIDMAS to remember our order of operations, we would calculate the bracket first before multiplying by 10. Therefore, 10(9 - 3) = 10 x 6 = 60.",
+        "C": "I think you have assumed that you could write the 10 and 9 together to make 109. The 10 in front of the bracket actually means that we are multiplying the value of the bracket by 10.",
+        "D": "I think you have applied the order of operations incorrectly. We can use the acronym BIDMAS to remember which order to carry out operations in. Would we calculate the brackets or multiply by 10 first?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 155836,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/55a742b6-7f15-4d3f-905e-d2b00e24fe41.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have assumed that because there are two negative signs, we would add the bracket on. Is the value of the bracket positive or negative? Use the usual rules to subtract that value from 10.",
+        "B": "I think you have assumed that because there are two negative signs, we would add the bracket on, but also calculated the bracket incorrectly. Is the value of the bracket positive or negative? Use the usual rules to subtract that value from 10.",
+        "C": "I think you have applied the order of operations incorrectly. We can use the acronym BIDMAS to remember which order to carry out operations in. Would we calculate the brackets or subtract from 10 first?",
+        "D": "Using BIDMAS to remember the order of operations, we would calculate the bracket before subtracting our answer from 10. Therefore, 10 - (5 - 2) = 10 - 3 = 7"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 155854,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6ad07922-ba15-48c4-bec4-208574f08b67.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have assumed that because there are two negative signs, we would add the bracket on. Is the value of the bracket positive or negative? Use the usual rules to subtract that value from 12.",
+        "B": "I think you have applied the order of operations incorrectly. We can use the acronym BIDMAS to remember which order to carry out operations in. Would we calculate the bracket or subtract from 12 first?",
+        "C": "Using BIDMAS to remember the order of operations, we would calculate the bracket before subtracting our answer from 12. Therefore, 12 - (7 - 3) = 12 - 4 = 8",
+        "D": "I think you have applied the order of operations incorrectly. We can use the acronym BIDMAS to remember which order to carry out operations in. Would we calculate the brackets or subtract from 12 first?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

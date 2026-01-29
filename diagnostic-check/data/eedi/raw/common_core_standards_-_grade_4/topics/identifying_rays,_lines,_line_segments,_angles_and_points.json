@@ -1,0 +1,141 @@
+{
+  "shortcode": "bihq",
+  "name": "Identifying rays, lines, line segments, angles and points",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 87,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify rays, lines, line segments, angles and points",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 157976,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/09e69451-9f70-4119-a3b7-4f39af8b5906.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This has an end point so is not a ray. What has defined start and end points from the things listed?",
+        "B": "We don't have a continuous line, there is a start and end point to the line... So what must it be?",
+        "C": "The diagram shows a line segment as it's more than one point, we don't have a continuous line and there is a start point and an end point so it's not a ray",
+        "D": "There are two connected points in the diagram, not just one... What must it be if it has a start and end point?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158143,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c56077d4-e72e-4646-bafe-e0dcef344be0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This has an end point so is not a ray. What has defined start and end points from the things listed?",
+        "B": "We don't have a continuous line, there is a start and end point to the line... So what must it be?",
+        "C": "The diagram shows a line segment as it's more than one point, we don't have a continuous line and there is a start point and an end point so it's not a ray",
+        "D": "There are two connected points in the diagram, not just one... What must it be if it has a start and end point?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 157977,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/744cc551-e7d3-42c4-ba5b-e6a6e4f9385f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A ray has a start point but no end point where as this doesn't have a start point or an end point, it's continuous, so what must it be?",
+        "B": "The diagram shows a line as there is no start point or end point so it is not a line segment or a ray, it is continuous",
+        "C": "A line segment has an end and start point whereas this diagram shows something continuous so what must it be?!",
+        "D": "The diagram shows more than a point... It shows something continuous with no start or end points so what must it be from the options listed?!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158144,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4e1d8499-e3fe-40ed-a7d3-9439504e95fe.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A ray has a start point but no end point where as this doesn't have a start point or an end point, it's continuous, so what must it be?",
+        "B": "The diagram shows a line as there is no start point or end point so it is not a line segment or a ray, it is a continuous line.",
+        "C": "A line segment has an end and start point whereas this diagram shows something continuous so what must it be?!",
+        "D": "The diagram shows more than a point... It shows something continuous with no start or end points so what must it be from the options listed?!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 157978,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bb17529f-0637-4709-a365-8e74778ed0de.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The diagram shows a ray as it has a start point but no end point",
+        "B": "A line is continuous with no start or end points, indicated by an arrow. This diagram has a start point but no endpoint so what must it be?!",
+        "C": "A line segment has both a start and end point. This diagram has a start point but no endpoint so what must it be?!",
+        "D": "The diagram shows more than a point... The things depicted has a start point but no endpoint so what must it be?!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158145,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea0515bb-74b7-42a3-a1fb-c81c5fb1095a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The diagram shows a ray as it has a start point but no end point.",
+        "B": "A line is continuous with no start or end points, indicated by an arrow. This diagram has a start point but no endpoint so what must it be?!",
+        "C": "A line segment has both a start and end point. This diagram has a start point but no endpoint so what must it be?!",
+        "D": "The diagram shows more than a point... The things depicted has a start point but no endpoint so what must it be?!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 157979,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d4d84fa5-296d-42b7-9a7d-6f5730d45ded.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The diagram does show two rays with the same start point but not just 'a ray'... Look at the diagram again, what have the two rays formed?",
+        "B": "We can tell the diagram is not a line segment as there is no end point and it is not just 'a point' as there is more. We have two rays with the same start point so we don't have 'a ray' and these two rays form an angle which is labelled with an arc. Therefore the diagram is of an angle!",
+        "C": "A line segment has a start point and an endpoint, in the diagram we have no end points. Look at what has been formed and labelled with the arc...",
+        "D": "In the diagram we have more than a point... Look at the arc, what has been formed?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158146,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ddbea1fe-4d98-4a09-8594-b5903e82a189.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The diagram does show two rays with the same start point but not just 'a ray'... Look at the diagram again, what have the two rays formed?",
+        "B": "We can tell the diagram is not a line segment as there is no end point and it is not just 'a point' as there is more. We have two rays with the same start point so we don't have 'a ray' and these two rays form an angle which is labelled with an arc. Therefore the diagram is of an angle!",
+        "C": "A line segment has a start point and an endpoint, in the diagram we have no end points. Look at what has been formed and labelled with the arc...",
+        "D": "In the diagram we have more than a point... Look at the arc, what has been formed?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 157980,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4b9bbf7b-8213-4d45-a92c-1be061945489.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A ray has a fixed start point but no endpoint so this is what the question is describing!",
+        "B": "A line has no start point or endpoint. Think about what has a start point but no end point from the options listed...",
+        "C": "A line segment has a fixed start point AND an endpoint. Think about what has a start point but NO ENDPOINT from the options listed...",
+        "D": "Draw on a piece of paper a fixed start point and then to show there is no endpoint draw a line with an arrow... What have you drawn?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158147,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eeec2b57-fff7-4539-801d-445ab348d5c2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A ray has a fixed start point and no endpoint... What can we draw with that is straight and goes onward in two directions?",
+        "B": "A line has no start point or endpoint and extends in both directions, so this is what the question is describing!",
+        "C": "A line segment has a fixed start point AND an endpoint. Think about what has no endpoints in either direction from the options listed...",
+        "D": "Draw on a piece of paper a straight path that goes on in both directions, as shown by arrows... What have you drawn?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

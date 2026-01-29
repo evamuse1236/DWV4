@@ -1,0 +1,141 @@
+{
+  "shortcode": "fb9g",
+  "name": "Real-world fraction multiplication",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 72,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Match calculations involving multiplying fractions to real life situations",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 173933,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7fb0068b-2dba-4265-bb3d-771542d449a1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have correctly identified that 'of' means you need to do a calculation with the two fractions, but you have divided instead of multiplying. Also, check your method for dividing fractions, as there seems to be a mistake in the calculation.",
+        "B": "The word 'of' in this type of problem means you need to multiply the fractions together, not divide them.",
+        "C": "To find a fraction 'of' an amount, you need to multiply. In this case, to find 1/2 of 5/8, you multiply 5/8 by 1/2.",
+        "D": "You have correctly identified that you need to multiply the two fractions. However, when multiplying fractions, you do not need to find a common denominator. You can simply multiply the numerators together and then multiply the denominators together."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 173993,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0e8465e0-e5ec-410d-b3d6-f5ce8bfd85b3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The question asks for half 'of' the leftovers. In maths, 'of' usually means multiply. To find the answer, you need to calculate 3/8 multiplied by 1/2. To multiply fractions, you multiply the numerators together and the denominators together.",
+        "B": "It looks like you tried to find a common denominator before multiplying. Remember, you only need to do that when adding or subtracting fractions. For multiplying, you can just multiply the top numbers and then the bottom numbers.",
+        "C": "The question asks you to find a fraction 'of' another fraction, which means you should multiply. It appears you have divided instead. You should also check your method for dividing fractions.",
+        "D": "The word 'of' in the question is a clue that you need to multiply the fractions. It looks like you have divided them instead. Have another look at the calculation."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173934,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9601989e-5839-42de-b823-0c0958cbe357.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find the total amount of flour, you need to multiply the amount per person (1/4) by the number of people (5 1/2). The best way to do this is to convert 5 1/2 to an improper fraction first. 5 and 1/2 is 11/2, so the calculation is 1/4 x 11/2 = 11/8 which converts to 1 and 3/8 as a mixed number.",
+        "B": "You are correct to multiply, but it looks like you have only multiplied the fraction parts together (1/4 x 1/2 = 1/8). To multiply mixed numbers, you should convert them to improper fractions first.",
+        "C": "This question asks for 1/4 of a cup for each of the 5 1/2 people. This is a repeated amount, which means you should multiply, not add.",
+        "D": "You have chosen to divide. This would tell you how many people you could make a cake for with 5 1/2 cups of flour. The question asks for the total amount of flour needed, so you should multiply."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 173994,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/65e8f804-be1a-478c-b148-533f449831e3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "When multiplying a mixed number by a fraction, it's best to change the mixed number into an improper fraction first. It looks like you may have only multiplied the fraction parts and left the whole number part as it was.",
+        "B": "To find the total amount of sugar, you need to multiply the amount per person (1/5) by the number of people (6 and 1/2). To multiply mixed numbers, it's easiest to convert them to improper fractions first. 6 and 1/2 is 13/2, so the calculation is 1/5 x 13/2 = 13/10. Converting to a mixed number gives 1 and 3/10.",
+        "C": "The problem asks for the total sugar needed if the recipe is scaled up for 6 and a half people. This means you need to multiply the amount per person by the number of people. It seems you may have divided instead of multiplied.",
+        "D": "This question asks for 1/5 of a cup for each of the 6 1/2 people. This is a repeated amount, which means you should multiply, not add."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173935,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d1ba4a6d-006f-4834-9a24-01acd8044b1e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The question asks for the distance the sprinter has already run, which is 1/3 'of' the total distance of 7/8 of a mile. The word 'of' tells us we need to multiply the two fractions together.",
+        "B": "The question asks for 1/3 of the total distance. It is not asking for the difference between 7/8 and 1/3. The word 'of' is a key clue for which operation to use.",
+        "C": "You have correctly chosen to multiply the fractions. However, when we multiply fractions, we don't need to find a common denominator first. Just multiply the two numerators and the two denominators.",
+        "D": "It seems you have chosen to subtract the fractions, but the question asks for a fraction 'of' a distance. Also, check your method for subtracting fractions; remember you need a common denominator."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 173995,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/95ecd744-c98b-494c-bac0-3cbe091883d7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The sprinter has run 2/3 'of' the total distance (5/7 of a mile). The word 'of' tells us to multiply. To calculate this, you multiply the numerators (5 x 2) and then the denominators (7 x 3).",
+        "B": "It looks like you've tried to find a common denominator before multiplying. This is a step for adding or subtracting fractions, but it's not needed for multiplication. Just multiply the top numbers together and the bottom numbers together.",
+        "C": "The question asks you to find 2/3 'of' a distance. This means you need to multiply the fractions. It looks like you have subtracted them instead.",
+        "D": "To find a fraction 'of' an amount, you need to use multiplication. It seems you have subtracted the fractions. Also, remember that to subtract fractions you need to find a common denominator first."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173936,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bbda630f-34c4-449a-9f27-4dac88e78720.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The question asks for 3/5 'of' the total amount of almonds. The word 'of' is a clue that you need to multiply, not divide.",
+        "B": "It looks like you have chosen to divide instead of multiply. The question asks for a fraction 'of' an amount, which means you need to multiply. Also, double-check your method for dividing mixed numbers.",
+        "C": "You are correct that you need to multiply. However, it looks like you might have multiplied the fraction part by 3/5 but forgotten about the whole number. Remember to convert the mixed number to an improper fraction before you multiply.",
+        "D": "The question is asking for 3/5 'of' 3 1/2 cups. To find a fraction of an amount, you need to multiply. To do this, it's easiest to convert the mixed number, 3 1/2, into an improper fraction first. 3 1/2 = 7/2 so the calculation is 7/2 × 3/5 = 21/10. As a mixed number this is 2 and 1/10."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 173996,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c5adfc71-de84-4247-be0f-e2d4ed0aa863.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The question asks for a fraction 'of' an amount. This tells you to multiply. It looks like you have divided instead of multiplying.",
+        "B": "Finding a fraction 'of' a quantity means you need to multiply. It seems you've chosen to divide the numbers instead. Also, it looks like you may have made a mistake when converting the mixed number.",
+        "C": "When multiplying a mixed number by a fraction, it's important to change the mixed number into an improper fraction first. It looks like you might have only multiplied the fraction parts and left the whole number unchanged.",
+        "D": "We need to find 2/5 'of' 5 and 1/3 cups. 'Of' means multiply. First, convert the mixed number 5 and 1/3 into an improper fraction (16/3). Then, multiply 16/3 by 2/5 which gives 32/15. This is 2 and 2/15 as a mixed number."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173937,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/56f470ee-449b-4ba7-b411-8276c4431103.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You're right to multiply to find the area. However, it looks like you multiplied the whole numbers and the fractions separately. To multiply mixed numbers, you need to convert them to improper fractions first, then multiply.",
+        "B": "The area of a rectangle is found by multiplying its length by its width. To multiply these mixed numbers, first convert them to improper fractions. 3 and 1/2 is 7/2, 2 and 1/4 is 9/4. Then multiply these two fractions together to get 63/8 which is 7 and 7/8 as a mixed number.",
+        "C": "To find the area of a rectangle, you need to multiply the length and the width. It looks like you have added them, which would give you part of the calculation for the perimeter.",
+        "D": "It looks like you have added the length and width instead of multiplying them to find the area. Also, check your method for adding fractions, as you need a common denominator."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 173997,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/05df1abb-5306-4079-93fa-92955d1cb55c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find the area of a rectangle, you need to multiply the length and the width. It looks like you have added them instead. This would give you part of the perimeter.",
+        "B": "It seems you have added the length and width, but the formula for the area of a rectangle is length multiplied by width. Also, check your method for adding fractions – you need a common denominator.",
+        "C": "When multiplying mixed numbers, you can't just multiply the whole numbers and the fractions separately. You need to convert both mixed numbers into improper fractions first, and then multiply them.",
+        "D": "The area of a rectangle is found by multiplying its length by its width. To multiply these mixed numbers, first convert them to improper fractions. 4 and 3/5 is 23/5, 1 and 2/7 is 9/7. Then multiply these two fractions together to get 207/35 which is 5 and 32/35 as a mixed number."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

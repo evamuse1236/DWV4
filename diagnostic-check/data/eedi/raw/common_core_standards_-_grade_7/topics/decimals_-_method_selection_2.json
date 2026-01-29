@@ -1,0 +1,165 @@
+{
+  "shortcode": "vvd",
+  "name": "Decimals - method selection 2",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 140,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Solve problems that combine addition or subtraction with multiplication",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Add decimals where the numbers involved have a different number of decimal places",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Subtract decimals where the numbers involved have a different number of decimal places",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiply two decimals together with a different number of decimal places",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Divide two decimals with a different number of decimal places",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 77588,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1ccb5ab1-c6ff-4fa0-921d-f1e7aa8301d9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Sara has one lot of £3.67 and Rhys has 2 lots of £3.67. So that gives 3 x £3.67. So 4 x £3.67 is not a suitable calculation.",
+        "B": "(£3.67 x 2) tells us how much Rhys has so when we add that to Sara's £3.67, we get the total. But we want a calculation which does NOT give us the correct answer.",
+        "C": "(£3.70 x 3) - £0.09 is the same as (£3.70 x 3) - (£0.03 x 3), which is also the same as £3.67 x 3. This tells us how much Rhys and Sara have altogether. But we want a calculation which does NOT give us the correct answer.",
+        "D": "Sara has one lot of £3.67 and Rhys has 2 lots of £3.67. So that gives 3 x £3.67. But we want a calculation which does NOT give us the correct answer."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78863,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0edb6243-6814-40d5-aa33-fc11a9c28a1e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Sara has one lot of £2.79 and Rhys has 3 lots of £2.79. So that gives 4 x £2.79. But we want a calculation which does NOT give us the correct answer.",
+        "B": "(£2.79 x 3) tells us how much Rhys has so when we add that to Sara's £2.79, we get the total. But we want a calculation which does NOT give us the correct answer.",
+        "C": "(£2.80 x 4) - £0.04 is the same as (£2.80 x 4) - (£0.01 x 4), which is also the same as £2.79 x 4. This tells us how much Rhys and Sara have altogether. But we want a calculation which does NOT give us the correct answer.",
+        "D": "Sara has one lot of £2.79 and Rhys has 3 lots of £2.79. So that gives 4 x £2.79. So 3 x £2.79 only gives us Rhys's share of the total."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103791,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2f2715d7-37f7-43a3-8c8d-35778b536e28.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To add decimal numbers, we need to line up the decimal points and ensure that we add digits in the same place value column. To avoid confusion, 0.2 can be written as 0.20. So we do 5 + 0 = 5 in the hundredths column, 1 + 2 = 3 in the tenths column and 0 + 0 = 0 in the units column, so an overall answer of 0.35",
+        "B": "Not quite. Remember that in 0.2, the 2 represents 2 tenths, not 2 hundredths. Make sure you line up the digits in the correct columns and keep the decimal points lined up vertically when you add.",
+        "C": "Not quite. Remember that in 0.2, the 2 represents 2 tenths, not 2 hundredths. Make sure you line up the digits in the correct columns and keep the decimal points lined up vertically when you add.",
+        "D": "Not quite. Remember that in 0.2, the 2 represents 2 tenths, not 2 thousandths. Make sure you line up the digits in the correct columns and keep the decimal points lined up vertically when you add."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103803,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/94a07511-eec5-449a-9a8f-561e453ed99b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember that in 0.8, the 8 represents 8 tenths, not 8 hundredths. Make sure you line up the digits in the correct columns and keep the decimal points lined up vertically when you add.",
+        "B": "Not quite. Remember that in 0.8, the 8 represents 8 tenths, not 8 hundredths. Make sure you line up the digits in the correct columns and keep the decimal points lined up vertically when you add.",
+        "C": "To add decimal numbers, we need to line up the decimal points and ensure that we add digits in the same place value column. To avoid confusion, 0.8 can be written as 0.80. So we do 2 + 0 = 2 in the hundredths column, 3 + 8 = 11 in the tenths column. We carry 10 tenths over to the units column and we get 0 + 0 + 1 (carried) = 1 in the units column, so an overall answer of 1.12",
+        "D": "Not quite. Remember that in 0.8, the 8 represents 8 tenths, not 8 thousandths. Make sure you line up the digits in the correct columns and keep the decimal points lined up vertically when you add."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103792,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/83b802a4-cc7f-4d0d-b295-81f75c0bfedf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have swapped the numbers round but 0.2 - 0.15 is not the same as 0.15 - 0.2. Think about a number line: start from 0.15. If we take away 0.2 where will we end up on the number line?",
+        "B": "Not quite. Remember that in 0.2, the 2 represents 2 tenths, not 2 hundredths.",
+        "C": "If we think of a number line and start at 0.15, we need to subtract 0.15 to get to zero on the number line. But we need to subtract 0.2 so we still need to subtract another 0.05 (because 0.2 – 0.15 = 0.05). So from 0, if we subtract another 0.05, we will be at -0.05 on the number line. So our answer is -0.05.",
+        "D": "I think you may have worked out 0.15 - 0.02, instead of 0.15 - 0.2. Remember that in 0.2, the 2 represents 2 tenths, not 2 hundredths."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103804,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c80d65c1-d5c4-4ea7-bb2d-9de2e57d6c30.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we think of a number line and start at 0.32, we need to subtract 0.32 to get to zero on the number line. But we need to subtract 0.8 altogether so we still need to subtract another 0.48 (because 0.8 – 0.32 = 0.48). So from 0, if we subtract another 0.48, we will be at -0.48 on the number line. So our answer is -0.48.",
+        "B": "Not quite. Remember that in 0.8, the 8 represents 8 tenths, not 8 hundredths.",
+        "C": "I think you may have swapped the numbers round but 0.8 - 0.32 is not the same as 0.32 - 0.8. Think about a number line: start from 0.32. If we take away 0.8 where will we end up on the number line?",
+        "D": "I think you may have worked out 0.32 - 0.08, instead of 0.32 - 0.8. Remember that in 0.8, the 8 represents 8 tenths, not 8 hundredths."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103793,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/92202718-e2f3-4628-84b8-4605b86f2b1f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. We would expect the digit 3 in our answer because 15 x 2 = 30. But how many decimal places are there in 0.15 x 0.2? And how many decimal places do we need in our answer?",
+        "B": "We know that 15 × 2 = 30. In the question, 0.15 has 2 decimal places and the 0.2 has 1 decimal place, so the answer needs to have 3 decimal places. This gives an answer of 0.030, which can be written as 0.03.",
+        "C": "Not quite. We would expect the digit 3 in our answer because 15 x 2 = 30. But how many decimal places are there in 0.15 x 0.2? And how many decimal places do we need in our answer?",
+        "D": "Not quite. How many decimal places are there in 0.15 x 0.2? We know that 15 x 2 = 30 so how many decimal places do we need to put into our answer?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103805,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d843c41a-6b0f-4712-8ee6-baac10fba73f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have tried to add the numbers. But we need to do a multiplication.",
+        "B": "Not quite. We would expect the digits 256 in our answer because 32 x 8 = 256. But how many decimal places are there in the question? And how many decimal places do we need in our answer?",
+        "C": "Not quite. We would expect the digits 256 in our answer because 32 x 8 = 256. But how many decimal places are there in the question? And how many decimal places do we need in our answer?",
+        "D": "We can work out 32 × 8 = 256 first. Then, in the question, 0.32 has 2 decimal places and the 0.8 has 1 decimal place so the answer needs to have 3 decimal places. This gives an answer of 0.256."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103794,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6e9eb5a8-e4d4-4bdb-9652-a6c9a3a03b64.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We can treat the calculation as a fraction and then find an equivalent fraction to make the division simpler. So 0.15 ÷ 0.2 = 0.15/0.2. Multiplying numerator and denominator by 100 gives 15/20, and then multiplying numerator and denominator by 5 gives 75/100 which is the same as 0.75",
+        "B": "Not quite. We would expect the digits 7 and 5 in our answer because 15 ÷ 2 = 7.5. But is 0.15 ÷ 0.2 equivalent to 15 ÷ 2? Try thinking about equivalent fractions.",
+        "C": "Not quite. We would expect the digits 7 and 5 in our answer because 15 ÷ 2 = 7.5. But how do we deal with the decimal places? Try thinking about equivalent fractions.",
+        "D": "Not quite. We would expect the digits 7 and 5 in our answer because 15 ÷ 2 = 7.5. But how do we deal with the decimal places? Try thinking about equivalent fractions."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103806,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/99bc524d-b816-44b9-9987-1c699688cdda.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. We would expect the digit 4 in our answer because 32 ÷ 8 = 4. But how do we deal with the decimal places? Try thinking about equivalent fractions.",
+        "B": "Not quite. We would expect the digit 4 in our answer because 32 ÷ 8 = 4. But how do we deal with the decimal places? Try thinking about equivalent fractions.",
+        "C": "We can treat the calculation as a fraction and then find an equivalent fraction to make the division simpler. So 0.32 ÷ 0.8 = 0.32/0.8. Multiplying numerator and denominator by 100 gives 32/80, and then dividing numerator and denominator by 8 gives 4/10 which is the same as 0.4.",
+        "D": "Not quite. We would expect the digit 4 in our answer because 32 ÷ 8 = 4. But how do we deal with the decimal places? Try thinking about equivalent fractions."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,141 @@
+{
+  "shortcode": "egw2",
+  "name": "Unit rates with ratios of fractions",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 4,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Use direct proportion to solve unitary missing amounts in problems (e.g. recipes)",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166268,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b01de7c3-fc96-4229-b19d-c16d720ce8b4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "2/3 ÷ 1/5 = 2/3 × 5/1 which gives us 10/3. Converting to a mixed number gives us 3⅓ bags of seed needed for 1 acre.",
+        "B": "It looks like you have done 1/5 ÷ 2/3 but you needed to do 2/3 ÷ 1/5",
+        "C": "I think you have multiplied the fractions instead of dividing them.",
+        "D": "I think you have added the fractions instead of dividing them."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166495,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/173783b4-a8d0-4166-9788-8cfa78ae6917.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have multiplied the fractions instead of dividing them.",
+        "B": "3/4 ÷ 1/7 = 3/4 × 7/1 which gives us 21/4. Converting to a mixed number gives us 5¼ bags of fertilizer needed for 1 acre.",
+        "C": "It looks like you have done 1/7 ÷ 3/4 but you needed to do 3/4 ÷ 1/7",
+        "D": "I think you have added the fractions instead of dividing them."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166269,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f41767d4-291c-499b-bf11-bcd2fc7f5e6f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added the fractions instead of dividing them.",
+        "B": "I think you have multiplied the fractions instead of dividing them.",
+        "C": "1/4 ÷ 1/3 = 1/4 × 3/1 which gives us 3/4. So 3/4 pint of icing is needed per dozen cookies.",
+        "D": "It looks like you have done 1/3 ÷ 1/4 but you needed to do 1/4 ÷ 1/3"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166496,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d9093e5-0f49-45ce-840e-5582422c2dff.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have multiplied the fractions instead of dividing them.",
+        "B": "1/3 ÷ 1/5 = 1/3 × 5/1 which gives us 5/3. So 5/3 pints of milk is needed per dozen pancakes.",
+        "C": "It looks like you have done 1/5 ÷ 1/3 but you needed to do 1/3 ÷ 1/5",
+        "D": "I think you have added the fractions instead of dividing them."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166270,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8f56aa08-cb0d-4558-a4a5-27553b20e8a9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "2/7 ÷ 1/3 = 2/7 × 3/1 which gives us 6/7. So the tree grows 6/7 of an inch in 1 year.",
+        "B": "It looks like you have done 1/3 ÷ 2/7 but you needed to do 2/7 ÷ 1/3",
+        "C": "I think you have multiplied the fractions instead of dividing them.",
+        "D": "I think you have added the fractions instead of dividing them."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166497,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d2a14a11-b772-46e2-9ac7-d7099976d11a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have done 1/4 ÷ 3/10 but you needed to do 3/10 ÷ 1/4",
+        "B": "I think you have multiplied the fractions instead of dividing them.",
+        "C": "I think you have added the fractions instead of dividing them.",
+        "D": "3/10 ÷ 1/4 = 3/10 × 4/1 which gives us 12/10. Converting to a mixed number gives us 1 2/10. So the sunflower grows 1 2/10 inches in 1 year."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166271,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ce04ef92-c379-4459-8c46-584f3233ee72.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have done 3/4 ÷ 2/3 but you needed to do 2/3 ÷ 3/4",
+        "B": "I think you have added the fractions instead of dividing them.",
+        "C": "I think you have multiplied the fractions instead of dividing them.",
+        "D": "2/3 ÷ 3/4 = 2/3 × 4/3 which gives us 8/9. So 8/9 of a cup of sugar is used per teaspoon of vanilla."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166498,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/353bbfc6-3b24-4511-b144-6c4e0ab8a317.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have multiplied the fractions instead of dividing them.",
+        "B": "3/4 ÷ 2/3 = 3/4 × 3/2 which gives us 9/8. Converting to a mixed number we get 1⅛. So 1⅛ cups of flour was used per cup of sugar.",
+        "C": "It looks like you have done 2/3 ÷ 3/4 but you needed to do 3/4 ÷ 2/3",
+        "D": "I think you have added the fractions instead of dividing them."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166272,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fe99e71f-b732-465a-a98e-75f68d46240f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have multiplied the fractions instead of dividing them.",
+        "B": "3/10 ÷ 4/5 = 3/10 × 5/4 which gives us 15/40. 15/40 simplifies to 3/8, so 3/8 of a gallon of water would be in 1 fully filled bucket.",
+        "C": "I think you have added the fractions instead of dividing them.",
+        "D": "It looks like you have done 4/5 ÷ 3/10 but you needed to do 3/10 ÷ 4/5"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166499,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/175565c9-e53a-417c-ac82-d8f5b1e6051b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "5/9 ÷ 4/7 = 5/9 × 7/4 which gives us 35/36. So 35/36 of a gallon of water would be in 1 fully filled bucket.",
+        "B": "It looks like you have done 4/7 ÷ 5/9 but you needed to do 5/9 ÷ 4/7",
+        "C": "I think you have multiplied the fractions instead of dividing them.",
+        "D": "I think you have added the fractions instead of dividing them."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

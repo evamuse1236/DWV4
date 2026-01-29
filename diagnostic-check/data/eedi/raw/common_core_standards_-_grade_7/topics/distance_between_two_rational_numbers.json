@@ -1,0 +1,147 @@
+{
+  "shortcode": "ehjj",
+  "name": "Distance between two rational numbers",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 60,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Work out the distance between two rational numbers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Know that the distance between two rational numbers is the absolute value of the difference",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166812,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/28ca1e11-0bfb-4aaa-9518-e001dc441c76.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This would be the sum of the values but we want to find the positive difference as that is what the distance is!",
+        "B": "To find the distance between the two values, we need to find the positive difference, as a distance cannot be negative! To do this we do the larger value - the smaller value which in this case is 2.4 - 2 1/4",
+        "C": "This would give the difference between the two values but a distance cannot be negative... Distance is the positive difference so what do you need to do to your calculation to make it correct?",
+        "D": "2 1/4 is not the same as 2.4, 2 1/4 = 2.25. So, which sum gives the distance between 2 1/4 and 2.4?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167062,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bbd13f2b-9492-4a66-8426-07d5583395c3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "4 1/5 is not the same as 4.5, 4 1/5 = 4.2. So, which sum gives the distance between 4 1/5 and 4.5?",
+        "B": "This would be the sum of the values but we want to find the positive difference as that is what the distance is!",
+        "C": "To find the distance between the two values, we need to find the positive difference, as a distance cannot be negative! To do this we do the larger value - the smaller value which in this case is 4.5 - 4 1/5",
+        "D": "This would give the difference between the two values but a distance cannot be negative... Distance is the positive difference so what do you need to do to your calculation to make it correct?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166813,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/75e8a146-423e-4aa7-80ef-5cf97481c8d9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have correctly found the difference between the values but distance cannot be negative...",
+        "B": "I think you have done 4.5 - 2.5 instead of 4.5 - -2.5. Go through 0 if it helps: how do you go from -2.5 to 0? Then how do you go from 0 to 4.5? So, how much have you gone altogether?",
+        "C": "The distance between -2.5 and 4.5 is 7 as to go from -2.5 to 0 is 2.5 and to go from 0 to 4.5 is 4.5, 2.5 + 4.5 = 7! Alternatively we can do 4.5 - - 2.5 as to find the distance, we do the larger number subtract the smaller one.",
+        "D": "Double check your calculation... I think you have forgotten to carry when adding the two values together!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167063,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ef336299-8abf-409b-92b3-e82b2ee8e820.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The distance between -3.5 and 5.5 is 9 as to go from -3.5 to 0 is 3.5 and to go from 0 to 5.5 is 5.5, 3.5 + 5.5 = 9! Alternatively we can do 5.5 - - 3.5 as to find the distance, we do the larger number subtract the smaller one.",
+        "B": "Double check your calculation... I think you have forgotten to carry when adding the two values together!",
+        "C": "I think you have done 5.5 - 3.5 instead of 5.5 - -3.5. Go through 0 if it helps: how do you go from -3.5 to 0 then how do you go from 0 to 5.5 so, how much have you gone altogether?",
+        "D": "You have correctly found the difference between the values but distance cannot be negative..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166814,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6ee8f82-c8b1-448b-a1d1-3d11d492fdd8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This does represent the distance between -7 and 2 as it is the absolute value of the difference between them! Which one doesn't give the positive difference of -7 and 2?",
+        "B": "This does represent the distance between -7 and 2 as it is the positive difference between them! Which one doesn't give the positive difference?",
+        "C": "The distance between -7 and 2 is 9, because from -7 to 0 is 7, from 0 to 2 is 2 and 2 + 7 =9. So, this does give the distance between them, which one doesn't?",
+        "D": "2 - 7 = -5 and we cannot have a negative distance. Therefore this one does NOT represent the distance between 2 and -7."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167064,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/129b920f-5ada-4253-993d-57ad95017103.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The distance between -6 and 3 is 9, because from -6 to 0 is 6, from 0 to 3 is 3 and 3 + 6 =9. So, this does give the distance between them, which one doesn't?",
+        "B": "3 - 6 = -3 and we cannot have a negative distance. Therefore this one does NOT represent the distance between 3 and -6.",
+        "C": "This does represent the distance between -6 and 3 as it is the absolute value of the difference between them! Which one doesn't give the positive difference of -6 and 3?",
+        "D": "This does represent the distance between -6 and 3 as it is the positive difference between them! Which one doesn't give the positive difference?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166815,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ed32222e-22db-44d9-a537-96df0295548f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have done 150 - 25 instead of 150 - -25. Go through 0 if it helps: how do you go from -25 to 0 then how do you go from 0 to 150 so, how much have you gone altogether? Alternatively you can do the larger number subtract the smaller one to find the distance.",
+        "B": "The helicopter is 150m above sea level so 150 and the submarine is 25m below sea level so -25. We need the distance between them so that is the positive difference: 125 - -25 = 175. Therefore, the distance between them is 175m.",
+        "C": "I think you have done 25 - 150 but the 150 is positive as it's above sea level and the 25 is negative (-25) as it's below sea level. What is the difference between these values?",
+        "D": "You have correctly found the difference between the values but distance cannot be negative..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167065,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2aa85eb3-e7c5-494a-894b-12a228521efe.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have correctly found the difference between the values but distance cannot be negative...",
+        "B": "I think you have done 40 - 160 but the 160 is positive as it's above sea level and the 40 is negative (-40) as it's below sea level. What is the difference between these values?",
+        "C": "I think you have done 160 - 40 instead of 160 - -40. Go through 0 if it helps: how do you go from -40 to 0 then how do you go from 0 to 160 so, how much have you gone altogether? Alternatively you can do the larger number subtract the smaller one to find the distance",
+        "D": "The helicopter is 160m above sea level so 160 and the submarine is 40 m below sea level so -40. We need the distance between them so that is the positive difference: 160 - -40 = 200. Therefore, the distance between them is 200m."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166816,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3ed980e3-4327-435c-9c95-f10ac6deeea3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have correctly found the difference between the values but distance cannot be negative...",
+        "B": "We don't subtract as the runners did not go in the same direction. One runner went 1.4km in one direction and the other went 3.8km in the opposite direction so, what do we need to do to the values to find the distance between them?",
+        "C": "Runner A ran 1.4km east, runner B ran 3.4km west. East and west are opposite directions therefore, the distance between the runners is 1.4 + 3.8 which equals 5.2km!",
+        "D": "Remember distance cannot be negative and we don't want to subtract as the runners did not go in the same direction. One runner went 1.4km in one direction and the other went 3.8km in the opposite direction so, what do we need to do to the values to find the distance between them?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167066,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f192fa80-abd1-4a34-a942-2bb441f1645e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember distance cannot be negative and we don't subtract as the cars did not drive in the same direction. One car went 4.7 miles in one direction and the other went 5.5 miles in the opposite direction so, what do we need to do to the values to find the distance between them?",
+        "B": "Car A drives 4.7 miles east, car B drives 5.5 miles west. East and west are opposite directions therefore, the distance between the cars is 4.7 + 5.5 which equals 10.2 miles!",
+        "C": "You have correctly found the difference between the values but distance cannot be negative...",
+        "D": "We don't subtract as the cars did not drive in the same direction. One car went 4.7 miles in one direction and the other went 5.5 miles in the opposite direction so, what do we need to do to the values to find the distance between them?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

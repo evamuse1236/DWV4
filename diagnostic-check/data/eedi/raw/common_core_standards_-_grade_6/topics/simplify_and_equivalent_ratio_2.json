@@ -1,0 +1,159 @@
+{
+  "shortcode": "vm6",
+  "name": "Simplify and equivalent ratio 2",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 23,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Use direct proportion to solve non-unitary missing amounts in problems (e.g. recipes)",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Write a given ratio in the form 1:n ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given information about one part, work out other parts",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find missing values when given equivalent ratios",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 101376,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0fc8393e-702f-437d-aa35-b790d8ff9baf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added on 15, but there are 15 lots of the shapes.",
+        "B": "I think you have found the number of triangles, but we need to find the total number of shapes",
+        "C": "In one group there are 8 shapes. For 15 groups there would be 15 times this amount, so 15 ✕ 8 = 120 shapes.",
+        "D": "I think you have found the number of circles, but we need to find the total number of shapes"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101394,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d1916d71-9096-4192-8a99-f0bff1d14738.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "In one group there are 9 shapes. For 13 groups there would be 13 times this amount, so 13 ✕ 9 = 117 shapes.",
+        "B": "I think you have found the number of triangles, but we need to find the total number of shapes",
+        "C": "I think you have added on 13, but there are 13 lots of the shapes.",
+        "D": "I think you have found the number of circles, but we need to find the total number of shapes"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101377,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/274b88a3-2775-41d9-9002-c1665b9793bd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "1 group contains 5 circles. We would need 240 / 5 = 48 groups to have 240 circles in total.",
+        "B": "This is how many groups we would need to have 240 triangles. We need 240 circles.",
+        "C": "This is how many groups we would need to have 240 shapes in total. We need 240 circles.",
+        "D": "I think you have added the 5 circles in the group onto the 240 desired. We need to see how many groups we need to get 240 circles in total."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101395,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/10efb9db-9845-4e84-9183-62aa00969f67.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added the 4 triangles in the group onto the 180 desired. We need to see how many groups we need to get 180 triangles in total.",
+        "B": "This is how many groups we would need to have 180 circles. We need 180 triangles.",
+        "C": "This is how many groups we would need to have 180 shapes in total. We need 180 triangles.",
+        "D": "1 group contains 4 triangles. We would need 180 / 4 = 45 groups to have 180 triangles in total."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101384,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3405567c-6b67-44c4-b6c6-e8f18981454c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have divided the 1 litre in the ratio 4:1. Remember the 1 litre is all water. What part of the ratio is this?",
+        "B": "Almost, this is how much orange juice will be needed in total. How much does she have already?",
+        "C": "First, change all measurements to the same units: 1000 ml water and 100 ml juice. The ratio tells us that water makes up 4 parts, and we will focus on this because all of this is used up. We can write 4 parts = 1000 ml, so 1 part = 1000 ÷ 4 = 250 ml. This 250 ml is the amount of juice needed, being the appropriate 1 part. However, Lucy already has 100 ml, and so only an additional 150 ml is required.",
+        "D": "I think you shared 1 litre in the ratio 4 : 1 and then subtracted the 100ml of juice that Lucy has. The 1 litre is just water, what part of the ratio represents water?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101402,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a0d14209-fe19-430b-83db-cb80ced651ff.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "First, change all measurements to the same units: 2000 ml sparkling water and 200 ml juice. The ratio tells us that sparkling water makes up 5 parts, and we will focus on this because all of this is used up. We can write 5 parts = 2000 ml, so 1 part = 2000 ÷ 5 = 400 ml. The mixture, however, requires 2 parts of juice, so 800 ml is the amount required. Remember, Olive already has 200 ml, and this means only an additional 600 ml is needed.",
+        "B": "Almost, this is how much juice will be needed in total. How much does she have already?",
+        "C": "I think you have used the ratio the wrong way round. What number represents water in the ratio?",
+        "D": "Not quite. I think you found out how much 7 parts is and then took off the 200ml. Remember we are interested in the juice that Olive needs."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101388,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6921cd23-a04f-4145-a29b-b20ef5cff911.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you thought the second number stayed the same. Whatever we divide the first number by, we divide the second number by too",
+        "B": "The 4 in the first ratio corresponds to the 1 in the second. To change a 4 to a 1, you would divide by 4. Now, to keep things in proportion, the same must be done to the 3 to give 3 ÷ 4 = 3/4",
+        "C": "I think you have done the division the wrong way round. What do we have to divide by to go from 4 to 1?",
+        "D": "I think you have made a mistake when converting your division to a decimal. You can leave your answer as a fraction as the fraction line means divide"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101406,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/20f0f0b7-7ebc-4684-b0a0-7585b7ab7c43.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you thought the second number stayed the same. Whatever we divide the first number by, we divide the second number by too",
+        "B": "I think you have made a mistake when converting your division to a decimal. You can leave your answer as a fraction as the fraction line means divide",
+        "C": "I think you have done the division the wrong way round. What do we have to divide by to go from 2 to 1?",
+        "D": "The 2 in the first ratio corresponds to the 1 in the second. To change a 2 to a 1, you would divide by 2. Now, to keep things in proportion, the same must be done to the 5 to give 5 ÷ 2 = 5/2"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 104625,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fdb760f4-e8af-4542-8668-85534b9189cc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I don't think you have taken the 2 into account. Try multiplying both parts by the same number to get rid of the fractions, and then you can simplify down to the form 1:n.",
+        "B": "If we multiply both parts by 12, we get 8:3. We then divide by 8 to get the ratio in the form 1:n. We have 1:3/8",
+        "C": "I think you have multiplied the two fractions together. Try multiplying both parts by the same number to get rid of the fractions, and then you can simplify down to the form 1:n.",
+        "D": "Not quite, I don't think you have multiplied both parts by the same number. Try multiplying both parts by the same number to get rid of the fractions, and then you can simplify down to the form 1:n."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104627,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/25e7674d-3ef5-4872-96e6-61d20f8eb249.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I don't think you have multiplied both parts by the same number. Try multiplying both parts by the same number to get rid of the fractions, and then you can simplify down to the form 1:n.",
+        "B": "Not quite. Try multiplying both parts by the same number to get rid of the fractions, and then you can simplify down to the form 1:n.",
+        "C": "I think you have multiplied the two fractions together. Try multiplying both parts by the same number to get rid of the fractions, and then you can simplify down to the form 1:n.",
+        "D": "If we multiply both parts by 15, we get 9:5. We then divide by 9 to get the ratio in the form 1:n. We have 1:5/9"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

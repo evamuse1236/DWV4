@@ -1,0 +1,141 @@
+{
+  "shortcode": "bigc",
+  "name": "Multiplications and their associated area models",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 33,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Multiplications and their associated area models",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158072,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8a78d1e5-ac39-4cf3-b9fb-447ae31cf429.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "They don't need to match at the top. We are modelling 32 x 5, we have the 5 and the 2. What number are we missing?",
+        "B": "What number does the 3 in 32 represent, it's not 3, it's __?",
+        "C": "The shapes don't have to be squares. We are modelling 32 x 5, we have the 5 and the 2. What number are we missing?",
+        "D": "We are modelling 32 x 5, we have the 5 and 32 is 30 + 2 so the part we are missing is the 30."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158239,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/16dc1e67-5764-4ba9-8416-f783d7cdb20d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We are modelling 46 x 8, we have the 8 and 46 is 40 + 6 so the part we are missing is the 40.",
+        "B": "The shapes don't have to be squares. We are modelling 46 x 8, we have the 8 and the 6. What number are we missing?",
+        "C": "They don't need to match at the top. We are modelling 46 x 8, we have the 8 and the 6. What number are we missing?",
+        "D": "What number does the 4 in 48 represent, it's not 4, it's __?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158073,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/87a59cb5-00cd-418e-b034-04e4692c0d49.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added the 30 and 5 but you need to multiply them...",
+        "B": "To replace the star we do 30 x 5 which equals 150.",
+        "C": "I think you have done 3 x 5 but to replace the star we need to do 30 x 5...",
+        "D": "This would be the area of the green box, the question is asking what the area of the blue box is..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158240,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c1c64828-65ef-41ab-bb03-a290958ce993.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have done 4 x 8 but to replace the star we need to do 40 x 8...",
+        "B": "I think you have added the 40 and 8 but you need to multiply them...",
+        "C": "To replace the star we do 40 x 8 which equals 320.",
+        "D": "This would be the area of the green box, the question is asking what the area of the blue box is..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158074,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d9a02f43-812f-4246-817f-8384560101e1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This would be the area of the blue box, the question is asking what the area of the green box is...",
+        "B": "I think you have added the 2 and 5 but you need to multiply them...",
+        "C": "To replace the star we do 2 x 5 which equals 10.",
+        "D": "I think you have multiplied 2 and 30 but the area of the green box is found by multiplying 5 and 2..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158241,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d8cdf4c7-3b27-440d-a258-f4dee3cb4996.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added the 6 and 8 but you need to multiply them...",
+        "B": "This would be the area of the blue box, the question is asking what the area of the green box is...",
+        "C": "I think you have multiplied 6 and 40 but the area of the green box is found by multiplying 8 and 6...",
+        "D": "To replace the star we do 6 x 8 which equals 48."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158075,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/90218b96-8ac1-4c50-8681-d712463b82ee.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have multiplied the areas together but you need to add them...",
+        "B": "You are multiplying all the numbers but to get the answer, you need to add together the areas of the blue and green boxes!",
+        "C": "To find the final answer, we need to add together the areas of the blue and green boxes, which would be: 150 + 10",
+        "D": "You have added all the numbers together but, to get the answer, you just need to add the two areas together..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158242,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cec2d169-d2f2-488a-bc43-9ca5ea217c10.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have added all the numbers together but, to get the answer, you just need to add the two areas together...",
+        "B": "To find the final answer, we need to add together the areas of the blue and green boxes, which would be: 320 + 48",
+        "C": "You have multiplied the areas together but you need to add them...",
+        "D": "You are multiplying all the numbers but to get the answer, you need to add together the areas of the blue and green boxes!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158076,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3f0f6d4e-c5f7-473b-af39-9080999fbb73.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Because we are modelling 43 x 6 we need to label the sides of the shapes with 40, 3 and 6. To find the areas, we multiply the side lengths: 40 x 6 = 240 and 3 x 6 = 18. Therefore the image in A is correct!",
+        "B": "You have correctly multiplied to find the areas but what number does the 4 in 43 represent, it's not 4, it's __?",
+        "C": "You have correctly labeled the sides of the shape but you have done 4 x 6 = 24. What would 40 x 6 equal?",
+        "D": "You have labelled the sides of the shapes perfectly but to find the areas you need to multiply the side lengths not add them..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158243,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cd2da0ce-6701-4dbf-a89b-542857a9f307.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have correctly labeled the sides of the shape but you have done 2 x 5 = 10. What would 20 x 5 equal?",
+        "B": "You have correctly multiplied to find the areas but what number does the 2 in 27 represent, it's not 2, it's __?",
+        "C": "You have labelled the sides of the shapes perfectly but to find the areas you need to multiply the side lengths not add them...",
+        "D": "Because we are modelling 27 x 5 we need to label the sides of the shapes with 20, 7 and 5. To find the areas, we multiply the side lengths: 20 x 5 = 100 and 7 x 5 = 35. Therefore the image in D is correct!"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,141 @@
+{
+  "shortcode": "bigq",
+  "name": "Solve word problems involving multiplying fractions by an integer",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 50,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Solve word problems involving multiplying fractions by integers",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158109,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/024b1dde-0b79-46ef-b43e-344aab3d9b47.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The question is asking what fraction is eaten, not how many full pizzas are eaten. How many eighths would be eaten if 6 people ate 3/8 each?",
+        "B": "You don't need to have a whole number of pizzas eaten... What is 6 x 3/8?",
+        "C": "This is the number of pieces of pizza eaten but the question is asking for the fraction...",
+        "D": "If each person at the party eats 3/8 of a pizza and there are 6 people to find the fraction of pizza eaten we need to do 6 x 3/8 = 18/8"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158276,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3ce32be9-18b1-448c-af68-3d84b0e5a4a4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the number of pieces of pizza eaten but the question is asking for the fraction...",
+        "B": "If each person at the party eats 3/4 of a pizza and there are 7 people to find the fraction of pizza eaten we need to do 7 x 3/4 = 21/4",
+        "C": "The question is asking what fraction is eaten, not how many full pizzas are eaten. How many quarters would be eaten if 7 people ate 3/4 each?",
+        "D": "You don't need to have a whole number of pizzas eaten... What is 7 x 3/4?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158110,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a5aa7017-d54d-40fe-b0be-c06f7a884519.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have added 28 and 3/4, we need to multiply them...",
+        "B": "You have done 28 ÷ 3/4 we need to do 28 x 3/4 to get the total hours...",
+        "C": "If Sam runs 3/4 of an hour for 28 days to find the total number of hours we need to do 28 x 3/4 = 84/4",
+        "D": "You have multiplied both the numerator and denominator by 28 but you only need to multiply the numerator as 28 as a fraction is 28/1..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158277,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b9ca6c53-4210-4202-bc30-f49e4d80ae67.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If Jim runs 2/5 of an hour for 30 days to find the total number of hours we need to do 30 x 2/5 = 60/5",
+        "B": "You have added 30 and 2/5, we need to multiply them...",
+        "C": "You have multiplied both the numerator and denominator by 30 but you only need to multiply the numerator as 30 as a fraction is 30/1...",
+        "D": "You have done 30 ÷ 2/5 we need to do 30 x 2/5 to get the total hours..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158111,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e8a347ce-43f9-4ea3-86d0-4b1f9a4deded.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have added 15 and 4/5, we need to multiply them...",
+        "B": "If every mile 4/5 of gas is needed, to work out how much is needed for 15 miles we need to do 15 x 4/5 = 60/5 and 60 ÷ 5 = 12 so we need 12 gallons of gas",
+        "C": "You have multiplied both the numerator and denominator by 15 but you only need to multiply the numerator as 15 as a fraction is 15/1...",
+        "D": "You have done 15 ÷ 4/5 we need to do 15 x 4/5 to get the total amount of gas needed..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158278,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a1c18133-0c78-4d29-9b33-9c2c89ae9362.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If every mile 5/7 of gas is needed, to work out how much is needed for 28 miles we need to do 28 x 5/7 = 140/7 and 140 ÷ 7 = 20 so we need 20 gallons of gas",
+        "B": "You have multiplied both the numerator and denominator by 28 but you only need to multiply the numerator as 28 as a fraction is 28/1...",
+        "C": "You have done 28 ÷ 5/7 we need to do 28 x 5/7 to get the total amount of gas needed...",
+        "D": "You have added 28 and 5/7, we need to multiply them..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158112,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c47be83f-84da-41c2-8c65-c2907fb1100b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have multiplied everything by 7 but you only need to multiply the whole number and the numerator...",
+        "B": "You have added 7 and 1 1/2, we need to multiply them...",
+        "C": "This is the correct value but the question asks for your answer as an improper fraction not as a mixed number...",
+        "D": "There are 7 days in a week, if Jane takes 1 1/2 tablets each day to find the total we need to do 7 x 1 1/2. 7 x 1 = 7 and 7 x 1/2 = 7/2 giving 7 7/2 but the question asks for our answer as an improper fraction 7 7/2 = 21/2 as an improper fraction so this is the correct answer!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158279,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f85f7386-b306-469b-91a0-274488eaa1d0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have added 7 and 2 1/4, we need to multiply them...",
+        "B": "This is the correct value but the question asks for your answer as an improper fraction not as a mixed number...",
+        "C": "There are 7 days in a week, if Susan takes 2 1/4 tablets each day to find the total we need to do 7 x 2 1/4. 7 x 2 = 14 and 7 x 1/4 = 7/4 giving 14 7/4 but the question asks for our answer as an improper fraction 14 7/4 = 63/4 as an improper fraction so this is the correct answer!",
+        "D": "You have multiplied everything by 7 but you only need to multiply the whole number and the numerator..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158113,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0387c635-6f6c-4e59-8c12-1f2d3b5d4cbf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you just divided by the 2 to get 10 and then added on one. To work out how much flour Jet needs we need to do the calculation 20 x 2/3. This means doing 20 x 2 and then dividing this answer by 3...",
+        "B": "If Jet uses 2/3 of a cup of flour per cake and is making 20 cakes we need to do 20 x 2/3 = 40/3. There are 13 threes in 40 with 1 leftover so the answer will be between 13 and 14",
+        "C": "Be careful here. I think you did the initial calculation correctly but then subtracted rather than added. We are being asked, which two numbers our answer will be between. If we go down, we will not have enough cups of flour to make the cakes. ",
+        "D": "You have done 20 ÷ 2/3 we need to do 20 x 2/3 to get the total amount of flour..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158280,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8d02ea42-3f65-410d-9cb8-c3374b21b6c6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful here. I think you did the initial calculation correctly but then subtracted rather than added. We are being asked, which two numbers our answer will be between. If we go down, we will not have enough cups of flour to make the cakes. ",
+        "B": "I think you divided by the 3, rounded, and then added on one. To work out how much flour Alex needs we need to do the calculation 22 x 3/5. This means doing 22 x 3 and then dividing this answer by 5...",
+        "C": "You have done 22 ÷ 3/5 we need to do 22 x 3/5 to get the total amount of flour...",
+        "D": "If Alex uses 3/5 of a cup of flour per cake and is making 22 cakes we need to do 22 x 3/5 = 66/5. There are 13 fives in 66 with 1 leftover so the answer will be between 13 and 14"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

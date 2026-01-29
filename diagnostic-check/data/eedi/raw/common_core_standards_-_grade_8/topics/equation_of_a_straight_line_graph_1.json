@@ -1,0 +1,165 @@
+{
+  "shortcode": "v10",
+  "name": "Equation of a straight line graph 1",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 155,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Determine if a given point lies on a line",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find the gradient of a line written in the form y = mx + c",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find the y-intercept of a line written in the form y = mx + c",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find the x-intercept of a line written in the form y = mx + c",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Sketch, or identify a sketch, of a line given in the form y = mx + c, where m is positive",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 107336,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b847ac35-2402-4279-a546-059535df2142.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The gradient of a line is the coefficient (number in front) of x. Comparing 𝑦 = 2𝑥 - 3 with the equation of a straight line 𝑦 = 𝑚𝑥 + 𝑐, where m is the gradient and 𝑐 is the point on the 𝑦 axis where the graph crosses, we can see that 𝑚, the gradient, is 2.",
+        "B": "Almost, but is x part of the gradient?",
+        "C": "It looks like you have confused the 𝑦 intercept with the gradient. The gradient is the m in the equation of a line: y = mx + c.",
+        "D": "It looks like you have confused the 𝑦 intercept with the gradient. The gradient is the m in the equation of a line: y = mx + c."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107356,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6e0ee8b6-4dbf-4d88-a068-e7131bc9a833.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have confused the 𝑦 intercept with the gradient. The gradient is the m in the equation of a line: y = mx + c.",
+        "B": "It looks like you have confused the 𝑦 intercept with the gradient. The gradient is the m in the equation of a line: y = mx + c.",
+        "C": "Comparing 𝑦 = (−½)𝑥 + 2 with the equation of a straight line 𝑦 = 𝑚𝑥 + 𝑐, where m is the gradient and 𝑐 is the point on the 𝑦 axis where the graph crosses, we can see that 𝑚, the gradient, is −½.",
+        "D": "Almost, but is x part of the gradient?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107337,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2d48ce71-ffc3-4e45-ab4b-51454b892378.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you may have confused the x and y coordinates. Remember coordinates are always (x, y). Be careful to take signs into account",
+        "B": "Almost, but remember the general form of a straight line is y = mx + c. What is the c here?",
+        "C": "It looks like you may have confused the x and y coordinates.",
+        "D": "Comparing 𝑦 = 2𝑥 − 3 (which can also be thought of as 𝑦 = 2𝑥 + (−3)) with the equation of a straight line 𝑦 = 𝑚𝑥 + 𝑐, where m is the gradient and c is the point on the 𝑦 axis where the graph crosses, we can see that c, the y intercept, is − 3. This represents the 𝑦 coordinate on the 𝑦 axis. Anywhere on the 𝑦 axis, the 𝑥 coordinate has a value of 0, which means that the coordinates of the 𝑦 intercept are (0, − 3)."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107357,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f3dad254-0778-408b-ae66-67e30564a888.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you may have confused the x and y coordinates. Remember y = mx + c is the equation of a straight line and c represents where the line intercepts the y axis.",
+        "B": "It looks like you may have got confused with positive and negative signs. Remember y = mx + c is the equation of a straight line and c represents where the line intercepts the y axis.",
+        "C": "Almost, but it looks like you may have confused the x and y coordinates.",
+        "D": "Comparing 𝑦 = (−½)𝑥 + 2 with the equation of a straight line 𝑦 = 𝑚𝑥 + 𝑐, where 𝑚 is the gradient and 𝑐 is the point on the 𝑦 axis where the graph crosses, we can see that 𝑐, the 𝑦 intercept, is 2. This represents the 𝑦 coordinate on the 𝑦 axis. Anywhere on the 𝑦 axis, the x coordinate has a value of 0, which means that the coordinates of the 𝑦 intercept are (0, 2)."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107338,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1e12c390-1066-4d25-96dc-4809e13251e5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. The line is sloping upwards so the gradient could be 2. However this graph crosses the y axis above the x axis, which means the c would be positive in y = mx + c",
+        "B": "One way of identifying the correct graph is to compare its equation, 𝑦 = 2𝑥 − 3, with 𝑦 = 𝑚𝑥 + 𝑐, where m is the gradient and 𝑐 is the point on the 𝑦 axis where the graph crosses. Doing this, we can see that the gradient is 2, so is positive, which means it is sloping upwards. Thus sketches C and D can be eliminated. The 𝑐 value is −3 (the equation could also be thought of as 𝑦 = 2𝑥 ＋ (−3)): looking along the 𝑦 axis of sketches A and B, only B crosses the y axis at a negative value; hence, this is the correct answer.",
+        "C": "Not quite, this graph is sloping downwards so has a negative gradient. The gradient is m for the straight line y = mx + c",
+        "D": "Not quite, this graph is sloping downwards so has a negative gradient. The gradient is m for the straight line y = mx + c"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107358,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cc03d9a5-3411-4f64-8546-afe5b5f4a293.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, this graph is sloping upwards so has a positive gradient. The gradient is m for the straight line y = mx + c",
+        "B": "Not quite, this graph is sloping upwards so has a positive gradient. The gradient is m for the straight line y = mx + c",
+        "C": "One way of identifying the correct graph is to compare its equation, 𝑦 = (−½)𝑥 + 2, with 𝑦 = 𝑚𝑥 + 𝑐, where 𝑚 is the gradient and 𝑐 is the point on the 𝑦 axis where the graph crosses. Doing this, we can see that the gradient is −½, so is negative, which means it is sloping down. Thus sketches A and B can be eliminated. The 𝑐 value is 2: looking along the 𝑦 axis of sketches C and D, only C crosses the 𝑦 axis at a positive value; hence, this is the correct answer.",
+        "D": "Almost. The graph is sloping downwards so could have a gradient of -1/2. However the y intercept is below the x axis so the c would have to be negative in y = mx + c"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107339,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f7176b00-f640-4e15-90ff-673e0665f530.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "In order to work out whether coordinates lie on a line, substitute the values into the equation and see if they make mathematical sense. For Tom’s (5, 7), we have 7 = 2 × 5 − 3 which is true, so this point does lie on the line. For Katie’s (−5, −7), we have −7 = 2 × (−5) − 3 = −13, which is false, and so does not lie on the line.",
+        "B": "Not quite! Think carefully about subtracting your negative numbers here! Remember, we input the x and y values from the coordinates into the equation to see if the points lie on the line.",
+        "C": "Not quite! Think carefully about subtracting your negative numbers here! Remember, we input the x and y values from the coordinates into the equation to see if the points lie on the line.",
+        "D": "Remember, in order to test if points lie on the line, we need to input the x and y values from the coordinates and see if the result works in the equation y = 2x - 3 in this case."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107359,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/284bc07e-9764-4362-a545-fd46ec8d2054.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Think carefully about calculating with negative numbers here! Remember, we input the x and y values from the coordinates into the equation to see if the points lie on the line.",
+        "B": "In order to work out whether coordinates lie on a line, substitute the values into the equation and see if they make mathematical sense. For Jo’s (−6, 1), we have 1 = − ½ × −6 + 2, so 1 = 3 + 2, which is incorrect. For Paul’s (6, −1), we have −1 = − ½ × 6 + 2, so -1 = −3 + 2, which is correct. This means that only Paul is correct",
+        "C": "Not quite! Think carefully about calculating with negative numbers here! Remember, we input the x and y values from the coordinates into the equation to see if the points lie on the line.",
+        "D": "Not quite! Think carefully about calculating with negative numbers here! Remember, we input the x and y values from the coordinates into the equation to see if the points lie on the line."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107340,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7e44ab18-4094-406a-8bf1-327428e05394.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, this is the gradient of the line. At Q the y coordinate is 0. Use this to find x",
+        "B": "Not quite! You've looked at the 𝑦 intercept and changed the sign. At Q the y coordinate is 0. Use this to find x",
+        "C": "𝑄 lies on the 𝑥 axis, which tells us that it has coordinates (𝑥, 0). It also lies on the line 𝑦 = 2𝑥 − 3, which tells us the relationship between the 𝑥 and 𝑦 coordinates. 𝑄’s 𝑦 coordinate is 0, so 𝑦 = 2x − 3 becomes 0 = 2𝑥 − 3. To solve, add 3 to both sides: 3 = 2𝑥, and now divided both sides by 2 to give 3/2 = 𝑥. This gives the coordinates (3/2, 0).",
+        "D": "Almost. Just check that you undid the -3 and the x 2 when solving the equation."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107360,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0404aa01-fe44-4e83-98c9-c248e10b4d55.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "𝑄 lies on the 𝑥 axis, which tells us that it has coordinates (𝑥, 0). It also lies on the line 𝑦 = (−½)𝑥 + 2, which tells us the relationship between the 𝑥 and 𝑦 coordinates. 𝑄’s 𝑦 coordinate is 0, which makes 𝑦 = (−½)𝑥 + 2 into 0 = (−½)𝑥 + 2 . To solve, subtract 2 from both sides: −2 = (−½)𝑥, and now divided both sides by −½ (it’s probably simpler to think of this stage as multiplying both sides by −2 to give −2 × −2 = 4 = 𝑥. This gives the coordinates (4, 0).",
+        "B": "Not quite! You've looked at the 𝑦 intercept. At Q the y coordinate is 0. Use this to find x",
+        "C": "Not quite! Remember the inverse of multiplying by −½ is dividing by −½. We can also think of this as multiplying by -2.",
+        "D": "Not quite! Be careful with solving the equation. Remember the inverse of multiplying by −½ is dividing by −½. We can also think of this as multiplying by -2."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

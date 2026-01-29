@@ -1,0 +1,141 @@
+{
+  "shortcode": "vok",
+  "name": "Fractions on a number line",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 89,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Read a fraction on a scale where the required number is marked by a dash between two numbers",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 75924,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e9a709fa-b2e1-4b43-b1d8-d3133063b276.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The two fractions we are comparing are 1/4 and 3/4. These are equivalent to 4/16 and 12/16. This means each jump is 2/16 so the second blue arrow is pointing to 10/16. Therefore 11/16 cannot be between the two arrows.",
+        "B": "1/4 = 50/200 and 3/4 = 150/200 so this fraction would be exactly half way between them, so would be between the blue arrows",
+        "C": "1/4 = 3/12 and 3/4 = 9/12. If we change 1/3 into twelfths we get 4/12 which is very close to 3/12, so this fraction would be between the blue arrows",
+        "D": "1/4 = 5/20 and 3/4 = 15/20. If we change 2/5 into twentieths we get 8/20 which is less than half way between these fractions so it would lie between the blue arrows"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 76072,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2bb4d304-c274-4bd8-8c0e-1bce537c2fe1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "1/5 = 4/20 and 3/5 = 12/20. When we change 1/4 into twentieths we get 5/20 which is very close to 4/20 so would be between the blue arrows.",
+        "B": "1/5 is equivalent to 4/20 and 3/5 is equivalent to 12/20. This means that each jump is 2/20, making the second arrow point to 10/20. 11/20 is greater than this so wouldn't go between the two arrows",
+        "C": "1/5 = 50/250 and 3/5 = 150/250. 100/250 is exactly half way between these two fractions so it would be between the blue arrows",
+        "D": "This would be exactly half way between 1/5 and 3/5 so would be between these blue arrows."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 76741,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/542ab011-fc10-4d48-a18c-4b3ef0dd52a7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Are you sure? Check the first number on the number line again",
+        "B": "You're so close! This is the mixed number shown, but the question has asked for the improper fraction shown, try again :)",
+        "C": "As there are 2 indents between 1 and 2, these represent a third each. So the fraction is 1 + 2/3, which is 5/3 as an improper fraction.",
+        "D": "Not quite, take care to look at how many sections one whole has been split into: 3"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78808,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1db50a8d-20a6-45e7-86ec-d1d6b236648b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Are you sure? Check the first number on the number line again",
+        "B": "You're so close! This is the mixed number shown, but the question has asked for the improper fraction shown, try again :)",
+        "C": "Not quite, one whole has been split into 4 sections, not 3. Have another go :)",
+        "D": "This is the third of four marks (each representing 1/4) between 1 and 2, so it shows 1 + 3/4 = 7/4."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 100595,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fec8a1e1-0497-40d2-b66c-f9ffa278c084.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The half-way mark between 1/5 and 3/5 will be 2/5. The arrow is pointing to halfway between 2/5 and 3/5. Half way between 2 and 3 is 2.5, meaning the arrow is pointing to 2.5/5. Multiplying top and bottom by 2 in order to get the necessary integer values for a fraction gives 5/10. Simplifying gives 1/2.",
+        "B": "You may just be estimating. You need to work out exactly what it is. You can use decimals in your working if that helps!",
+        "C": "You have correctly identified how far between the two fractions the arrow is, but we need the value it is pointing to. First think about what fraction would be exactly half way between 1/5 and 3/5.",
+        "D": "Maybe you found the fraction halfway between these values (2/5) and then got stuck. What number is halfway between 2 and 3? You can use decimals in your workings and then simplify the fraction to get your answer."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 100611,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bcb0c8fa-bab3-4ee4-b2b6-7f24074fedd4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have correctly identified how far between the two fractions the arrow is, but we need the value it is pointing to. First think about what fraction would be exactly half way between 1/6 and 3/6.",
+        "B": "You may just be estimating. You need to work out exactly what it is. You can use decimals in your working if that helps!",
+        "C": "The half-way mark between 1/6 and 3/6 will be 2/6. The arrow is pointing to halfway between 2/6 and 3/6. Half way between 2 and 3 is 2.5, meaning the arrow is pointing to 2.5/6. Multiplying top and bottom by 2 in order to get the necessary integer values gives 5/12.",
+        "D": "Maybe you found the fraction halfway between these values (2/6) and then got stuck. What number is halfway between 2 and 3? You can use decimals in your workings and then simplify the fraction to get your answer."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 100603,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/65bab30b-0d7a-476d-95ac-6d9d1c8d1bb9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The 3 and 5 don't tell us the fraction. We need to look at the difference between these numbers and how many jumps it has been split into.",
+        "B": "Almost, this would have been right if the marked numbers were 3 and 4. What difference does the extra 1 make?",
+        "C": "Not quite. Think about the difference between the 3 and 5, and how many jumps it has been split into.",
+        "D": "The difference between the marked values of 5 and 3 is 2. This amount is shared evenly along 3 intervals, meaning that each of those intervals has a value of 2 ÷ 3 = 2/3."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 100619,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/96b11f96-a227-423f-826f-69e53b65444a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Think about the difference between the 3 and 7, and how many jumps it has been split into.",
+        "B": "The difference between the marked values of 7 and 3 is 4. This amount is shared evenly along 3 intervals, meaning that each of those intervals has a value of 4 ÷ 3 = 4/3.",
+        "C": "Not quite. Think about the difference between the 3 and 7, and how many jumps it has been split into.",
+        "D": "You are almost there. Remember the denominator is how many parts it is split into"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131424,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e006db4b-6677-4ee0-8110-5b641377bf7c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The star is in the middle of 3/5 and 4/5. As it is in the middle, we can use a denominator of 10, as these will be the denominators for the unmarked lines. 3/5=6/10, and 4/5=8/10, so the middle is 7/10.",
+        "B": "4/5 is the next mark along the number line. This line is before 4/5. Think about using some equivalent fractions to help you.",
+        "C": "4/10 = 2/5, so this would be further to the left of the number line. A denominator of 10 will help you here though.",
+        "D": "One of these is correct. Try to think about some equivalent fractions to 3/5 and 4/5, this will help you find the value in the middle of them."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133657,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1aad4787-a905-4ce5-a125-e8075651211a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "3/8 is not between 2/4 and 3/4. 1/4 = 2/8, and 2/4 = 4/8, so 3/8 is between those two values. You could use a denominator of 8 to help you here though.",
+        "B": "The star is in the middle of 2/4 and 3/4. As it is in the middle, we can use a denominator of 8 instead, as the lines in between will have this denominator. 2/4 = 4/8 and 3/4 = 6/8, so the middle is 5/8.",
+        "C": "1/2 is equivalent to 2/4. The star is not on the 2/4 line, it is in the middle of 2/4 and 3/4",
+        "D": "One of these is correct. Try to think about some equivalent fractions to 2/4 and 3/4, this will help you find the value in the middle of them."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

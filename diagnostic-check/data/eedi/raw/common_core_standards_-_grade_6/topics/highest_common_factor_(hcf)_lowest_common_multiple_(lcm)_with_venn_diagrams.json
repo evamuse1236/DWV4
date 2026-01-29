@@ -1,0 +1,165 @@
+{
+  "shortcode": "vn5",
+  "name": "Highest common factor (HCF) Lowest common multiple (LCM) with Venn Diagrams",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 69,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Use prime factor decomposition to find the Highest Common Factor of two numbers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify the Lowest Common Multiple of two numbers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use prime factor decomposition to find the Lowest Common Multiple of two numbers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find the prime factor decomposition of a number in non-index form",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use the prime factor decomposition of a number to calculate the number",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 76708,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b512b334-fa96-4dff-a3ea-71d3ce386337.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Try testing out some values to check. You could try finding the lowest common multiple of 5 and 7, as well as 6 and 10, and then trying this method afterwards. Do you get the same answer?",
+        "B": "We can multiply the numbers together only if the numbers share no factors except 1, for example 10 and 27, their LCM is 270, which is 27x10. However, if we try two numbers that do share factors other than 1, for example, 12 and 10, the LCM is 60, which is not 12x10.",
+        "C": "Try testing out some values to check. You could try finding the lowest common multiple of 5 and 7 as well as 6 and 10, and then trying this method afterwards. Do you get the same answer?",
+        "D": "Try testing out some values to check. You could try finding the lowest common multiple of 5 and 7 as well as 6 and 10, and then trying this method afterwards. Do you get the same answer?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78776,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9cf328c2-8c82-4857-8968-6be4288ea0fe.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Multiplying two numbers together will always give a common multiple. It may not be the lowest common multiple, though, depending on whether the values have any common factors. If there are common factors, then dividing by these removes any 'double-counting', and gives the lowest common multiple.",
+        "B": "Try testing out some values to check. You could try finding the lowest common multiple of 5 and 7 as well as 6 and 10, and then trying this method afterwards. Do you get the same answer?",
+        "C": "Perhaps you're not comfortable with this being put in general terms. Try thinking of an actual example, maybe find the LCM for 8 and 10. They have a HCF of 2. Does the method described work for these values?",
+        "D": "Perhaps you're not comfortable with this being put in general terms. Try thinking of an actual example, maybe find the LCM for 8 and 10. They have a HCF of 2. Does the method described work for these values?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 99566,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/19121ddc-4c6b-4e8f-95cc-ccd4c5882478.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've only multiplied the different factors. Remember, though, ★ may have repeating factors, and these should be taken into account to work out its value.",
+        "B": "I think you have multiplied some of the factors, but not all. Remember the circle of ★ includes all of the factors of the number.",
+        "C": "All of the left-hand circle contains the prime factors of ★. These multiply to give the value of ★, which means we can write ★ = 2 × 3 × 2 × 3 = 36.",
+        "D": "I think you have multiplied some extra factors, rather than only the factors of ★. Remember the circle of ★ includes all of the factors of the number."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 99581,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/34dd6ae5-c7bf-4b65-94da-89f6a023fae2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You've found one of the factors of ★, but all of them are contained within the left-hand circle (including in the overlapping section). What value does that give?",
+        "B": "All of the left-hand circle contains the prime factors of ★, which means we can write ★ = 11 × 2 × 3 = 66.",
+        "C": "I think you have added the factors. Remember, factors always multiply to give the number.",
+        "D": "I think you've multiplied all the visible numbers together. Remember, the factors of ★ are given in its circle only."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 99567,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2255d451-ce5b-4a7c-a67d-44c6508ce8c1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "All the numbers in the right-hand circle will have to multiply to give 90. But if ❤ = 2, then this wouldn't be the case.",
+        "B": "If ❤ = 3, then the right-hand circle would be 2 × 3 × 3 × 3 = 54, so not 90. Can you think of the quickest way of working out the value of ❤?",
+        "C": "The numbers in the right-hand circle multiply to give 90. So we can write 90 = 2 × 3 × 3 × ❤, giving 90 = 18 × ❤. This means that the missing prime factor is 5.",
+        "D": "I think you have divided 90 by 3, but there are some other prime factors to divide by too. Remember the value we're looking for is a prime factor, so it needs to be prime :)"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 99582,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b5fb421d-6f2b-4083-a5c4-106d79999417.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've found the prime factors of 60, but notice that the 2,2 and 3 are already in the circle for 60. What is the missing prime factor?",
+        "B": "The numbers in the right-hand circle multiply to give 60. Therefore 60 = 2 × 3 × 2 × ❤, giving 60 = 12 × ❤. This means that the missing prime factor is 5.",
+        "C": "I think you've divided by 2 because it's in the circle of 60. Remember that the values in the overlap are also in the circle of 60. What prime factor is missing here?",
+        "D": "The information in the right-hand circle of the Venn diagram has all the numbers that multiply to give 60. As you're trying to work out one of these numbers, have a think about how you could write this as a calculation: 60 = ...×...×...×..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 99568,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c97110c7-752a-46f6-9d5c-fa485698340a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You may be confusing the highest common factor with the lowest common multiple. Remember, for the LCM we're dealing with multiples, so always values greater than (or sometimes equal to) any of the numbers given.",
+        "B": "The intersection of the Venn diagram contains the factors that 36 and 90 have in common. So, 2, 3 and 3 are common factors of 36 and 90. Their product, 2 ✕ 3 ✕ 3 = 18, is the highest common factor of 36 and 90.",
+        "C": "You have multiplied the numbers that are not in the intersection: these are not the common factors, but extra 'left over' factors, if you like. The common ones are in the intersection.",
+        "D": "I think you've only used one of each unique prime factor. To find the HCF, we're looking for the factors that are in common. Where are these shown on the Venn Diagram?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 99583,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f3ac1432-455f-40e4-b667-14cbeecbf3db.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You've found the lowest common multiple! :) We're looking for the highest common factor here, can you use the prime factors that are in common?",
+        "B": "The factors that 66 and 60 have in common are contained in the intersection of the Venn diagram. So, 2 and 3 are common factors of 66 and 60. Their product, 2 ✕ 3 = 6, will be the highest common factor of 66 and 60.",
+        "C": "You have multiplied the numbers that are not in the intersection: these are not the common factors, but extra 'left over' factors, if you like. The common ones are in the intersection.",
+        "D": "I think you've only used one of each unique prime factor. To find the HCF, we're looking for the factors that are in common. Where are these shown on the Venn Diagram?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 99573,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/37d8ea03-b230-4fa8-95ec-ebe5d79da384.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Multiplying all the numbers in the Venn diagram together will give the lowest common multiple.",
+        "B": "You've found the Highest Common Factor :) We need to find the lowest common multiple for this question. To help you check your next answer, see if it is a multiple of 36 and 90.",
+        "C": "You have multiplied the numbers that are not in the intersection: these are not the only factors we need to use. Remember your answer needs to be a multiple of both 36 and 90.",
+        "D": "I think you've only used one of each unique prime factor. To find the LCM, we're looking for all the factors of these numbers."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 99588,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8b1ee234-f652-4404-b615-22b283074924.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have multiplied the numbers that are not in the intersection: these are not the only factors we need to use. Remember your answer needs to be a multiple of both 66 and 60.",
+        "B": "You've found the Highest Common Factor :) We need to find the lowest common multiple for this question. To help you check your next answer, see if it is a multiple of 66 and 60.",
+        "C": "The product of all the numbers in the Venn diagram is the lowest common multiple, meaning answer C is correct.",
+        "D": "I think you've only used one of each unique prime factor. To find the LCM, we're looking for all the factors of these numbers."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

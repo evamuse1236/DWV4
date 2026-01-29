@@ -1,0 +1,153 @@
+{
+  "shortcode": "v0u",
+  "name": "Rotations 1",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 104,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Rotate an object or point 90° clockwise or anticlockwise about a point, where the point lies on the edge or outside of the object",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Rotate an object or point 180° about a point, where the point lies on the edge or outside of the object ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Describe a 90° or 270° rotation giving the angle and direction of rotation, and the coordinates of the centre of rotation, where the centre of rotation lies on the edge or outside of the object ",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 79731,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2ca96454-6a47-4a50-9589-3e88cb9e73f2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember 180° is half a turn. I think you have only done a quarter turn",
+        "B": "You've used the correct angle, but the centre of rotation needs to be at the origin (0,0).",
+        "C": "Not quite. I think you might have reflected in the line y=x. Try using tracing paper if you have it or counting the squares to the origin",
+        "D": "When rotated 180 degrees, the shape P would rotate by a half turn. Point (-1,3) would rotate around to (1,-3)."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79771,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/69a3a1d5-c1a8-42a7-98a1-92f9d4269941.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "When rotated 180 degrees, the shape P would rotate by a half turn. Point (2,2) would rotate around to (-2,-2)",
+        "B": "I think you've reflected in the x-axis. Here we need to rotate the shape.",
+        "C": "Make sure to rotate the red point instead of one of the blue ones.",
+        "D": "Make sure to rotate the red point instead of one of the blue ones."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 79732,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ebd8acee-978e-4071-bcc5-406cbae609e3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The lowest point of the original shape is 2 left and 1 up from our centre. If we rotate this by a quarter turn clockwise we get 2 up and 1 right. This gives us Shape A.",
+        "B": "You've rotated the shape using the correct angle and direction but you've used the incorrect centre of rotation",
+        "C": "Not quite, you've rotated the shape 180° instead of 90°",
+        "D": "Check the direction...it should be clockwise."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79772,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/227ab3e9-2ae2-4991-9991-fb395a5ee8da.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you have found one point correctly, but try to visualise what orientation the triangle would be in if rotated 90 degrees clockwise",
+        "B": "The right angle of the original shape is 1 right and 2 up from the origin. If we rotate this by a quarter turn clockwise we get 1 down and 2 right. This gives us Shape B.",
+        "C": "Almost! Check that you've used the correct centre of rotation.",
+        "D": "Check the direction...it should be clockwise."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 98926,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3c8ac0e3-5c54-4e2a-a288-4851df74ca37.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly! You've rotated the shape 90°, not 180°.",
+        "B": "When rotated 180 degrees, the shape P would rotate by a half turn. Point (3, 4) would rotate around to (−3, −4).",
+        "C": "Almost, remember it's the position of the red point after the rotation.",
+        "D": "Not quite, remember that the x value is the horizontal value and the y value is the vertical value."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 98942,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/22d619a3-c1f6-4c1d-b532-5beec168e75a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly! You've rotated the shape 90° clockwise, not 180°.",
+        "B": "Almost, remember it's the position of the red point after the rotation.",
+        "C": "When rotated 180 degrees, the shape P would rotate by a half turn. Point (−3, 3) would rotate around to (3, −3).",
+        "D": "Almost! You've rotated the shape 90° anti-clockwise, not 180°."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 98927,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9416b712-933b-443a-b604-8e2ec271a2f3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The bottom right point of the blue shape is currently 2 squares up from the centre (3,0). We need to rotate by 90 degrees clockwise so instead of travelling 2 squares up we need to travel 2 squares to the right. This gives us shape A",
+        "B": "Nearly! I think you've used the centre (0,3) rather than (3,0). Remember in coordinates the x value comes first",
+        "C": "Nearly! You've rotated the shape 180°, not 90°.",
+        "D": "Almost! You rotated 90 degrees anticlockwise instead of clockwise."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 98943,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/af7b8a01-729b-44c7-acdb-4d52eefc779a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Very close! You rotated 90 degrees clockwise instead of anti-clockwise.",
+        "B": "Be careful with your centre of rotation, it should be (-2, 2). Try counting squares from one corner of the blue shape to this centre",
+        "C": "Not quite! The centre of rotation isn't the origin in this question, it should be (-2, 2)",
+        "D": "The bottom right point of the blue shape is currently 1 square up from the centre (-2,2). We need to rotate by 90 degrees anti-clockwise so instead of travelling 1 square up we need to travel 1 square to the left. This gives us shape D"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 98928,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/80b54f4e-f3cb-4782-978f-f2c7c9a6ebff.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Start by having a good guess at where the centre might be. The check this using either tracing paper or by counting squares",
+        "B": "Start by having a good guess at where the centre might be. Then find a pair of corresponding points on P and Q. Count the squares needed to get from each point back to the centre. They should be equal in magnitude, just rotated. So a journey of 3 squares right and 4 squares up becomes 3 squares down and 4 squares right. If you have tracing paper you can use this to check your guess!",
+        "C": "Almost! Remember in coordinates the x value comes first and represents the horizontal value",
+        "D": "Not quite. Start by having a good guess at where the centre might be. The check this using either tracing paper or by counting squares"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 98944,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/88975122-98b8-4f48-89f7-e360055b3f9c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Start by having a good guess at where the centre might be. Then find a pair of corresponding points on P and Q. Count the squares needed to get from each point back to the centre. They should be equal in magnitude, just rotated. So a journey of 2 squares left and 1 square up becomes 2 squares up and 1 square right. If you have tracing paper you can use this to check your guess!",
+        "B": "Not quite. Start by having a good guess at where the centre might be. The check this using either tracing paper or by counting squares",
+        "C": "Not quite. Start by having a good guess at where the centre might be. The check this using either tracing paper or by counting squares",
+        "D": "Not quite. Start by having a good guess at where the centre might be. The check this using either tracing paper or by counting squares"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

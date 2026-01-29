@@ -1,0 +1,153 @@
+{
+  "shortcode": "bitl",
+  "name": "Mental addition within 1000",
+  "collectionId": 33,
+  "level": 1,
+  "sequence": 16,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Complete mental addition problems up to 1000",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Complete missing number mental addition problems up to 1000 ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Recognise and use efficient strategies for mental addition",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 131351,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a414fa0a-c56c-4a51-8686-875c28a9fb0b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added 900 and 263. But, we need to know what to add to 263 to get to 900. You could also call this the difference between 900 and 263.",
+        "B": "Be careful when subtracting. Separating out the 263 can help, first subtract 200, then 60 and then the 3.",
+        "C": "The empty box will be filled with the number that we would need to add to 263 to get 900. To work this out we can subtract 263 from 900. 900 - 200 = 700, 700 - 60 = 640 and 640 - 3 = 637. Therefore 263 + 637 = 900.",
+        "D": "Be careful when subtracting. Separating out the 263 can help, first subtract 200, then 60 and then the 3."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133584,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d4209923-9b0e-48a4-bbb5-1362e9412ad5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The empty box will be filled with the number that we would need to add to 374 to get 800. To work this out we can subtract 374 from 800. 800 - 300 = 500, 500 - 70 = 430 and 430 - 4 = 426. Therefore 374 + 426 = 800.",
+        "B": "Be careful when subtracting. Separating out the 374 can help, first subtract 300, then 70 and then the 4.",
+        "C": "I think you have added 800 and 374. But, we need to know what to add to 374 to get to 800. You could also call this the difference between 800 and 374. ",
+        "D": "Not quite, be careful when subtracting. Separating out the 374 can help, first subtract 300, then 70 and then the 4."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146165,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a1ba66ba-e351-42ea-8a48-7e867bd00775.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have used a different technique. Ron’s technique starts by adding on tens first, then units. Which example shows this?",
+        "B": "Using Ron’s method. 38 + 40 = 78, and 78 + 5 = 83",
+        "C": "I think you have used a different technique. Ron’s technique starts by adding on tens first, then units. Which example shows this?",
+        "D": "I think you have used a different technique. Ron’s technique starts by adding on tens first, then units. Which example shows this?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146185,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/98579a93-1f9a-4979-acb5-246ba58d7c11.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have used a different technique. Ron’s technique starts by adding on tens first, then units. Which example shows this?",
+        "B": "Using Ron’s method. 37 + 50 = 87, and 87 + 6 = 93",
+        "C": "I think you have used a different technique. Ron’s technique starts by adding on tens first, then units. Which example shows this?",
+        "D": "I think you have used a different technique. Ron’s technique starts by adding on tens first, then units. Which example shows this?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146166,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0ac04bca-6942-438a-9caa-f0091c6dd2ff.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, Isla has made another jump after adding on the 200. Make sure you include both jumps when working out what the second number is.",
+        "B": "Isla has calculated 520 when adding the second number on, but it is part of the answer not the calculation. Which parts of the diagram show the second number?",
+        "C": "Isla has calculated 550 when adding the second number on, but it is part of the answer not the calculation. Which parts of the diagram show the second number?",
+        "D": "Isla starts at 320 and then jumps forward 200 to get to 520. She then jumps another 30 to get to 550. In total Isla jumped forward 230. Therefore she is adding together 320 and 230."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146186,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fa515ad3-c893-4e3e-ae04-97277ff49f98.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Isla starts at 350 and then jumps forward 300 to get to 650. She then jumps another 40 to get to 690. In total Isla jumped forward 340. Therefore she is adding together 350 and 340.",
+        "B": "Isla has calculated 650 when adding the second number on, but it is part of the answer not the calculation. Which parts of the diagram show the second number?",
+        "C": "Isla has calculated 690 when adding the second number on, but it is part of the answer not the calculation. Which parts of the diagram show the second number?",
+        "D": "Not quite, Isla has made another jump after adding on the 300. Make sure you include both jumps when working out what the second number is."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 156278,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b65d068c-9d16-481e-8bee-ed5863e103c0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We could add hundreds, tens and units together separately, before adding them up. 300 + 400 = 700, 20 + 30 = 50, and 5 + 8 = 13. 700 + 50 = 13 = 763.",
+        "B": "I think you have made an arithmetic error. Consider adding your units, tens and hundreds separately before adding them all together.",
+        "C": "I think you have made an arithmetic error. Consider adding your units, tens and hundreds separately before adding them all together.",
+        "D": "I think you have forgotten to carry. Remember, you can regroup 10 units into 1 ten and then 10 tens into 1 hundred."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 156296,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4f4e47c6-f160-4ccb-bbe5-af2ac48fde29.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have made an arithmetic error. Consider adding your units, tens and hundreds separately before adding them all together.",
+        "B": "I think you have made an arithmetic error. Consider adding your units, tens and hundreds separately before adding them all together.",
+        "C": "We could add the hundreds, tens and units separately before adding them all together. 300 + 500 = 800, 50 + 30 =80, 6 + 8 = 14. In total, 800 + 80 + 14 = 894.",
+        "D": "I think you have forgotten to carry. Remember, you can regroup 10 units into 1 ten and then 10 tens into 1 hundred."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158772,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f99450a1-b1f0-47aa-87de-17d0c8596abd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Amy starts at 375 and adds 200. 375 + 200 = 575. Then she adds 30. 575 + 30 = 605. Then she adds 2. 605 + 2 = 607.",
+        "B": "Careful that you don't include the starting number when you count on. For example, counting on 200 from 375 we would count 475, 575 and not 375, 475.",
+        "C": "Almost! But check your hundreds digit again. Did you have 1 to carry over from adding the tens?",
+        "D": "So close, but what was the last number Amy had to add on?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158971,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3131d8e9-de10-4c74-b5b2-bebf76f9254d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Careful that you don't include the starting number when you count on. For example, counting on 300 from 455 we would count 555, 655, 755 and not 455, 555, 655.",
+        "B": "So close, but what was the last number Patty had to add on?",
+        "C": "Patty starts at 455 and adds 300. 455 + 300 = 755. Then she adds 70. 755 + 70 = 825. Then she adds 2. 825 + 2 = 827.",
+        "D": "Almost! But check your hundreds digit again. Did you have 1 to carry over from adding the tens?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,153 @@
+{
+  "shortcode": "vw4",
+  "name": "Volume of prisms 1",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 209,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate the volume of other prisms when the dimensions are given in the same units",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify a prism from a diagram",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify cross sections of 3D shapes",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 95785,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bf536309-3a02-4d30-821f-558e578fc528.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! A rectangle is only a 2D shape, not a solid which is 3D, so it would not have a cross-section.",
+        "B": "Not quite! The uniform cross-section of a cube is a square not a rectangle.",
+        "C": "A cross section is the resulting shape obtained by making a slice through an object. A uniform cross section happens when you cut the shape in a particular way and the resulting shape matches the ends. Shape Q must be that of a cuboid because by cutting in one direction, a rectangle would appear all the way through.",
+        "D": "Not quite! The rectangle shown is a uniform cross-section of solid Q. A uniform cross section happens when you cut the shape in a particular way and the resulting shape matches the ends. Although you would see a rectangle at some points when you cut into a cylinder in a certain direction, this would not be the same throughout the shape."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 95821,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5c9a98fb-7f4c-4ad9-be78-c2ccef7e03b5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost! Well done for finding the rectangular cross-section in the rectangular-based pyramid. For the cube and cylinder, think about if you could find a rectangle at a different angle in the shape.",
+        "B": "Almost! Well done for correctly identifying the rectangular cross-section from the diagonal of the cube. Have a think about all the different cross-sections for a rectangular-based pyramid and a cylinder.",
+        "C": "Almost! Well done for finding the rectangular cross-section in a cylinder. Have a think about the cross-sections in a cube and a rectangular-based pyramid. Try thinking about different angles and diagonals we could use.",
+        "D": "A cross section is the resulting shape obtained by making a slice through an object. This question does not specify in which direction the slice should be made, nor that it should be capable of giving a uniform cross-section. This means that all these shapes could produce a rectangle (for Answer A: slicing horizontally, for Answer B: taking a diagonal slice, and for Answer C: taking a vertical slice)."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 95786,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/57f0f5aa-a00c-42e4-998d-455b2627c65c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A cross section is the resulting shape obtained by making a slice through an object. If a cone is sliced horizontally anywhere along its height, the shape made where the slice occurs will be a circle. As the cone tapers to a point, these circles will become smaller the further up the cone.",
+        "B": "A circle is a 2D shape, but we are looking at the cross-section of a solid, which would be a 3D shape.",
+        "C": "A triangular-based prism, if you cut a slice out of it at any point, the slice would not be shaped like a circle. Have a think about another solid which has a circular cross-section at one point of the shape.",
+        "D": "Think carefully about all the shapes here. We are looking for a solid, which, if you cut a slice out of it at any point or in any direction, it would be circular."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 95822,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/426a8dcb-f986-49dc-9613-48f39d1d6d11.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A uniform cross-section is when you cut a solid in a way such that the same cross-sectional shape continues throughout the solid. Although a triangular based pyramid has a triangle cross section at certain points, this identical shape does not continue throughout.",
+        "B": "A uniform cross-section is when you cut a solid in a way such that the same cross-sectional shape continues throughout the solid. Although a cone would have a triangle cross section at certain points, this identical shape does not continue throughout.",
+        "C": "A cross section is the resulting shape obtained by making a slice through an object. A uniform cross-section happens when you cut the shape in a particular way and the resulting shape matches the ends. The word ‘prism’ means the shape has identical ends and a uniform cross-section. Answer C tells us that this shape has a triangle running all the way through it. The other options can produce a triangle when sliced in a particular way, but this triangle will be different along its length.",
+        "D": "A uniform cross-section is when you cut a solid in a way such that the same cross-sectional shape continues throughout the solid. Think carefully about which of the shapes here would have the identical triangle running the entire way through them."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 110198,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/936b723e-dcf2-4439-8a0a-e1260e307089.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Remember a prism is a 3D shape with two identical ends that are parallel, no curved edges and the same cross-section throughout. Does Katies shape match this criteria? Does Toms?",
+        "B": "Not quite! Remember a prism is a 3D shape with two identical ends that are parallel, no curved edges and the same cross-section throughout. Does Katies shape match this criteria? Does Toms?",
+        "C": "Both of these shapes are prisms as they both have two identical ends and flat side faces, with the cross section being the same all the way through.",
+        "D": "Not quite! At least one person is correct. Remember a prism is a 3D shape with two identical ends that are parallel, no curved edges and the same cross-section throughout, do either of these shapes fit into this category?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 110216,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/53c7a8e1-420f-4420-ad63-bca26c3152d0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Remember a prism is a 3D shape with two identical ends that are parallel, no curved edges and the same cross-section throughout. Does Toms shape match this criteria? Does Katies?",
+        "B": "Not quite! Remember a prism is a 3D shape with two identical ends that are parallel, no curved edges and the same cross-section throughout. Does Katies shape match this criteria? Does Toms?",
+        "C": "Not quite! Remember a prism is a 3D shape with two identical ends that are parallel, no curved edges and the same cross-section throughout, do either of these shapes fit into this category?",
+        "D": "A prism is a 3D shape with two identical ends that are parallel, no curved edges and the same cross-section throughout. Tom's shape is a cylinder, which has curved edges, so therefore is not a prism. Katie's shape does not have the same cross-section throughout, so is also not a prism."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 110199,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/30c3f3bb-7246-4ddc-b709-a7490bd69761.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Remember a prism is a 3D shape with two identical ends that are parallel, no curved edges and the same cross-section throughout. Does Katies shape match this criteria? Does Toms?",
+        "B": "Not quite! Remember a prism is a 3D shape with two identical ends that are parallel, no curved edges and the same cross-section throughout. Does Katies shape match this criteria? Does Toms?",
+        "C": "Not quite! Remember a prism is a 3D shape with two identical ends that are parallel, no curved edges and the same cross-section throughout, do either of these shapes fit this criteria?",
+        "D": "A prism is a 3D shape with two identical ends that are parallel, no curved edges and the same cross-section throughout. Toms shape is square based pyramid and Katies shape is a cone. Neither shapes have the same cross-section throughout therefore neither of them are prisms."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 110217,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6b7c81cf-735c-4616-ab0b-a5a427fc60c0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Remember a prism is a 3D shape with two identical ends that are parallel, no curved edges and the same cross-section throughout. Does Toms shape match this criteria? Does Katies?",
+        "B": "A prism is a 3D shape with two identical ends that are parallel, no curved edges and the same cross-section throughout. Katie's shape fits all this criteria and is therefore a prism. Tom's shape is a cone, which is not a prism as it does not have the same cross section all throughout the shape\n",
+        "C": "Not quite! Remember a prism is a 3D shape with two identical ends that are parallel, no curved edges and the same cross-section throughout. Does Toms shape match this criteria? Does Katies?",
+        "D": "Not quite! At least one person is correct. Remember a prism is a 3D shape with two identical ends that are parallel, no curved edges and the same cross-section throughout. Does Toms shape match this criteria? Does Katies?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 110200,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1af82ea3-7ff3-4fc6-aebf-f5680b30ec3c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! The 4cm length is used in calculating the cross-sectional area of this prism (the area of the trapezium). Remember, the cross-section is the shaded part of the shape, and the depth always runs at a right angle to the cross-section (it looks like it is going away from us).",
+        "B": "Not quite! The 5cm length is used in calculating the cross-sectional area of this prism (the area of the trapezium). Remember, the cross-section is the shaded part of the shape, and the depth always runs at a right angle to the cross-section (it looks like it is going away from us).",
+        "C": "The shaded area is the cross section, which is the same through the entire depth. The depth runs perpendicular (at right angles) to the cross-section of the prism, which is the 6cm length.",
+        "D": "Not quite! The 7cm length is used in calculating the cross-sectional area of this prism (the area of the trapezium).Remember, the cross-section is the shaded part of the shape, and the depth always runs at a right angle to the cross-section (it looks like it is going away from us)."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 110218,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fe42b26c-3925-4598-8ec2-9b7964c35515.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! The 3cm length is used in calculating the cross-sectional area of this prism (the area of the trapezium).Remember, the cross-section is the shaded part of the shape, and the depth always runs at a right angle to the cross-section (it looks like it is going away from us).",
+        "B": "The shaded area is the cross section, which is the same through the entire depth. The depth runs perpendicular (at right angles) to the cross-section of the prism, which is the 4 cm length.",
+        "C": "Not quite! The 5cm length is used in calculating the cross-sectional area of this prism (the area of the trapezium). Remember, the cross-section is the shaded part of the shape, and the depth always runs at a right angle to the cross-section (it looks like it is going away from us).",
+        "D": "Not quite! The 6cm length is used in calculating the cross-sectional area of this prism (the area of the trapezium). Remember, the cross-section is the shaded part of the shape, and the depth always runs at a right angle to the cross-section (it looks like it is going away from us)."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

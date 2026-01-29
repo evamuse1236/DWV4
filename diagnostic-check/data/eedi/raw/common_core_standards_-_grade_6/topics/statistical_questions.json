@@ -1,0 +1,141 @@
+{
+  "shortcode": "ehja",
+  "name": "Statistical questions",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 217,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify a statistical question (US)",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166770,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ba4b7d4c-8df2-40e8-8571-022607d7a9dd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This question has just one correct answer so it is NOT a statistical question. A statistical question requires a variety of answers collected from a group.",
+        "B": "This question has just one correct answer so it is NOT a statistical question. A statistical question requires a variety of answers collected from a group.",
+        "C": "This question has just one answer so it is NOT a statistical question. A statistical question requires a variety of answers collected from a group.",
+        "D": "This IS a statistical question because we need to collect data from a group to answer this question and this data will have variation. In this example, the data is height and the group is all the students in my school."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167020,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a7915f83-07bc-447a-8def-dd7a232df97a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This question has just one answer so it is NOT a statistical question. A statistical question requires a variety of answers collected from a group.",
+        "B": "This IS a statistical question because we need to collect data from a group to answer this question and this data will have variation. In this example, the data is age and the group is all the teachers in my school.",
+        "C": "This question has just one answer so it is NOT a statistical question. A statistical question requires a variety of answers collected from a group.",
+        "D": "This question has just one answer so it is NOT a statistical question. A statistical question requires a variety of answers collected from a group."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166771,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cc20d5f0-0f00-4a8d-9d9e-2cd277a99fa4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This question has just one correct answer so it is NOT a statistical question. A statistical question requires a variety of answers collected from a group.",
+        "B": "This IS a statistical question because we need to collect data from a group to answer it and this data will have variation. In this example, the data is eye color and the group is all the students in the school.",
+        "C": "This question has just one correct answer so it is NOT a statistical question. A statistical question requires a variety of answers collected from a group.",
+        "D": "This question has just one correct answer so it is NOT a statistical question. A statistical question requires a variety of answers collected from a group."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167021,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a4c72db4-fbf3-4ea6-be17-0c6fad7303bb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This question has just one answer so it is NOT a statistical question. A statistical question requires a variety of answers collected from a group.",
+        "B": "This question has just one answer so it is NOT a statistical question. A statistical question requires a variety of answers collected from a group.",
+        "C": "This IS a statistical question because we need to collect data from a group to answer this question and this data will have variation. In this example, the data is height and the group is all the students in the school.",
+        "D": "This question has just one answer so it is NOT a statistical question. A statistical question requires a variety of answers collected from a group."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166772,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bd76f558-3f7f-4e70-9699-05f7e0886e40.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This IS a statistical question because we need to collect data from a group to answer this question and this data will have variation. In this example, the data is hours spent doing homework in 1 week and the group is all the students in my class.",
+        "B": "This question has just one correct answer so it is NOT a statistical question. A statistical question requires a variety of answers collected from a group.",
+        "C": "This question has just one correct answer so it is NOT a statistical question. A statistical question requires a variety of answers collected from a group.",
+        "D": "This question has just one correct answer so it is NOT a statistical question. A statistical question requires a variety of answers collected from a group."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167022,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/52dd9488-e02a-46d0-92ee-996bd0fd53c3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This question has just one answer so it is NOT a statistical question. A statistical question is one that requires us to collect varying data from a group to answer it.",
+        "B": "This question has just one answer so it is NOT a statistical question. A statistical question requires a variety of answers collected from a group.",
+        "C": "This question has just one answer so it is NOT a statistical question. A statistical question requires a variety of answers collected from a group.",
+        "D": "This IS a statistical question because we need to collect data from a group to answer this question and this data will have variation. In this example, the data is hours per day spent on social media and the group is all the students in my year group."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166773,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e7001ff9-e2de-4787-af96-db41a5a36bb7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This question has just one correct answer so it is NOT a statistical question. A statistical question requires a variety of answers collected from a group.",
+        "B": "This IS a statistical question because we need to collect data from a group to answer this question and this data will have variation. In this example, the data is the number of books read this month and the group is all the students in the book club.",
+        "C": "This question has just one correct answer so it is NOT a statistical question. A statistical question requires a variety of answers collected from a group.",
+        "D": "This question has just one correct answer so it is NOT a statistical question. A statistical question requires a variety of answers collected from a group."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167023,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d21a1105-fc77-4e83-a0fc-ac29feb40e10.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This question has just one answer so it is NOT a statistical question. A statistical question requires a variety of answers collected from a group.",
+        "B": "This question has just one answer so it is NOT a statistical question. A statistical question requires a variety of answers collected from a group.",
+        "C": "This IS a statistical question because we need to collect data from a group to answer this question and this data will have variation. In this example, the data is the number of pages read this lesson and the group is all the students in my class.",
+        "D": "This question has just one answer so it is NOT a statistical question. A statistical question requires a variety of answers collected from a group."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166774,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/62878c86-89a4-4503-bd70-7e022a2e1dd8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This IS a statistical question and it could be answered using this data. Data on journey times has been collected from a group of school students and the journey time data will have variation.",
+        "B": "Although you may be able to answer this question from the data, it is NOT a statistical question because it only has a single answer. A statistical question requires a variety of answers collected from a group.",
+        "C": "We are only told that data was collected on journey times, so we may not know the school start time. Also, it is NOT a statistical question because it only has a single answer. A statistical question requires a variety of answers collected from a group.",
+        "D": "Although you may be able to answer this question from the data, it is NOT a statistical question because it only has a single answer. A statistical question requires a variety of answers collected from a group."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167024,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/392d2c4f-9911-4ef6-9a95-766b72afcf80.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Although you may be able to answer this question from the data, it is NOT a statistical question because it only has a single answer. A statistical question requires a variety of answers collected from a group.",
+        "B": "We are only told that data was collected on distance, so we may not know journey times. Also, it is NOT a statistical question because it only has a single answer. A statistical question requires a variety of answers collected from a group.",
+        "C": "We are only told that data was collected on distance, so we may not know the time that school ends. Also, it is NOT a statistical question because it only has a single answer. A statistical question requires a variety of answers collected from a group.",
+        "D": "This IS a statistical question that could be answered using this data. Data on distance travelled to school has been collected from a group of students and the distance data will have variation."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

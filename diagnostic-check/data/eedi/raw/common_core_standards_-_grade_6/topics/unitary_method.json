@@ -1,0 +1,141 @@
+{
+  "shortcode": "vm8",
+  "name": "Unitary method",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 28,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Use direct proportion to solve unitary missing amounts in problems (e.g. recipes)",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 129066,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d33816b5-7732-497e-8c2e-cae0865a6ffb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. You may have subtracted 1 from 4 to get 3 or looked at the plain flour instead of ground almonds. We need to make sure we are looking at the quantity of ground almonds. What do we divide by to get the amount for 1 person?",
+        "B": "The recipe makes enough for 4 people, but we only want enough for 1 person. To get from 4 down to 1, we need to divide by 4. 60g of almonds divided by 4 gives us 15g of ground almonds.",
+        "C": "I think you have subtracted 3g because we have subtracted 3 people, but if we need 60g of almonds for 4 people, we can't just need 1g per person. What do we have to divide 4 by to get down to 1?",
+        "D": "I think you have found the right scale factor (4), but you have multiplied rather than divided. The recipe gives us the quantities for 4 people. Are we expecting to need more ground almonds for just 1 person?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129206,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5a00f373-2639-4471-ab54-5006386f9970.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have subtracted 3g because we have subtracted 3 people, but if we need 90g of sugar for 4 people, we can't just need 1g per person. What do we have to divide 4 by to get down to 1?",
+        "B": "I think you have found the right scale factor (4), but you have multiplied rather than divided. The recipe gives us the quantities for 4 people. Are we expecting to need more sugar for just 1 person?",
+        "C": "I think you have looked at the quantities of plain flour. Read the question carefully to see what ingredient we are trying to work out.",
+        "D": "The recipe makes enough for 4 people, but we only want enough for 1 person. To get from 4 down to 1, we need to divide by 4. 90g of sugar divided by 4 gives us 22.5g of sugar."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129068,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bce65e45-3272-48ec-86af-73db756f9317.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The recipe makes 12 cakes, but we only want to make 1. Therefore we need to divide all of our ingredients by 12. This question is asking us how much sugar we need. 180g divided by 12 is 15g of sugar. To do this in your head you could divide by 6 and then divide by 2, or divide by 3 and then by 4.",
+        "B": "Not quite. I think you have worked out that we need to divide each ingredient by 12. What ingredient is the question asking us about?",
+        "C": "I think you have worked out that the scale factor is 12, but you have multiplied rather than divided. Would you expect to need more or less than 180 grams of sugar for only 1 person?",
+        "D": "I think you have subtracted 11g because we want 11 less cakes. But each cake doesn't need just 1g of sugar. We need to use multiplication or division when scaling a recipe. What do we need to divide 12 by to get down to 1?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129208,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2ab96243-a083-478a-a6d7-97b5ca49de07.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have worked out that the scale factor is 12, but you have multiplied rather than divided. Would you expect to need more or less grams of margarine for only 1 person?",
+        "B": "I think you have subtracted 11g because we want 11 less cakes. But each cake doesn't need just 1g of margarine. We need to use multiplication/division instead. What do we need to divide 12 by to get down to 1?",
+        "C": "The recipe makes 12 cakes, but we only want to make 1. Therefore we need to divide all of our ingredients by 12. This question is asking us how much margarine we need. 180 divided by 12 is 15. To do this in your head you could divide by 6 and then divide by 2, or divide by 4 and then by 3.",
+        "D": "Not quite. I think you have worked out that we need to divide each ingredient by 12. What ingredient is the question asking us about?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129070,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/71b7195a-721d-4561-b0f0-2020172ac8f8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To get from 16 gingerbread men down to 1 gingerbread man, we need to divide by 16. This means we have to divide each ingredient by 16 so 110 divided by 16 would give us the amount of butter needed.",
+        "B": "If we multiply these together, we will get a larger answer. Are we expecting to need more or less than 110g of butter for just 1 gingerbread man?",
+        "C": "16 divided by 110g works out how many gingerbread men can be made with 1g of butter. This is not quite what we want.",
+        "D": "We will need the same proportion of ingredients for each gingerbread man. When we are dealing with proportion, we should only use multiplication and division."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129210,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f72c4330-73dd-4c53-9c49-a7bde9dd3a19.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "16 divided by 30g works out how many gingerbread men can be made with 1g of sugar. This is not quite what we want.",
+        "B": "We will need the same proportion of ingredients for each gingerbread man. When we are dealing with proportion, we should only use multiplication and division.",
+        "C": "To get from 16 gingerbread men down to 1 gingerbread man, we need to divide by 16. This means we have to divide each ingredient by 16 so 30 divided by 16 would give us the amount of sugar needed.",
+        "D": "If we multiply these together we will get a larger answer. Are we expecting to need more or less than 30g of sugar for just 1 gingerbread man?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131362,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/236d8382-124c-4c52-a43d-af3ff8bb58c6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We have to share the cost equally between the 6 bottles. £2.10 divided by 6 is 35p.",
+        "B": "I think you have subtracted 5p, but this is not the same as subtracting the price of 5 bottles. Think about sharing the total price (£2.10) out between the 6 bottles.",
+        "C": "I think you have multiplied by 6. The £2.10 is the price of 6 bottles, not 1. Think about sharing out the total price (£2.10) between the 6 bottles.",
+        "D": "I think you might have made an error when dividing. You can check your answer by multiplying it by 6 to make sure you get £2.10."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133595,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5bfa6123-c9dc-4334-a1e7-112a8358a11c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have multiplied by 8. The £3.60 is the price of 8 bottles, not 1. Think about sharing out the total price (£3.60) between the 8 bottles.",
+        "B": "I think you might have made an error when dividing. You can check your answer by multiplying it by 8 to make sure you get £3.60.",
+        "C": "We have to share the cost equally between the 8 bottles. £3.60 divided by 8 is 45p.",
+        "D": "I think you have subtracted 7p, but this is not the same as subtracting the price of 7 bottles. Think about sharing the total price (£3.60) out between the 8 bottles."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135077,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4f401dae-4a12-4ad8-bba8-0d0a937163ba.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If each of the 5 builders was paid £300, then the total would be £1500. However, the total is £1200. What do we need to divide £1200 by to get our answer?",
+        "B": "Sharing £1200 between the 5 builders will give £1200 ÷ 5 = £240 each.",
+        "C": "I think you have multiplied £1200 by 5 to get £6000. However, it says that the 5 builders share £1200. Which operation do we need when the question says 'share'?",
+        "D": "If each of the 5 builders was paid £600, then the total would be £3000. However, the total is £1200. What do we need to divide £1200 by to get our answer?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135097,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c383cf6c-35a4-4391-8ee9-24a0e4b7c3b8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If each of the 6 builders was paid £1050, then the total would be £6300. However, the total is £2100. What do we need to divide £2100 by to get our answer?",
+        "B": "I think you have multiplied £2100 by 6 to get £12,600. However, it says that the 6 builders share £2100. Which operation do we need when the question says 'share'?",
+        "C": "Sharing £2100 between the 6 builders will give £2100 ÷ 6 = £350 each.",
+        "D": "If each of the 6 builders was paid £300, then the total would be £1,800. However, the total is £2100. What do we need to divide £2100 by to get our answer?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

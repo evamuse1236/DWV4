@@ -1,0 +1,159 @@
+{
+  "shortcode": "vvw",
+  "name": "Read and write formulae 1",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 159,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Recognise and name a formula",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Interpret the terms on a formula and how they relate to the context of the situation",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use perimeter to write algebraic expressions",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Substitute into simple formulae given in words",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 131451,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8b20c7e1-62ad-41ee-9890-0516889ec07a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. There is an equals sign, but we have a rule for finding an area. What is the rule called?",
+        "B": "Here we have a rule connecting the lengths and area of a triangle. This is a formula.",
+        "C": "A variable is a letter that can represent different numbers. What is this combination of variables?",
+        "D": "An expression doesn't have an equals sign. This is a rule for the area of a triangle, what is that called?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133684,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c1c0dc0e-516e-41e7-859b-25bd9434b72d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A variable is a letter that can represent different numbers. What is this combination of variables?",
+        "B": "An expression doesn't have an equals sign. This is a rule for the area of a circle, what is that called?",
+        "C": "Not quite. There is an equals sign, but we have a rule for finding an area. What is the rule called?",
+        "D": "Here we have a rule connecting the radius and area of a circle. This is a formula."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131452,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f57a0f59-6376-4dc1-a32a-79fdb80cff4a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. I think you added the 10 and 2, but remember it is £2 for each of the seven rides.",
+        "B": "7 rides that each cost £2 will total 7 x 2 = £14. We then add on the entry fee to get £24 in total.",
+        "C": "I think you have multiplied the 10 and 2 by 7. There is a single entry fee, it is just the rides that are charged per go.",
+        "D": "Almost, don't forget the entry fee."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133685,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/45a94dd8-511a-4cf5-b43b-787a6c1747ec.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have multiplied the £8 and £3 both by 5. There is a single entry fee, it is just the rides that are charged per go.",
+        "B": "Almost, don't forget the entry fee.",
+        "C": "Not quite. I think you added the 8 and 3, but it is £3 for each of the 5 rides.",
+        "D": "5 rides that each cost £3 will total 5 x 3 = £15. We then add on the entry fee to get £23 in total."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131453,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2ea61de6-e000-400d-a4e1-4449593d7d22.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost, don't forget to halve your answer.",
+        "B": "I think you added 5 and 3 rather than multiplying them.",
+        "C": "I think you doubled 5x3 rather than halving it.",
+        "D": "5 x 3 = 15. Then we halve this which is dividing by 2, so we get 7.5."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133686,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9deccedc-f25e-40e5-8b0c-e3d5cb39d7c1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you doubled 6x18 rather than halving it.",
+        "B": "18 x 6 = 108. Then we halve this which is dividing by 2, so we get 54.",
+        "C": "Almost, don't forget to halve your answer.",
+        "D": "I think you added 6 and 18 rather than multiplying them."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131454,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/977efae5-e9e1-416e-a8c0-3d9c1cd17995.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The perimeter is the distance around the shape, so a + b + a + b = 2a + 2b",
+        "B": "Not quite, this is the area of the rectangle. We need the total distance around the edge of the shape.",
+        "C": "Almost, but is this every edge added up?",
+        "D": "Not quite, this is the area of the rectangle multiplied by 2. We need the total distance around the edge of the shape, which we get by adding the lengths."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133687,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/131fb286-186c-44db-b92d-3551243215f2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost, but is this every edge added up?",
+        "B": "Not quite, this is the area of the rectangle multiplied by 2. We need the total distance around the edge of the shape, which we get by adding up all the lengths.",
+        "C": "The perimeter is the distance around the shape, so x + y + x = y = 2x + 2y",
+        "D": "Not quite, this is the area of the rectangle. We need the total distance around the edge of the shape."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131455,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/84af1c11-a3a2-43de-8ddc-d9a7043ad558.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. The number of people visiting is a variable, so would be represented by a letter.",
+        "B": "The 12 is not affected by the number of rides, so it must be the fixed entry fee.",
+        "C": "The cost per ride will be a number, however it will be multiplied by the number of rides to get the cost. The 12 is not multiplied by the number of rides.",
+        "D": "The number of rides varies depending on the person, so it will be represented by a letter. What is unchanged each time?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133688,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/caf87c25-b268-499d-bb7b-2cd55d625208.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. The number of people visiting is a variable, so would be represented by a letter.",
+        "B": "The fixed entry fee doesn't depend on the number of rides, so we wouldn't multiply this by p.",
+        "C": "The cost per ride is multiplied by the number of rides, before adding on the fixed rate. That means 3 is the cost per ride, and p is the number of rides.",
+        "D": "The number of rides varies depending on the person, so it will be represented by the letter 'p'. What is this multiplied by when finding the cost?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

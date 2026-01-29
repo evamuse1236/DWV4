@@ -1,0 +1,147 @@
+{
+  "shortcode": "ehjs",
+  "name": "Theoretical and experimental probabilities",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 240,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Compare relative frequencies in order to determine which prediction is likely to be more reliable",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Compare experimental and theoretical probabilities",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 131617,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/151b1460-4fc7-41d3-8006-5190fcff0e70.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Supposing we reword this question with extremes and imagine that for Town A, one person was asked, and for Town B, everyone living there was asked. In this situation, which would be more reliable?",
+        "B": "The result of asking 200 people in Town B will be more reliable: the greater the number of people sampled, the greater the chance of those results bearing more similarity to Town B as a whole.",
+        "C": "Supposing we reword this question with extremes and imagine that for Town A, one person was asked, and for Town B, everyone living there was asked. In this situation, which would be more reliable?",
+        "D": "Supposing we reword this question with extremes and imagine that for Town A, one person was asked, and for Town B, everyone living there was asked. In this situation, which would be more reliable?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133810,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3929070f-3a0b-4430-ac34-808f7ac0fad7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Supposing we reword this question with extremes and imagine that for Town A, one person was asked, and for Town B, everyone living there was asked. In this situation, which would be more reliable?",
+        "B": "The result of asking 150 people in Town B will be more reliable: the greater the number of people sampled, the greater the chance of those results bearing more similarity to Town B as a whole.",
+        "C": "Supposing we reword this question with extremes and imagine that for Town A, one person was asked, and for Town B, everyone living there was asked. In this situation, which would be more reliable?",
+        "D": "Supposing we reword this question with extremes and imagine that for Town A, one person was asked, and for Town B, everyone living there was asked. In this situation, which would be more reliable?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166832,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0ebd5cbd-0350-47b9-935f-a639585efb3a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Just because the expected number of blue wasn't the same as the number of blue in the experiment doesn't mean it disproves the theoretical model. It would be quite unlikely for things to match exactly. The experiment would need to be done a large number of times in order to suggest the theoretical probability was wrong. Which might be a better explanation?",
+        "B": "Experimental results naturally vary and are not expected to match the theoretical prediction perfectly, especially when the number of trials is low. So this difference is normal.",
+        "C": "Although the observed result is actually closer to 50% than 70% this experiment is not enough to conclude that the spinner must be fair. Experimental results naturally vary and are not expected to match the theoretical prediction perfectly, especially when the number of trials is low. Is there a better explanation?",
+        "D": "How the spinner is spun would not be the best explanation here. Experimental results naturally vary and are not expected to match the theoretical prediction perfectly, especially when the number of trials is low. Can you find a better explanation?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167082,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/166fa515-9903-4f04-98b2-9bf350b18e98.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Although the observed result is actually closer to 50% than 60% this experiment is not enough to conclude that the spinner must be fair. Experimental results naturally vary and are not expected to match the theoretical prediction perfectly, especially when the number of trials is low. Is there a better explanation?",
+        "B": "How the spinner is spun would not be the best explanation here. Experimental results naturally vary and are not expected to match the theoretical prediction perfectly, especially when the number of trials is low. Can you find a better explanation?",
+        "C": "Just because the expected number of red wasn't the same as the number of red in the experiment doesn't mean it disproves the theoretical model. It would be quite unlikely for things to match exactly. The experiment would need to be done a large number of times in order to suggest the theoretical probability was wrong. Which might be a better explanation?",
+        "D": "Experimental results naturally vary and are not expected to match the theoretical prediction perfectly, especially when the number of trials is low. So this difference is normal."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166833,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cd885e9e-680a-4eb9-a988-4dc013a6b16d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Although we expect results to be close to the theoretical prediction, they don't have to be exactly the same, especially with a limited number of trials. Can you find the explanation that demonstrates this?",
+        "B": "Theoretically, we would expect to roll a '4’ 1/6​ of 60 times, which is 10 times. The observed frequency was 8, which is slightly less than the expected 10. This is a normal outcome due to chance.",
+        "C": "Just because the expected number of 4s rolled wasn't the same as the number of 4s rolled in the experiment doesn't mean it disproves the theoretical model. It would be quite unlikely for things to match exactly. The experiment would need to be done a large number of times in order to suggest the theoretical probability was wrong. Which might be a better explanation?",
+        "D": "Not quite! The observed frequency was 8 and the expected outcome was 10. 10 is not the probability. The probability is still 1/6. Which explanation allows for natural variation in the observed and expected frequencies?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167083,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8b032b66-3f53-4aa3-8f30-c7aa0d8f4582.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! The observed frequency was 12 and the expected outcome was 10. 10 is not the probability. The probability is still 1/8. Which explanation allows for natural variation in the observed and expected frequencies?",
+        "B": "Although we expect results to be close to the theoretical prediction, they don't have to be exactly the same, especially with a limited number of trials. Can you find the explanation that demonstrates this?",
+        "C": "Theoretically, we would expect to roll a '3’ 1/8​ of 80 times, which is 10 times. The observed frequency was 12, which is slightly more than the expected 10. This is a normal outcome due to chance.",
+        "D": "Just because the expected number of 3s rolled wasn't the same as the number of 3s rolled in the experiment doesn't mean it disproves the theoretical model. It would be quite unlikely for things to match exactly. The experiment would need to be done a large number of times in order to suggest the theoretical probability was wrong. Which might be a better explanation?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166834,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a497a407-a514-4397-910c-00284dd5a4f9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Although every number from 1 to 6 was rolled, their frequencies are very uneven so it wouldn't suggest it was a fair die. We wouldn't expect the frequencies to all be the same in this experiment but they should be close. Take a look at the frequencies, can you choose the correct explanation now?",
+        "B": "Although we would expect each number to be rolled about (120/6) 20 times, in an experiment they will usually vary because of random chance. We'd expect them to be close but they don't need to be exact. Can you use this information to choose the answer now?",
+        "C": "From the results of the experiment you might say 5 is the least likely number to be rolled, but that doesn't mean it will not be rolled. Think about why 5 has come up considerably less than the others. Are there any other numbers that come up a lot more or less than the others? What does this mean?",
+        "D": "The frequencies for 2 and 5 are quite different from the other numbers - they are quite a lot higher or lower than we would expect. We're expecting each frequency to be around 20. This may be strong evidence that the die is not fair and therefore it is biased."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167084,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c3f5dab9-998b-4cdf-97b4-669313417197.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The frequencies for 4 and 8 are quite different from the other numbers - they are quite a lot higher or lower than we would expect. We're expecting each frequency to be around 20. This may be strong evidence that the die is not fair and therefore it is biased.",
+        "B": "From the results of the experiment you might say 8 is the least likely number to be rolled, but that doesn't mean it will not be rolled. Think about why 8 has come up considerably less than the others. Are there any other numbers that come up a lot more or less than the others? What does this mean?",
+        "C": "Although every number from 1 to 8 was rolled, their frequencies are very uneven so it wouldn't suggest it was a fair die. We wouldn't expect the frequencies to all be the same in this experiment but they should be close. Take a look at the frequencies, can you choose the correct explanation now?",
+        "D": "Although we would expect each number to be rolled about (160/8) 20 times, in an experiment they will usually vary because of random chance. We'd expect them to be close but they don't need to be exact. Can you use this information to choose the answer now?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166835,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6701c4dd-9275-482c-955c-4e77de0dedac.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Although the spinner seems to have followed expectations, this is not what fair means. In probability, fair means that each outcome has an equal chance of occuring. Would you say that this spinner is fair?",
+        "B": "The probability of getting red is 3/4 so out of 40 spins we would expect it to land on red 30 times. There will be variation between observed frequency and expected frequency due to random chance. Although we expect observed frequencies to be close to expected frequencies, they do not need to be exact.",
+        "C": "You may be unsure about what the term biased means. It would mean not following expectations. Some variation is normal. Are these results similar to what you would expect given that the probability of red is 3/4?",
+        "D": "Be careful here. The probability means 3 out of every 4 spins would be red. So if we are doing 40 spins, how many would you expect to be red? Remember the results from the experiment don't have to be exactly the same as expected, there will be some natural variation."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167085,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3306049f-87a2-420e-b34e-4654da031991.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful here. The probability means 4 out of every 5 spins would be green. So if we are doing 50 spins, how many would you expect to be green? Remember the results from the experiment don't have to be exactly the same as expected, there will be some natural variation.",
+        "B": "Although the spinner seems to have followed expectations, this is not what fair means. In probability, fair means that each outcome has an equal chance of occuring. Would you say that this spinner is fair?",
+        "C": "You may be unsure about what the term biased means. It would mean not following expectations. Some variation is normal. Are these results similar to what you would expect given that the probability of green is 4/5?",
+        "D": "The probability of getting green is 4/5 so out of 50 spins we would expect it to land on green 40 times. There will be variation between observed frequency and expected frequency due to random chance. Although we expect observed frequencies to be close to expected frequencies, they do not need to be exact."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

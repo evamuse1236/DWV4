@@ -1,0 +1,165 @@
+{
+  "shortcode": "eek3",
+  "name": "Quotients of Fraction Word Problems",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 48,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Divide proper fractions in the form: Integer ÷ Fraction",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Divide improper fractions in the form: Fraction ÷ Fraction",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Divide mixed number fraction in the form: Integer ÷ Fraction",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Divide mixed number fraction in the form: Fraction ÷ Fraction",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Word problems involving dividing with or by unit fractions",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 165433,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1a449100-1a43-44fb-8ae6-1dc81449f91c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It seems like you've just divided 16 by 1 here but we need to divide 16 by 1/2 exactly. Try writing 16 as 16/1 and then using the usual rules for dividing fractions.",
+        "B": "Not quite - you've multiplied by 1/2 instead of dividing by 1/2 here! Try writing 16 as 16/1 and then using the usual rules for dividing fractions.",
+        "C": "It seems like you may have done 'keep, change, flip' but changed the first fraction (16/1) instead of the second one.",
+        "D": "If we write 16 as 16/1, we can do 'keep, change, flip' so that we have 16/1 x 2/1 which gives us 32/1, which is the same as just 32!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165439,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c1a4ac15-2f88-46c9-9cf8-708f89f28883.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we write 20 as 20/1, we can do 'keep, change, flip' so that we have 20/1 x 4/1 which gives us 80/1, which is the same as just 80!",
+        "B": "It seems like you may have done 'keep, change, flip' but flipped the first fraction instead of the second one.",
+        "C": "Not quite - you've multiplied by 1/4 instead of dividing by 1/4 here! Try writing 20 as 20/1 and then using the usual rules for dividing fractions.",
+        "D": "It seems like you've just divided 20 by 1 here but we need to divide by 1/4 exactly. Try writing 20 as 20/1 and then using the usual rules for dividing fractions."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165434,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/396d09cf-e4cb-4f4b-8033-105f5dc38e76.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you may have forgotten the 'flip' in the fraction division rule 'keep, change, flip'!",
+        "B": "It looks like you may have divided by both the top and the bottom of the fraction but we can't do that - we need to do 'keep, change, flip' like we normally do for dividing fractions!",
+        "C": "If we write 30 as 30/1 and do keep change flip, we have 30/1 x 3/2 which gives us 90/2. This simplifies to 45.",
+        "D": "It seems like you've divided 30 by 1 here rather than 2/3 but we need to divide by the fraction exactly as it is. Try writing 30 as 30/1 and and then using the usual rules for dividing fractions."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165441,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/18da2264-dc36-4572-9b1a-405b2a6b12a4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we write 24 as 24/1 and do keep change flip, we have 24/1 x 3/2 which gives us 72/2. This simplifies to 36.",
+        "B": "It seems like you've just divided by 1 here but we need to divide by 2/3 exactly. Try writing 24 as 24/1 and then using the usual rules for dividing fractions.",
+        "C": "It looks like you may have forgotten the 'flip' in the fraction division rule 'keep, change, flip'!",
+        "D": "It looks like you may have divided by both the top and the bottom of the fraction but we can't do that - we need to do 'keep, change, flip' like we normally do for dividing fractions!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165435,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e99e0530-ec11-4813-bcfc-9034d494e8da.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It seems like you've divided 18 by 4 and then divided 4.5 by 1/2. Mixed number division doesn't work like this - we need to change the mixed number into an improper fraction before we divide.",
+        "B": "Read carefully! She needs to make 36 half-cup servings, which would be 18 cups of smoothie we are dividing by 4 and 1/2.",
+        "C": "36 half-cup servings = 18 cups. 18/1 ÷ 9/2 = 18/1 x 2/9 = 4",
+        "D": "It looks like you may have forgotten the 'flip' in the fraction division rule 'keep, change, flip'!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165442,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d098feb7-932d-412f-a414-b2608b6bf805.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It seems like you've divided by 3 and then just put the 1/2 on. Mixed number division doesn't work like this - we need to change the mixed number into an improper fraction before we divide.",
+        "B": "It seems like you've divided by 3 and then by 1/2. Mixed number division doesn't work like this - we need to change the mixed number into an improper fraction before we divide.",
+        "C": "It looks like you may have forgotten the 'flip' in the fraction division rule 'keep, change, flip'!",
+        "D": "84 half-cup servings would be 42 cups. 3 1/2 is the same as 7/2. If we divide 42 by 7/2, we get 84/7 which simplifies to 12."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165437,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/90580940-d201-4f70-8b20-9cdd5185d3ba.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we use the rule 'keep change flip', we end up with 21/2 divided by 2/3, which gives us 42/6. This simplifies to 7 if we do 42 divided by 6.",
+        "B": "It seems like you may have just divided the top and the bottom of the fractions, however we can't do that for a division. We need to use the rule 'keep, change, flip'.",
+        "C": "You're very close here, but see if you can try simplifying the fraction! How many 6s can go into 42?",
+        "D": "It looks like you may have forgotten the 'flip' in the fraction division rule 'keep, change, flip'!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165444,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/69b62310-089b-4cba-aa83-77ec8352be09.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It seems like you may have just divided the top and the bottom of the fractions, however we can't do that for a division. We need to use the rule 'keep, change, flip'.",
+        "B": "If we do keep, change, flip, that will give us 35/2 x 2/5 which is 70/10. That simplifies to 7 when we do 70 divided by 10.",
+        "C": "It looks like you may have forgotten the 'flip' in the fraction division rule 'keep, change, flip'!",
+        "D": "You're very close here, but see if you can try simplifying the fraction!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165438,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/358441da-5449-4c78-a636-9b4961bd7350.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you may have forgotten the 'flip' in the fraction division rule 'keep, change, flip'!",
+        "B": "3 1/2 is the same as 7/2, which when divided by 1/4 would give us 7/2 x 4/1 which is 28/2. 28 divided by 2 is 14.",
+        "C": "It seems like you have flipped the first fraction, however the rule is 'keep, change, flip' in that order!",
+        "D": "Not quite - it seems like you might've multiplied 3 by 1 and added 2 when changing the mixed number. We multiply by the bottom and then add to the top."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165445,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e787b048-8ef7-417a-9e34-bf74e60f0bb3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It seems like you have flipped the first fraction, however the rule is 'keep, change, flip' in that order!",
+        "B": "Not quite - it seems like you might've multiplied 5 by 3 and added 4 when changing the mixed number. We multiply by the bottom and then add to the top.",
+        "C": "It looks like you may have forgotten the 'flip' in the fraction division rule 'keep, change, flip'!",
+        "D": "5 3/4 is the same as 23/4. If we do keep, change flip, that would give us 23/4 x 4/1, which is 92/4. This simplifies to 23 when we divide 92 by 4."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,159 @@
+{
+  "shortcode": "fb8j",
+  "name": "Addition strategies with 3-digit numbers",
+  "collectionId": 35,
+  "level": 1,
+  "sequence": 18,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Rewrite an addition with addends in expanded form",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Convert from Dienes blocks to 2-digit add 3-digit contracted written addition with no renaming",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Add multiples of 10 to 3-digit numbers within 1000 without exchange supported by objects",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Add two 3-digit numbers inside 1000 without exchange supported by objects",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 173908,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4e37b927-eaab-466d-9246-a42830e59def.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It seems you've correctly worked out how many crayons there are in the picture, but the question asks what happens when you add 30 more.",
+        "B": "It looks like you've placed the number 30 next to the number 250 instead of adding them together. Remember to line up the numbers in their correct place value columns when adding.",
+        "C": "First, find the starting amount. There are 2 boxes of 100 (200) and 5 boxes of 10 (50), which is 250 crayons. Adding 30 more gives 250 + 30 = 280.",
+        "D": "You need to add 30, which is 3 tens. It looks like you might have added 3 hundreds instead. Check the place value of the digits."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 173968,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f10c479a-888e-4d8a-ba4d-c0cb2d0635fa.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "First, find the starting amount. There are 3 boxes of 100 (300) and 4 boxes of 10 (40), which is 340 crayons. Adding 20 more gives 340 + 20 = 360.",
+        "B": "It seems you've correctly worked out how many crayons there are in the picture, but the question asks what happens when you add 20 more.",
+        "C": "You need to add 20, which is 2 tens. It looks like you might have added 2 hundreds instead. Check the place value of the digits.",
+        "D": "It looks like you've not lined up the place value columns correctly. Remember to line up the numbers in their correct place value columns, starting with lining up the ones columns."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173909,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ae0b39dc-426d-4e1b-83ce-cb70f573c24b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The picture shows 1 hundred, 2 tens, and 2 ones, which is the number 122. We then need to add 600 and 4. So, 122 + 600 + 4 = 726.",
+        "B": "You've correctly added the extra 4 crayons but I think you've also added 6 lots of 10 instead of 6 lots of 100.",
+        "C": "You have correctly worked out how many crayons are shown in the picture. The question asks you to add 600 more and 4 more to this amount.",
+        "D": "You've correctly added the extra 600 crayons but I think you've also added 4 lots of 10 instead of 4 individual crayons."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 173969,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/efa6b432-a557-48ef-b17c-1c009d7d3752.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The picture shows 2 hundreds, 1 ten, and 6 ones, which is the number 216. We then need to add 300 and 2. So, 216 + 300 + 2 = 518.",
+        "B": "You've correctly added the extra 300 crayons but I think you've also added 2 lots of 10 instead of 2 individual crayons.",
+        "C": "You have correctly worked out how many crayons are shown in the picture. The question asks you to add 300 more and 2 more to this amount.",
+        "D": "You've correctly added the extra 2 crayons but I think you've also added 3 lots of 10 instead of 3 lots of 100."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173910,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1cf5c34a-708e-4b95-922a-d2d6013b2dd0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You've partitioned 458 correctly as 400 + 50 + 8. Now check how you've partitioned 29. What is the value of the digit '2' in the number 29?",
+        "B": "You've partitioned 458 correctly as 400 + 50 + 8. Now have a look at how you've partitioned 29. Remember the '2' is in the tens column.",
+        "C": "It looks like you've just added the single digits together. Remember that the '4' in 458 actually means 400. Think about the place value of each digit.",
+        "D": "To add 458 and 29, we can partition them into their place value parts. 458 is 400 + 50 + 8. 29 is 20 + 9. Combining these gives 400 + 50 + 20 + 8 + 9."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 173970,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0f93ce89-b01b-42a2-b12c-a9b0b0604057.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have just added the digits of the numbers. Remember to think about the place value of each digit. The '2' in 293 is actually worth 200.",
+        "B": "To add 293 and 45, we can use expanded form. 293 is 200 + 90 + 3. 45 is 40 + 5. So we can add all these parts together: 200 + 90 + 40 + 3 + 5.",
+        "C": "You've correctly expanded 293 into 200 + 90 + 3. Now have a look at how you've expanded 45. Remember the '4' is in the tens column.",
+        "D": "You've correctly expanded 293 into 200 + 90 + 3. Now have a look at how you've expanded 45. Remember the '4' is in the tens column."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173911,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5bef141b-91b5-4c7a-aa1a-8d0d223cd88f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Count the value of the blocks carefully. The first number has a 100-square, so it must be bigger than 13.",
+        "B": "Check the second number again. It has two 10-rods and four 1-cubes. Does that make the number 240?",
+        "C": "The first number is shown by one 100-square and three 10-rods, which represents 130. The second number is shown by two 10-rods and four 1-cubes, representing 24. The addition is 130 + 24.",
+        "D": "You have correctly identified the first number as 130. Look closely at the blocks for the second number. Are there any 100-squares?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 173971,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bd60e22e-9317-424d-90b5-7d73976292e6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You've correctly identified the first number as 210. Have another look at the blocks for the second number. There are 4 ten rods and 3 ones. How would you write that number?",
+        "B": "Count the value of the blocks carefully. The first number has two 100-squares, so it must be bigger than 21.",
+        "C": "You've correctly identified the first number as 210. Look closely at the blocks for the second number. Are there any 100-squares?",
+        "D": "The first number is shown with 2 hundred squares and 1 ten rod, which makes 210. The second number is shown with 4 ten rods and 3 individual cubes, which makes 43. So the addition is 210 + 43."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173912,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/89ad4b35-3ffb-442c-833b-76745481c001.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom is correct, but what about Katie? Does the order you write numbers for an addition calculation change the final answer?",
+        "B": "Katie is correct, but what about Tom? Does it matter if the smaller number is written first when you add two numbers together?",
+        "C": "The blocks show the numbers 18 and 345. Because addition is commutative, the order doesn't matter, so 18 + 345 is the same as 345 + 18. Both are correct.",
+        "D": "Count the blocks again carefully. The first number has 1 ten and 8 ones. The second number has 3 hundreds, 4 tens and 5 ones. Check that Tom and Katie have used these numbers correctly."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 173972,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/31421c63-a866-4994-aaec-8d374ac264cb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom has set up his addition correctly. Now check Katie's. Does the order you add numbers in change the final answer? Think about what 2 + 3 is, and what 3 + 2 is.",
+        "B": "Katie has set up her addition correctly. Now check Tom's. Does the order you add numbers in change the final answer? Think about what 2 + 3 is, and what 3 + 2 is.",
+        "C": "The blocks show the numbers 129 and 35. Addition is commutative, which means it doesn't matter which order you add the numbers in. Both Tom (129 + 35) and Katie (35 + 129) will get the same correct answer.",
+        "D": "Count the blocks again carefully. The first number has 3 tens and 5 ones. The second number has 1 hundred, 2 tens and 9 ones. Check that Tom and Katie have used these numbers correctly."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

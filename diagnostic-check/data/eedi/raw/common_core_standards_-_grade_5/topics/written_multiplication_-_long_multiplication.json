@@ -1,0 +1,153 @@
+{
+  "shortcode": "biii",
+  "name": "Written multiplication - long multiplication",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 22,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Interpret the value of digits in multiplication calculations using long multiplication",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiply 2 digit integers by 2 digit integers using long multiplication",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiply 3 digit integers by 2 digit integers using long multiplication",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 95219,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/42db3418-d53f-4f3b-8d78-06fd1d930a0c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The final stage of this long multiplication is the addition of the numbers 116 (found from 2 x 58) and 1160 (found from 20 x 58). Adding these together gives us an answer of 1276 which has a unit digit of 6.",
+        "B": "I think you may have thought this because when we multiply by the '20' we put a 0 in the units column. However when we multiply by the '2' we will get another number which will contribute to the units column.",
+        "C": "Be careful, I think you have added the 8 and the 2 together to get 10, but we are multiplying here",
+        "D": "Not quite, 16 is a two digit number there will only be one number in the units column of the final answer."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 124907,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c7194eaf-044d-466c-af10-d9619589c4a4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The final stage of this long multiplication is the addition of the numbers 210 (found from 6 x 35) and 1400 (found from 40 x 35). Adding these together gives us an answer of 1610 which has a unit digit of 0.",
+        "B": "Be careful, I think you have added the 5 and the 6 together to get 11, but we are multiplying here",
+        "C": "I think you may have thought this because one of the 4 calculations you have to do in this long multiplication is 6 x 3, which ends in an 8. But this calculation does not contribute to the units digit of the answer. Which of the 4 multipications will contribute to the units digit of your answer?",
+        "D": "Not quite, 30 is a two digit number but there can only be one number in the units column of the final answer."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 95220,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b239e5b6-fc96-4d18-a811-cbbcc48ca4ab.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember you have to fill in the answer to all the multiplications, even if they are equal to 0.",
+        "B": "Not quite. 7 x 80 is 560 BUT 20 x 80 is NOT 160. Remember a zero should be added into the working when we multiply by the tens digit in 27.",
+        "C": "This working shows all the correct steps to this long multiplication. It shows the 7 has multiplied both the 0 and 8, it shows the additional 0 placed in the units column underneath the 0 in 560, it shows that the 2 has multiplied both the 8 and the zero in 80 and it shows the summation of 560 and 1600.",
+        "D": "So close! Just recheck the addition of 560 and 1600."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 95237,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e96fdc91-a3ab-4b63-bd89-d798c89a37cc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. This working is not correct as it has failed to carry over the ten from the calculation 6 x 2. It also incorrectly shows that the answer to 3 x 72 is 27.",
+        "B": "Not quite. 6 x 72 is 432 BUT 30 x 72 is NOT 216. Remember a zero should be added into the working when we multiply by the tens digit in 36.",
+        "C": "So close! Just recheck the addition of 432 and 2160.",
+        "D": "This working shows all the correct steps to this long multiplication. It shows the 6 has multiplied both the 2 and 7, it shows the additional 0 placed in the units column underneath the 2 in 432, it shows that the 3 has multiplied both the 2 and the 7 in 72 and it shows the correct summation of 432 and 2160."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 95229,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a90dcc78-232f-4ec5-a90f-056ccb049070.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The 8 in 3847 stands for 800 and the 2 in 28 stands for 20. Multiplying 800 by 20 you get 16000 as 800 x 20 = 8 x 2 x 100 x 10 = 16000.",
+        "B": "Not quite. Recheck the place value of the circled digits. What does the 8 stand for in the number 3847? What does the 2 stand for in 28? What would you get if you multiplied these numbers together?",
+        "C": "Not quite. Recheck the place value of the circled digits. What does the 8 stand for in the number 3847? What does the 2 stand for in 28? What would you get if you multiplied these numbers together?",
+        "D": "Not quite. Recheck the place value of the circled digits. What does the 8 stand for in the number 3847? What does the 2 stand for in 28? What would you get if you multiplied these numbers together?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 95246,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bd8ade1e-5c4a-4e71-89b7-f0aaa8e13bba.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Recheck the place value of the circled digits. What does the 3 stand for in the number 3847? What does the 7 stand for in 78? What would you get if you multiplied these numbers together?",
+        "B": "Not quite. Recheck the place value of the circled digits. What does the 3 stand for in the number 3847? What does the 7 stand for in 78? What would you get if you multiplied these numbers together?",
+        "C": "Not quite. Recheck the place value of the circled digits. What does the 3 stand for in the number 3847? What does the 7 stand for in 78? What would you get if you multiplied these numbers together?",
+        "D": "The 3 in 3847 stands for 3000 and the 7 in 78 stands for 70. Multiplying 3000 by 70 you get 210,000 as 3000 x 70 = 3 x 7 x 1000 x 10 = 210,000."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 102201,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/486ed1d1-6653-449a-ae37-9f2d48a1372b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Look again. Are the digits with the same place value placed underneath each other?",
+        "B": "Not quite. In long multiplication we do not partition the digits in a number i.e. we don't write 124 as 100 20 and 4, also make sure that the digits with the same place value are lined up together.",
+        "C": "Not quite. In long multiplication we do not partition the digits in a number i.e. we don't write 124 as 100 20 and 4.",
+        "D": "For long multiplication, it is necessary to present the numbers as given in answer D, lining up the units, tens, etc., as you would if you were adding or subtracting."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 102211,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a1152bae-9344-456e-a5d8-62db77a703a8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. In long multiplication we do not partition the digits in a number i.e. we don't write 426 as 400, 20 and 6, also make sure that the digits with the same place value are lined up together.",
+        "B": "Look again. Are the digits with the same place value placed underneath each other?",
+        "C": "For long multiplication, it is necessary to present the numbers as given in answer C, lining up the units, tens, etc., as you would if you were adding or subtracting.",
+        "D": "Not quite. In long multiplication we do not partition the digits in a number i.e. we don't write 426 as 400, 20 and 6."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 102202,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a527b33e-f275-4b16-bda3-a0023f87adf7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have thought this because 3 × 8 is 24. Before we multiply by the 8 we multiply by the 1 and this goes in the top row.",
+        "B": "I think you may have tried to add the digits together but this question is a multiplication not an addition.",
+        "C": "I think you may have thought this because 30 × 80 is 2400 but in long multiplication we do not just multiply the two numbers in the same column and we do not partition the numbers to take account of their place value. The first step is to multiply every digit in the number 437 by the 1.",
+        "D": "Each square of the first row contains one of each of the digits from the answer to 437 × 1. Because the answer to this is 437 and ★ is the second digit from the right, the answer is 3."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 102212,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d8f42c71-69d3-480a-a98f-1f1b1546370f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "So close! Just be careful with your place value. Remember you can't put two digits in a single column",
+        "B": "I think you may have multiplied the 6 by 7, carried over the 4 tens and then tried to add the 2, 2 and 4 together. But remember we are multiplying, so once you have carried over the 4 tens you should multiply the 6 by the 2 and then add the 4 on.",
+        "C": "Each square of the first row contains the answer to the calculation 127 × 6. To work this out, start with 7 × 6 = 42. Write 2 below the 6, carry the 4 to the tens column and then calculate 2 × 6 = 12. Adding the carried 4 gives 16, so ★ = 6 and the 1 is carried to the hundreds column.",
+        "D": "So close! You just need to remember to add on then number that was carried over from the calculation 6 x 7."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

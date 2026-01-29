@@ -1,0 +1,159 @@
+{
+  "shortcode": "vo4",
+  "name": "Square and cube numbers",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 121,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Recognise square numbers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Recognise cube numbers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the square of a number",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the cube of a number",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 129056,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/06e18bc0-3571-4432-a480-323cb5d8cf89.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A square number is the result when you multiply a whole number by itself. 1 x 1 is 1 so 1 is a square number.",
+        "B": "Not quite. We do use a little 2 to represent that a number is being squared, e.g. 3², but 2 itself is not a square number",
+        "C": "I think you have mixed up square numbers and cube numbers. You get a square number if you multiply any whole number by itself.",
+        "D": "There is a square number as one of these options. Think of the first few square numbers you know."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129196,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/09517d32-ec23-4b4f-b717-5821eabdb41c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. You get a square number if you multiply any whole number by itself.",
+        "B": "Not quite. You get a square number if you multiply any whole number by itself.",
+        "C": "A square number is the result when you multiply a number by itself. 3 x 3 is 9 so 9 is a square number.",
+        "D": "There is a square number as one of these options. Think of the first few square numbers you know."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129057,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/717877bd-8d5e-4de8-a448-bae104327cad.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A cube number is the result when you multiply a whole number by itself and then by itself again. 1 x 1 x 1 is 1 so 1 is a cube number.",
+        "B": "Not quite. We do use a little 3 to represent that a number is being cubed, e.g. 2³, but 3 itself is not a cube number.",
+        "C": "Not quite. 9 is a multiple of 3, but not a cube number. A cube number is the result when you multiply a whole number by itself and then by itself again.",
+        "D": "There is a cube number as one of these options. Think of the first few cube numbers you know."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129197,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/73468b64-52f4-4b13-bee0-40892a8f9a73.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We do use a little 3 to represent that a number is being cubed, e.g. 2³, but 3 itself is not a cube number.",
+        "B": "6 is a multiple of 3, but not a cube number. A cube number is the result when you multiply a whole number by itself and then by itself again",
+        "C": "Not quite. 9 is a multiple of 3, but not a cube number. A cube number is the result when you multiply a whole number by itself and then by itself again.",
+        "D": "A cube number is the result when you multiply a whole number by itself and then by itself again e.g. 1x1x1=1, 2x2x2=8, 3x3x3=27. 1, 8 and 27 are the first 3 cube numbers. The list of cube numbers does not include 3, 6 or 9."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129058,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7d092a27-b183-4156-87af-af5f2db24b27.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. We do use a 2 to write '8 squared' but this is a superscript 2 and looks like 8². Instead, here we need to work out the answer when we square 8.",
+        "B": "I think you might have just written the digit 8 twice. '8 squared' means 8 multiplied by itself.",
+        "C": "Not quite. I think you have multiplied 8 by 2. To square a number, we need to multiply it by itself.",
+        "D": "8 squared means 8 multiplied by itself or 8 x 8. This gives us an answer of 64."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129198,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bfdf4961-cb7e-4723-9ec1-eedc968030fe.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. I think you have multiplied 7 by 2. To square a number, we need to multiply it by itself.",
+        "B": "7 squared means 7 multiplied by itself or 7 x 7. This gives us an answer of 49.",
+        "C": "Not quite. We do use a 2 to write '7 squared' but this is a superscript 2 and looks like 7². Instead, here we need to work out the answer when we square 7.",
+        "D": "I think you might have just written the digit 7 twice. 7 squared means 7 multiplied by itself."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129059,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3bb4c92a-1254-4894-aa91-e56554138796.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have mixed up your squares and cubes. To cube a number, we need to multiply it by itself and then by itself again.",
+        "B": "3 cubed means 3 multiplied by itself and then multiplied by itself again, or 3 x 3 x 3. This gives us an answer of 27.",
+        "C": "I think you might have just written the digit 3 twice. 3 cubed means 3 multiplied by itself and then multiplied by itself again.",
+        "D": "I think you might have just written the digit 3 out 3 times. 3 cubed means 3 multiplied by itself and then multiplied by itself again."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129199,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/23e4f6a9-3a50-48e7-aa46-8c35769dc9a5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. We do use a little 3 to represent that a number is being cubed, but this is a superscript 3 and looks like 4³. Instead, here we need to work out the answer when we cube 4.",
+        "B": "I think you have mixed up your squares and cubes. To cube a number, we need to multiply it by itself and then by itself again.",
+        "C": "I think you have multiplied 4 by 3. When we cube a number, we have to multiply it by itself and itself again, not multiply it by 3.",
+        "D": "4 cubed means 4 multiplied by itself and then multiplied by itself again, or 4 x 4 x 4. This gives us an answer of 64."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129060,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/320d8ce3-7211-45e5-bb0d-a5bc1611e901.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have multiplied 5 by 3. When we cube a number, we have to multiply it by itself and itself again, not multiply it by 3.",
+        "B": "I think you have mixed up your squares and cubes. To cube a number, we need to multiply it by itself and then by itself again.",
+        "C": "5 cubed means 5 multiplied by itself and then multiplied by itself again, or 5 x 5 x 5. This gives us an answer of 125.",
+        "D": "Not quite. We do use a little 3 to represent that a number is being cubed, but this is a superscript 3 and looks like 5³. Instead, here we need to work out the answer when we cube 5."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129200,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/48b90ed9-94b0-4c4c-a6b0-557481c801fd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "2³ means 2 multiplied by itself and then multiplied by itself again, or 2 x 2 x 2. This gives us an answer of 8.",
+        "B": "Not quite. We do use a little 3 to represent that a number is being cubed, but this is a superscript 3 and looks like 2³. Instead, here we need to work out the answer when we cube 2",
+        "C": "I think you have multiplied 2 by 3. When we cube a number, we have to multiply it by itself and itself again, not multiply it by 3.",
+        "D": "I think you have mixed up your squares and cubes. To cube a number, we need to multiply it by itself and then by itself again."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

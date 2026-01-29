@@ -1,0 +1,165 @@
+{
+  "shortcode": "bifr",
+  "name": "Factors and multiples 3",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 11,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify factors of a number",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify multiples of a number",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify common multiples of two numbers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Understand the relationship between multiples of different numbers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Understand the relationship between different factors of a number",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 76704,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7b964975-b631-4dd7-810f-7033968f93dc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, 1 is a factor of 18 and 54 but it is not prime. A prime number is divisible by only two numbers: itself and 1. The number 1 is only divisible by one number: 1.",
+        "B": "2 is prime as it is divisible only by itself and 1. 2 is also a factor of 18 and 54 because we can divide both of those numbers by 2 to give whole numbers.",
+        "C": "Not quite, 9 is a factor of 18 and 54 but it is not prime. A prime number is divisible by only two numbers: itself and 1. The number 9 is divisible by three numbers: 1, 3 and 9.",
+        "D": "A prime number is divisible by only two numbers: itself and 1. The number 1 is only divisible by one number: 1. The number 9 is divisible by three numbers: 1, 3 and 9."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78772,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e57c77a5-ce25-41f4-a794-385b7d2b324d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, 1 is a factor of 18 and 27 but it is not prime. A prime number is divisible by only two numbers: itself and 1. The number 1 is only divisible by one number: 1.",
+        "B": "Almost! 2 is a prime number and a factor of 18! But it's not a factor of 27 because we cannot divide 27 by 2 to give a whole number.",
+        "C": "3 is prime as it is divisible only by itself and 1. 3 is also a factor of 18 and 27 because we can divide both of those numbers by 3 to give whole numbers.",
+        "D": "Not quite, 1 is a factor of 18 and 27 but it is not prime. A prime number is divisible by only two numbers: itself and 1. The number 1 is only divisible by one number: 1."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89805,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ebbf6de3-7609-4e15-8d1b-70ded4ee5575.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If 9 is a factor of a number, then that number is divisible by 9. We can write 9 = 3 ✕ 3, so if a number is divisible by 9 then it is divisible by (3 ✕ 3). Or we could think of this as saying it is divisible by 3 and then 3 again. So if 9 is a factor then 3 is a factor. Check this for yourself using some numbers with 9 as a factor (18, 27, 36).",
+        "B": "If 9 is a factor of a number, then that number is divisible by 9. 18 and 27 are divisible by 9, are 4 and 5 both factors of 18 and 27?",
+        "C": "If 9 is a factor of a number, then that number is divisible by 9. 27 and 36 are divisible by 9, is 18 a factor of 27 and 36?",
+        "D": "If 9 is a factor of a number, then that number is divisible by 9. Test out numbers that are divisible by 9 such as 18, 27 and 36 to see if the other options are also factors."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89817,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e089fb6d-99b0-4ca6-9aa4-90f8c877e8ef.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If 12 is a factor of a number, then that number is divisible by 12. 24 and 36 are divisible by 12, are 5 and 7 both factors of 24 and 36?",
+        "B": "If 12 is a factor of a number, then that number is divisible by 12. We can write 12 = 3 ✕ 4, so if a number is divisible by 12 then it is divisible by (3 ✕ 4). Or we could think of this as saying it is divisible by 3 and then 4. So if 12 is a factor then 3 and 4 are also factor. Check this for yourself using some numbers with 12 as a factor (24, 36, 48).",
+        "C": "If 12 is a factor of a number, then that number is divisible by 12. 36 and 48 are divisible by 12, is 24 a factor of 36 and 48?",
+        "D": "If 12 is a factor of a number, then that number is divisible by 12. Test out numbers that are divisible by 12 such as 24, 36 and 48 to see if the other options are also factors."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89808,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea097c45-40fb-4aeb-a5fe-6db8ee257944.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. 3 is a factor of 60 but it is not a multiple of 6. The multiples of 6 are the numbers in the 6 times table.",
+        "B": "The factors of 60 are the numbers that 60 can be divided by to give a whole number. 60 ÷ 12 = 5. The multiples of 6 are the numbers in the 6 times table. 12 = 6 ✕ 2",
+        "C": "Not quite. 20 is a factor of 60 but it is not a multiple of 6. The multiples of 6 are the numbers in the 6 times table.",
+        "D": "Not quite. 120 is a multiple of 6 but it is not a factor of 60. The factors of 60 are the numbers that 60 can be divided by to give a whole number. 60 ÷ 120 = 0.5."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89820,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e303b333-0bc9-435f-8d3d-28ab92b65126.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. 36 is a multiple of 9 but it is not a factor of 90. The factors of 90 are the numbers that 90 can be divided by to give a whole number. 90 ÷ 36 = 2.5.",
+        "B": "Not quite. 30 is a factor of 90 but it is not a multiple of 9. The multiples of 9 are the numbers in the 9 times table.",
+        "C": "The factors of 90 are the numbers that 90 can be divided by to give a whole number. 90 ÷ 9 = 10. The multiples of 9 are the numbers in the 9 times table. 9 = 9 ✕ 1",
+        "D": "Not quite. 3 is a factor of 90 but it is not a multiple of 9. The multiples of 9 are the numbers in the 9 times table."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89809,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8aca14e9-fcf5-44b6-b6fe-4dfe8c4e7d9f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "1 is a common factor but not a common multiple. Try writing out the 5 and 6 times table and look for a number that is in both lists.",
+        "B": "It look like you just added the numbers together. Try writing out the 5 and 6 times table and look for a number that is in both lists.",
+        "C": "The multiples of 5 are 5, 10, 15, 20, 25, 30, 35, ... The multiples of 6 are 6, 12, 18, 24, 30, 36, 42...The number 30 appears in each list, so 30 is a common multiple of 5 and 6.",
+        "D": "All numbers have a common multiple. Try writing out the 5 and 6 times tables and look for a number that is in both lists."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89821,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/29cb4ec5-f615-41ab-b766-1d5a60242a59.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The multiples of 4 are 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52.... Multiples of 6 are 6, 12, 18, 24, 30, 36, 42, 48, 54... The number 48 appears in each list, so 48is a common multiple of 4 and 6. Note that the lowest common multiple (LCM) is 12 as that is the first common number in each list.",
+        "B": "This is a multiple of 4 but not of 6. Try writing out the 4 and 6 times table and look for a number that is in both lists.",
+        "C": "2 is a common factor but not a common multiple. Try writing out the 4 and 6 times table and look for a number that is in both lists.",
+        "D": "All numbers have a common multiple. Try writing out the 5 and 6 times tables and look for a number that is in both lists."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89810,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fb489385-75ad-451d-876c-814028f2f98c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A common multiple of 5 and 4 is 5 ✕ 4 = 20. Is this a multiple of 9? What if we multiplied this common multiple by 9? Would that now be a multiple of 5, 4 and 9?",
+        "B": "A common multiple of 5 and 4 is 5 ✕ 4 = 20. This is not a multiple of 9. But, if we multiplied this common multiple by 9 we get 5 ✕ 4 ✕ 9 = 180. 180 is a multiple of 5, 4 and 9. So this is sometimes true.",
+        "C": "A common multiple of 5 and 4 is 5 ✕ 4 = 20. Is this a multiple of 9? What if we multiplied this common multiple by 9? Would that now be a multiple of 5, 4 and 9?",
+        "D": "A common multiple of 5 and 4 is 5 ✕ 4 = 20. Is this a multiple of 9? What if we multiplied this common multiple by 9? Would that now be a multiple of 5, 4 and 9?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89822,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/134a8738-3b82-47c6-a60e-be94ffd17cd9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A common multiple of 3 and 5 is 3 ✕ 5 = 15. This is the also lowest common multiple of 3 and 5. The next multiples of 3 and 5 are 30, 45, 60, ... These are all also multiples of 15.",
+        "B": "A common multiple of 3 and 5 is 3 ✕ 5 = 15. Is this a multiple of 15 as well?",
+        "C": "A common multiple of 3 and 5 is 3 ✕ 5 = 15. This is the also lowest common multiple of 3 and 5. The next multiples of 3 and 5 are 30, 45, 60, ... Are these also multiples of 15?",
+        "D": "A common multiple of 3 and 5 is 3 ✕ 5 = 15. This is the also lowest common multiple of 3 and 5. The next multiples of 3 and 5 are 30, 45, 60, ... Are these also multiples of 15?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

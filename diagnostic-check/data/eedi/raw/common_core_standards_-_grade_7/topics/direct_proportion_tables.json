@@ -1,0 +1,153 @@
+{
+  "shortcode": "vr7",
+  "name": "Direct proportion tables",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 12,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Complete missing values in tables for variables with the proportional relationship y = kx",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given a positive x value, find a y value in a table of values for lines in the form y = mx + c ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given a positive y value, find an x value in a table of values for lines in the form y = mx + c",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 107300,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/be59fc85-b7b9-4675-a21b-d514ff84b3eb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember, in this equation you need to use substitution. So, replace x in the equation with 9.",
+        "B": "I think you have replaced the x with 9, and read that as the number 39. However, the expression 3x means 3 multiplied by x.",
+        "C": "The table tells us that 𝑥 has a value of 9. Substituting this value into 𝑦 = 3𝑥 gives ★ = 3 × 9 = 27.",
+        "D": "I think you have substituted y = 9 into the equation. Have another look at the table and the values you are given."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107320,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ac348f45-5bf9-48d2-b656-eb2cd731b6b0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have replaced the x with 8, and read that as the number 68. However, the expression 6x means 6 multiplied by x.",
+        "B": "The table tells us that 𝑥 has a value of 8. Substituting this value into 𝑦 = 6𝑥 gives ★ = 6 × 8 = 48.",
+        "C": "I think you have substituted y = 8 into the equation. Have another look at the table and the values you are given.",
+        "D": "I think you have found the sum of 6 and 8. However, 6x does not mean 6 + x. Do you remember what the relationship between 6 and x is in the expression 6x?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107301,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/854efdf9-7e4b-4344-b229-5792e5b141ad.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have correctly substituted y = 9 into the equation. However, you have then subtracted 3. Think carefully about which inverse operation you need to use to solve the equation.",
+        "B": "I think you have replaced the x with 9, and read that as the number 39. However, the expression 3x means 3 multiplied by x. Also, check the table carefully - are you actually given the value of x?",
+        "C": "I think you have substituted x = 9 into the equation. Be careful - look closely at the table. Which value have you been given?",
+        "D": "The table tells us that 𝑦 has a value of 9. Substituting this value into 𝑦 = 3𝑥 gives 9 = 3 × ★. To solve this divide both sides by 3 to give ★ = 9/3 = 3."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107321,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5ba5942e-76c0-4c1f-b1bf-115106ded5e8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have replaced the x with 8, and read that as the number 68. However, the expression 6x means 6 multiplied by x. Also, check the table carefully - are you actually given the value of x?",
+        "B": "I think you have substituted x = 8 into the equation. Be careful - look closely at the table. Which value have you been given?",
+        "C": "The table tells us that 𝑦 has a value of 8. Substituting this value into 𝑦 = 6𝑥 gives 8 = 6 × ★. To solve this divide both sides by 6 to give ★ = 8/6.",
+        "D": "I think you have added the 6 and 8. Remember, in this equation you need to use substitution. So, replace y in the equation with 8 and then solve the equation to obtain the value of x."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107302,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/72ac4f8b-f12c-4eac-bda6-81847e3787ad.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember that 3𝑥 means 3 × 𝑥. What do we get when 𝑥 is 0?",
+        "B": "The table tells us that 𝑥 has a value of 0. Substituting this value into 𝑦 = 3𝑥 gives ★ = 3 × 0 = 0.",
+        "C": "Remember that 3𝑥 means 3 × 𝑥. What do we get when 𝑥 is 0?",
+        "D": "Remember that 3𝑥 means 3 × 𝑥. What do we get when 𝑥 is 0?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107322,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cd41fbc3-ac9f-4923-88ec-7560f7e2022e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember that 6𝑥 means 6 × 𝑥. What do we get when 𝑥 is 0?",
+        "B": "Remember that 6𝑥 means 6 × 𝑥. What do we get when 𝑥 is 0?",
+        "C": "Remember that 6𝑥 means 6 × 𝑥. What do we get when 𝑥 is 0?",
+        "D": "The table tells us that 𝑥 has a value of 0. Substituting this value into 𝑦 = 6x gives ★ = 6 × 0 = 0."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107303,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f58ad74a-7b8e-44c4-8ba7-02743436f1da.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have found the value of 𝑦 if 𝑥 was -1. In this question 𝑦 = -1. What is 𝑥 when -1 = 3x?",
+        "B": "Not quite. -1 divided by 3 is not -0.3, and we have not been asked to round. How else can we write -1 divided by 3? ",
+        "C": "The table tells us that 𝑦 has a value of −1. Substituting this value into 𝑦 = 3𝑥 gives −1 = 3 × ★. To solve this divide both sides by 3 to give ★ = −⅓.",
+        "D": "We need to find the value of 𝑥 when 𝑦 = -1. Try solving -1 = 3𝑥."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107323,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bbdc146d-47c8-40fd-a129-a7273923203a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We need to find the value of 𝑥 when 𝑦 = 0. Try solving 0 = 6𝑥.",
+        "B": "The table tells us that 𝑦 has a value of 0. Substituting this value into 𝑦 = 6𝑥 gives 0 = 6 × ★. To solve this divide both sides by 6 to give ★ = 0.",
+        "C": "We need to find the value of 𝑥 when 𝑦 = 0. Try solving 0 = 6𝑥.",
+        "D": "We need to find the value of 𝑥 when 𝑦 = 0. Try solving 0 = 6𝑥. Remember that if we divide 0 by a number we get 0."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146159,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/af0931a0-5659-4c85-9134-da9d56b4ef83.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. The relationship between x and y is directly proportional. This means they increase at the same rate. How many times bigger is 30 than 12? The star will be this many times bigger than 7.",
+        "B": "I think you have assumed that you would add the same amount on, but variables are directly proportional if they are related through multiplication. First, calculate how many times bigger 30 is than 12. The star will be this many times bigger than 7.",
+        "C": "30/12 = 2.5 and 2.5 x 7 = 17.5. So the star will be 17.5.",
+        "D": "I think you have assumed that the values have doubled, but double 12 is NOT 30. How many times bigger is 30 than 12? The star will be this many times bigger than 7."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146179,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9500ed1f-0d0a-46f5-9ed1-a22892149487.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. The relationship between x and y is directly proportional. This means they increase at the same rate. How many times bigger is 16.5 than 11? The star will be this many times bigger than 6.",
+        "B": "I think you have assumed that you would add the same amount on, but variables are directly proportional if they are related through multiplication. First, calculate how many times bigger 16.5 is than 11. The star will be this many times bigger than 6.",
+        "C": "I think you have assumed that the values have doubled, but double 11 is NOT 16.5. How many times bigger is 16.5 than 11? The star will be this many times bigger than 6.",
+        "D": "16.5/11 = 1.5 and 6 x 1.5 = 9. So the star has a value of 9."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

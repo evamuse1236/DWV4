@@ -1,0 +1,153 @@
+{
+  "shortcode": "biit",
+  "name": "Place value and multiplying decimals",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 37,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Multiply decimals by 10",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiply decimals by 100",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Place value and multiplying decimals",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 156013,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b15d8bdb-ef11-49dc-92b0-45a7a0ac7694.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "3 tenths multiplied by 10 would give us 30/10 which is simplified to 3. We also know that when multiplying by 10, all of the digits move to the left, so the 3 digit would move from the tenths column into the units column.",
+        "B": "I think you have multiplied by 100 rather than 10. How many place value columns would multiplying by 10 move the digits?",
+        "C": "I think you have assumed that when we multiply by 10 we just add a zero onto the number, which is not the case. When multiplying by a power of 10, we move the digits to the left. How many place value columns would multiplying by 10 move the digits?",
+        "D": "I think you have tried to combine the digits. When multiplying by a power of 10, we move the digits to the left. How many place value columns would multiplying by 10 move the digits?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 156031,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/521b4996-0c85-4432-b637-db6868ffd5a1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "When multiplying by 10 all digits move one place value column to the left. The 7 is currently in the tenths column, so when multiplied by 10 it will move to the units column. Therefore 0.7 x 10 = 7.",
+        "B": "I think you have assumed that when we multiply by 10 we just add a zero onto the number, which is not the case. When multiplying by 10, we move the digits one place value column to the left.",
+        "C": "I think you have tried to combine the digits. When multiplying by 10, we move the digits one place value column to the left.",
+        "D": "I think you have multiplied by 100 rather than 10. How many place value columns would multiplying by 10 move the digits?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158367,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/80811ee4-8c31-4639-8d77-2a49e760ebae.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've multiplied by 10. To multiply by 100, we move the decimal point two places to the right.",
+        "B": "To multiply by 100, we move the decimal point two places to the right. Therefore, 0.3 x 100 = 30.",
+        "C": "I think you've divided by 10. To multiply by 100, we move the decimal point two places to the right.",
+        "D": "I think you've added 100. To multiply by 100, we move the decimal point two places to the right."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158625,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4664f3cc-d8c4-4a9c-8a56-5c3b71eba094.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've multiplied by 10. To multiply by 100, we move the decimal point two places to the right.",
+        "B": "I think you've divided by 10. To multiply by 100, we move the decimal point two places to the right.",
+        "C": "To multiply by 100, we move the decimal point two places to the right. Therefore, 0.8 x 100 = 80.",
+        "D": "I think you've added 100. To multiply by 100, we move the decimal point two places to the right."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158368,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9c959cb5-af58-4655-b0d6-f98e5e6b098d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "0.3 is ten times smaller than 3. Therefore the answer to 9x0.3 is ten times smaller than the answer to 9x3. 27÷10 = 2.7",
+        "B": "27 is the answer to 9x3, but we want the answer to 9x0.3, which will be ten times smaller than the answer to 9x3.",
+        "C": "0.27 is 100 times smaller than 27. But we want the answer to 9x0.3, which will be ten times smaller than the answer to 9x3.",
+        "D": "We want the answer to 9x0.3, which will be ten times smaller than the answer to 9x3."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158626,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db587cef-a008-4aae-ac52-11144b00a051.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "0.8 is ten times smaller than 8. Therefore the answer must also be ten times smaller.",
+        "B": "0.48 is 100 times smaller than 48. But we want the answer to 6 x 0.8, which will be ten times smaller than the answer to 6 x 8.",
+        "C": "Not quite - the answer should be ten times smaller than 48, so the decimal point moves one place left, but the digits should stay the same.",
+        "D": "0.8 is ten times smaller than 8. Therefore the answer to 6 x 0.8 is ten times smaller than the answer to 6 x 8. 48 ÷ 10 = 4.8."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158369,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/79e53c13-d4f2-4b8c-918d-c98b76cdb9cd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "0.036 is 1000 times smaller than 36. But, 0.9 is ten times smaller than 9 and 0.4 is ten times smaller than 4. Therefore the answer to 0.9x0.4 is 10x10 (=100) times smaller than the answer to 9x4.",
+        "B": "3.6 is ten times smaller than 36. But 0.9 is ten times smaller than 9 and 0.4 is ten times smaller than 4. Therefore the answer to 0.9x0.4 is 10x10 (=100) times smaller than the answer to 9x4.",
+        "C": "0.0036 is 10,000 times smaller than 36. But, 0.9 is ten times smaller than 9 and 0.4 is ten times smaller than 4. Therefore the answer to 0.9x0.4 is 10x10 (=100) times smaller than the answer to 9x4.",
+        "D": "0.9 is ten times smaller than 9 and 0.4 is ten times smaller than 4. Therefore the answer to 0.9x0.4 is 10x10 (=100) times smaller than the answer to 9x4. 36÷100 = 0.36"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158627,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bff19737-7b11-4cd1-b8e7-61b2d17e29d2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "0.015 is 1000 times smaller than 15 - maybe you thought we needed two zeroes to match 0.5 x 0.3. But, 0.5 is ten times smaller than 5 and 0.3 is ten times smaller than 3. Therefore the answer to 0.5 x 0.3 will be 10x10 (=100) times smaller than the answer to 5 x 3.",
+        "B": "1.5 is 10 times smaller than 15 - each of the numbers in the question has got 10 times smaller compared with 5 x 3, but that means the answer to 0.5 x 0.3 will be 10x10 (=100) times smaller than the answer to 5 x 3.",
+        "C": "0.0015 is 10000 times smaller than 15 - maybe you thought we needed to put in two zeroes to match 0.5 x 0.3. But, 0.5 is ten times smaller than 5 and 0.3 is ten times smaller than 3. Therefore the answer to 0.5 x 0.3 will be 10x10 (=100) times smaller than the answer to 5 x 3.",
+        "D": "0.5 is ten times smaller than 5 and 0.3 is ten times smaller than 3. Therefore the answer to 0.5 x 0.3 will be 10x10 (=100) times smaller than the answer to 5 x 3. 15 ÷ 100 = 0.15."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158370,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/19429421-2717-47b9-a5df-779bdf276882.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "0.00072 is 100,000 times smaller than 72. But, 1.2 is 10 times smaller than 12 and 0.06 is 100 times smaller than 6. Therefore the answer to 1.2x0.06 is 10x100 (=1,000) times smaller than the answer to 12x6.",
+        "B": "1.2 is 10 times smaller than 12 and 0.06 is 100 times smaller than 6. Therefore the answer to 1.2x0.06 is 10x100 (=1,000) times smaller than the answer to 12x6. 72÷1,000 = 0.072",
+        "C": "7.2 is 10 times smaller than 72. But, 1.2 is 10 times smaller than 12 and 0.06 is 100 times smaller than 6. Therefore the answer to 1.2x0.06 is 10x100 (=1,000) times smaller than the answer to 12x6.",
+        "D": "0.72 is 100 times smaller than 72. But, 1.2 is 10 times smaller than 12 and 0.06 is 100 times smaller than 6. Therefore the answer to 1.2x0.06 is 10x100 (=1,000) times smaller than the answer to 12x6."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158628,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/75dc964a-9dc0-4147-87f7-939e8929fb98.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "0.00042 is 100,000 times smaller than 42 - you might have thought we needed an extra three zeroes. But, 1.4 is 10 times smaller than 14 and 0.03 is 100 times smaller than 3. Therefore the answer to 1.4 x 0.03 will be 10x100 (=1,000) times smaller than the answer to 14 x 3.",
+        "B": "4.2 is 10 times smaller than 42. But, 1.4 is 10 times smaller than 14 and 0.03 is 100 times smaller than 3. Therefore the answer to 1.4 x 0.03 will be 10x100 (=1,000) times smaller than the answer to 14 x 3.",
+        "C": "1.4 is 10 times smaller than 14 and 0.03 is 100 times smaller than 3. Therefore the answer to 1.4 x 0.03 will be 10x100 (=1,000) times smaller than the answer to 14 x 3. 42 ÷ 1000 = 0.042.",
+        "D": "0.42 is 100 times smaller than 42. But, 1.4 is 10 times smaller than 14 and 0.03 is 100 times smaller than 3. Therefore the answer to 1.4 x 0.03 will be 10x100 (=1,000) times smaller than the answer to 14 x 3."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

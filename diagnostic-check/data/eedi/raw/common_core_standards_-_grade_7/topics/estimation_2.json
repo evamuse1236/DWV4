@@ -1,0 +1,153 @@
+{
+  "shortcode": "vvl",
+  "name": "Estimation 2",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 148,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Round decimals to the nearest whole number",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Round the elements of a calculation to one significant figure to perform an estimation",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Round numbers to an appropriate degree to estimate the answer to a calculation",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 131411,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4c1e3f20-8e85-4eef-8aef-ffb1eee721d5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To estimate the answer we want nice easy numbers. 23 is roughly 20, and 199 is roughly 200.",
+        "B": "Not quite, we want our numbers to be easy to work with in our head. 190 is a bit tricky. Also, is 30 the closest 'easy' number to 23?",
+        "C": "Not quite, is 100 the closest 'easy' number to 199?",
+        "D": "Not quite, is 0 the closest 'easy' number to 23?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133644,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a4735654-d212-4f97-ae90-b88d7e1b4733.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, is 40 the closest 'easy' number to 31?",
+        "B": "Not quite, is 200 the closest 'easy' number to 299?",
+        "C": "To estimate the answer we want nice easy numbers. 299 is roughly 300, and 31 is roughly 30.",
+        "D": "Not quite, is 200 the closest 'easy' number to 299? Is 40 the closest 'easy' number to 31?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131412,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4ffb0fec-ed38-4373-89b9-c22e60238033.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, is 10 the closest 'easy' number to 17? Also, our 'easy' numbers can still be decimals.",
+        "B": "Not quite, our 'easy' numbers can still be decimals.",
+        "C": "Not quite, is 10 the closest 'easy' number to 17?",
+        "D": "To estimate the answer we want nice easy numbers. 17 is roughly 20, and 0.483 is roughly 0.5"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133645,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/331f8fe8-f619-451f-a881-6a4e18e9c5f4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, is 70 the closest 'easy' number to 78?",
+        "B": "To estimate the answer we want nice easy numbers. 78 is roughly 80, and 0.5187 is roughly 0.5",
+        "C": "Not quite, is 70 the closest 'easy' number to 78? Also, our 'easy' numbers can still be decimals.",
+        "D": "Not quite, our 'easy' numbers can still be decimals."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131413,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ae3c7e93-8f3b-43ed-be6a-677c968c0e2a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The first significant figure is 8 in the tens column, there is a 7 to the right of this, meaning that we would round up. Therefore, 87.4 would round to 90 to one significant figure.",
+        "B": "You have rounded to the nearest integer. The question asks you to round to the nearest significant figure. To do this you will need to look at the first non-zero significant figure , 8, and decide if it rounds up or down.",
+        "C": "I think you have tried to round to the nearest integer incorrectly. The question asks you to round to the nearest significant figure. To do this you will need to look at the first non-zero significant figure , 8, and decide if it rounds up or down.",
+        "D": "I think you have assumed it would round down. To round to the nearest significant figure, you will need to look at the first non-zero significant figure - 8 - does this round up or down.?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133646,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/741e4739-7f97-44c0-b287-4bb67fb49fa7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have tried to round to the nearest integer incorrectly. The question asks you to round to one significant figure.",
+        "B": "Nearly! Look at the 6 in 36. Would this round the value up or keep it the same?",
+        "C": "Looking at the 6 in 36 tells us to round this number up to 40.",
+        "D": "Nearly! You have rounded to the nearest integer, but your answer has two significant figures."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131414,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4dff1a66-e2d1-44b6-bbbf-93e9591ff0c3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This question is asking us to round 0.3727 to 1 significant figure. The first significant figure of a number is always the first non-zero digit from the left. In this case this is the 3 in the tenths column so we need to decide if our number is closer to 0.3 or 0.4. Looking at the next digit after the 3.. 7 means the number is closer to 0.4 so 0.3727 to 1 significant figure is 0.4.",
+        "B": "You have accidentally truncated, rather than rounded. The 3 is the first significant figure but we need to look at the value after the 3 to decide if the number stays the same or rounds up.",
+        "C": "The first significant figure is always the first non-zero digit from the left, which is the 3. Look at the digit after the 3 carefully to make sure you round correctly!",
+        "D": "The value you have given has 4 significant figures. For the number 0.3727 the 3 is the first significant figure, you then need to look at the digit after the 3 to decide if it stays the same or rounds up..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133647,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c4cf10bc-ad2c-4d11-8f10-aeae00ffb12a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The first significant figure is always the first non-zero digit from the left, so 0 is not the first significant figure, the 5 is... Look at the number after the 5 carefully to make sure you round correctly!",
+        "B": "The value you have given has 4 significant figures. For the number 0.5841 the 5 is the first significant figure, then you need to look at the value after the 5 to decide if it stays the same or rounds up...",
+        "C": "This question is asking us to round 0.5841 to 1 significant figure. The first significant figure of a number is always the first non-zero digit from the left. In this case this is the 5 in the tenths column so we need to decide if our number is closer to 0.5 or 0.6. Looking at the next number after the 5... 8 means the number is closer to 0.6 so 0.5841 to 1 significant figure is 0.6.",
+        "D": "You have accidentally truncated, rather than rounded. The 5 is the first significant figure but we need to look at the value after the 5 to decide if the number stays the same or rounds up."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131415,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8e71eace-4277-4b26-b6a8-964fd045bcf5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "When rounding to the nearest whole number we need to see which whole number we are closest to. 43.5036 is between the whole numbers 43 and 44. 43.5036 is closer to 44 than to 43, so we round up to 44.",
+        "B": "I think you have rounded to the nearest 10 rather than the nearest 1 (the nearest whole number). 43.5036 is between the whole numbers 43 and 44. Which of these is it closer to (the 5 will tell you whether to round up or round down)?",
+        "C": "I think you have rounded to 1 decimal place rather than the nearest 1 (the nearest whole number). 43.5036 is between the whole numbers 43 and 44. Which of these is it closer to (the 5 will tell you whether to round up or round down)?",
+        "D": "43.5036 lies between two whole numbers, which of these is 43.5036 closer to (the 5 will tell you whether to round up or round down)?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133648,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/94529b3a-15ad-4446-851e-ddd6d1601a1b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have rounded to 1 decimal place rather than the nearest 1 (the nearest whole number). 19.7104 is between the whole numbers 19 and 20. Which of these is it closer to?",
+        "B": "19.7104 lies between two whole numbers, which of these is 19.7104 closer to (The 7 will tell you whether to round up or down)?",
+        "C": "When rounding to the nearest whole number we need to see which whole number we are closest to. 19.7104 is between the whole numbers 19 and 20. 19.7104 is closer to 20 than to 19, so we round up to 20.",
+        "D": "Not quite. 19.7104 lies between two whole numbers, which of these is 19.7104 closer to (The 7 will tell you whether to round up or down)?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

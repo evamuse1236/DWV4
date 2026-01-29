@@ -1,0 +1,147 @@
+{
+  "shortcode": "ehio",
+  "name": "Recognising volume as a measure of space in solid figures",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 91,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Recognise volume as an attribute of 3D objects",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify volume as a measure of space",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166683,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7cf29739-5d98-4f2b-9a6f-60d48d5794d2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have confused perimeter with volume. Which of these describes volume?",
+        "B": "I think you may have confused surface area with volume. Which of these describes volume?",
+        "C": "The space that a three dimensional object takes up is in fact its volume!",
+        "D": "I think you may have confused counting faces with volume. Which of these describes volume?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166933,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/996452f8-5749-4176-b35b-98b6bc89fd84.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have confused the outer surface of a shape for the entire space taken up by it. Which of these describes how much space an object takes up?",
+        "B": "The amount of space that a three dimensional object takes up is in fact its volume.",
+        "C": "I think you may have confused the distance around the outside of an object for the entire space taken up by it. Which of these describes how much space an object takes up?",
+        "D": "I think you may have confused the measurement of how long an object is for the entire space taken up by it. Which of these describes how much space an object takes up?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166684,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/84d4f2b4-0169-406f-85bb-2f6dd0f49b50.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Although we could find area or perimeter of this shape, we cannot find a volume of a flat shape like this. Volume can only be found in three dimensional shape. Which of these has a volume?",
+        "B": "Although we could find perimeter of this shape, we cannot find a volume of a flat shape like this. Volume can only be found in three dimensional shape. Which of these has a volume?",
+        "C": "This shape is broken down to several two dimensional shapes to find surface area. Volume can only be found in three dimensional shape. Which of these has a volume?",
+        "D": "This is a three dimensional shape with length, width and height. That means this shape has a volume."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166934,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ff22ad3e-4541-4313-88ba-8896ec4d3cb1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Although we could find area or perimeter of this shape, we cannot find a volume of a flat shape like this. Volume can only be found in three dimensional shape. Which of these has a volume?",
+        "B": "This is a three dimensional shape that takes up space. That means this shape has a volume.",
+        "C": "This shape is broken down to several two dimensional shapes to find surface area. Volume can only be found in three dimensional shape. Which of these has a volume?",
+        "D": "Although we could find perimeter of this shape, we cannot find a volume of a flat shape like this. Volume can only be found in three dimensional shape. Which of these has a volume?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166685,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1a40c2c0-fd0d-4670-a58c-6b720b30c1cd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have confused some of the vocabulary between two and three dimensional shapes. Which of these options represents the space the entire cuboid takes up?",
+        "B": "Cubes are three dimensional figures that take up space, which is measured in volume. The number of cubes would represent the total volume of the cuboid.",
+        "C": "I think you may have confused some of the vocabulary between two and three dimensional shapes. Which of these options represents the space the entire cuboid takes up?",
+        "D": "Close! Surface area is the amount of the outer surface on a three dimensional object. In this case we are not looking at just the surfaces, but the entire three dimensional space. Which of these options represents the space the entire cuboid takes up?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166935,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9d097bf1-17c3-4d7f-8630-fe13a20a142c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Length and width would give us the area of one of the cube sides, but not volume. Volume is three dimensional. Which of these options involves a way to measure three dimensional space?",
+        "B": "Counting the faces would help us figure out what we would need to cover the exterior of the cuboid, but not the space it takes up. Volume is three dimensional. Which of these options involves a way to measure three dimensional space?",
+        "C": "Cubes are three dimensional figures that take up space, which is measured in volume. The number of cubes would represent the total volume of the cuboid.",
+        "D": "Adding the edges together would help us find how much length it would take to go around the cuboid, but that is perimeter, not volume. Volume is three dimensional. Which of these options involves a way to measure three dimensional space?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166686,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/025d47ef-1986-4cf9-8cb9-0ba79d7df026.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We would need to calculate the surface area in order to find how much paint is needed. Which of these would represent the marble filling space needed for this solid brick?",
+        "B": "We would need to find the number of vertices in order to count the sharp corners. Which of these would represent the marble filling space needed for this solid brick?",
+        "C": "The amount of marble needed to create the brick would be equal to the amount of space we need to fill with marble. This represents volume!",
+        "D": "Mortar would be put on the area of one side of the brick, but not the volume of the brick itself. Which of these would represent the marble filling space needed for this solid brick?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166936,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/71417eca-0736-4eab-aa52-bfe3307203a0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Perimeter would let us know what we would need to wrap something around it, but not the volume of the block itself. Which of these would represent the amount of cheese needed for make up this block?",
+        "B": "I think you may have confused some of the vocabulary between two and three dimensional shapes. Which of these options represents the space the entire block takes up?",
+        "C": "Area would let us know what we would need to cover one side of the block, but not the volume of the block itself. Which of these would represent the amount of cheese needed for make up this block?",
+        "D": "The amount of cheese needed to fill the block would be equal to the amount of space the block itself takes up. This represents volume!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166687,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/39cf724d-1bab-490f-98a1-173ef6071d1f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Careful! Just because one shape is taller than another does not necessarily mean that it has a greater volume. Volume is measured by space and in this case the sand takes up the space. Which can hold more sand, and thus has more volume?",
+        "B": "Careful! Just because one shape is wider than another does not necessarily mean that it has a greater volume. Volume is measured by space and in this case the sand takes up the space. Which can hold more sand, and thus has more volume?",
+        "C": "Since both shapes hold the same amount of sand, and sand is a three dimensional object, we can therefore state that both shapes have the same volume.",
+        "D": "We actually can tell the volumes of the shapes by considering how much sand takes up the space. Which can hold more sand, and thus has more volume?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166937,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/49bab90b-16fa-4a47-8be1-dbe78f0d1d55.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Careful! Just because one shape is taller than another does not necessarily mean that it has a greater volume. Volume is measured by space and in this case the water takes up the space. Which can hold more water, and thus has more volume?",
+        "B": "Careful! Just because one shape is wider than another does not necessarily mean that it has a greater volume. Volume is measured by space and in this case the water takes up the space. Which can hold more water, and thus has more volume?",
+        "C": "Since both shapes hold the same amount of water, and water is a three dimensional object, we can therefore state that both shapes have the same volume.",
+        "D": "We actually can tell the volumes of the shapes by considering how much sand takes up the space. Which can hold more water, and thus has more volume?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

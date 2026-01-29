@@ -1,0 +1,159 @@
+{
+  "shortcode": "vtx",
+  "name": "Multiplication with decimals 1",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 82,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Multiply a decimal by an integer",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiply two decimals together with the same number of decimal places",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiply two decimals together with a different number of decimal places",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve missing number mental multiplication problems with decimals",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 103715,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/48f8b1ce-460c-45f2-809d-d8f837d1279a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "First do 4 x 5 = 20. Here we have 0.4 x 5 so the answer is ten times smaller which is 2.0 or 2.",
+        "B": "I think you have tried to add rather than multiply. You can use 4 x 5 to help you answer this question",
+        "C": "Almost. I think you multiplied 4 x 5, but you have made your answer 100 times smaller. Only one number has been made 10 times smaller.",
+        "D": "Not quite, we don't combine the numbers like this when we multiply them. Remember you can use 4 x 5 to help you answer this question"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103724,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7d858e00-2117-4910-9ebd-b4fc38e65fb6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. I think you multiplied 5 x 8, but you have made your answer 100 times smaller. Only one number has been made 10 times smaller.",
+        "B": "I think you have tried to add rather than multiply. You can use 5 x 8 to help you answer this question",
+        "C": "Not quite, we don't combine the numbers like this when we multiply them. Remember you can use 5 x 8 to help you answer this question",
+        "D": "First do 5 x 8 = 40. Here we have 0.5 x 8 so the answer is ten times smaller, 4.0 or 4."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103716,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/08b02359-13ed-45cc-98ad-f42476111535.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, we don't combine the numbers like this when we multiply them. Remember you can use 3x7 to help you answer this question",
+        "B": "Almost. You have used 3 x 7 = 21, but each number in our question is 10 times smaller. How does this effect the answer? It is not just 10 times smaller.",
+        "C": "I think you have added rather than multiplied. Remember you can use 3x7 to help you.",
+        "D": "First do 3 x 7 = 21. Here we have 0.3 x 0.7 so both the numbers are 10 times smaller. This means the answer is 100 times smaller which is 0.21"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103725,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1e6a4784-9ff2-4958-abc7-3e4802bcfc02.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, we don't combine the numbers like this when we multiply them. Remember you can use 2 x 8 to help you answer this question",
+        "B": "Almost. You have used 2 x 8 = 16, but each number in our question is 10 times smaller. How does this effect the answer? It is not just 10 times smaller.",
+        "C": "First do 2 x 8 = 16. Here we have 0.2 x 0.8 so both the numbers are 10 times smaller. This means the answer is 100 times smaller which is 0.16",
+        "D": "I think you have added rather than multiplied. Remember you can use 2x8 to help you."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103717,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7a51d1cd-66d1-4eda-b46d-d8f0fbb747b1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We need to multiply 0.15 by 0.8. If we multiplied 0.15 by 1 we get 0.15 x 1 = 0.15. Would you expect that multiplying by 0.8 (rather than 1) would make the answer bigger or smaller than 0.15?",
+        "B": "We need to multiply 0.15 by 0.8. If we multiplied 0.15 by 1 we get 0.15 x 1 = 0.15. Would you expect that multiplying by 0.8 (rather than 1) would make the answer bigger or smaller than 0.15?",
+        "C": "I think you might have counted the number of decimal places in the question and that's a good start. But when we do 8 x 15 = 120, we need to put 120 into those 3 decimal places.",
+        "D": "8 × 15 = 120. Looking at the question, 0.8 has 1 decimal place and 0.15 has 2 decimal places, so we have a total of 3 decimal places. So we need to put 120 into the 3 decimal places, so it is 0.120, which can be written as 0.12."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103726,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5944cb37-6ea5-4f56-b9fa-ebb35849668e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We need to multiply 0.65 by 0.2. If we multiplied 0.65 by 1 we get 0.65 x 1 = 0.65. Would you expect that multiplying by 0.2 (rather than 1) would make the answer bigger or smaller than 0.65?",
+        "B": "2 × 65 = 130. Looking at the question, 0.2 has 1 decimal place and 0.65 has 2 decimal places, so we have a total of 3 decimal places. So we need to put 130 into the 3 decimal places, so it is 0.130, which can be written as 0.13.",
+        "C": "I think you might have counted the number of decimal places in the question and that's a good start. But when we do 2 x 65 = 130, we need to put 130 into those 3 decimal places.",
+        "D": "We need to multiply 0.65 by 0.2. If we multiplied 0.65 by 1 we get 0.65 x 1 = 0.65. Would you expect that multiplying by 0.2 (rather than 1) would make the answer bigger or smaller than 0.65?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103718,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9eece0dc-6540-44f4-9e7b-cc531dc2467c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. We would expect the digit 2 in our answer because 3 x 2 = 6. But how many decimal places are there in 0.3 x 0.2? And how many decimal places do we need in our answer?",
+        "B": "Not quite. We would expect the digit 2 in our answer because 3 x 2 = 6. But how many decimal places are there in 0.3 x 0.02? And how many decimal places do we need in our answer?",
+        "C": "0.3 has 1 decimal place and the answer of 0.0006 has 4 decimal places. To get an answer with 4 decimal places, the missing number must have 3 decimal places because 1 + 3 = 4. We know 3 × 2 = 6, so if ★ is to have 3 decimal places, it must be 0.002.",
+        "D": "Not quite. We would expect the digit 2 in our answer because 3 x 2 = 6. But how many decimal places are there in 0.3 x 0.0002? And how many decimal places do we need in our answer?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103727,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/089473bb-e00a-4e06-9877-881841b5225b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "0.03 has 2 decimal places and the answer of 0.00009 has 5 decimal places. To get an answer with 5 decimal places, the missing number must have 3 decimal places because 2 + 3 = 5. We know 3 × 3 = 9, so if ★ is to have 3 decimal places, it must be 0.003.",
+        "B": "Not quite. We would expect the digit 3 in our answer because 3 x 3 = 9. But how many decimal places are there in 0.03 x 0.03? And how many decimal places do we need in our answer?",
+        "C": "Not quite. We would expect the digit 3 in our answer because 3 x 3 = 9. But how many decimal places are there in 0.03 x 0.3? And how many decimal places do we need in our answer?",
+        "D": "Not quite. We would expect the digit 3 in our answer because 3 x 3 = 9. But how many decimal places are there in 0.03 x 0.0003? And how many decimal places do we need in our answer?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103719,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3f3bc8d6-3cd4-4ad2-a329-46d20d974ee8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. We would expect the digits 64 in our answer because 16 x 4 = 64. But how many decimal places are there in 0.16 x 0.4? And how many decimal places do we need in our answer?",
+        "B": "I think you may have confused perimeter and area. How do we find the area of a rectangle?",
+        "C": "Area rectangle = width × length = 0.16 × 0.4. First we work out 16 × 4 = 64. Then, because 0.16 has 2 decimal places and 0.4 has 1 decimal place, we need 2 + 1 = 3 decimal places in our answer. So the area is 0.064 square metres.",
+        "D": "I think you may have added the two sides How do we find the area of a rectangle?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103728,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fe8366bd-af80-4219-9e27-72118f34b8c1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. We would expect the digits 161 in our answer because 23 x 7 = 161. But how many decimal places are there in 0.23 x 0.7? And how many decimal places do we need in our answer?",
+        "B": "I think you may have confused perimeter and area. How do we find the area of a rectangle?",
+        "C": "I think you may have added the two sides How do we find the area of a rectangle?",
+        "D": "Area rectangle = width × length = 0.23 × 0.7. First we work out 23 × 7 = 161. Then, because 0.23 has 2 decimal places and 0.7 has 1 decimal place, we need 2 + 1 = 3 decimal places in our answer. So the area is 0.161 square metres."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -5,8 +5,8 @@
  * from scripts/ka-new-content-config.json.
  *
  * Usage:
- *   npx tsx scripts/fill-empty-rows.ts           # Apply changes
- *   npx tsx scripts/fill-empty-rows.ts --dry-run  # Preview only
+ *   node --experimental-strip-types scripts/fill-empty-rows.ts            # Apply changes
+ *   node --experimental-strip-types scripts/fill-empty-rows.ts --dry-run  # Preview only
  */
 
 import * as fs from "fs";

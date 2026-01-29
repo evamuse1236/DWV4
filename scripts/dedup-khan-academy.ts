@@ -7,7 +7,7 @@
  * Uses heuristic scoring: keyword overlap between the KA unit name and
  * the LO's handout/objective text, plus match_quality preference.
  *
- * Usage: npx tsx scripts/dedup-khan-academy.ts [--dry-run]
+ * Usage: node --experimental-strip-types scripts/dedup-khan-academy.ts [--dry-run]
  */
 
 import * as fs from "fs";

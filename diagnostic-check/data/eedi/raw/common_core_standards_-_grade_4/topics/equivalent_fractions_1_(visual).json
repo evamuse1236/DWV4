@@ -1,0 +1,165 @@
+{
+  "shortcode": "bigg",
+  "name": "Equivalent fractions 1 (visual)",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 39,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Shade unit fractions when part of a shape",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify unit fractions when part of a shape",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Shade non-unit fractions when part of a shape",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify non-unit fractions when part of a shape",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify equivalent fractions when presented as shapes or objects",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 130059,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/287c27ad-c559-4271-986d-8f918962b3c6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "In this diagram, one out of every three equally-sized rectangles is shaded. Do any of the other diagrams follow the same pattern?",
+        "B": "In this diagram, two out of six or one out of every three equally-sized rectangles is shaded. Do any of the other diagrams follow the same pattern?",
+        "C": "In this diagram, three out of nine or one out of every three equally-sized rectangles is shaded. Do any of the other diagrams follow the same pattern?",
+        "D": "In Diagrams A, B and C, 1 out of every 3 equally-sized parts are shaded = ⅓. In Diagram D, 1 out of every 2 equally-sized parts are shaded so D is the odd one out."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130019,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9d9b7d97-2861-491d-be56-cb72e8f340b8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "In this diagram, three out of every four equally-sized rectangles are shaded. Do any of the other diagrams follow the same pattern?",
+        "B": "In this diagram, six out of eight or three out of every four equally-sized rectangles are shaded. Do any of the other diagrams follow the same pattern?",
+        "C": "In Diagrams A, B and D, 3 out of every 4 equally-sized parts are shaded = ¾. In Diagram C, 2 out of every 3 equally-sized parts are shaded so C is the odd one out.",
+        "D": "In this diagram, twelve out of sixteen or three out of every four equally-sized rectangles are shaded. Do any of the other diagrams follow the same pattern?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130060,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5133dbad-a23c-4b1e-bac7-ddaac6f278d1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "All the other diagrams show one out of four equally-sized parts shaded which equals ¼. But in this diagram, the parts are not equally sized so this diagram does not show ¼ shaded.",
+        "B": "In this diagram, one out of four equally-sized rectangles is shaded which equals ¼. But we need a diagram which does NOT show ¼ shaded.",
+        "C": "In this diagram, one out of four equally-sized rectangles is shaded which equals ¼. But we need a diagram which does NOT show ¼ shaded.",
+        "D": "We can split the large white rectangle on the right into two more of the smaller rectangles. This will give us one shaded part out of four equally-sized parts which equals ¼. But we need a diagram which does NOT show ¼ shaded."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130020,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e69c6130-bf73-4af7-b33d-3651a4df53df.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "In this diagram, one out of ten equally-sized rectangles is shaded which equals ⅒. But we need a diagram which does NOT show ⅒ shaded.",
+        "B": "In this diagram, one out of ten equally-sized rectangles is shaded which equals ⅒. But we need a diagram which does NOT show ⅒ shaded.",
+        "C": "We can split the large white rectangle on the left into five of the smaller rectangles. This will give us one shaded part out of ten equally-sized parts which equals ⅒. But we need a diagram which does NOT show ⅒ shaded.",
+        "D": "All the other diagrams show one out of ten equally sized parts shaded which equals ⅒. But in this diagram, the parts are not equally sized so this diagram does not show ⅒ shaded."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130061,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bbb1f146-8dd6-47e5-9867-b38e750fc432.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Try splitting the larger rectangles into equally-sized, smaller rectangles that are the same shape and size as the shaded rectangle.",
+        "B": "We do have one shaded rectangle but how many rectangles of this size fit into the whole shape? Our answer will be a fraction out of the total number of equally-sized rectangles.",
+        "C": "I can see why you might think that because we can see four rectangles and one is shaded. But we need the parts to be equally-sized. Can you split the whole shape into equally-sized rectangles?",
+        "D": "We can split the whole shape into 8 equally-sized, smaller rectangles that are the same size and shape as the shaded rectangle. This will give us one shaded part out of 8 equally-sized parts = ⅛."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130021,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7060caa3-a3a4-4f18-883a-29865880a30d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We can split the whole shape into 12 equally-sized, smaller rectangles that are the same size and shape as the shaded rectangle. This will give us one shaded part out of 12 equally-sized parts = 1/12.",
+        "B": "I can see why you might think that because we can see five rectangles and one is shaded. But we need the parts to be equally-sized. Can you split the whole shape into equally-sized rectangles?",
+        "C": "We do have one shaded rectangle but how many rectangles of this size fit into the whole shape? Our answer will be a fraction out of the total number of equally-sized rectangles.",
+        "D": "Try splitting the larger rectangles into equally-sized, smaller rectangles that are the same shape and size as the shaded rectangle."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130062,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fdcdcd81-298e-4961-86a8-e5ebeed64db7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "In this diagram, 2 out of 8 equally-sized rectangles are shaded = 2/8. But we need a diagram which does NOT show 2/8 shaded.",
+        "B": "In this diagram, 2 out of 8 equally-sized rectangles are shaded = 2/8. But we need a diagram which does NOT show 2/8 shaded.",
+        "C": "All the other diagrams show 2 out of 8 equally-sized parts shaded = 2/8. But in this diagram, the parts are not equally sized so this diagram does not show 2/8 shaded.",
+        "D": "We can split the large white rectangle on the right into 4 of the smaller rectangles. This will give us 2 shaded parts out of 8 equally-sized parts = 2/8. But we need a diagram which does NOT show 2/8 shaded."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130022,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f4e75f19-8370-47d3-b5ad-8d995886a892.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We can split the large white rectangle on the right into 6 of the smaller rectangles. We can also split the medium rectangle above the shaded rectangles into 3 of the smaller rectangles. This will give us 3 shaded parts out of 12 equally-sized parts = 3/12. But we need a diagram which does NOT show 3/12 shaded.",
+        "B": "In this diagram, 3 out of 12 equally-sized rectangles are shaded = 3/12. But we need a diagram which does NOT show 3/12 shaded.",
+        "C": "In this diagram, 3 out of 12 equally-sized rectangles are shaded = 3/12. But we need a diagram which does NOT show 3/12 shaded.",
+        "D": "All the other diagrams show 3 out of 12 equally-sized parts shaded = 3/12. But in this diagram, the parts are not equally sized so this diagram does not show 3/12 shaded."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130063,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/92a22b33-830b-4c78-bdc1-4e79c16f45ac.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost! We want the fraction of the rectangle that is shaded yellow but you have given the fraction that is not shaded.",
+        "B": "We do have 3 shaded rectangles but how many rectangles are there in total? Our answer will be a fraction out of the total number of equally-sized rectangles.",
+        "C": "Not quite. You have used the number of unshaded rectangles as your denominator. We want the fraction of the whole shape so we need to count all the equally-sized rectangles in the whole shape.",
+        "D": "The rectangle has been split into 10 equally-sized, smaller rectangles and 3 of them are shaded. So the fraction of the rectangle that is shaded is 3/10."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130023,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/971e6765-c699-4d93-bee3-915793066db7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The rectangle has been split into 10 x 10 = 100 equally-sized, smaller rectangles and 10 + 10 + 7 = 27 of them are shaded. So the fraction of the rectangle that is shaded is 27/100.",
+        "B": "Not quite. You have used the number of unshaded rectangles as your denominator. We want the fraction of the whole shape so we need to count all the equally-sized rectangles in the whole shape.",
+        "C": "We do have 27 shaded rectangles but how many rectangles are there in total? Our answer will be a fraction out of the total number of equally-sized rectangles.",
+        "D": "Almost! We want the fraction of the rectangle that is shaded yellow but you have given the fraction that is not shaded."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

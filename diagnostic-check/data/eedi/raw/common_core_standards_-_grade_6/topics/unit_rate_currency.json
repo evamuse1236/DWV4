@@ -1,0 +1,153 @@
+{
+  "shortcode": "eejx",
+  "name": "Unit Rate: Currency",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 9,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Use direct proportion to solve unitary missing amounts in problems (e.g. recipes)",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use direct proportion to solve non-unitary missing amounts in problems (e.g. recipes)",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve best value problems by comparing price for a fixed unit bought",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166133,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6062fdae-b9c7-4ac1-a1e9-f72ea1d86537.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have subtracted the 8 from 84. Think about sharing that money out equally over the hours worked.",
+        "B": "I think you've worked out your remainder here incorrectly. Remember, it's 4 out of 8, not 4 out of 10.",
+        "C": "$84 split across the 8 hours would mean Shari's hourly pay is $10.50. Well done!",
+        "D": "You have multiplied here! Think what 'per hour' means. If Shari receives $84 for 8 hours, you are working out how much she would be paid for just 1 hour."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166361,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bdfb153e-b046-40c9-a81a-ac8794d5b7be.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "$54 split equally across the 4 hours Tyler worked is $13.50 an hour. Well done!",
+        "B": "Be careful - 54 divided by 4 isn't 13 exactly. Have a look at your remainder.",
+        "C": "You have multiplied here! Think what 'per hour' means. If Tyler receives $54 for 4 hours, you are working out how much he would be paid for just 1 hour.",
+        "D": "Not quite! Remember, if you have a remainder of 2, it is 2 out of 4."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166134,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/19745bc3-1aca-467a-90c5-d85643518747.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If Evan is paid $14 per hour, and he works for 7 hours, he will be paid $98 for his work.",
+        "B": "It looks like you have added the values together. Think about how much Evan gets paid each hour, then how much he would be paid for 7 hours of work.",
+        "C": "Not quite, that would be if Evan was paid $14 for all 7 hours of work, but he is paid $14 for 1 hour of work.",
+        "D": "If Evan is paid $14 per hour, he can't be paid less than that for 7 hours! Think about if Evan is paid $14 for 1 hour, how would you work out 7 hours?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166362,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0c3ca7a5-414c-478c-8ef1-238a093c741a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Hmm it looks like you have added the values. What operation do you need to use if you are finding out 9 hours of work at $12 an hour?",
+        "B": "Not quite! That would be if you were paid $12 for all 9 hours that Tim worked.",
+        "C": "That's right! If Tim was paid $12 per hour for 9 hours, he would be paid $108 in total.",
+        "D": "It looks like you have subtracted the values. Think about what operation you need to use in this question."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166135,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0100843b-49a8-452f-ac7e-8c4cbaada7a5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Looks like you have worked out the price if 1 can was $14.88. We want the price of 1 when all 24 cans cost $14.88!",
+        "B": "That's right, well done! $14.88 split equally by 24 is $0.62.",
+        "C": "It looks like you have got your proportions slightly wrong here. Remember, 24 cans cost a total of $14.88. We are looking for the cost of 1.",
+        "D": "Think about what operation you will need to use here. If you are sharing something into equal parts, you don't need to use subtraction!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166363,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/15314753-4a27-4653-8417-03b5cc9ce474.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have divided the amount of cans by the cost. If you are finding the final cost, you need to do the cost divided by the number of cans.",
+        "B": "Hmm if you are splitting the cost of something equally, you don't need to multiply. What do you need to do instead?",
+        "C": "If you are splitting the cost by the amount of cans, you don't need to subtract. What operation do you need to use instead?",
+        "D": "That's correct! If 18 cans of lemonade cost $16.92, then 1 can will cost $0.94."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166136,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/12a54301-f0d0-45e2-ab9d-60f69c2565c0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "How many hot dogs can you make from 24 hot dog buns and 24 hot dogs?",
+        "B": "It looks like you have divided the amount of hot dogs by the price - think about what order this needs to be in.",
+        "C": "You've correctly worked out how much 1 hot dog would cost, but we want the cost of the whole hot dog with a bun.",
+        "D": "You're correct. The total cost for all 24 hot dogs with a bun was $8.16 so 1 hot dog with a bun would cost $0.34."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166364,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0a692974-45a4-47d7-8852-c57427dfe7ff.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "That's correct! The total for all 16 burgers with a bun is $8.80, so 1 burger with a bun would be $0.55.",
+        "B": "You've correctly calculated the price of 1 burger - but remember, we want 1 burger with a bun.",
+        "C": "How many burgers with a bun can you make with 16 burgers and 16 buns?",
+        "D": "It looks like you have divided the amount of burgers and buns by the total cost. Think about what way round you need to do this division to get the cost of 1 burger with a bun."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166137,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dc427971-cb7b-4fd0-95e8-de7033d61f63.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "For 24 cans we divide 16.08 by 24 to get 67 cents per can. For 18 cans we divide 12.42 by 18 to get 69 cents per can. That means the 24 cans are 2 cents cheaper per can!",
+        "B": "I think you found the number of cans per dollar and compared those. Try finding the cost per can, and compare those.",
+        "C": "I think you found the number of cans per dollar and compared those as if they were costs. Try finding the cost per can, and compare those.",
+        "D": "Almost, make sure you are selecting the cheaper cost per can."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166583,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f77db785-492b-4c7c-aa81-ff0a397505e0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you found the number of bags per dollar and compared those. Try finding the cost per bag, and compare those.",
+        "B": "For 16 bags we divide 8.64 by 16 to get 54 cents per bag. For 14 cans we divide 7.98 by 14 to get 57 cents per can. That means the 16 bags are 3 cents cheaper!",
+        "C": "Almost, make sure you are selecting the cheaper cost per bag.",
+        "D": "I think you have found the difference in price and divided it by 2. You need to find the cost per bag for each bag, and then compare those."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,165 @@
+{
+  "shortcode": "bit1",
+  "name": "Estimating volumes and masses",
+  "collectionId": 33,
+  "level": 1,
+  "sequence": 32,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Choose appropriate standard units to estimate and measure volume in different situations",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Estimate the volume or capacity of an object",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given an object and the numerical value of its volume, select the units it is most likely to have been measured in",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Estimate the weight of an object",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given an object and the numerical value of its weight, select the units it is most likely to have been measured in",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 129088,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/051458eb-5eba-4c97-bc4b-2f1911da40cd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The teaspoon holds about 5 ml.",
+        "B": "Drinks bottles usually vary in size between about 200 ml and 2000 ml.  500 ml would be a typical size.",
+        "C": "The cooking pot holds about 5000 ml.",
+        "D": "Only the bath is big enough to hold 50,000 ml."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129228,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0788496d-4f56-4f2f-80ae-9cc4b618dbe0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The teaspoon holds about 5 ml.",
+        "B": "500 ml is a typical size for a drinks bottle.",
+        "C": "The cooking pot holds about 5000 ml.",
+        "D": "The bath is big enough to hold 50,000 ml."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135939,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6d07141f-30b0-4f39-94fc-cef0fe711a25.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the correct answer as a typical tea spoon holds around 6 ml.",
+        "B": "Not quite! Remember, 1 litre is equal to 1000ml. This would be too large for a spoon to hold.",
+        "C": "Not quite, remember, mm is a measure of length, not volume.",
+        "D": "Not quite, remember, cm² is a measure of area, not volume."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135954,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/82adc534-eba1-4678-b8d7-1bfea47aebd2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! The average glass of water is around 300ml, so if we used ml to measure the amount of water a family uses in one week, our answer would be very large.",
+        "B": "A family is likely to use a number of litres of water in one week, so litres is the most appropriate unit of measure.",
+        "C": "Not quite, remember, mm is a measure of length, not volume.",
+        "D": "Not quite, remember, cm² is a measure of area, not volume."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135940,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/30573342-4c93-4d92-9020-b39825c4bd21.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "200ml is about the amount of tea that would be in a teacup",
+        "B": "20 litres is quite a large amount. Bear in mind, a large bottle of lemonade is about 2 litres.",
+        "C": "Not quite, 200 cl is the same as 2000 ml, which is 2 litres. A large bottle of lemonade is usually around 2 litres.",
+        "D": "Not quite, remember, cm² is a measure of area, not volume."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135955,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/899583cd-e341-4992-81de-15a676743e0a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, 1500 ml is the same as 1.5 litres. This is less than a large bottle of soda.",
+        "B": "Not quite! While 1500 litres is a large amount, it would not be enough to fill a large swimming pool.",
+        "C": "Not quite, one m² is a unit of area, not volume.",
+        "D": "One m³ is the same as 1000 litres. A swimming pool would be likely to hold this much water!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158835,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1b42cea4-a487-4771-989a-edf7ec8f5fd7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "500kg would be too large and the other units of measurement are for volumes, so grams is the most likely option!",
+        "B": "A horse weighs around 500kg so this would be A LOT of flour and is a little unrealistic. Can you see another unit of mass that would mean the flour weighs less?",
+        "C": "I think you have confused the units for mass and volume... We want the mass of the flour, so which of the options is a realistic unit for mass?",
+        "D": "I think you have confused the units for mass and volume... We want the mass of the flour, so which of the options is a realistic unit for mass?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159034,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/42bd111d-a2b4-40ea-8c3d-ba28a7f2b1b1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have confused the units for mass and volume... We want the mass of the sugar, so which of the options is a realistic unit for mass?",
+        "B": "I think you have confused the units for mass and volume... We want the mass of the sugar, so which of the options is a realistic unit for mass?",
+        "C": "200kg would be too large and the other units of measurement are for volumes, so grams is the most likely option!",
+        "D": "A dolphin weighs around 200kg so this would be A LOT of sugar and is a little unrealistic. Can you see another unit of mass that would mean the flour weighs less?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158836,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f247c643-b0c1-44c1-8660-a00fe64b1648.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is most likely to be the mass of a tablespoon of yoghurt. We need a greater mass for the bowling ball...",
+        "B": "5g would be the mass of the yoghurt, 500g would be the mass of the butter and 50 kg would be the mass of the boy therefore the most likely mass of the bowling ball is 5kg.",
+        "C": "This is most likely the mass of the block of butter. We need a greater mass for the bowling ball...",
+        "D": "This is most likely the mass of the boy. We need a smaller mass for the bowling ball..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159035,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/22763466-c7c5-4745-9c93-f3afc5a460e9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "0.3g is very light so that's the leaf. Next is the glasses at 30g. Then the units change to kg (1kg = 1000g), and we have the cat at 3kg and the very heavy motorcycle at 300kg.",
+        "B": "Maybe you mixed up the units here. 1kg is the mass of a bag of sugar, so 300kg is most likely the mass of a motorcycle. We need a smaller mass for the cat...",
+        "C": "This is most likely the mass of a pair of glasses. We need a bigger mass for the cat...",
+        "D": "Maybe you mixed up the units here; grams are very small. This is most likely the mass of the leaf. We need a bigger mass for the cat..."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

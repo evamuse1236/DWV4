@@ -1,0 +1,141 @@
+{
+  "shortcode": "efkw",
+  "name": "Writing simple two-step equations",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 139,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Form equations for situations described in words",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166224,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dd6903b5-3566-4acb-8dc6-fd74de08c113.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, 7 + 𝑛 means 7 more than a number, we want 7 times a number.",
+        "B": "It seems like you've written it as if it was 3 times a number rather than 7 times a number.",
+        "C": "Remember that it should be the sum of three and seven times a number equal to 38. Your calculation seems to be in the wrong order here! ",
+        "D": "7 times a number can be written as 7𝑛, so the sum (adding) of 3 and 7𝑛 would be 3 + 7𝑛 and that is equal to 38. So we have 3 + 7𝑛 = 38"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166451,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5a9a1fc1-b933-44c7-adb7-c99959ba3951.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It seems like you've written it as if it was 4 times a number rather than 6 times a number.",
+        "B": "Remember that it should be the sum of four and six times a number equal to 68. Your calculation seems to be in the wrong order here! ",
+        "C": "6 times a number can be written as 6𝑛, so the sum (adding) of 4 and 6𝑛 would be 4 + 6𝑛 and that is equal to 68. So we have 4 + 6𝑛 = 68",
+        "D": "Not quite, 6 + 𝑛 means 6 more than a number, we want 6 times a number."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166225,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7704bb84-b6f3-4fc8-8164-d0885c533de6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Have a look carefully at the question. Do we reduce a number by adding to it?",
+        "B": "5 times a number can be written as 5𝑛. If we reduce by 6, we want to subtract 6, so that is 5𝑛 – 6 and that is equal to 51. So we have 5𝑛 – 6 = 51",
+        "C": "Not quite - I think you may have some numbers in the wrong place here! We want 5 times a number reduced by 6. ",
+        "D": "Have a look carefully at the question. Do we reduce a number by adding to it? Also, check carefully what we are multiplying the number by!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166452,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bbb46963-cf92-44c0-b228-f75287769b8d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Have a look carefully at the question. Do we reduce a number by adding to it? Also, check carefully what we are multiplying the number by!",
+        "B": "Not quite - I think you may have some numbers in the wrong place here! We want 7 times a number reduced by 3. ",
+        "C": "7 times a number can be written as 7𝑛. If we reduce by 3, we want to subtract 3, so that is 7𝑛 – 3 and that is equal to 45. So we have 7𝑛 – 3 = 45",
+        "D": "Have a look carefully at the question. Do we reduce a number by adding to it?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166226,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6c35fa3d-1d5e-4782-97c4-823162bbfe9e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Here, we have only multiplied the number by 3 rather than the sum of the number and 5. How can we show that we want both 𝑛 and 5 to be multiplied by 3?",
+        "B": "Here, we have only multiplied 5 by 3 rather than the sum of the number and 5. How can we show that we want both 𝑛 and 5 to be multiplied by 3?",
+        "C": "We want to multiply the whole sum of 𝑛 + 5 by 3, which we can do by using parentheses. This would give us 3(𝑛 + 5) and that is equal to 33. So we have 3(𝑛 + 5) = 33",
+        "D": "Not quite, I think you may have found the difference rather than the sum, have a think about what 'sum' means."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166453,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/30d635ba-45a1-42ca-8fee-31e0128d7294.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Here, we have only multiplied 8 by 2 rather than the sum of the number and 8. How can we show that we want both 𝑛 and 8 to be multiplied by 2?",
+        "B": "Here, we have only multiplied the number by 2 rather than the sum of the number and 8. How can we show that we want both 𝑛 and 8 to be multiplied by 2?",
+        "C": "Not quite, I think you may have found the difference rather than the sum, have a think about what 'sum' means.",
+        "D": "We want to multiply the whole sum of 𝑛 + 8 by 2, which we can do by using parentheses. This would give us 2(𝑛 + 8) and that is equal to 53. So we have 2(𝑛 + 8) = 53"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166227,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2a3816d2-9c30-4ad6-974e-ef4e1c591fbb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Here, we have only given the product of 7 and a number. We want to give the product of 7 and the sum of a number and two. How can we show that the whole sum is being multiplied by 7?",
+        "B": "This would be the product of 𝑛 and the sum of 7 + 2. The sum should be of a number and two, then we need to represent a product of this and 7.",
+        "C": "Not quite, I think you have found the difference between a number and 2, have a think about what 'sum' means.",
+        "D": "The sum of a number (𝑛) and 2 would be 𝑛 + 2. A product is a multiplication and as we are multiplying a whole sum by 7, we want to express it in parentheses as 7(𝑛 + 2). This is equal to 42 so we get 42 = 7(𝑛 + 2)"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166454,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ad50e43d-763c-4da9-a8cf-fb646b144907.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This would be the product of 𝑛 and the sum of 9 + 5. The sum should be of a number and 5, then we need to represent a product of this and 9.",
+        "B": "Here, we have only given the product of 9 and a number. We want to give the product of 9 and the sum of a number and 5. How can we show that the whole sum is being multiplied by 9?",
+        "C": "The sum of a number (𝑛) and 5 would be 𝑛 + 5. A product is a multiplication and as we are multiplying a whole sum by 9, we want to express it in parentheses as 9(𝑛 + 5). This is equal to 36, so we get 36 = 9(𝑛 + 5)",
+        "D": "Not quite, I think you have found the difference between a number and 5, have a think about what 'sum' means."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166228,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4ab8c9b6-22cf-47b2-928d-cb125aa888d8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might have your quotient the wrong way around! The first number of the quotient is the first in the division.",
+        "B": "Here you have shown a multiplication, but a quotient is a division.",
+        "C": "2 times a number (𝑛) can be written as 2𝑛. A quotient is a division, so we want 2𝑛 ÷ 3 which is equal to 24, so we get 24 = 2𝑛 ÷ 3",
+        "D": "Not quite, 24 is the quotient, which means it is the answer to the division."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166455,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8c555768-5acb-404e-aaa8-a2e9f845cd72.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might have your quotient the wrong way around! The first number of the quotient is the first in the division.",
+        "B": "Not quite, 15 is the quotient, which means it is the answer to the division.",
+        "C": "6 times a number (𝑛) can be written as 6𝑛. A quotient is a division, so we want 6𝑛 ÷ 8 which is equal to 15, so we have 15 = 6𝑛 ÷ 8",
+        "D": "Here you have shown a multiplication, but a quotient is a division."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

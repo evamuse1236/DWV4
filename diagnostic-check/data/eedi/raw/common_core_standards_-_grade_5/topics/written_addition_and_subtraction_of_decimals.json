@@ -1,0 +1,159 @@
+{
+  "shortcode": "biir",
+  "name": "Written addition and subtraction of decimals",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 35,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Add decimals where the numbers involved have a different number of decimal places",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Subtract decimals from integers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Subtract decimals where the numbers involved have a different number of decimal places",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Carry out missing number subtraction problems where a written method is needed",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 103695,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5aefeb0e-5f99-4170-a220-53242833bb97.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful. Remember to line up the digits with the same place value and the decimal points can help do this too.",
+        "B": "Not quite. 0.07 does not equal 0.7. Where else could we add a zero, without changing the value of the number, to make sure our place value lines up?",
+        "C": "Not quite. 5.4 does not equal 0.54. To get the digits to line up try rewriting one of the numbers rather than changing the value of one.",
+        "D": "To add decimal numbers, put the values one below another, taking care to put the decimal points in line. This has only been done correctly in option D where 0.7 has been rewritten as 0.70."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103706,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f1079037-9796-48bf-b56b-744b29c057aa.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful. Remember to line up the digits with the same place value, you can use the decimal points to help with this too.",
+        "B": "To add decimal numbers, put the values one below another, taking care to put the decimal points in line. This has only been done correctly in option B where 0.8 has been rewritten as 0.80.",
+        "C": "Not quite. 2.9 does not equal 0.29. To get the digits to line up try rewriting one of the numbers rather than changing the value of one.",
+        "D": "Not quite. 0.08 does not equal 0.8. Where else could we add a zero, without changing the value of the number, to make sure our place value lines up?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103696,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/da1ce3e6-7217-4fcc-aceb-8d22875db309.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. 0.300 does not equal 3. Where else could we add zeros, without changing the value of the number, to make sure our place value lines up?",
+        "B": "Not quite. 0.003 does not equal 3. Where else could we add zeros, without changing the value of the number, to make sure our place value lines up?",
+        "C": "To subtract decimal numbers, put the values one below another, taking care to put the decimal points in line. C is the only option that has done this correctly by using the fact that 3 = 3.000.",
+        "D": "Good try, but the decimal points are still not lined up. Line up the decimals first before adding in zeros."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103707,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0b8a01c9-fe34-4ea5-bb4c-e8c3aa15041d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To subtract decimal numbers, put the values one below another, taking care to put the decimal points in line. A is the only option that has done this correctly by using the fact that 7 = 7.000.",
+        "B": "Not quite. 0.007 does not equal 7. Where else could we add zeros, without changing the value of the number, to make sure our place value lines up?",
+        "C": "Not quite. 0.700 does not equal 7. Where else could we add zeros, without changing the value of the number, to make sure our place value lines up?",
+        "D": "Good try, but the decimal points are still not lined up. Line up the decimals first before adding in zeros."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103697,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bd96ed4a-d504-43ac-9319-9d4c767a368c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you did 202 - 51 to get the numbers after the decimal points. However, we need to put the 0.51 on top of the subtraction, and the 0.202 below it. You might want to put an extra 0 on the end of 0.51",
+        "B": "Not quite. You need to always do the digit on the top subtract the digit underneath it. You might need to borrow to do this.",
+        "C": "Put 0.510 on line 1 and then 0.202 below, taking care to ensure the decimal points are in line. Looking at the hundredths column, we have 0 – 2, which can't be done, so the 1 of 0.51 becomes 0 and the thousandths column now reads 10 – 2 = 8. Moving on to the hundredths column, this reads 0 – 0 = 0, the tenths column is 5 – 2 = 3, and the units column is 0 – 0 = 0, which gives a complete answer of 0.308",
+        "D": "Almost, but remember you borrowed from the 1 in 0.51 so it became a 0."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103708,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ee56006f-c279-462d-a9c8-c516b8e1a588.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Put 0.430 on line 1 and then 0.128 below, taking care to ensure the decimal points are in line. Looking at the hundredths column, we have 0 – 8, which can’t be done, so the 3 of 0.43 becomes 2 and the thousandths column now reads 10 – 8 = 2. Moving on to the hundredths column, this reads 2 – 2 = 0, the tenths column is 4 – 1 = 3, and the units column is 0 – 0 = 0, which gives a complete answer of 0.302",
+        "B": "Almost, but remember you borrowed from the 3 in 0.43 so it became a 2.",
+        "C": "I think you did 128 - 43 to get the numbers after the decimal points. However, we need to put the 0.43 on top of the subtraction, and the 0.128 below it. You might want to put an extra 0 on the end of 0.43",
+        "D": "Not quite. You need to always do the digit on the top subtract the digit underneath it. You might need to borrow to do this."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103698,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1e5ac4a8-363b-411f-ad27-8d4475ded13a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have subtracted 1.4 from 3.215, but we need to add to find that missing number",
+        "B": "This question, effectively 𝑥 – 3.215 = 1.4, can be solved by adding 3.215 to both sides, which will keep the equation in balance and leave us with ‘𝑥 = something’, our answer. Performing this stage gives 𝑥 = 1.4 + 3.251 = 4.615",
+        "C": "I think you have tried to add, just remember to line up the place value carefully before you add.",
+        "D": "I think you have tried to subtract 1.4 from 3.215, but we need to add to find that missing number"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103709,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/38796d71-587f-4a1a-b107-364eb180f5ef.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have subtracted 1.534 from 2.7, but we need to add to find that missing number",
+        "B": "I think you have tried to subtract 1.534 from 2.7, but we need to add to find that missing number",
+        "C": "I think you have tried to add, just remember to line up the place value carefully before you add.",
+        "D": "This question, effectively 𝑥 – 1.534 = 2.7, can be solved by adding 1.534 to both sides, which will keep the equation in balance and leave us with ‘𝑥 = something’, our answer. Performing this stage gives 𝑥 = 2.7 + 1.534 = 4.234"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103700,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e3f339ea-8aee-4bdc-b66c-ac9a3cc21d54.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have done 0.15 - 0.05. We are taking away a bigger number, so we need to go back to 0, and then see how many more we need to take away.",
+        "B": "I think you have done the subtraction backwards. We are taking the bigger number away, so we will get a negative answer",
+        "C": "Almost. If you go back 0.15 to get to 0, how many more do you need to go back so that you have taken off 0.5 in total?",
+        "D": "We are subtracting a bigger number so the answer will be negative. Start by taking away 0.15 to get to 0. To find out how much more we need to take off do 0.5 - 0.15 = 0.35. If I go 0.35 back from 0 I get to -0.35"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103711,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5422fa6f-3751-4f51-9dc6-f1a3d56e2abe.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We are subtracting a bigger number so the answer will be negative. Start by taking away 0.26 to get to 0. To find out how much more we need to take off do 0.6 - 0.26 = 0.34. If I go 0.34 back from 0 I get to -0.34",
+        "B": "I think you have done the subtraction backwards. We are taking the bigger number away, so we will get a negative answer",
+        "C": "Almost. If you go back 0.26 to get to 0, how many more do you need to go back so that you have taken off 0.6 in total?",
+        "D": "I think you have done 0.26 - 0.06. We are taking away a bigger number, so we need to go back to 0, and then see how many more we need to take away."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

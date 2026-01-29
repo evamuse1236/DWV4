@@ -1,0 +1,159 @@
+{
+  "shortcode": "eheh",
+  "name": "Multiply and Divide with positives and negatives",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 102,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Carry out multiplication problems involving two negative integers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Carry out division problems involving one negative integer",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve one-step linear equations requiring multiplication or division, involving negative integers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Carry out multiplication problems involving negative fractions (US)",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166273,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/56f8a4df-c215-42d7-88d9-598fff28f331.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have correctly multiplied 3 and 7 together to get 21 but now look at the sign... What happens when you multiply a negative by a negative?",
+        "B": "I think you have attempted to add the values but you need to multiply them...",
+        "C": "When two numbers are next to each other, like in this question, it means they are being multiplied!",
+        "D": "A negative multiplied by a negative gives a positive answer so -3 x -7 equals positive 21!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166500,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/31a54e8a-7704-448b-bf29-ac61c733447b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A negative multiplied by a negative gives a positive answer so -4 x -9 equals positive 36!",
+        "B": "When two numbers are next to each other, like in this question, it means they are being multiplied!",
+        "C": "You have correctly multiplied 4 and 9 together to get 36 but now look at the sign... What happens when you multiply a negative by a negative?",
+        "D": "I think you have attempted to add the values but you need to multiply them..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166274,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/899f6576-119d-4661-9456-58044dc7e0c3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have confused the division symbol with the subtraction symbol... Remember ÷ means divide!",
+        "B": "You have correctly divided 88 by 11 to get 8 but now look at the sign... What happens when you divide a negative by a positive?",
+        "C": "I think you have confused division with addition... Remember ÷ means divide!",
+        "D": "A negative divided by a positive gives a negative answer and 88 ÷ 11 = 8 therefore -88 ÷ 11 = -8!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166501,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/01d845b3-0556-46fb-8731-3b209cc73db0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A negative divided by a positive gives a negative answer and 56 ÷ 8 = 7 therefore -56 ÷ 8 = -7!",
+        "B": "I think you have confused the division symbol with the addition symbol... Remember ÷ means divide!",
+        "C": "I think you have confused division with subtraction... Remember ÷ means divide!",
+        "D": "You have correctly divided 56 by 8 to get 7 but now look at the sign... What happens when you divide a negative by a positive?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166275,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aad089a2-1eeb-47ed-a5a1-9c047ec362ce.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A positive divided by a negative gives a negative therefore 16 ÷ -2 = -8... You're looking for the expression that doesn't give -8!",
+        "B": "A negative multiplied by a positive gives a negative therefore -2 x 4 = -8... You're looking for the expression that doesn't give -8!",
+        "C": "A negative multiplied by a negative gives a positive therefore -1 x -8 = 8, not -8.",
+        "D": "A negative multiplied by a positive gives a negative and 1/3 of 24 is 8 therefore -24 x 1/3 = -8... You're looking for the expression that doesn't give -8!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166502,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2b9fe93a-8742-4187-b288-9a76f1cdf4be.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A negative multiplied by a positive gives a negative and 1/4 of 24 is 6 therefore -24 x 1/4 = -6... You're looking for the expression that doesn't give -6!",
+        "B": "A negative multiplied by a negative gives a positive therefore -6 x -1 = 6, not -6.",
+        "C": "A positive divided by a negative gives a negative therefore 12 ÷ -2 = -6... You're looking for the expression that doesn't give -6!",
+        "D": "A negative multiplied by a positive gives a negative therefore -3 x 2 = -6... You're looking for the expression that doesn't give -6!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166276,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e2d6d24c-5994-48a4-b59a-b04e0a66f031.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have divided by -3 but to solve for 𝑥 you need to do the inverse operation, which would be multiplying by -3...",
+        "B": "You have correctly multiplied the 3 and 15 to get 45 but look carefully at the sign... What is a negative multiplied by a negative?",
+        "C": "I think you have divided by -3 but to solve for 𝑥 you need to do the inverse operation... Also be careful with your sign, a negative multiplied by a negative gives a ... ?",
+        "D": "To find 𝑥 we need to do the inverse of dividing by -3 which is multiplying. -15 x -3 = 45 therefore 𝑥 = 45!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166503,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/23fb315a-6b58-40a7-aac2-3cdb5537446c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find 𝑥 we need to do the inverse of dividing by -2 which is multiplying. -22 x -2 = 44 therefore 𝑥 = 44!",
+        "B": "I think you have divided by -2 but to solve for 𝑥 you need to do the inverse operation, which would be multiplying by -2...",
+        "C": "You have correctly multiplied the 2 and 22 to get 44 but look carefully at the sign... What is a negative multiplied by a negative?",
+        "D": "I think you have divided by -2 but to solve for 𝑥 you need to do the inverse operation... Also be careful with your sign, a negative multiplied by a negative gives a ... ?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166277,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f5edeef5-e61c-4028-bc0c-86827159db9d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have multiplied by 3 but to solve for 𝑥 you need to do the inverse operation, which would be dividing by 3...",
+        "B": "To find 𝑥 we need to do the inverse of multiplying by 3 which is dividing. -12 ÷ 3 = -4 therefore 𝑥 = -4!",
+        "C": "You have correctly divided 12 by 3 to get 4 but look carefully at the sign... What is a negative divided by a positive?",
+        "D": "I think you have multiplied by 3 but to solve for 𝑥 you need to do the inverse operation... Also be careful with your sign, a negative divided by a positive gives a ... ?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166504,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1efcff83-9af7-431b-9977-6075472620dd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have correctly divided 20 by 4 to get 5 but look carefully at the sign... What is a negative divided by a positive?",
+        "B": "I think you have multiplied by 4 but to solve for 𝑥 you need to do the inverse operation... Also be careful with your sign, a negative divided by a positive gives a ... ?",
+        "C": "To find 𝑥 we need to do the inverse of multiplying by 4 which is dividing. -20 ÷ 4 = -5 therefore 𝑥 = -5!",
+        "D": "I think you have multiplied by 4 but to solve for 𝑥 you need to do the inverse operation, which would be dividing by 4..."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

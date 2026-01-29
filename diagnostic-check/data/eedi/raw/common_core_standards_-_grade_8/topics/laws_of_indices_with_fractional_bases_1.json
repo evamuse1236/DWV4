@@ -1,0 +1,165 @@
+{
+  "shortcode": "vyv",
+  "name": "Laws of indices with fractional bases 1",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 21,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Raise a negative unit fraction to a positive integer power",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Raise a number to the power of 0",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Raise a number to the power of -1",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Raise a unit fraction to a positive unit fraction power",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Raise a non-unit fraction to a positive unit fraction power",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 135092,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/30f37c4b-c643-4d99-9c35-3ea61c15a538.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, think about what the rule for anything to the power of zero is equal to.",
+        "B": "Anything to the power of zero is equal to 1.",
+        "C": "Not quite, think about what the rule for anything to the power of zero is equal to.",
+        "D": "Not quite, think about what the rule for anything to the power of zero is equal to."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135112,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6a773dc0-bf06-451d-bc88-ebbb83bd2287.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, think about what the rule for anything to the power of zero is equal to.",
+        "B": "Anything to the power of zero is equal to 1.",
+        "C": "Not quite, think about what the rule for anything to the power of zero is equal to.",
+        "D": "Not quite, think about what the rule for anything to the power of zero is equal to."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135093,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/559171ab-a75b-48a3-a121-22c0b30525ea.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly! Remember, to square something, we times it by itself. Think about what -1 times -1 is equal to. You also need to check what 4 x 4 is equal to.",
+        "B": "Nearly! Check what 4 x 4 is equal to.",
+        "C": "Nearly! Remember, to square something, we times it by itself. Think about what -1 times -1 is equal to.",
+        "D": "When we square a number, we times it by itself. -1 x -1 is +1, and 4 x 4 = +16. Hence, our answer is 1/16."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135113,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dccf3134-8ecc-43e3-9afe-d56e098bfde0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you have multiplied the values by 3. The small 3 means we need to 'cube' our values. In other words we multiply by itself then itself again, for example -1 x -1 x -1 = -1.",
+        "B": "Nearly! Think about what type of number you get when you multiply a negative by a negative by a negative, for example -1 x -1 x -1.",
+        "C": "When we cube a number we multiply it by itself 3 times, so -1 x -1 x -1 = -1 and 5 x 5 x 5 = 125. Hence, our answer is -1/125.",
+        "D": "Not quite, remember when we are multiplying fractions together, we multiply the numerators together, and the denominator together. We do not need to find the reciprocal of the fraction at any stage."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135094,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f944e346-94bb-4255-bbfc-0fd6469a9867.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have multiplied -1/4 by -1. However, remember you are raising to the power of -1. What's the correct rule to apply in this case?",
+        "B": "I think you have raised -1/4 to the power of 1. However, look carefully - the question is actually asking you to raise -1/4 to the power of -1.",
+        "C": "I think you have correctly used the fact that you need to find the reciprocal of when raising to the power of -1. However, you need to think carefully about your signs.",
+        "D": "Raising to the power of -1 is finding the reciprocal. For a fraction this means flipping it upside down, which here will give -4/1 = -4"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135114,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/24ebe323-b7e2-498c-a2bc-b8491b9d4775.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Raising to the power of -1 is finding the reciprocal. For a fraction this means flipping it upside down, which here will give -3/1 = -3",
+        "B": "I think you have raised -1/3 to the power of 1. However, look carefully - the question is actually asking you to raise -1/3 to the power of -1.",
+        "C": "I think you have correctly used the fact that you need to find the reciprocal of when raising to the power of -1. However, you need to think carefully about your signs.",
+        "D": "I think you have multiplied -1/3 by -1. However, remember you are raising to the power of -1. What's the correct rule to apply in this case?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135095,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/67e38201-97fc-4027-9874-0ed3df3df1f0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you have multiplied the fractions together. When we raise a number to the power of a half, we must square root the number. In this case, we square root the numerator and the denominator.",
+        "B": "When we raise a number to the power of a half, we must square root the number. In this case, we square root the numerator and the denominator. The square root of 1 is 1, and the square root of 4 is 2, so therefore the square root of 1/4 is 1/2.",
+        "C": "Not quite, I think you have found the reciprocal of the fraction. When we raise a number to the power of a half, we must square root the number. In this case, we square root the numerator and the denominator.",
+        "D": "Not quite, I think you have tried to add the denominators. When we raise a number to the power of a half, we must square root the number. In this case, we square root the numerator and the denominator."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135115,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/673c626b-be55-4596-8289-f56db82ed7f6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you have multiplied the fractions together.When we raise a number to the power of a third, we must cube root the number. In this case, we cube root the numerator and the denominator.",
+        "B": "Not quite, I think you have found the reciprocal of the fraction. When we raise a number to the power of a third, we must cube root the number. In this case, we cube root the numerator and the denominator.",
+        "C": "When we raise a number to the power of a third, we must cube root the number. In this case, we cube root the numerator and the denominator. The cube root of 1 is 1, and the cube root of 8 is 2, so therefore the cube root of 1/8 is 1/2.",
+        "D": "Not quite, I think you have just multiplied the numerator by 3. When we raise a number to the power of a third, we must cube root the number. In this case, we cube root the numerator and the denominator."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135096,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/74018eb6-fb09-4250-9f76-2ae4e2706871.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly! Remember, the cube root of a negative number will also be a negative value.",
+        "B": "It looks like you've divided the base (-8/27) by the 1/3. Remember that an index of 1/3 means you need to find the cube root of the value inside the bracket.",
+        "C": "Not quite! I think you have multiplied the numerator and denominator by 3, and then found the reciprocal. When we raise a number to the power of a third, we must cube root the number. In this case, we cube root the numerator and the denominator.",
+        "D": "When we raise a number to the power of a third, we must cube root the number. In this case, we cube root the numerator and the denominator. The cube root of -8 is -2 and the cube root of 27 is 3. Therefore, the cube root of -8/27 is -2/3."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135116,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/03fe35dd-a92d-4dd6-9556-b56bd1cfe191.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "When we raise a number to the power of a third, we must cube root the number. In this case, we cube root the numerator and the denominator. The cube root of -64 is -8 and the cube root of 1000 is 10. Therefore, the cube root of -64/1000 is -4/10, which simplifies to -2/5.",
+        "B": "Not quite, I think you have tried to find the square root of the numbers, rather than the cube root. When we raise a number to the power of a third, we must cube root the number.",
+        "C": "Not quite, I think you have found the reciprocal of the fraction, then cube rooted. Remember, we only need the reciprocal when the power is a negative value. Here, the base is a negative value, not the power.",
+        "D": "Nearly! Remember, when we find the cube root of a negative value, our answer will be negative. Also, always remember to simplify fractions when possible."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

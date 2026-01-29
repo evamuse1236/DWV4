@@ -1,0 +1,147 @@
+{
+  "shortcode": "ehij",
+  "name": "Models for larger divisions",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 28,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Division of 3 digit dividends by 2 digit divisor and their associated area models",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Division of 4 digit dividends by 2 digit divisor and their associated area models",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166697,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d3a7fe74-c079-4d00-ae2d-f9ddf8b82445.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We can see from the model that 24 goes into 480 20 times. 24 goes into 48 2 times, so in total it can go into 528 22 times!",
+        "B": "You're close, you've given the missing number from the model, but now we need to use the whole model to figure out how many times in total 24 fits into 528.",
+        "C": "Not quite - the 24 is what we are dividing by! We are looking at the numbers on the top of the model to find our answer...",
+        "D": "It seems like you've subtracted the 2 from 20, but we are trying to find out how many times in total 24 fits into 528."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166947,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4cd67b7e-b286-47ee-9067-300e80faee4a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It seems like you've subtracted the 8 from 20, but we are trying to find out how many times in total 18 fits into 504.",
+        "B": "We can see from the model that 18 goes into 360 20 times. 18 goes into 144 8 times, so in total it can go into 504 28 times!",
+        "C": "You're close, you've given the missing number from the model, but now we need to use the whole model to figure out how many times in total 18 fits into 504.",
+        "D": "Not quite - the 18 is what we are dividing by! We are looking at the numbers on the top of the model to find our answer..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166698,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b97cb3a3-ad29-409f-bd60-999c81edd320.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "11 goes into 770 70 times. If we split 770 up into 715 and 55, and we know that 11 fits into 55 5 times, then we can do 70 - 5 = 65 times into 715.",
+        "B": "It seems like you've added the numbers together here, but we are taking away the amount of times 11 can fit into 55.",
+        "C": "You're right that this is the missing number from above 55! However, we now need to use that information and the first model to figure out how many times 11 would fit into 715.",
+        "D": "You've given the total length of the model here, but remember we are trying to use the first model to work out how many times 11 fits into just 715."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166948,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5a6c6923-514b-4522-9006-8f509a836f31.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It seems like you've added the numbers together here, but we are taking away the amount of times 13 can fit into 39.",
+        "B": "You're right that this is the missing number from above 39! However, we now need to use that information and the first model to figure out how many times 13 would fit into 611.",
+        "C": "You've given the total length of the model here, but remember we are trying to use the first model to work out how many times 13 fits into just 611.",
+        "D": "13 goes into 650 50 times. If we split 650 up into 611 and 39, and we know that 13 fits into 39 3 times, then we can do 50 - 3 = 47 times into 611."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166699,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ecb2c8d7-af53-46c7-86ef-bd7a896e424c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This one does actually work because 560 and 56 add together to make 616 so knowing how many times 14 goes into those numbers is really useful!",
+        "B": "I think you might have picked this because you think that all of the place value needs to be done at once, but it's fine to split the number up as much as you need to! 280 + 280 + 56 = 616 so this is a useful model!",
+        "C": "This model is actually useful because 14 x 50 is 700 and 14 x 6 is 84. If we do 700 - 84, that is 616 so subtracting that section of the model can help us figure out how many times 14 can go into 616.",
+        "D": "This model would actually show a multiplication of 616 and 14, so isn't useful for dividing the numbers."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166949,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ef4843f5-5c8f-4eef-a82c-26b2288b734e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This model would actually show a multiplication of 408 and 12, so isn't useful for dividing the numbers.",
+        "B": "I think you might have picked this because you think that all of the place value needs to be done at once, but it's fine to split the number up as much as you need to! 120 + 120 + 120 + 48 = 408 so this is a useful model!",
+        "C": "This one does actually work because 360 and 48 add together to make 408 so knowing how many times 12 goes into those numbers is really useful!",
+        "D": "This model is actually useful because 12 x 40 is 480 and 12 x 6 is 72. If we do 480 - 72, that is 408 so subtracting that section of the model can help us figure out how many times 12 can go into 408."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166700,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/be1c8338-ebf8-4d9e-bc9f-f5412580a3cc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You're right that this is the missing part of the model, but how could we now use the whole model to see how many times 15 fits into 1575?",
+        "B": "Not quite - I think you've got your place values mixed up here. 100 + 5 isn't 150!",
+        "C": "15 goes into 75 5 times, which means in total it can go into 1575 105 times if we add the 100 on to that!",
+        "D": "Not quite - the 15 is what we are dividing by! We are looking at the numbers on the top of the model to find our answer..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166950,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d486cb36-b72d-4679-825b-9d757c14c052.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite - the 25 is what we are dividing by! We are looking at the numbers on the top of the model to find our answer...",
+        "B": "25 goes into 125 5 times, which means in total it can go into 2625 105 times if we add the 100 on to that!",
+        "C": "You're right that this is the missing part of the model, but how could we now use the whole model to see how many times 25 fits into 2625?",
+        "D": "Not quite - I think you've subtracted the 5 lots of 25 that go into 125. Remember we need to look at how many 25s go into the whole of 2625."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166701,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d1189e10-7f89-470e-8b3a-851c1951073d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You're right that this is the missing number from above 32! However, we now need to use that information and the first model to figure out how many times 16 would fit into 1568.",
+        "B": "It seems like you've added the numbers together here, but we are taking away the amount of times 16 can fit into 32!",
+        "C": "1600 - 32 = 1568. We know that 16 fits into 1600 100 times, and into 32 2 times. If we subtract the 2 times it fits into 32 from 100, we get 98 times it can fit into the other part: 1568.",
+        "D": "Not quite - the 16 is what we are dividing by! We are looking at the numbers on the top of the model to find our answer..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166951,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2d411dad-170b-4a97-9c35-39253a634e4d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "1400 - 98 = 1302. We know that 14 fits into 1400 100 times, and into 98 7 times. If we subtract the 7 times it fits into 98 from 100, we get 93 times it can fit into the other part: 1302.",
+        "B": "Not quite - the 14 is what we are dividing by! We are looking at the numbers on the top of the model to find our answer...",
+        "C": "It seems like you've added the numbers together here, but we are taking away the amount of times 14 can fit into 98!",
+        "D": "You're right that this is the missing number from above 98! However, we now need to use that information and the first model to figure out how many times 14 would fit into 1302."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

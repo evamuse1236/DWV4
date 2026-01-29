@@ -1,0 +1,165 @@
+{
+  "shortcode": "efj2",
+  "name": "Signs in ordered pairs",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 84,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Reflect an object or a point in a horizontal line with the line of reflection given as an equation, where the line of reflection lies on the edge or outside the object",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Reflect an object or a point in a vertical line with the line of reflection given as an equation, where the line of reflection lies on the edge or outside the object",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify the quadrant that a coordinate lies in",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Know how the signs of an ordered pair will change, when it is reflected in one or both of the axes",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given a quadrant, identify a coordinate that would lie in it",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 146335,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ffb615ea-1d55-481d-9ba5-21cad7aaf6ea.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, this is the current coordinate of P. Remember when we make a reflection the distance from the point to the line of reflection is the same as the distance from the line of reflection to the image.",
+        "B": "Not quite. Remember when we make a reflection the distance from the point to the line of reflection is the same as the distance from the line of reflection to the image.",
+        "C": "The distance from P to the x axis is 1 square down. We need to have the same distance on the other side of the line so P will go to (3,-1)",
+        "D": "Not quite, I think you have reflected in y = x rather than the x axis. Remember when we make a reflection the distance from the point to the line of reflection is the same as the distance from the line of reflection to the image."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146355,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5fc6166e-d5da-4488-be89-a0fbaccb33aa.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have presumed that the point wouldn't move. Point P is currently 3 squares above the x-axis. How far away from the x-axis would it be once reflected? Which coordinate is that?",
+        "B": "I think you have assumed it would only move one square. Point P is currently 3 squares above the x-axis. How far below the x-axis would it be once reflected? Which coordinate is that?",
+        "C": "I think you have assumed the coordinates would switch. Point P is currently 3 squares above the x-axis. How far below the x-axis would it be once reflected? Which coordinate is that?",
+        "D": "Point P is currently 3 squares above the x-axis. When reflected, it will be 3 squares below the x-axis, at (2, -3)"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146439,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4a72a156-cdd9-44a8-a536-f6a2ec076e45.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The distance from P to the y axis is 3 squares left. We need to have the same distance on the other side of the line so P will go to (-3,-1)",
+        "B": "Not quite, this point is on the line of reflection. Remember when we do a reflection the distance from the point to the line of reflection is the same as the distance from the line of reflection to the image.",
+        "C": "Not quite, just check your distances. Remember when we do a reflection the distance from the point to the line of reflection is the same as the distance from the line of reflection to the image.",
+        "D": "Not quite, this is the current coordinate of P. Remember when we do a reflection the distance from the point to the line of reflection is the same as the distance from the line of reflection to the image."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146459,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5c136b25-e24c-42ca-a01c-eaf2542a179c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, this point is on the line of reflection. Remember when we do a reflection the distance from the point to the line of reflection is the same as the distance from the line of reflection to the image.",
+        "B": "The distance from P to the y axis is 4 squares left. We need to have the same distance on the other side of the line so P will go to (-4,-3)",
+        "C": "Not quite, this point is one square to the left. Remember when we do a reflection the distance from the point to the line of reflection is the same as the distance from the line of reflection to the image.",
+        "D": "I think you have reflected in the x axis. Remember when we do a reflection the distance from the point to the line of reflection is the same as the distance from the line of reflection to the image."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166172,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/103f3905-b031-4455-b3b7-7db5f8c37f45.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have just looked at the 𝑥-coordinate which is positive. You need to think which quadrant would have a positive 𝑥-value and a negative 𝑦-value.",
+        "B": "I think you may have confused the 𝑥-and 𝑦-values. Remember coordinates are written as (𝑥, 𝑦).",
+        "C": "I think you have looked at the 𝑦-value, which is negative. We need to consider the coordinate so look at both numbers. Which quadrant would have the positive 𝑥-values and negative 𝑦-values?",
+        "D": "The coordinate (2, -3) lies in the bottom right quadrant where the 𝑥-values are positive and the 𝑦-values are negative, so quadrant IV."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166399,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5a04e6d9-2982-4bea-a043-b9a85e8b470e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have looked at the 𝑦-value which is positive. We need to consider the coordinate, so look at both numbers. Which quadrant would have the negative 𝑥-values and positive 𝑦-values?",
+        "B": "The coordinate (-4,5) lies in the top left quadrant where the 𝑥-value is negative and the 𝑦-value is positive, so quadrant II.",
+        "C": "I think you may have just looked at the 𝑥-coordinate which is negative. You need to think which quadrant would have a negative 𝑥-value and a positive 𝑦-value.",
+        "D": "I think you may have confused the 𝑥- and 𝑦-values. Remember coordinates are written as (𝑥, 𝑦)."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166173,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/134070cf-6586-488a-850a-eafc285dfee9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have looked at the 𝑥-value only. You need to think about both values in the coordinate. Would Quadrant III contain a negative 𝑥-value and a positive 𝑦-value?",
+        "B": "Remember we need to look at the signs as well as the numbers. If both 𝑥 and 𝑦 are positive they would be in Quadrant I. Think about the 𝑥- and 𝑦-values in Quadrant III.",
+        "C": "I think you may have looked at the 𝑦-value only. You need to think about both values in the coordinate. Would Quadrant III contain a positive 𝑥-value and a negative 𝑦-value?",
+        "D": "Both the 𝑥- and 𝑦-value are negative so they will be in the bottom left quadrant. (-1, -3) would be in Quadrant III."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166400,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6631f246-e838-477f-87c0-8fc928a10d41.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have looked at the 𝑥-value only. You need to think about both values in the coordinate. Would Quadrant I contain a positive 𝑥-value and a negative 𝑦 -value?",
+        "B": "Quadrant I contains positive values for 𝑥 and 𝑦 so the coordinate (2,5) would be in Quadrant I.",
+        "C": "Remember we need to look at the signs as well as the numbers. If both 𝑥 and 𝑦 are negative they would be in Quadrant III. Think about the 𝑥- and 𝑦-values in Quadrant I.",
+        "D": "I think you may have looked at the 𝑦-value only. You need to think about both values in the coordinate. Would Quadrant I contain a negative 𝑥-value and a positive 𝑦-value?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166174,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a5d75e6b-cb73-40e9-b644-4b0d64703e5f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have reflected in the 𝑦-axis rather than the 𝑥-axis. Does the 𝑥- or 𝑦-value stay the same when reflecting in the 𝑥-axis?",
+        "B": "I think you may have got confused with reflecting in both axes instead of just the 𝑥-axis. Does the 𝑥- or 𝑦-value stay the same when reflecting in the 𝑥-axis?",
+        "C": "I think you may have got mixed up with reflecting in the line 𝑦 = 𝑥 rather than reflecting in the 𝑥-axis. Does the 𝑥- or 𝑦-value stay the same when reflecting in the 𝑥-axis?",
+        "D": "When reflecting in the 𝑥-axis, the 𝑥-coordinate will stay the same. The 𝑦-coordinate will go from positive to negative (change signs). Therefore the new coordinates are (-7, -5)"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166401,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/df5fa8ee-0402-4942-9253-7d82074cf81f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have got mixed up with reflecting in the line 𝑦 = 𝑥 rather than reflecting in the 𝑥-axis. Does the 𝑥- or 𝑦-value stay the same when reflecting in the 𝑥-axis?",
+        "B": "When reflecting in the 𝑥-axis, the 𝑥-coordinate will stay the same. The 𝑦-coordinate will go from positive to negative (change signs). Therefore the new coordinates are (3, 8).",
+        "C": "I think you may have reflected in the 𝑦-axis rather than the 𝑥-axis. Does the 𝑥- or 𝑦-value stay the same when reflecting in the 𝑥-axis?",
+        "D": "I think you may have got confused with reflecting in both axes instead of just the 𝑥-axis. Does the 𝑥- or 𝑦-value stay the same when reflecting in the 𝑥-axis?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

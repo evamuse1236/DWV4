@@ -1,0 +1,159 @@
+{
+  "shortcode": "vn3",
+  "name": "Highest common factor (HCF) Lowest common multiple (LCM) 2",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 67,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify the Highest Common Factor of two numbers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify the Highest Common Factor of three or more numbers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify the Lowest Common Multiple of two numbers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify the Lowest Common Multiple of three or more numbers",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 76705,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/384b183b-b14f-4cb0-8682-126b89210070.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember, a factor is a number that can divide the number. 12 can divide 12, but not 18.",
+        "B": "Remember, a factor is a number that can divide the number. 18 can divide 18, but not 12.",
+        "C": "You've picked a common factor, but 12 and 18 share another common factor. Can you think what it is?",
+        "D": "The factors of 12 are 1, 2, 3, 4, 6 and 12, and the factors of 18 are 1, 2, 3, 6, 9 and 18. So 1, 2 and 6 are common factors, but 6 is biggest, making it the highest common factor."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78773,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e584e819-24f2-41a1-973c-c34a4bfab9a4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "28 is the highest factor of 28 :) But 28 is not a factor of 8. The factors of a number are the times tables it can be found in, or a number it can be divided by.",
+        "B": "8 is the highest factor of 8 :) But 8 is not a factor of 28. The factors of a number are the times tables it can be found in, or a number it can be divided by.",
+        "C": "8 has factors 1, 2, 4 and 8 and 28 has factors 1, 2, 4, 7, 14 and 28. The highest factor common to both is 4.",
+        "D": "Nearly! 2 is a common factor of 8 and 28, but it is not the highest one that they share. You were very close!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 76706,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ef21821a-d53e-4c72-9959-31b8629a6978.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly! You have learnt what multiples are! Multiplying two numbers together (10 x 12 = 120) will always give you a common multiple, but not always the lowest one. Try writing out the multiples of 10 and of 12, and finding the smallest one that is in both lists.",
+        "B": "It looks as though you've added the two numbers together. Try writing out the multiples of 10 and 12, and find which is the lowest common one.",
+        "C": "It looks like you've found the highest common factor :) however, this question is asking about multiples. Try writing out the multiples of 10 and of 12, and looking for the smallest number in both.",
+        "D": "To find the lowest common multiple of two numbers, you find the multiples of each of them and stop when you've found one that they share. The multiples of 10 are 10, 20, 30, 40, 50, 60, 70, 80 ... The multiples of 12 are 12, 24, 36, 48, 60 ... and we can stop here because 60 is the lowest number that appears in both lists."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78774,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8d541f9b-f55c-4f4b-9c80-545daf6a1ddb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You've given the highest common factor :) but this question is asking about multiples. Think about your 6 and 12 times tables. What value is the first that they have in common?",
+        "B": "The multiples of 6 are 6, 12... and the multiples of 12 are 12, 24..., so the LCM is 12 as this is the lowest to appear in both sequences.",
+        "C": "You have given a common factor for 6 and 12, but this question is looking at multiples. Think about your 6 and 12 times tables. What value is the first number in both?",
+        "D": "I think you may have added the numbers. This question deals with multiples. Think about your 6 and 12 times tables. What is the smallest value in both?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 76716,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/525ed370-7909-42e9-9ecf-a2c13feeefc9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You've multiplied 5, 10 and 12 together, which is a great way of finding a common multiple, but how do you know it's the lowest?",
+        "B": "Almost! 30 is a multiple of 5 and 10 but doesn't appear in the 12 times table, so is not the lowest common multiple of all three numbers.",
+        "C": "You have found a common multiple - good work, but how do you know it's the lowest? Try writing out the multiples of 5 and 10 and 12, and then you can find the smallest number that occurs in all three lists.",
+        "D": "Let's look at the multiples of each number: for 10, we have 10, 20, 30, 40, 50, 60... The multiples of 12 are 12, 24, 36, 48, 60... so 60 is the LCM of 10 and 12. As 5 is a factor of 10, this means 60 is also the LCM of all three numbers."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78784,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/61340abf-7931-440c-8045-1d138e32deaa.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Let's look at the multiples: for 8, we have 8, 16, 24, 32, 40, 48, 56, 64, 72... The multiples of 9 are 9, 18, 27, 36, 45, 54, 63, 72... so 72 is the LCM of 8 and 9. As 3 is a factor of 9, this means 72 is also the LCM of all three numbers.",
+        "B": "Almost! You've found a common multiple of 3 and 8, but 24 is not a multiple of 9.",
+        "C": "Multiplying the numbers together will always find a common multiple, but it is not always the lowest. This only works if the numbers share no factors except 1. Try writing out the multiples of 3, 8 and 9 and finding the smallest value in all three lists.",
+        "D": "Almost! You've found a common multiple of the numbers, but is it the smallest multiple?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 99571,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d229093a-6333-4114-a9ac-00f986feec03.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you're confusing factors and multiples; 1 is the highest common factor of 6 and 7. The word 'multiple', has more of a clue to it ... think 'multiply', so the times table for that number.",
+        "B": "You might have thought that 6 and 7 need to be added. If unsure, look for a clue in the question: for the word 'multiples', think 'multiply', so the times table for that number.",
+        "C": "Multiples of 6 are 6, 12, 18, 24, 30, 36, 42, 48... Multiples of 7 are 7, 14, 21, 28, 35, 42, 49… It can be seen from these lists that 42 is the lowest multiple that both 6 and 7 have in common, so we can write LCM(6, 7) = 42.",
+        "D": "1 is the highest common factor, but we want the lowest common multiple of 6 and 7.. The word 'multiples', has a bit of a clue ... think 'multiply', so the times table for that number."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 99586,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4e1dfaa2-13d3-48fb-9294-8ed61cfa10ec.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "1 is the highest common factor, but we want the lowest common multiple of 6 and 7.. The word 'multiples', has a bit of a clue ... think 'multiply', so the times table for that number.",
+        "B": "Multiples of 8 are 8, 16, 24, 32, 40, 48, 56... Multiples of 5 are 5, 10, 15, 20, 25, 30, 35, 40, 45… It can be seen from these lists that 40 is the lowest common multiple of 8 and 5.",
+        "C": "Almost! You've found a common multiple of the numbers, but is it the smallest multiple?",
+        "D": "I think you've recognised that the numbers have very little in common, but there will always be one value that goes into every whole number, even primes. Can you think what it is?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 99579,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3e1830e6-559c-4ee6-b060-2b064926a766.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! You've picked a common factor, but 6, 9 and 18 share another common factor. Can you think what it is?",
+        "B": "Factors of 6 = 1, 2, 3 and 6. Factors of 9 = 1, 3 and 9. Factors of 18 = 1, 2, 3, 9 and 18. The common factors are 1 and 3, so 3 is the highest common factor of 6, 9 and 18.",
+        "C": "Can all of these numbers be divided by 6? Have another try!",
+        "D": "Perhaps you're confusing factors with multiples, 18 would be the lowest common multiple of 6,9, and 18. But we want to find the highest common factor. Try writing out the factors of all the numbers and looking at what numbers come up every time."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 99564,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9a17a623-cf3b-47cc-8870-26d8ef7d00d5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Factors of 2 are 1 and 2. Factors of 6 are 1, 2, 3 and 6. Factors of 9 are 1, 3 and 9. The only common factor is 1, so this is the highest common factor.",
+        "B": "Can all of these numbers be divided by 2? Write down the factors for each number and see which they have in common.",
+        "C": "I think you may be confusing factors with multiples because you've found the lowest common multiple! Factors are values that the number is divisible by, so 6, for example, has factors of 1, 2, 3 and 6.",
+        "D": "I think you've recognised that the numbers have very little in common, but there will always be one value that goes into every whole number, even primes. Can you think what it is?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,141 @@
+{
+  "shortcode": "biih",
+  "name": "Rounding to the nearest tenth and hundredth",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 21,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Rounding to the nearest tenth and hundredth",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158357,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d6903149-0ae4-479d-8883-2f88c2d628fe.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The tenths place value column is immediately after the decimal point. Therefore, we need to decide whether to round the 7 up or down. We look at the digit after the 7 (3) and because it is less than 5, we round to 9.7.",
+        "B": "To decide whether to round the 7 up or keep it the same. We look at the digit after the 7. If that digit is less than 5 we keep it the same. If that digit is 5 or more, we round up.",
+        "C": "You've rounded to the nearest hundredth. Remember that the tenths place value column is immediately after the decimal point.",
+        "D": "I think you've rounded to the nearest ten. But we're asked to round to the nearest tenth. Remember that the tenths place value column is immediately after the decimal point. "
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158664,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e18731a3-3376-4c36-9ac2-d3f9c2df5097.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've rounded to the nearest ten. But we're asked to round to the nearest tenth. Remember that the tenths place value column is immediately after the decimal point.",
+        "B": "You've rounded to the nearest hundredth. Remember that the tenths place value column is immediately after the decimal point.",
+        "C": "To decide whether to round the 5 up or keep it the same. We look at the digit after the 5. If that digit is less than 5 we keep it the same. If that digit is 5 or more, we round up.",
+        "D": "The tenths place value column is immediately after the decimal point. Therefore, we need to decide whether to round the 5 up or down. We look at the digit after the 5 (2) and because it is less than 5, we round to 6.5"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158358,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/04012dc5-1047-42d1-8804-ad1864a928de.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To decide whether to round the 7 up or down. We look at the digit after the 7. If that digit is less than 5 we round down. If that digit is 5 or more, we round up.",
+        "B": "The tenths place value column is immediately after the decimal point. Therefore, we need to decide whether to round the 7 up or down. We look at the digit after the 7 (6) and because it is greater than or equal to 5, we round up to 9.8.",
+        "C": "I think you've rounded to the nearest ten. But we're asked to round to the nearest tenth. Remember that the tenths place value column is immediately after the decimal point. ",
+        "D": "You've rounded to the nearest hundredth. Remember that the tenths place value column is immediately after the decimal point."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158665,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/553fcb35-5c4f-4a38-9e95-cdf1c7e24c30.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You've rounded to the nearest hundredth. Remember that the tenths place value column is immediately after the decimal point.",
+        "B": "I think you've rounded to the nearest ten. But we're asked to round to the nearest tenth. Remember that the tenths place value column is immediately after the decimal point.",
+        "C": "To decide whether to round the 2 up or down. We look at the digit after the 2. If that digit is less than 5 we round down. If that digit is 5 or more, we round up.",
+        "D": "The tenths place value column is immediately after the decimal point. Therefore, we need to decide whether to round the 2 up or down. We look at the digit after the 2 (8) and because it is greater than or equal to 5, we round up to 3.3."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158359,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/07fbfb1c-ce8f-44c1-85a6-49ab164467a5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The tenths place value column is immediately after the decimal point. Therefore, we need to decide whether to round the 4 up or down. We look at the digit after the 4 (9) and because it is greater than or equal to 5, we round up to 0.5.",
+        "B": "I think you've truncated 0.49 or rounded it down. But, the tenths place value column is immediately after the decimal point and we decide whether to round the 4 up or down by looking at the digit after the 4. If that digit is less than 5 we round down. If that digit is 5 or more, we round up.",
+        "C": "I think you've rounded to the nearest ten. But we're asked to round to the nearest tenth. Remember that the tenths place value column is immediately after the decimal point. ",
+        "D": "I think you might have tried to round down. But we decide whether to round the 4 up or down by looking at the digit after the 4. If that digit is less than 5 we round down (i.e. the 4 stays as a 4). Or, if that digit is 5 or more, we round up."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158666,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8e6247e4-217c-4a6e-becb-589baab0da1e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've rounded to the nearest ten. But we're asked to round to the nearest tenth. Remember that the tenths place value column is immediately after the decimal point.",
+        "B": "I think you might have tried to round down. But we decide whether to round the 2 up or down by looking at the digit after the 2. If that digit is less than 5 we round down (i.e. the 2 stays as a 2). Or, if that digit is 5 or more, we round up.",
+        "C": "The tenths place value column is immediately after the decimal point. Therefore, we need to decide whether to round the 2 up or down. We look at the digit after the 2 (9) and because it is greater than or equal to 5, we round up to 0.3",
+        "D": "I think you've truncated 0.29 or rounded it down. But, the tenths place value column is immediately after the decimal point and we decide whether to round the 2 up or down by looking at the digit after the 2. If that digit is less than 5 we round down. If that digit is 5 or more, we round up."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158360,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c40c3723-d32c-4a4c-841a-46396dd1a07c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The hundredths place value column is the second number after the decimal point. Therefore, once we've rounded to the nearest hundredth, there will be only 2 numbers after the decimal point.",
+        "B": "The hundredths place value column is the second number after the decimal point. Therefore, we need to decide whether to round the 8 up or down. We look at the digit after the 8 (3) and because it is less than 5, we round down to 3.48.",
+        "C": "I think you've rounded up. But, to decide whether to round the 8 up or down we look at the digit after the 8. If that digit is less than 5 we round down. If that digit is 5 or more, we round up.",
+        "D": "The hundredths place value column is the second number after the decimal point. Therefore, once we've rounded to the nearest hundredth, there will be only two numbers after the decimal point. To decide whether to round the 8 up or down we look at the digit after the 8. If that digit is less than 5 we round down. If that digit is 5 or more, we round up."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158667,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/39a8cfe5-0a41-48f0-85ff-472fa8e3a1d2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The hundredths place value column is the second number after the decimal point. Therefore, we need to decide whether to round the 6 up or down. We look at the digit after the 6 (3) and because it is less than 5, we round down to 7.86",
+        "B": "The hundredths place value column is the second number after the decimal point. Therefore, once we've rounded to the nearest hundredth, there will be only 2 numbers after the decimal point.",
+        "C": "The hundredths place value column is the second number after the decimal point. Therefore, once we've rounded to the nearest hundredth, there will be only two numbers after the decimal point. To decide whether to round the 6 up or down we look at the digit after the 6. If that digit is less than 5 we round down. If that digit is 5 or more, we round up.",
+        "D": "I think you've rounded up. But, to decide whether to round the 6 up or down we look at the digit after the 6. If that digit is less than 5 we round down. If that digit is 5 or more, we round up."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158361,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/017430ce-7e94-4c6e-aad1-8638b920216f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember that when rounding up a 9, it becomes zero and we add 1 to the previous digit.",
+        "B": "I think you've truncated 0.799 or rounded it down. But, to decide whether to round the 9 in the hundredths column up or down, we look at the digit after that 9. If that digit is less than 5 we round down. If that digit is 5 or more, we round up.",
+        "C": "The hundredths place value column is the second number after the decimal point. Therefore, we need to decide whether to round the the first 9 up or down. We look at the digit after the 9 (which is also 9) and because it is greater than or equal to 5, we need to round the 9 in the hundredths column up. When rounding up a 9, it becomes zero and we add 1 to the previous digit. So, 0.799 rounded to the nearest hundredth is 0.80.",
+        "D": "Not quite. Remember that when rounding up a 9, it becomes zero and we add 1 to the previous digit."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158668,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/145b3a43-03ec-4e76-ba35-30113ea3c593.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember that when rounding up a 9, it becomes zero and we add 1 to the previous digit.",
+        "B": "Remember that when rounding up a 9, it becomes zero and we add 1 to the previous digit.",
+        "C": "I think you've truncated 0.598 or rounded it down. But, to decide whether to round the 9 in the hundredths column up or down, we look at the digit after that 9. If that digit is less than 5 we round down. If that digit is 5 or more, we round up.",
+        "D": "The hundredths place value column is the second number after the decimal point. Therefore, we need to decide whether to round the the 9 up or down. We look at the digit after the 9 (8) and because it is greater than or equal to 5, we need to round the 9 in the hundredths column up. When rounding up a 9, it becomes zero and we add 1 to the previous digit. So, 0.598 rounded to the nearest hundredth is 0.60"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,147 @@
+{
+  "shortcode": "bigb",
+  "name": "Multiply a two-digit integer by a two-digit integer",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 32,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Multiply integers up to two digits using long multiplication",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiply 2 digit integers by 2 digit integers using long multiplication",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 95219,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/42db3418-d53f-4f3b-8d78-06fd1d930a0c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The final stage of this long multiplication is the addition of the numbers 116 (found from 2 x 58) and 1160 (found from 20 x 58). Adding these together gives us an answer of 1276 which has a unit digit of 6.",
+        "B": "I think you may have thought this because when we multiply by the '20' we put a 0 in the units column. However when we multiply by the '2' we will get another number which will contribute to the units column.",
+        "C": "Be careful, I think you have added the 8 and the 2 together to get 10, but we are multiplying here",
+        "D": "Not quite, 16 is a two digit number there will only be one number in the units column of the final answer."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 124907,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c7194eaf-044d-466c-af10-d9619589c4a4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The final stage of this long multiplication is the addition of the numbers 210 (found from 6 x 35) and 1400 (found from 40 x 35). Adding these together gives us an answer of 1610 which has a unit digit of 0.",
+        "B": "Be careful, I think you have added the 5 and the 6 together to get 11, but we are multiplying here",
+        "C": "I think you may have thought this because one of the 4 calculations you have to do in this long multiplication is 6 x 3, which ends in an 8. But this calculation does not contribute to the units digit of the answer. Which of the 4 multipications will contribute to the units digit of your answer?",
+        "D": "Not quite, 30 is a two digit number but there can only be one number in the units column of the final answer."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 95220,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b239e5b6-fc96-4d18-a811-cbbcc48ca4ab.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember you have to fill in the answer to all the multiplications, even if they are equal to 0.",
+        "B": "Not quite. 7 x 80 is 560 BUT 20 x 80 is NOT 160. Remember a zero should be added into the working when we multiply by the tens digit in 27.",
+        "C": "This working shows all the correct steps to this long multiplication. It shows the 7 has multiplied both the 0 and 8, it shows the additional 0 placed in the units column underneath the 0 in 560, it shows that the 2 has multiplied both the 8 and the zero in 80 and it shows the summation of 560 and 1600.",
+        "D": "So close! Just recheck the addition of 560 and 1600."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 95237,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e96fdc91-a3ab-4b63-bd89-d798c89a37cc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. This working is not correct as it has failed to carry over the ten from the calculation 6 x 2. It also incorrectly shows that the answer to 3 x 72 is 27.",
+        "B": "Not quite. 6 x 72 is 432 BUT 30 x 72 is NOT 216. Remember a zero should be added into the working when we multiply by the tens digit in 36.",
+        "C": "So close! Just recheck the addition of 432 and 2160.",
+        "D": "This working shows all the correct steps to this long multiplication. It shows the 6 has multiplied both the 2 and 7, it shows the additional 0 placed in the units column underneath the 2 in 432, it shows that the 3 has multiplied both the 2 and the 7 in 72 and it shows the correct summation of 432 and 2160."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 137758,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d829d93a-5633-4493-b830-95df96855f6c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost! Check carefully to make sure you haven't mixed up which digit replaces the star and which digit replaces the triangle.",
+        "B": "In the second row of the workings we are multiplying 45 by 30. What digit would we expect to see in the ones column here?",
+        "C": "In the second row of the workings we are multiplying 45 by 30. This is the same as 45 x 3 with a zero on the end so we replace the star with a zero in the ones column. 5 x 3 tens is 15 tens so we write 5 in the tens column and carry over the 1 into the hundreds column. So the triangle is replaced by 1.",
+        "D": "In the second row of the workings we are multiplying 45 by 30 and you are right that we need a zero in the ones column. Then we can do 45 x 3 (tens). We start by doing 5 x 3 tens which gives us 15 tens. How do we write this in the calculation?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 137778,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/60fc6d72-05ab-4f03-a063-f979890a9995.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might have assumed that we always carry 1s. But we need to work out each stage of the calculation to see exactly what needs to be carried over.",
+        "B": "You are right that the second row of the workings 27 x 50 will give us 1350. Check the first row of workings carefully. We need 27 x 3 so we start by doing 7 x 3. How many ones will we have? And how many tens do we need to carry over?",
+        "C": "You are right that the first row of the workings 27 x 3 will give us 81, so 2 tens have been carried over. Check the second row of workings carefully. We need 27 x 50. 2 tens x 5 tens will give us 10 tens but do we need to add in anything else here?",
+        "D": "In the first row of the workings we are multiplying 27 by 3. 7 x 3 tens is 21 so we write 1 in the ones column and carry over the 2 tens into the tens column. So the triangle is replaced by 2. In the second row of working, we are multiplying 27 by 50. We put zero in the ones column and do 27 x 5 (tens). 7 x 5 tens is 35 tens so we have 5 in the tens column and 3 hundreds carried over. 2 tens x 5 tens is 10 hundreds. But we need to add the 3 hundreds that we carried over. So we have 13 hundreds. So the star is replaced by 3."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158086,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5a327357-ba8c-436f-82e8-a2ac71251941.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you forgot to put the 0 placeholder when multiplying by 10. It should be 68 + 340 not 68 + 34...",
+        "B": "2 x 34 = 68 and 10 x 34 = 340. Add these together to get 68 + 340 = 408 which is the final answer!",
+        "C": "I think you have added 34 and 12 but you need to multiply them...",
+        "D": "You have done 34 x 21 instead of 34 x 12. Do 2 x 34 and then 10 x 34, add these values together to get the final answer."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158253,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7ccbddf4-0242-4d6e-a542-dd24ce744a88.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have done 21 x 34 instead of 21 x 43. Do 3 x 21 and then 40 x 21, add these values together to get the final answer.",
+        "B": "I think you have added 21 and 43 but you need to multiply them...",
+        "C": "3 x 21 = 63 and 40 x 21 = 840. Add these together to get 63 + 840 = 903 which is the final answer!",
+        "D": "I think you forgot to put the 0 placeholder when multiplying by 10. It should be 63 + 840 not 63 + 84.."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158087,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3ceabbbe-dc8c-44fa-80c8-fd256dc3fe3f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added 76 and 52 but you need to multiply them...",
+        "B": "I think you forgot to put the 0 placeholder when multiplying by 10. It should be 152 + 3800 not 152 + 380...",
+        "C": "2 x 76 = 152 and 50 x 76 = 3800. Add them together to get 152 + 3800 = 3,952 which is the final answer!",
+        "D": "You have done 76 x 25 instead of 76 x 52. Do 2 x 76 and then 50 x 76, add these values together to get the final answer."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158254,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1d8e8cee-5af2-4b2f-bcfc-bd69644e7139.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "8 x 54 = 432 and 20 x 54 = 1080. Add them together to get 432 + 1080 = 1,512 which is the final answer!",
+        "B": "You have done 54 x 82 instead of 54 x 28. Do 8 x 54 and then 20 x 54, add these values together to get the final answer.",
+        "C": "I think you forgot to put the 0 placeholder when multiplying by 10. It should be 432 + 1080 not 432 + 108...",
+        "D": "I think you have added 54 and 28 but you need to multiply them..."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

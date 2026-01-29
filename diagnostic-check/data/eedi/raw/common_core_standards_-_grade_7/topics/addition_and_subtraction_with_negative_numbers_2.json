@@ -1,0 +1,159 @@
+{
+  "shortcode": "vs7",
+  "name": "Addition and subtraction with negative numbers 2",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 56,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Carry out addition problems involving two negative integers ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Carry out addition problems involving one negative decimal",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Carry out missing number subtraction problems involving negative integers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Carry out a subtraction problem with positive integers where the answer is less than 0",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 89417,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c8a7ed14-dc9b-4d32-ad7d-084ef0750399.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To calculate (−5) ＋ (−2) start at −5 on the number line, then move 2 in the negative direction. This will take you to the answer, −7.",
+        "B": "I think you might have thought that 2 negatives makes a plus. Start at -5 on the number line and then move -2",
+        "C": "Remember you are starting at -5 on the number line. Think about the direction you will move if you are adding a negative on",
+        "D": "Remember you are adding -2. What direction will you move on the number line?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89435,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/524555b9-f33e-4900-9582-34a5434e5aa0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember you are adding -4. What direction will you move on the number line?",
+        "B": "Remember you are starting at -9 on the number line. Think about the direction you will move if you are adding a negative on",
+        "C": "I think you might have thought that 2 negatives makes a plus. Start at -9 on the number line and then move -4",
+        "D": "To calculate (−9) ＋ (−4) start at −9 on the number line, then move 4 in the negative direction. This will take you to the answer, −13."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89418,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/49ccb099-9df2-4a8b-84cf-18d8d4c3129b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The number of steps from 8 to −3 is −11. This is made up of a missing value, a, and −2. So a ＋ (−2) = −11. This means that the missing value must be −9.",
+        "B": "I think you might have thought the 'a' arrow starts at 0. Think about where you would be after you went 2 back rom 8, and how much further you need to go to get to -3",
+        "C": "I think you have counted numbers rather than jumps. How many jumps would you need to do to get back to -3?",
+        "D": "Almost, did you count the 0 when you were jumping backwards?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89436,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/82ad806f-1e8c-4b9d-af6e-3ac3338fe608.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have found 4 - 5, rather than the number of jumps back you will still have to do to get to -5. .",
+        "B": "The number of steps from 4 to −5 is −9. This is made up of a missing value, a, and −3. So a ＋ (−3) = −9. This means that the missing value must be −6.",
+        "C": "Almost, did you count the 0 when you were jumping backwards?",
+        "D": "I think you have counted numbers rather than jumps. How many jumps would you need to do to get back to -5?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89419,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5d57a399-51b1-4235-bab2-842c603b576e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, the arrow doesn't start at 0. You have started at -7 and moved 5 jumps up the number line. Think about where you are, and how many jumps you have to do to get back to -5?",
+        "B": "I think you have counted numbers rather than jumps. How many jumps would you need to do to get to -5?",
+        "C": "I think you have found where the red arrow starts. How far from here do you need to go back to get to -5?",
+        "D": "Starting at −7 and adding on 5 gives −2, so this is the value indicated at the start of arrow b. From this starting point, the question is what number do you subtract from −2 to get to −5. The answer is −3, so b has a value of −3."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89437,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/430267ca-b666-4a11-be05-f4030ccfd860.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, the arrow hasn't started at 0. The arrow starts 10 forward from -12, so how far do you need to jump back to -7?",
+        "B": "Starting at −12 and adding on 10 gives −2, so this is the value indicated at the start of arrow b. From this starting point, the question is what number do you subtract from −2 to get to −7. The answer is −5, so b has a value of −5.",
+        "C": "I think you have found where the red arrow starts. How far from here do you need to go back to get to -7?",
+        "D": "I think you have counted numbers rather than jumps. How many jumps would you need to do to get to -7?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89420,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/20038f82-c8c9-4abe-80a1-29f93a642931.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have found 3 less than -1.4. 3 more would move up the number line",
+        "B": "Not quite. Think about how far it is to get to 0, and then how much further we need to go beyond 0 so we've moved 3 in total.",
+        "C": "Start at -1.4 We add 1.4 to get up to 0, and then we need to add on another 1.6 so that we have added 3 in total. This will take us to 1.6",
+        "D": "I think you have added on 0.3 rather than 3. You might want to split the addition up and go to 0 first, and then see how much further you need to go so you've added 3 in total."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89438,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c1aea3bf-475f-4563-99cb-6f554c0b7dab.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have found 5 less than -2.6. 5 more would move up the number line",
+        "B": "Not quite. Think about how far it is to get to 0, and then how much further we need to go beyond 0 so we've moved 5 in total.",
+        "C": "Start at -2.6 We add 2.6 to get up to 0, and then we need to add on another 2.4 so that we have added 5 in total. This will take us to 2.4",
+        "D": "I think you have added on 0.5 rather than 5. You might want to split the addition up and go to 0 first, and then see how much further you need to go so you've added 5 in total."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89439,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/16f5df1e-323a-410d-b3d3-6644777d373f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly. Which calculation(s) represent the starting point, the direction and the distance?",
+        "B": "Nearly. Which calculation(s) represent the starting point, the direction and the distance?",
+        "C": "Tom starts at 15. Because the direction of the arrow indicates 'subtract', he calculates 15 − 20 = −5. Katie has a starting point of −5. Because she is going in the opposite direction to that indicated by the arrow, the value needs a negative sign, so −(−20). This is the same as ＋20, so Katie's statement: −5＋ 20 = 15 is also correct.",
+        "D": "Not quite. Which calculation(s) represent the starting point, the direction and the distance?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89456,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b149ba1c-afe4-45e8-b303-86c513b81a2d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly. Which calculation(s) represent the starting point, the direction and the distance?",
+        "B": "Nearly. Which calculation(s) represent the starting point, the direction and the distance?",
+        "C": "Jo starts at 12. Because the direction of the arrow indicates 'subtract', she calculates 12 − 15 = −3. Paul has a starting point of −3. Because he is going in the opposite direction to that indicated by the arrow, the value needs a negative sign, so −(−15). This is the same as ＋15, so Jo's statement: −3＋ 15 = 12 is also correct.",
+        "D": "Not quite. Which calculation(s) represent the starting point, the direction and the distance?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

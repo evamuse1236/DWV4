@@ -1,0 +1,165 @@
+{
+  "shortcode": "bif7",
+  "name": "Round to nearest whole, 10, 100 etc 2",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 28,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Round integers to the nearest 10",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Round integers to the nearest 100",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Round integers to the nearest 1000",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Round integers to the nearest other power of 10",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Round integers to the nearest other integer value (e.g. 20, 50 etc)",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 129115,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/01af560f-fee9-4c51-a77b-4f58192ee503.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have rounded to the nearest 100. We need to round to the nearest 10.",
+        "B": "Not quite. 326 is between 320 and what other multiple of 10? Which is it closest to?",
+        "C": "We need to round to the nearest 10. 326 is between 320 and 330. If we draw out a number line we will see that it is closer to 330 so that means it rounds to 330 to the nearest 10.",
+        "D": "I think you have rounded to the nearest 50. We need to round to the nearest 10."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129255,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8f8253fa-2352-4209-80e0-b60a782656ea.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We need to round to the nearest 10. 637 is between 630 and 640. If we draw out a number line we will see that it is closer to 640 so that means it rounds to 640 to the nearest 10.",
+        "B": "I think you have rounded to the nearest 50. We need to round to the nearest 10.",
+        "C": "I think you have rounded to the nearest 100. We need to round to the nearest 10.",
+        "D": "Not quite. 637 is between 630 and what other multiple of 10? Which is it closest to?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129116,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7c67893d-9c16-4add-abb2-f86587326fe3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "326 is between 300 and 400. If we draw out a number line we will see that it is closest to 300",
+        "B": "326 is between 300 and 400, but which is it closest to? You may find drawing a number line helpful.",
+        "C": "I think you have rounded to the nearest 10. Read the question carefully.",
+        "D": "I think you have rounded to the nearest 50. Read the question carefully"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129256,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9e8e988b-cd51-4768-b12d-7f0437297fb6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "637 is between 600 and 700. If we draw out a number line we will see that it is closest to 600.",
+        "B": "I think you have rounded to the nearest 50. Read the question carefully.",
+        "C": "I think you have rounded to the nearest 10. Read the question carefully.",
+        "D": "637 is between 600 and 700, but which is it closest to? You may find drawing a number line helpful"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129117,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/82559fff-ac5e-4122-ad78-be463bd3447d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "1000 is the multiple of 1000 that is greater than 326. What multiple of 1000 is below 326?",
+        "B": "This would be correct if our number was 3260, but it is 326. The multiples of 1000 are 0, 1000, 2000, 3000... Which one of these is 326 closest to?",
+        "C": "I think you have rounded to the nearest 500. Read the question carefully.",
+        "D": "The multiples of 1000 that are above and below 326 are 1000 and 0. If we draw a numberline we will see that 326 is closest to 0."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129257,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3c45881e-d091-4847-a00b-3c515fa0aef0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have rounded to the nearest 500. Read the question carefully.",
+        "B": "The multiples of 1000 that are above and below 637 are 1000 and 0. If we draw a numberline we will see that 637 is closest to 1000.",
+        "C": "0 is the multiple of 1000 that is less than 637. What multiple of 1000 is above 637? Draw a number line to see which it is closest to.",
+        "D": "This would be correct if our number was 6370, but it is 637. The multiples of 1000 are 0, 1000, 2000, 3000... Which one of these is 637 closest to?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129118,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6b86e13e-1561-4e73-9a00-5e3b31c64dde.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have rounded to the nearest 100,000. Read the question carefully.",
+        "B": "We need to look at the 10,000 column. That is the first 3 in 536,463. Therefore the multiple of 10,000 below our number is 530,000 and the multiple of 10,000 above our number is 540,000. If you draw a numberline you will see that 536,463 is closest to 540,000. You could also tell this without the use of a number line as the digit after the number we're rounding to (after the 10,000 column) is greater than or equal to a 5 so it will round up.",
+        "C": "I think you have rounded to the nearest 1,000. Read the question carefully.",
+        "D": "536,463 is between 530,000 and 540,000, but which is it closest to? You may find drawing a number line helpful."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129258,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f94b557d-a6c7-49f3-b12b-3140533779a9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have rounded to the nearest 1,000. Read the question carefully.",
+        "B": "287,045 is between 280,000 and 290,000, but which is it closest to? You may find drawing a number line helpful.",
+        "C": "I think you have rounded to the nearest 100,000. Read the question carefully.",
+        "D": "We need to look at the 10,000 column. That is the 8 in 287,045. Therefore the multiple of 10,000 below our number is 280,000 and the multiple of 10,000 above our number is 290,000. If you draw a numberline you will see that 287,045 is closest to 290,000. You could also tell this without the use of a number line as the digit after the number we're rounding to (after the 10,000 column) is greater than or equal to a 5 so it will round up."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129119,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8d7d5681-282f-4fbe-9e17-08bd9b8a4327.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have rounded to the nearest 50. Read the question carefully.",
+        "B": "620 is a multiple of 20, but it is not the closest multiple of 20 to 646. Count on in 20s and maybe draw a numberline to help you.",
+        "C": "If we think of our multiples of 20 we know that 600 will be a multiple of 20 as 100 is and it is just 6 times greater. Therefore we can count on in 20s and get 600, 620, 640, 660. We can then see that 646 is closest to 640.",
+        "D": "I think you have rounded to the nearest 100. Read the question carefully."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129259,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/32d08f52-f031-4b3f-9c4a-a66b4f492e9d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we think of our multiples of 50 we get 50, 100, 150, 200 and so on. Continuing this pattern we know that 600 and 650 are multiples of 50. Drawing a number line we can see that 623 is closest to 600.",
+        "B": "Not quite. Start by working out which multiples of 50 this number is near to. Then draw a numberline to find the one it is closest to.",
+        "C": "I think you have rounded to the nearest 10 or the nearest 20. Read the question carefully.",
+        "D": "623 is between 600 and 650, but which is it closest to? You may find drawing a number line helpful."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

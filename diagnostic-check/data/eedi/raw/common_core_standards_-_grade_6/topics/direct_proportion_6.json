@@ -1,0 +1,159 @@
+{
+  "shortcode": "vm3",
+  "name": "Direct proportion 6",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 20,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Use direct proportion to solve non-unitary missing amounts in problems (e.g. recipes)",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Form expressions from situations described in words",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve length problems involving similar shapes where the missing length is the longer one",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find missing values when given equivalent ratios",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 101378,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5a87a94b-a476-4e3d-8ef6-707846d3968c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We know that 1 bottle contains 6 bananas. We could write this as 1 bottle= 6 bananas. It follows that 2 bottles = 2 ✕ 6 bananas, 3 bottles = 3 ✕ 6 bananas, 4 bottles = 4 ✕ 6 bananas, etc., and so, in general, n bottles = n ✕ 6 bananas, or 6n bananas.",
+        "B": "This represents 6 bananas share between n bottles, rather than 6 bananas per smoothie. To help, think about how you would find the number of bananas in 3 bottles?",
+        "C": "This represents n bottles of smoothie divided into 6, rather than 6 bananas per smoothie. To help, think about how you would find the number of bananas in 3 bottles?",
+        "D": "This represents 6 bananas plus the n bottles, rather than 6 bananas per smoothie. To help, think about how you would find the number of bananas in 3 bottles?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101396,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/010d3200-de5f-4c15-8ade-cd549bb15953.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This represents n cakes divided in to 3, rather than 3 eggs per cake. To help, think about how you would find the number of eggs in 3 cakes?",
+        "B": "This represents 3 eggs divided into n cakes, rather than 3 eggs per cake. To help, think about how you would find the number of eggs in 3 cakes?",
+        "C": "We know that 1 cake uses 3 eggs. We could write this as 1 cake = 3 eggs. It follows that 2 cakes = 2 ✕ 3 eggs, 3 cakes = 3 ✕ 3 eggs, 4 cakes = 4 ✕ 3 eggs, etc., and so, in general, n cakes = n ✕ 3 eggs, or 3n eggs.",
+        "D": "This represents 3 eggs plus n, rather than 3 eggs per cake. To help, think about how you would find the number of eggs in 3 cakes?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101379,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d3aba442-8e66-4ec3-a5bf-16f57c672669.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This represents 6 bananas per bottle for n bottles, rather than n bananas shared into bottles of smoothie. To help, think about how you would find the number of bottles made from 18 bananas?",
+        "B": "This represents 6 bananas shared between n bottles, rather than n bananas shared into bottles of smoothie. To help, think about how you would find the number of bottles made from 18 bananas?",
+        "C": "The question being asked is ‘? bottles = n bananas’. We know that 1 bottle contains 6 bananas, so we need to see how many lots of 6 bananas we have to see how many bottles we can fill. We do this by dividing the number of bananas by 6 which is n/6.",
+        "D": "This represents 6 bananas plus n bottles, rather than n bananas shared into bottles of smoothie. To help, think about how you would find the number of bottles made from 18 bananas?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101397,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bc3c81f4-9e70-4c82-be04-19abb58fbb76.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This represents 3 eggs per cake for n cakes, rather than n eggs shared into cakes. To help, think about how you would find the number of cakes made from 12 eggs?",
+        "B": "This represents 3 eggs shared between n cakes, rather than n eggs shared into cakes. To help, think about how you would find the number of cakes made from 12 eggs?",
+        "C": "The question being asked is ‘? cakes = n eggs’. We know that 1 cake contains 3 eggs, so we need to see how many lots of 3 eggs we have to see how many cakes we can make. We do this by dividing the number of eggs by 3 which is n/3.",
+        "D": "This represents 3 eggs plus n cakes, rather than n eggs shared into cakes. To help, think about how you would find the number of cakes made from 12 eggs?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101380,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9bbc3156-dbfd-42ad-b89c-7e5b76354864.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Perhaps you could try to find some equivalent ratios to 5:2, do Tom and Katie's values appear in the list?",
+        "B": "The recipe tells us that the ratio of oranges to bananas is 5 : 2. Katie’s statement: 15 oranges and 6 bananas is in proportion with this ratio and will produce the cocktail required (because each ingredient has been multiplied by 3). For Tom’s statement, 5 bananas = 2.5 ✕ 2, and so the correct quantity of oranges for 5 bananas would be 2.5 ✕ 5 = 12.5, not 8.",
+        "C": "Perhaps you could try to find some equivalent ratios to 5:2, do Tom and Katie's values appear in the list?",
+        "D": "At least one them is correct, remember the amounts must stay in the same ratio as 5:2. Perhaps you could try to find some equivalent ratios to 5:2, do Tom and Katie's values appear in the list?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101398,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/131eefae-56e3-4be9-a11d-9256f073b5c4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Perhaps you could try to find some equivalent ratios to 3:8, do Jo and Paul's values appear in the list?",
+        "B": "Perhaps you could try to find some equivalent ratios to 3:8, do Jo and Paul's values appear in the list?",
+        "C": "The recipe tells us that the ratio of sugar to popcorn is 3 : 8. Jo’s statement of 20 grams of popcorn and 7.5 grams of sugar gives a ratio of sugar to popcorn of 7.5 : 20. Start by multiplying by 2 to get whole numbers; this gives 15 : 40. Now divide both by 5 to give 5 : 8, which means Jo is correct. For Paul’s ratio, note that for 21 : 56, both values are divisible by 7 and also give the required ratio of 3 : 8.",
+        "D": "Perhaps you could try to find some equivalent ratios to 3:8, do Jo and Paul's values appear in the list?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101391,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ccf9bd4f-0429-4964-b6d0-229fd06edb49.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Try writing the amounts in a ratio of water to juice and simplifying it. You can then use this to multiply up and find the star",
+        "B": "The ratio of water to juice is 450 : 150. This simplifies to 3 : 1. So for every 3 parts water, we need 1 part juice. We know 3 parts = 675 ml, so by dividing both sides by 3, ★, or 1 part, is 675 ÷ 3 = 225 ml.",
+        "C": "I think you've doubled the orange juice, has the water been doubled?",
+        "D": "Not quite. Can you use the link between the amount of water and orange juice to help you?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101409,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bfe95e67-596b-4f62-8c42-4b9a74029ab8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Try writing the amounts in a ratio of sparkling water to fruit juice and simplifying it. You can then use this to multiply up and find the star",
+        "B": "I think you've doubled the fruit juice, has the water been doubled?",
+        "C": "The ratio of water to juice is 450 : 180. This simplifies to 5 : 2. So for every 5 parts water, we need 2 part juice. We know 5 parts = 575 ml, so by dividing both sides by 5 we can find the value of 1 part, 575 ÷ 5 = 115 ml. We need 2 parts, and 2 ✕ 115 = 230 ml, so 230ml is our answer.",
+        "D": "I think you've added the same amount on. This is a question that uses ratio, and so they must be multiplied by the same amount, rather than added."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101392,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f9c2d38b-5f2a-4839-9e24-b859cc9b9ae6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, remember to find the scale factor from 8 to 20 before applying it to 6.",
+        "B": "Not quite, 8 x 2 is 16, not 20. What do you have to multiply 8 by to get 20?",
+        "C": "Not quite, I think you've added 12 to both lengths. Remember that to enlarge we have to multiply the lengths by the same amount.",
+        "D": "If 8 has been enlarged to 20, then we can find the scale factor by calculating 20 ÷ 8 = 2.5. The height of the enlarged photograph will be 2.5 x 6 = 15."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101410,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/78c7daac-734f-45af-a348-adab4ec86c9a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If 12 has been enlarged to 30, then we can find the scale factor by calculating 30 ÷ 12 = 2.5. The width of the enlarged drawing will be 2.5 x 15 = 37.5cm.",
+        "B": "Not quite, 12 x 2 is 24, not 30. What do we multiply 12 by to get 30?",
+        "C": "Not quite, I think you've added 18 to both lengths. Remember that to enlarge we have to multiply the lengths by the same amount.",
+        "D": "Not quite, remember to find the scale factor from 12 to 30 before applying it to 15."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

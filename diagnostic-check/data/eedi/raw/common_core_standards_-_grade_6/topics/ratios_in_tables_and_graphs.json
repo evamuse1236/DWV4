@@ -1,0 +1,147 @@
+{
+  "shortcode": "eekg",
+  "name": "Ratios in tables and graphs",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 27,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Complete missing values in tables for variables with the proportional relationship y = kx",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify equivalent ratios when represented in graphs and tables",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 165504,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/99bade70-ffa8-4aa6-8903-53200c015c13.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have assumed an adding pattern since 8 + 8 = 16, but that pattern doesn't fit this table. Start with ⁸/₃ = ˣ/₁₅ and then solve for 𝑥",
+        "B": "Not quite... This is a ratio table, and while 26 is halfway between 16 and 36, that doesn't mean our answer is halfway between 36 and 48. Start with ⁸/₃ = ˣ/₁₅ and then solve for 𝑥",
+        "C": "You have the right idea to look at ratios and start with ⁸/₃ = ˣ/₁₅, but we won't multiply 3 and 15. What should we do to solve for 𝑥?",
+        "D": "⁸/₃ = ˣ/₁₅, and 15 is 5 times larger than 3, so 𝑥 has to be 5 times larger than 8. 8 x 5 = 40"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165509,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f4bdd2de-3a9b-4eed-beb8-7f6f766b6c0c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! This is a ratio table, and while 20 is halfway between 18 and 32, that doesn't mean our answer is halfway between 32 and 52. Start with ⁸/₅ = ˣ/₃₀ and then solve for 𝑥",
+        "B": "I think you may have assumed an adding pattern since 8 + 12 = 20, but that pattern doesn't fit this table. Start with ⁸/₅ = ˣ/₃₀ and then solve for 𝑥",
+        "C": "⁸/₅ = ˣ/₃₀ Since 30 is 6 times larger than 5, 𝑥 is 6 times larger than 8. 8 x 6 = 48",
+        "D": "You have the right idea to look at ratios and start with ⁸/₅ = ˣ/₃₀, but we won't multiply 5 and 30. What should we do to solve for 𝑥?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165505,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3628ca5b-cea1-44cc-b1f2-f97c0eef21aa.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It appears that you subtracted 15 and 3, but we need to look at our ratio. Start with ⁸/₃ = ³⁶/𝑥 and then solve for 𝑥",
+        "B": "⁸/₃ = ³⁶/𝑥 We can use cross products to find 8𝑥 = 3 x 36. 8𝑥 = 108 so 𝑥 = 13.5",
+        "C": "It seems you are trying to find an adding pattern, but that pattern doesn't fit this table. Start with ⁸/₃ = ³⁶/𝑥 and then solve for 𝑥",
+        "D": "I think you may have assumed an adding pattern since 3 + 3 = 6, but that pattern doesn't fit this table. Start with ⁸/₃ = ³⁶/𝑥 and then solve for 𝑥"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165510,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5eb2fb17-df7b-454a-9bf5-de9b726fe736.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "⁸/₅ = ⁵²/𝑥 We can use cross products. 8𝑥 = 5 x 52. 8𝑥 = 260 so 𝑥 = 32.5",
+        "B": "It looks like you may have subtracted 8 from 52, but we need to set up a proportion. Start with ⁸/₅ = ⁵²/𝑥 and solve for 𝑥",
+        "C": "I think you may have assumed an adding pattern since 20 + 10 = 30, but that pattern doesn't fit this table. Start with ⁸/₅ = ⁵²/𝑥 and solve for 𝑥",
+        "D": "It appears that you subtracted 42.5 and 5, but we need to look at our ratio. Start with ⁸/₅ = ⁵²/𝑥 and solve for 𝑥"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165506,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3b4cd32f-cf2d-4517-94d5-4d8adc85a9ea.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "First work out the cost of one lemon and then multiply this cost by 8! $1.80 ÷ 3 = $0.60 and $0.60 x 8 = $4.80",
+        "B": "Not quite! I think you may have taken $1.80 x 3, but that would buy 9 lemons. We only want to buy 8 lemons.",
+        "C": "Look carefully. You multiplied $1.80 by 8, but $1.80 is the price for 3 lemons. How can we find the price of 1 lemon and then use that to find our answer?",
+        "D": "Close, but you divided 3 by $1.80. We want to know how much 1 lemon costs, so we should start by dividing $1.80 by 3 first."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165511,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ef59336d-94ac-4d84-93f2-4aadca4e20d4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Look carefully. You multiplied $3.50 by 12, but $3.50 is the price for 5 apples. How can we find the price of 1 apple and then use that to find our answer?",
+        "B": "Not quite. I think you may have taken $3.50 x 3, but that would buy 15 apples. We only want to buy 12 apples.",
+        "C": "Close, but you divided 5 by $3.50. We want to know how much 1 apple costs, so we should start by dividing $3.50 by 5 first.",
+        "D": "First work out the cost of one apple and then multiply this cost by 12! $3.50 ÷ 5 = $0.70 and $0.70 x 12 = $8.40"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165507,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0821e737-b2f8-4a9a-b113-63be87236ece.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have confused your 𝑥 and 𝑦 values. Remember your 𝑥 coordinate comes first and your 𝑦 coordinate comes second.",
+        "B": "Look carefully, the point (32, 14) wouldn't be on that line. Which point from the graph is not shown in the table?",
+        "C": "(40, 16) is a coordinate pair on the graph, but it is not missing from the table. Which point from the graph is missing from the table?",
+        "D": "The point (35, 14) is the point that that is represented on the graph but is missing from the table."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165512,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cd0e37d0-c00c-452d-9a79-1cb03f642dd6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The point (28, 21) is the point that that is represented on the graph but is missing from the table.",
+        "B": "I think you may have confused your 𝑥 and 𝑦 values. Remember your 𝑥 coordinate comes first and your 𝑦 coordinate comes second.",
+        "C": "(32, 24) is a coordinate pair on the graph, but it is not missing from the table. Which point from the graph is missing from the table?",
+        "D": "Look carefully, the point (26, 20) wouldn't be on that line. Which point from the graph is not shown in the table?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165508,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/705d0a72-23fd-4c3f-801d-0d8a6f43579e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have confused your 𝑥 and 𝑦 axes. Notice number of boys is on the 𝑥-axis and number of girls is on the 𝑦-axis.",
+        "B": "Careful! Our graph represents a ratio, which means we can't estimate the points so they no longer represent a ratio. Which table has values that each represent the same ratio?",
+        "C": "Each ratio of boy to girl reduces to 7 to 12; therefore this table represents the ratio represented by the graph.",
+        "D": "It looks like you confused your axes and estimated. Notice that the number of boys is on the 𝑥-axis and the number of girls is on the 𝑦-axis. Also, the values in the table should all reduce to the same ratio..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165513,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7d6b4aa7-b21c-409b-97ad-84c5f01b832e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you confused your axes and estimated. Notice that the number of boys is on the 𝑥-axis and the number of girls is on the 𝑦-axis. Also, the values in the table should all reduce to the same ratio...",
+        "B": "Each ratio of boy to girl reduces to 9 to 14; therefore this table represents the ratio represented by the graph.",
+        "C": "I think you may have confused your 𝑥 and 𝑦 axes. Notice number of boys is on the 𝑥-axis and number of girls is on the 𝑦-axis.",
+        "D": "Careful! Our graph represents a ratio, which means we can't estimate the points so they no longer represent a ratio. Which table has values that each represent the same ratio?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

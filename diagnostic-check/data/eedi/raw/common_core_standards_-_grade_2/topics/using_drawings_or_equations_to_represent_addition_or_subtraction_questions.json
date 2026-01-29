@@ -1,0 +1,159 @@
+{
+  "shortcode": "eher",
+  "name": "Using drawings or equations to represent addition or subtraction questions",
+  "collectionId": 35,
+  "level": 1,
+  "sequence": 2,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Represent one step subtractions using equations",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Represent two step problems involving addition and subtraction using equations",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Represent one step additions using equations",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Representing one step additions using a bar model",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166635,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/64b4f8cf-c43e-4b4a-8ba1-06e3ba00e103.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We need to find the total number of birds in the tree by adding 15 and 12. In these bar models, the whole bar (at the bottom) represents the total and the shorter bars (along the top) represent the parts. Therefore we need a bar model where the two bars at the top are 15 and 12 and the bottom, (?), is the total number of birds.",
+        "B": "Not quite. In these bar models, the whole bar (at the bottom) represents the total and the shorter bars (along the top) represent the parts. This bar model would be used to calculate 15 − 12, is that the correct calculation?",
+        "C": "Not quite. In these bar models, the whole bar (at the bottom) represents the total and the shorter bars (along the top) represent the parts. This bar model would be used to calculate 15 − 12, is that the correct calculation?",
+        "D": "Not quite. In these bar models, the whole bar (at the bottom) represents the total and the shorter bars (along the top) represent the parts. Which values would you need to add together in this question? Those numbers will be the parts."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166885,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/036ee03f-02ee-4a69-a886-c06a486d52b4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. In these bar models, the whole bar (at the bottom) represents the total and the shorter bars (along the top) represent the parts. Which values would you need to add together in this question? Those numbers will be the parts.",
+        "B": "We need to find the total number of birds in the tree by adding 11 and 13. In these bar models, the whole bar (at the bottom) represents the total and the shorter bars (along the top) represent the parts. Therefore we need a bar model where the two bars at the top are 11 and 13 and the bottom, (?), is the total number of birds.",
+        "C": "Not quite. In these bar models, the whole bar (at the bottom) represents the total and the shorter bars (along the top) represent the parts. This bar model would be used to calculate 13 − 11, is that the correct calculation?",
+        "D": "Not quite. In these bar models, the whole bar (at the bottom) represents the total and the shorter bars (along the top) represent the parts. This bar model would be used to calculate 13 − 11, is that the correct calculation?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166636,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e03fee37-4fad-4a03-8234-0f922ecf15e0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. This equation has 37 as the total number of apples, but 37 is just the number of red apples. There are also 13 green apples and we need to work out the total number of apples by adding the red and green apples together.",
+        "B": "Not quite. This equation has 37 as the total number of apples, but 37 is just the number of red apples. There are also 13 green apples and we need to work out the total number of apples by adding the red and green apples together.",
+        "C": "We need to find the total number of apples by adding together 13 and 37, which is what this equation represents.",
+        "D": "Not quite. This equation has 13 as the total number of apples, but 13 is just the number of green apples. There are also 37 red apples and we need to work out the total number of apples by adding the red and green apples together."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166886,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c3710caa-7f68-4e87-a15b-822fbfe6508c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. This equation has 42 as the total number of apples, but 42 is just the number of green apples . There are also 18 red apples and we need to work out the total number of apples by adding the green and red apples together.",
+        "B": "Not quite. This equation has 42 as the total number of apples, but 42 is just the number of green apples . There are also 18 red apples and we need to work out the total number of apples by adding the green and red apples together.",
+        "C": "Not quite. This equation has 18 as the total number of apples, but 18 is just the number of red apples. There are also 42 green apples and we need to work out the total number of apples by adding the green and red apples together.",
+        "D": "We need to find the total number of apples by adding together 42 and 18, which is what this equation represents."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166637,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/16a65386-73d5-49d1-98bd-57166252af8d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. In a bar model, the whole bar (at the bottom) represents the total: what is the total number of paperclips that Sarah starts with? And the shorter bars (at the top) represent the parts: the number of paperclips that Sarah gives to her friend and the number of paperclips she has left.",
+        "B": "In these bar models, the whole bar (at the bottom) represents the total and the shorter bars (at the top) represent the parts. The total number of paperclips is 68 so this is in the bottom bar. The total is made up of two parts: the number of paperclips kept by Sarah (?) and the number of paperclips given to her friend (23). So these are the two parts in the top row.",
+        "C": "Not quite. In these bar models, the whole bar (at the bottom) represents the total: what is the total number of paperclips that Sarah starts with? And the shorter bars (at the top) represent the parts: the number of paperclips that Sarah gives to her friend and the number of paperclips she has left.",
+        "D": "Not quite. In these bar models, the whole bar (at the bottom) represents the total: what is the total number of paperclips that Sarah starts with? And the shorter bars (at the top) represent the parts: the number of paperclips that Sarah gives to her friend and the number of paperclips she has left."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166887,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a0e92c02-8639-40ea-a31e-3eff0ba7ce9c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "In these bar models, the whole bar (at the bottom) represents the total and the shorter bars (at the top) represent the parts. The total number of paperclips is 57 so this is in the bottom bar. This total is made up of two parts: the number of paperclips kept by Amy, (?), and the number of paperclips given to her friend, (15). So these are the two parts in the top row.",
+        "B": "Not quite. In these bar models, the whole bar (at the bottom) represents the total: what is the total number of paperclips that Amy starts with? And the shorter bars (at the top) represent the parts: the number of paperclips that Amy gives to her friend and the number of paperclips she has left.",
+        "C": "Not quite. In these bar models, the whole bar (at the bottom) represents the total: what is the total number of paperclips that Amy starts with? And the shorter bars (at the top) represent the parts: the number of paperclips that Amy gives to her friend and the number of paperclips she has left.",
+        "D": "Not quite. In these bar models, the whole bar (at the bottom) represents the total: what is the total number of paperclips that Amy starts with? And the shorter bars (at the top) represent the parts: the number of paperclips that Amy gives to her friend and the number of paperclips she has left."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166638,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b4d51231-c2f7-4f1c-aa01-5d04a4368fa3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, the unknown number (represented by the empty box) is the number of pens that Lily starts with. She then adds 15 pens to her collection and ends up with a total of 21 pens. Which equation shows this?",
+        "B": "Not quite, the unknown number (represented by the empty box) is the number of pens that Lily starts with. She then adds 15 pens to her collection and ends up with a total of 21 pens. Which equation shows this?",
+        "C": "Not quite, the unknown number (represented by the empty box) is the number of pens that Lily starts with. She then adds 15 pens to her collection and ends up with a total of 21 pens. Which equation shows this?",
+        "D": "Lily has some pens to start with, we don't know how many so we'll represent this number with an empty box. She then adds 15 pens to this unknown number of pens and ends up with a total of 21 pens. So, writing this as an equation: 🔲 + 15 = 21."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166888,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/255a7349-bc64-4581-964b-75ae475c3148.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, the unknown number (represented by the empty box) is the number of pens that George starts with. He then adds 8 pens to his collection and ends up with a total of 26 pens. Which equation shows this?",
+        "B": "George has some pens to start with, we don't know how many so we'll represent this number with an empty box. He then adds 8 pens to this unknown number of pens and ends up with a total of 26 pens. So, writing this as an equation: 🔲 + 8 = 26.",
+        "C": "Not quite, the unknown number (represented by the empty box) is the number of pens that George starts with. He then adds 8 pens to his collection and ends up with a total of 26 pens. Which equation shows this?",
+        "D": "Not quite, the unknown number (represented by the empty box) is the number of pens that George starts with. He then adds 8 pens to his collection and ends up with a total of 26 pens. Which equation shows this?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166639,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/194c6d5f-a38c-47c1-8d7d-df05139bb4d6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, the unknown number (represented by the empty box) is the number of cupcakes that are left after 9 have been eaten. Which sum finds the total number of cupcakes that we started with and subtracts the number of cupcakes that get eaten?",
+        "B": "Not quite, you've correctly decided to add together the numbers of cupcakes that we started with, but then you've added the cupcakes that were eaten...but those cupcakes have gone, how do we show this in a calculation or equation?",
+        "C": "We start with a total of 6 + 8 cupcakes. Then we need to subtract the 9 that are eaten. That will tell us how many cupcakes are now left. So this sum is: 6 + 8 - 9 = 🔲 , where the empty box is for the answer to this sum (the number of cupcakes that are now left).",
+        "D": "Nearly, I think you've got the numbers confused. We start with a total of 6 + 8 cupcakes and then 9 are eaten. How do we show this in a calculation or equation?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166889,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ca0dd49a-d5be-41c1-b47c-52b957fcf749.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, you've correctly decided to add together the numbers of cupcakes that we started with, but then you've added the cupcakes that were eaten...but those cupcakes have gone, how do we show this in a calculation or equation?",
+        "B": "Nearly, I think you've got the numbers confused. We start with a total of 10 + 7 cupcakes and then 5 are eaten. How do we show this in a calculation or equation?",
+        "C": "Not quite, the unknown number (represented by the empty box) is the number of cupcakes that are left after 5 have been eaten. Which sum finds the total number of cupcakes that we started with and subtracts the number of cupcakes that get eaten?",
+        "D": "We start with a total of 10 + 7 cupcakes. Then we need to subtract the 5 that are eaten. That will tell us how many cupcakes are now left. So this sum is: 10 + 7 - 5 = 🔲 , where the empty box is for the answer to this sum (the number of cupcakes that are now left)."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

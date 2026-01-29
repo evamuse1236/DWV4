@@ -1,0 +1,147 @@
+{
+  "shortcode": "vw7",
+  "name": "Form algebraic expressions from area and volume",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 212,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Use area to write algebraic expressions",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use volume to write algebraic expressions",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 132157,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/258217f1-8463-4343-b821-bdab6befd583.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have worked out the perimeter of the rectangle but we need an expression for the area. How do we find the area of a rectangle?",
+        "B": "To find the area of a rectangle, we multiply the length by the width. So we need to multiply 5𝑥 + 3 by 4. 4 lots of 5𝑥 is 20𝑥 and 4 lots of 3 is 12. So the area is 20𝑥 + 12.",
+        "C": "You have added the two given side lengths together but we don't add the sides to find the area. What operation do we use to find the area?",
+        "D": "I think you have worked out the area but then tried to add the letters and numbers together. Don't forget that we can add terms with the same letters (for example 3𝑥 + 2𝑥 = 5𝑥) but we can't add letters to numbers (for example, 3𝑥 + 2 can't be simplified)."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 132075,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d5731f27-4d3e-40ac-a2e6-9cf85d97d6ee.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have worked out the perimeter of the rectangle but we need an expression for the area. How do we find the area of a rectangle?",
+        "B": "I think you have worked out the area but then tried to add the letters and numbers together. Don't forget that we can add terms with the same letters (for example 3𝑥 + 2𝑥 = 5𝑥) but we can't add letters to numbers (for example, 3𝑥 + 2 can't be simplified).",
+        "C": "You have added the two given side lengths together but we don't add the sides to find the area. What operation do we use to find the area?",
+        "D": "To find the area of a rectangle, we multiply the length by the width. So we need to multiply 3𝑥 – 2 by 5. 5 lots of 3𝑥 is 15𝑥 and 5 lots of -2 is -10. So the area is 15𝑥 – 10."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135492,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e9296d43-bf40-4747-b186-03e8cbdc2713.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've tried to find the perimeter of the trapezium. How can we find the area of a trapezium?",
+        "B": "I think you've multiplied the x terms and then multiplied -1 and 3, that's not how we find the area of a trapezium. Remember you can find the area by adding the parallel sides, dividing by 2 and multiplying by height.",
+        "C": "You're really close here! Make sure you halve all the terms within the brackets",
+        "D": "To find the area of a trapezium, we add the parallel sides: x-1+x+3 = 2x+2, halve it: x+1, and multiply by the height x(x+1) = x² + x. We've been told the area is 12, so we can write x² + x = 12."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135512,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9cb037cc-cb54-4b14-895d-9f98afb43247.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've tried to find the perimeter of the trapezium. How can we find the area of a trapezium?",
+        "B": "To find the area of a trapezium, we add the parallel sides: x+2 + x+4 = 2x+6, halve it: x+3, and multiply by the height x(x+3) = x² + 3x. We've been told the area is 40, so we can write x² + 3x = 40.",
+        "C": "It looks like you've forgotten an important element in the area of a trapezium formula. What do we need to do after adding the parallel sides?",
+        "D": "I think you've multiplied the x terms and then multiplied 2 and 4, that's not how we find the area of a trapezium. Remember you can find the area by adding the parallel sides, dividing by 2 and multiplying by height."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 154582,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8ed85c6b-065b-439c-84a2-b77507dd5ef8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost! Make sure you write the algebraic length in a bracket so that it all gets multiplied by the numerical length.",
+        "B": "Not quite. To find the area of a parallelogram we multiply the base by the perpendicular height. Do the two lengths you have chosen for the bottom shape make a right angle?",
+        "C": "To find the area of a parallelogram we multiply the base by the perpendicular height. So for the top shape we have 5(2𝑥 + 2) and for the bottom shape 4(3𝑥 - 1). We are told the areas are equal, so expanding the brackets and setting them equal to each other gives us 10𝑥 + 10 = 12𝑥 - 4.",
+        "D": "Not quite. I think you have selected the right lengths to use but added them by mistake. To find the area of a parallelogram we multiply the base by the perpendicular height."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 154584,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a0a40be1-d1e6-41f6-ae3c-dc3cfb28a464.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost! Make sure you write the algebraic length in a bracket so that it all gets multiplied by the numerical length.",
+        "B": "Not quite. To find the area of a parallelogram we multiply the base by the perpendicular height. Do the two lengths you have chosen for the bottom shape make a right angle?",
+        "C": "Not quite. I think you have selected the right lengths to use but added them by mistake. To find the area of a parallelogram we multiply the base by the perpendicular height.",
+        "D": "To find the area of a parallelogram we multiply the base by the perpendicular height. So for the top shape we have 6(3𝑥 - 2) and for the bottom shape 3(4𝑥 + 4). We are told the areas are equal, so expanding the brackets and setting them equal to each other gives us 18𝑥 - 12 = 12𝑥 + 12"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 154583,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/06ac7a9d-17e7-46de-ac79-89b4063287c7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Careful! To find the area of a triangle we multiply the base by the perpendicular height, then divide by 2. Do the two lengths you have chosen to multiply make a right angle?",
+        "B": "Almost! You have picked the correct lengths to multiply, but remember for a triangle we multiply the base by the perpendicular height, then divide by 2.",
+        "C": "Careful! To find the area of a triangle we multiply the base by the perpendicular height, then divide by 2. Do the two lengths you have chosen to multiply make a right angle? Did you forget the division step?",
+        "D": "To find the area of a triangle we multiply the base by the perpendicular height, then divide by 2. So we have 5𝑥 x 4 which is 20𝑥, then divided by 2 is 10𝑥. We are asked for a formula. This formula is for area so we have A = 10𝑥."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 154585,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/360ebe15-c5ca-4b6a-9ff0-4e837ed0fa88.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find the area of a triangle we multiply the base by the perpendicular height, then divide by 2. So we have 8𝑥 x 4 which is 32𝑥, then divided by 2 is 16𝑥. We are asked for a formula. This formula is for area so we have A = 16𝑥.",
+        "B": "Careful! To find the area of a triangle we multiply the base by the perpendicular height, then divide by 2. Do the two lengths you have chosen to multiply make a right angle? Did you forget the division step?",
+        "C": "Almost! You have picked the correct lengths to multiply, but remember for a triangle we multiply the base by the perpendicular height, then divide by 2.",
+        "D": "Careful! To find the area of a triangle we multiply the base by the perpendicular height, then divide by 2. Do the two lengths you have chosen to multiply make a right angle?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 154586,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/15262657-4d51-4738-b64f-a8b57ecd933e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Multiplying length by width by height gives the volume of a cuboid. Thus the volume of this cuboid is (2𝑥 + 1) x 5 x 3𝑥 which simplifies to 15𝑥(2𝑥 + 1) and equals 30𝑥² + 15𝑥 when expanded. We are told the volume equals 45cm³, therefore 30𝑥² + 15𝑥 = 45",
+        "B": "Not quite. Be careful when multiplying your algebraic terms. Remember 𝑥 multiplied by 𝑥 is 𝑥².",
+        "C": "Not quite. Be careful when expanding the bracket. Remember everything inside the bracket has to be multiplied by the term outside the bracket. So 5(2𝑥 + 1) = 10𝑥 + 5",
+        "D": "Not quite. I think you have added the terms together rather than multiplied. Remember to find the volume of a cuboid we multiply length by width by height."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 154587,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dcbd1034-641d-4697-85ef-c4490fd97617.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Be careful when expanding the bracket. Remember everything inside the bracket has to be multiplied by the term outside the bracket. So 2(3𝑥 - 1) = 6𝑥 - 3.",
+        "B": "Not quite. I think you have added the terms together rather than multiplied. Remember to find the volume of a cuboid we multiply length by width by height.",
+        "C": "Multiplying length by width by height gives the volume of a cuboid. Thus the volume of this cuboid is (3𝑥 - 1) x 2 x 4𝑥 which simplifies to 8𝑥(3𝑥 - 1) and equals 24𝑥² - 8𝑥 when expanded. We are told the volume equals 72cm³, therefore 24𝑥² - 8𝑥 = 72.",
+        "D": "Not quite. Be careful when multiplying your algebraic terms. Remember 𝑥 multiplied by 𝑥 is 𝑥²."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

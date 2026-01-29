@@ -1,0 +1,165 @@
+{
+  "shortcode": "v1x",
+  "name": "Scatter diagrams 2",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 152,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Draw a line of best fit on a scatter diagram",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Relate correlation to the context of the question",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use a scatter diagram to make predictions",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify outliers on a scatter diagram",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify the concept and limits of extrapolation",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 78418,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/70c68b24-d4a9-45c2-9c6a-a63ed5c515ce.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The red line goes in the same direction as the points, and has roughly the same amount of points above and below the line.",
+        "B": "Not quite. Remember, a line of best fit needs to go in the same direction as the points.",
+        "C": "Not quite. Remember, a line of best fit should try and have roughly the same number of points above and below the line. All of the points are below the green line., so it would not be a good line of best fit.",
+        "D": "Not quite. The line of best fit does not have to go through the origin. Remember, a line of best fit should try and have roughly the same number of points above and below the line."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78712,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/084cf051-0f19-4cc9-81ea-8874e6dcf489.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember, a line of best fit needs to go in the same direction as the points.",
+        "B": "The blue line goes in the same direction as the points, and has roughly the same amount of points above and below the line.",
+        "C": "Not quite. Remember, a line of best fit should try and have roughly the same number of points above and below the line. All of the points are below the green line, so it would not be a good line of best fit.",
+        "D": "Not quite. Remember, a line of best fit should try and have roughly the same number of points above and below the line. All of the points are above the purple line, so it would not be a good line of best fit."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 78419,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1fe3883b-bd80-4c52-bd31-86cafeb55cb7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. A line of best fit is shown in the diagram, but it does not describe the relationship. Think about what happens as age increases.",
+        "B": "From following the points in the scatter graph, and the general trend of the line of best fit, it can be seen that as age increases, weight also increases.",
+        "C": "Look at the direction of the line of best fit. Think about what happens as age increases.",
+        "D": "Look at the direction of the line of best fit. If there were no relationship, there would be no line of best fit. Think about what happens as age increases."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78713,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/205ebae4-30b2-4dbd-ba26-4cbdce81a8a7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "From following the points in the scatter graph, and the general trend of the line of best fit, it can be seen that as temperature increases, the reliability of the product decreases.",
+        "B": "Look at the direction of the line of best fit. Think about what happens as temperature increases.",
+        "C": "Look at the direction of the line of best fit. If there were no relationship, there would be no line of best fit. Think about what happens as temperature increases.",
+        "D": "Not quite. A line of best fit is shown in the diagram, but it does not describe the relationship. Think about what happens as temperature increases."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 78420,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/da8f63b4-fe20-4f39-9551-2838a84a624f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! I think you have added 10 to 100. Try going up the side to 10 and read over to where it hits the orange line.",
+        "B": "Reading across from 10 to the orange line, gives a reading of 114 on the IQ axis.",
+        "C": "Not quite! I think might you have counted 10 points in. Try reading off at 10, until you hit the red line.",
+        "D": "Not quite! I think you may have counted 10 points along. Try reading off at 10, until you hit the orange line."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78714,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7f4336e6-78c1-450d-8bc2-d85aa4c93ac8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! I think you may have counted 8 points along. Try reading off at 8, until you hit the orange line.",
+        "B": "Close! I think you have read across at 8, but haven't read over the whole way to the orange line.",
+        "C": "Reading across from 8 to the orange line, gives a reading of 111 on the IQ axis.",
+        "D": "Not quite! I think might you have counted 8 points in. Try reading off at 8, until you hit the orange line."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 78421,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5a461a15-86ce-4f43-a2c9-4e7d86e1cd4b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we drew a line of best fit for these points, point A would not fit with it.",
+        "B": "Not quite! If we drew a line of best fit for these points, B would be close to it. Can you spot any points that would lie far away from the line?",
+        "C": "Not quite! If we drew a line of best fit for these points, C would be close to it. Can you spot any points that would lie far away from the line?",
+        "D": "Not quite! If we drew a line of best fit for these points, D would be close to it. Can you spot any points that would lie far away from the line?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78715,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bb70728a-4dda-4ef8-9f58-f28673570dd3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! If we drew a line of best fit for these points, A would be close to it. Can you spot any points that would lie far away from the line?",
+        "B": "If we drew a line of best fit for these points, point B would not fit with it.",
+        "C": "Not quite! If we drew a line of best fit for these points, C would be close to it. Can you spot any points that would lie far away from the line?",
+        "D": "Not quite! If we drew a line of best fit for these points, D would be close to it. Can you spot any points that would lie far away from the line?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 78422,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7b6edd48-6209-4b8c-8734-08b94012023d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Too low for what? Where does this prediction lie compared to the rest of the data? Why might this be an issue?",
+        "B": "A line of best fit does not have to go through the origin, so this would not affect how careful we need to be in reading off this graph. Where does this prediction lie compared to the rest of the data? Why might this be an issue?",
+        "C": "Not quite, as there is a line of best fit drawn, this graph does show correlation. Where does this prediction lie compared to the rest of the data? Why might this be an issue?",
+        "D": "10 is beyond the range of data we have collected. This means we do not know whether the trend we see will continue, making our prediction less reliable"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78716,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5d994b94-002f-4316-9f35-88c33924ebdf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A line of best fit does not have to go through the origin, so this would not affect how careful we need to be in reading off this graph. Where does this prediction lie compared to the rest of the data? Why might this be an issue?",
+        "B": "Not quite, as there is a line of best fit drawn, this graph does show correlation. Where does this prediction lie compared to the rest of the data? Why might this be an issue?",
+        "C": "60 is beyond the range of data we have collected. This means we do not know whether the trend we see will continue, making our prediction less reliable",
+        "D": "Too high for what? Where does this prediction lie compared to the rest of the data? Why might this be an issue?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

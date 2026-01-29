@@ -1,0 +1,159 @@
+{
+  "shortcode": "efkn",
+  "name": "Distinguish absolute value from order",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 113,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Compare absolute values using inequality notation",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Compare positive and negative integers based on distance from 0",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use absolute values to compare and order rational numbers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Compare negative and positive integers",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 165493,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b471c5c7-d94a-4951-aedb-07b77bf06b70.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Look carefully! We are looking for the highest score. Is there a score higher than Owen's?",
+        "B": "Ava's score of 130 is the highest score recorded.",
+        "C": "I think you have confused the lowest score for the highest score. Can you find the highest score?",
+        "D": "Almost. Sybella has as good score, but did someone score higher than her?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165498,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b3fffcf6-2f75-4724-a7c6-895bf1fd3e53.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. Owen has as good score, but did someone score higher than him?",
+        "B": "I think you have confused the lowest score for the highest score. Can you find the highest score?",
+        "C": "Yasin's score of 120 is the highest score recorded.",
+        "D": "Look carefully! We are looking for the highest score. Is there a score higher than Sybella's?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165494,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d30848ee-34e8-4bfd-8c8e-452b76636033.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Imagine a number line. Is there another value that would be farther away from 0?",
+        "B": "I think you may have confused highest score with the score that is farthest from 0. Imagine a number line. Which number would be farthest from 0?",
+        "C": "Yasin's score would be 203 units from 0, the farthest away.",
+        "D": "I think you may have picked the number closest to 0, rather than farthest away."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165499,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7bcc91ac-266f-4f30-a50a-137a943c2289.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Owen's score would be 200 units from 0, the farthest away.",
+        "B": "I think you may have confused highest score with the score that is farthest from 0. Imagine a number line. Which number would be farthest from 0?",
+        "C": "Imagine a number line. Is there another value that would be farther away from 0?",
+        "D": "I think you may have picked the number closest to 0, rather than farthest away."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165495,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/09f8f920-85f6-4c93-abed-8705f16caac2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "|-4| = 4 and 4 < 7.",
+        "B": "I think you may have confused -47 and |-47|. Remember, |-47| is asking how far away is -47 from 0? With that in mind, which value would be less than 7?",
+        "C": "I think you may have confused -9 and |-9|. Remember, |-9| is asking how far away is -9 from 0? With that in mind, which value would be less than 7?",
+        "D": "Remember the small end of the inequality sign should point to the smaller value and the larger end should point to the larger value. Is 25 < 7?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165500,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/15a4c623-033a-4d03-9899-63cac11668d9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have confused -20 and |-20|. Remember, |-20| is asking how far away is -20 from 0? With that in mind, which value would be less than 12?",
+        "B": "Remember the small end of the inequality sign should point to the smaller value and the larger end should point to the larger value. Is 40 < 12?",
+        "C": "I think you may have confused -17 and |-17|. Remember, |-17| is asking how far away is -17 from 0? With that in mind, which value would be less than 12?",
+        "D": "|-8| = 8 and 8 < 12."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165496,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/99ffd965-c319-4ec2-8277-ee87725d6ac8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Careful, while -3 > -10, we are looking at the absolute value of each term.",
+        "B": "Careful, while 7 > -10, we are looking at the absolute value of each term.",
+        "C": "|-15| is 15 and |-10| is 10, so 15 > 10.",
+        "D": "Careful, while 9 > -10, we are looking at the absolute value of each term."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165501,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2b9a0a4c-9aca-4352-98c2-d9aefd2688f6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Careful, while 4 > -5, we are looking at the absolute value of each term.",
+        "B": "|-10| is 10 and |-5| is 5, so 10 > 5.",
+        "C": "Careful, while -2 > -5, we are looking at the absolute value of each term.",
+        "D": "Careful, while 3 > -5, we are looking at the absolute value of each term."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165497,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7cce822e-92db-4797-805e-fc767999816f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have put these in order from greatest to least.",
+        "B": "Careful, look closely at -|10|. What does it mean if the negative sign is outside of the absolute value?",
+        "C": "Remember |-4| is asking how far away from 0 is -4 located? Keeping that in mind, how should we put these values in order from least to greatest?",
+        "D": "-|10| = -10, |3| = 3, |-4| = 4, 7. These numbers are ordered from least to greatest."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165502,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1a44e77b-bbe5-4a96-8a93-302b0312ac9e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember |-4| is asking how far away from 0 is -4 located? Keeping that in mind, how should we put these values in order from least to greatest?",
+        "B": "-|9| = -9, |-4| = 4, |2| = 2, 5. These numbers are ordered from least to greatest.",
+        "C": "Careful, look closely at -|9|. What does it mean if the negative sign is outside of the absolute value?",
+        "D": "I think you may have put these in order from greatest to least."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

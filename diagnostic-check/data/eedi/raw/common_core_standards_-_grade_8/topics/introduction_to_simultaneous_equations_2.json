@@ -1,0 +1,159 @@
+{
+  "shortcode": "vzw",
+  "name": "Introduction to simultaneous equations 2",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 64,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Solve basic introduction simultaneous equation problems, often involving shapes and symbols",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Recognise whether you need to add or subtract linear equations in order to eliminate a variable",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Add two equations together to remove a variable ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Substitute a solution back into the remaining equation and find the second solution",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 131831,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a8b51171-c3a8-4369-8e00-042fc840111f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have written down how many squares are in the first equation. We know that 2 squares and 2 circles is worth 18. How much more is needed to make 22?",
+        "B": "We know that 2 circles and 2 squares is worth 18. In the first pattern there is one more square and the total is 4 more, this means the square is worth 4.",
+        "C": "I think you have calculated the value of a circle, not the square.",
+        "D": "Not quite! We know that 2 squares and 2 circles is worth 18. How much more is needed to make 22?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134024,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c78518b0-a172-4212-a0bc-afb167c4aa95.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. We know that 2 squares and 2 circles are worth 18. The first equation has 3 squares and 2 circles equal to 22. Try work out the value of one square using this. Then, think about what one circle must be worth.",
+        "B": "Not quite. I think you have worked out the value of each square. Use this value for the square to see if you can calculate the circles.",
+        "C": "We know that 2 squares and 2 circles = 18. We have one additional square to make 22. So we know that each square is worth 4. We know that 3 squares will then be worth 12, so 2 circles must be worth 10. So one circle is worth 5.",
+        "D": "Not quite. I think you have divided 18 by 4. The squares and circles aren't worth the same amount, so we can't do this."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131832,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/34861015-fb4e-495a-9eac-85c7c07f4724.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom is correct: 2y + (-2y) would equal 0y, eliminating the y terms.",
+        "B": "Not quite. Adding -2y and - 2y would give -4y. The y terms would not be eliminated.",
+        "C": "Not quite. In Katie's case, adding -2y and - 2y would give -4y. The y terms would not be eliminated.",
+        "D": "Not quite. Think about if we did 2y + (-2y) for Tom's equations, and -2y + (-2y) in Katie's equations. At least one of these would result in 0y."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134025,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2e88b1b8-6083-467d-b277-6417d5efac85.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Have another look at Katie's equations. Would adding eliminate the y terms?",
+        "B": "Have another look at Tom's equations. Would adding eliminate the y terms?",
+        "C": "If we did -3y + (+3y) for Tom's equations, and 3y + (-3y) for Katie's equations, both would result in 0y.",
+        "D": "Not quite, think about if we did -3y + (+3y) for Tom's equations, and 3y + (-3y) for Katie's equations. At least one of these would result in 0y."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131833,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/16f01e0d-3836-4992-bc1c-5c1849d2eefe.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Adding together the equations eliminates the y terms, resulting in 4x = 14.",
+        "B": "Not quite. Look again at what 2y + (-2y) would equal.",
+        "C": "Not quite. Look again at what 2y + (-2y) would equal.",
+        "D": "Not quite. I think you have subtracted the x terms instead of adding - but remember, Colm is adding the equations together."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134026,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d25ee19e-19e3-414b-bbab-349d422049af.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Look again at what -3y + (3y) would equal.",
+        "B": "Not quite. I think you have subtracted the x terms instead of adding. Remember, we are told in the question that Colm is adding the equations together.",
+        "C": "Adding together the equations eliminates the y terms, resulting in 5x = 27.",
+        "D": "Not quite. Look again at what -3y + (3y) would equal."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131834,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/89b775e2-462d-4f6c-8aa8-574104af2724.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find the value of y we need to substitute our value of x into one of the equations. Write out what x substituted into the top equation would be and what x substituted into the bottom equation would be and then compare your answers to Tom's and Katie's.",
+        "B": "To find the value of y we need to substitute our value of x into one of the equations. Write out what x substituted into the top equation would be and what x substituted into the bottom equation would be and then compare your answers to Tom's and Katie's.",
+        "C": "To find the value of y we need to substitute our value of x into one of the equations. If we substitute it into the first equation we get: (5x3) + y = 13 so 15 + y = 13 which is Tom's answer. If we substitute it into the second equation we get 3 - y = 5 which is Katie's answer, so both of them are correct!",
+        "D": "To find the value of y we need to substitute our value of x into one of the equations. Write out what x substituted into the top equation would be and what x substituted into the bottom equation would be and then compare your answers to Tom's and Katie's."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134027,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db2e0c12-c63b-4449-a297-36ddc357fb0a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find the value of y we need to substitute our value of x into one of the equations. Write out what x substituted into the top equation would be and what x substituted into the bottom equation would be and then compare your answers to Tom's and Katie's.",
+        "B": "To find the value of y we need to substitute our value of x into one of the equations. Write out what x substituted into the top equation would be and what x substituted into the bottom equation would be and then compare your answers to Tom's and Katie's.",
+        "C": "To find the value of y we need to substitute our value of x into one of the equations. If we substitute it into the first equation we get: (3x5) + 2y = 16 so 15 + 2y = 16 which is Tom's answer. If we substitute it into the second equation we get 5 - 2y = 4 which is Katie's answer, so both of them are correct!",
+        "D": "To find the value of y we need to substitute our value of x into one of the equations. Write out what x substituted into the top equation would be and what x substituted into the bottom equation would be and then compare your answers to Tom's and Katie's."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131835,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dfb4eee3-b231-4b3c-8bff-e82a155d3783.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "3 - 2 = 1 not 5. Think about what you have to subtract from 3 to get 5.",
+        "B": "To find the value of y we need to think about what can be subtracted from 3 to give 5. 3 - -2 = 5 therefore y = -2. We can also solve this by rearranging the equation. First we add y to both sides to get: 3 = y + 5. Then we subtract 5 from both sides: 3 - 5 = y. Therefore y = -2.",
+        "C": "I think you have added 3 to both sides but this would give 6 - y = 8 as the 3 is positive and the negative is in front of the y. You could subtract 3 from both sides to get only -y on the left hand side and then use this answer to find y.",
+        "D": "3 - -8 = 11 not 5. Think about what you have to subtract from 3 to get 5."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134028,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0fd39585-546c-4fde-9f2f-e92e2e469975.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "5 - 1 = 4 so this shows 2y = 1. We need to find what y is, or 1y. What would y be?",
+        "B": "Take care when subtracting 5 from both sides. You should be left with -2y = -1. What happens if you then divide by -2?",
+        "C": "I can see that you have added 5 and divided through by -2. Unfortunately as the 5 is positive we need to subtract it to get -2y. Then you can divide through by -2 to find y.",
+        "D": "To solve this equation we can start by subtracting 5 from both sides to get -2y = -1. Then we can divide through by -2 to get y: y = -1/-2 = 1/2 = 0.5."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

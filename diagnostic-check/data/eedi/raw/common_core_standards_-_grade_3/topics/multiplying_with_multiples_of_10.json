@@ -1,0 +1,141 @@
+{
+  "shortcode": "bito",
+  "name": "Multiplying with multiples of 10",
+  "collectionId": 33,
+  "level": 1,
+  "sequence": 19,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Multiply integers by multiples of 10",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158780,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4eab5547-874e-4e5f-861c-707d9ca69213.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Careful, this is fourteen tenths, not fourteen tens! Think about what four tens would be...",
+        "B": "We can't just write the numbers next to each other, we need to multiply. What would be the value of four tens? What about fourteen tens?",
+        "C": "Ten tens is 100, and four tens is 40, so fourteen tens is 140.",
+        "D": "You might have tried to do fourteen tenths, but we want fourteen tens... Try thinking about four tens first."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158979,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eac4bfb8-2342-490b-9eb4-fa1594a3b38e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Ten tens is 100, and eight tens is 80, so eighteen tens is 180.",
+        "B": "You might have tried to do eighteen tenths, but we want eighteen tens... Try thinking about eight tens first.",
+        "C": "We can't just write the numbers next to each other, we need to multiply. What would be the value of eight tens? What about eighteen tens?",
+        "D": "Careful, this is eighteen tenths, not eighteen tens! Think about what eight tens would be..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158781,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fae8db09-59c1-4ac7-9877-e1ea3fb72c41.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Writing numbers next to each other is not the same as multiplying them (that only works for letters) so we need to work out 8 x 4. Try counting up 8, 16, 24, ...",
+        "B": "The x10 has stayed the same from the middle line to the last line, so we just need to replace the 8x4. 8 x 4 = 32, so we can replace 8x4 with 32.",
+        "C": "Careful, this is 8 + 4, we want 8 x 4.",
+        "D": "That would be the answer to 8 x 4 x 10, but we want to fill the gap at the start. Can you see that the gap is in the same place as 8 x 4? So we need a number with the same value as 8 x 4."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158980,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8d9013d9-0c69-46b8-8932-fd93327731c9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Careful, this is 9 + 7, we want 9 x 7.",
+        "B": "That would be the answer to 9 x 7 x 10, but we want to fill the gap at the start. Can you see that the gap is in the same place as 9 x 7? So we need a number with the same value as 9 x 7.",
+        "C": "The x10 has stayed the same from the middle line to the last line, so we just need to replace the 9x7. 9 x 7 = 63, so we can replace 9x7 with 63.",
+        "D": "Writing numbers next to each other is not the same as multiplying them (that only works for letters) so we need to work out 9 x 7. Try counting up 9, 18, 27, ..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158782,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a3378b18-8171-4297-b9bb-a45c4473c855.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Close - you have done 5 x 3 correctly, but this is 5 x 30 so you need to multiply by 10.",
+        "B": "Not quite - I think you did 5 + 3 then multiplied by 10, but we want 5 x 3 and then multiply by 10.",
+        "C": "We can write this as 5 x 3 x 10. 5 x 3 = 15, so we have 15 x 10, which is 150.",
+        "D": "Writing numbers next to each other is not the same as multiplying them (that only works for letters) so we need to work out 5 x 3 first. Try counting up 5, 10, ..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158981,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4736bfd6-d2dc-4fc0-b112-b79de4a913cc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite - I think you did 4 + 6 then multiplied by 10, but we want 4 x 6 and then multiply by 10.",
+        "B": "Writing numbers next to each other is not the same as multiplying them (that only works for letters) so we need to work out 4 x 6 first. Try counting up 4, 8, 12, ...",
+        "C": "Close - you have done 4 x 6 correctly, but this is 4 x 60 so you need to multiply by 10.",
+        "D": "We can write this as 4 x 6 x 10. 4 x 6 = 24, so we have 24 x 10, which is 240."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158783,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e4c34a0e-89a6-4bb5-930e-808ca20860fd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We can write this as 10 x 2 x 8. 2 x 8 = 16, so we have 10 x 16, which is 160.",
+        "B": "Writing numbers next to each other is not the same as multiplying them (that only works for letters) so we need to work out 2 x 8 first. Try counting up 2, 4, 6, 8, 10, ...",
+        "C": "Close - you have done 2 x 8 correctly, but this is 20 x 8 so you need to multiply by 10.",
+        "D": "This is 20 + 8, but we want 20 x 8. Try writing it as 8 x 2 x 10."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158982,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a2cfa326-b974-4bc3-a165-08c6ca2d43c4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is 80 + 5, but we want 80 x 5. Try writing it as 8 x 5 x 10.",
+        "B": "We can write this as 10 x 8 x 5. 8 x 5 = 40, so we have 10 x 40, which is 400.",
+        "C": "Writing numbers next to each other is not the same as multiplying them (that only works for letters) so we need to work out 8 x 5 first. Try counting up 8, 16, 24, ...",
+        "D": "Close - you have done 8 x 5 correctly, but this is 80 x 5 so you need to multiply by 10."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158784,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1bc3a39d-fdc0-4e27-85da-72e97be40dde.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Close - you have done 6 x 5 correctly, but this is 6 x 50 so you need to multiply by 10.",
+        "B": "Writing numbers next to each other is not the same as multiplying them (that only works for letters) so we need to work out 6 x 5 first. Try counting up 5, 10, 15, ...",
+        "C": "Not quite - I think you did 6 + 5 then multiplied by 10, but we want 6 x 5 and then multiply by 10.",
+        "D": "We can write this as 6 x 5 x 10. 6 x 5 = 30, so we have 30 x 10, which is 300."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158983,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/17625eff-95e7-444b-9250-54b85a425979.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We can write this as 7 x 3 x 10. 7 x 3 = 21, so we have 21 x 10, which is 210.",
+        "B": "Not quite - I think you did 7 + 3 then multiplied by 10, but we want 7 x 3 and then multiply by 10.",
+        "C": "Writing numbers next to each other is not the same as multiplying them (that only works for letters) so we need to work out 7 x 3 first. Try counting up 7, 14, ...",
+        "D": "Close - you have done 7 x 3 correctly, but this is 7 x 30 so you need to multiply by 10."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,147 @@
+{
+  "shortcode": "vvm",
+  "name": "Use estimation to check mental calculations",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 149,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate which two integer values the decimal equivalent of a square root must lie between",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Round numbers to an appropriate degree to estimate the answer to a calculation",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 146293,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9c5ce3e0-279e-4520-a29c-d2b32c97a554.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Rounded to one significant figure, the calculation would be 400 + 200 = 600. 606 is the closest to 600.",
+        "B": "I think you may have guessed. First round the numbers to one significant figure before adding.",
+        "C": "I think you may have rounded down. Make sure you round both numbers to the nearest one significant figure, which would be the nearest hundred in both cases.",
+        "D": "I think you may have rounded up. Make sure you round both numbers to the nearest one significant figure, which would be the nearest hundred in both cases."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146313,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6932ca8e-5336-4cb0-ae9a-26b6b40a790b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have guessed. First round the numbers to one significant figure before adding.",
+        "B": "Rounded to one significant figure, the calculation would be 500 + 300 = 800. 801 is the closest to 800.",
+        "C": "I think you may have rounded down. Make sure you round both numbers to the nearest one significant figure, which would be the nearest hundred in both cases.",
+        "D": "I think you may have rounded up. Make sure you round both numbers to the nearest one significant figure, which would be the nearest hundred in both cases."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146294,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/df04e6bc-c451-4f6f-a79f-a5cf63f6ec74.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have guessed. First round the numbers to one significant figure before subtracting.",
+        "B": "I think you may have rounded down. Make sure you round both numbers to the nearest one significant figure, which would be the nearest hundred in both cases.",
+        "C": "Rounded to one significant figure, the calculation would be 400 - 200 = 200. 188 is the closest to 200.",
+        "D": "I think you may have guessed. First round the numbers to one significant figure before subtracting."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146314,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/382a27c0-6d98-492f-9522-e952b7c64efe.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have guessed. First round the numbers to one significant figure before subtracting.",
+        "B": "I think you may have rounded down. Make sure you round both numbers to the nearest one significant figure, which would be the nearest hundred in both cases.",
+        "C": "I think you may have guessed. First round the numbers to one significant figure before subtracting.",
+        "D": "Rounded to one significant figure, the calculation would be 800 - 300 = 500. 487 is the closest to 500."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146295,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/19d68601-c37b-40c5-b42a-e3e9322f83f3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have misunderstood Kate’s reasoning. Reconsider how Kate would estimate her answer.",
+        "B": "I think you may have misunderstood Tom’s reasoning. Reconsider how Tom would estimate his answer.",
+        "C": "Tom’s would estimate to 70 x 3 >210. As 70 is less than 73, the actual answer would be larger than 210. Kate’s would estimate to 30 x 7 <210. As 29 is less than 30, the actual answer would be smaller than 210.",
+        "D": "To estimate, you first need to round all numbers to one significant figure, what would 73 or 29 be rounded to one significant figure? Consider how the rounded numbers compare to the exact numbers."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146315,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ce9ac6fa-c362-4c67-8959-ded2691aad27.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "By rounding to one significant figure, we estimate that 80 x 4 = 320, 82 is more than 80, so the actual answer would be greater than 320, so Tom is wrong. Try this method of estimation with Katie’s calculation too.",
+        "B": "By rounding to one significant figure, we estimate that 40 x 8 = 320. 41 is actually more than 40, so the actual answer would be greater than 320, so Katie is correct.",
+        "C": "Almost! Only one of them is correct. To estimate, you first need to round all numbers to one significant figure. Consider how the rounded numbers compare to the exact numbers.",
+        "D": "At least one of them is correct. To estimate, you first need to round all numbers to one significant figure. Consider how the rounded numbers compare to the exact numbers."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146296,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a2f823f6-c5fc-43dd-b17d-5c4c9fed192d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Consider the square numbers close to 80, how would their square roots compare to 9?",
+        "B": "The square root of 81 = 9, so the square root of 80 would be less than 9. Therefore, Tom is incorrect. The square root of 400 is 20, so the square root of 395 must be less than 20. Therefore, Katie is correct.",
+        "C": "Consider the square numbers close to 80, how would their square roots compare to 9?",
+        "D": "Consider the square numbers closest to 395, how would their roots compare to 20?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146316,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e2810daa-730e-4c0f-a306-aa957677ff5a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Consider the square numbers close to 440, how would their square roots compare to 21?",
+        "B": "Consider the square numbers close to 37, how would their square roots compare to 6?",
+        "C": "The square root of 36 = 6, so the square root of 37 would be greater than 6. Therefore, Tom is correct. The square root of 441 is 21, so the square root of 440 must be less than 21. Therefore, Katie is correct too.",
+        "D": "At least one of them is correct. Consider the square numbers close to 37 and 440, how do their roots compare to the numbers given in the inequalities?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146297,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/481f1048-d53a-4d89-bd3b-1744da6b46a9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have rounded 397 down. Make sure you round both numbers to the nearest one significant figure, which would be the nearest hundred in both cases.",
+        "B": "I think you have rounded up. First, round both numbers to one significant figure before calculating, then see how the rounded numbers compare to the actual numbers to choose your answer.",
+        "C": "I think you have rounded down. First, round both numbers to one significant figure before calculating, then see how the rounded numbers compare to the actual numbers to choose your answer.",
+        "D": "Rounded to one significant figure, the estimation would be 400 ÷200 = 2. In the actual calculation we start with a smaller number and divide by a bigger number so we want one that is slightly smaller than 2."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146317,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7004172c-0a9e-4a6b-b749-63f4d1d9eecf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Rounded to one significant figure, the estimation would be 500 ÷200 = 2.5. In the actual calculation we start with a bigger number and divide by a smaller number so we want one that is slightly bigger than 2.5.",
+        "B": "I think you have rounded down. First, round both numbers to one significant figure before calculating, then see how the rounded numbers compare to the actual numbers to choose your answer.",
+        "C": "I think you have rounded 198 down. First, round both numbers to one significant figure before calculating, then see how the rounded numbers compare to the actual numbers to choose your answer.",
+        "D": "I think you have rounded down. First, round both numbers to one significant figure before calculating, then see how the rounded numbers compare to the actual numbers to choose your answer."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

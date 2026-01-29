@@ -1,0 +1,169 @@
+# Playlist Mapping Repair Report
+
+Generated: 2026-01-29
+
+## Summary
+
+- LOs: 110 → 110
+- Total activities: 505 → 296
+- KA activities: 117 → 111
+- Brilliant lesson activities: 388 → 185
+- LOs over 8 activities: 16 → 0
+
+## Removed (Trimming)
+
+- Removed entries: 201
+- MYP Y1:15: Brilliant https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-3/ (score 0.105)
+- MYP Y1:15: Brilliant https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/number-line-subtraction-1/ (score 0.105)
+- MYP Y1:15: Brilliant https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-1/ (score 0.100)
+- MYP Y1:15: Brilliant https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-4/ (score 0.100)
+- MYP Y1:15: Brilliant https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-1/ (score 0.100)
+- MYP Y1:15: Brilliant https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-2/ (score 0.100)
+- MYP Y1:15: Brilliant https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-3/ (score 0.100)
+- MYP Y1:15: Brilliant https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-4/ (score 0.100)
+- MYP Y1:15: Brilliant https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-6/ (score 0.100)
+- MYP Y1:15: Brilliant https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-2/ (score 0.095)
+- MYP Y1:15: Brilliant https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-205/ (score 0.095)
+- MYP Y1:15: Brilliant https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-21/ (score 0.095)
+- MYP Y1:15: Brilliant https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-22/ (score 0.095)
+- MYP Y1:15: Brilliant https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-25/ (score 0.091)
+- MYP Y1:15: Brilliant https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-26/ (score 0.091)
+- MYP Y1:16: Brilliant https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-6/ (score 0.167)
+- MYP Y1:16: Brilliant https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-9/ (score 0.167)
+- MYP Y1:16: Brilliant https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expressions-18b/ (score 0.167)
+- MYP Y1:16: Brilliant https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expressions-20/ (score 0.167)
+- MYP Y1:16: Brilliant https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-10/ (score 0.158)
+- MYP Y1:16: Brilliant https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-12/ (score 0.111)
+- MYP Y1:16: Brilliant https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-13/ (score 0.111)
+- MYP Y1:16: Brilliant https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-15/ (score 0.111)
+- MYP Y1:16: Brilliant https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-16/ (score 0.111)
+- MYP Y1:16: Brilliant https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-11/ (score 0.105)
+- MYP Y1:16: Brilliant https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-16b/ (score 0.105)
+- MYP Y1:34: Brilliant https://brilliant.org/courses/exponents-and-radicals/exponents-and-number-line/exponent-number-line-7/ (score 0.118)
+- MYP Y1:34: Brilliant https://brilliant.org/courses/exponents-and-radicals/exponent-basics/exponent-basics-1/ (score 0.059)
+- MYP Y1:34: Brilliant https://brilliant.org/courses/exponents-and-radicals/exponent-basics/exponent-basics-2/ (score 0.059)
+- MYP Y1:34: Brilliant https://brilliant.org/courses/exponents-and-radicals/exponent-basics/exponent-basics-3/ (score 0.059)
+- MYP Y1:34: Brilliant https://brilliant.org/courses/exponents-and-radicals/exponent-basics/exponent-basics-4/ (score 0.059)
+- MYP Y1:34: Brilliant https://brilliant.org/courses/exponents-and-radicals/exponent-basics/exponent-basics-5/ (score 0.059)
+- MYP Y1:35: KA https://www.khanacademy.org/math/cc-fifth-grade-math/divide-decimals/dividing-decimals-word-problems (score 0.136)
+- MYP Y1:36: Brilliant https://brilliant.org/courses/transformations/coordinate-wise-rotation/rotating-by-coordinates/ (score 0.071)
+- MYP Y1:36: Brilliant https://brilliant.org/courses/transformations/reflections-in-coordinates/choosing-coordinate-reflection/ (score 0.071)
+- MYP Y1:36: Brilliant https://brilliant.org/courses/transformations/reflections-in-coordinates/reflecting-coordinates/ (score 0.000)
+- MYP Y1:36: Brilliant https://brilliant.org/courses/transformations/reflections-in-coordinates/reflecting-vertices/ (score 0.000)
+- MYP Y1:36: Brilliant https://brilliant.org/courses/transformations/reflections-in-coordinates/reflecting-y-x/ (score 0.000)
+- MYP Y1:36: Brilliant https://brilliant.org/courses/transformations/reflections-in-coordinates/reflecting-y-minus-x/ (score 0.000)
+- MYP Y1:42: Brilliant https://brilliant.org/courses/exponents-and-radicals/exponents-and-number-line/exponents-number-line-2/ (score 0.053)
+- MYP Y1:42: Brilliant https://brilliant.org/courses/exponents-and-radicals/exponents-and-number-line/exponents-number-line-3/ (score 0.053)
+- MYP Y1:42: Brilliant https://brilliant.org/courses/exponents-and-radicals/exponents-and-number-line/exponents-number-line-4/ (score 0.053)
+- MYP Y1:42: Brilliant https://brilliant.org/courses/exponents-and-radicals/exponents-and-number-line/exponents-number-line-5/ (score 0.053)
+- MYP Y1:42: Brilliant https://brilliant.org/courses/exponents-and-radicals/exponents-and-number-line/exponents-number-line-6/ (score 0.053)
+- MYP Y1:42: Brilliant https://brilliant.org/courses/exponents-and-radicals/exponents-and-number-line/exponent-number-line-7/ (score 0.050)
+- MYP Y1:43: Brilliant https://brilliant.org/courses/exponents-and-radicals/higher-powers-and-roots/higher-powers-1/ (score 0.083)
+- MYP Y1:43: Brilliant https://brilliant.org/courses/exponents-and-radicals/higher-powers-and-roots/higher-powers-3c/ (score 0.083)
+- MYP Y1:43: Brilliant https://brilliant.org/courses/exponents-and-radicals/higher-powers-and-roots/higher-powers-2/ (score 0.083)
+- MYP Y1:43: Brilliant https://brilliant.org/courses/exponents-and-radicals/higher-powers-and-roots/higher-powers-6/ (score 0.083)
+- MYP Y1:43: Brilliant https://brilliant.org/courses/exponents-and-radicals/higher-powers-and-roots/higher-powers-8/ (score 0.083)
+- MYP Y1:43: Brilliant https://brilliant.org/courses/exponents-and-radicals/higher-powers-and-roots/higher-powers-7/ (score 0.083)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/quadratic-patterns/quadratic-and-linear/ (score 0.067)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/quadratic-patterns/rectangle-patterns/ (score 0.067)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/quadratic-patterns/rectangle-patterns-2/ (score 0.067)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/exponential-patterns/building-exponential-2/ (score 0.067)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/exponential-patterns/writing-exponential/ (score 0.067)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/linear-or-exponential/exponential-patterns-2/ (score 0.067)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/linear-expressions/patterns-constant/ (score 0.063)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/linear-expressions/patterns-constant-2/ (score 0.063)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/linear-expressions/patterns-constant-5/ (score 0.063)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/building-linear/patterns-constant-6/ (score 0.063)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/building-linear/patterns-constant-3/ (score 0.063)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/quadratic-patterns/pattern-punch/ (score 0.063)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/exponential-patterns/zero-power/ (score 0.063)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/linear-expressions/pattern-expression/ (score 0.000)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/linear-expressions/pattern-expression-2/ (score 0.000)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/building-linear/pattern-mix/ (score 0.000)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/quadratic-expressions/linear-and-constant/ (score 0.000)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/quadratic-expressions/linear-and-constant-2/ (score 0.000)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/quadratic-expressions/shift-steps/ (score 0.000)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/quadratic-expressions/take-a-bite/ (score 0.000)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/quadratic-expressions/the-frame/ (score 0.000)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/quadratic-expressions/monster-jaw/ (score 0.000)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/quadratic-growth/different-growth/ (score 0.000)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/quadratic-growth/different-growth-2/ (score 0.000)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/quadratic-growth/triangular-numbers/ (score 0.000)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/quadratic-growth/different-growth-3/ (score 0.000)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/quadratic-growth/linear-or-quadratic/ (score 0.000)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/quadratic-growth/linear-or-quadratic-2/ (score 0.000)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/quadratic-growth/quadratic-vs-linear/ (score 0.000)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/linear-or-exponential/growth-factors-2/ (score 0.000)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/linear-or-exponential/building-exponential/ (score 0.000)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/linear-or-exponential/building-linear/ (score 0.000)
+- MYP Y1:44: Brilliant https://brilliant.org/courses/systems-of-equations/linear-or-exponential/kinds-of-growth/ (score 0.000)
+- MYP Y1:49: Brilliant https://brilliant.org/courses/pre-algebra/factoring/factoring-4-ss-exp/ (score 0.000)
+- MYP Y1:49: Brilliant https://brilliant.org/courses/pre-algebra/factoring/strategic-moves-ss-exp/ (score 0.000)
+- MYP Y1:49: Brilliant https://brilliant.org/courses/pre-algebra/combining-and-rearranging/combining-like-terms-new-1/ (score 0.000)
+- MYP Y1:49: Brilliant https://brilliant.org/courses/pre-algebra/combining-and-rearranging/combining-like-terms-new-2/ (score 0.000)
+- MYP Y1:49: Brilliant https://brilliant.org/courses/pre-algebra/combining-and-rearranging/shifting-terms-new/ (score 0.000)
+- MYP Y1:49: Brilliant https://brilliant.org/courses/pre-algebra/combining-and-rearranging/shifting-terms-in-equations/ (score 0.000)
+- MYP Y1:49: Brilliant https://brilliant.org/courses/pre-algebra/combining-and-rearranging/bringing-it-together-2/ (score 0.000)
+- MYP Y1:49: Brilliant https://brilliant.org/courses/pre-algebra/combining-and-rearranging/bringing-it-together/ (score 0.000)
+- MYP Y1:50: Brilliant https://brilliant.org/courses/pre-algebra/solving-equations/groups-in-equations/ (score 0.000)
+- MYP Y1:50: Brilliant https://brilliant.org/courses/pre-algebra/solving-equations/isolating-groups-2-ss-exp/ (score 0.000)
+- MYP Y1:50: Brilliant https://brilliant.org/courses/pre-algebra/solving-equations/solving-with-groups-ss-exp/ (score 0.000)
+- MYP Y1:50: Brilliant https://brilliant.org/courses/pre-algebra/solving-equations/distributing-3-ss-exp/ (score 0.000)
+- MYP Y1:50: Brilliant https://brilliant.org/courses/pre-algebra/solving-equations/distributing-2-ss-exp/ (score 0.000)
+- MYP Y1:50: Brilliant https://brilliant.org/courses/pre-algebra/reasoning-by-balancing/reasoning-building-1/ (score 0.000)
+- MYP Y1:50: Brilliant https://brilliant.org/courses/pre-algebra/reasoning-by-balancing/reasoning-building-3/ (score 0.000)
+- MYP Y1:50: Brilliant https://brilliant.org/courses/pre-algebra/reasoning-by-balancing/reasoning-building-2/ (score 0.000)
+- MYP Y1:50: Brilliant https://brilliant.org/courses/pre-algebra/reasoning-by-balancing/reasoning-building-7/ (score 0.000)
+- MYP Y1:50: Brilliant https://brilliant.org/courses/pre-algebra/reasoning-by-balancing/reasoning-building-5/ (score 0.000)
+- MYP Y1:50: Brilliant https://brilliant.org/courses/pre-algebra/reasoning-by-balancing/reasoning-building-10/ (score 0.000)
+- MYP Y1:50: Brilliant https://brilliant.org/courses/pre-algebra/reasoning-about-equations/consequences/ (score 0.000)
+- MYP Y1:50: Brilliant https://brilliant.org/courses/pre-algebra/reasoning-about-equations/consequences-5/ (score 0.000)
+- MYP Y1:50: Brilliant https://brilliant.org/courses/pre-algebra/reasoning-about-equations/strategic-comparisons/ (score 0.000)
+- MYP Y1:50: Brilliant https://brilliant.org/courses/pre-algebra/reasoning-about-equations/consequences-3/ (score 0.000)
+- MYP Y1:50: Brilliant https://brilliant.org/courses/pre-algebra/reasoning-about-equations/consequences-4/ (score 0.000)
+- MYP Y1:52: Brilliant https://brilliant.org/courses/linear-functions/computing-slope/coordinates-to-slope/ (score 0.032)
+- MYP Y1:52: Brilliant https://brilliant.org/courses/linear-functions/writing-linear-expressions/graphing-linear-functions-2/ (score 0.032)
+- MYP Y1:52: Brilliant https://brilliant.org/courses/linear-functions/equations-of-lines/find-b/ (score 0.032)
+- MYP Y1:52: Brilliant https://brilliant.org/courses/linear-functions/equations-of-lines/find-mx/ (score 0.032)
+- MYP Y1:52: Brilliant https://brilliant.org/courses/linear-functions/constant-change/points-on-a-line/ (score 0.031)
+- MYP Y1:52: Brilliant https://brilliant.org/courses/linear-functions/constant-change/removing-objects/ (score 0.031)
+- MYP Y1:52: Brilliant https://brilliant.org/courses/linear-functions/making-linear-predictions/rates-from-points/ (score 0.031)
+- MYP Y1:52: Brilliant https://brilliant.org/courses/linear-functions/computing-slope/vertical-change/ (score 0.031)
+- MYP Y1:52: Brilliant https://brilliant.org/courses/linear-functions/computing-slope/fractional-slopes/ (score 0.031)
+- MYP Y1:52: Brilliant https://brilliant.org/courses/linear-functions/computing-slope/graph-a-line/ (score 0.031)
+- MYP Y1:52: Brilliant https://brilliant.org/courses/linear-functions/computing-slope/slope-complete-computation/ (score 0.031)
+- MYP Y1:52: Brilliant https://brilliant.org/courses/linear-functions/writing-linear-expressions/base-fees/ (score 0.031)
+- … (81 more)
+
+## Removed (Deduplication)
+
+- Removed entries: 8
+- Kept in MYP Y1:9, removed from MYP Y1:10: KA https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division
+- Kept in MYP Y1:14, removed from MYP Y1:13: KA https://www.khanacademy.org/math/cc-fourth-grade-math/imp-place-value-and-rounding
+- Kept in MYP Y1:42, removed from MYP Y1:34: KA https://www.khanacademy.org/math/cc-fifth-grade-math/powers-of-ten
+- Kept in MYP Y1:60, removed from MYP Y1:61: KA https://www.khanacademy.org/kmap/measurement-and-data-d/represent-interpret-data
+- Kept in PYP Y2:48, removed from PYP Y2:46: KA https://www.khanacademy.org/math/cc-fifth-grade-math/volume/volume_word_problems
+- Kept in MYP Y1:34, removed from MYP Y1:42: Brilliant https://brilliant.org/courses/exponents-and-radicals/exponents-and-number-line/exponents-number-line-1/
+- Kept in PYP Y2:43, removed from MYP Y1:40: Brilliant https://brilliant.org/courses/geometry-fundamentals/areas/calculating-area-6/
+- Kept in MYP Y1:40, removed from PYP Y2:43: Brilliant https://brilliant.org/courses/geometry-fundamentals/areas/polygon-areas-2/
+
+## Duplicates Kept (Min Coverage)
+
+- (KA) https://www.khanacademy.org/math/cc-fourth-grade-math/comparing-fractions-and-equivalent-fractions
+  - kept in: MYP Y1:5, MYP Y1:6
+  - reason: min-coverage
+- (KA) https://www.khanacademy.org/math/cc-fourth-grade-math/cc-4th-mult-div-topic
+  - kept in: MYP Y1:9, MYP Y1:11, MYP Y1:12
+  - reason: min-coverage
+- (KA) https://www.khanacademy.org/math/cc-fourth-grade-math/cc-4th-add-sub-topic
+  - kept in: MYP Y1:11, MYP Y1:12
+  - reason: min-coverage
+- (KA) https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2
+  - kept in: PYP Y2:20, PYP Y2:16
+  - reason: min-coverage
+- (KA) https://www.khanacademy.org/math/cc-fourth-grade-math/cc-4th-fractions-topic
+  - kept in: PYP Y2:35, PYP Y2:28
+  - reason: min-coverage
+- (KA) https://www.khanacademy.org/math/arithmetic-home/arith-review-fractions/mixed-number
+  - kept in: PYP Y2:33, PYP Y2:34
+  - reason: min-coverage

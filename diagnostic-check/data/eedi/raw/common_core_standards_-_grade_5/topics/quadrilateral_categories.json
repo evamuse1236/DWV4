@@ -1,0 +1,153 @@
+{
+  "shortcode": "bikj",
+  "name": "Quadrilateral categories",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 105,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify a square from a description of the properties",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify a rhombus from a description of the properties",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify a kite from a description of the properties",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158489,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/997b075a-a19c-4287-9511-fd80f349de5d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might be mixing up properties - a rhombus has four equal sides, but not always four equal angles. Which shape here has 4 angles that are all 90 degrees?",
+        "B": "To be a square, a shape must have four equal sides and four equal angles, each 90 degrees.",
+        "C": "A trapezoid can have 0 or 2 right angles. Which shape here must have 4 right angles?",
+        "D": "A parallelogram can have four right angles but only in special cases. Which shape here always has four right angles?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158649,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/57434508-ce37-4dc1-8457-157e8b0c1890.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To be a rectangle, a shape must have 2 pairs of equal sides and four equal angles, each 90 degrees.",
+        "B": "I think you might be mixing up properties - a rhombus has four equal sides, but not always four equal angles. Which shape here has 4 angles that are all 90 degrees?",
+        "C": "A parallelogram can have four right angles but only in special cases. Which shape here always has four right angles?",
+        "D": "A trapezoid can have 0 or 2 right angles. Which shape here must have 4 right angles?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158490,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8918fffc-d83e-4e4c-a2a6-c8a17ccaf83f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Is a rhombus the only shape here with two pairs of parallel sides?",
+        "B": "Is a square the only shape here with two pairs of parallel sides?",
+        "C": "Is a parallelogram the only shape here with two pairs of parallel sides?",
+        "D": "All of these shapes have two pairs of sides that are parallel to each other, like train tracks."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158650,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ec10fca6-b725-475f-aae9-ab267edb02a2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A rhombus has two pairs of parallel sides. Which shape listed here only has ONE pair of parallel sides?",
+        "B": "A trapezoid has one pair of sides that are parallel to each other, like train tracks.",
+        "C": "A parallelogram has two pairs of parallel sides. Which shape listed here only has ONE pair of parallel sides?",
+        "D": "A square has two pairs of parallel sides. Which shape listed here only has ONE pair of parallel sides?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158491,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f8b21181-9a55-44ed-b22f-0d9df9a5a85b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A kite can have 4 equal sides, but only in special cases. Which shape (or shapes) always has all its sides equal?",
+        "B": "Is a square the only shape here with four equal sides?",
+        "C": "Is a rhombus the only shape here with four equal sides?",
+        "D": "The properties of squares and rhombuses both include having four equal sides."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158651,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/435d5158-0077-4634-95dc-e1e68673b963.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A kite has two pairs of equal angles, not 4 equal angles. Which shape listed has 4 equal angles?",
+        "B": "The properties of a square include having four equal angles.",
+        "C": "I think you might be confusing sides and angles: a rhombus has 4 equal sides but two pairs of equal angles. Which shape listed has 4 equal ANGLES?",
+        "D": "A trapezoid can have 0 equal angles or 2 pairs of equal angles but never 4 equal angles. Which shape listed has 4 equal angles?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158492,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e0a43f4e-14bc-4116-86bf-8ed0e3c8c9ec.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A kite has adjacent sides of equal length (sides that are next to each other), not opposite sides of equal length.",
+        "B": "We're looking for the shape whose opposite sides are not equal. All these shapes have pairs of equal sides, but in one shape they aren't opposite each other...",
+        "C": "We're looking for the shape whose opposite sides are not equal. All these shapes have pairs of equal sides, but in one shape they aren't opposite each other...",
+        "D": "We're looking for the shape whose opposite sides are not equal. All these shapes have pairs of equal sides, but in one shape they aren't opposite each other..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158652,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d82f7108-1ebb-4b89-95cb-0c2a075d3b88.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Is a parallelogram the only shape with opposite sides of equal length?",
+        "B": "Is a rectangle the only shape with opposite sides of equal length?",
+        "C": "Is a rhombus the only shape with opposite sides of equal length?",
+        "D": "All of these shapes have opposite sides of equal length."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158493,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/16ff0f93-e2c9-4d40-9b4d-62d9d77baebb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A trapezoid must have two parallel sides - the other two sides are not parallel, but the question asks for shapes with no parallel sides at all.",
+        "B": "A rectangle has two pairs of parallel sides. Remember parallel sides go in the same direction like train tracks. Which shape here can have no parallel sides?",
+        "C": "A kite has two pairs of equal sides but no parallel sides, except in special cases.",
+        "D": "A square has two pairs of parallel sides. Remember parallel sides go in the same direction like train tracks. Which shape here can have no parallel sides?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158653,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/99693ff9-12f3-4b6f-a80a-f2f0849e9ae6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A trapezoid is a quadrilateral with at least one pair of parallel sides, it has one special case (parallelogram) where it has two pairs of parallel sides but because it does not ALWAYS have to have two pairs of parallel sides, like rectangles and squares, it's the correct answer here!",
+        "B": "The properties of a rectangle include having two pairs of parallel sides, like train tracks. We are looking for a shape that does not always have to have two pairs of parallel sides...",
+        "C": "The properties of a square include having two pairs of parallel sides, like train tracks. We are looking for a shape that does not always have to have two pairs of parallel sides...",
+        "D": "The properties of squares and rectangles include having two pairs of parallel sides, like train tracks. We are looking for the opposite - a shape that does not always have to have two pairs of parallel sides..."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

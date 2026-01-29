@@ -1,0 +1,153 @@
+{
+  "shortcode": "vx6",
+  "name": "Probability of combined events",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 248,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate the probability of two independent events occurring without drawing a tree diagram",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the probability of two dependent events occurring without drawing a tree diagram",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate probabilities using a sample space diagram",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 77874,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3ce12ffd-68ac-408b-bf38-255ee6dfc57a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There are four outcomes; HT, TH, HH, TT. 2/4 of the outcomes give one Head and one Tail. 2/4 = 1/2. So, the probability of getting one head and one tail is 1/2.",
+        "B": "Not quite. There are more than 3 outcomes in this experiment. Can you find them all? If you get a Head on the first coin, what could you get on the second? What if you get a Tail on the first coin, what could you get on the second?",
+        "C": "Not quite. There are more than 3 outcomes in this experiment. Can you find them all? If you get a Head on the first coin, what could you get on the second? What if you get a Tail on the first coin, what could you get on the second?",
+        "D": "So close! You have found the correct number of outcomes but how many of these outcomes consist of you getting one head and one tail?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78045,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/afb0b216-6dab-4663-bb61-610177d1785b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There are four outcomes; HT, TH, HH, TT. 1/4 of the outcomes give two Heads. So, the probability of getting two heads is 1/4.",
+        "B": "Not quite. 1/2 of the outcomes of this experiment do NOT consist of getting two Heads. How many outcomes are there? How many of these outcomes consist of getting two Heads?",
+        "C": "Not quite. There are more than 3 outcomes in this experiment. Can you find them all? If you get a Head on the first coin, what could you get on the second? What if you get a Tail on the first coin, what could you get on the second?",
+        "D": "Not quite. There are more than 3 outcomes in this experiment. Can you find them all? If you get a Head on the first coin, what could you get on the second? What if you get a Tail on the first coin, what could you get on the second?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 77875,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3786bccd-0e84-4ac1-855a-d43b006c685f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "2 and 12 appear only once in the table of possible outcomes, so they are the least likely.",
+        "B": "Not quite. 7 is the most likely outcome as 7 occurs most in the table. Which outcome is the least likely?",
+        "C": "Not quite. The table shows there are 5 ways you could get a 6, this is not the least likely. Which outcome is the least likely?",
+        "D": "Not quite. Not all outcomes are equally likely. The table shows you are more likely to get a 4 than a 3 as there are more ways you can get a 4. Using the table, which of these outcomes is least likely?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78046,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c222eae2-db92-4aa4-b72d-2e81bde80416.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. This is the least likely outcome, as a 2 or a 12 only occurs twice in the table. Which outcome is most likely?",
+        "B": "Rolling a 7 appears 6 times in the grid, making it the most likely.",
+        "C": "Not quite. The table shows there are 5 ways you could get a 6, this is not the most likely. Which outcome is the most likely?",
+        "D": "Not quite. Not all outcomes are equally likely. The table shows you are more likely to get a 4 than a 3 as there are more ways you can get a 4. Using the table, which of these outcomes is most likely?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 77876,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eca6adc0-866d-42f2-81ec-cb71523ed0af.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. To find the probability we need to multiply rather than add. As well this, think about how many cards there would be after you have picked the first card? Would there still be 52?",
+        "B": "There are 4 aces, so the probability of getting the first ace is 4/52. As there are now 3 aces and 51 cards, the next probability is 3/51. Multiplying the two together gives the full probability.",
+        "C": "So close! How many cards would be in the pack after you have picked the first ace?",
+        "D": "So close! How many aces would be in the pack after you have picked the first ace?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78047,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/81b84072-c1c2-45d1-ba6e-3c2e719c2e5f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. This is the probability of picking a 5 of hearts OR a 9 of hearts. To find the probability of picking ANY two hearts from a pack of cards you need to first find the probability of picking one heart and multiply it with the probability of picking another heart given the fact you have taken one out already.",
+        "B": "So close! How many cards would be in the pack after you have picked the first heart?",
+        "C": "So close! How many hearts would be in the pack after you have picked the first one?",
+        "D": "As there are 13 hearts, the probability of picking one heart is 13/52. The probability of picking a second heart is 12/51, as we have removed one of the hearts from the pack. We then multiply them together to get the answer."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 77877,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e218040c-ee7c-4f02-ad33-c60f86a14beb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful! I think you have tried to add the denominators. To find the probability of getting a 1 on the first spinner AND a 1 on the second spinner we need to multiply.",
+        "B": "We need to get 1 on both spinners, so the probability is 1/4 × 1/5 (as there are 4 outcomes on the first spinner and 5 on the second). This gives 1/20.",
+        "C": "Be careful! I think you have tried to add the fractions. To find the probability of getting a 1 on the first spinner AND a 1 on the second spinner we need to multiply.",
+        "D": "So close! You have found the correct number of outcomes. Look again at how many ways (out of the 20) you can get a 1 on the first spinner and a 1 on the second spinner."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78048,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0c4cef80-6963-4ab2-ab82-db82481abca3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We would need to get 1 on both spinners, so the probability is 1/4 × 1/5 (as there are 4 outcomes on the first spinner and 5 on the second). This gives 1/20.",
+        "B": "Not quite. A numerator of 2 tells us that there are two ways of getting a total of 2 when you spin each of the spinners and add the scores together. This is not the case. Listing the outcomes using a sample space diagram will help you find how many ways you can get a total of 2 as well as the total number of outcomes.",
+        "C": "Not quite. A numerator of 4 tells us that there are four ways of getting a total of 2 when you spin each of the spinners and add the scores together. This is not the case. Listing the outcomes using a sample space diagram will help you find how many ways you can get a total of 2 as well as the total number of outcomes.",
+        "D": "Not quite. A numerator of 2 tells us that there are two ways of getting a total of 2 when you spin each of the spinners and add the scores together. This is not the case. Listing the outcomes using a sample space diagram will help you find how many ways you can get a total of 2."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 77878,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5743185c-aa8d-469e-b733-616efd560406.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We have 0.2 × 0.6 = 0.12.",
+        "B": "Not quite. These events are not equally likely. To find the probability that Shane goes to the cinema AND Niamh goes bowling we need to multiply the probabilities.",
+        "C": "Not quite. I think you added the probabilities rather than multiplied.",
+        "D": "So close! 2 x 0.6 = 1.2.What would 0.2 x 0.6 equal?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78049,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e872dfdc-24e4-4b38-a7a4-19873a8b9652.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. I think you added the probabilities rather than multiplied.",
+        "B": "So close! 3 x 0.5 = 1.5. What would 0.3 x 0.5 equal?",
+        "C": "We have 0.3 × 0.5 = 0.15.",
+        "D": "Not quite. These events are not equally likely. To find the probability that Shane goes to the cinema AND Niamh goes bowling we need to multiply the probabilities."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

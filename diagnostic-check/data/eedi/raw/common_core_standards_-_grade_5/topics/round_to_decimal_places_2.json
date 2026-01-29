@@ -1,0 +1,153 @@
+{
+  "shortcode": "biif",
+  "name": "Round to decimal places 2",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 19,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Round numbers to one decimal place",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Round numbers to two decimal places",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Round numbers to three or more decimal places",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 75961,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d2d126bd-09a9-42b6-9611-886499ca1e60.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, think carefully about the digit after .1 and what effect that has on your answer.",
+        "B": "There are 7 hundredths, and so because 7 is a 5 or above, we have rounded the 1 tenth up to 2 tenths, giving us an answer of 154.2.",
+        "C": "You're very close! Think carefully about which digits are affected here by rounding.",
+        "D": "Not quite. Think carefully about which digits are affected here by rounding. Make sure to check the digit after the 1 to see whether you round up or not."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 76109,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ee2b8197-560a-458c-aaaa-c9933333f8cf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There are 6 hundredths, and so because 6 is 5 or above, we have rounded the 2 tenths up to 3 tenths, giving us an answer of 58.3",
+        "B": "Not quite, think carefully about the number in the hundredths column and what effect that has on your answer.",
+        "C": "You're very close! Think carefully about which digits are affected here by rounding.",
+        "D": "Not quite. Think carefully about which digits are affected here by rounding. Make sure to check the digit after the 2 to see whether you round up or not."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 104608,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8f4d85fa-cf7e-46b5-864e-28c6515e555e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You're very close. Make sure your answer shows that you have rounded to 1 decimal place, and still has a number in the tenths column.",
+        "B": "When rounding to 1 decimal place, anything beyond the tenths column is not kept. In this case, because the digit in the hundredths column is a 4, we can keep the tenths value the same. This means your answer is 0.0. It is important to keep one zero after the decimal point to show this is rounded to 1 decimal place.",
+        "C": "Nearly! Remember to check whether the number in the hundredths column is 5 or above, and if not then the tenths column stays the same.",
+        "D": "Not quite! You've actually rounded to two decimal places here instead of one :) Make sure you only have one digit after the decimal point."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104616,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8bbfe88b-19be-4682-a63a-b3a782c906d1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You're very close. Make sure your answer shows that you have rounded to 1 decimal place, and still has a number in the tenths column.",
+        "B": "Not quite! You've actually rounded to two decimal places here instead of one :) Make sure you only have one digit after the decimal point.",
+        "C": "I think you've forgotten a digit! Make sure you keep all the digits up to the tenths column",
+        "D": "When rounding to 1 decimal place, anything beyond the tenths column is not kept. In this case, because the digit in the hundredths column is a 2, we can keep the tenths value the same. This means your answer is 9.0. It is important to keep one zero after the decimal point to show this is rounded to 1 decimal place."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 104609,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f36e9287-dd33-4d8a-bbe9-ae6d16356718.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, think carefully about the digit in the thousandths column and what effect that has on your answer.",
+        "B": "There are 6 thousandths, and so because 6 is 5 or above, we have to round the 1 hundredth up to 2 hundredths, giving us an answer of 3.52.",
+        "C": "Not quite. Think carefully about which digits are affected here by rounding. Make sure to check the digit after the 1 to see whether you round up or not.",
+        "D": "You're very close! Think carefully about which digits are affected here by rounding."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104617,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/90b15b01-839c-4882-8ab8-779ced685fa3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, think carefully about the digit in the thousandths column and what effect that has on your answer.",
+        "B": "There are 8 thousandths, and so because 8 is 5 or above, we have to round the 7 hundredths up to 8 hundredths, giving us an answer of 11.48.",
+        "C": "Not quite. Think carefully about which digits are affected here by rounding.",
+        "D": "Not quite. Think carefully about which digits are affected here by rounding."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 104610,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/804eef74-edf6-4881-9cab-f5382e33a1fd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you had the correct method but forgot to carry. Have a think about where 0.9999 and 0.10 would be on a number line to understand where this may have gone wrong.",
+        "B": "You're very close. Make sure your answer shows that you have rounded to 2 decimal places, and still has digits in the tenths and hundredths columns.",
+        "C": "Nearly! Remember to check whether the number in the thousandths column is 5 or above, and if it will affect the number before it.",
+        "D": "This answer is correct :) There are 9 thousandths, and so because 9 is 5 or above, we have to round the 9 hundredth up to 10 hundredths, which is 1 tenth. That extra tenth then adds to the 9 tenths already there, giving us 10 tenths, which is 1 unit. This extra unit carries over to the 0 units and gives us an answer of 1.00. Notice that it is important to have two digits after the decimal point to show we've rounded to 2dp."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104618,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ffde06a8-b31e-4d74-86aa-6cccca9e9ef9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You're almost there! 9 hundredths does round to 10 hundredths, but it doesn't become 10.10",
+        "B": "You're very close! Remember to show clearly that you've rounded to 2 decimal places",
+        "C": "Make sure you've looked at the digit in the thousandths column and how rounding will affect the number before it.",
+        "D": "This answer is correct :) There are 5 thousandths, and so because 5 is 5 or above, we have to round the 9 hundredths up to 10 hundredths, which is 1 tenth. That extra tenth then adds to the 9 tenths already there, giving us 10 tenths, which is 1 unit. This extra unit carries over to the 0 units and gives us an overall answer of 11.00. Notice that it is important to have two digits after the decimal point to show we've rounded to 2dp."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 104611,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/045bca2c-171b-404f-a8a7-6ccde0907528.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This answer is correct :) When rounding to three decimal places, you look to the fourth digit after the point (the 10 thousandths column), and if that number is a 5 or above then the digit in the thousandths column increases by 1, if not then the thousandths column stays the same. Here, 4 is less than 5, and so the 3 thousandths stay as they are. Giving an answer 20.153",
+        "B": "Almost, you've rounded to two decimal places here",
+        "C": "Not quite, remember to check if the fourth digit after the point is a 5 or above, only then will it affect the digits before. You can ignore the 5th digit after the point",
+        "D": "Not exactly, only the 3rd digit after the point may be affected in this question."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104619,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0132d48a-2aef-46ee-a6d2-c83e1d5df219.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not exactly, only the 3rd digit after the point may be affected in this question.",
+        "B": "Almost, you've rounded to two decimal places!",
+        "C": "Remember to check whether the 4th digit after the point is a 5 or above, and use this to decide if the thousandths column will be affected.",
+        "D": "This answer is correct :) When rounding to three decimal places, you look to the fourth digit after the point (the 10 thousandths column), and if that number is a 5 or above then the digit in the thousandths column increases by 1, if not then the thousandths column stays the same. Here, 8 is more than 5, and so the 6 thousandths increase by 1 to become 7 thousandths. Everything else stays the same, giving an answer 29.157."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

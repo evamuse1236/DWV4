@@ -1,0 +1,159 @@
+{
+  "shortcode": "bi84",
+  "name": "Adding and subtracting 10 and 100 mentally",
+  "collectionId": 35,
+  "level": 1,
+  "sequence": 20,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Find 10 more than a given number",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find 100 more than a given number",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find 10 less than a given number",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find 100 less than a given number",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 156172,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cc94f255-39c4-4051-9c2a-6b9066b11bdb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "More than is another phrase meaning addition, so we would add 10 on. 248 + 10 = 258. We have increased the digit in the tens column by 1.",
+        "B": "I think you have multiplied by 10. The question asks you what is 10 MORE than 248. More than means adding on.",
+        "C": "I think you have confused place value columns. We are adding on 10 more, not 100 more. Which digit is the tens column?",
+        "D": "I think you have confused place value columns. We are adding 10 more, not 1 more. Which digit is the tens column?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 156190,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/12bf1bf4-0521-4f58-b805-cc519abc4f38.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have multiplied by 10. The question asks you what is 10 MORE than 312. More than means adding on.",
+        "B": "More than is another phrase meaning addition, so we would add 10 on. 312 + 10 = 322. We have increased the digit in the tens column by 1.",
+        "C": "I think you have confused place value columns. We are adding 10 more, not 100. Which digit is the tens column?",
+        "D": "I think you have confused place value columns. We are adding 10 more, not 1 more. Which digit is the tens column?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 156174,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bde4c0f6-8b63-4996-845e-85778f345d46.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have confused place value columns. Which digit is the hundreds column?",
+        "B": "More than' means adding on, so we would be adding on 100. We could do this by increasing the digit in the hundreds column by 1. 2 + 1 = 3, so the answer would be 348.",
+        "C": "I think you have confused place value columns. Which digit is the hundreds column?",
+        "D": "I think you have multiplied by 100. The question asks you what is 100 MORE than 248. More than means adding on."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 156192,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a2b6eb2c-a3eb-4c65-a221-74c86485cfd0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have confused place value columns. Which digit is the hundreds column?",
+        "B": "I think you have confused place value columns. Which digit is the hundreds column?",
+        "C": "More than' means adding on, so we would be adding on 100. We could do this by increasing the digit in the hundreds column by 1. 7 + 1 = 8, so the answer would be 853.",
+        "D": "I think you have multiplied by 100. The question asks you what is 100 MORE than 753. More than means adding on."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 156202,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7fa344b7-d622-49d5-88fd-c7fc8282238c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have divided by 10. 'Less than' means subtraction. We need to subtract 10 from 345, not divide.",
+        "B": "I think you have confused place value columns. Which digit is the tens column?",
+        "C": "Less than' means subtracting, so we would be subtracting 10. We could do this by decreasing the digit in the tens column by 1. 4 - 1 = 3, so the answer would be 335.",
+        "D": "I think you have confused place value columns. Which digit is the tens column?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 156220,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/98a9530c-d785-4ac1-a5a8-0798a4896670.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have divided by 10. 'Less than' means subtraction. We need to subtract 10 from 84, not divide.",
+        "B": "I think you have confused place value columns. Which digit is the tens column?",
+        "C": "I think you have confused place value columns. Which digit is the tens column?",
+        "D": "Less than' means subtracting, so we would be subtracting 10. We could do this by decreasing the digit in the tens column by 1. 1 - 1 = 0, so the answer would be 706."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 156204,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/14ba685a-ef69-4d62-b953-ac3713f3a4f9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have divided by 100. 'Less than' means subtraction. We need to subtract 100 from 456, not divide.",
+        "B": "I think you have confused place value columns. Which digit is the hundreds column?",
+        "C": "I think you have confused place value columns. Which digit is the hundreds column?",
+        "D": "Less than' means subtracting, so we would be subtracting 100. We could do this by decreasing the digit in the hundreds column by 1. 4 - 1 = 3, so the answer would be 356."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 156222,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6a5b573-40b4-49e0-beeb-b9fb9abd87a5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have divided by 100. 'Less than' means subtraction. We need to subtract 100 from 937, not divide.",
+        "B": "Less than' means subtracting, so we would be subtracting 100. We could do this by decreasing the digit in the hundreds column by 1. 9 - 1 = 8, so the answer is 837.",
+        "C": "I think you have confused place value columns. Which digit is the hundreds column?",
+        "D": "I think you have confused place value columns. Which digit is the hundreds column?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 159340,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4061bd22-5b40-4766-8a12-955519ee7d7c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have added 10 to 403. This question is saying \"If we add 10 to this number, we get 403\", so what could the starting number be?",
+        "B": "We want the number that is 10 less than 403, not 100 less. Think about which digits need to change.",
+        "C": "393 is 10 less than 403, so 393 + 10 = 403. 393 replaces the star.",
+        "D": "Almost! But 493 + 10 = 503, so that's too big..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159562,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/47809e47-6116-4cb2-ba71-0813b532f049.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember to check your answer by substituting it back in. 502 - 10 = 492, we need an answer of 592.",
+        "B": "602 is 10 more than 592, so 602 - 10 = 592. 602 replaces the star.",
+        "C": "You have subtracted 10 from 592. This question is saying \"If we subtract 10 from this number, we get 592\", so what could the starting number be?",
+        "D": "We want the number that is 10 more than 592, not 100 more. Think about which digits need to change."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

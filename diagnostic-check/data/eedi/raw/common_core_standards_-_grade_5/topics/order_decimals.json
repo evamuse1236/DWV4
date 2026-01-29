@@ -1,0 +1,165 @@
+{
+  "shortcode": "biic",
+  "name": "Order decimals",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 16,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Recognise the place value of each digit in decimals",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Order decimals with the same number of digits",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Order decimals with a different number of digits",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use inequality notation to order decimals with the same number of digits ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use inequality notation to order decimals with a different number of digits",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 75905,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5dc330ee-3ad3-4c1e-86b6-83536a8f67e1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This answer is actually the smallest value. We can write 5 as 5.0000 which might help you see why it is smaller than the other values.",
+        "B": "This number is the greatest. All the numbers have a 5 in the units column so we look at the digit in the first decimal place. 2 is the largest number in this tenths position so 5.2 is greatest.",
+        "C": "I think you might have chosen the option that contains the largest number. However, when we compare numbers we work from left to right. This option has a 0 in the first decimal place. How does that compare to the other options?",
+        "D": "I think you might have chosen the longest option. However, when we compare numbers we work from left to right. This option has a 0 in the first decimal place. How does that compare to the other options?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 76053,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bfd3a4de-bbc5-4a37-b41f-6183907ed908.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This answer is actually the smallest value. We can write 7 as 7.0000 which might help you see why it is smaller than the other values.",
+        "B": "I think you might have chosen the option that contains the largest number. However, when we compare numbers we work from left to right. This option has a 0 in the first decimal place. How does that compare to the other options?",
+        "C": "This number is the greatest. All the numbers have a 7 in the units column so we look at the digit in the first decimal place. 3 is the largest number in this tenths position so 7.3 is greatest.",
+        "D": "I think you might have chosen the longest option. However, when we compare numbers we work from left to right. This option has a 0 in the first decimal place. How does that compare to the other options?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103670,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c6a14c3a-34e8-4044-887b-eee29665841d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Does adding a 0 on the end of 5.1 to make 5.10 change its value? For Katie, try and compare the number of units and tenths in each number.",
+        "B": "Looking at Tom's numbers, 5.1 and 5.10 are actually the same as we can ignore the 0 hundredths on 5.10. Therefore 5.1 is not larger than 5.10. Looking at Katie's and working from left to right, they have the same units but 5.1 has more tenths than 5.01 so it must be larger. Therefore only Katie is correct.",
+        "C": "Not quite. Does adding a 0 on the end of 5.1 to make 5.10 change its value?",
+        "D": "Not quite. Try and compare the number of units, tenths and hundredths in each number."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103680,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/86f8f537-c510-4f84-a78e-35cad0e65692.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Does adding a 0 on the end of 3.04 to make 3.040 change its value?",
+        "B": "Not quite. Try and compare the number of units, tenths, hundredths and thousandths in each number.",
+        "C": "Not quite. Does adding a 0 on the end of 3.04 to make 3.040 change its value? For Paul, try and compare the number of units, tenths and hundredths in each number.",
+        "D": "Looking at Jo's numbers, 3.040 and 3.04 are actually the same as we can ignore the 0 thousandths on 3.040. Therefore 3.040 is not larger than 3.04. Looking at Paul's and working from left to right, they have the same units and tenths but 3.04 has more hundredths than 3.014 so it must be larger rather than smaller. Therefore they are both incorrect."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129216,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c82f8d32-f0a4-43f1-894c-0f1fa79c02e4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have found the number in the hundreds column, we need the number in the hundredths column",
+        "B": "The 4 is in the tenths column. Which column will be hundredths?",
+        "C": "After the decimal point we have the tenths column, and then the hundredths column. That means the 5 is in the hundredths position",
+        "D": "Not quite. The 6 is in the thousandths column. Which column will be hundredths?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129076,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/13ad66e4-95da-4aba-bd1e-b9d1dc1c248f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have found the number in the tens column, we need the number in the tenths column",
+        "B": "Not quite, this is the units column. Which column will be tenths?",
+        "C": "After the decimal point we have the tenths column. That means the 4 is in the tenths position",
+        "D": "Not quite, the 5 is in the hundredths column. Which column is the tenths?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 132162,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e271b56d-1c03-40e6-b185-a83fae262211.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To compare Tom's numbers, write them on top of each other with the place value columns lined up. Covering up the \"0.\" at the start of each number might help you.",
+        "B": "Don't forget to consider the whole numbers as well as the decimal digits when comparing numbers.",
+        "C": "I think you might be confused about the direction of the inequalities. The larger number goes next to the open side of the symbol: for example, 4 < 6 or 20 > 1. You can think of the inequality symbol as being greedy, because it looks like an open mouth, trying to eat the bigger number.",
+        "D": "To compare decimals, we can write them on top of each other with the place value columns lined up. For Tom's numbers, we can cover up the zero and the point at the start because they are the same in both. The first digit after the decimal point is different in each number and 4 is greater than 1 so 0.42 must be greater than 0.15: we write this as 0.42 > 0.15. For Katie's numbers, we know that 2 is less than 4 so 2.51 must be less than 4.31: we write this as 2.51 < 4.31. So neither Tom nor Katie are correct because they both wrote the inequalities the wrong way."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 132072,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5c1f8e03-d4f4-4418-a18b-ba134050d819.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To compare decimals, we can write them on top of each other with the place value columns lined up. For Tom's numbers, we can cover up the zero and the point at the start because they are the same in both. The first digit after the decimal point is different in each number and 9 is greater than 8 so 0.91 must be greater than 0.82: we can write this as 0.82 < 0.91. For Katie's numbers, we know that 4 is less than 5 so 4.09 must be less than 5.03: we write this as 4.09 < 5.03. So only Katie is incorrect.",
+        "B": "I think you might be confused about the direction of the inequalities. The larger number goes next to the open side of the symbol: for example, 4 < 6 or 20 > 1. You can think of the inequality symbol as being greedy, because it looks like an open mouth, trying to eat the bigger number.",
+        "C": "Don't forget to consider the whole numbers as well as the decimal digits when comparing numbers.",
+        "D": "To compare each pair of numbers, write them on top of each other with the place value columns lined up. Covering up the \"0.\" at the start of Tom's numbers might help you."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 132179,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d3f6469b-7a50-4dc7-8736-c7adbef7a74d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we write the numbers on top of each other with the place columns lined up, it is easier to compare them. Starting from the left in the ones column, 2.022 is the largest because it is the only number that has a 2 instead of a zero in the ones column. Next we check the tenths column after the decimal point: 0.202 and 0.220 both have two tenths but 0.022 has no tenths, so 0.022 must be the smallest number. Finally we check the hundredths column to compare 0.202 and 0.220: 0.202 has no hundredths but 0.220 has two hundredths so 0.202 is smaller. So in order from the smallest, we have 0.022, 0.202, 0.220 and 2.022.",
+        "B": "Almost! The question asks us to start with the smallest number when we put them in order, not the largest.",
+        "C": "You are right that 2.022 is the largest. To compare the other numbers, write them on top of each other with the place value columns lined up. Covering up the \"0.\" at the start of each number might help you.",
+        "D": "Almost! You are right that 2.022 is the largest. To compare the other numbers, write them on top of each other with the place value columns lined up. Covering up the \"0.\" at the start of each number might help you."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 132071,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d45f9f22-fba9-4982-b8e2-4898fb2bc41f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost! The question asks us to start with the largest number when we put them in order, not the smallest.",
+        "B": "If we write the numbers on top of each other with the place columns lined up, it is easier to compare them. Starting from the left in the ones column, 2.026 is the largest because it is the only number that has a 2 instead of a zero in the ones column. Next we check the tenths column after the decimal point: 0.620 and 0.602 both have six tenths but 0.062 has no tenths, so 0.062 must be the smallest number. Finally we check the hundredths column to compare 0.602 and 0.620: 0.602 has no hundredths but 0.620 has two hundredths so 0.602 is smaller. So in order from the largest, we have 2.026, 0.620, 0.602 and 0.062.",
+        "C": "You are right that 2.026 is the largest. To compare the other numbers, write them on top of each other with the place value columns lined up. Covering up the \"0.\" at the start of each number might help you.",
+        "D": "Almost! You are right that 2.026 is the largest. To compare the other numbers, write them on top of each other with the place value columns lined up. Covering up the \"0.\" at the start of each number might help you."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

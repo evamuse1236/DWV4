@@ -1,0 +1,153 @@
+{
+  "shortcode": "bijb",
+  "name": "Add and subtract fractions 5",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 55,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Add proper fractions with different denominators which do not share a common factor",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Subtract proper fractions with different denominators where one is a multiple of the other",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Subtract proper fractions with different denominators which do not share a common factor",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 131431,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/01b6d2b4-2861-4513-b759-2d64f3ff46f6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To subtract the fractions, we need to find equivalent fractions with the same denominator. 4 and 3 are both factors of 12, so we can rewrite 3/4 as 9/12, and 1/3 as 4/12. 9-4 = 5, the denominator remains 12, giving an answer 5/12. Therefore the star will be replaced with a 5.",
+        "B": "Not quite . Before you subtract the fractions you must make sure they have a common denominator.",
+        "C": "I think you've misread the sign but done the rest of the calculation correctly! Make sure you've subtracted, rather than added.",
+        "D": "Not quite, I think you have tried to add the two fractions together, this question is asking you to subtract. Remember to give your fractions a common denominator before you subtract."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 148518,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6d642768-359b-43d3-bd59-d334093dfad1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've misread the sign but done the rest of the calculation correctly! Make sure you've subtracted, rather than added.",
+        "B": "Not quite, I think you have tried to add the two fractions together, this question is asking you to subtract. Remember to give your fractions a common denominator before you subtract.",
+        "C": "To subtract the fractions, we need to find equivalent fractions with the same denominator. 5 and 2 are both factors of 10, so we can rewrite 3/5 as 6/10, and 1/2 as 5/10. 6-5 = 1, the denominator remains 10, giving an answer 1/10. Therefore the star should be replaced with a 1.",
+        "D": "Not quite. Before you subtract the fractions you must make sure they have a common denominator."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131432,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a1a10ec0-9f95-4093-8b95-d9e5ec4aa0ca.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We could get the answer as a fraction over 30 but the numerator wouldn't be 1. Don't forget to simplify your answer.",
+        "B": "Before you can subtract the fractions, they must have a common denominator.",
+        "C": "I think you have found the difference between the denominators. Before you can subtract the fractions, they must have a common denominator.",
+        "D": "Before you can subtract the fractions, they must have a common denominator. 1/10=3/30, so we get 3/30 - 1/30. This gives us 2/30 which can be simplified to give 1/15."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133665,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6b3da9ed-bdb7-43cd-b22c-86cc27020493.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We could get the answer as a fraction over 12 but the numerator wouldn't be 2. Don't forget to simplify your answer.",
+        "B": "We could get the answer as a fraction over 48 but the numerator wouldn't be 2. Don't forget to simplify your answer.",
+        "C": "Before you can subtract the fractions, they must have a common denominator.",
+        "D": "Before you can subtract the fractions, they must have a common denominator. 3/4=9/12, so we get 9/12 - 1/12= 8/12 which can be simplified to give 2/3."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131433,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2ca3a263-c69f-48ce-8af1-c577021d24ee.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Before you can add two fractions together we must use equivalent fractions to give them a common denominator. The lowest common multiple of 3 and 10 is 30. 1/3 = 10/30 and 1/10 = 3/30. 10/30 + 3/30 = 13/30. So, the star should be replaced with a 13.",
+        "B": "Remember to give your fractions a common denominator before you add them together.",
+        "C": "I think you changed one fraction so it was over 30, but you forgot to change the other one. Both fractions need to have a denominator of 30 before you can add them.",
+        "D": "I think you changed one fraction so it was over 30, but you forgot to change the other one. Both fractions need to have a denominator of 30 before you can add them."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 148734,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/25ec6837-d31f-4c31-bb07-033e7f03177c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you changed one fraction so it was over 18, but you forgot to change the other one. Both fractions need to have a denominator of 18 before you can add them.",
+        "B": "I think you changed one fraction so it was over 18, but you forgot to change the other one. Both fractions need to have a denominator of 18 before you can add them.",
+        "C": "Before you can add two fractions together we must use equivalent fractions to give them a common denominator. The lowest common multiple of 2 and 9 is 18. 1/2 = 9/18 and 1/9 = 2/18. 9/18 + 2/18 = 11/18. So, the star should be replaced with an 11.",
+        "D": "Remember to give your fractions a common denominator before you add them together."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131434,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cfdbe9a2-c27f-4311-a261-60c742dc725f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To subtract the fractions, they must have the same denominator. We need to use equivalent fractions, so think about multiples of 7 and 3. What do 7 and 3 both go into?",
+        "B": "To subtract the fractions, they must have the same denominator. We need to use equivalent fractions. We could multiply the first fraction by 3/3 and the second by 7/7 to get a common denominator of 21. There is no whole number we can multiply by to go from 7 to 10, or 3 to 10. That means only Katie is correct.",
+        "C": "To subtract the fractions, they must have the same denominator. We need to use equivalent fractions, so think about multiples of 7 and 3. What do 7 and 3 both go into?",
+        "D": "At least one person is correct. To subtract the fractions, they must have the same denominator. We need to use equivalent fractions, so think about multiples of 7 and 3. What do 7 and 3 both go into?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133667,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b10986a4-fa87-4b2e-a7a3-9320a57f39e3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We need to use equivalent fractions, and to find these we need to multiply the numerators and denominators by the same amount. What do 6 and 3 both go into?",
+        "B": "We need to use equivalent fractions, and to find these we need to multiply the numerators and denominators by the same amount. What do 6 and 3 both go into?",
+        "C": "We need to use equivalent fractions, and to find these we need to multiply the numerators and denominators by the same amount. We could multiply the second fraction by 2/2 to have a common denominator so Tom is correct. Or we could multiply the fraction by 3/3 and the second by 6/6 to get a common denominator of 18. That means Katie is correct too.",
+        "D": "At least one person is correct. We need to use equivalent fractions, and to find these we need to multiply the numerators and denominators by the same amount. What do 6 and 3 both go into?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131435,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ce1cc0d7-ca50-4711-8a60-8dd4c64f80cf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is a subtraction sum. The two fractions must have the same denominator before doing the subtraction. Remember to find equivalent fractions for 2/3 and 1/10 with a denominator of 30, before doing the subtraction. Once the denominators are the same, simply subtract the numerators.",
+        "B": "The two fractions must have the same denominator before doing the subtraction. Remember to find equivalent fractions for both 2/3 and 1/10 with a denominator of 30, before doing the subtraction.",
+        "C": "To subtract the fractions, we need to find equivalent fractions with the same denominator. 3 and 10 are both factors of 30, so we can rewrite 2/3 as 20/30, and 1/10 as 3/30. 20-3 = 17, the denominator remains 30, giving an answer 17/30.",
+        "D": "The two fractions must have the same denominator before doing the subtraction. Remember to find equivalent fractions for 2/3 and 1/10 with a denominator of 30, before doing the subtraction."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133668,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/93d10d32-7b44-4b6b-b305-59ffe66c0f4a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We need the fractions to have a common denominator before we can subtract them. We can use a common denominator of 20 because 4 and 20 are both factors of 20. Remember to simplify your answer.",
+        "B": "I think you found equivalent fractions and did the subtraction, but you forgot to simplify the answer.",
+        "C": "I think you found equivalent fractions and did the subtraction, but didn't fully simplify the answer.",
+        "D": "We can use a common denominator of 20 because 4 and 20 are both factors of 20. 1/4 = 5/20. That means the question becomes 9/20 - 5/20 = 4/20. Then simplifying we get 4/20 = 1/5."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

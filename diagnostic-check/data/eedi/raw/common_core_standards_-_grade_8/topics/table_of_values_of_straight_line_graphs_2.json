@@ -1,0 +1,165 @@
+{
+  "shortcode": "v0b",
+  "name": "Table of values of straight line graphs 2",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 83,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Given a negative x value, find a y value in a table of values for lines in the form y = c - x ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given a positive y value, find an x value in a table of values for lines in the form y = c - x ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given a negative y value, find an x value in a table of values for lines in the form y = c - x ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given a positive x value, find a y value in a table of values for lines in the form y = mx + c ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given a positive y value, find an x value in a table of values for lines in the form y = mx + c",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 107297,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d6b37187-c2b8-4120-a878-fc64057751a8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have  tried to solve the equation and correctly worked out 9 - 3. However, you need to look carefully at the sign in front of the x.",
+        "B": "The table tells us that 𝑦 has a value of 9. Substituting this value into 𝑦 = 3 − 𝑥 gives 9 = 3 − ★. One way of solving this is to add ★ to both sides to give 9 + ★ = 3, then subtracting 9 from both sides gives ★ = 3 − 9 = −6.",
+        "C": "I think you have swapped the signs here. Remember, we need to substitute the value of 9 into y, and then solve the equation to obtain the correct value of x.",
+        "D": "I think you have calculated that 12 - 3 = 9, but when you are subtracting you cannot change the order. Remember, you need to substitute y = 9 into the equation, and solve to find x."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107317,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/be3c6739-e763-454b-a366-a1b107c7fef1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have swapped the signs here. Remember, we need to substitute the value of 8 into y, and then solve the equation to obtain the correct value of x.",
+        "B": "I think you have calculated that 14 - 6 = 8, but when you are subtracting you cannot change the order. Remember, you need to substitute y = 8 into the equation, and solve to find x.",
+        "C": "I think you have  tried to solve the equation and correctly worked out 8 - 6. However, you need to look carefully at the sign in front of the x",
+        "D": "The table tells us that 𝑦 has a value of 8. Substituting this value into 𝑦 = 6 − 𝑥 gives 8 = 6 − ★. One way of solving this is to add ★ to both sides to give 8 + ★ = 6, then subtracting 8 from both sides gives ★ = 6 − 8 = −2."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107298,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f3555c38-6396-49b7-a8a9-0192bf88af86.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have worked out the difference between 9 and 3, as you have seen those two values in the question. However, you need to substitute x = -9 into the equation in order to find the value of y. Be careful with the negative numbers here.",
+        "B": "I think you have calculated 3 - 9, but we need to find 3 - - 9. What happens when you have two minus signs next to each other?",
+        "C": "I think you have totalled 3 and 9 and then made the answer negative. However, you need to substitute x = -9 into the equation in order to find the value of y. Be careful with the negative numbers here.",
+        "D": "The table tells us that 𝑥 has a value of −9. Substituting this value into 𝑦 = 3 − 𝑥 gives ★ = 3 −(−9) = 3 + 9 = 12."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107318,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/032db23e-78da-4331-8ff3-72f8711f7423.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember, in this equation you need to use substitution. So, replace x in the equation with -8. Be careful with the negative numbers.",
+        "B": "The table tells us that 𝑥 has a value of −8. Substituting this value into 𝑦 = 6 − 𝑥 gives ★ = 6 −(−8) = 6 + 8 = 14.",
+        "C": "I think you have worked out the difference between 8 and 6, as you have seen those two values in the question. However, you need to substitute x = -8 into the equation in order to find the value of y. Be careful with the negative numbers here.",
+        "D": "I think you have calculated 6 - 8, but we need to find 6 - - 8. What happens when you have two minus signs next to each other?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107299,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d25d8d30-7ac7-42a9-9894-42f2f847225d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have worked out the difference between 9 and 3, as you have seen those two values in the question. However, you need to substitute y = -9 into the equation in order to find the value of x. Be careful with the negative numbers here.",
+        "B": "I think you have added 3 to -9. However, you need to substitute y = -9 into the equation in order to find the value of x. Be careful with the negative numbers here.",
+        "C": "I think you have  tried to solve the equation and correctly worked out -9 - 3. However, you need to look carefully at the sign in front of the x",
+        "D": "The table tells us that 𝑦 has a value of −9. Substituting this value into 𝑦 = 3 − 𝑥 gives −9 = 3 − ★. One way of solving this is to add ★ to both sides to give −9 + ★ = 3, then adding 9 to both sides gives ★ = 3 + 9 = 12."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107319,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/917666c2-c3b4-4a51-8ef0-9f0935f3b336.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember, in this equation you need to use substitution. So, replace y in the equation with -8. Be careful with the negative numbers.",
+        "B": "The table tells us that 𝑦 has a value of −8. Substituting this value into 𝑦 = 6 − 𝑥 gives −8 = 6 − ★. One way of solving this is to add ★ to both sides to give −8 + ★ = 6, then adding 8 to both sides gives ★ = 6 + 8 = 14.",
+        "C": "I think you have worked out the difference between 6 and 8, as you have seen those two values in the question. However, you need to substitute y = -8 into the equation in order to find the value of x. Be careful with the negative numbers here.",
+        "D": "I think you have calculated 6 - 8. Remember, this is a substitute question. You need to replace the y with -8, and solve the equation in order to obtain a value for x."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107300,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/be59fc85-b7b9-4675-a21b-d514ff84b3eb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember, in this equation you need to use substitution. So, replace x in the equation with 9.",
+        "B": "I think you have replaced the x with 9, and read that as the number 39. However, the expression 3x means 3 multiplied by x.",
+        "C": "The table tells us that 𝑥 has a value of 9. Substituting this value into 𝑦 = 3𝑥 gives ★ = 3 × 9 = 27.",
+        "D": "I think you have substituted y = 9 into the equation. Have another look at the table and the values you are given."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107320,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ac348f45-5bf9-48d2-b656-eb2cd731b6b0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have replaced the x with 8, and read that as the number 68. However, the expression 6x means 6 multiplied by x.",
+        "B": "The table tells us that 𝑥 has a value of 8. Substituting this value into 𝑦 = 6𝑥 gives ★ = 6 × 8 = 48.",
+        "C": "I think you have substituted y = 8 into the equation. Have another look at the table and the values you are given.",
+        "D": "I think you have found the sum of 6 and 8. However, 6x does not mean 6 + x. Do you remember what the relationship between 6 and x is in the expression 6x?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107301,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/854efdf9-7e4b-4344-b229-5792e5b141ad.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have correctly substituted y = 9 into the equation. However, you have then subtracted 3. Think carefully about which inverse operation you need to use to solve the equation.",
+        "B": "I think you have replaced the x with 9, and read that as the number 39. However, the expression 3x means 3 multiplied by x. Also, check the table carefully - are you actually given the value of x?",
+        "C": "I think you have substituted x = 9 into the equation. Be careful - look closely at the table. Which value have you been given?",
+        "D": "The table tells us that 𝑦 has a value of 9. Substituting this value into 𝑦 = 3𝑥 gives 9 = 3 × ★. To solve this divide both sides by 3 to give ★ = 9/3 = 3."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107321,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5ba5942e-76c0-4c1f-b1bf-115106ded5e8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have replaced the x with 8, and read that as the number 68. However, the expression 6x means 6 multiplied by x. Also, check the table carefully - are you actually given the value of x?",
+        "B": "I think you have substituted x = 8 into the equation. Be careful - look closely at the table. Which value have you been given?",
+        "C": "The table tells us that 𝑦 has a value of 8. Substituting this value into 𝑦 = 6𝑥 gives 8 = 6 × ★. To solve this divide both sides by 6 to give ★ = 8/6.",
+        "D": "I think you have added the 6 and 8. Remember, in this equation you need to use substitution. So, replace y in the equation with 8 and then solve the equation to obtain the value of x."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

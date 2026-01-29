@@ -1,0 +1,147 @@
+{
+  "shortcode": "vx7",
+  "name": "Probability tree diagrams with dependent events 1",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 249,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Fill in the probabilities of the second branch of a tree diagram representing dependent events where these probabilities are fractions",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify the branches that give the correct answer to a tree diagram question representing independent events",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 109486,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/217301e2-f235-4e5e-9032-c4397318dd86.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Keep going! This is one of the correct paths, but there are others that result in an outcome of at least 1 black counter too",
+        "B": "Paths 2, 3 and 4 all include at least one black counter.",
+        "C": "Keep going! This are two correct paths, but there is another that results in an outcome of at least 1 black counter too",
+        "D": "Almost! You have given the paths which result in 1 black counter, however the question asks for any that result in 'at least' 1 black counter."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 109497,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/312add8e-75df-4948-9d91-b4ce209cdcaf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Keep going! This is one for the correct paths, but there are others that result in an outcome of at least 1 red counter too",
+        "B": "Keep going! This are two correct paths, but there is another that results in an outcome of at least 1 red counter too",
+        "C": "Almost! You have given the paths which result in 1 red counter, however the question asks for any that result in 'at least' 1 red counter.",
+        "D": "Paths 1, 2 and 3 all include at least one red counter."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 109487,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dfe139e6-596b-4d6c-be52-5f3d07e468c7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Path 4 is the outcome of picking black on each pick, which would give us 2 black counters rather than 1.",
+        "B": "Almost! You have given the paths with at least one black counter here, whereas we only need the paths that give exactly one.",
+        "C": "Not quite! Path 4 is the outcome of picking black on each pick, which would give us 2 black counters rather than 1. We want the paths where you would pick only 1 black counter overall.",
+        "D": "Both Paths 2 and 3 have exactly one black counter."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 109498,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fecc4a9e-c444-4bfc-9880-a140a41c5e39.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Both Paths 2 and 3 have exactly one red counter.",
+        "B": "Keep going! This is one for the correct paths, but there is another that results in an outcome of 1 red counter too",
+        "C": "Not quite! Path 1 is the outcome of picking red on each pick, which would give us 2 red counters rather than 1. We want the paths where you would pick only 1 red counter overall.",
+        "D": "Have another think! Path 4 is the outcome of picking black on each pick, which would give us 2 black counters and no red ones. Path 1 is the outcome of picking red on each pick, which would give us 2 red counters. We want all those that give exactly 1 red one."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 109488,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2e8e0735-7668-4783-beb1-a60a8c299e3a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The first counter picked was red, so how many black counters are still in the bag at second pick?",
+        "B": "Remember, the counters are not replaced after the first pick, therefore how many counters are left in the bag to pick from at second pick?",
+        "C": "The first counter picked was red, so how many black counters are still in the bag? Remember the counters are not replaced after the first pick, so how many counters are left in the bag?",
+        "D": "One red has been taken, so there are still 5 black counters left, but the total number of counters is now one less: 11 – 1 = 10. This means that the probability that replaces the star is 5/10."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 109499,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a865b702-ef82-458a-87f3-1954a1584c30.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember the counters are not replaced after the first pick. How many counters are left in the bag?",
+        "B": "The first counter taken was red, so how many black counters are still in the bag? The counters are not replaced, so how many counters are left in the bag?",
+        "C": "One red has been taken, so the number of black counters is still 6, but the total number of counters is one less: 15 – 1 = 14. This means that the probability that replaces the star is 6/14.",
+        "D": "The first counter was red, so how many black counters are still in the bag?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 109489,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/735d29c1-bf19-4085-a526-b8b793cfc61f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The first counter picked was black, that means we only have 4 black counters left. There were 11 counters in total, but the picked counter has been kept so now we have 10 counters left. That means the star should be replaced by 4/10.",
+        "B": "Remember the counters are not replaced after the first pick, so how many counters are left in the bag, and how many of those left will be black?",
+        "C": "Remember the counters are not replaced after the first pick, so how many counters are left in the bag?",
+        "D": "The first counter picked was black, so how many black counters are still in the bag at second pick?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 109500,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8cce65f7-60d4-4c94-abdd-35073d555017.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The first counter picked was black, so how many black counters are still in the bag at second pick?",
+        "B": "The first counter picked was black, that means we only have 5 black counters left. There were 15 counters in total, but the picked counter has been kept so now we have 14 counters left. That means the star should be replaced by 5/14.",
+        "C": "Remember the counters are not replaced after the first pick. How many counters are left in the bag, and how many of those left will be black?",
+        "D": "Remember the counters are not replaced after the first pick. How many counters are left in the bag?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 109490,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/34915ad9-1b23-4a0c-8164-e4018b350f61.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The first counter picked was black, so how many red counters are still in the bag at second pick?",
+        "B": "Remember the counters are not replaced after the first pick. How many counters are left in the bag to choose from?",
+        "C": "The first counter picked was black, so how many red counters are still in the bag at second pick? Remember the counters are not replaced after the first pick, how many counters are left in the bag?",
+        "D": "One black counter has been taken, so the number of red counters is still 6, but the total number of counters is 11 – 1 = 10. This means that the probability that replaces the star is 6/10."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 109501,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ab8f0dde-7c69-41e6-aaac-daecb758b051.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The first counter picked was black, so how many red counters are still in the bag? Remember, the counters are not replaced after the first pick, so how many counters are left in the bag?",
+        "B": "The first counter picked was black, so how many red counters are still in the bag at second pick?",
+        "C": "As one black counter has been taken, the number of red counters is still 9, but the total number of counters is 15 – 1 = 14. This means that the probability that replaces the star is 9/14.",
+        "D": "Remember the counters are not replaced after the first pick, so how many counters are left in the bag?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

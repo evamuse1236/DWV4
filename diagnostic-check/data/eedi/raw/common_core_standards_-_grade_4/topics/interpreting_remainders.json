@@ -1,0 +1,141 @@
+{
+  "shortcode": "bifm",
+  "name": "Interpreting remainders",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 6,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Interpret remainders from written division problems",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 102223,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/00912036-defd-4df6-a719-e52e732e9069.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We need a whole number of teachers. Does r6 make sense in this context?",
+        "B": "321 ÷ 7 = 45 r6 = 45 and 6/7 = 45.857... This means 321 students can be split into 45 groups of 7 and 1 group of 6. Having 45 teachers would leave the group of 6 without a teacher. So we need 46 teachers.",
+        "C": "We need a whole number of teachers. Is it possible to have 6/7 of a teacher?",
+        "D": "Not quite, think carefully about which way we need to round our answer. Is 45 x 7 more than the number of children?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 102233,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6983dbf3-71a7-4b7b-b513-5b213f504a4d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We need a whole number of crates. Does r7 make sense in this context?",
+        "B": "Not quite, think carefully about which way we need to round our answer. Is 54 x 8 more than the number of tins of paint?",
+        "C": "We need a whole number of crates. Is it possible to have 7/8 of a crate?",
+        "D": "439 ÷ 8 = 54 r7 = 54 and 7/8 = 54.875. This means 439 tins of paint can be split into 54 groups of 8 and 1 group of 7. Having 54 crates would leave the group of 7 unpacked. So we need 55 crates."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 102224,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/84369711-f0a5-497f-8a05-403d6a903b6d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "473 ÷ 6 = 78 r5. This means 473 apples can be split into 78 whole packs and 1 pack of 5 apples. We are only interested in whole packs. This means the answer is 78.",
+        "B": "We are looking for the number of whole packs. Should our answer be a whole number or a decimal?",
+        "C": "Not quite. I think you have included a partial pack in your answer.",
+        "D": "Not quite, this is the answer to 473 ÷ 6. We are looking for the number of whole packs. Should our answer be a whole number or a decimal?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 102234,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/056f22d7-7d42-4c1b-8d74-d55f5549a8cb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "823 ÷ 4 = 205 r3. This means 823 tyres can be split into 205 groups of 4 and 1 group of 3. Each car needs 4 tyres and so we only count the groups of 4. This means the answer is 205.",
+        "B": "We are looking the number of cars that can be refitted with a complete set of 4 tyres. Does r3 make sense in this context?",
+        "C": "Not quite. I think you have included a partial set of tyres in your answer.",
+        "D": "We are looking for the number of complete sets of tyres. Should our answer be a whole number or a decimal?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158055,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e311cb00-f91e-46a8-a5a0-acdc11992c24.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the correct, exact value but you cannot buy a quarter of a drink in a shop, so how many can Dave buy?",
+        "B": "I think you have used the remainder as your answer but the quotient is how many drinks Dave can buy...",
+        "C": "17 ÷ 4 = 4.25 which shows Dave can buy 4 full drinks from the shop",
+        "D": "I think you have incorrectly rounded your answer up. Do 17 ÷ 4 and the whole number is how many drinks Dave can buy..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158222,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5fcfa01b-8354-4c43-acbf-eec048aaf07f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have used the remainder as your answer but the quotient is how many drinks Mark can buy...",
+        "B": "23 ÷ 3 = 7.67 which shows Mark can buy 7 full drinks from the shop",
+        "C": "This is the correct, exact value but you cannot buy two thirds of a drink in a shop, so how many can Mark buy?",
+        "D": "I think you have incorrectly rounded your answer up. Do 23 ÷ 3 and the whole number is how many drinks Mark can buy..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158056,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/54974b74-44e5-42b8-bde0-a611b7294523.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have accidentally used the remainder as your answer but this would only give 10 hot dogs. How many packs does Gemma need to make 27?",
+        "B": "I think you have rounded down but 5 packs would be 25 hot dogs, Gemma needs 27. How many packs does she need to buy?",
+        "C": "This is the correct answer when doing 27 ÷ 5 however you cannot buy .4 of a pack of hot dogs so how many packs does Gemma need to buy?",
+        "D": "27 ÷ 5 = 5.4 so Gemma needs to buy 6 packs of hot dogs to have enough for her son's party."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158223,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2ec1f215-811d-4b7a-b70f-ccf0376a2f7b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "25 ÷ 8 = 3.125 so Addyson needs to buy 4 packs of hot dogs to have enough for her son's party.",
+        "B": "This is the correct answer when doing 25 ÷ 8 however you cannot buy .125 of a pack of hot dogs so how many packs does Addyson need to buy?",
+        "C": "I think you have rounded down but 3 packs would be 24 hot dogs, Addyson needs 25. How many packs does she need to buy?",
+        "D": "I think you have accidentally used the remainder as your answer but this would only give 8 hot dogs. How many packs does Addyson need to make 25?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158057,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/750eba21-393d-4d2c-a4a6-6644f4386ac0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have used the remainder as your answer but the quotient is how many strawberries each child gets...",
+        "B": "39 ÷ 4 = 9.75 so each child gets 9 strawberries",
+        "C": "This is the correct, exact value but you cannot have 0.75 of a strawberry so how many whole strawberries does each child get?",
+        "D": "I think you have incorrectly rounded your answer up. Do 39 ÷ 4 and the whole number is how many strawberries each child gets..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158224,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bfd072a8-635c-4f74-bbae-c0da761fb8b3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the correct, exact value but you cannot have 0.8 of a strawberry so how many whole strawberries does each child get?",
+        "B": "I think you have used the remainder as your answer but the quotient is how many strawberries each child gets...",
+        "C": "I think you have incorrectly rounded your answer up. Do 44 ÷ 5 and the whole number is how many strawberries each child gets...",
+        "D": "44 ÷ 5 = 8.8 so each child gets 8 strawberries"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

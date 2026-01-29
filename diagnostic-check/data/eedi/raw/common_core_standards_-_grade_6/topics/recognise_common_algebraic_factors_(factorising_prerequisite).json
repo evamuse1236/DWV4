@@ -1,0 +1,141 @@
+{
+  "shortcode": "vp5",
+  "name": "Recognise common algebraic factors (factorising prerequisite)",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 163,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify factors of algebraic expressions",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 135282,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b72a3b35-367a-478c-adf8-807c9788a1b2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost! Factors are numbers or algebraic expressions that go into other numbers. Ask yourself whether 𝑥 goes into both 6𝑥 and 9𝑥.",
+        "B": "Almost! Factors are numbers or algebraic expressions that go into other numbers. Ask yourself whether 3 goes into both 6𝑥 and 9𝑥.",
+        "C": "Both are correct because both 3 and 𝑥 go into 6𝑥 and 9𝑥. Because 3 is the highest numerical factor and 𝑥 the highest algebraic factor, we could say that 3𝑥 is the highest common factor of 6𝑥 and 9𝑥.",
+        "D": "Factors are numbers or algebraic expressions that go into other numbers. For Tom's statement, ask whether 3 goes into both 6𝑥 and 9𝑥, and for Katie's, ask whether 𝑥 goes into both 6𝑥 and 9𝑥."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135302,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bfbbe84b-ef67-4029-8c7a-b7bec58c289c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Put another way, does 2 go into both 18 and 13? And think also about whether 𝑥 goes into both 18𝑥 and 13𝑥.",
+        "B": "Only Katie is correct because 18𝑥 ÷ 𝑥 = 18 and 13𝑥 ÷ 𝑥 = 13, both whole number answers, meaning 𝑥 is a factor of both. However, for Tom's statement, 13𝑥 ÷ 2 = 6.5𝑥, an answer that is not a whole number, meaning 2 is not a factor.",
+        "C": "Not quite! Tom's statement put slightly differently is 'does 2 go into both 18 and 13'?",
+        "D": "Not quite! Factors are numbers or algebraic expressions that go into other numbers, so ask yourself whether 𝑥 goes into both 18𝑥 and 13𝑥."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135283,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a5da8a58-5e91-41ea-aa5b-1fee53f08878.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Only Tom is correct because 6𝑥 ÷ 3 = 2𝑥 and 9𝑦 ÷ 3 = 3, both whole number answers, meaning 3 is a factor of both. For Katie's statement, 𝑥 and 𝑦 have been given different symbols to indicate that there is no relationship between the two, so we know 𝑥 is not a factor of 9𝑦.",
+        "B": "Not quite! Factors are numbers or algebraic expressions that go into other numbers. Ask yourself whether 3 goes into both 6𝑥 and 9𝑦, and if 𝑥 goes into both 6𝑥 and 9𝑦",
+        "C": "Not quite! Factors are numbers or algebraic expressions that go into other numbers. Ask yourself whether 3 goes into both 6𝑥 and 9𝑦, and if 𝑥 goes into both 6𝑥 and 9𝑦",
+        "D": "Not quite! Factors are numbers or algebraic expressions that go into other numbers. Ask yourself whether 3 goes into both 6𝑥 and 9𝑦, and if 𝑥 goes into both 6𝑥 and 9𝑦"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135303,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d700190d-c38f-4a18-a332-68c867b68a62.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Have another run-through of your 3 times table.",
+        "B": "Not quite! Factors are numbers or algebraic expressions that go into other numbers. How do you know 𝑥 goes into 9𝑦?",
+        "C": "Not quite! For Tom's statement, have another run-through of your 3 times table. For Katie's, can you be sure that 𝑥 goes into 9𝑦?",
+        "D": "Neither is correct because for Tom's statement, 3 does not go into 29𝑦, and For Katie's 𝑥 does not go into 9𝑦 (the different letters indicate this)."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135284,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9113b77b-468a-4067-94a8-23dfb3c4dcd8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost! Factors are numbers or algebraic expressions that go into other numbers. Ask yourself whether 𝑥 goes into both 6𝑥 and 9𝑥².",
+        "B": "Almost! Factors are numbers or algebraic expressions that go into other numbers. Ask yourself whether 3 goes into both 6𝑥 and 9𝑥².",
+        "C": "Both are correct because both 3 and 𝑥 go into 6𝑥 and 9𝑥². Because 3 is the highest numerical factor and 𝑥 the highest algebraic factor, we could say that 3𝑥 is the highest common factor of 6𝑥 and 9𝑥².",
+        "D": "Factors are numbers or algebraic expressions that go into other numbers. For Tom's statement, ask whether 3 goes into both 6𝑥 and 9𝑥², and for Katie's, ask whether 𝑥 goes into both 6𝑥 and 9𝑥²."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135304,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dc4672ae-df01-4492-97bc-1215c0c357d4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Put another way, does 3 go into both 4 and 12? And think also about whether 𝑥 goes into both 4𝑥 and 12𝑥².",
+        "B": "Only Katie is correct because 4𝑥 ÷ 𝑥 = 4 and 12𝑥² ÷ 𝑥 = 12𝑥, both whole number answers, meaning 𝑥 is a factor of both. However, for Tom's statement, 4𝑥 ÷ 3 = 1.333..𝑥, an answer that is not a whole number, meaning 3 is not a factor.",
+        "C": "Not quite! Tom's statement put slightly differently is 'does 3 go into both 4 and 12?'",
+        "D": "Not quite! Factors are numbers or algebraic expressions that go into other numbers, so ask yourself whether 𝑥 goes into both 4𝑥 and 12𝑥²."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135285,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/173503f8-26ef-4894-9868-e8e3428f4350.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Have another run-through of your 4 times table.",
+        "B": "Not quite! Factors are numbers or algebraic expressions that go into other numbers. How do you know 𝑦 goes into 6𝑥?",
+        "C": "Not quite! For Tom's statement, have another run-through of your 4 times table. For Katie's, can you be sure that 𝑦 goes into 6𝑥?",
+        "D": "Neither is correct because for Tom's statement, 4 does not go into 6 or 9, and For Katie's 𝑦 does not go into 6𝑥 (the different letters indicate this)."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135305,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a07c99c2-8881-4060-aa06-1a0bde8cccbd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Only Tom is correct because 12𝑥 ÷ 3 = 4𝑥 and 15𝑦² ÷ 3 = 5𝑦², both whole number answers, meaning 3 is a factor of both. For Katie's statement, 𝑥 and 𝑦 have been given different symbols to indicate that there is no relationship between the two, so we know 𝑥 is not a factor of 15𝑦².",
+        "B": "Not quite! Factors are numbers or algebraic expressions that go into other numbers. Ask yourself whether 3 goes into both 6𝑥 and 9𝑦, and how do you know 𝑥 goes into 9𝑦?",
+        "C": "Almost! Factors are numbers or algebraic expressions that go into other numbers. How do you know 𝑥 goes into 9𝑦?",
+        "D": "Not quite! Factors are numbers or algebraic expressions that go into other numbers. With this in mind, will 3 goes into both 6𝑥 and 9𝑦."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135286,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/391763f5-2dce-4951-8025-84844909f26e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Put another way, does 4 go into both 6 and 9? And think also about whether 𝑦 goes into both 6𝑥𝑦 and 9𝑦².",
+        "B": "Only Katie is correct because 6𝑥𝑦 ÷ 𝑦 = 6𝑥 and 9𝑦² ÷ 𝑦 = 9𝑦, both whole number answers, meaning 𝑦 is a factor of both. However, for Tom's statement, 6𝑥𝑦 ÷ 4 = 1.5𝑥𝑦 , an answer that is not a whole number, meaning 4 is not a factor of 6𝑥𝑦. A similar argument applies for it not being a factor of 9𝑦².",
+        "C": "Not quite! Tom's statement put slightly differently is 'does 4 go into both 6 and 9?'",
+        "D": "Not quite! Factors are numbers or algebraic expressions that go into other numbers, so ask yourself whether 𝑦 goes into both 6𝑥𝑦 and 9𝑦²."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135306,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/573a3ea7-0122-4759-9b62-e4e1543814ce.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost! Factors are numbers or algebraic expressions that go into other numbers. Ask yourself whether 𝑦 goes into both 6𝑥𝑦 and 9𝑦².",
+        "B": "Almost! Factors are numbers or algebraic expressions that go into other numbers. Ask yourself whether 4 goes into both 12𝑥𝑦 and 28𝑦².",
+        "C": "Both are correct. For Tom's statement, 4 goes into 12 and 28, so will be a factor of 12𝑥𝑦 and 28y². For Katie's, 6𝑥𝑦 ÷ 𝑦 = 6𝑥 and 9𝑦² ÷ 𝑦 = 9𝑦, both whole number answers, meaning 𝑦 is a factor of both.",
+        "D": "Factors are numbers or algebraic expressions that go into other numbers. For Tom's statement, ask whether 4 goes into both 12𝑥𝑦 and 28𝑦², and for Katie's, ask whether 𝑦 goes into both 6𝑥𝑦 and 9𝑦²."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

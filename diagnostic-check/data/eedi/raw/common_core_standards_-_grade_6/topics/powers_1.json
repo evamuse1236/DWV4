@@ -1,0 +1,165 @@
+{
+  "shortcode": "vo5",
+  "name": "Powers 1",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 122,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Recognise cube numbers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the square of a number",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the cube of a number",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Change an integer base number to another integer base number with a positive integer power",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the volume of a cube",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 76719,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b008d898-00a6-4b44-9fdf-2848c2468f5c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember squaring means multiplying the number by itself. So if you imagine a square with side length 3 to help you, you would need to work out the area of that square, not its perimeter.",
+        "B": "A power of 2 is not the same as multiplying by 2. It means you must multiply the number by itself.",
+        "C": "A power of 2 means we have to square the number, multiplying it by itself. So we have 3² = 3 × 3 = 9.",
+        "D": "A power of 2 is not the same as adding 2. It means you must multiply the number by itself."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78787,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8d513a0c-7387-41ef-a7d9-626cf0b91a7b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A power of 2 means we have to square the number, multiplying it by itself. So we have 4² = 4×4 = 16.",
+        "B": "A power of 2 is not the same as multiplying by 2. It means you must multiply the number by itself.",
+        "C": "A power of 2 is not the same as adding 2. It means you must multiply the number by itself.",
+        "D": "I think you've forgotten to use the power of 2, remember a power of two, or squaring means you must multiply the number by itself."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 76721,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b5de1d8c-bb75-41ba-a0d4-1341cc62552c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "8 is a cube number, as 2³ = 2 x 2 x 2 = 8.",
+        "B": "15 is a multiple of 3, but not a cube number. To find a cube number, you multiply a number by itself 3 times, for example, 10 x 10 x 10 = 1000.",
+        "C": "100 is a square number, but not a cube number. To find a cube number, you multiply a number by itself 3 times, for example, 10 x 10 x 10 = 1000.",
+        "D": "I think you've remembered that 3 is the power to find a cube number, however 3 isn't a cube number itself. To find a cube number, you multiply a number by itself 3 times, for example, 10 x 10 x 10 = 1000."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78789,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db794b01-91ae-47fa-a234-48343da9a6cb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've remembered that 3 is the power to find a cube number, however 3 isn't a cube number itself. To find a cube number, you multiply a number by itself 3 times, for example, 10 x 10 x 10 = 1000.",
+        "B": "36 is a square number, but not a cube number. To find a cube number, you multiply a number by itself 3 times, for example, 10 x 10 x 10 = 1000.",
+        "C": "4³ = 4 x 4 x 4 = 64, so 64 is a cube number (as well as being a square number! )",
+        "D": "21 is a multiple of 3, but not a cube number. To find a cube number, you multiply a number by itself 3 times, for example, 10 x 10 x 10 = 1000."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 99533,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/df6765e8-121f-45f9-b371-6161b106bb90.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've added 3 and 3 together. The smaller 3 is a power, and means we have to cube 3.",
+        "B": "I think you've multiplied 3 and 3 together. The smaller 3 is a power, and means we have to cube 3.",
+        "C": "Three cubed, or 3³ = 3 ✕ 3 ✕ 3 = 9 ✕ 3 = 27.",
+        "D": "I think you've stuck 3 and 3 together. The smaller 3 is a power, and means we have to cube 3."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 122886,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/08c71261-e5aa-4e25-a7c0-9d0f0800efce.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've multiplied 4 and 3 together. The 3 is a power, and means we have to cube 3.",
+        "B": "This means 4 cubed, so 4³ = 4 x 4 x 4 = 64",
+        "C": "I think you've added 4 and 3 together. The 3 is a power, and means we have to cube 4.",
+        "D": "I think you've stuck 4 and 3 together. The 3 is a power, and means we have to cube 4."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 99534,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f8b1fd67-0a3e-4829-b7a7-09681bbb5bf5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This problem can be thought of in a number of different ways: one would be to think about the shape being four layers of small cubes, with each layer containing 4 ✕ 4 = 16 cubes. This gives a total of 4 ✕ 16 = 64 cubes.",
+        "B": "I think you've counted the cubes you can see, try thinking about this as layers of cubes on top of each other to make a whole cube.",
+        "C": "You seem to have found the number of cubes on one face. Try thinking about that as one layer, how many layers are there?",
+        "D": "I think you have counted the number of cubes you can see. Try thinking of this as layers of cubes instead."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 99548,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/955e9a72-42fa-43f5-a45b-baa7144f8e6e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've found the number of cubes on one face and multiplied by 4. Think of this as layers of cubes, how many layers are there?",
+        "B": "This problem can be thought of in a number of different ways: one way would be to think about the shape being three layers of small cubes, with each layer containing 3 ✕ 3 = 9 cubes. This gives a total of 3 ✕ 9 = 27 cubes.",
+        "C": "I think you have counted the number of cubes you can see. Try thinking of this as layers of cubes instead.",
+        "D": "You seem to have found the number of cubes on one face. Try thinking about that as one layer, how many layers are there?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 99535,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/93b82b42-d8e5-452a-8da9-6877fa660b8e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To check who is correct, it might be easiest to calculate the answers to 2⁶ and 4³ and 8², and see which answers are equivalent.",
+        "B": "To check who is correct, it might be easiest to calculate the answers to 2⁶ and 4³ and 8², and see which answers are equivalent.",
+        "C": "4³ can be written as (2²)³ which simplifies to 2⁶ as we multiply a power of a power. So therefore Tom is correct. 8² can be written as (2³)² which simplifies to 2⁶ so Katie is also correct. You can also think of this as 2 x 2 x 2 x 2 x 2 x 2, and grouping the twos in different ways (2x2) x (2x2) x (2x2) = 4 x 4 x 4 = 4³, and (2x2x2) x (2x2x2) = 8 x 8 = 8².",
+        "D": "To check who is correct, it might be easiest to calculate the answers to 2⁶ and 4³ and 8², and see which answers are equivalent."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 99549,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5321019c-4484-4c24-8798-39d60abdc453.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "9⁴ can be written as (3²)⁴ which simplifies to 3⁸ as we multiply a power of a power. So therefore Jo is correct. 3² x 3² would give us 3⁴, not 9⁴. so Paul is incorrect. You can also think of this as 9 x 9 x 9 x 9, and rewriting the 9's as 3x3: (3x3) x (3x3) x (3x3) x (3x3), which is the same as 3⁸.",
+        "B": "I think you've made a mistake in your calculation. To help, you could try finding out the values to 9⁴ and 3⁸ and 3² to find out which ones might be equal.",
+        "C": "I think you've made a mistake in your calculation. To help, you could try finding out the values to 9⁴ and 3⁸ and 3² to find out which ones might be equal.",
+        "D": "I think you've made a mistake in your calculation. To help, you could try finding out the values to 9⁴ and 3⁸ and 3² to find out which ones might be equal."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

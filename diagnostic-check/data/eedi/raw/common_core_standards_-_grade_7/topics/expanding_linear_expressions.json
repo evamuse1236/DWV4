@@ -1,0 +1,141 @@
+{
+  "shortcode": "efld",
+  "name": "Expanding Linear Expressions",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 132,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Multiply a single term over a bracket where the term on the outside is a number and the inside contains a linear expression",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166293,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f5b61030-3d45-419e-a04e-0754c72a08d4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Close but remember that we are doing -5 x -10 here. What do we get when we multiply two negatives?",
+        "B": "-5 x 8𝑥 = -40𝑥 and -5 x -10 = + 50. Therefore, the whole expression would be -40𝑥 + 50",
+        "C": "I think you might have forgotten to multiply the -10 too!",
+        "D": "I think you might have forgotten to multiply the 8𝑥 too!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166520,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6c4aa505-347c-46b4-b4b8-95fb699d9eba.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "-6 x 7𝑥 = -42𝑥 and -6 x -9 = + 54. Therefore, the expression would be -42𝑥 + 54.",
+        "B": "Not quite - here we have -6 multiplied by -9. If we multiply two negatives together, what does that give us?",
+        "C": "I think you might have forgotten to multiply the 7𝑥 here!",
+        "D": "I think you might have forgotten to multiply the -9 here!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166294,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4109bcd3-2e44-437c-85a7-5a48c25f0ebc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This one actually is equivalent because 2(___) means 2 times that thing, and this expression gives us 2 lots of the expression in the parenthesis.",
+        "B": "When we expand parentheses, we need to multiply all terms from inside by what we have on the outside. In this expression, only the -3𝑥 is being multiplied by 2, so this is not equivalent to the expression given.",
+        "C": "Not quite! When we expand parentheses, we multiply both terms inside by what is on the outside, and if we did that to the one given in the question, we would get this expression.",
+        "D": "This expression shows both -3𝑥 and + 4 being multiplied by 2, which is exactly the same thing that this expression shows by using the parentheses!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166521,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4960fc44-c4ee-4c83-a6b6-26fad9e5f258.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This expression shows both -4𝑥 and + 5 being multiplied by 3, which is exactly the same thing that this expression shows by using the parentheses!",
+        "B": "Not quite! When we expand parentheses, we multiply both terms inside by what is on the outside, and if we did that to the one given in the question, we would get this expression.",
+        "C": "When we expand parentheses, we need to multiply all terms from inside by what we have on the outside. In this expression, only the -4𝑥 is being multiplied by 3, so this is not equivalent to the expression given.",
+        "D": "This one actually is equivalent because 3(___) means 3 times that thing, and this expression gives us 3 lots of the expression in the parenthesis."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166295,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bbc58918-cf00-4209-b35d-3b17e627d88e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "-𝑥 times 1/2 is -1/2𝑥, and 44 x 1/2 is 22, so the expression would be -1/2𝑥 + 22.",
+        "B": "Careful - I think you've missed a negative sign somewhere!",
+        "C": "It seems like you've applied the negative symbol to both terms, but the +44 and the 1/2 are both positive terms so when multiplied should still give a positive.",
+        "D": "I think you've forgotten to multiply the 44 too!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166522,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/514b491d-5bd7-48cb-8985-012404123ffa.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Careful - I think you've missed a negative sign somewhere!",
+        "B": "It seems like you've applied the negative symbol to both terms, but the 48 and the 1/4 are both positive terms so when multiplied should still give a positive.",
+        "C": "I think you've forgotten to multiply the 48 too!",
+        "D": "-𝑥 times 1/4 is -1/4𝑥, and 48 x 1/4 is 12, so the expression would be -1/4𝑥 + 12."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166296,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/15c857aa-9790-46b3-9368-c8c57479e2e9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Can you spot something important in one of these expressions that is different than in the others?",
+        "B": "This one actually is equivalent because 2(___) means 2 times that thing, and this expression gives us 2 lots of the expression in the parentheses.",
+        "C": "The difference between this one and the others is that it is equivalent to 10x + 18, whereas the rest give us 10x - 18! Therefore, this is the odd one out.",
+        "D": "Not quite! When we expand parentheses, we multiply both terms inside by what is on the outside, and by doing that we can see how this answer relates to at least one other one in this question!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166523,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/54d6b005-c1db-42c0-a624-a20b82de1fc9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Can you spot something important in one of these expressions that is different than in the others?",
+        "B": "Not quite! When we expand parentheses, we multiply both terms inside by what is on the outside, and by doing that we can see how this answer relates to at least one other one in this question!",
+        "C": "The difference between this one and the others is that it is equivalent to 12x + 6, whereas the rest give us 12x - 6! Therefore, this is the odd one out.",
+        "D": "This one actually is equivalent because 3(___) means 3 times that thing, and this expression gives us 3 lots of the expression in the parentheses."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166297,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ac5f0183-8114-4b4f-8c87-b62e237d440a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite: -5 times -5 is two negatives being multiplied. What would that give us?",
+        "B": "Not quite, I think you forgot to multiply the -5 too!",
+        "C": "Careful - I think you've multiplied by '5' rather than '-5' here.",
+        "D": "-5 times 2𝑦 = -10𝑦, and -5 times -5 = + 25. Therefore, the expression would be -10𝑦 + 25"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166524,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0a898685-efea-4d35-ae32-bbddab5f6902.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Careful - I think you've multiplied by '8' rather than '-8' here.",
+        "B": "Not quite, I think you forgot to multiply the -3 too!",
+        "C": "Not quite: -8 times -3 is two negatives being multiplied. What would that give us?",
+        "D": "-8 times 6𝑦 = -48𝑦, and -8 times -3 = + 24. Therefore, the expression would be -48𝑦 + 24."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

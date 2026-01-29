@@ -1,0 +1,147 @@
+{
+  "shortcode": "vzv",
+  "name": "Introduction to simultaneous equations 1",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 63,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify pairs of numbers that satisfy an equation with two unknowns ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify pairs of numbers that satisfy an equation given in words",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 130141,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/01aeb9f9-533c-4be6-be94-865caebebf01.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This could be correct if it was the cost of one shirt and one jumper. But how many shirts are we buying?",
+        "B": "This could be correct if it was the cost of two shirts and two jumpers. But how many jumpers are we buying?",
+        "C": "The cost of 2 shirts is 2 x £17 which gives us £34. We then add on the cost of 1 jumper: £34 + £20 = £54",
+        "D": "This could be correct if it was the cost of one shirt and two jumpers. But how many of each are we buying? Read the question carefully"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130161,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/863051b1-154a-4c40-b287-0f408169d456.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This could be correct if it was the cost of one shirt and one jumper. But how many of each are we buying?",
+        "B": "This could be correct if it was the cost of one shirt and two jumpers. But how many shirts are we buying?",
+        "C": "This could be correct if it was the cost of two shirts and three jumpers. But how many of each are we buying? Read the question carefully",
+        "D": "The cost of 3 shirts is 3 x £16 which gives us £48. The cost of 2 jumpers is 2 x £25 which gives us £50. Adding these together give us £98"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130142,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dc63bb8b-f4d9-43f8-bcbf-a88747a2bcdf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If b = 3 then we can take this away from 9 to get 6. This means 6 is equally split between the 2 \"a\"s and each a would equal 3. This is a positive whole number so is a possible value. Which option would not give a possible value?",
+        "B": "If b = 7 then we can take this away from 9 to get 2. This means 2 is equally split between the 2 \"a\"s and each a would equal 1. This is a positive whole number so is a possible value. Which option would not give a possible value?",
+        "C": "If b = 4 then a + a = 5 (because 9-4=5). If 2a = 5 then each a must equal 2.5 and the question says that it must be a whole number",
+        "D": "If b = 1 then we can take this away from 9 to get 8. This means 8 is equally split between the 2 \"a\"s and each a would equal 4. This is a positive whole number so is a possible value. Which option would not give a possible value?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130162,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/43970f3d-b766-4a33-91bb-d2d5a944b016.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If a = 7 then we first need to double this to get 2a = 14. We would now need to take this away from 12 to find b, but because 14 is greater than 12 this would leave us with a negative number. We are told that a and b are positive whole numbers so this is not a possibile value",
+        "B": "If a = 5 then we first need to double this to get 2a = 10. If we now take this away from 12 we get 2. This is our value for b and it is a positive whole number. Which option would not give a possible value?",
+        "C": "If a = 4 then we first need to double this to get 2a = 8. If we now take this away from 12 we get 4. This is our value for b and it is a positive whole number. Which option would not give a possible value?",
+        "D": "If a = 3 then we first need to double this to get 2a = 6. If we now take this away from 12 we get 6. This is our value for b and it is a positive whole number. Which option would not give a possible value?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130143,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cee80a5d-4f09-4748-8847-ddfda4400dac.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we replaced x with 10 and y with 2 we would get 10 + 2 = 20. This is incorrect as 10 + 2 = 12",
+        "B": "If we replaced x with 10 and y with -2 we would get 10 + -2 = 20 or 10 - 2 = 20. This is incorrect as 10 + -2 = 8.",
+        "C": "We can replace x with 8 and y with 12 to get 8 + 12 = 20. This is true",
+        "D": "If we replaced x with -8 and y with 12 we would get -8 + 12 = 20. This is incorrect as -8 + 12 = 4"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130163,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1e05aa71-9724-4f19-9709-10bebaa342ee.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we replaced x with 10 and y with 2 we would get 10 + 2 = 8. This is incorrect as 10 + 2 = 12",
+        "B": "We can replace x with 10 and y with -2 to get 10 + -2 = 8. This is true because when we add negative 2 it is the same as subtracting 2",
+        "C": "If we replaced x with 8 and y with 1 we would get 8 + 1 = 8. This is incorrect as 8 + 1 = 9",
+        "D": "If we replaced x with -8 and y with 1 we would get -8 + 1 = 8. This is incorrect as -8 + 1 = -7"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130144,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/83d7f9f5-c8bd-40a2-9e15-6eb47c79b0be.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we replace x with 2 and y with 34 we would get 3(2) + 2 = 34. This is incorrect. What would we get if we multiplied 3 by 2 and then added on 2?",
+        "B": "If we replace x with 2 and y with 7 we would get 3(2) + 2 = 7. This is incorrect. What would we get if we multiplied 3 by 2 and then added on 2?",
+        "C": "We can replace x with 2 and y with 8 to get 3(2) + 2 = 8. This is true because 3x2 is 6 and then when we add 2 we get 8",
+        "D": "If we replace x with 2 and y with 4 we would get 3(2) + 2 = 4. This is incorrect. What would we get if we multiplied 3 by 2 and then added on 2?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130164,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3d419640-3b35-4810-a25b-6820c5b40948.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we replace x with 3 and y with 41 we would get 41 = 4(3) - 2. This is incorrect. What would we get if we multiplied 4 by 3 and then subtracted 2?",
+        "B": "We can replace x with 3 and y with 10 to get 10 = 4(3) - 2. This is true because 4x3 is 12 and then when we subtract 2 we get 10",
+        "C": "If we replace x with 3 and y with 5 we would get 5 = 4(3) - 2. This is incorrect. What would we get if we multiplied 4 by 3 and then subtracted 2?",
+        "D": "If we replace x with 2 and y with 1 we would get 1 = 4(2) - 2. This is incorrect because 4x2 gives us 8 and then when we subtract 2 we get 6, not 1"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130145,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4b7355de-ec4c-4434-bdb6-40e4a27d206f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Try starting with the largest possible value of a, working out b and then trying the next largest value of a. Remember a and b need to be whole numbers between 0 and 5",
+        "B": "Not quite. Try starting with the largest possible value of a, working out b and then trying the next largest value of a. Remember a and b need to be whole numbers between 0 and 5",
+        "C": "Not quite. Try starting with the largest possible value of a, working out b and then trying the next largest value of a. Remember a and b need to be whole numbers between 0 and 5",
+        "D": "Starting with the greatest possible value of a (5) we get 2(5) - ? = 6 so b must be 4. Then if a = 4 we get 2(4) - ? = 6 so a must be 2. Finally if a = 3 then 2(3) - ? = 6 so b must be 0. If a is any smaller then b would have to be negative. So there are 3 options in total."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130165,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/de2f27c7-1876-48cb-8113-0e9b65de78b1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Try starting with the largest possible value of a, working out b and then trying the next largest value of a. Remember a and b need to be whole numbers between 0 and 5",
+        "B": "Not quite. Try starting with the largest possible value of a, working out b and then trying the next largest value of a. Remember a and b need to be whole numbers between 0 and 5",
+        "C": "Starting with the greatest possible value of a (5) we get 4(5) + ? = 12 so b must be -8. This is impossible as b must be a whole number between 0 and 5. Work systematically through different values of a. The only possible values that work are a=2 and b=4 or a=3 and b=0",
+        "D": "Not quite. Try starting with the largest possible value of a, working out b and then trying the next largest value of a. Remember a and b need to be whole numbers between 0 and 5"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

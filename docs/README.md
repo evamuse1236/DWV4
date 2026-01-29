@@ -8,6 +8,7 @@
 | [ARCHITECTURE.md](./ARCHITECTURE.md) | System architecture and component structure |
 | [DATA-MODEL.md](./DATA-MODEL.md) | Convex database schema and relationships |
 | [PATTERNS.md](./PATTERNS.md) | Code patterns and conventions used |
+| [CURRICULUM-MATH-MAPPING.md](./CURRICULUM-MATH-MAPPING.md) | How Math LO → objective → activity seeding works |
 
 ## Recent Changes
 

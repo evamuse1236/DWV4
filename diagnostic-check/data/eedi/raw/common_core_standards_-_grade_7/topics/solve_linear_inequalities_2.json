@@ -1,0 +1,147 @@
+{
+  "shortcode": "vv0",
+  "name": "Solve linear inequalities 2",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 164,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Solve one-step linear inequalities in one variable where the variable appears on one side of the equation",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve linear inequalities involving two inequality signs",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 78189,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ce1ca099-10e6-4ca8-bf57-4fcedaccbc11.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Substituting 5 and -5 into the expression 2x + 1 does not solve this inequality. Remember, solving an inequality is similar to solving an equation, apply the inverse of 2x + 1 to the left, centre and right of the inequality.",
+        "B": "We need to solve like it is an equation, doing the same to the left, centre and right of the inequality. First -1 to give -6 < 2𝑥 < 4. Now divide by 2 to give -3 < 𝑥 < 2",
+        "C": "Not quite! I think you have got confused with your negatives here. When we subtract we go down the number scale. So -5 - 1 = -6.",
+        "D": "Not quite! 2x + 1 means multiply by 2 and then add 1. When solving we need to undo the last operation first."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78483,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9e7dbcc9-51df-4bad-be6a-b4663a68a007.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We need to solve like it is an equation, doing the same to the left, centre and right of the inequality. We begin by subtracting 1 from all sides to get -4 < 2x < 6. Then dividing by 2 gives -2 < x < 3.",
+        "B": "Not quite! I think you have got confused with your negatives here. When we subtract we go down the number scale. So -3 - 1 = -4.",
+        "C": "Not quite! 2x + 1 means multiply by 2 and then add 1. When solving we need to undo the last operation first.",
+        "D": "Not quite! Substituting -3 and 7 into the expression 2x + 1 does not solve this inequality. Remember, solving an inequality is similar to solving an equation, apply the inverse of 2x + 1 to the left, centre and right of the inequality."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 78190,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/03eae275-8210-4fcc-90e7-ac8212d4b897.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! When solving inequalities we need to isolate x. To solve 3x < 14, we divide both sides by 3. We need a number) that satisfies this inequality and x > 3.",
+        "B": "Not quite. The > symbol means x is greater than 3, this means it will not include 3.",
+        "C": "Not quite! When solving inequalities we need to isolate x. To solve 3x < 14, we divide both sides by 3. We need a number that satisfies this inequality and x > 3.",
+        "D": "We solve the inequalities separately, getting 𝑥 < 14/3 or 𝑥 < 4⅓ and 𝑥 > 3. The only whole number satisfying these inequalities is x = 4"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78484,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/59ba317f-54ee-4845-91aa-34f582c85e4e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. The > symbol means x is greater than 2, this means it will not include 2.",
+        "B": "When we solve 3x < 11, we divide both sides by 3. So x < 11/3 and x > 2. The only whole number satisfying both these inequalities is x = 3.",
+        "C": "Not quite! When solving inequalities we need to isolate x. To solve 3x < 11, we divide both sides by 3. We need an integer (whole number) that satisfies this inequality and x > 3.",
+        "D": "Not quite! When solving inequalities we need to isolate x. To solve 3x < 11, we divide both sides by 3. We need an integer (whole number) that satisfies this inequality and x > 3."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 106909,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3d75b17c-85c6-4533-9b9a-936cf5d3c010.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Try substituting in values that satisfy the first inequality for each person, and then see if it also works for the second inequality.",
+        "B": "Tom is incorrect because he has not changed the direction of the inequality, which is something that needs to be done when multiplying or dividing by a negative value. Solving Katie’s inequality involves adding 2 to both sides, which gives her answer, 𝑚 > 14.",
+        "C": "Not quite! Try substituting in values that satisfy the first inequality for Tom, and then see if it also works for the second inequality.",
+        "D": "Not quite! At least one person is correct. Try substituting in values that satisfy the first inequality for each person, and then see if it also works for the second inequality."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 106918,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3bcdd069-6145-4a85-bcac-7b4773aebb3a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Try substituting in values that satisfy the first inequality for each person, and then see if it also works for the second inequality.",
+        "B": "Not quite! Try substituting in values that satisfy the first inequality for each person, and then see if it also works for the second inequality.",
+        "C": "Jo is correct because she has changed the direction of the inequality, which is something that needs to be done when multiplying or dividing by a negative value. Solving Paul’s inequality involves adding 4 to both sides, which gives his answer, 𝑚 > 16.",
+        "D": "Not quite! At least one person is correct. Try substituting in values that satisfy the first inequality for each person, and then see if it also works for the second inequality."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 106910,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/62e8b37a-8717-4670-ac35-e8ea686fd9b7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To solve –½𝑦 ≤ 5, we need to complete the inverse of multiplying by –½ to both sides. The inverse of this would be dividing by –½ (or multiplying by -2). Multiplying both sides by –2 gives 𝑦 ≥ 5 × –2, so 𝑦 ≥ –10 (notice the inequality switches direction when multiplied or divided by a negative value).",
+        "B": "Not quite! What happens to the inequality sign when you multiply or divide by a negative number? Try substituting in some values for y to check.",
+        "C": "Not quite! Dividing both sides by -2 leaves (1/4)y on the left hand side NOT y. Remember, to solve an inequality we need to use inverse operations.",
+        "D": "Not quite! Dividing both sides by -2 leaves (1/4)y on the left hand side NOT y. Remember, to solve an inequality we need to use inverse operations. What happens to the inequality when you divide by a negative number?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 106919,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/52cd7884-4318-49a9-bf79-84a758da14b6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! What happens to the inequality sign when you multiply or divide by a negative number? Try substituting in some values for y to check.",
+        "B": "Not quite! Dividing both sides by -3 leaves (1/9)y on the left hand side NOT y. Remember, to solve an inequality we need to use inverse operations.",
+        "C": "Not quite! Dividing both sides by -3 leaves (1/9)y on the left hand side NOT y. Remember, to solve an inequality we need to use inverse operations. What happens to the inequality when you divide by a negative number?",
+        "D": "To solve (–⅓)𝑦 ≤ –6, we need to complete the inverse of multiplying by –⅓ to both sides. The inverse of this would be dividing by –⅓ (or multiplying by -3). Multiplying both sides by –3 gives 𝑦 ≥ -6 × –3, so 𝑦 ≥ 18 (notice the inequality switches direction when multiplied or divided by a negative value)."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 106912,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3cc2fe2d-311b-475d-aba9-240c9d106ed4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! The inequality x < -2 means strictly less than, so does not include -2 itself. We can try to solve this question by substituting x = -2 into each inequality.",
+        "B": "Not quite! The inequality x < -2 means strictly less than, so does not include -2 itself. We can try to solve this question by substituting x = -2 into each inequality.",
+        "C": "We can try to solve this question by substituting x = -2 into each inequality. For 𝑥 + 2 < 0, this gives 0 < 0, which is false, so Region A and B is not applicable. For 8 – 𝑥 > 9, we have 8 – (–2) = 8 + 2 = 10 which is bigger than 9, and so a value of 𝑥 = –2 belongs in Region C.",
+        "D": "Not quite! We can try to solve this question by substituting x = -2 into each inequality. The region outside the circles in the Venn diagram (region D) represents values that wont fit into either circle."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 106921,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d17308ff-59c8-4c0f-a1eb-93ba4a49254b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We can try to solve this question by substituting x = –5.3 into each inequality. For 𝑥 + 5.3 ≤ 0, this gives 5.3 ≤ 5.3, which is true, so Region A is applicable. For – (5.3 + 𝑥)/2 > 0, we have – (5.3 + –5.3)/2 = –0/2 = 0. Because 0 is not greater than 0, Region C and B does not apply, meaning –5.3 belongs in Region A alone.",
+        "B": "Not quite! We can try to solve this question by substituting x = –5.3 into each inequality. Remember when we have a negative sign outside the bracket, it applies to everything inside the bracket and the > sign is a strict inequality, meaning it has to be greater than 0 it cannot be equal to.",
+        "C": "Not quite! We can try to solve this question by substituting x = –5.3 into each inequality. Remember when we have a negative sign outside the bracket, it applies to everything inside the bracket and the > sign is a strict inequality, meaning it has to be greater than 0 it cannot be equal to.",
+        "D": "No quite! We can try to solve this question by substituting x = -5.3 into each inequality. The region outside the circles in the Venn diagram (region D) represents values that wont fit into either circle."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

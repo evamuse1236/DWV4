@@ -1,0 +1,153 @@
+{
+  "shortcode": "vt7",
+  "name": "Knowing and applying the laws of arithmetic",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 90,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Understand the non-commutativity of subtraction",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Understand the non-commutativity of division",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Mental multiplication and the laws of arithmetic",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 89268,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fc791c8c-6f84-4645-b71d-cfb2af709c4c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "25 ✕ 14 = 25 ✕ (2 ✕ ★). The 25 appears on both sides. The 14 is now represented as 2 ✕ ★. Therefore, we know that 14 = 2 ✕ ★ which means that ★ must have a value of 7.",
+        "B": "I think you might have missed the '2 ✕' in the brackets.",
+        "C": "I think you might have used subtraction instead of division when solving 14 = 2 ✕ ★.",
+        "D": "I think you might have used multiplication instead of division when solving 14 = 2 ✕ ★"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89281,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3418e564-ce8f-44ba-be13-191cf21b5ef4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might have used subtraction instead of division when solving 12 = 4 ✕ ★.",
+        "B": "I think you might have missed the '4 ✕' in the brackets.",
+        "C": "15 ✕ 12 = 15 ✕ (4 ✕ ★). The 15 appears on both sides. The 12 is now represented as 4 ✕ ★. Therefore, we know that 12 = 4 ✕ ★ which means that ★ must have a value of 3.",
+        "D": "I think you might have solved this step incorrectly: 12 = 4 ✕ ★."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 102165,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/17d85625-446a-4307-bb8c-54ed2ab76be8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Try dividing some easier numbers - does 10 ÷ 2 = 2 ÷ 10?",
+        "B": "\"Commutative\" means \"is the same either way round\".",
+        "C": "\"Commutative\" means \"is the same either way round\".",
+        "D": "140 ÷ 7 = 20, but 7 ÷ 140 is less than 1."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 122885,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bb280d2b-b82d-4d4d-94b7-b4bba96033ed.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Try dividing some easier numbers - does 10 ÷ 2 = 2 ÷ 10?",
+        "B": "\"Commutative\" means \"is the same either way round\".",
+        "C": "\"Commutative\" means \"is the same either way round\".",
+        "D": "300 ÷ 5 = 60, but 5 ÷ 300 is less than 1."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 147363,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/312fac24-fb1a-4aa6-b014-4ac52b679806.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Try substituting in some numbers to see if the order matters.",
+        "B": "Division is non-commutative which means it DOES matter which order it is carried out in. Multiplication is commutative which means it DOES NOT matter which order it is carried out in. Therefore, only Katie is correct.",
+        "C": "Not quite. Think carefully about which of these operations are commutative. When multiplying, do we get the same answer if we switch the numbers round? What about division? Does swapping the numbers over give us the same answer? Substitute in some numbers to see.",
+        "D": "Not quite. At least one of the students is correct. Think carefully about which of these operations are commutative. When multiplying, do we get the same answer if we switch the numbers round? What about division? Does swapping the numbers over give us the same answer? Substitute in some numbers to see."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 154859,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/02487626-2082-44ad-8778-800a214d5294.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Multiplication is commutative. This means 17 x 0.3 will have the same answer as 0.3 x 17, the order of the numbers doesn't matter. Division is not commutative. This means 17 ÷ 0.3 has a different answer to 0.3 ÷ 17. Therefore, only Tom is correct.",
+        "B": "Not quite. Use a calculator to find the answers to all 4 questions, then check to see which ones give the same answer.",
+        "C": "Not quite. Use a calculator to find the answers to all 4 questions, then check to see which ones give the same answer.",
+        "D": "Not quite. Use a calculator to find the answers to all 4 questions, then check to see which ones give the same answer."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 154807,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a60f0b87-f83f-4b15-bedb-4cae6678bad0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom is correct as addition is commutative. This means you will get the same answer no matter what order your numbers are in. Therefore 5 + 12 is equal to 12 + 5. Subtraction is not commutative. We cannot just switch the numbers over. 8 - 2 = 6 and 2 - 8 = -6. Therefore Katie is incorrect.",
+        "B": "Not quite. Try the calculations to see who is correct. Remember if we subtract a bigger number from a smaller number then our answer will be negative.",
+        "C": "Not quite. Do we get the same answer if we switch the numbers over? Try the calculations to see. Remember if we subtract a bigger number from a smaller number then our answer will be negative.",
+        "D": "Not quite. At least one of them is correct. Try the calculations to see who. Is 12 more than 5 the same as 5 more than 12?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 154809,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db1c5050-6344-4be4-a1ba-86b72f01eaf8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Look at the statements carefully. Tom is saying 19 more than 3 is the same as 3 more than 19 and Katie is saying 1 subtract 6 is the negative of 6 - 1.",
+        "B": "Not quite. Look at the statements carefully. Tom is saying 19 more than 3 is the same as 3 more than 19 and Katie is saying 1 subtract 6 is the negative of 6 - 1.",
+        "C": "Tom is correct as addition is commutative. This means you will get the same answer no matter what order your numbers are in. Therefore 3 + 19 is equal to 19 + 3. Subtraction is not commutative. Switching the numbers over will give you the negative of your previous answer. 6 - 1 = 5 and 1 - 6 = -5. Therefore Katie is correct as she stated that 1 - 6 will be the negative version of 6 - 1 written as -(6 - 1).",
+        "D": "Not quite. At least one of them is correct. Try the calculations to see who. Is 19 more than 3, the same as 3 more than 19? Is 1 subtract 6 the negative of 6 - 1?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 154808,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1502791b-5dcc-4bb0-9c97-e8a2a16ac954.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If you add 10 lots of 7 to 2 lots of 7 then you get 12 lots of 7.",
+        "B": "Not quite. I think you have found two numbers that multiply to give 12, but this does not work. 3 lots of 7 add 4 lots of 7 gives 7 lots of 7 instead 12 lots of 7.",
+        "C": "Not quite. I think you have found two numbers that multiply to give 12, but this does not work. 2 lots of 7 add 6 lots of 7 gives 8 lots of 7 instead of 12 lots of 7.",
+        "D": "Not quite, I think you found a pair of numbers that add to 7 rather than 12. We want 12 lots of 7 BUT 2 lots of 7 add 5 lots of 7 gives 7 lots of 7."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 154810,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e747f115-4632-416a-b204-9d992b90d01e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. I think you have found two numbers that multiply to give 18, but this does not work. 6 lots of 6 add 3 lots of 6 gives 9 lots of 6 instead of 18 lots of 6.",
+        "B": "Not quite. I think you have found a pair of numbers that multiply to give 6, but this does not work. We want 18 lots of 6 BUT 3 lots of 6 add 2 lots of 6 gives 5 lots of 6.",
+        "C": "Not quite. I think you have found two numbers that multiply to give 18, but this does not work. 2 lots of 6 add 9 lots of 6 gives 11 lots of 6 instead of 18 lots of 6.",
+        "D": "If you add 10 lots of 6 to 8 lots of 6 then you get 18 lots of 6."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

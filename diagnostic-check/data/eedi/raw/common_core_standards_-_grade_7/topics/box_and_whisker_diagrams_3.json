@@ -1,0 +1,153 @@
+{
+  "shortcode": "vxj",
+  "name": "Box and whisker diagrams 3",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 225,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate the interquartile range from a box plot",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Compare two box plots using the medians",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Compare two box plots using the interquartile ranges",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 77943,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6b98e39d-80ae-40ed-b2c3-fc3aa59ff06e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have found the upper quartile. The interquartile range would be the difference between the upper quartile and the lower quartile.",
+        "B": "The upper quartile is 60 and the lower quartile is 30. Therefore, the interquartile range is 60 - 30 = 30 minutes.",
+        "C": "I think you have found the interquartile range for the boys. The question asks for the interquartile range for the girls.",
+        "D": "I think you have found the median. The question asks for the interquartile range, which is the difference between the upper quartile and lower quartile."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78105,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7576ca5a-62fb-428a-bf04-a93f5b0a7616.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have given the interquartile range for the girls. The question asks for the interquartile range for the boys.",
+        "B": "I think you have stated the range. The question asks for the interquartile range, which is the difference between the upper and lower quartiles.",
+        "C": "I think you have found the upper quartile. The interquartile range would be the difference between the upper quartile and the lower quartile.",
+        "D": "The upper quartile is 60 and the lower quartile is 40. Therefore, the interquartile range is 60 - 40 = 20 minutes."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 77945,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d9a07568-5bda-4ea8-87b8-c95dcf87b883.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Which class has a higher median? Have you looked carefully at the vertical scale?",
+        "B": "Class A has a larger median of 42 and a smaller IQR of 13, whereas class B has a median of 35 and an IQR of 21.",
+        "C": "Class A has a larger median. Remember the IQR is the distance between the lower quartile and upper quartile, so the length of the box.",
+        "D": "Remember that the median is the middle line of the box, and the IQR is the length of the box in this instance."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78107,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b588a141-7ec1-4717-b743-6e96f73aab31.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have miscalculated the medians. The median is the line inside the box.",
+        "B": "The medians are 45 and 35, and the interquartile ranges are 17 and 24, so A has a larger median but a smaller IQR.",
+        "C": "I think you may have miscalculated the interquartile ranges. Remember the IQR is the distance between the lower quartile and upper quartile, so the length of the box.",
+        "D": "I think you may have mixed up Class A with Class B."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 77947,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/650c3d62-1936-4019-bd3d-bec3b5023439.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have misread the medians. The median is the line inside the box.",
+        "B": "The measure of average on a box plot is the median. Class B has a median of 8, whereas Class A has median of 6. Therefore, Class B performed best on average.",
+        "C": "I think you have confused the highest mark with the average performance. What measure of average - mode, mean or median - can we read from the box plot?",
+        "D": "I think you have assumed that the IQR could be a measure of average. What measure of average - mode, mean or median - can we read from a box plot?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 154858,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6b63077a-ae2d-4624-adda-96d300799540.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have confused the highest mark with the average performance. What measure of average - mode, mean or median - can we read from the box plot?",
+        "B": "I think you have assumed that the IQR could be a measure of average. What measure of average - mode, mean or median - can we read from a box plot?",
+        "C": "I think you may have misread the medians. The median is the line inside the box.",
+        "D": "The measure of average on a box plot is the median. In the morning the class had a median of 87.5, whereas in the afternoon the class had a median of 75. Therefore, on average, the class performed better in the morning."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 109586,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d3c502a2-940f-42c1-b4a6-f3e7c64c1cc0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have confused average with consistency. The measure of average shown on a boxplot is the median, which part of the boxplot shows the median?",
+        "B": "I think you may have confused average with spread. The measure of average shown on a boxplot is the median, which part of the boxplot shows the median?",
+        "C": "The measure of average shown on a boxplot is the median, which is marked by the line inside the box. Both groups have the same median, so on average they use their phones the same amount.",
+        "D": "The measure of average shown on a boxplot is the median, which part of the boxplot shows the median?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 109596,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/19845446-4758-42cf-9d0b-9258bb92518f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Female students have a median of 40, and male students a median of 80. Therefore, male students use their phone more often, on average.",
+        "B": "I think you may have assumed that a lower median means a high median. Using their phones more, means a higher median.",
+        "C": "I think you may have confused average with consistency. The measure of average shown on a boxplot is the median, which part of the boxplot shows the median?",
+        "D": "The measure of average shown on a boxplot is the median, which part of the boxplot shows the median?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 109587,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4b0e4776-c8c5-434b-b7b5-eaaf4ec19b4c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Male students have a lower IQR, meaning that their phone usage is more consistent.",
+        "B": "I think you may believe that a greater IQR implies more consistency.",
+        "C": "I think you may have confused average and consistency. A smaller IQR would imply higher consistency.",
+        "D": "I think you may have assumed that you cannot infer consistency without the original data. A smaller IQR would imply higher consistency."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 109597,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/96772892-383b-4a15-849c-33d757b05d1b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have confused average and consistency. A smaller IQR would imply higher consistency.",
+        "B": "A smaller IQR would imply higher consistency.",
+        "C": "Both males and females have the same IQR in mobile phone usage, so they have the same consistency.",
+        "D": "I think you may have assumed that you cannot infer consistency without the original data. A smaller IQR would imply higher consistency."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

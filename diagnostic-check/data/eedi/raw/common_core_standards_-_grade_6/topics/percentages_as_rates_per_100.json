@@ -1,0 +1,153 @@
+{
+  "shortcode": "eek0",
+  "name": "Percentages as rates per 100",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 34,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate percentage of an amount mentally where the percent is an integer",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find the whole amount given a percentage of the amount mentally",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find the whole amount given a percentage of the amount with a calculator",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166153,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e09f62ba-7f65-4abb-87f4-182f3f004108.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite - it looks like you've found 25% of 48, however the 48 in this question isn't the total amount of snacks, it's the total amount of fruit.",
+        "B": "If 25% of campers got a piece of fruit, and that is equivalent to 48 campers, we can multiply by 4 to get 100% and that would give us 192.",
+        "C": "It looks like you may have multiplied 48 by 25, but we are only trying to find out what 100% would be. What can we multiply 25% by?",
+        "D": "Not quite - it looks like you've found the total number of trail mix by finding out 75%, but we want to find out the total number of all of the snacks which would be 100%."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166380,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/69ee3082-eaff-49d4-a2c0-9ac60683afae.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you may have multiplied 35 by 20, but we are only trying to find out what 100% would be. What can we multiply 20% by?",
+        "B": "Not quite - it looks like you've found 20% of 35, however the 35 in this question isn't the total number of animals, it's only the number of animals who got hay.",
+        "C": "Not quite - it looks like you've found the total number of animals who didn't get hay, but we want to find out the total number of all of the animals.",
+        "D": "If 20% is the same as 35 animals, we can multiply this by 5 to get 100% which is 175 animals in total."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166154,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5cc7f129-904d-4031-8e95-d024ae3f068b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you might have subtracted 75 from 5748, however we are trying to find 75% of 5748. Try thinking of how we might find 25% first.",
+        "B": "Not quite - it looks like you've found the number of people who did NOT eat a burrito. This question is asking about people who did!",
+        "C": "You're close but if we want to work out a percentage of a number, we want to multiply by the decimal multiplier, not divide.",
+        "D": "We need to work out 75% of 5748. We can find 25% by dividing by 4, and then multiply this by 3 to make 75% which is 4311."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166381,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f8b2c0d1-da72-4ece-b324-ecb7315a45f8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find 10%, we can divide by 10, which would give us 643.5 people. 60% is 6 times bigger than this, which is 3861.",
+        "B": "It looks like you might have subtracted 60 from 6435, however we are trying to find 60%. Try thinking of how we might find 10% first.",
+        "C": "Not quite - it looks like you've found the number of people who did NOT go on the slide. This question is asking about people who did!",
+        "D": "You're close but if we want to work out a percentage of a number, we want to multiply by the decimal multiplier, not divide."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166155,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/31e28b16-d4b2-4a70-aaf4-869d3b4b126a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It seems like you might have found 20% of 5, however 5 isn't the total number of players, it's only the number of players who have played for more than 3 years. This question is saying that 20% of the total players is 5.",
+        "B": "If 20% of the team is 5 players, we can multiply this by 5 to work out 100% of the team which is 25 players.",
+        "C": "It seems like you have multiplied the 5 players by 3, however that wouldn't get us to 100%. Have a think about what percentage those 5 players are worth.",
+        "D": "It seems like you have multiplied 20 by 3, because its 20% and 3 years. However that wouldn't get us to 100%. Can you think of what to multiply 20% by?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166156,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/83e783f7-2d9b-4da4-88dd-f71c2f248f62.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It seems like you have found 10% of 67, however 67 visitors isn't the total amount of visitors, it is 10% of the total visitors.",
+        "B": "Not quite - you've calculated the number of visitors who used skis, but the question is asking what the total number (100%) of people is.",
+        "C": "If 10% is 67 visitors, we can multiply this by 10 to get 100% of visitors which is 670.",
+        "D": "It seems like you may have added 10 to 67, however we are trying to use the fact that 10% is 67 to work out 100%. What could we multiply by?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166157,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/777249ef-5e04-41bf-b5cf-0c941d0e55bf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find 4%, we first can find 1% by dividing by 100 which would give us 9.5. We can then find 4% by multiplying this by 4, which would give us 38.",
+        "B": "It seems like you may have divided 950 by 4, but that would give us 25%, not 4%! Have a think about what to divide by to get 1%.",
+        "C": "Close, but you've found 40% rather than 4%. How could you use your answer to find 4% instead?",
+        "D": "It seems like you may have divided 950 by 4 and then 4 again, but that would give us 6.25%, not 4%! Have a think about what to divide by to get 1%."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166384,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2ec56edb-ae4f-426d-9565-3ca44d6d24c1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It seems like you have divided 2175 by 8, but that would give us 12.5%, not 8%. Have a think about how you could work out 1%.",
+        "B": "To find 1% of 2175, divide it by 100 which would give us 21.75. To find 8%, we then multiply 1% by 8, which would give us 174.",
+        "C": "It looks like you have just subtracted 8 from 2175, but we are finding 8% of the number which means we need to work out what 1% would be and scale up.",
+        "D": "Close, but you've found 80% rather than 8%. How could you use your answer to find 8% instead?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166383,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ad5f914b-302f-4297-b723-a8aea906f50f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite - you've calculated the number of visitors who used lifts, but the question is asking what the total number (100%) of people is.",
+        "B": "If we divide 546 by 0.35 (35% as a decimal), that will give us the total (100%) of visitors which is 1560.",
+        "C": "Remember that if we are doing a reverse percentage - trying to find 100% - we need to divide by the percentage as a decimal.",
+        "D": "Remember that if we are doing a reverse percentage - trying to find 100% - we need to divide by the percentage as a decimal."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166382,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b3e1bb1e-73ed-4c10-8615-bd18a44bfb10.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It seems like you have multiplied the 60 players by 4, however that wouldn't get us to 100%. Have a think about what percentage those 60 players are worth.",
+        "B": "It seems like you have multiplied the 15 of 15% by 60, however that wouldn't get us to 100%. Can you think of what to multiply 15% by?",
+        "C": "If 15% is worth 60 players, we can find out that 5% is worth 20 players by dividing by 3. We can then work out 100% by multiplying by 20, giving us 400 players.",
+        "D": "It seems like you have multiplied 15 by 4, however that wouldn't get us to 100%. Can you think of what to multiply 15% by?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

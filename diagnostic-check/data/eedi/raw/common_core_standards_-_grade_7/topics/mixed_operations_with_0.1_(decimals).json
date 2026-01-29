@@ -1,0 +1,159 @@
+{
+  "shortcode": "vtl",
+  "name": "Mixed operations with 0.1 (decimals)",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 70,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Add decimals where the numbers involved have a different number of decimal places",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Subtract decimals where the numbers involved have a different number of decimal places",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiply two decimals together with a different number of decimal places",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Divide two decimals with a different number of decimal places",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 103754,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a27e0fff-3ad7-408f-a8bc-fc0d39917b1e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. Make sure you have lined up your decimal points before adding",
+        "B": "To add decimal numbers, put the values one below another, taking care to put the decimal points in line. The calculation gives rise to 4 + 0 = 4 in the hundredths column, 0 + 1 = 1 in the tenths column, 0 in the units column, and 7 in the tens column, so an overall answer of 70.14",
+        "C": "Almost. Make sure you have lined up your decimal points before adding",
+        "D": "Not quite. We are only adding on the 1 in the tenths column."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103764,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/819f05d7-a949-4aca-bfe2-94cca8b467d8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. Make sure you have lined up your decimal points before adding",
+        "B": "Not quite. We are only adding on the 1 in the tenths column.",
+        "C": "Almost. Make sure you have lined up your decimal points before adding",
+        "D": "To add decimal numbers, put the values one below another, taking care to put the decimal points in line. The calculation gives rise to 9 + 0 = 9 in the hundredths column, 0 + 1 = 1 in the tenths column, 0 in the units column, and 5 in the tens column, so an overall answer of 50.19"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103755,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0fa67394-0a8f-4caf-a8fa-a038e53cb089.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, we are subtracting 1 in the tenths column, but you have subtracted 1 from the hundredths column too.",
+        "B": "Almost, but remember you will have to borrow from the 7 in the tens column",
+        "C": "Almost. Make sure you have lined up your decimal points before subtracting",
+        "D": "To subtract decimal numbers, put the values one below another, taking care to put the decimal points in line. Starting from the right 4 - 0 = 4. Then 0 - 1 we can't do so we borrow from the 7, that passes to the 0 to become 10, and we borrow 1 from 10. Then 10 - 1 = 9, 9 - 0 = 9 and 6 - 0 = 6. Giving 69.94"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103765,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/08e06e8a-a9a7-401e-bb72-184f4380fa33.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To subtract decimal numbers, put the values one below another, taking care to put the decimal points in line. Starting from the right 9 - 0 = 9. Then 0 - 1 we can't do so we borrow from the 5, that passes to the 0 to become 10, and we borrow 1 from 10. Then 10 - 1 = 9, 9 - 0 = 9 and 4 - 0 = 4. Giving 49.99",
+        "B": "Almost, but remember you will have to borrow from the 5 in the tens column",
+        "C": "Almost. Make sure you have lined up your decimal points before subtracting",
+        "D": "Not quite, we are subtracting 1 in the tenths column, but you have subtracted 1 from every column."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103756,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a4c7caab-1e35-4d13-998d-9f62fcec9e7c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Multiplying by 0.1 does not add in a zero after the decimal point. To help, think about how 70.04 x 0.1 is different to 70.04 x 1 and how this change will impact the answer.",
+        "B": "Not quite. Multiplying by 0.1 does not add in a zero before the decimal point. To help, think about how 70.04 x 0.1 is different to 70.04 x 1 and how this change will impact the answer.",
+        "C": "Not quite. Multiplying by 0.1 is not the same as multiplying by 10. To help, think about how 70.04 x 0.1 is different to 70.04 x 1 and how this change will impact the answer.",
+        "D": "We know that 70.04 × 1 = 70.04, and as we are multiplying by 0.1, which is ten times smaller than 1, it is logical to expect the answer to be ten times smaller, so 7.004"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103766,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/11116a33-a76e-499d-8c59-add2e7d3c123.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Multiplying by 0.1 does not add in a zero after the decimal point. To help, think about how 50.09 x 0.1 is different to 50.09 x 1 and how this change will impact the answer.",
+        "B": "Not quite. Multiplying by 0.1 does not add in a zero before the decimal point. To help, think about how 50.09 x 0.1 is different to 50.09 x 1 and how this change will impact the answer.",
+        "C": "We know that 50.09 × 1 = 50.09, and as we are multiplying by 0.1, which is ten times smaller than 1, it is logical to expect the answer to be ten times smaller, so 5.009",
+        "D": "Not quite. Multiplying by 0.1 is not the same as multiplying by 10. To help, think about how 50.09 x 0.1 is different to 50.09 x 1 and how this change will impact the answer."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103757,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/60a724fb-eaac-4530-a907-d931b3765591.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Dividing by 0.1 does not add in a zero after the decimal point. Remember, divisions can be written as fractions. How will this help us to divide by 0.1?",
+        "B": "Not quite. Dividing by 0.1 does not add in a zero before the decimal point. Remember, divisions can be written as fractions. How will this help us to divide by 0.1?",
+        "C": "70.04 ÷ 0.1 = 70.04/0.1 Multiplying both the numerator and denominator by 10 we get 70.04/0.1 = 700.4/1 = 700.4",
+        "D": "Not quite. Dividing by 0.1 is not the same as dividing by 10. Remember, divisions can be written as fractions. How will this help us to divide by 0.1?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103767,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/26fd0e02-85f3-4b6c-be31-77cb0111fd04.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Dividing by 0.1 does not add in a zero after the decimal point. Remember, divisions can be written as fractions. How will this help us to divide by 0.1?",
+        "B": "50.09 ÷ 0.1= 50.09/0.1. Multiplying numerator and denominator by 10 we get 50.09/0.1 = 500.9/1 = 500.9",
+        "C": "Not quite. Dividing by 0.1 does not add in a zero before the decimal point. Remember, divisions can be written as fractions. How will this help us to divide by 0.1?",
+        "D": "Not quite. Dividing by 0.1 is not the same as dividing by 10. Remember, divisions can be written as fractions. How will this help us to divide by 0.1?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103759,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f366c80a-5f8d-4382-9680-be971b1d69b8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember dividing by 10, 100 or 1000 changes the place value of the digits. How many place value columns has the three moved?",
+        "B": "Not quite. Converting the decimal into a fraction will help you see who is correct.",
+        "C": "Tom and Katie are both correct. 0.3 x 0.01 = 0. 3 x 1 ÷ 100 = 0.3 ÷ 100. Dividing by 100 moves the digits two places to the left so 0.3 ÷ 100 = 0.003.",
+        "D": "Not quite, at least one or both of them are correct. Converting the decimal into a fraction will help you see who."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 122112,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eed89b40-93e0-4ef7-be88-d73d7783ae78.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember 0.01 = 1/100. Multiplying by 1/100 is the same as dividing by 100 which moves the digits two places to the right.",
+        "B": "Katie is correct. 0.6 ÷ 10 = 0.06, we know this as the 6 has moved one place value column to the right. Tom is incorrect as 0.01 = 1/100. Multiplying by 1/100 is the same as ÷ by 100 which would move the 6 two places to the right not one.",
+        "C": "Not quite. Looking at how many place value columns the 6 has moved will help you decide who, if any, is correct.",
+        "D": "Not quite. At least one of them is correct. Looking at how many place value columns the 6 has moved will help you decide who."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

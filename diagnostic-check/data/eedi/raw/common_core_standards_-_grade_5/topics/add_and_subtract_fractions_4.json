@@ -1,0 +1,165 @@
+{
+  "shortcode": "bija",
+  "name": "Add and subtract fractions 4",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 54,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Add proper fractions with the same denominator",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Subtract proper fractions with different denominators where one is a multiple of the other",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Subtract proper fractions with different denominators which do not share a common factor",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Subtract with fractions and integers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Carry out missing number subtraction problems where a written method is needed",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 131426,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/455e7189-0a85-4486-aa01-f7c8b410e2a4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To add fractions with the same denominator, we simply add the two numerators and the denominator stays the same. 3 + 4 = 7, so our answer is 7/11",
+        "B": "Not quite. When we add fractions with the same denominator, we add the two numerators and the denominator stays the same.",
+        "C": "I think you've multiplied the two numerators, remember the question is asking you to add them.",
+        "D": "Not quite. This is the answer you would get if you multiplied the two fractions, we are being asked to add them together."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133659,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ad9db26f-042c-41c7-8e85-785a42f1cc04.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "think you've multiplied the two numerators. Remember, the question is asking you to add these fractions, not multiply them.",
+        "B": "Not quite. This is the answer you would get if you multiply the two fractions, we are being asked to add them together.",
+        "C": "To add fractions with the same denominator, we simply add the two numerators and the denominator stays the same. 2+1 = 3, so our answer is 3/7.",
+        "D": "To add fractions with the same denominator, we simply add the two numerators and the denominator stays the same."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131427,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f9421554-dcd0-459c-8c0d-6a4f4ba9d971.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To subtract the fractions, we need to find equivalent fractions with the same denominator. 5 and 3 are both factors of 15, so we can rewrite 4/5 as 12/15, and 1/3 as 5/15. 12-5 = 7, the denominator remains 15, giving an answer 7/15.",
+        "B": "This is a subtraction sum. The two fractions must have the same denominator before doing the subtraction.",
+        "C": "I think you've misread the sign but done the rest of the calculation correctly! Make sure you've subtracted, rather than added.",
+        "D": "The two fractions must have the same denominator before doing the subtraction."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133660,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eff49697-ced3-4396-9562-6181596f4259.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've misread the sign but done the rest of the calculation correctly! Make sure you've subtracted, rather than added.",
+        "B": "The two fractions must have the same denominator before doing the subtraction.",
+        "C": "To subtract the fractions, we need to find equivalent fractions with the same denominator. 4 and 3 are both factors of 12, so we can rewrite 3/4 as 9/12, and 1/3 as 4/12. 9-4 = 5, the denominator remains 12, giving an answer 5/12.",
+        "D": "This is a subtraction sum. The two fractions must have the same denominator before doing the subtraction."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131428,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fe891dbb-2b07-4200-8c6c-40ae363624e4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have subtracted the 1 in the numerator from the 1 whole. You need to think about how many thirds there are in 1 whole, and then do the subtraction.",
+        "B": "I think you have subtracted the 1 whole from the 3 in the denominator. You need to think about how many thirds there are in 1 whole, and then do the subtraction.",
+        "C": "1 is 3/3. Then we can do 3/3 - 1/3 = 2/3",
+        "D": "Not quite. You need to think about how many thirds there are in 1 whole, and then do the subtraction"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133661,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d84ae334-381e-4272-a3a3-40e49bdb6512.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "1 is 5/5. Then we can do 5/5 - 1/5 = 4/5",
+        "B": "Not quite. You need to think about how many fifths there are in 1 whole, and then do the subtraction.",
+        "C": "I think you have subtracted the 1 in the numerator from the 1 whole. You need to think about how many fifths there are in 1 whole, and then do the subtraction.",
+        "D": "I think you have subtracted the 1 whole from the 5 in the denominator. You need to think about how many fifths there are in 1 whole, and then do the subtraction ."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131429,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/338f5e6f-3ee2-4287-97ce-657bc6c21710.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You are almost there. I think you have found the equivalent fractions, but added when you should have subtracted.",
+        "B": "I think you have just subtracted the numerators. Before you do this, both fractions need to have the same denominator.",
+        "C": "We need the two fractions to have common denominators before we do the subtraction. 2/5 = 4/10. Then we have 7/10 - 4/10 = 3/10",
+        "D": "I think you have added the numerators. This is a subtraction sum. The two fractions must have common denominators before we can subtract them."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133662,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/66a608bf-aa97-47c3-860b-447b49350c34.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We need the two fractions to have common denominators before we can do the subtraction. 1/2 = 4/8. So we have 7/8 - 4/8 = 3/8",
+        "B": "I think you have added the numerators. This is a subtraction sum. The two fractions must have common denominators before we can subtract them.",
+        "C": "You are almost there. I think you have found the equivalent fractions, but added when you should have subtracted.",
+        "D": "I think you have just subtracted the numerators. Before you do this, both fractions need to have the same denominator."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131430,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/52f6809d-5933-4fae-a378-6418f8901683.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We need common denominators to do the subtraction. 1/3 = 8/24, then 8/24 - 5/24 = 3/24. We can then simplify this to get 1/8.",
+        "B": "I think you have subtracted the denominators. We need to find equivalent fractions with the same denominator (24), and then do the subtraction.",
+        "C": "Almost, I think you did the subtraction with a common denominator of 24. Did you remember to simplify the fraction?",
+        "D": "Almost - I think you might have done the subtraction using a common denominator of 24. Did you simplify your answer fully?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133663,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5dfb91c9-70fc-444a-8185-d4a0e6805ee8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have done the subtraction correctly, but you have given the numerator of the unsimplified answer. Use equivalent fractions with a denominator of 24, and don't forget to simplify your answer.",
+        "B": "I think you have added the numerators. We need to find equivalent fractions with the same denominator (24), and then do the subtraction. Don't forget to simplify your fraction.",
+        "C": "We need to use a common denominator of 24. 3/8 = 9/24. Then 9/24 - 5/24 = 4/24. When we simplify we get 1/6.",
+        "D": "I think you have subtracted the denominators. We need to find equivalent fractions with the same denominator (24), and then do the subtraction."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,159 @@
+{
+  "shortcode": "ehjy",
+  "name": "Initial value and rate of change 2",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 97,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate unit rates from a situation",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Determine the initial value of a function from a real life context presented with a verbal description",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Determine the initial value of a function from a real life context presented in a table or graph",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given a table of values, find the rate of change",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166851,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f61ddb0d-6e1c-47b7-b74f-29b0945101d6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have used the rate of change which is the charge per hour. We want to know how much the fixed call out fee was which is the fee before any hours of work have been completed. Can you find the difference between the cost of the hours worked and the total bill?",
+        "B": "George charges $35 per hour and works for 3 hours so 3 x 35 = $105. The total bill was $155 so the fixed cost will be the difference between the total bill and the charge for the hours. $155 - $105 = $50.",
+        "C": "I think you have worked out the charge for the hours worked. However the total charge is made up of hours worked plus a fixed charge. If you know the total bill and the charge for the hours worked, how can you work out the fixed cost?",
+        "D": "I think you may have taken off the charge for 1 hour of work but George completed 3 hours of work."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167101,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/325ba4ef-1ea6-472e-9ae4-798fcf1e5b26.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have used the rate of change which is the charge per hour. We want to know how much the fixed call out fee was which is the fee before any hours of work have been completed. Can you find the difference between the cost of the hours worked and the total bill?",
+        "B": "Simon charges $30 per hour and works for 4 hours so 4 x 30 = $120. The total bill was $165 so the fixed cost will be the difference between the total bill and the charge for the hours. $165 - $120 = $45.",
+        "C": "I think you have worked out the charge for the hours worked. However the total charge is made up of hours worked plus a fixed charge. If you know the total bill and the charge for the hours worked, how can you work out the fixed cost?",
+        "D": "I think you may have taken off the charge for 1 hour of work but Simon completes 4 hours of work."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166852,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/327b306f-6a60-4fb4-aee1-c690c7ca9dcd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have given the amount after one month but then Dave will have paid some back by then. We want the initial amount so before any money has been paid back - you could think of it as the amount at month zero.",
+        "B": "I think you might have looked at the highest value on the y axis but this won't always be the initial amount. Where does the graph begin? Think of it as the amount at month zero.",
+        "C": "I think you might have given the slope which is the amount Dave is paying back each month. The initial amount is how much he borrowed before he has paid any back.",
+        "D": "We can think of the initial amount as the amount of money at month zero, before he has started paying any back. At month zero the amount is $4500."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167102,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c2cd8980-a96e-40fd-b039-5b5684b00be2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might have given the slope which is the amount Jenny is paying back each month. The initial amount is how much she borrowed before she has paid any back.",
+        "B": "I think you have given the amount after one month but then Jenny will have paid some back by then. We want the initial amount so before any money has been paid back - you could think of it as the amount at month zero.",
+        "C": "We can think of the initial amount as the amount of money at month zero, before she has started paying any back. At month zero the amount is $3500.",
+        "D": "I think you might have looked at the highest value on the y axis but this won't always be the initial amount. Where does the graph begin? Think of it as the amount at month zero."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166853,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2348517f-2426-4fa0-8a7f-16038f78390d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful, I think you have given the amount of flour after 1 cake has been made. We need to figure out how much flour there was before any cakes were made. Can you use the table to work out how much flour is used per cake? Look closely at the values in the table!",
+        "B": "If we look at the values in the table we can see that 2 cakes uses 1kg of flour which means that one cake uses 0.5kg of flour. There was 14.5kg of flour after one cake had been made so there must have been 15 kg of flour to start with. 14.5 + 0.5 = 15",
+        "C": "Be careful! The table is not going up by one cake at a time. How much flour is used for 1 cake?",
+        "D": "I think you are getting confused between the initial amount and the slope. You have given the slope which is the amount of flour used per cake. If you know that and there was 14.5kg left after baking one cake, how much flour was there before any cakes were made?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167103,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0792ccb4-4325-440d-8590-e048ca7245aa.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you are getting confused between the initial amount and the slope. You have given the slope which is the amount of sugar used per cake. If you know that and there was 8.4kg left after baking one cake, how much flour was there before any cakes were made?",
+        "B": "Be careful, I think you have given the amount of sugar after 1 cake has been made. We need to figure out how much sugar there was before any cakes were made. Can you use the table to work out how much sugar is used per cake? Look closely at the values in the table!",
+        "C": "If we look at the values in the table we can see that 2 cakes uses 1.2kg of sugar which means that one cake uses 0.6kg of sugar. There was 8.4kg of sugar after one cake had been made so there must have been 9 kg of sugar to start with. 8.4 + 0.6 = 9.",
+        "D": "Be careful! The table is not going up by one cake at a time. How much sugar is used for 1 cake?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166854,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c7fd4a45-7a8a-4b87-9dc9-76919860002d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We don't know how much water was in the bucket to start with so we need to look at what has happened during the change in the water. There has been an increase of 6 litres of water in a time of 15 seconds. 6/15 = 0.4 so the rate is 0.4 litres per second.",
+        "B": "I think you have found the change in the volume of water which is a good start! But this won't give the rate. We need to know how many litres per second. You know it increased by 6 litres, over how many seconds was that?",
+        "C": "I think you may have got confused with direct proportion here but we don't know that the bucket was empty when we started. We can only work out the rate from when the water in the bucket changed. How much did it increase by? And over how many seconds did that happen?",
+        "D": "You're close! Remember it's litres per second so be careful about which way around you divide."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167104,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/045665ca-30bf-456b-ac77-80b3b53844d3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have got confused with direct proportion here but we don't know that the bucket was empty when we started. We can only work out the rate from when the water in the bucket changed. How much did it increase by? And over how many seconds did that happen?",
+        "B": "You're close! Remember it's litres per second so be careful about which way around you divide.",
+        "C": "I think you have found the change in the volume of water which is a good start! But this won't give the rate. We need to know how many litres per second. You know it increased by 6 litres, over how many seconds was that?",
+        "D": "We don't know how much water was in the bucket to start with so we need to look at what has happened during the change in the water. There has been an increase of 12 litres of water in a time of 15 seconds. 12/15 = 0.8 so the rate is 0.8 litres per second."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166855,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a99e0cdc-4921-4298-9b64-9a21fcf81449.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have looked at the cost for 2 miles and divided that by two - but be careful because there is a cost at zero miles too. If it costs $4 at zero miles and $7.60 at 2 miles, can you now work out the cost per mile?",
+        "B": "The cost at 0 miles is $4 and the cost at 2 miles is $7.60 this means that 2 miles costs $3.60 so 1 mile will cost $1.80. You could use any pairs of values from the table and find the difference between the miles divided by the difference in the cost.",
+        "C": "I think you may have confused initial value and slope. The initial value is the amount before any miles have been travelled. The slope is the rate per mile. Can you use the values in the table to work out how much it costs per mile?",
+        "D": "I think you may have divided $22 by 10 miles. But look at the start of the table, when zero miles have been travelled there is still a cost of $4 so you need to take that into account. What is the change in the cost for the change to go from zero to ten miles?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167105,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/be1a3584-3f77-4804-bfe9-f4667a68c7e4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The cost at 0 miles is $5 and the cost at 2 miles is $9.40 this means that 2 miles costs $4.40 so 1 mile will cost $2.20. You could use any pairs of values from the table and find the difference between the miles divided by the difference in the cost.",
+        "B": "I think you may have divided $27 by 10 miles. But look at the start of the table, when zero miles have been travelled there is still a cost of $5 so you need to take that into account. What is the change in the cost for the change to go from zero to ten miles?",
+        "C": "I think you may have looked at the cost for 2 miles and divided that by two - but be careful because there is a cost at zero miles too. If it costs $5 at zero miles and $9.40 at 2 miles, can you now work out the cost per mile?",
+        "D": "I think you may have confused initial value and slope. The initial value is the amount before any miles have been travelled. The slope is the rate per mile. Can you use the values in the table to work out how much it costs per mile?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

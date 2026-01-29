@@ -1,0 +1,141 @@
+{
+  "shortcode": "efku",
+  "name": "Writing Simple Expressions: One Step (Expression to Words)",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 138,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Write algebraic expressions with correct algebraic convention",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166219,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/75b5bf92-15c2-4450-a2d6-652e08c6deaf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Although this is a fraction, can you think about it in terms of a calculation ?",
+        "B": "You're close! Be careful with the order. Remember it matters the order that we divide in.",
+        "C": "Not quite. It doesn't mean multiply. What operation is it when it's written like a fraction? Think of the calculation...",
+        "D": "Written in a fraction with x in the numerator and 7 as the denominator means the quotient of x and 7."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166446,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3442a45e-c6c3-4155-8621-ee66c0b397e9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You're close! Be careful with the order. Remember it matters the order that we divide in.",
+        "B": "Not quite. It doesn't mean multiply. What operation is it when it's written like a fraction? Think of the calculation...",
+        "C": "Written in a fraction with t in the numerator and 4 as the denominator means the quotient of t and 4.",
+        "D": "Not quite. Although this is a fraction, can you think about it in terms of a calculation ?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166220,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/23660ba7-06b6-44b2-a1b9-0d84045ac05e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. You have stated what terms are there, but which mathematical operation is happening?",
+        "B": "Not quite! Look carefully. Which mathematical operation is happening between the 9 and the h?",
+        "C": "h more than 9 is the same as adding h onto 9.",
+        "D": "Close! Although it does mean 9 plus h, have a look at the answer you have chosen - does it fit the expression?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166447,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/92941c5d-1b95-4e39-9c89-d128fd548719.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Look carefully at the expression. Which mathematical operation is happening?",
+        "B": "Addition is commutative so we can add in any order. That means 6+p is the same as 6 more than p or p more than 6.",
+        "C": "Not quite. You have stated the terms that are there, but which mathematical operation is happening?",
+        "D": "Not quite! Look carefully. Which mathematical operation is happening between the 9 and the h?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166221,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5335854c-e103-4426-8ac8-07d71854d5c2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It matters the order we subtract in. We are starting with d and subtracting 12 from that, so d - 12 means d minus 12.",
+        "B": "Close! You have the correct operation, but remember it matters what order we subtract in. What are you starting with and what are you taking from that?",
+        "C": "Not quite! Although when we're finding a difference we do subtract, the order always matters. Think carefully about what this expression is saying...",
+        "D": "Almost! Read out the answer you have chosen, does it match the expression exactly?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166448,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/53cd721c-f9f4-443b-944d-82b8fa4d715d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Close! You have the correct operation, but remember it matters what order we subtract in. What are you starting with and what are you taking from that?",
+        "B": "Not quite! Although when we're finding a difference we do subtract, the order always matters. Think carefully about what this expression is saying...",
+        "C": "Almost! Read out the answer you have chosen, does it match the expression exactly?",
+        "D": "It matters the order we subtract in. We are starting with f and subtracting 9 from that so f - 9 means f minus 9."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166222,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/575c845c-68a2-4b8c-bb50-c2d060d4b499.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Think carefully about what the dot represents between the number and the letter. What mathematical operation is it?",
+        "B": "The dot is used to represent multiplication. Multiplying by 3 is the same as tripling.",
+        "C": "Not quite! Think carefully about what the dot represents between the number and the letter. What mathematical operation is it?",
+        "D": "Not quite! Think carefully about what the dot represents between the number and the letter. What mathematical operation is it?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166449,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c57c2d4d-38dc-4295-a75e-87f64e017289.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The dot is used to represent multiplication. Multiplying by 2 is the same as doubling.",
+        "B": "Not quite! Think carefully about what the dot represents between the number and the letter. What mathematical operation is it?",
+        "C": "Not quite! Think carefully about what the dot represents between the number and the letter. What mathematical operation is it?",
+        "D": "Not quite! Think carefully about what the dot represents between the number and the letter. What mathematical operation is it?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166223,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cc1587f1-f774-4425-a769-2a10dab51074.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Addition is commutative so it can be done in any order. If you wanted 2 more than g, what mathematical operation would you do?",
+        "B": "If you wanted the sum of g and 2, what mathematical operation would you do? Think about what the word 'sum' means.",
+        "C": "Remember addition is commutative so it can be done in any order.",
+        "D": "Adding 2 to something and multiplying by 2 (or doubling) are not the same thing. So 2 + g does not mean doubling the value of g."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166450,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/80ac3bbd-0798-4f26-af15-6ef7c5fc5659.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember addition is commutative so can be done in any order.",
+        "B": "Adding 7 to something and multiplying by 7 are not the same thing. So 7 + k does not mean 7 times the value of k.",
+        "C": "If you wanted k more than 7, what mathematical operation would you do? What does more than mean?",
+        "D": "If you wanted the sum of 7 and k, what mathematical operation would you do? Think about what the word 'sum' means."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

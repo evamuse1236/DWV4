@@ -1,0 +1,147 @@
+{
+  "shortcode": "bitk",
+  "name": "Rounding to 10 and 100",
+  "collectionId": 33,
+  "level": 1,
+  "sequence": 15,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Round integers to the nearest 10",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Round integers to the nearest 100",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158767,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2c2fdc04-cddb-4bd7-800b-8739a6baf1e7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Rounding to the nearest 10 means choosing the number in the 10 times table that is closest to 43, so either 40 or 50. 43 is before the midpoint of the line, so it is closer to 40.",
+        "B": "45 is the closest point on the number line to 43, but we want the nearest 10. That means the nearest number that is in the 10 times table, so 40 or 50.",
+        "C": "We want to choose the nearest 10 to 43. Picture where 43 is on this line. Is it before 45 or after? Anything that is before 45 will be closer to 40, anything from 45 onwards will be closer to 50.",
+        "D": "Rounding to the nearest 10 means choosing the number in the 10 times table that is closest to 43, so either 40 or 50. Is 43 closer to 40 or 50?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158966,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cb1db52a-d471-4795-b212-00659e75619d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "65 is the closest point on the number line to 64, but we want the nearest 10. That means the nearest number that is in the 10 times table, so 60 or 70.",
+        "B": "Rounding to the nearest 10 means choosing the number in the 10 times table that is closest to 64, so either 60 or 70. Is 64 closer to 60 or 70?",
+        "C": "Rounding to the nearest 10 means choosing the number in the 10 times table that is closest to 64, so either 60 or 70. 64 is before the midpoint of the line, so it is closer to 60.",
+        "D": "We want to choose the nearest 10 to 64. Picture where 64 is on this line. Is it before 65 or after? Anything that is before 65 will be closer to 60, anything from 65 onwards will be closer to 70."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158768,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/037c97fd-e791-459d-bc3d-b9b7d08a7125.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We want to choose the nearest 100 to 172. Picture where 172 is on this line. Is it before 150 or after? Anything that is before 150 will be closer to 100, anything from 150 onwards will be closer to 200.",
+        "B": "170 is the nearest ten, but we want the nearest hundred, so 100 or 200.",
+        "C": "150 is the closest point on the number line to 172, but we want the nearest 100. That means the nearest number that is in the 100 times table, so 100 or 200.",
+        "D": "Rounding to the nearest 100 means choosing the number in the 100 times table that is closest to 172, so either 100 or 200. 172 is after the midpoint of the line, so it is closer to 200."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158967,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/70a388f2-b564-4b57-982c-dd73b5453617.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We want to choose the nearest 100 to 145. Picture where 145 is on this line. Is it before 150 or after? Anything that is before 150 will be closer to 100, anything from 150 onwards will be closer to 200.",
+        "B": "Rounding to the nearest 100 means choosing the number in the 100 times table that is closest to 145, so either 100 or 200. 145 is before the midpoint of the line, so it is closer to 100.",
+        "C": "Rounding to the nearest 100 means choosing the number in the 100 times table that is closest to 145, so either 100 or 200. Is 145 closer to 100 or 200?",
+        "D": "150 is the closest point on the number line to 145, but we want the nearest 100. That means the nearest number that is in the 100 times table, so 100 or 200."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158769,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1385a528-87c8-491c-8fbf-ccbd37a8aca6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have multiplied by 10, but rounding means finding the closest number in the 10 times table. That will be either 70 or 80.",
+        "B": "75 is right in the middle of 70 and 80, but we have a rule that a number in the middle always rounds up, not down.",
+        "C": "Rounding to the nearest 10 means choosing the number in the 10 times table that is closest to 75, so either 70 or 80. When we have a number that is right in the middle like 75, we always round up, so the \"nearest 10\" is 80.",
+        "D": "You have divided by 10, but rounding means finding the closest number in the 10 times table. That will be either 70 or 80."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158968,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/170a0cc6-669e-4bf1-9b6d-b6d52650e8ca.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have divided by 10, but rounding means finding the closest number in the 10 times table. That will be either 20 or 30.",
+        "B": "Rounding to the nearest 10 means choosing the number in the 10 times table that is closest to 25, so either 20 or 30. When we have a number that is right in the middle like 25, we always round up, so the \"nearest 10\" is 30.",
+        "C": "25 is right in the middle of 20 and 30, but we have a rule that a number in the middle always rounds up, not down.",
+        "D": "You have multiplied by 10, but rounding means finding the closest number in the 10 times table. That will be either 20 or 30."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158770,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/40e57b4d-5afe-4747-9f17-299c566ae92e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have multiplied by 100, but rounding means finding the closest number in the 100 times table. That will be either 300 or 400.",
+        "B": "350 is very close to 348, but we are rounding to the nearest 100, so we have to choose a number in the 100 times table.",
+        "C": "Rounding to the nearest 100 means choosing the number in the 100 times table that is closest to 348, so either 300 or 400. 348 is just before the midpoint of these two numbers, so it is closer to 300.",
+        "D": "Picture 348 on a number line with 300 and 400. Anything from the midpoint (350) onwards would round up to 400, but is 348 after the midpoint, or before?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158969,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/33c5a94a-e885-4934-8447-74942701c99d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Rounding to the nearest 100 means choosing the number in the 100 times table that is closest to 975, so either 900 or 1000. 975 is after the midpoint of these two numbers, so it is closer to 1000.",
+        "B": "Picture 975 on a number line with 900 and 1000. Anything from the midpoint (950) onwards would round up to 1000.",
+        "C": "980 is very close to 975, but we are rounding to the nearest 100, so we have to choose a number in the 100 times table.",
+        "D": "You have multiplied by 100, but rounding means finding the closest number in the 100 times table. That will be either 900 or 1000."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158771,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/768386c9-1d60-4fba-a6ca-b921c3a8be71.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "30 is the nearest ten, but we want the nearest hundred.",
+        "B": "You have multiplied by 10, but rounding means finding the closest number in the 100 times table. That will be either 0 or 100.",
+        "C": "You might have been confused because 26 is between 0 and 100, so you thought the nearest hundred had to be 100. But 0 still counts as a hundred when we are rounding, so which is 26 closer to, 0 or 100?",
+        "D": "26 is between 0 and 100, so rounding to the nearest hundred means choosing which of these it is closer to. 26 is closer to 0 than 100, so it rounds to 0."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158970,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c6900ade-fe48-4355-abec-01e3f04e5328.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "50 is the nearest ten, but we want the nearest hundred.",
+        "B": "You might have been confused because 49 is between 0 and 100, so you thought the nearest hundred had to be 100. But 0 still counts as a hundred when we are rounding, so which is 49 closer to, 0 or 100?",
+        "C": "49 is between 0 and 100, so rounding to the nearest hundred means choosing which of these it is closer to. 49 is closer to 0 than 100, so it rounds to 0.",
+        "D": "You have multiplied by 10, but rounding means finding the closest number in the 100 times table. That will be either 0 or 100."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

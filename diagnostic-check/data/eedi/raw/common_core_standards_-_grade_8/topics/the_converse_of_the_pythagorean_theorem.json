@@ -1,0 +1,147 @@
+{
+  "shortcode": "ehj4",
+  "name": "The converse of the Pythagorean Theorem",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 135,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify whether triangles are right angled using Pythagoras",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Proof of the converse of the Pythagorean Theorem (US)",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 79640,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/38e06648-462f-4dc1-805e-860883496efd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! I think you have forgotten to square your side lengths to use Pythagoras' Theorem correctly.",
+        "B": "Not quite. Remember that a right angled triangle will fit the formula: a² + b² = c², so check if 11² + 11² = 18². Then check out the other triangles the same way.",
+        "C": "Almost! This feels like it might be a Pythagorean triple, however, a right angled triangle will always fit the formula: a² + b² = c². Does 5² + 6² = 7²?",
+        "D": "A right angled triangle will always fit the formula: a² + b² = c². Here we have 21² + 28² = 35², so this is a right-angled triangle."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79684,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1a507fde-5240-4ff8-909a-e4c3e3a96e93.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! It's tempting to feel that 15 and 17 are too close together, however a right angled triangle will always fit the formula: a² + b² = c². Here we have 8² + 15² = 17², so this is a right-angled triangle.",
+        "B": "Remember, the hypotenuse is always the longest side, in this case 26, so we use this for 'c' in the formula a² + b² = c². Here we have 10² + 24² = 26², so this is a right-angled triangle.",
+        "C": "A right angled triangle will always fit the formula: a² + b² = c². Here we have 12² + 17² = 433, and √433= 20.8cm, which is not equal to 21cm, so this is not a right-angled triangle.",
+        "D": "Not quite! A right angled triangle will always fit the formula: a² + b² = c². Here we have 15² + 20² = 25², so this is a right-angled triangle."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166871,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e80dfb47-5b84-44fe-ab3e-f05c6bbaff42.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you are confusing the Pythagorean theorem with its converse. Remember, converse means we switch the if/then statements, so the converse of the Pythagorean theorem is if 𝑎² + 𝑏² = 𝑐², then the triangle is a right-angled triangle. Which statement allows us to prove the converse?",
+        "B": "The converse of the Pythagorean theorem is if 𝑎² + 𝑏² = 𝑐², then the triangle is a right-angled triangle. The first step to prove the converse is to construct a different right-angled triangle with legs equal to the original triangle. We can then use triangle congruency as the basis for our proof.",
+        "C": "Remember, converse means we switch the if/then statements, so the converse of the Pythagorean theorem is if 𝑎² + 𝑏² = 𝑐², then the triangle is a right-angled triangle. Our focus will be on the side lengths, not the angles. Which statement will let us create congruent triangles as our proof?",
+        "D": "We cannot assume we know the height or the base. Remember, converse means we switch the if/then statements, so the converse of the Pythagorean theorem is if 𝑎² + 𝑏² = 𝑐², then the triangle is a right-angled triangle. Which statement will let us create congruent triangles as our proof?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167121,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5384c2da-b986-4baf-a826-60bc7de03743.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The choice of letters doesn't matter. Remember, converse means we switch the if/then statements, so the converse of the Pythagorean theorem is if p² + q² = r², then the triangle is a right-angled triangle. What is Maria trying to prove?",
+        "B": "The converse of the Pythagorean theorem is if p² + q² = r², then the triangle is a right-angled triangle. The first step to prove the converse is to construct a different right-angled triangle with legs equal to the original triangle. Maria can then use triangle congruency as the basis for her proof.",
+        "C": "Calculating area is not part of this proof. Remember, converse means we switch the if/then statements, so the converse of the Pythagorean theorem is if p² + q² = r², then the triangle is a right-angled triangle. What is Maria trying to prove?",
+        "D": "Not quite. She was given p² + q² = r², so she can be sure of that. Remember, converse means we switch the if/then statements, so the converse of the Pythagorean theorem is if p² + q² = r², then the triangle is a right-angled triangle. What is Maria trying to prove?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166872,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d27c7e6a-381f-4bfe-987b-22895fda4f0f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The converse of the Pythagorean theorem is if 𝑎² + 𝑏² = 𝑐², then the triangle is a right-angled triangle. What is the goal of our proof? How might we accomplish that goal using a second right-angled triangle and triangle congruencies?",
+        "B": "The converse of the Pythagorean theorem is if 𝑎² + 𝑏² = 𝑐², then the triangle is a right-angled triangle. Our goal is to prove the triangle is right-angled. We can accomplish that goal using a second right-angled triangle and triangle congruencies.",
+        "C": "Not quite. This proof won't require the use of trig ratios. The converse of the Pythagorean theorem is if 𝑎² + 𝑏² = 𝑐², then the triangle is a right-angled triangle. What is the goal of our proof? How might we accomplish that goal using a second right-angled triangle and triangle congruencies?",
+        "D": "It looks like you think we need the area, but the converse of the Pythagorean theorem is if 𝑎² + 𝑏² = 𝑐², then the triangle is a right-angled triangle. What is the goal of our proof? How might we accomplish that goal using a second right-angled triangle and triangle congruencies?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167122,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/18826810-58ca-4b81-aa84-bac5d16a673b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Close! It is helpful to look at the second triangle, but it serves a bigger purpose. The converse of the Pythagorean theorem is if 𝑎² + 𝑏² = 𝑐², then the triangle is a right-angled triangle. What is the goal of our proof? How might the second triangle help in accomplishing this goal?",
+        "B": "Not quite. This second triangle is a key step in this specific proof. The converse of the Pythagorean theorem is if 𝑎² + 𝑏² = 𝑐², then the triangle is a right-angled triangle. It may help to consider what is the goal of our proof?",
+        "C": "The converse of the Pythagorean theorem is if 𝑎² + 𝑏² = 𝑐², then the triangle is a right-angled triangle. Our goal is to prove the triangle is right-angled. We can accomplish that goal using a second right-angled triangle and triangle congruencies.",
+        "D": "We want to stay focused on this converse of the Pythagorean Theorem. The converse of the Pythagorean theorem is if 𝑎² + 𝑏² = 𝑐², then the triangle is a right-angled triangle. Our goal is to prove the triangle is right-angled. How might the second triangle help in accomplishing this goal?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166873,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b8adc847-3dce-4670-8b7f-aa737df180d0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. We constructed two of the side lengths and the included angle is a right angle. Our goal is to prove that the Triangle 2 is a copy of Triangle 1. Think about what we know about corresponding sides and triangle congruencies.",
+        "B": "Think about your triangle congruencies. Is there a side-side congruency?",
+        "C": "Since we know there is a right angle between 𝑎 and 𝑏 on Triangle 2, we know 𝑎² + 𝑏² = 𝑥², and we were given 𝑎² + 𝑏² = 𝑐² on Triangle 1, therefore 𝑐² = 𝑥². Thus 𝑐 = 𝑥.",
+        "D": "I think you are a bit confused about how to find the converse of the Pythagorean Theorem. We cannot apply the converse to Triangle 1--we must have Triangle 2 to make this proof."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167123,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9cdba7ed-a0ea-4a8f-b0f7-ad24f74304d6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Since we know there is a right angle between 𝑝 and 𝑞 on Triangle 2, we know 𝑝² + 𝑞² = ℎ², and we were given 𝑝² + 𝑞² = 𝑟² on Triangle 1, therefore 𝑟² = ℎ². Thus 𝑟 = ℎ.",
+        "B": "Think about your triangle congruencies. Is there a side-side congruency?",
+        "C": "Not quite. We constructed two of the side lengths and the included angle is a right angle. Our goal is to prove that Triangle 2 is a copy of Triangle 1. Think about what we know about corresponding sides and triangle congruencies.",
+        "D": "The hypotenuse is the longest side, but that does not justify the conclusion that these two hypotenuses are equal to each other. How can we use the information that has been given to use to prove that 𝑟 = ℎ?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166874,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0eafba81-b6f6-461d-be51-139fd776bd40.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We knew 𝑎 = 𝑎, 𝑏 = 𝑏, and we were able to prove 𝑐 = 𝑥. We can use Side-Side-Side congruence to prove Triangle 1 and Triangle 2 are congruent to each other. Therefore the angles are also congruent, thus proving Triangle 1 is also a right-angle triangle.",
+        "B": "Be careful! We cannot go by looks alone when proving mathematically. We must use our rules and logic to justify and defend our thinking. Now that we know all three sides are identical on each triangle, what congruency could we use to prove the original triangle is a right-angled triangle?",
+        "C": "In order to use Angle-Side-Angle, we have to have been given two angles on our original triangle, Triangle 1. Were we given any angles on Triangle 1? What were we given on Triangle 1 and what did we prove? What congruency rule could we use with this information?",
+        "D": "I think you may be confusing having the same perimeters with having the same side lengths. Remember, perimeter is the sum of the side lengths, and there are many different ways to get the same sum. To have congruent triangles, we must have congruent sides."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167124,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/944425a7-2808-422e-bfa4-9256929d324a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Similar figures have corresponding angles and side lengths that increase by the same scale factor. We have two figures with identical sides. What does it mean if we prove Side-Side-Side congruence? What can we say about the angles?",
+        "B": "We knew 𝑝 = 𝑝, 𝑞 = 𝑞, and we were able to prove 𝑟 = ℎ, we can use Side-Side-Side congruence to prove Triangle 1 and Triangle 2 are congruent to each other. Therefore the angles are also congruent.",
+        "C": "Both triangles will have the same area. What does it mean if we prove Side-Side-Side congruence? What can we say about the angles?",
+        "D": "I think you may be confused. We have to use two different triangles to make this comparison. What does it mean if we prove Side-Side-Side congruence? What can we say about the angles?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

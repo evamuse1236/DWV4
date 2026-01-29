@@ -1,0 +1,147 @@
+{
+  "shortcode": "ehj1",
+  "name": "The effect of rigid motions and dilations",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 121,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify a sequence of transformations that produce congruent shapes (US)",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Know how an ordered pair will change when dilated from the origin (US)",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166861,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cfefec9a-b3be-4c0e-a5b9-e9a76e189302.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you believe either the reflection or translation will change the line length, but neither transformation does. Try carrying out the transformations on the lines to see where they end up and what, if anything, changes.",
+        "B": "When the lines are reflected in the y axis, they go from having positive to negative slopes. The length of the lines remains unchanged, as does the fact they are parallel and the distances between A and C and B and D remain at 1 unit.",
+        "C": "I think you believe either the reflection or translation will change the slope of the two lines differently. Try carrying out the transformations on the lines to see where they end up and what, if anything, changes.",
+        "D": "I think you believe either the reflection or translation will change the distances between the two sets of points. Try carrying out the transformations on the lines to see where they end up and what, if anything, changes."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167111,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/835b063a-20df-45eb-bd76-0e2f54f7a08a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you believe either the reflection or translation will change the slope of the two lines differently. Try carrying out the transformations on the lines to see where they end up and what, if anything, changes.",
+        "B": "I think you believe either the reflection or translation will change the distances between the two points. Try carrying out the transformations on the lines to see where they end up and what, if anything, changes.",
+        "C": "The reflection and translation will keep the points the same distance apart. The line segments will still be parallel, and their slope will go from being positive to negative when reflected in the x axis.",
+        "D": "I think you believe the slope will remain unchanged. Try carrying out the transformations to see what remains the same, and what changes."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166862,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/515b09b9-4518-4443-83da-887d8cca8506.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you believe a translation would affect the slope of the two lines differently. Try carrying out all 3 rigid motions to a set of parallel lines. What happens to those lines?",
+        "B": "I think you believe a reflection would affect the slope of the two lines differently. Try carrying out all 3 rigid motions to a set of parallel lines. What happens to those lines?",
+        "C": "I think you believe a rotation would affect the slope of the two lines differently. Try carrying out all 3 rigid motions to a set of parallel lines. What happens to those lines?",
+        "D": "Neither a reflection, rotation or translation would affect the slope of the two lines differently, and therefore neither would any combination of these."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167112,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/18169906-8b30-4cb4-8951-fc47637fa7cb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you believe that a translation and/or reflection would change the slope of the two lines differently. Try carrying out the 2 rigid motions to a set of parallel lines. What happens to those lines?",
+        "B": "I think you believe that a reflection and/or rotation would change the slope of the two lines differently. Try carrying out the 2 rigid motions to a set of parallel lines. What happens to those lines?",
+        "C": "I think you believe that a rotation and/or translation would change the slope of the two lines differently. Try carrying out the 2 rigid motions to a set of parallel lines. What happens to those lines?",
+        "D": "Neither a reflection, rotation or translation would affect the slope of the two lines differently, and therefore neither would any combination of these."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166863,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/098f930f-d9c6-4719-a0dc-85e827e9d7bf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "When carrying out a dilation, the distance from the centre of dilation is also multiplied by the scale factor. 6 x 1/3 = 2 and 9 x 1/3 = 3.",
+        "B": "I think you have multiplied the distance from the centre of dilation by 3, but the scale factor is 1/3, not 3. Think about whether it will get closer to the centre, or further away.",
+        "C": "I think you have added 1/3 to the distance from the centre of dilation. Remember with dilations the distances are multiplied by the scale factor.",
+        "D": "Almost, but remember the whole of the coordinate is affected by the dilation, not just the x coordinate."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167113,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cb18d6e2-588f-4f5f-af2b-3c10359a04de.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost, but remember the whole of the coordinate is affected by the dilation, not just the 𝑥 coordinate.",
+        "B": "I think you have added 4 to the distance from the centre of dilation. Remember with dilations the distances are multiplied by the scale factor.",
+        "C": "I think you have multiplied the distance from the centre of dilation by 1/4, but the scale factor is 4, not 1/4. Think about whether it will get closer to the centre, or further away.",
+        "D": "When carrying out a dilation, the distance from the centre of dilation is also multiplied by the scale factor. 3 x 4 = 12 and 6 x 4 = 24"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166864,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9e315db0-49ff-49c6-a708-7dee3ad4e9d9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you are confusing similar and congruent. Remember congruent means the shape will be exactly the same size, which is not true when it has been dilated with scale factor 2. Try drawing out the shape and carry out the transformation.",
+        "B": "When dilated the distance from the centre will be multiplied by the scale factor. When the centre is the origin, this means the coordinates will just multiply by the scale factor, so in this case double, and therefore the side lengths will also double.",
+        "C": "I think you have added the scale factor to the coordinates, but remember that when dilating with the centre at the origin, the coordinates will be doubled as the distance from the centre doubles.",
+        "D": "Almost, but remember that dilations produce similar shapes, so the angles are unchanged."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167114,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d6cea498-3d54-4582-83fc-361f861eb943.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "When dilated the distance from the centre will be multiplied by the scale factor. When the centre is the origin, this means the coordinates will be multiplied by the scale factor, so in this case will be halved, and therefore the side lengths will also be halved.",
+        "B": "I think you have multiplied the lengths by 2 rather than by the scale factor of 1/2.",
+        "C": "Almost, but remember that dilations produce similar shapes, so the angles are unchanged.",
+        "D": "I think you are confusing similar and congruent. Remember congruent means the shape will be exactly the same size, which is not true when it has been dilated with scale factor 1/2. Try drawing out the shape and carry out the transformation."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166865,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a9966220-cd82-4f93-8d8e-bcb103f98d95.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added to the coordinate, but remember dilation is multiplicative.",
+        "B": "When dilated the distance from the centre will be multiplied by the scale factor. When the centre is the origin, this means the coordinates will just be multiplied by the scale factor, which in this case is 4.",
+        "C": "I think you have divided the coordinates by the scale factor of 4. Remember we need to multiply by the scale factor when dilating from the origin.",
+        "D": "Almost, but remember the whole of the coordinate is affected by the dilation, not just the 𝑥 coordinate."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167115,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c5c8bebd-5b12-4b5d-8087-4dd1d04f3b85.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have multiplied by 3, but the scale factor is 1/3. Remember we need to multiply by the scale factor when dilating from the origin.",
+        "B": "Almost, but remember the whole of the coordinate is affected by the dilation, not just the 𝑥 coordinate.",
+        "C": "I think you have added to the coordinate, but remember dilation is multiplicative.",
+        "D": "When dilated the distance from the centre will be multiplied by the scale factor. When the centre is the origin, this means the coordinates will just be multiplied by the scale factor, which in this case is 1/3."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

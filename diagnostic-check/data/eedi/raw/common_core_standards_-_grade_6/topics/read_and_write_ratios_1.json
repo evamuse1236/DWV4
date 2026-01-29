@@ -1,0 +1,159 @@
+{
+  "shortcode": "vmo",
+  "name": "Read and write ratios 1",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 2,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Express pictorial representations of objects as a ratio",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Convert ratios to fractions",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Convert fractions to ratios",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Understand the relationship between parts of a ratio",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 75970,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f531a08d-4d2b-4bf3-afa5-afddeb0fd9db.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have found the ratio of green counters to the total number of counters. We need to find the ratio of the number of green counters to the number of yellow counters.",
+        "B": "I think you have found the ratio of green counters to the total number of counters. We need to find the ratio of the number of green counters to the number of yellow counters.",
+        "C": "There are 6 green counters and 3 yellow counters, so the ratio is 6:3.",
+        "D": "This is the ratio of yellow to green. We need green to yellow."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 76118,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/870d3c06-b5ba-4e5a-b4ed-b3037e23030e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There are 5 red counters and 2 yellow counters, so the ratio is 5:2.",
+        "B": "This is the ratio of yellow to red. We need red to yellow.",
+        "C": "I think you have found the ratio of red counters to the total number of counters. We need to find the ratio of the number of red counters to the number of yellow counters.",
+        "D": "I think you have found the ratio of yellow counters to the total number of counters. We need to find the ratio of the number of red counters to the number of yellow counters."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 75973,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5b33e42b-f7a9-45fb-aafe-b833d78b2699.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the ratio of boys to total students. We need the number of girls as the second part of the ratio.",
+        "B": "For every 7 students, 3 are boys and 4 are girls. The ratio is then 3:4.",
+        "C": "I think you have added the numerator and denominator to get the second number in the ratio. We need the number of girls as the second number in the ratio",
+        "D": "This is the ratio of girls to boys. We need boys to girls"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 76121,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/546781c5-fd87-4064-a116-9fcb70787a1d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the ratio of boys to total students. We need the number of boys as the first part of the ratio, and the number of girls as the second part.",
+        "B": "If 2/7 are boys, then for every 2 boys there are 7 - 2 = 5 girls. So the ratio of girls to boys is 5:2.",
+        "C": "This is the ratio of boys to girls. We need girls to boys.",
+        "D": "This is the ratio of boys to girls. We need girls to boys."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 75981,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/25302231-7c07-48de-b548-f48e488153d5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you used the numbers in the ratio and put a fraction line in for the \":\" Think about how many parts there are in total in the drink.",
+        "B": "This is the fraction that is yoghurt, we need the fraction of water.",
+        "C": "The total number of parts is 5 + 1 = 6, so the drink is 1/6th water.",
+        "D": "We do have enough information here. Remember each part is the same size, so we just need to know how many parts are water, and how many parts there are in total."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 76129,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bc174dc7-f3c8-440a-a707-fc395156b0da.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The numerator is the number of parts that are water which is 1, and the denominator is the total number of parts, 3 + 1 = 4.",
+        "B": "This is the fraction that is yoghurt, we need the fraction of water.",
+        "C": "I think you used the numbers in the ratio and put a fraction line in for the \":\" Think about how many parts there are in total in the drink.",
+        "D": "We do have enough information here. Remember each part is the same size, so we just need to know how many parts are water, and how many parts there are in total"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101385,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/824f6977-b6e2-40fb-a1df-28656da43d69.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you found the ratio of squares to all the shapes. We need to find the ratio of the number of squares to the number of circles.",
+        "B": "I think you found the ratio of squares to all the shapes. We need to find the ratio of the number of squares to the number of circles.",
+        "C": "There are 6 squares and 3 circles. This means that the ratio of squares to circles is 6 : 3. The order in which this ratio is written is important.",
+        "D": "You have found the ratio of circles to squares. We need squares to circles"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101403,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6a9e3110-c6d6-41a4-bae3-c7e0327c096a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you found the ratio of circles to all the shapes. We need to find the ratio of the number of squares to the number of circles.",
+        "B": "There are 8 squares and 5 circles. This means that the ratio of squares to circles is 8 : 5. The order in which this ratio is written is important.",
+        "C": "I think you found the ratio of squares to all the shapes. We need to find the ratio of the number of squares to the number of circles.",
+        "D": "You have found the ratio of circles to squares. We need squares to circles."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101389,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6130f05d-d963-42d8-84c1-a23da0972aec.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Try drawing a diagram to represent the ratio, and see if each statement is correct.",
+        "B": "Not quite. Try drawing a diagram to represent the ratio, and see if each statement is correct.",
+        "C": "Picture the ratio, with people, in its simplest form: your picture has 1 teacher and 9 students. Multiplying this 1 teacher by 9 will give you the number of students, making Tom’s statement correct. Katie is also right: in your picture there are 10 people altogether, and one of those is a teacher, making her ‘one in ten’ statement correct.",
+        "D": "Not quite, at least one person is correct. Try drawing a diagram to represent the ratio, and see if each statement is correct."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101407,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/03b044cc-aea5-41e6-b2bc-5fb612d41a0c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Picture the ratio, with people, in its simplest form: your picture has 2 men and 7 women. Multiplying the 2 men by 3.5 will give you the number of women, making Jo’s statement correct. Paul is incorrect: In your picture there are 9 people altogether, and two of those are men, meaning the correct statement would be ‘two in nine people are men’.",
+        "B": "Not quite. Try drawing a diagram to represent the ratio, and see if each statement is correct.",
+        "C": "Not quite. Try drawing a diagram to represent the ratio, and see if each statement is correct.",
+        "D": "Not quite, at least one person is correct. Try drawing a diagram to represent the ratio, and see if each statement is correct."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,165 @@
+{
+  "shortcode": "vse",
+  "name": "Direct proportion equations",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 22,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Recognise direct proportion in the form y = kx² from a table of numbers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Work out missing quantities from direct proportion problems using an equation in the form y = kx²",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Complete missing values in tables for variables with the proportional relationship kx³",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Form equations in the form y = kx³ from direct proportion scenarios",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Complete missing values in tables for variables with the proportional relationship k√x",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 135162,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ff0ff4f8-9145-4b96-a888-668127304973.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "q is directly proportional to q², meaning we must multiply p² by the same number each time to get q. For each value of p, check what p² has been multiplied by to get q.",
+        "B": "This table shows inverse proportion (as p² goes up, q goes down). We want the table where p² is multiplied by the same amount each time to get q.",
+        "C": "q is directly proportional to q², meaning we must multiply p² by the same number each time to get q. In this table, when p = 1, p² = 1, then multiply by 6 to get q = 6. When p = 2, p² = 4, then multiply by 6 again to get q = 24.",
+        "D": "Careful, q is proportional to p² not just p."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135182,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6d574dff-0599-46c4-8c27-a50de8e9481c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Careful, q is proportional to p² not just p.",
+        "B": "q is directly proportional to q², meaning we must multiply p² by the same number each time to get q. In this table, when p = 1, p² = 1, then multiply by 8 to get q = 8. When p = 2, p² = 4, then multiply by 8 again to get q = 32.",
+        "C": "q is directly proportional to q², meaning we must multiply p² by the same number each time to get q. For each value of p, check what p² has been multiplied by to get q.",
+        "D": "This table shows inverse proportion (as p² goes up, q goes down). We want the table where p² is multiplied by the same amount each time to get q."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135163,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4b4dda3e-9adc-4653-9415-5d0420912879.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "d is directly proportional to t², meaning we must multiply t² by the same number each time to get d. What was 4² multiplied by to get 80? Multiply 3² by the same amount.",
+        "B": "Careful, d is proportional to t², not just t.",
+        "C": "d is directly proportional to t², meaning we must multiply t² by the same number each time to get d. What was 4² multiplied by to get 80? Multiply 3² by the same amount.",
+        "D": "d is directly proportional to t², meaning we must multiply t² by the same number each time to get d. In this table, when t = 4, t² = 16, then multiply by 5 to get d = 80. When t = 3, t² = 9, then multiply by 5 again to get d = 45."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135183,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1bde6d30-8df9-427d-ba8c-23ccd215bd69.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "d is directly proportional to t², meaning we must multiply t² by the same number each time to get d. In this table, when t = 6, t² = 36, then multiply by 3 to get d = 108. When t = 3, t² = 9, then multiply by 3 again to get d = 27.",
+        "B": "Careful, d is proportional to t², not just t.",
+        "C": "d is directly proportional to t², meaning we must multiply t² by the same number each time to get d. What was 6² multiplied by to get 108? Multiply 3² by the same amount.",
+        "D": "d is directly proportional to t², meaning we must multiply t² by the same number each time to get d. What was 6² multiplied by to get 108? Multiply 3² by the same amount."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135164,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/66681827-2a8e-4aad-99a5-942a1a837043.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "q is directly proportional to √p, meaning we must multiply √p by the same thing each time to get q. √9 = 3 and 3 x 2 = 6, so take √25 and multiply by 2. √25 x 2 = 5 x 2 = 10.",
+        "B": "Careful, q is proportional to √p, not just p. What was √9 multiplied by to get 6?",
+        "C": "q is directly proportional to √p, meaning we must multiply √p by the same number each time to get q. What was √9 multiplied by to get 6? Multiply √25 by the same thing.",
+        "D": "q is directly proportional to √p, meaning we must multiply √p by the same number each time to get q. What was √9 multiplied by to get 6? Multiply √25 by the same thing."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135184,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c99335e1-d08f-4ef6-ae36-8170f09b9421.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "q is directly proportional to √p, meaning we must multiply √p by the same number each time to get q. What was √9 multiplied by to get 15? Multiply √36 by the same thing.",
+        "B": "q is directly proportional to √p, meaning we must multiply √p by the same thing each time to get q. √9 = 3 and 3 x 5 = 15, so take √36 and multiply by 5. √36 x 5 = 6 x 5 = 30.",
+        "C": "Careful, q is proportional to √p, not just p. What was √9 multiplied by to get 15?",
+        "D": "q is directly proportional to √p, meaning we must multiply √p by the same number each time to get q. What was √9 multiplied by to get 15? Multiply √36 by the same thing."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135165,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6e8503c9-8419-460e-ae7f-d70ecb8b88cc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "q is directly proportional to p³, meaning we must multiply p³ by the same number each time to get q. 2³= 2 x 2 x 2 = 8, then multiply by 2 to get 16. 3³ = 3 x 3 x 3 = 27, then multiply by 2 to get 54.",
+        "B": "q is directly proportional to p³, meaning we must multiply p³ by the same number each time to get q. What was 2³ multiplied by to get 16? Multiply 3³ by the same thing.",
+        "C": "Careful, q is proportional to p³, not just p. What was 2³ multiplied by to get 16?",
+        "D": "q is directly proportional to p³, meaning we must multiply p³ by the same number each time to get q. What was 2³ multiplied by to get 16? Multiply 3³ by the same thing."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135185,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/46ab2faa-b3ad-4126-ae48-52e3f2aabe1e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Careful, q is proportional to p³, not just p. What was 2³ multiplied by to get 4?",
+        "B": "q is directly proportional to p³, meaning we must multiply p³ by the same number each time to get q. What was 2³ multiplied by to get 4? Multiply 4³ by the same thing.",
+        "C": "q is directly proportional to p³, meaning we must multiply p³ by the same number each time to get q. 2³ = 2 x 2 x 2 = 8, and multiply by 1/2 to get 4. 4³ = 4 x 4 x 4 = 64 and multiply by 1/2 to get 32.",
+        "D": "q is directly proportional to p³, meaning we must multiply p³ by the same number each time to get q. What was 2³ multiplied by to get 4? Multiply 4³ by the same thing."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135166,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4978c441-c53c-45bd-bc67-5ee7a199c11d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "d is directly proportional to t³, but to complete the equation you need to calculate what t³ is multiplied by to get d. What is 6³ multiplied by to get 1512?",
+        "B": "d is directly proportional to t³, not just t, so what is 6³ multiplied by to get 1512?",
+        "C": "d is directly proportional to t³, so what is 6³ multiplied by to get 1512?",
+        "D": "The cube of t = 6³ = 216. 1512 ÷ 216 = 7, so we know t³ is multiplied by 7 to get d. The equation is d=7t³"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135186,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ec746c53-aeab-497f-93b7-48695ed4c7b0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "d is directly proportional to t³, not just t, so what is 5³ multiplied by to get 500?",
+        "B": "d is directly proportional to t³, so what is 5³ multiplied by to get 500?",
+        "C": "The cube of t = 5³ = 125. 500 ÷ 125 = 4, so we know t³ is multiplied by 4 to get d. The equation is d=4t³",
+        "D": "d is directly proportional to t³, so what is 5³ multiplied by to get 500?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

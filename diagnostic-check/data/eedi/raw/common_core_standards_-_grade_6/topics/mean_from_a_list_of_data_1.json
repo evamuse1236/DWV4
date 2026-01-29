@@ -1,0 +1,147 @@
+{
+  "shortcode": "vrq",
+  "name": "Mean from a list of data 1",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 239,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate the mean as an average from a list of data",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve missing number problems involving the mean",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 107849,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/66ca63e4-fda2-49be-aaf7-31773de1ec92.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly there! :) You have found the total of all the numbers. There's an extra step you need to do...",
+        "B": "The total of the numbers is 2 + 2 + 3 + 5 + 8 = 20. Dividing by 5 (the amount of numbers in the list) gives the mean as 20/5 = 4",
+        "C": "Not quite, I think you have found the median. Try again to find the mean :)",
+        "D": "Not quite, I think you have found the mode. Try again to find the mean :)"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107861,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/42cba40e-c588-4467-8eb9-5f465f8904f2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you have found the median. Try again to find the mean :)",
+        "B": "Not quite, I think you have found the mode. Try again to find the mean :)",
+        "C": "Nearly there! :) You have found the total of all the numbers. There's an extra step you need to do...",
+        "D": "The total of the numbers is 1+ 5 + 6 + 9 + 9 = 30. Dividing by 5 (the amount of numbers in the list) gives the mean as 30/5 = 6"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107850,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e7dfea30-8250-4b89-bb25-36f45c61aad5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you have found the range. Try again to find the mean :)",
+        "B": "Nearly there! :) I think you've miscounted how many numbers are in the list",
+        "C": "The total of the numbers is 0 + 2 + 3 + 5 + 20 = 30. Dividing by 5 (the amount of numbers in the list) gives the mean as 30/5 = 6",
+        "D": "Not quite, I think you have found the median. Try again to find the mean :)"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107862,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/73424efc-4c4e-4498-8400-72e25856d6dd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The total of the numbers is 0 + 3 + 6 + 7 + 9 = 25. Dividing by 5 (the amount of numbers in the list) gives the mean as 25/5 = 5",
+        "B": "Not quite, I think you have found the median. Try again to find the mean :)",
+        "C": "Not quite, I think you have found the range. Try again to find the mean :)",
+        "D": "Nearly there! :) I think you've miscounted how many numbers are in the list"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107851,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/16ca982a-8d4d-48a1-88a2-07ddf00cd2ec.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you have found the mode. Try again to find the mean :)",
+        "B": "Using reasoning, there are three 2s and two 3s, so the average will be just over 2. You may also have worked this out in your head as 2+2+3+3+2=12, and 12/5 is 2 remainder 2, or 2.4",
+        "C": "Not quite, I think you may have chosen the middle number or made an error in your working out.",
+        "D": "Does this answer seem reasonable? Can the mean of these numbers ever be lower than any of the numbers? The value for the mean has to be between the smallest and largest number."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107863,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eaf7cf4f-b610-4765-b398-415a5689a0cc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you may have chosen the middle number or made an error in your working out.",
+        "B": "Does this answer seem reasonable? Can the mean of these numbers ever be higher than any of the numbers? The value for the mean has to be between the smallest and largest number.",
+        "C": "Not quite, I think you have found the mode. Try again to find the mean :)",
+        "D": "Using reasoning, there are two 3s and three 4s, so the average will be a little less than 4. You may also have worked this out in your head as 3+4+3+4+4=18, and 18/5 is 3 remainder 3, or 3.6"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107852,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3b815a5c-e9d8-46c6-963c-1498b62986f4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If the mean is 4, then the total is 4 × 5 = 20, and so the missing number is 20 – 2 – 3 – 8 – 6 = 1",
+        "B": "It looks like you might have misread the question. It is telling us that the mean is 4. How would we have calculated the mean? Can you work backwards to find the missing number?",
+        "C": "It looks like you might have mixed up the mean and the median. Remember to find the mean we add all our values together and divide by how many there were. Can you use this information to work backwards to find the answer?",
+        "D": "Not quite. To calculate the mean we add all our values together and divide by how many there were. Can you use this information to work backwards to find our missing value?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107864,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/863693cc-1480-4771-9917-7d40394f1494.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you might have forgotten how to calculate the mean. Remember to find the mean we add all our values together and divide by how many there were. Can you use this information to work backwards to find the answer?",
+        "B": "It looks like you might have misread the question. It is telling us that the mean is 5. How would we have calculated the mean? Can you work backwards to find the missing number?",
+        "C": "If the mean is 5, then the total is 5 × 5 = 25, and so the missing number is 25 – 7 – 8 – 6 – 2 = 2",
+        "D": "Not quite. To calculate the mean we add all our values together and divide by how many there were. Can you use this information to work backwards to find our missing value?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107854,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eeff259b-72c6-4095-93e7-c0c77a92b127.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "7 x 4 = 28. Remember to find the mean, we would have added all the numbers up and divided by how many there is. So we would have Total/7 = 4. The total must have been 28 because 28/7 = 4.",
+        "B": "Not quite, I think you have added the two numbers. Remember to find the mean, we would have added all the numbers up and divided by how many there is. So we would have Total/7 = 4. See if you can find what the total of the numbers would be :)",
+        "C": "Not quite. You could have a list of seven 4's, and they would have a mean of 4, what would the total of those numbers be?",
+        "D": "Actually you can find the total of the numbers with this information, but you couldn't find what each of the numbers were. Remember to find the mean, we would have added all the numbers up and divided by how many there is. So we would have Total/7 = 4. See if you can find what the total of the numbers would be :)"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107866,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/41d7b046-d4d9-423f-afc9-5d409a92fc7a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you have added the two numbers. Remember to find the mean, we would have added all the numbers up and divided by how many there is. So we would have Total/6 = 7. See if you can find what the total of the numbers would be :)",
+        "B": "This answer is correct :) 6 x 7 = 42. Remember to find the mean, we would have added all the numbers up and divided by how many there is. So we would have Total/6 = 7. The total must have been 42 because 42/6 = 7.",
+        "C": "Not quite. You could have a list of six 7's, and they would have a mean of 7, what would the total of those numbers be?",
+        "D": "Actually you can find the total of the numbers with this information, but you couldn't find what each of the numbers were. Remember to find the mean, we would have added all the numbers up and divided by how many there is. So we would have Total/6 = 7. See if you can find what the total of the numbers would be :)"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

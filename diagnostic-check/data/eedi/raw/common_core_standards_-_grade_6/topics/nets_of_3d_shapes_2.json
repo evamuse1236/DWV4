@@ -1,0 +1,153 @@
+{
+  "shortcode": "vq4",
+  "name": "Nets of 3D shapes 2",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 212,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify the net of a prism",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify the net of a non-prism",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Draw the net of a prism",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 131541,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b3c62b6d-a65d-4c0e-8d33-b86c5ae415e3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A triangle is a three-sided 2D shape with straight edges. This net will fold into a 3D shape.",
+        "B": "A triangular prism has a triangular face at each end, plus three rectangular faces. Which 3D shape would only have two faces, as shown in this net?",
+        "C": "A triangular-based pyramid would have 4 triangular faces. Which 3D shape would have two faces, as shown on this net?",
+        "D": "A cone has two faces. The base is a circle and then a single face in the shape of a sector creates the curved surface area."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133734,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e9a7b75d-9ecf-4b96-99da-e4e8ecd30e59.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A triangle is a three-sided 2D shape with straight edges. This net will fold into a 3D shape. What shape will the face on the base be?",
+        "B": "A triangular prism has a triangular face at each end, plus three rectangular faces. Which 3D shape would have one square and 4 triangular faces?",
+        "C": "A triangular-based pyramid would have 4 triangular faces. Which 3D shape would have one square and 4 triangular faces?",
+        "D": "A square-based pyramid has one square face surrounded by 4 triangular faces."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131542,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c11bd29d-6ade-4271-be6f-b64eb1bb1a1b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A triangle is a 2D shape. A net forms a 3D shape.",
+        "B": "The two triangles will form the two identical end faces of a triangular prism. The squares will fold up to form the connecting sides.",
+        "C": "A triangular-based pyramid has 4 triangular faces. This net has some faces that are not triangles.",
+        "D": "An icosahedron has 20 triangular faces. This net has some faces that are not triangles."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133735,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7b48fd57-bbb1-469d-bf15-50906428ba22.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A rectangle is a 2D shape. A net forms a 3D shape.",
+        "B": "This forms a cuboid with three pairs of identical rectangles that are opposite each other.",
+        "C": "The faces of a cube are identical squares. This net has faces of different sizes.",
+        "D": "A rectangle-based pyramid has 4 triangular faces. This net does not have any triangular faces."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131543,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6955762b-bb86-4fdc-a880-55ca222f83dc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A triangle is a three-sided 2D shape with straight edges. This net will fold into a 3D shape. Which 3D shape would have four triangular faces as shown in the diagram?",
+        "B": "A triangular prism has a triangular face at each end, plus three rectangular faces. Which 3D shape would have four triangular faces as shown in the net?",
+        "C": "A triangular-based prism would have 4 triangular faces.",
+        "D": "An icosahedron has 20 faces. Which 3D shape has four triangular faces?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133736,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f13ddbd9-2dc0-4136-abb2-3bf9547dbc1b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A frustum is the remaining shape when the top of a cone or pyramid is cut off. The two circular faces are parallel to each other, with the other face making up the curved surface between them.",
+        "B": "A cone has one circular face. Which 3D shape would have one circular face smaller than the other?",
+        "C": "A cylinder has two identical circular faces. Which 3D shape would have one circular face smaller than the other?",
+        "D": "A sphere does not have 3 faces. Which 3D shape would have two different sized circular faces?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131544,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e99b6931-0ae9-4800-993d-1b579383251e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A pentagonal prism would have a pentagon-shaped face at either end. How many pentagons in total would we need to draw this?",
+        "B": "A pentagonal prism would have a pentagon-shaped face at either end. But what shape would make up the faces in between them?",
+        "C": "A pentagonal prism would have a pentagon-shaped face at either end. How many pentagons in total would we need to draw this?",
+        "D": "A pentagonal prism would have a pentagon-shaped face at either end, with rectangles joining up the corresponding edges."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133737,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/89e8b118-7a9d-4e43-aca1-c317c8591254.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A hexagonal prism would have a hexagon shaped face at either end. How many hexagons would you need in total to draw this net?",
+        "B": "A hexagonal prism would have a hexagon-shaped face at either end, with rectangles joining up the corresponding edges.",
+        "C": "A hexagonal prism would have a hexagon shaped face at either end. How many hexagons would you need in total to draw this net?",
+        "D": "A hexagonal prism would have a hexagon-shaped face at either end. What shape would make up the faces in between them?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131545,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f5545fe5-6357-4895-ab9d-efc0b35d6353.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A pyramid always has some triangular sides. This net has none.",
+        "B": "The two hexagons will form the two identical end faces of a hexagonal prism. The squares will fold around to form the connecting sides.",
+        "C": "A hexagon is a 2D shape. A net forms a 3D shape.",
+        "D": "This shape does form a 3D shape. Imagine the two hexagons folding up and then the squares folding around them. What will this create?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133738,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d5c7ca69-d527-48b2-857a-4fc274452376.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "An octagon is a 2D shape. A net forms a 3D shape.",
+        "B": "A pyramid always has some triangular sides. This net has none.",
+        "C": "The two octagons will form the two identical end faces of a octagonal prism. The squares will fold around to form the connecting sides.",
+        "D": "This shape does form a 3D shape. Imagine the two octagons folding up and then the squares folding around them. What will this create?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

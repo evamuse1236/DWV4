@@ -1,0 +1,147 @@
+{
+  "shortcode": "ehet",
+  "name": "Fraction and Repeating Decimals Equivalence 2",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 109,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Write a recurring decimal with a double digit recurring pattern as a fraction (US) ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Write a fraction with a double digit denominator as a recurring decimal (US)",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 165554,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/31a0ace7-15d0-41c8-88a3-cda788b05f74.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have used the method for when just the 𝑞 is being repeated. Here the 𝑝 and 𝑞 are both being repeated.",
+        "B": "Multiplying by 100 we would have 𝑝𝑞.𝑝𝑞𝑝𝑞𝑝𝑞𝑝𝑞𝑝... Subtracting one lot of 0.𝑝𝑞𝑝𝑞𝑝𝑞𝑝... will leave us with 99 lots equal to 𝑝𝑞. Divide by 99 to get 1 lot equals 𝑝𝑞/99",
+        "C": "I think you have tried to use the method for when a single digit is being repeated. Remember we multiply by 100 when two digits are being repeated.",
+        "D": "Not quite. Remember when we have two digits being repeated we do 100 lots of the value take away 1 lot of the value. How many lots will we have left?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165559,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/604e9318-daa4-431a-8e70-bd53412b648d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have used the method for when just the 𝑦 is being repeated. Here the 𝑥 and 𝑦 are both being repeated.",
+        "B": "I think you have tried to use the method for when a single digit is being repeated. Remember we multiply by 100 when two digits are being repeated.",
+        "C": "Multiplying by 100 we would have 𝑥𝑦.𝑥𝑦𝑥𝑦𝑥𝑦𝑥𝑦𝑥... Subtracting one lot of 0.𝑥𝑦𝑥𝑦𝑥𝑦𝑥... will leave us with 99 lots equal to 𝑥𝑦. Divide by 99 to get 1 lot equals 𝑥𝑦/99",
+        "D": "Not quite. Remember when we have two digits being repeated we do 100 lots of the value take away 1 lot of the value. How many lots will we have left?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165555,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8ca5bb49-f406-4fe3-85bb-48556f0b8c78.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is 0.777777..., but we have both 0 and 7 being repeated. Remember when two digits are being repeated we do 100 lots of the decimal subtract 1 lot of the decimal.",
+        "B": "100 lots of the number is 07.070707... Subtracting 1 lot gives us 99 lots equal to 7. Therefore 1 lot is 7/99",
+        "C": "7/100 is 0.07, but both 0 and 7 are being repeated in the decimal. Remember when two digits are being repeated we do 100 lots of the decimal subtract 1 lot of the decimal.",
+        "D": "I think you've used the repeating number as the denominator. Remember when two digits are being repeated we do 100 lots of the decimal subtract 1 lot of the decimal."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165560,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d5671909-afad-4a76-9ced-96abc62c6458.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "5/100 is 0.05, but both 0 and 5 are being repeated in the decimal. Remember when two digits are being repeated we do 100 lots of the decimal subtract 1 lot of the decimal.",
+        "B": "This is 0.555555..., but we have both 0 and 5 being repeated. Remember when two digits are being repeated we do 100 lots of the decimal subtract 1 lot of the decimal.",
+        "C": "I think you've used the repeating number as the denominator. Remember when two digits are being repeated we do 100 lots of the decimal subtract 1 lot of the decimal.",
+        "D": "100 lots of the number is 05.05050505... Subtracting 1 lot gives us 99 lots equal to 5. Therefore 1 lot is 5/99"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165556,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c5934fae-5043-400a-a062-5bf548f146f2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Using short division 61/99 = 0.616161.... Alternatively you may remember that a denominator of 99 creates a 2 digit recurring decimal.",
+        "B": "You're correct that a denominator of 99 gives a recurring decimal. Just double check your division to see which numbers repeat.",
+        "C": "You're correct that a denominator of 99 gives a recurring decimal. Just double check your division to see which numbers repeat.",
+        "D": "This is 61/100, but we have 61/99. Remember a denominator of 99 will give a recurring decimal. Try doing a division to see which digits are repeated."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165561,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/79a2f937-a827-4101-a352-39bb6acbd155.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You're correct that a denominator of 99 gives a recurring decimal. Just double check your division to see which numbers repeat.",
+        "B": "You're correct that a denominator of 99 gives a recurring decimal. Just double check your division to see which numbers repeat.",
+        "C": "This is 92/100, but we have 92/99. Remember a denominator of 99 will give a recurring decimal. Try doing a division to see which digits are repeated.",
+        "D": "Using short division 92/99 = 0.92929292.... Alternatively you may remember that a denominator of 99 creates a 2 digit recurring decimal."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165557,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f3e3a937-cc1a-486a-aafd-022b2ef5a137.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost, but you have given a terminating decimal here. Remember a denominator of 99 gives recurring decimal. Try dividing to find the repeating decimals.",
+        "B": "You have given a terminating decimal here. Remember a denominator of 99 gives recurring decimal. Try dividing to find the repeating decimals.",
+        "C": "Using short division 43/99 = 0.43434343.... Alternatively you may remember that a denominator of 99 creates a 2 digit recurring decimal.",
+        "D": "This is 43/100, but we have 43/99. Remember a denominator of 99 will give a recurring decimal. Try doing a division to see which digits are repeated."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165562,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2cb7f4c3-97c1-40a9-b3e7-030a5b1db4f6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost, but you have given a terminating decimal here. Remember a denominator of 99 gives recurring decimal. Try dividing to find the repeating decimals.",
+        "B": "Using short division 38/99 = 0.383838383.... Alternatively you may remember that a denominator of 99 creates a 2 digit recurring decimal.",
+        "C": "You have given a terminating decimal here. Remember a denominator of 99 gives recurring decimal. Try dividing to find the repeating decimals.",
+        "D": "This is 38/100, but we have 38/99. Remember a denominator of 99 will give a recurring decimal. Try doing a division to see which digits are repeated."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165558,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a650bdd0-c626-4340-b8db-c5804c695e61.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "41/100 is 0.41, but both 4 and 1 are being repeated in the decimal. Remember when two digits are being repeated we do 100 lots of the decimal subtract 1 lot of the decimal.",
+        "B": "This is 0.4444444..., but we have both 4 and 1 being repeated. Remember when two digits are being repeated we do 100 lots of the decimal subtract 1 lot of the decimal.",
+        "C": "I think you have used the method for 0.4111111... Remember when two digits are being repeated we do 100 lots of the decimal subtract 1 lot of the decimal.",
+        "D": "100 lots of the number is 41.41414141... Subtracting 1 lot gives us 99 lots equal to 41. Therefore 1 lot is 41/99"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165563,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d03fd3d9-ac1b-4038-88ef-60b087b79690.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have used the method for 0.5666666... Remember when two digits are being repeated we do 100 lots of the decimal subtract 1 lot of the decimal.",
+        "B": "100 lots of the number is 56.565656565... Subtracting 1 lot gives us 99 lots equal to 56. Therefore 1 lot is 56/99",
+        "C": "This is 0.5555555..., but we have both 5 and 6 being repeated. Remember when two digits are being repeated we do 100 lots of the decimal subtract 1 lot of the decimal.",
+        "D": "56/100 is 0.56, but both 5 and 6 are being repeated in the decimal. Remember when two digits are being repeated we do 100 lots of the decimal subtract 1 lot of the decimal."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

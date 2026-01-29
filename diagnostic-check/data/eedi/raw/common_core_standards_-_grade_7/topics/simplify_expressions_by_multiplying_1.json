@@ -1,0 +1,153 @@
+{
+  "shortcode": "vu4",
+  "name": "Simplify expressions by multiplying 1",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 129,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Multiply an integer and an algebraic term ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Write algebraic expressions with correct algebraic convention",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Write algebraic expressions with correct algebraic convention involving powers",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 104960,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d1a504d6-8380-4a0c-ad04-8a97a15ec80f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! To help, have a think about how else we could write questions such as 3 ✕ 3 or 4 ✕ 4. Can you apply this to the algebra?",
+        "B": "Be careful. 2a means 2 lots of a, which is 2 ✕ a NOT a ✕ a. Have a think about how else we could write questions such as 3 ✕ 3 or 4 ✕ 4.",
+        "C": "Be careful. 2ᵃ means 2 multiplied by itself 'a' times, 2 ✕ 2 ✕ 2 ✕ 2 ✕ 2 ... (a number of times). The expression in the question is multiplying a by itself twice, how could we write this?",
+        "D": "Another way of writing 𝑎 × 𝑎 is 𝑎², the power is the number of copies of 𝑎 that we are multiplying together"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104978,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5e413944-c61f-4b7a-a759-3de8e9320064.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! To help, have a think about how else we could write questions such as 3 ✕ 3 ✕ 3 or 4 ✕ 4 ✕ 4. Can you apply this to the algebra?",
+        "B": "Another way of writing 𝑚 × 𝑚 × 𝑚 is 𝑚³. The power is the how many copies of m we are multiplying together",
+        "C": "Be careful. 3ᵐ means 3 multiplied by itself 'm' times, 3 ✕ 3 ✕ 3 ✕ 3 ✕ 3 ... (m number of times). The expression in the question is multiplying m by itself three times, how could we write this?",
+        "D": "Be careful. 3m means 3 lots of m, which is 3 ✕ m NOT m ✕ m ✕ m. Have a think about how else we could write questions such as 3 ✕ 3 ✕ 3 or 4 ✕ 4 ✕ 4."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 104961,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/33228642-4b37-46eb-8d63-f90e97cbfbb7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! 2a² means 2 lots of a² or 2 ✕ a² NOT a² ✕ a. Remember a² = a ✕ a. Can you use this to help you simplify the expression?",
+        "B": "Be careful. 3a means 3 lots of a, which is a + a + a NOT a² ✕ a. Remember a² = a ✕ a. Can you use this to help you simplify the expression?",
+        "C": "We could write the first term 𝑎² as 𝑎 × 𝑎. The expression then becomes 𝑎 × 𝑎 × 𝑎. We are multiplying 3 copies of 𝑎 together which can be written as 𝑎³",
+        "D": "In algebra we can simplify terms if they are being multiplied. In this question a² is being multiplied by a, therefore we can simplify. Remember a² = a ✕ a. Can you use this to help you simplify the expression?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104979,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8f55f806-b133-435c-9cec-96ae236ab7db.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We could write each term 𝑚² as 𝑚 × 𝑚. Our expression then becomes 𝑚 × 𝑚 × 𝑚 × 𝑚. This can also be written as 𝑚⁴, answer A.",
+        "B": "Be careful. 4m means 4 lots of m, which is m + m + m + m NOT m² ✕ m². Remember m² = m ✕ m. Can you use this to help you simplify the expression?",
+        "C": "Not quite! 2m² means 2 lots of m² or m² + m² NOT m² ✕ m². Remember m² = m ✕ m. Can you use this to help you simplify the expression?",
+        "D": "In algebra we can simplify terms if they are being multiplied. In this question m² is being multiplied by m², therefore we can simplify. Remember m² = m ✕ m. Can you use this to help you simplify the expression?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 104962,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/63d61b65-04d8-4f56-8f67-a6786269929c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "When writing algebra we do not use the multiplication sign. This is because 𝒙 is a popular letter to use for algebra and so having a multiplication symbol might confuse things. Note that although 𝑎𝑏 = 𝑏𝑎 and both are correct, it is considered good practice to write the letters alphabetically if the value does not change as a result of doing so.",
+        "B": "Be careful. a + b means a added to b NOT a multiplied by b. Have a look at the other expressions, which one could mean a ✕ b? Remember, when writing algebra we don't use the ✕ symbol, as it could get confused with the letter 𝒙.",
+        "C": "Not quite. 3² = 3 ✕ 3, 4³ = 4 ✕ 4 ✕ 4 and aᵇ means a multiplied by itself b times, which is not the same as a ✕ b. Have a look at the other options, which one could mean a ✕ b?",
+        "D": "In algebra we can simplify terms if they are being multiplied. As a is multiplying b we can simplify. Have a look at the other expressions, which one could mean a ✕ b? Remember, when writing algebra we don't use the ✕ symbol, as it could get confused with the letter 𝒙."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104980,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a53dd465-44df-44de-903c-7ae8fdba77c0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful + m means n added to m NOT n multiplied by m. Have a look at the other expressions, which one could mean n ✕ m? Remember, when writing algebra we don't use the ✕ symbol, as it could get confused with the letter 𝒙.",
+        "B": "When writing algebra we do not use the multiplication sign. This is because 𝑥 is a popular letter to use for algebra and so having a multiplication symbol might confuse things. Note also that it is usual practice to put letters in alphabetical order, so 𝑚𝑛 rather than 𝑛𝑚.",
+        "C": "Not quite. 3² = 3 ✕ 3, 4³ = 4 ✕ 4 ✕ 4 and nᵐ means n multiplied by itself m times, which is not the same as n ✕ m. Have a look at the other options, which one could mean n ✕ m?",
+        "D": "In algebra we can simplify terms if they are being multiplied. As n is multiplying m we can simplify. Have a look at the other expressions, which one could mean n ✕ m? Remember, when writing algebra we don't use the ✕ symbol, as it could get confused with the letter 𝒙."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 104963,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cac9351a-4409-4951-96d8-bee462703d29.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "When writing algebra we do not use the multiplication sign. This is because 𝒙 is a popular letter to use for algebra and so having a multiplication symbol might confuse things. The convention is also to put the number before the letter, so 4𝑎 and not 𝑎4.",
+        "B": "So close! a4 does mean a x 4 but it is not how we conventionally write it. Can you find the other option that means a x 4?",
+        "C": "Not quite! I think you may be confusing this with power notation. a⁴ means a ✕ a ✕ a ✕ a NOT a ✕ 4. How do we simplify when a letter is multiplying a number?",
+        "D": "In algebra we can simplify terms if they are being multiplied. As a is multiplying 4 we can simplify. Have a look at the other expressions, which one could mean a ✕ 4?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104981,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c416dc41-d281-42ca-be29-ad3f84f27aba.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! I think you may be confusing this with power notation. m⁹ means m ✕ m ✕ m ✕ m ✕ m ✕ m ✕ m ✕ m ✕ m NOT m ✕ 9. How do we simplify when a letter is multiplying a number?",
+        "B": "So close! m9 does mean m x 9 but it is not how we conventionally write it. Can you find the other option that means m x 9?",
+        "C": "When writing algebra we do not use the multiplication sign. This is because 𝑥 is a popular letter to use for algebra and so having a multiplication symbol might confuse things. The convention is also to put the number before the letter, so 9𝑚 and not 𝑚9.",
+        "D": "In algebra we can simplify terms if they are being multiplied. As m is multiplying 9 we can simplify. Have a look at the other expressions, which one could mean m ✕ 9?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 104964,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ff855f86-24df-4a66-b28a-18800ef2dc20.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful. 10a = 6a + 4a which is not the same as 6a ✕ 4. Remember 6a = 6 ✕ a. Can you use this, as well as the fact that you can do multiplication in any order, to help you simplify the expression?",
+        "B": "Nearly! 6a4 is equal to 6a ✕ 4 but we need to simplify further. Remember multiplication can be done in any order. Can you rearrange this expression to help you simplify?",
+        "C": "Given that 6𝑎 = 6 × 𝑎 and multiplication is commutative (so the order doesn't matter), we can write 6𝑎 × 4 = 6 × 4 × 𝑎 = 24𝑎",
+        "D": "In algebra we can simplify terms if they are being multiplied. As 6a is multiplying 4 we can simplify. Remember 6a = 6 ✕ a. Can you use this, as well as the fact that you can do multiplication in any order, to help you simplify the expression?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104982,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/40d4b73b-36d9-4a09-8a84-a667f86a4634.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful. 12m = 3m + 9m which is not the same as 3m ✕ 9. Remember 3m = 3 ✕ m. Can you use this, as well as the fact that you can do multiplication in any order, to help you simplify the expression?",
+        "B": "Given that 3𝑚 = 3 × 𝑚 and multiplication is commutative (so the order doesn’t matter), we can write 3𝑚 × 9 = 3 × 9 × 𝑚 = 27𝑚",
+        "C": "Nearly! 3m9 is equal to 3m ✕ 9 but we need to simplify further. Remember multiplication can be done in any order. Can you rearrange this expression to help you simplify?",
+        "D": "In algebra we can simplify terms if they are being multiplied. As 3m is multiplying 9 we can simplify. Remember 3m = 3 ✕ m. Can you use this, as well as the fact that you can do multiplication in any order, to help you simplify the expression?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,153 @@
+{
+  "shortcode": "biix",
+  "name": "Modelling multiplying and dividing decimals",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 41,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Modelling multiplying a decimal by an integer",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Modelling dividing a decimal by an integer",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Modelling multiplying two decimals",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158381,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0292fb13-b0e3-44c5-8d6e-26fcc644464e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've correctly counted that there are 8 \"sticks\". However, comparing the diagrams with the calculation, we can see that each \"stick\" must represent 1 tenth, not 1 whole.",
+        "B": "I think you've correctly counted that there are 80 squares. However, comparing the diagrams with the calculation, we can see that each \"stick\" of 10 squares must represent 1 tenth (0.1), not 1 ten (10).",
+        "C": "Each \"stick\" represents 0.1 = 1 tenth. So, altogether we have 8 tenths = 0.8.",
+        "D": "I think you've assumed that each \"stick\" represents 1 hundredth (0.01). However, comparing the diagrams with the calculation, we can see that each \"stick\" must represent 1 tenth (0.1)."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158605,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c6b83c20-a503-4156-a41e-a13bae8305f6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Each \"stick\" represents 0.1 = 1 tenth. So, altogether we have 6 tenths = 0.6.",
+        "B": "I think you've assumed that each \"stick\" represents 1 hundredth (0.01). However, comparing the diagrams with the calculation, we can see that each \"stick\" must represent 1 tenth (0.1).",
+        "C": "I think you've correctly counted that there are 6 \"sticks\". However, comparing the diagrams with the calculation, we can see that each \"stick\" must represent 1 tenth, not 1 whole.",
+        "D": "I think you've correctly counted that there are 60 squares. However, comparing the diagrams with the calculation, we can see that each \"stick\" of 10 squares must represent 1 tenth (0.1), not 1 ten (10)."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158382,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5f0c3e3f-1e5c-4572-b126-d4597d088ed9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Each \"stick\" represents 0.1 = 1 tenth. And each square represents 0.01 = 1 hundredth. Altogether we have 5 sticks and 15 squares. 10 squares make a stick, therefore that can be rewritten as 6 sticks and 5 squares = 6 tenths and 5 hundredths = 0.65.",
+        "B": "Each \"stick\" represents 0.1 = 1 tenth. And each square represents 0.01 = 1 hundredth. I think you've correctly counted that altogether we have 5 sticks and 15 squares. But, notice that every set of 10 squares make a stick. How else can we write those 15 squares?",
+        "C": "I think you've only multiplied the 1 tenth by 5, you need to multiply the 3 hundredths by 5 as well. Or you could find the answer by counting up the \"sticks\" and squares in the diagram. Each \"stick\" represents 0.1 = 1 tenth. And each square represents 0.01 = 1 hundredth.",
+        "D": "Not quite. By comparing the calculation with the diagram, notice that each \"stick\" represents 0.1 = 1 tenth (not 1 whole). And each square represents 0.01 = 1 hundredth (not 1 tenth)."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158606,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/86c2f95b-ae69-4c99-a6a3-9c60b5d36c92.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've only multiplied the 1 tenth by 4, you need to multiply the 4 hundredths by 4 as well. Or you could find the answer by counting up the \"sticks\" and squares in the diagram. Each \"stick\" represents 0.1 = 1 tenth. And each square represents 0.01 = 1 hundredth.",
+        "B": "Each \"stick\" represents 0.1 = 1 tenth. And each square represents 0.01 = 1 hundredth. I think you've correctly counted that altogether we have 4 sticks and 16 squares. But, notice that every set of 10 squares make a stick. How else can we write those 16 squares?",
+        "C": "Each \"stick\" represents 0.1 = 1 tenth. And each square represents 0.01 = 1 hundredth. Altogether we have 4 sticks and 16 squares. 10 squares make a stick, therefore that can be rewritten as 5 sticks and 6 squares = 5 tenths and 6 hundredths = 0.56.",
+        "D": "Not quite. By comparing the calculation with the diagram, notice that each \"stick\" represents 0.1 = 1 tenth (not 1 whole). And each square represents 0.01 = 1 hundredth (not 1 tenth)."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158383,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bbee0849-37be-47b0-838f-b08a7fe8bf8e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. By comparing the calculation with the diagram, notice that each \"stick\" represents 0.1 = 1 tenth (not 1 whole). And each square represents 0.01 = 1 hundredth (not 1 tenth).",
+        "B": "The diagram shows 0.84 (8 tenths and 4 hundredths) divided into 2 equal parts. Each part has 4 tenths (4 \"sticks\") and 2 hundredths (2 squares) = 0.42.",
+        "C": "Not quite. By comparing the calculation with the diagram, notice that each \"stick\" represents 0.1 = 1 tenth (not 1 hundredth). And each square represents 0.01 = 1 hundredth (not 1 thousandth).",
+        "D": "I think you've found half of one of the parts of the diagram. But the whole diagram represents 0.84 (84 squares) and it has already been shared into 2 equal parts. What number does one of these 2 parts represent?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158607,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9d1795c5-5d21-4977-862a-4918e77c1957.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The diagram shows 0.68 (6 tenths and 8 hundredths) divided into 2 equal parts. Each part has 3 tenths (3 \"sticks\") and 4 hundredths (4 squares) = 0.34.",
+        "B": "Not quite. By comparing the calculation with the diagram, notice that each \"stick\" represents 0.1 = 1 tenth (not 1 hundredth). And each square represents 0.01 = 1 hundredth (not 1 thousandth).",
+        "C": "Not quite. By comparing the calculation with the diagram, notice that each \"stick\" represents 0.1 = 1 tenth (not 1 whole). And each square represents 0.01 = 1 hundredth (not 1 tenth).",
+        "D": "I think you've found half of one of the parts of the diagram. But the whole diagram represents 0.68 (68 squares) and it has already been shared into 2 equal parts. What number does one of these 2 parts represent?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158384,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d45e6882-265a-447a-aeeb-52e05554737d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've counted the unshaded squares. But the answer to the multiplication is found by counting the overlapping squares (those that have been shaded with both colours).",
+        "B": "I think you've counted all the squares that are shaded with just one colour. But the answer to the multiplication is found by counting the overlapping squares (those that have been shaded with both colours).",
+        "C": "Each square represents 0.01 = 1 hundredth. The answer to the multiplication is found by counting the overlapping squares. There are 14 squares that have been shaded in both colours = 14 hundredths = 1 tenth and 4 hundredths = 0.14.",
+        "D": "I think you've counted all the squares with some shading. But the answer to the multiplication is found by counting the overlapping squares (those that have been shaded with both colours)."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158608,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b398dbf5-a0b5-4c67-8a8a-c9402631c1a1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Each square represents 0.01 = 1 hundredth. The answer to the multiplication is found by counting the overlapping squares. There are 12 squares that have been shaded in both colors = 12 hundredths = 1 tenth and 2 hundredths = 0.12.",
+        "B": "I think you've counted the unshaded squares. But the answer to the multiplication is found by counting the overlapping squares (those that have been shaded with both colors).",
+        "C": "Not quite - each square represents 1 hundredth, not 1 tenth. How many squares are shaded with both colors?",
+        "D": "I think you've counted all the squares with some shading. But the answer to the multiplication is found by counting the overlapping squares (those that have been shaded with both colors)."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158385,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d9c5ecaa-5b5c-4b9d-9224-8210ce33735b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've counted all the squares that are shaded with just one colour. But the answer to the multiplication is found by counting the overlapping squares (those that have been shaded with both colours).",
+        "B": "Each square represents 0.01 = 1 hundredth. The answer to the multiplication is found by counting the overlapping squares. There are 45 squares that have been shaded in both colours = 45 hundredths = 4 tenths and 5 hundredths = 0.45.",
+        "C": "I think you've counted the unshaded squares. But the answer to the multiplication is found by counting the overlapping squares (those that have been shaded with both colours).",
+        "D": "I think you've counted all the squares with some shading. But the answer to the multiplication is found by counting the overlapping squares (those that have been shaded with both colours)."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158609,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0bb996e9-8b6f-4102-860e-87f2f275fa4a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite - each square represents 1 hundredth, not 1 tenth. How many squares are shaded with both colors?",
+        "B": "I think you've counted all the squares with some shading. But the answer to the multiplication is found by counting the overlapping squares (those that have been shaded with both colors).",
+        "C": "I think you've counted the unshaded squares. But the answer to the multiplication is found by counting the overlapping squares (those that have been shaded with both colors).",
+        "D": "Each square represents 0.01 = 1 hundredth. The answer to the multiplication is found by counting the overlapping squares. There are 42 squares that have been shaded in both colors = 42 hundredths = 4 tenths and 2 hundredths = 0.42."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

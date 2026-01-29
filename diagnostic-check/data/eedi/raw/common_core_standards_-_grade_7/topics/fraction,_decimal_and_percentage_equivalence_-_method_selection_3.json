@@ -1,0 +1,153 @@
+{
+  "shortcode": "vvh",
+  "name": "Fraction, decimal and percentage equivalence - method selection 3",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 144,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Convert terminating decimals less than 1 with 3 or more decimal places to fractions",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Convert fractions to two digit integer percentages",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve problems involving converting between fractions, decimals and percentages",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 75893,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8e36e02d-c903-4fdc-aca3-1fa9f81a71e3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This would make the total 100%, but we need to know how much we need to make 70%",
+        "B": "I think you have added the two numbers by mistake. What do we have to add to the 2/10 to get to 70%?",
+        "C": "2/10 + 2/10 = 4/10 = 40%. What do we need to add to get to 70%?",
+        "D": "We have 70% - 2/10 = 0.7 - 0.2 = 0.5."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 76041,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/696a0d53-000a-462c-8a03-4d16e6c6e744.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added the two numbers by mistake. What do we have to add to the 2/5 to get to 60%?",
+        "B": "Not quite. 2/5 + 60% will be more than 60%. What do we have to add to the 2/5 to get to 60%?",
+        "C": "2/5 = 40%, so we need to add 20%. This is the same as 2/10.",
+        "D": "Not quite. Remember 2/5 = 40/100 = 40%"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 75894,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2b4c551b-2ce8-49c8-9d10-9af6e3caee07.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We have 0.55 is equal to 55%, which is equal to 55/100. This is equivalent to 11/20.",
+        "B": "Not quite! I think you thought that 0.4 = 4% but actually, 0.4 = 4/10 = 40/100 = 40%.",
+        "C": "Not quite! I think you thought that 0.6 = 6% but actually, 0.6 = 6/10 = 60/100 = 60%.",
+        "D": "Not quite! I think you thought that 0.68 = 6.8%. But actually 0.68 = 68%"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 76042,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f864ae68-da16-4b19-9b86-1e69890a31dc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. 37% is 37/100",
+        "B": "0.8 = 80% = 80/100 = 8/10 = 4/5.",
+        "C": "Not quite. 1/3 = 0.333333333",
+        "D": "Not quite. 0.81 = 81%, not 8.1%"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 100600,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f8484a07-3b22-4757-938e-aaf52041d27b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember decimals don't have to end.",
+        "B": "Not quite. Remember decimals don't have to end.",
+        "C": "To convert a fraction to a decimal we divide the numerator by the denominator. Sometimes the decimal will carry on forever, but it is still a decimal.",
+        "D": "At least one of the students is correct. Think about how we convert from fractions to decimals."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 122900,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1262fa80-b049-4be1-84b1-c9d2592c326a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Can you think of any fractions that are the same as recurring decimals?",
+        "B": "Not quite. Think about the place value of a number with 3 decimal places.",
+        "C": "Tom is correct because a terminating decimal with 3 decimal places would be thousandths. Recurring decimals can be written as fractions because they have a repeating pattern. It is irrational numbers such as pi that can't be written as fractions.",
+        "D": "At least one of them is correct. Can you think of any fractions that are the same as recurring decimals? Also think about the place value of a number with 3 decimal places."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101506,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/adbd32ff-4875-43a7-a034-1d024c527a3c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You are almost there. This is the total of the two numbers. What do you have to do to that to find the midpoint?",
+        "B": "I think you had the right idea, but 3/4 is not 3.4. 3/4 = 75/100.",
+        "C": "I think you had the right idea, but 3/4 is not 34%. 3/4 = 75/100.",
+        "D": "Converting to %: 0.1 ✕ 100 = 10% and 3/4 = 15/20 = 75%. Adding the values and dividing by 2 will give the answer: (10 ＋ 75)/2 = 85/2 = 42.5%."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 122899,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/34bd961f-f3d0-4dea-bc6a-6b0db8f77e03.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "0.2 = 20%. 2/5 = 4/10 = 40/100 = 40%. Adding them together and dividing by 2 we get (20+40)/2 = 30%",
+        "B": "You are almost there. This is the total of the two numbers. What do you have to do to that to find the midpoint?",
+        "C": "I think you had the right idea, but 2/5 is not 2.5. 2/5 = 4/10",
+        "D": "I think you might have made a slight mistake when adding up the 0.2 and the decimal equivalent of 2/5. Remember to line up the decimal points when adding."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101507,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/32da8f8c-04d1-4282-8a56-e103d852d759.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Looking at Tom’s statement, 45% = 45/100 = 0.45, and since 0.45 > 0.059, this is clearly true. Katie has a tricky fraction in that the denominator is an awkward value; however, noting that 15/31 < 1/2 because 15/30 = 1/2, and also that 15.5/31 = 1/2 (although not in fraction form due to numerator not being a whole number, for the purpose of this question, it is helpful to view it as this rather than 31/62), it follows that 16/31 > 1/2, making Katie’s statement incorrect.",
+        "B": "Not quite. Remember we need the numbers in the same form before we can compare them. Could we make 45% into a fraction and then find a common denominator to compare them?",
+        "C": "Not quite. Remember we need the numbers in the same form before we can compare them. Could we make 45% into a fraction and then find a common denominator to compare them?",
+        "D": "At least one of the students is correct. Remember we need to have them in the same form before we can compare them. To go from a % to a decimal we divide by 100. To go from a percentage to a fraction we need to put it over 100."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101523,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7e10aedf-ccae-4323-a09a-21f60419e287.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember that when we go from % to fractions we multiply by 100",
+        "B": "Not quite. Can you compare 20/41 to 50%? Does that help you?",
+        "C": "Not quite. Can you compare 20/41 to 50%? Remember to go from a percentage to a decimal we multiply by 100",
+        "D": "Looking at Jo’s statement, 52% = 52/100 = 52 ÷ 100 = 0.52, we can see that this percentage is not equal to 0.052. Paul has a tricky fraction in that the denominator is an awkward value; however, 20/41 is less than 1/2. As a result we can conclude that Paul’s statement is also incorrect."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,165 @@
+{
+  "shortcode": "vww",
+  "name": "Angles on parallel lines 2",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 201,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Recognise the vertically opposite angles relationship",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Recognise the notation for parallel lines",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify corresponding angles",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify alternate angles",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify co-interior angles",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 76842,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c0b0806b-c5c7-45ce-97f4-1cb415d13491.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "As the lines AD and EB cross at Z, the angles EZD and AZB are vertically opposite.",
+        "B": "To be vertically opposite to angle EZD, the angle needs to be between the lines AD and EB but on the opposite side of point Z.",
+        "C": "Almost, make sure that the middle letter in the angle notation is the point where the two lines meet.",
+        "D": "Angle EZD is formed where lines AD and EB intersect. Can you see any other angles that are formed by the same two lines?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78965,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ebd9face-2b48-437d-9d23-b6b73298664b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I can see why you might think that because angle AZF and angle FZE are next to each other but vertically opposite angles need to be on opposite sides of the point where they meet. Angle AZF is formed where lines AD and FC intersect. Can you see any other angles that are formed between the same two lines?",
+        "B": "You're almost there, but make sure that the middle letter in the angle notation is the point where the two lines meet.",
+        "C": "As the lines AD and FC cross at Z, the angles AZF and DZC are vertically opposite.",
+        "D": "Angle AZF is formed where lines AD and FC intersect. Can you see any other angles that are formed between the same two lines?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 76848,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a2d6259f-901b-4aa2-b035-1f8061275b60.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you chose sides that are equal length rather than parallel. What symbol means parallel?",
+        "B": "I think you found the perpendicular lines (ones at right angles) rather than parallel. What symbol means parallel?",
+        "C": "I think you found the perpendicular lines (ones at right angles) rather than parallel. What symbol means parallel?",
+        "D": "These lines are parallel. We can tell this by the arrow on each line."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78971,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7f0a135c-9a26-449f-af35-9676ef0f3266.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "As they both have arrows on them, these lines are parallel.",
+        "B": "These lines aren't parallel as they meet. Parallel lines are always the same distance apart and never meet. Think about the notation we use to show they are parallel.",
+        "C": "I think you found the perpendicular lines (ones at right angles) rather than parallel. What symbol means parallel?",
+        "D": "I think you chose sides that are equal length rather than parallel. What symbol means parallel?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 76849,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1c461537-e59a-4b89-83bb-1f0362b57eae.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Alternate angles make a 'z' shape. What is the name of the angles that make an 'F' shape?",
+        "B": "These are corresponding angles as they make an F shape, with both angles sitting below a parallel line on the same side of the transversal. ",
+        "C": "Co-interior angles make a 'C' shape. What is the name of the angles that make an 'F' shape?",
+        "D": "Opposite angles make a 'X' shape. What is the name of the angles that make an 'F' shape?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 120831,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f259633e-da81-4905-97be-71e59ac97ffb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Alternate angles make a 'z' shape. What is the name of the angles that make an 'F' shape?",
+        "B": "These are corresponding angles as they make an F shape. These angles will not be equal as the lines are not parallel.",
+        "C": "Co-interior angles make a 'C' shape. What is the name of the angles that make an 'F' shape?",
+        "D": "Even when the lines aren't parallel, we can have alternate, corresponding and co-interior angles."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 76850,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f374e3d7-ccc5-4865-9559-581398f3ad85.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "These are alternate angles. As the lines are not parallel these alternate angles will not be equal",
+        "B": "Corresponding angles make an 'F' shape. What is the name of the angles that make a 'Z' shape?",
+        "C": "Co-interior angles make a 'C' shape. What is the name of the angles that make a 'Z' shape?",
+        "D": "Opposite angles make an 'X' shape. What is the name of the angles that make a 'Z' shape?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 120832,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/962a8cb1-61a0-4e35-82f0-aa2190739be1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "These are alternate angles. As the lines are not parallel these alternate angles will not be equal",
+        "B": "Corresponding angles make an 'F' shape. What is the name of the angles that make a 'Z' shape?",
+        "C": "Co-interior angles make a 'C' shape. What is the name of the angles that make a 'Z' shape?",
+        "D": "Even when the lines aren't parallel, we can have alternate, corresponding and co-interior angles."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 76851,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/89ed845c-f48f-4036-b37a-e8f82212f99c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Think about what they would make if they were right next to each other.",
+        "B": "Co-interior angles add up to 180°.",
+        "C": "Not quite, that would go all the way around a point. Think about what they would make if they were right next to each other.",
+        "D": "That would be true if they were alternate or corresponding, but these have a different relationship."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 120833,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d530a3f0-14ff-4c54-8171-b02e10994abd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "These angles are co-interior, but the lines are not parallel. What, if anything do we know about the angles?",
+        "B": "This would be true if the lines were parallel, but they are not. So, what do we know about them?",
+        "C": "Co-interior angles in parallel lines add up to 180, but these are not parallel. What can we know about the angles, if anything?",
+        "D": "Co-interior angles in parallel lines add up to 180, but these are not parallel. Therefore we don't know what the angles add up to."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

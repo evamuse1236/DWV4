@@ -1,0 +1,147 @@
+{
+  "shortcode": "vq7",
+  "name": "Surface area of a pyramid",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 215,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate the surface area of a square-based pyramid where the dimensions are given in the same units",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the surface area of a triangular-based pyramid where the dimensions are given in the same units",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 77191,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ed420a83-8d0a-47b5-aa43-987ff6d8b90b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have forgotten to halve the area for each triangle. The area of a triangle is base x perpendicular height divided by 2",
+        "B": "I think you have forgotten to divide by two at the end of finding the area of the triangle. You have also used units for volume rather than area.",
+        "C": "Almost! You have used units for volume rather than area.",
+        "D": "The square has area 4 × 4 = 16, and each triangle has area 3 × 4 / 2 = 6. The surface area is then 16 + 4 × 6 = 40 cm²."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79021,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5c13ef89-a7d8-4d73-836e-0407080fd214.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Correct. The triangular faces have area 3 × 5/2 = 7.5, and the base has area 3 × 3 = 9. The surface area is then 9 + 4 × 7.5 = 39 cm².",
+        "B": "Almost. You have used units for volume rather than area.",
+        "C": "I think you have forgotten to divide by two at the end of finding the area of the triangle. You have also used units for volume rather than area.",
+        "D": "I think you have forgotten to halve the area for each triangle. The area of a triangle is base x perpendicular height divided by 2"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 110184,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c03b38fd-09c7-4749-93e4-076622563723.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have multiplied all the lengths together. Remember the area of a triangle is base x perpendicular height divided by 2",
+        "B": "The area of a triangle = ½ × base × perpendicular height = ½ × 10 × 4.9 = (10 × 4.9)/2",
+        "C": "I think you have halved the base, and divided by 2. Remember that the area of a triangle is base x perpendicular height divided by 2",
+        "D": "I think you have multiplied all of the lengths together and then divided by two. Remember that the area of a triangle is base times perpendicular height divided by 2"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 110194,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e8305099-33e8-409b-85d2-4efc5073a30a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The area of a triangle = ½ × base × perpendicular height = ½ × 8 × 4.47 = (8 × 4.47 )/2",
+        "B": "I think you have halved the base, and divided by 2. Remember that the area of a triangle is base x perpendicular height divided by 2",
+        "C": "I think you have multiplied all of the lengths together and then divided by two. Remember that the area of a triangle is base times perpendicular height divided by 2",
+        "D": "I think you have multiplied all the lengths together. Remember the area of a triangle is base x perpendicular height divided by 2"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 110185,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fb68c3e7-9900-41fa-87f1-e0798f80b66d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The area of the square base of the pyramid is 10 × 10 = 100",
+        "B": "I think you have calculated the perimeter of the base instead of the area.",
+        "C": "I think you have multiplied the base width by the sloped height of the pyramid.",
+        "D": "I think you have forgotten that the base is a square, so the other sides also have length 10 𝑚."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 110195,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4229d920-e088-4c43-82c2-4acd84ead53b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have multiplied the base width by the sloped height of the pyramid.",
+        "B": "The area of the square base of the pyramid is 8 x 8 = 64",
+        "C": "I think you have calculated the perimeter of the base instead of the area.",
+        "D": "I think you have forgotten that the base is a square, so the other sides also have length 8 𝑚."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 110186,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0fa66d00-e5f1-4bc1-b514-4bc3eb790c03.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have only calculated for three triangular faces. A square-based pyramid has four triangular faces.",
+        "B": "I think you have only used one of the triangular faces. There are four triangular faces.",
+        "C": "I think you have forgotten to include the base.",
+        "D": "The surface area comprises the area of the base plus the area of 4 identical triangular faces, which is 100 + 4 × 24.5"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 110196,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db5d3ef8-3d5a-454c-876c-d5e03ab3eef9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have only calculated for three triangular faces. A square-based pyramid has four triangular faces.",
+        "B": "The surface area comprises the area of the base plus the area of 4 identical triangular faces, which is 4 x 17.9 + 64",
+        "C": "I think you have only used one of the triangular faces. There are four triangular faces.",
+        "D": "I think you have forgotten to include the base."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135825,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9d37a0b3-9c02-40cb-aa15-c7a4d009c905.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "All the faces of the pyramid are equilateral triangles of side length 2 cm. We need to calculate the area of one face and multiply this by 4. To calculate the area of one of these triangles, we first need to know the perpendicular height of the triangle. Using Pythagoras' theorem: h=√(2²-1²) = √3. Therefore, the surface area of the pyramid = 4✕(½✕2✕√3)= 4√3 cm²",
+        "B": "All the faces of the pyramid are equilateral triangles of side length 2 cm. There are 4 faces. To calculate the area of one of these triangles, we first need to know the perpendicular height of the triangle. Use Pythagoras' theorem to calculate the perpendicular height of the triangles.",
+        "C": "Remember that this triangular-based pyramid has 4 faces.",
+        "D": "When calculating the area of the triangle, remember that the formula is: ½✕b✕h"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135845,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a52feefe-4920-4193-bea1-17ad88eb9df1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To calculate the area of one of these triangular faces, we first need to know the perpendicular height of the triangle. Use Pythagoras' theorem to do this. Also, remember that you are calculating the total surface area.",
+        "B": "To calculate the area of one of these triangular faces, we first need to know the perpendicular height of the triangle. Use Pythagoras' theorem to do this. Also, remember that you are calculating the total surface area.",
+        "C": "All the faces of the pyramid are equilateral triangles of side length 4 cm. There are 4 faces. Therefore we need to calculate the area of one face and multiply this by 4. To calculate the area of one of these triangles, we first need to know the perpendicular height of the triangle. Using Pythagoras' theorem: h=√(4²-2²) = √12=√4√3=2√3. Therefore, the surface area of the pyramid = 4✕(½✕4✕2√3)= 16√3 cm²",
+        "D": "To calculate the area of one of these triangular faces, we first need to know the perpendicular height of the triangle. Use Pythagoras' theorem to do this. Also, remember that you are calculating the total surface area."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

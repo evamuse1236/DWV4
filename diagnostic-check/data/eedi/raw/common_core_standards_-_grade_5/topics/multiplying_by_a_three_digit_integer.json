@@ -1,0 +1,147 @@
+{
+  "shortcode": "ehig",
+  "name": "Multiplying by a three digit integer",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 25,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Multiply 3 digit integers by 3 digit integers using long multiplication",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiply 4 or more digit integers by 3 digit integers using long multiplication",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166688,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dd9b202e-f6b9-4235-bc54-b30fa98ff192.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have forgotten your placeholder zeros for your tens and hundreds places.",
+        "B": "You have forgotten to carry the digits over. For example, 6 x 3 = 18, so you write the 8 down and then add the 1 to the total of the next place value column.",
+        "C": "6 x 123 = 738, 50 x 123 = 6150 and 400 x 123 = 49200. 738 + 6150 + 49200 = 56088",
+        "D": "I think you may have only used 1 placeholder zero for your hundreds column, but you need to use 2."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166938,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/962d1ad8-80b1-4fa4-a4f8-dd37c230851d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have only used 1 placeholder zero for your hundreds column, but you need to use 2.",
+        "B": "I think you may have forgotten your placeholder zeros for your tens and hundreds places.",
+        "C": "You have forgotten to carry the digits over. For example, 7 x 4 = 28, so you write the 8 down and then add the 2 to the total of the next place value column.",
+        "D": "7 x 134 = 938, 40 x 134 = 5360, and 200 x 134 = 26800. 938 + 5360 + 26800 = 33098."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166689,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ff8afec6-a7ba-41c8-86ef-8f378df4a669.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have added 0 to 258 instead of multiplying 0 by 258. Think about what happens when you multiply anything by zero.",
+        "B": "7 x 258 = 1806, 0 x 258 = 0, and 400 x 258 = 103200. 1806 + 103200 = 105,006.",
+        "C": "I think you may have only used 1 placeholder zero for your hundreds column, but you need to use 2.",
+        "D": "I think you may have forgotten your placeholder zeros for your tens and hundreds places."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166939,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5e96cb3e-dca9-4c30-835f-420335910895.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have forgotten your placeholder zeros for your tens and hundreds places.",
+        "B": "I think you may have added 0 to 367 instead of multiplying 0 by 367. Think about what happens when you multiply anything by zero.",
+        "C": "9 x 367 = 3303, 0 x 367 = 0, and 400 x 367 = 146800. 146800 + 3303 = 150103",
+        "D": "I think you may have only used 1 placeholder zero for your hundreds column, but you need to use 2."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166690,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eccc8b01-58b9-485a-ad79-47f9aba0ca9b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have your digits aligned to the left, but they should be aligned to the right with the ones places stacked, tens stacked, hundreds stacked, and so on.",
+        "B": "The place values should be aligned so ones are stacked vertically, tens are stacked vertically, and so on with the larger number on top.",
+        "C": "It seems you wrote out place values, but we just focus on stacking place value digits vertically aligned from right to left with the largest number number on top.",
+        "D": "It seems you have numbers aligned to the left and stacked with the smallest number on top. We want the numbers stacked vertically with the ones aligned, tens aligned, and so on, with the largest number on top."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166940,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e46ea8e1-2a11-4a3d-8555-518b52437bed.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The place values should be aligned so ones are stacked vertically, tens are stacked vertically, and so on with the larger number on top.",
+        "B": "It seems you have numbers aligned to the left and stacked with the smallest number on top. We want the numbers stacked vertically with the ones aligned, tens aligned, and so on, with the largest number on top.",
+        "C": "You have your digits aligned to the left, but they should be aligned to the right with the ones places stacked, tens stacked, hundreds stacked, and so on.",
+        "D": "It seems you wrote out place values, but we just focus on stacking place value digits vertically aligned from right to left with the largest number number on top."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166691,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/51a4ef8e-2ecc-4f02-8ffe-424f36baf387.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have forgotten your placeholder zeros for your tens and hundreds places.",
+        "B": "I think you may have only used 1 placeholder zero for your hundreds column, but you need to use 2.",
+        "C": "You have forgotten to carry the digits over. For example, 8 x 4 = 32, so you write the 2 down and then add the 3 to the total of the next place value column.",
+        "D": "4 x 2768 = 11072, 90 x 2768 = 249120, and 100 x 2768 = 276800. 11072 + 249120 + 276800 = 536992"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166941,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c246cf2d-12b2-4a00-9aef-d5f9f4c76c51.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have forgotten to carry the digits over. For example, 7 x 4 = 28, so you write the 8 down and then add the 2 to the total of the next place value column.",
+        "B": "7 x 2654 = 25578, 80 x 3654 = 292320, and 100 x 3654 = 365400. 25578 + 292320+ 365400 = 683298",
+        "C": "I think you may have forgotten your placeholder zeros for your tens and hundreds places.",
+        "D": "I think you may have only used 1 placeholder zero for your hundreds column, but you need to use 2."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166692,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/02416f18-48cd-4eaa-b09d-7396af3caade.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "8 x 5029 = 40232, 0 x 5029 = 0000, and 300 x 5029 = 1508700. 40232 + 1508700 = 1548932",
+        "B": "I think you may have only used 1 placeholder zero for your hundreds column, but you need to use 2.",
+        "C": "It appears you may have added 0 to 5029 instead of multiplying 0 by 5029. Think about what happens when you multiply anything by zero.",
+        "D": "I think you may have forgotten your placeholder zeros for your tens and hundreds places."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166942,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bb04b81e-1baa-4813-901c-58468dddfa61.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It appears you may have added 0 to 7026 instead of multiplying 0 by 7026. Think about what happens when you multiply anything by zero.",
+        "B": "I think you may have forgotten your placeholder zeros for your tens and hundreds places.",
+        "C": "I think you may have only used 1 placeholder zero for your hundreds column, but you need to use 2.",
+        "D": "3 x 7026 = 21078, 0 x 7026 = 0000, and 800 x 7026 = 5620800. 21078 + 5620800 = 5641878."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

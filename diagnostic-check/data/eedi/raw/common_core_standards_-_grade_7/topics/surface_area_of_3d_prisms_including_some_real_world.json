@@ -1,0 +1,153 @@
+{
+  "shortcode": "ehjo",
+  "name": "Surface area of 3D prisms including some real world",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 213,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate the surface area of a cube",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the surface area of a cuboid where the dimensions are given in the same units",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the surface area of a triangular based prism where the dimensions are given in the same units",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 110055,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/28616408-31f3-4738-87ad-577ec15237a7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You're very close. Check whether you have you added together the area of ALL of the sides?",
+        "B": "It looks like you've calculated the volume. Remember to find the surface area, you need to find the area of all of the sides on the cuboid and add them together.",
+        "C": "You're doing some of the right calculations here. Remember that to find the total surface area of a cuboid, you find the area of all the sides, and add them up",
+        "D": "The cuboid has 6 faces. Opposite faces of a cuboid are equal, which means that to calculate the surface area, find the area of three different faces and multiply by 2: 6 × 4 is the front face, 6 × 3 is the base, 4 × 3 is the side. These values are added together and then multiplied by 2 for the total surface area."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 110071,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c2775eac-b781-4f72-b173-7bbc5e495b4e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You're very close. Check whether you have you added together the area of ALL of the sides?",
+        "B": "The cuboid has 6 faces. Opposite faces of a cuboid are equal, to calculate the surface area, find the area of three different faces, find the total and multiply by 2: 2 × 7 is the side face, 4 × 2 is the top, 4 × 7 is the front. Add all of these values together and then multiply by 2 at the end for the total surface area.",
+        "C": "You're doing some of the right calculations here. Remember that to find the total surface area of a cuboid, you find the area of all the sides, and total them",
+        "D": "It looks like you've calculated the volume. Remember to find the surface area, you need to find the area of all of the sides on the cuboid and add them together."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 161502,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2e078585-e723-424b-98e3-6ccede0b9abf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To calculate the surface area, we need to find the area of every face and then add those areas together. The faces of this shape are: 2 congruent triangles and 3 rectangles (2 of which are congruent). The area of each triangle is 1/2 ✕ 8 ✕ 3 = 12cm². The area of each congruent rectangle is 5 ✕ 10 = 50 cm ². The area of the 3rd rectangle is 8 ✕ 10 = 80 cm². So, the total surface area = 12 + 12 + 50 + 50 + 80 = 204cm².",
+        "B": "Nearly! Remember that the area of a triangle is 1/2 ✕ base ✕ perpendicular height.",
+        "C": "I think you've calculated the volume. To calculate the surface area, we need to find the area of every face and then add those areas together.",
+        "D": "Nearly! Remember that the area of a triangle is 1/2 ✕ base ✕ perpendicular height."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 161561,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5ff4c93e-1342-4b08-9381-cb80082ccd70.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To calculate the surface area, we need to find the area of every face and then add those areas together. The faces of this shape are: 2 congruent triangles and 3 rectangles (2 of which are congruent). The area of each triangle is 1/2 ✕ 12 ✕ 8 = 48cm². The area of each congruent rectangle is 7 ✕ 10 = 70cm ². The area of the 3rd rectangle is 7 ✕ 12 = 84 cm². So, the total surface area = 48 + 48 + 70 + 70 + 84 = 320cm².",
+        "B": "Nearly! Remember that the area of a triangle is 1/2 ✕ base ✕ perpendicular height.",
+        "C": "Nearly! Remember that the area of a triangle is 1/2 ✕ base ✕ perpendicular height.",
+        "D": "I think you've calculated the volume. To calculate the surface area, we need to find the area of every face and then add those areas together."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165268,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/53a9e338-5876-4220-ab13-631e5d56ddcd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The surface area of a cube is calculated by multiplying the area of one of its square faces by 6, since a cube has 6 identical square faces. $$4 \\times 4 \\times 6$$",
+        "B": "I think you have found the area of one face. Remember that the surface area of a cube includes all six faces, not just one.",
+        "C": "I think you found the area of the 3 faces of a cube that are visible in a drawing. Remember a cube has 6 faces, just like a standard dice. ",
+        "D": "I think you found the volume rather than the surface area. Remember to calculate each face's area and then multiply by the number of faces."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165318,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/723294fe-96e3-4562-b5f5-5e681cc3c36a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember, surface area and volume are different. Calculating $$5^3$$ gives volume, not surface area.",
+        "B": "Think about how many faces a cube has. Is the area of one face enough for the whole surface?",
+        "C": "Did you consider all of the faces? How many faces does a cube actually have?",
+        "D": "The total surface area of a cube with side length 5 cm is found by multiplying the area of one face, which is 25 sq cm, by 6, resulting in 150 sq cm."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166805,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f6cb2669-f009-4ea6-9c4c-4b8728779ae4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have found the surface area of the 3 visible faces. What about the faces that you can't see?",
+        "B": "Not quite! I think you have forgotten about the top and the bottom of the box. Remember, a cuboid has 6 faces.",
+        "C": "The surface area is found by calculating the area of all six faces and adding them together: 2×(20×10) + 2×(20×8) + 2×(10×8) = 400 + 320 + 160 = 880 cm².",
+        "D": "It looks like you have found the volume of the box rather than the surface area. Remember, surface area is the area of all the faces added together."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167055,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/813c926e-7594-487a-ab0e-a0579e2e25db.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have found the volume of the box rather than the surface area. Remember, surface area is the area of all the faces added together.",
+        "B": "The surface area is found by calculating the area of all six faces and adding them together: 2×(30×20) + 2×(20×10) + 2×(30×10) = 1200 + 400 + 600 = 2200 cm².",
+        "C": "It looks like you have found the surface area of the 3 visible faces. What about the faces that you can't see?",
+        "D": "Not quite! I think you have forgotten about the top and the bottom of the box. Remember, a cuboid has 6 faces."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166806,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/72a61c54-08e3-4beb-9360-38a765820586.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have found the volume of the tent rather than the surface area. Remember, surface area is the area of all the faces added together.",
+        "B": "You have correctly found the area of the three rectangular faces, but what about the two triangular faces? Remember, a triangular prism has five faces.",
+        "C": "The surface area is found by calculating the area of all five faces and adding them together: 2×(½×4×6) + 2×(5×10) + 6×10 = 24 + 100 + 60 = 184 cm².",
+        "D": "Not quite! I think you may have forgotten the factor of ½ when working out the area of the triangular faces. Remember, the area of a triangle is ½ × base × height."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167056,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/68f1fa53-f3c0-47db-a1af-cedf6f6ee5e5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have correctly found the area of the three rectangular faces, but what about the two triangular faces? Remember, a triangular prism has five faces.",
+        "B": "The surface area is found by calculating the area of all five faces and adding them together: 2×(½×9×12) + 15×40 + 12×40 + 9×40 = 108 + 600 + 480 + 360 = 1548 cm².",
+        "C": "Not quite! I think you may have forgotten the factor of ½ when working out the area of the triangular faces. Remember, the area of a triangle is ½ × base × height.",
+        "D": "It looks like you have found the volume of the box rather than the surface area. Remember, surface area is the area of all the faces added together."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

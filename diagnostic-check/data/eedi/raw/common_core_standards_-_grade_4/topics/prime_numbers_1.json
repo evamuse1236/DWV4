@@ -1,0 +1,159 @@
+{
+  "shortcode": "bifs",
+  "name": "Prime numbers 1",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 12,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify multiples of a number",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Recognise prime numbers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Know and use the vocabulary of prime numbers and composite numbers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Recognise a prime factor",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 129046,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/28df3796-3157-426d-8ae4-8e4e6b0486a0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "\"Composite\" means \"not prime\". Is 11 prime?",
+        "B": "\"Composite\" means \"not prime\". Is 13 prime?",
+        "C": "\"Composite\" means \"not prime\". 15 = 3 × 5.",
+        "D": "\"Composite\" means \"not prime\". Are all of these numbers prime?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129186,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0445d385-9b6e-4185-8ca6-c083feefa5f7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "\"Composite\" means \"not prime\". Is 19 prime?",
+        "B": "\"Composite\" means \"not prime\". 21 = 3 × 7.",
+        "C": "\"Composite\" means \"not prime\". Is 23 prime?",
+        "D": "\"Composite\" means \"not prime\". Are all of these numbers prime?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129047,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d753a5dd-379a-402d-a333-83556b179a90.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "9 is composite as 9 = 3 × 3, so 9 cannot be a prime factor of anything.",
+        "B": "9 is not a prime number, it's a square number.",
+        "C": "To be a prime factor, a number must be prime.",
+        "D": "If a number if not prime, then it is composite."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129187,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dd8c657f-6bb0-4a38-8fb6-92362697f0c8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "2 is the first prime number.",
+        "B": "2 is both prime and a factor of 10.",
+        "C": "A number cannot be both prime and composite.",
+        "D": "2 is either prime or composite. 2 is a factor of 10 as 10 ÷ 2 = 5."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129048,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/53c4339a-7945-435c-9d15-13b40ad84528.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The only factors of 31 and 1 and 31.",
+        "B": "A prime number is only divisible by 1 and itself. Try dividing 33 by 2, 3 or 5 say.",
+        "C": "A prime number is only divisible by 1 and itself. Try dividing 35 by 2, 3 or 5 say.",
+        "D": "A prime number is only divisible by 1 and itself. Try dividing 39 by 2, 3 or 5 say."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129188,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e71a640f-47d2-41ae-a6b4-5c3bfe56606f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Does 41 have any factors other than 1 and 41?",
+        "B": "51 is not prime as 3 × 17 = 51.",
+        "C": "Does 61 have any factors other than 1 and 61?",
+        "D": "Does 71 have any factors other than 1 and 71?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129049,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/02459933-048d-4624-8946-4f582970e0b7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A prime number is only divisible by 1 and itself. Try dividing 21 and 23 by some smaller numbers.",
+        "B": "21 = 3 × 7, but 23 only has factors of 1 and itself.",
+        "C": "Try dividing 21 by 2, 3 or 5 say.",
+        "D": "Does 23 have any factors other than 1 and 23?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129189,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bca081d6-bbae-40dc-96cd-ee8277518345.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A prime number is only divisible by 1 and itself. Try dividing 27 and 29 by some smaller numbers.",
+        "B": "27 = 3 × 9, but 29 only has factors of 1 and itself.",
+        "C": "Try dividing 27 by 2, 3 or 5 say.",
+        "D": "Does 29 have any factors other than 1 and 29?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129050,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/831d0ec9-c0b1-42f7-85e7-acb1333c1c4a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "1 is neither prime nor a multiple of 5 (it is a factor of 5).",
+        "B": "5 is the only prime divisible by 5.",
+        "C": "35 = 7 × 5 so 35 is not prime.",
+        "D": "Almost, but have a look at each of the options in turn."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129190,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/62f19d15-0b9e-42ba-a836-f849a647973a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "3 is not a multiple of 9, it is a factor of 9.",
+        "B": "9 = 3 × 3 so 9 is not prime.",
+        "C": "27 = 3 × 9 so 27 is not prime.",
+        "D": "As 9 itself is not prime, no multiple of it can be prime."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

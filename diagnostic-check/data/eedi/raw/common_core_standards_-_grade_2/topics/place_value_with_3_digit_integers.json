@@ -1,0 +1,147 @@
+{
+  "shortcode": "bi8w",
+  "name": "Place value with 3 digit integers",
+  "collectionId": 35,
+  "level": 1,
+  "sequence": 8,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Recognise integers expressed visually",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Recognise the place value of each digit in integers",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 159382,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6cbd30ff-c404-42a3-8682-e5ae480ef153.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, that's the hundreds place.",
+        "B": "The digits in this number are hundreds, tens, ones, so 3 is in the tens place.",
+        "C": "Not quite, that's the ones place.",
+        "D": "You need to choose one of the digits of this number - is 4, 3 or 8 in the tens place?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159604,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ac338aa8-6fb1-4230-981d-a98a8c74e007.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, that's the hundreds place.",
+        "B": "Not quite, that's the tens place.",
+        "C": "The digits in this number are hundreds, tens, ones, so 4 is in the ones place.",
+        "D": "You need to choose one of the digits of this number - is 9, 3 or 4 in the ones place?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 159383,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5a4e65d3-85a5-4ce0-bde2-968386b03829.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This number is three hundred and eight, so 3 hundreds, 0 tens and 8 ones.",
+        "B": "Not quite - this number has 3 tens and 8 ones. What can we put in the tens place to show there are no tens?",
+        "C": "Almost, but this number has 8 tens instead of 8 ones.",
+        "D": "Not quite - you have mixed up the hundreds and the ones."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159605,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c244fb1f-c0ac-46e0-89c9-8e4116de3333.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite - you have mixed up the hundreds and the tens.",
+        "B": "Almost, but this number has 2 ones instead of 2 tens.",
+        "C": "Not quite - this number has 9 tens and 2 ones. Remember you can use 0 since we have no ones...",
+        "D": "This number is nine hundred twenty, so 9 hundreds, 2 tens and 0 ones."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 159384,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/487fc52d-d2cb-48fc-aeaf-3f1a4debe4a9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite - remember the values of the digits are hundreds, tens, ones.",
+        "B": "The values of the digits are hundreds, tens, ones, so 6 is in the ones place.",
+        "C": "Not quite - remember the values of the digits are hundreds, tens, ones. A number with thousands in would need at least 4 digits.",
+        "D": "Not quite - remember the values of the digits are hundreds, tens, ones."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159606,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/73b48220-df56-41e7-8df0-8b045e3d1fd3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite - remember the values of the digits are hundreds, tens, ones.",
+        "B": "Not quite - remember the values of the digits are hundreds, tens, ones.",
+        "C": "Not quite - remember the values of the digits are hundreds, tens, ones. A number with thousands in would need at least 4 digits.",
+        "D": "The values of the digits are hundreds, tens, ones, so 7 is in the hundreds place."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 159385,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fb593eed-db03-4a08-97d2-78bdd42bf79f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite - remember the values of the digits are hundreds, tens, ones. Which place is the 7 in?",
+        "B": "Not quite - remember the values of the digits are hundreds, tens, ones. Which place is the 7 in?",
+        "C": "7 is in the hundreds place, so its value is 7 hundreds or 700.",
+        "D": "Not quite - this number only has hundreds, tens and ones. A number with thousands in has at least four digits."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159607,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4e0064b0-35c7-4282-982a-e3d2fbe45fd7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite - remember the values of the digits are hundreds, tens, ones. Which place is the 5 in?",
+        "B": "5 is in the tens place, so its value is 5 tens or 50.",
+        "C": "Not quite - remember the values of the digits are hundreds, tens, ones. Which place is the 5 in?",
+        "D": "Not quite - this number only has hundreds, tens and ones. A number with thousands in has at least four digits."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 159386,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9c8d9f2e-5349-4334-811d-a05393b5e411.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Can you see that each of the big blocks has 100 little cubes in, and each stick has 10 little cubes in? What number does 2 hundreds and 3 tens make?",
+        "B": "Each green block has 100 cubes, so two blocks make 200. Each yellow stick has 10 cubes, so three sticks make 30. Altogether, 230.",
+        "C": "Almost, but the yellow sticks don't represent ones. How many little cubes are in each stick?",
+        "D": "I think you mixed up the hundreds and tens. We have 3 hundreds and 2 tens, what number is that?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159608,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/75531eff-772e-44c7-803a-b079c9372aa2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Can you see that each of the big blocks has 100 little cubes in, and each stick has 10 little cubes in? What number does 3 hundreds and 5 tens make?",
+        "B": "Almost, but the yellow sticks don't represent ones. How many little cubes are in each stick?",
+        "C": "Each green block has 100 cubes, so three blocks make 300. Each yellow stick has 10 cubes, so five sticks make 50. Altogether, 350.",
+        "D": "I think you mixed up the hundreds and tens. We have 3 hundreds and 5 tens, what number is that?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

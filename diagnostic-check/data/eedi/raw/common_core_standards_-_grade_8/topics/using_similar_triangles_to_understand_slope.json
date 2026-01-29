@@ -1,0 +1,165 @@
+{
+  "shortcode": "vzk",
+  "name": "Using similar triangles to understand slope",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 49,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Solve length problems involving similar shapes where the missing length is the longer one",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Can calculate missing coordinates in a geometric shape",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the length of horizontal and vertical line segments",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Using similar triangles to understand slope",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify whether three points lie on the same line (collinear)",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 98002,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/69146c21-a69d-41f9-9432-dd1dd4e298d6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Looking at the graph we can see point V is located at (0,0) and point W is located at (8,5). This means we need to move 8 to the right and 5 up to travel from point V to W. As we are told the points are equally spaced along the line, we would also need to move 8 right and 5 up to travel from W to X and from X to Y. Therefore, the coordinates of point X are (16,10) which means the coordinates of point Y will be (24,15).",
+        "B": "Not quite, (16,10) are the coordinates of X. We are being asked to find the coordinates of Y.",
+        "C": "Not quite, this is the midpoint of V and W. Starting at V, how far right and up will you need to move to get to W? Repeat this movement to move from W to X and then X to Y.",
+        "D": "Not quite, (32,20) are the coordinates of Z. We are being asked to find the coordinates of Y."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 98017,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3911834f-77ca-4768-bf95-0d85ccd46de8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, (6,-1) are the coordinates of W. We are being asked to find the coordinates of X.",
+        "B": "Looking at the graph we can see point V is located at (0,0) and point Y is located at (18,-3). This means we need to move 18 to the right and 3 down to travel from point V to Y. The points are equally spaced, therefore to move from V to W we would move 6 right (18 ÷ 3) and 1 down (3 ÷ 3). Therefore the coordinates of W are (6,-1) and the coordinates of X will be (12,-2).",
+        "C": "Not quite, this is the midpoint of V and Y. Starting at V, how far right and down will you need to move to get to Y? Use this as well as the fact that the points are equally spaced to find the movement between V and W. Then make same movement to get to from W to X.",
+        "D": "Not quite. How far left do you have to move to get from Y to V?  Dividing this by three will tell us the horizontal movement we would need to make to get from Y to X."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146115,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e8d4d2f0-87f9-4c6d-a8f9-62266477f233.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have assumed that they are the same triangle. What has the shape been enlarged by to go from 14cm to 21cm? How would that change the 16cm?",
+        "B": "I think you have assumed the triangle has doubled. What has the shape been enlarged by to go from 14cm to 21cm? How would that change the 16cm?",
+        "C": "I think you have assumed you would just add on 7. Similar shapes have been enlarged (multiplied) by a scale factor. What has the shape been enlarged by to go from 14cm to 21cm? How would that change the 16cm?",
+        "D": "The lengths have been enlarged by a scale factor of 1.5 (21/14) therefore 16 x 1.5 = 24cm so m = 24cm"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146135,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/421d2253-4024-40df-877f-fd58b1fdb280.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The lengths have been enlarged by a scale factor of 1.5 (18/12) therefore 20 x 1.5 = 30cm so m = 30cm",
+        "B": "I think you have assumed the triangle has doubled. What has the shape been enlarged by to go from 12cm to 18cm? How would that change the 18cm?",
+        "C": "I think you have assumed you would just add on 8. Similar shapes have been enlarged (multiplied) by a scale factor. What has the shape been enlarged by to go from 12cm to 18cm? How would that change the 18cm?",
+        "D": "I think you have assumed that they are the same triangle. What has the shape been enlarged by to go from 12cm to 18cm? How would that change the 18cm?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 155149,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d05cf627-696f-4f43-9605-e20c2f29bd4d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The lowest point has a height of 3 and the highest point has a height of 9. Therefore the height of the triangle is 6 (9-3).",
+        "B": "Not quite, I think you have found the width of the triangle rather than the height. Remember it is the y coordinate, the second number, that tells us the height of each point.",
+        "C": "Not quite. A y coordinate of 9 tells us that the point is 9 above the x axis, this is not the same as the height of the triangle in this case as the triangle did not start at the x axis. Can you find the difference in heights between the two points?",
+        "D": "Not quite. The hieght of the triangle will be the difference between the two y coordinates not the sum."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 155152,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a0b36463-10e1-4150-b7ab-239e47d96d54.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. The hieght of the triangle will be the difference between the two y coordinates not the sum.",
+        "B": "Not quite, I think you have found the width of the triangle rather than the height. Remember it is the y coordinate, the second number, that tells us the height of the point.",
+        "C": "The lowest point has a height of 3 and the highest point has a height of 13. Therefore the height of the triangle is 10 (13-3).",
+        "D": "Not quite. A y coordinate of 13 tells us that the point is 13 above the x axis, this is not the same as the height of the triangle in this case as the triangle did not start at the x axis. Can you find the difference in heights between the two points?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 155150,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/265bcaee-7539-4e63-acab-ce4df10d1933.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost! This is the vertical movement needed to get from A to C. We are being asked for the y coordinate of C. How high up is point A? How high up will point C be if it is 24 higher than point A?",
+        "B": "Not quite. I think you saw that the horizontal movement from A to C was 7 more than the horizontal movement from A to B, so made this true for the vertical movement as well. Remember, these movements produce similar triangles. How many times longer is the horizontal movement from A to C than A to B? This should hold for the vertical movement as well.",
+        "C": "Not quite. I think you saw that the horizontal movement from A to C was 7 more than the horizontal movement from A to B, so made this true for the vertical movement as well. Remember, these movements produce similar triangles. How many times longer is the horizontal movement from A to C than A to B? This should hold for the vertical movement as well. Also, notice that point A has a y coordinate of 3 NOT 0.",
+        "D": "Drawing in the horizontal and vertical movements from point A to point B, gives us a right-angled triangle with a base of 1 and height of 3. Doing the same between the points A and C, gives us a right-angled triangle of base 8 and a height that we need to find. We know that the lines AB and AC have the same slope, which means the two right-angled triangles are similar and their sides are in the same proportion. 3/1 is the same as 24/8. Therefore the vertical height between A and C must be 24. Starting at 3 (point A) and going up 24 gets us to 27. Therefore the y coordinate of point C is 27."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 155153,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bdb6a086-5b08-4130-bcd2-5a98e06c0842.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. I think you saw that the horizontal movement from A to C was 5 more than the horizontal movement from A to B, so made this true for the vertical movement as well. Remember, these movements produce similar triangles. How many times longer is the horizontal movement from A to C than A to B? This should hold for the vertical movement as well. Also, notice that point A has a y coordinate of 5 NOT 0.",
+        "B": "Drawing in the horizontal and vertical movements from point A to point B, gives us a right-angled triangle with a base of 1 and height of 4. Doing the same between the points A and C, gives us a right-angled triangle of base 5 and a height that we need to find. We know that the lines AB and AC have the same slope, which means the two right-angled triangles are similar and their sides are in the same proportion. 4/1 is the same as 20/5. Therefore the vertical height between A and C must be 20. Starting at 5 (point A) and going up 20 gets us to 25. Therefore the y coordinate of point C is 25.",
+        "C": "Not quite. I think you saw that the horizontal movement from A to C was 5 more than the horizontal movement from A to B, so made this true for the vertical movement as well. Remember, these movements produce similar triangles. How many times longer is the horizontal movement from A to C than A to B? This should hold for the vertical movement as well.",
+        "D": "Almost! This is the vertical movement needed to get from A to C. We are being asked for the y coordinate of C. How high up is point A? How high up will point C be if it is 20 higher than point A?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 155151,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9eeccd7d-bdab-4d3b-a90e-6bece5eb1512.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. As the slope of the line connecting (1, 4) to (2.5, 10) is the same as the slope of the line connecting (2.5, 10) and (6, 24) we know the points lie on the same straight line. Remember, two line segments will have the same slope if the right angled triangles, showing horizontal and vertical movements between points, are similar.",
+        "B": "Not quite. As the slope of the line connecting (1, 4) to (2.5, 7) is the same as the slope of the line connecting (2.5, 7) and (6, 14) we know the points lie on the same straight line. Remember, two line segments will have the same slope if the right angled triangles, showing horizontal and vertical movements between points, are similar.",
+        "C": "To get from (1, 4) to (2.5, 10) we move 1.5 across and 6 up. To get from (2.5, 10) to (6, 16) we move 3.5 across and 6 up. As 6/1.5 does not equal 6/3.5 we know that the two line segments connecting the points have different slopes and therefore cannot lie on the same straight line.",
+        "D": "Not quite. As the slope of the line connecting (1, 4) to (2.5, 5.5) is the same as the slope of the line connecting (2.5, 5.5) and (6, 9) we know the points lie on the same straight line. Remember, two line segments will have the same slope if the right angled triangles, showing horizontal and vertical movements between points, are similar."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 155154,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2f8e9a1e-bb79-4bf3-acec-27796f6a2764.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. As the slope of the line connecting (2, 9) to (2.5, 11) is the same as the slope of the line connecting (2.5, 11) and (5, 21) we know the points lie on the same straight line. Remember, two line segments will have the same slope if the right angled triangles, showing horizontal and vertical movements between points, are similar.",
+        "B": "Not quite. As the slope of the line connecting (2, 9) to (2.5, 9.5) is the same as the slope of the line connecting (2.5, 9.5) and (5, 12) we know the points lie on the same straight line. Remember, two line segments will have the same slope if the right angled triangles, showing horizontal and vertical movements between points, are similar.",
+        "C": "Not quite. As the slope of the line connecting (2, 9) to (2.5, 10) is the same as the slope of the line connecting (2.5, 10) and (6, 17) we know the points lie on the same straight line. Remember, two line segments will have the same slope if the right angled triangles, showing horizontal and vertical movements between points, are similar.",
+        "D": "To get from (2, 9) to (2.5, 11) we move 0.5 across and 2 up. To get from (2.5, 10) to (5, 13) we move 2.5 across and 3 up. As 2/0.5 does not equal 5/2.5 we know that the two line segments connecting the points have different slopes and therefore cannot lie on the same straight line."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

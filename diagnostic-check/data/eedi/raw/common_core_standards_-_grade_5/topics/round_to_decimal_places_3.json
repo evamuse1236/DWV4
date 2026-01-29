@@ -1,0 +1,159 @@
+{
+  "shortcode": "biig",
+  "name": "Round to decimal places 3",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 20,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Round decimals to the nearest whole number",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Round numbers to two decimal places",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find the lower bound of a number rounded to 2 decimal places",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Round non-integers to other non-integer values (e.g. 0.02)",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 75965,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7a42c113-90f8-4cce-ad66-ef064ede01ae.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, the first number would round up to 7.47",
+        "B": "Not quite, the second number would round down to 7.45",
+        "C": "Not quite, the second number would round to 6.46",
+        "D": "Both of these numbers are between 7.45 and 7.47. They are both closest to 7.46 so the answer is D."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 76113,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2bbad7e1-6dfd-4653-9a26-001086b99399.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Both of these numbers are between 4.36 and 4.38. They are both closest to 4.37 so the answer is A",
+        "B": "Not quite. The second number is closer to 4.36",
+        "C": "Not quite, the second number is closer to 3.37",
+        "D": "Not quite, the first number is closer to 4.38"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 104612,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7909d3ad-1d3b-42d5-9b58-8f770fedea66.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember that 100cm = 1m so this is 3.651m. Would this round to 36m to the nearest m?",
+        "B": "Remember that 100cm = 1m so this is 3.58m. Would this round to 36m to the nearest m?",
+        "C": "Almost, This is 36.60m, but would this round to 36m to the nearest m?",
+        "D": "3551cm = 35.51m. When we round this to the nearest m we get 36m."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104620,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3addf62d-d43e-4a9f-b1be-9ed209ca72d9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember that 100cm = 1m so this is 9.859m. Would this round to 98m to the nearest m?",
+        "B": "9848cm = 98.48m. When we round this to the nearest m we get 98m.",
+        "C": "Almost, This is 98.69m, but would this round to 98m to the nearest m?",
+        "D": "Remember that 100cm = 1m so this is 9.78m. Would this round to 98m to the nearest m?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 104613,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b4d5b727-1384-4af8-8d5b-0233633f52a1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have rounded this to 1 decimal place instead of trying to find the original number.",
+        "B": "Not quite. If you rounded this number to 2 decimal places would you get 3.72?",
+        "C": "We must be looking for a number with 3 decimal places. Counting back from 3.72 we have 3.719, 3.718, 3.717, 3.716 and 3.715. Anything below 3.715 would round down to 3.71, meaning that 3.715 would be the smallest value for 𝑛.",
+        "D": "This does round to 3.72 but can you find a smaller number?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104621,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/02e39518-6a2d-4aa6-a039-fa18170f3aa2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. If you rounded this number (3.90) to 2 decimal places would you get 4.00?",
+        "B": "We must be looking for a number with 3 decimal places. Counting back from 4.00 we have 3.999, 3.998, 3.997, 3.996 and 3.995. Anything below 3.995 would round down to 3.99, meaning that 3.995 would be the smallest value for 𝑛.",
+        "C": "Not quite. If you rounded this number to 2 decimal places would you get 4.00?",
+        "D": "This does round to 4.00 but can you find a smaller number?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 104614,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f29eb17b-6f7c-4564-9d05-1c502d7f885a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Think carefully about whether each number is rounding up or down.",
+        "B": "Not quite. Think carefully about whether each number is rounding up or down.",
+        "C": "To round 5.4598 to 1 d.p. we look at the digit after the first decimal place. If this is 0,1,2,3,4 we round down. If it is 5,6,7,8,9 we round up. So 5.4598 rounds up to 5.5 to 1 d.p. In the same way 5.4598 rounds up to 5.46 to 2 d.p.",
+        "D": "Not quite. Think carefully about whether each number is rounding up or down."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104622,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7dd34c70-5101-46f8-9276-869aba5def2f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Think carefully about whether each number is rounding up or down.",
+        "B": "Not quite. Think carefully about whether each number is rounding up or down.",
+        "C": "Not quite. Think carefully about whether each number is rounding up or down.",
+        "D": "To round 46.64568 to 1 d.p. we look at the digit after the first decimal place. If this is 0,1,2,3,4 we round down. If it is 5,6,7,8,9 we round up. So 46.64568 rounds down to 46.6 to 1 d.p. In the same way 46.64568 rounds up to 46.65 to 2 d.p. They are both wrong."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 104615,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0262b5a6-f5a7-4dac-84d7-75990344dcd2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have rounded to the nearest 0.2 rather than 0.02.",
+        "B": "Not quite. Is 3.12 closer to 3.153 than either 3.14 or 3.16?",
+        "C": "Imagine a number line going up in 0.02 steps, these are the values we can round to. The values around 3.153, are 3.10, 3.12, 3.14, 3.16, 3.18… Now, 3.153 is between 3.14 and 3.16 but is closer to 3.16.",
+        "D": "I think you have rounded to 2 decimal places rather than to the nearest 0.02."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104623,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/21a87c45-9102-466d-bbcb-aa889823a06b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Imagine a number line going up in 0.05 steps, these are the values we can round to. The values around 1.516, are 1.40, 1.45 1.50, 1.55, 1.60… Now, 1.516 is between 1.50 and 1.55 but is closer to 1.50 .",
+        "B": "It looks like you have truncated your number rather than rounding it.",
+        "C": "I think you have rounded in the wrong direction.",
+        "D": "I think you have rounded to 2 decimal places rather than to the nearest 0.05."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

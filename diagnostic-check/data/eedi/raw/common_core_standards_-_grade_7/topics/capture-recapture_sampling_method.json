@@ -1,0 +1,141 @@
+{
+  "shortcode": "vxa",
+  "name": "Capture-recapture sampling method",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 215,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Understand how to use the Peterson Capture-Recapture method of sampling",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 143597,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c67e8a9b-6a05-4a43-bf41-07c3f7a7800b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We take the original amount captured and divide this by the fraction of \"marked bees / number captured the second time\". If N is the total population, then 50/N = 8/40, which rearranges to N = 50 ÷ 8/40.",
+        "B": "It looks like you have multiplied the number of marked bees by the number in the second capture, but we need to divide these instead.",
+        "C": "It looks like you have multiplied the fraction of \"marked bees / number captured the second time\" by the number captured originally, but if we think about it this would make the total number of bees very small (actually only 10) so this cannot be correct.",
+        "D": "You're close! It looks like you might have got your calculation the wrong way round, we need to divide the total amount in the first capture by the fraction of \"marked bees / number captured the second time\"."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 143602,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1deded50-9da9-40c8-ad91-e90cc1c0bec0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have multiplied the fraction of \"marked bees / number captured the second time\" by the number captured originally, but if we think about it this would make the total number of bees very small so this cannot be correct.",
+        "B": "You're close! It looks like you might have got your calculation the wrong way round: we need to divide the total amount in the first capture by the fraction of \"marked bees / number captured the second time\".",
+        "C": "We take the original amount captured and divide this by the fraction of \"marked bees / number captured the second time\". If N is the total population, then 80/N = 6/30, which rearranges to N = 80 ÷ 6/30.",
+        "D": "It looks like you have multiplied the number of marked bees by the number in the second capture, but we need to divide these numbers instead."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 143598,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/794bc5f6-7f42-41f2-a446-6c86c44cc00c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have divided the number of termites on Tuesday by the number which were marked, but the capture recapture method tells us to take the number captured on the first day and divide this by the fraction of \"number marked/ number captured on the second day\"",
+        "B": "It looks like you multiplied the total amount in the first capture by the number of marked termites found in the second capture. Instead, you need to divide the first capture by the fraction of \"marked termites / number captured the second time\".",
+        "C": "We take the original amount captured and divide this by the fraction of \"marked termites / number captured the second time\". If N is the total number of termites, 80/N = 12/60 so N = 80 ÷ 12/60 = 400.",
+        "D": "It looks like you have added all the figures together, but the capture-recapture method tells us to take the number captured on the first day and divide this by the fraction of \"number marked/ number captured on the second day\"."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 143603,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7372b4a0-ba0b-4fd2-8f6e-8bac92550791.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We take the original amount captured and divide this by the fraction of \"marked termites / number captured the second time\". If N is the total number of termites, 120/N = 21/70 so N = 120 ÷ 21/70 = 400.",
+        "B": "It looks like you have added all the figures together, but the capture-recapture method tells us to take the number captured on the first day and divide this by the fraction of \"number marked/ number captured on the second day\".",
+        "C": "We need to take the original amount captured and divide this by the fraction of \"marked termites / number captured the second time\"",
+        "D": "It looks like you have multiplied the number of termites on Tuesday by the number which were marked, but the capture-recapture method tells us to take the number captured on the first day and divide this by the fraction of \"number marked/ number captured on the second day\"."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 143599,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fdd7a0e7-9eb0-44a7-9694-eff42c400657.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you multiplied instead of dividing... You need to divide the first capture by the fraction of \"marked termites / number captured the second time\".",
+        "B": "We take the original amount captures and divide this by the fraction of \"marked rabbits / number captured the second time\". If N is the total population, then 120/N = 15/70, which rearranges to N = 120 ÷ 15/70.",
+        "C": "You're close! It looks like you got your calculation the wrong way round, we need to divide the total amount in the first capture by the fraction of \"marked rabbits / number captured the second time\".",
+        "D": "It looks like you have multiplied the fraction of \"marked rabbits / number captured the second time\" by the number captured originally, but if we think about it this would make the total number of rabbits very small, so this cannot be correct."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 143604,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c63c092d-3873-4f1c-902f-bfbac45cb7a5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You're close! It looks like you got your calculation the wrong way round - we need to divide the total amount in the first capture by the fraction of \"marked rabbits / number captured the second time\".",
+        "B": "It looks like you have multiplied the fraction of \"marked rabbits / number captured the second time\" by the number captured originally, but if we think about it this would make the total number of rabbits very small, so this cannot be correct.",
+        "C": "It looks like you multiplied instead of dividing... You need to divide the first capture by the fraction of \"marked termites / number captured the second time\".",
+        "D": "We take the original amount captured and divide this by the fraction of \"marked rabbits / number captured the second time\". If N is the total population, then 180/N = 18/45, which rearranges to N = 180 ÷ 18/45."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 143600,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a56f3b0b-4fda-4347-a50f-ac2e06a2e052.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have subtracted the amount in the second capture from Brian's new estimate, but we need to use the fact that (The number captured and marked originally ÷ The total population) is equal to (The number marked on the second recapture ÷ The total captured the second time) to find n.",
+        "B": "It looks like you have done 28/50, but then divided 125 by this fraction. We need to use the fact that (The number captured and marked originally ÷ The total population) is equal to (The number marked on the second recapture ÷ The total captured the second time).",
+        "C": "It looks like you have multiplied all the figures together, but we need to use the fact that (The number captured and marked originally ÷ The total population) is equal to (The number marked on the second recapture ÷ The total captured the second time).",
+        "D": "(The number captured and marked originally ÷ The total population) is equal to (The number marked on the second recapture ÷ The total captured the second time), so n/125 = 28/50. If we rearrange this formula we get n = 28/50 x 125 = 70."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 143605,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/562856c0-272d-4d56-8e5c-6cc332181a04.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have multiplied all the figures together, but we need to use the fact that (The number captured and marked originally ÷ The total population) is equal to (The number marked on the second recapture ÷ The total captured the second time).",
+        "B": "(The number captured and marked originally ÷ The total population) is equal to (The number marked on the second recapture ÷ The total captured the second time), so n/260 = 42/60. If we rearrange this formula we get n = 42/60 x 260 =182.",
+        "C": "It looks like you have subtracted the amount marked in the second capture from Brian's new estimate, but we need to use the fact that (The number captured and marked originally ÷ The total population) is equal to (The number marked on the second recapture ÷ The total captured the second time) to find n.",
+        "D": "It looks like you have done 42/60, but then divided 260 by that fraction.  Use the fact that \"The number captured and marked originally ÷ The total population\" is equal to \"The number marked on the second recapture ÷ The total captured the second time\"."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 143601,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2180c8bd-0910-43c2-8528-4b78786574a3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have divided the original amount of rats captured and marked by the recaptured amount, but we need (rats marked in the recapture / total rats in the recapture) .",
+        "B": "Number of rats originally marked, divided by (rats marked in the recapture / total rats in the recapture) will give us an estimate for the total population.",
+        "C": "It looks like you may have got your fraction the incorrect way round, we need (rats marked in the recapture / total rats in the recapture)",
+        "D": "You have divided the amount of rats in the recapture by the total population, but we need (rats marked in the recapture / total rats in the recapture)."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 143606,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5dd62a2b-3914-4690-a9f1-af54e628f422.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you may have got your fraction the incorrect way round, we need (rats marked in the recapture / total rats in the recapture).",
+        "B": "You have divided the amount of rats in the recapture by the total population, but we need (rats marked in the recapture / total rats in the recapture).",
+        "C": "It looks like you have divided the original amount of rats captured and marked by the recaptured amount, but we need (rats marked in the recapture / total rats in the recapture).",
+        "D": "Number of rats originally marked, divided by (rats marked in the recapture / total rats in the recapture) will give us an estimate for the total population."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,159 @@
+{
+  "shortcode": "bitn",
+  "name": "Written methods for addition and subtraction within 1000",
+  "collectionId": 33,
+  "level": 1,
+  "sequence": 18,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Add integers up to 3 digits using a written method where carrying is not needed",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Add integers up to 3 digits using a written method where carrying is needed",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Subtract integers up to 3 digits using a written method where carrying is not needed",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Subtract integers up to 3 digits using a written method where carrying is needed",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 137755,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ac8f1a15-b327-4a55-aa11-39ae2e49cdc1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. I think you may have added the 2 and the 7 in the ones column. Instead, think about what we need to add to 2 to get 7.",
+        "B": "Looking at the hundreds column, 7 would be correct if we were subtracting. Always start with the ones column. What do we need to add to 2 to get a total of 7?",
+        "C": "I think you might have looked at the hundreds column and assumed that we would have a digit carried over from the tens. Always start with the ones column. What do we need to add to 2 to get a total of 7?",
+        "D": "Starting in the ones column, we need to add 5 to 2 to get 7 ( 2 + 5 =7). In the hundreds column, 5 + 1 =6. So the missing digit is 5."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 137775,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9a44b868-8389-4549-a4bd-6ed03ad1e305.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. I think you may have added the 1 and the 7 in the ones column. Instead, think about what we need to add to 1 to get 7.",
+        "B": "Not quite. Remember we need to add the 1 in the ones column. What do we need to add to 1 to get 7?",
+        "C": "Starting in the ones column, we need to add 6 to 1 to get 7 ( 1 + 6 = 7). In the hundreds column, 6 + 2 =8. So the missing digit is 6.",
+        "D": "I think you might have looked at the hundreds column and assumed that we would have a digit carried over from the tens. Always start with the ones column. What do we need to add to 1 to get a total of 7?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146328,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/da8a289a-cc25-420e-ba0b-38696fe5c4b0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Adding from the units on the right first, 9+6=15, we would write the 5 in the units column and carry the ten units to make one ten. Then 1 + 9 + 9 = 19 in the tens column. We would write the 9 and then carry ten tens to make one hundred. Then 1 + 4 + 3 = 8 in the hundreds column, so we would write 8 in the hundreds column. So overall we would have an answer of 895.",
+        "B": "Not quite, remember to carry over to the next column when the two numbers add together to make a number greater than 9.",
+        "C": "Not quite, remember to carry over to the next column when the two numbers add together to make a number greater than 9.",
+        "D": "Not quite, 9 + 9 + 1 = 19, what should we do with the 10?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146348,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2f2b95cd-8c37-4e20-b449-31f1f33c1b26.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, remember to carry over to the next column when the two numbers add together to make a number greater than 9.",
+        "B": "Adding from the units on the right first, 9 + 7 = 16, we would write the 6 in the units column and carry the ten units to make one ten. Then 1 + 8 + 9 = 18, we would write the 8 in the tens column and then carry ten tens to make one hundred. 1 + 5 + 2 = 8 in the hundreds column. So the answer overall is 886.",
+        "C": "Not quite, remember to carry over to the next column when the two numbers add together to make a number greater than 9.",
+        "D": "Not quite, 8 + 9 + 1 = 18, what should we do with the 10?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158777,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8b526d69-6e99-4bfe-bd36-3e4ede4b5ea9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite - remember not to count the starting number when you subtract. For example, for 6 - 4 we would count backwards 5, 4, 3, 2. So what should the ones digit in the answer be?",
+        "B": "I think you subtracted 420 then added 4, but that would take off 416 in total. Here we need to subtract 420 and subtract 4 to subtract 424 in total.",
+        "C": "You have added, but this is a subtraction question.",
+        "D": "6 - 4 = 2 (ones digit), 7 - 2 = 5 (tens digit), 5 - 4 = 1 (hundreds digit), so the answer is 152."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158976,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5a94a7fe-91ea-4d6d-b74e-52e58821645b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you subtracted 530 then added 4, but that would take off 526 in total. Here we need to subtract 530 and subtract 4 to subtract 534 in total.",
+        "B": "You have added, but this is a subtraction question.",
+        "C": "8 - 4 = 4 (ones digit), 6 - 3 = 3 (tens digit), 7 - 5 = 2 (hundreds digit), so the answer is 234.",
+        "D": "Not quite - remember not to count the starting number when you subtract. For example, for 8 - 4 we would count backwards 7, 6, 5, 4. So what should the ones digit in the answer be?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158778,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dee414f5-9e35-4e88-a5ce-c46e3d8965b8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "6 is bigger than 3 so we borrow a ten to get 13 - 6 = 7 (ones digit). That leaves 1 - 7 in the tens column so we borrow a hundred, then 11 - 7 = 4 (tens digit). Finally 5 - 1 = 4 (hundreds digit), giving the answer 447.",
+        "B": "Not quite, it looks like you subtracted the smaller digit from the bigger one each time, but we need to do the top number subtract the bottom one. Don't forget about borrowing...",
+        "C": "It looks like you have \"borrowed\" but forgotten to reduce the other digits. For example, if you borrowed a ten to do 13 - 6, that should leave 1 - 7 in the tens column.",
+        "D": "You have added, but this is a subtraction question."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158977,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ed3556b1-7990-44e9-b86a-f2bfb58a1742.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have added, but this is a subtraction question.",
+        "B": "6 is bigger than 4 so we borrow a ten to get 14 - 6 = 8 (ones digit). That leaves 2- 8 in the tens column so we borrow a hundred, then 12 - 8 = 4 (tens digit). Finally 4 - 3 = 1 (hundreds digit), giving the answer 148.",
+        "C": "Not quite, it looks like you subtracted the smaller digit from the bigger one each time, but we need to do the top number subtract the bottom one. Don't forget about borrowing...",
+        "D": "It looks like you have \"borrowed\" but forgotten to reduce the other digits. For example, if you borrowed a ten to do 14 - 6, that should leave 2 - 8 in the tens column."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158779,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/162f39b6-cd3e-4168-a69c-552d65fcc5bf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have added, but we want to know how many are left out of 823, so this is a subtraction question.",
+        "B": "We can do 823 - 176 as a written subtraction, starting with the ones digit. 3 - 6 so borrow a ten, 13 - 6 = 7. That leaves 1 - 7 in the tens column, so borrow a hundred. 11 - 7 = 4. Finally 7 - 1 in the hundreds column is 6, giving 647.",
+        "C": "Not quite, it looks like you subtracted the smaller digit from the bigger one each time, but we need to subtract all the digits of 176 from the digits of 823. Don't forget borrowing...",
+        "D": "It looks like you have \"borrowed\" but forgotten to reduce the other digits. For example, if you borrowed a ten to do 13 - 6, that should leave 1 - 7 in the tens column."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158978,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/678a3778-d1ee-49c4-8f84-e9da9ee46e95.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, it looks like you subtracted the smaller digit from the bigger one each time, but we need to subtract all the digits of 488 from the digits of 914. Don't forget borrowing...",
+        "B": "It looks like you have \"borrowed\" but forgotten to reduce the other digits. For example, if you borrowed a ten to do 14 - 6, that should leave 0 - 8 in the tens column.",
+        "C": "You have added, but we want to know how many are left out of 914, so this is a subtraction question.",
+        "D": "We can do 914 - 488 as a written subtraction, starting with the ones digit. 4 - 8 so borrow a ten, 14 - 8 = 6. That leaves 0 - 8 in the tens column, so borrow a hundred. 10 - 8 = 2. Finally 8 - 4 in the hundreds column is 4, giving 426."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

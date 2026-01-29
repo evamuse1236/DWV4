@@ -119,6 +119,8 @@ export function ObjectivesPage() {
 
   const [expandedMajorIds, setExpandedMajorIds] = useState<Set<string>>(new Set());
   const [isPypExpanded, setIsPypExpanded] = useState(false);
+  const [isBrilliantMypExpanded, setIsBrilliantMypExpanded] = useState(false);
+  const [isBrilliantPypExpanded, setIsBrilliantPypExpanded] = useState(false);
   const [expandedSubObjectiveId, setExpandedSubObjectiveId] = useState<string | null>(null);
   const [isActivityDialogOpen, setIsActivityDialogOpen] = useState(false);
   const [editingActivity, setEditingActivity] = useState<any>(null);
@@ -158,11 +160,13 @@ export function ObjectivesPage() {
     return students?.filter((s: any) => !alreadyAssignedIds.has(s._id)) || [];
   }, [currentAssignedStudents, students]);
 
-  const { mypMajors, pypMajors } = useMemo(() => {
-    if (!majors) return { mypMajors: [], pypMajors: [] };
+  const { mypMajors, pypMajors, brilliantMypMajors, brilliantPypMajors } = useMemo(() => {
+    if (!majors) return { mypMajors: [], pypMajors: [], brilliantMypMajors: [], brilliantPypMajors: [] };
     return {
       mypMajors: majors.filter((m: any) => !m.curriculum || m.curriculum === "MYP Y1"),
       pypMajors: majors.filter((m: any) => m.curriculum === "PYP Y2"),
+      brilliantMypMajors: majors.filter((m: any) => m.curriculum === "Brilliant MYP"),
+      brilliantPypMajors: majors.filter((m: any) => m.curriculum === "Brilliant PYP"),
     };
   }, [majors]);
 
@@ -1322,7 +1326,7 @@ export function ObjectivesPage() {
             return (
             <TabsContent key={domain._id} value={domain._id} className="mt-6">
                 {activeDomainId === domain._id && majors && majors.length > 0 ? (
-                  pypMajors.length > 0 ? (
+                  (pypMajors.length > 0 || brilliantMypMajors.length > 0 || brilliantPypMajors.length > 0) ? (
                     <div className="space-y-6">
                       {/* MYP Y1 Section */}
                       {mypMajors.length > 0 && (
@@ -1333,30 +1337,88 @@ export function ObjectivesPage() {
                       )}
 
                       {/* PYP Y2 Collapsible Section */}
-                      <div className="border-t pt-4">
-                        <button
-                          className="flex items-center gap-3 w-full text-left py-2 hover:opacity-80 transition-opacity"
-                          onClick={() => setIsPypExpanded(!isPypExpanded)}
-                        >
-                          <ChevronDown
-                            className={`h-5 w-5 text-muted-foreground transition-transform ${
-                              isPypExpanded ? "rotate-180" : ""
-                            }`}
-                          />
-                          <h3 className="text-lg font-semibold">PYP Year 2</h3>
-                          <Badge className="bg-amber-100 text-amber-800 hover:bg-amber-100">
-                            Gap-filling
-                          </Badge>
-                          <Badge variant="secondary">
-                            {pypMajors.length} topics
-                          </Badge>
-                        </button>
-                        {isPypExpanded && (
-                          <div className="mt-3">
-                            {renderMajorGrid(pypMajors)}
-                          </div>
-                        )}
-                      </div>
+                      {pypMajors.length > 0 && (
+                        <div className="border-t pt-4">
+                          <button
+                            className="flex items-center gap-3 w-full text-left py-2 hover:opacity-80 transition-opacity"
+                            onClick={() => setIsPypExpanded(!isPypExpanded)}
+                          >
+                            <ChevronDown
+                              className={`h-5 w-5 text-muted-foreground transition-transform ${
+                                isPypExpanded ? "rotate-180" : ""
+                              }`}
+                            />
+                            <h3 className="text-lg font-semibold">PYP Year 2</h3>
+                            <Badge className="bg-green-100 text-green-800 hover:bg-green-100">
+                              Grades 4-5
+                            </Badge>
+                            <Badge variant="secondary">
+                              {pypMajors.length} modules
+                            </Badge>
+                          </button>
+                          {isPypExpanded && (
+                            <div className="mt-3">
+                              {renderMajorGrid(pypMajors)}
+                            </div>
+                          )}
+                        </div>
+                      )}
+
+                      {/* Brilliant MYP Collapsible Section */}
+                      {brilliantMypMajors.length > 0 && (
+                        <div className="border-t pt-4">
+                          <button
+                            className="flex items-center gap-3 w-full text-left py-2 hover:opacity-80 transition-opacity"
+                            onClick={() => setIsBrilliantMypExpanded(!isBrilliantMypExpanded)}
+                          >
+                            <ChevronDown
+                              className={`h-5 w-5 text-muted-foreground transition-transform ${
+                                isBrilliantMypExpanded ? "rotate-180" : ""
+                              }`}
+                            />
+                            <h3 className="text-lg font-semibold">Brilliant MYP</h3>
+                            <Badge className="bg-orange-100 text-orange-800 hover:bg-orange-100">
+                              Interactive Practice
+                            </Badge>
+                            <Badge variant="secondary">
+                              {brilliantMypMajors.length} modules
+                            </Badge>
+                          </button>
+                          {isBrilliantMypExpanded && (
+                            <div className="mt-3">
+                              {renderMajorGrid(brilliantMypMajors)}
+                            </div>
+                          )}
+                        </div>
+                      )}
+
+                      {/* Brilliant PYP Collapsible Section */}
+                      {brilliantPypMajors.length > 0 && (
+                        <div className="border-t pt-4">
+                          <button
+                            className="flex items-center gap-3 w-full text-left py-2 hover:opacity-80 transition-opacity"
+                            onClick={() => setIsBrilliantPypExpanded(!isBrilliantPypExpanded)}
+                          >
+                            <ChevronDown
+                              className={`h-5 w-5 text-muted-foreground transition-transform ${
+                                isBrilliantPypExpanded ? "rotate-180" : ""
+                              }`}
+                            />
+                            <h3 className="text-lg font-semibold">Brilliant PYP</h3>
+                            <Badge className="bg-orange-100 text-orange-800 hover:bg-orange-100">
+                              Interactive Practice
+                            </Badge>
+                            <Badge variant="secondary">
+                              {brilliantPypMajors.length} modules
+                            </Badge>
+                          </button>
+                          {isBrilliantPypExpanded && (
+                            <div className="mt-3">
+                              {renderMajorGrid(brilliantPypMajors)}
+                            </div>
+                          )}
+                        </div>
+                      )}
                     </div>
                   ) : (
                     renderMajorGrid(mypMajors.length > 0 ? mypMajors : majors)

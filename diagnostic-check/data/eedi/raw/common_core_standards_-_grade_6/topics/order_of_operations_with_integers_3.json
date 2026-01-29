@@ -1,0 +1,153 @@
+{
+  "shortcode": "vpu",
+  "name": "Order of operations with integers 3",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 153,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Use the order of operations to carry out calculations involving addition, subtraction, multiplication, and/or division",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use the order of operations to carry out calculations involving brackets",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Insert brackets to make a calculation correct",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 89313,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/880a2ec9-1827-4e86-99fb-bdd26d96645c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You may have performed the addition first. Remember your order of operations",
+        "B": "You may have made a calculation error. Have another go.",
+        "C": "For both calculations, the multiplication has to be done before addition anyway, so the inclusion of brackets isn't necessary. Both terms are equal.",
+        "D": "You may have performed the addition first. Remember your order of operations"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89325,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5c06de42-b2bc-4583-bf16-526ab1e0135d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Consider 8 ＋ 12 ÷ 4. The division takes priority over addition, so must be done first to give 8 ＋ 3 = 11. Now look at (8 ＋ 12) ÷ 4. Brackets take priority over division, so must be done first to give 20 ÷ 4 = 5. And 11 > 5 ( the \">\" always points to the smaller number).",
+        "B": "You may have made a calculation error. Have another go.",
+        "C": "You may have performed the addition first. Remember your order of operations",
+        "D": "This symbol means the first calculation is greater than or equal to the second one. Part of this statement is incorrect"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89314,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5323eb94-8311-44c8-8675-b6685f896574.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom is correct because the inclusion of brackets means that 3 ＋ 6 is performed before the multiplication. For Katie's 3 ＋ 6 ✕ 2, the multiplication takes priority over addition, so her answer is 15.",
+        "B": "You may have forgotten your order of operations. Multiplication must be carried out before addition, unless brackets show otherwise.",
+        "C": "You may have forgotten your order of operations. Multiplication must be carried out before addition, unless brackets show otherwise.",
+        "D": "You may have forgotten your order of operations. Multiplication must be carried out before addition, unless brackets show otherwise."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89326,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8c64f27f-ac74-4db1-866b-ad5919d5d24b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You may have forgotten your order of operations. Multiplication must be carried out before addition, unless brackets show otherwise.",
+        "B": "You may have forgotten your order of operations. Multiplication must be carried out before addition, unless brackets show otherwise.",
+        "C": "You may have forgotten your order of operations. Multiplication must be carried out before addition, unless brackets show otherwise.",
+        "D": "Jo is correct because the inclusion of brackets means that 5 ＋ 8 is performed before the multiplication. For Paul's 5 ＋ 8 ✕ 3, the multiplication takes priority over addition, so his answer is 29."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89315,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e69de4c0-c2bb-4efa-afb8-15673f9e0793.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You may have forgotten your order of operations. Addition and Subtraction have the same level of priority so you just work from left to right, unless there are brackets.",
+        "B": "You may have forgotten that you have to carry out the calculation in the brackets before any other calculation",
+        "C": "Addition and subtraction have equal priority; therefore, the calculations should be carried out from left to right. Please note that you can perform the addition first, but the calculation should be viewed as 6 ＋ ⁻3 ＋ 2, otherwise the temptation could be to view it as 6 − 5",
+        "D": "You may have made an error with your addition or subtraction. Have another go."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89327,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c481daa2-2a21-4dfa-9c6a-3ac5cd9af5ca.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You may not have realised that the subtraction applies to everything inside the brackets. You must work out the bracketed calculation first and then the subtraction.",
+        "B": "Jo is incorrect because we have to do brackets first, so the calculation would become 9-13= -4. Paul is correct because addition and subtraction have equal priority so going left to right we have 9-8=1 then 1+5 = 6",
+        "C": "You may have forgotten your order of operations. Addition and Subtraction have the same level of priority so you just work from left to right, unless there are brackets.",
+        "D": "You may have made an error with your addition or subtraction. Have another go."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89316,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f96e110a-4d2a-4c09-bb94-7fd3349fe39d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Because the 12 − 8 is all multiplied by 3, brackets are necessary around it to ensure this happens. The answer to this has 2 added on to it: (12 − 8) ✕ 3 ＋ 2. Because addition does not take priority over brackets or multiplication, it will be done last anyway, so no brackets required.",
+        "B": "You may have written it out in the order it is described without including the necessary brackets. Brackets are needed to ensure the calculations are carried out in the right order.",
+        "C": "Almost. Remember calculations in brackets must be carried out before anything else so here you are suggesting the addition needs to be done before the multiplication.",
+        "D": "Remember your order of operations. Brackets mean you should carry out that calculation first. Check the order in the question."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89328,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ba86d908-f3f5-4c4c-af3b-8d14e5970215.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. Remember calculations in brackets must be carried out before anything else so here you are suggesting the second addition needs to be done before the division.",
+        "B": "Remember your order of operations. Brackets mean you should carry out that calculation first. Check the order in the question.",
+        "C": "Because the 22 ＋ 8 is all divided by 3, brackets are necessary around it to ensure this happens. The answer to this has 5 added on to it: (22 ＋ 8) ÷ 3 ＋ 5. Because the last addition does not take priority over brackets or multiplication, it will be the last step anyway, so no brackets required.",
+        "D": "You may have written it out in the order it is described without including the necessary brackets. Brackets are needed to ensure the calculations are carried out in the right order."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89317,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8f060ae3-a6f3-469d-9b14-218addf3dd4f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You may have added the 1 and 2 at the end instead of multiplying them. Have another go and make sure you think about your order of operations / BIDMAS.",
+        "B": "It looks like you may have worked out the addition before the multiplication. Remember to follow your order of operations / BIDMAS.",
+        "C": "You may have calculated from left to right, without remembering the order of operations / BIDMAS",
+        "D": "Taking into account the order of operations or BIDMAS, the division and multiplication need to be performed first. In such cases, it can be helpful to put brackets around these to avoid any mistakes: (12 ÷ 2) ＋ (1 ✕ 2) = 6 ＋ 2 = 8"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89329,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/57e0eaea-1230-4b4b-8b4b-e33a94ca6d45.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you may have worked out the addition before the division. Remember to follow your order of operations / BIDMAS.",
+        "B": "Taking into account the order of operations or BIDMAS, the division and multiplication need to be performed first. In such cases, it can be helpful to put brackets around these to avoid any mistakes: (18 ÷ 2) ＋ (2 ✕ 2) = 9 ＋ 4 = 13",
+        "C": "You may have calculated from left to right, without remembering the order of operations / BIDMAS",
+        "D": "You may have made a mistake with the division. Have another go and remember to follow the order of operations / BIDMAS."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

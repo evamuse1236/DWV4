@@ -1,0 +1,159 @@
+{
+  "shortcode": "vyq",
+  "name": "Laws of indices 2",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 16,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Multiplication law of indices with positive integer powers and the same base number",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiplication law of indices with positive integer powers and a different base number",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Division law of indices with positive integer powers and the same base number",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Division law of indices with positive integer powers and a different base number",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 102982,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b15f560e-2fab-445a-a2c9-d87a931d5b55.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost, but when we divide we don't divide the powers. Try writing it as a fraction to see how many 4s we can cancel down",
+        "B": "When we divide numbers that have been raised to a power we subtract the powers. 6 - 3 = 3 so we have 4 to the power of 3. You can see this by writing it as a fraction, and cancelling three 4s from the top and bottom",
+        "C": "Not quite. Try writing it as a fraction to see how many 4s we can cancel down, note that we are left with 4s, not 1s.",
+        "D": "Almost, but the base number isn't right. Try writing it as a fraction to see how many 4s we can cancel down"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 102991,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f8e9d7b5-b4cf-4f69-a929-46b2982cec90.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost, but when we divide we don't divide the powers. Try writing it as a fraction to see how many 6s we can cancel down",
+        "B": "When we divide numbers that have been raised to a power we subtract the powers. 9 - 3 = 6 so we have 6 to the power of 6. You can see this by writing it as a fraction, and cancelling three 6s from the top and bottom",
+        "C": "Not quite. Try writing it as a fraction to see how many 6s we can cancel down, note that we are left with 6s, not 1s.",
+        "D": "Almost, but the base number isn't right. Try writing it as a fraction to see how many 6s we can cancel down"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 102983,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d05ad731-5636-47dd-9e97-26eb3faeeb03.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I can see that you have subtracted the powers, which would be correct if we had the same base numbers. What happens when that isn't the case?",
+        "B": "I can see you have divided the base numbers and the powers. Try writing this out as a fraction and see if you can cancel it down.",
+        "C": "I can see that you have subtracted the powers, which would be correct if we had the same base numbers. What happens when that isn't the case?",
+        "D": "As we have different base numbers (20 and 4) we can't simplify. We would need the same base to be able to subtract the powers"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 102992,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3289b242-ae35-454d-b47a-1a96847c9fef.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I can see that you have subtracted the powers, which would be correct if we had the same base numbers. What happens when that isn't the case?",
+        "B": "I can see you have divided the base numbers and the powers. Try writing this out as a fraction and see if you can cancel it down.",
+        "C": "When the powers are the same we can divide the base numbers without changing the power. 8^5 ÷ 4^5 = (8 ÷ 4)^5 = 2^5.",
+        "D": "It is possible to simplify this calculation. Try writing this out as a fraction and see if you can cancel it down."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 102984,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/70ef7e06-b77e-456c-9ba9-bcf6e0965f77.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have added the powers together and the base numbers together. We can't add the powers if the base numbers are different.",
+        "B": "It looks like you have multiplied the powers together and the base numbers together. We cannot combine powers unless the base numbers are the same.",
+        "C": "It looks like you have added the powers together and multiplied the base numbers together. We can't add the powers if the base numbers are different.",
+        "D": "If the base numbers are different and the powers are different we cannot simplify the expression."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 102993,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/41acfb53-edd2-47e4-8a42-ec0101e539ed.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have added the powers together and the base numbers together. We can't add the powers if the base numbers are different.",
+        "B": "It looks like you have added the powers together and multiplied the base numbers together. We can't add the powers if the base numbers are different.",
+        "C": "It looks like you have multiplied the powers together and the base numbers together. We cannot combine powers unless the base numbers are the same.",
+        "D": "If the base numbers are different and the powers are different we cannot simplify the expression."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 102985,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/184ac055-091b-40f6-bbe2-8ffabfead9dd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "When expressions with the same base are multiplied, we add their indices, so m^2 × m^3 = m^(2+3) = m^5",
+        "B": "Not quite. When expressions with the same base are multiplied, we just need to add their indices.",
+        "C": "It looks like you have multiplied the indices rather than adding them.",
+        "D": "When expressions with the same base are multiplied, we just need to add their indices."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 102994,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c527f5f9-5102-4ae1-9055-804463274332.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have multiplied the indices rather than adding them.",
+        "B": "Not quite. When expressions with the same base are multiplied, we just need to add their indices.",
+        "C": "When expressions with the same base are multiplied, we add their indices, so z^6 × z^3 = z^(6+3) = z^9",
+        "D": "When expressions with the same base are multiplied, we just need to add their indices."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 102986,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b30c67ea-4166-48a9-9e95-99c54f10aff8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have multiplied the base numbers and added the powers. We can only add the powers when the base numbers are the same.",
+        "B": "It looks like you have added the base numbers and added the powers. We can only add the powers when the base numbers are the same.",
+        "C": "It looks like you have multiplied the base numbers and multiplied the powers. When multiplying terms we do not multiply the powers.",
+        "D": "When the powers are the same we can multiply the base numbers without changing the power. 2^m x 3^m = (2 x 3)^m = 6^m."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 124916,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b89d5c44-68d6-4264-a95e-17a553545b25.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "When the powers are the same we can multiply the base numbers without changing the power. 5^y x 4^y = (5 x 4)^y = 20^y.",
+        "B": "It looks like you have multiplied the base numbers and multiplied the powers. When multiplying terms we do not multiply the powers.",
+        "C": "It looks like you have multiplied the base numbers and added the powers. We can only add the powers when the base numbers are the same.",
+        "D": "Not quite, we can simplify this expression. If we let y = 3 then the expression will become 5³ ✕ 4³. How could we simplify this? Can you use this to determine how the expression in the question will simplify?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

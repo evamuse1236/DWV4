@@ -1,0 +1,147 @@
+{
+  "shortcode": "vp0",
+  "name": "Collect like terms (simplifying expressions) 2",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 158,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Simplify algebraic expressions to maintain equivalence by collecting like terms involving just one linear variable",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Simplify algebraic expressions to maintain equivalence by collecting like terms involving just two linear variables",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 77113,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/be202e03-0111-4528-8a8b-6cb314b6cb22.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You're close! :) Can 10 xylophones subtract 3 xylophones be said any easier?",
+        "B": "Almost :) Check the question again, is there a sign you've misread?",
+        "C": "4x + 6x = 10x, and then subtract 3x leaves 7x.",
+        "D": "Not quite, I think you have misread the signs, make sure you + 6x, and - 3x. Reread the question and see if you can get it right next time! :)"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78886,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/53781014-1135-4472-925b-dc299d900ad0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "All of the terms are x, so we can collect them up, going from left to right, it becomes 8x - 2x which is 6x",
+        "B": "Not quite, try checking the signs in the question again :)",
+        "C": "You've done the first step correctly :) but it can be simplified further. What is 8 xylophones subtract 2 xylophones? :)",
+        "D": "Not quite, it may help you to think of these as xylophones, let's say you have 3 already, I give you another 5, but then I take 2 away. How many xylophones do you have left? :)"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 91627,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fde48bdd-c8ec-4f0d-b02b-ff2cd65a9128.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, but you'll get there next time! :) It might help you to think of this expression as \"5 apples subtract 2 bananas\", can that be said or written any simpler?",
+        "B": "Not quite, but you'll get there next time! :) It might help you to think of this expression as \"5 apples subtract 2 bananas\", can that be said or written any simpler?",
+        "C": "Not quite, but you'll get there next time! :) It might help you to think of this expression as \"5 apples subtract 2 bananas\", can that be said or written any simpler?",
+        "D": "5a − 2b cannot be simplified because a and b are not the same. You can think of this as \"5 apples subtract 3 bananas\", you need to keep all of that information because apples and bananas are different!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 91643,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c28aafb1-8fdc-408a-80ee-4bb9c161e644.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! I think you may have misread the last term, which is \"-4\", not \"-4a\" :)",
+        "B": "Not quite, but you'll get there next time! :) It might help you to think of this expression as \"4 apples add 6 bananas subtract 4\", can that be said or written any simpler?",
+        "C": "Not quite, but you'll get there next time! :) It might help you to think of this expression as \"4 apples add 6 bananas subtract 4\", can that be said or written any simpler?",
+        "D": "4a + 6b - 4 cannot be simplified because a and b and 4 units are not the same. You can think of this as \"4 apples add 6 bananas subtract 4 units\", you need to keep all of that information because apples, bananas and units are different!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 91628,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/85576bd2-66ee-4302-b08a-68c219ecf48d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, but you'll get there next time! :) It might help you to think of this expression as \"a pear add two queens add a queen add three pears\", can that be said or written better, is that what you would write if you were going to the shop?",
+        "B": "Katie is the only one who is correct! It sometimes helps to think of this expression as \"a pear add two queens add a queen add three pears\", if I was going to the shop I'd shorten this down to combine the pears (I have 4 pears in total, so 4p), and to combine the queens (I have 3 queens in total, so 3q), and they are being added so 4p + 3q. The letters stay separate because I need to know how many of each I need.",
+        "C": "Not quite, but you'll get there next time! :) It sometimes helps to think of this expression as \"a pear add two queens add a queen add three pears\", if I was going to the shop I'd simplify this, but I'd need to keep pears and queens separate so I know how many of each to get.",
+        "D": "Not quite, but you'll get there next time! :) It might help you to think of this expression as \"a pear add two queens add a queen add three pears\", can that be said or written better, is that what you would write if you were going to the shop?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 91644,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f232ecc5-9cad-4059-9811-c464e2d2751c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Jo is the only one who is correct :) It sometimes helps to think of this expression as \"four pears add two queens add three queens subtract a pear\", if I was going to the shop I'd shorten this to combine the pears (I have 3 pears in total, so 3p), and to combine the queens (I have 5 queens in total, so 5q), and they are being added so 3p + 5q. The letters stay separate because I need to know how many of each I need.",
+        "B": "Not quite, but you'll get there next time! :) It might help you to think of this expression as \"four pears add two queens add three queens subtract a pear\", can that be said or written better, is that what you would write if you were going to the shop?",
+        "C": "Not quite, but you'll get there next time! :) It might help you to think of this expression as \"four pears add two queens add three queens subtract a pear\", can that be said or written better, is that what you would write if you were going to the shop?",
+        "D": "Not quite, but you'll get there next time! :) It might help you to think of this expression as \"four pears add two queens add three queens subtract a pear\", can that be said or written better, is that what you would write if you were going to the shop?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 91629,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7535a830-a989-4e6f-bc0c-c56060da13fe.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This answer is correct :) The two bricks below are 4a and 3b, adding these together gives 4a + 3b. You can't combine the letters as they are different :)",
+        "B": "Not quite! I think you've managed to work out the top of the addition pyramid instead of ★! :)",
+        "C": "This isn't quite right, you have to add 4a and 3b as they are the two boxes below ★, remember that writing ab right next to each other means they have been multiplied together. See if you can find the correct answer :)",
+        "D": "It looks like you have added all of the bricks on the bottom row, ★ is only the two boxes below it added together - so 4a and 3b. Try again and see if you can find the right answer :)"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 91645,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fb390fbb-e233-4a19-b9ba-6ca3db913110.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have added all of the bricks on the bottom row, ★ is only the two boxes below it added together - so 2a and -b. Try again and see if you can find the right answer :)",
+        "B": "This isn't quite right, you have to add 2a and -b as they are the two boxes below ★, it looks like you have multiplied them together. See if you can find the correct answer :)",
+        "C": "Not quite! I think you've managed to work out the top of the addition pyramid instead of the ★! :)",
+        "D": "The missing value is calculated by adding the terms in the two bricks below. In this case, the terms below ★ are 2a and −b. Adding these gives 2a + −b which is the same as writing 2a − b. This cannot be simplified further because it has unlike terms."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 91632,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/24baf955-2480-4f5d-ace8-13ca0d15cd2d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You're very close and have the algebra part correct! :) Make sure the sign stays with the number in your calculation",
+        "B": "This answer is correct :) Collect together the 'n' terms first, (3n - n is 2n), and then (+)1 - 6 leaves us with -5. Remember to keep the sign in front of each term :)",
+        "C": "Not quite - pay close attention to the signs in the question, are they all addition? You'll get there next time! :)",
+        "D": "I think you might have just looked at the numbers here. Remember to treat the \"n\"s and the numbers separately. 3n - n = 2n. Now what do the numbers give you? You'll get there next time! :)"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 91648,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fd9536c3-e060-4612-860e-5cf80f15b096.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Great attempt! You're nearly there :) The algebra is correct, you just need to try -4 + 3 again :)",
+        "B": "There are a couple of things to check here, I think you've moved the subtract sign to a different number. Remember to keep the sign in front of each term. So this can be rewritten as 6n + 2n - 4 + 3, and you can have another go! :)",
+        "C": "This can be rearranged to collect letters together and units, so 6n + 2n - 4 + 3, here it is more clear to see that we have 8n, and -4 + 3 is -1, so altogether we have 8n - 1",
+        "D": "Not quite, I think you've misread some of the signs. It is only 4 that is subtracted, all the other terms are being added. You could rewrite as 6n + 2n + 3 - 4 if that makes it clearer. Have another go! :)"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

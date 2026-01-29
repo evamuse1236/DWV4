@@ -1,0 +1,153 @@
+{
+  "shortcode": "vqh",
+  "name": "Read and write inequalities 1",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 182,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Represent a linear inequality in the form a ≤ x ≤ b (and other sign arrangements) on a number line",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given the representation of a linear inequality with a single tail on a number line, express it using inequality notation",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Understand inequality notation",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 75914,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b5196871-8f89-4467-ad05-61f5f729f2b3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. Try reading this inequality forwards? 7 is greater/smaller than than R.",
+        "B": "Almost. Try reading this inequality backwards? Write R > 7 in words.",
+        "C": "Both A and B are correct. We can read this inequality forwards (7 < R) or backwards (R > 7).",
+        "D": "At least one of these options is correct. '<' means smaller than and '>' means greater than."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 76062,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e9ba5a38-b9af-42cb-92a4-d992376a439d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. If we read this inequality backwards it would be T < 3.",
+        "B": "We can read this inequality forwards (3 > T) or backwards (T < 3). This means T is smaller than 3.",
+        "C": "Try reading this inequality backwards? Write T < 3 in words.",
+        "D": "Try reading this inequality backwards? Write T < 3 in words."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 75915,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2bc4e049-49d6-4478-b5f1-df0bf0a906e9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, '<' means 'less than'. What would the 'greater than' symbol look like?",
+        "B": "=' means equal to. We need to use an inequality symbol to represent 'greater than'.",
+        "C": "Not quite, '≤' means 'less than or equal to'.",
+        "D": ">' means 'greater than'. So this means t is greater than 9."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 76063,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1893e0b0-a9b6-4522-8174-a9bd321f6083.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "<' means 'smaller than'. So this means j is smaller than 5.",
+        "B": "=' means equal to. We need to use an inequality symbol to represent 'smaller than'.",
+        "C": "Not quite, '≥' means 'greater than or equal to'.",
+        "D": "Not quite, '>' means 'greater than'. What would the 'smaller than' symbol look like?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 78183,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c69e9c45-0bb6-4915-b06c-ce6464efe7c9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost, '>' means 'greater than'. What would the 'greater than or equal to' symbol look like?",
+        "B": "Not quite, '≤' means 'less than or equal to'. What would the 'greater than or equal to' symbol look like?",
+        "C": "Not quite, '<' means 'less than'.",
+        "D": "≥' means 'greater than or equal to'. So this means 𝑥 is greater than or equal to 6."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78477,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/01c52e8d-2d78-494d-9307-e370ecc8a5ee.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, '<' means 'less than'. What would the 'greater than' symbol look like?",
+        "B": "Not quite, '≤' means 'less than or equal to'.",
+        "C": "The \">\" symbol means 'greater than'. So this means 𝑥 is greater than 9.",
+        "D": "Almost, '≥' means 'greater than or equal to'. What would the 'greater than' symbol look like?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 78184,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0b2af2cd-c176-49b3-96b3-a943d1cd0723.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The circle indicates that -2 is the key number. As it is an open circle -2 is not included in the number line. The arrow is above the numbers that are less than -2 so the inequality is x<-2",
+        "B": "Almost, just remember that an open circle means that number isn't included",
+        "C": "Not quite. The arrow isn't above the numbers that are bigger than -2.",
+        "D": "Not quite. The arrow isn't above the numbers that are bigger than -2. Remember that the open circle means that number is not included in the inequality"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 122116,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fe0e25fa-6c37-4c4e-93b1-ba613cc53435.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. The arrow isn't above the numbers that are bigger than 1.",
+        "B": "Almost, just remember that an open circle means that number isn't included",
+        "C": "The circle indicates that 1 is the key number. As it is an open circle 1 is not included in the number line. The arrow is above the numbers that are less than 1 so the inequality is x<1",
+        "D": "Not quite. The arrow isn't above the numbers that are bigger than 1. Remember that the open circle means that number is not included in the inequality"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 78185,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/80c60fa2-8b8d-4b90-b919-0c5690a4bac5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This would be 𝑥 < -3 or 𝑥 ≥ 1. We are looking for the numbers between these values.",
+        "B": "The 𝑥 is in between the two values indicated. Because of the open circle it cannot be equal to -3 but it can be equal to 1 (solid circle). If a number is in between 2 values the inequality signs are always shown as < <",
+        "C": "This would be 𝑥 ≤ -3 or 𝑥 > 1. We are looking for the numbers between these. Remember the closed circle means that number is included in the inequality",
+        "D": "This would be -3 ≤ 𝑥 < 1 as the solid circle is above the -3, which means this number is included."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78479,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fe0659d3-48ce-41b7-a750-0ab3a414ed6d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This would be 𝑥 < -1 or 𝑥 ≥ 3. We are looking for the numbers between these values. Remember the closed circle means that number is included.",
+        "B": "This would be 𝑥 ≤ -1 or 𝑥 > 3. We are looking for the numbers between these.",
+        "C": "Almost, just remember that the closed circle means that number is included.",
+        "D": "As the first symbol is \"less than or equals to\", the first circle is filled, and as the second symbol is just \"less than\", the second circle is empty. The line is over the numbers that are between these two values."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

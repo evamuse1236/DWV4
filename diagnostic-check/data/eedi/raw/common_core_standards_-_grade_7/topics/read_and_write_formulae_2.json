@@ -1,0 +1,159 @@
+{
+  "shortcode": "vvx",
+  "name": "Read and write formulae 2",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 160,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate missing lengths of shapes by geometrical inference, where the lengths involve algebraic expressions",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Write algebraic expressions with correct algebraic convention",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use perimeter to write algebraic expressions",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use area to write algebraic expressions",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 132157,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/258217f1-8463-4343-b821-bdab6befd583.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have worked out the perimeter of the rectangle but we need an expression for the area. How do we find the area of a rectangle?",
+        "B": "To find the area of a rectangle, we multiply the length by the width. So we need to multiply 5𝑥 + 3 by 4. 4 lots of 5𝑥 is 20𝑥 and 4 lots of 3 is 12. So the area is 20𝑥 + 12.",
+        "C": "You have added the two given side lengths together but we don't add the sides to find the area. What operation do we use to find the area?",
+        "D": "I think you have worked out the area but then tried to add the letters and numbers together. Don't forget that we can add terms with the same letters (for example 3𝑥 + 2𝑥 = 5𝑥) but we can't add letters to numbers (for example, 3𝑥 + 2 can't be simplified)."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 132075,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d5731f27-4d3e-40ac-a2e6-9cf85d97d6ee.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have worked out the perimeter of the rectangle but we need an expression for the area. How do we find the area of a rectangle?",
+        "B": "I think you have worked out the area but then tried to add the letters and numbers together. Don't forget that we can add terms with the same letters (for example 3𝑥 + 2𝑥 = 5𝑥) but we can't add letters to numbers (for example, 3𝑥 + 2 can't be simplified).",
+        "C": "You have added the two given side lengths together but we don't add the sides to find the area. What operation do we use to find the area?",
+        "D": "To find the area of a rectangle, we multiply the length by the width. So we need to multiply 3𝑥 – 2 by 5. 5 lots of 3𝑥 is 15𝑥 and 5 lots of -2 is -10. So the area is 15𝑥 – 10."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 132158,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0c67f57e-bb74-4af6-991e-8045c8e84df9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have realised that we have four equal sides so we need to multiply by 4. You have multiplied the '+ 3' by 4 but we also need to multiply the '𝑥' by 4. How do we write that?",
+        "B": "We need to add all the sides to find the perimeter. Check carefully - did you miss any?",
+        "C": "I think you have worked out 4 lots of 3𝑥 instead of 4 lots of 𝑥 + 3. But what do we get if we add 𝑥 + 3 + 𝑥 + 3 + 𝑥 + 3 + 𝑥 + 3?",
+        "D": "To find the perimeter, we need to add all the side lengths. We have four equal sides so we need 4 lots of (𝑥 + 3). 4 lots of 𝑥 is written as 4𝑥 and 4 lots of 3 equals 12. Or we could add all four sides: 𝑥 + 3 + 𝑥 + 3 + 𝑥 + 3 + 𝑥 + 3. Either way, we get a perimeter of 4𝑥 + 12."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 132074,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/328dcaf8-f304-4ffd-b86d-f86921c76fc3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find the perimeter, we need to add all the side lengths. We have four equal sides so we need 4 lots of (2𝑥 + 1). 4 lots of 2𝑥 is 4 x 2𝑥 = 8𝑥 and 4 x 1 = 4. Or we could add all four sides: 2𝑥 + 1 + 2𝑥 + 1 + 2𝑥 + 1 + 2𝑥 + 1. Either way, we get a perimeter of 8𝑥 + 4.",
+        "B": "I think you have realised that we have four equal sides so we need to multiply by 4. You have multiplied the '+ 1' by 4 but we also need to multiply the '2𝑥' by 4. How do we write that?",
+        "C": "I think you have realised that we have four equal sides so we need to multiply by 4 BUT you have incorrectly simplified 2𝑥 + 1 to 3𝑥. 2𝑥 + 1 is not the same as 3𝑥. How can we find the perimeter if we cannot simplify 2𝑥 + 1?",
+        "D": "We need to add all the sides to find the perimeter. Check carefully - did you miss any?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 132159,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/42efbf44-abdc-4e6c-960a-4f28736af6a9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added up all the side lengths in the diagram but we only need to find one missing side length. Looking at the shape, would you expect the missing side length to be more or less than the opposite side length of 3𝑥 + 4?",
+        "B": "I think you have started with 3𝑥 + 4 and then subtracted all the other side lengths. We do need to do a subtraction but which side length do we need to subtract from 3𝑥 + 4?",
+        "C": "Looking at the horizontal sides, we have 3𝑥 + 4, 2𝑥 and our missing side length. If we imagine sliding the side lengths up, we can see that our missing side and 2𝑥 together will be the same length as 3𝑥 + 4. So if we subtract 2𝑥 from 3𝑥 + 4, we get the missing side length of 𝑥 + 4.",
+        "D": "We don't know all the side lengths on this shape yet but we do have enough information to work out an expression for the missing side length. Start by looking at just the horizontal sides."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 132073,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e2cb190b-4851-44d1-aa27-4a3855214106.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. I think you have correctly tried to subtract 𝑥 + 4 from 3𝑥 + 4. Remember that 𝑥 just means one lot of 𝑥 or 1𝑥. So what is 3𝑥 – 1𝑥?",
+        "B": "Looking at the horizontal sides, we have 3𝑥 + 4, 𝑥 + 4 and our missing side length. If we imagine sliding the side lengths up, we can see that our missing side and 𝑥 + 4 together will be the same length as 3𝑥 + 4. So if we subtract 𝑥 + 4 from 3𝑥 + 4, we get the missing side length of 2𝑥.",
+        "C": "I think you have added up all the side lengths in the diagram but we only need to find one missing side length. Looking at the shape, would you expect the missing side length to be more or less than the opposite side length of 3𝑥 + 4?",
+        "D": "We don't know all the side lengths on this shape yet but we do have enough information to work out an expression for the missing side length. Start by looking at just the horizontal sides."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 132166,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2e9a291b-07cb-42e3-ad1d-d29ef0276e22.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This expression uses correct algebraic notation. A number in front of the brackets means 4 lots of whatever is inside the brackets. But for this question we need to find the incorrect expression.",
+        "B": "This expression uses correct algebraic notation. We can have a negative number in front of the brackets: it means we have -4 lots of whatever is inside the brackets. But for this question we need to find the incorrect expression.",
+        "C": "This expression uses correct algebraic notation. We use a fraction line to indicate division in algebra and we can divide by letters as well as numbers. But for this question we need to find the incorrect expression.",
+        "D": "In algebraic notation, we don't use the multiplication sign because it can easily be confused for a letter 𝑥. If we have c multiplied by 4, we write that as 4c (not c x 4). So this expression is the one that is not correct."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 132076,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9d9a1a96-6a63-4ff1-acde-32b5b5a99c96.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This expression uses correct algebraic notation. A number in front of the brackets means 2 lots of whatever is inside the brackets. But for this question we need to find the incorrect expression.",
+        "B": "This expression uses correct algebraic notation. We can have a negative number in front of the brackets: it means we have -2 lots of whatever is inside the brackets. But for this question we need to find the incorrect expression.",
+        "C": "In algebraic notation, we don't use the division sign because it can be unclear which part of the expression needs to be divided. If we have c + 3 divided by 2, we write that as a fraction with c + 3 in the numerator and 2 as the denominator. So this expression is the one that is not correct.",
+        "D": "This expression uses correct algebraic notation. We can put numbers before terms with letters in an expression. The 3 in front of the c means 3 lots of c. But for this question we need to find the incorrect expression."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 132178,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/00e56f44-35d4-4297-8776-e7b235489153.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find the perimeter, we need to add all the side lengths 5 + (3𝑥 + 4) + 3 + (2𝑥 + 1) + 2 + (𝑥 + 3). Adding the '𝑥's first, we have 6𝑥. Adding the numbers we have 5 + 4 + 3 + 1 + 2 + 3, which equals 18. So the perimeter is 6𝑥 + 18.",
+        "B": "We need to add all the sides to find the perimeter. Check carefully - did you miss any?",
+        "C": "I think you have multiplied 3𝑥 + 4 by 5 but we don't multiply the sides to find perimeter. Perimeter is the total distance around the outside of the shape. What operation do we use to find the 'total'?",
+        "D": "I think you have worked out the perimeter but then tried to add the letters and numbers together. Don't forget that we can add terms with the same letters (for example 3𝑥 + 2𝑥 = 5𝑥) but we can't add letters to numbers (for example, 3𝑥 + 2 can't be simplified)."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 132077,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f54b1c42-7327-4038-9001-eca7625d54ac.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have tried to simplify the side lengths by subtracting the numbers from the letters. Don't forget that we can subtract terms with the same letters (for example 3𝑥 – 𝑥 = 2𝑥) but we can't subtract letters from numbers (for example, 3𝑥 – 1 can't be simplified).",
+        "B": "I think you have multiplied 3𝑥 – 1 by 7 but we don't multiply the sides to find perimeter. Perimeter is the total distance around the outside of the shape. What operation do we use to find the 'total'?",
+        "C": "I think you have worked out the perimeter but then tried to add the letters and numbers together. Don't forget that we can add terms with the same letters (for example 3𝑥 + 2𝑥 = 5𝑥) but we can't add letters to numbers (for example, 3𝑥 + 2 can't be simplified).",
+        "D": "To find the perimeter, we need to add all the side lengths 7 + (3𝑥 – 1) + 4 + (2𝑥 – 1) + 3 + 𝑥. Adding the '𝑥's first, we have 6𝑥. Adding the numbers we have 7 – 1 + 4 – 1 + 3, which equals 12. So the perimeter is 6𝑥 + 12."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

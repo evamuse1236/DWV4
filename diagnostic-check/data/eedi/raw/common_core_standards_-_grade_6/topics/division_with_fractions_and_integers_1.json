@@ -1,0 +1,147 @@
+{
+  "shortcode": "vnj",
+  "name": "Division with fractions and integers 1",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 43,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify that a problem needs to be solved using division",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Divide proper fractions in the form: Fraction ÷ Integer",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 130237,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dc1aed8f-b06e-40dc-817c-5f7c8724141c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Ignore the green shading and think of the shape as a whole.",
+        "B": "Not quite. How many sections does the '?' represent? How many sections are there in total?",
+        "C": "Ignoring the shading, the '?' represents 1 section out of the 5 sections. The answer is 1/5.",
+        "D": "Not quite. How many sections does the '?' represent? How many sections are there in total?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130257,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/40781f23-d456-4582-87fe-fca056f10a88.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Ignore the green shading and think of the shape as a whole.",
+        "B": "Not quite. How many sections does the '?' represent? How many sections are there in total?",
+        "C": "Not quite. How many sections does the '?' represent? How many sections are there in total?",
+        "D": "Ignoring the shading, the '?' represents 1 section out of the 7 sections. The answer is 1/7."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130238,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ac7cc30e-9d11-4875-87a5-a3ca3617cdd6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You've found the calculation for the green section, rather than the question mark.",
+        "B": "2/3 is not the fraction that shows how much is shaded green. How many sections has the whole bar been split into?",
+        "C": "The green section represents 2/5 of the overall bar, the question mark is only half of this, and so 2/5 ÷ 2 gives the ?",
+        "D": "This would give 4/5, does the question mark represent that much of the bar?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130258,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5319fbd1-a56c-4862-ac20-96a028e31d9b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You've found the calculation for the green section, rather than the question mark.",
+        "B": "The green section represents 3/7 of the overall bar, the question mark is one third of this, and so 3/7 ÷ 3 gives the ?",
+        "C": "3/4 is not the fraction that shows how much is shaded green. How many sections has the whole bar been split into?",
+        "D": "This would give 9/7, does the question mark represent more than a full bar?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130239,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7f7790aa-85e2-4126-b4d4-850510c38104.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The numerator is divisible by 2 so we can write 2/5 ÷ 2 = 1/5.",
+        "B": "It looks like you have divided the numerator by 2 and multiplied the denominator by 2. What do we get if we split 2/5 into 2 parts?",
+        "C": "It looks like you have multiplied by 2 instead of dividing by 2.",
+        "D": "4/10 is equivalent to the fraction we started with, so this cannot be the answer. What do we get if we split 2/5 into 2 parts?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130259,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0779a5fc-2de2-420f-af34-5fc50cf3259f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have divided the numerator by 3 and multiplied the denominator by 3. What do we get if we split 3/11 into 3 parts?",
+        "B": "It looks like you have multiplied the numerator by 3 instead of dividing by 3.",
+        "C": "It looks like you have multiplied the numerator and denominator by 3. We need to divide by 3, what is 3/11 split into 3 equal parts?",
+        "D": "The numerator is divisible by 3 so we can write 3/11 ÷ 3 = 1/11."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130240,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1469f493-531c-4691-9adf-2efe732dde58.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have divided the denominator by 2. Try first writing 1/8 as 2/16 and then carry out a division involving the numerator.",
+        "B": "It looks like you have subtracted 2 from the denominator. Try first writing 1/8 as 2/16 and then carry out a division.",
+        "C": "It looks like you have added 2 to the denominator. Try first writing 1/8 as 2/16 and then carry out a division.",
+        "D": "If we use equivalent fractions we can say 1/8 ÷ 2 = 2/16 ÷ 2 = 1/16."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130260,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d22dd867-5b1f-4b97-9d69-a94758d2bcab.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we use equivalent fractions we can say 1/9 ÷ 3 = 3/27 ÷ 3 = 1/27.",
+        "B": "It looks like you have added 3 to the denominator. Try first writing 1/9 as 3/27 and then carry out a division.",
+        "C": "It looks like you have subtracted 3 from the denominator. Try first writing 1/9 as 3/27 and then carry out a division.",
+        "D": "It looks like you have divided the denominator by 3. Try first writing 1/9 as 3/27 and then carry out a division involving the numerator."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130241,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fa032aba-9d55-43dd-b59e-87b393b30705.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "When we divide a fraction, we don't need to divide the numerator and the denominator. 2/4 is equivalent to 4/8, rather than half of it.",
+        "B": "When we divide a fraction by 2, we can simply divide the numerator by 2. 4 ÷ 2 = 2, and the denominator stays the same, so we get 2/8.",
+        "C": "When dividing a fraction by an integer, we do sometimes multiply the denominator by that integer, but we do not do it at the same time as dividing the numerator. 2/16 is effectively 4 times smaller, rather than 2 times smaller.",
+        "D": "We do not divide the denominator when dividing by an integer. To visualise this, imagine a cake split into 8 pieces. 4 slices are left, and you share those between 2 people. How much of the cake does each person get?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130261,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d5e8f96c-0836-4548-923a-2e0054c2324b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We do not divide the denominator when dividing by an integer. To visualise this, imagine a cake split into 9 pieces. 6 slices are left, and you share those between 3 people. How much of the cake does each person get?",
+        "B": "When dividing a fraction by an integer, we do sometimes multiply the denominator by that integer, but we do not do it at the same time as dividing the numerator. 2/18 is effectively 9 times smaller, rather than 3 times smaller.",
+        "C": "When we divide a fraction by 3, we can simply divide the numerator by 3. 6 ÷ 3 = 2, and the denominator stays the same, so we get 2/9.",
+        "D": "When we divide a fraction, we don't need to divide the numerator and the denominator. 2/3 is equivalent to 6/9, rather than one third of it."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

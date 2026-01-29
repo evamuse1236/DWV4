@@ -1,0 +1,147 @@
+{
+  "shortcode": "egau",
+  "name": "Real-world inequalities",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 186,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Represent a linear inequality with a single tail on a number line",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Form inequalities from situations described in words",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166258,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5ed13cb1-44ba-43cb-a79c-9df28b597d4e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The empty circle at 120 means that it is not included and the arrow is pointing to the left of 120, so this inequality represents spending less than $120.",
+        "B": "Remember we want to spend less than $120, which direction should the arrow be pointing?",
+        "C": "The filled in circle at 120 means that we can spend $120 but we want to spend less than $120.",
+        "D": "This shows that we can spend $120 or more but we want to spend less than $120. Which direction should the arrow be pointing? How do we show that 120 is not included?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166485,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9855f15b-8ad0-4fa7-927f-a4b7ea8f3c8e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This shows that we can spend $140 or more but we want to spend less than $140. Which direction should the arrow be pointing? How do we show that 140 is not included?",
+        "B": "The empty circle at 140 means that it is not included and the arrow is pointing to the left of 140, so this inequality represents spending less than $140.",
+        "C": "The filled in circle at 140 means that we can spend $140 but we want to spend less than $140.",
+        "D": "Remember we want to spend less than $140, which direction should the arrow be pointing?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166259,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5bd6edd0-a5f9-4406-837b-35dad6953b1f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The arrow pointing to the right of 40 means that the temperature can be more than 40℉, but we want 40℉ or less. What direction should the arrow be pointing? How can we show that 40 is included?",
+        "B": "The filled in circle at 40 means that it is included, so 40℉ is the maximum temperature, and the arrow is pointing to the left of 40, so this inequality represents the range of safe temperatures.",
+        "C": "As the arrow is pointing to the right of 40, this shows that the temperature can be 40℉ or more, but we want 40℉ or less.",
+        "D": "The arrow is pointing in the correct direction but as 40℉ is the maximum temperature we can include it. How do we show that on the inequality?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166486,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/41b594de-72b1-4d1b-ad60-a8075124d0c9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The arrow is pointing in the correct direction but as 1000 pounds is the maximum weight we can include it. How do we show that on the inequality?",
+        "B": "As the arrow is pointing to the right of 1000, this shows that the weight can be 1000 pounds or more, but we want 1000 pounds or less.",
+        "C": "The arrow pointing to the right of 1000 means that the weight can be more than 1000 pounds, but we want 1000 pounds or less. What direction should the arrow be pointing? How can we show that 1000 is included?",
+        "D": "The filled in circle at 1000 means that it is included, so 1000 pounds is the maximum weight, and the arrow is pointing to the left of 1000, so this inequality represents the range of safe weights."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166260,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c605ec41-867e-4793-b17f-e63b5ebbf749.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The ≥ symbol means greater than or equal to so 𝑎 ≥ 25.",
+        "B": "> means greater than but 'at least' means that 25 can be included. How will that change the symbol used?",
+        "C": "At least' means the age is 25 or more, but < means less than. Which symbol should we use to show greater than or equal to 25?",
+        "D": "At least' means the age is 25 or more, but ≤ means 25 or less than. Which symbol should we use to show greater than or equal to 25?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166487,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/69284fbb-4bcf-485c-9a54-0463bdaabd6a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "> means greater than but 'at least' means that 21 can be included. How will that change the symbol used?",
+        "B": "At least' means the age is 21 or more, but ≤ means 21 or less than. Which symbol should we use to show greater than or equal to 21?",
+        "C": "The ≥ symbol means greater than or equal to so 𝑎 ≥ 21.",
+        "D": "At least' means the age is 21 or more, but < means less than. Which symbol should we use to show greater than or equal to 21?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166261,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4cc99e47-052c-467e-9431-616513b765a5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you might have thought 'at least' means 'less than or equal to' but it actually means 'more than or equal to'.",
+        "B": "$700 is shared equally between the workers so we divide 700 by 𝑤. They get at least $55 so we use the greater than or equal to symbol. So, 700 ÷ 𝑤 ≥ 55",
+        "C": "This represents the workers getting less than $55 but we want the workers to get 'greater than or equal to' $55. Which inequality symbol should you use?",
+        "D": "At least' means that the $55 is not included, how would you change your inequality symbol to include 55?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166488,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/97295323-04df-40fc-89a2-5c65860a880d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "$900 is shared equally between the workers so we divide 900 by 𝑤. They get at least $65 so we use the greater than or equal to symbol. So, 900 ÷ 𝑤 ≥ 65",
+        "B": "This represents the workers getting less than $65 but we want the workers to get 'greater than or equal to' $65. Which inequality symbol should you use?",
+        "C": "At least' means that the $65 is not included, how would you change your inequality symbol to include 65?",
+        "D": "It looks like you might have thought 'at least' means 'less than or equal to' but it actually means 'more than or equal to'."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166262,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/723e90ab-0d36-4676-9c5e-8247475c1461.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We can use one inequality to represent this. It will look like this: 5 __ 𝑎 __ 12. We want to show that 𝑎 can be greater than or equal to 5, but has to be less than 12. Which inequality symbols will you need to use to fill the gaps?",
+        "B": "Children aged 5 can enter the park. Which inequality symbol do you need to change to show that 5 year olds are allowed in?",
+        "C": "Children aged 5 can enter the park but children aged 12 can't enter the park. What do you need to change about your inequality symbols to represent this?",
+        "D": "Children must be greater than or equal to 5 but less than 12 years of age to enter the park, so we have 5 ≤ 𝑎 < 12."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166489,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/62358094-f858-4c36-83aa-8561b94bbdf8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Children aged 4 can enter the park but children aged 11 can't enter the park. What do you need to change about your inequality symbols to represent this?",
+        "B": "We can use one inequality to represent this. It will look like this: 4 __ 𝑎 __ 11. We want to show that 𝑎 can be greater than or equal to 4, but has to be less than 11. Which inequality symbols will you need to use to fill the gaps?",
+        "C": "Children must be greater than or equal to 4 but less than 11 years of age to enter the park, so we have 4 ≤ 𝑎 < 11.",
+        "D": "Children aged 4 can enter the park. Which inequality symbol do you need to change to show that 4 year olds are allowed in?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,153 @@
+{
+  "shortcode": "vnu",
+  "name": "Mental addition and subtraction with decimals 2",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 58,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Add decimals with the same number of decimals places",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Add decimals where the numbers involved have a different number of decimal places",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Subtract decimals where the numbers involved have a different number of decimal places",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 132172,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6be7a7b2-46a2-4a38-be66-501a5bae1138.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The easiest way to do this sum is to think of 2.5 as 2.50 so both values have the same number of decimal places. You can then subtract the units (2 - 1) and the decimal places (0.50 - 0.09)... 2.50 - 1.09 = 1.41",
+        "B": "Not quite. We are subtracting 9 from 0 NOT 0 from 9. Remember to borrow if you are subtracting a larger number from a smaller number.",
+        "C": "You have accidentally done the sum 2.05 - 1.09 instead of 2.5 - 1.09. The 5 is in the tenths column, not the hundredths. Think about 2.5 being the same as 2.50 then mentally you can do 2 - 1 and 0.50 - 0.09 to get your answer.",
+        "D": "You have accidentally done the sum 1.09 - 0.25, we need to do 2.5 - 1.09. Think about 2.5 being the same as 2.50 then mentally you can do 2 - 1 and 0.50 - 0.09 to get your answer."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134160,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/303e1ffe-0a78-4b1c-96ee-08b641a3ea0d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have accidentally done the sum 7.04 - 2.28 instead of 7.4 - 2.28. The 4 is in the tenths column, not the hundredths! Think about 7.4 being the same as 7.40 then mentally you can do 7 - 2 and 0.40 - 0.28 to get your answer.",
+        "B": "You have accidentally swapped the sum around and done 2.28 - 0.74 instead of 7.4 - 2.28. Think about 7.4 being the same as 7.40 then mentally you can do 7 - 2 and 0.40 - 0.28 to get your answer.",
+        "C": "Not quite. We are subtracting 8 from 0 NOT 0 from 8. Remember to borrow if you are subtracting a larger number from a smaller number.",
+        "D": "The easiest way to do this sum is to think of 7.4 as 7.40 so both values have the same number of decimal places. You can then subtract the units (7 - 2 = 5) and the decimal places (0.40 - 0.28 = 0.12)... 7.40 - 2.28 = 5.12."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 132173,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/35b7db18-fb1b-474e-9e13-9d9c6c58a957.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have correctly subtracted the 2 from 5 but you need to subtract the 1 from the 3 as they are both in the tenths column. If it helps think of the 2.1 as 2.10 so that both decimal numbers have the same number of decimal places.",
+        "B": "Not quite. I think you have added when the question is asking you to subtract.",
+        "C": "Not quite, be careful with your place value. When setting up your subtraction the 2 should go underneath the 5 and the 1 should go underneath the 3.",
+        "D": "The easiest way to do this sum is to think of 2.1 as 2.10 so both values have the same number of decimal places. You can then easily easily subtract the units (5 - 2) the tenths (3 - 1) and the hundredths (9 - 0)... 5.39 - 2.10 = 3.29"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134159,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2c7d797b-ec0d-4d3f-9b2e-edd4f80e6acd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, be careful with your place value. When setting up your subtraction the 3 should go underneath the 4 and the 1 should go underneath the 7.",
+        "B": "Not quite, be careful with your place value. When setting up your subtraction the 3 should go underneath the 4 and the 1 should go underneath the 7.",
+        "C": "The easiest way to do this sum is to think of 3.1 as 3.10 so both values have the same number of decimal places. You can then easily subtract the units (4 - 3), the tenths (7 - 3) and the hundredths (2 - 0)... 4.72 - 3.10 = 1.62!",
+        "D": "Not quite. I think you have added when the question is asking you to subtract."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 132174,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/91502266-8bd7-47ee-956c-01467e2331c7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "2 + 1 = 3, and 0.9 + 0.69 = 1.59. Combining 3 and 1.59 gives 4.59.",
+        "B": "Not quite, I think you have mixed up the place value of some of the digits. Try doing 2 + 1, then 0.9 + 0.69.",
+        "C": "Not quite, remember; 0.9 + 0.69 = 1.59 (not 0.159).",
+        "D": "Nearly! Double check your answer. I think you have forgotten to 'carry' a one."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134158,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3577426e-24a3-4690-a077-43087f76e02e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly! Double check your answer. I think you have forgotten to 'carry' a one.",
+        "B": "Not quite - I think you have used 0.47 instead of 4.7.",
+        "C": "4 + 2 = 6, and 0.7 + 0.51 = 1.21. Combining 6 and 1.21 gives 7.21.",
+        "D": "Not quite, remember; 0.7 + 0.51 = 1.21 (not 0.121)."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 132175,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6d851b50-187b-4991-9812-e2a1fb84549b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly! Double check your answer. I think you have forgotten to 'carry' a one.",
+        "B": "Not quite, remember; 0.52 + 0.75 = 1.27",
+        "C": "3 + 2 = 5, and 0.52 + 0.75 = 1.27. Combining 5 and 1.27 gives 6.27.",
+        "D": "Not quite, remember; 0.52 + 0.75 = 1.27 (not 0.127)."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134157,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/231c76d8-fc4d-44ea-a48b-48faf93c2d26.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, remember, 0.09 + 0.03 = 0.12, not 1.2",
+        "B": "Not quite - double check again how to add the 0.39 + 0.53 part of the question.",
+        "C": "Nearly! Double check your answer. I think you have forgotten to 'carry' a tenth.",
+        "D": "1 + 2 = 3, and 0.39 + 0.53 = 0.92. Combining 3 and 0.92 gives 3.92."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 132176,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3fcbf448-e7c8-4a25-ae9d-89920ef13e1f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "3 + 4 = 7, and 0.5 + 0.8 = 1.3. Combining 7 and 1.3 gives 8.3.",
+        "B": "Nearly! Double check your answer. I think you have forgotten to 'carry' a one.",
+        "C": "Not quite, remember 0.5 + 0.8 = 1.3 (not 0.13).",
+        "D": "Not quite, remember 0.5 + 0.8 = 1.3 (not 3.1)."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134156,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1e77e68c-a79b-4b0c-8cf7-c1099a22485b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly! Double check your answer. I think you have forgotten to 'carry' a one.",
+        "B": "Not quite, remember 0.7 + 0.6 = 1.3 (not 0.13).",
+        "C": "Not quite, remember 0.7 + 0.6 = 1.3 (not 3.1).",
+        "D": "2 + 1 = 3, and 0.7 + 0.6 = 1.3. Combining 3 and 1.3 gives 4.3."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

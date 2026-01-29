@@ -1,0 +1,165 @@
+{
+  "shortcode": "vpr",
+  "name": "Substitute into expressions and formulae 7 (non-integers)",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 150,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Substitute positive non-integer values into expressions involving no powers or roots",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Substitute positive non-integer values into expressions involving powers or roots",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Substitute negative non-integer values into expressions involving no powers or roots",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Substitute negative non-integer values into expressions involving powers or roots",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Substitute numbers into a SUVAT equation to work out distance",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 135247,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/32755f15-7d38-4afc-8b81-ff33b8c618db.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "9 x 0.5 = half of 9 which is 4.5",
+        "B": "I think you have added the numbers. Remember that, in algebra, when two letters are next to each other like that it means to multiply them together.",
+        "C": "I think you have calculated 9 x 5 rather than 9 x 0.5",
+        "D": "I think you have just written the digits in a row. Remember that, in algebra, when two letters are next to each other like that it means to multiply them together."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135267,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a943e38b-e0f1-48f3-b6f7-79631578fc8e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have multiplied 14 by 10 rather than a tenth (0.1)",
+        "B": "I think you have added the numbers. Remember that, in algebra, when two letters are next to each other like that it means to multiply them together.",
+        "C": "14 x 0.1 = a tenth of 14 = 1.4",
+        "D": "I think you have multiplied 14 by 1 rather than 0.1."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135248,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5959796a-434e-4d0c-924c-e187159cdf30.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful here, a power of 0.5 does not mean we halve the answer. To help you, remember this is the inverse of a power of 2.",
+        "B": "When we substitute the values in, we need to do 9 to the power of 0.5, whereas you've added 9 and 0.5",
+        "C": "Substituting the values, we get 9 to the power of 0.5. 0.5 as a power is the square root, so we find the square root of 9 = 3.",
+        "D": "A power of 2 would give us 81, however the power here is 0.5. What is the inverse of squaring a number?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135268,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/921272d5-0dc9-494f-b155-5883d86a5e8f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Substituting the values, we get 16 to the power of 0.5. 0.5 as a power is the square root, so we find the square root of 16 = 4.",
+        "B": "Be careful here, a power of 0.5 does not mean we halve the answer. To help you, remember this is the inverse of a power of 2.",
+        "C": "A power of 2 would give us 256, however the power here is 0.5. What is the inverse of squaring a number?",
+        "D": "When we substitute the values in, we need to do 16 to the power of 0.5, whereas you've added 16 and 0.5"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135249,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/28d8829f-eef7-47cd-b303-d68b78fe5fae.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have multiplied 9 by (-5) rather than (-0.5)",
+        "B": "I think you have added the numbers then made the answer negative. Remember that, in algebra, when two letters are next to each other like that it means to multiply them together.",
+        "C": "9 x (-0.5) = (-4.5)",
+        "D": "I think you have added the numbers. Remember that, in algebra, when two letters are next to each other like that it means to multiply them together."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135269,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/41321bad-fdcc-4e60-b22f-def175e714ef.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added 16 and 0.1 and then made your answer negative. Remember that, in algebra, when two letters are next to each other like that it means to multiply them together.",
+        "B": "16 x (-0.1) = (-1.6)",
+        "C": "I think you have multiplied 16 by (-1) rather than a tenth (-0.1)",
+        "D": "I think you have added the numbers. Remember that, in algebra, when two letters are next to each other like that it means to multiply them together."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135250,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/670123d0-9ceb-4672-937c-dabb9f7c700a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Substituting the values in, we get 9 to the power of -0.5. It is then easiest to separate -0.5 into -1 x 0.5.Then we can apply the power of 0.5, or 1/2, which means we need to square root 9 = 3, afterwards we can apply the power of -1 which finds the reciprocal of 3 = 1/3.",
+        "B": "I think you've multiplied 9 by -0.5, which would be correct if this were ab = a x b. However here b is a power of a, rather than multiplying. Try splitting the -0.5 into 1/2 and -1 if you're unsure how to apply it.",
+        "C": "Almost there. You've correctly applied the power of 0.5, but what will the negative part of b change about your answer?",
+        "D": "You've correctly applied the 0.5 part of the power! Be careful with the negative part. This doesn't make the answer a negative value. What else could it change about your answer?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135270,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c266ba51-a817-415a-bdab-072a05186295.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've multiplied 16 by -0.5, which would be correct if this were ab = a x b. However here b is a power of a, rather than multiplying. Try splitting the -0.5 into 1/2 and -1 if you're unsure how to apply it.",
+        "B": "You've correctly applied the 0.5 part of the power! Be careful with the negative part. This doesn't make the answer a negative value. What else could it change about your answer?",
+        "C": "Substituting the values in, we get 16 to the power of -0.5. It is then easiest to separate -0.5 into -1 x 0.5.Then we can apply the power of 0.5, or 1/2, which means we need to square root 16 = 4, afterwards we can apply the power of -1 which finds the reciprocal of 4 = 1/4.",
+        "D": "Almost there. You've correctly applied the power of 0.5, but what will the negative part of b change about your answer?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135251,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/05bfff9a-a9ac-4c91-9732-d98709694bea.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we substitute the values we know into the formula, then s = (3x4) + (0.5x6x4x4) = 12 + 48 = 60",
+        "B": "I think you have squared (0.5at) whereas you should only square the t, then multiply it by 0.5a",
+        "C": "Not quite, I think you have squared the whole expression rather than just the t. Remember ½at² means ½ ✕ a ✕  t².",
+        "D": "I think you have forgotten to square the t. Make sure to square t first, then multiply by 0.5a, then add on the 'ut'."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135271,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0707c8db-059c-488d-ae11-23d017e27433.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have forgotten to square the t. Make sure to square t first, then multiply by 0.5a, then add on the 'ut'.",
+        "B": "I think you have squared (0.5at) whereas you should only square the t, then multiply it by 0.5a",
+        "C": "Not quite, I think you have squared the whole expression rather than just the t. Remember ½at² means ½ ✕ a ✕  t².",
+        "D": "If we substitute into the formula, then s = (3x5) + (0.5x4x5x5) = 15 + 50 = 65"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

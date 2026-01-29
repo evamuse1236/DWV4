@@ -1,0 +1,165 @@
+{
+  "shortcode": "vm2",
+  "name": "Direct proportion 5",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 19,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Use direct proportion to solve non-unitary missing amounts in problems (e.g. recipes)",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve best value problems by comparing units bought for a fixed price",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given a scale represented by a ratio in different units, calculate the size of something in real life",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given an exchange rate x = ny, convert to work out the number of x’s for a given y",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use inverse proportion to find missing amounts in problems",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 104656,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/34ec0cfc-b9db-4c78-86e9-fbea1eec4e5d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Multiplying 500g and 200g will not take account of the cost. How could we work out how much cereal you get for £1?",
+        "B": "If we divide each mass by the price, we will get the mass per unit cost in grams per £. So we do 500 ÷ 1.85 and 200 ÷ 0.80. Comparing these, the larger answer will be better value.",
+        "C": "Dividing 500g by 200g will not take account of the cost. How could we work out how much cereal you get for £1?",
+        "D": "We do have enough information here. We could work out the mass of cereal we get for £1 or the cost for 100g of cereal. How do we do that?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 141676,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b7a01432-66e6-4f5f-9dcf-9aa6b683d391.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Multiplying 330ml and 900ml will not take account of the cost. How could we work out how much drink you get for 1p?",
+        "B": "Dividing 330ml and 900ml will not take account of the cost. How could we work out how much drink you get for 1p?",
+        "C": "If we divide each volume by the price, we will get the volume per unit cost in ml per p. So we do 330 ÷ 80 and 900 ÷ 220. Comparing these, the larger answer will be better value.",
+        "D": "We do have enough information here. We could work out the volume of drink we get per penny? How do we do that?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 104657,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5fa0df29-5c61-4272-8137-1642b700c0c7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "900g would make 15 biscuits. To start, try finding the amount of flour needed for 1 biscuit. How could we use that to find the flour needed for 14 biscuits?",
+        "B": "480g would make 8 biscuits. To start, try finding the amount of flour needed for 1 biscuit. How could we use that to find the flour needed for 14 biscuits?",
+        "C": "From the recipe, we need 360g of flour for 6 biscuits. Dividing by 3 tells us we need 120g of flour for 2 biscuits. Multiplying by 7 tells us we need 840g of flour for 14 biscuits.",
+        "D": "I think you have multiplied 360g by 14. This would give us the amount of flour to make 6 x 14 = 84 biscuits. To start, try finding the amount of flour needed for 1 biscuit. How could we use that to find the flour needed for 14 biscuits?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104662,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/792f9c32-4f62-4822-b4fa-ad702764fafe.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "From the recipe, we need 240g of flour for 8 biscuits. Dividing by 2 tells us we need 120g of sugar for 4 biscuits. Multiplying by 5 tells us we need 600g of sugar for 20 biscuits.",
+        "B": "I think you have found the amount of butter needed for 20 biscuits. We need the amount of sugar.",
+        "C": "360g would make 12 biscuits. To start, try finding the amount of sugar needed for 1 biscuit. How could we use that to find the sugar needed for 20 biscuits?",
+        "D": "I think you have multiplied 240g by 20. This would give us the amount of sugar to make 8 x 20 = 160 biscuits. To start, try finding the amount of sugar needed for 1 biscuit. How could we use that to find the sugar needed for 20 biscuits?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 104658,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d3b02005-d12a-441a-b176-64b6563ecb49.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Dividing the scale by 2, we get 1 cm = 2.5km. Multiplying by 9, we get 9cm = 22.5km. If we convert km to m by multiplying by 1000, we get 22 500m as the actual distance between the towns.",
+        "B": "Check the units in the scale. 9cm on the map is equivalent to 22.5km in real life. How do we change that to metres?",
+        "C": "I think you have made a mistake when converting km to m. What does 'kilo' in the word 'kilometre' tell us?",
+        "D": "I think you have multiplied 9cm by 5km. That would work if the scale was 1 cm to 5km. What could we do to the scale to change it from 2 cm = 5 km to 1 cm = ? km?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104663,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ff15ba7d-d037-41f8-a871-21c4cb3ac467.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have made a mistake when converting km to m. What does 'kilo' in the word 'kilometre' tell us?",
+        "B": "Check the units in the scale. 5.2cm on the map is equivalent to 13 km in real life. How do we change that to metres?",
+        "C": "Dividing the scale by 2, we get 1 cm = 2.5km. Multiplying by 5.2, we get 5.2cm = 13 km. If we convert km to m by multiplying by 1000, we get 13 000m as the actual distance between the towns.",
+        "D": "I think you have multiplied 5.2cm by 5km. That would work if the scale was 1 cm to 5km. What could we do to the scale to change it from 2 cm = 5 km to 1 cm = ?km?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 104659,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e72f2583-5e65-439a-a39b-dd8c1c49537f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly, it looks like you have converted £5 into Dollars, rather than $5 into Pounds. Think carefully about what calculation you need to do to go from $1.31 to £1.",
+        "B": "Almost, it looks like you've found €5 in Pounds, rather than $5. Look carefully at which exchange rate to use.",
+        "C": "Look carefully at the question, we're trying to find the value of $5 in Pounds. You'll need to use the exchange rate: £1 = $1.31 to convert to Pounds.",
+        "D": "To change from $ to £, we divide by 1.31. 5 divided by 1.31 is 3.82."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104664,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1b3d9060-9b16-44d0-a61f-cd48024ec499.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly, it looks like you have converted £11 into Dollars, rather than $11 into Pounds. Think carefully about what calculation you need to do to go from $1.31 to £1.",
+        "B": "To change from $ to £, we divide by 1.31. 11 divided by 1.31 is 8.40.",
+        "C": "Look carefully at the question, we're trying to find the value of $11 in Pounds. You'll need to use the exchange rate: £1 = $1.31 to convert to Pounds.",
+        "D": "Almost, it looks like you've found €11 in Pounds, rather than $11. Look carefully at which exchange rate to use."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 104660,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2fd27320-5a02-4056-b708-59509febc915.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've multiplied the time by 2, because the speed has been multiplied by 2. Have a think about if we travel at a quicker speed, will the journey take longer? Always check your answer seems sensible too!",
+        "B": "Have a think about if we travel at a quicker speed, will the journey take longer? Always check your answer seems sensible too!",
+        "C": "If we double our speed, the journey will take half the time. 3 hours divided by 2 is 1.5 hours.",
+        "D": "If we travel at a quicker speed, will it still take the same amount of time? Always check your answer seems sensible :)"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104665,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2414fd22-ccd6-4e96-b661-099a22a01f66.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Take a moment to think it through, if we have more people building the wall, will it take them longer to build the wall?",
+        "B": "To go from 3 people to 12 people, we times by 4. As this is indirectly proportional, we then divide the 192 by 4, giving 48 hours.",
+        "C": "Take a moment to think it through, if we have more people building the wall, will it take them the same amount of time to complete it?",
+        "D": "I think you have calculated 192/3. This might not help us in this question. I think you may have confused it with the method to calculate 192 x 3, which will tell you how many hours in total is needed to complete the wall. Then you can think of how you could split this between 12 people."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

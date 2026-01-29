@@ -1,0 +1,153 @@
+{
+  "shortcode": "bifw",
+  "name": "Describe and continue a sequence given diagrammatically",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 16,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify triangular numbers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Describe an ascending linear sequence in words",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Continue linear sequences expressed as patterns by drawing the next pattern",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 147188,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bcbab0d4-240b-4100-90f8-33db654625b5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, remember the rule must work between all of the terms. Have we got triple the number of circles in the third term than we do the second?",
+        "B": "In this pattern the first term has 1 circle, the second term has 2 and the third term has 5. Using this we can see that Tom is incorrect, as if the term to term rule was triple the previous term we would expect 1, 3 and then 9 circles. Katie is correct as each term in the sequence is getting two extra circles.",
+        "C": "Not quite, remember the rule must work between all of the terms. Have we got triple the number of circles in the third term than we do the second?",
+        "D": "Not quite, remember the rule must work between all of the terms. If Tom is correct, how many circles would the 3rd term have? Does this match the sequence given? If Katie is correct, how many circles would the third term have? Does it match?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 147208,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d2de67be-2bbc-423d-8398-ef20c8ff30f2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The number of circles goes from 1, to 2, to 4, doubling each time, so Tom is correct. Katie is incorrect. If we were getting 2 extra circles everytime we would expect 3 circles in the second term and 5 in the third term.",
+        "B": "Not quite, remember the rule must work between all of the terms. Has each term in the sequence got two more circles than the previous term? Has it got double the number?",
+        "C": "Not quite, remember the rule must work between all of the terms. Has each term in the sequence got two more circles than the previous term? Has it got double the number?",
+        "D": "Not quite, remember the rule must work between all of the terms. Has each term in the sequence got two more circles than the previous term? Has it got double the number?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 147189,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/58113a43-1d54-459f-a881-934811c7566f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have just looked at the first two terms and assumed you would double the number of circles each time. This rule does not work between the second and third terms. Try finding the difference between every adjacent pair to help you spot the pattern.",
+        "B": "I think you may have assumed that because we have added on 4 to get from the second to third term, that we would add on 4 again. But this rule does not work between the first and second term. Try finding the difference between every adjacent pair to help you spot the pattern.",
+        "C": "The pattern between the terms is +3, then +4, so the next one will be +5. There are 10 circles in pattern 3 so we would expect 15 (10 + 5) circles in pattern 4.",
+        "D": "Not quite.Try finding the difference between every adjacent pair to help you spot the pattern."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 147209,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dee11b3a-69ff-414d-875a-b837e5e981d8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have just looked at the first two terms and assumed you would add 2 each time, but this rule does not work between the second and third terms. Try finding the difference between every adjacent pair to help you spot the pattern.",
+        "B": "I think you may have assumed that because we have added on 3 to get from the second to third term, that we would add on 3 again. Have another look at the pattern between each term and reconsider what would happen next.",
+        "C": "Not quite.Try finding the difference between every adjacent pair to help you spot the pattern.",
+        "D": "The pattern between the terms is +2, then +3, so the next one will be +4. There are 6 circles in pattern 3 so we would expect 10 circles (6 + 4) in pattern 4."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 147190,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f7f95b93-82c6-45be-adb1-2ff1a8a8e4c7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. There are four circles in term 1, how many would we expect in term 2 if we are doubling the number of circles every time? Does this match the sequence given?",
+        "B": "Not quite. There are four circles in term 1, how many circles would we expect in term 2 if we are increasing the number of circles by 2? Does this match the sequence given?",
+        "C": "Not quite. Count how many circles are in each term and then compare this to what we would expect the number of circles to be if we used either of Tom or Katie's term to term rules.",
+        "D": "The number of circles goes from 4, to 7, to 10, so the rule would be ‘add 3’ between each term. Therefore, neither of them are correct."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 147210,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a066d64a-3222-4320-a8c1-825a9cff1e86.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. There are five circles in term 1, how many would we expect in term 2 if we are doubling the number of circles every time? Does this match the sequence given?",
+        "B": "The number of circles goes from 5, to 8, to 11, so the rule is ‘add 3’ each time. Therefore, Katie is correct and Tom is incorrect.",
+        "C": "Not quite. There are five circles in term 1, how many would we expect in term 2 if we are doubling the number of circles every time? Does this match the sequence given?",
+        "D": "Not quite, at least one of them is correct. Count how many circles are in each term and then compare this to what we would expect the number of circles to be if we used either of Tom or Katie's term to term rules."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 147191,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2c9046e9-49b5-4ab5-8194-8c041538caf7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The pattern of squares goes from 3 squares, to 5 squares, to 7 squares, so adding 2 each time. Therefore, the next term in the sequence will have 7+2=9 squares.",
+        "B": "I think you have assumed that they increase by 1 each time. Have another look at the pattern and count how many squares are added each time",
+        "C": "I think you have assumed that they increase by 3 each time. Have another look at the pattern and count how many squares are added each time",
+        "D": "I think you have assumed that they double each time. Have another look at the pattern and count how many squares are added each time"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 147211,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fba0858f-1f49-43b5-a702-aa7f7cf095ae.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have stated the difference between each pattern rather than the number of squares in the next term",
+        "B": "The pattern of squares goes from 7 squares, to 5 squares, to 3 squares, so subtracting 2 each time. Therefore, the next term in the sequence will have 3-2 = 1 square",
+        "C": "I think you have assumed that they decrease by 3 each time. Have another look at the pattern and count how many squares are removed each time",
+        "D": "I think you have assumed that they halve each time. Have another look at the pattern and count how many squares are removed each time"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 147192,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c0e8d9dd-4963-4a3b-a994-59af1ef206f0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. There are five rectangles in term 1, how many would we expect in term 2 if we are doubling the number of rectangles every time? Does this match the sequence given?",
+        "B": "The number of rectangles goes from 5, to 9, to 13, so the rule is ‘add 4’ each time. Therefore, Katie is correct and Tom is incorrect.",
+        "C": "Not quite. Count how many rectangles are in each term and then compare this to what we would expect the number of rectangles to be if we used either of Tom or Katie's term to term rules.",
+        "D": "Not quite, at least one of them is correct. Count how many rectangles are in each term and then compare this to what we would expect the number of rectangles to be if we used either of Tom or Katie's term to term rules."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 147212,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eb109621-ea32-4981-ae6d-40ae713e9e0c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. There are four circles in term 1, how many would we expect in terms 2 and 3 if we double the number of circles every time? Does this match the sequence given?",
+        "B": "The number of circles goes from 4, to 8, to 12, so the rule is ‘add 4’ each time. Therefore, Katie is correct and Tom is incorrect.",
+        "C": "Not quite. Count how many circles are in each term and then compare this to what we would expect the number of circles to be if we used either of Tom or Katie's term to term rules.",
+        "D": "Not quite, at least one of them is correct. Count how many circles are in each term and then compare this to what we would expect the number of circles to be if we used either of Tom or Katie's term to term rules."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

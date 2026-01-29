@@ -1,0 +1,147 @@
+{
+  "shortcode": "efkj",
+  "name": "Absolute Value without Numberlines",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 108,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Find the absolute value of a number",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculations with absolute value",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166200,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c6377c71-a4b2-4db8-b48b-9a4e7fb19683.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember, the 'absolute value' of -7, means 'how far away from 0 is -7?'. Absolute values are never negative as we are counting the distance from zero.",
+        "B": "I think you might believe that negative numbers do not have an absolute value, but they do. The 'absolute value' of -7, means 'how far away from 0 is -7?'.",
+        "C": "The 'absolute value' of -7, means 'how far away from 0 is -7?' so, the absolute value of -7 is 7.",
+        "D": "I think you've counted the numbers from 0 to −7, including 0. Instead, you need to count the number of jumps (spaces) between 0 and -7."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166427,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9f74d66d-7813-452d-a7fe-23609df1de98.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might believe that negative numbers do not have an absolute value, but they do. The 'absolute value' of -9, means 'how far away from 0 is -9?'.",
+        "B": "The 'absolute value' of -9, means 'how far away from 0 is -9?' so, the absolute value of -9 is 9.",
+        "C": "Remember, the 'absolute value' of -9, means 'how far away from 0 is -9?'. Absolute values are never negative as we are counting the distance from zero.",
+        "D": "I think you've counted the numbers from 0 to −9, including 0. Instead, you need to count the number of jumps (spaces) between 0 and -9."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166201,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d8f7a9d1-2eb9-487a-83d3-82c4fc20f2b1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might believe that positive numbers do not have an absolute value, but they do. The 'absolute value' of 50, means 'how far away from 0 is 50?'.",
+        "B": "I think you have confused 'absolute value' with 'opposite value'. Remember, the 'absolute value' of 50, means 'how far away from 0 is 50?'. Absolute values are never negative as we are counting the distance from zero.",
+        "C": "I think you have confused the absolute value of 50 with the multiplicative inverse of 50. Remember, the 'absolute value' of 50, means 'how far away from 0 is 50?'.",
+        "D": "The 'absolute value' of 50, means 'how far away from 0 is 50?'. So, the absolute value of 50 is 50."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166428,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3d1716cd-4186-44ef-9642-a87eb2dad438.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have confused 'absolute value' with 'opposite value'. Remember, the 'absolute value' of 89, means 'how far away from 0 is 89?'. Absolute values are never negative as we are counting the distance from zero.",
+        "B": "I think you might believe that positive numbers do not have an absolute value, but they do. The 'absolute value' of 89, means 'how far away from 0 is 89?'.",
+        "C": "The 'absolute value' of 89, means 'how far away from 0 is 89?'. So, the absolute value of 89 is 89.",
+        "D": "I think you have confused the absolute value of 89 with the multiplicative inverse of 89. Remember, the 'absolute value' of 89, means 'how far away from 0 is 89?'."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166202,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/750ebd4e-7d15-42d8-b83f-54e9b6aa18d8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember, |-12| means 'what is the absolute value of -12?'. The absolute value of a number is the distance from zero to the number. Absolute values are never negative as we are counting the distance from zero.",
+        "B": "I think you have accidentally included 0 when counting the distance from 0 to -12.",
+        "C": "|-12| means 'what is the absolute value of -12?'. The absolute value of a number is the distance from zero to the number, so |-12| is 12.",
+        "D": "I think you have got confused with absolute value and reversing the digits of a number. Remember, |-12| means 'what is the absolute value of -12?'. The absolute value of a number is the distance from zero to the number."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166429,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/68151ef3-9388-4312-94a7-2f87258fce06.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have got confused with absolute value and reversing the digits of a number. Remember, |-25| means 'what is the absolute value of -25?'. The absolute value of a number is the distance from zero to the number.",
+        "B": "|-25| means 'what is the absolute value of -25?'. The absolute value of a number is the distance from zero to the number, so |-25| is 25.",
+        "C": "I think you have included 0 when counting the distance from 0 to -25.",
+        "D": "Remember, |-25| means 'what is the absolute value of -25?'. The absolute value of a number is the distance from zero to the number. Absolute values are never negative as we are counting the distance from zero."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166203,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/42f7ba88-c91e-4955-b2f9-e86c821a161d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have halved 200, but |200| means 'what is the absolute value of 200?'. Remember, the absolute value of a number means 'how far away from 0 is the number?'.",
+        "B": "|200| means 'what is the absolute value of 200?'. The absolute value of a number is the distance from zero to the number, so |200| is 200.",
+        "C": "I think you have confused the absolute value of 200 with the multiplicative inverse of 200. Remember, |200|, means 'how far away from 0 is 200?'.",
+        "D": "I think you have confused 'absolute value' with 'opposite value'. Remember, |200|, means 'how far away from 0 is 200?'. Absolute values are never negative as we are counting the distance from zero."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166430,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cdc0a90e-43e8-4cd9-8447-affe6243b9c5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have confused the absolute value of 550 with the multiplicative inverse of 550. Remember, |550|, means 'how far away from 0 is 550?'.",
+        "B": "I think you have halved 550, but |550| means 'what is the absolute value of 550?'. Remember, the absolute value of a number means 'how far away from 0 is the number?'.",
+        "C": "I think you have confused 'absolute value' with 'opposite value'. Remember, |550|, means 'how far away from 0 is 550?'. Absolute values are never negative as we are counting the distance from zero.",
+        "D": "|550| means 'what is the absolute value of 550?'. The absolute value of a number is the distance from zero to the number, so |550| is 550."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166204,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3af55dd5-d3c4-496d-8634-e8ec3f453501.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you might think |12| = 0, but remember, the |12| means the absolute value of 12, so the distance from 0 to 12",
+        "B": "Have another look at where the negative is. It is –|12|, not |–12|.",
+        "C": "–|12| means -1 × |12|, so -1 multiplied by the absolute value of 12. The absolute value of 12 is the distance from 0 to 12, therefore |12| = 12, so –|12| = -1 × 12 = -12",
+        "D": "I think you have got confused with absolute value and reversing the digits of a number. –|12| means -1 × |12|, so -1 multiplied by the distance from 0 to 12."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166431,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/58c9004c-a826-4e70-aeb4-57d3a2e1b5f6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "–|76| means -1 × |76|, so -1 multiplied by the absolute value of 76. The absolute value of 76 is the distance from 0 to 76, therefore |76| = 76, so –|76| = -1 × 76 = -76",
+        "B": "I think you have confused the absolute value and reversing the digits of a number. –|76| means -1 × |76|, so -1 multiplied by the distance from 0 to 76.",
+        "C": "It looks like you might think |76| = 0, but remember, the |76| means the absolute value of 76, so the distance from 0 to 76.",
+        "D": "Have another look at where the negative is. It is –|76|, not |–76|."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

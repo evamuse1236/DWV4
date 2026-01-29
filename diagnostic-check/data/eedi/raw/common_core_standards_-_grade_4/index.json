@@ -1,0 +1,1434 @@
+{
+  "collection": "Common Core Standards - Grade 4",
+  "collectionId": 32,
+  "extractedAt": "2026-01-29T17:19:21.399710",
+  "stats": {
+    "totalTopics": 96,
+    "totalQuestions": 960,
+    "failed": 0
+  },
+  "topics": [
+    {
+      "name": "Multiplication equations",
+      "shortcode": "bifi",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Understand the meanings of the symbol ×",
+        "Solve missing number mental multiplication questions"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/multiplication_equations.json"
+    },
+    {
+      "name": "Multiplicative comparisons (word problems)",
+      "shortcode": "bifj",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Identify that a problem needs to be solved using multiplication",
+        "Identify that a problem needs to be solved using division"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/multiplicative_comparisons_(word_problems).json"
+    },
+    {
+      "name": "Four operations mental arithmetic problem solving",
+      "shortcode": "bifk",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Solve problems that combine addition and subtraction",
+        "Solve problems that combine multiplication and division",
+        "Solve problems that combine addition or subtraction with multiplication",
+        "Solve problems that combine addition or subtraction with division",
+        "Solve problems that combine three different operations"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/four_operations_mental_arithmetic_problem_solving.json"
+    },
+    {
+      "name": "Written integer arithmetic - method selection 1",
+      "shortcode": "bifl",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Solve problems that combine addition and subtraction",
+        "Solve problems that combine addition or subtraction with multiplication",
+        "Solve problems that combine addition or subtraction with division",
+        "Use direct proportion to solve non-unitary missing amounts in problems (e.g. recipes)"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/written_integer_arithmetic_-_method_selection_1.json"
+    },
+    {
+      "name": "Interpreting remainders",
+      "shortcode": "bifm",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Interpret remainders from written division problems"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/interpreting_remainders.json"
+    },
+    {
+      "name": "Writing equations",
+      "shortcode": "bifn",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Form equations for situations described in words"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/writing_equations.json"
+    },
+    {
+      "name": "Estimating calculations",
+      "shortcode": "bifo",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Identify when rounding a calculation will give an over or under approximation",
+        "Round numbers to an appropriate degree to estimate the answer to a calculation"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/estimating_calculations.json"
+    },
+    {
+      "name": "Factors and multiples 1",
+      "shortcode": "bifp",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Identify factors of a number",
+        "Identify multiples of a number"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/factors_and_multiples_1.json"
+    },
+    {
+      "name": "Factors and multiples 2",
+      "shortcode": "bifq",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Identify factors of a number",
+        "Identify common factors of two numbers",
+        "Identify multiples of a number"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/factors_and_multiples_2.json"
+    },
+    {
+      "name": "Factors and multiples 3",
+      "shortcode": "bifr",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Identify factors of a number",
+        "Identify multiples of a number",
+        "Identify common multiples of two numbers",
+        "Understand the relationship between multiples of different numbers",
+        "Understand the relationship between different factors of a number"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/factors_and_multiples_3.json"
+    },
+    {
+      "name": "Prime numbers 1",
+      "shortcode": "bifs",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Identify multiples of a number",
+        "Recognise prime numbers",
+        "Know and use the vocabulary of prime numbers and composite numbers",
+        "Recognise a prime factor"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/prime_numbers_1.json"
+    },
+    {
+      "name": "Prime numbers 2",
+      "shortcode": "bift",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Recognise prime numbers",
+        "Identify the factors of prime numbers"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/prime_numbers_2.json"
+    },
+    {
+      "name": "Linear sequences (no algebra) 1",
+      "shortcode": "bifu",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Describe an ascending linear sequence in words",
+        "Describe a descending linear sequence in words",
+        "Given a description of an ascending linear sequence in words, write some terms of that sequence",
+        "Given a description of a descending linear sequence in words, write some terms of that sequence",
+        "Write the next term of an ascending integer linear sequence"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/linear_sequences_(no_algebra)_1.json"
+    },
+    {
+      "name": "Linear sequences (no algebra) 2",
+      "shortcode": "bifv",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Write the next term of a descending integer linear sequence",
+        "Continue linear sequences expressed as patterns by drawing the next pattern",
+        "Use a linear sequence expressed as a pattern to make a prediction about another term in the sequence other than the next one"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/linear_sequences_(no_algebra)_2.json"
+    },
+    {
+      "name": "Describe and continue a sequence given diagrammatically",
+      "shortcode": "bifw",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Identify triangular numbers",
+        "Describe an ascending linear sequence in words",
+        "Continue linear sequences expressed as patterns by drawing the next pattern"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/describe_and_continue_a_sequence_given_diagrammatically.json"
+    },
+    {
+      "name": "Generate terms of a linear sequence",
+      "shortcode": "bifx",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Given a description of an ascending linear sequence in words, write some terms of that sequence",
+        "Write the next term of an ascending integer linear sequence",
+        "Write the next term of a descending integer linear sequence",
+        "Continue linear sequences expressed as patterns by drawing the next pattern",
+        "Use a linear sequence expressed as a pattern to make a prediction about another term in the sequence other than the next one"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/generate_terms_of_a_linear_sequence.json"
+    },
+    {
+      "name": "Continue numerical linear sequences",
+      "shortcode": "bify",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Write the next term of an ascending integer linear sequence",
+        "Write the next term of a descending decimal linear sequence",
+        "Write a missing term of an ascending integer linear sequence",
+        "Write a missing term of a descending integer linear sequence"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/continue_numerical_linear_sequences.json"
+    },
+    {
+      "name": "Identify properties of a given pattern",
+      "shortcode": "bifz",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Identify properties of a pattern"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/identify_properties_of_a_given_pattern.json"
+    },
+    {
+      "name": "Multiplying and dividing by 10 and the link to place value",
+      "shortcode": "bif0",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Recognise the place value of each digit in integers",
+        "Multiply integers by 10",
+        "Divide integers by 10"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/multiplying_and_dividing_by_10_and_the_link_to_place_value.json"
+    },
+    {
+      "name": "Place value and order integers 1",
+      "shortcode": "bif1",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Recognise the place value of each digit in integers",
+        "Order integers with the same number of digits",
+        "Use inequality notation to order integers with the same number of digits",
+        "Divide integers by 10",
+        "Read an integer on a scale where the required measurement is marked by a dash between two numbers"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/place_value_and_order_integers_1.json"
+    },
+    {
+      "name": "Read and write integers",
+      "shortcode": "bif2",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Write 3 digit numbers as words ",
+        "Write 5 digit numbers and above as words",
+        "Express words between 10 and 20 as numbers",
+        "Express words as 5 digit numbers and above ",
+        "Recognise integers expressed visually"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/read_and_write_integers.json"
+    },
+    {
+      "name": "Place value and order integers 2",
+      "shortcode": "bif3",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Recognise the place value of each digit in integers",
+        "Order integers with the same number of digits",
+        "Order integers with a different number of digits",
+        "Use inequality notation to order integers with the same number of digits",
+        "Use inequality notation to order integers with a different number of digits"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/place_value_and_order_integers_2.json"
+    },
+    {
+      "name": "Visual representations of integers and place value",
+      "shortcode": "bif4",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Write 5 digit numbers and above as words",
+        "Recognise integers expressed visually"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/visual_representations_of_integers_and_place_value.json"
+    },
+    {
+      "name": "Reading and wriiting integers",
+      "shortcode": "bif5",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Write 5 digit numbers and above as words",
+        "Express words as 5 digit numbers and above ",
+        "Use inequality notation to order integers with the same number of digits"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/reading_and_wriiting_integers.json"
+    },
+    {
+      "name": "Round to nearest whole, 10, 100 etc 1",
+      "shortcode": "bif6",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Round integers to the nearest 10",
+        "Round integers to the nearest 100",
+        "Round integers to the nearest 1000",
+        "Round integers to the nearest other power of 10",
+        "Round integers to the nearest other integer value (e.g. 20, 50 etc)"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/round_to_nearest_whole,_10,_100_etc_1.json"
+    },
+    {
+      "name": "Round to nearest whole, 10, 100 etc 2",
+      "shortcode": "bif7",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Round integers to the nearest 10",
+        "Round integers to the nearest 100",
+        "Round integers to the nearest 1000",
+        "Round integers to the nearest other power of 10",
+        "Round integers to the nearest other integer value (e.g. 20, 50 etc)"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/round_to_nearest_whole,_10,_100_etc_2.json"
+    },
+    {
+      "name": "Written integer addition and subtraction 1",
+      "shortcode": "bif8",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Add integers up to 4 digits using a written method where carrying is needed",
+        "Subtract integers up to 4 digits using a written method where carrying is not needed",
+        "Subtract integers up to 4 digits using a written method where carrying is needed"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/written_integer_addition_and_subtraction_1.json"
+    },
+    {
+      "name": "Written integer addition and subtraction 2",
+      "shortcode": "bif9",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Add integers with more than 4 digits using a written method where carrying is needed",
+        "Subtract integers up to 4 digits using a written method where carrying is needed",
+        "Subtract integers with more than 4 digits using a written method where carrying is not needed",
+        "Carry out missing number subtraction problems where a written method is needed"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/written_integer_addition_and_subtraction_2.json"
+    },
+    {
+      "name": "Multiply an integer of up to four digits by a one-digit integer",
+      "shortcode": "biga",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Multiply 3 digit integers by 1 digit integers using long multiplication",
+        "Multiply 4 or more digit integers by 1 digit integers using long multiplication"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/multiply_an_integer_of_up_to_four_digits_by_a_one-digit_integer.json"
+    },
+    {
+      "name": "Multiply a two-digit integer by a two-digit integer",
+      "shortcode": "bigb",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Multiply integers up to two digits using long multiplication",
+        "Multiply 2 digit integers by 2 digit integers using long multiplication"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/multiply_a_two-digit_integer_by_a_two-digit_integer.json"
+    },
+    {
+      "name": "Multiplications and their associated area models",
+      "shortcode": "bigc",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Multiplications and their associated area models"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/multiplications_and_their_associated_area_models.json"
+    },
+    {
+      "name": "Multiplications and their associated arrays",
+      "shortcode": "bigd",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Multiplications and their associated arrays"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/multiplications_and_their_associated_arrays.json"
+    },
+    {
+      "name": "Written division 1 (no remainders)",
+      "shortcode": "bige",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Divide integers of 3 or more digits using short division",
+        "Set out short division calculations correctly",
+        "Divide integers using short division where the answer is not an integer"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/written_division_1_(no_remainders).json"
+    },
+    {
+      "name": "Dividing by a single digit integer",
+      "shortcode": "bigf",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Divide integers of 3 or more digits using short division",
+        "Divide integers using short division where the answer is not an integer",
+        "Times tables and their related division facts"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/dividing_by_a_single_digit_integer.json"
+    },
+    {
+      "name": "Equivalent fractions 1 (visual)",
+      "shortcode": "bigg",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Shade unit fractions when part of a shape",
+        "Identify unit fractions when part of a shape",
+        "Shade non-unit fractions when part of a shape",
+        "Identify non-unit fractions when part of a shape",
+        "Identify equivalent fractions when presented as shapes or objects"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/equivalent_fractions_1_(visual).json"
+    },
+    {
+      "name": "Equivalent fractions 2",
+      "shortcode": "bigh",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Shade unit fractions when part of a shape",
+        "Identify equivalent fractions when presented as shapes or objects",
+        "Identify equivalent fractions when presented as numbers"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/equivalent_fractions_2.json"
+    },
+    {
+      "name": "Equivalent fractions 3",
+      "shortcode": "bigi",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Identify equivalent fractions when presented as shapes or objects",
+        "Identify equivalent fractions when presented as numbers"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/equivalent_fractions_3.json"
+    },
+    {
+      "name": "Comparing fractions with different numerators and different denominators",
+      "shortcode": "bigj",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Use inequality notation to order fractions whose denominators are multiples of the same number ",
+        "Use inequality notation to order fractions whose denominators are not multiples of the same number "
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/comparing_fractions_with_different_numerators_and_different_denominators.json"
+    },
+    {
+      "name": "Combining and decomposing fractions",
+      "shortcode": "bigk",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Add proper fractions with the same denominator",
+        "Add fractions involving mixed number fractions with the same denominator",
+        "Subtract proper fractions with the same denominator"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/combining_and_decomposing_fractions.json"
+    },
+    {
+      "name": "Combining and decomposing fractions",
+      "shortcode": "bigl",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Add proper fractions with the same denominator",
+        "Add fractions involving mixed number fractions with the same denominator",
+        "Subtract proper fractions with the same denominator"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/combining_and_decomposing_fractions.json"
+    },
+    {
+      "name": "Add and subtract mixed number fractions with the same denominator",
+      "shortcode": "bigm",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Add fractions involving mixed number fractions with the same denominator",
+        "Subtract fractions involving mixed number fractions with the same denominator"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/add_and_subtract_mixed_number_fractions_with_the_same_denominator.json"
+    },
+    {
+      "name": "Word problems involving addition and subtraction of fractions with a common denominator",
+      "shortcode": "bign",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Add proper fractions with the same denominator",
+        "Add fractions involving mixed number fractions with the same denominator",
+        "Add fractions involving improper fractions with the same denominator",
+        "Subtract proper fractions with the same denominator",
+        "Subtract fractions involving mixed number fractions with the same denominator"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/word_problems_involving_addition_and_subtraction_of_fractions_with_a_common_deno.json"
+    },
+    {
+      "name": "Understanding fractions as multiples of a unit fraction",
+      "shortcode": "bigo",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Multiply proper fractions in the form: Fraction × Integer",
+        "Represent multiplication of unit fractions visually"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/understanding_fractions_as_multiples_of_a_unit_fraction.json"
+    },
+    {
+      "name": "Use and understand n × (a/b) = (n × a)/b.",
+      "shortcode": "bigp",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Use and understand n × (a/b) = (n × a)/b."
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/use_and_understand_n_×_(a_b)_=_(n_×_a)_b..json"
+    },
+    {
+      "name": "Solve word problems involving multiplying fractions by an integer",
+      "shortcode": "bigq",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Solve word problems involving multiplying fractions by integers"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/solve_word_problems_involving_multiplying_fractions_by_an_integer.json"
+    },
+    {
+      "name": "Adding fractions with denominators of 10 and 100",
+      "shortcode": "bigr",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Identify equivalent fractions when presented as numbers",
+        "Add proper fractions with different denominators where one is a multiple of the other"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/adding_fractions_with_denominators_of_10_and_100.json"
+    },
+    {
+      "name": "Convert between decimals and fractions with denominators of 10 and 100",
+      "shortcode": "bigs",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Convert between decimals and fractions with denominators of 10 and 100"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/convert_between_decimals_and_fractions_with_denominators_of_10_and_100.json"
+    },
+    {
+      "name": "Locating decimals with 1 or 2 decimal places on a number line",
+      "shortcode": "bigt",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Identify where positive numbers with one decimal place lie on a number line",
+        "Identify where positive numbers with two decimal places lie on a number line"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/locating_decimals_with_1_or_2_decimal_places_on_a_number_line.json"
+    },
+    {
+      "name": "Visualising decimals",
+      "shortcode": "bigu",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Visualising decimals"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/visualising_decimals.json"
+    },
+    {
+      "name": "Comparing decimals to hundredths",
+      "shortcode": "bigv",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Order decimals with the same number of digits",
+        "Use inequality notation to order decimals with a different number of digits",
+        "Visualising decimals"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/comparing_decimals_to_hundredths.json"
+    },
+    {
+      "name": "Converting units of length",
+      "shortcode": "bigw",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Convert between m and cm",
+        "Convert between m and mm",
+        "Complete multi-step conversions of length that use multiplication"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/converting_units_of_length.json"
+    },
+    {
+      "name": "Converting units of mass",
+      "shortcode": "bigx",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Convert between g and mg",
+        "Convert between kg and g",
+        "Convert between tonne and kg"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/converting_units_of_mass.json"
+    },
+    {
+      "name": "Converting units of volume",
+      "shortcode": "bigy",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Convert between l and ml",
+        "Perform calculations with volumes and capacities when given in different units"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/converting_units_of_volume.json"
+    },
+    {
+      "name": "Converting units of time",
+      "shortcode": "bigz",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Convert from hours to seconds",
+        "Convert from days to seconds",
+        "Convert from days to hours",
+        "Convert from weeks to hours",
+        "Convert from years to days"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/converting_units_of_time.json"
+    },
+    {
+      "name": "Converting customary units of mass",
+      "shortcode": "big0",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Converting between customary units of weight"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/converting_customary_units_of_mass.json"
+    },
+    {
+      "name": "Recognise units of measure",
+      "shortcode": "big1",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Identify a unit of length",
+        "Identify a unit of area",
+        "Identify a unit of volume or capacity",
+        "Identify a unit of weight",
+        "Identify a unit of time"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/recognise_units_of_measure.json"
+    },
+    {
+      "name": "Conversion tables",
+      "shortcode": "big2",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Complete conversion tables"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/conversion_tables.json"
+    },
+    {
+      "name": "Time problems",
+      "shortcode": "big3",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Solve problems involving working out the duration between two given times",
+        "Solve problems involving adding a period of time on to a given start time",
+        "Solve problems involving subtracting a period of time from a given end time",
+        "Solve problems using information in timetables"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/time_problems.json"
+    },
+    {
+      "name": "Units of length 1",
+      "shortcode": "big4",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Identify a unit of length",
+        "Convert between cm and m",
+        "Convert between m and cm",
+        "Convert between m and mm"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/units_of_length_1.json"
+    },
+    {
+      "name": "Money problems",
+      "shortcode": "big5",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Add amounts of money together to make a total between £1 and £10",
+        "Calculate the change from purchases between £1 and £5",
+        "Calculate the change from purchases between £10 and £100",
+        "Multiply amounts of money up to £10",
+        "Multiply 2 digit integers by 1 digit integers using long multiplication"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/money_problems.json"
+    },
+    {
+      "name": "Solve problems using the 4 operations, where the quantities are customary measures used to measure liquid.",
+      "shortcode": "big6",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Solving problems involving customary units of capacity"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/solve_problems_using_the_4_operations,_where_the_quantities_are_customary_measur.json"
+    },
+    {
+      "name": "Solve problems using the 4 operations, where the quantities are customary measures used to measure distance",
+      "shortcode": "big7",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Solving problems involving customary units of length"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/solve_problems_using_the_4_operations,_where_the_quantities_are_customary_measur.json"
+    },
+    {
+      "name": "Solve problems using the 4 operations, where the quantities are customary measures used to measure mass",
+      "shortcode": "big8",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Solving problems involving customary units of weight"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/solve_problems_using_the_4_operations,_where_the_quantities_are_customary_measur.json"
+    },
+    {
+      "name": "Solve money problems using the 4 operations where the currency is dollars",
+      "shortcode": "big9",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Solve money problems using the 4 operations where the currency is dollars"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/solve_money_problems_using_the_4_operations_where_the_currency_is_dollars.json"
+    },
+    {
+      "name": "Measuring quantities",
+      "shortcode": "biha",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Read an integer on a scale where the required measurement is marked by a number",
+        "Read an integer on a scale where the required measurement is marked by a dash between two numbers",
+        "Read a negative integer temperature from a thermometer",
+        "Read information in timetables",
+        "Read a fraction on a scale where the required number is marked by a dash between two numbers"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/measuring_quantities.json"
+    },
+    {
+      "name": "Applying perimeter formulas for rectangles - problem solving",
+      "shortcode": "bihb",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Use the properties of a rectangle to find missing lengths",
+        "Calculate the perimeter of a rectilinear shape by adding lengths expressed in the same units",
+        "Given the perimeter of a rectangle, find the missing length"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/applying_perimeter_formulas_for_rectangles_-_problem_solving.json"
+    },
+    {
+      "name": "Applying perimeter formulas for rectangles in the real world",
+      "shortcode": "bihc",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Area and perimeter of rectangles in the real world"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/applying_perimeter_formulas_for_rectangles_in_the_real_world.json"
+    },
+    {
+      "name": "Applying area formulas for rectangles - problem solving",
+      "shortcode": "bihd",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Calculate the area of a rectangle where the dimensions are given in the same units",
+        "Given the area of a rectangle, calculate a missing dimension",
+        "Calculate compound area involving just rectangles and squares, where the dimensions are given in the same units",
+        "Given the compound area of a shape involving just rectangles and squares, calculate a missing length"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/applying_area_formulas_for_rectangles_-_problem_solving.json"
+    },
+    {
+      "name": "Applying area formulas for rectangles in the real world",
+      "shortcode": "bihe",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Area and perimeter of rectangles in the real world"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/applying_area_formulas_for_rectangles_in_the_real_world.json"
+    },
+    {
+      "name": "Drawing and interpreting line plots involving fractions",
+      "shortcode": "bihf",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Drawing and interpreting line plots involving fractions (same denominator)",
+        "Drawing and interpreting line plots involving fractions with different denominators"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/drawing_and_interpreting_line_plots_involving_fractions.json"
+    },
+    {
+      "name": "Fractions of a turn",
+      "shortcode": "bihg",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Identify the number of degrees in fractions of a turn"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/fractions_of_a_turn.json"
+    },
+    {
+      "name": "Understanding angles",
+      "shortcode": "bihh",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Understanding angles as a number of 360ths of a circle"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/understanding_angles.json"
+    },
+    {
+      "name": "Understanding angles",
+      "shortcode": "bihi",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Understanding angles as a number of 360ths of a circle"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/understanding_angles.json"
+    },
+    {
+      "name": "Measure angles 1",
+      "shortcode": "bihj",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Use a protractor to measure angles between 0° and 90°",
+        "Use a protractor to measure angles between 90° and 180°",
+        "Use a protractor to measure angles between 180° and 270°"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/measure_angles_1.json"
+    },
+    {
+      "name": "Measure angles 2",
+      "shortcode": "bihk",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Use a protractor to measure angles between 0° and 90°",
+        "Use a protractor to measure angles between 90° and 180°",
+        "Use a protractor to measure angles between 180° and 270°",
+        "Use a protractor to measure angles between 270° and 360°",
+        "Use a protractor to draw angles between 0° and 90° "
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/measure_angles_2.json"
+    },
+    {
+      "name": "Draw and measure angles between 180° and 360°",
+      "shortcode": "bihl",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Use a protractor to measure angles between 180° and 270°",
+        "Use a protractor to measure angles between 270° and 360°",
+        "Use a protractor to draw angles between 270° and 360°"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/draw_and_measure_angles_between_180°_and_360°.json"
+    },
+    {
+      "name": "Estimating and sketching angles",
+      "shortcode": "bihm",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Estimate the size of acute angles",
+        "Estimate the size of obtuse angles",
+        "Sketching angles"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/estimating_and_sketching_angles.json"
+    },
+    {
+      "name": "Finding adjacent angles",
+      "shortcode": "bihn",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Find missing angles in adjacent angles"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/finding_adjacent_angles.json"
+    },
+    {
+      "name": "Identify perpendicular and parallel lines",
+      "shortcode": "biho",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Recognise the notation for parallel lines",
+        "Recognise perpendicular lines",
+        "Understand key loci terms like equidistant and perpendicular"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/identify_perpendicular_and_parallel_lines.json"
+    },
+    {
+      "name": "Classify angles",
+      "shortcode": "bihp",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Identify acute angles",
+        "Identify obtuse angles",
+        "Identify reflex angles",
+        "Recognise the notation for right angles"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/classify_angles.json"
+    },
+    {
+      "name": "Identifying rays, lines, line segments, angles and points",
+      "shortcode": "bihq",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Identify rays, lines, line segments, angles and points"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/identifying_rays,_lines,_line_segments,_angles_and_points.json"
+    },
+    {
+      "name": "Properties of triangles",
+      "shortcode": "bihr",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Identify an equilateral triangle from a description of the properties",
+        "Use the properties of an equilateral triangle to find missing lengths",
+        "Describe the properties of an isosceles triangle",
+        "Identify a right-angled triangle when presented non-conventionally"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/properties_of_triangles.json"
+    },
+    {
+      "name": "Properties of 2D shapes 1",
+      "shortcode": "bihs",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Identify a trapezium from a description of the properties",
+        "Sort and class quadrilaterals into hierarchical families",
+        "Identify an isosceles triangle from a diagram",
+        "Identify a right-angled triangle from a description of the properties",
+        "Given the name of a polygon identify the number of sides"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/properties_of_2d_shapes_1.json"
+    },
+    {
+      "name": "Identify perpendicular and parallel lines",
+      "shortcode": "biht",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Recognise the notation for parallel lines",
+        "Recognise perpendicular lines",
+        "Understand key loci terms like equidistant and perpendicular"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/identify_perpendicular_and_parallel_lines.json"
+    },
+    {
+      "name": "Recognise types of quadrilateral",
+      "shortcode": "bihu",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Identify a rhombus from a description of the properties",
+        "Identify a trapezium from a description of the properties",
+        "Sort and class quadrilaterals into hierarchical families"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/recognise_types_of_quadrilateral.json"
+    },
+    {
+      "name": "Describe and draw triangles and quadrilaterals 1",
+      "shortcode": "bihv",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Given the name of a rectangle, draw or identify a corresponding diagram",
+        "Given the name of a rhombus, draw or identify a corresponding diagram",
+        "Given the name of an equilateral triangle, draw or identify a corresponding diagram",
+        "Given the name of an isosceles triangle, draw or identify a corresponding diagram",
+        "Given the name of a right-angled triangle, draw or identify a corresponding diagram"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/describe_and_draw_triangles_and_quadrilaterals_1.json"
+    },
+    {
+      "name": "Describe and draw triangles and quadrilaterals 2",
+      "shortcode": "bihw",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Use the properties of a square to find missing lengths",
+        "Identify a rectangle from a description of the properties",
+        "Given the name of a parallelogram, draw or identify a corresponding diagram",
+        "Given the name of a trapezium, draw or identify a corresponding diagram",
+        "Given the name of an isosceles triangle, draw or identify a corresponding diagram"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/describe_and_draw_triangles_and_quadrilaterals_2.json"
+    },
+    {
+      "name": "Identifying acute, obtuse and right triangles",
+      "shortcode": "bihx",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Identifying acute, obtuse and right triangles"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/identifying_acute,_obtuse_and_right_triangles.json"
+    },
+    {
+      "name": "Lines of symmetry",
+      "shortcode": "bihy",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Complete a symmetric figure with respect to a specific line of symmetry",
+        "Identify or mark lines of symmetry on a shape"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/lines_of_symmetry.json"
+    },
+    {
+      "name": "Identify lines and angles in two-dimensional figures",
+      "shortcode": "ehhp",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Identify obtuse angles",
+        "Recognise perpendicular lines",
+        "Identify rays, lines, line segments, angles and points"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/identify_lines_and_angles_in_two-dimensional_figures.json"
+    },
+    {
+      "name": "Place value and multiplication",
+      "shortcode": "ehht",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Multiply integers of more than two digits using another formal method",
+        "Multiplications and their associated area models",
+        "Converting between expanded form and word form of a number up to 1000 (US)"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/place_value_and_multiplication.json"
+    },
+    {
+      "name": "Modelling multiplication and division",
+      "shortcode": "ehhu",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Multiplications and their associated area models",
+        "Multiply integers of two or more digits by a single digit using place value counters",
+        "Division of 2 digit dividends by 1 digit divisor and their associated area models"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/modelling_multiplication_and_division.json"
+    },
+    {
+      "name": "Models for division",
+      "shortcode": "ehhw",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Division of 3 digit dividends by 1 digit divisor and their associated area models",
+        "Division of 4 digit dividends by 1 digit divisor and their associated area models"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/models_for_division.json"
+    },
+    {
+      "name": "Comparing and decomposing fractions",
+      "shortcode": "ehic",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Order fractions whose denominators are multiples of the same number ",
+        "Order fractions whose denominators are not multiples of the same number ",
+        "Add proper fractions with the same denominator",
+        "Order fractions with the same numerators"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/comparing_and_decomposing_fractions.json"
+    },
+    {
+      "name": "Comparing decimals",
+      "shortcode": "ehie",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Use inequality notation to order decimals with a different number of digits",
+        "Understand comparing decimals is only valid when the two decimals refer to the same whole"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/comparing_decimals.json"
+    },
+    {
+      "name": "Represent and solve multiplicative comparison problems",
+      "shortcode": "fb81",
+      "level": 1,
+      "yearGroups": [],
+      "categories": [],
+      "skills": [
+        "Solve simple word problems involving integer lengths",
+        "Represent a multiplicative comparison word problem, requiring division, using an equation containing a symbol"
+      ],
+      "subjectAreas": [],
+      "questionCount": 10,
+      "file": "topics/represent_and_solve_multiplicative_comparison_problems.json"
+    }
+  ]
+}

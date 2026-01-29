@@ -1,0 +1,159 @@
+{
+  "shortcode": "efkp",
+  "name": "Finding distance with coordinates and absolute value",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 117,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate the distance between two coordinates in 2D, where all the values are integers but at least one is negative",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the length of horizontal and vertical line segments",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Recognise a horizontal or vertical line given pairs of coordinates on the line",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find the distance between points on a vertical or horizontal line using absolute values",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 107515,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f63f4c8f-f04a-4ab7-b15a-7f5d788ce38d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, the y coordinate all along here would be 12, but it is not the width of the arrow.",
+        "B": "We subtract the 𝑥 values to get the width, and so 10 – 3 = 7",
+        "C": "Not quite, you have found the height of the rectangle, try again to find the width of the arrow",
+        "D": "Almost, you've used the correct numbers! If you go from 3 across to 10, how many does it take you to get there?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107520,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/54f03c8c-2f0a-4e51-acb5-d17b883497af.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost, you've used the correct numbers! If you go from 1 across to 8, how many does it take you to get there?",
+        "B": "Not quite, I think you've found the difference in the coordinate (8,9). Try to find the distance of the red arrow",
+        "C": "We subtract the 𝑥 values to get the width, and so 8 – 1 = 7",
+        "D": "Not quite, you have found the height of the rectangle, try again to find the width of the arrow"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166210,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/24568868-547f-4cdf-bde1-590660cfcb93.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have correctly spotted that the points (-5, 6) and (7, 6) both have a 6 as their y-value. If you plotted the two points, what sort of line would join them?",
+        "B": "You have noticed that the points (-5, 6) and (7, 6) both have a 6. Remember that in coordinates the first number is the x-value and the second is the y-value.",
+        "C": "The points (-5, 6) and (7, 6) both have a 6 as their y-value. If you plotted the points and joined them up, the line you draw would be a horizontal line.",
+        "D": "Look more closely again at theses two points, as they do have a number in common."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166437,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d95e4c19-562d-462c-b157-0be8421c1355.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have noticed that the points (2, 8) and (-5, 8) both have a 8, and if you look again you will see it is the second number in the bracket. Remember that in coordinates the first number is the x-value and the second is the y-value.",
+        "B": "The points (2, 8) and (-5, 8) both have a 8 as their y-value. If you plotted the points and joined them up, the line you draw would be a horizontal line.",
+        "C": "Look more closely again at theses two points, as they do have a number in common.",
+        "D": "You have correctly spotted that the points (2, 8) and (-5, 8) both have a 8 as their y-value. If you plotted the two points, what sort of line would join them?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166211,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9f7d6da7-f6fb-4750-927b-9562b5e5185f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The distance between (-5, 6) and (7, 6) will be a horizontal line because the points have the same y-value.This means that we can use the x-values to work out the distance between the two points. We can add the absolute values, |-5 | + |7 | = 5 + 7 =12. So Tom is correct. Katie is only incorrect because she insists that we MUST plot the points - we CAN if we want to, but it is also possible to do the calculation Tom suggests.",
+        "B": "The distance between (-5, 6) and (7, 6) will be a horizontal line because the points have the same y-value. This means that we can use the x-values to calculate the distance between the two points, and we don't need to plot the points first. |-5 | + |7 | means Tom wants us to add together the absolute values of the x-values, will his method work?",
+        "C": "Tom and Katie could both find the answer using their method, but read Katie's statement again. When we spot that the x-values are identical, must we plot the points to work out the distance between them?",
+        "D": "In this question at least one statement is correct. Read them again. |-5 | + |7 | means the absolute values of the two numbers are being added together. Would this give us the distance between these points? Do we HAVE to plot the points in order to work out the distance between them?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166438,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db55e1d9-b9a3-4fdd-893d-2a20aaf9dbc3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The distance between (2, 8) and (-5, 8) will be a horizontal line because the points have the same y-value. This means that we can use the x-values to calculate the distance between the two points, and we don't need to plot the points first. |2 | + |-5 | means Katie wants us to add together the absolute values of the x-values, will her method work?",
+        "B": "The distance between (2, 8) and (-5, 8) will be a horizontal line because the points have the same y-value.This means that we can use the x-values to work out the distance between the two points. We can add the absolute values, |2 | + |-5 | = 2 + 5 = 7. So Katie is correct. Tom is only incorrect because he insists that we MUST plot the points - we CAN if we want to, but it is also possible to do the calculation Katie suggests.",
+        "C": "Tom and Katie could both find the answer using their method, but read Tom's statement again. When we spot that the x-values are identical, must we plot the points to work out the distance between them?",
+        "D": "In this question at least one statement is correct. Read them again. |2 | + |-5 | means the absolute values of the two numbers are being added together. Would this give us the distance between these points? Do we HAVE to plot the points in order to work out the distance between them?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166212,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0345b560-1da8-400e-80ec-c87f10360af7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have noticed that the points (-3, 9) and (-3, -2) both have a -3. Remember that in coordinates the first number is the x-value and the second is the y-value.",
+        "B": "The points (-3, 9) and (-3, -2) both have a -3 as their x-value. If you plotted the points and joined them up, the line you draw would be a vertical line.",
+        "C": "The points (-3, 9) and (-3, -2) both have a -3 as their x-value. If you plotted the points, what sort of line would join them up?",
+        "D": "Look more closely again at theses two points, as they do have a number in common."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166439,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4c2ba967-1a37-41c1-a9bd-48f399428c0b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Look more closely again at theses two points, as they do have a number in common.",
+        "B": "You've noticed that the points (-1, 6) and (-1, -3) both have a -1 as their x-value. If you plotted the points and joined them up what sort of line would you draw?",
+        "C": "You've noticed that the points (-1, 6) and (-1, -3) both have a -1 in their bracket. Remember that in coordinates the first number is the x-value and the second is the y-value.",
+        "D": "The points (-1, 6) and (-1, -3) both have a -1 as their x-value. If you plotted the points and joined them up, the line you draw would be a vertical line."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166213,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e4d7be10-005f-4fca-8190-d53cefb3d38d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The formula Tom is using works for any two points. However, we can use absolute values to find the distance between points on a vertical or horizontal line. This is the method Katie is thinking about. Check the coordinates of the points, as if they have an x-value in common, they are joined by a vertical line and if they have a y-value in common, they are joined by a horizontal line, which would mean we could consider using absolute values to calculate the distance.",
+        "B": "The method Katie is using works only when the two points have an identical x-value or y-value, and in this question they have an identical x-value, so Katie's method is a correct one. Have you also checked Tom's method, is it possible they are both correct this time?",
+        "C": "The formula Tom is using calculates the distance between any two points. The method Katie is using works only when the two points have an identical x-value or y-value, and in this question they have an identical x-value. So both methods work in this question.",
+        "D": "There is at least one correct method suggested in this question. Check the coordinates of the points, as if they have an x-value in common they are joined by a vertical line and if they have a y-value in common they are joined by a horizontal line, which would mean we could consider using absolute values to calculate the distance. There is also a general formula we can use to calculate the distance between any two points, even when the points are not joined by a vertical or horizontal line."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166440,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fe34f6c1-624f-42a2-84c2-a27b8b7d3961.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There is at least one correct method suggested in this question. Check the coordinates of the points, because if they have an x-value in common they are joined by a vertical line and if they have a y-value in common they are joined by a horizontal line, which would mean we could consider using absolute values to calculate the distance. There is also a general formula we can use to calculate the distance between any two points, even when the points are not joined by a vertical or horizontal line.",
+        "B": "The formula Katie is using works for calculating the distance between any two points. The method Tom is using works only when the two points have an identical x-value or y-value, and in this question they have an identical x-value. So both methods work.",
+        "C": "The method Tom is using works only when the two points have an identical x-value or y-value, and in this question they have an identical x-value, soTom's method is a correct one. Have you also checked Katie's method, is it possible they are both correct this time?",
+        "D": "The formula Katie is using works for calculating the distance between any two points. However, we can use absolute values to find the distance between points on a vertical or horizontal line. This is the method Tom is thinking about. Check the coordinates of the points, as if they have an x-value in common they are joined by a vertical line and if they have a y-value in common they are joined by a horizontal line, which would mean we could consider using absolute values to calculate the distance."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

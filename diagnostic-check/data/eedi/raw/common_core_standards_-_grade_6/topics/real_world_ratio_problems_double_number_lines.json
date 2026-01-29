@@ -1,0 +1,141 @@
+{
+  "shortcode": "eej5",
+  "name": "Real World Ratio Problems Double Number Lines",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 25,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Use double number lines to find missing values in linear direct proportion relationships (US)",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166138,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e5bfaf0d-21dc-4e68-bbfb-40e285eec566.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have worked out how many cups of sugar from 7 cups of flour. Read the question carefully, it's asking how many cups of flour needed with 7 cups of sugar.",
+        "B": "I think you have found the connection between the cups of flour and the cups of sugar. How can you use that to work out how much flour you need with 7 cups of sugar?",
+        "C": "I think you may have gone for the one closest using the markers on the number line. 9 cups of flour would be what you need for 6 cups of sugar. How many cups of flour would you need for 7 cups of sugar?",
+        "D": "The cups of flour are 1.5 (or 3/2) times the cups of sugar. When sugar is 7 cups, flour will be 7 x 1.5 = 10.5 cups. Or 7 x 3/2 = 21/2 = 10 1/2."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166365,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/29427866-edd1-464c-b72c-343ae77c1ffd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have used the ratio of eggs to butter, but how can you use this to work out how many sticks of butter you would need with 8 eggs?",
+        "B": "There are 2/3 of a stick of butter for every egg. For 8 eggs you would need 2/3 x 8 = 16/3 = 5 1/3.",
+        "C": "Be careful, I think you may have looked at eggs needed for 8 sticks of butter, but it is how many sticks of butter are needed for 8 eggs...",
+        "D": "I think you may have gone for the one closest using the markers on the number line. 6 sticks of butter would be what you need for 9 eggs. How many sticks of butter would you need for 8 eggs?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166139,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/40e41a15-981b-4b1e-af0d-9a16bbc5eec1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If one ticket costs $8 then 4 tickets cost 4 x $8 = $32.",
+        "B": "I think you may have spotted that you need 3 more tickets. How much does each ticket cost?",
+        "C": "I think you may have counted up in 4s from the 8. But if 1 ticket costs $8 then how much is each jump between the tick marks worth?",
+        "D": "I think you may have counted the very first tick mark as 1 ticket but that is zero. The amount of tickets you need is the amount of jumps from 0. You need 4 tickets and each ticket costs $8, what is the cost of 4 tickets?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166366,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aa3b92b6-6213-4393-9dfa-8792422c77ae.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have looked at needing 1 more pass so have added 1 on to $24. But how much does each pass cost?",
+        "B": "Be careful, take a closer look at the number line. 2 passes cost $24 so how much does 1 pass cost?",
+        "C": "2 passes cost $24 which means 1 pass costs $12. For 3 passes it will cost 3 x $12 = $36.",
+        "D": "I think you may have multiplied $24 by 3. But how many passes do you get for $24? Can you use that to work out what one pass costs and then use that to work out the cost of 3 passes?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166140,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c8f9665b-4050-4299-8e17-1683d2e2719a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have looked at going from 4 gallons to 1 gallon is subtract 3 and have done that to the 30 miles. Can you use the 30 miles being equal to 4 gallons to work how many miles would be equal to 1 gallon? What operation would you need to do? Remember every gallon will be the same number of miles.",
+        "B": "We can see from the number line that 4 gallons of gas gives 30 miles. To find 1 gallon, 30 ÷ 4 = 7.5. So you could travel 7.5 miles with one gallon of gas.",
+        "C": "I think you have use the correct calculation but have then rounded your answer. Give the exact answer you get !",
+        "D": "I think you may have matched the value on the top and bottom number lines as the first zeros are the same on both. But look at the end of the number line, do they match? What does that tell you? Can you use those values to work out what 1 gallon will be?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166367,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/906adf41-f835-448d-8829-c4e918dc226e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have use the correct calculation but have then rounded your answer. Give the exact answer! Working in fractions can help with exact answers.",
+        "B": "I think you may have matched the value on the top and bottom number lines as the first zeros are the same on both. But look at the end of the number line, do they match? What does that tell you? Can you use those values to work out how many metres could be sprinted in 1 second?",
+        "C": "I think you may have looked at going from 15 seconds to 1 second is subtract 14 and have done that to the 100 metres sprinted. Can you use the 100 metres being equal to 15 seconds to work how many meters would be equal to 1 second? What operation would you need to do? Remember every second will be the same number of metres.",
+        "D": "100 metres is equal to 15 seconds. To get to 1 second we divide the number of metres by the number of seconds. 100 ÷ 15 = 20/3 = 6 2/3. Using fractions can help to make sure you have an exact answer."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166141,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea5fef47-d14a-4776-b1d7-14278a6f4eda.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "260 ÷ 2= 130 so he can read 130 words in one minute. For 3 minutes it would be 3 x 130 = 390.",
+        "B": "I think you have worked out how many words he can read in 1 minute which is a great start! But the question asks how many words he can read in 3 minutes...",
+        "C": "I think you may have gone up to the next marker but that doesn't represent 3 minutes. How much does each marker go up by on the bottom row?",
+        "D": "I think you may have multiplied the 260 by 3. Look closely at the number line, how many minutes belong with the 260 words? Can you use that to work out what 1 minute will be and go from there?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166368,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e7796313-1008-4c42-9fcf-813b0c4b0915.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have multiplied the 180 by 5. Look closely at the number line, how many minutes belong with the 180 words? Can you use that to work out what 1 minute will be and go from there?",
+        "B": "180 ÷ 2 = 90 so she can type 90 words in one minute. For 5 minutes it would be 5 x 90 = 450.",
+        "C": "I think you have worked out how many words she can type in 1 minute which is a great start! But the question asks how many words she can type in 5 minutes...",
+        "D": "I think you may have gone up to the next marker but that doesn't represent 5 minutes. How much does each marker go up by on the bottom row?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166142,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e8d17b3e-8446-483f-aee3-6099811384cc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have done 9 x 4. If you know 4 bags of sugar cost $9 can you use that to work out what 1 bag of sugar costs?",
+        "B": "4 bags of sugar costs $9 so 1 bag of sugar costs 9 ÷ 4 = 2.25. 14 bags of sugar will cost 14 x 2.25 = 31.5 which we would write as $31.50 in money.",
+        "C": "I think you may have added 10 on as you can see you need 10 more bags. Can you use the 4 bags costing $9 to work out what 1 bag will cost and go from there?",
+        "D": "I think you have spotted that to get from 4 to 9 you could multiply by 2 and then add 1. Can you use the 4 bags and $9 to find out how much 1 bag of sugar would cost? If you know how much 1 bag costs, how do you find how much 14 bags cost?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166369,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ad508d66-032f-4935-8f62-493d38333b61.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Look at the numbers we have matching up. 3 packs costs $8 so we can work out how much 1 pack will cost. 8 ÷ 3 = 2.666..... then we would multiply this by 16 = 42.66666.... Because it is money, we give the answer to 2 decimal places. $42.67",
+        "B": "I think you may have done 8 x 3. If you know 3 packs of cards cost $8, can you use that to work out what 1 pack of cards costs?",
+        "C": "I think you have spotted that to get from 3 to 8 you could multiply by 3 and then subtract 1. Can you use the 3 packs and $8 to find out how much 1 pack of cards would cost? If you know how much 1 pack costs, how do you find how much 16 packs cost?",
+        "D": "I think you may have added 13 on as you can see you need 13 more packs of cards. Can you use the 3 packs costing $8 to work out what 1 pack will cost and go from there?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

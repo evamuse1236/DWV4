@@ -1,0 +1,153 @@
+{
+  "shortcode": "vrj",
+  "name": "Statistical diagrams - method selection 2",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 229,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Draw a cumulative frequency diagram from grouped data",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Draw a histogram",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Draw a frequency polygon",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 108075,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0af0571e-0f00-46df-9fba-b5160f73e756.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Mass goes on the 𝑥 axis, as this is the grouped variable we are investigating.",
+        "B": "The grouped variable we are investigating goes on the x axis. What is this?",
+        "C": "I think you have given the y axis. The grouped variable we are investigating goes on the x axis. What is this?",
+        "D": "We do plot at the upper bound, but the upper bound of what?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 142896,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a36c0086-7cdf-49da-9591-7bd2b94bca97.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have given the y axis. The grouped variable we are investigating goes on the x axis. What is this?",
+        "B": "We do plot at the upper bound, but the upper bound of what?",
+        "C": "Height goes on the 𝑥 axis, as this is the grouped variable we are investigating.",
+        "D": "The grouped variable we are investigating goes on the x axis. What is this?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 108076,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/919a9799-9e09-4f1a-81cf-56f6ebd9011c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Mass goes on the 𝑥 axis, as this is the grouped variable we are investigating.",
+        "B": "I think you have given the y axis. The grouped variable we are investigating goes on the x axis. What is this?",
+        "C": "I think you have given the y axis for a cumulative frequency graph, but we are drawing a histogram. The grouped variable we are investigating goes on the x axis. What is this?",
+        "D": "I think you have given the y axis. The grouped variable we are investigating goes on the x axis. What is this?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 108095,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b4fef213-0ad5-4043-8c71-cd9a4072fb36.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The grouped variable we are investigating goes on the x axis. What is this?",
+        "B": "The grouped variable we are investigating goes on the x axis. What is this?",
+        "C": "Height goes on the 𝑥 axis, as this is the grouped variable we are investigating.",
+        "D": "I think you have given the y axis of a cumulative frequency graph, we are drawing a histogram. The grouped variable we are investigating goes on the x axis. What is this?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 108077,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6126b4e0-67db-47e2-b691-d05abb8ebd95.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have given the x axis. What do we plot on the y axis for a cumulative frequency diagram?",
+        "B": "We do use the frequency to work out what we plot on the y axis, but we do a running total. What is this called?",
+        "C": "A cumulative frequency diagram always has cumulative frequency on the 𝑦 axis.",
+        "D": "We do plot the point on the upper bound of the group, but this tells us the the x coordinate. What do we plot up the side of a cumulative frequency diagram?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 108097,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ca31de4c-6868-4775-97dc-4a5015b4beae.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We do use the frequency to work out what we plot on the y axis, but we do a running total. What is this called?",
+        "B": "We do plot the point on the upper bound of the group, but this tells us the the x coordinate. What do we plot up the side of a cumulative frequency diagram?",
+        "C": "I think you have given the x axis. What do we plot on the y axis for a cumulative frequency diagram",
+        "D": "A cumulative frequency diagram always has cumulative frequency on the 𝑦 axis."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 108078,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e907530c-1f39-4308-ae61-ff7ef8cea88d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have given the x axis. What do we plot up the side of a frequency polygon?",
+        "B": "A frequency polygon always has frequency on the 𝑦 axis.",
+        "C": "This would be the y axis for a cumulative frequency graph, but we are drawing a frequency polygon.",
+        "D": "We do plot the point on the midpoint of the group, but this tells us the the x coordinate. What do we plot up the side of a frequency polygon?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 108098,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/20577fbd-87f8-4b53-9417-03cb41325157.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A frequency polygon always has frequency on the 𝑦 axis.",
+        "B": "We do plot the point on the midpoint of the group, but this tells us the the x coordinate. What do we plot up the side of a frequency polygon?",
+        "C": "I think you have given the x axis. What do we plot up the side of a frequency polygon?",
+        "D": "This would be the y axis for a cumulative frequency graph, but we are drawing a frequency polygon."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 108079,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/21b8d428-a57b-4801-880d-0c5f1a33d2c0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have given me the x axis. What do we plot up the side of a histogram?",
+        "B": "Not quite, on a histogram the frequency is the area of the bar. What do we plot on the side?",
+        "C": "I think you are confusing histograms and cumulative frequency diagrams. What is up the side for a histogram?",
+        "D": "A histogram always has frequency density on the 𝑦 axis."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 108099,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5d4039f2-cf8d-46fd-af69-97ec5cea150a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A histogram always has frequency density on the 𝑦 axis.",
+        "B": "A histogram is made up of bars, with the width of the bar being determined by the grouped variable. What is the height of the bar in a histogram?",
+        "C": "I think you have given me the x axis. What do we plot up the side of a histogram?",
+        "D": "I think you are confusing histograms and cumulative frequency diagrams. What is up the side for a histogram?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

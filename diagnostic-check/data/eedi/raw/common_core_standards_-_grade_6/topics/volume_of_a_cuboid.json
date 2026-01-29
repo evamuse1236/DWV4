@@ -1,0 +1,165 @@
+{
+  "shortcode": "vqy",
+  "name": "Volume of a cuboid",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 203,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate the volume of a prism by counting cubes",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the volume of a cube",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the volume of a cuboid when the dimensions are given in the same units",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the volume of a cuboid when the dimensions are given in different units",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given the volume of a cuboid, work out missing information",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 131461,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c667324e-cd4c-47a6-a5be-4263bd68e29d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The top layer is made up of 9 cubes. As there are 3 layers we have 3 lots of 9 cubes which is 27.",
+        "B": "3 x 3 would find the number of cubes in the top layer, but how many do we have in total? Think about how many layers of 3 x 3 cubes there are",
+        "C": "I think you found the surface area of the cube. Think about how many cubes make up the top layer, and how many layers there are in total.",
+        "D": "I think you spotted a square number, but this isn't how many cubes there are in the shape. Think about how many cubes make up the top layer, and how many layers there are in total."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133694,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f9e58618-0b97-48e9-b18f-c66f0f86f0ce.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you found the surface area of the cube. Think about how many cubes make up the top layer, and how many layers there are in total.",
+        "B": "I think you tried to count the visible cubes, remember there are some that we can't see. Think about how many cubes make up the top layer, and how many layers there are in total.",
+        "C": "The top layer is made up of 8 cubes. As there are 3 layers we have 3 lots of 8 cubes which is 24.",
+        "D": "4 x 3 would find the number of cubes in the front layer, but how many do we have in total? Think about how many layers of 4 x 3 cubes there are?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131462,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/933b63df-c555-4dc3-96a5-b34fb681fa98.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added to find the volume. Remember we multiply the length by the width by the height",
+        "B": "I think you have found the area of one of the faces. Remember we multiply the length by the width by the height to find the volume of a cube",
+        "C": "We multiply the length by the width by the height = 4 x 4 x 4 = 64",
+        "D": "As this is a cube we know all the lengths, so we can find the volume. Remember volume = length x width x height"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133695,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6f9320a6-9cb3-4322-a315-8a786c195c92.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We multiply the length by the width by the height = 5 x 5 x 5 = 125",
+        "B": "I think you have added to find the volume. Remember we multiply the length by the width by the height",
+        "C": "I think you have found the area of one of the faces. Remember we multiply the length by the width by the height to find the volume of a cube",
+        "D": "As this is a cube we know all the lengths, so we can find the volume. Remember volume = length x width x height"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131463,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0dd5e7b7-ffef-4fd6-bce6-45147d259bc4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added to find the volume. Remember we multiply the length by the width by the height",
+        "B": "I think you have found the area of one of the faces. Remember we multiply the length by the width by the height to find the volume of a cube",
+        "C": "We multiply the length by the width by the height = 10 x 4 x 5 = 200",
+        "D": "I think you have found the surface area. Remember we multiply the length by the width by the height to find the volume of a cuboid"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133696,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9c6afdff-1484-426c-b472-9ba65f49f4ff.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We multiply the length by the width by the height = 8 x 3 x 4 = 96",
+        "B": "I think you have found the surface area. Remember we multiply the length by the width by the height to find the volume of a cuboid",
+        "C": "I think you have added to find the volume. Remember we multiply the length by the width by the height",
+        "D": "I think you have found the area of one of the faces. Remember we multiply the length by the width by the height to find the volume of a cube"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131464,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/94c42ffb-aa78-45fb-92b4-8a33a24aac93.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, when we are finding the volume we multiply length by width by height. Make sure the units are all the same before doing this.",
+        "B": "Not quite, when we are finding the volume we multiply length by width by height",
+        "C": "Almost, just check that the units are all the same before multiplying.",
+        "D": "Volume = l x h x w. We need the units to be the same, so 60mm = 6cm. Then do 6 x 5 x 4"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133697,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/331a005a-2443-4838-b7f9-08dd29a51c31.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost, just check that the units are all the same before multiplying.",
+        "B": "Volume = l x w x h. We need the units to be the same, so 60mm = 6cm. Then do 7 x 5 x 6",
+        "C": "Not quite, when we are finding the volume we multiply length by width by height. Make sure the units are all the same before doing this.",
+        "D": "Not quite, when we are finding the volume we multiply length by width by height"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131465,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a29f1678-c96e-4ae5-bc5f-c8542472f352.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might have added 3 and 2, and then divided 30 by this. Remember to find the volume we are multiplying the lengths. To undo this we will need to divide",
+        "B": "Volume = L x W x H so 30 = ⭐x 2 x 3, so 30 =⭐x 6 and therefore the star is 5",
+        "C": "Not quite. Remember to find the volume we are multiplying the lengths. To undo this we will need to divide",
+        "D": "I think you might have added 3 and 2, and then subtracted this from 30. Remember to find the volume we are multiplying the lengths. To undo this we will need to divide"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133698,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/93fc7f37-e787-4099-a330-32e76af65044.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you have added the lengths you can see. Remember to find the volume we are multiplying the lengths. To undo this we will need to divide",
+        "B": "I think you might have added 3 and 3, and then subtracted this from 45. Remember to find the volume we are multiplying the lengths. To undo this we will need to divide",
+        "C": "I think you have multiplied the 2 known lengths. What would we need to multiply this by to get the volume of 45?",
+        "D": "Volume = L x W x H so 45 = ⭐x 3 x 3, so 45 =⭐x 9 and therefore the star is 5"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

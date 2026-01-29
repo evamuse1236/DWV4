@@ -1,0 +1,165 @@
+{
+  "shortcode": "vsu",
+  "name": "Repeated percentages 4",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 40,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Understand the elements of the formula for compound percentage increase",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Understand the elements of the formula for compound percentage decrease",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Work out the final amount in compound percentage decrease problems",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Work out the number of time periods in compound percentage decrease problems",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Recognise an exponential graph from its shape",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 76822,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/90353ede-4eff-4801-84af-617383dee6f9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the multiplier for one year, but we would need to apply this twice. What would that be as a single multiplier?",
+        "B": "This would find 3%, but we need to decrease by 3%. How many percent would we have left after reducing by 3%?",
+        "C": "You have the right idea, but you have used the multiplier to find 3% rather than to reduce by 3%. Think about how many percent you would have left if you lost 3%",
+        "D": "We need 1.03² = 1.0609."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78856,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/210329cc-d4a8-47bb-93d5-e00d5a01470f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We have 1.04² = 1.0816.",
+        "B": "You've got the right idea, but remember we need to find the total amount, not just the interest. How does that change the decimal multiplier?",
+        "C": "Good start, that's the decimal for 4%, but we need to increase our starting amount by 4%, so what percentage would we have then? And how do we change the multiplier to find the value after 2 years instead of 1?",
+        "D": "This is the multiplier for one year, but we would need to apply this twice. What would that be as a single multiplier?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 81298,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5bda1a10-7d60-4845-83db-e8f748cf329b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "As the value decreases by 20%, we have 100% - 20% = 80% = 0.8 as the multiplier.",
+        "B": "This would find 20%, but we want to reduce by 20%. How many percent would we have left?",
+        "C": "This would increase by 20%, but we want to reduce by 20%",
+        "D": "This would be a 2% reduction, we need to reduce by 20%. How many percent would we have left if we lose 20%?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 81473,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5858a541-1704-4bd5-beee-70a4ceea012c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This would find 15%, but we want to reduce by 15%. How many percent would we have left?",
+        "B": "This would be a 1.5% reduction, we need to reduce by 15%. How many percent would we have left if we lose 15%?",
+        "C": "As the value decreases by 15%, we have 100% - 15% = 85% = 0.85 as the multiplier.",
+        "D": "This would increase by 15%, but we want to reduce by15%"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 81299,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b645237c-ab6c-4481-9293-a946797d0433.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost, this is the value after 6 years.",
+        "B": "Almost, this is the value after 4 years.",
+        "C": "I think you have used simple interest, but this is a compound loss. We lose 20% of the new value each year.",
+        "D": "We have £900 × (0.8)⁵ = £295."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 81474,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c15b3e56-e30f-41ec-8f14-c218cb8c5ec6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have used simple interest, but this is a compound loss. We lose 15% of the new value each year.",
+        "B": "We have £1100 × (0.85)⁶ = £415.",
+        "C": "Almost, this is the value after 7 years.",
+        "D": "Almost, this is the value after 5 years."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 81300,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3732243e-9f67-4903-82ce-601895bde294.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you found 20% = 180 and took this amount off every year. Remember we take 20% of the new value off each year.",
+        "B": "It is not less than £200 at this point . Make sure you count the number of times you use the multiplier.",
+        "C": "It is less than £200 at this point but is this the first year when it falls below this value? Make sure you count the number of times you use the multiplier.",
+        "D": "We need to find the first n, such that 900 × (0.8)^n < 200. If we try n = 6, we have 900 × 0.8⁶ = £236. However, using n =7 gives 900 × 0.8⁷ = £189, which is less than £200."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 81475,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5ff9c373-f1b0-4d28-8a55-69c5197a5549.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We need to find the first n, such that 1100 × 0.85^n < 300. If we try n = 7, we have 1100 × 0.85⁷ = £353. However, using n =8 gives 1100 × 0.85⁸ = £299.74, which is less than £300.",
+        "B": "It is less than £300 at this point but is this the first year when it falls below this value? Make sure you count the number of times you use the multiplier.",
+        "C": "I think you found 15% = 165 and took this amount off every year. Remember we take 15% of the new value off each year.",
+        "D": "It is not less than £300 at this point. Make sure you count the number of times you use the multiplier."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 81301,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2fb1babc-87a0-4335-a7c3-41424e7d46f2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, the value of the tablet is falling so we are looking for a decreasing graph NOT increasing.",
+        "B": "We need a graph where the amount it falls by reduces over time, and which approaches but never reaches 0. This is the graph that matches that criteria. .",
+        "C": "Here the graph is going down by the same amount each time. We are looking for a graph where the amount it falls by reduces over time.",
+        "D": "Not quite, the value of the tablet is falling so we are looking for a decreasing graph NOT increasing."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 81476,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bb7f183b-8535-4397-81f6-a8f027a6fcef.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, the value of the tablet is falling so we are looking for a decreasing graph NOT increasing.",
+        "B": "Here the graph is going down by the same amount each time. We are looking for a graph where the amount it falls by reduces over time.",
+        "C": "We need a graph where the amount it falls by reduces over time, and which approaches but never reaches 0. This is the graph that matches that criteria. .",
+        "D": "Not quite, the value of the tablet is falling so we are looking for a decreasing graph NOT increasing."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

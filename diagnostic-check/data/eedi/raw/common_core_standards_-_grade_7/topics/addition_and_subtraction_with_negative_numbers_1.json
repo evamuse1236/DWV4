@@ -1,0 +1,147 @@
+{
+  "shortcode": "vs6",
+  "name": "Addition and subtraction with negative numbers 1",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 55,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Carry out addition problems involving one negative integer",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Carry out missing number addition problems involving negative integers",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 89412,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/238286d1-9aec-45d6-9610-81ff565ef348.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might have counted numbers rather than jumps. Where would you need to start on the number line so that when you did 6 jumps up you ended at 4?",
+        "B": "I think you have found the difference between 4 and 6. Hint: Where would you need to start on the number line so that when you did 6 jumps up you ended at 4?",
+        "C": "I think you have added 4 and 6. Hint: Where would you need to start on the number line so that when you did 6 jumps up you ended at 4?",
+        "D": "We start at a point, and when we go up 6 jumps we end up at 4. To find out where we started jump back 6 from 4, and you get the answer -2."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89430,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b7e96b05-8736-41d9-bd14-36b138363634.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added 7 and 2. Hint: Where would you need to start on the number line so that when you did 7 jumps up you ended at 2?",
+        "B": "We start at a point, and when we go up 7 jumps we end up at 2. To find out where we started jump back 7 from 2, and you get the answer -5.",
+        "C": "I think you might have counted numbers rather than jumps. Where would you need to start on the number line so that when you did 7 jumps up you ended at 2?",
+        "D": "I think you have found the difference between 7 and 2. Hint: Where would you need to start on the number line so that when you did 7 jumps up you ended at 2?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89413,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cfdfb4fd-6c1d-43ab-a0b7-9571ce07a048.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "4 + 5 is not equal to 9. Think about where you start on the number line, how far you move and where you end up.",
+        "B": "The starting point is at −1, then there are 5 steps in a positive direction (＋ 5) which gives an answer of 4. Put mathematically, this gives: −1 ＋ 5 = 4",
+        "C": "Not quite. Remember the number you are adding is the number of jumps you are moving.",
+        "D": "This sum is accurate, but this isn't what the diagram is showing. Think about where you start, how many jumps you do and where you end up."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89431,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/394696e6-74f0-4810-ad0c-6fdf8fd8e6b1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The starting point is at −3, then there are 9 steps in a positive direction (＋ 9) which gives an answer of 6. Put mathematically, this gives: −3 ＋ 9 = 6",
+        "B": "This sum is accurate, but this isn't what the diagram is showing. Think about where you start, how many jumps you do and where you end up.",
+        "C": "6 + 9 is not equal to -3. Think about where you start on the number line, how far you move and where you end up.",
+        "D": "Not quite. Remember the number you are adding is the number of jumps you are moving."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89414,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2ebf4d86-8053-4265-a4e5-f16ceb99a83d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Picture a number line. You're at −3 but want to get to 2. This can be thought of in two stages: from −3 to 0 (so 3 steps) and from 0 to 2 (another 2 steps). Altogether 5 steps will take you to 2, so −3 ＋ 5 = 2.",
+        "B": "I think you have counted the numbers rather than the jumps. If you start at -3, how many jumps up is it to 2?",
+        "C": "I think you have done -3 + 2. If we start at -3, how many jumps up do we do to get to 2?",
+        "D": "Almost, just remember that we are starting at a negative and moving up the number line to a positive."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89432,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e7bd91d5-0b64-45a2-a80a-15dac13a0127.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost, just remember that we are starting at a negative and moving up the number line to a positive.",
+        "B": "I think you have done -4 + 3. If we start at -4, how many jumps up do we do to get to 3?",
+        "C": "I think you have counted the numbers rather than the jumps. If you start at -4, how many jumps up is it to 3?",
+        "D": "Picture a number line. You're at −4 but want to get to 3. This can be thought of in two stages: from −4 to 0 (so 4 steps) and from 0 to 3 (another 3 steps). Altogether 7 steps will take you to 3, so −4 ＋ 7 = 3."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89415,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3c6d0b5b-7165-4255-8f24-462d6a67b922.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Picture a number line. You're at −8 and add 3, so take 3 steps in a positive direction: 1 step will take you to −7, another to −6 and the third and final one to −5, so −8 ＋ 3 = −5",
+        "B": "I think you might have subtracted 3. Remember you are doing 3 jumps up the number line",
+        "C": "Not quite. You are starting at -8, and then moving 3 up the number line",
+        "D": "I think you might have counted the numbers rather than the jumps, you need to do 3 jumps up the number line"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89433,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ee76251d-f2f3-403a-89a6-22991560f378.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might have subtracted 7. Remember you are doing 7 jumps up the number line",
+        "B": "Picture a number line. You're at −11 and add 7, so take 7 steps in a positive direction: 1 step will take you to −10. The remaining 6 steps will take you to −4, so −11 ＋ 7 = −4",
+        "C": "I think you might have counted the numbers rather than the jumps, you need to do 7 jumps up the number line",
+        "D": "Not quite. You are starting at -11, and then moving 7 up the number line"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89416,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/90a8ce00-a436-4e5f-b596-52b03b9ec4a4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have subtracted but you need to add the -5 and 1. Start at -5 on the number line and then add 1 on.",
+        "B": "Find the sum of the two bricks, 1 and −5, so 1 ＋ (−5). This is the same as 1 − 5. On a vertical number line, start at 1 and take 5 steps down. You will stop at the answer, −4.",
+        "C": "Don't forget the negative sign. You need to add -5 and 1.",
+        "D": "I think you have confused your negative signs. You need to add -5 and 1. Start at -5 on the number line and then add 1 on."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89434,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c5908cba-4102-40eb-a2e5-e86613dcd920.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Find the sum of the two bricks, 6 and −7, so 6 ＋ (−7). This is the same as 6 − 7. On a vertical number line, start at 6 and take 7 steps down. You will stop at the answer, −1.",
+        "B": "I think you have confused your negative signs. You need to add -7 and 6. Start at -7 on the number line and then add 6 on.",
+        "C": "Don't forget the negative sign. You need to add -7 and 6.",
+        "D": "I think you have subtracted but you need to add the -7 and 6. Start at -7 on the number line and then add 6 on."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,147 @@
+{
+  "shortcode": "vpq",
+  "name": "Substitute into expressions and formulae 6 (higher powers)",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 149,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Substitute positive integer values into expressions involving powers or roots",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Substitute negative integer values into formulae involving powers or roots",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 135332,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fbde7ead-5ca6-46eb-96b1-fe28b23b4420.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "3⁴ is the same as 3 x 3 x 3 x 3 which gives us an answer of 81",
+        "B": "Not quite, remember 3⁴ is the same as 3 x 3 x 3 x 3. Can you now calculate this?",
+        "C": "Not quite, I think you have not multiplied as many times as you needed to. 3⁴ is the same as 3 x 3 x 3 x 3, can we now calculate this?",
+        "D": "Not quite, I think you have just put 3 and 4 together. 3⁴ is the same as 3 x 3 x 3 x 3, can we now calculate this?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135352,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7f30066d-ca34-4b11-94b8-afe0c049cba8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite I think you have just put 5 and 3 together. Remember 5³ is the same as 5 x 5 x 5",
+        "B": "Not quite I think you have multiplied 5 by 3. Remember 5³ is the same as 5 x 5 x 5",
+        "C": "5³ is the same as 5 x 5 x 5 which is 125",
+        "D": "Not quite I think we have not multiplied as many times as we should, 5³ is the same as 5 x 5 x 5. Can we calculate this now?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135333,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/80ceeaf7-5cd8-4a9e-be05-72e1da885ff7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It is easiest to substitute any negative numbers with brackets around them: (-3)⁴ is the same as -3 x -3 x -3 x -3, which will give us a positive answer as there is an even number of negatives, they'll cancel out",
+        "B": "Not quite, I think you have multiplied 4 by 3, remember (-3)⁴ is the same as (-3) x (-3) x (-3) x (-3)",
+        "C": "Not quite, I think you have done 3⁴ and then added the sign. Remember if the power is an even number the answer should be positive as the negatives will cancel out",
+        "D": "Not quite, I think you have worked out -3 x 4. Remember that (-3)⁴ is the same as (-3) x (-3) x (-3) x (-3)"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135353,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/222159ac-2fe8-4082-b7bb-e1d86c1edd20.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you have calculated -5 x 3. Remember -(5)³ is the same as -5 x -5 x -5",
+        "B": "Not quite, I think you have calculated 5³. Remember that (-5)³ is the same as -5 x -5 x -5, we need to check the sign in front of the number",
+        "C": "Not quite, I think you have just multiplied 3 by 5. Remember (-5)³ is the same as -5 x -5 x -5",
+        "D": "It is easiest to substitute any negative numbers with brackets around them: (-5)³ is the same as -5 x -5 x -5, which will give us a negative answer as there is an odd number of negatives, they won't cancel each other out"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135334,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2ca20b73-6328-4e6c-b89f-0ea786cbfb92.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you have calculated 3⁴ rather than 4³. Remember 4³ is the same as 4 x 4 x 4",
+        "B": "Not quite, I think you have just written 4 and 3 together. Remember 4³ is the same as 4 x 4 x 4.",
+        "C": "Not quite, I think you have done 4 x 3 which is 12. Remember 4³ is the same as 4 x 4 x 4",
+        "D": "4³ is the same as 4 x 4 x 4 which gives us an answer of 64"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135354,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bd1c65ca-ddb3-4468-9b67-f056e4a00566.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you have put 3 and 5 together to get 35. Remember 3⁵ is the same as 3 x 3 x 3 x 3 x 3",
+        "B": "3⁵ is the same as 3 x 3 x 3 x 3 x 3 which gives us an answer of 243",
+        "C": "Not quite, I think you have calculated 5³ instead of 3⁵. Remember 3⁵ is the same as 3 x 3 x 3 x 3 x 3",
+        "D": "Not quite, I think that you have multiplied 3 by 5. Remember 3⁵ is the same as 3 x 3 x 3 x 3 x 3"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135335,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/14b995cd-a05c-4eae-be81-10f351f5bd98.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you have calculated 4 x -3. Remember when we calculate a negative power we calculate the power and then the reciprocal of that number",
+        "B": "Not quite, I think you have worked out 4³ however the negative power does not mean we get a negative answer. A negative power means we need the reciprocal of this number. Can you find the reciprocal of 64?",
+        "C": "A negative power gives us a reciprocal (1 divided by our value). So first we work out 4³ which gives us 4 x 4 x 4 = 64. The we have to write this as \"1 divided by 64\" which is 1/64",
+        "D": "Not quite, you have worked out that 4³ is 64 which is great and have also found the reciprocal, but we do not need to make this negative. The negative power just meant that we had to find the reciprocal"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135355,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ca594e52-5105-4c44-a7a4-9e79b385fbbd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you have calculated 3⁵ however the negative power does not mean we get a negative answer. A negative power means we need the reciprocal of this number. Can you find the reciprocal of 243?",
+        "B": "Not quite, you have worked out that 3⁵ is 243 which is great and have also found the reciprocal, but we do not need to make this negative. The negative power just meant that we had to find the reciprocal",
+        "C": "Not quite, I think you have calculated 3 x -5. We need to remember that 3⁵ is 3 x 3 x 3 x 3 x 3 and find the answer to this. Once we have found this we can find the reciprocal of this number.",
+        "D": "A negative power gives us a reciprocal (1 divided by our value). So first we work out 3⁵ which gives us 3 x 3 x 3 x 3 x 3 = 243. The we have to write this as \"1 divided by 243\" which is 1/243"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135336,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/62584b53-3f63-4ad4-a519-629429d9a411.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "4³ is 4 x 4 x 4 which gives us 64. The negative power means we need to find the reciprocal of this which is 1/64. Now substitute this back into our fraction and we have 1/1/64 which is just 64 again",
+        "B": "Not quite, I think you correctly calculated 4³ and found the reciprocal however I think you may not have remembered that the power does not influence the sign of the number",
+        "C": "Not quite, I think you have correctly calculated 4³ however the power is -3 so we have to find the reciprocal of 64. Then substitute this back into our original fraction",
+        "D": "Not quite, I think you have correctly calculated 4³ however the power is -3 so we have to find the reciprocal of 64, then substitute this back into our original fraction. Take care with the negatives as a negative power just means reciprocal, we do not change the sign of or answer"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135356,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1ad9ae8c-f95e-47d8-ab1e-c08aa79335e8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you have correctly calculated 5³ however the power is -3 so we have to find the reciprocal of 125. Then substitute this back into our original fraction",
+        "B": "5³ is 5 x 5 x 5 which gives us 125. The negative power means we need to find the reciprocal of this which is 1/125. Now substitute this back into our fraction and we have 1/1/125 which is just 125 again",
+        "C": "Not quite, I think you have correctly calculated 5³ however the power is -3 so we have to find the reciprocal of 125, then substitute this back into our original fraction. Take care with the negatives as a negative power just means reciprocal, we do not change the sign of or answer",
+        "D": "Not quite, I think you correctly calculated 5³ and found the reciprocal however I think you may not have remembered that the power does not influence the sign of the number"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

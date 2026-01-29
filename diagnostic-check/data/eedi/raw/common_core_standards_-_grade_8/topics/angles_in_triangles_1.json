@@ -1,0 +1,153 @@
+{
+  "shortcode": "v1b",
+  "name": "Angles in triangles 1",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 126,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Find missing angles in an isosceles triangle",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find missing angles in a right-angled triangle",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find missing angles in a scalene triangle",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 95466,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bd646220-4841-46ca-9bbb-d1f37f690189.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Angles in a triangle add up to 180°. Therefore 58 ＋ 46 ＋ p = 180°, and so p ＋ 104 = 180°, making p = 76°.",
+        "B": "I think you might have made a slight error with your subtraction. Just check that the three angles will add to 180",
+        "C": "The triangle isn't isosceles so the base angles aren't equal. Remember that the angles in a triangle add up to 180",
+        "D": "We know that all angles must add up to 180, so we can find out what the value of this missing one is"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 95481,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dd69c413-aaca-4367-9e2e-8ec280ac2b53.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The triangle isn't isosceles so the base angles aren't equal. Remember that the angles in a triangle add up to 180",
+        "B": "I think you might have made a slight error with your subtraction. Just check that the three angles will add to 180",
+        "C": "Angles in a triangle add up to 180°. Therefore 51 ＋ 49 ＋ p = 180°, and so p ＋ 100 = 180°, making p = 80°.",
+        "D": "We know that all angles must add up to 180, so we can find out what the value of this missing one is"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 95467,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/58a184c0-df91-4664-9073-34bd94f775cb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Angles on a straight line must add up to 180, so the angle next to 135 inside the triangle will be 180 – 135 = 45°. Angles in a triangle add up to 180°, so we have p ＋ 80 ＋ 45 = 180°, which gives p ＋ 125 = 180°, meaning p = 55°.",
+        "B": "You have found the angle in the triangle next to 135, but we need to know what the p angle is. Remember angles in a triangle add to 180",
+        "C": "100 is the total of p and the other missing angle in the triangle. You can work out the other missing angle using the fact that angles on a straight line total 180, and then you can find p.",
+        "D": "We know that all angles inside the triangle must add up to 180, and we can work out what the missing one next to 135 is, so we can find p"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 95482,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7e420598-86c4-443c-bd3f-93bee8b92033.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have taken 126 away from 180. You will need to find the angles inside the triangle next to 126 and 115 before you can use the fact that angles in a triangle add to 180",
+        "B": "The angle next to 126° inside the triangle is 180 – 126 = 54°. (because angles on a straight line total 180) Repeat this process for the 115°, giving the other angle a value of 65°. Angles in a triangle add up to 180°, so we have p ＋ 54 ＋ 65 = 180°, which gives p ＋ 119 = 180°, meaning p = 61°.",
+        "C": "I think you have taken 115 away from 180. You will need to find the angles inside the triangle next to 115 and 126 before you can use the fact that angles in a triangle add to 180",
+        "D": "We know that all angles inside the triangle must add up to 180, and we can work out what the missing angles next to 115 and 126 are, so we can find p"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 95468,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/511baa6b-2d51-4cab-a005-3597942e1dee.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "In isosceles triangles the two base angles (where the two equal sides meet the other side) are the same size. This means the angle with no label is 74°. So we have p ＋ 74 ＋ 74 = 180°, giving p ＋ 148 = 180° and p = 32°.",
+        "B": "p isn't one of the base angles, so is not 74. The base angles are where the two equal sides meet the other side.",
+        "C": "Almost, but this is the total of p and the other missing angle. Can you find that missing angle using the fact that it is an isosceles triangle, and then use this to work out p?",
+        "D": "As the triangle is isosceles, we know that two of the angles are equal, so we can find the third one too. Think about which angles are equal, and what angles in a triangle add up to ."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 95483,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fa1fdcef-7ddb-4bd4-9de6-59396f318f2b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Are p and 56 definitely the two equal angles?",
+        "B": "Are p and the unmarked angle definitely the two equal angles?",
+        "C": "This is what p and the other missing angle must total, but what is p on it's own?",
+        "D": "An isosceles triangle has two equal sides. In this question we are not told which sides are equal, and so have no way of knowing whether p has the value of 56° or 68°."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 95469,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f15c5ae3-8f84-463a-b71f-7edd3a827076.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember the angles in a triangle add up to 180, and scalene means all the angles are different.",
+        "B": "Not quite. Remember angles in a triangle add up to 180, and scalene means all the angles are different. Is it possible to have a triangle with a 90 degree angle and then two equal angles?",
+        "C": "Not quite. Remember the three angles in a triangle add up to 180, and scalene means all the angles are different. Is it possible to have a triangle with a 90 degree angle and then two equal angles?",
+        "D": "It would be impossible for a triangle to have two right angles because those right angles generates a pair of parallel lines which would never meet, and so no third point could ever be formed from the three lines. A scalene triangle can have a right angle, but so too can an isosceles if the other angles are both 45°."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 120828,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/49694e37-1645-40c9-acc3-837ef3d1af77.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember angles in a triangle add up to 180, and scalene means all the angles are different. Is it possible to have a triangle with a 90 degree angle and then two different angles?",
+        "B": "Not quite. Remember angles in a triangle add up to 180, and isosceles means two angles are equal. Is it possible to have a triangle with a 90 degree angle and then two equal angles?",
+        "C": "Tom is correct, you could have a right angle and two 45 degree angles to create an isosceles triangle. Katie is also correct, You could have, for example, 90, 30 and 60 degree angles which means it would be scalene as they are all different.",
+        "D": "At least one of them is correct. Remember angles in a triangle add up to 180, scalene means all the angles are different, and isosceles means two angles are equal. Try out some different angle combinations to see who is correct."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 95470,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7ad262fb-0b91-4fae-9aa1-775ee01a355a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have just found the right part of the missing angle. You need to find the left part too and then get the total",
+        "B": "Let’s say that the shaded angle is made up of Angle a (from the left-hand triangle) and Angle b (from the right-hand triangle). Looking at the left-hand triangle, there are 2 equal angles in an isosceles triangle which means that Angle a = 50°. The triangle on the right-hand side is also isosceles so we can write b ＋ b ＋ 50 = 180, simplifying gives 2b = 130 and b = 65°. The shaded angle = a ＋ b = 50 ＋ 65 = 115°.",
+        "C": "I think you have found the left part of the angle correctly, but the right part isn't 50. Remember in isosceles triangles the base angles are equal",
+        "D": "I think you have tried to use the quadrilateral to help find the missing number. Use the two triangles to find the missing angles, and then you can add them up."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 120829,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5f9bd86e-a2bf-421b-8a3a-b2eaefa8cb33.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have found the left part of the angle correctly, but the right part isn't 40. Remember in isosceles triangles the base angles are equal",
+        "B": "Not quite. Look at each triangle in turn and find the two missing angles that make up the pink one.",
+        "C": "I think you have just found the right part of the missing angle. You need to find the left part too and then get the total.",
+        "D": "Let’s say that the shaded angle is made up of Angle a (from the left-hand triangle) and Angle b (from the right-hand triangle). Looking at the left-hand triangle, there are 2 equal angles in an isosceles triangle which means that Angle a = 40°. The triangle on the right-hand side is also isosceles so we can write b ＋ b ＋ 40 = 180, simplifying gives 2b = 140 and b = 70°. The shaded angle = a ＋ b = 40 ＋ 70 = 110°."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

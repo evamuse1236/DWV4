@@ -1,0 +1,165 @@
+{
+  "shortcode": "v1m",
+  "name": "Pythagoras' theorem in 3D",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 138,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify 2D right-angled triangles in 3D Pythagoras and SOHCAHTOA questions",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify the hypotenuse of 2D right-angled triangles in 3D Pythagoras questions",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Recall the correct formula to calculate the length of the hypotenuse of a 2D right-angled triangle in a 3D Pythagoras question",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the length of the hypotenuse in a 2D right-angled triangle in a 3D question using Pythagoras’ Theorem",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the length of a non-hypotenuse in a 2D right-angled triangle in a 3D question using Pythagoras’ Theorem",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 135973,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6a0bf2d1-c2c8-4709-9baf-74dac45a05eb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "P, R and W would form a right-angled triangle, with the right angle at P. PW is an edge of the cuboid and PR is in a plane perpendicular to PW (face PQRS).",
+        "B": "PR, RX and XP are all diagonals across faces of the cuboid so they won't form a right-angled triangle. We need two points that form an edge of the cuboid and a third point in a plane perpendicular to that edge.",
+        "C": "PR, RZ and ZP are all diagonals across faces of the cuboid so they won't form a right-angled triangle. We need two points that form an edge of the cuboid and a third point in a plane perpendicular to that edge.",
+        "D": "Not all of these will form right-angled triangles. Remember we need two points that form an edge of the cuboid and a third point in a plane perpendicular to that edge."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135993,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e6c7679e-7fdd-4662-a385-10258a485802.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This would give you a right angled triangle, but are there any others? We need two points that form an edge of the cuboid and a third point in a plane perpendicular to that edge.",
+        "B": "This would give you a right angled triangle, but there are others. Think about looking at the shape from different angles, and joining the three points.",
+        "C": "This would give you a right angled triangle, but there are others. Think about looking at the shape from different angles, and joining the three points.",
+        "D": "These will all give us right-angled triangles because in each case we have a pair of lines that are perpendicular to one another. E.g. an edge and a perpendicular edge or an edge and a diagonal on a perpendicular face."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135974,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f5f5e100-0fea-41f5-8ddc-4470c136c869.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Drawing out the triangle formed by PYZ, The right angle is at Z, which means the hypotenuse is opposite this so is PY.",
+        "B": "This would be the hypotenuse if the triangle was flat on the bottom of the rectangle, but it is stood up. Think about where the right angle would be if you drew this triangle. The hypotenuse will be opposite this.",
+        "C": "Not quite. Think about where the right angle would be if you drew this triangle. The hypotenuse will be opposite this.",
+        "D": "Not quite, PYZ does have a hypotenuse. Think about where the right angle would be if you drew this triangle. The hypotenuse will be opposite this."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135994,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5022e819-67fb-4c94-ae97-4aae64f37cd8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Think about where the right angle would be if you drew this triangle. The hypotenuse will be opposite this.",
+        "B": "Not quite. Think about where the right angle would be if you drew this triangle. The hypotenuse will be opposite this.",
+        "C": "Drawing out the triangle formed by PXS, The right angle is at P, which means the hypotenuse is opposite this so is XS.",
+        "D": "Not quite, PXS does have a hypotenuse. Think about where the right angle would be if you drew this triangle. The hypotenuse will be opposite this."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135975,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6360fa6b-941e-44af-9beb-4cdc01d766f9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The red line is the hypotenuse of PSZ (imagine looking directly down on the cuboid). This means we can use Pythagoras to find the longer side by squaring the 8 and 5, adding them and taking the square root.",
+        "B": "Almost, this would be true if we were looking for a shorter side, but PZ is the hypotenuse",
+        "C": "Not quite. This finds the area of a triangle. We need to use Pythagoras to find a missing length in a right angled triangle.",
+        "D": "Not quite. This finds the volume of the cuboid. We need to use Pythagoras to find a missing length in a right angled triangle."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135995,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7018ead8-295a-4fa6-b0cb-1db52dfcd24e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost, this would be true if we were looking for a shorter side, but SY is the hypotenuse",
+        "B": "Not quite. This finds the area of a triangle. We need to use Pythagoras to find a missing length in a right angled triangle.",
+        "C": "Not quite. This finds the volume of the cuboid. We need to use Pythagoras to find a missing length in a right angled triangle.",
+        "D": "The red line is the hypotenuse of SYZ (imagine looking directly from the right end of the cuboid). This means we can use Pythagoras to find the longer side by squaring the 3 and 6, adding them and taking the square root."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135976,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/adc76d6d-ce2f-4fe1-a6da-77167f70d9ff.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost, but I think you subtracted when using Pythagoras. Here we are looking for the longer side so we need to add",
+        "B": "I think you have found an area. We need to use Pythagoras to find the missing length as we have a right-angled triangle.",
+        "C": "We have the right angled triangle PYZ. We are told PZ = 9.4, so using Pythagoras to find the hypotenuse we have 9.4² + 4² = 104.36. Square rooting this we get 10.2",
+        "D": "I think you have added PZ and ZY. To find a missing length in a right angled triangle we will need to use Pythagoras."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135996,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a96550f2-d302-4cfa-a519-b931f4d25dd9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We have the right angled triangle PSY. We are told SY = 6.7, so using Pythagoras to find the hypotenuse we have 6.7² + 11² = 165.89. Square rooting this we get 12.9",
+        "B": "I think you have added PS and SY. To find a missing length in a right angled triangle we will need to use Pythagoras.",
+        "C": "Almost, just check your rounding.",
+        "D": "Almost, but I think you subtracted when using Pythagoras. Here we are looking for the longer side so we need to add"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135977,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db4e350f-7f63-4989-b075-d4fb5ec28742.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We can find the diagonal across the base first (AP) by using pythagoras. 7² + 24² = 625. The square root of 625 is 25 soAP is 25cm. Then we can use our new triangle OAP with the base we have just found. Using pythagoras to find the shorter length (OP) we need to work out 26² - 25² and then square root it which will give us a height of 7.1 (1dp)",
+        "B": "Not quite. Try working it out in stages, find AP first, and then use that to find OP",
+        "C": "I think you have used the wrong sides here. Draw in the line AP. We now have the triangle OAP which will help us find OP. Can you find AP first?",
+        "D": "Almost, but I think you added when using Pythagoras. We are looking for a shorter side so we will need to subtract."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135997,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/999c1da7-cdbf-44a2-90ec-cde363127dbe.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost, but I think you added when using Pythagoras. We are looking for a shorter side so we will need to subtract.",
+        "B": "We can find the diagonal across the base first (AP) by using pythagoras, remembering we are calculating a shorter side: 23² - 11² = 408. The square root of 408 is 20.2 soAP is 20.2cm. Then we can use our new triangle APD with the length we have just found. Using pythagoras to find the shorter length (AD) we need to work out 20.2² - 7² and then square root it which will give us a height of 18.9 (1dp). Keep the number 20.2... in your calculator throughout this question rather than rounding it. This will keep your answer more exact.",
+        "C": "Not quite. Try working it out in stages, find AP first, and then use that to find AD",
+        "D": "I think you subtracted the 7² . Try working it out in stages, find AP first, and then use that to find AD"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,141 @@
+{
+  "shortcode": "vni",
+  "name": "Find a scale factor (not related to enlargements)",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 42,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Find a scale factor (not related to enlargements)",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 133552,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea379bd7-7527-4c47-969c-77151f656dae.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, the arrow would have to go the other way to make that true.",
+        "B": "Check your calculation again: 6 x ___ = 24.",
+        "C": "6 x 4 = 24, so 4 goes in the gap.",
+        "D": "Careful, that's a multiplication sign before the gap, not addition."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133562,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/632d0214-b75d-4a1d-b421-f0398c9c8d4e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "9 x 1/3 = 3, so 1/3 goes in the gap.",
+        "B": "Does 9 x 2 = 3? Think about what number would make this true.",
+        "C": "Not quite, the arrow would have to go the other way to make that true.",
+        "D": "Careful, that's a multiplication sign before the gap, not addition."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 133553,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f40af024-772a-4d59-8a1b-979e3569c958.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "6 x 1/3 = 2 and 30 x 1/3 = 10, so 1/3 is the constant of proportionality.",
+        "B": "That would be the constant of proportionality from b to a. What do we have to multiply 6 by to get to 2?",
+        "C": "Careful, we are looking across the table from a to b. What do we need to multiply the numbers in 'a' by to get the answer in 'b'?",
+        "D": "Careful, we are looking across the table from a to b, not down the columns. 6 x __ = 2?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133563,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3c13136f-bf02-4e4a-8c8e-2e62cf15ddc1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "That would be the constant of proportionality from b to a. What do we need to multiply a by to get to b?",
+        "B": "8 x 1.5 = 12 and 24 x 1.5 = 36, so the constant of proportionality is 1.5.",
+        "C": "Careful, we are looking across the table from a to b, not down the columns. 8 x __ = 12?",
+        "D": "All these numbers are multiples of 4, but we are looking for the relationship from a to b. 8 x __ = 12?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 133554,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/99afdc2c-ad64-4d65-a0c1-5879ef4043ac.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Careful, we are looking from top to bottom in the table. What do we need to multiply the numbers in the top row by to get the answer in the bottom row?",
+        "B": "Careful, we are looking from top to bottom in the table, not along the rows. 6 x __ = 30?",
+        "C": "That would be the scale factor from bottom to top. What do we need to multiply the numbers in the top row by to get the answers in the bottom row?",
+        "D": "6 x 5 = 30 and 2 x 5 = 10, so the scale factor is 5."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133564,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/55032f23-cf61-4943-acde-e385eda578f9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "That would be the scale factor from bottom to top. What do we need to multiply 8 by to get to 24?",
+        "B": "8 x 3 = 24 and 12 x 3 = 36, so the scale factor is 3.",
+        "C": "Careful, we are looking from top to bottom in the table, not along the rows. 8 x __ = 24?",
+        "D": "Not quite, a scale factor is what you multiply by to get from top to bottom, not what you add. 8 x __ = 24?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 133556,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d9a1d18-87e0-43a8-90c8-20efefbfad55.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This method finds the scale factor from a to b and multiplies it by 8 to find the missing value. It does work.",
+        "B": "This method doesn't work because 8 and 16 are not related to each other in the table. We need to use a related pair, 5 and 8 or 5 and 16, to get a scale factor we can use.",
+        "C": "This method uses the fact that 5 and 16 are in the same ratio as 8 and the missing number. Whatever we multiply 5 by to get 8, we do the same to 16 for the missing number, so this does work.",
+        "D": "This method uses the fact that 5 and 16 are in the same ratio as 8 and the missing number. Whatever we multiply 5 by to get 8, we do the same to 16 for the missing number, so this does work."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129341,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/99c93b61-98d3-49ca-9a4f-7f166fa38e07.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This method doesn't work because 15 and 3 are not related to each other in the table. We need to use a related pair, 8 and 3 or 8 and 15, to get a scale factor we can use.",
+        "B": "This method finds the scale factor from a to b and multiplies it by 15 to find the missing value. It does work.",
+        "C": "This method uses the fact that 8 and 3 are in the same ratio as 15 and the missing number. Whatever we multiply 8 by to get 15, we do the same to 3 for the missing number, so this does work.",
+        "D": "This method uses the fact that 8 and 3 are in the same ratio as 15 and the missing number. Whatever we multiply 8 by to get 15, we do the same to 3 for the missing number, so this does work."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 154821,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/99675465-89b5-4990-b6fc-6c03617901dd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. I think you have identified the scale factor to get from real life to the map. Remember, the ratio given is always map : real life.",
+        "B": "Not quite. I think you have identified that the ratio shows us map : real life, but believe we need to divide by 100, possibly confusing this with changing units. Our scale factor must take us from 1 to exactly 500.",
+        "C": "To get from 1 (map) to 500 (real life) we multiply by 500, so that is our scale factor.",
+        "D": "Not quite. I think you have identified the scale factor to get from real life to the map and also removed the zeros. Remember, the ratio given is always map : real life and our scale factor must take us from 1 to exactly 500."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 154822,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4a04252b-5eb6-48dc-b894-cd5fa3e26cf4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To get from 4000 (real life) to 1 (map) we divide by 4000. A scale factor must be given as a multiplication so 1/4000 is our scale factor.",
+        "B": "Not quite. I think you have identified that the ratio shows us map : real life, but believe we need to divide by 1000, possibly confusing this with changing units. Our scale factor must take us from 4000 to exactly 1.",
+        "C": "Not quite. I think you have identified the scale factor to get from the map to real life. Remember, the ratio given is always map : real life.",
+        "D": "Not quite. I think you have identified the scale factor to get from the map to real life and also removed the zeros. Remember, the ratio given is always map : real life and our scale factor must take us from 4000 to exactly 1."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

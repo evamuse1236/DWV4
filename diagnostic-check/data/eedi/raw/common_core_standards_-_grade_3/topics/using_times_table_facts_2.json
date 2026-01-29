@@ -1,0 +1,141 @@
+{
+  "shortcode": "bitf",
+  "name": "Using times table facts 2",
+  "collectionId": 33,
+  "level": 1,
+  "sequence": 9,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Know times tables up to 12 x 12",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158742,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/79ce978f-411a-41fe-a704-ae879858f19f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Close! 9 x 6 = 54, but we want 9 x 5. Think about 10 x 5, can 9 x 5 be bigger than that?",
+        "B": "That's 9 + 5, but we want 9 x 5",
+        "C": "9 x 5 = 45. One way to work this out is to do 10 x 5 = 50, then subtract 5.",
+        "D": "That's 9 - 5, but we want 9 x 5."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158941,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/73e99a3f-e012-478a-89e8-90b246a1bc82.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "6 x 8 = 48. One way to work this out is to do 5 x 8 = 40, then add 8.",
+        "B": "That's 8 - 6, but we want 6 x 8.",
+        "C": "That's 6 + 8, but we want 6 x 8",
+        "D": "Close! 7 x 8 = 56, but we want 6 x 8 so you need to subtract an 8..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158743,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/44e2d649-27a0-43d2-8564-3a6d9aba4614.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "That's 8 + 7, but 8 groups of 7 means we have 8 x 7.",
+        "B": "Close! 7 x 7 = 49, but we want 8 x 7. Add one more 7.",
+        "C": "That's 8 - 7, but 8 groups of 7 means we have 8 x 7.",
+        "D": "8 groups of 7 is 8 x 7, and 8 x 7 = 56. One way to work this out is to double 7 (x2), double the answer (x4), then double it again (x8). 7 x 2 = 14, 14 x 2 = 28, 28 x 2 == 56."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158942,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/50b42695-ac18-4b16-9d43-487f18f8270c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Close! 8 x 6 = 48, but we want 9 x 6. Add one more 6.",
+        "B": "That's 9 + 6, but 9 groups of 6 means we have 9 x 6.",
+        "C": "That's 9 - 6, but 9 groups of 6 means we have 9 x 6.",
+        "D": "9 groups of 6 is 9 x 6, and 9 x 6 = 54. One way to work this out is to do 10 x 6 and then subtract 6."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158744,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e9f49f17-5f0c-4f01-98b8-b53c4976afe4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "That's 42 - 6, but we want 42 ÷ 6. How many 6s are in 42?",
+        "B": "42 ÷ 6 = 7, because if we count up in 6s, seven 6s make 42.",
+        "C": "Close! Eight 6s make 48, not 42. That's too big, so how many 6s do you think go into 42?",
+        "D": "That's 42 + 6, but we want 42 ÷ 6. How many 6s are in 42?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158943,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/39c7e665-92d4-4932-a9b7-0e3f816ba66e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "That's 48 - 6, but we want 48 ÷ 6. How many 6s are in 48?",
+        "B": "Close! Nine 6s make 54, not 48. That's too big, so how many 6s do you think go into 48?",
+        "C": "48 ÷ 6 = 8, because if we count up in 6s, eight 6s make 48.",
+        "D": "That's 48 + 6, but we want 48 ÷ 6. How many 6s are in 48?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158745,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/747bccb7-3693-4a59-b48b-7d1e55cc2df6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Sharing into 7 equal groups means dividing by 7. 21 ÷ 7 = 3.",
+        "B": "You have added 21 + 7, but this isn't an addition question. What mathematical operation means \"split into equal groups\"?",
+        "C": "You have multiplied 21 x 7, but this isn't a multiplication question. What mathematical operation means \"split into equal groups\"?",
+        "D": "You have subtracted 21 - 7, but this isn't a subtraction question. What mathematical operation means \"split into equal groups\"?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158944,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8e01ae21-b13b-4610-bbe2-b73346f507c3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have subtracted 32 - 4, but this isn't a subtraction question. What mathematical operation means \"split into equal groups\"?",
+        "B": "You have multiplied 32 x 4, but this isn't a multiplication question. What mathematical operation means \"split into equal groups\"?",
+        "C": "You have added 32 + 4, but this isn't an addition question. What mathematical operation means \"split into equal groups\"?",
+        "D": "Sharing into 4 equal groups means dividing by 4. 32 ÷ 4 = 8."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158746,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/06a613f4-2647-47a9-94a2-7c1f4205aaaa.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we put 200 in the box, we would have 5 x 200. Does that equal 40? Think about how many 5s are in 40.",
+        "B": "5 x 8 = 40, so 8 goes in the box.",
+        "C": "If we put 35 in the box we would have 5 x 35. Is that equal to 40? I think you might have mixed up addition/subtraction with multiplication/division.",
+        "D": "If we put 45 in the box we would have 5 x 45. Is that equal to 40? I think you might have mixed up addition/subtraction with multiplication/division."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158945,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ba1d0733-2f4e-4e9b-930d-a08239153a6a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "7 x 9 = 63, so 9 goes in the box.",
+        "B": "If we put 441 in the box, we would have 7 x 441. Does that equal 63? Think about how many 7s are in 63.",
+        "C": "If we put 70 in the box we would have 7 x 70. Is that equal to 63? I think you might have mixed up addition/subtraction with multiplication/division.",
+        "D": "If we put 56 in the box we would have 7 x 56. Is that equal to 63? I think you might have mixed up addition/subtraction with multiplication/division."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

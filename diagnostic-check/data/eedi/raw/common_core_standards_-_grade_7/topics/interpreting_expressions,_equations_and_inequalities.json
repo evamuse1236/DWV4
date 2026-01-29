@@ -1,0 +1,159 @@
+{
+  "shortcode": "vvs",
+  "name": "Interpreting expressions, equations and inequalities",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 155,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Recognise and name an equation",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Describe the meaning of algebraic terms with no powers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Interpret the terms on a formula and how they relate to the context of the situation",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Understand inequality notation",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 75914,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b5196871-8f89-4467-ad05-61f5f729f2b3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. Try reading this inequality forwards? 7 is greater/smaller than than R.",
+        "B": "Almost. Try reading this inequality backwards? Write R > 7 in words.",
+        "C": "Both A and B are correct. We can read this inequality forwards (7 < R) or backwards (R > 7).",
+        "D": "At least one of these options is correct. '<' means smaller than and '>' means greater than."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 76062,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e9ba5a38-b9af-42cb-92a4-d992376a439d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. If we read this inequality backwards it would be T < 3.",
+        "B": "We can read this inequality forwards (3 > T) or backwards (T < 3). This means T is smaller than 3.",
+        "C": "Try reading this inequality backwards? Write T < 3 in words.",
+        "D": "Try reading this inequality backwards? Write T < 3 in words."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 105017,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/78744b28-ffda-4d65-b814-0824aefc5b49.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is an equation: the two sides are equal and we can work out a specific value for 𝑥. A formula has two or more variables and shows how things are related to one another, for example, 𝐴 = 𝑤𝑙. An identity is an equation that is true no matter what values are chosen, for example 𝑥 + 3 ≡ 3 + 𝑥. An expression is something without the equals sign, for example, 𝑥 + 3.",
+        "B": "Not quite! You are correct that formulae have an equals symbol, but this just has one variable and does not show a relationship between 2 given things.",
+        "C": "Not quite. An identity shows that 2 expressions are equal, no matter what the value of the variable. e.g. x + 3 = 3 + x",
+        "D": "Not quite. Algebraic expressions do contain letters and numbers, but they do not have an equals sign."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 120801,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3ac59f1a-a154-45c3-ad64-dba6888bf4c9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is an equation: the two sides are equal and we can work out a specific value for y. A formula has two or more variables and shows how things are related to one another, for example, 𝐴 = 𝑤𝑙. An identity is an equation that is true no matter what values are chosen, for example 𝑥 + 3 ≡ 3 + 𝑥. An expression is something without the equals sign, for example, 𝑥 + 3.",
+        "B": "Not quite! You are correct that formulae have an equals symbol, but this just has one variable and does not show a relationship between 2 given things.",
+        "C": "Not quite. An identity shows that 2 expressions are equal, no matter what the value of the variable. e.g. x + 3 = 3 + x",
+        "D": "Not quite. Algebraic expressions do contain letters and numbers, but they do not have an equals sign."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130137,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ec5daf11-7b98-4091-8123-05e75dc21e01.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have understood that 2b means that we multiply by 2, but you have made a mistake with your order of operations. Which do we need to work out first, multiplication or subtraction?",
+        "B": "We do need to subtract a, but is is not from \"2 and b\". The 2 is right next to the b which means they are being multiplied together",
+        "C": "The 2 is right next to the b which means they are being multiplied together. We know this comes before we subtract a because multiplication has a higher order of priority than subtraction (BIDMAS)",
+        "D": "2b does not mean 2 + b. What does it mean when we write the 2 and the b right next to each other like this?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130157,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/46712c26-9ef8-4a1f-ae5b-73e6c6ce93df.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have understood that 4a means that we multiply by 4, but you have made a mistake with your order of operations. Which do we need to work out first, multiplication or subtraction?",
+        "B": "We do need to subtract b, but is is not from \"4 and a\". The 4 is right next to the a which means they are being multiplied together",
+        "C": "The 4 is right next to the a which means they are being multiplied together. We know this comes before we subtract b because multiplication has a higher order of priority than subtraction (BIDMAS)",
+        "D": "We do need to multiply a by 4, but are we then subtracting it from b? Which term do I start with and which am I taking away?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131455,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/84af1c11-a3a2-43de-8ddc-d9a7043ad558.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. The number of people visiting is a variable, so would be represented by a letter.",
+        "B": "The 12 is not affected by the number of rides, so it must be the fixed entry fee.",
+        "C": "The cost per ride will be a number, however it will be multiplied by the number of rides to get the cost. The 12 is not multiplied by the number of rides.",
+        "D": "The number of rides varies depending on the person, so it will be represented by a letter. What is unchanged each time?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133688,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/caf87c25-b268-499d-bb7b-2cd55d625208.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. The number of people visiting is a variable, so would be represented by a letter.",
+        "B": "The fixed entry fee doesn't depend on the number of rides, so we wouldn't multiply this by p.",
+        "C": "The cost per ride is multiplied by the number of rides, before adding on the fixed rate. That means 3 is the cost per ride, and p is the number of rides.",
+        "D": "The number of rides varies depending on the person, so it will be represented by the letter 'p'. What is this multiplied by when finding the cost?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131847,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6c23304-6ef5-4545-91c7-e7bbd4d705f9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The fixed entry fee will be the same in all scenarios and does not get multiplied by anything. What else could the '2' represent?",
+        "B": "The number of hours will vary depending on the visitor so that will be represented by a letter. If 't' represents the number of hours then what would the '2' represent?",
+        "C": "Looking at the formula the '3' represents a fixed cost and then we are adding '2t' where 't' is the element that varies. This could be anything like time or number of children. But the '2' is what we multiply this by. The only option that fits here is the cost per hour, a specified value that changes depending on 't' (in this case, the hours)",
+        "D": "The number of children will vary depending on the visitor so that will be represented by a letter. What value could the play centre determine in advance?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134040,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9b4bf201-6132-4b79-a434-aa3bdc361c75.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The '3' is not affected by another value such as an unknown letter. So we know it must represent a fixed charge of some type.",
+        "B": "The number of hours spent inside will change depending on the visitor so that will be represented by a letter. What value might be decided in advance by the play centre?",
+        "C": "The cost per hour will be a number that is then multiplied by a letter (the number of hours spent inside). In our formula the 3 is not being multiplied by anything so it does not change dependent on the hours. What do we call this?",
+        "D": "The number of children will change depending on the visitor so that will be represented by a letter. What value might be decided in advance by the play centre?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

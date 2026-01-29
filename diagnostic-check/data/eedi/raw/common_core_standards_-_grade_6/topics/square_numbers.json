@@ -1,0 +1,153 @@
+{
+  "shortcode": "vo2",
+  "name": "Square numbers",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 119,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Understand the notation for powers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Recognise square numbers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the square of a number",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 134842,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3679f98f-81b5-42b0-81e0-245916cf97e1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "1 squared = 1 x 1 = 1. This is also an odd number, so the answer is 1",
+        "B": "Not quite. 3 is odd but it isn't a square number. Remember we get square numbers by multiplying 2 copies of the same number together",
+        "C": "Not quite. 4 is square, but it isn't an odd number",
+        "D": "Almost. 9 is an odd square number, but is there a smaller one?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134862,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bccda043-dcd7-40fc-b4e6-babb7a7bf9c4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. 1 is a square number but it isn't even",
+        "B": "Not quite. 2 is even but it isn't a square number. Remember we get square numbers by multiplying 2 copies of the same number together",
+        "C": "2 squared = 2 x 2 = 4. This is also an even number, so the answer is 4",
+        "D": "Not quite. 9 is a square number but it is not even."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 134843,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1ee3bc92-e565-4a45-9e8e-bd95ef9afadf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, the 2 is a power. It tells us how many copies of the large number we have to multiply together, not what number to add on",
+        "B": "Not quite, the 2 is a power. It tells us how many copies of the large number we have to multiply together, we don't just multiply the big number by the power",
+        "C": "The small 2 means squared, and it tells us we have to multiply 2 copies of 53 together.",
+        "D": "Not quite, the 2 is a power. It tells us how many copies of the large number we have to multiply together"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134863,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ae52d93c-1164-404e-85f8-238421f673bd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, the 2 is a power. It tells us how many copies of the large number we have to multiply together, not what number to divide by",
+        "B": "The small 2 means squared, and it tells us we have to multiply 2 copies of 47 together.",
+        "C": "Not quite, the 2 is a power. It tells us how many copies of the large number we have to multiply together, not what number to add on",
+        "D": "Not quite, the 2 is a power. It tells us how many copies of the large number we have to multiply together, we don't just multiply the big number by the power"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 134844,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aa424459-e56f-443d-a838-a16a56f8585a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. You have just placed 2 copies of 9 next to each other rather than multiplying them",
+        "B": "9 squared = 9 x 9 = 81",
+        "C": "Not quite. I think you have multiplied 9 by 2, rather than multiplying 2 copies of 9",
+        "D": "Not quite. I think you have multiplied 9 by 2 squared. We just need to multiply two copies of 9 together"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134864,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a64751fa-8820-410f-b9f0-845185e9d164.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. I think you have multiplied 5 by 2, rather than multiplying 2 copies of 5",
+        "B": "Not quite. I think you have multiplied 5 by 2 squared. We just need to multiply two copies of 5 together",
+        "C": "5 squared = 5 x 5 = 25",
+        "D": "Not quite. You have just placed 2 copies of 5 next to each other rather than multiplying them"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 134845,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ff1163d4-6fd2-4fea-8cac-ed59ba2cb497.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. I think you have multiplied 7 by 2, rather than multiplying 2 copies of 7",
+        "B": "Not quite, the 2 is a power. You can't just bring it down to write it as an integer. We need to multiply 2 copies of 7 together",
+        "C": "Not quite. You have just placed 2 copies of 7 next to each other rather than multiplying them",
+        "D": "7 squared = 7 x 7 = 49"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134865,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/288707d8-3808-4569-b938-f1b7068f4c35.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. I think you have multiplied 9 by 2, rather than multiplying 2 copies of 9",
+        "B": "9 squared = 9 x 9 = 81",
+        "C": "Not quite, the 2 is a power. You can't just bring it down to write it as an integer. We need to multiply 2 copies of 9 together",
+        "D": "Not quite. You have just placed 2 copies of 9 next to each other rather than multiplying them"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 134846,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/67d88c51-11a5-4c1c-b0ef-9a0227e6be2f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "1000 squared = 1000 x 1000 = 1,000,000",
+        "B": "Not quite. I think you have multiplied by 2, rather than multiplying 2 copies of 1000 together",
+        "C": "Not quite. You have multiplied by 10 rather than multiplying 2 copies of 1000 together",
+        "D": "Not quite. You have placed the 2 on the end of the number but it is a power. It tells us we need to multiply two copies of 1000 together"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134866,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dd240541-4fa7-4cf3-ac60-ae74d290bf30.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. Just check that you have done 1000 x 1000",
+        "B": "Not quite. I think you have multiplied by 2, rather than multiplying 2 copies of 1000 together",
+        "C": "Not quite. You have placed two copies of 1000 next to each other, but you need to multiply them",
+        "D": "1000 squared = 1000 x 1000 = 1,000,000"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

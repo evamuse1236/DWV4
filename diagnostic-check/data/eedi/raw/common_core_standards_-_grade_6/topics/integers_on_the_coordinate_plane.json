@@ -1,0 +1,165 @@
+{
+  "shortcode": "efj7",
+  "name": "Integers on the Coordinate Plane",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 91,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Describe a point in the first quadrant of a 2D grid by giving its coordinates, where both values are integers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Describe a point in the second quadrant of a 2D grid by giving its coordinates, where both values are integers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Describe a point in the third quadrant of a 2D grid by giving its coordinates, where both values are integers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Mark a point in the third quadrant of a 2D grid having been given its coordinates, where both values are integers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Mark a point in the fourth quadrant of a 2D grid having been given its coordinates, where both values are integers",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166175,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4b037df3-a5af-4d38-8edd-0d78cb898881.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite - it looks like you may have counted the zero in there. Remember to look at the axis to see which number the point is lined up with.",
+        "B": "I think you may have got confused with the x and y coordinates. The axes should be labelled so you can look for which is which. If not, think x goes across and y to the sky!",
+        "C": "The point is lined up with the 6 on the y axis so the y coordinate is 6.",
+        "D": "I think you may have counted zero in and also mixed up your x and y coordinates. Look for the labels on the axes (or x is across, y to the sky) and remember to look at the number that the point is lined up with."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166402,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e57b526c-6268-4650-90b1-46f736f47a19.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite - it looks like you may have counted the zero in there. Remember to look at the axis to see which number the point is lined up with.",
+        "B": "I think you may have got confused with the x and y coordinates. The axes should be labelled so you can look for which is which. If not, think x goes across and y to the sky!",
+        "C": "I think you may have counted zero in and also mixed up your x and y coordinates. Look for the labels on the axes (or x is across, y to the sky) and remember to look at the number that the point is lined up with.",
+        "D": "The point is lined up with the 5 on the y axis so the y coordinate is 5."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166176,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ac3077b7-6675-4636-aa52-151788e0c149.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have looked at point J but may have read off on the wrong axis. Remember we were asked for the x coordinate so which axis do you need to be reading off from?",
+        "B": "I think you may have counted across and included zero. Remember to look at the number on the x axis that the point is lined up with.",
+        "C": "x is the horizontal axis. The point J is lined up with -5 on the x axis so the x value is -5.",
+        "D": "You're close! J is to the left of zero so it won't be a positive number."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166403,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a7365b6c-79a8-43ca-8712-d9a9457e59fc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have counted across and included zero. Remember to look at the number on the x axis that the point is lined up with.",
+        "B": "x is the horizontal axis. The point K is lined up with -3 on the x axis so the x value is -3.",
+        "C": "You're close! K is to the left of zero so it won't be a positive number.",
+        "D": "I think you have looked at point K but may have read off on the wrong axis. Remember we were asked for the x coordinate so which axis do you need to be reading off from?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166177,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4ece279c-ad7a-4035-b1a2-27415bd99465.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The point is lined up with -6 on the x axis and 5 on the y axis. Coordinates are always written as (x,y) so it's (-6,5).",
+        "B": "Be careful, remember coordinates are always written as (x,y). Which number should be written first?",
+        "C": "I think you may have got a bit mixed up with the signs. Be careful when reading off the values. Is the x value negative or positive? And what about the y value?",
+        "D": "Be careful with the signs. The x value is to the left of zero so are these values positive or negative?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166404,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c15d09ac-a4e0-4d29-99a7-f5d92803247f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful, remember coordinates are always written as (x,y). Which number should be written first?",
+        "B": "Be careful with the signs. The x value is to the left of zero so are these values positive or negative?",
+        "C": "The point is lined up with -2 on the x axis and 4 on the y axis. Coordinates are always written as (x,y) so it's (-2,4).",
+        "D": "I think you may have got a bit mixed up with the signs. Be careful when reading off the values. Is the x value negative or positive? And what about the y value?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166178,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0c222fb2-3b32-43d3-af68-3192562431f2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost! I think you may have missed a negative sign. Look carefully at the values.",
+        "B": "Be careful, I think you may have got the x and y values mixed up. Remember coordinates are always written as (x,y) so which axis should you go to first?",
+        "C": "I wonder if you have mistaken which number the negative belongs to. The sign is always in front of the number it belongs with. Which value is negative here?",
+        "D": "Coordinates are always written as (x,y) so it's the point where it's lined up with 6 on the x axis and -3 on the y axis. It's D."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166405,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/327ad992-ae3d-47aa-9822-cc3f7711a52c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful, I think you may have got the x and y values mixed up. Remember coordinates are always written as (x,y) so which axis should you go to first?",
+        "B": "I wonder if you have mistaken which number the negative belongs to. The sign is always in front of the number it belongs with. Which value is negative here?",
+        "C": "Coordinates are always written as (x,y) so it's the point where it's lined up with 4 on the x axis and -6 on the y axis. It's C.",
+        "D": "Almost! I think you may have missed a negative sign. Look carefully at the values."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166179,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/18d97e25-d0b9-4b75-82a2-489a26878e5f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Coordinates are always written as (x,y) so it's the point where it's lined up with -4 on the x axis and -2 on the y axis. It's A.",
+        "B": "I think you may have forgotten about the negative signs! Take a closer look at the numbers .",
+        "C": "You're close! But I think you may have missed a negative sign. Take a closer look at the numbers.",
+        "D": "Be careful, I think you may have got the x and y values mixed up. Remember coordinates are always written as (x,y) so which axis should you go to first?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166406,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/85cac03b-2421-4c9f-ab8c-90e69e2a7df5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful, I think you may have got the x and y values mixed up. Remember coordinates are always written as (x,y) so which axis should you go to first?",
+        "B": "You're close! But I think you may have missed a negative sign. Take a closer look at the numbers.",
+        "C": "I think you may have forgotten about the negative signs! Take a closer look at the numbers .",
+        "D": "Coordinates are always written as (x,y) so it's the point where it's lined up with -2 on the x axis and -4 on the y axis. It's D."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

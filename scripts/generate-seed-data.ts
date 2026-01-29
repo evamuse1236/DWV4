@@ -5,7 +5,7 @@
  * code blocks for seed.ts — both MYP Y1 (insertMajorWithSubsAndActivities)
  * and PYP Y2 (insertPypMajor) calls.
  *
- * Usage: npx tsx scripts/generate-seed-data.ts
+ * Usage: node --experimental-strip-types scripts/generate-seed-data.ts
  *
  * Output: writes to scripts/generated-seed-block.ts
  */
@@ -61,36 +61,80 @@ interface PlaylistMapping {
   learning_objectives: LearningObjective[];
 }
 
-// Map from playlist_mapping topic names to seed.ts major objective titles
+// Map from playlist_mapping topic names to seeded major objective titles.
+//
+// For MYP Y1, we intentionally group under CCSS Grade 6 domains to avoid
+// confusing overlaps like "Fractions Foundation" vs "Fractions".
 const TOPIC_TO_MAJOR: Record<string, string> = {
-  "Fractions Foundation": "Fractions Foundation",
-  "Arithmetic MYP 1": "Arithmetic MYP 1",
-  "Factors and Multiples": "Factors and Multiples",
-  Fractions: "Fractions",
-  Decimals: "Decimals",
-  Geometry: "Geometry",
-  "Measurement and Areas": "Measurement and Areas",
-  "Algebra foundations": "Algebra Foundations",
-  Algebra: "Algebra",
-  Rates: "Rates",
-  Percentage: "Percentage",
-  Data: "Data",
+  // 6.RP
+  Rates: "CCSS G6: Ratios & Proportional Relationships (6.RP)",
+  Percentage: "CCSS G6: Ratios & Proportional Relationships (6.RP)",
+
+  // 6.NS (includes below-grade prerequisites currently present in MYP Y1 mapping)
+  "Fractions Foundation": "CCSS G6: The Number System (6.NS)",
+  Fractions: "CCSS G6: The Number System (6.NS)",
+  Decimals: "CCSS G6: The Number System (6.NS)",
+  "Factors and Multiples": "CCSS G6: The Number System (6.NS)",
+  "Arithmetic MYP 1": "CCSS G6: The Number System (6.NS)",
+
+  // 6.EE
+  "Algebra foundations": "CCSS G6: Expressions & Equations (6.EE)",
+  Algebra: "CCSS G6: Expressions & Equations (6.EE)",
+
+  // 6.G
+  Geometry: "CCSS G6: Geometry (6.G)",
+  "Measurement and Areas": "CCSS G6: Geometry (6.G)",
+
+  // 6.SP
+  Data: "CCSS G6: Statistics & Probability (6.SP)",
 };
 
+const CCSS_MAJOR_ORDER = [
+  "CCSS G6: Ratios & Proportional Relationships (6.RP)",
+  "CCSS G6: The Number System (6.NS)",
+  "CCSS G6: Expressions & Equations (6.EE)",
+  "CCSS G6: Geometry (6.G)",
+  "CCSS G6: Statistics & Probability (6.SP)",
+];
+
 // Short sub-objective titles (derived from existing seed.ts patterns)
+function firstNonEmptyLine(s: string): string | null {
+  const lines = (s || "").split(/\r?\n/);
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (trimmed) return trimmed;
+  }
+  return null;
+}
+
+function collapseWhitespace(s: string): string {
+  return s.replace(/\s+/g, " ").trim();
+}
+
 function makeSubTitle(lo: LearningObjective): string {
   if (lo.dw_handout) {
     // Use the part after the colon if it follows "Topic: subtitle" pattern
     const colonIdx = lo.dw_handout.indexOf(":");
     if (colonIdx > 0) {
-      return lo.dw_handout.substring(colonIdx + 1).trim();
+      const afterColon = lo.dw_handout.substring(colonIdx + 1);
+      const first =
+        firstNonEmptyLine(afterColon) || firstNonEmptyLine(lo.dw_handout);
+      if (first) {
+        return collapseWhitespace(first.replace(/^Deep\s*Work\s*:\s*/i, ""));
+      }
+      return collapseWhitespace(afterColon);
     }
-    return lo.dw_handout;
+    const first = firstNonEmptyLine(lo.dw_handout);
+    if (first) {
+      return collapseWhitespace(first.replace(/^Deep\s*Work\s*:\s*/i, ""));
+    }
+    return collapseWhitespace(lo.dw_handout);
   }
   // For learning_objective, take the first sentence/line, truncate if needed
-  const first = lo.learning_objective.split("\n")[0];
+  const first = firstNonEmptyLine(lo.learning_objective) || "";
   // Remove SWBAT prefix
-  const cleaned = first.replace(/^SWBAT\s+/i, "").trim();
+  const cleaned = collapseWhitespace(first.replace(/^SWBAT\s+/i, ""));
+  if (!cleaned) return `Row ${lo.row}`;
   // Capitalize first letter
   return cleaned.charAt(0).toUpperCase() + cleaned.slice(1);
 }
@@ -110,28 +154,29 @@ function main() {
     (lo) => lo.curriculum === "MYP Y1"
   );
 
-  // Group by topic, preserving order
-  const topicOrder: string[] = [];
-  const topicLOs = new Map<string, LearningObjective[]>();
+  // Group by CCSS major (derived from topic), preserving original row order.
+  const majorLOs = new Map<string, LearningObjective[]>();
+  const majorEncounterOrder: string[] = [];
   for (const lo of myp1LOs) {
-    if (!topicLOs.has(lo.topic)) {
-      topicOrder.push(lo.topic);
-      topicLOs.set(lo.topic, []);
+    const majorTitle = TOPIC_TO_MAJOR[lo.topic];
+    if (!majorTitle) continue;
+    if (!majorLOs.has(majorTitle)) {
+      majorLOs.set(majorTitle, []);
+      majorEncounterOrder.push(majorTitle);
     }
-    topicLOs.get(lo.topic)!.push(lo);
+    majorLOs.get(majorTitle)!.push(lo);
   }
+
+  const majorOrder: string[] = [];
+  for (const m of CCSS_MAJOR_ORDER) if (majorLOs.has(m)) majorOrder.push(m);
+  for (const m of majorEncounterOrder)
+    if (!majorOrder.includes(m)) majorOrder.push(m);
 
   const lines: string[] = [];
   let totalActivities = 0;
 
-  for (const topic of topicOrder) {
-    const majorTitle = TOPIC_TO_MAJOR[topic];
-    if (!majorTitle) {
-      console.error(`WARNING: No major title mapping for topic "${topic}"`);
-      continue;
-    }
-
-    const los = topicLOs.get(topic)!;
+  for (const majorTitle of majorOrder) {
+    const los = majorLOs.get(majorTitle)!;
     lines.push(`    // ${majorTitle}`);
     lines.push(
       `    await insertMajorWithSubsAndActivities("${escapeString(majorTitle)}", [`
@@ -275,7 +320,9 @@ function main() {
   fs.writeFileSync(outputPath, output);
 
   console.log(`Generated seed block written to: ${outputPath}`);
-  console.log(`MYP Y1: ${topicOrder.length} topics, ${myp1LOs.length} sub-objectives`);
+  console.log(
+    `MYP Y1: ${majorOrder.length} majors (CCSS domains), ${myp1LOs.length} sub-objectives`
+  );
   console.log(`PYP Y2: ${pypTopicOrder.length} topics, ${pypLOs.length} sub-objectives`);
   console.log(`Total activities: ${totalActivities} (MYP: ${totalActivities - pypActivities}, PYP: ${pypActivities})`);
 }

@@ -1,0 +1,165 @@
+{
+  "shortcode": "vz1",
+  "name": "Solve linear simultaneous equations 3",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 69,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Recognise if two linear expressions are in an appropriate form to be added or subtracted",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Manipulate both equations so that they are in a form to be added or subtracted",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve linear simultaneous equations requiring no scaling of expressions",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve linear simultaneous equations requiring a scaling of one expression",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve linear simultaneous equations requiring a scaling of both expressions",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 131836,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2164b79b-d10e-456e-bfd1-1fdca07728d7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "In order for simultaneous equations to be in the appropriate form, to be added or subtracted, they need one unknown in both equations to have the same coefficient. Look at both Tom & Katie's equations, ignoring the signs, do the numbers in front of either the xs or the ys match? If so they are in the appropriate form...",
+        "B": "In order for simultaneous equations to be in the appropriate form, to be added or subtracted, they need one unknown in both equations to have the same coefficient. Look at both Tom & Katie's equations, ignoring the signs, do the numbers in front of either the xs or the ys match? If so they are in the appropriate form...",
+        "C": "Both equations are in the appropriate form. In Tom's both contain 4x, so can be subtracted to eliminate x. In Katie's there is +2y and -2y which can added to eliminate. So both Tom & Katie are correct.",
+        "D": "In order for simultaneous equations to be in the appropriate form, to be added or subtracted, they need one unknown in both equations to have the same coefficient. Look at both Tom & Katie's equations, ignoring the signs, do the numbers in front of either the xs or the ys match? If so they are in the appropriate form..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134029,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/60917f99-896a-4eea-9b60-7b92d3a54642.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "In order for simultaneous equations to be in the appropriate form, to be added or subtracted, they need one unknown in both equations to have the same coefficient. Look at both Tom & Katie's equations, ignoring the signs, do the numbers in front of either the xs or the ys match? If so they are in the appropriate form...",
+        "B": "In order for simultaneous equations to be in the appropriate form, to be added or subtracted, they need one unknown in both equations to have the same coefficient. Look at both Tom & Katie's equations, ignoring the signs, do the numbers in front of either the xs or the ys match? If so they are in the appropriate form...",
+        "C": "Both equations are in the appropriate form. In Katie's both contain 2x, so can be subtracted to eliminate x. In Tom's there is +3y and -3y which can added to eliminate. So both Tom & Katie are correct.",
+        "D": "In order for simultaneous equations to be in the appropriate form, to be added or subtracted, they need one unknown in both equations to have the same coefficient. Look at both Tom & Katie's equations, ignoring the signs, do the numbers in front of either the xs or the ys match? If so they are in the appropriate form..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131837,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e6d49f63-adc8-47f1-84de-2d0ed4d4ae72.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "In order to eliminate q, add the equations. That gives 4p = 24. Solving this equation tells us that p = 6.",
+        "B": "I think you've correctly eliminated q to get the equation 4p = 24 - well done! However, I think you've made a mistake when solving the equation; have another look.",
+        "C": "Not quite! You've gone a step too far, and found the value for q. However, this question asks for the value of p.",
+        "D": "I think you've subtracted the equations - but that doesn't eliminate q. What do we need to do to the equations in order to eliminate q?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134030,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3b423ef2-5183-4542-8a88-5d7ce32e2121.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Read the question carefully - you've correctly found the value of p, well done. But we need to keep going and find the value of q, so substitute your value of p into one of the equations.",
+        "B": "I think you've made a mistake when trying to find the value of p. Start by adding the equations to eliminate q, find the value of p, then substitute that into one of your equations to find q.",
+        "C": "We add the equations to initially eliminate q. That gives us 4p = 24, and solving this tells us p = 6. We then substitute this value of p into one of the equations, and solve to find q = 13",
+        "D": "Read the question carefully - remember, we are trying to find the value of q, not p."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131838,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/085a4c0c-9522-40df-8d11-cb3e249d2a4c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have found the value for q not p!",
+        "B": "To find the value of p we need to eliminate q. To do this we multiply the first equation by 2, giving 4p + 2q = 14. This means there are an equal number of qs in both equations, we add the equations to eliminate q, as one is -2q and the other +2q leaving us with 7p = 28. When we divide through by 7, we get p=4.",
+        "C": "To find the value of p, you need to eliminate q. Start by multiplying the equations so that the qs are equal in value. Then add or subtract them to get rid of the qs. You will now be left with an equation in terms of p that you can solve...",
+        "D": "I think you have added the equations without making the values in front of q equal first. Before we add/ subtract we must scale one of the equations up (by multiplying) so that the numbers in front of the q's are the same."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134031,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6b979a1-5f78-4786-8113-bf2a85836dad.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you have added the numbers but subtracted the p's. Make sure you either add or subtract the equations, we cannot do both. Will we have to add or subtract the equations to eliminate q?",
+        "B": "I think you have added the equations without making the values in front of q equal first. Before we add/ subtract we must scale one of the equations up (by multiplying) so that the numbers in front of the q's are the same.",
+        "C": "Not quite, be careful with the final division. How many 11's are in 77?",
+        "D": "To find the value of p we need to eliminate q. To do this we multiply the second equation by 2, giving 8p - 2q = 60. This means there are an equal number of qs in both equations. We add the equations to eliminate q, leaving us with 11p = 77. When we divide through by 11 we get p = 7."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131839,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fff06c2b-0c65-4b60-a257-a4a3f17de962.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. I think you have identified the first equation needs to be multiplied by 3 and the second equation by 2 to make the coefficients of 𝑙 the same, which is correct. But remember - the entire equation needs to be multiplied by the number you choose. Check your numbers after the equals carefully.",
+        "B": "Not quite. I think you have identified the first equation needs to be multiplied by 3 and the second equation by 2 to make the coefficients of 𝑙 the same, which is correct. But remember - the entire equation needs to be multiplied by the number you choose. Check your numbers after the equals carefully.",
+        "C": "Not quite. I think you have identified the first equation needs to be multiplied by 3 and the second equation by 2 to make the coefficients of 𝑙 the same, which is correct. But remember - the entire equation needs to be multiplied by the number you choose.",
+        "D": "The whole of the first equation needs to be multiplied by 3 and the whole of the second equation by 2 to make the coefficients of 𝑙 the same, creating 6𝑙 + 9𝑚 = 39 and 6𝑙 + 8𝑚 = 34."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134032,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ba3911af-ca95-4a78-ba4e-ed353b48f3fb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. I think you have identified the first equation needs to be multiplied by 4 and the second equation by 3 to make the coefficients of 𝑚 the same, which is correct. But remember - the entire equation needs to be multiplied by the number you choose.",
+        "B": "The whole of the first equation needs to be multiplied by 4 and the whole of the second equation by 3 to make the coefficients of 𝑚 the same, creating 8𝑙 + 12𝑚 = 52 and 9𝑙 + 12𝑚 = 51.",
+        "C": "Not quite. I think you have tried to make the coefficients of both unkowns the same. We only need the coefficients of 𝑚 to be the same. Remember - the entire equation needs to be multiplied by the number you choose. So what does each equation need to be multiplied by throughout to create 12𝑚?",
+        "D": "Not quite. I think you have identified the first equation needs to be multiplied by 4 and the second equation by 3 to make the coefficients of 𝑚 the same, which is correct. But remember - the entire equation needs to be multiplied by the number you choose. Check your numbers after the equals carefully."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131840,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d1cc847-e685-4fcf-bab8-2aaa87019ed7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. The first step in finding m is to make the 𝑙 coefficients the same in both equations, you can then subtract to eliminate 𝑙 and find m. What can you multiply the equations by to make the 𝑙 coefficients the same?",
+        "B": "Not quite. You have subtracted without scaling. This means you will have both 𝑙 and m left in the equation after you subtract. Remember, before you subtract you must make sure that one of the variables have the same coefficient in both equations.",
+        "C": "Not quite. This is the value of 𝑙, we are being asked to find m. Substitute this value of 𝑙 into one of the equations, then solve to find m.",
+        "D": "To find the value of m we need to eliminate 𝑙. We can do this by making the 𝑙 coefficients on both equations the same. Multiplying equation 1 by three and equation 2 by 2 gives the equations 6𝑙 + 9m = 39 and 6𝑙 + 8m = 34. Subtracting the two equations eliminates 𝑙 and gives m = 5."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134033,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f926315d-4e1e-4497-a679-3b36068b90d7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find the value of 𝑙 we need to eliminate m. We can do this by making the m coefficients on both equations the same. Multiplying equation 1 by 4 and equation 2 by 3 gives the equations 8𝑙 + 12m = 52 and 9𝑙 + 12m = 51. Subtracting the two equations eliminates m and gives 𝑙 = -1.",
+        "B": "Not quite. This is the value of m, we are being asked to find 𝑙. Substitute this value of m into one of the equations, then solve to find 𝑙.",
+        "C": "Not quite. I think you have made a sign error here. Multiplying equation 1 by 4 and equation 2 by 3 gives the equations 8𝑙 + 12m = 52 and 9𝑙 + 12m = 51. Subtracting the first equation from the second equation will give us 1𝑙 = 51 - 52. So what is 𝑙?",
+        "D": "Not quite. You have subtracted without scaling. This means you will have both 𝑙 and m left in the equation after you subtract. Remember, before you subtract you must make sure that one of the variables have the same coefficient in both equations."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

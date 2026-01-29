@@ -1,0 +1,141 @@
+{
+  "shortcode": "bikc",
+  "name": "Volume of composite prisms",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 96,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate the volume of composite shapes made from cuboids",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158472,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bd01d236-a0ae-4d58-acf3-4a37bbcf940c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This calculation is adding all the dimensions, but for volume of a rectangular prism we multiply. Which option shows length x width x height for each one, then adding them to find the total volume of the shape?",
+        "B": "Almost! We do multiply dimensions to find the volume of a rectangular prism, but then we need to add the two prism volumes to get the total volume of the compound shape.",
+        "C": "This calculation is adding the dimensions of each rectangular prism, but for volume of a rectangular prism we multiply. Which option shows length x width x height for each one, then adding them to find the total volume of the shape?",
+        "D": "Volume of a rectangular prism = length x width x height, so we multiply the dimensions of each rectangular prism, then add together those two volumes to find the total volume of the compound shape."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158691,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/058b163e-199c-4e7e-a241-9413a8e9f08d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This calculation is adding the dimensions of each rectangular prism, but for volume of a rectangular prism we multiply. Which option shows length x width x height for each prism, then adding them to find the total volume of the shape?",
+        "B": "Volume of a rectangular prism = length x width x height, so we multiply the dimensions of each one, then add together those two volumes to find the total volume of the compound shape.",
+        "C": "This calculation is adding all the dimensions, but for volume of a rectangular prism we multiply. Which option shows length x width x height for each one, then adding them to find the total volume of the shape?",
+        "D": "Almost! We do multiply dimensions to find the volume of a rectangular prism, but then we need to add the two prism volumes to get the total volume of the compound shape."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158473,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fd362c8e-d8e9-4903-a119-16125c06612a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Volume of a rectangular prism = length x width x height, so we multiply the dimensions of each prism, then add together those two volumes to find the total volume of the compound shape.",
+        "B": "Almost! We do multiply dimensions to find the volume of a rectangular prism, but then we need to add the two prism volumes to get the total volume of the compound shape.",
+        "C": "This calculation is adding the dimensions of each rectangular prism, but for volume of a rectangular prism we multiply. Which option shows length x width x height for each prism, then adding them to find the total volume of the shape?",
+        "D": "This calculation is adding all the dimensions, but for volume of a rectangular prism we multiply. Which option shows length x width x height for each prism, then adding them to find the total volume of the shape?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158692,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/62cbeee6-c884-441c-b582-550fd6196e58.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost! We do multiply dimensions to find the volume of a rectangular prism, but then we need to add the two prism volumes to get the total volume of the compound shape.",
+        "B": "This calculation is adding the dimensions of each rectangular prism, but for volume of a rectangular prism we multiply. Which option shows length x width x height for each prism, then adding them to find the total volume of the shape?",
+        "C": "This calculation is adding all the dimensions, but for volume of a cuboid we multiply. Which option shows length x width x height for each cuboid, then adding them to find the total volume of the shape?",
+        "D": "Volume of a rectangular prism = length x width x height, so we multiply the dimensions of each rectangular prism, then add together those two volumes to find the total volume of the compound shape."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158474,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/88d7ce79-dd9c-4c66-8616-87a153645b4e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The volume of the top rectangular prism is 4 x 2 x 1 = 8. The volume of the bottom rectangular prism is 2 x 6 x 2 = 24. Altogether the volume of the shape is 8 + 24 = 32 cubic centimeters.",
+        "B": "It looks like you have added all the dimensions, but for volume of a rectangular prism we multiply. Calculate length x width x height for each prism, then add them together to find the total volume of the shape.",
+        "C": "Almost! We do multiply dimensions to find the volume of a rectangular prism, but then you have multiplied the volumes of the two rectangular prisms together. We need to add the two prism volumes to get the total volume of the compound shape.",
+        "D": "I think you have confused the operations needed here. Calculate length x width x height for each rectangular prism, then add them together to find the total volume of the shape."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158693,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/75bec969-ca7a-435b-96bd-23a91dfe3e3e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have confused the operations needed here. Calculate length x width x height for each rectangular prism, then add them together to find the total volume of the shape.",
+        "B": "The volume of the top rectangular prism is 5 x 3 x 1 = 15. The volume of the bottom rectangular prism is 3 x 8 x 10 = 240. Altogether the volume of the shape is 15 + 240 = 255 cubic centimeters.",
+        "C": "It looks like you have added all the dimensions, but for volume of a rectangular prism we multiply. Calculate length x width x height for each rectangular prism, then add them together to find the total volume of the shape.",
+        "D": "Almost! We do multiply dimensions to find the volume of a rectangular prism, but then you have multiplied the volumes of the two rectangular prism together. We need to add the two prism volumes to get the total volume of the compound shape."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158475,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/15d3aa92-775b-4e81-950f-563e8790ce03.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have added all the dimensions, but for volume of a rectangular prism we multiply. Calculate length x width x height for each rectangular prism, then add them together to find the total volume of the shape.",
+        "B": "The volume of the back rectangular prism is 2 x 2 x 4 = 16. The volume of the front rectangular prism is 2 x 2 x 2 = 8. So the total volume of the shape is 16 + 8 = 24 cubic centimeters.",
+        "C": "Almost! We do multiply dimensions to find the volume of a rectangular prism, but then you have multiplied the volumes of the two rectangular prism together. We need to add the two prism volumes to get the total volume of the compound shape.",
+        "D": "You have added the dimensions of each rectangular prism, but for volume we multiply. Calculate length x width x height for each rectangular prism, then add them together to find the total volume of the shape."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158694,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a364e4b7-5bc6-4c2e-a92c-15b4f01e9730.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The volume of the back rectangular prism is 2 x 4 x 8 = 64. The volume of the front rectangular prism is 2 x 4 x 3 = 24. So the total volume of the shape is 64 + 24 = 88 cubic centimeters.",
+        "B": "It looks like you have added all the dimensions, but for volume of a rectangular prism we multiply. Calculate length x width x height for each prism, then add them together to find the total volume of the shape.",
+        "C": "You have added the dimensions of each rectangular prism, but for volume we multiply. Calculate length x width x height for each rectangular prism, then add them together to find the total volume of the shape.",
+        "D": "Almost! We do multiply dimensions to find the volume of a rectangular prism, but then you have multiplied the volumes of the two rectangular prisms together. We need to add the two prism volumes to get the total volume of the compound shape."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158476,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4173e633-7d81-4391-bc15-7e82d5c4fbfc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite - if we split this shape to form two rectangular prisms so we can calculate the volume, would they both have length 5cm?",
+        "B": "Not quite - if we split this shape to form two rectangular prisms so we can calculate the volume, would both lengths be reduced to 4cm?",
+        "C": "We can't just multiply all the dimensions of this shape to find the volume, we need to split it into two rectangular prisms first. One would be 5cm x 1cm x 3cm, but the other would be 4cm x 1cm x 3cm. Can you find the volume of those two rectangular prisms and then add them to find the total volume of the shape?",
+        "D": "If we cut this shape into two rectangular prisms, the volume of one will be 5 x 1 x 3, and the other will be 4 x 1 x 3. We then add these two rectangular prisms to get the total volume of the compound shape."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158695,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/34f2c431-49be-4e44-b8ef-1455550301a5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite - if we split this shape to form two rectangular prisms so we can calculate the volume, are you sure you'd use length 5cm for the second rectangular prism?",
+        "B": "If we cut this shape into two rectangular prisms, the volume of one will be 7 x 2 x 4, and the other will be 3 x 1 x 4. We then add these two prisms to get the total volume of the compound shape.",
+        "C": "We can't just multiply all the dimensions of this shape to find the volume, we need to split it into two rectangular prisms first. One would be 7cm x 2cm x 4cm, but the other would be 3cm x 1cm x 4cm. Can you find the volume of those two rectangular prisms and then add them to find the total volume of the shape?",
+        "D": "Not quite - if we split this shape to form two rectangular prisms so we can calculate the volume, would both lengths be reduced to 5cm and 3cm?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

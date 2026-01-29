@@ -1,0 +1,141 @@
+{
+  "shortcode": "bigs",
+  "name": "Convert between decimals and fractions with denominators of 10 and 100",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 52,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Convert between decimals and fractions with denominators of 10 and 100",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158010,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3037e80e-7ccc-4c5a-bd95-8c29a28249f2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have swapped round your numerator and denominator, the denominator is the bottom value...",
+        "B": "You have correctly placed the 10 as the denominator but the numerator would not be 0.3. Think about your place value columns, how many tenths are there in 0.3?",
+        "C": "The denominator is the bottom value in a fraction and 0.3 means we have 3 tenths so we write 3/10",
+        "D": "The denominator is the value at the bottom of the fraction... Then you need to think about how many tenths there are in 0.3 (there is less than 30!)..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158177,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2fe063ed-120d-49b1-abb5-32a8da1ddb5a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The denominator is the bottom value in a fraction and 0.6 means we have 6 tenths so we write 6/10",
+        "B": "The denominator is the value at the bottom of the fraction... Then you need to think about how many tenths there are in 0.6 (there is less than 60!)...",
+        "C": "You have correctly placed the 10 as the denominator but the numerator would not be 0.6. Think about your place value columns, how many tenths are there in 0.6?",
+        "D": "You have swapped round your numerator and denominator, the denominator is the bottom value..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158011,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b1cee864-6076-4330-9e44-689ab71718ab.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "80/10 = 8 not 0.8. What divided by 10 gives 0.8?",
+        "B": "The denominator is the bottom value in a fraction and 0.8 means we have 8 tenths so we write 8/10",
+        "C": "You have correctly placed the 10 as the denominator but the numerator would not be 0.8. Think about your place value columns, how many tenths are there in 0.8?",
+        "D": "This is equivalent to 0.8 but the question asks for a fraction with a denominator of 10 not 5..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158178,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/59971255-377d-48c7-a3b7-3d5c56679bda.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is equivalent to 0.2 but the question asks for a fraction with a denominator of 10 not 5...",
+        "B": "You have correctly placed the 10 as the denominator but the numerator would not be 0.2. Think about your place value columns, how many tenths are there in 0.2?",
+        "C": "The denominator is the bottom value in a fraction and 0.2 means we have 2 tenths so we write 2/10",
+        "D": "20/10 = 2 not 0.2. What divided by 10 gives 0.2?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158012,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9f370aef-5c35-4499-acd2-2411f58f6348.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have correctly placed the 100 as the denominator but the numerator would not be 0.78. Think about your place value columns, how many hundredths are there in 0.78?",
+        "B": "This is equivalent to 0.78 but the question asks for a fraction with a denominator of 100 not 50...",
+        "C": "You have swapped round your numerator and denominator, the denominator is the bottom value...",
+        "D": "The denominator is the bottom value in a fraction and 0.78 means we have 7 tenths and 8 hundredths which is equivalent to 78 hundredths so we write 0.78 as 78/100"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158179,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/38a469ad-07d7-43af-aafb-9fd89c695a14.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have swapped round your numerator and denominator, the denominator is the bottom value...",
+        "B": "The denominator is the bottom value in a fraction and 0.64 means we have 6 tenths and 4 hundredths which is equivalent to 64 hundredths so we write 0.64 as 64/100",
+        "C": "You have correctly placed the 100 as the denominator but the numerator would not be 0.64. Think about your place value columns, how many hundredths are there in 0.64?",
+        "D": "This is equivalent to 0.64 but the question asks for a fraction with a denominator of 100 not 50..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158013,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9053327d-5df1-4804-8625-69d5f8e3a0f0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is equivalent to 0.25 but the question asks for a fraction with a denominator of 100 not 4...",
+        "B": "You have swapped round your numerator and denominator, the denominator is the bottom value...",
+        "C": "The denominator is the bottom value in a fraction and 0.25 means we have 2 tenths and 5 hundredths which is equivalent to 25 hundredths so we write 0.25 as 25/100",
+        "D": "You have correctly placed the 100 as the denominator but the numerator would not be 0.25. Think about your place value columns, how many hundredths are there in 0.25?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158180,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bbf2abb3-ee33-40d5-91e8-85792df4729d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have swapped round your numerator and denominator, the denominator is the bottom value...",
+        "B": "You have correctly placed the 100 as the denominator but the numerator would not be 0.75. Think about your place value columns, how many hundredths are there in 0.75?",
+        "C": "This is equivalent to 0.75 but the question asks for a fraction with a denominator of 100 not 4...",
+        "D": "The denominator is the bottom value in a fraction and 0.75 means we have 7 tenths and 5 hundredths which is equivalent to 75 hundredths so we write 0.75 as 75/100"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158014,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9d11edb9-74d7-4338-a189-6b74c26d7009.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find the equivalent decimal you need to do 45 ÷ 100...",
+        "B": "45/100 means 45 ÷ 100 which is 0.45",
+        "C": "You have done 45 ÷ 10, you need to do 45 ÷ 100...",
+        "D": "You have done 45 ÷ 1000, you need to do 45 ÷ 100..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158181,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e571d462-8e60-405f-b2d2-c8bf98298e8d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "57/100 means 57 ÷ 100 which is 0.57",
+        "B": "You have done 57 ÷ 1000, you need to do 57 ÷ 100...",
+        "C": "To find the equivalent decimal you need to do 57 ÷ 100...",
+        "D": "You have done 57 ÷ 10, you need to do 57 ÷ 100..."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

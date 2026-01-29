@@ -1,0 +1,159 @@
+{
+  "shortcode": "biiy",
+  "name": "Add and subtract fractions 1",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 42,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Add proper fractions with the same denominator",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Add proper fractions with different denominators where one is a multiple of the other",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Subtract proper fractions with the same denominator",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Subtract proper fractions with different denominators where one is a multiple of the other",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 130202,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fb71b7ab-128b-4991-9535-db6d83ffe5e2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "When the denominators are the same we can just add the numerators. 2/5 + 1/5 = 3/5",
+        "B": "When we add fractions like this we only add the numerators. We don't add the denominators.",
+        "C": "I think you might have subtracted the fractions rather than adding them.",
+        "D": "I think you might have multiplied the fractions rather than adding them."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130222,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3b58b41b-bf33-4e25-ab5e-e4445dba6fe9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might have multiplied the numerators rather than adding them.",
+        "B": "When the denominators are the same we can just add the numerators. 3/8 + 2/8 = 5/8",
+        "C": "When we add fractions like this we only add the numerators. We don't add the denominators.",
+        "D": "I think you might have subtracted the fractions rather than adding them."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130203,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cfc3c8d2-eea5-4de5-93e0-2da16027bdeb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To add, these fractions need the same denominator. 1/3 = 3/9 and then 2/9 + 3/9 = 5/9.",
+        "B": "I think you have added the numerators and denominators together. Convert 1/3 to have a denominator of 9, and then add only the numerators.",
+        "C": "We can't add these fractions until their denominators are the same. Convert 1/3 to have a denominator of 9.",
+        "D": "I think you have subtracted the numerators and denominators. Convert 1/3 to have a denominator of 9, and then add the numerators."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130223,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1eb62178-15e7-4bf7-9f8a-9891478df082.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added the numerators and denominators together. Convert 3/5 to have a denominator of 15, and then only add the numerators.",
+        "B": "We can't add these fractions until their denominators are the same. Convert 3/5 to have a denominator of 15.",
+        "C": "To add, these fractions need the same denominator. 3/5 = 9/15 and then 9/15 + 2/15 = 11/15.",
+        "D": "Not quite. Convert 3/5 to have a denominator of 15, and then add the numerators."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130204,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/da9fd6f2-43a1-414b-932e-d3e0342ca0e0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might have added the second fraction instead of subtracting it.",
+        "B": "When the denominators are the same we can just subtract the numerators. 3/8 − 2/8 = 1/8.",
+        "C": "I think you have added the numerators and denominators. When fractions have the same denominator we add or subtract only their numerators.",
+        "D": "I think you have subtracted the numerators and denominators. When fractions have the same denominator we add or subtract only their numerators."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130224,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1cec1ef0-7a69-4e5c-befc-1047b045cefb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "When the denominators are the same we can just subtract the numerators. 6/7 − 2/7 = 4/7.",
+        "B": "Not quite, check you working carefully. What is 6 − 2?",
+        "C": "You have subtracted the numerators but added the denominators. When fractions have the same denominator we add or subtract only their numerators.",
+        "D": "I think you have subtracted the numerators and denominators. When fractions have the same denominator we add or subtract only their numerators."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130205,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/27fa685a-4cd4-4ec9-b7e0-969b3d283338.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have subtracted the numerators and denominators. First convert 1/3 to have a denominator of 9, and then subtract only the numerators.",
+        "B": "We can't subtract these fractions until their denominators are the same. First convert 1/3 to have a denominator of 9.",
+        "C": "You have added the second fraction instead of subtracting it.",
+        "D": "To subtract, these fractions need the same denominator. 1/3 = 3/9 and then 5/9 − 3/9 = 2/9."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130225,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2b07007d-dc2f-4ee5-b7ed-f72fdf983140.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This calculation is possible. First convert 3/5 to have a denominator of 15, and then subtract only the numerators.",
+        "B": "We can't subtract these fractions until their denominators are the same. First convert 3/5 to have a denominator of 15.",
+        "C": "To subtract, these fractions need the same denominator. 3/5 = 9/15 and then 9/15 − 3/15 = 6/15.",
+        "D": "I think you have added the numerators and denominators. First convert 3/5 to have a denominator of 15, and then subtract only the numerators."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130206,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bde32b44-be81-4fa4-a687-06ef02fc9003.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have subtracted the numerators and denominators.First simplify 6/9 to have a denominator of 3.",
+        "B": "We can't subtract these fractions until their denominators are the same. First simplify 6/9 to have a denominator of 3.",
+        "C": "To subtract, these fractions need the same denominator. 6/9 simplifies to 2/3 and then 2/3 − 2/3 = 0.",
+        "D": "Not quite. To subtract, these fractions need the same denominator. First simplify 6/9 to have a denominator of 3."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130226,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/963eac40-815d-42a7-a66b-9853a581fce9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This calculation is possible. First convert 1/2 to have a denominator of 12, and then subtract only the numerators.",
+        "B": "To subtract, these fractions need the same denominator. 1/2 = 6/12 and then 6/12 − 1/12 = 5/12.",
+        "C": "I think you have subtracted the denominators and left the numerator as 1. To subtract these fractions, first convert 1/2 to have a denominator of 12, and then subtract only the numerators.",
+        "D": "You have added the second fraction instead of subtracting it."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

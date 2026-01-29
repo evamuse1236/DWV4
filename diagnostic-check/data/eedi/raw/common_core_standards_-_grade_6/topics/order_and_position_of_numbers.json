@@ -1,0 +1,165 @@
+{
+  "shortcode": "ehiw",
+  "name": "Order and position of numbers",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 99,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Represent a linear inequality with a single tail on a number line",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given the representation of a linear inequality with a single tail on a number line, express it using inequality notation",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Understand inequality notation",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Form inequalities from situations described in words",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Determine whether a number satisfies an inequality given in words",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166762,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/64bf45b3-a254-4be5-88d3-ff723cdcac2e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "> is a great than symbol. If 𝓅 is greater than 𝓆, then 𝓆 must be lower down on the number line.",
+        "B": "Not necessarily! I think you might be assuming that 𝓅 is 0, but it could be any number.",
+        "C": "I think you've got your inequality symbols mixed up! > means greater than.",
+        "D": "If they were level, that would mean they were equal, but that would be a ≥ symbol rather than a > symbol. > means greater than and NOT equal to!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167012,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/baf75493-ac56-4f63-8354-ff29c196df6b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might have your inequality symbol mixed up. < means less than. If 𝓅 is less than 𝓆, what does that mean about where 𝓆 would be on this number line?",
+        "B": "Not necessarily! I think you might be assuming that 𝓅 is 0, but it could be any number.",
+        "C": "If they were level, that would mean they were equal, but that would be a ≤ symbol rather than a < symbol. < means less than and NOT equal to!",
+        "D": "< is a less than symbol. If 𝓅 is less than 𝓆, then 𝓆 must be higher up on the number line."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166763,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9fc2e6ca-97a7-4fe2-b9dc-8ee10253276a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite - the > symbol means greater than only. If 𝓆 can be level with 𝓅, that means they can be equal too. What symbol would show this?",
+        "B": "I think you've got your symbols mixed up! If 𝓆 is above 𝓅, then it can't be < (less than). We want a symbol that shows 𝓆 is greater or equal to 𝓅.",
+        "C": "The ≥ symbol means greater than or equal to, which would mean that 𝓆 is either level with or greater than 𝓅.",
+        "D": "I think you've got your symbols mixed up! If 𝓆 is above 𝓅, then it can't be < (less than). We want a symbol that shows 𝓆 is greater or equal to 𝓅."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167013,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c8403c75-834c-4aa3-8eb2-62427fde371a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've got your symbols mixed up! If 𝓆 is below 𝓅, then it can't be > (greater than). We want a symbol that shows 𝓆 is less than or equal to 𝓅.",
+        "B": "Not quite - the < symbol means less than only. If 𝓆 can be level with 𝓅, that means they can be equal too. What symbol would show this?",
+        "C": "I think you've got your symbols mixed up! If 𝓆 is below 𝓅, then it can't be > (greater than). We want a symbol that shows 𝓆 is less than or equal to 𝓅.",
+        "D": "The ≤ symbol means less than or equal to, which would mean that 𝓆 is either level with or less than 𝓅."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166764,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/106ce580-66f6-49d5-92ca-0ee868411003.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, the < symbol means less than only but the question says 'no more than', which suggests it can be equal to -18 too. Which symbol would show less than or equal to?",
+        "B": "I think you've got your symbols mixed up as > means greater than! We want a symbol that shows the temperature is less than or equal to -18.",
+        "C": "The ≤ symbol means less than or equal to. If the temperature must be no more than -18, that means it could be -18 or less, so 𝑡 ≤ -18.",
+        "D": "I think you've got your symbols mixed up as > means greater than but we are told the temperature must be less than or equal to -18."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167014,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a7705e19-f058-40a9-b9e9-66fca6f24a60.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've got your symbols mixed up as > means greater than but we are told the maximum temperature is 40 so it can't be any higher than that!",
+        "B": "The ≤ symbol means less than or equal to. If the temperature must be a maximum of 40, that means it could be 40 or less, so 𝑡 ≤ 40.",
+        "C": "Not quite, the < symbol means less than only but the question says 'maximum', which suggests it can be equal to 40 too. Which symbol would show less than or equal to?",
+        "D": "I think you've got your symbols mixed up as > means greater than! We want a symbol that shows the temperature is less than or equal to 40."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166765,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5b87b708-3c10-4032-ab0e-18663b3a7545.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If sea level is 0, this inequality cannot show that the location is at sea level because that would need to be an equal (=) symbol. Have a think about what the < symbol means.",
+        "B": "I think you've got your symbols mixed up! < does not mean greater than.",
+        "C": "Sea level is 0 and the inequality given says less than (<) 0, so the location must be below sea level.",
+        "D": "You're close, but for it to be at sea level the inequality would need to show that the location is equal to 0 too which is the ≤ symbol. What does it mean when it is just <?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167015,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7f1e75c7-772e-4aaf-9348-bba5757623e1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've got your symbols mixed up! > does not mean less than.",
+        "B": "Sea level is 0 and the inequality given says greater than (>) 0, so the location must be above sea level.",
+        "C": "You're close, but for it to be at sea level the inequality would need to show that the location is equal to 0 too which is the ≥ symbol. What does it mean when it is just >?",
+        "D": "If sea level is 0, this inequality cannot show that the location is at sea level because that would need to be an equal (=) symbol. Have a think about what the > symbol means."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166766,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3500f105-0841-426a-a262-38b9e652db84.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Although Ali is below 1.9m, they are not taller than 1.6m so they wouldn't be accepted! We need someone between those two numbers.",
+        "B": "The phrase 'at least' implies that they can be exactly 1.6m or taller. Ben is exactly 1.6m, which is also below 1.9m so meets both of the criteria to be accepted!",
+        "C": "Although Chloe is taller than 1.6m, they are not less than 1.9m so they wouldn't be accepted! We need someone between those two numbers.",
+        "D": "Although Dave is taller than 1.6m, they are not less than 1.9m so they wouldn't be accepted! We need someone between those two numbers."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167016,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6f7676ff-9e88-44bf-8464-eff6f412152f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Although Andy is taller than 1.2m, they are not less than 1.5m so they wouldn't be accepted! We need someone between those two numbers.",
+        "B": "Although Belle is less than 1.5m, they are not taller than 1.2m so they wouldn't be accepted! We need someone between those two numbers.",
+        "C": "The phrase 'at least' suggests that they can also be exactly 1.2m, which Claire is! She is also less than 1.5m, therefore she would be allowed on the ride.",
+        "D": "Not quite, it says that they have to be less than 1.5 so doesn't include 1.5, which means Daryl is too tall!"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

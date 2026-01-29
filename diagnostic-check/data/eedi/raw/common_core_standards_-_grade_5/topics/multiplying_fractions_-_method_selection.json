@@ -1,0 +1,165 @@
+{
+  "shortcode": "bijm",
+  "name": "Multiplying fractions - method selection",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 67,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Multiply proper fractions in the form: Fraction × Integer",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiply proper fractions in the form: Fraction × Fraction",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiply mixed number fractions in the form: Fraction × Integer",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiply mixed number fraction in the form: Fraction × Fraction",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Match calculations involving multiplying fractions to real life situations",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 89453,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b31740f8-7632-4d23-bd00-93e41a960f39.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have ignored the fraction and instead worked out 3 x -6. Try writing the -6 as a fraction and have another go.",
+        "B": "It looks like you have tried to multiply both the numerator and the denominator by -6. It may help to write the number -6 as a fraction. We can write -6 as -6/1.",
+        "C": "⅓ ✕ (−6) can be thought of as ⅓ ✕ (−6/1). Multiplying out the numerators gives 1 ✕ (−6) = −6, and the denominators gives 3 ✕ 1 = 3. Putting these together gives −6/3 or −6 ÷ 3 = −2. You could also think of this as 1/3 \"of\" -6. So -6 divided by 3 gives us -2.",
+        "D": "It looks like you have treated the -6 as the denominator. If we were to write -6 as a fraction it would become -6/1"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89470,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7edaacb9-5e8d-4e89-a375-6c21b5c16dec.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "¼ ✕ (−16) can be thought of as ¼ ✕ (−16/1). Multiplying out the numerators gives 1 ✕ (−16) = −16, and the denominators gives 4 ✕ 1 = 4. Putting these together gives −16/4 or −16 ÷ 4 = −4. You can also think of this as 1/4 of -16. T find 1/4 we divide by 4. -16 divided by 4 is -4",
+        "B": "It looks like you have treated the -16 as the denominator. If we were to write -16 as a fraction it would become -16/1",
+        "C": "It looks like you have ignored the fraction and instead worked out 4 x -16. Try writing the -16 as a fraction and have another go.",
+        "D": "It looks like you have tried to multiply both the numerator and the denominator by -16. It may help to write the number -16 as a fraction. We can write -16 as -16/1."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101045,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4b57e3e0-6a86-4384-ba48-b83cc9503932.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we cut a pizza into 8 slices then each slice is 1/8 of the pizza. If Beth eats 7 of the slices there is only 1 slice left. Does this calculation give 1/8?",
+        "B": "Is it possible to cut a pizza into 7 slices and then eat 8 slices?",
+        "C": "Is it possible to cut a pizza into 7 slices and then eat 8 slices?",
+        "D": "If we cut a pizza into 8 slices then each slice is 1/8 of the pizza. If Beth eats 7 of the slices then she has had 7 lots of 1/8 which is 7 ✕ 1/8"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101064,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e690375e-e053-45e5-8694-f347bc66cd41.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we cut a cake into 6 slices then each slice is 1/6 of the cake. If Ivan eats 5 of the slices then he has had 5 lots of 1/6 which is 5 ✕ 1/6",
+        "B": "Is it possible to cut a cake into 5 slices and then eat 6 slices?",
+        "C": "Is it possible to cut a cake into 5 slices and then eat 6 slices?",
+        "D": "If we cut a cake into 6 slices then each slice is 1/6 of the cake. If Ivan eats 5 of the slices there is only 1 slice left. Does this calculation give 1/6?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101084,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e9dd8480-7370-4391-935a-f19f882adaeb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "area of a rectangle = width ✕ height = 1/2 ✕ 3/4 = (1 ✕ 3)/(2 ✕ 4) = 3/8 square metres.",
+        "B": "It looks like you have done the wrong calculation. What is the width of P? What is the height of P?",
+        "C": "It looks like you have done the wrong calculation. What is the width of P? What is the height of P?",
+        "D": "It looks like you have added rather than multiplied two of the fractions."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 122890,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1bc004d5-c53c-4186-9932-502f2f562f93.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have done the wrong calculation. What is the width of Q? What is the height of Q?",
+        "B": "It looks like you have done the wrong calculation. What is the width of Q? What is the height of Q?",
+        "C": "It looks like you have added rather than multiplied two of the fractions.",
+        "D": "area of a rectangle = width ✕ height= 1/2 ✕ 2/3 = (1 ✕ 2)/(2 ✕ 3) = 2/6 = 1/3 square metres."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131441,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/20d15e80-0cc7-4e53-9f01-e8dbfa26f097.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "For this calculation we have to multiply both the 1 and 2/3 by 2. 1 x 2 = 2 and 2/3 x 2 = 4/3 = 1 1/3. If we add together our two results: 2 + 1 1/3 = 3 1/3 which is option A.",
+        "B": "I think you have accidentally forgotten to multiply the 2/3 by 2 as well.",
+        "C": "I think you have forgotten to multiply the integer by 2 as well. When you have done this add this answer to the 4/3 but first convert 4/3 into a mixed number, to make the addition easier to do.",
+        "D": "I think you have accidentally multiplied the denominator of the fraction by 2, as well as the numerator. 4/6 = 2/3 not 2 x 2/3. 2 written as a fraction is 2/1 if we multiply this by 2/3, what would we get?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133674,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b4002d85-5fad-44c4-b490-b6c6a9126d74.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have accidentally multiplied the denominator of the fraction by 2, as well as the numerator. 6/10 = 3/5 not 2 x 3/5. 2 written as a fraction is 2/1 if we multiply this by 3/5, what would we get?",
+        "B": "I think you have accidentally forgotten to multiply the 3/5 by 2 as well.",
+        "C": "I think you have forgotten to multiply the integer by 2 as well. When you have done this add this answer to the 6/5 but first convert 6/5 into a mixed number, to make the addition easier to do.",
+        "D": "For this calculation we have to multiply both the 1 and 3/5 by 2. 1 x 2 = 2 and 3/5 x 2 = 6/5 = 1 1/5. If we add together our two results: 2 + 1 1/5 = 3 1/5 which is option D."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131442,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/26256309-120c-4957-ac81-27f72df464e4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have just multiplied the 1 and 2 together however we need to multiply the 1 by 3/4, the 2/3 by 2 and the 2/3 by 3/4 as well, then add all these together to get the final answer.",
+        "B": "I think you have accidentally added the whole numbers together to get 3. The sum is a multiplication sum and we need to make sure we multiply everything in the first mixed number by everything in the second. This means multiplying 1 by 2 and 3/4 & 2/3 by 2 and 3/4 as well. Once you have all these, add them together to get the final answer.",
+        "C": "Turning these into improper fractions we have 5/3 x 11/4 = 55/12. Writing this as a mixed number again we have 4 7/12",
+        "D": "I think you have multiplied the fractions brilliantly but have made an error in the simplifying step of the calculation. Make sure you have correctly counted the number of 12s in your numerator. If you guessed: turn all the mixed numbers into improper fractions, multiply the numerators and the denominators of these, then convert the answer back into a mixed number."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133675,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/697c4cb1-8942-4c1a-90fa-6afcb7f2f068.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have just multiplied the 1 and 3 together however we need to multiply the 1 by 2/3, the 1/2 by 3 and the 1/2 by 2/3 as well, then add all these together to get the final answer.",
+        "B": "I think you have multiplied the fractions brilliantly but have made an error in the simplifying step of the calculation. Make sure you have correctly counted the number of 6s in your numerator. If you guessed: turn all the mixed numbers into improper fractions, multiply the numerators and the denominators of these, then convert the answer back into a mixed number.",
+        "C": "I think you have accidentally added the whole numbers together to get 4. The sum is a multiplication sum and we need to make sure we multiply everything in the first mixed number by everything in the second. This means multiplying 1 by 3 and 2/3 & the 1/2 by 3 and 2/3 as well. Once you have all these, add them together to get the final answer.",
+        "D": "Writing these as improper fractions we have 3/2 x 11/3 = 33/6. Writing this as a mixed number we have 5 3/6"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

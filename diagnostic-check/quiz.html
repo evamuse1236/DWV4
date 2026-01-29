@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnostic Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+:root {
+    --bg: #111113;
+    --card: #1C1C1F;
+    --text: #E8E6E3;
+    --text-soft: #A09B95;
+    --text-muted: #6B6660;
+    --border: #2A2A2E;
+    --primary: #818CF8;
+    --primary-hover: #6366F1;
+    --primary-light: #1E1B4B;
+    --correct: #2DD4BF;
+    --correct-bg: #042F2E;
+    --correct-border: #115E59;
+    --wrong: #FB923C;
+    --wrong-bg: #431407;
+    --wrong-border: #7C2D12;
+    --nudge-text: #FDBA74;
+    --radius: 16px;
+    --radius-sm: 10px;
+    --shadow: 0 1px 3px rgba(0,0,0,0.3), 0 4px 12px rgba(0,0,0,0.2);
+    --shadow-lift: 0 2px 8px rgba(0,0,0,0.4), 0 8px 24px rgba(0,0,0,0.3);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 1.5rem;
+}
+
+.container { max-width: 640px; margin: 0 auto; }
+
+.back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0.4rem 0;
+    margin-bottom: 1.25rem;
+    transition: color 0.2s;
+}
+.back:hover { color: var(--text); }
+.back svg { width: 16px; height: 16px; }
+
+.quiz-header { margin-bottom: 1.5rem; }
+.quiz-header h1 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+.quiz-header .topic-tag {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    background: var(--border);
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+}
+
+.steps { display: flex; align-items: center; gap: 6px; }
+.step {
+    flex: 1;
+    height: 6px;
+    border-radius: 3px;
+    background: var(--border);
+    transition: background 0.4s ease, transform 0.3s ease;
+}
+.step.current { background: var(--primary); transform: scaleY(1.4); }
+.step.done-correct { background: var(--correct); }
+.step.done-wrong { background: var(--wrong); }
+
+.question-card {
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 1.75rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 1.5rem;
+}
+.question-card.enter {
+    animation: slideUp 0.35s ease-out;
+}
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.q-number {
+    font-size: 0.78rem;
+    font-weight: 800;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.5rem;
+}
+.stem {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* Question image */
+.visual {
+    text-align: center;
+    margin-bottom: 1.25rem;
+    padding: 0.75rem;
+    background: var(--bg);
+    border-radius: var(--radius-sm);
+}
+.visual:empty { display: none; padding: 0; margin: 0; }
+.visual img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.choices { display: flex; flex-direction: column; gap: 0.6rem; }
+.choice-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 0.85rem 1rem;
+    background: var(--bg);
+    border: 2px solid transparent;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: var(--text);
+    transition: all 0.2s ease;
+    min-height: 52px;
+    text-align: left;
+    width: 100%;
+}
+.choice-btn:hover:not(.disabled) {
+    border-color: var(--primary);
+    background: var(--primary-light);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(99,102,241,0.12);
+}
+.choice-btn:active:not(.disabled) { transform: translateY(0); }
+.choice-btn .badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background: var(--card);
+    font-weight: 800;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    flex-shrink: 0;
+    transition: all 0.2s;
+}
+.choice-btn:hover:not(.disabled) .badge {
+    background: var(--primary);
+    color: white;
+}
+.choice-btn.correct {
+    border-color: var(--correct);
+    background: var(--correct-bg);
+}
+.choice-btn.correct .badge { background: var(--correct); color: white; }
+.choice-btn.wrong {
+    border-color: var(--wrong);
+    background: var(--wrong-bg);
+    animation: shake 0.4s ease-in-out;
+}
+.choice-btn.wrong .badge { background: var(--wrong); color: white; }
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20% { transform: translateX(-6px); }
+    40% { transform: translateX(5px); }
+    60% { transform: translateX(-3px); }
+    80% { transform: translateX(2px); }
+}
+.choice-btn.disabled { cursor: default; opacity: 0.5; pointer-events: none; }
+.choice-btn.correct.disabled,
+.choice-btn.wrong.disabled { opacity: 1; pointer-events: none; }
+
+.feedback {
+    margin-top: 1.25rem;
+    padding: 1.1rem 1.2rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    display: none;
+    animation: fadeSlide 0.3s ease-out;
+}
+@keyframes fadeSlide {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.feedback.correct {
+    background: var(--correct-bg);
+    border: 1px solid var(--correct-border);
+    color: #99F6E4;
+}
+.feedback.correct strong { color: var(--correct); }
+.feedback.wrong {
+    background: var(--wrong-bg);
+    border: 1px solid var(--wrong-border);
+    color: #FED7AA;
+}
+.feedback .nudge {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--nudge-text);
+}
+.feedback .explanation {
+    display: block;
+    color: var(--text-soft);
+}
+
+.next-btn {
+    display: none;
+    margin-top: 1.1rem;
+    width: 100%;
+    padding: 0.85rem 2rem;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    min-height: 52px;
+    transition: all 0.2s;
+}
+.next-btn:hover {
+    background: var(--primary-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(99,102,241,0.3);
+}
+.next-btn:active { transform: translateY(0); }
+
+/* End screen */
+.end-screen { display: none; animation: slideUp 0.4s ease-out; }
+.score-card {
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 2.5rem 2rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    margin-bottom: 1.25rem;
+}
+.score-ring { position: relative; width: 128px; height: 128px; margin: 0 auto 1.25rem; }
+.score-ring svg { width: 128px; height: 128px; transform: rotate(-90deg); }
+.ring-bg { fill: none; stroke: var(--border); stroke-width: 8; }
+.ring-fill {
+    fill: none;
+    stroke-width: 8;
+    stroke-linecap: round;
+    stroke: var(--primary);
+    stroke-dasharray: 314;
+    stroke-dashoffset: 314;
+    transition: stroke-dashoffset 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ring-fill.perfect { stroke: var(--correct); }
+.ring-fill.good { stroke: var(--primary); }
+.ring-fill.keep-going { stroke: var(--wrong); }
+.score-value {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text);
+}
+.score-msg { font-size: 1.15rem; font-weight: 800; color: var(--text); margin-bottom: 0.25rem; }
+.score-sub { font-size: 0.9rem; color: var(--text-muted); font-weight: 600; }
+
+.review-card {
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 1.25rem;
+}
+.review-card h2 {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.misconception-item {
+    padding: 0.65rem 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.9rem;
+    color: var(--text-soft);
+    line-height: 1.55;
+}
+.misconception-item:last-child { border-bottom: none; }
+.misconception-item .q-ref { font-weight: 800; color: var(--wrong); }
+.no-misconceptions { color: var(--correct); font-weight: 700; padding: 0.25rem 0; font-size: 0.95rem; }
+.visual img { background: #fff; padding: 4px; }
+
+.remed-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition: all 0.2s;
+}
+.remed-link:last-child { margin-bottom: 0; }
+.remed-link .remed-icon {
+    width: 32px; height: 32px;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.7rem; font-weight: 800; flex-shrink: 0;
+}
+.remed-link.ka { background: #1E293B; color: #60A5FA; }
+.remed-link.ka:hover { background: #1E3A5F; transform: translateY(-1px); }
+.remed-link.ka .remed-icon { background: #3B82F6; color: white; }
+
+.btn-row {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 0.25rem;
+}
+.btn-back, .btn-retry {
+    display: block;
+    flex: 1;
+    padding: 0.85rem 1.5rem;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    min-height: 52px;
+    transition: all 0.2s;
+}
+.btn-back {
+    background: var(--text);
+    color: white;
+}
+.btn-back:hover { background: var(--text-soft); transform: translateY(-1px); }
+.btn-retry {
+    background: var(--primary);
+    color: white;
+}
+.btn-retry:hover { background: var(--primary-hover); transform: translateY(-1px); }
+
+.error-msg {
+    background: var(--wrong-bg);
+    border: 1px solid var(--wrong-border);
+    border-radius: var(--radius);
+    padding: 2rem;
+    color: var(--nudge-text);
+    display: none;
+}
+.error-msg h2 { color: var(--nudge-text); margin-bottom: 0.5rem; font-weight: 800; }
+.error-msg a { color: var(--primary); }
+
+.btn-back {
+    background: #27272A;
+    color: var(--text);
+}
+.btn-back:hover { background: #3F3F46; transform: translateY(-1px); }
+
+.confetti {
+    position: fixed;
+    pointer-events: none;
+    z-index: 999;
+    border-radius: 2px;
+    animation: confettiFall 1s ease-out forwards;
+}
+@keyframes confettiFall {
+    0% { opacity: 1; transform: translateY(0) rotate(0deg) scale(1); }
+    100% { opacity: 0; transform: translateY(100px) rotate(600deg) scale(0.4); }
+}
+
+@media (max-width: 600px) {
+    body { padding: 1rem; }
+    .question-card { padding: 1.25rem; }
+    .score-card { padding: 1.75rem 1.25rem; }
+    .stem { font-size: 1rem; }
+    .quiz-header h1 { font-size: 1.15rem; }
+    .btn-row { flex-direction: column; }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+            Back to topics
+        </a>
+
+        <div class="quiz-header" id="quizHeader">
+            <div class="topic-tag" id="topicTag"></div>
+            <h1 id="quizTitle"></h1>
+            <div class="steps" id="steps"></div>
+        </div>
+
+        <div class="question-card enter" id="questionCard">
+            <div class="q-number" id="qNumber">Question 1 of 10</div>
+            <div class="visual" id="visual"></div>
+            <div class="stem" id="stem"></div>
+            <div class="choices" id="choices"></div>
+            <div class="feedback" id="feedback"></div>
+            <button class="next-btn" id="nextBtn" onclick="nextQuestion()">Next Question</button>
+        </div>
+
+        <div class="end-screen" id="endScreen">
+            <div class="score-card">
+                <div class="score-ring">
+                    <svg viewBox="0 0 128 128">
+                        <circle class="ring-bg" cx="64" cy="64" r="50"/>
+                        <circle class="ring-fill" id="ringFill" cx="64" cy="64" r="50"/>
+                    </svg>
+                    <div class="score-value" id="scoreValue"></div>
+                </div>
+                <div class="score-msg" id="scoreMsg"></div>
+                <div class="score-sub" id="scoreSub"></div>
+            </div>
+            <div class="review-card" id="misconceptionsCard">
+                <h2>Things to keep in mind</h2>
+                <div id="misconceptionsList"></div>
+            </div>
+            <div class="review-card" id="remediationCard">
+                <h2>Practice on Khan Academy</h2>
+                <div id="remediationLinks"></div>
+            </div>
+            <div class="btn-row">
+                <a href="index.html" class="btn-back">All Topics</a>
+                <button class="btn-retry" id="retryBtn" onclick="retryQuiz()">Try Again</button>
+            </div>
+        </div>
+
+        <div class="error-msg" id="errorMsg">
+            <h2>Quiz not found</h2>
+            <p>Could not find questions for this module. <a href="index.html">Go back to the topic list.</a></p>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script>
+    var quizState = null;
+
+    (function() {
+        var params = new URLSearchParams(window.location.search);
+        var modId = params.get('mod');
+
+        if (!modId || typeof DIAGNOSTIC_DATA === 'undefined') {
+            showError();
+            return;
+        }
+
+        // Find the module
+        var modData = null;
+        for (var i = 0; i < DIAGNOSTIC_DATA.length; i++) {
+            if (DIAGNOSTIC_DATA[i].id === modId) {
+                modData = DIAGNOSTIC_DATA[i];
+                break;
+            }
+        }
+
+        if (!modData || !modData.questions.length) {
+            showError();
+            return;
+        }
+
+        startQuiz(modData);
+    })();
+
+    function startQuiz(modData) {
+        // How many questions: 1/3 of total pool
+        var quizLen = Math.max(1, Math.round(modData.questions.length / 3));
+
+        // Load previously used question IDs from localStorage
+        var usedKey = 'check_used_' + modData.id;
+        var usedIds = JSON.parse(localStorage.getItem(usedKey) || '[]');
+        var usedSet = {};
+        for (var u = 0; u < usedIds.length; u++) usedSet[usedIds[u]] = true;
+
+        // Filter out used questions
+        var fresh = [];
+        for (var p = 0; p < modData.questions.length; p++) {
+            if (!usedSet[modData.questions[p].id]) fresh.push(modData.questions[p]);
+        }
+
+        // If not enough fresh questions, reset the pool
+        if (fresh.length < quizLen) {
+            fresh = modData.questions.slice();
+            usedIds = [];
+        }
+
+        shuffle(fresh);
+        var questions = fresh.slice(0, quizLen);
+
+        // Record these question IDs as used
+        var newUsed = usedIds.slice();
+        for (var q = 0; q < questions.length; q++) newUsed.push(questions[q].id);
+        localStorage.setItem(usedKey, JSON.stringify(newUsed));
+
+        var totalQ = questions.length;
+        var currentQ = 0;
+        var score = 0;
+        var answered = false;
+        var misconceptions = [];
+        var results = [];
+
+        document.title = 'Quiz: ' + modData.id + ' ' + modData.name;
+        document.getElementById('topicTag').textContent = 'Module ' + modData.id;
+        document.getElementById('quizTitle').textContent = modData.name;
+
+        // Build step dots
+        var stepsEl = document.getElementById('steps');
+        stepsEl.innerHTML = '';
+        for (var s = 0; s < totalQ; s++) {
+            var dot = document.createElement('div');
+            dot.className = 'step' + (s === 0 ? ' current' : '');
+            dot.id = 'step-' + s;
+            stepsEl.appendChild(dot);
+        }
+
+        // Store state for retry
+        quizState = {
+            modData: modData,
+            questions: questions,
+            totalQ: totalQ,
+            currentQ: currentQ,
+            score: score,
+            answered: answered,
+            misconceptions: misconceptions,
+            results: results
+        };
+
+        // Show quiz UI
+        document.getElementById('quizHeader').style.display = '';
+        document.getElementById('questionCard').style.display = '';
+        document.getElementById('endScreen').style.display = 'none';
+
+        renderQuestion();
+
+        function renderQuestion() {
+            var q = quizState.questions[quizState.currentQ];
+            document.getElementById('qNumber').textContent =
+                'Question ' + (quizState.currentQ + 1) + ' of ' + quizState.totalQ;
+
+            // Show image visual
+            var visualEl = document.getElementById('visual');
+            visualEl.innerHTML = q.visual_html || '';
+
+            // Show topic name as the stem (since question text is in the image)
+            var stemEl = document.getElementById('stem');
+            stemEl.textContent = q.topic;
+
+            var choicesEl = document.getElementById('choices');
+            choicesEl.innerHTML = '';
+            for (var i = 0; i < q.choices.length; i++) {
+                var c = q.choices[i];
+                var btn = document.createElement('button');
+                btn.className = 'choice-btn';
+                btn.innerHTML = '<span class="badge">' + c.label + '</span><span>' + (c.text || c.label) + '</span>';
+                btn.onclick = (function(idx) { return function() { selectAnswer(idx); }; })(i);
+                choicesEl.appendChild(btn);
+            }
+
+            document.getElementById('feedback').style.display = 'none';
+            document.getElementById('feedback').className = 'feedback';
+            document.getElementById('nextBtn').style.display = 'none';
+            quizState.answered = false;
+
+            // Animate
+            var card = document.getElementById('questionCard');
+            card.classList.remove('enter');
+            void card.offsetWidth;
+            card.classList.add('enter');
+
+            // Update step dots
+            for (var d = 0; d < quizState.totalQ; d++) {
+                var dot = document.getElementById('step-' + d);
+                dot.className = 'step';
+                if (d < quizState.results.length) {
+                    dot.classList.add(quizState.results[d] ? 'done-correct' : 'done-wrong');
+                } else if (d === quizState.currentQ) {
+                    dot.classList.add('current');
+                }
+            }
+        }
+
+        function selectAnswer(idx) {
+            if (quizState.answered) return;
+            quizState.answered = true;
+
+            var q = quizState.questions[quizState.currentQ];
+            var chosen = q.choices[idx];
+            var btns = document.querySelectorAll('.choice-btn');
+
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].classList.add('disabled');
+                if (q.choices[i].correct) btns[i].classList.add('correct');
+            }
+
+            var feedbackEl = document.getElementById('feedback');
+            if (chosen.correct) {
+                quizState.score++;
+                quizState.results.push(true);
+                btns[idx].classList.add('correct');
+                feedbackEl.className = 'feedback correct';
+                feedbackEl.innerHTML = '<strong>Nice one!</strong> ' + (q.explanation || '');
+                spawnConfetti();
+            } else {
+                quizState.results.push(false);
+                btns[idx].classList.add('wrong');
+                feedbackEl.className = 'feedback wrong';
+                var nudge = chosen.misconception || 'Not quite.';
+                var expl = q.explanation || '';
+                feedbackEl.innerHTML = '<span class="nudge">' + nudge + '</span><span class="explanation">' + expl + '</span>';
+                quizState.misconceptions.push({
+                    qNum: quizState.currentQ + 1,
+                    topic: q.topic,
+                    misconception: nudge
+                });
+            }
+            feedbackEl.style.display = 'block';
+
+            var dot = document.getElementById('step-' + quizState.currentQ);
+            dot.className = 'step ' + (chosen.correct ? 'done-correct' : 'done-wrong');
+
+            var nextBtn = document.getElementById('nextBtn');
+            nextBtn.textContent = (quizState.currentQ < quizState.totalQ - 1) ? 'Next Question' : 'See Results';
+            nextBtn.style.display = 'block';
+        }
+
+        window.nextQuestion = function() {
+            quizState.currentQ++;
+            if (quizState.currentQ >= quizState.totalQ) {
+                showEndScreen();
+            } else {
+                renderQuestion();
+            }
+        };
+
+        function showEndScreen() {
+            document.getElementById('questionCard').style.display = 'none';
+            document.getElementById('quizHeader').style.display = 'none';
+            document.getElementById('endScreen').style.display = 'block';
+
+            var circumference = 2 * Math.PI * 50;
+            var fraction = quizState.score / quizState.totalQ;
+            var offset = circumference * (1 - fraction);
+            var ringEl = document.getElementById('ringFill');
+            ringEl.style.strokeDasharray = circumference;
+            ringEl.style.strokeDashoffset = circumference;
+            ringEl.className = 'ring-fill';
+
+            var msgEl = document.getElementById('scoreMsg');
+            var subEl = document.getElementById('scoreSub');
+
+            if (quizState.score === quizState.totalQ) {
+                ringEl.classList.add('perfect');
+                msgEl.textContent = 'Perfect -- nothing to review!';
+                subEl.textContent = 'You got every question right.';
+            } else if (quizState.score >= Math.ceil(quizState.totalQ * 0.6)) {
+                ringEl.classList.add('good');
+                msgEl.textContent = 'Solid work!';
+                subEl.textContent = 'A few things to brush up on below.';
+            } else {
+                ringEl.classList.add('keep-going');
+                msgEl.textContent = 'Good effort!';
+                subEl.textContent = 'Check the tips below and give it another go.';
+            }
+
+            document.getElementById('scoreValue').textContent = quizState.score + '/' + quizState.totalQ;
+
+            // Save best score
+            var bestKey = 'check_best_' + quizState.modData.id;
+            var prev = parseInt(localStorage.getItem(bestKey) || '0', 10);
+            if (quizState.score > prev) {
+                localStorage.setItem(bestKey, quizState.score + '/' + quizState.totalQ);
+            }
+
+            requestAnimationFrame(function() {
+                requestAnimationFrame(function() {
+                    ringEl.style.strokeDashoffset = offset;
+                });
+            });
+
+            // Misconceptions
+            var miscEl = document.getElementById('misconceptionsList');
+            if (quizState.misconceptions.length === 0) {
+                miscEl.innerHTML = '<div class="no-misconceptions">All correct -- you nailed it!</div>';
+            } else {
+                var html = '';
+                for (var i = 0; i < quizState.misconceptions.length; i++) {
+                    var m = quizState.misconceptions[i];
+                    html += '<div class="misconception-item">' +
+                        '<span class="q-ref">Q' + m.qNum + '</span> ' +
+                        '<strong>' + m.topic + ':</strong> ' + m.misconception +
+                        '</div>';
+                }
+                miscEl.innerHTML = html;
+            }
+
+            // Remediation — KA links from the module
+            var remEl = document.getElementById('remediationLinks');
+            var kaLinks = quizState.modData.ka_links || [];
+            if (kaLinks.length === 0) {
+                document.getElementById('remediationCard').style.display = 'none';
+            } else {
+                var rhtml = '';
+                for (var j = 0; j < kaLinks.length; j++) {
+                    var ka = kaLinks[j];
+                    rhtml += '<a href="' + ka.url + '" target="_blank" class="remed-link ka">';
+                    rhtml += '<span class="remed-icon">KA</span>';
+                    rhtml += '<span>' + ka.label + '</span></a>';
+                }
+                remEl.innerHTML = rhtml;
+            }
+
+            if (quizState.score === quizState.totalQ) spawnConfetti(40);
+        }
+    }
+
+    window.retryQuiz = function() {
+        if (quizState && quizState.modData) {
+            startQuiz(quizState.modData);
+        }
+    };
+
+    function shuffle(arr) {
+        for (var i = arr.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var tmp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = tmp;
+        }
+        return arr;
+    }
+
+    function spawnConfetti(count) {
+        var n = count || 18;
+        var colors = ['#6366F1','#0D9488','#F59E0B','#EC4899','#8B5CF6','#10B981'];
+        var card = document.getElementById('questionCard').style.display !== 'none'
+            ? document.getElementById('questionCard')
+            : document.querySelector('.score-card');
+        if (!card) return;
+        var rect = card.getBoundingClientRect();
+        var cx = rect.left + rect.width / 2;
+        var cy = rect.top + rect.height * 0.3;
+
+        for (var i = 0; i < n; i++) {
+            var el = document.createElement('div');
+            el.className = 'confetti';
+            var size = 6 + Math.random() * 6;
+            el.style.width = size + 'px';
+            el.style.height = size + 'px';
+            el.style.background = colors[Math.floor(Math.random() * colors.length)];
+            el.style.left = (cx + (Math.random() - 0.5) * 200) + 'px';
+            el.style.top = (cy + (Math.random() - 0.5) * 40) + 'px';
+            el.style.animationDuration = (0.7 + Math.random() * 0.6) + 's';
+            el.style.animationDelay = (Math.random() * 0.15) + 's';
+            document.body.appendChild(el);
+            (function(e) {
+                setTimeout(function() { if (e.parentNode) e.parentNode.removeChild(e); }, 1500);
+            })(el);
+        }
+    }
+
+    function showError() {
+        document.getElementById('quizHeader').style.display = 'none';
+        document.getElementById('questionCard').style.display = 'none';
+        document.getElementById('errorMsg').style.display = 'block';
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+{
+  "shortcode": "bif6",
+  "name": "Round to nearest whole, 10, 100 etc 1",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 27,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Round integers to the nearest 10",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Round integers to the nearest 100",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Round integers to the nearest 1000",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Round integers to the nearest other power of 10",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Round integers to the nearest other integer value (e.g. 20, 50 etc)",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 129994,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cb79e819-c4cb-49c6-81b2-7aff4683cef6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. 242,390 is one of the multiples of ten that is closest to 242,395. But what is the other one? And how do we decide which one is closest to 242,395?",
+        "B": "If we were rounding to the nearest 1,000 then that would work but we need to round to the nearest 10. Start by finding the multiple of 10 that is just less than the number we are rounding; then find the multiple of ten that is just greater than the number. Drawing this on a number line might help.",
+        "C": "The two multiples of ten either side of 242,395 are 242,390 and 242,400. We round up because the digit in the column to the right of the tens (the ones column) is a 5 and we know that 5, 6, 7, 8 or 9 round up.",
+        "D": "If we were rounding to the nearest 10,000 then that would work but we need to round to the nearest 10. Start by finding the multiple of 10 that is just less than the number we are rounding; then find the multiple of ten that is just greater than the number. Drawing this on a number line might help."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130034,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3a7cfcc7-7286-47ed-bb57-cca223a3ce71.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The two multiples of ten either side of 178,205 are 178,200 and 178,210. We round up because the digit in the column to the right of the tens (the ones column) is a 5 and we know that 5, 6, 7, 8 or 9 round up.",
+        "B": "If we were rounding to the nearest 1,000 then that would work but we need to round to the nearest 10. Start by finding the multiple of 10 that is just less than the number we are rounding; then find the multiple of ten that is just greater than the number. Drawing this on a number line might help.",
+        "C": "If we were rounding to the nearest 10,000 then that would work but we need to round to the nearest 10. Start by finding the multiple of 10 that is just less than the number we are rounding; then find the multiple of ten that is just greater than the number. Drawing this on a number line might help.",
+        "D": "Almost. 178,200 is one of the multiples of ten that is closest to 178,205. But what is the other one? And how do we decide which one is closest?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129995,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5b41c0ac-f79a-4e35-a7d6-a5ed20bb0e0f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. 356,900 is one of the multiples of 100 that is closest to 356,958. But what is the other one? And how do we decide which one is closest?",
+        "B": "If we were rounding to the nearest 10 then that would work but we need to round to the nearest 100. Start by finding the multiple of 100 that is just less than the number we are rounding; then find the multiple of 100 that is just greater than the number. Drawing this on a number line might help.",
+        "C": "If we were rounding to the nearest 100,000 then that would work but we need to round to the nearest 100. Start by finding the multiple of 100 that is just less than the number we are rounding; then find the multiple of 100 that is just greater than the number. Drawing this on a number line might help.",
+        "D": "The two multiples of 100 either side of 356,958 are 356,900 and 357,000. We round up because the digit in the column to the right of the hundreds (the tens column) is a 5 and we know that 5, 6, 7, 8 or 9 round up."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130035,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bb7e0da5-8344-4e82-94fd-afdb463c229c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we were rounding to the nearest 100,000 then that would work but we need to round to the nearest 100. Start by finding the multiple of 100 that is just less than the number we are rounding; then find the multiple of 100 that is just greater than the number. Drawing this on a number line might help.",
+        "B": "The two multiples of 100 either side of 720,949 are 720,900 and 721,000. We round down because the digit in the column to the right of the hundreds (the tens column) is a 4 and we know that 0, 1, 2, 3 or 4 round down.",
+        "C": "Almost. 721,000 is one of the multiples of 100 that is closest to 720,949. But what is the other one? And how do we decide which one is closest?",
+        "D": "If we were rounding to the nearest 10 then that would work but we need to round to the nearest 100. Start by finding the multiple of 100 that is just less than the number we are rounding; then find the multiple of 100 that is just greater than the number. Drawing this on a number line might help."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129996,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4a2be1f3-37ee-4e68-bb97-c01f8909c2aa.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. 279,000 is one of the multiples of 1,000 that is closest to 279,564. But what is the other one? And how do we decide which one is closest?",
+        "B": "If we were rounding to the nearest 100 then that would work but we need to round to the nearest 1,000. Start by finding the multiple of 1,000 that is just less than the number we are rounding; then find the multiple of 1,000 that is just greater than the number. Drawing this on a number line might help.",
+        "C": "The two multiples of 1,000 either side of 279,564 are 279,000 and 280,000. We round up because the digit in the column to the right of the thousands (the hundreds column) is a 5 and we know that 5, 6, 7, 8 or 9 round up.",
+        "D": "If we were rounding to the nearest 100,000 then that would work but we need to round to the nearest 1,000. Start by finding the multiple of 1,000 that is just less than the number we are rounding; then find the multiple of 1,000 that is just greater than the number. Drawing this on a number line might help."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130036,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5f15d861-387b-4844-a45d-ae8edebe38ee.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The two multiples of 1,000 either side of 729,499 are 729,000 and 730,000. We round down because the digit in the column to the right of the thousands (the hundreds column) is a 4 and we know that 0, 1, 2, 3 or 4 round down.",
+        "B": "If we were rounding to the nearest 100 then that would work but we need to round to the nearest 1,000. Start by finding the multiple of 1,000 that is just less than the number we are rounding; then find the multiple of 1,000 that is just greater than the number. Drawing this on a number line might help.",
+        "C": "If we were rounding to the nearest 100,000 then that would work but we need to round to the nearest 1,000. Start by finding the multiple of 1,000 that is just less than the number we are rounding; then find the multiple of 1,000 that is just greater than the number. Drawing this on a number line might help.",
+        "D": "Almost. 730,000 is one of the multiples of 1,000 that is closest to 729,499. But what is the other one? And how do we decide which one is closest?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129997,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aa14bafd-f830-4bb6-9608-8344f5961fca.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. 870,000 is one of the multiples of 10,000 that is closest to 875,599. But what is the other one? And how do we decide which one is closest?",
+        "B": "If we were rounding to the nearest 100,000 then that would work but we need to round to the nearest 10,000. Start by finding the multiple of 10,000 that is just less than the number we are rounding; then find the multiple of 10,000 that is just greater than the number. Drawing this on a number line might help.",
+        "C": "The two multiples of 10,000 either side of 875,599 are 870,000 and 880,000. We round up because the digit in the column to the right of the ten thousands (the thousands column) is a 5 and we know that 5, 6, 7, 8 or 9 round up.",
+        "D": "If we were rounding to the nearest 1,000 then that would work but we need to round to the nearest 10,000. Start by finding the multiple of 10,000 that is just less than the number we are rounding; then find the multiple of 10,000 that is just greater than the number. Drawing this on a number line might help."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130037,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c405d3fd-1497-4129-84d7-129a69724ec8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The two multiples of 10,000 either side of 474,721 are 470,000 and 480,000. We round down because the digit in the column to the right of the ten thousands (the thousands column) is a 4 and we know that 0, 1, 2, 3 or 4 round down.",
+        "B": "If we were rounding to the nearest 100,000 then that would work but we need to round to the nearest 10,000. Start by finding the multiple of 10,000 that is just less than the number we are rounding; then find the multiple of 10,000 that is just greater than the number. Drawing this on a number line might help.",
+        "C": "Almost. 480,000 is one of the multiples of 10,000 that is closest to 474,721. But what is the other one? And how do we decide which one is closest?",
+        "D": "If we were rounding to the nearest 1,000 then that would work but we need to round to the nearest 10,000. Start by finding the multiple of 10,000 that is just less than the number we are rounding; then find the multiple of 10,000 that is just greater than the number. Drawing this on a number line might help."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129998,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fafb9d35-3756-426e-835c-454876b49bde.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. 630,800 is one of the multiples of 50 that is closest to 630,827. But what is the other one? And how do we decide which one is closest?",
+        "B": "If we were rounding to the nearest 1,000 then that would work but we need to round to the nearest 50. Start by finding the multiple of 50 that is just less than the number we are rounding; then find the multiple of 50 that is just greater than the number. Which one is closest to the number we are rounding?",
+        "C": "The two multiples of 50 either side of 630,827 are 630,800 and 630,850. The last 2 digits of the number are 27 and 27 is closer to 50 than to zero, so we round up to 630,850.",
+        "D": "Actually we can round any number to the nearest 50. Start by finding the multiple of 50 that is just less than the number we are rounding; then find the multiple of 50 that is just greater than the number. Which one is closest to the number we are rounding?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130038,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8026d75a-2846-4aed-8e6d-697f26bc4b9f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The two multiples of 50 either side of 705,525 are 705,500 and 705,550. The last 2 digits of the number are 25 and we take 25 as being closer to 50 than to zero, because we round numbers from 0 to 24 down to zero and 25 to 49 up to 50. So we round up to 705,550.",
+        "B": "Almost. 705,500 is one of the multiples of 50 that is closest to 705,725. But what is the other one? And how do we decide which one is closest?",
+        "C": "If we were rounding to the nearest 1,000 then that would work but we need to round to the nearest 50. Start by finding the multiple of 50 that is just less than the number we are rounding; then find the multiple of 50 that is just greater than the number. Which one is closest to the number we are rounding?",
+        "D": "Actually we can round any number to the nearest 50. Start by finding the multiple of 50 that is just less than the number we are rounding; then find the multiple of 50 that is just greater than the number. Which one is closest to the number we are rounding?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,165 @@
+{
+  "shortcode": "vtb",
+  "name": "Add and subtract fractions 2",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 61,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Add proper fractions with the same denominator",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Subtract proper fractions with different denominators where one is a multiple of the other",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Subtract proper fractions with different denominators which do not share a common factor",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Subtract with fractions and integers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Carry out missing number subtraction problems where a written method is needed",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 101069,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d4c2648b-bb84-48b5-bd68-2d825101b017.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might have added the denominators together, as well as adding the numerators. Try drawing a rectangle and splitting it into 11 equal pieces (elevenths). What do you get altogether when you shade 4 elevenths and 7 elevenths?",
+        "B": "I think you might have added the denominators together, as well as adding the numerators, and then simplified your answer. Try drawing a rectangle and splitting it into 11 equal pieces (elevenths). What do you get altogether when you shade 4 elevenths and 7 elevenths?",
+        "C": "Almost! How else could we write 11/11 to make our answer simpler?",
+        "D": "Picture a rectangle split into 11 equally sized pieces. 4/11 means 4 out of 11 equal pieces. Similarly, 7/11 means 7 out of 11 equal pieces. In total we have 4 + 7 = 11 pieces. And we know that 11 pieces make up one whole rectangle. So 4/11 + 7/11 = 11/11 = 1."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101085,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/72c16383-c58c-4947-9c5a-3bb0b204db7c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might have added the denominators together, as well as adding the numerators. Try drawing a rectangle and splitting it into 10 equal pieces (tenths). What do you get altogether when you shade 3 tenths and 5 tenths?",
+        "B": "Almost! How else could we write 8/10 to make our answer simpler? Try looking for common factors.",
+        "C": "Picture a rectangle split into 10 equally sized pieces (tenths). 3/10 means 3 tenths (3 out of 10 equal pieces). Similarly, 5/10 means 5 tenths. In total we have 3 + 5 = 8 tenths or 8/10. We can divide both 8 and 10 by 2 because they are both even, to give 4/5. So 3/10 + 5/10 = 8/10 = 4/5.",
+        "D": "I think you might have added the denominators together, as well as adding the numerators, and then simplified. Try drawing a rectangle and splitting it into 10 equal pieces (tenths). What do you get altogether when you shade 3 tenths and 5 tenths?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101070,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e932d712-a00d-4dda-8122-00fb19397f35.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom has subtracted the denominators. Try drawing some easier fractions to test Tom's method: would 2/5 - 2/3 be equal to 2/2?",
+        "B": "Katie is correct: 9/13 means 9 out of 13 equally sized pieces (9 thirteenths) and 5/13 means 5 out of 13 equally-sized pieces (5 thirteenths). 9 thirteenths take away 5 thirteenths equals 4 thirteenths or 4/13. Tom is incorrect: we can only add and subtract numerators when the denominators are the same, not the other way around.",
+        "C": "Try drawing some easier fractions to test each method. For Tom's method, would 2/5 - 2/3 be equal to 2/2? For Katie's method, would 3/4 - 2/4 = 1/4?",
+        "D": "Try drawing some easier fractions to test each method. For Tom's method, would 2/5 - 2/3 be equal to 2/2? For Katie's method, would 3/4 - 2/4 = 1/4?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101086,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8934492e-76ee-44b2-905b-59c276d82ec2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Jo is correct: 8/11 means 8 out of 11 equally sized pieces (8 elevenths) and 3/11 means 3 out of 11 equally-sized pieces (3 elevenths). 8 elevenths take away 3 elevenths equals 5 elevenths or 5/11. Paul is incorrect: we can only add and subtract numerators when the denominators are the same, not the other way around.",
+        "B": "Paul has subtracted the denominators. Try drawing some easier fractions to test Paul's method: would 2/5 - 2/3 be equal to 2/2?",
+        "C": "Try drawing some easier fractions to test each method. For Paul's method, would 2/5 - 2/3 be equal to 2/2? For Jo's method, would 3/4 - 2/4 = 1/4?",
+        "D": "Try drawing some easier fractions to test each method. For Paul's method, would 2/5 - 2/3 be equal to 2/2? For Jo's method, would 3/4 - 2/4 = 1/4?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101071,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4de2f236-7468-4b18-a925-ffe02e02ca10.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you subtracted 1 from the numerator and the denominator. But we need to take the fraction away from 1 whole. Try picturing a whole cake, split into eighths. If we take 3 eighths (3/8) away from the whole cake, how many eighths will be left?",
+        "B": "Picture a whole cake cut into 8 equal slices. If 3 out of 8 slices are eaten, then 5 slices will remain, and so 1 – 3/8 = 5/8.",
+        "C": "It looks like you subtracted 1 from the numerator. But we need to take the fraction away from 1 whole. Try picturing a whole cake, split into eighths. If we take 3 eighths (3/8) away from the whole cake, how many eighths will be left?",
+        "D": "It looks like you subtracted 1 from the denominator. But we need to take the fraction away from 1 whole. Try picturing a whole cake, split into eighths. If we take 3 eighths (3/8) away from the whole cake, how many eighths will be left?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101087,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/93e2dedf-6e46-4d15-bfbc-56b04cb0e4be.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you subtracted 1 from the numerator and the denominator. But we need to take the fraction away from 1 whole. Try picturing a whole cake, split into nine pieces (ninths). If we take 4 ninths (4/9) away from the whole cake, how many ninths will be left?",
+        "B": "Picture a whole cake cut into 9 equal slices. If 4 out of 9 slices are eaten, then 5 slices will remain, and so 1 – 4/9 = 5/9.",
+        "C": "It looks like you subtracted 1 from the numerator. But we need to take the fraction away from 1 whole. Try picturing a whole cake, split into nine pieces (ninths). If we take 4 ninths (4/9) away from the whole cake, how many ninths will be left?",
+        "D": "It looks like you subtracted 1 from the denominator. But we need to take the fraction away from 1 whole. Try picturing a whole cake, split into nine pieces (ninths). If we take 4 ninths (4/9) away from the whole cake, how many ninths will be left?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101072,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/50e09da7-3a89-415f-8196-90cc26079237.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To subtract these fractions, we need the ‘slice size’ the same. So we need them to have the same denominator. Because 12 is a multiple of 4, we can convert 1/4 to the equivalent fraction 3/12, by multiplying the numerator and denominator by 3. The calculation then becomes 5/12 − 3/12 = 2/12. 2/12 could be simplified but it is not wrong to leave it as this value, given the question does not say that it should be simplified.",
+        "B": "To subtract fractions, we need the denominators to be the same. What denominator could we use? We need a common multiple of 4 and 12.",
+        "C": "Almost! 12 is definitely the best denominator to use for this calculation but look carefully at what you did when you converted 1/4 into twelfths. How do we make sure we have an equivalent fraction to 1/4?.",
+        "D": "It looks like you might have subtracted the denominators. To subtract fractions, we first need the denominators to be the same. What denominator could we use? We need a common multiple of 4 and 12."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101088,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e2ab1371-7c49-4629-b959-a52e778dd378.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you might have subtracted the denominators. To subtract fractions, we first need the denominators to be the same. What denominator could we use? We need a common multiple of 5 and 15.",
+        "B": "Almost! 15 is definitely the best denominator to use for this calculation but look carefully at what you did when you converted 2/5 into fifteenths. How do we make sure we have an equivalent fraction to 2/5?.",
+        "C": "It looks like you might have flipped the second fraction but we do that for division, not subtraction. To subtract fractions, we first need the denominators to be the same. What denominator could we use? We need a common multiple of 5 and 15.",
+        "D": "To subtract these fractions, we need the ‘slice size’ the same. So we need them to have the same denominator. Because 15 is a multiple of 5, we can convert 2/5 to the equivalent fraction 6/15, by multiplying the numerator and denominator by 3. The calculation then becomes 7/15 − 6/15 = 1/15."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101073,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/160cb18b-9be5-49c9-aac8-41ca260336bd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have spotted that the digit 5 is important here. Start by working out the difference between 0.39 and 0.34 as a decimal. Then use place value to tell you what the value of the 5 is. Remember that the columns after the decimal point are tenths (1/10), then hundredths (1/100) then thousandths (1/1000).",
+        "B": "I think you have spotted that the digit 5 is important here. Start by working out the difference between 0.39 and 0.34 as a decimal. Then use place value to tell you what the value of the 5 is. Remember that the columns after the decimal point are tenths (1/10), then hundredths (1/100) then thousandths (1/1000).",
+        "C": "I think you have spotted that the digit 5 is important here. Start by working out the difference between 0.39 and 0.34 as a decimal. Then use place value to tell you what the value of the 5 is. Remember that the columns after the decimal point are tenths (1/10), then hundredths (1/100) then thousandths (1/1000).",
+        "D": "In decimal form, the value missing is 0.05. To convert this to a fraction, it is helpful to remember that 0.05 means 5 hundredths because the 5 is in the hundredths column. We can write this as 5/100 and then simplify: 0.05 = 5/100 = 1/20."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101089,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3f9d9123-2096-4b1d-bf81-49020d8cbeb3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have spotted that the digit 4 is important here. Start by working out the difference between 0.47 and 0.43 as a decimal. Then use place value to tell you what the value of the 4 is. Remember that the columns after the decimal point are tenths (1/10), then hundredths (1/100) then thousandths (1/1000).",
+        "B": "In decimal form, the value missing is 0.04. To convert this to a fraction, it is helpful to remember that 0.04 means 4 hundredths because the 4 is in the hundredths column. We can write this as 4/100 and then simplify: 0.04 = 4/100 = 1/25.",
+        "C": "I think you have spotted that the digit 4 is important here. Start by working out the difference between 0.47 and 0.43 as a decimal. Then use place value to tell you what the value of the 4 is. Remember that the columns after the decimal point are tenths (1/10), then hundredths (1/100) then thousandths (1/1000).",
+        "D": "I think you have spotted that the digit 4 is important here. Start by working out the difference between 0.47 and 0.43 as a decimal. Then use place value to tell you what the value of the 4 is. Remember that the columns after the decimal point are tenths (1/10), then hundredths (1/100) then thousandths (1/1000)."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,165 @@
+{
+  "shortcode": "vsk",
+  "name": "Percentage change 2",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 30,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify percentage increase multipliers where the percent is an integer",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify percentage decrease multipliers where the percent is a multiple of 10",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify percentage decrease multipliers where the percent is an integer",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate original value problems involving percentage increase where the percent is an integer",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Work out the percentage rate in compound percentage increase problems ",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 73607,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b8a71d28-5991-4a32-a6f1-3e9beed0a3e2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have found the multiplier for increasing by 30%. We are decreasing by 30%.",
+        "B": "Decreasing a number by 30% means you are left with 70% of that number (100% - 30% = 70%). To find 70% of a number you can multiply by 0.7, 70% = 70/100 = 0.7.",
+        "C": "Multiplying by 30 will find you a number that is 30 times bigger it will NOT decrease a number by 30% . What percentage will you have left if you decrease a number by 30%? How would you write this as a decimal?",
+        "D": "Multiplying by 0.3 will find you 30% of a number BUT will not decrease a number by 30% . What percentage will you have left if you decrease a number by 30%? How would you write this as a decimal?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 73813,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dabe431f-8b0f-4647-8a0b-aeda5aba3610.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have found the multiplier for increasing by 40%. We are decreasing by 40%.",
+        "B": "Multiplying by 40 will find you a number that is 40 times bigger it will NOT decrease a number by 40% . What percentage will you have left if you decrease a number by 40%? How would you write this as a decimal?",
+        "C": "Decreasing a number by 40% means you are left with 60% of that number (100% - 40% = 60%). To find 60% of a number you can multiply by 0.6, 60% = 60/100 = 0.6.",
+        "D": "Multiplying by 0.4 will find you 40% of a number BUT will not decrease a number by 40% . What percentage will you have left if you decrease a number by 40%? How would you write this as a decimal?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101547,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f5992174-d2ce-45b3-863e-8cda02537ce2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Multiplying by 0.34 will find you 34% of a number BUT will not increase a number by 34% . What percentage will you have in total if you increase a number by 34%? How would you write this as a decimal?",
+        "B": "We start with the whole number which is 100%. We then add on the increase of 34% to get 134% This is 1.34 as a decimal.",
+        "C": "Multiplying by 34 will find you a number that is 34 times bigger it will NOT increase a number by 34% . What percentage will you have in total if you increase a number by 34%? How would you write this as a decimal?",
+        "D": "I think you have correctly identified that increasing a number by 34% is the same as finding 134% of a number BUT you have forgotten to convert this number to a decimal."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101562,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8afea1ca-3f56-4993-9f36-01eb8df2f5b6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We start with the whole number which is 100%. We then add on the increase of 24% to get 124% This is 1.24 as a decimal.",
+        "B": "Multiplying by 24 will find you a number that is 24 times bigger it will NOT increase a number by 24% . What percentage will you have in total if you increase a number by 24%? How would you write this as a decimal?",
+        "C": "Multiplying by 0.24 will find you 24% of a number BUT will not increase a number by 24% . What percentage will you have in total if you increase a number by 24%? How would you write this as a decimal?",
+        "D": "I think you have correctly identified that increasing a number by 24% is the same as finding 124% of a number BUT you have forgotten to convert this number to a decimal."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101548,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f13f5214-96b1-4cfa-9019-8b28f62ff30c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Multiplying by 0.06 will find you 6% of a number BUT will not decrease a number by 6% . What percentage will you have left if you decrease a number by 6%? How would you write this as a decimal?",
+        "B": "I think you have found the multiplier for increasing by 6%. We are decreasing by 6%.",
+        "C": "I think you have found the multiplier for decreasing by 60%, but we are decreasing by 6%. What percentage will you have left if you decrease a number by 6%?",
+        "D": "We have taken 6% away from our original 100% leaving us with 94% We then converted this into a decimal 0.94"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101563,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/faa991f3-9d43-424b-89e8-37cb682168b0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Multiplying by 0.12 will find you 12% of a number BUT will not decrease a number by 12% . What percentage will you have left if you decrease a number by 12%? How would you write this as a decimal?",
+        "B": "We have taken 12% away from our original 100% leaving us with 88% We then converted this into a decimal 0.88",
+        "C": "Multiplying by 0.76 will reduce a number by 24% (1 - 0.76 = 0.24 = 24%) NOT 12%. What percentage will you have left if you decrease a number by 12%? How would you write this as a decimal?",
+        "D": "I think you have found the multiplier for increasing by 12%. We are decreasing by 12%."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101549,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dea9c38b-469e-4fba-93a2-9cdbfb343453.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Try substituting in some numbers and calculating the percentages to see who is correct. For example: To check Toms use the number 200, increase 200 by 10% then increase this number by 10%. Next increase 200 by 20%, do you get the same number? Try substituting in a number to check Katie's statement.",
+        "B": "Not quite. Try substituting in some numbers and calculating the percentages to see who is correct. For example: To check Katie's use the number 200, increase 200 by 10% then decrease this new number by 10%, do you get back to the number you started with? Try substituting in a number to check Tom's statement.",
+        "C": "Not quite. Try substituting in some numbers and calculating the percentages to see who is correct. For example: To check Katie's use the number 200, increase 200 by 10% then decrease this new number by 10%, do you get back to the number you started with? Try substituting in a number to check Tom's statement.",
+        "D": "If we increase a number by 10% we now have 110%. 10% of our new 110% is 11%, this added onto our new value is 121% NOT 120%, so Tom is incorrect. If we increase a number by 10% we now have 110%. If we find 10% of this new value that is 11%, this subtracted from 110% is 99% NOT 100% and so Katie is also incorrect"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101564,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f26cbc96-a914-4f94-bfe8-a246f0cc42ea.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Try substituting in some numbers and calculating the percentages to see who is correct. For example: To check Paul's use the number 200, decrease 200 by 20% then decrease this number by 20%. Next decrease 200 by 40%, do you get a bigger or a smaller number?",
+        "B": "Not quite. Try substituting in some numbers and calculating the percentages to see who is correct. For example: To check Jo's use the number 200, increase 200 by 20% then increase this number by 20%. Next increase 200 by 40%, do you get a bigger or a smaller number?",
+        "C": "If we increase a number by 20% we get 120%. Increasing 120% by 20% we get 144%, as 20% of 120% is 24%. 144% is more than 140% so Jo is correct. If we decrease a number by 20% we get 80%. Decreasing 80% by 20% we get 64%, as 20% of 80% is 16%. 64% is greater than 60%, therefore the original number has decreased by less, so Paul is correct.",
+        "D": "Not quite. At least one person is correct. Try substituting in some numbers and calculating the percentages to see who is correct. For example: To check Jo's use the number 200, increase 200 by 20% then increase this number by 20%. Next increase 200 by 40%, do you get a bigger or a smaller number?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103885,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e77f277f-55ba-4532-96ef-1655f38f7727.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have increased 200 by 25%, but the question is asking us to find the original number if after a 25% increase we get 200. If we are increasing the ★ by 25% what percentage of the star are we calculating? This percentage will be equal to 200, can you use this to find the value of the ★?",
+        "B": "Not quite, remember our star (★) is 100%. Increasing 100% by 25% we get 125%. If we know that 125% = 200 how can we find 100%?",
+        "C": "I think you have found 25% of 200 and taken this away from 200 BUT 25% of 200 is not the same as 25% of our original number, the ★. If we are increasing the ★ by 25% what percentage of the star are we calculating? This percentage will be equal to 200, can you use this to find the value of the ★?",
+        "D": "We know that ★ = 100%, 100% + 25% = 125%. So, 200 is 125% of our original number. 125% = 200, 125% ÷ 5 = 25%, 200 ÷ 5 = 40. Therefore 25% = 40. 25% x 4 = 100%. 40 x 4 = 160. Therefore ★ = 160."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103889,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2887488a-7871-4aba-989a-a9c85f47cda3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have increased 84 by 40%, but the question is asking us to find the original number if after a 40% increase we get 84. If we are increasing the ★ by 40% what percentage of the star are we calculating? This percentage will be equal to 84, can you use this to find the value of the ★?",
+        "B": "Not quite, remember our star (★) is 100%. Increasing 100% by 40% we get 140%. If we know that 140% = 84 how can we find 100%?",
+        "C": "We know that ★ = 100%, 100% + 40% = 140%. So, 84 is 140% of our original number. 140% = 84, 140% ÷ 14 = 10%, 84 ÷ 14 = 6. Therefore 10% = 6. 10% x 10 = 100%. 6 x 10 = 60. Therefore ★ = 60.",
+        "D": "I think you have found 40% of 84 and taken this away from 84 BUT 40% of 84 is not the same as 40% of our original number, the ★. If we are increasing the ★ by 40% what percentage of the star are we calculating? This percentage will be equal to 84, can you use this to find the value of the ★?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

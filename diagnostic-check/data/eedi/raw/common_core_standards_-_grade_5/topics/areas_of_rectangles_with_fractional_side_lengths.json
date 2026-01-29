@@ -1,0 +1,153 @@
+{
+  "shortcode": "bijn",
+  "name": "Areas of rectangles with fractional side lengths",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 68,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Multiply mixed number fraction in the form: Fraction × Fraction",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiply fractional side lengths to find areas of rectangles, and represent fraction products as rectangular areas",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find the area of a rectangle with fractional length tiles",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158397,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/707b90f3-3457-46f9-a9c7-0c321574d053.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost! You have found the right number of rows and columns, but the shape should be a rectangle.",
+        "B": "Not quite - this shaded area is 2/5 cm long, but is it 3/7 cm wide?",
+        "C": "The model is split into 5 columns and 7 rows, so if we shade 2 columns in 3 rows we make a rectangle that is 2/5 cm x 3/7 cm.",
+        "D": "Not quite - this shaded area is 3/7 cm wide, but is it 2/5 cm long?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158585,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d9e6240f-fabc-436e-bc32-17148bc8f58b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost! The shape should be a rectangle. You have found the right number of rows, but how many columns do you need to make sure that the rectangle has a 1cm side?",
+        "B": "Not quite - this shaded rectangle does have a 1cm side, but does it have a 3/7 cm side?",
+        "C": "Not quite - this shaded rectangle does have a 3/7cm side, but does it have a 1 cm side?",
+        "D": "The model is split into 5 columns and 7 rows, so if we shade all 5 columns (5/5) in 3 rows (3/7) we make a rectangle that is 1 cm x 3/7 cm."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158398,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e9a75772-0dbb-405f-a181-6a1b5e0c7e39.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite - each fraction should be shaded squares over total squares. For example for the width of the rectangle, how many squares wide is the whole 1m grid? How many of them are shaded?",
+        "B": "It looks like you have counted the white rows and columns, but we want to describe the green shaded rectangle.",
+        "C": "Each small tile on the diagram would be 1/6 x 1/8, but can you describe the area of the green rectangle instead? How many tiles are shaded in each row and column?",
+        "D": "The model is split into 6 columns and 8 rows, so if we shade 5 columns in 5 rows we make a rectangle that is 5/6 m x 5/8 m."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158586,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f2ab677e-3d44-452f-87dd-5b5c289e9208.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite - each fraction should be the number of shaded squares over the total number of squares. For example, for the width of the rectangle, how many squares wide is the whole 1m grid? How many of them are shaded?",
+        "B": "The model is split into 6 columns and 8 rows, so if we shade 4 columns in 3 rows we make a rectangle that is 4/6 m x 3/8 m.",
+        "C": "Each small tile on the diagram would be 1/6 x 1/8, but can you describe the area of the green rectangle instead? How many tiles are shaded in each row and column?",
+        "D": "It looks like you have counted the white rows and columns, but we want to describe the green shaded rectangle."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158399,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f6895f50-9cfb-4b84-b5a8-b399acf877a6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The whole square is 1 square foot, which is split into 8 columns and 3 rows, so 24 parts altogether. 6 of them are shaded, so we have 6/24 square feet.",
+        "B": "Almost! Just double check your counting and multiplying for the total number of tiles in the shape.",
+        "C": "It looks like you counted the white tiles. These are \"unshaded\"; we want the green \"shaded\" ones.",
+        "D": "That's the area of one tile, good start! How many tiles are shaded green altogether?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158587,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/81144973-cd4c-40a8-a706-01ae24c1da2f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you counted the white tiles. These are \"unshaded\"; we want the green \"shaded\" ones.",
+        "B": "Almost! Just double check your counting and multiplying for the total number of tiles in the shape.",
+        "C": "The whole square is 1 square foot, which is split into 8 columns and 3 rows, so 24 parts altogether. 10 of them are shaded, so we have 10/24 square feet.",
+        "D": "That's the area of one tile, good start! How many tiles are shaded green altogether?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158400,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c9c7eba5-35e3-42b8-9bea-9deb6d01811c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The area of each tile is 1/4 x 1/4 = 1/16 square meters. There are 40 tiles, so 40 x 1/16 = 40/16 = 5/2 = 2.5 square meters.",
+        "B": "Careful, each tile is 1/4 m x 1/4 m, which is not the same as 1/4 square meters. You need to to multiply together the numerators and denominators to find the area.",
+        "C": "There are 40 tiles on the floor, but they aren't 1 square meter each - you need to multiply 1/4 x 1/4 to find the area of one tile, then find the total area of all 40 tiles.",
+        "D": "Not quite, I think you need to double check the area of one tile. What is 1/4 x 1/4? Remember to multiply the numerators and denominators together."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158588,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/27281f22-681b-4375-a7a8-408e63389af6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you need to double check the area of one tile. What is 1/3 x 1/3? Remember to multiply the numerators and denominators together.",
+        "B": "The area of each tile is 1/3 x 1/3 = 1/9 square meters. There are 36 tiles, so 36 x 1/9 = 36/9 = 4 square meters.",
+        "C": "There are 36 tiles on the floor, but they aren't 1 square meter each - you need to multiply 1/3 x 1/3 to find the area of one tile, then find the total area of all 36 tiles.",
+        "D": "Careful, each tile is 1/3 m x 1/3 m, which is not the same as 1/3 square meters. You need to to multiply together the numerators and denominators to find the area of one tile."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158401,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5efd55af-6bed-4893-8168-a00a631cb92b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost! If we split this rectangle into tiles that are 1/3 inch long and 1/5 inch wide, there would be 374, but what is the area of each tile?",
+        "B": "Not quite - we can't just multiply the integers and multiply the fractions, or we would miss part of the area. Can you change 3 2/5 and 7 1/3 into improper fractions and then multiply them?",
+        "C": "If we split the diagram up into tiles that are 1/3 inch long and 1/5 inch wide, each tile would have an area of 1/3 x 1/5 = 1/15 square inches. The length of the rectangle would be 17 tiles, and the width would be 22 tiles. 17 x 22 = 374, so the total area is 374 x 1/15 = 374/15 = 24 14/15 square inches.",
+        "D": "Not quite - we can't multiply the integers and add the fractions, this won't give the correct area. Can you change 3 2/5 and 7 1/3 into improper fractions and then multiply them?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158589,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7c9bdc22-77c0-4b68-bf20-ce396fedd9a9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we split the diagram up into tiles that are 1/4 inch long and 1/3 inch wide, each tile would have an area of 1/4 x 1/3 = 1/12 square inches. The length of the rectangle would be 25 tiles, and the width would be 11 tiles. 25 x 11 = 275, so the total area is 275 x 1/12 = 275/12 = 22 11/12 square inches.",
+        "B": "Not quite - we can't just multiply the integers and multiply the fractions, or we would miss part of the area. Can you change 6 1/4 and 3 2/3 into improper fractions and then multiply them?",
+        "C": "Almost! If we split this rectangle into tiles that are 1/4 inch long and 1/3 inch wide, there would be 275, but what is the area of each tile?",
+        "D": "Not quite - we can't multiply the integers and add the fractions, this won't give the correct area. Can you change 6 1/4 and 3 2/3 into improper fractions and then multiply them?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

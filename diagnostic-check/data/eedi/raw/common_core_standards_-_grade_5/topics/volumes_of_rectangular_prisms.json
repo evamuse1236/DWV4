@@ -1,0 +1,147 @@
+{
+  "shortcode": "bij9",
+  "name": "Volumes of rectangular prisms",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 93,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate the volume of a cuboid when the dimensions are given in the same units",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given the volume of a cuboid, work out missing information",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158462,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d7064de1-b860-43eb-9e4e-8ec48f06be8c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The number of small cubes in the shape tells us its volume, so adding together the two rows of 4 cubes would find the volume. Which of these is not a way of counting the cubes in the shape?",
+        "B": "The number of small cubes in the shape tells us its volume, so adding together the four rows of 2 cubes would find the volume. Which of these is not a way of counting the cubes in the shape?",
+        "C": "Volume = length x width x height, so this would find the volume. It also describes the number of small cubes: 2 rows of 4 cubes, in 1 layer. Which of these is not a way of counting the cubes in the shape?",
+        "D": "This calculation multiplies together the numbers of squares on each face, but that's not a method of finding the volume. When we multiply to find the volume, it's length x width x height like answer C, or we can add up all the cubes in the shape like answers A and B."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158681,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/564bf2c1-3f10-4d90-abbf-ad3d98a676c8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The number of small cubes in the shape tells us its volume, so adding together the two rows of 3 cubes would find the volume. Which of these is not a way of counting the cubes in the shape?",
+        "B": "This calculation multiplies together the numbers of squares on each face, but that's not a method of finding the volume. When we multiply to find the volume, it's length x width x height like answer C, or we can add up all the cubes in the shape like answers A and D.",
+        "C": "Volume = length x width x height, so this would find the volume. It also describes the number of small cubes: 2 rows of 3 cubes, in 1 layer. Which of these is not a way of counting the cubes in the shape?",
+        "D": "The number of small cubes in the shape tells us its volume, so adding together the three rows of 2 cubes would find the volume. Which of these is not a way of counting the cubes in the shape?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158463,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1da2842b-8133-4680-8665-26e4f1d43b4f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This calculation adds together the dimensions of the shape, but to find volume we multiply the dimensions: height x width x length, like answers B and C. Or we can add up the small cubes in the shape, as in answer D.",
+        "B": "Volume = length x width x height, so this would find the volume. It also describes the number of small cubes: 2 layers of 3 rows of 4 cubes. Which of these is not a way of counting the cubes in the shape?",
+        "C": "Volume = length x width x height, so this would find the volume. It also describes the number of small cubes: 2 layers of 4 rows of 3 cubes. Which of these is not a way of counting the cubes in the shape?",
+        "D": "This calculation finds the number of cubes in each layer, then adds them together, so it would give the volume of the shape. Which of these is not a way of counting the cubes in the shape?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158682,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/35f74c4b-9e1b-4e42-a798-79b88187e218.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Volume = length x width x height, so this would find the volume. It also describes the number of small cubes: 3 layers of 3 rows of 2 cubes. Which of these is not a way of counting the cubes in the shape?",
+        "B": "Volume = length x width x height, so this would find the volume. It also describes the number of small cubes: 2 layers of 3 rows of 3 cubes. Which of these is not a way of counting the cubes in the shape?",
+        "C": "This calculation finds the number of cubes in each layer, then adds them together, so it would give the volume of the shape. Which of these is not a way of counting the cubes in the shape?",
+        "D": "This calculation adds together the dimensions of the shape, but to find volume we multiply the dimensions: height x width x length, like answers A and B. Or we can add up the small cubes in the shape, as in answer C."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158464,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/68110642-593b-458a-9cc5-aab7154f1a0f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The number of small cubes in the shape tells us its volume, so adding together the two layers of 6 cubes would find the volume. Which of these is not a way of counting the cubes in the shape?",
+        "B": "Volume = length x width x height, so this would find the volume. It also describes the number of small cubes: 2 layers of 2 rows of 3 cubes. Which of these is not a way of counting the cubes in the shape?",
+        "C": "The number of small cubes in the shape tells us its volume, so adding together the three layers of 4 cubes would find the volume. Which of these is not a way of counting the cubes in the shape?",
+        "D": "This calculation adds together the numbers of squares on each face, but that's not a method of finding the volume. We can find the volume by adding up how many cubes are in the shape, like answers A and C, or multiplying length x width x height like answer B."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158683,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ae7ae964-1c0a-4703-9e5e-cdb55fb0d78d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This calculation adds together the numbers of squares on each face, but that's not a method of finding the volume. We can find the volume by adding up how many cubes are in the shape, like answers B and D, or multiplying length x width x height like answer C.",
+        "B": "The number of small cubes in the shape tells us its volume, so adding together the four layers of 6 cubes would find the volume. Which of these is not a way of counting the cubes in the shape?",
+        "C": "Volume = length x width x height, so this would find the volume. It also describes the number of small cubes: 2 layers of 3 rows of 4 cubes. Which of these is not a way of counting the cubes in the shape?",
+        "D": "The number of small cubes in the shape tells us its volume, so adding together the two layers of 12 cubes would find the volume. Which of these is not a way of counting the cubes in the shape?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158465,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9601de04-7572-4648-be32-83a0d1fc6da5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the number of cubes in one layer, so how many layers would we need to make 12 cubic units total?",
+        "B": "This would be the total number of cubes in the shape, so how many layers of 3 would that be?",
+        "C": "I think you tried to count faces instead of the cubes when you decided on the volume of this layer. How many small cubes would we need to make this layer? So if the whole shape is made from 12 small cubes, how many layers is that?",
+        "D": "A volume of 12 cubic units means the whole shape would be made from 12 small cubes. If there are 3 cubes in one layer, we would need four layers to make 12 cubes in total."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158684,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b3b4c0f1-6268-439d-a04c-4333b25eb3d0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This would be the total number of cubes in the shape, so how many layers of 5 would that be?",
+        "B": "This is the number of cubes in one layer, so how many layers would we need to make 30 cubic units total?",
+        "C": "A volume of 30 cubic units means the whole shape would be made from 30 small cubes. If there are 5 cubes in one layer, we would need six layers to make 30 cubes in total.",
+        "D": "I think you tried to count faces instead of the cubes when you decided on the volume of this layer. How many small cubes would we need to make this layer? So if the whole shape is made from 12 small cubes, how many layers is that?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158466,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d9c9792-43a8-4f3a-ab99-29c6f6cc1dae.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This row has 6 small cubes in, so how many rows would it take to make 24 cubes in total?",
+        "B": "I think you have tried to count the faces instead of the cubes when you decided on the volume of this row. How many small cubes would we need to make this row? So if the whole shape is made from 24 small cubes, how many rows is that?",
+        "C": "A volume of 24 cubic units means the whole shape would be made from 24 small cubes. If there are 6 cubes in one row, we would need four rows to make 24 cubes in total.",
+        "D": "The shape in the picture is one row back, but the question is asking how many of these we would need to make 24 cubic units total. How many of these rows could you make with 24 small cubes?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158685,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2c8c2fe7-71c7-41fd-af91-9b834591feb8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The shape in the picture is one row back, but the question is asking how many of these we would need to make 24 cubic units total. How many of these rows could you make with 24 small cubes?",
+        "B": "This row has 8 small cubes in, so how many rows would it take to make 24 cubes in total?",
+        "C": "I think you may have counted the visible faces instead of the cubes when you decided on the volume of this layer. How many small cubes are in the layer? So if the whole shape is made from 24 small cubes, how many layers is that?",
+        "D": "A volume of 24 cubic units means the whole shape would be made from 24 small cubes. If there are 8 cubes in one row, we would need three rows to make 24 cubes in total."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

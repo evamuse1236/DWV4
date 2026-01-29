@@ -1,0 +1,147 @@
+{
+  "shortcode": "biiw",
+  "name": "Modelling adding and subtracting decimals",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 40,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Modelling adding decimals",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Modelling subtracting decimals",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158376,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b265656e-17be-4e94-8443-6e33078812a4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The blue diagram represents 0.4 and the pink diagram represents 0.6. Therefore, each \"stick\" must represent 0.1 (1 tenth). Altogether, there are 10 of these \"sticks\", so we have 10 tenths = 1 whole.",
+        "B": "I think you've correctly counted that there are 10 \"sticks\". However, comparing the diagrams with the sum, we can see that 0.4 is represented by 4 \"sticks\", so each stick must be equal to 0.1 (1 tenth), not 1 whole.",
+        "C": "0.10 = 0.1 = 1 tenth. However, 10 tenths are shown in the diagram, in total. 10/10 = ?",
+        "D": "I think you've tried to apply the rule for the multiplication of decimals to this addition. But, check if your answer makes sense: 0.1 = 1 tenth. However, 10 tenths are shown in the diagram, in total. 10/10 = ?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158600,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8c2dfc04-adfc-4e30-944e-0acda4ecc08f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "0.10 = 0.1 = 1 tenth. However, 10 tenths are shown in the diagram, in total. 10/10 = ? Remember you must carry across the decimal point if you have 10 or more in the tenths column.",
+        "B": "I think you've correctly counted that there are 10 \"sticks\". However, comparing the diagrams with the sum, we can see that 0.3 is represented by 3 \"sticks\", so each stick must be equal to 0.1 (1 tenth), not 1 whole.",
+        "C": "The blue diagram represents 0.3 and the pink diagram represents 0.7. Therefore, each \"stick\" must represent 0.1 (1 tenth). Altogether, there are 10 of these \"sticks\", so we have 10 tenths = 1 whole.",
+        "D": "I think you've tried to apply the rule for the multiplication of decimals to this addition. But, check if your answer makes sense: 0.1 = 1 tenth. However, 10 tenths are shown in the diagram, in total. 10/10 = ?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158377,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0789668f-6bfe-49ab-b331-33c22df4d837.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've correctly counted that there are 39 squares. However, comparing the diagrams with the sum, we can see that each square must represent 0.01 (1 hundredth), not 1 whole.",
+        "B": "The blue diagram represents 0.23 and the pink diagram represents 0.16. Therefore, each square must represent 0.01 (1 hundredth). Altogether, there are 39 of these squares, so we have 39 hundredths = 0.39.",
+        "C": "I think you've added these numbers in your head and not kept the numbers in the correct place value columns. The blue diagram represents 0.23 and the pink diagram represents 0.16. So how much does each small square represent?",
+        "D": "I think you've assumed that each square represents 0.1 (1 tenth). However, comparing the diagrams with the sum, we can see that each square must represent 0.01 (1 hundredth)."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158601,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bb90801b-d143-466b-b852-c775d2574dfa.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've assumed that each square represents 0.1 (1 tenth). However, comparing the diagrams with the sum, we can see that each square must represent 0.01 (1 hundredth). ",
+        "B": "I think you've correctly counted that there are 57 squares. However, comparing the diagrams with the sum, we can see that each square must represent 0.01 (1 hundredth), not 1 whole.",
+        "C": "I think you've added these numbers but not kept the numbers in the correct place value columns. The blue diagram represents 0.26 and the pink diagram represents 0.31. So how much does each small square represent?",
+        "D": "The blue diagram represents 0.26 and the pink diagram represents 0.31. Therefore, each square must represent 0.01 (1 hundredth). Altogether, there are 57 of these squares, so we have 57 hundredths = 0.57."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158378,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6a24939-9032-4b2a-8640-4232e5fef70f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": " Look carefully at the diagram. The sticks must represent the same place value in both diagrams.  Each stick is 0.1, how many sticks will you need to make a whole?",
+        "B": "I think you've assumed each stick is 0.01 instead of 0.1. If each stick is 0.1, how many sticks will you need to make a whole?",
+        "C": "When you add 4 tenths to 7 tenths, you get 11 tenths. 11 tenths is the same as 1 whole and 1 tenth, which is 1.1, not 0.11.",
+        "D": "The blue diagram represents 1.46 and the pink diagram represents 0.7. Therefore, each \"stick\" represents 0.1 (1 tenth) and each square represents 0.01 (1 hundredth). Altogether, we have a total of 1 whole, 11 tenths and 6 hundredths. 11 tenths = 1 whole and 1 tenth. Therefore, this becomes 2 wholes, 1 tenth and 6 hundredths = 2.16."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158602,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e05b74a5-5fce-42f5-b68f-2e6a7598fc6f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": " Look carefully at the diagram. The sticks must represent the same place value in both diagrams.  Each stick is 0.1, how many sticks will you need to make a whole?",
+        "B": "I think you've assumed each stick is 0.01 instead of 0.1. If each stick is 0.1, how many sticks will you need to make a whole?",
+        "C": "When you add 7 tenths to 5 tenths, you get 12 tenths. 12 tenths is the same as 1 whole and 2 tenths, which is 1.2, not 0.12. Remember you can carry across the decimal point if you have 10 or more in the tenths column.",
+        "D": "The blue diagram represents 1.54 and the pink diagram represents 0.7. Therefore, each \"stick\" represents 0.1 (1 tenth) and each square represents 0.01 (1 hundredth). Altogether, we have a total of 1 whole, 12 tenths and 4 hundredths. 12 tenths = 1 whole and 2 tenths. Therefore, this becomes 2 wholes, 2 tenths and 4 hundredths = 2.14."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158379,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/54be4391-c894-4752-b409-03d3b30bd35d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've added 0.2 but the question is asking you to subtract 0.2.",
+        "B": "The diagram represents 0.73, which is 7 tenths (7 sticks) and 3 hundredths (3 squares). If we subtract 0.2, which is 2 sticks, then we're left with 5 sticks and 3 squares which is 0.53.",
+        "C": "I think you've subtracted 2 hundredths (squares), but we need to subtract 0.2 which is 2 tenths (sticks).",
+        "D": "I don't think you've used the model here. The diagram represents 0.73, which is 7 tenths (7 sticks) and 3 hundredths (3 squares). If we subtract 0.2, which is 2 sticks, what are we left with?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158603,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6ffc8ff5-9772-4168-8faf-00d32ba9d379.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've added 0.4 but the question is asking you to subtract 0.4.",
+        "B": "I think you've subtracted 4 hundredths (squares), but we need to subtract 0.4 which is 4 tenths (sticks).",
+        "C": "The diagram represents 0.68, which is 6 tenths (6 sticks) and 8 hundredths (8 squares). If we subtract 0.4, which is 4 sticks, then we're left with 2 sticks and 8 squares which is 0.28.",
+        "D": "Make sure you subtract the 4 tenths from the 6 tenths - 4 tenths would be 4 \"sticks\", so how many would be left after taking those away?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158380,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8c65c0b1-2af4-49fe-8ebf-69c889c34d87.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've subtracted the 2 from the 7, but subtraction is not commutative. We need to subtract 0.07, which is 7 hundredths, from 2.32, by imagining crossing out 7 small squares on the diagram. Then count up how many wholes, tenths and hundredths are left.",
+        "B": "I think you've subtracted 7 tenths (sticks) instead of 7 hundredths (squares). Try subtracting 7 hundredths by imagining crossing out 7 small squares on the diagram and see what's left.",
+        "C": "The diagram represents 2.32, which is 2 wholes, 3 tenths and 2 hundredths. We can subtract 0.07, which is 7 hundredths, by imagining crossing out 7 small squares on the diagram. Then we're left with 2 wholes, 2 tenths and 5 hundredths = 2.25.",
+        "D": "I think you've correctly subtracted 7 hundredths from 12 hundredths but then you've recorded this as 5 thousandths instead of 5 hundredths. You could use the diagram to help: try subtracting 7 hundredths by imagining crossing out 7 small squares on the diagram and see what's left."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158604,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ff6e00fa-59df-443a-91d5-e97b8e47297e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've subtracted 6 tenths (sticks) instead of 6 hundredths (squares). Try subtracting 6 hundredths by imagining crossing out 6 small squares on the diagram and see what's left.",
+        "B": "The diagram represents 2.14, which is 2 wholes, 1 tenth and 4 hundredths. We can subtract 0.06, which is 6 hundredths, by imagining crossing out 6 small squares on the diagram. Then we're left with 2 wholes and 8 hundredths = 2.08.",
+        "C": "I think you've correctly subtracted 6 hundredths from 14 hundredths but then you've recorded this as 8 thousandths instead of 8 hundredths. You could use the diagram to help: try subtracting 6 hundredths by imagining crossing out 6 small squares on the diagram and see what's left.",
+        "D": "I think you've subtracted the 4 from the 6, but subtraction is not commutative. We need to subtract 0.06, which is 6 hundredths, from 2.14, by imagining crossing out 6 small squares on the diagram. Then count up how many wholes, tenths and hundredths are left."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

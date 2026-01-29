@@ -1,0 +1,153 @@
+{
+  "shortcode": "fb9n",
+  "name": "Using variables to represent unknown numbers",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 176,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Create a situation to match an algebraic expression",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Interpret the terms on a formula and how they relate to the context of the situation",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify the restrictions on the value of a variable related to its context",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 173938,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e5060edb-3054-4502-a61e-2d3283fad962.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "In algebra, a letter like '𝑝' is called a variable and it represents a value or a number, not the object itself. Think about what value you need to know about each pen to find the total cost.",
+        "B": "The expression is 300𝑝. We are told in the question that the school is buying 300 pens, so the number 300 already represents the number of pens. What must '𝑝' represent?",
+        "C": "The whole expression '300𝑝' represents the total cost of 300 pens. The question is asking what the letter '𝑝' stands for on its own.",
+        "D": "The total cost is calculated by multiplying the number of pens (300) by the cost of one pen. In the expression 300𝑝, the '𝑝' must therefore represent the cost of one pen."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 173998,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bbe33331-49de-4808-854d-9bf2a0afab75.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "In the expression 80𝑓, 80 is the number of forks. To get the total cost, we multiply the number of forks by the cost of each one. So, 𝑓 must represent the cost of one fork.",
+        "B": "The question states that the restaurant is buying 80 forks. So, 80 represents the number of forks. The letter 𝑓 must stand for something else that we multiply by 80 to get the total cost.",
+        "C": "In algebra, a variable like 𝑓 represents a value or a quantity, not a physical object. Think about what quantity related to the fork we would need to know to calculate the total cost.",
+        "D": "The whole expression, 80𝑓, represents the cost of 80 forks. The question is asking what the single letter 𝑓 represents on its own."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173939,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6698cd4e-a896-4dde-9d5c-049f2f280e5b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Think about the situation. Is it possible for there to be zero adults on the bus? If it is, then '𝑎' could be 0, so it doesn't have to be greater than 0.",
+        "B": "The variable '𝑎' represents the number of adults. You can't have a fraction of a person or a negative number of people. You can have 0, 1, 2, 3... adults, so '𝑎' must be a whole number.",
+        "C": "Because '𝑎' represents the number of adults, it can't be just any number. For example, you can't have -5 adults or 2.5 adults. This means '𝑎' is restricted to a certain type of number.",
+        "D": "The '2' in the expression '2𝑎' is the coefficient of '𝑎', which means it's multiplying '𝑎'. It doesn't mean that '𝑎' itself must be equal to 2. What other values could 𝑎 be?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 173999,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0419738f-9161-453c-9f69-3f5d66881e0b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Think about what 𝑡 represents in this problem – the number of tables. Can you have a negative number of tables, or a fraction of a table? The context of the problem puts limits on the values 𝑡 can take.",
+        "B": "In the expression 5𝑡 + 4, the number 5 is being multiplied by 𝑡. It is the coefficient of 𝑡. The letter 𝑡 itself represents the number of tables, which could be a different number from 5.",
+        "C": "The variable 𝑡 represents the number of tables in a room. You can't have half a table or a negative number of tables, but you could have zero tables. So, 𝑡 must be a whole number (0, 1, 2, 3, and so on).",
+        "D": "The letter 𝑡 represents the number of tables in a room. Is it possible for there to be zero tables in a room? If so, then 𝑡 could be equal to 0."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173940,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/70ba1fa7-324c-481d-af23-752cc522280d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The variable '𝑙' represents a length. Think about whether a real-life rectangle can have a length that is a negative number, or a length of zero.",
+        "B": "A length can be a decimal or a fraction, for example, 3.5 cm or 1/2 a metre. So, '𝑙' does not have to be a whole number.",
+        "C": "Since '𝑙' represents the length of a rectangle, it must be a measurement of distance. This means it cannot be negative and it cannot be zero (otherwise there would be no rectangle). So, '𝑙' must be a positive number.",
+        "D": "Think about a square. A square is a special type of rectangle where the length '𝑙' is equal to the width '𝑤'. So it is possible for 𝑙 to be equal to 𝑤."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 174000,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c19252ac-2e14-452a-b96b-9a8e543b19f0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The letter 𝑏 represents a measurement of length. Is it possible for a length to be a decimal or a fraction, like 3.5 cm or 1/2 a metre? A length doesn't have to be a whole number.",
+        "B": "The letter 𝑏 represents the base measurement, which is a length. A length cannot be negative, and it can't be zero (otherwise you wouldn't have a triangle). Therefore, 𝑏 must be a positive number.",
+        "C": "Think about different types of triangles. Is it possible to draw a triangle where the base is longer than the height? The base and height can be any positive lengths.",
+        "D": "The letter 𝑏 represents a length. Can a length be a negative number, like -5 cm? The context of the problem is important and places restrictions on the variable."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173941,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/679b789c-2e8d-4a8e-a648-56c774eddfe8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This statement just says the height is 3 inches. The expression is ℎ + 3, which suggests a starting height 'ℎ' has been changed.",
+        "B": "The expression ℎ + 3 represents a starting value 'ℎ' with 3 added to it. This matches the situation where a plant of height 'ℎ' grows by 3 inches.",
+        "C": "The phrase '3 times as tall' means you should multiply the height by 3. This would be written as 3ℎ, not ℎ + 3.",
+        "D": "In this situation, 'ℎ' is the final height. If the plant grew 3 inches to reach this height, its starting height would have been ℎ - 3. This does not match the expression ℎ + 3."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 174001,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f6746975-1615-4c4e-bd6c-70c076d35ca2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This situation means you start with 8 and take 𝑐 away, which would be written as 8 - 𝑐. Look carefully at the order of the terms in the expression 𝑐 - 8.",
+        "B": "The phrase '8 times fewer' means you need to divide by 8 (𝑐 divided by 8). The expression 𝑐 - 8 uses subtraction, not division.",
+        "C": "The expression 𝑐 - 8 means you start with an amount '𝑐' and then take 8 away from it. The phrase '8 fewer' means to subtract 8, so this situation matches the expression.",
+        "D": "The phrase 'fewer than 8' describes an inequality, for example 𝑐 < 8. The expression 𝑐 - 8 is a calculation, not a comparison."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173942,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f33f6616-7f67-4e01-9850-c88cc647edd0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This situation matches the expression. There is a cost per day (£50 x 𝑑) and a fixed fee that is added on (+ £100).",
+        "B": "This describes a single situation with a fixed cost and a fixed number of days. The expression 50𝑑 + 100 is a general formula that can be used for any number of days '𝑑'.",
+        "C": "It looks like you may have added 50 and 100 to get 150. Remember, in 50𝑑 + 100, you can't add the terms together because '50𝑑' depends on the value of '𝑑' while '100' is a constant.",
+        "D": "This describes a fixed cost of £50 + £100. The expression is 50𝑑 + 100. You need to think about what the letter '𝑑' represents."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 174002,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2094e8ad-0222-4045-b541-edea84a93d27.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you've added 60ℎ and 35 to get 95ℎ. Remember that you can't add terms with letters (like 60ℎ) to terms that are just numbers (like 35). They are not 'like terms'.",
+        "B": "This description matches the calculation 60 + 35. But the expression in the question is 60ℎ + 35. Think about what the 'ℎ' might stand for in this situation.",
+        "C": "The expression has two parts. '60ℎ' means 60 multiplied by the number of hours (ℎ). This matches '$60 per hour'. The '+ 35' is a fixed amount added on, which matches the '$35 call-out fee'.",
+        "D": "This situation mixes up the numbers and their meanings. The expression says 60 is multiplied by ℎ (the number of hours), and 35 is a fixed amount that is added on. Read the situation carefully to see if it matches."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

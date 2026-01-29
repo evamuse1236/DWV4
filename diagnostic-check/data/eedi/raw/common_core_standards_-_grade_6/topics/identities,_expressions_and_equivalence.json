@@ -1,0 +1,159 @@
+{
+  "shortcode": "vp7",
+  "name": "Identities, expressions and equivalence",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 166,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Recognise and name an identity",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Simplify algebraic expressions to maintain equivalence by collecting like terms involving just two linear variables",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Simplify algebraic expressions to maintain equivalence by collecting like terms involving three or more linear variables",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Simplify algebraic expressions to maintain equivalence by collecting like terms involving non-linear variables",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 131776,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/be6a96db-8988-4d80-a580-fff6ca920447.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! An equation has to have an equals sign, which has two lines in it. What does this symbol with 3 lines mean?",
+        "B": "Not quite! An expression is made up of terms and numbers only, with no equivalence signs.",
+        "C": "Not quite! A formula needs to have an equals sign, which has two lines in it. What does this symbol with 3 lines mean?",
+        "D": "This is an identity, due to the symbol in the middle. It means that the expressions on each side of the symbol are always equal, no matter what the value of n."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133969,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d6b47665-43b4-4e9d-9752-b562823f1f1e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! An equation has to have an equals sign, which has two lines in it. What does this symbol with 3 lines mean?",
+        "B": "Not quite! An expression is made up of terms and numbers only, with no equivalence signs.",
+        "C": "Not quite! A formula needs to have an equals sign, which has two lines in it. What does this symbol with 3 lines mean?",
+        "D": "This is an identity, due to the symbol in the middle. It means that the expressions on each side of the symbol are always equal, no matter what the value of p."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131777,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b5fece96-46a0-4d51-bb8d-de49c6b81b36.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly! Check the signs on your y values. Remember we have -2y and +3y.",
+        "B": "6x - x = 5x, -2y + 3y = y, giving a final answer of 5x + y.",
+        "C": "Be careful with the signs when collecting the like terms. We have +6x and -x and we have -2y and +3y.",
+        "D": "Nearly! Check the signs on your x values. Remember, we have 6x and -x."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133970,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2562c095-35e3-4550-bbea-9ce06ca2b602.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful with the signs when collecting the like terms. We have +6x and -x and we have +2y and -3y.",
+        "B": "Nearly! Check the signs on your x values. Remember, we have 6x and -x.",
+        "C": "Nearly! Check the signs on your y values. Remember we have +2y and -3y.",
+        "D": "6x - x = 5x and 2y - 3y = -y, giving a final answer of 5x - y."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131778,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0f52a9c0-b9c2-444b-a3d8-0e200b519a83.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. For an identity symbol to be used, the statement must ALWAYS be true. Would Tom's statement be true for all values of x?",
+        "B": "2x + 1 will only equal 3 if x =1 so Tom's statement is not an identity because it doesn't work for ALL values of x. It is always true that 2x + x is exactly equal to 3x so only Katie is correct.",
+        "C": "Not quite. For an identity symbol to be used, the statement must ALWAYS be true. Would both statements be true for all values of x?",
+        "D": "Not quite. The three lines mean 'is always equal to.'"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133971,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7557e8be-b368-4b41-a1d5-ccc60a4d32ee.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To use an identity sign, the expressions on either side must be true for ALL values of y. Tom is correct because both of his expressions contain the same terms: a positive 5y and a positive 7. Katie is not correct because the terms in each of her expressions have different signs.",
+        "B": "Not quite. Check if the terms in both of Katie's expressions have the same signs in front of them. Is the 5y positive on both sides?",
+        "C": "Not quite. For an identity symbol to be used, the expressions on each side of it must ALWAYS be equal. Would both statements be true for all values of y?",
+        "D": "At least one person is correct here. Remember the identity sign means 'is always equal to.' You could try substituting in some values for y to see if 5y + 7 is always equal to 7 + 5y (Tom) or if 5y - 7 is always equal to 7 - 5y (Katie)."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131779,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9e02edcc-85c3-4033-a4c8-b79f6b4466c6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly! Check the signs on your y values. Remember we have -2y and +3y.",
+        "B": "There are no other x terms apart from 6x, and no other z terms apart from -z. Simplifying -2y + 3y gives +y. This gives a final answer of 6x + y - z.",
+        "C": "Nearly! Check the signs on your y values. Remember we have -2y and +3y. Start at -2 on a number line and move 3 places to the right to add 3.",
+        "D": "We can simplify this expression. Are there any letters which appear more than once in the expression?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133972,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ce701b97-2c36-48d7-863a-3cfe3f023da2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There are no other x terms apart from 6x, and no other z terms apart from -z. Simplifying 2y - 3y gives -y. This gives a final answer of 6x - y - z.",
+        "B": "Nearly! Check the signs on your y values. Remember we have +2y and -3y.",
+        "C": "Nearly! Check the signs on your y values. Remember we have +2y and -3y. Start at 2 on a number line and move 3 places to the left to subtract 3.",
+        "D": "We can simplify this expression. Are there any letters which appear more than once in the expression?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131780,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9e41d1bb-7863-4f45-8c90-536a3b6903fd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! I think you have multiplied the two terms together. Remember, we can only add terms when they are 'like' terms (terms that have the same letters and powers).",
+        "B": "Not quite! I think you have tried to multiply the two terms together. Remember, we can only add terms when they are 'like' terms (terms that have the same letters and powers).",
+        "C": "Not quite! I think you have tried to multiply these together. Remember, we can only add terms when they are 'like' terms (terms that have the same letters and powers).",
+        "D": "This expression does not simplify as they are no 'like' terms (terms that have the same letters and powers)."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133973,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ba6862f6-6cd8-4dff-b8d5-dbf171741379.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! I think you have multiplied the two terms together. Remember, we can only add terms when they are 'like' terms (terms that have the same letters and powers).",
+        "B": "Not quite! I think you have tried to multiply the two terms together. Remember, we can only add terms when they are 'like' terms (terms that have the same letters and powers).",
+        "C": "Not quite! I think you have tried to multiply the two terms together. Remember, we can only add terms when they are 'like' terms (terms that have the same letters and powers).",
+        "D": "This expression does not simplify as they are no 'like' terms (terms that have the same letters and powers)."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

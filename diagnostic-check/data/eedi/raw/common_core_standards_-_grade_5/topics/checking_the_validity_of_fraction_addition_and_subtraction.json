@@ -1,0 +1,141 @@
+{
+  "shortcode": "bii6",
+  "name": "Checking the validity of fraction addition and subtraction",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 50,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Estimate the value of a fraction addition or subtraction using benchmark fractions",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158386,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4844e0b1-f8b6-4b76-89cc-d8b6c14ba1f8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "10/11 and 11/12 are both close to 1 (because the numerator and denominator are close to being the same), so we can estimate the answer by doing 1 - 1 = 0.",
+        "B": "Not quite - I think you tried to subtract ten from both numbers in the second fraction. What whole number are both of these fractions close to? Which answer do we get if we subtract the whole numbers?",
+        "C": "I think you have tried to subtract the numerators and the denominators but we are just being asked for an estimate. Both of these fractions are close to 1, so what subtractions would give us a good estimate of the answer?",
+        "D": "You may have noticed that the second fraction is bigger, so the answer would be negative. That's true, but would it be close to -1? Try finding a whole number that is close to each of these fractions, and subtracting the whole numbers to find an estimate."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158514,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b9197b92-85b6-40e2-88f4-d9ccdec30d60.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have tried to subtract the numerators and the denominators but we are just being asked for an estimate. Both of these fractions are close to 1, so what subtractions would give us a good estimate of the answer?",
+        "B": "Not quite - I think you tried to subtract fourteen from both numbers in the second fraction. What whole number are both of these fractions close to? Which answer do we get if we subtract the whole numbers?",
+        "C": "14/15 and 15/16 are both close to 1 (because the numerator and denominator are close to being the same), so we can estimate the answer by doing 1 - 1 = 0.",
+        "D": "You may have noticed that the second fraction is bigger, so the answer would be negative. That's true, but would it be close to -1? Try finding a whole number that is close to each of these fractions, and subtracting the whole numbers to find an estimate."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158387,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/84dc18f3-70f3-4f31-9fe4-950af64c42e2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite - you might have correctly rounded both fractions to 1, but remember we are adding not subtracting here.",
+        "B": "Not quite - 8/9 is already bigger than 1/2, so our answer must be bigger than that. For a good estimate we need to choose an easier number that's close to each fraction. What whole number are both of these fractions close to? Which answer do we get if we add the whole numbers?",
+        "C": "Both of these fractions are close to 1, but remember we need to add them. If they are both close to 1, what addition would give us a good estimate of the answer?",
+        "D": "8/9 and 4/5 are both close to 1 (because the numerator and denominator are close to being the same) so we can estimate the answer by doing 1 + 1 = 2."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158515,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b32c3baf-87af-4f15-b0ec-314d5657d0ff.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "6/7 and 9/10 are both close to 1 (because the numerator and denominator are close to being the same) so we can estimate the answer by doing 1 + 1 = 2.",
+        "B": "Both of these fractions are close to 1, but remember we need to add them. If they are both close to 1, what addition would give us a good estimate of the answer?",
+        "C": "Not quite - 6/7 is already bigger than 1/2, so our answer must be bigger than that. For a good estimate we need to choose an easier number that's close to each fraction. What whole number are both of these fractions close to? Which answer do we get if we add the whole numbers?",
+        "D": "Not quite - you might have correctly rounded both fractions to 1, but remember we are adding not subtracting here."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158388,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c74d207a-49e6-40cb-9f75-70d8b7f933f0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you rounded both of these fractions to 1 and then subtracted them, but is 2/5 close to 1? See if you can find a fraction closer to 2/5 to estimate with.",
+        "B": "8/9 is close to 1, and 2/5 is close to 1/2 (because the numerator is close to half of the denominator), so we can estimate the answer by doing 1 - 1/2 = 1/2.",
+        "C": "Not quite - you might have rounded 8/9 to 1 and 2/5 down to 0, but we can find a closer estimate. Which fraction is close to 2/5 that's easy to calculate with?",
+        "D": "I think you tried to subtract these, but you didn't change them to have a common denominator first. We don't need to find an exact answer in this question, so we can use easier numbers to get a close estimate; what whole number is close to 8/9? And what fraction is close to 2/5 and easier to calculate with?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158516,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5eefae36-ca7c-4666-b40b-9aaefa6b6005.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you rounded both of these fractions to 1 and then subtracted them, but is 4/9 close to 1? See if you can find a fraction closer to 4/9 to estimate with.",
+        "B": "I think you've subtracted the numerators and added the denominators, this isn't how we subtract with fractions. And, we don't need to find an exact answer in this question, so we can use easier numbers to get a close estimate; what whole number is close to 11/12? And what fraction is close to 4/9 and easier to calculate with?",
+        "C": "11/12 is close to 1, and 4/9 is close to 1/2 (because the numerator is close to half of the denominator), so we can estimate the answer by doing 1 - 1/2 = 1/2.",
+        "D": "I think you tried to subtract these, but you didn't change them to have a common denominator first. We don't need to find an exact answer in this question, so we can use easier numbers to get a close estimate; what whole number is close to 11/12? And what fraction is close to 4/9 and easier to calculate with?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158389,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fb32b9da-04f5-4be7-a179-962d3e8d9636.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "3 1/9 is just over 3, and 1 4/5 is just under 2, so we can estimate the answer by doing 3 - 2 = 1.",
+        "B": "I think you might have tried to subtract these exactly; we want to estimate the answer by using easier numbers close to these to calculate with. What whole numbers are 3 1/9 and 1 4/5 close to?",
+        "C": "It looks like you might have just ignored the fraction parts, but we can find a closer estimate by using the nearest whole numbers, instead of just the whole number part. What whole numbers are 3 1/9 and 1 4/5 closest to?",
+        "D": "Not quite - we want to estimate the answer by using easier numbers close to these to calculate with. What whole numbers are 3 1/9 and 1 4/5 close to?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158517,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/592c8d60-87b2-418e-bf1d-84fd44e2dcf4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you tried to subtract these, but you didn't change them to have a common denominator first. We don't need to find an exact answer in this question, so we can use easier numbers to get a close estimate; What whole numbers are 5 1/10 and 2 6/7 closest to?",
+        "B": "5 1/10 is just over 5, and 2 6/7 is just under 3, so we can estimate the answer by doing 5 - 3 = 2.",
+        "C": "It looks like you might have just ignored the fraction parts, but we can find a closer estimate by using the nearest whole numbers, instead of just the whole number part. What whole numbers are 5 1/10 and 2 6/7 closest to?",
+        "D": "I think you converted the fractions to improper fractions and then tried to subtract them, but you didn't change them to have a common denominator first. We don't need to find an exact answer in this question, so we can use easier numbers to get a close estimate; What whole numbers are 5 1/10 and 2 6/7 closest to?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158390,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/853cfc0d-7b93-4708-ad40-6bf93551f26e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you might have just ignored the fraction parts, but we can find a closer estimate by using the nearest whole numbers, instead of just the whole number part. What whole numbers are 4 6/7 and 2 9/10 closest to?",
+        "B": "Not quite - the two fraction parts will definitely add up to more than 1. What whole numbers are 4 6/7 and 2 9/10 close to? Can you add those instead to get a closer estimate?",
+        "C": "4 6/7 is almost 5, and 2 9/10 is almost 3, so we can estimate the answer by doing 5 + 3 = 8.",
+        "D": "Not quite - we want to estimate the answer by using easier numbers close to these to calculate with. What whole numbers are 4 6/7 and 2 9/10 close to?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158518,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/58a854cf-3ee1-4853-aefa-6d04cfb9177b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might have tried to subtract instead of add. We want to estimate the answer by using easier numbers close to these to calculate with. What whole numbers are 3 10/12 and 6 14/15 close to?",
+        "B": "It looks like you might have just ignored the fraction parts, but we can find a closer estimate by using the nearest whole numbers, instead of just the whole number part. What whole numbers are 3 10/12 and 6 14/15 close to?",
+        "C": "Not quite - we want to estimate the answer by using easier numbers close to these to calculate with. What whole numbers are 3 10/12 and 6 14/15 close to?",
+        "D": "3 10/12 is almost 4, and 6 14/15 is almost 7, so we can estimate the answer by doing 4 + 7 = 11."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

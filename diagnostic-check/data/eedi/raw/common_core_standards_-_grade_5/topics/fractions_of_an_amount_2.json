@@ -1,0 +1,159 @@
+{
+  "shortcode": "bijg",
+  "name": "Fractions of an amount 2",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 61,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate unit fractions of an amount",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate non-unit fractions of an amount",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Express one quantity as a fraction of another",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the whole amount, given a fraction of the amount",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 76737,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a13500dc-cc07-4800-9b34-9e19c7d5c1aa.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "1/3 of 72 = 24 and 4/6 of 72 is 72/6 x 4 = 48. So they have 24 + 46 = 72",
+        "B": "This is how many there are left in the bag. How many did they have?",
+        "C": "This is 1/3 of the bag. Remember Alexa takes some too. How many does she take, and how many do they have in total?",
+        "D": "This is 4/6 of the bag. Remember Mo takes some too. How many does he take, and how many do they have in total?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78804,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c9075d5b-ddbf-492d-90cb-8b3833dbad7a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is 1/3 and 1/6, but they have 2/3 and 1/6. How will this affect your answer?",
+        "B": "Almost, this is how many were left in the bag. How many do they have?",
+        "C": "2/3 is 72/3 x 2 = 48, and 1/6 = 72/6 = 12. So altogether they have 48 + 12 = 60",
+        "D": "Nearly! This is 2/3 of the conkers, but Alexa also takes 1/6."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 76738,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7d1be06f-017b-44b1-8d44-08776d7bf8f6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost, just remember there are 100cm in a metre",
+        "B": "Almost, just remember there are 100cm in a metre or 1000mm in a metre.",
+        "C": "Almost, just remember there are 100cm in a metre",
+        "D": "We have 6/5 = 1.2m, which converts to 1m and 20cm, as there are 100 cm in a metre."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78805,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1c9c598d-c07e-4d5f-9cc3-3f797a497276.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We have 6/4 = 3/2 = 1 + 1/2 = 1.5 m. As there are 100 cm in a metre, this is the same as 1m and 50 cm.",
+        "B": "Almost, just remember there are 100cm in a metre or 1000mm in a metre",
+        "C": "Almost, just remember there are 100cm in a metre",
+        "D": "Almost, just remember there are 100cm in a metre"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 76739,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c3795b86-276b-4923-8af5-5fbb5e97b4ca.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Imagine a bar divided into 6 parts. 2 of them represent 10. That means 1 part is 5, so the whole bar is 6 x 5 = 30",
+        "B": "Not quite, try using a bar model where 2 of the 6 parts represents 10. What is the whole bar worth?",
+        "C": "This would be true if 1/6 of the number was 10. How would this affect your answer?",
+        "D": "This is 1/6 of the number, so what is the whole number?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78806,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6d8bafda-37b7-4bd9-90f7-465fa805ff8e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is 2/5 of 10. We want to know what number 10 is 2 fifths of. Try using a bar model where 2 of the 5 parts represents 10. What is the whole bar worth?",
+        "B": "This would be true if 1/5 of the number was 10. How will this affect your answer?",
+        "C": "Not quite, 2/5 of 20 is 8. Try using a bar model where 2 of the 5 parts represents 10. What is the whole bar worth?",
+        "D": "Use a bar model where 2 of the 5 parts represents 10. One part represents 5, so all 5 parts is 5 x 5 = 25."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 76740,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d88fdb25-bc75-4893-8fdd-66478a41f9a1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is 1/6 of 54, so what number is 54 a third of?",
+        "B": "I think you found 1/3 of 9. We need to find out what number 9 is a third of.",
+        "C": "One sixth of 54 is 54/6 = 9, then multiply 9 by 3 gives 27 as the answer. Drawing bar models will help with this question",
+        "D": "I think you might have multiplied the denominators. We need to find 1/6 of 54, and then what number that is a third of. Try using a bar model to help you"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 120904,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/12955f56-671f-4a6f-94ee-77aedc2c3061.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "1/12 of 48 = 4. 1/3 of a number is 4, so the whole number is 3 x 4 = 12",
+        "B": "I think you might have multiplied the denominators. We need to find 1/12 of 48, and then what number that is a third of. Try using a bar model to help you",
+        "C": "This is 1/12 of 48, but what number is 4 a third of? Try using a bar model to help",
+        "D": "This is 1/3 of 48.We need to find 1/12 of 48, and then what number that is a third of. Try using a bar model to help you"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 100561,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e4831c3b-6f0f-4bce-ab3f-8c48f238a0ed.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If Kate’s bottle is half full it will have half or 0.5 litres. If this is poured into the empty tub then it has 0.5 out of a possible 5 litres in it, or 0.5/5. This fraction needs to be made of whole numbers only: multiplying the numerator and denominator by 2 will achieve this, giving an answer of 1/10.",
+        "B": "I think you have tried to combine the half and the 5. Work out how much cola is in the bottle, and then write this as a fraction of 5 litres.",
+        "C": "This would be true if the cola bottle was full, but it is only half full. How will this affect your answer?",
+        "D": "I think you have tried to combine the 1/2 and the 5 litres. Work out how much cola is in the bottle, and then write this as a fraction of 5 litres."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 100578,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/023c14e9-0d5a-44fa-8254-f75feaffe855.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Work out how much lemonade is in the bottle, and then write this as a fraction of 4 litres.",
+        "B": "There is a quarter of a bottle, but that isn't a quarter of the tub. Work out how much lemonade is in the bottle, and then write this as a fraction of 4 litres.",
+        "C": "Not quite, the lemonade bottle is only a quarter full. Work out how much lemonade is in the bottle, and then write this as a fraction of 4 litres.",
+        "D": "If Jane’s bottle is a quarter full it will have 6 ÷ 4 = 1.5 litres. If this is then poured into the empty tub, then it has 1.5 out of a possible 4 litres in it, or 1.5/4. This answer needs to be made of whole numbers only for it to be in fraction form: multiplying the numerator and denominator by 2 will achieve this, giving an answer of 3/8."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

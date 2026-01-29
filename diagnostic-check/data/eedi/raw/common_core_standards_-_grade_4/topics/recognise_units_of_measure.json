@@ -1,0 +1,165 @@
+{
+  "shortcode": "big1",
+  "name": "Recognise units of measure",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 62,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify a unit of length",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify a unit of area",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify a unit of volume or capacity",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify a unit of weight",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify a unit of time",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 131476,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/70537e05-f79f-475a-9468-576e81bdf0af.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. Think about the different units you might see on a set of scales",
+        "B": "Almost. Think about the different units you might see on a set of scales",
+        "C": "Both tonnes and milligrams (mg) measure mass",
+        "D": "At least one person is correct. Think about the different units you might see on a set of scales"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133709,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/17d487b1-2910-4e51-982b-2857a20c28ce.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Think about the units you might see on a set of scales",
+        "B": "Only Katie is correct. Grams (g) measure mass, whereas litres measure capacity",
+        "C": "Not quite. Think about the units you might see on a set of scales",
+        "D": "At least one person is correct. Think about the units you might see on a set of scales"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131477,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/483eb51b-ab9a-4c0b-b42e-a5d60a38ee11.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom is correct, miles is a unit of length. Katie is incorrect as ml stands for millilitres, which is not a unit of length, it is a unit of capacity",
+        "B": "Not quite. Think about what ml represents. Remember we can use imperial measures for length",
+        "C": "At least one person is incorrect. Think about what ml represents. Remember we can use imperial measures for length",
+        "D": "At least one person is correct. Think about what ml represents. Remember we can use imperial measures for length"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133710,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d545d795-62b8-4203-bb53-407c27e17103.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Think about what mm represents.",
+        "B": "Not quite. Remember we can use imperial measures for length",
+        "C": "Tom is correct as feet is a unit of length. Katie is correct because mm represents millimetres, which is a unit of length",
+        "D": "At least one person is correct. Think about what mm represents. Remember we can use imperial measures for length"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131478,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3d268268-82c7-4837-89b0-d9c38f52e5ac.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember that an area is found by multiplying two lengths together. Has Tom or Katie done this?",
+        "B": "Remember that an area is found by multiplying two lengths together. Has Tom or Katie done this?",
+        "C": "Remember that an area is found by multiplying two lengths together. Has Tom or Katie done this?",
+        "D": "Tom is incorrect as metres is a unit of length, not area. Katie is incorrect as cubic centimetres are a unit of volume, not area."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133711,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/da894476-200a-4f4b-9c9e-aa834f0b6cf9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember that an area is found by multiplying two lengths together. Has Tom or Katie done this?",
+        "B": "Tom is incorrect as centimetres is a unit of length. Katie is correct as she has square millimetres, which is a unit of area.",
+        "C": "Remember that an area is found by multiplying two lengths together. Has Tom or Katie done this?",
+        "D": "Remember that an area is found by multiplying two lengths together. Has Tom or Katie done this?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131479,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e5139516-1381-4939-86f4-d002b4c8b431.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Volume measures the space inside of an object. Think about the different ways you measure how much something can hold.",
+        "B": "Volume measures the space inside of an object. Think about the different ways you measure how much something can hold.",
+        "C": "Tom is correct as litres measures volume. Katie is also correct as cubic metres measures volume.",
+        "D": "Volume measures the space inside of an object. At least one of them is correct. Think about the different ways you measure how much something can hold."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133712,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fb1f6f93-bfe4-40c8-9ef5-b490a9335953.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Volume measures the space inside of an object. Think about the different ways you measure how much something can hold.",
+        "B": "Volume measures the space inside of an object. Think about the different ways you measure how much something can hold.",
+        "C": "Volume measures the space inside of an object. Think about the different ways you measure how much something can hold.",
+        "D": "Tom is incorrect as milligrams is a measure of mass (weight). Katie is incorrect as square centimetres is a unit of area, not volume"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131480,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a0c15896-ad10-4789-9838-9b150e06f1fc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A millisecond is one thousandth of a second so is a unit of time. Tom is correct. Whereas m/s means metres per second and is a measure of speed or velocity, so Katie is incorrect.",
+        "B": "Not quite. m/s means metres per second and is a measure of speed or velocity.",
+        "C": "Not quite. This about what units the letters represent, is this a time?",
+        "D": "Not quite. Think about what units the letters represent, is this a time?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133713,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1dd49461-c19d-4114-af4e-acf92a1b36e5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A day is a unit of time. Time can be measured in days.",
+        "B": "Not quite. km/h means kilometres per hour and is a measure of speed or velocity.",
+        "C": "Not quite. Think about what units the letters represent, is this a time?",
+        "D": "Not quite. Think about all the different lengths of time, short and long."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

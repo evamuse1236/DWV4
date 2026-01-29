@@ -1,0 +1,147 @@
+{
+  "shortcode": "vtq",
+  "name": "Multiplication with fractions 2",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 75,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Multiply proper fractions in the form: Fraction × Fraction",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find missing numbers in a fraction multiplication",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 101003,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c9bbf547-7136-4b32-9e69-37a8375daa75.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The calculation is 1/4 ✕ 1/5 = (1 ✕ 1)/(4 ✕ 5) = 1/20.",
+        "B": "I think you've added the denominators, remember you must multiply 1/4 by the number to find a quarter of something",
+        "C": "You appear to have found one quarter of 5, rather than one fifth.",
+        "D": "This represents four fifths, rather than one quarter of one fifth. What operation do we need to do to find a fraction 'of' a number?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101022,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/afae6e80-e4d2-44dd-9ec6-6949c3301ae2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This represents one third of 7, rather than one third of one seventh",
+        "B": "I think you've added the denominators, remember you must multiply 1/3 by the number to find a third of something",
+        "C": "The calculation is 1/3 ✕ 1/7 = (1 ✕ 1)/(3 ✕ 7) = 1/21.",
+        "D": "This represents three sevenths instead of one third of one seventh. What operation do we need to do to find a fraction 'of' a number?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101004,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d4f52ebe-0583-447d-8828-ef65af5231be.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember to multiply the numerators to give the numerator answer, and then repeat this process with the denominators: 4/5 ✕ 2/9 = (4 ✕ 2)/(5 ✕ 9) = 8/45.",
+        "B": "Almost, I think you've added the numerators, rather than multiplying them. To multiply, multiply the two numerators, and multiply the two denominators.",
+        "C": "You appear to have divided instead of multiplied. To multiply, multiply the two numerators, and multiply the two denominators.",
+        "D": "You appear to have added the fractions, rather than multiplied. To multiply, multiply the two numerators, and multiply the two denominators."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101023,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/42f2d699-7a2a-4843-9121-e660ed472f61.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You appear to have added the fractions, rather than multiplied. To multiply, multiply the two numerators, and multiply the two denominators.",
+        "B": "You appear to have divided instead of multiplied. To multiply, multiply the two numerators, and multiply the two denominators.",
+        "C": "Almost, I think you've added the numerators, rather than multiplying them. To multiply, multiply the two numerators, and multiply the two denominators.",
+        "D": "Remember to multiply the numerators to give the numerator answer, and then repeat this process with the denominators, and then to simplify if necessary: 6/7 ✕ 2/3 = (6 ✕ 2)/(7 ✕ 3) = 12/21 = 4/7."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101005,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/be63b558-fff0-4dd1-baa9-5dd02560e351.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This calculation is the same as 6/7 ✕ 6/7 = (6 ✕ 6)/(7 ✕ 7) = 36/49.",
+        "B": "I think you've multiplied both the numerator and denominator by 2. Remember 5² means 5 x 5, not 5 x 2",
+        "C": "Not quite, make sure you square the numerator and the denominator",
+        "D": "Not quite, make sure you square the numerator and the denominator"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101024,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/31ff151b-7f91-42c8-8923-dda1108da9c9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've multiplied both the numerator and denominator by 2. Remember 8² means 8 x 8, not 8 x 2",
+        "B": "Not quite, make sure you square the numerator and the denominator",
+        "C": "This calculation is the same as 8/9 ✕ 8/9 = (8 ✕ 8)/(9 ✕ 9) = 64/81.",
+        "D": "Not quite, make sure you square the numerator and the denominator"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101006,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4c03c4e3-bbc4-4b97-b613-c64a77bed8bc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've found the missing number if this was an addition.",
+        "B": "I think you've found the missing number if this was an division.",
+        "C": "Not quite, multiplying by 2 would give a fraction of 6/5.",
+        "D": "Multiplying a number by its reciprocal will give an answer of 1. The reciprocal of a number is always the numerator and denominator transposed (swapped). This means the reciprocal of 3/5 is 5/3. Substituting 5/3 in the place of ?, we have 3/5 ✕ 5/3 = (3 ✕ 5)/(5 ✕ 3) = 15/15 = 1."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101025,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d100c300-f2c6-4fa8-be0b-286a8e6f299a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've found the missing number if this was an addition.",
+        "B": "A number multiplied by its reciprocal will give an answer of 1. The reciprocal of a number is always the numerator and denominator transposed (swapped). This means the reciprocal of 2/7 is 7/2. Substituting 7/2 in the place of ?, we have 2/7 ✕ 7/2 = (2 ✕ 7)/(7 ✕ 2) = 14/14 = 1.",
+        "C": "I think you've found the missing number if this was an division.",
+        "D": "Not quite, multiplying by 5 would give a fraction of 10/7."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101007,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c8b5a3a1-f3c6-4788-adc6-46c5ecb33f99.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, 3/5 x 2/3 = 6/15, which simplifies to 2/5",
+        "B": "To get the ? on it's own we divide both sides by 3/5. Doing this we get 1/2 ÷ 3/5 which is the same as 1/2 x 5/3 = 5/6",
+        "C": "You appear to have calculated 3/5 x 1/2, you could try dividing one by the other to find the missing value, as you might in a question like 10 x ? = 40, for example.",
+        "D": "There is a fraction that will make this work. You could try testing the options for A,B and C, and seeing which one works."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101026,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9cfba0c2-315e-4ae2-826c-0c8113691586.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To get the ? on it's own we divide both sides by 3/4. Doing this we get 1/3 ÷ 3/4 which is the same as 1/3 x 4/3 = 4/9",
+        "B": "3/4 x 2/3 = 6/12 which simplifies to 1/2, try another of the values.",
+        "C": "You appear to have calculated 3/4 x 1/3, you could try dividing one by the other to find the missing value, as you might in a question like 10 x ? = 40, for example.",
+        "D": "There is a fraction that will make this work. You could try testing the options for A,B and C, and seeing which one works."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

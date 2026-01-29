@@ -1,0 +1,141 @@
+{
+  "shortcode": "bih8",
+  "name": "Multiplying and dividing with powers of 10",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 12,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Multiplying and dividing with powers of 10",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158345,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4da8ba4c-3594-4299-a6f8-f089c629f38e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, this would be the correct answer for 5x10².",
+        "B": "I think you've done 5x10x3. But the 3 is an exponent, so 10³ means 10x10x10.",
+        "C": "10³ = 10x10x10 = 1,000 (three zeros). Therefore, 5x10³ = 5x1,000 = 5,000.",
+        "D": "Not quite, this would be the correct answer for 5x10⁴."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158610,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9705e0da-e7fb-43c2-b8d4-9db1c296e4b3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, this would be the correct answer for 7x10⁴",
+        "B": "Not quite, this would be the correct answer for 7x10².",
+        "C": "I think you've done 7x10x3. But the 3 is an exponent, so 10³ means 10x10x10",
+        "D": "10³ = 10x10x10 = 1,000 (three zeros). Therefore, 7x10³ = 7x1,000 = 7,000."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158346,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4ffae63d-a0ae-4da5-9a7a-24207eac0e42.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, this would be the correct answer for 7.5x10⁴.",
+        "B": "10⁵ = 10x10x10x10x10 = 100,000. Therefore, 7.5x10⁵ = 7.5x100,000 = 750,000 (decimal point moves 5 places to the right).",
+        "C": "Not quite, this would be the correct answer for 75x10⁵. I think you've put five zeros on the end of 75, but for 7.5x10⁵, we need to make sure that we move the decimal point five places to the right.",
+        "D": "I think you've done 7.5x10x5. But the 5 is an exponent, so 10⁵ means 10x10x10x10x10."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158611,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ca466590-4f31-4f2e-9b7a-823a52df7656.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've done 2.8x10x5. But the 5 is an exponent, so 10⁵ means 10x10x10x10x10",
+        "B": "Not quite, this would be the correct answer for 2.8x10⁴.",
+        "C": "10⁵ = 10x10x10x10x10 = 100,000. Therefore, 2.8x10⁵ = 2.8x100,000 = 280,000 (decimal point moves 5 places to the right).",
+        "D": "Not quite, this would be the correct answer for 28x10⁵. I think you've put five zeros on the end of 28, but for 2.8x10⁵, we need to make sure that we move the decimal point five places to the right."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158347,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1216e7d1-209d-43a5-b0a6-1629ef38ff12.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "20.8x10⁴ = 208000 (moving the decimal point 4 places to the right).",
+        "B": "When multiplying by a power of 10, the number of zeros won't be affected by the numbers in front of the decimal point. When multiplying by 10⁴, you need to move the decimal point 4 places to the right.",
+        "C": "Not quite, this would be the correct answer for 208x10⁴. I think you've put four zeros on the end of 208, but for 20.8x10⁴, we need to make sure that we move the decimal point four places to the right.",
+        "D": "I think you may have chosen 1 so that the answer has a total of 4 digits. However, when multiplying by 10⁴, instead, you need to move the decimal point 4 places to the right."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158612,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f0a3cf1b-e898-49e5-b0e8-350d158a11b3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, this would be the correct answer for 134x10⁷. I think you've put seven zeros on the end of 134, but for 13.4x10⁷, we need to make sure that we move the decimal point seven places to the right.",
+        "B": "I think you may have chosen 4 so that the answer has a total of 7 digits. However, when multiplying by 10⁷, instead, you need to move the decimal point 7 places to the right.",
+        "C": "13.4x10⁷ = 134,000,000 (moving the decimal point 7 places to the right).",
+        "D": "When multiplying by a power of 10, the number of zeros won't be affected by the numbers in front of the decimal point. When multiplying by 10⁷, you need to move the decimal point 7 places to the right."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158348,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5a36023a-5340-43ec-a261-9016cc5d122f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've done 4.2÷10÷2. But the 2 is an exponent, so 10² means 10x10 = 100.",
+        "B": "10² = 100. Therefore, 4.2÷10² = 4.2÷100 = 0.042 (moving the decimal point 2 places to the left).",
+        "C": "I think you've put two zeros in the answer because the exponent is 2. But the exponent of 2 means that when dividing by 10² (100), we need to move the decimal point 2 places to the left.",
+        "D": "This would be the correct answer if dividing by 10. But we're dividing by 10² (100), so we need to move the decimal point 2 places to the left."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158613,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/35add84d-893a-445e-88b5-947eeb9dcaff.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "10² = 100. Therefore, 5.6÷10² = 5.6÷100 = 0.056 (moving the decimal point 2 places to the left).",
+        "B": "This would be the correct answer if dividing by 10. But we're dividing by 10² (100), so we need to move the decimal point 2 places to the left.",
+        "C": "I think you've done 5.6÷10÷2. But the 2 is an exponent, so 10² means 10x10 = 100.",
+        "D": "I think you've put two zeros in the answer because the exponent is 2. But the exponent of 2 means that when dividing by 10² (100), we need to move the decimal point 2 places to the left."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158349,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4d5629ce-be20-45d0-b606-32d20106c5fb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Comparing 8.06 and 0.00806, we can see that the decimal point has moved 3 places to the left, so 8.06 has been divided by 10³. So, the value of the star (the exponent) is 3.",
+        "B": "I think you've counted the number of zeros directly after the decimal point in 0.00806. But what you need to do is to compare 8.06 and 0.00806, to see how many places the decimal point has moved.",
+        "C": "Compare 8.06 and 0.00806, to see how many places the decimal point has moved.",
+        "D": "I think you might have counted the number of places after the decimal point. But instead, you need to compare 8.06 and 0.00806, to see how many places the decimal point has moved."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158614,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/13a58aa3-150c-467e-911d-af2c822ce5d0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Compare 90.2 and 0.00902, to see how many places the decimal point has moved.",
+        "B": "I think you've counted the number of zeros directly after the decimal point in 0.00902. But what you need to do is to compare 90.2 and 0.00902, to see how many places the decimal point has moved.",
+        "C": "Comparing 90.2 and 0.00902, we can see that the decimal point has moved 4 places to the left, so 90.2 has been divided by 10⁴. So, the value of the star (the exponent) is 4.",
+        "D": "I think you might have counted the number of places after the decimal point. But instead, you need to compare 90.2 and 0.00902, to see how many places the decimal point has moved."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

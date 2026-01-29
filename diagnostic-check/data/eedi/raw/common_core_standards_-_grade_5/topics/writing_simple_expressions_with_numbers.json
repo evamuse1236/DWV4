@@ -1,0 +1,153 @@
+{
+  "shortcode": "bih0",
+  "name": "Writing simple expressions with numbers",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 3,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Insert brackets to make a calculation correct",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Writing numerical expressions",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Related numerical expressions",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 89316,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f96e110a-4d2a-4c09-bb94-7fd3349fe39d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Because the 12 − 8 is all multiplied by 3, brackets are necessary around it to ensure this happens. The answer to this has 2 added on to it: (12 − 8) ✕ 3 ＋ 2. Because addition does not take priority over brackets or multiplication, it will be done last anyway, so no brackets required.",
+        "B": "You may have written it out in the order it is described without including the necessary brackets. Brackets are needed to ensure the calculations are carried out in the right order.",
+        "C": "Almost. Remember calculations in brackets must be carried out before anything else so here you are suggesting the addition needs to be done before the multiplication.",
+        "D": "Remember your order of operations. Brackets mean you should carry out that calculation first. Check the order in the question."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89328,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ba86d908-f3f5-4c4c-af3b-8d14e5970215.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. Remember calculations in brackets must be carried out before anything else so here you are suggesting the second addition needs to be done before the division.",
+        "B": "Remember your order of operations. Brackets mean you should carry out that calculation first. Check the order in the question.",
+        "C": "Because the 22 ＋ 8 is all divided by 3, brackets are necessary around it to ensure this happens. The answer to this has 5 added on to it: (22 ＋ 8) ÷ 3 ＋ 5. Because the last addition does not take priority over brackets or multiplication, it will be the last step anyway, so no brackets required.",
+        "D": "You may have written it out in the order it is described without including the necessary brackets. Brackets are needed to ensure the calculations are carried out in the right order."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158311,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0f7344ec-dff1-45d5-ae41-af0162ad7c3e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. PEMDAS means that we would do the multiplication first in this expression. However, the question is telling us to do the addition first. What can we include in the expression to ensure that the addition is done first?",
+        "B": "The question is asking you to multiply by 5, not add it. Also, the question is telling us to do the addition first. What can we include in the expression to ensure that the addition is done before the multiplication?",
+        "C": "We need to make sure that we add the 6 and 3 together before multiplying by 5. The parentheses tell us to do the addition first, so this is correct!",
+        "D": "Not quite. PEMDAS means that we would do the multiplication first in this expression. However, the question is telling us to do the addition first. What can we include in the expression to ensure that the addition is done first?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158703,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fb3439a5-2d37-4050-a919-4afc816fda93.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We need to make sure that we add the 8 and 2 together before multiplying by 3. The parentheses tell us to do the addition first, so this is correct!",
+        "B": "The question is asking you to multiply by 3, not add it. Also, the question is telling us to do the addition first. What can we include in the expression to ensure that the addition is done before the multiplication?",
+        "C": "Not quite. PEMDAS means that we would do the multiplication first in this expression. However, the question is telling us to do the addition first. What can we include in the expression to ensure that the addition is done first?",
+        "D": "Not quite. PEMDAS means that we would do the multiplication first in this expression. However, the question is telling us to do the addition first. What can we include in the expression to ensure that the addition is done first?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158312,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a8bdd0c5-0302-4a98-83bf-631f013e6d05.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We need to divide 8 by 3 first and then subtract 2. PEMDAS tells us to do the division before the subtraction, so this expression means that we will carry out the correct calculations in the correct order.",
+        "B": "The question is asking you to first divide 8 by 3, but you have subtracted 3 from 8. Also check PEMDAS to make sure that the calculation will be carried out in the right order.",
+        "C": "Using PEMDAS, the first thing you would do in this expression is 8-2, but the question is asking you to first divide 8 by 3.",
+        "D": "Nearly correct. Using PEMDAS, the first calculation you would do in this expression is 8 ÷ 3, which IS what the question is asking us to do. However, we then need to subtract 2 from this, but you have subtracted 8 ÷ 3 from 2 instead, which would result in a different answer."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158704,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/949b6fe6-8ef6-4d3e-863e-a1a2c202989a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The question is asking you to first divide 7 by 2, but you have subtracted 2 from 7. Also check PEMDAS to make sure that the calculation will be carried out in the right order.",
+        "B": "We need to divide 7 by 2 first and then subtract 5. PEMDAS tells us to do the division before the subtraction, so this expression means that we will carry out the correct calculations in the correct order.",
+        "C": "Nearly correct. Using PEMDAS, the first calculation you would do in this expression is 7 ÷ 2, which IS what the question is asking us to do. However, we then need to subtract 5 from this, but you have subtracted 7 ÷ 2 from 5 instead, which would result in a different answer.",
+        "D": "Using PEMDAS, the first thing you would do in this expression is 7-5, but the question is asking you to first divide 7 by 2. The answer wouldn't be an integer, but that's ok."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158313,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e0bec3c0-b96a-4a0b-afd8-8e4ec882045a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The first step is to calculate the product of 3 and 5: 3 x 5. We then subtract this from 20: 20 - 3x5. No parentheses are needed because PEMDAS tells us to carry out multiplication before subtraction.",
+        "B": "Almost! You have subtracted 20 from 3x5, but we need to subtract 3x5 from 20. Each of these will give a different answer.",
+        "C": "Almost! But, remember that 'product' means 'multiply'.",
+        "D": "Remember that 'product' means 'multiply'. Also, you have subtracted 20 (___ - 20), but we need to subtract from 20 (20 - ___). Each of these will give a different answer."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158705,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/94e2af18-eba3-4ada-8e88-20531a3f56fc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember that 'product' means 'multiply'. Also, you have subtracted 50 (___ - 50), but we need to subtract from 50 (50 - ___). Each of these will give a different answer.",
+        "B": "Nearly correct! You have subtracted 50 from 4x3, but we need to subtract 4x3 from 50. Each of these will give a different answer.",
+        "C": "Nearly correct! But, remember that 'product' means 'multiply'.",
+        "D": "The first step is to calculate the product of 4 and 3: 4 x 3. We then subtract this from 50: 50 - 4 x 3. No parentheses are needed because PEMDAS tells us to carry out multiplication before subtraction."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158314,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b3c9fb8f-55a7-4a6b-9a1c-0e139a95361f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Comparing the 2 calculations, the only difference is the \"7 x\". So, we're not adding 7, we're multiplying by 7 (making the answer 7 times bigger).",
+        "B": "Comparing the 2 calculations, the only difference is the \"7 x\". When we multiply by 7, we are making the answer 7 times bigger. Therefore, a is 7 times bigger than b.",
+        "C": "Not quite, you've said that b will be bigger than a. But, comparing the 2 calculations, they are the same except that a has this extra part: \"7 x\". What effect will that have on a?",
+        "D": "Comparing the 2 calculations, the only difference is the \"7 x\". So, we're not adding 7, we're multiplying by 7 (making the answer 7 times bigger). What effect will this have on a?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158706,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/75b0081a-41a5-4c20-841c-4af74b0d1a60.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Comparing the 2 calculations, the only difference is the \"3 x\". So, we're not adding 3, we're multiplying by 3. What effect will this have? Will a or b be bigger in the end?",
+        "B": "Not quite, you've said that a will be bigger than b. But, comparing the 2 calculations, they are the same except that b has this extra part: \"3 x\". What effect will that have?",
+        "C": "Comparing the 2 calculations, the only difference is the \"3 x\". When we multiply by 3, we are making the answer 3 times as big. Therefore, b is 3 times as big as b.",
+        "D": "Comparing the 2 calculations, the only difference is the \"3 x\". So, we're not adding 3, we're multiplying by 3. What effect will this have?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

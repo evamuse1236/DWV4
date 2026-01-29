@@ -1,0 +1,141 @@
+{
+  "shortcode": "bi88",
+  "name": "Word problems involving lengths",
+  "collectionId": 35,
+  "level": 1,
+  "sequence": 26,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Solve simple word problems involving integer lengths",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 159377,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/750e4631-5aca-4c7b-87e1-ec589d11fd90.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The grasshopper jumps 8cm and then 6cm. 8 + 6 = 14, so that's 14cm altogether.",
+        "B": "I think you miscounted the cm... If you're using the ruler, make sure you jump along once for every cm, 8 jumps and then 6 jumps.",
+        "C": "Maybe you thought the grasshopper jumped backwards 6cm? Both of these jumps are in the same direction, so we add them together to find out where the grasshopper lands.",
+        "D": "I think you miscounted the cm... If you're using the ruler, make sure you jump along once for every cm, 8 jumps and then 6 jumps."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159599,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1259f64b-7110-4756-a737-65b4a7a9b368.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Maybe you thought the toad jumped backwards 1cm? Both of these jumps are in the same direction, so we add them together to find out where the toad lands.",
+        "B": "I think you miscounted the cm... If you're using the ruler, make sure you jump along once for every cm, starting at 1 cm and then making 9 jumps and then 8 jumps.",
+        "C": "The toad starts at 1cm, jumps 8cm and then 6cm. 1 + 9 + 8 = 18, so that's 18cm altogether.",
+        "D": "I think you began at 0cm... Where does the toad begin?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 159378,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d332a895-f66d-4af6-a384-095fe786f066.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you added all the lengths, but this only works if all the jumps are forward. If the grasshopper jumps backwards, we need to subtract that from the total.",
+        "B": "The grasshopper starts at 5cm and jumps forward 7cm . 5 + 7 = 12 so then it's at 12cm. It jumps back 3cm, 12 - 3 = 9 so now it's at 9cm.",
+        "C": "Not quite - did you notice that the grasshopper didn't start at 0? So where would it be after jumping forward 7cm?",
+        "D": "Not quite - make sure you are moving 1 jump for every 1 cm. 7 jumps forward from 5cm, then 3 jumps backwards."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159600,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a2d45217-e43d-4b9f-bba5-95dfa67ee7e7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite - did you notice that the frog didn't start at 0? So where would it be after jumping forward 8cm?",
+        "B": "Not quite - make sure you are moving 1 jump for every 1 cm. 8 jumps forward from 7cm, then 4 jumps backwards.",
+        "C": "I think you added all the lengths, but this only works if all the jumps are forward. If the frog jumps backwards, we need to subtract that from the total.",
+        "D": "The frog starts at 7 cm and jumps forward 8cm . 7 + 8 = 15 so then it's at 15cm. It jumps back 4cm, 15 - 4 = 11 so now it's at 11cm."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 159379,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e5e7df0b-925e-4da8-92ba-237ee8618f1e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost, but I think you forgot to carry the ten! 6 + 5 = 11, so that gives us an extra 10 to add with the 50 and the 30.",
+        "B": "You have subtracted, but \"how long in total?\" tells us to add the lengths.",
+        "C": "Check your adding - maybe try a written method.",
+        "D": "50 + 30 = 80 and 5 + 6 = 11, so altogether the lines are 80 + 11 = 91m long."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159601,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1ac79960-7143-4a45-b89f-3107781ba90b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "50 + 20 = 70 and 4 + 8 = 12, so altogether the lines are 70 + 12 = 82m long.",
+        "B": "Check your adding - maybe try a written method.",
+        "C": "You have subtracted, but \"how long in total?\" tells us to add the lengths.",
+        "D": "Almost, but I think you forgot to carry the ten! 4 + 8 = 12, so that gives us an extra 10 to add with the 20 and the 50."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 159380,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/caba1adb-c09c-4503-8fcf-4ca5a3e71611.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you did 9 - 1 because 1 is smaller, but you need to subtract all of 39 from all of 61. Remember you can borrow.",
+        "B": "Not quite - I think you forgot to borrow. 9 is bigger than 1 so we do 11 - 9 instead, giving 2 for the ones digit, but that means there's only 5 - 3 left for the tens digit, instead of 6 - 3.",
+        "C": "You have added their heights, but we're finding the difference between them so we need to subtract.",
+        "D": "61 - 39 = 22, so the difference between their heights is 22 inches."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159602,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/33e892b9-9ecd-41cc-ba76-1e50af8ef2da.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have added their heights, but we're finding the difference between them so we need to subtract.",
+        "B": "83 - 47 = 36, so the difference between their heights is 36 inches.",
+        "C": "I think you did 7 - 3 because 3 is smaller, but you need to subtract all of 47 from all of 83. Remember you can borrow.",
+        "D": "Not quite - I think you forgot to borrow. 7 is bigger than 3 so we do 13 - 7 instead, giving 6 for the ones digit, but that means there's only 7 - 4 left for the tens digit, instead of 8 - 4."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 159381,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b6f2c070-c3a7-412e-8543-7254c46d8add.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Read the question carefully - Dre's field isn't 27m, it's 27m longer than Mo's field. How long would that be?",
+        "B": "You have subtracted 27m from the length of Mo's field, but Dre's field is 27m longer, so we want to add.",
+        "C": "Dre's field is 27m longer than 65m. 65 + 27 = 92, so his field is 92m long.",
+        "D": "Almost, but I think you forgot to carry the ten! 5 + 7 = 12 so that gives us an extra 10 to add with the 60 and the 20."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159603,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1f07572e-ab63-48f2-a2ed-321f3d81a55e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Eddy's field is 18m shorter than 47m. 47 - 18 = 29, so his field is 29m long.",
+        "B": "Almost, but I think you forgot to borrow the ten! 7 - 8 cannot be done, so we need to borrow a ten from 47 to get 17 - 8 = 9. Then we subtract our remaining tens (30 - 10) and add the nine to get our answer...",
+        "C": "Read the question carefully - Eddy's field isn't 18m, it's 18m shorter than Billy's field. How long would that be?",
+        "D": "You have added 18m from the length of Billy's field, but Eddy's field is 18m shorter, so we want to subtract..."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

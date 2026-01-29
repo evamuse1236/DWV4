@@ -1,0 +1,153 @@
+{
+  "shortcode": "ehjc",
+  "name": "Box plots and their data sets",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 230,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate the interquartile range from a box plot",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Draw a box plot from raw data",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify the data set from a box plot",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166775,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dce2d0c1-31fc-4a1b-a526-8b7c2ded8dda.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The minimum is 10, maximum is 50, median is 25. Quartile 1 is 12.5 and Quartile 3 is 45. This plot has the quartile and median lines plotted correctly as well as the whiskers extended to the minimum and maximum values.",
+        "B": "I think you have confused median and mean. Remember, median is the middle of the ordered set of data.",
+        "C": "Not quite. When you find your lower and upper quartiles, you need to find the middle of the values below and above the median.",
+        "D": "It looks like you have drawn the box from the minimum to the maximum value, but you forgot the whiskers mark the minimum and maximum values."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167025,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e353849e-9662-42d8-a2af-b8675812ae16.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have confused median and mean. Remember, median is the middle of the ordered set of data.",
+        "B": "It looks like you have drawn the box from the minimum to the maximum value, but you forgot the whiskers mark the minimum and maximum values.",
+        "C": "The minimum is 4, maximum is 32, median is 18. Quartile 1 is 7 and Quartile 3 is 31. This plot has the quartile and median lines plotted correctly as well as the whiskers extended to the minimum and maximum values.",
+        "D": "Not quite. When you find your lower and upper quartiles, you need to find the middle of the values below and above the median."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166776,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4ea7ad90-b204-4d5d-9fc9-a374768dcd23.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. When you find your lower and upper quartiles, you need to find the middle of the values below and above the median.",
+        "B": "Once the data was put in order, the minimum was 78, the maximum was 95, the median was 86.5. The lower quartile was 81 and the upper quartile was 92. This plot has the quartile and median lines plotted correctly as well as the whiskers extended to the minimum and maximum values.",
+        "C": "Remember, the median is the middle of the ordered set of values. If there is an even number of values, the median will be the average of the two middle numbers.",
+        "D": "It looks like you have drawn the box from the minimum to the maximum value, but you forgot the whiskers mark the minimum and maximum values."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167026,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2903e7b1-6d76-4131-9281-030002d2f722.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember, the median is the middle of the ordered set of values. If there is an even number of values, the median will be the average of the two middle numbers.",
+        "B": "Not quite. When you find your lower and upper quartiles, you need to find the middle of the values below and above the median.",
+        "C": "It looks like you have drawn the box from the minimum to the maximum value, but you forgot the whiskers mark the minimum and maximum values.",
+        "D": "Once the data was put in order, the minimum was 190, the maximum was 205, the median was 196.5. The lower quartile was 192 and the upper quartile was 201. This plot has the quartile and median lines plotted correctly as well as the whiskers extended to the minimum and maximum values."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166777,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d0a93fdd-4ff3-4a95-bd24-6bfc938d38bb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This plot shows a minimum of 7, a maximum of 22, a median of 14, a lower quartile of 10 and an upper quartile of 18. This data set matches the plot.",
+        "B": "While this data set has the correct minimum, maximum, and median, think carefully of how to calculate quartiles. Would the middle of 7 and 10 give us a lower quartile of 10?",
+        "C": "While this data set has the correct minimum, maximum, and median, think carefully of how to calculate quartiles. Would the middle of 7, 8, 9 give us a lower quartile of 10?",
+        "D": "This data set has the correct median, but doesn't show the correct minimum and maximum to reflect the box plot."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167027,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/66b2f0db-9ceb-4a07-a706-cb5fd343652f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This data set has the correct median, but doesn't show the correct minimum and maximum to reflect the box plot.",
+        "B": "This plot shows a minimum of 22, a maximum of 45, a median of 32, a lower quartile of 25 and an upper quartile of 40. This data set matches the plot.",
+        "C": "While this data set has the correct minimum, maximum, and median, think carefully of how to calculate quartiles. Would the middle of 22 and 25 give us a lower quartile of 25?",
+        "D": "While this data set has the correct minimum, maximum, and median, think carefully of how to calculate quartiles. Would the middle of 22, 28, 30 give us a lower quartile of 25?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166778,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/63650b10-ff38-4ded-a92b-3a7cbaf03fc4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. When you find your lower and upper quartiles, you need to find the middle of the values below and above the median.",
+        "B": "This data set has the correct median, but doesn't show the correct minimum and maximum to reflect the box plot.",
+        "C": "While this data set has the correct minimum, maximum, and median, think carefully of how to calculate quartiles. Would the middle of 15 and 25 give us a lower quartile of 25?",
+        "D": "This plot shows a minimum of 15, a maximum of 75, a median of 50, a lower quartile of 25 and an upper quartile of 60. This data set matches the plot."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167028,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/04288384-b519-4267-b181-e36e1d30e138.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This plot shows a minimum of 5, a maximum of 35, a median of 25, a lower quartile of 10 and an upper quartile of 30. This data set matches the plot.",
+        "B": "This data set has the correct median, but doesn't show the correct minimum and maximum to reflect the box plot.",
+        "C": "While this data set has the correct minimum, maximum, and median, think carefully of how to calculate quartiles. Would the middle of 5 and 10 give us a lower quartile of 10?",
+        "D": "Not quite. When you find your lower and upper quartiles, you need to find the middle of the values below and above the median."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166779,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a8ad2ace-a3d7-4282-8925-53a44488ba10.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Close! Remember interquartile range is Q3 - Q1. What are the values for Q3 and Q1?",
+        "B": "Close! The range is the maximum subtract the minimum. What is the maximum and what is the minimum?",
+        "C": "The range is the maximum subtract the minimum and 70 - 30 = 40. The interquartile range is Q3 - Q1 and 60 - 40 = 20. Therefore, both the range and interquartile range are correct!",
+        "D": "Remember the range is the maximum subtract the minimum. The interquartile range is Q3 - Q1. First find the maximum, minimum, Q1 and Q3 from the plot."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167029,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ec73f09f-018e-4ad2-9219-0fbb34636096.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Close! The range is the maximum subtract the minimum. What is the maximum and what is the minimum?",
+        "B": "Remember the range is the maximum subtract the minimum. The interquartile range is Q3 - Q1. First find the maximum, minimum, Q1 and Q3 from the plot.",
+        "C": "The range is the maximum subtract the minimum and 100 - 50 = 50. The interquartile range is Q3 - Q1 and 90 - 60 = 30. So, the interquartile range is correct but the range is incorrect.",
+        "D": "Close! Remember interquartile range is Q3 - Q1. What is the value for Q3 and Q1?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

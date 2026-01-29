@@ -1,0 +1,1390 @@
+{
+  "source": "Brilliant.org",
+  "course": "Arithmetic Thinking",
+  "course_slug": "math-fundamentals",
+  "course_url": "https://brilliant.org/courses/math-fundamentals/",
+  "collected_at": "2026-01-27T13:00:35.660197",
+  "collection_method": "Scraped from course page via browser automation",
+  "total_lessons": 86,
+  "total_levels": 17,
+  "previously_collected_via_clipboard": 69,
+  "newly_discovered_lessons": 17,
+  "levels": [
+    {
+      "level": 1,
+      "chapter_name": "Visualize Fractions",
+      "chapter_slug": "mt-fractions-intro",
+      "chapter_url": "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/",
+      "lesson_count": 5,
+      "lessons": [
+        {
+          "index": 1,
+          "title": "Finding Half",
+          "lesson_slug": "find-half",
+          "url": "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/find-half/",
+          "mapped_los": []
+        },
+        {
+          "index": 2,
+          "title": "Combining Parts",
+          "lesson_slug": "combining-parts",
+          "url": "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/combining-parts/",
+          "mapped_los": []
+        },
+        {
+          "index": 3,
+          "title": "Splitting Parts",
+          "lesson_slug": "take-more-than-one",
+          "url": "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/take-more-than-one/",
+          "mapped_los": []
+        },
+        {
+          "index": 4,
+          "title": "Splitting and Combining",
+          "lesson_slug": "shade-this-much",
+          "url": "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/shade-this-much/",
+          "mapped_los": []
+        },
+        {
+          "index": 5,
+          "title": "Equal Parts",
+          "lesson_slug": "equal-nths",
+          "url": "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/equal-nths/",
+          "mapped_los": []
+        }
+      ],
+      "review_url": "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/practice/math-fundamentals-level-1-review-1/"
+    },
+    {
+      "level": 2,
+      "chapter_name": "Equivalent Fractions",
+      "chapter_slug": "equivalent-fractions",
+      "chapter_url": "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/",
+      "lesson_count": 6,
+      "lessons": [
+        {
+          "index": 6,
+          "title": "Sixths and Twelfths",
+          "lesson_slug": "equal-fractions",
+          "url": "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/equal-fractions/",
+          "mapped_los": []
+        },
+        {
+          "index": 7,
+          "title": "Eighths and Sixteenths",
+          "lesson_slug": "equal-fractions-2",
+          "url": "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/equal-fractions-2/",
+          "mapped_los": []
+        },
+        {
+          "index": 8,
+          "title": "Making Equivalent Fractions",
+          "lesson_slug": "making-equivalent",
+          "url": "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/making-equivalent/",
+          "mapped_los": []
+        },
+        {
+          "index": 9,
+          "title": "Simplifying Fractions",
+          "lesson_slug": "simplifying-fractions",
+          "url": "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/simplifying-fractions/",
+          "mapped_los": []
+        },
+        {
+          "index": 10,
+          "title": "Equivalent Fractions",
+          "lesson_slug": "equivalent-fractions-3",
+          "url": "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/equivalent-fractions-3/",
+          "mapped_los": []
+        },
+        {
+          "index": 11,
+          "title": "Identifying Equivalents",
+          "lesson_slug": "wodb-equivalents",
+          "url": "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/wodb-equivalents/",
+          "mapped_los": []
+        }
+      ],
+      "review_url": "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/practice/math-fundamentals-level-2-review-3/"
+    },
+    {
+      "level": 3,
+      "chapter_name": "Comparing Fractions",
+      "chapter_slug": "comparing-fractions",
+      "chapter_url": "https://brilliant.org/courses/math-fundamentals/comparing-fractions/",
+      "lesson_count": 5,
+      "lessons": [
+        {
+          "index": 12,
+          "title": "Comparing Numerators",
+          "lesson_slug": "comparing-numerators",
+          "url": "https://brilliant.org/courses/math-fundamentals/comparing-fractions/comparing-numerators/",
+          "mapped_los": []
+        },
+        {
+          "index": 13,
+          "title": "Comparing Denominators",
+          "lesson_slug": "same-numerator",
+          "url": "https://brilliant.org/courses/math-fundamentals/comparing-fractions/same-numerator/",
+          "mapped_los": []
+        },
+        {
+          "index": 14,
+          "title": "Comparing Equivalents",
+          "lesson_slug": "den-multiples",
+          "url": "https://brilliant.org/courses/math-fundamentals/comparing-fractions/den-multiples/",
+          "mapped_los": []
+        },
+        {
+          "index": 15,
+          "title": "Comparing More Equivalents",
+          "lesson_slug": "not-multiples",
+          "url": "https://brilliant.org/courses/math-fundamentals/comparing-fractions/not-multiples/",
+          "mapped_los": []
+        },
+        {
+          "index": 16,
+          "title": "Identifying the Greatest",
+          "lesson_slug": "greatest-fraction",
+          "url": "https://brilliant.org/courses/math-fundamentals/comparing-fractions/greatest-fraction/",
+          "mapped_los": []
+        }
+      ],
+      "review_url": "https://brilliant.org/courses/math-fundamentals/comparing-fractions/practice/math-fundamentals-level-3-review-3/"
+    },
+    {
+      "level": 4,
+      "chapter_name": "Adding Fractions",
+      "chapter_slug": "adding-fractions",
+      "chapter_url": "https://brilliant.org/courses/math-fundamentals/adding-fractions/",
+      "lesson_count": 5,
+      "lessons": [
+        {
+          "index": 17,
+          "title": "Adding Fractions",
+          "lesson_slug": "adding-fractions",
+          "url": "https://brilliant.org/courses/math-fundamentals/adding-fractions/adding-fractions/",
+          "mapped_los": []
+        },
+        {
+          "index": 18,
+          "title": "Adding Same-Sized Fractions",
+          "lesson_slug": "add-unit-fractions",
+          "url": "https://brilliant.org/courses/math-fundamentals/adding-fractions/add-unit-fractions/",
+          "mapped_los": []
+        },
+        {
+          "index": 19,
+          "title": "Adding Unlike Parts",
+          "lesson_slug": "adding-different",
+          "url": "https://brilliant.org/courses/math-fundamentals/adding-fractions/adding-different/",
+          "mapped_los": []
+        },
+        {
+          "index": 20,
+          "title": "Adding Unit Fractions",
+          "lesson_slug": "adding-nonmultiples",
+          "url": "https://brilliant.org/courses/math-fundamentals/adding-fractions/adding-nonmultiples/",
+          "mapped_los": []
+        },
+        {
+          "index": 21,
+          "title": "Adding Any Fractions",
+          "lesson_slug": "adding-unlike",
+          "url": "https://brilliant.org/courses/math-fundamentals/adding-fractions/adding-unlike/",
+          "mapped_los": []
+        }
+      ],
+      "review_url": "https://brilliant.org/courses/math-fundamentals/adding-fractions/practice/math-fundamentals-level-4-review-3/"
+    },
+    {
+      "level": 5,
+      "chapter_name": "Multiplying Fractions",
+      "chapter_slug": "multiplying-fractions",
+      "chapter_url": "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/",
+      "lesson_count": 6,
+      "lessons": [
+        {
+          "index": 22,
+          "title": "Multiples of Fractions",
+          "lesson_slug": "fraction-by-integer",
+          "url": "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/fraction-by-integer/",
+          "mapped_los": []
+        },
+        {
+          "index": 23,
+          "title": "Expressing Multiples",
+          "lesson_slug": "expressing-multiples",
+          "url": "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/expressing-multiples/",
+          "mapped_los": []
+        },
+        {
+          "index": 24,
+          "title": "Fractions of Unit Fractions",
+          "lesson_slug": "fractions-of-fractions",
+          "url": "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/fractions-of-fractions/",
+          "mapped_los": []
+        },
+        {
+          "index": 25,
+          "title": "Products of Unit Fractions",
+          "lesson_slug": "expressing-fouf",
+          "url": "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/expressing-fouf/",
+          "mapped_los": []
+        },
+        {
+          "index": 26,
+          "title": "Fraction of Any Fraction",
+          "lesson_slug": "fractions-of-fractions-2",
+          "url": "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/fractions-of-fractions-2/",
+          "mapped_los": []
+        },
+        {
+          "index": 27,
+          "title": "Multiplying Fractions",
+          "lesson_slug": "multiplying-fractions",
+          "url": "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/multiplying-fractions/",
+          "mapped_los": []
+        }
+      ],
+      "review_url": "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/practice/math-fundamentals-level-5-review-3/"
+    },
+    {
+      "level": 6,
+      "chapter_name": "Percentages and Fractions",
+      "chapter_slug": "percentages-using-percentages",
+      "chapter_url": "https://brilliant.org/courses/math-fundamentals/percentages-using-percentages/",
+      "lesson_count": 4,
+      "lessons": [
+        {
+          "index": 28,
+          "title": "Intro to Percentages",
+          "lesson_slug": "intro-to-percentages",
+          "url": "https://brilliant.org/courses/math-fundamentals/percentages-using-percentages/intro-to-percentages/",
+          "mapped_los": []
+        },
+        {
+          "index": 29,
+          "title": "Working out Percentages",
+          "lesson_slug": "calculating-percentages",
+          "url": "https://brilliant.org/courses/math-fundamentals/percentages-using-percentages/calculating-percentages/",
+          "mapped_los": []
+        },
+        {
+          "index": 30,
+          "title": "Percentages and Batteries",
+          "lesson_slug": "battery-percentages",
+          "url": "https://brilliant.org/courses/math-fundamentals/percentages-using-percentages/battery-percentages/",
+          "mapped_los": []
+        },
+        {
+          "index": 31,
+          "title": "Percentages as Fractions",
+          "lesson_slug": "fraction-equivalence-blanks",
+          "url": "https://brilliant.org/courses/math-fundamentals/percentages-using-percentages/fraction-equivalence-blanks/",
+          "mapped_los": []
+        }
+      ],
+      "review_url": "https://brilliant.org/courses/math-fundamentals/percentages-using-percentages/practice/math-fundamentals-level-6-review-3/"
+    },
+    {
+      "level": 7,
+      "chapter_name": "Percent Increase",
+      "chapter_slug": "percentages-percent-increase",
+      "chapter_url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-increase/",
+      "lesson_count": 3,
+      "lessons": [
+        {
+          "index": 32,
+          "title": "Percent Increase",
+          "lesson_slug": "percent-increase",
+          "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-increase/percent-increase/",
+          "mapped_los": []
+        },
+        {
+          "index": 33,
+          "title": "Price Increase",
+          "lesson_slug": "price-increase",
+          "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-increase/price-increase/",
+          "mapped_los": []
+        },
+        {
+          "index": 34,
+          "title": "Calculating Percent Increase",
+          "lesson_slug": "percent-increase-blanks",
+          "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-increase/percent-increase-blanks/",
+          "mapped_los": []
+        }
+      ],
+      "review_url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-increase/practice/math-fundamentals-level-7-review-3/"
+    },
+    {
+      "level": 8,
+      "chapter_name": "Tenths, Hundredths and Decimals",
+      "chapter_slug": "percentages-computing-percentages",
+      "chapter_url": "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/",
+      "lesson_count": 5,
+      "lessons": [
+        {
+          "index": 35,
+          "title": "Percentages as Tenths",
+          "lesson_slug": "tenths-equivalence",
+          "url": "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/tenths-equivalence/",
+          "mapped_los": []
+        },
+        {
+          "index": 36,
+          "title": "Percentages as Hundredths",
+          "lesson_slug": "hundredths-equivalence",
+          "url": "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/hundredths-equivalence/",
+          "mapped_los": []
+        },
+        {
+          "index": 37,
+          "title": "Finding the Percentage",
+          "lesson_slug": "finding-the-percentage",
+          "url": "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/finding-the-percentage/",
+          "mapped_los": []
+        },
+        {
+          "index": 38,
+          "title": "Percentages as Decimals",
+          "lesson_slug": "converting-to-decimals",
+          "url": "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/converting-to-decimals/",
+          "mapped_los": []
+        },
+        {
+          "index": 39,
+          "title": "Calculating the Percentage",
+          "lesson_slug": "calculating-the-percentage",
+          "url": "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/calculating-the-percentage/",
+          "mapped_los": []
+        }
+      ],
+      "review_url": "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/practice/math-fundamentals-level-8-review-3/"
+    },
+    {
+      "level": 9,
+      "chapter_name": "Percent Decrease",
+      "chapter_slug": "percentages-percent-decrease",
+      "chapter_url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-decrease/",
+      "lesson_count": 4,
+      "lessons": [
+        {
+          "index": 40,
+          "title": "Percent Decrease",
+          "lesson_slug": "percent-decrease",
+          "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-decrease/percent-decrease/",
+          "mapped_los": []
+        },
+        {
+          "index": 41,
+          "title": "Calculating Percent Decrease",
+          "lesson_slug": "percentage-decrease-blanks",
+          "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-decrease/percentage-decrease-blanks/",
+          "mapped_los": []
+        },
+        {
+          "index": 42,
+          "title": "Finding the Original Price",
+          "lesson_slug": "finding-the-original-price",
+          "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-decrease/finding-the-original-price/",
+          "mapped_los": []
+        },
+        {
+          "index": 43,
+          "title": "Reversing Percentages",
+          "lesson_slug": "reversing-percentages",
+          "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-decrease/reversing-percentages/",
+          "mapped_los": []
+        }
+      ],
+      "review_url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-decrease/practice/math-fundamentals-level-9-review-3/"
+    },
+    {
+      "level": 10,
+      "chapter_name": "Compound Changes",
+      "chapter_slug": "percentages-compound-changes",
+      "chapter_url": "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/",
+      "lesson_count": 5,
+      "lessons": [
+        {
+          "index": 44,
+          "title": "Compound Changes",
+          "lesson_slug": "compound-changes-receipts",
+          "url": "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/compound-changes-receipts/",
+          "mapped_los": []
+        },
+        {
+          "index": 45,
+          "title": "Compound Calculations",
+          "lesson_slug": "compound-calculations-receipts",
+          "url": "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/compound-calculations-receipts/",
+          "mapped_los": []
+        },
+        {
+          "index": 46,
+          "title": "Splitting Percent Changes",
+          "lesson_slug": "splitting-percent-changes",
+          "url": "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/splitting-percent-changes/",
+          "mapped_los": []
+        },
+        {
+          "index": 47,
+          "title": "Growing and Shrinking",
+          "lesson_slug": "compound-calculations-bars",
+          "url": "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/compound-calculations-bars/",
+          "mapped_los": []
+        },
+        {
+          "index": 48,
+          "title": "Exponential Growth",
+          "lesson_slug": "exponential-growth-percentages",
+          "url": "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/exponential-growth-percentages/",
+          "mapped_los": []
+        }
+      ],
+      "review_url": "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/practice/math-fundamentals-level-10-review-1/"
+    },
+    {
+      "level": 11,
+      "chapter_name": "Introducing Negatives",
+      "chapter_slug": "negative-numbers-intro-to-negatives",
+      "chapter_url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/",
+      "lesson_count": 4,
+      "lessons": [
+        {
+          "index": 49,
+          "title": "Positives and Negatives",
+          "lesson_slug": "numeric-expressions-1",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-1/",
+          "mapped_los": []
+        },
+        {
+          "index": 50,
+          "title": "Negative Numbers",
+          "lesson_slug": "numeric-expressions-3",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-3/",
+          "mapped_los": []
+        },
+        {
+          "index": 51,
+          "title": "Making Integers",
+          "lesson_slug": "numeric-expressions-2",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-2/",
+          "mapped_los": []
+        },
+        {
+          "index": 52,
+          "title": "Addition",
+          "lesson_slug": "numeric-expressions-4",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-4/",
+          "mapped_los": []
+        }
+      ],
+      "review_url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/practice/math-fundamentals-level-11-review-1/"
+    },
+    {
+      "level": 12,
+      "chapter_name": "Addition, Opposites, and Zero",
+      "chapter_slug": "negative-numbers-negative-number-addition",
+      "chapter_url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/",
+      "lesson_count": 6,
+      "lessons": [
+        {
+          "index": 53,
+          "title": "Increasing Value",
+          "lesson_slug": "numeric-expressions-5",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-5/",
+          "mapped_los": []
+        },
+        {
+          "index": 54,
+          "title": "Decreasing Value",
+          "lesson_slug": "numeric-expressions-6",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-6/",
+          "mapped_los": []
+        },
+        {
+          "index": 55,
+          "title": "Zero",
+          "lesson_slug": "numeric-expressions-7",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-7/",
+          "mapped_los": []
+        },
+        {
+          "index": 56,
+          "title": "Opposites",
+          "lesson_slug": "numeric-expressions-8",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-8/",
+          "mapped_los": []
+        },
+        {
+          "index": 57,
+          "title": "Adding Negatives",
+          "lesson_slug": "numeric-expressions-9",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-9/",
+          "mapped_los": []
+        },
+        {
+          "index": 58,
+          "title": "Adding Negatives and Positives",
+          "lesson_slug": "numeric-expressions-10",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-10/",
+          "mapped_los": []
+        }
+      ],
+      "review_url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/practice/math-fundamentals-level-12-review-1/"
+    },
+    {
+      "level": 13,
+      "chapter_name": "Subtracting Integers",
+      "chapter_slug": "negative-numbers-subtracting-integers",
+      "chapter_url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/",
+      "lesson_count": 6,
+      "lessons": [
+        {
+          "index": 59,
+          "title": "Missing Values",
+          "lesson_slug": "numeric-expressions-11",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-11/",
+          "mapped_los": []
+        },
+        {
+          "index": 60,
+          "title": "Subtracting Positives",
+          "lesson_slug": "numeric-expressions-12",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-12/",
+          "mapped_los": []
+        },
+        {
+          "index": 61,
+          "title": "Subtracting Negatives",
+          "lesson_slug": "numeric-expressions-13",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-13/",
+          "mapped_los": []
+        },
+        {
+          "index": 62,
+          "title": "Subtracting From Zero",
+          "lesson_slug": "numeric-expressions-16b",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-16b/",
+          "mapped_los": []
+        },
+        {
+          "index": 63,
+          "title": "Subtracting Positives 2",
+          "lesson_slug": "numeric-expressions-15",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-15/",
+          "mapped_los": []
+        },
+        {
+          "index": 64,
+          "title": "Subtracting Negatives 2",
+          "lesson_slug": "numeric-expressions-16",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-16/",
+          "mapped_los": []
+        }
+      ],
+      "review_url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/practice/math-fundamentals-level-13-review-1/"
+    },
+    {
+      "level": 14,
+      "chapter_name": "Subtraction and Addition",
+      "chapter_slug": "negative-numbers-negative-subtraction",
+      "chapter_url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/",
+      "lesson_count": 5,
+      "lessons": [
+        {
+          "index": 65,
+          "title": "Adding The Opposite",
+          "lesson_slug": "numeric-expression-17",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expression-17/",
+          "mapped_los": []
+        },
+        {
+          "index": 66,
+          "title": "Subtracting Using Addition",
+          "lesson_slug": "numeric-expressions-18",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expressions-18/",
+          "mapped_los": []
+        },
+        {
+          "index": 67,
+          "title": "Subtracting the Opposite",
+          "lesson_slug": "numeric-expressions-18b",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expressions-18b/",
+          "mapped_los": []
+        },
+        {
+          "index": 68,
+          "title": "Order in Subtraction",
+          "lesson_slug": "numeric-expressions-19",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expressions-19/",
+          "mapped_los": []
+        },
+        {
+          "index": 69,
+          "title": "Adding in Any Order",
+          "lesson_slug": "numeric-expressions-20",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expressions-20/",
+          "mapped_los": []
+        }
+      ],
+      "review_url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/practice/math-fundamentals-level-14-review-1/"
+    },
+    {
+      "level": 15,
+      "chapter_name": "The Number Line",
+      "chapter_slug": "negative-numbers-integers-number-line",
+      "chapter_url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/",
+      "lesson_count": 6,
+      "lessons": [
+        {
+          "index": 70,
+          "title": "The Number Line",
+          "lesson_slug": "numeric-expressions-205",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-205/",
+          "mapped_los": []
+        },
+        {
+          "index": 71,
+          "title": "Addition on the Number Line",
+          "lesson_slug": "numeric-expressions-21",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-21/",
+          "mapped_los": []
+        },
+        {
+          "index": 72,
+          "title": "Adding Large Integers",
+          "lesson_slug": "numeric-expressions-25",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-25/",
+          "mapped_los": []
+        },
+        {
+          "index": 73,
+          "title": "Adding Several Integers",
+          "lesson_slug": "numeric-expressions-26",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-26/",
+          "mapped_los": []
+        },
+        {
+          "index": 74,
+          "title": "Subtraction from 0",
+          "lesson_slug": "number-line-subtraction-1",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/number-line-subtraction-1/",
+          "mapped_los": []
+        },
+        {
+          "index": 75,
+          "title": "Subtraction on the Number Line",
+          "lesson_slug": "numeric-expressions-22",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-22/",
+          "mapped_los": []
+        }
+      ],
+      "review_url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/practice/math-fundamentals-level-15-review-1/"
+    },
+    {
+      "level": 16,
+      "chapter_name": "Order and Absolute Value",
+      "chapter_slug": "negative-numbers-order-and-magnitude",
+      "chapter_url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/",
+      "lesson_count": 6,
+      "lessons": [
+        {
+          "index": 76,
+          "title": "Ordering Integers",
+          "lesson_slug": "numeric-order-magnitude-1",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-magnitude-1/",
+          "mapped_los": []
+        },
+        {
+          "index": 77,
+          "title": "Ordering Negatives",
+          "lesson_slug": "numeric-order-magnitude-2",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-magnitude-2/",
+          "mapped_los": []
+        },
+        {
+          "index": 78,
+          "title": "Absolute Value",
+          "lesson_slug": "numeric-order-magnitude-4",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-magnitude-4/",
+          "mapped_los": []
+        },
+        {
+          "index": 79,
+          "title": "Adding and Absolute Value",
+          "lesson_slug": "numeric-order-magnitude-5",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-magnitude-5/",
+          "mapped_los": []
+        },
+        {
+          "index": 80,
+          "title": "Absolute Value Inequalities",
+          "lesson_slug": "numeric-order-and-magnitude-6",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-and-magnitude-6/",
+          "mapped_los": []
+        },
+        {
+          "index": 81,
+          "title": "Reasoning with Absolute Value",
+          "lesson_slug": "numeric-order-and-magnitude-7",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-and-magnitude-7/",
+          "mapped_los": []
+        }
+      ],
+      "review_url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/practice/math-fundamentals-level-16-review-1/"
+    },
+    {
+      "level": 17,
+      "chapter_name": "Distance",
+      "chapter_slug": "negative-numbers-distance-on-number-line",
+      "chapter_url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/",
+      "lesson_count": 5,
+      "lessons": [
+        {
+          "index": 82,
+          "title": "Distance Between Integers",
+          "lesson_slug": "distance-1",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-1/",
+          "mapped_los": []
+        },
+        {
+          "index": 83,
+          "title": "A Pair at Every Distance",
+          "lesson_slug": "distance-2",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-2/",
+          "mapped_los": []
+        },
+        {
+          "index": 84,
+          "title": "Subtracting to Find Distance",
+          "lesson_slug": "distance-3",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-3/",
+          "mapped_los": []
+        },
+        {
+          "index": 85,
+          "title": "Absolute Value and Distance",
+          "lesson_slug": "distance-4",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-4/",
+          "mapped_los": []
+        },
+        {
+          "index": 86,
+          "title": "Reasoning About Distance",
+          "lesson_slug": "distance-6",
+          "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-6/",
+          "mapped_los": []
+        }
+      ],
+      "review_url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/practice/math-fundamentals-level-17-review-1/"
+    }
+  ],
+  "all_links": [
+    {
+      "index": 1,
+      "title": "Finding Half",
+      "lesson_slug": "find-half",
+      "url": "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/find-half/",
+      "mapped_los": []
+    },
+    {
+      "index": 2,
+      "title": "Combining Parts",
+      "lesson_slug": "combining-parts",
+      "url": "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/combining-parts/",
+      "mapped_los": []
+    },
+    {
+      "index": 3,
+      "title": "Splitting Parts",
+      "lesson_slug": "take-more-than-one",
+      "url": "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/take-more-than-one/",
+      "mapped_los": []
+    },
+    {
+      "index": 4,
+      "title": "Splitting and Combining",
+      "lesson_slug": "shade-this-much",
+      "url": "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/shade-this-much/",
+      "mapped_los": []
+    },
+    {
+      "index": 5,
+      "title": "Equal Parts",
+      "lesson_slug": "equal-nths",
+      "url": "https://brilliant.org/courses/math-fundamentals/mt-fractions-intro/equal-nths/",
+      "mapped_los": []
+    },
+    {
+      "index": 6,
+      "title": "Sixths and Twelfths",
+      "lesson_slug": "equal-fractions",
+      "url": "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/equal-fractions/",
+      "mapped_los": []
+    },
+    {
+      "index": 7,
+      "title": "Eighths and Sixteenths",
+      "lesson_slug": "equal-fractions-2",
+      "url": "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/equal-fractions-2/",
+      "mapped_los": []
+    },
+    {
+      "index": 8,
+      "title": "Making Equivalent Fractions",
+      "lesson_slug": "making-equivalent",
+      "url": "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/making-equivalent/",
+      "mapped_los": []
+    },
+    {
+      "index": 9,
+      "title": "Simplifying Fractions",
+      "lesson_slug": "simplifying-fractions",
+      "url": "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/simplifying-fractions/",
+      "mapped_los": []
+    },
+    {
+      "index": 10,
+      "title": "Equivalent Fractions",
+      "lesson_slug": "equivalent-fractions-3",
+      "url": "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/equivalent-fractions-3/",
+      "mapped_los": []
+    },
+    {
+      "index": 11,
+      "title": "Identifying Equivalents",
+      "lesson_slug": "wodb-equivalents",
+      "url": "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/wodb-equivalents/",
+      "mapped_los": []
+    },
+    {
+      "index": 12,
+      "title": "Comparing Numerators",
+      "lesson_slug": "comparing-numerators",
+      "url": "https://brilliant.org/courses/math-fundamentals/comparing-fractions/comparing-numerators/",
+      "mapped_los": []
+    },
+    {
+      "index": 13,
+      "title": "Comparing Denominators",
+      "lesson_slug": "same-numerator",
+      "url": "https://brilliant.org/courses/math-fundamentals/comparing-fractions/same-numerator/",
+      "mapped_los": []
+    },
+    {
+      "index": 14,
+      "title": "Comparing Equivalents",
+      "lesson_slug": "den-multiples",
+      "url": "https://brilliant.org/courses/math-fundamentals/comparing-fractions/den-multiples/",
+      "mapped_los": []
+    },
+    {
+      "index": 15,
+      "title": "Comparing More Equivalents",
+      "lesson_slug": "not-multiples",
+      "url": "https://brilliant.org/courses/math-fundamentals/comparing-fractions/not-multiples/",
+      "mapped_los": []
+    },
+    {
+      "index": 16,
+      "title": "Identifying the Greatest",
+      "lesson_slug": "greatest-fraction",
+      "url": "https://brilliant.org/courses/math-fundamentals/comparing-fractions/greatest-fraction/",
+      "mapped_los": []
+    },
+    {
+      "index": 17,
+      "title": "Adding Fractions",
+      "lesson_slug": "adding-fractions",
+      "url": "https://brilliant.org/courses/math-fundamentals/adding-fractions/adding-fractions/",
+      "mapped_los": []
+    },
+    {
+      "index": 18,
+      "title": "Adding Same-Sized Fractions",
+      "lesson_slug": "add-unit-fractions",
+      "url": "https://brilliant.org/courses/math-fundamentals/adding-fractions/add-unit-fractions/",
+      "mapped_los": []
+    },
+    {
+      "index": 19,
+      "title": "Adding Unlike Parts",
+      "lesson_slug": "adding-different",
+      "url": "https://brilliant.org/courses/math-fundamentals/adding-fractions/adding-different/",
+      "mapped_los": []
+    },
+    {
+      "index": 20,
+      "title": "Adding Unit Fractions",
+      "lesson_slug": "adding-nonmultiples",
+      "url": "https://brilliant.org/courses/math-fundamentals/adding-fractions/adding-nonmultiples/",
+      "mapped_los": []
+    },
+    {
+      "index": 21,
+      "title": "Adding Any Fractions",
+      "lesson_slug": "adding-unlike",
+      "url": "https://brilliant.org/courses/math-fundamentals/adding-fractions/adding-unlike/",
+      "mapped_los": []
+    },
+    {
+      "index": 22,
+      "title": "Multiples of Fractions",
+      "lesson_slug": "fraction-by-integer",
+      "url": "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/fraction-by-integer/",
+      "mapped_los": []
+    },
+    {
+      "index": 23,
+      "title": "Expressing Multiples",
+      "lesson_slug": "expressing-multiples",
+      "url": "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/expressing-multiples/",
+      "mapped_los": []
+    },
+    {
+      "index": 24,
+      "title": "Fractions of Unit Fractions",
+      "lesson_slug": "fractions-of-fractions",
+      "url": "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/fractions-of-fractions/",
+      "mapped_los": []
+    },
+    {
+      "index": 25,
+      "title": "Products of Unit Fractions",
+      "lesson_slug": "expressing-fouf",
+      "url": "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/expressing-fouf/",
+      "mapped_los": []
+    },
+    {
+      "index": 26,
+      "title": "Fraction of Any Fraction",
+      "lesson_slug": "fractions-of-fractions-2",
+      "url": "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/fractions-of-fractions-2/",
+      "mapped_los": []
+    },
+    {
+      "index": 27,
+      "title": "Multiplying Fractions",
+      "lesson_slug": "multiplying-fractions",
+      "url": "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/multiplying-fractions/",
+      "mapped_los": []
+    },
+    {
+      "index": 28,
+      "title": "Intro to Percentages",
+      "lesson_slug": "intro-to-percentages",
+      "url": "https://brilliant.org/courses/math-fundamentals/percentages-using-percentages/intro-to-percentages/",
+      "mapped_los": []
+    },
+    {
+      "index": 29,
+      "title": "Working out Percentages",
+      "lesson_slug": "calculating-percentages",
+      "url": "https://brilliant.org/courses/math-fundamentals/percentages-using-percentages/calculating-percentages/",
+      "mapped_los": []
+    },
+    {
+      "index": 30,
+      "title": "Percentages and Batteries",
+      "lesson_slug": "battery-percentages",
+      "url": "https://brilliant.org/courses/math-fundamentals/percentages-using-percentages/battery-percentages/",
+      "mapped_los": []
+    },
+    {
+      "index": 31,
+      "title": "Percentages as Fractions",
+      "lesson_slug": "fraction-equivalence-blanks",
+      "url": "https://brilliant.org/courses/math-fundamentals/percentages-using-percentages/fraction-equivalence-blanks/",
+      "mapped_los": []
+    },
+    {
+      "index": 32,
+      "title": "Percent Increase",
+      "lesson_slug": "percent-increase",
+      "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-increase/percent-increase/",
+      "mapped_los": []
+    },
+    {
+      "index": 33,
+      "title": "Price Increase",
+      "lesson_slug": "price-increase",
+      "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-increase/price-increase/",
+      "mapped_los": []
+    },
+    {
+      "index": 34,
+      "title": "Calculating Percent Increase",
+      "lesson_slug": "percent-increase-blanks",
+      "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-increase/percent-increase-blanks/",
+      "mapped_los": []
+    },
+    {
+      "index": 35,
+      "title": "Percentages as Tenths",
+      "lesson_slug": "tenths-equivalence",
+      "url": "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/tenths-equivalence/",
+      "mapped_los": []
+    },
+    {
+      "index": 36,
+      "title": "Percentages as Hundredths",
+      "lesson_slug": "hundredths-equivalence",
+      "url": "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/hundredths-equivalence/",
+      "mapped_los": []
+    },
+    {
+      "index": 37,
+      "title": "Finding the Percentage",
+      "lesson_slug": "finding-the-percentage",
+      "url": "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/finding-the-percentage/",
+      "mapped_los": []
+    },
+    {
+      "index": 38,
+      "title": "Percentages as Decimals",
+      "lesson_slug": "converting-to-decimals",
+      "url": "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/converting-to-decimals/",
+      "mapped_los": []
+    },
+    {
+      "index": 39,
+      "title": "Calculating the Percentage",
+      "lesson_slug": "calculating-the-percentage",
+      "url": "https://brilliant.org/courses/math-fundamentals/percentages-computing-percentages/calculating-the-percentage/",
+      "mapped_los": []
+    },
+    {
+      "index": 40,
+      "title": "Percent Decrease",
+      "lesson_slug": "percent-decrease",
+      "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-decrease/percent-decrease/",
+      "mapped_los": []
+    },
+    {
+      "index": 41,
+      "title": "Calculating Percent Decrease",
+      "lesson_slug": "percentage-decrease-blanks",
+      "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-decrease/percentage-decrease-blanks/",
+      "mapped_los": []
+    },
+    {
+      "index": 42,
+      "title": "Finding the Original Price",
+      "lesson_slug": "finding-the-original-price",
+      "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-decrease/finding-the-original-price/",
+      "mapped_los": []
+    },
+    {
+      "index": 43,
+      "title": "Reversing Percentages",
+      "lesson_slug": "reversing-percentages",
+      "url": "https://brilliant.org/courses/math-fundamentals/percentages-percent-decrease/reversing-percentages/",
+      "mapped_los": []
+    },
+    {
+      "index": 44,
+      "title": "Compound Changes",
+      "lesson_slug": "compound-changes-receipts",
+      "url": "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/compound-changes-receipts/",
+      "mapped_los": []
+    },
+    {
+      "index": 45,
+      "title": "Compound Calculations",
+      "lesson_slug": "compound-calculations-receipts",
+      "url": "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/compound-calculations-receipts/",
+      "mapped_los": []
+    },
+    {
+      "index": 46,
+      "title": "Splitting Percent Changes",
+      "lesson_slug": "splitting-percent-changes",
+      "url": "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/splitting-percent-changes/",
+      "mapped_los": []
+    },
+    {
+      "index": 47,
+      "title": "Growing and Shrinking",
+      "lesson_slug": "compound-calculations-bars",
+      "url": "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/compound-calculations-bars/",
+      "mapped_los": []
+    },
+    {
+      "index": 48,
+      "title": "Exponential Growth",
+      "lesson_slug": "exponential-growth-percentages",
+      "url": "https://brilliant.org/courses/math-fundamentals/percentages-compound-changes/exponential-growth-percentages/",
+      "mapped_los": []
+    },
+    {
+      "index": 49,
+      "title": "Positives and Negatives",
+      "lesson_slug": "numeric-expressions-1",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-1/",
+      "mapped_los": []
+    },
+    {
+      "index": 50,
+      "title": "Negative Numbers",
+      "lesson_slug": "numeric-expressions-3",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-3/",
+      "mapped_los": []
+    },
+    {
+      "index": 51,
+      "title": "Making Integers",
+      "lesson_slug": "numeric-expressions-2",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-2/",
+      "mapped_los": []
+    },
+    {
+      "index": 52,
+      "title": "Addition",
+      "lesson_slug": "numeric-expressions-4",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-intro-to-negatives/numeric-expressions-4/",
+      "mapped_los": []
+    },
+    {
+      "index": 53,
+      "title": "Increasing Value",
+      "lesson_slug": "numeric-expressions-5",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-5/",
+      "mapped_los": []
+    },
+    {
+      "index": 54,
+      "title": "Decreasing Value",
+      "lesson_slug": "numeric-expressions-6",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-6/",
+      "mapped_los": []
+    },
+    {
+      "index": 55,
+      "title": "Zero",
+      "lesson_slug": "numeric-expressions-7",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-7/",
+      "mapped_los": []
+    },
+    {
+      "index": 56,
+      "title": "Opposites",
+      "lesson_slug": "numeric-expressions-8",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-8/",
+      "mapped_los": []
+    },
+    {
+      "index": 57,
+      "title": "Adding Negatives",
+      "lesson_slug": "numeric-expressions-9",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-9/",
+      "mapped_los": []
+    },
+    {
+      "index": 58,
+      "title": "Adding Negatives and Positives",
+      "lesson_slug": "numeric-expressions-10",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-number-addition/numeric-expressions-10/",
+      "mapped_los": []
+    },
+    {
+      "index": 59,
+      "title": "Missing Values",
+      "lesson_slug": "numeric-expressions-11",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-11/",
+      "mapped_los": []
+    },
+    {
+      "index": 60,
+      "title": "Subtracting Positives",
+      "lesson_slug": "numeric-expressions-12",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-12/",
+      "mapped_los": []
+    },
+    {
+      "index": 61,
+      "title": "Subtracting Negatives",
+      "lesson_slug": "numeric-expressions-13",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-13/",
+      "mapped_los": []
+    },
+    {
+      "index": 62,
+      "title": "Subtracting From Zero",
+      "lesson_slug": "numeric-expressions-16b",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-16b/",
+      "mapped_los": []
+    },
+    {
+      "index": 63,
+      "title": "Subtracting Positives 2",
+      "lesson_slug": "numeric-expressions-15",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-15/",
+      "mapped_los": []
+    },
+    {
+      "index": 64,
+      "title": "Subtracting Negatives 2",
+      "lesson_slug": "numeric-expressions-16",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-subtracting-integers/numeric-expressions-16/",
+      "mapped_los": []
+    },
+    {
+      "index": 65,
+      "title": "Adding The Opposite",
+      "lesson_slug": "numeric-expression-17",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expression-17/",
+      "mapped_los": []
+    },
+    {
+      "index": 66,
+      "title": "Subtracting Using Addition",
+      "lesson_slug": "numeric-expressions-18",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expressions-18/",
+      "mapped_los": []
+    },
+    {
+      "index": 67,
+      "title": "Subtracting the Opposite",
+      "lesson_slug": "numeric-expressions-18b",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expressions-18b/",
+      "mapped_los": []
+    },
+    {
+      "index": 68,
+      "title": "Order in Subtraction",
+      "lesson_slug": "numeric-expressions-19",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expressions-19/",
+      "mapped_los": []
+    },
+    {
+      "index": 69,
+      "title": "Adding in Any Order",
+      "lesson_slug": "numeric-expressions-20",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-negative-subtraction/numeric-expressions-20/",
+      "mapped_los": []
+    },
+    {
+      "index": 70,
+      "title": "The Number Line",
+      "lesson_slug": "numeric-expressions-205",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-205/",
+      "mapped_los": []
+    },
+    {
+      "index": 71,
+      "title": "Addition on the Number Line",
+      "lesson_slug": "numeric-expressions-21",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-21/",
+      "mapped_los": []
+    },
+    {
+      "index": 72,
+      "title": "Adding Large Integers",
+      "lesson_slug": "numeric-expressions-25",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-25/",
+      "mapped_los": []
+    },
+    {
+      "index": 73,
+      "title": "Adding Several Integers",
+      "lesson_slug": "numeric-expressions-26",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-26/",
+      "mapped_los": []
+    },
+    {
+      "index": 74,
+      "title": "Subtraction from 0",
+      "lesson_slug": "number-line-subtraction-1",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/number-line-subtraction-1/",
+      "mapped_los": []
+    },
+    {
+      "index": 75,
+      "title": "Subtraction on the Number Line",
+      "lesson_slug": "numeric-expressions-22",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-integers-number-line/numeric-expressions-22/",
+      "mapped_los": []
+    },
+    {
+      "index": 76,
+      "title": "Ordering Integers",
+      "lesson_slug": "numeric-order-magnitude-1",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-magnitude-1/",
+      "mapped_los": []
+    },
+    {
+      "index": 77,
+      "title": "Ordering Negatives",
+      "lesson_slug": "numeric-order-magnitude-2",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-magnitude-2/",
+      "mapped_los": []
+    },
+    {
+      "index": 78,
+      "title": "Absolute Value",
+      "lesson_slug": "numeric-order-magnitude-4",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-magnitude-4/",
+      "mapped_los": []
+    },
+    {
+      "index": 79,
+      "title": "Adding and Absolute Value",
+      "lesson_slug": "numeric-order-magnitude-5",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-magnitude-5/",
+      "mapped_los": []
+    },
+    {
+      "index": 80,
+      "title": "Absolute Value Inequalities",
+      "lesson_slug": "numeric-order-and-magnitude-6",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-and-magnitude-6/",
+      "mapped_los": []
+    },
+    {
+      "index": 81,
+      "title": "Reasoning with Absolute Value",
+      "lesson_slug": "numeric-order-and-magnitude-7",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-order-and-magnitude/numeric-order-and-magnitude-7/",
+      "mapped_los": []
+    },
+    {
+      "index": 82,
+      "title": "Distance Between Integers",
+      "lesson_slug": "distance-1",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-1/",
+      "mapped_los": []
+    },
+    {
+      "index": 83,
+      "title": "A Pair at Every Distance",
+      "lesson_slug": "distance-2",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-2/",
+      "mapped_los": []
+    },
+    {
+      "index": 84,
+      "title": "Subtracting to Find Distance",
+      "lesson_slug": "distance-3",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-3/",
+      "mapped_los": []
+    },
+    {
+      "index": 85,
+      "title": "Absolute Value and Distance",
+      "lesson_slug": "distance-4",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-4/",
+      "mapped_los": []
+    },
+    {
+      "index": 86,
+      "title": "Reasoning About Distance",
+      "lesson_slug": "distance-6",
+      "url": "https://brilliant.org/courses/math-fundamentals/negative-numbers-distance-on-number-line/distance-6/",
+      "mapped_los": []
+    }
+  ]
+}

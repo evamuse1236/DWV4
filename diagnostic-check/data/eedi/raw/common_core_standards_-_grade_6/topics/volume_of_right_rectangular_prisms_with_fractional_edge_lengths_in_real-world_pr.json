@@ -1,0 +1,141 @@
+{
+  "shortcode": "ehi5",
+  "name": "Volume of right rectangular prisms with fractional edge lengths in real-world problems",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 205,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate the volume of a cuboid when the dimensions are given in the same units",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166732,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/649c2d7f-3615-4526-a9d1-98ba4bb7eff4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This method just multiplies the length, width and height of the shape. Think about how you would find the volume of one cube, and scale this up to create the cuboid.",
+        "B": "This method just considers finding the volume of one cube, and multiplying by the number of cubes in the diagram. Have you considered what method 1 would be finding.",
+        "C": "When finding the volume of a cuboid made of cubes, we can either multiply the length by the width by the height or we can find the volume of one cube and multiply it by the number of cubes there are.",
+        "D": "Think about how we could break down the volume of the cuboid. Which method(s) would find the space inside the cuboid?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166982,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3b58a986-f656-4fda-b543-5478961c150a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "When finding the volume of a cuboid made of cubes, we can either multiply the length by the width by the height or we can find the volume of one cube and multiply it by the number of cubes there are. Method 1 is correct, this is l x w x h. However for method 2 we needed to do 1/4 x 1/4 x 1/4 to find the volume of one cube, not 1/4 x 3.",
+        "B": "Not quite! Here, as we are multiplying 1/4 by 3, but we need to do 1/4 x 1/4 x 1/4 to find the volume of the cube.",
+        "C": "To find the volume of a cuboid, we need to either do length x width x height of the whole cuboid, or we can do this for one cube and multiply by the number of cubes we have. Have these methods been applied correctly for this cuboid?",
+        "D": "To find the volume of a cuboid, we need to either do length x width x height of the whole cuboid, or we can do this for one cube and multiply by the number of cubes we have. Have these methods been applied correctly for this cuboid?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166733,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7df8672c-e108-4437-aad1-93ab2bb9568e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost! You've found the volume of the cuboid, but you need to complete the question by finding out how many sandcastles Steve can make. How many 1/20 can you get from 7/20 of sand?",
+        "B": "The volume of sand is 1/2 x 7/8 x 4/5 = 7/20. Divide this by 1/20 to see how many sandcastles can be made, which is 7.",
+        "C": "I think you may have found the volume correctly for the sand pit, but I think you've divided incorrectly to find the number of sandcastles Steve can make. Think about how many 1/20 you can get from 7/20 of sand.",
+        "D": "Here, I think you've multiplied by 1/20. What operation do you need to do to find out how many 1/20 you can get form 7/20?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166983,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ef9b3cb5-6e5a-401a-b64b-7219388e58ef.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have found the volume correctly for the sand pit, but I think you've divided incorrectly to find the number of sandcastles Amy can make. Think about how many 1/64 you can get from 1/8 of sand.",
+        "B": "Here, I think you've multiplied by 1/64 rather than divided by 1/64 once you've found the volume of the sand pit.",
+        "C": "Almost! You've found the volume of the cuboid, but you need to complete the question by finding out how many sandcastles Amy can make.",
+        "D": "The volume of sand is 1/3 x 5/8 x 3/5 = 1/8. Divide this by 1/64 to see how many sandcastles can be made, which is 8."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166734,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/79bf74df-451e-4eff-ad52-5501131de704.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost! I think here, you've assumed that 22.5 hours is 22 hours and 50. How many minutes are in an hour, and hence how many are in half of an hour?",
+        "B": "You're close! It looks like you multiplied the base area by 1/2 rather than 1 1/2 when finding the volume.",
+        "C": "Here, it looks like you've multiplied the volume of the swimming pool by 4. We want to know how many 4s will fit into the total volume.",
+        "D": "To calculate the length of time to fill the pool, we need to multiply the area of the cross section by the height to get 90, and then divide by 4. this gives us 22.5 which is 22 hours and 30 minutes."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166984,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7d96fbe9-c299-41fb-85f7-212e6401cc36.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To calculate the length of time to fill the pond, we need to multiply the area of the cross section by the height, and then divide by 6. 80 x 2 1/2 = 200. 200 / 6 = 33.3333 which is 33 hours and 20 minutes.",
+        "B": "Here, it looks like you've multiplied the volume of the pond by 6. We want to know how many 6s there are in the total volume.",
+        "C": "Almost! I think here, you've assumed that 33.33 hours is 33 hours and 33 minutes. think about how many minutes are in 1 hour, and then how many minutes would be in 0.333333 of an hour.",
+        "D": "You're close! It looks like you multiplied the base area by 1/2 rather than 2 1/2 when finding the volume."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166735,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ef271a73-6d48-44a4-beb3-e9ad7fbfb87e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To calculate the volume of the remaining shape, we need to find the volume of the smaller cuboid and subtract it from the volume of the larger cuboid. The larger cuboid is 1 3/8 x 3/4 x 1 1/2 = 99/64. The volume of the smaller cube is 15/64. Subtracting we have 84/64 = 1 20/64 = 1 5/16.",
+        "B": "Here, it looks like you've found the volume of the large cuboid, but you haven't subtracted the volume of the smaller cuboid.",
+        "C": "Not quite! It looks like you've found the area of the front face but you haven't worked out the volume. Volume is found by calculating the length x width x height.",
+        "D": "Almost! Here it looks like you've subtracted the area of the rectangle from the volume of the large cuboid. To calculate the volume of the remaining shape, we need to subtract the volume of the small cuboid from the volume of the large cuboid."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166985,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9743a792-d4ee-48d4-89d5-25375b0c22e9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost! Here it looks like you've subtracted the area of the rectangle from the volume of the large cuboid. To calculate the volume of the remaining shape, we need to subtract the volume of the small cuboid from the volume of the large cuboid.",
+        "B": "Not quite! It looks like you've found the area of the front face but you haven't worked out the volume. Volume is found by calculating the length x width x height.",
+        "C": "Here, it looks like you've found the volume of the large cuboid, but you haven't subtracted the volume of the smaller cuboid.",
+        "D": "To calculate the volume of the remaining shape, we need to find the volume of the smaller cuboid and subtract it from the volume of the larger cuboid. The larger cuboid is 1 2/7 x 3/5 x 2 1/2 = 135/70. The volume of the smaller cube is 9/70. Subtracting we have 126/70 = 1 56/70 = 1 4/5."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166736,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c0c45297-3841-4dd0-a501-252f69c42d97.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To calculate a missing height of a cuboid, we can do the volume divided by the base area. The base area is 2 1/4 x 1 1/3 = 36/12 = 3. Then the volume divided by the base area is 2 / 3.",
+        "B": "Not quite! Here it looks like you've divided the volume by the length, but then you've multiplied by the width. To find the missing height, we would divide by both the length and the width.",
+        "C": "Here, I think you've divided the area of the base of the cuboid by the volume of the cuboid. We need to do this calculation the other way around.",
+        "D": "Not quite! Here it looks like you've divided the volume by the width, but then you've multiplied by the length. To find the missing height, we would divide by both the length and the width."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166986,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a53e1182-0609-446b-bf54-a150113d2009.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Here it looks like you've divided the volume by the height, but then you've multiplied by the width. To find the missing height, we would divide by both the height and the width.",
+        "B": "To calculate a missing height of a cuboid, we can do the volume divided by the face area. The face area is 2 3/4 x 1 4/5 = 99/20. Then the volume divided by the base area is 3 divided by 99/20 = 60/99 = 20/33.",
+        "C": "Not quite! Here it looks like you've divided the volume by the width, but then you've multiplied by the height. To find the missing length, we would divide by both the height and the width.",
+        "D": "Here, I think you've divided the area of the base of the cuboid by the volume of the cuboid. We need to do this calculation the other way around."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,165 @@
+{
+  "shortcode": "vtu",
+  "name": "Division with fractions 2",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 79,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Divide proper fractions in the form: Integer ÷ Fraction",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Divide proper fractions in the form: Fraction ÷ Fraction",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Divide algebraic terms, involving non-linear versions of the same letter (e.g. 4a² ÷ 2a)",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Match calculations involving multiplying fractions to real life situations",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find missing numbers in a fraction multiplication",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 101041,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1bc084d1-c0a9-428e-b312-3f2e5b5bff53.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Your second fraction hasn't changed. What happens when the division becomes a multiplication?",
+        "B": "It looks like you have worked out the answer if the second fraction had been 1/5. What changes when it is 2/5?",
+        "C": "Comparing left to right, the division is now a multiplication and the first fraction has stayed the same. This means we have to change the second fraction to its reciprocal (we flip the fraction). So 2/5 becomes 5/2.",
+        "D": "It looks like you have found the reciprocal (flipped version) of the wrong fraction."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101060,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aa38cb57-76df-49dd-816e-f43078c9a9da.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Comparing left to right, the division is now a multiplication and the first fraction has stayed the same. This means we have to change the second fraction to its reciprocal (we flip the fraction). So 3/4 becomes 4/3.",
+        "B": "It looks like you have found the reciprocal (flipped version) of the wrong fraction.",
+        "C": "Not quite. Your second fraction hasn't changed. What happens when the division becomes a multiplication?",
+        "D": "It looks like you have worked out the answer if the second fraction had been 1/4. What changes when it is 3/4?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101045,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4b57e3e0-6a86-4384-ba48-b83cc9503932.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we cut a pizza into 8 slices then each slice is 1/8 of the pizza. If Beth eats 7 of the slices there is only 1 slice left. Does this calculation give 1/8?",
+        "B": "Is it possible to cut a pizza into 7 slices and then eat 8 slices?",
+        "C": "Is it possible to cut a pizza into 7 slices and then eat 8 slices?",
+        "D": "If we cut a pizza into 8 slices then each slice is 1/8 of the pizza. If Beth eats 7 of the slices then she has had 7 lots of 1/8 which is 7 ✕ 1/8"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101064,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e690375e-e053-45e5-8694-f347bc66cd41.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we cut a cake into 6 slices then each slice is 1/6 of the cake. If Ivan eats 5 of the slices then he has had 5 lots of 1/6 which is 5 ✕ 1/6",
+        "B": "Is it possible to cut a cake into 5 slices and then eat 6 slices?",
+        "C": "Is it possible to cut a cake into 5 slices and then eat 6 slices?",
+        "D": "If we cut a cake into 6 slices then each slice is 1/6 of the cake. If Ivan eats 5 of the slices there is only 1 slice left. Does this calculation give 1/6?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101048,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eacbb4e9-06ca-4b85-bd17-3ba61cd381d5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Product means '✕'. We need to solve 5/8 ✕ ? = 1/6",
+        "B": "It looks like you have multiplied 5/8 and 1/6. We need to solve 5/8 ✕ ? = 1/6",
+        "C": "Product means '✕'. We need to solve 5/8 ✕ ? = 1/6",
+        "D": "Product means '✕'. We need to solve 5/8 ✕ ? = 1/6 and that means that ? = 1/6 ÷ 5/8 = 1/6 ✕ 8/5 = 8/30 = 4/15"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101067,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/27741b1a-3fe5-4994-b32f-0c6a91e60fdd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Product means '✕'. We need to solve 3/7 ✕ ? = 2/5",
+        "B": "Product means '✕'. We need to solve 3/7 ✕ ? = 2/5 and that means that ? = 2/5 ÷ 3/7 = 2/5 ✕ 7/3 = 14/15",
+        "C": "Product means '✕'. We need to solve 3/7 ✕ ? = 2/5",
+        "D": "It looks like you have multiplied 3/7 and 2/5. We need to solve 3/7 ✕ ? = 2/5"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101049,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3ced5ee8-78da-46df-bfb2-8e24ce5c2e5d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. How do we get from 4/9 to 4? What do we multiply by? We then multiply the area by that same number.",
+        "B": "We know that 4/9ths of a litre covers 1 square metre. We are interested in how much 4 litres cover. To get from 4/9 to 4 we multiply by 9. So we do the same thing to the area. 1 ✕ 9 = 9.",
+        "C": "Not quite. How do we get from 4/9 to 4? What do we multiply by? We then multiply the area by that same number.",
+        "D": "Not quite. How do we get from 4/9 to 4? What do we multiply by? We then multiply the area by that same number."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101068,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3267a5eb-af88-47fa-a35d-7594bdea6f5f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. How do we get from 3/7 to 6? What do we multiply by to get a whole number? What can we then multiply by to get 6? We then multiply the area by those same numbers.",
+        "B": "We know that 3/7ths of a litre covers 1 square metre. We are interested in how much 6 litres cover. To get from 3/7 to 3 we multiply by 7. Then to get from 3 to 6 we multiply by 2. So we do the same thing to the area. 1 ✕ 7 ✕ 2 = 14.",
+        "C": "Not quite. How do we get from 3/7 to 6? What do we multiply by to get a whole number? What can we then multiply by to get 6? We then multiply the area by those same numbers.",
+        "D": "Not quite. How do we get from 3/7 to 6? What do we multiply by to get a whole number? What can we then multiply by to get 6? We then multiply the area by those same numbers."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103862,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea6fc5b8-4679-4d5d-8ad6-25ccda8a4c03.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "First try rewriting this fraction as 1/𝑥 ÷ 𝑥 which is 1/𝑥 ÷ 𝑥/1. What happens when we divide by a fraction?",
+        "B": "First we can rewrite this fraction as 1/𝑥 ÷ 𝑥 which is 1/𝑥 ÷ 𝑥/1. This calculation is the same as 1/𝑥 ✕ 1/𝑥. This works out to be (1 ✕ 1) /(𝑥 ✕ 𝑥) = 1/𝑥²",
+        "C": "First try rewriting this fraction as 1/𝑥 ÷ 𝑥 which is 1/𝑥 ÷ 𝑥/1. What happens when we divide by a fraction?",
+        "D": "First try rewriting this fraction as 1/𝑥 ÷ 𝑥 which is 1/𝑥 ÷ 𝑥/1. What happens when we divide by a fraction?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103864,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/15963391-1296-4aa1-9a34-5ccc60f314ba.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "First try rewriting this fraction as 𝑥/3 ÷ 𝑥² which is 𝑥/3 ÷ 𝑥²/1. What happens when we divide by a fraction?",
+        "B": "First we can rewrite this fraction 𝑥/3 ÷ 𝑥² which is 𝑥/3 ÷ 𝑥²/1. This calculation is the same as 𝑥/3 ✕ 1/𝑥². This works out to be (𝑥 ✕ 1) /(3 ✕ 𝑥²) = 𝑥/3𝑥² = 1/3𝑥",
+        "C": "First try rewriting this fraction as 𝑥/3 ÷ 𝑥² which is 𝑥/3 ÷ 𝑥²/1. What happens when we divide by a fraction?",
+        "D": "First try rewriting this fraction as 𝑥/3 ÷ 𝑥² which is 𝑥/3 ÷ 𝑥²/1. What happens when we divide by a fraction?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

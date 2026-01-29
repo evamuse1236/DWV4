@@ -1,0 +1,141 @@
+{
+  "shortcode": "bikl",
+  "name": "Identifying acute, obtuse and right triangles",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 107,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identifying acute, obtuse and right triangles",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158050,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ebdaa379-f8bb-4699-97bc-9b7afb2bb39a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This triangle only has acute angles - angles less than 90 degrees - therefore it is an acute triangle!",
+        "B": "There is no obtuse angle in this triangle... Look at the angles, is there a right angle? Are they the same size? Or are they all acute?",
+        "C": "There is no right angle in this triangle (90 degrees)... Look at the angles again, are they all acute? Do you have an obtuse angle? Or are they all equal?",
+        "D": "The angles are not all equal therefore it is not an equilateral triangle. Look at the angles again, are they all acute? Do you have an obtuse angle? Or is there a right angle?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158217,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e11cce9f-1288-4ab8-919e-ee7b1fe3685e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Although there are two acute angles here, the third angle is what will help us identify this triangle...",
+        "B": "There is no obtuse angle in this triangle... Look at the angles, is there a right angle? Are they the same size? Or are they all acute?",
+        "C": "This triangle has a 90 degree angle within it, which is a right angle. Therefore we have a right triangle!",
+        "D": "The angles are not all equal therefore it is not an equilateral triangle. Look at the angles again, are they all acute? Do you have an obtuse angle? Or is there a right angle?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158051,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5c3d8f55-4207-47c5-876f-675ba833a966.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not all the angles in this triangle are acute... Look again, is there an obtuse angle? Is there a right angle? Or are all the angles they the same size?",
+        "B": "The triangle has an obtuse angle - an angle more than 90 degrees - 92 degrees therefore it is an obtuse triangle!",
+        "C": "There is no right angle in this triangle (90 degrees)... Look at the angles again, are they all acute? Do you have an obtuse angle? Or are they all equal?",
+        "D": "The angles are not all equal therefore it is not an equilateral triangle. Look at the angles again, are they all acute? Do you have an obtuse angle? Or is there a right angle?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158218,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/65e2a837-a244-4155-9f91-bc832b72e2ae.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This triangle only has acute angles - angles less than 90 degrees - therefore it is an acute triangle!",
+        "B": "There is no obtuse angle in this triangle... Look at the angles, is there a right angle? Are they the same size? Or are they all acute?",
+        "C": "There is no right angle in this triangle (90 degrees)... Look at the angles again, are they all acute? Do you have an obtuse angle? Or are they all equal?",
+        "D": "The angles are not all equal therefore it is not an equilateral triangle. Look at the angles again, are they all acute? Do you have an obtuse angle? Or is there a right angle?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158052,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bf256464-c840-4f69-a5db-b766f1960592.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not all the angles in this triangle are acute... Look again, is there an obtuse angle? Is there a right angle? Or are all the angles they the same size?",
+        "B": "The triangle has an obtuse angle - an angle more than 90 degrees - 96 degrees therefore it is an obtuse triangle!",
+        "C": "There is no right angle in this triangle (90 degrees)... Look at the angles again, are they all acute? Do you have an obtuse angle? Or are they all equal?",
+        "D": "The angles are not all equal therefore it is not an equilateral triangle. Look at the angles again, are they all acute? Do you have an obtuse angle? Or is there a right angle?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158219,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8e1b1f30-6715-406c-8b7f-de93ad4176c0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Although there are two acute angles here, the third angle is what will help us identify this triangle...",
+        "B": "There is no obtuse angle in this triangle... Look at the angles, is there a right angle? Are they the same size? Or are they all acute?",
+        "C": "This triangle has a 90 degree angle within it, which is a right angle. Therefore we have a right triangle!",
+        "D": "The angles are not all equal therefore it is not an equilateral triangle. Look at the angles again, are they all acute? Do you have an obtuse angle? Or is there a right angle?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158053,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5e5e7080-27f9-425d-aca8-5d5ed9891e0b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This triangle only has acute angles - angles less than 90 degrees - therefore it is an acute triangle!",
+        "B": "There is no obtuse angle in this triangle... Look at the angles, is there a right angle? Are they the same size? Or are they all acute?",
+        "C": "There is no right angle in this triangle (90 degrees)... Look at the angles again, are they all acute? Do you have an obtuse angle? Or are they all equal?",
+        "D": "The angles are not all equal therefore it is not an equilateral triangle. Look at the angles again, are they all acute? Do you have an obtuse angle? Or is there a right angle?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158220,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/745b0157-8a3c-4116-9c45-4bc325f23afc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not all the angles in this triangle are acute... Look again, is there an obtuse angle? Is there a right angle? Or are all the angles they the same size?",
+        "B": "The triangle has an obtuse angle - an angle more than 90 degrees - 105 degrees therefore it is an obtuse triangle!",
+        "C": "There is no right angle in this triangle (90 degrees)... Look at the angles again, are they all acute? Do you have an obtuse angle? Or are they all equal?",
+        "D": "The angles are not all equal therefore it is not an equilateral triangle. Look at the angles again, are they all acute? Do you have an obtuse angle? Or is there a right angle?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158054,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4503cb8c-6c4d-4dd3-9e23-1fd3f9624b7e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To work out the type of triangle being described, you need to think about what the word perpendicular means...",
+        "B": "To work out the type of triangle being described, you need to think about what the word perpendicular means...",
+        "C": "Perpendicular means the lines meet at a right angle - 90 degrees - therefore the triangle being described is a right triangle!",
+        "D": "To work out the type of triangle being described, you need to think about what the word perpendicular means..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158221,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/98e0fb87-6184-4aec-9697-f7d5ec06ecdf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This triangle only has acute angles - angles less than 90 degrees - therefore it is an acute triangle!",
+        "B": "There is no obtuse angle in this triangle... Look at the angles, is there a right angle? Are they the same size? Or are they all acute?",
+        "C": "There is no right angle in this triangle (90 degrees)... Look at the angles again, are they all acute? Do you have an obtuse angle? Or are they all equal?",
+        "D": "The angles are not all equal therefore it is not an equilateral triangle. Look at the angles again, are they all acute? Do you have an obtuse angle? Or is there a right angle?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

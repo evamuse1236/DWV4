@@ -1,0 +1,159 @@
+{
+  "shortcode": "fb9w",
+  "name": "Pythagoras in 2D and 3D",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 139,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate the length of the hypotenuse in a 2D right-angled triangle in a 3D question using Pythagoras’ Theorem",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve problems in 3D that require the use of Pythagoras twice",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the length of the hypotenuse in a 2D right-angled triangle using Pythagoras’ Theorem",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the length of a non-hypotenuse in a 2D right-angled triangle using Pythagoras’ Theorem",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 173948,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f8532005-903a-4a11-956b-09ea58f9d18a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have used Pythagoras' theorem but have added the squares of the sides. Remember, when you are finding the length of a shorter side, you need to subtract the squares.",
+        "B": "It seems you have calculated 10 - 6 = 4. Pythagoras' theorem, 𝑎² + 𝑏² = 𝑐², involves squaring the sides first before adding or subtracting.",
+        "C": "Using Pythagoras' theorem, ℎ² + 6² = 10². This means ℎ² + 36 = 100. To find ℎ², you calculate 100 - 36 = 64. The square root of 64 is 8, so ℎ = 8 cm.",
+        "D": "It looks like you might have doubled the side lengths instead of squaring them. Remember that squaring a number means multiplying it by itself, for example, 10² = 10 x 10."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 174008,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1a0689af-62d1-4545-b5af-89e3f1580ba0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you might have doubled the numbers instead of squaring them. Remember that squaring a number means multiplying it by itself (e.g. 5 squared = 5 x 5 = 25), not multiplying by 2.",
+        "B": "You have correctly squared the lengths. However, because you are finding one of the shorter sides, you need to subtract the squares (𝑐² - 𝑏²). We only add when finding the longest side (the hypotenuse).",
+        "C": "It looks like you have used 𝑎 + 𝑏 = 𝑐, but Pythagoras' theorem is about the squares of the sides: 𝑎² + 𝑏² = 𝑐². You need to square the lengths first.",
+        "D": "In Pythagoras' theorem, 𝑎² + 𝑏² = 𝑐², where 𝑐 is the hypotenuse. We are finding a shorter side, so we need to rearrange it to 𝑎² = 𝑐² - 𝑏². So, ℎ² = 13² - 5², which is 169 - 25 = 144. The square root of 144 is 12, so ℎ = 12."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173949,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9fd629fa-a6ed-42cd-9962-53f073436f52.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you might have just added the two lengths together. Remember that Pythagoras' theorem, 𝑎² + 𝑏² = 𝑐², requires you to square the lengths first.",
+        "B": "It seems you may have doubled the lengths (1×2 and 6×2) instead of squaring them (1×1 and 6×6). Remember, squaring a number means multiplying it by itself.",
+        "C": "You are looking for the length of the ladder, which is the hypotenuse (the longest side). When finding the hypotenuse, you need to add the squares of the two shorter sides, not subtract them.",
+        "D": "The ladder, wall and ground form a right-angled triangle. The ladder is the hypotenuse. Using Pythagoras' theorem, ladder² = 1² + 6² = 1 + 36 = 37. So the length of the ladder is the square root of 37 m."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 174009,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a2022a4c-3557-4111-98d8-49e829fb6209.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It seems you've added the two shorter lengths together. Remember Pythagoras' theorem involves squaring the lengths first: a squared + b squared = c squared.",
+        "B": "The ladder is the longest side of the triangle (the hypotenuse). To find the hypotenuse, you need to add the squares of the other two sides. It looks like you have subtracted them instead.",
+        "C": "The ladder forms the hypotenuse of a right-angled triangle. Using Pythagoras' theorem (a^2 + b^2 = c^2), we need to calculate 2^2 + 5^2. This is 4 + 25 = 29. The length of the ladder is the square root of 29.",
+        "D": "It looks like you've doubled the numbers (multiplied by 2) instead of squaring them (multiplying by themselves). For example, 5 squared is 5 x 5 = 25, not 5 x 2 = 10."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173950,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1a7a65af-d046-4eb8-a613-cf52a6695641.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Make sure you are squaring the numbers, not doubling them. For example, 52 squared is 52 × 52, not 52 × 2.",
+        "B": "The helicopter's path creates a right-angled triangle. The direct distance of 52 km is the hypotenuse. Using Pythagoras' theorem: 𝑦² + 20² = 52². Rearranging gives 𝑦² = 52² - 20² = 2704 - 400 = 2304. The square root of 2304 is 48, so 𝑦 = 48 km.",
+        "C": "The direct distance of 52 km is the hypotenuse, which is the longest side. When you are finding a shorter side, you need to subtract the squares of the lengths, not add them.",
+        "D": "It seems you have calculated 52 - 20. Remember that Pythagoras' theorem involves squaring the side lengths before you add or subtract."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 174010,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d0f97f9a-cadc-4197-963a-81beb230b527.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember that squaring a number means multiplying it by itself (e.g. 30 × 30), not multiplying by 2. It looks like you might have doubled the numbers instead of squaring them.",
+        "B": "It appears you have calculated 30 - 18. Remember that Pythagoras' theorem involves squaring the side lengths before you add or subtract.",
+        "C": "You have correctly squared the numbers. However, the direct distance of 30 km is the longest side (the hypotenuse). When you are finding a shorter side, you need to subtract the squares, not add them.",
+        "D": "The helicopter's path forms a right-angled triangle. The direct distance (30 km) is the hypotenuse. We need to find a shorter side (𝑦). Using Pythagoras' theorem, 𝑦² = 30² - 18². This is 900 - 324 = 576. The square root of 576 is 24, so 𝑦 = 24 km ."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173951,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/de395487-ade8-459a-9490-8017ac990b41.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The triangle 𝑉𝑊𝑃 is a right-angled triangle inside the cuboid, with the right angle at 𝑊. 𝑉𝑃 is the hypotenuse. Using Pythagoras' theorem: 𝑉𝑃² = 10² + 5² = 100 + 25 = 125. So, the length of 𝑉𝑃 is the square root of 125 cm.",
+        "B": "The side 𝑉𝑃 is the hypotenuse of the triangle 𝑉𝑊𝑃 because it is opposite the right angle. To find the hypotenuse, you need to add the squares of the other two sides, not subtract.",
+        "C": "It looks like you may have doubled the lengths instead of squaring them. Remember that squaring means multiplying a number by itself, e.g. 10² = 10 × 10 = 100.",
+        "D": "It seems you have just added the two lengths together (10 + 5). Remember that Pythagoras' theorem states that 𝑎² + 𝑏² = 𝑐², so you need to square the lengths first."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 174011,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/10249276-73a7-4489-b1b0-3f534d278d2c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have subtracted the lengths. Pythagoras' theorem uses the squares of the sides (𝑎² + 𝑏² = 𝑐²). Remember to square the numbers first before doing anything else.",
+        "B": "The side 𝑅𝑇 is the hypotenuse of the triangle 𝑇𝑈𝑅 because it is opposite the right angle. To find the hypotenuse, you need to add the squares of the other two sides. It looks like you have subtracted them.",
+        "C": "The lengths 𝑇𝑈, 𝑈𝑅 and 𝑅𝑇 form a right-angled triangle inside the cuboid, with the right angle at 𝑈. 𝑅𝑇 is the hypotenuse. Using Pythagoras' theorem, 𝑅𝑇² = 𝑇𝑈² + 𝑈𝑅², so 𝑅𝑇² = 6² + 15² = 36 + 225 = 261. So, 𝑅𝑇 is the square root of 261.",
+        "D": "Check your calculation for squaring. Squaring a number means multiplying it by itself (for example, 15² is 15 x 15), not multiplying by 2."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173952,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4d529721-b911-4087-bcd8-d73d6cffc5b4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have calculated the diagonal along the floor of the container, using just two dimensions (15 m and 8 m). The longest rod will fit along the 'space diagonal', from a bottom corner to the opposite top corner, so you need to use all three dimensions.",
+        "B": "It looks like you have added the three dimensions together. To find the longest diagonal in a 3D shape, you need to use the 3D version of Pythagoras' theorem: 𝑑² = 𝑎² + 𝑏² + 𝑐².",
+        "C": "The longest rod fits along the space diagonal of the container. We can use the 3D version of Pythagoras' theorem: 𝑑² = 15² + 8² + 12² = 225 + 64 + 144 = 433. So the length of the rod is the square root of 433 m.",
+        "D": "You have correctly calculated the diagonal of the base as 17 m. Now you need to use this in a second right-angled triangle with the height of 12 m. Remember to square the 17 in this next step."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 174012,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a003096c-181a-48e5-ad48-92b6ddeeb7af.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You correctly found the diagonal of the base to be 10 m. For the second step, you must use this length in Pythagoras' theorem again with the height. The formula is L² = 10² + 11². It looks like you forgot to square the 10.",
+        "B": "It seems you have added the three lengths together. To find the diagonal in 3D, you need to use Pythagoras' theorem, which involves squaring each length, adding them, and then finding the square root.",
+        "C": "The longest pipe fits along the space diagonal of the container. You can use 3D Pythagoras' theorem: 𝑑² = 𝑎² + 𝑏² + 𝑐². So, 𝑑² = 8² + 6² + 11², which is 64 + 36 + 121 = 221. The length of the pipe is the square root of 221.",
+        "D": "You have correctly found the diagonal length across the base of the container. However, the longest pipe can fit from a bottom corner to the opposite top corner. You need to use your answer of 10 m and the height of 11 m in Pythagoras' theorem one more time to find this length."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

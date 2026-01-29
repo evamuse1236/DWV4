@@ -1,0 +1,147 @@
+{
+  "shortcode": "v19",
+  "name": "Expected value",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 166,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate the expected value from a probability experiment",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate expected frequency",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 143743,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9e4c5e78-0c71-46dd-83c4-d8482e437824.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly! This is the probability of getting a 5 when we roll the dice once. Think about how you would use this probability to find out how many times you will get a 5 if you roll the dice 90 times.",
+        "B": "Not quite! I think you have divided 90 by 5. Instead, think about using the probability of getting a 5 when you roll a dice. For every 6 rolls, you would expect to get one 5. Use this to work out how many times you would get a 5 if you rolled the dice 90 times.",
+        "C": "Not quite! Think about using the probability of getting a 5 when you roll a dice. For every 6 rolls, you would expect to get one 5. Use this to work out how many times you would get a 5 if you rolled the dice 90 times.",
+        "D": "The probability of getting a 5 when we roll a fair 6 sided dice is 1 out of 6. To find the expected value we multiply the probability by the number of times we roll. So 90 multiplied by 1 out of 6 is the same as doing 90 divided by 6 which is 15. So we would expect to get 15 fives when we roll a fair dice 90 times."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 143763,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/94490c9f-bfa1-4642-b176-7c4cf0933f7d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Think about using the probability of getting a 3 when you roll a dice. For every 6 rolls, you would expect to get one 3 Use this to work out how many times you would get a 3 if you rolled the dice 150 times.",
+        "B": "The probability of getting a 3 when we roll a fair 6 sided dice is 1 out of 6. To find the expected value we multiply the probability by the number of times we roll. So 150 multiplied by 1 out of 6 is the same as doing 150 divided by 6 which is 25. So we would expect to get 25 threes when we roll a fair dice 150 times.",
+        "C": "Nearly! This is the probability of getting a 3 when we roll the dice once. Think about how you would use this probability to find out how many times you will get a 3 if you roll the dice 150 times.",
+        "D": "Not quite! I think you have divided 150 by 3. Instead, think about using the probability of getting a 3 when you roll a dice. For every 6 rolls, you would expect to get one 3. Use this to work out how many times you would get a 3 if you rolled the dice 150 times."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 143744,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b897336d-a126-497a-b541-ea16ac3d9014.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly! I think you have found one third of 60. Remember, this probability is two thirds. Think about what we should do to find two thirds, once we know one third.",
+        "B": "Not quite, I think you have halved 60 as if the coin is fair. We are told this coin is biased, so you will need to find a different fraction.",
+        "C": "Two-thirds of 60 is 40, so we would expect to get 40 Heads.",
+        "D": "Not quite, remember that when finding a fraction of an amount we divide by the denominator then multiply by the numerator."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 143764,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/74b44471-2248-4f78-a5b6-c9d59ed9de12.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly! I think you have found one quarter of 120. Remember, this probability is three quarters. Think about what we should do to find three quarters, once we know one quarter.",
+        "B": "Not quite, I think you have halved 120 as if the coin is fair. We are told this coin is biased, so you will need to find a different fraction.",
+        "C": "Three-quarters of 120 is 90, so we would expect to get 90 Heads.",
+        "D": "Not quite, this would be the case if the probability was 100%. Think about how to find three quarters of an amount."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 143745,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d62604b5-5a23-4991-89ec-cbdbe00d70f6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "120 x 0.02 is the correct method to find 2/100 of £120.",
+        "B": "Not quite, this would give an answer bigger than 120, which is impossible. Think again about how to find 2/100 of an amount. What operation is represented by of?",
+        "C": "Not quite, think again about how to find 2/100 of an amount. What operation is represented by of?",
+        "D": "Not quite, think again about how to find 2/100 of an amount. What operation is represented by of?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 143765,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b5d890c2-979a-4131-b33d-2695c81803be.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, think again about how to find 3/100 of an amount. What operation is represented by of?",
+        "B": "Not quite, think again about how to find 3/100 of an amount. What operation is represented by of?",
+        "C": "150 x 0.03 is the correct method to find 3/100 of £150..",
+        "D": "Not quite, this would give an answer bigger than 150, which is impossible. Think again about how to find 3/100 of an amount. What operation is represented by of?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 143746,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0c6ae4b4-bf4a-48ed-87e2-8c6caa995c20.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you have multiplied 75 by 240. If the max prize is £240, we cannot have an expected value greater than £240. Think about what fraction of £240 you need to find.",
+        "B": "Not quite, I think you have added 75 to 240. If the max prize is £240, we cannot have an expected value greater than £240. Think about what fraction of £240 you need to find.",
+        "C": "Not quite, I think you have made a plave value error in your calculations. Double check again and think about how to find 1/75 of an amount.",
+        "D": "1/75 of £240 is £3.20. The expected value of each ticket is, therefore, £3.20."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 143766,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c88aac13-e164-4078-b0da-c64b05c179fe.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you have made an error in your calculations. Double check again and think about how to find 1/80 of an amount.",
+        "B": "1/80 of £300 is £3.75. The expected value of each ticket is, therefore, £3.75.",
+        "C": "Not quite, I think you have multiplied 300 by 80. If the max prize is £300, we cannot have an expected value greater than £300. Think about what fraction of £300 we need to find.",
+        "D": "Not quite, I think you have added 80 to 300. If the max prize is £300, we cannot have an expected value greater than £300. Think about what fraction of £300 we need to find."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 143747,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/409b0a5c-3758-4d29-9536-4c2016954233.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If 75 tickets have been sold then you have a 1/75 chance of winning the price. 1/75 of £240 is £3.20 so this is your expected winnings but you spent £5 buying a ticket so your expected returns would be £3.20 - £5 = - £1.80.",
+        "B": "Not quite! I think you have accidentally added on the cost of the raffle ticket to the expected winnings, rather than subtract it.",
+        "C": "Not quite! I think you have taken the total cost of buying all the raffle tickets from the main prize. To find the expected return, you need to find the fraction of the prize you are expected to win & the subtract the cost of your ticket from this value.",
+        "D": "Nearly! This would be your expected return if the raffle ticket was free but you need to consider what you return would be if you have had to pay out for a ticket."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 143767,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a7d31765-92cc-48d5-93b6-6dcf4b6fe1a4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! I think you have taken the total cost of buying all the raffle tickets from the main prize. To find the expected return, you need to find the fraction of the prize you are expected to win & the subtract the cost of your ticket from this value.",
+        "B": "Nearly! This would be your expected return if the raffle ticket was free but you need to consider what you return would be if you have had to pay out for a ticket.",
+        "C": "If 80 tickets have been sold then you have a 1/80 chance of winning the price. 1/80 of £300 is £3.75 so this is your expected winnings but you spent £6 buying a ticket so your expected returns would be £3.75 - £6 = - £2.25.",
+        "D": "Not quite! I think you have accidentally added on the cost of the raffle ticket to the expected winnings, rather than subtract it."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

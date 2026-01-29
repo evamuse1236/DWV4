@@ -1,0 +1,147 @@
+{
+  "shortcode": "bigo",
+  "name": "Understanding fractions as multiples of a unit fraction",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 48,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Multiply proper fractions in the form: Fraction × Integer",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Represent multiplication of unit fractions visually",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 156669,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c89501e5-9e6a-4145-b709-4823efeaf7ad.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have added the 1 & 4 but we need to multiply them!",
+        "B": "You have multiplied the numerator and denominator, but we only multiply the numerator by 4...",
+        "C": "You have multiplied the denominator by 4 but we need to multiply the numerator instead...",
+        "D": "4 lots of 1/3 is 4/3."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 156687,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/984873f5-d9d0-41d9-8746-c41bc9a619a4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "7 lots of 1/4 is 7/4. We multiply the numerator by 7 to get the answer.",
+        "B": "You have multiplied the denominator by 7 but we need to multiply the numerator instead...",
+        "C": "You have multiplied both the numerator and denominator, but we only multiply the numerator by 7...",
+        "D": "You have added the 1 & 7 but we need to multiply them!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158119,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4e4d546d-4619-4ff8-a037-712c04a84dcc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Each piece represents 1/4 as it is a whole split into 4 parts with one part shaded, we have 5 pieces so the model represents 1/4 x 5",
+        "B": "Look at the shading, each piece isn't worth 4/4, what is it worth?",
+        "C": "Each piece is 1 whole split into 4 parts with one part shaded, how do we represent this as a fraction? Then there are 5 pieces so what do we need to multiply by?",
+        "D": "Each piece is 1 whole split into 4 parts with one part shaded, how do we represent this as a fraction? Then there are 5 pieces so what do we need to multiply by?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158286,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/378cf4ba-86b2-4c3d-987a-2b690a3cd346.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Look at the shading, each piece isn't worth 8/8, what is it worth?",
+        "B": "Each piece represents 1/8 as it is a whole split into 8 parts with one part shaded, we have 3 pieces so the model represents 1/8 x 3",
+        "C": "Each piece is 1 whole split into 8 parts with one part shaded, how do we represent this as a fraction? Then there are 3 pieces so what do we need to multiply by?",
+        "D": "Each piece is 1 whole split into 8 parts with one part shaded, how do we represent this as a fraction? Then there are 3 pieces so what do we need to multiply by?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158120,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8be823cc-837e-41fe-856c-caa660be0bb5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This model correctly has 2 wholes but only 1/3 is shaded, we need the model that has 2 wholes and 2 pieces of 1/3 shaded in...",
+        "B": "This model represents 2 x 1/3 as there are two wholes, each one is split into 3 equal parts with 1 part shaded",
+        "C": "This model represents 1 x 1/3. We need a model with 2 wholes and 2 pieces of 1/3 shaded in...",
+        "D": "This model represents 2 x 3/3. We are looking for the model that represents 2 x 1/3..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158287,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/252633e5-7ba2-4404-9fad-e5480939b565.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This model represents 3 x 5/5. We are looking for the model that represents 3 x 1/5...",
+        "B": "This model represents 1 x 1/5. We need a model with 3 wholes and 3 pieces of 1/5 shaded in...",
+        "C": "This model correctly has 3 wholes but only 1/5 is shaded, we need the model that has 3 wholes and 3 pieces of 1/5 shaded in...",
+        "D": "This model represents 3 x 1/5 as there are three wholes, each one is split into 5 equal parts with 1 part shaded"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158121,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fe5de789-a31d-4dea-a27b-44827ed4458e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "0 is not what each jump is worth, look at the number line again to work out the value of each jump...",
+        "B": "I think you have counted the number of lines, rather than the number of jumps...",
+        "C": "Each jump is worth 1/5, we have 4 jumps and we end on 4/5 putting this together gives the calculation 1/5 x 4 = 4/5",
+        "D": "To work out the calculation: find the value of each jump, how many jumps there are and what number the jumps end on..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158288,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/87e91f01-9fcb-415b-891a-54166a3d3330.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Each jump is worth 1/7, we have 6 jumps and we end on 6/7 putting this together gives the calculation 1/7 x 6 = 6/7",
+        "B": "To work out the calculation: find the value of each jump, how many jumps there are and what number the jumps end on...",
+        "C": "I think you have counted the number of lines, rather than the number of jumps...",
+        "D": "0 is not what each jump is worth, look at the number line again to work out the value of each jump..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158122,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bb0da1ad-c0c4-4092-8ce0-284d131452b6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "12/6 means 12 pieces of 1/6 so the missing number is 12",
+        "B": "12/6 does equal 2 but we are working out how many 1/6 there are in 12/6...",
+        "C": "To find the missing value, you need to think about what multiplied by 1/6 gives 12/6. If you have 1 of something and then 12 of something, what have you multiplied it by?",
+        "D": "11/6 + 1/6 = 12/6 but we are looking for what multiplied by 1/6 gives 12/6..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158289,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/675ce5fe-06fe-48e1-9fe1-191ead0be229.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "14/3 + 1/3 = 15/3 but we are looking for what multiplied by 1/3 gives 15/3...",
+        "B": "To find the missing value, you need to think about what multiplied by 1/3 gives 15/3. If you have 1 of something and then 15 of something, what have you multiplied it by?",
+        "C": "15/3 means 15 pieces of 1/3 so the missing number is 15",
+        "D": "15/3 does equal 5 but we are working out how many 1/3 there are in 15/3..."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,165 @@
+{
+  "shortcode": "vmx",
+  "name": "Ratio - method selection 4",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 14,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Recognise if two ratios are equivalent",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given information about one part, work out other parts",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve problems in the form of: “how many more need to be added to make the ratio…”",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given a scale represented by a ratio in the same units, calculate the size of something in real life",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given a scale represented by a ratio in different units, calculate the size of something in real life",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 135012,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/11345974-6b00-4ce2-b5dc-f7f366321295.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. To see if they are equivalent, simplify both ratios and see if they simplify to the same ratio.",
+        "B": "If we simplify 4:10 we get 2:5. If we simplify 3:9 we get 1:3. These are not the same so Tom is wrong. 10:25 simplifies to 2:5 which matches 4:10, so Katie is correct.",
+        "C": "Not quite. To see if they are equivalent, simplify both ratios and see if they simplify to the same ratio.",
+        "D": "Not quite. To see if they are equivalent, simplify both ratios and see if they simplify to the same ratio."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135032,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/46ee2a30-a853-4848-ba96-80dc690349cc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we simplify 4:6 we get 2:3. If we simplify 10:15 we get 2:3. These are the same so Tom is correct. 6:8 simplifies to 3:4 which is different to 4:6 so Katie is wrong.",
+        "B": "Not quite. To see if they are equivalent, simplify both ratios and see if they simplify to the same ratio.",
+        "C": "Not quite. To see if they are equivalent, simplify both ratios and see if they simplify to the same ratio.",
+        "D": "Not quite. To see if they are equivalent, simplify both ratios and see if they simplify to the same ratio."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135013,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f7977941-b832-43a7-9493-a12c0ce1745e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you used 126 as the total number of biscuits. However, 126 is just Katies share. How many parts of the ratio is this?",
+        "B": "126 is Katie's share, which is 7 parts. 126/7 = 18 meaning each part is worth 18. Tom gets 2 parts, so 2 x 18 = 36",
+        "C": "I think you have used 2 for Katie's share, but Katie's is the 7 in the ratio.",
+        "D": "I think you have taken away 5 because Tom's share is 5 less. However, ratio is multiplicative. Think about how many parts there are in total, and how many each part must be worth."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135033,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8f2b3d97-bea1-4c31-93a4-e70c38e09a33.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added 1 because Tom's share is 1 more. However, ratio is multiplicative. Think about how many parts there are in total, and how many each part must be worth.",
+        "B": "I think you used 84 as the total number of biscuits. However, 84 is just Katies share. How many parts of the ratio is this?",
+        "C": "I think you have used 4 for Katie's share, but Katie's is the 3 in the ratio.",
+        "D": "84 is Katie's share, which is 3 parts. 84/3 = 28 meaning each part is worth 28. Tom gets 4 parts, so 4 x 28 = 112"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135014,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ccf19d4b-03d3-4b28-b910-b11490dd00f8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have seen that Katies parts go up by 1. Think about how many biscuits they have in total, and share them out in the new ratio to see how many Tom needs to give away.",
+        "B": "If Katie has 16 biscuits Tom has 8, so there are 24 biscuits in total. Sharing this in the ratio 1:3 we get 6:18. That means Tom needs to give away 2 of his biscuits",
+        "C": "I think you have worked out that one part in the ratio 1:2 is worth 8, so thought we need 8 more biscuits. However, there are no new biscuits, Tom is just giving some of his to Katie. Think about how many biscuits they have in total, and share them out in the new ratio to see how many Tom needs to give away.",
+        "D": "I think you used 16 as the 1 part, and then added this on to increase the share from 2 parts to 3 parts. However, there are no new biscuits, Tom is just giving some of his to Katie. Think about how many biscuits they have in total, and share them out in the new ratio to see how many Tom needs to give away."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135034,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bf632f74-1303-40df-856b-28428d5478f1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have worked out that one part in the ratio 1:2 is worth 8, so thought we need 8 more biscuits. However, there are no new biscuits, Katie is just giving some of hers to Tom. Think about how many biscuits they have in total, and share them out in the new ratio to see how many Katie needs to give away.",
+        "B": "I think you have worked out that 20 is the number of biscuits Tom will have when they share them out in the ratio 1:5. However, the question is asking you to find out how many biscuits Katie must give Tom for the ratio to become 1:5. If Tom needs to have 20 biscuits, how many does Katie need to give him?",
+        "C": "I think you have seen that Tom's parts go up by 3. Think about how many biscuits they have in total, and share them out in the new ratio to see how many Katie needs to give away.",
+        "D": "If Tom has 16 biscuits Katie has 8, so there are 24 biscuits in total. Sharing this in the ratio 1:5 we get 4:20. That means Katie needs to give away 4 of her biscuits"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135015,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f627d9b2-3deb-4e7f-b090-251bdc9efdab.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have divided by 80. We are trying to find the real life size, which is the larger size.",
+        "B": "1:80 means that 1cm on the model represents 80cm in real life. That means we need to multiply by 80 to go from model length to real life. 8 x 80 = 640cm.",
+        "C": "I think you have added on 7. However, ratio is multiplicative. What do we need to multiply by to go from 1 to 8?",
+        "D": "Almost. Just check your multiplication"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135035,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6090c0df-ca68-490b-ab6a-748d4c2019ee.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added on 6. However, ratio is multiplicative. What do we need to multiply by to go from 1 to 7?",
+        "B": "Almost. Just check your multiplication",
+        "C": "1:70 means that 1cm on the model represents 70cm in real life. That means we need to multiply by 70 to go from model length to real life. 7 x 70 = 490cm",
+        "D": "I think you have divided by 70. We are trying to find the real life size, which is the larger size."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135016,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/970b1d27-b939-4320-9307-0a68fb91d5d4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I can see that you have multiplied by the right number, just check the units. In real life we are dealing with m.",
+        "B": "I think you did 50 + 50 by mistake, rather than 50 x 50.",
+        "C": "I think you made a mistake when converting between the units. Remember there are 100cm in a metre, and 1000m in a km.",
+        "D": "In the scale 1cm = 5000cm. That means we multiply the map length by 5000 to get the real life length. 50 x 5000 = 250000 cm = 2500m = 2.5km"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135036,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f8bdc287-b2c0-479d-9c6b-123b71bf76d3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "In the scale 1cm = 4000cm. That means we multiply the map length by 4000 to get the real life length. 40 x 4000 = 160000 cm = 1600m = 1.6km",
+        "B": "I think you made a mistake when converting between the units. Remember there are 100cm in a metre, and 1000m in a km",
+        "C": "I can see that you have multiplied by the right number, just check the units. In real life we are dealing with m.",
+        "D": "I think you did 40 + 40 by mistake, rather than 40 x 40."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

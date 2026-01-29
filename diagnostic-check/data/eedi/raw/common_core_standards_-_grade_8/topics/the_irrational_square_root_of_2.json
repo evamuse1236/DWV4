@@ -1,0 +1,141 @@
+{
+  "shortcode": "ehjv",
+  "name": "The irrational square root of 2",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 30,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify rational and irrational numbers",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166841,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e33dba4b-bb39-41bd-aac9-b214cecaa96d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It's great that you know a rational number needs to be able to be written as a fraction; however the numerator and denominator of the fraction must be a whole number, which √2 isn't!",
+        "B": "The square root of 2 has a non-repeating and non-terminating decimal, meaning it can't be written as a fraction with an integer numerator and denominator. That means it must be irrational!",
+        "C": "Remember that a calculator doesn't show you every single digit in the answer to something. It will be either rounded or truncated!",
+        "D": "That would only work for perfect squares where their root is an integer, such as √4 = 2 or √9 = 3. √2 isn't a whole number."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167091,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/60756e1b-44b9-44e2-9e9c-4cf083fd2a8c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "√2 is a non-terminating and non-repeating decimal and therefore is an irrational number. The question is asking us which statement incorrectly describes √2!",
+        "B": "A number is not rational (irrational) if it can't be written as a fraction using integers. That is true for the square root of 2, so this one is correct!",
+        "C": "If we round √2 to three decimal places (or four significant figures) we would get 1.414, which means that this one is correct.",
+        "D": "Although 2 is a rational number, the square root of 2 is a non-terminating and non-repeating decimal, which means √2 itself is actually irrational."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166842,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/29112e50-b64c-4dd8-bb57-87deae85b11b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "An irrational number is a decimal that goes on forever and doesn't repeat in a pattern. √4 is exactly 2, so that isn't an irrational number!",
+        "B": "A decimal isn't necessarily irrational - an irrational number is one that can't be written as a fraction and has a decimal that goes on forever and doesn't repeat. This one isn't irrational as it does terminate!",
+        "C": "An irrational number is a number that cannot be written as a fraction. This answer is given as a fraction, which means it can't be irrational!",
+        "D": "√2 is a non-repeating, non-terminal decimal that can't be written as a fraction using integers. That means it must be an irrational number!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167092,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4c018905-6178-49b2-924f-baa72f40cfe4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "√2 is a non-repeating, non-terminal decimal that can't be written as a fraction using integers. That means it must be an irrational number!",
+        "B": "An irrational number is a number that cannot be written as a fraction using integers. √3 / √3 is a number divided by itself, which would be 1, which is a rational number.",
+        "C": "An irrational number is a decimal that goes on forever and doesn't repeat in a pattern. √9 is exactly 3, so that isn't an irrational number!",
+        "D": "A decimal isn't necessarily irrational - an irrational number is one that can't be written as a fraction and has a decimal that goes on forever and doesn't repeat. This one isn't irrational as it does terminate!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166843,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0125cfa8-47fd-40b1-a531-f0b421357584.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "An irrational number is one we couldn't write as a fraction because the decimal form goes on forever and is not repeating. This is true for √2 so that's the reason it's irrational.",
+        "B": "Some square roots are rational - for example, √4 is a rational number because it makes exactly 2. So, this isn't a reason that √2 is irrational.",
+        "C": "You're sort of there, but is there a better way that we could explain this? Have a think about WHY we can't write the value of it.",
+        "D": "I think you might be mixed up between irrational and negative numbers. Positive numbers can still be irrational!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167093,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/697efc99-c9a0-4d90-a73b-b8de2ebf0793.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Close, but some non-terminating decimals are still rational, for example 0.33333... What is it that makes those ones rational and others not?",
+        "B": "Non-repeating decimals can still be rational if they terminate, for example 1.325 is a rational number. What is it that makes non-repeating non-terminating decimals irrational?",
+        "C": "An irrational number is one we couldn't write as a fraction using integers because the decimal form goes on forever and is not repeating. This is true for √2 so that's the reason it's irrational.",
+        "D": "You're sort of there, but is there a better way that we could explain this? Have a think about WHY we can't write the value of it."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166844,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/00c34559-7219-4604-a070-1ca2ce5c6fe8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is an approximation where only the first three digits of the decimals have been kept. The actual decimal goes on much longer than this!",
+        "B": "Although the first few digits (1 and 4) repeat a couple of times, the whole decimal actually doesn't repeat even though it goes on forever. Have a think about what that means for a number!",
+        "C": "Well, if we squared √2, that would give us 2 as we are just undoing the square root. That means it will be a rational number, not irrational.",
+        "D": "The decimal form of √2 is non-repeating and non-terminating, which makes it an irrational number."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167094,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/147e7409-630c-4b33-bde8-cb7fce5bcba8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The decimal form of √2 is non-repeating and non-terminating, which makes it an irrational number. This one must be false!",
+        "B": "√2 x √2 is the same as √2² which would undo the square root and just give us 2. Therefore, this statement is true!",
+        "C": "The ≈ symbol means 'approximately', which isn't an exact answer but may be one that is rounded or truncated. The square root of 2 when rounded to 3 decimal places is 1.414, so the ≈ symbol is correct here!",
+        "D": "The decimal form of √2 is non-repeating and non-terminating, which makes it an irrational number. So, this one is true!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166845,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e703bfaa-5b67-468e-bfa8-166dc4185bfd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, only decimals that either repeat or terminate are rational.",
+        "B": "An irrational number has a non-terminating decimal. A calculator has to truncate or round because no display screen could ever fit on all of the digits of an irrational number if it goes on forever! Therefore, we can't use this answer to prove √2 is irrational as we can't see that it goes on forever.",
+        "C": "Not quite - have a think about the limitations of a calculator. Is the answer we are given the whole answer?",
+        "D": "The calculator will work things out correctly, but sometimes it might not give us the whole answer. Can you think about why that is?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167095,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5c2407a2-1d98-409e-bfe2-2498d9ceb536.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It is true that we can't write it as a fraction, but why is that?",
+        "B": "Some non-terminating decimals are still rational numbers, such as 0.7777777... What is it that makes some rational and some not?",
+        "C": "An irrational number is non-terminating and non-repeating, like Tom's answer. This means that it can't be written as a fraction, like Katie's answer. This means they're both correct!",
+        "D": "Not quite - try having a think about what makes a number irrational!"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

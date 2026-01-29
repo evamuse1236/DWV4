@@ -1,0 +1,147 @@
+{
+  "shortcode": "efkg",
+  "name": "Absolute Value with Numberlines",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 107,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Find the absolute value of a number",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Relate a negative number as an absolute distance from 0 on a number line",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166195,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/66984950-4d63-4e3f-80b7-450b4ee33eef.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You're correct that we are looking at the point −3, but we want to know the number of jumps (spaces) between 0 and −3. Because we're counting the number of jumps, the answer will not be negative.",
+        "B": "Starting at zero, we need to count the number of jumps along the number line until we get to −3. We jump from 0 to −1, then from −1 to −2 and then from −2 to −3, so that's 3 jumps.",
+        "C": "Not quite, we want to know the number of jumps (spaces) along the number line from 0 to −3. And because we're counting the number of jumps, the answer will not be negative.",
+        "D": "Not quite, I think you've counted the number of dashes along the number line between 0 and −3. But we want to know the number of jumps (spaces) between 0 and −3. "
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166422,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d156b2b6-45e9-4656-88c8-f7e9508a4629.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Starting at zero, we need to count the number of jumps along the number line until we get to −4. We jump from 0 to −1, then from −1 to −2, then from −2 to −3, and then from −3 to −4, so that's 4 jumps.",
+        "B": "Not quite, I think you've counted the number of dashes along the number line between 0 and −4. But we want to know the number of jumps (spaces) between 0 and −4. ",
+        "C": "Not quite, we want to know the number of jumps (spaces) along the number line from 0 to −4. And because we're counting the number of jumps, the answer will not be negative.",
+        "D": "Not quite, we want to know the number of jumps along the number line from 0 to −4. And because we're counting the number of jumps, the answer will not be negative."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166196,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8b103532-cbfb-4133-aa7f-2921663563b4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The 'absolute value' of 5, means 'how far away from 0 is 5?' Therefore, starting at zero, we need to count the number of jumps along the number line until we get to 5. So, the absolute value of 5 is 5.",
+        "B": "I think you've correctly recognised that the 'absolute value' of 5, means 'how far away from 0 is 5?' But, I think you've counted the number of dashes along the number line between 0 and 5. Instead, you need to count the number of jumps (spaces) between 0 and 5.",
+        "C": "The 'absolute value' of 5, means 'how far away from 0 is 5?'",
+        "D": "Not quite, the 'absolute value' of 5, means 'how far away from 0 is 5?' Because we're counting the number of jumps (spaces) between 0 and 5, the answer will not be negative."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166423,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d528e176-8ffc-4e5c-9bf6-2a990f8b9024.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The 'absolute value' of 2, means 'how far away from 0 is 2?'",
+        "B": "Not quite, the 'absolute value' of 2, means 'how far away from 0 is 2?' Because we're counting the number of jumps (spaces) between 0 and 2, the answer will not be negative.",
+        "C": "The 'absolute value' of 2, means 'how far away from 0 is 2?' Therefore, starting at zero, we need to count the number of jumps along the number line until we get to 2. So, the absolute value of 2 is 2.",
+        "D": "I think you've correctly recognised that the 'absolute value' of 2, means 'how far away from 0 is 2?' But, I think you've counted the number of dashes along the number line between 0 and 2. Instead, you need to count the number of jumps (spaces) between 0 and 2."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166197,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/087a4287-7ea3-4d20-8f77-27128351c547.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've correctly recognised that the 'absolute value' of −15, means 'how far away from 0 is −15?' And I think you've correctly counted the number of jumps along the numberline, but notice that the value of each jump along the numberline is not equal to 1.",
+        "B": "You're correct that we are looking at the point −15, but we want to know the number of jumps (spaces) between 0 and −15. Because we're counting the number of jumps, the answer will not be negative.",
+        "C": "The 'absolute value' of −15, means 'how far away from 0 is −15?' Therefore, starting at zero, we need to count the number of jumps along the number line until we get to −15. So, the absolute value of −15 is 15.",
+        "D": "I think you've correctly recognised that the 'absolute value' of −15, means 'how far away from 0 is −15?' But, I think you've counted all the numbers from 0 to −15, including 0. Instead, you need to count the number of jumps (spaces) between 0 and −15."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166424,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6d23dd3d-07b7-4f08-a457-30d8e0ca9db0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The 'absolute value' of −25, means 'how far away from 0 is −25?' Therefore, starting at zero, we need to count the number of jumps along the number line until we get to −25. So, the absolute value of −25 is 25.",
+        "B": "I think you've correctly recognised that the 'absolute value' of −25, means 'how far away from 0 is −25?' But, I think you've counted all the numbers from 0 to −25, including 0. Instead, you need to count the number of jumps (spaces) between 0 and −25.",
+        "C": "I think you've correctly recognised that the 'absolute value' of −25, means 'how far away from 0 is −25?' And I think you've correctly counted the number of jumps along the numberline, but notice that the value of each jump along the numberline is not equal to 1.",
+        "D": "You're correct that we are looking at the point −25, but we want to know the number of jumps (spaces) between 0 and −25. Because we're counting the number of jumps, the answer will not be negative."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166198,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4088afb2-09e9-41e9-9af6-3be046a9a243.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The 'absolute value' of a number, means 'how far away from 0 is that number?'. Therefore the absolute values of the labelled points are: W=20, X=4, Y=8 and Z=12. Therefore W has the largest absolute value.",
+        "B": "The 'absolute value' of a number, means 'how far away from 0 is that number?'. You've given the point with the smallest absolute value. But, the question is asking for the point with the largest absolute value.",
+        "C": "You've given the largest negative number but not the largest absolute value. Remember that the 'absolute value' of a number, means 'how far away from 0 is that number?'. So, we're looking for the number that is the greatest distance from 0.",
+        "D": "You've given the largest positive number but not the largest absolute value. Remember that the 'absolute value' of a number, means 'how far away from 0 is that number?'. So, we're looking for the number that is the greatest distance from 0."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166425,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d991b2ba-6b4a-4926-9e47-702e98c47f99.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You've given the largest positive number but not the largest absolute value. Remember that the 'absolute value' of a number, means 'how far away from 0 is that number?'. So, we're looking for the number that is the greatest distance from 0.",
+        "B": "The 'absolute value' of a number, means 'how far away from 0 is that number?'. You've given the point with the smallest absolute value. But, the question is asking for the point with the largest absolute value.",
+        "C": "You've given the largest negative number but not the largest absolute value. Remember that the 'absolute value' of a number, means 'how far away from 0 is that number?'. So, we're looking for the number that is the greatest distance from 0.",
+        "D": "The 'absolute value' of a number, means 'how far away from 0 is that number?'. Therefore the absolute values of the labelled points are: W=4, X=0, Y=6 and Z=12. Therefore Z has the largest absolute value."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166199,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/220d8770-b21f-4e0e-832a-2f65f73c4431.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The 'absolute value' of a number, means 'how far away from 0 is that number?'. Therefore, you're correct that the absolute value of −4 is 4. Is there another number that is also 4 jumps away from 0?",
+        "B": "I think you've correctly recognised that the 'absolute value' of −3, means 'how far away from 0 is −3?' But, I think you've counted the number of dashes along the number line between 0 and −3. Instead, you need to count the number of jumps (spaces) between 0 and each labelled point.",
+        "C": "The 'absolute value' of a number, means 'how far away from 0 is that number?'. Therefore, you're correct that the absolute value of 4 is 4. Is there another number that is also 4 jumps away from 0?",
+        "D": "The 'absolute value' of a number, means 'how far away from 0 is that number?'. Therefore, the absolute values of the labelled points are: P=4, Q=3 and R=4. Therefore, both P and R have absolute values of 4."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166426,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/74b18bab-fa90-41ff-8ed3-404053e3de33.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The 'absolute value' of a number, means 'how far away from 0 is that number?'. Therefore, the absolute values of the labelled points are: P=3, Q=2 and R=2. Therefore, P has an absolute value of 3.",
+        "B": "I think you've correctly recognised that the 'absolute value' of −2, means 'how far away from 0 is −2?' But, I think you've counted the number of dashes along the number line between 0 and −2. Instead, you need to count the number of jumps (spaces) between 0 and each labelled point.",
+        "C": "I think you've correctly recognised that the 'absolute value' of 2, means 'how far away from 0 is 2?' But, I think you've counted the number of dashes along the number line between 0 and 2. Instead, you need to count the number of jumps (spaces) between 0 and each labelled point.",
+        "D": "I think you've correctly recognised that the 'absolute value' of a number, means 'how far away from 0 is that number?' But, I think you've counted the number of dashes along the number line between 0 and each labelled point. Instead, you need to count the number of jumps (spaces) between 0 and each labelled point."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,165 @@
+{
+  "shortcode": "vnd",
+  "name": "Units of measurement method selection 2",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 37,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Convert between cm and mm",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Convert between mm and m",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Convert between l and ml",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve problems involving adding a period of time on to a given start time",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Convert between l and cm³",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 79615,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/93350530-faa6-4e6b-916f-395b7a370c2a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Look carefully at the order in the question.",
+        "B": "10 mm = 1 cm",
+        "C": "There are 100 cm in 1 metre, and 1000 mm in 1 metre.",
+        "D": "There are 100 cm in 1 metre, and 1000 mm in 1 metre."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 124602,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4e286f2d-1cc3-4703-80ee-0a22726b8095.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There are 100 cm in 1 metre, and 1000 mm in 1 metre.",
+        "B": "Look carefully at the numbers and units in the question.",
+        "C": "1 cm = 10 mm, so 10 cm = 100 mm",
+        "D": "There are 100 cm in 1 metre, and 1000 mm in 1 metre."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 79616,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/418ff445-849a-4949-a3ac-a819fa0f7fd2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Look carefully at the order in the question.",
+        "B": "Remember, \"milli-\" means \"thousandth\".",
+        "C": "Remember, \"milli-\" means \"thousandth\".",
+        "D": "1 litre (l) = 1000 millilitres (ml)"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 124603,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/543c55b9-08a5-4036-8382-509a2163820c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you used the wrong operation. Will there be more ml or l?",
+        "B": "Look carefully at the numbers and units in the question.",
+        "C": "If 1000 ml = 1 l, how many ml are equal to 10 l?",
+        "D": "1 l = 1,000 ml, so 10 l = 10,000 ml"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 79617,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/902abec1-937d-49a3-909c-eaaa5ab7aa5c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Adding on 15 minutes takes us to 11:00, then another 2 hours to 13:00, and then the final 25 minutes gives us 13:25.",
+        "B": "Almost! How do we write 1pm on the 24 hour clock?",
+        "C": "Can you have 85 minutes past 12? How many minutes are in an hour?",
+        "D": "Nearly. How many minutes did it take to get from 10:45 to 11:00? How many of the 40 do we still have to add on?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79661,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8a55de4b-4f9f-41f4-876d-163ac97ee998.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly. How many minutes did it take to get from 09:25 to 10:00? How many of the 50 do we still have to add on?",
+        "B": "Can you have 75 minutes past 12? How many minutes are in an hour?",
+        "C": "Almost! How do we write 1pm on the 24 hour clock?",
+        "D": "Adding 35 minutes takes us to 10:00, adding 3 hours takes us to 15:00, then the last 15 minutes gives us 13:15."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 79618,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/146397de-bb55-4a7e-bafb-ffe8f56c82a5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "\"Milli-\" means \"thousandth\". 1000 mm = 1 m.",
+        "B": "1000 mm = 1 m, so 3 × 1000 mm = 3 × 1 m = 3 m.",
+        "C": "\"Milli-\" means \"thousandth\". 1000 mm = 1 m.",
+        "D": "\"Milli-\" means \"thousandth\". 1000 mm = 1 m."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79662,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/78672815-4659-4220-b8bc-2a9de300501a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "1000 mm = 1 m, so 2 × 1000 mm = 2 × 1 m = 2 m.",
+        "B": "\"Milli-\" means \"thousandth\". 1000 mm = 1 m.",
+        "C": "\"Milli-\" means \"thousandth\". 1000 mm = 1 m.",
+        "D": "\"Milli-\" means \"thousandth\". 1000 mm = 1 m."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 79619,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f63728d2-15aa-45e5-85ac-316b8a2c79c2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "1 millilitre is equal to 1 cm³. How many millilitres are in a litre?",
+        "B": "1 millilitre is equal to 1 cm³. How many millilitres are in a litre?",
+        "C": "1 millilitre is equal to 1 cm³, and 1000 ml = 1 l, so we have 5 × 1000.",
+        "D": "1 millilitre is equal to 1 cm³. How many millilitres are in a litre?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79663,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/de5201d5-7a8b-413d-92c9-d90be8f46a58.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "1 millilitre is equal to 1 cm³. How many millilitres are in a litre?",
+        "B": "1 millilitre is equal to 1 cm³, and 1000 ml = 1 l, so we have 4 × 1000.",
+        "C": "1 millilitre is equal to 1 cm³. How many millilitres are in a litre?",
+        "D": "1 millilitre is equal to 1 cm³. How many millilitres are in a litre?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

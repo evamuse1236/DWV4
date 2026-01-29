@@ -1,0 +1,165 @@
+{
+  "shortcode": "vox",
+  "name": "Order negative numbers 1",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 112,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Order negative integers with the same number of digits",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use inequality notation to order negative integers with a different number of digits",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Read an integer on a scale where the required measurement is marked by a dash between two numbers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Read a negative integer temperature from a thermometer",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Compare and order temperatures written in the same units and record the results using >, < and =.",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 75909,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a2c91135-1b17-452e-b07b-695d9dff7656.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have counted up in 1s from -10. Make sure to count all the way to the next given number in order to check your intervals.",
+        "B": "I think you have counted down in 1s from 2. Make sure to count all the way to the next given number in order to check your intervals.",
+        "C": "The number line goes up in 2s, so we can countdown from 2 or up from -10. This gives us -4.",
+        "D": "You may have counted in the wrong direction from 2. Make sure to count all the way to the next given number in order to check you are correct."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 76057,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ae6f5099-352d-4925-8c0d-a0c757fe55a5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The scale goes up in intervals of 2. This gives us 0.",
+        "B": "I think you have counted down in 1s from 4. Make sure to count all the way to the next given number in order to check your intervals.",
+        "C": "I think you might have worked out the difference between 4 and -8. Now divide this by the number of sections between the numbers.",
+        "D": "I think you have counted up in 1s from -8. Make sure to count all the way to the next given number in order to check your intervals are correct."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 75910,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bbca43c2-1d61-4de3-970d-3be66d27ee13.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You may have forgotten to look at the negative signs. Try again, but make sure all your positive values come first.",
+        "B": "You have correctly identified that the positive number comes first, but have made a mistake ordering your negative numbers. Try drawing them out on a number line.",
+        "C": "You have instead placed your answers in ascending order. Descending means in order from greatest to smallest.",
+        "D": "This is the correct descending order. We start with the greatest number and work our way down to the smallest. It may help to picture these on a number line."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 76058,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ceef8054-32e2-4002-940f-05c6238648e6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You may have forgotten to look at the negative signs. Try again, but make sure all your positive values come first.",
+        "B": "You have correctly identified that the negative numbers comes first, but have made a mistake when ordering them. Try drawing them out on a number line.",
+        "C": "You have instead placed your answers in descending order. Ascending means in order from smallest to greatest.",
+        "D": "The numbers are -5, -4, -2, 3 in ascending order. Ascending means in order from smallest to greatest. It can be helpful to draw them out on a number line."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 75912,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/70487ef9-0275-40df-8e0f-92eb8c056a63.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You may have mixed up the inequality symbols. The opening of the inequality symbol is by the greatest number so you are looking for a number greater than -35. It may help you to draw a number line if you are still struggling.",
+        "B": "This inequality symbol means that x is greater than -35. So we are looking for any number above -35 on a number line. -1 is greater than -35.",
+        "C": "You may have mixed up the inequality symbols. The opening of the inequality symbol is by the greatest number so you are looking for a number greater than -35. It may help you to draw a number line if you are still struggling.",
+        "D": "This inequality symbol means that x is greater than -35. x cannot be exactly -35."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 76060,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f2e2e6dc-6378-4de4-9c55-9efa5305b206.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This inequality symbol means that x is greater than -38. So we are looking for any number above -38 on a number line. 0 is greater than -38.",
+        "B": "You may have mixed up the inequality symbols. The opening of the inequality symbol is by the greatest number so you are looking for a number greater than -38. It may help you to draw a number line if you are still struggling.",
+        "C": "You may have mixed up the inequality symbols. The opening of the inequality symbol is by the greatest number so you are looking for a number greater than -38. It may help you to draw a number line if you are still struggling.",
+        "D": "This inequality symbol means that x is greater than -38. x cannot be exactly -38."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130106,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8d50b991-a224-422c-96b3-21e7a74be403.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, they are both negative but the numbers are different. Think about a number line. The negative numbers get smaller as they get further away from zero.",
+        "B": "Think about a number line. We go down from 0 to -1, then down to -2 and so on. The further down you go the smaller, the number is. That means -7 is bigger than -9 so we use >.",
+        "C": "This would be true for positives, but with negatives it's not the same. The negative numbers get smaller as they get further away from zero.",
+        "D": "We can compare the two temperatures using one of these symbols. Remember = means 'equal', < means 'less than', > means 'more than'."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130102,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8af3c6c7-0df8-49e7-b984-92f6a0ca2bcf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, they are both negative but the numbers are different. Think about a number line. The negative numbers get smaller as they get further away from zero.",
+        "B": "This would be true for positives, but with negatives it's not the same. The negative numbers get smaller as they get further away from zero.",
+        "C": "Think about a number line. We go down from 0 to -1, then down to -2 and so on. The further down you go. the smaller the number is. That means -8 is smaller than -3 so we use <.",
+        "D": "We can compare the two temperatures using one of these symbols. Remember = means 'equal', < means 'less than', > means 'more than'."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130107,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fdc171c9-8f4d-4f8a-82cc-a3a03294da0a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "5 intervals represents 10, that means each interval represents 2. Counting down from 0 in 2s we get down to -8.",
+        "B": "I think you thought each jump (or interval) was worth 1, and went 1 above -10. But how much would each jump be if 5 jumps is worth 10?",
+        "C": "I think you thought each jump (or interval) was worth 1, and went down 4 from 0. But how much would each jump be if 5 jumps is worth 10?",
+        "D": "I think you thought each jump (or interval) was worth 1, and then you tried to go 1 more than -10. But how much would each jump be if 5 jumps is worth 10?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130103,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/075e2226-fbdc-42b3-82d3-556c128a5c96.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you thought each jump (or interval) was worth 1, and went down 2 jumps from 0. But how much would each jump be if 5 jumps is worth 10?",
+        "B": "I think you thought each jump (or interval) was worth 1, and went 3 above -10. But how much would each jump be if 5 jumps is worth 10?",
+        "C": "5 intervals represents 10, that means each interval represents 2. Counting down from 0 in 2s we get down to -4.",
+        "D": "I think you thought each jump (or interval) was worth 1, and then you tried to go 3 above -10. But how much would each jump be if 5 jumps is worth 10?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

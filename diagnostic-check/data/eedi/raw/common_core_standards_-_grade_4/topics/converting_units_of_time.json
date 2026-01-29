@@ -1,0 +1,165 @@
+{
+  "shortcode": "bigz",
+  "name": "Converting units of time",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 60,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Convert from hours to seconds",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Convert from days to seconds",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Convert from days to hours",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Convert from weeks to hours",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Convert from years to days",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 129102,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e68564a5-1b64-4e60-b9bd-3cdd3ea690ff.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have just multiplied by 1000. Remember there are 60 minutes in an hour and 60 seconds in a minute.",
+        "B": "There are 60 minutes in an hour and 60 seconds in a minute. 3 hours × 60 = 180 minutes. 180 minutes × 60 = 10,800 seconds.",
+        "C": "This is the number of minutes. What can you do next to find the number of seconds?",
+        "D": "It looks like you have just multiplied by 100. Remember there are 60 minutes in an hour and 60 seconds in a minute."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129242,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/71b4e43b-1886-43f7-afe3-875eff018e67.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the number of minutes. What can you do next to find the number of seconds?",
+        "B": "It looks like you have just multiplied by 100. Remember there are 60 minutes in an hour and 60 seconds in a minute.",
+        "C": "It looks like you have just multiplied by 1000. Remember there are 60 minutes in an hour and 60 seconds in a minute.",
+        "D": "There are 60 minutes in an hour and 60 seconds in a minute. 10 hours × 60 = 600 minutes. 600 minutes × 60 = 36,000 seconds."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129103,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/85ae2f57-90b8-4bc6-bda6-2870233c035b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the number of minutes in a day. What can you do next to find the number of seconds?",
+        "B": "We multiply 1 day by 24 to find the hours, then 60 to find the minutes, then 60 again to find the seconds. That gives 60 × 60 × 24",
+        "C": "Remember there are 24 hours in a day, 60 minutes in an hour and 60 seconds in a minute.",
+        "D": "Remember there are 24 hours in a day, not 12."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129243,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f905e9e4-4592-446a-a77d-15f07c52d9a3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember there are 24 hours in a day, 60 minutes in an hour and 60 seconds in a minute.",
+        "B": "Remember there are 24 hours in a day, not 12.",
+        "C": "This is the number of minutes in 2 days. What can you do next to find the number of seconds?",
+        "D": "We multiply 2 days by 24 to find the hours, then 60 to find the minutes, then 60 again to find the seconds. That gives 2 × 60 × 60 × 24"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129176,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bf26d8a1-d6f0-472b-86ee-6fb9775fa42f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This would mean there were only 10 hours in a day. Think about a clock, how many hours are there during a whole day?",
+        "B": "This is the number of hours in 1 day. How many are in two days?",
+        "C": "This would mean there were only 20 hours in a day. Think about a clock, how many hours are there during a whole day?",
+        "D": "There are 24 hours in a day. 2 × 24 = 48"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129316,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/60d90eeb-1318-4aa1-a0dc-6961cdd6e923.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This would mean there were only 20 hours in a day. Think about a clock, how many hours are there during a whole day?",
+        "B": "There are 24 hours in a day. 4 × 24 = 96",
+        "C": "This would mean there were only 10 hours in a day. Think about a clock, how many hours are there during a whole day?",
+        "D": "This would mean there were only 12 hours in a day. Think about a clock, how many hours are there during a whole day?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129177,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e4982953-84ed-4a85-8c1d-b047af6ff53c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the number of hours in 5 days. We need the number in 5 weeks.",
+        "B": "Not quite. How many hours are in each day? There are more than 12.",
+        "C": "Not quite. How many days are in each week? There are more than 5.",
+        "D": "There are 7 days in each week. and 24 hours in each day. So in 5 weeks we have 5 × 7 × 24 hours"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129317,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f61524a5-4dfb-403d-b4f2-17903e11008a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. How many days are in each week? There are more than 5.",
+        "B": "There are 7 days in each week. and 24 hours in each day. So in 10 weeks we have 10 × 7 × 24 hours",
+        "C": "This is the number of hours in 10 days. We need the number in 10 weeks.",
+        "D": "Not quite. How many hours are in each day? There are more than 12."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129179,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/57fc8ab6-94c9-4265-b8f5-6ad46b09f145.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the number of days in 2 years rather than a leap year.",
+        "B": "A normal year has 365 days. A leap year has one extra day - February 29th, so 366 days in total.",
+        "C": "Remember in a leap year we have an extra day - February 29th.",
+        "D": "This is the number of days in a normal year. Remember in a leap year we have an extra day - February 29th."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129319,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e45d4515-f980-4478-afc3-b0f483e373bd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember in a leap year we have an extra day - February 29th.",
+        "B": "This is the number of days in 2 normal years rather than 2 leap years.",
+        "C": "This is the number of days in 1 leap year. How many are in two leap years.",
+        "D": "A normal year has 365 days. A leap year has 366 days. 2 leap years would have 2 × 366 = 732"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,153 @@
+{
+  "shortcode": "bitw",
+  "name": "Compare two fractions with a common denominator or numerator",
+  "collectionId": 33,
+  "level": 1,
+  "sequence": 27,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Use inequality notation to order fractions with the same denominators ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use inequality notation to order fractions with the same numerators",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Understand comparing fractions is only valid when the two fractions refer to the same whole",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158810,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d071d4b3-0243-4b60-aa03-04d6de2051e2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This symbol means less than. Using the diagrams, is 2/5 less than 1/5?",
+        "B": "As the diagrams show, 2/5 is greater than 1/5 as it 2 parts out of 5 instead of 1 out of 5.",
+        "C": "Do the two diagrams show the same amount shaded? Both bars are split into 5 equal parts, but 2/5 means 2 parts, and 1/5 means one part. Which is greater?",
+        "D": "We need to denominators to be the same, and they are both 5. The numerators tell us which one is greater - is it 2/5 or 1/5?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159009,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/462fec17-c7f6-4f2a-b600-b95296db2b8f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This symbol means less than. Using the diagrams, is 3/7 less than 2/7?",
+        "B": "As the diagrams show, 3/7 is greater than 2/7 as it 3 parts out of 7 instead of 2 parts out of 7.",
+        "C": "Do the two diagrams show the same amount shaded? Both bars are split into 7 equal parts, but 3/7 means 3 parts, and 2/7 means two parts. Which is greater?",
+        "D": "We need to denominators to be the same, and they are both 7. The numerators tell us which one is greater - is it 3/7 or 2/7?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158811,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/191a09d6-50cb-4179-8ad4-6866830efffb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "4 is smaller than 8, but look at the scale - the top of the scale is counting in quarters, and the bottom is counting in eighths. If we count 3 jumps along each scale, which one is greater?",
+        "B": "The top of the scale is counting in quarters, and the bottom is counting in eighths. 3 jumps along the top scale is further than 3 jumps along the bottom scale, so 3/4 is greater than 3/8. We use the greater than symbol, >",
+        "C": "The numerators are equal, so they are each 3 parts, but the denominators are different so they are not the same size parts. Use the number line - the top of the scale is counting in quarters, and the bottom is counting in eighths. Is 3/4 more than 3/8, or less?",
+        "D": "It is easier to compare fractions with the same denominator, but look at the scale: the top of the scale is counting in quarters, and the bottom is counting in eighths. Count along to 3/4 on the top, and 3/8 on the bottom. Which one is greater?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159010,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eb8dea49-52d7-42e2-9caf-596049471559.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The top of the scale is counting in fifths, and the bottom is counting in tenths. 2 jumps along the top scale is further than 2 jumps along the bottom scale, so 2/5 is greater than 2/10 so we have 2/10 < 2/5",
+        "B": "10 is greater than 5, but look at the scale - the top of the scale is counting in fifths, and the bottom is counting in tenths. If we count 2 jumps along each scale, which one is greater?",
+        "C": "The numerators are equal, so they are each 2 parts, but the denominators are different so they are not the same size parts. Use the number line - the top of the scale is counting in fifths, and the bottom is counting in tenths. Is 2/10 more than 2/5, or less?",
+        "D": "It is easier to compare fractions with the same denominator, but look at the scale: the top of the scale is counting in fifths, and the bottom is counting in tenths. Count along to 2/5 on the top, and 2/10 on the bottom. Which one is greater?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158812,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1b33809a-830e-4452-94db-a551003da924.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This symbol means less than. Is 11 sevenths less than 9 sevenths?",
+        "B": "Both fractions have the same denominator, so we can compare the numerators. 11 sevenths is greater than 9 sevenths.",
+        "C": "Both fractions are in sevenths, but is 11 sevenths the same as 9 sevenths?",
+        "D": "We need to denominators to be the same, and they are both 7. The numerators tell us which one is greater - is it 11/7 or 9/7?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159011,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/abc09656-fe90-415f-ae04-4658a382fdcc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Both fractions have the same denominator, so we can compare the numerators. 7 eighths is greater than 3 eighths therefore we have 3/8 < 7/8",
+        "B": "This symbol means 7/8 is less than 3/8. If we have 7 of something and 3 of the same thing, which would be greater?",
+        "C": "Both fractions are in eighths, but is 3 eighths the same as 7 eighths?",
+        "D": "We need to denominators to be the same, and they are both 8. The numerators tell us which one is greater - is it 3/8 or 7/8?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158813,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5267a156-14e0-46cf-86af-0fbf12a24ea4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "3 is less than 5, a smaller denominator doesn't mean a smaller fraction. Picture a circle split into 3 equal parts, and one split into 5 equal parts. If we shade 2 parts on each circle, which has a greater amount shaded?",
+        "B": "Picture a circle split into 3 equal parts, and one split into 5 equal parts. If we shade 2 parts on each circle, shading 2 out of 3 is more of the circle than 2 out of 5, so 2/3 is greater than 2/5. We can also convert both fractions to have the same denominator: 2/3 = 10/15 and 2/5 = 6/15. 10/15 > 6/15.",
+        "C": "The fractions have the same numerator, but they are not equal. Picture a circle split into 3 equal parts, and one split into 5 equal parts. If we shade 2 parts of each circle, which one has a greater amount shaded?",
+        "D": "We can convert these to have the same denominator to make them easier to compare: 2/3 = ___/15 and 2/5 = __/15. Which is greater?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159012,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/03e4c9c1-20d7-452e-8985-d4819bcbf2cf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Picture a circle split into 10 equal parts, and one split into 7 equal parts. If we shade 5 parts on each circle, shading 5 out of 7 is more of the circle than 5 out of 10, so 5/7 is greater than 5/10. We can also convert both fractions to have the same denominator: 5/10 = 35/70 and 5/7 = 50/70 therefore 5/10 < 5/7",
+        "B": "10 is greater than 7 however, a smaller denominator doesn't mean a smaller fraction. Picture a circle split into 10 equal parts, and one split into 7 equal parts. If we shade 5 parts on each circle, which has a greater amount shaded?",
+        "C": "The fractions have the same numerator, but they are not equal. Picture a circle split into 10 equal parts, and one split into 7 equal parts. If we shade 5 parts of each circle, which one has a greater amount shaded?",
+        "D": "We can convert these to have the same denominator to make them easier to compare: 5/10 = ___/70 and 5/7 = __/70. Which is greater?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158814,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4d956300-a895-48b9-a538-3de8f17c833c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "3/8 is a greater fraction than 2/8, but what if Kiera's pizza is small and Luke's is large?",
+        "B": "Is 3 eighths less than 2 eighths? Also, what if Kiera's pizza is small and Luke's is large, or vice versa?",
+        "C": "Is 3 eighths the same as 2 eighths? Also, what if Kiera's pizza is small and Luke's is large, or vice versa?",
+        "D": "3/8 is a greater fraction than 2/8, but if Kiera saved 3/8 of a tiny pizza and Luke saved 2/8 of a giant pizza, Luke saved more. We can't decide which is bigger unless we know how big the pizzas are."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159013,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1ce802ef-94d1-45a1-a3f8-85aaab25b993.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "3/4 is a greater fraction than 1/4, but what if Lola's drink is small and Fenton's is large?",
+        "B": "Is 3 quarters less than 1 quarter? Also, what if Lola's drink is small and Fenton's is large, or vice versa?",
+        "C": "Is 1 quarter the same as 3 quarters? Also, what if Lola's drink is small and Fenton's is large, or vice versa?",
+        "D": "3/4 is a greater fraction than 1/4, but if Lola drank 3/4 of a tiny drink and Luke drank 1/4 of a giant drink, Fenton drank more. We can't decide which is bigger unless we know how big the drinks are."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

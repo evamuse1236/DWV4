@@ -1,0 +1,165 @@
+{
+  "shortcode": "v0f",
+  "name": "Equation of a straight line graph 3",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 87,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Determine if a given point lies on a line",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find the gradient of a line written in the form ax + by = c",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find the y-intercept of a line written in the form ax + by = c",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find the x-intercept of a line written in the form ax + by = c",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Sketch, or identify a sketch, of a line given in the form ax + by = c",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 107346,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aa2c1359-57e6-4844-8ded-cd382a2ac681.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Try finding the intercepts to see whether they cross the axes in positive or negative positions",
+        "B": "Not quite. Try finding the intercepts to see whether they cross the axes in positive or negative positions",
+        "C": "Finding the x intercept by making y = 0 we have x =3. Similarly finding the y intercept we make x = 0, giving y = 5.These are both positive so it must be C as this is the only line that has a positive x and y intercept.",
+        "D": "Not quite. Try finding the intercepts to see whether they cross the axes in positive or negative positions"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107366,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/756d9ad5-b375-449f-a145-0c3cef12deed.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Try finding the intercepts to see whether they cross the axes in positive or negative positions",
+        "B": "Finding the x intercept by making y = 0 we have x =5. Similarly finding the y intercept we make x = 0, giving y = -4.The only line with a positive x intercept and negative x intercept is B",
+        "C": "Not quite. Try finding the intercepts to see whether they cross the axes in positive or negative positions",
+        "D": "Not quite. Try finding the intercepts to see whether they cross the axes in positive or negative positions"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107347,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c77c9026-28b6-441a-8ab4-9e1c05fc4d22.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have used the coefficient of x. Remember we need the equation in the form y = mx + c before we use the coefficient of x for the gradient. Can we rearrange this equation so it is in the form y = mx + c?",
+        "B": "Not quite, we have made the correct step for rearranging the equation to be in the form y = mx + c, however we still have 3y and so we need to divide by 3 to completely rearrange the equation in the correct form. If this is in the correct form can we now find the coefficient of x?",
+        "C": "I think you can see that we have to get one y, so started to rearrange. Remember we need the equation in the form y = mx + c before we use the coefficient of x for the gradient. Can we rearrange this equation so it is in the form y = mx + c?",
+        "D": "We have correctly rearranged the equation of the line to the form of y = mx + c which is y = -5x/3 + 5. If we compare this with the equation of the straight line we can identify our gradient to be -5/3"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107367,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/804d4f5c-6bb6-4bcc-a5ae-441073f924c8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have used the coefficient of x. Remember we need the equation in the form y = mx + c before we use the coefficient of x for the gradient. Can we rearrange this equation so it is in the form y = mx + c?",
+        "B": "We have successfully rearranged our equation to the form y = mx + c which gave us y = 4x/5 - 4. Comparing this with y = mx + c we can see that m = 4/5 and so this is our gradient,",
+        "C": "Almost. I think you have moved the x to the right of the equal sign, but that would leave -5y. Try moving the ys to the right as your first step.",
+        "D": "Almost. I think you have moved the x to the right of the equal sign, but that would leave -5y. Try moving the ys to the right as your first step, and then make sure you finish rearranging so you have the line in the form y = mx + c or mx + c = y."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107348,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/141ad75a-6759-432f-9c24-495467a60d26.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have made the wrong variable 0. Remember the x coordinate = 0 for the y intercept. Substitute this in to find the y intercept.",
+        "B": "I think you have found the gradient of the line. Remember the y intercept is when the x coordinate is 0. Try substituting x = 0 into the equation to find y.",
+        "C": "The x coordinate of the y intercept is 0. Substituting x = 0 in we get 3y = 15, so y = 5.",
+        "D": "I think you have found the constant, but this only works when a line is in the form y = mx + c. Remember the y intercept is when the x coordinate is 0. Try substituting x = 0 into the equation to find y."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107368,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/14e076ac-feec-4181-8625-875e5b2c1077.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember the y intercept is when the x coordinate is 0. Try substituting x = 0 into the equation to find y.",
+        "B": "I think you have found the gradient of the line. Remember the y intercept is when the x coordinate is 0. Try substituting x = 0 into the equation to find y.",
+        "C": "I think you have found the constant, but this only works when a line is in the form y = mx + c. Remember the y intercept is when the x coordinate is 0. Try substituting x = 0 into the equation to find y.",
+        "D": "The x coordinate of the y intercept is 0. Substituting x = 0 in we get -5y = 20, so y = -4."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107349,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f27a171d-0e04-408a-a2ae-da398d02b0d4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember we are given our coordinates in (x, y). So we have our equation 5x + 3y = 15, and we need to substitute in the value for x and y to see if they make the equation correct. If they do the point is on the line",
+        "B": "Not quite. Remember we are given our coordinates in (x, y). So we have our equation 5x + 3y = 15, and we need to substitute in the value for x and y to see if they make the equation correct. If they do the point is on the line",
+        "C": "We substituted the coordinates from Tom and Katie in to the equation for the straigh line: 5x + 3y = 15. For Tom's (6, -5) we have 5(6) + 3(-3) = 15. This can be explanded to 30 - 15 = 15, because this is true we know (6, -5) lies on the line. We then substituted for Katie (-6, 15) and had 5(-6) + 3(15) = 30. This can be expanded to -30 + 45 = 15 which is also true. Thus both Tom and Katie are correct.",
+        "D": "Not quite. Remember we are given our coordinates in (x, y). So we have our equation 5x + 3y = 15, and we need to substitute in the value for x and y to see if they make the equation correct. If they do the point is on the line"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107369,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/505c7828-4ae5-4ea3-b315-af11b03612ad.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember we are given our coordinates in (x, y). So we have our equation 4x-5y = 20, and we need to substitute in the value for x and y to see if they make the equation correct. If they do the point is on the line",
+        "B": "Not quite. Remember we are given our coordinates in (x, y). So we have our equation 4x-5y = 20, and we need to substitute in the value for x and y to see if they make the equation correct. If they do the point is on the line",
+        "C": "Not quite. Remember we are given our coordinates in (x, y). So we have our equation 4x-5y = 20, and we need to substitute in the value for x and y to see if they make the equation correct. If they do the point is on the line",
+        "D": "In order to work out whether coordinates lie on the line 4𝑥 − 5𝑦 = 20, substitute the values into the equation and see if they make mathematical sense. For Jo’s (10, −4), we have 4 × 10 − 5 × −4 = 20. The left-hand side works out as 40 − (−20) = 60, which doesn't equal 20, so (10, −4) does not lie on the line. Repeating this for Paul’s (−4, 10), we have 4 × −4 − 5 × 10 = 20. This gives −16 − 50 = 20, which is clearly not true and so (−4, 10) does not lie on the line either."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107350,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/08791d64-4df0-47dc-a7ef-0d8e0ae03fb9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Because the point Q lies on the axis we know it has the coordinates (x, 0) and we are given the equation for the line 5x + 3y = 15. We can substitute the y value into the equation and so have 5x + 3(0) = 15. Solving this equation for x we have 5x = 15, where x =3 and so the coordinate is (3, 0)",
+        "B": "I think you have found the y intercept. We are trying to find the x intercept, so we know that the y coordinate of this point is 0. You can substitute this into the equation and find the x coordinate.",
+        "C": "I think you have tried to find the gradient. We are trying to find the x intercept, so we know that the y coordinate of this point is 0. You can substitute this into the equation and find the x coordinate.",
+        "D": "I think you have tried to find the gradient. We are trying to find the x intercept, so we know that the y coordinate of this point is 0. You can substitute this into the equation and find the x coordinate."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107370,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fd617edc-5837-41da-b709-635d01b6f27d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have used the coefficient of x. We are trying to find the x intercept, so we know that the y coordinate of this point is 0. You can substitute this into the equation and find the x coordinate.",
+        "B": "Because the point Q lies on the axis we know it has the coordinates (x, 0) and we are given the equation for the line 4x - 5y = 20. We can substitute the y value into the equation and so have 4x - 5(0) = 20. Solving this equation for x we have 4x = 20, where x =5 and so the coordinate is (5, 0)",
+        "C": "I think you have tried to find the gradient. We are trying to find the x intercept, so we know that the y coordinate of this point is 0. You can substitute this into the equation and find the x coordinate.",
+        "D": "I think you have tried to find the gradient. We are trying to find the x intercept, so we know that the y coordinate of this point is 0. You can substitute this into the equation and find the x coordinate."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

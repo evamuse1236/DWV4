@@ -1,0 +1,147 @@
+{
+  "shortcode": "vu1",
+  "name": "Expand single brackets and simplify",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 126,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Simplify algebraic expressions to maintain equivalence by collecting like terms involving just one linear variable",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Simplify algebraic expressions to maintain equivalence by collecting like terms involving non-linear variables",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 135277,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0db4ab73-a500-411e-815a-f86bd3a881fd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. I think you have just used the number in front of the second bracket. Remember you will get xs from the first bracket too",
+        "B": "The first bracket will give us 10x and then we need to subtract 4x leaving us with 6x",
+        "C": "Almost, just be careful to take into account the - between the two brackets",
+        "D": "I think you have found the difference between the constants in the brackets. Look at how many xs you would get if you expanded and simplified"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135297,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0b2f01cf-bf8c-4f07-8b73-10e320bb2583.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember the numbers Infront of the bracket will need to be multiplied by everything inside",
+        "B": "Not quite. Remember the numbers Infront of the bracket will need to be multiplied by everything inside, also take note of the - between the brackets",
+        "C": "Almost, just be careful to take into account the - between the two brackets",
+        "D": "The first bracket gives us 12x, and then we need to take away the 2x given by the second bracket. This leaves us with 10x"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135278,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6eb141a3-71aa-46c5-ba57-0d28ca71310d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember the numbers infront of the bracket will need to be multiplied by everything inside",
+        "B": "Not quite. Remember the numbers infront of the bracket will need to be multiplied by everything inside, also take note of the - between the brackets",
+        "C": "Almost, just be careful to take into account the - between the two brackets",
+        "D": "The first bracket gives us 8, and then we take away the -28 from the second bracket. This gives us 8 - - 28 = 8 + 28 = 36"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135298,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b8fcb6af-7138-4575-8088-e8937d4f2077.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember the numbers Infront of the bracket will need to be multiplied by everything inside, also take note of the - between the brackets",
+        "B": "Not quite. Remember the numbers Infront of the bracket will need to be multiplied by everything inside",
+        "C": "The first bracket gives us 18, and then we take away the -18 from the second bracket. This gives us 18 - - 18 = 18 + 18 = 36",
+        "D": "Almost, just be careful to take into account the - between the two brackets"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135279,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6a9a8689-0308-48b3-a2ce-1e43350afb46.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The only place that will give us x squared terms is the first bracket. x multiplied by 2x will give us 2 x squared, so the answer is 2",
+        "B": "I think you might have combined the terms in the first bracket, but they are not like terms so we can't add them. Remember we only want x squared terms.",
+        "C": "I think you have just added the x terms. Remember everything inside the bracket is multiplied by what is on the outside. Also we are only interested in x squared terms",
+        "D": "Not quite, the second bracket won't give us any x squared terms."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135299,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/df94fb8a-8410-40fd-8902-aac5b94da89a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, the second bracket won't give us any x squared terms.",
+        "B": "I think you have combined your x and x squared terms, we are only interested in the x squared that comes from the first bracket",
+        "C": "I think you have just added the x terms. Remember everything inside the bracket is multiplied by what is on the outside. Also we are only interested in x squared terms",
+        "D": "The only place that will give us x squared terms is the first bracket. x multiplied by 3x will give us 3 x squared, so the answer is 3"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135280,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4b977371-f05a-4b0e-986f-e408d55e1c7c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The first bracket gives us -x and the second gives us 12x, so in total we have 11x",
+        "B": "I think you have added the 3 and 4 here. Remember we multiply everything outside the bracket by what is inside. Is this the only part that will give you an x term?",
+        "C": "I think you have found the constant term here, we are interested in the x terms",
+        "D": "I think you have only taken the x terms from the second bracket. There will be some from the first bracket too"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135300,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f879017a-35b2-42c2-aad1-343c1bcf80cc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have found the P, we are interested in Q which is the x term",
+        "B": "The first bracket gives us -5x and the second gives us 12x. -5 + 12 = 7",
+        "C": "I think you have combined the x squared term with the x term. We are only interested in the x terms.",
+        "D": "Almost, just remember there is a - in front of the 5 in the first brackets"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135281,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/37e707ff-db5a-4ce7-b4af-bc8deb16dfc0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you forgot to multiply by the number outside the bracket.",
+        "B": "I think you combined the -1 and -2 in the two brackets. Remember everything inside the bracket is multiplied by what is on the outside.",
+        "C": "I think you included the -1 from the first bracket, but this is -1x. We are only interested in the constant terms",
+        "D": "We don't get any constant terms from the first bracket, only from the second which gives us 3 x -2 = -6"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135301,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/685d44e9-a3e9-460f-b9e3-5f2186a55cc1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you included the -5 from the first bracket, but this is -5x. We are only interested in the constant terms",
+        "B": "We don't get any constant terms from the first bracket, only from the second which gives us 6 x -3 = -18",
+        "C": "I think you combined the -5 and -3 in the two brackets. Remember everything inside the bracket is multiplied by what is on the outside.",
+        "D": "I think you forgot to multiply by the number outside the bracket."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

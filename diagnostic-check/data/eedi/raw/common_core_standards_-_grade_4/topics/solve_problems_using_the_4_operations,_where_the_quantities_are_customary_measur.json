@@ -1,0 +1,141 @@
+{
+  "shortcode": "big8",
+  "name": "Solve problems using the 4 operations, where the quantities are customary measures used to measure mass",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 69,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Solving problems involving customary units of weight",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158104,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/88c13e71-5e4d-4ded-abd5-85af5607128c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find out how many pounds Maurice needs to buy we do 5 - 3 1/2. 5 - 3 = 2 and then 2 - 1/2 = 1 1/2 therefore he needs to buy 1 1/2 more pounds of flour!",
+        "B": "You have accidentally added 5 and 3 1/2 but you're finding the difference between them so you need to subtract!",
+        "C": "You have correctly done 5 - 3 but then you need to take away another half from this answer, not add it on...",
+        "D": "I think you have an error when subtracting... Start by doing 5 - 3 and then take away half from this answer"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158271,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3a77ede7-337d-4dde-bc40-4a4ddee3744b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have accidentally added 7 and 4 1/3 but you're finding the difference between them so you need to subtract!",
+        "B": "I think you have an error when subtracting... Start by doing 7 - 4 and then take away a third from this answer",
+        "C": "To find out how many pounds Caleb needs to buy we do 7 - 4 1/3. 7 - 4 = 3 and then 3 - 1/3 = 2 2/3 therefore he needs to buy 2 2/3 more pounds of flour!",
+        "D": "You have correctly done 7 - 4 but then you need to take away another third from this answer, not add it on..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158105,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d03695a1-7750-4648-a42c-9093259560a6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have accidentally added the values but he is giving away 0.7 so we need to subtract this...",
+        "B": "I think you did 7 - 1.5 but we need to do 1.5 - 0.7 because Mark has 1.5 pounds and is giving away 0.7 pounds...",
+        "C": "We need to do 1.5 - 0.7. We can't do 5 - 7 so we need to borrow from the units column...",
+        "D": "If Mark has 1.5 pounds and gives away 0.7 pounds to find out what he has left we do 1.5 - 0.7 = 0.8 therefore he has 0.8 pounds left"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158272,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/10308967-0411-4818-85f0-15d5be31a868.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We need to do 2.4 - 0.6. We can't do 4 - 6 so we need to borrow from the units column...",
+        "B": "If Luke has 2.4 pounds and gives away 0.6 pounds to find out what he has left we do 2.4 - 0.6 = 1.8 therefore he has 1.8 pounds left",
+        "C": "You have accidentally added the values but he is giving away 0.6 so we need to subtract this...",
+        "D": "I think you did 6 - 2.4 but we need to do 2.4 - 0.6 because Luke has 2.4 pounds and is giving away 0.6 pounds..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158106,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b27bc08f-ed8d-48c9-aaf6-9356ba586c03.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have accidentally added the 4 and 0.5 but we need to multiply them...",
+        "B": "Emile needs 4 cups of sugar and one weighs 0.5 therefore to find the total we need to do 4 x 0.5 = 2 so he needs 2 pounds of sugar in total!",
+        "C": "You have accidentally subtracted the 4 and 0.5 but we need to multiply them...",
+        "D": "You have accidentally divided the 4 and 0.5 but we need to multiply them..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158273,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/267c491d-a10d-45db-96a6-c717bbc7aa6f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have accidentally divided the 6 and 0.4 but we need to multiply them...",
+        "B": "You have accidentally added the 6 and 0.4 but we need to multiply them...",
+        "C": "Sharlene needs 6 cups of flour and one weighs 0.4 therefore to find the total we need to do 6 x 0.4 = 2.4 so she needs 2.4 pounds of flour in total!",
+        "D": "You have accidentally subtracted the 6 and 0.4 but we need to multiply them..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158107,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9c7f71be-0fb4-47b6-adee-cc735b715af4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find the number of bags we do 1.5 ÷ 0.4 = 3.75 however, we cannot buy 0.75 of a bag therefore we buy 4 so that Natalie has enough chocolate chips!",
+        "B": "I think you have rounded down 3.75 packs to 3 but that would be 1.2 pounds of chocolate chips and Natalie needs 1.5 so how many bags does she need to buy?",
+        "C": "You have correctly done 1.5 ÷ 0.4 = 3.75 but can you go to a shop and buy 0.75 of a bag of chocolate chips?",
+        "D": "You have accidentally added the 1.5 and 0.4 but we need to divide them to find out how many 0.4s are in 1.5..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158274,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7b779db1-04fb-466a-a2ea-9794aa6942e8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have accidentally added the 2.8 and 0.5 but we need to divide them to find out how many 0.5s are in 2.8...",
+        "B": "You have correctly done 2.8 ÷ 0.6 = 5.6 but can you go to a shop and buy 0.6 of a bag of brown sugar?",
+        "C": "I think you have rounded down 5.6 packs to 5 but that would be 2.5 pounds of brown sugar and Taylor needs 2.8 so how many bags does she need to buy?",
+        "D": "To find the number of bags we do 2.8 ÷ 0.5 = 5.6 however, we cannot buy 0.6 of a bag therefore we buy 6 so that Taylor has enough brown sugar!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158108,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a54c2d94-41db-493f-bad9-2ce97bb7136f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have correctly found that 1 pound and 8 ounces is 24 ounces but you need to divide this value by 4 to find out how many ounces of apples are in each bag...",
+        "B": "I think you have used 1 pound is 12 ounces but 1 pound is actually 16 ounces...",
+        "C": "There are 16 ounces in a pound so 1 pound and 8 ounces is 16 + 8 = 24 ounces. To split 24 ounces between 4 smaller bags we divide: 24 ÷ 4 = 6 so there will be 6 ounces of apples in each bag",
+        "D": "I think you have used 1 pound is 10 ounces but 1 pound is actually 16 ounces..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158275,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5582f840-6068-4057-b8b3-58f5148d2582.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There are 16 ounces in a pound so 2 pounds and 2 ounces is 16 x 2 + 2 = 34 ounces. To split 34 ounces between 8 smaller bags we divide: 34 ÷ 8 = 4.25 so there will be 4.25 ounces of apples in each bag",
+        "B": "I think you have used 1 pound is 10 ounces but 1 pound is actually 16 ounces...",
+        "C": "You have correctly found that 2 pound and 2 ounces is 34 ounces but you need to divide this value by 8 to find out how many ounces of apples are in each bag...",
+        "D": "I think you have used 1 pound is 12 ounces but 1 pound is actually 16 ounces..."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,153 @@
+{
+  "shortcode": "ehhu",
+  "name": "Modelling multiplication and division",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 35,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Multiplications and their associated area models",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiply integers of two or more digits by a single digit using place value counters",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Division of 2 digit dividends by 1 digit divisor and their associated area models",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166659,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/07938c84-8be6-40de-80be-a5e39b6ed99c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have counted the 6 green 100 counters. But that is not all of the hundreds. Can you make any more hundreds by using the 10 counters?",
+        "B": "I think you may have spotted the 3 hundreds in the question. Take a look at the counters. How many 100s are there? Remember a hundred doesn't just have to be made from the green 100 counters...",
+        "C": "It looks like you were trying to use the 10s counters to make 100 - which is right - but I think you have counted the leftover 10s instead! How many 100s can you make from the 12 tens counters you have?",
+        "D": "There are 6 of the 100 counters then you can make another hundred by using 10 of the 10 counters. So there will be 7 hundreds altogether."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166909,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/95880e66-8b27-40dd-9d6f-155960c7fb05.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have spotted the 2 tens in the question. Take a look at the counters. How many 10s are there? Remember a ten doesn't just have to be made from the yellow 10 counters...",
+        "B": "I think you have given the value of the tens counters that you can see. The question is asking how many 10s there will be? Don't forget tens can be made from ones also...",
+        "C": "There are 6 of the 10 counters then you can make another ten by using 10 of the 1 counters. So there will be 7 tens altogether.",
+        "D": "I think you have counted the 6 yellow 10 counters. But that is not all of the tens. Can you make any more tens by using the 1 counters?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166660,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fa89fee7-f1de-4730-af9a-74e0ae4e5e66.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you might be thinking about the value that would go inside (the area). We want the value at the top. What did you multiply by 3 to get your answer of 60?",
+        "B": "Going from left to right you would split the number into 3000, 500, 20 and 4. So the star would be 20.",
+        "C": "I think you have forgotten to split up the tens and the ones. There are 4 places in the diagram - one for each place value.",
+        "D": "I think you have chosen the correct digit - but what is that worth? It is not 2; it is in the tens column."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166910,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/182579ed-7ac2-4e5a-bb6f-5fc18d572841.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have chosen the correct digit - but what is that worth? What place value is the 4 in?",
+        "B": "I think you have chosen the correct digit - but what is that worth? What place value is the 4 in?",
+        "C": "Going from left to right you would split the number into 5000, 400, 30 and 7. So the star would be 400.",
+        "D": "I think you have forgotten to split up the hundreds, tens and the ones. There are 4 places in the diagram - one for each place value."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166661,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f3cc3a54-5336-4625-bbfc-3d426027ac66.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have only multiplied the digits. You need to think about what place value each digit is in. What are they worth? For example the 4 is in the thousands column so it is not just 4. What is it worth?",
+        "B": "You're close! Double check your first two values. What do you get when you do 4000 x 6?",
+        "C": "If we split the number up we would do 4000 x 6 = 24,000 300 x 6 = 1,800 20 x 6 = 120 and 6 x 6 = 36. You then need to add each of these together so it would be 24,000 + 1,800 + 120 + 36.",
+        "D": "It looks like you have split the number up into thousands, hundreds, etc but then you have added 6 instead of multiplying each of them by 6."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166911,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f1f8f8ef-d87e-4d3c-b520-ae692cbc995b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we split the number up we would do 2000 x 7 = 14,000 500 x 7 = 3,500 30 x 7 = 210 and 4x7 = 28. You then need to add each of these together so it would be 14,000 + 3,500 + 210 + 28.",
+        "B": "It looks like you have only multiplied the digits. You need to think about what place value each digit is in. What are they worth? For example the 2 is in the thousands column so it is not just 2, what is it worth?",
+        "C": "You're close! Double check your values. What do you get when you do 2000 x 7?",
+        "D": "I think you may have tried to do 34 x 7 in your head. Remember to split them up into each place value; thousands, hundreds, tens, ones."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166662,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b3130a64-51fa-4248-be9b-ca3dbe9f3262.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have subtracted 1 from the 60 but the 60 is the inside. Compare the star and the 1 with the value on top of the box on the left...",
+        "B": "I think you may have subtracted 3 from the 20. If the star is 17 then 17 +1 would equal 18 across the top of the box. What should it be equal to?",
+        "C": "The area is 60 in both diagrams (57+3 = 60). The width of the boxes are the same (3) so the lengths must be the same also. The value across the top must equal 20 so the star must be 19. (19+1 = 20)",
+        "D": "I think you may have subtracted 3 from the 57. If the star is 54 then 54 +1 would equal 55 across the top of the box. What should it be equal to?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166912,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/01ba1345-e8bd-4994-a574-78bea9ba9190.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might have forgotten to look at how the area model is split up. If the star is 20 then you would have 20+2 = 22 across the top. What should the value across the top be equal to?",
+        "B": "You're close! Just double check. If the star is 19 then the value at the top would be 19+2 = 21. Is that what you want it to be equal to?",
+        "C": "I think you may have subtracted 2 from the 8. If the star is 6 then 6 +2 would equal 8 across the top of the box. What should it be equal to?",
+        "D": "The area is 80 in both diagrams (72+8 = 80). The width of the boxes are the same (4) so the lengths must be the same also. The value across the top must equal 20 so the star must be 18. (18+2 = 20)"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166663,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/190dc41d-cd9f-4f6b-beed-fc1dc176f9d4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The dividend (84) should be represented by the area (the space inside). As the numbers that make up the 84 are outside of the box, this cannot be used to calculate the division. This is set up to work out 84 x 6.",
+        "B": "I think you may have got confused by the shaded part. We can go over 84 and then subtract. The shaded part is 1 lot of 6 so we would want one less than 15 to get our answer.",
+        "C": "It looks like you may be unsure as you can't see 84. But what is the total area here?",
+        "D": "It looks like you may be a bit unsure on how to use the area model. What is the total area here? Does it fit with the question?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166913,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/64fa77c6-33d9-4f6b-a0a3-8c5823fc2870.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you may be unsure as you can't see 87. But what is the total area here?",
+        "B": "I think you may have got confused by the shaded part. We can go over 87 and then subtract. The shaded part is 1 lot of 3 so we would want one less than 30 to get our answer.",
+        "C": "The dividend (87) should be represented by the area (the space inside). As the numbers that make up the 87 are outside of the box, this can not be used to calculate the division. This is set up to work out 87 x 3.",
+        "D": "It looks like you may be unsure as you can't see 87. But what is the total area here?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

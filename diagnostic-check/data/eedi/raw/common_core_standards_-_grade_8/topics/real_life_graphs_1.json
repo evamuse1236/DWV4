@@ -1,0 +1,159 @@
+{
+  "shortcode": "v11",
+  "name": "Real life graphs 1",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 156,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Given a situation sketch an appropriate real life graph",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given a situation sketch an appropriate speed-time graph",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given a situation sketch an appropriate displacement-time graph",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given the speed, calculate missing values from a displacement-time graph",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 131721,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/98f5cfd3-9d92-44ad-a71b-f7581518c1f6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The gradient of this graph is steeper at the start and then flattens out. This shows that the depth is increasing more quickly at the start. If the depth increases quickly does this mean our glass has a narrow or wide base? Our gradient then gradually reduces. What might this mean in terms of the width of the glass?",
+        "B": "The gradient of this graph is steeper at the start and then flattens out. This shows that the depth is increasing more quickly at the start. If the depth increases quickly does this mean our glass has a narrow or wide base?",
+        "C": "The glass we're looking for does have a narrower base and a wider top, but Glass C is made up of 2 distinct widths which would lead to an obvious change on our graph where the gradient changed. Our graph is much smoother than this. Which glass changes more gradually from narrow to wide?",
+        "D": "The gradient of this graph is steeper at the start and then flattens out. This shows that the depth is increasing more quickly at the start meaning the width of the glass is smaller. As it is a smooth curve it means the glass gradually gets wider towards the top, rather than a sudden change, hence glass D, not C"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133914,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c0196785-1a26-4e7c-bdc6-fb7a519dc0ff.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The graph shows the height of the water increases at a constant rate. Glass A has the same width throughout so the height of the water over time would be constant.",
+        "B": "The graph shows that the height of the water increases at a constant rate. If you poured water into Glass B would it take the same amount of time to fill up the base section as the top section?",
+        "C": "The graph shows that the height of the water increases at a constant rate. If you poured water into Glass C would it take the same amount of time to fill up the base section as the top section?",
+        "D": "The graph shows that the height of the water increases at a constant rate. If you poured water into Glass D would it take the same amount of time to fill up the base section as the top section?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131722,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4de1f8f9-f94d-4af4-aa6e-71ada448e4ba.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have swapped round the x and the y-axis. The time is on the x-axis, the distance is on the y-axis. Make sure to read the labels!",
+        "B": "Going along the x-axis to 3 secs and then along the y-axis to 2m, this is the point B.",
+        "C": "You have correctly gone along the x-axis to 3 secs however, have another look at your distance on the y-axis. The ball has travelled 2 metres...",
+        "D": "I think you have swapped round the x and the y-axis. Time is on the x-axis so first 'go along the corridor' to 3 secs and then 'go up the stairs' to 2m on the y-axis. Be careful of the signs on the axes too, both the x and y axes have positive and negative directions."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133915,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/99abc6b0-146d-4e22-b7ff-374440eff1eb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Going along the x-axis to 2 secs and then up the y-axis to 3m, gives you the point A.",
+        "B": "I think you have swapped round the x and the y-axis. The time is on the x-axis, the distance is on the y-axis. Read the labels carefully!",
+        "C": "I think you have swapped round the x and the y-axis. Time is on the x-axis so first 'go along the corridor' to 2 secs and then 'go up the stairs' to 3m on the y-axis. Be careful of the signs on the axes too, both the x and y axes have positive and negative directions.",
+        "D": "You have correctly gone along the x-axis to 2 secs however, have another look at your distance on the y-axis. The ball has travelled 3 metres..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131723,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e920c886-5a2e-4599-b153-4272a22f74fd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The first part of this graph is horizontal which indicates that displacement is not changing with time. But we know that John starts his journey by walking from home at constant speed. So we need a graph where the displacement is changing in the first part of the graph. Think about John's speed and direction on each part of his journey to help you find the right graph.",
+        "B": "We know that John walks on the first part of his journey and runs home, and that does not match this graph. On which part of his journey is he travelling fastest? Which line will be steeper?",
+        "C": "We know that John walks from home on the first part of his journey and runs back to home on the last part, and that does not match this graph. How should the graph show him returning home?",
+        "D": "John walks from home at a constant speed so the first part of the graph is a straight line with a positive gradient. When John stops for a rest, his displacement does not change so the line on the graph is horizontal. In the last part of the journey, John is travelling towards home so the line needs to slope downwards, as his displacement away from home gets smaller. The line also needs to be steeper than the first part of the journey, to show that John is moving faster (running)."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133916,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a301ffd4-4340-478b-ab77-0016614f25dc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The first part of this graph is horizontal which indicates that displacement is not changing with time. But we know that John starts his journey by running from home at constant speed. So we need a graph where the displacement is changing in the first part of the graph. Think about John's speed and direction on each part of his journey to help you find the right graph.",
+        "B": "John runs from home at a constant speed so the first part of the graph is a straight line with a positive gradient. When John stops for a rest, his displacement does not change so the line on the graph is horizontal. In the last part of the journey, John is travelling towards home so the line needs to slope downwards, as his displacement away from home gets smaller. The line also needs to be flatter than the first part of the journey, to show that John is moving slower (walking).",
+        "C": "We know that John runs from home on the first part of his journey and walks back to home on the last part, and that does not match this graph. How should the graph show him returning home?",
+        "D": "We know that John runs on the first part of his journey and walks home, and that does not match this graph. On which part of his journey is he travelling fastest? Which line will be steeper?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131724,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9528ac7f-1fcf-4401-bac1-aad4037a8834.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To calculate the distance we need to do speed x time. If we go across from the star to our line on the graph we can then read down to find the time (5 seconds). 6x5=30 so the distance is 30m. You could also think of this as Mo can travel 6 metres in every second, so in 5 seconds he must have travelled 30 metres.",
+        "B": "I think you have added the 5 and 6 together rather than multiplying them. If Mo can travel 6 metres in 1 second how many metres can he travel in 5 seconds?",
+        "C": "I think you worked out the area under the graph, but that is the method for finding distance from a speed/time graph. Here we have a distance/time graph. Thinking about it like this might help: If Mo can travel 6 metres in 1 second how many metres can he travel in 5 seconds?",
+        "D": "I think you have counted the small squares. Try thinking about it like this: If Mo can travel 6 metres in 1 second how many metres can he travel in 5 seconds?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133917,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4be64650-98d8-4203-90ed-ebe21dde209a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you worked out the area under the graph, but that is the method for finding distance from a speed/time graph. Here we have a distance/time graph. Thinking about it like this might help: If Mo can travel 6 metres in 1 second how many metres can he travel in 10 seconds?",
+        "B": "I think you have used the same scale as on the x axis, but each axis can have a different scale. If Mo can travel 6m in 1 second how many metres can he travel in 10 seconds?",
+        "C": "To calculate the distance we need to do speed x time. If we go across from the star to our line on the graph we can then read down to find the time (10 seconds). 6x10=60 so the distance is 60m. You could also think of this as Mo can travel 6 metres in every second, so in 10 seconds he must have travelled 60 metres.",
+        "D": "I think you have added the 10 and 6 together rather than multiplying them. If Mo can travel 6 metres in 1 second how many metres can he travel in 10 seconds?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131725,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a74a2aeb-e85d-4cfa-81d6-98c2709d21a5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Velocity is speed in a given direction. We can see from the velocity-time graph that the velocity is constant, as the line is horizontal, therefore John is moving at a constant speed. The velocity then drops to 0 showing that John has stopped. The velocity then increases to higher than before showing John has increased his speed and is therefore running, the line is also shorter after his break showing it took him less time to run 1km than walk 1km",
+        "B": "I think you have drawn a displacement-time graph by accident instead of a velocity time graph. Looking at the diagram, we can see velocity is increasing as the line goes from zero, upwards. This shows John is accelerating, not moving at a constant speed. The line is then horizontal showing that the velocity doesn't change so John is at a constant speed. Then the gradient becomes negative showing John's speed is decreasing. Which one is the correct velocity-time graph?",
+        "C": "Almost! Looking at this velocity-time graph, we can see John was at a lower constant speed to get to the bench and a higher constant speed after stopping at the bench. This implies he walked first and then ran on from the bench. However, look again at the lengths of the lines. These represent the time taken. Would it take you longer to walk 1km or run 1km?",
+        "D": "Careful! This is the correct displacement-time graph, however the question has asked you which diagram illustrates John's journey as a velocity-time graph. Remember velocity is speed in a given direction."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133918,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/550503a7-2447-44db-a33a-9bf64786568a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost! Looking at the velocity-time graph in A, it shows it took John longer to run 1km than to walk 1km as the first line is much longer. This doesn't make sense. Which graph shows John taking less time to run than to walk?",
+        "B": "Careful! This is the correct displacement-time graph, however the question has asked you which diagram illustrates John's journey as a velocity-time graph. Remember velocity is speed in a given direction.",
+        "C": "We can see from the velocity-time graph that John has a high, constant speed for a short time. This shows him running to the bench. The line then drops to zero showing that John has stopped. John's velocity then increases, to show he is moving again. However this time, the line is lower showing John is travelling more slowly and the line is longer showing it has taken him more time to travel the second kilometre. This makes sense for the journey given in the question as it would take less time to run 1km than to walk 1km",
+        "D": "I think you have accidentally drawn John's journey as a displacement-time graph, rather than a velocity-time graph. If we look at what this graph's journey would be: the velocity starts off by increasing so John would be accelerating rather than walking at a constant speed. Then the horizontal line shows John is at a constant speed. John's velocity then decreases showing he is slowing down. Which of the other diagrams illustrates John's journey as a velocity-time graph?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

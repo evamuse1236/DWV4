@@ -1,0 +1,147 @@
+{
+  "shortcode": "fb88",
+  "name": "Real-world volume",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 97,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate the volume of composite shapes made from cuboids",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Recognise volume as additive",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 173928,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8f62885b-d40f-4130-bd11-c36e1431eef2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The question asks for the 'total volume'. This means you should add the two volumes together, not divide them.",
+        "B": "It looks like you have found the difference between the two volumes. To find the 'total volume', you need to add them.",
+        "C": "To find the total volume of the fort, you need to add the volumes of the two separate boxes together. The total volume is 20 cubic feet + 50 cubic feet = 70 cubic feet.",
+        "D": "To find the total volume of the combined shape, you need to add the two separate volumes. It seems you have multiplied them instead."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 173988,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/abd6f77a-a429-43cc-a217-29117a9a6d16.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have found the difference between the two volumes. The question asks for the 'total volume', which is a clue that you need to add them together.",
+        "B": "To find the total volume of the fort, you need to combine the volumes of the two boxes. It seems you have divided one volume by the other. The word 'total' is a hint to add.",
+        "C": "It seems you have multiplied the two volumes together. To find the total volume when shapes are joined, you should add their individual volumes.",
+        "D": "The total volume of a shape made of two smaller shapes is found by adding their individual volumes together. So, the total volume is 80 + 32 = 112 cubic feet."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173929,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dc2c83b4-94f9-4dd9-87dd-4aa056ce1334.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find the total amount of water the trough holds, you need to add the volumes of the two sections together. The total volume is 7 m³ + 4 m³ = 11 m³.",
+        "B": "The question asks for the 'total' amount. This is a clue to add the two volumes together. It looks like you have multiplied them.",
+        "C": "It seems you've found the difference between the two volumes. The word 'total' in the question tells you to add them together.",
+        "D": "The units are already 'cubic metres' (m³), which means you have the volume. You just need to add the two volumes together, not cube the numbers again."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 173989,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ad3bd67f-1e3f-4d89-8365-eb6482b75041.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The question asks for the total amount of water. It looks like you have found the difference between the two sections instead. 'Total' is a clue to add.",
+        "B": "It seems you have multiplied the two volumes. To find the total volume when you are combining amounts, you should add them together.",
+        "C": "To find the total amount of water the trough can hold, you need to add the volumes of the two sections together. So, 10 + 3 = 13 cubic metres.",
+        "D": "The volumes are already given in cubic metres. You don't need to cube the numbers again. To find the total volume, you just need to add the two amounts given."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173930,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aad258f9-27ef-45d1-a899-29a84774258a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you've multiplied all the lengths you can see together. To find the volume of a composite shape, you need to find the volume of each part separately and then add them together.",
+        "B": "It looks like you may have calculated the surface area of the shape instead of the volume. Remember, volume is the space inside the 3D shape.",
+        "C": "Volume of a cuboid is calculated by multiplying length, width, and height. It seems you have added all the edge lengths together. Start by splitting the shape into two cuboids and find the volume of each.",
+        "D": "First, split the shape into two cuboids. The bottom cuboid has a volume of 90 x 40 x 50 = 180,000 cm³. The top cuboid has a volume of 25 x 40 x 30 = 30,000 cm³. The total volume is 180,000 + 30,000 = 210,000 cm³."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 173990,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/71fe4b9a-f94d-4ab4-8066-d646abe79eae.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "First, split the shape into two cuboids. The bottom cuboid has a volume of 80 x 30 x 40 = 96,000 cm³. The top cuboid has a volume of 15 x 30 x 20 = 9,000 cm³. Add these together to get the total volume: 96,000 + 9,000 = 105,000 cm³.",
+        "B": "It looks like you may have calculated the surface area of the tank, which is the area of all its outside faces. The question asks for the volume, which is the space inside the tank.",
+        "C": "It seems you have added all the lengths of the sides together. To find the volume of a cuboid, you need to multiply its length, width, and height. Start by splitting the shape into two cuboids and find the volume of each.",
+        "D": "To find the volume of a shape like this, you should split it into smaller cuboids first, find the volume of each, and then add them. It looks like you might have multiplied all the given lengths together."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173931,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/78134497-efbc-45ae-b859-51390d539d41.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you've multiplied all the given dimensions together. You need to calculate the volume of each cake layer separately and then add them.",
+        "B": "First, find the volume of each cake layer. The bottom layer is 12 x 12 x 3 = 432 cubic inches. The top layer is 8 x 8 x 2 = 128 cubic inches. Adding them together gives a total volume of 432 + 128 = 560 cubic inches.",
+        "C": "It seems you may have tried to calculate the surface area of the cake instead of the volume. Remember, volume is the amount of space the cake takes up.",
+        "D": "Check the question carefully. The cakes have a 'square base', which means their length and width are the same. This gives you all the dimensions you need."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 173991,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ad799706-20c2-45c6-807f-9dccd795bfc3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you've multiplied all the given dimensions together. Remember to find the volume of each cake layer separately first, and then add those two volumes together.",
+        "B": "It seems you have found the surface area of the cake, which is the area of the outside that you could ice. The question asks for the volume, which is the amount of cake there is in total.",
+        "C": "First, find the volume of each cake layer. Since they have square bases, the length and width are the same. Bottom layer: 11 x 11 x 4 = 484 cubic inches. Top layer: 9 x 9 x 3 = 243 cubic inches. Add them together for the total volume: 484 + 243 = 727 cubic inches.",
+        "D": "The question states that the cakes have a 'square-based' shape. This is a clue that the length and the width of each cake are the same. You have all the information you need."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173932,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8bdcd371-4aa9-444f-9fd7-41b2a05e92fb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It seems you've multiplied all the dimensions together to find the volume of one platform. You need to split the shape into two parts, find their volumes separately, and add them together.",
+        "B": "You have correctly calculated the amount of concrete needed for one platform. Read the question again to see how many platforms Sam needs to make.",
+        "C": "First, find the volume of one platform. The bottom cuboid is 6 x 2 x 1 = 12 ft³. The top cuboid is 3 x 2 x 1 = 6 ft³. The total for one platform is 12 + 6 = 18 ft³. For 4 platforms, you need 18 x 4 = 72 ft³.",
+        "D": "It looks like you've tried to find the volume by multiplying all the dimensions together, and then multiplied by 4. Remember to find the volume of a composite shape by splitting it into parts and adding their volumes first."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 173992,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/137085d1-75eb-4701-866b-9ba6cfbc38f6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have correctly calculated the volume of one platform, which is a great first step! Now, read the question again to see how many platforms Ann needs to make.",
+        "B": "To find the volume of this shape, you need to split it into two smaller parts, find their volumes, and add them. It looks like you might have multiplied all the given numbers together.",
+        "C": "It looks like you have multiplied all of the dimensions together first, and then multiplied by 5. Remember to find the volume of one platform correctly first (by splitting it into two parts and adding their volumes) before multiplying by 5.",
+        "D": "First, find the volume of one platform by splitting it into two cuboids. Bottom: 12 x 4 x 2 = 96 ft³. Top: 6 x 4 x 2 = 48 ft³. The total volume for one platform is 96 + 48 = 144 ft³. Since Ann needs 5 platforms, multiply this by 5: 144 x 5 = 720 ft³."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

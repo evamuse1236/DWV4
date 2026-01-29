@@ -1,0 +1,159 @@
+{
+  "shortcode": "bihd",
+  "name": "Applying area formulas for rectangles - problem solving",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 74,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate the area of a rectangle where the dimensions are given in the same units",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given the area of a rectangle, calculate a missing dimension",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate compound area involving just rectangles and squares, where the dimensions are given in the same units",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given the compound area of a shape involving just rectangles and squares, calculate a missing length",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 109440,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b2813ed8-47e7-4fab-9c52-de56e96dc851.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. It looks like you multiplied the wrong two numbers together. Have a closer look at the diagram, what is the length of the shaded rectangle?",
+        "B": "Be careful. Remember, to find the area of a rectangle we calculate width ✕ length.",
+        "C": "Be careful. 11cm is not a length of the shaded rectangle. 5cm is the width but you will need to find the height before you can find the area.",
+        "D": "Area of the purple rectangle = width × length = 5 × 12 = 60 cm²"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 109452,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b4959826-84e8-401a-b39c-0a3cb7ba8254.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Area of the purple rectangle = width × length = 6 × 14 = 84 cm²",
+        "B": "Be careful. 8cm is not the length of the shaded rectangle. 6cm is the width but you will need to find the correct length before you can find the area.",
+        "C": "Be careful. Remember, to find the area of a rectangle we calculate width ✕ length.",
+        "D": "Not quite. It looks like you multiplied the wrong two numbers together. Have a closer look at the diagram, what is the length of the shaded rectangle?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 109444,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a77e820a-6378-4ecd-99ac-efbd299f4eb4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you've miscalculated the width of the green rectangle. Try again :)",
+        "B": "Not quite, you will have to do some calculations to find the height and width of the green rectangle :)",
+        "C": "You're close but not quite there yet! The width is 10m, but the height isn't 7. Try again :)",
+        "D": "Area of the green rectangle = width × height. We need its height and width. For the width, look at the horizontal measurements: 23 − 7 − 6 = 10 m. For the height, look to the vertical measurements: 22 − 8 = 14 m. Therefore, area = 10 × 14 = 140 m²"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 109456,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b10c2c54-2919-4b7d-9645-bc4318eac787.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Area of the green rectangle = width × height. We need its length and height. For the width, look to other horizontal measurements: 32 − 12 − 15 = 5 m. For the height, look to other vertical measurements: 27 − 10 = 17 m. Therefore, area = 5 × 17 = 85 m²",
+        "B": "Not quite, you will need to calculate the width and height of the green rectangle first :)",
+        "C": "Not quite, try finding the height of the green rectangle again first :)",
+        "D": "Nearly! The height is correct, try calculating the width of the green rectangle again"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129083,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e57087ea-7ff4-4814-8521-569dd295339d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added the two sides together, which will give us a length. Try to picture how many centimetre squares fit inside the shape. We will have 8 rows of 5 squares. How many squares will that give us?",
+        "B": "To find the area of a rectangle, we multiply the length by the width. 8 x 5 = 40. We are multiplying cm by cm so our units are cm². So the area is 40 cm².",
+        "C": "I think you might have found the distance around the outside of the rectangle, which is the perimeter. How do we find the area?",
+        "D": "Try to picture how many centimetre squares fit inside the rectangle. The side lengths will help you work out how many will fit."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129223,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/56e5413e-5aa6-4fa4-890c-cb6b54dc3a9d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might have found the distance around the outside of the rectangle, which is the perimeter. How do we find the area?",
+        "B": "I think you have added the two sides together, which will give us a length. Try to picture how many centimetre squares fit inside the shape. We will have 9 rows of 4 squares. How many squares will that give us?",
+        "C": "To find the area of a rectangle, we multiply the length by the width. 9 x 4 = 36. We are multiplying cm by cm so our units are cm². So the area is 36 cm².",
+        "D": "Try to picture how many centimetre squares fit inside the rectangle. The side lengths will help you work out how many will fit."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129084,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f2dac85d-e7b8-470b-a1eb-8b0663700481.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Adding the side lengths doesn't give us an area. We calculate the area of a rectangle by multiplying the length and the width. So what operation do we need to use to find the missing length from the area?",
+        "B": "I think you have divided the 15 cm length by 2. But we need to work backwards from the area. Start by thinking about how we calculate area. What do we have to do to 15 cm to get 45 cm²?",
+        "C": "To find the area of a rectangle, we multiply the length by the width. 15 x ★ = 45 so we need to divide by 15 to find ★. 45 ÷ 15 = 3 so the missing length is 3 cm.",
+        "D": "Try to picture how many centimetre squares fit inside the rectangle. There will be 15 squares in each row but how many rows do we need to get the correct area?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129224,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0a004bb4-a2a4-4351-bda0-91bc20a85f08.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find the area of a rectangle, we multiply the length by the width. 8 x ★ = 24 so we need to divide by 8 to find ★. 24 ÷ 8 = 3 so the missing length is 3 cm.",
+        "B": "Not quite. Adding the side lengths doesn't give us an area. We calculate the area of a rectangle by multiplying the length and the width. So what operation do we need to use to find the missing length from the area?",
+        "C": "I think you might have confused perimeter and area when calculating your answer. When we add all the side lengths, we get the perimeter. How do we calculate the area of a rectangle? And how can we get an area of 24 cm²?",
+        "D": "Try to picture how many centimetre squares fit inside the rectangle. There will be 8 squares in each row but how many rows do we need to get the correct area?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 132116,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c0801af7-2818-4d90-9ad9-1431e9421d75.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you divided 63 by 7 to get 9. If the shape was a rectangle, that would work but this shape is made up of two rectangles added together. Try splitting the shape into these two rectangles first and then label any side lengths that you know.",
+        "B": "This shape can be divided into two rectangles: a larger one on top of a smaller one. The smaller rectangle is 3 cm by 5 cm so it has an area of 15 cm². Subtracting this from 63 cm² gives us the area of the larger rectangle as 63 – 15 = 48 cm². The smaller rectangle is 3 cm wide and the whole shape is 7 cm wide so the larger rectangle must have a width of 7 – 3 = 4 cm. Dividing the area by the width gives us the missing length: 48 ÷ 4 = 12 cm.",
+        "C": "I think you might have split the shape vertically to make two rectangles and subtracted the area of the larger rectangle (7 x 5 = 35 cm²) from 63 cm². This gives the area of the smaller rectangle but not the missing length. Can you work out the width of this smaller rectangle in the vertical direction? We can use this to help us find the missing side.",
+        "D": "I think you have subtracted 15 from the total area of 63 cm². But is that 15 a length or an area? We need to split the shape into rectangles and use the area of each rectangle to help us find the missing length."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 132086,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/efc4c7e6-558c-4b98-b59a-24e30ede5bd1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This shape can be divided into two rectangles: a larger one on top of a smaller one. The smaller rectangle is 3 cm by 2 cm so it has an area of 6 cm². Subtracting this from 30 cm² gives us the area of the larger rectangle as 30 – 6 = 24 cm². The smaller rectangle is 2 cm wide and the whole shape is 5 cm wide so the larger rectangle must have a width of 5 – 2 = 3 cm. Dividing the area by the width gives us the missing length: 24 ÷ 3 = 8 cm.",
+        "B": "I think you might have split the shape vertically to make two rectangles and subtracted the area of the larger rectangle (5 x 3 = 15 cm²) from 30 cm². This gives the area of the smaller rectangle but not the missing length. Can you work out the width of this smaller rectangle in the vertical direction? We can use this to help us find the missing side.",
+        "C": "I think you have subtracted 10 from the total area of 30 cm². But is that 10 a length or an area? We need to split the shape into rectangles and use the area of each rectangle to help us find the missing length.",
+        "D": "It looks like you divided 30 by 5 to get 6. If the shape was a rectangle, that would work but this shape is made up of two rectangles added together. Try splitting the shape into these two rectangles first and then label any side lengths that you know."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

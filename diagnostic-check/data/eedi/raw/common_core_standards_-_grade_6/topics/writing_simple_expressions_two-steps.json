@@ -1,0 +1,141 @@
+{
+  "shortcode": "efkx",
+  "name": "Writing Simple Expressions: Two-Steps",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 140,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Write algebraic expressions with correct algebraic convention",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166229,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0e35c5e8-07b1-491d-958f-d4772e234447.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have just written the expression following the sentence from left to right without considering the order of operations. Start by writing an expression for the difference between 𝑥 and 2, remember difference means subtract.",
+        "B": "The difference between 𝑥 and 2 is written as 𝑥 – 2, and then we want to multiply all of that by 6 so we get 6(𝑥 – 2).",
+        "C": "You have correctly used parentheses round the 2 and 𝑥 but you have written the difference between 2 and 𝑥 instead of the difference between 𝑥 and 2.",
+        "D": "Your parentheses are in the wrong place. Where would you move them so that all of 𝑥 – 2 is multiplied by 6?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166456,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/82f531f4-3b0d-4fea-8af8-7c1751585f2a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have correctly used parentheses round the 3 and 𝑝 but you have written the difference between 3 and 𝑝 instead of the difference between 𝑝 and 3.",
+        "B": "I think you have just written the expression following the sentence from left to right without considering the order of operations. Start by writing an expression for the difference between 𝑝 and 3, remember difference means subtract.",
+        "C": "You have correctly used subtraction for the difference but it looks like you have only multiplied the 3 by 4. What would we use to show that we are multiplying all of 𝑝 – 3 by 4?",
+        "D": "The difference between 𝑝 and 3 is written as 𝑝 – 3, and then we want to multiply all of that by 4 so we get 4(𝑝 – 3)."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166230,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/18b2754b-f873-4398-aa0d-1587e5dedccb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Have another look at the statement, 7 subtracted from 6 multiplied by 𝑚. Start by writing an expression for 6 multiplied by 𝑚.",
+        "B": "Have another look at the statement, 7 subtracted from 6 multiplied by 𝑚. You have subtracted 6𝑚 from 7.",
+        "C": "This expressions shows us multiplying 𝑚 and -7 by 6, but we only want to multiply 𝑚 by 6 and then subtract 7 from the result. ",
+        "D": "Six multiplied by 𝑚 is written as 6𝑚 and then we want to subtract seven from that so our expression is 6𝑚 – 7"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166457,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/62330304-3aac-457c-943b-7be83bde45b6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you might have thought that 5𝑡 + 8 simplifies to 13𝑡, but remember we can only add like terms. Are 5𝑡 and +8 like terms?",
+        "B": "5 multiplied by 𝑡 is written as 5𝑡 and then we want to add 8 to that so our expression is 5𝑡 + 8",
+        "C": "This expression shows us multiplying 8 and 5 by 𝑡, but we only want to multiply 5 by 𝑡 and then add 8 to the result. ",
+        "D": "This expressions shows us multiplying 𝑡 and 8 by 5 but we only want to multiply 𝑡 by 5 and then add 8 to the result. "
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166231,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/412d2fd3-1234-4065-bf01-8d09ab2e1823.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The quotient of 8 and 𝑦 means 8 divided by 𝑦 which we write as 8/𝑦 and we add 3 to that so our final expression is: 3 + 8/𝑦",
+        "B": "You have written the quotient of 𝑦 and 8, how would you change this to write the quotient of 8 and 𝑦?",
+        "C": "You have spotted that we need a division but the quotient of 8 and 𝑦 means we want 8 divided by 𝑦 so 8 would be our numerator.",
+        "D": "I think you have mixed up quotient with product. The quotient of 8 and 𝑦 means we want 8 divided by 𝑦."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166458,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ed611e27-3326-4a1e-a997-9d312998b741.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost! You have subtracted 7 from the quotient of 2 and 𝑦, but you need to subtract the quotient of 2 and 𝑦 from 7.",
+        "B": "The quotient of 2 and 𝑦 means 2 divided by 𝑦 which we write as 2/𝑦 and we subtract that from 7, so our final expression is: 7 – 2/𝑦",
+        "C": "You have written the quotient of 𝑦 and 2, how would you change this to write the quotient of 2 and 𝑦?",
+        "D": "You have spotted that we need a division but the quotient of 2 and 𝑦 means we want 2 divided by 𝑦 so 2 would be our numerator."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166232,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bc5bb5e0-91dd-4535-b570-76c36b72e9bc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have mixed up quotient and product. Remember that product means to multiply.",
+        "B": "The product of 𝑤 and 9 means 𝑤 multiplied by 9, which we write as 9𝑤. 'Two more than' means we add 2 to the result so we get 9𝑤 + 2",
+        "C": "𝑤⁹ means 𝑤 raised to the power of 9. We just want to multiply 𝑤 by 9. ",
+        "D": "I think you have mixed up difference and product. Remember that product means to multiply."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166459,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/812a2e27-e0eb-40a8-ac1f-3fc4aacf6984.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you may have just added the 6 and 11 but we need to start by writing an expression for the product of 𝑒 and 11. Remember product means to multiply.",
+        "B": "I think you have mixed up quotient and product. Remember that product means to multiply.",
+        "C": "The product of 𝑒 and 11 means 𝑒 multiplied by 11, which we write as 11𝑒. 'Six more than' means we add 6 to the result so we get 11𝑒 + 6",
+        "D": "This expression represents 11 more than the product of 𝑒 and 6. How would you change it to represent 6 more than the product of 𝑒 and 11?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166233,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4d30557c-5684-4819-b381-ba15199bd93e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "𝑞³ means 𝑞 × 𝑞 × 𝑞 but we want triple 𝑞 which is just 3 lots of 𝑞. How would you write 3 lots of 𝑞?",
+        "B": "It looks like you might think that triple means we divide it by 3, but if we triple something we multiply it by 3.",
+        "C": "I think you have found the difference of 𝑞 and 4 and then tripled the answer, but we want to triple 𝑞 and then subtract 4.",
+        "D": "Difference means we subtract. Triple 𝑞 means 3 lots of 𝑞 which we write as 3𝑞, so our final answer is: 3𝑞 – 4"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166460,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/57d0b179-57d7-438c-905a-f73c077d3838.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This expression represents the difference of 3 and 7𝑓, but we want the difference of 3𝑓 and 7.",
+        "B": "Difference means we subtract. Triple 𝑓 means 3 lots of 𝑓 which we write as 3𝑓, so our final answer is: 3𝑓 – 7",
+        "C": "Remember that 'difference' means subtract.",
+        "D": "𝑓³ means 𝑓 × 𝑓 × 𝑓 but we want triple 𝑓 which is just 3 lots of 𝑓. How would you write 3 lots of 𝑓?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

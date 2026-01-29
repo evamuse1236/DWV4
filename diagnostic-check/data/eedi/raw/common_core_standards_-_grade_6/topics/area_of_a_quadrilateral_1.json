@@ -1,0 +1,159 @@
+{
+  "shortcode": "vqn",
+  "name": "Area of a quadrilateral 1",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 191,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify a unit of area",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the area of a square",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the area of a rectangle where the dimensions are given in the same units",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the area of a parallelogram where the dimensions are given in the same units",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 98463,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/08890efd-1d90-41e5-8b3f-a9f0c82e0be3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've added two of the sides. Remember that to find the area of a rectangle you have to multiply the width by the length.",
+        "B": "Area of a rectangle = width ✕ length = 5 ✕ 12 = 60 square centimetres.",
+        "C": "I think you've found the perimeter. Remember that to find the area of a rectangle you have to multiply the width by the length.",
+        "D": "Remember that to find the area of a rectangle you have to multiply the width by the length."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 98475,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/617f515d-29a5-473c-8a84-9cb5bf0946b6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Area of a rectangle = width ✕ length = 2.5 ✕ 14 = 35 square centimetres.",
+        "B": "I think you've found the perimeter. Remember that to find the area of a rectangle you have to multiply the width by the length.",
+        "C": "I think you've added two of the sides. Remember that to find the area of a rectangle you have to multiply the width by the length.",
+        "D": "Remember that to find the area of a rectangle you have to multiply the width by the length."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 98483,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eb4f57b8-615e-4e6a-b908-12713444c659.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Rearranging the part squares to form full squares we would be able to count 6 full squares. Therefore the area of the shape is 6.",
+        "B": "Not quite. We cannot count the squares that are NOT fully shaded. Can you combine partly shaded squares to form fully shaded squares? How many full squares would then be shaded?",
+        "C": "There are 4 fully shaded squares but the area includes those squares that are partially shaded. Can you combine these squares to form fully shaded squares? How many full squares would then be shaded?",
+        "D": "Not quite. Those 4 partially shaded squares can pair up to make more than one fully shaded square."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 122119,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/989159ef-c972-4f30-b8ef-f6c4f7281993.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. We cannot count the squares that are NOT fully shaded. Can you combine partly shaded squares to form fully shaded squares? How many full squares would then be shaded?",
+        "B": "Not quite. Those 6 partially shaded squares can be combined together to make more than one full squares. How many full squares would be completed shaded then?",
+        "C": "Rearranging the part squares to form full squares we would be able to count 9 full squares. Therefore the area of the shape is 9.",
+        "D": "There are 6 fully shaded squares but the area includes those squares that are partially shaded. Can you combine these squares to form fully shaded squares? How many full squares would then be shaded?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 98484,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/05ea2caf-4ccb-4ec8-883b-66a1f2647685.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Area of parallelogram = base ✕ perpendicular height. In this diagram, the base is represented by b, and the perpendicular height is c because this is at right angles to b. Therefore, length a is not needed.",
+        "B": "Not quite. Turning the shape 90⁰ might help you see which lengths we would use to find the area.",
+        "C": "Be careful. Remember the area of a parallelogram = base x perpendicular height.",
+        "D": "Not quite. Multiplying three lengths would calculate a volume not an area. Which length do we not need?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 98496,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a0d739be-afa9-4f0e-b86d-913c685723ca.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful. Remember the area of a parallelogram = base x perpendicular height.",
+        "B": "Not quite. Turning the shape so that b is horizontal might help you see which lengths we would use to find the area.",
+        "C": "Area of parallelogram = base ✕ perpendicular height. In this diagram, the base is represented by b, and the perpendicular height is a because this is at right angles to b. Therefore, length c is not needed.",
+        "D": "Not quite. Multiplying three lengths would calculate a volume not an area. Which length do we not need?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 109428,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6ecc3f32-b91b-43f0-b9dc-0d43575f18a1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is a measure of area, often called 'centimetres squared'",
+        "B": "This is a measure of area.",
+        "C": "Area can be measured in square centimetres, kilometres squared and metres squared, to name but a few. Millimetres measure distance, which means it is not a suitable measurement of area.",
+        "D": "This is a measure of area."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 109433,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/afb0ac20-e1cf-4049-8b48-c23c3521edb6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is a measure of area, often called 'millimetres squared'.",
+        "B": "This is a measure of area.",
+        "C": "Area can be measured in square millimetres, square centimetres (or centimetres squared) and square miles, to name but a few. Kilometres measure distance, which means it is not a suitable measurement of area.",
+        "D": "This is a measure of area."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 109429,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a535625b-8925-4b3e-b50b-a503e8561b06.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've doubled the length. Remember that to find the area of a square, we multiply the side length by the side length.",
+        "B": "I think you've calculated the perimeter. Remember that to find the area of a square, we multiply the side length by the side length.",
+        "C": "Area of a square = side × side. Because each side of a square is the same, it can simply be the length of one side squared, so in this case 12 × 12 = 12² = 144 cm².",
+        "D": "So close! I think you've divided by 2 to get your answer. We don't need to halve the answer with squares."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 109434,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ec0b96f9-886c-41df-9d6d-916dd6717b7f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've doubled the length. Remember that to find the area of a square, we multiply the side length by the side length.",
+        "B": "I think you've calculated the perimeter. Remember that to find the area of a square, we multiply the side length by the side length.",
+        "C": "So close! I think you've divided by 2 to get your answer. We don't need to halve the answer with squares.",
+        "D": "Area of a square = side × side. Because each side of a square is the same, it can simply be the length of one side squared, so in this case 9 × 9 = 9² = 81 cm²."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

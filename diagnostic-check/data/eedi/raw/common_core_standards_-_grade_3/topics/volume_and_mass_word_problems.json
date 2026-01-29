@@ -1,0 +1,165 @@
+{
+  "shortcode": "bit3",
+  "name": "Volume and mass word problems",
+  "collectionId": 33,
+  "level": 1,
+  "sequence": 34,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Complete mental addition problems up to 1000",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Complete mental subtraction problems up to 1000",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Carry out mental divisions when the answer is an integer",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Read an integer on a scale where the required measurement is marked by a number",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Mental multiplication and the laws of arithmetic",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158842,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/19a53335-1bfb-4b35-9556-f671df52ec11.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have added the values together but we need to find the difference between them...",
+        "B": "You have divided 550 by 110 but we need to find the difference between them...",
+        "C": "To find how much more flour is needed we do 550 - 110 = 440 therefore we need 440g more flour.",
+        "D": "You need to read the weighing scales... We already have 110g of flour so to get 550g how much more do we need?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159041,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9c48fe26-bf7d-4794-8a28-8221e9a15a09.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have added the values together but \"how much more\" means we need to find the difference between them...",
+        "B": "Almost, but double check your calculation. 550g more would take us to 780g.",
+        "C": "You need to read the weighing scales... We already have 230g of flour so to get 680g how much more do we need?",
+        "D": "To find how much more flour is needed we do 680 - 230 = 450 therefore we need 450g more flour."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158843,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ff1e11ec-6726-45b5-9263-b4d510ae63fa.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find the mass after the yeast is added we do 35 + 7 = 42 therefore the mass will be 42g.",
+        "B": "I think you have subtracted but to the find the total mass of the flour and yeast, you need to add...",
+        "C": "I think you have divided but to the find the total mass of the flour and yeast, you need to add...",
+        "D": "Make sure you read the scales... There is 35g of flour then we add 7g of yeast, so how many grams is that altogether?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159042,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7592df38-cf42-445e-af88-852ef1e86f23.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have subtracted but to the find the total mass of the flour and yeast, you need to add...",
+        "B": "To find the mass after the yeast is added we do 65 + 8 = 73 therefore the mass will be 73g.",
+        "C": "Make sure you read the scales... There is 65g of flour then we add 8g of yeast, so how many grams is that altogether?",
+        "D": "Careful, I think you have tried to add the flour and yeast, but check the place value - it looks like you added 8 to the tens instead of the ones."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158844,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e29865ce-81b6-4b0f-9a6c-cf52f9fdc022.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the volume of 1 jug but we have 8 jugs in total...",
+        "B": "I think you have done 8 ÷ 2 but we have 8 jugs of 2 litres so we need to multiply...",
+        "C": "I think you have added the 8 and 2 but we have 8 jugs of 2 litres so we need to multiply...",
+        "D": "Each jug is 2 litres and we have 8 jugs so we do 8 x 2 = 16 therefore there is 16 litres of juice altogether!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159043,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f3aa1579-a690-4f90-8c48-5133003ba008.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the volume of 1 jug but we have 5 jugs in total...",
+        "B": "I think you have done 2 ÷ 5 but we have 5 jugs of 2 litres so we need to multiply...",
+        "C": "I think you have added the 5 and 2 but we have 5 jugs of 2 litres so we need to multiply...",
+        "D": "Each jug is 2 litres and we have 5 jugs so we do 5 x 2 = 10, therefore there are 10 litres of juice altogether."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158845,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/22ebbc9b-9715-4fa1-9cfa-9c12eb2bafdf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have multiplied, but we are sharing out the sugar so we need to divide...",
+        "B": "I think you have added, but we are sharing out the sugar so we need to divide...",
+        "C": "To find out how much sugar is in each cake, we do 80 ÷ 4 = 20 therefore there is 20g!",
+        "D": "I think you have subtracted but we are sharing out the sugar, so we need to divide..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159044,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/acd0671d-5c48-475a-8bb3-8b511c237d4c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find out how much sugar is in each cake, we do 100 ÷ 4 = 25 therefore there is 25g!",
+        "B": "I think you have multiplied, but we are sharing out the sugar so we need to divide...",
+        "C": "I think you have subtracted but we are sharing out the sugar, so we need to divide...",
+        "D": "I think you have added, but we are sharing out the sugar so we need to divide..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158846,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d070104a-8872-4360-919c-42fcb35c3dfc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the current mass of flour but the question wants us to add another 150g of flour and say what the mass would be then...",
+        "B": "I think you have subtracted 150g from 400g but we're adding more flour so we need to add the value on...",
+        "C": "Make sure you read the scales as we already have some flour.. Can you see how much? If we add 150g more what will we have in total?",
+        "D": "There is currently 400g of flour, if we add 150g more that's 400 + 150 = 550 therefore a mass of 550g would be shown!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159045,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/03b709db-6566-4bdd-be82-cc8cc0e670cc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Make sure you read the scales as we already have some flour.. Can you see how much? If we add 250g more what will we have in total?",
+        "B": "This is the current mass of flour but the question wants us to add another 250g of flour and say what the mass would be then...",
+        "C": "I think you have subtracted 200g from 250g but we're adding more flour so we need to add the value on...",
+        "D": "There is currently 200g of flour, if we add 250g more that's 200 + 250 = 450 therefore a mass of 450g would be shown!"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

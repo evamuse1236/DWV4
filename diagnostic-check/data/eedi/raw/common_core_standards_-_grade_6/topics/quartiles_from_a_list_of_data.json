@@ -1,0 +1,165 @@
+{
+  "shortcode": "vru",
+  "name": "Quartiles from a list of data",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 243,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate the median as an average from an odd numbered list of data",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the interquartile range from a list of data when the lower and upper quartiles are numbers in the data set",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the interquartile range from a list of data when the lower and upper quartiles are not numbers in the data set",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the lower quartile from a list of data when it is a number in the data set",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the upper quartile from a list of data when it is a number in the data set",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 81449,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/56cf12db-f51b-45ce-b41f-e144be5acfd6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful! You have calculated the mean. The median is the middle value when ordered.",
+        "B": "Nearly! I think you have tried to find the value that lies half way between 8 and 13, but is that really the middle piece of data?",
+        "C": "The median is the middle value once the data is ordered. In this case it is 8",
+        "D": "Not quite. You might be confusing the median with the mode. The median is the middle value once the data is ordered."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 81744,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/07e7f1d4-73fc-4cd6-9b54-962598c98e55.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The median is the middle value once the data is ordered. In this case it is 7",
+        "B": "Be careful! You have calculated the mean. The median is the middle value when ordered.",
+        "C": "Nearly! I think you have tried to find the value that lies half way between 7 and 9, but is that really the middle piece of data?",
+        "D": "Not quite. You might be confusing the median with the mode. The median is the middle value once the data is ordered."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 81450,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ec60b94a-d935-4181-8b50-89c120ec4d50.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There are 7 pieces of data. Adding one and dividing by 4 tells us that the 2nd number is the lower quartile. Looking at the data we can see that the lower quartile, the second number, is 3.",
+        "B": "Not quite. Remember to use the formula (n+1)/4, where n is the total number of data points, to find the location of the lower quartile in the list.",
+        "C": "Not quite, this is the minimum value. Remember to use the formula (n+1)/4, where n is the total number of data points, to find the location of the lower quartile in the list.",
+        "D": "Not quite, I think you have included the 8 (the median) when finding the lower quartile. To find the lower quartile you find the middle number of the data points to the left of the median. Alternatively, the formula (n+1)/4, where n is the total number of data points, tells us the location of the lower quartile in the list."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 81745,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1a4e67c0-3390-4ed1-873c-d0af27defd6f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember to use the formula (n+1)/4, where n is the total number of data points, to find the location of the lower quartile in the list.",
+        "B": "There are 7 pieces of data. Adding one and dividing by 4 tells us that the 2nd number is the lower quartile. Looking at the data we can see that the lower quartile, the second number, is 4.",
+        "C": "Not quite, I think you have included the 7 (the median) when finding the lower quartile. To find the lower quartile you find the middle number of the data points to the left of the median. Alternatively, the formula (n+1)/4, where n is the total number of data points, tells us the location of the lower quartile in the list.",
+        "D": "Not quite, this is the minimum value. Remember to use the formula (n+1)/4, where n is the total number of data points, to find the location of the lower quartile in the list."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 81451,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3e0c1d34-dffb-428f-a993-b7241edc04ed.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you have included the 8 (the median) when finding the upper quartile. To find the upper quartile you find the middle number of the data points to the right of the median. Alternatively, the formula 3(n+1)/4, where n is the total number of data points, tells us the location of the upper quartile in the list.",
+        "B": "Not quite. Remember to use the formula 3(n+1)/4, where n is the total number of data points, to find the location of the upper quartile in the list.",
+        "C": "Not quite, this is the maximum value. Remember to use the formula 3(n+1)/4, where n is the total number of data points, to find the location of the upper quartile in the list.",
+        "D": "There are 7 pieces of data. Adding one, dividing by four and multiplying by three tells us that the 6th number is the upper quartile. Looking at the data we can see that the upper quartile, the sixth number, is 20."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 81746,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/11ee90a2-1729-4ba1-8dc0-289c821a865c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you have included the 7 (the median) when finding the upper quartile. To find the upper quartile you find the middle number of the data points to the right of the median. Alternatively, the formula 3(n+1)/4, where n is the total number of data points, tells us the location of the upper quartile in the list.",
+        "B": "There are 7 pieces of data. Adding one, dividing by four and multiplying by three tells us that the 6th number is the upper quartile. Looking at the data we can see that the upper quartile, the sixth number, is 11.",
+        "C": "Not quite. Remember to use the formula 3(n+1)/4, where n is the total number of data points, to find the location of the upper quartile in the list.",
+        "D": "Not quite, this is the maximum value. Remember to use the formula 3(n+1)/4, where n is the total number of data points, to find the location of the upper quartile in the list."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 81452,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a28cd07a-1f03-4a4d-91c7-45ae412ec874.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. I think you added rather than subtracted. Remember the interquartile range is the difference between the upper quartile and the lower quartile.",
+        "B": "Not quite I think you have included the median when finding the quartiles. Remember the lower quartile will be in the middle of the data points that lie to the left of the median and the upper quartile will be in the middle of the data points that lie to the right of the median.",
+        "C": "Not quite, this is the range. We are being asked to find the interquartile range which is the difference between the upper quartile and lower quartile.",
+        "D": "The interquartile range is the difference between the upper quartile and lower quartile. As there are 7 pieces of data the lower quartile will be 3 which is the the 2nd term, (7+1)/4 = 2, and the upper quartile will be 20 which is the 6th term, 3(7+1)/4 = 6. 20 - 3 = 17, so the interquartile range is 17."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 81747,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cb2d7821-f929-4b30-abb9-a990669bb71f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, this is the range. We are being asked to find the interquartile range which is the difference between the upper quartile and lower quartile.",
+        "B": "Not quite I think you have included the median when finding the quartiles. Remember the lower quartile will be in the middle of the data points that lie to the left of the median and the upper quartile will be in the middle of the data points that lie to the right of the median.",
+        "C": "The interquartile range is the difference between the upper quartile and lower quartile. As there are 7 pieces of data the lower quartile will be 4 which is the the 2nd term, (7+1)/4 = 2, and the upper quartile will be 11 which is the 6th term, 3(7+1)/4 = 6. 11 - 4 = 7, so the interquartile range is 7.",
+        "D": "Not quite. I think you added rather than subtracted. Remember the interquartile range is the difference between the upper quartile and the lower quartile."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 81456,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/671f2da0-a1c5-4386-9505-00f5853b78bd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you have found the range rather than the interquartile range. Remember interquartile range = upper quartile - lower quartile.",
+        "B": "Not quite, I think you have used 4 and 28 as the lower and upper quartiles, but these values are not 25% and 75% of the way through the data. The lower quartile will be the middle value of the data points to the left of the median and the upper quartile will be the middle value of the data points to the right of the median.",
+        "C": "Not quite. To calculate the interquartile range we need to find the difference between the upper and lower quartile. The lower quartile will be the middle value of the data points to the left of the median and the upper quartile will be the middle value of the data points to the right of the median.",
+        "D": "The upper quartile is 26.5 and the lower quartile is 6. The interquartile range is then 26.5 - 6 = 20.5."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 81751,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/89bc6130-35fa-4cfb-a8de-7a6cf8ebde95.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The upper quartile is 33 and the lower quartile is 7.5. The interquartile range is then 33 - 7.5 = 25.5.",
+        "B": "Not quite, I think you have found the range rather than the interquartile range. Remember interquartile range = upper quartile - lower quartile.",
+        "C": "Not quite. To calculate the interquartile range we need to find the difference between the upper and lower quartile. The lower quartile will be the middle value of the data points to the left of the median and the upper quartile will be the middle value of the data points to the right of the median.",
+        "D": "Not quite, I think you have used 9 and 35 as the lower and upper quartiles, but these values are not 25% and 75% of the way through the data. The lower quartile will be the middle value of the data points to the left of the median and the upper quartile will be the middle value of the data points to the right of the median."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

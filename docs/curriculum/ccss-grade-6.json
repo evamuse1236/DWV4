@@ -1,0 +1,138 @@
+{
+  "source": "https://corestandards.org/wp-content/uploads/2023/09/Math_Standards1.pdf",
+  "grade": 6,
+  "domains": [
+    {
+      "code": "6.RP",
+      "title": "Ratios and Proportional Relationships",
+      "clusters": [
+        {
+          "title": "Understand ratio concepts and use ratio reasoning to solve problems.",
+          "standards": [
+            { "code": "6.RP.1", "label": "Ratio concept + ratio language" },
+            { "code": "6.RP.2", "label": "Unit rate concept + rate language" },
+            {
+              "code": "6.RP.3",
+              "label": "Solve ratio/rate problems (tables/diagrams/equations)",
+              "substandards": [
+                { "code": "6.RP.3a", "label": "Equivalent ratio tables + coordinate plots" },
+                { "code": "6.RP.3b", "label": "Unit rate problems (pricing/speed)" },
+                { "code": "6.RP.3c", "label": "Percents as per-100; solve percent problems" },
+                { "code": "6.RP.3d", "label": "Convert measurement units with ratio reasoning" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "6.NS",
+      "title": "The Number System",
+      "clusters": [
+        {
+          "title": "Apply and extend previous understandings of multiplication and division to divide fractions by fractions.",
+          "standards": [{ "code": "6.NS.1", "label": "Fraction ÷ fraction (interpret/compute; models + equations)" }]
+        },
+        {
+          "title": "Compute fluently with multi-digit numbers and find common factors and multiples.",
+          "standards": [
+            { "code": "6.NS.2", "label": "Fluently divide multi-digit numbers" },
+            { "code": "6.NS.3", "label": "Fluently operate on multi-digit decimals" },
+            { "code": "6.NS.4", "label": "GCF/LCM + distributive factoring (within stated bounds)" }
+          ]
+        },
+        {
+          "title": "Apply and extend previous understandings of numbers to the system of rational numbers.",
+          "standards": [
+            { "code": "6.NS.5", "label": "Positive/negative quantities in context; meaning of 0" },
+            {
+              "code": "6.NS.6",
+              "label": "Rational numbers on number line and coordinate plane",
+              "substandards": [
+                { "code": "6.NS.6a", "label": "Opposites + 0 is its own opposite" },
+                { "code": "6.NS.6b", "label": "Signs in ordered pairs; reflections across axes" },
+                { "code": "6.NS.6c", "label": "Locate rationals on number lines and planes" }
+              ]
+            },
+            {
+              "code": "6.NS.7",
+              "label": "Ordering and absolute value of rational numbers",
+              "substandards": [
+                { "code": "6.NS.7a", "label": "Inequalities as relative position on number line" },
+                { "code": "6.NS.7b", "label": "Order statements in real-world contexts" },
+                { "code": "6.NS.7c", "label": "Absolute value as distance/magnitude" },
+                { "code": "6.NS.7d", "label": "Distinguish order vs absolute value comparisons" }
+              ]
+            },
+            { "code": "6.NS.8", "label": "Graph points in four quadrants; aligned distances" }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "6.EE",
+      "title": "Expressions and Equations",
+      "clusters": [
+        {
+          "title": "Apply and extend previous understandings of arithmetic to algebraic expressions.",
+          "standards": [
+            { "code": "6.EE.1", "label": "Numerical expressions with whole-number exponents" },
+            { "code": "6.EE.2", "label": "Write/read/evaluate expressions with letters" },
+            { "code": "6.EE.3", "label": "Generate equivalent expressions using properties" },
+            { "code": "6.EE.4", "label": "Identify when expressions are equivalent" }
+          ]
+        },
+        {
+          "title": "Reason about and solve one-variable equations and inequalities.",
+          "standards": [
+            { "code": "6.EE.5", "label": "Solve by substitution from a specified set" },
+            { "code": "6.EE.6", "label": "Use variables for unknowns/sets; write expressions" },
+            { "code": "6.EE.7", "label": "Solve x+p=q and px=q (nonnegative rationals)" },
+            { "code": "6.EE.8", "label": "Inequalities x>c/x<c; represent solution sets" }
+          ]
+        },
+        {
+          "title": "Represent and analyze quantitative relationships between dependent and independent variables.",
+          "standards": [{ "code": "6.EE.9", "label": "Relate two quantities; write equation; analyze via tables/graphs" }]
+        }
+      ]
+    },
+    {
+      "code": "6.G",
+      "title": "Geometry",
+      "clusters": [
+        {
+          "title": "Solve real-world and mathematical problems involving area, surface area, and volume.",
+          "standards": [
+            { "code": "6.G.1", "label": "Area via composition/decomposition" },
+            { "code": "6.G.2", "label": "Volume of right rectangular prisms (incl. fractional edges)" },
+            { "code": "6.G.3", "label": "Coordinate polygons + aligned side lengths" },
+            { "code": "6.G.4", "label": "Nets + surface area" }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "6.SP",
+      "title": "Statistics and Probability",
+      "clusters": [
+        {
+          "title": "Develop understanding of statistical variability.",
+          "standards": [
+            { "code": "6.SP.1", "label": "Statistical questions anticipate variability" },
+            { "code": "6.SP.2", "label": "Distributions have center/spread/shape" },
+            { "code": "6.SP.3", "label": "Center vs variation (role/meaning)" }
+          ]
+        },
+        {
+          "title": "Summarize and describe distributions.",
+          "standards": [
+            { "code": "6.SP.4", "label": "Display data (dot plots, histograms, box plots)" },
+            { "code": "6.SP.5", "label": "Summarize data in context (N, attribute, center/variability, shape)" }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

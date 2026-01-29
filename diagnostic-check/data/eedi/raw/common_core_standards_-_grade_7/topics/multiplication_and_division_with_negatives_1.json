@@ -1,0 +1,153 @@
+{
+  "shortcode": "vt9",
+  "name": "Multiplication and division with negatives 1",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 92,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Carry out multiplication problems involving one negative integer",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Carry out multiplication problems involving two negative integers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Carry out division problems involving one negative integer",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 89452,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/030cbbee-1fec-4ce3-9ea5-8bf702e3f06f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "3 ✕ (−6) can be thought of as (+3) ✕ (−6). So we have a positive multiplied by a negative which means the answer must be negative, so −18.",
+        "B": "Think carefully about the signs. 3 ✕ (−6) can be thought of as (+3) ✕ (−6). What happens when we multiply a positive by a negative?",
+        "C": "It looks like you have tried to use addition rather than multiplication.",
+        "D": "It looks like you have tried to use addition rather than multiplication."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89469,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/31505685-4cd6-43e7-94a9-fc7414ff7e14.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have tried to use addition rather than multiplication.",
+        "B": "It looks like you have tried to use addition rather than multiplication.",
+        "C": "Think carefully about the signs. 5 ✕ (−4) can be thought of as (+5) ✕ (−4). What happens when we multiply a positive by a negative?",
+        "D": "5 ✕ (−4) can be thought of as (+5) ✕ (−4). So we have a positive multiplied by a negative which means the answer must be negative, so −20."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89546,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6bb324e9-b290-4bf3-a9e2-9b3bedc82eec.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost, but remember that multiplying a negative number by a negative number would give a positive number.",
+        "B": "I think you might have been thinking about addition. Finding the product is the same as multiplying.",
+        "C": "Finding the product is the same as multiplying. (-6) ✕ 5 can be thought of as (-6) ✕ (+5). So we have a negative multiplied by a positive which means the answer must be negative. -6 ✕ 5 = -30",
+        "D": "Not quite, finding the product is the same as multiplying. But multiplying any number by 0 is 0."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89563,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3d04d7b7-2639-450d-a1f1-cd7030269c41.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost, but remember that multiplying a negative number by a negative number would give a positive number.",
+        "B": "Finding the product is the same as multiplying. (-4) ✕ 6 can be thought of as (-4) ✕ (+6). So we have a negative multiplied by a positive which means the answer must be negative. -4 ✕ 6 = -24",
+        "C": "I think you might have been thinking about addition. Finding the product is the same as multiplying.",
+        "D": "Not quite. Remember that product means multiply."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89547,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d9fd0895-d091-4ef0-9c2a-02889f3f67aa.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is in fact a correct calculation. 2 lots of negative 7 is negative 14.",
+        "B": "Answer B: (−7) ✕ (−2) = −14 is the only incorrect answer. The calculation multiplies two negative numbers together (these are like signs). This means the answer will be positive, ＋14.",
+        "C": "Maybe you struggled with your times table facts here. Time to practice your 7 times table!",
+        "D": "This is in fact a correct calculation. 7 lots of negative 2 is negative 14."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89564,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/80398ae9-3957-4f20-97ed-736cde527c64.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Maybe you struggled with your times table facts here. Time to practice your 9 times table!",
+        "B": "This is in fact a correct calculation. 5 lots of negative 9 is negative 45.",
+        "C": "This is in fact a correct calculation. 9 lots of negative 5 is negative 45.",
+        "D": "Answer D: (−5) ✕ (−9) = −45 is the only incorrect answer. The calculation multiplies two negative numbers together (these are like signs). This means the answer will be positive, ＋45."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89548,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ad615643-c792-494c-bf38-9c09fb148034.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you might have added the values. We need to multiply them together",
+        "B": "It looks like you might have added the values and then changed the sign. We need to multiply them together instead.",
+        "C": "It looks like you have correctly multiplied 1 and 3, but struggled with the negative symbols. When we multiply 2 negatives together what happens to our answer?",
+        "D": "The calculation (−3) ✕ (−1) multiplies two negative numbers together (these are like signs). This means the answer will be positive: ＋3."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89565,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/604e46c6-0528-44e1-b6dd-d9a707531eff.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you might have added the values and then changed the sign. We need to multiply them together instead.",
+        "B": "It looks like you might have added the values. We need to multiply them together",
+        "C": "The calculation (−4) ✕ (−2) multiplies two negative numbers together (these are like signs). This means the answer will be positive: ＋8.",
+        "D": "It looks like you have correctly multiplied 4 and 2, but struggled with the negative symbols. When we multiply 2 negatives together what happens to our answer?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89549,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ec414f8c-b01f-4993-b0c8-6b44583b3412.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You may not have noticed that the diagram can be used for division. How many times smaller is the little arrow?",
+        "B": "You may not have noticed that the diagram can be used for multiplication. How many of the little arrows would you need to match the length of the big arrow?",
+        "C": "The diagram is showing that 3 times a number is −18. We know that 3 ✕ 6 = ＋18, so 3 ✕ (−6) = −18 which means Tom's statement is true. Since division is the opposite of multiplication, Katie's statement that (−18)/3 or −18 ÷ 3 = −6 is also true.",
+        "D": "Not quite! Can you start by figuring out the length of the little arrow? What number facts can you now tell me?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 120811,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/79e25951-1f32-4d81-ae5c-6da06c41d6ca.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful. The diagram has split the -24 into three equal parts of -8. This is not the same as (-3) ✕ (-8). Does Katie's division show this?",
+        "B": "Be careful. The diagram has split the -24 into three equal parts of -8. This is not the same as (-24) ÷ (-3). Does Tom's multiplication show this?",
+        "C": "Be careful, at least one of them is incorrect. Have a closer look at the diagram, it is showing that (-24) has been split into 3 equal parts.",
+        "D": "The diagram is showing that 3 times a number is −24.We know that 3 ✕ 8 = ＋24, so 3 ✕ (−8) = −24 which means Tom's statement is incorrect. Since division is the opposite of multiplication, (−24)/3 = -8 which is different to Katie's statement. So, Katie is also incorrect."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,165 @@
+{
+  "shortcode": "vwm",
+  "name": "Parts of a circle 2",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 191,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify a radius",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify a tangent",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Recognise that the diameter is twice the radius",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify a chord",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify a diameter",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 107779,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6ed804a8-0cfc-44c7-a0f5-7627a95f0b3a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The radius goes from the centre to the edge, but this line doesn't go through the centre at all.",
+        "B": "This is a chord. It is a straight line that separates the circle into two segments.",
+        "C": "The tangent only touches the circle at a single point and goes outside the circle, but this line touches the circle at two points.",
+        "D": "The diameter goes from one side of the circle to the other through the centre, but this line doesn't go through the centre at all."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 122107,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bf0205ac-aecc-4c86-9ed6-56e124f5fb00.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The radius goes from the centre to the edge, but doesn't touch the circumference twice.",
+        "B": "This is a chord. It is a straight line that separates the circle into two segments.",
+        "C": "The tangent only touches the circle at a single point and goes outside the circle, it doesn't touch the circumference at two points.",
+        "D": "Almost, but the line being described doesn't have to go through the centre like the diameter does."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107780,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d1be6c99-ae11-42da-be0d-dba142501a03.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The radius goes from the centre to the edge, but this line goes from one side of the circle to the other.",
+        "B": "A chord is a straight line that separates the circle into two segments, but it doesn't go through the centre of the circle like this line does.",
+        "C": "The tangent only touches the circle at a single point and goes outside the circle, but this line touches at two points inside.",
+        "D": "The diameter goes from one side of the circle to the other through the centre, so this is a diameter."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107790,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3c5819cb-516e-4821-aac5-aa6aaf07e5c2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The tangent only touches the circle at a single point and goes outside the circle, but this line touches at two points inside.",
+        "B": "The diameter goes from one side of the circle to the other through the centre, so this is a diameter.",
+        "C": "The radius goes from the centre to the edge, but this line goes from one side of the circle to the other.",
+        "D": "A chord is a straight line that separates the circle into two segments, but it doesn't go through the centre of the circle like this line does."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107781,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6ca3317c-7bc5-443d-b5bc-fec665c80b07.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is a radius, as it is a straight line that connects the centre to a point on the circumference of the circle.",
+        "B": "A chord is a straight line that separates the circle into two segments, but this line does not go all the way across the circle.",
+        "C": "The tangent only touches the circle at a single point and goes outside the circle, but this line is inside the circle.",
+        "D": "The diameter goes from one side of the circle to the other through the centre, but this line doesn't go all the way across the circle."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 122108,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9f795785-9ce6-4108-b019-1593fdac9b94.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is a radius, as it is a straight line that connects the centre to a point on the circumference of the circle.",
+        "B": "A chord is a straight line that separates the circle into two segments, but the described line does not go all the way across the circle.",
+        "C": "The tangent only touches the circle at a single point and goes outside the circle, but this described line is inside the circle.",
+        "D": "The diameter goes from one side of the circle to the other through the centre, but this described line doesn't go all the way across the circle."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107782,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e6d4281c-148f-432c-9250-b3fe8c1afb2c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The radius goes from the centre to the edge, but this line doesn't go inside the circle at all.",
+        "B": "A chord is a straight line that separates the circle into two segments, but this line doesn't go inside the circle.",
+        "C": "This is a tangent. It is a straight line that touches the circumference of the circle only once.",
+        "D": "The diameter goes from one side of the circle to the other through the centre, but this line is outside of the circle."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 122109,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9c8b0456-8a36-48e9-b027-1f42752ab7b8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The radius goes from the centre to the edge, but the described line doesn't go inside the circle at all.",
+        "B": "A chord is a straight line that separates the circle into two segments, but this described line doesn't go inside the circle.",
+        "C": "This is a tangent. It is a straight line that touches the circumference of the circle only once.",
+        "D": "The diameter goes from one side of the circle to the other through the centre, but this described line is outside of the circle."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107783,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cd1c4c2f-8f1a-442c-9538-0f109b1e0366.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. Just check your answer by doubling (x 2) to make sure it makes 5.4.",
+        "B": "I think you might have confused the diameter and radius. The radius only goes half way across the circle",
+        "C": "We halve the diameter to find the radius, i.e. 5.4 cm ÷ 2 = 2.7 cm",
+        "D": "The diameter and radius are not equal. The diameter goes all the way across the circle through the centre, and the radius only goes from the centre to the edge."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107793,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/56ccd8ac-2ee2-4df8-8f11-99c6580e3575.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We halve the diameter to find the radius, i.e. 3.6 cm ÷ 2 = 1.8 cm",
+        "B": "The diameter and radius are not equal. The diameter goes all the way across the circle through the centre, and the radius only goes from the centre to the edge.",
+        "C": "Almost, just check your answer by doubling to make sure it makes 3.6",
+        "D": "I think you might have confused the diameter and radius. The radius only goes half way across the circle"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

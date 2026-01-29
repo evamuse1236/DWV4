@@ -1,0 +1,147 @@
+{
+  "shortcode": "biug",
+  "name": "Distributive law with areas of rectangles",
+  "collectionId": 33,
+  "level": 1,
+  "sequence": 47,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate the area of a rectangle where the dimensions are given in the same units",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Recognise and use the law of distributivity",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158881,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/159ec9a2-40bb-4133-b2f7-c000a2a5957a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the total number of blue squares. What number goes in the box so that the calculation written in blue has an answer of 6? ",
+        "B": "This is the number of rows and is already included in the question, you need to give the number of columns...",
+        "C": "The blue rectangle has 2 rows and 3 columns so to find the area we do 2 x 3. That means the missing number is 3!",
+        "D": "This is the total area of the whole shape. The question is asking you to fill in the missing number from the calculation so the answer is 16..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159080,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/85a29255-d317-4e84-9860-74f7da6f2f85.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the total area of the whole shape. The question is asking you to fill in the missing number from the calculation so that the answer is 18...",
+        "B": "The blue rectangle has 3 rows and 2 columns so to find the area we do 3 x 2. That means the missing number is 2!",
+        "C": "This is the number of rows and is already included in the question, you need to give the number of columns...",
+        "D": "This is the total number of blue squares. What number goes in the box so that the calculation written in blue has an answer of 6? "
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158882,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/878d25e7-f4b2-4ecd-aa6d-c30e5f2e222c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The blue rectangle has 4 rows and 2 columns so to find the area we do 4 x 2. That means the missing number is 4!",
+        "B": "This is the number of columns and is already included in the question, you need to give the number of rows...",
+        "C": "This is the total number of blue squares, so ? x 2 = 8 what's the missing number?",
+        "D": "This is the total number of columns in the shape. The question is only asking for the number of rows in the blue rectangle..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159081,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9a4ce1c5-c59e-4398-84ce-87273b74d23a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the total area of the shape. The question is asking you to fill in the missing number from the calculation so that the answer is 20...",
+        "B": "This is the number of columns and is already included in the question, you need to give the number of rows...",
+        "C": "The blue rectangle has 5 rows and 1 column so to find the area we do 5 x 1. That means the missing number is 5!",
+        "D": "This is the total number of columns in the shape. The question is only asking for the number of rows in the blue rectangle..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158883,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/479308d5-7e5c-41d2-8d9e-51113ce0cec9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the total number of columns. If we have already included 10 in the calculation 6 x 10, how many more need to be included?",
+        "B": "There are 15 columns in the whole rectangle, we have already included 10 of them in the calculation 6 x 10 so the missing number must be 5 to do 6 x 5.",
+        "C": "This is the total area of the whole shape. The question is asking you to fill in the missing number from the calculation so the answer is 90...",
+        "D": "This is the number of rows and is already included in the question, you need to give the number of additional columns..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159082,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/700e150f-45c2-4b18-9940-562c8cb0a2c3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There are 13 columns in the whole rectangle, we have already included 10 of them in the calculation 8 x 10 so the missing number must be 3 to do 8 x 3.",
+        "B": "This is the total number of columns. If we have already included 10 in the calculation 8 x 10, how many more need to be included?",
+        "C": "This is the total area of the whole shape. The question is asking you to fill in the missing number from the calculation so that the answer is 104...",
+        "D": "This is the number of rows and is already included in the question, you need to give the number of additional columns..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158884,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/440d7659-e008-49e5-a276-4a0dbad84873.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the area of the blue rectangle only. You also need to add the area of the pink rectangle to find the area of the whole shape!",
+        "B": "This is the area of the pink rectangle only. You also need to add the area of the blue rectangle to find the area of the whole shape!",
+        "C": "This is the number of columns in the whole shape. You need to multiply this by the number of rows to find the area of the rectangle!",
+        "D": "The area of the pink rectangle is 7 x 10 = 70 and the area of the blue rectangle is 7 x 3 = 21 so the total area is 70 + 21 = 91."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159083,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/771e7f71-3063-4873-8d65-8daab9e92b20.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the area of the pink rectangle only. You also need to add the area of the blue rectangle to find the area of the whole shape!",
+        "B": "This is the area of the blue rectangle only. You also need to add the area of the pink rectangle to find the area of the whole shape!",
+        "C": "The area of the pink rectangle is 5 x 10 = 50 and the area of the blue rectangle is 5 x 6 = 30 so the total area is 50 + 30 = 80.",
+        "D": "This is the number of columns in the whole shape. You need to multiply this by the number of rows to find the area of the rectangle!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158885,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0c71a99a-4e10-4be1-9da9-2d518da3dd18.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the area of the pink rectangle only. You also need to add the area of the blue rectangle to find the area of the whole shape!",
+        "B": "This is the area of the blue rectangle only. You also need to add the area of the pink rectangle to find the area of the whole shape!",
+        "C": "The area of the pink rectangle is 9 x 5 = 45 and the area of the blue rectangle is 9 x 4 = 36 so the total area is 45 + 36 = 81.",
+        "D": "I think you have done 8 x 5 + 8 x 3 but there are not 8 in each column, there are 9..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159084,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5ac93c9e-286f-4942-bfbb-ce4117d41f67.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The area of the pink rectangle is 12 x 5 = 60 and the area of the blue rectangle is 12 x 3 = 36 so the total area is 60 + 36 = 96.",
+        "B": "This is the area of the pink rectangle only. You also need to add the area of the blue rectangle to find the area of the whole shape!",
+        "C": "This is the area of the blue rectangle only. You also need to add the area of the pink rectangle to find the area of the whole shape!",
+        "D": "I think you have done 11 x 5 + 11 x 3 but there are not 11 squares in each column, there are 12..."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

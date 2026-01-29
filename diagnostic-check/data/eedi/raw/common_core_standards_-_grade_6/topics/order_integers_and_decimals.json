@@ -1,0 +1,165 @@
+{
+  "shortcode": "voj",
+  "name": "Order integers and decimals",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 88,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Order integers with the same number of digits",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use inequality notation to order integers with the same number of digits",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Order decimals with the same number of digits",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Order decimals with a different number of digits",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use inequality notation to order decimals with the same number of digits ",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 131381,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ae91c856-9b4c-44fb-a6bb-ac37bee8b0a5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "When comparing numbers we start from the biggest place value column (the left). Tom is correct because 5 thousand is more than 4 thousand. Katie is not correct because both her numbers have 3 thousands, but 3050 has no hundreds but 3500 has 5 hundreds so it is bigger.",
+        "B": "Not quite. Remember to compare from the biggest place value column first (the left).",
+        "C": "Not quite. Remember to compare from the biggest place value column first (the left).",
+        "D": "At least one person is correct. Remember to compare numbers starting from the biggest place value column (the left)"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133614,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/48961ced-4ce5-4657-8df2-da6c0db3fce5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. Remember to compare from the biggest place value column first (the left).",
+        "B": "Almost. Remember to compare from the biggest place value column first (the left).",
+        "C": "When comparing numbers we start from the biggest place value column. Katie is correct because 7 thousand is more than 6 thousand. Tom is correct because both his numbers have 6 thousands, and 0 in the hundreds, but 6090 has 9 tens but 6009 has no tens, so 6090 is bigger.",
+        "D": "At least one person is correct. Remember to compare numbers starting from the biggest place value column (the left)"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131382,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/324c533f-4a3e-40ba-98d6-be9dabeea0fd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. I think you might have compared the hundreds digits, but forgotten to look at the thousands digits. We must always compare digits, starting in the greatest place value column.",
+        "B": "The first digit in each is the same (5). So we look at the digit in the thousands column. In the first number this is a 4 so we know it is the smallest. For the remaining two numbers, the first three digits are the same (5,7 and 4) so we then have to compare the tens digits. The middle number has a tens digit of 2 which is smaller than the last number which has a tens digit of 3. Therefore they go from left to right, smallest to biggest. The less than symbol (<) will need to be used both times to show that the number on the left is smaller than the number on the right.",
+        "C": "Not quite. These symbols mean that the number on the left is greater than the number on the right (greater > smaller). Is that the case?",
+        "D": "Not quite. You have made one mistake. Make sure you look at the digit in each column carefully to decide which is largest, and always start from greatest place value column."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133615,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3e21b07f-67be-4209-8577-db6228185124.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember that this symbol (<) means that the number on the left is smaller than the number on the right, and this symbol (>) means the number on the left is greater than the number on the right.",
+        "B": "Not quite. These symbols mean that the number on the left is smaller than the number on the right (smaller < greater). Is this the case with all 3 numbers?",
+        "C": "Not quite. These symbols mean that the number on the left is greater than the number on the right (greater > smaller). Is this the case with all 3 numbers?",
+        "D": "The first digit in each is the same (7). So we look at the digit in the thousands column. In the first two numbers this is a 6, but in the last it is a 4 so we know that the last number is the smallest. For the remaining two numbers, the first three digits are the same (7,6 and 4) so we then have to compare the tens digits. The first number has a tens digit of 2 which is smaller than the middle number which has a tens digit of 6. Therefore the answer should be 76 426 < 76 462 > 74 662 because this symbol (<) means that the number on the left is smaller than the number on the right, and this symbol (>) means the number on the left is greater than the number on the right."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131383,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/335ad598-181c-43eb-aaf1-8687fe7a5c8c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember to compare each number by starting with the first column after the decimal point.",
+        "B": "Not quite. Remember to compare each number by starting with the first column after the decimal point.",
+        "C": "We start by looking at the first place value column after the decimal point, the tenths. 0.60 has a 6 in the tenths column whereas 0.06 has a 0 in the tenths column so Tom is correct. Both Katie's numbers have the same number of tenths so we look at the next column, the hundredths. 0.5993 has 9 hundredths whereas 0.5399 has 3 hundredths so Katie is correct.",
+        "D": "At least one of them is correct. Remember to compare each number by starting with the first column after the decimal point."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133616,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a35cb95b-f547-479c-9fcf-3a6e0767a7e6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember to compare each number by starting with the first column after the decimal point.",
+        "B": "Not quite. Remember to compare each number by starting with the first column after the decimal point.",
+        "C": "We start by looking at the first place value column after the decimal point, the tenths. 0.4882 and 0.4288 have the same number of tenths (4) so we move on to the hundredths column. 0.4882 has an 8 in the hundredths column whereas 0.4288 has a 2 in the hundredths column so Tom is correct. We need to look at the tenths column first for Katie's numbers. 0.600 has a 6 in the tenths column, whereas 0.006 has a 0 in the tenths column so Katie is correct.",
+        "D": "At least one of them is correct. Remember to compare each number by starting with the first column after the decimal point."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131384,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/edeaa4dc-0931-40eb-95f5-bf4fe44f1d62.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We start by looking at the first place value column after the decimal point, the tenths. 0.7 has a 7 in the tenths column whereas 0.587 has a 5 in the tenths column so Tom is correct, 0.7 is greater than 0.587. Both Katie's numbers have the same number of tenths (0) so we look at the next column, the hundredths. 0.008 has 0 hundredths whereas 0.08 has 8 hundredths so Katie is not correct. 0.008 is actually smaller than 0.08.",
+        "B": "Not quite. Remember it is not the number of digits after the decimal that counts, but the place value of these digits.",
+        "C": "Not quite. Remember it is not the number of digits after the decimal that counts, but the place value of these digits.",
+        "D": "At least one of them is correct. Remember to compare each number by starting with the first column after the decimal point."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133617,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f0418af9-42ee-448b-b3de-ba288475a94d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We start by looking at the first place value column after the decimal point, the tenths. Both Tom's numbers have the same amount of tenths (0) so we have to move on to the next column, the hundredths. 0.06 has 6 hundredths, whereas 0.006 has 0 hundredths. Therefore 0.06 is greater and Tom is correct. With Katie's numbers 0.5 has a 5 in the tenths column, but 0.6087 has a 6 so 0.6087 is greater. Katie is not correct.",
+        "B": "Not quite. Remember to compare each number by starting with the first column after the decimal point.",
+        "C": "Not quite. Remember to compare each number by starting with the first column after the decimal point.",
+        "D": "At least one of them is correct. Remember to compare each number by starting with the first column after the decimal point."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131385,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5d61f833-489e-4bad-b82a-2497cf57b148.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember that this symbol (<) means that the number on the left is smaller than the number on the right, and this symbol (>) means the number on the left is greater than the number on the right.",
+        "B": "Not quite. These symbols mean that the number on the left is smaller than the number on the right (smaller < greater). Is this the case with all 3 numbers?",
+        "C": "Not quite. These symbols mean that the number on the left is greater than the number on the right (greater > smaller). Is this the case with all 3 numbers?",
+        "D": "The first place value column (units) in each is the same (0). So we look after the decimal point at the tenths column. In the first and second numbers this is a 7, but in the last number is is a 5 so we know that 0.570 is the smallest. We then have to look to the hundredths digit to find the difference between the first 2 numbers as they have the same number of tenths. The first number has a hundredths digit of 0 which is smaller than the middle number which has a hundredths digit of 5. Therefore the answer is 0.705 < 0.750 > 0.570 as 0.705 is less than (<) 0.750, but 0.750 is greater than (>) 0.570."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133618,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/de603e5e-70ef-4d87-bbc1-4176451ebb2d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember that this symbol (<) means that the number on the left is smaller than the number on the right, and this symbol (>) means the number on the left is greater than the number on the right.",
+        "B": "Not quite. These symbols mean that the number on the left is smaller than the number on the right (smaller < greater). Is that the case?",
+        "C": "The first digit in each is the same (0). So we look at the digit after the decimal point, in the tenths column. In the first and second number this is a 4, but in the third number it is a 2 so we know that 0.240 is the smallest. We then have to look to the hundredths digit to find the difference between the first 2 numbers as they have the same number of tenths. The first number has a hundredths digit of 2 which is greater than the middle number which has a hundredths digit of 0. Therefore they go from left to right, greatest to smallest. The greater than symbol (>) will need to be used both times to show that the number on the left is greater than the number on the right.",
+        "D": "Not quite. Remember that this symbol (<) means that the number on the left is smaller than the number on the right, and this symbol (>) means the number on the left is greater than the number on the right."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

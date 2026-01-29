@@ -1,0 +1,153 @@
+{
+  "shortcode": "vxr",
+  "name": "Probability of a single event 2 (assigning probabilities)",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 233,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Assign probabilities to single events using fractions",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Assign probabilities to single events using decimals",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Assign probabilities to single events using percentages",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 135212,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c8c00ea4-12df-4855-ae4c-ca841bba6f47.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There is one way for the spinner to land on 3, and this is out of a total of 4 possibilities. This gives a probability of 1/4 = 25/100 = 25 ÷ 100 = 0.25",
+        "B": "Not quite! What's the total number of ways in which the spinner can land?",
+        "C": "Not quite! What's the total number of ways in which the spinner can land?",
+        "D": "I think you've the right idea but have struggled with converting your fraction to a decimal. What would the equivalent fraction be if the denominator (bottom number) was multiplied to give a value of 100?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135232,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d07b4bda-9d97-4ec2-989c-91063d89a57d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Have a think about how many ways there are of spinning a 1 and then about the total number of ways in which the spinner can land.",
+        "B": "Not quite, this is the same as 1/5. What's the total number of ways in which the spinner can land on a 1?",
+        "C": "Not quite, this is the same as 1/4. What's the total number of ways in which the spinner can land?",
+        "D": "There are two ways for the spinner to land on 1, and this is out of a total of 5 possibilities. This gives a probability of 2/5 = 4/10 = 4 ÷ 10 = 0.4"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135213,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/67251c23-fe8f-43a9-9eb2-d30b6b2cb0f5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There is one way for the spinner to land on 2, and this is out of a total of 4 possibilities. This gives a probability of 1/4 = 25/100 = 25%",
+        "B": "I think that you have the right idea but have struggled with converting your fraction to a percentage. What would the equivalent fraction be if the denominator (bottom number) was multiplied to give a value of 100?",
+        "C": "I think that you have the right idea but have struggled with converting your fraction to a percentage. What would the equivalent fraction be if the denominator (bottom number) was multiplied to give a value of 100?",
+        "D": "Not quite! This is equivalent to 1/3, are there 3 different ways that the spinner can land?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135233,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7c38b95e-2577-41cd-a9e0-154d11034fdf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Have a think about how many ways there are of spinning a 3 and then about the total number of ways in which the spinner can land.",
+        "B": "Not quite, this is the same as 1/4. How many different ways can the spinner land?",
+        "C": "Almost there, but your answer needs to be a percentage! What would the equivalent fraction be if the denominator (bottom number) was multiplied to give a value of 100?",
+        "D": "There is one way for the spinner to land on 3, and this is out of a total of 5 possibilities. This gives a probability of 1/5 = 20/100 = 20%"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135214,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/76e1db60-5f4d-46a0-855a-dc93d6d40319.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! I think you've considered the two outcomes of red, but you also need to think what the 2 is out of. How many ball are in the bag?",
+        "B": "Not quite! Think about how many outcomes would give red. Also, ask yourself about the total number of outcomes.",
+        "C": "Not quite! I think you're focussing on the choice of two different colours. Try thinking about how many outcomes would give red. Also, ask yourself about the total number of outcomes.",
+        "D": "There are two possible ways of choosing a red ball, and this is out of a total of 5 possibilities. This gives a probability of 2/5 = 4/10 = 4 ÷ 10 = 0.4"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135234,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d30d6827-9c6b-4e15-bcbd-9e7cb1c39b65.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've got the right idea, but maybe the wrong colour of ball!",
+        "B": "There are three possible outcomes for choosing a blue ball, and this is out of a total of 10 possibilities. This gives a probability of 3/10 = 3 ÷ 10 = 0.3",
+        "C": "Not quite! I think you're focussing on the choice of two different colours. Try thinking about how many outcomes would give blue. Also, ask yourself about the total number of outcomes.",
+        "D": "You're almost there! You've identified that there are 3 blue balls, but you have to express this out of the total number of balls."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135215,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2725a03c-70c6-4d26-8c48-0fbe82ca03c5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you're focussing on the choice of two different colours. Try thinking about how many outcomes would give blue. Also, ask yourself about the total number of outcomes.",
+        "B": "There are three possible outcomes for choosing a blue ball, and this is out of a total of 5 possibilities. This gives a probability of 3/5 = 60/100 = 60%",
+        "C": "I think you've identified that there are 3 blue balls, but you have to express this out of the total number of balls.",
+        "D": "I think you have the right idea but have struggled with converting your fraction to a percentage. What would the equivalent fraction be if the denominator (bottom number) was multiplied to give a value of 100?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135235,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e9928ae7-14ed-4569-9c6d-a886bf31c2bc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have the right idea but have struggled with converting your fraction to a percentage. What would the equivalent fraction be if the denominator (bottom number) was multiplied to give a value of 100?",
+        "B": "Not quite! I think you're focussing on the choice of two different colours. Try thinking about how many outcomes would give blue. Also, ask yourself about the total number of outcomes.",
+        "C": "I think that you've worked out the probability of choosing a red ball. We need the probability of a blue ball",
+        "D": "There are two possible outcomes for choosing a blue ball, and this is out of a total of 5 possibilities. This gives a probability of 2/5 = 40/100 = 40%"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135216,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5e9ce313-f4cf-42f2-b060-142156fda0ad.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! I think you've considered the two outcomes of red, but you also need to think what the 2 is out of. How many ball are in the bag?",
+        "B": "Not quite! I think you're focussing on the choice of two different colours. Try thinking about how many outcomes would give red. Also, ask yourself about the total number of outcomes.",
+        "C": "You're almost there! You've identified that there are 2 red balls, but you have to express this out of the total number of balls.",
+        "D": "There are two possible outcomes for choosing a red ball, and this is out of a total of 5 possibilities. This gives a probability of ⅖."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135236,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a4ea0cb5-b911-4b19-87c4-4e820d4d5b8d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There are four possible outcomes for choosing a blue ball, and this is out of a total of 5 possibilities. This gives a probability of ⅘.",
+        "B": "You're almost there! You've identified that there are 4 blue balls, but you have to express this out of the total number of balls.",
+        "C": "I think you've found the probability of a red ball, ut we want the probability of blue.",
+        "D": "I think you have used the number of each colur ball, but we need to think about how many balls are the colour are we interested in, and how many balls there are in total?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

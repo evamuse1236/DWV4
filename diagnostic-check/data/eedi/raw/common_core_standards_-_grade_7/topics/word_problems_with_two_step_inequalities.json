@@ -1,0 +1,147 @@
+{
+  "shortcode": "efkt",
+  "name": "Word problems with two step inequalities",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 172,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Form inequalities from situations described in words",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Form and solve inequalities from situations described in words",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166318,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8ee4c2ce-bead-45a1-a6b6-c24e596a11ce.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This inequality shows a cost of $4 per ride and $3.50 admission ticket. If '𝑥' is the number of rides, how should we write this instead?",
+        "B": "I think you've got your inequalities mixed up. > is 'greater than'. Can he spend greater than 60 if he only has $60?",
+        "C": "It's $4 admission and $3.50 per ride (𝑥). We can represent this cost as 4 + 3.50𝑥. He has $60, so the amount he spends must be less than or equal to 60. Therefore, 4 + 3.50𝑥 ≤ 60.",
+        "D": "Close, but if he has $60 to spend, he could also spend exactly 60. How could we show this in our inequality sign?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166545,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/37b99b68-39de-45c1-bc02-9a45ca6a4e5e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Close, but if he has $40 to spend, he could also spend exactly 40. How could we show this in our inequality sign?",
+        "B": "It's $2.50 admission and $3 per ride (𝑥). We can represent this cost as 2.50 + 3𝑥. He has $40, so the amount he spends must be less than or equal to 40. Therefore, 2.50 + 3𝑥 ≤ 40.",
+        "C": "This inequality shows a cost of $2.50 per ride and $3 admission ticket. If '𝑥' is the number of rides, how should we write this instead?",
+        "D": "I think you've got your inequalities mixed up. > is 'greater than'. Can he spend greater than 40 if he only has $40?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166319,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/942385cf-0480-4d07-b934-1067e868991a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "50 - 6 = 44, so he has $44 to spend on rides. $44 divided by $2.50 equals 17.6. He hasn't quite got enough to go on 18 rides, so the maximum would be 17.",
+        "B": "I think you've used $2.50 as the admission fee and then $6 per ride which is mixed up from what we are given in the question.",
+        "C": "I think you've rounded up from 17.6, however if he only has enough money for 17.6 rides, will he be able to pay for 18 of them?",
+        "D": "I think you've added $6 and $2.50 together and then divided by this, but the $6 admission is only a one-off payment so only needs to be taken away once."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166546,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0ebc1885-1ad1-41d1-956d-60673966155d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've used $4 as the admission fee and then $5.50 per ride which is mixed up from what we are given in the question.",
+        "B": "I think you've added $5.50 and $4 together and then divided by this, but the $5.50 admission is only a one-off payment so only needs to be taken away once.",
+        "C": "60 - 5.50 = 54.50, so he has $54.50 to spend on rides. $54.50 divided by $4 equals 13.6. He hasn't quite got enough to go on 14 rides, so the maximum would be 13.",
+        "D": "I think you've rounded up from 13.6, however if he only has enough money for 13.6 rides, will he be able to pay for 14 of them?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166320,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/85f80dc2-3cd2-4b57-a436-320496954fcd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Very close, but because the question says 'at most', this could also include 65 pounds. How could we show that in our inequality symbol?",
+        "B": "I think you've got your inequalities mixed up. > is 'greater than' but we are told that the dog has to weigh 65 or less.",
+        "C": "Not quite, I think you've used the dog's current weight for the inequality rather than the weight that the vet has said the dog should be.",
+        "D": "The dog's weight needs to be below or equal to 65, meaning the symbol ≤ would be appropriate for the inequality. We are starting at 98, then losing 3 pounds per week (𝑥), so the inequality would be 98 - 3𝑥 ≤ 65"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166547,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b9a0b0e6-1bf9-4de5-9089-df8d92be3b63.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The dogs weight needs to be less than or equal to 58, meaning this symbol ≤ would be appropriate for the inequality. We are starting at 72, then losing 2 pounds per week (𝑥), so the inequality would be 72 - 2𝑥 ≤ 58",
+        "B": "Not quite, I think you've used the dog's current weight for the inequality rather than the weight that the vet has said the dog should be.",
+        "C": "Very close, but because the question says 'at most', this could also include 58 pounds. How could we show that in our inequality symbol?",
+        "D": "I think you've got your inequalities mixed up. > is 'greater than' but we are told that the dog has to weigh 58 or less."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166321,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7f8f0362-c403-40f5-ac01-13397c49e141.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Close, but remember that when we divide an inequality by a negative, we have to switch the sign!",
+        "B": "65 - 98 = -33, giving us -3x ≤ -33. When we divide by -3, we switch the inequality symbol, so we would have x ≥ 11.",
+        "C": "I think your inequality might be back to front. We are starting at 98 and then subtracting 3 pounds per week (𝑥).",
+        "D": "Close, but it could also include 11 weeks! How can we show that on our inequality symbol?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166548,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f2701d6c-ca05-4f05-9bad-ce2ad18d9939.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think your inequality might be back to front. We are starting at 72 and then subtracting 2 pounds per week (𝑥).",
+        "B": "Close, but remember that when we divide an inequality by a negative, we have to switch the sign!",
+        "C": "Close, but it could also include 7 weeks! How can we show that on our inequality symbol?",
+        "D": "58 - 72 = -14, giving us -2𝑥 ≤ -14. When we divide by -2, we switch the inequality symbol, so we would have 𝑥 ≥ 7."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166322,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/de01c643-ad93-4c2e-b30b-e2b4b121d8ce.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We only have to switch the symbol when dividing by a negative. It's fine to leave it as it is if the inequality contains negatives as long as we don't divide by one!",
+        "B": "When solving an inequality, we want to do things in the opposite order. So if the inequality is 2𝑥 + 6, we would subtract the 6 first!",
+        "C": "-88 subtract 6 is -94. If we divide by 2, we get -47. As the question says 'no more than', it can be equal to or less than, which is the ≤ symbol.",
+        "D": "When solving an inequality, we want to do things in the opposite order. So if the inequality is 2𝑥 + 6, we would subtract the 6 first!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166549,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ed324439-1178-4a1a-b973-0866022a684b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "When solving an inequality, we want to do things in the opposite order. So if the inequality is 2𝑥 + 10, we would subtract the 10 first!",
+        "B": "-32 subtract 10 is -42. If we divide by 2, we get -21. As the question says 'no more than', it can be equal to or less than, which is the ≤ symbol.",
+        "C": "We only have to switch the symbol when dividing by a negative. It's fine to leave it as it is if the inequality contains negatives as long as we don't divide by one!",
+        "D": "When solving an inequality, we want to do things in the opposite order. So if the inequality is 2𝑥 + 10, we would subtract the 10 first!"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

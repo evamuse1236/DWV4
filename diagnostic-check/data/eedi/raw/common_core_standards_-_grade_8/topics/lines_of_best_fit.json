@@ -1,0 +1,147 @@
+{
+  "shortcode": "fb9z",
+  "name": "Lines of best fit",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 150,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Draw a line of best fit on a scatter diagram",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify when it is appropriate to draw a line of best fit",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 173958,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/588cffc6-f3b9-4d39-98eb-9ff6bba6b41a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A line of best fit is drawn on a scatter graph to show the general trend of the data. It's the best way to see if there is a relationship (or correlation) between the two variables, English and Science marks.",
+        "B": "Adding vertical lines like this is something we do for bar charts, which are used for comparing categories. To see the relationship between two sets of number data like test scores, a scatter graph with a line of best fit is better.",
+        "C": "Joining up all the points creates a line graph. This is normally used to show something changing over time. For this type of data, a line of best fit that goes through the middle of the points is more useful to show the relationship.",
+        "D": "Circling a group of points shows a cluster, but it doesn't show the overall trend for all the students. A line of best fit is used to represent the relationship across the whole set of data."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 174018,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9e446fb4-9e4b-4378-aafb-46bc22d31b8d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Joining up all the points creates a line graph. This is normally used to show something changing over time. For this type of data, a line of best fit that goes through the middle of the points is more useful to show the relationship.",
+        "B": "A line of best fit is drawn on a scatter graph to show the general trend of the data. It's the best way to see if there is a relationship (or correlation) between the two variables: English and Spanish test scores.",
+        "C": "Circling a group of points shows a cluster, but it doesn't show the overall trend for all the students. A line of best fit is used to represent the relationship across the whole set of data.",
+        "D": "Adding vertical lines like this is something we do for bar charts, which are used for comparing categories. To see the relationship between two sets of number data like test scores, a scatter graph with a line of best fit is better."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173959,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c30988d4-c6ac-47f4-b79f-1a9ead9c69ec.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The points on this graph follow a curve (a 'U' shape). A line of best fit must be a straight line, so it would not be a good model for this data.",
+        "B": "The points on this graph seem to be randomly scattered, with no clear pattern. This suggests there is no relationship (no correlation) between the variables, so a line of best fit would not be appropriate.",
+        "C": "The points on this graph appear to follow a straight-line pattern, sloping downwards. This is called linear correlation, and it is the perfect situation to draw a line of best fit to model the trend.",
+        "D": "This graph shows two separate groups, or clusters, of data. A single line of best fit would not be able to represent both groups properly, so it is not appropriate here."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 174019,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/518ed421-c077-4d82-aa94-7ae5372d8c72.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The points on this graph are scattered randomly and do not show any clear pattern or relationship (this is no correlation). A line of best fit is only useful when there is a correlation between the variables.",
+        "B": "A line of best fit is used when the data points show a linear relationship, meaning they follow a rough straight-line pattern. This graph shows a clear linear trend, making it perfect for a line of best fit.",
+        "C": "The points on this graph follow a clear pattern, but it is a curve, not a straight line. A straight line of best fit would not be appropriate here; you would need a curve of best fit.",
+        "D": "This graph shows distinct groups of data, or clusters. It doesn't show an overall linear relationship across all the points, so a single line of best fit would not be appropriate."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173960,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/593796de-21eb-4b0c-a137-a4ce0edbe28b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "An outlier is a point that doesn't fit the general trend of the data. A line of best fit should usually ignore outliers and follow the pattern of the main cluster of points.",
+        "B": "A line of best fit rarely goes through all the points. Its purpose is to show the general trend of the data, not connect every single point.",
+        "C": "A line of best fit does not need to start at the origin (0,0). It should be placed to best represent the trend of the data points, wherever they are on the graph.",
+        "D": "A good line of best fit should follow the trend of the data and be balanced, with roughly the same number of points above and below the line. Carl's line is too high because most points are underneath it."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 174020,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8aa026a3-a6f4-43a1-a408-ab3ac5af640c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A line of best fit does not need to go through any of the points. Its job is to show the general trend, so it should be positioned in the middle of all the data points.",
+        "B": "A line of best fit should follow the trend of the points, wherever they are on the graph. It only goes through the origin (0,0) if the data suggests it should.",
+        "C": "A good line of best fit should follow the trend of the data and have roughly an equal number of points on either side of the line. Tia's line is too low, as most of the points are above it.",
+        "D": "An outlier is a point that doesn't fit the general trend of the data. A line of best fit should usually ignore outliers and follow the pattern of the main cluster of points."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173961,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f7a7f1fc-aa48-4904-8144-af31116a95d1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The student's line does not go through the origin (0,0). Look at how the line is positioned relative to the main group of points and the one point that is far away from the rest.",
+        "B": "The line the student has drawn does not actually go through any of the points. The main mistake is related to the point that is far away from the others. How has this affected where the line has been drawn?",
+        "C": "An outlier is a point that doesn't fit the main pattern. The student has drawn their line in between the main group of points and the outlier. A line of best fit should ignore outliers and follow the trend of the main group of points.",
+        "D": "While the slope might not be perfect, the main reason it is wrong is because the student has let the outlier influence where they have drawn the line. The biggest mistake was not ignoring the outlier."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 174021,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/acdb7ff6-615f-4791-aecb-5d2f88f2aa81.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom is right that a line of best fit should have points above and below, but it also has to follow the general trend. The outlier has pulled this line away from the main pattern of the data, making it a bad fit.",
+        "B": "Katie is correct. The outlier (the point far away from the others) has skewed the line of best fit. A better line would ignore the outlier and follow the trend of the main cluster of points more closely.",
+        "C": "Tom's reason isn't strong enough to make it a good line of best fit. The line has been too strongly influenced by the outlier, so it is a bad fit.",
+        "D": "Katie has correctly identified the problem. The outlier has had too much influence on the line, pulling it away from the main trend of the data. This makes it a poor line of best fit."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173962,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6502927f-1438-4456-bbce-7a23b368780b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A good line of best fit should follow the general trend of the data and have approximately the same number of points above it as below it. This line is well-balanced among the points.",
+        "B": "While a line of best fit can go through some of the points, its main job is to be balanced. This line has many more points below it than above it, so it is not the best fit.",
+        "C": "It looks like you have connected the first and last points. While a line of best fit can go through some of the points, its main job is to be balanced. This line has more points below it than above it, so it is not the best fit.",
+        "D": "It looks like you think the line of best fit must go through (0,0) but that is not the case. A good line of best fit should follow the general trend of the data and have approximately the same number of points above it as below it."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 174022,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d747b34a-d3ee-4d1d-bd4b-59e6f427d8cd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This line is not a good fit because it has many more points above it than below it. A good line of best fit should have roughly the same number of data points above it as below it.",
+        "B": "This line is the best fit because it follows the general downward trend of the data and has a good balance of points above and below it along its entire length.",
+        "C": "Although this line goes through several points, it is not a good fit because all the other points are below it. A line of best fit needs to be in the middle of the data points.",
+        "D": "A line of best fit should represent all the data points, not just the ones at the start or end. This line is a reasonable attempt, but it has more points below it than above it."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

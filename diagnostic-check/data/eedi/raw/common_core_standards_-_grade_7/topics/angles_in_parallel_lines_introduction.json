@@ -1,0 +1,159 @@
+{
+  "shortcode": "vwt",
+  "name": "Angles in parallel lines introduction",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 198,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Recognise the notation for parallel lines",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify corresponding angles",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify alternate angles",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify a transversal",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 146016,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f844b498-681c-454d-b94b-250f970b6996.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The arrow symbol on a pair of lines indicates that the lines are parallel.",
+        "B": "Perpendicular lines meet at right angles. Do these lines meet at right angles?",
+        "C": "I think you have chosen the wrong term. Read the question carefully to see which lines we need to look at.",
+        "D": "I think you are looking at the wrong line. The question is asking you about lines PQ and RS. What do you notice about these two lines?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146036,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a918c1e8-e678-4b76-b5e0-b29c442e17e9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have chosen the wrong term. Read the question carefully to see which lines we need to look at.",
+        "B": "Perpendicular lines meet at right angles. Do these lines meet at right angles?",
+        "C": "The arrow symbol on a pair of lines indicates that the lines are parallel.",
+        "D": "I think you are looking at the wrong line. The question is asking you about lines VW and XY. What do you notice about these two lines?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146017,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7dd2f789-0010-4761-92c9-3d110460dfde.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you are looking at the wrong lines. The question is asking you about line XY.",
+        "B": "Perpendicular lines meet each other at right angles. Do these lines meet each other at right angles?",
+        "C": "I think you have chosen the wrong term. Reconsider your knowledge of line notations",
+        "D": "A transversal line passes through two lines at two distinct points."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146037,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cc1d0534-cbf3-412d-ba24-ea63c5404835.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you are looking at the wrong lines. The question is asking you about line JK.",
+        "B": "A transversal line passes through two lines at two distinct points",
+        "C": "I think you have chosen the wrong term. Reconsider your knowledge of line notations",
+        "D": "Perpendicular lines meet each other at right angles. Do these lines meet each other at right angles?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146018,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cf28437b-6a3d-424a-8e10-b759b02106f1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have identified the vertically opposite angle. Reconsider your knowledge of angles on parallel lines.",
+        "B": "I think you have identified a corresponding angle. Reconsider your knowledge of angles on parallel lines.",
+        "C": "I think you have identified a co-interior angle. Reconsider your knowledge of angles on parallel lines.",
+        "D": "The alternate angle to QMY would be XNR. These 2 angles form a 'z shape' between the parallel lines."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146038,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/91b8ae70-cad7-43a5-9845-99d4e359391c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have identified the vertically opposite angle. Reconsider your knowledge of angles on parallel lines.",
+        "B": "I think you have identified a corresponding angle. Reconsider your knowledge of angles on parallel lines.",
+        "C": "I think you have identified a co-interior angle. Reconsider your knowledge of angles on parallel lines.",
+        "D": "The alternate angle to MNS would be NMP. These 2 angles form a 'z shape' between the parallel lines."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146019,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ca8ba36a-218e-4867-82eb-d6d12544be5f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have identified the vertically opposite angle. Reconsider your knowledge of angles on parallel lines.",
+        "B": "The corresponding angle to QMY would be SNY. These 2 angles form an 'f shape' between the parallel lines.",
+        "C": "I think you have identified a co-interior angle. Reconsider your knowledge of angles on parallel lines.",
+        "D": "I think you have identified an alternate angle. Reconsider your knowledge of angles on parallel lines."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146039,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ec813d7e-b418-4216-a5b4-6873f7e3da71.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have identified the vertically opposite angle. Reconsider your knowledge of angles on parallel lines.",
+        "B": "The corresponding angle to MNS would be QMX. These 2 angles form an 'f shape' between the parallel lines.",
+        "C": "I think you have identified a co-interior angle. Reconsider your knowledge of angles on parallel lines.",
+        "D": "I think you have identified an alternate angle. Reconsider your knowledge of angles on parallel lines."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146020,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/50b074ca-e6a5-4619-8ca5-7875ece4cd58.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have identified the vertically opposite angle. Remember corresponding angles have the same relative position on the two parallel lines. Where would angle XMP be on line SR?",
+        "B": "Not quite. I think you are looking at the wrong side of the transversal (the red line). Where would angle XMP be on line SR?",
+        "C": "Not quite. Remember corresponding angles have the same relative position on the two parallel lines. Where would angle XMP be on line SR?",
+        "D": "The corresponding angle to XMP would be XNR. These 2 angles form an 'f shape' between the parallel lines."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146040,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7eafca18-dc1f-4793-a3ca-a36e1d2bbd0e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have identified the vertically opposite angle. Remember corresponding angles have the same relative position on the two parallel lines. Where would angle XNR be on line QP?",
+        "B": "Not quite. I think you are looking at the wrong side of the transversal (the red line). Where would angle XNR be on line QP?",
+        "C": "Not quite. Remember corresponding angles have the same relative position on the two parallel lines. Where would angle XNR be on line QP?",
+        "D": "The corresponding angle to XNR would be XMP. These 2 angles form an 'f shape' between the parallel lines."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,147 @@
+{
+  "shortcode": "ehie",
+  "name": "Comparing decimals",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 56,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Use inequality notation to order decimals with a different number of digits",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Understand comparing decimals is only valid when the two decimals refer to the same whole",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166674,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7fcf78d3-4a40-4b78-86ef-044253708987.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "0.35 is smaller than 0.40, so the proper symbol is <.",
+        "B": "Careful! Line the numbers up by their decimals and compare by place value to determine which value is larger. Remember your inequality sign should open towards the larger value.",
+        "C": "While 0.35 is close to 0.40 in value, they are not equal. Line the numbers up by their decimals and compare by place value to determine which value is larger.",
+        "D": "A symbol of some sort, equality or inequality, needs to be used to compare these two values. Line the numbers up by their decimals and compare by place value to determine which value is larger."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166924,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0df403b9-a215-49e6-a4c3-cb46e4b9b22f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "While 0.25 is close to 0.30 in value, they are not equal. Line the numbers up by their decimals and compare by place value to determine which value is larger.",
+        "B": "Careful! Line the numbers up by their decimals and compare by place value to determine which value is larger. Remember your inequality sign should open towards the larger value.",
+        "C": "0.25 is smaller than 0.30, so the proper symbol is <.",
+        "D": "A symbol of some sort, equality or inequality, needs to used to compare these two values. Line the numbers up by their decimals and compare by place value to determine which value is larger."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166675,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c84156c9-88f5-4828-82b3-a519e5d0360b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "These grids are not the same size, so we cannot compare the decimal numbers by the amount of area colored.",
+        "B": "Katie has recognized that the grids are different sizes, so we can't compare the area colored in each grid.",
+        "C": "Careful! You need to consider the size of the grids. Notice they are not the same size? Which person recognized size was important?",
+        "D": "We need to consider the size of the grids. Notice they are not the same size? Which person recognized size was important?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166925,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/89efa1c2-2862-4b13-857e-a3732a7f466e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "These grids are not the same size, so we cannot compare them by the amount of area colored.",
+        "B": "Katie has recognized that the grids are different sizes, so we can't compare the area colored in each grid.",
+        "C": "Careful! You need to consider the size of the grids. Notice they are not the same size? Which person recognized size was important?",
+        "D": "We need to consider the size of the grids. Notice they are not the same size? Which person recognized size was important?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166676,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2d50a49b-ce4e-4db7-8215-92290f0f590a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "0.3 is larger than 0.25, but we need to know the missing values to finish the calculations.",
+        "B": "0.25 may have more digits than 0.3, but to compare them we need to line the numbers up by their decimals and compare by place value. Next, we need to know the missing values to finish the calculations.",
+        "C": "We can't know if they are equal calculations until we know what the missing values are.",
+        "D": "Until we know what the unreadable values are, we can't know if the calculations are greater than, less than, or equal to each other."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166926,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/97099c0c-f067-4d5c-933a-53084e455076.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "0.1 may have fewer digits than 0.15, but to compare them we need to line the numbers up by their decimals and compare by place value. Next, we need to know the missing values to finish the calculations.",
+        "B": "0.15 is larger than 0.1, but we need to know the missing values to finish the calculations.",
+        "C": "We can't know if they are equal calculations until we know what the missing values are.",
+        "D": "Until we know what the unreadable values are, we can't know if the calculations are greater than, less than, or equal to each other."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166677,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7642f8aa-0d77-4d1f-ae75-745be6d6cdcf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "0.7 is larger than 0.65, but are we told anything about the original sizes of the two pizzas? What might we need to know in order to compare who has eaten most?",
+        "B": "0.65 may have more digits than 0.7, but that does not mean it is a larger number. To compare them we need to line the numbers up by their decimals and compare by place value. Also, there are two pizzas in this question but we don't know any details about them. What might we need to know to be able to work out who has eaten most?",
+        "C": "If you read the question again you might spot that we aren't told about the starting sizes of the two pizzas. How might that affect your answer?",
+        "D": "Until we know what the size of Kiera's and Lucas' pizzas are, we can't know if the calculations are greater than, less than, or equal to each other."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166927,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5ba73e2e-9ee4-4f3d-8960-dc7dd31acbb7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "0.4 is larger than 0.35, but are we told anything about the original sizes of the two pizzas? What might we need to know in order to compare who has eaten most?",
+        "B": "0.35 may have more digits than 0.4 but that does not mean it is a larger number. To compare decimals we need to line the numbers up by their decimals and compare by place value. Next, we need to think about the two pizzas - do we know if they are the same size?",
+        "C": "Until we know what the size of Kiera's and Lucas' pizzas are, we can't know if the calculations are greater than, less than, or equal to each other.",
+        "D": "If you read the question again you might spot that we aren't told about the starting sizes of the two pizzas. How might that affect your answer?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166678,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c12007c0-91a3-44fc-a006-db264175342a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "0.5 of 60 = 30 and 0.5 of 120 = 60. 30 < 60",
+        "B": "Remember the inequality symbol opens toward the larger number. Is 0.5 of 60 larger than 0.5 of 120?",
+        "C": "While 0.5 is equal to 0.5, 60 is not equal to 120. What is 0.5 of 60? What is 0.5 of 120? Which one is larger?",
+        "D": "A symbol of some sort, equality or inequality, needs to used to compare these two statements. What is 0.5 of 60? What is 0.5 of 120? Which one is larger?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166928,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/00e7ca5a-33ab-4265-94f7-f88a82949c8a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember the inequality symbol opens toward the larger number. Is 0.5 of 80 larger than 0.5 of 100?",
+        "B": "0.5 of 80 = 40 and 0.5 of 100 = 50. 40 < 50",
+        "C": "While 0.5 is equal to 0.5, 80 is not equal to 100. What is 0.5 of 80? What is 0.5 of 100? Which one is larger?",
+        "D": "A symbol of some sort, equality or inequality, needs to used to compare these two statements. What is 0.5 of 80? What is 0.5 of 100? Which one is larger?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

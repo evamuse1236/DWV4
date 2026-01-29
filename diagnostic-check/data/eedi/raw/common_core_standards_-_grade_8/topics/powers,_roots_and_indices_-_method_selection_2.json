@@ -1,0 +1,159 @@
+{
+  "shortcode": "vyu",
+  "name": "Powers, roots and indices - method selection 2",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 20,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Raise a positive integer to a positive integer power",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Raise an integer to a positive unit fraction power",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiplication law of indices with positive integer powers and the same base number",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiplication and division law of indices with positive integer powers",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 103004,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ca3aada8-0476-44d6-b95e-20dde365b999.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Think carefully about what happens to the base number when we multiply numbers with powers, also remember that any number without a power really has an invisible to the power of 1 attached.",
+        "B": "Think carefully about what happens to the base number when we multiply numbers with powers.",
+        "C": "Remember that when we don't have a power on a number, it really has a power of 1. For this question then 16 = 16¹, and then we need to apply the multiplication law of indices. If you struggle, it may help to write the question out in long form without powers.",
+        "D": "Remembering that a power of 1 means the number is the same, we can write 16 = 16¹, so we have 16¹ × 16². Applying the rule of adding powers when multiplying the same base number (1+2 = 3) gives an answer of 16³"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103024,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/04168850-fb91-48f3-befd-30a054855ca4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Think carefully about what happens to the base number when we multiply numbers with powers, also remember that any number without a power really has an invisible to the power of 1 attached.",
+        "B": "Remembering that a power of 1 means the number is the same, we can write 25 = 25¹, so we have 25¹ × 25³. Applying the rule of adding powers when multiplying the same base number (1+3 = 4) gives an answer of 25⁴.",
+        "C": "Remember that when we don't have a power on a number, it really has a power of 1. For this question then 25 = 25¹, and then we need to apply the multiplication law of indices. If you struggle, it may help to write the question out in long form without powers.",
+        "D": "Think carefully about what happens to the base number when we multiply numbers with powers. It may help to write the question out in long form without powers."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103005,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a717d68e-02d8-4241-9f76-4c5c25c98bca.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It may help to remember that any number that doesn't have a power showing has an invisible to the power of 1 attached. For this question the 16 in the numerator = 16¹. We also need to correctly apply the multiplication law of indices.",
+        "B": "It may help to remember that any number that doesn't have a power showing has an invisible to the power of 1 attached. For this question the 16 in the numerator = 16¹. We also need to correctly apply the multiplication law of indices. Once we have simplified the numerator, what does this leave our calculation as and what does this equal?",
+        "C": "I think you have simplified correctly, however incorrectly calculated that 16³ ÷ 16³ = 0. What is the answer to the calculation of anything divided by itself? Try it with a simple number and see what happens.",
+        "D": "Let’s simplify the top line first, noting that the 16 without a power is equivalent to 16¹. This then gives 16¹ × 16² = 16³. Substituting this into the top line, we now have 16³/16³ or 16³ ÷ 16³. Anything divided by itself will always equal 1, therefore the answer is 1."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103025,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/17ecead1-ef99-4d62-b96a-dcb3a82523ca.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It may help to remember that any number that doesn't have a power showing has an invisible to the power of 1 attached. For this question then 25 in the numerator = 25¹. We also need to correctly apply the multiplication law of indices. Once we have simplified the numerator, what does this leave our calculation as and what does this equal?",
+        "B": "Let’s simplify the top line first, noting that the 25 without a power is equivalent to 25¹. This then gives 25¹ × 25³ = 25⁴. Substituting this into the top line, we now have 25⁴/25⁴ or 25⁴ ÷ 25⁴. Anything divided by itself will always equal 1, therefore the answer is 1.",
+        "C": "I think you have simplified correctly, however incorrectly calculated that 25⁴ ÷ 25⁴ = 0. What is the answer to the calculation of anything divided by itself? Try it with a simple number and see what happens.",
+        "D": "It may help to remember that any number that doesn't have a power showing has an invisible to the power of 1 attached. For this question then 25bin the numerator = 25¹. We also need to correctly apply the multiplication law of indices."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103006,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9b7fdeda-a92e-40dc-a21c-88a04923bd5c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Let’s work on simplifying the top line first, noting that the 16 without a power is effectively 16¹. This then gives 16¹ × 16² = 16³. Substituting this into the top line, we now have 16³/16⁴ or 16³ ÷ 16⁴. We have the same base number and the function is division; therefore, powers must be subtracted: 16⁽³⁻⁴⁾ = 16⁻¹ = 1/16. Perhaps the last part of this is easier to understand if the calculation is written in longhand: 16³/16⁴ = (16 × 16 × 16)/(16 × 16 × 16 × 16). The three 16s in the numerator reduce to 1 with three 16s from the denominator (since 16 ÷ 16 = 1), leaving one more in the denominator, or 1/16.",
+        "B": "We need to correctly apply the multiplication law of indices to simplify the numerator. Once we have done this, we need to apply the division law of indices to arrive at our final answer. It may help to remember that negative powers result in a reciprocal.",
+        "C": "It may help to remember that any number that doesn't have a power showing has an invisible to the power of 1 attached. For this question the 16 in the numerator = 16¹. We also need to correctly apply the multiplication law of indices to simplify the numerator.",
+        "D": "We need to correctly apply the multiplication law of indices to simplify the numerator. Once we have done this, we need to apply the division law of indices to arrive at our final answer. It may help to remember that negative powers result in a reciprocal."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103026,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a43df15f-1f56-439d-ba71-ad68d16bd114.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We need to correctly apply the multiplication law of indices to simplify the numerator. Once we have done this, we need to apply the division law of indices to arrive at our final answer. It may help to remember that negative powers result in a reciprocal.",
+        "B": "We need to correctly apply the multiplication law of indices to simplify the numerator. Once we have done this, we need to apply the division law of indices to arrive at our final answer. It may help to remember that negative powers result in a reciprocal.",
+        "C": "It may help to remember that any number that doesn't have a power showing has an invisible to the power of 1 attached. For this question then 25 in the numerator = 25¹. We also need to correctly apply the multiplication law of indices to simplify the numerator.",
+        "D": "Let’s work on simplifying the top line first, noting that the 25 without a power is effectively 25¹. This then gives 25¹ × 25³ = 25⁴. Substituting this into the top line, we now have 25⁴/25⁵ or 25⁴ ÷ 25⁵. We have the same base number and the function is division; therefore, powers must be subtracted: 25⁽⁴⁻⁵⁾ = 25⁻¹ = 1/25. Perhaps the last part of this is easier to understand if the calculation is written in longhand: 25⁴/25⁵ = (25 × 25 × 25 × 25)/(25 × 25 × 25 × 25 × 25). The four 25's in the numerator reduce to 1 with four 25's from the denominator (since 25 ÷ 25 = 1), leaving one more in the denominator, or 1/25."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103007,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/53a87a9b-21fa-438e-a190-f8b9c139955e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "16 = 16¹, so (16)¹ = (16¹)¹. Remembering that we multiply the powers if we have brackets, this becomes 16¹, or just 16.",
+        "B": "I think you have added 1 here rather than raising 16 to the power of 1. How could we rewrite this to help us remove the brackets and put 16 to a power we can deal with?",
+        "C": "I think you have written the 1 as a decimal rather than raising 16 to the power of 1 here. How could we rewrite this to help us remove the brackets and put 16 to a power we can deal with?",
+        "D": "We can simplify and work with powers of 1, however quite often we don't bother to write a power of 1, in a similar way to how we don't write 1x for x. Why might we sometimes leave out information about a power?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103027,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c78e8dd4-47d4-47b6-bc37-e4eab6bfd6bd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added 1 here rather than raising 25 to the power of 1. How could we rewrite this to help us remove the brackets and put 25 to a power we can deal with?",
+        "B": "I think you have written the 1 as a decimal rather than raising 25 to the power of 1 here. How could we rewrite this to help us remove the brackets and put 25 to a power we can deal with?",
+        "C": "25 = 25¹, so (25)¹ = (25¹)¹. Remembering that we multiply the powers if we have brackets, this becomes 25¹, or just 25.",
+        "D": "We can simplify and work with powers of 1, however quite often we don't bother to write a power of 1, in a similar way to how we don't write 1x for x. Why might we sometimes leave out information about a power?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103008,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dca0a5b6-c78f-41bb-b114-d08b2f86fa5d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added ½ to 16 here, rather than raising it to the power of ½. It may help to remember that fractional powers indicate roots.",
+        "B": "I think you have raised 16 to the power of -½ here. Negative powers indicate reciprocals, however this power is positive.",
+        "C": "One of the rules of indices involves the way in which fractional powers can be presented. The denominator on a fractional power specifies the root; in this case ½ = square root. Therefore another way of writing 16^½ is √16, which gives rise to an answer of 4.",
+        "D": "I think you have multiplied 16 by ½ here, rather than raising it to the power of ½. It may help to remember that fractional powers indicate roots."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103028,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9fa612b9-abdf-4701-8369-c3f0e5b0dffa.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have raised 25 to the power of -1 here. Negative powers indicate reciprocals, however this power is positive, and fractional. It may help to remember that fractional powers indicate roots.",
+        "B": "One of the rules of indices involves the way in which fractional powers can be presented. The denominator on a fractional power specifies the root; in this case ½ = square root. Therefore another way of writing 25^½ is √25, which gives rise to an answer of 5.",
+        "C": "I think you have added ½ to 25 here, rather than raising it to the power of ½. It may help to remember that fractional powers indicate roots.",
+        "D": "I think you have made a calculation error when raising 25 to the power of ½. It may help to remember that fractional powers indicate roots."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

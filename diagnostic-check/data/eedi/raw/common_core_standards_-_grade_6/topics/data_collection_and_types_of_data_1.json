@@ -1,0 +1,165 @@
+{
+  "shortcode": "vrm",
+  "name": "Data collection and types of data 1",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 234,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Interpret simple tally charts",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify data which is primary or secondary",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify data which is discrete, continuous or neither",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify outliers from a list of data",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Understand that larger sample sizes tend to lead to more reliable results",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 77615,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8097b05d-2fc2-4c00-853c-4752f32d5330.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! I think you have only counted left-handed pupils here.",
+        "B": "Have another look - remember, each tally mark is a student here, we just sometimes group 5 together to make the charts easier to read.",
+        "C": "We have a frequency of 4 × 5 + 2 = 22 for right-handed pupils and a frequency of 3 × 5 + 2 = 17 for left-handed pupils. Adding them together gives 39.",
+        "D": "Not quite! I think you have only counted right-handed pupils here."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79073,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b701358e-bdb5-4658-8dcc-0333e20e9426.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We have a frequency of 4 × 5 + 1 = 21 for right-handed pupils and a frequency of 4 × 5 + 3 = 23 for left-handed pupils. Adding them together gives 44.",
+        "B": "Have another look - remember, each tally mark is a student here, we just sometimes group 5 together to make the charts easier to read.",
+        "C": "Not quite! I think you have only counted left-handed pupils here.",
+        "D": "Not quite! I think you have only counted right-handed pupils here."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 77616,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/68ce245c-a408-4c6c-8018-cbe1e83e018a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Primary data is data collected straight from the source by a researcher. We don't know that about this data. This question is asking about the type of data we have in the table.",
+        "B": "This data is discrete, as we have distinct groups of fruits and we can only buy fruit in whole numbers.",
+        "C": "Not Quite! Continuous data describes data that can take any numerical value. We cannot buy 6.235 apples.",
+        "D": "I think you may be thinking abut the type of table shown here, not the type of data contained within it."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79074,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1ff60e9f-74d2-4a49-b273-8de5c8cdc1ee.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Primary data is data collected straight from the source by a researcher. We don't know that about this data. This question is asking about the type of data we have in the table.",
+        "B": "I think you may be thinking abut the type of table shown here, not the type of data contained within it.",
+        "C": "Not Quite! Continuous data describes data that can take any numerical value. We cannot buy 6.235 apples.",
+        "D": "This data is discrete, as we have distinct groups of fruits and we can only buy fruit in whole numbers."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 77617,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bab2caeb-3f19-4efe-97ae-7645efd97886.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This data is primary as the people were asked themselves, and it is quantitative as the responses given to the question (the data) will be numbers.",
+        "B": "Not quite! Secondary data is data that is ready to be used which has been collected by somebody else, and qualitative data is descriptive (i.e. not a number).",
+        "C": "Not Quite! Continuous data is data that can take any value. Here, the data is restricted as owners can only have a whole numbers of pets.",
+        "D": "Not quite! Secondary data is data that is ready to be used which has been collected by somebody else. Is Renata using somebody else's data or is she collecting her own?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79075,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fc3a71c4-5413-40f4-a90f-17d48e68c972.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Renata is asking people about their favourite colour. We are not expecting their response to be a number, therefore the data collected will not be quantitative.",
+        "B": "The data is primary, as Renata is collecting it herself. The data is qualitative as the responses given to the question (the data) will be referring to the quality of something, such as a colour, not a quantity (a number).",
+        "C": "Not Quite! Continuous data is data that can take any numerical value. We would not expect the response (the data) to a question asking about someone's favourite colour to be a number.",
+        "D": "Not quite! Secondary data is data that is ready to be used which has been collected by somebody else. Is Renata using somebody else's data or is she collecting her own? Quantitative data is numerical, would we expect the response to what is your favourite colour to be a number?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 77623,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a5e261c7-92fe-4fad-8255-9218d32c31db.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Remember, an outlier is a piece of data that is either much bigger or smaller in value than the other data points. Converting all units to mm will help you spot the outlier in this data set.",
+        "B": "Converting all data points into mm, we get 90 mm, 85 mm, 7.5 mm, 70 mm and 80 mm. The 7.5 mm measurement stands out as being much smaller than the others, therefore it is an outlier in this data set.",
+        "C": "Not quite! Remember, an outlier is a piece of data that is either much bigger or smaller in value than the other data points. Converting all units to mm will help you spot the outlier in this data set.",
+        "D": "Not quite! Have a look again at the question. The units on the 70 is mm not cm, 70 mm = 7 cm which is similar in size to some of the other pieces of data. Converting all units to mm will help you spot the outlier in this data set."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79081,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/afa460e2-11ea-4b3c-9cd3-15d79e7ef3f2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Remember, an outlier is a piece of data that is either much bigger or smaller in value than the other data points. Converting all units to mm will help you spot the outlier in this data set.",
+        "B": "Not quite! This data point does look a lot bigger than all the other values but this is because the measurement was taken in mm. Converting all units to mm will help you spot the outlier in this data set.",
+        "C": "Converting everything to mm gives 100 mm, 90mm, 110mm, 75mm and 8mm. The 8 mm measurement stands out as being much smaller than the others, therefore it is an outlier in this data set.",
+        "D": "Not quite! Have a look again at the question. The units on the 90 is mm not cm, 90 mm = 9 cm which is similar in size to some of the other pieces of data. Converting all units to mm will help you spot the outlier in this data set."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 78395,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/32f01cbf-8fd5-4580-94a6-033ba0b1c97b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Just because roughly half of the people asked watched it and so half didn't, this doesn't make the data reliable.",
+        "B": "As Jack has the biggest sample size (asked the most people - total frequency), regardless if they watched it or not it is the most reliable.",
+        "C": "Have another think - someone with a smaller sample size is not going to give us the most reliable data.",
+        "D": "Not quite! Just because the most people said yes for Louis, this doesn't make it reliable."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78689,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eaf58c7b-f56c-4dd2-a49e-18e2922cc84e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Have another think - someone with a smaller sample size is not going to give us the most reliable data.",
+        "B": "Have another think - the person with the lowest sample size is not going to give us the most reliable data.",
+        "C": "Not quite! Just because Adam has the highest proportion of people who said yes, this isn't the same as being reliable.",
+        "D": "Louis has the biggest sample size (600), so he has a more reliable opinion than the others."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

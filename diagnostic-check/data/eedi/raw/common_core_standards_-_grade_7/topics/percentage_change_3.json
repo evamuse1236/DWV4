@@ -1,0 +1,159 @@
+{
+  "shortcode": "vsl",
+  "name": "Percentage change 3",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 31,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Convert three or more digit integer percentages to fractions",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate original value problems involving percentage increase where the percent is a multiple of 10",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate original value problems involving percentage increase where the percent is an integer",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate original value problems involving percentage decrease where the percent is a multiple of 10",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 73609,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4a3690ea-4074-47d1-b7be-5f9a2a36ed05.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added on 30 to 245. But we can't add a percentage (30%) on to a cost (£245). If we decrease the original 100% amount by 30%, how many percent are left? This is the percentage that £245 represents. Use that to help you find the original (100%) cost.",
+        "B": "I think you have decreased £245 by 30%. But £245 is not the original amount here. If we decrease the original 100% amount by 30%, how many percent are left? This is the percentage that £245 represents. Use that to help you find the original (100%) cost.",
+        "C": "I think you have increased £245 by 30%. But £245 is not the original amount here. If we decrease the original 100% amount by 30%, how many percent are left? This is the percentage that £245 represents. Use that to help you find the original (100%) cost.",
+        "D": "If we reduce 100% by 30% we get 100 - 30 = 70%. So the multiplier for reduction is 0.7. To find the original price, we do £245 ÷ 0.7 = £350."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 73815,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eccd17c4-6261-4fcd-a026-1bb5320a6abd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we reduce 100% by 40% we get 100 - 40 = 60%. So the multiplier for reduction is 0.6. To find the original price, we do £126 ÷ 0.6 = £210.",
+        "B": "I think you have divided £126 by 0.4. But if we decrease the original 100% amount by 40%, how many percent are left? This is the percentage that £126 represents. What do we need divide £126 by?",
+        "C": "I think you have decreased £126 by 40%. But £126 is not the original amount here. If we decrease the original 100% amount by 40%, how many percent are left? This is the percentage that £126 represents. Use that to help you find the original (100%) cost.",
+        "D": "I think you have increased £126 by 40%. But £126 is not the original amount here. If we decrease the original 100% amount by 40%, how many percent are left? This is the percentage that £126 represents. Use that to help you find the original (100%) cost."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 73611,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ed590513-297d-4f6a-b268-0e2908d33790.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If an amount increases by 150%, then the new amount is 100% + 150% = 250% of the original amount. This gives the fraction 250/100 = 2½.",
+        "B": "Don't forget that we are increasing by 150% so we are adding 150% on to the original amount.",
+        "C": "Read the question carefully. What form should our answer be given in?",
+        "D": "I think you have tried to write the digits 1, 5, 0 into a mixed number but that won't work. We need to think about percentages and their equivalent fractions. For example 50% = ½. If we increase an original amount by 150%, how many percent will we have altogether? How do we write that as a mixed number?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 73817,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9c287749-1144-42e9-b456-bf9483f0ea8b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Read the question carefully. What form should our answer be given in?",
+        "B": "Don't forget that we are increasing by 175% so we are adding 175% on to the original amount.",
+        "C": "If an amount increases by 175%, then the new amount is 100% + 175% = 275% of the original amount. This gives the fraction 275/100 = 2¾.",
+        "D": "I think you have tried to write the digits 1, 7, 5 into a mixed number but that won't work. We need to think about percentages and their equivalent fractions. For example 50% = ½. If we increase an original amount by 175%, how many percent will we have altogether? How do we write that as a mixed number?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 73612,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/179541b1-239e-43ef-9b0f-6efbe194e095.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful when rounding your answer. Look at the digit in the next column (after the 6p) to decide whether to round up or down.",
+        "B": "I think you have calculated the VAT but we want the price before VAT was added. How could you use your answer to help you find this?",
+        "C": "I think you have decreased £500 by 20%. But £500 is not the original (100%) amount here. If we add 20% (VAT) on to the original 100% amount, how many percent do we have? This is the percentage that £500 represents. Use that to help you find the original amount before VAT (100%).",
+        "D": "£500 represents the original price (100%) plus the VAT (20%). So £500 = 120%. Dividing by 120 and multiplying by 100 will give the original price before VAT: £500 × 100/120 = £416.666... which is £416.67 to the nearest 1p."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 73818,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/79d89e3b-c811-41f4-a0b0-b295ac6ef914.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have calculated the VAT but we want the price before VAT was added. How could you use your answer to help you find this?",
+        "B": "£400 represents the original price (100%) plus the VAT (20%). So £400 = 120%. Dividing by 120 and multiplying by 100 will give the original price before VAT: £400 × 100/120 = £333.333... which is £333.33 to the nearest 1p.",
+        "C": "I think you have decreased £400 by 20%. But £400 is not the original (100%) amount here. If we add 20% (VAT) on to the original 100% amount, how many percent do we have? This is the percentage that £400 represents. Use that to help you find the original amount before VAT (100%).",
+        "D": "Be careful when rounding your answer. Look at the digit in the next column (after the 3p) to decide whether to round up or down."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103886,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4c300c49-1f19-4179-b906-16569dadfe59.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The ★ represents 100%. After a 40% decrease, we will be left with 100 – 40 = 60%. So 60% = 120. Dividing both sides by 60 tells us that 1% = 120 ÷ 60 = 2. Multiplying both sides by 100 gives ★ = 100% = 200.",
+        "B": "I think you have increased 120 by 40%. But 120 is not the original amount here. If we decrease the original 100% amount by 40%, how many percent are left? This is the percentage that 120 represents.",
+        "C": "I think you have added on 40 to 120. But we can't add a percentage (40%) on to an ordinary number (120). If we decrease the original 100% amount by 40%, how many percent are left? This is the percentage that 120 represents.",
+        "D": "I think you have decreased 120 by 40%. But 120 is not the original amount here. If we decrease the original 100% amount by 40%, how many percent are left? This is the percentage that 120 represents."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 142376,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f7132b23-0a18-4e84-b958-666f6a03e74e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have decreased 126 by 30%. But 126 is not the original amount here. If we decrease the original 100% amount by 30%, how many percent are left? This is the percentage that 126 represents.",
+        "B": "The ★ represents 100%. After a 30% decrease, we will be left with 100 – 30 = 70%. So 70% = 126. Dividing both sides by 70 tells us that 1% = 126 ÷ 70 = 1.8. Multiplying both sides by 100 gives ★ = 100% = 180.",
+        "C": "I think you have increased 126 by 30%. But 126 is not the original amount here. If we decrease the original 100% amount by 30%, how many percent are left? This is the percentage that 126 represents.",
+        "D": "I think you have added on 30 to 126. But we can't add a percentage (30%) on to an ordinary number (126). If we decrease the original 100% amount by 30%, how many percent are left? This is the percentage that 126 represents."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103887,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/98913ef1-add8-4827-9807-ab6c9527753a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The best way to check who is correct in this question is to think of your own method to find ★, and then try that with your calculator, and check whether Tom and Katie's answers are the same or not :) It might help to remember that if we increase an amount by 16%, then we have 100% + 16%, so 116% in total.",
+        "B": "The best way to check who is correct in this question is to think of your own method to find ★, and then try that with your calculator, and check whether Tom and Katie's answers are the same or not :) It might help to remember that if we increase an amount by 16%, then we have 100% + 16%, so 116% in total.",
+        "C": "Tom’s method recognises that increasing by 16%, means adding 16% to 100% to get 116%. Using a decimal multiplier, ★ x 1.16 = 150. To find ★, we need to do 150 ÷ 1.16. For Katie’s approach, the 150 equates to 116%. This means 116% = 150, and so dividing both sides by 116 gives us 1% = 150/116. Multiplying by 100 gives 100% so ★ = 150/116 × 100. So Tom and Katie are both correct.",
+        "D": "The best way to check who is correct in this question is to think of your own method to find ★, and then try that with your calculator, and check whether Tom and Katie's answers are the same or not :) It might help to remember that if we increase an amount by 16%, then we have 100% + 16%, so 116% in total."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 142377,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dcfe295b-8ea5-4c48-9040-c70cbf999c7c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom’s method recognises that increasing by 12%, means adding 12% to 100% to get 112%. Using a decimal multiplier, ★ x 1.12 = 210. To find ★, we need to do 210 ÷ 1.12. For Katie’s approach, she is reducing 210 by 12%. This will not work as it is 12% of the new amount, not the original represented by the star.",
+        "B": "Not quite. Think about what percentage of the star we have after this increase, and how we could work out what the original 100% is.",
+        "C": "Not quite. Think about what percentage of the star we have after this increase, and how we could work out what the original 100% is.",
+        "D": "Not quite, at least one person is correct. Think about what percentage of the star we have after this increase, and how we could work out what the original 100% is."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

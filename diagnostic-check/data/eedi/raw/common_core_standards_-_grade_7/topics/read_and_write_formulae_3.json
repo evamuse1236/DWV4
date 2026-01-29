@@ -1,0 +1,153 @@
+{
+  "shortcode": "vvy",
+  "name": "Read and write formulae 3",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 161,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Recognise and name an equation",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Form expressions from situations described in words",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Write a formula to describe a situation",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 105017,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/78744b28-ffda-4d65-b814-0824aefc5b49.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is an equation: the two sides are equal and we can work out a specific value for 𝑥. A formula has two or more variables and shows how things are related to one another, for example, 𝐴 = 𝑤𝑙. An identity is an equation that is true no matter what values are chosen, for example 𝑥 + 3 ≡ 3 + 𝑥. An expression is something without the equals sign, for example, 𝑥 + 3.",
+        "B": "Not quite! You are correct that formulae have an equals symbol, but this just has one variable and does not show a relationship between 2 given things.",
+        "C": "Not quite. An identity shows that 2 expressions are equal, no matter what the value of the variable. e.g. x + 3 = 3 + x",
+        "D": "Not quite. Algebraic expressions do contain letters and numbers, but they do not have an equals sign."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 120801,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3ac59f1a-a154-45c3-ad64-dba6888bf4c9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is an equation: the two sides are equal and we can work out a specific value for y. A formula has two or more variables and shows how things are related to one another, for example, 𝐴 = 𝑤𝑙. An identity is an equation that is true no matter what values are chosen, for example 𝑥 + 3 ≡ 3 + 𝑥. An expression is something without the equals sign, for example, 𝑥 + 3.",
+        "B": "Not quite! You are correct that formulae have an equals symbol, but this just has one variable and does not show a relationship between 2 given things.",
+        "C": "Not quite. An identity shows that 2 expressions are equal, no matter what the value of the variable. e.g. x + 3 = 3 + x",
+        "D": "Not quite. Algebraic expressions do contain letters and numbers, but they do not have an equals sign."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 105018,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8ea08f0f-9c33-4fea-9aed-75d124a77068.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have added the 50 and 35 together, and then multiplied by 𝑛. Maybe try some example values like if he works for 2 hours?",
+        "B": "It looks like you have misread part of the question. If he charges £50 per hour then how would we work out how much that is for 4 hours? Use this to help you write the equation",
+        "C": "Not quite! Try some different values for n. If he charges £50 per hour then how would we work out how much that is for 4 hours? Use this to help you write the equation",
+        "D": "Let’s work out the cost for a specific number of hours, for example 3 hours: the cost (𝐶) would then be 50 × 3 + 35. If the electrician worked for 8 hours, say, the cost would be 𝐶 = 50 × 8 + 35. Now it may be easier to see that if the electrician works for 𝒏 hours, then 𝐶 = 50 × 𝒏 + 35, or 𝐶 = 50𝑛 + 35"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 105023,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4e2be55f-fae5-4261-b171-c764395cdc01.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have added the 70 and 40 together, and then multiplied by 𝑛. The £70 is a one-off payment, not per hour. How would this affect your answer?",
+        "B": "Let’s work out the cost for a specific number of hours, for example 3 hours: the cost (𝐶) would then be 40 × 3 + 70. If the plumber worked for 8 hours, say, the cost would be 𝐶 = 40 × 8 + 70. Now it may be easier to see that if the plumber works for 𝒏 hours, then 𝐶 = 40 × 𝒏 + 70, or 𝐶 = 40𝑛 + 70",
+        "C": "Not quite! Try some different values for n. If he charges £40 per hour then how would we work out how much that is for 5 hours? Use this to help you write the equation",
+        "D": "It looks like you have misread part of the question. If he charges £40 per hour then how would we work out how much that is for 5 hours? Use this to help you write the equation"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 105019,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0efbf8ed-0da3-41bd-9059-e676d56db25a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have misread part of the question. Which value will increase with every mile travelled?",
+        "B": "Let’s work out the cost for a specific number of miles, for example 10 miles: the total cost (𝑇) would then be 2.50 + 1.20 × 10. If the journey was for 30 miles, say, the total cost would be 𝑇 = 2.50 + 1.20 × 30. Now it may be easier to see that if the journey is for 𝒎 miles, then 𝑇 = 2.50 + 1.20 × 𝒎, or swapping the order: 𝑇 = 1.20𝑚 + 2.50",
+        "C": "It looks like you have assumed that the initial £2.50 charge is also multiplied by £1.20. The £2.50 is a one-off charge. How will this affect your answer?",
+        "D": "It looks like you have added the £2.50 and £1.20 together, and then multiplied by m. Maybe try working out some example values like if the journey was 2 miles?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 105024,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c2ca2692-37dd-4c5b-ae81-fbd71227aece.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have misread part of the question. Which value will increase with every mile travelled?",
+        "B": "It looks like you have assumed that the initial £5 charge is also multiplied by £0.60. The £5 is a one-off charge. How will this affect your answer?",
+        "C": "Let’s work out the cost for a specific number of miles, for example 3 miles: the total cost (𝑇) would then be 5 + 0.60 × 3. If the journey was for 5 miles, say, the total cost would be 𝑇 = 5 + 0.60 × 5. Now it may be easier to see that if the journey is for 𝒎 miles, then 𝑇 = 5 + 0.60 × 𝒎, or swapping the order and dropping any unnecessary zeros: 𝑇 = 0.6𝑚 + 5",
+        "D": "You're nearly there, but check the units in the question! We want the total cost to be in pounds"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 105020,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/612dce2e-b545-405e-95a2-4eb83456ff94.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have only added the given sides. We need all 4 lengths for the perimeter.",
+        "B": "The perimeter is the distance around a shape. Starting in the bottom left corner and moving clockwise, we can write 𝑃 = 𝑥 + 𝑥 + 2 + 𝑥 + 𝑥 + 2, and collecting like terms, this can be simplified to 𝑃 = 4𝑥 + 4",
+        "C": "Nearly! Try writing out the missing side lengths and then collecting like terms together",
+        "D": "Uhoh, it looks like you have calculated the area instead! Remember that perimeter is the total of the side lengths of a shape."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 120802,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/29741a2e-094f-4898-8f67-a7fe6292ac7b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly! Try writing out the missing side lengths and then collecting like terms together",
+        "B": "Not quite, it looks like you have calculated the area instead! Remember that perimeter is the total of the side lengths of a shape.",
+        "C": "It looks like you have only added the given sides. We need all 4 lengths for the perimeter.",
+        "D": "The perimeter is the distance around a shape. Starting in the bottom left corner and moving clockwise, we can write 𝑃 = y + y + 3 + y + y + 3, simplifying we get 𝑃 = 4y + 6"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 105021,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/59aed4e8-5336-4058-af18-c20766074a5d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have just added all the terms together. Think about how many seats there would be on 2 minibuses. What calculation did you just use?",
+        "B": "Initially, let’s focus on the minibuses, each with 12 seats: say there were 5 minibuses, then there would be 12 × 5 seats. If there were 7 minibuses, then there would be 12 × 7 seats. Now it may be easier to see that if there were 𝒎 minibuses, then there would be 12 × 𝒎 = 12𝑚 seats. In a similar way, if each coach has 48 seats, then for 𝒄 coaches, there will be 48𝒄 seats. In order to find the total number of seats in both minibuses and coaches, these expressions need to be added to give 12𝑚 + 48𝑐",
+        "C": "It looks like you have just added the letters together, but we need to consider how many seats are on each minibus/coach. Think about how many seats there would be on 2 minibuses. What calculation did you just use?",
+        "D": "It looks like you have added the number of seats together and then the number of vehicles together. Think about how many seats there would be on 2 minibuses. What calculation did you just use?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 105026,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0c7a02cc-d94b-4590-b9d6-f65132be40d2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have just added the letters together, but we need to consider how many eggs are in each box/tray. Think about how many eggs there would be in 2 boxes. What calculation did you just use?",
+        "B": "It looks like you have added the number of eggs together and then the number of trays together. Think about how many eggs there would be in 2 boxes. What calculation did you just use?",
+        "C": "It looks like you have just added all the terms together, but we need to consider how many eggs are in each box/tray. Think about how many eggs there would be in 2 boxes. What calculation did you just use?",
+        "D": "Initially, let’s focus on the boxes, each holding 6 eggs: say there were 5 boxes, then there would be 6 × 5 eggs. If there were 10 boxes, then there would be 6 × 10 eggs. Now it may be easier to see that if there were 𝒃 boxes, then there would be 6 × 𝒃 = 6𝑏 eggs. In a similar way, if each tray can contain 30 eggs, then for 𝒕 trays, there will be 30𝒕 eggs. In order to find the total number of eggs in both boxes and trays, these expressions need to be added to give 6𝑏 + 30𝑡"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,6 +1,6 @@
 === Fill Empty Rows Report ===
 
-Before: 0 empty rows (0 activities)
+Before: 5 empty rows (0 activities)
 
 ## Khan Academy Assignments
 
@@ -49,22 +49,57 @@ Before: 0 empty rows (0 activities)
 
 ## Coverage Fixes (ka-coverage-fixes.json)
 
-  + MYP Y1 Row 57 [Percentage]: Percent problems (6th grade)
-  + MYP Y1 Row 60 [Data]: Represent and interpret data
-  + MYP Y1 Row 61 [Data]: Represent and interpret data
-  + PYP Y2 Row 4 [Geometry ( Angles)]: Measuring angles
-  + PYP Y2 Row 8 [Geometry (2D shapes)]: Classifying triangles
-  + PYP Y2 Row 33 [Fractions]: Mixed numbers (4th grade)
-  + PYP Y2 Row 35 [Fractions]: Equivalent fractions and comparing fractions
-  + PYP Y2 Row 39 [Fractions]: Adding/subtracting fractions word problems
+  + MYP Y1 Row 7 [Fractions Foundation]: Multiply fractions (5th grade)
+  + MYP Y1 Row 28 [Fractions]: Multiplying fractions word problems (5th grade)
+  + MYP Y1 Row 28 [Fractions]: Dividing fractions & whole numbers word problems (5th grade)
+  ⟳ REPLACE: MYP Y1 Row 35 — cleared 1 existing KA entries
+  ⟳ MYP Y1 Row 35 [Decimals]: Adding decimals word problems (5th grade)
+  + MYP Y1 Row 35 [Decimals]: Subtracting decimals word problems (5th grade)
+  + MYP Y1 Row 35 [Decimals]: Multiplying decimals word problems (5th grade)
+  + MYP Y1 Row 35 [Decimals]: Dividing decimals word problems (5th grade)
+  + MYP Y1 Row 34 [Decimals]: Powers of ten (5th grade)
+  ⟳ REPLACE: MYP Y1 Row 11 — cleared 1 existing KA entries
+  ⟳ MYP Y1 Row 11 [Arithmetic MYP 1]: Add & subtract (4th grade)
+  + MYP Y1 Row 11 [Arithmetic MYP 1]: Multiplication & division (4th grade)
+  + MYP Y1 Row 37 [Geometry]: Nets of 3D figures (6th grade)
+  + MYP Y1 Row 41 [Measurement and Areas]: Area of composite figures (6th grade)
+  ⟳ REPLACE: MYP Y1 Row 51 — cleared 1 existing KA entries
+  ⟳ MYP Y1 Row 51 [Algebra]: One-step add/subtract equations (6th grade)
+  + MYP Y1 Row 51 [Algebra]: One-step multiply/divide equations (6th grade)
+  + MYP Y1 Row 61 [Data]: Coordinate plane (5th grade) — plot points & interpret graphs
+  + PYP Y2 Row 10 [Geometry (2D shapes)]: Plane figures (4th grade) — includes symmetry lessons
+  + PYP Y2 Row 36 [Fractions]: Compose & decompose fractions (Arithmetic)
+  + PYP Y2 Row 43 [Measurement]: Area of rectangles (4th grade) — includes composite figures
+  + PYP Y2 Row 45 [Measurement]: Area & perimeter word problems (4th grade)
+  + PYP Y2 Row 6 [Geometry ( Angles)]: Angle addition (4th grade)
+  + PYP Y2 Row 5 [Geometry ( Angles)]: Angle relationships (7th grade) — complementary/supplementary
+  + PYP Y2 Row 51 [Coordinate Geometry]: Coordinate plane (5th grade)
+  + PYP Y2 Row 51 [Coordinate Geometry]: Number line (6th grade) — finding midpoints
+  + MYP Y1 Row 19 [Factors and Multiples]: Divisibility tests (Arithmetic)
+  + MYP Y1 Row 38 [Geometry]: Classifying triangles (4th grade)
+  + MYP Y1 Row 9 [Arithmetic MYP 1]: Multiplication & division (4th grade) — word problems practice
+  + MYP Y1 Row 10 [Arithmetic MYP 1]: Multi-digit multiplication & division (5th grade)
+  + MYP Y1 Row 12 [Arithmetic MYP 1]: Add & subtract (4th grade)
+  + MYP Y1 Row 13 [Arithmetic MYP 1]: Place value & rounding (4th grade)
+  + MYP Y1 Row 14 [Arithmetic MYP 1]: Place value & rounding (4th grade)
+  + MYP Y1 Row 45 [Algebra foundations]: Algebraic thinking (5th grade) — order of operations practice
+  + MYP Y1 Row 48 [Algebra]: Expressions & equations (Pre-algebra)
+  + PYP Y2 Row 14 [Arithmetic]: Add and subtract multi-digit numbers (4th grade)
+  + PYP Y2 Row 19 [Arithmetic]: Add & subtract (4th grade)
+  + PYP Y2 Row 41 [Measurement]: Converting units (5th grade)
+  + PYP Y2 Row 46 [Measurement]: Volume word problems (5th grade)
+  + PYP Y2 Row 47 [Measurement]: Surface area (6th grade)
+  + PYP Y2 Row 48 [Measurement]: Volume word problems (5th grade)
+  + PYP Y2 Row 32 [Fractions]: Simplifying fractions (Arithmetic)
+  + PYP Y2 Row 64 [Decimal]: Decimals word problems (Arithmetic)
 
 === Statistics ===
-KA assignments applied: 8
+KA assignments applied: 40
 KA assignments skipped: 42
 Rows that already had content (enriched): 0
-Empty rows before: 0
+Empty rows before: 5
 Empty rows after: 0
-Rows filled: 0
+Rows filled: 5
 
 === Duplicate URL Check ===
   No duplicate URLs within any row.

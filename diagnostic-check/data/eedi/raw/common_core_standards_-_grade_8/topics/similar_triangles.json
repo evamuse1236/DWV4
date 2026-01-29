@@ -1,0 +1,141 @@
+{
+  "shortcode": "v1f",
+  "name": "Similar triangles",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 130,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify whether two shapes are similar or not",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 78307,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/40b123c6-f32f-4602-94d8-f1e450056702.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If two objects are 'similar' they have the same shape. Can a circle be enlarged or shrunk to make any other circle?",
+        "B": "If two triangles are 'similar' then corresponding angles are equal. Are all corresponding angles equal in different equilateral triangles?",
+        "C": "If two objects are 'similar' then corresponding angles are equal. Not all rhombuses have the same corresponding angles.",
+        "D": "If two objects are 'similar' then corresponding angles are equal and one shape is an enlargement of the other. Is this true for regular decagons?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78601,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/996623de-9e2c-4d7a-8247-5873a501675e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If two objects are 'similar' then corresponding angles are equal and one shape is an enlargement of the other. Is this true for regular pentagons?",
+        "B": "If two objects are 'similar' then one is an enlargement of the other. A rectangle cannot be enlarged or shrunk to make all other rectangles.",
+        "C": "If two objects are 'similar' they have the same shape. Can a square be enlarged or shrunk to make any other square?",
+        "D": "If two objects are 'similar' they have the same shape. Can a circle be enlarged or shrunk to make any other circle?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146108,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bb2767db-dae7-4135-8bae-bf6c068a577e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added 3. The scale factor multiplies all side lengths, but what affect would it have on the angles of the shape?",
+        "B": "I think you have assumed that the scale factor would mean the angle was multiplied by 3. If this were the case, the sum of the angles would multiply by 3 too, which could not be true in a triangle. What affect, if any, would the scale factor have on the angles of the shape?",
+        "C": "I think you have assumed that the scale factor would mean the angle was divided by 3. If this were the case, the sum of the angles would divide by 3 too, which could not be true in a triangle. What affect, if any, would the scale factor have on the angles of the shape?",
+        "D": "The angles in the enlarged shape would not change, so angle q = 36 degrees"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146128,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/87b26932-5d0f-4530-a4f3-02bf47a87253.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added 3. The scale factor multiplies all side lengths, but what affect would it have on the angles of the shape?",
+        "B": "The angles in the enlarged shape would not change, so angle q = 42 degrees",
+        "C": "I think you have assumed that the scale factor would mean the angle was divided by 3. If this were the case, the sum of the angles would divide by 3 too, which could not be true in a triangle. What affect, if any, would the scale factor have on the angles of the shape?",
+        "D": "I think you have assumed that the scale factor would mean the angle was multiplied by 3. If this were the case, the sum of the angles would multiply by 3 too, which could not be true in a triangle. What affect, if any, would the scale factor have on the angles of the shape?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146109,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/675a208f-2ba6-4745-939d-715bc6109f42.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The sides would double in length and the angles would remain unchanged.",
+        "B": "Consider a square whose angles sum to 360 degrees. If we multiplied the side lengths by 2, would the angles now sum to 720 in the enlarged square?",
+        "C": "Consider a square whose angles sum to 360 degrees. If we multiplied the side lengths by 2, would the angles now sum to 720 in the enlarged square?",
+        "D": "Consider a square of side length 2cm, whose angles sum to 360 degrees. If we multiplied the side lengths by 2, what would the new side lengths be? Would the angles now sum to 720 in the enlarged square?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146129,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/237ba9c3-8848-4f82-b10d-5f621cb2d611.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The sides would treble in length and the angles would remain unchanged.",
+        "B": "Consider a square whose angles sum to 360 degrees. If we multiplied the side lengths by 3, would the angles now sum to 1080 in the enlarged square?",
+        "C": "Consider a square whose angles sum to 360 degrees. If we multiplied the side lengths by 3, would the angles now sum to 1080 in the enlarged square?",
+        "D": "Consider a square of side length 2cm, whose angles sum to 360 degrees. If we multiplied the side lengths by 3, what would the new side lengths be? Would the angles now sum to 1080 in the enlarged square?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146111,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f51a6022-97a4-4107-bb7a-f91a18ccd06f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have confused w and x. Reconsider how the orientation of the triangle has changed, and which angle on the left hand triangle would correspond with angle x.",
+        "B": "Angle x corresponds with the bottom left angle in the first triangle, and so would be 73 degrees",
+        "C": "I think you have halved 73. Do angles change when we enlarge shapes?",
+        "D": "I think you have confused the angles and halved it incorrectly. Reconsider how the orientation of the triangle has changed, and which angle on the left hand triangle would correspond with angle w. Do angles change when we enlarge shapes?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146131,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2843de8b-3840-4dde-82de-7076955f215a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have confused w and x. Reconsider how the orientation of the triangle has changed, and which angle on the left hand triangle would correspond with angle x.",
+        "B": "I think you have halved 68. Do angles change when we enlarge shapes?",
+        "C": "Angle x corresponds with the bottom left angle in the first triangle, and so would be 68 degrees.",
+        "D": "I think you have confused the angles and halved 41. Reconsider how the orientation of the triangle has changed, and which angle on the left hand triangle would correspond with angle w. Do angles change when we enlarge them?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146112,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e2441abb-0457-479a-bba4-d791cce2b690.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember shapes are similar if one is an enlargement of the other",
+        "B": "Remember shapes are similar if one is an enlargement of the other",
+        "C": "The sides will change at the same rate as they are enlarged along that line. Making the shapes both similar and an enlargement.",
+        "D": "At least one of them is correct. Remember shapes are similar if one is an enlargement of the other"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146132,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/22719a64-14d2-4514-a4fd-fef243eea32d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember shapes are similar if one is an enlargement of the other",
+        "B": "If they are all regular octagons, do the angles change? Does that make it an enlargement?",
+        "C": "The octagons are regular which means that the angles and sides are all the same. Therefore the octagons will be enlargements of each other and are therefore similar.",
+        "D": "At least one of them is correct. Remember shapes are similar if one is an enlargement of the other"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

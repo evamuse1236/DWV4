@@ -1,0 +1,153 @@
+{
+  "shortcode": "vxq",
+  "name": "Probability of a single event 1",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 232,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Know that probabilities must lie between 0, impossible, and 1, certain",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Know that the probabilities of exhaustive events must sum to 1",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Assign probabilities to single events using fractions",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 78387,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/31090695-4147-4a41-b18a-983ff0b700ab.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful! Remember the probability of an event happening must always be between 0 and 1. Which of these means no chance of the event happening? Which means an event will definitely happen?",
+        "B": "Watch out! If something is unlikely to happen this isn't the same as saying the chance of something happening is impossible. With 'unlikely' there is still a tiny chance of the event occurring.",
+        "C": "Remember, probabilities range from 0 to 1. I think you may be thinking that probabilities range from -1 to 1.",
+        "D": "The lowest a probability can be is 0, so the event is impossible."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 124923,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f9b6eb84-2f26-4f97-bc40-80ba931f4877.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The lowest a probability can be is 0, this signals an impossible event.",
+        "B": "Be careful! Remember the probability of an event happening must always be between 0 and 1. Which of these means no chance of the event happening? Which means an event will definitely happen?",
+        "C": "Not quite! It feels sensible that a very low number such as 0.00000001 could be the correct answer, but an event with the probability of 0.00000001 still has a  very small chance of occurring.",
+        "D": "Not quite! Probabilities can only range from 0 to 1, therefore we cannot use infinity to indicate the probability of an event occurring."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 78388,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/265a3331-dbc1-4c98-b35d-3905fce9f595.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Remember, the bottom number of the fraction tells us how many balls there are to pick from.",
+        "B": "Not quite! I think you've used the number of red balls here rather than thinking about the number of balls to pick from in total, and also flipped your fraction.",
+        "C": "There are 2 green balls that could be picked from the 5 balls in total. So the probability is 2/5.",
+        "D": "Not quite! I think you've used the number of red balls here as your denominator, rather than thinking about the number of balls to pick from in total."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78682,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6f8ef597-933a-46d6-b75a-2cf7d698f414.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly! I think you've used the number of red balls here as your denominator, rather than thinking about the number of balls to pick from in total.",
+        "B": "There is one green ball out of the five balls in total, so the probability of picking a green ball is 1/5.",
+        "C": "Not quite! I think you've used the number of red balls here rather than thinking about the number of balls to pick from in total, and also flipped your fraction.",
+        "D": "Not quite! Remember, the bottom number of the fraction tells us how many balls there are to pick from."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 109465,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ef1f2c9b-007c-418c-a10f-377bf39e2ab8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful! Remember the probability of an event happening must always be between 0 and 1. If an event is certain to happen, this means it definitely will, with no room for any chance of it not happening.",
+        "B": "There is a high probability of the event happening and so it is likely to happen, so this is the correct option to choose.",
+        "C": "Be careful! Remember the probability of an event happening must always be between 0 and 1, therefore 0.9 is a high probability, so 'unlikely' isn't an appropriate description for this one.",
+        "D": "Be careful! Remember the probability of an event happening must always be between 0 and 1, therefore 0.9 is a high probability, so 'impossible' isn't an appropriate description for this one."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 109473,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6318e43e-141b-4366-a938-58e279454ffb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful! Remember the probability of an event happening must always be between 0 and 1, therefore 0.1 is a low probability, so 'certain' (i.e. will definitely happen) isn't an appropriate description for this one.",
+        "B": "Be careful! Remember the probability of an event happening must always be between 0 and 1, therefore 0.1 is a low probability, so 'likely' isn't an appropriate description for this one.",
+        "C": "There is a low probability of the event happening and so it is unlikely to happen.",
+        "D": "Be careful! Remember the probability of an event happening must always be between 0 and 1, therefore 0.1 is a low probability, but not impossible."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 109466,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/564d6380-3b50-4602-9798-afb5764025dd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! I think you have used the 4 as the numerator as this is the number given in the question but probability describes how likely an event is to occur. We need to know how many times the number 4 occurs on a fair six-sided dice as well as how many different outcomes there are in total.\n\n\n",
+        "B": "Have another think about your denominator here - how many different outcomes are possible?",
+        "C": "Not quite! I think you have used the 4 as the numerator as this is the number given in the question but probability describes how likely an event is to occur. We need to know how many times the number 4 occurs on a fair six-sided dice as well as how many different outcomes there are in total.\n\n\n",
+        "D": "There are six numbers on a dice and only one of them is a 4, and so the probability of rolling each individual number is one out of six (as the dice is fair) which we write as: ⅙."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 109474,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fb290696-9d2c-438f-ac73-ebcd0a9dd16e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There are eight numbers on this dice and only one of them is a 5, and so the probability of rolling each individual number is one out of eight (as the dice is fair) which we write as: ⅛.",
+        "B": "Not quite! I think you have used the 5 as the numerator as this is the number given in the question but probability describes how likely an event is to occur. We need to know how many times the number 5 occurs on a fair eight-sided dice as well as how many different outcomes there are in total.\n\n\n",
+        "C": "Have another think about your denominator here - how many different outcomes are possible?",
+        "D": "Not quite! I think you have used the 5 as the numerator as this is the number given in the question but probability describes how likely an event is to occur. We need to know how many times the number 5 occurs on a fair eight-sided dice as well as how many different outcomes there are in total.\n\n\n"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 109467,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0251fb9a-9277-4caa-8758-f58b5019b013.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Remember, an event can either occur or not occur, and total probabilities must add up to 1.",
+        "B": "An event can either occur or not occur, and total probabilities must add up to 1. So we calculate 1 − 2/7 = 5/7",
+        "C": "Nearly! I think you have forgotten to write the answer as a fraction here.",
+        "D": "Not quite! Remember, an event can either occur or not occur, and total probabilities must add up to 1."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 109475,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/047fdeaf-7cda-4a43-b42b-0c7fa5134dda.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Remember, an event can either occur or not occur, and total probabilities must add up to 1.",
+        "B": "Not quite! Remember, an event can either occur or not occur, and total probabilities must add up to 1.",
+        "C": "An event can either occur or not occur, and total probabilities must add up to 1. So we calculate 1 − 2/9 = 7/9",
+        "D": "Nearly! I think you have forgotten to write the answer as a fraction here."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

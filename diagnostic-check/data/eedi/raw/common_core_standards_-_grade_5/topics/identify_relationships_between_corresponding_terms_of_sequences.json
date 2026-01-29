@@ -1,0 +1,141 @@
+{
+  "shortcode": "bih1",
+  "name": "Identify relationships between corresponding terms of sequences",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 4,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify relationships between two sequences",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158315,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6c708f44-bc1c-4f7f-8be4-dc4d02dfd3ce.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We are only comparing corresponding terms in this statement. This means that you are comparing each pair of terms that are in the same column as each other. If you do this, you can see that in every column, the bottom number (Sequence B) is smaller than the top number (Sequence A). You will need to carefully check every statement to find the one false statement.",
+        "B": "If we subtract 2 from the terms in Sequence A, we get: 2, 12, 22, 32. We can see that these are the 4 terms given for Sequence B so this statement is true. You will need to carefully check every statement to find the one false statement.",
+        "C": "Looking at the terms of Sequence A, we can see that 10 is added each time to get the next number in the sequence. So \"add 10\" is the term-to-term rule for Sequence A. Double check if \"add 10\" is also the term-to-term rule for Sequence B. You will need to carefully check every statement to find the one false statement.",
+        "D": "If we double the terms in Sequence B, we get: 4, 24, 44, 64. Only the first term in Sequence A matches this sequence, therefore it is not true that we can double the terms in B to get the terms in A."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158579,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2f920229-376b-48bf-bbdd-cc1955b90be5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We are only comparing corresponding terms in this statement. This means that you are comparing each pair of terms that are in the same column as each other. If you do this, you can see that in every column, the top number (Sequence A) is bigger than the bottom number (Sequence B). You will need to carefully check every statement to find the one false statement.",
+        "B": "If we halve the terms in Sequence A, we get: 3, 5, 7, 9. Only the first term in Sequence B matches this sequence, therefore it is not true that we can halve the terms in A to get the terms in B.",
+        "C": "Looking at the terms of Sequence A, we can see that 4 is added each time to get the next number in the sequence. So \"add 4\" is the term-to-term rule for Sequence A. Double check if \"add 4\" is also the term-to-term rule for Sequence B. You will need to carefully check every statement to find the one false statement.",
+        "D": "If we subtract 3 from the terms in Sequence A, we get: 3, 7, 11, 15. We can see that these are the 4 terms given for Sequence B so this statement is true. You will need to carefully check every statement to find the one false statement."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158316,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/452a2e0b-a6c9-40be-a493-df60a331819d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have correctly noticed that the term-to-term rule for both sequences is \"add 8\". But this statement is not about the term-to-term rule. Instead, it's saying that if you add 8 to each term in Sequence A, your answers will give you each of the terms in Sequence B. Is this true? You will need to carefully check every statement to find the one true statement.",
+        "B": "I think you may have noticed that the term-to-term rule for both sequences is \"add 8\". But this statement is not about the term-to-term rule. Instead, it's saying that if you subtract 8 from each term in Sequence A, your answers will give you each of the terms in Sequence B. Is this true? You will need to carefully check every statement to find the one true statement.",
+        "C": "You will need to very carefully check every statement to find the one true statement. This statement is saying that we can subtract 11 from the terms in Sequence A to get the terms in Sequence B. If we subtract 11 from the terms in Sequence A, we get: -4 , 4 , 12 , 20. Do these numbers match the terms in Sequence B?",
+        "D": "If we add 11 to each of the terms in Sequence A, we get this sequence: 18, 26, 34, 42. This exactly matches Sequence B so this statement is true."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158580,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/821eed43-6f87-47d9-bc1c-49f0f1ac2c22.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have noticed that the term-to-term rule for both sequences is \"add 3\". But this statement is not about the term-to-term rule. Instead, it's saying that if you subtract 3 from each term in Sequence A, your answers will give you each of the terms in Sequence B. Is this true? You will need to carefully check every statement to find the one true statement.",
+        "B": "I think you may have correctly noticed that the term-to-term rule for both sequences is \"add 3\". But this statement is not about the term-to-term rule. Instead, it's saying that if you add 3 to each term in Sequence A, your answers will give you each of the terms in Sequence B. Is this true? You will need to carefully check every statement to find the one true statement.",
+        "C": "If we subtract 5 from each of the terms in Sequence A, we get this sequence: 4, 7, 10, 13. This exactly matches Sequence B so this statement is true.",
+        "D": "This statement is saying that we can add 5 to the terms in Sequence A to get the terms in Sequence B. If we add 5 to each term in Sequence A, we get: 14 , 17, 20, 23. Do these numbers match the terms in Sequence B?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158317,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/028e5c64-2648-4c9e-a7df-84a96bf7cce8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This statement is true. The terms in Sequence A, after 0, are all multiples of 6. The terms in Sequence B, after 0, are all multiples of 18. Because 18 is a multiple of 6, all multiples of 18 are also multiples of 6. You will need to carefully check every statement to find the one false statement.",
+        "B": "This statement is true. The terms in Sequence A are 0, 6, 12, 18, 24..... The terms in Sequence B are 0, 18, 36, 54, 72..... If we multiply every term in Sequence A by 3, we get: 0, 18, 36, 54, 72...... which is identical to Sequence B. You will need to carefully check every statement to find the one false statement.",
+        "C": "The terms in Sequence A, after 0, are all multiples of 6. The terms in Sequence B, after 0, are all multiples of 18. All multiples of 18 are also multiples of 6. BUT, not all multiples of 6 are multiples of 18. Therefore, it is not true that the terms in A are all in B.",
+        "D": "This statement is true. The terms in Sequence A are 0, 6, 12, 18, 24..... The terms in Sequence B are 0, 18, 36, 54, 72..... If we find a third (divide by 3) of every term in Sequence B, we get: 0, 6, 12, 18, 24...... which is identical to Sequence A. You will need to carefully check every statement to find the one false statement."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158581,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6811995c-e710-4254-8cb7-992e75d1cb77.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The terms in Sequence A, after 0, are the multiples of 5. The terms in Sequence B, after 0, are the multiples of 20. All multiples of 20 are also multiples of 5. BUT, not all multiples of 5 are multiples of 20. Therefore, it is not true that the terms in B are all in A.",
+        "B": "This statement is true. The terms in Sequence A are 0, 20, 40, 60,..... The terms in Sequence B are 0, 5, 10, 15..... If we find a quarter (divide by 4) of every term in Sequence A, we get: 0, 5, 10, 15,...... which is identical to Sequence B. You will need to carefully check every statement to find the one false statement.",
+        "C": "This statement is true. The terms in Sequence A, after 0, are all multiples of 5. The terms in Sequence B, after 0, are all multiples of 20. Because 20 is a multiple of 5, all multiples of 20 are also multiples of 5. You will need to carefully check every statement to find the one false statement.",
+        "D": "This statement is true. The terms in Sequence A are 0, 20, 40, 60,....... The terms in Sequence B are 0, 5, 10, 15,..... If we multiply every term in Sequence B by 4, we get: 0, 20, 40, 60...... which is identical to Sequence A. You will need to carefully check every statement to find the one false statement."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158318,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aa7f130b-0e24-442d-b84f-38b9496e678c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This statement is false. Try writing out the first 5 terms of each sequence, ensuring that Sequence A's first term is 5 and Sequence B's first term is 6.",
+        "B": "This statement is false. Try writing out the first 5 terms of each sequence, ensuring that Sequence A's first term is 5 and Sequence B's first term is 6.",
+        "C": "This statement is false. Try writing out the first 5 terms of each sequence, ensuring that Sequence A's first term is 5 and Sequence B's first term is 6. Look at the relationship between each term in Sequence A and its corresponding term in Sequence B, this will help you identify the true statement.",
+        "D": "A and B will have no terms in common. Each term in Sequence B will always be 1 more than the corresponding term in Sequence A."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158582,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1b989810-28f1-47e5-ab05-2e31238be310.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This statement is false. Try writing out the first 5 terms of each sequence, ensuring that Sequence A's first term is 100 and Sequence B's first term is 101. Look at the relationship between each term in Sequence A and its corresponding term in Sequence B, this will help you identify the true statement.",
+        "B": "A and B will have no terms in common. Each term in Sequence B will always be 1 more than the corresponding term in Sequence A.",
+        "C": "This statement is false. Try writing out the first 5 terms of each sequence, ensuring that Sequence A's first term is 100 and Sequence B's first term is 101.",
+        "D": "This statement is false. Try writing out the first 5 terms of each sequence, ensuring that Sequence A's first term is 100 and Sequence B's first term is 101."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158319,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a3275894-caad-42f8-9dc9-f4d91f4723ff.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Sequence B's terms are all the multiples of 5. So whenever Sequence A contains a multiple of 5, this will be the same as a term in Sequence B. So, as well as the starting term, 5, the other terms in common will be 40 (adding 7 five times to the starting value, 5), 75 (adding 7 five more times), 110 (adding 7 five more times) etc. Therefore, there are more than 2 terms in common.",
+        "B": "Sequence B's terms are all the multiples of 5. So whenever Sequence A contains a multiple of 5, this will be the same as a term in Sequence B. I think you've noticed that 5 and 40 (adding 7 five times to the starting value, 5) are 2 terms that the sequences have in common. Can you find anymore, perhaps by adding 7 five more times? And then again, adding 7 five more times?",
+        "C": "Sequence B's terms are all the multiples of 5. So whenever Sequence A contains a multiple of 5, this will be the same as a term in Sequence B. I think you've noticed that the starting terms are the same for both sequences. Can you find anymore multiples of 5 in Sequence A, perhaps by adding 7 five more times? And then again, adding 7 five more times?",
+        "D": "Sequence B's terms are all the multiples of 5. So whenever Sequence A contains a multiple of 5, this will be the same as a term in Sequence B. Notice that the starting terms are the same for both sequences, so there is at least one term in common. Can you find anymore multiples of 5 in Sequence A, perhaps by adding 7 five more times? And then again, adding 7 five more times?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158583,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9d899a15-cff5-4d16-a1c0-01127e8d75b5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Sequence A's terms are all the multiples of 10. So whenever Sequence B contains a multiple of 10, this will be the same as a term in Sequence A. Notice that the starting terms are the same for both sequences, so there is at least one term in common. Can you find any more multiples of 10 in Sequence B, perhaps by adding 3 ten more times?",
+        "B": "Sequence A's terms are all the multiples of 10. So whenever Sequence B contains a multiple of 10, this will be the same as a term in Sequence A. I think you've noticed that the starting terms are the same for both sequences. Can you find any more multiples of 10 in Sequence B?",
+        "C": "Sequence A's terms are all the multiples of 10. So whenever Sequence B contains a multiple of 10, this will be the same as a term in Sequence A. I think you've noticed that 10 and 40 are 2 terms that the sequences have in common. Can you find any more, perhaps by adding 3 ten more times?",
+        "D": "Sequence A's terms are all the multiples of 10. So whenever Sequence B contains a multiple of 10, this will be the same as a term in Sequence A. So, as well as the starting term, 10, the other terms in common will be 40 (adding 3 ten times to the starting value, 5), 70 (adding 3 ten more times), etc. Therefore, there are more than 2 terms in common."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

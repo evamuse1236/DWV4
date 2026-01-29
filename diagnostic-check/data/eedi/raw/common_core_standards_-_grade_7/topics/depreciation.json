@@ -1,0 +1,165 @@
+{
+  "shortcode": "vsp",
+  "name": "Depreciation",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 35,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Decrease a number by a given percentage mentally where the percent is a multiple of 10",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify percentage decrease multipliers where the percent is an integer",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given a final total, work out what the percentage decrease has been with a calculator ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Work out the percentage rate in compound percentage increase problems ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Work out the percentage rate in compound percentage decrease problems ",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 143359,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6375a006-2cae-472d-a4c5-d60d9d633c6b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have increased by 20%. Depreciates means the price decreases :)",
+        "B": "10% of 4000 = 4000/10 = 400 therefore 20% = 2 x 400 = 800. Depreciation means a decrease, so we subtract 800 from the original price: 4000 - 800 = £3200",
+        "C": "I think you have tried to find 20% by dividing by 20. Try calculating 10% first, and then doubling to get 20% before subtracting from the original price :)",
+        "D": "Almost! You have calculated 20% of £4000, but the question says that the bike \"depreciates\" - this means it decreases in price. What would be the new price after reduction?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 143374,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/56a71587-cb49-4cce-aa73-974bd0b5eb7d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have used 30% = £300, however that isn't correct. Try finding 10% first, then you can multiply by 3 before subtracting :)",
+        "B": "Almost! You have calculated 30% of £5000, but the question says that it \"depreciates\", which means it decreases in price. What would be the new price after reduction?",
+        "C": "I think you have increased by 30%. Depreciates means the price decreases :)",
+        "D": "10% of 5000 = 5000/10 = 500. Therefore 30% = 3 x 500 = 1500. Depreciate means the price decreases, so we need to subtract 1500 from the original price: 5000 - 1500 = £3500"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 143360,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ae097b34-990a-42d0-9bc0-4596557940dc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The actual depreciation of the car is 3750. It has depreciated by 3750 out of a possible 12500. Is we calculate 3750/ 12500 and multiply by 100, to change to a percentage, we get 30. Therefore, the % depreciation is 30%.",
+        "B": "Nearly! I think you have divided 3750 by 8750. Double check the wording of the question. What was the value of the car before anything changed?",
+        "C": "Not quite, the actual depreciation of the car is 3750. It has depreciated by 3750 out of a possible 12500. Try turning this value into a percentage",
+        "D": "Not quite, I think you have calculated what percentage 8750 is of 12500. Try calculating how much the value of the car has depreciated by, firstly. How much has it depreciated by? Out of what possible amount?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 143375,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/be9a0ed8-e98a-4da6-a9c6-641d0b6856b1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, the actual depreciation of the car is 2175. It has depreciated by 2175 out of a possible 14500. Try turning this value into a percentage",
+        "B": "Not quite, I think you have calculated what percentage 12325 is of 14500. Try calculating how much the value of the car has depreciated by, first. Out of what possible amount?",
+        "C": "The actual depreciation of the car is 2175. It has depreciated by 2175 out of a possible 14500. Is we calculate 2175/ 14500 and multiply by 100, to change to a percentage, we get 15. Therefore, the % depreciation is 15%.",
+        "D": "Nearly! I think you have divided 2175 by 12325. Double check the wording of the question. What was the value of the car before anything changed?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 143361,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6e106844-b731-4ee9-bdfe-b9356867d390.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "100% - 15% = 85% which is 85/100 so 0.85. Multiplier means you would multiplier by it therefore the answer would be x0.85",
+        "B": "I think you have increased rather than decreased by 15%, and confused a multiplier with a divisor. Check the question again and reconsider your answer.",
+        "C": "Multiplying by 0.15 would give us 15%, however we would like to calculate a 15% reduction. Consider subtracting 15% from 100% to find what you are left with. What would that be as a multiplier?",
+        "D": "I think you have calculated for a 15% increase rather than decrease. How would we reduce 100% by 15%?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 143376,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/91dc79fb-008b-4340-9b39-dfb90d18c032.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Multiplying by 0.28 would give us 28%, however we would like to calculate a 28% reduction. Consider subtracting 28% from 100% to find what you are left with. What would that be as a multiplier?",
+        "B": "I think you have calculated for a 28% increase rather than decrease .How would we reduce 100% by 28%?",
+        "C": "100% - 28% = 72%. 72% = 72/100 = 0.72. So as a multiplier a 28% decreased would be x 0.72",
+        "D": "I think you have increased rather than decreased by 28%, and confused a multiplier with a divisor. Check the question again and reconsider your answer."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 143362,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/47b234be-1f15-4296-aa07-f0a82e979ba5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We would get back to the original value if we added on 60% of the original value but we need to find out what percentage of the new value we have to add back on. Think about what percentage you have if something has depreciated by 60%. How much would you have to add back on to this percentage to get back to 100% as this is what percentage the original value is? Now think about what the added back on value is as a percentage of the depreciated percentage to get the answer.",
+        "B": "If something depreciates by 60%, 40% would be the percentage we are left with but if we add 40% of 40% back on we would only get 56%. What percentage of 40% do we need to add back on to get back to 100%?",
+        "C": "If an investment depreciates by 60% there is now only 40% remaining. We now need to think about what percentage to increase 40 by to get back to 100%. We need to add on 60% to get back to 100%. 60% of 40% is 150%, as 150% of 40 = 60. This means we need to increase the value by 150% to get it back to its original value.",
+        "D": "We do not need to know the value of the investment, although this is a great method for working this question out! Use a really easy number like £100 to see how much we need to add back on and what this is as a percentage of the depreciated value."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 143377,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9bb4984c-267b-4b80-9cf9-2a71b79494ec.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If an investment depreciates by 20% there is now only 80% remaining. We now need to think about what percentage to increase 80 by to get back to 100%, as this would be the original value. We need to add on 20% to get back to 100% which is a quarter of 80% as 80/4 = 20. One quarter as a percentage is 25% so to get back to the original value we need to add on 25% of the 80% remaining.",
+        "B": "We would get back to the original value if we added on 20% of the original value but we need to find out what percentage of the new value we have to add back on. Think about what percentage you have if something has depreciated by 20%. How much would you have to add back on to this percentage to get back to 100% as this is what percentage the original value is? Now think about what the added back on value is as a percentage of the depreciated percentage to get the answer.",
+        "C": "If something depreciates by 20%, 80% would be the percentage we are left with but if we add 80% of 80% back on we would get 144% as we are adding 80% of the 80% we have left. What percentage of 80% do we need to add back on to get back to 100% - the original value?",
+        "D": "We do not need to know the value of the investment, although this is a great method for working this question out! Use a really easy number like £100 to see how much we need to add back on and what this is as a percentage of the depreciated value."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 143363,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ed80dee5-d089-4e2c-8ad0-021fe2461d0d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We are subtracting 60% but to answer this question, we need to find out what this 60% is as a percentage of the 160% we now have.",
+        "B": "If something appreciates by 60%, we would now have 160%. If we subtracted 40% of 160%, we would only get 96% as 10% of 160% is 16 and we are subtracting 4 lots of this, 16 x 4 = 64 so 160 - 64 = 96. What percentage of 160% do we need to subtract to get back to 100% - the original value?",
+        "C": "If an investment appreciates by 60% there is now 160%. We need to think about what percentage to decrease 160 by to get back to 100%, as this would be the original value. We can do 60/160 and multiply by 100 which will give us 37.5 so we need to decrease the 160% by 37.5% to get it back to 100% which is the original value.",
+        "D": "We do not need to know the value of the investment although, this is a great method for working this question out! Use a really easy number like £100 to see how much we need to subtract and what this is as a percentage of the appreciated value."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 143378,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/144ab722-b160-4129-84dc-71c5f7728b44.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We are subtracting 20% but to answer this question, we need to find out what this 20% is as a percentage of the 120% we now have.",
+        "B": "If an investment appreciates by 20% there is now 120%. We need to think about what percentage to decrease 120 by to get back to 100%, as this would be the original value. We can do 20/120 and multiply by 100 which will give us 16.666666.. so we need to decrease the 120% by 16 2/3% to get it back to 100% which is the original value.",
+        "C": "If something appreciates by 20%, we would now have 120%. If we subtracted 80% of 120%, we would get 24% not the 100% we are trying to get as 10% of 120% is 12 and we are subtracting 8 lots of this. What percentage of 120% do we need to subtract to get back to 100% - the original value?",
+        "D": "We do not need to know the value of the investment although, this is a great method for working this question out! Use a really easy number like £100 to see how much we need to subtract and what this is as a percentage of the appreciated value."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

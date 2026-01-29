@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnostic Check</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+:root {
+    --bg: #111113;
+    --card: #1C1C1F;
+    --text: #E8E6E3;
+    --text-soft: #A09B95;
+    --text-muted: #6B6660;
+    --border: #2A2A2E;
+    --primary: #818CF8;
+    --primary-hover: #6366F1;
+    --primary-light: #1E1B4B;
+    --correct: #2DD4BF;
+    --radius: 16px;
+    --radius-sm: 10px;
+    --shadow: 0 1px 3px rgba(0,0,0,0.3), 0 4px 12px rgba(0,0,0,0.2);
+    --shadow-lift: 0 2px 8px rgba(0,0,0,0.4), 0 8px 24px rgba(0,0,0,0.3);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 1.5rem;
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.page-header h1 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 0.35rem;
+}
+.page-header p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+/* Module card */
+.module-group {
+    margin-bottom: 1.5rem;
+}
+.module-group-header {
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    padding: 0.5rem 0;
+    border-bottom: 2px solid var(--border);
+    margin-bottom: 0.75rem;
+}
+
+.module-card {
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: block;
+    color: inherit;
+    border: 2px solid transparent;
+}
+.module-card:hover {
+    border-color: var(--primary);
+    box-shadow: var(--shadow-lift);
+    transform: translateY(-2px);
+}
+
+.module-card .module-id {
+    font-size: 0.78rem;
+    font-weight: 800;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.25rem;
+}
+.module-card .module-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+}
+.module-card .module-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.module-card .meta-item {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.module-card .meta-item .count {
+    color: var(--primary);
+    font-weight: 800;
+}
+.module-card .ka-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.5rem;
+}
+.ka-tag {
+    display: inline-block;
+    background: #1E293B;
+    color: #60A5FA;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+.std-tag {
+    display: inline-block;
+    background: #27272A;
+    color: #A1A1AA;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+}
+
+/* Section tabs */
+.section-tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 0.35rem;
+}
+.section-tab {
+    flex: 1;
+    text-align: center;
+    padding: 0.6rem 1rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: var(--text-muted);
+    background: transparent;
+    border: none;
+    font-family: inherit;
+}
+.section-tab:hover {
+    color: var(--text-soft);
+}
+.section-tab.active {
+    background: var(--primary);
+    color: #fff;
+}
+.section-label {
+    display: block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    margin-top: 0.1rem;
+    letter-spacing: 0.03em;
+}
+.section-tab.active .section-label {
+    color: rgba(255,255,255,0.7);
+}
+
+/* Best score badge */
+.best-score {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    background: #042F2E;
+    color: var(--correct);
+    font-size: 0.78rem;
+    font-weight: 800;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+.best-score.none { display: none; }
+
+/* Back link */
+.back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0.4rem 0;
+    margin-bottom: 1.25rem;
+    transition: color 0.2s;
+}
+.back:hover { color: var(--text); }
+.back svg { width: 16px; height: 16px; }
+
+@media (max-width: 600px) {
+    body { padding: 1rem; }
+    .page-header h1 { font-size: 1.3rem; }
+    .module-card { padding: 1rem 1.15rem; }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="Curriculum_Map_Links.html" class="back">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+            Curriculum Map
+        </a>
+
+        <div class="page-header">
+            <h1>Diagnostic Check</h1>
+            <p>Pick a topic. Answer questions. See what you know.</p>
+        </div>
+
+        <div class="section-tabs" id="sectionTabs">
+            <button class="section-tab active" data-section="dw">
+                DW
+                <span class="section-label">DeepWork</span>
+            </button>
+            <button class="section-tab" data-section="pyp">
+                PYP
+                <span class="section-label">Primary Years</span>
+            </button>
+        </div>
+
+        <div id="moduleList"></div>
+    </div>
+
+    <script src="data.js"></script>
+    <script>
+    (function() {
+        if (typeof DIAGNOSTIC_DATA === 'undefined') return;
+
+        var container = document.getElementById('moduleList');
+        var tabs = document.querySelectorAll('.section-tab');
+
+        function renderSection(section) {
+            container.innerHTML = '';
+            var currentGroup = '';
+
+            for (var i = 0; i < DIAGNOSTIC_DATA.length; i++) {
+                var mod = DIAGNOSTIC_DATA[i];
+
+                // Filter by section
+                var modSection = mod.section || 'dw';
+                if (modSection !== section) continue;
+
+                // Group header
+                if (mod.module_name !== currentGroup) {
+                    currentGroup = mod.module_name;
+                    var header = document.createElement('div');
+                    header.className = 'module-group-header';
+                    header.textContent = currentGroup;
+                    container.appendChild(header);
+                }
+
+                var card = document.createElement('a');
+                card.className = 'module-card';
+                card.href = 'quiz.html?mod=' + encodeURIComponent(mod.id);
+
+                // Build KA link tags
+                var kaTags = '';
+                for (var k = 0; k < mod.ka_links.length; k++) {
+                    kaTags += '<span class="ka-tag">' + mod.ka_links[k].label + '</span>';
+                }
+
+                // Build standard tags
+                var stdTags = '';
+                for (var s = 0; s < mod.standards.length; s++) {
+                    stdTags += '<span class="std-tag">' + mod.standards[s] + '</span>';
+                }
+
+                // Check for saved best score
+                var bestKey = 'check_best_' + mod.id;
+                var best = localStorage.getItem(bestKey);
+                var bestHtml = '';
+                if (best !== null) {
+                    bestHtml = '<span class="best-score">Best: ' + best + '</span>';
+                }
+
+                var quizLen = Math.max(1, Math.round(mod.questions.length / 3));
+
+                card.innerHTML =
+                    '<div class="module-id">Module ' + mod.id + '</div>' +
+                    '<div class="module-name">' + mod.name + '</div>' +
+                    '<div class="module-meta">' +
+                        '<span class="meta-item"><span class="count">' + quizLen + '</span> per quiz</span>' +
+                        '<span class="meta-item"><span class="count">' + mod.questions.length + '</span> total</span>' +
+                        bestHtml +
+                        stdTags +
+                    '</div>' +
+                    '<div class="ka-tags">' + kaTags + '</div>';
+
+                container.appendChild(card);
+            }
+        }
+
+        // Tab click handling
+        for (var t = 0; t < tabs.length; t++) {
+            tabs[t].addEventListener('click', function() {
+                for (var j = 0; j < tabs.length; j++) {
+                    tabs[j].classList.remove('active');
+                }
+                this.classList.add('active');
+                var section = this.getAttribute('data-section');
+                renderSection(section);
+                // Remember selected section
+                try { localStorage.setItem('check_section', section); } catch(e) {}
+            });
+        }
+
+        // Restore last selected section, default to 'dw'
+        var savedSection = 'dw';
+        try { savedSection = localStorage.getItem('check_section') || 'dw'; } catch(e) {}
+        for (var t = 0; t < tabs.length; t++) {
+            tabs[t].classList.toggle('active', tabs[t].getAttribute('data-section') === savedSection);
+        }
+        renderSection(savedSection);
+    })();
+    </script>
+</body>
+</html>

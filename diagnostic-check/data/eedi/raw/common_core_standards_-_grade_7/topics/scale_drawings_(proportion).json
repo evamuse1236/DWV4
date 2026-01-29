@@ -1,0 +1,165 @@
+{
+  "shortcode": "vv7",
+  "name": "Scale drawings (proportion)",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 174,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Given a scale represented by a ratio in the same units, calculate the size of something in real life",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given a scale represented by a ratio in different units, calculate the size of something in real life",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given information expressed in different units, work out the scale",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given information about the size of something on a map/scale diagram, estimate the scale",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Convert between m and cm",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 78300,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f098820a-9a52-44bb-9421-d12edbe9f455.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have performed the calculation based on 10 cm in a metre, which is not the case. How many cm are there in 1m?",
+        "B": "I think you have converted cm to metre here, whereas we want to convert metres to cm.",
+        "C": "There are 100 cm in a metre, and we have 30 of them, so we need to calculate 30 X 100 = 3000cm.",
+        "D": "I think you have performed the calculation based on 1000 cm in a metre, which is not the case. How many cm are there in 1m?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78594,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/42b5270f-5b4f-4bc1-83a8-a5a75fadc963.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have performed the calculation based on 1000 cm in a metre, which is not the case. How many cm are there in 1m?",
+        "B": "I think you have performed the calculation based on 10 cm in a metre, which is not the case. How many cm are there in 1m?",
+        "C": "I think you have converted cm to metre here, whereas we want to convert metres to cm.",
+        "D": "There are 100 cm in a metre, and we have 20 of them, so we need to calculate 20 X 100 = 2000cm."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 78301,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c309ab03-e1e1-4f14-88c8-971607f8d812.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have just used the numbers given in the ratio and switched them around, however we want to know what that ratio means for the distance in cm in real life, and then convert that distance into metres.",
+        "B": "1:4000 means that 1 cm on the map represents 4000 cm in real life, which is equivalent to 40m as there are 100cm in a metre.",
+        "C": "I think you have just used the numbers given in the ratio, however we want to know what that ratio means for the distance in cm in real life, and then convert that distance into metres",
+        "D": "I think you have performed the calculation based on 1000 cm in a metre, which is not the case. How many cm are there in 1m?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78595,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5e41fff8-ab2c-4b04-aaba-73bb6a8ee69f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have just used the numbers given in the ratio and switched them around, however we want to know what that ratio means for the distance in cm in real life, and then convert that distance into metres",
+        "B": "I think you have just used the numbers given in the ratio, however we want to know what that ratio means for the distance in cm in real life, and then convert that distance into metres",
+        "C": "1:5000 means that 1 cm on the map represents 5000 cm in real life, which is equivalent to 50m as there are 100cm in a metre.",
+        "D": "I think you have performed the calculation based on 1000 cm in a metre, which is not the case. How many cm are there in 1m?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 78302,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/364027af-a568-4601-b68d-00dd67fb749e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added the numbers given in the question together. If we know that 1cm on the map is equivalent to 250m in real life, how many m would 40cm represent? Can you convert this to km?",
+        "B": "I think you have performed the correct calculation to get the answer in metres, but didn't look at the units when choosing the correct option. How do we convert metres to km?",
+        "C": "If 1cm = 250m, then 40cm will be 10,000 m. 40 X 250 = 10,000. This is equivalent to 10 km as there are 1,000m in 1km.",
+        "D": "I think you have performed the calculation based on 100m in a km, which is not the case. How many metres are there in 1km?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78596,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2ba3aa83-2942-49a5-b71b-e828a1f224a4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If 1cm = 250m, then 30cm will be 7,500m. 30 x 250 = 7,500. This is equivalent to 7.5 km as there are 1,000m in 1km.",
+        "B": "I think you have performed the calculation based on 100m in a km, which is not the case. How many metres are there in 1km?",
+        "C": "I think you have added the numbers given in the question together. If we know what 1cm on the map is equivalent to in real life, how do we scale up for a distance of 30cm on the map? Can you convert this to km?",
+        "D": "I think you have performed the correct calculation to get the answer in metres, but didn't look at the units when choosing the correct option. How do we convert metres to km?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 78303,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c9d63270-3e1b-4fee-ba6a-3fd71de595eb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have performed the calculation based on 10 cm in a metre, which is not the case. How many cm are there in 1m?",
+        "B": "We can write the ratio as 5:30,000, as 300m is equivalent to 30,000cm (as there are 100cm in a metre). This can be simplified by dividing both parts of the ratio by five to give 1:6000.",
+        "C": "I think you have performed the calculation to get the answer in metres, and then switched it around. We are looking for our simplified ratio to be in cm here. How do we convert metres to cm? And remember, map scales are always written as 1: ?.",
+        "D": "You have simplified the ratio by dividing through by 5, BUT this gives you a ratio of 1cm : 60m NOT 1 : 60. Remember, we cannot remove the units in a ratio until both parts are expressed in the same units. How do we convert metres to cm?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78597,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/63c27e94-75c1-4ed6-a68f-f22a76d62c6c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have performed the calculation to get the answer in metres, and then switched it around. We are looking for our simplified ratio to be in cm here. How do we convert metres to cm? And remember, map scales are always written as 1 : ?.",
+        "B": "You have simplified the ratio by dividing through by 5, BUT this gives you a ratio of 1cm : 40m NOT 1 : 40. Remember, we cannot remove the units in a ratio until both parts are expressed in the same units. How do we convert metres to cm?",
+        "C": "There are 100 cm in a metre, so 5cm on the map represents 200 × 100 = 20000 cm in actual distance. We can then simplify the ratio 5 : 20000 by dividing both sides by 5 to get 1 : 4000.",
+        "D": "I think you have performed the calculation based on 10 cm in a metre, which is not the case. How many cm are there in 1m?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 78304,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d5e417e7-ee7d-461d-84dc-b0769914df9a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! The scale 1:10 means for every 1 cm on the drawing the object is 10cm tall in real life. This would make the Eiffel tower 30cm tall, or about the same height as a ruler you might use at school. This isn't a sensible answer, so think about which scale might give us a more realistic answer.",
+        "B": "Not quite! I think you have ignored the units here. When reading map scales, 1:100 means for every 1 cm on the drawing the object is 100cm (or 1m) tall in real life. This would make the Eiffel tower 3m tall, or just a bit taller than the room you are currently sitting in. This isn't a sensible answer, so think about which scale might give us a more realistic answer.",
+        "C": "Not quite! The scale 1:1000 means for every 1 cm on the drawing the object is 1000cm (or 10m) tall in real life. This would make the Eiffel tower 30m tall. This is pretty tall, however the Eiffel tower is the tallest building in the enitre city of Paris, and so is much taller than this. Think about which scale might give us a more realistic estimate.",
+        "D": "The scale 1:10,000 means for every 1 cm on the drawing the object is 10,000cm (or 100m) tall in real life.This ratio means that the Eiffel Tower is approximately 300 m tall, which is the most realistic answer."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78598,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ab36dc66-1493-42a4-a314-a0c304f72262.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The scale 1:10 means for every 1 cm on the drawing the object is 10cm long in real life. This would make the bus 120cm (or 1.2m) long. This isn't a sensible answer, so think about which scale might give us a more realistic answer.",
+        "B": "1:100 means for every 1 cm on the drawing the object is 100cm (or 1m) in real life. This would make the bus 12m long, which is the most realistic answer here.",
+        "C": "The scale 1:1000 means for every 1 cm on the drawing the object is 1000cm (or 10m) long in real life. This would make the bus 120m long, or about the length of a football pitch. This is too long to be a sensible answer. Think about which scale might give us a more realistic estimate.",
+        "D": "The scale 1:10000 means for every 1 cm on the drawing the object is 10,000cm (or 100m) long in real life. This would make the bus 1200m or 1.2km long! This is too long to be a sensible answer. Think about which scale might give us a more realistic estimate."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,141 @@
+{
+  "shortcode": "vu7",
+  "name": "Use known algebraic facts to derive other facts",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 134,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Given an equation, form or identify related equations",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 146323,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6d03b539-90ac-4130-ab18-7254bc27a7e9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom has multiplied each term by 3, so Tom is correct. Katie has only multiplied two out of three terms by 2, so Katie is not correct.",
+        "B": "Katie has not multiplied each term by the same amount, so this would not be a related linear equation. Reconsider if Tom has done the same, or if his is related.",
+        "C": "To be a related linear equation, each term must be multiplied by the same amount, or be a rearrangement. Have either Tom or Katie done this?",
+        "D": "At least one of them is correct. To be a related linear equation, each term must be multiplied by the same amount, or be a rearrangement. Have either Tom or Katie done this?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146343,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fad8acc7-9e9e-460d-9b1c-160b506a4b17.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom has multiplied each term by 2, so Tom is correct. Katie has only multiplied two out of three terms by 2, so Katie is not correct.",
+        "B": "Katie has not multiplied each term by the same amount, so this would not be a related linear equation. Reconsider if Tom has done the same, or if his is related.",
+        "C": "To be a related linear equation, each term must be multiplied by the same amount, or be a rearrangement. Have either Tom or Katie done this?",
+        "D": "At least one of them is correct. To be a related linear equation, each term must be multiplied by the same amount, or be a rearrangement. Have either Tom or Katie done this?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146324,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3937ad18-358e-4c9f-bb3d-37857a9c0660.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom has subtracted two from the right and added two to the left, this is not a rearrangement of the original equation. To be a related linear equation, each term must be multiplied by the same amount, or be a rearrangement. Have either Tom or Katie done this?",
+        "B": "Katie has divided both sides by 2, keeping it as a related linear equation. Tom has added 2 to the left and subtracted 2 from the right so this is not a related equation.",
+        "C": "To be a related linear equation, each term must be multiplied by the same amount, or be a rearrangement. Have either Tom or Katie done this?",
+        "D": "At least one of them is correct. To be a related linear equation, each term must be multiplied by the same amount, or be a rearrangement. Have either Tom or Katie done this?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146344,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2a4de4d0-d88f-4988-a319-2fc54130de33.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom has subtracted 14 from both sides and then divided by 2, so would be correct. Whereas Katie has divided one side by 4 and the other side by 2, so would not be correct.",
+        "B": "Katie has divided the lefthand side by 4, and the righthand side by 2, so this would not be a related linear equation. To be a related linear equation, each term must be multiplied by the same amount, or be a rearrangement. Has Tom managed to do this where Katie has not?",
+        "C": "To be a related linear equation, each term must be multiplied by the same amount, or be a rearrangement. Have either Tom or Katie done this?",
+        "D": "At least one of them is correct. To be a related linear equation, each term must be multiplied by the same amount, or be a rearrangement. Have either Tom or Katie done this?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146325,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/693878b8-cc16-477c-9a56-93b700503c1b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom has multiplied 2 out of the 3 terms by -1. To be a related linear equation, each term must be multiplied by the same amount, or be a rearrangement. Has Katie done this?",
+        "B": "Katie has multiplied each term by -1, making it a related linear equation.",
+        "C": "To be a related linear equation, each term must be multiplied by the same amount, or be a rearrangement. Have either Tom or Katie done this?",
+        "D": "At least one of them is correct. To be a related linear equation, each term must be multiplied by the same amount, or be a rearrangement. Have either Tom or Katie done this?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146345,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/86c7c636-4bab-4c62-a319-3927e2adac83.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom has multiplied all terms by -1, so his would be a related linear equation. Katie has tried to subtract 4 from both sides, but this should have given her q-4 = -p",
+        "B": "Katie has subtracted 4 from both sides, but use the wrong sign with p. To be a related linear equation, each term must be multiplied by the same amount, or be a rearrangement. Has Tom managed to do this where Katie has not?",
+        "C": "To be a related linear equation, each term must be multiplied by the same amount, or be a rearrangement. Have either Tom or Katie done this?",
+        "D": "At least one of them is correct. To be a related linear equation, each term must be multiplied by the same amount, or be a rearrangement. Have either Tom or Katie done this?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146326,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a8b852c0-c1b0-4645-a889-911eaae821de.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom has multiplied only 2 out of 3 of the terms by 2. To be a related linear equation, each term must be multiplied by the same amount, or be a rearrangement. Has Katie done this?",
+        "B": "Katie has added 3 to both sides, so she is correct. Tom has only multiplied 2 out of the 3 terms, so he is incorrect.",
+        "C": "To be a related linear equation, each term must be multiplied by the same amount, or be a rearrangement. Have either Tom or Katie done this?",
+        "D": "At least one of them is correct. To be a related linear equation, each term must be multiplied by the same amount, or be a rearrangement. Have either Tom or Katie done this?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146346,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3cd35ff2-6e76-49ab-a6f8-daf1e336154a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To be a related equation, each term must be multiplied by the same amount, or be a rearrangement. Have either Tom or Katie done this?",
+        "B": "To be a related equation, each term must be multiplied by the same amount, or be a rearrangement. Have either Tom or Katie done this?",
+        "C": "Tom has multiplied all terms by m, so it is a related equation. Katie has multiplied all the terms by 2, and then added 6 to both sides so this is also a related equation.",
+        "D": "At least one of them is correct. To be a related linear equation, each term must be multiplied by the same amount, or be a rearrangement. Have either Tom or Katie done this?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146327,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/04ec1c89-7e76-4e6f-9d7e-77e697eff243.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Rearranging to make related linear equations may be more than one step. Reconsider your answer.",
+        "B": "Rearranging to make related linear equations may be more than one step, and include dividing as well as multiplying. Reconsider your answer.",
+        "C": "Tom has multiplied both sides by 3. Katie has multiplied both sides by 3 and then divided both sides by y. They are both related equations and they are both correct.",
+        "D": "At least one of them is correct. To be a related equation, each term must be multiplied by the same amount, or be a rearrangement. Have either Tom or Katie done this?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146347,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b53df0ec-04e7-410a-81b0-5cc93cf276ff.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Rearranging to make related linear equations may be more than one step. Reconsider your answer.",
+        "B": "Rearranging to make related linear equations may be more than one step, and include dividing as well as multiplying. Reconsider your answer.",
+        "C": "Tom has multiplied both sides by 2. Katie has multiplied both sides by 4 and then divided both sides by y. They are both related equations and they are both correct.",
+        "D": "At least one of them is correct. To be a related linear equation, each term must be multiplied by the same amount, or be a rearrangement. Have either Tom or Katie done this?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

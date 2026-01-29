@@ -1,0 +1,147 @@
+{
+  "shortcode": "fb8v",
+  "name": "Divisions and their equivalent multiplications",
+  "collectionId": 33,
+  "level": 1,
+  "sequence": 8,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Determine a quotient using the relationship between multiplication and division",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Represent a division problem as an equivalent multiplication problem with an unknown factor",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 173918,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5831ecc2-314d-4004-bec6-ae081f2b7cfd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This multiplication does equal 12, but it doesn't use the number 4 from the division question. The related multiplication must use the same numbers.",
+        "B": "This multiplication uses the number 4 from the division, but the answer is 20, not 12. The related multiplication must equal the first number in the division.",
+        "C": "This multiplication uses the correct answer to the division (3), but it doesn't use the numbers from the original question. A related multiplication must use the numbers 12 and 4.",
+        "D": "Division and multiplication are inverse operations. 12 ÷ 4 = ? is the same as asking ? x 4 = 12. We know that 3 x 4 = 12, which is the same as 4 x 3 = 12."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 173978,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/becb823c-edd0-4400-ba3f-ef8d7a0638c4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have correctly used the number 6 from the division. However, a related multiplication must also use the number 18. Check which of the multiplications has an answer of 18.",
+        "B": "This multiplication does equal 18, which is a good spot! However, to be the calculation that helps find 18 ÷ 6, it must also include the number 6.",
+        "C": "Division and multiplication are inverse operations. This means that if 18 ÷ 6 = 3, then it must be true that 6 x 3 = 18. This multiplication uses the same three numbers.",
+        "D": "You are right that the answer to 18 ÷ 6 is 3. A related multiplication fact must use all three numbers from the division fact family: 18, 6, and 3."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173919,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dfb9a636-7094-4dad-8e4d-dc568672ce1c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The opposite operation of division is multiplication, not subtraction. Think about how you can use multiplication and the numbers 24 and 3 to find the star.",
+        "B": "The opposite operation of division is multiplication, not addition. Think about how you can use multiplication and the numbers 24 and 3 to find the star.",
+        "C": "This number sentence asks a different question: 'What number divided by 3 gives 24?'. We are looking for the inverse operation to help us solve the original problem.",
+        "D": "Division and multiplication are inverse operations, which means they 'undo' each other. The division 24 ÷ 3 = ★ can be rearranged into the multiplication ★ x 3 = 24."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 173979,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/70815d8f-8030-41f2-aac4-c806554f5161.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The opposite operation of division is multiplication, not subtraction. Think about how you can use multiplication and the numbers 28 and 4 to find ★.",
+        "B": "Multiplication is the inverse (opposite) of division. So, to find the answer to 28 ÷ 4, you can ask yourself: what number (★) multiplied by 4 equals 28? This gives the calculation ★ x 4 = 28.",
+        "C": "This number sentence asks a different question: 'What number divided by 4 gives 28?'. We are looking for the inverse operation to help us solve the original problem.",
+        "D": "The opposite operation of division is multiplication, not addition. Think about how you can use multiplication and the numbers 28 and 4 to find ★."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173920,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bf96af74-b828-4add-b8b6-9a2a32786e19.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Because multiplication and division are inverse operations, we can rearrange the division problem 30 ÷ ★ = 6 into a multiplication problem. This gives us 6 x ★ = 30.",
+        "B": "The opposite operation of division is multiplication, not addition. Think about how you can use multiplication and the numbers 30 and 6 to find ★.",
+        "C": "This number sentence asks a different question: 'What number divided by 6 gives 30?'. To solve the original problem, you need to use the inverse operation.",
+        "D": "The inverse of division is not subtraction. What operation is in the same fact family as division?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 173980,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ec4547f1-ce00-458f-85ea-5666524e66a0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember that multiplication is the inverse (opposite) of division. You can use multiplication to check a division calculation.",
+        "B": "Division and multiplication are inverse operations. If 40 divided by a number (★) is 8, you can rearrange this using multiplication: 8 multiplied by that same number (★) must equal 40.",
+        "C": "The opposite operation for division is multiplication, not addition. Try rewriting the division problem as a multiplication.",
+        "D": "The opposite operation for division is multiplication, not subtraction. Try rewriting the division problem as a multiplication."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173921,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4c57d663-8d35-462f-9548-1048ff004c92.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you've nearly got the right answer. Double-check your 4 times table. What is 4 x 9?",
+        "B": "It seems you might have multiplied 32 by 4. The question asks you to solve 4 x ★ = 32, which is the same as 32 ÷ 4.",
+        "C": "We need to find the number that, when multiplied by 4, gives 32. Using your knowledge of the 4 times table, 4 x 8 = 32. So, ★ = 8.",
+        "D": "You are very close! Check your 4 times table again. What is 4 x 7?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 173981,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9e4410cd-94bf-4674-8743-9ec2632a996f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You need to find the number that multiplies by 6 to make 48. Using your times tables, you know that 6 x 8 = 48. So, ★ = 8.",
+        "B": "You are close! Check your 6 times table again. What is 6 x 9?",
+        "C": "You are close! Check your 6 times table again. What is 6 x 7?",
+        "D": "It looks like you have multiplied 48 by 6. The question is asking what you need to multiply 6 by to get 48."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 173922,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1cb05b89-cf23-48ed-a1a7-9c44cc367054.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You're close! Check your 6 times table again. What is 6 x 6?",
+        "B": "You're close! Check your 6 times table again. What is 6 x 8?",
+        "C": "It seems you may have multiplied 42 by 6. The symbol ÷ means divide. Remember that division is the inverse of multiplication.",
+        "D": "The question asks you to solve 42 ÷ 6. Using your knowledge of the 6 times table, you know that 6 x 7 = 42. So, 42 ÷ 6 = 7."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 173982,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4d5c3af7-6207-4add-8c86-0bc7e2a3c24d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You're close! Check your 9 times table. What is 9 x 7? You are looking for the number that gives the answer 54.",
+        "B": "You're close! Check your 9 times table. What is 9 x 5? You are looking for the number that gives the answer 54.",
+        "C": "Harper is using the inverse relationship correctly. To solve 54 ÷ 9, you need to think '9 times what equals 54?'. Using your 9 times table, you know that 9 x 6 = 54. So the answer is 6.",
+        "D": "It looks like you have multiplied 54 by 9. Harper's thought shows that you need to find the missing number in a multiplication, which is the same as doing a division."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

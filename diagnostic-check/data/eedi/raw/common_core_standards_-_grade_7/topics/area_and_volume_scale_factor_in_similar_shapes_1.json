@@ -1,0 +1,159 @@
+{
+  "shortcode": "vwc",
+  "name": "Area and volume scale factor in similar shapes 1",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 179,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Find the area scale factor of similar shapes given the length scale factor",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find the volume scale factor of similar shapes given the length scale factor",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Describe an enlargement, with no centre of enlargement given, by a positive scale factor bigger than 1",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find missing volumes given the length scale factor",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 78318,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c24f7d6b-b9d0-424e-9bd7-983cae350267.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly! I think you have calculated the length scale factor, of 2.5, then divided the given volume by this. Remember we need to use the volume scale factor to do these calculations.",
+        "B": "First we need to work out the length scale factor, which is 15 ÷ 6 = 2.5. Now, we need the volume scale factor, which is 2.5³. So, to find the volume it is 1800 ÷ 2.5³ = 115.2ml.",
+        "C": "Nearly! I think you have multiplied 1800 by 2.5³ instead of dividing, notice that you need to find the volume of the smaller cylinder.",
+        "D": "I think you have calculated the length scale factor by doing 15 - 6. Instead of this, think about how many times bigger 15 is than 6. This will give you the length scale factor. Once you have this, can you find the volume scale factor?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78612,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f1cd2b93-58ff-4282-a4f9-f0211209fbd9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The length scale factor is 15/10 = 1.5, and so the volume scale factor is 1.5³. Multiplying 500 by 1.5³ gives 1687.5 ml.",
+        "B": "Nearly! I think you have calculated the length scale factor, of 1.5, then multiplied the given volume by this. Remember, we need to determine the volume scale factor before we can do any further calculations.",
+        "C": "Nearly! I think you have multiplied 500 by the area scale factor, instead of the volume scale factor.",
+        "D": "Not quite. I think you have multiplied the volume by 15, rather than the volume scale factor."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107994,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/83cde55b-d270-4731-a245-83524ca20709.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we times the base length on shape P, 5cm, by 3, we get the base length on shape Q, 15cm. Therefore, the length scale factor is 3.",
+        "B": "Think about what we need to multiply 5cm by, to get 15cm.",
+        "C": "I think you have subtracted 5 from 15. Think about what we need to multiply 5cm by to get 15cm.",
+        "D": "I think you have found the area scale factor. This question is asking for the length scale factor."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 108012,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/402fb473-badf-4bd6-8010-8471884acf8d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Think about what we need to multiply 6cm by to get 15cm. It might be useful to do 15 divided by 6.",
+        "B": "If we times the base length on shape P, 6cm, by 2.5, we get the base length on shape Q, 15cm. Therefore, the length scale factor is 2.5.",
+        "C": "Not quite. I think you have subtracted 6 from 15. Think about what we need to multiply 6cm by to get 15cm.",
+        "D": "I think you worked out the length scale factor from Q to P. This question asks us to go from P to Q."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107995,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e31d07a3-42f2-4b17-a766-d5229b7e3723.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have found the length scale factor from P to Q. In this question, we are going to Q to P.",
+        "B": "I think you might think that a negative scale factor makes a shape smaller. In order to make a shape smaller, we need to multiply by a number between 0 and 1.",
+        "C": "Close! Have another look. Sometimes it is better to keep the number as a fraction, rather than try change to a decimal.",
+        "D": "To get from the base length on shape Q, 15cm, to the base length on shape P, 5cm, we need to divide by 3. This is the same as multiplying by one third. Therefore, the length scale factor is 1/3."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 108013,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c75ca31f-7853-4187-88a8-3ac2b3f0b7d4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might think that a negative scale factor makes a shape smaller. In order to make a shape smaller, we need to multiply by a number between 0 and 1.",
+        "B": "I think you have got the length scale factor from P to Q. In this question, we are going to Q to P.",
+        "C": "I think you have subtracted 15 from 6. Think about what we need to multiply 15cm by to get 6cm. Try doing an inverse operation and dividing 6 by 15.",
+        "D": "We need to figure out how what we need to multiply 15 by to get 6. Using inverse operations, if we divide 6 by 15, we can simplify this; 6/15 = 2/5, which is 0.4."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107996,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4e0c5b2c-87b4-4cab-bc64-1ecd610a9a6b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have calculated the length scale factor, this question is asking for the area scale factor. To help you, you could imagine a height of 1cm on P, which would help you find the area of the front face. Then you can find what the height of Q would be and the area of that front face, to compare against P.",
+        "B": "I think you have doubled the length scale factor. Think about how to calculate the area scale factor, if we know the length scale factor. To help you, you could imagine a height of 1cm on P, which would help you find the area of the front face. Then you can find what the height of Q would be and the area of that front face, to compare against P.",
+        "C": "The length scale factor is 3. Therefore, the area scale factor is 3 squared, 9.",
+        "D": "Almost. I think you have found the Volume Scale Factor. This question asks for the Area Scale Factor."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 108014,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/89c7dc51-a389-4f8c-b005-6787d2156e87.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The length scale factor is 15/6 = 5/2 (or 2.5). Therefore, the area scale factor is this squared, which is 25/4.",
+        "B": "I think you have found the Volume Scale Factor. This question asks for the Area Scale Factor.",
+        "C": "I think you have calculated the length scale factor, this question is asking for the area scale factor. To help you, you could imagine a height of 1cm on P, which would help you find the area of the front face. Then you can find what the height of Q would be and the area of that front face, to compare against P.",
+        "D": "I think you have doubled the length scale factor. Think about how to calculate the area scale factor, if we know the length scale factor."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107997,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b602d609-190f-400f-8bc4-438e91e6b22e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have calculated the length scale factor, this question is asking for the volume scale factor.",
+        "B": "I think you have doubled the length scale factor. Think about how to calculate the volume scale factor, if we know the length scale factor.",
+        "C": "I think you have calculated the area scale factor, this question is asking for the volume scale factor.",
+        "D": "To go from 5cm to 15cm, we multiply by 3. 3, therefore, is the length scale factor. If we know the length scale factor, to get the volume scale factor, we cube it. Three cubed is 27."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 108015,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a70cc9a2-dd91-490f-9df0-396f39af42c7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have calculated the area scale factor, this question is asking for the volume scale factor.",
+        "B": "To get the length scale factor, we divide 15 by 6. This simplifies down to 5/2. When we know this, we can find the volume scale factor, by cubing the LSF. 5/2 cubed is 125/8.",
+        "C": "You have calculated the length scale factor, this question is asking for the volume scale factor.",
+        "D": "I think you have trebled the length scale factor. Think about how to calculate the volume scale factor, if we know the length scale factor."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,159 @@
+{
+  "shortcode": "biip",
+  "name": "Decimals - method selection 1",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 33,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Add decimals with the same number of decimals places",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiply two decimals together with the same number of decimal places",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Divide two decimals with the same number of decimal places",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Subtract amounts of money with values between £1 and £10",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 75930,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5c9bd930-1c51-4769-87a1-7db5048b398b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added the two costs. What operation do you need to do if you know one of the numbers and the total?",
+        "B": "Almost. Remember with column subtraction we need to do the top number minus the bottom number. We might have to borrow.",
+        "C": "We have 13.77 - 5.99 = 7.78. This is easiest done by subtracting £6 and adding 1p.",
+        "D": "Almost. Just check your borrowing in the tenths column."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 76078,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c8132233-6fdb-43d1-b4e0-b117891336fe.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We have £12.77 - £5.99 = £12.77 - £6 + 1p= £6.78.",
+        "B": "Almost. Just check your borrowing in the tenths column.",
+        "C": "I think you have added the two costs. What operation do you need to do if you know one of the numbers and the total?",
+        "D": "Almost. Remember with column subtraction we need to do the top number minus the bottom number. We might have to borrow."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103784,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/af341d29-92ba-4832-9c30-a7b9faa9c58d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, 6 + 4 = 10, but this answer should be lower as it is 0.6 + 0.4",
+        "B": "To add decimal numbers, use column method, making sure the decimal points are in line. This means the tenths column is 6 + 4 = 10, so the 0 is written in the tenths column, then you carry the 1 into the units. (Make sure you put a decimal point in line with the points above). Then in the units column you can see 0 + 0 + 1 = 1. The complete answer is 1.0 or 1.",
+        "C": "If we add two positive numbers, our answer can't be less than the numbers we added",
+        "D": "Make sure you remember to carry and keep your decimal points inline. The answer can't be less than the two numbers you've added"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103796,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/53dd011f-8d0a-4a59-8120-5b5fda4c3e50.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, 3 + 9 = 12, but this answer should be lower as it is 0.3 + 0.9",
+        "B": "Make sure you remember to carry and keep your decimal points inline. The answer can't be less than the two numbers you've added",
+        "C": "Make sure you remember to carry and keep your decimal points inline, checking your answer seems reasonable after: it can't be less than the two numbers you've added",
+        "D": "To add decimal numbers, use column method, making sure the decimal points are in line. This means the tenths column is 3 + 9 = 12, so the 2 is written in the tenths column, then you carry the 1 into the units. (Make sure you put a decimal point in line with the points above). Then in the units column you can see 0 + 0 + 1 = 1. The complete answer is 1.2."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103785,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/59592f4a-ffe1-4dba-866c-f65884b8ca87.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You can first of all do 6 x 4 = 24, then noticing that both 6 and 4 have been divided by 10 to get 0.6 and 0.4, means you can divide your answer by 100 (equivalent to dividing by 10 twice). This means your decimal point moves two places to the left and gives an answer of 0.24.",
+        "B": "I think you have added the two numbers rather than multiplied.",
+        "C": "Check your answer seems reasonable, if we calculate 1 x 1 = 1, we can see that our correct answer can't be bigger than 1 because both numbers being multiplied are less than 1.",
+        "D": "Very close, check the number of decimal places in your answer!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103797,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/893b7b73-c793-45b3-af64-e4dee87e012a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Check your answer seems reasonable, if we calculate 1 x 1 = 1, we can see that our correct answer can't be bigger than 1 because both numbers being multiplied are less than 1.",
+        "B": "I think you have added the two numbers rather than multiplied.",
+        "C": "You can first of all do 3 x 9 = 27, then noticing that both 3 and 9 have been divided by 10 to get 0.3 and 0.9, means you can divide your answer by 100 (equivalent to dividing by 10 twice). This means your decimal point moves two places to the left and gives an answer of 0.27.",
+        "D": "Very close, check the number of decimal places in your answer!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103786,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c4d1811b-6063-4c3a-987f-9148a1a2ffaf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. I think you have started the division well, but you can't just put the remainder after the decimal point. Try using the bus stop method and carry the remainder into the next column.",
+        "B": "I think you have subtracted rather than dividing. You can use equivalent fractions to make this into a division with just whole numbers.",
+        "C": "I think you have done 0.4 divided by 0.6. You need to do it the other way round.",
+        "D": "One way of dealing with division involving decimals is to treat the calculation as a fraction in order to then find equivalent fractions that are more manageable. This means that instead of 0.6 ÷ 0.4 we can write 0.6/0.4. Multiplying numerator and denominator by 10 in order to give whole number values gives the fraction 6/4 = 3/2 = 1.5"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103799,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/91544841-fcdd-4458-8b14-06faf703df4a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. Remember that when you change this into a division with just whole numbers, the answer is the same as the answer to the decimal division.",
+        "B": "Not quite. You can use equivalent fractions to make this into a division with just whole numbers.",
+        "C": "I think you have done 0.3 divided by 0.9. You need to do it the other way round.",
+        "D": "One way of dealing with division involving decimals is to treat the calculation as a fraction in order to then find equivalent fractions that are more manageable. This means that instead of 0.9 ÷ 0.3 we can write 0.9/0.3. Multiplying numerator and denominator by 10 in order to give whole number values gives the fraction 9/3 = 3/1 = 3"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103787,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7ad12d8a-f996-4124-9c25-6866e7948372.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You are almost there. Try using the bus stop method and carry the remainder into the next column to finish off the division.",
+        "B": "Not quite. You can use equivalent fractions to make this into a division with just whole numbers and then use a bus stop method to find the answer.",
+        "C": "One way of dealing with division involving decimals is to treat the calculation as a fraction in order to then find equivalent fractions that are more manageable. This means that instead of 0.4 ÷ 0.6 we can write 0.4/0.6. Multiplying numerator and denominator by 10 in order to give whole number values gives the fraction 4/6 = 2/3 = 0.666666...",
+        "D": "I think you have done 0.6 divided by 0.4. You need to do it the other way round."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103798,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1b88c759-4351-489b-87e8-5278023270a2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You are almost there. Try using the bus stop method and carry the remainder into the next column to finish off the division.",
+        "B": "I think you have subtracted rather than dividing. You can use equivalent fractions to make this into a division with just whole numbers.",
+        "C": "One way of dealing with division involving decimals is to treat the calculation as a fraction in order to then find equivalent fractions that are more manageable. This means that instead of 0.3 ÷ 0.9 we can write 0.3/0.9. Multiplying numerator and denominator by 10 in order to give whole number values gives the fraction 3/9 = ⅓ = 0.333...",
+        "D": "I think you have done 0.9 divided by 0.3. You need to do it the other way round."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

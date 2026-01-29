@@ -1,0 +1,141 @@
+{
+  "shortcode": "efks",
+  "name": "Writing Simple Expressions: One Step (Words to Expression)",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 137,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Write algebraic expressions with correct algebraic convention",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166214,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1fb6c8a8-058a-42e3-9e43-b36480a72463.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. This expression would be the sum of 5 and q. Which expression shows the product of 5 and q?",
+        "B": "This expression means q to the fifth power. It means q x q x q x q x q. Which expression shows the product of 5 and q?",
+        "C": "5q represents the product of 5 and q, which would be 5 times q.",
+        "D": "This expression represents 5 divided by q. Which expression shows 5 times q?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166441,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/089a817d-a4ab-4281-95af-09fe7c40c647.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Close! This expression reads \"p times 3\". Which expression would read 3 times p?",
+        "B": "Not quite. This expression would be the sum of 3 and p. Which expression shows the product of 3 and p?",
+        "C": "This expression means p to the third power. It means p x p x p. Which expression shows the product of 3 and p?",
+        "D": "3p represents the product of 3 and p, which would be 3 times p."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166215,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1fa38e5f-f978-4528-9586-5f216fa1b835.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "\"6 subtracted from k\" means that 6 is being taken away from k. k - 6",
+        "B": "Close! This expression reads \"k subtracted from 6\". Which expression would read \"6 subtracted from k\"?",
+        "C": "This expression means k added to 6. Which expression would mean 6 subtracted from k?",
+        "D": "This expression means 6 added to k. Which expression would mean 6 subtracted from k?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166442,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/afdc905b-5231-4f5e-9f33-43ae5dc2f518.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Close! This expression reads \"4 subtracted from t\". Which expression would read \"t subtracted from 4\"?",
+        "B": "This expression means 4 added to t. Which expression would mean t subtracted from 4?",
+        "C": "\"t subtracted from 4\" means that t is being taken away from 4. 4 - t",
+        "D": "This expression means t added to 4. Which expression would mean 4 subtracted from t?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166216,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1267348f-0e29-44a3-88f8-f3b221110661.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. This expression means 8 is greater than w. We are looking for the expression 8 more than w.",
+        "B": "\"8 more than w\" means w plus 8.",
+        "C": "This expression means 8 less than w. Which expression means 8 more than w?",
+        "D": "This expression means w is greater than 8. Which expression means 8 more than w?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166443,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8a9cb1b2-c1d8-448a-a5a9-e9b654838268.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. This expression means 5 is greater than q. We are looking for the expression 5 more than q.",
+        "B": "This expression means 5 less than q. Which expression means 5 more than q?",
+        "C": "\"5 more than q\" means q plus 5.",
+        "D": "This expression means 5 times q. Which expression means 5 more than q?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166217,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/21946a25-1e86-4f8a-b0ee-85f5c2ed8415.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you got confused by this notation. j₁₂ means the 12th value in the set of values denoted by j. Which expression means j divided by 12?",
+        "B": "Close! This expression reads 12 divided by j. Which expression reads j divided by 12?",
+        "C": "This expression represents the product of j and 12. Which expression represents j divided by 12?",
+        "D": "j divided by 12 can be written in fraction form, with j as the numerator and 12 as the denominator."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166444,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f46e8a23-3200-451e-a3c1-5a9533eae97c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Close! This expression reads 7 divided by m. Which expression reads m divided by 7?",
+        "B": "This expression represents 7 subtracted from m. Which expression represents m divided by 7?",
+        "C": "m divided by 7 can be written in fraction form, with m as the numerator and 7 as the denominator.",
+        "D": "This expression represents the product of m and 7. Which expression represents m divided by 7?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166218,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3842874f-27f2-4cb3-b37c-9bca011348f8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This expression is equivalent to 15 multiplied by g. Multiplication is commutative. Which expression does not show 15 times g?",
+        "B": "This expression is equivalent to 15 multiplied by g. Parenthesis can be used in place of a multiplication sign. Which expression does not show 15 times g?",
+        "C": "This expression is equivalent to 15 multiplied by g. We don't put the multiplication symbol as it may be confused for an 𝑥. Which expression does NOT show 15 times g?",
+        "D": "This expression is not the same as 15 times g. This expression means 15 to the power of g."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166445,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bb1c78fc-c2a3-49c8-8ef8-e01d35710eda.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This expression is equivalent to 11 multiplied by y. We don't put the multiplication symbol as it may be confused for an 𝑥. Which expression does not show 11 times y?",
+        "B": "This expression is not the same as 11 times y. This expression means 11 to the power of y.",
+        "C": "This expression is equivalent to 11 multiplied by y. Multiplication is commutative. Which expression does NOT show 11 times y?",
+        "D": "This expression is equivalent to 11 multiplied by y. Parenthesis can be used in place of a multiplication sign. Which expression does not show 11 times y?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

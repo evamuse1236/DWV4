@@ -1,0 +1,159 @@
+{
+  "shortcode": "vss",
+  "name": "Repeated percentages 2",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 38,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Work out the final amount in compound percentage increase problems",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Work out the number of time periods in compound percentage increase problems ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Work out the total increase in compound percentage decrease problems ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Work out the number of time periods in compound percentage decrease problems",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 76813,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f7345e35-8c48-4889-8497-37f3599ad31b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful when you are calculating depreciation, the car will reduce in price. We need to use the amount left, 100% - 10% = 90% as the multiplier, and raise this to the power of years.",
+        "B": "To find the amount the car depreciates by we find £4500 × 0.9³ and then subtract this from £4500. This gives £1219.50.",
+        "C": "It looks like you have used 10% as the multiplier. We need to use the percentage left, 100% - 10% = 90%, as the multiplier, and raise this to the power of years.",
+        "D": "Nearly! It looks like you have calculated the new price of the car not the value the car has decreased by."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78847,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e9ce5a3e-bdee-4f7d-9467-b4fa4b1a1b68.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly! It looks like you have calculated the new price of the car not the value the car has decreased by.",
+        "B": "We have £3500 × 0.9⁴ = £2296.35. Subtracting this from £3500 gives £1203.65.",
+        "C": "It looks like you have found the value of the car after 5 years. Be careful to find the amount the car depreciates by after 4 years.",
+        "D": "It looks like you have found the amount the car depreciates by after 5 years, be careful to find the amount after 4 years."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 76814,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/24ebbaad-c4cf-4306-8541-f40c72d5c7ff.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you might have rounded up. After 6 years it isn't quite double the value. To help, give the value of the house a number and use a multiplier method to increase its value by 12% every year. How many years will it take for the value to double?",
+        "B": "Not quite. To help, give the value of the house a number and use a multiplier method to increase its value by 12% every year. How many years will it take for the value to double?",
+        "C": "The best way to answer this question is to keep multiplying 1.12 together in a calculator until we get over 2. We have 1.12⁶ = 1.97 and 1.12⁷ = 2.21, so the answer is 7.",
+        "D": "Not quite. To help, give the value of the house a number and use a multiplier method to increase its value by 12% every year. How many years will it take for the value to double?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78848,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/800486af-0dc8-461a-a806-0baf293a6df8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. To help, give the value of the house a number and use a multiplier method to increase its value by 15% every year. How many years will it take for the value to double?",
+        "B": "The best way to answer this question is to keep multiplying 1.15 together in a calculator until we get over 2. We have 1.15⁴ = 1.75 and 1.15⁵ = 2.01, so the answer is 5.",
+        "C": "Not quite. To help, give the value of the house a number and use a multiplier method to increase its value by 15% every year. How many years will it take for the value to double?",
+        "D": "Not quite. I think you might have rounded up. After 4 years it isn't quite double the value. To help, give the value of the house a number and use a multiplier method to increase its value by 15% every year. How many years will it take for the value to double?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 76818,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1bfc317f-7556-4cca-8ec2-d71aad8d4878.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember that the athlete runs 1/10 more each day compared to the day before, not just 1/10 of 2km extra every day.",
+        "B": "Remember that the athlete runs 1/10 more each day compared to the day before, not just 1/10 of 2km extra every day. Remember the first day is 2km so that one is already counted.",
+        "C": "1/10 is the same as 10%, so we have 2 × 1.1⁷ = 3.897 km, which rounds to 3.9km.",
+        "D": "Remember on the first day they run 2km, so that one is already counted."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78852,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a3abefde-151e-4d2c-a4dc-c4c8c68d35bb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember on the first day she runs 1km, so that one is already counted.",
+        "B": "1/5 is the same as 20%, so we have 1 × 1.2⁷ = 3.58 km, which rounds to 3.6km.",
+        "C": "Remember that the athlete runs 1/5 more each day compared to the day before, not just 1/5 of 1km extra every day. Remember the first day is 1km so that one is already counted.",
+        "D": "Remember that the athlete runs 1/5 more each day compared to the day before, not just 1/5 of 1km extra every day."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 76819,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/361c1be3-6f7f-4eaf-b9a9-d9c71b4109e3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "1/10 = 10%. 100% - 10% = 90%. Therefore the van is worth 90% of what it was the previous year. Using a multiplier method to calculate its value after 5 years we get: 15000 × 0.9⁵ = £8857.35.",
+        "B": "Not quite. Remember the van has lost value by the end of year one. Use a multiplier method to check the number of years.",
+        "C": "Be careful. Use a multiplier method to check the number of years.",
+        "D": "Be careful. Use a multiplier method to check the number of years."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78853,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1d8ea573-5f6e-498e-894c-7b2ab06bc8da.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember the van has lost value by the end of year one. Use a multiplier method to check the number of years.",
+        "B": "Be careful. Use a multiplier method to check the number of years.",
+        "C": "1/10 = 10%. 100% - 10% = 90%. Therefore the van is worth 90% of what it was the previous year. Using a multiplier method to calculate its value after 6 years we get: 12000 × 0.9⁶ = £6377.29.",
+        "D": "Be careful. Use a multiplier method to check the number of years."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 76823,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1796f0a1-8e56-4951-aee5-ba16790b1d33.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "100% + 1.5% = 101.5%. As a decimal 101.5% is 1.015. Therefore the multiplier for increasing by 1.5% is 1.015, and the power is 5 for 5 years.",
+        "B": "Not quite. Remember the formula should increase £7000 by 1.5%. Multiplying by 0.015 would find 1.5% of 7000, rather than increase by it.",
+        "C": "Not quite. Multiplying by 1.15 would be increasing by 15%, rather than 1.5%.",
+        "D": "Be careful. 0.15 = 15% NOT 1.5%. Remember when we are increasing by a percentage, we are finding more than 100%. Think of what our multiplier should be if we want to increase by 1.5%."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78857,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/61392d61-6f81-4172-8f38-62483a2a5612.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful. 0.25 = 25% NOT 2.5%. Remember when we are increasing by a percentage, we are finding more than 100%. Think of what our multiplier should be if we want to increase by 2.5%.",
+        "B": "Not quite. Remember the formula should increase £7000 by 2.5%. Multiplying by 0.025 would find 2.5% of 7000, rather than increase by it.",
+        "C": "Not quite. Multiplying by 1.25 would be increasing by 25%, rather than 2.5%.",
+        "D": "100% + 2.5% = 102.5%. As a decimal 102.5% is 1.025. Therefore the multiplier for increasing by 2.5% is 1.025, and the power is 3 for 3 years."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

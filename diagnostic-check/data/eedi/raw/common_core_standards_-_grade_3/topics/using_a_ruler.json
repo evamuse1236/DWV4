@@ -1,0 +1,141 @@
+{
+  "shortcode": "bit7",
+  "name": "Using a ruler",
+  "collectionId": 33,
+  "level": 1,
+  "sequence": 38,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Measure lengths using a ruler (US)",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158847,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cda7be52-a589-4bf2-b2eb-78c4e4113953.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have missed off some of the pencil.. Start from the eraser and go to where the tip is, how long is the pencil?",
+        "B": "We can see from the diagram that the end of the pencil is at 0 inches and the tip is at 4 therefore the length of the pencil is 4 inches.",
+        "C": "This is a little longer than the pencil... Start from the eraser and go to where the tip is, how long is the pencil?",
+        "D": "Don't forget the tip of the pencil... Start from the eraser and go all the way to the tip, how long is the pencil?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159046,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/60a8587c-1a87-4992-a8a4-abbad947936c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Don't forget the tip of the pencil... Start from the eraser and go all the way to the tip, how long is the pencil?",
+        "B": "I think you have missed off some of the pencil.. Start from the eraser and go to where the tip is, and then choose the nearest inch.",
+        "C": "We can see from the diagram that the end of the pencil is at 0 inches and the tip is just before 5, therefore the length of the pencil is 5 inches to the nearest inch.",
+        "D": "I think you might have read 3/4 from the ruler near the tip, but we want the nearest whole inch. What is the nearest whole number on the ruler?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158848,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/21bd6df8-b625-4bac-85a8-036a554a9752.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have rounded to the nearest inch but the question wants the length of the shoe to the nearest half an inch...",
+        "B": "We can see from the ruler, the heel of the shoe is at 0 and the toe is at 2.5 therefore the length of the show is 2 1/2 inches to the nearest half an inch!",
+        "C": "I think you have tried to round to the nearest inch but the question wants the length to the nearest half an inch...",
+        "D": "I think you have read the scale the wrong way on the ruler... It's not half an inch greater than 3 inches, it's half an inch less than 3 inches"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159047,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ad7fc2a3-ea53-492f-9eb3-dbcc5ec5bd27.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have noticed that the toe of the shoe is at a halfway mark between inches, but double check the numbers on the scale. Is the shoe less than 1 inch long?",
+        "B": "We can see from the ruler, the heel of the shoe is at 0 and the toe is just over halfway from 1 to 2 inches, therefore the length of the show is 1 1/2 inches to the nearest half an inch!",
+        "C": "I think you have rounded to the nearest inch but the question wants the length of the shoe to the nearest half an inch...",
+        "D": "I think you have read the scale the wrong way on the ruler... It's not half an inch greater than 2 inches, it's half an inch less than 2 inches."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158849,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/88e5dda1-aca3-48a7-be79-0587abca5e63.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This would be the length to the nearest inch, can you see the calculator is a little bit after the 6 inches... What is its length to the nearest quarter inch?",
+        "B": "We can see the start of the calculator is at 0 and the end is two marks after 6 inches. Each small mark on the ruler is 1/8 inch, so the length of the calculator is 6 1/4 inches to the nearest quarter inch!",
+        "C": "This measurement is a little longer than the calculator, it's equivalent to 6 1/2 inches. Look at the end of the calculator, what length is this to the nearest quarter inch?",
+        "D": "This measurement is longer than the calculator... Can you see the calculator is just longer than 6 so which is the correct measurement to a quarter inch?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159048,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/794f5685-4393-445f-be15-43af37083e7b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This would be the length to the nearest inch, can you see the calculator is a little bit shorter than 8 inches... What is its length to the nearest quarter inch?",
+        "B": "Not quite, that would be 2 marks after 7 on the ruler. The calculator reaches 6 marks after 7 on the ruler. What would that measurement be?",
+        "C": "This measurement is a little shorter than the calculator, it's equivalent to 7 1/2 inches. Look at the end of the calculator, what length is this to the nearest quarter inch?",
+        "D": "We can see the start of the calculator is at 0 and the end is two marks before 8 inches. Each small mark on the scale is 1/8 inch, so this length is 7 6/8 inches, or 7 3/4 inches."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158850,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/88f067f2-7fde-4db6-a771-18eb306ce391.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This would be the length of the shoe to the nearest inch but the question wants the length to the nearest quarter inch...",
+        "B": "The shoe is longer than 7 1/4 inches, it's one quarter less than 8 inches so which measurement is this?",
+        "C": "This is equivalent to 7 1/2 inches but the shoe is a little bit longer than this. Look at the ruler again, what value is the heel on?",
+        "D": "We can see the start of the shoe is at 0 and the end is at 7 3/4 inches therefore the length of the shoe is 7 3/4 inches to the nearest quarter inch!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159049,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ef92214c-fb69-408d-ab0b-cbfbb684aad2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Make sure you are looking at the very end of the shoe...",
+        "B": "We can see the start of the shoe is at 0 and the end is two marks after 9 inches. Each small mark on the scale is 1/8 inch, so this length is 9 2/8 inches, or 9 1/4 inches.",
+        "C": "This is equivalent to 9 1/2 inches but the shoe is a little bit shorter than this. Remember each small mark on the ruler is 1/8 inch, not 1/4 inch.",
+        "D": "This would be the length of the shoe to the nearest inch but the question wants the length to the nearest quarter inch..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158851,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ef5108d3-2863-419f-a22a-84f11d93816e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is where the duck starts. Find where it ends. The difference between these two values is the length of the duck!",
+        "B": "Not quite, the duck ends a little bit after 7 1/4 inches and it also doesn't start at 0...",
+        "C": "The duck starts at 4 inches and ends at 7.5 inches. 7.5 - 4 = 3.5 therefore the duck is 3 1/2 = 3 2/4 inches.",
+        "D": "This is where the duck ends. Find where it starts. The difference between these two values is the length of the duck!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159050,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/931a71f5-0df2-440d-b7d6-e88681cc1448.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "That's the nearest inch to where the duck ends, but we want the nearest quarter inch, and also the duck doesn't start at zero... What's the length between the two dashed lines?",
+        "B": "This is where the duck ends. Find where it starts. The difference between these two values is the length of the duck!",
+        "C": "Not quite, the duck starts at 6 and ends just before 9 inches, how long is it to the nearest quarter inch?",
+        "D": "The duck starts at 6 and ends at 8 3/4 inches. the difference between these is 2 3/4, so the duck is 2 3/4 inches long."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

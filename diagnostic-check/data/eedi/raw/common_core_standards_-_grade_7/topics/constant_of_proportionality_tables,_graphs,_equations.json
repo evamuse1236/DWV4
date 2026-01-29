@@ -1,0 +1,159 @@
+{
+  "shortcode": "ehd2",
+  "name": "Constant of Proportionality Tables, Graphs, Equations",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 21,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Complete missing values in tables for variables with the proportional relationship y = kx",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Work out missing quantities from direct proportion problems using an equation in the form y = kx",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify the constant of proportionality from a linear graph",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Form equations in the form y = kx from direct proportion tables",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 165534,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b50ccd33-c5ae-4001-ac31-a77f4e63325e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We are not adding the 𝑘 and 𝑥 together, we are multiplying them...",
+        "B": "If 8 boxes cost $30.96 then 30.96 = 8𝑘 so 𝑘 = 30.96/8",
+        "C": "This would be if each box costs £30.96 but the total of the 8 boxes is $30.96...",
+        "D": "I think you have swapped around your 𝑥 and 𝑦 values... 𝑦 = 30.96 and 𝑥 = 8"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165539,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c5c40ac8-47b1-402a-a96b-9472c86ccaeb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If 12 boxes cost $73.44 then 73.44 = 12𝑘 so 𝑘 = 73.44/12",
+        "B": "This would be if each box costs £73.44 but the total of the 12 boxes is $73.44...",
+        "C": "We are not subtracting the 𝑘 and 𝑥, we are multiplying them...",
+        "D": "I think you have swapped around your 𝑥 and 𝑦 values... 𝑦 = 73.44 and 𝑥 = 12"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165535,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/35606db0-2b2d-4dbd-9f7e-046ad3deb223.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have correctly worked out 𝑘 - the cost of 1 cake! How can you use that to find the cost of 8 cakes?",
+        "B": "$164.90 is the cost of 5 cakes not 1 cake! Find the cost of 1 cake before multiplying by 8...",
+        "C": "This would be the cost of 6 cakes... The question is asking for the cost of 8 cakes!",
+        "D": "If 5 cakes cost $164.90 then 164.9 = 5𝑘 so 𝑘 = 164.9/5 = 32.98 therefore one cake costs $32.98. We want the cost of 8 cakes so we multiply this by 8: 32.98 x 8 = 263.84 so 8 cakes cost $263.84!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165540,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c6ad8eb6-a84d-4b3b-a850-82adf9c37c0a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "$140.28 is the earnings of selling 6 pizzas not one! Find the earnings of selling one pizza before multiplying by 11...",
+        "B": "$163.66 is the earnings after selling 7 pizzas! Use the earnings for selling one pizza to find the earnings for selling 11...",
+        "C": "If after selling 6 pizzas the chef earns $140.28 then 140.28 = 6𝑘 so 𝑘 = 140.28/6 = 23.38 therefore selling one pizza they earn $23.38. We want how much they would earn if they sold 11 pizzas so we multiply this by 11: 23.38 x 11 = 257.18 so after selling 11 pizzas they earn $257.18!",
+        "D": "You have correctly worked out 𝑘 - how much they earn after selling one pizza! How can you use that to find the earnings after selling 11 pizzas?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165536,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1775ae8f-cff6-4983-b04d-30a1c01532f6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We know 𝑦 = 𝑘𝑥. Reading some points from the graph we get (2, 92), (4, 184) etc. Rearranging to make the constant of proportionality (𝑘) the subject we get 𝑘 = 𝑦/𝑥 and then subbing in the values from the graph: 92/2 = 46 and 184/4 = 46 etc so 𝑘 = 46!",
+        "B": "This is a 𝑦-value from a point on the graph, what is the corresponding 𝑥-value? What do you need to do with those to get 𝑘 if 𝑦 = 𝑘𝑥?",
+        "C": "This is an 𝑥-value from a point on the graph, what is the corresponding 𝑦-value? What do you need to do with those to get 𝑘 if 𝑦 = 𝑘𝑥?",
+        "D": "It's not 0... To find the constant of proportionality (𝑘) use 𝑦 = 𝑘𝑥, rearrange it and sub in some points from the graph!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165541,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/af63d343-ec3e-4243-b542-3600bde8780e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It's not 0... To find the constant of proportionality (𝑘) use 𝑦 = 𝑘𝑥, rearrange it and sub in some points from the graph!",
+        "B": "We know 𝑦 = 𝑘𝑥. Reading some points from the graph we get (2, 98), (4, 196) etc. Rearranging to make the constant of proportionality (𝑘) the subject we get 𝑘 = 𝑦/𝑥 and then subbing in the values from the graph: 98/2 = 49 and 196/4 = 49 etc so 𝑘 = 49!",
+        "C": "This is a 𝑦-value from a point on the graph, what is the corresponding 𝑥-value? What do you need to do with those to get 𝑘 if 𝑦 = 𝑘𝑥?",
+        "D": "This is an 𝑥-value from a point on the graph, what is the corresponding 𝑦-value? What do you need to do with those to get 𝑘 if 𝑦 = 𝑘𝑥?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165537,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4164e854-be6a-4d6e-aeb9-a983d26d1e2e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have found the difference in money earnt between 4 and 9 tickets... To find the constant of proportionality (𝑘) look at the relationship between the number of tickets sold and the money earnt!",
+        "B": "You have found the difference in money earnt between 5 and 7 tickets... To find the constant of proportionality (𝑘) look at the relationship between the number of tickets sold and the money earnt!",
+        "C": "We know 𝑦 = 𝑘𝑥. We are also given several points in the table including (4, 112), (9, 252) etc. Rearranging the equation to make the constant of proportionality (𝑘) the subject we get 𝑘 = 𝑦/𝑥 and then subbing in the values from the table: 112/4 = 28 and double checking with another point: 252/9 = 28 so 𝑘 = 28!",
+        "D": "I think you have found the mean... To find the constant of proportionality (𝑘) look at the relationship between the number of tickets sold and the money earnt!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165542,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f3781fcb-a008-4e1d-9277-96aa44e0c13e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We know 𝑦 = 𝑘𝑥. We are also given several points in the table including (5, 160), (7, 224) etc. Rearranging the equation to make the constant of proportionality (𝑘) the subject we get 𝑘 = 𝑦/𝑥 and then subbing in the values from the table: 160/5 = 32 and double checking with another point: 224/7 = 32 so 𝑘 = 32!",
+        "B": "You have found the difference in money earnt between 5 and 7 tickets... To find the constant of proportionality (𝑘) look at the relationship between the number of tickets sold and the money earnt!",
+        "C": "I think you have found the mean... To find the constant of proportionality (𝑘) look at the relationship between the number of tickets sold and the money earnt!",
+        "D": "You have found the difference in money earnt between 4 and 8 tickets... To find the constant of proportionality (𝑘) look at the relationship between the number of tickets sold and the money earnt!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165538,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9140368e-006d-4153-8019-201af4cce186.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Reading the table we can see that after 8 minutes, 184 gallons were used. That means after 1 minute, 23 gallons were used because 184/8 = 23, so the constant of proportionality is 23. We want know how many gallons were used after 6 minutes so we do 23 x 6 = 138 gallons!",
+        "B": "This is the mean number of gallons... Start by finding the constant of proportionality, by looking at the relationship between the minutes and number of gallons used, then use this to find out how many gallons would be used after 6 minutes!",
+        "C": "You have correctly found the constant of proportionality but the question is asking how many gallons were used after 6 minutes?",
+        "D": "This is the difference in the number of gallons used after 8 and 3 minutes... Start by finding the constant of proportionality, by looking at the relationship between the minutes and number of gallons used, then use this to find out how many gallons would be used after 6 minutes!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165543,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/65007188-45c2-4038-b6e6-64e023ef736b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have correctly found the constant of proportionality but the question is asking how many gallons were used after 8 minutes?",
+        "B": "This is the difference in the number of gallons used after 10 and 4 minutes... Start by finding the constant of proportionality, by looking at the relationship between the minutes and number of gallons used, then use this to find out how many gallons would be used after 8 minutes!",
+        "C": "Reading the table we can see that after 10 minutes, 190 gallons were used. That means after 1 minute, 19 gallons were used because 190/10 = 19, so the constant of proportionality is 19. We want know how many gallons were used after 8 minutes so we do 19 x 8 = 152 gallons!",
+        "D": "This is the mean number of gallons... Start by finding the constant of proportionality, by looking at the relationship between the minutes and number of gallons used, then use this to find out how many gallons would be used after 8 minutes!"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

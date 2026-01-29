@@ -1,0 +1,159 @@
+{
+  "shortcode": "v1s",
+  "name": "Volume of non-prisms 1",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 145,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify a unit of volume or capacity",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the volume of a cone where the dimensions are all given in the same units",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the volume of a sphere",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the volume of a hemisphere",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 110234,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c1abc1be-3608-48df-8887-9c736c85acae.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Kilometres is a measure of length, not volume.",
+        "B": "This one is a measure of volume. Which of these are not?",
+        "C": "This one is a measure of volume. Which of these are not?",
+        "D": "This one is a measure of volume. Which of these are not?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 110244,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d07ab172-5808-45d1-b408-068b4ea11bb9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This one is a measure of volume. Which of these are not?",
+        "B": "This one is a measure of volume. Which of these are not?",
+        "C": "Centimetres is a measure of length, not volume.",
+        "D": "This one is a measure of volume. Which of these are not?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 110235,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9513896f-af4e-44bd-a1b3-b754cbc53f5b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is a measure of length, not volume.",
+        "B": "This is a measure of length, not volume.",
+        "C": "This is a measure of area, not volume.",
+        "D": "This is a measure of volume."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 110245,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ee2cc97c-db39-4372-9572-2df6b56ba26c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is a measure of volume.",
+        "B": "This is a measure of area, not volume.",
+        "C": "This is a measure of length, not volume.",
+        "D": "This is a measure of length, not volume."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 110236,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea5c18f2-c534-4887-9bce-36185dc72317.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The volume of a sphere is (4/3) × 𝜋𝑟³, which in this case is (4/3) × 𝜋 × 2³ = 32𝜋/3",
+        "B": "I think you have used the diameter in the formula rather than the radius.",
+        "C": "I think you have found the area of the circular cross section rather than the volume of the sphere. The volume of a sphere is (4/3) × 𝜋𝑟³,",
+        "D": "I think you found the surface area. The volume of a sphere is (4/3) × 𝜋𝑟³,"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 110246,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7bc0ef75-fd54-4beb-8812-faf4a0c15bfa.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have found the area of the circular cross section rather than the volume of the sphere. The volume of a sphere is (4/3) × 𝜋𝑟³,",
+        "B": "I think you found the surface area. The volume of a sphere is (4/3) × 𝜋𝑟³,",
+        "C": "The volume of a sphere is (4/3) × 𝜋𝑟³, which in this case is (4/3) × 𝜋 × 4³ = (256/3) × 𝜋.",
+        "D": "I think you have used the diameter in the formula rather than the radius."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 110237,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1fd30d26-ec99-4b00-9e8e-309cf16b75f8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Remember the volume of a sphere is (4/3) × 𝜋𝑟³, and we have half of this.",
+        "B": "Not quite. Remember the volume of a sphere is (4/3) × 𝜋𝑟³, and we have half of this.",
+        "C": "The volume of a sphere is (4/3) × 𝜋𝑟³, and so the volume of half a sphere is (4/3) × 𝜋𝑟³ ÷ 2 = 2𝜋𝑟³/3 = 4𝜋𝑟³/6. So, both Tom and Katie are correct.",
+        "D": "At least one is correct. Remember the volume of a sphere is (4/3) × 𝜋𝑟³, and we have half of this."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 110247,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/145b6441-7b88-47e1-ad19-e70e80487827.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The volume of a sphere is (4/3) × 𝜋 𝑟³, and so the volume of half a sphere is (4/3) × 𝜋𝑟³ ÷ 2 = 2𝜋𝑟³/3, not 4𝜋𝑟³/3. So, only Tom is correct.",
+        "B": "Not quite. Remember the volume of a sphere is (4/3) × 𝜋𝑟³, and we have half of this.",
+        "C": "Not quite. Remember the volume of a sphere is (4/3) × 𝜋𝑟³, and we have half of this.",
+        "D": "At least one is correct. Remember the volume of a sphere is (4/3) × 𝜋𝑟³, and we have half of this."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 110238,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/65d9bb4b-da7e-4ef7-9757-f883dd337d49.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We need to use Pythagoras’ theorem to find the height of the triangle.",
+        "B": "This is the area of a triangle, but we need the perpendicular height to find the volume. How could we find this?",
+        "C": "We use trigonometry if we have 2 lengths and want an angle, or we have 1 length and one angle and want another side. We don't have any angles here",
+        "D": "We use trigonometry if we have 2 lengths and want an angle, or we have 1 length and one angle and want another side. We don't have any angles here"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 110248,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7290a368-2671-4432-99ba-20189e0c67e4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the area of a triangle, but we need the perpendicular height to find the volume. How could we find this?",
+        "B": "We need to use Pythagoras’ theorem to find the height of the triangle.",
+        "C": "We use trigonometry if we have 2 lengths and want an angle, or we have 1 length and one angle and want another side. We don't have any angles here",
+        "D": "We use trigonometry if we have 2 lengths and want an angle, or we have 1 length and one angle and want another side. We don't have any angles here"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

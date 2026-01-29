@@ -1,0 +1,147 @@
+{
+  "shortcode": "eek1",
+  "name": "Percentages as rates per 100 using fractions.",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 35,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calcuate percentage of an amount where the percent is an integer (US)",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find the whole amount when given a percentage (US)",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166158,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ed81687d-71a4-4ce3-8bd6-f2cdeaa6b791.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The order of the words is important here. 65% of 780 tells us that we are going to multiply 65% x 780 in that order. With that in mind, what number should replace the star?",
+        "B": "I think you may be confused by the idea of percent. Percents are out of 100, so to work with 65%, we will put 65 over 100. What number should replace the star so we can complete the calculation?",
+        "C": "Percents are out of 100, so we will rewrite 65% as ⁶⁵/₁₀₀. The word \"of\" tells us to multiply, so we should replace the star with 780.",
+        "D": "Close! You have found the final answer, but we were asked to identify the number that should replace the star. What number replaced the star in your calculation?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166385,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cce09555-53a0-4148-aeed-193ab4d507b0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Close! You found the final answer, but we were asked to identify the number that should replace the star. What number replaced the star in your calculation?",
+        "B": "Percents are out of 100, so we will rewrite 35% as ³⁵/₁₀₀. The word \"of\" tells us to multiply, so we should replace the star with 820.",
+        "C": "The order of the words is important here. 35% of 820 tells us that we are going to multiply 35% x 820 in that order. With that in mind, what number should replace the star?",
+        "D": "I think you may be confused by the idea of percent. Percents are out of 100, so to work with 35%, we will put 35 over 100. What number should replace the star so we can complete the calculation?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166159,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ab67f500-8cf9-4e69-a22a-ebb7e7d167b9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember that percents are out of 100, so we would start by rewriting 12% as 12 out of 100. You have chosen 12 out of 6. What changes could we make to be accurate?",
+        "B": "Remember that percents are out of 100, so we would start by rewriting 12% as 12 out of 100. You have chosen 6 out of 12. What changes could we make to be accurate?",
+        "C": "Percents are out of 100, so we will rewrite 12% as ¹²/₁₀₀. The word \"of\" tells us to multiply, so we would write ¹²/₁₀₀ x 6.",
+        "D": "Remember that percents are out of 100, so we would start by rewriting 12% as 12 out of 100. You have chosen 100 out of 6. What changes could we make to be accurate?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166386,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1121d8d5-f0be-4fa1-b9bb-593ad6d8f7a0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember that percents are out of 100, so we would start by rewriting 17% as 17 out of 100. You have chosen 17 out of 9. What changes could we make to be accurate?",
+        "B": "Percents are out of 100, so we will rewrite 17% as ¹⁷/₁₀₀. The word \"of\" tells us to multiply, so we would write ¹⁷/₁₀₀ x 9.",
+        "C": "Remember that percents are out of 100, so we would start by rewriting 17% as 17 out of 100. You have chosen 100 out of 9. What changes could we make to be accurate?",
+        "D": "Remember that percents are out of 100, so we would start by rewriting 17% as 17 out of 100. You have chosen 9 out of 17. What changes could we make to be accurate?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166160,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4ad0df67-39f9-49ff-a672-fd57c4d916c9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "³²/₁₀₀ x 225 = ⁷²⁰⁰/₁₀₀ = 72",
+        "B": "I think you may have assumed 32 was the answer because of 32%. Remember, percents are out of 100, so we need to write 32% as ³²/₁₀₀ first. Then what should we do with 225?",
+        "C": "Not quite. It seems you wrote ³²/₂₂₅, but percents are always out of 100. We should start with ³²/₁₀₀. What should we do next?",
+        "D": "I think you started with 225 out of 32. Remember that percents are out of 100, so we would start by rewriting 32% as 32 out of 100. What should we do next?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166387,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bb7df38c-ec3e-4c43-86ef-2998103df5fe.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have assumed 36 was the answer because of 36%. Remember, percents are out of 100, so we need to write 36% as ³⁶/₁₀₀ first. Then what should we do with 275?",
+        "B": "I think you started with 275 out of 36. Remember that percents are out of 100, so we would start by rewriting 36% as 36 out of 100. What should we do next?",
+        "C": "³⁶/₁₀₀ x 275 = ⁹⁹⁰⁰/₁₀₀ = 99",
+        "D": "Not quite. It seems you wrote ³⁶/₂₇₅, but percents are always out of 100. We should start with ³⁶/₁₀₀. What should we do next?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166161,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b6f72a1c-cb92-4cdc-8513-5389ea141eae.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Close! You found the whole by completing the calculation. We are looking for what number we should put in place of the part in the equation.",
+        "B": "If 16% of a number is 48, then 48 is the part.",
+        "C": "I think you may have calculated 16% of 48, but if you read carefully, 16% of a number is 48. We are looking for the number that tells us the part that is 16%. Which number is that?",
+        "D": "I think you may have assumed 16 was the answer because of 16%. Remember, percents are out of 100, so 16 would replace the box. We are looking for the number that tells us the part that is 16%. Which number is that?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166388,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/001e602f-c40b-4d21-8cde-6ff501f28baa.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If 14% of a number is 98, then 98 is the part.",
+        "B": "I think you may have assumed 14 was the answer because of 14%. Remember, percents are out of 100, so 14 would replace the box. We are looking for the number that tells us the part that is 14%. Which number is that?",
+        "C": "I think you may have calculated 14% of 98, but if you read carefully, 14% of a number is 98. We are looking for the number that tells us the part that is 14%. Which number is that?",
+        "D": "Close! You found the whole by completing the calculation. We are looking for what number we should put in place of the part in the equation."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166162,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/54b532fb-6f99-4783-bc39-163f300f3191.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We need to rewrite the equation in the form of 𝑤 =. It seems you tried multiplying ³⁵/₁₀₀ by 49, but that leaves ¹/𝑤, not 𝑤",
+        "B": "Using cross products, 35𝑤 = 49 x 100, 𝑤 = ⁴⁹/₃₅ x 100",
+        "C": "It seems you have confused the position of your percentage and your part (49). Try using cross products to find the correct rearrangement.",
+        "D": "We need to rewrite the equation in the form of 𝑤 =. It seems you tried dividing ³⁵/₁₀₀ by 49, but that leaves ¹/𝑤, not 𝑤"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166389,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/19a128e6-b525-4c5a-aaed-63df4909f5cb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We need to rewrite the equation in the form of 𝑤 =. It seems you tried dividing ⁶⁵/₁₀₀ by 195, but that leaves ¹/𝑤, not 𝑤",
+        "B": "It seems you have confused the position of your percentage and your part (195). Try using cross products to find the correct rearrangement.",
+        "C": "We need to rewrite the equation in the form of 𝑤 =. It seems you tried multiplying ⁶⁵/₁₀₀ by 195, but that leaves ¹/𝑤, not 𝑤",
+        "D": "Using cross products, 65𝑤 = 195 x 100, 𝑤 = ¹⁹⁵/₆₅ x 100"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

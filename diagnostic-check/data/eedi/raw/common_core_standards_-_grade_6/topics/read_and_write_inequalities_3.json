@@ -1,0 +1,147 @@
+{
+  "shortcode": "vqi",
+  "name": "Read and write inequalities 3",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 183,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Given an equation, form or identify related equations",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Represent and interpret inequalities using a bar model",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 91661,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6a3b6ee8-f09e-4603-a8d3-94a359e0d777.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You may have thought that because there are more greens that they take up more space. Compare the lengths of the green and purple tiles. If an extra one of each is added to the diagram which section will be longer?",
+        "B": "You may have thought that because there are fewer greens that they take up less space. Compare the lengths of the green and red tiles. If an extra one of each is added to the diagram which section will be longer?",
+        "C": "You may have just looked at the numbers in front of the letters. We have to see what each letter represents by thinking about the length of each bar. You may have just got your inequalities the wrong way round. Remember the opening of the inequality symbol is by the greater value.",
+        "D": "Considering Tom’s statement, 5g > 4p, we can see from the diagram that the purple tiles (p) are longer than the green tiles (g). Therefore if we added an extra purple tile and an extra green tile the purple section would be longer. This shows that 4p > 5g. Considering Katie's statement, 5g < 7r, we can see from the diagram that the green tiles (g) are longer than the red tiles (r). Therefore if we added an extra green tile and an extra red tile the green section would be longer. This shows that 5g > 7r. Therefore neither of them are correct as their inequalities are the wrong way round."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 91679,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/280a9c8f-cfee-4b9b-91cc-603b49486826.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You may not have expanded the brackets correctly. 3(r+w) means 3 lots of r plus 3 lots of w and can be written as 3r + 3w. Now use the diagram to work out whether 3 red tiles and 3 white tiles would be shorter than 3 purple tiles.",
+        "B": "For Jo’s statement, 6g < 4p, you'd need to add one more purple tile (p) and two more green tiles (g) to the diagram. From the diagram we can see that 2 green tiles are longer than one purple tile so 6g would be greater than 4p. You could also divide Jo's statement by 2 and get 3g < 2p and from the diagram we can clearly see that 3 greens are in fact greater than 2 purples. Expanding the brackets from Paul’s statement gives 3r ＋ 3w < 3p, and it can be seen from the diagram that 3 red tiles and 3 white tiles are less than 3 purple tiles so it is a true statement.",
+        "C": "You may have thought that because the greens are smaller they take up less space in total. Compare the lengths of the green and purple tiles. If an extra purple was added and 2 extra greens were added which section would be longer? You could also simplify Jo's statement by halving the values to get 3g < 2p. Use the diagram to see if this is correct.",
+        "D": "You may have just looked at the numbers in front of the letters. We have to see what each letter represents by thinking about the length of each bar. Alternatively you may have just got your inequalities the wrong way round. Remember the opening of the inequality symbol is by the greater value."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 91666,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/df66e372-6a95-4184-9897-f3e9279684b3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The diagram shows us that 3k = m. Therefore, if 3k is made less, by subtracting 2, then m will be the larger value and so 3k − 2 < m will always be true, whether values for k and m are positive or negative.",
+        "B": "This would be the case if you were just given the statement 3k-2<m, but the diagram also tells us that 3k is equal to m. Imagine what happens to the bar diagram when you subtract 2 from 3k.",
+        "C": "Maybe you have struggled to combine the inequality with the diagram. The diagram shows us that 3k is equal to m. On the left hand side of the inequality we have 3k - 2. If we are subtracting 2 from 3k can you see what the diagram would now look like?",
+        "D": "Maybe you have struggled to combine the inequality with the diagram. The diagram shows us that 3k is equal to m. On the left hand side of the inequality we have 3k - 2. If we are subtracting 2 from 3k can you see what the diagram would now look like?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 91684,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8f88a95e-7f4a-40a4-815c-93d843246f5d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Maybe you have struggled to combine the inequality with the diagram. The diagram shows us that 3k is equal to m. If we are adding 2 to 3k and adding 1 to m can you picture what the diagram would now look like?",
+        "B": "This would be the case if you were just given the statement 3k+2<m+1, but the diagram also tells us that 3k is equal to m. Imagine what happens to the bar diagram when you add 2 to 3k and add 1 to m.",
+        "C": "The diagram shows us that 3k = m. If we add 2 to 3k, but only 1 to m then the top bar of our diagram will be longer. This shows us that 3k+2 is actually greater than m+1. The inequality symbol is the wrong way round.",
+        "D": "Maybe you have struggled to combine the inequality with the diagram. The diagram shows us that 3k is equal to m. If we are adding 2 to 3k and adding 1 to m can you picture what the diagram would now look like?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 91667,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/46064d77-424c-42ba-ba45-8d8397bd02eb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Maybe you have struggled to combine the inequality with the diagram. The diagram shows us that 3k is equal to m. If we are adding 2 to 3k and adding 2 to m can you picture what the diagram would now look like?",
+        "B": "This would be the case if you were just given the statement 3k+2<m+2, but the diagram also tells us that 3k is equal to m. Imagine what happens to the bar diagram when we add 2 to both 3k and m.",
+        "C": "Looking at the diagram, it can be seen that 3k = m. If we add 2 to both bars then they are still equal in length so 3k+2 is equal to m+2, not less than m+2",
+        "D": "Maybe you have struggled to combine the inequality with the diagram. The diagram shows us that 3k is equal to m. If we are adding 2 to 3k and adding 2 to m can you picture what the diagram would now look like?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 91685,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a285dc6d-76fe-4122-ba45-f73141372f9f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Looking at the diagram, it can be seen that 3k = m. Dividing both sides by 3 gives k = m/3. Given that this is true, if 1 is added to the right-hand side it will now be bigger than k.",
+        "B": "This would be the case if you were just given the statement k < m/3 + 1, but the diagram also tells us that 3k is equal to m. What proportion of m is the same as k in the diagram?",
+        "C": "Maybe you have struggled to combine the inequality with the diagram. The diagram shows us that 3k is equal to m. What proportion of m is k equal to?",
+        "D": "Maybe you have struggled to combine the inequality with the diagram. The diagram shows us that 3k is equal to m. What proportion of m is k equal to?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 91668,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5cf2ec49-e028-4539-9fc0-2bcd27f872e5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Maybe you tried to visualise a quarter of the 4 bar and add it on. But remember, the diagram is not drawn to scale. What could happen when we add 1 to the 4 bar?",
+        "B": "This diagram is not to scale and we have no information on the value of p. We do not know whether adding 1 would make the 4 bar longer than p, the same as p or shorter than p.",
+        "C": "Maybe you assumed the gap was less than 1 in width. But remember, the diagram is not drawn to scale. What could happen when we add 1 to the 4 bar?",
+        "D": "Maybe you have struggled to combine the inequality with the diagram. The diagram shows us that 4 is less than p, but it is not drawn to scale. What would happen if we added 1 to the 4 bar?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 91686,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/49c7e7a9-dff3-4bbc-962c-45a1a109f6d2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You may have assumed the gap in the diagram was shorter than 1 in width. But remember, the diagram is not drawn to scale. What could we have left when we subtract 4 from p?",
+        "B": "This diagram is not to scale and we have no information on the value of p. Therefore we do not know the width of the missing section. When we subtract 4 from p we could get an answer less than 1, equal to 1 or greater than 1. Therefore the statement is only sometimes true.",
+        "C": "You may have assumed the gap in the diagram was greater than 1 in width. But remember, the diagram is not drawn to scale. What could we have left when we subtract 4 from p?",
+        "D": "Maybe you have struggled to combine the inequality with the diagram. The diagram shows us that p is greater than 4. What values could we be left with if we subtract 4 from p?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 91669,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/25c46ead-c876-44a1-b5c1-72b68469eb71.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Have a think about what has changed to the left and right sides of the equation. Will the left hand side or the right hand side now be greater? Remember to think about what would happen with negative numbers as well",
+        "B": "Comparing x = y – 4 with Katie’s statement: x > y − 5, it can be seen that the right-hand side of Katie’s expression is 1 less than the right-hand side of the original equation. Therefore, she is correct in stating x > y − 5 as if you have taken 1 away from the right hand side it will now be smaller than the left hand side. Tom’s statement is not always true: it is for positive values but not negative amounts. An example of a set of negative values that fit the original equation are x = −6, y = −2. Substituting these into Tom’s statement gives −12 > −6, which is clearly false.",
+        "C": "You're nearly correct! Have you thought about what effect negative numbers would have on your answer?",
+        "D": "You may have made a mistake with your negative numbers. Have a think about what has changed in Tom and Katie's statements. How did Katie get from y-4 to y-5?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 91687,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ca4f2162-2d92-42e4-9827-32497d8ea592.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Comparing 2x = y with Jo’s statement of 2x ＋ 1 > y, it can be seen that the left-hand side of Jo’s expression is 1 more than the left-hand side of the original equation, whereas the right-hand has stayed the same. Therefore, she is correct in stating 2x ＋ 1 > y. Paul’s statement is not always true: it is for positive values but not negative amounts. An example of a set of negative values that fit the original equation is x = −2, y = −4. Substituting these into Tom’s statement gives ＋4 < −4, which is clearly false.",
+        "B": "You may have got your inequalities the wrong way round. Remember the opening of the inequality is next to the greater value.",
+        "C": "You may not have considered the case where x and y are negative or zero. Have another go, but substitute some negative values in as x and y.",
+        "D": "Have a think about what has changed to the left and right sides of the equation. Will the left hand side or the right hand side now be greater? Remember to think about what would happen with negative numbers as well"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

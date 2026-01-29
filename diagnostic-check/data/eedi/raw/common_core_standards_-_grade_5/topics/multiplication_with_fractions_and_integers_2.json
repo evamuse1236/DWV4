@@ -1,0 +1,147 @@
+{
+  "shortcode": "bijj",
+  "name": "Multiplication with fractions and integers 2",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 64,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate unit fractions of an amount",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiply proper fractions in the form: Fraction × Integer",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 100996,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3791879f-dd08-4294-a1ed-c0c6efd83047.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. It may help to write the number 3 as a fraction. We can write 3 as 3/1. Now we can multiply the numerators and multiply the denominators.",
+        "B": "It looks like you have multiplied the denominator by 3. It may help to write the number 3 as a fraction. We can write 3 as 3/1. Now which numbers do you need to multiply together?",
+        "C": "It looks like you have multiplied both the numerator and the denominator by 3. It may help to write the number 3 as a fraction. We can write 3 as 3/1.",
+        "D": "Multiplying by 1/3 is the same as dividing by 3, and 3 ÷ 3 = 1. Note that any number multiplied by its reciprocal equals 1. The numbers in this question are reciprocal to one another. To find a reciprocal, flip the numerator and denominator, e.g. reciprocal of 1/3 is 3/1 = 3."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101015,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/339034a4-d0b2-4c35-887c-308a9d9d378e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Multiplying by 1/6 is the same as dividing by 6, and 6 ÷ 6 = 1. Note that any number multiplied by its reciprocal equals 1. The numbers in this question are reciprocal to one another. To find a reciprocal, flip the numerator and denominator, e.g. reciprocal of 1/6 is 6/1 = 6.",
+        "B": "It looks like you have multiplied both the numerator and the denominator by 6. It may help to write the number 6 as a fraction. We can write 6 as 6/1.",
+        "C": "It looks like you have multiplied the denominator by 6. It may help to write the number 6 as a fraction. We can write 6 as 6/1. Now which numbers do you need to multiply together?",
+        "D": "Not quite. It may help to write the number 6 as a fraction. We can write 6 as 6/1. Now we can multiply the numerators and multiply the denominators."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 100997,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/84816ec7-e5cc-4ede-b20b-4c38a2186580.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Think of the 9 written as a fraction, so 9/1. The calculation is 1/5 ✕ 9/1. When multiplying fractions, find the product of the numerator and denominator separately: (1 ✕ 9)/(5 ✕ 1) = 9/5. This can be written as a mixed number because 5 goes into 9 once with 4 remaining. We write it as 1 and 4/5",
+        "B": "I think you might have multiplied both the numerator and denominator by 9. It might help to write the number 9 as a fraction. 9 becomes 9/1",
+        "C": "Not quite! It might help here to write the number 9 as a fraction. 9 becomes 9/1. Now have another go :)",
+        "D": "There is a chance you might have worked this out correctly, but forgotten to simplify your answer. 1/5 ✕ 9 gives us 9/5, but what is this as a mixed number?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101016,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b4a8691c-289f-4740-9375-76b0a651c714.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have worked it out correctly, but the question did not state that it had to be in a certain format. Could your fraction be written in any other way?",
+        "B": "I think you have worked it out correctly, but your answer can also be simplified. Could your fraction be written in any other way?",
+        "C": "Think of the 15 written as a fraction, so 15/1. The calculation is 1/7 ✕ 15/1. When multiplying fractions, find the product of the numerator and denominator separately: (1 ✕ 15)/(7 ✕ 1) = 15/7, which is Paul’s answer. Also, this can be written as a mixed number because 7 goes into 15 twice with 1 remaining. We write it as 2 and 1/7, so Jo is also correct.",
+        "D": "It might help to write the number 15 as a fraction and then do the multiplications. 15 becomes 15/1."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 100998,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/90f154f4-d31f-4506-939d-f5c0747315b8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Working on the left-hand side, think of the 5 written as a fraction, so 5/1. The calculation is 5/1 ✕ 1/6. When multiplying fractions, find the product of the numerator and denominator separately: (5 ✕ 1)/(1 ✕ 6) = 5/6 = 5 ÷ 6.",
+        "B": "Not quite. If the answer was 1/6 then we have just replaced the multiplication symbol with a division symbol which would not be the same calculation. You could try working out 5 x 1/6 and see if the answer helps you figure out what is missing.",
+        "C": "Not quite! You could try working out 5 x 1/6 and see if the answer helps you figure out what is missing. You may find it helpful to write 5 as 5/1",
+        "D": "Try working out 5 x 1/6 and see if the answer helps you figure out what is missing. You may find it helpful to write 5 as 5/1"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101017,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/21a5d68e-baf9-4a66-b05e-62c8c3b36401.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! You could try working out 7 x 1/4 and see if the answer helps you figure out what is missing. You may find it helpful to write 7 as 7/1",
+        "B": "Not quite. If the answer was 1/4 then we have just replaced the multiplication symbol with a division symbol which would not be the same calculation. You could try working out 7 x 1/4 and see if the answer helps you figure out what is missing.",
+        "C": "Working on the left-hand side, think of the 7 written as a fraction, so 7/1. The calculation is 7/1 ✕ 1/4. When multiplying fractions, find the product of the numerator and denominator separately: (7 ✕ 1)/(1 ✕ 4) = 7/4 = 7 ÷ 4.",
+        "D": "Try working out 7 x 1/4 and see if the answer helps you figure out what is missing. You may find it helpful to write 7 as 7/1"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 100999,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/304f997d-0f6c-452a-aead-f16aa121508d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find 2/7 of a number we can find 1/7 first by dividing by 7 and then multiply our answer by 2. So 2/7 x 3 is the same as 3 ÷ 7 x 2",
+        "B": "Nearly! You have divided 3 by 2 and then multiplied by 7. In order to find 2/7 of 3 why don't we start by finding 1/7 first. How would you do that?",
+        "C": "If you divide by 7 and then multiply by 7 you have not actually changed the number. We would still be left with 3. Instead think of the multiplication as \"of\". We need to find 2/7ths of 3. How would we find 1/7th?",
+        "D": "You might have struggled here with your order of operations. Have another go :) It may help to think of the multiply sign as \"of\" so we are trying to work out 2/7ths of 3. How would we find 1/7th?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101018,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/50c30f29-e06d-4a1e-a725-ad2a7746f17f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If you divide by 5 and then multiply by 5 you have not actually changed the number. We would still be left with 7. Instead think of the multiplication as \"of\". We need to find 4/5ths of 7. How would we find 1/5th?",
+        "B": "Nearly! You have divided 7 by 4 and then multiplied by 5. In order to find 4/5 of 7 why don't we start by finding 1/5 first. How would you do that?",
+        "C": "To find 4/5 of a number we can find 1/5 first by dividing by 5 and then multiply our answer by 4. So 4/5 x 7 is the same as 7 ÷ 5 x 4",
+        "D": "You might have struggled here with your order of operations. Have another go :) It may help to think of the multiply sign as \"of\" so we are trying to work out 4/5ths of 7. How would we find 1/5th?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101000,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6bdc4f44-999f-4582-beb5-c313a7af56d5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You may have got confused with reciprocals. \"of\" tends to mean multiply in maths so on the left hand side we have 1/5 x 18. Can you now work out what is missing on the right hand side?",
+        "B": "I think you have correctly identified that we need to replace the ? with 1/5, but you have struggled converting it to a decimal. Try multiplying the numerator and denominator by 2 to make it into tenths and see if that helps",
+        "C": "Remember, everything on the left-hand side needs to equal everything on the right-hand side. If we compare what’s there at the moment, ‘of’ is another way of saying multiply, and the 18 is the same both sides. This means that the only value missing from the right-hand side is 1/5. Given the selection of answers, we need to represent 1/5 in decimal form: 1/5 = 2/10 = 2 ÷ 10 = 0.2.",
+        "D": "I think you have correctly identified that we need to replace the ? with 1/5, but you have struggled converting it to a decimal. Try multiplying the numerator and denominator by 2 to make it into tenths and see if that helps"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101019,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a9b0b93a-7064-468c-aa37-a250e88272ee.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have correctly identified that we need to replace the ? with 1/20, but you have struggled converting it to a decimal. Try multiplying the numerator and denominator by 5 to make it into hundredths and see if that helps",
+        "B": "Remember, everything on the left-hand side needs to equal everything on the right-hand side. If we compare what’s there at the moment, ‘of’ is another way of saying multiply, and the 7 is the same both sides. This means that the only value missing from the right-hand side is 1/20. Given the selection of answers, we need to represent 1/20 in decimal form: 1/20 = 5/100 = 5 ÷ 100 = 0.05",
+        "C": "I think you have correctly identified that we need to replace the ? with 1/20, but you have struggled converting it to a decimal. Try multiplying the numerator and denominator by 5 to make it into hundredths and see if that helps",
+        "D": "You may have got confused with reciprocals. \"of\" tends to mean multiply in maths so on the left hand side we have 1/20 x 7. Can you now work out what is missing on the right hand side?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

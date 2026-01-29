@@ -1,0 +1,153 @@
+{
+  "shortcode": "vqx",
+  "name": "Estimating volume",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 202,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Measure and estimate the volume and capacity of objects in terms of other objects",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Estimate the volume or capacity of an object",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the volume of a prism by counting cubes",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 129087,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c4392fd2-d9f4-4665-b678-0ed323fb165e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This bucket does look like it could be two cans tall, but it's width and depth look to be more than one can. Try to think about how you could arrange the cans in the base of the bucket, how many cans do you think you could fit in each layer?",
+        "B": "This bucket does look to be two cans tall, but I think you could fit more than 3 cans in the bottom of it, remember that it is circular at the bottom. Try to think about how you could arrange the cans in the base of the bucket, how many cans do you think you could fit there?",
+        "C": "15 cans is the most accurate estimation. If you imagine the circle at the bottom of the bucket, you could fit 6 cans in a flower shape, and the bucket looks like it is two cans tall, so you can have 2 layers of 6, 2x6=12. There will be gaps between the cans, and these could be filled by another 3 cans of soft drink.",
+        "D": "I think you may have allowed too many extra cans for spaces. Try to imagine the circle of the bucket's base, and how many cans you could fit there, then consider how tall the bucket is in relation to the cans. Multiplying these should give a good estimate."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129227,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2adb209d-56d8-40f7-9025-381ebe07991a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have overestimated the volume here. Try to imagine lots of those cups fitting into the bucket. Start with the bottom, how could you arrange them to fit the most in? How tall is the bucket in terms of the cups?",
+        "B": "To do this question, I think about placing the whole cups inside the bucket. On the bottom layer I could arrange 6 cups in a flower type pattern. Then I'm going to think about how many layers I could have, the bucket is about 4 cups tall. That gives me 6x4=24 cups. My cups don't fit exactly into a circle, I'll have some gaps, and they can be filled by another 6 cups of tea, so in total I've used 30 cups.",
+        "C": "15 is not quite the most accurate. Try to imagine lots of those cups fitting into the bucket. Start with the bottom, how could you arrange them to fit the most in? How tall is the bucket in terms of the cups?",
+        "D": "I think this is nearly how many cups would fit into the bucket on the bottom layer. If we're trying to think about how many cups would fill it, you could think about how many cups tall the bucket is too."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129088,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/051458eb-5eba-4c97-bc4b-2f1911da40cd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The teaspoon holds about 5 ml.",
+        "B": "Drinks bottles usually vary in size between about 200 ml and 2000 ml.  500 ml would be a typical size.",
+        "C": "The cooking pot holds about 5000 ml.",
+        "D": "Only the bath is big enough to hold 50,000 ml."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129228,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0788496d-4f56-4f2f-80ae-9cc4b618dbe0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The teaspoon holds about 5 ml.",
+        "B": "500 ml is a typical size for a drinks bottle.",
+        "C": "The cooking pot holds about 5000 ml.",
+        "D": "The bath is big enough to hold 50,000 ml."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129089,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ff05c566-0210-4cc5-aaa1-82efa2d47100.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The egg cup is the smallest object at 87 cm³.",
+        "B": "The piggy bank is the second smallest object at 1013 cm³.",
+        "C": "The cereal box is the second largest object at 4172 cm³.",
+        "D": "The chest of drawers is the largest object at 197,177 cm³."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129229,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/06e5b714-e5ac-48b3-8b29-8a2a417b6660.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The egg cup is the smallest object at 87 cm³.",
+        "B": "The piggy bank is the second smallest object at 1013 cm³.",
+        "C": "The cereal box is the second largest object at 4172 cm³.",
+        "D": "The chest of drawers is the largest object at 197,177 cm³."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129090,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/41453c12-cc93-4ebd-ab43-497dea0c4689.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "9cm³ would be the volume of one layer, because one layer uses 9 cubes. This shape is two layers tall, so what will the volume be?",
+        "B": "9cm³ is the volume of one layer, because one layer uses 9 cubes. This shape is two layers tall, so 2x9 = 18cm³.",
+        "C": "I think you've counted the number of faces you can see on the shape, so a part of the surface area. To find the volume, try to look at how many cubes form the top layer, and then multiply by the number of layers there are.",
+        "D": "I think you've counted the number of faces you can see on the shape and doubled for the faces you can't see, this would give the surface area. To find the volume, try to look at how many cubes form the top layer, and then multiply by the number of layers there are."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129230,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/60f770c7-ec60-4f7d-9006-0dca9460956a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've counted the number of faces you can see on the shape, so a part of the surface area. To find the volume, try to look at how many cubes form the top layer, and then multiply by the number of layers there are.",
+        "B": "I think you've counted the number of faces you can see on the shape and doubled for the faces you can't see, this would give the surface area. To find the volume, try to look at how many cubes form the top layer, and then multiply by the number of layers there are.",
+        "C": "I think you may have miscounted. To find the volume, try to look at how many cubes form the top layer, and then multiply by the number of layers there are.",
+        "D": "9cm³ is the volume of the top layer, because one layer uses 9 cubes. This shape is six layers tall, so 6x9 = 54cm³."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 129091,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c7574bbd-a67e-4425-8cd6-0e553ef04297.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've counted the number of cubes you can see on the shape, however, there are some cubes you cannot see. To help, find the number of cubes on the front layer, then multiply by how many layers there are.",
+        "B": "I think you've counted the number of faces you can see on the shape and doubled for the faces you can't see, this would give the surface area. To find the volume, try to look at how many cubes form the front layer, and then multiply by the number of layers there are.",
+        "C": "6cm³ would be the volume of the front layer, because it is made of 6 cubes. This shape is made of two layers, what will the total volume be?",
+        "D": "6cm³ would be the volume of the front layer, because it is made of 6 cubes. There are two layers on this shape, so the volume is 2x6 = 12cm³."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129231,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7eb7393e-6b9f-4e21-8b72-1d7d35535e49.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've missed some of the cubes out. Take care to notice the cubes at the back on the bottom.",
+        "B": "If we split this shape into three layers from left to right, it might help us. The shape on the left is an L-shape, consisting of 3 cubes, in the middle we have 1 cube, and on the right we have another L-shape of 3 cubes. Adding those together we have 3+1+3=7cm³",
+        "C": "I think you've counted the cubes you can see, but there are some you cannot see, supporting other cubes. Take care to notice the cubes at the back on the bottom.",
+        "D": "I think you've counted the faces rather than the total cubes. Remember that sometimes we can see 3 faces of a cube, but we only need to count it once."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

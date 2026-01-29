@@ -1,0 +1,147 @@
+{
+  "shortcode": "vy7",
+  "name": "Order numbers in standard form",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 34,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Order numbers in standard form that are greater than 1",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Order numbers in standard form that are between 0 and 1 ",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 131746,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f15acfc1-e402-4cef-9bdb-187f82f1b840.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you just looked at the first numbers in Tom's statement. Remember 10⁴ = 10 ✕ 10 ✕ 10 ✕ 10 and 10⁵ = 10 ✕ 10 ✕ 10 ✕ 10 ✕ 10. If we use this to calculate 7 x 10⁴ and 6 x 10⁵, what do we get? Which is bigger? Can you use the same method to see if Katie is correct?",
+        "B": "Katie is correct as 7 > 6.59, when we multiply by 10⁴ it is the same as multiplying by 10,000 and 70,000 > 65,900. Tom is incorrect as multiplying by 10⁴ is the same as multiplying by 10,000 and multiplying by 10⁵ is the same as multiplying by 100,000 and 70,000 < 600,000.",
+        "C": "Not quite! Remember 10⁴ = 10 ✕ 10 ✕ 10 ✕ 10 and 10⁵ = 10 ✕ 10 ✕ 10 ✕ 10 ✕ 10. If we use this to calculate 7 x 10⁴ and 6 x 10⁵, what do we get? Which is bigger? Can you use the same method to see if Katie is correct?",
+        "D": "Not quite! At least one of them is correct. Remember 10⁴ = 10 ✕ 10 ✕ 10 ✕ 10 and 10⁵ = 10 ✕ 10 ✕ 10 ✕ 10 ✕ 10. If we use this to calculate 7 x 10⁴ and 6 x 10⁵, what do we get? Which is bigger? Can you use the same method to see if Katie is correct?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133939,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c7d98cec-d329-40f6-b1cb-2db071626d57.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you have only looked at the first numbers rather than the powers of 10! Remember 10⁴ = 10 ✕ 10 ✕ 10 ✕ 10 and 10⁵ = 10 ✕ 10 ✕ 10 ✕ 10 ✕ 10. If we use this to calculate 5 x 10⁴ and 6 x 10⁵, what do we get? Which is bigger?",
+        "B": "Not quite! Remember 10⁴ = 10 ✕ 10 ✕ 10 ✕ 10. If we use this to calculate 5 x 10⁴ and 5.64 x 10⁴, what do we get? Which is bigger?",
+        "C": "10⁴ = 10 ✕ 10 ✕ 10 ✕ 10 and 10⁵ = 10 ✕ 10 ✕ 10 ✕ 10 ✕ 10. Therefore 5 ✕10⁴ = 50,000 and 5.64 ✕10⁴ = 56,400. 50,000 < 56,400 so Tom is correct. 6 ✕ 10⁵ = 600,000 and 50,000 < 600,000 so Katie is also correct.\n\n",
+        "D": "Not quite! Remember 10⁴ = 10 ✕ 10 ✕ 10 ✕ 10 and 10⁵ = 10 ✕ 10 ✕ 10 ✕ 10 ✕ 10. If we use this to calculate 5 x 10⁴ and 6 x 10⁵, what do we get? Which is bigger? Can you use the same method to see if Tom is correct."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131747,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8841e06a-1972-4008-8dfd-e05f1147b307.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! 5 x 10 is equal to 50. Remember we are looking for the largest number as we have put the numbers in ascending order of size, which is smallest to largest.",
+        "B": "Not quite! Remember we don't just add zeros on the end of the answer, we must multiply by 1000 when x10³. If we do this for 4.53 x 10³ and 4.6 x 10³, which is larger?",
+        "C": "Not quite! 4.9 x 10² is the same as 4.9 x 100 = 490. What is the value of all the other options? Remember we are looking for the largest number as we have put the numbers in ascending order of size.",
+        "D": "All these calculations involve positive powers of 10 so we know that the calculations with the highest powers will produce the largest numbers. 4.6 x 10³ = 4600 and 4.53 x 10³ = 4530. 4600 > 4530, so 4.6 x 10³ will be the last number in the list."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133940,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7e7adfa4-f29f-4049-89fc-0b251d70700c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! This would be our largest number as x10⁴ is the same as multiplying by 10,000. Remember descending means largest to smallest.",
+        "B": "All these calculations involve positive powers of 10 so we know that the calculations with the smallest powers produce the smallest numbers. 4.9 x 10² = 490 and 4.53 x 10² = 453. 490 > 453, so 4.53 x 10² will be the last number in the list.",
+        "C": "Not quite! x10² is the same as x 100. If we calculate 4.53 x 10² and 4.9 x 10², which is smaller? Remember we are looking for the smallest number as we have to put the numbers in descending order of size.",
+        "D": "Not quite! x10³ is the same as multiplying by 1000. What would 4.16 x 10³ be? Remember we are looking for the smallest number as we have put the numbers in descending order of size."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131748,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4644e8c5-837d-4d5b-82b4-007bab847e7e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Remember 10^-3 = 1/(10 ✕ 10 ✕ 10). Use this to work out and compare each of these numbers to see who is correct. \n",
+        "B": "Not quite. Remember 10^-2 = 1/(10 ✕ 10) and 10^-3 = 1/(10 ✕ 10 ✕ 10). What happens if you multiply 8 by each of these numbers? Which will be bigger?",
+        "C": "8 ✕ 10^-3 = 8 ✕ 1/(10 ✕ 10 ✕ 10) = 0.008. 8 ✕ 10^-2 = 8 ✕ 1/(10 ✕ 10) = 0.08. 0.008 < 0.08 so Tom is correct. 9 ✕ 10^-3 = 9 ✕ 1/(10 ✕ 10 ✕ 10)) = 0.009. This is bigger than 0.008 so Katie is also correct.\n",
+        "D": "Not quite! Remember 10^-3 = 1/(10 ✕ 10 ✕ 10) and 10^-2 = 1/(10 ✕ 10). Use this to work out and compare each of these numbers to see who is correct. \n"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133941,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1ca00cd3-0e5c-4599-bd2c-38c212591331.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! 6 is smaller than 7, will this still be true when we multiply by 10^-5. Remember 10^-5 = 1/(10 ✕ 10 ✕ 10 ✕ 10 ✕ 10).",
+        "B": "Not quite. Remember 10^-4 = 1/(10 ✕ 10 ✕ 10 ✕ 10) and 10^-5 = 1/(10 ✕ 10 ✕ 10 ✕ 10 ✕ 10). What happens if you multiply 6 by each of these numbers? Which will be bigger?",
+        "C": "Not quite. Remember 10^-4 = 1/(10 ✕ 10 ✕ 10 ✕ 10) and 10^-5 = 1/(10 ✕ 10 ✕ 10 ✕ 10 ✕ 10). What happens if you multiply 6 by each of these numbers? Which will be bigger? Can use the same idea to compare the numbers in Tom's statement.",
+        "D": "Multiplying by 10 to a negative power, is the same as dividing by 10 to that power. For example, 10^-5 = 1/(10 ✕ 10 ✕ 10 ✕ 10 ✕ 10) = 1/100,000. Multiplying by 1/100,000 is the same as dividing by 100,000. Therefore 6 ✕ 10^-5 = 0.00006 and 7 ✕ 10^-5 = 0.00007. As 6 < 7, 0.00006 < 0.00007. So Tom is incorrect. Multiplying by 10^-4 is the same as dividing by 10,000. 6 ✕ 10^-4 = 0.0006. 0.00006 < 0.0006. So Katie is also incorrect. \n"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131749,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bafd5106-fed1-4ac3-9d25-9ef66149519e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Remember 10^-4 = 1/(10 ✕ 10 ✕ 10 ✕ 10). Use this to look at Katie and Tom's statements again. Calculate the numbers and see if they are true.\n",
+        "B": "Not quite. Remember 10^-4 = 1/(10 ✕ 10 ✕ 10 ✕ 10) and 10^-5 = 1/(10 ✕ 10 ✕ 10✕ 10 ✕ 10). Use this to look at Katie and Tom's statements again. Calculate the numbers and see if they are true.",
+        "C": "Multiplying by 10 to a negative power, is the same as dividing by 10 to that power. For example, 10^-4 = 1/(10 ✕ 10 ✕ 10 ✕ 10) = 1/10,000. Multiplying by 1/10,000 is the same as dividing by 10,000. Therefore 7 ✕ 10^-4 = 0.0007 and 6 ✕ 10^-5 = 0.00006. 0007 > 0.00006 so Tom is correct. 6.59 ✕ 10^-4 = 0.000659. By comparing digits with the same place value we can see 0.0007 > 0.000659 so Katie is also correct.\n\nTom is correct as 10^-4 is the same as dividing by 10,000, and 10^-5 is the same as dividing by 100,000. Katie is correct as 7 x 10^-4 is the same as 0.0007 and 6.59 x 10^-4 is the same as 0.000659, and 0.0007 > 0.000659.",
+        "D": "Not quite. At least one person is correct. Remember 10^-4 = 1/(10 ✕ 10 ✕ 10 ✕ 10) and 10^-5 = 1/(10 ✕ 10 ✕ 10✕ 10 ✕ 10). Use this to look at Katie and Tom's statements again. Calculate the numbers and see if they are true."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133942,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5d453bc0-cd9b-45d6-81a3-170a0f35834b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Is 2.3 greater than or less that 2.03? Will the same be true if we multiply by them both by 10^-4? Remember 10^-4 = 1/(10 ✕ 10 ✕ 10 ✕ 10).",
+        "B": "Not quite. Remember 10^-4 = 1/(10 ✕ 10 ✕ 10 ✕ 10) and 10^-5 = 1/(10 ✕ 10 ✕ 10✕ 10 ✕ 10). Use this to look at Katie and Tom's statements again. Calculate the numbers and see if they are true.",
+        "C": "Not quite. Remember 10^-4 = 1/(10 ✕ 10 ✕ 10 ✕ 10) and 10^-5 = 1/(10 ✕ 10 ✕ 10✕ 10 ✕ 10). Use this to look at Katie and Tom's statements again. Calculate the numbers and see if they are true.",
+        "D": "Multiplying by 10 to a negative power, is the same as dividing by 10 to that power. For example, 10^-4 = 1/(10 ✕ 10 ✕ 10 ✕ 10) = 1/10,000. Multiplying by 1/10,000 is the same as dividing by 10,000. Therefore 2.3 ✕ 10^-4 = 0.00023 and 2.03 ✕ 10^-4 = 0.000203. As 2.3 > 2.03, 0.00023 > 0.000203. So Tom is incorrect. Multiplying by 10^-5 is the same as dividing by 100,000. 2.3 ✕ 10^-5 = 0.000023. 0.00023 > 0.000023. So Katie is also incorrect. \n"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131750,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6d311356-9c5d-4e1f-8576-43eb4f0f5e4a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Multiplying by 10 to a negative power, is the same as dividing by 10 to that power. For example, 10^-2 = 1/(10 ✕ 10) = 1/100. Multiplying by 1/100 is the same as dividing by 100. Using this to convert these into ordinary numbers we get: 0.037, 0.0307, 0.0037 and 0.00307. Comparing numbers with the same place value we can tell 0.037 is the largest in the list, therefore 3.7 ✕ 10^-2 will be last when the numbers are arranged in ascending order.\n",
+        "B": "Not quite! 3.07 may have more digits but it doesn't necessarily mean it will be the biggest. Remember to compare numbers with the same place value.",
+        "C": "Not quite! Remember 10^-3 = 1/(10 ✕ 10 ✕ 10). What happens if you multiply 3.7 by 1/1000? Will it give you the largest number in this list?",
+        "D": "Not quite! Remember 10^-3 = 1/(10 ✕ 10 ✕ 10). What happens if you multiply 3.07 by 1/1000? Will it give you the largest number in this list?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133943,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ba541a47-8d80-472f-a668-7b626f8e9625.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! Remember 10^-2 = 1/(10 ✕ 10). What happens if you multiply 3.7 by 1/100? Will it give you the smallest number in this list?",
+        "B": "Not quite! Remember 10^-2 = 1/(10 ✕ 10). What happens if you multiply 3.07 by 1/100? Will it give you the smallest number in this list?",
+        "C": "Not quite! 3.7 may have less digits but it doesn't necessarily mean it will be the smallest. Remember to compare numbers with the same place value.",
+        "D": "Multiplying by 10 to a negative power, is the same as dividing by 10 to that power. For example, 10^-3 = 1/(10 ✕ 10 ✕ 10) = 1/1000. Multiplying by 1/1000 is the same as dividing by 1000. Using this to convert these into ordinary numbers we get: 0.037, 0.0307, 0.0037 and 0.00307. Comparing numbers with the same place value we can tell 0.00307 is the smallest in the list, therefore 3.07 ✕ 10^-3 will be first when the numbers are arranged in ascending order.\n"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,153 @@
+{
+  "shortcode": "bihl",
+  "name": "Draw and measure angles between 180° and 360°",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 82,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Use a protractor to measure angles between 180° and 270°",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use a protractor to measure angles between 270° and 360°",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use a protractor to draw angles between 270° and 360°",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 145936,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0a0c2b5e-d9ae-4069-aba2-08371af30430.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We start measuring from the 0 that is on our baseline. That is on the outer scale, so following the outer scale round clockwise we get to 295⁰ at point A, half way between 290⁰ and 300⁰",
+        "B": "Nearly! Dot B is halfway between 280⁰ and 290⁰ - this is the angle 285⁰. We need 295⁰.",
+        "C": "Not quite, look at the red baseline of the angle - does it go through zero on the inside or outside scale? Now follow the correct scale all the way around until we reach 295⁰",
+        "D": "Not quite, we have to be really careful about whether we use the inner or outer scale. Look at the red baseline of the angle - does it go through zero on the inside or outside scale?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 145956,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea50d624-b02c-4f54-84ac-859810c28484.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We start measuring from the 0 that is on our baseline. That is on the outer scale, so following the outer scale round clockwise we get to 315⁰ at point A, half way between 310⁰ and 320⁰",
+        "B": "Nearly! Dot B is halfway between 300⁰ and 310⁰ - this is the angle 305⁰. We need 315⁰.",
+        "C": "Not quite, look at the red baseline of the angle - does it go through zero on the inside or outside scale? Now follow the correct scale all the way around until we reach 315⁰",
+        "D": "Not quite, we have to be really careful about whether we use the inner or outer scale. Look at the red baseline of the angle - does it go through zero on the inside or outside scale?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 145937,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9a593854-fd4f-4e40-bf7a-02f1d6bab51b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, look at the vertical red arm of the angle - does it go through zero on the inside or outside scale? This tells us whether or not we use the inside or outside scale.",
+        "B": "Nearly! The arm of this angle goes through the number halfway between 200⁰ and 210⁰ - look again at the protractor.",
+        "C": "Not quite, look at the red arm of the angle facing upwards - does it go through zero on the inside or outside scale? This tells us whether or not we use the inside or outside scale.",
+        "D": "We use the outer scale here as the top arm of the angle goes through 0 on the outer scale. We then count clockwise around the protractor until we reach the other arm of the angle that is halfway between 200⁰ and 210⁰ - this is 205⁰."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 145957,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/912ff408-1eac-4ffe-b508-d8f2d5fb0f94.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, look at the vertical red arm of the angle - does it go through zero on the inside or outside scale? This tells us whether or not we use the inside or outside scale.",
+        "B": "We use the outer scale here as the top arm of the angle goes through 0 on the outer scale. We then count clockwise around the protractor until we reach the other arm of the angle that is halfway between 210⁰ and 220⁰ - this is 215⁰.",
+        "C": "Not quite, look at the vertical red arm of the angle - does it go through zero on the inside or outside scale? This tells us whether or not we use the inside or outside scale.",
+        "D": "Nearly! The arm of this angle is half way between 210⁰ and 220⁰. What angle will that be?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 145938,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6a85d57c-0cad-4760-a56e-1c89e3c6086f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, look at the vertical red leg of the angle - does it go through zero on the inside or outside scale? This tells us whether or not we use the inside or outside scale.",
+        "B": "Not quite, look at the vertical red leg of the angle - does it go through zero on the inside or outside scale? This tells us whether or not we use the inside or outside scale.",
+        "C": "Nearly! Dot C is halfway between 280⁰ and 290⁰ - this is the angle 285⁰. We need 295⁰.",
+        "D": "Dot D is halfway between 290⁰ and 300⁰ on the inside scale - this is the angle 295⁰."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 145958,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7e3b962e-8756-4de8-8f2a-125e744e4347.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, look at the vertical red leg of the angle - does it go through zero on the inside or outside scale? This tells us whether or not we use the inside or outside scale.",
+        "B": "Not quite, look at the vertical red leg of the angle - does it go through zero on the inside or outside scale? This tells us whether or not we use the inside or outside scale.",
+        "C": "Dot C is halfway between 310⁰ and 320⁰ on the inside scale - this is the angle 315⁰.",
+        "D": "Nearly! Dot D is halfway between 320⁰ and 330⁰ - this is the angle 325⁰. We need 315⁰."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 145939,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7e003423-3764-4bb0-a544-4307ba3678b4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly! The arm of this angle points to half way between 330⁰ and 340⁰ - look again at the protractor.",
+        "B": "I think you have looked at the outer scale. Remember to check which scale has 0 on the baseline. If you look here you can see that the horizontal arm of the angle goes through 0 on the inner scale so that is the scale we must use.",
+        "C": "We start by checking which scale has 0 on the baseline. If you look here you can see that the horizontal arm of the angle goes through 0 on the inner scale so that is the scale we must use. If we count all the way around in the direction of the shaded angle we get to half way between 330⁰ and 340⁰ on the inside scale - this is 335⁰.",
+        "D": "I think you have looked at the outer scale. Remember to check which scale has 0 on the baseline. If you look here you can see that the horizontal arm of the angle goes through 0 on the inner scale so that is the scale we must use."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 145959,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a4ca8cb2-8b22-407a-9a62-f7db8187a077.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have looked at the outer scale. Remember to check which scale has 0 on the baseline. If you look here you can see that the horizontal arm of the angle goes through 0 on the inner scale so that is the scale we must use.",
+        "B": "We start by checking which scale has 0 on the baseline. If you look here you can see that the horizontal arm of the angle goes through 0 on the inner scale so that is the scale we must use. If we count all the way around in the direction of the shaded angle we get to half way between 280⁰ and 290⁰ on the inside scale - this is 285⁰.",
+        "C": "Not quite - remember 180⁰ is a straight angle. Remember to first check which scale has 0 on the baseline. If you look here you can see that the horizontal arm of the angle goes through 0 on the inner scale so that is the scale we must use. We then need to count around to the other arm of the angle.",
+        "D": "Nearly! The arm of this angle points to half way between 280⁰ and 290⁰ - look again at the protractor."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 145940,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3e8b4422-14bb-4612-8d36-8ad2e76ebe8f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. I think you've measured 60 degrees correctly from the left hand 0, but look at the shaded angle. It is a reflex angle. What will we have to add to 60 to get the size of our angle?",
+        "B": "Not quite, this is the size of the unmarked angle. We want the shaded angle. Have a think about how we can find the shaded angle - what will we need to take 120 away from?",
+        "C": "The unmarked angle is 120⁰ - taking this away from 360⁰ gives us the marked angle which is 240⁰.",
+        "D": "Nearly! I think you have read from the wrong scale. When measuring the unmarked angle make sure you start from the 0 on the right and count up along the inner scale"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 145960,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/afc0d01d-d240-4a07-bf78-35fe37dfff99.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The unmarked angle is 150⁰ - taking this away from 360⁰ gives us the marked angle which is 210⁰.",
+        "B": "Not quite. I think you've measured 30 degrees correctly from the left hand 0, but look at the shaded angle. It is a reflex angle. What will we have to add to 30 to get the size of our angle?",
+        "C": "Not quite, this is the size of the unmarked angle. We want the shaded angle. Have a think about how we can find the shaded angle - what will we need to take 150 away from?",
+        "D": "Nearly! I think you have read from the wrong scale. When measuring the unmarked angle make sure you start from the 0 on the right and count up along the inner scale"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

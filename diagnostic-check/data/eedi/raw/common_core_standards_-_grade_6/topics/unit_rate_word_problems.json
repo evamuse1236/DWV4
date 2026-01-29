@@ -1,0 +1,147 @@
+{
+  "shortcode": "eekr",
+  "name": "Unit rate word problems",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 30,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Use direct proportion to solve unitary missing amounts in problems (e.g. recipes)",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use direct proportion to solve non-unitary missing amounts in problems (e.g. recipes)",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 165423,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c605d572-0226-42eb-b5a5-6bd7b1775228.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the number of minutes it takes Max to write 1 word... The question is asking how many words can Max write in 1 minute?",
+        "B": "There is a difference of 7 between 1 and 8 but to answer this question correctly, you need to think about what you multiply/ divide by to go from 8 to 1...",
+        "C": "This is how many words Max can type in 64 minutes! You need to think about how you go from 8 minutes to 1 minute and apply this to 200...",
+        "D": "If Max types 200 words in 8 minutes then to find how many words he types in 1 minute, we need to divide 200 by 8. 200 ÷ 8 = 25 therefore, Max can type 25 words in 1 minute!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165428,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c0cf2060-b7f9-4a62-adf8-4a06c32fc4ea.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is how many words Kai can type in 16 minutes! You need to think about how you go from 4 minutes to 1 minute and apply this to 120...",
+        "B": "If Kai types 120 words in 4 minutes then to find how many words he types in 1 minute, we need to divide 120 by 4. 120 ÷ 4 = 30 therefore, Kai can type 30 words in 1 minute!",
+        "C": "This is the number of minutes it takes Kai to write 1 word... The question is asking how many words can Kai write in 1 minute?",
+        "D": "These values have a multiplicative relationship, not additive. What do you divide 4 by to get 1? Do the same to the number of words..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165424,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d85edcc8-2141-4bb5-b434-da7b2a919bf4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have accidentally divided the wrong way round and have found how much clip Lucy gets per dollar but the question wants how many dollars per clip...",
+        "B": "There is a difference of 5 between 1 and 6 but to answer this question correctly, you need to think about what you multiply/ divide by to go from 6 to 1...",
+        "C": "I think you have correctly worked out that 15 ÷ 6 = 2.5 but have struggled to convert this decimal into dollars. Double check what place value column the 5 is in, it's not 2.05 which would be $2.05, what is it?",
+        "D": "If Lucy bought 6 hair clips for $15 then to find the cost of one hair clip we do 15 ÷ 6 = 2.5. Therefore, one hair clip costs $2.50!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165429,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5ed87023-965d-4e24-9eed-ea44b7690e7d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "These values have a multiplicative relationship, not additive. What do you divide 5 by to get 1? Do the same to the cost of the pens to find out how much one pen is...",
+        "B": "If Adam bought 5 pens for $21 then to find the cost of one pen we do 21 ÷ 5 = 4.2. Therefore, one pen costs $4.20!",
+        "C": "You have accidentally divided the wrong way round and have found how much pen Adam gets per dollar but the question wants how many dollars per pen...",
+        "D": "I think you have correctly worked out that 21 ÷ 5 = 4.2 but have struggled to convert this decimal into dollars. Double check what place value column the 2 is in, it's not 4.02 which would be $4.02, what is it?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165425,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/67ba4d1b-0173-4348-b979-825686d2ba59.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is how long it would take Joe to make one crust but the question is asking how long it takes him to make 5 crusts!",
+        "B": "There is a difference of 32 between 8 and 40 but to answer this question correctly, you need to think about what you multiply or divide by to go from 40 to 8...",
+        "C": "If Joe can make 8 crusts in 40 minutes, he can make 1 crust in 5 minutes because 40 ÷ 8 = 5. We want to know the time it takes him to make 5 crusts so we do 5 x 5 minutes = 25 minutes!",
+        "D": "You are correct that you need to start by dividing and then multiply. But, if 8 pizza crusts takes 40 minutes, what should you divide by to get the time taken for 1 crust?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165430,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/56983184-8afc-4c2f-88e9-05cc607a55b5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If Ellie can make 9 plates in 54 minutes, she can make 1 plate in 6 minutes because 54 ÷ 9 = 6. We want to know the time it takes her to make 2 plates so we do 2 x 6 minutes = 12 minutes!",
+        "B": "This is how long it would take Ellie to make one plate, but the question is asking how long it takes her to make 2 plates!",
+        "C": "You are correct that you need to start by dividing and then multiply. But, if 9 plates takes 54 minutes, what should you divide by to get the time taken for 1 plate?",
+        "D": "These values have a multiplicative relationship, not additive. If 9 plates takes 54 minutes, what should you divide 54 by to get the time taken for 1 plate?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165426,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cab86c74-547d-47dc-9f23-7d7bfae3aa88.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If a camp uses 3 counselors for 12 campers then it will use 1 counselor for 4 campers. If there are 64 campers, 4 x 16 = 64 therefore, 16 counselors will be needed!",
+        "B": "You have started your calculation correctly but you cannot round the 5.333333333... up to 6, you need to keep the answer as it is!",
+        "C": "Start by finding the number of campers per one counselor and then multiply this value up to get the number of counselors for 64 campers!",
+        "D": "These values have a multiplicative relationship, not additive. What do you multiply 3 by to get 12? Do the reverse to go from 64 to the number of counselors needed..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165431,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/278aec76-ab33-4798-a05d-1357446b14bd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have started your calculation correctly but you cannot round the 3.25... up to 4, you need to keep the answer as it is!",
+        "B": "These values have a multiplicative relationship, not additive. What do you multiply 4 by to get 24? Do the reverse to go from 78 to the number of counselors needed...",
+        "C": "If a camp uses 4 counselors for 24 campers then it will use 1 counselor for 6 campers. If there are 78 campers, 6 x 13 = 78 therefore, 13 counselors will be needed!",
+        "D": "Start by finding the number of campers per one counselor and then multiply this value up to get the number of counselors for 78 campers!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165427,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f54649d5-4519-4dff-97d2-4ab7bf0e6eb1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have mixed up the values, 2 cups of flour makes 12 muffins... Can you use this to work out how many cups are needed to make 18 muffins?",
+        "B": "These values have a multiplicative relationship, not additive. 2 cups of flour is used to make 12 muffins, how many times more is 18 muffins? Apply this value to the cups of flour...",
+        "C": "To go from 12 to 18 you multiply by 1.5 so this is the scale factor. If 2 cups of flour are used for 12 muffins to find the cups of flour for 18 we do 1.5 x 2 = 3 therefore, 3 cups of flour are needed to make 18 muffins!",
+        "D": "This is the correct scale factor, but now you need to apply it to the cups of flour..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165432,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2497c91e-c7d9-4c3b-8926-2b3f502f58de.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the correct scale factor but now you need to apply it to the cups of sugar...",
+        "B": "I think you have mixed up the values, 2 cups of sugar makes 16 cookies... Can you use this to work out how many cups are needed to make 40 cookies?",
+        "C": "These values have a multiplicative relationship, not additive. 2 cups of sugar is used to make 16 cookies, how many times more is 40 cookies? Apply this value to the cups of sugar...",
+        "D": "To go from 16 to 40 you multiply by 2.5 so this is the scale factor. If 2 cups of sugar are used for 16 cookies to find the cups of sugar for 40 we do 2.5 x 2 = 5 therefore, 5 cups of sugar are needed to make 40 cookies!"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,165 @@
+{
+  "shortcode": "vs9",
+  "name": "Addition and subtraction with negative numbers 4",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 58,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify that a problem needs to be solved using subtraction",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Carry out missing number addition problems involving negative integers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Carry out subtraction problems involving one negative integer",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Substitute negative non-integer values into expressions involving no powers or roots",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Subtract with fractions and integers where the answer is less than 0",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 89445,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fdd7f280-ef98-4c28-a0b6-50a13aaf8d43.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you might have added the values. Remember to find a 'difference' we subtract one number from the other.",
+        "B": "The temperature at 1 pm on Thursday is 7, and the temperature at 1 am on Wednesday is −4. To find the difference, subtract these values: 7−(−4)",
+        "C": "It looks like you might have added the values. Remember to find a 'difference' we subtract one number from the other.",
+        "D": "It looks like you have forgotten a minus sign for you second value. Remember, to find a 'difference' we subtract one number from the other."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89462,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/62d4f389-de25-47eb-8314-3dc33be79217.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have forgotten a minus sign for you second value. Remember, to find a 'difference' we subtract one number from the other.",
+        "B": "It looks like you might have added the values. Remember to find a 'difference' we subtract one number from the other.",
+        "C": "The temperature at 1 pm on Monday is 5, and the temperature at 1 am on Thursday is −2. To find the difference, subtract these values: 5−(−2).",
+        "D": "It looks like you might have added the values. Remember to find a 'difference' we subtract one number from the other."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89447,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ed5d405c-138f-4f26-83aa-a4f1e85059fb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Look carefully at the signs of each number. The top brick is equal to the sum of the two bricks below it: ★ ＋ (−5) = 1.",
+        "B": "Not quite. It looks like you have added the two values that are shown. The top brick is equal to the sum of the two bricks below it: ★ ＋ (−5) = 1.",
+        "C": "The top brick is equal to the sum of the two bricks below it: ★ ＋ (−5) = 1. So the ★ must be 6. We could also worked this out by adding 5 to both sides of the equation to get ★ = 1 + 5.",
+        "D": "Not quite. Look carefully at the signs of each number. The top brick is equal to the sum of the two bricks below it: ★ ＋ (−5) = 1."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89464,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/89397d4c-bbac-43e9-a570-c1ae1298aaab.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The top brick is equal to the sum of the two bricks below it: ★ ＋ 2 = -4. So the ★ must be -6. We could also worked this out by subtracting 2 from both sides of the equation to get ★ = -4 - 2.",
+        "B": "Not quite. It looks like you have added the two values that are shown. The top brick is equal to the sum of the two bricks below it: ★ ＋ 2 = -4.",
+        "C": "Not quite. Look carefully at the signs of each number. The top brick is equal to the sum of the two bricks below it: ★ ＋ 2 = -4.",
+        "D": "Not quite. Look carefully at the signs of each number. The top brick is equal to the sum of the two bricks below it: ★ ＋ 2 = -4."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89448,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a3a8b2f0-fd99-4a01-9da2-22052d7f26f7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Think about how much you have to subtract to get back to 0, and then how much more you need to subtract so you've taken away 2 in total",
+        "B": "I think you have found 2 sevenths less, we need to find 2 wholes less. Think about how much you have to subtract to get back to 0, and then how much more you need to subtract so you've taken away 2 in total",
+        "C": "This would be true if the 3/7 was negative. Think about how much you have to subtract to get back to 0, and then how much more you need to subtract so you've taken away 2 in total",
+        "D": "To work out 2 less than 3/7, first go back to 0. That means we have subtracted 3/7 but we need to subtract 2 in total. That means we need to subtract another 1 and 4/7."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89465,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bc07a92c-92c8-4665-a00b-7a3ac54105d4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You're really close, just think about how much you have to subtract to get back to 0, and then how much more you need to subtract so you've taken away 3 in total.",
+        "B": "To work out 3 less than 5/6, first go back to 0. That means we have subtracted 5/6 but we need to subtract 3 in total. That means we need to subtract another 2 and 1/6.",
+        "C": "This would be true if the 5/6 was negative. Think about how much you have to subtract to get back to 0, and then how much more you need to subtract so you've taken away 3 in total.",
+        "D": "I think you have found 3 sixths less, we need to find 3 wholes less. Think about how much you have to subtract to get back to 0, and then how much more you need to subtract so you've taken away 3 in total."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89449,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/95023370-7c59-4669-ad70-ed5a7ef6c68d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Substituting the values into a − b gives 4 − (−0.2) which is the same as 4 ＋ 0.2 = 4.2. Remember, subtracting a negative number is the same as adding that number.",
+        "B": "Not quite. Substituting the values into b − a gives -0.2 − 4 = -4.2. Remember to look closely at the signs of the numbers.",
+        "C": "Not quite. Substituting the values into -a − (-b) gives - 4 − (0.2) which is the same as -4 - 0.2 = -4.2. Remember to look closely at the signs of the numbers.",
+        "D": "Substituting the values into −a − b gives −4 − (−0.2). Subtracting a negative number is the same as adding that number so this is the same as −4 ＋ 0.2, = -3.8."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89466,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/827aa6bb-9e65-4fb8-87f9-027e6c343a07.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Substituting the values into a − b gives 5 − (−0.9) which is the same as 5 ＋ 0.9 = 5.9. Remember, subtracting a negative number is the same as adding that number.",
+        "B": "Not quite. Substituting the values into b − a gives -0.9 − 5 = -5.9. Remember to look closely at the signs of the numbers.",
+        "C": "Substituting the values into −a − b gives −5 − (−0.9). Subtracting a negative number is the same as adding that number so this is the same as −5 ＋ 0.9, = -4.1.",
+        "D": "Not quite. Substituting the values into -a − (-b) gives - 5 − (0.9) which is the same as -5 - 0.9 = -5.9. Remember to look closely at the signs of the numbers."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 89450,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6e294ba6-992f-4ecf-a109-5eb19327c1bf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost! There's a lot going on in statement 2. Look on the right, -q + (-p). What happens when we add a negative? Can we do additions and subtractions in any order?",
+        "B": "Almost! Look on the right of statement 1, p + (-q). What happens when we add a negative?",
+        "C": "On the right of statement 1 we have p + (-q). Adding a negative is the same as subtracting. So we have p - q which is the same as the left. On the right of statement 2 we have -q + (-p) which is -q - p. Additions and subtractions can be done in any order so this is the same as -p - q",
+        "D": "Not quite. For each statement look at the right right hand side first. What happens when we add a negative? Can we do additions and subtractions in any order?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 122124,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9b0f0270-fb2d-44f9-b1ef-5af8a89db7a5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Try substituting in numbers for m and n to see which statement is correct",
+        "B": "Not quite. Try substituting in numbers for m and n to see which statement is correct",
+        "C": "Let m = 5 and n = 3. Substituting both values into statement 1 we get -5 + 3 = 3 - 5. As both sides of the equation equal -2, this statement is correct. Similarly, substituting the values into statement 2 we get 3 - 5 = - (5 - 3) . As both sides of the equation equal -2, this statement is also correct.",
+        "D": "Not quite, at least one of these statements is correct. Try substituting in numbers for m and n to see which statement is correct"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

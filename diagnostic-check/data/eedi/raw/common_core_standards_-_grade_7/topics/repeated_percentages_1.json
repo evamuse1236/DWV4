@@ -1,0 +1,165 @@
+{
+  "shortcode": "vsr",
+  "name": "Repeated percentages 1",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 37,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Work out the final amount in compound percentage increase problems",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Work out the total increase in compound percentage increase problems ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Work out the final amount in compound percentage decrease problems",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Work out the total increase in compound percentage decrease problems ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Work out the percentage rate in compound percentage decrease problems ",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 76811,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/18a3aaec-b873-41e4-b74e-8607e1567974.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We have £3000 × 1.04³ = £3374.59.",
+        "B": "It looks like you might have found the value of the interest only by calculating 4% of 3000 and then multiplying by 4. Notice that this is compound interest and not simple interest. When interest is compounded you need to use a different method because after the first year the interest is added to the initial amount, then the next year's interest is worth more.",
+        "C": "It looks like you may have found the value of the interest paid over the 4 years. Notice that the question asks for the value of the whole investment at the end of the 4 years, not just the interest paid.",
+        "D": "It looks like you may have used simple interest to find the final amount. When interest is compounded you need to use a different method because after the first year the interest is added to the initial amount, then the next year's interest is worth more."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78845,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7d1fe398-4250-40d2-bbf1-ac3ef112ba2d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you may have used simple interest and given your answer as the interest earned. When interest is compounded you need to use a different method because after the first year the interest is added to the initial amount, then the next year's interest is worth more.",
+        "B": "The investment was £2000 and it was invested for 3 years at 3%. We can work this out by calculating 2000×1.03×1.03×1.03, or to be more efficient we can use powers. £2000× 1.03³ = £2185.45.",
+        "C": "It looks like you may have used simple interest to find the final amount. When interest is compounded you need to use a different method because after the first year the interest is added to the initial amount, then the next year's interest is worth more.",
+        "D": "It looks like you have correctly found the interest that has been earned, but watch out! The question asks for the value of the total investment and not just the extra interest."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 76812,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cfd2ec84-ddd6-4b06-b57d-72b32bae247e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you might have worked out the interest as if the amount earned each year is the same. With compound interest the interest at the end of the first year is added to the account so in the second year the interest is different. Can you think of a formula to use for this?",
+        "B": "We have an interest rate of 5% which is a multiplier of 1.05. The money is in the account for 4 years so we raise the multiplier to the power of 4 and multiply by £13000. This gives us the total in the account at the end of 4 years. Finally we subtract the initial amount invested to see what the interest is that has been paid :£13000 × 1.05⁴ - £13000 = £2801.58.",
+        "C": "It looks like you might have used simple interest to find the value of the final investment. Notice that we need to use compound interest calculations here, and we are only working out the interest added.",
+        "D": "It looks like you have used the correct interest calculation, but given the full final amount and not just the interest earned."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78846,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fcee67e5-9685-4af3-a0f0-421d1236f825.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have used the correct interest calculation, but given the full final amount and not just the interest earned.",
+        "B": "It looks like you might have used simple interest to find the value of the final investment. Notice that we need to use compound interest calculations here, and we are only working out the interest added.",
+        "C": "It looks like you might have worked out the interest as if the amount earned each year is the same. With compound interest the interest at the end of the first year is added to the account so in the second year the interest is different. Can you think of a formula to use for this?",
+        "D": "We have an interest rate of 4% which is a multiplier of 1.04. The money is in the account for 4 years so we raise the multiplier to the power of 4 and multiply by £11000. This gives us the total in the account at the end of 4 years. Finally we subtract the initial amount invested to see what the interest is that has been paid :£11000 × 1.04⁴ - £11000 = £1868.44."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 76816,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3a6db576-e27c-40c7-886b-7a95e93ef6b4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you might have worked out what the total discount would be. Notice the question wants the sale price after the discount.",
+        "B": "We have a discount of 10% which is a multiplier of 0.9, then a further discount of 5% which is a multiplier of 0.95. Overall we calculate £80 × 0.9 × 0.95 = £68.40.",
+        "C": "In this question you must first take off the 10% to find the standard sale price. Only then can you take off the 5% for the customer loyalty. This will not be the same as taking 15% off the starting price!",
+        "D": "First take off the 10% to find the standard sale price. Only then can you take off the 5% for the customer loyalty. Notice that the question asks what is the final price after the discount, not how much is the discount."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78850,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3c252c88-94ec-4be3-a407-ce42b3e5f600.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "First we have to take off the 10% to find the normal sale price. Then we take off the next 5% for the customer loyalty. This is not the same as taking of 15% from the starting price. Make sure you give the new price, not just the amount of the discount!",
+        "B": "It looks like you might have given the amount of the discount, and not the final sale price of the jacket after this discount?",
+        "C": "It looks like you might have combined both percentages into one discount. We have to take off the 10% first, and then the 5% for the customer loyalty.",
+        "D": "We have a discount of 10% which is a multiplier of 0.9, then a further discount of 5% which is a multiplier of 0.95. Overall we calculate £90 × 0.9 × 0.95 = £76.95."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 76817,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/521acec5-a65f-4732-bbef-4a18c4afbed0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you might have added the percentages here. Remember that we need to find the decimals for the percentage discounts and then multiply to find a compound percentage change.",
+        "B": "Notice that both the amounts in the question are discounts, so they both decrease the price of the jacket.",
+        "C": "Both of these discounts are being applied to a price, and not to each other. Make sure you are using your decimal multipliers here.",
+        "D": "We have a 10% discount which is a multiplier of 0.9, and then a further 5% discount which is a multiplier of 0.95. Overall we have 0.9 × 0.95 = 0.855. Then we work out 1 - 0.855 = 0.145, or a 14.5% discount."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78851,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7dce7356-5526-47ef-a0c1-ab95ea2ff089.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Both of these discounts are being applied to a price, and not to each other. Make sure you are using your decimal multipliers here.",
+        "B": "It looks like you might have added the percentages here. Remember that we need to find the decimals for the percentage discounts and then multiply to find a compound percentage change.",
+        "C": "We have a 20% discount which is a multiplier of 0.8, and then a further 10% discount which is a multiplier of 0.9. Overall we have 0.8 × 0.9 = 0.72. Then we work out 1 - 0.72 = 0.28, or a 28% discount.",
+        "D": "Not quite! Remember that we need to find the decimal multiplier for the percentage DISCOUNTS and then multiply to find a compound percentage change."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 76820,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4c0d2794-754d-4aee-8769-226891925976.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, the two percentage changes don't cancel out. Remember to use the decimal multipliers for the increase and decrease to help you find the final change.",
+        "B": "The decimal multiplier for a 10% increase is 1.1. The decimal multiplier for a 10% decrease is 0.9. 1.1 ✕ 0.9 = 0.99 = 99%. 100% - 99% = 1%.Therefore there is an overall decrease of 1%.",
+        "C": "Not quite! Use decimal multipliers for the increase and decrease to help you find the final change.",
+        "D": "I think you have increased both lengths by 10% BUT the width is decreasing by 10%."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78854,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b84cc4a0-d047-4148-b5de-242fe0a5ba10.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, the two percentage changes don't cancel out. Remember to use the decimal multipliers for the increase and decrease to help you find the final change.",
+        "B": "Not quite! Use decimal multipliers for the increase and decrease to help you find the final change.",
+        "C": "We have an increase of 20% which is a multiplier of 1.2, and then a decrease of 20% which is a multiplier of 0.8. Overall we have 1.2 × 0.8 = 0.96, which is the multiplier for a 4% decrease.",
+        "D": "I think you have increased both lengths by 20% BUT the width is decreasing by 20%."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

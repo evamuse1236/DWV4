@@ -1,0 +1,153 @@
+{
+  "shortcode": "efj3",
+  "name": "Solve real-world Linear Equations in two variables",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 75,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Interpret the graphical solution to a pair of linear simultaneous equations from a diagram",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Know what pair of lines are needed to solve a pair of linear simultaneous equations graphically where some manipulation is required",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Write and solve linear simultaneous equations from worded problems",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 131842,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f8057420-fd42-4f9f-be88-06b1c8a217f8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Company P (the orange line) starts off below Company Q (the blue line). This means it is cheaper, but at 2 miles they switch over and Company P becomes more expensive",
+        "B": "I think you have found the point where the lines cross over, but read off the cost instead of the miles.",
+        "C": "Not quite. Company P (the orange line) starts off below Company Q (the blue line), meaning it is cheaper. After how many miles do they cross over?",
+        "D": "Not quite. Company P (the orange line) starts off below Company Q (the blue line), meaning it is cheaper. After how many miles do they cross over?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134035,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/de9f7c34-6f90-41c0-9839-14ab8ff58840.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Company P (the orange line) starts off below Company Q (the blue line), meaning it is cheaper. After how many miles do they cross over?",
+        "B": "Not quite. Company P (the orange line) starts off below Company Q (the blue line), meaning it is cheaper. After how many miles do they cross over?",
+        "C": "Company P (the orange line) starts off below Company Q (the blue line). This means it is cheaper, but at 5 miles they switch over and Company P becomes more expensive",
+        "D": "I think you have found the point where the lines cross over, but read off the cost instead of the miles."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131845,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2bf8a66f-9228-4c67-9a6a-c3516b2f9db9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, we need to make sure we are using inverses to rearrange our equation. To move the 4x from the left hand side we would need to subtract it from both sides.",
+        "B": "To make y the subject we start by subtracting 4x from both sides. This gives 2y = 17 - 4x. Dividing both sides by 2 gives y = 8.5 - 2x.",
+        "C": "Not quite, remember the inverse of multiplication is division. To go from 2y to y we would need to divide both sides by 2.",
+        "D": "Not quite, be careful when rearranging. Subtracting 4x from both sides gives 2y = 17 - 4x. What would we need to do now to make y the subject?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134038,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/707b59e2-eb17-4a36-ad49-c770b1f0b243.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, remember the inverse of multiplication is division. To go from 2y to y we would need to divide both sides by 2.",
+        "B": "Not quite, I think you have added the 10 rather than subtracted. Remember the inverse of addition is subtraction.",
+        "C": "Not quite, I think you have tried to divide by 2 to make y the subject, but forgotten to divide the right hand side by 2 as well",
+        "D": "To make y the subject we start by subtracting 3x from both sides, this gives -2y = 10 - 3x. We then divide both sides by -2 to get y = -5 + 1.5x which is the same as y = 1.5x - 5"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166348,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/67aea5a2-fd2a-4719-ba4f-e81a00273dff.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have confused your 𝑥 and 𝑦 variables. If 𝑥 is the price of tea and 𝑦 is the price of coffee, then when we have finished our algebraic work, we need to be careful in reassigning our labels back to our answers.",
+        "B": "If 𝑥 is the price of tea and 𝑦 is the price of coffee, then 3𝑥 + 2𝑦 = 2.40 and 2𝑥 + 5𝑦 = 3.80. 2(3𝑥 + 2𝑦 = 2.40) gives us 6𝑥 + 4𝑦 = 4.80. -3(2𝑥 + 5𝑦 = 3.80) gives us -6𝑥 -15𝑦 = -11.40. 6𝑥 + 4𝑦 = 4.80 + [-6𝑥 -15𝑦 = -11.40] eliminates 𝑥 and leaves -11𝑦 = -6.60, so 𝑦 = .60. 3𝑥 + 2(.60) = 2.40, so 3𝑥 = 1.20. 𝑥 = .40 Tea is $0.40 and coffee is $0.60.",
+        "C": "Not quite. I think you may have found the 𝑥-intercept for 3𝑥 + 2𝑦 = 2.40 and then used that value to find 𝑦 in your second equation. If you plug $0.80 in for 𝑥 and $0.44 in for 𝑦 into either equation, do you get a solution?",
+        "D": "I think you may have subtracted $2.40 from $3.80. We need to start by writing an equation for each situation. If 𝑥 is the price of tea and 𝑦 is the price of coffee, then what equation can we write for the first scenario when the cost is $2.40? How about when the cost is $3.80? What can we multiply each equation by to be able to eliminate a variable?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166575,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cd53bea2-a7dd-46cb-9528-1d0b31c18b3d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. I think you may have found the 𝑥-intercept for 3𝑥 + 3𝑦 = 4.20 and then used that value to find 𝑦 in your second equation. If you plug $1.40 in for 𝑥 and $0.48 in for 𝑦 into either equation, do you get a solution?",
+        "B": "I think you may have confused your 𝑥 and 𝑦 variables. If 𝑥 is the price of tea and 𝑦 is the price of coffee, then when we have finished our algebraic work, we need to be careful in reassigning our labels back to our answers.",
+        "C": "I think you may have subtracted $4.20 from $5.20. We need to start by writing an equation for each situation. If 𝑥 is the price of tea and 𝑦 is the price of coffee, then what equation can we write for the first scenario when the cost is $4.20? How about when the cost is $5.20? What can we multiply each equation by to be able to eliminate a variable?",
+        "D": "If 𝑥 is the price of tea and 𝑦 is the price of coffee, then 3𝑥 + 3𝑦 = 4.20 and 2𝑥 + 5𝑦 = 5.20. 2(3𝑥 + 3𝑦 = 4.20) gives us 6𝑥 + 6𝑦 = 8.40. -3(2𝑥 + 5𝑦 = 5.20) gives us -6𝑥 -15𝑦 = -15.60. 6𝑥 + 6𝑦 = 8.40 + [-6𝑥 -15𝑦 = -15.60] eliminates 𝑥 and leaves -9𝑦 = -7.20, so 𝑦 = .80. 3𝑥 + 3(.80) = 4.20, so 3𝑥 = 1.80. 𝑥 = .60 Tea is $0.60 and coffee is $0.80."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166349,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6d014419-8949-409b-8501-36ea21f45686.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If 𝑥 is the price of tea and 𝑦 is the price of coffee, then 5𝑥 + 2𝑦 = 3.70 and 2𝑥 + 5𝑦 = 4.00. 2(5𝑥 + 2𝑦 = 3.70) gives us 10𝑥 + 4𝑦 = 7.40. -5(2𝑥 + 5𝑦 = 4.00) gives us -10𝑥 -25𝑦 = -20.00. 10𝑥 + 4𝑦 = 7.40 + [-10𝑥 -25𝑦 = -20.00] eliminates 𝑥 and leaves -21𝑦 = -12.60, so 𝑦 = .60. 5𝑥 + 2(.60) = 3.70, so 5𝑥 = 2.50. 𝑥 = .50 Tea is $0.50 and coffee is $0.60.",
+        "B": "Not quite. You found a pair that works for 5𝑥 + 2𝑦 = 3.70, but does it work for 2𝑥 + 5𝑦 = 4.00? A solution has to work for both equations.",
+        "C": "I think you may have confused your 𝑥 and 𝑦 variables. If 𝑥 is the price of tea and 𝑦 is the price of coffee, then when we have finished our algebraic work, we need to be careful in reassigning our labels back to our answers.",
+        "D": "Not quite. You found a pair that works for 2𝑥 + 5𝑦 = 4.00, but does it work for 5𝑥 + 2𝑦 = 3.70? A solution has to work for both equations."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166576,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/efb7d723-4f42-4d46-ba41-f8a858ac28a8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. You found a pair that works for 7𝑥 + 3𝑦 = 8.30, but does it work for 3𝑥 + 7𝑦 = 8.70? A solution has to work for both equations.",
+        "B": "Not quite. You found a pair that works for 3𝑥 + 7𝑦 = 8.70, but does it work for 7𝑥 + 3𝑦 = 8.30? A solution has to work for both equations.",
+        "C": "If 𝑥 is the price of tea and 𝑦 is the price of coffee, then 7𝑥 + 3𝑦 = 8.30 and 3𝑥 + 7𝑦 = 8.70. 3(7𝑥 + 3𝑦 = 8.30) gives us 21𝑥 + 9𝑦 = 24.90. -7(3𝑥 + 7𝑦 = 8.70) gives us -21𝑥 -49𝑦 = -60.90. 21𝑥 + 9𝑦 = 24.90 + [-21𝑥 -49𝑦 = -60.90] eliminates 𝑥 and leaves -40𝑦 = -36, so 𝑦 = .90. 7𝑥 + 3(.90) = 8.30, so 7𝑥 = 5.60. 𝑥 = .80 Tea is $0.80 and coffee is $0.90.",
+        "D": "I think you may have confused your 𝑥 and 𝑦 variables. If 𝑥 is the price of tea and 𝑦 is the price of coffee, then when we have finished our algebraic work, we need to be careful in reassigning our labels back to our answers."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166350,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0b1e9fc0-89e2-410c-a99b-c27a6555f656.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. I think you may have looked at the cost, instead of the hours.",
+        "B": "I think you looked at the 𝑦-intercept, or starting amount, for Owen, but we are looking for the hours. Which axis shows hours?",
+        "C": "At 6 hours, Emma and Owen both cost $225. After 6 hours, Owen's line is underneath Emma's line, indicating his cost is lower than Emma's.",
+        "D": "I think you may have looked for the cheapest cost, but the question is after how many hours is Owen cheaper than Emma."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166577,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dc4491c2-0303-4ab7-9a4e-67dbcaf03852.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "At 4 hours, Stacey and Zac both cost $150. After 4 hours, Zac's line is underneath Stacey's line, indicating his cost is lower than Stacey's.",
+        "B": "I think you may have looked for the cheapest cost, but the question is after how many hours is Zac cheaper than Stacey.",
+        "C": "I think you looked at the 𝑦-intercept, or starting amount, for Zac, but we are looking for the hours. Which axis shows hours?",
+        "D": "Not quite. I think you may have looked at the cost, instead of the hours."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

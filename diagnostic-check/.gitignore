@@ -1,0 +1,6 @@
+.DS_Store
+node_modules/
+*.pyc
+__pycache__/
+data/eedi/auth_token.txt
+data/eedi/session.json

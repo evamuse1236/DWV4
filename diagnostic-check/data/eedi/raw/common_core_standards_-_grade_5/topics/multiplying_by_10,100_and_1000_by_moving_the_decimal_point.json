@@ -1,0 +1,141 @@
+{
+  "shortcode": "bih5",
+  "name": "Multiplying by 10,100 and 1000 by moving the decimal point",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 9,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Multiplying by 10,100 and 1000 by moving the decimal point",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158330,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f0ed52a7-4949-443c-bd06-c3bb16271a61.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've written the digits of the 10 at the end of 8.5, this has not multiplied 8.5 by 10. To multiply by 10, we move the decimal point one place to the right.",
+        "B": "I think you've written a zero on the end of 8.5, this only works when multiplying integers by 10. Instead, to multiply 8.5 by 10, we move the decimal point one place to the right.",
+        "C": "You've correctly estimated that the answer should be around 80. However, we can't just write zero in the middle of the number. Instead, to multiply 8.5 by 10, we move the decimal point one place to the right.",
+        "D": "To multiply by 10, we move the decimal point one place to the right. Therefore, 8.5 x 10 = 85."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158615,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d29b0ef-70f7-4f65-96a5-d6f582c111ed.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To multiply by 10, we move the decimal point one place to the right. Therefore, 9.2 x 10 = 92",
+        "B": "You've correctly estimated that the answer should be around 90. However, we can't just write zero in the middle of the number. Instead, to multiply 9.2 by 10, we move the decimal point one place to the right.",
+        "C": "I think you've written the digits of the 10 at the end of 9.2, this has not multiplied 9.2 by 10. To multiply by 10, we move the decimal point one place to the right.",
+        "D": "I think you've written a zero on the end of 9.2, this only works when multiplying integers by 10. Instead, to multiply 9.2 by 10, we move the decimal point one place to the right."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158331,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ca3982ac-7d2d-48c8-9cb6-e1b1bad5efa8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To multiply by 10, we move the decimal point one place to the right. Therefore, 7.02 x 10 = 70.2.",
+        "B": "Not quite, we can't ignore the zero. To multiply by 10, we move the decimal point one place to the right.",
+        "C": "I think you've written a zero on the end of 7.02, this only works when multiplying integers by 10. Instead, to multiply 7.02 by 10, we move the decimal point one place to the right.",
+        "D": "Not quite, we can't ignore the zero. To multiply by 10, we move the decimal point one place to the right."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158616,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/85b85196-32f8-4c6f-bf06-674806e05889.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've written a zero on the end of 6.05, this only works when multiplying integers by 10. Instead, to multiply 6.05 by 10, we move the decimal point one place to the right.",
+        "B": "Not quite, we can't ignore the zero. To multiply by 10, we move the decimal point one place to the right.",
+        "C": "To multiply by 10, we move the decimal point one place to the right. Therefore, 6.05 x 10 = 60.5",
+        "D": "Not quite, we can't ignore the zero. To multiply by 10, we move the decimal point one place to the right."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158332,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fb9399b7-2919-42cf-97b0-d9a33d4a1213.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've written two zeros on the end of 0.051, this only works when multiplying integers by 100. To multiply by 100, we move the decimal point two places to the right.",
+        "B": "To multiply by 100, we move the decimal point two places to the right. Therefore, 0.051 x 100 = 5.1.",
+        "C": "I think you've multiplied by 10. To multiply by 100, we move the decimal point two places to the right.",
+        "D": "I think you've multiplied by 1000. To multiply by 100, we move the decimal point two places to the right."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158617,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b748af47-0ede-4823-95f2-256864f1bc86.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've written two zeros on the end of 0.037, this only works when multiplying integers by 100. To multiply by 100, we move the decimal point two places to the right.",
+        "B": "I think you've multiplied by 1000. To multiply by 100, we move the decimal point two places to the right.",
+        "C": "To multiply by 100, we move the decimal point two places to the right. Therefore, 0.037 x 100 = 3.7",
+        "D": "I think you've multiplied by 10. To multiply by 100, we move the decimal point two places to the right."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158333,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/92b9f9e1-34c4-4952-b90e-bc9969f19598.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've written three zeros on the end of 2.05, this only works when multiplying integers by 1000. To multiply by 1000, we move the decimal point three places to the right.",
+        "B": "Not quite, we can't ignore the zero. To multiply by 1000, we move the decimal point three places to the right.",
+        "C": "To multiply by 1000, we move the decimal point three places to the right. Therefore, 2.05 x 1000 = 2050.",
+        "D": "I think you've multiplied by 100. To multiply by 1000, we move the decimal point three places to the right."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158618,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c5fe4a23-4ba5-4e10-be0d-8495fe64bb5d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To multiply by 1000, we move the decimal point three places to the right. Therefore, 1.04 x 1000 = 1040",
+        "B": "I think you've written three zeros on the end of 1.04, this only works when multiplying integers by 1000. To multiply by 1000, we move the decimal point three places to the right.",
+        "C": "Not quite, we can't ignore the zero. To multiply by 1000, we move the decimal point three places to the right.",
+        "D": "I think you've multiplied by 100. To multiply by 1000, we move the decimal point three places to the right."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158334,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aac18af6-a5e8-47b2-9b7f-5e509ed58b75.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we multiplied by 10, the decimal point would move one place to the right. But the decimal point has moved two places to the right. ",
+        "B": "The decimal point has moved two places to the right. Therefore, 0.207 has been multiplied by 100.",
+        "C": "If we multiplied by 1000, the decimal point would move three places to the right. But the decimal point has only moved two places to the right. ",
+        "D": "If we multiplied by 1, the number would stay exactly the same. But instead, the decimal point has moved two places to the right."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158619,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/64f495e0-ccee-486a-8288-06a4b6e69b47.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we multiplied by 1, the number would stay exactly the same. But instead, the decimal point has moved two places to the right.",
+        "B": "The decimal point has moved two places to the right. Therefore, 0.906 has been multiplied by 100.",
+        "C": "If we multiplied by 10, the decimal point would move one place to the right. But the decimal point has moved two places to the right.",
+        "D": "If we multiplied by 1000, the decimal point would move three places to the right. But the decimal point has only moved two places to the right."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

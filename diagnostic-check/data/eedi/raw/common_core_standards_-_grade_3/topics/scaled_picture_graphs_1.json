@@ -1,0 +1,153 @@
+{
+  "shortcode": "bit4",
+  "name": "Scaled Picture Graphs 1",
+  "collectionId": 33,
+  "level": 1,
+  "sequence": 35,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Construct a pictogram involving fractions of symbols",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Interpret a pictogram involving fractions of symbols",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve comparison, sum and difference problems using information presented in pictograms",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 77204,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ac05fdaf-5bac-4fbd-9bd2-35d60030b247.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. That would be one extra disc, but we have more than one.",
+        "B": "Almost. Remember that half a disc doesn't represent 5 people. If a whole disc is 50, half a disc is half of 50",
+        "C": "150 people like Pop and 75 people like Rock. 150 - 75 = 75.",
+        "D": "Not quite. Make sure you are looking at the number of discs for pop and rock. I think you might have used classical by mistake"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 79085,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c82c20c4-33f2-4ea1-a6d2-3fd268a70db1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "3 whole discs = 60 and a quarter of a disc is 5, so 65 people like pop music. Two whole discs = 40 and half a disc is 10, so 50 people like classical music. This gives an answer of 65 - 50 = 15.",
+        "B": "Almost, this is the number of people who like classical music. We need to find the difference between this and pop music",
+        "C": "Almost, this is the number of people who like pop music. We need to find the difference between this and classical music",
+        "D": "Almost, just be careful with the quarter of a disc in pop. This will be a quarter of the 20 people each disc represents."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131546,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/99476e6e-20ff-4dc3-8159-3cd7501300d6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the number of full CD symbols that are shown. Look at the key. What does each full symbol represent? What does a quarter of a symbol represent?",
+        "B": "This is the number of CD symbols that are shown. Look at the key. What does each full symbol represent? What does a quarter of a symbol represent?",
+        "C": "I think you have forgotten to convert the quarter of a CD symbol into a whole number of CDs",
+        "D": "Each full CD symbol represents 4 CDs. Each quarter of a CD symbol represents 1 CD. So we have 4 + 4 + 4 + 1 = 13"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133739,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ddd938ff-6ed4-4007-97c9-84730a28371a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have forgotten to convert the quarter of a CD symbol into a whole number of CDs",
+        "B": "Each full CD symbol represents 4 CDs. Each quarter of a CD symbol represents 1 CD. So we have 4 + 4 + 1 = 9",
+        "C": "This is the number of full CD symbols that are shown. Look at the key. What does each full symbol represent? What does a quarter of a symbol represent?",
+        "D": "This is the number of CD symbols that are shown. Look at the key. What does each full symbol represent? What does a quarter of a symbol represent?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131547,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/881212d7-d098-4129-bc54-670baa6d0ab5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you forgot to use the key to convert the half CD symbol to the real number of CDs.",
+        "B": "I think you converted the half CD symbol to the wrong number of real CDs.",
+        "C": "I think you've forgotten to use the key to convert your answer to a whole number of CDs.",
+        "D": "Each symbol is worth 4 CDs. For 'Pop', Bob has 4 + 4 + 4 + 2 = 14 CDs. For 'Rock' Bob has 4 + 4 = 8 CDs. So there are 14 - 8 = 6 more Pop CDs."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133740,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5f09660d-6ed8-487a-8098-757ac6424b3a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've forgotten to use the key to convert your answer to a whole number of CDs.",
+        "B": "Each symbol is worth 4 CDs. For 'Rock' Bob has 4 + 4 = 8 CDs. For 'Classical' Bob has 4 + 3 = 7. So there are 8 - 7 = 1 more Rock CDs.",
+        "C": "Not quite. Make sure you are comparing Rock and Classical. And remember each full CD symbol represents 4 CDs in real life.",
+        "D": "Not quite. Make sure you are comparing Rock and Classical. And remember each full CD symbol represents 4 CDs in real life."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131548,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d2c62b45-c232-4972-9989-76cd3be67ceb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "4 real CDs are represented by a full CD symbol. So 3 real CDs will be represent by 3/4 of a CD symbol.",
+        "B": "Not quite. Each CD symbol represents 4 CDs in real life. This would represent 12 CDs.",
+        "C": "I think you have assumed each CD symbol represents 2 CDs in real life. Look again at the key.",
+        "D": "This is the symbol for just 1 CD in real life. How can we represent 3 CDs?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133741,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1af40a91-e508-4181-ab07-fbc688b31827.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have assumed each CD symbol represents 2 CDs in real life. Look again at the key.",
+        "B": "Not quite. Each CD symbol represent 4 CDs in real life. This would represent 8 CDs.",
+        "C": "4 real CDs are represented by a full CD symbol. So 2 real CDs will be represent by 1/2 of a CD symbol.",
+        "D": "This is the symbol for just 1 CD in real life. How can we represent 2 CDs?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131550,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ec034da9-2e5d-44a7-bc1e-fc96a99babf9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "1 CD would be a quarter symbol. Each symbol represents 4 CDs in real life. So using whole symbols we can represent 4, 8, 12...",
+        "B": "14 CDs would include a half symbol. Each symbol represents 4 CDs in real life. So using whole symbols we can represent 4, 8, 12...",
+        "C": "Each symbol represents 4 CDs in real life. So using whole symbols we can represent 4, 8, 12... These are the multiples of 4 and 24 is a multiple of 4.",
+        "D": "34 CDs would include a half symbol. Each symbol represents 4 CDs in real life. So using whole symbols we can represent 4, 8, 12..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133743,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8ee3841d-dab0-4645-a2bf-0dc7a520d999.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "2 CDs would be a half symbol. Each symbol represents 4 CDs in real life. So using whole symbols we can represent 4, 8, 12...",
+        "B": "22 CDs would include a half symbol. Each symbol represents 4 CDs in real life. So using whole symbols we can represent 4, 8, 12...",
+        "C": "Each symbol represents 4 CDs in real life. So using whole symbols we can represent 4, 8, 12... These are the multiples of 4 and 32 is a multiple of 4.",
+        "D": "42 CDs would include a half symbol. Each symbol represents 4 CDs in real life. So using whole symbols we can represent 4, 8, 12..."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

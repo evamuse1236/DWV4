@@ -1,0 +1,159 @@
+{
+  "shortcode": "efkf",
+  "name": "Solving Systems of Linear Equations Algebraically",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 72,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Solve linear simultaneous equations requiring no scaling of expressions",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve simultaneous equations involving two linear equations by substitution",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Write and solve linear simultaneous equations from worded problems",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify the number of solutions to a pair of linear simultaneous equations without solving or graphing",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166343,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/33e748fb-0f5e-4455-aab8-171117b3e8cb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Linear equations do only cross at one point, but have another look at both equations. Can you see any connection between them?",
+        "B": "Linear equations can only cross in one place, not two. But have another look at both equations. Can you see any connection between them?",
+        "C": "No solutions would mean that the lines are parallel. These lines are not parallel, but, have another look at both equations. Can you see any connection between them?",
+        "D": "We can divide -8𝑥 + 6𝑦 = 4 through by 2 to get -4𝑥 + 3𝑦 = 2, so these are equivalent equations and there are infinitely many solutions."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166570,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4f6964f3-dda0-4324-8040-3e2aacab0bd3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We can divide -18𝑥 + 6𝑦 = 15 through by 3 to get -6𝑥 + 2𝑦 = 5, so these are equivalent equations and there are infinitely many solutions.",
+        "B": "No solutions would mean that the lines are parallel. These lines are not parallel, but have another look at both equations. Can you see any connection between them?",
+        "C": "Linear equations do only cross at one point, but have another look at both equations. Can you see any connection between them?",
+        "D": "Linear equations can only cross in one place, not two. But have another look at both equations. Can you see any connection between them?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166344,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/46b4a982-b029-4396-a1cf-935d0ea9549d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "These two lines have the same slope, so what does that tell us about the lines?",
+        "B": "Linear equations can only cross in one place, not two. But have another look at both equations, they have the same slope. What does that tell us about the lines?",
+        "C": "These two lines have the same slope, so they are parallel. Parallel lines have no solutions as they will never cross.",
+        "D": "To have infinitely many solutions the two equations would need to be equivalent. These are not equivalent as we have 4𝑥 + 3𝑦 = 9 and 4𝑥 + 3𝑦 = 4. The two lines do have the same slope though. What does that tell us about the lines?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166571,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3569df96-c254-461f-ba84-4b4b6fb095a3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To have infinitely many solutions the two equations would need to be equivalent. These are not equivalent as we have 5𝑥 + 7𝑦 = 9 and 5𝑥 + 7𝑦 = 2. The two lines do have the same slope though. What does that tell us about the lines?",
+        "B": "These two lines have the same slope, so they are parallel. Parallel lines have no solutions as they will never cross.",
+        "C": "These two lines have the same slope, so what does that tell us about the lines?",
+        "D": "Linear equations can only cross in one place, not two. But have another look at both equations, they have the same slope. What does that tell us about the lines?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166345,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ab6ce7d2-fcc0-482c-85b3-1af0b23651d7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "(6, 24) is a solution for 𝑦 = 4𝑥 but it doesn't work for 2𝑥 + 𝑦 = 12. Start by substituting 𝑦 = 4𝑥 into 2𝑥 + 𝑦 = 12 to get 2𝑥 + 4𝑥 = 12.",
+        "B": "(1.5, 6) is a solution for 𝑦 = 4𝑥 but it doesn't work for 2𝑥 + 𝑦 = 12. Start by substituting 𝑦 = 4𝑥 into 2𝑥 + 𝑦 = 12 to get 2𝑥 + 4𝑥 = 12.",
+        "C": "Substituting 𝑦 = 4𝑥 into 2𝑥 + 𝑦 = 12 we get 2𝑥 + 4𝑥 = 12, so 6𝑥 = 12 and 𝑥 = 2. We know that 𝑦 = 4𝑥, so 𝑦 = 4 × 2 giving us 𝑦 = 8. So the solution is (2, 8).",
+        "D": "(3, 6) is a solution for 2𝑥 + 𝑦 = 12 but it doesn't work for 𝑦 = 4𝑥. Start by substituting 𝑦 = 4𝑥 into 2𝑥 + 𝑦 = 12 to get 2𝑥 + 4𝑥 = 12."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166572,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b2d8ed73-1c9f-49e0-8ad7-2075bd276e07.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "(1, 6) is a solution for 𝑦 = 6𝑥 but it doesn't work for 4𝑥 + 𝑦 = 20. Start by substituting 𝑦 = 6𝑥 into 4𝑥 + 𝑦 = 20 to get 4𝑥 + 6𝑥 = 20.",
+        "B": "(4, 24) is a solution for 𝑦 = 6𝑥 but it doesn't work for 4𝑥 + 𝑦 = 20. Start by substituting 𝑦 = 6𝑥 into 4𝑥 + 𝑦 = 20 to get 4𝑥 + 6𝑥 = 20.",
+        "C": "(3, 8) is a solution for 4𝑥 + 𝑦 = 20 but it doesn't work for 𝑦 = 6𝑥. Start by substituting 𝑦 = 6𝑥 into 4𝑥 + 𝑦 = 20 to get 4𝑥 + 6𝑥 = 20.",
+        "D": "Substituting 𝑦 = 6𝑥 into 4𝑥 + 𝑦 = 20 we get 4𝑥 + 6𝑥 = 20, so 10𝑥 = 20 and 𝑥 = 2. We know that 𝑦 = 6𝑥, so 𝑦 = 6 × 2 giving us 𝑦 = 12. So the solution is (2, 12)."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166346,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0ed7ce9b-55a3-491f-80e0-a58687f3965a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "As we have +3𝑥 and -3𝑥, we add both equations to eliminate the 𝑥's which gives us 4𝑦 = 36. Dividing both sides by 4 we get 𝑦 = 9. Substituting 𝑦 = 9 into 𝑦 + 3𝑥 = 15, we get 9 + 3𝑥 = 15. Subtracting 9 from both sides gives us 3𝑥 = 6, so 𝑥 = 2. Our solution is therefore (2, 9).",
+        "B": "(5, 0) is a solution for 𝑦 + 3𝑥 = 15 but not for 3𝑦 – 3𝑥 = 21. As we have +3𝑥 and -3𝑥, we can start by adding both equations to eliminate the 𝑥's.",
+        "C": "I think you may have subtracted the equations to start with but as we have +3𝑥 and -3𝑥, we needed to add both equations to eliminate the 𝑥's.",
+        "D": "(6, -3) is a solution for 𝑦 + 3𝑥 = 15 but not for 3𝑦 – 3𝑥 = 21. As we have +3𝑥 and -3𝑥, we can start by adding both equations to eliminate the 𝑥's."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166573,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aa730e0f-060e-4e97-9820-dc66a7231c54.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have subtracted the equations to start with but as we have +8𝑥 and -8𝑥, we needed to add both equations to eliminate the 𝑥's.",
+        "B": "(2, -4) is a solution for 𝑦 + 8𝑥 = 12 but not for 10𝑦 – 8𝑥 = 32. As we have +8𝑥 and -8𝑥, we can start by adding both equations to eliminate the 𝑥's.",
+        "C": "As we have +8𝑥 and -8𝑥, we add both equations to eliminate the 𝑥's which gives us 11𝑦 = 44. Dividing both sides by 11 we get 𝑦 = 4. Substituting 𝑦 = 4 into 𝑦 + 8𝑥 = 12, we get 4 + 8𝑥 = 12. Subtracting 4 from both sides gives us 8𝑥 = 8, so 𝑥 = 1. Our solution is therefore (1, 4).",
+        "D": "(3, -12) is a solution for 𝑦 + 8𝑥 = 12 but not for 10𝑦 – 8𝑥 = 32. As we have +8𝑥 and -8𝑥, we can start by adding both equations to eliminate the 𝑥's."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166347,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/774f2d9c-b4d3-4861-8e99-a3c47c602dfa.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have assumed that half of the animals were chickens but you need to start by setting up a pair of equations which you can then solve by elimination. Using 𝑝 for the number of pigs and 𝑐 for the number of chickens, we get 𝑝 + 𝑐 = 60 and 4𝑝 + 2𝑐 = 200. Think about what you would need to multiply 𝑝 + 𝑐 = 60 by so that you can then eliminate the 𝑝's.",
+        "B": "I think you have just halved the number of animals but you need to start by setting up a pair of equations which you can then solve by elimination. Using 𝑝 for the number of pigs and 𝑐 for the number of chickens, we get 𝑝 + 𝑐 = 60 and 4𝑝 + 2𝑐 = 200. Think about what you would need to multiply 𝑝 + 𝑐 = 60 by so that you can then eliminate the 𝑝's.",
+        "C": "Setting up a pair of equations using 𝑝 for the number of pigs and 𝑐 for the number of chickens, we get 𝑝 + 𝑐 = 60 and 4𝑝 + 2𝑐 = 200. We multiply 𝑝 + 𝑐 = 60 by 4 giving us 4𝑝 + 4𝑐 = 240. We can then subtract 4𝑝 + 2𝑐 = 200 from 4𝑝 + 4𝑐 = 240 to eliminate the 𝑝's. We get 2𝑐 = 40 so 𝑐 = 20. Therefore there are 20 chickens.",
+        "D": "You have found the number of pigs but we need the number of chickens."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166574,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fd8b1bc0-6e41-431e-9709-85c5198655c2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Setting up a pair of equations using 𝑝 for the number of pigs and 𝑐 for the number of chickens, we get 𝑝 + 𝑐 = 100 and 4𝑝 + 2𝑐 = 250. We multiply 𝑝 + 𝑐 = 100 by 4 giving us 4𝑝 + 4𝑐 = 400. We can then subtract 4𝑝 + 2𝑐 = 250 from 4𝑝 + 4𝑐 = 400 to eliminate the 𝑝's. We get 2𝑐 = 150 so 𝑐 = 75. Therefore there are 75 chickens.",
+        "B": "You have found the number of pigs but we need the number of chickens.",
+        "C": "I think you have assumed that all of the animals were chickens but you need to start by setting up a pair of equations which you can then solve by elimination. Using 𝑝 for the number of pigs and 𝑐 for the number of chickens, we get 𝑝 + 𝑐 = 100 and 4𝑝 + 2𝑐 = 250. Think about what you would need to multiply 𝑝 + 𝑐 = 100 by so that you can then eliminate the 𝑝's.",
+        "D": "I think you have just halved the number of animals but you need to start by setting up a pair of equations which you can then solve by elimination. Using 𝑝 for the number of pigs and 𝑐 for the number of chickens, we get 𝑝 + 𝑐 = 100 and 4𝑝 + 2𝑐 = 250. Think about what you would need to multiply 𝑝 + 𝑐 = 100 by so that you can then eliminate the 𝑝's."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

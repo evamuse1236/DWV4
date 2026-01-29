@@ -1,0 +1,165 @@
+{
+  "shortcode": "vq2",
+  "name": "Geometrical reasoning with coordinates 4",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 210,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Solve coordinate geometry questions involving ratio",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve coordinate geometry questions involving triangles",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve coordinate geometry questions involving quadrilaterals",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the midpoint between two coordinates in 2D, where all the values are positive integers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Can calculate missing coordinates in a geometric shape",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 135908,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aa9c525e-95a2-40cc-b2a4-a98a5af0e4d1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, only one of these values is correct. Comparing the coordinates of the points forming the base of the parallelogram will help you find the other value.",
+        "B": "To find (?, ?), we can look at (4,5) and (8,5). The difference in the x-coordinates is 4, and the two points have the same y-value. Applying this to (?, ?) and (6,7), we can see that the x-coordinate of (?, ?) must be 6 - 4 = 2, and the two points must have the same y-value, 7, as the top and bottom lines of the shape must be parallel, so we have (2, 7).",
+        "C": "I think you've done 7-4 = 3, however this has been applied to the wrong coordinate. Look carefully at which coordinates need to change here.",
+        "D": "I think you've chosen 3 for your x-coordinate because that is half of 6, like 4 is half of 8. We're not looking at the multiplicative relationship here, we need to look at the difference between the points instead."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135928,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4a328ca1-6412-4fb0-ac81-8ddd2cd9e259.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find (?, ?), we can look at (5,8) and (12,8). The difference in the x-coordinates is 7, and the two points have the same y-value. Applying this to (?, ?) and (10,11), we can see that the x-coordinate of (?, ?) must be 10 - 7 = 3, and the two points must have the same y-value, 11, as the top and bottom lines of the shape must be parallel, so we have (3, 11).",
+        "B": "This point would be directly above (5,8), but (?, ?) is a little to the left from there. Make sure to compare the difference between (5,8) and (12,8) to find your x-coordinate.",
+        "C": "It looks like you've kept the wrong part of the coordinate the same. There will be a difference of 7, but it will not be added to 11. Look carefully at what happens from (12,8) to (5,8).",
+        "D": "Think carefully about where the point (10,6) would be in relation to (5,8). 10 would make it further to the right, and 6 would make it lower, however the point (?, ?) is above and to the left. Try to compare (5,8) and (12,8) to help you find the correct coordinates."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135909,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9692a114-a455-4037-9c83-c3f6e07bfd33.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find the x-coordinate of the midpoint we add the two x-coordinates together and then divide by 2: (4+8)/2 = 12/2 = 6. We can do the same with the y-coordinates but as they are both 5 we know the y-coordinate will also be 5. This gives M = (6,5).",
+        "B": "The coordinates (2,2.5) would be to the left and lower than (4,5), however M is to the right of it. I think you've halved the coordinates of (4,5), which would give the midpoint of the line connecting (0,0) and (4,5). We want the midpoint of (4,5) and (8,5).",
+        "C": "Almost, I think you've miscalculated midway between 4 and 8. Remember you can add them together and divide by 2 to find the middle.",
+        "D": "You appear to have added both x and y coordinates of (4,5) and (8,5) together, and forgotten to do the next step in your calculation. You can check your answer by making sure it seems accurate: notice that (12,10) would be to the right and above the point (8,5), rather than to the left like M is."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135929,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4c576c6d-6a2a-4768-9879-8b63a1d78935.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've halved 8 to get 4, however we need to take into account the other point which has an x-coordinate of 2. Make sure to find the midpoint of 2 and 8 to get your coordinates :)",
+        "B": "Almost, I think you've miscalculated midway between 2 and 8. Remember you can add them together and divide by 2 to find the middle.",
+        "C": "You appear to have added both x and y coordinates of (2,7) and (8,7) together, and forgotten to do the next step in your calculation. You can check your answer by making sure it seems accurate: notice that (10,14) would be to the right and above the point (8,7), rather than to the left like M is.",
+        "D": "To find the x-coordinate of the midpoint we add the two x-coordinates together and then divide by 2: (2+8)/2 = 10/2 = 5. We can do the same with the y-coordinates but as they are both 7 we know the y-coordinate will also be 7. This gives M = (5,7)."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135910,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/565f1374-6880-4245-84d8-56442cb3a347.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've calculated the base as 8 and the height as 5. Remember to calculate the height using the difference in the y-coordinates, and that the area of a triangle is bh/2.",
+        "B": "Almost there. Don't forget that the area of a triangle is bh/2! :)",
+        "C": "I think you've calculated the base as 8 and the height as 3. Remember to calculate the height using the difference in the y-coordinates.",
+        "D": "The area of a triangle can be calculated with base x height divided by 2. The base of the triangle is 12 - 4 = 8, and the height is 10 - 6 = 4. (8x4)/2 =32/2 = 16 square units."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135930,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7b245359-9e6f-4b27-9229-555bf666c2bd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The area of a triangle can be calculated with base x height divided by 2. The base of the triangle is 14 - 2 = 12, and the height is 11 - 5 = 6. (12x6)/2 =72/2 = 36 square units.",
+        "B": "I think you've calculated the base as 12 and the height as 11. Remember to calculate the height using the difference in the y-coordinates.",
+        "C": "Almost there. Don't forget that the area of a triangle is bh/2! :)",
+        "D": "I think you've calculated the base as 12 and the height as 2. Remember to calculate the height using the difference in the y-coordinates."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135911,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/99882a39-4d31-4a6f-9103-9d81755bf23f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Firstly we calculate the vector from left to right. This is a horizontal change of 9 and vertical of -6. We need two thirds of that vector to find P, two thirds gives us a horizontal change of 6 and vertical of -4. Applying that to the coordinates on the left (1,8), we get (1+6, 8-4) = (7, 4).",
+        "B": "I think you've moved one third to the left from the right-hand point, however I think you've become confused when looking at your coordinates, applying the horizontal movement to y and the vertical movement to x. Remember that the first value is x which is horizontal, and the second value is y which is vertical.",
+        "C": "Almost there! You've worked out P being one-third from the left, but we need it to be two thirds from the left.",
+        "D": "It looks like you've found the midpoint of the two coordinates, but we need the point P which is two-thirds from the left to the right. Perhaps thinking of this as a ratio would help."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135931,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8a0a828d-3971-4995-a187-0a57d716b714.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost there! You've worked out P being one-quarter from the left, but we need it to be three-quarters from the left.",
+        "B": "It looks like you've found the midpoint of the two coordinates, but we need the point P which is three-quarters from the left to the right. Perhaps thinking of this as a ratio would help.",
+        "C": "Firstly we calculate the vector from left to right. This is a horizontal change of 20 and vertical of -8. We need three quarters of that vector to find P, three quarters gives us a horizontal change of 15 and vertical of -6. Applying that to the coordinates on the left (3,17), we get (3+15, 17-6) = (18, 11).",
+        "D": "I think you've moved 3 left and 3 up from the right-hand coordinate. Make sure you are calculating the horizontal and vertical difference between the two points, and then finding three-quarters of that to apply to the left coordinate."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 135912,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c8bfe581-3084-4ede-bd2d-2f2c39596c4a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You've found the midpoint of the bottom edge of the shape, between the points (4,5) and (8,5). The point O is actually above and to the left of that point. Try using a different combination of the points to calculate O.",
+        "B": "I think you've added 0.5 onto the x and y-coordinates of (4,5). Try looking at another point on the diagram. Could you use one of the other points to help with your calculation?",
+        "C": "This point would actually be lower than any other points already shown. Try to think of how you could use the coordinates, and perhaps their midpoints, to find O.",
+        "D": "The diagonals cross at the midpoint of (4,5) and (6,7). The x-coordinate is (4+6)/2 = 5, and the y-coordinate is (5+7)/2 = 6, so we have (5,6). To check, we can also find the coordinate of the top left point and calculate the midpoint between that and (8,5)."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 135932,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/278e8810-de14-4733-9fc4-91896b678852.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've added 0.5 onto the x and y-coordinates of (2,7). Try looking at another point on the diagram. Could you use one of the other points to help with your calculation?",
+        "B": "You've found the midpoint of the bottom edge of the shape, between the points (2,7) and (8,7). The point O is actually above and to the left of that point. Try using a different combination of the points to calculate O.",
+        "C": "The diagonals cross at the midpoint of (2,7) and (6,10). The x-coordinate is (2+6)/2 = 4, and the y-coordinate is (7+10)/2 = 8.5, so we have (4,8.5). To check, we can also find the coordinate of the top left point and calculate the midpoint between that and (8,7).",
+        "D": "I think you've made a mistake when finding your midpoints of the values, be careful with your calculations. Think carefully about which coordinates you want to use and whether midpoints might help here."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

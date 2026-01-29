@@ -1,0 +1,165 @@
+{
+  "shortcode": "vzn",
+  "name": "Form and solve linear equations",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 53,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Solve linear equations with the variable appearing on both sides, with all positive integers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Write a formula to describe a situation",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Interpret the terms on a formula and how they relate to the context of the situation",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use perimeter to write algebraic expressions",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use area to write algebraic expressions",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 131846,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5d2c0e9c-ed31-4e78-ad2c-ba30573c55d6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The electrician charges £20 per hour so we have to multiply that by the number of hours (n) to get 20n. We then add that to the £50 call-out fee to get a formula of C = 50 + 20n for the total cost",
+        "B": "Not quite. Which value will change depending on the amount of hours worked? The £50 or the £20?",
+        "C": "Not quite. The call-out fee will always be £50, regardless of the hours worked. What does the £20 represent?",
+        "D": "Nearly. I think you have added the 50 and 20 together, but only one of these is affected by the number of hours worked"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134039,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/63b0a8f9-a8d2-4e3a-86fb-2763a5432844.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly. We do have to multiply the £15 by the hours worked (n), but don't forget the call-out fee!",
+        "B": "Nearly. I think you have added the 40 and 15 together, but only one of these is affected by the number of hours worked",
+        "C": "The electrician charges £15 per hour so we have to multiply that by the number of hours (n) to get 15n. We then add that to the £40 call-out fee to get a formula of C = 40 + 15n for the total cost",
+        "D": "Not quite. Which value will change depending on the amount of hours worked? The £40 or the £15?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131847,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6c23304-6ef5-4545-91c7-e7bbd4d705f9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The fixed entry fee will be the same in all scenarios and does not get multiplied by anything. What else could the '2' represent?",
+        "B": "The number of hours will vary depending on the visitor so that will be represented by a letter. If 't' represents the number of hours then what would the '2' represent?",
+        "C": "Looking at the formula the '3' represents a fixed cost and then we are adding '2t' where 't' is the element that varies. This could be anything like time or number of children. But the '2' is what we multiply this by. The only option that fits here is the cost per hour, a specified value that changes depending on 't' (in this case, the hours)",
+        "D": "The number of children will vary depending on the visitor so that will be represented by a letter. What value could the play centre determine in advance?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134040,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9b4bf201-6132-4b79-a434-aa3bdc361c75.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The '3' is not affected by another value such as an unknown letter. So we know it must represent a fixed charge of some type.",
+        "B": "The number of hours spent inside will change depending on the visitor so that will be represented by a letter. What value might be decided in advance by the play centre?",
+        "C": "The cost per hour will be a number that is then multiplied by a letter (the number of hours spent inside). In our formula the 3 is not being multiplied by anything so it does not change dependent on the hours. What do we call this?",
+        "D": "The number of children will change depending on the visitor so that will be represented by a letter. What value might be decided in advance by the play centre?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131848,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9651318d-ec9d-4bf5-966d-6e543ca4510b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have mixed up area and perimeter. Remember that perimeter is the total length of the sides of a shape",
+        "B": "You're nearly there, but remember we cannot combine terms with letters and terms without letters.",
+        "C": "I think you have correctly identified that we need to add the sides to find the perimeter, but have you added all the sides of the rectangle?",
+        "D": "The perimeter is the total length of the sides of the shape. Here we have two short sides that are each 3 and two longer sides that are each 2x. So we have 3 + 3 + 2x + 2x which simplifies to 6 + 4x"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134041,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/405fcf1d-743b-494b-b7d4-ec17399d4fde.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have correctly identified that we need to add the sides to find the perimeter, but have you added all the sides of the rectangle?",
+        "B": "The perimeter is the total length of the sides of the shape. Here we have two long sides that are each 3x and two shorter sides that are each 2. So we have 3x + 3x + 2 + 2 which simplifies to 6x + 4",
+        "C": "I think you have mixed up area and perimeter. Remember that perimeter is the total length of the sides of a shape",
+        "D": "You're nearly there, but remember we cannot combine terms with letters and terms without letters."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131849,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8e2e80f7-e31d-4c84-a238-49f2a3b0e7c1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find the area of a rectangle we multiply its length by its width. So 2x x 3 which simplifies to 6x",
+        "B": "Nearly! I think you have found the correct area, but then squared it. We do use square units for area, but this doesn't mean we need to square our value.",
+        "C": "Not quite. I think you tried to calculate the perimeter. Remember that to find the area of a rectangle we multiply its length by its width",
+        "D": "I think you have mixed up area and perimeter. Remember that to find the area of a rectangle we multiply its length by its width"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134042,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/87d43294-dc23-4a50-b104-5d4ffc5d7002.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. I think you tried to calculate the perimeter. Remember that to find the area of a rectangle we multiply its length by its width",
+        "B": "I think you have mixed up area and perimeter. Remember that to find the area of a rectangle we multiply its length by its width",
+        "C": "To find the area of a rectangle we multiply its length by its width. So 3x x 2 which simplifies to 6x",
+        "D": "Nearly! I think you have found the correct area, but then squared it. We do use square units for area, but this doesn't mean we need to square our value."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131850,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f19ad8d6-c66d-4ffa-965b-ba2ccc816319.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom has subtracted 3x from the right hand side. Has he done the same to the left hand side?",
+        "B": "Tom has subtracted the 3x from the right hand side, but on the left hand side he has added x, so Tom is not correct Katie has correctly added 5 to both sides so kept the equations balanced",
+        "C": "Check whether each child has done the exact same thing to both sides of their equations. Remember we must keep the left and right hand sides balanced",
+        "D": "At least one of them is correct. See if you can work out what they have done to the right hand side of the equation and check to see if they have kept it balanced by doing the same thing to the left hand side"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134043,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d72c6549-a886-4224-b88f-6256ca38e9b8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! See if you can work out what each child has done to the right hand side of the equation and check to see if they have kept it balanced by doing the same thing to the left hand side",
+        "B": "Not quite! See if you can work out what each child has done to the right hand side of the equation and check to see if they have kept it balanced by doing the same thing to the left hand side",
+        "C": "Tom has subtracted the p from the left hand side and kept the equation balanced by also subtracting p from the right hand side. Katie has correctly added 5 to both sides so also kept the equations balanced. Both approaches are possible first steps in solving this equation",
+        "D": "At least one of them is correct. See if you can work out what they have done to the right hand side of the equation and check to see if they have kept it balanced by doing the same thing to the left hand side"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

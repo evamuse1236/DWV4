@@ -1,0 +1,159 @@
+{
+  "shortcode": "vwy",
+  "name": "Angles on parallel lines 4",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 203,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify corresponding angles",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify co-interior angles",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find missing angles on parallel lines using supplementary angles",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find missing angles on parallel lines using more than one angle fact",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 76853,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3264e899-8979-45b8-a3c6-02778c75a73d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Alternate angles make a 'z' shape. They can be acute or obtuse.",
+        "B": "Alternate angles make a 'z' shape. They can be acute or obtuse.",
+        "C": "Two of these lines are parallel. 65° and y are one pair alternate angles and 103° and x are another pair of alternate angles for the same reason. Alternate angles are equal.",
+        "D": "Alternate angles make a 'z' shape. They can be acute or obtuse."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78976,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6bdd1ca-38d2-4ad3-8d83-978a92e98a38.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember where a line crosses two parallel lines, the angles in matching positions at the intersections are corresponding. They are equal.",
+        "B": "109° and y are not alternate angles. It is impossible to say what y is without knowing more of the missing angles.",
+        "C": "What type of angle, acute or obtuse, is y? What kind of angle is 109?",
+        "D": "Remember where a line crosses two parallel lines, the angles in matching positions at the intersections are corresponding. They are equal."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 76856,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3b42e3c5-f590-4af1-b06f-2f559cbe1082.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may be confusing co-interior angles with vertically opposite angles.",
+        "B": "Co-interior angles are on the inside (interior) of two parallel lines and on the same side of a crossing line. b and f are co-interior (we can ignore the middle horizontal line).",
+        "C": "I think you may be confusing co-interior angles with alternate angles.",
+        "D": "I think you may be confusing co-interior angles with corresponding angles."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 78979,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ef724cbb-35c1-4675-8a92-4a192359fca1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may be confusing co-interior angles with corresponding angles.",
+        "B": "I think you may be confusing co-interior angles with corresponding angles.",
+        "C": "I think you may be confusing co-interior angles with vertically opposite angles.",
+        "D": "Co-interior angles are on the inside (interior) of two parallel lines and on the same side of a crossing line. d and b are co-interior."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 93416,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3bea08c0-3d1d-4c1d-89ac-9c8e67571219.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may be confusing corresponding angles with vertically opposite angles.",
+        "B": "Imagine sliding the parallel line on the left toward the right until the two intersection points overlap. The angle p will be directly over B. This means they correspond.",
+        "C": "I think you may be confusing corresponding angles with alternate angles.",
+        "D": "I think you may be confusing corresponding angles with co-interior angles."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 93431,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/be6ed021-b23c-4db8-ac6c-c4f653eb16f6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may be confusing corresponding angles with vertically opposite angles.",
+        "B": "I think you may be confusing corresponding angles with co-interior angles.",
+        "C": "Imagine sliding the parallel line on the left toward the right until the two intersection points overlap. The angle p will be directly over B. This means they correspond.",
+        "D": "I think you may be confusing corresponding angles with alternate angles."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 93417,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/900f9111-5893-4091-802e-40d001b6a450.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may be confusing co-interior angles with vertically opposite angles.",
+        "B": "I think you may be confusing co-interior angles with corresponding angles.",
+        "C": "I think you may be confusing co-interior angles with alternate angles.",
+        "D": "We have two parallel lines and another line that crosses them. Co-interior angles are on the inside (interior) of the parallel lines and on the same side of the crossing line."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 93432,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/90fbeb86-4f8c-4a50-9e80-e2222511e131.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may be confusing co-interior angles with alternate angles.",
+        "B": "I think you may be confusing co-interior angles with corresponding angles.",
+        "C": "We have two parallel lines and another line that crosses them. Co-interior angles are on the inside (interior) of the parallel lines and on the same side of the crossing line.",
+        "D": "I think you may be confusing co-interior angles with vertically opposite angles."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 93418,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea7f8208-c77a-44fa-b2bf-6d25aeed5884.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may be thinking about corresponding angles. Try thinking about co-interior angles. What will the sum be of these two angles?",
+        "B": "Almost! I think you've just made a little slip in your working.",
+        "C": "Angle p is co-interior to 52°. This means that p ＋ 52° = 180°, so p = 180 − 52° = 128°.",
+        "D": "Try thinking about co-interior angles. What will the sum be of these two angles?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 93433,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a84e7852-7fcd-4662-8927-b8687d060a08.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Angle p is co-interior to 48°. This means that p ＋ 48° = 180°, so p = 180 − 48° = 132°.",
+        "B": "Almost! I think you've just made a little slip in your working.",
+        "C": "I think you may be thinking about corresponding angles. Try thinking about co-interior angles. What will the sum be of these two angles?",
+        "D": "Try thinking about co-interior angles. What will the sum be of these two angles?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

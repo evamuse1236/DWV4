@@ -1,0 +1,159 @@
+{
+  "shortcode": "biid",
+  "name": "Comparing decimals to thousandths",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 17,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Order decimals with the same number of digits",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Order decimals with a different number of digits",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use inequality notation to order decimals with the same number of digits ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use inequality notation to order decimals with a different number of digits",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 103790,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/87c0ac24-1a5a-439e-bc86-2e7528c8a01e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful. When comparing decimals, compare the ones in the same place value column. Remember 0.2 is the same as 0.20.",
+        "B": "Remember, the inequality sign always ‘points’ to the smaller value. Tom’s numbers are 0.15 (so 1 tenth and 5 hundredths) and 0.2 (with 2 tenths). His inequality sign is pointing the wrong way because 1 tenth is less than 2 tenths, and the 5 hundredths contributes very little by comparison to tenths. Katie is correct because 0.020 has only 2 hundredths.",
+        "C": "Not quite. When comparing decimals remember to compare the digits with the same place value.",
+        "D": "Not quite, at least one of them is correct. Remember to compare the digits with the same place value."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103802,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9698160c-363d-4f8c-87ff-74a83784bdc3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember to compare the digits with the same place value.",
+        "B": "Remember to compare the digits with the same place value.",
+        "C": "Remember, the inequality sign always ‘points’ to the smaller value. Jo’s numbers are 0.26 (so 2 tenths and 6 hundredths) and 0.3 (with 3 tenths). Her inequality sign is pointing the correct way because 2 tenths is less than 3 tenths, and the 6 hundredths contributes very little by comparison to tenths. Paul is correct because 0.030 has only 3 hundredths.",
+        "D": "Not quite, at least one of them is correct. Remember to compare the digits with the same place value."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 155934,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/54874e5f-0c09-46a0-8f65-726a1471acf3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "0.502 is 502 thousandths, which is less than 0.52, 520 thousandths.",
+        "B": "Not quite, this symbol means that the two numbers are equal to each other. 0.502 is not equal to 0.52 - the extra zero acts as a place value holder. Try using an inequality symbol.",
+        "C": "Not quite, perhaps you have chosen this because 502 is bigger than 52. Place a 0 after the 0.52 - now both numbers have the same amount of digits after the decimal point. Which has the greatest amount of thousandths?",
+        "D": "Not quite, this symbol means that the two numbers are completely equivalent to each other. Try using an inequality symbol."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 155952,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5b039017-6612-49e1-a2ae-df2a8f290b8f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, this symbol means that the two numbers are equal to each other. 0.603 is not equal to 0.63 - the extra zero acts as a place value holder. Try using an inequality symbol.",
+        "B": "Not quite, this symbols means that the two numbers are completely equivalent to each other. Try using an inequality symbol.",
+        "C": "Not quite, perhaps you have chosen this because 603 is bigger than 63. Place a 0 after the 0.63 - now both numbers have the same amount of digits after the decimal point. Which has the greatest amount of thousandths?",
+        "D": "0.603 is 603 thousandths, which is less than 0.63, 630 thousandths."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 156709,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d1ef705-082c-4764-a23e-25b11728df4e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks as if you've picked the first number from the list. We're looking for the smallest number from the list.",
+        "B": "In order to find the smallest, we need to compare units with units and tenths with tenths and so on. None of them have a units. Which has the smallest amount of tenths?",
+        "C": "0.2 is the smallest decimal. It has no units and only 2 tenths.",
+        "D": "It looks as if you may have picked the greatest value and not the smallest."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 156727,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a5548a0a-d4b7-46e1-9292-fff7e8b144e2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks as if you've picked the first number from the list. We're looking for the smallest number from the list.",
+        "B": "0.3 is the smallest decimal. It has no units and 3 tenths.",
+        "C": "In order to find the smallest, we need to compare units with units and tenths with tenths and so on. None of them have a units. Which has the smallest amount of tenths?",
+        "D": "It looks as if you may have picked the greatest value and not the smallest."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 156712,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e834aeee-f11d-46b7-8d64-716f4bd8b756.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "0.105 is smaller than 0.150. The inequality has its wider end pointing to the larger number. The 5 in the tenths column of 0.150 means that it is a larger number than 0.105",
+        "B": "It looks as if you may have thought the first zero was being compared. We need to take into account the number in its entirety.",
+        "C": "It looks as if you've misunderstood the direction of the inequality. The thin end of the wedge points to the smaller number and the open, larger part, points to the bigger number.",
+        "D": "It looks as if you have not understood the meaning of this symbol. The three lines means that it is an identity"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 156730,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/706cc915-a726-43dd-9305-3c0ccc158e0e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks as if you have not understood the meaning of this symbol. The three lines means that it is an identity",
+        "B": "It looks as if you've misunderstood the direction of the inequality. The thin end of the wedge points to the smaller number and the open, larger part, points to the bigger number.",
+        "C": "It looks as if you may have thought the first zero was being compared. We need to take into account the number in its entirety.",
+        "D": "0.105 is smaller than 0.150. The inequality has its wider end pointing to the larger number. The 5 in the tenths column of 0.150 means that it is a larger number than 0.105"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 156714,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/608e3749-1fae-467b-aa37-a8bfda407f13.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks as if you've picked the first number from the list. We're looking for the greatest number from the list.",
+        "B": "Two numbers have an 8 in their tenths column, however, 0.83 is bigger than 0.8 as it has 3 in the hundredths column.",
+        "C": "It looks as if you may have chosen this number as it has the most number of digits. However, we are looking to see what has the largest value in the tenths column.",
+        "D": "You may have chosen this number as it appears last in the list, we're looking for the greatest from the list."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 156732,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/41c201c1-450b-487e-a94c-b19d654e5f76.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Two numbers have a 7 in their tenths column, however, 0.73 is bigger than 0.7 as it has 3 in the hundredths column.",
+        "B": "It looks as if you've picked the first number from the list. We're looking for the greatest number from the list.",
+        "C": "It looks as if you may have chosen this number as it has the most number of digits. However, we are looking to see what has the largest value in the tenths column.",
+        "D": "You may have chosen this number as it appears last in the list given, we're looking for the greatest from the list."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,141 @@
+{
+  "shortcode": "bifn",
+  "name": "Writing equations",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 7,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Form equations for situations described in words",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158138,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6df07470-ed0e-462a-8ff9-6095e5d6d4e3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "In this equation, you are saying Dave is 2. How do we show Dave is 3 years older than Jenny who is 5?",
+        "B": "Dave is 3 years older than Jenny and his age is represented with a d. Jenny is 5 years old so the equation we use to find d is d = 5 + 3",
+        "C": "Because Dave is 3 years older, not 3 times Jenny's age, we need to use addition in the equation to find d...",
+        "D": "Multiplying implies Dave is 3 times Jenny's age but he is 3 years older so what mathematical operation do we need to use?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158305,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ce3cba09-c0d1-4e63-a78d-644f781a0876.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Multiplying implies William is 4 times Virginia's age but he is 4 years older so what mathematical operation do we need to use?",
+        "B": "In this equation, you are saying William is 3. How do we show William is 4 years older than Virginia who is 7?",
+        "C": "Because William is 4 years older, not 4 times Virginia's age, we need to use addition in the equation to find w...",
+        "D": "William is 4 years older than Virginia and his age is represented with a w. Virginia is 7 years old so the equation we use to find w is w = 7 + 4"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158139,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fbb26fef-3670-4586-b12b-adee1377644b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This gives the total of the two amounts, how do we find the difference between values in maths?",
+        "B": "We don't use multiplication to find the difference in maths, which operation do we use?",
+        "C": "To find the difference between amounts in maths we subtract them therefore 52 - 48 gives the difference so the equation would be d = 52 - 48",
+        "D": "We don't use division to find the difference in maths, which operation do we use?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158306,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c5171f9c-c9bc-4d17-984e-6a1bcfb77397.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find the difference between amounts in maths we subtract them therefore 67 - 33 gives the difference so the equation would be d = 67 - 33",
+        "B": "This gives the total of the two amounts, how do we find the difference between values in maths?",
+        "C": "We don't use division to find the difference in maths, which operation do we use?",
+        "D": "We don't use multiplication to find the difference in maths, which operation do we use?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158140,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/63d7fd00-376d-4413-8dd4-2585c04645c6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This calculates the total of 12 and 6. To find the total number of swimmers, as there are 12 swimmers in each lane and 6 lanes, we need to do 12 lots of 6... How do we represent this mathematically?",
+        "B": "If there are 12 swimmers in each lane and there are 6 lanes, to find the total number of swimmers we need to do 12 x 6. As s represents the total number of swimmers this gives the equation s = 12 x 6",
+        "C": "This calculates the difference between 12 and 6. To find the total number of swimmers, as there are 12 swimmers in each lane and 6 lanes, we need to do 12 lots of 6... How do we represent this mathematically?",
+        "D": "To find the total number of swimmers, as there are 12 swimmers in each lane and 6 lanes, we need to do 12 lots of 6... How do we represent this mathematically?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158307,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6a801a61-d55f-4fd8-bfe2-c580da9150fd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find the total number of runners, as there are 9 runners in each lane and 6 lanes, we need to do 9 lots of 6... How do we represent this mathematically?",
+        "B": "This calculates the total of 9 and 6. To find the total number of runners, as there are 9 runners in each lane and 6 lanes, we need to do 9 lots of 6... How do we represent this mathematically?",
+        "C": "If there are 9 runners in each lane and there are 6 lanes, to find the total number of runners we need to do 9 x 6. As s represents the total number of runners this gives the equation r = 9 x 6",
+        "D": "This calculates the difference between 9 and 6. To find the total number of runners, as there are 9 runners in each lane and 6 lanes, we need to do 9 lots of 6... How do we represent this mathematically?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158141,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/949e371f-14f3-4a9b-bd9b-6709c53c0100.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This finds the difference. To find how many smoothies Claire made, you need to find out how many 2s are in 64...",
+        "B": "This finds the total. To find how many smoothies Claire made, you need to find out how many 2s are in 64...",
+        "C": "To find the number of smoothies Claire made, you need to find out how many 2s are in 64...",
+        "D": "If each smoothie contains 2 bananas and Claire uses 64, to find the number of smoothies s we do s = 64 ÷ 2"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158308,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e2a0b6c2-bfb9-4e12-b31f-4c5d77e54d99.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If each frittata contains 3 eggs and Sandra uses 72, to find the number of frittatas f we do f = 72 ÷ 3",
+        "B": "This finds the difference. To find how many frittatas Sandra made, you need to find out how many 3s are in 72...",
+        "C": "This finds the total. To find how many frittatas Sandra made, you need to find out how many 3s are in 72...",
+        "D": "To find the number of frittatas Sandra made, you need to find out how many 3s are in 72..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158142,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cde8301d-2503-4694-9137-ba42df2052a8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have accidentally mixed up the number of hours Mrs Garcia worked and what she earnt on Saturday and Sunday...",
+        "B": "To find out the money Mrs Garcia earns on Saturday and Sunday, you need to multiply the number of hours worked by the hourly rate, not divide...",
+        "C": "To find out the money Mrs Garcia earns on Saturday and Sunday, you need to multiply the number of hours worked by the hourly rate, not add...",
+        "D": "To find the amount of money Mrs Garcia earns over the weekend do 6 x 18 to get the amount earnt on Saturday because she worked 6 hours at $18 an hour, 21 x $3 for Sunday and add these two values together to get the total which is the equations in option D"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158309,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fd99e75d-d336-4da5-bbb6-54cec7e852bb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find out the money Francis earns on Saturday and Sunday, you need to multiply the number of hours worked by the hourly rate, not divide...",
+        "B": "To find the amount of money Francis earns over the weekend do 8 x 16 to get the amount earnt on Saturday because they worked 8 hours at $16 an hour, 4 x $24 for Sunday and add these two values together to get the total which is the equations in option B",
+        "C": "To find out the money Francis earns on Saturday and Sunday, you need to multiply the number of hours worked by the hourly rate, not add...",
+        "D": "You have accidentally mixed up the number of hours Francis worked and what she earnt on Saturday and Sunday..."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

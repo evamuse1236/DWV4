@@ -1,0 +1,153 @@
+{
+  "shortcode": "v0i",
+  "name": "Gradient from a straight line graph 1",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 90,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Given a line segment, calculate the gradient where the gradient is a positive integer",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given a line segment, calculate the gradient where the gradient is a negative integer",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Given a line segment, calculate the gradient where the gradient is a positive non-integer",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 107170,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/343aaf01-9d3d-4208-beac-1f2ab62f41b7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The gradient of the line is the change in 𝑦 over the change in 𝑥. If we use the points (1,3) and (0,1) as they lie on the line, we have (3 - 1)/(1 - 0) = 2",
+        "B": "Not quite. This line crosses the y axis at 1, but that is not the gradient. To find the gradient, we calculate the change in y, over the change in x.",
+        "C": "Not quite! This line is trending upwards, so must have a positive gradient.",
+        "D": "Nearly! I think you have divided the wrong way round. Remember, we need to do the change in y, over the change in x."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107180,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/63f2f8f0-6bb1-4da5-84a2-b23946710614.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. This line crosses the y axis at 1, but that is not the gradient. To find the gradient, we calculate the change in y, over the change in x.",
+        "B": "Not quite! This line is trending upwards, so must have a positive gradient.",
+        "C": "The gradient of the line is the change in 𝑦 over the change in 𝑥. Using (1, 4) and (0, 1) as these points lie of the line, we have (4 - 1)/(1 - 0) = 3",
+        "D": "Nearly! I think you have divided the wrong way round. Remember, we need to do the change in y, over the change in x."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107171,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/80aadb1e-bd30-4f96-b0e4-4e7763220597.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This line does have a negative gradient, and it does cross the x and y axis at 2, but that is not the gradient. Remember, to find the gradient, we calculate the change in y, over the change in x.",
+        "B": "The gradient of the line is the change in 𝑦 over the change in 𝑥, so using the coordinates of the axes intercepts (0,2) and (2,0) we have (0 - 2)/(2 - 0) = −1",
+        "C": "Look carefully at the relationship between x and y. As x increases, y decreases, so this line shows a negative gradient.",
+        "D": "I think you may be confusing the gradient with y-intercept or x-intercept. This line crosses the x and y axis at 2, but to find the gradient, we calculate the change in y, over the change in x."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107181,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c7e682ad-8e4b-4123-9673-9f45e7077873.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may be confusing the gradient with y-intercept or x-intercept. This line crosses the x and y axis at 3, but to find the gradient, we calculate the change in y, over the change in x.",
+        "B": "Look carefully at the relationship between x and y. As x increases, y decreases, so this line shows a negative gradient.",
+        "C": "This line does have a negative gradient, and it does cross the x and y axis at 3, but that is not the gradient. Remember, to find the gradient, we calculate the change in y, over the change in x.",
+        "D": "The gradient of the line is the change in 𝑦 over the change in 𝑥, so using the coordinates of the axes intercepts (0,3) and (3,0) we have (0 - 3)/(3 - 0) = −1"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107172,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e47a47d9-4790-4a29-a96e-b33c3196d36b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To calculate the gradient of the line, we need to find the change in 𝑦 divided by the change in 𝑥. It looks like you might have calculated the change in x divided by the change in y.",
+        "B": "Not quite. To calculate the gradient of the line, we need to find the change in 𝑦 divided by the change in 𝑥. To do this we can use two points on the line and calculate the difference between their y coordinates and their x coordinates.",
+        "C": "Not quite, I think you have tried to use the y intercept here. To calculate the gradient of the line, we need to find the change in 𝑦 divided by the change in 𝑥. To do this we can use two points on the line and calculate the difference between their y coordinates and their x coordinates.",
+        "D": "The gradient of the line is the change in 𝑦 divided by the change in 𝑥. Using (0, -3) and (6, 0) as they lie on the line, we have (0 – (-1)/(6 − 4) = 1/2 = 1/2"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107182,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4169de74-250a-4b51-bd0e-29d29ed32482.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. To calculate the gradient of the line, we need to find the change in 𝑦 divided by the change in 𝑥. To do this we can use two points on the line and calculate the difference between their y coordinates and their x coordinates.",
+        "B": "The gradient of the line is the change in 𝑦 divided by the change in 𝑥. Using the points (0,-2) and (6,0) as these lie on the line, we have (0 – (−2))/(6 − 0) = 2/6 = ⅓",
+        "C": "To calculate the gradient of the line, we need to find the change in 𝑦 divided by the change in 𝑥. It looks like you might have calculated the change in x divided by the change in y.",
+        "D": "Not quite, I think you have tried to use the y intercept here. To calculate the gradient of the line, we need to find the change in 𝑦 divided by the change in 𝑥. To do this we can use two points on the line and calculate the difference between their y coordinates and their x coordinates."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107173,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/34bab173-46dd-47d5-b68d-28a8ad37cc98.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You may have found 0 from where the line crosses the axis. To calculate the gradient of the line, we need to find the change in 𝑦 divided by the change in 𝑥. To do this we can use two points on the line and calculate the difference between their y coordinates and their x coordinates.",
+        "B": "Not quite. To calculate the gradient of the line, we need to find the change in 𝑦 divided by the change in 𝑥. To do this we can use two points on the line and calculate the difference between their y coordinates and their x coordinates.",
+        "C": "The gradient of a line is the coefficient (number in front) of x, not x itself. To calculate the gradient of the line, we need to find the change in 𝑦 divided by the change in 𝑥.",
+        "D": "The gradient of the line is the change in 𝑦 divided by the change in 𝑥. Using (0,0) and (1,1) as these points lie on the line we have (1 - 0)/(1 - 0) = 1"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107183,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e6c7e43a-be20-499d-93c2-6ddd5486dea2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You may have found 0 from where the line crosses the axis. To calculate the gradient of the line, we need to find the change in 𝑦 divided by the change in 𝑥. To do this we can use two points on the line and calculate the difference between their y coordinates and their x coordinates.",
+        "B": "The gradient of a line is the coefficient (number in front) of x, not including x itself. To calculate the gradient of the line, we need to find the change in 𝑦 divided by the change in 𝑥.",
+        "C": "The gradient of the line is the change in 𝑦 divided by the change in 𝑥. Using (0,0) and (1,2) as these points lie on the line we have (2 - 0)/(1 - 0) = 2.",
+        "D": "Not quite. To calculate the gradient of the line, we need to find the change in 𝑦 divided by the change in 𝑥. To do this we can use two points on the line and calculate the difference between their y coordinates and their x coordinates."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107174,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4035ca65-8747-4a86-a58f-4cc690634256.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To calculate the gradient of the line, we need to find the change in 𝑦 divided by the change in 𝑥. Whatever points we choose the equation will be ( 3 - 3 )/ (change in x) = 0 / (change in x) = 0. So, all horizontal lines have gradient 0 because there is no change in 𝑦.",
+        "B": "It looks like you may have read the 3 where the line intercepts the 𝑦 axis. The gradient of the line is the change in 𝑦 divided by the change in 𝑥. Choose two points on the line, what is the difference between the y coordinates?",
+        "C": "Not quite. The gradient of the line is the change in 𝑦 divided by the change in 𝑥. Choose two points on the line, what is the difference between the y coordinates? What happens when we divide this number?",
+        "D": "Undefined is the gradient of vertical lines, this is a horizontal line. The gradient of the line is the change in 𝑦 divided by the change in 𝑥. Choose two points on the line, what is the difference between the y coordinates?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107184,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/923336eb-1be8-4d50-ad9a-4091984a65d8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you have found the y intercept. The gradient of the line is the change in 𝑦 divided by the change in 𝑥. Choose two points on the line, what is the difference between the y coordinates? What happens when we divide this number?",
+        "B": "Not quite. The gradient of the line is the change in 𝑦 divided by the change in 𝑥. Choose two points on the line, what is the difference between the y coordinates? What happens when we divide this number?",
+        "C": "To calculate the gradient of the line, we need to find the change in 𝑦 divided by the change in 𝑥. Whatever points we choose the equation will be ( 2 - 2 )/ (change in x) = 0 / (change in x) = 0. So, all horizontal lines have gradient 0 because there is no change in 𝑦.",
+        "D": "Undefined is the gradient of vertical lines, this is a horizontal line. The gradient of the line is the change in 𝑦 divided by the change in 𝑥. Choose two points on the line, what is the difference between the y coordinates?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

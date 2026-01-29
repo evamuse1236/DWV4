@@ -1,0 +1,159 @@
+{
+  "shortcode": "vxl",
+  "name": "Probability vocabulary",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 227,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Know the notation for probability",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Understand the term independent",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Understand the term mutually exclusive",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify the outcomes of a single event",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 131611,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9642614c-4bf6-4528-9977-8b466d4c13bd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Independent events are events which do not affect the probability of the other event happening. If I roll a 6 on one dice it does not change the likelihood of me rolling a 3 on the other dice.",
+        "B": "Not quite. Mutually exclusive events are events that cannot occur at the same time, like rolling a 6 and a 3 on the same dice.",
+        "C": "Not quite. Probability events is not a real term. Yes these are events that happen within probability, but we can give them a specific name",
+        "D": "Not quite. Dependent events affect the probability of another event happening. For example the probability of it raining will affect the probability of me wearing a coat."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133804,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ae9cf082-96d2-4ab8-98e6-ed6d8ee38c87.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Probability events is not a real term. Yes these are events that happen within probability, but we can give them a specific name",
+        "B": "Not quite. Dependent events affect the probability of another event happening. For example the probability of it raining will affect the probability of me wearing a coat.",
+        "C": "Independent events are events which do not affect the probability of the other event happening. If I pick a red ball out of one bag it does not change the likelihood of me picking a blue ball out of another bag.",
+        "D": "Not quite. Mutually exclusive events are events that cannot occur at the same time, like picking a red ball and a blue ball at once, if I am only picking one ball."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131612,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/63a8731d-8d84-4531-ad2f-836c1f28162a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you are considering them as separate events. The question is asking about them occurring at the same time.",
+        "B": "Rolling a 6 and getting an odd number cannot happen at the same time, so these events are mutually exclusive.",
+        "C": "I think you are confusing keywords. They are both events with a probability, but we would not call them probability events.",
+        "D": "Not quite. The probability of rolling a 6 and rolling an odd are not dependent on each other."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133805,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e9e29baf-5c96-4a35-a514-39ab10a60387.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you are confusing keywords. They are both events with a probability, but we would not call them probability events.",
+        "B": "Not quite. The probability of picking a red and of picking a blue is not dependent on each other.",
+        "C": "I think you are considering them as separate events. The question is asking about them occurring at the same time.",
+        "D": "Picking a red and picking a blue cannot happen at the same time, so these events are mutually exclusive."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131613,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/585015aa-678e-41dc-a6a3-7f30c08a329a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. What could the 'P' stand for?",
+        "B": "Not quite. What could the 'P' stand for?",
+        "C": "Not quite. What could the 'P' stand for?",
+        "D": "P(3)' is the quick way of writing 'the probability of rolling a 3'."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133806,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c60782ad-b939-4765-bfff-9f165245588e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. What could the 'P' stand for?",
+        "B": "P(odd)' is the quick way of writing 'the probability of rolling an odd number'.",
+        "C": "Not quite. What could the 'P' stand for?",
+        "D": "Not quite. What could the 'P' stand for?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131614,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/06d43950-66bc-4206-86dc-8da956526d90.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "An outcome is something that could happen. 'How many possible outcomes' asks us to count the different results that could happen when choosing a ball.",
+        "B": "I see your logic ... but think what would happen if maybe the red balls were each slightly different, though fundamentally red, and there was a similar situation with the blue balls. Would this affect how many outcomes there are?",
+        "C": "There are 7 balls in the bag. If you were to take them out, one after another, this would give a way of counting how many possible outcomes there are.",
+        "D": "I think you've multiplied the 3 and 4. Imagine numbering the balls, this will help work out the number of outcomes."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133807,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ddb6895f-3925-45a3-85ab-0705513e82be.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There are 7 balls in the bag. If you were to take them out, one after another, this would give a way of counting how many possible outcomes there are.",
+        "B": "I think you've multiplied the 2 and 5. Imagine numbering the balls, this will help work out the number of outcomes.",
+        "C": "An outcome is something that could happen. 'How many possible outcomes' asks us to count the different results that could happen when choosing a ball.",
+        "D": "I see your logic ... but think what would happen if maybe the red balls were each slightly different, though fundamentally red, and there was a similar situation with the blue balls. Would this affect how many outcomes there are?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131615,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/13acb154-abd9-42e9-832e-64e7abb318a1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you are considering them as separate events. The question is asking about them occurring at the same time.",
+        "B": "The letter P is a consonant so you could not pick the letter P and a vowel at the same time, therefore they are mutually exclusive",
+        "C": "I think you are confusing keywords. They are both events with a probability, but we would not call them probability events.",
+        "D": "Not quite. Picking a P and picking a vowel are not dependent on each other."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133808,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/173432ea-a444-4dc4-b9a5-9b82099a6a59.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you are confusing keywords. They are both events with a probability, but we would not call them probability events.",
+        "B": "Not quite. Picking an E and picking a consonant are not dependent on each other.",
+        "C": "I think you are considering them as separate events. The question is asking about them occurring at the same time.",
+        "D": "E is a vowel, so picking E and picking a consonant could not happen at the same time. Therefore they are mutually exclusive"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

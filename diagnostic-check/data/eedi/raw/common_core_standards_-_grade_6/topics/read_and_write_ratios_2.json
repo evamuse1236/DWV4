@@ -1,0 +1,153 @@
+{
+  "shortcode": "vmp",
+  "name": "Read and write ratios 2",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 3,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Convert fractions to ratios",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve coordinate geometry questions involving ratio",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve length problems involving similar shapes where the missing length is the longer one",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 75983,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3a584829-f68a-46ba-b950-7d2aee4a294b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have put the numbers from the fraction 1/7 into a ratio form. Think about how many parts have been watched, and how many parts are left.",
+        "B": "I think you have put the numbers from the fraction 1/7 into a ratio form. Think about how many parts have been watched, and how many parts are left.",
+        "C": "The fraction of watched time is 1 - 1/7 = 6/7, so 6 parts have been watched and 1 hasn't. Therefore the ratio is 6:1.",
+        "D": "Almost, just check the order they want the parts in."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 76131,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f45118cc-1e32-454e-acb5-a992a67c2c7a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "They have seen 5/6 of the film and have 1/6 left, so the ratio is just the numerators 5:1.",
+        "B": "Almost, just check the order they want the parts in.",
+        "C": "I think you have put the numbers from the fraction 1/6 into a ratio form. Think about how many parts have been watched, and how many parts are left.",
+        "D": "I think you have put the numbers from the fraction 1/6 into a ratio form. Think about how many parts have been watched, and how many parts are left."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 75984,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a2e0f060-6e28-4f6f-8c26-c9eccd26f186.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we make all the fractions have the same denominator, we get 5/10, 3/10 and 2/10. Then the ratio becomes 5 : 3 : 2.",
+        "B": "I think you used the numerators in the ratio, but we can only do this when the denominators are the same",
+        "C": "I think you have used the denominators as your ratio. We need to have the same denominators, and then it is the numerators that tell us how many of each colour we have.",
+        "D": "I think you have totalled the numerators to get the ratio. We need to have the same denominators, and then it is the numerators that tell us how many of each colour we have."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 76132,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fe946f04-2fd2-4283-aa79-b4a5222a4002.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have used the denominators as your ratio. We need to have the same denominators, and then it is the numerators that tell us how many of each colour we have.",
+        "B": "I think you used the numerators in the ratio, but we can only do this when the denominators are the same",
+        "C": "I think you have used the denominators as your ratio and then simplified. We need to have the same denominators, and then it is the numerators that tell us how many of each colour we have.",
+        "D": "Making the fractions equivalent gives 6/12, 4/12 and 2/12, so we can just use the numerators to make the ratio 6:4:2."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101415,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fae34fd2-a5a2-47db-b97a-13e19246054e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have found how many parts make up PR, but the first number is how many parts make up PQ",
+        "B": "I think you have used the horizontal distance between P and Q as the second part of the ratio. Remember it is PQ first, then PR.",
+        "C": "You have found PQ : QR. The second number in the ratio should be PR.",
+        "D": "Let’s just consider the horizontal move. From P to Q this is 4 squares, and from P to R this is 12 squares. Therefore, the ratio PQ : PR can be written as 4 : 12, or simplified as 1 : 3. This is the same if we consider the vertical move"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101430,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/06949cb5-9ba9-4e49-a2bc-d7bef89b9a1b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you used the horizontal distance between B and C as the second part of the ratio. We need AB then AC",
+        "B": "I think you used the vertical distance between B and C as the second part of the ratio. We need AB then AC",
+        "C": "Let’s just consider the horizontal move. From A to B this is 3 squares, and from A to C this is 9 squares. Therefore, the ratio PQ : PR can be written as 3 : 9, or simplified as 1 : 3. This is the same if we consider the vertical move.",
+        "D": "You have found AB : BC. The second number in the ratio should be AC."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101416,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c9b7e22f-deea-46eb-8a1e-4db2ed0d9b9c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you used the horizontal distance between P and R as the second part of the ratio. We need PQ then QR.",
+        "B": "I think you used the horizontal distance between P and Q as the second part of the ratio. We need PQ then QR.",
+        "C": "Let’s just consider the horizontal move. From P to Q this is 4 squares, and from Q to R this is 8 squares. Therefore, the ratio PQ : QR can be written as 4 : 8, or simplified as 1 : 2.This would be the same if we considered vertical movements.",
+        "D": "I think you have found PQ : PR. We need PQ : QR"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101431,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cfa7331a-c1de-4286-a1f1-0efb83bc1b5c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have found the horizontal distance between B and C correctly as the second part of the ratio. We need the distance between A and C for the first part.",
+        "B": "I think you have found the vertical distance between B and C correctly as the second part of the ratio. We need the distance between A and C for the first part.",
+        "C": "I think you have found AB : AC. We need AB : BC",
+        "D": "Let’s just consider the horizontal move. From A to B this is 3 squares, and from B to C this is 6 squares. Therefore, the ratio AB : BC can be written as 3 : 6, or simplified as 1 : 2. This would be the same if we considered the vertical move"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 101417,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b5a1f53e-38f7-467c-9014-9c56a9d763a6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "With problems such as these where there is a triangle within a triangle, it can be helpful to draw the triangles separately. Imagine the 4 cm triangle on the left and the 16 cm triangle on the right. We can write: 4 ✕ ? = 16, giving ?, the constant of proportionality, as 4. This means that the length of the side on the larger triangle that corresponds to x will be 4x. The question asks only for a part of the 4x length, namely 4x – x = 3x. This means that the ratio of x : y is x : 3x, or dividing both sides by x gives the simplified answer of 1 : 3.",
+        "B": "I think you have divided 16 by 4 to get the ratio BUT this division is telling us how many times bigger the lengths of the larger triangle are. Draw out the separate triangles, put a number in for x and find out the length on the big triangle. You can then work out what y is and use these numbers in your ratio",
+        "C": "I think you have added 16 to 4 to get the ratio, but this is not correct. Draw out the separate triangles, put a number in for x and find out the length on the big triangle. You can then work out what y is and use these numbers in your ratio",
+        "D": "I think you have subtracted 4 from 16 to get the ratio, but this is not correct. Draw out the separate triangles, put a number in for x and find out the length on the big triangle. You can then work out what y is and use these numbers in your ratio"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 101432,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fbac926f-68c5-4c0c-af79-ca14e60346a5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "With problems such as these where there is a triangle within a triangle, it can be helpful to draw the triangles separately. Imagine the 8 cm triangle on the left and the 20 cm triangle on the right. We can write: 8 ✕ ? = 20, giving ?, the constant of proportionality, as 2.5. This means that the length of the side on the larger triangle that corresponds to x will be 2.5x. The question asks only for a part of the 2.5x length, namely 2.5x – x = 1.5x. This means that the ratio of x : y is x : 1.5x, or dividing both sides by x gives the simplified answer of 1 : 1.5, and multiplying by 2 gives whole number values of 2 : 3.",
+        "B": "I think you have divided 20 by 8 to get the ratio BUT this division is telling us how many times bigger the sides of the larger triangle are. Draw out the separate triangles, put a number in for x and find out the length on the big triangle. You can then work out what y is and use these numbers in your ratio",
+        "C": "I think you have simplified 8:20, but this is not correct. Draw out the separate triangles, put a number in for x and find out the length on the big triangle. You can then work out what y is and use these numbers in your ratio",
+        "D": "I think you have just subtracted 8 from 20 to get the ratio, but this is not correct. Draw out the separate triangles, put a number in for x and find out the length on the big triangle. You can then work out what y is and use these numbers in your ratio"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

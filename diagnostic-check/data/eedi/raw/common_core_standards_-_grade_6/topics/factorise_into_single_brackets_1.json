@@ -1,0 +1,147 @@
+{
+  "shortcode": "vp6",
+  "name": "Factorise into single brackets 1",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 164,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Factorise a single bracket containing a linear expression by taking out a single numeric common factor (e.g. 6)",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Factorise a single bracket containing a non-linear expression by taking out a single algebraic common factor (e.g. a)",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 77779,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/947038af-46be-46c0-b60c-31b2b94ff21d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. Your answer can be factorised more. What other factors do the numbers inside the brackets have?",
+        "B": "The highest common factor of 24 and 72 is 24, so we can take this out of the bracket. This gives 24(x + 3).",
+        "C": "Almost. Your answer can be factorised more. What other factors do the numbers inside the brackets have?",
+        "D": "Almost. Your answer can be factorised more. What other factors do the numbers inside the brackets have?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 77970,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7dc5647c-b660-4bd9-a49a-403e40b11741.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The highest common factor of 36 and 48 is 12, so we take this out as a common factor to get 12(3x + 4).",
+        "B": "Almost. Your answer can be factorised more. What other factors do the numbers inside the brackets have?",
+        "C": "Almost. Your answer can be factorised more. What other factors do the numbers inside the brackets have?",
+        "D": "Almost. Your answer can be factorised more. What other factors do the numbers inside the brackets have?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 105528,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/16bc8df2-89bd-40b0-9abe-ad5cb4746160.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might have tried to take the wrong factor out. What is the highest common factor of 6 and 9?",
+        "B": "I think you might have tried to take the wrong factor out. What is the highest common factor of 6 and 9? This will be the number that replaces the star.",
+        "C": "Not quite, check your calculations carefully. Multiplying the star and the triangle together should equal 6.",
+        "D": "The highest common factor of 6m and 9 is 3, so 3 will go outside the brackets. This means ★ = 3. Next, 6𝑚 = 3 × 2𝑚 which means that the first term inside the brackets is 2𝑚 and so ▲ = 2. Then, 9 = 3 × 3 which means that the second term inside the brackets is 3 and so ⚫ = 3."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 105533,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e308ce72-cfd2-4577-97df-51bc3ac7cb33.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might have tried to take the wrong factor out. What is the highest common factor of 8 and 10?",
+        "B": "The highest common factor of 8m and 10 is 2, so 2 will go outside the brackets. This means ★ = 2. Next, 8𝑚 = 2 × 4𝑚 which means that the first term inside the brackets is 4𝑚 and so ▲ = 4. Then, 10 = 2 × 5 which means that the second term inside the brackets is 5 and so ⚫ = 5.",
+        "C": "Not quite, check your calculations carefully. Multiplying the star and the triangle together should equal 8.",
+        "D": "I think you might have tried to take the wrong factor out. What is the highest common factor of 8 and 10? This will be the number that replaces the star."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 105529,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b6803398-e6a2-4b91-9a75-c1c75386e72f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might have tried to take the wrong factor out. What is the highest common factor of 6 and 9?",
+        "B": "The highest common factor of 6m and 9 is 3, so 3 will go outside the brackets. This means ★ = 3. Next, 6𝑚 = 3 × 2𝑚 which means that the first term inside the brackets is 2𝑚 and so ▲ = 2. Then, 9 = 3 × 3 which means that the second term inside the brackets is 3 and so ⚫ = 3.",
+        "C": "I think you might have tried to subtract the highest common factor from 9 instead of dividing 9 by the common factor.",
+        "D": "Not quite. Make sure you take the factor out of both terms in the expression."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 105534,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3da0bf44-4493-4f25-a504-4031943f8861.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you might tried to subtract the highest common factor from 10 instead of dividing 10 by the common factor.",
+        "B": "Not quite. Make sure you take the factor out of both terms in the expression.",
+        "C": "I think you might have tried to take the wrong factor out. What is the highest common factor of 8 and 10?",
+        "D": "The highest common factor of 8m and 10 is 2, so 2 will go outside the brackets. This means ★ = 2. Next, 8𝑚 = 2 × 4𝑚 which means that the first term inside the brackets is 4𝑚 and so ▲ = 4. Then, 10 = 2 × 5 which means that the second term inside the brackets is 5 and so ⚫ = 5."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 132119,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/15e884c1-1535-4cf0-a599-b1db7099d7de.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The star is the highest common factor, a. When multiplied by the circle, the answer is 2a, so the circle must equal 2.",
+        "B": "I think you have found what the star represents, the highest common factor, a. What will the circle represent?",
+        "C": "Not quite. In our original expression we had 2a in place of the circle, but here we have factorised by removing the highest common factor. Start by working out what the highest common factor will be",
+        "D": "Not quite. The brackets tell us that the expression has been factorised by removing the highest common factor. Start by working out what will replace the star, then see what must be left under the circle"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 132083,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/08b64c92-2b88-45b5-b55a-8ee4dda3e35b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. In our original expression we had 4y in place of the circle, but here we have factorised by removing the highest common factor. Start by working out what the highest common factor will be",
+        "B": "I think you have found what the star represents, the highest common factor, y. What will the circle represent?",
+        "C": "The star is the highest common factor, y. When multiplied by the circle, the answer is 4y, so the circle must equal 4.",
+        "D": "Not quite. The brackets tell us that the expression has been factorised by removing the highest common factor. Start by working out what will replace the star, then see what must be left under the circle"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 132120,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ff872c68-a7a4-4d37-aa24-0aa03eb0dd26.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. The ⭑ must be a common factor of both 3a² and 2a. Is 3 a common factor of both of these terms? What is the common factor?",
+        "B": "The ⭑ must be a common factor of both 3a² and 2a. Is 3 a common factor of both of these terms? What is the common factor?",
+        "C": "The common factor in 3a² and 2a is a. We divide both terms by a and take a outside the brackets, so ⭑ = a. 3a² means 3 x a x a so when we divide by a, we are left with 3a. So ▲ = 3.",
+        "D": "The ⭑ must be a common factor of both 3a² and 2a. Is 2 a common factor of both of these terms? It might help to remember that 3a² means 3 x a x a (and not 3 x a x 2)."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 132082,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4957bf18-282e-45f8-9382-0c8a77a4294b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. The ⭑ must be a common factor of both 9y² and 4y. Is 9 a common factor of both of these terms? What is the common factor?",
+        "B": "The ⭑ must be a common factor of both 9y² and 4y. Is 9 a common factor of both of these terms? What is the common factor?",
+        "C": "The common factor in 9y² and 4y is y. We divide both terms by y and take y outside the brackets so ⭑ = y. 9y² means 9 x y x y so when we divide by y, we are left with 9y. So ▲ = 9.",
+        "D": "The ⭑ must be a common factor of both 9y² and 4y. Is 2 a common factor of both of these terms? It might help to remember that 9y² means 9 x y x y (and not 9 x y x 2)."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

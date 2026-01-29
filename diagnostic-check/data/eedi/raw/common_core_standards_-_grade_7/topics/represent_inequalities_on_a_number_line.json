@@ -1,0 +1,147 @@
+{
+  "shortcode": "vv4",
+  "name": "Represent inequalities on a number line",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 168,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Represent a linear inequality with a single tail on a number line",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Represent a linear inequality in the form x ≤ a or x ≥ b (and other sign arrangements) on a number line",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 131571,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8c80248d-37a5-4b17-b37d-79b0eda3e799.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The arrow is pointing to the negative side of -1 on our number line, which indicates we need a 'less than' inequality sign. The unfilled circle tells us -1 is not included in the range of values for x. So the inequality is x < -1.",
+        "B": "What does an unfilled circle mean? Is -1 included in the range of possible values for x?",
+        "C": "Which way is the inequality sign pointing? Is x more or less than -1?",
+        "D": "Think carefully about which way the inequality is pointing. Is x more or less than -1? And what does an unfilled circle tell us?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133764,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/52b9f203-4b0f-4ab4-a82b-85210270f090.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Which way is the inequality sign pointing? Is x more or less than 2?",
+        "B": "Think carefully about which way the arrow is pointing. Is x more or less than 2? And what does an unfilled circle tell us?",
+        "C": "The arrow is pointing to the negative side of 2 on our number line, which indicates we need a 'less than' inequality sign. The unfilled circle tells us 2 is not included in the range of values for x. So the inequality is x < 2.",
+        "D": "What does an unfilled circle mean? Is 2 included in the range of possible values for x?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131572,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5d27dfeb-275c-49a8-97f4-ff4adb23f5a5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "What does an unfilled circle mean? Is -1 included in the range of possible values for x on the number line? Does this match the inequality here?",
+        "B": "We have x ≤ -1 so we need all the values less than or equal to -1. The arrow is pointing to the negative side of -1 on our number line, which indicates all the numbers less than -1. The filled circle tells us -1 is included in the range of values for x, so B is the correct diagram.",
+        "C": "Which way is the arrow pointing here and what does an unfilled circle mean? Does this match the inequality here?",
+        "D": "The arrow here is pointing towards the numbers larger than -1 on the number line. Does this match the inequality here?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133765,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db4dcb70-aced-4042-9d5f-903d17152575.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Which way is the arrow pointing here and what does an unfilled circle mean? Does this match the inequality we have been given?",
+        "B": "The arrow here is pointing towards the numbers larger than 1 on the number line. Does this match the inequality we have been given?",
+        "C": "What does an unfilled circle mean? Is 1 included in the range of possible values for x on the number line? Does this match the inequality we have been given?",
+        "D": "We have x ≤ 1 so we need all the values less than or equal to 1. The arrow is pointing to the negative side of 1 on our number line, which indicates all the numbers less than 1. The filled circle tells us 1 is included in the range of values for x, so D is the correct diagram."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131573,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f5e6c706-e85d-4d6f-88a7-fea44ccc8628.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Which way is the arrow pointing here? Does this match the inequality here?",
+        "B": "The arrow here is pointing towards the numbers that are more negative than -1 on the number line. Does this match the inequality here?",
+        "C": "We have x > -1 so we need all the values greater than -1. The arrow is pointing to the positive side of -1 on our number line, which indicates all the numbers greater than -1. The hollow circle tells us -1 is not included in the range of values for x, so C is the correct diagram.",
+        "D": "What does a filled circle mean? Is -1 included in the range of possible values for x on the number line? Does this match the inequality here?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133766,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/93fd1d4a-4c04-4614-99b5-fac7739ea822.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We have x > 1 so we need all the values greater than 1. The arrow is pointing to the more positive side of 1 on our number line, which indicates all the numbers greater than 1. The hollow circle tells us 1 is not included in the range of values for x, so A is the correct diagram.",
+        "B": "What does a filled circle mean? Is 1 included in the range of possible values for x on the number line? Does this match the inequality we have been given?",
+        "C": "Which way is the arrow pointing here? Does this match the inequality we have been given?",
+        "D": "Which way is the arrow pointing here? And what does a filled circle mean? Does this match the inequality we have been given?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131574,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f9eff757-1c05-4b04-876c-32155ed54422.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Think carefully about which way the inequality is pointing. Is x more or less than -1? And what does a filled circle tell us?",
+        "B": "Which way is the arrow pointing? Does that match the inequality here?",
+        "C": "What does a filled circle mean? Is -1 included in the range of possible values for x on the number line?",
+        "D": "The arrow is pointing to the more positive side of -1 on our number line, which indicates we need a 'greater than' inequality sign. The filled circle tells us -1 is included in the range of values for x. So the inequality is x ≥ -1."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133767,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3ab9c795-68b9-484b-bc12-0fb6e31374bc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "What does a filled circle mean? Is 1 included in the range of possible values for x on the number line?",
+        "B": "The arrow is pointing to the more positive side of 1 on our number line, which indicates we need a 'greater than' inequality sign. The filled circle tells us 1 is included in the range of values for x. So the inequality is x ≥ 1.",
+        "C": "What does a filled circle mean? Is 1 included in the range of possible values for x on the number line? And which way is the arrow pointing?",
+        "D": "Which way is the arrow pointing? Does that match the inequality here?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131575,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5ec7d72d-71ff-4069-95af-56f7289df2ca.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Both of these inequalities are shown as unfilled circles on the number line. Does this mean the numbers below these circles are included or not included in the inequality? Check each inequality carefully to decide whether or not we need an unfilled circle for each one.",
+        "B": "Both of these inequalities are shown as filled circles on the number line. Does this mean the numbers below these circles are included or not included in the inequality? Check each inequality carefully to decide whether or not we need an filled circle for each one.",
+        "C": "The inequalities given specify that x is less than -1; and also that x is greater than or equal to 2. We show x is less than -1 on the number line by an arrow pointing in the negative direction from -1 and an unfilled circle as -1 is not included. We show x is greater than or equal to 2 with a filled circle at 2 (as 2 is included) and an arrow pointing in the positive direction.",
+        "D": "Look closely at the inequalities in the question. What does a filled circle above -1 mean? What does an unfilled circle above 2 mean? Check and see if this matches the inequalities given."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133768,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/67090ff0-2037-4270-ae9e-972a21fcbc43.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Both of these inequalities are shown as unfilled circles on the number line. Does this mean the numbers below these circles are included or not included in the inequality? Check each inequality carefully to decide whether or not we need an unfilled circle for each one.",
+        "B": "Both of these inequalities are shown as filled circles on the number line. Does this mean the numbers below these circles are included or not included in the inequality? Check each inequality carefully to decide whether or not we need an filled circle for each one.",
+        "C": "Not quite! Have a look again at the inequalities in the question. What does an unfilled circle above -1 mean? What does a filled circle above 2 mean? Check and see if this matches the inequalities given.",
+        "D": "The inequalities given specify that x is less than or equal to -1; and also that x is greater than 2. We show x is less than or equal to -1 on the number line by an arrow pointing in the negative direction from -1 and a filled circle as -1 is included. We show x is greater than 2 with an unfilled circle at 2 (as 2 is not included) and an arrow pointing in the positive direction."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

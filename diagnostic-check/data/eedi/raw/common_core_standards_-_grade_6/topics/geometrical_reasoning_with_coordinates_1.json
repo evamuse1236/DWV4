@@ -1,0 +1,147 @@
+{
+  "shortcode": "vqz",
+  "name": "Geometrical reasoning with coordinates 1",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 207,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Solve coordinate geometry questions involving quadrilaterals",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the length of horizontal and vertical line segments",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 107514,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/75dd17cd-a7eb-42a3-80b6-368951ce4fcc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, have a think about which sets of the coordinates can help you to get the 𝑥 and y coordinate for your vertex. Remember the first number is the 𝑥 (horizontal) coordinate and the second number is the y (vertical) coordinate.",
+        "B": "So close! Double check your answer carefully.",
+        "C": "Not quite, look carefully at the y-coordinate you need here.",
+        "D": "This point will have the same 𝑥 coordinate as (3,12) and the same 𝑦 coordinate as (10,7), which gives (3,7)."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107519,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1ad5d1d9-22be-4447-9831-08552e18021c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, have a think about which sets of the coordinates can help you to get the 𝑥 and y coordinate for your vertex. Remember the first number is the 𝑥 (horizontal) coordinate and the second number is the y (vertical) coordinate.",
+        "B": "This point will have the same 𝑥 coordinate as (1, 9) and the same y coordinate as (8, 3), which gives (1, 3).",
+        "C": "So close! Double check your answer carefully.",
+        "D": "Not quite, look carefully at the 𝑥 coordinate you need here."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107515,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f63f4c8f-f04a-4ab7-b15a-7f5d788ce38d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, the y coordinate all along here would be 12, but it is not the width of the arrow.",
+        "B": "We subtract the 𝑥 values to get the width, and so 10 – 3 = 7",
+        "C": "Not quite, you have found the height of the rectangle, try again to find the width of the arrow",
+        "D": "Almost, you've used the correct numbers! If you go from 3 across to 10, how many does it take you to get there?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107520,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/54f03c8c-2f0a-4e51-acb5-d17b883497af.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost, you've used the correct numbers! If you go from 1 across to 8, how many does it take you to get there?",
+        "B": "Not quite, I think you've found the difference in the coordinate (8,9). Try to find the distance of the red arrow",
+        "C": "We subtract the 𝑥 values to get the width, and so 8 – 1 = 7",
+        "D": "Not quite, you have found the height of the rectangle, try again to find the width of the arrow"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107516,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dd117665-96d2-4436-8fd9-f610f6f8c0f6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, remember a square has to have the same length and width, is there a way this can happen?",
+        "B": "Using Tom’s coordinates would create a rectangle with height 6 and width 5. Using Katie’s coordinates would create a rotated square where both diagonal lengths are 6. So only Katie is correct.",
+        "C": "Not quite, remember your square must have the same height and width, do they both have this?",
+        "D": "Not quite, have a careful think about what both of these would look like. Perhaps drawing a diagram may even help!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107521,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c7904b89-0a4e-4215-a076-f574306766e5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, remember that you can calculate the distance between the points to decide whether it is a square or not. An accurately drawn diagram may also help you to visualise this",
+        "B": "Have you checked both of the pairs of coordinates carefully?",
+        "C": "Using Tom’s coordinates gives a square with sides of length 4, and using Katie’s coordinates gives a rotated square with diagonal lengths of 4, so both are correct.",
+        "D": "Have you checked both of the pairs of coordinates carefully? Remember a square has to have equal width and height"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107517,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2695e1f4-35e8-411e-b98e-2c7b4916b9f7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, this diagram isn't drawn accurately. See if you can use both given vertices to help you",
+        "B": "This point will have the same 𝑥 coordinate as (1, 5) and the same 𝑦 coordinate as (–3, −15), which gives (1, −15).",
+        "C": "Not quite, check your answer carefully to see which coordinates you need to use",
+        "D": "Not quite, check your answer carefully to see which coordinates you need to use"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107522,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/778b4e3a-f3b0-475b-bf8d-f5c5d4412a09.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This point will have the same 𝑥 coordinate as (–4, 7) and the same 𝑦 coordinate as (–2, –12), which gives (–4, –12).",
+        "B": "Not quite, check your answer carefully to see which coordinates you need to use",
+        "C": "Not quite, check your answer carefully to see which coordinates you need to use",
+        "D": "Not quite, check your answer carefully to see which coordinates you need to use"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107518,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9b3ddcd2-9198-4029-8ef8-28773ddfacc2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful when you do your calculation. It may help to split it into the distance up to the x axis, and then the distance up to the rectangle's top edge, then add them together.",
+        "B": "We subtract the y coordinates to get the height, which is 5 – (–15) = 20. You can also think of it as going up 15 from (-3,-15) to the x-axis, and then going up a further 5 to get to the top of the rectangle. In total, 15+5=20",
+        "C": "You're really close! You've just found the width instead of the height.",
+        "D": "I think you've tried to find the width, and struggled with the negative signs. Try again to find the height, and be careful with the negatives! :)"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107523,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f3859d8f-59d9-44f5-92eb-bce2d13090c0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful when you do your calculation. It may help to split it into the distance up to the x axis, and then the distance up to the top of the rectangle, then add them together.",
+        "B": "You're really close! You've just found the width instead of the height.",
+        "C": "I think you've tried to find the width, and struggled with the negative signs. Try again to find the height, and be careful with the negatives! :)",
+        "D": "We subtract the y coordinates to get the height, which is 7 – (–12) = 19. You can also think of it as going up 12 from (2,-12) to the x-axis, and then going up a further 7 to get to the top of the rectangle. In total, 12+7=19"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

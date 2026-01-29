@@ -1,0 +1,165 @@
+{
+  "shortcode": "v0h",
+  "name": "Equation of a straight line through a given point",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 89,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Work out the equation of a line when given a negative gradient and the y-intercept",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Work out the equation of a line when given a positive gradient and a point on the line",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Work out the equation of a line given two points on the line, one of which is the y-intercept, where the gradient of the line is positive",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Work out the equation of a line given two points on the line, one of which is the y-intercept, where the gradient of the line is negative",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Work out the equation of a line given two points on the line, neither of which is the y-intercept, where the gradient of the line is positive",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 131796,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/364c3c6c-d334-448b-a27f-6a3301b325b9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we think of the line in the form y = mx + c, m is the gradient and c is the where the line crosses the y axis. Therefore the line y = -3x + 2 has gradient -3 and a y intercept of 2.",
+        "B": "Not quite. Look closely at the signs. This line has a gradient of +3 and a y-intercept of (0,-2), whereas the line given in the question has a gradient of -3 and a y-intercept of (0,2)",
+        "C": "Not quite. Look closely at the signs. This line has a gradient of +3 but we want the equation of a line with gradient -3.",
+        "D": "There is enough information, we can use the equation of a straight line y= mx + c, where m is the gradient and c is the y intercept."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133989,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/48c36778-1df9-4354-ab6b-f59068f6fdf4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. I think you have confused the gradient and y-intercept in the equation of a straight line. If we think of the line in the form y = mx + c, m is the gradient and c is the where the line crosses the y axis.",
+        "B": "Not quite. Look closely at the signs. This line has a gradient of +5 but we want the equation of a line with gradient -5.",
+        "C": "If we think of the line in the form y = mx + c, m is the gradient and c is the where the line crosses the y axis. Therefore the line y = -5x + 1 has gradient -5 and a y intercept of 1.",
+        "D": "There is enough information, we can use the equation of a straight line y= mx + c, where m is the gradient and c is the y intercept."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131797,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d5c7bfb6-bc33-4fae-9438-2a6562ce1e05.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This line does have a gradient of 2, but the point (1,1) does not lie on y = 2x + 1. Try substituting the values x=1 and y=1 into the equation to find the value for c.",
+        "B": "This line does not have gradient of 2 because the coefficient (number in front) of x is 1 not 2.",
+        "C": "This line has a gradient of 2 as the coefficient of x is 2. The point (1,1) lies on the line: if we substitute x = 1 and y = 1 into y = 2x - 1 then we have 1 = 2 x 1 - 1 which gives 1 = 1.",
+        "D": "This line does have a gradient of 2, but the point (1,1) does not lie on y = 2x. Try substituting the values x=1 and y=1 in to find out the value of c."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133990,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fbcbf5db-a2f7-45a7-8ea1-667ccc9b3036.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This line has a gradient of 4 as the coefficient of x is 4. The point (1,6) lies on the line: if we substitute x = 1 and y = 6 into y = 2x + 4 then we have 6 = 2 x 1 + 4 which gives 6 = 6.",
+        "B": "This line does have a gradient of 4, but the point (1,6) does not lie on it. Try substituting the values x=1 and y=6 in to find out what c should be.",
+        "C": "This line does have a gradient of 4, but the point (1,6) does not lie on it. Try substituting the values x=1 and y=6 in to find out what c should be.",
+        "D": "This line does have a gradient of 4, but the point (1,6) does not lie on it. Try substituting the values x=1 and y=6 in to find out what c should be."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131798,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eb12274c-bcb6-4132-90dc-a097202d0335.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom is correct, we can calculate the gradient from the points given. Can we tell where this line crosses the y axis from the information given in the question?",
+        "B": "Katie is correct (0,5) is the y intercept as this is the point the line will cross the y axis. We can calculate the gradient by working the difference in the y coordinates divided by the difference in the x coordinates.",
+        "C": "Tom is correct, we can calculate the gradient from the points given (11 - 5)/(2 - 0) = 6/2 = 3. Katie is correct (0,5) is the y intercept as this is the point where the line will cross the y axis",
+        "D": "We can calculate the gradient by working the difference in the y coordinates divided by the difference in the x coordinates and the y intercept will be the point where the line crosses the y axis."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133991,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eed31dec-6840-4c36-909d-703b43c936c2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom is correct, we can calculate the gradient from the points given (11 - 3)/(4 - 0) = 8/4 = 2. Katie is incorrect as the line crosses the y axis at (0,3) not (0,11).",
+        "B": "Katie is not correct, the line passes through the y axis at (0,3). We can calculate the gradient by working the difference in the y coordinates divided by the difference in the x coordinates.",
+        "C": "Tom is correct, we can calculate the gradient from the points given (11 - 3)/(4 - 0) = 8/4 = 2. Can Katie be correct if we know that (0,3) is on the line?",
+        "D": "Katie is not correct as we can see that the line passes through the y axis at (0,3) as it is given in the question. We can calculate the gradient by working the difference in the y coordinates divided by the difference in the x coordinates."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131799,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/218c0272-9e07-4edd-9573-48fb152f0f7b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom is correct the gradient is 6, using this information we know that the equation of the line is y = 6x + c. To find c (which is the y intercept) we can substitute either point given in the question into the equation.",
+        "B": "Katie is correct, the line intercepts the y axis at (0,-1). We can calculate the gradient by working the difference in the y coordinates divided by the difference in the x coordinates.",
+        "C": "Tom is correct, we can calculate the gradient by working the difference in the y coordinates divided by the difference in the x coordinate. (11-5)/(2-1) = 6/1 = 6. Katie is correct because we know that the equation of the line is y = 6x + c. To find c (which is the y intercept) we can substitute either point from the question into this equation. This gives c = -1 so the y intercept is -1",
+        "D": "We can calculate the gradient by working the difference in the y coordinates divided by the difference in the x coordinates. We can then use this information to form the equation y = mx + c with our gradient m, to find c (which is the y intercept) we can substitute either point from the question into this equation."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133992,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c84a7413-c3cb-45b4-9935-5bce0aa807c6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom is correct, we can calculate the gradient by working the difference in the y coordinates divided by the difference in the x coordinate. (11-5)/(3-1) = 6/2 = 3. Using this information we know that the equation of the line is y = 3x + c. To find c (which is the y intercept) we can substitute either point from the question into this equation.",
+        "B": "Katie is correct, the line crosses the y axis at (0,2). We can calculate the gradient by working the difference in the y coordinates divided by the difference in the x coordinates.",
+        "C": "Tom is correct, we can calculate the gradient by working the difference in the y coordinates divided by the difference in the x coordinate. (11-5)/(3-1) = 6/2 = 3. Katie is correct because we know that the equation of the line is y = 3x + c. To find c (which is the y intercept) we can substitute either point from the question into this equation. This gives c = 2 so the y intercept is 2",
+        "D": "We can calculate the gradient by working the difference in the y coordinates divided by the difference in the x coordinates. We can then use this information to form the equation y = mx + c with our gradient m. To find c (which is the y intercept) we can substitute either point from the question into this equation."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131800,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d82bb4b8-aeca-46b8-b436-fff08bba364f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, double check the calculations for Tom's gradient once again. Remember, -11 - 5 is -16.",
+        "B": "Katie is correct as the line will cross the y axis at the point (0,-5).",
+        "C": "Not quite, check the calculations for Tom's gradient. Remember, -11 - 5 is -16.",
+        "D": "Not quite, remember the y-intercept is where a line crosses the y axis."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133993,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cef6abb0-1245-466c-bfb0-37e7db93c638.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly! Tom is definitely correct. Remember, the y-intercept is where the line crosses the y axis.",
+        "B": "Nearly! Katie is definitely correct. Remember for the gradient, we do the difference in y coordinates/ the difference in x coordinates.",
+        "C": "Both Tom and Katie are correct. Tom is correct as the difference in y coordinates/ the difference in x coordinates is -3. Katie is correct as the line will cross the y axis at the point (0,-5).",
+        "D": "Not quite, remember the y-intercept is where a line crosses the y axis, and the gradient is calculated by the difference in y coordinates/ the difference in x coordinates."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

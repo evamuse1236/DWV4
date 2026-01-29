@@ -1,0 +1,147 @@
+{
+  "shortcode": "ehhl",
+  "name": "Checking if the answer to a two-step problem is reasonable",
+  "collectionId": 33,
+  "level": 1,
+  "sequence": 13,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Having rounded the elements of a calculation to one significant figure, perform an estimation that involves multiple operations on integers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify when the answer to a two-step problem is reasonable",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166644,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ab86cf71-4d64-415c-a781-99c62591fde4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the exact value, the question has asked you to use the baker's rounded numbers to estimate...",
+        "B": "You have accidentally added on the cookies he has already baked but, if he's already baked them, he needs to bake this many less to get the total needed!",
+        "C": "There are 6 cookies in each box and the baker needs to make 20 boxes so that is 120 cookies as 6 x 20 = 120. He has already made 40 so we do 120 - 40 = 80 therefore, he still needs to bake 80 cookies!",
+        "D": "If there are 6 cookies in each box and he needed to make 20 boxes, how many cookies is this? Take off the cookies he has already made to work out how many he still has to bake!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166894,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/985a1449-7456-47c1-bd66-ad664aba2656.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If there are 7 cookies in each box and he needed to make 40 boxes, how many cookies is this? Take off the cookies he has already made to work out how many he still has to bake!",
+        "B": "This is the exact value, the question has asked you to use the baker's rounded numbers to estimate...",
+        "C": "You have accidentally added on the cookies he has already baked but, if he's already baked them, he needs to bake this many less to get the total needed!",
+        "D": "There are 7 cookies in each box and the baker needs to make 40 boxes so that is 280 cookies as 7 x 40 = 280. He has already made 90 so we do 280 - 90 = 190. Therefore, he still needs to bake 190 cookies!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166645,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/073f0257-9e80-47a3-9517-3e37667e6163.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have estimated the price of the toy car incorrectly. Is $4.18 closer to $4 or $5?",
+        "B": "You have estimated the price of the toy truck incorrectly. Is $5.99 closer to $5 or $6?",
+        "C": "I think you have accidentally estimated the price of 3 toy cars and 3 toy trucks but we want 3 toy cars and 1 toy truck!",
+        "D": "We are estimating, so we round the values to one significant figure, making the calculation easier. The cost of a toy car becomes $4 and a truck $6. Leo wants 3 toy cars and a truck so 3 x $4 = $12 and $12 + $6 = $18. Therefore, an estimate for the total cost is $18!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166895,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3c705f1d-264a-4419-b3c4-52ec963be05a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have accidentally estimated the price of 4 toy cars and 4 toy trucks but we want 1 toy car and 4 toy trucks!",
+        "B": "We are estimating, so we round the values to one significant figure, making the calculation easier. The cost of a toy car becomes $4 and a truck $5. Zoe wants 1 toy car and 4 toy trucks so 4 x $5 = $20 and $20 + $4 = $24. Therefore, an estimate for the total cost is $24!",
+        "C": "You have estimated the price of the toy car incorrectly. Is $3.99 closer to $3 or $4?",
+        "D": "You have estimated the price of the toy truck incorrectly. Is $5.16 closer to $5 or $6?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166646,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8477070a-e176-4ac4-b1d4-96298897a160.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have accidentally divided the sweets between 4 people but the question says the sweets are shared between 'herself and 4 friends' so you need to include Sarah too!",
+        "B": "There are 515 sweets, but we are estimating so we round to 500 sweets, and 5 people. Dividing the sweets between the people we get: 500 ÷ 5 = 100 so each person gets 100 sweets. If Sarah has 82 left we can round that to 80 and find the difference between 100 and 80. 100 - 80 = 20 so yes, Sarah has eaten approximately 20 sweets!",
+        "C": "You have accidentally added the 100 and 80 together but you are trying to find the difference between them...",
+        "D": "You have correctly rounded 82 to 80 but you need to divide the total sweets between the people first. How many sweets are there and how many people?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166896,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4caf2749-1691-4a96-bf43-a6d481671218.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have accidentally divided the sweets between 4 people but the question says the sweets are shared between 'herself and 5 friends' so how many people is that altogether?",
+        "B": "You have accidentally added the 50 and 40 together but you are trying to find the difference between them...",
+        "C": "There are 298 sweets, but we are estimating so we round to 300 sweets, and 6 people. Dividing the sweets between the people we get: 300 ÷ 6 = 50 so each person gets 50 sweets. If Hannah has 39 left we can round that to 40 and find the difference between 50 and 40. 50 - 40 = 10 so yes, Hannah has eaten approximately 10 sweets!",
+        "D": "You have accidentally divided the sweets between 5 people but the question says the sweets are shared between 'herself and 5 friends' so you need to include Hannah too!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166647,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2d2b70ea-524c-4d86-be3a-9934ed07f61f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It's possible to type the wrong thing into a calculator and therefore, get the wrong answer! Read the question again and work out the age of Johnny's sister to see which answer is correct",
+        "B": "I think you have accidentally added 5 to Johnny's age but the sister is YOUNGER...",
+        "C": "I think you have accidentally doubled the dad's age but Johnny is HALF the age of his dad...",
+        "D": "Johnny's dad is 40 and his daughter cannot be older than him!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166897,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/96a8969c-d215-4c78-ba5e-7a0565c08436.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Jamie's mum is 46 and her son cannot be older than her!",
+        "B": "It's possible to type the wrong thing into a calculator and therefore, get the wrong answer! Read the question again and work out the age of Jamie's brother to see which answer is correct",
+        "C": "I think you have accidentally doubled the mum's age but Jamie is HALF the age of his mum...",
+        "D": "I think you have accidentally added 7 to Jamie's age but the brother is YOUNGER..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166648,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/57804268-cc5f-4578-b6b8-9b4269581c0b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The shop fills 5 boxes completely and there are 8 trains in each box. 5 x 8 = 40 therefore, there must be more than 40 trains. 49 would mean another full box could be filled so the answer must be 43. This would be the 8 full boxes and 3 trains in the next box!",
+        "B": "This would fill up 6 boxes completely and have 1 train in a seventh box...",
+        "C": "This would fill up 5 boxes completely but there'd be no trains in the sixth box...",
+        "D": "This wouldn't fill up the 5 boxes completely. Remember there are 8 trains in each box. We want to fill up 5 boxes completely and have some in a sixth box..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166898,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a4d5e3f3-5632-40bd-a6c1-2ae514ba913c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This wouldn't fill up the 7 boxes completely. Remember there are 6 trains in each box. We want to fill up 7 boxes completely and have some in an eighth box...",
+        "B": "The shop fills 7 boxes completely and there are 6 trains in each box. 7 x 6 = 42 therefore, there must be more than 42 trains. 48 would mean another full box could be filled so the answer must be 44. This would be the 7 full boxes and 2 trains in the next box!",
+        "C": "This would fill up 8 boxes completely! We want 7 boxes completely full and the eighth partially filled...",
+        "D": "This would fill up 7 boxes completely but there'd be no trains in the eighth box..."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

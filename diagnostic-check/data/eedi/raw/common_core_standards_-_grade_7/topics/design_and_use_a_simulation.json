@@ -1,0 +1,147 @@
+{
+  "shortcode": "ehju",
+  "name": "Design and use a simulation",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 253,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Design a simulation (US)",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use a simulation to generate frequencies (US)",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166836,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c2b2d891-33da-48f8-b6f2-9dc1b0aac93c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We need a simulation where there are 3 equally likely outcomes. This is the spinner with 3 equal sections.",
+        "B": "This could work if you assigned two numbers to each toy but there's a more appropriate way which only has 3 options...",
+        "C": "This tool only has two outcomes, but there are 3 outcomes in the event. Which of these simulations has 3 equally likely outcomes?",
+        "D": "There are 3 outcomes to match the 3 toys, but here two are identical so you couldn't tell when you had picked out all 3."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167086,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ceade8cf-63a1-49bc-ac07-2093a303d8be.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There are 4 outcomes to match the 4 toys, but here two are identical so you couldn't tell when you had picked out all 4.",
+        "B": "This tool has 6 outcomes, but there are 4 outcomes in the event. Which of these simulations has 4 equally likely outcomes?",
+        "C": "This tool has 2 outcomes, but there are 4 outcomes in the event. Which of these simulations has 4 equally likely outcomes?",
+        "D": "We need a simulation where there are 4 equally likely outcomes. This bag of marbles has 4 equally likely outcomes."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166837,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dae62795-d5d2-4e35-8b48-61b701b2b88a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This models a 50% chance of rain. How could we alter it so it was 75%?",
+        "B": "The assignments are representing 75% chance of rain, but we would only get one day if we generate a single number.",
+        "C": "The assignments are 75% rain and 25% no rain (3 outcomes vs 1). The simulation is carried out twice to represent the two days.",
+        "D": "This models a 25% chance of rain. How could we alter it so it was 75%?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167087,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/38ee361e-fe72-44ec-91a4-21d0795f7045.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The assignments are 20% snow and 80% no snow (1 outcomes vs 4). The simulation is carried out three times to represent the three days.",
+        "B": "The assignments are representing 20% chance of snow, but we would only get one day if we generate a single number.",
+        "C": "This models a 40% chance of snow. How could we alter it so it was 20%?",
+        "D": "This models an 80% chance of snow. How could we alter it so it was 20%?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166838,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9d141b34-c82b-4506-bcb3-8d1f82cf9783.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This trial is simulating the next 5 customers entering, and whether they will each order coffee. It will not simulate how many orders need to be taken before 5 coffees are purchased. What do we need to get 5 of?",
+        "B": "The coin represents the 50% chance, and counting the total flips (customers) until 5 coffees are ordered directly answers the question.",
+        "C": "This trial finds out how many coffees are ordered out of a fixed group of 5 customers, not how many orders it takes to reach the goal.",
+        "D": "This trial only simulates the event of one customer ordering a coffee, not the five required for a free drink"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167088,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/44b965c5-ea73-474f-b477-e76ff69c9f46.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This trial finds out how many croissants are ordered out of a fixed group of 10 customers, not how many it takes to reach the goal.",
+        "B": "This trial only simulates the event of one customer ordering a croissant, not the 10 required for a coupon.",
+        "C": "This trial is simulating the next 10 customers entering, and whether they will each order croissants. It will not simulate how many orders need to be taken before 10 croissants have been purchased and a coupon is given out. What do we need to get 10 of?",
+        "D": "This correctly simulates the event. The dice represents the 1/6 chance, and counting the total rolls (customers) until 10 croissants are ordered directly answers the question."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166839,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/237b3fbf-4a79-499e-9d9f-2cd95beeda13.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have found the theoretical probability, we need to use the outcomes of the experiment.",
+        "B": "In the trial there were 3 occasions where there was a head and a 4, out of 20 trials in total. Therefore the probability is 3/20.",
+        "C": "I think you have used the outcomes where there was a head as the denominator. The denominator needs to be the total number of trials.",
+        "D": "This is the probability of getting a heads, we need a heads and a 4. How many times did this happen?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167089,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a9718ae2-9609-482e-86b6-2bde79c575cd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "In the trial there were 2 occasions where there was a head and a 2, out of 20 trials in total. Therefore the probability is 2/20 = 1/10",
+        "B": "I think you have used the outcomes where there was a head as the denominator. The denominator needs to be the total number of trials.",
+        "C": "I think you have found the theoretical probability, we need to use the outcomes of the experiment.",
+        "D": "This is the probability of getting a heads, we need a heads and a 2. How many times did this happen?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166840,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/46ef31f6-4619-4f2f-be53-8ff93fccd782.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you counted the total number of girls (14) and divided by the total number of children (24), instead of counting successful trials.",
+        "B": "I think you have found the theoretical probability, we need to use the outcomes of the experiment.",
+        "C": "There are 6 trials with two or more girls (GGB, GGG, BGG, BGG, GBG, GBG), so the probability is 6/8 = 3/4",
+        "D": "I think you have found the number of times there were exactly 2 girls, we need at least 2 girls."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 167090,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8f0e2c65-f977-4990-a3e3-d53711afa811.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There are 7 trials with one or more boy, so the probability is 7/8.",
+        "B": "I think you have found the theoretical probability of having a boy. We want the experimental probability that when 3 children are selected, at least 1 of them is a boy.",
+        "C": "I think you counted the total number of boys (10) and divided by the total number of children (24), instead of counting successful trials.",
+        "D": "I think you have found the number of times there were exactly 1 boy, we need at least 1 boy."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

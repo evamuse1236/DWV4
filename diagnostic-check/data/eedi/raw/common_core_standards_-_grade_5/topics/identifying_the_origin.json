@@ -1,0 +1,147 @@
+{
+  "shortcode": "ehip",
+  "name": "Identifying the origin",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 99,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Understand the definition of the origin on a coordinate grid",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Basic terminology of graphs",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158478,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8c4e7f01-6d7f-43cb-b6de-32b7d4aa409d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The line going across the middle of the graph is called the x axis, but what do we call the point in the middle of both axes?",
+        "B": "The two lines are the axes, but what do we call the point where they cross, where both lines are 0?",
+        "C": "Where the two axes cross (at 0), we call that point the origin.",
+        "D": "The line going down the middle of the graph is called the y axis, but what do we call the point in the middle of both axes?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158591,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/243af068-6fef-45da-93d2-4238f0288ff3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The line going down the middle of the graph is called the y axis, but what do we call the point in the middle of both axes?",
+        "B": "Where the two axes cross (at 0), we call that point the origin.",
+        "C": "The two lines are the axes, but what do we call the point where they cross, at 0?",
+        "D": "The line going across the middle of the graph is called the x axis, but what do we call the point in the middle of both axes?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166679,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2d1e63c6-313e-443d-b4c8-c2c1a21a0d76.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It's true that we usually start counting from 1. However, the origin is the starting point before any counting begins. It represents zero distance along both the x-axis and the y-axis. Which coordinate best shows this?",
+        "B": "That coordinate correctly shows zero distance along the x-axis, but it represents a distance of 1 unit along the y-axis. Remember, the origin must represent zero distance on both axes. What coordinate would show this?",
+        "C": "That coordinate correctly shows zero distance along the y-axis, but it represents a distance of 1 unit along the x-axis. Remember, the origin must represent zero distance on both axes. What coordinate would show this?",
+        "D": "The origin is the starting point on the axes. It represents zero distance along both the x-axis and the y-axis so its coordinates are (0, 0)."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166929,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/514cc5b9-f2c8-4a02-a863-2eaf0030a294.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is a common, informal name used but it is not the mathematical name, as sometimes this point isn't at the centre...",
+        "B": "The coordinate (0,0) is indeed at the intersection of the x and y axes, but what is the special mathematical name for this point?",
+        "C": "The mathematical name for where the 𝑥-axis and 𝑦-axis meet, at the point (0, 0), is the origin!",
+        "D": "The point (0,0) is the starting point on the axes, but what special mathematical name do we give it?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166680,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bc0dab1b-5fba-46cf-990b-8687515eaafe.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is a common, informal name used but it is not the mathematical name, as sometimes this point isn't at the centre...",
+        "B": "It is the point we start measuring from but the question is asking us what the correct mathematical name is...",
+        "C": "The mathematical name for where the 𝑥-axis and 𝑦-axis meet, at the point (0, 0), is the origin!",
+        "D": "This is a common, informal name used but it is not the mathematical name, as sometimes this point isn't in the middle..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166930,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/437f0a28-40e9-457d-a1af-b391c7898735.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It is the point we start measuring from, but this doesn't fully describe it. Draw out a quick graph. What else do you notice about the start of the y axis?",
+        "B": "The origin is the point where the 𝑥-axis and 𝑦-axis intersect. It has the coordinates (0,0)",
+        "C": "The origin does describe an intersection of 2 lines, but is it any 2 lines?",
+        "D": "The origin is often in the middle of a 4-quadrant grid, but not always. How could we be a bit more specific?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166681,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ebeb14e7-a33a-46f7-81ea-7109c4945014.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The origin is the point (0, 0) which is represented by A on the grid!",
+        "B": "This represents the point (1, 1) but the origin must represent zero distance on both axes. What coordinate would that be and which point represents it?",
+        "C": "The origin is in the centre of a four quadrant grid but this grid only has one quadrant! Remember, the origin is the starting point on the axes. It represents zero distance along both the x-axis and the y-axis",
+        "D": "This would be the point (4, 0) but the origin must represent zero distance on both axes. What coordinate would that be and which point represents it?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166931,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0485e1ef-6899-4611-85fe-beb21049109b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The origin is in the centre of a four quadrant grid but this grid only has one quadrant! Remember, the origin is the starting point on the axes. It represents zero distance along both the x-axis and the y-axis",
+        "B": "This represents the point (0, 5) but the origin must represent zero distance on both axes. What coordinate would that be and which point represents it?",
+        "C": "The origin is the point (0, 0) which is represented by C on the grid!",
+        "D": "This represents the point (5, 0) but the origin must represent zero distance on both axes. What coordinate would that be and which point represents it?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166682,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/38fdf05c-35f8-48e8-a14f-41132a620aa3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The origin is at (0,0), but what does this look like on the graph? Where is this on the axes?",
+        "B": "The origin is the point where the x-axis and y-axis meet, but what coordinate would this point have?",
+        "C": "The origin is the starting point on the axes. It represents zero distance along both the x-axis and the y-axis, so both Tom and Katie are correct. The x-axis and the y-axis meet at (0, 0), which is known as the origin.",
+        "D": "Try drawing out a quick graph. The origin is the starting point on the axes. It represents zero distance along both the x-axis and the y-axis. Where would this be?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166932,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b7e560cd-269d-438e-9314-20d990d1613e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The origin is the starting point on the axes. It represents zero distance along both the x-axis and the y-axis. What would this look like as a coordinate?",
+        "B": "The origin is the starting point on the axes. It represents zero distance along both the x-axis and the y-axis. What would this look like as a coordinate?",
+        "C": "The origin is the starting point on the axes. It represents zero distance along both the x-axis and the y-axis so its coordinates are (0, 0). Therefore both Mia and Leo are correct.",
+        "D": "The origin is the starting point on the axes. It represents zero distance along both the x-axis and the y-axis. What would this look like as a coordinate?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

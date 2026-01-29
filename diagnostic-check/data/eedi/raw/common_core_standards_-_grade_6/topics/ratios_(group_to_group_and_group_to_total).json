@@ -1,0 +1,141 @@
+{
+  "shortcode": "edz0",
+  "name": "Ratios (Group to Group and Group to total)",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 4,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Express pictorial representations of objects as a ratio",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 166128,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d687f9f4-1849-4656-83bf-4b18d0e41ddf.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have worked out the ratio of circles to triangles. How many shapes are there in total?",
+        "B": "There are 4 circles, and 10 shapes in total so the ratio of circles to total shapes is 4:10",
+        "C": "I think you have worked out the ratio of triangles to total shapes. Check how many circles there are, and use that number to write the ratio of circles to total shapes.",
+        "D": "You have given the ratio of total shapes to circles. The order of the wording in the question is important - because it says circles to total shapes we need to write the number of circles first in our ratio, and then the number of total shapes."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166356,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/04ed5f16-fb0a-40e7-b605-58d19bac54d9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There are 5 triangles, and 8 shapes in total, so the ratio of triangles to total shapes is 5:8",
+        "B": "I think this is the ratio of triangles to rectangles, but we are asked for the ratio of triangles to total shapes. How many shapes are there in total?",
+        "C": "You have given the ratio of total shapes to triangles. The order of the wording in the question is important - because it says triangles to total shapes we need to write the number of triangles first in our ratio, and then the number of total shapes.",
+        "D": "I think you have worked out the ratio of rectangles to total shapes. Check how many triangles there are, and use that number to write the ratio of triangles to total shapes."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166129,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/687cb6c1-385c-4acb-b936-3bb2754cf995.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There are 6 triangles and 4 circles so the ratio of triangles to circles is 6:4",
+        "B": "I think you have worked out the ratio of triangles to total shapes. Check how many circles there are and write the ratio of triangles to circles.",
+        "C": "I think you have worked out the ratio of circles to total shapes, and then simplified your answer. Check how many triangles there are, and how many circles there are, and write the ratio of triangles to circles.",
+        "D": "This is the ratio of circles to triangles. Notice in the wording of the question it asks for the ratio of triangles to circles. As it says triangles first we need to write the number of triangles first in the ratio, and then the number of circles."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166357,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1dc71d4d-bb2e-4a3e-b584-bfa45a67c2ca.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have worked out the ratio of stars to total shapes. Check how many circles there are and then write the ratio of stars to circles.",
+        "B": "This is the ratio of circles to stars. Notice in the wording of the question it asks for the ratio of stars to circles. As it says stars first we need to write the number of stars first in the ratio, and then the number of circles.",
+        "C": "As there are 5 stars and 4 circles the ratio of stars to circles is 5:4",
+        "D": "I think you have worked out the ratio of circles to total shapes. Check how many stars there are and then write the ratio of stars to circles."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166130,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/561f6eb5-44ae-4c03-b3cd-5d3b3dc96bbc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Nearly! I think you have worked out the ratio of stars to squares, instead of the ratio of stars to total shapes.",
+        "B": "There are 6 stars and 8 squares, which is 14 shapes in total. The ratio of stars to total shapes is 6:14, which simplifies to 3:7",
+        "C": "Almost! I think you have worked out the ratio of squares to total shapes, instead of the ratio of stars to total shapes.",
+        "D": "This is the ratio of total shapes to stars. The order of the numbers matter in ratio, and their order matches the wording in the question. As the question is asking for the ratio of stars to total shapes we write the number of stars first in the ratio, followed by the total shapes."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166358,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/63871fd0-065d-4e22-a777-338d7c06a09f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There are 6 triangles and 10 circles, so 16 shapes in total. The ratio of triangles to total shapes is 6:16, which simplifies to 3:8",
+        "B": "This is the ratio of total shapes to triangles. The order of the numbers matter in ratio, and their order matches the wording in the question. As the question is asking for the ratio of triangles to total shapes we write the number of triangles first in the ratio.",
+        "C": "This is the ratio of triangles to circles instead of the ratio of triangles to total shapes. Work out the total number of shapes in the diagram and use that in your ratio.",
+        "D": "I think you've worked out the ratio of circles to total shapes, but we need to find the ratio of triangles to total shapes. Check how many triangles there are and use that in your ratio."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166131,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9a70c367-424e-4f59-a9c8-46f1181bd492.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the ratio of stars to squares. The order of the numbers matter in ratio, and their order matches the wording in the question. As the question is asking for the ratio of squares to stars we write the number of squares first in the ratio, followed by the number of stars.",
+        "B": "I think this is the ratio of stars to total shapes, instead of squares to stars. Check how many squares, how many stars, then write them in the ratio and simplify.",
+        "C": "I think this is the ratio of squares to total shapes, but the question is asking for the ratio of squares to stars.",
+        "D": "There are 8 squares and 6 stars, so the ratio of squares to stars is 8:6. This simplifies to 4:3"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166359,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3deb8808-a265-45cf-bb12-b97d24379034.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think this is the ratio of stars to total shapes, but the question is asking for the ratio of stars to squares.",
+        "B": "This is the ratio of squares to stars. The order of the numbers matter in ratio, and their order needs to match the wording in the question. As the question is asking for the ratio of stars to squares we write the number of stars first in the ratio, followed by the number of squares.",
+        "C": "There are 4 stars and 12 squares, so the ratio of stars to squares is 4:12, which simplifies to 1:3",
+        "D": "I think this is the ratio of squares to total shapes, but the question is asking for the ratio of stars to squares. Check how many stars, how many squares, then write them in the ratio and simplify."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 166132,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/705fe901-6bbf-476f-968c-4142a7e68009.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is the ratio of total shapes to squares. The order of the numbers matter in ratio, and their order has to match the wording in the question. As the question is asking for the ratio of squares to total shapes we write the number of squares first in the ratio, followed by the total number of shapes and then simplify the ratio.",
+        "B": "I think you've worked out the ratio of squares to other shapes, instead of squares to total shapes. Count the number of squares, stars and triangles to work out the total number of shapes and then use that in your ratio.",
+        "C": "There are 4 squares and 16 shapes in total, so the ratio of squares to total shapes is 4:16, which simplifies to 1:4",
+        "D": "I think this is the ratio of squares to triangles to stars. Work out the total number of shapes, and use that answer to write the ratio of squares to total shapes. \n"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 166360,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c1d07256-92b1-49ce-beb0-faafc459b869.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've worked out the ratio of circles to triangles. Find the total number of shapes and use that to write the ratio of circles to total shapes, which then simplifies.",
+        "B": "There are 6 circles, 3 triangles and 5 squares. Altogether there are 14 shapes. The ratio of circles to total shapes is 6:14, which simplifies to 3:7",
+        "C": "I think you worked out and simplified the ratio of circles to other shapes. To work out the total shapes, add together the number of circles, triangles and stars. You can then write and simplify the ratio of circles to total shapes.",
+        "D": "I think that this is the ratio of total shapes to circles. The order of the numbers matter in ratio, and their order needs to match the wording in the question. As the question is asking for the ratio of circles to total shapes, we write the number of circles first in the ratio, followed by the total number of shapes. We can then simplify the ratio."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

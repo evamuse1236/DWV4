@@ -1,0 +1,141 @@
+{
+  "shortcode": "biji",
+  "name": "Multiplication with fractions 1",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 63,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Multiply proper fractions in the form: Fraction × Fraction",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 130242,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/587ce500-5f98-4b32-a791-41c41419c415.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Although the bar is split into 5 sections, they are not all the same size. The question mark represents half of the green section. Consider first what the green section represents.",
+        "B": "Although the bar is split into 5 sections, they are not all the same size. The question mark represents half of the green section. Consider first what the green section represents.",
+        "C": "The green section is the same size as the other 3 sections. This means that the green part is 1/4. The question mark is one half of the green part, and so that represents 1/8 of the bar overall.",
+        "D": "The whole green section represents 1/4, but the question mark is only half of the green section."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130262,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cd0a8485-1201-4c08-9981-b84ded3a844a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The green section is the same size as the other 3 sections. This means that the green part is 1/4. The question mark is one third of the green part, and so that represents 1/12 of the bar overall.",
+        "B": "Although the bar is split into 6 sections, they are not all the same size. The question mark represents one third of the green section. Consider first what the green section represents.",
+        "C": "Although the bar is split into 6 sections, they are not all the same size. The question mark represents one third of the green section. Consider first what the green section represents.",
+        "D": "The whole green section represents 1/4, but the question mark is one third of the green section."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130243,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ca5a5d6c-2518-452d-b2a8-b35faa13d78c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Although the bar is split into 5 sections, they are not all the same size. What fraction does the green section represent?",
+        "B": "Remember that dividing by 1/2 is the same as doubling, so this would mean 2/4 or 1/2 of the bar is represented by the ? Is the ? half of the bar?",
+        "C": "Although the bar is split into 5 sections, they are not all the same size. What fraction does the green section represent?",
+        "D": "The bar has been split into 4 equal sections. One of those is shaded green, so represents 1/4. The green section has been split into 2, and the question mark represents half of it. So we can multiply 1/2 by 1/4 to find the fraction represented."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130263,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d011e75f-dbad-4380-9b85-dca77ea56b02.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Although the bar has 6 sections, they are not equal so the green part does not represent 3/6. What fraction does the green part represent?",
+        "B": "Remember that dividing by 1/3 is the same as multiplying by 3, so this would mean 3/4 of the bar is represented by the ? Is the ? the same as 3/4 of the bar?",
+        "C": "Although the bar has 6 sections, they are not equal so the green part does not represent 3/6. What fraction does the green part represent?",
+        "D": "The bar has been split into 4 equal sections. One of those is shaded green, so represents 1/4. The green section has been split into 3, and the question mark represents one third of it. So we can multiply 1/3 by 1/4 to find the fraction represented."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130244,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/96bd44b1-e64f-4b17-a4d2-8f99523fcaa1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To multiply fractions we multiply the numerators together and the denominators together. This gives (2 × 1) / (5 × 2) = 2/10 = 1/5",
+        "B": "I think you have added the numerators and denominators. We need to multiply the numerators and denominators.",
+        "C": "I think you have forgotten to also multiply the numerators.",
+        "D": "I think you have divided by the second fraction instead of multiplying. We need to multiply the numerators and denominators."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130264,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/53402a55-d34e-4e12-b34f-1f64b5e6c2f4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added the numerators and denominators. We need to multiply the numerators and denominators.",
+        "B": "I think you have divided by the second fraction instead of multiplying. We need to multiply the numerators and denominators.",
+        "C": "I think you have forgotten to also multiply the numerators.",
+        "D": "To multiply fractions we multiply the numerators together and the denominators together. This gives (3 × 1) / (11 × 3) = 3/33= 1/11"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130245,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9e9b602b-2c43-4d60-9f9a-5ae7c9ee2585.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added the numerators and denominators. We need to multiply the numerators and denominators.",
+        "B": "I think you have divided by the second fraction instead of multiplying. We need to multiply the numerators and denominators.",
+        "C": "I think you have added the denominators. We need to multiply the numerators and denominators.",
+        "D": "To multiply fractions we multiply the numerators together and the denominators together. This gives (1 × 1) / (8 × 3) = 1/24"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130265,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6d943fda-f385-492f-8a26-7eed36192ec5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To multiply fractions we multiply the numerators together and the denominators together. This gives (1 × 1) / (9 × 5) = 1/45",
+        "B": "I think you have added the numerators and denominators. We need to multiply the numerators and denominators.",
+        "C": "I think you have divided by the second fraction instead of multiplying. We need to multiply the numerators and denominators.",
+        "D": "I think you have added the denominators. We need to multiply the numerators and denominators."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130246,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d470ab8-e5a0-48f3-ba42-171b771f50ec.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost! Can your answer be simplified?",
+        "B": "To multiply fractions we multiply the numerators together and the denominators together. This gives (4 × 1) / (5 × 8) = 4/40 = 1/10",
+        "C": "I think you have added the numerators and denominators. We need to multiply the numerators and denominators.",
+        "D": "This was one of the original fractions. Try multiplying the numerators and multiplying the denominators."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130266,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/54a69078-b067-4515-a39f-56ddf4764ad1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added the numerators and denominators. We need to multiply the numerators and denominators. Try multiplying the numerators and multiplying the denominators.",
+        "B": "This is equivalent to one of the starting fractions. Remember to multiply the numerators and the denominators",
+        "C": "Almost! Can your answer be simplified?",
+        "D": "To multiply fractions we multiply the numerators together and the denominators together. This gives (1 × 3) / (15 × 4) = 3/60 = 1/20"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

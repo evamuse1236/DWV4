@@ -1,0 +1,147 @@
+{
+  "shortcode": "biie",
+  "name": "Round to decimal places 1",
+  "collectionId": 31,
+  "level": 1,
+  "sequence": 18,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Round decimals to the nearest whole number",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Round numbers to one decimal place",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 130247,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1baa8e39-b870-44ec-b210-db9e731527ab.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "4.36 is between 4 and 5. It is closer to 4 so we would round to 4.",
+        "B": "I think you have rounded to 1 decimal place. We need to round to the nearest 1.",
+        "C": "Not quite. 4.36 is between 4 and 5, but which is it closer to?",
+        "D": "I think you have tried to make the number into a whole number by taking out the decimal. When we round we need to find the whole number that 4.36 is nearest to, without changing its place value"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130267,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/18c89f12-77cb-4ddf-8b29-0fb86823355c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have rounded to 1 decimal place. We need to round to the nearest 1.",
+        "B": "11.52 is between 11 and 12. It is closer to 12 so we would round up to 12.",
+        "C": "Not quite. 11.52 is between 11 and 12, but which is it closer to?",
+        "D": "I think you have rounded to the nearest 10, we need to round to the nearest 1."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130248,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fc9b9374-1a58-4be7-8ebc-9991c833bf92.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. When we round we are looking for the whole number this decimal is closest to. 7.503 is between 7 and 8, but which is it closest to?",
+        "B": "Almost, 7.503 is between 7 and 8 but which is it closest to?",
+        "C": "I think you have rounded to 1 decimal place rather than the nearest 1.",
+        "D": "7.503 is between 7 and 8, but it is closer to 8. Therefore to the nearest whole it would be 8"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130268,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/877dae2e-ec7a-478c-9f25-70613f358d85.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. 49.089 is between 49 and 50, but which one is it closest to?",
+        "B": "I think you have rounded to 1 decimal place. We need to round to the nearest 1.",
+        "C": "49.089 is between 49 and 50 but it is closer to 49. Therefore we would round it down to 49.",
+        "D": "Not quite. I think you noticed that you needed to round down, but is 48 the whole number that 49.089 is closest to?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130249,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e22a8687-1759-4212-9f17-fd411eb2f883.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. 27.48 is between 27.4 and 27.5. Which one is it closest to?",
+        "B": "I think you rounded to the nearest 1 rather than 1 decimal place.",
+        "C": "27.48 is between 27.4 and 27.5. It is closer to 27.5 than 27.4 so would round up.",
+        "D": "I think you saw that you needed to round up because of the 8, but you changed the wrong number. Is this the number with 1 decimal place that 27.48 is closest to?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130269,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d29e2849-062c-4c11-8c02-758a86c17154.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "739.82 is between 739.8 and 739.9. It is closer to 739.8 so would round down to this number.",
+        "B": "I think you rounded to the nearest 1 rather than to 1 decimal place.",
+        "C": "I think you saw that you needed to round down, but you didn't need to change the number in the tenths column. What number with 1 decimal place is this closest to?",
+        "D": "I think you saw the 9 and rounded up. What number with 1 decimal place is 739.82 closest to?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130250,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4cd94f80-17a8-4c30-8dbf-cec07ca59be5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you saw you needed to round up, but I think you increased the wrong digit. Which number with 1 decimal place is this closest to?",
+        "B": "29.09 is between 29.0 and 29.1. It is closer to 29.1 so we would round up to this.",
+        "C": "I think you took out the 0 and put the wrong number in the first decimal place position. Which number with 1 decimal place is 29.09 closest to?",
+        "D": "I think you rounded the 9 up, but it is the number in the first decimal place column that you needed to adjust."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130270,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3fe9bff8-2e0c-4a9b-ac1f-8bc5ad459d50.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you saw you needed to round down, but you rounded down too far. Which number with 1 decimal place is 7.041 closest to?",
+        "B": "I think you rounded to 2 decimal places but we needed to round to 1 decimal place.",
+        "C": "7.041 is between 7.0 and 7.1. It is closer to 7.0 than 7.1, so we would round down to 7.0.",
+        "D": "I think you saw you needed to round down, but put the wrong number in the first decimal place position. Which number with 1 decimal place is this closest to?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130251,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4d9b2ef7-b7f2-490e-a9cd-f1059278f9ab.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you saw that you needed to round up, but what happens when the number in the tenths column becomes a 10?",
+        "B": "50.991 is between 50.9 and 51.0. It is closer to 51.0 so we would round up to this number.",
+        "C": "I think you saw that you needed to round up, but what happens when the number in the tenths column becomes a 10?",
+        "D": "I think you saw that you needed to round up, but you altered the digit in the wrong column. Which number with 1 decimal place is this closest to?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130271,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6b8f9095-ab13-4d92-87e6-6a7fa59c5174.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "509.493 is between 509.4 and 509.5. It is closer to 509.5 so we would round up to this number.",
+        "B": "I think you rounded the 4 up to 5, but you also increased the number in the units column. Which number with one decimal place is this closest to?",
+        "C": "Almost. 509.493 is between 509.4 and 509.5. Which one is it closer to?",
+        "D": "I think you saw that you needed to round up, but you altered the digit in the wrong column. Which number with 1 decimal place is this closest to?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

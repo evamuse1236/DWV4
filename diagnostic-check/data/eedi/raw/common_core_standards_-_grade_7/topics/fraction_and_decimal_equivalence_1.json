@@ -1,0 +1,159 @@
+{
+  "shortcode": "vuj",
+  "name": "Fraction and decimal equivalence 1",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 103,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Convert fractions less than 1 to terminating decimals of 1 decimal place",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Convert terminating decimals less than 1 with 1 decimal place to fractions",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Convert terminating decimals less than 1 with 2 decimal places to fractions",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Convert terminating decimals less than 1 with 3 or more decimal places to fractions",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 75896,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5438f24c-ef9e-4fb5-8eaf-7abadc7e0a81.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Very close! You just need to simplify the fraction.",
+        "B": "Very close! You just need to simplify the fraction.",
+        "C": "0.4 is equal to 40/100 or 4/10, which is equivalent to 2/5.",
+        "D": "Not quite. Use the place value of the 4 to work out what the denominator is."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 76044,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9e1f3bea-b1ec-425a-83fc-cbd096461ed7.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "0.8 = 8/10 = 4/5.",
+        "B": "Very close! You just need to simplify the fraction.",
+        "C": "Very close! You just need to simplify the fraction.",
+        "D": "Not quite. Use the place value of the 8 to work out what the denominator is."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 75897,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/77e4f387-1a1c-414d-b4bc-fed19456897f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! To help you can use equivalent fractions to give 3/5 a denominator of 10, you can then use place value or division to convert this fraction into a decimal.",
+        "B": "Not quite! To help you can use equivalent fractions to give 3/5 a denominator of 10, you can then use place value or division to convert this fraction into a decimal.",
+        "C": "Not quite! To help you can use equivalent fractions to give 3/5 a denominator of 10, you can then use place value or division to convert this fraction into a decimal.",
+        "D": "None of these are correct. We should have 3/5 =6/10 = 0.6"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 120903,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/92ad7fc1-184e-4157-99c0-17b45f00b61d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The number on the bottom of the fraction doesn't tell you the number after the decimal point. Try writing an equivalent fraction over 10 and then the division is much easier.",
+        "B": "4/5 is the same as 8/10. 8 divided by 10 is 0.8.",
+        "C": "This would only be true if the denominator was 10. Try writing an equivalent fraction over 10 and then the division is much easier.",
+        "D": "The fraction line is not the same as a decimal point. Try writing an equivalent fraction over 10 and then the division is much easier."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103952,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b2ce12c5-96bc-42d3-a3bb-06fae4c2fd03.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You can use place value. The 7 is in the tenths column so we have 7 tenths, or 7/10",
+        "B": "Almost, just think about the place value of the 7",
+        "C": "Not quite. We can't swap the decimal for a fraction line. Think about the place value of the number",
+        "D": "Not quite. The number after the decimal tells us about the numerator, the denominator can be found using place value."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103956,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b929b7d3-b568-4e00-b853-642c899fe807.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. We can't swap the decimal for a fraction line. Think about the place value of the number",
+        "B": "Almost, just think about the place value of the 9",
+        "C": "You can use place value. The 9 is in the tenths column so we have 9 tenths, or 9/10",
+        "D": "Not quite. The number after the decimal tells us about the numerator, the denominator can be found using place value."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103953,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fc8c33bf-fc43-46fb-98e9-ff612f68459b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. Just think about the place value of the digits.",
+        "B": "Not quite. The number after the decimal tells us about the numerator, the denominator can be found using place value.",
+        "C": "Not quite. We can't swap the decimal for a fraction line. Think about the place value of the number",
+        "D": "You can use place value. 0.79 is 79 hundredths = 79/100"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103957,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/56546568-2e7e-43ca-8295-ddfa5465ab5b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. Just think about the place value of the digits.",
+        "B": "Not quite. The number after the decimal tells us about the numerator, the denominator can be found using place value.",
+        "C": "Not quite. We can't swap the decimal for a fraction line. Think about the place value of the number",
+        "D": "We can use place value. 0.92 is 92 hundredths = 92/100"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 103954,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db5e2fa2-8de8-4591-987a-b85352ee6f0b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. The number after the decimal tells us about the numerator, the denominator can be found using place value.",
+        "B": "Almost. Just think about the place value of the digits.",
+        "C": "You can use place value. 0.709 is 709 thousandths = 709/1000",
+        "D": "Almost. How many thousandths do we have?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 103958,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e77593ca-648f-45bd-a63a-b3ec47ce8344.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You can use place value. 0.902 is 902 thousandths = 902/1000",
+        "B": "Almost. Just think about the place value of the digits.",
+        "C": "Almost. How many thousandths do we have?",
+        "D": "Not quite. The number after the decimal tells us about the numerator, the denominator can be found using place value."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,141 @@
+{
+  "shortcode": "vy3",
+  "name": "Solve quadratic equations by rearranging",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 29,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Solve quadratic equations using balancing",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 106684,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/87a9a873-a8c9-4137-8e22-5c7f141b0d20.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Let's work from the answers, backwards... Try squaring Katie's solution and now Tom's. Which gave the answer 25?",
+        "B": "Let's work from the answers, backwards... Try squaring Katie's solution and now Tom's. Which gave the answer 25?",
+        "C": "Faced with the equation 𝑝² = 25, one way of solving is to square root both sides. This gives 𝑝 = ∓√25 = ∓ 5. It is important to remember that both positive and negative solutions are possible.",
+        "D": "To solve the quadratic equation, we need to square root both sides. The square root of p² is p, what is the square root of 25?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 106692,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db2824ee-ede8-4808-9943-6dcf5b70d08c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is one of the solutions to the equation but when you square root 16 what is the other possible value?",
+        "B": "I think you have accidentally halved 16 instead of square rooting it, to get p.",
+        "C": "To solve the quadratic equation, we need to square root both sides. The square root of p² is p, what is the square root of 16?",
+        "D": "Faced with the equation 𝑝² = 16, one way of solving is to square root both sides. This gives 𝑝 = ∓√16 = ∓ 4. It is important to remember that both positive and negative solutions are possible."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 106686,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/09b020aa-b856-4a77-a976-eb30826c157a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To solve, add 3 to both sides: 𝑛² − 3 + 3 = 24 + 3= 27, giving 𝑛² = 27. Then to square root both sides: 𝑛 = ∓√27. Both positive and negative solutions are possible.",
+        "B": "It looks like you have subtracted 3 from both sides, which would leave 𝑛² − 3 - 3 = 24 - 3 = 𝑛² − 6 = 21, not 𝑛² = 21.",
+        "C": "It looks like you have subtracted 3 from both sides, which would leave 𝑛² − 3 - 3 = 24 - 3 = 𝑛² − 6 = 21, not 𝑛² = 21. Also, when a value is square rooted, there are 2 answers.",
+        "D": "When a value is square rooted, there are 2 answers."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 106694,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eef25f06-ebc2-4bb6-86f7-570da2326bc8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have added 7 from both sides, which would leave 𝑛² + 7 + 7 = 28 + 7 = 𝑛² + 14 = 35, not 𝑛² = 35.",
+        "B": "To solve, subtract 7 to both sides: 𝑛² + 7 - 7 = 28 - 7= 21, giving 𝑛² = 21. Then to square root both sides: 𝑛 = ∓√21. Both positive and negative solutions are possible.",
+        "C": "When a value is square rooted, there are 2 answers.",
+        "D": "It looks like you have added 7 from both sides, which would leave 𝑛² + 7 + 7 = 28 + 7 = 𝑛² + 14 = 35, not 𝑛² = 35. Also, when a value is square rooted, there are 2 answers."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 106689,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/deb61cd5-6f73-4b5c-a936-1a500bf0669f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It looks like you have solved the equation as far as 𝑝² = 10. At this point, you have halved 10. This would only work if the equation was 2p = 10. What is the opposite of squaring?",
+        "B": "To solve, subtract 9 from both sides to give 3𝑝² = 30, then divide both sides by 3 to give 𝑝² = 10, and finally to square root both sides: 𝑛 = ∓√10.",
+        "C": "It looks like you have divided by three and then subtracted 9. You need to undo the operations, so you need to undo the +9 first.",
+        "D": "You seem to have added 9, but this would give us 3𝑝²+p = 48. When solving, we need to do the inverse of the operation."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 106697,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c54472d3-b040-4463-a962-4af5c0ca9978.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To solve, add 4 to both sides to give 2𝑝² = 40, then divide both sides by 2 to give 𝑝² = 20, and finally to square root both sides: 𝑛 = ∓√20.",
+        "B": "You have successfully got to this point: 𝑝² = 20. The next step you completed was divide by 2, which would only happen if the equation was 2p = 20. What is the inverse of squaring?",
+        "C": "It looks like you have divided by 2 first, but not divided all parts by 2. We need to undo the operations in the reverse order in which they were done. That means we need to undo the -4 first",
+        "D": "It looks like you have subtracted 4 from both sides to start. This would leave us with 2𝑝² - 8= 32 When solving, do the inverse of the operation."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 106690,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/528196a5-780f-46e7-8b1d-4d0df55aac11.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we rearrange we get 𝑝² = -49. What value of p will satisfy this equation?",
+        "B": "One way of trying to solve this is to subtract 49 from both sides to give 𝑝² = −49 and then to square root both sides: 𝑝 = √−49. The square root of a negative number doesn't have a real number as an answer, meaning Katie is correct.",
+        "C": "If we rearrange we get 𝑝² = -49. What value of p will satisfy this equation?",
+        "D": "If we rearrange we get 𝑝² = -49. What value of p will satisfy this equation?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 106698,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/35e2ff24-ecdf-46b7-af6a-b46f4671f58b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To solve 81 + 𝑝² = 0, subtract 81 from both sides to give 𝑝² = −81 and then square root both sides: 𝑝 = √−81. The square root of a negative number doesn't have a real number as an answer, so Jo is correct.",
+        "B": "If we rearrange we get 𝑝² = -81. What value of p will satisfy this equation?",
+        "C": "If we rearrange we get 𝑝² = -81. What value of p will satisfy this equation?",
+        "D": "If we rearrange we get 𝑝² = -81. What value of p will satisfy this equation?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 106691,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fdde2a0c-9a92-4956-bbf3-46113242b7fb.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To solve 𝑡² = 27, square root both sides: 𝑡 = √27. There is a number that squares to give 27 (although not an integer), so this does have a real solution. Which equation doesn't have a real solution?",
+        "B": "To solve 𝑡² = −27, square root both sides: 𝑡 = √−27. The square root of a negative number doesn't have a real number as an answer, meaning it has no real solutions.",
+        "C": "t³ means t cubed. By cube rooting a negative number, the answer will be negative. -3 x -3 x -3 = -27. This means we have a solution. Which equation does not have a solution?",
+        "D": "Rearranging this equation we get t = 0, so it does have a real solution. Which equation will not have a real solution?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 106699,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bcf8ae1b-c066-492e-8e7c-745e85a62d76.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To solve 𝑡² = 45, square root both sides: 𝑡 = √45. There is a number that squares to give 45 (although not an integer), so this does have a real solution. Which equation doesn't have a real solution?",
+        "B": "To solve 𝑡² -45 = -45 we add 45 to both sides to get 𝑡² =0. The square root of 0 = 0, so this does have a real solution. Which equation doesn't have a real solution?",
+        "C": "t³ means t cubed. By cube rooting a negative number, the answer will be negative. Although it is not an integer, it is a real number. This means we have a solution. Which equation does not have a solution?",
+        "D": "To solve 𝑡² = −45, square root both sides: 𝑡 = √−45. The square root of a negative number doesn't have a real number as an answer, which means this equation has no real solutions."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,165 @@
+{
+  "shortcode": "bifk",
+  "name": "Four operations mental arithmetic problem solving",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 4,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Solve problems that combine addition and subtraction",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve problems that combine multiplication and division",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve problems that combine addition or subtraction with multiplication",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve problems that combine addition or subtraction with division",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Solve problems that combine three different operations",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 130207,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c1ebfe9a-587f-4993-a8d0-9a56c2a36785.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Amy collects 16 on Monday, then 11 LESS than this on Tuesday. How many shells would this be? How many did she collect altogether?",
+        "B": "Not quite. Amy does not collect 11 shells on Tuesday. On Tuesday, she collects 11 LESS than she did on Monday.",
+        "C": "Amy collects 16 shells on Monday and 5 on Tuesday (16 - 11). So altogether she collects 21 shells (16 + 5)",
+        "D": "This is how many shells Amy collects on Tuesday. How many shells does she collect altogether?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130227,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a52c9e43-93c5-4006-b06f-0aecbea6a806.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Jane collects 8 LESS on Tuesday not 8 more.",
+        "B": "Jane collects 25 pebbles on Monday and 17 on Tuesday (25 - 8). So altogether she collects 42 shells (25 + 17)",
+        "C": "Not quite. Amy does not collect 8 pebbles on Tuesday. On Tuesday, she collects 8 LESS than she did on Monday.",
+        "D": "This is how many pebbles Jane collects on Tuesday. How many shells does she collect altogether?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130208,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6a931e89-961a-4c10-a82f-47e72da13d6b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. The question tells us that Mr Biggins has 5 children NOT 2.",
+        "B": "Multiplying 60 (the numbers of sweets in each bag) by 6 (the number of bags) tells us that Mr Biggins has 360 sweets. Dividing 360 by 5 (the number of children) tells us each child gets 72 sweets.",
+        "C": "Not quite. I think you have mixed up the numbers. Mr Biggins has 6 bags of sweets and 5 children NOT 5 bags of sweets and 6 children.",
+        "D": "Not quite, I think you multiplied the number of children and bags of sweets. Use multiplication to find the total number of sweets in the 6 bags and then division to share out the sweets between the children."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130228,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/34040f77-985c-4cbd-a01b-4f1b43805661.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, this question requires you to use multiplication and division. Use multiplication to find the total number of sweets and then division to share out the sweets.",
+        "B": "Not quite, this question requires you to use multiplication and division. Use multiplication to find the total number of sweets and then division to share out the sweets.",
+        "C": "Multiplying 36 (the numbers of sweets in each bag) by 5 (the number of bags) tells us that Mr Khan has 180 sweets. Dividing 180 by 4 (the number of children) tells us each child gets 45 sweets.",
+        "D": "I think you multiplied the number of sweets in a bag by the number of children. Use multiplication to find the total number of sweets and then division to share out the sweets between the children."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130209,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8f17a358-2f97-4cb5-8d24-ba6b3590eed1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is how much Cara spends in 1 week. If she spends this amount every week for 4 weeks how much does she spend in total?",
+        "B": "Not quite. This answer only includes Cara getting her nails painted once, but Cara gets her nails painted and buys a magazine every week for four weeks.",
+        "C": "Not quite. This answer only includes Cara buying a magazine once, but Cara buys a magazine and gets her nails painted every week for four weeks.",
+        "D": "Each week Cara spends £34 (28 + 6). If she does this for 4 weeks, then she spends £136 (34 x 4) in total."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130229,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/424670e9-76f8-4b05-a4f1-94e72068700a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Each week Lara spends £47 (12 + 35). If she does this for 3 weeks then she spends £141 (47 x 3) in total.",
+        "B": "Not quite. This answer only includes Spanish once, but Lara does Spanish and swimming every week for three weeks.",
+        "C": "Not quite, I think you have just added the numbers in the question. However, the 3 is not an amount that she spends, it is how many times she spends it.",
+        "D": "This is how much Lara spends in 1 week. If she spends this amount every week for 3 weeks how much does she spend in total?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130210,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/224ce848-b398-4634-82ea-a013f9b8c647.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Each person gets 16 strawberries (80 ÷ 5 = 16). If Debbie eats 10 of her strawberries then she will save 6 of them (16 - 10 = 6).",
+        "B": "Not quite. Debbie and her four friends share the strawberries, this means we need to share out the strawberries between 5 people not 4.",
+        "C": "Not quite. I think you might have added 10 strawberries to Debbie's pile. If debbie eats 10 then the number of strawberries she has left should go down.",
+        "D": "Not quite. The strawberries need to be shared out between 5 people (as we must include Debbie) and Debbie eats 10 strawberries so the number of strawberries Debbie has left should go down."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130230,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3ebea0e4-0900-4255-82c9-58f4349130ad.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you may have done the subtraction and division in the wrong order. Debbie eats the 10 strawberries before the rest are shared out.",
+        "B": "I think you may have done the subtraction and division in the wrong order. Debbie eats the 10 strawberries before the rest are shared out. Don't forget to include Debbie when sharing out the strawberries.",
+        "C": "There are 70 strawberries left after Debbie eats 10 (80 - 10 = 70). These 70 strawberries are shared between 5 people (Debbie and her four friends) resulting in each person getting 14 strawberries (70 ÷ 5 = 14).",
+        "D": "Not quite. Debbie and her four friends share the strawberries, this means we need to share out the strawberries between 5 people not 4."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130211,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5d3a0271-ee96-4e8d-8beb-f746b726f9dd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have calculated the correct amount of pocket money but forgotten to include the £23 that Edie started with. How much will Edie have left if we include this?",
+        "B": "Not quite. Edie receives £8 pocket money for 6 weeks not just 1. How much money will this be? How much will he have saved in total?",
+        "C": "At the end of the 6 weeks Edie has saved £71, £48 (8 x 6) from his pocket money and the £23 he started with. If he spends £43 on a football shirt then he has £28 left (71 - 43).",
+        "D": "Not quite. Edie does NOT get £31 (23 + 8) pocket money every week. He gets £8 every week for 6 weeks which he adds to the £23 that he has already saved."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130231,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/706ed2de-cb3d-45d0-bc5b-1bc00a0bd092.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, I think you thought she gets £18 each week, and spends £17 each week for 8 weeks. If Mary gets £5 every week for 8 weeks, how much pocket money does she get? How much money will she have in total? What will be left after she buys just 1 book?",
+        "B": "Not quite. The calculation 13 + 5 + 8 does not tell us how much money Mary has. If Mary gets £5 every week for 8 weeks, how much pocket money does she get? How much money will she have in total?",
+        "C": "I think you have calculated the correct amount of pocket money but forgotten to include the £13 that Mary started with. How much will Mary have left if we include this?",
+        "D": "At the end of the 8 weeks Mary has saved £53, £40 (5 x 8) from her pocket money and the £13 she started with. If she spends £17 on a new book then she has £36 left (53 - 17)."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

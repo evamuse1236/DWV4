@@ -1,0 +1,153 @@
+{
+  "shortcode": "vwb",
+  "name": "Enlarge a shape by a positive integer scale factor",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 178,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Multiply a decimal by an integer",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find the area scale factor of similar shapes given the length scale factor",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Enlarge a shape with no centre of enlargement given, and a positive scale factor bigger than 1",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 146071,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c72c7343-818d-4769-8a50-222c5e26b45f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, a scale factor acts as a multiplier.",
+        "B": "Not quite, what happens when you multiply a number by one?",
+        "C": "A scale factor of one means that all sides are multiplied by one. Anything multiplied by one, stays the same. So no change.",
+        "D": "Not quite, it's the scale factor and not the dimensions that determine if there's an enlargement."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146091,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/239f3262-522c-449d-9cff-667a0ce9fbfe.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! The scale factor acts as a multiplier, when you multiply by 0.5 it's not the same as adding 0.5.",
+        "B": "Not quite, it looks as if you may have divided by 0.5 instead of multiplying.",
+        "C": "Good job, multiplying by 0.5 has the same effect as dividing by 2 or halving.",
+        "D": "Not quite, it's the scale factor and not the dimensions that determine if there's an enlargement."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146072,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b17722ca-4ad3-48af-9f02-b093a4c7d5b9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, it looks as if you've added the scale factor to the sides, when it acts as a multiplier.",
+        "B": "When the scale factor is 2, you multiply all sides by 2. Multiplying by 2 is the same as doubling.",
+        "C": "Not quite, if the scale factor is 2, you must must multiply all sides by 2.",
+        "D": "Not quite, it's the scale factor and not the dimensions that determine if there's an enlargement."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146092,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c893c47d-f810-41ca-a74f-dfd29e0c95ee.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, it looks like you've added 2 and not used 2 as a multiplier",
+        "B": "When the scale factor is 2, you multiply all sides by 2. Multiplying by 2 is the same as doubling, so 8 x 2 = 16",
+        "C": "Not quite, when your scale factor/multiplier is bigger than or less than 1, then you know your side will change length",
+        "D": "We know the length is 8 and the multiplier/scale factor is 2. So we have enough information."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146073,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1e13bffc-4b0f-4f86-b9ad-7b76afea69b6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have assumed the shape will stay the same. A scale factor multiplies all of the lengths. If the scale factor is 5, what would the new height be?",
+        "B": "I think you have assumed that a scale factor is adding onto the number. A scale factor is the number that we multiply all of the dimensions by to find a similar shape.",
+        "C": "The height of 3, multiplied by a scale factor of 5, would give the enlarged rectangle a height of 15 squares.",
+        "D": "I think you have written the numbers side by side. A scale factor is the number that we multiply all of the dimensions by to find a similar shape. What would the height of the enlarged shape be if the scale factor is 5?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 155418,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e7d6b011-155b-4303-a612-dc6c55817993.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have assumed that a scale factor is adding onto the number. A scale factor is the number that we multiply all of the dimensions by to find a similar shape.",
+        "B": "Almost! I think you have multiplied the area (number of squares in total) by 4. We are just asked about the height.",
+        "C": "I think you have assumed the shape will stay the same. A scale factor multiplies all of the lengths. If the scale factor is 4, what would the new height be?",
+        "D": "The height of 3, multiplied by a scale factor of 4, would give the enlarged rectangle a height of 12 squares."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146074,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/603d6041-d2d4-4075-87bb-491b96b0379d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "3 x 7 = 21 and 0.8 x 7 = 5.6. Therefore 3.8 x 7 = 26.6 and the width of the enlarged shape is 26.6cm",
+        "B": "Not quite! Be careful with your place value. 7 x 8 = 56, what does 7 x 0.8 equal? Make sure you line up the numbers with the same place value when adding.",
+        "C": "Not quite! I think you have added the numbers together. When a shape is enlarged by a scale factor we multiply sides by the scale factor.",
+        "D": "Not quite! I think you have tried to add the numbers together. When a shape is enlarged by a scale factor we multiply sides by the scale factor."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146094,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cd44313a-d3b6-4a68-a917-9c261fcc0284.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite! When enlarging a shape we need to multiply the length by the scale factor.",
+        "B": "4 x 5 = 20 and 0.2 x 5 = 1. Therefore 4.2 x 5 = 21 and the width of the enlarged shape will be 21 cm.",
+        "C": "Not quite! I think you have added the numbers together. When a shape is enlarged by a scale factor we multiply sides by the scale factor.",
+        "D": "Not quite! I think you have tried to add the numbers together. When a shape is enlarged by a scale factor we multiply sides by the scale factor."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146075,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/28ee63e3-015c-4eb3-9a1b-9c6a3d47b650.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have assumed the area is multiplied by the same scale factor. Consider a square of side length 2. It has an area of 4. What would happen to the area if we multiplied the side lengths by 3?",
+        "B": "I think you have assumed that the scale factor doubles. Consider a square of side length 2. It has an area of 4. What would happen to the area if we multiplied the side lengths by 3?",
+        "C": "Because we are increasing both the length and the width by 3 the area will increase by 3², so by 9. The area scale factor is always the square of the length scale factor",
+        "D": "Not quite, there will always be a relationship between the length scale factor and area scale factor regardless of dimensions. Consider a square of side length 2. It has an area of 4. What would happen to the area if we multiplied the side lengths by 3?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146095,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5b659672-ce11-41ef-bc99-44040002ce08.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have assumed the area is multiplied by the same scale factor. Consider a square of side length 3. It has an area of 9. What would happen to the area if we multiplied the side lengths by 2?",
+        "B": "Because we are increasing both the length and the width by 2 the area will increase by 2², so by 4. The area scale factor is always the square of the length scale factor",
+        "C": "I think you have confused area scale factor with volume scale factor. Consider a square of side length 3. It has an area of 9. What would happen to the area if we multiplied the side lengths by 2?",
+        "D": "Not quite, there will always be a relationship between the length scale factor and area scale factor regardless of dimensions. Consider a square of side length 3. It has an area of 9. What would happen to the area if we multiplied the side lengths by 2?"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

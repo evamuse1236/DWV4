@@ -1,0 +1,147 @@
+{
+  "shortcode": "biga",
+  "name": "Multiply an integer of up to four digits by a one-digit integer",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 31,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Multiply 3 digit integers by 1 digit integers using long multiplication",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Multiply 4 or more digit integers by 1 digit integers using long multiplication",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 129053,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b275e48e-92b3-459b-bcbd-e135d77f8e1b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. You do get a 1 in this column when you work out 7 x 3, but we also have something in this column that was carried over from when we worked out 7 x 8. Write out your workings in full and see if you can spot it.",
+        "B": "When we work out 7 x 8 we get 56. The 6 would stay in the ones column, but the 5 would carry over to the tens. Then when we work out 7 x 3 we get 21. The 1 would stay in the tens column and the 2 would carry over to the hundreds. This leaves us with a 5 and a 1 in the tens column. We add these together to get 6.",
+        "C": "Not quite. We have to start by multiplying 8 by 7. What will stay in the ones columns? What will move to the tens column? Now try the same with 3 x 7.",
+        "D": "I think you have worked out the first step correctly. 7 x 8 gives us 56 and the 5 carries over into the tens column. But when we continue with the calculation where does the answer to 7 x 3 go?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 129193,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/afca2faf-9cb0-4d4f-a80b-cd4d1e35c869.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. We have to start by multiplying 2 by 8. What will stay in the ones columns? What will move to the tens column? Now try the same with 6 x 8.",
+        "B": "I think you have worked out the first step correctly. 2 x 8 gives us 16 and the 1 carries over into the tens column. But when we continue with the calculation where does the answer to 6 x 8 go?",
+        "C": "Not quite. You do get an 8 in this column when you work out 6 x 8, but we also have something in this column that was carried over from when we worked out 2 x 8. Write out your workings in full and see if you can spot it.",
+        "D": "When we work out 2 x 8 we get 16. The 6 would stay in the ones column, but the 1 would carry over to the tens. Then when we work out 6 x 8 we get 48. The 8 would stay in the tens column and the 4 would carry over to the hundreds. This leaves us with a 1 and an 8 in the tens column. We add these together to get 9."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 155763,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7c5387b9-e11a-4c28-b826-633b5ca45a90.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have correctly multiplied the 4 and 3 but then have written down the tens. We need to write down the units and carry the tens...",
+        "B": "I think you have accidentally added the 4 and 3 but we need to multiply them...",
+        "C": "The value that replaces the star is the units for the calculation 4 x 3. As this is 12 we would write down the 2 and carry the tens.",
+        "D": "You have correctly multiplied the 4 and 3, but we only write down the units and then we carry the tens..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 155781,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d7f4be5-6b43-490e-a2f6-7ccdd8891417.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find the value that replaces the star, we need to do 3 x 6 = 18. For long multiplication, we only write the units in the units column (and carry the tens), so we replace the star with 8.",
+        "B": "I think you have correctly multiplied the 3 and 6 together. However, the star is in the units column, and you have put both digits rather than just the units value.",
+        "C": "You have added the values but you need to multiply them.",
+        "D": "I think you have correctly multiplied the 3 and 6 together. However, the star is in the units column, and you have chosen the tens value rather than the units value."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 155764,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c1b8fc59-22fd-4f81-8ac8-ae46e4106924.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "When replacing the star, we do 4 x 3 = 12. We write down the 2 and carry the 1 to the tens. To replace the square, we then do 4 x 2 = 8, but add on the carried over ten to get 9.",
+        "B": "I think you have forgotten to add on the value carried over to the tens...",
+        "C": "This is the value of 4 x 20, however the square is in the tens place value so 80 tens would be 800... What should you write down instead?",
+        "D": "I think you have accidentally added the values but we need to multiply them..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 155782,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/05c03e6b-78bf-4fa4-8e1b-99df0670bab6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have forgotten to add on the value carried over to the tens.",
+        "B": "You have correctly calculated 3 x 4, and then correctly added the 1 that you'd carried to get 13. However, the square only represents one digit. Which digit of 13 goes here?",
+        "C": "To find the value that replaces the square, we first do 3 x 6 = 18, replace the star with the 8 units and carry the 1 ten. Next, we do 3 x 4 = 12, then add the 1 that we'd carried, 12 + 1 = 13. So, we replace the square with the 3 and carry the 1 to the hundreds column.",
+        "D": "You have added the values but you need to multiply them."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 155765,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/848fa567-df9b-400d-8c3b-b46bb841ded2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There is nothing to carry over from the tens calculation, so to replace the circle we simply do 4 x 1 = 4.",
+        "B": "I think you have accidentally added the values but we need to multiply them...",
+        "C": "This is the value of 4 x 100, however the circle is in the hundreds place value. 400 hundreds would be 40,000... What should you write down instead?",
+        "D": "I think you have correctly multiplied 4 by 100 but then have written down the units value. We are thinking about how many hundreds are in the number... This is the value that replaces the circle."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 155783,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fbf16558-4117-4a02-8ee9-5a9f5d0f119a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have forgotten to add on the value carried over to the hundreds column.",
+        "B": "You have written 3 and 2 next to each other, but this is a multiplication sum, so the first thing to do is multiply them together.",
+        "C": "You have added the values but you need to multiply them.",
+        "D": "To find the value that replaces the circle, we first do 3 x 6 = 18, replace the star with the 8 units and carry the 1 ten. Next, we do 3 x 4 = 12, then add the 1 that we'd carried, 12 + 1 = 13. So, we replace the square with the 3 and carry the 1 to the hundreds column. Finally, we do 3 x 2 = 6, then add the 1 that we'd carried. 6 + 1 = 7."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158088,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ca35442f-f629-4612-99f6-63c434aed001.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have accidentally added 4,325 and 6 but you need to multiply them...",
+        "B": "You have forgotten to carry the digits over. For example 6 x 5 = 30 so you write the 0 down and then add the 3 to the total of the next place value column",
+        "C": "To calculate 4,325 x 6 we do 6 x 5 = 30 write the 0 down, carry the 3. 6 x 2 = 12, add the 3, gives 15, so write the 5 down and carry the 1. 6 x 3 = 18 add on the 1 gives 19, write 9 down, carry the 1. 6 x 4 = 24 add on the 1 gives 25 so the final answer is 25,950",
+        "D": "You have accidentally written all of the digits as your final answer but you need to carry the values over. For example 6 x 5 = 30 so you write the 0 down and then add the 3 to 12, which is the total of the next place value column, giving 15, write the 5 and carry the 1... Keep doing this until you have your final answer!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158255,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8899b562-5c5c-450c-aa89-811c95791370.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To calculate 6482 x 3 we do 3 x 2 = 6 write the 6 down. 3 x 8 = 24, write the 4 down and carry the 2. 3 x 4 = 12 add on the 2 gives 14, write 4 down, carry the 1. 3 x 6 = 18 add on the 1 gives 19 so the final answer is 19,446.",
+        "B": "You have forgotten to carry the digits over. For example 3 x 8 = 24 so you write the 4 down and then add the 2 to the total of the next place value column",
+        "C": "You have accidentally written all of the digits as your final answer but you need to carry the values over. For example 3 x 8 = 24, so you write the 4 down and then add the 2 to 12, which is the total of the next place value column, giving 14, write the 4 and carry the 1... Keep doing this until you have your final answer!",
+        "D": "I think you have accidentally added 6,482 and 3 but you need to multiply them..."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

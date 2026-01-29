@@ -1,0 +1,153 @@
+{
+  "shortcode": "eayp",
+  "name": "Identifying the constant of proportionality",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 20,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify the constant of proportionality from a linear graph",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify the constant of proportionality from a linear equation",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify the constant of proportionality from a table of values",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 165809,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1aca4a94-b45a-42fd-82a7-da644774a20d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "It's not the right-hand side of the equation, the constant of proportionality is what you multiply one variable by to get the other!",
+        "B": "The constant of proportionality is what you multiply one variable by to get the other, here we multiply ℎ by 12 to get C therefore 12 is the constant of proportionality!",
+        "C": "This is one of the variables! The constant of proportionality is what you multiply the variable by to get the other variable...",
+        "D": "This is one of the variables! The constant of proportionality is what you multiply the variable by to get the other variable..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165814,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/236cfb1a-51d2-43b2-ba7c-c1583744bf4c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is one of the variables! The constant of proportionality is what you multiply the variable by to get the other variable...",
+        "B": "This is one of the variables! The constant of proportionality is what you multiply the variable by to get the other variable...",
+        "C": "It's not the right-hand side of the equation, the constant of proportionality is what you multiply one variable by to get the other!",
+        "D": "The constant of proportionality is what you multiply one variable by to get the other, here we multiply ℎ by 65 to get D therefore 65 is the constant of proportionality!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165810,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4b81485f-8692-4d5f-967b-57b2b6d1bb43.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The constant of proportionality is what you multiply one variable by to get the other, here we multiply 𝑥 by 5 to get 𝑦 therefore 5 is the constant of proportionality!",
+        "B": "It's not the right-hand side of the equation, the constant of proportionality is what you multiply one variable by to get the other!",
+        "C": "I think you have confused the constant of proportionality with the 𝑦-intercept in 𝑦 = 𝑚𝑥 + 𝑐! The constant of proportionality is the value you multiply one variable by to get the other...",
+        "D": "This is one of the variables! The constant of proportionality is what you multiply the variable by to get the other variable..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165815,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/17a2fbaa-e9e6-48ac-8351-4fa2c2962082.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is one of the variables! The constant of proportionality is what you multiply the variable by to get the other variable...",
+        "B": "The constant of proportionality is what you multiply one variable by to get the other, here we multiply 𝑥 by 2 to get 𝑦 therefore 2 is the constant of proportionality!",
+        "C": "It's not the right-hand side of the equation, the constant of proportionality is what you multiply one variable by to get the other!",
+        "D": "I think you have confused the constant of proportionality with the 𝑦-intercept in 𝑦 = 𝑚𝑥 + 𝑐! The constant of proportionality is the value you multiply one variable by to get the other..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165811,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/60fd80ee-0615-4414-93af-71fffee97448.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have accidentally found the relationship that relates 𝑥 to 𝑦. We are looking for the relationship that relates 𝑦 to 𝑥!",
+        "B": "Not all straight lines have a gradient of 1... Find 𝑦 / 𝑥 to get the constant of proportionality!",
+        "C": "Picking some coordinates from the graph: (4, 8), (10, 20) etc. we can see to go from 𝑥 to 𝑦 we multiply by 2! Therefore, 𝑦 = 2𝑥 and the constant of proportionality is 2.",
+        "D": "One of the coordinates on the graph is (10, 20). They have a multiplicative relationship, not additive. What do you times 𝑥 by to get 𝑦?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165816,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/590bd05f-fb44-4fe5-ba35-ba73e9620a59.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Picking some coordinates from the graph: (2, 10), (6, 30) etc. we can see to go from 𝑥 to 𝑦 we multiply by 5! Therefore, 𝑦 = 5𝑥 and the constant of proportionality is 5.",
+        "B": "One of the coordinates on the graph is (1, 5). They have a multiplicative relationship, not additive. What do you times 𝑥 by to get 𝑦?",
+        "C": "You have accidentally found the relationship that relates 𝑥 to 𝑦. We are looking for the relationship that relates 𝑦 to 𝑥!",
+        "D": "Not all straight lines have a gradient of 1... Find 𝑦 / 𝑥 to get the constant of proportionality!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165812,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/73d6c55a-3c7c-486a-8942-ee3a3dabcb7c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have accidentally found the relationship that relates 𝑥 to 𝑦. We are looking for the relationship that relates 𝑦 to 𝑥!",
+        "B": "I think you have confused the constant of proportionality with the 𝑦-intercept in 𝑦 = 𝑚𝑥 + 𝑐! In this question, the constant of proportionality is what you multiply 𝑥 by to get 𝑦...",
+        "C": "We can see the coordinate (10, 4) lies on the line. To get the constant of proportionality we do 𝑦 / 𝑥 which equals 4 / 10. This simplifies to 2/5 therefore, the constant of proportionality is 2/5!",
+        "D": "The coordinate (5, 12) doesn't actually lie on the line. Choose a coordinate that does and repeat this same method to get the constant of proportionality!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165817,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e410b6a4-3d3d-4a08-8eed-1bb185efcdd9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have confused the constant of proportionality with the 𝑦-intercept in 𝑦 = 𝑚𝑥 + 𝑐! In this question, the constant of proportionality is what you multiply 𝑥 by to get 𝑦...",
+        "B": "We can see the coordinate (5, 6) lies on the line. To get the constant of proportionality we do 𝑦 / 𝑥 which equals 6 / 5!",
+        "C": "You have accidentally found the relationship that relates 𝑥 to 𝑦. We are looking for the relationship that relates 𝑦 to 𝑥!",
+        "D": "I think you have found the coordinate (5, 6) and seen they have a difference of 1 but to get the constant of proportionality we need to look at the multiplicative relationship... What do you times 𝑥 by to get 𝑦?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 165813,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cc3f91b5-c186-4a2b-b941-7b4218faea9c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is how much 𝑥 is increasing by in the table. In this question, the constant of proportionality is what you multiply 𝑥 by to get 𝑦...",
+        "B": "This is what you would multiply 𝑦 by to get 𝑥. The question is asking what you multiply 𝑥 by to get 𝑦...",
+        "C": "This is how much 𝑦 is increasing by in the table. The constant of proportionality is what you multiply 𝑥 by to get 𝑦...",
+        "D": "The constant of proportionality is what you multiply 𝑥 by to get 𝑦. Looking in the table 5 x ? = 30, 7 x ? = 42, 9 x ? = 54. The ? is 6 therefore, the constant of proportionality is 6!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 165818,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/799de2e7-ef6f-4f71-8fea-6646965b4293.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The constant of proportionality is what you multiply 𝑥 by to get 𝑦. Looking in the table 4 x ? = 24, 6 x ? = 36, 8 x ? = 48. The ? is 6 therefore, the constant of proportionality is 6!",
+        "B": "This is how much 𝑥 is increasing by in the table. In this question, the constant of proportionality is what you multiply 𝑥 by to get 𝑦...",
+        "C": "This is what you would multiply 𝑦 by to get 𝑥. The question is asking what you multiply 𝑥 by to get 𝑦...",
+        "D": "This is how much 𝑦 is increasing by in the table. The constant of proportionality is what you multiply 𝑥 by to get 𝑦..."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,153 @@
+{
+  "shortcode": "bigx",
+  "name": "Converting units of mass",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 58,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Convert between g and mg",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Convert between kg and g",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Convert between tonne and kg",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 107591,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/61045359-4274-4493-9a16-0c49f318c270.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A kilogram is larger than a gram so we are expecting an answer that is more than 3.",
+        "B": "Start by thinking about how many grams there are in 1 kilogram. We can use this to work out how many grams in 3 kilograms.",
+        "C": "Start by thinking about how many grams there are in 1 kilogram. We can use this to work out how many grams in 3 kilograms.",
+        "D": "There are 1,000 grams in a kilogram and so 3 kg = 3 × 1,000 = 3,000 grams."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107601,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8e6de0db-973e-4b7b-8223-d67945f5a544.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A kilogram is larger than a gram so we are expecting an answer that is more than 20.",
+        "B": "There are 1,000 grams in a kilogram and so 20 kg = 20 × 1,000 = 20,000 grams.",
+        "C": "Start by thinking about how many grams there are in 1 kilogram. We can use this to work out how many grams in 20 kilograms.",
+        "D": "Start by thinking about how many grams there are in 1 kilogram. We can use this to work out how many grams in 20 kilograms."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107593,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f0930d3f-87b7-4925-810f-4b5d9b6025c3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. What do we need to multiply 30 by to find the answer? Think about how many milligrams there are in 1 gram.",
+        "B": "Not quite. What do we need to multiply 30 by to find the answer? Think about how many milligrams there are in 1 gram.",
+        "C": "Not quite. You have divided by 1,000. The number 1,000 is important here but a milligram is smaller than a gram so we are expecting an answer that is more than 30.",
+        "D": "There are 1,000 milligrams in a gram and so 30 g = 30 × 1,000 = 30,000 mg."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107603,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/55d46a30-d69e-48a8-9829-b3f8b471e2b6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. What do we need to multiply 200 by to find the answer? Think about how many milligrams there are in 1 gram.",
+        "B": "There are 1,000 milligrams in a gram and so 200 g = 200 × 1,000 = 200,000 mg",
+        "C": "Not quite. What do we need to multiply 200 by to find the answer? Think about how many milligrams there are in 1 gram.",
+        "D": "Not quite. You have divided by 1,000. The number 1,000 is important here but a milligram is smaller than a gram so we are expecting an answer that is more than 200."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107594,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6fbc2b73-8391-436a-902d-5bc054ebd2ea.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "There are 1,000 kilograms in a tonne, and so 0.03 tonnes = 0.03 × 1,000 = 30 kg.",
+        "B": "Not quite. What do we need to multiply 0.03 by to find the answer? Think about how many kilograms there are in 1 tonne.",
+        "C": "Not quite. What do we need to multiply 0.03 by to find the answer? Think about how many kilograms there are in 1 tonne.",
+        "D": "I think you have worked out the number of kilograms in 3 tonnes. But we need 0.03 tonnes."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107604,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/719511b9-1ab1-48f6-946a-55fef38120d9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. What do we need to multiply 0.2 by to find the answer? Think about how many kilograms there are in 1 tonne.",
+        "B": "Not quite. What do we need to multiply 0.2 by to find the answer? Think about how many kilograms there are in 1 tonne.",
+        "C": "I think you have worked out the number of kilograms in 2 tonnes. But we need 0.2 tonnes.",
+        "D": "There are 1,000 kilograms in a tonne and so 0.2 tonnes = 0.2 × 1,000 = 200 kg"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107598,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/01f19fff-5924-44ad-a57b-24364d2f8976.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I wonder if you made a mistake with the number of g in a kg. Remember that 1000g = 1 kg",
+        "B": "I wonder if you made a mistake with the number of kg in a tonne. Remember that 1000kg = 1 tonne",
+        "C": "At least one student is incorrect. Remember 1000g = 1kg and 1000kg = 1 tonne",
+        "D": "1 kilogram and 60 grams is 1.06 kg, which is less than 1½ = 1.5 kg, and so Tom is incorrect. Also, 25 t = 25 000 kg, and so Katie is incorrect."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107608,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9a828222-17df-4161-bdf3-16137980d9e1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I wonder if you made a mistake with the number of g in a kg, and kg in a tonne. Remember 1000g = 1kg and 1000kg = 1 tonne",
+        "B": "I wonder if you made a mistake with the number of g in a kg, and kg in a tonne. Remember 1000g = 1kg and 1000kg = 1 tonne",
+        "C": "2kg and 35g is 2035g, and 2 and a quarter kg is 2250g, so Tom is incorrect. 9t = 9000g, so Katie is also incorrect.",
+        "D": "At least one student is incorrect. Remember 1000g = 1kg and 1000kg = 1 tonne"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 107599,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bc4867a5-b39e-4610-9f21-e20a239d70ab.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you took off 10g rather than 0.1g. Remember 1kg = 1000g",
+        "B": "I think you took off 1g rather than 0.1g. Remember 1kg = 1000g",
+        "C": "We know 1 kilogram = 1000 grams, and so the mass is now 1000 – 0.1 = 999.9 grams.",
+        "D": "I think you made a place value error. Remember 1kg = 1000g"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 107609,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1d2e755a-8a5a-4e97-afe4-cbd6fc4a15ef.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We know 1 kg = 1000 grams and so the new mass is 500 – 10 = 490 grams.",
+        "B": "I think you thought 100g = 1 kg, but the conversion is 1000g = 1kg",
+        "C": "I think you took off 1g rather than 10g. Remember 1kg = 1000g",
+        "D": "I think you tried to answer in kg, but we need the answer in g. Remember 1000g = 1kg."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

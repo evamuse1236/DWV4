@@ -1,0 +1,141 @@
+{
+  "shortcode": "big9",
+  "name": "Solve money problems using the 4 operations where the currency is dollars",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 70,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Solve money problems using the 4 operations where the currency is dollars",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158089,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/44e3ff1f-62fb-45dd-9800-2172628ec8e5.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find the total money he will spend we need to do 4 x $2.50. 4 x 2 = $8 and 4 x 0.5 = $2, adding these values together $8 + $2 = $10 so David will spend $10",
+        "B": "You have added the 4 and $2.50 but we need to multiply them...",
+        "C": "You have subtracted the 4 and $2.50 but we need to multiply them...",
+        "D": "You have correctly started the multiplication of 4 and $2.50 but when doing 4 x 0.5 you have placed your answer in the wrong place value column..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158256,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/74d03b8c-331c-47ff-ae84-42b4f2fa1d2b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have added the 5 and $1.75 but we need to multiply them...",
+        "B": "To find the total money he will spend we need to do 5 x $1.75. 5 x 1 = $5 and 5 x 0.75 = $3.75, adding these values together $5 + $3.75 = $8.75 so John will spend $8.75",
+        "C": "You have correctly started the multiplication of 5 and $1.75 but when doing 5 x 0.75 you have placed your answer in the wrong place value column and rounded...",
+        "D": "You have subtracted the 5 and $1.75 but we need to multiply them..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158090,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/367336fc-e671-4ea0-8d5e-06715a42dfa8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Be careful when adding 0.5 and 0.75.. You have forgotten to carry over to the units",
+        "B": "To find the total we need to add $5.50 and $3.75. $5 + $3 = $8 and $0.50 + $0.75 = $1.25 so the total is $8 + $1.25 = $9.25",
+        "C": "You have subtracted the values, but to find the total, we need to add them!",
+        "D": "You have attempted to subtract the values, but to find the total, we need to add them!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158257,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/917a546f-4f85-43a8-bd6d-7899ac43f7bc.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have attempted to subtract the values, but to find the total, we need to add them!",
+        "B": "Be careful when adding 0.75 and 0.75.. You have forgotten to carry over to the units",
+        "C": "To find the total we need to add $6.75 and $4.75. $6 + $4 = $10 and $0.75 + $0.75 = $1.50 so the total is $10 + $1.50 = $11.50.",
+        "D": "You have subtracted the values, but to find the total, we need to add them!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158091,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/942b6d67-0552-42a6-b1c3-becb3c46c9bd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is how much the book and toy cost altogether but the question wants the amount of change Sarah gets if she pays with $20",
+        "B": "The total cost of the book and toy is 8.25 + 4.50 = $12.75. If Sarah pays with $20, to find out her change, we do 20 - 12.75 = $7.25",
+        "C": "You have added all the values but you need to add the cost of the book and toy and then take this total away from $20 to find out Sarah's change...",
+        "D": "I think you have done the larger values subtract the smaller values when taking away 12.75 from 20... Make sure you are borrowing to subtract correctly!"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158258,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1a99e4e2-9b48-4954-98f8-09bb0c977899.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You have added all the values but you need to add the cost of the book and candy and then take this total away from $20 to find out Joy's change...",
+        "B": "I think you have made an error in subtracting 12.25 from 20... Make sure you are borrowing to subtract correctly!",
+        "C": "This is how much the book and candy cost altogether but the question wants the amount of change Joy gets if she pays with $20",
+        "D": "The total cost of the book and candy is 9.75 + 2.50 = $12.25. If Joy pays with $20, to find out her change, we do 20 - 12.25 = $7.75"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158092,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b73a5d32-b755-4333-bfd9-b42a08860cc9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added all the numbers together but you need to find Emily's total, find James' total and then find the difference between these values!",
+        "B": "Remember when subtracting we don't do the biggest value subtract the smallest we borrow from the next place value column...",
+        "C": "Emily spent 4.50 + 1.75 = 6.25 and James spent 10 + 5.75 = 15.75. To find out how much more James spent, we need to find the difference between these values 15.75 - 6.25 = 9.50 therefore James spent $9.50 more.",
+        "D": "I think you have correctly noticed the calculator is $5.50 more than the notebook and the binder is $4 more than the ruler... Double check your answer again, how much more did James spend?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158259,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/715ab332-7bbb-423d-969e-ad3bc9b96831.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember when subtracting we don't do the biggest value subtract the smallest we borrow from the next place value column...",
+        "B": "Rocky spent 5.75 + 2.50 = 8.25 and Jaymee spent 10.50 + 3 = 13.50. To find out how much more Jaymee spent, we need to find the difference between these values 13.50 - 8.25 = 5.25 therefore Jaymee spent $5.25 more.",
+        "C": "I think you have added the prices of the three smallest items, not separating Rocky and Jaymee's purchases... Double check your answer again, how much more did Jaymee spend?",
+        "D": "I think you have added all the numbers together but you need to find Rocky's total, find Jaymee's total and then find the difference between these values!"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158093,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/21614add-9738-4c3d-a4ed-fc5be10b248a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added all the numbers but you need to take the cost of the sweets from the total and then split the remaining value 4 ways to find how much Lily spent on a notebook...",
+        "B": "Before you divide by 4 you need to take away how much Lily spent on sweets from the total...",
+        "C": "If Lily has $15 and spends $3 on sweets she is left with $12. She then uses the $12 to buy 4 notebooks: 12 ÷ 4 = 3 therefore she spend $3 on each notebook",
+        "D": "You have correctly subtracted the cost of the sweets from the total but then you need to divide the remaining value by 4 to work out the cost of a notebook"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158260,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7c4f1531-6233-438d-abac-e5a29d037c5d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Before you divide by 5 you need to take away how much Kalette spent on candy from the total...",
+        "B": "If Kalette has $18 and spends $5.50 on candy she is left with $12.50. She then uses the $12.50 to buy 5 bags of chips: 12.50 ÷ 5 = 2.50 therefore she spend $2.50 on each bag of chips",
+        "C": "You have correctly subtracted the cost of the candy from the total but then you need to divide the remaining value by 5 to work out the cost of a bag of chips",
+        "D": "I think you have added all the numbers but you need to take the cost of the candy from the total and then split the remaining value 5 ways to find how much Kalette spent on a bag of chips..."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,153 @@
+{
+  "shortcode": "v13",
+  "name": "Real life graphs 3",
+  "collectionId": 25,
+  "level": 1,
+  "sequence": 158,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Interpret linear sections of real life graphs",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Calculate the gradient on a linear section on a real life graph",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Compare real life graphs",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 131731,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8c4e9f2e-6bc9-4b2b-8086-e3370dbd0485.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The volume of water is decreasing, so the plug has been pulled out",
+        "B": "I think you are looking at the wrong part of the graph. When the taps are turned off, the volume of water will say the same, it won't decrease",
+        "C": "Not quite. Look at the label of the y axis. It is not measuring temperature.",
+        "D": "Not quite, when the bath is filling with water, the volume will increase."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133924,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c372ae44-4119-4560-81d0-a4f904c58165.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Look at the label of the y axis. It is not measuring temperature.",
+        "B": "If sand is added, think about what will happen to the mass of the bucket - will it increase or decrease?",
+        "C": "When sand is tipped out, the mass of the bucket will decrease, which we can see by the negative slope.",
+        "D": "Not quite. When the bucket is full, the mass will remain constant."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131732,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a7420950-3caa-453c-a5d4-a444091d8c75.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, if the plug has been pulled out, the volume will start to decrease",
+        "B": "When the taps are turned off, the volume remains constant, so the graph will show a horizontal line.",
+        "C": "Not quite. Look at the label of the y axis. It is not measuring temperature.",
+        "D": "Think about what happens to the volume of water when the bath is filling. Would you expect the water volume to remain constant?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133925,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/62ec0ae8-dbde-4146-a074-2d9ab7a31d02.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Look at the label of the y axis. It is not measuring temperature.",
+        "B": "Not quite, if sand is being added the mass would increase. In the horizontal section the mass is staying the same",
+        "C": "Think about how the mass will change when sand is tipped out - the bucket would become lighter. What would this look like on the graph?",
+        "D": "When the bucket is full, the mass will not change so the slope will be horizontal"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131733,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/554d725a-9353-4ff1-aca9-a3e1c1432416.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've found the total cost for this taxi journey. How much is it increasing by with each mile?",
+        "B": "Not quite, look again at the scale for the cost. How much will each square represent?",
+        "C": "I think you've tried to calculate the gradient, but have not been accurate enough when counting squares. Find a bigger triangle that crosses through the grid lines exactly.",
+        "D": "The cost per mile is shown by the gradient of the graph. We can look for a triangle going from 0-5 miles and from £2-£6. The gradient would be rise/run or 4/5 which is 0.8 so £0.80 per mile. You could also think of this as how much more expensive it is for each mile"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133926,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c6ac74f5-cdf8-4498-ba8a-3c9366d6d56b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've tried to calculate the gradient, but have not been accurate enough when counting squares. Find a bigger triangle that crosses through the grid lines exactly.",
+        "B": "The cost per mile is shown by the gradient of the graph. We can look for a triangle going from 0-5 miles and from £2-£4. The gradient would be rise/run or 2/5 which is 0.4 so £0.40 per mile. You could also think of this as how much more expensive it is for each mile",
+        "C": "I think you've found the total cost for this taxi journey. How much is it increasing by with each mile?",
+        "D": "Not quite, look again at the scale for the cost. How much will each square represent?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131734,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1ca5f23d-abea-431c-b920-4770a08b70d3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The volume is measured from the y axis scale. Calculating the gradient gives us the rate of how the volume changes over time",
+        "B": "The gradient calculates a rate, the positive slope shows the rate the volume of water in the bath is increasing.",
+        "C": "Not quite. Look at the label of the y axis. It is not measuring temperature.",
+        "D": "You're on the right track. The gradient will calculate the rate, but think about if a positive slope will show a decreasing volume."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133927,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5f956701-9d9f-4f8c-a5b1-baff38d37417.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Look at the label of the y axis. It is not measuring temperature.",
+        "B": "You're on the right track. The gradient will calculate the rate, but think about if a positive slope will show a decreasing mass.",
+        "C": "The mass is measured from the y axis scale. Calculating the gradient gives us the rate of how the mass changes over time",
+        "D": "The gradient calculates a rate, the positive slope shows the rate the mass of sand in the bucket is increasing."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131735,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/81bc6d3b-1497-4b3e-a324-1af52df151f4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, the volume of water flowing is constant. A curve shows changes over time.",
+        "B": "When water flows at a constant rate, the graph will be linear (straight line)",
+        "C": "Not quite! Only one person is correct. A constant rate means the volume of water flowing is not changing",
+        "D": "Not quite, one person is actually correct. A constant rate means the volume of water flowing is not changing"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133928,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/20b0c286-5b6b-4aa0-9010-049c0f22b718.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Tom's graph shows the mass is decreasing over time. It is a straight line which represents a constant gradient, so a constant rate. Katie's graph shows that the mass stays the same; it is not changing at all.",
+        "B": "Not quite, Katie's graph shows the mass stays the same, so there is no change in the mass.",
+        "C": "Not quite, only one graph shows a change in mass over time. Look at the y axis. Is the mass changing in both graphs?",
+        "D": "Not quite! One of them is correct. Think about how the graph would look if the mass was decreasing at a constant rate"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

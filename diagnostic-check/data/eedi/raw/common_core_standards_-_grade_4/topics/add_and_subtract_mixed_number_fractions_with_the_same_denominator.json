@@ -1,0 +1,147 @@
+{
+  "shortcode": "bigm",
+  "name": "Add and subtract mixed number fractions with the same denominator",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 46,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Add fractions involving mixed number fractions with the same denominator",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Subtract fractions involving mixed number fractions with the same denominator",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 130069,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9c6bcd57-abf4-4153-a629-368ebd1f310d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We can do this calculation by adding the whole numbers 2+1 = 3 first. Adding 1/5 and 2/5 is simple as they both have the same denominator, so we can do 1+2 = 3, so we have 3 wholes and 3/5.",
+        "B": "This is an improper fraction, what will this be as a mixed number?",
+        "C": "This is an improper fraction. We need to give our answer as a mixed number. Also remember that we do not add the denominators.",
+        "D": "I think you have added the denominators in your calculation. We only add the numerators."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130088,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/96904db2-139b-48ee-95a4-286acfa82a13.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is an improper fraction. We need to give our answer as a mixed number. Also remember that we do not add the denominators.",
+        "B": "I think you have added the denominators in your calculation. We only add the numerators.",
+        "C": "This is an improper fraction, what will this be as a mixed number?",
+        "D": "We can do this calculation by adding the whole numbers 3+4 = 7 first. Adding 2/9 and 5/9 is simple as they both have the same denominator, so we can do 2+5 = 7, so we have 7 wholes and 7/9."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130071,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/02e6296a-a79b-4d0e-9a25-0eb7cbacddf3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "We can do this calculation by subtracting the whole numbers 2-1 = 1 first. Subtracting 2/5 from 4/5 is simple as they both have the same denominator, so we can do 4-2 = 2, so we have 1 whole and 2/5.",
+        "B": "This is an improper fraction, what will this be as a mixed number?",
+        "C": "Don't forget that we don't subtract the denominators too when subtracting fractions. Additionally, this question has asked for the answer as a mixed number, and this is an improper fraction.",
+        "D": "Don't forget that we don't subtract the denominators too when subtracting fractions."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130090,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/45ea900f-bf71-422e-ae4f-f22079ee508c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This is an improper fraction, what will this be as a mixed number?",
+        "B": "Don't forget that we don't subtract the denominators too when subtracting fractions. Additionally, this question has asked for the answer as a mixed number, and this is an improper fraction.",
+        "C": "We can do this calculation by subtracting the whole numbers 3-1 = 2 first. Subtracting 2/7 from 5/7 is simple as they both have the same denominator, so we can do 5-2 = 3, so we have 2 wholes and 3/7.",
+        "D": "Don't forget that we don't subtract the denominators too when subtracting fractions."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131437,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7eef3ba0-e768-4703-be50-0c38bffd7f1e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added 1 + 2 + 1 to find the numerator. But, remember the 1 in the mixed number means 1 whole. How many thirds in a whole? How many thirds do you have in total? Can you write this as a whole number?",
+        "B": "Be careful, I think you've added the 1 + 2 + 1. But, remember, the 1 in the mixed number means 1 whole. How many thirds in a whole? How many thirds do you have in total? Can you write this as a whole number?",
+        "C": "Remember, the 1 in the mixed number means 1 whole. How many thirds in a whole? How many thirds do you have in total? Can you write this as a whole number?",
+        "D": "As there are three thirds in every whole we can rewrite the calculation as 3/3 + 2/3 + 1/3. This gives us a total of 6/3, which equals 2."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133670,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a2bb8530-4d58-4b72-8fcb-2e842d077a0f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added 2 + 3 + 2 to find the numerator. Remember the 2 in the mixed number means 2 wholes. How many fifths in two wholes? How many fifths do you have in total? Can you write this as a whole number?",
+        "B": "I think you've worked out the total number of fifths in the first fraction. Now you need to add up how many fifths you have altogether, and then simplify.",
+        "C": "As there are five fifths in every whole, and therefore ten fifths in two wholes, we can rewrite this calculation as 10/5 + 3/5 + 2/5. This gives us a total of 15/5, which equals 3.",
+        "D": "I think you've done 23/5 + 2/5, but 2 and 3/5 is not the same as 23/5. The 2 in the mixed number means 2 wholes. How many fifths in two wholes? How many fifths do you have in total? Can you write this as a whole number?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 131439,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f6561061-2cb3-47c3-80dc-e939d2b6c393.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Subtracting 1/3 means we still have 1 whole, and 1/3 left over, as the fractions have the same denominator, we can simply do 2-1=1.",
+        "B": "You seem to have subtracted one whole, rather than 1/3.",
+        "C": "Don't forget there is 1 whole there too. Will that be affected by subtracting the 1/3?",
+        "D": "I think you've subtracted 2/3 rather than 1/3."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 133672,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/84439658-a1d3-40b4-ad26-2e1ba10d34a4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You seem to have subtracted one whole, rather than 1/5.",
+        "B": "Subtracting 1/5 means we still have 2 wholes, and 2/5 left over, as the fractions have the same denominator, we can simply do 3-1=2.",
+        "C": "I think you've subtracted 1 from the whole number and from the numerator. This would be one whole and 1/5 less, rather than just 1/5 less.",
+        "D": "You seem to have subtracted 3/5 rather than just 1/5."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 156956,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3ae0b4ba-07a2-4085-88ac-f6bbb7b510d6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have accidentally multiplied but we need to add...",
+        "B": "1 + 2 = 3 and 4/5 + 3/5 = 7/5 which is equivalent to 1 whole and 2/5. If we add these totals together we get 3 + 1 and 2/5 = 4 and 2/5",
+        "C": "Remember 4/5 + 3/5 is equal to 7/5 not 2/5. What is 7/5 as a mixed number? We must add this to the total of the whole numbers.",
+        "D": "You have correctly added the wholes but when we add the fractions, if we have four fifths add three fifths, how many fifths do we have altogether?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 156974,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0c5c0473-c0ca-4942-9057-caa32aabf9d8.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "3 + 1 = 4 and 3/7 + 5/7 = 8/7 which is equivalent to 1 whole and 1/7. If we add these totals together we get 4 + 1 and 1/7 = 5 and 1/7",
+        "B": "I think you have accidentally multiplied but we need to add...",
+        "C": "You have correctly added the wholes but you have made a mistake when adding the fractions. If we have three sevenths add five sevenths, how many sevenths do we have altogether?",
+        "D": "Remember 3/7 + 5/7 is equal to 8/7 not 1/7. What is 8/7 as a mixed number? We must add this to the total of the whole numbers."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

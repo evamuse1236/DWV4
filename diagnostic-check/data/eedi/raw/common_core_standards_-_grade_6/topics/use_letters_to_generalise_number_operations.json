@@ -1,0 +1,165 @@
+{
+  "shortcode": "vpd",
+  "name": "Use letters to generalise number operations",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 130,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Understand the non-commutativity of division",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Describe the meaning of algebraic terms with no powers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Describe the meaning of algebraic terms with powers",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Write algebraic expressions with correct algebraic convention",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Represent an equation using a bar model",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 147359,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/11bb7b10-e39b-42c4-88b5-4839ff42836f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember we are adding up what is on the tiles. Which of these are the given tiles added together?",
+        "B": "Katie’s two tiles represent an x and an x – which would be 2x in total. So Katie is correct. The 2 and x tile would be 2 + x so Tom is incorrect.",
+        "C": "Remember we are adding up what is on the tiles. Which of these are the given tiles added together?",
+        "D": "Remember we are adding up what is on the tiles. Which of these are the given tiles added together?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 147379,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/723fc0d8-a11b-4fbd-bcea-ae3a405551c2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Remember we are adding up what is on the tiles. Which of these are the given tiles added together?",
+        "B": "Katie’s five tiles each represent an x. That means we have x + x + x + x + x = 5x. So Katie is correct. Tom’s tiles represent 5 and x, or x+5, which is incorrect.",
+        "C": "Remember we are adding up what is on the tiles. Which of these are the given tiles added together?",
+        "D": "Remember we are adding up what is on the tiles. Which of these are the given tiles added together?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 147360,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8aa2cd8c-268a-44dd-9269-49c9bce806cd.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "A division can be written as a fraction, with the number being divided – known as the divisor - as the numerator and the number dividing into it – known as the dividend – as the denominator. This fraction represents ‘8 divided by p’.",
+        "B": "I think you have chosen the wrong operation. The line between the terms is not a subtraction sign. What does a fraction such as ½ mean? Reconsider your answer.",
+        "C": "I think you have chosen the right operation but in the wrong order. A division can be written as a fraction, with the number being divided – known as the divisor - as the numerator and the number dividing into it – known as the dividend – as the denominator. What does this fraction represent?",
+        "D": "I think you have chosen the wrong operation. The line between the terms is not a multiplication sign. What does a fraction such as ½ mean? Reconsider your answer."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 147380,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/23370f9e-8c0c-4c1b-9056-01ab656db866.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have chosen the right operation but in the wrong order. A division can be written as a fraction, with the number being divided – known as the divisor - as the numerator and the number dividing into it – known as the dividend – as the denominator. What does this fraction 1/2 represent?",
+        "B": "I think you have chosen the wrong operation. The line between the terms is not a subtraction sign. What does a fraction such as ½ mean? Reconsider your answer.",
+        "C": "A division can be written as a fraction, with the number being divided – known as the divisor - as the numerator and the number dividing into it – known as the dividend – as the denominator. This fraction represents ‘10 divided by a’.",
+        "D": "I think you have chosen the wrong operation. The line between the terms is not a multiplication sign. What does a fraction such as ½ mean? Reconsider your answer."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 147361,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e915741b-1f6c-4856-a39c-c67ee2eb4691.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have assumed that the letter would go first. When multiplying algebraic terms, the number always comes first.",
+        "B": "I think you have chosen the wrong operation. You have used an addition sign when the question says ‘multiplied by’. Do you need to use a multiplication symbol when multiplying terms?",
+        "C": "I think you have chosen the wrong operation. You have presumed that h is ‘to the power of 8’ when the question says it is multiplied by 8. How would you represent h being multiplied by 8? Do you need to use a multiplication symbol when multiplying terms?",
+        "D": "When multiplying terms in algebra we do not write a multiplication sign, and we write the number before the letter and the letters in alphabetical order. So in this case the answer would be 8 x h = 8h"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 147381,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c6cc2377-e35b-402f-8564-10db19ec289f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have assumed that the letter would go first. When multiplying algebraic terms, the number always comes first.",
+        "B": "I think you have chosen the wrong operation. You have used an addition sign when the question says ‘the product of’. What operation do we use when finding the ‘product’?",
+        "C": "The ‘product of’ two terms is one term multiplied by the other. When multiplying terms in algebra we do not write a multiplication sign, and we write the number before the letter and the letters in alphabetical order. So in this case the answer would be 3 x g = 3g",
+        "D": "I think you have chosen the wrong operation. You have presumed that g is ‘to the power of 3’ when the question says it is ‘the product of’ the two terms. What operation do we use when finding the ‘product’?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 147362,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d6c97e4e-f4ef-4c44-8d0d-d778faf0f305.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have chosen the wrong operation. The notation represents n being multiplied by itself, rather than having 2 added on.",
+        "B": "The small 2 symbol to the above right of the n means squared – n multiplied by itself.",
+        "C": "I think you have chosen the wrong operation. The notation represents n being multiplied by itself, rather than being multiplied by 2.",
+        "D": "I think you have chosen the wrong operation. The notation represents n being multiplied by itself, rather than being multiplied by 2."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 147382,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7e512634-4262-4407-aab1-a94f88536512.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have chosen the wrong operation. The notation represents 3 copies of g being multiplied together rather than having 3 added on.",
+        "B": "I think you have chosen the wrong operation. The notation represents 3 copies of g being multiplied together rather than multiplying g by 3.",
+        "C": "The small 3 symbol to the above right of the g means cubed – 3 copies of g being multiplied together– g x g x g.",
+        "D": "I think you have chosen the wrong operation. The notation represents 3 copies of g being multiplied together rather than multiplying g by 3."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 147363,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/312fac24-fb1a-4aa6-b014-4ac52b679806.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Try substituting in some numbers to see if the order matters.",
+        "B": "Division is non-commutative which means it DOES matter which order it is carried out in. Multiplication is commutative which means it DOES NOT matter which order it is carried out in. Therefore, only Katie is correct.",
+        "C": "Not quite. Think carefully about which of these operations are commutative. When multiplying, do we get the same answer if we switch the numbers round? What about division? Does swapping the numbers over give us the same answer? Substitute in some numbers to see.",
+        "D": "Not quite. At least one of the students is correct. Think carefully about which of these operations are commutative. When multiplying, do we get the same answer if we switch the numbers round? What about division? Does swapping the numbers over give us the same answer? Substitute in some numbers to see."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 154859,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/02487626-2082-44ad-8778-800a214d5294.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Multiplication is commutative. This means 17 x 0.3 will have the same answer as 0.3 x 17, the order of the numbers doesn't matter. Division is not commutative. This means 17 ÷ 0.3 has a different answer to 0.3 ÷ 17. Therefore, only Tom is correct.",
+        "B": "Not quite. Use a calculator to find the answers to all 4 questions, then check to see which ones give the same answer.",
+        "C": "Not quite. Use a calculator to find the answers to all 4 questions, then check to see which ones give the same answer.",
+        "D": "Not quite. Use a calculator to find the answers to all 4 questions, then check to see which ones give the same answer."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

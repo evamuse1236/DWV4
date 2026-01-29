@@ -1,0 +1,147 @@
+{
+  "shortcode": "bifj",
+  "name": "Multiplicative comparisons (word problems)",
+  "collectionId": 32,
+  "level": 1,
+  "sequence": 2,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Identify that a problem needs to be solved using multiplication",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Identify that a problem needs to be solved using division",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 89266,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fca5a0f5-b872-4df3-9d07-b288d2f615ec.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Think carefully about which operation you need to use. This calculation gives the cost of 84 tickets.",
+        "B": "Not quite. Think carefully about which operation you need to use. This calculation gives the amount of money left after buying one ticket.",
+        "C": "Think carefully about the order of your numbers. This calculation gives an answer less that 1.",
+        "D": "Dividing the amount of money, by the cost per ticket will give the number of tickets. So we do 84 ÷ 7."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 89279,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/476fbe74-9a51-4f65-a3dd-21a14fb4050d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "All 104 legs belong to cows which each have 4 legs. So to find out how many cows there are we divide the number of legs by 4. So we do 104 ÷ 4",
+        "B": "Think carefully about the order of your numbers. This calculation gives an answer less that 1.",
+        "C": "Not quite. Think carefully about which operation you need to use. This calculation gives the amount of legs if one cow was removed.",
+        "D": "Not quite. Think carefully about which operation you need to use. This calculation gives the number of legs that 104 cows have."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158082,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4fb12a7b-4a0b-4b26-806d-7ed0f0ad1844.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The question states that 'Gregg ran 5 times as many miles' - what mathematical operation is 'times'?",
+        "B": "As Gregg ran '5 times as many miles as Tim' we need to multiply the 5 and 6 together.",
+        "C": "Addition and multiplication are different operations therefore they cannot both be correct. Think about the meaning of '5 times as many'...",
+        "D": "One of them is correct. Think about the meaning of '5 times as many'..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158249,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6d760f56-7a54-47ce-9009-7f4b97e8609c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The question states that 'Sue ran 4 times as many miles' - what mathematical operation is 'times'?",
+        "B": "As Sue ran '4 times as many miles as Rob' we need to multiply the 4 and 3 together.",
+        "C": "Addition and multiplication are different operations therefore they cannot both be correct. Think about the meaning of '4 times as many'...",
+        "D": "One of them is correct. Think about the meaning of '4 times as many'..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158083,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4bd8b8d5-2462-4fcb-ae74-9d768d31347b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "This would be the answer if Daniel had 3 more than Cameron but he has 'three times' as much so what operation do you need to use?",
+        "B": "This would be the answer if Daniel had a third of what Cameron has but he has 'three times' as much so what operation do you need to use?",
+        "C": "The question states that Daniel has 'three times as much money' therefore to solve this we need to multiply by 3.",
+        "D": "This would be the answer if Daniel had 3 less than Cameron but he has 'three times' as much so what operation do you need to use?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158250,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a8da741f-57c1-4240-b4a9-770c4cd69f5b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The question states that Jose has 'five times as much money' therefore to solve this we need to multiply by 5.",
+        "B": "This would be the answer if Jose had 5 more than Marie but he has 'five times' as much so what operation do you need to use?",
+        "C": "This would be the answer if Jose had a fifth of what Marie has but he has 'five times' as much so what operation do you need to use?",
+        "D": "This would be the answer if Jose had 5 less than Marie but he has 'five times' as much so what operation do you need to use?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158084,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ddf0011c-1800-492c-a9a6-eb517a35751f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have accidentally subtracted 3 but you need to multiply the length by 3...",
+        "B": "I think you have accidentally added on 3 but you need to multiply the length by 3...",
+        "C": "I think you have accidentally cubed the 5 but you need to multiply it by 3...",
+        "D": "If we stretch the rubber band to be '3 times as long' this means multiplying by 3. 5 x 3 = 15."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158251,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/57c6619e-3109-4b80-890b-735334d37c4e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have accidentally added on 4 but you need to multiply the length by 4...",
+        "B": "If we stretch the rubber band to be '4 times as long' this means multiplying by 4. 8 x 4 = 32.",
+        "C": "I think you have accidentally taken 8 to the power of 4 but you need to multiply it by 4...",
+        "D": "I think you have accidentally subtracted 4 but you need to multiply the length by 4..."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158085,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b82cb8ff-e87a-4b8a-978b-e8eb0e9c04fa.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have done 54 x 3 but you need to do 54 ÷ 3 to find out how many sweets each child gets",
+        "B": "To find out how many sweets each child gets you do 54 ÷ 3 which equals 18.",
+        "C": "I think you have correctly attempted 54 ÷ 3 but you have an error in your calculation...",
+        "D": "I think you have subtracted 3 from 54 but you need to do 54 ÷ 3 to work out how many sweets each child will get..."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 158252,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0302643a-ace5-446e-b742-82766f59a5e4.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To find out how many sweets each child gets you do 68 ÷ 4 which equals 17.",
+        "B": "I think you have subtracted 4 from 68 but you need to do 68 ÷ 4 to work out how many sweets each child will get...",
+        "C": "I think you have done 68 x 4 but you need to do 68 ÷ 4 to find out how many sweets each child gets",
+        "D": "I think you have correctly attempted 68 ÷ 4 but you have an error in your calculation..."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

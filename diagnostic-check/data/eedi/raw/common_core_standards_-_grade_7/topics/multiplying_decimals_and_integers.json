@@ -1,0 +1,141 @@
+{
+  "shortcode": "vtw",
+  "name": "Multiplying decimals and integers",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 81,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Multiply a decimal by an integer",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 130232,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c2d481fe-87d6-4a6f-9e37-531f6c9fbac0.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "6 would be 3x2, but we're multiplying by 0.3 instead, which is 10 times smaller.",
+        "B": "This is 0.3 + 2, not 0.3 x 2",
+        "C": "0.3 x 2 is 0.6. We can use our knowledge of 3 x 2 to help us. 3 x 2 = 6 and 0.3 is ten times smaller so 0.3 x 2 = 0.6",
+        "D": "0.5 would be 0.3 + 0.2, rather than 0.3 x 2. What is two lots of 0.3?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130252,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a446873b-5fb1-4862-84f7-30c92ed1063a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "0.2 x 4 is 0.8. We can use our knowledge of 2 x 4 to help us. 2 x 4 = 8 and 0.2 is ten times smaller so 0.2 x 4 = 0.8",
+        "B": "This is 0.2 + 0.4, rather than 0.2 x 4.",
+        "C": "8 would be 2x4, but we're multiplying by 0.2 instead, which is 10 times smaller.",
+        "D": "I think you've divided 0.2 by 4, rather than multiplying."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130233,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0990d0c8-b8c7-4d35-847d-a28a8bdf9f16.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "36 is the answer to 3x12, but we're multiplying by 0.3, which is 10 times smaller.",
+        "B": "We could do this calculation by firstly doing 3x12 = 36, and then remembering that 0.3 is 10 times smaller so we can divide 36 by 10, to get 3.6.",
+        "C": "I think you've made a mistake when putting your decimal places back in. 0.3 is 10 times smaller than 3, so how much smaller will your answer be?",
+        "D": "I think you've made a mistake when putting your decimal places back in. 0.3 is 10 times smaller than 3, so how much smaller will your answer be?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130253,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f1f98484-334d-4de1-ac11-4c7e1a9807a9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To start with, we can calculate 6x11 = 66. We want to multiply by 0.6 though, which is 10 times smaller, so we can divide by 10 to get an answer of 6.6.",
+        "B": "I think you've made an error with your place value in the calculations.",
+        "C": "You do not need to round your answer, we want the exact decimal.",
+        "D": "66 would be 6 x 11. We want 0.6 x 11, which is 10 times smaller."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130234,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d82eb4f9-faf6-4921-b009-d328b4c78563.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've made a mistake when finding the correct place value. Be careful to put the decimal point in the correct place.",
+        "B": "To do this, first of all calculate 4x15 = 60. 0.4 is ten times smaller, so we can divide by 10 to get 6.",
+        "C": "You could start your calculation by working out 4x15 first.",
+        "D": "60 = 4 x 15, but we want 0.4 x 15, which is 10 times smaller."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130254,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a1ea6156-bf54-4f31-a024-70e8a941d032.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "80 = 4x20, but we want 0.4 x 20 which is 10 times smaller.",
+        "B": "I think you've multiplied 4 by 20 and then kept it behind the point. Try multiplying by 10 first, and then doubling your answer.",
+        "C": "This would be 0.4 x 2, rather than 0.4 x 20.",
+        "D": "We can start by calculating 4 x 20 = 80. 0.4 is ten times smaller, so we can divide our answer by 10 which gives us 8."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130235,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f1e73ad9-be0d-49e9-b932-f62ad6b27950.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you left the same number of zeros after the decimal pace. This doesn't always work with decimal calculations. Try starting with 3 x 12 and then dividing by 100 as 0.03 is 100 times smaller than 3",
+        "B": "Think carefully about the order of your digits. There should not be a zero inbetween.",
+        "C": "Start by multiplying 3x12 = 36. 0.03 is 100 times smaller than 3, so we can divide our answer by 100 to get 0.36.",
+        "D": "I think you've made an error when putting your decimal place back in. 0.03 is 100 times smaller than 3."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130255,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/62fc123b-5239-4b2c-8b4c-400e063cb413.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "8.4 would be 0.4 x 21. 0.04 is 10 times smaller than 0.4",
+        "B": "Think carefully about the order of your digits. There should not be a zero inbetween.",
+        "C": "Firstly we can find 4 x 21 = 84. 0.04 is 100 times smaller than 4, so we can divide our answer by 100 to get 0.84.",
+        "D": "I think you've made an error when putting your decimal place back in. 0.04 is 100 times smaller than 4."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 130236,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/862d76a6-a100-4e3d-a550-bdde9587381a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Start by calculating 8x25 = 200. 0.08 is 100 times smaller than 8, so we can divide our answer by 100 to get 2.",
+        "B": "I think you've made an error when putting your decimal place back in. 0.08 is 100 times smaller than 8.",
+        "C": "I think you've made an error when putting your decimal place back in. 0.08 is 100 times smaller than 8.",
+        "D": "I think you've made an error when putting your decimal place back in. 0.08 is 100 times smaller than 8."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 130256,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/482d2e61-7acc-4cd8-89dc-20128955348c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "40 would be 0.5 x 80. We want 0.05 x 80.",
+        "B": "Firstly, calculate 5x80 = 400. 0.05 is 100 times smaller than 5, so we can divide by 100 to get an answer of 4.",
+        "C": "I think you've made an error when putting your decimal place back in. 0.05 is 100 times smaller than 5.",
+        "D": "I think you've made an error when putting your decimal place back in. 0.05 is 100 times smaller than 5."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

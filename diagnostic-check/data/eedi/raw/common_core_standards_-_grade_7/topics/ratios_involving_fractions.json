@@ -1,0 +1,165 @@
+{
+  "shortcode": "vve",
+  "name": "Ratios involving fractions",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 141,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Reduce a ratio involving two numbers to its simplest form",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Write a given ratio in the form 1:n ",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Represent written scenarios as ratios",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Find missing values when given equivalent ratios",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Understand the relationship between parts of a ratio",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 134917,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/afc230f9-314e-441a-8b02-1d99a330996e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have just looked at the denominators. You need to multiply or divide both fractions by the same number to get an equivalent ratio",
+        "B": "Almost, but is that in its simplest form",
+        "C": "I think you have just looked at the denominators, and then simplified. You need to multiply or divide both fractions by the same number to get an equivalent ratio",
+        "D": "If we multiply both sides by 4 we will get 1:2 which is in its simplest form"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134937,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0da89a7f-831e-4a65-939b-c5496a975691.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "If we multiply both sides by 8 we will get 1:4 which is in its simplest form",
+        "B": "I think you have just looked at the denominators, and then simplified. You need to multiply or divide both fractions by the same number to get an equivalent ratio",
+        "C": "Almost, but is that in its simplest form",
+        "D": "I think you have just looked at the denominators. You need to multiply or divide both fractions by the same number to get an equivalent ratio"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 134918,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d6ffb9c8-6819-4053-b5ac-9cad97fb8337.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have just used the denominator of the second fraction. What do we have to multiply 1/3 by to get 1? We need to multiply the second part by this number too.",
+        "B": "I think you found what you had to multiply by, but you didn't multiply the fraction correctly. Remember you need to multiply both parts by the same number",
+        "C": "Almost, just remember you need to multiply both parts by the same number",
+        "D": "To make 1/3 into 1, we need to multiply by 3. That means we need to multiply 1/2 by 3 too, giving us 3/2."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134938,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/02e53196-f590-43a5-9d38-5dbfa3f80ca2.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost, just remember you need to multiply both parts by the same number",
+        "B": "To make 1/5 into 1, we need to multiply by 5. That means we need to multiply 1/2 by 5 too, giving us 5/2.",
+        "C": "I think you have just used the denominator of the second fraction. What do we have to multiply 1/5 by to get 1? We need to multiply the second part by this number too.",
+        "D": "I think you found what you had to multiply by, but you didn't multiply the fraction correctly. Remember you need to multiply both parts by the same number"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 134919,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c8310c83-e31e-4661-943a-6d5945781dd3.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To be equivalent to 1:1 the fractions have to be equivalent. To go from 10 to 15 we multiplied by 1.5, so we have to do the same to the numerator. 4 x 1.5 = 6",
+        "B": "Not quite, I think you doubled the numerator, but did we double the denominator?",
+        "C": "Not quite, this is what was added onto the denominator but we need to use multiplication or division when finding equivalent fractions. Remember to be equivalent to 1:1 the fractions need to be equivalent.",
+        "D": "Not quite, I think you added 5 onto the numerator as this was what was added onto the denominator. However, we need to use multiplication or division when finding equivalent fractions. Remember to be equivalent to 1:1 the fractions need to be equivalent."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134939,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bf1a2ecb-5729-45ed-8147-2d9c494d049f.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, this is what was added onto the denominator but we need to use multiplication or division when finding equivalent fractions. Remember to be equivalent to 1:1 the fractions need to be equivalent.",
+        "B": "Not quite, I think you added 6 onto the numerator as this was what was added onto the denominator. However, we need to use multiplication or division when finding equivalent fractions. Remember to be equivalent to 1:1 the fractions need to be equivalent.",
+        "C": "Not quite, I think you doubled the numerator, but did we double the denominator?",
+        "D": "To be equivalent to 1:1 the fractions have to be equivalent. To go from 12 to 18 we multiplied by 1.5, so we have to do the same to the numerator. 2 x 1.5 = 3"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 134920,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/08e7d35b-b7ef-4632-89de-c1fe909a4b53.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Almost. Think about the fraction of the sweets each person gets.",
+        "B": "Almost. Think about how many times more sweets Katie has than Tom",
+        "C": "If Tom gets one quarter, that means Katie gets the other 3/4. So Katie is correct, the ratio is 1/4: 3/4. Tom is also correct as he gets 1 part, and Katie gets the other 3 parts, so the ratio can also be written as 1:3",
+        "D": "At least one person is correct. Think about how much Katie will get if Tom has 1/4."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134940,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e3d164f5-25dc-4287-8df7-3966c6c26a71.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite. Think about what fraction of the sweets each person gets.",
+        "B": "If Tom gets one fifth, that means Katie gets the other 4/5. So Katie is correct, the ratio is 1/5: 4/5. Tom is not correct as he gets 1 part, and Katie gets the other 4 parts, so the ratio can also be written as 1:4 NOT 1:5.",
+        "C": "At least one person is incorrect. Think about the fraction of sweets each person gets",
+        "D": "At least one person is correct. Think about the fraction of sweets each person gets"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 134921,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0dc779d6-41f3-42c5-8d13-e63f60461116.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "4/6 is equivalent to 2/3. That is twice as many as 1/3",
+        "B": "Not quite. The denominator has been halved, but the fractions don't have that relationship. Try simplifying 4/6 to see how many lots of 1/3 we have.",
+        "C": "Not quite. The numerator is 3 bigger, but the fractions don't have that relationship. Try simplifying 4/6 to see how many lots of 1/3 we have.",
+        "D": "Not quite. The difference in the numerators is 3, but the fractions don't have that relationship. Try simplifying 4/6 to see how many lots of 1/3 we have."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 134941,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/801f7030-aafa-48fa-b08d-383b33668e0c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Not quite, the denominator has doubled but the fractions don't have that relationship. Try simplifying 6/8 and then compare it to 1/4",
+        "B": "Not quite, Erica's denominator is half of Rebecca's, but the fractions don't have that relationship. Try simplifying 6/8 and then compare it to 1/4",
+        "C": "Almost. Is Erica's fraction bigger?",
+        "D": "6/8 simplifies to 3:4. That means the ratio is 1/4: 3/4. Erica has 1/4, which is a third of 3/4."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

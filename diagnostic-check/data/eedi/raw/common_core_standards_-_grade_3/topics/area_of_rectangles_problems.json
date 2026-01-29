@@ -1,0 +1,141 @@
+{
+  "shortcode": "biuf",
+  "name": "Area of rectangles problems",
+  "collectionId": 33,
+  "level": 1,
+  "sequence": 46,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Calculate the area of a rectangle where the dimensions are given in the same units",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 158876,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4c6844ed-dd6f-469b-823b-9a45e81d4c6c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've added the measurements. But, to calculate the area of a rectangle, multiply the length by the width and remember to give the answer in square units.",
+        "B": "I think you've added the measurements. But, to calculate the area of a rectangle, multiply the length by the width. Well done for remembering that the area will be measured in square units.",
+        "C": "You've correctly multiplied the length by the width to get the area of the rectangle but remember to give the answer in square units.",
+        "D": "To calculate the area of a rectangle, multiply the length by the width and give the answer in square units. 7 x 5 = 35, so the area is 35 square units."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159075,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8a8cc36d-41d8-4604-af47-ef4a829a14c1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You've correctly multiplied the length by the width to get the area of the rectangle, but what should the units be, if we have multiplied units by units?",
+        "B": "To calculate the area of a rectangle, multiply the length by the width and give the answer in square units. 4 x 6 = 24, so the area is 24 square units.",
+        "C": "I think you've added the measurements. But, to calculate the area of a rectangle, multiply the length by the width and remember to give the answer in square units.",
+        "D": "I think you've added the measurements. But, to calculate the area of a rectangle, we multiply the length by the width. Well done for remembering that the area will be measured in square units."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158877,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d634f81d-a06b-49b0-b4df-9b2c949dd323.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You've correctly multiplied the length by the width to get the area of the rectangle but remember to give the answer in square yds.",
+        "B": "To calculate the area of a rectangle, multiply the length by the width and give the answer in square units. 6 x 2 = 12, so the area is 12 square yds.",
+        "C": "I think you've added the measurements. But, to calculate the area of a rectangle, multiply the length by the width and remember to give the answer in square yds.",
+        "D": "I think you've added the measurements. But, to calculate the area of a rectangle, multiply the length by the width. Well done for remembering that the area will be measured in square yds."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159076,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ae82c899-84fe-431b-b5ea-1de038d26a8e.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've added the measurements. But, to calculate the area of a rectangle, we multiply the length by the width. Well done for remembering that the area will be measured in square units.",
+        "B": "I think you've added the measurements. But, to calculate the area of a rectangle, multiply the length by the width and remember to give the answer in square units.",
+        "C": "You've correctly multiplied the length by the width to get the area of the rectangle, but what should the units be, if we have multiplied yards by yards?",
+        "D": "To calculate the area of a rectangle, multiply the length by the width and give the answer in square units. 3 x 7 = 21, so the area is 21 square yds."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158878,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e0e18a90-66f2-4c51-ac38-ec516a8b5e66.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've added the measurements. But, to calculate the area of a rectangle, multiply the length by the width and remember to give the answer in square inches.",
+        "B": "I think you've added the measurements. But, to calculate the area of a rectangle, we multiply the length by the width. Well done for remembering that the area will be measured in square inches.",
+        "C": "You've correctly multiplied the length by the width to get the area of the rectangle but remember to give the answer in square inches.",
+        "D": "To calculate the area of a rectangle, multiply the length by the width and give the answer in square units. 5 x 3 = 15, so the area is 15 square inches."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159077,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2097e9c3-dd1b-4647-9e72-57634640717c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You've correctly multiplied the length by the width to get the area of the rectangle, but what should the units be, if we have multiplied inches by inches?",
+        "B": "I think you've added the measurements. But, to calculate the area of a rectangle, multiply the length by the width and remember to give the answer in square units.",
+        "C": "To calculate the area of a rectangle, multiply the length by the width and give the answer in square units. 5 x 8 = 40, so the area is 40 square inches.",
+        "D": "I think you've added the measurements. But, to calculate the area of a rectangle, we multiply the length by the width. Well done for remembering that the area will be measured in square units."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158879,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8782cc95-c3f2-46f9-95ef-2a7addf310e1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "All the sides of a square are the same length. So,to calculate the area of a square, multiply a side length by itself. 6 x 6 = 36. The side length was given in meters so the area will be given in square meters: 36 square meters.",
+        "B": "I think you've added the measurements. But, to calculate the area of a square, multiply a side length by itself. Also, remember to give the answer in square meters.",
+        "C": "You've correctly multiplied a side length by itself to get the area of the square. But remember to give the area in square meters.",
+        "D": "I think you've added the measurements. But, to calculate the area of a square, multiply a side length by itself. Well done for remembering that the area will be measured in square meters."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159078,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/01311a45-ded4-43ad-95d0-eb1c568f3a4b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "You've correctly multiplied a side length by itself to get the area of the square. But what should the units be, if we are multiplying meters by meters?",
+        "B": "I think you've added the measurements. But, to calculate the area of a square, we multiply a side length by itself. Also, remember to give the answer in square meters.",
+        "C": "All the sides of a square are the same length. So,to calculate the area of a square, multiply a side length by itself. 7 x 7 = 49. The side length was given in meters so the area will be given in square meters: 49 square meters.",
+        "D": "I think you've added the measurements. But, to calculate the area of a square, we multiply a side length by itself. Well done for remembering that the area will be measured in square meters."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 158880,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7733850e-4dc7-483d-b6cd-56bcaaa0a3e6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you've added the measurements. But, to calculate the area of a rectangle, multiply the length by the width. Well done for remembering that the area will be measured in square inches.",
+        "B": "I think you've added the measurements. But, to calculate the area of a rectangle, multiply the length by the width. Well done for remembering that the area will be measured in square inches.",
+        "C": "You've correctly multiplied the length by the width to get the area of the rectangle but remember to give the answer in square inches.",
+        "D": "To calculate the area of a rectangle, multiply the length by the width and give the answer in square units. 3 x 2 = 6, so the area is 6 square inches."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 159079,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e160c913-29b7-4b29-9b34-c7aa84b35980.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "To calculate the area of a rectangle, multiply the length by the width and give the answer in square units. 3 x 6 = 18, so the area is 18 square inches.",
+        "B": "You've correctly multiplied the length by the width to get the area of the rectangle, but what should the units be, if we have multiplied inches by inches?",
+        "C": "I think you've added the measurements. But, to calculate the area of a rectangle, multiply the length by the width and remember to give the answer in square units.",
+        "D": "I think you've added the measurements. But, to calculate the area of a rectangle, we multiply the length by the width. Well done for remembering that the area will be measured in square units."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

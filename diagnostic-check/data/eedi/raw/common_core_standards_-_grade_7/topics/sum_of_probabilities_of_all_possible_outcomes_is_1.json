@@ -1,0 +1,147 @@
+{
+  "shortcode": "vxn",
+  "name": "Sum of probabilities of all possible outcomes is 1",
+  "collectionId": 24,
+  "level": 1,
+  "sequence": 229,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Know that the probabilities of exhaustive events must sum to 1",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Assign probabilities to single events using fractions",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 146486,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c171de90-094f-4665-af68-d0c93e83001b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have assumed that because there are two outcomes, they must have an even chance of occurring. The probability of all of the outcomes added together must be 1. If the probability of choosing a strawberry sweet is 0.8, what must the probability of choosing an orange sweet be?",
+        "B": "I think you have assumed that the probability of choosing each orange or strawberry must be the same. The probability of all of the outcomes added together must be 1. If the probability of choosing a strawberry sweet is 0.8, what must the probability of choosing an orange sweet be?",
+        "C": "The probability of all of the outcomes of an event must sum to 1. There are two outcomes for this event – strawberry or orange. The probability of choosing strawberry is 0.8 So the probability of choosing orange is 1-0.8=0.2",
+        "D": "There is enough information in the question to calculate the probability of choosing an orange sweet. The probability of all of the outcomes added together must be 1. If the probability of choosing a strawberry sweet is 0.8, what must the probability of choosing an orange sweet be?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146506,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e73dd0a3-fba2-46c7-9826-5b565394c24a.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have assumed that because there are two outcomes, they must have an even chance of occurring. The probability of all of the outcomes added together must be 1. If the probability of choosing a strawberry sweet is 0.65, what must the probability of choosing an orange sweet be?",
+        "B": "I think you have assumed that the probability of choosing each orange or strawberry must be the same. The probability of all of the outcomes added together must be 1. If the probability of choosing a strawberry sweet is 0.65, what must the probability of choosing an orange sweet be?",
+        "C": "The probability of all of the outcomes of an event must sum to 1. There are two outcomes for this event – strawberry or orange. The probability of choosing strawberry is 0.65 So the probability of choosing orange is 1-0.65=0.35",
+        "D": "There is enough information in the question to calculate the probability of choosing an orange sweet. The probability of all of the outcomes added together must be 1. If the probability of choosing a strawberry sweet is 0.65, what must the probability of choosing an orange sweet be?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146487,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8fa697ac-9570-4d5b-b02e-80cd841e24ec.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have assumed there would be an equal chance of choosing each of the three outcomes. The outcomes of all 3 events must sum to 1. The question states that the probability of choosing a strawberry sweet is 0.8. What would the probability of the other two possible outcomes be?",
+        "B": "I think you have assumed that the remaining probability would be shared out equally between the orange and blackcurrant sweets. It does not specify that this is the case in the question. Can you calculate the probability of choosing orange without knowing how many there are?",
+        "C": "I think you have forgotten to account for the blackcurrant sweets. If the probability of orange was 0.2 then the probability of blackcurrant would be 0, which cannot be the case as we are told there are blackcurrant sweets in the bag. The outcomes of all 3 events must sum to 1. The question states that the probability of choosing a strawberry sweet is 0.8. What would the probability of the other two possible outcomes be?",
+        "D": "Without knowing how many sweets there are in the bag, or being given information on how the remaining 0.2 is shared between blackcurrant and orange, it is impossible to know the probability of choosing either."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146507,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/28103da7-297e-4478-8430-97d163596881.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have assumed there would be an equal chance of choosing each of the three outcomes. The outcomes of all 3 events must sum to 1. The question states that the probability of choosing a white chocolate is 1/3. What would the probability of the other two possible outcomes be?",
+        "B": "I think you have assumed that the probability of dark and white chocolates would sum to 1, meaning there would be zero milk chocolates. Remember there are 3 outcomes in this question – dark, milk or white. We do not know how many of each there are – can you still calculate the probability of choosing a dark chocolate?",
+        "C": "I think you have just chosen the number of possible outcomes in the question as your answer. The outcomes of all 3 events must sum to 1. The question states that the probability of choosing a white chocolate is 1/3. What would the probability of the other two possible outcomes be?",
+        "D": "Without knowing how many chocolates there are in the bag, or being given information on how the remaining 2/3 is shared between milk chocolates and dark chocolates, it is impossible to know the probability of choosing either. \n"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146488,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/71474fd5-db04-464d-b08a-5ea46447ba37.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "The probability of all outcomes of an event must sum to 1. The probability of choosing a strawberry sweet is 3/7. 1 – 3/7 = 4/7. Therefore the probability of choosing an orange sweet must be 4/7.",
+        "B": "I think you have assumed that there would be an even chance as there are two possible outcomes. The probability of all outcomes of an event must sum to 1. The probability of choosing a strawberry sweet is 3/7. What must the probability of choosing an orange sweet be for the probabilities to sum to 1?",
+        "C": "I think you have assumed that the probabilities should be equal. The probability of all outcomes of an event must sum to 1. The probability of choosing a strawberry sweet is 3/7. What must the probability of choosing an orange sweet be for the probabilities to sum to 1?",
+        "D": "There is enough information in the question the calculate the probability of choosing an orange sweet. The probability of all outcomes of an event must sum to 1. The probability of choosing a strawberry sweet is 3/7. What must the probability of choosing an orange sweet be for the probabilities to sum to 1?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146508,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1067cceb-5937-42e7-89af-0a7effe0e21c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have assumed that the probabilities should be equal. The probability of all outcomes of an event must sum to 1. The probability of choosing a liquorice is 2/5. What must the probability of choosing a lemon sherbet be for the probabilities to sum to 1?",
+        "B": "I think you have assumed that there would be an even chance as there are two possible outcomes. The probability of all outcomes of an event must sum to 1. The probability of choosing a liquorice is 2/5. What must the probability of choosing a lemon sherbet be for the probabilities to sum to 1?",
+        "C": "The probability of all outcomes of an event must sum to 1. The probability of choosing a liquorice is 2/5. Therefore the probability of choosing a lemon sherbert is 1 – 2/5 = 3/5.",
+        "D": "There is enough information in the question the calculate the probability of choosing a lemon sherbet. The probability of all outcomes of an event must sum to 1. The probability of choosing a liquorice is 2/5. What must the probability of choosing a lemon sherbet be for the probabilities to sum to 1?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146489,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2f5b3118-20d1-44a7-a710-81b98a4d32d1.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have stated the number of green counters, rather than the probability of choosing green. P(green) would be the number of green counters divided by the number of counters overall.",
+        "B": "I think you have found the probability of NOT choosing a green counter. The question asks you to find the probability of choosing a green counter. How many green counters are there, and out of how many? Express your answer as a fraction.",
+        "C": "I think you have assumed that because there are three possible outcomes, there would be an equal chance of each. P(green) would be the number of green counters divided by the number of counters overall.",
+        "D": "There are four green counters (10 – 3 – 3 = 4) and 10 counters overall. Therefore the probability of choosing green would be 4/10."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146509,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/384cba4b-5593-4d74-bec3-c1bd1629a791.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have stated the number of green counters, rather than the probability of choosing green. P(green) would be the number of green counters divided by the number of counters overall.",
+        "B": "There are three green counters (10 – 5 – 2 = 3) and 10 counters overall. Therefore the probability of choosing green would be 3/10.",
+        "C": "I think you have assumed that because there are three possible outcomes, there would be an equal chance of each. P(green) would be the number of green counters divided by the number of counters overall.",
+        "D": "I think you have found the probability of NOT choosing a green counter. The question asks you to find the probability of choosing a green counter. How many green counters are there, and out of how many? Express your answer as a fraction."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 146490,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dde1f01f-be0b-4d94-8183-494c5a11722c.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added the two probabilities together incorrectly, without finding a common denominator first. First write both fractions as equivalent fractions out of 10.",
+        "B": "I think you have added the two probabilities together correctly, but the question asks for the probability of getting an R. The probabilities of all of the outcomes of an event must sum to 1. Does this information help you calculate the probability of picking an R?",
+        "C": "I think you may have forgotten to multiply the numerator when writing 3/5 as an equivalent fraction. First write both fractions as equivalent fractions out of 10.",
+        "D": "3/5 = 6/10 and 6/10 + 1/10 = 7/10. The probability of all 3 outcomes must sum to 1. 1 – 7/10 = 3/10. Therefore the probability of getting an R would be 3/10"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 146510,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cc672c4b-bc13-4bb1-b529-99fcbdba13a9.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "I think you have added the two probabilities together incorrectly, without finding a common denominator first. First write both fractions as equivalent fractions out of 14.",
+        "B": "I think you have added the two probabilities together correctly, but the question asks for the probability of getting a Z. The probabilities of all of the outcomes of an event must sum to 1. Does this information help you calculate the probability of picking an Z?",
+        "C": "I think you may have forgotten to multiply the numerator when writing 3/7 as an equivalent fraction. First write both fractions as equivalent fractions out of 14.",
+        "D": "3/7 = 6/14 and 6/14 + 3/14 = 9/14. The probability of all 3 outcomes must sum to 1. 1 – 9/14 = 5/14. Therefore the probability of getting a Z would be 5/14"
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}

@@ -1,0 +1,147 @@
+{
+  "shortcode": "vps",
+  "name": "Order of operations with integers 1",
+  "collectionId": 23,
+  "level": 1,
+  "sequence": 151,
+  "yearGroups": [],
+  "hasInterventions": false,
+  "skills": [
+    {
+      "id": null,
+      "name": "Use the order of operations to carry out calculations involving addition, subtraction, multiplication, and/or division",
+      "subjectArea": "",
+      "prerequisites": []
+    },
+    {
+      "id": null,
+      "name": "Use the order of operations to carry out calculations involving brackets",
+      "subjectArea": "",
+      "prerequisites": []
+    }
+  ],
+  "tags": [],
+  "questions": [
+    {
+      "questionId": 104291,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9198d2c8-b777-4310-b154-07bc84173e98.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Out of addition and multiplication, which do you do first?",
+        "B": "Addition and subtraction are performed left to right. Multiplication is done before addition.",
+        "C": "Think about your order of operations. What comes first in each calculation?",
+        "D": "Even though BIDMAS lists addition before subtraction, they are actually the same priority. We work from left to right."
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104298,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a9e12bf1-d836-401a-868e-d341a3b51d29.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Even though BIDMAS lists addition before subtraction, they are actually the same priority. We work from left to right.",
+        "B": "Think about your order of operations. What comes first in each calculation?",
+        "C": "Addition and subtraction are performed left to right. Multiplication is done before addition.",
+        "D": "Out of addition and multiplication, which do you do first?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 104292,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4187bfc1-be00-47a3-b4d5-9d5991ae05c6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Multiplication and division are performed left to right. They are done before addition.",
+        "B": "Multiplication and division have the same priority. They are performed from left to right.",
+        "C": "Out of addition and division, which do you do first?",
+        "D": "Think about your order of operations. What comes first in each calculation?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104299,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ecefd0e0-acfc-4041-a0cb-d833301ce4f6.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Think about your order of operations. What comes first in each calculation?",
+        "B": "Out of addition and division, which do you do first?",
+        "C": "Multiplication and division have the same priority. They are performed from left to right.",
+        "D": "Multiplication and division are performed left to right. They are done before addition."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 104293,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/83232169-5674-4eee-862f-98dad015483d.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "What gets squared in problem Q?",
+        "B": "Brackets are done before indices, and indices are done before addition.",
+        "C": "Think about your order of operations. What value gets squared in each calculation?",
+        "D": "What gets squared in problem P?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104300,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3224fe2b-2615-4f42-bb68-326cfdf86381.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "What gets squared in problem P?",
+        "B": "Think about your order of operations. What number gets squared in each calculation?",
+        "C": "Brackets are done before indices, and indices are done before addition.",
+        "D": "What gets squared in problem Q?"
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 104294,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0b2f5db0-7aca-45a1-9edf-88d9fd2614ea.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Out of addition, subtraction and multiplication, which do you do first?",
+        "B": "Multiplication is done before either addition or subtraction.",
+        "C": "Out of addition, subtraction and multiplication, which do you do first?",
+        "D": "Think about the order of operations. What does BIDMAS mean?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104301,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/097a476c-4772-459c-bfa6-f1a04dc6f860.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Out of addition, subtraction and multiplication, which do you do first?",
+        "B": "Out of addition, subtraction and multiplication, which do you do first?",
+        "C": "Multiplication is done before either addition or subtraction.",
+        "D": "What does order of operations mean? Try doing the calculation in different orders."
+      },
+      "isCheckout": true
+    },
+    {
+      "questionId": 104295,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b4199579-e26f-444b-b628-5ca6adcea16b.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Think about your order of operations. What operations are there here?",
+        "B": "What effect does putting in brackets have on the order?",
+        "C": "Brackets are done before multiplication, and multiplication is done before addition.",
+        "D": "Think about the order of operations. What does BIDMAS mean?"
+      },
+      "isCheckout": false
+    },
+    {
+      "questionId": 104302,
+      "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4f4a6356-8494-4cb2-86e8-05cfdb6d8398.jpg",
+      "correctAnswer": "A",
+      "explanations": {
+        "A": "Brackets are done before multiplication, and multiplication is done before addition.",
+        "B": "Think about your order of operations. What operations are there here?",
+        "C": "What effect does putting in brackets have on the order?",
+        "D": "What does order of operations mean? Try doing the calculation in different orders."
+      },
+      "isCheckout": true
+    }
+  ],
+  "categories": []
+}
