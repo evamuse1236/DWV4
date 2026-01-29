@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "../../../convex/_generated/api";
+import { useAuth } from "@/hooks/useAuth";
 import {
   Card,
   CardContent,
@@ -25,6 +26,7 @@ import {
   Clock,
   BookOpen,
 } from "lucide-react";
+import { extractImageSrc } from "@/lib/diagnostic";
 
 /**
  * Viva Queue Page
@@ -32,8 +34,13 @@ import {
  */
 export function VivaQueuePage() {
   const navigate = useNavigate();
+  const { user } = useAuth();
   const vivaRequests = useQuery(api.objectives.getVivaRequests);
   const updateStatus = useMutation(api.objectives.updateStatus);
+  const pendingUnlockRequests = useQuery(api.diagnostics.getPendingUnlockRequests);
+  const diagnosticFailures = useQuery(api.diagnostics.getFailuresForQueue);
+  const approveUnlock = useMutation(api.diagnostics.approveUnlock);
+  const denyUnlock = useMutation(api.diagnostics.denyUnlock);
 
   // Dialog state for confirmations
   const [confirmDialog, setConfirmDialog] = useState<{
@@ -43,6 +50,16 @@ export function VivaQueuePage() {
   }>({ isOpen: false, type: "approve", request: null });
   const [note, setNote] = useState("");
 
+  const [failureDialog, setFailureDialog] = useState<{
+    isOpen: boolean;
+    attemptId: string | null;
+  }>({ isOpen: false, attemptId: null });
+
+  const failureDetails = useQuery(
+    api.diagnostics.getAttemptDetails,
+    failureDialog.attemptId ? { attemptId: failureDialog.attemptId as any } : "skip"
+  );
+
   const openConfirmDialog = (type: "approve" | "reject", request: any) => {
     setConfirmDialog({ isOpen: true, type, request });
     setNote("");
@@ -51,6 +68,14 @@ export function VivaQueuePage() {
   const closeConfirmDialog = () => {
     setConfirmDialog({ isOpen: false, type: "approve", request: null });
     setNote("");
+  };
+
+  const openFailureDialog = (attemptId: string) => {
+    setFailureDialog({ isOpen: true, attemptId });
+  };
+
+  const closeFailureDialog = () => {
+    setFailureDialog({ isOpen: false, attemptId: null });
   };
 
   const handleConfirm = async () => {
@@ -71,6 +96,34 @@ export function VivaQueuePage() {
       hour: "numeric",
       minute: "2-digit",
     });
+  };
+
+  const handleApproveUnlockRequest = async (requestId: string) => {
+    if (!user?._id) return;
+    await approveUnlock({
+      requestId: requestId as any,
+      approvedBy: user._id as any,
+      expiresInMinutes: 1440,
+      attemptsGranted: 1,
+    });
+  };
+
+  const handleDenyUnlockRequest = async (requestId: string) => {
+    if (!user?._id) return;
+    await denyUnlock({
+      requestId: requestId as any,
+      deniedBy: user._id as any,
+    });
+  };
+
+  const handleApproveDiagnosticMastery = async () => {
+    const attempt = failureDetails?.attempt;
+    if (!attempt?.studentMajorObjectiveId) return;
+    await updateStatus({
+      studentMajorObjectiveId: attempt.studentMajorObjectiveId as any,
+      status: "mastered",
+    });
+    closeFailureDialog();
   };
 
   return (
@@ -142,6 +195,145 @@ export function VivaQueuePage() {
             </p>
           </CardContent>
         </Card>
+      </div>
+
+      {/* Diagnostic Unlock Requests */}
+      <div>
+        <h2 className="text-lg font-semibold mb-1">Diagnostic Unlock Requests</h2>
+        <p className="text-sm text-muted-foreground mb-4">
+          Approve a 24-hour, 1-attempt diagnostic window for students.
+        </p>
+
+        {pendingUnlockRequests && pendingUnlockRequests.length > 0 ? (
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            {pendingUnlockRequests.map((req: any) => (
+              <div
+                key={req._id}
+                className="rounded-xl border bg-card shadow-sm p-5"
+              >
+                <div className="flex items-center gap-3 mb-3">
+                  <Avatar className="h-10 w-10">
+                    <AvatarImage src={req.user?.avatarUrl} alt={req.user?.displayName} />
+                    <AvatarFallback className="bg-primary text-primary-foreground">
+                      {req.user?.displayName?.charAt(0) || "?"}
+                    </AvatarFallback>
+                  </Avatar>
+                  <div className="min-w-0 flex-1">
+                    <p className="font-medium truncate">{req.user?.displayName}</p>
+                    <p className="text-sm text-muted-foreground truncate">
+                      @{req.user?.username}
+                    </p>
+                  </div>
+                  <span className="text-xs text-muted-foreground">
+                    {formatDate(req.requestedAt)}
+                  </span>
+                </div>
+
+                <div className="flex items-center gap-2 mb-3">
+                  <BookOpen className="h-4 w-4 text-muted-foreground shrink-0" />
+                  <p className="font-medium text-sm truncate">
+                    {req.majorObjective?.title || req.majorObjectiveId}
+                  </p>
+                </div>
+
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    {req.domain?.name && <Badge variant="outline">{req.domain.name}</Badge>}
+                    {req.majorObjective?.curriculum && (
+                      <Badge variant="secondary">{req.majorObjective.curriculum}</Badge>
+                    )}
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => handleDenyUnlockRequest(req._id)}
+                      disabled={!user?._id}
+                    >
+                      Deny
+                    </Button>
+                    <Button
+                      size="sm"
+                      onClick={() => handleApproveUnlockRequest(req._id)}
+                      disabled={!user?._id}
+                    >
+                      Approve
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="text-center py-10">
+            <p className="text-muted-foreground">No pending unlock requests</p>
+            <p className="text-sm text-muted-foreground">
+              Students will appear here when they request a diagnostic.
+            </p>
+          </div>
+        )}
+      </div>
+
+      {/* Diagnostic Failures */}
+      <div>
+        <h2 className="text-lg font-semibold mb-1">Diagnostic Failures</h2>
+        <p className="text-sm text-muted-foreground mb-4">
+          Review what went wrong and run a directed viva.
+        </p>
+
+        {diagnosticFailures && diagnosticFailures.length > 0 ? (
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            {diagnosticFailures.map((row: any) => (
+              <div
+                key={row.attemptId}
+                className="group rounded-xl border bg-card shadow-sm p-5 hover:bg-accent/40 transition-colors cursor-pointer"
+                onClick={() => openFailureDialog(row.attemptId)}
+                title="View attempt details"
+              >
+                <div className="flex items-center gap-3 mb-3">
+                  <Avatar className="h-10 w-10">
+                    <AvatarImage src={row.user?.avatarUrl} alt={row.user?.displayName} />
+                    <AvatarFallback className="bg-primary text-primary-foreground">
+                      {row.user?.displayName?.charAt(0) || "?"}
+                    </AvatarFallback>
+                  </Avatar>
+                  <div className="min-w-0 flex-1">
+                    <p className="font-medium truncate">{row.user?.displayName}</p>
+                    <p className="text-sm text-muted-foreground truncate">
+                      @{row.user?.username}
+                    </p>
+                  </div>
+                  <span className="text-xs text-muted-foreground">
+                    {formatDate(row.attempt.submittedAt)}
+                  </span>
+                </div>
+
+                <div className="flex items-center gap-2 mb-3">
+                  <BookOpen className="h-4 w-4 text-muted-foreground shrink-0" />
+                  <p className="font-medium text-sm truncate">
+                    {row.majorObjective?.title}
+                  </p>
+                </div>
+
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    {row.domain?.name && <Badge variant="outline">{row.domain.name}</Badge>}
+                    <Badge variant="secondary">
+                      {row.attempt.score}/{row.attempt.questionCount}
+                    </Badge>
+                  </div>
+                  <span className="text-xs text-muted-foreground">
+                    {Math.round((row.attempt.durationMs || 0) / 1000)}s
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="text-center py-10">
+            <p className="text-muted-foreground">No diagnostic failures</p>
+          </div>
+        )}
       </div>
 
       {/* Queue */}
@@ -237,6 +429,111 @@ export function VivaQueuePage() {
           </p>
         </div>
       )}
+
+      {/* Diagnostic Failure Dialog */}
+      <Dialog open={failureDialog.isOpen} onOpenChange={(open) => !open && closeFailureDialog()}>
+        <DialogContent className="max-w-3xl">
+          <DialogHeader>
+            <DialogTitle>Diagnostic Attempt Review</DialogTitle>
+            <DialogDescription>
+              Review mistakes and decide whether to approve mastery.
+            </DialogDescription>
+          </DialogHeader>
+
+          {!failureDetails ? (
+            <div className="py-6 text-sm text-muted-foreground">Loading attempt…</div>
+          ) : (
+            <div className="space-y-4 py-2">
+              <div className="flex items-center justify-between gap-3">
+                <div className="min-w-0">
+                  <div className="font-medium truncate">
+                    {failureDetails.user?.displayName} — {failureDetails.majorObjective?.title}
+                  </div>
+                  <div className="text-sm text-muted-foreground truncate">
+                    {failureDetails.domain?.name} • {failureDetails.attempt.diagnosticModuleName}
+                  </div>
+                </div>
+                <div className="text-sm text-muted-foreground shrink-0">
+                  {failureDetails.attempt.score}/{failureDetails.attempt.questionCount} •{" "}
+                  {Math.round((failureDetails.attempt.durationMs || 0) / 1000)}s
+                </div>
+              </div>
+
+              <div className="space-y-3 max-h-[60vh] overflow-y-auto pr-2">
+                {failureDetails.attempt.results
+                  .filter((r: any) => !r.correct)
+                  .map((r: any, idx: number) => {
+                    const img = extractImageSrc(r.visualHtml);
+                    return (
+                      <div key={`${r.questionId}-${idx}`} className="rounded-lg border p-4">
+                        <div className="flex items-center justify-between gap-3 mb-2">
+                          <div className="font-medium text-sm">{r.topic}</div>
+                          <Badge variant="secondary">
+                            {r.chosenLabel} vs {r.correctLabel}
+                          </Badge>
+                        </div>
+
+                        {img && (
+                          <div className="mb-3 flex justify-center bg-muted/40 rounded-md p-2">
+                            <img
+                              src={img}
+                              alt="Diagnostic question"
+                              className="max-w-full h-auto rounded"
+                              loading="lazy"
+                            />
+                          </div>
+                        )}
+
+                        {r.misconception && (
+                          <div className="text-sm text-muted-foreground">
+                            <span className="font-medium text-foreground">Misconception:</span>{" "}
+                            {r.misconception}
+                          </div>
+                        )}
+                        {r.explanation && (
+                          <div className="text-sm text-muted-foreground mt-2">
+                            <span className="font-medium text-foreground">Explanation:</span>{" "}
+                            {r.explanation}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+
+                {failureDetails.attempt.results.filter((r: any) => !r.correct).length === 0 && (
+                  <div className="text-sm text-muted-foreground">
+                    No incorrect questions recorded for this attempt.
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
+
+          <DialogFooter>
+            <Button variant="outline" onClick={closeFailureDialog}>
+              Close
+            </Button>
+            <Button
+              variant="secondary"
+              onClick={() => {
+                if (failureDetails?.attempt?.userId) {
+                  navigate(`/admin/students/${failureDetails.attempt.userId}`);
+                }
+              }}
+              disabled={!failureDetails?.attempt?.userId}
+            >
+              Open Student
+            </Button>
+            <Button
+              onClick={handleApproveDiagnosticMastery}
+              disabled={!failureDetails?.attempt?.studentMajorObjectiveId}
+            >
+              <CheckCircle className="mr-1 h-4 w-4" />
+              Approve Mastery
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
 
       {/* Confirmation Dialog */}
       <Dialog open={confirmDialog.isOpen} onOpenChange={(open) => !open && closeConfirmDialog()}>

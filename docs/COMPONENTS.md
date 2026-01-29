@@ -96,12 +96,31 @@ Located in `src/components/paper/` - Custom "paper" aesthetic components.
 | Student project cards | `src/components/projects/StudentProjectCard.tsx` |
 | AI data entry chat | `src/components/projects/ProjectDataChat.tsx` |
 
+### Vision Board
+| Want to change... | Edit this file |
+|-------------------|----------------|
+| Board grid layout | `src/components/visionboard/VisionBoardGrid.tsx` |
+| Floating action button | `src/components/visionboard/VisionBoardFAB.tsx` |
+| Card creator sheet | `src/components/visionboard/CardCreatorSheet.tsx` |
+| Card detail/edit sheet | `src/components/visionboard/CardDetailSheet.tsx` |
+| Area filter bar | `src/components/visionboard/AreaFilter.tsx` |
+| Card type renderer | `src/components/visionboard/CardRenderer.tsx` |
+| Counter card | `src/components/visionboard/cards/CounterCard.tsx` |
+| Habits card | `src/components/visionboard/cards/HabitsCard.tsx` |
+| Image hero card | `src/components/visionboard/cards/ImageHeroCard.tsx` |
+| Journal card | `src/components/visionboard/cards/JournalCard.tsx` |
+| Mini tile card | `src/components/visionboard/cards/MiniTileCard.tsx` |
+| Motivation card | `src/components/visionboard/cards/MotivationCard.tsx` |
+| Progress card | `src/components/visionboard/cards/ProgressCard.tsx` |
+| Streak card | `src/components/visionboard/cards/StreakCard.tsx` |
+| Dynamic Phosphor icons | `src/components/visionboard/PhIcon.tsx` |
+| Grid layout logic | `src/components/visionboard/layout.ts` |
+
 ### Other
 | Want to change... | Edit this file |
 |-------------------|----------------|
 | Trust jar visualization | `src/components/trustjar/TrustJar.tsx` |
 | Task assigner | `src/components/student/TaskAssigner.tsx` |
-| User settings modal | `src/components/settings/UserSettingsModal.tsx` |
 
 ## Pages
 
@@ -111,10 +130,14 @@ All pages are in `src/pages/`.
 | Page | File |
 |------|------|
 | Dashboard | `student/StudentDashboard.tsx` |
+| Emotion check-in | `student/EmotionCheckInPage.tsx` |
 | Sprint view | `student/SprintPage.tsx` |
 | Reading library | `student/ReadingPage.tsx` |
 | Deep work | `student/DeepWorkPage.tsx` |
-| Skill tree | `student/SkillTreePage.tsx` |
+| Domain detail | `student/DomainDetailPage.tsx` |
+| Diagnostic quiz | `student/DiagnosticPage.tsx` |
+| Trust jar | `student/TrustJarPage.tsx` |
+| Vision board | `student/VisionBoardPage.tsx` |
 
 ### Admin Pages
 | Page | File |
@@ -123,25 +146,34 @@ All pages are in `src/pages/`.
 | Students list | `admin/StudentsPage.tsx` |
 | Student detail | `admin/StudentDetailPage.tsx` |
 | Sprints | `admin/SprintsPage.tsx` |
+| Projects | `admin/ProjectsPage.tsx` |
+| Project detail | `admin/ProjectDetailPage.tsx` |
 | Objectives | `admin/ObjectivesPage.tsx` |
 | Books | `admin/BooksPage.tsx` |
-| Viva queue | `admin/VivaPage.tsx` |
+| Viva queue | `admin/VivaQueuePage.tsx` |
+| Presentation queue | `admin/PresentationQueuePage.tsx` |
+| Trust jar (admin) | `admin/TrustJarPage.tsx` |
 
 ## Hooks
 
 | Hook | File | Purpose |
 |------|------|---------|
-| useAuth | `src/hooks/useAuth.tsx` | Authentication state |
-| useDelayedLoading | `src/hooks/useDelayedLoading.ts` | Prevent skeleton flash |
-| useMobile | `src/hooks/use-mobile.tsx` | Mobile detection |
-| useClickSound | `src/hooks/useClickSound.ts` | Click sound effects |
+| useAuth | `src/hooks/useAuth.tsx` | Authentication state + login/logout |
+| useVisionBoard | `src/hooks/useVisionBoard.ts` | Vision board CRUD + card interactions |
+| useDelayedLoading | `src/hooks/useDelayedLoading.ts` | Prevent skeleton flash (200ms) |
+| useMobile | `src/hooks/use-mobile.tsx` | Mobile viewport detection |
 
 ## Utilities
 
 | File | Purpose |
 |------|---------|
-| `src/lib/status-utils.ts` | Status badge colors/classes |
+| `src/lib/status-utils.ts` | Status badge configs for objectives, goals, books |
 | `src/lib/utils.ts` | General utilities (cn, etc.) |
+| `src/lib/diagnostic.ts` | Diagnostic quiz types, data loading, question selection |
+| `src/lib/domain-utils.tsx` | Domain SVG icons, colors, descriptions |
+| `src/lib/emotions.ts` | Emotion category/subcategory helpers |
+| `src/lib/skill-tree-utils.ts` | Skill tree layout calculations |
+| `src/lib/horizontal-tree-utils.ts` | Horizontal tree layout calculations |
 
 ## Styling
 
@@ -162,9 +194,20 @@ All database code is in `convex/`.
 | Users | `users.ts` |
 | Sprints | `sprints.ts` |
 | Goals | `goals.ts` |
+| Habits | `habits.ts` |
 | Objectives | `objectives.ts` |
+| Activities | `activities.ts` |
+| Progress tracking | `progress.ts` |
 | Books | `books.ts` |
 | Emotions | `emotions.ts` |
 | Domains | `domains.ts` |
-| Progress tracking | `progress.ts` |
+| Projects | `projects.ts` |
+| Project links | `projectLinks.ts` |
+| Project reflections | `projectReflections.ts` |
+| Trust jar | `trustJar.ts` |
+| Vision board | `visionBoard.ts` |
+| Diagnostics | `diagnostics.ts` |
+| Chat logs | `chatLogs.ts` |
+| Migrations | `migrations.ts` |
+| Seed data | `seed.ts` |
 | Schema | `schema.ts` |

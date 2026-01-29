@@ -13,14 +13,14 @@ Deep Work Tracker is a student-facing learning companion with an admin coaching 
   | ConvexReactClient + useQuery/useMutation/useAction
   v
 [Convex backend]
-  schema: convex/schema.ts (23 tables)
+  schema: convex/schema.ts (26 tables)
   functions: convex/*.ts (queries/mutations)
   actions: convex/ai.ts (external AI providers)
   |
   v
 [Convex DB + external AI]
   tables + indexes
-  Groq / OpenRouter (AI actions)
+  Groq (Kimi K2, Llama 8B) / OpenRouter (fallback)
 ```
 
 Why this shape:
@@ -46,14 +46,15 @@ DW/
       trustjar/                 # TrustJar (Matter.js physics)
       skill-tree/               # SkillTreeCanvas, nodes, connections
       deepwork/                 # DomainCard, LearningObjectiveCard
-    hooks/                      # useAuth, use-mobile
+      visionboard/              # VisionBoardGrid, FAB, CardCreator, 8 card types
+    hooks/                      # useAuth, useVisionBoard, useDelayedLoading, use-mobile
     pages/
       student/                  # Student routes
       admin/                    # Admin routes
     lib/                        # Domain/status/emotion helpers
     types/                      # Temporary types (pre-Convex generated types)
   convex/
-    schema.ts                   # Database schema (23 tables)
+    schema.ts                   # Database schema (26 tables)
     auth.ts                     # Auth + sessions
     users.ts                    # Student/admin queries
     emotions.ts                 # Check-in data
@@ -70,8 +71,14 @@ DW/
     projectReflections.ts       # Project reflections
     trustJar.ts                 # Trust jar state
     ai.ts                       # AI actions (goal chat, book buddy, project data)
-    seed.ts                     # Initial data seeding
+    visionBoard.ts              # Vision board areas + cards
+    diagnostics.ts              # Diagnostic unlock/attempt/mastery
+    chatLogs.ts                 # AI chat logging
+    migrations.ts               # One-time data migrations
+    seed.ts                     # Initial data seeding (2841 lines)
+  scripts/                      # Offline curriculum data tools
   docs/                         # Architecture + data model + patterns
+    CODEMAPS/                   # High-level architecture maps (this system)
 ```
 
 ## Runtime entry points
@@ -96,7 +103,9 @@ DW/
 | `/deep-work` | `src/pages/student/DeepWorkPage.tsx` | Domain list |
 | `/deep-work/:domainId` | `src/pages/student/DomainDetailPage.tsx` | Objectives + activities |
 | `/reading` | `src/pages/student/ReadingPage.tsx` | Library + Book Buddy |
-| `/trust-jar` | `src/pages/student/TrustJarPage.tsx` | Full-screen jar view (outside layout) |
+| `/trust-jar` | `src/pages/student/TrustJarPage.tsx` | Full-screen jar view |
+| `/deep-work/diagnostic/:majorObjectiveId` | `src/pages/student/DiagnosticPage.tsx` | Diagnostic quiz |
+| `/vision-board` | `src/pages/student/VisionBoardPage.tsx` | Personal vision board |
 
 ### Admin (role: admin)
 | Path | Component | Notes |
@@ -143,6 +152,16 @@ DW/
   - Why: Visual, physics-based shared reward mechanism.
   - Uses Matter.js for physics and `api.trustJar` queries/mutations for state.
 
+- Vision Board (`src/pages/student/VisionBoardPage.tsx`, `src/hooks/useVisionBoard.ts`)
+  - Why: Personal goal visualization with 8 card types (counter, streak, habits, progress, journal, etc.).
+  - Uses `api.visionBoard` queries/mutations. Auto-seeds 5 preset life areas on first visit.
+  - See [docs/CODEMAPS/vision-board.md](CODEMAPS/vision-board.md) for full details.
+
+- Diagnostics (`src/pages/student/DiagnosticPage.tsx`, `src/lib/diagnostic.ts`)
+  - Why: Fast-track mastery proof. Students take quizzes that auto-complete all work if passed.
+  - Uses `api.diagnostics` for unlock/attempt lifecycle. Questions loaded from `/diagnostic-data.json`.
+  - See [docs/CODEMAPS/diagnostics.md](CODEMAPS/diagnostics.md) for full details.
+
 ## Backend design (why it is organized this way)
 
 - Domain-based files in `convex/` align to UI features (emotions, sprints, goals, projects).
@@ -165,3 +184,4 @@ DW/
 - AI features are actions and require Convex environment variables (`GROQ_API_KEY`, `OPENROUTER_API_KEY`).
 
 See `docs/DATA-MODEL.md` and `docs/PATTERNS.md` for schema and coding conventions.
+See `docs/CODEMAPS/INDEX.md` for detailed architecture maps of each subsystem.

@@ -14,6 +14,7 @@ import { EmotionCheckInPage } from "./pages/student/EmotionCheckInPage";
 import { SprintPage } from "./pages/student/SprintPage";
 import { DeepWorkPage } from "./pages/student/DeepWorkPage";
 import { DomainDetailPage } from "./pages/student/DomainDetailPage";
+import { DiagnosticPage } from "./pages/student/DiagnosticPage";
 import { ReadingPage } from "./pages/student/ReadingPage";
 import { TrustJarPage } from "./pages/student/TrustJarPage";
 import { VisionBoardPage } from "./pages/student/VisionBoardPage";
@@ -70,6 +71,7 @@ function App() {
               <Route path="/sprint" element={<SprintPage />} />
               <Route path="/deep-work" element={<DeepWorkPage />} />
               <Route path="/deep-work/:domainId" element={<DomainDetailPage />} />
+              <Route path="/deep-work/diagnostic/:majorObjectiveId" element={<DiagnosticPage />} />
               <Route path="/reading" element={<ReadingPage />} />
               <Route path="/trust-jar" element={<TrustJarPage />} />
               <Route path="/vision-board" element={<VisionBoardPage />} />

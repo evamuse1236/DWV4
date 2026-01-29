@@ -1701,7 +1701,7 @@ export const seedBrilliantCurriculum = mutation({
     // Supports MYP Module 5 (Ratios & Rates) and Module 4 (Integers)
 
     // Brilliant MYP Module 1: Percentages (Interactive Practice)
-    await insertBrilliantMajor("Percentages (Interactive Practice)", "Brilliant MYP", [
+    await insertBrilliantMajor("Percentages", "Brilliant MYP", [
       {
         title: "Percentages & Fractions",
         description: "Interactive exercises: intro to percentages, tenths, hundredths, decimals.",
@@ -1738,7 +1738,7 @@ export const seedBrilliantCurriculum = mutation({
     ]);
 
     // Brilliant MYP Module 2: Integers (Interactive Practice)
-    await insertBrilliantMajor("Integers (Interactive Practice)", "Brilliant MYP", [
+    await insertBrilliantMajor("Integers", "Brilliant MYP", [
       {
         title: "Introducing Negatives",
         description: "Interactive exercises: positive/negative numbers, number line, ordering, absolute value.",
@@ -1776,7 +1776,7 @@ export const seedBrilliantCurriculum = mutation({
 
     // Brilliant MYP Module 3: Ratios & Unit Rates (Interactive Practice)
     // Supports MYP Module 5: Ratios & Rates
-    await insertBrilliantMajor("Ratios & Unit Rates (Interactive Practice)", "Brilliant MYP", [
+    await insertBrilliantMajor("Ratios & Unit Rates", "Brilliant MYP", [
       {
         title: "Setting Up Ratios",
         description: "Interactive exercises: setting up ratios, scaling up/down, equivalent ratios, batches, scale factors.",
@@ -1814,7 +1814,7 @@ export const seedBrilliantCurriculum = mutation({
 
     // Brilliant MYP Module 4: Proportional Relationships (Interactive Practice)
     // Supports MYP Module 5: Ratios & Rates + Module 6: Algebra
-    await insertBrilliantMajor("Proportional Relationships (Interactive Practice)", "Brilliant MYP", [
+    await insertBrilliantMajor("Proportional Relationships", "Brilliant MYP", [
       {
         title: "Rates & Comparisons",
         description: "Interactive exercises: unit cost, finding unit rate, comparing rates.",
@@ -1853,7 +1853,7 @@ export const seedBrilliantCurriculum = mutation({
 
     // Brilliant MYP Module 5: Coordinate Plane (Interactive Practice)
     // Supports MYP Module 7: Geometry
-    await insertBrilliantMajor("Coordinate Plane (Interactive Practice)", "Brilliant MYP", [
+    await insertBrilliantMajor("Coordinate Plane", "Brilliant MYP", [
       {
         title: "Points & Quadrants",
         description: "Interactive exercises: coordinates, plotting points, all four quadrants, negative coordinates.",
@@ -1911,7 +1911,7 @@ export const seedBrilliantCurriculum = mutation({
 
     // Brilliant MYP Module 6: Coordinate Geometry (Interactive Practice)
     // Supports MYP Module 7: Geometry
-    await insertBrilliantMajor("Coordinate Geometry (Interactive Practice)", "Brilliant MYP", [
+    await insertBrilliantMajor("Coordinate Geometry", "Brilliant MYP", [
       {
         title: "Distance & Separation",
         description: "Interactive exercises: separation between points, comparing distance, distance ranges, estimation.",
@@ -2000,7 +2000,7 @@ export const seedBrilliantCurriculum = mutation({
 
     // Brilliant MYP Module 7: Solving Equations (Interactive Practice)
     // Supports MYP Module 6: Algebra
-    await insertBrilliantMajor("Solving Equations (Interactive Practice)", "Brilliant MYP", [
+    await insertBrilliantMajor("Solving Equations", "Brilliant MYP", [
       {
         title: "Variables & Substitution",
         description: "Interactive exercises: finding unknowns, building expressions, solving by substitution.",
@@ -2122,7 +2122,7 @@ export const seedBrilliantCurriculum = mutation({
 
     // Brilliant MYP Module 8: Geometry & Measurement (Interactive Practice)
     // Supports MYP Module 7: Geometry
-    await insertBrilliantMajor("Geometry & Measurement (Interactive Practice)", "Brilliant MYP", [
+    await insertBrilliantMajor("Geometry & Measurement", "Brilliant MYP", [
       {
         title: "Angles & Perimeter",
         description: "Interactive exercises: polygon angles, parallel lines, triangle sides, perimeters, circumference, arc length.",
@@ -2184,7 +2184,7 @@ export const seedBrilliantCurriculum = mutation({
 
     // Brilliant MYP Module 9: Trigonometry (Interactive Practice)
     // Stretch content beyond core MYP
-    await insertBrilliantMajor("Trigonometry (Interactive Practice)", "Brilliant MYP", [
+    await insertBrilliantMajor("Trigonometry", "Brilliant MYP", [
       {
         title: "Trigonometric Ratios",
         description: "Interactive exercises: defining angles, sine/cosine, unit circle, solving right triangles, law of cosines/sines.",
@@ -2232,7 +2232,7 @@ export const seedBrilliantCurriculum = mutation({
 
     // Brilliant MYP Module 10: Visual Algebra (Interactive Practice)
     // Supports MYP Module 6: Algebra
-    await insertBrilliantMajor("Visual Algebra (Interactive Practice)", "Brilliant MYP", [
+    await insertBrilliantMajor("Visual Algebra", "Brilliant MYP", [
       {
         title: "Linear Expressions & Patterns",
         description: "Interactive exercises: describing patterns, building expressions, constant terms, linear expressions.",
@@ -2344,7 +2344,7 @@ export const seedBrilliantCurriculum = mutation({
     // Supports PYP Module 3 (Fractions)
 
     // Brilliant PYP Module 1: Fractions (Interactive Practice)
-    await insertBrilliantMajor("Fractions (Interactive Practice)", "Brilliant PYP", [
+    await insertBrilliantMajor("Fractions", "Brilliant PYP", [
       {
         title: "Visualize & Simplify Fractions",
         description: "Interactive exercises: visualizing fractions, equivalent fractions, simplifying.",
@@ -2388,6 +2388,444 @@ export const seedBrilliantCurriculum = mutation({
         { title: "Products of Unit Fractions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/expressing-fouf/" },
         { title: "Fraction of Any Fraction", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/fractions-of-fractions-2/" },
         { title: "Multiplying Fractions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/multiplying-fractions/multiplying-fractions/" },
+        ],
+      },
+    ]);
+
+    // === Everyday Statistics (Brilliant MYP) ===
+    await insertBrilliantMajor("Everyday Statistics", "Brilliant MYP", [
+      {
+        title: "Calculate and interpret the mean",
+        description: "Interactive exercises: mean as average, balance point, symmetric distributions, finding totals.",
+        activities: [
+          { title: "Means", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/means/ds-mean-0" },
+          { title: "Balancing", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/means/edv-mean-7" },
+          { title: "Distributions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/means/ds-distributions" },
+          { title: "Mean Values", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/means/edv-mean-groups-7" },
+          { title: "Finding Totals", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/means/ds-balance-5" },
+          { title: "Predicting Means", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/more-means/ds-balance-4" },
+          { title: "Rebalancing", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/more-means/edv-mean-6" },
+          { title: "Asymmetric Distributions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/more-means/ds-balance-3" },
+          { title: "Means of Lists", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/more-means/edv-mean-groups-8" },
+          { title: "Splitting", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/adding-data/edv-mean-groups-9" },
+          { title: "Finding Means", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/adding-data/edv-mean-groups" },
+          { title: "Adding a Point", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/adding-data/edv-mean-groups-3" },
+          { title: "Updating Means", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/adding-data/ds-adding-lists" },
+        ],
+      },
+      {
+        title: "Find and compare the median",
+        description: "Interactive exercises: median vs mean, splitting data, comparing central tendencies.",
+        activities: [
+          { title: "Comparisons", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/median/ds-median-1" },
+          { title: "Median", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/median/ds-median-2" },
+          { title: "Finding Medians", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/median/ds-median-3" },
+          { title: "Splitting", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/median/ds-median-4" },
+          { title: "Medians of Lists", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/median/ds-median-lists" },
+          { title: "Adding a Point", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/more-medians/ds-median-5" },
+          { title: "Comparing Median and Mean", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/more-medians/ds-median-6" },
+          { title: "Modes", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/more-medians/ds-mode" },
+          { title: "Middle 50%", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/more-medians/ds-quartiles-1" },
+          { title: "Segmenting Data", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/more-medians/ds-quartiles-2" },
+        ],
+      },
+      {
+        title: "Calculate quartiles and IQR",
+        description: "Interactive exercises: quartiles, interquartile range, data segmentation.",
+        activities: [
+          { title: "Quartiles", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/quartiles/ds-quartiles-3" },
+          { title: "Interquartile Range", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/quartiles/ds-quartiles-4" },
+          { title: "Quartiles of Lists", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/quartiles/ds-median-lists-2" },
+          { title: "Boxplots", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/quartiles/ds-quartiles-6" },
+        ],
+      },
+      {
+        title: "Read and create boxplots",
+        description: "Interactive exercises: box and whisker plots, range, comparing distributions.",
+        activities: [
+          { title: "Adding Whiskers", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/whiskers/adding-whiskers" },
+          { title: "Matching the Boxplot", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/whiskers/matching-boxplots" },
+          { title: "The Range", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/whiskers/the-range" },
+          { title: "Comparing Distributions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/whiskers/comparing-distribution" },
+        ],
+      },
+      {
+        title: "Identify and analyze outliers",
+        description: "Interactive exercises: outlier detection, IQR rule, effect on mean and median.",
+        activities: [
+          { title: "Outliers", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/outliers/outliers-balance" },
+          { title: "Skewing the Mean", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/outliers/skewing-the-mean" },
+          { title: "Defining Outliers", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/outliers/defining-outliers" },
+          { title: "Identifying Outliers", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/outliers/identifying-outliers" },
+          { title: "Outside the Whiskers", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-math/outliers/outside-the-whiskers" },
+        ],
+      },
+    ]);
+
+    // === Exponents and Radicals (Brilliant MYP) ===
+    await insertBrilliantMajor("Exponents and Radicals", "Brilliant MYP", [
+      {
+        title: "Understand bases and exponents",
+        description: "Interactive exercises: multiplication patterns, bases, powers of 2/3/10, number lines.",
+        activities: [
+          { title: "Multiplication Patterns", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/exponents-and-radicals/exponent-basics/exponent-basics-1" },
+          { title: "Exponents", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/exponents-and-radicals/exponent-basics/exponent-basics-2" },
+          { title: "Bases", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/exponents-and-radicals/exponent-basics/exponent-basics-3" },
+          { title: "Special Bases and Exponents", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/exponents-and-radicals/exponent-basics/exponent-basics-4" },
+          { title: "Base 10", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/exponents-and-radicals/exponent-basics/exponent-basics-5" },
+          { title: "Powers of 2 on the Number Line", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/exponents-and-radicals/exponents-and-number-line/exponents-number-line-1" },
+          { title: "Reasoning with Powers of 2", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/exponents-and-radicals/exponents-and-number-line/exponents-number-line-2" },
+          { title: "Powers of 3 on the Number Line", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/exponents-and-radicals/exponents-and-number-line/exponents-number-line-3" },
+          { title: "Powers of 10 on Number Lines", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/exponents-and-radicals/exponents-and-number-line/exponents-number-line-4" },
+          { title: "Estimating with Powers of 10", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/exponents-and-radicals/exponents-and-number-line/exponents-number-line-5" },
+          { title: "Millionaires and Billionaires", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/exponents-and-radicals/exponents-and-number-line/exponent-number-line-7" },
+          { title: "Power Problems on Number Lines", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/exponents-and-radicals/exponents-and-number-line/exponents-number-line-6" },
+        ],
+      },
+      {
+        title: "Calculate squares and square roots",
+        description: "Interactive exercises: squaring, square roots, inverse operations, negatives.",
+        activities: [
+          { title: "Squaring", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/exponents-and-radicals/squares-and-roots/squares-and-roots-1" },
+          { title: "Squares on the Number Line", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/exponents-and-radicals/squares-and-roots/squares-and-roots-2" },
+          { title: "Square Roots", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/exponents-and-radicals/squares-and-roots/squares-and-roots-3" },
+          { title: "Square Roots of Non-Squares", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/exponents-and-radicals/squares-and-roots/squares-and-roots-4" },
+          { title: "The Inverse of Squaring", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/exponents-and-radicals/squares-and-roots/squares-and-roots-5" },
+          { title: "Square Roots and Negatives", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/exponents-and-radicals/squares-and-roots/squares-and-roots-6" },
+        ],
+      },
+      {
+        title: "Work with cubes and higher-order roots",
+        description: "Interactive exercises: cubes, cube roots, higher-order roots, inverse operations.",
+        activities: [
+          { title: "Cubes", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/exponents-and-radicals/higher-powers-and-roots/higher-powers-1" },
+          { title: "Reasoning with Cubes", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/exponents-and-radicals/higher-powers-and-roots/higher-powers-3c" },
+          { title: "Cubes on The Number Line", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/exponents-and-radicals/higher-powers-and-roots/higher-powers-2" },
+          { title: "Cube Roots", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/exponents-and-radicals/higher-powers-and-roots/higher-powers-6" },
+          { title: "Cube Roots as Inverse", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/exponents-and-radicals/higher-powers-and-roots/higher-powers-8" },
+          { title: "Higher Order Roots", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/exponents-and-radicals/higher-powers-and-roots/higher-powers-7" },
+        ],
+      },
+    ]);
+
+    // === Number Theory (Brilliant MYP) ===
+    await insertBrilliantMajor("Number Theory", "Brilliant MYP", [
+      {
+        title: "Apply divisibility rules and prime factorization",
+        description: "Interactive exercises: last digits, divisibility shortcuts, factor trees, primes, counting divisors.",
+        activities: [
+          { title: "Last Digits", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/introduction-86/last-digits" },
+          { title: "Secret Messages", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/introduction-86/secret-messages" },
+          { title: "Rainbow Cycles", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/introduction-86/rainbow-cycles" },
+          { title: "Divisibility Shortcuts", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/factorization/divisibility-shortcuts-i" },
+          { title: "More Divisibility Shortcuts", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/factorization/divisibility-shortcuts-ii" },
+          { title: "Divisibility by 9 and 3", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/factorization/divisibility-by-9-and" },
+          { title: "Last Digits", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/factorization/last-digits-2" },
+          { title: "Arithmetic with Remainders", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/factorization/arithmetic-with-remainders" },
+          { title: "Digital Roots", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/factorization/digital-roots" },
+          { title: "Factor Trees", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/factorization/prime-factor-trees" },
+          { title: "Prime Factorization", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/factorization/prime-factorization" },
+          { title: "Factoring Factorials", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/factorization/factoring-factorials" },
+          { title: "Counting Divisors", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/factorization/counting-divisors" },
+          { title: "100 Doors", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/factorization/100-doors" },
+          { title: "How Many Prime Numbers Are There?", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/factorization/how-many-prime-numbers-are-there" },
+        ],
+      },
+      {
+        title: "Find GCD and LCM",
+        description: "Interactive exercises: greatest common divisor, least common multiple, billiard tables, number jumping.",
+        activities: [
+          { title: "100 Doors Revisited", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/gcd-and-lcm-2/100-doors-revisited" },
+          { title: "The LCM", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/gcd-and-lcm-2/the-lcm" },
+          { title: "Billiard Tables", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/gcd-and-lcm-2/billiard-tables" },
+          { title: "The GCD", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/gcd-and-lcm-2/the-gcd" },
+          { title: "Dots on the Diagonal", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/gcd-and-lcm-2/dots-on-the-diagonal" },
+          { title: "Number Jumping (I)", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/gcd-and-lcm-2/number-jumping-i" },
+          { title: "Number Jumping (II)", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/gcd-and-lcm-2/number-jumping-ii" },
+          { title: "Number Jumping (III)", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/gcd-and-lcm-2/number-jumping-iii" },
+          { title: "Relating LCM and GCD", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/gcd-and-lcm-2/relating-gcd-and-lcm" },
+          { title: "Billiard Tables Revisited (I)", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/gcd-and-lcm-2/billiard-tables-revisited-i" },
+          { title: "Billiard Tables Revisited (II)", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/gcd-and-lcm-2/billiard-tables-revisited-ii" },
+        ],
+      },
+      {
+        title: "Use modular arithmetic",
+        description: "Interactive exercises: modular congruence, star drawing, Fermat's theorem, totients.",
+        activities: [
+          { title: "Times and Dates", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/modular-arithmetic-i/times-and-dates" },
+          { title: "Modular Congruence", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/modular-arithmetic-i/modular-congruence" },
+          { title: "Modular Arithmetic", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/modular-arithmetic-i/modular-arithmetic" },
+          { title: "Divisibility by 11", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/modular-arithmetic-i/divisibility-by" },
+          { title: "Star Drawing (I)", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/modular-arithmetic-i/star-drawing-i" },
+          { title: "Star Drawing (II)", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/modular-arithmetic-i/star-drawing-ii" },
+          { title: "Star Drawing (III)", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/modular-arithmetic-i/star-drawing-iii" },
+          { title: "Die-Hard Decanting (I)", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/modular-arithmetic-i/die-hard-decanting-i" },
+          { title: "Die-Hard Decanting (II)", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/modular-arithmetic-i/die-hard-decanting-ii" },
+          { title: "Additive Cycles", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/modular-arithmetic-ii/additive-cycles" },
+          { title: "Modular Multiplicative Inverses", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/modular-arithmetic-ii/modular-multiplicative-inverses" },
+          { title: "Multiplicative Cycles", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/modular-arithmetic-ii/multiplicative-cycles-and-eulers-theorem" },
+          { title: "Fermat's Little Theorem", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/modular-arithmetic-ii/fermats-little-theorem" },
+          { title: "Totients", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/modular-arithmetic-ii/totients" },
+          { title: "Last Digits Revisited", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/modular-arithmetic-ii/last-digits-revisited" },
+          { title: "Perfect Shuffling", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/modular-arithmetic-ii/perfect-shuffling" },
+        ],
+      },
+      {
+        title: "Explore infinity concepts",
+        description: "Interactive exercises: counting to infinity, Hilbert's Hotel, multiple infinities.",
+        activities: [
+          { title: "Counting to Infinity", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/exploring-infinity-2/counting-to-infinity" },
+          { title: "Multiple Infinities", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/exploring-infinity-2/multiple-infinities" },
+          { title: "Hilbert's Hotel", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/exploring-infinity-2/hilberts-hotel" },
+          { title: "Infinitely Large", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/exploring-infinity-2/infinitely-large" },
+        ],
+      },
+      {
+        title: "Work with number bases and binary",
+        description: "Interactive exercises: binary, hexadecimal, exploding dots, base conversions.",
+        activities: [
+          { title: "The Invention of Number Bases", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/number-bases/invention-number-bases" },
+          { title: "Introducing Binary", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/number-bases/how-binary-works" },
+          { title: "Binary on Computers", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/number-bases/binary-computers" },
+          { title: "Exploding Dots", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/binary-and-other-bases/exploding-dots" },
+          { title: "Binary", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/binary-and-other-bases/binary" },
+          { title: "Binary Operations", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/binary-and-other-bases/binary-operations" },
+          { title: "Perfect Shuffles", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/binary-and-other-bases/perfect-shuffles" },
+          { title: "Hexadecimal", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/binary-and-other-bases/hexadecimal" },
+          { title: "Hexadecimal Operations", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/binary-and-other-bases/hexadecimal-operations" },
+          { title: "An Unusual Computer Base", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/binary-and-other-bases/unusual-base" },
+        ],
+      },
+      {
+        title: "Solve digit and divisibility problems",
+        description: "Interactive exercises: cryptograms, digital roots, repeating decimals, divisibility in other bases.",
+        activities: [
+          { title: "Divisibility", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/digits-and-divisibility/divisibility" },
+          { title: "Last Digits Rules", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/digits-and-divisibility/last-digits-part-i" },
+          { title: "More Divisibility Rules", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/digits-and-divisibility/last-digits-part-ii" },
+          { title: "Cryptograms Solved by Divisibility", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/digits-and-divisibility/cryptograms-3" },
+          { title: "Cryptogram Addition Puzzles", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/digits-and-divisibility/more-cryptograms" },
+          { title: "Cryptogram Variety Pack", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/digits-and-divisibility/even-more-cryptograms" },
+          { title: "Factorial Refresher", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/decimal-expansions-in-base-10/factorial-refresher2" },
+          { title: "Calculation Tricks", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/decimal-expansions-in-base-10/calculation-tricks" },
+          { title: "Digital Roots", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/decimal-expansions-in-base-10/digital-roots-2" },
+          { title: "Terminating Decimals", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/decimal-expansions-in-base-10/terminating-decimals" },
+          { title: "Repeating Decimals", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/decimal-expansions-in-base-10/repeating-decimals" },
+          { title: "Repeating Patterns", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/decimal-expansions-in-base-10/repeating-patterns" },
+          { title: "Problem Solving", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/decimal-expansions-in-base-10/problem-solving-8" },
+          { title: "Hexadecimal Divisibility Shortcuts (I)", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/divisibility-in-other-bases/hexadecimal-divisibility-shortcuts-i" },
+          { title: "Hexadecimal Divisibility Shortcuts (II)", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/divisibility-in-other-bases/hexadecimal-divisibility-shortcuts-ii" },
+          { title: "Hexadecimal Divisibility Shortcuts (III)", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/divisibility-in-other-bases/hexadecimal-divisibility-shortcuts-iii" },
+          { title: "Divisibility Shortcuts in Other Bases", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/divisibility-in-other-bases/divisibility-shortcuts-in-other-bases" },
+          { title: "Hexadecimal Last Digits", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/divisibility-in-other-bases/hexadecimal-last-digits" },
+          { title: "Last Digits in Other Bases", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/divisibility-in-other-bases/last-digits-in-other-bases" },
+        ],
+      },
+    ]);
+
+    // === Linear Relationships (Brilliant MYP) ===
+    await insertBrilliantMajor("Linear Relationships", "Brilliant MYP", [
+      {
+        title: "Identify linear vs nonlinear relationships",
+        description: "Interactive exercises: points on a line, constant change, decreasing rates, nonlinear detection.",
+        activities: [
+          { title: "Points on a Line", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/constant-change/points-on-a-line" },
+          { title: "Increasing by One", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/constant-change/change-for-one" },
+          { title: "Removing Objects", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/constant-change/removing-objects" },
+          { title: "Decreasing Rates", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/constant-change/decreasing-functions" },
+          { title: "Nonlinear Relationships", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/constant-change/nonlinear-functions" },
+        ],
+      },
+      {
+        title: "Find and use rates of change",
+        description: "Interactive exercises: rates from points, slope computation, initial conditions.",
+        activities: [
+          { title: "Finding Rates of Change", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/making-linear-predictions/finding-rates-of-change" },
+          { title: "Rates from Points", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/making-linear-predictions/rates-from-points" },
+          { title: "Initial Conditions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/making-linear-predictions/finding-initial-condition" },
+          { title: "Using Two Points", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/making-linear-predictions/using-two-points" },
+          { title: "Change per One", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/computing-slope/vertical-change" },
+          { title: "Identifying Slopes", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/computing-slope/fractional-slopes" },
+          { title: "Graph a Line", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/computing-slope/graph-a-line" },
+          { title: "Computing Slopes", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/computing-slope/computing-slopes" },
+          { title: "Coordinates to Slope", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/computing-slope/coordinates-to-slope" },
+          { title: "Putting it all together", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/computing-slope/slope-complete-computation" },
+        ],
+      },
+      {
+        title: "Write and graph linear equations",
+        description: "Interactive exercises: slope-intercept form, point-slope form, graphing, interpreting functions.",
+        activities: [
+          { title: "Proportional Relationships", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/writing-linear-expressions/writing-linear-functions" },
+          { title: "Base Fees", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/writing-linear-expressions/base-fees" },
+          { title: "Graphing Linear Functions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/writing-linear-expressions/graphing-linear-functions-2" },
+          { title: "Finding the Constant Term", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/writing-linear-expressions/find-constant-term" },
+          { title: "Finding the Linear Term", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/writing-linear-expressions/find-linear-term-4" },
+          { title: "Interpreting a Function", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/writing-linear-expressions/interpret-linear-function" },
+          { title: "Writing the Whole Expression", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/writing-linear-expressions/find-both-terms" },
+          { title: "Shifting a Line", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/equations-of-lines/find-b" },
+          { title: "Slope of a Line", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/equations-of-lines/find-mx" },
+          { title: "Through a Point", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/equations-of-lines/through-a-point" },
+          { title: "Through Two Points", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/equations-of-lines/through-2-points" },
+          { title: "Point-Slope Form", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/equations-of-lines/point-slope-form" },
+          { title: "Using Point-Slope Form", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/equations-of-lines/using-point-slope-form" },
+          { title: "Equations in Point-Slope Form", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/linear-functions/equations-of-lines/equations-in-point-slope-form" },
+        ],
+      },
+    ]);
+
+    // === Coordinate Transformations (Brilliant MYP) ===
+    await insertBrilliantMajor("Coordinate Transformations", "Brilliant MYP", [
+      {
+        title: "Perform translations on the coordinate plane",
+        description: "Interactive exercises: translating points and shapes, combining and undoing translations.",
+        activities: [
+          { title: "Translating Points", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/translations/translating-points-2" },
+          { title: "Negative Translations", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/translations/translating-left-down" },
+          { title: "Translating Shapes", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/translations/translating-shapes" },
+          { title: "Combining Translations", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/translations/combining-translations" },
+          { title: "Undoing Translations", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/translations/undoing-translations" },
+          { title: "Coordinate-wise Translation", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/coordinate-translation/coordinate-translation" },
+          { title: "Translating Shapes in x and y", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/coordinate-translation/translating-shapes-x-y" },
+          { title: "Fitting within a Region", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/coordinate-translation/translate-into-region" },
+        ],
+      },
+      {
+        title: "Rotate shapes around points",
+        description: "Interactive exercises: rotation by 90/180/270 degrees, composing rotations, rotation around non-origin points.",
+        activities: [
+          { title: "Rotation Around the Origin", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/rotation/rotation-around-the-origin" },
+          { title: "Rotating Shapes", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/rotation/rotating-shapes-2" },
+          { title: "Rotating Both Ways", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/rotation/rotating-both-ways" },
+          { title: "Composing Rotations", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/rotation/composing-rotations" },
+          { title: "Rotating by 180 degrees", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/coordinate-wise-rotation/rotating-180" },
+          { title: "Rotating by 90 degrees", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/coordinate-wise-rotation/rotated-coordinates" },
+          { title: "Rotating by 270 degrees", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/coordinate-wise-rotation/rotating-270-b" },
+          { title: "Rotating by Coordinates", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/coordinate-wise-rotation/rotating-by-coordinates" },
+          { title: "Rotating before Translating", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/non-origin-rotation/chaining-transformations" },
+          { title: "Rotating Around a Point", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/non-origin-rotation/rotating-around-point" },
+          { title: "Rotating to Move", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/non-origin-rotation/rotation-center-outside-shape" },
+          { title: "Translating before Rotating", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/non-origin-rotation/translating-before-rotating" },
+          { title: "Translation by Rotation", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/equivalent-transformations/translation-by-rotation" },
+          { title: "Gridline Translations", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/equivalent-transformations/distance-of-rotations" },
+          { title: "Diagonal Translations", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/equivalent-transformations/axes-of-rotation" },
+          { title: "Selecting Angles", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/equivalent-transformations/choosing-angles" },
+          { title: "Limits of Rotation", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/equivalent-transformations/limits-of-rotation" },
+        ],
+      },
+      {
+        title: "Reflect shapes across lines",
+        description: "Interactive exercises: reflection across axes and lines, coordinate reflections, combining reflections.",
+        activities: [
+          { title: "Reflecting Across Axes", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/reflections/manual-reflection" },
+          { title: "Reflecting Across Lines", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/reflections/manual-reflection-more-lines" },
+          { title: "The Line of Reflection", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/reflections/the-line-of-reflection" },
+          { title: "Reflecting Shapes", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/reflections/reflecting-shapes" },
+          { title: "Reflection to a Region", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/reflections/reflection-regions" },
+          { title: "Reversing Reflection", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/reflections/reversing-reflection" },
+          { title: "Reflecting Coordinates", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/reflections-in-coordinates/reflecting-coordinates" },
+          { title: "Reflecting Vertices", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/reflections-in-coordinates/reflecting-vertices" },
+          { title: "Reflecting Across y=x", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/reflections-in-coordinates/reflecting-y-x" },
+          { title: "Reflecting Across y=-x", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/reflections-in-coordinates/reflecting-y-minus-x" },
+          { title: "Choosing the Coordinate Reflection", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/reflections-in-coordinates/choosing-coordinate-reflection" },
+          { title: "Reflecting to Translate", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/combining-reflections/reflecting-to-translate" },
+          { title: "Reflecting to Rotate", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/combining-reflections/reflecting-through-180" },
+          { title: "Reflecting to Rotate by 90 degrees", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/combining-reflections/reflecting-through-90" },
+          { title: "Rotation Around a Point", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/combining-reflections/reflecting-around-points" },
+          { title: "90 degree Rotation Around a Point", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/combining-reflections/reflecting-90-around-points" },
+        ],
+      },
+      {
+        title: "Understand congruence and symmetry",
+        description: "Interactive exercises: congruence proofs, reflectional and rotational symmetry.",
+        activities: [
+          { title: "Congruence", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/congruence-and-symmetry/direct-congruence" },
+          { title: "Proving Congruence", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/congruence-and-symmetry/proving-congruence" },
+          { title: "Reflectional Symmetry", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/congruence-and-symmetry/reflectional-symmetry" },
+          { title: "Rotational Symmetry", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/congruence-and-symmetry/rotational-symmetry" },
+          { title: "Identifying Symmetry", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/congruence-and-symmetry/identifying-symmetry" },
+          { title: "Symmetry and Congruence", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/congruence-and-symmetry/symmetry-and-congruence" },
+        ],
+      },
+      {
+        title: "Apply dilations and similarity",
+        description: "Interactive exercises: dilating points and shapes, similarity, stretching in one/two directions.",
+        activities: [
+          { title: "Dilating Points", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/dilation/dilation-points" },
+          { title: "Dilating Shapes", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/dilation/dilation-shapes" },
+          { title: "Dilating and Translating", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/dilation/dilating-and-translating" },
+          { title: "Dilating Around a Point", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/dilating-to-move/dilating-around-point" },
+          { title: "Dilating Points to Targets", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/dilating-to-move/dilating-points-to-targets" },
+          { title: "Translating By Dilating", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/dilating-to-move/dilating-move-shapes" },
+          { title: "Dilations and Congruence", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/similarity/similarity-introduction" },
+          { title: "Similarity", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/similarity/proving-similarity" },
+          { title: "Identifying Similarity", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/similarity/identifying-similarity" },
+          { title: "Stretching in One Direction", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/stretching/stretch-1-direction" },
+          { title: "Stretching in Two Directions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/stretching/stretch-2-directions" },
+          { title: "Stretching Shapes", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/stretching/stretching-shapes" },
+          { title: "Transforming Points Into Targets", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/transformations/stretching/stretching-move-points-to-target" },
+        ],
+      },
+    ]);
+
+    // === Introduction to Functions (Brilliant MYP) ===
+    await insertBrilliantMajor("Introduction to Functions", "Brilliant MYP", [
+      {
+        title: "Identify and describe function rules",
+        description: "Interactive exercises: finding rules, word functions, numeric rules, conditional rules.",
+        activities: [
+          { title: "Finding the Rule", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/introduction-to-functions/introducing-functions/finding-the-rule" },
+          { title: "Word Functions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/introduction-to-functions/introducing-functions/string-functions" },
+          { title: "Time Functions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/introduction-to-functions/introducing-functions/time-functions" },
+          { title: "Repeating Outputs", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/introduction-to-functions/introducing-functions/true-and-false" },
+          { title: "Deducing the Rule", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/introduction-to-functions/introducing-functions/deduce-the-rule" },
+          { title: "Numeric Rules", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/introduction-to-functions/function-rules/numeric-rules" },
+          { title: "Writing Rules", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/introduction-to-functions/function-rules/writing-rules" },
+          { title: "Conditional Rules", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/introduction-to-functions/function-rules/conditional-rules" },
+          { title: "Deducing Numeric Rules", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/introduction-to-functions/function-rules/deducing-numeric-rules" },
+        ],
+      },
+      {
+        title: "Graph and interpret functions",
+        description: "Interactive exercises: graphing linear/squared/absolute value, interpreting real-world functions.",
+        activities: [
+          { title: "Graphing Linear Functions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/introduction-to-functions/graphing-functions/graphing-linear-functions" },
+          { title: "Graphing Squared Functions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/introduction-to-functions/graphing-functions/graphing-squared-functions" },
+          { title: "Graphing Absolute Value", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/introduction-to-functions/graphing-functions/graphing-absolute-value" },
+          { title: "Graphing Without an Equation", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/introduction-to-functions/graphing-functions/graphing-without-equations" },
+          { title: "Interpreting Graphed Functions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/introduction-to-functions/graphing-functions/interpreting-graphed-functions" },
+          { title: "Discrete Functions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/introduction-to-functions/applied-functions/annual-profit" },
+          { title: "Depreciation Functions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/introduction-to-functions/applied-functions/car-depreciation" },
+          { title: "Multi-Part Functions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/introduction-to-functions/applied-functions/tax-rates" },
+          { title: "Periodic Functions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/introduction-to-functions/applied-functions/tide-depth" },
+        ],
+      },
+    ]);
+
+    // === Real-World Algebra (Brilliant MYP) ===
+    await insertBrilliantMajor("Real-World Algebra", "Brilliant MYP", [
+      {
+        title: "Write and use algebraic formulas",
+        description: "Interactive exercises: using variables, adjusting formulas, equivalent expressions.",
+        activities: [
+          { title: "Using Formulas", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/using-variables/writing-formulas/using-variables-3" },
+          { title: "Using Variables", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/using-variables/writing-formulas/variables-9" },
+          { title: "Adjusting Formulas", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/using-variables/writing-formulas/using-formulas" },
+          { title: "Equivalent Formulas", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/using-variables/writing-formulas/equivalent-expressions" },
+          { title: "More Than One Variable", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/using-variables/writing-formulas/more-than-one-variable" },
+        ],
+      },
+      {
+        title: "Solve rate, proportion, and percentage problems",
+        description: "Interactive exercises: unit prices, comparing offers, percent discounts, cost control.",
+        activities: [
+          { title: "Comparing Offers", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/using-variables/pricing-and-proportions/equivalent-ratios" },
+          { title: "Unit Prices", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/using-variables/pricing-and-proportions/unit-prices" },
+          { title: "Using Unit Prices", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/using-variables/pricing-and-proportions/using-unit-rates" },
+          { title: "Controlling Costs", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/using-variables/pricing-and-proportions/using-unit-rates-2" },
+          { title: "Calculating Percentages", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/using-variables/discounts-and-percentages/working-with-percentages" },
+          { title: "Percent Discount", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/using-variables/discounts-and-percentages/percent-discount" },
+          { title: "Working with Percentages", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/using-variables/discounts-and-percentages/working-with-percentages-2" },
         ],
       },
     ]);

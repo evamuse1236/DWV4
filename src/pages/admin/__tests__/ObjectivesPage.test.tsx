@@ -1619,18 +1619,18 @@ describe("ObjectivesPage", () => {
       expect(screen.getByText("MYP Year 1")).toBeInTheDocument();
     });
 
-    it("shows Gap-filling badge on PYP section", () => {
+    it("shows grades badge on PYP section", () => {
       setupMixedQueries();
       render(<ObjectivesPage />);
 
-      expect(screen.getByText("Gap-filling")).toBeInTheDocument();
+      expect(screen.getByText("Grades 4-5")).toBeInTheDocument();
     });
 
-    it("shows PYP topic count badge", () => {
+    it("shows PYP module count badge", () => {
       setupMixedQueries();
       render(<ObjectivesPage />);
 
-      expect(screen.getByText("2 topics")).toBeInTheDocument();
+      expect(screen.getByText("2 modules")).toBeInTheDocument();
     });
 
     it("PYP section is collapsed by default", () => {

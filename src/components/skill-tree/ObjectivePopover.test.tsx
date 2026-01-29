@@ -13,6 +13,7 @@ const mockToggleActivity = vi.fn().mockResolvedValue({});
 const mockUpdateStatus = vi.fn().mockResolvedValue({});
 
 vi.mock("convex/react", () => ({
+  useQuery: vi.fn(),
   useMutation: vi.fn((mutationName) => {
     if (mutationName === "progress.toggleActivity") return mockToggleActivity;
     if (mutationName === "objectives.updateStatus") return mockUpdateStatus;
@@ -29,7 +30,15 @@ vi.mock("../../../convex/_generated/api", () => ({
     objectives: {
       updateStatus: "objectives.updateStatus",
     },
+    diagnostics: {
+      getUnlockState: "diagnostics.getUnlockState",
+      requestUnlock: "diagnostics.requestUnlock",
+    },
   },
+}));
+
+vi.mock("react-router-dom", () => ({
+  useNavigate: () => vi.fn(),
 }));
 
 // Mock skill-tree-utils
@@ -74,7 +83,7 @@ vi.mock("@phosphor-icons/react", () => ({
 
 // Import after mocks
 import { ObjectivePopover } from "./ObjectivePopover";
-import { useMutation } from "convex/react";
+import { useMutation, useQuery } from "convex/react";
 
 // Mock data factories
 const createSubObjectiveNode = (overrides = {}) => ({
@@ -143,6 +152,12 @@ describe("ObjectivePopover", () => {
     // Reset mutation mocks
     mockToggleActivity.mockResolvedValue({});
     mockUpdateStatus.mockResolvedValue({});
+    (useQuery as any).mockReturnValue({
+      activeUnlock: null,
+      pendingRequest: null,
+      latestAttempt: null,
+      majorAssignment: null,
+    });
   });
 
   describe("Rendering", () => {
@@ -199,7 +214,7 @@ describe("ObjectivePopover", () => {
         expect(screen.getByText("Mastered")).toBeInTheDocument();
       });
 
-      it("shows viva requested button when sub-objectives complete", () => {
+      it("shows diagnostic CTA when sub-objectives are complete", () => {
         // Create a major node where all sub-objectives are complete
         const completedSubObj = createSubObjectiveNode({
           activities: [
@@ -228,7 +243,7 @@ describe("ObjectivePopover", () => {
         );
 
         expect(
-          screen.getByRole("button", { name: /request for viva/i })
+          screen.getByRole("button", { name: /request diagnostic/i })
         ).toBeInTheDocument();
       });
     });
@@ -571,6 +586,12 @@ describe("ObjectivePopover", () => {
     it("calls onVivaRequested callback when viva is requested", async () => {
       const user = userEvent.setup();
       const onVivaRequested = vi.fn();
+      (useQuery as any).mockReturnValue({
+        activeUnlock: null,
+        pendingRequest: null,
+        latestAttempt: { passed: false },
+        majorAssignment: null,
+      });
 
       // Create a sub node with all activities completed
       const completedSubObj = createSubObjectiveNode({
@@ -601,7 +622,7 @@ describe("ObjectivePopover", () => {
       );
 
       const vivaButton = screen.getByRole("button", {
-        name: /request viva for major objective/i,
+        name: /^request viva$/i,
       });
       await user.click(vivaButton);
 
@@ -613,6 +634,13 @@ describe("ObjectivePopover", () => {
     });
 
     it("shows viva requested state when already requested", () => {
+      (useQuery as any).mockReturnValue({
+        activeUnlock: null,
+        pendingRequest: null,
+        latestAttempt: { passed: false },
+        majorAssignment: null,
+      });
+
       const completedSubObj = createSubObjectiveNode({
         activities: [
           {

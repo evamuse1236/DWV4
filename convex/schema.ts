@@ -248,6 +248,72 @@ export default defineSchema({
     .index("by_activity", ["activityId"])
     .index("by_student_objective", ["studentObjectiveId"]),
 
+  // ============ DIAGNOSTICS ============
+  diagnosticUnlockRequests: defineTable({
+    userId: v.id("users"),
+    majorObjectiveId: v.id("majorObjectives"),
+    requestedAt: v.number(),
+    status: v.union(
+      v.literal("pending"),
+      v.literal("approved"),
+      v.literal("denied"),
+      v.literal("canceled")
+    ),
+    handledBy: v.optional(v.id("users")),
+    handledAt: v.optional(v.number()),
+  })
+    .index("by_status", ["status", "requestedAt"])
+    .index("by_user_major", ["userId", "majorObjectiveId", "requestedAt"]),
+
+  diagnosticUnlocks: defineTable({
+    userId: v.id("users"),
+    majorObjectiveId: v.id("majorObjectives"),
+    approvedBy: v.id("users"),
+    approvedAt: v.number(),
+    expiresAt: v.number(),
+    attemptsRemaining: v.number(),
+    status: v.union(
+      v.literal("approved"),
+      v.literal("consumed"),
+      v.literal("expired"),
+      v.literal("revoked")
+    ),
+  })
+    .index("by_user_major", ["userId", "majorObjectiveId", "approvedAt"])
+    .index("by_status", ["status", "approvedAt"]),
+
+  diagnosticAttempts: defineTable({
+    userId: v.id("users"),
+    domainId: v.id("domains"),
+    majorObjectiveId: v.id("majorObjectives"),
+    studentMajorObjectiveId: v.optional(v.id("studentMajorObjectives")),
+    unlockId: v.optional(v.id("diagnosticUnlocks")),
+    attemptType: v.union(v.literal("practice"), v.literal("mastery")),
+    diagnosticModuleName: v.string(),
+    diagnosticModuleIds: v.array(v.string()),
+    questionCount: v.number(),
+    score: v.number(),
+    passed: v.boolean(),
+    startedAt: v.number(),
+    submittedAt: v.number(),
+    durationMs: v.number(),
+    results: v.array(
+      v.object({
+        questionId: v.string(),
+        topic: v.string(),
+        chosenLabel: v.string(),
+        correctLabel: v.string(),
+        correct: v.boolean(),
+        misconception: v.string(),
+        explanation: v.string(),
+        visualHtml: v.optional(v.string()),
+      })
+    ),
+  })
+    .index("by_user_major", ["userId", "majorObjectiveId", "submittedAt"])
+    .index("by_passed", ["passed", "submittedAt"])
+    .index("by_major_passed", ["majorObjectiveId", "passed", "submittedAt"]),
+
   // ============ READING LIBRARY ============
   books: defineTable({
     title: v.string(),

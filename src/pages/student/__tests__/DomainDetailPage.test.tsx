@@ -37,6 +37,10 @@ vi.mock("../../../../convex/_generated/api", () => ({
       getAssignedByDomain: "objectives.getAssignedByDomain",
       updateStatus: "objectives.updateStatus",
     },
+    diagnostics: {
+      getUnlockState: "diagnostics.getUnlockState",
+      requestUnlock: "diagnostics.requestUnlock",
+    },
     progress: {
       toggleActivity: "progress.toggleActivity",
     },
@@ -347,12 +351,12 @@ describe("DomainDetailPage", () => {
     });
   });
 
-  describe("Viva request button", () => {
+  describe("Diagnostic CTA", () => {
     beforeEach(() => {
       (useParams as any).mockReturnValue({ domainId: "domain_123_valid_id" });
     });
 
-    it("enables viva button only when all sub-objectives are complete and major is in_progress", () => {
+    it("shows 'Request Diagnostic' when no unlock is active", () => {
       (useQuery as any).mockImplementation((query: string) => {
         if (query === "domains.getById") return mockDomain;
         if (query === "objectives.getAssignedByDomain")
@@ -360,16 +364,49 @@ describe("DomainDetailPage", () => {
             majorStatus: "in_progress",
             allSubsCompleted: true,
           });
+        if (query === "diagnostics.getUnlockState")
+          return {
+            activeUnlock: null,
+            pendingRequest: null,
+            latestAttempt: null,
+            majorAssignment: null,
+          };
         return undefined;
       });
 
       render(<DomainDetailPage />);
 
-      const vivaButton = screen.getByRole("button", { name: /request viva/i });
-      expect(vivaButton).toBeEnabled();
+      expect(
+        screen.getByRole("button", { name: /request diagnostic/i })
+      ).toBeInTheDocument();
     });
 
-    it("disables viva button when not all sub-objectives are complete", () => {
+    it("shows 'Start Diagnostic' when major is ready and unlock is active", () => {
+      (useQuery as any).mockImplementation((query: string) => {
+        if (query === "domains.getById") return mockDomain;
+        if (query === "objectives.getAssignedByDomain")
+          return createMockAssignedMajors({
+            majorStatus: "in_progress",
+            allSubsCompleted: true,
+          });
+        if (query === "diagnostics.getUnlockState")
+          return {
+            activeUnlock: { unlockId: "unlock_1", expiresAt: Date.now() + 1000, attemptsRemaining: 1 },
+            pendingRequest: null,
+            latestAttempt: null,
+            majorAssignment: null,
+          };
+        return undefined;
+      });
+
+      render(<DomainDetailPage />);
+
+      expect(
+        screen.getByRole("button", { name: /start diagnostic/i })
+      ).toBeInTheDocument();
+    });
+
+    it("shows 'Practice Diagnostic' when major is not ready and unlock is active", () => {
       (useQuery as any).mockImplementation((query: string) => {
         if (query === "domains.getById") return mockDomain;
         if (query === "objectives.getAssignedByDomain")
@@ -377,30 +414,21 @@ describe("DomainDetailPage", () => {
             majorStatus: "in_progress",
             allSubsCompleted: false,
           });
+        if (query === "diagnostics.getUnlockState")
+          return {
+            activeUnlock: { unlockId: "unlock_1", expiresAt: Date.now() + 1000, attemptsRemaining: 1 },
+            pendingRequest: null,
+            latestAttempt: null,
+            majorAssignment: null,
+          };
         return undefined;
       });
 
       render(<DomainDetailPage />);
 
-      const vivaButton = screen.getByRole("button", { name: /request viva/i });
-      expect(vivaButton).toBeDisabled();
-    });
-
-    it("disables viva button when major is not in_progress", () => {
-      (useQuery as any).mockImplementation((query: string) => {
-        if (query === "domains.getById") return mockDomain;
-        if (query === "objectives.getAssignedByDomain")
-          return createMockAssignedMajors({
-            majorStatus: "assigned",
-            allSubsCompleted: true,
-          });
-        return undefined;
-      });
-
-      render(<DomainDetailPage />);
-
-      const vivaButton = screen.getByRole("button", { name: /request viva/i });
-      expect(vivaButton).toBeDisabled();
+      expect(
+        screen.getByRole("button", { name: /practice diagnostic/i })
+      ).toBeInTheDocument();
     });
 
     it("shows 'Viva requested' indicator when viva is already requested", () => {
@@ -411,6 +439,13 @@ describe("DomainDetailPage", () => {
             majorStatus: "viva_requested",
             allSubsCompleted: true,
           });
+        if (query === "diagnostics.getUnlockState")
+          return {
+            activeUnlock: null,
+            pendingRequest: null,
+            latestAttempt: { passed: false },
+            majorAssignment: null,
+          };
         return undefined;
       });
 
@@ -439,7 +474,7 @@ describe("DomainDetailPage", () => {
       expect(masteredIndicators.length).toBeGreaterThan(0);
     });
 
-    it("calls updateStatus with correct args when viva is requested", async () => {
+    it("shows 'Request Viva' after a failed diagnostic and calls updateStatus", async () => {
       const user = userEvent.setup();
       (useQuery as any).mockImplementation((query: string) => {
         if (query === "domains.getById") return mockDomain;
@@ -448,12 +483,19 @@ describe("DomainDetailPage", () => {
             majorStatus: "in_progress",
             allSubsCompleted: true,
           });
+        if (query === "diagnostics.getUnlockState")
+          return {
+            activeUnlock: null,
+            pendingRequest: null,
+            latestAttempt: { passed: false },
+            majorAssignment: null,
+          };
         return undefined;
       });
 
       render(<DomainDetailPage />);
 
-      const vivaButton = screen.getByRole("button", { name: /request viva/i });
+      const vivaButton = screen.getByRole("button", { name: /^request viva$/i });
       await user.click(vivaButton);
 
       expect(mockUpdateObjectiveStatus).toHaveBeenCalledWith({

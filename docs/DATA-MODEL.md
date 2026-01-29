@@ -1,11 +1,11 @@
 # Data Model and Contracts
 
 ## Source of truth
-- Schema: `convex/schema.ts` defines 23 tables and indexes.
+- Schema: `convex/schema.ts` defines 26 tables and indexes.
 - Generated types: `convex/_generated/dataModel.d.ts` should be used when available.
 - Frontend types in `src/types/index.ts` are temporary and do not cover all fields.
 
-## Table inventory (23 total)
+## Table inventory (26 total)
 
 | Area | Tables | Purpose |
 | --- | --- | --- |
@@ -16,9 +16,12 @@
 | Habits | `habits`, `habitCompletions` | Habit routines and completion tracking |
 | Deep work | `domains`, `majorObjectives`, `learningObjectives`, `activities` | Skills, objectives, and activities |
 | Assignments | `studentObjectives`, `studentMajorObjectives`, `activityProgress` | Student progress through objectives |
+| Diagnostics | `diagnosticUnlockRequests`, `diagnosticUnlocks`, `diagnosticAttempts` | Coach-approved mastery checks + attempt history |
 | Reading | `books`, `studentBooks` | Library and reading progress |
 | Projects | `projects`, `projectLinks`, `projectReflections` | 6-week projects and submissions |
-| Trust jar | `trustJar` | Shared reward state |
+| Trust jar | `trustJar` | Shared reward state (per batch) |
+| Vision Board | `visionBoardAreas`, `visionBoardCards` | Personal goal visualization |
+| AI Logs | `chatLogs` | AI chat interaction logs (dev) |
 
 ## Tables (fields + indexes)
 
@@ -266,6 +269,57 @@ Indexes: `by_user`, `by_major_objective`, `by_user_major`, `by_status`
 
 Indexes: `by_user`, `by_activity`, `by_student_objective`
 
+### Diagnostics
+
+#### `diagnosticUnlockRequests`
+| Field | Type | Notes |
+| --- | --- | --- |
+| `_id` | `Id<"diagnosticUnlockRequests">` | Primary key |
+| `userId` | `Id<"users">` | Student |
+| `majorObjectiveId` | `Id<"majorObjectives">` | Major objective |
+| `requestedAt` | `number` | Unix ms timestamp |
+| `status` | `"pending" | "approved" | "denied" | "canceled"` | Request lifecycle |
+| `handledBy` | `Id<"users">?` | Admin who handled |
+| `handledAt` | `number?` | Unix ms timestamp |
+
+Indexes: `by_status`, `by_user_major`
+
+#### `diagnosticUnlocks`
+| Field | Type | Notes |
+| --- | --- | --- |
+| `_id` | `Id<"diagnosticUnlocks">` | Primary key |
+| `userId` | `Id<"users">` | Student |
+| `majorObjectiveId` | `Id<"majorObjectives">` | Major objective |
+| `approvedBy` | `Id<"users">` | Admin approver |
+| `approvedAt` | `number` | Unix ms timestamp |
+| `expiresAt` | `number` | Unix ms timestamp (default 24h after approval) |
+| `attemptsRemaining` | `number` | Default 1 |
+| `status` | `"approved" | "consumed" | "expired" | "revoked"` | Unlock lifecycle |
+
+Indexes: `by_user_major`, `by_status`
+
+#### `diagnosticAttempts`
+| Field | Type | Notes |
+| --- | --- | --- |
+| `_id` | `Id<"diagnosticAttempts">` | Primary key |
+| `userId` | `Id<"users">` | Student |
+| `domainId` | `Id<"domains">` | Domain |
+| `majorObjectiveId` | `Id<"majorObjectives">` | Major objective |
+| `studentMajorObjectiveId` | `Id<"studentMajorObjectives">?` | Convenience link |
+| `unlockId` | `Id<"diagnosticUnlocks">?` | Unlock used |
+| `attemptType` | `"practice" | "mastery"` | UX intent |
+| `diagnosticModuleName` | `string` | E.g. `"Module 1: Whole Number Foundations"` |
+| `diagnosticModuleIds` | `string[]` | Source module IDs (e.g. `["1.1","1.2"]`) |
+| `questionCount` | `number` | Attempt length |
+| `score` | `number` | Correct count |
+| `passed` | `boolean` | Pass = 100% |
+| `startedAt` | `number` | Unix ms timestamp |
+| `submittedAt` | `number` | Unix ms timestamp |
+| `durationMs` | `number` | Soft-timer duration |
+| `results` | `object[]` | Per-question answer + misconception |
+
+Indexes: `by_user_major`, `by_passed`, `by_major_passed`
+
 ### Reading
 
 #### `books`
@@ -356,6 +410,49 @@ Indexes: `by_project`, `by_project_user`
 | `updatedAt` | `number` | Unix ms timestamp |
 
 Indexes: `by_project`, `by_project_user`
+
+### Vision Board
+
+#### `visionBoardAreas`
+| Field | Type | Notes |
+| --- | --- | --- |
+| `_id` | `Id<"visionBoardAreas">` | Primary key |
+| `userId` | `Id<"users">` | Owner |
+| `name` | `string` | Area name |
+| `emoji` | `string` | Phosphor icon name |
+| `isPreset` | `boolean` | True for auto-seeded areas |
+
+Indexes: `by_user`
+
+#### `visionBoardCards`
+| Field | Type | Notes |
+| --- | --- | --- |
+| `_id` | `Id<"visionBoardCards">` | Primary key |
+| `userId` | `Id<"users">` | Owner |
+| `areaId` | `Id<"visionBoardAreas">` | Parent area |
+| `cardType` | `"image_hero" | "counter" | "progress" | "streak" | "habits" | "mini_tile" | "motivation" | "journal"` | Card type |
+| `title` | `string` | Card title |
+| `subtitle` | `string?` | Optional subtitle |
+| `emoji` | `string?` | Optional emoji |
+| `colorVariant` | `"green" | "blue" | "pink" | "purple" | "orange" | "yellow"` | Color theme |
+| `size` | `"sm" | "md" | "lg" | "tall" | "wide" | "hero"` | Grid size |
+| `order` | `number` | Sort order |
+| `createdAt` | `number` | Unix ms timestamp |
+| ... | ... | Type-specific optional fields (imageUrl, currentCount, targetCount, habits, quote, etc.) |
+
+Indexes: `by_user`, `by_user_area`
+
+### AI Logs
+
+#### `chatLogs`
+| Field | Type | Notes |
+| --- | --- | --- |
+| `_id` | `Id<"chatLogs">` | Primary key |
+| `type` | `string` | Log type identifier |
+| `data` | `any` | Log payload |
+| `timestamp` | `number` | Unix ms timestamp |
+
+Indexes: `by_timestamp`
 
 ## Relationship overview (ASCII)
 
