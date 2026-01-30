@@ -91,7 +91,7 @@
     {
       "questionId": 158360,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c40c3723-d32c-4a4c-841a-46396dd1a07c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The hundredths place value column is the second number after the decimal point. Therefore, once we've rounded to the nearest hundredth, there will be only 2 numbers after the decimal point.",
         "B": "The hundredths place value column is the second number after the decimal point. Therefore, we need to decide whether to round the 8 up or down. We look at the digit after the 8 (3) and because it is less than 5, we round down to 3.48.",
@@ -103,7 +103,7 @@
     {
       "questionId": 158667,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/39a8cfe5-0a41-48f0-85ff-472fa8e3a1d2.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanations": {
         "A": "The hundredths place value column is the second number after the decimal point. Therefore, we need to decide whether to round the 6 up or down. We look at the digit after the 6 (3) and because it is less than 5, we round down to 7.86",
         "B": "The hundredths place value column is the second number after the decimal point. Therefore, once we've rounded to the nearest hundredth, there will be only 2 numbers after the decimal point.",

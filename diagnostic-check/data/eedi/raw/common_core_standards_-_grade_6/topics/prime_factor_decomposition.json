@@ -139,7 +139,7 @@
     {
       "questionId": 99556,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d400b399-3cac-4cc8-8d6a-d268dbda9c3e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "30 = 2 x 15, but then 15 can be broken down so it would need some more branches",
         "B": "31 is prime, so we can't draw a prime factor tree like this - it would only have the ? at the top",

@@ -43,7 +43,7 @@
     {
       "questionId": 158478,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8c4e7f01-6d7f-43cb-b6de-32b7d4aa409d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The line going across the middle of the graph is called the x axis, but what do we call the point in the middle of both axes?",
         "B": "The two lines are the axes, but what do we call the point where they cross, where both lines are 0?",
@@ -55,7 +55,7 @@
     {
       "questionId": 158591,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/243af068-6fef-45da-93d2-4238f0288ff3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The line going down the middle of the graph is called the y axis, but what do we call the point in the middle of both axes?",
         "B": "Where the two axes cross (at 0), we call that point the origin.",
@@ -127,7 +127,7 @@
     {
       "questionId": 158594,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ac61ae79-fc90-4cd2-ab31-c576480c1072.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "If we go across 5 from the bottom of the graph, or from the axis, would we get to P? Think about which direction the 5 is telling us to move, and where from...",
         "B": "5 is the y-coordinate, telling us to go up 5 in the y-direction from 0 to get to the point P.",

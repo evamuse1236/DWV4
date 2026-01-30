@@ -115,7 +115,7 @@
     {
       "questionId": 131799,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/218c0272-9e07-4edd-9573-48fb152f0f7b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Tom is correct the gradient is 6, using this information we know that the equation of the line is y = 6x + c. To find c (which is the y intercept) we can substitute either point given in the question into the equation.",
         "B": "Katie is correct, the line intercepts the y axis at (0,-1). We can calculate the gradient by working the difference in the y coordinates divided by the difference in the x coordinates.",

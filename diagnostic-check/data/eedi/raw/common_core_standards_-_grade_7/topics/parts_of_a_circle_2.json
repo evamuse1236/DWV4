@@ -43,7 +43,7 @@
     {
       "questionId": 107779,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6ed804a8-0cfc-44c7-a0f5-7627a95f0b3a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The radius goes from the centre to the edge, but this line doesn't go through the centre at all.",
         "B": "This is a chord. It is a straight line that separates the circle into two segments.",
@@ -55,7 +55,7 @@
     {
       "questionId": 122107,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bf0205ac-aecc-4c86-9ed6-56e124f5fb00.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The radius goes from the centre to the edge, but doesn't touch the circumference twice.",
         "B": "This is a chord. It is a straight line that separates the circle into two segments.",
@@ -67,7 +67,7 @@
     {
       "questionId": 107780,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d1be6c99-ae11-42da-be0d-dba142501a03.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The radius goes from the centre to the edge, but this line goes from one side of the circle to the other.",
         "B": "A chord is a straight line that separates the circle into two segments, but it doesn't go through the centre of the circle like this line does.",
@@ -79,7 +79,7 @@
     {
       "questionId": 107790,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3c5819cb-516e-4821-aac5-aa6aaf07e5c2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The tangent only touches the circle at a single point and goes outside the circle, but this line touches at two points inside.",
         "B": "The diameter goes from one side of the circle to the other through the centre, so this is a diameter.",
@@ -115,7 +115,7 @@
     {
       "questionId": 107782,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e6d4281c-148f-432c-9250-b3fe8c1afb2c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The radius goes from the centre to the edge, but this line doesn't go inside the circle at all.",
         "B": "A chord is a straight line that separates the circle into two segments, but this line doesn't go inside the circle.",
@@ -127,7 +127,7 @@
     {
       "questionId": 122109,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9c8b0456-8a36-48e9-b027-1f42752ab7b8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The radius goes from the centre to the edge, but the described line doesn't go inside the circle at all.",
         "B": "A chord is a straight line that separates the circle into two segments, but this described line doesn't go inside the circle.",

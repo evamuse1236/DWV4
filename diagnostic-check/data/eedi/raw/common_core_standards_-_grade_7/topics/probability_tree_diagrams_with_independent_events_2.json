@@ -139,7 +139,7 @@
     {
       "questionId": 109485,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/79f825ad-bc5d-46f6-a89e-8dfd011273c5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Keep going! You have found one of the correct paths, but this isn't the only one.",
         "B": "In Path 1, we pick both red and in Path 4, we pick both black.",
@@ -151,7 +151,7 @@
     {
       "questionId": 109496,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/560a352a-f9cd-479b-90dd-2e295d913d48.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Keep going! You have found one of the correct paths, but this isn't the only one.",
         "B": "Not quite! Look at path 2 again, along this path we would pick red first, then black, which aren't the same colour.",

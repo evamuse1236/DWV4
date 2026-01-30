@@ -73,7 +73,7 @@
     {
       "questionId": 78685,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/349738d9-a974-4627-b74e-0a1778170efb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "If she is actively trying to catch different coloured fish then this would add bias to the experiment and would not be accurate",
         "B": "Nicole wanted to find an estimate for the probability of catching a blue fish in that specific lake so going to a different lake would not help in this situation.",
@@ -133,7 +133,7 @@
     {
       "questionId": 109471,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/42e74d56-6055-4b19-bb42-ef27a83e6940.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "There are 3 green triangles, but we need this as a probability",
         "B": "You have given the probability of finding a green triangle out of the total number of shapes, but the questions says \"given that...\"",

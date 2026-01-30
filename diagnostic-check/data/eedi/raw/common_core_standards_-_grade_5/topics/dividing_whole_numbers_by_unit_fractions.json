@@ -31,7 +31,7 @@
     {
       "questionId": 101035,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1bfd7fc9-de90-4c94-82d4-b0acb0bcf8ca.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have multiplied. 2 ÷ 1/5 means how many times does 1/5 fit into 2?",
         "B": "2 ÷ 1/5 is the same as 2 × 5",
@@ -43,7 +43,7 @@
     {
       "questionId": 101054,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/af9ef6c7-f6f4-400a-9891-2d9eb65c4132.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you may have multiplied. 3 ÷ 1/6 means how many times does 1/6 fit into 3?",
         "B": "Sometimes we \"flip\" a fraction we're dividing by, but we don't flip a number to be divided.",
@@ -55,7 +55,7 @@
     {
       "questionId": 158416,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8498c4bd-de02-424b-a499-c34549f40a7a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Read the question carefully, we want to know how many times 1/5 goes into 1 whole. How many fifths fit in the bar?",
         "B": "The bar for one whole is split into five equal pieces; there are 5 fifths in 1 whole.",
@@ -67,7 +67,7 @@
     {
       "questionId": 158563,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d4879f9b-84f7-47d4-a8ef-47997358c5ee.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Read the question carefully, we want to know how many times 1/6 goes into 1 whole. How many sixths fit in the bar?",
         "B": "Make sure you are looking at the bottom bar, which has been split into sixths (1/6). How many pieces are there?",
@@ -79,7 +79,7 @@
     {
       "questionId": 158417,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/38024168-5f09-4c6c-9eb5-4e8c21d42623.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you might have tried to divide using Keep Flip Change but flipped the wrong fraction... Using the bar model, can you count how many times 1/3 goes into 2?",
         "B": "Each 1 whole is split into three 1/3 pieces, so in 2 wholes there are six lots of 1/3.",
@@ -91,7 +91,7 @@
     {
       "questionId": 158564,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3bfbefc4-951a-4fd7-b8ae-efd914aa6f1d.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you might have tried to divide using \"Keep Flip Change\" but flipped the wrong fraction... Using the bar model, can you count how many times 1/4 goes into 2?",
         "B": "Not quite, make sure you are just counting how many 1/4 pieces there are in the diagram.",

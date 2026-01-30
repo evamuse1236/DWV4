@@ -25,7 +25,7 @@
     {
       "questionId": 158815,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea3e3dd7-fa9e-47f4-ae6d-fd81baa155f7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Quarter of an hour is 15 minutes, so quarter past would be 9:15. This time has nine hours and no extra minutes.",
         "B": "This time has nine hours and no extra minutes, so it is 9 o' clock.",
@@ -37,7 +37,7 @@
     {
       "questionId": 159014,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0773ad22-c870-4ad6-a3a8-198a2e46e159.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "A",
       "explanations": {
         "A": "The time on the clock has nine hours and 15 minutes. 15 minutes is a quarter of an hour, so it is quarter past nine.",
         "B": "Nine o' clock would be shown as 9:00 on a digital clock. But this clock shows 9:15 which is 9 hours and 15 minutes. Remember that 15 minutes is a quarter of an hour.",
@@ -61,7 +61,7 @@
     {
       "questionId": 159015,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/24074364-9198-493d-ab90-fec0d8b3779f.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Quarter of an hour is 15 minutes, so quarter past 4 would be 4:15. Instead, 4:45 is 15 minutes before the next hour.",
         "B": "Quarter of an hour is 15 minutes, so quarter past 5 would be 5:15. Instead, 4:45 is 15 minutes before 5.",

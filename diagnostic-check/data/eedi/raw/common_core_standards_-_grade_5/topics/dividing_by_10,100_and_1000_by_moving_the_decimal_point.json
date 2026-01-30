@@ -115,7 +115,7 @@
     {
       "questionId": 158339,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/766621aa-6337-4858-b780-601d2ca14b70.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanations": {
         "A": "If we divided by 10, the decimal point would move one place to the left. But the decimal point has moved two places to the left. ",
         "B": "The decimal point has moved two places to the left. Therefore, 10.3 has been divided by 100.",
@@ -127,7 +127,7 @@
     {
       "questionId": 158558,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/233d282d-1c6d-44fa-8374-7535251d1965.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "If we divided by 1000, the decimal point would move three places to the left. But the decimal point has moved two places to the left.",
         "B": "If we divided by 10, the decimal point would move one place to the left. But the decimal point has moved two places to the left.",

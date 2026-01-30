@@ -79,7 +79,7 @@
     {
       "questionId": 130020,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e69c6130-bf73-4af7-b33d-3651a4df53df.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanations": {
         "A": "In this diagram, one out of ten equally-sized rectangles is shaded which equals ⅒. But we need a diagram which does NOT show ⅒ shaded.",
         "B": "In this diagram, one out of ten equally-sized rectangles is shaded which equals ⅒. But we need a diagram which does NOT show ⅒ shaded.",
@@ -91,7 +91,7 @@
     {
       "questionId": 130061,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bbb1f146-8dd6-47e5-9867-b38e750fc432.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Try splitting the larger rectangles into equally-sized, smaller rectangles that are the same shape and size as the shaded rectangle.",
         "B": "We do have one shaded rectangle but how many rectangles of this size fit into the whole shape? Our answer will be a fraction out of the total number of equally-sized rectangles.",
@@ -127,7 +127,7 @@
     {
       "questionId": 130022,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f4e75f19-8370-47d3-b5ad-8d995886a892.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "We can split the large white rectangle on the right into 6 of the smaller rectangles. We can also split the medium rectangle above the shaded rectangles into 3 of the smaller rectangles. This will give us 3 shaded parts out of 12 equally-sized parts = 3/12. But we need a diagram which does NOT show 3/12 shaded.",
         "B": "In this diagram, 3 out of 12 equally-sized rectangles are shaded = 3/12. But we need a diagram which does NOT show 3/12 shaded.",
@@ -139,7 +139,7 @@
     {
       "questionId": 130063,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/92a22b33-830b-4c78-bdc1-4e79c16f45ac.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost! We want the fraction of the rectangle that is shaded yellow but you have given the fraction that is not shaded.",
         "B": "We do have 3 shaded rectangles but how many rectangles are there in total? Our answer will be a fraction out of the total number of equally-sized rectangles.",

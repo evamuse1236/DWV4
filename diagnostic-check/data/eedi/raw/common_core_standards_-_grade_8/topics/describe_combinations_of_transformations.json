@@ -115,7 +115,7 @@
     {
       "questionId": 135741,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5c25baf0-8144-4edb-a8fc-8e00ec65af16.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The line 𝑥 = 3, is a vertical line going through 3 on the 𝑥 axis. If we reflect shape P in this line, it will flip horizontally and so shape R would be in exactly the same position as shape P. This is not where shape R is.",
         "B": "Enlarging by scale factor 2 from centre (0,2) gives shape Q with corners at (4,4), (6,10), (8,4) and (6,2). Enlarging this shape by scale factor -0.5 from (4,8) gives shape R with corners at (2,10), (3,11), (4,10) and (3,7), which is the same as rotating P 180 degrees around (3, 6.5).",
@@ -139,7 +139,7 @@
     {
       "questionId": 135742,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/31dc0c4b-5c00-4d42-babe-e33027d85a66.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like your might have skipped the reflection in the middle... make sure you do every transformation.",
         "B": "Double check your centres of rotation, and how far you turned the shape each time. The shape was rotated 90° clockwise, reflected horizontally and rotated 90° clockwise again, it should have ended up with the same orientation (the same way up) as it started.",

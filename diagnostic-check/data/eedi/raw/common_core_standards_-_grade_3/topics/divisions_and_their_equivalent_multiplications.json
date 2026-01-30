@@ -25,7 +25,7 @@
     {
       "questionId": 173918,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5831ecc2-314d-4004-bec6-ae081f2b7cfd.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This multiplication does equal 12, but it doesn't use the number 4 from the division question. The related multiplication must use the same numbers.",
         "B": "This multiplication uses the number 4 from the division, but the answer is 20, not 12. The related multiplication must equal the first number in the division.",
@@ -49,7 +49,7 @@
     {
       "questionId": 173919,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dfb9a636-7094-4dad-8e4d-dc568672ce1c.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The opposite operation of division is multiplication, not subtraction. Think about how you can use multiplication and the numbers 24 and 3 to find the star.",
         "B": "The opposite operation of division is multiplication, not addition. Think about how you can use multiplication and the numbers 24 and 3 to find the star.",
@@ -109,7 +109,7 @@
     {
       "questionId": 173981,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9e4410cd-94bf-4674-8743-9ec2632a996f.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "A",
       "explanations": {
         "A": "You need to find the number that multiplies by 6 to make 48. Using your times tables, you know that 6 x 8 = 48. So, ★ = 8.",
         "B": "You are close! Check your 6 times table again. What is 6 x 9?",

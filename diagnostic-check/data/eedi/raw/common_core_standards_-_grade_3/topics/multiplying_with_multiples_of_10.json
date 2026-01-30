@@ -55,7 +55,7 @@
     {
       "questionId": 158980,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8d9013d9-0c69-46b8-8932-fd93327731c9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Careful, this is 9 + 7, we want 9 x 7.",
         "B": "That would be the answer to 9 x 7 x 10, but we want to fill the gap at the start. Can you see that the gap is in the same place as 9 x 7? So we need a number with the same value as 9 x 7.",
@@ -67,7 +67,7 @@
     {
       "questionId": 158782,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a3378b18-8171-4297-b9bb-a45c4473c855.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Close - you have done 5 x 3 correctly, but this is 5 x 30 so you need to multiply by 10.",
         "B": "Not quite - I think you did 5 + 3 then multiplied by 10, but we want 5 x 3 and then multiply by 10.",
@@ -79,7 +79,7 @@
     {
       "questionId": 158981,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4736bfd6-d2dc-4fc0-b112-b79de4a913cc.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite - I think you did 4 + 6 then multiplied by 10, but we want 4 x 6 and then multiply by 10.",
         "B": "Writing numbers next to each other is not the same as multiplying them (that only works for letters) so we need to work out 4 x 6 first. Try counting up 4, 8, 12, ...",
@@ -115,7 +115,7 @@
     {
       "questionId": 158784,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1bc3a39d-fdc0-4e27-85da-72e97be40dde.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Close - you have done 6 x 5 correctly, but this is 6 x 50 so you need to multiply by 10.",
         "B": "Writing numbers next to each other is not the same as multiplying them (that only works for letters) so we need to work out 6 x 5 first. Try counting up 5, 10, 15, ...",

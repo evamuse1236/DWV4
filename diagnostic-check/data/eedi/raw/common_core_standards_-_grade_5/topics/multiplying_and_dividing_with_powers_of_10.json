@@ -91,7 +91,7 @@
     {
       "questionId": 158348,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5a36023a-5340-43ec-a261-9016cc5d122f.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've done 4.2÷10÷2. But the 2 is an exponent, so 10² means 10x10 = 100.",
         "B": "10² = 100. Therefore, 4.2÷10² = 4.2÷100 = 0.042 (moving the decimal point 2 places to the left).",
@@ -103,7 +103,7 @@
     {
       "questionId": 158613,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/35add84d-893a-445e-88b5-947eeb9dcaff.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanations": {
         "A": "10² = 100. Therefore, 5.6÷10² = 5.6÷100 = 0.056 (moving the decimal point 2 places to the left).",
         "B": "This would be the correct answer if dividing by 10. But we're dividing by 10² (100), so we need to move the decimal point 2 places to the left.",

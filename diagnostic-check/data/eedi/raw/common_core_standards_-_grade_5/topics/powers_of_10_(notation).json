@@ -115,7 +115,7 @@
     {
       "questionId": 158344,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f981714d-9bcf-4fe0-8e96-f4b3a24bf765.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, 10³ = 10x10x10 = 1,000 (three zeros).",
         "B": "Not quite, 10⁵ = 10x10x10x10x10 = 100,000 (five zeros).",
@@ -127,7 +127,7 @@
     {
       "questionId": 158633,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ab5bb901-8dda-4ee8-b203-5ba3a205f654.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This would only be correct if we were multiplying 10 by 100,000. But the star represents an exponent, that is how many times we are multiplying 10 by itself. For example, 10² = 10x10 = 100; 10³ = 10x10x10 = 1,000 etc.",
         "B": "1,000,000 has 6 zeros, therefore 1,000,000 = 10x10x10x10x10x10 = 10⁶",

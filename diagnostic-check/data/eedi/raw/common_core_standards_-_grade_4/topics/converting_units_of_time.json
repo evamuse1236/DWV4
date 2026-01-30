@@ -55,7 +55,7 @@
     {
       "questionId": 129242,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/71b4e43b-1886-43f7-afe3-875eff018e67.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is the number of minutes. What can you do next to find the number of seconds?",
         "B": "It looks like you have just multiplied by 100. Remember there are 60 minutes in an hour and 60 seconds in a minute.",
@@ -151,7 +151,7 @@
     {
       "questionId": 129319,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e45d4515-f980-4478-afc3-b0f483e373bd.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Remember in a leap year we have an extra day - February 29th.",
         "B": "This is the number of days in 2 normal years rather than 2 leap years.",

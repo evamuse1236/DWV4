@@ -55,7 +55,7 @@
     {
       "questionId": 166154,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5cc7f129-904d-4031-8e95-d024ae3f068b.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you might have subtracted 75 from 5748, however we are trying to find 75% of 5748. Try thinking of how we might find 25% first.",
         "B": "Not quite - it looks like you've found the number of people who did NOT eat a burrito. This question is asking about people who did!",
@@ -79,7 +79,7 @@
     {
       "questionId": 166155,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/31e28b16-d4b2-4a70-aaf4-869d3b4b126a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It seems like you might have found 20% of 5, however 5 isn't the total number of players, it's only the number of players who have played for more than 3 years. This question is saying that 20% of the total players is 5.",
         "B": "If 20% of the team is 5 players, we can multiply this by 5 to work out 100% of the team which is 25 players.",

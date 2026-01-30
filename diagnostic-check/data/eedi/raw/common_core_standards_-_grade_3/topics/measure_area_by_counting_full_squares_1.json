@@ -19,7 +19,7 @@
     {
       "questionId": 158857,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8c33f3f2-b450-45c4-bc19-bedd9aaf8b27.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This square has side length 3 but its area is 9 square units. Look for the diagram made with 3 squares as this will have an area of 3 square units...",
         "B": "The area of this diagram is 2 square units, we are looking for the diagram with an area of 3 square units...",
@@ -31,7 +31,7 @@
     {
       "questionId": 159056,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bf906c31-99a3-4880-9108-93d00ad3d4cc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The area of this diagram is 2 square units, we are looking for the diagram with an area of 3 square units...",
         "B": "If each small square has an area of one square unit, we need the diagram which has 4 small squares as this will have an area of 4 square units. This is diagram B!",
@@ -43,7 +43,7 @@
     {
       "questionId": 158858,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3befa3cd-9189-47b1-a8a8-c80a68317e8f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This does have an area of 4 square units but do any of the other images too?",
         "B": "This square has side length 4 but its area is 16 square units. Look for the diagram made with 4 squares as this will have an area of 4 square units...",
@@ -55,7 +55,7 @@
     {
       "questionId": 159057,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4fdc514d-99a1-4229-b81b-c1126cea7c38.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This square has side length 6 but its area is 36 square units. Look for the diagram made with 6 squares as this will have an area of 6 square units...",
         "B": "This does have an area of 6 square units but do any of the other images too?",
@@ -67,7 +67,7 @@
     {
       "questionId": 158859,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f7412a14-6a26-4049-a97b-4e28ca67cd60.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The area of this diagram is 5 square units, we are looking for the diagram with an area of 6 square units...",
         "B": "This shape has a perimeter of 6 but we are looking for the shape with an area of 6 square units. Look for the shape made using 6 squares...",
@@ -79,7 +79,7 @@
     {
       "questionId": 159058,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d425fcf3-d063-419c-bdf9-fd4072b97925.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The area of this diagram is 4 square units, we are looking for the diagram with an area of 8 square units...",
         "B": "This shape has a perimeter of 8 but we are looking for the shape with an area of 8 square units. Look for the shape made using 8 squares...",
@@ -91,7 +91,7 @@
     {
       "questionId": 158860,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d77df1c1-d12a-4b3a-89f3-a6de16bad482.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The area of this diagram is 8 square units, we are looking for the diagram with an area of 9 square units...",
         "B": "If each square has an area of one square unit, we need the diagram which has 9 squares as this will have an area of 9 square units. This is diagram B!",
@@ -103,7 +103,7 @@
     {
       "questionId": 159059,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3487d5af-10e6-4fd8-a23a-5dd3b4d5cb0f.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanations": {
         "A": "We need the diagram which has 15 squares as this will have an area of 15 square units. This is diagram A, as it is almost a 4x4 square (area 16 square units) but with one piece taken out (16 - 1 = 15 square units).",
         "B": "The area of this diagram is 14 square units, we are looking for the diagram with an area of 15 square units...",
@@ -115,7 +115,7 @@
     {
       "questionId": 158861,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b53a861d-86a3-4770-9ab8-9e275c58807d.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This does have an area of 12 square units but do any of the other shapes too?",
         "B": "This does have an area of 12 square units but do any of the other shapes too?",
@@ -127,7 +127,7 @@
     {
       "questionId": 159060,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6d7bc60-feeb-430d-82a9-d557706a994e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The area of this shape is 12 square units, we are looking for the shape with an area of 16 square units...",
         "B": "This does have an area of 16 square units but do any of the other shapes too?",

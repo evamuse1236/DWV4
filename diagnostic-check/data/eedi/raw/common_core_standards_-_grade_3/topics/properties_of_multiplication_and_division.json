@@ -55,7 +55,7 @@
     {
       "questionId": 158733,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7ab5af77-9104-4fce-aa4c-60f74dd77103.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "A",
       "explanations": {
         "A": "4 x 5 = 20, so multiplying 4 x 5 by 9 is the same as multiplying 20 by 9.",
         "B": "It looks like you added, but we have 4 x 5 not 4 + 5.",
@@ -67,7 +67,7 @@
     {
       "questionId": 158932,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5cfc8dbb-1947-41e9-8007-014c04501a40.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "That is the value of 6 x 3 x 8, but we only want to balance the 6 x 3 part, because x 8 is already there on the right. What is 6 x 3 equal to?",
         "B": "6 x 3 = 18, so multiplying 6 x 3 by 8 is the same as multiplying 18 by 8.",
@@ -79,7 +79,7 @@
     {
       "questionId": 158734,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b5e335b5-8c03-4a0f-8e3a-aab5e7c6e374.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "That is the value of 8 x 6, but we want whole of the right hand side to balance with 8 x 6. What could we put in the box to balance 6 with 3 x __?",
         "B": "Careful, we have 3 x __, not 3 + ___. Is 3 x 3 equal to 6?",
@@ -91,7 +91,7 @@
     {
       "questionId": 158933,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c28d7eb5-ec87-4b15-a17c-66e8515854ad.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Careful, we have 2 x __, not 2 + ___. Is 2 x 6 equal to 8?",
         "B": "2 x 4 = 8, so 7 x 2 x 4 is equal to 7 x 8.",
@@ -103,7 +103,7 @@
     {
       "questionId": 158735,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/920a8f48-9f74-42ba-9eac-674cd1a4c8f5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The calculation 12 x 4 = 48 does tell us how many 4s are in 48, but does it tell us anything else?",
         "B": "The calculation 12 x 4 = 48 does tell us how many 12s are in 48, but does it tell us anything else?",

@@ -43,7 +43,7 @@
     {
       "questionId": 173913,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4f2ad456-6c54-43e7-9baf-6e1aa48b1a29.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It seems you've added the last two numbers (32 and 40). Don't forget about the 25 words Lucas wrote at the very start.",
         "B": "To find the total number of words written 'altogether', you need to add up all the amounts he wrote. This is 25 + 32 + 40 = 97.",
@@ -55,7 +55,7 @@
     {
       "questionId": 173973,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f33a077f-ae1a-41b6-a5f2-bf2c8cef40ed.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you've only used the last number in the question. The word 'altogether' is a clue that you need to combine all the amounts.",
         "B": "You've made a good start by adding the first two amounts (11 + 20 = 31). But don't forget she read some more pages in bed!",
@@ -67,7 +67,7 @@
     {
       "questionId": 173914,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6d8a66eb-ce3d-4bef-b863-17cd6f4d3aa2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You correctly worked out that Bobbi has 35 books. The question asks for the total number of books they have together. You need to add Adam's books to Bobbi's books.",
         "B": "You have correctly calculated how many books Bobbi has. The question asks for how many books they have in total, so you need to add Adam's books to this.",
@@ -91,7 +91,7 @@
     {
       "questionId": 173915,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/317845ad-096b-4ed2-89fe-fb610a29f655.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You've correctly subtracted the cost of the game from the starting amount ($45 - $30 = $15). Don't forget that Kemi also spent money on snacks.",
         "B": "First, find the total amount Kemi spent: $30 + $8 = $38. Then, subtract this total from the money she started with: $45 - $38 = $7.",
@@ -115,7 +115,7 @@
     {
       "questionId": 173916,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/175b07cb-e850-4530-85d5-1a501811d517.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "A",
       "explanations": {
         "A": "First, find out how much money Josh had before his birthday. He started with $10 and earned $60, so he had $10 + $60 = $70. To reach $100, he needed $100 - $70 = $30.",
         "B": "It looks like you've added all the numbers in the question together. Remember, $100 is the total amount he has at the end.",

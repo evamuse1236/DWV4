@@ -31,7 +31,7 @@
     {
       "questionId": 173938,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e5060edb-3054-4502-a61e-2d3283fad962.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanations": {
         "A": "In algebra, a letter like '𝑝' is called a variable and it represents a value or a number, not the object itself. Think about what value you need to know about each pen to find the total cost.",
         "B": "The expression is 300𝑝. We are told in the question that the school is buying 300 pens, so the number 300 already represents the number of pens. What must '𝑝' represent?",
@@ -67,7 +67,7 @@
     {
       "questionId": 173999,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0419738f-9161-453c-9f69-3f5d66881e0b.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Think about what 𝑡 represents in this problem – the number of tables. Can you have a negative number of tables, or a fraction of a table? The context of the problem puts limits on the values 𝑡 can take.",
         "B": "In the expression 5𝑡 + 4, the number 5 is being multiplied by 𝑡. It is the coefficient of 𝑡. The letter 𝑡 itself represents the number of tables, which could be a different number from 5.",
@@ -91,7 +91,7 @@
     {
       "questionId": 174000,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c19252ac-2e14-452a-b96b-9a8e543b19f0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The letter 𝑏 represents a measurement of length. Is it possible for a length to be a decimal or a fraction, like 3.5 cm or 1/2 a metre? A length doesn't have to be a whole number.",
         "B": "The letter 𝑏 represents the base measurement, which is a length. A length cannot be negative, and it can't be zero (otherwise you wouldn't have a triangle). Therefore, 𝑏 must be a positive number.",
@@ -103,7 +103,7 @@
     {
       "questionId": 173941,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/679b789c-2e8d-4a8e-a648-56c774eddfe8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This statement just says the height is 3 inches. The expression is ℎ + 3, which suggests a starting height 'ℎ' has been changed.",
         "B": "The expression ℎ + 3 represents a starting value 'ℎ' with 3 added to it. This matches the situation where a plant of height 'ℎ' grows by 3 inches.",
@@ -115,7 +115,7 @@
     {
       "questionId": 174001,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f6746975-1615-4c4e-bd6c-70c076d35ca2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This situation means you start with 8 and take 𝑐 away, which would be written as 8 - 𝑐. Look carefully at the order of the terms in the expression 𝑐 - 8.",
         "B": "The phrase '8 times fewer' means you need to divide by 8 (𝑐 divided by 8). The expression 𝑐 - 8 uses subtraction, not division.",

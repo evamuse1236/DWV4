@@ -73,7 +73,7 @@
     {
       "questionId": 159356,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/931c33e9-b3e4-461b-9b9d-0827da298479.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanations": {
         "A": "From 13 to 10 she subtracted 3. Then if she wants to subtract 7 altogether, the next jump must be -4 (3 + 4 = 7)",
         "B": "That's the position on the number line after subtracting 7 from 13, but we want to know what has been subtracted when the calculation is split up like this.",
@@ -85,7 +85,7 @@
     {
       "questionId": 159578,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e3e28a91-26fa-40bb-ab2c-17cfdc31cac6.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite - Amy has subtracted 6, how many more does she need to jump back to subtract 9 in total?",
         "B": "That's the position on the number line after subtracting 9 from 16, but we want to know what has been subtracted when the calculation is split up like this.",
@@ -109,7 +109,7 @@
     {
       "questionId": 159579,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a564be84-7c33-4976-bead-19bc0a4712a9.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "A",
       "explanations": {
         "A": "This diagram shows subtracting 10 then adding 6, which is the same as subtracting 4 from 13. Therefore, this does not show 13 - 6.",
         "B": "This number line shows subtracting 3 and then subtracting another 3. Altogether, that's the same as subtracting 6. Which diagram doesn't have the same result as subtracting 6?",

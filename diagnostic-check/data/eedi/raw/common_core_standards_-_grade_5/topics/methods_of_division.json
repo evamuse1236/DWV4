@@ -73,7 +73,7 @@
     {
       "questionId": 158364,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4ba6b567-d488-43f9-9b39-c0cb76868a2a.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've divided by 7. We need to divide by 21, so because 21=7 x 3, you could divide by 7 and then divide by 3 to get the final answer.",
         "B": "Be very careful when calculating multiples of 21 and remainders. You've correctly found that 21 goes into 71, 3 times (3 x 21 = 63). Double check the remainder for this stage of the calculation, 71 - 63 = ?",

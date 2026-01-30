@@ -85,7 +85,7 @@
     {
       "questionId": 158322,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b6fb86eb-25e2-400f-9b88-eef3a4a7618c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This statement is true. Reading the y coordinates from the graph, we can get the values for the 2 sequences. Sequence A = 1,3,5,7,9... Sequence B = 3,5,7,9,11... If we add 2 to each of the terms in Sequence A then we get the terms in Sequence B.",
         "B": "This statement is true. Reading the y coordinates from the graph, we can get the values for the 2 sequences. Sequence A = 1,3,5,7,9... Sequence B = 3,5,7,9,11... If we subtract 2 from each of the terms in Sequence B then we get the terms in Sequence A.",
@@ -97,7 +97,7 @@
     {
       "questionId": 158636,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4f30a07f-d28b-4552-8989-524dae8adfe5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "We need a false statement but this statement is true. Reading the y coordinates from the graph, we can get the values for the 2 sequences. Sequence A = 1, 4, 7, 10... Sequence B = 2, 5, 8, 11... If we add 1 to each of the terms in Sequence A then we get the terms in Sequence B.",
         "B": "We need a false statement but this statement is true. Reading the y coordinates from the graph, we can get the values for the 2 sequences. Sequence A = 1, 4, 7, 10... Sequence B = 2, 5, 8, 11... If we subtract 1 from each of the terms in Sequence B then we get the terms in Sequence A.",
@@ -133,7 +133,7 @@
     {
       "questionId": 158324,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8c7837e2-7ac2-4d2f-8f51-3bb1cfb60cf3.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Reading the ordered pairs from the graph, we get: (1,0), (2,2), (3,4), (4,6). We can see that the terms from Sequence A are increasing by 1 each time. And the terms from Sequence B are increasing by 2 each time. Therefore, it is true that to get from one point to the next, we move across 1 and up 2 each time. You will need to carefully check every ordered pair with every statement to find the one false statement.",
         "B": "Reading the ordered pairs from the graph, we get: (1,0), (2,2), (3,4), (4,6). If we multiply each term in Sequence A by 2 and then subtract 2, we get: 0, 2, 4, 6....which are the corresponding terms in Sequence B. Therefore this statement is true. You will need to carefully check every ordered pair with every statement to find the one false statement.",
@@ -145,7 +145,7 @@
     {
       "questionId": 158638,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0122bfa6-1e23-46ee-8acb-2cdc92779f20.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Reading the ordered pairs from the graph, we get: (1,0), (2,3), (3,6), (4,9). If the x-coordinates are Sequence A and the y-coordinates are Sequence B, we can see that 3 is in both sequences, even though (3,3) is not a point on the graph.",
         "B": "Reading the ordered pairs from the graph, we get: (1,0), (2,3), (3,6), (4,9). If the x-coordinates are Sequence A and the y-coordinates are Sequence B, we can see that A is greater for the first point, but B is greater for each of the others. Therefore, this is the false statement.",

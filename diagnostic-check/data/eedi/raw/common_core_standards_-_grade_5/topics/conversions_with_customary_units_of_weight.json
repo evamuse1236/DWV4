@@ -115,7 +115,7 @@
     {
       "questionId": 158434,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2f9c9330-8da7-485c-b0ff-da4531891fe3.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have just compared the numbers rather than looking at the units. Remember there are 2000 pounds in a ton, so try converting the tons into pounds and then compare when they are in the same units.",
         "B": "First, convert 3 and 3/4 ton to pounds by multiplying by 2000. This is 7500 pounds which is greater than 7000.",

@@ -121,7 +121,7 @@
     {
       "questionId": 159319,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a86f3928-9ce4-40c9-8386-6299fffc3395.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite - we want to count back 5, not just 1!",
         "B": "This is the number AFTER 203, but we want the number before. We need to count backwards instead of forwards.",
@@ -133,7 +133,7 @@
     {
       "questionId": 159541,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3a57012e-d7d2-4ad2-be31-48d5e38e85b9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is the number AFTER 182, but we want the number before. We need to count backwards instead of forwards.",
         "B": "Counting back 5 from 182 we get 181, 180, 179, 178, 177, so 177 is the previous number in the pattern.",

@@ -49,7 +49,7 @@
     {
       "questionId": 101004,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d4f52ebe-0583-447d-8828-ef65af5231be.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "A",
       "explanations": {
         "A": "Remember to multiply the numerators to give the numerator answer, and then repeat this process with the denominators: 4/5 ✕ 2/9 = (4 ✕ 2)/(5 ✕ 9) = 8/45.",
         "B": "Almost, I think you've added the numerators, rather than multiplying them. To multiply, multiply the two numerators, and multiply the two denominators.",
@@ -61,7 +61,7 @@
     {
       "questionId": 101023,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/42f2d699-7a2a-4843-9121-e660ed472f61.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You appear to have added the fractions, rather than multiplied. To multiply, multiply the two numerators, and multiply the two denominators.",
         "B": "You appear to have divided instead of multiplied. To multiply, multiply the two numerators, and multiply the two denominators.",

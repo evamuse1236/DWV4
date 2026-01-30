@@ -73,7 +73,7 @@
     {
       "questionId": 130213,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5af6d641-c6b0-4896-8fc2-68f16f4c9898.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "A 'diagram' refers to the picture as a whole. We want the name of just the line.",
         "B": "This is a diameter. It is a straight line from one side of the circle to the other, passing through the centre.",
@@ -85,7 +85,7 @@
     {
       "questionId": 130194,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7cd443f0-0ddc-48e8-9a2b-7338d1554db1.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have halved the radius. Remember the diameter is twice as large as the radius.",
         "B": "This is the circumference if the diameter was 5 cm. We want the diameter.",
@@ -109,7 +109,7 @@
     {
       "questionId": 130195,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7fd4c6a2-4c98-4cdb-ae3d-7780c6676715.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is a radius, not the circumference.",
         "B": "This is the circumference. It is the perimeter of a circle.",
@@ -121,7 +121,7 @@
     {
       "questionId": 130215,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c42ffc22-6799-4d1f-8019-fb0f9a3d673c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This distance would be the radius.",
         "B": "This distance would be the diameter.",

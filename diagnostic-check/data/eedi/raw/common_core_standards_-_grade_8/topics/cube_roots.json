@@ -67,7 +67,7 @@
     {
       "questionId": 134878,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/df55ff77-5c52-49ea-804d-75481fff57ba.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have accidentally done 3 x 3. However 3 to the power of 3 means we have to times 3 by itself 3 times: 3 x 3 x 3.",
         "B": "As the second 3 is smaller it isn't the number 33 but instead it's index notation saying that we need to cube the first value (which is also 3!). Cubing means multiplying by itself three times so the sum we need to calculate is 3 x 3 x 3.",
@@ -91,7 +91,7 @@
     {
       "questionId": 134879,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5f31746a-f538-498f-a702-904839b45467.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This means we divide x by 3. We are looking for the notation which shows we need to cube root x.",
         "B": "I think you have accidentally found the notation for the square root of x. We need to find the symbol for the CUBE root of x.",
@@ -115,7 +115,7 @@
     {
       "questionId": 134880,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/82d0560b-18b7-43ab-896e-87c4cb6fa7fe.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have accidentally divided 1000 by 3. To find the cube root of 1000, we need to think about what number times by itself 3 times would give 1000. For example the cube root of 8 is 2 because 2 x 2 x 2 = 8. Can you work it out for 1000?",
         "B": "If we cubed 100 we would get 100 x 100 x 100 = 1000000 which is not 1000. We need to think about what number times by itself 3 times gives 1000.",

@@ -79,7 +79,7 @@
     {
       "questionId": 101035,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1bfd7fc9-de90-4c94-82d4-b0acb0bcf8ca.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have multiplied. 2 ÷ 1/5 means how many times does 1/5 fit into 2?",
         "B": "2 ÷ 1/5 is the same as 2 × 5",
@@ -91,7 +91,7 @@
     {
       "questionId": 101054,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/af9ef6c7-f6f4-400a-9891-2d9eb65c4132.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you may have multiplied. 3 ÷ 1/6 means how many times does 1/6 fit into 3?",
         "B": "Sometimes we \"flip\" a fraction we're dividing by, but we don't flip a number to be divided.",

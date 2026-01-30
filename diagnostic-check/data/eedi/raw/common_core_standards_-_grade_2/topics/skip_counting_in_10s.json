@@ -67,7 +67,7 @@
     {
       "questionId": 159322,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a01fa5fc-9c10-4265-97df-d81f9d3761a4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is the number BEFORE 831, but we want the number after. We need to count forwards instead of backwards.",
         "B": "Almost! But I think you started counting on 831. We want to count up 832, 833, ...",
@@ -79,7 +79,7 @@
     {
       "questionId": 159544,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/95bd8288-901f-4492-ac5e-cbb4081afb86.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanations": {
         "A": "Counting on ten from 783 gets us to 793 .",
         "B": "This is the number BEFORE 783, but we want the number after. We need to count forwards instead of backwards.",

@@ -31,7 +31,7 @@
     {
       "questionId": 135557,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f91f08f2-070e-4313-986c-b5c159b94ecb.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you've used 8 as the y-coordinate because it's the x-coordinate of the bottom right corner. We have to do a calculation to find the y-coordinate, which involves finding the bottom length first.",
         "B": "(8,4) is the coordinate of the bottom right corner which is already labelled. To find the top corner's coordinate, you'll need to do some calculations. Remember to use the fact that an isosceles triangle has two lengths that are equal.",

@@ -115,7 +115,7 @@
     {
       "questionId": 158329,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f873cba4-cec0-44bb-a48f-19a8112519e1.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "C",
       "explanations": {
         "A": "0.016 is ten times smaller than 0.16, we want to calculate the number that is ten times bigger than 0.16.",
         "B": "I think you've added 10. But instead you need to multiply by 10, to make 0.16 ten times bigger.",
@@ -127,7 +127,7 @@
     {
       "questionId": 158523,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c506dae8-14c4-44a1-b342-58d0d0dc88fa.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've added 10. But instead you need to multiply by 10, to make 0.24 ten times bigger...",
         "B": "To find the number ten times bigger than 0.24, we multiply by 10. 0.24 x 10 = 2.4",

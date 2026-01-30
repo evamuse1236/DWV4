@@ -37,7 +37,7 @@
     {
       "questionId": 75937,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/33bb60be-d172-484b-b164-9cb5869b8372.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "With order of operations brackets are done first, then division is done before subtraction. This would give us 16 - 10 ÷ 2 = 16 - 5 = 11 NOT 7.",
         "B": "With order of operations brackets are done first, then division is done before subtraction. This would give us 10 + 4 ÷ 2 = 10 + 2 = 12 NOT 7.",
@@ -49,7 +49,7 @@
     {
       "questionId": 76085,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0acc8250-8ddc-4a66-90b3-3c31540208cb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "With order of operations brackets are done first, then division is done before subtraction. We would have 22 - 18 ÷ 4 = 22 - 4.5 = 17.5",
         "B": "Did adding in brackets here change the order at all?",

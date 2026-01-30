@@ -91,7 +91,7 @@
     {
       "questionId": 79623,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f2213d02-4d69-4706-a725-fb2973adb59c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This would only work if there were 100 minutes in an hour. How many minutes are there in an hour?",
         "B": "I think you have converted 0.3 hours to 3 minutes, but that is not quite right. 0.3 means 3/10. Start by finding 1/10 of an hour in minutes",
@@ -103,7 +103,7 @@
     {
       "questionId": 79667,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a34950d0-d259-41f4-b754-568ce9d879f4.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanations": {
         "A": "As there are 60 minutes in an hour we need to multiply 1.4 by 60. This gives us 84 minutes. If you are finding the 0.4 of an hour tricky then try thinking of it as 4/10 of an hour",
         "B": "I think you have converted 0.4 hours to 40 minutes, but that is not quite right. 0.4 means 4/10 of an hour. Start by finding 1/10 of an hour in minutes",

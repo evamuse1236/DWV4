@@ -43,7 +43,7 @@
     {
       "questionId": 129151,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/28a9d162-f4e2-41f4-91e6-53d53aca7450.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanations": {
         "A": "We read up from the x axis first (3) and then across from the y axis (2). This is written as a coordinate using brackets and a comma (3,2). An easy way to remember this is that it is alphabetical. x before y",
         "B": "I think you've read the correct numbers from the axes, but think carefully about the order. We write alphabetically so it should read (x,y)",
@@ -55,7 +55,7 @@
     {
       "questionId": 129291,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/99f9e772-6e53-4275-b085-9b1d75e5af88.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've read the correct numbers from the axes, but think carefully about the order. We write alphabetically so it should read (x,y)",
         "B": "We read up from the x axis first (2) and then across from the y axis (3). This is written as a coordinate using brackets and a comma (2,3). An easy way to remember this is that it is alphabetical. x before y",

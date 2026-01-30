@@ -91,7 +91,7 @@
     {
       "questionId": 79630,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/235b9a4d-1930-402b-bf9d-3155d1159288.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is the number of tonnes in 1 gram! We need the number of grams in 1 tonne.",
         "B": "Not quite. This is the number of kilograms in 1 tonne or the number of grams in 1 kilogram. We need the number of grams in 1 tonne.",
@@ -103,7 +103,7 @@
     {
       "questionId": 124606,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dfe3e7de-43f4-4025-9f25-44bbfc0b4bb8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is the number of tonnes in 1 gram! We need the number of grams in 10 tonnes.",
         "B": "Not quite. This is the number of kilograms in 1 tonne or the number of grams in 1 kilogram. We need the number of grams in 10 tonnes.",
@@ -139,7 +139,7 @@
     {
       "questionId": 79632,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/817cf626-72b8-40b7-88fd-58a7005b3f73.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is the number of feet in half a mile. We need the number of inches.",
         "B": "We have 1 mile = 1760 yards = 1760 × 3 = 5280 feet, then 5280 feet = 5280 × 12 = 63,360. Dividing this by 2 to find half a mile gives us 31 680 inches for half a mile.",
@@ -151,7 +151,7 @@
     {
       "questionId": 124608,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a10aebbe-8335-47f3-a890-864e3de7b911.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have forgotten to convert to feet before converting to inches.",
         "B": "This is the number of inches in 1 mile. We need the number of inches in 4 miles.",

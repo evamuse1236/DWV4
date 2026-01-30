@@ -79,7 +79,7 @@
     {
       "questionId": 158764,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c29840e7-6f45-4231-b41d-bde7364fac1a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "If we move up a square we go into the previous row of 10, from 79 to 69. This is subtracting 10, so which direction would be adding 10?",
         "B": "If we move down a square we go into the next row of 10, from 79 to 89. This is the same as adding 10.",
@@ -115,7 +115,7 @@
     {
       "questionId": 158964,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dc3eb27b-b4a1-4fec-8c2c-179908ea436f.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The three times table is highlighted in purple: 3, 6, 9,... If we double these we get 6, 12, 18,... which is the 6 times table. This statement is true. Try using examples like this to check the other statements.",
         "B": "If we add the red number (2 times table) and the yellow number (4 times table) in each column, we get 2+4 = 6, 4 + 8 = 12, 6+12 = 18, etc. which is the 6 times table. This statement is true. Try using examples like this to check the other statements.",

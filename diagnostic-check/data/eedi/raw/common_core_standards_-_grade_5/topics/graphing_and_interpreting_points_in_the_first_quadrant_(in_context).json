@@ -91,7 +91,7 @@
     {
       "questionId": 158487,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/69264988-b24e-4ee3-add4-c02491950056.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have swapped round x and y. The movie theater is at the coordinates (3,4)...",
         "B": "The coordinates (4,3) mean we go along the x-axis 4 and then up the y-axis 3. This gets us to the picture of the grocery bag which, looking at the key, represents a grocery store!",

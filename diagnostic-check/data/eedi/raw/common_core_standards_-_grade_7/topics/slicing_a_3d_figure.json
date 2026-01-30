@@ -19,7 +19,7 @@
     {
       "questionId": 166800,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ed7c669e-21ba-4496-affc-4a80ae023724.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You're correct that the cross-section is a 4 sided shape with 4 right-angles. But we are not told that the height and width of the prism are equal, so the cross-section cannot be a square.",
         "B": "The cross-section, shown in purple, has 4 angles. The angle at each corner of the cross-section is a right-angle because the angles between faces of a right-rectangular prism are right-angles. Therefore the cross-section is a 4 sided shape with 4 right-angles, so it must be a square or a rectangle. We are not told that the height and width of the prism are equal, so the cross-section cannot be a square, it is a rectangle.",
@@ -31,7 +31,7 @@
     {
       "questionId": 167050,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f47a2e27-11ea-4ac3-9b62-b3ff5933e490.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is a 2D representation of a 3D shape, so the cross-section will look different in 3D. Think about the angle between each pair of joined faces in a cube. This is the size of the angle at each of the corners of the cross-section, this will help you to name the shape.",
         "B": "Although the drawing looks like a rhombus, this is a 2D representation of a 3D shape, so the cross-section will look different in 3D. Think about the angle between each pair of joined faces in a cube. This is the size of the angle at each of the corners of the cross-section, this will help you to name the shape..",
@@ -103,7 +103,7 @@
     {
       "questionId": 167053,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/06d520ac-1a98-41bb-b01c-757061ae0a14.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "We could only get a trapezoid if slicing through the base, but we're slicing parallel with the base, through the 4 triangular faces.",
         "B": "When we slice parallel to the base, we slice through 4 edges and 4 faces, how many vertices (corners) will this create in our cross-section?",

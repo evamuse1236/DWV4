@@ -25,7 +25,7 @@
     {
       "questionId": 166318,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8ee4c2ce-bead-45a1-a6b6-c24e596a11ce.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This inequality shows a cost of $4 per ride and $3.50 admission ticket. If '𝑥' is the number of rides, how should we write this instead?",
         "B": "I think you've got your inequalities mixed up. > is 'greater than'. Can he spend greater than 60 if he only has $60?",
@@ -133,7 +133,7 @@
     {
       "questionId": 166549,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ed324439-1178-4a1a-b973-0866022a684b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "When solving an inequality, we want to do things in the opposite order. So if the inequality is 2𝑥 + 10, we would subtract the 10 first!",
         "B": "-32 subtract 10 is -42. If we divide by 2, we get -21. As the question says 'no more than', it can be equal to or less than, which is the ≤ symbol.",

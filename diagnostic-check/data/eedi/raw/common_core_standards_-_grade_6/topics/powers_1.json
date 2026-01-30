@@ -79,7 +79,7 @@
     {
       "questionId": 78789,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db794b01-91ae-47fa-a234-48343da9a6cb.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've remembered that 3 is the power to find a cube number, however 3 isn't a cube number itself. To find a cube number, you multiply a number by itself 3 times, for example, 10 x 10 x 10 = 1000.",
         "B": "36 is a square number, but not a cube number. To find a cube number, you multiply a number by itself 3 times, for example, 10 x 10 x 10 = 1000.",

@@ -37,7 +37,7 @@
     {
       "questionId": 131581,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c038bf0c-cd7e-4c52-84d0-abf24726fecd.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanations": {
         "A": "Applying the order of operations, you need to complete the division calculation first before any of the addition ones so the sum becomes: 3 + 3 + 1 which gives 7.",
         "B": "I think you have accidentally calculated both addition steps and then divided the resulting answers. Unfortunately we have to apply the order of operations law (BIDMAS/ BODMAS) so we need to calculate the division step before the addition steps.",
@@ -49,7 +49,7 @@
     {
       "questionId": 133774,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8f0b5b34-45ca-48ff-9db5-c20a9629c0a8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have calculated the sum from left to right however we need to apply the order of operations rules (BIDMAS/BODMAS). This means completing the division calculation before the addition ones when working out the answer.",
         "B": "I think you have divided by (2+2) however we need to apply the order of operations rules (BIDMAS/BODMAS). This means completing the division calculation before the addition ones when working out the answer.",

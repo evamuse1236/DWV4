@@ -79,7 +79,7 @@
     {
       "questionId": 159343,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f645fefe-c70c-4945-b9fa-d0b3ffc7f1ce.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "We want to start measuring at 0 so we can count up the centimeters... Which ruler has put 0 next to the start of the line?",
         "B": "You've matched the line to the edge of the ruler, but it has to be at the 0 end so that we can count up from 0.",
@@ -91,7 +91,7 @@
     {
       "questionId": 159565,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2683935f-894b-4aaf-890b-0b7876c00938.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "We want to start measuring at 0 so we can count up the centimeters... Which ruler has put 0 next to the start of the line?",
         "B": "We place the ruler so that the line starts at 0, then we can count along to see how many centimeters long it is.",

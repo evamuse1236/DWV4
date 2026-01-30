@@ -109,7 +109,7 @@
     {
       "questionId": 78416,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9e2c57fe-3d25-43dd-b92f-ee1dad70d335.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "There is a correlation here. If the height value increases whilst the weight value decreases, this would be negative correlation. If height increases whilst the weight increases this would be positive correlation. What is happening in this scatter diagram? To decide whether the correlation is strong or weak, you need to ask yourself how close together the data values are. The closer they are, the stronger the correlation.",
         "B": "Not quite. For negative correlation one of the variables must decrease as the other increases. In this scatter diagram as height increases weight is also increasing. What do we call this type of correlation?",

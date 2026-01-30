@@ -91,7 +91,7 @@
     {
       "questionId": 154763,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/663e3471-28a5-4ec6-b7cd-05a25e429d70.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "A",
       "explanations": {
         "A": "Here we have 4 (-1) counters and 2 (-1) counters, showing -4 + -2 = -6",
         "B": "Check the counters you have used. We are trying to add together -4 and -2, so what colour counters will we use for each?",
@@ -139,7 +139,7 @@
     {
       "questionId": 154765,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/67553701-f453-41e8-b67a-6b5ba9e368c5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Here we have 2 (-1) counters and we have added 3 (-1) counters. Does that match the calculation in the question?",
         "B": "We start with the 2 (-1) counters on the left. We then add 3 lots of zero pairs which don't change the value of what we have. We can now see that subtracting 5 of the (-1) counters will leave us with 3 (+1) counters. So -2 - -5 = 3",
@@ -151,7 +151,7 @@
     {
       "questionId": 154778,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f6d8b479-69ba-4e24-aa9c-87181b8af070.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Here we have 3 (-1) counters and we have added 1 more (-1) counter. Does that match the calculation in the question?",
         "B": "Nearly! Here we have started with the 3 (-1) counters and have added a zero pair to help with our calculation, but what number is left at the end? Does that match our calculation?",

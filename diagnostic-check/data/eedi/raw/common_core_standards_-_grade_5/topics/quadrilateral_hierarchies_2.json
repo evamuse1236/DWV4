@@ -31,7 +31,7 @@
     {
       "questionId": 158659,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/85da9e38-c630-43a5-90de-54594a91c36b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "A rhombus is any quadrilateral with all equal sides. Do all rectangles have equal sides? Think about the properties of a rectangle (has 4 sides: 2 pairs of parallel sides, 4 right angles) and compare these with each possible answer.",
         "B": "A quadrilateral is any shape with four sides. Every rectangle has 4 sides so every rectangle is a quadrilateral.",
@@ -55,7 +55,7 @@
     {
       "questionId": 158660,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5fb87450-7b2c-4b36-b3dd-d6f4496b483b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "A rhombus is any quadrilateral with all equal sides. Do all parallelograms have equal sides? Think about the properties of a parallelogram (has 4 sides: 2 pairs of parallel sides) and compare these with each possible answer.",
         "B": "Parallelograms and rectangles both have two pairs of parallel sides but rectangles also have 4 right-angles. Do all parallelograms have 4 right-angles? Think about the properties of a parallelogram (has 4 sides: 2 pairs of parallel sides) and compare these with each possible answer.",
@@ -79,7 +79,7 @@
     {
       "questionId": 158661,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7b881dad-5c6a-4e05-9507-91f44c5612c0.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanations": {
         "A": "All rhombuses have two pairs of parallel sides, so all rhombuses are parallelograms - they are a special case that also has 4 equal sides.",
         "B": "A parallelogram is any quadrilateral with two pairs of parallel sides. What does that tell us about any rhombus?",

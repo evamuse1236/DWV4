@@ -43,7 +43,7 @@
     {
       "questionId": 75905,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5dc330ee-3ad3-4c1e-86b6-83536a8f67e1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This answer is actually the smallest value. We can write 5 as 5.0000 which might help you see why it is smaller than the other values.",
         "B": "This number is the greatest. All the numbers have a 5 in the units column so we look at the digit in the first decimal place. 2 is the largest number in this tenths position so 5.2 is greatest.",
@@ -55,7 +55,7 @@
     {
       "questionId": 76053,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bfd3a4de-bbc5-4a37-b41f-6183907ed908.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This answer is actually the smallest value. We can write 7 as 7.0000 which might help you see why it is smaller than the other values.",
         "B": "I think you might have chosen the option that contains the largest number. However, when we compare numbers we work from left to right. This option has a 0 in the first decimal place. How does that compare to the other options?",

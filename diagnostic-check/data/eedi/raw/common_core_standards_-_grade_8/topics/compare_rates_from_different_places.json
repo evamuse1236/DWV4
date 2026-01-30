@@ -91,7 +91,7 @@
     {
       "questionId": 165565,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c337a1aa-188f-42ef-beee-57fcc7e35436.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is how far Airplane A travels in 1 hour. How far does Airplane B travel in 1 hour? Compare the values to see which has traveled further...",
         "B": "Looking at the graph, we can see Airplane A has traveled 600 miles after 1 hour. Airplane B has the equation 𝑦 = 550𝑥, so after 1 hour will have traveled 550 miles. 600 - 550 = 50 therefore Airplane A has traveled 50 miles further in 1 hour!",

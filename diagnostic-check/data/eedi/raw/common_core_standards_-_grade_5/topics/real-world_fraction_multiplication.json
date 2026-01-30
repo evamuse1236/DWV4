@@ -19,7 +19,7 @@
     {
       "questionId": 173933,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7fb0068b-2dba-4265-bb3d-771542d449a1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you have correctly identified that 'of' means you need to do a calculation with the two fractions, but you have divided instead of multiplying. Also, check your method for dividing fractions, as there seems to be a mistake in the calculation.",
         "B": "The word 'of' in this type of problem means you need to multiply the fractions together, not divide them.",
@@ -43,7 +43,7 @@
     {
       "questionId": 173934,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9601989e-5839-42de-b823-0c0958cbe357.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanations": {
         "A": "To find the total amount of flour, you need to multiply the amount per person (1/4) by the number of people (5 1/2). The best way to do this is to convert 5 1/2 to an improper fraction first. 5 and 1/2 is 11/2, so the calculation is 1/4 x 11/2 = 11/8 which converts to 1 and 3/8 as a mixed number.",
         "B": "You are correct to multiply, but it looks like you have only multiplied the fraction parts together (1/4 x 1/2 = 1/8). To multiply mixed numbers, you should convert them to improper fractions first.",
@@ -55,7 +55,7 @@
     {
       "questionId": 173994,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/65e8f804-be1a-478c-b148-533f449831e3.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanations": {
         "A": "When multiplying a mixed number by a fraction, it's best to change the mixed number into an improper fraction first. It looks like you may have only multiplied the fraction parts and left the whole number part as it was.",
         "B": "To find the total amount of sugar, you need to multiply the amount per person (1/5) by the number of people (6 and 1/2). To multiply mixed numbers, it's easiest to convert them to improper fractions first. 6 and 1/2 is 13/2, so the calculation is 1/5 x 13/2 = 13/10. Converting to a mixed number gives 1 and 3/10.",

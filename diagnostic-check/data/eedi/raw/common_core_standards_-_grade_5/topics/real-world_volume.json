@@ -25,7 +25,7 @@
     {
       "questionId": 173928,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8f62885b-d40f-4130-bd11-c36e1431eef2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The question asks for the 'total volume'. This means you should add the two volumes together, not divide them.",
         "B": "It looks like you have found the difference between the two volumes. To find the 'total volume', you need to add them.",
@@ -49,7 +49,7 @@
     {
       "questionId": 173929,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dc2c83b4-94f9-4dd9-87dd-4aa056ce1334.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanations": {
         "A": "To find the total amount of water the trough holds, you need to add the volumes of the two sections together. The total volume is 7 m³ + 4 m³ = 11 m³.",
         "B": "The question asks for the 'total' amount. This is a clue to add the two volumes together. It looks like you have multiplied them.",
@@ -61,7 +61,7 @@
     {
       "questionId": 173989,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ad3bd67f-1e3f-4d89-8365-eb6482b75041.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The question asks for the total amount of water. It looks like you have found the difference between the two sections instead. 'Total' is a clue to add.",
         "B": "It seems you have multiplied the two volumes. To find the total volume when you are combining amounts, you should add them together.",

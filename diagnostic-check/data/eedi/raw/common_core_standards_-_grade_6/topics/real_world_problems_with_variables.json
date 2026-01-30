@@ -103,7 +103,7 @@
     {
       "questionId": 166483,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/92371ad2-cd6b-443c-baf6-4b1713be2bae.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "'per minute' means that for every 1 minute, we would pay $2. That means we want to multiply $2 by 28 minutes, not add!",
         "B": "I think you have put d as the cost per minute, however we are told in the question that the cost per minute is $2. We are trying to work out the total cost (d) - how could we use that using the cost per minute and the number of minutes given?",
@@ -115,7 +115,7 @@
     {
       "questionId": 166257,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c05e5f7a-4be7-468c-bbe6-00c85d31f9e0.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have put 'd' as the total savings, but we are told in the question that 'd' represents the amount saved per month. We already know the total amount of savings - can you spot it in the question?",
         "B": "'per month' means that for every 1 month, Ina would save $d. That means we want to multiply the number of months, not add to it!",
@@ -127,7 +127,7 @@
     {
       "questionId": 166484,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c58e2989-35c8-487d-b7ba-1efe67519b62.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "'per month' means that for every 1 month, Ina would save $d. That means we want to multiply the number of months, not add to it!",
         "B": "You have answered the question as if Ina saves $800 per month and has saved a total of $18. What should we be multiplying by the amount of months?",

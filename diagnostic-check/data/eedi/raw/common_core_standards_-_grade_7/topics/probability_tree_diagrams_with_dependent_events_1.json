@@ -25,7 +25,7 @@
     {
       "questionId": 109486,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/217301e2-f235-4e5e-9032-c4397318dd86.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Keep going! This is one of the correct paths, but there are others that result in an outcome of at least 1 black counter too",
         "B": "Paths 2, 3 and 4 all include at least one black counter.",
@@ -37,7 +37,7 @@
     {
       "questionId": 109497,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/312add8e-75df-4948-9d91-b4ce209cdcaf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Keep going! This is one for the correct paths, but there are others that result in an outcome of at least 1 red counter too",
         "B": "Keep going! This are two correct paths, but there is another that results in an outcome of at least 1 red counter too",

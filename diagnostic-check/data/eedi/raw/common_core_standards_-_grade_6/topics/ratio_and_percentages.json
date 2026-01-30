@@ -31,7 +31,7 @@
     {
       "questionId": 143733,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/adb32b7d-f7ac-4a2e-895f-63e4fff8a3db.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "A",
       "explanations": {
         "A": "Kate gets 60%, so Isaac gets 40%. As a ratio, this is 60:40. This ratio can be simplified if both values are divided by 20, the highest common factor. This will give a ratio of 3:2.",
         "B": "Not quite. It looks like you've given a ratio of Kate's share to the whole amount. The total amount is 100% - Kate gets 60% and Isaac gets the rest. What is \"the rest\" if Kate + Isaac = 100%?",
@@ -43,7 +43,7 @@
     {
       "questionId": 143753,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/28101b72-34d5-49c2-bad7-d2b17d206366.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. It looks like you've given a ratio of Kate's share to the whole amount. The total amount is 100% - Kate gets 40% and Isaac gets the rest. What is \"the rest\" if Kate + Isaac = 100%?",
         "B": "I think you have written Kate's percentage as a ratio and simplified it. The total amount is 100% - Kate gets 40% and Isaac gets the rest. What is \"the rest\" if Kate + Isaac = 100%?",
@@ -55,7 +55,7 @@
     {
       "questionId": 143734,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/09cfe15a-59ce-44ce-8693-08a3fa9a711a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This ratio shows Kate gets 5 times as many parts as Issac. We want her to have 50% more, so one and a half times Isaac's amount. What would this be as a ratio? Make sure it contains integers.",
         "B": "1:1 means that both Kate and Issac would get the same amount. We want Kate to have 50% more, so one and a half times Isaac's amount. What would this be as a ratio? Make sure it contains integers.",

@@ -97,7 +97,7 @@
     {
       "questionId": 166700,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/be1c8338-ebf8-4d9e-bc9f-f5412580a3cc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You're right that this is the missing part of the model, but how could we now use the whole model to see how many times 15 fits into 1575?",
         "B": "Not quite - I think you've got your place values mixed up here. 100 + 5 isn't 150!",
@@ -109,7 +109,7 @@
     {
       "questionId": 166950,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d486cb36-b72d-4679-825b-9d757c14c052.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite - the 25 is what we are dividing by! We are looking at the numbers on the top of the model to find our answer...",
         "B": "25 goes into 125 5 times, which means in total it can go into 2625 105 times if we add the 100 on to that!",

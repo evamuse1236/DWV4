@@ -133,7 +133,7 @@
     {
       "questionId": 165457,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/67c21b6e-f683-4f16-90e4-cf813470b83a.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you've given the number that is closest to 0 rather than furthest from 0!",
         "B": "The lowest temperature doesn't mean it's the furthest away from 0. Try thinking of all of these numbers on a number line. Which one would take the most jumps from 0?",
@@ -145,7 +145,7 @@
     {
       "questionId": 165462,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/22be7811-40be-4c72-8fbd-a47c845ce716.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The lowest temperature doesn't mean it's the furthest away from 0. Try thinking of all of these numbers on a number line. Which one would take the most jumps from 0?",
         "B": "Remember that negatives get bigger the further away they are from 0! -5 is only 5 jumps away from 0, which means it's one of the closest values from this table!",

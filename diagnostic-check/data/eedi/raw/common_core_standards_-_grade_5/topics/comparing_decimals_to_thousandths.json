@@ -85,7 +85,7 @@
     {
       "questionId": 156709,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d1ef705-082c-4764-a23e-25b11728df4e.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks as if you've picked the first number from the list. We're looking for the smallest number from the list.",
         "B": "In order to find the smallest, we need to compare units with units and tenths with tenths and so on. None of them have a units. Which has the smallest amount of tenths?",
@@ -97,7 +97,7 @@
     {
       "questionId": 156727,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a5548a0a-d4b7-46e1-9292-fff7e8b144e2.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks as if you've picked the first number from the list. We're looking for the smallest number from the list.",
         "B": "0.3 is the smallest decimal. It has no units and 3 tenths.",
