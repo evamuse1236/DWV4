@@ -37,7 +37,7 @@
     {
       "questionId": 108125,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7347545c-081e-4fd1-9431-ab56183944fe.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Remember that the table is showing numbers of TVs in each household, not numbers of people.",
         "B": "We have 2, 7 and 14 in this row. Look carefully at the column heading above the 2. What does the 2 represent?",
@@ -97,7 +97,7 @@
     {
       "questionId": 108135,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c486a77e-bdc8-444a-865e-1965c701e1c9.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you might have counted the number of categories (rows). For the mean, we want the number of TVs per household. Do we need to divide by the number of categories, the number of TVs or the number of households?",
         "B": "The total 'TVs x Frequency' of 44 is the total number of TVs. For the mean, we want total TVs per household, not households divided by TVs.",

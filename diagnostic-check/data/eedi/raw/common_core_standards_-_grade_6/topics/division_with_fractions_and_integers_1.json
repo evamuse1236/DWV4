@@ -133,7 +133,7 @@
     {
       "questionId": 130261,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d5e8f96c-0836-4548-923a-2e0054c2324b.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanations": {
         "A": "We do not divide the denominator when dividing by an integer. To visualise this, imagine a cake split into 9 pieces. 6 slices are left, and you share those between 3 people. How much of the cake does each person get?",
         "B": "When dividing a fraction by an integer, we do sometimes multiply the denominator by that integer, but we do not do it at the same time as dividing the numerator. 2/18 is effectively 9 times smaller, rather than 3 times smaller.",

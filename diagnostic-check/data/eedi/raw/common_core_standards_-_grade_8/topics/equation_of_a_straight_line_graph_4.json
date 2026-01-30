@@ -109,7 +109,7 @@
     {
       "questionId": 107374,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/de492d8d-5fb7-452c-b85a-c65b2fb701ef.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have tried to find the m (gradient) rather than the c (y intercept)",
         "B": "This is the coordinate of where the line crosses the y axis, but we just need the y coordinate.",

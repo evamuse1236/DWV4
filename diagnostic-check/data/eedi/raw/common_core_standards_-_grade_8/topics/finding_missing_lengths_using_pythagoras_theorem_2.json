@@ -85,7 +85,7 @@
     {
       "questionId": 79641,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b008eed8-37ea-40a6-a063-d3efee3b4d75.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you calculated √(14² - 4²) = 13.4 cm and then doubled it. That would work if both parts of the line PQ were equal, but they are not. Use the c² - b² = a² form of Pythagoras' Theorem for the left triangle too.",
         "B": "Notice that the two sides of the base need to be calculated individually as they are not equal. Use the c² - b² = a² form of Pythagoras' Theorem for each triangle here.",

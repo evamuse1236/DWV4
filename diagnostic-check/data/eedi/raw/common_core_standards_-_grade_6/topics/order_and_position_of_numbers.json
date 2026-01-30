@@ -43,7 +43,7 @@
     {
       "questionId": 166762,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/64bf45b3-a254-4be5-88d3-ff723cdcac2e.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "A",
       "explanations": {
         "A": "> is a great than symbol. If 𝓅 is greater than 𝓆, then 𝓆 must be lower down on the number line.",
         "B": "Not necessarily! I think you might be assuming that 𝓅 is 0, but it could be any number.",
@@ -55,7 +55,7 @@
     {
       "questionId": 167012,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/baf75493-ac56-4f63-8354-ff29c196df6b.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you might have your inequality symbol mixed up. < means less than. If 𝓅 is less than 𝓆, what does that mean about where 𝓆 would be on this number line?",
         "B": "Not necessarily! I think you might be assuming that 𝓅 is 0, but it could be any number.",
@@ -127,7 +127,7 @@
     {
       "questionId": 167015,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7f1e75c7-772e-4aaf-9348-bba5757623e1.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've got your symbols mixed up! > does not mean less than.",
         "B": "Sea level is 0 and the inequality given says greater than (>) 0, so the location must be above sea level.",

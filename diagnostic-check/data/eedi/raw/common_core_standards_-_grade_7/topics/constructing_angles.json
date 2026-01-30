@@ -127,7 +127,7 @@
     {
       "questionId": 135555,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d1cb2dfb-732c-4495-bb74-4594b7bb7ad3.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanations": {
         "A": "A triangle with 3 equal will have angles of 60 degrees. Think about what we could do next to have an angle of 30 degrees.",
         "B": "A perpendicular bisector will construct a 90 degree angle. Bisecting this angle will split it into 2 equal angles of 45 degrees.",
@@ -151,7 +151,7 @@
     {
       "questionId": 135556,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6cd29e09-61e3-4948-9781-35ec0048ac8b.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, remember, a scalene triangle has three different side lengths.",
         "B": "Imagine joining up the three dots, will any of them form an angle of 90 degrees?",

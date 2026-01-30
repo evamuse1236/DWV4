@@ -121,7 +121,7 @@
     {
       "questionId": 166648,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/57804268-cc5f-4578-b6b8-9b4269581c0b.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanations": {
         "A": "The shop fills 5 boxes completely and there are 8 trains in each box. 5 x 8 = 40 therefore, there must be more than 40 trains. 49 would mean another full box could be filled so the answer must be 43. This would be the 8 full boxes and 3 trains in the next box!",
         "B": "This would fill up 6 boxes completely and have 1 train in a seventh box...",
@@ -133,7 +133,7 @@
     {
       "questionId": 166898,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a4d5e3f3-5632-40bd-a6c1-2ae514ba913c.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This wouldn't fill up the 7 boxes completely. Remember there are 6 trains in each box. We want to fill up 7 boxes completely and have some in an eighth box...",
         "B": "The shop fills 7 boxes completely and there are 6 trains in each box. 7 x 6 = 42 therefore, there must be more than 42 trains. 48 would mean another full box could be filled so the answer must be 44. This would be the 7 full boxes and 2 trains in the next box!",

@@ -43,7 +43,7 @@
     {
       "questionId": 158124,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/95b7ccc3-01e7-426b-b98b-b1a80dc632f1.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanations": {
         "A": "4/5 is the same as 4 x 1/5 so this calculation is equivalent",
         "B": "5 x 1/4 = 5/4 we want 4/5.. What multiplied by what would give 4/5?",
@@ -115,7 +115,7 @@
     {
       "questionId": 158127,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c6d02c48-86fa-4a28-bc9f-8eefbe7807c9.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "A",
       "explanations": {
         "A": "Remember n × (a/b) = (n × a)/b so 9 x (2/5) = (9 x 2)/5",
         "B": "You have accidentally multiplied both the numerator and denominator. Remember n × (a/b) = (n × a)/b...",
@@ -127,7 +127,7 @@
     {
       "questionId": 158294,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a42a8a2a-00d2-4aa8-85ef-70984a18ba69.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have accidentally multiplied both the numerator and denominator. Remember n × (a/b) = (n × a)/b...",
         "B": "This would be equivalent to 7 ÷ 3/4, we are multiplying. Remember n × (a/b) = (n × a)/b...",

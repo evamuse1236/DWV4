@@ -109,7 +109,7 @@
     {
       "questionId": 155852,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b6b580de-7ce1-4d77-b8d9-e1632049afae.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have added 3 to 9, rather than subtracted.",
         "B": "Using BIDMAS to remember our order of operations, we would calculate the bracket first before multiplying by 10. Therefore, 10(9 - 3) = 10 x 6 = 60.",
@@ -121,7 +121,7 @@
     {
       "questionId": 155836,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/55a742b6-7f15-4d3f-905e-d2b00e24fe41.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have assumed that because there are two negative signs, we would add the bracket on. Is the value of the bracket positive or negative? Use the usual rules to subtract that value from 10.",
         "B": "I think you have assumed that because there are two negative signs, we would add the bracket on, but also calculated the bracket incorrectly. Is the value of the bracket positive or negative? Use the usual rules to subtract that value from 10.",

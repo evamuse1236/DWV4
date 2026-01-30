@@ -67,7 +67,7 @@
     {
       "questionId": 107181,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c7e682ad-8e4b-4123-9673-9f45e7077873.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you may be confusing the gradient with y-intercept or x-intercept. This line crosses the x and y axis at 3, but to find the gradient, we calculate the change in y, over the change in x.",
         "B": "Look carefully at the relationship between x and y. As x increases, y decreases, so this line shows a negative gradient.",

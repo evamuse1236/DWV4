@@ -67,7 +67,7 @@
     {
       "questionId": 166819,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5da8a313-630d-4345-86ae-f64b9170d968.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Remember that we have the point (0,0) and each number should stand for something. Although one 0 does stand for chocolate bars, do not forget about the second 0...",
         "B": "Even though the first point on the graph is (0,0), it does not necessarily mean that the first chocolate bar cost $0. Look at the labels on the 𝑥 and 𝑦 axes and apply them the correct values to interpret what our point means.",
@@ -79,7 +79,7 @@
     {
       "questionId": 167069,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3326fd19-7298-4c26-8391-96e4f5d1be17.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Even though the first point on the graph is (0,0), it does not necessarily mean that the first can of lemonade costs $0. Look at the labels on the 𝑥 and 𝑦 axes and apply them the correct values to interpret what our point means.",
         "B": "The 𝑥-axis indicates that 𝑥 values represent the number of cans of lemonade and the 𝑦-axis indicates that 𝑦 values represent the cost in dollars ($). Since our point is (0,0) and points are in the format (𝑥,𝑦), we can state that 0 cans of lemonade would cost $0.",

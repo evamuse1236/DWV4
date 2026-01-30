@@ -49,7 +49,7 @@
     {
       "questionId": 158119,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4e4d546d-4619-4ff8-a037-712c04a84dcc.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanations": {
         "A": "Each piece represents 1/4 as it is a whole split into 4 parts with one part shaded, we have 5 pieces so the model represents 1/4 x 5",
         "B": "Look at the shading, each piece isn't worth 4/4, what is it worth?",
@@ -61,7 +61,7 @@
     {
       "questionId": 158286,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/378cf4ba-86b2-4c3d-987a-2b690a3cd346.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Look at the shading, each piece isn't worth 8/8, what is it worth?",
         "B": "Each piece represents 1/8 as it is a whole split into 8 parts with one part shaded, we have 3 pieces so the model represents 1/8 x 3",
@@ -85,7 +85,7 @@
     {
       "questionId": 158287,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/252633e5-7ba2-4404-9fad-e5480939b565.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This model represents 3 x 5/5. We are looking for the model that represents 3 x 1/5...",
         "B": "This model represents 1 x 1/5. We need a model with 3 wholes and 3 pieces of 1/5 shaded in...",
@@ -97,7 +97,7 @@
     {
       "questionId": 158121,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fe5de789-a31d-4dea-a27b-44827ed4458e.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "C",
       "explanations": {
         "A": "0 is not what each jump is worth, look at the number line again to work out the value of each jump...",
         "B": "I think you have counted the number of lines, rather than the number of jumps...",
@@ -109,7 +109,7 @@
     {
       "questionId": 158288,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/87e91f01-9fcb-415b-891a-54166a3d3330.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanations": {
         "A": "Each jump is worth 1/7, we have 6 jumps and we end on 6/7 putting this together gives the calculation 1/7 x 6 = 6/7",
         "B": "To work out the calculation: find the value of each jump, how many jumps there are and what number the jumps end on...",
@@ -121,7 +121,7 @@
     {
       "questionId": 158122,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bb0da1ad-c0c4-4092-8ce0-284d131452b6.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "A",
       "explanations": {
         "A": "12/6 means 12 pieces of 1/6 so the missing number is 12",
         "B": "12/6 does equal 2 but we are working out how many 1/6 there are in 12/6...",

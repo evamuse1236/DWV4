@@ -121,7 +121,7 @@
     {
       "questionId": 167080,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dcd29ba4-9d62-411c-845d-64b4c8cdfa1d.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This conclusion is based on a single data point at the extreme end of one distribution. We need to look at how much overlap there is between all the points in both groups.",
         "B": "This is true. There is a large overlap, with most of the dots in both groups falling between 7 and 11.",

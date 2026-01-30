@@ -43,7 +43,7 @@
     {
       "questionId": 95526,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/57e9f5ee-53f6-4d6d-8b6e-0fd5f84d54da.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. If I know 2 side lengths of a triangle does that mean there is only one option for the third length? Try holding two pens together as the two sides and investigating what happens when you change the angle between them.",
         "B": "You do not need a protractor to construct some types of triangles. What instrument could you use instead?",
@@ -127,7 +127,7 @@
     {
       "questionId": 96264,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3469928c-9b84-4c7a-b3ee-794ca0a19272.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you might have doubled the 15cm side. This will be longer than the diagonal we are interested in. Try to cosntruct an accurate drawing of this shape and measure the missing diagonal.",
         "B": "Not quite. You might have estimated. Try to construct an accurate drawing of this shape, starting with your base line and then using your compasses at either end, set to 15cm. If they won't stretch this far then you might have to use a scale.",

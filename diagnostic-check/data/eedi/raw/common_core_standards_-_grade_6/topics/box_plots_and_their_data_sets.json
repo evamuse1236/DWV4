@@ -103,7 +103,7 @@
     {
       "questionId": 166778,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/63650b10-ff38-4ded-a92b-3a7cbaf03fc4.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. When you find your lower and upper quartiles, you need to find the middle of the values below and above the median.",
         "B": "This data set has the correct median, but doesn't show the correct minimum and maximum to reflect the box plot.",

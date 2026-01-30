@@ -79,7 +79,7 @@
     {
       "questionId": 91637,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fac9769e-f5ba-4c73-92da-fd8c1b769d3c.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanations": {
         "A": "The input is n. This goes into the first stage of the function machine, where it is divided by 5. This produces n/5. This value (n/5) all goes into the next stage where 3 is added. This gives an output of (n/5) ＋ 3 which is Jo's answer. Paul's answer of (n ＋ 3)/5 represents a function machine where 'add 3' is the first stage, followed by 'divide by 5'.",
         "B": "Be careful! Have a look again at the function machine, I think you have mixed up the order of the operations.",

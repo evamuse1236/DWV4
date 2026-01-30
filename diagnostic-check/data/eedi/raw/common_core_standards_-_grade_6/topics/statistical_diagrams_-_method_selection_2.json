@@ -91,7 +91,7 @@
     {
       "questionId": 108097,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ca31de4c-6868-4775-97dc-4a5015b4beae.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "We do use the frequency to work out what we plot on the y axis, but we do a running total. What is this called?",
         "B": "We do plot the point on the upper bound of the group, but this tells us the the x coordinate. What do we plot up the side of a cumulative frequency diagram?",

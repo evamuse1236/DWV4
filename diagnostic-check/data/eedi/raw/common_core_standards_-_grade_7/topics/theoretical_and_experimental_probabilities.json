@@ -97,7 +97,7 @@
     {
       "questionId": 166834,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a497a407-a514-4397-910c-00284dd5a4f9.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Although every number from 1 to 6 was rolled, their frequencies are very uneven so it wouldn't suggest it was a fair die. We wouldn't expect the frequencies to all be the same in this experiment but they should be close. Take a look at the frequencies, can you choose the correct explanation now?",
         "B": "Although we would expect each number to be rolled about (120/6) 20 times, in an experiment they will usually vary because of random chance. We'd expect them to be close but they don't need to be exact. Can you use this information to choose the answer now?",

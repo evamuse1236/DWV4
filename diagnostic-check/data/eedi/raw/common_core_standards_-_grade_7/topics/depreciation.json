@@ -115,7 +115,7 @@
     {
       "questionId": 143362,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/47b234be-1f15-4296-aa07-f0a82e979ba5.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanations": {
         "A": "We would get back to the original value if we added on 60% of the original value but we need to find out what percentage of the new value we have to add back on. Think about what percentage you have if something has depreciated by 60%. How much would you have to add back on to this percentage to get back to 100% as this is what percentage the original value is? Now think about what the added back on value is as a percentage of the depreciated percentage to get the answer.",
         "B": "If something depreciates by 60%, 40% would be the percentage we are left with but if we add 40% of 40% back on we would only get 56%. What percentage of 40% do we need to add back on to get back to 100%?",
@@ -127,7 +127,7 @@
     {
       "questionId": 143377,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9bb4984c-267b-4b80-9cf9-2a71b79494ec.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanations": {
         "A": "If an investment depreciates by 20% there is now only 80% remaining. We now need to think about what percentage to increase 80 by to get back to 100%, as this would be the original value. We need to add on 20% to get back to 100% which is a quarter of 80% as 80/4 = 20. One quarter as a percentage is 25% so to get back to the original value we need to add on 25% of the 80% remaining.",
         "B": "We would get back to the original value if we added on 20% of the original value but we need to find out what percentage of the new value we have to add back on. Think about what percentage you have if something has depreciated by 20%. How much would you have to add back on to this percentage to get back to 100% as this is what percentage the original value is? Now think about what the added back on value is as a percentage of the depreciated percentage to get the answer.",
@@ -139,7 +139,7 @@
     {
       "questionId": 143363,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ed80dee5-d089-4e2c-8ad0-021fe2461d0d.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanations": {
         "A": "We are subtracting 60% but to answer this question, we need to find out what this 60% is as a percentage of the 160% we now have.",
         "B": "If something appreciates by 60%, we would now have 160%. If we subtracted 40% of 160%, we would only get 96% as 10% of 160% is 16 and we are subtracting 4 lots of this, 16 x 4 = 64 so 160 - 64 = 96. What percentage of 160% do we need to subtract to get back to 100% - the original value?",

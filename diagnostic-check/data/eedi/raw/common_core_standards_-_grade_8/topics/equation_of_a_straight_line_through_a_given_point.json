@@ -91,7 +91,7 @@
     {
       "questionId": 131798,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eb12274c-bcb6-4132-90dc-a097202d0335.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Tom is correct, we can calculate the gradient from the points given. Can we tell where this line crosses the y axis from the information given in the question?",
         "B": "Katie is correct (0,5) is the y intercept as this is the point the line will cross the y axis. We can calculate the gradient by working the difference in the y coordinates divided by the difference in the x coordinates.",

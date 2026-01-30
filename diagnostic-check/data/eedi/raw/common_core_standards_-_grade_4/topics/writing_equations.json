@@ -67,7 +67,7 @@
     {
       "questionId": 158140,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/63d7fd00-376d-4413-8dd4-2585c04645c6.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This calculates the total of 12 and 6. To find the total number of swimmers, as there are 12 swimmers in each lane and 6 lanes, we need to do 12 lots of 6... How do we represent this mathematically?",
         "B": "If there are 12 swimmers in each lane and there are 6 lanes, to find the total number of swimmers we need to do 12 x 6. As s represents the total number of swimmers this gives the equation s = 12 x 6",
@@ -79,7 +79,7 @@
     {
       "questionId": 158307,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6a801a61-d55f-4fd8-bfe2-c580da9150fd.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "C",
       "explanations": {
         "A": "To find the total number of runners, as there are 9 runners in each lane and 6 lanes, we need to do 9 lots of 6... How do we represent this mathematically?",
         "B": "This calculates the total of 9 and 6. To find the total number of runners, as there are 9 runners in each lane and 6 lanes, we need to do 9 lots of 6... How do we represent this mathematically?",
@@ -103,7 +103,7 @@
     {
       "questionId": 158308,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e2a0b6c2-bfb9-4e12-b31f-4c5d77e54d99.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanations": {
         "A": "If each frittata contains 3 eggs and Sandra uses 72, to find the number of frittatas f we do f = 72 ÷ 3",
         "B": "This finds the difference. To find how many frittatas Sandra made, you need to find out how many 3s are in 72...",

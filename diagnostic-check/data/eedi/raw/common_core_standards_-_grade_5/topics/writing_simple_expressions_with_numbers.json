@@ -55,7 +55,7 @@
     {
       "questionId": 158311,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0f7344ec-dff1-45d5-ae41-af0162ad7c3e.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. PEMDAS means that we would do the multiplication first in this expression. However, the question is telling us to do the addition first. What can we include in the expression to ensure that the addition is done first?",
         "B": "The question is asking you to multiply by 5, not add it. Also, the question is telling us to do the addition first. What can we include in the expression to ensure that the addition is done before the multiplication?",
@@ -79,7 +79,7 @@
     {
       "questionId": 158312,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a8bdd0c5-0302-4a98-83bf-631f013e6d05.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanations": {
         "A": "We need to divide 8 by 3 first and then subtract 2. PEMDAS tells us to do the division before the subtraction, so this expression means that we will carry out the correct calculations in the correct order.",
         "B": "The question is asking you to first divide 8 by 3, but you have subtracted 3 from 8. Also check PEMDAS to make sure that the calculation will be carried out in the right order.",
@@ -91,7 +91,7 @@
     {
       "questionId": 158704,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/949b6fe6-8ef6-4d3e-863e-a1a2c202989a.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The question is asking you to first divide 7 by 2, but you have subtracted 2 from 7. Also check PEMDAS to make sure that the calculation will be carried out in the right order.",
         "B": "We need to divide 7 by 2 first and then subtract 5. PEMDAS tells us to do the division before the subtraction, so this expression means that we will carry out the correct calculations in the correct order.",

@@ -109,7 +109,7 @@
     {
       "questionId": 130077,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/15ac6dcb-a4c0-45a5-9e0c-b07f0223ed14.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanations": {
         "A": "Firstly, find 1/40. We can do this by finding 1/4 = 0.25, and then dividing by 10, 0.025. Then we can find 7/40 by multiplying by 7: 0.025x7 = 0.175.",
         "B": "0.7 is 7/10, but we want 7/40.",

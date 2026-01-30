@@ -49,7 +49,7 @@
     {
       "questionId": 78428,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eac0db75-1c7b-458b-b4ef-244c0449371c.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, It looks like you have picked the number with the largest base number. Look at the powers to see what place value column the number is in",
         "B": "I think you have picked the number with the most digits. This does not mean the number is bigger. Look at the power instead, this tells us the place value of the number.",
@@ -109,7 +109,7 @@
     {
       "questionId": 103988,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/786d16bc-349b-4668-8949-8c9eea37df15.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have reduced the value of the power because 40 has been divided by 10. The two sides are equal, so how can we cancel out a divide by 10?",
         "B": "The power of 10 shouldn't remain the same if the base number has changed. 40 has been divided by 10, so how can we cancel out a divide by 10",

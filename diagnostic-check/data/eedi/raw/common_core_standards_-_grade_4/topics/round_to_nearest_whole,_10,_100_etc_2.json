@@ -67,7 +67,7 @@
     {
       "questionId": 129116,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7c67893d-9c16-4add-abb2-f86587326fe3.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanations": {
         "A": "326 is between 300 and 400. If we draw out a number line we will see that it is closest to 300",
         "B": "326 is between 300 and 400, but which is it closest to? You may find drawing a number line helpful.",
@@ -79,7 +79,7 @@
     {
       "questionId": 129256,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9e8e988b-cd51-4768-b12d-7f0437297fb6.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "A",
       "explanations": {
         "A": "637 is between 600 and 700. If we draw out a number line we will see that it is closest to 600.",
         "B": "I think you have rounded to the nearest 50. Read the question carefully.",
@@ -91,7 +91,7 @@
     {
       "questionId": 129117,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/82559fff-ac5e-4122-ad78-be463bd3447d.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "1000 is the multiple of 1000 that is greater than 326. What multiple of 1000 is below 326?",
         "B": "This would be correct if our number was 3260, but it is 326. The multiples of 1000 are 0, 1000, 2000, 3000... Which one of these is 326 closest to?",
@@ -103,7 +103,7 @@
     {
       "questionId": 129257,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3c45881e-d091-4847-a00b-3c515fa0aef0.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have rounded to the nearest 500. Read the question carefully.",
         "B": "The multiples of 1000 that are above and below 637 are 1000 and 0. If we draw a numberline we will see that 637 is closest to 1000.",

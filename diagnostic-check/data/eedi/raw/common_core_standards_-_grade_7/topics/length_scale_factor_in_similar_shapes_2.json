@@ -103,7 +103,7 @@
     {
       "questionId": 101413,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f218971d-6000-43ec-a190-2f109cfc7fca.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanations": {
         "A": "The perimeter is the length all the way round the shape. If all the lengths making up the perimeter are doubled, the effect on the perimeter will also be to double it. To show this, let’s call the lengths of the sides on this shape a, b, c and d. On the new shape, the lengths will be 2a ＋ 2b ＋ 2c ＋ 2d = 2(a ＋ b ＋ c ＋ d) = 2 ✕ perimeter of original shape.",
         "B": "If we have doubled each side then we have multiplied each side by 2. Is this the same as adding 2 to our perimeter?",
@@ -115,7 +115,7 @@
     {
       "questionId": 101428,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/37e4fd80-55c2-4ef2-9736-183eb1617843.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You might have tried to treble the perimeter 3 times, once for each side. When we treble one side, we don't treble the whole perimeter. What effect would trebling all the sides have?",
         "B": "If we have trebled each side then we have multiplied each side by 3. Is this the same as adding 3 to the perimeter?",

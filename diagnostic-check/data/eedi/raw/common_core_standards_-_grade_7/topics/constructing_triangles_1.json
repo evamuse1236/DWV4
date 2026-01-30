@@ -49,7 +49,7 @@
     {
       "questionId": 95518,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d4938cd-cb84-4dad-b646-e7240c621505.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you have calculated the radius of the smaller circle. What does k represent?",
         "B": "It looks like you may have estimated. What part of the circle does k represent? Could it be drawn elsewhere?",
@@ -61,7 +61,7 @@
     {
       "questionId": 120911,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a00e56aa-d9b0-4442-a2cf-6cc7ffdb1501.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "A",
       "explanations": {
         "A": "The side marked q is the radius of the smaller circle. For ease of measuring, look at a radius either vertically or horizontally, it can be seen that it is 2 squares long, or 2cm.",
         "B": "It looks like you may have estimated. What part of the circle does q represent? Could it be drawn elsewhere?",
@@ -85,7 +85,7 @@
     {
       "questionId": 95526,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/57e9f5ee-53f6-4d6d-8b6e-0fd5f84d54da.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. If I know 2 side lengths of a triangle does that mean there is only one option for the third length? Try holding two pens together as the two sides and investigating what happens when you change the angle between them.",
         "B": "You do not need a protractor to construct some types of triangles. What instrument could you use instead?",

@@ -55,7 +55,7 @@
     {
       "questionId": 133974,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d3b95c2a-81e7-44e9-b6f3-84dc4c24ccc0.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! We are given the lengths of the sides here, so we need to use a compass and a ruler to make sure the lengths are right. A protractor is used for measuring angles.",
         "B": "Nearly! When you are drawing the 5cm length, we need to set the compass to the other end of the 8cm line so that we can create a triangle.",
@@ -67,7 +67,7 @@
     {
       "questionId": 131782,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/24307153-7c73-450d-9f96-63fd738d04d9.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! We don't join the ends of the line to where the arcs meet. What points do we join up?",
         "B": "Nearly! Joining up where the two arcs intersect, which crosses the original straight line provides you with a 90° angle. No additional bisection of the angle created is needed.",

@@ -79,7 +79,7 @@
     {
       "questionId": 135113,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dccf3134-8ecc-43e3-9afe-d56e098bfde0.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, I think you have multiplied the values by 3. The small 3 means we need to 'cube' our values. In other words we multiply by itself then itself again, for example -1 x -1 x -1 = -1.",
         "B": "Nearly! Think about what type of number you get when you multiply a negative by a negative by a negative, for example -1 x -1 x -1.",

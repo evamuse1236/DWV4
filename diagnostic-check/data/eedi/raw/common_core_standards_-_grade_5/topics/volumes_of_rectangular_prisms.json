@@ -25,7 +25,7 @@
     {
       "questionId": 158462,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d7064de1-b860-43eb-9e4e-8ec48f06be8c.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The number of small cubes in the shape tells us its volume, so adding together the two rows of 4 cubes would find the volume. Which of these is not a way of counting the cubes in the shape?",
         "B": "The number of small cubes in the shape tells us its volume, so adding together the four rows of 2 cubes would find the volume. Which of these is not a way of counting the cubes in the shape?",
@@ -37,7 +37,7 @@
     {
       "questionId": 158681,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/564bf2c1-3f10-4d90-abbf-ad3d98a676c8.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The number of small cubes in the shape tells us its volume, so adding together the two rows of 3 cubes would find the volume. Which of these is not a way of counting the cubes in the shape?",
         "B": "This calculation multiplies together the numbers of squares on each face, but that's not a method of finding the volume. When we multiply to find the volume, it's length x width x height like answer C, or we can add up all the cubes in the shape like answers A and D.",
@@ -49,7 +49,7 @@
     {
       "questionId": 158463,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1da2842b-8133-4680-8665-26e4f1d43b4f.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanations": {
         "A": "This calculation adds together the dimensions of the shape, but to find volume we multiply the dimensions: height x width x length, like answers B and C. Or we can add up the small cubes in the shape, as in answer D.",
         "B": "Volume = length x width x height, so this would find the volume. It also describes the number of small cubes: 2 layers of 3 rows of 4 cubes. Which of these is not a way of counting the cubes in the shape?",
@@ -73,7 +73,7 @@
     {
       "questionId": 158464,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/68110642-593b-458a-9cc5-aab7154f1a0f.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The number of small cubes in the shape tells us its volume, so adding together the two layers of 6 cubes would find the volume. Which of these is not a way of counting the cubes in the shape?",
         "B": "Volume = length x width x height, so this would find the volume. It also describes the number of small cubes: 2 layers of 2 rows of 3 cubes. Which of these is not a way of counting the cubes in the shape?",
@@ -85,7 +85,7 @@
     {
       "questionId": 158683,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ae7ae964-1c0a-4703-9e5e-cdb55fb0d78d.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanations": {
         "A": "This calculation adds together the numbers of squares on each face, but that's not a method of finding the volume. We can find the volume by adding up how many cubes are in the shape, like answers B and D, or multiplying length x width x height like answer C.",
         "B": "The number of small cubes in the shape tells us its volume, so adding together the four layers of 6 cubes would find the volume. Which of these is not a way of counting the cubes in the shape?",
@@ -133,7 +133,7 @@
     {
       "questionId": 158685,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2c8c2fe7-71c7-41fd-af91-9b834591feb8.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The shape in the picture is one row back, but the question is asking how many of these we would need to make 24 cubic units total. How many of these rows could you make with 24 small cubes?",
         "B": "This row has 8 small cubes in, so how many rows would it take to make 24 cubes in total?",

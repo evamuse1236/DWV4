@@ -43,7 +43,7 @@
     {
       "questionId": 158039,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f883ced5-30e3-405b-b53f-1b5185b58eec.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have found the difference between the values but we need the total...",
         "B": "We are not looking at angles on a straight line... To find angle b we add together the two labelled angles",
@@ -103,7 +103,7 @@
     {
       "questionId": 158208,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/00a0f8c1-2f5a-4dee-9a4f-a9903ee1dd93.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have subtracted the 55 from 75 but we are joining the angles to make a single angle so we need to add them together...",
         "B": "We are not finding a third angle to make a straight line, you are combining the two given angles to form a single angle.. To do this, add together the 55 and 75",

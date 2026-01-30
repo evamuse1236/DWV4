@@ -43,7 +43,7 @@
     {
       "questionId": 91623,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/63e568e9-986c-47e0-bdf1-249a2f400a64.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "A",
       "explanations": {
         "A": "We are told that n = 1.5. Substituting this into the left-hand side: 5n = 5 ✕ 1.5 = 7.5. Now substituting this into the right-hand side: n ＋ 5 = 1.5 ＋ 5 = 6.5. The inequality sign points to the smaller value, and so 7.5 > 6.5.",
         "B": "Just be careful with your substitution. Remember that 5n means 5 x n.",
@@ -55,7 +55,7 @@
     {
       "questionId": 91639,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7d701ae3-6b23-4aa2-a18a-867ff73c3345.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Just be careful with your substitution. Remember that 3n means 3 x n.",
         "B": "We are told that n = 2.5. Substituting this into the left-hand side: 3n = 3 ✕ 2.5 = 7.5. Now substituting this into the right-hand side: 4n − 2 = 10 − 2 = 8. The inequality sign points to the smaller value, and so 7.5 < 8.",
@@ -67,7 +67,7 @@
     {
       "questionId": 91624,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2d45e06b-1bc9-4ec4-bff2-3ce4ec887197.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Just be careful with your substitution. Remember that 5n means 5 x n.",
         "B": "We are told that n = −1. Substituting this into the left-hand side: 5n = 5 ✕ −1 = −5. Now substituting this into the right-hand side: n ＋ 5 = −1 ＋ 5 = 4. The inequality sign points to the smaller value, and so −5 < 4.",
@@ -79,7 +79,7 @@
     {
       "questionId": 91640,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/18e7bdfc-babb-4734-80d7-8ec0bc7c9a43.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Just be careful with your substitution. Remember that 3n means 3 x n.",
         "B": "Just be careful with your substitution. Remember that 3n means 3 x n.",

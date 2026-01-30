@@ -61,7 +61,7 @@
     {
       "questionId": 165560,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d5671909-afad-4a76-9ced-96abc62c6458.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "5/100 is 0.05, but both 0 and 5 are being repeated in the decimal. Remember when two digits are being repeated we do 100 lots of the decimal subtract 1 lot of the decimal.",
         "B": "This is 0.555555..., but we have both 0 and 5 being repeated. Remember when two digits are being repeated we do 100 lots of the decimal subtract 1 lot of the decimal.",
@@ -121,7 +121,7 @@
     {
       "questionId": 165558,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a650bdd0-c626-4340-b8db-c5804c695e61.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "41/100 is 0.41, but both 4 and 1 are being repeated in the decimal. Remember when two digits are being repeated we do 100 lots of the decimal subtract 1 lot of the decimal.",
         "B": "This is 0.4444444..., but we have both 4 and 1 being repeated. Remember when two digits are being repeated we do 100 lots of the decimal subtract 1 lot of the decimal.",
@@ -133,7 +133,7 @@
     {
       "questionId": 165563,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d03fd3d9-ac1b-4038-88ef-60b087b79690.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have used the method for 0.5666666... Remember when two digits are being repeated we do 100 lots of the decimal subtract 1 lot of the decimal.",
         "B": "100 lots of the number is 56.565656565... Subtracting 1 lot gives us 99 lots equal to 56. Therefore 1 lot is 56/99",

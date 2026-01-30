@@ -139,7 +139,7 @@
     {
       "questionId": 101840,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/549be7be-9a12-43b2-b532-359f1a9296db.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You appear to have forgotten what one million is worth; this number would be \"Two billion, three hundred thousand and four\". Remember that one million is 1 000 000",
         "B": "Try reading the number again, I think you've missed the \"thousand\".",
@@ -151,7 +151,7 @@
     {
       "questionId": 101847,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/665a10ff-df35-4efd-9735-45aca8e61b58.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Try reading the number again, I think you've missed the \"thousand\".",
         "B": "You appear to have forgotten what one million is worth; this number would be \"Eight billion, two hundred thousand and six\". Remember that one million is 1 000 000",

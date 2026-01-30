@@ -91,7 +91,7 @@
     {
       "questionId": 95516,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/59f4ef33-10f8-4265-83d9-5dee23140888.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Have another look at the diagram. The diameter always goes through the centre of the circle. The line given goes from one part of the circumference to another, but does not go through the centre of the circle.",
         "B": "Have another look at the diagram. The radius always goes from the centre of the circle to the circumference. The line given goes from one part of the circumference to another, but does not go through the centre of the circle.",
@@ -139,7 +139,7 @@
     {
       "questionId": 95518,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d4938cd-cb84-4dad-b646-e7240c621505.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you have calculated the radius of the smaller circle. What does k represent?",
         "B": "It looks like you may have estimated. What part of the circle does k represent? Could it be drawn elsewhere?",
@@ -151,7 +151,7 @@
     {
       "questionId": 120911,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a00e56aa-d9b0-4442-a2cf-6cc7ffdb1501.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "A",
       "explanations": {
         "A": "The side marked q is the radius of the smaller circle. For ease of measuring, look at a radius either vertically or horizontally, it can be seen that it is 2 squares long, or 2cm.",
         "B": "It looks like you may have estimated. What part of the circle does q represent? Could it be drawn elsewhere?",

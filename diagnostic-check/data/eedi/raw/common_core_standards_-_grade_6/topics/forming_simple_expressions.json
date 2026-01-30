@@ -37,7 +37,7 @@
     {
       "questionId": 130136,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/24ab289b-b240-44de-b1a4-cf65751120ef.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Does she need to add 4 to c? What does the 4 represent? Replace the c with the number 2 and see what happens",
         "B": "She is buying 4 packets which means the total cost will be 4 times c. We write this in algebra as 4c",
@@ -49,7 +49,7 @@
     {
       "questionId": 130156,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b16b8241-76ca-4e51-bf6b-87c0e597720c.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This shows that we are taking the total cost away from the number of packets. This will not help us work out how much each packet cost. Instead imagine the total cost is £10. How would you work it out then?",
         "B": "I think you might have misread the question. Here we have been given the total cost of the sweets (c) and we need to find the cost of one packet",

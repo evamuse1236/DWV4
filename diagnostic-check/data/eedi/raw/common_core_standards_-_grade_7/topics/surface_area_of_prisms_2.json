@@ -25,7 +25,7 @@
     {
       "questionId": 110057,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/315094d2-d869-4385-a1a0-85fe37f7fac9.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost! Dividing by 6 will give the area of one face of the cube. How do we find the side length?",
         "B": "If T was the volume, that would work. But T is the surface area.",

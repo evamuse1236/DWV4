@@ -79,7 +79,7 @@
     {
       "questionId": 129292,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7e584078-d5ef-4d18-8c0d-285c46e3c020.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have mixed up which number represents which axis. Think of the coordinate as (x,y) as we know x comes before y alphabetically",
         "B": "(3,-1) means that our point is 3 steps along the x axis and -1 steps on the y axis. It can be helpful to think of it as (x,y) as x comes before y in the alphabet. Point B is in the correct position.",
@@ -91,7 +91,7 @@
     {
       "questionId": 129153,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dc115e32-8e69-4bd2-a86f-442d48d88616.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanations": {
         "A": "(-4,-1) means that our point is -4 steps along the x axis and -1 step along the y axis. It can be helpful to think of it as (x,y) as x comes before y in the alphabet. Point A is in the correct position.",
         "B": "I think you have mixed up which number represents which axis. Think of the coordinate as (x,y) as we know x comes before y alphabetically",
@@ -103,7 +103,7 @@
     {
       "questionId": 129293,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7d935057-92df-4c85-bf6f-8a2169945628.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have mixed up which number represents which axis. Think of the coordinate as (x,y) as we know x comes before y alphabetically",
         "B": "(-1,-4) means that our point is -1 step along the x axis and -4 steps along the y axis. It can be helpful to think of it as (x,y) as x comes before y in the alphabet. Point B is in the correct position.",
@@ -115,7 +115,7 @@
     {
       "questionId": 129154,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/60ba912b-dee3-44d2-afd2-f1b67c72241a.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have mixed up which number represents which axis. Think of the coordinate as (x,y) as we know x comes before y alphabetically",
         "B": "I think you have mixed up your axes and your negative signs. Think of the coordinate as (x,y). This means we have to travel -4 along the x axis and 1 on the y axis",
@@ -127,7 +127,7 @@
     {
       "questionId": 129294,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/974268fd-07eb-489f-bc4f-da356e27dd8a.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have mixed up your negative signs. Read the question carefully",
         "B": "(-1,4) means that our point is -1 step along the x axis and 4 steps along the y axis. It can be helpful to think of it as (x,y) as x comes before y in the alphabet. Point B is in the correct position.",

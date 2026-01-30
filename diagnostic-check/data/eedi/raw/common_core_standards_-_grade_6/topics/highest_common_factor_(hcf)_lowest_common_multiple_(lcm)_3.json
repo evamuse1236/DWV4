@@ -133,7 +133,7 @@
     {
       "questionId": 99575,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7cac6703-ceff-4b04-b685-06b9192c3d82.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Remember, 1 is a factor of all numbers (as we can always divide any number by 1).",
         "B": "Any two numbers will always have a LCM which would be the product of the two numbers, they do not need to have a common factor other than 1.",

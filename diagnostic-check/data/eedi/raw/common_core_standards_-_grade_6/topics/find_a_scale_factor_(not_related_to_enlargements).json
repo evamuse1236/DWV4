@@ -19,7 +19,7 @@
     {
       "questionId": 133552,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea379bd7-7527-4c47-969c-77151f656dae.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, the arrow would have to go the other way to make that true.",
         "B": "Check your calculation again: 6 x ___ = 24.",
@@ -67,7 +67,7 @@
     {
       "questionId": 133554,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/99afdc2c-ad64-4d65-a0c1-5879ef4043ac.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Careful, we are looking from top to bottom in the table. What do we need to multiply the numbers in the top row by to get the answer in the bottom row?",
         "B": "Careful, we are looking from top to bottom in the table, not along the rows. 6 x __ = 30?",

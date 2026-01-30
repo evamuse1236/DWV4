@@ -25,7 +25,7 @@
     {
       "questionId": 166812,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/28ca1e11-0bfb-4aaa-9518-e001dc441c76.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This would be the sum of the values but we want to find the positive difference as that is what the distance is!",
         "B": "To find the distance between the two values, we need to find the positive difference, as a distance cannot be negative! To do this we do the larger value - the smaller value which in this case is 2.4 - 2 1/4",
@@ -121,7 +121,7 @@
     {
       "questionId": 166816,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3ed980e3-4327-435c-9c95-f10ac6deeea3.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have correctly found the difference between the values but distance cannot be negative...",
         "B": "We don't subtract as the runners did not go in the same direction. One runner went 1.4km in one direction and the other went 3.8km in the opposite direction so, what do we need to do to the values to find the distance between them?",

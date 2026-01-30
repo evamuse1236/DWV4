@@ -61,7 +61,7 @@
     {
       "questionId": 166847,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/53b53169-866a-4ccd-b28e-5ffa5f219376.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You're close but you've subtracted 2 from the 𝓍 coordinate. The slope, or rate of change, tells us how much 𝓎 changes by when 𝓍 changes by 1, so we need to subtract 2 from 𝓎 instead.",
         "B": "If the slope is 2, that means 𝓎 changes by 2 for every 1 of 𝓍. The 𝓎 intercept is at (0, __). That is 1 less of 𝓍 from the given coordinate so would be 2 less of 𝓎, which would be 7!",
@@ -121,7 +121,7 @@
     {
       "questionId": 167099,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cf00ba03-6cf0-4ae9-8b8d-0fee021f0d80.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have subtracted in a different order for the 𝓍 and 𝓎 coordinates. They always need to be subtracted starting from the same coordinate pair!",
         "B": "Although the difference between the 𝓎 coordinates is 4, that doesn't mean that the rate of change is 4! Remember that rate of change = change in 𝓎 ÷ change in 𝓍.",

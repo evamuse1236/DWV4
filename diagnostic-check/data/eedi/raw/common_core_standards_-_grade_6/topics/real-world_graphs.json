@@ -133,7 +133,7 @@
     {
       "questionId": 167019,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/236af14f-734c-43ce-bccd-7c0e8b436f67.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanations": {
         "A": "Day 3 shows the biggest difference. The predicted temperature was 2 and the actual temperature was -5 which means there was a difference of 7.",
         "B": "You've given the highest temperature out of all of the points but we need to be looking for the greatest difference in temperature between the predicted and actual. Which day is this on and can you work out the difference?",

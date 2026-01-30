@@ -37,7 +37,7 @@
     {
       "questionId": 75914,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b5196871-8f89-4467-ad05-61f5f729f2b3.jpg",
-      "correctAnswer": "D",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost. Try reading this inequality forwards? 7 is greater/smaller than than R.",
         "B": "Almost. Try reading this inequality backwards? Write R > 7 in words.",
@@ -109,7 +109,7 @@
     {
       "questionId": 131455,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/84af1c11-a3a2-43de-8ddc-d9a7043ad558.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. The number of people visiting is a variable, so would be represented by a letter.",
         "B": "The 12 is not affected by the number of rides, so it must be the fixed entry fee.",

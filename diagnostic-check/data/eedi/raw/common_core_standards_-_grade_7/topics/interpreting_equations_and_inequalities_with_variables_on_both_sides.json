@@ -31,7 +31,7 @@
     {
       "questionId": 155050,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1a31ffc1-7c5d-498f-8b6a-964991d7f9a7.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanations": {
         "A": "3 less than a number would be written as 𝑥 - 3, so agrees with the expression before the equals sign. Double the number would be written as 2𝑥, which is NOT equivalent to the expression after the equals. Therefore, this situation does not form the equation.",
         "B": "A number subtract 3 would be written as 𝑥 - 3, so agrees with the expression before the equals sign. The number divided by 2 would be written as 𝑥/2, which agrees with the expression after the equals sign. Therefore, this situation WOULD form the equation, we are asked which WOULD NOT.",
@@ -79,7 +79,7 @@
     {
       "questionId": 155052,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/48001a82-b348-4601-b56e-53b5f1c917eb.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanations": {
         "A": "The two angles labelled are base angles in an isosceles triangle. The angle fact 'base angles in an isosceles triangle are equal' would lead to writing 3𝑥 + 5 = 4𝑥 - 10, which is the equation that has been formed.",
         "B": "The equation does not show the angles added together and 180 degrees is not used. The angles don't meet at a point on the straight line so we couldn't use this angle fact here. What shape do we have? What do the two dashes mean for the type of shape?",
