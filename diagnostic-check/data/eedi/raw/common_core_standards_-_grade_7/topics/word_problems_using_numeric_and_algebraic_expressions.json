@@ -139,7 +139,7 @@
     {
       "questionId": 166539,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fa236ac3-98db-45c4-9ba3-9abd63eb1d52.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanations": {
         "A": "This shows two consecutive numbers, which would give us one odd and one even number. Therefore, this wouldn't show the sum of two consecutive even numbers.",
         "B": "This one does show two consecutive odd numbers: '2𝑥 + 1' is an odd number because it is 1 more than a multiple of 2, and 2 more than this would also be an odd number.",
