@@ -46,10 +46,13 @@ MODULES = [
             "written method", "column multiplication", "column division",
             "multiply", "divide", "algorithm",
         ],
-        # Keywords to EXCLUDE (avoid pulling in fraction/decimal multiplication)
+        # Keywords to EXCLUDE (avoid pulling in fraction/decimal/algebra/measurement topics)
         "exclude_keywords": [
             "fraction", "decimal", "percent", "ratio", "algebra",
-            "equation", "negative", "coordinate",
+            "equation", "negative", "coordinate", "expression",
+            "proportion", "power", "order of operations",
+            "substitute", "solve", "unit", "mass", "length",
+            "measurement", "place value",
         ],
     },
     {
@@ -74,7 +77,10 @@ MODULES = [
             "addition and subtraction", "multiplication equation",
             "multiplicative comparison",
         ],
-        "exclude_keywords": ["fraction", "decimal", "negative", "percent"],
+        "exclude_keywords": [
+            "fraction", "decimal", "negative", "percent",
+            "area", "perimeter", "converting unit",
+        ],
     },
     {
         "id": "1.3",
@@ -97,7 +103,12 @@ MODULES = [
             "lcm", "highest common factor", "lowest common multiple",
             "prime factor", "venn diagram",
         ],
-        "exclude_keywords": ["scale factor", "enlargement"],
+        "exclude_keywords": [
+            "scale factor", "enlargement", "fraction", "algebra",
+            "area", "composite shape", "outlier", "range from",
+            "ratio", "percentage", "substitute", "factorise",
+            "vocabulary", "expression", "equation",
+        ],
     },
     {
         "id": "2.1",
@@ -501,10 +512,10 @@ def match_topics(module, topics_by_grade):
                     skill_names.append(s.lower())
             search_text = topic_name + " " + " ".join(skill_names)
 
-            # Check exclude keywords first
+            # Check exclude keywords first (substring match, same as includes)
             excluded = False
             for kw in module.get("exclude_keywords", []):
-                if re.search(r'\b' + re.escape(kw) + r'\b', search_text, re.I):
+                if re.search(re.escape(kw), search_text, re.I):
                     excluded = True
                     break
             if excluded:
