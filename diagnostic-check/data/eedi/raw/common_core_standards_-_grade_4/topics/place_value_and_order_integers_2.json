@@ -115,7 +115,7 @@
     {
       "questionId": 130067,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a3595869-e721-4489-9620-eafda8c66ffe.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "When comparing these numbers always start with the number in the highest place value column, not the smallest. Remember the inequality sign always points towards the smallest number.",
         "B": "Comparing the ten thousands column we can see that these numbers are not equal. Is the number on the left less or more than the number on the right? Which inequality sign would we use to show this?",
@@ -139,7 +139,7 @@
     {
       "questionId": 130068,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1a7dcff1-8748-4ff8-b6a9-6582fcbb2e29.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember to compare the digits with the same place value. Writing these numbers underneath each other, lining up the place value will help.",
         "B": "Writing these numbers underneath each other, ensuring that we line up the digits with the same place value, shows that 1 million is greater than 0 millions, 995,999 has no millions,. Therefore 1,000,000 is greater than 995,999.",

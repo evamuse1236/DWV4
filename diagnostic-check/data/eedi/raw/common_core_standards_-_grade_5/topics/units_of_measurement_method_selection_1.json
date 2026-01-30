@@ -55,7 +55,7 @@
     {
       "questionId": 133719,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/48f00c3e-723f-4da4-991a-30ab105674de.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have accidentally divided by 10 but there are not 10 grams in a kg, there are 1000.",
         "B": "I think you have accidentally multiplied by 1000 when you should have divided as 1000g = 1kg.",
@@ -79,7 +79,7 @@
     {
       "questionId": 133720,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a0381108-8040-4924-9c04-7d308fedbf7d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have accidentally divided by 10 but there are not 10 ml in a litre, there are 1000.",
         "B": "I think you have accidentally multiplied when you should have divided (as you are converting from a smaller unit of capacity to a bigger one). Remember 1l = 1000 ml.",
@@ -103,7 +103,7 @@
     {
       "questionId": 133721,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/70ac1b19-004b-4913-a61a-7980a54470ca.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have accidentally divided by 10 but there are not 10 m in a km, there are 1000 m.",
         "B": "I think you have accidentally multiplied when you should have divided (as you are converting from a smaller unit of distance to a larger one). There are also not 100 m in a km, there are 1000 m.",
@@ -127,7 +127,7 @@
     {
       "questionId": 133722,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8891042e-29b5-4dcf-85ed-34682c273c02.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have accidentally divided by 10 but there are not 10 kg in a tonne, there are 1000 kg.",
         "B": "I think you have accidentally multiplied when you should have divided, as you are converting from a smaller unit of mass to a bigger one. There are also not 100 kg in a tonne, there are 1000 kg.",
@@ -139,7 +139,7 @@
     {
       "questionId": 131490,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d4ac6172-d887-481a-ad8c-20165294f164.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have accidentally multiplied by 10 but there are not 10 mm in a metre, there are 1000 mm in a metre.",
         "B": "This would be how many cm are in 3 m. I think you have accidentally multiplied by 100 but there are 1000 mm in a metre.",

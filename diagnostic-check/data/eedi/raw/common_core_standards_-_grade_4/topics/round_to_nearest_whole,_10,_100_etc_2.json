@@ -43,7 +43,7 @@
     {
       "questionId": 129115,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/01af560f-fee9-4c51-a77b-4f58192ee503.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have rounded to the nearest 100. We need to round to the nearest 10.",
         "B": "Not quite. 326 is between 320 and what other multiple of 10? Which is it closest to?",
@@ -67,7 +67,7 @@
     {
       "questionId": 129116,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7c67893d-9c16-4add-abb2-f86587326fe3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "326 is between 300 and 400. If we draw out a number line we will see that it is closest to 300",
         "B": "326 is between 300 and 400, but which is it closest to? You may find drawing a number line helpful.",
@@ -79,7 +79,7 @@
     {
       "questionId": 129256,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9e8e988b-cd51-4768-b12d-7f0437297fb6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "637 is between 600 and 700. If we draw out a number line we will see that it is closest to 600.",
         "B": "I think you have rounded to the nearest 50. Read the question carefully.",
@@ -91,7 +91,7 @@
     {
       "questionId": 129117,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/82559fff-ac5e-4122-ad78-be463bd3447d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "1000 is the multiple of 1000 that is greater than 326. What multiple of 1000 is below 326?",
         "B": "This would be correct if our number was 3260, but it is 326. The multiples of 1000 are 0, 1000, 2000, 3000... Which one of these is 326 closest to?",
@@ -103,7 +103,7 @@
     {
       "questionId": 129257,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3c45881e-d091-4847-a00b-3c515fa0aef0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have rounded to the nearest 500. Read the question carefully.",
         "B": "The multiples of 1000 that are above and below 637 are 1000 and 0. If we draw a numberline we will see that 637 is closest to 1000.",
@@ -115,7 +115,7 @@
     {
       "questionId": 129118,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6b86e13e-1561-4e73-9a00-5e3b31c64dde.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have rounded to the nearest 100,000. Read the question carefully.",
         "B": "We need to look at the 10,000 column. That is the first 3 in 536,463. Therefore the multiple of 10,000 below our number is 530,000 and the multiple of 10,000 above our number is 540,000. If you draw a numberline you will see that 536,463 is closest to 540,000. You could also tell this without the use of a number line as the digit after the number we're rounding to (after the 10,000 column) is greater than or equal to a 5 so it will round up.",
@@ -127,7 +127,7 @@
     {
       "questionId": 129258,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f94b557d-a6c7-49f3-b12b-3140533779a9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have rounded to the nearest 1,000. Read the question carefully.",
         "B": "287,045 is between 280,000 and 290,000, but which is it closest to? You may find drawing a number line helpful.",
@@ -139,7 +139,7 @@
     {
       "questionId": 129119,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8d7d5681-282f-4fbe-9e17-08bd9b8a4327.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have rounded to the nearest 50. Read the question carefully.",
         "B": "620 is a multiple of 20, but it is not the closest multiple of 20 to 646. Count on in 20s and maybe draw a numberline to help you.",

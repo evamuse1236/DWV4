@@ -43,7 +43,7 @@
     {
       "questionId": 133924,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c372ae44-4119-4560-81d0-a4f904c58165.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Look at the label of the y axis. It is not measuring temperature.",
         "B": "If sand is added, think about what will happen to the mass of the bucket - will it increase or decrease?",
@@ -55,7 +55,7 @@
     {
       "questionId": 131732,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a7420950-3caa-453c-a5d4-a444091d8c75.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, if the plug has been pulled out, the volume will start to decrease",
         "B": "When the taps are turned off, the volume remains constant, so the graph will show a horizontal line.",
@@ -67,7 +67,7 @@
     {
       "questionId": 133925,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/62ec0ae8-dbde-4146-a074-2d9ab7a31d02.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Look at the label of the y axis. It is not measuring temperature.",
         "B": "Not quite, if sand is being added the mass would increase. In the horizontal section the mass is staying the same",
@@ -79,7 +79,7 @@
     {
       "questionId": 131733,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/554d725a-9353-4ff1-aca9-a3e1c1432416.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you've found the total cost for this taxi journey. How much is it increasing by with each mile?",
         "B": "Not quite, look again at the scale for the cost. How much will each square represent?",
@@ -91,7 +91,7 @@
     {
       "questionId": 133926,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c6ac74f5-cdf8-4498-ba8a-3c9366d6d56b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've tried to calculate the gradient, but have not been accurate enough when counting squares. Find a bigger triangle that crosses through the grid lines exactly.",
         "B": "The cost per mile is shown by the gradient of the graph. We can look for a triangle going from 0-5 miles and from £2-£4. The gradient would be rise/run or 2/5 which is 0.4 so £0.40 per mile. You could also think of this as how much more expensive it is for each mile",
@@ -115,7 +115,7 @@
     {
       "questionId": 133927,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5f956701-9d9f-4f8c-a5b1-baff38d37417.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Look at the label of the y axis. It is not measuring temperature.",
         "B": "You're on the right track. The gradient will calculate the rate, but think about if a positive slope will show a decreasing mass.",
@@ -127,7 +127,7 @@
     {
       "questionId": 131735,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/81bc6d3b-1497-4b3e-a324-1af52df151f4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, the volume of water flowing is constant. A curve shows changes over time.",
         "B": "When water flows at a constant rate, the graph will be linear (straight line)",

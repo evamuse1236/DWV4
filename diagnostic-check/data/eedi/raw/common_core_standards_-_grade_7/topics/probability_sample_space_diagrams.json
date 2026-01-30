@@ -37,7 +37,7 @@
     {
       "questionId": 135717,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1c2b4659-05e1-49c6-9a80-68413d2173db.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have incorrectly calculated the number of possible outcomes from the sample space. It might help to remember each square in the sample space is a possible outcome, and for our probability we are looking for any outcomes that result in the same colour ball from each bag.",
         "B": "I think you have incorrectly calculated the number of possible outcomes that would give us 2 balls of the same colour. It might help to remember each square in the sample space is a possible outcome, and for our probability we are looking for any outcomes that result in the same colour ball from each bag.",
@@ -49,7 +49,7 @@
     {
       "questionId": 135698,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b2e24202-bdfc-497a-a403-9f225f71d1fb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have subtracted the scores from the two dice here. Read the question carefully, what operation are we performing on the two scores?",
         "B": "I think you have 'added' the two scores by putting the resulting digits side by side. Think about what operation we are being asked to perform on the numbers here.",
@@ -61,7 +61,7 @@
     {
       "questionId": 135718,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/936d6edb-7325-4555-9f62-ee8e279300b9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have 'added' the two scores by putting the resulting digits side by side. Think about what operation we are being asked to perform on the scores here.",
         "B": "The question states that the scores on the two dice are added together. With a 2 on dice 1, and a 5 on dice 2, we do 2 + 5 = 7, which is what we would write in the starred square.",
@@ -73,7 +73,7 @@
     {
       "questionId": 135699,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/080f1f1a-e7b5-48f0-a47f-9e9c38a6d14e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have multiplied the 2 and the 8. The 8 is the result of the multiplication, so what is the missing number?",
         "B": "I think you found the missing number if it was an +. Read the question carefully, what operation are we performing on the two scores to get our total of 8?",
@@ -85,7 +85,7 @@
     {
       "questionId": 135719,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/79ddfbee-d30c-4bdc-89cc-8c91860a7553.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have combined the two scores by putting the scores side by side to make 12. Think about what operation we are being asked to perform on the scores here, and how do we combine this with the 2 from dice 2 to give us an answer of 12?",
         "B": "I think you have multiplied the 12 and 2. However the 12 is the result of multiplying 2 and the missing number.",
@@ -109,7 +109,7 @@
     {
       "questionId": 135720,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/60758b81-a447-4a8b-b0d5-645fbf08e54b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have miscalculated the total number of possible outcomes here. Think what the sample space show us about how many outcomes there can be.",
         "B": "I think you have miscalculated the total number of possible outcomes here. Think what the sample space show us about how many outcomes there can be.",
@@ -121,7 +121,7 @@
     {
       "questionId": 135701,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3e1736c4-b2cb-4a43-9eb3-c37cdb4e6b0f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have given the target score as the numerator here. It may help to remember that the numerator in a probability fraction is the number of possible ways to achieve your target outcome (in this case a score of 1).",
         "B": "I think you have simplified the probability fraction here. Take a look again at the question, we want the value of the triangle before simplifying.",

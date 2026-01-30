@@ -19,7 +19,7 @@
     {
       "questionId": 166214,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1fb6c8a8-058a-42e3-9e43-b36480a72463.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. This expression would be the sum of 5 and q. Which expression shows the product of 5 and q?",
         "B": "This expression means q to the fifth power. It means q x q x q x q x q. Which expression shows the product of 5 and q?",
@@ -31,7 +31,7 @@
     {
       "questionId": 166441,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/089a817d-a4ab-4281-95af-09fe7c40c647.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Close! This expression reads \"p times 3\". Which expression would read 3 times p?",
         "B": "Not quite. This expression would be the sum of 3 and p. Which expression shows the product of 3 and p?",
@@ -55,7 +55,7 @@
     {
       "questionId": 166442,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/afdc905b-5231-4f5e-9f33-43ae5dc2f518.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Close! This expression reads \"4 subtracted from t\". Which expression would read \"t subtracted from 4\"?",
         "B": "This expression means 4 added to t. Which expression would mean t subtracted from 4?",
@@ -67,7 +67,7 @@
     {
       "questionId": 166216,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1267348f-0e29-44a3-88f8-f3b221110661.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. This expression means 8 is greater than w. We are looking for the expression 8 more than w.",
         "B": "\"8 more than w\" means w plus 8.",
@@ -79,7 +79,7 @@
     {
       "questionId": 166443,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8a9cb1b2-c1d8-448a-a5a9-e9b654838268.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. This expression means 5 is greater than q. We are looking for the expression 5 more than q.",
         "B": "This expression means 5 less than q. Which expression means 5 more than q?",
@@ -91,7 +91,7 @@
     {
       "questionId": 166217,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/21946a25-1e86-4f8a-b0ee-85f5c2ed8415.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you got confused by this notation. j₁₂ means the 12th value in the set of values denoted by j. Which expression means j divided by 12?",
         "B": "Close! This expression reads 12 divided by j. Which expression reads j divided by 12?",
@@ -103,7 +103,7 @@
     {
       "questionId": 166444,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f46e8a23-3200-451e-a3c1-5a9533eae97c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Close! This expression reads 7 divided by m. Which expression reads m divided by 7?",
         "B": "This expression represents 7 subtracted from m. Which expression represents m divided by 7?",

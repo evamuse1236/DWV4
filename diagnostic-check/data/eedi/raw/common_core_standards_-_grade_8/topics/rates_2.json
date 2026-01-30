@@ -79,7 +79,7 @@
     {
       "questionId": 107933,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8a08e6e7-f32d-484d-af67-6a1385dc90dc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost, but we're asked to convert our answer from cm³ to mm³.",
         "B": "volume = mass ÷ density, so we have 1.5 ÷ 8. This would give us an answer in cm³ so we need to multiply by 10³ (1000) to get mm³",
@@ -91,7 +91,7 @@
     {
       "questionId": 131688,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8eba8454-984c-498f-8720-57a3222f14bc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You've recognised that 1 kg = 1000 g and 1 hour = 60 minutes, but kg/hour is calculated by dividing kilograms by time. What effect will dividing by time have when you convert to g/min?",
         "B": "Let's consider a value of 1 kg/hr. This tells us that in 1 hour, there is 1 kg; so we can write 1 hour = 1 kg. 1 kg = 1000g, so this means we have 1 hour = 1000g, which we have found by multiplying by 1000. We also know that 1 hour = 60 minutes, so we have 60 minutes = 1000g, to find 1 minute, we can divide by 60. This means our overall conversion calculation is to multiply by 1000, then divide by 60.",
@@ -103,7 +103,7 @@
     {
       "questionId": 133881,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/27433ef1-fc02-4d85-ac92-37ca2fbd5f5f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "One of these operations is correct (well done!). Try thinking of a specific value, say 1 g/min, to help you decide how to get it completely right.",
         "B": "Grams per minute (or g/min) is calculated by dividing grams by the time. A value of 1 g/min tells us that in 1 minute, there is 1 g. Can you change the units here and then find out what happens in 1 hour?",
@@ -127,7 +127,7 @@
     {
       "questionId": 133924,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c372ae44-4119-4560-81d0-a4f904c58165.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Look at the label of the y axis. It is not measuring temperature.",
         "B": "If sand is added, think about what will happen to the mass of the bucket - will it increase or decrease?",
@@ -139,7 +139,7 @@
     {
       "questionId": 131735,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/81bc6d3b-1497-4b3e-a324-1af52df151f4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, the volume of water flowing is constant. A curve shows changes over time.",
         "B": "When water flows at a constant rate, the graph will be linear (straight line)",

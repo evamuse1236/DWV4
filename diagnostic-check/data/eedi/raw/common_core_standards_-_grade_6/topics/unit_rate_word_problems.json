@@ -25,7 +25,7 @@
     {
       "questionId": 165423,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c605d572-0226-42eb-b5a5-6bd7b1775228.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is the number of minutes it takes Max to write 1 word... The question is asking how many words can Max write in 1 minute?",
         "B": "There is a difference of 7 between 1 and 8 but to answer this question correctly, you need to think about what you multiply/ divide by to go from 8 to 1...",
@@ -37,7 +37,7 @@
     {
       "questionId": 165428,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c0cf2060-b7f9-4a62-adf8-4a06c32fc4ea.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is how many words Kai can type in 16 minutes! You need to think about how you go from 4 minutes to 1 minute and apply this to 120...",
         "B": "If Kai types 120 words in 4 minutes then to find how many words he types in 1 minute, we need to divide 120 by 4. 120 ÷ 4 = 30 therefore, Kai can type 30 words in 1 minute!",
@@ -49,7 +49,7 @@
     {
       "questionId": 165424,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d85edcc8-2141-4bb5-b434-da7b2a919bf4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have accidentally divided the wrong way round and have found how much clip Lucy gets per dollar but the question wants how many dollars per clip...",
         "B": "There is a difference of 5 between 1 and 6 but to answer this question correctly, you need to think about what you multiply/ divide by to go from 6 to 1...",
@@ -61,7 +61,7 @@
     {
       "questionId": 165429,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5ed87023-965d-4e24-9eed-ea44b7690e7d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "These values have a multiplicative relationship, not additive. What do you divide 5 by to get 1? Do the same to the cost of the pens to find out how much one pen is...",
         "B": "If Adam bought 5 pens for $21 then to find the cost of one pen we do 21 ÷ 5 = 4.2. Therefore, one pen costs $4.20!",
@@ -109,7 +109,7 @@
     {
       "questionId": 165431,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/278aec76-ab33-4798-a05d-1357446b14bd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have started your calculation correctly but you cannot round the 3.25... up to 4, you need to keep the answer as it is!",
         "B": "These values have a multiplicative relationship, not additive. What do you multiply 4 by to get 24? Do the reverse to go from 78 to the number of counselors needed...",
@@ -121,7 +121,7 @@
     {
       "questionId": 165427,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f54649d5-4519-4dff-97d2-4ab7bf0e6eb1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have mixed up the values, 2 cups of flour makes 12 muffins... Can you use this to work out how many cups are needed to make 18 muffins?",
         "B": "These values have a multiplicative relationship, not additive. 2 cups of flour is used to make 12 muffins, how many times more is 18 muffins? Apply this value to the cups of flour...",
@@ -133,7 +133,7 @@
     {
       "questionId": 165432,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2497c91e-c7d9-4c3b-8926-2b3f502f58de.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is the correct scale factor but now you need to apply it to the cups of sugar...",
         "B": "I think you have mixed up the values, 2 cups of sugar makes 16 cookies... Can you use this to work out how many cups are needed to make 40 cookies?",

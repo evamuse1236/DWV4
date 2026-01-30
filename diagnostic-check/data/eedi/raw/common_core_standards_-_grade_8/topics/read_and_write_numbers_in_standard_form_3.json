@@ -91,7 +91,7 @@
     {
       "questionId": 131743,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/277b1362-9c72-4196-87ba-5c4a4e463e87.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you used the number of decimal places as the power. The power will be negative, and is found by counting the number of times we need to divide the first part by 10 to get back to the original.",
         "B": "The 0 between the 5 and 2 has been omitted in the answer. This has changed the value completely. The power is found by counting the number of times we need to divide the first part by 10 to get back to the original.",
@@ -139,7 +139,7 @@
     {
       "questionId": 131745,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7190c4ad-e595-4b0a-85c0-25dbcbbacab5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You're almost there, but I think you subtracted the power. Think about how many times 2.7 has to be multiplied by 10 in total",
         "B": "This is the 2700 in standard form, but you still need to take into account the x 10⁵",

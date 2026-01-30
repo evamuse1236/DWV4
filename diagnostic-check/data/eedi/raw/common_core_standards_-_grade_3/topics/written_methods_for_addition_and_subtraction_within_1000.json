@@ -37,7 +37,7 @@
     {
       "questionId": 137755,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ac8f1a15-b327-4a55-aa11-39ae2e49cdc1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. I think you may have added the 2 and the 7 in the ones column. Instead, think about what we need to add to 2 to get 7.",
         "B": "Looking at the hundreds column, 7 would be correct if we were subtracting. Always start with the ones column. What do we need to add to 2 to get a total of 7?",
@@ -49,7 +49,7 @@
     {
       "questionId": 137775,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9a44b868-8389-4549-a4bd-6ed03ad1e305.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. I think you may have added the 1 and the 7 in the ones column. Instead, think about what we need to add to 1 to get 7.",
         "B": "Not quite. Remember we need to add the 1 in the ones column. What do we need to add to 1 to get 7?",
@@ -73,7 +73,7 @@
     {
       "questionId": 146348,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2f2b95cd-8c37-4e20-b449-31f1f33c1b26.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, remember to carry over to the next column when the two numbers add together to make a number greater than 9.",
         "B": "Adding from the units on the right first, 9 + 7 = 16, we would write the 6 in the units column and carry the ten units to make one ten. Then 1 + 8 + 9 = 18, we would write the 8 in the tens column and then carry ten tens to make one hundred. 1 + 5 + 2 = 8 in the hundreds column. So the answer overall is 886.",
@@ -85,7 +85,7 @@
     {
       "questionId": 158777,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8b526d69-6e99-4bfe-bd36-3e4ede4b5ea9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite - remember not to count the starting number when you subtract. For example, for 6 - 4 we would count backwards 5, 4, 3, 2. So what should the ones digit in the answer be?",
         "B": "I think you subtracted 420 then added 4, but that would take off 416 in total. Here we need to subtract 420 and subtract 4 to subtract 424 in total.",
@@ -97,7 +97,7 @@
     {
       "questionId": 158976,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5a94a7fe-91ea-4d6d-b74e-52e58821645b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you subtracted 530 then added 4, but that would take off 526 in total. Here we need to subtract 530 and subtract 4 to subtract 534 in total.",
         "B": "You have added, but this is a subtraction question.",
@@ -121,7 +121,7 @@
     {
       "questionId": 158977,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ed3556b1-7990-44e9-b86a-f2bfb58a1742.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have added, but this is a subtraction question.",
         "B": "6 is bigger than 4 so we borrow a ten to get 14 - 6 = 8 (ones digit). That leaves 2- 8 in the tens column so we borrow a hundred, then 12 - 8 = 4 (tens digit). Finally 4 - 3 = 1 (hundreds digit), giving the answer 148.",
@@ -133,7 +133,7 @@
     {
       "questionId": 158779,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/162f39b6-cd3e-4168-a69c-552d65fcc5bf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have added, but we want to know how many are left out of 823, so this is a subtraction question.",
         "B": "We can do 823 - 176 as a written subtraction, starting with the ones digit. 3 - 6 so borrow a ten, 13 - 6 = 7. That leaves 1 - 7 in the tens column, so borrow a hundred. 11 - 7 = 4. Finally 7 - 1 in the hundreds column is 6, giving 647.",
@@ -145,7 +145,7 @@
     {
       "questionId": 158978,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/678a3778-d1ee-49c4-8f84-e9da9ee46e95.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, it looks like you subtracted the smaller digit from the bigger one each time, but we need to subtract all the digits of 488 from the digits of 914. Don't forget borrowing...",
         "B": "It looks like you have \"borrowed\" but forgotten to reduce the other digits. For example, if you borrowed a ten to do 14 - 6, that should leave 0 - 8 in the tens column.",

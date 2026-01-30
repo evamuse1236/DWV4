@@ -25,7 +25,7 @@
     {
       "questionId": 165393,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/de995f6f-ddcd-4052-b745-4d81ec8d6020.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have divided 66 by 11 but you need to think about what you add to 11 to get 66...",
         "B": "11 + 55 = 66 therefore 𝑥 is 55!",
@@ -37,7 +37,7 @@
     {
       "questionId": 165398,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b6abc2fb-e651-4c51-8297-b2f2fce57c27.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have accidentally added the 9 to 63 but you need to think about what you add to 9 to get 63...",
         "B": "I think you have multiplied 63 by 9 but you need to think about what you add to 9 to get 63...",
@@ -49,7 +49,7 @@
     {
       "questionId": 165394,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2743be93-17cf-4758-a942-290ba48d6fa4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have accidentally added the 12 but the expression is 6𝑛 - 12...",
         "B": "6 x 19 = 114 and 114 - 12 = 102 so 𝑛 does not equal 19... Try out the other numbers to see which gives you an answer of 42!",
@@ -73,7 +73,7 @@
     {
       "questionId": 165395,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e85cc830-92c7-4fba-ab67-4f520ee0e46c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "19 is less than 20 but you need to substitute the value into the expression 3𝑥 + 2 and then see if it is less than 20!",
         "B": "I think you have accidentally subtracted 2 but it's add 2! 3 x 7 + 2 = 23 which is greater than 20... Try out the other numbers to see which gives a value less than 20",

@@ -43,7 +43,7 @@
     {
       "questionId": 75985,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/24309ca1-fb4e-4250-9a64-3123974a178d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have found 100% of the value, can you find 20%?",
         "B": "It looks like you've added on 5, rather than 5%. To answer this, try to find out what 5% is worth first.",
@@ -79,7 +79,7 @@
     {
       "questionId": 76134,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/230f9b02-1c73-45f5-b026-9c3be605789b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! You have multiplied by 3 here. If 60 seconds is 3-quarters, try working out what 1-quarter of the song would be in seconds and from there multiplying to get 4-quarters (or one whole).",
         "B": "Close! This is the length of 1-quarter of the song. How can we use this to find the length of the whole song?",
@@ -91,7 +91,7 @@
     {
       "questionId": 75987,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f58a7aa3-3d71-4d58-b994-724adc9028e1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is the area of the whole circle. How much is just the white section?",
         "B": "1 section has an area of 0.9/3 = 0.3m², and so the 5 white sections have an area of 0.3 × 5 = 1.5m².",
@@ -115,7 +115,7 @@
     {
       "questionId": 75988,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4b3f5923-ebd4-4899-82df-a05b011634a4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Multiplying 30 by 40 tells us how far the tuk tuk travels in 40 hours but we need the distance in 40 minutes. What fraction of an hour is 40 minutes? How far will the tuk tuk travel if they travel for this fraction of an hour?\n",
         "B": "We can find out 40 minutes as a fraction of an hour by calculating 40/60= 2/3 hours. We can then use distance = speed x time: so we have 30 × 2/3 = 20 miles.",
@@ -127,7 +127,7 @@
     {
       "questionId": 76136,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/13b4b823-ee52-49a5-a089-36cd00fdf2eb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Multiplying 30 by 40 tells us how far the tuk tuk travels in 30 hours, but we need 30 minutes. What fraction of an hour is 30 minutes? How far will the tuk tuk travel if they travel for this fraction of an hour?",
         "B": "We need to work out what 30 minutes is as a fraction of an hour. Remember there are 60 minutes in an hour. Then you can use this to calculate the distance using the speed.",

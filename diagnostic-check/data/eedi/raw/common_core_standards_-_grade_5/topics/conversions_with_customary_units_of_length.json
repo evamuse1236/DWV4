@@ -31,7 +31,7 @@
     {
       "questionId": 158539,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/da0e715b-9891-4cb1-a146-b44b4ab963d1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you've multiplied by 12, but remember that: 12 inches = 1 foot. Will the number of feet be smaller or larger than the number of equivalent inches?",
         "B": "I think you've divided by 10, but remember that: 12 inches = 1 foot.",
@@ -43,7 +43,7 @@
     {
       "questionId": 158426,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/75b90124-9f2e-4772-8eb7-c182e38826d1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "13 yards and 1 foot would be 40 foot altogether (13 x 3 + 1), not 38 foot. 3 foot = 1 yard so how many times does 3 divide into 38 and what is the remainder?",
         "B": "3 foot = 1 yard. 38 ÷ 3 = 12 r 2. Therefore, 38 foot = 12 yards and 2 foot.",
@@ -67,7 +67,7 @@
     {
       "questionId": 158427,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/02ae81c4-3cef-4f52-a219-debf2947f4a8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you've multiplied instead of divided. 1 mile = 5280 feet. Therefore, you first need to know how many times 5280 divides into 10,000.",
         "B": "I think you know that you need to divide 10,000 by 5280 (1 mile = 5280 feet). But to do this, first find out how many times 5280 divides into 10,000. Then see what the remainder is.",
@@ -103,7 +103,7 @@
     {
       "questionId": 158542,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d30497f2-2893-4e0c-aaa3-493f6a5c04a0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you've divided by 16, but remember that: 3 foot = 1 yard.",
         "B": "I think you've divided by 10, but remember that: 3 foot = 1 yard.",
@@ -115,7 +115,7 @@
     {
       "questionId": 158429,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/857aba1c-b923-46cb-b3db-1bd8f7e80a3f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "1 mile = 5280 feet. Therefore, first multiply 5280 by 2, to see how many feet there are in 2 miles.",
         "B": "1 mile = 5280 feet. 10,550 ÷ 5280 = 1.998, therefore 10,550 foot = 1.998 miles. 2 miles is greater than 1.998 miles, so we need the greater than symbol, ＞.",

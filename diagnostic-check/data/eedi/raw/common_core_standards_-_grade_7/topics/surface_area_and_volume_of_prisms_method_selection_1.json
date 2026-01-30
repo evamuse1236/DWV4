@@ -49,7 +49,7 @@
     {
       "questionId": 79010,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d48a2e0e-da66-4f4a-8742-800694062e2a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! This is how we calculate the volume of a cuboid: length x width x height.",
         "B": "Not quite! This is a correct possible method. Multiplying by 6 and then dividing by 2 is the same as multiplying by 3, so even though this isn't the most straightforward way of calculating the volume, it would work.",
@@ -61,7 +61,7 @@
     {
       "questionId": 77181,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/91755e21-9d1a-42fb-8897-16f483618444.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The volume of a cube or cuboid is length × width × height. Calculate each volume first then pick the odd one out.",
         "B": "The volume of a cube or cuboid is length × width × height. Calculate each volume first then pick the odd one out.",
@@ -73,7 +73,7 @@
     {
       "questionId": 79011,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/112839d8-0287-41d3-a9a1-a4df7be0de23.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The volume of a cube or cuboid is length × width × height. Calculate each volume first then pick the odd one out.",
         "B": "This cuboid has volume 1 × 16 × 2 = 32. The other shapes have a volume of 64.",
@@ -109,7 +109,7 @@
     {
       "questionId": 78378,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/980f0893-f2f2-43d9-bdc0-3a82ff05bbee.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have calculated the volume. The surface area is the total area of all six rectangular faces.",
         "B": "I think you have only calculated the surface area of the three faces you can see. What about the other three faces?",
@@ -121,7 +121,7 @@
     {
       "questionId": 78672,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/11543a06-351c-4c66-94b1-4a3c4f4bb34a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have only calculated the surface area of the three faces you can see. What about the other three faces?",
         "B": "Not quite. The surface area is the total area of all six rectangular faces.",
@@ -133,7 +133,7 @@
     {
       "questionId": 78379,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eb5c152a-773f-4fd8-83e5-5e04cdb6b935.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Don't forget to divide by 2 when you are calculating the area of the front triangular face.",
         "B": "I think you have just added together the lengths you can see. The volume of a prism is the area of the cross section (in this case the triangle) multiplied by the length.",
@@ -145,7 +145,7 @@
     {
       "questionId": 78673,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d51d7caf-09ea-45a2-ba3f-a6cfcd4f39ee.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Don't forget to divide by 2 when you are calculating the area of the front triangular face.",
         "B": "The volume of a prism is the area of the cross section (in this case the triangle) multiplied by the length. (½ × 8 × 3) × 10 = 120 cm³.",

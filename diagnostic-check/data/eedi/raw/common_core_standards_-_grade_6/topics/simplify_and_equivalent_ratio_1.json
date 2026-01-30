@@ -49,7 +49,7 @@
     {
       "questionId": 76119,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7bed7734-75a0-45e1-98ae-8fc826ba788e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have found what the numbers in the first ratio are multiplied by to get the second one, but you haven't found the missing number in the box. What x 6 = 12?",
         "B": "48 is 6 times bigger than 8, that means 12 is 6 times bigger than the box. 12 divided by 6 is 2",
@@ -61,7 +61,7 @@
     {
       "questionId": 75974,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d528ad9c-66ba-422d-86f3-2f5b2d848592.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have multiplied the parts by different numbers. To get an equivalent ratio you need to multiply all parts by the same number",
         "B": "Not quite. I think you have added 20 to all the parts rather than multiplying all the parts by the same number",
@@ -85,7 +85,7 @@
     {
       "questionId": 101375,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bc7433f2-550c-41cf-a59d-b4bae1fdb84d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have found the number of circles rather than triangles.",
         "B": "In one group there are 3 triangles. For 7 groups there would be 7 times this amount, so 7 ✕ 3 = 21 triangles.",
@@ -97,7 +97,7 @@
     {
       "questionId": 101393,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d171bfcd-45d9-4eed-904f-a8cfa31efbb1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have found the number of circles rather than triangles.",
         "B": "I think you have worked out the total number of shapes. We need the number of triangles.",
@@ -121,7 +121,7 @@
     {
       "questionId": 101404,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f9a861aa-1341-40aa-9c27-801490f414bd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost. Try simplifying all the ratios to see which are equivalent.",
         "B": "Almost. Try simplifying the ratios to see which are equivalent.",
@@ -133,7 +133,7 @@
     {
       "questionId": 104624,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d34dfab9-8969-4637-b6e3-1915aacbed10.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost, you have simplified a bit, but you can simplify even further.",
         "B": "I think you subtracted 10 from both sides and then halved. When simplifying ratios you can only use division",
@@ -145,7 +145,7 @@
     {
       "questionId": 104626,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cedd48b2-bedc-4168-8ae0-99cb076aa999.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost, you have simplified a bit, but you can simplify even further.",
         "B": "I think you might have looked at the hundreds column only. You need to divide both parts by the same number.",

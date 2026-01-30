@@ -31,7 +31,7 @@
     {
       "questionId": 75990,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/74067020-2737-4f03-8772-904466cf7719.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have worked out the change from one year of sponsorship. Can you work out how many years of sponsorship you can afford with £80?",
         "B": "A year's cost is £2 × 12, so we need to work out how many years we will be able to buy with £80. The calculation is 80/(2 × 12)",
@@ -43,7 +43,7 @@
     {
       "questionId": 76138,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea1d4e42-3c8b-44eb-9d22-cb1b0f310771.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have worked out the change from one year of sponsorship. Can you work out how many years of sponsorship you can afford with £40?",
         "B": "You have divided 12 by 3. If we know the cost for 1 month then how would we find the cost for 12 months?",
@@ -67,7 +67,7 @@
     {
       "questionId": 76139,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/08a8e179-f1ac-4532-8e2e-1a5e2ed8461f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have tried to use the 25%. We do not need the percentage information to answer this question.",
         "B": "I think you might have found 75% of 30 and then divided by 5. This would work if there were 30Mb in total, but there are 30Mb left. We don't actually need the percentage to work out the answer. If 30Mb will take 5 seconds to download, how many Mb can you download in 1 second?",
@@ -79,7 +79,7 @@
     {
       "questionId": 75992,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fd307a55-8ff8-40be-9d99-178fa3b1defb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. We do need to multiply 7 but I think you have used £2.10 as the cost of 1 cupcake. Read the question again carefully.",
         "B": "You've worked out the cost of 45 cupcakes! If 3 cupcakes cost £2.10, how much would 1 cupcake cost?",
@@ -91,7 +91,7 @@
     {
       "questionId": 76140,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e0508606-d775-4c4b-9790-1ec855263cce.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. We do need to multiply 7 but I think you have used £2.80 as the cost of 1 cupcake. Read the question again carefully.",
         "B": "We divide by 4 to find the cost of 1 cupcake (£0.70), then multiply by 7 to find the cost of 7 cupcakes: £0.70 × 7 = £4.90.",
@@ -115,7 +115,7 @@
     {
       "questionId": 76141,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/62ce401e-8404-41cc-b9a5-216241c79764.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. In the original stack, there were fewer melons than grapefruits, so, in the new stack, the number of melons must be lower than 10. We can find a scale factor to help us here. What would we need to divide 60 by to get 10?",
         "B": "We don't need the same amount of melons to grapefruits. We just need them to be in the same proportion as the larger stack. We can find a scale factor to help us here. What would I need to divide 60 by to get 10?",
@@ -139,7 +139,7 @@
     {
       "questionId": 76142,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a36b98da-05ed-4028-9a2c-94a1532347a2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have multiplied all the values together. Start by working out how many tiles could be laid in 1/4 of an hour",
         "B": "If 12 tiles can be laid in 3/4 of an hour, then we can divide by 3 to work out that 4 tiles can be laid in 1/4 hour. We can then multiply by 4 to see that 16 tiles can be laid in 1 hour and finally multiply by 6 to see that 96 tiles can be laid in 6 hours.",

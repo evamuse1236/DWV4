@@ -49,7 +49,7 @@
     {
       "questionId": 147375,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/af59f84a-4234-4840-bed7-b6df5871d5b6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have subtracted. The expression h/2 means ‘h divided by 2’. Recalculate your answer.",
         "B": "h/2 means h divided by 2. If h = 10 then h÷2=10÷2=5",
@@ -61,7 +61,7 @@
     {
       "questionId": 147395,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/86a37c21-941a-4503-8de8-40ea27e73e86.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have subtracted. The expression h/3 means ‘h divided by 3’. Recalculate your answer.",
         "B": "h/3 means h divided by 3. If h = 15 then h÷3=15÷3=5",
@@ -73,7 +73,7 @@
     {
       "questionId": 147376,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/075b47e2-4a2a-406b-b465-8aef7cca7754.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have subtracted them the wrong way round. It is important to calculate subtractions in the order we are given them. Try substituting the value of h into the expression 2 – h, in that order, and calculate the answer.",
         "B": "I think you may have divided rather than subtracted. The expression 2 – h means ‘2 takeaway/subtract h’. Recalculate your answer.",
@@ -85,7 +85,7 @@
     {
       "questionId": 147396,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1a298d3e-d791-41c9-86fd-487abf5d60e4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you may have subtracted them the wrong way round. It is important to calculate subtractions in the order we are given them. Try substituting the value of h into the expression 2 – h, in that order, and calculate the answer.",
         "B": "I think you may have divided rather than subtracted. The expression 2 – h means ‘2 subtract h’. Recalculate your answer.",
@@ -121,7 +121,7 @@
     {
       "questionId": 147378,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aa2e8ad4-883b-4a05-861f-797a95732511.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Try substituting in some numbers to see if the order matters.",
         "B": "Not quite. Try substituting in some numbers to see if the order matters.",
@@ -133,7 +133,7 @@
     {
       "questionId": 147398,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e0ce2e21-427f-4438-845b-1c973f175c83.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Try substituting in some numbers to see if the order matters.",
         "B": "Division is non-commutative, meaning that it matters what order the division is carried out in. Addition is commutative, meaning that you will get the same answer whichever order you add the numbers/terms in. Therefore, only Katie is correct.",

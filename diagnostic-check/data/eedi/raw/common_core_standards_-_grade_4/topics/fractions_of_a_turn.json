@@ -19,7 +19,7 @@
     {
       "questionId": 93375,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/599da03a-be34-41c5-966f-478d2f26dd03.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you might be confusing this with 75%. In a full turn you have 360 degrees, so what is three quarters of that?",
         "B": "This is one quarter of a turn, so what are three of these?",
@@ -55,7 +55,7 @@
     {
       "questionId": 145925,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f7d8f137-1461-479d-996b-a6d0e5285b98.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have calculated what ¾ of a turn would be. The question asks for 1 and ¾ turns",
         "B": "Not quite, 75° is not 3/4 of a full turn. There are 360° in a full turn, what is 3/4 of 360?",
@@ -67,7 +67,7 @@
     {
       "questionId": 145976,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8557863d-b9f7-48ed-86e6-15603f612694.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is how many degrees there are in a quarter turn.",
         "B": "I think you are confusing angle totals with 100%. This is just over a quarter turn.",
@@ -103,7 +103,7 @@
     {
       "questionId": 158210,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f3a862c5-9036-4e1e-ada2-de7f7b27ffc9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is how many degrees in 2.5 turns. To find the degrees in three turns, triple 360...",
         "B": "This would be how many degrees are in a third of a turn, we need to triple 360 to get the amount of degrees in 3 turns...",
@@ -115,7 +115,7 @@
     {
       "questionId": 158044,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b8d32b0c-7eed-43fa-9b04-454b6460b7bf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "There are 360 degrees in a turn so to find how many degrees are in 2 and 3/4 turns we need to do 360 x 2 3/4...",
         "B": "Remember there are 360 degrees in a turn so to find how many degrees are in 2 and 3/4 turns we need to do 360 x 2 3/4...",
@@ -127,7 +127,7 @@
     {
       "questionId": 158211,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b4cc589e-b786-4c20-948a-1e215147c93e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember there are 360 degrees in a turn so to find how many degrees are in 1 and 3/5 turns we need to do 360 x 1 3/5...",
         "B": "There are 360 degrees in a turn so to find how many degrees in 1 and 3/5 turns we need to do 360 x 1 3/5. 360 x 1 = 360 and 3/5 x 360 = 216 then 360 + 216 = 576 therefore in 1 and 3/5 turns there are 576 degrees",

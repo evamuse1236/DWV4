@@ -19,7 +19,7 @@
     {
       "questionId": 158345,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4da8ba4c-3594-4299-a6f8-f089c629f38e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, this would be the correct answer for 5x10².",
         "B": "I think you've done 5x10x3. But the 3 is an exponent, so 10³ means 10x10x10.",
@@ -31,7 +31,7 @@
     {
       "questionId": 158610,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9705e0da-e7fb-43c2-b8d4-9db1c296e4b3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, this would be the correct answer for 7x10⁴",
         "B": "Not quite, this would be the correct answer for 7x10².",
@@ -43,7 +43,7 @@
     {
       "questionId": 158346,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4ffae63d-a0ae-4da5-9a7a-24207eac0e42.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, this would be the correct answer for 7.5x10⁴.",
         "B": "10⁵ = 10x10x10x10x10 = 100,000. Therefore, 7.5x10⁵ = 7.5x100,000 = 750,000 (decimal point moves 5 places to the right).",
@@ -55,7 +55,7 @@
     {
       "questionId": 158611,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ca466590-4f31-4f2e-9b7a-823a52df7656.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've done 2.8x10x5. But the 5 is an exponent, so 10⁵ means 10x10x10x10x10",
         "B": "Not quite, this would be the correct answer for 2.8x10⁴.",
@@ -79,7 +79,7 @@
     {
       "questionId": 158612,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f0a3cf1b-e898-49e5-b0e8-350d158a11b3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, this would be the correct answer for 134x10⁷. I think you've put seven zeros on the end of 134, but for 13.4x10⁷, we need to make sure that we move the decimal point seven places to the right.",
         "B": "I think you may have chosen 4 so that the answer has a total of 7 digits. However, when multiplying by 10⁷, instead, you need to move the decimal point 7 places to the right.",
@@ -91,7 +91,7 @@
     {
       "questionId": 158348,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5a36023a-5340-43ec-a261-9016cc5d122f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you've done 4.2÷10÷2. But the 2 is an exponent, so 10² means 10x10 = 100.",
         "B": "10² = 100. Therefore, 4.2÷10² = 4.2÷100 = 0.042 (moving the decimal point 2 places to the left).",
@@ -103,7 +103,7 @@
     {
       "questionId": 158613,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/35add84d-893a-445e-88b5-947eeb9dcaff.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "10² = 100. Therefore, 5.6÷10² = 5.6÷100 = 0.056 (moving the decimal point 2 places to the left).",
         "B": "This would be the correct answer if dividing by 10. But we're dividing by 10² (100), so we need to move the decimal point 2 places to the left.",
@@ -127,7 +127,7 @@
     {
       "questionId": 158614,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/13a58aa3-150c-467e-911d-af2c822ce5d0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Compare 90.2 and 0.00902, to see how many places the decimal point has moved.",
         "B": "I think you've counted the number of zeros directly after the decimal point in 0.00902. But what you need to do is to compare 90.2 and 0.00902, to see how many places the decimal point has moved.",

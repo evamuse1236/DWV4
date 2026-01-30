@@ -31,7 +31,7 @@
     {
       "questionId": 134817,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2927a2d7-5bcf-4dfb-b5ed-f3ec9fc9fc2f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. You need to remember to use BIDMAS to calculate the answer.",
         "B": "Using BIDMAS we do the multiplication first, which gives 56. The calculation becomes 56 + 10 - 3, and as addition and subtraction are equal priority we work from left to right. 56 + 10 = 66, and 66 - 3 = 63",
@@ -55,7 +55,7 @@
     {
       "questionId": 134818,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/356e9c9a-5ddd-49a7-a221-dc1575274236.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Remember multiplication comes before addition and subtraction in the order of operations (BIDMAS).",
         "B": "Not quite. Remember multiplication comes before addition in the order of operations (BIDMAS).",
@@ -79,7 +79,7 @@
     {
       "questionId": 134819,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a1b188a3-88ff-403c-8ec5-0db8025f084f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Be careful! We must make sure we follow the order of operations (BIDMAS) and that we only use each number once. Underline the calculation you are working on and write the next step on a new line.",
         "B": "Multiplication comes before addition and subtraction in the order of operations. Therefore 8 - 7 + 10 ✕ 3 = 8 - 7 + 30. When we are left with just additions and subtractions in the calculation we work left to right. 8 - 7 + 30 = 1 + 30 = 31.",
@@ -91,7 +91,7 @@
     {
       "questionId": 134800,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/94c8a830-58b1-48a7-b143-0b3b7833e3ce.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. I think you correctly chose to multiply first but added incorrectly. Using a number line and marking on your starting number will help you deal with the negatives in this calculation.",
         "B": "Not quite. Remember multiplication comes before addition and subtraction in the order of operations (BIDMAS).If there is a multiplication then we must deal with that first.",
@@ -103,7 +103,7 @@
     {
       "questionId": 134820,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/061d192b-94a4-4dfa-bd7f-95fe37b5f255.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Remember multiplication comes before addition and subtraction in the order of operations (BIDMAS).If there is a multiplication then we must deal with that first.",
         "B": "Multiplication comes before addition and subtraction in the order of operations. Therefore 8 - 7 ✕ 10 + 3 = 8 - 70 + 3. When we are left with just additions and subtractions in the calculation we work left to right. 8 - 70 + 3 = -62 + 3 = -59.",
@@ -115,7 +115,7 @@
     {
       "questionId": 134801,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d8b11d23-ecb2-455f-855c-5be7367f319a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Working out each calculation will help you see whose calculations are identical.",
         "B": "Not quite. Working out each calculation will help you see whose calculations are identical.",

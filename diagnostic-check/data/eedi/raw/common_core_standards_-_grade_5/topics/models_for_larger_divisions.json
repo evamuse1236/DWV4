@@ -37,7 +37,7 @@
     {
       "questionId": 166947,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4cd67b7e-b286-47ee-9067-300e80faee4a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It seems like you've subtracted the 8 from 20, but we are trying to find out how many times in total 18 fits into 504.",
         "B": "We can see from the model that 18 goes into 360 20 times. 18 goes into 144 8 times, so in total it can go into 504 28 times!",
@@ -61,7 +61,7 @@
     {
       "questionId": 166948,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5a6c6923-514b-4522-9006-8f509a836f31.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It seems like you've added the numbers together here, but we are taking away the amount of times 13 can fit into 39.",
         "B": "You're right that this is the missing number from above 39! However, we now need to use that information and the first model to figure out how many times 13 would fit into 611.",
@@ -73,7 +73,7 @@
     {
       "questionId": 166699,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ecb2c8d7-af53-46c7-86ef-bd7a896e424c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This one does actually work because 560 and 56 add together to make 616 so knowing how many times 14 goes into those numbers is really useful!",
         "B": "I think you might have picked this because you think that all of the place value needs to be done at once, but it's fine to split the number up as much as you need to! 280 + 280 + 56 = 616 so this is a useful model!",
@@ -85,7 +85,7 @@
     {
       "questionId": 166949,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ef4843f5-5c8f-4eef-a82c-26b2288b734e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This model would actually show a multiplication of 408 and 12, so isn't useful for dividing the numbers.",
         "B": "I think you might have picked this because you think that all of the place value needs to be done at once, but it's fine to split the number up as much as you need to! 120 + 120 + 120 + 48 = 408 so this is a useful model!",
@@ -109,7 +109,7 @@
     {
       "questionId": 166950,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d486cb36-b72d-4679-825b-9d757c14c052.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite - the 25 is what we are dividing by! We are looking at the numbers on the top of the model to find our answer...",
         "B": "25 goes into 125 5 times, which means in total it can go into 2625 105 times if we add the 100 on to that!",
@@ -121,7 +121,7 @@
     {
       "questionId": 166701,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d1189e10-7f89-470e-8b3a-851c1951073d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You're right that this is the missing number from above 32! However, we now need to use that information and the first model to figure out how many times 16 would fit into 1568.",
         "B": "It seems like you've added the numbers together here, but we are taking away the amount of times 16 can fit into 32!",

@@ -25,7 +25,7 @@
     {
       "questionId": 147476,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4cd06368-15d9-4a57-a336-461ebe515668.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have mistyped or mixed up the signs. Make sure you input the equations correctly.",
         "B": "Not quite, remember linear means that it is a straight line, going across and up/ down by the same amount each time.",
@@ -73,7 +73,7 @@
     {
       "questionId": 147478,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5459622e-8584-4dff-a99d-00e909ceed92.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. The y axis is the vertical axis and a graph will cross it when x = 0. Use this to find where the functions cross the y-axis, do they cross at the same point?",
         "B": "I think you have assumed that linear means the line has to be horizontal or vertical but a function is linear if it's points lie in a straight line. Is this true of either of the functions?",
@@ -85,7 +85,7 @@
     {
       "questionId": 147498,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/56e1771e-65a1-45c2-ae88-51a8d1c48c45.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. The y axis is the vertical axis and a graph will cross it when x = 0. Use this to find where the functions cross the y-axis, do they cross at the same point?",
         "B": "I think you have assumed that linear means the line has to be horizontal or vertical but a function is linear if it's points lie in a straight line. Is this true of either of the functions?",
@@ -97,7 +97,7 @@
     {
       "questionId": 147479,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/81a9dbf6-1814-4ac4-ab1b-6afc98cf813e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have mixed up your x and y axis, and not be sure what linear means. A linear function goes up and down by the same amount each time producing a graph with a straight line. The y-axis is the vertical axis and a graph crosses it when x = 0.",
         "B": "A function is linear if it's points lie in a straight line. Plotting these functions shows that only one of them is linear, so Tim is incorrect. When a graph crosses the y-axis, x=0. For the first function, when x=0, y=-4, therefore it would cross the y-axis at (0, -4). For the second function, when x=0, y=-4, therefore it would also cross the y-axis at (0, -4). So Katie is correct.",
@@ -109,7 +109,7 @@
     {
       "questionId": 147499,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fe1e4aff-f56e-4dcd-b318-1bdc6439f004.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Remember a linear function goes up and down by the same amount each time producing a graph with a straight line. Plot the functions to see if either of them are linear.",
         "B": "Not quite, I think you may have mixed up your x and y axis. The y-axis is the vertical axis and a graph crosses it when x = 0.",
@@ -133,7 +133,7 @@
     {
       "questionId": 147500,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1375f3c4-d525-4da4-a8ac-ff8530959e16.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite - a linear function goes up or down by the same amount each time. Do the values of y change by the same amount each time as x increases?",
         "B": "The graph y=x/5 could be re-written as y=1/5 x. Therefore, the gradient is a constant positive, and the graph would increase by the same amount each time, making it linear. The first function would not be linear, because as x increases in size, the value of y would not change by the same amount each time.",

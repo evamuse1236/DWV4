@@ -79,7 +79,7 @@
     {
       "questionId": 165811,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/60fd80ee-0615-4414-93af-71fffee97448.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have accidentally found the relationship that relates 𝑥 to 𝑦. We are looking for the relationship that relates 𝑦 to 𝑥!",
         "B": "Not all straight lines have a gradient of 1... Find 𝑦 / 𝑥 to get the constant of proportionality!",
@@ -103,7 +103,7 @@
     {
       "questionId": 165812,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/73d6c55a-3c7c-486a-8942-ee3a3dabcb7c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have accidentally found the relationship that relates 𝑥 to 𝑦. We are looking for the relationship that relates 𝑦 to 𝑥!",
         "B": "I think you have confused the constant of proportionality with the 𝑦-intercept in 𝑦 = 𝑚𝑥 + 𝑐! In this question, the constant of proportionality is what you multiply 𝑥 by to get 𝑦...",
@@ -115,7 +115,7 @@
     {
       "questionId": 165817,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e410b6a4-3d3d-4a08-8eed-1bb185efcdd9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have confused the constant of proportionality with the 𝑦-intercept in 𝑦 = 𝑚𝑥 + 𝑐! In this question, the constant of proportionality is what you multiply 𝑥 by to get 𝑦...",
         "B": "We can see the coordinate (5, 6) lies on the line. To get the constant of proportionality we do 𝑦 / 𝑥 which equals 6 / 5!",

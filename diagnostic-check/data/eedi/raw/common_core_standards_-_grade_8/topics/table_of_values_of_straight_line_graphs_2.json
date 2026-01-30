@@ -43,7 +43,7 @@
     {
       "questionId": 107297,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d6b37187-c2b8-4120-a878-fc64057751a8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have  tried to solve the equation and correctly worked out 9 - 3. However, you need to look carefully at the sign in front of the x.",
         "B": "The table tells us that 𝑦 has a value of 9. Substituting this value into 𝑦 = 3 − 𝑥 gives 9 = 3 − ★. One way of solving this is to add ★ to both sides to give 9 + ★ = 3, then subtracting 9 from both sides gives ★ = 3 − 9 = −6.",
@@ -55,7 +55,7 @@
     {
       "questionId": 107317,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/be3c6739-e763-454b-a366-a1b107c7fef1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have swapped the signs here. Remember, we need to substitute the value of 8 into y, and then solve the equation to obtain the correct value of x.",
         "B": "I think you have calculated that 14 - 6 = 8, but when you are subtracting you cannot change the order. Remember, you need to substitute y = 8 into the equation, and solve to find x.",
@@ -67,7 +67,7 @@
     {
       "questionId": 107298,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f3555c38-6396-49b7-a8a9-0192bf88af86.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have worked out the difference between 9 and 3, as you have seen those two values in the question. However, you need to substitute x = -9 into the equation in order to find the value of y. Be careful with the negative numbers here.",
         "B": "I think you have calculated 3 - 9, but we need to find 3 - - 9. What happens when you have two minus signs next to each other?",
@@ -79,7 +79,7 @@
     {
       "questionId": 107318,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/032db23e-78da-4331-8ff3-72f8711f7423.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember, in this equation you need to use substitution. So, replace x in the equation with -8. Be careful with the negative numbers.",
         "B": "The table tells us that 𝑥 has a value of −8. Substituting this value into 𝑦 = 6 − 𝑥 gives ★ = 6 −(−8) = 6 + 8 = 14.",
@@ -91,7 +91,7 @@
     {
       "questionId": 107299,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d25d8d30-7ac7-42a9-9894-42f2f847225d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have worked out the difference between 9 and 3, as you have seen those two values in the question. However, you need to substitute y = -9 into the equation in order to find the value of x. Be careful with the negative numbers here.",
         "B": "I think you have added 3 to -9. However, you need to substitute y = -9 into the equation in order to find the value of x. Be careful with the negative numbers here.",
@@ -103,7 +103,7 @@
     {
       "questionId": 107319,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/917666c2-c3b4-4a51-8ef0-9f0935f3b336.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember, in this equation you need to use substitution. So, replace y in the equation with -8. Be careful with the negative numbers.",
         "B": "The table tells us that 𝑦 has a value of −8. Substituting this value into 𝑦 = 6 − 𝑥 gives −8 = 6 − ★. One way of solving this is to add ★ to both sides to give −8 + ★ = 6, then adding 8 to both sides gives ★ = 6 + 8 = 14.",
@@ -115,7 +115,7 @@
     {
       "questionId": 107300,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/be59fc85-b7b9-4675-a21b-d514ff84b3eb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Remember, in this equation you need to use substitution. So, replace x in the equation with 9.",
         "B": "I think you have replaced the x with 9, and read that as the number 39. However, the expression 3x means 3 multiplied by x.",
@@ -127,7 +127,7 @@
     {
       "questionId": 107320,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ac348f45-5bf9-48d2-b656-eb2cd731b6b0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have replaced the x with 8, and read that as the number 68. However, the expression 6x means 6 multiplied by x.",
         "B": "The table tells us that 𝑥 has a value of 8. Substituting this value into 𝑦 = 6𝑥 gives ★ = 6 × 8 = 48.",
@@ -139,7 +139,7 @@
     {
       "questionId": 107301,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/854efdf9-7e4b-4344-b229-5792e5b141ad.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have correctly substituted y = 9 into the equation. However, you have then subtracted 3. Think carefully about which inverse operation you need to use to solve the equation.",
         "B": "I think you have replaced the x with 9, and read that as the number 39. However, the expression 3x means 3 multiplied by x. Also, check the table carefully - are you actually given the value of x?",
@@ -151,7 +151,7 @@
     {
       "questionId": 107321,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5ba5942e-76c0-4c1f-b1bf-115106ded5e8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have replaced the x with 8, and read that as the number 68. However, the expression 6x means 6 multiplied by x. Also, check the table carefully - are you actually given the value of x?",
         "B": "I think you have substituted x = 8 into the equation. Be careful - look closely at the table. Which value have you been given?",

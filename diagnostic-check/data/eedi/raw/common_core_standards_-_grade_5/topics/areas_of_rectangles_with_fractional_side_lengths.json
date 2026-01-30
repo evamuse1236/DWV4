@@ -31,7 +31,7 @@
     {
       "questionId": 158397,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/707b90f3-3457-46f9-a9c7-0c321574d053.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost! You have found the right number of rows and columns, but the shape should be a rectangle.",
         "B": "Not quite - this shaded area is 2/5 cm long, but is it 3/7 cm wide?",
@@ -43,7 +43,7 @@
     {
       "questionId": 158585,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d9e6240f-fabc-436e-bc32-17148bc8f58b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost! The shape should be a rectangle. You have found the right number of rows, but how many columns do you need to make sure that the rectangle has a 1cm side?",
         "B": "Not quite - this shaded rectangle does have a 1cm side, but does it have a 3/7 cm side?",
@@ -55,7 +55,7 @@
     {
       "questionId": 158398,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e9a75772-0dbb-405f-a181-6a1b5e0c7e39.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite - each fraction should be shaded squares over total squares. For example for the width of the rectangle, how many squares wide is the whole 1m grid? How many of them are shaded?",
         "B": "It looks like you have counted the white rows and columns, but we want to describe the green shaded rectangle.",
@@ -67,7 +67,7 @@
     {
       "questionId": 158586,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f2ab677e-3d44-452f-87dd-5b5c289e9208.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite - each fraction should be the number of shaded squares over the total number of squares. For example, for the width of the rectangle, how many squares wide is the whole 1m grid? How many of them are shaded?",
         "B": "The model is split into 6 columns and 8 rows, so if we shade 4 columns in 3 rows we make a rectangle that is 4/6 m x 3/8 m.",
@@ -91,7 +91,7 @@
     {
       "questionId": 158587,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/81144973-cd4c-40a8-a706-01ae24c1da2f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you counted the white tiles. These are \"unshaded\"; we want the green \"shaded\" ones.",
         "B": "Almost! Just double check your counting and multiplying for the total number of tiles in the shape.",
@@ -115,7 +115,7 @@
     {
       "questionId": 158588,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/27281f22-681b-4375-a7a8-408e63389af6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, I think you need to double check the area of one tile. What is 1/3 x 1/3? Remember to multiply the numerators and denominators together.",
         "B": "The area of each tile is 1/3 x 1/3 = 1/9 square meters. There are 36 tiles, so 36 x 1/9 = 36/9 = 4 square meters.",
@@ -127,7 +127,7 @@
     {
       "questionId": 158401,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5efd55af-6bed-4893-8168-a00a631cb92b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost! If we split this rectangle into tiles that are 1/3 inch long and 1/5 inch wide, there would be 374, but what is the area of each tile?",
         "B": "Not quite - we can't just multiply the integers and multiply the fractions, or we would miss part of the area. Can you change 3 2/5 and 7 1/3 into improper fractions and then multiply them?",

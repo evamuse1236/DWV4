@@ -43,7 +43,7 @@
     {
       "questionId": 146108,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bb2767db-dae7-4135-8bae-bf6c068a577e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have added 3. The scale factor multiplies all side lengths, but what affect would it have on the angles of the shape?",
         "B": "I think you have assumed that the scale factor would mean the angle was multiplied by 3. If this were the case, the sum of the angles would multiply by 3 too, which could not be true in a triangle. What affect, if any, would the scale factor have on the angles of the shape?",
@@ -55,7 +55,7 @@
     {
       "questionId": 146128,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/87b26932-5d0f-4530-a4f3-02bf47a87253.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have added 3. The scale factor multiplies all side lengths, but what affect would it have on the angles of the shape?",
         "B": "The angles in the enlarged shape would not change, so angle q = 42 degrees",
@@ -91,7 +91,7 @@
     {
       "questionId": 146111,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f51a6022-97a4-4107-bb7a-f91a18ccd06f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have confused w and x. Reconsider how the orientation of the triangle has changed, and which angle on the left hand triangle would correspond with angle x.",
         "B": "Angle x corresponds with the bottom left angle in the first triangle, and so would be 73 degrees",
@@ -103,7 +103,7 @@
     {
       "questionId": 146131,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2843de8b-3840-4dde-82de-7076955f215a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have confused w and x. Reconsider how the orientation of the triangle has changed, and which angle on the left hand triangle would correspond with angle x.",
         "B": "I think you have halved 68. Do angles change when we enlarge shapes?",
@@ -115,7 +115,7 @@
     {
       "questionId": 146112,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e2441abb-0457-479a-bba4-d791cce2b690.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Remember shapes are similar if one is an enlargement of the other",
         "B": "Remember shapes are similar if one is an enlargement of the other",
@@ -127,7 +127,7 @@
     {
       "questionId": 146132,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/22719a64-14d2-4514-a4fd-fef243eea32d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Remember shapes are similar if one is an enlargement of the other",
         "B": "If they are all regular octagons, do the angles change? Does that make it an enlargement?",

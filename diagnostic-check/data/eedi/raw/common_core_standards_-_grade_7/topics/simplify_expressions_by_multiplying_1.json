@@ -31,7 +31,7 @@
     {
       "questionId": 104960,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d1a504d6-8380-4a0c-ad04-8a97a15ec80f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! To help, have a think about how else we could write questions such as 3 ✕ 3 or 4 ✕ 4. Can you apply this to the algebra?",
         "B": "Be careful. 2a means 2 lots of a, which is 2 ✕ a NOT a ✕ a. Have a think about how else we could write questions such as 3 ✕ 3 or 4 ✕ 4.",
@@ -43,7 +43,7 @@
     {
       "questionId": 104978,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5e413944-c61f-4b7a-a759-3de8e9320064.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! To help, have a think about how else we could write questions such as 3 ✕ 3 ✕ 3 or 4 ✕ 4 ✕ 4. Can you apply this to the algebra?",
         "B": "Another way of writing 𝑚 × 𝑚 × 𝑚 is 𝑚³. The power is the how many copies of m we are multiplying together",
@@ -55,7 +55,7 @@
     {
       "questionId": 104961,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/33228642-4b37-46eb-8d63-f90e97cbfbb7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! 2a² means 2 lots of a² or 2 ✕ a² NOT a² ✕ a. Remember a² = a ✕ a. Can you use this to help you simplify the expression?",
         "B": "Be careful. 3a means 3 lots of a, which is a + a + a NOT a² ✕ a. Remember a² = a ✕ a. Can you use this to help you simplify the expression?",
@@ -67,7 +67,7 @@
     {
       "questionId": 104979,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8f55f806-b133-435c-9cec-96ae236ab7db.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "We could write each term 𝑚² as 𝑚 × 𝑚. Our expression then becomes 𝑚 × 𝑚 × 𝑚 × 𝑚. This can also be written as 𝑚⁴, answer A.",
         "B": "Be careful. 4m means 4 lots of m, which is m + m + m + m NOT m² ✕ m². Remember m² = m ✕ m. Can you use this to help you simplify the expression?",
@@ -91,7 +91,7 @@
     {
       "questionId": 104980,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a53dd465-44df-44de-903c-7ae8fdba77c0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Be careful + m means n added to m NOT n multiplied by m. Have a look at the other expressions, which one could mean n ✕ m? Remember, when writing algebra we don't use the ✕ symbol, as it could get confused with the letter 𝒙.",
         "B": "When writing algebra we do not use the multiplication sign. This is because 𝑥 is a popular letter to use for algebra and so having a multiplication symbol might confuse things. Note also that it is usual practice to put letters in alphabetical order, so 𝑚𝑛 rather than 𝑛𝑚.",
@@ -115,7 +115,7 @@
     {
       "questionId": 104981,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c416dc41-d281-42ca-be29-ad3f84f27aba.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! I think you may be confusing this with power notation. m⁹ means m ✕ m ✕ m ✕ m ✕ m ✕ m ✕ m ✕ m ✕ m NOT m ✕ 9. How do we simplify when a letter is multiplying a number?",
         "B": "So close! m9 does mean m x 9 but it is not how we conventionally write it. Can you find the other option that means m x 9?",
@@ -127,7 +127,7 @@
     {
       "questionId": 104964,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ff855f86-24df-4a66-b28a-18800ef2dc20.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Be careful. 10a = 6a + 4a which is not the same as 6a ✕ 4. Remember 6a = 6 ✕ a. Can you use this, as well as the fact that you can do multiplication in any order, to help you simplify the expression?",
         "B": "Nearly! 6a4 is equal to 6a ✕ 4 but we need to simplify further. Remember multiplication can be done in any order. Can you rearrange this expression to help you simplify?",
@@ -139,7 +139,7 @@
     {
       "questionId": 104982,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/40d4b73b-36d9-4a09-8a84-a667f86a4634.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Be careful. 12m = 3m + 9m which is not the same as 3m ✕ 9. Remember 3m = 3 ✕ m. Can you use this, as well as the fact that you can do multiplication in any order, to help you simplify the expression?",
         "B": "Given that 3𝑚 = 3 × 𝑚 and multiplication is commutative (so the order doesn’t matter), we can write 3𝑚 × 9 = 3 × 9 × 𝑚 = 27𝑚",

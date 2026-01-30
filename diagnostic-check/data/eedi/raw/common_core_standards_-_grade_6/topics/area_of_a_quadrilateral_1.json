@@ -37,7 +37,7 @@
     {
       "questionId": 98463,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/08890efd-1d90-41e5-8b3f-a9f0c82e0be3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've added two of the sides. Remember that to find the area of a rectangle you have to multiply the width by the length.",
         "B": "Area of a rectangle = width ✕ length = 5 ✕ 12 = 60 square centimetres.",
@@ -73,7 +73,7 @@
     {
       "questionId": 122119,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/989159ef-c972-4f30-b8ef-f6c4f7281993.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. We cannot count the squares that are NOT fully shaded. Can you combine partly shaded squares to form fully shaded squares? How many full squares would then be shaded?",
         "B": "Not quite. Those 6 partially shaded squares can be combined together to make more than one full squares. How many full squares would be completed shaded then?",
@@ -97,7 +97,7 @@
     {
       "questionId": 98496,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a0d739be-afa9-4f0e-b86d-913c685723ca.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Be careful. Remember the area of a parallelogram = base x perpendicular height.",
         "B": "Not quite. Turning the shape so that b is horizontal might help you see which lengths we would use to find the area.",
@@ -133,7 +133,7 @@
     {
       "questionId": 109429,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a535625b-8925-4b3e-b50b-a503e8561b06.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've doubled the length. Remember that to find the area of a square, we multiply the side length by the side length.",
         "B": "I think you've calculated the perimeter. Remember that to find the area of a square, we multiply the side length by the side length.",
@@ -145,7 +145,7 @@
     {
       "questionId": 109434,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ec0b96f9-886c-41df-9d6d-916dd6717b7f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you've doubled the length. Remember that to find the area of a square, we multiply the side length by the side length.",
         "B": "I think you've calculated the perimeter. Remember that to find the area of a square, we multiply the side length by the side length.",

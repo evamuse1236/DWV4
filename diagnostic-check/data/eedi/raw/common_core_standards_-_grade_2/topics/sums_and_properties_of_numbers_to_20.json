@@ -31,7 +31,7 @@
     {
       "questionId": 156079,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1ad52de4-47e5-4a4d-be74-d947e7f5d929.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have just written the digits next to each other. The question asks you to ADD 5 and 3. Consider, if you had 5 sweets and were given 3 more, how many would you have in total?",
         "B": "If we start on 5 and count up by 3... 6, 7, 8.. the answer would be 8.",
@@ -67,7 +67,7 @@
     {
       "questionId": 166890,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/687e4348-45d0-43ef-989d-802ed292bc60.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "10 + 8 = 18 so this would be correct. You need to look for the pair of numbers that do not add to 18.",
         "B": "You can use the same number twice and 9 + 9 = 18 so this would be correct. You need to look for the pair of numbers that do not add to 18.",
@@ -91,7 +91,7 @@
     {
       "questionId": 166891,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/949dc6b6-75a8-4cc0-907c-feefcaf43f41.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you might have seen the 4 and thought that would be even, but the 4 is in the tens column, the 1 in 41 means that 41 is an odd number. You are looking for an even number, one that would not appear in the list 1, 3, 5, 7, 9, 11,...",
         "B": "If we continue the count in 2s, we get to 7 then 9. 7 and 9 are odd numbers. 8 is halfway between 7 and 9 and it is an even number.",
@@ -103,7 +103,7 @@
     {
       "questionId": 166642,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ee03cd27-7d80-4570-88f0-afacf715d0d0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "If we can pair them all up with none left over then we do have an even number of apples. We want the fact that would not show that we have an even number of apples.",
         "B": "If we can split the apples into two equal piles then we do have an even number of apples. We want the fact that would not show that we have an even number of apples.",
@@ -115,7 +115,7 @@
     {
       "questionId": 166892,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aa8ac3d3-bb87-4b86-a843-ee4b62f22da6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "If we cannot split the apples into two equal piles then we do have an odd number of apples. We want the fact that would not show that we have an odd number of apples.",
         "B": "We have 3 apples in each column, but an odd number of columns, so we have an odd number of apples in total. If we had an 3 apples in each column but an even number of columns we would have had an even number of apples in total. So this fact does not help us to show that we always get an odd number of apples.",
@@ -127,7 +127,7 @@
     {
       "questionId": 166643,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ee137615-fac5-47f8-9c20-11d16f9655e9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "3 can be split into 3 equal groups of 1 but it is not even. Which number is even and can be split into 3 equal groups?",
         "B": "6 is an even number and it can be split into 3 equal groups with 2 in each group. 3 lots of 2 is 6.",

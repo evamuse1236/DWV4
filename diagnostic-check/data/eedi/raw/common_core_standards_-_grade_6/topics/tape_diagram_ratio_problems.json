@@ -25,7 +25,7 @@
     {
       "questionId": 166143,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4452852f-6c94-416b-88e5-47967c71419e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have worked it out for buying 24 dog treats, but it was 24 cat treats.",
         "B": "It looks like you have given the total number of treats but the question asks for the number of dog treats.",
@@ -49,7 +49,7 @@
     {
       "questionId": 166144,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a722c1d4-2ed1-458a-843d-40ef3b64fad8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have done worked out 5 ÷ 8, but the 5 parts represent the gas and the 8 represents the total number of parts in the tape diagram. We know that oil has 1 part and that 0.8 gallons of oil is used, so 1 part = 0.8 gallons. If 1 part = 0.8 gallons, how many gallons in 5 parts?",
         "B": "Oil has 1 part of the tape diagram which represents 0.8 gallons. Gas has 5 parts of the tape diagram, so 5 × 0.8 = 4 so there are 4 gallons of gas in the mixture.",
@@ -73,7 +73,7 @@
     {
       "questionId": 166145,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3cafc516-1ed3-4679-85f4-29f50ff54e0a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you have assumed that 63 is the total number of pies, but 63 is just the number of grape pies.",
         "B": "It looks like you have assumed that 63 is the total number of pies, but 63 is just the number of grape pies. If we know that 7 parts = 63 pies, how can we work out the number of pies in 1 part and therefore, the number of apple pies?",
@@ -85,7 +85,7 @@
     {
       "questionId": 166372,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f2d7c0e8-af9e-4a78-a634-97887438bbeb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have worked out that 1 part of the tape diagram represents 13 juices, but how many parts of the diagram does the apple juice have?",
         "B": "Grape juice has 5 parts of the tape diagram which represents 65 juices, so 1 part represents 65 ÷ 5 = 13 juices. Apple juice has 6 parts of the tape diagram, so 6 × 13 = 78 apple juices!",
@@ -97,7 +97,7 @@
     {
       "questionId": 166146,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7c7f6847-4d00-4b55-893c-78c649cbdc05.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have divided by 7 as there are 7 parts in total, but how many parts represent the 'Total Money Earned'?",
         "B": "He earned $252 which represents 6 parts of the tape diagram. 252 ÷ 6 = 42, so 1 part = $42. The total saved is just 1 part of the tape diagram, so he saved $42.",
@@ -109,7 +109,7 @@
     {
       "questionId": 166373,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/586ea52d-9864-4bcc-85c6-96b33618c2d5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have divided by 10 as there are 10 parts in total, but how many parts represent the 'Total Money Earned'? Remember, the question asks for how much he saved, not how much he did not save.",
         "B": "I think you have divided by 10 as there are 10 parts in total, but how many parts represent the 'Total Money Earned'?",
@@ -121,7 +121,7 @@
     {
       "questionId": 166147,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9f7ebc0d-c1bf-40b2-9920-414d713569a2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is how many cars Mike sold. We are looking for how many more cars Kelly sold than Mike...",
         "B": "You have correctly worked out how many cars each part of the tape diagram represents... Can you use this to work out how many more cars Kelly sold than Mike!?",

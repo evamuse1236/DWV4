@@ -31,7 +31,7 @@
     {
       "questionId": 165804,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2448abda-033d-46a3-8954-6938c343fc18.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have accidentally calculated the lowest common multiple... The question is asking for the greatest common factor!",
         "B": "The lowest number is not always the greatest common factor... List the factors of both numbers and see what the greatest value in both lists is!",
@@ -103,7 +103,7 @@
     {
       "questionId": 165807,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c659733d-8977-4ca8-95f4-868bddd1e9d3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This would be a factor of 28 but not a factor of 17... List the factors of both numbers and see what the greatest value in both lists is!",
         "B": "0 is only a factor of 0! To find the greatest common factor of 17 and 28, list the factors of both numbers and see what the greatest value in both lists is...",

@@ -43,7 +43,7 @@
     {
       "questionId": 107912,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fb012b40-11a2-49df-864c-fe6a3917fe52.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. You have identified the right numbers to use but have found the total not the difference.",
         "B": "The range is the biggest number subtract the smallest number, which is 17 – 1 = 16.",
@@ -55,7 +55,7 @@
     {
       "questionId": 107905,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5dccf3ec-bb89-4199-9710-96d126a2e20c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Be careful. We must take the signs into account. -10 is the smallest number not 2.",
         "B": "Not quite. We use the biggest and the smallest number to find the range",
@@ -67,7 +67,7 @@
     {
       "questionId": 107913,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0390f9de-2b83-403e-85dd-02cf7b3f6c5c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Be careful. 5 is the mode not the range. Remember the range is a measure of spread it is not an average.",
         "B": "Not quite. You have identified the right numbers to use but have added rather than subtracted.",
@@ -79,7 +79,7 @@
     {
       "questionId": 107906,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/52bc8ba8-f7c5-4273-824a-e3adee0a31ce.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost! You're right that y has to be 10 or smaller. But what's the lowest value it could be?",
         "B": "Almost! You're right that y has to be 3 or larger. But what's the highest value it could be?",
@@ -91,7 +91,7 @@
     {
       "questionId": 107914,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a37c0aee-3861-4aa3-88f2-256a243fe7f0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "So close! You have all the right numbers but look closely at your inequality signs. What does 11 ≤ y mean? What does y ≤ 3 mean? Can y be both of these things at once?",
         "B": "Ignoring 𝑦, the range of the numbers is 11 – 3 = 8. This is the range we want. This means y needs to be less than or equal to 11 (y ≤ 11) as if it was larger the range would change. This also means y needs to be greater than or equal to 3 (y ≥ 3) as if it was smaller the range would change. We can write in one go as 3 ≤ y ≤ 11.",
@@ -115,7 +115,7 @@
     {
       "questionId": 107915,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ba7c6cc6-a01b-48e6-b934-1d7a9017e732.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Be careful. Check your working. Remember we use the biggest number and the smallest number to find the range. A place value chart will help you order these numbers.",
         "B": "Not quite. Check your working. Remember to line up your digits with the same place value before subtracting.",
@@ -127,7 +127,7 @@
     {
       "questionId": 107908,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4d1bb64a-12ec-46f1-8baf-f25adda000d1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Be careful. These numbers are not listed in size order. Remember to use common denominators when comparing the size of fractions.",
         "B": "Be careful. We use the largest and smallest number to calculate the range. Remember to use common denominators when comparing the size of fractions.",
@@ -139,7 +139,7 @@
     {
       "questionId": 107916,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2674d856-6d44-41bf-ba2e-baa4b2bc6a63.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Be careful. We use the largest and smallest number to calculate the range. Remember to use common denominators when comparing the size of fractions.",
         "B": "Be careful. These numbers are not listed in size order. Remember to use common denominators when comparing the size of fractions.",

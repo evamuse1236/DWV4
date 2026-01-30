@@ -67,7 +67,7 @@
     {
       "questionId": 103670,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c6a14c3a-34e8-4044-887b-eee29665841d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Does adding a 0 on the end of 5.1 to make 5.10 change its value? For Katie, try and compare the number of units and tenths in each number.",
         "B": "Looking at Tom's numbers, 5.1 and 5.10 are actually the same as we can ignore the 0 hundredths on 5.10. Therefore 5.1 is not larger than 5.10. Looking at Katie's and working from left to right, they have the same units but 5.1 has more tenths than 5.01 so it must be larger. Therefore only Katie is correct.",
@@ -79,7 +79,7 @@
     {
       "questionId": 103680,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/86f8f537-c510-4f84-a78e-35cad0e65692.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Does adding a 0 on the end of 3.04 to make 3.040 change its value?",
         "B": "Not quite. Try and compare the number of units, tenths, hundredths and thousandths in each number.",
@@ -91,7 +91,7 @@
     {
       "questionId": 129216,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c82f8d32-f0a4-43f1-894c-0f1fa79c02e4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have found the number in the hundreds column, we need the number in the hundredths column",
         "B": "The 4 is in the tenths column. Which column will be hundredths?",
@@ -103,7 +103,7 @@
     {
       "questionId": 129076,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/13ad66e4-95da-4aba-bd1e-b9d1dc1c248f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have found the number in the tens column, we need the number in the tenths column",
         "B": "Not quite, this is the units column. Which column will be tenths?",
@@ -115,7 +115,7 @@
     {
       "questionId": 132162,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e271b56d-1c03-40e6-b185-a83fae262211.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "To compare Tom's numbers, write them on top of each other with the place value columns lined up. Covering up the \"0.\" at the start of each number might help you.",
         "B": "Don't forget to consider the whole numbers as well as the decimal digits when comparing numbers.",
@@ -151,7 +151,7 @@
     {
       "questionId": 132071,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d45f9f22-fba9-4982-b8e2-4898fb2bc41f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost! The question asks us to start with the largest number when we put them in order, not the smallest.",
         "B": "If we write the numbers on top of each other with the place columns lined up, it is easier to compare them. Starting from the left in the ones column, 2.026 is the largest because it is the only number that has a 2 instead of a zero in the ones column. Next we check the tenths column after the decimal point: 0.620 and 0.602 both have six tenths but 0.062 has no tenths, so 0.062 must be the smallest number. Finally we check the hundredths column to compare 0.602 and 0.620: 0.602 has no hundredths but 0.620 has two hundredths so 0.602 is smaller. So in order from the largest, we have 2.026, 0.620, 0.602 and 0.062.",

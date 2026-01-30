@@ -79,7 +79,7 @@
     {
       "questionId": 78424,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/208792ed-5d85-49fc-98df-5256455905db.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you've added 8 zeros at the end of 8683, ignoring the decimal point.",
         "B": "The power of 10 indicates we multiply 8.683 by 10, 8 times. The digits move to the left when multiplying so have an answer of 868 300 000.",
@@ -115,7 +115,7 @@
     {
       "questionId": 103986,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a7283aca-6dba-4773-aa6d-58a42b1eaf25.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have chosen the number with the most digits, but as long as the digits represent a number that is greater or equal to 1 but less than 10, the length of the number doesn't matter.",
         "B": "It looks like you think the power must be positive. The power in standard form can be either positive or negative, as long as it is an integer.",
@@ -127,7 +127,7 @@
     {
       "questionId": 103992,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/56cf3fc4-366e-4572-b250-d6c604dff7ab.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you think the number must be greater than 1, but in fact it can also be equal to 1. However, it must be less than 10.",
         "B": "I think you're looking at the negative power. The power can be negative or positive in standard form, as long as the value is an integer.",

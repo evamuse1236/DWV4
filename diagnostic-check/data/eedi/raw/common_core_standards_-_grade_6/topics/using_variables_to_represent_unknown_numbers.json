@@ -31,7 +31,7 @@
     {
       "questionId": 173938,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e5060edb-3054-4502-a61e-2d3283fad962.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "In algebra, a letter like '𝑝' is called a variable and it represents a value or a number, not the object itself. Think about what value you need to know about each pen to find the total cost.",
         "B": "The expression is 300𝑝. We are told in the question that the school is buying 300 pens, so the number 300 already represents the number of pens. What must '𝑝' represent?",
@@ -55,7 +55,7 @@
     {
       "questionId": 173939,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6698cd4e-a896-4dde-9d5c-049f2f280e5b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Think about the situation. Is it possible for there to be zero adults on the bus? If it is, then '𝑎' could be 0, so it doesn't have to be greater than 0.",
         "B": "The variable '𝑎' represents the number of adults. You can't have a fraction of a person or a negative number of people. You can have 0, 1, 2, 3... adults, so '𝑎' must be a whole number.",
@@ -67,7 +67,7 @@
     {
       "questionId": 173999,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0419738f-9161-453c-9f69-3f5d66881e0b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Think about what 𝑡 represents in this problem – the number of tables. Can you have a negative number of tables, or a fraction of a table? The context of the problem puts limits on the values 𝑡 can take.",
         "B": "In the expression 5𝑡 + 4, the number 5 is being multiplied by 𝑡. It is the coefficient of 𝑡. The letter 𝑡 itself represents the number of tables, which could be a different number from 5.",
@@ -79,7 +79,7 @@
     {
       "questionId": 173940,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/70ba1fa7-324c-481d-af23-752cc522280d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The variable '𝑙' represents a length. Think about whether a real-life rectangle can have a length that is a negative number, or a length of zero.",
         "B": "A length can be a decimal or a fraction, for example, 3.5 cm or 1/2 a metre. So, '𝑙' does not have to be a whole number.",
@@ -139,7 +139,7 @@
     {
       "questionId": 174002,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2094e8ad-0222-4045-b541-edea84a93d27.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you've added 60ℎ and 35 to get 95ℎ. Remember that you can't add terms with letters (like 60ℎ) to terms that are just numbers (like 35). They are not 'like terms'.",
         "B": "This description matches the calculation 60 + 35. But the expression in the question is 60ℎ + 35. Think about what the 'ℎ' might stand for in this situation.",

@@ -43,7 +43,7 @@
     {
       "questionId": 109751,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ecb737b5-33a5-4d91-a81c-9c8de78af25b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Think about the connection between the diameter and radius of a circle. This may help you to find another way of expressing the circumference.",
         "B": "Think about the connection between the diameter and radius of a circle. This may help you to find another way of expressing the circumference.",
@@ -55,7 +55,7 @@
     {
       "questionId": 143162,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5f7b22cc-d6d5-474c-a0ed-202d94137298.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, this is the formula for the area of a circle. How do we find the circumference of a circle?",
         "B": "Katie is correct because to find the circumference of a circle you multiply the diameter of the circle by pi. The radius is 2 lots of the diameter, therefore 𝐶 = 𝜋𝑑 = 𝜋 × 2𝑟 = 2π𝑟. Tom is incorrect because his formula finds the area of a circle.",
@@ -79,7 +79,7 @@
     {
       "questionId": 109762,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3a0ab904-e8a1-449a-95c8-11a834f36161.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! Is circumference a measurement of length or area?",
         "B": "Not quite! Is circumference a measurement of length or volume?",
@@ -103,7 +103,7 @@
     {
       "questionId": 109763,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4901b9b7-8f15-421b-9f72-b21aee92607e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! I think you may have used the formula 𝐶 = 𝜋𝑑. If the radius is 3, what is the measurement you should substitute in for the diameter?",
         "B": "Not quite! I think you may be confusing circumference with area (𝐴 = 𝜋𝑟²). What's the other formula associated with circles?",
@@ -115,7 +115,7 @@
     {
       "questionId": 109754,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c7d623ed-73f7-4016-8ad7-daf0756e9bd8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! I think you may have used the formula 𝐶 = 2𝜋𝑟, but if the diameter is 8, what is the measurement you should substitute in for the radius?",
         "B": "The length marked in is the diameter. Substituting 𝑑 = 8 into 𝐶 = 𝜋𝑑 gives 𝐶 = 𝜋 × 8 = 8𝜋. Or, using 𝐶 = 2𝜋𝑟, where 𝑟 = 4 will produce the same result.",
@@ -127,7 +127,7 @@
     {
       "questionId": 109764,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fe8a9def-62d2-4e66-873c-9f2d63235a36.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! I think you may have used the formula 𝐶 = 2𝜋𝑟, but if the diameter is 3, what is the measurement you should substitute in for the radius?",
         "B": "Not quite! I think you may be confusing circumference with area (𝐴 = 𝜋𝑟²). What's the other formula associated with circles? Take care here - you've been given the diameter!",
@@ -151,7 +151,7 @@
     {
       "questionId": 109765,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b10d3a3e-b152-46b0-b8cc-a0c3abbe41ff.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! I think you may be confusing circumference with area (𝐴 = 𝜋𝑟²). What's the other formula associated with circles? Remember, it's the radius that's needed, not the diameter!",
         "B": "Take care - the question asks for the radius!",

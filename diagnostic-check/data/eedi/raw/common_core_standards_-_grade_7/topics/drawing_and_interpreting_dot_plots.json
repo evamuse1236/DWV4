@@ -43,7 +43,7 @@
     {
       "questionId": 154861,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/de88fb24-7837-4850-82bc-e17282feb98e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost! I think you have miscounted the number of 2s in the list. Count those again and update your dot plot.",
         "B": "The numbers in the list are 2, 3 and 4, so they need to be placed on the scale. There are five 2s, two 3s and three 4s, so we need 5, 2 and 3 dots from left to right.",
@@ -55,7 +55,7 @@
     {
       "questionId": 154866,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9aa56894-b6b7-4268-93b6-5ec7c2f4c796.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost! I think you have miscounted the number of 4s in the list. Count those again and update your dot plot.",
         "B": "I think you have misunderstood what should go on the scale. The scale should show which numbers are in the list, not how many times they are listed, that is represented by the number of dots. Also, double check how many 4s are in the list.",
@@ -67,7 +67,7 @@
     {
       "questionId": 154862,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5075ddf6-e520-4d87-8a19-aa3abac9847f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have looked at how many times there are 4 dots. We need to start by locating the time 4 hours. How many dots does this have above it? Remember each dot represents 1 student.",
         "B": "I think you have identified the number of students who spend LESS THAN 4 hours on the project, we are looking for EXACTLY 4. We need to start by locating the time 4 hours. How many dots does this have above it? Remember each dot represents 1 student.",
@@ -91,7 +91,7 @@
     {
       "questionId": 154863,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6df3ab58-8835-451f-a438-c3e525b79676.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have identified the highest number of dots. This is the correct starting point. We need the most common number of hours, which is located on the axis below those dots.",
         "B": "The most common number of hours will have the most dots above it, therefore it is 7 hours.",
@@ -103,7 +103,7 @@
     {
       "questionId": 154868,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cb751b69-6e6c-42fa-a7ee-852aa87d77c0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have identified the highest number of dots. This is the correct starting point. We need the most common height, which is located on the axis below those dots.",
         "B": "I think you have identified the most common number of dots used. To find the most common height we look for the height with the most dots above it.",
@@ -127,7 +127,7 @@
     {
       "questionId": 154869,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/92492d5e-c7f8-44ac-87ea-cb4425be8fb5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have used the smallest height as 0, but there are no seedlings for 0 cm. What is the lowest number of cm that has at least 1 seedling?",
         "B": "The tallest seedling had a height of 13 cm, the shortest had a height of 1 cm. Therefore the range is 13 - 1 = 12 cm.",

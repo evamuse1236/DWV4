@@ -49,7 +49,7 @@
     {
       "questionId": 78599,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a358a66c-c52f-49e9-88f5-144b2f8f810e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The perimeter is the sum of all the lengths. What happens if each side becomes two times as long? Try some numbers for the lengths and see what happens.",
         "B": "It looks like you have added to the perimeter rather than multiplying it by an amount.",
@@ -61,7 +61,7 @@
     {
       "questionId": 78306,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4e620963-402d-4a8e-82c3-8859dc3adf53.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This shape has only been enlarged in one direction.",
         "B": "This shape has only been enlarged in one direction.",
@@ -73,7 +73,7 @@
     {
       "questionId": 78600,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/12acdac3-466d-4563-90a7-8e368cda30e3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This shape has only been enlarged in one direction.",
         "B": "This shape has only been enlarged in one direction.",
@@ -121,7 +121,7 @@
     {
       "questionId": 101426,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ecfd73fd-448d-40d0-ba8f-ca379646fbe8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you've given the scale factor. How can we use this to find the length marked with a star?",
         "B": "Looking at the bottom edges. We go from 6 to 12 so the scale factor is ✕2. Looking at the left-hand edges we multiply by the same scale factor. 4 ✕ 2 = 8",

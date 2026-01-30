@@ -43,7 +43,7 @@
     {
       "questionId": 104656,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/34ec0cfc-b9db-4c78-86e9-fbea1eec4e5d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Multiplying 500g and 200g will not take account of the cost. How could we work out how much cereal you get for £1?",
         "B": "If we divide each mass by the price, we will get the mass per unit cost in grams per £. So we do 500 ÷ 1.85 and 200 ÷ 0.80. Comparing these, the larger answer will be better value.",
@@ -55,7 +55,7 @@
     {
       "questionId": 141676,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b7a01432-66e6-4f5f-9dcf-9aa6b683d391.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Multiplying 330ml and 900ml will not take account of the cost. How could we work out how much drink you get for 1p?",
         "B": "Dividing 330ml and 900ml will not take account of the cost. How could we work out how much drink you get for 1p?",
@@ -67,7 +67,7 @@
     {
       "questionId": 104657,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5fa0df29-5c61-4272-8137-1642b700c0c7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "900g would make 15 biscuits. To start, try finding the amount of flour needed for 1 biscuit. How could we use that to find the flour needed for 14 biscuits?",
         "B": "480g would make 8 biscuits. To start, try finding the amount of flour needed for 1 biscuit. How could we use that to find the flour needed for 14 biscuits?",
@@ -103,7 +103,7 @@
     {
       "questionId": 104663,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ff15ba7d-d037-41f8-a871-21c4cb3ac467.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have made a mistake when converting km to m. What does 'kilo' in the word 'kilometre' tell us?",
         "B": "Check the units in the scale. 5.2cm on the map is equivalent to 13 km in real life. How do we change that to metres?",
@@ -115,7 +115,7 @@
     {
       "questionId": 104659,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e72f2583-5e65-439a-a39b-dd8c1c49537f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Nearly, it looks like you have converted £5 into Dollars, rather than $5 into Pounds. Think carefully about what calculation you need to do to go from $1.31 to £1.",
         "B": "Almost, it looks like you've found €5 in Pounds, rather than $5. Look carefully at which exchange rate to use.",
@@ -127,7 +127,7 @@
     {
       "questionId": 104664,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1b3d9060-9b16-44d0-a61f-cd48024ec499.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Nearly, it looks like you have converted £11 into Dollars, rather than $11 into Pounds. Think carefully about what calculation you need to do to go from $1.31 to £1.",
         "B": "To change from $ to £, we divide by 1.31. 11 divided by 1.31 is 8.40.",
@@ -139,7 +139,7 @@
     {
       "questionId": 104660,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2fd27320-5a02-4056-b708-59509febc915.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've multiplied the time by 2, because the speed has been multiplied by 2. Have a think about if we travel at a quicker speed, will the journey take longer? Always check your answer seems sensible too!",
         "B": "Have a think about if we travel at a quicker speed, will the journey take longer? Always check your answer seems sensible too!",

@@ -55,7 +55,7 @@
     {
       "questionId": 135552,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4b523438-6c10-4b09-aedc-443ed6eb9640.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. What does the term 'perpendicular' mean?",
         "B": "Correct. The perpendicular bisector of a straight line (180 degrees) results in two 90 degree angles.",
@@ -67,7 +67,7 @@
     {
       "questionId": 135533,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f09dda12-17b8-4cbc-94c4-a1375044f014.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "An equilateral triangle has 3 equal angles of 60 degrees. Bisecting any of these angles will construct a 30 degree angle. Think about how you could construct a 90 degree angle to start.",
         "B": "A perpendicular bisector will construct a 90 degree angle. Bisecting this angle will split it into 2 equal angles of 45 degrees.",
@@ -91,7 +91,7 @@
     {
       "questionId": 135534,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6ef52671-7efe-48f4-b31f-5f41344c57f6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. If the sum of the interior angles in a triangle is 180 what would one angle in an equilateral triangle be?",
         "B": "Not quite. A perpendicular bisector would result in an angle of 90 degrees which would give an angle of 45 degrees once halved.",
@@ -127,7 +127,7 @@
     {
       "questionId": 135555,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d1cb2dfb-732c-4495-bb74-4594b7bb7ad3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "A triangle with 3 equal will have angles of 60 degrees. Think about what we could do next to have an angle of 30 degrees.",
         "B": "A perpendicular bisector will construct a 90 degree angle. Bisecting this angle will split it into 2 equal angles of 45 degrees.",
@@ -139,7 +139,7 @@
     {
       "questionId": 135536,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d4ce205-664c-48c8-ad9e-ade3f42e930a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, remember, a scalene triangle has three different side lengths.",
         "B": "Joining up these three dots will create a three sided shape, where all the sides are equal. This is called an equilateral triangle.",
@@ -151,7 +151,7 @@
     {
       "questionId": 135556,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6cd29e09-61e3-4948-9781-35ec0048ac8b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, remember, a scalene triangle has three different side lengths.",
         "B": "Imagine joining up the three dots, will any of them form an angle of 90 degrees?",

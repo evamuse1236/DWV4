@@ -25,7 +25,7 @@
     {
       "questionId": 78296,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/be3c55b9-54be-453f-87f8-dd7375de77f5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Try drawing a tall isosceles with a short base.",
         "B": "Try using the longest length as the base. Can the other two sides meet?",
@@ -49,7 +49,7 @@
     {
       "questionId": 95518,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d4938cd-cb84-4dad-b646-e7240c621505.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you have calculated the radius of the smaller circle. What does k represent?",
         "B": "It looks like you may have estimated. What part of the circle does k represent? Could it be drawn elsewhere?",
@@ -61,7 +61,7 @@
     {
       "questionId": 120911,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a00e56aa-d9b0-4442-a2cf-6cc7ffdb1501.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The side marked q is the radius of the smaller circle. For ease of measuring, look at a radius either vertically or horizontally, it can be seen that it is 2 squares long, or 2cm.",
         "B": "It looks like you may have estimated. What part of the circle does q represent? Could it be drawn elsewhere?",
@@ -85,7 +85,7 @@
     {
       "questionId": 95526,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/57e9f5ee-53f6-4d6d-8b6e-0fd5f84d54da.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. If I know 2 side lengths of a triangle does that mean there is only one option for the third length? Try holding two pens together as the two sides and investigating what happens when you change the angle between them.",
         "B": "You do not need a protractor to construct some types of triangles. What instrument could you use instead?",
@@ -109,7 +109,7 @@
     {
       "questionId": 120912,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8a644c92-78ee-420c-8e7a-f98cd3b638d2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "How will you measure the 12cm and 7cm sides? Think about where they are in relation to the 52° angle.",
         "B": "How will you measure the 52° angle? Think about where it is in relation to the 7cm and 12cm sides.",
@@ -133,7 +133,7 @@
     {
       "questionId": 120913,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/80cb96fc-b13c-40e8-b36b-a609b21b8d15.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost, but don't forget we have some measured lengths here too",
         "B": "Almost, but don't forget we have some measured angles here too",

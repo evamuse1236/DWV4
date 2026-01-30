@@ -25,7 +25,7 @@
     {
       "questionId": 107873,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/50e67fab-be20-466e-86b9-c4dd90213803.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. We are being asked to find the median, 5 is the mean.",
         "B": "As there are an odd number of numbers and these are already ordered, the median is the middle number which is 4.",
@@ -37,7 +37,7 @@
     {
       "questionId": 107881,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a03bb78b-d7aa-4e6a-acef-4901fc315f65.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. We are being asked to find the median, 10 is the mean.",
         "B": "Be careful. There is an odd number of data in this data set meaning there is only one number in the middle. To help, cross off your numbers, alternating between the largest and then the smallest, until you find the one in the middle.",
@@ -49,7 +49,7 @@
     {
       "questionId": 107874,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7660db9b-838f-4ce7-b7e1-f69f8d0e6ef3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. There are an even number of numbers in this data set which means there are two numbers in the middle. We cannot just pick one of them, we need to find the number that is halfway between them.",
         "B": "Not quite. There are an even number of numbers in this data set which means there are two numbers in the middle. We cannot just pick one of them, we need to find the number that is halfway between them.",
@@ -61,7 +61,7 @@
     {
       "questionId": 107882,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/25dff894-bcd7-4ce5-aba4-bc5b48397b72.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. There are an even number of numbers in this data set which means there are two numbers in the middle. We cannot just pick one of them, we need to find the number that is halfway between them.",
         "B": "Not quite. 6.5 is not the median. As this data set has an even number of data points the median is the number halfway between the two numbers in the middle.",
@@ -73,7 +73,7 @@
     {
       "questionId": 107875,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5e9068ef-9a63-4ce1-b5aa-8da565250eda.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. There are an even number of numbers in this data set which means there are two numbers in the middle. We cannot just pick one of them, we need to find the number that is halfway between them. But, before we do this, we must make sure that our data is in size order.",
         "B": "Not quite. There are an even number of numbers in this data set which means there are two numbers in the middle. We cannot just pick one of them, we need to find the number that is halfway between them. But, before we do this, we must make sure that our data is in size order.",
@@ -109,7 +109,7 @@
     {
       "questionId": 107885,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1d53197d-5109-4571-bb9e-391b4ba06e19.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Nearly! This is the total of the two middle numbers. To find the median you now need to divide.",
         "B": "Ordering the numbers gives 0.002, 0.02, 0.2, 2. Taking the mean of the middle two numbers give (0.02 + 0.2)/2 = 0.22/2 = 0.11",
@@ -133,7 +133,7 @@
     {
       "questionId": 107888,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/19e87760-192e-441d-a219-ca7086b2960e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. To find the median we must order our data first. Finding a common denominator will help you order these fractions.",
         "B": "Ordering the numbers gives 4/9, ½, 7/11, and so the median is ½.",

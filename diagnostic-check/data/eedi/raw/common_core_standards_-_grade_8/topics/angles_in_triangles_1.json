@@ -67,7 +67,7 @@
     {
       "questionId": 95482,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7e420598-86c4-443c-bd3f-93bee8b92033.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have taken 126 away from 180. You will need to find the angles inside the triangle next to 126 and 115 before you can use the fact that angles in a triangle add to 180",
         "B": "The angle next to 126° inside the triangle is 180 – 126 = 54°. (because angles on a straight line total 180) Repeat this process for the 115°, giving the other angle a value of 65°. Angles in a triangle add up to 180°, so we have p ＋ 54 ＋ 65 = 180°, which gives p ＋ 119 = 180°, meaning p = 61°.",
@@ -91,7 +91,7 @@
     {
       "questionId": 95483,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fa1fdcef-7ddb-4bd4-9de6-59396f318f2b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Are p and 56 definitely the two equal angles?",
         "B": "Are p and the unmarked angle definitely the two equal angles?",
@@ -103,7 +103,7 @@
     {
       "questionId": 95469,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f15c5ae3-8f84-463a-b71f-7edd3a827076.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Remember the angles in a triangle add up to 180, and scalene means all the angles are different.",
         "B": "Not quite. Remember angles in a triangle add up to 180, and scalene means all the angles are different. Is it possible to have a triangle with a 90 degree angle and then two equal angles?",
@@ -115,7 +115,7 @@
     {
       "questionId": 120828,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/49694e37-1645-40c9-acc3-837ef3d1af77.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Remember angles in a triangle add up to 180, and scalene means all the angles are different. Is it possible to have a triangle with a 90 degree angle and then two different angles?",
         "B": "Not quite. Remember angles in a triangle add up to 180, and isosceles means two angles are equal. Is it possible to have a triangle with a 90 degree angle and then two equal angles?",
@@ -127,7 +127,7 @@
     {
       "questionId": 95470,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7ad262fb-0b91-4fae-9aa1-775ee01a355a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have just found the right part of the missing angle. You need to find the left part too and then get the total",
         "B": "Let’s say that the shaded angle is made up of Angle a (from the left-hand triangle) and Angle b (from the right-hand triangle). Looking at the left-hand triangle, there are 2 equal angles in an isosceles triangle which means that Angle a = 50°. The triangle on the right-hand side is also isosceles so we can write b ＋ b ＋ 50 = 180, simplifying gives 2b = 130 and b = 65°. The shaded angle = a ＋ b = 50 ＋ 65 = 115°.",
@@ -139,7 +139,7 @@
     {
       "questionId": 120829,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5f9bd86e-a2bf-421b-8a3a-b2eaefa8cb33.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have found the left part of the angle correctly, but the right part isn't 40. Remember in isosceles triangles the base angles are equal",
         "B": "Not quite. Look at each triangle in turn and find the two missing angles that make up the pink one.",

@@ -49,7 +49,7 @@
     {
       "questionId": 131692,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1d6b9bdf-56e2-48d4-9afd-2e345e70ec2f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! We need to calculate the difference between the prices for 1200g, not for 400g and 600g. How many small jars do you need for 1200g of sauce? How much does this cost? How many large jars do you need? How much does this cost? Which is the better value?",
         "B": "Almost. Is buying the three small jars the cheapest option?",
@@ -61,7 +61,7 @@
     {
       "questionId": 133885,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/76b23fb4-bd61-45d7-97f3-ac1ef05c4a70.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! We need to calculate the difference between the prices for 1200g, not for 400g and 600g. How many small jars do you need for 1200g of sauce? How much does this cost? How many large jars do you need? How much does this cost? Which is the better value?",
         "B": "We need to calculate the difference between the prices for 1200g. The 400g jars cost 90p each, so for 1200g they cost £2.70. The 600g jars cost £1.45 each, so for 1200g they cost £2.90. We are looking for the cheapest option, which is 3 small jars.",
@@ -109,7 +109,7 @@
     {
       "questionId": 133887,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/de265236-1452-4d52-a4db-535d37542878.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "If 1litre is £2 we can calculate how much you get for £1 by dividing by 2. This means you would get 500ml for £1, which is not the best value. Can you calculate the others and see which is best value for £1?",
         "B": "If 500ml is £1.20 we have to calculate 500 ÷ 1.2 to see the amount for £1. This gives us 416 ml which is not the best value. Can you calculate the others and see which is best value for £1?",
@@ -121,7 +121,7 @@
     {
       "questionId": 131695,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/13a51395-30d9-4ac4-baa0-06a0736f814e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! If Tom buys 4 small jars, he'll have 1000g of sauce. How many grams of sauce would he get if he spent his £6 on big jars? What is the difference in the sauce amounts?",
         "B": "If Tom buys 4 small jars, he'll have 1000g. If he buys 3 big jars with the £6, he'll have 900g. The difference is 100g.",

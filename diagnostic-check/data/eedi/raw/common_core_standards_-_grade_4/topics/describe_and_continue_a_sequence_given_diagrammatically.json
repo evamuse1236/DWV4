@@ -31,7 +31,7 @@
     {
       "questionId": 147188,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bcbab0d4-240b-4100-90f8-33db654625b5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, remember the rule must work between all of the terms. Have we got triple the number of circles in the third term than we do the second?",
         "B": "In this pattern the first term has 1 circle, the second term has 2 and the third term has 5. Using this we can see that Tom is incorrect, as if the term to term rule was triple the previous term we would expect 1, 3 and then 9 circles. Katie is correct as each term in the sequence is getting two extra circles.",
@@ -55,7 +55,7 @@
     {
       "questionId": 147189,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/58113a43-1d54-459f-a881-934811c7566f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have just looked at the first two terms and assumed you would double the number of circles each time. This rule does not work between the second and third terms. Try finding the difference between every adjacent pair to help you spot the pattern.",
         "B": "I think you may have assumed that because we have added on 4 to get from the second to third term, that we would add on 4 again. But this rule does not work between the first and second term. Try finding the difference between every adjacent pair to help you spot the pattern.",
@@ -67,7 +67,7 @@
     {
       "questionId": 147209,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dee11b3a-69ff-414d-875a-b837e5e981d8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you may have just looked at the first two terms and assumed you would add 2 each time, but this rule does not work between the second and third terms. Try finding the difference between every adjacent pair to help you spot the pattern.",
         "B": "I think you may have assumed that because we have added on 3 to get from the second to third term, that we would add on 3 again. Have another look at the pattern between each term and reconsider what would happen next.",
@@ -79,7 +79,7 @@
     {
       "questionId": 147190,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f7f95b93-82c6-45be-adb1-2ff1a8a8e4c7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. There are four circles in term 1, how many would we expect in term 2 if we are doubling the number of circles every time? Does this match the sequence given?",
         "B": "Not quite. There are four circles in term 1, how many circles would we expect in term 2 if we are increasing the number of circles by 2? Does this match the sequence given?",
@@ -91,7 +91,7 @@
     {
       "questionId": 147210,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a066d64a-3222-4320-a8c1-825a9cff1e86.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. There are five circles in term 1, how many would we expect in term 2 if we are doubling the number of circles every time? Does this match the sequence given?",
         "B": "The number of circles goes from 5, to 8, to 11, so the rule is ‘add 3’ each time. Therefore, Katie is correct and Tom is incorrect.",
@@ -115,7 +115,7 @@
     {
       "questionId": 147211,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fba0858f-1f49-43b5-a702-aa7f7cf095ae.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have stated the difference between each pattern rather than the number of squares in the next term",
         "B": "The pattern of squares goes from 7 squares, to 5 squares, to 3 squares, so subtracting 2 each time. Therefore, the next term in the sequence will have 3-2 = 1 square",
@@ -127,7 +127,7 @@
     {
       "questionId": 147192,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c0e8d9dd-4963-4a3b-a994-59af1ef206f0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. There are five rectangles in term 1, how many would we expect in term 2 if we are doubling the number of rectangles every time? Does this match the sequence given?",
         "B": "The number of rectangles goes from 5, to 9, to 13, so the rule is ‘add 4’ each time. Therefore, Katie is correct and Tom is incorrect.",
@@ -139,7 +139,7 @@
     {
       "questionId": 147212,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eb109621-ea32-4981-ae6d-40ae713e9e0c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. There are four circles in term 1, how many would we expect in terms 2 and 3 if we double the number of circles every time? Does this match the sequence given?",
         "B": "The number of circles goes from 4, to 8, to 12, so the rule is ‘add 4’ each time. Therefore, Katie is correct and Tom is incorrect.",

@@ -37,7 +37,7 @@
     {
       "questionId": 166785,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2fbd7a10-3734-447e-88b5-1fc865d00e24.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "While we could determine the number of students who travel to school with this data, that is not what is being investigated here. What does this data show?",
         "B": "This data set tells us the the time in minutes it takes for each student to walk to school.",
@@ -49,7 +49,7 @@
     {
       "questionId": 167035,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1c7c074e-c663-4078-bad5-247dd71e6f3e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Look carefully! The data is not the time taken. What information is shown for each student?",
         "B": "These data points could be used to calculate the average, but that is not the attribute that has been collected. What does the data tell us about each student?",
@@ -61,7 +61,7 @@
     {
       "questionId": 166786,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6a3ba5e-28cc-481a-9839-6bc24ace9741.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have found the median of the data set, which is the middle of the ordered set of data. We need to find the mean. Remember to find the mean, we need to add the values together and then divide by the number of values.",
         "B": "The sum of the data values is 188. There are 11 data values, so 188 ÷ 11 ≈ 17.1 The mean is 17.1 minutes.",
@@ -85,7 +85,7 @@
     {
       "questionId": 166787,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2874c70c-c29c-4b97-b3bd-1034b6f0cdce.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Close, but is not specific enough. Size can refer to many things. How could we be more precise?",
         "B": "We could figure how many butterflies are measured from this data set, but that isn't what is being investigated. What does this data set give us information about?",
@@ -97,7 +97,7 @@
     {
       "questionId": 167037,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/791c945e-5d0c-4118-a00e-2f0ee892a046.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Look carefully! Are grams a unit of length? What are we measuring?",
         "B": "The cook measures the weight of the 7 cookies so the data set best represents the weight of each cookie.",
@@ -109,7 +109,7 @@
     {
       "questionId": 166788,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/724d6bca-a829-4927-89ae-579a2a484b8c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have calculated the mean of the data set. We want the median, or the middle of the ordered set of data.",
         "B": "Close! Remember, before you find the middle, you have to put the data in order from smallest to biggest.",
@@ -121,7 +121,7 @@
     {
       "questionId": 167038,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6f9ccfc-1c81-49b3-a300-7c9fd0680443.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Close! Remember, before you find the middle, you have to put the data in order from smallest to biggest.",
         "B": "I think you may have calculated the mean of the data set. We want the median, or the middle of the ordered set of data.",
@@ -133,7 +133,7 @@
     {
       "questionId": 166789,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/003da30c-2488-499f-b62a-ce06b8417c7f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Careful! Have a look closer at the data set. There is one value that is larger than all the others. A good interpretation must account for all data points.",
         "B": "Our data points reference size, not age. We can't assume there is a correlation between size and age.",
@@ -145,7 +145,7 @@
     {
       "questionId": 167039,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c656a269-9482-44ae-821c-7b6e072429e3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Careful! We cannot tell from the given data set if this is true or not. Looking at the data given, what statement best interprets the data?",
         "B": "We shouldn't assume any of the specific data pieces come from mistakes. Looking at the data itself, what statement best interprets the data?",

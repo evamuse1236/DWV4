@@ -31,7 +31,7 @@
     {
       "questionId": 110055,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/28616408-31f3-4738-87ad-577ec15237a7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You're very close. Check whether you have you added together the area of ALL of the sides?",
         "B": "It looks like you've calculated the volume. Remember to find the surface area, you need to find the area of all of the sides on the cuboid and add them together.",
@@ -43,7 +43,7 @@
     {
       "questionId": 110071,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c2775eac-b781-4f72-b173-7bbc5e495b4e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You're very close. Check whether you have you added together the area of ALL of the sides?",
         "B": "The cuboid has 6 faces. Opposite faces of a cuboid are equal, to calculate the surface area, find the area of three different faces, find the total and multiply by 2: 2 × 7 is the side face, 4 × 2 is the top, 4 × 7 is the front. Add all of these values together and then multiply by 2 at the end for the total surface area.",
@@ -91,7 +91,7 @@
     {
       "questionId": 165318,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/723294fe-96e3-4562-b5f5-5e681cc3c36a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Remember, surface area and volume are different. Calculating $$5^3$$ gives volume, not surface area.",
         "B": "Think about how many faces a cube has. Is the area of one face enough for the whole surface?",
@@ -103,7 +103,7 @@
     {
       "questionId": 166805,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f6cb2669-f009-4ea6-9c4c-4b8728779ae4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you have found the surface area of the 3 visible faces. What about the faces that you can't see?",
         "B": "Not quite! I think you have forgotten about the top and the bottom of the box. Remember, a cuboid has 6 faces.",
@@ -115,7 +115,7 @@
     {
       "questionId": 167055,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/813c926e-7594-487a-ab0e-a0579e2e25db.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you have found the volume of the box rather than the surface area. Remember, surface area is the area of all the faces added together.",
         "B": "The surface area is found by calculating the area of all six faces and adding them together: 2×(30×20) + 2×(20×10) + 2×(30×10) = 1200 + 400 + 600 = 2200 cm².",
@@ -127,7 +127,7 @@
     {
       "questionId": 166806,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/72a61c54-08e3-4beb-9360-38a765820586.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you have found the volume of the tent rather than the surface area. Remember, surface area is the area of all the faces added together.",
         "B": "You have correctly found the area of the three rectangular faces, but what about the two triangular faces? Remember, a triangular prism has five faces.",
@@ -139,7 +139,7 @@
     {
       "questionId": 167056,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/68f1fa53-f3c0-47db-a1af-cedf6f6ee5e5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have correctly found the area of the three rectangular faces, but what about the two triangular faces? Remember, a triangular prism has five faces.",
         "B": "The surface area is found by calculating the area of all five faces and adding them together: 2×(½×9×12) + 15×40 + 12×40 + 9×40 = 108 + 600 + 480 + 360 = 1548 cm².",

@@ -49,7 +49,7 @@
     {
       "questionId": 110244,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d07ab172-5808-45d1-b408-068b4ea11bb9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This one is a measure of volume. Which of these are not?",
         "B": "This one is a measure of volume. Which of these are not?",
@@ -97,7 +97,7 @@
     {
       "questionId": 110246,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7bc0ef75-fd54-4beb-8812-faf4a0c15bfa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have found the area of the circular cross section rather than the volume of the sphere. The volume of a sphere is (4/3) × 𝜋𝑟³,",
         "B": "I think you found the surface area. The volume of a sphere is (4/3) × 𝜋𝑟³,",
@@ -109,7 +109,7 @@
     {
       "questionId": 110237,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1fd30d26-ec99-4b00-9e8e-309cf16b75f8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Remember the volume of a sphere is (4/3) × 𝜋𝑟³, and we have half of this.",
         "B": "Not quite. Remember the volume of a sphere is (4/3) × 𝜋𝑟³, and we have half of this.",
@@ -145,7 +145,7 @@
     {
       "questionId": 110248,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7290a368-2671-4432-99ba-20189e0c67e4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is the area of a triangle, but we need the perpendicular height to find the volume. How could we find this?",
         "B": "We need to use Pythagoras’ theorem to find the height of the triangle.",

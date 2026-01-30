@@ -61,7 +61,7 @@
     {
       "questionId": 156140,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0e8fed9e-d4c6-4f97-af4e-dddfa7064fed.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have counted the yellow sticks of cubes as being worth 1 each - they are actually worth 10 each (as they are sticks of 10 cubes together). What number is being represented?",
         "B": "I think you have counted the green tiles as being worth 10 and the yellow sticks as being worth 1 each. The tiles are actually 10 x 10 grids of single cubes, making them worth 100. The sticks are actually 10 tall stacks of cubes, making them worth 10. Therefore, what number is being represented?",
@@ -85,7 +85,7 @@
     {
       "questionId": 159387,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c6dff43d-e90f-4dde-9465-971282b9f5ae.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost, but the yellow sticks don't represent ones, they are tens. Can you see an option with three single cubes?",
         "B": "Each green block has 100 cubes, so one block is 100. The red cubes are ones, so altogether we have 103.",
@@ -109,7 +109,7 @@
     {
       "questionId": 159388,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/467a5b55-145d-4bbd-84cd-5b8088c255aa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is two hundred fifty. Which is the ones place, to put five ones?",
         "B": "This is twenty five. What can we put in the tens place to show there are no tens, just two hundreds and five ones?",
@@ -121,7 +121,7 @@
     {
       "questionId": 159610,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b3c8af87-4f57-4055-8917-95f77cf56938.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is seventy seven. What can we put in the tens place to show there are no tens, just seven hundreds and seven ones?",
         "B": "This is seven thousand seven. Remember place values... Hundreds, then tens, then ones...",
@@ -133,7 +133,7 @@
     {
       "questionId": 159389,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/872cc3e4-6702-4c0f-b4b7-b2959e7d99ec.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you mixed up the hundreds and ones. There are five hundreds and seven ones in 527.",
         "B": "Not quite - the 5 in this number isn't 5 ones, it's 5 hundreds. How do we show that in expanded form?",
@@ -145,7 +145,7 @@
     {
       "questionId": 159611,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4f0ccff1-bd5e-43d2-9b7a-8da18a686a08.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite - the 8 in this number isn't 8 ones, it's 8 hundreds. How do we show that in expanded form?",
         "B": "Not quite - the 8 in this number isn't 8 ones, it's 8 hundreds. How do we show that in expanded form? Make sure your digits are in the right order too.",

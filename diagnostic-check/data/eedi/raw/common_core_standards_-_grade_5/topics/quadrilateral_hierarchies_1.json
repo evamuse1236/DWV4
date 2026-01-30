@@ -19,7 +19,7 @@
     {
       "questionId": 158499,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/734c031c-6968-4422-9f40-53be83c6d95c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Both a rhombus and a square have 4 equal sides, but a square must have four right angles, and a rhombus doesn't always. Can a rhombus sometimes have four right angles?",
         "B": "A rhombus must have four equal length sides. In the special case that all of its angles are 90 degrees, the rhombus can be a square.",
@@ -43,7 +43,7 @@
     {
       "questionId": 158500,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/40a11474-8284-470c-9c51-f3a5e4ac1d9e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Both a rhombus and a parallelogram have two pairs of parallel sides, but a rhombus must have four equal sides, and a parallelogram doesn't always. Can a parallelogram sometimes have four equal sides?",
         "B": "A parallelogram must have two pairs of parallel sides. In the special case that all the sides are equal, the parallelogram can be a rhombus.",
@@ -67,7 +67,7 @@
     {
       "questionId": 158501,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/74c356f7-0fd7-448b-85a4-e0dde3112f99.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "A parallelogram has two pairs of parallel sides but a trapezoid only has one pair of parallel sides, so can a shape ever be both?",
         "B": "A parallelogram has two pairs of parallel sides but a trapezoid only has one pair of parallel sides, so can a shape ever be both?",
@@ -79,7 +79,7 @@
     {
       "questionId": 158656,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d633e0ab-4ca6-49f0-a644-362ee899b19a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "A square has two pairs of parallel sides, and a trapezoid only has one. Can we ever have a square with only one pair of parallel sides?",
         "B": "A square has two pairs of parallel sides, and a trapezoid only has one. Can we ever have a square with only one pair of parallel sides?",
@@ -103,7 +103,7 @@
     {
       "questionId": 158657,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4cb601d6-bdb8-4f2d-b303-a2b22db8e6a7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Every square has four right angles and two pairs of parallel sides, all of which are equal in length. Do all rectangles have 4 sides of equal length?",
         "B": "A rectangle is any quadrilateral with equal pairs of opposite sides and four right angles, so a square is a special case of a rectangle with all equal sides.",
@@ -127,7 +127,7 @@
     {
       "questionId": 158658,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/738f9314-52c2-4529-9220-f5e38fae3165.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Both a square and a rhombus have 4 equal sides, but a square must have four right angles, and a rhombus doesn't always. Think about the properties of a rhombus (4 sides of equal length, 2 pairs of parallel sides) and compare these with each possible answer.",
         "B": "A rhombus is any quadrilateral with all equal sides. Do all rectangles have equal sides?",

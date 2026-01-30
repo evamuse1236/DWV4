@@ -55,7 +55,7 @@
     {
       "questionId": 78712,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/084cf051-0f19-4cc9-81ea-8874e6dcf489.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Remember, a line of best fit needs to go in the same direction as the points.",
         "B": "The blue line goes in the same direction as the points, and has roughly the same amount of points above and below the line.",
@@ -67,7 +67,7 @@
     {
       "questionId": 78419,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1fe3883b-bd80-4c52-bd31-86cafeb55cb7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. A line of best fit is shown in the diagram, but it does not describe the relationship. Think about what happens as age increases.",
         "B": "From following the points in the scatter graph, and the general trend of the line of best fit, it can be seen that as age increases, weight also increases.",
@@ -91,7 +91,7 @@
     {
       "questionId": 78420,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/da8f63b4-fe20-4f39-9551-2838a84a624f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! I think you have added 10 to 100. Try going up the side to 10 and read over to where it hits the orange line.",
         "B": "Reading across from 10 to the orange line, gives a reading of 114 on the IQ axis.",
@@ -103,7 +103,7 @@
     {
       "questionId": 78714,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7f4336e6-78c1-450d-8bc2-d85aa4c93ac8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! I think you may have counted 8 points along. Try reading off at 8, until you hit the orange line.",
         "B": "Close! I think you have read across at 8, but haven't read over the whole way to the orange line.",
@@ -127,7 +127,7 @@
     {
       "questionId": 78715,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bb70728a-4dda-4ef8-9f58-f28673570dd3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! If we drew a line of best fit for these points, A would be close to it. Can you spot any points that would lie far away from the line?",
         "B": "If we drew a line of best fit for these points, point B would not fit with it.",

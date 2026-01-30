@@ -49,7 +49,7 @@
     {
       "questionId": 134165,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4189e959-f4cf-4fc5-bdae-6679e64b3aab.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is the description of a scalene triangle rather than an isosceles",
         "B": "All isosceles triangles have two equal sides and at the base of these equal sides are two equal angles.",
@@ -109,7 +109,7 @@
     {
       "questionId": 132170,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d22fbdd9-0eff-40db-b192-e36ebd33e97e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. To be right-angled one of the angles has to be 90 degrees.",
         "B": "Not quite. To be isosceles two of the angles must be equal, but all 3 are the same here",
@@ -121,7 +121,7 @@
     {
       "questionId": 134161,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/538cc971-d220-4c82-8662-b6495ae58d27.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. A scalene triangle has all different angles and side lengths",
         "B": "Not quite. To be right-angled one of the angles has to be 90 degrees.",
@@ -133,7 +133,7 @@
     {
       "questionId": 132177,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4ad3d354-fa1f-4e0e-9d6d-9cdbf2463875.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "A scalene triangle has no equal sides, from the information given, we cannot work out the lengths and so instead let's look at the angles. Shape ABCD is a rectangle. What do the angles in a rectangle each equal? Looking at triangle BCD one of its angles is the same as the rectangle's angle so which type of triangle is it?",
         "B": "An isosceles triangle has two sides of equal length. Neither BD, BC or CD are equal in length. We need to use the fact shape ABCD is a rectangle. What do the angles in a rectangle each equal? Looking at triangle BCD one of its angles is the same as the rectangle's angle so which type of triangle is it, if it has this property?",
@@ -145,7 +145,7 @@
     {
       "questionId": 134164,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fbd576c8-dc91-4db4-a32a-3c33dc5120a4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "A scalene triangle has three sides that are all different lengths. From the information given in the question we cannot work out the lengths of BD and DC, they could be equal. Let's look at what the question says: shape ABDE is a square so what does that make the angle BDE? Using this angle can you work out angle BDC? What kind of triangle does that make BDC?",
         "B": "An equilateral triangle has three equal sides. From the information given, we cannot work out if the lengths of BD, DC and CB are equal. Let's look at what the question says: shape ABDE is a square so what does that make the angle BDE? Using this angle can you work out angle BDC? What kind of triangle does that make BDC?",

@@ -97,7 +97,7 @@
     {
       "questionId": 89281,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3418e564-ce8f-44ba-be13-191cf21b5ef4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you might have used subtraction instead of division when solving 12 = 4 ✕ ★.",
         "B": "I think you might have missed the '4 ✕' in the brackets.",
@@ -109,7 +109,7 @@
     {
       "questionId": 89287,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f940ecd4-1818-4712-b5f8-3658619396ab.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Commutativity describes how, in addition and multiplication, you can swap the numbers around and still get the same answer. For example: 7 ✕ 9 = 9 ✕ 7.",
         "B": "Not quite. 5 and 2 are not factors of 7, 5 ✕ 2 = 10 NOT 7",
@@ -121,7 +121,7 @@
     {
       "questionId": 89300,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/06170b2a-6118-440e-9d13-09da9d57927b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Associativity describes how, in addition and multiplication, you can change the order of which you choose to add or multiply. For example: (8 x 2) x 4 = 8 x (2 x 4)",
         "B": "Not quite. Commutativity describes how, in addition and multiplication, you can swap the numbers around and still get the same answer. For example: 8 ✕ 4 = 4 ✕ 8.",
@@ -133,7 +133,7 @@
     {
       "questionId": 146170,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/47378b38-ffa0-4d01-91b9-53bf1a7e8c05.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost, just don't forget to take into account the place value of the 4. It's not worth 4 as it isn't in the units column",
         "B": "Almost, just make sure you are multiplying and adding in the correct places.",

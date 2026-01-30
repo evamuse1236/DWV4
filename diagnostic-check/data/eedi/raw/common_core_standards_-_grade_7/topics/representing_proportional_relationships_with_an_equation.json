@@ -25,7 +25,7 @@
     {
       "questionId": 165403,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/64cfaa09-5970-4e37-a3cf-a4e82a982232.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, we can calculate the total sales in dollars by multiplying the price of one t-shirt by the number of t-shirts that Luci sells. Also check which variable (𝑥 or 𝑦) represents the number of t-shirts that Luci sells.",
         "B": "Nearly! We can calculate the total sales in dollars by multiplying the price of one t-shirt by the number of t-shirts that Luci sells. Check which variable (𝑥 or 𝑦) represents the number of t-shirts that Luci sells.",
@@ -37,7 +37,7 @@
     {
       "questionId": 165408,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/89f8ef7d-a76f-436f-93e5-87fb3d3d1198.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, we can calculate the total earnings in dollars by multiplying the price of one cup of lemonade by the number of cups that Jackson sells.",
         "B": "Jackson's total earnings in dollars are represented by the variable 𝑦. We can calculate these total earnings in dollars by multiplying the price of one cup of lemonade ($2.50) by the number of cups that he sells (𝑥). Therefore, 𝑦 = 2.5 ✕ 𝑥 = 2.5𝑥.",
@@ -49,7 +49,7 @@
     {
       "questionId": 165404,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/99a520de-9ef2-49a2-91e9-e6cdf9dede0b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, we can calculate the total pieces of candy by multiplying the number of pieces of candy given to one child by the number of children who ring on Tarek's doorbell.",
         "B": "The total pieces of candy given away are represented by the variable 𝑦. We can calculate the total pieces of candy by multiplying the number of pieces of candy given to one child (7) by the number of children who ring on Tarek's doorbell (49). Therefore, 𝑦 = 49 ∙ 7",
@@ -61,7 +61,7 @@
     {
       "questionId": 165409,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/59a91095-7ce0-4480-ac9f-61e2bc96c03f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, we can calculate the total number of water bottles by multiplying the number of bottles given to one child by the number of children on the trip.",
         "B": "Here, you've tried to add \"unlike\" variables (the number of children and the number of bottles given to each child). But, we want the total number of water bottles given out, when 3 are given to every child.",
@@ -73,7 +73,7 @@
     {
       "questionId": 165405,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/157571d3-11ab-4d6b-b991-a0a4c9616b14.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This equation is adding meters and days, which are different units so cannot be added. Uma's total distance over a number of days is the distance she runs on one day multiplied by the number of days that she runs. Try substituting in the information from the question into this word equation.",
         "B": "Not quite, this equation is multiplying Uma's total distance over a number of days by the distance she runs on one day. But, Uma's total distance over a number of days is the distance she runs on one day multiplied by the number of days that she runs. Try substituting in the information from the question into this word equation.",
@@ -85,7 +85,7 @@
     {
       "questionId": 165410,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/873d7a74-776c-49db-bba4-41169a3266f1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, this equation is multiplying Jordan's total distance over a number of days by the distance he throws on one day. But, Jordan's total distance over a number of days is the distance he throws on one day multiplied by the number of days that he throws. Try substituting in the information from the question into this word equation.",
         "B": "This equation is adding feet and days, which are different units so cannot be added. Jordan's total distance over a number of days is the distance he throws on one day multiplied by the number of days that he throws. Try substituting in the information from the question into this word equation.",
@@ -109,7 +109,7 @@
     {
       "questionId": 165411,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cd7f918d-1826-49cd-a352-cf4fd3bdeeb2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, you're correct that there is a directly proportional relationship and so 𝑦 = 𝑘𝑥. But try substituting in the information in the question to find the value of 𝑘. Also note that we want an equation that represents the relationship between 𝑥 and 𝑦, so both these variables must be in the equation.",
         "B": "Not quite, you're correct that the number of cups of flour, 𝑥, is directly proportional to the number of pancakes, 𝑦, and so 𝑦 = 𝑘𝑥. But try substituting in the information in the question to find the value of 𝑘.",
@@ -121,7 +121,7 @@
     {
       "questionId": 165407,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f1f97289-fd9f-4d56-be96-506c1fc1e4cb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, you're correct that the number of hours of babysitting, 𝑥, is directly proportional to the money earned, 𝑦, and so 𝑦 = 𝑘𝑥. But try substituting in the information in the question to find the value of 𝑘.",
         "B": "Answer B represents an inversely proportional relationship. However, the number of hours of babysitting, 𝑥, is directly proportional to the money earned, 𝑦 (the more hours worked, the greater the money earned): 𝑦 = 𝑘𝑥. Try substituting in the information in the question to find the value of 𝑘.",

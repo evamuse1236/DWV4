@@ -49,7 +49,7 @@
     {
       "questionId": 101396,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/010d3200-de5f-4c15-8ade-cd549bb15953.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This represents n cakes divided in to 3, rather than 3 eggs per cake. To help, think about how you would find the number of eggs in 3 cakes?",
         "B": "This represents 3 eggs divided into n cakes, rather than 3 eggs per cake. To help, think about how you would find the number of eggs in 3 cakes?",
@@ -61,7 +61,7 @@
     {
       "questionId": 101379,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d3aba442-8e66-4ec3-a5bf-16f57c672669.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This represents 6 bananas per bottle for n bottles, rather than n bananas shared into bottles of smoothie. To help, think about how you would find the number of bottles made from 18 bananas?",
         "B": "This represents 6 bananas shared between n bottles, rather than n bananas shared into bottles of smoothie. To help, think about how you would find the number of bottles made from 18 bananas?",
@@ -73,7 +73,7 @@
     {
       "questionId": 101397,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bc3c81f4-9e70-4c82-be04-19abb58fbb76.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This represents 3 eggs per cake for n cakes, rather than n eggs shared into cakes. To help, think about how you would find the number of cakes made from 12 eggs?",
         "B": "This represents 3 eggs shared between n cakes, rather than n eggs shared into cakes. To help, think about how you would find the number of cakes made from 12 eggs?",
@@ -85,7 +85,7 @@
     {
       "questionId": 101380,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9bbc3156-dbfd-42ad-b89c-7e5b76354864.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Perhaps you could try to find some equivalent ratios to 5:2, do Tom and Katie's values appear in the list?",
         "B": "The recipe tells us that the ratio of oranges to bananas is 5 : 2. Katie’s statement: 15 oranges and 6 bananas is in proportion with this ratio and will produce the cocktail required (because each ingredient has been multiplied by 3). For Tom’s statement, 5 bananas = 2.5 ✕ 2, and so the correct quantity of oranges for 5 bananas would be 2.5 ✕ 5 = 12.5, not 8.",
@@ -97,7 +97,7 @@
     {
       "questionId": 101398,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/131eefae-56e3-4be9-a11d-9256f073b5c4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Perhaps you could try to find some equivalent ratios to 3:8, do Jo and Paul's values appear in the list?",
         "B": "Perhaps you could try to find some equivalent ratios to 3:8, do Jo and Paul's values appear in the list?",
@@ -109,7 +109,7 @@
     {
       "questionId": 101391,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ccf9bd4f-0429-4964-b6d0-229fd06edb49.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Try writing the amounts in a ratio of water to juice and simplifying it. You can then use this to multiply up and find the star",
         "B": "The ratio of water to juice is 450 : 150. This simplifies to 3 : 1. So for every 3 parts water, we need 1 part juice. We know 3 parts = 675 ml, so by dividing both sides by 3, ★, or 1 part, is 675 ÷ 3 = 225 ml.",
@@ -121,7 +121,7 @@
     {
       "questionId": 101409,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bfe95e67-596b-4f62-8c42-4b9a74029ab8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Try writing the amounts in a ratio of sparkling water to fruit juice and simplifying it. You can then use this to multiply up and find the star",
         "B": "I think you've doubled the fruit juice, has the water been doubled?",
@@ -133,7 +133,7 @@
     {
       "questionId": 101392,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f9c2d38b-5f2a-4839-9e24-b859cc9b9ae6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, remember to find the scale factor from 8 to 20 before applying it to 6.",
         "B": "Not quite, 8 x 2 is 16, not 20. What do you have to multiply 8 by to get 20?",

@@ -25,7 +25,7 @@
     {
       "questionId": 78413,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dd20c4fb-07f5-4dae-a4b4-4f418f0731f6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have picked the student with the lowest score on the maths test, rather than the highest score.",
         "B": "I think you have accidentally chosen the student who has done the best overall, scoring high in science and maths but the question wants the student who scored highest in maths. We don't need to consider their science mark.",
@@ -37,7 +37,7 @@
     {
       "questionId": 78707,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d9316a51-d16a-4c71-8317-07d3851936a1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Look at the labels on the axes, you have found the student with the highest science score, not the highest mark in maths.",
         "B": "The maths test score is shown along the x-axis. Student B achieved the highest maths mark as the point is furthest along the x-axis. They got a score of 9.",
@@ -61,7 +61,7 @@
     {
       "questionId": 78708,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9a198404-c00c-4495-839b-8c543ff0eddf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have accidentally chosen a student who scored 4 times higher in their science score compared to their maths. We only want a student who has scored double their science score, in maths. The best way to answer this question is read off each students' science score, double it and then see if that is their maths score.",
         "B": "I think you have accidentally swapped the phrasing of the question round. You have found the student whose maths mark is double their science mark, you need to find the student whose science mark is double their maths mark.",
@@ -73,7 +73,7 @@
     {
       "questionId": 166767,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/95e82db7-b206-4944-beac-1afb8a42cedd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have given the warmest actual temperature, but the question asked for the warmest predicted temperature. Look carefully at the key.",
         "B": "The predicted temperatures are shown by the blue squares. The warmest of these is 8°F.",
@@ -85,7 +85,7 @@
     {
       "questionId": 167017,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/81ef8446-7a5b-4641-92e7-a358b798fc18.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have found the predicted temperature for Day 5, but is this the coldest predicted temperature over the 5 days?",
         "B": "I think you have given the coldest actual temperature, but the question asked for the coldest predicted temperature. Look carefully at the key.",
@@ -97,7 +97,7 @@
     {
       "questionId": 166768,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/19ef3066-7987-42fb-8b1d-6ebb07e831a0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have made a small mistake when reading off the actual temperature on day 3, there is a negative sign with the 4.",
         "B": "I think you have found the difference between the predicted temperatures of day 1 and day 3 but the question asked for the difference in the actual temperatures on these days. Make sure you check the key.",
@@ -109,7 +109,7 @@
     {
       "questionId": 167018,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/610193dd-8af9-4572-8a5d-717e28b2f0ed.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You're close! The question asks for how many degrees colder therefore this wouldn't be a negative answer.",
         "B": "The actual temperature is shown by the blue dots. On day 1 this was 5 degrees and on day 5 it was -4 degrees. The difference between 5 and -4 is 9.",
@@ -133,7 +133,7 @@
     {
       "questionId": 167019,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/236af14f-734c-43ce-bccd-7c0e8b436f67.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Day 3 shows the biggest difference. The predicted temperature was 2 and the actual temperature was -5 which means there was a difference of 7.",
         "B": "You've given the highest temperature out of all of the points but we need to be looking for the greatest difference in temperature between the predicted and actual. Which day is this on and can you work out the difference?",

@@ -43,7 +43,7 @@
     {
       "questionId": 124909,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1f14dea0-2dd3-406e-8ecc-8628436eea86.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you recognised this net, but it is the net of a triangular prism. What shape are all the faces of our 3D shape?",
         "B": "I think you recognised this net, but it is the net of a square-based pyramid. What shape is the base in this pyramid?",
@@ -67,7 +67,7 @@
     {
       "questionId": 78040,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8470452a-1e35-4e5e-bf8f-951728c9dec9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you recognised this net, but it is the net of a cuboid. What shape are the end faces (the top and the base) of our 3D shape?",
         "B": "I think you recognised this net, but it is the net of a cone. How many faces are there on our 3D shape?",
@@ -139,7 +139,7 @@
     {
       "questionId": 78044,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/805bb5f1-cc21-44cd-a661-31df68cde651.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. It is made up of triangles and rectangles, but these will not form a pyramid. Think about how the outer rectangles of this shape will fold up to meet each other.",
         "B": "This is a triangular prism, as it has 2 triangular faces at each end, joined by rectangles.",

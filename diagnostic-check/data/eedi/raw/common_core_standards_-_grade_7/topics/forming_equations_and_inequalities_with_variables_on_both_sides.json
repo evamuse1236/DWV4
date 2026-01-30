@@ -19,7 +19,7 @@
     {
       "questionId": 155035,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1d37329f-c906-417b-9e42-a727b8078e57.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have tried to use the fact that angles in a triangle add up to 180 degrees here. We cannot do that as the third angle in the triangle isn't labelled. We need to use an angle fact related specifically to isosceles triangles.",
         "B": "I think you have tried to use the fact that angles in a triangle add up to 180 degrees here. We cannot do that as the third angle in the triangle isn't labelled and we can't just call it 𝑥. We need to use an angle fact related specifically to isosceles triangles.",
@@ -31,7 +31,7 @@
     {
       "questionId": 155040,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cc5c063b-fef9-43fa-9c66-497f1c715bf7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have tried to use the fact that angles in a triangle add up to 360 degrees here. We cannot do that as the third angle in the triangle isn't labelled and 360 degrees is the total for a 4 sided shape, it would be 180 for a triangle. We need to use an angle fact related specifically to isosceles triangles.",
         "B": "I think you have tried to use the fact that angles in a triangle add up to 180 degrees here. We cannot do that as the third angle in the triangle isn't labelled and we can't just call it 𝑥. We need to use an angle fact related specifically to isosceles triangles.",
@@ -67,7 +67,7 @@
     {
       "questionId": 155037,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bfd65d92-72cc-4ff1-a7ca-7ceedc55bf14.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "To find the perimeter we add up the lengths of ALL the sides, I think you have just added up two of them.",
         "B": "The perimeter of the square will be 4(4𝑥 - 3) which expanded gives 16𝑥 - 12. The area of the square will be (4𝑥 - 3)². Given the perimeter is less than the area we will write perimeter < area, so 16𝑥 - 12 < (4𝑥 - 3)².",
@@ -79,7 +79,7 @@
     {
       "questionId": 155042,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/12213641-4d6e-4cd9-a0f6-27020d97f550.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "To find the perimeter we add up the lengths of ALL the sides, I think you have just added up two of them. Also, I think you have given the inequality where the perimeter is MORE THAN the area. What were we asked for?",
         "B": "To find the perimeter we add up the lengths of ALL the sides, I think you have just added up two of them.",
@@ -91,7 +91,7 @@
     {
       "questionId": 155038,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c41a57b6-754f-4def-953d-17260df7d461.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have reversed the order of operations given. Mel multiplies the number by 7 first (so 7𝑥), then adds 2 (so 7𝑥 + 2). Try this for Claire.",
         "B": "I think you are confusing this with solving equations where we need to think about the inverse operations. Mel multiplies the number by 7 (so 7𝑥 as you have done), then adds 2 (so 7𝑥 + 2). Try this for Claire.",
@@ -103,7 +103,7 @@
     {
       "questionId": 155043,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/36c32281-f8e1-4018-803d-b7fb4ceafbf5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you read all the operations as additions. Sam starts by MULTIPLYING by 5 (so 5𝑥) then SUBTRACTING 2 - how would we write this? Try the same for Danny.",
         "B": "I think you are confusing this with solving equations where we need to think about the inverse operations. Sam multiplies the number by 5 (so 5𝑥 as you have done), then subtracts 2 (so 5𝑥 - 2). Try this for Danny.",
@@ -127,7 +127,7 @@
     {
       "questionId": 155044,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dc3c716d-0633-4fa3-a188-10e005e695ea.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost! I think you expanded your bracket incorrectly for the rectangle. The area of the rectangle is found by doing width ✕ length, so 4(2𝑥 - 5), or 8𝑥 - ? expanded.",
         "B": "Almost. I think you forgot to divide by 2 for the area of the triangle. The area of the triangle is found by doing base ✕ height ÷ 2.",

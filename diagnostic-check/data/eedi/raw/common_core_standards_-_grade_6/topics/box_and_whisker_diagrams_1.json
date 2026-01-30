@@ -37,7 +37,7 @@
     {
       "questionId": 109578,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7d04a2d4-e31a-44a8-9b40-435e1efa8721.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite - I think you've halved the maximum score rather than finding the data point that is halfway through the data set. Remember a box plot is used to display the minimum value, the lower quartile, the median, the upper quartile and the maximum value of the data set. Which of the vertical lines represents the median?",
         "B": "The median value is the vertical line within the box, which is placed at 11.",
@@ -61,7 +61,7 @@
     {
       "questionId": 109579,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ca2fb9ee-9a1d-4261-8a1f-bfefed9720b2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite - this is the difference between the maximum and minimum numbers on the scale, which is different to the range of scores. Use the box plot to read off the highest and lowest score then calculate the range.",
         "B": "Not quite, 11 is the median. Remember the range will be the difference between the highest and the lowest score.",
@@ -73,7 +73,7 @@
     {
       "questionId": 109589,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f0fc61f3-c827-448b-ac7f-caf4bc32f49c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, 8 is the median. Remember the range will be the difference between the highest and the lowest score.",
         "B": "Not quite, this is the IQR. The range is the difference between the highest and the lowest score.",
@@ -85,7 +85,7 @@
     {
       "questionId": 109580,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3ccef156-c047-4ad6-bbbf-dc638b9b7250.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite - you've found the difference between the maximum and minimum numbers on the scale, but that is different to the interquartile range (IQR) of the box plot. The IQR is the difference between the upper quartile and the lower quartile.",
         "B": "Not quite, 11 is the median. Remember the interquartile range will be the difference between the upper quartile and the lower quartile.",
@@ -97,7 +97,7 @@
     {
       "questionId": 109590,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/88595587-0923-4210-a8f1-3ee69b484596.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, 8 is the median. Remember the interquartile range will be the difference between the upper quartile and the lower quartile.",
         "B": "From the box plot we can see that the upper quartile is 10 and the lower quartile is 5. Therefore the interquartile range is 10 - 5 which equals 5.",
@@ -109,7 +109,7 @@
     {
       "questionId": 109581,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8ae6e3fb-541c-4b58-9106-51ea10b583d8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite - this is the maximum number on the scale, not the number of students.",
         "B": "Not quite - this is the maximum score, not the number of students.",
@@ -121,7 +121,7 @@
     {
       "questionId": 109591,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea566a09-5376-4be2-a3c1-dcc98f608cf5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite - I think you may have counted the number of vertical lines, but these do not represent the score of each student.",
         "B": "Not quite - this is the maximum number on the scale, not the number of students.",
@@ -145,7 +145,7 @@
     {
       "questionId": 109592,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/858b2f34-83e6-4d1b-ace1-118d1cd5d0e1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite - I think you have divided the range of scores by the range of the scale. 8 marks is the median. At what fraction or percentage does this lie in a data set?",
         "B": "The median is 8 and the maximum mark is 13, so we know that 50% or ½ of students got marks in this range.",

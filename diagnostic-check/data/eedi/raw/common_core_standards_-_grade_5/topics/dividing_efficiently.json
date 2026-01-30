@@ -31,7 +31,7 @@
     {
       "questionId": 155723,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/19176446-5b24-4428-b51b-a82adf81c513.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have divided by 5. The question asks you to divide by 4.",
         "B": "To divide by 4, we can halve and halve again. 200/2 = 100 and 100/2 = 50. Therefore 200/4 = 50.",
@@ -55,7 +55,7 @@
     {
       "questionId": 166693,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/15e41865-db82-41b9-957f-0df101b487be.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "We've made the thing we are dividing ten times bigger and we've made what we are dividing by ten times bigger so, it won't make the answer 100 times bigger, what will happen?",
         "B": "I think you have seen the 0s added to the numbers, so have added 0 to the answer. However, if we make what we are dividing ten times bigger and what we are dividing by ten times bigger, what impact will this have on the answer?",
@@ -67,7 +67,7 @@
     {
       "questionId": 166943,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/71300e3b-6852-421f-b666-9daf74dff6ee.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have seen we have multiplied both numbers by 10 so you have divided the answer by 10. If we make what we are dividing ten times bigger and what we are dividing by ten times bigger, what impact will this have on the answer?",
         "B": "We have made the thing we are dividing ten times bigger but we have also made what we are dividing by ten times bigger so overall there is no effect on the answer. Therefore, 720 ÷ 90 = 8!",
@@ -79,7 +79,7 @@
     {
       "questionId": 166694,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/619ffb94-afb3-476e-9692-258577b9937a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Because we haven't made both values 100 times bigger or both values 10 times bigger, the answer will not be the same. We have made what we are dividing 100 times bigger and what we are dividing by 10 times bigger so how much bigger will the answer be?",
         "B": "We have made what we are dividing 100 times bigger and what we are dividing by 10 times bigger therefore the answer will be 10 times bigger. So, 5600 ÷ 70 = 80!",
@@ -91,7 +91,7 @@
     {
       "questionId": 166944,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6f64bf58-3ee6-4a39-a3ca-5d8efec9c78d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "We have made the thing we are dividing 100 times bigger and we have made what we are dividing by 10 times bigger so overall what effect will this have on the answer? If you're not sure, try out some easier numbers to see the pattern: 10 ÷ 1 becomes 1000 ÷ 10...",
         "B": "Because we haven't made both values 100 times bigger or both values 10 times bigger, the answer will not be the same. We have made what we are dividing 100 times bigger and what we are dividing by 10 times bigger so how much bigger will the answer be?",
@@ -103,7 +103,7 @@
     {
       "questionId": 166695,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c58e6195-4e52-425a-ab64-6923c196094c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is the dividend. We want to know how many 35s are in 525... Use the multiplication fact to help you!",
         "B": "If 35 × 15 = 525 then we know there are fifteen 35s in 525 so 525 ÷ 35 = 15!",
@@ -127,7 +127,7 @@
     {
       "questionId": 166696,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/346c7efc-f155-48dd-bd7a-bdf37a09307a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "We are dividing by 68. We want to know how many 68s are in 1632... Use the multiplication fact to help you!",
         "B": "This is the dividend. We want to know how many 68s are in 1632... Use the multiplication fact to help you!",
@@ -139,7 +139,7 @@
     {
       "questionId": 166946,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d55ca808-d204-4522-97e8-97c56914562e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have accidentally subtracted but ÷ means divide",
         "B": "If 32 × 47 = 1504 then we know there are thirty-two 47s in 1504 so 1504 ÷ 47 = 32!",

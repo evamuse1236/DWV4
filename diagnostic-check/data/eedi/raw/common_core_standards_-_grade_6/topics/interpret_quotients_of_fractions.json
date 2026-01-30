@@ -19,7 +19,7 @@
     {
       "questionId": 166752,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/da5f2e80-5dbf-4898-9ad8-1834d9be750e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, the amount of pizza that was originally left is already given to us in the question as 3/4. Have a think about what it means to divide an amount...",
         "B": "If each serving was 6, we would be dividing 3/4 between 6 but 6 is the answer, not the divisor! Have a think about what the answer to any division tells us about the two numbers we are dividing...",
@@ -43,7 +43,7 @@
     {
       "questionId": 166753,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7318cdac-d65e-4a5f-b0a2-77f1d9f0bbf7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, the question already tells us that the large chocolate bar weighs 4/5 of a pound, so it can't weigh 8 pounds! Have a think about what a division tells us about two numbers...",
         "B": "We want to split 4/5 of a pound of chocolate into 1/10 groups by dividing, which gives us an answer of 8. This means that 8 groups (or portions) of 1/10 can be made from 4/5 of a pound.",
@@ -79,7 +79,7 @@
     {
       "questionId": 167004,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/21cba45b-1cd3-47be-b30c-96e42c26c266.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, the question already tells us that the original piece of board is 15/16 feet long! Have a think about what a division tells us about two numbers...",
         "B": "Not quite, the question already tells us that each smaller piece of board is 1/4 foot long! Have a think about what a division tells us about two numbers...",
@@ -91,7 +91,7 @@
     {
       "questionId": 166755,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d2f4babb-6b55-4190-8c23-fa6126be10c2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, the question already tells us that the entire plot of land is 3/4 of a square metre! Have a think about what a division tells us about two numbers...",
         "B": "We are dividing 3/4 square metre of land into 1/12 square metre sections. The answer to the division is 9, which means the farmer could make 9 sections of land.",
@@ -103,7 +103,7 @@
     {
       "questionId": 167005,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1749b914-b715-4a79-91ff-cb11d3ec5a38.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, the question already tells us that each section needs to be 1/18 of a square metre. Have a think about what a division tells us about two numbers...",
         "B": "This actually isn't that relevant to the question. If we are dividing an area into smaller sections of mosaic, then the answer is going to give us information about the sections of mosaic...",
@@ -127,7 +127,7 @@
     {
       "questionId": 167006,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8ac03a43-2727-4aa8-89f2-00430fa24766.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, the question already tells us that the jug has 1 1/3 gallons of milk. Have a think about what a division tells us about two numbers...",
         "B": "When we divide, we are trying to see how many 1/12s go into 1 1/3. We can work that out by doing the division, which would therefore tell us how many glasses worth of milk can be made from the jug.",

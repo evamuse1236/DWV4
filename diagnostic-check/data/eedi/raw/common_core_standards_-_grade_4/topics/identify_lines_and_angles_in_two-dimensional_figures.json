@@ -43,7 +43,7 @@
     {
       "questionId": 166899,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1a92ed81-4f01-49fa-b9a8-33021750cd7c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Close! This diagram is straight and ends in one direction, but a line segment has an ending in both directions. Which diagram best showcases this?",
         "B": "This diagram shows an object that is straight and ends in both directions (as shown by the points), which is in fact a line segment.",
@@ -55,7 +55,7 @@
     {
       "questionId": 166650,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e97157bc-ff6d-4916-935e-732ea0964b3d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Remember that line segments must be straight with two endpoints.",
         "B": "I think you have chosen 1 since Z appears to be made of one continuous line. Remember that line segments must be straight with two endpoints.",
@@ -67,7 +67,7 @@
     {
       "questionId": 166900,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3f47f91f-8bf6-435c-82bb-a12b602240a3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Remember that line segments must be straight with two endpoints.",
         "B": "I think you have chosen 2 since A appears to have one horizontal line segment and one angle, appearing like this: Ʌ. Remember that line segments must be straight with two endpoints.",
@@ -79,7 +79,7 @@
     {
       "questionId": 166651,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c57e3094-bd9f-4bb8-9f79-e695498b3c61.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember that a line is straight object with no ending in either direction. How many lines make up this diagram of railroad tracks?",
         "B": "A line is an object that is straight and goes infinitely in both directions (as shown by the arrows). This railroad track diagram has one on top and one on bottom, so 2 overall.",
@@ -91,7 +91,7 @@
     {
       "questionId": 166901,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/58f27776-237c-4de9-88f6-7a5481ddb124.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Remember that a line is straight object with no ending in either direction. How many lines make up this diagram of a road?",
         "B": "Remember that a line segment is straight with two endpoints, while a line is straight with no ending. How many lines make up this diagram of a road?",
@@ -103,7 +103,7 @@
     {
       "questionId": 166652,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d14ad81d-3c3c-4156-8759-73d7b2a29b51.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you may have mixed up parallel and perpendicular lines. Which of these sets are perpendicular?",
         "B": "Remember that perpendicular lines intersect at an exact right angle. Which of these diagrams matches that description?",
@@ -115,7 +115,7 @@
     {
       "questionId": 166902,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/307386c1-3d24-482b-a9d3-b18719ccdc3a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Remember that perpendicular lines intersect at an exact right angle. Which of these diagrams matches that description?",
         "B": "It looks like you may have thought that perpendicular means \"going in opposite directions.\" Remember that perpendicular lines intersect at an exact right angle. Which of these diagrams matches that description?",
@@ -127,7 +127,7 @@
     {
       "questionId": 166653,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eb5d95e1-9b3d-4cfd-8f89-6f0c2baa5508.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Remember that an angle is the space created between two intersecting lines or line segments, and obtuse angles are greater than 90 degrees.",
         "B": "I think you may have mixed up acute and obtuse angles. How many obtuse angles are in the letter Y?",

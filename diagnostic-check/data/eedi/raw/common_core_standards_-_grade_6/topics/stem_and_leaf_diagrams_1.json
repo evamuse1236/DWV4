@@ -31,7 +31,7 @@
     {
       "questionId": 76876,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5bb10331-0554-418a-8c23-af5da813bd98.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have tried to count all of the numbers in the stem. We are only interested in the values that are greater than 20",
         "B": "I think you have included the 2 people who were 20 years old, but we wanted those who were over 20.",
@@ -67,7 +67,7 @@
     {
       "questionId": 79044,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6881779-4966-418e-b114-9c6de5f5ebf9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you might have interpreted the stem and leaf diagram incorrectly. There are 3 twos in the 1 stem so this does represent our mode, but we need to look at the key to work out what age this represents.",
         "B": "42 appears twice, but there are 2 other ages that appear twice and one other age that appears 3 times! Can you find the age that appears 3 times?",
@@ -79,7 +79,7 @@
     {
       "questionId": 109644,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d2090e22-6272-4030-8159-f6daf9962f44.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "We need to also look at the number in the stem. Use the key to help.",
         "B": "Not quite. Use the key to help. What place value does the stem have?",
@@ -127,7 +127,7 @@
     {
       "questionId": 109646,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bfc8ab09-ccfa-4d2c-8e2a-151b2c71181d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have misread the key and the direction of the stem and leaf diagram. When interpreting the values we must write the stem number first.",
         "B": "Remember to look at the key! What place value do the stem numbers have?",
@@ -139,7 +139,7 @@
     {
       "questionId": 109650,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e674e1fd-4cfc-43ec-97ed-288ca4735c67.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have misread the key and the direction of the stem and leaf diagram. When interpreting the values we must write the stem number first.",
         "B": "The stem digit is 5 and the leaf digit is 1. The key tells us we can put these together to get 5.1",

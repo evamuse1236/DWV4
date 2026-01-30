@@ -43,7 +43,7 @@
     {
       "questionId": 78402,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/605cc5b4-7859-4017-a8ac-46095a56af64.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! You have found the probability of winning at both rather than losing at both.",
         "B": "Not quite! We need to take into account the probability of losing at both games, not just the second one.",
@@ -55,7 +55,7 @@
     {
       "questionId": 78696,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/164e8164-a43f-4bda-a4ae-df86e5cea033.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! I think you have added the probabilities here. Remember, probabilities cannot take a value greater than 1. What do we do when we travel along a path in a tree diagram instead of adding?",
         "B": "Have another go. I think you have made a calculation error here.",
@@ -79,7 +79,7 @@
     {
       "questionId": 78697,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/78313a41-84c9-469e-ae12-70d087683dfe.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Have another think. It looks like you have added all of the probabilities here, but what do we do when moving along the branches of a tree diagram? Remember, probabilities cannot be greater than 1.",
         "B": "Keep going! You have calculated the probability of only winning one game out of the two, but the question asked for AT LEAST one game out of the two. So what else do we need to include?",
@@ -103,7 +103,7 @@
     {
       "questionId": 78698,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/96907ccd-fc62-4fb1-8d74-dddbbd874023.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Have another think. I can see you've placed the digits of the relevant fractions next to each other here, but have a think about how we multiply fractions.",
         "B": "Not quite! You seem to have tried cross-multiplication here, which we can only do when our fractions are either side of an equals sign. Have a think how we multiply 2 fractions together.",
@@ -115,7 +115,7 @@
     {
       "questionId": 78405,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2650b44e-5a43-4a68-84c1-3039d06f3593.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! I see you have added all of the relevant fractions here. Remember, probabilities cannot be greater than 1, so this answer doesn't make sense. What path(s) do we need to follow to give us the outcome of winning exactly one game? How do we combine these probabilities?",
         "B": "Paths 2 and 3 give us exactly one win. The probability from path 2 is 3/8 x 2/3 = 6/24 The probability from path 3 is 5/8 x 1/3 = 5/24. We then need to add them together. 6/24 + 5/24 = 11/24",

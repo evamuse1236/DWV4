@@ -31,7 +31,7 @@
     {
       "questionId": 158172,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/345da4ff-83ba-48c2-b2d3-af1347f1520e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have used 14 inches = 1 foot but there are 12 inches in a foot...",
         "B": "This is how many feet are in 84 inches. We are looking for how many inches in 4 feet...",
@@ -43,7 +43,7 @@
     {
       "questionId": 158006,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/41ccb2a0-af6d-4a06-9709-dab9723a3792.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have accidentally subtracted 64 and 16 but you need to divide them...",
         "B": "You have accidentally multiplied 64 and 16 but you need to divide them...",
@@ -55,7 +55,7 @@
     {
       "questionId": 158173,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/118cc584-0c7a-4963-85b5-17e2bb3dccc8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have accidentally subtracted 144 and 16 but you need to divide them...",
         "B": "There are 16 ounces in a pound therefore in 144 ounces we have 144 ÷ 16 = 9 so 9 pounds",
@@ -79,7 +79,7 @@
     {
       "questionId": 158174,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/afdf6075-dd4a-4a51-8c26-c04306f154b5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have accidentally subtracted 36 and 4 but you need to divide them...",
         "B": "You have correctly worked out that 1 gallon = 4 quarts but then you have multiplied 36 by 4 instead of dividing...",

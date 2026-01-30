@@ -25,7 +25,7 @@
     {
       "questionId": 75964,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/67d9006f-c3f9-4e07-bbc2-489fc8412030.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have given a sensible estimation, but this will underestimate the total value. How can we find an overestimate?",
         "B": "You have given a sensible estimation, but this will underestimate the total value. How can we find an overestimate?",
@@ -37,7 +37,7 @@
     {
       "questionId": 76112,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/29a00db2-35f2-4383-9511-34b4d5db93da.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have given a sensible estimation, but this will underestimate the total value. How can we find an overestimate?",
         "B": "You have given a sensible estimation, but this will underestimate the total value. How can we find an overestimate?",
@@ -49,7 +49,7 @@
     {
       "questionId": 104578,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6161aedd-8c62-490a-94a7-f4e4a76176ae.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The first number is approximately 10, but what is the approximate answer to the whole sum?",
         "B": "The second number is approximately 100, but what is the approximate answer to the whole sum?",
@@ -61,7 +61,7 @@
     {
       "questionId": 104584,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ad9ee9d8-f88b-47f5-bb38-d4cc193cca00.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Just check that you have taken the decimal points into account when you are rounding",
         "B": "1.9 ≈ 2 and 197.6 ≈ 200, so 1.9 × 197.6 ≈ 2 × 200 = 400.",
@@ -73,7 +73,7 @@
     {
       "questionId": 130052,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/49f7322a-4bb8-4934-9d0b-a010bb40b99e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Think about how many thousand you would round each number to.",
         "B": "Not quite. Think about how many thousand you would round each number to.",
@@ -97,7 +97,7 @@
     {
       "questionId": 146294,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/df04e6bc-c451-4f6f-a79f-a5cf63f6ec74.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have guessed. First round the numbers to one significant figure before subtracting.",
         "B": "I think you may have rounded down. Make sure you round both numbers to the nearest one significant figure, which would be the nearest hundred in both cases.",
@@ -109,7 +109,7 @@
     {
       "questionId": 146314,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/382a27c0-6d98-492f-9522-e952b7c64efe.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you may have guessed. First round the numbers to one significant figure before subtracting.",
         "B": "I think you may have rounded down. Make sure you round both numbers to the nearest one significant figure, which would be the nearest hundred in both cases.",
@@ -121,7 +121,7 @@
     {
       "questionId": 158037,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bc0866e0-f4f0-4d9c-99f1-eb897383f4d4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This would give an underestimate because you have rounded 127 down to 100. To get an overestimate, you need to round some of the values in the calculation up...",
         "B": "This would give an underestimate because you have rounded 127 down to 120. To get an overestimate, you need to round some of the values in the calculation up...",

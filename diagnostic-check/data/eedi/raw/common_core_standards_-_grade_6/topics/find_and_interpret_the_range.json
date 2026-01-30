@@ -25,7 +25,7 @@
     {
       "questionId": 146898,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f358976b-0679-4758-8e7c-c25a8e4e27bd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you may have added the ages. The question asks for the range of the ages, the difference between the biggest and smallest. Recalculate your answer.",
         "B": "I think you have subtracted the first person’s age from the last person’s age, but they are not in ascending order. The range of the ages is the difference between the biggest and smallest. Recalculate your answer.",
@@ -37,7 +37,7 @@
     {
       "questionId": 146918,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/86d280da-40f7-4acc-b076-2101aad5cb9a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have added the ages. The range of the ages is the difference between the biggest and smallest. . Recalculate your answer.",
         "B": "I think you have subtracted the first person’s age from the last person’s age, but they are not in ascending order. The range of the ages is the difference between the biggest and smallest. Recalculate your answer.",
@@ -97,7 +97,7 @@
     {
       "questionId": 146901,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6b2bebb9-ce18-40a4-8064-bd0b96c6667d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have misunderstood what the range is. The range is the difference between the smallest value and the largest value. Consider this data and apply the changes that Tom and Katie have described – does this change the range at all?",
         "B": "If all of the values are doubled, then the difference between them will double too. So Tom is incorrect. If the differences are all shifted by adding 12cm to each, then the range would stay the same. So Katie is correct.",
@@ -109,7 +109,7 @@
     {
       "questionId": 146921,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/19674118-a4c0-46e4-a5a0-b30aa165d488.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have misunderstood what the range is. The range is the difference between the smallest value and the largest value. Consider a couple of values and apply the changes that Tom and Katie have described – does this change the range at all?",
         "B": "If all of the values are halved, then the difference between them will halve too. So Tom is incorrect. If the differences are all shifted by adding 3cm to each, then the range would stay the same. So Katie is correct.",
@@ -121,7 +121,7 @@
     {
       "questionId": 146902,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/97e11bb1-c0a6-409c-9a5e-7c997e4be587.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have added 3 and 20 together. If the largest number was 23, the range would be 26 (-3 to 23)",
         "B": "Starting at the smallest number -3, adding on 20, would get us to 17. So 17 must be the largest number.",
@@ -133,7 +133,7 @@
     {
       "questionId": 146922,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e12e487f-e769-4f98-84c2-b65d6d6e2084.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have added 4 and 18 together. If the largest number was 22, the range would be 26 (-4 to 22)",
         "B": "I think you may have started at 4 and subtracted 18. Find the range by starting at -4 and adding the 18 on, to find the largest number.",

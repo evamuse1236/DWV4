@@ -85,7 +85,7 @@
     {
       "questionId": 135399,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/61f1d282-aa0b-40ba-9cb9-048bce7a22e7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have just stated the change in y. The gradient is calculated by dividing the change in y by the change in x.",
         "B": "I think you have stated the change in x. The gradient is calculated by dividing the change in y by the change in x.",
@@ -97,7 +97,7 @@
     {
       "questionId": 135419,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d1b5f63-9774-4c2e-80e1-64ad68543ae7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have just stated the change in y. The gradient is calculated by dividing the change in y by the change in x.",
         "B": "I think you have stated the change in x. The gradient is calculated by dividing the change in y by the change in x.",
@@ -133,7 +133,7 @@
     {
       "questionId": 135401,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d0e58455-624d-423a-96f1-afb393d3d184.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have stated the maximum displacement. The gradient is calculated by dividing the change in y by the change in x.",
         "B": "I think you have divided the displacement by the total time. How long in seconds did the negative sloping section of the graph last?",
@@ -145,7 +145,7 @@
     {
       "questionId": 135421,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d81d99d9-e4c0-4d83-90c7-f0fc17e5f0e6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have just stated the change in y. The gradient is calculated by dividing the change in y by the change in x.",
         "B": "The gradient is calculated by dividing the change in y by the change in x. So (-60)/2 = -30",

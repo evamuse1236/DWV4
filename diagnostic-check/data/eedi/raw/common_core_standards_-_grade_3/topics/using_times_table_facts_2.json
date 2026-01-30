@@ -19,7 +19,7 @@
     {
       "questionId": 158742,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/79ce978f-411a-41fe-a704-ae879858f19f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Close! 9 x 6 = 54, but we want 9 x 5. Think about 10 x 5, can 9 x 5 be bigger than that?",
         "B": "That's 9 + 5, but we want 9 x 5",
@@ -55,7 +55,7 @@
     {
       "questionId": 158942,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/50b42695-ac18-4b16-9d43-487f18f8270c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Close! 8 x 6 = 48, but we want 9 x 6. Add one more 6.",
         "B": "That's 9 + 6, but 9 groups of 6 means we have 9 x 6.",
@@ -67,7 +67,7 @@
     {
       "questionId": 158744,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e9f49f17-5f0c-4f01-98b8-b53c4976afe4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "That's 42 - 6, but we want 42 ÷ 6. How many 6s are in 42?",
         "B": "42 ÷ 6 = 7, because if we count up in 6s, seven 6s make 42.",
@@ -79,7 +79,7 @@
     {
       "questionId": 158943,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/39c7e665-92d4-4932-a9b7-0e3f816ba66e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "That's 48 - 6, but we want 48 ÷ 6. How many 6s are in 48?",
         "B": "Close! Nine 6s make 54, not 48. That's too big, so how many 6s do you think go into 48?",
@@ -103,7 +103,7 @@
     {
       "questionId": 158944,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8e01ae21-b13b-4610-bbe2-b73346f507c3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have subtracted 32 - 4, but this isn't a subtraction question. What mathematical operation means \"split into equal groups\"?",
         "B": "You have multiplied 32 x 4, but this isn't a multiplication question. What mathematical operation means \"split into equal groups\"?",
@@ -115,7 +115,7 @@
     {
       "questionId": 158746,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/06a613f4-2647-47a9-94a2-7c1f4205aaaa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "If we put 200 in the box, we would have 5 x 200. Does that equal 40? Think about how many 5s are in 40.",
         "B": "5 x 8 = 40, so 8 goes in the box.",

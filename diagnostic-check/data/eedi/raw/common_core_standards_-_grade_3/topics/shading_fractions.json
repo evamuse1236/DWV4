@@ -31,7 +31,7 @@
     {
       "questionId": 158785,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8067a92c-02fd-4719-a0f9-7ccd2c155696.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite - you have written shaded parts out of unshaded parts, but we want shaded parts out of total parts. How many parts is the whole shape split into?",
         "B": "The shape is split into 3 equal parts and 1 is shaded, so 1/3 is shaded.",
@@ -79,7 +79,7 @@
     {
       "questionId": 158787,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ff7f84cb-201c-4b01-8224-81c7134f376c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "That would be correct if the shape was split into 5 equal parts, but the pieces are not all the same size... How many pieces would we need to cut the shape into for them all to be equal to the smallest piece here?",
         "B": "The \"X\" splits the shape into quarters, and then one of the quarters is split in half, so the size of the shaded piece is 1/8. If we cut the whole shape into pieces the size of the shaded piece, there would be 8.",
@@ -91,7 +91,7 @@
     {
       "questionId": 158986,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/57f9950f-6351-411f-a87f-b80a26ee35c1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The shaded piece is half of a larger section, but it's not half of the whole shape. How many of the blue shapes could you fit into the whole shape?",
         "B": "Not quite - we need the fraction of shaded parts out of total parts, but we need the parts to all be the same size. If we cut the whole shape into pieces the same size as the shaded one, how many would there be?",
@@ -103,7 +103,7 @@
     {
       "questionId": 158788,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/007c2666-e58b-44a5-a57e-a2e2d3afcd21.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite - there are 10 parts altogether, so if we shade 3 that is 3/10, not 3/5. Can you see that there are 5 columns in the shape? How many columns would make 3/5 of the shape?",
         "B": "That's the total number of parts, so how many of those would be the same as 3/5? Can you convert 3/5 to a fraction out of 10?",
@@ -115,7 +115,7 @@
     {
       "questionId": 158987,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b2b4428d-944a-45a7-9696-aa63cdde1099.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "That's the total number of parts, so how many of those would be the same as 3/4? Can you see that there are 4 columns in the shape? How many columns should we shade, and how many squares is that?",
         "B": "The shape is split into 4 columns, so we shade 3 columns, 6 parts altogether. We can also think: 3/4 = 6/8 (by doubling the numerator and denominator), so shade 6 out of 8 parts.",

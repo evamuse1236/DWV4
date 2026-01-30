@@ -61,7 +61,7 @@
     {
       "questionId": 89326,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8c64f27f-ac74-4db1-866b-ad5919d5d24b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You may have forgotten your order of operations. Multiplication must be carried out before addition, unless brackets show otherwise.",
         "B": "You may have forgotten your order of operations. Multiplication must be carried out before addition, unless brackets show otherwise.",
@@ -73,7 +73,7 @@
     {
       "questionId": 131582,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/12650a37-f12e-4519-b641-b88d2d2a0754.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you forgot to do the brackets first. Work out what is inside the brackets and then continue with B I DM AS",
         "B": "I think you did the addition first, and then divided by what was in the bracket. Remember to use B I DM AS (order of operations)",
@@ -85,7 +85,7 @@
     {
       "questionId": 133775,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/de748aa4-0812-4d6e-b9b5-5837b8312b03.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you did the calculation from left to right. Remember to use B I DM AS (order of operations)",
         "B": "Using our order of operations we do the brackets first. That leaves 4 + 12 ÷ 4. Then we do division to get 4 + 3 = 7",
@@ -97,7 +97,7 @@
     {
       "questionId": 155834,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/84702f27-2e3e-42e4-a32c-d65e958ecbd9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have added 5 to 8, rather than subtracted.",
         "B": "I think you have applied the order of operations incorrectly. We can use the acronym BIDMAS to remember which order to carry out operations in. Would we calculate the brackets or multiply by 7 first?",
@@ -109,7 +109,7 @@
     {
       "questionId": 155852,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b6b580de-7ce1-4d77-b8d9-e1632049afae.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have added 3 to 9, rather than subtracted.",
         "B": "Using BIDMAS to remember our order of operations, we would calculate the bracket first before multiplying by 10. Therefore, 10(9 - 3) = 10 x 6 = 60.",
@@ -121,7 +121,7 @@
     {
       "questionId": 155836,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/55a742b6-7f15-4d3f-905e-d2b00e24fe41.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have assumed that because there are two negative signs, we would add the bracket on. Is the value of the bracket positive or negative? Use the usual rules to subtract that value from 10.",
         "B": "I think you have assumed that because there are two negative signs, we would add the bracket on, but also calculated the bracket incorrectly. Is the value of the bracket positive or negative? Use the usual rules to subtract that value from 10.",

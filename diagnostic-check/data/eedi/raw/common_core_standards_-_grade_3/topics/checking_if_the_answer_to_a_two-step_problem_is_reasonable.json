@@ -25,7 +25,7 @@
     {
       "questionId": 166644,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ab86cf71-4d64-415c-a781-99c62591fde4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is the exact value, the question has asked you to use the baker's rounded numbers to estimate...",
         "B": "You have accidentally added on the cookies he has already baked but, if he's already baked them, he needs to bake this many less to get the total needed!",
@@ -37,7 +37,7 @@
     {
       "questionId": 166894,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/985a1449-7456-47c1-bd66-ad664aba2656.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "If there are 7 cookies in each box and he needed to make 40 boxes, how many cookies is this? Take off the cookies he has already made to work out how many he still has to bake!",
         "B": "This is the exact value, the question has asked you to use the baker's rounded numbers to estimate...",
@@ -49,7 +49,7 @@
     {
       "questionId": 166645,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/073f0257-9e80-47a3-9517-3e37667e6163.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have estimated the price of the toy car incorrectly. Is $4.18 closer to $4 or $5?",
         "B": "You have estimated the price of the toy truck incorrectly. Is $5.99 closer to $5 or $6?",
@@ -61,7 +61,7 @@
     {
       "questionId": 166895,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3c705f1d-264a-4419-b3c4-52ec963be05a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have accidentally estimated the price of 4 toy cars and 4 toy trucks but we want 1 toy car and 4 toy trucks!",
         "B": "We are estimating, so we round the values to one significant figure, making the calculation easier. The cost of a toy car becomes $4 and a truck $5. Zoe wants 1 toy car and 4 toy trucks so 4 x $5 = $20 and $20 + $4 = $24. Therefore, an estimate for the total cost is $24!",
@@ -73,7 +73,7 @@
     {
       "questionId": 166646,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8477070a-e176-4ac4-b1d4-96298897a160.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have accidentally divided the sweets between 4 people but the question says the sweets are shared between 'herself and 4 friends' so you need to include Sarah too!",
         "B": "There are 515 sweets, but we are estimating so we round to 500 sweets, and 5 people. Dividing the sweets between the people we get: 500 ÷ 5 = 100 so each person gets 100 sweets. If Sarah has 82 left we can round that to 80 and find the difference between 100 and 80. 100 - 80 = 20 so yes, Sarah has eaten approximately 20 sweets!",
@@ -85,7 +85,7 @@
     {
       "questionId": 166896,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4caf2749-1691-4a96-bf43-a6d481671218.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have accidentally divided the sweets between 4 people but the question says the sweets are shared between 'herself and 5 friends' so how many people is that altogether?",
         "B": "You have accidentally added the 50 and 40 together but you are trying to find the difference between them...",
@@ -97,7 +97,7 @@
     {
       "questionId": 166647,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2d2b70ea-524c-4d86-be3a-9934ed07f61f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It's possible to type the wrong thing into a calculator and therefore, get the wrong answer! Read the question again and work out the age of Johnny's sister to see which answer is correct",
         "B": "I think you have accidentally added 5 to Johnny's age but the sister is YOUNGER...",
@@ -121,7 +121,7 @@
     {
       "questionId": 166648,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/57804268-cc5f-4578-b6b8-9b4269581c0b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The shop fills 5 boxes completely and there are 8 trains in each box. 5 x 8 = 40 therefore, there must be more than 40 trains. 49 would mean another full box could be filled so the answer must be 43. This would be the 8 full boxes and 3 trains in the next box!",
         "B": "This would fill up 6 boxes completely and have 1 train in a seventh box...",
@@ -133,7 +133,7 @@
     {
       "questionId": 166898,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a4d5e3f3-5632-40bd-a6c1-2ae514ba913c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This wouldn't fill up the 7 boxes completely. Remember there are 6 trains in each box. We want to fill up 7 boxes completely and have some in an eighth box...",
         "B": "The shop fills 7 boxes completely and there are 6 trains in each box. 7 x 6 = 42 therefore, there must be more than 42 trains. 48 would mean another full box could be filled so the answer must be 44. This would be the 7 full boxes and 2 trains in the next box!",

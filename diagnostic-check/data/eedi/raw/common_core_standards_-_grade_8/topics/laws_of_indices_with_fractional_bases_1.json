@@ -43,7 +43,7 @@
     {
       "questionId": 135092,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/30f37c4b-c643-4d99-9c35-3ea61c15a538.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, think about what the rule for anything to the power of zero is equal to.",
         "B": "Anything to the power of zero is equal to 1.",
@@ -55,7 +55,7 @@
     {
       "questionId": 135112,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6a773dc0-bf06-451d-bc88-ebbb83bd2287.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, think about what the rule for anything to the power of zero is equal to.",
         "B": "Anything to the power of zero is equal to 1.",
@@ -79,7 +79,7 @@
     {
       "questionId": 135113,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dccf3134-8ecc-43e3-9afe-d56e098bfde0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, I think you have multiplied the values by 3. The small 3 means we need to 'cube' our values. In other words we multiply by itself then itself again, for example -1 x -1 x -1 = -1.",
         "B": "Nearly! Think about what type of number you get when you multiply a negative by a negative by a negative, for example -1 x -1 x -1.",
@@ -91,7 +91,7 @@
     {
       "questionId": 135094,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f944e346-94bb-4255-bbfc-0fd6469a9867.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have multiplied -1/4 by -1. However, remember you are raising to the power of -1. What's the correct rule to apply in this case?",
         "B": "I think you have raised -1/4 to the power of 1. However, look carefully - the question is actually asking you to raise -1/4 to the power of -1.",
@@ -115,7 +115,7 @@
     {
       "questionId": 135095,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/67e38201-97fc-4027-9874-0ed3df3df1f0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, I think you have multiplied the fractions together. When we raise a number to the power of a half, we must square root the number. In this case, we square root the numerator and the denominator.",
         "B": "When we raise a number to the power of a half, we must square root the number. In this case, we square root the numerator and the denominator. The square root of 1 is 1, and the square root of 4 is 2, so therefore the square root of 1/4 is 1/2.",
@@ -127,7 +127,7 @@
     {
       "questionId": 135115,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/673c626b-be55-4596-8289-f56db82ed7f6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, I think you have multiplied the fractions together.When we raise a number to the power of a third, we must cube root the number. In this case, we cube root the numerator and the denominator.",
         "B": "Not quite, I think you have found the reciprocal of the fraction. When we raise a number to the power of a third, we must cube root the number. In this case, we cube root the numerator and the denominator.",

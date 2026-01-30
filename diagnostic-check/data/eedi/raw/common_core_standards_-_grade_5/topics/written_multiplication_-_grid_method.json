@@ -25,7 +25,7 @@
     {
       "questionId": 102196,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/73b3cf43-cd55-49b7-9ea4-09dc1b38e686.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. You've written the value of the '1' in 128 incorrectly. Try reading this number out loud to help you.",
         "B": "We fill the table with how much each digit represents. 123 = 100 + 20 + 3 and 26 = 20 + 6.",
@@ -37,7 +37,7 @@
     {
       "questionId": 102206,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c64ddd3b-cdf2-466f-9d27-2a6c944f2106.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. You've written the value of the '3' in 328 incorrectly. Try reading this number out loud to help you.",
         "B": "Not quite. You've written the value of the '7' in 75 incorrectly. How much does the 7 represent?",
@@ -49,7 +49,7 @@
     {
       "questionId": 102197,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f183e6bc-ae53-4c5b-a96c-5df09ce9e8a0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "We need to multiply 20 and 50, but 10 is smaller than both these values. Make sure you think about the number of zeros in your answer.",
         "B": "To calculate ★ we do 20 × 50 = 1000. We can do 2 × 5 = 10, and then ‘add in’ two more zeros (one from the 20 and the other from the 50).",
@@ -109,7 +109,7 @@
     {
       "questionId": 102209,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/22776ee8-cae2-4165-83af-15e9569d3354.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, make sure you think about the number of zeros in your answer. We are doing 5 × 7.",
         "B": "It looks like you have found the difference between the numbers rather than multiplying them.",
@@ -121,7 +121,7 @@
     {
       "questionId": 102200,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8e26692f-8510-4fe3-bdae-ea3791d68c7d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. You've written the value of the '1' in 1036 incorrectly. Try reading this number out loud to help you.",
         "B": "It looks like you have just written the digits in the table. We need to fill the rows and columns with how much each digit represents. e.g. The '4' in 41 represents 40.",
@@ -133,7 +133,7 @@
     {
       "questionId": 102210,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d4524404-4dc5-4319-8cfd-656d30f3b0c2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. You've written the value of the '2' in 2089 incorrectly. Try reading this number out loud to help you.",
         "B": "We fill the table with how much each digit represents. 2089 = 2000 + 80 + 9 and 56 = 50 + 6.",

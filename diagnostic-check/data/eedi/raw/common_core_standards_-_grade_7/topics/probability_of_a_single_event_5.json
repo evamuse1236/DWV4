@@ -37,7 +37,7 @@
     {
       "questionId": 78390,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/81a42095-47e5-491e-9f24-72f2a7673f41.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have found the expected number of times you would win, not lose. If the probability of a win is 0.4 what is the probability of a lose?",
         "B": "Not quite, maybe you assumed you would win 40 games. If the probability of winning is 0.4 then you need to multiply this by 200 to find out how many times you would win. How many times would you lose?",
@@ -49,7 +49,7 @@
     {
       "questionId": 78684,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e7eecb4f-cea1-47f3-b554-d631947b1fbc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, maybe you assumed you would win 30 games. If the probability of winning is 0.3 then you need to multiply this by 200 to find out how many times you would win. How many times would you lose?",
         "B": "The probability of losing is 1 - 0.3 = 0.7, so the expected number of losses is 0.7 × 200 = 140.",
@@ -61,7 +61,7 @@
     {
       "questionId": 78391,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e957d824-8a98-4daa-8c67-42d5aed2841c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "A simplified fraction would still have the same value, so would not actually improve her estimate. How could she make her estimate more accurate?",
         "B": "To improve any experiment, we need to record more data.",
@@ -85,7 +85,7 @@
     {
       "questionId": 78399,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7dbc8d37-0898-4499-bd12-569ca2844007.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have worked out the correct answer to the first step and found that the remaining probability is 0.3. But we have to split that probability equally between Yellow and Blue",
         "B": "Not quite. I think you may have just added the probabilities of Green and Red together. We need to do this and then subtract from 1, before splitting our remaining probability equally between Yellow and Blue",
@@ -97,7 +97,7 @@
     {
       "questionId": 78693,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2c359abc-1158-4d6c-b83d-84e3cc09d8e5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Nearly! I think you have split the remaining probability equally between Green and Blue, but look at the table again. Green needs 3 times the probability that Blue has.",
         "B": "Nearly. Think carefully about your place value. The first step give us 1 - (0.5 + 0.1) which is 1 - 0.6. What does this equal?",
@@ -109,7 +109,7 @@
     {
       "questionId": 78412,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7667dc45-be2f-439b-99d3-6312cf92002c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have found the probability of selecting an Ace, King, Queen or Jack from the whole deck. But we need to work out the probability of a diamond, given that it is an Ace, King Queen or Jack.",
         "B": "The card is an Ace, King, Queen or Jack, so there are only 16 possible cards. Of these, only 4 of them are diamonds so the probability is 4/16.",
@@ -121,7 +121,7 @@
     {
       "questionId": 78706,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c77202ca-7f46-4a83-875d-41c32560476d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have found the probability of the Jack, Queen or King of clubs from a full pack, but the word \"given that\" means we are now only choosing from clubs",
         "B": "You have given the probability of picking a club, but we need the probability of picking a Jack, Queen or King from the clubs",
@@ -145,7 +145,7 @@
     {
       "questionId": 109479,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e9d50e0f-e5bb-4d50-95ae-f1917ff6b519.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have answered as if the condition were 'given the shape is a square…'. Instead we are told that the shape is red and now want the probability that it is a square",
         "B": "You have given the number of squares, but the questions says \"given that the shape is red...\" so we need to find the probability of choosing a square out of the red shapes",

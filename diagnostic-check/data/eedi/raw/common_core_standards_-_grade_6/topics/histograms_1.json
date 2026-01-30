@@ -31,7 +31,7 @@
     {
       "questionId": 109566,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0728fe22-d315-4e69-ad6c-96c12c95d49f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is the upper bound, but how wide would the bar be if it started at 80 and went to 120?",
         "B": "I think you have added the upper and lower bound. To find the width we need the difference between them, what operation would we use?",
@@ -43,7 +43,7 @@
     {
       "questionId": 109572,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3c0e4707-cf6e-4b4e-9e33-1244f1c9989e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is the upper bound, but how wide would the bar be if it started at 60 and went to 120?",
         "B": "This is the midpoint, but how wide would the bar be if it started at 60 and went to 120?",
@@ -67,7 +67,7 @@
     {
       "questionId": 109573,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1cfc0321-a586-4530-aa06-cb2d8507f6b0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have given the midpoint of the group. To find the frequency density, we divide the frequency by the group width.",
         "B": "I think you have given the upper bound. To find the frequency density, we divide the frequency by the group width.",
@@ -79,7 +79,7 @@
     {
       "questionId": 109568,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/518f0f45-89da-4bd6-8461-5fc6773a069c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have stated the frequency here. To find the frequency density, we divide the frequency by the group width.",
         "B": "I think you have given the upper bound. To find the frequency density, we divide the frequency by the group width.",
@@ -91,7 +91,7 @@
     {
       "questionId": 109574,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/52ff4247-22f4-4183-9452-b5301abbbe41.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have given the midpoint of the group. To find the frequency density, we divide the frequency by the group width.",
         "B": "I think you have given the upper bound. To find the frequency density, we divide the frequency by the group width.",
@@ -103,7 +103,7 @@
     {
       "questionId": 109569,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/42df67e0-c834-4fba-ba64-c177e3b06841.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you may have made an arithmetic error. Check your calculation.",
         "B": "I think you have divided them the wrong way around. To find the frequency density, we divide the frequency by the group width.",
@@ -115,7 +115,7 @@
     {
       "questionId": 109575,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/427c1166-52f0-470d-a75c-04dd6539b230.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have made an arithmetic error. Check your calculation.",
         "B": "To find the frequency density, we divide the frequency by the group width. This means that the frequency density is 12 ÷ 40 = 3 ÷ 10 = 0.3",
@@ -127,7 +127,7 @@
     {
       "questionId": 109570,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a9a68b0e-5bbd-48eb-b314-2e5a74fd6e49.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you are trying to plot the group width of 40. Consider the shape of a histogram and the lower and upper bound for this class width.",
         "B": "I think you may have mixed up the axes. On a histogram, the variable is plotted on the x axis, and the frequency density is plotted on the y axis.",
@@ -139,7 +139,7 @@
     {
       "questionId": 109576,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/143b7fe5-c9d5-48b0-acf4-a8b7690a1c6d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you are trying to plot the group width of 60. Consider the shape of a histogram and the lower and upper bound for this class width.",
         "B": "I think you have stated the frequency. We plot the variable on the x axis in histograms.",

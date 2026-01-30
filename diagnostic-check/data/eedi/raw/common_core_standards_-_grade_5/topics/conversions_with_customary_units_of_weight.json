@@ -19,7 +19,7 @@
     {
       "questionId": 158430,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b77f8d9e-41fb-4fda-b61a-8020e75095f5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you've multiplied instead of divided. 1 pound = 16 ounces. Therefore, you need to know how many times 16 divides into 112.",
         "B": "I think you've assumed that there are 100 ounces in a pound, but, 1 pound = 16 ounces.",
@@ -31,7 +31,7 @@
     {
       "questionId": 158544,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/66da2a6b-83a4-440d-8610-d45982601bb6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've assumed that there are 100 ounces in a pound, but, 1 pound = 16 ounces.",
         "B": "1 pound = 16 ounces. 208 ÷ 16 = 13. Therefore, 208 ounces = 13 pounds.",
@@ -43,7 +43,7 @@
     {
       "questionId": 158431,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/019705f9-f999-4f9c-bdd8-0b9c714c5fd7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you know that you need to divide 3780 by 2000 (1 ton = 2000 pounds). But to do this, first find out how many times 2780 divides into 2000. Then see what the remainder is.",
         "B": "1 ton = 2000 pounds. 3780 ÷ 2000 = 1 remainder 1780. Therefore 3780 pounds = 1 ton and 1780 pounds",
@@ -55,7 +55,7 @@
     {
       "questionId": 158545,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e2a19e78-f5af-4cbc-9491-10f36c27a311.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you know that you need to divide 5640 by 2000 (1 ton = 2000 pounds). But to do this, first find out how many times 5640 divides into 2000. Then see what the remainder is.",
         "B": "I think you've divided by 100. But, 1 ton = 2000 pounds.",
@@ -67,7 +67,7 @@
     {
       "questionId": 158432,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4f5a77d8-a8ad-43a3-a3ca-4802cd58c597.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've divided by 100, but 1 ton = 2,000 pounds.",
         "B": "I think you've divided by 1000, but 1 ton = 2,000 pounds.",
@@ -79,7 +79,7 @@
     {
       "questionId": 158546,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0b4a7e5b-ac45-4f44-bcea-c18838c4862b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "1 ton = 2,000 pounds. So, 2,400 pounds must only be a bit more than 1 ton. Double check your pounds and tons.",
         "B": "I think you've divided by 100, but 1 ton = 2,000 pounds.",
@@ -103,7 +103,7 @@
     {
       "questionId": 158547,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f30382a1-fb09-4362-9b69-9fccd71cad2e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've tried to divide by 16, but 16 does not go into 92 6 whole times. Work out how many 16s you can take away from 92, and then write the remainder as a fraction of 16.",
         "B": "1 pound = 16 ounces. 92 ÷ 16 = 92/16 = 23/4 = 5 and 3/4. Therefore, 92 ounces = 5 and 3/4 pounds.",
@@ -115,7 +115,7 @@
     {
       "questionId": 158434,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2f9c9330-8da7-485c-b0ff-da4531891fe3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have just compared the numbers rather than looking at the units. Remember there are 2000 pounds in a ton, so try converting the tons into pounds and then compare when they are in the same units.",
         "B": "First, convert 3 and 3/4 ton to pounds by multiplying by 2000. This is 7500 pounds which is greater than 7000.",

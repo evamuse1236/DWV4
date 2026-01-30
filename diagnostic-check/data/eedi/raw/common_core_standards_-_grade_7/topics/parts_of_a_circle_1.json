@@ -61,7 +61,7 @@
     {
       "questionId": 130193,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f5380658-587d-4d21-b380-73df863865c9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is not a radius. The radius is a straight line from the centre to the circumference of a circle.",
         "B": "This is not an arc. An arc is part of the outside edge of the circle.",
@@ -85,7 +85,7 @@
     {
       "questionId": 130194,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7cd443f0-0ddc-48e8-9a2b-7338d1554db1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have halved the radius. Remember the diameter is twice as large as the radius.",
         "B": "This is the circumference if the diameter was 5 cm. We want the diameter.",
@@ -133,7 +133,7 @@
     {
       "questionId": 130196,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7494829d-2cc6-4aa6-ae7b-56ee4b700c95.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This would be the height if the measurements were both diameters. Remember the radius is only half of the height of each circle.",
         "B": "This would be the answer if 4 cm was a diameter of the smaller circle. Remember that 4 cm is the radius and we need the distance right across the smaller circle to be included in the height.",
@@ -145,7 +145,7 @@
     {
       "questionId": 130216,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3c9b7340-00e9-47dd-910e-85ff9e2a01c7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This would be the answer if 3 cm was a diameter of the smaller circle. Remember that 3 cm is the radius and we need the distance right across the smaller circle to be included in the height.",
         "B": "The height of the smaller circle is two times the radius: 2 × 3 = 6 cm. The height of the larger circle is the diameter: 10 cm. Therefore, the total height is 6 + 10 = 16 cm.",

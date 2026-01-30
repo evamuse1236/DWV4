@@ -19,7 +19,7 @@
     {
       "questionId": 133552,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea379bd7-7527-4c47-969c-77151f656dae.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, the arrow would have to go the other way to make that true.",
         "B": "Check your calculation again: 6 x ___ = 24.",
@@ -55,7 +55,7 @@
     {
       "questionId": 133563,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3c13136f-bf02-4e4a-8c8e-2e62cf15ddc1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "That would be the constant of proportionality from b to a. What do we need to multiply a by to get to b?",
         "B": "8 x 1.5 = 12 and 24 x 1.5 = 36, so the constant of proportionality is 1.5.",
@@ -67,7 +67,7 @@
     {
       "questionId": 133554,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/99afdc2c-ad64-4d65-a0c1-5879ef4043ac.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Careful, we are looking from top to bottom in the table. What do we need to multiply the numbers in the top row by to get the answer in the bottom row?",
         "B": "Careful, we are looking from top to bottom in the table, not along the rows. 6 x __ = 30?",
@@ -79,7 +79,7 @@
     {
       "questionId": 133564,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/55032f23-cf61-4943-acde-e385eda578f9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "That would be the scale factor from bottom to top. What do we need to multiply 8 by to get to 24?",
         "B": "8 x 3 = 24 and 12 x 3 = 36, so the scale factor is 3.",
@@ -115,7 +115,7 @@
     {
       "questionId": 154821,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/99675465-89b5-4990-b6fc-6c03617901dd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. I think you have identified the scale factor to get from real life to the map. Remember, the ratio given is always map : real life.",
         "B": "Not quite. I think you have identified that the ratio shows us map : real life, but believe we need to divide by 100, possibly confusing this with changing units. Our scale factor must take us from 1 to exactly 500.",

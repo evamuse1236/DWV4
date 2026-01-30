@@ -19,7 +19,7 @@
     {
       "questionId": 167139,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/16b7cad1-c99c-4b7f-bb0a-caa2042d57f7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have confused even and odd. Remember with even numbers, you can arrange them in two equal rows or columns.",
         "B": "I think you have confused even and odd. Remember with even numbers, you can arrange them in two equal rows or columns.",
@@ -31,7 +31,7 @@
     {
       "questionId": 167144,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/65b064da-6b3b-4990-ae47-58b3116a467f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have confused even and odd. Remember odd numbers can't be arranged into two equal rows or columns.",
         "B": "Odd numbers cannot be arranged into two equal rows or columns. Therefore 5 is odd.",
@@ -43,7 +43,7 @@
     {
       "questionId": 167140,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2c8dbfa1-0f9c-407c-a465-d7e15a047d04.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Remember that with even numbers you can group them into pairs. Have you selected all representations that show pairs?",
         "B": "Remember that with even numbers you can group them into pairs. Have you selected a representation that shows these pairs?",
@@ -55,7 +55,7 @@
     {
       "questionId": 167145,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0a98ee8e-8a6a-402f-ba73-863c4a8a708c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Remember that with even numbers you can group them into pairs. Have you selected all representations that show pairs?",
         "B": "Remember that with even numbers you can group them into pairs. Have you selected a representation that shows these pairs?",
@@ -79,7 +79,7 @@
     {
       "questionId": 167146,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/abdf7fc8-1b2d-4b43-823c-a00f261a98c7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have looked at the number of rows. 2 + 2 = 4, but we need 12.",
         "B": "Even numbers can be written as two of the same number added together. 6 + 6 = 12 shows this.",
@@ -91,7 +91,7 @@
     {
       "questionId": 167142,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/419fa1c1-83b8-451e-9009-8fe5f0c448ee.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You may have selected this as 8 is even, but will the two numbers add to give an even total?",
         "B": "You may have selected this as it starts with an even number, but will the two numbers add to give an even total?",
@@ -115,7 +115,7 @@
     {
       "questionId": 167143,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2d6cfe28-8a59-4dfd-85d5-2d622a0fe516.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may be confusing the counters given out already with the total number of counters. Try imagining that 10 counters have been given out already (an even amount as everyone gets 2 each), would the left over counters make this up to an even or odd number? What if it was another even number of counters that have already been given out?",
         "B": "We are able to work it out without collecting in the counters. Try imagining that 10 counters have been given out already (an even amount as everyone gets 2 each), would the left over counters make this up to an even or odd number? What if it was another even number of counters that have already been given out?",
@@ -127,7 +127,7 @@
     {
       "questionId": 167148,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ebe48388-76a9-4959-8a8b-3dfe8e15311b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You may think it's odd because there are an odd number of blocks in each row. Try thinking about it as columns. Each person got one column of blocks (2 blocks) and we have complete columns of 2 left. What does this tell us?",
         "B": "We are able to work it out without knowing the number of students. Try imagining that 10 blocks have been given out already (an even amount as everyone gets 2 each), would the left over blocks make this up to an even or odd number? What if it was another even number of blocks that have already been given out?",

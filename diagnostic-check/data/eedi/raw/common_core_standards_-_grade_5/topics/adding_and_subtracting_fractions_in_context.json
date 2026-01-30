@@ -43,7 +43,7 @@
     {
       "questionId": 158391,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d240c33d-6449-4f6d-b937-3dc9e3f3bd8b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite - it looks like you added the numerators and denominators, but that's not the correct method for adding fractions. We need to convert the fractions to have a common denominator and then add the numerators. Can you find a common multiple of 4 and 8 to use as the denominator?",
         "B": "1/4 = 2/8, so we have 3/8 + 2/8 = 5/8.",
@@ -79,7 +79,7 @@
     {
       "questionId": 158510,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0bbfffbf-2dd6-49e8-9bb1-0badc32bb83c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite - it looks like you added the numerators and denominators, but that's not the correct method for adding fractions. We need to convert the fractions to have a common denominator and then add the numerators. Can you find a common multiple of 5 and 3 to use as the denominator?",
         "B": "Not quite - double check that you have multiplied the numerators of the fractions by the same amount as the denominators when you converted the fractions to have a common denominator of 15.",
@@ -91,7 +91,7 @@
     {
       "questionId": 158393,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/45d221c7-7787-481a-afd5-b44844182cb6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you have added the red and blue fractions correctly, but we want to know what fraction are white. What fraction is \"the rest\", if 23/40 are red or blue?",
         "B": "I think you tried adding the fractions and then subtracting from 1, which are the correct steps, but remember when we add fractions we need to find a common denominator first. Can you find a common multiple of 5 and 8, then convert the fractions to have that as their denominator?",
@@ -103,7 +103,7 @@
     {
       "questionId": 158511,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b3a9a861-7413-40d1-89b0-494683b4735d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Well done for converting the fractions to have a common denominator, but think about the calculation you are doing with them. If we have 7/35 red and 10/35 blue, what fraction of the counters are red or blue? And then what fraction is left to be the white counters?",
         "B": "1/5 = 7/35 and 2/7 = 10/35, so the red and blue counters in total are 7/35 + 10/35 = 17/35. The colors must add up to 35/35 in total, so that leaves 18/35 of the bag to be white counters.",
@@ -115,7 +115,7 @@
     {
       "questionId": 158394,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4d2975f1-754b-41b2-9977-72ebebe092b9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Careful, if the question asks \"how much further\" then we are looking for the difference between these fractions, not the total, so we want to subtract not add.",
         "B": "Not quite - I think when you subtracted the fraction parts you just subtracted the numerators and denominators, but remember we need to convert the fractions to have a common denominator first. Can you find a common multiple of 2 and 10 to use as the denominator?",
@@ -127,7 +127,7 @@
     {
       "questionId": 158512,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e2dcc680-4aa9-4213-8f19-991d3b8e9fea.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite - I think when you subtracted the fraction parts you just subtracted the numerators and denominators, but remember we need to convert the fractions to have a common denominator first. Can you find a common multiple of 4 and 8 to use as the denominator?",
         "B": "Careful, if the question asks \"how much further\" then we are looking for the difference between these fractions, not the total, so we want to subtract not add.",
@@ -139,7 +139,7 @@
     {
       "questionId": 158395,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c7a090ad-b6b4-4e53-a7ba-5c4d1a067cc3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite: 5 + 3 = 8, but 1/2 + 3/4 does not equal 1/4 because 1/4 is smaller than both these fractions. Does 1/2 + 3/4 make any whole numbers?",
         "B": "1/2 = 2/4, so we can find the total amount of paint by adding 5 2/4 + 3 3/4. 5 + 3 = 8 and 2/4 + 3/4 = 5/4 = 1 1/4, so altogether we have 9 1/4 litres of paint.",

@@ -37,7 +37,7 @@
     {
       "questionId": 73609,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4a3690ea-4074-47d1-b7be-5f9a2a36ed05.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have added on 30 to 245. But we can't add a percentage (30%) on to a cost (£245). If we decrease the original 100% amount by 30%, how many percent are left? This is the percentage that £245 represents. Use that to help you find the original (100%) cost.",
         "B": "I think you have decreased £245 by 30%. But £245 is not the original amount here. If we decrease the original 100% amount by 30%, how many percent are left? This is the percentage that £245 represents. Use that to help you find the original (100%) cost.",
@@ -73,7 +73,7 @@
     {
       "questionId": 73817,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9c287749-1144-42e9-b456-bf9483f0ea8b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Read the question carefully. What form should our answer be given in?",
         "B": "Don't forget that we are increasing by 175% so we are adding 175% on to the original amount.",
@@ -85,7 +85,7 @@
     {
       "questionId": 73612,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/179541b1-239e-43ef-9b0f-6efbe194e095.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Be careful when rounding your answer. Look at the digit in the next column (after the 6p) to decide whether to round up or down.",
         "B": "I think you have calculated the VAT but we want the price before VAT was added. How could you use your answer to help you find this?",
@@ -97,7 +97,7 @@
     {
       "questionId": 73818,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/79d89e3b-c811-41f4-a0b0-b295ac6ef914.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have calculated the VAT but we want the price before VAT was added. How could you use your answer to help you find this?",
         "B": "£400 represents the original price (100%) plus the VAT (20%). So £400 = 120%. Dividing by 120 and multiplying by 100 will give the original price before VAT: £400 × 100/120 = £333.333... which is £333.33 to the nearest 1p.",
@@ -121,7 +121,7 @@
     {
       "questionId": 142376,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f7132b23-0a18-4e84-b958-666f6a03e74e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have decreased 126 by 30%. But 126 is not the original amount here. If we decrease the original 100% amount by 30%, how many percent are left? This is the percentage that 126 represents.",
         "B": "The ★ represents 100%. After a 30% decrease, we will be left with 100 – 30 = 70%. So 70% = 126. Dividing both sides by 70 tells us that 1% = 126 ÷ 70 = 1.8. Multiplying both sides by 100 gives ★ = 100% = 180.",
@@ -133,7 +133,7 @@
     {
       "questionId": 103887,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/98913ef1-add8-4827-9807-ab6c9527753a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The best way to check who is correct in this question is to think of your own method to find ★, and then try that with your calculator, and check whether Tom and Katie's answers are the same or not :) It might help to remember that if we increase an amount by 16%, then we have 100% + 16%, so 116% in total.",
         "B": "The best way to check who is correct in this question is to think of your own method to find ★, and then try that with your calculator, and check whether Tom and Katie's answers are the same or not :) It might help to remember that if we increase an amount by 16%, then we have 100% + 16%, so 116% in total.",

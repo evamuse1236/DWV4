@@ -25,7 +25,7 @@
     {
       "questionId": 89266,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fca5a0f5-b872-4df3-9d07-b288d2f615ec.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Think carefully about which operation you need to use. This calculation gives the cost of 84 tickets.",
         "B": "Not quite. Think carefully about which operation you need to use. This calculation gives the amount of money left after buying one ticket.",
@@ -49,7 +49,7 @@
     {
       "questionId": 158082,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4fb12a7b-4a0b-4b26-806d-7ed0f0ad1844.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The question states that 'Gregg ran 5 times as many miles' - what mathematical operation is 'times'?",
         "B": "As Gregg ran '5 times as many miles as Tim' we need to multiply the 5 and 6 together.",
@@ -61,7 +61,7 @@
     {
       "questionId": 158249,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6d760f56-7a54-47ce-9009-7f4b97e8609c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The question states that 'Sue ran 4 times as many miles' - what mathematical operation is 'times'?",
         "B": "As Sue ran '4 times as many miles as Rob' we need to multiply the 4 and 3 together.",
@@ -73,7 +73,7 @@
     {
       "questionId": 158083,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4bd8b8d5-2462-4fcb-ae74-9d768d31347b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This would be the answer if Daniel had 3 more than Cameron but he has 'three times' as much so what operation do you need to use?",
         "B": "This would be the answer if Daniel had a third of what Cameron has but he has 'three times' as much so what operation do you need to use?",
@@ -97,7 +97,7 @@
     {
       "questionId": 158084,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ddf0011c-1800-492c-a9a6-eb517a35751f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have accidentally subtracted 3 but you need to multiply the length by 3...",
         "B": "I think you have accidentally added on 3 but you need to multiply the length by 3...",
@@ -109,7 +109,7 @@
     {
       "questionId": 158251,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/57c6619e-3109-4b80-890b-735334d37c4e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have accidentally added on 4 but you need to multiply the length by 4...",
         "B": "If we stretch the rubber band to be '4 times as long' this means multiplying by 4. 8 x 4 = 32.",
@@ -121,7 +121,7 @@
     {
       "questionId": 158085,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b82cb8ff-e87a-4b8a-978b-e8eb0e9c04fa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have done 54 x 3 but you need to do 54 ÷ 3 to find out how many sweets each child gets",
         "B": "To find out how many sweets each child gets you do 54 ÷ 3 which equals 18.",

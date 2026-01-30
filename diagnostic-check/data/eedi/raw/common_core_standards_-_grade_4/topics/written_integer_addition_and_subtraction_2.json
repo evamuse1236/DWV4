@@ -49,7 +49,7 @@
     {
       "questionId": 102190,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ee362ddd-22fe-40f3-9e5b-6eb7894a463d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've forgotten to check the rest of the calculation - make sure nothing has been borrowed or carried earlier in the calculations.",
         "B": "We need to consider what we can subtract 3 from to get an answer of 8, so we can do 8+3=11, indicating that there must be some regrouping (borrowing) from the thousands column, we need to check if any happens earlier on. Starting with the units column: 3 − 6 isn't possible, so the top tens change from 1 to 0 and we have 13 − 6 = 7 in the units. The tens column is now 0 − 5, which we can't do, we borrow 1 from the top hundreds, which is ★, the tens answer becomes 10 − 5 = 5. On to the hundreds column, remembering we need to end up calculating 11 − 3 = 8, but that we borrowed 1 for our tens, means that ★ = 1+1 = 2. (The 1 has to be borrowed from the 7 in the thousands column)",
@@ -61,7 +61,7 @@
     {
       "questionId": 102181,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8a8eb19a-fa01-490c-a045-c31bd46e127e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you've forgotten to change your 10's column when you borrowed for the units",
         "B": "You appear to have aligned your numbers incorrectly. Remember you should have units above units first, then tens above tens, hundreds above hundreds, etc.",
@@ -85,7 +85,7 @@
     {
       "questionId": 102182,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/262a8668-f322-4472-99e8-5a1d3ab9075e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You appear to have subtracted here. We are calculating how many people, in total, attended games. This means we are adding the two values together.",
         "B": "You appear to have forgotten to add the carried values in your hundreds column.",
@@ -97,7 +97,7 @@
     {
       "questionId": 102192,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/191cd07a-1fe6-4c1f-8ddd-4b0d00cce9e8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You appear to have subtracted here. We are calculating how many people, in total, attended games. This means we are adding the two values together.",
         "B": "You seem to have forgotten to carry from the 2+7+1 calculation in the tens column.",
@@ -109,7 +109,7 @@
     {
       "questionId": 102183,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f6b2bfeb-78dd-42b9-b81c-7165d040aa92.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You've added the values, because Colm gives some money away, this question needs a subtraction.",
         "B": "Colm has given money away, which means we need to subtract the value he gave away.We need to calculate 55,750 – 25,250. The calculation doesn't require any borrowing, and gives an answer of 30,500.",
@@ -121,7 +121,7 @@
     {
       "questionId": 102193,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6b1872df-9b53-4cc0-a8d6-b1f9b741443a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you've added the two values. If Andy has to spend money, then we need to subtract that from the amount he earns.",
         "B": "It looks like you've done a combination of adding and subtracting here. Make sure you are subtracting the bottom number from the top number every time.",
@@ -133,7 +133,7 @@
     {
       "questionId": 102184,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3bf241ce-8eaf-402e-883e-92df23a8db29.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you have you've tried to subtract. Remember you need to do the number on the top row take away the number on the bottom. You will need to borrow to do some of these subtractions.",
         "B": "You seem to have added the values together, rather than finding the difference between them.",
@@ -145,7 +145,7 @@
     {
       "questionId": 102194,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cdd7ca99-35df-4ce8-9cdc-3785cf7f3b36.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you have you've tried to subtract. Remember you need to do the number on the top row take away the number on the bottom. You will need to borrow to do some of these subtractions.",
         "B": "It sometimes helps to consider a similar calculation with smaller numbers, eg., 10 – ★ = 8; we know that ★ = 2 and this is because 10 – 2 = 8. Therefore, working out 45,872 – 27,415 will give us the missing answer. Putting the 27,415 below the 45,872, taking care to line up the units, tens, hundreds, etc. and regroup or borrow as needed, gives an answer of 18,457.",

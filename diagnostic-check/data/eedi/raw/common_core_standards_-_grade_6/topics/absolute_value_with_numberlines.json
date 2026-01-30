@@ -73,7 +73,7 @@
     {
       "questionId": 166197,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/087a4287-7ea3-4d20-8f77-27128351c547.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've correctly recognised that the 'absolute value' of −15, means 'how far away from 0 is −15?' And I think you've correctly counted the number of jumps along the numberline, but notice that the value of each jump along the numberline is not equal to 1.",
         "B": "You're correct that we are looking at the point −15, but we want to know the number of jumps (spaces) between 0 and −15. Because we're counting the number of jumps, the answer will not be negative.",
@@ -109,7 +109,7 @@
     {
       "questionId": 166425,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d991b2ba-6b4a-4926-9e47-702e98c47f99.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You've given the largest positive number but not the largest absolute value. Remember that the 'absolute value' of a number, means 'how far away from 0 is that number?'. So, we're looking for the number that is the greatest distance from 0.",
         "B": "The 'absolute value' of a number, means 'how far away from 0 is that number?'. You've given the point with the smallest absolute value. But, the question is asking for the point with the largest absolute value.",
@@ -121,7 +121,7 @@
     {
       "questionId": 166199,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/220d8770-b21f-4e0e-832a-2f65f73c4431.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The 'absolute value' of a number, means 'how far away from 0 is that number?'. Therefore, you're correct that the absolute value of −4 is 4. Is there another number that is also 4 jumps away from 0?",
         "B": "I think you've correctly recognised that the 'absolute value' of −3, means 'how far away from 0 is −3?' But, I think you've counted the number of dashes along the number line between 0 and −3. Instead, you need to count the number of jumps (spaces) between 0 and each labelled point.",

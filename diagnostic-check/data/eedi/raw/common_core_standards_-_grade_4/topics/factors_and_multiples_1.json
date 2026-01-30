@@ -37,7 +37,7 @@
     {
       "questionId": 89791,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2d418017-36a6-44df-a0d1-c62afe9113bc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! Take another look at the question. You are being asked to select a number that is NOT a factor of 12. 4 is a factor of 12 as it fits into 12 exactly 3 times.",
         "B": "Not quite! Take another look at the question. You are being asked to select a number that is NOT a factor of 12. 6 is a factor of 12 as it fits into 12 exactly 2 times.",
@@ -49,7 +49,7 @@
     {
       "questionId": 89778,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bf6ad4b5-ddb0-4eff-92db-97dae829fabb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! Remember a factor of a number is another number that divides into it exactly, leaving no remainder. Have you checked both Tom and Katie's numbers?",
         "B": "Not quite! Remember a factor of a number is another number that divides into it exactly, leaving no remainder. Have you checked both Tom and Katie's numbers?",
@@ -73,7 +73,7 @@
     {
       "questionId": 89779,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/95999e7a-f1c2-43c4-be5b-1b58b466a6ca.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! Take another look at the question. 1 cannot be the answer as 2, 4 and 8 are NOT factors of 1.",
         "B": "Factors of (or numbers that go into) 8 are 1, 2, 4, 8. These are also factors of Answers C and D, but these answers have additional factors, whereas 1, 2, 4, 8 are the only factors of 8.",
@@ -85,7 +85,7 @@
     {
       "questionId": 89793,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/085bd066-2e5a-4ad1-b741-bdff169940cd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Be careful! 3, 9, and 18 are all multiples of 3 but they are not all factors of 3. Remember a factor of a number is a number that will fit into it exactly so that there is no remainder.",
         "B": "Almost! 2 out of the 3 numbers listed are factors of 9 but one isn't. Remember a factor of a number is a number that will fit into it exactly so that there is no remainder.",
@@ -97,7 +97,7 @@
     {
       "questionId": 89812,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e9b30e48-fca8-4edf-8ce3-54abb044d55b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! The numbers shaded are all multiples of 2 but they are not the only multiples of 2 in the grid. Can you find the number where the ones shaded are the only multiples of that number?",
         "B": "The shaded numbers are 4, 8, 12, 16, 20... These go up in 4s so the grid shows the 4 times tables or multiples of 4.",
@@ -133,7 +133,7 @@
     {
       "questionId": 99584,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/61ad1b6d-6706-42cd-b50c-4a879a21872b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! Take another look at the question. You are being asked to select a number that is NOT a multiple of 21, 189 is a multiple of 21 as 21 ✕ 9 = 189.",
         "B": "Not quite! Take another look at the question. You are being asked to select a number that is NOT a multiple of 21, 84 is a multiple of 21 as 21 ✕ 4 = 84.",

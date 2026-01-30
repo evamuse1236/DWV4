@@ -55,7 +55,7 @@
     {
       "questionId": 133724,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f30ee170-9112-4e37-a0a9-db1f1a911cf8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, I think you are going from Q to P. This question wants you to go from P to Q.",
         "B": "Not quite, I think you are counting the square you are starting on as 'one.' The point where you start at is zero.",
@@ -67,7 +67,7 @@
     {
       "questionId": 131532,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/046c676e-277d-47f9-892c-48e11bfe0234.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, I think you might have got mixed up with your vector. Remember, the top number in the vector tells you the movement from left to right. The bottom number tells you up or down.",
         "B": "The 4 in the top part of the vector tells us we must move 4 squares right. The 2 on the bottom half tells us to move 2 squares up.",
@@ -91,7 +91,7 @@
     {
       "questionId": 131533,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f837d35c-34c8-414e-adc8-6c18e053ab71.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, I think you might have got mixed up with your vector. Remember, the top number in the vector tells you the movement from left to right. The bottom number tells you up or down.",
         "B": "Nearly! Check the bottom number on your vector. This 2 tells us to move 2 up. Would this be correct to go from P to Q?",
@@ -115,7 +115,7 @@
     {
       "questionId": 131534,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1fc6063b-e6f7-45fd-8068-9a5833cff2b3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, remember, the bottom part of a vector tells us the movement up or down. In the question, it says we need to move 'five down.'",
         "B": "Not quite, remember, the bottom part of a vector tells us the movement up or down. In the question, it says we need to move 'five down.'",
@@ -151,7 +151,7 @@
     {
       "questionId": 133728,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/befa99c0-b124-4a63-b6bb-f88eb60de251.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Nearly, I think you have multiplied the top and bottom parts of the two vectors, instead of adding.",
         "B": "Nearly, I think you have multiplied the top parts of the two vectors, instead of adding.",

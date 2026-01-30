@@ -25,7 +25,7 @@
     {
       "questionId": 77191,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ed420a83-8d0a-47b5-aa43-987ff6d8b90b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have forgotten to halve the area for each triangle. The area of a triangle is base x perpendicular height divided by 2",
         "B": "I think you have forgotten to divide by two at the end of finding the area of the triangle. You have also used units for volume rather than area.",
@@ -49,7 +49,7 @@
     {
       "questionId": 110184,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c03b38fd-09c7-4749-93e4-076622563723.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have multiplied all the lengths together. Remember the area of a triangle is base x perpendicular height divided by 2",
         "B": "The area of a triangle = ½ × base × perpendicular height = ½ × 10 × 4.9 = (10 × 4.9)/2",
@@ -85,7 +85,7 @@
     {
       "questionId": 110195,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4229d920-e088-4c43-82c2-4acd84ead53b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have multiplied the base width by the sloped height of the pyramid.",
         "B": "The area of the square base of the pyramid is 8 x 8 = 64",
@@ -97,7 +97,7 @@
     {
       "questionId": 110186,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0fa66d00-e5f1-4bc1-b514-4bc3eb790c03.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have only calculated for three triangular faces. A square-based pyramid has four triangular faces.",
         "B": "I think you have only used one of the triangular faces. There are four triangular faces.",
@@ -109,7 +109,7 @@
     {
       "questionId": 110196,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db5d3ef8-3d5a-454c-876c-d5e03ab3eef9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have only calculated for three triangular faces. A square-based pyramid has four triangular faces.",
         "B": "The surface area comprises the area of the base plus the area of 4 identical triangular faces, which is 4 x 17.9 + 64",
@@ -133,7 +133,7 @@
     {
       "questionId": 135845,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a52feefe-4920-4193-bea1-17ad88eb9df1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "To calculate the area of one of these triangular faces, we first need to know the perpendicular height of the triangle. Use Pythagoras' theorem to do this. Also, remember that you are calculating the total surface area.",
         "B": "To calculate the area of one of these triangular faces, we first need to know the perpendicular height of the triangle. Use Pythagoras' theorem to do this. Also, remember that you are calculating the total surface area.",

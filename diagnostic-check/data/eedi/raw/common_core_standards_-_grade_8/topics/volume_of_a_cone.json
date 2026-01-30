@@ -25,7 +25,7 @@
     {
       "questionId": 154947,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ba9d52c3-9fa8-46ff-baa6-c2c1fc9765c7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This formula tells us to multiply πr² by the height of the cylinder. This will give us the volume of the cylinder. Which formula is not equivalent to this?",
         "B": "This formula tells us to multiply πr² by the height of the cylinder. This will give us the volume of the cylinder. Which formula is not equivalent to this?",
@@ -37,7 +37,7 @@
     {
       "questionId": 154952,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a7ae020b-2756-470a-ba47-01d092ab40af.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This formula tells us to multiply the base area by the length of the cylinder. This will give us the volume of the cylinder. Which formula is not equivalent to this?",
         "B": "To find the volume of a cylinder we need to multiply the base area by the length. We do not then need to multiply it by the radius. We will use the radius when calculating the base area (πr²)",
@@ -61,7 +61,7 @@
     {
       "questionId": 154953,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/727ab82e-096f-4680-8538-015f430c29eb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You've worked out the volume, but the question asked you to leave it in terms of π. Can you work out what it would be before you multiplied by π at the end?",
         "B": "I think you have tried to add the height and the base area. To work out the volume of a cylinder we need to multiply the base area by the height. What will this give us?",
@@ -73,7 +73,7 @@
     {
       "questionId": 154949,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a3fdc429-32e1-4640-b562-9d95c98bac23.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. A cone takes up 1/3 of the volume of its containing cylinder so we'll first need to calculate the volume of the cylinder by multiplying its base area by its height. How do we find the area of the circle at the base of the cylinder?",
         "B": "This would give us the volume of the cylinder. What proportion of the cylinder's volume is taken up by the cone?",
@@ -85,7 +85,7 @@
     {
       "questionId": 154954,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dedde97a-7926-4cc2-910f-ae7b0c1e2c4e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! I think you realise that the cone's volume is proportional to the cylinder's, but it does not take up half the space of the cylinder.",
         "B": "A cone's volume is 1/3 that of its containing cylinder. So we can find the volume of the cylinder by multiplying the base area (πr²) by the height (h) to get πr²h and then divide that by 3 to get the volume of the cone, (πr²h)/3",
@@ -97,7 +97,7 @@
     {
       "questionId": 154950,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cd488dcf-b402-415b-9812-6159be840a51.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Nearly! You have calculated the volume as if it was a cylinder. What proportion of a cylinder's volume does a cone take up?",
         "B": "Not quite! I think you calculated the volume of the containing cylinder correctly, but then divided by 2. What proportion of a cylinder's volume does a cone take up?",
@@ -109,7 +109,7 @@
     {
       "questionId": 154955,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8a0b4a8a-f8eb-4960-86f5-738d68afb2f5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Nearly! You have calculated the volume as if it was a cylinder. What proportion of a cylinder's volume does a cone take up?",
         "B": "To find the volume of a cone we multiply its base area by its height and then divide by 3. This gives us 144π/3 which simplifieis to 48π",
@@ -121,7 +121,7 @@
     {
       "questionId": 154951,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4216c160-2063-49a6-828f-eb1a5ffd5a6a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Nearly! You have calculated the volume as if it was a cylinder. What proportion of a cylinder's volume does a cone take up?",
         "B": "To find the volume of a cone we multiply its base area (π x 3.5²) by its height (15) and then divide by 3. This gives us 577.2.../3 which is 192.4 cm³ (1dp)",
@@ -133,7 +133,7 @@
     {
       "questionId": 154956,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/35e3eba1-3958-4865-8d02-05d7ac65eb82.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Make sure you've used the formula for the area of a circle (πr²) rather than the circumference, and remember we need to divide by 3 once we've found the volume of the containing cylinder",
         "B": "You've got most of the method correct, but I think you used the formula for circumference (2πr) instead of area (πr²) right at the beginning.",

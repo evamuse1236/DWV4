@@ -43,7 +43,7 @@
     {
       "questionId": 89453,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b31740f8-7632-4d23-bd00-93e41a960f39.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you have ignored the fraction and instead worked out 3 x -6. Try writing the -6 as a fraction and have another go.",
         "B": "It looks like you have tried to multiply both the numerator and the denominator by -6. It may help to write the number -6 as a fraction. We can write -6 as -6/1.",
@@ -91,7 +91,7 @@
     {
       "questionId": 89551,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/01f91421-936e-4622-b055-e982f8304ed9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you have worked out -12 subtract -4. Here we want to divide 12 by -4. First think about 12 divided by 4 and then consider what effect the negative sign will have.",
         "B": "It looks like you have worked out 12 subtract -4. Here we want to divide 12 by -4. First think about 12 divided by 4 and then consider what effect the negative sign will have.",
@@ -103,7 +103,7 @@
     {
       "questionId": 89568,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e1a8febb-d811-4a64-ba62-76a89a59df2c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you have correctly worked out 21 divided by 3, but we now need to consider what effect the negative sign will have on our answer.",
         "B": "The calculation 21 ÷ (−3) is the same as (＋21) ÷ (−3), so we have unlike signs, meaning the answer will be negative, so −7. If you have worked with negative counters before then remember when we divide by a negative we \"flip\" those positive counters over to become negative.",
@@ -115,7 +115,7 @@
     {
       "questionId": 89552,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e8457bc3-7358-4e6c-90c2-fde4ac886af6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you may have struggled to divide by 1/4. Remember that we can change division to multiplication if we take the reciprocal of the divisor. Can you remember what the reciprocal of 1/4 is?",
         "B": "It looks like you may have struggled to divide by -1/4. Remember that we can change division to multiplication if we take the reciprocal of the divisor. Also consider what happens when we divide by a negative.",

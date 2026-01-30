@@ -49,7 +49,7 @@
     {
       "questionId": 78454,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b030c58d-0090-42db-9f77-2537a340d96b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, check your working. It looks like you may have switched the x and the y variables.",
         "B": "Adding the two equations together, to eliminate the y term, we get 7x = 21. Dividing both sides by 7 gives x = 3. Substituting this value of x into the top equation gives 4(3) + y = 13. Subtracting 12 from both sides gives y = 1. Therefore x = 3 and y = 1.",
@@ -61,7 +61,7 @@
     {
       "questionId": 106888,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/77329d42-b7f9-4705-a76f-ddb0b2d0e50b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, -3𝘩 + -3𝘩 = -6𝘩 BUT we are being asked to do 3𝘩 + -3𝘩. Remember adding a negative is the same as subtracting.",
         "B": "Looking at the 𝑔s first, as Isaac is adding, we have 2𝑔 + 5𝑔 = 7𝑔. Now the h terms give +3𝘩 +(−3𝘩) = 0𝘩 = 0, and the number-only element gives 12 + (−3) = 9. Putting these together gives 7𝑔 = 9.",
@@ -73,7 +73,7 @@
     {
       "questionId": 106899,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7b3bcee2-443f-4129-9283-8585792676ed.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, check the right hand side of your equation. Have you taken account of the negative 2?",
         "B": "Not quite. Take care when dealing with the negatives. If we have -6g and we add g what will we have now?",
@@ -85,7 +85,7 @@
     {
       "questionId": 106889,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f5308aee-b41e-43d4-b802-2d206274e94c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, be careful with the negatives. Remember subtracting a negative is the same as adding.",
         "B": "Not quite, 𝘩 + -3𝘩 = -2𝘩 BUT we are being asked to do 𝘩 - -3𝘩. Remember subtracting a negative is the same as adding.",
@@ -97,7 +97,7 @@
     {
       "questionId": 106900,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0389baff-ff82-4b56-ada6-01a43324146e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, make sure you are subtracting the bottom equation from the top equation. This means you need to do 4g - 6g NOT 6g - 4g.",
         "B": "Not quite, make sure you are subtracting the bottom equation from the top equation.",
@@ -109,7 +109,7 @@
     {
       "questionId": 106890,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eba01832-a24f-4a77-a9d6-92338b9685bd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've solved as if 2j = 8, but the question tells us j = 8. Try doing your calculation again :)",
         "B": "Substituting the value of 8 into the equation in place of 𝑗, we have 2 × 8 + 𝑘 = 10, which is 16 + 𝑘 = 10. Subtracting 16 from both sides gives 𝑘 = 10 − 16 = −6",
@@ -121,7 +121,7 @@
     {
       "questionId": 106901,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/009c64ea-bf1e-492d-a263-92b97fa47b94.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! I think you've solved as if 3j = 2, but we're told that j = 2. Try doing your calculation again :)",
         "B": "It looks like you've used 3j = 32, but remember that 3j means 3 x j, so we need to multiply and then we can solve the equation",
@@ -133,7 +133,7 @@
     {
       "questionId": 106891,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5bcf981f-cfe4-4802-b0c5-d86b6cddaf3d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost! You've got part of your working out correct, but be really careful when you do the final steps! :)",
         "B": "It looks like you've added 8 onto 10. Be careful though, the right hand side is -10, not positive 10. Take care at this point and you'll find the correct answer :)",
@@ -145,7 +145,7 @@
     {
       "questionId": 106902,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a58c0f35-d6bd-4de9-a1b0-e1d7c69ddfab.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've added 6 onto -12, however we have positive 6 already. To remove it, we need to subtract 6. Taking care at this point will help you find the correct answer :)",
         "B": "Substituting the value of 2 into the equation in place of 𝑗, we have 3 × 2 − 2𝑘 = −12, which gives 6 − 2𝑘 = −12. Adding 2𝑘 to both sides gives 6 = −12 + 2𝑘 and then adding 12 to both sides gives 18 = 2𝑘, giving a value of 𝑘 = 9.",

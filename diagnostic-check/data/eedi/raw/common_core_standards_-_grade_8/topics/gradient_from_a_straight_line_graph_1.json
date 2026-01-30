@@ -43,7 +43,7 @@
     {
       "questionId": 107180,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/63f2f8f0-6bb1-4da5-84a2-b23946710614.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. This line crosses the y axis at 1, but that is not the gradient. To find the gradient, we calculate the change in y, over the change in x.",
         "B": "Not quite! This line is trending upwards, so must have a positive gradient.",
@@ -67,7 +67,7 @@
     {
       "questionId": 107181,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c7e682ad-8e4b-4123-9673-9f45e7077873.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may be confusing the gradient with y-intercept or x-intercept. This line crosses the x and y axis at 3, but to find the gradient, we calculate the change in y, over the change in x.",
         "B": "Look carefully at the relationship between x and y. As x increases, y decreases, so this line shows a negative gradient.",
@@ -91,7 +91,7 @@
     {
       "questionId": 107182,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4169de74-250a-4b51-bd0e-29d29ed32482.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. To calculate the gradient of the line, we need to find the change in 𝑦 divided by the change in 𝑥. To do this we can use two points on the line and calculate the difference between their y coordinates and their x coordinates.",
         "B": "The gradient of the line is the change in 𝑦 divided by the change in 𝑥. Using the points (0,-2) and (6,0) as these lie on the line, we have (0 – (−2))/(6 − 0) = 2/6 = ⅓",
@@ -103,7 +103,7 @@
     {
       "questionId": 107173,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/34bab173-46dd-47d5-b68d-28a8ad37cc98.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You may have found 0 from where the line crosses the axis. To calculate the gradient of the line, we need to find the change in 𝑦 divided by the change in 𝑥. To do this we can use two points on the line and calculate the difference between their y coordinates and their x coordinates.",
         "B": "Not quite. To calculate the gradient of the line, we need to find the change in 𝑦 divided by the change in 𝑥. To do this we can use two points on the line and calculate the difference between their y coordinates and their x coordinates.",
@@ -115,7 +115,7 @@
     {
       "questionId": 107183,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e6c7e43a-be20-499d-93c2-6ddd5486dea2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You may have found 0 from where the line crosses the axis. To calculate the gradient of the line, we need to find the change in 𝑦 divided by the change in 𝑥. To do this we can use two points on the line and calculate the difference between their y coordinates and their x coordinates.",
         "B": "The gradient of a line is the coefficient (number in front) of x, not including x itself. To calculate the gradient of the line, we need to find the change in 𝑦 divided by the change in 𝑥.",
@@ -139,7 +139,7 @@
     {
       "questionId": 107184,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/923336eb-1be8-4d50-ad9a-4091984a65d8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, I think you have found the y intercept. The gradient of the line is the change in 𝑦 divided by the change in 𝑥. Choose two points on the line, what is the difference between the y coordinates? What happens when we divide this number?",
         "B": "Not quite. The gradient of the line is the change in 𝑦 divided by the change in 𝑥. Choose two points on the line, what is the difference between the y coordinates? What happens when we divide this number?",

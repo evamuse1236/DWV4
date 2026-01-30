@@ -43,7 +43,7 @@
     {
       "questionId": 91623,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/63e568e9-986c-47e0-bdf1-249a2f400a64.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "We are told that n = 1.5. Substituting this into the left-hand side: 5n = 5 ✕ 1.5 = 7.5. Now substituting this into the right-hand side: n ＋ 5 = 1.5 ＋ 5 = 6.5. The inequality sign points to the smaller value, and so 7.5 > 6.5.",
         "B": "Just be careful with your substitution. Remember that 5n means 5 x n.",
@@ -55,7 +55,7 @@
     {
       "questionId": 91639,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7d701ae3-6b23-4aa2-a18a-867ff73c3345.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Just be careful with your substitution. Remember that 3n means 3 x n.",
         "B": "We are told that n = 2.5. Substituting this into the left-hand side: 3n = 3 ✕ 2.5 = 7.5. Now substituting this into the right-hand side: 4n − 2 = 10 − 2 = 8. The inequality sign points to the smaller value, and so 7.5 < 8.",
@@ -67,7 +67,7 @@
     {
       "questionId": 91624,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2d45e06b-1bc9-4ec4-bff2-3ce4ec887197.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Just be careful with your substitution. Remember that 5n means 5 x n.",
         "B": "We are told that n = −1. Substituting this into the left-hand side: 5n = 5 ✕ −1 = −5. Now substituting this into the right-hand side: n ＋ 5 = −1 ＋ 5 = 4. The inequality sign points to the smaller value, and so −5 < 4.",
@@ -79,7 +79,7 @@
     {
       "questionId": 91640,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/18e7bdfc-babb-4734-80d7-8ec0bc7c9a43.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Just be careful with your substitution. Remember that 3n means 3 x n.",
         "B": "Just be careful with your substitution. Remember that 3n means 3 x n.",
@@ -91,7 +91,7 @@
     {
       "questionId": 105027,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e6ade8ff-953e-43bd-bcaa-0fe4af22d666.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you added the 1.8 and 7 rather than multiplying them. Remember 1.8C means 1.8 x C",
         "B": "I think you put the 1.8 and 7 together rather than multiplying them. Remember 1.8C means 1.8 x C",
@@ -115,7 +115,7 @@
     {
       "questionId": 105028,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b4da9336-baca-4026-baa6-26f7362a8c00.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have multiplied by 2 rather than squaring. When we square we have to multiply the number by itself",
         "B": "Almost, just remember 2as means 2 x a x s, we don't just put the numbers next to each other.",
@@ -139,7 +139,7 @@
     {
       "questionId": 105029,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f466b070-3470-42bf-b29e-a3f9d7139cbb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You are really close. Remember the t at the end means you are multiplying by t, not adding.",
         "B": "Almost. The t is on the outside of the bracket so we don't half that as well.",
@@ -151,7 +151,7 @@
     {
       "questionId": 105033,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cded03bd-4f38-435b-850f-39e93ac8b864.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, I think you have added the 1/𝑎 value instead of multiplying.",
         "B": "Almost, but remember it is 1/a not just a that we are multiplying by.",

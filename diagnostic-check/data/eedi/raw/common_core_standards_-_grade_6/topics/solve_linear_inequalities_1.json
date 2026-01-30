@@ -37,7 +37,7 @@
     {
       "questionId": 78481,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea77ad27-9673-40ae-96f7-acb7ee4b9f3d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Remember it is ok to have decimal values in an inequalities question, unless you are asked to provide an integer (whole number) solution.",
         "B": "You have correctly divided both sides by 2, but you now have an equals sign in your answer. What should replace the equals sign?",
@@ -49,7 +49,7 @@
     {
       "questionId": 78188,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/45c5384f-4c19-407c-b67f-635a15b7cc64.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you added 3 to get 2𝑥 ≤ 8 and then found 𝑥 ≤ 4. What do we need to do instead to \"get rid of\" the +3?",
         "B": "I think you have solved the inequality as if it were an equation. Remember we need to keep our inequality symbol in our workings and solution.",
@@ -61,7 +61,7 @@
     {
       "questionId": 78482,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d7d7cc61-14e6-4d08-a3e1-6e868449cf3d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have represented 𝑥 ≤ 5 but the question was 2𝑥 + 1 ≤ 5. First we need to solve this inequality to get 𝑥 on its own.",
         "B": "I think you have solved the inequality as if it were an equation. Remember we need to keep our inequality symbol in our workings and solution.",
@@ -73,7 +73,7 @@
     {
       "questionId": 106905,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5bd39f90-4ff0-4e5c-86e0-526080cac32d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Make sure you are reading the inequality as \"4m is less than or equal to 15\". Now try to simplify this and see if Tom or Katie's values work.",
         "B": "To solve this, make 𝑚 the subject by dividing both sides by 4 to give 3.75 ≥ 𝑚. Notice that the inequality is still ‘pointing to’ 𝑚 and that this indicates that m is less than or equal to 3.75, which means that only Katie is correct.",
@@ -97,7 +97,7 @@
     {
       "questionId": 106906,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c988af29-eb0d-4f68-b5a1-fb6fdb6ff811.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. When we substitute t = –0.9 on the left-hand side, what do we get? Does that fit the inequality?",
         "B": "Not quite. When we substitute t = 0 on the left-hand side, what do we get? Does that fit the inequality?",
@@ -109,7 +109,7 @@
     {
       "questionId": 106915,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9d5f4c7e-a4fe-4929-86f4-30410c3e5c17.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. When we substitute t = -3.4 on the left-hand side, what do we get? Does that fit the inequality?",
         "B": "To solve this, subtract 3 from both sides to give 𝑡 > –3.3. Picture this solution on a number line: a hollow dot at –3.3 to indicate that this value is not included and a line to the right, through to the positive values. The value of –3.4 is to the left and not included, whereas 3.4 is a possible value for 𝑡.",
@@ -121,7 +121,7 @@
     {
       "questionId": 106907,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dea67c52-4b79-4be1-8d14-8633318e55a8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you might have made an error with your negative numbers. What is -3 add 1? Imagine moving back up the number line.",
         "B": "I think you might have made an error with your negative numbers. What is -3 add 1? Imagine moving back up the number line. Also think carefully about the direction of your inequality symbol",

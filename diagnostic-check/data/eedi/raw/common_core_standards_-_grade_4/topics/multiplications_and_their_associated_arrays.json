@@ -19,7 +19,7 @@
     {
       "questionId": 158077,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/94a07cf4-25df-426d-94f7-0bf101761e1d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The 11 is spot on! You have forgotten to include the top circle when counting how many there are in the column...",
         "B": "You have forgotten to include the top left circle in both your column and row counting...",
@@ -43,7 +43,7 @@
     {
       "questionId": 158078,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9e34d74c-fde5-4d1b-9144-b42524405c3e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This array does represent 13 x 8 but can it also represent another calculation too?",
         "B": "This array does represent 8 x 13 but can it also represent another calculation too?",
@@ -55,7 +55,7 @@
     {
       "questionId": 158245,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e507fb32-e3d8-4551-aa6b-1181fa59d10e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The 6 is spot on! You have forgotten to include the top circle when counting how many there are in the column...",
         "B": "This array does represent 7 x 6 but can it also represent another calculation too?",
@@ -67,7 +67,7 @@
     {
       "questionId": 158079,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a586d857-1d8e-45ce-9388-b8f6559e880d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have forgotten to include the top row and the first column. To find the correct equation, you need to count EVERY circle!",
         "B": "To find out the equation we count the number of circles in a row: 11, in a column: 6 and the total: 66 therefore the equation associated with Eve's array is 11 x 6 = 66",
@@ -79,7 +79,7 @@
     {
       "questionId": 158246,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/96cf3559-2737-4274-860f-721776ebfa5b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The 4 is spot on! However, you have forgotten to include the furthest left circle when counting how many there are in the row...",
         "B": "The 10 is spot on! However, you have forgotten to include the top circle when counting how many there are in a column...",
@@ -115,7 +115,7 @@
     {
       "questionId": 158081,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b062a9bb-639d-4e9e-b639-cda1bb89ccb3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have done 8 - 6 = 2 but you need to think about how many lots of 12 less is Katie's array...",
         "B": "To find out how many more dots are in Tom's array think about how many lots of 12 less are in Katie's...",
@@ -127,7 +127,7 @@
     {
       "questionId": 158248,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b65225a9-ea01-4cbe-93d6-e5f3303e79e6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "To find out how many more dots are in Tom's array think about how many lots of 9 less are in Katie's...",
         "B": "Tom's array is 9 x 6 and Katie's is 9 x 9 therefore the difference in the dots is 9 x 3 = 27",

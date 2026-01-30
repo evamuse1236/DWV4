@@ -37,7 +37,7 @@
     {
       "questionId": 166190,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/52e7b1d9-830c-4283-a017-0ff8ed01fc71.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite - distance can't be a negative value, even when it is a negative number.",
         "B": "It seems like you might have added the positive and negative version together, but remember we are counting how far away it is from 0!",
@@ -49,7 +49,7 @@
     {
       "questionId": 166417,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a62b375a-9871-4f5a-9969-72395f44f704.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It seems like you might have added the positive and negative version together, but remember we are counting how far away it is from 0!",
         "B": "-20 is 20 numbers back from 0, so the distance would be 20.",
@@ -73,7 +73,7 @@
     {
       "questionId": 166418,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a0ac8553-3190-4303-9389-8553d6992220.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It seems like you might have just given the negative version of the number, but remember we are counting how far away it is from 0!",
         "B": "It seems like you might have added the positive and negative version together, but remember we are counting how far away it is from 0!",
@@ -97,7 +97,7 @@
     {
       "questionId": 166419,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b7237945-ba3a-4906-8d09-9b1a929462df.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It seems like you might think that a number further away from 0 means it is bigger, however we are thinking about which number is greater and for negative numbers they are greater the closer they get to 0.",
         "B": "For negative numbers, the closer it is to 0, the greater it is. These two numbers definitely aren't equal to each other as they don't have the same digits!",
@@ -109,7 +109,7 @@
     {
       "questionId": 166193,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/97ee3a50-aa6d-42d9-949c-295be56d1216.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Remember that |x| notation means absolute value, so here we are comparing which one is further from 0.",
         "B": "I think you may have misread what numbers we are comparing here!",
@@ -133,7 +133,7 @@
     {
       "questionId": 166194,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1c7c8e95-75a9-43b1-a94b-233c38a54413.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember that |x| notation means absolute value, so here we are comparing how far away the numbers are from 0 rather than the numbers themselves.",
         "B": "Both 42 and -42 have an absolute value of 42 away from 0. This means their absolute values are both equal!",
@@ -145,7 +145,7 @@
     {
       "questionId": 166421,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/20b92ada-98ed-4384-b84a-a3e27330caa2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Remember that |x| notation means absolute value, so here we are comparing how far away the numbers are from 0 rather than the numbers themselves.",
         "B": "Remember that |x| notation means absolute value, so here we are comparing how far away the numbers are from 0.",

@@ -43,7 +43,7 @@
     {
       "questionId": 79626,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2783a1c2-a6f7-4dd7-a091-6ec95a6da1e5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. You've used the wrong step size. There are 10 small steps between 20 and 30. So how much does each step represent?",
         "B": "There are 10 small steps between 20 and 30. So each step represents 1 mm. The arrow is 3 steps up from 20 and so we have 20 + 3 = 23 mm.",
@@ -55,7 +55,7 @@
     {
       "questionId": 124604,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0f4b4e12-b345-4972-ace7-e12c0079686f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. This value cannot be 26 because it is between 10 mm and 20 mm. Try counting up from 10 instead.",
         "B": "The numbers on this ruler are in mm not cm. This value cannot be 140 because it is between 10 mm and 20 mm.",
@@ -67,7 +67,7 @@
     {
       "questionId": 79628,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/247b9fa8-7fb7-40f2-a2c8-0f2bd58c13ba.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Volumes are measured in cube units such as metres cubed.",
         "B": "Square metres is a measure of area.",
@@ -79,7 +79,7 @@
     {
       "questionId": 124605,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8ad01f67-fc78-4c70-8fbd-988335c36d01.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Lengths are not measured in square units. This would be measured in centimetres.",
         "B": "Not quite.The perimeter is a length. Lengths are not measured in square units. This would be measured in centimetres.",
@@ -127,7 +127,7 @@
     {
       "questionId": 124607,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/472a622d-f237-4fe8-895c-29eba232df02.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have divided 6.3 by 2.2 to get a number close to 3. Instead, use multiplication to first work out how many pounds are in 1 stone.",
         "B": "This is the fraction of 1 kilogram that is 1 pound. We need the fraction of 1 stone.",
@@ -151,7 +151,7 @@
     {
       "questionId": 124608,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a10aebbe-8335-47f3-a890-864e3de7b911.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have forgotten to convert to feet before converting to inches.",
         "B": "This is the number of inches in 1 mile. We need the number of inches in 4 miles.",

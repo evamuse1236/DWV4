@@ -37,7 +37,7 @@
     {
       "questionId": 166505,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f1eff143-f278-4db4-9649-1db879004076.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've used the method for the decimal 0.𝑥𝑦𝑥𝑦𝑥𝑦... But, for 0.𝑥𝑦𝑦𝑦..., you need to first work out 10 ✕ 0.𝑥𝑦𝑦𝑦... and 100 ✕ 0.𝑥𝑦𝑦𝑦... Then you can use these to work out an expression for 90 ✕ 0.𝑥𝑦𝑦𝑦... as the next stage.",
         "B": "Not quite, first you need to work out 10 ✕ 0.𝑥𝑦𝑦𝑦... and 100 ✕ 0.𝑥𝑦𝑦𝑦... Then you can use these to work out an expression for 90 ✕ 0.𝑥𝑦𝑦𝑦... as the next stage.",
@@ -49,7 +49,7 @@
     {
       "questionId": 166279,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/801bc109-a355-4107-8636-1d1a24472d11.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Note that the line is only above the second digit, 1, not both digits. Also note that the line above the 1 means that the digit 1 repeats indefinitely, not just twice.",
         "B": "Nearly, but the line above the 1 means that the digit 1 repeats indefinitely, not just twice. Which answer represents that the digit 1 repeats indefinitely?",
@@ -73,7 +73,7 @@
     {
       "questionId": 166280,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3121f140-8667-4c30-bac6-9a982aa4983f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This would be correct if the line was above both digits, but it is only above the second digit, 1.",
         "B": "Nearly, but after calculating 10 ✕ 0.4111... and 100 ✕ 0.4111... when you then subtract one equation from the other, ensure you carry out the subtraction on both sides of the equals sign.",
@@ -97,7 +97,7 @@
     {
       "questionId": 166281,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/597644a2-1f53-4730-84c2-4217dd9e899a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This would be correct if the decimal was 0.25. But, that line above the digit 5 means that the digit 5 repeats indefinitely. Remember that you'll need to start by calculating 10 ✕ 0.2555... and 100 ✕ 0.2555... Then you can use these to work out an expression for 90 ✕ 0.2555... as the next stage.",
         "B": "10 ✕ 0.2555... = 2.555... and 100 ✕ 0.2555... = 25.555... Subtracting one equation from the other, we get 90 ✕ 0.2555... = 25.555... − 2.555... = 23. Therefore, 0.2555... = 23/90. And that is its simplest form.",
@@ -121,7 +121,7 @@
     {
       "questionId": 166282,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a3e9eba3-ee82-4580-9725-fc66a0d0b0cf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is a correct answer, but it is not in its lowest terms. What common factors do 15 and 90 have?",
         "B": "I think you've used the digits after the decimal point as the denominator, but this isn't how we convert a decimal to a fraction. To convert a recurring decimal, like this, to a fraction, remember that you'll need to start by calculating 10 ✕ 0.1666... and 100 ✕ 0.1666... Then you can use these to work out an expression for 90 ✕ 0.1666... as the next stage.",
@@ -133,7 +133,7 @@
     {
       "questionId": 166509,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5fe03272-3c4f-4ffb-90a0-cd627ace5f13.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This would be correct if the decimal was 0.62. But, that line above the digit 2 means that the digit 2 repeats indefinitely. Remember that you'll need to start by calculating 10 ✕ 0.6222... and 100 ✕ 0.6222... Then you can use these to work out an expression for 90 ✕ 0.6222... as the next stage.",
         "B": "This is a correct answer, but it is not in its lowest terms. What common factors do 56 and 90 have?",

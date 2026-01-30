@@ -85,7 +85,7 @@
     {
       "questionId": 77630,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bc632ad0-f7b7-4fb7-9eef-267ee09dfd9f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have tried to find the median. To find the mean we add the numbers and divide by how many there are",
         "B": "Adding the numbers together gives 42, and then dividing by 6 gives 7.",
@@ -109,7 +109,7 @@
     {
       "questionId": 77632,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8b5a86c2-d763-4645-a069-1c7350ceb2de.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The number doesn't need to be half way between 5 and 9. To get the mean we add the numbers and divide by 4. What must that number be?",
         "B": "That is the total we would need for the mean to be 6. What is that missing number?",
@@ -121,7 +121,7 @@
     {
       "questionId": 79096,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cecb73d3-c4e7-42e3-adb7-03122059a338.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "That is the total of the 3 numbers. What would the total of the 4 numbers have to be so that the mean is 5? Then what would the missing number have to be?",
         "B": "If the mean is 5, the total is 5 × 4 = 20. The missing number is then 20 - 4 - 2 - 6 = 8.",
@@ -145,7 +145,7 @@
     {
       "questionId": 79097,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6744c85c-2489-4b8b-bb9a-21abe8f23c45.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have added the numbers together. We want to know what the missing number needs to be so that when we order the numbers, the middle is 6.",
         "B": "Not quite, this would give you a median of 5 when you ordered the numbers. We want to know what the missing number needs to be so that when we order the numbers, the middle is 6.",

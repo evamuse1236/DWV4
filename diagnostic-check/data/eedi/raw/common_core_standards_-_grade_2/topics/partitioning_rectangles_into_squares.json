@@ -19,7 +19,7 @@
     {
       "questionId": 165747,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/906a23c4-43aa-4692-a230-c26e83ee1355.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This has only been split into rows... Remember squares have equal sides!",
         "B": "This has only been split into columns... Remember squares have equal sides!",
@@ -31,7 +31,7 @@
     {
       "questionId": 165752,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d03a3212-5fa0-4687-9a94-9f1c0179e069.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This has been split in half... Remember squares have equal sides and 4 right angles!",
         "B": "This has been split into equal columns AND equal rows so is therefore, split into squares!",
@@ -55,7 +55,7 @@
     {
       "questionId": 165753,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9e9b7a81-cde0-4617-93c7-c1b0c909e410.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is the number of squares, the question wants the number of rows so, the number of horizontal sections...",
         "B": "You have accidentally counted the number of columns... Remember a row is a horizontal section!",
@@ -67,7 +67,7 @@
     {
       "questionId": 165749,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a1be9e1f-0250-48b9-a099-f999bb8d9031.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have accidentally counted the number of rows... Remember a column is a vertical section!",
         "B": "Columns are the vertical sections, counting across we have 1, 2, 3, 4, 5!",
@@ -79,7 +79,7 @@
     {
       "questionId": 165754,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/48cf131d-256b-43d5-b39e-3ab05685ac12.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have added the number of rows to the number of columns. Remember a column is a vertical section!",
         "B": "This is the number of squares, the question wants the number of columns so, the number of vertical sections...",
@@ -91,7 +91,7 @@
     {
       "questionId": 165750,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4129a65e-fc84-43b2-9137-30211f393c69.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have accidentally counted the number of rows... How many SQUARES are there?",
         "B": "You have accidentally counted the number of columns... How many SQUARES are there?",
@@ -115,7 +115,7 @@
     {
       "questionId": 165751,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a429ec4a-5789-4157-8a8b-cf7645d99929.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have confused columns and rows... Rows are horizontal sections and columns are vertical!",
         "B": "Looking at the diagram we can see there are 4 rows, the horizontal sections, 2 columns, the vertical sections, and therefore, 4 x 2 = 8, 8 squares. So, only Katie is correct!",

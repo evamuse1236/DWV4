@@ -55,7 +55,7 @@
     {
       "questionId": 95220,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b239e5b6-fc96-4d18-a811-cbbcc48ca4ab.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Remember you have to fill in the answer to all the multiplications, even if they are equal to 0.",
         "B": "Not quite. 7 x 80 is 560 BUT 20 x 80 is NOT 160. Remember a zero should be added into the working when we multiply by the tens digit in 27.",
@@ -67,7 +67,7 @@
     {
       "questionId": 95237,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e96fdc91-a3ab-4b63-bd89-d798c89a37cc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. This working is not correct as it has failed to carry over the ten from the calculation 6 x 2. It also incorrectly shows that the answer to 3 x 72 is 27.",
         "B": "Not quite. 6 x 72 is 432 BUT 30 x 72 is NOT 216. Remember a zero should be added into the working when we multiply by the tens digit in 36.",
@@ -91,7 +91,7 @@
     {
       "questionId": 95246,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bd8ade1e-5c4a-4e71-89b7-f0aaa8e13bba.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Recheck the place value of the circled digits. What does the 3 stand for in the number 3847? What does the 7 stand for in 78? What would you get if you multiplied these numbers together?",
         "B": "Not quite. Recheck the place value of the circled digits. What does the 3 stand for in the number 3847? What does the 7 stand for in 78? What would you get if you multiplied these numbers together?",
@@ -103,7 +103,7 @@
     {
       "questionId": 102201,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/486ed1d1-6653-449a-ae37-9f2d48a1372b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Look again. Are the digits with the same place value placed underneath each other?",
         "B": "Not quite. In long multiplication we do not partition the digits in a number i.e. we don't write 124 as 100 20 and 4, also make sure that the digits with the same place value are lined up together.",
@@ -115,7 +115,7 @@
     {
       "questionId": 102211,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a1152bae-9344-456e-a5d8-62db77a703a8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. In long multiplication we do not partition the digits in a number i.e. we don't write 426 as 400, 20 and 6, also make sure that the digits with the same place value are lined up together.",
         "B": "Look again. Are the digits with the same place value placed underneath each other?",
@@ -127,7 +127,7 @@
     {
       "questionId": 102202,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a527b33e-f275-4b16-bda3-a0023f87adf7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you may have thought this because 3 × 8 is 24. Before we multiply by the 8 we multiply by the 1 and this goes in the top row.",
         "B": "I think you may have tried to add the digits together but this question is a multiplication not an addition.",
@@ -139,7 +139,7 @@
     {
       "questionId": 102212,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d8f42c71-69d3-480a-a98f-1f1b1546370f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "So close! Just be careful with your place value. Remember you can't put two digits in a single column",
         "B": "I think you may have multiplied the 6 by 7, carried over the 4 tens and then tried to add the 2, 2 and 4 together. But remember we are multiplying, so once you have carried over the 4 tens you should multiply the 6 by the 2 and then add the 4 on.",

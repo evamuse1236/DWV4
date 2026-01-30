@@ -43,7 +43,7 @@
     {
       "questionId": 109776,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6d4da8f5-e3b0-4d77-9986-23b57a2a5a77.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost ... you've found the radius! What's the additional step needed to work out the diameter?",
         "B": "I think you have halved the radius, but which is the longer measurement, the diameter or radius?",
@@ -55,7 +55,7 @@
     {
       "questionId": 109786,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5e7c1cea-8455-4b07-be2e-9360714532b7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have halved the radius, but which is the longer measurement, the diameter or radius?",
         "B": "Area of a circle (𝐴) = 𝜋𝑟². In this question, we have been given the area, so substituting 𝐴 = 144 into the formula gives 144 = 𝜋𝑟². We need 𝑟 = something, so to ‘get rid’ of 𝜋, divide both sides by 𝜋 to give 144𝜋/𝜋 = 𝑟², so 𝑟² = 144. Now to undo the effect of squaring, we need to square root both sides: 𝑟 = √144 = 12 cm. The question asks for the diameter, and since 𝑑 = 2𝑟, we need to multiply by 2 for the diameter: 2 × 14 = 24 cm",
@@ -67,7 +67,7 @@
     {
       "questionId": 109777,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/221e16d4-62c9-463a-b9ba-524158647266.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you used the diameter in the formula. Try again using the measurement for the radius.",
         "B": "You've used the radius, but there's something extra you need to do to this measurement before multiplying by 𝜋.",
@@ -91,7 +91,7 @@
     {
       "questionId": 109778,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b17786d0-0f62-4d14-883e-e9d77e0dc2bd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Think about the formulae you know involving circles. I think you have mixed up the formula for circumference with the area formula.",
         "B": "I think you've tried to find 𝑟 by going backwards and undoing steps, but be careful about which step needs to be undone first!",
@@ -115,7 +115,7 @@
     {
       "questionId": 109779,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/02f73176-08f8-4cd8-b4f2-243ec4b0cf55.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You're almost there, having worked out the area of a whole circle. There's one additional step needed!",
         "B": "I think you used the diameter in the formula. Try again using the measurement for the radius.",
@@ -139,7 +139,7 @@
     {
       "questionId": 109780,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1df14cf7-3621-43b2-994a-ef4d59496936.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've tried to find 𝑡 by going backwards and undoing steps, but be careful about which step needs to be undone first!",
         "B": "Area of a whole circle = 𝜋𝑟², which means area of semi-circle = ½ × 𝜋𝑟². From the diagram, we can see that the radius = 𝑡. Substituting this in, together with the value for the area, gives 32 = ½ × 𝜋𝑡². To make 𝑡 the subject, first multiply both sides by 2 to give 64 = 𝜋𝑡². Dividing both sides by 𝜋 gives 64/𝜋 = 𝑡², and to undo the squaring, we need to square root both sides: √(64/𝜋) = 𝑡, which can be simplified to 𝑡 = 8/√𝜋.",
@@ -151,7 +151,7 @@
     {
       "questionId": 147935,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/08fc00af-2b3f-41f8-9b9c-2f6806aab5e4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you've got the right idea, but don't forget that we're dealing with a semi-circle.",
         "B": "I think you've got the right idea, but don't forget that when undoing a step, the action is performed to the whole of the right- and left-hand side so as to keep the equation in balance.",

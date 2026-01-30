@@ -25,7 +25,7 @@
     {
       "questionId": 156167,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4b28ee92-e593-4766-8cc0-e26008ff22dc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have assumed the pattern would repeat. Mo is counting UP by 5, rather than down. What is 15 + 5?",
         "B": "I think you have added 4. Mo is counting in 5s. What is 15 + 5?",
@@ -37,7 +37,7 @@
     {
       "questionId": 156185,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7d1c70fc-e69f-4038-9b26-539295ce8009.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have added 1. Mo is counting in 5s. What is 27 + 5?",
         "B": "I think you have added 4. Mo is counting in 5s. What is 27 + 5?",
@@ -61,7 +61,7 @@
     {
       "questionId": 159538,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b081f6b9-2879-44d6-9288-875882a821dd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "If we are skip counting in 5s, the next number will be 85 + 5 = 90. Which number here can we not get to by adding 5s on to 85?",
         "B": "If we are skip counting in 5s, the next number will be 85 + 5 = 90, so we will not say 87.",
@@ -73,7 +73,7 @@
     {
       "questionId": 159317,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/58de54e4-79ce-4b8d-b091-b8242d76003c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "If we are skip counting in 5s, we add on 5, not 1. Which number is 5 bigger than 132?",
         "B": "If we are skip counting in 5s, we add on 5, but you have added 10...",
@@ -97,7 +97,7 @@
     {
       "questionId": 159318,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1a9d8edc-f165-4a81-babb-8c2272862795.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Look at the pattern carefully - we want to count back 5, not just 1!",
         "B": "471 is the next number after 466. We want the number at the beginning of the sequence, before 456!",
@@ -109,7 +109,7 @@
     {
       "questionId": 159540,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4827769b-1a48-4686-9724-40ead5e887c3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite - we want to count back 5, not 10!",
         "B": "393 is the next number after 388. We want the number at the beginning of the sequence, before 378!",
@@ -121,7 +121,7 @@
     {
       "questionId": 159319,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a86f3928-9ce4-40c9-8386-6299fffc3395.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite - we want to count back 5, not just 1!",
         "B": "This is the number AFTER 203, but we want the number before. We need to count backwards instead of forwards.",

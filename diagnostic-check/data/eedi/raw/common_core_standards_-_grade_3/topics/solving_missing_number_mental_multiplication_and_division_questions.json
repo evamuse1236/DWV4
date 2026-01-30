@@ -49,7 +49,7 @@
     {
       "questionId": 158728,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/018a9b48-4a93-49f2-8db3-9d26c60ec335.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Close! 8 x 7 = 56, but we want 63.",
         "B": "9 x 7 = 63, so 9 goes in the box.",
@@ -61,7 +61,7 @@
     {
       "questionId": 158927,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d632b187-edbc-453d-b7c9-c8973059864a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "If 40 goes in the box, we have 40 x 4. Does that equal 36? Think about how many 4s are in 36.",
         "B": "Close! 8 x 4 = 32, but we want 36.",
@@ -109,7 +109,7 @@
     {
       "questionId": 158929,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a65e4bd9-e9d8-493d-ab12-01a04ab15cf3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have divided to find the missing number, but this time we need to use the inverse operation. What is the inverse (opposite) of division?",
         "B": "This would be correct if we had ___ - 6 = 12, but we are dividing the missing number by 6, not subtracting 6.",
@@ -133,7 +133,7 @@
     {
       "questionId": 158930,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/860d1f2c-d1cb-42b3-9637-f7d266f19711.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have divided to find the missing number, but this time we need to use the inverse operation. What is the inverse (opposite) of division?",
         "B": "This would be correct if we had ___ - 9 = 3, but we are dividing by 9 to get 3, not subtracting 9.",

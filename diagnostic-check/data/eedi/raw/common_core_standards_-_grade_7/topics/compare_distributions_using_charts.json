@@ -67,7 +67,7 @@
     {
       "questionId": 146904,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5a07e788-5b32-43f6-b604-d5e58a340c0a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! Compare the total number of people from the 51-60 and 61+ age groups at 10am to 6pm. Is there a trend?",
         "B": "Not quite! Add together the number of people attending at 10am and at 6pm for each age group. How does the total number of 26-35 year olds compare to the other age groups?",
@@ -103,7 +103,7 @@
     {
       "questionId": 146925,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6f482379-8ddd-4ad1-a6cf-a7726ccf5550.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! The least popular month of the year that both the resorts had in common was January, so Tom is correct. However check the number of visitors for each month for resort A and B. The resort that has a similar number of visitors most months will have a more consistent number of visitors all year round.",
         "B": "Not quite! Each stick figure represents 1000 people so check to see which months had the least number of visitors. You are then looking to see if there is a month in common that both resorts had the least number of visitors. However, resort A has more consistent numbers over the year with a smaller variation between the number of visitors per month, so Katie is correct.",
@@ -151,7 +151,7 @@
     {
       "questionId": 146927,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/60d3134a-d61a-4302-b7e5-840c05e6bdee.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have assumed that the y-axis starts at 0, but without the y-axis being labelled, we cannot tell if City B had twice the population of City A, so Tom is incorrect. Now to see whether Katie is correct consider what the graph would look like if the population of City B was decreasing. Remember it does not have to be decreasing all the time, just generally over time.",
         "B": "We don't know whether the y-axis starts at 0 so we cannot tell if City B had twice the population of City A, so Tom is incorrect. The gradient of City B’s line is decreasing in general, so the population is decreasing overall, so only Katie is correct.",

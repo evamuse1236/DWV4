@@ -19,7 +19,7 @@
     {
       "questionId": 158435,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/53606b9f-4a8d-4d23-9e69-6c2366c49029.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've multiplied by 16. But, 1 quart = 32 fluid ounces. Therefore, you need to know how many times 32 divides into 96.",
         "B": "1 quart = 32 fluid ounces. 96 ÷ 32 = 3. Therefore, 96 fluid ounces = 3 quarts.",
@@ -31,7 +31,7 @@
     {
       "questionId": 158534,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea49eb45-b11c-4cbb-a15c-0d2ad1ca3f07.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've multiplied by 32. But, 1 quart = 32 fluid ounces. Therefore, you need to know how many times 32 divides into 64.",
         "B": "I think you've multiplied by 16. But, 1 quart = 32 fluid ounces. Therefore, you need to know how many times 32 divides into 64.",
@@ -43,7 +43,7 @@
     {
       "questionId": 158436,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eba08b09-296a-489d-9717-c67d5a8c1dca.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You've divided by 8. But, 1 pint = 16 fluid ounces.",
         "B": "I think you've multiplied by 16. But, 1 pint = 16 fluid ounces. Therefore, you need to know how many times 16 divides into 30.",
@@ -55,7 +55,7 @@
     {
       "questionId": 158535,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/498237fd-0ea7-4d94-9446-b8c575ca39f7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You've divided by 10. But, 1 pint = 16 fluid ounces.",
         "B": "1 pint = 16 fluid ounces. 40 ÷ 16 = 2 remainder 8. Therefore, 40 fl oz = 2 pints 8 fl oz.",
@@ -67,7 +67,7 @@
     {
       "questionId": 158437,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0bbcaafe-ad5b-4a4d-8407-868cc910472e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You've divided by 8. But, 1 gallon = 4 quarts.",
         "B": "1 gallon = 4 quarts. 19/4 = 4 and 3/4, therefore 19 quarts = 4 and 3/4 gallons.",
@@ -79,7 +79,7 @@
     {
       "questionId": 158536,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/74d26d62-e5b1-45be-9c10-6a798056b306.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you know that you need to divide 15 by 4 (1 gallon = 4 quarts). And that the numbers in the 4 times table are: 4,8,12,16. But, 4 only goes into 15, three times (4 x 3 = 12).",
         "B": "You've divided by 8. But, 1 gallon = 4 quarts.",
@@ -91,7 +91,7 @@
     {
       "questionId": 158438,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f9938489-0dee-476b-9ff7-26ba9257141d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "1 gallon = 8 pints. To calculate 10 pints in gallons, simplify 10/8 and compare this with 1 and 1/4 gallons.",
         "B": "1 gallon = 8 pints. To calculate 10 pints in gallons, simplify 10/8 and compare this with 1 and 1/4 gallons.",
@@ -103,7 +103,7 @@
     {
       "questionId": 158537,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/37df7db2-aa0b-47fe-ae3d-a2ea5bb317f6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "1 gallon = 8 pints. To calculate 20 pints in gallons, simplify 20/8 and compare this with 2 and 1/4 gallons.",
         "B": "1 gallon = 8 pints. 20/8 = 5/2 = 2 and 1/2. Therefore, 20 pints = 2 and 1/2 gallons which is greater than 2 and 1/4 gallons.",
@@ -115,7 +115,7 @@
     {
       "questionId": 158439,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3fad8cfd-a01b-48bc-8f94-25ea3f0f659d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "1 gallon = 128 fl oz. And 120 fl oz. is less than 128 fl oz. So, how does 120 fl oz. compare with 1 gallon?",
         "B": "1 gallon = 128 fl oz. Therefore, 1 gallon is greater than 120 fl oz. 1 gallon ＞ 120 fl oz",
@@ -127,7 +127,7 @@
     {
       "questionId": 158538,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e0c9201c-13ec-491d-8a04-03f087de5c66.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "1 gallon = 128 fl oz. Therefore, 5 gallons = 5 x 128 = 640 fl oz. 640 fl oz is less than 650 fl oz therefore we need to put < symbol in the box!",
         "B": "1 gallon = 128 fl oz. Use this to work out how many fl oz in 5 gallons then compare this value to 650 fl oz...",

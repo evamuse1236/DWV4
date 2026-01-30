@@ -25,7 +25,7 @@
     {
       "questionId": 146486,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c171de90-094f-4665-af68-d0c93e83001b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have assumed that because there are two outcomes, they must have an even chance of occurring. The probability of all of the outcomes added together must be 1. If the probability of choosing a strawberry sweet is 0.8, what must the probability of choosing an orange sweet be?",
         "B": "I think you have assumed that the probability of choosing each orange or strawberry must be the same. The probability of all of the outcomes added together must be 1. If the probability of choosing a strawberry sweet is 0.8, what must the probability of choosing an orange sweet be?",
@@ -37,7 +37,7 @@
     {
       "questionId": 146506,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e73dd0a3-fba2-46c7-9826-5b565394c24a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have assumed that because there are two outcomes, they must have an even chance of occurring. The probability of all of the outcomes added together must be 1. If the probability of choosing a strawberry sweet is 0.65, what must the probability of choosing an orange sweet be?",
         "B": "I think you have assumed that the probability of choosing each orange or strawberry must be the same. The probability of all of the outcomes added together must be 1. If the probability of choosing a strawberry sweet is 0.65, what must the probability of choosing an orange sweet be?",
@@ -49,7 +49,7 @@
     {
       "questionId": 146487,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8fa697ac-9570-4d5b-b02e-80cd841e24ec.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have assumed there would be an equal chance of choosing each of the three outcomes. The outcomes of all 3 events must sum to 1. The question states that the probability of choosing a strawberry sweet is 0.8. What would the probability of the other two possible outcomes be?",
         "B": "I think you have assumed that the remaining probability would be shared out equally between the orange and blackcurrant sweets. It does not specify that this is the case in the question. Can you calculate the probability of choosing orange without knowing how many there are?",
@@ -61,7 +61,7 @@
     {
       "questionId": 146507,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/28103da7-297e-4478-8430-97d163596881.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have assumed there would be an equal chance of choosing each of the three outcomes. The outcomes of all 3 events must sum to 1. The question states that the probability of choosing a white chocolate is 1/3. What would the probability of the other two possible outcomes be?",
         "B": "I think you have assumed that the probability of dark and white chocolates would sum to 1, meaning there would be zero milk chocolates. Remember there are 3 outcomes in this question – dark, milk or white. We do not know how many of each there are – can you still calculate the probability of choosing a dark chocolate?",
@@ -85,7 +85,7 @@
     {
       "questionId": 146508,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1067cceb-5937-42e7-89af-0a7effe0e21c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have assumed that the probabilities should be equal. The probability of all outcomes of an event must sum to 1. The probability of choosing a liquorice is 2/5. What must the probability of choosing a lemon sherbet be for the probabilities to sum to 1?",
         "B": "I think you have assumed that there would be an even chance as there are two possible outcomes. The probability of all outcomes of an event must sum to 1. The probability of choosing a liquorice is 2/5. What must the probability of choosing a lemon sherbet be for the probabilities to sum to 1?",
@@ -97,7 +97,7 @@
     {
       "questionId": 146489,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2f5b3118-20d1-44a7-a710-81b98a4d32d1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have stated the number of green counters, rather than the probability of choosing green. P(green) would be the number of green counters divided by the number of counters overall.",
         "B": "I think you have found the probability of NOT choosing a green counter. The question asks you to find the probability of choosing a green counter. How many green counters are there, and out of how many? Express your answer as a fraction.",
@@ -109,7 +109,7 @@
     {
       "questionId": 146509,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/384cba4b-5593-4d74-bec3-c1bd1629a791.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have stated the number of green counters, rather than the probability of choosing green. P(green) would be the number of green counters divided by the number of counters overall.",
         "B": "There are three green counters (10 – 5 – 2 = 3) and 10 counters overall. Therefore the probability of choosing green would be 3/10.",
@@ -121,7 +121,7 @@
     {
       "questionId": 146490,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dde1f01f-be0b-4d94-8183-494c5a11722c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have added the two probabilities together incorrectly, without finding a common denominator first. First write both fractions as equivalent fractions out of 10.",
         "B": "I think you have added the two probabilities together correctly, but the question asks for the probability of getting an R. The probabilities of all of the outcomes of an event must sum to 1. Does this information help you calculate the probability of picking an R?",
@@ -133,7 +133,7 @@
     {
       "questionId": 146510,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cc672c4b-bc13-4bb1-b529-99fcbdba13a9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have added the two probabilities together incorrectly, without finding a common denominator first. First write both fractions as equivalent fractions out of 14.",
         "B": "I think you have added the two probabilities together correctly, but the question asks for the probability of getting a Z. The probabilities of all of the outcomes of an event must sum to 1. Does this information help you calculate the probability of picking an Z?",

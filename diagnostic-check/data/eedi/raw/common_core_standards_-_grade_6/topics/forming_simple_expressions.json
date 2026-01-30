@@ -37,7 +37,7 @@
     {
       "questionId": 130136,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/24ab289b-b240-44de-b1a4-cf65751120ef.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Does she need to add 4 to c? What does the 4 represent? Replace the c with the number 2 and see what happens",
         "B": "She is buying 4 packets which means the total cost will be 4 times c. We write this in algebra as 4c",
@@ -49,7 +49,7 @@
     {
       "questionId": 130156,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b16b8241-76ca-4e51-bf6b-87c0e597720c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This shows that we are taking the total cost away from the number of packets. This will not help us work out how much each packet cost. Instead imagine the total cost is £10. How would you work it out then?",
         "B": "I think you might have misread the question. Here we have been given the total cost of the sweets (c) and we need to find the cost of one packet",
@@ -61,7 +61,7 @@
     {
       "questionId": 130137,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ec5daf11-7b98-4091-8123-05e75dc21e01.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have understood that 2b means that we multiply by 2, but you have made a mistake with your order of operations. Which do we need to work out first, multiplication or subtraction?",
         "B": "We do need to subtract a, but is is not from \"2 and b\". The 2 is right next to the b which means they are being multiplied together",
@@ -73,7 +73,7 @@
     {
       "questionId": 130157,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/46712c26-9ef8-4a1f-ae5b-73e6c6ce93df.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have understood that 4a means that we multiply by 4, but you have made a mistake with your order of operations. Which do we need to work out first, multiplication or subtraction?",
         "B": "We do need to subtract b, but is is not from \"4 and a\". The 4 is right next to the a which means they are being multiplied together",
@@ -85,7 +85,7 @@
     {
       "questionId": 130138,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eb0c1871-c1bf-4a98-97f8-f19f173e2c3d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Think about how you have written your division. If we are dividing 4 by z what goes on the top of our fraction?",
         "B": "Not quite. We need to start by dividing 4 by z. What will go on the top of the fraction? What will go on the bottom? Now once we've done this we need to add 3 to our answer",
@@ -109,7 +109,7 @@
     {
       "questionId": 130139,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c59cb449-6692-47b6-8a68-8be0eea95085.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This diagram does show 2x - 4. We have 2 'x' bars at the top and we are subtracting 4 lots of 1.",
         "B": "This diagram does show 2x - 4. We have 2 'x' bars and 1 '-4' bar. This is the same as 2x-4",
@@ -133,7 +133,7 @@
     {
       "questionId": 130140,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6992f708-5b36-4cac-a6fe-ddf1b9b4d998.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "If Betty is 3 years younger than Clara would we write Betty's age as c+3 or c-3?",
         "B": "If Ann is 12 years older than Betty's age would we have to add 12 to Betty's age or subtract 12 from Betty's age?",

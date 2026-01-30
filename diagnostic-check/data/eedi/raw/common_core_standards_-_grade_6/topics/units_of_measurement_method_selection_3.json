@@ -43,7 +43,7 @@
     {
       "questionId": 79621,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c21bb03f-5054-4388-86f6-b0a99bd9980b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have rounded the conversion to 3cm rather than 2.5cm. We need to multiply 20 by 2.5",
         "B": "I think you have multiplied by 2, and then added 0.5. Instead we need to multiply by 2.5. So we need 2 and a half lots of 20",
@@ -55,7 +55,7 @@
     {
       "questionId": 79665,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/830c1e0f-2aba-4f8d-adb6-39bab273792d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have multiplied by 2, and then added 0.5. Instead we need to multiply by 2.5. So we need 2 and a half lots of 12",
         "B": "I think you have rounded the conversion to 3cm rather than 2.5cm. We need to multiply 12 by 2.5",
@@ -79,7 +79,7 @@
     {
       "questionId": 79666,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/de047c2f-1aef-4084-8a58-f213496aef1d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have multiplied, rather than divided. If we are measuring using a larger unit then we will need less of them. Also watch out for the squared symbol on the units. What does this mean?",
         "B": "There are 100 cm in a metre, so 100² = 10, 000 cm² in a m². We then have 700 cm² = 700/10 000 = 0.07 m².",
@@ -103,7 +103,7 @@
     {
       "questionId": 79667,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a34950d0-d259-41f4-b754-568ce9d879f4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "As there are 60 minutes in an hour we need to multiply 1.4 by 60. This gives us 84 minutes. If you are finding the 0.4 of an hour tricky then try thinking of it as 4/10 of an hour",
         "B": "I think you have converted 0.4 hours to 40 minutes, but that is not quite right. 0.4 means 4/10 of an hour. Start by finding 1/10 of an hour in minutes",
@@ -115,7 +115,7 @@
     {
       "questionId": 79624,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/573c665b-8f02-49ee-8c43-c77a131cb7af.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have divided by 4. If 5 miles = 8 kilometres would we expect 20 miles to give us a smaller number of kilometres?",
         "B": "I think you have added, but we instead need to multiply our values. What would we need to multiply 5 miles by to get to 20 miles?",
@@ -139,7 +139,7 @@
     {
       "questionId": 79625,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/abc6402a-5a65-4f94-8bc2-14cf85ad72b4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "If you are measuring the height of something it cannot be less than zero. Try to think of some negative examples of these in real life",
         "B": "Temperature is the only measure which can be negative.",
@@ -151,7 +151,7 @@
     {
       "questionId": 79669,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4951e580-b1ce-470e-8152-2b63c0da4fc5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Think carefully about the negative sign in front of the 6. Could a height be negative?",
         "B": "Think carefully about the negative sign in front of the 6. Could a mass be negative?",

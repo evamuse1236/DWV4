@@ -43,7 +43,7 @@
     {
       "questionId": 78201,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9570658e-20f6-42c4-a322-94e8c0ae3d28.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, is this the line y = -1? Checking the coordinates of the points on the line will help you to find the correct equation of the line.",
         "B": "The line drawn has equation 𝑥 = -1. Everything to the left is less than -1, so the shaded region is 𝑥 < -1.",
@@ -79,7 +79,7 @@
     {
       "questionId": 78496,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5f37775e-0626-4ad5-a793-99373159cbe9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! The statement y < x means that the y coordinate is less than the x coordinate. Pick a point within the region R and check if this is the case. The statement x < -2 means that the x value is less than -2, check if this is the case for your point.",
         "B": "Nearly! The statement x < -2 means that the x coordinate is less than -2. Pick a point within the region R and check if this is the case.",
@@ -115,7 +115,7 @@
     {
       "questionId": 106935,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a4da3dca-5e55-4ec9-887b-4733d69a32e6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! Check carefully to see if the equation of the dashed line is y = x or y = -x.",
         "B": "Not quite! Check carefully to see if the equation of the dashed line is y = x or y = -x. Then pick any point in the shaded region. Look at its x and y coordinates. Check to see if minus x is greater than y.",
@@ -139,7 +139,7 @@
     {
       "questionId": 106936,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d2621515-36b9-4213-84c4-dfa83d80d2e9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. This is the point of intersection as it is on both lines. It would count if our inequalities had the ≤ symbol rather than the < symbol and vice versa, but because the \"or equal to\" bit is missing it means we cannot include a point that is on the line.",
         "B": "The red line has the equation 𝑥 = 1 and we want the inequality 𝑥 > 1 so we need the region to the right of this. The purple line has equation y = 𝑥 + 2 and we want the inequality y < 𝑥 + 2 so we want the region below this line. So we need to find a coordinate that is to the right of the red line and below the purple line. This leaves coordinate (2,-1)",
@@ -151,7 +151,7 @@
     {
       "questionId": 106943,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/19a41fd8-37b6-4c64-873e-d924d31443b7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Your coordinate satsifies the inequality 2 < x + y, but does not satisfy x < y",
         "B": "Not quite. This is the point of intersection as it is on both lines. It would count if our inequalities had the ≤ symbol rather than the < symbol, but because the \"or equal to\" bit is missing it means we cannot include a point that is on the line.",

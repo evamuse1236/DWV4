@@ -25,7 +25,7 @@
     {
       "questionId": 158892,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5f7ee05f-8de4-4370-a30e-5c3451dbfbdb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have found the area of the triangle, but we are trying to find the length of the missing side. The perimeter 30 is the total of adding up all the sides, so how could you find the missing one?",
         "B": "5 + 12 = 17, but we want the length of the other side. How can we find the missing side, if the total length of all three sides is 30?",
@@ -37,7 +37,7 @@
     {
       "questionId": 159091,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/35a1e391-b7bb-4c5d-ad1a-f800f8e39c7b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "7+ 15 = 22, but we want the length of the other side. How can we find the missing side, if the total length of all three sides is 42?",
         "B": "Not quite - I think you subtracted one of the sides, but not the other. 42 - 17 - 5 = 20.",
@@ -49,7 +49,7 @@
     {
       "questionId": 158893,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5f53068a-aacd-4615-9bd4-ebb7c4aac19c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "32 is the total of adding all the sides, but we want the length of the side marked ?. How could we find that, if we know 5 + 7 + 7 + ? = 32?",
         "B": "The three sides given add up to 19, and all the sides add up to 32 because that's the perimeter. 32 - 19 = 13, so the missing side must be 13 inches.",
@@ -73,7 +73,7 @@
     {
       "questionId": 158894,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b9dd636e-3d7e-422a-8575-bd4df96370ff.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Double check that you haven't missed a side when you were calculating.",
         "B": "The five sides given add up to 25ft, but we want the length of other side. The perimeter (all sides added together) is 28ft, so what's the missing side?",
@@ -85,7 +85,7 @@
     {
       "questionId": 159093,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/93a91097-80c5-47e4-b4d0-aa1975ac448e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you might have estimated that the missing side is 3ft, but we can work it out exactly. The perimeter (all the sides added up) is 44 feet, so what is the missing side?",
         "B": "Double check that you haven't missed a side when you were calculating.",
@@ -109,7 +109,7 @@
     {
       "questionId": 159094,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/46ecf3d0-73e4-4d49-b794-14d76243d8ff.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The four sides given add up to 105 yd, but we want the length of other side. The perimeter (all sides added together) is 137yd, so what's the missing side?",
         "B": "The four sides given add up to 105 yd. The perimeter (all sides added together) is 137 yd. 137 - 105= 32, so the missing side must be 32 yd.",
@@ -121,7 +121,7 @@
     {
       "questionId": 158896,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2dc88fd1-d956-457c-84a9-ce177e9e29cf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost! You subtracted 2 lots of the length from the perimeter, but this would give 2 x the width. How can you find the width from this number?",
         "B": "Almost! But remember the perimeter is length + length + width + width, so how many lots of 30 do you need to subtract?",
@@ -133,7 +133,7 @@
     {
       "questionId": 159095,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/788c82d2-141b-4d76-9292-f50ef472de29.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost! But remember the perimeter is length + length + width + width, so how many lots of 28 do you need to subtract?",
         "B": "Not quite - that would be correct if perimeter = length + width, but remember perimeter is all the sides added together, so in this case length + length + width + width = 84.",

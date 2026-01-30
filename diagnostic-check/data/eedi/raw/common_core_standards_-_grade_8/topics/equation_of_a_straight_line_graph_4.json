@@ -25,7 +25,7 @@
     {
       "questionId": 107351,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2841b5e4-43a7-42c6-9f58-9e60fc2933e5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Think about what direction the line is going in, is the gradient +2?",
         "B": "I think you've found the y-intercept, this is the value of c. The gradient is m, what is it?",
@@ -37,7 +37,7 @@
     {
       "questionId": 107371,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b1974d73-0cd1-4c4a-8cb1-187f18364e77.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Think about what direction the line is going in, is the gradient +1?",
         "B": "I think you've found the y-intercept, this is the value of c. The gradient is m, what is it?",
@@ -49,7 +49,7 @@
     {
       "questionId": 107352,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db0d5ac4-c0aa-4208-9d83-fe072ef884f3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've tried to find the gradient, which is m. c is the y-intercept, what is it?",
         "B": "The value of 𝑐 is obtained by reading off where the line crosses the 𝑦 axis (the 𝑦 intercept). In this question, this value is 3.",
@@ -61,7 +61,7 @@
     {
       "questionId": 107372,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6b6d231a-813f-4b9b-a0aa-bdcf6253d5cf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've tried to find the gradient, which is m. c is the y-intercept, what is it?",
         "B": "Not quite, I think you've tried to find the x-intercept. c is the y-intercept.",
@@ -85,7 +85,7 @@
     {
       "questionId": 107373,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a50354e5-4c1a-4d2e-8aab-7250755a3849.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost. We need to use exact coordinates to help us find the gradient",
         "B": "Almost. We need to use exact coordinates to help us find the gradient, and remember that this is a slope that is going down. How do we represent this?",
@@ -97,7 +97,7 @@
     {
       "questionId": 107354,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5631be95-01ab-467a-96a9-9b17bd45fc86.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have found the m (gradient) rather than the c (y intercept)",
         "B": "The value of 𝑐 is the 𝑦 intercept, the 𝑦 coordinate of the point where it crosses the 𝑦 axis. Reading this value from the graph gives an answer of 2.",
@@ -109,7 +109,7 @@
     {
       "questionId": 107374,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/de492d8d-5fb7-452c-b85a-c65b2fb701ef.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have tried to find the m (gradient) rather than the c (y intercept)",
         "B": "This is the coordinate of where the line crosses the y axis, but we just need the y coordinate.",

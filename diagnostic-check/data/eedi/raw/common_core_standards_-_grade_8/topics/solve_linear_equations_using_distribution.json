@@ -19,7 +19,7 @@
     {
       "questionId": 166333,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c9094343-a19c-4a49-9ee9-d380caff83ab.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have correctly divided 32 by 8 but this gives you 𝑛 - 3 not 𝑛...",
         "B": "To solve for 𝑛 you need to apply the inverse operations... What is the opposite of multiplying by 8 and subtracting 3?",
@@ -31,7 +31,7 @@
     {
       "questionId": 166560,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/202793c8-5e43-49ca-9d6b-b378acbc33c0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "To solve for 𝑛 you need to apply the inverse operations... What is the opposite of subtracting?",
         "B": "To solve for 𝑛 you need to apply the inverse operations... First divide through by 6 and then add 2! 48 ÷ 6 = 8. Then 8 + 2 = 10 therefore 𝑛 = 10",
@@ -43,7 +43,7 @@
     {
       "questionId": 166334,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cdcee186-fd14-43d2-8bfd-0892f85615e5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have correctly divided 35 by 5 but this gives you 𝑛 + 2 not 𝑛...",
         "B": "To solve for 𝑛 you need to apply the inverse operations... First divide through by 5 and then subtract 2! 35 ÷ 5 = 7. Then 7 - 2 = 5 therefore 𝑛 = 5",
@@ -55,7 +55,7 @@
     {
       "questionId": 166561,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b0d326f3-34a9-4932-9de0-19f469cb4311.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have muddled up the order of your inverse functions... First divide by 2 and then subtract 4!",
         "B": "To solve for 𝑛 you need to apply the inverse operations... You have correctly divided by 2 but what is the inverse of adding 4?",
@@ -67,7 +67,7 @@
     {
       "questionId": 166335,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5cb4d26e-7b32-40a6-980b-6855927f325e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have combined incorrectly... Distributing, what do you get on both sides of the equation? What does this mean in terms of the solutions?",
         "B": "I think you may have combined incorrectly... Distributing, what do you get on both sides of the equation? What does this mean in terms of the solutions?",
@@ -103,7 +103,7 @@
     {
       "questionId": 166563,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3d8597ed-3e2f-46c5-b386-4e7a8e7863e8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have correctly distributed and subtracted 2𝑛 from both sides but you have also subtracted the 10... The inverse of -10 is +10",
         "B": "Distributing gives 6𝑛 - 10 = 2𝑛 + 2. Rearranging this, by subtracting 2𝑛 and adding 10 to both sides gives: 4𝑛 = 12. And finally, dividing through by 4 gives 𝑛 = 3!",
@@ -127,7 +127,7 @@
     {
       "questionId": 166564,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4c9802d5-4e94-4808-879b-37820d76fdeb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "What happens when you multiply a negative by a negative? Make sure you have accounted for this in your calculation...",
         "B": "Distributing gives: -18 + 15𝑛 = -2𝑛 + 8 + 4𝑛 which simplifies to -18 + 15𝑛 = 2𝑛 + 8. We then rearrange to get 13𝑛 = 26 and dividing through by 13 gives 𝑛 = 2!",

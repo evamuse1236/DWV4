@@ -49,7 +49,7 @@
     {
       "questionId": 107120,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db57efd1-7d0d-4b90-94cc-66034f6c5292.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It seems you have read the midpoint values rather than the 𝑥 and 𝑦 values on the axes.",
         "B": "It looks like you have read the coordinates in the wrong order, mixing up 𝑥 and 𝑦 and thought the lines represent midpoints.",
@@ -61,7 +61,7 @@
     {
       "questionId": 107117,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/167d4a89-9191-4f59-92e1-7b5f9c82495f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You seem to have moved along the 𝑥 axes by the correct amount. Think about the value of the y co-ordinate.",
         "B": "It looks like you have misread this co-ordinate. From (0,0) B has only moved along the y-axis. (3,1) means there are movements along both axes.",
@@ -73,7 +73,7 @@
     {
       "questionId": 107121,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8bcc5425-9ed1-4314-a74f-bed00687c566.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You seem to have mixed up the 𝑥 and 𝑦 co-ordiantes. Remember the starting point is (0,0)",
         "B": "Remember the starting point is (0,0). You seemed to have started from 1 on the 𝑥 axis.",
@@ -85,7 +85,7 @@
     {
       "questionId": 129151,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/28a9d162-f4e2-41f4-91e6-53d53aca7450.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "We read up from the x axis first (3) and then across from the y axis (2). This is written as a coordinate using brackets and a comma (3,2). An easy way to remember this is that it is alphabetical. x before y",
         "B": "I think you've read the correct numbers from the axes, but think carefully about the order. We write alphabetically so it should read (x,y)",
@@ -97,7 +97,7 @@
     {
       "questionId": 129291,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/99f9e772-6e53-4275-b085-9b1d75e5af88.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've read the correct numbers from the axes, but think carefully about the order. We write alphabetically so it should read (x,y)",
         "B": "We read up from the x axis first (2) and then across from the y axis (3). This is written as a coordinate using brackets and a comma (2,3). An easy way to remember this is that it is alphabetical. x before y",
@@ -121,7 +121,7 @@
     {
       "questionId": 158572,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/87a376e3-ff1c-4141-b899-ddb7a7ece214.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have accidentally got the x and y values the wrong way round in the coordinate!",
         "B": "We go 2 along the x-axis and 0 up the y-axis therefore the coordinates of the star are (2,0), as coordinates are written (x,y)",
@@ -133,7 +133,7 @@
     {
       "questionId": 158483,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/974a025f-5763-4470-a64e-51776982771a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This point has the coordinates (0,4), you have accidentally swapped round the x and y...",
         "B": "This point has the coordinates (0,0), we need the coordinates (4,0) so go along the x-axis 4 and then up the y-axis 0...",

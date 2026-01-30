@@ -37,7 +37,7 @@
     {
       "questionId": 165488,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ff501770-5c9a-4190-bda4-3779fab4f98c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite - when we 'owe' someone, it's how much we would have to pay them so that we owe them $0. We wouldn't really ever owe a negative amount of money!",
         "B": "Not quite. When we're thinking about how much we 'owe', it's how much we would need to pay to take the balance to $0.",
@@ -49,7 +49,7 @@
     {
       "questionId": 165484,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5d455f76-523a-4737-a3e3-2a475bc93195.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite - when we 'owe' someone, it's how much we would have to pay them so that we owe them $0. We wouldn't really ever owe a negative amount of money!",
         "B": "Close, but it looks like you might have included $15 when counting down by 4. We don't include the number we're starting on when subtracting.",
@@ -61,7 +61,7 @@
     {
       "questionId": 165489,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e136eff4-d169-4972-9740-87cfbb3923f5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It seems like you've added the $25 and the $12 together, but if she has paid him some money, she should owe him less rather than more!",
         "B": "If she has paid $12, then she owes $12 less than $25, which is $13.",
@@ -73,7 +73,7 @@
     {
       "questionId": 165485,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8a397a9c-089d-4f8b-af7a-02237a9abb56.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you've subtracted 23 from 4, however that would tell us the difference between +23 and +4 rather than -23. Try thinking about how far away each value is from 0!",
         "B": "4 is '4' away from 0, and then -23 is '23' away from 0 in the other direction. That means to get from 4 to -23, we would need to subtract 4, then 23, so the total difference in temperature is 27!",
@@ -85,7 +85,7 @@
     {
       "questionId": 165490,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/620dabab-216c-4aa6-b6eb-ac3391be946e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you've found the difference between 6 and positive 27 rather than negative 27. Try thinking about how far each number is away from 0!",
         "B": "When giving the difference between two values, we don't usually give a negative symbol. We know in this question that the temperature has decreased as it tells us, so we only need to give how many degrees it's fallen by!",
@@ -97,7 +97,7 @@
     {
       "questionId": 165486,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f52b6c48-2bdb-4f0b-9f83-67f83fe53ade.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Very close, but try thinking about what the absolute value of -47 is.",
         "B": "Very close, but try thinking about what the absolute value of -47 is.",
@@ -109,7 +109,7 @@
     {
       "questionId": 165491,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1af4b90f-a3e7-47e2-9dd3-ef751a748afa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite - distance can't be given as a negative, only as an absolute value!",
         "B": "Very close, but try thinking about what the absolute value of -36 is.",
@@ -121,7 +121,7 @@
     {
       "questionId": 165487,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0850eabc-89c5-446f-85fe-efe744936ed1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite - distance can't be given as a negative, only as an absolute value!",
         "B": "Close but it looks like you counted the number you started on when subtracting. We start counting from the next number down!",
@@ -133,7 +133,7 @@
     {
       "questionId": 165492,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/676d11ab-039d-4d52-9f80-3e2d228bbfed.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Close but it looks like you counted the number you started on when subtracting. We start counting from the next number down!",
         "B": "16 is 16 above 0, and -3 is 3 below 0, so in total there is a difference of 19.",

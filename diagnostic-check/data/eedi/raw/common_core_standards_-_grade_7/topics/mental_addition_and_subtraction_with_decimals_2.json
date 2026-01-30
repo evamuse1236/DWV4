@@ -43,7 +43,7 @@
     {
       "questionId": 134160,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/303e1ffe-0a78-4b1c-96ee-08b641a3ea0d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have accidentally done the sum 7.04 - 2.28 instead of 7.4 - 2.28. The 4 is in the tenths column, not the hundredths! Think about 7.4 being the same as 7.40 then mentally you can do 7 - 2 and 0.40 - 0.28 to get your answer.",
         "B": "You have accidentally swapped the sum around and done 2.28 - 0.74 instead of 7.4 - 2.28. Think about 7.4 being the same as 7.40 then mentally you can do 7 - 2 and 0.40 - 0.28 to get your answer.",
@@ -55,7 +55,7 @@
     {
       "questionId": 132173,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/35b7db18-fb1b-474e-9e13-9d9c6c58a957.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have correctly subtracted the 2 from 5 but you need to subtract the 1 from the 3 as they are both in the tenths column. If it helps think of the 2.1 as 2.10 so that both decimal numbers have the same number of decimal places.",
         "B": "Not quite. I think you have added when the question is asking you to subtract.",
@@ -67,7 +67,7 @@
     {
       "questionId": 134159,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2c7d797b-ec0d-4d3f-9b2e-edd4f80e6acd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, be careful with your place value. When setting up your subtraction the 3 should go underneath the 4 and the 1 should go underneath the 7.",
         "B": "Not quite, be careful with your place value. When setting up your subtraction the 3 should go underneath the 4 and the 1 should go underneath the 7.",
@@ -91,7 +91,7 @@
     {
       "questionId": 134158,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3577426e-24a3-4690-a077-43087f76e02e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Nearly! Double check your answer. I think you have forgotten to 'carry' a one.",
         "B": "Not quite - I think you have used 0.47 instead of 4.7.",
@@ -103,7 +103,7 @@
     {
       "questionId": 132175,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6d851b50-187b-4991-9812-e2a1fb84549b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Nearly! Double check your answer. I think you have forgotten to 'carry' a one.",
         "B": "Not quite, remember; 0.52 + 0.75 = 1.27",
@@ -115,7 +115,7 @@
     {
       "questionId": 134157,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/231c76d8-fc4d-44ea-a48b-48faf93c2d26.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, remember, 0.09 + 0.03 = 0.12, not 1.2",
         "B": "Not quite - double check again how to add the 0.39 + 0.53 part of the question.",
@@ -139,7 +139,7 @@
     {
       "questionId": 134156,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1e77e68c-a79b-4b0c-8cf7-c1099a22485b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Nearly! Double check your answer. I think you have forgotten to 'carry' a one.",
         "B": "Not quite, remember 0.7 + 0.6 = 1.3 (not 0.13).",

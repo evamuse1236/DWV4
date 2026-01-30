@@ -55,7 +55,7 @@
     {
       "questionId": 146987,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dfb609e9-53f2-4584-98eb-7b46de064a4e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have chosen the highest common factor rather than the lowest common multiple. A multiple of a number is in that number’s times table. Consider listing the multiples of 6 and 8 until you find the smallest number that is in both their times tables.",
         "B": "12 is not a multiple of 8. Consider listing the multiples of 6 and 8 until you find the smallest number that is in both their times tables.",
@@ -67,7 +67,7 @@
     {
       "questionId": 147007,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c94544e3-5f0f-4d5e-a0bd-6ec4f84508be.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have chosen the highest common factor rather than the lowest common multiple. A multiple of a number is in that number’s times table. Consider listing the multiples of 4 and 6 until you find the smallest number that is in both their times tables.",
         "B": "16 is not a multiple of 6. Consider listing the multiples of 4 and 6 until you find the smallest number that is in both their times tables.",
@@ -79,7 +79,7 @@
     {
       "questionId": 146988,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/22bba85e-2653-4843-997d-d3c50b6d222a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have found a factor of the two numbers rather than the lowest common multiple. Consider listing the multiples of 16 and 8 until you find the smallest number that is in both their times tables.",
         "B": "I think you have found the highest common factor rather than the lowest common multiple. Consider listing the multiples of 16 and 8 until you find the smallest number that is in both their times tables.",
@@ -91,7 +91,7 @@
     {
       "questionId": 147008,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/64a7475d-0916-4eb8-bc30-76a7ed9ddb48.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have found a factor of the two numbers rather than the lowest common multiple. Consider listing the multiples of 12 and 8 until you find the smallest number that is in both their times tables.",
         "B": "I think you have found the highest common factor rather than the lowest common multiple. Consider listing the multiples of 12 and 8 until you find the smallest number that is in both their times tables.",
@@ -103,7 +103,7 @@
     {
       "questionId": 146989,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5d0927bd-2ba7-445a-9356-dc623d36cada.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost! Consider listing the multiples of 21 until you find a number that is either in the 4 or 12 times table",
         "B": "Almost! Consider listing the multiples of 21 until you find a number that is either in the 4 or 12 times table",

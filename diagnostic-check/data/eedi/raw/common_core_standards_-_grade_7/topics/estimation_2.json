@@ -43,7 +43,7 @@
     {
       "questionId": 133644,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a4735654-d212-4f97-ae90-b88d7e1b4733.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, is 40 the closest 'easy' number to 31?",
         "B": "Not quite, is 200 the closest 'easy' number to 299?",
@@ -55,7 +55,7 @@
     {
       "questionId": 131412,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4ffb0fec-ed38-4373-89b9-c22e60238033.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, is 10 the closest 'easy' number to 17? Also, our 'easy' numbers can still be decimals.",
         "B": "Not quite, our 'easy' numbers can still be decimals.",
@@ -67,7 +67,7 @@
     {
       "questionId": 133645,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/331f8fe8-f619-451f-a881-6a4e18e9c5f4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, is 70 the closest 'easy' number to 78?",
         "B": "To estimate the answer we want nice easy numbers. 78 is roughly 80, and 0.5187 is roughly 0.5",
@@ -91,7 +91,7 @@
     {
       "questionId": 133646,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/741e4739-7f97-44c0-b287-4bb67fb49fa7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have tried to round to the nearest integer incorrectly. The question asks you to round to one significant figure.",
         "B": "Nearly! Look at the 6 in 36. Would this round the value up or keep it the same?",
@@ -115,7 +115,7 @@
     {
       "questionId": 133647,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c4cf10bc-ad2c-4d11-8f10-aeae00ffb12a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The first significant figure is always the first non-zero digit from the left, so 0 is not the first significant figure, the 5 is... Look at the number after the 5 carefully to make sure you round correctly!",
         "B": "The value you have given has 4 significant figures. For the number 0.5841 the 5 is the first significant figure, then you need to look at the value after the 5 to decide if it stays the same or rounds up...",
@@ -139,7 +139,7 @@
     {
       "questionId": 133648,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/94529b3a-15ad-4446-851e-ddd6d1601a1b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have rounded to 1 decimal place rather than the nearest 1 (the nearest whole number). 19.7104 is between the whole numbers 19 and 20. Which of these is it closer to?",
         "B": "19.7104 lies between two whole numbers, which of these is 19.7104 closer to (The 7 will tell you whether to round up or down)?",

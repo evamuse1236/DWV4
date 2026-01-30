@@ -37,7 +37,7 @@
     {
       "questionId": 166851,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f61ddb0d-6e1c-47b7-b74f-29b0945101d6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have used the rate of change which is the charge per hour. We want to know how much the fixed call out fee was which is the fee before any hours of work have been completed. Can you find the difference between the cost of the hours worked and the total bill?",
         "B": "George charges $35 per hour and works for 3 hours so 3 x 35 = $105. The total bill was $155 so the fixed cost will be the difference between the total bill and the charge for the hours. $155 - $105 = $50.",
@@ -49,7 +49,7 @@
     {
       "questionId": 167101,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/325ba4ef-1ea6-472e-9ae4-798fcf1e5b26.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have used the rate of change which is the charge per hour. We want to know how much the fixed call out fee was which is the fee before any hours of work have been completed. Can you find the difference between the cost of the hours worked and the total bill?",
         "B": "Simon charges $30 per hour and works for 4 hours so 4 x 30 = $120. The total bill was $165 so the fixed cost will be the difference between the total bill and the charge for the hours. $165 - $120 = $45.",
@@ -61,7 +61,7 @@
     {
       "questionId": 166852,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/327b306f-6a60-4fb4-aee1-c690c7ca9dcd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have given the amount after one month but then Dave will have paid some back by then. We want the initial amount so before any money has been paid back - you could think of it as the amount at month zero.",
         "B": "I think you might have looked at the highest value on the y axis but this won't always be the initial amount. Where does the graph begin? Think of it as the amount at month zero.",
@@ -73,7 +73,7 @@
     {
       "questionId": 167102,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c2cd8980-a96e-40fd-b039-5b5684b00be2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you might have given the slope which is the amount Jenny is paying back each month. The initial amount is how much she borrowed before she has paid any back.",
         "B": "I think you have given the amount after one month but then Jenny will have paid some back by then. We want the initial amount so before any money has been paid back - you could think of it as the amount at month zero.",
@@ -85,7 +85,7 @@
     {
       "questionId": 166853,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2348517f-2426-4fa0-8a7f-16038f78390d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Be careful, I think you have given the amount of flour after 1 cake has been made. We need to figure out how much flour there was before any cakes were made. Can you use the table to work out how much flour is used per cake? Look closely at the values in the table!",
         "B": "If we look at the values in the table we can see that 2 cakes uses 1kg of flour which means that one cake uses 0.5kg of flour. There was 14.5kg of flour after one cake had been made so there must have been 15 kg of flour to start with. 14.5 + 0.5 = 15",
@@ -97,7 +97,7 @@
     {
       "questionId": 167103,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0792ccb4-4325-440d-8590-e048ca7245aa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you are getting confused between the initial amount and the slope. You have given the slope which is the amount of sugar used per cake. If you know that and there was 8.4kg left after baking one cake, how much flour was there before any cakes were made?",
         "B": "Be careful, I think you have given the amount of sugar after 1 cake has been made. We need to figure out how much sugar there was before any cakes were made. Can you use the table to work out how much sugar is used per cake? Look closely at the values in the table!",
@@ -121,7 +121,7 @@
     {
       "questionId": 167104,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/045665ca-30bf-456b-ac77-80b3b53844d3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you may have got confused with direct proportion here but we don't know that the bucket was empty when we started. We can only work out the rate from when the water in the bucket changed. How much did it increase by? And over how many seconds did that happen?",
         "B": "You're close! Remember it's litres per second so be careful about which way around you divide.",
@@ -133,7 +133,7 @@
     {
       "questionId": 166855,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a99e0cdc-4921-4298-9b64-9a21fcf81449.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have looked at the cost for 2 miles and divided that by two - but be careful because there is a cost at zero miles too. If it costs $4 at zero miles and $7.60 at 2 miles, can you now work out the cost per mile?",
         "B": "The cost at 0 miles is $4 and the cost at 2 miles is $7.60 this means that 2 miles costs $3.60 so 1 mile will cost $1.80. You could use any pairs of values from the table and find the difference between the miles divided by the difference in the cost.",

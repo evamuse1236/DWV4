@@ -43,7 +43,7 @@
     {
       "questionId": 130059,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/287c27ad-c559-4271-986d-8f918962b3c6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "In this diagram, one out of every three equally-sized rectangles is shaded. Do any of the other diagrams follow the same pattern?",
         "B": "In this diagram, two out of six or one out of every three equally-sized rectangles is shaded. Do any of the other diagrams follow the same pattern?",
@@ -55,7 +55,7 @@
     {
       "questionId": 130019,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9d9b7d97-2861-491d-be56-cb72e8f340b8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "In this diagram, three out of every four equally-sized rectangles are shaded. Do any of the other diagrams follow the same pattern?",
         "B": "In this diagram, six out of eight or three out of every four equally-sized rectangles are shaded. Do any of the other diagrams follow the same pattern?",
@@ -79,7 +79,7 @@
     {
       "questionId": 130020,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e69c6130-bf73-4af7-b33d-3651a4df53df.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "In this diagram, one out of ten equally-sized rectangles is shaded which equals ⅒. But we need a diagram which does NOT show ⅒ shaded.",
         "B": "In this diagram, one out of ten equally-sized rectangles is shaded which equals ⅒. But we need a diagram which does NOT show ⅒ shaded.",
@@ -91,7 +91,7 @@
     {
       "questionId": 130061,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bbb1f146-8dd6-47e5-9867-b38e750fc432.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Try splitting the larger rectangles into equally-sized, smaller rectangles that are the same shape and size as the shaded rectangle.",
         "B": "We do have one shaded rectangle but how many rectangles of this size fit into the whole shape? Our answer will be a fraction out of the total number of equally-sized rectangles.",
@@ -115,7 +115,7 @@
     {
       "questionId": 130062,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fdcdcd81-298e-4961-86a8-e5ebeed64db7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "In this diagram, 2 out of 8 equally-sized rectangles are shaded = 2/8. But we need a diagram which does NOT show 2/8 shaded.",
         "B": "In this diagram, 2 out of 8 equally-sized rectangles are shaded = 2/8. But we need a diagram which does NOT show 2/8 shaded.",
@@ -139,7 +139,7 @@
     {
       "questionId": 130063,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/92a22b33-830b-4c78-bdc1-4e79c16f45ac.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost! We want the fraction of the rectangle that is shaded yellow but you have given the fraction that is not shaded.",
         "B": "We do have 3 shaded rectangles but how many rectangles are there in total? Our answer will be a fraction out of the total number of equally-sized rectangles.",

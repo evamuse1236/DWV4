@@ -19,7 +19,7 @@
     {
       "questionId": 158123,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e19d5f06-ea82-4766-8aa1-e268eef7fcb8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This model shows 6/6. We are looking for the model that shows the same value as 3 x 2/5...",
         "B": "You have accidentally swapped round the total number of squares and the number shaded. This shows 5/6, we are looking for the model that shows 6/5...",
@@ -31,7 +31,7 @@
     {
       "questionId": 158290,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6d75ced4-032c-4891-b217-d4f738bc4204.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have accidentally swapped round the total number of squares and the number shaded. This shows 5/8, we are looking for the model that shows 8/5...",
         "B": "In the first model we have 4 x 2/5 = 8/5. In the model in B, we have 8 wholes split into 5 parts with one shaded so this represents 8 x 1/5 = 8/5 too!",
@@ -43,7 +43,7 @@
     {
       "questionId": 158124,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/95b7ccc3-01e7-426b-b98b-b1a80dc632f1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "4/5 is the same as 4 x 1/5 so this calculation is equivalent",
         "B": "5 x 1/4 = 5/4 we want 4/5.. What multiplied by what would give 4/5?",
@@ -67,7 +67,7 @@
     {
       "questionId": 158125,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bc922a06-4533-491f-be80-0809d866fd83.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have added the 4 and 5 but you need to multiply them...",
         "B": "4 x 5/7 is the same as 4 x 5 x 1/7 which can be written as 20 x 1/7",
@@ -79,7 +79,7 @@
     {
       "questionId": 158292,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1f8eb745-5189-4aec-aaea-83df0e8d7612.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have accidentally multiplied the 3 and 5 but you need to multiply the 3 and 4...",
         "B": "You have added the 3 and 4 but you need to multiply them...",
@@ -115,7 +115,7 @@
     {
       "questionId": 158127,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c6d02c48-86fa-4a28-bc9f-8eefbe7807c9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Remember n × (a/b) = (n × a)/b so 9 x (2/5) = (9 x 2)/5",
         "B": "You have accidentally multiplied both the numerator and denominator. Remember n × (a/b) = (n × a)/b...",
@@ -127,7 +127,7 @@
     {
       "questionId": 158294,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a42a8a2a-00d2-4aa8-85ef-70984a18ba69.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have accidentally multiplied both the numerator and denominator. Remember n × (a/b) = (n × a)/b...",
         "B": "This would be equivalent to 7 ÷ 3/4, we are multiplying. Remember n × (a/b) = (n × a)/b...",

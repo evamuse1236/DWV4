@@ -19,7 +19,7 @@
     {
       "questionId": 158871,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1a304004-3ecc-47ca-bba3-031e3bbddf4e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have counted the columns. To find the area you need to count the number of squares...",
         "B": "I think you have counted the rows. To find the area you need to count the number of squares...",
@@ -31,7 +31,7 @@
     {
       "questionId": 159070,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2e7da403-cc1a-4f84-a241-063b7d205e6e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have counted the columns. To find the area you need to count the number of squares...",
         "B": "This is 4 x 4, but there are 3 rows so to find the area you need to do 4 x 3...",
@@ -55,7 +55,7 @@
     {
       "questionId": 159071,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b6c5c9f3-38d4-4b62-b8f4-91cc8bf9558d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "There are columns of 4 squares, so we would need to add 4+4+4+4+4+4+4 to get the area... How could we say this as a multiplication?",
         "B": "This would give us the area but the question wants the multiplication... 7+7+7+7 is how many lots of 7?",
@@ -67,7 +67,7 @@
     {
       "questionId": 158873,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d1e6d338-ce64-47eb-9857-3a6bc7748ead.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have miscounted the number of columns, there are more than 4.",
         "B": "I think you have miscounted the number of rows, there are more than 6.",
@@ -79,7 +79,7 @@
     {
       "questionId": 159072,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a762ecc9-97c5-43a2-805f-f0c23b07ed13.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have miscounted the number of rows and columns...",
         "B": "I think you have miscounted the number of rows...",
@@ -91,7 +91,7 @@
     {
       "questionId": 158874,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/53f00412-6fc4-4d75-b3ce-66334bc04f24.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This value is how many columns there are, we need to multiply this by how many rows there are to find the area...",
         "B": "There are 6 rows and 2 columns so to find the area of the shape we do 6 x 2 = 12, therefore the area of the shape is 12 square units.",
@@ -103,7 +103,7 @@
     {
       "questionId": 159073,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a659bdc9-9167-4667-94e4-8872bacd5a26.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This value is how many columns there are, we need to multiply this by how many rows there are to find the area...",
         "B": "Close, but this is the value of 2 x 9. Double check the number of rows and columns to multiply together.",
@@ -115,7 +115,7 @@
     {
       "questionId": 158875,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8c8822a7-6737-4f9c-a1b5-3c3a42f0b4e2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is the number of squares that need to be colored in but the question is asking for the number of rows. There are 3 squares in each row, so how many rows need to be colored in?",
         "B": "There are 12 squares already colored, we need 24 in total so 12 more need to be colored in. There are 3 squares in each row and 12 ÷ 3 = 4 therefore 4 more rows need to be colored!",

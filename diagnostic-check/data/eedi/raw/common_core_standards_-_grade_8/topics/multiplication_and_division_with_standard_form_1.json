@@ -31,7 +31,7 @@
     {
       "questionId": 104016,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5376bcb0-df24-42f1-95ce-020dba401fa7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you subtracted 1 from the power as the 30 has been divided by 10. However these two sides are equal, so if the 30 is divided by 10 how could we balance this out?",
         "B": "If you multiply 30 by 10 5 times, you don't get the same as multiplying 3 by 10 5 times. How many times would you need to multiply 3 by 10 to get the same?",
@@ -43,7 +43,7 @@
     {
       "questionId": 104026,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cff8f8e0-228b-4712-b311-a0a60702924e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you multiplied the power by 100 as you need to balance out the 950 divide by 100. How many times do we x by 10 to cancel out a divide by 100? Remember the power is how many times we multiply by 10",
         "B": "If you multiply 950 by 10 7 times, you don't get the same as multiplying 9.5 by 10 7 times. How many times would you need to multiply 9.5 by 10 to get the same?",
@@ -67,7 +67,7 @@
     {
       "questionId": 104027,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/005b163d-780a-4f29-9740-5af02fefddfa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you multiplied the power by 100 as the 0.095 was multiplied by 100. How many times do we divide by 100 to cancel out a multiply by 100? Remember the power is how many times we multiply by 10",
         "B": "If you multiply 0.095 by 10 7 times, you don't get the same as multiplying 9.5 by 10 7 times. How many times would you need to multiply 9.5 by 10 to get the same?",
@@ -91,7 +91,7 @@
     {
       "questionId": 104028,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d19c1e78-2ec5-4648-9008-410a95c791a0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you added the 8 and 1, but remember this is a multiplication",
         "B": "I think you have multiplied the powers of 10. Remember the power tells us how many times we are multiplying by 10. How many times do we do this in total here?",
@@ -115,7 +115,7 @@
     {
       "questionId": 104029,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/11a43b7a-54ae-4048-a027-aa3dc3385b95.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have multiplied the powers of 10. Remember the power tells us how many times we are multiplying by 10. How many times do we do this in total here?",
         "B": "You have the right answer, but this is not in standard form.",
@@ -127,7 +127,7 @@
     {
       "questionId": 104020,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2fd8b301-3d81-4e97-aaad-1c385ccda9e4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have multiplied the powers of 10. Remember the power tells us how many times we are multiplying by 10. How many times do we do this in total here?",
         "B": "I think you added the 4.2 and 3, but remember this is a multiplication",

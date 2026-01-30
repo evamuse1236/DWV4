@@ -37,7 +37,7 @@
     {
       "questionId": 107515,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f63f4c8f-f04a-4ab7-b15a-7f5d788ce38d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, the y coordinate all along here would be 12, but it is not the width of the arrow.",
         "B": "We subtract the 𝑥 values to get the width, and so 10 – 3 = 7",
@@ -49,7 +49,7 @@
     {
       "questionId": 107520,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/54f03c8c-2f0a-4e51-acb5-d17b883497af.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost, you've used the correct numbers! If you go from 1 across to 8, how many does it take you to get there?",
         "B": "Not quite, I think you've found the difference in the coordinate (8,9). Try to find the distance of the red arrow",
@@ -61,7 +61,7 @@
     {
       "questionId": 166210,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/24568868-547f-4cdf-bde1-590660cfcb93.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have correctly spotted that the points (-5, 6) and (7, 6) both have a 6 as their y-value. If you plotted the two points, what sort of line would join them?",
         "B": "You have noticed that the points (-5, 6) and (7, 6) both have a 6. Remember that in coordinates the first number is the x-value and the second is the y-value.",
@@ -73,7 +73,7 @@
     {
       "questionId": 166437,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d95e4c19-562d-462c-b157-0be8421c1355.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have noticed that the points (2, 8) and (-5, 8) both have a 8, and if you look again you will see it is the second number in the bracket. Remember that in coordinates the first number is the x-value and the second is the y-value.",
         "B": "The points (2, 8) and (-5, 8) both have a 8 as their y-value. If you plotted the points and joined them up, the line you draw would be a horizontal line.",
@@ -97,7 +97,7 @@
     {
       "questionId": 166438,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db55e1d9-b9a3-4fdd-893d-2a20aaf9dbc3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The distance between (2, 8) and (-5, 8) will be a horizontal line because the points have the same y-value. This means that we can use the x-values to calculate the distance between the two points, and we don't need to plot the points first. |2 | + |-5 | means Katie wants us to add together the absolute values of the x-values, will her method work?",
         "B": "The distance between (2, 8) and (-5, 8) will be a horizontal line because the points have the same y-value.This means that we can use the x-values to work out the distance between the two points. We can add the absolute values, |2 | + |-5 | = 2 + 5 = 7. So Katie is correct. Tom is only incorrect because he insists that we MUST plot the points - we CAN if we want to, but it is also possible to do the calculation Katie suggests.",
@@ -109,7 +109,7 @@
     {
       "questionId": 166212,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0345b560-1da8-400e-80ec-c87f10360af7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have noticed that the points (-3, 9) and (-3, -2) both have a -3. Remember that in coordinates the first number is the x-value and the second is the y-value.",
         "B": "The points (-3, 9) and (-3, -2) both have a -3 as their x-value. If you plotted the points and joined them up, the line you draw would be a vertical line.",

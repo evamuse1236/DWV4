@@ -37,7 +37,7 @@
     {
       "questionId": 166343,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/33e748fb-0f5e-4455-aab8-171117b3e8cb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Linear equations do only cross at one point, but have another look at both equations. Can you see any connection between them?",
         "B": "Linear equations can only cross in one place, not two. But have another look at both equations. Can you see any connection between them?",
@@ -61,7 +61,7 @@
     {
       "questionId": 166344,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/46b4a982-b029-4396-a1cf-935d0ea9549d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "These two lines have the same slope, so what does that tell us about the lines?",
         "B": "Linear equations can only cross in one place, not two. But have another look at both equations, they have the same slope. What does that tell us about the lines?",
@@ -73,7 +73,7 @@
     {
       "questionId": 166571,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3569df96-c254-461f-ba84-4b4b6fb095a3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "To have infinitely many solutions the two equations would need to be equivalent. These are not equivalent as we have 5𝑥 + 7𝑦 = 9 and 5𝑥 + 7𝑦 = 2. The two lines do have the same slope though. What does that tell us about the lines?",
         "B": "These two lines have the same slope, so they are parallel. Parallel lines have no solutions as they will never cross.",
@@ -121,7 +121,7 @@
     {
       "questionId": 166573,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aa730e0f-060e-4e97-9820-dc66a7231c54.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have subtracted the equations to start with but as we have +8𝑥 and -8𝑥, we needed to add both equations to eliminate the 𝑥's.",
         "B": "(2, -4) is a solution for 𝑦 + 8𝑥 = 12 but not for 10𝑦 – 8𝑥 = 32. As we have +8𝑥 and -8𝑥, we can start by adding both equations to eliminate the 𝑥's.",
@@ -133,7 +133,7 @@
     {
       "questionId": 166347,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/774f2d9c-b4d3-4861-8e99-a3c47c602dfa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have assumed that half of the animals were chickens but you need to start by setting up a pair of equations which you can then solve by elimination. Using 𝑝 for the number of pigs and 𝑐 for the number of chickens, we get 𝑝 + 𝑐 = 60 and 4𝑝 + 2𝑐 = 200. Think about what you would need to multiply 𝑝 + 𝑐 = 60 by so that you can then eliminate the 𝑝's.",
         "B": "I think you have just halved the number of animals but you need to start by setting up a pair of equations which you can then solve by elimination. Using 𝑝 for the number of pigs and 𝑐 for the number of chickens, we get 𝑝 + 𝑐 = 60 and 4𝑝 + 2𝑐 = 200. Think about what you would need to multiply 𝑝 + 𝑐 = 60 by so that you can then eliminate the 𝑝's.",

@@ -37,7 +37,7 @@
     {
       "questionId": 89318,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/787702af-37eb-4a68-a544-63b295eb5815.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Be careful here, the fraction line separates the numerator and denominator, it acts as a bracket. You will need to work out the numerator before dividing.",
         "B": "Not quite, remember when answering a question we must follow the order of operations. Multiplication comes before addition.",
@@ -49,7 +49,7 @@
     {
       "questionId": 89330,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c96b433d-6a93-4a3d-92e6-921dee0dfd0d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Be careful here, the fraction line separates the numerator and denominator, it acts as a bracket. You will need to work out the numerator before dividing.",
         "B": "The 2 ＋ 10 ✕ 3 is all divided by 4, so we need to work this out first. Taking the order of operations into account, the multiplication needs to be done first: 2 ＋ 30 = 32. Now dividing this by 4 gives 8",
@@ -61,7 +61,7 @@
     {
       "questionId": 89319,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b92aebdf-b014-45e4-83c6-325c160d8867.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! Putting the brackets here means you would first calculate 1 + 2, which is 3. Then 12 x 6 = 72 and 72 - 3 = 69, not 36.",
         "B": "Not quite! Putting the brackets here means you would first calculate 6 - 1 + 2. Working left to right you get an answer of 7. Then 12 x 7 = 84, not 36.",
@@ -97,7 +97,7 @@
     {
       "questionId": 89333,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/76a68f76-a39f-4a2f-ad69-9d498e4eb6c0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Are you convinced that this is never true? You can always substitute in some numbers to check. A nice one to try would be a = 15, b = 3 and c = 2",
         "B": "Are you sure? Have you found a solution where it does not work? Use a calculator to check your answer.",
@@ -109,7 +109,7 @@
     {
       "questionId": 89322,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e2ec7d1b-5358-4e65-b676-eaade7e343d0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Be careful here. Consider if you substituted a number in, a nice one to try would be 5, we must always apply the order of operations and multiplication comes before subtraction.",
         "B": "Think of a number, then subtract 1, next multiply by 2. The \"multiply by 2\" in this case means multiply whatever the number is less one, so (n − 1), all multiplied by 2.",
@@ -121,7 +121,7 @@
     {
       "questionId": 89334,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/430b7110-4fd1-4319-b6ce-8a008ea768ad.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Be careful here. If you replace n with 6, do you get the same answer? We must always apply the order of operations and division comes before addition.",
         "B": "Think of a number, then add 4, next divide by 5. The \"divide by 5\" in this case means divide whatever four more than the number is, so n ＋ 4, all divided by 5.",
@@ -133,7 +133,7 @@
     {
       "questionId": 89323,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/88d10d2d-892b-45e0-97c3-759cb9b1f6ef.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost. Make sure you are checking that both expressions match the description given, taking into account the order of operations.",
         "B": "Almost. Make sure you are checking that both expressions match the description given, taking into account the order of operations.",

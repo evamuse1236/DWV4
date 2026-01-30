@@ -37,7 +37,7 @@
     {
       "questionId": 106644,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f419a8f9-dc01-4ffe-8efd-63e666245ced.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like Jo divided by 6 as her first step. But we need to divide every term by 6. Did Jo do that?",
         "B": "It looks like Paul added 4 on the right hand side of the equation (24 + 4 = 28). What did he do on the left hand side of the equation?",
@@ -49,7 +49,7 @@
     {
       "questionId": 106633,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dcb210cf-b5b4-4f3d-8ac7-72aba5959fc5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like Tom added 1 as his first step, because he saw '-1' inside the brackets on the left-hand side of the equation. But what happens to the '-1' when we multiply out the bracket?",
         "B": "Looking at the left-hand side of the equation, m has had 1 subtracted from it and then the whole expression has been multiplied by 4. To undo these steps, we do the inverse operations in the reverse order: so the best first step is to divide by 4. Doing this to both sides of the equation to keep it in balance will give Katie’s answer 𝑚 -1 = 5",
@@ -73,7 +73,7 @@
     {
       "questionId": 106634,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db9f717f-884b-46de-badc-788e93cd0244.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like Tom added 1 as his first step, because he saw '-1' in the numerator on the left-hand side of the equation. But what effect does the denominator have on this '-1'?",
         "B": "Looking at the left-hand side of the equation, 𝑚 has had 1 subtracted from it and then the whole expression has been divided by 4. To undo these steps, we do the inverse operations in the reverse order: so the best first step is to multiply by 4. Doing this to both sides of the equation to keep it in balance will give Katie’s answer 𝑚 -1 = 80",
@@ -85,7 +85,7 @@
     {
       "questionId": 106646,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/506295d6-318a-464b-bf25-1891d6f468d1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like Jo subtracted 4 as her first step, because she saw '+ 4' in the numerator on the left-hand side of the equation. But what effect do the fraction bar (vinculum) and the denominator have on this '+ 4'?",
         "B": "What do we do to get rid of a denominator, like the one on the left-hand side of this equation? What should Paul do to the right-hand side of the equation to keep it equal?",
@@ -121,7 +121,7 @@
     {
       "questionId": 106639,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bbad267e-5fef-43b0-adb7-923a6a3dd917.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you divided by 2 as a first step. That's fine but you need to divide every term by 2. Or maybe there is a better first step?",
         "B": "It looks like you might have made a mistake with the signs on one side of the equation. If we subtract 20 from both sides as our first step, what will we be left with on the left hand side of the equation? And what will we get on the right hand side?",
@@ -133,7 +133,7 @@
     {
       "questionId": 120907,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0970cae5-275d-400e-81ea-1287612f216c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you divided by 2 as a first step. That's fine but you need to divide every term by 2. Or maybe there is a better first step?",
         "B": "Subtracting 12 from both sides of the equation we get -2p = -5. Dividing both sides by -2 gives p = 2.5.",

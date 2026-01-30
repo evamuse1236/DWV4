@@ -49,7 +49,7 @@
     {
       "questionId": 129196,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/09517d32-ec23-4b4f-b717-5821eabdb41c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. You get a square number if you multiply any whole number by itself.",
         "B": "Not quite. You get a square number if you multiply any whole number by itself.",
@@ -85,7 +85,7 @@
     {
       "questionId": 129058,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7d092a27-b183-4156-87af-af5f2db24b27.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. We do use a 2 to write '8 squared' but this is a superscript 2 and looks like 8². Instead, here we need to work out the answer when we square 8.",
         "B": "I think you might have just written the digit 8 twice. '8 squared' means 8 multiplied by itself.",
@@ -97,7 +97,7 @@
     {
       "questionId": 129198,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bfdf4961-cb7e-4723-9ec1-eedc968030fe.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. I think you have multiplied 7 by 2. To square a number, we need to multiply it by itself.",
         "B": "7 squared means 7 multiplied by itself or 7 x 7. This gives us an answer of 49.",
@@ -109,7 +109,7 @@
     {
       "questionId": 129059,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3bb4c92a-1254-4894-aa91-e56554138796.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have mixed up your squares and cubes. To cube a number, we need to multiply it by itself and then by itself again.",
         "B": "3 cubed means 3 multiplied by itself and then multiplied by itself again, or 3 x 3 x 3. This gives us an answer of 27.",
@@ -121,7 +121,7 @@
     {
       "questionId": 129199,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/23e4f6a9-3a50-48e7-aa46-8c35769dc9a5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. We do use a little 3 to represent that a number is being cubed, but this is a superscript 3 and looks like 4³. Instead, here we need to work out the answer when we cube 4.",
         "B": "I think you have mixed up your squares and cubes. To cube a number, we need to multiply it by itself and then by itself again.",
@@ -133,7 +133,7 @@
     {
       "questionId": 129060,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/320d8ce3-7211-45e5-bb0d-a5bc1611e901.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have multiplied 5 by 3. When we cube a number, we have to multiply it by itself and itself again, not multiply it by 3.",
         "B": "I think you have mixed up your squares and cubes. To cube a number, we need to multiply it by itself and then by itself again.",

@@ -43,7 +43,7 @@
     {
       "questionId": 133814,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/68a7669c-b6fd-4647-9538-fb04672d578e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! Focus on what could happen if you spun the spinner - how many 'choices for landing' are there?",
         "B": "There are 5 different values that it can land on, but this is not the same as the number of possible outcomes.",
@@ -55,7 +55,7 @@
     {
       "questionId": 131622,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f4761c3d-74df-4b2f-8c69-86852e594655.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have added the number of outcomes for each spinner. Remember we are combining each of the outcomes from the first with each of the outcomes of the second. It might help to try listing them all in a table.",
         "B": "I think you have added the different number of outcomes for each spinner. Remember we are combining each of the outcomes from the first with each of the outcomes of the second. It might help to try listing them all in a table.Remember that each of the sections in each spinner needs to be considered separately.",
@@ -67,7 +67,7 @@
     {
       "questionId": 133815,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eb519600-2210-4357-94e9-c3e394c2489a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost, but I think you used the number of different outcomes for each spinner. Each of the sections in the spinners needs to be considered separately, even if it has the same number on it.",
         "B": "There are 9 possible outcomes for spinner 1, and 9 possible outcomes for spinner 2. If both are spun, then there will be 9 × 9 = 81 possible outcomes. To check this, you can record all the outcomes in a table - yes, there will be outcomes that have duplicate numbers, but they still count!",
@@ -91,7 +91,7 @@
     {
       "questionId": 133816,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b6270869-ab70-44b8-8626-280ea585f2ac.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is the number of outcomes for the first spinner. If a 1 were to be spun on the first spinner, then the second spinner could land on 1, 2, 3 or 4. We could record these results as (1,1), (1,2), (1,3) and (1,4). There are more results because the first spinner might land on other values. Try listing them in a table to help with how many!",
         "B": "This is the number of spinners, but not the number of outcomes. If a 1 were to be spun on the first spinner, then the second spinner could land on 1, 2, 3 or 4. We could record these results as (1,1), (1,2), (1,3) and (1,4). There are more results because the first spinner might land on other values. Try listing them in a table to help with how many!",
@@ -103,7 +103,7 @@
     {
       "questionId": 131624,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a5c5993b-83a9-48a1-a073-15b7140392ba.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've identified the scores correctly but what do you have to do to these scores?",
         "B": "The highlighted cell shows that a 2 was scored with spinner 1, and a 5 was scored with spinner 2. The instructions are to add these scores, which gives an answer of 7.",
@@ -115,7 +115,7 @@
     {
       "questionId": 133817,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dc16ed53-e8f2-42a0-8996-6c6aa9f10f12.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you've identified the scores correctly but what do you have to do to these scores?",
         "B": "I think you've identified the scores correctly but what do you have to do to these scores?",
@@ -127,7 +127,7 @@
     {
       "questionId": 131625,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3512fc46-5114-468e-ba9f-5af6e725e040.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Try filling in the table by adding the scores together, and then see how many 4s you have.",
         "B": "I think you have spotted that 1 + 3 and 3 + 1 would give 4, but how many of the cells are made up of a combination of 1s and 3s?",
@@ -139,7 +139,7 @@
     {
       "questionId": 133818,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/75116f76-c5a2-454c-b80a-b7a91acc75bf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "There is a single 5 on the first spinner, but we have to add the numbers. Try filling in the table by adding the scores together, and then see how many 5s you have.",
         "B": "I think you might have found some of the pairs that will add to 5 Try filling in the whole table by adding the scores together, and then see how many 5s you have.",

@@ -43,7 +43,7 @@
     {
       "questionId": 76741,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/542ab011-fc10-4d48-a18c-4b3ef0dd52a7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Are you sure? Check the first number on the number line again",
         "B": "You're so close! This is the mixed number shown, but the question has asked for the improper fraction shown, try again :)",
@@ -55,7 +55,7 @@
     {
       "questionId": 78808,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1db50a8d-20a6-45e7-86ec-d1d6b236648b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Are you sure? Check the first number on the number line again",
         "B": "You're so close! This is the mixed number shown, but the question has asked for the improper fraction shown, try again :)",
@@ -79,7 +79,7 @@
     {
       "questionId": 100611,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bcb0c8fa-bab3-4ee4-b2b6-7f24074fedd4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have correctly identified how far between the two fractions the arrow is, but we need the value it is pointing to. First think about what fraction would be exactly half way between 1/6 and 3/6.",
         "B": "You may just be estimating. You need to work out exactly what it is. You can use decimals in your working if that helps!",
@@ -91,7 +91,7 @@
     {
       "questionId": 100603,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/65bab30b-0d7a-476d-95ac-6d9d1c8d1bb9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The 3 and 5 don't tell us the fraction. We need to look at the difference between these numbers and how many jumps it has been split into.",
         "B": "Almost, this would have been right if the marked numbers were 3 and 4. What difference does the extra 1 make?",
@@ -103,7 +103,7 @@
     {
       "questionId": 100619,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/96b11f96-a227-423f-826f-69e53b65444a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Think about the difference between the 3 and 7, and how many jumps it has been split into.",
         "B": "The difference between the marked values of 7 and 3 is 4. This amount is shared evenly along 3 intervals, meaning that each of those intervals has a value of 4 ÷ 3 = 4/3.",
@@ -127,7 +127,7 @@
     {
       "questionId": 133657,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1aad4787-a905-4ce5-a125-e8075651211a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "3/8 is not between 2/4 and 3/4. 1/4 = 2/8, and 2/4 = 4/8, so 3/8 is between those two values. You could use a denominator of 8 to help you here though.",
         "B": "The star is in the middle of 2/4 and 3/4. As it is in the middle, we can use a denominator of 8 instead, as the lines in between will have this denominator. 2/4 = 4/8 and 3/4 = 6/8, so the middle is 5/8.",

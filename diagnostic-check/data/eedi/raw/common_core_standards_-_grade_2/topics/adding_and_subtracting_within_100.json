@@ -49,7 +49,7 @@
     {
       "questionId": 159557,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8d6a2e4e-64b2-4fb7-bb7d-07f0efc13bbb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have subtracted 3 from 8 because it's smaller, but you need to subtract all of 18 from all of 73. Try borrowing 10 so that you can start with 13 - 8 for the ones digit.",
         "B": "3 is smaller than 8 so we borrow 10 and do 13 - 8 = 5 for the ones digit. That leaves 6 - 1 = 5 for the tens digit, so the final answer is 55.",
@@ -61,7 +61,7 @@
     {
       "questionId": 159336,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cbb1ce73-a75b-4e49-bf2a-f81cb0501ee0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have done 75 - 18, but this question is 75 + 18.",
         "B": "Almost! I think you forgot to carry the 10. 5 + 8 = 13, so we have an extra 10 to add up with the 70 and 10...",
@@ -73,7 +73,7 @@
     {
       "questionId": 159558,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0a47e18b-db34-44ba-aea9-650beeba774b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost! I think you forgot to carry the 10. 6 + 7 = 13, so we have an extra 10 to add up with the 40 and 20...",
         "B": "Not quite - I think you started counting up on 46 instead of 47. Count 47, 48, 49, ... Or add 20 and then 7.",
@@ -85,7 +85,7 @@
     {
       "questionId": 161468,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5d9e8b14-19da-49d0-ada4-80c85128904a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. I think you subtracted rather than added.",
         "B": "Starting in the right hand column 4 + 3 = 7. Moving to the left we have 6 + 3 = 9.",
@@ -97,7 +97,7 @@
     {
       "questionId": 161471,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/51483bed-5929-42a1-b90a-a7cac833c276.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. I think you subtracted rather than added.",
         "B": "Starting in the right hand column 6 + 3 = 9. Moving to the left we have 5 + 3 = 8",
@@ -109,7 +109,7 @@
     {
       "questionId": 161469,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/caee40cd-43be-4525-afec-676a2f808d4c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, I think you added by mistake.",
         "B": "I think you made a mistake when counting back. Remember when doing 9 - 2, you would go back one to 8, and then one to 7.",
@@ -121,7 +121,7 @@
     {
       "questionId": 161472,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/28e549b2-3640-4060-bc61-ee2f7baffae1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, I think you added by mistake.",
         "B": "I think you made a tiny slip. Check 5 - 2.",
@@ -145,7 +145,7 @@
     {
       "questionId": 161473,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/72653c7b-ce1b-4ef6-95c3-daf9fd8f74af.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you did 4 - 3. Remember we want to know what we would have subtracted from to get a 3 in the tens column. Make sure you take into account the 1 that is borrowed for the units column.",
         "B": "Not quite. I think you added 4 and 3, but remember 1 was borrowed for the units column.",

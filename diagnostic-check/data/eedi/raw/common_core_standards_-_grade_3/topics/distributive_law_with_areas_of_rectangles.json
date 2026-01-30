@@ -25,7 +25,7 @@
     {
       "questionId": 158881,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/159ec9a2-40bb-4133-b2f7-c000a2a5957a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is the total number of blue squares. What number goes in the box so that the calculation written in blue has an answer of 6? ",
         "B": "This is the number of rows and is already included in the question, you need to give the number of columns...",
@@ -73,7 +73,7 @@
     {
       "questionId": 158883,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/479308d5-7e5c-41d2-8d9e-51113ce0cec9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is the total number of columns. If we have already included 10 in the calculation 6 x 10, how many more need to be included?",
         "B": "There are 15 columns in the whole rectangle, we have already included 10 of them in the calculation 6 x 10 so the missing number must be 5 to do 6 x 5.",
@@ -85,7 +85,7 @@
     {
       "questionId": 159082,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/700e150f-45c2-4b18-9940-562c8cb0a2c3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "There are 13 columns in the whole rectangle, we have already included 10 of them in the calculation 8 x 10 so the missing number must be 3 to do 8 x 3.",
         "B": "This is the total number of columns. If we have already included 10 in the calculation 8 x 10, how many more need to be included?",
@@ -97,7 +97,7 @@
     {
       "questionId": 158884,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/440d7659-e008-49e5-a276-4a0dbad84873.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is the area of the blue rectangle only. You also need to add the area of the pink rectangle to find the area of the whole shape!",
         "B": "This is the area of the pink rectangle only. You also need to add the area of the blue rectangle to find the area of the whole shape!",
@@ -109,7 +109,7 @@
     {
       "questionId": 159083,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/771e7f71-3063-4873-8d65-8daab9e92b20.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is the area of the pink rectangle only. You also need to add the area of the blue rectangle to find the area of the whole shape!",
         "B": "This is the area of the blue rectangle only. You also need to add the area of the pink rectangle to find the area of the whole shape!",
@@ -121,7 +121,7 @@
     {
       "questionId": 158885,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0c71a99a-4e10-4be1-9da9-2d518da3dd18.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is the area of the pink rectangle only. You also need to add the area of the blue rectangle to find the area of the whole shape!",
         "B": "This is the area of the blue rectangle only. You also need to add the area of the pink rectangle to find the area of the whole shape!",

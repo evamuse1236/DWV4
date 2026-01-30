@@ -19,7 +19,7 @@
     {
       "questionId": 166224,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dd6903b5-3566-4acb-8dc6-fd74de08c113.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, 7 + 𝑛 means 7 more than a number, we want 7 times a number.",
         "B": "It seems like you've written it as if it was 3 times a number rather than 7 times a number.",
@@ -31,7 +31,7 @@
     {
       "questionId": 166451,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5a9a1fc1-b933-44c7-adb7-c99959ba3951.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It seems like you've written it as if it was 4 times a number rather than 6 times a number.",
         "B": "Remember that it should be the sum of four and six times a number equal to 68. Your calculation seems to be in the wrong order here! ",
@@ -43,7 +43,7 @@
     {
       "questionId": 166225,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7704bb84-b6f3-4fc8-8164-d0885c533de6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Have a look carefully at the question. Do we reduce a number by adding to it?",
         "B": "5 times a number can be written as 5𝑛. If we reduce by 6, we want to subtract 6, so that is 5𝑛 – 6 and that is equal to 51. So we have 5𝑛 – 6 = 51",
@@ -55,7 +55,7 @@
     {
       "questionId": 166452,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bbb46963-cf92-44c0-b228-f75287769b8d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Have a look carefully at the question. Do we reduce a number by adding to it? Also, check carefully what we are multiplying the number by!",
         "B": "Not quite - I think you may have some numbers in the wrong place here! We want 7 times a number reduced by 3. ",
@@ -67,7 +67,7 @@
     {
       "questionId": 166226,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6c35fa3d-1d5e-4782-97c4-823162bbfe9e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Here, we have only multiplied the number by 3 rather than the sum of the number and 5. How can we show that we want both 𝑛 and 5 to be multiplied by 3?",
         "B": "Here, we have only multiplied 5 by 3 rather than the sum of the number and 5. How can we show that we want both 𝑛 and 5 to be multiplied by 3?",
@@ -79,7 +79,7 @@
     {
       "questionId": 166453,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/30d635ba-45a1-42ca-8fee-31e0128d7294.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Here, we have only multiplied 8 by 2 rather than the sum of the number and 8. How can we show that we want both 𝑛 and 8 to be multiplied by 2?",
         "B": "Here, we have only multiplied the number by 2 rather than the sum of the number and 8. How can we show that we want both 𝑛 and 8 to be multiplied by 2?",
@@ -91,7 +91,7 @@
     {
       "questionId": 166227,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2a3816d2-9c30-4ad6-974e-ef4e1c591fbb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Here, we have only given the product of 7 and a number. We want to give the product of 7 and the sum of a number and two. How can we show that the whole sum is being multiplied by 7?",
         "B": "This would be the product of 𝑛 and the sum of 7 + 2. The sum should be of a number and two, then we need to represent a product of this and 7.",
@@ -103,7 +103,7 @@
     {
       "questionId": 166454,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ad50e43d-763c-4da9-a8cf-fb646b144907.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This would be the product of 𝑛 and the sum of 9 + 5. The sum should be of a number and 5, then we need to represent a product of this and 9.",
         "B": "Here, we have only given the product of 9 and a number. We want to give the product of 9 and the sum of a number and 5. How can we show that the whole sum is being multiplied by 9?",
@@ -115,7 +115,7 @@
     {
       "questionId": 166228,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4ab8c9b6-22cf-47b2-928d-cb125aa888d8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you might have your quotient the wrong way around! The first number of the quotient is the first in the division.",
         "B": "Here you have shown a multiplication, but a quotient is a division.",
@@ -127,7 +127,7 @@
     {
       "questionId": 166455,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8c555768-5acb-404e-aaa8-a2e9f845cd72.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you might have your quotient the wrong way around! The first number of the quotient is the first in the division.",
         "B": "Not quite, 15 is the quotient, which means it is the answer to the division.",

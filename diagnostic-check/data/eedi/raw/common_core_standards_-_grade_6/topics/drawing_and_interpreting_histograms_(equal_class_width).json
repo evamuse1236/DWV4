@@ -19,7 +19,7 @@
     {
       "questionId": 166780,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c4433c5c-72ff-47e2-b647-4a9544836b88.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you have noted the frequency of the histogram. We need to find a data set that could be represented by the histogram. Which data set has 4 data points greater than or equal to 0, but less than 10?",
         "B": "It seems you just gave the end points on the time axis. We need to find a data set that could be represented by the histogram. Which data set has 4 data points between 0 and 10?",
@@ -31,7 +31,7 @@
     {
       "questionId": 167030,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/78581b5b-b5a8-4ed4-876d-af7812ceed8c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember, the endpoints are located in bin to the right.",
         "B": "The first bin has a frequency of 2 and bin values 0 ≤ x < 10, so 4, 7 meet this criteria. The second bin has a frequency of 6 and bin values of 10 ≤ x < 20, so 12, 14, 15, 16, 17, 19 meet this criteria. The third bin has a frequency of 5 and bin values of 20 ≤ x < 30, so 22, 24, 25, 27, 27 meet this criteria. This data set matches the histogram.",
@@ -67,7 +67,7 @@
     {
       "questionId": 166782,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ae70b5a2-a6f3-49d9-a9ee-e706b242ff27.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you have noted the frequency of the histogram. We need to find a data set that could be represented by the histogram. Which data set has 2 data points greater than or equal to 0, but less than 10?",
         "B": "The first bin has a frequency of 2 and bin values 0 ≤ x < 10, so 1, 5 meet this criteria. The second bin has a frequency of 5 and bin values of 10 ≤ x < 20, so 11, 13, 15, 18, 19 meet this criteria. The third bin has a frequency of 4 and bin values of 20 ≤ x < 30, so 22, 25, 28, 29 meet this criteria. The fourth bin has a frequency of 1 and bin values 30 ≤ x < 40, so 35 meets this criteria. This data set matches the histogram.",

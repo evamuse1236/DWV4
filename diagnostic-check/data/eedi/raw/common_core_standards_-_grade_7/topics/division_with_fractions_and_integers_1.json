@@ -25,7 +25,7 @@
     {
       "questionId": 130237,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dc1aed8f-b06e-40dc-817c-5f7c8724141c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Ignore the green shading and think of the shape as a whole.",
         "B": "Not quite. How many sections does the '?' represent? How many sections are there in total?",
@@ -37,7 +37,7 @@
     {
       "questionId": 130257,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/40781f23-d456-4582-87fe-fca056f10a88.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Ignore the green shading and think of the shape as a whole.",
         "B": "Not quite. How many sections does the '?' represent? How many sections are there in total?",
@@ -49,7 +49,7 @@
     {
       "questionId": 130238,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ac7cc30e-9d11-4875-87a5-a3ca3617cdd6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You've found the calculation for the green section, rather than the question mark.",
         "B": "2/3 is not the fraction that shows how much is shaded green. How many sections has the whole bar been split into?",
@@ -61,7 +61,7 @@
     {
       "questionId": 130258,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5319fbd1-a56c-4862-ac20-96a028e31d9b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You've found the calculation for the green section, rather than the question mark.",
         "B": "The green section represents 3/7 of the overall bar, the question mark is one third of this, and so 3/7 ÷ 3 gives the ?",
@@ -85,7 +85,7 @@
     {
       "questionId": 130259,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0779a5fc-2de2-420f-af34-5fc50cf3259f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you have divided the numerator by 3 and multiplied the denominator by 3. What do we get if we split 3/11 into 3 parts?",
         "B": "It looks like you have multiplied the numerator by 3 instead of dividing by 3.",
@@ -97,7 +97,7 @@
     {
       "questionId": 130240,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1469f493-531c-4691-9adf-2efe732dde58.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you have divided the denominator by 2. Try first writing 1/8 as 2/16 and then carry out a division involving the numerator.",
         "B": "It looks like you have subtracted 2 from the denominator. Try first writing 1/8 as 2/16 and then carry out a division.",
@@ -133,7 +133,7 @@
     {
       "questionId": 130261,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d5e8f96c-0836-4548-923a-2e0054c2324b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "We do not divide the denominator when dividing by an integer. To visualise this, imagine a cake split into 9 pieces. 6 slices are left, and you share those between 3 people. How much of the cake does each person get?",
         "B": "When dividing a fraction by an integer, we do sometimes multiply the denominator by that integer, but we do not do it at the same time as dividing the numerator. 2/18 is effectively 9 times smaller, rather than 3 times smaller.",

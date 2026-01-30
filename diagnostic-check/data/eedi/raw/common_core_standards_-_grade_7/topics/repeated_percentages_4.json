@@ -43,7 +43,7 @@
     {
       "questionId": 76822,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/90353ede-4eff-4801-84af-617383dee6f9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is the multiplier for one year, but we would need to apply this twice. What would that be as a single multiplier?",
         "B": "This would find 3%, but we need to decrease by 3%. How many percent would we have left after reducing by 3%?",
@@ -79,7 +79,7 @@
     {
       "questionId": 81473,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5858a541-1704-4bd5-beee-70a4ceea012c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This would find 15%, but we want to reduce by 15%. How many percent would we have left?",
         "B": "This would be a 1.5% reduction, we need to reduce by 15%. How many percent would we have left if we lose 15%?",
@@ -91,7 +91,7 @@
     {
       "questionId": 81299,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b645237c-ab6c-4481-9293-a946797d0433.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost, this is the value after 6 years.",
         "B": "Almost, this is the value after 4 years.",
@@ -103,7 +103,7 @@
     {
       "questionId": 81474,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c15b3e56-e30f-41ec-8f14-c218cb8c5ec6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have used simple interest, but this is a compound loss. We lose 15% of the new value each year.",
         "B": "We have £1100 × (0.85)⁶ = £415.",
@@ -115,7 +115,7 @@
     {
       "questionId": 81300,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3732243e-9f67-4903-82ce-601895bde294.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you found 20% = 180 and took this amount off every year. Remember we take 20% of the new value off each year.",
         "B": "It is not less than £200 at this point . Make sure you count the number of times you use the multiplier.",
@@ -139,7 +139,7 @@
     {
       "questionId": 81301,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2fb1babc-87a0-4335-a7c3-41424e7d46f2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, the value of the tablet is falling so we are looking for a decreasing graph NOT increasing.",
         "B": "We need a graph where the amount it falls by reduces over time, and which approaches but never reaches 0. This is the graph that matches that criteria. .",
@@ -151,7 +151,7 @@
     {
       "questionId": 81476,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bb7f183b-8535-4397-81f6-a8f027a6fcef.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, the value of the tablet is falling so we are looking for a decreasing graph NOT increasing.",
         "B": "Here the graph is going down by the same amount each time. We are looking for a graph where the amount it falls by reduces over time.",

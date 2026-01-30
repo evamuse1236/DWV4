@@ -25,7 +25,7 @@
     {
       "questionId": 135277,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0db4ab73-a500-411e-815a-f86bd3a881fd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. I think you have just used the number in front of the second bracket. Remember you will get xs from the first bracket too",
         "B": "The first bracket will give us 10x and then we need to subtract 4x leaving us with 6x",
@@ -37,7 +37,7 @@
     {
       "questionId": 135297,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0b2f01cf-bf8c-4f07-8b73-10e320bb2583.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Remember the numbers Infront of the bracket will need to be multiplied by everything inside",
         "B": "Not quite. Remember the numbers Infront of the bracket will need to be multiplied by everything inside, also take note of the - between the brackets",
@@ -49,7 +49,7 @@
     {
       "questionId": 135278,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6eb141a3-71aa-46c5-ba57-0d28ca71310d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Remember the numbers infront of the bracket will need to be multiplied by everything inside",
         "B": "Not quite. Remember the numbers infront of the bracket will need to be multiplied by everything inside, also take note of the - between the brackets",
@@ -61,7 +61,7 @@
     {
       "questionId": 135298,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b8fcb6af-7138-4575-8088-e8937d4f2077.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Remember the numbers Infront of the bracket will need to be multiplied by everything inside, also take note of the - between the brackets",
         "B": "Not quite. Remember the numbers Infront of the bracket will need to be multiplied by everything inside",
@@ -85,7 +85,7 @@
     {
       "questionId": 135299,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/df94fb8a-8410-40fd-8902-aac5b94da89a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, the second bracket won't give us any x squared terms.",
         "B": "I think you have combined your x and x squared terms, we are only interested in the x squared that comes from the first bracket",
@@ -109,7 +109,7 @@
     {
       "questionId": 135300,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f879017a-35b2-42c2-aad1-343c1bcf80cc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have found the P, we are interested in Q which is the x term",
         "B": "The first bracket gives us -5x and the second gives us 12x. -5 + 12 = 7",
@@ -121,7 +121,7 @@
     {
       "questionId": 135281,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/37e707ff-db5a-4ce7-b4af-bc8deb16dfc0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you forgot to multiply by the number outside the bracket.",
         "B": "I think you combined the -1 and -2 in the two brackets. Remember everything inside the bracket is multiplied by what is on the outside.",
@@ -133,7 +133,7 @@
     {
       "questionId": 135301,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/685d44e9-a3e9-460f-b9e3-5f2186a55cc1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you included the -5 from the first bracket, but this is -5x. We are only interested in the constant terms",
         "B": "We don't get any constant terms from the first bracket, only from the second which gives us 6 x -3 = -18",

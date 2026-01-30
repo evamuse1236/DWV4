@@ -37,7 +37,7 @@
     {
       "questionId": 98485,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/580295c3-3961-4b9f-82ed-711fc7013908.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you might have multiplied all 3 sides together. To find the area of a parallelogram, we need to multiply base by perpendicular height.",
         "B": "I think you have multiplied the 10 and the 4 together. But we need to make sure we are using the perpendicular height when calculating area.",
@@ -61,7 +61,7 @@
     {
       "questionId": 98486,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b91ea0f4-36b3-4e10-ae88-e70aacdc4f20.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have tried to work backwards by subtracting the 12cm. This is not quite right. How would we work out the area of a parallelogram?",
         "B": "Not quite. I think you have found the perpendicular height and then doubled it, but m is not the perpendicular height.",
@@ -73,7 +73,7 @@
     {
       "questionId": 98498,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/030de765-9fae-41b6-8971-dfc7aaab9ced.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have tried to work backwards by subtracting the 8cm. This is not quite right. How would we work out the area of a parallelogram?",
         "B": "Area of parallelogram = base ✕ perpendicular height. In this diagram, the base is m, and the perpendicular height is 8 cm (because the top side is parallel to the base, the 8 cm is perpendicular to both). 56 = m ✕ 8, meaning m = 56 ÷ 8 = 7 cm.",
@@ -85,7 +85,7 @@
     {
       "questionId": 109430,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/45848c85-76e4-4ccf-9548-482a6b127a50.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have confused units of area with units of volume.",
         "B": "The units for area always involve a squared element. Answer B of m² is the only squared unit. Answer A is a unit of volume, and C and D are units of length.",
@@ -97,7 +97,7 @@
     {
       "questionId": 109435,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea3e7a50-90a6-4438-8385-6db7043e9249.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. m stands for metres which is a unit of length, not area.",
         "B": "Not quite. cm stands for centimetres which is a unit of length, not area.",
@@ -109,7 +109,7 @@
     {
       "questionId": 109431,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/23070158-df68-4c21-999e-da110bb05569.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. The letters 𝑎 and 𝑏 refer to the parallel sides of a trapezium. Which sides are parallel?",
         "B": "The lengths 𝑎 and 𝑏 are always the parallel sides of a trapezium, as indicated by the arrows, so 𝑎 + 𝑏 = 9 + 10.",
@@ -121,7 +121,7 @@
     {
       "questionId": 109436,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/56b20c6e-5913-4c23-b108-ce4bb16dd18a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. The letters 𝑎 and 𝑏 refer to the parallel sides of a trapezium. I think the orientation of the shape has confused you, but make sure you look out for the parallel side notation.",
         "B": "Not quite. The letters 𝑎 and 𝑏 refer to the parallel sides of a trapezium. I think the orientation of the shape has confused you, but make sure you look out for the parallel side notation.",
@@ -145,7 +145,7 @@
     {
       "questionId": 109437,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/264440a2-0f79-4e5c-a9d2-3bb0a9f67630.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, you have chosen a slant height, but we need the perpendicular height.",
         "B": "Not quite, you have chosen a slant height, but we need the perpendicular height.",

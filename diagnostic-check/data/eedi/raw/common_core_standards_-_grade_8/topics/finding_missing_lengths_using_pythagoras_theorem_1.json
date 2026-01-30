@@ -31,7 +31,7 @@
     {
       "questionId": 79633,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6a580176-f7ab-4239-8ba1-5a39b8a7e6e3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Remember Pythagoras' Theorem shows the relationship between the squares of the sides of a right angled triangle.",
         "B": "Not quite. This formula would give a value of a that is bigger than c. But c is the hypotenuse, the longest side in a right-angled triangle.",
@@ -43,7 +43,7 @@
     {
       "questionId": 122901,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b39751a9-ed3e-4c2d-a7d0-76da782b5e14.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Remember Pythagoras' Theorem shows the relationship between the squares of the sides of a right angled triangle.",
         "B": "We have a² + b² = c², subtracting a² from both sides we get b² = c² - a²",
@@ -67,7 +67,7 @@
     {
       "questionId": 79678,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/44e9bbd2-f0f2-4def-9b6a-3fb0c587af9e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Remember Pythagoras' Theorem shows the relationship between the squares of the sides of a right angled triangle. a² + b² = c².",
         "B": "So close! All you need to do now is find the square root.",
@@ -79,7 +79,7 @@
     {
       "questionId": 79635,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9c15d7f9-946b-419c-ad6d-118ae2efe243.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Remember Pythagoras' Theorem shows the relationship between the squares of the sides of a right angled triangle. a² + b² = c².",
         "B": "11² + 6² = 157, so the answer is the square root of this.",
@@ -103,7 +103,7 @@
     {
       "questionId": 79636,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c62dca81-bda6-4027-b089-573d0198f6f9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Check your working! Remember in a right-angled triangle b² = c² - a² where c is the longest side",
         "B": "Not quite. The length you are finding is one of the shorter sides in the right-angled triangle. We are therefore expecting a length smaller than 21.7. \nRemember to subtract, rather than add, when finding a shorter length.",
@@ -115,7 +115,7 @@
     {
       "questionId": 79680,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2525573d-3feb-4e1c-a908-a9e99889d3e8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. I think you have doubled the side lengths rather than squared them. Remember in a right-angled triangle b² = c² - a², where a² = a ✕ a.",
         "B": "We have x = √(17.5² - 8.9²) = √227.0 = 15.1cm.",
@@ -127,7 +127,7 @@
     {
       "questionId": 79637,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dfb3b1b8-fe46-4a1b-a262-73b6be84e0f9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. The diagonal of the rectangle will be the longest length in the two right-angled triangles formed. This means we must add rather than subtract.",
         "B": "Not quite. Draw a sketch of the rectangle. Draw in the diagonal. What type of triangles does the diagonal split the triangle into? What theorem can we use to find missing lengths in this shape?",
@@ -139,7 +139,7 @@
     {
       "questionId": 79681,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ee50816e-f457-4d1e-863e-67eab5385751.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. The diagonal of the rectangle will be the longest length in the two right-angled triangles formed. This means we must add rather than subtract.",
         "B": "Not quite. Draw a sketch of the rectangle. Draw in the diagonal. What type of triangles does the diagonal split the triangle into? What theorem can we use to find missing lengths in this shape?",

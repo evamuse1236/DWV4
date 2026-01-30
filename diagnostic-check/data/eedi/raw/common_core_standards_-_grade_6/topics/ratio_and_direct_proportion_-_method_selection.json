@@ -37,7 +37,7 @@
     {
       "questionId": 131631,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7c319b8c-d453-49ef-b877-babfb776ac72.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have calculated the amount of double cream needed for 1 person. The question asks for the amount of milk needed for 1 person.",
         "B": "The recipe tells us that we need 320 ml for 4 people, so we would need to divide that by 4 to find the amount for 1 person. 320/4 = 80ml. Therefore we would need 80 ml of milk for one person.",
@@ -49,7 +49,7 @@
     {
       "questionId": 133824,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/051902d0-4959-4e22-9eeb-c41e7c285ec1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have assumed that you would subtract 3 to find the amount of double cream for 1 person. If we need 300ml for 4 people, we would need a quarter of that amount for 1 person. How would we find a quarter of 300ml?",
         "B": "I think you have assumed that you would multiply by 4, but that would calculate the amount of double cream for 4 x 4 = 16 people. If we need 300ml for 4 people, we would need a quarter of that amount for 1 person. How would we find a quarter of 300ml?",
@@ -73,7 +73,7 @@
     {
       "questionId": 133825,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/217d7359-e102-4ac1-a6c1-4227177869c0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have assumed that we would need double the amount of milk. However, 10 is not double 4. 10 is 2.5 times 4, so we would need 2.5 times the amount of milk. What would 2.5 times 320 ml be?",
         "B": "I think you have assumed that we would need 10 times the amount of milk. However, we have been given the amount of milk for 4 people, not 1. 10 is not ten times 4. 10 is 2.5 times 4, so we would need 2.5 times the amount of milk. What would 2.5 times 320 ml be?",
@@ -97,7 +97,7 @@
     {
       "questionId": 133826,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3e851e24-0c92-42fa-b0af-352f30d0a51c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Be careful, you've multiplied by 4 here so you've found the amount of caster sugar for 16 people instead of 1. What could you do to find the amount of caster sugar for 1 person?",
         "B": "Be careful, I think you've subtracted 3g of caster sugar for 3 people. Think about sharing the amount of caster sugar equally between the 4 people to find it for 1 person.",
@@ -109,7 +109,7 @@
     {
       "questionId": 131634,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c90fe439-5b58-404a-aeef-0263206ec8cf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! I think you've thought about how many biscuits Kate has, instead of how many Isaac has in comparison to Kate.",
         "B": "Be careful! I think you've calculated that 3 is 2 more than 1, instead of thinking about this in terms of a ratio. For example, if Isaac had 6 biscuits then Kate would have 2.",
@@ -133,7 +133,7 @@
     {
       "questionId": 131635,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eb1c367f-a516-4b20-916e-a7a0068874fe.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! The 12 does not refer to the total number of sweets Kate and Isaac share. Have a closer look at the position of the 12, which bar is it located beneath? Is this 12 showing Isaacs sweets, Kates sweets or the difference between the two?",
         "B": "Kate and Isaac share the sweets in the ratio 3:2. The 3 blue bars represent Kates sweets and the two red represent Isaacs. The 12 is positioned next to Isaac's bars and underneath the one additional bar Kate has. This tells us that the additional one part of the ratio received by Kate must be 12 sweets, therefore Kate must get 12 more sweets than Isaac.",
@@ -145,7 +145,7 @@
     {
       "questionId": 133828,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/34f70756-dd41-40ae-8070-03db94485762.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! The 12 does not refer to the total number of sweets Kate and Isaac share. Have a closer look at the position of the 12, which bars is it located beneath? Is this 12 showing Isaacs sweets, Kates sweets or the difference between the two?",
         "B": "Not quite! The 12 does not refer to how many more sweets Kate has than Isaac. Have a closer look at the position of the 12, which bars is it located beneath? Is this 12 showing Isaacs sweets, Kates sweets or the total number of sweets they share?",

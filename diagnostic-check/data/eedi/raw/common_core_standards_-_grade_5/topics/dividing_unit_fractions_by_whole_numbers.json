@@ -31,7 +31,7 @@
     {
       "questionId": 101033,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e78f2426-05d0-4193-a77b-12ad40da3028.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "We do want 1 block, but how big is this considering the whole bar is worth 1/6?",
         "B": "This is 1/5 of the shape, but it is 1/5 of 1/6. What operation do we use for this?",
@@ -43,7 +43,7 @@
     {
       "questionId": 101052,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5aab86d2-f489-41fc-a72b-efaf7be71cfc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is 1/4 of the shape, but it is 1/4 of 1/5. What operation do we use for this?",
         "B": "We do want 1 block, but how big is this considering the whole bar is worth 1/5?",
@@ -55,7 +55,7 @@
     {
       "questionId": 158412,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b76ff46a-44fb-4562-bec0-035e3b0b0051.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite - the bar is already split into thirds, but we want to divide one third by six. How many pieces should we cut each third into?",
         "B": "Not quite - this would be how many pieces in the whole bar after we divide each third into 6. We want to know how many pieces in one third.",
@@ -67,7 +67,7 @@
     {
       "questionId": 158559,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/032feb19-1be9-49d0-b6ef-dd43eeb1b117.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite - the bar is already split into thirds, but we want to divide one third by five. How many pieces should we cut each third into?",
         "B": "Dividing by 5 means sharing into 5 parts, so we would cut each third into 5 pieces.",
@@ -79,7 +79,7 @@
     {
       "questionId": 158413,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ffd74d71-ef0d-4d8a-bd5e-dbccd382b8b3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The question mark does show one piece out of the whole bar, but how many pieces has the whole bar been split into? That will be the denominator.",
         "B": "The light shading does show 3/9, but we are looking for the dark shading. This is the light section divided into 3 parts, so 3/9 ÷ 3. ",
@@ -91,7 +91,7 @@
     {
       "questionId": 158560,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0bbe3541-8db7-4487-9716-6dfd2f5d67f1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The question mark does show one piece out of the whole bar, but how many pieces has the whole bar been split into? That will be the denominator.",
         "B": "The darker orange section is 1/4 of the whole shaded section. But what fraction is the darker orange section of the whole model?",
@@ -103,7 +103,7 @@
     {
       "questionId": 158414,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5e20a0a8-b66d-4a08-8786-a0e07e73e024.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Think about an easier example: 5 x 3 = 15, so what is 15 ÷ 3? Can you make the same link in this question?",
         "B": "Close, but I think you might have flipped over the 1/5 and then multiplied by the 4 which isn't quite right... Think about an easier example: 5 x 3 = 15, so what is 15 ÷ 3?",
@@ -127,7 +127,7 @@
     {
       "questionId": 158415,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c200bdf6-2f90-4429-9eac-c5aa01a59023.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Close, but I think you might have flipped over the 1/7 and then multiplied by 4, which isn't quite right... Remember 4 can be written as 4/1, and if you're using the \"Keep Flip Change\" method it's the second fraction that flips over.",
         "B": "Close, but I think you might have flipped over both fractions and then multiplied - remember if you're using the \"Keep Flip Change\" method it's the second fraction which flips over.",
@@ -139,7 +139,7 @@
     {
       "questionId": 158562,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ff95b4ed-e53b-4bd4-903a-c6f0d29cb782.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Close, but I think you might have flipped over the 1/9 and then multiplied by 6, which isn't quite right... Remember 6 can be written as 6/1, and if you're using the \"Keep Flip Change\" method it's the second fraction that flips over.",
         "B": "Close, but I think you might have flipped over both fractions and then multiplied - remember if you're using the \"Keep Flip Change\" method it's the second fraction which flips over.",

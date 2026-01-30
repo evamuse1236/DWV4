@@ -31,7 +31,7 @@
     {
       "questionId": 78413,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dd20c4fb-07f5-4dae-a4b4-4f418f0731f6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have picked the student with the lowest score on the maths test, rather than the highest score.",
         "B": "I think you have accidentally chosen the student who has done the best overall, scoring high in science and maths but the question wants the student who scored highest in maths. We don't need to consider their science mark.",
@@ -43,7 +43,7 @@
     {
       "questionId": 78707,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d9316a51-d16a-4c71-8317-07d3851936a1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Look at the labels on the axes, you have found the student with the highest science score, not the highest mark in maths.",
         "B": "The maths test score is shown along the x-axis. Student B achieved the highest maths mark as the point is furthest along the x-axis. They got a score of 9.",
@@ -67,7 +67,7 @@
     {
       "questionId": 78708,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9a198404-c00c-4495-839b-8c543ff0eddf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have accidentally chosen a student who scored 4 times higher in their science score compared to their maths. We only want a student who has scored double their science score, in maths. The best way to answer this question is read off each students' science score, double it and then see if that is their maths score.",
         "B": "I think you have accidentally swapped the phrasing of the question round. You have found the student whose maths mark is double their science mark, you need to find the student whose science mark is double their maths mark.",
@@ -79,7 +79,7 @@
     {
       "questionId": 78420,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/da8f63b4-fe20-4f39-9551-2838a84a624f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! I think you have added 10 to 100. Try going up the side to 10 and read over to where it hits the orange line.",
         "B": "Reading across from 10 to the orange line, gives a reading of 114 on the IQ axis.",
@@ -91,7 +91,7 @@
     {
       "questionId": 78714,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7f4336e6-78c1-450d-8bc2-d85aa4c93ac8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! I think you may have counted 8 points along. Try reading off at 8, until you hit the orange line.",
         "B": "Close! I think you have read across at 8, but haven't read over the whole way to the orange line.",
@@ -127,7 +127,7 @@
     {
       "questionId": 131645,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a14520c5-4bf4-4421-8978-a1a05c80196b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, this is the number of children that like Maths and Guitar. To find Maths and Piano, read across from Maths and down from Piano to find where they would cross over.",
         "B": "To find the value that represents how many children like Maths and Piano, we need to read across the Maths row and down the Piano column to see where they would cross over. This shows us that 7 children like Maths and Piano.",
@@ -139,7 +139,7 @@
     {
       "questionId": 133838,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f0926948-0a76-4449-b441-720562c689c4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, this is the number of children that like Maths and Recorder. To find Art and Recorder, read across from Art and down from Recorder to find where they would cross over.",
         "B": "Not quite, this is the number of children that like Art and Piano. To find Art and Recorder, read across from Art and down from Recorder to find where they would cross over.",

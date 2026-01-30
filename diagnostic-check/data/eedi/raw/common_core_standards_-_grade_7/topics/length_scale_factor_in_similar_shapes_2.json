@@ -43,7 +43,7 @@
     {
       "questionId": 78609,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/236bd5de-ae8d-488e-80d9-41c3193612c7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have added 15cm to the 4cm side, but this will not keep the sides in proportion. We need to find the scale factor by working out what number we need to multiply 6 by in order to get 21.",
         "B": "I think you have correctly found the scale factor (3.5), but forgotten to work out the missing length. If all lengths are 3.5 times as big, what will the missing length be?",
@@ -55,7 +55,7 @@
     {
       "questionId": 78316,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0810f179-6e48-46ac-af62-98f4c2065718.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you have multiplied the lengths together. To find the scale factor, we are looking for the number we need to multiply the smaller length by to get the larger length. 8 x ? = 12",
         "B": "Almost! The scale factor is the number we have to multiply the smaller shape lengths by to get the larger shape lengths. 8 x ? = 12",
@@ -67,7 +67,7 @@
     {
       "questionId": 78610,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5f1794b4-48be-46b5-a0ad-559b64ac11d7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost! The scale factor is the number that we have to multiply the smaller shape lengths by to get the larger shape lengths. 4 x ? = 10",
         "B": "To calculate the scale factor, we need to know how many times longer the sides of the large shape are than the sides of the small shape. So we do 10 ÷ 4 = 2.5.",
@@ -91,7 +91,7 @@
     {
       "questionId": 122118,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/23b80ccd-b99c-40e1-961c-45aa0da047e3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have doubled the angle. Look at the other 2 angles in the smaller triangle. What do angles in a triangle add up to?",
         "B": "I think you have halved the angle because the side length has been halved. Look at the other 2 angles in the smaller triangle. What do angles in a triangle add up to?",
@@ -103,7 +103,7 @@
     {
       "questionId": 101413,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f218971d-6000-43ec-a190-2f109cfc7fca.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The perimeter is the length all the way round the shape. If all the lengths making up the perimeter are doubled, the effect on the perimeter will also be to double it. To show this, let’s call the lengths of the sides on this shape a, b, c and d. On the new shape, the lengths will be 2a ＋ 2b ＋ 2c ＋ 2d = 2(a ＋ b ＋ c ＋ d) = 2 ✕ perimeter of original shape.",
         "B": "If we have doubled each side then we have multiplied each side by 2. Is this the same as adding 2 to our perimeter?",
@@ -115,7 +115,7 @@
     {
       "questionId": 101428,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/37e4fd80-55c2-4ef2-9736-183eb1617843.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You might have tried to treble the perimeter 3 times, once for each side. When we treble one side, we don't treble the whole perimeter. What effect would trebling all the sides have?",
         "B": "If we have trebled each side then we have multiplied each side by 3. Is this the same as adding 3 to the perimeter?",
@@ -127,7 +127,7 @@
     {
       "questionId": 101414,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c6044698-6d50-45f9-9908-b1255830684a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You may have chosen to multiply as it has been enlarged (gets bigger). However 4 x 10 would give us 40. Are the lengths on shape Q 40 times bigger than the lengths on shape P?",
         "B": "You have worked out the difference between the 2 lengths. Instead, we are looking for the number which we need to multiply 4 by in order to get to 10.",
@@ -139,7 +139,7 @@
     {
       "questionId": 101429,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/be0c7f7a-7026-48c8-b961-971ecf477a9d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Nearly! Your answer would be right if we were going from Shape Q to Shape P but we need to go the other way. 3 divided by 11 will give us an answer less than 1, which means shape Q would be smaller than shape P.",
         "B": "Take care to note which ‘way’ the enlargement works: the question states from shape P to shape Q, so we are being asked 3 ✕ ? = 11. To work out ?, the constant of proportionality we need to use the inverse of ✕ 3. So we need 11 ÷ 3.",

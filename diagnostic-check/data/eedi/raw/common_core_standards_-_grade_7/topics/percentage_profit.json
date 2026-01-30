@@ -37,7 +37,7 @@
     {
       "questionId": 143354,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d5702cc1-91bb-4a3b-8bc6-4de876a4bc7d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've added £15. We need to find 15% of £80 before adding :)",
         "B": "A profit means we have 15% more than the original price. We can find 10% of 80 = 8, then 5% = 4. Adding them together we get 15% = £12. Adding that to the original amount of £80, we get £92.",
@@ -49,7 +49,7 @@
     {
       "questionId": 143369,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/927826fc-17c1-473e-a826-ebdc06d88873.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you've added 35%=0.35 on to 60. We need to add 35% of 60 onto the value. Try finding 10% and 5% first :)",
         "B": "You have correctly found 35% of £60. We need to do an extra step to find the price the painting is sold for though :) (Remember that profit means 35% on top of the original price).",
@@ -61,7 +61,7 @@
     {
       "questionId": 143355,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e2764673-4907-4ce9-8870-1b956a1c5abb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you found the profit as a percentage of the final amount, we need it as a percentage of the original amount.",
         "B": "I think you have found the profit, but to make it into a percentage we need to write the 60 as a percentage of the original £80.",
@@ -73,7 +73,7 @@
     {
       "questionId": 143370,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5d43f198-78f3-4255-8abc-bb36fecb20d7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have found 60 as a percentage of 114. We need to find the profit as a percentage of the original amount",
         "B": "The profit is 114 - 60 = 54. We need this as a percentage of the original, so 54/60 x 100 = 90%",
@@ -85,7 +85,7 @@
     {
       "questionId": 143356,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1084c5d8-a79d-409a-866e-302b40939d8a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you wrote the original as a percentage of the profit. We need to do the profit as a percentage of the original.",
         "B": "To find the profit, 300 - 80 = 220. To write this as a percentage of the original we need to do 220/80 x 100 = 275%",
@@ -97,7 +97,7 @@
     {
       "questionId": 143371,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/86c61667-3bba-49aa-9f1e-8df5062af200.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you found the profit as a percentage of the final amount, we need it as a percentage of the original amount.",
         "B": "I think you have found the profit, but to make it into a percentage we need to write the 108 as a percentage of the original 60.",
@@ -109,7 +109,7 @@
     {
       "questionId": 143357,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bfce4b16-8c74-4386-aa27-0600dac45919.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have used 20,000 as the final amount. The 20,000 is the original, so how much would the profit of 100% be?",
         "B": "The profit is 100% of 20,000 = 20,000",
@@ -121,7 +121,7 @@
     {
       "questionId": 143372,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/51fe73ff-cfb6-4e18-b1ab-09e44ebb09cb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you added on 100. We need to know what 100% of 35,000 is.",
         "B": "I think you have found the total amount. How much of that is profit?",
@@ -145,7 +145,7 @@
     {
       "questionId": 143373,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/31cf0bec-7d9b-4d20-a934-7c30ff4cfeef.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. If we increase the remaining 20% by 80% it would be 80% of 20% = 16%, giving a total of 36% of the original value. Try giving the share a value of £100 to start with, and then work out the percentages.",
         "B": "This is how much is left after the share value falls. Try putting in a share value of £100 and work out the percentages using this value.",

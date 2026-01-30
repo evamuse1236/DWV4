@@ -43,7 +43,7 @@
     {
       "questionId": 166351,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b9df6f3a-d232-4a88-8105-05eca268b27f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This would be the last transformation, the question is asking about the first - from A to B...",
         "B": "B to C is a reflection. The question is asking about the transformation from A to B...",
@@ -55,7 +55,7 @@
     {
       "questionId": 166578,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fef0d988-2bf9-44b4-afe1-d25489c042c3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The shapes are the same size, so it's not dilation. How has C been transformed to get D?",
         "B": "To transform C to D, it has been moved 2 units left and 7 units up. We call this transformation a translation!",
@@ -91,7 +91,7 @@
     {
       "questionId": 166353,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/062cf640-8171-46d3-9a63-81ba70c672e1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Although this could be a reflection, it wouldn't be in the 𝑥-axis. Has K been translated or rotated to get L?",
         "B": "This would be J to K... The question is asking about K to L",
@@ -103,7 +103,7 @@
     {
       "questionId": 166580,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0dd75220-25fc-4201-b5d2-a7021f8adfb3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This would be the last transformation, the question is asking about the first - from J to K...",
         "B": "Although this could be a reflection, it wouldn't be in the 𝑥-axis. Has J been translated or rotated to get K?",
@@ -127,7 +127,7 @@
     {
       "questionId": 166581,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c5b799cc-0b43-4991-b858-18816f2fed7d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This would be the first transformation, the question is asking about the last - from Y to Z...",
         "B": "Looking at the diagram, we can see Y is 3 spaces away from the 𝑦-axis and so is Z (in the opposite direction). Therefore, this transformation is a reflection in the 𝑦-axis!",

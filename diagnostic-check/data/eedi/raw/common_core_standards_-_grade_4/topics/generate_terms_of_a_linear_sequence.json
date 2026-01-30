@@ -43,7 +43,7 @@
     {
       "questionId": 131506,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/601b9ea2-d3e9-420f-beab-ef51c8faf5cf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, we aren't going up by 1 each time. Look at how many we have to add on to go from one term to the next.",
         "B": "Not quite, we aren't going up by 2 each time. Look at how many we have to add on to go from one term to the next.",
@@ -55,7 +55,7 @@
     {
       "questionId": 134099,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/222d56a7-010a-4eff-b0a1-c4d5fa819763.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, we aren't going up by 1 each time. Look at how many we have to add on to go from one term to the next.",
         "B": "We are adding 6 each time, so the next number is 21 + 6 = 27",
@@ -67,7 +67,7 @@
     {
       "questionId": 131507,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a69fc654-47fa-4d4d-bc7d-c055bfbb5a82.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have found the second term. We need the third term",
         "B": "The first term is 10. The second will be 10 + 6 = 16, and the third 16 + 6 = 22.",
@@ -79,7 +79,7 @@
     {
       "questionId": 134100,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/527c0c9d-7ea3-42e2-9eec-d52de3457fd0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. I think you started at 4, and went up in steps of 5.",
         "B": "I think you have found the second term. We need the third term",
@@ -103,7 +103,7 @@
     {
       "questionId": 134101,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1252c026-fd54-4658-863b-45e6f857b646.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have taken 1 away from 51, but the sequence isn't going down in 1s.",
         "B": "The sequence is going down in 2s, so the next term will be do 51 - 2 = 49",
@@ -115,7 +115,7 @@
     {
       "questionId": 131509,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/36b0bd91-8f3e-4851-8b18-f745beb84a1b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you forgot to add some more squares on to the last term to get the next pattern.",
         "B": "Each time we are increasing the shape by 2 squares by placing them on the end. That means we need to put two more on to create pattern B.",
@@ -127,7 +127,7 @@
     {
       "questionId": 134102,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dcd69060-c8ee-40ef-829b-8aa793c23cc6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you forgot to add the extra square(s) on to the last term to get the next pattern.",
         "B": "Not quite. You have added a square on the right, but did the height of the bars change in any of the patterns shown?",
@@ -139,7 +139,7 @@
     {
       "questionId": 131510,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/40fddea7-c61c-484b-9ebf-c5b51840356b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have multiplied the first term by 10, however we can't use multiplication like this. Look at what the sequence is going up by each time, and see how many blocks you will need to add to get to the 10th term.",
         "B": "We have 3, 5, 7, 9 as our sequence. We need to go up another 6 terms, so adding on another 6 lots of 2 will get us to 21",
@@ -151,7 +151,7 @@
     {
       "questionId": 134103,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/558d18bb-26cb-4789-8416-f7b05f56a1a5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have multiplied the first term by 10, however we can't use multiplication like this. Look at what the sequence is going up by each time, and see how many blocks you will need to add to get to the 10th term.",
         "B": "Almost. If we start with 3 squares for the first term, how many more terms do we need to get up to the 10th?",

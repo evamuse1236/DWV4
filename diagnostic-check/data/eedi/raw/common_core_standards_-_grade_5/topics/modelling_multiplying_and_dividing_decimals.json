@@ -31,7 +31,7 @@
     {
       "questionId": 158381,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0292fb13-b0e3-44c5-8d6e-26fcc644464e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've correctly counted that there are 8 \"sticks\". However, comparing the diagrams with the calculation, we can see that each \"stick\" must represent 1 tenth, not 1 whole.",
         "B": "I think you've correctly counted that there are 80 squares. However, comparing the diagrams with the calculation, we can see that each \"stick\" of 10 squares must represent 1 tenth (0.1), not 1 ten (10).",
@@ -67,7 +67,7 @@
     {
       "questionId": 158606,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/86c2f95b-ae69-4c99-a6a3-9c60b5d36c92.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've only multiplied the 1 tenth by 4, you need to multiply the 4 hundredths by 4 as well. Or you could find the answer by counting up the \"sticks\" and squares in the diagram. Each \"stick\" represents 0.1 = 1 tenth. And each square represents 0.01 = 1 hundredth.",
         "B": "Each \"stick\" represents 0.1 = 1 tenth. And each square represents 0.01 = 1 hundredth. I think you've correctly counted that altogether we have 4 sticks and 16 squares. But, notice that every set of 10 squares make a stick. How else can we write those 16 squares?",
@@ -79,7 +79,7 @@
     {
       "questionId": 158383,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bbee0849-37be-47b0-838f-b08a7fe8bf8e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. By comparing the calculation with the diagram, notice that each \"stick\" represents 0.1 = 1 tenth (not 1 whole). And each square represents 0.01 = 1 hundredth (not 1 tenth).",
         "B": "The diagram shows 0.84 (8 tenths and 4 hundredths) divided into 2 equal parts. Each part has 4 tenths (4 \"sticks\") and 2 hundredths (2 squares) = 0.42.",
@@ -103,7 +103,7 @@
     {
       "questionId": 158384,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d45e6882-265a-447a-aeeb-52e05554737d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've counted the unshaded squares. But the answer to the multiplication is found by counting the overlapping squares (those that have been shaded with both colours).",
         "B": "I think you've counted all the squares that are shaded with just one colour. But the answer to the multiplication is found by counting the overlapping squares (those that have been shaded with both colours).",
@@ -127,7 +127,7 @@
     {
       "questionId": 158385,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d9c5ecaa-5b5c-4b9d-9224-8210ce33735b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've counted all the squares that are shaded with just one colour. But the answer to the multiplication is found by counting the overlapping squares (those that have been shaded with both colours).",
         "B": "Each square represents 0.01 = 1 hundredth. The answer to the multiplication is found by counting the overlapping squares. There are 45 squares that have been shaded in both colours = 45 hundredths = 4 tenths and 5 hundredths = 0.45.",
@@ -139,7 +139,7 @@
     {
       "questionId": 158609,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0bb996e9-8b6f-4102-860e-87f2f275fa4a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite - each square represents 1 hundredth, not 1 tenth. How many squares are shaded with both colors?",
         "B": "I think you've counted all the squares with some shading. But the answer to the multiplication is found by counting the overlapping squares (those that have been shaded with both colors).",

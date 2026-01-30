@@ -19,7 +19,7 @@
     {
       "questionId": 158340,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6b09c71d-5ac0-4982-9fd9-b8b6e7ae6c60.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Start by doing 10 x 10. Then multiply by 10 and then by 10 again.",
         "B": "Nearly! Start by doing 10 x 10. Then multiply by 10 and then by 10 again.",
@@ -31,7 +31,7 @@
     {
       "questionId": 158629,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6c35d113-a9a8-472d-bcd9-68711dfcab92.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Start by doing 10 x 10. Then multiply by 10 again...",
         "B": "Start by doing 10 x 10. Then multiply by 10 again...",
@@ -43,7 +43,7 @@
     {
       "questionId": 158341,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e3ffd14c-7627-497e-8147-f79ba8da9115.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "10² (10 squared), means multiply 10 by itself.",
         "B": "This would be correct for 10³, but we just want 10² (10 squared).",
@@ -55,7 +55,7 @@
     {
       "questionId": 158630,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/20ad1cf2-54b9-4462-ae45-0f53d967e547.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "10³ (10 cubed), means multiply 10 by itself three times...",
         "B": "10³ (10 cubed), means multiply 10 by itself three times. Therefore, 10³ = 10 x 10 x 10.",
@@ -67,7 +67,7 @@
     {
       "questionId": 158342,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ba70fd98-dbd1-47ba-89e4-322d5418ae91.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "10³ (10 cubed) means multiply 10 by itself and then by itself again.",
         "B": "10³ (10 cubed) means multiply 10 by itself and then by itself again. Therefore, 10³ = 10 x 10 x 10 = 1,000",
@@ -103,7 +103,7 @@
     {
       "questionId": 158632,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a7252824-f673-4799-b161-724744533d3e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, 10⁶ = 1,000,000 (six zeros).",
         "B": "Not quite, 10⁷ = 10,000,000 (seven zeros).",
@@ -115,7 +115,7 @@
     {
       "questionId": 158344,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f981714d-9bcf-4fe0-8e96-f4b3a24bf765.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, 10³ = 10x10x10 = 1,000 (three zeros).",
         "B": "Not quite, 10⁵ = 10x10x10x10x10 = 100,000 (five zeros).",

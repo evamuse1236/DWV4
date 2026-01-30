@@ -37,7 +37,7 @@
     {
       "questionId": 129046,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/28df3796-3157-426d-8ae4-8e4e6b0486a0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "\"Composite\" means \"not prime\". Is 11 prime?",
         "B": "\"Composite\" means \"not prime\". Is 13 prime?",
@@ -49,7 +49,7 @@
     {
       "questionId": 129186,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0445d385-9b6e-4185-8ca6-c083feefa5f7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "\"Composite\" means \"not prime\". Is 19 prime?",
         "B": "\"Composite\" means \"not prime\". 21 = 3 × 7.",
@@ -73,7 +73,7 @@
     {
       "questionId": 129187,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dd8c657f-6bb0-4a38-8fb6-92362697f0c8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "2 is the first prime number.",
         "B": "2 is both prime and a factor of 10.",
@@ -97,7 +97,7 @@
     {
       "questionId": 129188,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e71a640f-47d2-41ae-a6b4-5c3bfe56606f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Does 41 have any factors other than 1 and 41?",
         "B": "51 is not prime as 3 × 17 = 51.",
@@ -109,7 +109,7 @@
     {
       "questionId": 129049,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/02459933-048d-4624-8946-4f582970e0b7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "A prime number is only divisible by 1 and itself. Try dividing 21 and 23 by some smaller numbers.",
         "B": "21 = 3 × 7, but 23 only has factors of 1 and itself.",
@@ -121,7 +121,7 @@
     {
       "questionId": 129189,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bca081d6-bbae-40dc-96cd-ee8277518345.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "A prime number is only divisible by 1 and itself. Try dividing 27 and 29 by some smaller numbers.",
         "B": "27 = 3 × 9, but 29 only has factors of 1 and itself.",
@@ -133,7 +133,7 @@
     {
       "questionId": 129050,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/831d0ec9-c0b1-42f7-85e7-acb1333c1c4a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "1 is neither prime nor a multiple of 5 (it is a factor of 5).",
         "B": "5 is the only prime divisible by 5.",
@@ -145,7 +145,7 @@
     {
       "questionId": 129190,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/62f19d15-0b9e-42ba-a836-f849a647973a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "3 is not a multiple of 9, it is a factor of 9.",
         "B": "9 = 3 × 3 so 9 is not prime.",

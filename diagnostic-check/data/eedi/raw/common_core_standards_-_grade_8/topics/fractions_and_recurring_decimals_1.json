@@ -19,7 +19,7 @@
     {
       "questionId": 103968,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a3001c59-5fcc-4c1f-9401-7a255c6b1ec3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. When it is recurring the number is repeated forever.",
         "B": "A recurring decimal is one that has a repeating digit, or repeating digits. This is indicated by a dot over the repeated digit. The other value in the question, 0.333, ends and does not have a dot over it so is not recurring",
@@ -43,7 +43,7 @@
     {
       "questionId": 103969,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/74fc6380-4848-4f3e-9f32-1b0b3d852d94.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The dot doesn't represent a zero, it means recurring. That means it goes on forever. How could this be indicated?",
         "B": "Almost, but the dot means recurring, so the number goes on forever. This one stops after 2 decimal places. What could represent it repeating forever?",
@@ -67,7 +67,7 @@
     {
       "questionId": 103970,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/60ba9386-0f01-4802-9a8c-32103b74df5e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. 0.5151 is a terminating decimal. The dot, which is just over the one, is telling us that this decimal is a recurring decimal (it continues forever). How could we write this?",
         "B": "Not quite. The dot is telling us that this decimal is a recurring decimal (it continues forever). 0.511 is a terminating decimal. How could we show that this decimal is continuing forever?",
@@ -79,7 +79,7 @@
     {
       "questionId": 103978,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c6ed17d2-a921-4161-bd1b-e6eab673181d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. 0.737373... would be the decimal if there was a dot over both the seven and the three. How do we write the decimal when the dot is only over the three?",
         "B": "The dot placed over 3 indicates that this is the only digit that repeats itself forever, and so another way of conveying this is by writing 0.7333... with the three dots that follow indicating the number does not end.",
@@ -91,7 +91,7 @@
     {
       "questionId": 103971,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/837922d2-e064-4c01-9985-85bca5ec36e6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. 0.5151 is a terminating decimal. The dots are telling us that this decimal is a recurring decimal (it continues forever). How could we write this?",
         "B": "Not quite. The dots, over the 5 and the 1, are telling us that this decimal is a recurring decimal (it continues forever). 0.511 is a terminating decimal. How could we show that this decimal is continuing forever?",
@@ -115,7 +115,7 @@
     {
       "questionId": 103973,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/05f0f681-8975-4841-ac12-dd7827ccb414.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Have another look at the positioning of the dots, they are not over the 5 and the 1. In this notation the location of the two dots show the first and last number that should be repeated included in the repetition.",
         "B": "Not quite. The dots, over the 3 and the 1, are telling us that this decimal is a recurring decimal (it continues forever). 0.351351 is a terminating decimal, as it stops. How could we show that this decimal is continuing forever?",

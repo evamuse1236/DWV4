@@ -25,7 +25,7 @@
     {
       "questionId": 106596,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fcfa78a4-ae19-4de1-a820-f4da162bfa9a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The ★ tells us how to go from 7𝑥 to 𝑥. Remember 7𝑥 means 7 ✕ 𝑥. What can we do to 7 ✕ 𝑥 to end up with just 𝑥?",
         "B": "The ★ tells us how to go from 7𝑥 to 𝑥. Remember 7𝑥 means 7 ✕ 𝑥. What can we do to 7 ✕ 𝑥 to end up with just 𝑥?",
@@ -37,7 +37,7 @@
     {
       "questionId": 120815,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6d740b81-9e92-49af-acf4-3ef4504a58a2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The ★ tells us how to go from y/9 to y. We know y/9 means y divided by 9. Would adding 9 to y/9 leave just y?",
         "B": "The ★ tells us how to go from y/9 to y. We know y/9 means y divided by 9. We therefore need to do the opposite and multiply by 9",
@@ -61,7 +61,7 @@
     {
       "questionId": 120816,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e5dc68fc-11a5-4ab5-af92-67a53db0546f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The ★ tells us how to go from y + 9 to just y. What can we do to y + 9 to end up with just y?",
         "B": "The ★ tells us how to go from y + 9 to just y. Would multiplying y + 9 by 9 leave us with y?",
@@ -73,7 +73,7 @@
     {
       "questionId": 106598,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c2b847cb-b647-401a-87ea-effe0dc3e756.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The ★ tells us how to go from 𝑥/7 to 𝑥. Remember 𝑥/7 means 𝑥 ÷ 7. What can we do to 𝑥 ÷ 7 to end up with just 𝑥?",
         "B": "The ★ tells us how to go from 𝑥/7 to 𝑥. We know 𝑥/7 means 𝑥 ÷ 7 and that means 𝑥 is divided by 7. We therefore need to do the opposite and multiply by 7. So 𝑥 ÷ 7 ✕ 7 = 𝑥.",
@@ -85,7 +85,7 @@
     {
       "questionId": 120817,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e766e24b-754b-4b49-8506-7a02ac9e446b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The ★ tells us how to go from 9y to just y. Would adding 9 to 9y leave us with y?",
         "B": "The ★ tells us how to go from 9y to just y. Would multiplying 9 by 9y leave us with y?",
@@ -97,7 +97,7 @@
     {
       "questionId": 106599,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e5cd7b08-4ff7-4a34-88c2-729e53efb686.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The ★ tells us how to go from 𝑥 + 7 to 𝑥. What can we do to 𝑥 + 7 to end up with just 𝑥?",
         "B": "The ★ tells us how to go from 𝑥 + 7 to 𝑥. What can we do to 𝑥 + 7 to end up with just 𝑥?",
@@ -121,7 +121,7 @@
     {
       "questionId": 106600,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7b038c37-dede-4553-affe-c7c54784ef18.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Subtracting 3 will not solve the equation. Remember to 'undo' an operation we must do its inverse.",
         "B": "Not quite. Multiplying by 3 will not solve this equation. Remember to 'undo' an operation we must do its inverse, multiplication is not the inverse of subtraction.",
@@ -133,7 +133,7 @@
     {
       "questionId": 106618,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/80013374-08f6-4630-90f8-1056b5d4e046.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Dividing by 5 will not solve this equation. Remember to 'undo' an operation we must do its inverse, division is not the inverse of subtraction.",
         "B": "p = 15 is the correct answer. In this equation 5 is being subtracted from the unknown number p. To undo this subtraction we add 5 to both sides to get 15 = p which is the same as p = 15.",

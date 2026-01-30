@@ -25,7 +25,7 @@
     {
       "questionId": 136213,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e4a1eb38-a7da-47aa-a7f3-e8c2e97cc761.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Remember the dot means the number will be repeated forever",
         "B": "Not quite. Remember the dot means the number will be repeated forever",
@@ -37,7 +37,7 @@
     {
       "questionId": 136228,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f75f7c6e-5ae7-4591-bab5-9780529d7a84.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Remember the dot means the number will be repeated forever",
         "B": "Not quite. Remember the dot means the number will be repeated forever",
@@ -49,7 +49,7 @@
     {
       "questionId": 136214,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/87279633-7ce7-4528-8e39-da24955e163f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. p/100 would be 0.0p",
         "B": "Not quite, this is only true when p = 3. Try putting in some different values for p and change the decimal into a fraction",
@@ -61,7 +61,7 @@
     {
       "questionId": 136229,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0b764603-1555-4718-9754-985404630994.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Try putting in some different values for z and changing the decimal into a fraction",
         "B": "Not quite, I think you are trying to simplify the fraction. 0.099999... would simplify to 3/30, but the z isn't the same in both representation.  Try putting in some different values for z and change the decimal into a fraction",
@@ -85,7 +85,7 @@
     {
       "questionId": 136230,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/069a6973-85f2-4653-bd7d-cfce82426eb4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. There are dots above the y and z so both of these are repeated",
         "B": "Not quite. There are dots above the y and z so both of these are repeated",
@@ -109,7 +109,7 @@
     {
       "questionId": 136231,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8202c18f-4dcd-444b-a7c5-8215e889a9b8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Try multiplying by 100 and 10",
         "B": "Make x = 0.yzzzzzzz. 100x = yz.zzzzzzzz and 10x = y.zzzzzzzz 100x - 10x = 90x which is yz - y. Divide this by 90 to get x = yz - y / 90",
@@ -121,7 +121,7 @@
     {
       "questionId": 136217,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/de815c87-24a3-4682-922a-cba1a639e191.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Try multiplying 0.pqpqpqpqpq by 100.",
         "B": "Let x = 0.pqpqpqpq, then 100x = pq.pqpqpqp... Doing 100x - x we get 99x = pq, so x = pq/99",
@@ -133,7 +133,7 @@
     {
       "questionId": 136232,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/64fa044b-2a07-4f3c-91da-bcab9fb2a82f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Try multiplying 0.yzyzyzyz by 100.",
         "B": "Not quite. Try multiplying 0.yzyzyzyz by 100.",

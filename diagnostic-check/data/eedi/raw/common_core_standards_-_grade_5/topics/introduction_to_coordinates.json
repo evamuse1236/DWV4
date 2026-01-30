@@ -19,7 +19,7 @@
     {
       "questionId": 158477,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1881df30-9ce8-4abb-bc8e-180035f1ef5f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The line going across the middle of the graph is called the x axis, but what do we call both the yellow lines together?",
         "B": "These lines are called the axes - going across is the x axis, and up/down is the y axis.",
@@ -31,7 +31,7 @@
     {
       "questionId": 158590,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1c8bb960-8e89-4e23-88f7-ecf6a4d7d157.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The line going down the middle of the graph is called the y axis, but what do we call both the yellow lines together?",
         "B": "The line going across the middle of the graph is called the x axis, but what do we call both the yellow lines together?",
@@ -67,7 +67,7 @@
     {
       "questionId": 158479,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/237e042a-349f-4861-a553-dee321b1290c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost, but the x axis goes across the graph (think \"x is a cross\")",
         "B": "Only one of the axes is highlighted yellow, is it the x axis or the y axis?",
@@ -91,7 +91,7 @@
     {
       "questionId": 158480,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6da6be97-b8c7-42aa-93e5-95d39bbf842d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The x axis is the horizontal line across the middle of the graph, so is 2 the x-coordinate or the y-coordinate?",
         "B": "The x-coordinate tells us how far along the point is from 0 - this point is 2 along.",
@@ -103,7 +103,7 @@
     {
       "questionId": 158593,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1a1fd349-e9b5-4893-9d49-074145eddbb9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The x axis is the horizontal line across the middle of the graph, so is 5 the x-coordinate or the y-coordinate?",
         "B": "I think you have mixed up x and y - the x coordinate tells us how far along the point is from 0, but this point is not 5 to the right, it's 5 up...",

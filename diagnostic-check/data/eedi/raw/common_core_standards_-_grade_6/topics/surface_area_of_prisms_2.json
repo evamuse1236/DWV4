@@ -25,7 +25,7 @@
     {
       "questionId": 110057,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/315094d2-d869-4385-a1a0-85fe37f7fac9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost! Dividing by 6 will give the area of one face of the cube. How do we find the side length?",
         "B": "If T was the volume, that would work. But T is the surface area.",
@@ -49,7 +49,7 @@
     {
       "questionId": 110058,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c5e0046a-bd64-4372-a88e-19a17dbce268.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "We need the area of the vertical face on the left of the prism. Can you find the height and length of that face?",
         "B": "The face labelled 𝑃 is a rectangle with sides of length 6 cm and 12 cm. This means its area is 6 cm × 12 cm.",
@@ -61,7 +61,7 @@
     {
       "questionId": 110074,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bddb04fa-3f93-4b3b-88c3-cf30a5e65c7c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "We need the area of the sloping face on the left of the prism. Can you find the width and length of that face?",
         "B": "We need the area of the sloping face on the left of the prism. Can you find the width and length of that face?",
@@ -73,7 +73,7 @@
     {
       "questionId": 110059,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2fe4eec0-d332-4cd0-95e5-9237a0e1bb71.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "We need the area of the sloping face on the top of the prism. Can you find the width and length of that face?",
         "B": "We need the area of the sloping face on the top of the prism. Can you find the width and length of that face?",
@@ -97,7 +97,7 @@
     {
       "questionId": 110060,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/98b82007-7bd4-43d8-ab83-f79458bf5f0f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost! What else do we need to remember when finding the area of a triangle?",
         "B": "We need the area of the triangle which forms the front face of the prism. Can you find the base and height of that face?",
@@ -121,7 +121,7 @@
     {
       "questionId": 110061,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7a4cfad9-17b3-4bb7-a472-7a1705bf60bf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "We need the area of the base of the prism. Can you find the width and length of that face?",
         "B": "We need the area of the base of the prism. Can you find the width and length of that face?",
@@ -133,7 +133,7 @@
     {
       "questionId": 110077,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3bf57c84-8273-454d-851c-413a44972346.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! You have found the area of 3 of the faces. But how many faces does the prism have?",
         "B": "It looks like you have calculated the volume but we need to find the surface area. Start by thinking about the area of each face.",

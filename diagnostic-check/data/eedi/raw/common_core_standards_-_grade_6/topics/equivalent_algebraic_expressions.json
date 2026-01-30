@@ -37,7 +37,7 @@
     {
       "questionId": 166712,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/334a5462-64b8-4b35-9634-9f5a16d5bca5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have multiplied the 𝑦 by 4 (correctly) but then added the 2 and 4 together. Remember that 4 outside the bracket is multiplying everything inside the bracket.",
         "B": "I think you may have multiplied everything together. When we have brackets, everything inside the brackets gets multiplied by the term outside the bracket.",
@@ -49,7 +49,7 @@
     {
       "questionId": 166962,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/313f9d44-1ba7-41c7-9e92-597476caecfd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have multiplied everything together. When we have brackets, everything inside the brackets gets multiplied by the term outside the bracket.",
         "B": "I think you have multiplied the 𝑦 by 5 (correctly) but then added the 5 and 3 together. Remember that 5 outside the bracket is multiplying everything inside the bracket.",
@@ -73,7 +73,7 @@
     {
       "questionId": 166963,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bc363714-2ee1-480a-8b90-2df3b7a5bc49.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You're almost there! I think you may have seen the two 𝑥 terms and thought that would make 𝑥². 𝑥² comes from doing 𝑥 multiplied by 𝑥, but we are not multiplying these 𝑥s together. We have 3 lots of 𝑥 and then we are adding another 6 lots of 𝑥 on. How many lots of 𝑥 altogether?",
         "B": "I think you may have combined everything together and also thought that because there were two 𝑥 terms here that it would make 𝑥². Remember we can only combine like terms. The like terms here are 3𝑥 + 6𝑥. The number term doesn't have anything else to combine with so that stays the same.",
@@ -85,7 +85,7 @@
     {
       "questionId": 166714,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea988c46-4663-47ad-8c18-d441dc44e763.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "6𝑘 means 6 lots of 𝑘. We don't want 6 lots of 𝑘 here, we want 6 to be added to 𝑘. Which expression shows that?",
         "B": "Addition is commutative so we can do it in any order. 6 + 𝑘 = 𝑘 + 6",
@@ -109,7 +109,7 @@
     {
       "questionId": 166715,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1e598e54-783f-4935-a766-e4ad94c9ccee.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "If we substitute in 𝑥 = 2 then 2𝑥 + 6 = 2 x 2 + 6= 10. Doing this for 2(𝑥 + 3) due to the order of operations we would need to complete the brackets first. 2 + 3 = 5 and then we would multiply by 2. 5 x 2 = 10 so this does match. Try substituting 𝑥 = 2 into the other expressions to see if you can find one that doesn't match.",
         "B": "If we substitute in 𝑥 = 2 then 2𝑥 + 6 = 2 x 2 + 6 = 10. Doing this for 𝑥 + 𝑥 + 6 = 2 + 2 + 6 = 10 so it does match. Try substituting 𝑥 = 2 into the other expressions to see if you can find one that doesn't match.",
@@ -121,7 +121,7 @@
     {
       "questionId": 166965,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5462d373-ad86-4a37-8de7-a002926fcf01.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "If we substitute in 𝑥 = 2 then 3𝑥 + 12 = 3 x 2 + 12= 18. Doing this for 12 + 3𝑥 = 12 + 3 x 2. Due to the order of operations we must do the multiplying before the add so 3 x 2 = 6 and then 6 + 12 = 18 so it does match. Try substituting 𝑥 = 2 into the other expressions to see if you can find one that doesn't match.",
         "B": "If we substitute in 𝑥 = 2 then 3𝑥 + 12 = 3 x 2 + 12= 18. Doing this for 3𝑥 + 4 we would do 3 x 2 + 4 = 10 and so it is NOT an equivalent expression as they don't equal the same value.",
@@ -133,7 +133,7 @@
     {
       "questionId": 166716,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3e549cac-e847-49a7-bdf2-5db126893760.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you may have expanded the brackets correctly and tried to simplify but remember we can only combine like terms. An 𝑎 term and a number on it's own are not like terms.",
         "B": "I think you have expanded the brackets correctly but made an error when simplifying. Remember 3𝑎 means 3 lots of 𝑎 so if you have 3 lots of 𝑎 and you subtract one lot of 𝑎 how many lots of 𝑎 do you have?",
@@ -145,7 +145,7 @@
     {
       "questionId": 166966,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/62650fcf-ebdc-459c-991f-ccb102c8ef96.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have forgotten to multiply everything in the brackets by the 4. What is 4 lots of (𝑟+2)?",
         "B": "I think you may have expanded the brackets correctly and tried to simplify but remember we can only combine like terms. An 𝑟 term and a number on it's own are not like terms.",

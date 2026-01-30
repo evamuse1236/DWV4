@@ -37,7 +37,7 @@
     {
       "questionId": 78885,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/590149d6-ce61-4d1d-a102-8d253657eb59.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is almost correct! Is there a more conventional way of writing '4 ✕ d'? Do we need the multiplication sign?",
         "B": "This is almost correct! Is there a more conventional way of writing 'd4'?",
@@ -49,7 +49,7 @@
     {
       "questionId": 91626,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/30505e50-82a1-4604-a745-431b2d47ad04.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not exactly, I think you are confusing this with multiplication. 6nn = 6n² which means 6 ✕ n ✕ n NOT 6n + n. Remember 6n means 6 lots of n, if you add one more lot of n, how many lots of n do you have?",
         "B": "This answer is correct :) The terms n and 6n are like terms because they both contain n (note that any ns must be to the same power in order to be like terms – in this case it is 1). This means that the terms can be combined – added in this question – to form a single term, 7n.",
@@ -61,7 +61,7 @@
     {
       "questionId": 91642,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/234c8adc-15d0-4113-a545-696dead2e818.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not exactly, I think you are confusing this with multiplication. 7nn = 7n² which means 7 ✕ n ✕ n NOT 3n + 4n. Remember 3n means 3 lots of n, if you add 4 more lots of n, how many lots of n do you have?",
         "B": "Not quite, it looks like you have multiplied instead of adding them :)Remember 3n means 3 lots of n, if you add 4 more lots of n, how many lots of n do you have?",
@@ -73,7 +73,7 @@
     {
       "questionId": 104954,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2f5e89a2-e5e8-4efd-8612-2f97a438a7e6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! I think you might be confusing this with multiplication. 3𝑎 means 3 lots of 𝑎 or 3 ✕ a. How do we simplify additions in algebra?",
         "B": "Not quite! I think you might be confusing this with multiplication. 𝑎3 = 3𝑎 which is 3 lots of 𝑎 or 3 ✕ a. How do we simplify additions in algebra?",
@@ -85,7 +85,7 @@
     {
       "questionId": 104957,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aab65522-09cd-405f-ac3c-9d49cbdda238.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! I think you might be confusing this with multiplication. 5z means 5 lots of z or 5 ✕ z. How do we simplify additions in algebra?",
         "B": "Not quite! I think you might be confusing this with powers. z⁵ means z ✕ z ✕ z ✕ z ✕ z NOT z + 5. How do we simplify additions in algebra?",
@@ -97,7 +97,7 @@
     {
       "questionId": 104955,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1568a7cb-705d-462e-bc90-a06ef4837bd9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! I think you might be confusing this with multiplication. c𝑎 = 𝑎c which means 𝑎 ✕ c NOT 𝑎 + c . How do we simplify additions in algebra?",
         "B": "Not quite! I think you might be confusing this with multiplication. 𝑎c means 𝑎 ✕ c NOT 𝑎 + c . How do we simplify additions in algebra?",
@@ -121,7 +121,7 @@
     {
       "questionId": 104956,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/87025695-61c1-4160-9536-00ba7d59d7b8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! I think you might be confusing this with multiplication. 𝑎𝑎 = 𝑎² which means 𝑎 ✕ 𝑎 NOT 𝑎 + 𝑎 . How do we simplify additions in algebra?",
         "B": "When we have algebraic terms with the same letter we can combine them. 𝑎 + 𝑎 is the same as 2 lots of 𝑎 which we can write as 2𝑎. We always write the number before the letter.",
@@ -133,7 +133,7 @@
     {
       "questionId": 104959,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/278c8f46-a37f-4c34-8c7f-08fef24ecfcb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! I think you might be confusing this with multiplication. e³ means e ✕ e ✕ e NOT e + e + e . How do we simplify additions in algebra?",
         "B": "This is almost correct! Is there a more conventional way of writing 'e3'?",

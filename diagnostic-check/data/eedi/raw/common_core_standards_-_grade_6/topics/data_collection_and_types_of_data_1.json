@@ -43,7 +43,7 @@
     {
       "questionId": 77615,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8097b05d-2fc2-4c00-853c-4752f32d5330.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! I think you have only counted left-handed pupils here.",
         "B": "Have another look - remember, each tally mark is a student here, we just sometimes group 5 together to make the charts easier to read.",
@@ -67,7 +67,7 @@
     {
       "questionId": 77616,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/68ce245c-a408-4c6c-8018-cbe1e83e018a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! Primary data is data collected straight from the source by a researcher. We don't know that about this data. This question is asking about the type of data we have in the table.",
         "B": "This data is discrete, as we have distinct groups of fruits and we can only buy fruit in whole numbers.",
@@ -79,7 +79,7 @@
     {
       "questionId": 79074,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1ff60e9f-74d2-4a49-b273-8de5c8cdc1ee.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! Primary data is data collected straight from the source by a researcher. We don't know that about this data. This question is asking about the type of data we have in the table.",
         "B": "I think you may be thinking abut the type of table shown here, not the type of data contained within it.",
@@ -103,7 +103,7 @@
     {
       "questionId": 79075,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fc3a71c4-5413-40f4-a90f-17d48e68c972.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! Renata is asking people about their favourite colour. We are not expecting their response to be a number, therefore the data collected will not be quantitative.",
         "B": "The data is primary, as Renata is collecting it herself. The data is qualitative as the responses given to the question (the data) will be referring to the quality of something, such as a colour, not a quantity (a number).",
@@ -115,7 +115,7 @@
     {
       "questionId": 77623,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a5e261c7-92fe-4fad-8255-9218d32c31db.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! Remember, an outlier is a piece of data that is either much bigger or smaller in value than the other data points. Converting all units to mm will help you spot the outlier in this data set.",
         "B": "Converting all data points into mm, we get 90 mm, 85 mm, 7.5 mm, 70 mm and 80 mm. The 7.5 mm measurement stands out as being much smaller than the others, therefore it is an outlier in this data set.",
@@ -127,7 +127,7 @@
     {
       "questionId": 79081,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/afa460e2-11ea-4b3c-9cd3-15d79e7ef3f2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! Remember, an outlier is a piece of data that is either much bigger or smaller in value than the other data points. Converting all units to mm will help you spot the outlier in this data set.",
         "B": "Not quite! This data point does look a lot bigger than all the other values but this is because the measurement was taken in mm. Converting all units to mm will help you spot the outlier in this data set.",
@@ -139,7 +139,7 @@
     {
       "questionId": 78395,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/32f01cbf-8fd5-4580-94a6-033ba0b1c97b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! Just because roughly half of the people asked watched it and so half didn't, this doesn't make the data reliable.",
         "B": "As Jack has the biggest sample size (asked the most people - total frequency), regardless if they watched it or not it is the most reliable.",

@@ -49,7 +49,7 @@
     {
       "questionId": 109487,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dfe139e6-596b-4d6c-be52-5f3d07e468c7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! Path 4 is the outcome of picking black on each pick, which would give us 2 black counters rather than 1.",
         "B": "Almost! You have given the paths with at least one black counter here, whereas we only need the paths that give exactly one.",
@@ -73,7 +73,7 @@
     {
       "questionId": 109488,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2e8e0735-7668-4783-beb1-a60a8c299e3a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The first counter picked was red, so how many black counters are still in the bag at second pick?",
         "B": "Remember, the counters are not replaced after the first pick, therefore how many counters are left in the bag to pick from at second pick?",
@@ -85,7 +85,7 @@
     {
       "questionId": 109499,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a865b702-ef82-458a-87f3-1954a1584c30.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Remember the counters are not replaced after the first pick. How many counters are left in the bag?",
         "B": "The first counter taken was red, so how many black counters are still in the bag? The counters are not replaced, so how many counters are left in the bag?",
@@ -109,7 +109,7 @@
     {
       "questionId": 109500,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8cce65f7-60d4-4c94-abdd-35073d555017.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The first counter picked was black, so how many black counters are still in the bag at second pick?",
         "B": "The first counter picked was black, that means we only have 5 black counters left. There were 15 counters in total, but the picked counter has been kept so now we have 14 counters left. That means the star should be replaced by 5/14.",
@@ -121,7 +121,7 @@
     {
       "questionId": 109490,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/34915ad9-1b23-4a0c-8164-e4018b350f61.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The first counter picked was black, so how many red counters are still in the bag at second pick?",
         "B": "Remember the counters are not replaced after the first pick. How many counters are left in the bag to choose from?",
@@ -133,7 +133,7 @@
     {
       "questionId": 109501,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ab8f0dde-7c69-41e6-aaac-daecb758b051.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The first counter picked was black, so how many red counters are still in the bag? Remember, the counters are not replaced after the first pick, so how many counters are left in the bag?",
         "B": "The first counter picked was black, so how many red counters are still in the bag at second pick?",

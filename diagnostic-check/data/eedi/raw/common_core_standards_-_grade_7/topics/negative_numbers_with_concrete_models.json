@@ -43,7 +43,7 @@
     {
       "questionId": 89413,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cfdfb4fd-6c1d-43ab-a0b7-9571ce07a048.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "4 + 5 is not equal to 9. Think about where you start on the number line, how far you move and where you end up.",
         "B": "The starting point is at −1, then there are 5 steps in a positive direction (＋ 5) which gives an answer of 4. Put mathematically, this gives: −1 ＋ 5 = 4",
@@ -67,7 +67,7 @@
     {
       "questionId": 89439,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/16f5df1e-323a-410d-b3d3-6644777d373f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Nearly. Which calculation(s) represent the starting point, the direction and the distance?",
         "B": "Nearly. Which calculation(s) represent the starting point, the direction and the distance?",
@@ -79,7 +79,7 @@
     {
       "questionId": 89456,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b149ba1c-afe4-45e8-b303-86c513b81a2d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Nearly. Which calculation(s) represent the starting point, the direction and the distance?",
         "B": "Nearly. Which calculation(s) represent the starting point, the direction and the distance?",
@@ -91,7 +91,7 @@
     {
       "questionId": 154763,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/663e3471-28a5-4ec6-b7cd-05a25e429d70.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Here we have 4 (-1) counters and 2 (-1) counters, showing -4 + -2 = -6",
         "B": "Check the counters you have used. We are trying to add together -4 and -2, so what colour counters will we use for each?",
@@ -103,7 +103,7 @@
     {
       "questionId": 154776,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/287ff565-ae3c-4dca-8918-21948396d44e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Check the counters you have used. We are trying to add together -3 and -1, so what colour counters will we use for each?",
         "B": "This does show -3 + -1, but is there another diagram that also works?",
@@ -115,7 +115,7 @@
     {
       "questionId": 154764,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/608164fc-73d0-4630-a1fc-a2566f845db1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you've done -5 + -3, but this is a missing number addition problem. What do we need to add to -5 to get an answer of -3?",
         "B": "I think you've tried to do -5 + -3, but this is a missing number addition problem. What do we need to add to -5 to get an answer of -3?",
@@ -127,7 +127,7 @@
     {
       "questionId": 154777,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d1df4793-e5ff-48ab-9684-1ac751174d95.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Nearly! If we start with 4 (-1) counters and we add 3 more (-1) counters, what counters will we have at the end?",
         "B": "In our answer we have 3 fewer (-1) counters. In order to make this happen we need to add 3 (+1) counters to make zero pairs which will cancel out those extra 3 negatives. So we have added +3",

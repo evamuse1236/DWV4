@@ -25,7 +25,7 @@
     {
       "questionId": 78189,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ce1ca099-10e6-4ca8-bf57-4fcedaccbc11.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! Substituting 5 and -5 into the expression 2x + 1 does not solve this inequality. Remember, solving an inequality is similar to solving an equation, apply the inverse of 2x + 1 to the left, centre and right of the inequality.",
         "B": "We need to solve like it is an equation, doing the same to the left, centre and right of the inequality. First -1 to give -6 < 2𝑥 < 4. Now divide by 2 to give -3 < 𝑥 < 2",
@@ -49,7 +49,7 @@
     {
       "questionId": 78190,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/03eae275-8210-4fcc-90e7-ac8212d4b897.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! When solving inequalities we need to isolate x. To solve 3x < 14, we divide both sides by 3. We need a number) that satisfies this inequality and x > 3.",
         "B": "Not quite. The > symbol means x is greater than 3, this means it will not include 3.",
@@ -61,7 +61,7 @@
     {
       "questionId": 78484,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/59ba317f-54ee-4845-91aa-34f582c85e4e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. The > symbol means x is greater than 2, this means it will not include 2.",
         "B": "When we solve 3x < 11, we divide both sides by 3. So x < 11/3 and x > 2. The only whole number satisfying both these inequalities is x = 3.",
@@ -73,7 +73,7 @@
     {
       "questionId": 106909,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3d75b17c-85c6-4533-9b9a-936cf5d3c010.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! Try substituting in values that satisfy the first inequality for each person, and then see if it also works for the second inequality.",
         "B": "Tom is incorrect because he has not changed the direction of the inequality, which is something that needs to be done when multiplying or dividing by a negative value. Solving Katie’s inequality involves adding 2 to both sides, which gives her answer, 𝑚 > 14.",
@@ -85,7 +85,7 @@
     {
       "questionId": 106918,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3bcdd069-6145-4a85-bcac-7b4773aebb3a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! Try substituting in values that satisfy the first inequality for each person, and then see if it also works for the second inequality.",
         "B": "Not quite! Try substituting in values that satisfy the first inequality for each person, and then see if it also works for the second inequality.",
@@ -109,7 +109,7 @@
     {
       "questionId": 106919,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/52cd7884-4318-49a9-bf79-84a758da14b6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! What happens to the inequality sign when you multiply or divide by a negative number? Try substituting in some values for y to check.",
         "B": "Not quite! Dividing both sides by -3 leaves (1/9)y on the left hand side NOT y. Remember, to solve an inequality we need to use inverse operations.",
@@ -121,7 +121,7 @@
     {
       "questionId": 106912,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3cc2fe2d-311b-475d-aba9-240c9d106ed4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! The inequality x < -2 means strictly less than, so does not include -2 itself. We can try to solve this question by substituting x = -2 into each inequality.",
         "B": "Not quite! The inequality x < -2 means strictly less than, so does not include -2 itself. We can try to solve this question by substituting x = -2 into each inequality.",

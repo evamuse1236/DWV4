@@ -19,7 +19,7 @@
     {
       "questionId": 157986,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4e7f719c-fafc-4008-b47a-03b98230469e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have correctly used the units of area but this is the perimeter of the house. The question is asking for the area...",
         "B": "You have added the width and base but you need to multiply them...",
@@ -31,7 +31,7 @@
     {
       "questionId": 158153,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9c1c77f0-9bdd-470b-893b-f588abf2e413.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is the perimeter of the house but the question is asking for the area...",
         "B": "The floorplan of the house is a rectangle so to find the area we need to do the base x width = 7 x 9 = 63 therefore the area of the house is 63m²",
@@ -43,7 +43,7 @@
     {
       "questionId": 157987,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fa5d37b8-19f9-498f-b8bb-b9ed802d3a57.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Tom has added the sides and found the perimeter of the pitch instead of the area. To find the area you need to multiply the base and the width, do this to see if Katie is correct...",
         "B": "The pitch is a rectangle so to find the area we need to do base x width = 105 x 68 = 7140 therefore the area is 7140m² and only Katie is correct!",
@@ -67,7 +67,7 @@
     {
       "questionId": 157988,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bdcf5e93-34bb-4779-a661-5fefdf4e2bf3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is the area of pizza required for the 15 people, the final step to find the number of pizzas is to divide by how much area each person will eat...",
         "B": "I think you have found the perimeter of the pizza instead of the area.. Remember to find the area do base x width!",
@@ -79,7 +79,7 @@
     {
       "questionId": 158155,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/96cf8abc-0bf1-4993-a276-f272efa53535.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have found the perimeter of the pizza instead of the area.. Remember to find the area do base x width!",
         "B": "To find the number of pizzas, we first work out the amount of pizza we need to feed 23 people. 23 x 270cm² = 6210cm². Next, find area of the pizza 24 x 38 = 912cm². Finally, we divide 6210 by 912 to determine how many pizzas we will need. 6210 ÷ 912 = 6.8. We can't cook 0.8 of a pizza therefore we need to make 7 so there is enough for everyone!",
@@ -91,7 +91,7 @@
     {
       "questionId": 157989,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/481c0709-d7f1-40d2-beb2-7cea4e0a65d1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "To find the area we multiply the length by the width, we do not add them...",
         "B": "The floor of Penelope's room is a rectangle therefore area = base x width. If we fill in what we know 154 = 14 x ? so to find the missing length we need to do 154 ÷ 14 = 11. As all the measurements are in feet the answer is 11 feet!",
@@ -103,7 +103,7 @@
     {
       "questionId": 158156,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d9429141-8109-4797-988e-72cde7c05c2d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have confused area and perimeter... Remember the area of a rectangle = base x width",
         "B": "To find the area we multiply the length by the width, we do not add them...",
@@ -127,7 +127,7 @@
     {
       "questionId": 158157,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/66394909-5cbb-471f-9dcf-a00c630b5766.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "To find the area we multiply the length by the width, we do not add them...",
         "B": "I think you have used the area of a triangle formula... Area of a rectangle = base x width",

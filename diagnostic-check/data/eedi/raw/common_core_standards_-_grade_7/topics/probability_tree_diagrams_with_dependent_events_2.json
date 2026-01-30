@@ -31,7 +31,7 @@
     {
       "questionId": 78407,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1c31e583-5d96-4c18-ba63-f4124dc45cd0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Keep going! You've found the probability of getting 2 blue counters, however we could also get 2 yellow counters, so need to take this probability into account as well.",
         "B": "We can either get blue, blue or yellow, yellow. The probability of getting two blue counters is 5/8 X 4/7 = 20/56. The probability of getting two yellow counters is 3/8 X 2/7 = 6/56. We need to add these together to give 26/56 as our overall probability.",
@@ -55,7 +55,7 @@
     {
       "questionId": 78408,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fa5ba11e-77bc-46cb-9ffa-c7cb8f4663e6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! You've found the probability that the bus is late here. We want the probability that he fails his test given that the bus is late.",
         "B": "Not quite! This is the probability that Ben fails the test when the bus is on time.",
@@ -67,7 +67,7 @@
     {
       "questionId": 78702,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8c335910-2af8-4da6-ae08-2c0f5d71c7df.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! You have given the probability of passing the test when arriving late; we want the probability of failing the test when arriving on time.",
         "B": "The probability of failing the test when arriving on time is 1 - 0.9 = 0.1, since the probability of passing is 0.9 and pass or fail are the only possible outcomes.",
@@ -79,7 +79,7 @@
     {
       "questionId": 78409,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/02e27ab2-aeab-46bb-9eed-1bee990af238.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Have another think. The maximum value a probability can be is 1, therefore this answer doesn't make sense. It looks like you have added the probabilities of passing together, however we need to also take into account the probability of arriving on time or late in our calculations. Remember to multiply along each branch",
         "B": "Not quite! It looks like you have made a calculation error here. Which paths through the tree give us the desired outcome of passing the test? How do we calculate the probability of each path?",
@@ -91,7 +91,7 @@
     {
       "questionId": 78703,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fe6f25c9-3cd7-4ce4-9735-0a240d7b369f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! You seem to have multiplied the probability of a pass from each branch, however we need to work our way along each branch first. 0.4 x 0.9 gives us the probability he will pass if the bus is on time. What is the probability he will pass if the bus is late?",
         "B": "The probability that Ben passes the test if the bus is on time is 0.4 × 0.9 = 0.36. The probability that Ben passes the test if the bus is late is 0.6 X 0.8 = 0.48. Adding these together gives 0.84",
@@ -103,7 +103,7 @@
     {
       "questionId": 78410,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4e49a685-ae23-4b85-add8-6426ff114d63.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Keep going! You have correctly calculated the probability of getting 2 blue counters, but we need to add the probability of two yellow counters too.",
         "B": "The probability of blue blue is 5/8 ✕ 4/7 = 20/56. (The probability of the second blue has changed as one blue has already been removed, so there are only 4 blues left and 7 in total). Similarly the probability of yellow yellow is 3/8 ✕ 2/7 = 6/56. Adding these probabilities together we get 26/56.",
@@ -139,7 +139,7 @@
     {
       "questionId": 78705,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0525c2a6-fffc-435b-a3d6-8376ff11e98f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! I think you have made a calculation error. Remember, we are looking for the probability that they pass at least 1 test, so they could pass the English, the maths, or both of them. What are the probabilities of each of these outcomes, and how do we combine them for our final answer?",
         "B": "Not quite! I think you have made a calculation error. Remember, we are looking for the probability that they pass at least 1 test, so they could pass the English, the maths, or both of them. What are the probabilities of each of these outcomes, and how do we combine them for our final answer?",

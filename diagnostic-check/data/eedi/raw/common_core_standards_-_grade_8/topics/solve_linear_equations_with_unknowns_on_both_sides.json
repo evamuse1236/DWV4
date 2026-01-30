@@ -31,7 +31,7 @@
     {
       "questionId": 106656,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/20bc4a46-24d2-46ae-9311-8f64536eb85f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost, has Katie subtracted the same thing from both sides?",
         "B": "Almost, has Tom subtracted the same thing from both sides?",
@@ -55,7 +55,7 @@
     {
       "questionId": 106657,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/95fb4dc6-5aa8-4bb9-82cd-142e3aa2c2cb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Tom has subtracted 9𝑣 from the right hand side, but he hasn't subracted 9𝑣 from the left hand side.",
         "B": "Katie is correct: she has added 3 to both sides. Tom has tried to subtract 9𝑣 from both sides but he has made a mistake by doing 9𝑣 - 4𝑣 instead of 4𝑣 - 9𝑣.",
@@ -67,7 +67,7 @@
     {
       "questionId": 106665,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d384eb8a-60bf-4607-b277-157d38546631.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. To solve equations we do the same thing to both sides. Jo has subtracted 3 from one side, but added 3 to the other side.",
         "B": "Not quite. To solve equations we do the same thing to both sides. Paul has added 5 to one side, but subtracted 5 from the other side.",
@@ -91,7 +91,7 @@
     {
       "questionId": 106666,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fdf63594-1bb6-4efa-9c46-0f0156440786.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost, has Paul subtracted the same thing from both sides?",
         "B": "Almost, has Jo added the same thing to both sides?",
@@ -103,7 +103,7 @@
     {
       "questionId": 106659,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/afba18cc-a21d-4c8a-aeb6-bc8a8d16471b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost, has Katie subtracted the same thing from both sides?",
         "B": "Almost, has Tom added the same thing to both sides?",
@@ -115,7 +115,7 @@
     {
       "questionId": 106667,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a0fc4ef2-ddfe-4337-932f-19065bf2bc21.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. To solve equations we do the same thing to both sides. Jo has subtracted 5 from one side, but added 5 to the other side. The sign on the 2𝑣 has also changed.",
         "B": "Not quite. To solve equations we do the same thing to both sides. Paul has tried to add 6𝑣 to both sides but he has ignored the minus sign infront of the 2𝑣.",
@@ -127,7 +127,7 @@
     {
       "questionId": 106663,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/15e9112a-a716-40d5-9f49-3f70a697bd18.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you have tried to add 3 first. Look at the left hand side. 𝑟 is multiplied by 2, then 3 is subtracted and then all of 2𝑟 − 3 is divided by 5. We need to 'undo' the last step first.",
         "B": "Not quite, it looks like you have multiplied the terms in the numerator by 5 as well. When we multiply the left hand side by 5 we are left with 2𝑟 − 3.",
@@ -139,7 +139,7 @@
     {
       "questionId": 106671,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9fc4e657-13d1-4364-b842-ede569e563a9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you have tried to subtract 6 first. Look at the left hand side. We start with 5r then 6 is added and then all of 5𝑟 + 6 is divided by 6r. We need to 'undo' the last step first.",
         "B": "It looks like you have tried to multiply both sides by r, but then you have incorrectly tried to simplify (5r+6)/6. What else could we multiply both sides by?",

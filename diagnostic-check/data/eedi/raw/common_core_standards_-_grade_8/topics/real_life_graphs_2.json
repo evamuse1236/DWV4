@@ -19,7 +19,7 @@
     {
       "questionId": 78218,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e918912b-0c1c-437b-917f-6d5e33ecfc71.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! I think you have assumed that every 1 mile travelled costs £1 but the graph doesn't show this. Which axis shows distance travelled? Can you find 30 miles? Can you read off the corresponding amount?",
         "B": "Not quite! I think you have used the wrong axis for distance travelled. The horizontal axis (x-axis) is the one that shows distance travelled.",
@@ -31,7 +31,7 @@
     {
       "questionId": 78512,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/85ab4e16-24a8-438f-ac1e-8ef38cf340a3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! I think you have used the wrong axis for distance travelled. The horizontal (x-axis) is the one that shows distance travelled.",
         "B": "Be careful. Have a look again. Do we go up one square until we get to £10?",
@@ -43,7 +43,7 @@
     {
       "questionId": 78219,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/44dea3ac-4bb1-4c93-87ed-31b8501a451a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Be careful. Have a look again. Using a ruler to read down to the axis can help with accuracy.",
         "B": "The graph shows that if Kay was paid £20 then she would have travelled 25 miles. Multiplying both of these by 4 (20 ✕ 4 = 80) tells us that if Kay got paid £80 she would have travelled 100 miles.\n\n",
@@ -55,7 +55,7 @@
     {
       "questionId": 78513,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eaeb9c63-25c3-4a78-a768-dbd32f1445ba.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! I think you have used the wrong axis for amount paid. The vertical axis (y-axis) is the one that shows the amount of money Kay gets paid for any distance travelled.",
         "B": "Not quite! I think you have assumed that every 1 mile travelled costs £1 but the graph doesn't show this. How far can Kay travel if the company pays her £20? Can you use this to work out how far Kay travelled if the company paid her £100?",
@@ -67,7 +67,7 @@
     {
       "questionId": 78220,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eedba9cb-9558-4e44-894b-65b59c7fde29.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! 15 minutes is when Molly started walking again. Remember, when Molly stops walking she is remaining the same distance from home, her distance is not increasing. At what time does this start to happen?",
         "B": "We can tell where she stopped as this is where the graph is flat, and this happened at 10 minutes.",
@@ -91,7 +91,7 @@
     {
       "questionId": 78222,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d616eca6-f63c-468a-aff8-37b8f478edaf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! I think you have seen the graph starts on the y-axis at £10 and assumed this was the cost per mile. This £10 is the fixed cost, as it has to be paid even if the customer travels 0 miles. The cost for every additional mile can be found by comparing two distances and their corresponding costs. \n\n",
         "B": "Not quite! The cost for every additional mile can be found by comparing two distances and their corresponding costs. How much does it cost to travel 10 miles? How much does it cost to travel 20 miles? How many additional miles is this? How much does it cost to travel these additional miles? Can you share this between each additional mile?",
@@ -115,7 +115,7 @@
     {
       "questionId": 78223,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a75d843c-3db5-4af9-a76a-568bb926d0fb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! I think you have seen that 400 units costs £55 and then doubled. But as Lethna is being charged two different rates so we cannot do this.\nThe graph shows us that Lethna pays £25 for the first 100 units. How much does she pay per 100 units after this? How many units charged at this rate has she used?",
         "B": "The graph shows us that Lethna pays £25 for the first 100 units. She pays a further £10 per 100 units. We add £20 onto £75 to get £95 for 800 units as the graph only shows us to 600 units.",
@@ -127,7 +127,7 @@
     {
       "questionId": 78517,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a53ff341-6871-433e-8a96-fcc6bf3d21b8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! I think you have seen that 500 units costs £65 and then doubled. But as Lethna is being charged two different rates so we cannot do this.\nThe graph shows us that Lethna pays £25 for the first 100 units. How much does she pay per 100 units after this? How many units charged at this rate has she used?",
         "B": "Not quite! I think you have seen that for the first 100 units used Lethna is charged £25 and then multiplied this by 10, but Lethna is charged a different rate after the first 100 units.\nHow much does she pay per 100 units after the first 100? How many units charged at this rate has she used?",

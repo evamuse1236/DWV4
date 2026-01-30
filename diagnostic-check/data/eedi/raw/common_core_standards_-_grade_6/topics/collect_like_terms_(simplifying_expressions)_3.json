@@ -25,7 +25,7 @@
     {
       "questionId": 77117,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a5f9cd4a-ebf3-42f3-8f98-c78fe53f7833.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you might have tried to combine the number terms with the algebraic terms. Remember you can't combine 5 and 2g to get 7g.",
         "B": "It looks like you have just added together all the bricks on the bottom row. Remember each brick is the sum of the two bricks directly below it, so work out each unknown brick in turn.",
@@ -49,7 +49,7 @@
     {
       "questionId": 77118,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b91ed2dd-c7e3-4415-91f8-834ebe1d492c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This option only has one term but there are two gaps so it cannot be correct.",
         "B": "The value in the top bar is the sum of the four terms beneath it. Substituting 8a and 10 as the two missing values gives 4a + 8a + 10 - 5 = 12a + 5. So this is the correct answer.",
@@ -85,7 +85,7 @@
     {
       "questionId": 78892,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/efcb6950-7a8e-4563-8d35-9537d7b9cf2f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You've worked out the correct answer, but you've used the wrong convention. We can just write this as 0.",
         "B": "All the terms cancel out when we simplify this expression. 4t - 6t + 10t - 8t = 0t but it is convention to write this as just 0.",
@@ -97,7 +97,7 @@
     {
       "questionId": 91630,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a013bd3e-b442-47cf-b58d-86cffa0a03c4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you might have added up the bricks on the right hand side of the pyramid. Remember each brick is the sum of the two bricks directly below it.",
         "B": "Each brick is the sum of the two bricks directly below it. We know one of the bricks below the star but the other is blank, so first we need to calculate this. The blank value on the second row is the sum of the two bricks beneath it (4a and 3b) which gives 4a + 3b. To find the star we add this to the other brick below the star. 4a + 3b + 3a + 4b = 7a + 7b when fully simplified.",
@@ -109,7 +109,7 @@
     {
       "questionId": 91646,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8a36b7db-08b1-41ef-8a15-60a81eb24af9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you might have added up the bricks on the right hand side of the pyramid. Remember each brick is the sum of the two bricks directly below it.",
         "B": "It looks like you might have combined your a and b terms together to give ab terms. Remember you can only combine like terms.",
@@ -121,7 +121,7 @@
     {
       "questionId": 91631,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a7df1719-1c94-4cb1-bf03-945ccd1891bf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Any missing value in the pyramid is calculated by adding the terms in the two bricks below.  If we replace the star with an f do we get 2f + 8g in the top box? What if we replaced the star with 2f?",
         "B": "Any missing value in the pyramid is calculated by adding the terms in the two bricks below. Consider Tom’s statement: if ★ = f, then you would have f + 3g in the middle row on the left and 5g in the middle row on the right. Adding these together gives f + 8g NOT 2f + 8g, so Tom is incorrect. If instead ★ was equal to 2f then you would have 2f + 3g in the middle row on the left and 5g in the middle row on the right. Adding these together gives 2f + 8g, so Katie is correct.",
@@ -133,7 +133,7 @@
     {
       "questionId": 91647,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2f3ff0f0-3ace-4b39-9c53-7e2dc4e0befc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Try putting the answers in place of the star, and see if you find something that would fit in the middle to make the pyramid work.",
         "B": "Try putting the answers in place of the star, and see if you find something that would fit in the middle to make the pyramid work.",

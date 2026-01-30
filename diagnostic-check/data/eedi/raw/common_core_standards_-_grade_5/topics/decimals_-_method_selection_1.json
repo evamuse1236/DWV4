@@ -37,7 +37,7 @@
     {
       "questionId": 75930,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5c9bd930-1c51-4769-87a1-7db5048b398b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have added the two costs. What operation do you need to do if you know one of the numbers and the total?",
         "B": "Almost. Remember with column subtraction we need to do the top number minus the bottom number. We might have to borrow.",
@@ -61,7 +61,7 @@
     {
       "questionId": 103784,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/af341d29-92ba-4832-9c30-a7b9faa9c58d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, 6 + 4 = 10, but this answer should be lower as it is 0.6 + 0.4",
         "B": "To add decimal numbers, use column method, making sure the decimal points are in line. This means the tenths column is 6 + 4 = 10, so the 0 is written in the tenths column, then you carry the 1 into the units. (Make sure you put a decimal point in line with the points above). Then in the units column you can see 0 + 0 + 1 = 1. The complete answer is 1.0 or 1.",
@@ -73,7 +73,7 @@
     {
       "questionId": 103796,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/53dd011f-8d0a-4a59-8120-5b5fda4c3e50.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, 3 + 9 = 12, but this answer should be lower as it is 0.3 + 0.9",
         "B": "Make sure you remember to carry and keep your decimal points inline. The answer can't be less than the two numbers you've added",
@@ -97,7 +97,7 @@
     {
       "questionId": 103797,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/893b7b73-c793-45b3-af64-e4dee87e012a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Check your answer seems reasonable, if we calculate 1 x 1 = 1, we can see that our correct answer can't be bigger than 1 because both numbers being multiplied are less than 1.",
         "B": "I think you have added the two numbers rather than multiplied.",
@@ -109,7 +109,7 @@
     {
       "questionId": 103786,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c4d1811b-6063-4c3a-987f-9148a1a2ffaf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. I think you have started the division well, but you can't just put the remainder after the decimal point. Try using the bus stop method and carry the remainder into the next column.",
         "B": "I think you have subtracted rather than dividing. You can use equivalent fractions to make this into a division with just whole numbers.",
@@ -121,7 +121,7 @@
     {
       "questionId": 103799,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/91544841-fcdd-4458-8b14-06faf703df4a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost. Remember that when you change this into a division with just whole numbers, the answer is the same as the answer to the decimal division.",
         "B": "Not quite. You can use equivalent fractions to make this into a division with just whole numbers.",
@@ -133,7 +133,7 @@
     {
       "questionId": 103787,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7ad12d8a-f996-4124-9c25-6866e7948372.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You are almost there. Try using the bus stop method and carry the remainder into the next column to finish off the division.",
         "B": "Not quite. You can use equivalent fractions to make this into a division with just whole numbers and then use a bus stop method to find the answer.",
@@ -145,7 +145,7 @@
     {
       "questionId": 103798,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1b88c759-4351-489b-87e8-5278023270a2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You are almost there. Try using the bus stop method and carry the remainder into the next column to finish off the division.",
         "B": "I think you have subtracted rather than dividing. You can use equivalent fractions to make this into a division with just whole numbers.",

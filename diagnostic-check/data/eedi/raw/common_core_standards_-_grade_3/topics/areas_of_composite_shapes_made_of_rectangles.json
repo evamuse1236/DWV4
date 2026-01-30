@@ -37,7 +37,7 @@
     {
       "questionId": 159085,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4e08cbe1-e246-4bbf-b905-106f985f783d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is the area of the pink shape, but we are trying to complete the calculation to find the area of the whole shape. \n5 x 5 finds the area of the pink part, what about the blue part? 3 x ...",
         "B": "The pink rectangle is 5 squares by 5 squares. The blue rectangle is 3 squares by 6 squares. Together they will add up to give the total area of the shape.",
@@ -49,7 +49,7 @@
     {
       "questionId": 158887,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d6ebe190-8540-4b97-abd5-3616df24ec1f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is the area of the pink part, but we are trying to write the calculation that would find that area. 3 x ___ (= 21).",
         "B": "Not quite - the pink part isn't 3 x 3. It has 3 rows and ___ columns.",
@@ -61,7 +61,7 @@
     {
       "questionId": 159086,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c5b0e889-46a9-45a7-9243-6c77ab1accd1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite - the blue part is 11 x 4 because it has 11 rows and 4 columns. The pink part is 6 x ....",
         "B": "The blue rectangle is 11 squares by 4 squares. The pink rectangle is 6 squares by 7 squares. Together they will add up to give the total area of the shape.",
@@ -73,7 +73,7 @@
     {
       "questionId": 158888,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/86aab060-3977-4935-b799-4aec0afd3c76.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is the area of the blue part. Can you find the pink part too, then add them to get the area of the whole shape?",
         "B": "The pink area is 1 x 12 = 12. The blue area is 3 x 6 = 18. The total area is 12 + 18 = 30.",
@@ -85,7 +85,7 @@
     {
       "questionId": 159087,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0af1d6fa-b13f-44d9-870b-5f229c9333a7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is the area of the pink part. Can you find the blue part too, then add them to get the area of the whole shape?",
         "B": "I think you have multiplied 11 x 9, but we don't have a full 11x9 rectangle. Can you work out the pink and blue areas separately, then add them to get the whole area?",
@@ -97,7 +97,7 @@
     {
       "questionId": 158889,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d6ad89d2-2131-4f7d-a48b-0b07014cbf5b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is the area of the first rectangle. Can you find the area of both rectangles then add them to find the total area?",
         "B": "This is the area of the second rectangle. Can you find the area of both rectangles then add them to find the total area?",
@@ -121,7 +121,7 @@
     {
       "questionId": 158890,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/93f7c2b6-7e79-4483-84ca-234f5e0a580e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is the area of the top rectangle. Can you find the area of both rectangles then add them to find the total area?",
         "B": "The area of the top rectangle is 5 x 7 = 35. The area of the bottom rectangle is 2 x 8 = 16. Total area = 35 + 16 = 51 square units.",
@@ -133,7 +133,7 @@
     {
       "questionId": 159089,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/55bb1eca-afdc-4283-9951-d1084bdb2e90.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is the area of the top rectangle. Can you find the area of both rectangles then add them to find the total area?",
         "B": "I think you have added all the given lengths, but that is not how to find the area. First, you need to find the area of each rectangle by multiplying length by width; you then add these together to find the total area. ",

@@ -43,7 +43,7 @@
     {
       "questionId": 147359,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/11bb7b10-e39b-42c4-88b5-4839ff42836f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember we are adding up what is on the tiles. Which of these are the given tiles added together?",
         "B": "Katie’s two tiles represent an x and an x – which would be 2x in total. So Katie is correct. The 2 and x tile would be 2 + x so Tom is incorrect.",
@@ -55,7 +55,7 @@
     {
       "questionId": 147379,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/723fc0d8-a11b-4fbd-bcea-ae3a405551c2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember we are adding up what is on the tiles. Which of these are the given tiles added together?",
         "B": "Katie’s five tiles each represent an x. That means we have x + x + x + x + x = 5x. So Katie is correct. Tom’s tiles represent 5 and x, or x+5, which is incorrect.",
@@ -79,7 +79,7 @@
     {
       "questionId": 147380,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/23370f9e-8c0c-4c1b-9056-01ab656db866.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have chosen the right operation but in the wrong order. A division can be written as a fraction, with the number being divided – known as the divisor - as the numerator and the number dividing into it – known as the dividend – as the denominator. What does this fraction 1/2 represent?",
         "B": "I think you have chosen the wrong operation. The line between the terms is not a subtraction sign. What does a fraction such as ½ mean? Reconsider your answer.",
@@ -91,7 +91,7 @@
     {
       "questionId": 147361,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e915741b-1f6c-4856-a39c-c67ee2eb4691.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have assumed that the letter would go first. When multiplying algebraic terms, the number always comes first.",
         "B": "I think you have chosen the wrong operation. You have used an addition sign when the question says ‘multiplied by’. Do you need to use a multiplication symbol when multiplying terms?",
@@ -103,7 +103,7 @@
     {
       "questionId": 147381,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c6cc2377-e35b-402f-8564-10db19ec289f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have assumed that the letter would go first. When multiplying algebraic terms, the number always comes first.",
         "B": "I think you have chosen the wrong operation. You have used an addition sign when the question says ‘the product of’. What operation do we use when finding the ‘product’?",
@@ -115,7 +115,7 @@
     {
       "questionId": 147362,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d6c97e4e-f4ef-4c44-8d0d-d778faf0f305.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have chosen the wrong operation. The notation represents n being multiplied by itself, rather than having 2 added on.",
         "B": "The small 2 symbol to the above right of the n means squared – n multiplied by itself.",
@@ -127,7 +127,7 @@
     {
       "questionId": 147382,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7e512634-4262-4407-aab1-a94f88536512.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have chosen the wrong operation. The notation represents 3 copies of g being multiplied together rather than having 3 added on.",
         "B": "I think you have chosen the wrong operation. The notation represents 3 copies of g being multiplied together rather than multiplying g by 3.",
@@ -139,7 +139,7 @@
     {
       "questionId": 147363,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/312fac24-fb1a-4aa6-b014-4ac52b679806.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Try substituting in some numbers to see if the order matters.",
         "B": "Division is non-commutative which means it DOES matter which order it is carried out in. Multiplication is commutative which means it DOES NOT matter which order it is carried out in. Therefore, only Katie is correct.",

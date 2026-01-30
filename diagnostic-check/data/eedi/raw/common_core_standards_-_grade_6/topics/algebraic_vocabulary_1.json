@@ -67,7 +67,7 @@
     {
       "questionId": 131447,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/391f65f2-d575-47e0-bffe-dbb101dcdc48.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. An equation always contains an equals '=' symbol. This is a single letter.",
         "B": "3p is a term but we need the most appropriate word for p on its own.",
@@ -79,7 +79,7 @@
     {
       "questionId": 133680,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e77bbc54-9352-4fc1-b6e6-096e7bf96ccf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "g is a variable. It represents an unknown value.",
         "B": "6 - 3g is an expression but we need the most appropriate word for g on its own.",
@@ -91,7 +91,7 @@
     {
       "questionId": 131448,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3e53bbbb-3559-4b34-9806-fe23e0805f5d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is an equation because it contains an equals '=' sign.",
         "B": "A term is a single component. e.g. 3p is a term, 7 is a term and 10 is a term. This contains an equals '=' symbol too. Which of the remaining words could that apply to?",
@@ -103,7 +103,7 @@
     {
       "questionId": 133681,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c837e82a-becc-49ea-afd4-02fb8c4474b9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "A variable is a letter that represents an unknown value. Here 'g' is the variable. This contains an equals '=' symbol too. Which of the remaining words could that apply to?",
         "B": "Expressions do not contain equals '=' signs. Which of the remaining words contain an equals '=' symbol?",
@@ -139,7 +139,7 @@
     {
       "questionId": 131450,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/06e0136e-035e-4aff-9ea2-1f994cfbbdee.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "An equation always contains an equals '=' symbol. Which of the remaining words could contain numbers, letters and multiplication?",
         "B": "This is a term. A term can be a letter, a number or a combination of letters and numbers multiplied or divided together.",
@@ -151,7 +151,7 @@
     {
       "questionId": 133683,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/18da5f76-6aeb-4997-aad1-571e4e8e0274.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "A variable is a letter that represents an unknown value. Here 'g' on its own is the variable. Which word best describes a variable multiplied by a number?",
         "B": "6 - 3g is an expression but we need the most appropriate word for 3g on its own, without a subtraction taking place.",

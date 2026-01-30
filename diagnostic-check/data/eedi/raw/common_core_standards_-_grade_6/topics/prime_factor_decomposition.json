@@ -31,7 +31,7 @@
     {
       "questionId": 76710,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f662be22-e6be-4eae-a93f-18ba7ddc54a6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost, but 39 isn't prime",
         "B": "This is the correct tree. All calculations are correct and each factor is prime.",
@@ -43,7 +43,7 @@
     {
       "questionId": 78778,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9d9c398a-2de0-43d5-8f86-c7e6c83d5848.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost, but 9 is not prime so can be broken down further",
         "B": "Not quite, 225 is not 5 x 75, it is 5 x 45",
@@ -67,7 +67,7 @@
     {
       "questionId": 99552,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5cfb0742-7fc7-412e-87c4-4c5211ace8ee.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Remember a prime number is a number that has two distinct (different) factors.",
         "B": "A prime factor of 24 is a number that will go into 24 and is also prime. Both 1 and 2 are factors of 24 but only 2 is prime. Therefore only Paul is correct.",
@@ -79,7 +79,7 @@
     {
       "questionId": 99539,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/038ba71c-1df7-4e6f-9169-7c984009e11a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Be careful. This is a factor tree. It splits a number into factor pairs (numbers which divide 48), you appear to have subtracted instead. 45 is NOT a factor of 48.",
         "B": "Be careful. This is a factor tree. It splits a number into factor pairs (numbers which divide 48). 144 is a multiple of 48: 3 x 48 = 144.",
@@ -103,7 +103,7 @@
     {
       "questionId": 99541,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5888de27-7623-4b92-8cb0-d8d364e60d0e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is a good first step, but you cannot stop just yet as 4 and 10 are not prime numbers. Can you split this into prime numbers?",
         "B": "Not quite. 5 x 5 = 25 NOT 10.",
@@ -115,7 +115,7 @@
     {
       "questionId": 99555,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/44f87746-f1f5-42d8-acae-4a1f9ba02411.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Be careful. 1 is not a prime number.",
         "B": "Not quite. 5 x 5 = 25 NOT 10.",

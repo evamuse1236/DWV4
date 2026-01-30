@@ -49,7 +49,7 @@
     {
       "questionId": 158644,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/70db54a5-5158-46fc-91bc-104f530d4213.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Before you can add the two quantities together, they must have the same units. Convert 400ml to liters and then you can add it to 4.9 liters.",
         "B": "This is the correct answer in milliliters, now convert this into liters.",
@@ -61,7 +61,7 @@
     {
       "questionId": 158446,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8c4768f5-034d-49a2-9365-9257d276a71c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Before you can add the three distances together, they must all have the same units. Convert 1500m to km and then you can add it to 40km and 10km.",
         "B": "1 km = 1000m. Therefore, 1500m = (1500÷1000) km = 1.5 km. Adding this to the other distances: 1.5 + 40 + 10 = 51.5 km.",
@@ -85,7 +85,7 @@
     {
       "questionId": 158447,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8ffe3d38-420d-447b-a86b-371149ebc275.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is the correct answer in kilograms, now convert this to grams.",
         "B": "I think you've tried to convert 3kg to grams by multiplying by 100. But, 1 kg = 1000g, so what should you multiply by instead?",
@@ -97,7 +97,7 @@
     {
       "questionId": 158646,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/92204091-31bb-4bcf-8f74-35bf0755c335.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've multiplied 4000g by 8. But we're sharing the 4kg of pie filling between the 8 pies, so this will be a division calculation.",
         "B": "1kg = 1000 grams. Therefore 4kg = 4000 grams (4 x 1000). To divide this between 8 pies: 4000 ÷ 8 = 500 grams.",
@@ -121,7 +121,7 @@
     {
       "questionId": 158647,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ccea7c41-8f1e-4d69-ac67-78e63ee50b74.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you might have converted half a liter to 50ml, but there are 1000ml in one liter. How does that change your answer?",
         "B": "1 liter = 1000ml. Therefore, half a liter = half of 1000ml = 500ml of PVA. For every 100ml of PVA we need 8 teaspoons of bicarb. Therefore, 500ml of PVA needs 5 x 8 = 40 teaspoons. Each teaspoon has a mass of 2g so the total mass of bicarb = 40 x 2 = 80g.",
@@ -133,7 +133,7 @@
     {
       "questionId": 158449,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/554ac03b-4179-49c2-a717-484317bce479.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've assumed that 6 liters only fills 1/4 of the container. But 6 liters fills 3/4 of the container, so 2 liters fills 1/4 of the container. How many liters does the full container hold?",
         "B": "We're told that 6 liters fills 3/4 of the container. So, when the container is full, it can hold (6÷3x4) liters = 8 litres. 1 liter = 1000ml. So, 8 liters = (8 x 1000)ml = 8000ml. 8000ml can fill (8000÷200) cups = 40 cups.",
@@ -145,7 +145,7 @@
     {
       "questionId": 158648,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4a55bff9-5645-4011-830b-e5952bf520f3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have calculated as if the whole container holds 8l, but that is only 2/3 of the container. Can you find how much is in 1/3, then use that to find the whole container and how many cups it fills?",
         "B": "Remember 1l = 1000ml, not 100ml",

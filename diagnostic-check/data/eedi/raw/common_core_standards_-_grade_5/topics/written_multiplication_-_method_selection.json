@@ -43,7 +43,7 @@
     {
       "questionId": 129051,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/60734b35-6089-478c-ae30-c9e53d6b741b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have read the correct row and column, but then you have added these numbers together. The question is asking us to multiply.",
         "B": "The star is in the 7 column and the 40 row so we need to do 7 x 40. 7 x 4 is 28 so 7 x 40 is 280.",
@@ -55,7 +55,7 @@
     {
       "questionId": 129191,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/31204e67-befb-4022-a391-838eb0bbfb44.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have read the correct row and column, but made a mistake with your calculation. 2 x 5 is 10. What is 20 x 5?",
         "B": "You have read the correct row and column, but made a mistake with your calculation. If 2 x 5 is 10, what is 20 x 5?",
@@ -79,7 +79,7 @@
     {
       "questionId": 129192,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1eaa6290-9b9f-4cdb-af38-bf4c2c6ad21c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. You have identified the correct row and column, but you have added the numbers together. Here we need to multiply.",
         "B": "We have to work out 30 x 70. If 3 x 7 = 21 then 30 x 7 = 210 and 30 x 70 = 2100.",
@@ -91,7 +91,7 @@
     {
       "questionId": 129053,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b275e48e-92b3-459b-bcbd-e135d77f8e1b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. You do get a 1 in this column when you work out 7 x 3, but we also have something in this column that was carried over from when we worked out 7 x 8. Write out your workings in full and see if you can spot it.",
         "B": "When we work out 7 x 8 we get 56. The 6 would stay in the ones column, but the 5 would carry over to the tens. Then when we work out 7 x 3 we get 21. The 1 would stay in the tens column and the 2 would carry over to the hundreds. This leaves us with a 5 and a 1 in the tens column. We add these together to get 6.",
@@ -103,7 +103,7 @@
     {
       "questionId": 129193,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/afca2faf-9cb0-4d4f-a80b-cd4d1e35c869.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. We have to start by multiplying 2 by 8. What will stay in the ones columns? What will move to the tens column? Now try the same with 6 x 8.",
         "B": "I think you have worked out the first step correctly. 2 x 8 gives us 16 and the 1 carries over into the tens column. But when we continue with the calculation where does the answer to 6 x 8 go?",
@@ -115,7 +115,7 @@
     {
       "questionId": 129054,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7611a951-7694-48b6-b67b-ac74d6a44bdd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. In our first line of working we need to multiply each digit of 276 by 4. Start on the right hand side with 4 x 6, then work along to 4 x 7 and 4 x 2. Remember to carry into the next column if needed!",
         "B": "I think you have tried to work out the previous step of 7 x 4 which gives us 21 and the 2 carries over into the hundreds column. But we need to check any previous steps and continue with the calculation. Write out your workings in full and see if you can spot what else we need to include here.",
@@ -127,7 +127,7 @@
     {
       "questionId": 129194,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ff8d7012-8b70-4cc2-a6a5-62ea55f370b1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "6 x 3 does give us 18, which would lead to 8 in the hundreds column and 1 in the thousands, but we need to check whether any of the previous calculations (6 x 8 or 6 x 1) would have meant any numbers were carried over into this column. Start from the right and write your full method down.",
         "B": "We start by working out 6 x 1 which gives us 6 so we put the 6 in the ones column and nothing carries over. We can now work out 6 x 8 which gives us 48. The 8 stays in the tens column and we carry the 4 over to the hundreds column. Finally we work out 6 x 3. This gives us 18, but we need to add on the 4 that we carried over. We get 22 so 2 stays in the hundreds column and 2 moves into the thousands.",

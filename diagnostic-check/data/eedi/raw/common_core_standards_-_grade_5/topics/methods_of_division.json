@@ -25,7 +25,7 @@
     {
       "questionId": 158362,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0f11a65b-0e80-48c3-bd4e-45ec2deb127a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You might have thought that the star represents the remainder. But the star represents the final digit of the answer to 768 ÷ 12. The remaining part of the calculation, is to find how many times 12 goes into 48.",
         "B": "I think you've chosen the divisor as your answer. But that's not what the star represents. The star represents the final digit of the answer to 768 ÷ 12. The remaining part of the calculation, is to find how many times 12 goes into 48.",
@@ -37,7 +37,7 @@
     {
       "questionId": 158595,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0f6e77e7-92cb-45f5-b72f-46dfcf7e1aea.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You might have thought that the star represents the remainder. But the star represents the final digit of the answer to 528 ÷ 11. The remaining part of the calculation, is to find how many times 11 goes into 88.",
         "B": "11 divides into 5, 0 times, remainder 5. Then 11 divides into 52, 4 times (4 x 11=44), remainder 8. Then 11 divides into 88, exactly 8 times. So 528 ÷ 11 = 48 and 8 replaces the star.",
@@ -61,7 +61,7 @@
     {
       "questionId": 158596,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9069aa89-d33e-4bad-8892-290c60d20d74.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Remember that we need to carry any remainders when doing a division calculation. The number that replaces the triangle is the remainder once you've divided 34 by 15.",
         "B": "I think you've correctly calculated the answer to the division sum as 23. But, the triangle is part of the working out, not part of the answer: it's the remainder once you've divided 34 by 15.",
@@ -73,7 +73,7 @@
     {
       "questionId": 158364,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4ba6b567-d488-43f9-9b39-c0cb76868a2a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've divided by 7. We need to divide by 21, so because 21=7 x 3, you could divide by 7 and then divide by 3 to get the final answer.",
         "B": "Be very careful when calculating multiples of 21 and remainders. You've correctly found that 21 goes into 71, 3 times (3 x 21 = 63). Double check the remainder for this stage of the calculation, 71 - 63 = ?",
@@ -85,7 +85,7 @@
     {
       "questionId": 158597,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f233fe2d-71a1-48b4-846a-a76c735378c2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Be very careful when calculating multiples of 18 and any remainders. You've correctly found that 18 goes into 93, 5 times (5x18=90). Check how many times 18 goes into 36.",
         "B": "18 divides into 9, 0 times, remainder 9. Then 18 divides into 93 5 times (18x5=90), remainder 3. Then 18 divides into 36 2 times (21x4=84), with no remainder. Therefore, 936 ÷ 18 = 36.",
@@ -109,7 +109,7 @@
     {
       "questionId": 158598,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d3bcb611-53d5-4300-9154-7b264c5add86.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "64 = 8 x 8, so we can do 2432 ÷ 8 ÷ 8. I think you might have done 2432 ÷ 8 ÷ 2 instead.",
         "B": "I think you have made a mistake when writing out your multiples of 64. Be very careful when working out your remainders. You may find it easier to break up your division by 64 into  ÷ 8 ÷ 8.",
@@ -121,7 +121,7 @@
     {
       "questionId": 158366,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5316f5fb-cea9-4ac0-b7a3-f9be1838abf9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've correctly found that 24 ÷ 4 = 6. But you're dividing 24,000 by 400, so remember also to divide 1,000 by 100 to find the correct place value.",
         "B": "I think you've correctly divided 24,000 by 4. But you're dividing 24,000 by 400, so remember to then also divide by 100.",
@@ -133,7 +133,7 @@
     {
       "questionId": 158599,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/998e2d33-d858-4598-b494-99ac9283b8ce.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've correctly found that 35 ÷ 5 = 7. But you're dividing 35000 by 500, so remember also to divide 1,000 by 100 to find the correct place value.",
         "B": "To divide by 500, we can divide by 100 and then by 5. 35,000 ÷ 100 = 350. 350 ÷ 5 = 70.",

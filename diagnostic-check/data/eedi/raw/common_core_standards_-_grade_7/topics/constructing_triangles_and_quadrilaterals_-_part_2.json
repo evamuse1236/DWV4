@@ -43,7 +43,7 @@
     {
       "questionId": 95526,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/57e9f5ee-53f6-4d6d-8b6e-0fd5f84d54da.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. If I know 2 side lengths of a triangle does that mean there is only one option for the third length? Try holding two pens together as the two sides and investigating what happens when you change the angle between them.",
         "B": "You do not need a protractor to construct some types of triangles. What instrument could you use instead?",
@@ -67,7 +67,7 @@
     {
       "questionId": 122118,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/23b80ccd-b99c-40e1-961c-45aa0da047e3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have doubled the angle. Look at the other 2 angles in the smaller triangle. What do angles in a triangle add up to?",
         "B": "I think you have halved the angle because the side length has been halved. Look at the other 2 angles in the smaller triangle. What do angles in a triangle add up to?",
@@ -91,7 +91,7 @@
     {
       "questionId": 120912,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8a644c92-78ee-420c-8e7a-f98cd3b638d2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "How will you measure the 12cm and 7cm sides? Think about where they are in relation to the 52° angle.",
         "B": "How will you measure the 52° angle? Think about where it is in relation to the 7cm and 12cm sides.",
@@ -115,7 +115,7 @@
     {
       "questionId": 120913,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/80cb96fc-b13c-40e8-b36b-a609b21b8d15.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost, but don't forget we have some measured lengths here too",
         "B": "Almost, but don't forget we have some measured angles here too",
@@ -127,7 +127,7 @@
     {
       "questionId": 96264,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3469928c-9b84-4c7a-b3ee-794ca0a19272.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you might have doubled the 15cm side. This will be longer than the diagonal we are interested in. Try to cosntruct an accurate drawing of this shape and measure the missing diagonal.",
         "B": "Not quite. You might have estimated. Try to construct an accurate drawing of this shape, starting with your base line and then using your compasses at either end, set to 15cm. If they won't stretch this far then you might have to use a scale.",

@@ -25,7 +25,7 @@
     {
       "questionId": 109525,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bbc569e3-3e8c-457c-8bae-09a071c193aa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. The question says the ball is not replaced which means after the first pick you will not have 7 left in the bag. How many balls will you have left? How many of them will be red?",
         "B": "Not quite. We haven't picked a red ball yet, the first ball we picked was yellow.",
@@ -37,7 +37,7 @@
     {
       "questionId": 109535,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3e0b237d-ff8d-478e-b8cf-39322e5befda.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. The question says the ball is not replaced which means after the first pick you will not have 9 left in the bag. How many balls will you have left?",
         "B": "If the first ball is yellow, there will be five red balls left out of a total of 8, so the probability is 5/8.",
@@ -49,7 +49,7 @@
     {
       "questionId": 109526,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/545d2768-b319-4209-a890-580795445ea1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. I think you have tried to add rather than multiply.",
         "B": "Not quite. Have a look at your fractions. The denominators should be different as the balls are not replaced.",
@@ -61,7 +61,7 @@
     {
       "questionId": 109536,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/06b02015-2f82-46cc-b68d-9b15b9621694.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Have a look at your fractions. The denominators should be different as the balls are not replaced.",
         "B": "Not quite. Have a look at your fractions. The balls are not replaced, which means the number of red balls you have should go down.",
@@ -73,7 +73,7 @@
     {
       "questionId": 109527,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2d2c2367-0559-4cec-ae08-fbded5e6f710.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Make sure you are looking at all of the possible ways this could happen, I think you've only found one way.",
         "B": "If at least one ball is red that is every option except both being yellow. We can take the probability that both are yellow away from 1, so 1 – 3/7 × 2/6 = 1 – 6/42 = 36/42. You could also find the probability of picking RY, RR, YR and add them all together.",
@@ -85,7 +85,7 @@
     {
       "questionId": 109537,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/15200aa3-b41d-4931-b2ff-7b6949456b25.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've confused how to find the probability of picking two yellow balls",
         "B": "Make sure you are looking at all of the possible ways this could happen, I think you've only found one way.",
@@ -109,7 +109,7 @@
     {
       "questionId": 109538,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/808aee86-efeb-4c1b-b225-65e8f6e35bd3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Nearly, I think you've found the numerator if there were two being picked out at once, rather than 3.",
         "B": "I think you've worked out 3 balls being replaced. If all the balls are picked out at once, then they are not being replaced.",
@@ -121,7 +121,7 @@
     {
       "questionId": 109529,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4ce53a07-7a81-4217-8f01-d2646bc37e06.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've found the denominator of the probability for the first ball to be selected. How many balls can we choose from for the second ball?",
         "B": "On the first pick there are 7 balls, on the second there would be 6 balls left, and on the third there would be 5 balls left, and so we have 7 × 6 × 5 = 210 on the denominator of the fraction.",
@@ -133,7 +133,7 @@
     {
       "questionId": 109539,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/73fd5cdc-6ae9-4fd2-a096-5b97eb3d4f35.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost! I think you've found the correct values but forgotten how to find the probability of all three happening at the same time.",
         "B": "I think you've found the denominator of the probability for the first ball to be selected. How many balls can we choose from for the second ball?",

@@ -19,7 +19,7 @@
     {
       "questionId": 158757,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f0410d02-a4a5-4481-ba0b-a6c57ca646bc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost, but is 39 closer to 30 or 40?",
         "B": "151 to the nearest ten is 150, and 39 to the nearest ten is 40, so 150 - 40 will give a value very close to 151 - 39.",
@@ -31,7 +31,7 @@
     {
       "questionId": 158956,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b43e6f33-16ec-42e0-a6e1-670e909e0f72.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite - we want to round each number to the nearest 10 to get the closest possible estimate. What is the nearest ten to 178, and the nearest ten to 21?",
         "B": "Almost, but is 178 closer to 170 or 180?",
@@ -55,7 +55,7 @@
     {
       "questionId": 158957,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a82ba4db-474f-490c-bece-fe853f97f8c1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite - we want to round each number to the nearest 10 to get the closest possible estimate. What is the nearest ten to 372, and the nearest ten to 63?",
         "B": "Almost, but is 63 closer to 60 or 70?",
@@ -67,7 +67,7 @@
     {
       "questionId": 158759,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/94407f0a-9a99-4911-98ed-ef38e6223596.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite - we want to round each number to the nearest 10 to get the closest possible estimate. What is the nearest ten to 36, and the nearest ten to 77?",
         "B": "Almost, but is 36 closer to 30 or 40?",
@@ -79,7 +79,7 @@
     {
       "questionId": 158958,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dc5d8558-aee3-45a3-8ebf-0c6d18197eaa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost, but is 57 closer to 50 or 60?",
         "B": "Not quite - we want to round each number to the nearest 10 to get the closest possible estimate. What is the nearest ten to 57, and the nearest ten to 96?",
@@ -91,7 +91,7 @@
     {
       "questionId": 158760,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/142c1676-aa64-4f0d-90c6-d8eba74edd15.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost, but is 429 closer to 420 or 430?",
         "B": "Not quite - we want to round each number to the nearest 10 to get the closest possible estimate. There are 31 days in July, so what is the nearest ten to 31, and the nearest ten to 429?",
@@ -103,7 +103,7 @@
     {
       "questionId": 158959,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/358ee522-f8e0-4dc3-95d1-af5f6b201025.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost, but is 289 closer to 280 or 290?",
         "B": "There are 31 days in March, which to the nearest ten is 30, and 289 to the nearest ten is 290, so 290 ÷ 30 will give a good estimate of the eggs per day.",
@@ -115,7 +115,7 @@
     {
       "questionId": 158761,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8419c68e-8652-424f-8490-9073afe582d7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost, but it looks like you rounded 22 to 30 before you multiplied. Is 22 closer to 20 or 30?",
         "B": "18 to the nearest ten is 20, and 22 to the nearest ten is 20, and 20 x 20 = 400 so 400 is a good estimate for his total earnings.",

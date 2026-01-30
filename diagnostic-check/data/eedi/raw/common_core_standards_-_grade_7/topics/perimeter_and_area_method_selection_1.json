@@ -43,7 +43,7 @@
     {
       "questionId": 77162,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8748248b-69e0-4a23-88a5-38a6328a7010.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Check your answer! If each side was 10m would the perimeter be 90m?",
         "B": "Check your answer! If you had two sides of 10m and two sides of 20m would the perimeter be 90m?",
@@ -55,7 +55,7 @@
     {
       "questionId": 78992,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f779dd36-ba14-410e-a98e-04ca59e007a7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Check your answer! If each side was 15m would the perimeter be 80m?",
         "B": "The missing length is (80 - 15 - 15)/2 = 25m.",
@@ -79,7 +79,7 @@
     {
       "questionId": 78995,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db62f05d-5680-4fe3-a1d6-cf37c09fca1d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, we don't add the lengths together. We need to multiply the base and perpendicular height",
         "B": "Not quite. We don't multiply all the sides, we only use the base and perpendicular height",
@@ -91,7 +91,7 @@
     {
       "questionId": 77166,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4b3ac2eb-1f12-4efa-807f-238d15992920.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost, just make sure you use the base and the perpendicular height.",
         "B": "Remember with triangles we have to do base x perpendicular height and then divide by 2",
@@ -115,7 +115,7 @@
     {
       "questionId": 77167,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db4942a1-0199-4631-bfe8-7841d878fd4e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. We have been told the area, not the perimeter.",
         "B": "We need to square root 100, which gives 10.",
@@ -127,7 +127,7 @@
     {
       "questionId": 78997,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2eec8a97-5578-4704-8587-ab751f7c64d7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. We don't halve the number, we are looking for the number that we multiply by itself to get 64.",
         "B": "Not quite. We have been told the area, not the perimeter.",
@@ -139,7 +139,7 @@
     {
       "questionId": 77168,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a0948c6a-c759-43eb-9727-3dbee83252d6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have found the correct area for the rectangle. Have you checked all the answers?",
         "B": "I think you have found the correct area for the rectangle. Have you checked all the answers?",
@@ -151,7 +151,7 @@
     {
       "questionId": 78998,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c40c1548-93f6-4863-9a7e-148319371ee1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you might have forgotten to divide by 2 when finding the area of the triangle",
         "B": "The area of the triangle is (6 × 6)/2 = 18, and the area of the rectangle is 2 × 9 = 18 also.",

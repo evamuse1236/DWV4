@@ -37,7 +37,7 @@
     {
       "questionId": 76705,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/384b183b-b14f-4cb0-8682-126b89210070.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Remember, a factor is a number that can divide the number. 12 can divide 12, but not 18.",
         "B": "Remember, a factor is a number that can divide the number. 18 can divide 18, but not 12.",
@@ -73,7 +73,7 @@
     {
       "questionId": 78774,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8d541f9b-f55c-4f4b-9c80-545daf6a1ddb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You've given the highest common factor :) but this question is asking about multiples. Think about your 6 and 12 times tables. What value is the first that they have in common?",
         "B": "The multiples of 6 are 6, 12... and the multiples of 12 are 12, 24..., so the LCM is 12 as this is the lowest to appear in both sequences.",
@@ -85,7 +85,7 @@
     {
       "questionId": 76716,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/525ed370-7909-42e9-9ecf-a2c13feeefc9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You've multiplied 5, 10 and 12 together, which is a great way of finding a common multiple, but how do you know it's the lowest?",
         "B": "Almost! 30 is a multiple of 5 and 10 but doesn't appear in the 12 times table, so is not the lowest common multiple of all three numbers.",
@@ -109,7 +109,7 @@
     {
       "questionId": 99571,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d229093a-6333-4114-a9ac-00f986feec03.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you're confusing factors and multiples; 1 is the highest common factor of 6 and 7. The word 'multiple', has more of a clue to it ... think 'multiply', so the times table for that number.",
         "B": "You might have thought that 6 and 7 need to be added. If unsure, look for a clue in the question: for the word 'multiples', think 'multiply', so the times table for that number.",
@@ -133,7 +133,7 @@
     {
       "questionId": 99579,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3e1830e6-559c-4ee6-b060-2b064926a766.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! You've picked a common factor, but 6, 9 and 18 share another common factor. Can you think what it is?",
         "B": "Factors of 6 = 1, 2, 3 and 6. Factors of 9 = 1, 3 and 9. Factors of 18 = 1, 2, 3, 9 and 18. The common factors are 1 and 3, so 3 is the highest common factor of 6, 9 and 18.",

@@ -25,7 +25,7 @@
     {
       "questionId": 104291,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9198d2c8-b777-4310-b154-07bc84173e98.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Out of addition and multiplication, which do you do first?",
         "B": "Addition and subtraction are performed left to right. Multiplication is done before addition.",
@@ -61,7 +61,7 @@
     {
       "questionId": 104299,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ecefd0e0-acfc-4041-a0cb-d833301ce4f6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Think about your order of operations. What comes first in each calculation?",
         "B": "Out of addition and division, which do you do first?",
@@ -73,7 +73,7 @@
     {
       "questionId": 104293,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/83232169-5674-4eee-862f-98dad015483d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "What gets squared in problem Q?",
         "B": "Brackets are done before indices, and indices are done before addition.",
@@ -85,7 +85,7 @@
     {
       "questionId": 104300,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3224fe2b-2615-4f42-bb68-326cfdf86381.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "What gets squared in problem P?",
         "B": "Think about your order of operations. What number gets squared in each calculation?",
@@ -97,7 +97,7 @@
     {
       "questionId": 104294,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0b2f5db0-7aca-45a1-9edf-88d9fd2614ea.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Out of addition, subtraction and multiplication, which do you do first?",
         "B": "Multiplication is done before either addition or subtraction.",
@@ -109,7 +109,7 @@
     {
       "questionId": 104301,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/097a476c-4772-459c-bfa6-f1a04dc6f860.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Out of addition, subtraction and multiplication, which do you do first?",
         "B": "Out of addition, subtraction and multiplication, which do you do first?",
@@ -121,7 +121,7 @@
     {
       "questionId": 104295,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b4199579-e26f-444b-b628-5ca6adcea16b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Think about your order of operations. What operations are there here?",
         "B": "What effect does putting in brackets have on the order?",

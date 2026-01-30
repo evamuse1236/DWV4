@@ -43,7 +43,7 @@
     {
       "questionId": 77169,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2d405fb0-b013-48cf-acdb-79c553c7cbfa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Nearly, this is the length of one side, so what is the whole perimeter?",
         "B": "I think you found one side by dividing the area by 4. You need to think about what number you multiply by itself to get 196, this is the length of each side.",
@@ -55,7 +55,7 @@
     {
       "questionId": 78999,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5c0b2c5e-f2ca-491c-9b8f-123608560c1a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you included the line joining the square and pentagon, remember the perimeter is only the distance around the outside of the shape.",
         "B": "The lengths of the square are √144 = 12, so the perimeter is 7 × 12 = 84.",
@@ -67,7 +67,7 @@
     {
       "questionId": 77170,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8dbb8750-33db-4d3f-b12f-f4a78cafe773.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have found the area rather than the perimeter. What is the distance all the way around the shape?",
         "B": "You are so close, just check your units",
@@ -79,7 +79,7 @@
     {
       "questionId": 79000,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8964e951-dcb9-4777-a4e4-bbb34ef3a16c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost, you just need to add on the length of the side that isn't labelled. Think about how you can work out its length",
         "B": "I think you have found the area rather than the perimeter. What is the distance all the way around the shape?",
@@ -103,7 +103,7 @@
     {
       "questionId": 79001,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/875732cf-6470-404d-8b09-85acaec4e683.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is the side length of the square. If the side of the square is 4, and all the way round the whole shape is 30, can you find the length of the rectangle to help you answer the question.",
         "B": "Nearly, I think you have added on the area of the square twice.",
@@ -115,7 +115,7 @@
     {
       "questionId": 77172,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/39c4199d-38d2-4846-824b-a9a9d4e842de.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. You are told the area and need to work backwards to find the missing length",
         "B": "Not quite. You are told the area and need to work backwards to find the missing length. Remember with triangles to get the area you do base x perpendicular height divided by 2",
@@ -127,7 +127,7 @@
     {
       "questionId": 79002,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2e1eee2b-3b03-4755-9082-0ebf51e2d8fa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. You are told the area and need to work backwards to find the missing length. Remember with triangles to get the area you do base x perpendicular height divided by 2",
         "B": "We have 6 × h/2 = 2.4. If we multiply by 2 we get 6 x h = 4.8, and then divide by 6 to get h = 0.8.",
@@ -151,7 +151,7 @@
     {
       "questionId": 79004,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/113e7acf-bf18-4660-aa3d-45074f8c5e08.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have tried to split the shape up into two triangles, but we don't know if the sloped line goes to the top left corner. Try splitting it into a rectangle and a right angled triangle. Remember to divide by 2 when finding the area of a triangle.",
         "B": "I think you have tried to split the shape up into two triangles, but we don't know if the sloped line goes to the top left corner. Try splitting it into a rectangle and a right angled triangle.",

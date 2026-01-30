@@ -37,7 +37,7 @@
     {
       "questionId": 76815,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/93ca5f31-3cc6-4b76-a7dc-c0aa339d58ef.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you have found the calculation if there is an increase of 10%, depreciation means the cost has decreased.",
         "B": "It looks like you have used 0.1 as the multiplier, but 10% isn't the multiplier. We are losing 10%, think about what we will have left, and what this will be as a multiplier.",
@@ -73,7 +73,7 @@
     {
       "questionId": 78855,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d45ab1b0-8fbc-4cd0-9e43-81fd3420cc17.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you have used the 5% (or 0.05) as the multiplier but we need a decrease of 5% (from 100%) as the multiplier.",
         "B": "Not quite, we don't multiply by 5. The number of years is in the power as we have to apply the change 5 times.",
@@ -85,7 +85,7 @@
     {
       "questionId": 81295,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/64e9b498-3b7f-411c-9b7f-f1682899ddfa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you used the multiplier for a 90% increase (1.9). Which multiplier would give a 9% increase?",
         "B": "I think you have used simple interest. How do we work out compound increases? What is the multiplier?",
@@ -109,7 +109,7 @@
     {
       "questionId": 81296,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f5b779de-7c2f-47eb-862a-920fc167e7d1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have used simple interest. How do we work out compound increases? What is the multiplier?",
         "B": "Invested for 9 years, £10,000 would become 10000 x 1.09^9 = £21,719 to the nearest whole pound. 8 years would become 10000 x 1.09^8 = £19,926, so we know that 9 years are needed.",
@@ -121,7 +121,7 @@
     {
       "questionId": 81471,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/026d89dc-f11a-47b1-843b-58a898542621.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Invested for 11 years, £8,000 would become £18,653 at this interest rate. This is more than double the value, but is there a lower number of years that will meet the target of £16,000?",
         "B": "Invested for 9 years, £8,000 would become £15,992 at this interest rate. This is not double the value. So we know we need to invest for longer.",

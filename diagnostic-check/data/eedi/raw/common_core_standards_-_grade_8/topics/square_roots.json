@@ -43,7 +43,7 @@
     {
       "questionId": 134852,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/948751e7-1770-484e-a00a-6c6ac76e47d4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "45 is not a square number. 6 squared is 36, what is the first square number after that?",
         "B": "47 is not a square number. 6 squared is 36, what is the first square number after that?",
@@ -55,7 +55,7 @@
     {
       "questionId": 134872,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f80e7c31-243a-4bd4-a211-cf993de25bc4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "52 is not a square number. 7 squared = 49. What is the square number after this?",
         "B": "55 is not a square number. 7 squared = 49. What is the square number after this?",
@@ -67,7 +67,7 @@
     {
       "questionId": 134853,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/54bc9fd9-9041-4c91-835a-a883e1a63a1e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have just written the number two times in a row. 11² means 11 squared which is 11 x 11",
         "B": "11² = 11 squared = 11x11 = 121",
@@ -79,7 +79,7 @@
     {
       "questionId": 134873,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/55aba0e6-84d7-4066-8b9b-498250d380f4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have multiplied by 2 rather than squaring. 12² means 12 squared which is 12x12",
         "B": "I think you have just written the power of 2 as a bigger 2 next to the 12. 12² means 12 squared which is 12x12",
@@ -103,7 +103,7 @@
     {
       "questionId": 134874,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/99f387ab-a292-425e-9cd6-35224d793c9d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is the notation for the cube root of x. We need the square root. How will this be different?",
         "B": "This is the notation for x squared. We are looking for the notation that shows the inverse operation, square root.",
@@ -115,7 +115,7 @@
     {
       "questionId": 134855,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e2a6955f-fdb9-403f-ac0b-da08136bcebe.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have just multiplied the digits together. We are looking for the number that when multiplied by itself makes 36.",
         "B": "I think you have squared the number 36. We are looking for the number that when multiplied by itself makes 36.",
@@ -127,7 +127,7 @@
     {
       "questionId": 134875,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b7f78a45-9789-4565-a37c-eb8fe9aefd9a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have found the 4th root of 81. We need to find the number that when multiplied by itself makes 81.",
         "B": "A square root is a number that when multiplied by itself, will give us the number we have. 9 x 9 = 81 so the square root of 81 is 9",
@@ -151,7 +151,7 @@
     {
       "questionId": 134876,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ebb46ea1-8384-4f50-8c37-168f5b4010d6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have found the cube root of 64. We need to find the number that, when multiplied by itself, makes 64.",
         "B": "A square root is a number that when multiplied by itself, will give us the number we have. 8 x 8 = 64 so 8 must be the square root of 64",

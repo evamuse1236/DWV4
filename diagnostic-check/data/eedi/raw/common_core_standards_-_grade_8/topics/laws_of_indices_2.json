@@ -37,7 +37,7 @@
     {
       "questionId": 102982,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b15f560e-2fab-445a-a2c9-d87a931d5b55.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost, but when we divide we don't divide the powers. Try writing it as a fraction to see how many 4s we can cancel down",
         "B": "When we divide numbers that have been raised to a power we subtract the powers. 6 - 3 = 3 so we have 4 to the power of 3. You can see this by writing it as a fraction, and cancelling three 4s from the top and bottom",
@@ -49,7 +49,7 @@
     {
       "questionId": 102991,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f8e9d7b5-b4cf-4f69-a929-46b2982cec90.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost, but when we divide we don't divide the powers. Try writing it as a fraction to see how many 6s we can cancel down",
         "B": "When we divide numbers that have been raised to a power we subtract the powers. 9 - 3 = 6 so we have 6 to the power of 6. You can see this by writing it as a fraction, and cancelling three 6s from the top and bottom",
@@ -61,7 +61,7 @@
     {
       "questionId": 102983,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d05ad731-5636-47dd-9e97-26eb3faeeb03.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I can see that you have subtracted the powers, which would be correct if we had the same base numbers. What happens when that isn't the case?",
         "B": "I can see you have divided the base numbers and the powers. Try writing this out as a fraction and see if you can cancel it down.",
@@ -73,7 +73,7 @@
     {
       "questionId": 102992,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3289b242-ae35-454d-b47a-1a96847c9fef.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I can see that you have subtracted the powers, which would be correct if we had the same base numbers. What happens when that isn't the case?",
         "B": "I can see you have divided the base numbers and the powers. Try writing this out as a fraction and see if you can cancel it down.",
@@ -85,7 +85,7 @@
     {
       "questionId": 102984,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/70ef7e06-b77e-456c-9ba9-bcf6e0965f77.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you have added the powers together and the base numbers together. We can't add the powers if the base numbers are different.",
         "B": "It looks like you have multiplied the powers together and the base numbers together. We cannot combine powers unless the base numbers are the same.",
@@ -97,7 +97,7 @@
     {
       "questionId": 102993,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/41acfb53-edd2-47e4-8a42-ec0101e539ed.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you have added the powers together and the base numbers together. We can't add the powers if the base numbers are different.",
         "B": "It looks like you have added the powers together and multiplied the base numbers together. We can't add the powers if the base numbers are different.",
@@ -121,7 +121,7 @@
     {
       "questionId": 102994,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c527f5f9-5102-4ae1-9055-804463274332.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you have multiplied the indices rather than adding them.",
         "B": "Not quite. When expressions with the same base are multiplied, we just need to add their indices.",
@@ -133,7 +133,7 @@
     {
       "questionId": 102986,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b30c67ea-4166-48a9-9e95-99c54f10aff8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you have multiplied the base numbers and added the powers. We can only add the powers when the base numbers are the same.",
         "B": "It looks like you have added the base numbers and added the powers. We can only add the powers when the base numbers are the same.",

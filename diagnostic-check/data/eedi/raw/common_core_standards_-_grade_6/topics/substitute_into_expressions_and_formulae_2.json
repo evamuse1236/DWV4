@@ -43,7 +43,7 @@
     {
       "questionId": 77127,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/91a9d348-2af0-4298-8f64-9856ad1a2687.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you made a slight mistake when working out 4k. Remember this means 4 x k.",
         "B": "We have 3 × 4² - 4 × 4 = 3 × 16 - 16 = 48 - 16 = 32.",
@@ -55,7 +55,7 @@
     {
       "questionId": 78902,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a2d01f5e-d4a2-4918-ad29-acf5b0f7db54.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you put 3k as 33. Remember this means 3 x k.",
         "B": "I think you put 3k as 33. Remember this means 3 x k. You then need to make sure you do the subtraction in the right order.",
@@ -67,7 +67,7 @@
     {
       "questionId": 77128,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/53a986a0-4f9f-4d1e-bf59-80fed2fafc3d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you found the first part correctly, but remember that 4r means 4 x r",
         "B": "Think really carefully about what happens when you multiply two negatives together, and what happens when you subtract a negative.",
@@ -103,7 +103,7 @@
     {
       "questionId": 78904,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5e53d05e-28b0-4018-8691-ffda7a698404.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you made a mistake with the division. What is 3 divided by 6?",
         "B": "I think you did time divided by distance, but it needs to be distance divided by time",
@@ -127,7 +127,7 @@
     {
       "questionId": 78905,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/10cf4a1f-1007-4994-bf2a-fcf40d18170c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you only divided the a by b. You need to work out all of the top of the fraction before dividing by the bottom.",
         "B": "Almost, just remember that cb means you multiply c and b together",
@@ -151,7 +151,7 @@
     {
       "questionId": 78906,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a704f9b1-b888-4a18-be2b-f59c6c560e9f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The numbers don't go up by the same amount each time. You need to change r for 3 and then work out the sum",
         "B": "We have 2r² - 1 = 2 × 3² - 1 = 2 × 9 - 1 = 18 - 1 = 17.",

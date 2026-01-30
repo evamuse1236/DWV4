@@ -43,7 +43,7 @@
     {
       "questionId": 109756,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ed2d2b8f-4370-4e2d-b65e-dfc3687243ae.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Take care - the question asks for the diameter!",
         "B": "We know 𝐶 = 𝜋𝑑 or 𝐶 = 2𝜋𝑟. Because the question asks for the diameter, let’s use 𝐶 = 𝜋𝑑 and substitute the value of 36𝜋 in place of 𝐶 to give 36𝜋 = 𝜋𝑑. We divide both sides by 𝜋 to give 36 cm",
@@ -55,7 +55,7 @@
     {
       "questionId": 109766,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d53f814f-7c4c-46bb-aeaf-2babfb138538.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! I think you may be confusing circumference with area (𝐴 = 𝜋𝑟²). What's the other formula associated with circles? Remember, it's the diameter that's needed, not the radius!",
         "B": "We know 𝐶 = 𝜋𝑑 or 𝐶 = 2𝜋𝑟. Because the question asks for the diameter, let’s use 𝐶 = 𝜋𝑑 and substitute the value of 100𝜋 in place of 𝐶 to give 100𝜋 = 𝜋𝑑. We divide both sides by 𝜋 to give 100 cm.",
@@ -67,7 +67,7 @@
     {
       "questionId": 109757,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7f5442d3-fd3c-4093-8202-f3d213d86cb9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! I think you may be confusing circumference with area (𝐴 = 𝜋𝑟²). What's the other formula associated with circles: C = .....? Also, note that you've been given the radius to work with!",
         "B": "Not quite! Note that you've been given the radius, so if you're working with 𝐶 = 𝜋𝑑, what to you need to do to the 15 m?",
@@ -79,7 +79,7 @@
     {
       "questionId": 142350,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/715564c8-ba19-4baf-8eca-d5f4862d9057.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! I think you may be confusing circumference with area (𝐴 = 𝜋𝑟²). What's the other formula associated with circles: C = .....?",
         "B": "We know 𝐶 = 𝜋𝑑 or 𝐶 = 2𝜋𝑟. Because the question gives the radius, let’s use 𝐶 = 2𝜋𝑟 and substitute the value of 10 in place of 𝑟 to give 𝐶 = 2𝜋 × 10 = 20 × 3.141... = 62.831... = 62.8 m (1 dp).",
@@ -91,7 +91,7 @@
     {
       "questionId": 109758,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c0cd29a3-707e-4eb6-8aea-056fdcd10d73.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! I think you may be confusing circumference with area (𝐴 = 𝜋𝑟²). What's the other formula associated with circles: C = .....? Remember, you're being asked to work out the diameter, not the radius!",
         "B": "Not quite! I think you may be confusing circumference with area (𝐴 = 𝜋𝑟²). What's the other formula associated with circles: C = .....? Remember, you're being asked to work out the diameter, not the radius!",
@@ -127,7 +127,7 @@
     {
       "questionId": 109769,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/644e0718-5018-4f7a-b1a4-b246112eee5d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you were so nearly there, but remember, we've been given the radius here, not the diameter!",
         "B": "I think you were so nearly there, but there was one step you forgot to do with the circumference calculation ... remember, we've half a circle here!",
@@ -139,7 +139,7 @@
     {
       "questionId": 109760,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d177a678-cb37-4f97-b079-4af934a61381.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost! You have the straight edge correct, but think again about the curved part, remembering that you've been given the radius, not the diameter, and that you have half a circle.",
         "B": "The distance 𝑡 represents the radius. The perimeter of the shape = 80 = half the circumference of a circle + the straight edge of 2𝑡. Dealing with half the circle’s circumference, for a whole circle we have 𝐶 = 2𝜋𝑟 = 2𝜋𝑡. Therefore, half the circumference = 2𝜋𝑡/2 = 𝜋𝑡. Substituting these gives 80 = 𝜋𝑡 + 2𝑡, which is the same as answer B.",
@@ -151,7 +151,7 @@
     {
       "questionId": 109770,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1fc18664-21d2-4878-abf1-9fa34d96e831.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost, but remember we're dealing with half a circle here!",
         "B": "Almost there! You've worked out the length of the curved part, but what do you need to add to get back to where you started (i.e. find the perimeter)?",

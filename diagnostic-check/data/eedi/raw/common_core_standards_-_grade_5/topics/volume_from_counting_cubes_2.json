@@ -19,7 +19,7 @@
     {
       "questionId": 158457,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b7ef1f87-bfeb-43c9-8825-a1f73323bf2d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "So close but check the units - do we measure volume in square units?",
         "B": "It looks like you counted the faces of the cubes you can see, but to find the volume we want to know how many cubes there are. How many 3D cubes would it take to build this shape?",
@@ -31,7 +31,7 @@
     {
       "questionId": 158676,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f08f3d3f-8af5-4fb6-9d67-8dcc16df5e15.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you counted the faces of the cubes you can see, but to find the volume we want to know how many cubes there are. How many 3D cubes would it take to build this shape?",
         "B": "So close but check the units - do we measure volume in square units?",
@@ -43,7 +43,7 @@
     {
       "questionId": 158458,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aa4199d8-0062-4f3e-b43a-1c65678e15e6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you counted the faces of the cubes you can see, but to find the volume we want to know how many cubes there are. How many 3D cubes would it take to build this shape?",
         "B": "So close but check the units - do we measure volume in squared units?",
@@ -55,7 +55,7 @@
     {
       "questionId": 158677,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cfd587f7-8897-4c0c-8a06-76922fa910c3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "So close but check the units - do we measure volume in squared units?",
         "B": "This shape is made out of 9 small cubes, so its volume is 9 cubic units.",
@@ -67,7 +67,7 @@
     {
       "questionId": 158459,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c01a0160-7bb7-4b85-8ad6-db54e256dc62.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "So close but check the units - do we measure volume in squared units?",
         "B": "It looks like you counted the faces of the cubes you can see, but to find the volume we want to know how many cubes there are. How many 3D cubes would it take to build this shape?",
@@ -79,7 +79,7 @@
     {
       "questionId": 158678,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/40d815c3-54ea-4c74-be7b-9eac6d707b9f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "So close but check the units - do we measure volume in squared units?",
         "B": "Almost, but 12 cubes would make a full 3 x 4 rectangle. This shape has a gap in the middle, so try counting the little cubes again.",
@@ -103,7 +103,7 @@
     {
       "questionId": 158679,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c1143563-7f17-48ad-929d-97d432cb12bc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "That's the number of cubes in the top layer, but can you see there are three more layers underneath? How many cubes will there be in the whole block, if each layer has 6 cubes?",
         "B": "It looks like you counted the faces of the cubes, but that gives us surface area, not volume. To find the volume we want to know how many cubes there are. How many 3D cubes would it take to build this shape?",
@@ -127,7 +127,7 @@
     {
       "questionId": 158680,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fcc9e8d4-a3c7-46d7-b618-340e74f6513d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you counted faces instead of cubes and then subtracted three. To find volume we need to know how many 3D cubes are in the shape.",
         "B": "That's the volume of the shape as it is in the diagram, so what will it be after taking out three of the cubes?",

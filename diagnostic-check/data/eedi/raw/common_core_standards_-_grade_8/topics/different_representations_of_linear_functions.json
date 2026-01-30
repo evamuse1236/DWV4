@@ -55,7 +55,7 @@
     {
       "questionId": 165448,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/35bfc8e7-12b4-475b-afc2-aeb0b63809ee.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite - a rate of change can be calculated by difference in 𝑦 ÷ difference in 𝑥. Try comparing two columns in Katie's table to see what the rate of change is.",
         "B": "Rate of change can be calculated by difference in 𝑦 ÷ difference in 𝑥. When Katie's table increases 𝑥 by 5, 𝑦 increases by 25, meaning the rate of change is 25/5 = 5. This is higher than the rate of change of 2 in Tom's function.",
@@ -67,7 +67,7 @@
     {
       "questionId": 165440,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1685cf5f-2f32-4059-be2a-8ab906aa7fb4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have mixed up the 𝑦-intercept and the rate of change. Rate of change from a graph is given by the slope.",
         "B": "Tom's graph has a slope of -4, meaning the rate of change is 4. This is less than Katie's function which has a slope of 6.",
@@ -79,7 +79,7 @@
     {
       "questionId": 165449,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4bd96fb3-82bc-4f5f-8c01-037ef968ee0e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have mixed up the 𝑦-intercept and the rate of change. Rate of change from a graph is given by the slope.",
         "B": "Tom's graph has a slope of -4, meaning the rate of change is 4. This is less than Katie's function which has a rate of change of 10.",
@@ -91,7 +91,7 @@
     {
       "questionId": 165443,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bf3d950f-60eb-4ffc-8128-decdf4f8067d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! The rate of change from a table and a graph can be calculated by difference in y ÷ difference in x. See if you can work it out for both Tom and Katie!",
         "B": "Not quite! The rate of change from a table and a graph can be calculated by difference in y ÷ difference in x. See if you can work it out for both Tom and Katie!",
@@ -103,7 +103,7 @@
     {
       "questionId": 165450,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d261c3a0-f46d-4d9d-aa9e-4da3228e87f6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! The rate of change from a table and a graph can be calculated by difference in y ÷ difference in x. See if you can work it out for both Tom and Katie!",
         "B": "Not quite! The rate of change from a table and a graph can be calculated by difference in y ÷ difference in x. See if you can work it out for both Tom and Katie!",
@@ -127,7 +127,7 @@
     {
       "questionId": 165451,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/606af946-4a32-499e-8cc1-ff180ab8a3e2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite - the 𝑦-intercept from a table can be found by looking for when 𝑥 = 0. What would that make Katie's 𝑦-intercept?",
         "B": "The 𝑦-intercept from a table can be found when 𝑥 = 0. In Tom's function, the 𝑦-intercept is 10, and in Katie's table, the 𝑦-intercept is 20. This means Katie's function has a greater 𝑦-intercept.",

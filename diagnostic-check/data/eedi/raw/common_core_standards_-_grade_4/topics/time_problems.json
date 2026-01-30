@@ -37,7 +37,7 @@
     {
       "questionId": 135788,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6b39e379-738c-4ae1-8a89-ba28c55cfd16.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost. 3 hours would mean Phil was back after 6:47, but he was back earlier than this.",
         "B": "3:47 to 5:47 is two hours. It is then 13 minutes until 6pm, and another 12 minutes to 6:12pm. That is 2 hours + 12 minutes + 12 minutes = 2 hours 25 minutes",
@@ -49,7 +49,7 @@
     {
       "questionId": 135808,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6ba9ef34-5a5a-40aa-b71a-d0481d5f1a8b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost. 4 hours would mean Jack was back after 11:39, but he was back earlier than this.",
         "B": "Almost. 4 hours would mean Jack was back after 11:39, but he was back earlier than this.",
@@ -61,7 +61,7 @@
     {
       "questionId": 135789,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3de4c048-720f-408d-96a0-44f930de1a40.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost, just check your minutes",
         "B": "Not quite. 5 hours would take us up to 8:47, and we still have to add on the minutes",
@@ -97,7 +97,7 @@
     {
       "questionId": 135810,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1773e563-70ab-4797-91ec-3d79f7c707b0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost, just check your minutes",
         "B": "Almost. Taking off 4 hours would get us back to 5:03, but you have taken off less than 4 hours as your answer is later.",
@@ -109,7 +109,7 @@
     {
       "questionId": 135791,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d3fc2dbc-f8e9-40ac-a35b-8431d9718603.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost. Just make sure that when you add on the 30 minutes this takes you up to 9pm.",
         "B": "Not quite. This would be true if she arrived at 10pm, but she doesn't arrive home until 10am the next day",
@@ -133,7 +133,7 @@
     {
       "questionId": 135792,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7e49a80f-811e-48d7-8bd5-5e7247e78fa6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is the time if the train was 18 minutes early. We need to add 18 minutes onto the time",
         "B": "Almost, this is only 8 minutes late. Don't forget the other 10 minutes",
@@ -145,7 +145,7 @@
     {
       "questionId": 135812,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8628e9f5-3f86-46e1-9f9a-9b4b05531bf8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, This is if the train is 17 minutes late. It is 17 minutes early so we need to take this off of the time",
         "B": "It should arrive at 15:06, but we have to subtract 17 minutes. If we take off 6 minutes that will get us to 15:00, we still have another 11 minutes to take off which is 14:49",

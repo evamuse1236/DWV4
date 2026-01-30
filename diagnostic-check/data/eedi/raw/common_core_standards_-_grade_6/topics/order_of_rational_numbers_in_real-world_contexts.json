@@ -37,7 +37,7 @@
     {
       "questionId": 165453,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5910acbb-7c0e-4981-aabe-280602ab6b54.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite - the question is asking us about losing the most points, not what the most points is. Which of the numbers would cause us to LOSE the most?",
         "B": "It seems like you've chosen -10 because it's the most frequent, but that wouldn't be losing the most points from just one spin. If he only spins it once, which color would cause him to lose the most points if he landed on it?",
@@ -49,7 +49,7 @@
     {
       "questionId": 165458,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bb60be68-e997-4001-b54b-d2137b65c994.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have just chosen the color that the arrow is pointing to, but that wouldn't be the biggest possible number of points he could lose.",
         "B": "If he lands on purple, he will lose 40 points which is the highest possible number of points to lose on this spinner.",
@@ -73,7 +73,7 @@
     {
       "questionId": 165459,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c74e3185-ef61-440e-a125-f0663e980a82.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've given the latest time on the table, but remember we are looking for the depth which would be the lowest position!",
         "B": "Not quite - this is definitely one of the deepest points but it isn't THE deepest point given on the table. Can you spot another that is lower than this one?",
@@ -85,7 +85,7 @@
     {
       "questionId": 165455,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7606213c-2243-48d6-b1c8-e62ef2f4c9f5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have ordered them based on their digit rather than their size. Negative numbers get smaller the further away from 0 they get! Think about which temperature would be colder.",
         "B": "-10 is further away from 0 than -2 which means it is a lower temperature and would be colder!",
@@ -97,7 +97,7 @@
     {
       "questionId": 165460,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5c8a7666-4f30-4af9-8e3e-060ce7d7f93b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Signs such as ≤ and ≥ mean the values can also be equal to each other. -12 and -5 are definitely not equal to each other, so we wouldn't use those signs to compare those numbers. Try again, using only > or <.",
         "B": "I think you have ordered them based on their digit rather than their size. Negative numbers get smaller the further away from 0 they get! Think about which temperature would be colder.",
@@ -109,7 +109,7 @@
     {
       "questionId": 165456,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/06b71e7c-20e4-43f6-8019-fdd23f183d78.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have given the smallest digit rather than the smallest value. Remember that negative numbers become smaller (and colder!) the further they are away from 0.",
         "B": "-32 is the furthest number down from 0, which would make it the lowest temperature.",
@@ -121,7 +121,7 @@
     {
       "questionId": 165461,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c805d0b8-a9fd-4f0e-9552-ec7e66934d8a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have given the smallest negative digit rather than the smallest value. Remember that negative numbers become smaller (and colder!) the further they are away from 0.",
         "B": "I think you've given the highest temperature here, but that would be the warmest day. When we are thinking about the coldest temperature, we want the lowest number!",
@@ -133,7 +133,7 @@
     {
       "questionId": 165457,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/67c21b6e-f683-4f16-90e4-cf813470b83a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've given the number that is closest to 0 rather than furthest from 0!",
         "B": "The lowest temperature doesn't mean it's the furthest away from 0. Try thinking of all of these numbers on a number line. Which one would take the most jumps from 0?",

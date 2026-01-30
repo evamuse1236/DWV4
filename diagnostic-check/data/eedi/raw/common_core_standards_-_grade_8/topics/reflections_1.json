@@ -61,7 +61,7 @@
     {
       "questionId": 129162,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/953b027b-f8d1-43c7-87ed-fd1a92b7feb1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have looked at the corner that is closest to the mirror line. Where will the marked corner end up?",
         "B": "Make sure you count squares carefully. Start on the marked corner and count how many squares there are until you reach the red vertical line",
@@ -73,7 +73,7 @@
     {
       "questionId": 129302,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/31e54027-00de-4b69-a0b0-5063cbe0656d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have looked at one of the corners closest to the mirror line. Where will the marked corner end up?",
         "B": "This marked corner is 4 squares left of the vertical line. Therefore when it is reflected it will be 4 squares right of the vertical line (point B)",
@@ -97,7 +97,7 @@
     {
       "questionId": 129303,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aef128c1-7f66-40d1-bab2-ae18d1504da2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have decided that P will remain in the same place. Why is Q different?",
         "B": "You have decided that Q will remain in the same place. Why is P different?",
@@ -109,7 +109,7 @@
     {
       "questionId": 129164,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9a99bbfa-177f-4973-b533-4f122aeac8e1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Remember to count from each point of P to the line of reflection. The corresponding points on Q should be the same distance away from the line of reflection.",
         "B": "Not quite. Remember to count from each point of P to the line of reflection. The corresponding points on Q should be the same distance away from the line of reflection.",
@@ -121,7 +121,7 @@
     {
       "questionId": 129304,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/45d3cc51-d1a5-45dc-810b-140df6b2fbe7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Remember, the line of reflection needs to be exactly halfway between P and Q. You can count from one point on P to the line of reflection and it should be the same distance away as the corresponding point on Q.",
         "B": "Remember, the line of reflection needs to be exactly halfway between P and Q. You can count from one point on P to the line of reflection and it should be the same distance away as the corresponding point on Q.",
@@ -133,7 +133,7 @@
     {
       "questionId": 129165,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/178a74d1-f4ef-4e1a-b65c-d7352a9a2d00.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. One of the points on triangle P is touching this line so it would not move when reflected.",
         "B": "Remember the line of reflection needs to be exactly halfway between P and Q. Check your counting carefully. We can have half squares!",
@@ -145,7 +145,7 @@
     {
       "questionId": 129305,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/93b2ae43-6ff0-476a-b138-4c27494866c2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. One side of triangle P is touching this line so it would not move when reflected.",
         "B": "The line of reflection needs to be exactly halfway between P and Q. If I join up the 2 top corners of the triangles then they are 4 squares apart, so the line of reflection must be 2 squares away from each. You can repeat this method of counting for each of the other corners.",

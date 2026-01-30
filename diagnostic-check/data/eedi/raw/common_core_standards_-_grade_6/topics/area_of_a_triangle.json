@@ -49,7 +49,7 @@
     {
       "questionId": 98499,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/92423c9d-85d4-49da-8350-d59e9a132c04.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Remember a triangle is half of a rectangle. How can you use this to find the area?",
         "B": "The area of this triangle has half the value of the area of a rectangle with dimensions 5 units for the length and 2 units for the width. As area rectangle = length ✕ width = 5 ✕ 2 = 10, then area triangle = ½ ✕ 10 = 5 square units.",
@@ -61,7 +61,7 @@
     {
       "questionId": 98488,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/86d202f9-e83b-4f28-9bae-afd53eb2cf31.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The area of this triangle is 12, which matches another triangle",
         "B": "Area triangle = ½ × 𝑏 × 𝘩, where 𝘩 = perpendicular height (the height going straight down), so in this case, 6 cm. Therefore, area = ½ × 3 × 6 = 18/2 = 9. This is different to the other two triangles",
@@ -73,7 +73,7 @@
     {
       "questionId": 98500,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9e09bd1d-459b-4613-9516-271e796e0fd1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The area of this triangle is 7.5, which matches another triangle",
         "B": "Area triangle = ½ × 𝑏 × 𝘩, where 𝘩 = perpendicular height (the height going straight down), so in this case, 6 cm. Therefore, area = ½ × 6 × 5 = 30/2 = 15. This doesn't match the other triangles.",
@@ -85,7 +85,7 @@
     {
       "questionId": 98490,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/725d5ae5-d5ba-4995-a4b9-35feea18b58b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. How would we find the area if we considered it as a single triangle?",
         "B": "Not quite. How would we find the area if we thought of it as two separate triangles?",
@@ -97,7 +97,7 @@
     {
       "questionId": 122122,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/539c2040-1683-424d-bcf1-32cdc2aa4b7e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Remember the area of a triangle is base x height ÷ 2",
         "B": "If you consider the orange triangle the area is ½mp. The purple triangle is ½np. So in total we add these two together.",
@@ -109,7 +109,7 @@
     {
       "questionId": 109421,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6b766b11-a7a4-43b0-811f-9c2978eca8f8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost, just make sure you multiply the base and perpendicular height before dividing by 2",
         "B": "Not quite, you don't need to use all the numbers. It is the base x the perpendicular height divided by 2",
@@ -121,7 +121,7 @@
     {
       "questionId": 122120,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f518e9c6-40e1-4c71-93b6-7382e6c16ada.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, you don't need to use all the numbers. It is the base x the perpendicular height divided by 2",
         "B": "Area triangle = ½ × 𝑏 × 𝘩, where 𝘩 = perpendicular height (the height going straight down), so in this case, 12 cm. Therefore, area = ½ × 18 × 12 = (18 × 12)/2",
@@ -133,7 +133,7 @@
     {
       "questionId": 109422,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d6b9798e-ae28-414a-9245-cf5cd7c32103.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, we need the height straight up to find the area of a triangle, and this isn't 8",
         "B": "Not quite. When finding the area of a triangle we need to do base x perpendicular height divided by 2. The perpendicular height is the height straight up.",
@@ -145,7 +145,7 @@
     {
       "questionId": 122121,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/148335d9-8ac9-4f94-a954-c49395d36b10.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. When finding the area of a triangle we need to do base x perpendicular height divided by 2. The perpendicular height is the height straight up.",
         "B": "Not quite, we need the height straight up to find the area of a triangle, and this isn't 12",

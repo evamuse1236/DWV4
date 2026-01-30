@@ -31,7 +31,7 @@
     {
       "questionId": 107124,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4482a258-7332-4112-894b-df2528325bed.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The gradient is calculated as (change in 𝑦) ÷ (change in 𝑥). To see these values, we need to look at the horizontal change between the two 𝑥 coordinates and also the vertical change between the two 𝑦 coordinates. What type of triangle would have one horizontal and one vertical side?",
         "B": "The gradient is calculated as (change in 𝑦) ÷ (change in 𝑥). By drawing in a right-angled triangle, Max could easily read off these values because they would be the sides of this right-angled triangle. The change in 𝑦 would be the vertical side and the change in 𝑥 would be the horizontal side. The line between the points would be the hypotenuse.",
@@ -43,7 +43,7 @@
     {
       "questionId": 122907,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0aca4745-8783-43ce-aa8f-5ee6cd7aba9a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The gradient is calculated as (change in 𝑦) ÷ (change in 𝑥). To see these values, we need to look at the horizontal change between the two 𝑥 coordinates and also the vertical change between the two 𝑦 coordinates. What type of triangle would have one horizontal and one vertical side?",
         "B": "The gradient is calculated as (change in 𝑦) ÷ (change in 𝑥). To see these values, we need to look at the horizontal change between the two 𝑥 coordinates and also the vertical change between the two 𝑦 coordinates. What type of triangle would have one horizontal and one vertical side?",
@@ -55,7 +55,7 @@
     {
       "questionId": 107125,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/51781fea-7f8c-471b-86c1-0296ce693d5c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have added the 𝑦 coordinates. To find the vertical length, we need the difference between the 𝑦 coordinates.",
         "B": "I think you have might taken the 𝑦 coordinate of the highest point. To find the vertical length, we need the difference between the 𝑦 coordinates.",
@@ -67,7 +67,7 @@
     {
       "questionId": 107136,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/07ca1ee5-330f-49a4-bac5-d4e6e2df864c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have found the difference in the 𝑥 coordinates of two points. Look at the direction of the axes. Which coordinates will tell us the vertical length between the points?",
         "B": "I think you have might taken the 𝑦 coordinate of the highest point. To find the vertical length, we need the difference between the 𝑦 coordinates.",
@@ -115,7 +115,7 @@
     {
       "questionId": 122908,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d42a1f24-251c-4bff-a98a-9e4bd07b71d4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you might have calculated (change in 𝑥) ÷ (change in 𝑦). It might help to remember that gradient = rise ÷ run. Will the change in 𝑦 be the 'rise' or the 'run'?",
         "B": "It looks like you might have multiplied the two lengths. When we calculate gradient, we need to divide.",
@@ -127,7 +127,7 @@
     {
       "questionId": 107128,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/65d4cdbc-2287-4bdc-ad0c-4bb8788c6223.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you have found the difference in the 𝑦 coordinates. The star represents a horizontal change so which coordinates do we need?",
         "B": "I think you might have made an error with the 𝑥 coordinates -4 and -1. Try thinking about where -4 and -1 would be on the 𝑥 axis. How many intervals do we need to jump along the 𝑥 axis to get from -4 to -1?",

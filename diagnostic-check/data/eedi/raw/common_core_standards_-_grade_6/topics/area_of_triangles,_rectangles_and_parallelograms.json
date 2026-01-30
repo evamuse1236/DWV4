@@ -55,7 +55,7 @@
     {
       "questionId": 146051,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/62814936-fda0-4c7a-a93e-83a04d486f11.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, remember to halve your answer once you've multiplied the base by the height.",
         "B": "I think you have the correct formula for the area of a triangle (½ ✕ base ✕ height). However, you need to make sure that you correctly identify the base and height of the triangle. The base and height are at right-angles to each other.",
@@ -79,7 +79,7 @@
     {
       "questionId": 146052,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/50ab2f2f-fe95-4b62-8108-4fcae81a3d97.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, multiplying all three numbers together does not find the area of the parallelogram. The area of a parallelogram is base x perpendicular height.",
         "B": "The area of a parallelogram = base ✕ height. The base and the height are at right-angles to each other. Ensure you correctly identify the base and height measurements.",
@@ -91,7 +91,7 @@
     {
       "questionId": 146033,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5bc7dabd-b855-479a-8416-c91f47c162f2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you may have confused area and perimeter. Area is the space inside a shape. Remember area of a rectangle = length ✕ width.",
         "B": "Not quite. Area of a rectangle = length ✕ width. What would you need to multiply 8 by to give you an area of 24 cm²?",
@@ -103,7 +103,7 @@
     {
       "questionId": 146053,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/389e6897-d553-4f87-a97e-e59364115a5a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you may have confused area and perimeter. Area is the space inside a shape. Remember area of a rectangle = length ✕ width.",
         "B": "Area of a rectangle = length ✕ width. Substituting in the values we know gives 36 = 8 ✕ p. Dividing both sides by 8 gives p = 4.5.",
@@ -115,7 +115,7 @@
     {
       "questionId": 146034,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cb55cb59-3c82-40fb-82be-c4cfdaca8654.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Make sure you convert both your measurements to the same unit (either both cm or both mm) before finding the area.",
         "B": "Not quite. Make sure you convert both your measurements to the same unit (either both cm or both mm) before finding the area.",
@@ -127,7 +127,7 @@
     {
       "questionId": 146054,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/49485f52-0fa0-4365-9ae7-fd16e53060b2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Make sure you convert both your measurements to the same unit (either both cm or both mm) before finding the area.",
         "B": "Not quite. Make sure you convert both your measurements to the same unit (either both cm or both mm) before finding the area.",
@@ -139,7 +139,7 @@
     {
       "questionId": 146035,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b2d8cdce-a8f5-461c-9ce1-845ef45d35e5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have halved the height, which is a good start, we now need to multiply this by the base to get 24...",
         "B": "To find the area of a triangle, we do half the base x perpendicular height. We are told the area is 24 so 1/2 x p x 12 = 24. This simplifies to 6p = 24 so p (the base) must be 4cm.",

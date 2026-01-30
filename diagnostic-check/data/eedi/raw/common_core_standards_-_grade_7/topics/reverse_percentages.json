@@ -43,7 +43,7 @@
     {
       "questionId": 135047,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bd5849cd-025b-4412-a03d-e1be658cb04c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, I think we have increased 402,000 by 20%. Remember that 402,000 is our original value increased by 20%, so 120%. Can we find 1% and then change this to 100%?",
         "B": "We knew that 420,000 = 120%. We then divided this by 120 to get 1%. We finally multiplied this by 100 to get 100%.",
@@ -67,7 +67,7 @@
     {
       "questionId": 135048,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9a515868-f0ef-4f5c-b030-e352b93c9c05.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, I think you knew that 86,100 was 105% however instead of dividing it by the correct multiplier you have divided it by 1.5%. What is 105% as a decimal?",
         "B": "Not quite, I think you've reduced 86,100 by 5%. Remember 86,100 is 105% so we need to divide it by the correct multiplier.",
@@ -79,7 +79,7 @@
     {
       "questionId": 135068,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ad0d755a-c2ed-426c-ab39-9b3dd50292ea.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite I think you have increased 48,300 by 5%. Remember this is 105% and we need to now divide by the multiplier instead.",
         "B": "We knew that 48,300 was 105%. We find 1% by dividing by 105, and then multiply by 100 to get 100%",
@@ -91,7 +91,7 @@
     {
       "questionId": 135049,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/965f7744-9aca-4f9a-a3d3-80d131a65eda.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. This would be correct if we had increased by 40% but we increased by 140%",
         "B": "Not quite, I think you have tried to reduce p by 40% and have converted this to the multiplier. If we started with p, what would we multiply by to increase it by 140%? We need to use the inverse of this multiplication to find p.",
@@ -103,7 +103,7 @@
     {
       "questionId": 135069,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/acece0c4-c44a-4b85-bd07-fe369715c6a2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, this would be increasing an amount by 130%, but we want to undo this increase. We need to use the inverse to find p.",
         "B": "Not quite, I think you have tried to reduce p by 30% and have converted this to the multiplier. If we started with p, what would we multiply by to increase it by 130%? We need to use the inverse of this multiplication to find p.",
@@ -115,7 +115,7 @@
     {
       "questionId": 135050,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/29689e00-d712-486d-9200-9e24d511bb47.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, I think you have found 35% of 94,900. Remember we have decreased our original 100% by 35%. How many percent do we have now? Can we find 100% using this?",
         "B": "Not quite, I think you have increased by 35%. We know that 100% - 35% = 65%, so 94900 is only 65% of the population. What was 100% of the calculation?",
@@ -151,7 +151,7 @@
     {
       "questionId": 135071,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d9b8fc09-1df7-4557-8fa3-4fdda58c4357.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, this would find 60.2% of the population. The population has been reduced by 60.2%, so how many percent do we have left? Remember this change has happened so we need to undo it using the inverse.",
         "B": "Almost, we would x0.398 to reduce an amount by 60.2%, but here the reduction has happened and we need to undo it. We need to use the inverse operation",

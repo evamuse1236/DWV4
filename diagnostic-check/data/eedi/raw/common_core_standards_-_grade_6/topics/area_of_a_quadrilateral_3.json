@@ -55,7 +55,7 @@
     {
       "questionId": 133689,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8d4bc784-fa5d-494f-a5e7-18fb8e857be8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. I think you used the rule for finding the area of a triangle. Do we need to divide by 2 here?",
         "B": "I think you have multiplied all the numbers together. We just need to use the base and the perpendicular height",
@@ -67,7 +67,7 @@
     {
       "questionId": 131457,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a8975419-2263-4537-8001-e40b46cd15bb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. We use parallel lengths and the perpendicular height only.",
         "B": "When finding the area of a trapezium we use the two parallel lengths, q and s, and the perpendicular height, r.",
@@ -79,7 +79,7 @@
     {
       "questionId": 133690,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6b7d089d-13cc-4ec8-a362-14801c65afae.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. We use parallel lengths and the perpendicular height only.",
         "B": "Not quite. We use parallel lengths and the perpendicular height only.",
@@ -91,7 +91,7 @@
     {
       "questionId": 131458,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7dde0a15-d744-4180-9332-d9cbe3544931.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have used the sloped height, but we need the perpendicular height. Also be careful with your units.",
         "B": "I think you have used the sloped height, but we need the perpendicular height.",
@@ -103,7 +103,7 @@
     {
       "questionId": 133691,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1ad9b719-aaf5-473f-b8a9-1383aaf5a489.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost. Just check your units.",
         "B": "We need to multiply by the perpendicular height. This needs to be in mm as the other dimensions in the calculation are in mm. So it is 50.",
@@ -127,7 +127,7 @@
     {
       "questionId": 133692,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dee67059-d03e-4b2f-a503-1ac4cfc2c1c1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you might have done an extra division. Remember the area of a parallelogram is base x perpendicular height.",
         "B": "I think you might have thought the area of a parallelogram is base x height divided by 2. We don't need to divide by 2 to find the area of a parallelogram.",
@@ -151,7 +151,7 @@
     {
       "questionId": 133693,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a3913ce5-a1ed-4b4a-805f-94cf3964e650.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you spotted that 6 x 5 =30. However for a trapezium we add the parallel sides, divide by 2 and multiply by the perpendicular height to find the area.",
         "B": "To find the area of a trapezium we add the two parallel sides, divide by 2 and multiply by the perpendicular height. To undo this we divide by the perpendicular height (30 / 5 = 6), multiply by 2 (6 x 2 = 12) and subtract the given parallel side (12 - 8 = 4)",

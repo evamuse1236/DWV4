@@ -25,7 +25,7 @@
     {
       "questionId": 129156,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ffb36d02-8d4e-42cf-bcbe-1ecd6ba1b48e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have moved 3 squares up and 1 square right. Read the question carefully",
         "B": "I think you have mixed up your right and left. Right will take us over towards the written part of the question",
@@ -49,7 +49,7 @@
     {
       "questionId": 129157,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f7ef7755-85be-4e13-ab5a-c0d725fcc5d6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have mixed up your right and left. Left will take us over towards the y axis",
         "B": "Start on the star. Move one square to the left (to the next cross in the lines) then another square along. You will now be directly above the letters C and B. We are then told to move 3 squares down. 3 jumps take us down on to the letter B",
@@ -61,7 +61,7 @@
     {
       "questionId": 129297,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/524b0f44-8edd-4bf3-960f-0b0fd59557cf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have mixed up your right and left. Left will take us over towards the y axis",
         "B": "You have moved 2 squares left and 3 squares down. Read the question carefully",
@@ -85,7 +85,7 @@
     {
       "questionId": 129298,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b6c9e478-edc8-41d6-bc82-33e25ad01f87.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have mixed up the directions. Think carefully about which direction is right (towards the answers) and which direction is up (towards the top of the page)",
         "B": "I think you have counted the number of crosses between squares, rather than the number of jumps needed.",
@@ -97,7 +97,7 @@
     {
       "questionId": 129159,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fe5e0d46-84a2-48c2-b919-4af9af0b36e2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have described how to get from the triangle to the star. Read the question carefully!",
         "B": "I think you have mixed up the directions. Think carefully about which direction is right (towards the answers) and which direction is down (towards the bottom of the page)",
@@ -109,7 +109,7 @@
     {
       "questionId": 129299,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/37a6a467-bc75-40f6-9a21-9f9889ef0fb1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have described how to get from the triangle to the star. Read the question carefully!",
         "B": "Start in the middle of the star. We have to make 3 jumps to the right, making sure we move from one cross in the lines to the next cross in the lines. Then we need to make 1 jump down in order to reach the middle of the triangle.",
@@ -121,7 +121,7 @@
     {
       "questionId": 129160,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e560f592-c1c4-41ea-acd8-68603b60d92d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have counted the number of crosses between squares, rather than the number of jumps needed.",
         "B": "Start in the middle of the star. We have to make 1 jump up, making sure we move from one cross in the lines to the next cross in the lines. Then we need to make 4 jumps left in order to reach the middle of the triangle.",
@@ -133,7 +133,7 @@
     {
       "questionId": 129300,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c83ef192-05ac-46c4-b6a5-88a1bd8b2f1f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have counted the number of crosses between squares, rather than the number of jumps needed.",
         "B": "You have described how to get from the triangle to the star. Read the question carefully!",

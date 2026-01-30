@@ -73,7 +73,7 @@
     {
       "questionId": 135942,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8da35907-ab28-43e6-80eb-bdda4ab679c6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, I think you have forgotten to change the 2.5 litres into ml. Remember, 1 litre = 1000ml.",
         "B": "Nearly! I think you have changed 2.5 litres to 2050 ml. Try multiplying 2.5 by 1000 again and double check your working out.",
@@ -85,7 +85,7 @@
     {
       "questionId": 135957,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cd3487df-f540-4ece-b044-7b602101d1d9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, I think you have forgotten to change the 2 litres into ml. Remember, 1 litre = 1000ml.",
         "B": "2 litres = 2000ml, so 2000ml + 250ml = 2250 ml.",
@@ -97,7 +97,7 @@
     {
       "questionId": 158020,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b98dade0-458a-4b88-9077-57f0e9896d76.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have multiplied by 100 but there are 1000 ml in a litre...",
         "B": "There are 1000 ml in a litre so to go from litres to millilitres you multiply by 1000. 1.5 x 1000 = 1500",
@@ -109,7 +109,7 @@
     {
       "questionId": 158187,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/05f2696d-f194-441f-801d-4d6084c00a59.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have accidentally divided by 1000 instead of multiplying...",
         "B": "1 litre = 1000 millilitres so to go from litres to millilitres what do we need to multiply by?",
@@ -133,7 +133,7 @@
     {
       "questionId": 158188,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/de35870c-2def-44ce-828b-bb20cd6e6a97.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have multiplied by 100 but there are 1000 ml in a litre...",
         "B": "There are 1000 ml in a litre so to go from litres to millilitres you multiply by 1000. 3 and 2/5 as a decimal is 3.4. 3.4 x 1000 = 3400",

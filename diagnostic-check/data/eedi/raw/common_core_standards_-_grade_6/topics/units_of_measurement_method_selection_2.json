@@ -43,7 +43,7 @@
     {
       "questionId": 79615,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/93350530-faa6-4e6b-916f-395b7a370c2a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Look carefully at the order in the question.",
         "B": "10 mm = 1 cm",
@@ -55,7 +55,7 @@
     {
       "questionId": 124602,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4e286f2d-1cc3-4703-80ee-0a22726b8095.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "There are 100 cm in 1 metre, and 1000 mm in 1 metre.",
         "B": "Look carefully at the numbers and units in the question.",
@@ -67,7 +67,7 @@
     {
       "questionId": 79616,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/418ff445-849a-4949-a3ac-a819fa0f7fd2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Look carefully at the order in the question.",
         "B": "Remember, \"milli-\" means \"thousandth\".",
@@ -79,7 +79,7 @@
     {
       "questionId": 124603,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/543c55b9-08a5-4036-8382-509a2163820c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you used the wrong operation. Will there be more ml or l?",
         "B": "Look carefully at the numbers and units in the question.",
@@ -103,7 +103,7 @@
     {
       "questionId": 79661,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8a55de4b-4f9f-41f4-876d-163ac97ee998.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Nearly. How many minutes did it take to get from 09:25 to 10:00? How many of the 50 do we still have to add on?",
         "B": "Can you have 75 minutes past 12? How many minutes are in an hour?",
@@ -115,7 +115,7 @@
     {
       "questionId": 79618,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/146397de-bb55-4a7e-bafb-ffe8f56c82a5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "\"Milli-\" means \"thousandth\". 1000 mm = 1 m.",
         "B": "1000 mm = 1 m, so 3 × 1000 mm = 3 × 1 m = 3 m.",
@@ -139,7 +139,7 @@
     {
       "questionId": 79619,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f63728d2-15aa-45e5-85ac-316b8a2c79c2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "1 millilitre is equal to 1 cm³. How many millilitres are in a litre?",
         "B": "1 millilitre is equal to 1 cm³. How many millilitres are in a litre?",
@@ -151,7 +151,7 @@
     {
       "questionId": 79663,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/de5201d5-7a8b-413d-92c9-d90be8f46a58.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "1 millilitre is equal to 1 cm³. How many millilitres are in a litre?",
         "B": "1 millilitre is equal to 1 cm³, and 1000 ml = 1 l, so we have 4 × 1000.",

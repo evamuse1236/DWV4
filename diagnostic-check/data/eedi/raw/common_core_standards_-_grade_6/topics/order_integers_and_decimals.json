@@ -55,7 +55,7 @@
     {
       "questionId": 133614,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/48961ced-4ce5-4657-8df2-da6c0db3fce5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost. Remember to compare from the biggest place value column first (the left).",
         "B": "Almost. Remember to compare from the biggest place value column first (the left).",
@@ -67,7 +67,7 @@
     {
       "questionId": 131382,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/324c533f-4a3e-40ba-98d6-be9dabeea0fd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. I think you might have compared the hundreds digits, but forgotten to look at the thousands digits. We must always compare digits, starting in the greatest place value column.",
         "B": "The first digit in each is the same (5). So we look at the digit in the thousands column. In the first number this is a 4 so we know it is the smallest. For the remaining two numbers, the first three digits are the same (5,7 and 4) so we then have to compare the tens digits. The middle number has a tens digit of 2 which is smaller than the last number which has a tens digit of 3. Therefore they go from left to right, smallest to biggest. The less than symbol (<) will need to be used both times to show that the number on the left is smaller than the number on the right.",
@@ -79,7 +79,7 @@
     {
       "questionId": 133615,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3e21b07f-67be-4209-8577-db6228185124.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Remember that this symbol (<) means that the number on the left is smaller than the number on the right, and this symbol (>) means the number on the left is greater than the number on the right.",
         "B": "Not quite. These symbols mean that the number on the left is smaller than the number on the right (smaller < greater). Is this the case with all 3 numbers?",
@@ -91,7 +91,7 @@
     {
       "questionId": 131383,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/335ad598-181c-43eb-aaf1-8687fe7a5c8c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Remember to compare each number by starting with the first column after the decimal point.",
         "B": "Not quite. Remember to compare each number by starting with the first column after the decimal point.",
@@ -103,7 +103,7 @@
     {
       "questionId": 133616,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a35cb95b-f547-479c-9fcf-3a6e0767a7e6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Remember to compare each number by starting with the first column after the decimal point.",
         "B": "Not quite. Remember to compare each number by starting with the first column after the decimal point.",
@@ -139,7 +139,7 @@
     {
       "questionId": 131385,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5d61f833-489e-4bad-b82a-2497cf57b148.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Remember that this symbol (<) means that the number on the left is smaller than the number on the right, and this symbol (>) means the number on the left is greater than the number on the right.",
         "B": "Not quite. These symbols mean that the number on the left is smaller than the number on the right (smaller < greater). Is this the case with all 3 numbers?",
@@ -151,7 +151,7 @@
     {
       "questionId": 133618,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/de603e5e-70ef-4d87-bbc1-4176451ebb2d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Remember that this symbol (<) means that the number on the left is smaller than the number on the right, and this symbol (>) means the number on the left is greater than the number on the right.",
         "B": "Not quite. These symbols mean that the number on the left is smaller than the number on the right (smaller < greater). Is that the case?",

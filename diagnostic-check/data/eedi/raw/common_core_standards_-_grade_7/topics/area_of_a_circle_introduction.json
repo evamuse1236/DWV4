@@ -43,7 +43,7 @@
     {
       "questionId": 146061,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/01a71390-4bf4-47dc-bc1b-2cb5bcd0c349.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The sum of the angles around the centre of a circle is 360⁰. This has been divided into 36 equal sectors so what will the angle of each sector be?",
         "B": "The sum of the angles around a point is 360⁰. Therefore, the sum of the angles around the centre of a circle is 360⁰. This 360⁰ has been divided into 36 equal pieces, as shown. Therefore, the angle of each sector is 360÷36=10⁰.",
@@ -79,7 +79,7 @@
     {
       "questionId": 146082,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/59c791ec-fad0-424e-8718-62b95e55a84b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you've found B! That would represent the circumference. Look again at H. It is the combined widths of each band. What part of the circle would that represent?",
         "B": "Not quite. Look again at H. It is the combined widths of each band. What part of the circle would that represent?",
@@ -91,7 +91,7 @@
     {
       "questionId": 146063,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6d37040-097f-4d93-8bc9-4a36d835e3c1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have assumed that L is the width of all of the sector arcs added together, when it is actually only 18 of them. What would that be equal to?",
         "B": "There is the arc length of 18/36 of the sectors lines up there to make L, which means it is half the circumference of the circle.",
@@ -115,7 +115,7 @@
     {
       "questionId": 146064,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e23c7ce8-b8e3-40af-9eeb-75e6ba62f582.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have used the formula for area. Remember that Circumference = 2πr",
         "B": "I think you have forgotten to halve your answer. Remember that C = 2πr",
@@ -127,7 +127,7 @@
     {
       "questionId": 146084,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a92520b4-a490-4adf-b76e-7c6746ed8f43.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have used the formula for area. B is the length of the longest band. What part of a circle would this correspond to?",
         "B": "B is equal to the length of the longest band in the circle which would be the circumference.",

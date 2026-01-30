@@ -37,7 +37,7 @@
     {
       "questionId": 165534,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b50ccd33-c5ae-4001-ac31-a77f4e63325e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "We are not adding the 𝑘 and 𝑥 together, we are multiplying them...",
         "B": "If 8 boxes cost $30.96 then 30.96 = 8𝑘 so 𝑘 = 30.96/8",
@@ -61,7 +61,7 @@
     {
       "questionId": 165535,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/35606db0-2b2d-4dbd-9f7e-046ad3deb223.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have correctly worked out 𝑘 - the cost of 1 cake! How can you use that to find the cost of 8 cakes?",
         "B": "$164.90 is the cost of 5 cakes not 1 cake! Find the cost of 1 cake before multiplying by 8...",
@@ -73,7 +73,7 @@
     {
       "questionId": 165540,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c6ad8eb6-a84d-4b3b-a850-82adf9c37c0a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "$140.28 is the earnings of selling 6 pizzas not one! Find the earnings of selling one pizza before multiplying by 11...",
         "B": "$163.66 is the earnings after selling 7 pizzas! Use the earnings for selling one pizza to find the earnings for selling 11...",
@@ -97,7 +97,7 @@
     {
       "questionId": 165541,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/af63d343-ec3e-4243-b542-3600bde8780e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It's not 0... To find the constant of proportionality (𝑘) use 𝑦 = 𝑘𝑥, rearrange it and sub in some points from the graph!",
         "B": "We know 𝑦 = 𝑘𝑥. Reading some points from the graph we get (2, 98), (4, 196) etc. Rearranging to make the constant of proportionality (𝑘) the subject we get 𝑘 = 𝑦/𝑥 and then subbing in the values from the graph: 98/2 = 49 and 196/4 = 49 etc so 𝑘 = 49!",
@@ -109,7 +109,7 @@
     {
       "questionId": 165537,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4164e854-be6a-4d6e-aeb9-a983d26d1e2e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have found the difference in money earnt between 4 and 9 tickets... To find the constant of proportionality (𝑘) look at the relationship between the number of tickets sold and the money earnt!",
         "B": "You have found the difference in money earnt between 5 and 7 tickets... To find the constant of proportionality (𝑘) look at the relationship between the number of tickets sold and the money earnt!",
@@ -145,7 +145,7 @@
     {
       "questionId": 165543,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/65007188-45c2-4038-b6e6-64e023ef736b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have correctly found the constant of proportionality but the question is asking how many gallons were used after 8 minutes?",
         "B": "This is the difference in the number of gallons used after 10 and 4 minutes... Start by finding the constant of proportionality, by looking at the relationship between the minutes and number of gallons used, then use this to find out how many gallons would be used after 8 minutes!",

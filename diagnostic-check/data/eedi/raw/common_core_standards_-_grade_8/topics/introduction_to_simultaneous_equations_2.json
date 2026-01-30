@@ -37,7 +37,7 @@
     {
       "questionId": 131831,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a8b51171-c3a8-4369-8e00-042fc840111f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have written down how many squares are in the first equation. We know that 2 squares and 2 circles is worth 18. How much more is needed to make 22?",
         "B": "We know that 2 circles and 2 squares is worth 18. In the first pattern there is one more square and the total is 4 more, this means the square is worth 4.",
@@ -49,7 +49,7 @@
     {
       "questionId": 134024,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c78518b0-a172-4212-a0bc-afb167c4aa95.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. We know that 2 squares and 2 circles are worth 18. The first equation has 3 squares and 2 circles equal to 22. Try work out the value of one square using this. Then, think about what one circle must be worth.",
         "B": "Not quite. I think you have worked out the value of each square. Use this value for the square to see if you can calculate the circles.",
@@ -73,7 +73,7 @@
     {
       "questionId": 134025,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2e88b1b8-6083-467d-b277-6417d5efac85.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Have another look at Katie's equations. Would adding eliminate the y terms?",
         "B": "Have another look at Tom's equations. Would adding eliminate the y terms?",
@@ -97,7 +97,7 @@
     {
       "questionId": 134026,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d25ee19e-19e3-414b-bbab-349d422049af.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Look again at what -3y + (3y) would equal.",
         "B": "Not quite. I think you have subtracted the x terms instead of adding. Remember, we are told in the question that Colm is adding the equations together.",

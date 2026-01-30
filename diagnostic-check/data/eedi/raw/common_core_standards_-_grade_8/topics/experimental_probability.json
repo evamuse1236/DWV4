@@ -31,7 +31,7 @@
     {
       "questionId": 131616,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e5127a61-3f75-4234-b210-200940245604.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You've identified 11 as being the frequency, but the 'relative' part is needed to give us an idea of how this compares with the group as a whole; in other words, it tells us out of how many.",
         "B": "You've identified 11 as being the frequency and have correctly used this value as the numerator. The 'relative' part gives us an idea of how this compares with the group as a whole, so think about how many people were surveyed and how this can be incorporated into your answer.",
@@ -55,7 +55,7 @@
     {
       "questionId": 131617,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/151b1460-4fc7-41d3-8006-5190fcff0e70.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Supposing we reword this question with extremes and imagine that for Town A, one person was asked, and for Town B, everyone living there was asked. In this situation, which would be more reliable?",
         "B": "The result of asking 200 people in Town B will be more reliable: the greater the number of people sampled, the greater the chance of those results bearing more similarity to Town B as a whole.",
@@ -67,7 +67,7 @@
     {
       "questionId": 133810,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3929070f-3a0b-4430-ac34-808f7ac0fad7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Supposing we reword this question with extremes and imagine that for Town A, one person was asked, and for Town B, everyone living there was asked. In this situation, which would be more reliable?",
         "B": "The result of asking 150 people in Town B will be more reliable: the greater the number of people sampled, the greater the chance of those results bearing more similarity to Town B as a whole.",
@@ -103,7 +103,7 @@
     {
       "questionId": 131619,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e06dbeff-5470-47b0-9741-b909cca12b88.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "If the die was fair, then you'd be right, but this isn't the case because it is biased; in the question we are told that 19 sixes were recorded! How can you express this as a fraction of the total rolls of the die?",
         "B": "You've recorded the 19 but the denominator needs to be the total number of rolls of the die. 21 is the number of rolls that weren't a 6",
@@ -127,7 +127,7 @@
     {
       "questionId": 131620,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ecf5c41e-90cc-4bfb-8e18-37b42a7a865d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've worked this out as if it were a fair die, which isn't the case here. Ask yourself what fraction of the time is a 6 rolled, then you can work out the best guess by finding this fraction of 1000.",
         "B": "Nineteen is the frequency of 6s recorded for 40 rolls of the die, so the fraction of 6s recorded is 19/40. This enables us to make a 'best guess' at the number if 1000 were to be rolled: 19/40 × 1000 = (19 × 1000) ÷ 40 = 475. Another way of looking at this is to say there are 1000 ÷ 40 = 25 times more rolls, so the best guess is that there will be 25 times more 6s = 25 × 19 = 475.",
@@ -139,7 +139,7 @@
     {
       "questionId": 133813,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d1433d12-a901-48c2-97af-e965c3939895.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Twenty-seven would be the best guess if there were 80 rolls of the die. We need to scale this up for 400 rolls. How many times more than 80 is this?",
         "B": "You've worked out how many times bigger 400 is than 80, which is useful! What effect will this have on the best guess answer?",

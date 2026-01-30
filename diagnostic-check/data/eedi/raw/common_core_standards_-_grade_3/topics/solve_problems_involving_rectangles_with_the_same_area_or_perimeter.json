@@ -31,7 +31,7 @@
     {
       "questionId": 159096,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e94dd986-9529-4be9-aae6-52d18cfb49d4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you added the sides to find the area, but that finds the perimeter. Area of a rectangle is length x width.",
         "B": "3 x 6 would not give the same area as 7 x 6. We need the same answer when we multiply the sides... 3 x __ = 7 x 6.",
@@ -43,7 +43,7 @@
     {
       "questionId": 158898,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f65d4afd-69cf-4fb4-b87c-25951bd098dd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you multiplied the sides 6 and 8, but that finds area not perimeter. We want the sides of these rectangles to add up to the same total.",
         "B": "The perimeter of the second rectangle is 8 + 6 + 8 + 6 = 28ft. That means 4 + 4 + ? + ? is also 28ft. If we subtract the two 4s we get ? + ? = 20ft. If we half 20 we get 10ft for the missing length.",
@@ -55,7 +55,7 @@
     {
       "questionId": 159097,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/655e1f13-5d49-4f8f-b0e8-b8ae76f9024a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "3+ 6 + 3 + 6 would not give the same perimeter as 7 + 6 + 7 + 6. We need the sides of both shapes to add up the same total.",
         "B": "That's the correct perimeter of both rectangles, but we want the missing side that gives a perimeter of 26. 3+ 3 + __ + ___ = 26.",
@@ -79,7 +79,7 @@
     {
       "questionId": 159098,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e5175b17-d57d-41f8-8291-5536e8d616e4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost - that would be correct if perimeter = length + width, but remember perimeter is all of the sides added together.",
         "B": "The area of the blue rectangle is 5 x 12 = 60 square inches. 10 x 6 = 60, so the missing side on the second shape is 6. That means its perimeter is 10 + 6 + 10 + 6 = 32 inches.",
@@ -91,7 +91,7 @@
     {
       "questionId": 158900,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4cfb299d-5b76-4206-8c9b-6ca59383be60.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost, but check the units!",
         "B": "That's the correct perimeter of both rectangles, but now you need to use that to find the missing side of the orange rectangle and then its area.",
@@ -103,7 +103,7 @@
     {
       "questionId": 159099,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5aa13834-688f-4c70-9189-73863d6cdfca.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost, but check the units!",
         "B": "The perimeter of the blue rectangle = 4 + 10 + 4 + 10 = 28ft. That means for the orange rectangle we have 8 + 8 + __ + __ = 28ft. If we subtract the two 8s, we get ___ + ___ = 12ft. Half of 12 is 6, so the missing side is 6ft, and the area is 8ft x 6ft = 48 square feet.",

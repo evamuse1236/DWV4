@@ -25,7 +25,7 @@
     {
       "questionId": 156082,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8ab9d206-5f83-4a74-88fe-8f2e5bcb85a3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have miscounted. Consider drawing a number line to help you.",
         "B": "If we start on 8 and count down by 6... 7, 6, 5, 4, 3, 2... the answer would be 2. We could also do 6 + 2 = 8, to check our answer.",
@@ -37,7 +37,7 @@
     {
       "questionId": 156100,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2d55ca86-7e24-45be-9c3c-690553cccc23.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you may have miscounted. Consider drawing a number line to help you.",
         "B": "I think you may have counted the starting number. Consider drawing a number line to help you.",
@@ -49,7 +49,7 @@
     {
       "questionId": 159355,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a366f649-cc7f-4f0f-a441-d5ba14ba5728.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost! But I think you counted 18, 17, 16. Remember when we subtract we don't count the starting number, so count 17, 16, ...",
         "B": "The starting point 18 is 10 bigger than 8, so the answer will be 10 bigger than 5. 5 + 10 = 15.",
@@ -73,7 +73,7 @@
     {
       "questionId": 159356,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/931c33e9-b3e4-461b-9b9d-0827da298479.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "From 13 to 10 she subtracted 3. Then if she wants to subtract 7 altogether, the next jump must be -4 (3 + 4 = 7)",
         "B": "That's the position on the number line after subtracting 7 from 13, but we want to know what has been subtracted when the calculation is split up like this.",
@@ -85,7 +85,7 @@
     {
       "questionId": 159578,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e3e28a91-26fa-40bb-ab2c-17cfdc31cac6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite - Amy has subtracted 6, how many more does she need to jump back to subtract 9 in total?",
         "B": "That's the position on the number line after subtracting 9 from 16, but we want to know what has been subtracted when the calculation is split up like this.",
@@ -97,7 +97,7 @@
     {
       "questionId": 159357,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6a1a1c2a-9348-4275-a734-89eb891c837b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This number line uses adding to show the difference between 8 and 13, so it's the same as a subtraction! Which diagram doesn't have the same result as subtracting 8?",
         "B": "This number line shows subtracting 3 and subtracting 5. Altogether, that's the same as subtracting 8. Which diagram doesn't have the same result as subtracting 8?",
@@ -109,7 +109,7 @@
     {
       "questionId": 159579,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a564be84-7c33-4976-bead-19bc0a4712a9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This diagram shows subtracting 10 then adding 6, which is the same as subtracting 4 from 13. Therefore, this does not show 13 - 6.",
         "B": "This number line shows subtracting 3 and then subtracting another 3. Altogether, that's the same as subtracting 6. Which diagram doesn't have the same result as subtracting 6?",
@@ -121,7 +121,7 @@
     {
       "questionId": 159358,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ffacd0bf-2bb5-4b7c-bbcc-e74e893451eb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The total of 6 and 5 is 11, so subtracting 6 and subtracting 5 is the same as subtracting 11. Try doing each calculation to check which one is not the same as 16 - 11.",
         "B": "The total of 10 and 1 is 11, so subtracting 10 and subtracting 1 is the same as subtracting 11. Try doing each calculation to check which one is not the same as 16 - 11.",
@@ -133,7 +133,7 @@
     {
       "questionId": 159580,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1732a572-222b-448c-a8ce-c51476dc5238.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The total of 6 and 5 is 11, so subtracting 6 and subtracting 5 is the same as subtracting 11. Try doing each calculation to check which one is not the same as 17 - 11.",
         "B": "The total of 10 and 1 is 11, so subtracting 10 and subtracting 1 is the same as subtracting 11. Try doing each calculation to check which one is not the same as 17 - 11.",

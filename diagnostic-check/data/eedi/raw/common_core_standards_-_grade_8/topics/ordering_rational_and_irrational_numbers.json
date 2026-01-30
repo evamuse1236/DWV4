@@ -25,7 +25,7 @@
     {
       "questionId": 155004,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/352871f7-5bbb-4f9a-9b5e-7844d35ed654.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have made some errors in your conversions. It is easiest to convert them all to decimals here. To change 65% to a decimal, divide it by 100. To change the fractions to decimals carry out the divisons, so 2 divided by 3 and 5 divided by 8.",
         "B": "I think you have made some errors in your conversions. It is easiest to convert them all to decimals here. To change 65% to a decimal, divide it by 100. To change the fractions to decimals carry out the divisons, so 2 divided by 3 and 5 divided by 8.",
@@ -61,7 +61,7 @@
     {
       "questionId": 155010,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/072f0ad6-2115-45d1-93f8-3fd7947c49d4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have made a mistake converting/ordering your negative numbers. -29/4 is -7 1/4 as a mixed number. What is the decimal for 1/4? So what is the decimal for -7 1/4? How does this compare to -7.38?",
         "B": "As we are ordering smallest to largest we know the negative numbers will come before the positive numbers. -29/4 is -7 1/4 as a mixed number. 1/4 = 0.25, so -7 1/4 = -7.25, which is larger than -7.38. So the first two numbers in the list should be -7.38, then -29/4. To change a percentage to a decimal we divide by 100, so 74% = 0.74, which is smaller than 7.4. Therefore, our final order is: -7.38, -29/4, 74%, 7.4.",
@@ -73,7 +73,7 @@
     {
       "questionId": 155006,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6db325b5-3b4a-454e-af6a-fef6b5493c1e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you are unsure of the size of 3√15. √15 is a little bit smaller than √16, which is 4. So 3√15 is a bit smaller than 3 x 4. How would that compare to the other two results?",
         "B": "The mixed number is equivalent to 12.4, making it greater than 12.33. √15 is a little bit smaller than √16, which is 4. So 3√15 is a bit smaller than 3 x 4 = 12, making it the smallest of the three results. So in order from the greatest we have: 12 2/5, 12.33, 3√15.",
@@ -85,7 +85,7 @@
     {
       "questionId": 155011,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b13e58ea-e1d6-48e0-a1a0-c5f97de170d4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you are unsure of the size of 5√10, and have ordered these from smallest to largest by mistake. √10 is a little bit bigger than √9, which is 3. So 5√10 is a bit bigger than 5 x 3. How would that compare to the other two results? Now check how we are asked to order them.",
         "B": "Almost! I think you have ordered these from smallest to largest, is this what we were asked to do?",
@@ -133,7 +133,7 @@
     {
       "questionId": 155013,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/906af95d-f839-41fc-9b63-28fdbb7e4264.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you are unsure of the value of 6π. 6π is a bit larger than 6 x 3 = ?. How would this compare to 17.5?",
         "B": "Almost! I think you have ordered these from smallest to largest area, is that what we were asked to do?",

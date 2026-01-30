@@ -43,7 +43,7 @@
     {
       "questionId": 131371,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/825c0217-7252-46be-86fe-2800f1622f4a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is a parallelogram, a shape with two pairs of parallel sides shown by the arrow notation. A rectangle is a four-sided shape with four right-angles and opposite sides equal in length. Do any of the shapes shown have these properties?",
         "B": "This is a rectangle as it has four sides, four right-angles and the opposite sides are equal in length.",
@@ -91,7 +91,7 @@
     {
       "questionId": 132160,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/457372de-f4de-48f7-8b96-a3c607a0914e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This a quadrilateral with opposite lengths that are equal and parallel, called a parallelogram.",
         "B": "A trapezium is a quadrilateral with only 1 pair of parallel sides, as marked by the arrows.",
@@ -115,7 +115,7 @@
     {
       "questionId": 132163,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ff45f60d-9d7f-4c9c-8bda-a6850d86ea54.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "A parallelogram is a quadrilateral with opposite lengths that are equal and parallel.",
         "B": "This is a trapezium, a quadrilateral that has only 1 pair of parallel sides.",
@@ -151,7 +151,7 @@
     {
       "questionId": 134167,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4ce9994d-d03c-4556-b88e-48ca3c0da599.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "A trapezium has only 1 pair of parallel sides.",
         "B": "A rhombus is a quadrilateral. Opposite lengths are parallel and equal. However the angles are not 90 degrees each",

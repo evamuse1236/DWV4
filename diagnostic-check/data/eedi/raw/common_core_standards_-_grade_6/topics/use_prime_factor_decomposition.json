@@ -25,7 +25,7 @@
     {
       "questionId": 76714,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/22991e32-9d1e-4129-919a-01cd0d2446f1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not Quite! I think you have written 10 as 5² which isn't correct. Think about how we can put the prime factors of 10 into our calculation.",
         "B": "Nearly! Have a check of all of your numbers again - are they all prime numbers? How can we make them all prime numbers?",
@@ -49,7 +49,7 @@
     {
       "questionId": 99543,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/df110285-4ed4-4463-9e2d-80e37e88ce1a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! Remember that 9 can be written as 3².",
         "B": "Not quite! I think you are forgetting that 3⁴ = 3 x 3 x 3 x 3. Is 3 a factor of 3⁴?",
@@ -61,7 +61,7 @@
     {
       "questionId": 99557,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e16cf681-891c-427c-bc11-541280799b5b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not Quite! The number has been expressed as a product of its primes, so equals these prime numbers multiplied together as follows: 2 ✕ 2 ✕ 3 ✕ 3 ✕ 3 ✕ 5 ✕ 5. \nIf we express 8 as a product of its primes we get 2 ✕ 2 ✕ 2. This isn't contained in the prime factorisation above which means 8 will not be a factor of this number. Will 3 be a factor of this number?",
         "B": "The number has been expressed as a product of its primes, so equals these prime numbers multiplied together as follows: 2 ✕ 2 ✕ 3 ✕ 3 ✕ 3 ✕ 5 ✕ 5. Any of the primes 2, 3, 5 or 7 will be a factor of the number, meaning Paul is correct. However, Jo is effectively saying 2 ✕ 2 ✕ 2 is a factor, but the prime factorisation only contains 2 ✕ 2, which is not enough for 8 to be a factor of the number.",
@@ -73,7 +73,7 @@
     {
       "questionId": 99544,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/30e985f0-1e23-4110-b880-b7c8b8e9a00b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! Remember, 5² = 5 ✕ 5, not 5 ✕ 2. Expressing 75 as a product of primes will help you determine if 75 is a factor of this number or not.",
         "B": "The number has been expressed as a product of its primes, so equals these prime numbers multiplied together: 3 ✕ 3 ✕ 3 ✕ 3 ✕ 5 ✕ 5 ✕ 7 ✕ 7. Any of the primes 3, 5 or 7 will be a factor of the number, and any combination of some or all of the prime factors multiplied together will also be a factor of the number. Tom is incorrect because 10 = 2 ✕ 5, and 2 is not a factor, meaning 10 cannot be either. The number 75 = 5 ✕ 5 ✕ 3. All these appear as prime factors in the question, which means that 75 will be a factor of the number.",
@@ -85,7 +85,7 @@
     {
       "questionId": 99558,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4ebacdc8-1fbe-4f47-98ce-a05fbf64d2df.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not Quite! Remember, this prime factorisation equals 2 ✕ 2 ✕ 3 ✕ 3 ✕ 3 ✕ 5 ✕ 5. Can we make 6 with any combination of some or all of the prime factors multiplied together?",
         "B": "Not Quite! Remember, this prime factorisation equals 2 ✕ 2 ✕ 3 ✕ 3 ✕ 3 ✕ 5 ✕ 5. Can we make 45 with any combination of some or all of the prime factors multiplied together?",
@@ -109,7 +109,7 @@
     {
       "questionId": 99559,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/00110172-a526-4d20-9b8e-eea6c6e81b68.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! We know that all even numbers have 2 as a factor, so have a look at the prime factorisation again here. Comparing the powers in Pauls calculation to the original will help you decide if Paul is correct.",
         "B": "Jo is incorrect: the number has 2 in its prime factorisation, meaning it must be even because all even numbers = 2 ✕ something. Paul is correct: this can be seen by comparing the powers. The number in the question has one more power of 3 than Paul’s number, which must mean it is 3 times bigger.",

@@ -43,7 +43,7 @@
     {
       "questionId": 101848,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0c4eabe6-02dd-4a42-9228-ebff3e76224e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you might have misunderstood the way the inequality sign goes. The opening is by the bigger number.",
         "B": "Tom's first digits are both 3 and in the thousands, so they are equal value, then you move on to the second digit, where he has a 0 or a 4 in the hundreds column. 4 hundreds is larger than 0 hundreds, and so Tom is incorrect. Katie's first digits are both 3, however, one is 3 thousand and the other is 3 hundred. 3 thousand is larger, so Katie is correct.",
@@ -67,7 +67,7 @@
     {
       "questionId": 101849,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/abcd93ef-846e-4d4a-8f8f-c294589e3cac.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Try to say this number out loud, if you didn't have a 1 in front of the 2, what would the value be? You can also look at the number of digits after the 2 and compare, as there is no decimal point here.",
         "B": "The position of the digits within a number tells you the amount each contributes to the overall value of a number. Starting at the right-hand side of 12,030, the last digit 0 represents ones or units; the 3 tells us there are 3 tens, so 30; the next zero tells us there are 0 hundreds; and the 2 (the other side of the gap in the question) tells us there are 2 thousands, so 2,000.",
@@ -91,7 +91,7 @@
     {
       "questionId": 101850,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b8ffbdf1-477b-4110-966f-40f2d32f75a7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have ordered the numbers using the last two digits only.",
         "B": "I think you may have put the numbers in order from greatest to smallest.",
@@ -127,7 +127,7 @@
     {
       "questionId": 101859,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/91088294-325f-4583-b14a-99109f8cddb8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have miscalculated the intervals as being 2 each. Make sure you find the difference between two values that are given, then count the number of intervals they have been split into, this will help you to find how much one interval is equal to.",
         "B": "I think you have miscalculated the intervals as being 10 each. Make sure you find the difference between two values that are given, then count the number of intervals they have been split into, this will help you to find how much one interval is equal to.",
@@ -139,7 +139,7 @@
     {
       "questionId": 101852,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/296580ae-327a-4638-a6ef-d73be416b4b1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, I think you have subtracted 10 instead. Hint: pay close attention to the word \"times\" in the question.",
         "B": "Not quite, you have multiplied by 10, making the number 10 times larger than 4300.",
@@ -151,7 +151,7 @@
     {
       "questionId": 101860,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e7f61954-160c-49cc-a615-82a74d6482fa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, I think you have subtracted 10 instead. Hint: pay close attention to the word \"times\" in the question.",
         "B": "Almost, I think you have divided by 10 an extra time than you needed to.",

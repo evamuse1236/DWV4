@@ -25,7 +25,7 @@
     {
       "questionId": 134807,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/33365c30-f8a8-4a07-9b46-95d666178880.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have found two prime numbers here but 11 x 13 = 143. We need prime numbers that multiply to give 105. Start by thinking what 105 can be divided by.",
         "B": "105 is in the 5 times table because it ends with a 5. 5 is also a prime number and 105 = 5 x 21. 21 is not prime, so we need to find the factors of 21 that are prime. 21 = 3 x 7 and 3 and 7 are both prime. So the prime factors of 105 are 5, 3 and 7. Writing 105 as a product (multiplication) of its prime factors, we have 105 = 3 x 5 x 7.",
@@ -37,7 +37,7 @@
     {
       "questionId": 134827,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a0013975-1215-453f-89e6-549e0b46e060.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have found a pair of factors that multiply to give 150. But we only want factors that are prime numbers. Are 5 and 30 both prime numbers? We need to keep breaking up any factors that are not prime until our product (multiplication) only contains prime numbers.",
         "B": "You have found some factors that multiply to give 150. But we only want factors that are prime numbers. Are 2, 5 and 15 all prime numbers? We need to keep breaking up any factors that are not prime until our product (multiplication) only contains prime numbers.",
@@ -49,7 +49,7 @@
     {
       "questionId": 134808,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6fa8601f-291f-4fab-8835-e8526dc98a06.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Tom has found a pair of factors that multiply to give 45. But we only want factors that are prime numbers. Are 5 and 9 both prime numbers?",
         "B": "Prime factors must themselves be prime numbers. 3² x 5 = 3 x 3 x 5 =45. 3 and 5 are prime numbers so Katie is correct. The 9 in Tom's answer is not a prime number, as we can express 9 as 3 x 3. So Tom is not correct.",
@@ -73,7 +73,7 @@
     {
       "questionId": 134809,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/512c2b3b-ab14-4d18-8e66-99d8b70b7ed6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The four numbers circled in the factor tree are the prime factors, and so 56 ≡ 2 x 2 x 2 x 7. We can simplify 2 x 2 x 2 to 2 cubed so 56 ≡ 2³ x 7.",
         "B": "I think you have written the three 2's in the factor tree as 3 x 2 instead of multiplying them all together.",
@@ -85,7 +85,7 @@
     {
       "questionId": 134829,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4b0afa3e-47c4-4042-ba75-b0dfc73c215f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have written 3 x 3 as 3 cubed. How should 3 x 3 be written?",
         "B": "3 x 15 does equal 45 but have we used all the results of the factor tree? We want to include all the prime factors.",
@@ -97,7 +97,7 @@
     {
       "questionId": 134810,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/40761265-cf33-457c-97c3-25b48209c445.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! 2 x 2 x 2 x 2 is NOT the same as 2 x 4. Remember to use index notation when the same number is being multiplied by itself.",
         "B": "Not quite! I think you have taken all of the individual prime factors and raised them all to the power of 4. This gives us an answer of 1296 instead of 48. Try listing out all of the prime factors (including duplicates) and simplifying.",
@@ -121,7 +121,7 @@
     {
       "questionId": 134811,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/449619de-61aa-4803-bb49-e73fdec26c66.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have done the calculation 2 x 2 x 2 x 2 x 2 x 2 x 5 here. Think carefully about what the numbers in index form mean (2³ and 3²). Try writing each one out as a multiplication first.",
         "B": "I think you have done the calculation 2 x 2 x 2 x 3 x 2 x 5 here. Think carefully about what the numbers in index form mean (2³ and 3²). Try writing each one out as a multiplication first.",
@@ -133,7 +133,7 @@
     {
       "questionId": 134831,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/85633b8a-5696-4db9-8231-225caca04cef.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have done the calculation (2 x 2) x (3 x 3) x 5 here. Think carefully about what the numbers in index form mean (2² and 3³). Try writing each one out as a multiplication first.",
         "B": "In expanded form, 2² = 2 x 2 and 3³ = 3 x 3 x 3. So the calculation we are doing is 2 x 2 x 3 x 3 x 3 x 5 = 540",

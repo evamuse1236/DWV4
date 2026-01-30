@@ -31,7 +31,7 @@
     {
       "questionId": 165591,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0541c250-2151-4e5e-a2a1-5dd5b23ade2f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. The line stops at 0 here, but we want all numbers bigger than -5, including the positive ones",
         "B": "This would be representing numbers less than -5, double check the inequality in the question.",
@@ -43,7 +43,7 @@
     {
       "questionId": 165596,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9d5ff84c-cffe-41ba-9e08-a7e8d2515212.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost. The dot on the end of the line is showing us that it stops at -10, but we want to include all numbers less than 5. How could we show this on the diagram?",
         "B": "Not quite. The line stops at 0 here, but we want all numbers less than 5, including the negative ones",
@@ -55,7 +55,7 @@
     {
       "questionId": 165592,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b285fee3-2ed3-44f7-8778-c7d276f8079a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You may believe algebra has only one solution, but here we have an inequality. Think about how many numbers you could put in place of 𝑥 that would make the inequality true.",
         "B": "I think you have assumed we can only put in positive whole numbers. Remember 𝑥 can be any number, positive or negative, whole or fractional, as long as it is less than 3.",
@@ -115,7 +115,7 @@
     {
       "questionId": 165599,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3b77a4b4-f122-4a1d-a2fd-ffb44e1f489d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost, but this is saying the angle has to be less than 90.",
         "B": "I think you have put in 4y as there are more than 4 sides specified in the question. We are told about each angle, y, so how would we express that each angle is greater than 90?",
@@ -127,7 +127,7 @@
     {
       "questionId": 165595,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f26c641c-bb45-4061-8d85-cd20e375293a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is saying that each side length needs to be bigger than 100, but that would give perimeters of over 400. How can we find out one side if we know the perimeter is 100?",
         "B": "Almost, but this is saying that the side lengths are less than 25. Would this give a perimeter greater than 100?",
@@ -139,7 +139,7 @@
     {
       "questionId": 165600,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/899d94d9-ca56-487d-9311-1778bdba43d6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have confused area and perimeter. Remember the perimeter is the distance around the outside of the shape.",
         "B": "64 / 4 = 16, so each side length has to be less than 16. That is l < 16.",

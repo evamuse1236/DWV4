@@ -25,7 +25,7 @@
     {
       "questionId": 146288,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4e33b191-8e5b-4227-a09d-df3382d02612.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have put the numbers next to each other. What does x 3 x 4 give? You could try it out on a few numbers to see.",
         "B": "x 3 x 4 = x 12",
@@ -37,7 +37,7 @@
     {
       "questionId": 146308,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9f31cc91-772b-48bb-91d8-bcd65c50622b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have put the numbers next to each other. What does x 4 x 5 give? You could try it out on a few numbers to see.",
         "B": "I think you have added the numbers. What does x 4 x 5 give? You could try it out on a few numbers to see.",
@@ -49,7 +49,7 @@
     {
       "questionId": 146289,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7f2ce1c8-70c2-4dbc-b8ff-fd28f86b82be.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Try out both methods and see which one(s) work.",
         "B": "Not quite. Try out both methods and see which one(s) work.",
@@ -61,7 +61,7 @@
     {
       "questionId": 146309,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f102aee9-6bfc-485a-a32c-b824f5bfa20c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Try out both methods and see which one(s) work.",
         "B": "Not quite. Try out both methods and see which one(s) work.",
@@ -109,7 +109,7 @@
     {
       "questionId": 146311,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/979a21e1-eb32-4b70-ba8a-84b5664757ae.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have divided the 5 by 4. Think about this as sharing. You are splitting something into 5 piles, and then splitting each of those into 4 piles.",
         "B": "Dividing by 5 and then by 4 is the same as splitting an amount into 5 piles, and then each of those piles into 4, leaving 5 x 4 = 20 piles, so we are dividing by 20",
@@ -121,7 +121,7 @@
     {
       "questionId": 146292,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0a10308d-3c39-4f5c-bc95-c52bc5e4474d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Think about the methods in terms of sharing, and see if either end up splitting 296 into 8 equal piles.",
         "B": "Katie is correct as dividing 296 by 2, then 2 then 2 will split 296 into 8 equal piles. Tom is incorrect as he would have a tenth of 296 - half of 296 which is not 1/8 of 296 (1/10 - 1/2 = -4/10)",
@@ -133,7 +133,7 @@
     {
       "questionId": 146312,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1acce006-a5f5-4db9-a3c4-9ba53f40190e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Think about the methods in terms of sharing, and see if either end up splitting 371 into 7 equal piles.",
         "B": "Katie is correct as dividing 350 by 7 and 21 by 7 and adding them is the same as dividing the total 371 by 7. Tom is incorrect as he would have a tenth of 371 - a third of 371 which is not 1/7 of 371 (1/10 - 1/3 = -7/30)",

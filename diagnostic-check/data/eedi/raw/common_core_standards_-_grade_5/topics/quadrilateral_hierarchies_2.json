@@ -19,7 +19,7 @@
     {
       "questionId": 158504,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a581d6bc-17b9-4ab3-b3f0-94b98756cf1c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Every square has four equal sides, so every square is a rhombus, but do squares have the properties of any other shape here?",
         "B": "Every square has four right angles and two pairs of parallel sides, so every square is a rectangle, but do squares have the properties of any other shape here?",
@@ -43,7 +43,7 @@
     {
       "questionId": 158505,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9d932096-f83b-4a24-9e29-9f27f9854566.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "A trapezoid only has one pair of parallel sides so it can't be a rhombus. Which of these can have just one pair of parallel sides?",
         "B": "A trapezoid only has one pair of parallel sides so it can't be a rectangle. Which of these can have just one pair of parallel sides?",
@@ -67,7 +67,7 @@
     {
       "questionId": 158506,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d50b65eb-3818-46fa-9d05-9cf64933a536.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "A trapezoid has only one pair of parallel sides. Is that true for every single quadrilateral?",
         "B": "A trapezoid has four sides, so it is a type of quadrilateral. That means sometimes a quadrilateral is a trapezoid, but only when it has a single pair of parallel sides.",
@@ -79,7 +79,7 @@
     {
       "questionId": 158661,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7b881dad-5c6a-4e05-9507-91f44c5612c0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "All rhombuses have two pairs of parallel sides, so all rhombuses are parallelograms - they are a special case that also has 4 equal sides.",
         "B": "A parallelogram is any quadrilateral with two pairs of parallel sides. What does that tell us about any rhombus?",
@@ -91,7 +91,7 @@
     {
       "questionId": 158507,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/27194471-0138-4255-969a-1e764996c458.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "A trapezoid has only one pair of parallel sides. Can we ever have a square with only one pair of parallel sides?",
         "B": "A trapezoid has only one pair of parallel sides. Can we ever have a square with only one pair of parallel sides?",
@@ -115,7 +115,7 @@
     {
       "questionId": 158508,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a24f7c7c-6137-44b9-8c40-991e9e29435c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "A rhombus has two pairs of parallel sides, and a trapezoid only has one. Can we ever have a trapezoid with two pairs of parallel sides?",
         "B": "A rhombus has two pairs of parallel sides, and a trapezoid only has one. Can we ever have a trapezoid with two pairs of parallel sides?",

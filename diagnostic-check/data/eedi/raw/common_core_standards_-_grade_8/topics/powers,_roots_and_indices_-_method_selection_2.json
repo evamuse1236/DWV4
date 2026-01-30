@@ -61,7 +61,7 @@
     {
       "questionId": 103005,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a717d68e-02d8-4241-9f76-4c5c25c98bca.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It may help to remember that any number that doesn't have a power showing has an invisible to the power of 1 attached. For this question the 16 in the numerator = 16¹. We also need to correctly apply the multiplication law of indices.",
         "B": "It may help to remember that any number that doesn't have a power showing has an invisible to the power of 1 attached. For this question the 16 in the numerator = 16¹. We also need to correctly apply the multiplication law of indices. Once we have simplified the numerator, what does this leave our calculation as and what does this equal?",
@@ -73,7 +73,7 @@
     {
       "questionId": 103025,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/17ecead1-ef99-4d62-b96a-dcb3a82523ca.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It may help to remember that any number that doesn't have a power showing has an invisible to the power of 1 attached. For this question then 25 in the numerator = 25¹. We also need to correctly apply the multiplication law of indices. Once we have simplified the numerator, what does this leave our calculation as and what does this equal?",
         "B": "Let’s simplify the top line first, noting that the 25 without a power is equivalent to 25¹. This then gives 25¹ × 25³ = 25⁴. Substituting this into the top line, we now have 25⁴/25⁴ or 25⁴ ÷ 25⁴. Anything divided by itself will always equal 1, therefore the answer is 1.",
@@ -121,7 +121,7 @@
     {
       "questionId": 103027,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c78e8dd4-47d4-47b6-bc37-e4eab6bfd6bd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have added 1 here rather than raising 25 to the power of 1. How could we rewrite this to help us remove the brackets and put 25 to a power we can deal with?",
         "B": "I think you have written the 1 as a decimal rather than raising 25 to the power of 1 here. How could we rewrite this to help us remove the brackets and put 25 to a power we can deal with?",
@@ -133,7 +133,7 @@
     {
       "questionId": 103008,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dca0a5b6-c78f-41bb-b114-d08b2f86fa5d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have added ½ to 16 here, rather than raising it to the power of ½. It may help to remember that fractional powers indicate roots.",
         "B": "I think you have raised 16 to the power of -½ here. Negative powers indicate reciprocals, however this power is positive.",
@@ -145,7 +145,7 @@
     {
       "questionId": 103028,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9fa612b9-abdf-4701-8369-c3f0e5b0dffa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have raised 25 to the power of -1 here. Negative powers indicate reciprocals, however this power is positive, and fractional. It may help to remember that fractional powers indicate roots.",
         "B": "One of the rules of indices involves the way in which fractional powers can be presented. The denominator on a fractional power specifies the root; in this case ½ = square root. Therefore another way of writing 25^½ is √25, which gives rise to an answer of 5.",

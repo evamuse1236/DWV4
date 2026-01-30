@@ -67,7 +67,7 @@
     {
       "questionId": 89404,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f7bd1e32-4006-4738-8440-bcb0db0d847a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Is -3 closer to, or further away from, 0 than -4 is? Where would 0 be on this line?",
         "B": "To the left of −4 are −5, −6, −7, −8..., so −7 is the only option given that is correct.",
@@ -79,7 +79,7 @@
     {
       "questionId": 89422,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bd67ef7c-ff79-4e7e-ac77-1030ff6d0a98.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "From 0, we travel left for negative numbers. Which way do we travel for positive numbers?",
         "B": "Is -5 closer to, or further away from, 0 than -6 is? Where would 0 be on this line?",
@@ -91,7 +91,7 @@
     {
       "questionId": 89405,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/23870ce1-725b-4f9c-9180-432dd7b946f6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Look carefully at the signs of the numbers, is -7 the same as 7?",
         "B": "You've worked out the difference correctly, but which one is colder?",
@@ -103,7 +103,7 @@
     {
       "questionId": 89423,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bbfb7f62-bf12-4cb8-b3c0-3a826ea7f692.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Look carefully at the signs of the numbers, is 2 the same as -2?",
         "B": "-5 is 5 below zero, and 2 is 2 above zero, so the difference between them is 7.",
@@ -115,7 +115,7 @@
     {
       "questionId": 89406,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/856cf1f8-5a24-4d87-8082-3a3c39f1ed48.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "All negative numbers are lower than 0.",
         "B": "(+)3 is higher than -5, and -5 is lower than 0.",
@@ -139,7 +139,7 @@
     {
       "questionId": 89407,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6593e1d4-d5eb-41d4-9a31-337f78480bac.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "-8.3m means 8.3 metres below the surface. Is this the deepest?",
         "B": "\"Deepest\" means furthest away from the surface. I think you have done the closest to the surface first.",
@@ -151,7 +151,7 @@
     {
       "questionId": 89425,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b6010f5f-46c3-4858-aee7-4195314ea935.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "-2.6m means 2.6 metres below the surface. Which creature is deeper than this?",
         "B": "The Ling is only 1.5m below sea level. Which creature is furthest from the surface?",

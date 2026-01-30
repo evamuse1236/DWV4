@@ -37,7 +37,7 @@
     {
       "questionId": 166283,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/348898c8-6701-4348-9e59-fb2c52bab004.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. I think you may have subtracted 15 from -20. But if the diver is ascending (coming up) they are not getting further below sea level, they are getting closer to the surface.",
         "B": "Be careful. I think you may have added 20 and 15. Think of below sea level as being negative. So the diver is at -20 and then comes up by 15 (add 15).",
@@ -49,7 +49,7 @@
     {
       "questionId": 166510,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/98546fbd-564e-4858-ab0b-3f776ad9d88c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost! I think you have subtracted 25 from positive 40. Think of below sea level as being negative. So start at -40 and then ascend (come up) by 25. Will you have got above sea level?",
         "B": "You can think of 40feet below sea level as -40. If you ascend (come up) by 25, that's the same as adding 25. -40 + 25 = -15. The diver is 15 feet below sea level.",
@@ -73,7 +73,7 @@
     {
       "questionId": 166511,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/835ad182-3d75-4371-b647-1113c9245759.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have added -12 and 62 together. We want the amount of difference between -12 and 62. Think of the values on a number line each side of zero. What is the total distance between those values?",
         "B": "I think you may have added -12 and -62 together to get -74. But the elevation of the roof is positive. That is above ground level. You need to find the difference between -12 and 62. How might you do that? What do you add to -12 to get to 62?",
@@ -85,7 +85,7 @@
     {
       "questionId": 166285,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6d1b71f6-c19a-4a2e-86c2-2ce0513ab215.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Bryce has -$35 which means he has gone below zero. He actually owes the bank $35. So if he withdraws $35 then he will owe them even more (he will be at -$70). How can he get it back to zero from -35?",
         "B": "If Bryce is at -$35 then he deposits (adds) $35 to his account he will be at zero. He has cleared the negative balance. -35 + 35 = 0.",
@@ -97,7 +97,7 @@
     {
       "questionId": 166512,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1462beaa-5c69-40a1-baf6-ff7b2f9e7c16.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Olivia is at -$55 so she owes the bank $55. If she deposits $110 she will go over zero as she'll be putting in more than she owes. What does she need to do to get the balance back to exactly zero?",
         "B": "Olivia is already at -$55 so she owes the bank $55. If she withdraws $110 she will owe them even more, what does she need to do to get the balance back to zero so she doesn't owe anything?",
@@ -109,7 +109,7 @@
     {
       "questionId": 166286,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/015bb53d-de77-4fac-81c5-fe7b6add6e56.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have found the difference between 38 and 17. But we need the difference between -38 and 17. It may help to think of the values on a number line. What is the gap between them? You could go from -38 to zero and then from zero to 17 to help break it down.",
         "B": "I think you may have found the difference between the two high temperatures. Make sure to read the question carefully, this asks for the difference in the two low temperatures.",
@@ -133,7 +133,7 @@
     {
       "questionId": 166287,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/25c49f25-1dc8-46e3-9104-00ef124ffa80.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have found the difference between 38 and 92. But we need the difference between -38 and 92. It may help to think of the values on a number line. What is the gap between them? You could go from -38 to zero and then from zero to 92 to help break it down.",
         "B": "Low temperature for Anchorage is -38 and high temperature for Anchorage is 92. The difference between 92 and -38 is 130. 92 - -38 = 92+38 = 130.",
@@ -145,7 +145,7 @@
     {
       "questionId": 166514,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6af5a8cd-cb5d-4df5-9267-af5a54d14528.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost! I think you have worked out the difference for Newark. Take another look at the question.",
         "B": "I think you may have looked at the numbers in the first column. Read the question carefully. Which is the low temperature for Davenport and which is the high temperature for Davenport?",

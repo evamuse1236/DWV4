@@ -31,7 +31,7 @@
     {
       "questionId": 143733,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/adb32b7d-f7ac-4a2e-895f-63e4fff8a3db.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Kate gets 60%, so Isaac gets 40%. As a ratio, this is 60:40. This ratio can be simplified if both values are divided by 20, the highest common factor. This will give a ratio of 3:2.",
         "B": "Not quite. It looks like you've given a ratio of Kate's share to the whole amount. The total amount is 100% - Kate gets 60% and Isaac gets the rest. What is \"the rest\" if Kate + Isaac = 100%?",
@@ -43,7 +43,7 @@
     {
       "questionId": 143753,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/28101b72-34d5-49c2-bad7-d2b17d206366.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. It looks like you've given a ratio of Kate's share to the whole amount. The total amount is 100% - Kate gets 40% and Isaac gets the rest. What is \"the rest\" if Kate + Isaac = 100%?",
         "B": "I think you have written Kate's percentage as a ratio and simplified it. The total amount is 100% - Kate gets 40% and Isaac gets the rest. What is \"the rest\" if Kate + Isaac = 100%?",
@@ -79,7 +79,7 @@
     {
       "questionId": 143735,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bc41f1fb-86dc-49d7-930e-e303f5315e5e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, this is how many sweets Kate gets. This question wants to know how many Isaac gets. He gets \"the rest\". What calculation could you do to find that?",
         "B": "I think you have subtracted 20 from 495. We need to find 20% of the sweets before we can subtract it from the total.",
@@ -103,7 +103,7 @@
     {
       "questionId": 143736,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/25f58124-c98b-4b17-af47-fa3da36c7806.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, I think you have assumed the percentages will have to add to up 100% so given Kate 60% and Isaac 40%. If Isaac gets 100%, what % does Kate get? It will be over 100%. We know that these two amounts together makes 495 sweets. Could you calculate what 1% is worth?",
         "B": "I think you have read this as Kate gets 20 more, but it says 20% more which is different. If Isaac gets 100%, what % does Kate get? It will be over 100%. We know that these two amounts together makes 495 sweets. Could you calculate what 1% is worth?",
@@ -115,7 +115,7 @@
     {
       "questionId": 143756,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7a70c344-d21d-4e1c-921f-6fa51b8a3bf1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, I think you have assumed the percentages will have to add to up 100% so given Kate 80% and Isaac 20%. If Isaac gets 100%, what % does Kate get? It will be over 100%. We know that these two amounts together makes 455 sweets. Could you calculate what 1% is worth?",
         "B": "If Isaac gets 100%, then Kate gets 160%. This 260% is worth 455. 455 ÷ 260 ✕ 100 = 175.",
@@ -139,7 +139,7 @@
     {
       "questionId": 143757,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/60f0184b-42f5-4bd7-9772-9c5411560ff5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Isaac is not getting 60% of the sweets, he is getting 60% fewer sweets than Katie. Let Katie's share represent 100%, what percentage will Isaac get if he is getting 60% fewer? Write Isaac's share to Katie's as a ratio, simplify and then solve.",
         "B": "Not quite. We need to be careful with the percentages here. We are told Isaac gets 60% fewer than Katie, this is different to Katie getting 60% more than Isaac. We need to let Katie's share represent 100% rather than Isaac's share.",

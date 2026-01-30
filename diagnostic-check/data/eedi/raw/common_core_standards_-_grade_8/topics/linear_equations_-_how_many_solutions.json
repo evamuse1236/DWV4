@@ -43,7 +43,7 @@
     {
       "questionId": 106675,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c240b414-3349-419a-aa19-354160a68fcf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Be careful. The two number terms do not cancel each other out.",
         "B": "To solve this, we need it to be in the form ‘d = something’. The first step could be to add 3 to both sides. This gives 12d = 6d + 6. Then we can subtract 6d from both sides. This gives 6d = 6. Then we can divide both sides by 6. This gives d = 6/6= 1.",
@@ -55,7 +55,7 @@
     {
       "questionId": 122133,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/056a34ed-5adb-4238-8a52-88bf35dd88b7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Be careful. The two number terms do not cancel each other out.",
         "B": "To solve this, we need it to be in the form ‘t = something’. The first step could be to add 5 to both sides. This gives 20t = 5t + 15. Then we can subtract 5t from both sides. This gives 15t = 15. Then we can divide both sides by 15. This gives t = 15/15 = 1.",
@@ -91,7 +91,7 @@
     {
       "questionId": 155260,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d5e1e31f-6ccb-4482-9274-9cbdd7cc211d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Be careful when expanding. The number outside the bracket needs to multiply both terms inside the bracket.",
         "B": "Expanding the brackets we get 6x + 15 - (2x + 2). As 6x - 2x equals 4x and 15 - 2 equals +13, the expression simplifies to 4x + 13.",
@@ -103,7 +103,7 @@
     {
       "questionId": 155263,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a055b87a-db35-4a00-8dcd-fe177fc9761a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Look carefully at the question. We are subtracting 3(2x + 5) from 8(x + 2) not adding.",
         "B": "Not quite. Be careful when subtracting the second expression. Both the 6x and the 15 need to be subtracted from 8x + 16.",
@@ -115,7 +115,7 @@
     {
       "questionId": 155261,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b02e5d6b-8bf6-4fda-803e-d8021eddfb32.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Solving this equation gives us 1 = 1. This means the equation has an infinite number of solutions. Remember, an equation will have no solutions if, after you have expanded, simplified and solved, you get a = b where a and b take different values.",
         "B": "Expanding the right hand side we get 6x + 2 = 6x + 2 - 1. Simplifing we get 6x + 2 = 6x + 1. Subtracting 6x from both sides gives 2 = 1. This is impossible, which means the equation has no solutions.",
@@ -127,7 +127,7 @@
     {
       "questionId": 155264,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/407450ea-73c6-44db-ba80-9067f9540f14.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Solving this equation gives us x = 7. This means the equation has one solution. Remember, an equation will have no solutions if, after you have expanded, simplified and solved, you get a = b where a and b take different values.",
         "B": "Not quite. Solving this equation gives us 2 = 2. This means the equation has an infinite number of solutions. Remember, an equation will have no solutions if, after you have expanded, simplified and solved, you get a = b where a and b take different values.",
@@ -139,7 +139,7 @@
     {
       "questionId": 155262,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b62a7002-76fc-4aab-b37b-b60bf1445788.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. I think you thought this because of the 2 inside the bracket. But remember, each term inside the bracket needs to be multiplied by the 3 outside the bracket.",
         "B": "For an equation to have an infinite number of solutions, the left hand side of the equation must be identical to the right hand side. Expanding the brackets we get 3x + 6 + 5x = 8x + ★. Simplifying the left hand side gives 8x + 6 = 8x + ★. Therefore, ★ = 6, if the two sides are to be identical.",
@@ -151,7 +151,7 @@
     {
       "questionId": 155265,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/03abc721-351f-4ab9-b2fd-6e13e0f4ffe7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Replacing the star with a 2x would make 8xs on the right hand side and only 6xs on the left. This means you would able to solve the equation and find one solution. For an equation to have an infinite number of solutions you need both sides of the equation to be identical.",
         "B": "Not quite. For the equation to have an infinite number solutions we need both sides of the equation to be identical. If we replaced the star with a -8 we would have 6x + 8 on the left hand side an 6x - 8 on the right hand side. This is not identical.",

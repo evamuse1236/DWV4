@@ -43,7 +43,7 @@
     {
       "questionId": 134019,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f2315cea-86a1-48f2-a91f-99a425e5c4bd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Nearly! I think you have plotted the £1.50 on the wrong axis, this suggests it is free for journeys below a certain distance. Have another look.",
         "B": "This graphs suggests that the journey is a fixed price, no matter the distance, however we've been told that there is an additional charge of 60p per mile. How might that affect the graph?",
@@ -79,7 +79,7 @@
     {
       "questionId": 131828,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3308338f-50ff-44e5-9d1b-7bfe0ce40a32.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Remember that acceleration happens when velocity increases, which also means that the change in distance over time is not constant. Which of these graphs might represent this? Also notice that the two graphs are different types: Tom's is a Distance-Time graph, Katie's is a Velocity-Time graph.",
         "B": "Remember that acceleration happens when velocity increases, which also means that the change in distance over time is not constant. Which of these graphs might represent this? Also notice that the two graphs are different types: Tom's is a Distance-Time graph, Katie's is a Velocity-Time graph.",

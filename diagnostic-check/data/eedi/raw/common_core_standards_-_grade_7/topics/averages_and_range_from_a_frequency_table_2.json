@@ -37,7 +37,7 @@
     {
       "questionId": 108125,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7347545c-081e-4fd1-9431-ab56183944fe.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember that the table is showing numbers of TVs in each household, not numbers of people.",
         "B": "We have 2, 7 and 14 in this row. Look carefully at the column heading above the 2. What does the 2 represent?",
@@ -49,7 +49,7 @@
     {
       "questionId": 108133,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/319d67cc-8fd6-43a2-8fa8-0ddc1f931e75.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Remember that the table is showing numbers of TVs in each household, not numbers of people.",
         "B": "We can work out the mean from this table but that is not what the number 14 represents. Have a look at the column heading - it explains how the values in this column have been calculated.",
@@ -97,7 +97,7 @@
     {
       "questionId": 108135,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c486a77e-bdc8-444a-865e-1965c701e1c9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you might have counted the number of categories (rows). For the mean, we want the number of TVs per household. Do we need to divide by the number of categories, the number of TVs or the number of households?",
         "B": "The total 'TVs x Frequency' of 44 is the total number of TVs. For the mean, we want total TVs per household, not households divided by TVs.",
@@ -133,7 +133,7 @@
     {
       "questionId": 108129,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e0a928b1-472b-472d-a96f-f289fb316d3d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you might have chosen 2 TVs as the median because this is the middle row of the table. But we want the middle household, when they are lined up in order from least number of TVs to most TVs. How many households are there altogether? And where is the the middle one in the table?",
         "B": "I think you might have chosen 2 as the median because this is the frequency in the middle row of the table. But we want the middle household, when they are lined up in order from least number of TVs to most TVs. How many households are there altogether? And where is the the middle one in the table?",
@@ -145,7 +145,7 @@
     {
       "questionId": 108137,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/45fd70be-f608-4b83-9782-97cbcff736f8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you might have chosen 2 TVs as the median because this is the middle row of the table. But we want the middle household, when they are lined up in order from least number of TVs to most TVs. How many households are there altogether? And where is the the middle one in the table?",
         "B": "The total frequency is 19, so we need to find the 10th household in order of number of TVs. Adding up the cumulative frequency, the first 3 households have no TVs and the first 11 households have 1 TV or less , so we know that the 10th household must have 1 TV.",

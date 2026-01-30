@@ -55,7 +55,7 @@
     {
       "questionId": 105018,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8ea08f0f-9c33-4fea-9aed-75d124a77068.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you have added the 50 and 35 together, and then multiplied by 𝑛. Maybe try some example values like if he works for 2 hours?",
         "B": "It looks like you have misread part of the question. If he charges £50 per hour then how would we work out how much that is for 4 hours? Use this to help you write the equation",
@@ -67,7 +67,7 @@
     {
       "questionId": 105023,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4e2be55f-fae5-4261-b171-c764395cdc01.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you have added the 70 and 40 together, and then multiplied by 𝑛. The £70 is a one-off payment, not per hour. How would this affect your answer?",
         "B": "Let’s work out the cost for a specific number of hours, for example 3 hours: the cost (𝐶) would then be 40 × 3 + 70. If the plumber worked for 8 hours, say, the cost would be 𝐶 = 40 × 8 + 70. Now it may be easier to see that if the plumber works for 𝒏 hours, then 𝐶 = 40 × 𝒏 + 70, or 𝐶 = 40𝑛 + 70",
@@ -79,7 +79,7 @@
     {
       "questionId": 105019,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0efbf8ed-0da3-41bd-9059-e676d56db25a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you have misread part of the question. Which value will increase with every mile travelled?",
         "B": "Let’s work out the cost for a specific number of miles, for example 10 miles: the total cost (𝑇) would then be 2.50 + 1.20 × 10. If the journey was for 30 miles, say, the total cost would be 𝑇 = 2.50 + 1.20 × 30. Now it may be easier to see that if the journey is for 𝒎 miles, then 𝑇 = 2.50 + 1.20 × 𝒎, or swapping the order: 𝑇 = 1.20𝑚 + 2.50",
@@ -91,7 +91,7 @@
     {
       "questionId": 105024,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c2ca2692-37dd-4c5b-ae81-fbd71227aece.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you have misread part of the question. Which value will increase with every mile travelled?",
         "B": "It looks like you have assumed that the initial £5 charge is also multiplied by £0.60. The £5 is a one-off charge. How will this affect your answer?",
@@ -103,7 +103,7 @@
     {
       "questionId": 105020,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/612dce2e-b545-405e-95a2-4eb83456ff94.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you have only added the given sides. We need all 4 lengths for the perimeter.",
         "B": "The perimeter is the distance around a shape. Starting in the bottom left corner and moving clockwise, we can write 𝑃 = 𝑥 + 𝑥 + 2 + 𝑥 + 𝑥 + 2, and collecting like terms, this can be simplified to 𝑃 = 4𝑥 + 4",
@@ -115,7 +115,7 @@
     {
       "questionId": 120802,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/29741a2e-094f-4898-8f67-a7fe6292ac7b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Nearly! Try writing out the missing side lengths and then collecting like terms together",
         "B": "Not quite, it looks like you have calculated the area instead! Remember that perimeter is the total of the side lengths of a shape.",
@@ -127,7 +127,7 @@
     {
       "questionId": 105021,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/59aed4e8-5336-4058-af18-c20766074a5d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you have just added all the terms together. Think about how many seats there would be on 2 minibuses. What calculation did you just use?",
         "B": "Initially, let’s focus on the minibuses, each with 12 seats: say there were 5 minibuses, then there would be 12 × 5 seats. If there were 7 minibuses, then there would be 12 × 7 seats. Now it may be easier to see that if there were 𝒎 minibuses, then there would be 12 × 𝒎 = 12𝑚 seats. In a similar way, if each coach has 48 seats, then for 𝒄 coaches, there will be 48𝒄 seats. In order to find the total number of seats in both minibuses and coaches, these expressions need to be added to give 12𝑚 + 48𝑐",
@@ -139,7 +139,7 @@
     {
       "questionId": 105026,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0c7a02cc-d94b-4590-b9d6-f65132be40d2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you have just added the letters together, but we need to consider how many eggs are in each box/tray. Think about how many eggs there would be in 2 boxes. What calculation did you just use?",
         "B": "It looks like you have added the number of eggs together and then the number of trays together. Think about how many eggs there would be in 2 boxes. What calculation did you just use?",

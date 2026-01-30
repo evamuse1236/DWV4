@@ -31,7 +31,7 @@
     {
       "questionId": 78166,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/57f2a9a7-b308-4090-b6ce-af6af4ebe0e8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, you have indicated where the blue line meets the axes. The solutions of the simultaneous equations are where the two lines intersect.",
         "B": "Almost - it looks like you have switched the coordinates of the intersection of the two lines.",
@@ -43,7 +43,7 @@
     {
       "questionId": 78460,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7abb4883-c4eb-45ef-9b10-b0f3ff6ef64c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, the solutions of the simultaneous equations are where the two lines intersect (cross each other).",
         "B": "The solutions of the simultaneous equations are where the two lines intersect. The blue and orange lines cross at (1,3).",
@@ -55,7 +55,7 @@
     {
       "questionId": 78168,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8f018672-6240-47fd-849f-baa5b60e2403.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, although this is a solution of the first equation it does not work for the second equation. The best way is to multiply the first equation by 3 and the second equation by 5 and then eliminate m by subtraction.",
         "B": "Not quite, although it is an approximate solution of the first equation it does not work for the second equation. The best way is to multiply the first equation by 3 and the second equation by 5 and then eliminate m by subtraction.",
@@ -79,7 +79,7 @@
     {
       "questionId": 78169,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c05d9964-7b32-4848-9577-45e0b126f04b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost! It looks like you have reversed the coordinates of the intersection of the two lines.",
         "B": "Not quite - the solutions of the simultaneous equations are found where the two lines intersect (cross each other).",
@@ -91,7 +91,7 @@
     {
       "questionId": 78463,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2407dfb0-2632-4c07-afd9-3a4de56ee6fd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite - the solutions of the simultaneous equations are found where the two lines intersect (cross each other). And remember x is the horizontal axis, and y is vertical!",
         "B": "Whoops - it looks like you have mixed up the coordinates.",
@@ -103,7 +103,7 @@
     {
       "questionId": 106892,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d7cc799c-a15f-431d-8442-b4cea3a8feef.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, try taking away one equation from the other and solving - can you solve pair 1 - if so it has at least one solution.",
         "B": "Adding the equations in pair 1 gives 𝑥 = 5 and 𝑦 = 0. For Pair 2, initially one equation needs to be rearranged: let’s do this to equation 1: swapping the 𝑥 and 𝑦 terms, taking care to keep the appropriate sign with each gives −𝑥 + 𝑦 = 5. Now, to eliminate 𝑥, let’s add this equation to 𝑥 − 𝑦 = 5. For the 𝑥 term, this gives −𝑥 + 𝑥 = 0, and for the y term there is +𝑦 +(− 𝑦) = 0. The number-only term is 5 + 5 = 10. Since 0 ≠ 10, Pair 2 has no solutions. If we were to draw a graph of each equation, we would find that these lines do not meet and are therefore parallel.",
@@ -127,7 +127,7 @@
     {
       "questionId": 106893,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7ef661c5-bd46-4632-84cd-ff9bafb80cdc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Check both Pair 1 and Pair 2, using elimination to try and solve each set of equations.",
         "B": "Not quite. Check both Pair 1 and Pair 2, using elimination to try and solve each set of equations.",
@@ -139,7 +139,7 @@
     {
       "questionId": 106904,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/320e76d1-00bb-4ecb-92a1-5829e1d4fb7e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Try rearranging the equations, so your variables line up and can be eliminated by adding or subtracting.",
         "B": "We could solve Pair 1 by first rearranging so that the second equation has like terms in line with the first equation: equation 2 becomes −𝑥 − 𝑦 = 4. If the two equations are then added, we have −2𝑦 = 8, which means this pair of equations has obvious solutions. In Pair 2, equation 1 should also be rearranged to give −𝑥 + 𝑦 = −4. With equation 2 remaining as 𝑥 − 𝑦 = −4, adding this pair for the 𝑥 terms gives −𝑥 + 𝑥 = 0𝑥 = 0, and for the 𝑦 term: −𝑦 + (+𝑦) = −𝑦 + 𝑦 = 0. The number-only terms give −4 +(−4) = −8. Since 0 ≠ −8, Pair 2 has no solutions.",

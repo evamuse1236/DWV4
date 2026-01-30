@@ -31,7 +31,7 @@
     {
       "questionId": 158911,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d7d52036-e1c9-4894-af5d-ff8e5d3b6aca.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite - this would mean 3 circles and another 2 circles",
         "B": "There are 2 groups of 3 circles, so we have 2 x 3 circles in total.",
@@ -43,7 +43,7 @@
     {
       "questionId": 158713,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5043f104-d1e3-4a04-9327-e9fd6a7aeb0e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Careful, I think you mixed up the star and the triangle!",
         "B": "There are 5 groups lined up in the diagram, and each group has 4 squares in it, so we have 5 groups of 4 squares.",
@@ -55,7 +55,7 @@
     {
       "questionId": 158912,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/92fcb2c1-835a-4498-a09a-e836df547149.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Careful, I think you mixed up the star and the triangle",
         "B": "12 is the total number of squares. How many groups are they in? Each circle full of squares is a group...",
@@ -115,7 +115,7 @@
     {
       "questionId": 158716,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d72c6166-398f-4132-a602-b5b2ec3db51a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This would be 4 and 5 more, but we have 5 jumps of 4 each. Which calculation shows this?",
         "B": "The scale does start at 0 and end at 20, but we aren't multiplying them together... We have 5 jumps of 4 each. Which calculation does this show?",

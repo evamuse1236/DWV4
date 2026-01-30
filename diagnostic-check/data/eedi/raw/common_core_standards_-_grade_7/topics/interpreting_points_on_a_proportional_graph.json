@@ -19,7 +19,7 @@
     {
       "questionId": 166817,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d7721edd-2748-4292-9b81-56fb6f43f9f0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Remember to read the labels from the 𝑥 and 𝑦 axes. Nowhere does it mention anything about days worked...",
         "B": "Remember to read the labels from the 𝑥 and 𝑦 axes. Nowhere does it mention anything about days worked...",
@@ -31,7 +31,7 @@
     {
       "questionId": 167067,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cd059938-6e85-4915-9e0c-538e6a6111ea.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have mixed up the labels for the values. Read the labels on the axes and make sure that line up with the correct numbers...",
         "B": "Using the labels for the axes on our graph, we see 𝑥 stands for \"number of hours\" and 𝑦 is \"amount earned.\" That means (1,10) would mean the person earns $10 for every 1 hour worked.",
@@ -43,7 +43,7 @@
     {
       "questionId": 166818,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db5a2e54-d92e-4a4b-9f25-7f8d05a5b380.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you may have thought that 𝑦 stands for the number of weeks. Be sure to read the labels on the graph to help understand what the point (1,𝑦) stands for...",
         "B": "You may have calculated your answer using the 5 work days in a week, but remember there are 7 days in a whole week. What would our answer be using 7?",
@@ -67,7 +67,7 @@
     {
       "questionId": 166819,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5da8a313-630d-4345-86ae-f64b9170d968.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Remember that we have the point (0,0) and each number should stand for something. Although one 0 does stand for chocolate bars, do not forget about the second 0...",
         "B": "Even though the first point on the graph is (0,0), it does not necessarily mean that the first chocolate bar cost $0. Look at the labels on the 𝑥 and 𝑦 axes and apply them the correct values to interpret what our point means.",
@@ -79,7 +79,7 @@
     {
       "questionId": 167069,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3326fd19-7298-4c26-8391-96e4f5d1be17.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Even though the first point on the graph is (0,0), it does not necessarily mean that the first can of lemonade costs $0. Look at the labels on the 𝑥 and 𝑦 axes and apply them the correct values to interpret what our point means.",
         "B": "The 𝑥-axis indicates that 𝑥 values represent the number of cans of lemonade and the 𝑦-axis indicates that 𝑦 values represent the cost in dollars ($). Since our point is (0,0) and points are in the format (𝑥,𝑦), we can state that 0 cans of lemonade would cost $0.",
@@ -115,7 +115,7 @@
     {
       "questionId": 166821,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c08b2041-1b00-469d-a419-fda96a0d83b4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have tried to find the unit rate in the form (𝑟,1), but actually unit rates for proportional graphs can be found (1,𝑟). What would the unit rate be in the form (1,𝑟)?",
         "B": "Unit rates on proportional graphs can be found and represented by the point (1,𝑟). Since we know 10 cupcakes cost $25, we can represent that with the point (10,25). We can divide both numbers by 10 to find the cost of one cupcake, which would be $2.5. This is represented by the point (1,2.5)",

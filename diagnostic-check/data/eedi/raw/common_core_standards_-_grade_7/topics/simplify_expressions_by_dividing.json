@@ -37,7 +37,7 @@
     {
       "questionId": 104968,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f31e9439-4e02-45cd-8606-4c36c4f8960e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have subtracted the bottom from the top. The question is asking you to divide 6a by 4a. Are there any common factors that you could cancel out?",
         "B": "I think you have divided both top and bottom by 2. Are there any other common factors that you can divide by?",
@@ -49,7 +49,7 @@
     {
       "questionId": 104986,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/62b1a844-8394-4733-be8c-ed12f568e7d3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have subtracted the denominator from the numerator. The question asks you to simplify. Are there any common factors that you could divide by?",
         "B": "If you divide the numerator and denominator by m first you will be left with 3/12. Both can then be divided by 3 to give you 1/4",
@@ -61,7 +61,7 @@
     {
       "questionId": 104971,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/156ecea7-7708-4dc9-9abb-0ae39a425b68.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have attempted to subtract one from the other. The question asks you to simplify. Are there any common factors that you could divide both by?",
         "B": "I think you have misread where the a² is. Maybe start again and make sure your a² is on the denominator.",
@@ -73,7 +73,7 @@
     {
       "questionId": 104989,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/06697809-0b08-47ea-94cf-c59256b08afc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! I think you have done the division the wrong way around. We are dividing 3m² by 12m³.",
         "B": "The two common factors are 3 and m². Dividing by 3 gives you m²/4m³ and then dividing by m² would leave you with 1/4m",
@@ -97,7 +97,7 @@
     {
       "questionId": 124917,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5828fd6e-a427-47e4-92b3-9e546049dd0f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have presumed the x and y squared would cancel each other out. They are not common terms so we could not divide by them.",
         "B": "I think you have cancelled an x and a y together. They are not common terms so we could not divide by them.",
@@ -109,7 +109,7 @@
     {
       "questionId": 132182,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/89fd446c-07a7-40ed-9287-8520d1ef8b62.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have multiplied the numerator by 4. What operation does the fraction bar represent? Add, subtract, multiply or divide?",
         "B": "I think you have tried to subtract the terms in the numerator. 12c – 8c would give us 4c, but we only have 8, not 8c. Your second step was correct though, we can divide both terms by 4.",
@@ -121,7 +121,7 @@
     {
       "questionId": 132078,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a7eb785f-a7ce-4583-8803-fc270db1135e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have divided the 18 by 6 to get 3, but we need to divide both terms by 6. What do we get if we divide 12c by 6?",
         "B": "The two terms in the numerator can both be divided by 6 because 6 is a common factor of 12 and 18. 12c divided by 6 is 2c. 18 divided by 6 is 3. So we can simplify the expression to 2c + 3.",
@@ -133,7 +133,7 @@
     {
       "questionId": 132183,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8bbdea39-3c9d-4074-8866-f1451d0ba8bd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You are right that 35 ÷ 7 will simplify to 5. But where is the 𝑥 in the expression? We can't just move letters between the denominator and the numerator.",
         "B": "You are right that 35 ÷ 7 will simplify to 5. But what about the 𝑥 in the expression?",

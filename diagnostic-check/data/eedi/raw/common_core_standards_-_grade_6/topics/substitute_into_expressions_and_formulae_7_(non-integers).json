@@ -55,7 +55,7 @@
     {
       "questionId": 135267,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a943e38b-e0f1-48f3-b6f7-79631578fc8e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have multiplied 14 by 10 rather than a tenth (0.1)",
         "B": "I think you have added the numbers. Remember that, in algebra, when two letters are next to each other like that it means to multiply them together.",
@@ -67,7 +67,7 @@
     {
       "questionId": 135248,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5959796a-434e-4d0c-924c-e187159cdf30.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Be careful here, a power of 0.5 does not mean we halve the answer. To help you, remember this is the inverse of a power of 2.",
         "B": "When we substitute the values in, we need to do 9 to the power of 0.5, whereas you've added 9 and 0.5",
@@ -91,7 +91,7 @@
     {
       "questionId": 135249,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/28d8829f-eef7-47cd-b303-d68b78fe5fae.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have multiplied 9 by (-5) rather than (-0.5)",
         "B": "I think you have added the numbers then made the answer negative. Remember that, in algebra, when two letters are next to each other like that it means to multiply them together.",
@@ -103,7 +103,7 @@
     {
       "questionId": 135269,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/41321bad-fdcc-4e60-b22f-def175e714ef.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have added 16 and 0.1 and then made your answer negative. Remember that, in algebra, when two letters are next to each other like that it means to multiply them together.",
         "B": "16 x (-0.1) = (-1.6)",
@@ -127,7 +127,7 @@
     {
       "questionId": 135270,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c266ba51-a817-415a-bdab-072a05186295.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've multiplied 16 by -0.5, which would be correct if this were ab = a x b. However here b is a power of a, rather than multiplying. Try splitting the -0.5 into 1/2 and -1 if you're unsure how to apply it.",
         "B": "You've correctly applied the 0.5 part of the power! Be careful with the negative part. This doesn't make the answer a negative value. What else could it change about your answer?",
@@ -151,7 +151,7 @@
     {
       "questionId": 135271,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0707c8db-059c-488d-ae11-23d017e27433.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have forgotten to square the t. Make sure to square t first, then multiply by 0.5a, then add on the 'ut'.",
         "B": "I think you have squared (0.5at) whereas you should only square the t, then multiply it by 0.5a",

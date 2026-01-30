@@ -31,7 +31,7 @@
     {
       "questionId": 101513,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5023f066-44ea-4633-9de2-2f04a6694d2e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Be careful. 1/3 is a recurring decimal but 0.3 is terminating (as it stops).",
         "B": "Not quite. 1/3 is a recurring decimal where as 33% which is 0.33 is a terminating decimal (as it stops).",
@@ -55,7 +55,7 @@
     {
       "questionId": 101514,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f5bcb691-ffda-4bba-9169-e4a510caba1a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Only one of the numbers is in its correct position. Converting them all into their decimal equivalents will help you to order them. Remember the line in the fraction means divide.",
         "B": "Not quite. Converting them all into their decimal equivalents will help you to order them. Remember the line in the fraction means divide.",
@@ -67,7 +67,7 @@
     {
       "questionId": 101530,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c5c43142-0751-43d1-aca1-6ee1910b52af.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Converting them all into their percentage equivalents will help you to order them. Remember percentage means out of 100.",
         "B": "Ascending order means starting with the smallest. Converting all values to percentages is a good place to start with this question: for 33/20, multiplying numerator and denominator by 5 gives 165/100 = 165%, and also 1.55 ✕ 100 = 155%. Now it becomes clear that 155% < 160% < 165%, meaning 1.55 < 160% < 33/20.",
@@ -79,7 +79,7 @@
     {
       "questionId": 103963,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e42a76c4-be16-411c-b4b4-9e6374005e27.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Be careful 1/5 does not equals 0.5. Use equivalent fractions, to give 1/5 a denominator of 10, to help you convert 1/5 to a decimal.",
         "B": "Be careful. 17% = 0.17 but we know our answer has to be bigger than 1.5. Remember to multiply by 100 to turn a decimal into a percentage.",
@@ -91,7 +91,7 @@
     {
       "questionId": 122129,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/44fac4f7-bf3f-4924-885b-e96eb6580e8f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Convert 1/4 to a decimal before adding it to 1.4. Use equivalent fractions, to give 1/4 a denominator of 100, to help you do this.",
         "B": "Not quite. 1/4 does not equals 0.4. Use equivalent fractions, to give 1/4 a denominator of 100, to help you convert 1/4 to a decimal.",
@@ -103,7 +103,7 @@
     {
       "questionId": 104083,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/437d2de6-929b-46b3-b075-35a9d30cadfe.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Region A only includes the numbers that are greater than 2/3 which are not smaller than 70%. Converting 2/3, using short division, and 70% into their decimal equivalents will help you see which region 0.6 should go in.",
         "B": "Not quite. Region B only includes numbers greater than 2/3 which are also smaller than 0.7. Converting 2/3, using short division, and 70% into their decimal equivalents will help you see which region 0.6 should go in.",
@@ -127,7 +127,7 @@
     {
       "questionId": 104084,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/47a58c6a-5660-43af-a895-ea51a8b96b51.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Region A includes all those number bigger than 0.15 which are not smaller than 1/4, therefore 0.3 could go here. Use equivalent fractions to turn 1/4 into a decimal then try to fill in each region with a suitable number. Which region can we not fill?",
         "B": "Not quite. Region B includes all those number bigger than 0.15 that are also smaller than 1/4, therefore 0.2 could go here. Use equivalent fractions to turn 1/4 into a decimal then try to fill in each region with a suitable number. Which region can we not fill?",
@@ -139,7 +139,7 @@
     {
       "questionId": 104086,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f816c7cf-0a83-4b8b-ab59-5119e81e8fef.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Region A includes all those numbers bigger than 0.25 which are not smaller than 1/5, therefore 0.3 could go here. Use equivalent fractions to turn 1/5 into a decimal then try to fill in each region with a suitable number. Which region can we not fill?",
         "B": "1/5 = 2/10 = 0.2. Therefore, region B contains all the numbers that are bigger than 0.25 and smaller than 0.2. There is no such number, therefore region B is impossible to fill.",

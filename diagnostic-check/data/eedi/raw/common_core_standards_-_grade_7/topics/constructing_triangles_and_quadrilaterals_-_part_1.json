@@ -67,7 +67,7 @@
     {
       "questionId": 95515,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/77631d6f-16b6-4748-9099-50e7d6e5221e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you have found a chord. Remember the radius goes from the centre of the circle to the circumference of the circle.",
         "B": "It looks like you have found an arc. Remember the radius goes from the centre of the circle to the circumference of the circle.",
@@ -79,7 +79,7 @@
     {
       "questionId": 148830,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d8c54a55-7e54-45fe-87af-f52ffb73171b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you found the diameter of the circle. Remember the radius goes from the centre of the circle to the circumference of the circle.",
         "B": "It looks like you have found a chord. Remember the radius goes from the centre of the circle to the circumference of the circle.",
@@ -91,7 +91,7 @@
     {
       "questionId": 95516,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/59f4ef33-10f8-4265-83d9-5dee23140888.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Have another look at the diagram. The diameter always goes through the centre of the circle. The line given goes from one part of the circumference to another, but does not go through the centre of the circle.",
         "B": "Have another look at the diagram. The radius always goes from the centre of the circle to the circumference. The line given goes from one part of the circumference to another, but does not go through the centre of the circle.",
@@ -103,7 +103,7 @@
     {
       "questionId": 148831,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/30b96a43-d9b7-4e6d-b57c-bbab4ed6143b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, remember both ends of the chord must connect to the circumference of the circle.",
         "B": "The line in the diagram goes from one part of the circumference to another, but does not go through the centre of the circle. Therefore this is a chord.",
@@ -115,7 +115,7 @@
     {
       "questionId": 95517,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/53e6e492-b394-4682-8c2b-471170c864bb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you have found the diameter of the small circles. Remember the diamter is double the size of the radius.",
         "B": "It looks like you have found the radius of the large circle. We are being asked to find the radius of the small circle.",
@@ -139,7 +139,7 @@
     {
       "questionId": 95518,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d4938cd-cb84-4dad-b646-e7240c621505.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you have calculated the radius of the smaller circle. What does k represent?",
         "B": "It looks like you may have estimated. What part of the circle does k represent? Could it be drawn elsewhere?",
@@ -151,7 +151,7 @@
     {
       "questionId": 120911,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a00e56aa-d9b0-4442-a2cf-6cc7ffdb1501.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The side marked q is the radius of the smaller circle. For ease of measuring, look at a radius either vertically or horizontally, it can be seen that it is 2 squares long, or 2cm.",
         "B": "It looks like you may have estimated. What part of the circle does q represent? Could it be drawn elsewhere?",

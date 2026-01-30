@@ -55,7 +55,7 @@
     {
       "questionId": 107593,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f0930d3f-87b7-4925-810f-4b5d9b6025c3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. What do we need to multiply 30 by to find the answer? Think about how many milligrams there are in 1 gram.",
         "B": "Not quite. What do we need to multiply 30 by to find the answer? Think about how many milligrams there are in 1 gram.",
@@ -67,7 +67,7 @@
     {
       "questionId": 107603,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/55d46a30-d69e-48a8-9829-b3f8b471e2b6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. What do we need to multiply 200 by to find the answer? Think about how many milligrams there are in 1 gram.",
         "B": "There are 1,000 milligrams in a gram and so 200 g = 200 × 1,000 = 200,000 mg",
@@ -91,7 +91,7 @@
     {
       "questionId": 107604,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/719511b9-1ab1-48f6-946a-55fef38120d9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. What do we need to multiply 0.2 by to find the answer? Think about how many kilograms there are in 1 tonne.",
         "B": "Not quite. What do we need to multiply 0.2 by to find the answer? Think about how many kilograms there are in 1 tonne.",
@@ -103,7 +103,7 @@
     {
       "questionId": 107598,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/01f19fff-5924-44ad-a57b-24364d2f8976.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I wonder if you made a mistake with the number of g in a kg. Remember that 1000g = 1 kg",
         "B": "I wonder if you made a mistake with the number of kg in a tonne. Remember that 1000kg = 1 tonne",
@@ -115,7 +115,7 @@
     {
       "questionId": 107608,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9a828222-17df-4161-bdf3-16137980d9e1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I wonder if you made a mistake with the number of g in a kg, and kg in a tonne. Remember 1000g = 1kg and 1000kg = 1 tonne",
         "B": "I wonder if you made a mistake with the number of g in a kg, and kg in a tonne. Remember 1000g = 1kg and 1000kg = 1 tonne",
@@ -127,7 +127,7 @@
     {
       "questionId": 107599,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bc4867a5-b39e-4610-9f21-e20a239d70ab.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you took off 10g rather than 0.1g. Remember 1kg = 1000g",
         "B": "I think you took off 1g rather than 0.1g. Remember 1kg = 1000g",

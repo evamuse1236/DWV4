@@ -49,7 +49,7 @@
     {
       "questionId": 107867,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/da712eb0-6a37-49eb-bb69-af43a73de80e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Try thinking about the order of operations (you might know this as BIDMAS). Which part of this calculation would we have to do first? Should we add first or divide first?",
         "B": "The mean is the sum of the numbers divided by the frequency (how many numbers there are in the list). So we add the numbers and divide by 5.",
@@ -61,7 +61,7 @@
     {
       "questionId": 107856,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3e97abe3-3c63-4180-be4a-a94b4f58c4ab.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have found the mode, the most common value. Remember mean = (total number of goals Dan scored) / (number of games)",
         "B": "Not quite. Remember mean = (total number of goals Dan scored) / (number of games). It can be a decimal.",
@@ -73,7 +73,7 @@
     {
       "questionId": 107868,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eb93937c-cc10-45f5-98dc-a184eaa145fc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. We need to count the total number of games, even ones where Sam didn't score.",
         "B": "Not quite. Remember mean = (total number of goals Sam scored) / (number of games). It can be a decimal.",
@@ -97,7 +97,7 @@
     {
       "questionId": 107869,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f6d8f457-f725-4218-9b37-fbe808a5e88d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is the mean number of faces, but we need to consider how many people each face represents.",
         "B": "The mean number of faces is (5 + 2 + 3 + 2)/4 = 12/4 = 3, and as each face represents 10 people, the mean number of people is 3 × 10 = 30.",
@@ -133,7 +133,7 @@
     {
       "questionId": 107859,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/27cdaa53-70d8-4440-a552-4ce34b69e8a1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Remember mean = (total of values)/(number of values)",
         "B": "Not quite. Remember mean = (total of values)/(number of values)",
@@ -145,7 +145,7 @@
     {
       "questionId": 107871,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/47cb3678-80aa-47dd-819e-ef3257a67540.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Remember mean = (total of values)/(number of values)",
         "B": "The mean is (2 + 0.2 + 0.02)/3 = 2.22/3 = 0.74",

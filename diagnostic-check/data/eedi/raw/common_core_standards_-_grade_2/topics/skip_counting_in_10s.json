@@ -19,7 +19,7 @@
     {
       "questionId": 159320,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4050ec36-668b-4ca7-ac1f-c34b2f409fe4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is the number BEFORE 590, but we want the number after. We need to count forwards instead of backwards.",
         "B": "Not quite - we want to count on 10, not just 1!",
@@ -43,7 +43,7 @@
     {
       "questionId": 159321,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/238f388c-d38a-40fb-b73a-c830febfde6a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Skip counting in 10s from 780 we would count 790, 800 so we do say 800... Which number can we not get to by adding on 10s?",
         "B": "If we are skip counting in 10s, the next number will be 780 + 10 = 790. Which number here can we not get to by adding 10s on to 780?",
@@ -55,7 +55,7 @@
     {
       "questionId": 159543,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ac14383f-894b-4c96-87a7-f937febb5ea1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "If we keep skip counting in 10s for long enough, we reach 500! Which number can we not get to by counting in 10s from 420?",
         "B": "If we keep skip counting in 10s for long enough, we reach 620! Which number can we not get to by counting in 10s from 420?",
@@ -79,7 +79,7 @@
     {
       "questionId": 159544,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/95bd8288-901f-4492-ac5e-cbb4081afb86.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Counting on ten from 783 gets us to 793 .",
         "B": "This is the number BEFORE 783, but we want the number after. We need to count forwards instead of backwards.",
@@ -91,7 +91,7 @@
     {
       "questionId": 159323,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c6876c51-7e52-4602-a647-601b748efdf3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Look at the pattern carefully - we want to count back 10, not 100. Which number is 10 before 609?",
         "B": "Counting back 10 from 609 we get 608, 607, 606, 605, 604, 603, 602, 601, 600, 599, so 599 is the previous number in the pattern.",
@@ -103,7 +103,7 @@
     {
       "questionId": 159545,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/910c37af-91ed-4d37-b191-beab6009c284.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost! But I think you started counting on 246. We want to count down 245, 244, ...",
         "B": "276 is the next number after 266. We want the number at the beginning of the sequence, before 246!",
@@ -127,7 +127,7 @@
     {
       "questionId": 159546,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4dd98648-997b-4797-a67b-9e8c984ff13e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost, but think about what happens in the hundreds column. We are counting backwards, so we should get to a number that is smaller than 301.",
         "B": "Not quite - we want to count back 10, not just 1",

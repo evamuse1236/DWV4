@@ -49,7 +49,7 @@
     {
       "questionId": 133804,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ae9cf082-96d2-4ab8-98e6-ed6d8ee38c87.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Probability events is not a real term. Yes these are events that happen within probability, but we can give them a specific name",
         "B": "Not quite. Dependent events affect the probability of another event happening. For example the probability of it raining will affect the probability of me wearing a coat.",
@@ -61,7 +61,7 @@
     {
       "questionId": 131612,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/63a8731d-8d84-4531-ad2f-836c1f28162a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you are considering them as separate events. The question is asking about them occurring at the same time.",
         "B": "Rolling a 6 and getting an odd number cannot happen at the same time, so these events are mutually exclusive.",
@@ -73,7 +73,7 @@
     {
       "questionId": 133805,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e9e29baf-5c96-4a35-a514-39ab10a60387.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you are confusing keywords. They are both events with a probability, but we would not call them probability events.",
         "B": "Not quite. The probability of picking a red and of picking a blue is not dependent on each other.",
@@ -85,7 +85,7 @@
     {
       "questionId": 131613,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/585015aa-678e-41dc-a6a3-7f30c08a329a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. What could the 'P' stand for?",
         "B": "Not quite. What could the 'P' stand for?",
@@ -97,7 +97,7 @@
     {
       "questionId": 133806,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c60782ad-b939-4765-bfff-9f165245588e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. What could the 'P' stand for?",
         "B": "P(odd)' is the quick way of writing 'the probability of rolling an odd number'.",
@@ -133,7 +133,7 @@
     {
       "questionId": 131615,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/13acb154-abd9-42e9-832e-64e7abb318a1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you are considering them as separate events. The question is asking about them occurring at the same time.",
         "B": "The letter P is a consonant so you could not pick the letter P and a vowel at the same time, therefore they are mutually exclusive",
@@ -145,7 +145,7 @@
     {
       "questionId": 133808,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/173432ea-a444-4dc4-b9a5-9b82099a6a59.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you are confusing keywords. They are both events with a probability, but we would not call them probability events.",
         "B": "Not quite. Picking an E and picking a consonant are not dependent on each other.",

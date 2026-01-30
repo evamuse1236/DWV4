@@ -43,7 +43,7 @@
     {
       "questionId": 104637,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ac2f9542-6bfc-498d-9386-5f7cb0f49612.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! I think you have divided 3 by 2 to get 1.5 on the right hand side of the ratio, however this isn't what operation was performed to the left hand side. To keep ratios equivalent, we must always do the same to all parts.",
         "B": "Comparing 3 : 2 to 1 : 𝑛, it is clear that 3 has changed to 1. This is achieved by dividing by 3 (it is always divide or multiply to keep things in proportion), and so if we divide 2 by 3, we will achieve a ratio which represents the same amount: 2 ÷ 3 = ⅔, and so the ratio is 1 : ⅔",
@@ -55,7 +55,7 @@
     {
       "questionId": 104651,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c9d5a638-ff89-4f44-959b-6730f7b01775.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! I think you have divided 3 by 7 to on the right hand side of the ratio, however this isn't what operation was performed to the left hand side. To keep ratios equivalent, we must always do the same to all parts.",
         "B": "Comparing 3 : 7 to 1 : 𝑛, it is clear that 3 has changed to 1. This is achieved by dividing by 3 (it is always divide or multiply to keep things in proportion), and so if we divide 7 by 3, we will achieve a ratio which represents the same amount: 7 ÷ 3 = 7/3, and so the ratio is 1 : 7/3",
@@ -79,7 +79,7 @@
     {
       "questionId": 104652,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fda52b92-65aa-4410-8c51-5954140d93f5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! You appear to have subtracted the values of each part of the ratio and put this as the denominator. A fraction tells us how many parts of the whole amount Josh receives. Think what the ratio tells us about how many parts the total amount of money has been divided in to.",
         "B": "Not quite! I think you have put Lucy's part of the ratio as the denominator, whereas a fraction tells us how many parts of the whole amount Josh receives. Think what the ratio tells us about how many parts the total amount of money has been divided in to.",
@@ -91,7 +91,7 @@
     {
       "questionId": 104639,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e2e10b0e-d5e0-42a4-8e25-9ffc3a3cac66.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! Remember, the ratio is shown in the same order as it is written in words. How many parts did Kate receive vs Isaac?",
         "B": "Not quite! I think you have added the numerator and denominator for Isaac’s share. The denominator tells us the number of 'groups' the sweets have been shared into overall, and knowing how many parts Kate receives. think about what's left over for Isaac.",
@@ -103,7 +103,7 @@
     {
       "questionId": 104653,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ca17b698-eaf6-4a0b-918e-e2cc1025b2bc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! I think you have added the numerator and denominator for Lucy's share. The denominator tells us the number of 'groups' the sweets have been shared into overall, and knowing how many parts Josh receives. think about what's left over for Lucy.",
         "B": "The fraction ⅘ tells us that Josh has £4 out of each £5. This means that Lucy must receive the rest, so she has £1 out of each £5. Expressing this with Josh’s information first (because this is the way it is given in the question) gives a ratio of 4 : 1",
@@ -115,7 +115,7 @@
     {
       "questionId": 104640,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dc2ece67-b6ee-4789-9e43-d79033c78d2b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have taken the number in the ratio and made them the coefficients of 𝑎 & 𝑏. We need to think about what the ratio is telling us about the relative size of 𝑎 & 𝑏, and therefore how many of each do we need to make both sides of our equation equal.",
         "B": "The ratio is telling us that for every 1 part of 𝑏 there are three parts of 𝑎, so 𝑎 is 3 times bigger than 𝑏. This means we need 3 lots of 𝑏 to equal 1 lot of 𝑎. An equation means both sides are balanced, so we can express this as 𝑎 = 3𝑏",
@@ -139,7 +139,7 @@
     {
       "questionId": 104641,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5acb6432-bc49-48dd-a866-a145c238bc83.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have added 1 to each of 𝑎 and 𝑏 to adjust the first ratio, however it is important to remember that we must use only multiply or divide when adjusting ratios to keep things in proportion.",
         "B": "I think you have read off the number of parts representing 𝑎 & 𝑐, however the value of 𝑏 is different in each start ratio, therefore we need to adjust one or both in order to equalise the value of 𝑏 in each before looking for the ratio of 𝑎 : 𝑐",
@@ -151,7 +151,7 @@
     {
       "questionId": 104655,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1c0e271e-d6cf-49dd-96b8-0ad305fe9190.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have added 1 to each of 𝑏 & 𝑐 to adjust the second ratio, however it is important to remember that we must use only multiply or divide when adjusting ratios to keep things in proportion.",
         "B": "We need to express this as one ratio 𝑎 : 𝑏 : 𝑐 as opposed to two separate ratios at present. Both ratios have 𝑏 in common, but this currently represents a different number of parts, being 3 parts in 𝑎 : 𝑏 and then 2 parts in 𝑏 : 𝑐. We can make 𝑏 the same number of parts by multiplying the first ratio by 2 to give 𝑎 : 𝑏 = 8 : 6, and the second ratio by 3 to give 𝑏 : 𝑐 = 6 : 21. Now that 𝑏 is 6 parts in both, the ratios can be combined to give 𝑎 : 𝑏 : 𝑐 = 8 : 6 : 21, and so the ratio of 𝑎 : 𝑐 = 8 : 21",

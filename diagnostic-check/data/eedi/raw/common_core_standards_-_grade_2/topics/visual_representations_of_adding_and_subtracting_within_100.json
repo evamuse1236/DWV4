@@ -25,7 +25,7 @@
     {
       "questionId": 159338,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/03f8a8df-cea5-44cc-adb2-e0578311b277.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "How many sticks are there altogether in the top picture? How many blocks?",
         "B": "Each stick is 10, and each block is 1. In total in the calculation we have 5 sticks and 12 blocks. 10 of the blocks make another stick of 10, so then we have 6 sticks and 2 blocks.",
@@ -37,7 +37,7 @@
     {
       "questionId": 159560,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/78066090-71bb-412d-afa2-00eec373aef7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have subtracted the blocks, but the question asks you to add them. How many sticks are there altogether in the top picture? How many blocks?",
         "B": "Not quite. Count the number of blocks again. There are 8 in the first picture and 6 in the second. How many would this be altogether?",
@@ -61,7 +61,7 @@
     {
       "questionId": 161461,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/89b98595-dca0-49b7-8e60-078942d1e3bb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. I think you counted your starting number when adding on. So when adding 3 on to 4, remember it's 5, 6, 7.",
         "B": "Not quite. I think you have mixed up your digits. In a 2-digit number, your tens digit is the first number, and your ones digit is the second number.",
@@ -73,7 +73,7 @@
     {
       "questionId": 161462,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3056f0a7-4cca-4dea-adfa-f4b155f214d9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite; you must take away the digits that have the same place value. Here, we have 6 tens, and we need to take away 3 tens.",
         "B": "7 ones take away 2 ones gives 5 ones, and 6 tens take away 3 tens gives 3 tens, giving us a total of 3 tens and 5 ones, which in digits is written as 35.",
@@ -97,7 +97,7 @@
     {
       "questionId": 161464,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2356eb80-b0b7-42d2-a297-849e71dd095f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite; I think you added. We have been asked to subtract 24 from 63.",
         "B": "Not quite; you must take away the digits that have the same place value. Remember we can exchange a 10 stick for 10 ones if needed.",
@@ -109,7 +109,7 @@
     {
       "questionId": 161465,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/133f39e4-6446-49b8-bd71-3588208b660c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, I think you've added. We've been asked to subtract 37 from 84.",
         "B": "Not quite, I think you made a mistake when subtracting the 7 units from 4. Remember you may need to exchange one stick of 10 for 10 ones.",
@@ -121,7 +121,7 @@
     {
       "questionId": 161466,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d6dff0c8-160e-43e7-928a-e7fd609fa913.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. I think you made the tens the same, and then made the units the same, but this meant you added too many. Make the units the same first, and then see how many tens you need to add.",
         "B": "Not quite, I think you made the answer up to 4 ten sticks, but you still need some unit cubes.",

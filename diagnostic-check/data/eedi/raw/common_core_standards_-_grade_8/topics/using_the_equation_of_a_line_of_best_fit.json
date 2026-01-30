@@ -25,7 +25,7 @@
     {
       "questionId": 166880,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e349c332-02aa-4c21-9def-125016004282.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! This line slopes downwards from left to right - what does this mean about the kind of gradient it will have?",
         "B": "Not quite! It looks like you may have used the x-intercept rather than the y-intercept of the line as the constant term in the equation. Remember, the equation of a straight line is y = mx +c, where m is the gradient and c is the y-intercept.",
@@ -37,7 +37,7 @@
     {
       "questionId": 167130,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a1c01c71-fb72-4025-b45d-a2178ec74970.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! It looks like you may have found the gradient and y-intercept correctly but mixed up their positions in the equation. Remember, the equation of a straight line is y = mx +c, where m is the gradient and c is the y-intercept.",
         "B": "Not quite! This line slopes downwards from left to right - what does this mean about the kind of gradient it will have?",
@@ -49,7 +49,7 @@
     {
       "questionId": 166881,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ca5d5d30-216b-467c-8b1f-e9be5cf98ef2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! I think you may have calculated using 0.8 rather than -0.8 in the equation of the line of best fit. Take care when working with negative values.",
         "B": "To find the predicted y value, substitute x = 10 into the equation of the line of best fit. This gives y = -0.8 x 10 + 16, which equals -8 + 16 which is 8.",
@@ -61,7 +61,7 @@
     {
       "questionId": 167131,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d04c3e3b-6d2f-434f-846b-18c55855b15f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! I think you may have substituted 20 for y rather than x. Read the question carefully - it asks for the predicted y value when x is 20.",
         "B": "I think you may have found the y-coordinate of the point on the graph that has an x-coordinate of 20. The question asks you to use the equation of the line of best fit to find the predicted value. What value of x do you need to substitute into the equation?",
@@ -73,7 +73,7 @@
     {
       "questionId": 166882,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/28c02318-b6b3-4188-81e8-4669d72803e8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you may have found the y-coordinate of a point on the plot that is close to when x = 14. The question asks you to use the equation of the line of best fit. What value of x do you need to substitute into the equation?",
         "B": "Not quite! It looks like you may have used the equation incorrectly. If the equation is y = 0.05x + 0.15, you need to multiply the x value by 0.05 and then add 0.15 to find the predicted value of y.",
@@ -85,7 +85,7 @@
     {
       "questionId": 167132,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/25af63a6-6322-4440-9797-1b424a13af97.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! I think you may have substituted 32 for y rather than x. The question asks for the predicted value of y when x is 32, so it's x that needs to be substituted for 32 in the equation of the line of best fit.",
         "B": "x is the age in years so substituting x = 32 into the equation of the line of best fit gives y = 0.06 x 32 + 0.38 which is 2.3. The predicted height of a tree that is 32 years old is 2.3 m.",
@@ -97,7 +97,7 @@
     {
       "questionId": 166883,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c578522b-c2cc-42bc-afd3-9ccaa6359a79.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! It looks like you may have correctly substituted 65000 for y but made an error when solving the equation. Remember, we use inverse operations to solve equations and apply them in the opposite order to which the equation was formed.",
         "B": "To find the predicted number of years the employee has worked at the company, substitute y = 65000 into the equation of the line of best fit and solve for x: 65000 = 3067x + 43501. Subtracting 43501 and then dividing by 3067 gives x = 7.009... which is 7 to the nearest integer.",
@@ -133,7 +133,7 @@
     {
       "questionId": 167134,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9845d1f9-49ce-491e-9b29-59027e61688e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you may have substituted 7.5 for p and then solved the equation for h. The question says the student spent 7 and a half hours studying, so 7.5 is the value of h, and it's p that we want to calculate. Think about how you can use the equation of the line of best fit to do this.",
         "B": "To calculate the predicted percentage score, substitute h = 7.5 into the equation of the line of best fit: p = 11.372 x 7.5 + 2 which is 87.29. To the nearest whole number, the predicted percentage score is 87%.",

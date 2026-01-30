@@ -49,7 +49,7 @@
     {
       "questionId": 155105,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3ffe9277-0f68-435e-8574-14e4f9e8ca56.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have confused your vertical and horizontal movements. The top element of the vector tells us if we are moving left or right, so affects the x-coordinate.",
         "B": "The top element of the vector represents moving 1 unit left, so the x-coordinate becomes p - 1. The bottom element of the vector represents moving 5 units up, so the y-coordinate becomes q + 5. This gives us (p - 1, q + 5).",
@@ -61,7 +61,7 @@
     {
       "questionId": 155101,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/19781d96-b808-4fa8-85c0-e39c7b00bbae.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have multiplied the parts of the coordinate by the amount of movement needed. Translating will involve adding and subtracting. Adding for right and up, subtracting for left and down.",
         "B": "I think you have moved 3 right and 4 up, we want 3 left.",
@@ -73,7 +73,7 @@
     {
       "questionId": 155106,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/822e714e-5354-40f5-ad7f-15f43cf8a353.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have multiplied the parts of the coordinate by the amount of movement needed. Translating will involve adding and subtracting. Adding for right and up, subtracting for left and down.",
         "B": "I think you have moved 3 right and 2 up, we want 2 down.",
@@ -85,7 +85,7 @@
     {
       "questionId": 155102,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ba16cbca-c0e4-403c-8131-dc308ff6c175.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. It might help if you try some values. What about the coordinate (1,2). What would happen if we reflected this in the x-axis?",
         "B": "Not quite. It might help if you try some values. What about the coordinate (1,2). What would happen if we reflected this in the x-axis?",
@@ -97,7 +97,7 @@
     {
       "questionId": 155107,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/590c0192-bc4d-4846-a0cb-572df471524f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. It might help if you try some values. What about the coordinate (1,2). What would happen if we reflected this in the y-axis?",
         "B": "If a coordinate is reflected in the y-axis then its y -oordinate will remain the same, but its x-coordinate will either change from positive to negative or negative to positive. Therefore we can write this as (-p,q)",
@@ -121,7 +121,7 @@
     {
       "questionId": 155108,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ac823682-b449-4df6-a65f-f8f97863fe47.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Try checking with the point (1,2). Draw a rough sketch and then rotate your point 180° anticlockwise about the origin. Have the coordinates swapped around or has something else happened?",
         "B": "Nearly! Try checking with the point (1,2). What will happen when this is rotated 180° clockwise about the origin?",
@@ -133,7 +133,7 @@
     {
       "questionId": 155104,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/03dc626f-7259-4f63-9291-365e6e6660c4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Nearly! You've spotted that the y coordinate would be negative, for example when starting with (2,3). But would it really go to (2,-3)? Try a sketch and see if you can find the slight difference you missed",
         "B": "Not quite! Try sketching an example using the coordinate (2,3). What happens when this rotates by a quarter turn clockwise?",
@@ -145,7 +145,7 @@
     {
       "questionId": 155109,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d2a2546-cc48-4638-aad8-d203eb9a985f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! Try sketching an example using the coordinate (2,3). What happens when this rotates by a quarter turn anticlockwise?",
         "B": "Nearly! You've spotted that the x coordinate would be negative, for example when starting with (2,3). But would it really go to (-2,3)? Try a sketch and see if you can find the slight difference you missed",

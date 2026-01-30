@@ -25,7 +25,7 @@
     {
       "questionId": 146481,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/59aa571a-5bfb-4fe6-a8fa-309a82fbac6e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have assumed that you cannot roll a 4. A fair standard dice includes the numbers 1, 2, 3, 4, 5, 6. Each appear once. Out of this list, what would the probability be of rolling a 4?",
         "B": "The probability of rolling a 4 would be 1/6. The number line is split into 6 parts so we would mark the event one part along, at B",
@@ -37,7 +37,7 @@
     {
       "questionId": 146501,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4ba80b59-23eb-4c2a-9626-ab88c8af2750.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have assumed that you cannot roll a 5. A fair standard dice includes the numbers 1, 2, 3, 4, 5, 6. Each appear once. Out of this list, what would the probability be of rolling a 5?",
         "B": "The probability of rolling a 5 would be 1/6. The number line is split into 6 parts so we would mark the event one part along, at B",
@@ -49,7 +49,7 @@
     {
       "questionId": 146482,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9cf07250-327d-4a00-a3ea-cd1aa7a0523d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have counted the dashes incorrectly. A fair standard dice includes the numbers 1, 2, 3, 4, 5, 6. Each appear once. Out of this list, what would the probability be of rolling greater than a 4?",
         "B": "The outcomes greater than 4 are 5 and 6. The probability of rolling a 5 or 6 is 2/6. The number line is split into 6 parts, so we would choose the second dash, marked with the letter B.",
@@ -61,7 +61,7 @@
     {
       "questionId": 146502,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/93f5cc10-f745-43ab-96db-2ac53c1cd959.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have counted the dashes incorrectly. A fair standard dice includes the numbers 1, 2, 3, 4, 5, 6. Each appear once. Out of this list, what would the probability be of rolling a number less than 3?",
         "B": "The outcomes less than 3 are 1 and 2. The probability of rolling a 1 or 2 is 2/6. The number line is split into 6 parts, so we would choose the second dash, marked with the letter B.",
@@ -73,7 +73,7 @@
     {
       "questionId": 146483,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f18a18d1-b1b8-48f3-8046-91b1e84a8c5c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have marked the second dash because there are two counters. Reconsider how many counters are red out of the total, and what probability that would be.",
         "B": "The probability of picking a red is 2 out of 5. 2/5=4/10. The number line is split into 10 parts so we would mark the event on the fourth dash which is labelled B.",
@@ -85,7 +85,7 @@
     {
       "questionId": 146503,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b79ece27-d2a3-494a-8524-81adef7f5fce.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have marked the third dash because there are three blue counters. Reconsider how many counters are blue out of the total, and what probability that would be.",
         "B": "I think you have found the probability of choosing a red counter, whereas the question asks for the probability of choosing a blue. Reconsider how many counters are blue out of the total, and what probability that would be.",
@@ -97,7 +97,7 @@
     {
       "questionId": 146484,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/70695134-9520-4278-9593-bf6a6c64928a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have assumed it would be on the 3rd dash as there are 3 red counters in Tom’s bag. The marked probability is ½ or 3/6, which bag shows this, if any?",
         "B": "The marked probability is ½ or 3/6. Tom’s bag contains 2/5 red counters whereas Katie’s contains 3/6. Therefore, Katie is correct.",
@@ -109,7 +109,7 @@
     {
       "questionId": 146504,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/69737123-61a1-4178-a742-1e4fd323b56e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have correctly realised that the probability of picking a red in Tom’s bag is 2/3 which is equal to 4/6. Is his the only bag that shows this?",
         "B": "I think you have correctly realised that the probability of picking a red in Katie’s bag is 4/6. Is hers the only bag that shows this?",
@@ -121,7 +121,7 @@
     {
       "questionId": 146485,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6d5cbe25-d3ae-47fe-9ec7-a503d08f98f3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have assumed that you would have to put them in order on the number line (win, draw, lose), which is not the case. As they are the only three possible outcomes, their probabilities must sum to 1. If P(draw) is greater than ½ and P(win) is less than ½, what would P(lose) need to be to make the probabilities sum to 1?",
         "B": "The outcomes are draw, win or lose. The probabilities must sum to 1. For the probabilities to sum to 1, the probability of a lose must be less than ½.",

@@ -25,7 +25,7 @@
     {
       "questionId": 158795,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cb23fc14-0e18-4079-9961-f1d691780fd5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Careful, to get the denominators we want to count how many parts the scales are split into, not how many lines there are.",
         "B": "Careful, to get the denominators we want to count how many parts the scales are split into, not how many lines there are. The top scale is split into 4 parts, so one jump along the scale is 1/4. What about the bottom scale?",
@@ -49,7 +49,7 @@
     {
       "questionId": 158796,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/151c792b-ccb9-46ec-8863-cb2947bbdebe.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "These are the unshaded fractions of the shapes. What fraction is shaded blue in each shape?",
         "B": "Not quite - you have given shaded parts out of unshaded parts, but we want shaded parts out of total parts. How many parts is the first shape split into altogether?",
@@ -61,7 +61,7 @@
     {
       "questionId": 158995,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/deff93f4-1f73-4c56-ac8d-7f54589cdf86.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite - you have given shaded parts out of unshaded parts, but we want shaded parts out of total parts. How many parts is the first shape split into altogether?",
         "B": "The first shape is split into 6 equal parts and 1 is shaded, so 1/6 of the shape is shaded. The second shape is split into 12 equal parts and 2 are shaded, so 2/12 of the shape is shaded.",
@@ -73,7 +73,7 @@
     {
       "questionId": 158797,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/237f3bcb-c1b2-484a-81d6-225a86bef2f7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have added 9 to the denominator to match the numerator, but we don't add to find equivalent fractions, we multiply. What do we multiply 3 by to get 12? Multiply 5 by the same amount.",
         "B": "Not quite - you have doubled 5, but doubling 3 doesn't give us 12. What do we multiply 3 by to get 12? Multiply 5 by the same amount.",
@@ -97,7 +97,7 @@
     {
       "questionId": 158798,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ef3e39e2-4dfd-4ac5-a3e5-5c8b4e61ce96.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have added 36 to the numerator to match the denominator, but we don't add to find equivalent fractions, we multiply. What do we multiply 9 by to get 45? Multiply 4 by the same amount.",
         "B": "Not quite - you have doubled 5, but doubling 9 doesn't give us 45. What do we multiply 9 by to get 45? Multiply 4 by the same amount.",
@@ -133,7 +133,7 @@
     {
       "questionId": 158998,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d03b5410-0d6f-4a28-a2ae-fed94ce077a3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "2 x 12 = 24, so 12 is definitely involved, but we have to do exactly the same thing to the numerator and denominator. Was 24 multiplied by 12 to get 2, or divided?",
         "B": "I think you have subtracted 22 from the denominator to match the numerator, but we don't subtract to find equivalent fractions, we divide. What do we divide 24 by to get 2? Divide 36 by the same amount.",

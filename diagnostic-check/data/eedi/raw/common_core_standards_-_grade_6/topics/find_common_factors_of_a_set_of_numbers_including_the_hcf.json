@@ -31,7 +31,7 @@
     {
       "questionId": 146981,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d44cb732-3870-44ed-9a9e-9265b9d87515.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have forgotten to consider all of the multiples of 3 and 4. Consider listing the first 5 multiples of 3 and 4 before comparing the two lists.",
         "B": "The factors of 12 are 1, 2, 3, 4, 6, 12. The factors of 20 are 1, 2, 4, 5, 10, 20. So only 4 is a factor of both 12 and 20. Tom is incorrect. Katie is correct.",
@@ -55,7 +55,7 @@
     {
       "questionId": 146982,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3aaaf0e1-aaec-4543-ac79-8df3ac57c7b6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have chosen a factor of both 12 and 24, but it is not the HCF. Consider writing a full list of factors of the two numbers before comparing them.",
         "B": "The factors of 12 are 1, 2, 3, 4, 6, 12. The factors of 24 are 1, 2, 3, 4, 6, 8, 12, 24. So the HCF of 12 and 24 is 12.",
@@ -67,7 +67,7 @@
     {
       "questionId": 147002,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7f959f72-7371-4853-8598-92745900bd2a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have chosen a factor of both 16 and 48, but it is not the HCF. Consider writing a full list of factors of the two numbers before comparing them.",
         "B": "I think you have added the two numbers together. The highest common factor is the largest number that they are both divisible by. Consider writing a full list of factors of the two numbers before comparing them.",
@@ -79,7 +79,7 @@
     {
       "questionId": 146983,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b30c4310-f0b0-4633-b341-5e42f0c85a78.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have chosen a common factor, however 4 is not the HIGHEST common factor. Consider listing the factors of both numbers in order to identify the HCF.",
         "B": "I think you have chosen a factor of 24 but not 16. Consider listing the factors of both numbers in order to identify the HCF.",
@@ -91,7 +91,7 @@
     {
       "questionId": 147003,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/03078f90-df20-4658-be88-e8199744b9fb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have chosen a common factor, however 3 is not the HIGHEST common factor. Consider listing the factors of both numbers in order to identify the HCF.",
         "B": "I think you have chosen a factor of 18 but not 24. Consider listing the factors of both numbers in order to identify the HCF.",
@@ -103,7 +103,7 @@
     {
       "questionId": 146984,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6258395-b6f8-4f20-bc85-6f090305eae1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have assumed that because 7 is a prime number, they would have no common factors. Consider the factors of 7, what factor does 7 have in common with 24?",
         "B": "The factors of 7 are 1 and 7. The factors of 24 are 1, 2, 3, 4, 6, 8, 12, 24. Therefore the highest common factor would be 1.",
@@ -115,7 +115,7 @@
     {
       "questionId": 147004,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/742b7ff8-dcc1-4e20-8946-35e6a9ba6db8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have assumed that because 11 is a prime number, they would have no common factors. Consider the factors of 11, what factor does 11 have in common with 12?",
         "B": "The factors of 11 are 1 and 11. The factors of 12 are 1, 2, 3, 4, 6, 12. Therefore the highest common factor would be 1.",
@@ -127,7 +127,7 @@
     {
       "questionId": 146985,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/533d8b00-9da3-4d43-8a3c-2be1e4da7940.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have missed out some factors. Consider listing the factors for all three numbers in order to identify the HCF.",
         "B": "I think that you have assumed that they are all in the 3 times table. Neither 26 nor 65 are divisible by 3. Consider listing the factors of all 3 numbers in order to identify the HCF.",
@@ -139,7 +139,7 @@
     {
       "questionId": 147005,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6c0b8119-846c-4804-a358-35bbe72dc838.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have missed out some factors. Consider listing the factors for all three numbers in order to identify the HCF.",
         "B": "6 is a common factor but it is not the HIGHEST common factor. Consider listing the factors of all 3 numbers in order to identify the HCF.",

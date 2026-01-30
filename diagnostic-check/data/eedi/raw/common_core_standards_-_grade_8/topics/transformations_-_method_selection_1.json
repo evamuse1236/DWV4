@@ -43,7 +43,7 @@
     {
       "questionId": 78347,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b7d1cc5c-60d7-4d67-b82b-d0948751d3cd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost. I think you reflected the wrong point, the one to the left of E.",
         "B": "The line 𝑥 = −1 tells you that every x-coordinate equals −1, so points such as (−1, −2), (−1, 1), (−1, 4), (1, 6) are on this line, so giving a vertical line which goes through the x axis at the point −1. Now look at point E: it is 4 squares away from this line, so when reflected, its will be 4 squares on the other side of x = −1, so B.",
@@ -103,7 +103,7 @@
     {
       "questionId": 78643,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a8c8c6ce-a8de-45dc-aaac-404aafc71796.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Remember, the top number tells you how many to more across in the x direction, and the bottom number tells you how far to move up or down in the y direction.",
         "B": "Not quite. Remember, the top number tells you how many to more across in the x direction, and the bottom number tells you how far to move up or down in the y direction.",
@@ -127,7 +127,7 @@
     {
       "questionId": 141074,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2e652f82-1b5f-4869-a6d5-7614e294c626.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have mixed up the x and y parts. The top number is always tells you about the x direction.",
         "B": "I think you have mixed up the x and y parts. The top number is always tells you about the x direction. Remember positive numbers will move right and up",
@@ -151,7 +151,7 @@
     {
       "questionId": 78645,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/011dd8a7-05fe-459f-a7ba-7afd5c6607e2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The question is looking for a single transformation but you've found two. Which rotation is this equivalent to?",
         "B": "You were nearly there ... you just have to include the centre of rotation for a complete answer.",

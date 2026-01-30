@@ -37,7 +37,7 @@
     {
       "questionId": 104965,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0b150a75-18a1-415b-85ec-9418e0a338aa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have added the 6 and 4 together. We need to multiply the numbers as well as multiplying the letters.",
         "B": "You have multiplied the numbers and the letters correctly, but we need them combined into one term.",
@@ -49,7 +49,7 @@
     {
       "questionId": 104983,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5a52153c-8000-4d3b-8ff3-473489c64206.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have added the 3 and 9 together. We need to multiply the numbers, as well as multiplying the letters.",
         "B": "Given that 3𝑚 = 3 × 𝑚 and 9𝑛 = 9 × 𝑛, and using the fact that multiplication is commutative (so the order doesn't matter), we can write 3𝑚 × 9𝑛 as 3 × 9 × 𝑚 × 𝑛 and then simplify to get 27𝑚𝑛",
@@ -85,7 +85,7 @@
     {
       "questionId": 104974,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1cf5024b-2ac0-437d-bcca-f7bcfd3bc2db.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Nearly! I think you have missed one part. Take time to focus first on your numbers, then on the letter a, then on the letter b.",
         "B": "Nearly! I think you have missed one part. Take time to focus first on your numbers, then on the letter a, then on the letter b",
@@ -121,7 +121,7 @@
     {
       "questionId": 104994,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3211d56b-fc90-414d-9297-7abd4d018cd5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have cubed the p, but forgotten about the 2. As the 2 is in the brackets, it also needs to be cubed.",
         "B": "You have cubed the letter p, but you have multiplied the 2 by 3. We need to cube the 2.",
@@ -133,7 +133,7 @@
     {
       "questionId": 104977,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b2fdfcb3-8932-4141-aa34-931f14396b3b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Nearly! You have correctly squared the coefficient (3), but made a mistake with the powers. What is our rule for calculating a power of a power?",
         "B": "Everything inside the brackets is squared, or multiplied by itself, so another way of writing this is 3𝑎³ × 3𝑎³ = 3 × 𝑎 × 𝑎 × 𝑎 × 3 × 𝑎 × 𝑎 × 𝑎. Remembering that multiplication is commutative (the order doesn't matter), we can write this as 3 × 3 × 𝑎 × 𝑎 × 𝑎 × 𝑎 × 𝑎 × 𝑎 which simplifies to 9𝑎⁶, answer B.",
@@ -145,7 +145,7 @@
     {
       "questionId": 104995,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e4ae34e2-1ca0-422b-a93d-36b67c03fbe6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. We need to cube the coefficient (2) and then use our laws of indices to simplify the letter part. What is our rule for calculating a power of a power?",
         "B": "Nearly! You have correctly cubed the coefficient (2), but made a mistake with the powers. What is our rule for calculating a power of a power?",

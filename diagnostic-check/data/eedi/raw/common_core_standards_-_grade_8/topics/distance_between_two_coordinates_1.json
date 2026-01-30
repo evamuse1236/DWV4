@@ -25,7 +25,7 @@
     {
       "questionId": 107757,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a08d3c57-e902-41f0-87e1-ad27f0c81dda.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, think about if a grid was drawn for the graph, what triangle could use the lines and squares on the grid to help find the distance?",
         "B": "We use a right-angled triangle and Pythagoras’ theorem to find the distance.",
@@ -37,7 +37,7 @@
     {
       "questionId": 107768,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f3668bb7-12b2-4d16-b185-e37830c5ceee.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, think about if a grid was drawn for the graph, what triangle could use the lines and squares on the grid to help find the distance?",
         "B": "Not quite, think about if a grid was drawn for the graph, what triangle could use the lines and squares on the grid to help find the distance?",
@@ -49,7 +49,7 @@
     {
       "questionId": 107758,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0f48ac7e-6849-4188-940c-9d993a545678.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've added the two y-coordinates, rather than finding the distance between them",
         "B": "To find the height of the triangle we take the difference of the 𝑦 coordinates, which is 10 – 2 = 8",
@@ -61,7 +61,7 @@
     {
       "questionId": 107769,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/925e7372-4393-45ba-8966-0ddba1be4cb5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've found the width of the triangle, remember the y-coordinates are the second number in the brackets: (x, y)",
         "B": "I think you've added the two y-coordinates, rather than finding the distance between them",
@@ -73,7 +73,7 @@
     {
       "questionId": 107759,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3163d052-f09c-477e-becb-9c0d6ddeed24.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, this triangle doesn't start from 0 on the x-axis",
         "B": "I think you've found the height of the triangle, remember the x-coordinates are the first number in the brackets: (x, y)",
@@ -97,7 +97,7 @@
     {
       "questionId": 107760,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/36143f30-d026-4244-95b0-56bea1ab7cba.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is the formula to find the midpoint",
         "B": "This is the formula for the area of a triangle",
@@ -109,7 +109,7 @@
     {
       "questionId": 107771,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ec57e590-97f1-4653-aefe-05a602b74caa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is the formula to find the midpoint",
         "B": "This is the formula for the area of a triangle",
@@ -121,7 +121,7 @@
     {
       "questionId": 107761,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/184dcc1c-6b8b-49de-a37d-1be8dbf9058b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've found the height of the triangle, remember the x-coordinates are the first number in the brackets: (x, y)",
         "B": "To find the width of the triangle we take the difference of the 𝑥 coordinates, which is 4 – (−7) = 4 + 7 = 11",
@@ -133,7 +133,7 @@
     {
       "questionId": 107772,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/773a29a9-3929-4cb0-b716-1a631eaf79b0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you've added the two x-coordinates, rather than finding the distance between them",
         "B": "Not quite, this triangle doesn't start from 0 on the x-axis",

@@ -25,7 +25,7 @@
     {
       "questionId": 158058,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0e0848c2-5473-475b-85b7-70c28aa8992c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This would be the value 0.1 where would 0.2 be?",
         "B": "The number line is 1 split into 10 equal parts so each space is worth 0.1. To find where 0.2 is on the numberline, you need to count 2 spaces along from 0 so B is the correct answer.",
@@ -37,7 +37,7 @@
     {
       "questionId": 158225,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d6808bd3-b345-40fe-b09a-18c9b2fb817c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This would be the value 0.1 where would 0.4 be?",
         "B": "This would be the value 0.2 where would 0.4 be?",
@@ -49,7 +49,7 @@
     {
       "questionId": 158059,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1fccaef2-5c20-417c-a9e7-f5d4e22173cd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This would be 0.1. If each space is worth 0.1, where is 0.7?",
         "B": "This would be 0.5 We are looking for 0.7...",
@@ -61,7 +61,7 @@
     {
       "questionId": 158226,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d31ec151-83d3-414d-8733-8c9a97eaf466.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This would be 0.3. If each space is worth 0.1, where is 0.8?",
         "B": "The number line is 2 split into 20 equal parts, 2 ÷ 20 = 0.1 so each space is worth 0.1. We are looking for 0.8 so we need to count 8 spaces from 0 which is letter B",
@@ -73,7 +73,7 @@
     {
       "questionId": 158060,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c7dc20cb-8f1f-4acb-af20-fe7d3480f020.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This would be 0.53. Each space is worth 0.01 so where would 0.59 be?",
         "B": "This would be 0.55. Each space is worth 0.01 so where would 0.59 be?",
@@ -97,7 +97,7 @@
     {
       "questionId": 158061,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fead5b8d-8589-4147-9cc7-8ceeccc8c562.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This would be 0.04. Each space is worth 0.01 so where would 0.14 be?",
         "B": "The number line is 0.2 split into 20 equal parts, 0.2 ÷ 20 = 0.01 so each space is worth 0.01. We are looking for 0.14 so we need to count 14 spaces from 0 which is letter B",
@@ -109,7 +109,7 @@
     {
       "questionId": 158228,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/89edcdd6-3ef7-46fc-a97a-0f4e0a98e149.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This would be 0.14. Each space is worth 0.01 so where would 0.28 be?",
         "B": "This would be 0.18. Each space is worth 0.01 so where would 0.28 be?",
@@ -133,7 +133,7 @@
     {
       "questionId": 158229,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/743a4b12-ddd7-4dd4-bb85-1761b84a79f2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This would be 0.63. Each space is worth 0.01 where would 0.73 be?",
         "B": "This would be 0.7. Each space is worth 0.01 where would 0.73 be?",

@@ -49,7 +49,7 @@
     {
       "questionId": 110272,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6213b03-aaa9-49b8-aff1-58bf66f62086.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have tried to convert the units to minutes. But we need miles per hour and the time is given in hours so we don't need to convert the time.",
         "B": "We have speed = distance ÷ time, and so we have 100 ÷ 2",
@@ -61,7 +61,7 @@
     {
       "questionId": 110267,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/164cb88d-f1cd-40a1-bd80-d784e4f4188d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you have given the distance after 6 seconds. We need to calculate the gradient of the line.",
         "B": "To find the speed we find the gradient of the line. This will involve a division.",
@@ -85,7 +85,7 @@
     {
       "questionId": 129066,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d33816b5-7732-497e-8c2e-cae0865a6ffb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. You may have subtracted 1 from 4 to get 3 or looked at the plain flour instead of ground almonds. We need to make sure we are looking at the quantity of ground almonds. What do we divide by to get the amount for 1 person?",
         "B": "The recipe makes enough for 4 people, but we only want enough for 1 person. To get from 4 down to 1, we need to divide by 4. 60g of almonds divided by 4 gives us 15g of ground almonds.",
@@ -97,7 +97,7 @@
     {
       "questionId": 129206,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5a00f373-2639-4471-ab54-5006386f9970.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have subtracted 3g because we have subtracted 3 people, but if we need 90g of sugar for 4 people, we can't just need 1g per person. What do we have to divide 4 by to get down to 1?",
         "B": "I think you have found the right scale factor (4), but you have multiplied rather than divided. The recipe gives us the quantities for 4 people. Are we expecting to need more sugar for just 1 person?",
@@ -121,7 +121,7 @@
     {
       "questionId": 129210,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f72c4330-73dd-4c53-9c49-a7bde9dd3a19.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "16 divided by 30g works out how many gingerbread men can be made with 1g of sugar. This is not quite what we want.",
         "B": "We will need the same proportion of ingredients for each gingerbread man. When we are dealing with proportion, we should only use multiplication and division.",
@@ -133,7 +133,7 @@
     {
       "questionId": 135046,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d3dd3cc-c016-4cc2-b6e6-1c3ae9d22c89.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost. Try substituting G = 1 and P = 5 into both equations to see whether they are correct.",
         "B": "Almost. Try substituting G = 1 and P = 5 into both equations to see whether they are correct.",
@@ -145,7 +145,7 @@
     {
       "questionId": 135066,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/40d637ad-ee59-47c1-b25c-a571a04c84e8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Try substituting W = 1 and B = 6 into both equations to see whether they are correct.",
         "B": "Not quite. Try substituting W = 1 and B = 6 into both equations to see whether they are correct.",

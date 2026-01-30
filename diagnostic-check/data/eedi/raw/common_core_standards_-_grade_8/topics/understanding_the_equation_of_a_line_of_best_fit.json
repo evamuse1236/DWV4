@@ -19,7 +19,7 @@
     {
       "questionId": 166875,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4d2e7a8f-f678-4a83-a6f8-5f821f4504ac.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! I think you may have forgotten about the constant in our equation. Remember, the equation of a straight line is 𝑦 = 𝑚𝑥 + 𝑐, where 𝑚 is the gradient and 𝑐 is the 𝑦-intercept.",
         "B": "Looking a the labels on our 𝑥 and 𝑦 axes we see that 𝑥 represents the age in years and 𝑦 represents the height in metres. That means the gradient 0.05, which can be written as 0.05/1 represents the rate of growth: 0.05 metres grown every year.",
@@ -31,7 +31,7 @@
     {
       "questionId": 167125,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d73c3a6b-e1e7-4ec3-8dda-8c0151f85216.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! I think you may have forgotten about the constant in our equation. Remember, the equation of a straight line is 𝑦 = 𝑚𝑥 + 𝑐, where 𝑚 is the gradient and 𝑐 is the 𝑦-intercept.",
         "B": "Close! I think you may have mixed up the 𝑦-intercept with the gradient. Remember, the equation of a straight line is 𝑦 = 𝑚𝑥 + 𝑐, where 𝑚 is the gradient and 𝑐 is the 𝑦-intercept.",
@@ -43,7 +43,7 @@
     {
       "questionId": 166876,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2ab68c9f-7068-4720-91f0-530aaa3765ee.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You may have assumed that the line of best fit begins after 1 lesson. Try placing the point (0,9) on the graph and interpreting what it means with the labels...",
         "B": "Looking a the labels on our 𝑥 and 𝑦 axes we see that 𝑥 represents the number of lessons taken and 𝑦 represents the number of minor errors. That means (0,9) represents that we would expect 9 minor errors with 0 lessons.",
@@ -55,7 +55,7 @@
     {
       "questionId": 167126,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ebc26197-b864-4180-8ecd-fb429df89011.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You may have confused the wording of this gradient. This isn't the number of errors after 1 lesson, but instead for every 1 lesson. Which is the better phrasing to represent this?",
         "B": "I think you may have mixed up the gradient with the 𝑦-intercept. Remember that gradients are written in the form 𝑦/𝑥, as that can help us here...",
@@ -91,7 +91,7 @@
     {
       "questionId": 166878,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/90995396-970a-4418-b0f9-2b61fd19dcc6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "6.489 represents the gradient, or percentage increase per hour of study in our line of best fit. What number represents the 𝑦-intercept, or predicted score for someone who studied 0 hours?",
         "B": "Since 𝑡 represents the number of hours studied, we can plug in 0 into our equation to find the answer: 𝑝=6.489(0)+34.7. 6.489 times 0 is 0, leaving us with 𝑝=34.7. That means we would predict someone who studied for 0 hours to receive a score of 34.7%.",
@@ -103,7 +103,7 @@
     {
       "questionId": 167128,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1fbbaeaa-1853-4928-a39e-fe1da94b331d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You may have assumed that our line of best fit begins at the point (0,0). Remember that we can plug in values to equations to find information. Where would the value 0 hours go?",
         "B": "Adding -0.75 and 35 would only work if we were looking for the value when 𝑡 = 1. What value of hours should we be plugging in for 𝑡?",
@@ -115,7 +115,7 @@
     {
       "questionId": 166879,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/affa0c31-4edd-4cf7-8d44-fb842a6ae4fa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Although there are points on the scatterplot with values under 43500, we are just looking at the 'predicted' salaries on the line of best fit. These are all above $43500. Have another look at the graph...",
         "B": "The expected starting salary is in fact $43501, shown from the fact that the 𝑦-intercept from the line of best fit is 43501. Have another look at the graph...",
@@ -127,7 +127,7 @@
     {
       "questionId": 167129,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4d053883-4ddd-4a73-b4fc-76470da466e0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Although there is a point on the scatterplot that appears to make this true, we are just looking at the 'predicted' salaries on the line of best fit. This would not be an expected salary of someone working 20 years. Have another look at the graph...",
         "B": "The expected starting salary is in fact $43501, shown from the fact that the 𝑦-intercept from the line of best fit is 43501.",

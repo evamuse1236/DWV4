@@ -43,7 +43,7 @@
     {
       "questionId": 93408,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e06cebf8-f412-4f43-b719-be852380c6f8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "What do you know about corresponding angles on parallel lines? Is 120.001 the same as 120.000?",
         "B": "As the lines aren't quite parallel, they will eventually meet (or \"intersect\").",
@@ -115,7 +115,7 @@
     {
       "questionId": 93414,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b958836b-ec46-4bd9-82b8-3462d3569989.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "What kind of angle is 125? Is it bigger or smaller than a right angle?",
         "B": "Check your subtraction carefully",
@@ -127,7 +127,7 @@
     {
       "questionId": 93429,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/60665c67-a54c-464f-8e00-fc8fe6a7d9e1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "What kind of angle is 79? Is it bigger or smaller than a right angle?",
         "B": "180 − 79 = 101",
@@ -151,7 +151,7 @@
     {
       "questionId": 120837,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cd4f609b-5efe-4bf6-81b3-241419358bf4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Co-interior angles are on the inside of a U shape. Can you use other angle facts to find relationships between the angles?",
         "B": "Co-interior angles are on the inside of a U shape, so they are not co-interior. p is corresponding to the angle next to q, and they would form a straight line. Katie is correct, p + q = 180",

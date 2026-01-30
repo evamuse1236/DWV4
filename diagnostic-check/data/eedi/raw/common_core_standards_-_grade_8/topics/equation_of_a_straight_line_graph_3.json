@@ -43,7 +43,7 @@
     {
       "questionId": 107346,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aa2c1359-57e6-4844-8ded-cd382a2ac681.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Try finding the intercepts to see whether they cross the axes in positive or negative positions",
         "B": "Not quite. Try finding the intercepts to see whether they cross the axes in positive or negative positions",
@@ -55,7 +55,7 @@
     {
       "questionId": 107366,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/756d9ad5-b375-449f-a145-0c3cef12deed.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Try finding the intercepts to see whether they cross the axes in positive or negative positions",
         "B": "Finding the x intercept by making y = 0 we have x =5. Similarly finding the y intercept we make x = 0, giving y = -4.The only line with a positive x intercept and negative x intercept is B",
@@ -67,7 +67,7 @@
     {
       "questionId": 107347,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c77c9026-28b6-441a-8ab4-9e1c05fc4d22.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have used the coefficient of x. Remember we need the equation in the form y = mx + c before we use the coefficient of x for the gradient. Can we rearrange this equation so it is in the form y = mx + c?",
         "B": "Not quite, we have made the correct step for rearranging the equation to be in the form y = mx + c, however we still have 3y and so we need to divide by 3 to completely rearrange the equation in the correct form. If this is in the correct form can we now find the coefficient of x?",
@@ -79,7 +79,7 @@
     {
       "questionId": 107367,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/804d4f5c-6bb6-4bcc-a5ae-441073f924c8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have used the coefficient of x. Remember we need the equation in the form y = mx + c before we use the coefficient of x for the gradient. Can we rearrange this equation so it is in the form y = mx + c?",
         "B": "We have successfully rearranged our equation to the form y = mx + c which gave us y = 4x/5 - 4. Comparing this with y = mx + c we can see that m = 4/5 and so this is our gradient,",
@@ -91,7 +91,7 @@
     {
       "questionId": 107348,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/141ad75a-6759-432f-9c24-495467a60d26.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have made the wrong variable 0. Remember the x coordinate = 0 for the y intercept. Substitute this in to find the y intercept.",
         "B": "I think you have found the gradient of the line. Remember the y intercept is when the x coordinate is 0. Try substituting x = 0 into the equation to find y.",
@@ -103,7 +103,7 @@
     {
       "questionId": 107368,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/14e076ac-feec-4181-8625-875e5b2c1077.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Remember the y intercept is when the x coordinate is 0. Try substituting x = 0 into the equation to find y.",
         "B": "I think you have found the gradient of the line. Remember the y intercept is when the x coordinate is 0. Try substituting x = 0 into the equation to find y.",
@@ -115,7 +115,7 @@
     {
       "questionId": 107349,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f27a171d-0e04-408a-a2ae-da398d02b0d4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Remember we are given our coordinates in (x, y). So we have our equation 5x + 3y = 15, and we need to substitute in the value for x and y to see if they make the equation correct. If they do the point is on the line",
         "B": "Not quite. Remember we are given our coordinates in (x, y). So we have our equation 5x + 3y = 15, and we need to substitute in the value for x and y to see if they make the equation correct. If they do the point is on the line",
@@ -127,7 +127,7 @@
     {
       "questionId": 107369,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/505c7828-4ae5-4ea3-b315-af11b03612ad.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Remember we are given our coordinates in (x, y). So we have our equation 4x-5y = 20, and we need to substitute in the value for x and y to see if they make the equation correct. If they do the point is on the line",
         "B": "Not quite. Remember we are given our coordinates in (x, y). So we have our equation 4x-5y = 20, and we need to substitute in the value for x and y to see if they make the equation correct. If they do the point is on the line",
@@ -151,7 +151,7 @@
     {
       "questionId": 107370,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fd617edc-5837-41da-b709-635d01b6f27d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have used the coefficient of x. We are trying to find the x intercept, so we know that the y coordinate of this point is 0. You can substitute this into the equation and find the x coordinate.",
         "B": "Because the point Q lies on the axis we know it has the coordinates (x, 0) and we are given the equation for the line 4x - 5y = 20. We can substitute the y value into the equation and so have 4x - 5(0) = 20. Solving this equation for x we have 4x = 20, where x =5 and so the coordinate is (5, 0)",

@@ -49,7 +49,7 @@
     {
       "questionId": 158773,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2ca02e7b-a5bc-40a6-aa87-f1f1d52632a8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Close, but double check the place value of the digits. We are subtracting 3 hundreds, 6 tens, and 2 ones.",
         "B": "Close, but all these jumps are in the same direction so the total subtraction will be 3 hundreds, 6 tens and 2 ones. What does that add up to?",
@@ -85,7 +85,7 @@
     {
       "questionId": 158973,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dd61c776-7455-42c9-8f33-ad7046d49353.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you subtracted these numbers in your head and found the ones digit by doing 4 - 0 instead of 0 - 4. Try using the number line and subtracting 3 hundreds, then 2 tens, then 4 ones.",
         "B": "Careful that you don't include the starting number when you are counting back. For example, when we subtract 300 from 740 we need to count 640, 540, 440, instead of 740, 640, 540.",
@@ -97,7 +97,7 @@
     {
       "questionId": 158775,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8645b9fe-16db-47a2-8452-4d7aef2ce13c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost, it looks like you subtracted 200 which is very close to 198, but then what do we need to do to subtract exactly 198?",
         "B": "One method of subtracting 198 is to subtract 200 then add 2, because you want to subtract 2 less than 200. 536 - 200 = 336. 336 + 2 = 338.",
@@ -109,7 +109,7 @@
     {
       "questionId": 158974,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/481828db-5edb-4c93-8252-9dd667b48700.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost, it looks like you subtracted 300 and then subtracted another 3. But that would mean you have subtracted 303 in total. How should we change the answer to subtract 3 less than 300, instead of 3 more than 300?",
         "B": "Almost, it looks like you subtracted 300 which is very close to 297, but then what do we need to do to subtract exactly 297?",
@@ -121,7 +121,7 @@
     {
       "questionId": 158776,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a3a43bb6-4a17-4bbc-8b82-d55cdcae155b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This number line finds the difference between 175 and 432, which is one way of showing subtraction. Try adding up the total jumps on each other number line to see which ones take away 175 in total.",
         "B": "This number line shows subtracting 200 and then adding 25. 175 is 25 less than 200, so this number line does show 432 - 175.",

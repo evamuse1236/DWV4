@@ -25,7 +25,7 @@
     {
       "questionId": 143728,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ffae8d89-e121-4d9c-b8ec-cc99159dba0a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, I think you have thought the number line is between 0 and 10. Double check the number line again.",
         "B": "Nearly! I think you have miscounted. Double check the number line again.",
@@ -37,7 +37,7 @@
     {
       "questionId": 143748,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a35158cd-da40-49c1-baaa-3cfefd3052e2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, I think you have thought the number line is between 0 and 10. Double check the number line again. You answer should be less than one.",
         "B": "Each mark on the number line represents 0.1. This is 6 marks over from zero, and so is the number 0.6.",
@@ -49,7 +49,7 @@
     {
       "questionId": 143729,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e8e32314-f7b1-4bc5-93de-d64a62dc70be.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, I think you thought the number lines were going up in 0.1s. The 1 has been divided into 5 parts, how much is each part?",
         "B": "Not quite, this arrow is not pointing to the middle of the number line. Try and see what each 'jump' is worth on the number line.",
@@ -73,7 +73,7 @@
     {
       "questionId": 143730,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ba77232f-abb5-4bbf-8d60-f54529ac31b5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, I think you thought the number lines were going up in 0.1s. The 2 has been divided into 10 parts, how much is each part?",
         "B": "Not quite, I think you counted back 0.1 from the middle. The 2 has been divided into 10 parts, how much is each part?",
@@ -97,7 +97,7 @@
     {
       "questionId": 143731,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f529dee8-4368-4625-b178-80fb28feb4e7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, double check again what each 'jump' on the number line is worth.",
         "B": "Not quite, I think you thought the number lines were going up in 0.2s. The 2 has been divided into 8 parts, how much is each part?",
@@ -109,7 +109,7 @@
     {
       "questionId": 143751,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/42a9eff4-c923-4d30-a827-38495c5fe74c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, I think you thought the number lines were going up in 0.1s. The 2 has been divided into 8 parts, how much is each part?",
         "B": "Each jump on this number line is worth 2/8 = 0.25.The arrow is 2 jumps back from 2, so it is 1.5",
@@ -121,7 +121,7 @@
     {
       "questionId": 143732,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eaf99114-dcb5-4ce8-8202-dbffd03ba0d4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Nearly! This is to the left of zero, so must be a negative value.",
         "B": "Not quite, double check again what each 'jump' on the number line is worth. How can you go from 0 to 1 in 5 jumps?",
@@ -133,7 +133,7 @@
     {
       "questionId": 143752,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a8b77900-8157-4135-8f83-392d25130e59.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, double check again what each 'jump' on the number line is worth. How can you go from 0 to 1 in 4 jumps?",
         "B": "Each jump on the number line is worth 0.25. This is 0.25 to the left of zero, and so is the number -0.25.",

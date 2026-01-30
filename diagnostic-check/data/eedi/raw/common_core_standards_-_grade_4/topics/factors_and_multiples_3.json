@@ -43,7 +43,7 @@
     {
       "questionId": 76704,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7b964975-b631-4dd7-810f-7033968f93dc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, 1 is a factor of 18 and 54 but it is not prime. A prime number is divisible by only two numbers: itself and 1. The number 1 is only divisible by one number: 1.",
         "B": "2 is prime as it is divisible only by itself and 1. 2 is also a factor of 18 and 54 because we can divide both of those numbers by 2 to give whole numbers.",
@@ -55,7 +55,7 @@
     {
       "questionId": 78772,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e57c77a5-ce25-41f4-a794-385b7d2b324d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, 1 is a factor of 18 and 27 but it is not prime. A prime number is divisible by only two numbers: itself and 1. The number 1 is only divisible by one number: 1.",
         "B": "Almost! 2 is a prime number and a factor of 18! But it's not a factor of 27 because we cannot divide 27 by 2 to give a whole number.",
@@ -79,7 +79,7 @@
     {
       "questionId": 89817,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e089fb6d-99b0-4ca6-9aa4-90f8c877e8ef.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "If 12 is a factor of a number, then that number is divisible by 12. 24 and 36 are divisible by 12, are 5 and 7 both factors of 24 and 36?",
         "B": "If 12 is a factor of a number, then that number is divisible by 12. We can write 12 = 3 ✕ 4, so if a number is divisible by 12 then it is divisible by (3 ✕ 4). Or we could think of this as saying it is divisible by 3 and then 4. So if 12 is a factor then 3 and 4 are also factor. Check this for yourself using some numbers with 12 as a factor (24, 36, 48).",
@@ -91,7 +91,7 @@
     {
       "questionId": 89808,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea097c45-40fb-4aeb-a5fe-6db8ee257944.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. 3 is a factor of 60 but it is not a multiple of 6. The multiples of 6 are the numbers in the 6 times table.",
         "B": "The factors of 60 are the numbers that 60 can be divided by to give a whole number. 60 ÷ 12 = 5. The multiples of 6 are the numbers in the 6 times table. 12 = 6 ✕ 2",
@@ -103,7 +103,7 @@
     {
       "questionId": 89820,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e303b333-0bc9-435f-8d3d-28ab92b65126.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. 36 is a multiple of 9 but it is not a factor of 90. The factors of 90 are the numbers that 90 can be divided by to give a whole number. 90 ÷ 36 = 2.5.",
         "B": "Not quite. 30 is a factor of 90 but it is not a multiple of 9. The multiples of 9 are the numbers in the 9 times table.",
@@ -115,7 +115,7 @@
     {
       "questionId": 89809,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8aca14e9-fcf5-44b6-b6fe-4dfe8c4e7d9f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "1 is a common factor but not a common multiple. Try writing out the 5 and 6 times table and look for a number that is in both lists.",
         "B": "It look like you just added the numbers together. Try writing out the 5 and 6 times table and look for a number that is in both lists.",
@@ -139,7 +139,7 @@
     {
       "questionId": 89810,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fb489385-75ad-451d-876c-814028f2f98c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "A common multiple of 5 and 4 is 5 ✕ 4 = 20. Is this a multiple of 9? What if we multiplied this common multiple by 9? Would that now be a multiple of 5, 4 and 9?",
         "B": "A common multiple of 5 and 4 is 5 ✕ 4 = 20. This is not a multiple of 9. But, if we multiplied this common multiple by 9 we get 5 ✕ 4 ✕ 9 = 180. 180 is a multiple of 5, 4 and 9. So this is sometimes true.",

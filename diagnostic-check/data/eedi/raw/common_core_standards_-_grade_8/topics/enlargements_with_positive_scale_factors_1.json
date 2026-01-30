@@ -31,7 +31,7 @@
     {
       "questionId": 79749,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dcbd1cab-208f-436f-8534-e1157a338950.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You've worked out the scale factor if shape B is enlarged to get shape A. We want the scale factor when shape A is enlarged to get shape B.",
         "B": "The height of shape A is 1 and the height of shape B is 3 so we can see that shape B is three times as big as shape A, so the scale factor is 3.",
@@ -43,7 +43,7 @@
     {
       "questionId": 79839,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a5127dd7-ec9a-48ea-aa72-2156c1b3ee8f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Think about the length of the sides on shape A. What have they been multiplied by to get the lengths of the sides on Shape B?",
         "B": "I think you might be thinking about the area here. Instead, think about what we need to multiply a side length on shape A by to get the matching side length on shape B.",
@@ -55,7 +55,7 @@
     {
       "questionId": 79750,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/66d3c85f-b6f1-4d91-8028-7c9e161cb58f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've counted 3 along the x axis from the origin (0,0). Remember the red vertex should be 3 times further away from the centre of enlargement at (0,0) than it was to begin with.",
         "B": "Point B is twice as far from the centre of enlargement at the origin (0,0) as the red vertex. But remember the scale factor is 3 so how many times further away do we need the point to be?",
@@ -67,7 +67,7 @@
     {
       "questionId": 79840,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/badcccfc-5351-4ee9-94e2-32fe26c0aadc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have counted the squares in the wrong directions. To get from the centre of enlargement at the origin (0,0) to the red vertex, we go 4 squares across and 2 squares up. We need to make sure we do the same again to double the distance from the centre of enlargement.",
         "B": "I think you counted squares across and up from the red vertex. Remember to always start counting from centre of enlargement, in this case the origin (0,0).",
@@ -79,7 +79,7 @@
     {
       "questionId": 79751,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0596a0b7-fefb-41ad-a9f5-86f878e62adc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've counted 1.5 squares in each direction (x and y) from the origin (0,0). Remember the green vertex needs to be 1.5 times further away from the centre of enlargement (0,0) than it was to begin with.",
         "B": "The green vertex is 2 squares right and 2 squares up from the centre of enlargement (0,0). When multiplied by 1.5, this point will be 1.5 x 2 = 3 squares right and 1.5 x 2 = 3 squares up from (0,0) at (3,3), which is point B.",
@@ -103,7 +103,7 @@
     {
       "questionId": 79752,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0cdd0bdf-a000-4a0d-baf1-129a95b2a030.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have miscounted the number of squares. Remember the scale factor is 2 and we need to measure from the point marked X.",
         "B": "Point B is three times as far from the centre of enlargement X as the vertex at (3,4). But remember the scale factor is 2 so how far away from X do we need the point to be?",
@@ -115,7 +115,7 @@
     {
       "questionId": 79842,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8158f5c9-f4b5-429f-97e9-4919b42208dc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've enlarged the wrong vertex. (5,4) is at the top right of the triangle.",
         "B": "The vertex at (5,4) is 2 squares right and 1 square down from the centre of enlargement X. When multiplied by a scale factor of 2, the new vertex will be 2 x 2 = 4 squares right and 2 x 1 = 2 squares down from X at (7,3), which is point B.",

@@ -31,7 +31,7 @@
     {
       "questionId": 102175,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/36fd08a8-1ab9-4709-911b-788ba8625977.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Are the units (ones) of both numbers in the same column?",
         "B": "Not quite. Are the units (ones) of both numbers in the same column? Also 809 is not the same as 89.",
@@ -55,7 +55,7 @@
     {
       "questionId": 102176,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2df54d37-ef32-4665-ae46-b16cb35bad34.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, we can't put two digits in a single column. Also, check if anything else has been carried up from the units column.",
         "B": "Not quite, just check whether anything has been carried up from the units column",
@@ -67,7 +67,7 @@
     {
       "questionId": 102186,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0c961de4-e34a-45de-ab0f-e170d33336b4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, we can't put two digits in a single column. Also, check if anything else has been carried up from the units column.",
         "B": "Not quite, just check whether anything has been carried up from the units column.",
@@ -79,7 +79,7 @@
     {
       "questionId": 102177,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cf0c67ec-e2eb-4518-86be-d1e504107587.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you added the 2 and 3, together with the 1 that is carried over from the previous column. But we need to work backwards from the 3 in the answer to work out what was added to get that 3.",
         "B": "It looks like you added the 2 and 3. But we need to work backwards from the 3 in the answer to work out what was added to get that 3.",
@@ -91,7 +91,7 @@
     {
       "questionId": 102187,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0b14c88c-9633-4023-82e5-3de04b346dca.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you added the 7 and 9, together with the 1 that is carried over from the previous column. But we need to work backwards from the 9 in the answer to work out what was added to get that 9.",
         "B": "It looks like you added the 7 and 9. But we need to work backwards from the 9 in the answer to work out what was added to get that 9.",
@@ -115,7 +115,7 @@
     {
       "questionId": 102188,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/de0162ff-d115-48e7-bfeb-504f8b940e11.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you added the 4 and 6. But we need to subtract and we need to start from the units column on the right to see if we need to borrow anything from the tens column first.",
         "B": "Starting in the units column on the right: 1 − 8 can't be done, so we need to use a ten from the tens column to do 11 − 8 = 3. The second column now has 3 in the top row and 7 beneath. We can't work out 3 − 7, so we use a 1 from the hundreds column to give 13 − 7 = 6, so ★ = 6",
@@ -139,7 +139,7 @@
     {
       "questionId": 102189,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/90a30215-f0a8-4776-a51d-0e1de56845b1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you might have done 4 + 6 to get 10 here. But we can't switch the numbers around like that - we have to take the number in the second row away from the number in the first row (so we need to do 4 − ★ = 6). If the subtraction is not possible, we can take some more from the next column.",
         "B": "I think you might have done 6 - 2 to get 4 here. But we can't switch the numbers around like that - we have to take the number in the second row away from the number in the first row (so we need to do 4 − ★ = 6). If the subtraction is not possible, we can take some more from the next column.",

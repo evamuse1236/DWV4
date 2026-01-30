@@ -37,7 +37,7 @@
     {
       "questionId": 132157,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/258217f1-8463-4343-b821-bdab6befd583.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have worked out the perimeter of the rectangle but we need an expression for the area. How do we find the area of a rectangle?",
         "B": "To find the area of a rectangle, we multiply the length by the width. So we need to multiply 5𝑥 + 3 by 4. 4 lots of 5𝑥 is 20𝑥 and 4 lots of 3 is 12. So the area is 20𝑥 + 12.",
@@ -49,7 +49,7 @@
     {
       "questionId": 132075,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d5731f27-4d3e-40ac-a2e6-9cf85d97d6ee.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have worked out the perimeter of the rectangle but we need an expression for the area. How do we find the area of a rectangle?",
         "B": "I think you have worked out the area but then tried to add the letters and numbers together. Don't forget that we can add terms with the same letters (for example 3𝑥 + 2𝑥 = 5𝑥) but we can't add letters to numbers (for example, 3𝑥 + 2 can't be simplified).",
@@ -61,7 +61,7 @@
     {
       "questionId": 132158,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0c67f57e-bb74-4af6-991e-8045c8e84df9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have realised that we have four equal sides so we need to multiply by 4. You have multiplied the '+ 3' by 4 but we also need to multiply the '𝑥' by 4. How do we write that?",
         "B": "We need to add all the sides to find the perimeter. Check carefully - did you miss any?",
@@ -85,7 +85,7 @@
     {
       "questionId": 132159,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/42efbf44-abdc-4e6c-960a-4f28736af6a9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have added up all the side lengths in the diagram but we only need to find one missing side length. Looking at the shape, would you expect the missing side length to be more or less than the opposite side length of 3𝑥 + 4?",
         "B": "I think you have started with 3𝑥 + 4 and then subtracted all the other side lengths. We do need to do a subtraction but which side length do we need to subtract from 3𝑥 + 4?",
@@ -97,7 +97,7 @@
     {
       "questionId": 132073,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e2cb190b-4851-44d1-aa27-4a3855214106.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost. I think you have correctly tried to subtract 𝑥 + 4 from 3𝑥 + 4. Remember that 𝑥 just means one lot of 𝑥 or 1𝑥. So what is 3𝑥 – 1𝑥?",
         "B": "Looking at the horizontal sides, we have 3𝑥 + 4, 𝑥 + 4 and our missing side length. If we imagine sliding the side lengths up, we can see that our missing side and 𝑥 + 4 together will be the same length as 3𝑥 + 4. So if we subtract 𝑥 + 4 from 3𝑥 + 4, we get the missing side length of 2𝑥.",
@@ -145,7 +145,7 @@
     {
       "questionId": 132077,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f54b1c42-7327-4038-9001-eca7625d54ac.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have tried to simplify the side lengths by subtracting the numbers from the letters. Don't forget that we can subtract terms with the same letters (for example 3𝑥 – 𝑥 = 2𝑥) but we can't subtract letters from numbers (for example, 3𝑥 – 1 can't be simplified).",
         "B": "I think you have multiplied 3𝑥 – 1 by 7 but we don't multiply the sides to find perimeter. Perimeter is the total distance around the outside of the shape. What operation do we use to find the 'total'?",

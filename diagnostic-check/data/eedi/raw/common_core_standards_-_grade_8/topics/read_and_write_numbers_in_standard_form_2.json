@@ -49,7 +49,7 @@
     {
       "questionId": 78428,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eac0db75-1c7b-458b-b4ef-244c0449371c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, It looks like you have picked the number with the largest base number. Look at the powers to see what place value column the number is in",
         "B": "I think you have picked the number with the most digits. This does not mean the number is bigger. Look at the power instead, this tells us the place value of the number.",
@@ -85,7 +85,7 @@
     {
       "questionId": 78137,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/379b303c-6e37-41be-ba8a-9df62d51ae2b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. To compare, convert them all into normal numbers first",
         "B": "I think you have missed the negative index value. This will have a smaller value than positive indices. For an easier comparison, convert all numbers into normal numbers",
@@ -97,7 +97,7 @@
     {
       "questionId": 78430,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aa5eeb96-a8f7-4fc7-a2cb-4bfe1928391e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. It looks like you have missed the negative power. This will be the smallest number.",
         "B": "Not quite, try converting all the numbers into normal numbers and then order them",
@@ -109,7 +109,7 @@
     {
       "questionId": 103988,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/786d16bc-349b-4668-8949-8c9eea37df15.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have reduced the value of the power because 40 has been divided by 10. The two sides are equal, so how can we cancel out a divide by 10?",
         "B": "The power of 10 shouldn't remain the same if the base number has changed. 40 has been divided by 10, so how can we cancel out a divide by 10",
@@ -145,7 +145,7 @@
     {
       "questionId": 103995,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dc5d021e-7c42-4621-9b31-b7f3889c9001.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have increased the value of the power because 0.02 has been multiplied by 100. The two sides are equal, so how can we cancel out a multiply by 100?",
         "B": "Multiplying by a positive power of 10 moves the digits to the left according to the index value. 0.02 will move 8 times to the left. 2 is one hundred times bigger than 0.02, so its digits will move to the left, but 2 times less, and so ★ = 6.",

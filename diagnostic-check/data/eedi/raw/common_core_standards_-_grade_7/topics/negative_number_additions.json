@@ -49,7 +49,7 @@
     {
       "questionId": 173944,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2ce2fdad-01f6-4cca-b12b-9e64c7bf3dc6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you might have calculated 4 - 1 = 3. Remember the calculation is 1 + (-4), so you need to start at 1 and count backwards 4 places.",
         "B": "The calculation is 1 + (-4), which is the same as 1 - 4. Starting at 1 and moving 4 spaces in the negative direction (left) on a number line gets you to -3.",
@@ -61,7 +61,7 @@
     {
       "questionId": 174004,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e7c6b426-b84f-4420-9f1a-4ac2e2c4c917.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you have added 2 and 3 to get 5. Remember that when you add two negative numbers, the result will be even more negative.",
         "B": "The question asks you to move in the negative direction from -2. On a number line, this means moving to the left. It seems you have moved 3 steps to the right, in the positive direction.",
@@ -73,7 +73,7 @@
     {
       "questionId": 173945,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/14eb6c11-c454-43e3-bb8e-992ff08ed839.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It seems you may have calculated -7 - 7. The question is asking for -7 + 7. Adding a positive number means you move to the right on a number line.",
         "B": "Adding a number to its negative counterpart always results in zero. If you start at -7 on a number line and move 7 places to the right, you land on 0.",
@@ -85,7 +85,7 @@
     {
       "questionId": 174005,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9a8b2676-26f7-4cf7-9c13-df5845da2ffe.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Remember that 0 is included when you count on a number line. If you are at -12 and you move 12 places in the positive direction, where do you end up?",
         "B": "It looks like you might have ignored the negative sign and calculated 12 + 12. The first number is -12, so you need to start at that point on the number line.",
@@ -97,7 +97,7 @@
     {
       "questionId": 173946,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fd1f8cf0-3d91-4b26-b93d-84eebc141017.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Check the last calculation: -4 - 2. If you are at -4 on a number line and you subtract 2, you move further to the left. Will the answer be positive or negative?",
         "B": "Let's check each calculation: 4 + (-2) = 2 (positive). -2 + 4 = 2 (positive). -4 - 2 = -6 (negative). Only one calculation gives a negative answer.",
@@ -109,7 +109,7 @@
     {
       "questionId": 174006,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/28e10a4e-19a2-4555-a2ef-412481c0fb01.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Let's look at the first calculation: -3 + -2. If you start at -3 and move 2 in the negative direction, where do you end up? Make sure to check all three calculations carefully.",
         "B": "Let's check each calculation: -3 + -2 = -5 (this is a negative answer) -2 + 3 = 1 (this is a positive answer) 3 + -2 = 1 (this is a positive answer) So, only one of the calculations gives a negative answer.",

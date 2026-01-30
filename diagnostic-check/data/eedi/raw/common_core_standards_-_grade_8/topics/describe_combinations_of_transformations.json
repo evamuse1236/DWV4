@@ -43,7 +43,7 @@
     {
       "questionId": 135738,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/48a51686-5c41-4975-b9a7-68961c2d161f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, I think you have selected a point between the two shapes but it is not the centre. Count how you would get from the suggested centre to P. If you rotated this movement 90° clockwise would it take you to P'?",
         "B": "To go from the centre (3, 5) to P we move 1 right and 3 up. If we rotate this 90° clockwise it would be 1 down and 3 right which does indeed take us to P'.",
@@ -67,7 +67,7 @@
     {
       "questionId": 135739,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a8e828c1-618e-4b39-8312-741fdb9f136a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "90° clockwise would take us back to Shape 1, but what if we kept turning anticlockwise? How far would we have to go to get back to the start?",
         "B": "270° anticlockwise would take us all the way back to Shape 1, but what if we reversed the direction? How far would we have to turn to get back to the start?",
@@ -79,7 +79,7 @@
     {
       "questionId": 135759,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/90af9619-e2a7-4837-8d6c-a0b0f700db34.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "If the shape rotates 90° clockwise and then another 90° clockwise, how far has it gone altogether? Would this take it back to the beginning?",
         "B": "Remember 270° is three quarter turns. If the shape rotates one quarter turn clockwise, then three quarter turns anticlockwise, will it end up back at the beginning?",
@@ -103,7 +103,7 @@
     {
       "questionId": 135760,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5d805427-e058-46a4-92ac-080c83ea36c6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Reflecting in x = 1 would reflect shape P directly to the right, but that won't have the same effect as a 90 degree rotation and a reflection. Try sketching the shape after it has been reflected and rotated, and then trying to get there from shape P.",
         "B": "Remember we're trying to get from P to R, so you need to take into account the reflection too. Try sketching the shape after it has been reflected and rotated, and then trying to get there from shape P.",
@@ -139,7 +139,7 @@
     {
       "questionId": 135742,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/31dc0c4b-5c00-4d42-babe-e33027d85a66.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like your might have skipped the reflection in the middle... make sure you do every transformation.",
         "B": "Double check your centres of rotation, and how far you turned the shape each time. The shape was rotated 90° clockwise, reflected horizontally and rotated 90° clockwise again, it should have ended up with the same orientation (the same way up) as it started.",

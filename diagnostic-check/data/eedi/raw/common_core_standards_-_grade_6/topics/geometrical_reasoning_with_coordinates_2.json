@@ -31,7 +31,7 @@
     {
       "questionId": 97994,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5eabfdd8-2817-4eb7-8033-6fbbfe38990d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have miscounted the horizontal movement. Start at Y and count how many squares to the right you need to move in order to reach Z",
         "B": "I think you have mixed up left and right",
@@ -43,7 +43,7 @@
     {
       "questionId": 98009,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1f1bcc75-7792-4ca9-89f5-e8ebb1aae347.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have miscounted the horizontal movement. Start at V and count how many squares to the left you need to move in order to reach W",
         "B": "The question tells us to start at point V (because this is the point we are moving from). To then get to W, a move of 5 to the left is required, followed by a move of 3 down",
@@ -67,7 +67,7 @@
     {
       "questionId": 98010,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fa64a1d7-bf5e-4277-8bfd-6a6abbcf731d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Try sketching these out on a graph and make sure you start from (3,6)",
         "B": "I think you might have forgotten the negative sign. Try to picture where this coordinate is on a graph",
@@ -79,7 +79,7 @@
     {
       "questionId": 97996,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9004adb5-b3d8-45db-af22-ee6d3f39279e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have looked at the horizontal distance only",
         "B": "I think you have looked at the vertical distance only",
@@ -103,7 +103,7 @@
     {
       "questionId": 97998,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/350b2dc8-a588-4ff5-a801-76bee0628e63.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Parallel refers to 2 lines with the same gradient, that will never meet. Like train tracks.",
         "B": "Not quite. \"Opposite\" is often used to describe vertically opposite angles, not coordinates. There is nothing for these points to be opposite",
@@ -115,7 +115,7 @@
     {
       "questionId": 98013,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/86f4cf63-0423-4355-b1fa-024aca1a5fe3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Parallel refers to 2 lines with the same gradient, that will never meet. Like train tracks. The red line is parallel to the x axis, but not the y axis",
         "B": "Not quite. \"Opposite\" is often used to describe vertically opposite angles, not coordinates. There is nothing for these points to be opposite",
@@ -139,7 +139,7 @@
     {
       "questionId": 98014,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/045ac334-6672-4170-b830-b0579871c3f0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Maybe the negatives have confused you here. Try to imagine how far each coordinate is from the origin. For example, to get from (0,0) to (-5,-2) we must go 5 left and 2 down.",
         "B": "Maybe the negatives have confused you here. Try to imagine how far each coordinate is from the origin. For example, to get from (0,0) to (-5,-2) we must go 5 left and 2 down.",

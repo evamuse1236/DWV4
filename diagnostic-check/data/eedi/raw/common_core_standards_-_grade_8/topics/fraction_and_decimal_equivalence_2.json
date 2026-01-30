@@ -37,7 +37,7 @@
     {
       "questionId": 130074,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bb26751d-e6bd-43aa-85ad-a94eea706a06.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "To convert this to a decimal, we cannot simply put the numbers together. Try thinking about what 1/5 is as a decimal first, and then multiply by 3.",
         "B": "To convert this to a decimal, we cannot simply put the numbers together. Try thinking about what 1/5 is as a decimal first, and then multiply by 3.",
@@ -73,7 +73,7 @@
     {
       "questionId": 130094,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1d6c6494-ed4b-43ed-b910-53391df02341.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "0.12 would be 12/100, but we want 12/25, which will be 4 times larger.",
         "B": "To convert to a decimal, you can't put the numbers together with a decimal point. Try finding 1/25 first.",
@@ -97,7 +97,7 @@
     {
       "questionId": 130095,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/39c72030-6239-4331-bf4d-411ba2603bd0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you've mistaken 1/250 to be 0.003, which is incorrect. Instead, you could find 1/1000 first, and then multiply by 4 to find 1/250.",
         "B": "This would be 97/100, not 97/250.",
@@ -109,7 +109,7 @@
     {
       "questionId": 130077,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/15ac6dcb-a4c0-45a5-9e0c-b07f0223ed14.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Firstly, find 1/40. We can do this by finding 1/4 = 0.25, and then dividing by 10, 0.025. Then we can find 7/40 by multiplying by 7: 0.025x7 = 0.175.",
         "B": "0.7 is 7/10, but we want 7/40.",
@@ -121,7 +121,7 @@
     {
       "questionId": 130096,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/138517e7-7cfb-4d52-915e-ee907a9e9f50.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "0.5 is equal to one half or 5/10, not 5/8",
         "B": "To convert to a decimal, you can't put the numbers together with a decimal point. Try finding 1/8 first or using short division",
@@ -133,7 +133,7 @@
     {
       "questionId": 130078,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8ab8bbc2-a272-4abe-a70e-597ced8f622a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You're very close. The denominator of the fraction is the divisor (the number we are dividing by)",
         "B": "A fraction is not equivalent to subtracting. It relates to \"sharing\". How else can we share something out?",
@@ -145,7 +145,7 @@
     {
       "questionId": 130097,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7ef17c25-c331-425c-a4f0-6498942e3d8c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "A fraction is not equivalent to subtracting. It relates to \"sharing\". How else can we share something out?",
         "B": "You're very close. The denominator of the fraction is the divisor (the number we are dividing by)",

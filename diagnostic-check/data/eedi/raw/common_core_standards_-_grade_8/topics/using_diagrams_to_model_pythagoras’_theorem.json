@@ -19,7 +19,7 @@
     {
       "questionId": 155055,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/970654df-e7b1-48eb-a244-37c75846a1f2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Look carefully at the labels. y is the area of the yellow square and x is the side length of the red square. If a square has a side length of 8, what is its area? If a square has an area of 100, what is its side length?",
         "B": "x is the side length of the red square. We are told the area of this square is 100 cm². To find the side length, we need to square root the area. √100 = 10, therefore x = 10. y is the area of the yellow square. The area can be found by squaring the side length. 8² = 64, so y = 64.",
@@ -31,7 +31,7 @@
     {
       "questionId": 155060,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/144c236d-036e-40a8-994c-fdc16801d3b1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Look carefully at the labels. y is the area of the blue square and x is the side length of the red square. If a square has a side length of 3, what is its area? If a square has an area of 25, what is its side length?",
         "B": "Not quite. I think you doubled rather than squared. y is the area of the blue square. To find the area of a square, we need to square the side length, and squaring means multiplying by itself.",
@@ -43,7 +43,7 @@
     {
       "questionId": 155056,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ca65776a-1f41-4b87-8edc-6b92da5369d7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Think about the area of the squares here. What expression could we use to describe the area of the red square? What is the relationship between the areas of the red, blue and yellow squares?",
         "B": "Not quite. Think about the area of the squares here. What expression could we use to describe the area of the red square? What is the relationship between the areas of the red, blue and yellow squares?",
@@ -67,7 +67,7 @@
     {
       "questionId": 155057,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/664d5bfe-be68-4c59-81a9-8a094a082d45.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have subtracted 64 from 225, but Pythagoras' theorem states that the sum of the squares of the smaller sides will be equal to the square of the longest side. Which are the two smaller squares?",
         "B": "Not quite. Pythagoras' theorem states that the sum of the squares of the smaller sides will be equal to the square of the longest side. What do we get if we add together the area of the two smaller squares shown?",
@@ -79,7 +79,7 @@
     {
       "questionId": 155062,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8f7c1059-fb20-4ef1-ab42-e5079ae7b4bf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you might have used the area of a triangle formula instead. Pythagoras' theorem states that the sum of the squares of the smaller sides will be equal to the square of the longest side. What do we get if we add together the area of the two smaller squares shown?",
         "B": "Pythagoras' theorem states that the sum of the squares of the smaller sides will be equal to the square of the longest side. Therefore 36 + 64 = x so x = 100",
@@ -103,7 +103,7 @@
     {
       "questionId": 155063,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5590f495-523f-46d2-9d01-177859da031f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Pythagoras' theorem states that the sum of the squares of the smaller sides will be equal to the square of the longest side. Can you start by squaring the two shorter sides?",
         "B": "Pythagoras' theorem states that the sum of the squares of the smaller sides will be equal to the square of the longest side. Therefore 9² + 12² = x², simplifying this gives 225 = x², then square rooting both sides gives us x = 15cm",

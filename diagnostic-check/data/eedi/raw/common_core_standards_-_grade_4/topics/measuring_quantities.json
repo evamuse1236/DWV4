@@ -55,7 +55,7 @@
     {
       "questionId": 130103,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/075e2226-fbdc-42b3-82d3-556c128a5c96.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you thought each jump (or interval) was worth 1, and went down 2 jumps from 0. But how much would each jump be if 5 jumps is worth 10?",
         "B": "I think you thought each jump (or interval) was worth 1, and went 3 above -10. But how much would each jump be if 5 jumps is worth 10?",
@@ -79,7 +79,7 @@
     {
       "questionId": 158230,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0b90aae1-f683-4861-bcd2-88ff68dd8ddb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is the length of the part of the ruler that isn't covered by the pencil. Can you find the length of the part of the ruler that IS covered by the pencil?",
         "B": "I think you have forgotten to include part of the pencil. We want the length all the way from the end of the rubber to the tip...",
@@ -91,7 +91,7 @@
     {
       "questionId": 158064,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/45d67a44-9381-48e7-ada5-37d1ae461b88.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "To find how much liquid is in the container we need to read the water level at the front of the container...",
         "B": "We can see from the diagram the water level lies 3 spaces above 50ml. Between 100ml and 50ml there are 5 spaces so each space is worth 10ml. This means the water level lies at 80ml",
@@ -115,7 +115,7 @@
     {
       "questionId": 158065,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3ac5a2dd-082c-413c-a270-540d974a31d4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Each space is not worth 10 mins... If we have 4 spaces between 12pm and 1pm that is 1 hour cut into 4 so how much is each space worth?",
         "B": "This is the total time on the schedule, the question wants the length of the nature documentary...",
@@ -127,7 +127,7 @@
     {
       "questionId": 158232,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/caeeca90-8f1c-4804-8a04-54422d0819a8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is how long the nature documentary lasts, the question wants the length of the news...",
         "B": "Each space is not worth 10 mins... If we have 4 spaces between 12pm and 1pm that is 1 hour cut into 4 so how much is each space worth?",
@@ -151,7 +151,7 @@
     {
       "questionId": 158233,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ec3d12d1-1065-4d30-8b82-e67f6001d54c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The arrow is pointing at the 9th dash but each dash is not worth 100g... We have 1kg split into 20 parts so how much is each part worth?",
         "B": "The scale runs from 0 to 1kg and is split into 20 parts 1 ÷ 20 = 0.05 kg therefore each part is worth 50g. The arrow points to the 9th space along the scale 9 x 50 = 450 so it points to 450g.",

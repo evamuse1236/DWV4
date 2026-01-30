@@ -31,7 +31,7 @@
     {
       "questionId": 166153,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e09f62ba-7f65-4abb-87f4-182f3f004108.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite - it looks like you've found 25% of 48, however the 48 in this question isn't the total amount of snacks, it's the total amount of fruit.",
         "B": "If 25% of campers got a piece of fruit, and that is equivalent to 48 campers, we can multiply by 4 to get 100% and that would give us 192.",
@@ -43,7 +43,7 @@
     {
       "questionId": 166380,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/69ee3082-eaff-49d4-a2c0-9ac60683afae.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you may have multiplied 35 by 20, but we are only trying to find out what 100% would be. What can we multiply 20% by?",
         "B": "Not quite - it looks like you've found 20% of 35, however the 35 in this question isn't the total number of animals, it's only the number of animals who got hay.",
@@ -55,7 +55,7 @@
     {
       "questionId": 166154,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5cc7f129-904d-4031-8e95-d024ae3f068b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you might have subtracted 75 from 5748, however we are trying to find 75% of 5748. Try thinking of how we might find 25% first.",
         "B": "Not quite - it looks like you've found the number of people who did NOT eat a burrito. This question is asking about people who did!",
@@ -91,7 +91,7 @@
     {
       "questionId": 166156,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/83e783f7-2d9b-4da4-88dd-f71c2f248f62.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It seems like you have found 10% of 67, however 67 visitors isn't the total amount of visitors, it is 10% of the total visitors.",
         "B": "Not quite - you've calculated the number of visitors who used skis, but the question is asking what the total number (100%) of people is.",
@@ -115,7 +115,7 @@
     {
       "questionId": 166384,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2ec56edb-ae4f-426d-9565-3ca44d6d24c1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It seems like you have divided 2175 by 8, but that would give us 12.5%, not 8%. Have a think about how you could work out 1%.",
         "B": "To find 1% of 2175, divide it by 100 which would give us 21.75. To find 8%, we then multiply 1% by 8, which would give us 174.",
@@ -127,7 +127,7 @@
     {
       "questionId": 166383,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ad5f914b-302f-4297-b723-a8aea906f50f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite - you've calculated the number of visitors who used lifts, but the question is asking what the total number (100%) of people is.",
         "B": "If we divide 546 by 0.35 (35% as a decimal), that will give us the total (100%) of visitors which is 1560.",
@@ -139,7 +139,7 @@
     {
       "questionId": 166382,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b3e1bb1e-73ed-4c10-8615-bd18a44bfb10.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It seems like you have multiplied the 60 players by 4, however that wouldn't get us to 100%. Have a think about what percentage those 60 players are worth.",
         "B": "It seems like you have multiplied the 15 of 15% by 60, however that wouldn't get us to 100%. Can you think of what to multiply 15% by?",

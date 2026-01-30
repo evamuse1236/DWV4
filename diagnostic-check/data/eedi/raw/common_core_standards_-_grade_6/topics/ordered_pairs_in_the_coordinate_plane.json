@@ -43,7 +43,7 @@
     {
       "questionId": 124913,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b5de08dc-d1d8-4ba7-b829-47bad15c8edb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you have read the values in the wrong order. When reading or plotting coordinates you read from (0,0). Read across first to the left or right and then up or down.",
         "B": "When reading or plotting coordinates you read from (0,0). Read across first to the left or right and then up or down. Looking at the position of the point, it is at −2 on the x axis. 2 to the left from (0,0) and 4 on the y axis, 4 up from (0,0), giving coordinates of (-2, 4).",
@@ -55,7 +55,7 @@
     {
       "questionId": 155252,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c006351f-cb54-4b7b-bf17-ee57730b0bcf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Coordinates will be in the first quadrant if both numbers are positive. Remember we label the quadrants anticockwise starting from the top right.",
         "B": "Not quite. Remember a negative y-coordinate means we move down instead of up.",
@@ -67,7 +67,7 @@
     {
       "questionId": 155256,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/971b7f39-39ba-40fc-969d-715a21b6683f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Coordinates will be in the first quadrant if both numbers are positive. Remember we label the quadrants anticockwise starting from the top right.",
         "B": "Not quite. Remember a negative y-coordinate means we move down instead of up and we label the quadrants anticockwise starting from the top right.",
@@ -91,7 +91,7 @@
     {
       "questionId": 155257,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2cffdf32-ece8-4b61-bb0b-1bd77810f8f4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Reflecting in the x-axis does not switch the x- and y- coordinates. Plot the point on a set of axis. What movement do we need to make to get from the point to the mirror line (the x-axis)? Repeat this on the other side to find the location of the reflected point.",
         "B": "Be careful. Reflecting in the x-axis will only change one coordinate. Plot the point on a set of axis. What movement do we need to make to get from the point to the mirror line (the x-axis)? Repeat this on the other side to find the location of the reflected point.",
@@ -103,7 +103,7 @@
     {
       "questionId": 155254,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8a0fece0-3036-4c7e-b6b6-5cf8e54d57e8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. (-1, 4) is in the second quadrant and (1, -4) is in the fourth quadrant. If it was a reflection in the x-axis the new point would be located in the third quadrant. Remember, reflecting in the axes changes the signs on the coordinates. Has the x-coordinate changed sign? Has the y-coordinate changed sign?",
         "B": "Not quite. (-1, 4) is in the second quadrant and (1, -4) is in the fourth quadrant. If it was a reflection in the y-axis the new point would be located in the first quadrant. Remember, reflecting in the axes changes the signs on the coordinates. Has the x-coordinate changed sign? Has the y-coordinate changed sign?",
@@ -115,7 +115,7 @@
     {
       "questionId": 155258,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a21feed5-7ca7-42f8-b7a4-02e92e05806d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. (2, 5) is in the first quadrant and (-2, 5) is in the second quadrant. If it was a reflection in the x-axis the new point would be located in the fourth quadrant. Remember, reflecting in the axes changes the signs on the coordinates. Has the x-coordinate changed sign? Has the y-coordinate changed sign?",
         "B": "Reflecting in the x-axis changes the sign on the y-coordinate and reflecting in the y-axis changes the sign on the x-coordinate. Comparing the two coordinates we can see that it is the x-coordinate that has changed sign, therefore this point has been reflected in the y-axis.",
@@ -127,7 +127,7 @@
     {
       "questionId": 155255,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/251ec2d0-fdff-4466-8d5a-3b26ae724fe9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost! If reflecting in the x-axis changes the sign on the y-coordinate, what do you think happens to the x-coordinate when we reflect in the y-axis?",
         "B": "Almost! If reflecting in the y-axis changes the sign on the x-coordinate, what do you think happens to the y-coordinate when we reflect in the x-axis?",

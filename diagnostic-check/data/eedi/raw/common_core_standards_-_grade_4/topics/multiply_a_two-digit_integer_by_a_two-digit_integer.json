@@ -49,7 +49,7 @@
     {
       "questionId": 95220,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b239e5b6-fc96-4d18-a811-cbbcc48ca4ab.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Remember you have to fill in the answer to all the multiplications, even if they are equal to 0.",
         "B": "Not quite. 7 x 80 is 560 BUT 20 x 80 is NOT 160. Remember a zero should be added into the working when we multiply by the tens digit in 27.",
@@ -61,7 +61,7 @@
     {
       "questionId": 95237,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e96fdc91-a3ab-4b63-bd89-d798c89a37cc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. This working is not correct as it has failed to carry over the ten from the calculation 6 x 2. It also incorrectly shows that the answer to 3 x 72 is 27.",
         "B": "Not quite. 6 x 72 is 432 BUT 30 x 72 is NOT 216. Remember a zero should be added into the working when we multiply by the tens digit in 36.",
@@ -73,7 +73,7 @@
     {
       "questionId": 137758,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d829d93a-5633-4493-b830-95df96855f6c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost! Check carefully to make sure you haven't mixed up which digit replaces the star and which digit replaces the triangle.",
         "B": "In the second row of the workings we are multiplying 45 by 30. What digit would we expect to see in the ones column here?",
@@ -85,7 +85,7 @@
     {
       "questionId": 137778,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/60fc6d72-05ab-4f03-a063-f979890a9995.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you might have assumed that we always carry 1s. But we need to work out each stage of the calculation to see exactly what needs to be carried over.",
         "B": "You are right that the second row of the workings 27 x 50 will give us 1350. Check the first row of workings carefully. We need 27 x 3 so we start by doing 7 x 3. How many ones will we have? And how many tens do we need to carry over?",
@@ -97,7 +97,7 @@
     {
       "questionId": 158086,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5a327357-ba8c-436f-82e8-a2ac71251941.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you forgot to put the 0 placeholder when multiplying by 10. It should be 68 + 340 not 68 + 34...",
         "B": "2 x 34 = 68 and 10 x 34 = 340. Add these together to get 68 + 340 = 408 which is the final answer!",
@@ -109,7 +109,7 @@
     {
       "questionId": 158253,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7ccbddf4-0242-4d6e-a542-dd24ce744a88.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have done 21 x 34 instead of 21 x 43. Do 3 x 21 and then 40 x 21, add these values together to get the final answer.",
         "B": "I think you have added 21 and 43 but you need to multiply them...",
@@ -121,7 +121,7 @@
     {
       "questionId": 158087,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3ceabbbe-dc8c-44fa-80c8-fd256dc3fe3f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have added 76 and 52 but you need to multiply them...",
         "B": "I think you forgot to put the 0 placeholder when multiplying by 10. It should be 152 + 3800 not 152 + 380...",

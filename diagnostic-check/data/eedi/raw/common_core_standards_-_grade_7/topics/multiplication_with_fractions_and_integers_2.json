@@ -25,7 +25,7 @@
     {
       "questionId": 100996,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3791879f-dd08-4294-a1ed-c0c6efd83047.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. It may help to write the number 3 as a fraction. We can write 3 as 3/1. Now we can multiply the numerators and multiply the denominators.",
         "B": "It looks like you have multiplied the denominator by 3. It may help to write the number 3 as a fraction. We can write 3 as 3/1. Now which numbers do you need to multiply together?",
@@ -61,7 +61,7 @@
     {
       "questionId": 101016,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b4a8691c-289f-4740-9375-76b0a651c714.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have worked it out correctly, but the question did not state that it had to be in a certain format. Could your fraction be written in any other way?",
         "B": "I think you have worked it out correctly, but your answer can also be simplified. Could your fraction be written in any other way?",
@@ -85,7 +85,7 @@
     {
       "questionId": 101017,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/21a5d68e-baf9-4a66-b05e-62c8c3b36401.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! You could try working out 7 x 1/4 and see if the answer helps you figure out what is missing. You may find it helpful to write 7 as 7/1",
         "B": "Not quite. If the answer was 1/4 then we have just replaced the multiplication symbol with a division symbol which would not be the same calculation. You could try working out 7 x 1/4 and see if the answer helps you figure out what is missing.",
@@ -109,7 +109,7 @@
     {
       "questionId": 101018,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/50c30f29-e06d-4a1e-a725-ad2a7746f17f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "If you divide by 5 and then multiply by 5 you have not actually changed the number. We would still be left with 7. Instead think of the multiplication as \"of\". We need to find 4/5ths of 7. How would we find 1/5th?",
         "B": "Nearly! You have divided 7 by 4 and then multiplied by 5. In order to find 4/5 of 7 why don't we start by finding 1/5 first. How would you do that?",
@@ -133,7 +133,7 @@
     {
       "questionId": 101019,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a9b0b93a-7064-468c-aa37-a250e88272ee.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have correctly identified that we need to replace the ? with 1/20, but you have struggled converting it to a decimal. Try multiplying the numerator and denominator by 5 to make it into hundredths and see if that helps",
         "B": "Remember, everything on the left-hand side needs to equal everything on the right-hand side. If we compare what’s there at the moment, ‘of’ is another way of saying multiply, and the 7 is the same both sides. This means that the only value missing from the right-hand side is 1/20. Given the selection of answers, we need to represent 1/20 in decimal form: 1/20 = 5/100 = 5 ÷ 100 = 0.05",

@@ -31,7 +31,7 @@
     {
       "questionId": 157997,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9e22a439-f643-4a15-9b8a-5d357f180930.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have added both the numerators and denominators but we only need to add the numerators.",
         "B": "I think you have multiplied the fractions but you need to add the numerators.",
@@ -55,7 +55,7 @@
     {
       "questionId": 157998,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/29ad0ade-1178-4bb2-8e3b-2b5f4587ba0a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have multiplied the fractions but you need to add the numerators...",
         "B": "I think you have added both the numerators and denominators but we only need to add the numerators...",
@@ -79,7 +79,7 @@
     {
       "questionId": 157999,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ed8d7be2-a418-4fcc-8b67-7ddd69c8868a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have subtracted the numerators but added the denominators. To find the answer, you need to subtract just the numerators...",
         "B": "I think you have multiplied the fractions but you need to subtract the numerators...",
@@ -91,7 +91,7 @@
     {
       "questionId": 158166,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c0d9cf46-e459-4375-8429-a4b5af4943a2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have multiplied the fractions but you need to subtract the numerators...",
         "B": "I think you have subtracted the numerators but added the denominators. To find the answer, you need to subtract just the numerators...",
@@ -127,7 +127,7 @@
     {
       "questionId": 158001,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8ebbfee2-9c9c-4203-9dc3-51ebabe284fa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The mixed number 2 1/8 means 2 + 1/8 not 2 x 1/8 so we have two wholes and one eighth. Which of the calculations shows two wholes being added to one eighth?",
         "B": "We are looking for the calculations that show two wholes plus 1/8 which this one does but are there any others?",

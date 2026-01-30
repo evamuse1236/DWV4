@@ -43,7 +43,7 @@
     {
       "questionId": 146278,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4d793829-b78a-48da-8738-4d74571e6e90.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have multiplied. The question is asking you to add the two decimals together.",
         "B": "0.8 plus 0.6 would be 1.4",
@@ -67,7 +67,7 @@
     {
       "questionId": 146279,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/99b25616-c84f-446b-aadb-d7d2e871de11.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Reconsider your working on the second line. Remember that ten tenths are carried to become one unit.",
         "B": "I think you have used a different technique. Which one of these methods correctly uses Dora’s method?",
@@ -91,7 +91,7 @@
     {
       "questionId": 146280,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aead4704-a270-4d2a-aa95-96ea2711ed20.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have added the numbers. The question asks you to subtract.",
         "B": "Not quite. We can use inverses to check this answer, 4.4 + 0.4 = 4.8 NOT 5. Use the answer to 10 - 4 to help you calculate 1 - 0.4 and then 5 - 0.4.",
@@ -103,7 +103,7 @@
     {
       "questionId": 146300,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a307280a-d16a-4a8e-8479-96782ea9e61d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have added the numbers. The question asks you to subtract.",
         "B": "6 subtract 3 tenths would be 5 and 7 tenths or 5.7",
@@ -127,7 +127,7 @@
     {
       "questionId": 146301,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fe11f963-47a8-4331-83ba-d47815046aa1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, be careful with your place value. There are two decimal places in total in the question, how many will there be in the answer?",
         "B": "I think you have multiplied by 2. The small 2 means ‘squared’, which is when you multiply a number by itself. What is 0.8 x 0.8?",
@@ -139,7 +139,7 @@
     {
       "questionId": 146282,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b0e5ac59-d6bf-4a02-8fdc-49446b292193.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, be careful with the place value. As we are dividing by 3 we would expect our answer to be smaller than 0.24.",
         "B": "Not quite, I think you have forgotten to put the decimal point back into your calculation. 24 ÷ 3 = 8 and 0.24 is 100 times smaller than 24, how can we use this to find the answer to 0.24 ÷ 3?",
@@ -151,7 +151,7 @@
     {
       "questionId": 146302,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/78918fc9-2a0d-4b82-88c0-3785152ac9f1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, be careful with the place value. As we are dividing by 9 we would expect our answer to be smaller than 0.36.",
         "B": "Not quite, I think you have forgotten to put the decimal point back into your calculation. 36 ÷ 9 = 4 and 0.36 is 100 times smaller than 36, how can we use this to find the answer to 0.36 ÷ 9?",

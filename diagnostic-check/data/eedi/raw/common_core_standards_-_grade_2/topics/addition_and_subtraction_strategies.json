@@ -37,7 +37,7 @@
     {
       "questionId": 159585,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/513b0af5-ff4c-4d34-ac29-d22598480b68.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite - how much has been taken from the 75 to make 100 with 58? What is left?",
         "B": "Almost! You found that 58 + 42 = 100, but that means we have taken 42 away from 75 to regroup with the 58. It should be subtracted, not added to 75.",
@@ -49,7 +49,7 @@
     {
       "questionId": 159364,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f51ca236-f38e-4a54-8c48-ecd929b924b8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost! You found that 312 - 12 = 300, but that means 13 from the 78 has already been subtracted. We need to know what's left to subtract, so we will subtract not add to 78.",
         "B": "That is 312 + 78, but we are working with 312 - 78. What has been subtracted from 312 to get 300? Take that away from the 78.",
@@ -61,7 +61,7 @@
     {
       "questionId": 159586,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/781d0ed4-3835-4a38-9633-4f8448f15453.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "That is 767 + 82, but we are working with 767 - 82. What has been subtracted from 767 to get 700? Take that away from the 82.",
         "B": "I think you tried to do 82 - 67 which is correct, but I think you subtracted the smaller digit from the larger digit. Subtraction is not commutative, so when calculating 2 - 7 you will need to borrow from the tens column.",
@@ -85,7 +85,7 @@
     {
       "questionId": 159587,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/81ed238e-087c-4308-b1f0-fa090190183c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The arrow says 3, but does the number line really show subtracting 30 from 745?",
         "B": "270 breaks down into 300 subtract 30, not 300 plus 30. Which number line shows correctly adding 300 then subtracting 30?",
@@ -97,7 +97,7 @@
     {
       "questionId": 159366,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7158d4f3-0957-406f-bfd9-2e014f1ea2b5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "303 breaks down into 300 and 3 not 30 and 3. Also make sure you are subtracting the full total... Which number line shows correctly subtracting 300 and then 3?",
         "B": "This number line shows subtracting 300 then adding 3... This would be the same as subtracting 297, not 303.",
@@ -133,7 +133,7 @@
     {
       "questionId": 162819,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/84d654a8-ff36-43cb-ad0b-55163be8a32c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Subtracting 200, and then subtracting another 1 means 201 has been subtracted in total. How could you adjust this so only 199 is subtracted?",
         "B": "Adding 200 then subtracting 1 is the same as adding 199, we are being asked to subtract 199.",

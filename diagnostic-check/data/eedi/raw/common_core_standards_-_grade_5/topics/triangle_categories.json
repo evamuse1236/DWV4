@@ -31,7 +31,7 @@
     {
       "questionId": 158494,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/64c6c852-1c6d-4243-a4ed-bae45fd94faf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Scalene means none of the sides or angles of the triangle are equal, but the angles can all be acute. Do any of these names tell us that the triangle has an angle that isn't acute?",
         "B": "Isosceles means two of the angles of the triangle are equal, but the third angle can be acute or obtuse so it could be an acute triangle. Do any of these names tell us that the triangle has an angle that isn't acute?",
@@ -43,7 +43,7 @@
     {
       "questionId": 158669,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/959eb083-c30a-414e-a051-dc07b96dffca.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Scalene means none of the angles of the triangle are equal, but one of the angles can be obtuse. Try drawing out isosceles and equilateral triangles with an obtuse angle, can you do it?",
         "B": "Isosceles means two of the angles of the triangle are equal, but the third angle can be obtuse so it could be an obtuse triangle. Try drawing out scalene and equilateral triangles with an obtuse angle, can you do it?",
@@ -55,7 +55,7 @@
     {
       "questionId": 158495,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6b11b298-3879-43c0-b516-6cc8bd42d4e3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "An obtuse triangle needs one obtuse angle, but in a right triangle we always have two acute angles and a right angle. Can you picture any of these triangles with an angle bigger than 90 degrees?",
         "B": "Isosceles means two of the angles of the triangle are equal, but if we have two 45 degree angles the third angle is a right angle, making it a right isosceles triangle.",
@@ -67,7 +67,7 @@
     {
       "questionId": 158670,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d2c482a6-d3db-401b-89fa-b4738db1c0b8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "An equilateral triangle has all equal sides and angles... What is the size of each angle? So what type of triangle is this?",
         "B": "An isosceles triangle has two equal angles whereas an equilateral triangle has three equal angles... What is the size of each angle? So what type of triangle is this?",
@@ -79,7 +79,7 @@
     {
       "questionId": 158496,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1785f3f9-b39c-4388-8c02-a80692eda980.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Isosceles means two of the angles of the triangle are equal, but the third angle can be acute or obtuse so it could be an obtuse triangle. Which of these triangles cannot have two equal angles?",
         "B": "Scalene means none of the sides or angles of the triangle are equal, but isosceles means two sides are equal, so a triangle cannot be both.",
@@ -91,7 +91,7 @@
     {
       "questionId": 158671,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2d30e494-343a-482b-9e07-3afa4e4e5ff1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "An acute triangle has three angles all less than 90 degrees, because a right triangle has to have an angle of 90 degrees it can never be acute!",
         "B": "Scalene means none of the angles of the triangle are equal, but one of the angles can be a right angle. Try drawing out acute and isosceles triangles with a right angle, can you do it?",
@@ -103,7 +103,7 @@
     {
       "questionId": 158497,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fda779b2-b524-4436-8223-7a8dfa915914.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "A 60 degree angle is acute, so the triangle could be acute, but is that the only possibility?",
         "B": "The triangle could be obtuse, for example if the angles were 60, 100, 20, but is that the only possibility?",
@@ -115,7 +115,7 @@
     {
       "questionId": 158672,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4d4a309d-f73c-418d-aa03-da25146ac4da.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "An isosceles triangle does have two equal angles but check what the value of the third angle would be for this specific triangle...",
         "B": "60 + 60 = 120 degrees so the third angle will need to be less than 90 as well (acute) to make this triangle work so it can't be obtuse! Try work out the value of the third angle, what do you notice?",
@@ -139,7 +139,7 @@
     {
       "questionId": 158673,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6b24022f-d1e3-487b-8efc-2ae8c9afb689.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Scalene means none of the angles of the triangle are equal, but all of the angles can be acute. Try drawing out obtuse and right triangles with three different sized angles, is it possible?",
         "B": "Scalene means none of the angles of the triangle are equal, but one of the angles can be obtuse. Try drawing out acute and right triangles with three different sized angles, is it possible?",

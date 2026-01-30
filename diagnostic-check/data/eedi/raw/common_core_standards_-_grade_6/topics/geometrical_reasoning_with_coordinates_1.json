@@ -25,7 +25,7 @@
     {
       "questionId": 107514,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/75dd17cd-a7eb-42a3-80b6-368951ce4fcc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, have a think about which sets of the coordinates can help you to get the 𝑥 and y coordinate for your vertex. Remember the first number is the 𝑥 (horizontal) coordinate and the second number is the y (vertical) coordinate.",
         "B": "So close! Double check your answer carefully.",
@@ -37,7 +37,7 @@
     {
       "questionId": 107519,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1ad5d1d9-22be-4447-9831-08552e18021c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, have a think about which sets of the coordinates can help you to get the 𝑥 and y coordinate for your vertex. Remember the first number is the 𝑥 (horizontal) coordinate and the second number is the y (vertical) coordinate.",
         "B": "This point will have the same 𝑥 coordinate as (1, 9) and the same y coordinate as (8, 3), which gives (1, 3).",
@@ -49,7 +49,7 @@
     {
       "questionId": 107515,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f63f4c8f-f04a-4ab7-b15a-7f5d788ce38d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, the y coordinate all along here would be 12, but it is not the width of the arrow.",
         "B": "We subtract the 𝑥 values to get the width, and so 10 – 3 = 7",
@@ -61,7 +61,7 @@
     {
       "questionId": 107520,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/54f03c8c-2f0a-4e51-acb5-d17b883497af.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost, you've used the correct numbers! If you go from 1 across to 8, how many does it take you to get there?",
         "B": "Not quite, I think you've found the difference in the coordinate (8,9). Try to find the distance of the red arrow",
@@ -73,7 +73,7 @@
     {
       "questionId": 107516,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dd117665-96d2-4436-8fd9-f610f6f8c0f6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, remember a square has to have the same length and width, is there a way this can happen?",
         "B": "Using Tom’s coordinates would create a rectangle with height 6 and width 5. Using Katie’s coordinates would create a rotated square where both diagonal lengths are 6. So only Katie is correct.",
@@ -85,7 +85,7 @@
     {
       "questionId": 107521,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c7904b89-0a4e-4215-a076-f574306766e5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, remember that you can calculate the distance between the points to decide whether it is a square or not. An accurately drawn diagram may also help you to visualise this",
         "B": "Have you checked both of the pairs of coordinates carefully?",
@@ -97,7 +97,7 @@
     {
       "questionId": 107517,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2695e1f4-35e8-411e-b98e-2c7b4916b9f7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, this diagram isn't drawn accurately. See if you can use both given vertices to help you",
         "B": "This point will have the same 𝑥 coordinate as (1, 5) and the same 𝑦 coordinate as (–3, −15), which gives (1, −15).",
@@ -121,7 +121,7 @@
     {
       "questionId": 107518,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9b3ddcd2-9198-4029-8ef8-28773ddfacc2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Be careful when you do your calculation. It may help to split it into the distance up to the x axis, and then the distance up to the rectangle's top edge, then add them together.",
         "B": "We subtract the y coordinates to get the height, which is 5 – (–15) = 20. You can also think of it as going up 15 from (-3,-15) to the x-axis, and then going up a further 5 to get to the top of the rectangle. In total, 15+5=20",
@@ -133,7 +133,7 @@
     {
       "questionId": 107523,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f3859d8f-59d9-44f5-92eb-bce2d13090c0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Be careful when you do your calculation. It may help to split it into the distance up to the x axis, and then the distance up to the top of the rectangle, then add them together.",
         "B": "You're really close! You've just found the width instead of the height.",

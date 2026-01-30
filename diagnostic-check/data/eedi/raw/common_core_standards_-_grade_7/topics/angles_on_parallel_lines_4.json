@@ -49,7 +49,7 @@
     {
       "questionId": 78976,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6bdd1ca-38d2-4ad3-8d83-978a92e98a38.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember where a line crosses two parallel lines, the angles in matching positions at the intersections are corresponding. They are equal.",
         "B": "109° and y are not alternate angles. It is impossible to say what y is without knowing more of the missing angles.",
@@ -61,7 +61,7 @@
     {
       "questionId": 76856,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3b42e3c5-f590-4af1-b06f-2f559cbe1082.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may be confusing co-interior angles with vertically opposite angles.",
         "B": "Co-interior angles are on the inside (interior) of two parallel lines and on the same side of a crossing line. b and f are co-interior (we can ignore the middle horizontal line).",
@@ -73,7 +73,7 @@
     {
       "questionId": 78979,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ef724cbb-35c1-4675-8a92-4a192359fca1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you may be confusing co-interior angles with corresponding angles.",
         "B": "I think you may be confusing co-interior angles with corresponding angles.",
@@ -85,7 +85,7 @@
     {
       "questionId": 93416,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3bea08c0-3d1d-4c1d-89ac-9c8e67571219.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may be confusing corresponding angles with vertically opposite angles.",
         "B": "Imagine sliding the parallel line on the left toward the right until the two intersection points overlap. The angle p will be directly over B. This means they correspond.",
@@ -97,7 +97,7 @@
     {
       "questionId": 93431,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/be6ed021-b23c-4db8-ac6c-c4f653eb16f6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may be confusing corresponding angles with vertically opposite angles.",
         "B": "I think you may be confusing corresponding angles with co-interior angles.",
@@ -109,7 +109,7 @@
     {
       "questionId": 93417,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/900f9111-5893-4091-802e-40d001b6a450.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you may be confusing co-interior angles with vertically opposite angles.",
         "B": "I think you may be confusing co-interior angles with corresponding angles.",
@@ -121,7 +121,7 @@
     {
       "questionId": 93432,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/90fbeb86-4f8c-4a50-9e80-e2222511e131.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may be confusing co-interior angles with alternate angles.",
         "B": "I think you may be confusing co-interior angles with corresponding angles.",
@@ -133,7 +133,7 @@
     {
       "questionId": 93418,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea7f8208-c77a-44fa-b2bf-6d25aeed5884.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may be thinking about corresponding angles. Try thinking about co-interior angles. What will the sum be of these two angles?",
         "B": "Almost! I think you've just made a little slip in your working.",

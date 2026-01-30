@@ -37,7 +37,7 @@
     {
       "questionId": 89440,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a5d4f698-d7f2-41d9-8499-f82662f55430.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Neither of these calculations are represented by the diagram. Think about the start point, the distance moved and the end point.",
         "B": "I think you have confused the signs. + means you are moving right on the number line, and - means you are moving backwards",
@@ -49,7 +49,7 @@
     {
       "questionId": 89457,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eb4284e2-b361-45d4-8bad-5e7960e8712d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The first calculation is correct, but not represented by the arrow. Think about the start point, the distance moved and the end point",
         "B": "The first equation starts from −2, then adds 10 to give 8. The second equation takes the alternative view of starting at 8. From here, subtract 10 (because you're going against the direction of the arrow), to give an answer of −2. So both −2 ＋ 10 = 8 and 8 − 10 = −2 are correct.",
@@ -61,7 +61,7 @@
     {
       "questionId": 89441,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ac392fd6-7064-4bc7-a1db-c09b49b2d34d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Subtracting 5 is the same as going 5 steps back on a number line. If we go 5 steps back and end at -4, where did we start? Think carefully about the negative signs.",
         "B": "Almost! Subtracting 5 is the same as going 5 steps back on a number line. If we go 5 steps back and end at -4, where did we start? Think carefully about the negative signs.",
@@ -73,7 +73,7 @@
     {
       "questionId": 89458,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/af418c32-18ea-41ca-827d-5b28536a793b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Subtracting 7 is the same as going 7 steps back on a number line. If we go 7 steps back and end at -3, where did we start? Think carefully about the negative signs.",
         "B": "Not quite. Subtracting 7 is the same as going 7 steps back on a number line. If we go 7 steps back and end at -3, where did we start? Think carefully about the negative signs.",
@@ -97,7 +97,7 @@
     {
       "questionId": 89459,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/11194d7a-4713-47a3-a770-ef9e4c2b2d4b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "From a starting point of −6, we need an answer of −4. Think about a number line. What direction and by how much do we have to move? Is this adding or subtracting?",
         "B": "From a starting point of −6, we need an answer of −4. This means that we must have to add an amount to make −6 less negative. 2 steps up from −6 gives −4, so the answer is ＋ 2.",
@@ -109,7 +109,7 @@
     {
       "questionId": 89443,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a21b58fd-09a9-42e9-8cff-e1fe64759d61.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Remember, subtracting (-5) is the same as adding 5. Think about a number line. What direction and by how much do we have to move from our start at -8?",
         "B": "Not quite. Remember, subtracting (-5) is the same as adding 5. Think about a number line. What direction and by how much do we have to move from our start at -8?",
@@ -121,7 +121,7 @@
     {
       "questionId": 89460,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2dafdc7e-4f5f-475a-98ad-ed3b657eca5c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Remember, subtracting (-7) is the same as adding 7. Think about a number line. What direction and by how much do we have to move from our start at -2?",
         "B": "Subtracting (-7) is the same as adding 7. So this calculation is -2 + 7. If we imagine a number line, starting at -2, and then we add 7 we get to 5.",
@@ -133,7 +133,7 @@
     {
       "questionId": 89444,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2df743da-789f-457f-a8c3-2f0360ccb62d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Look at the first jump. We start at a number and add 6 to get -1. Think about this in reverse. If we start at -1 and subtract 6 (the opposite of adding) what number do we get?",
         "B": "For the box on the left, we start at a number and add 6 to get -1. We can think about this in reverse. If we start at -1 and subtract 6 (the opposite of adding) then we get -7. For the box on the right, if we start at -1 and add 6 we get 5.",
@@ -145,7 +145,7 @@
     {
       "questionId": 89461,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/994e05cd-f43c-4864-a0be-df9fd2efcc8d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Look at the first jump. We start at a number and add 8 to get -3. Think about this in reverse. If we start at -3 and subtract 8 (the opposite of adding) what number do we get?",
         "B": "For the box on the left, we start at a number and add 8 to get -3. We can think about this in reverse. If we start at -3 and subtract 8 (the opposite of adding) then we get -11. For the box on the right, if we start at -3 and add 8 we get 5.",

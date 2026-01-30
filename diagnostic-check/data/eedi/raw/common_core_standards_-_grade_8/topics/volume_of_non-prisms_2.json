@@ -25,7 +25,7 @@
     {
       "questionId": 110239,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e246aef1-e4fa-4083-b98a-a69cc5283852.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost, but we are looking for the shorter side rather than the hypotenuse.",
         "B": "We use Pythagoras’ theorem, which is 𝑎² + 𝑏² = 𝑐². So we have 𝘩² + 6² = 9², which we can rearrange to get 𝘩² = 9² - 6²",
@@ -37,7 +37,7 @@
     {
       "questionId": 110249,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a2712acd-bbba-42c1-8ab1-863b38fe3645.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. What lengths are we using in the marked right angled triangle?",
         "B": "Almost, but we are looking for the shorter side rather than the hypotenuse.",
@@ -49,7 +49,7 @@
     {
       "questionId": 110240,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c9d1621e-54f1-4b8b-ae66-9f4e33b69e01.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost. Remember squaring means multiplying the number by itself, it isn't the same as doubling.",
         "B": "We have 𝘩 = √(9² − 6²) = √(81 − 36) = √45 = 6.708 cm",
@@ -61,7 +61,7 @@
     {
       "questionId": 110250,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7d82c56a-6f24-498d-8b5c-f53cb755efd8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost, but I think you forgot to square the 8 and the 4",
         "B": "Almost. Remember squaring means multiplying the number by itself, it isn't the same as doubling.",
@@ -73,7 +73,7 @@
     {
       "questionId": 110241,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/edb51074-6c11-4223-b6a6-cc3ead340236.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. The area of a triangle is the base times the perpendicular height over 2",
         "B": "The area of a triangle is the base times the perpendicular height over 2, which is (6 × 6.71)/2",
@@ -85,7 +85,7 @@
     {
       "questionId": 110251,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eef5e33c-8b24-46e8-b71d-219575ec0410.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. The area of a triangle is the base times the perpendicular height over 2",
         "B": "Not quite. We don't need to use the sloped length. It is just the base times the perpendicular height over 2",
@@ -97,7 +97,7 @@
     {
       "questionId": 110242,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8a4abdc7-be82-4352-a3b5-8c603f352a96.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost, but I think you forgot the 1/3 which is the same as dividing by 3",
         "B": "We have 𝑉 = ⅓𝜋𝑟²𝘩 = ⅓ × 𝜋 × 6² × 6.71 = 253.0.",
@@ -109,7 +109,7 @@
     {
       "questionId": 110252,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7f8234a8-fadb-47cf-b1d7-cc9136ad5eaf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost, but I think you used the sloped height rather than the perpendicular height",
         "B": "Not quite. Look carefully at the formula for the volume of a cone, it squares the radius.",
@@ -121,7 +121,7 @@
     {
       "questionId": 110243,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0dc9d7f1-cf56-4d17-acab-1434fa725709.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Remember we are rearranging 𝑉 = (4/3) × 𝜋𝑟³, and we need to use the inverses to rearrange.",
         "B": "You are almost there, just be careful with the 4 and 3. Remember we are rearranging 𝑉 = (4/3) × 𝜋𝑟³, and we need to use the inverses to rearrange.",

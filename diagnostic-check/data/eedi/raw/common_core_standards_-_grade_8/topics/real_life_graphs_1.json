@@ -61,7 +61,7 @@
     {
       "questionId": 131722,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4de1f8f9-f94d-4af4-aa6e-71ada448e4ba.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have swapped round the x and the y-axis. The time is on the x-axis, the distance is on the y-axis. Make sure to read the labels!",
         "B": "Going along the x-axis to 3 secs and then along the y-axis to 2m, this is the point B.",
@@ -121,7 +121,7 @@
     {
       "questionId": 133917,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4be64650-98d8-4203-90ed-ebe21dde209a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you worked out the area under the graph, but that is the method for finding distance from a speed/time graph. Here we have a distance/time graph. Thinking about it like this might help: If Mo can travel 6 metres in 1 second how many metres can he travel in 10 seconds?",
         "B": "I think you have used the same scale as on the x axis, but each axis can have a different scale. If Mo can travel 6m in 1 second how many metres can he travel in 10 seconds?",
@@ -145,7 +145,7 @@
     {
       "questionId": 133918,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/550503a7-2447-44db-a33a-9bf64786568a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost! Looking at the velocity-time graph in A, it shows it took John longer to run 1km than to walk 1km as the first line is much longer. This doesn't make sense. Which graph shows John taking less time to run than to walk?",
         "B": "Careful! This is the correct displacement-time graph, however the question has asked you which diagram illustrates John's journey as a velocity-time graph. Remember velocity is speed in a given direction.",

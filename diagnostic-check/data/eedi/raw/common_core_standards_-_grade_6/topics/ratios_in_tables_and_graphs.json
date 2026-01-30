@@ -25,7 +25,7 @@
     {
       "questionId": 165504,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/99bade70-ffa8-4aa6-8903-53200c015c13.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you may have assumed an adding pattern since 8 + 8 = 16, but that pattern doesn't fit this table. Start with ⁸/₃ = ˣ/₁₅ and then solve for 𝑥",
         "B": "Not quite... This is a ratio table, and while 26 is halfway between 16 and 36, that doesn't mean our answer is halfway between 36 and 48. Start with ⁸/₃ = ˣ/₁₅ and then solve for 𝑥",
@@ -37,7 +37,7 @@
     {
       "questionId": 165509,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f4bdd2de-3a9b-4eed-beb8-7f6f766b6c0c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! This is a ratio table, and while 20 is halfway between 18 and 32, that doesn't mean our answer is halfway between 32 and 52. Start with ⁸/₅ = ˣ/₃₀ and then solve for 𝑥",
         "B": "I think you may have assumed an adding pattern since 8 + 12 = 20, but that pattern doesn't fit this table. Start with ⁸/₅ = ˣ/₃₀ and then solve for 𝑥",
@@ -49,7 +49,7 @@
     {
       "questionId": 165505,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3628ca5b-cea1-44cc-b1f2-f97c0eef21aa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It appears that you subtracted 15 and 3, but we need to look at our ratio. Start with ⁸/₃ = ³⁶/𝑥 and then solve for 𝑥",
         "B": "⁸/₃ = ³⁶/𝑥 We can use cross products to find 8𝑥 = 3 x 36. 8𝑥 = 108 so 𝑥 = 13.5",
@@ -85,7 +85,7 @@
     {
       "questionId": 165511,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ef59336d-94ac-4d84-93f2-4aadca4e20d4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Look carefully. You multiplied $3.50 by 12, but $3.50 is the price for 5 apples. How can we find the price of 1 apple and then use that to find our answer?",
         "B": "Not quite. I think you may have taken $3.50 x 3, but that would buy 15 apples. We only want to buy 12 apples.",
@@ -97,7 +97,7 @@
     {
       "questionId": 165507,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0821e737-b2f8-4a9a-b113-63be87236ece.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you may have confused your 𝑥 and 𝑦 values. Remember your 𝑥 coordinate comes first and your 𝑦 coordinate comes second.",
         "B": "Look carefully, the point (32, 14) wouldn't be on that line. Which point from the graph is not shown in the table?",
@@ -121,7 +121,7 @@
     {
       "questionId": 165508,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/705d0a72-23fd-4c3f-801d-0d8a6f43579e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have confused your 𝑥 and 𝑦 axes. Notice number of boys is on the 𝑥-axis and number of girls is on the 𝑦-axis.",
         "B": "Careful! Our graph represents a ratio, which means we can't estimate the points so they no longer represent a ratio. Which table has values that each represent the same ratio?",
@@ -133,7 +133,7 @@
     {
       "questionId": 165513,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7d6b4aa7-b21c-409b-97ad-84c5f01b832e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you confused your axes and estimated. Notice that the number of boys is on the 𝑥-axis and the number of girls is on the 𝑦-axis. Also, the values in the table should all reduce to the same ratio...",
         "B": "Each ratio of boy to girl reduces to 9 to 14; therefore this table represents the ratio represented by the graph.",

@@ -85,7 +85,7 @@
     {
       "questionId": 81309,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/675d6094-2d2c-4056-9a17-65fff68d5f68.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost. This would be the case if both the 4 and 1 were repeated, but only 1 is being repeated. How will this change the answer?",
         "B": "Almost. Try writing out the 10x and x on top of each other to see what you would get if you subtracted.",
@@ -109,7 +109,7 @@
     {
       "questionId": 103974,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1db5ab39-bd5c-4041-8e59-9e7f333b2096.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Try doing a bus stop division where the 7 goes underneath, and the 9 is on the outside.",
         "B": "Not quite. Try doing a bus stop division where the 7 goes underneath, and the 9 is on the outside.",
@@ -121,7 +121,7 @@
     {
       "questionId": 122136,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/015544db-b5a2-42fc-8593-aa42bed2af8c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Try doing a bus stop division where the 5 goes underneath, and the 9 is on the outside.",
         "B": "To work out a value for 5/9, we can think of it as 5 ÷ 9, so put 5.000... in the ‘bus stop’ and 9 outside. Starting with 5 ÷ 9 = 0 remainder 5, the next calculation is 50 ÷ 9 = 5 remainder 5. So the next calculation is 50 ÷ 9 again, producing the same remainder, etc. to give a decimal answer of 0.555...",
@@ -145,7 +145,7 @@
     {
       "questionId": 103983,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e65d39b7-ee46-457b-99df-e36d058c92eb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost, just check your bus stop division, it isn't just the 3 that is repeated.",
         "B": "To work out a value for 1/33, put 1 under the bus stop, and 33 on the outside. This will give the answer 0.030303... , which is represented in answer B using the dot notation.",

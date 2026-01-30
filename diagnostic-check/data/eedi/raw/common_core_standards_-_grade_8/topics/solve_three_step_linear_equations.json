@@ -37,7 +37,7 @@
     {
       "questionId": 131676,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aa3ac460-1698-4cd0-8f04-acebc44fe809.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. We can't ignore the denominator here. Both the 3x and the 1 in the numerator are divided by the denominator of 2. How else could we write 1 divided by 2?",
         "B": "To solve this, the best way to start is to get rid of the fraction by multiplying by 2. This leaves 3x + 1 on the left of the = sign and 5 x 2 = 10 on the right. So Katie is correct. We could start by subtracting as Tom did, but the number on the left of the = sign is 1/2, not 1 so we would have to subtract 1/2 not 1. So Tom is incorrect.",
@@ -73,7 +73,7 @@
     {
       "questionId": 133870,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea31f509-f25e-4ef3-aec7-75b1dfded43e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Check each method carefully. Has Tom done the same thing to both sides of the equation? Has Katie?",
         "B": "Katie has added 1 to both sides so they are still balanced and therefore it is a correct next line of working. Tom has tried to multiply both sides of the equation by 3, but has forgotten to multiply the -1 by 3 therefore the sides are no longer balanced so it is not a correct next step.",
@@ -85,7 +85,7 @@
     {
       "questionId": 131678,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7ddfbe51-a48c-45e1-a300-57b23816b4a4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! To get from -5 to -4 Tom must have added 1. Is this the correct step to get rid of the +1 on the left hand side of the = sign? How did Katie start solving this equation? Has she done this step correctly?\n\n",
         "B": "Not quite! Remember, if we are multiplying by 2 then every term in the equation should be multiplied by 2. How did Tom start solving this equation? Is this the correct step to get rid of the +1?\n\n",
@@ -121,7 +121,7 @@
     {
       "questionId": 133872,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9a5bed47-f377-45ec-960a-63b77849d36a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! Katie has chosen to solve this equation by removing the -1 from the left hand side of the = sign. Has she done this correctly?",
         "B": "Not quite! Tom has chosen to solve this equation by multiplying each term by 3, this removed the fraction. Has he done this correctly?",
@@ -133,7 +133,7 @@
     {
       "questionId": 131680,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/42d12439-e95a-4e81-b5d9-ace243f2afcf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! To get rid of the fraction Katie must have multiplied the equation by 2. Has she done this correctly? Is 2 ✕ 0.6 = 1.2?",
         "B": "Not quite! How did Tom start solving this equation? Is this the correct step to get rid of the +1?",

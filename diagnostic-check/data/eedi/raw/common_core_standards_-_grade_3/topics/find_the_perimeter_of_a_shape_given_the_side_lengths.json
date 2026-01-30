@@ -19,7 +19,7 @@
     {
       "questionId": 77170,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8dbb8750-33db-4d3f-b12f-f4a78cafe773.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have found the area rather than the perimeter. What is the distance all the way around the shape?",
         "B": "You are so close, just check your units",
@@ -31,7 +31,7 @@
     {
       "questionId": 79000,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8964e951-dcb9-4777-a4e4-bbb34ef3a16c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost, you just need to add on the length of the side that isn't labelled. Think about how you can work out its length",
         "B": "I think you have found the area rather than the perimeter. What is the distance all the way around the shape?",
@@ -55,7 +55,7 @@
     {
       "questionId": 129219,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/03624d30-bac5-42f4-889f-d1373d73cf7a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The perimeter is the length all the way around the outside, you seem to have only added the two sides labelled. What will the lengths of the bottom and left sides be?",
         "B": "The area would be 36, but we want the perimeter, which is the length around the outside of the shape. Try adding up all of the side lengths.",
@@ -91,7 +91,7 @@
     {
       "questionId": 156521,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9ccf5c13-bf5d-4c43-80df-552279696dbe.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have halved the answer for the perimeter. Remember perimeter is the total distance around the outside of the shape, so you must add all of the sides together.",
         "B": "The perimeter is the distance around the outside of the shape. If we add together all of the sides of this shape we get 22 cm.",
@@ -103,7 +103,7 @@
     {
       "questionId": 156539,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/004539be-01af-4aed-8b09-f149c8ae7b5e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you may have halved the answer for the perimeter. Remember perimeter is the total distance around the outside of the shape, so you must add all of the sides together.",
         "B": "I think you have miscounted. Consider using a specific corner to start counting from.",
@@ -115,7 +115,7 @@
     {
       "questionId": 158891,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/92868eee-b226-4db8-a9df-7facc2d84efa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have mixed up area and perimeter - for perimeter we add up all the sides of the shape.",
         "B": "For perimeter we add up all the sides of the shape. All four sides of a square are equal, so 5 + 5 + 5 + 5 = 20 feet.",

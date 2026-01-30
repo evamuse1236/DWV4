@@ -25,7 +25,7 @@
     {
       "questionId": 79733,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3710b161-dff7-49e3-9221-2a15b80b9742.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have chosen the point that is halfway between the point. If you rotated the red shape around A it would be too high.",
         "B": "Almost, just remember we write coordinates (x,y)",
@@ -37,7 +37,7 @@
     {
       "questionId": 79773,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8679c3f7-2e8a-4cbc-9103-147430f229ac.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Perhaps you've only come across rotation questions where the origin is the centre of rotation. It's possible that any point can be a centre of rotation. Try using tracing paper to help you",
         "B": "Almost, just remember we write coordinates (x,y)",
@@ -61,7 +61,7 @@
     {
       "questionId": 79774,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aaea6588-59a1-45c1-a49f-689763e043ba.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost, just remember we write coordinates (x,y)",
         "B": "Start by tracing shape A and the x axis. Rotate the shape 270 degrees anticlockwise using each of the possible answers A to D. You'll find that (5, 1) works! Alternatively, drawing a line from one point on shape A to the point (5 , 1), then back to its corresponding point on shape B gives a right angle and lines of equal length. This is not the case with the other coordinates.",
@@ -73,7 +73,7 @@
     {
       "questionId": 79735,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0fdcbed2-dd84-4254-90b7-71252ef164a3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, you can't replace the centre of rotation with the vector for a translation. (A translation wouldn't spin the shape). Try doing the rotation John has described to see if it works",
         "B": "I think you went from the clear shape to the blue one, and therefore thought it was the direction that was wrong. We are going from blue to clear. Try out John's rotation with tracing paper to see if it works",
@@ -85,7 +85,7 @@
     {
       "questionId": 79775,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6f821b19-f601-4725-8060-b7f32af1880b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Try using John's instructions to rotate the shape. Does it end up on the other rectangle?",
         "B": "Not quite, you can't replace the centre of rotation with the vector for a translation. (A translation wouldn't spin the shape). Try doing the rotation John has described to see if it works",
@@ -97,7 +97,7 @@
     {
       "questionId": 79736,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8ba4f162-b97f-4ce2-aeb7-d5b9b4856990.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you chose triangle DEF to rotate. If unsure, take time to re-read the question, 'Triangle ABC is rotated ...'",
         "B": "Using tracing paper, if you trace the outline of Triangle ABC and the y-axis, then go through each answer A to D, turning (taking care with to follow the direction given in the question) until the y-axis you traced becomes a horizontal line, you'll soon be able to see that only Answer B takes you to Triangle DEF.",
@@ -109,7 +109,7 @@
     {
       "questionId": 79776,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f67d047d-8686-4a98-b2f7-213b2bb57e0a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Perhaps you've only come across rotation questions where the origin is the centre of rotation. It's possible that any point can be a centre of rotation. Use tracing paper to try out all the possible answers",
         "B": "I think you're almost there but have made a slip. Have another quick check through, and using tracing paper to test out your answers",
@@ -121,7 +121,7 @@
     {
       "questionId": 98929,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f3ddd5c8-379e-4232-957e-950208645b65.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite - has Tom given all the information you would need to do a rotation?",
         "B": "Not quite - has Katie given all the information you would need to do a rotation?",
@@ -133,7 +133,7 @@
     {
       "questionId": 98945,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c9b9cf19-63ea-4eb2-b110-a1cbf71c730f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost, but has Jo given you all the information needed for a rotation?",
         "B": "Three pieces of information are required to fully describe a rotation: centre of rotation (coordinates), direction (clockwise or anticlockwise) and angle. Paul’s statement doesn’t explicitly use the words ‘clockwise’ or ‘anticlockwise’, but by putting a ＋ in front of the 270 degrees, we know to move in a clockwise direction. An equivalent statement would be “a rotation of 90 degrees anticlockwise about (−1, 1). Jo has not given you the centre of rotation.",

@@ -37,7 +37,7 @@
     {
       "questionId": 166328,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/96950694-383f-4310-a9fb-f189282680aa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have accidentally added the 14 to 33 but you need to think about what you add to 14 to get 33...",
         "B": "19 + 14 = 33 therefore 𝑥 is 19!",
@@ -85,7 +85,7 @@
     {
       "questionId": 166330,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9007e033-82a1-4812-9092-e4294c8bcf33.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have divided 35 by 5 to get 7 but this represents 𝑛 + 2... So what would 𝑛 be?",
         "B": "I think you have divided by 5 and then taken away 10. If you solve this way round, you need to make sure you divide everything by 5, otherwise subtract the 10 first and then divide.",
@@ -97,7 +97,7 @@
     {
       "questionId": 166557,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3d0a478b-192e-4add-81d4-232861785f9a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have correctly subtracted 21, as the first step, which would give 7𝑛 = 28... So what would 𝑛 be?",
         "B": "I think you have divided by 7 and then taken away 21. If you solve this way round, you need to make sure you divide everything by 7, otherwise subtract the 21 first and then divide.",
@@ -133,7 +133,7 @@
     {
       "questionId": 166332,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/62964017-b04a-4f71-81fb-3f4d7632c4ba.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "If you sub in 𝑥 = 0.5 you get 4.5 = 7.5 so this isn't correct. Distribute and try solve... What do you notice?",
         "B": "If you sub in 𝑥 = 0 you get 2 = 5 so this isn't correct. Distribute and try solve... What do you notice?",
@@ -145,7 +145,7 @@
     {
       "questionId": 166559,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e103aa32-6eb2-42d2-ab2f-6cfe537f4f51.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The equations are not the same therefore there is not infinitely many solutions. Distribute and try solve... What do you notice?",
         "B": "Distributing gives 3𝑥 + 7 = 3𝑥 + 12 and then when solving you end up with 0 = 5 which doesn't work therefore there is no solution!",

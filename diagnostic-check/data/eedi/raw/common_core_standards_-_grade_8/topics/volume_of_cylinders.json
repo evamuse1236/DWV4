@@ -31,7 +31,7 @@
     {
       "questionId": 77189,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f05e1b5f-f106-4278-81e3-e85ee98aeb0d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! The shape at the front is a semi-circle NOT a circle, so remember, when you find the area of the circle, you need to half it.",
         "B": "The cross-sectional area is ½𝜋 (2)² = 2𝜋. We then multiply by 6 to get 12𝜋.",
@@ -43,7 +43,7 @@
     {
       "questionId": 79019,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7415c886-8a11-42cf-bb22-6551236fbdcb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! The shape at the front is a semi-circle NOT a circle, so remember, when you find the area of the circle, you need to half it.",
         "B": "Not quite! Remember area of a circle is 𝜋r², where r is the radius of the circle NOT the diameter. Also, remember, to half the area of the circle as it is a semi circle!",
@@ -55,7 +55,7 @@
     {
       "questionId": 110213,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/24b8046d-fe5c-4bf0-8266-b8fc207326da.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you've found the circumference of the circular face, rather than the area.",
         "B": "The area of a circle is 𝜋𝑟², which in this case is 𝜋 × 5² = 25𝜋",
@@ -67,7 +67,7 @@
     {
       "questionId": 110231,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ef22750d-a7c9-4563-b33a-4cdcc8ab973e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've calculated the area of the circle as 𝜋x12². Is 12 the radius here?",
         "B": "It looks like you've found the circumference of the circular face, rather than the area.",
@@ -79,7 +79,7 @@
     {
       "questionId": 110214,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/97de63cb-15cf-493b-a467-ef640ef62d33.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have multiplied the length, 9 cm, and the radius, 5 cm, to get 45. To find the volume of a prism, we need the area of the cross-section multiplied by the length.",
         "B": "Almost, but I think you may have added the length, 9 cm, to the area of the cross-section. What operation should we use instead?",
@@ -103,7 +103,7 @@
     {
       "questionId": 144055,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c812ce79-d83c-4c33-a589-f61bbfe62f0f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, I think you have forgotten to square the radius.",
         "B": "Not quite, I think you have used the diameter instead of the radius. Think about how we calculate the Area of a circle.",
@@ -115,7 +115,7 @@
     {
       "questionId": 144060,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/551d4121-ec15-48aa-bf23-ebd6977deb57.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, this is the volume of the cylinder. The question only asks for the area of the cross-section.",
         "B": "Area of a cirlce = pi x r². pi x 4² = 16pi.",
@@ -127,7 +127,7 @@
     {
       "questionId": 144056,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6664c116-280a-4402-bb8e-316fa1f884c4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you have doubled the radius rather than squared it. Remember that squaring means we multiply the number by itself.",
         "B": "Vol of a prism = area of cross section x length. The area of the circle is 25pi, then x 10 to find the volume of the cylinder. This gives 250pi.",
@@ -139,7 +139,7 @@
     {
       "questionId": 144061,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/73dbb404-fe5a-4e8e-a3ff-ac434d7ffc20.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, I think you have forgotten to square the radius.",
         "B": "Not quite, I think you have calculated the area of the circle. Think about our next step to turn this into the volume of the cylinder.",

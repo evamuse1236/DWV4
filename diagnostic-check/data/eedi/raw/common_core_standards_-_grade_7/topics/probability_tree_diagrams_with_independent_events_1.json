@@ -37,7 +37,7 @@
     {
       "questionId": 109491,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f0bccaff-d7bd-460c-8215-6ae617112cc0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! Path 3 has a win in rugby. We are looking for the path with a loss in both games only",
         "B": "Path 4 includes a loss in football and a loss in rugby.",
@@ -85,7 +85,7 @@
     {
       "questionId": 109493,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6daecdc3-5642-45f4-854a-741c6a756ad4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! In Path 4 Sophie loses both games, and we are asked to find the paths where she loses exactly 1 of the 2 games.",
         "B": "Not quite! In Path 4 Sophie loses both games, and we are asked to find the paths where she loses exactly 1 of the 2 games.",
@@ -109,7 +109,7 @@
     {
       "questionId": 109494,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/445cddf8-f793-494d-8df8-4f1336a8fe0c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! You have given the probability that Ruby loses at rounders here. We are looking for the probability that she loses at netball.",
         "B": "Not quite! You have given the probability that Ruby wins at netball instead of loses at netball here.",
@@ -121,7 +121,7 @@
     {
       "questionId": 109484,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cd198836-a624-4a28-9c0b-7a3c5ebb81fb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! You have given the probability that Ruby loses at netball instead of wins at netball here.",
         "B": "Not quite! You have given the probability that Ruby loses at rounders here. We are looking for the probability that she wins at netball.",
@@ -133,7 +133,7 @@
     {
       "questionId": 109495,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7fbddce7-a587-47fa-83d3-3d5dd8a82bb8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! You have given the probability that Ruby loses at rounders here. We are looking for the probability that she wins at netball.",
         "B": "The probability of Ruby winning netball is 0.8. This is given in the question.",

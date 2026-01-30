@@ -25,7 +25,7 @@
     {
       "questionId": 156080,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/96217623-36a4-401f-9e83-5df98c70fd06.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have subtracted. The question asks you to add.",
         "B": "I think you may have counted the starting number. Consider drawing a number line to help you.",
@@ -37,7 +37,7 @@
     {
       "questionId": 156098,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eae6c533-50e0-4b26-9a28-6951bdbe3970.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have counted the starting number. Consider drawing a number line to help you.",
         "B": "3 + 6 is the same as 6 + 3. If we start on 6 and add 3 on, we get 7, 8, 9.. so the answer is 9.",
@@ -49,7 +49,7 @@
     {
       "questionId": 159351,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/07ad5e0b-5d54-4555-b506-27ab0c096dcd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "8 is one more than 7, so we need to add an extra 1, not subtract it.",
         "B": "Almost, but that would be 8 + 8. 7 + 8 is only one bigger than 7 + 7, so the answer will be one bigger too.",
@@ -61,7 +61,7 @@
     {
       "questionId": 159573,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c1c71d14-b7b7-4853-bf78-ce01ab1fcf61.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "9 is one more than 8, so we need to add an extra 1, not subtract it.",
         "B": "8 + 8 changed to 8 + 9 so the answer changes too. How much extra has been added?",
@@ -73,7 +73,7 @@
     {
       "questionId": 159352,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/84408175-f79f-4c59-aee5-332f95b6df5d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you counted 8, 9, 10 to be 3, but remember when we add on we start after the starting number. 8 + 3 = 11, so what do we add to get from 8 to 10?",
         "B": "From 8 to 10 she added 2. Then if she wants to add 7 altogether, the next jump must be +5 (2 + 5 = 7)",
@@ -109,7 +109,7 @@
     {
       "questionId": 159575,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1814e292-4ae0-4c47-8597-4292ca8beb34.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, 8 is only 1 bigger than 7, but 13 is 10 bigger than 3.",
         "B": "Almost, but I think you might have counted 13, 14, 15,... when you were counting up. If we are counting on from 13, we start 14, 15, 16,...",
@@ -121,7 +121,7 @@
     {
       "questionId": 159354,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/37d87fb6-e1fd-457b-b02c-e35a3887fb1c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "8 + 1 is the same as 9, so 8 + 8 + 1 would work out 9 + 8. Which one does not have a part that equals 9 and a part that equals 8?",
         "B": "10 - 1 is the same as 9, so 8 + 10 - 1 would work out 9 + 8. Which one does not have a part that equals 9 and a part that equals 8?",
@@ -133,7 +133,7 @@
     {
       "questionId": 159576,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5808be3f-28dd-43b9-b747-e8be1caf2082.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "6 + 3 is the same as 9, so 6 + 6 + 3 would work out 9 + 6. Which one does not have a part that equals 9 and a part that equals 6?",
         "B": "10 + 1 = 11, not 9, so this calculation will not work out 9 + 6. All the others have a part that equals 9 and a part that equals 6.",

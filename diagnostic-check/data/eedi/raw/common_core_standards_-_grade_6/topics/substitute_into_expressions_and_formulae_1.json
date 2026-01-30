@@ -31,7 +31,7 @@
     {
       "questionId": 77122,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/00839ae1-da90-426d-b6f3-9ac90006cd0f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you subtracted g, but we need to +",
         "B": "Almost, but remember we have to add those digits",
@@ -55,7 +55,7 @@
     {
       "questionId": 77123,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7c102a1b-999a-40b7-95e8-43f767719b85.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have done 13t - 2t. Here we are told to replace t with 2, and then work out the calculation",
         "B": "I think you have subtracted 2 rather than 2 lots of t",
@@ -67,7 +67,7 @@
     {
       "questionId": 78898,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/774d5d03-493b-43e4-b866-f742031a2afc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have subtracted 4 rather than 4 lots of t",
         "B": "We have 15 - 4t = 15 - 4 × 3 = 15 - 12 = 3.",
@@ -79,7 +79,7 @@
     {
       "questionId": 77124,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b200a44f-e0fb-4074-8d45-b97c6d97f9b7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have done 10x - 5x. Here we are told to replace x with 4, and then work out the calculation",
         "B": "We have 10 × 4 - 5 = 40 - 5 = 35.",
@@ -91,7 +91,7 @@
     {
       "questionId": 78899,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/30c1437a-1550-49d2-bd5b-ced2354b42a0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have done 6x - 3x, and then substituted in x =3. but the expression is 6x - 3. Here we need to replace x with 3, and then work out the calculation",
         "B": "I think you have done 6x - 3x. Here we are told to replace x with 3, and then work out the calculation",
@@ -103,7 +103,7 @@
     {
       "questionId": 77125,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6d66d79f-02ed-4075-b461-f29ea433d496.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have found the value for 2y, but what is the value of y?",
         "B": "I think you have found out what -2y is. What is the value of y?",
@@ -127,7 +127,7 @@
     {
       "questionId": 77126,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6c6cab31-5ca3-4976-887c-cc0dbe5d0289.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You are almost there. Remember that 3d means 3 x d. Also, be really careful with your negatives.",
         "B": "Nearly. You will have 15 - - 9. What happens when you subtract a negative?",
@@ -139,7 +139,7 @@
     {
       "questionId": 78901,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/45491fd3-59a5-4217-a38b-9f7cf37a1b96.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You are almost there. Remember that 2d means 2 x d. You also need to be really careful with the negative signs.",
         "B": "Nearly. You will have 10 - - 4. What happens when you subtract a negative?",

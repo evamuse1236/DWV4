@@ -37,7 +37,7 @@
     {
       "questionId": 76813,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f7345e35-8c48-4889-8497-37f3599ad31b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Be careful when you are calculating depreciation, the car will reduce in price. We need to use the amount left, 100% - 10% = 90% as the multiplier, and raise this to the power of years.",
         "B": "To find the amount the car depreciates by we find £4500 × 0.9³ and then subtract this from £4500. This gives £1219.50.",
@@ -49,7 +49,7 @@
     {
       "questionId": 78847,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e9ce5a3e-bdee-4f7d-9467-b4fa4b1a1b68.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Nearly! It looks like you have calculated the new price of the car not the value the car has decreased by.",
         "B": "We have £3500 × 0.9⁴ = £2296.35. Subtracting this from £3500 gives £1203.65.",
@@ -61,7 +61,7 @@
     {
       "questionId": 76814,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/24ebbaad-c4cf-4306-8541-f40c72d5c7ff.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, I think you might have rounded up. After 6 years it isn't quite double the value. To help, give the value of the house a number and use a multiplier method to increase its value by 12% every year. How many years will it take for the value to double?",
         "B": "Not quite. To help, give the value of the house a number and use a multiplier method to increase its value by 12% every year. How many years will it take for the value to double?",
@@ -73,7 +73,7 @@
     {
       "questionId": 78848,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/800486af-0dc8-461a-a806-0baf293a6df8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. To help, give the value of the house a number and use a multiplier method to increase its value by 15% every year. How many years will it take for the value to double?",
         "B": "The best way to answer this question is to keep multiplying 1.15 together in a calculator until we get over 2. We have 1.15⁴ = 1.75 and 1.15⁵ = 2.01, so the answer is 5.",
@@ -85,7 +85,7 @@
     {
       "questionId": 76818,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1bfc317f-7556-4cca-8ec2-d71aad8d4878.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Remember that the athlete runs 1/10 more each day compared to the day before, not just 1/10 of 2km extra every day.",
         "B": "Remember that the athlete runs 1/10 more each day compared to the day before, not just 1/10 of 2km extra every day. Remember the first day is 2km so that one is already counted.",
@@ -97,7 +97,7 @@
     {
       "questionId": 78852,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a3abefde-151e-4d2c-a4dc-c4c8c68d35bb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember on the first day she runs 1km, so that one is already counted.",
         "B": "1/5 is the same as 20%, so we have 1 × 1.2⁷ = 3.58 km, which rounds to 3.6km.",
@@ -121,7 +121,7 @@
     {
       "questionId": 78853,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1d8ea573-5f6e-498e-894c-7b2ab06bc8da.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Remember the van has lost value by the end of year one. Use a multiplier method to check the number of years.",
         "B": "Be careful. Use a multiplier method to check the number of years.",
@@ -145,7 +145,7 @@
     {
       "questionId": 78857,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/61392d61-6f81-4172-8f38-62483a2a5612.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Be careful. 0.25 = 25% NOT 2.5%. Remember when we are increasing by a percentage, we are finding more than 100%. Think of what our multiplier should be if we want to increase by 2.5%.",
         "B": "Not quite. Remember the formula should increase £7000 by 2.5%. Multiplying by 0.025 would find 2.5% of 7000, rather than increase by it.",

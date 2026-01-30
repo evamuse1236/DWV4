@@ -31,7 +31,7 @@
     {
       "questionId": 158830,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dbc710fb-2558-40b5-9963-74eeaf55b514.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite - the difference from 17 to 30 is 13, but are they 13 hours?",
         "B": "Not quite - 3 minutes after 3:17 would be 3:20. Check your calculation again.",
@@ -43,7 +43,7 @@
     {
       "questionId": 159029,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/04559ba0-9f24-421a-893f-bf8d772723e6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite - the difference from 9 to 30 is 21, but are they 21 hours?",
         "B": "Not quite - 11 minutes after 5:09 would be 5:20. Check your calculation again.",
@@ -55,7 +55,7 @@
     {
       "questionId": 158831,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e52666b7-788c-43c6-826e-b605df859746.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you might have done 30 - 10, but that would be subtracting the wrong way round as 5:10 is the later time. Try counting forward from 4:30. How many minutes is it to 5pm? Then how many to 5:10?",
         "B": "Not quite - 30 minutes after 4:30 would be 5pm. How many extra minutes would get us to 5:10?",
@@ -67,7 +67,7 @@
     {
       "questionId": 159030,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0ab3b441-f9f1-4437-a3d5-dc9cc04e738a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you might have done 30 - 20, but that would be subtracting the wrong way round as 11:20 is the later time. Try counting forward from 10:30am. How many minutes is it to 11am? Then how many to 11:20?",
         "B": "Not quite - maybe you did 11:20 - 10:30? This doesn't work because there are 60 minutes in an hour, not 100. Try counting forward from 10:30. How many minutes is it to 11am? Then how many to 11:20?",
@@ -91,7 +91,7 @@
     {
       "questionId": 159031,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/01af340c-a04f-4b0f-bb34-e39cd090ae2c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "We need to add 14 minutes to 7:09, not subtract, because 7:09 is the start time.",
         "B": "9 + 14 = 23, so 14 minutes after 7:09pm is 7:23pm.",
@@ -127,7 +127,7 @@
     {
       "questionId": 158834,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/65f84178-7e59-4a1c-b425-3f7e6d7567a2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have added 18 minutes for the meeting, but what about cheerleading practice?",
         "B": "40 minutes after 2:15 is 2:55pm. Then we can add 5 minutes to reach 3pm, and another 13 minutes to 3:13pm for the end of the meeting (5 + 13 = 18 minutes total).",
@@ -139,7 +139,7 @@
     {
       "questionId": 159033,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/02588728-7b98-460e-ace0-eedac59b50da.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have added 22 minutes for the meeting, but what about cheerleading practice?",
         "B": "I think you have added 35 minutes for cheerleading, but what about the meeting?",

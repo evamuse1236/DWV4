@@ -25,7 +25,7 @@
     {
       "questionId": 91661,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6a3b6ee8-f09e-4603-a8d3-94a359e0d777.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You may have thought that because there are more greens that they take up more space. Compare the lengths of the green and purple tiles. If an extra one of each is added to the diagram which section will be longer?",
         "B": "You may have thought that because there are fewer greens that they take up less space. Compare the lengths of the green and red tiles. If an extra one of each is added to the diagram which section will be longer?",
@@ -37,7 +37,7 @@
     {
       "questionId": 91679,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/280a9c8f-cfee-4b9b-91cc-603b49486826.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You may not have expanded the brackets correctly. 3(r+w) means 3 lots of r plus 3 lots of w and can be written as 3r + 3w. Now use the diagram to work out whether 3 red tiles and 3 white tiles would be shorter than 3 purple tiles.",
         "B": "For Jo’s statement, 6g < 4p, you'd need to add one more purple tile (p) and two more green tiles (g) to the diagram. From the diagram we can see that 2 green tiles are longer than one purple tile so 6g would be greater than 4p. You could also divide Jo's statement by 2 and get 3g < 2p and from the diagram we can clearly see that 3 greens are in fact greater than 2 purples. Expanding the brackets from Paul’s statement gives 3r ＋ 3w < 3p, and it can be seen from the diagram that 3 red tiles and 3 white tiles are less than 3 purple tiles so it is a true statement.",
@@ -61,7 +61,7 @@
     {
       "questionId": 91684,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8f88a95e-7f4a-40a4-815c-93d843246f5d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Maybe you have struggled to combine the inequality with the diagram. The diagram shows us that 3k is equal to m. If we are adding 2 to 3k and adding 1 to m can you picture what the diagram would now look like?",
         "B": "This would be the case if you were just given the statement 3k+2<m+1, but the diagram also tells us that 3k is equal to m. Imagine what happens to the bar diagram when you add 2 to 3k and add 1 to m.",
@@ -73,7 +73,7 @@
     {
       "questionId": 91667,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/46064d77-424c-42ba-ba45-8d8397bd02eb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Maybe you have struggled to combine the inequality with the diagram. The diagram shows us that 3k is equal to m. If we are adding 2 to 3k and adding 2 to m can you picture what the diagram would now look like?",
         "B": "This would be the case if you were just given the statement 3k+2<m+2, but the diagram also tells us that 3k is equal to m. Imagine what happens to the bar diagram when we add 2 to both 3k and m.",
@@ -97,7 +97,7 @@
     {
       "questionId": 91668,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5cf2ec49-e028-4539-9fc0-2bcd27f872e5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Maybe you tried to visualise a quarter of the 4 bar and add it on. But remember, the diagram is not drawn to scale. What could happen when we add 1 to the 4 bar?",
         "B": "This diagram is not to scale and we have no information on the value of p. We do not know whether adding 1 would make the 4 bar longer than p, the same as p or shorter than p.",
@@ -109,7 +109,7 @@
     {
       "questionId": 91686,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/49c7e7a9-dff3-4bbc-962c-45a1a109f6d2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You may have assumed the gap in the diagram was shorter than 1 in width. But remember, the diagram is not drawn to scale. What could we have left when we subtract 4 from p?",
         "B": "This diagram is not to scale and we have no information on the value of p. Therefore we do not know the width of the missing section. When we subtract 4 from p we could get an answer less than 1, equal to 1 or greater than 1. Therefore the statement is only sometimes true.",
@@ -121,7 +121,7 @@
     {
       "questionId": 91669,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/25c46ead-c876-44a1-b5c1-72b68469eb71.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Have a think about what has changed to the left and right sides of the equation. Will the left hand side or the right hand side now be greater? Remember to think about what would happen with negative numbers as well",
         "B": "Comparing x = y – 4 with Katie’s statement: x > y − 5, it can be seen that the right-hand side of Katie’s expression is 1 less than the right-hand side of the original equation. Therefore, she is correct in stating x > y − 5 as if you have taken 1 away from the right hand side it will now be smaller than the left hand side. Tom’s statement is not always true: it is for positive values but not negative amounts. An example of a set of negative values that fit the original equation are x = −6, y = −2. Substituting these into Tom’s statement gives −12 > −6, which is clearly false.",

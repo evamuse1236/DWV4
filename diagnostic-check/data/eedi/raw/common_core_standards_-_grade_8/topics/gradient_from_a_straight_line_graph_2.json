@@ -49,7 +49,7 @@
     {
       "questionId": 107185,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dc8b0112-e181-4367-abef-f32fde458e1e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "To calculate the gradient of the line, we need to find the change in 𝑦 divided by the change in 𝑥. To do this we can use two points on the line and calculate the difference between their y coordinates and their x coordinates. Not quite.",
         "B": "To calculate the gradient of the line, we need to find the change in 𝑦 divided by the change in 𝑥. It looks like you might have calculated the change in x divided by the change in y.",
@@ -61,7 +61,7 @@
     {
       "questionId": 107176,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f224d1f9-f52d-4039-aff9-8d6a1ce63ba4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you may have found the 𝑥 intercept of the line. To calculate the gradient of the line, we need to find the change in 𝑦 divided by the change in 𝑥.",
         "B": "Not quite. To calculate the gradient of the line, we need to find the change in 𝑦 divided by the change in 𝑥. To do this we can use two points on the line and calculate the difference between their y coordinates and their x coordinates.",
@@ -109,7 +109,7 @@
     {
       "questionId": 107178,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8467fb65-d0bf-47dc-a9ca-ecbe2c1ddc68.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "0 is the gradient of a horizontal line. The gradient of the line is the change in 𝑦 divided by the change in 𝑥. Choose two points on the line, what is the difference between the x coordinates? What will happen when we try to divide by this number?",
         "B": "The gradient of the line is the change in 𝑦 divided by the change in 𝑥. Choose two points on the line, what is the difference between the x coordinates? What will happen when we try to divide by this number?",
@@ -121,7 +121,7 @@
     {
       "questionId": 107188,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c30b22b4-ca6d-4121-9781-a69dcf357a20.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "0 is the gradient of a horizontal line. The gradient of the line is the change in 𝑦 divided by the change in 𝑥. Choose two points on the line, what is the difference between the x coordinates? What will happen when we try to divide by this number?",
         "B": "Vertical lines have no change in the 𝑥 value, and so the gradient calculation involves dividing by 0, which produces an undefined value.",

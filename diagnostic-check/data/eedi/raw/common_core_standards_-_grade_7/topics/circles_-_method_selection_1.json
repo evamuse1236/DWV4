@@ -43,7 +43,7 @@
     {
       "questionId": 78322,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/905705ef-2dd6-462d-b961-3bb05d8c055f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This diagram shows the circumference. Remember a radius is a line inside the circle.",
         "B": "This diagram shows a chord (a line segment that connects any two points on the circumference of a circle). Remember a radius touches the centre of the circle.",
@@ -67,7 +67,7 @@
     {
       "questionId": 78323,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eec60b12-2ef5-497d-bd50-e665887d28fa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is the formula for the area of a circle. I can tell this because for area, we multiply two lengths together - this is what's happening here with the 𝑟² element of the formula. Circumference is a length, so its calculation will just involve a length multiplied by a number.",
         "B": "This is the correct formula. Because the diameter is twice the radius (𝑑 = 2𝑟), we can also write 𝐶 = 2𝜋𝑟.",
@@ -91,7 +91,7 @@
     {
       "questionId": 78324,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/027604a7-0327-48f7-868d-158f1bd16c18.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think perhaps you've multiplied 𝜋 by 𝑟. Area calculations always involve multiplying a length by another length, possibly even with the same value!",
         "B": "I think you've muddled your formulae and have worked out the circumference, which is 2𝜋𝑟. What's the area formula for a circle? (Hint: Area calculations always involve multiplying a length by another length, possibly even with the same value!)",
@@ -103,7 +103,7 @@
     {
       "questionId": 78618,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/887234a0-5dd3-4a26-a262-9158350f1f44.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've muddled your formulae and have worked out the circumference, which is 2𝜋𝑟. What's the area formula for a circle? (Hint: Area calculations always involve multiplying a length by another length, possibly even with the same value!)",
         "B": "Area of a circle (𝐴) = 𝜋𝑟². Substituting in the value of 4 for the radius gives 𝐴 = 𝜋 × 4² = 3.142 × 16 = 50.272 cm².",
@@ -115,7 +115,7 @@
     {
       "questionId": 78325,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/356d1c08-2d7a-4df4-92a8-f32e906763ac.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, remember the diameter is double the radius not half.",
         "B": "Not quite, I think you have confused the diameter and radius in the formula for the circumference. Remember C = 𝜋d NOT 𝜋r.",
@@ -139,7 +139,7 @@
     {
       "questionId": 78326,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/56da1654-b047-4c03-a815-9fe6d958cc1c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you used the diameter as 40, and then found the circumference. You have been given the circumference and need to work back to find the radius.",
         "B": "2𝜋r = circumference, so 2𝜋r = 40. Dividing by 2𝜋 will give the radius, and then double this to get the diameter.",
@@ -151,7 +151,7 @@
     {
       "questionId": 148112,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a4069884-411a-41d8-a1f9-a2b75ffe7ee4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Dividing by pi gives the diameter not the radius.",
         "B": "I think that you found the diameter but then went on to work out the radius, which you gave as your answer. Go back a step for the correct answer!",

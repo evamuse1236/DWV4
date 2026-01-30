@@ -37,7 +37,7 @@
     {
       "questionId": 81287,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/104f32ac-75a7-44d0-85ee-e5b5aa9ee530.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you have given the percentage as the deposit, but we need to calculate 25% of £900. How can we do that?",
         "B": "It looks like you have found 20% of £900. We need to find 25%.",
@@ -49,7 +49,7 @@
     {
       "questionId": 81462,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c40b1bd4-9025-4f78-9d0d-013c239d44f1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you have found the remaining amount to pay after the deposit has been paid. We just need to find the deposit amount, 30% of £800.",
         "B": "It looks like you have found 25% of £800. We need to find 30%.",
@@ -61,7 +61,7 @@
     {
       "questionId": 81288,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f1844f4f-013e-4ac8-92d6-e3fe7ff84052.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you have found 20% of the total amount, not the remaining amount after the deposit has been paid. We need to take the deposit of 25% off first and then find 20%.",
         "B": "Nearly! It looks like you have correctly found the remaining amount. Next we need to find the interest that must be paid, which is 20% of this remaining amount.",
@@ -73,7 +73,7 @@
     {
       "questionId": 81463,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2fecea4c-e819-4bec-b389-79ddb7ca3d35.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you've found the total amount that will still be left to pay after the deposit has been paid. Here we just need to know how much the interest will be.",
         "B": "It looks like you have found 25% of the original amount, but we need to subtract the deposit first before we work out the 25% interest.",
@@ -85,7 +85,7 @@
     {
       "questionId": 81289,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d62950e-73be-4d44-aa90-24e69c05c9ee.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Remember we have to pay interest with this deal so we need to add this on to the price of the bike.",
         "B": "The remaining amount (after the deposit has been paid) is £900 × 0.75 = £675. The interest is then £675 × 20% = £675 × 0.2 = £135. Adding the interest on to the price of the bike gives a total of £135 + £900 = £1035.",
@@ -109,7 +109,7 @@
     {
       "questionId": 81290,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/06d0b915-e57c-4c03-a55c-d29770efb873.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have calculated the interest for one year, not two.",
         "B": "Nearly! You have found out the total amount owed but the question asks us to find the interest only.",
@@ -133,7 +133,7 @@
     {
       "questionId": 81291,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1ea1b94a-bb9d-4e99-806f-3f99c20b538e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have calculated simple interest rather than compound interest.",
         "B": "We have £6000 × 1.12^5 = £10 574.",
@@ -145,7 +145,7 @@
     {
       "questionId": 81466,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cc52c244-91d4-4f28-97b7-fe4e4a559992.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost! I think you have calculated the amount owed after 3 years, rather than 4.",
         "B": "Close! I think you have calculated the interest. The question asks us for the total amount that Kate will owe, so we need to include the original loan as well as the interest.",

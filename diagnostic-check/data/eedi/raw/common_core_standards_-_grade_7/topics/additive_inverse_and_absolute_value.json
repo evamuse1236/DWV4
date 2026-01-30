@@ -43,7 +43,7 @@
     {
       "questionId": 165514,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/57f114b5-74a4-4400-b634-17b48d13a26a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you might have done 7 + 7. Take a closer look at the question, the first 7 is negative. What is -7 + 7?",
         "B": "TRUE",
@@ -55,7 +55,7 @@
     {
       "questionId": 165519,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5e8367f1-b1b9-4425-b2a5-4cfbccd78ae5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Close! I think you might have included -9 when you started counting on. We're at -9 and jumping up by 9. Our first jump will put us at -8, second jump at -7 and so on...",
         "B": "I think you might have done 9 + 9. Take a closer look at the question, the first 9 is negative. What is -9 + 9?",
@@ -67,7 +67,7 @@
     {
       "questionId": 165515,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e6a603fa-39e6-4db4-b42c-b8c7a20cd98d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! I think you may have started counting on -3. The first jump is the first one we count so when starting at -3 the first jump takes us to -2. You could also think about if we are 3 below zero then what do we add to get back up to zero?",
         "B": "I think you may have got mixed up with multiplying here as anything multiplied by zero is zero. But the question is asking what do you add to -3 to get to zero?",
@@ -79,7 +79,7 @@
     {
       "questionId": 165520,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5e3063d0-fa83-4648-b59a-736e9f1e0c1e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! I think you may have started counting on -5. The first jump is the first one we count so when starting at -5 the first jump takes us to -4. You could also think about if we are 5 below zero then what do we add to get back up to zero?",
         "B": "-5 + 5 = 0 so the answer is 5.",
@@ -91,7 +91,7 @@
     {
       "questionId": 165516,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c8309f5e-0678-4dec-b66e-09b166c5ba29.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have added 6 to zero to get 6 and the two sixes together to get 12. Have a look at where the zero is. What number will be to the left of that so that when we add 6 to it, we get zero? And what about when you are at zero and you add 6. What do you get?",
         "B": "The left box must be -6 as when we add 6 that takes us to zero. When at zero and we add 6 that gets us 6. So the two numbers are -6 and 6.",
@@ -103,7 +103,7 @@
     {
       "questionId": 165521,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b939fbe7-2332-43a9-bc08-5b8c64626d7f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost! You have the correct value of -4. When you added 4 to that that took you to zero. So now you are at zero and adding 4 to get to the other box. What do you get?",
         "B": "Not quite! I think you might have added 4 to zero to get both of those answers. Try your answer; would 4 + 4 get you to zero? The left box has had 4 added to it to get to zero so if we wanted to work backwards to find what was in that box, what would we have to do?",
@@ -115,7 +115,7 @@
     {
       "questionId": 165517,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/39c0ae92-db51-47a7-a93f-83cf550e70a5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Be careful. Remember absolute value is the distance away from zero. The direction doesn't matter. How far away from zero is -5?",
         "B": "I think you may have mixed up absolute value with squaring. Remember absolute value is the distance away from zero. How far away from zero is -5?",
@@ -139,7 +139,7 @@
     {
       "questionId": 165518,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/02abfb6a-de95-4b55-8d7e-0e18d45c6a4b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Be careful. We want the distance from -3 to zero. Can a distance be negative?",
         "B": "You're close! I think you may have included the -3 as you were counting on. We start at -3 so the first jump takes us to -2, the second jump to -1 etc. How many jumps are needed to get to zero?",
@@ -151,7 +151,7 @@
     {
       "questionId": 165523,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e020c057-fb07-4ea8-89be-ed83fe445429.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You're close! I think you may have included the -7 as you were counting on. We start at -7 so the first jump takes us to -6, the second jump to -5 etc. How many jumps are needed to get to zero?",
         "B": "Not quite! I think you may have started at zero as well as including that value when you were counting on. Read the question carefully, where should you be starting from?",

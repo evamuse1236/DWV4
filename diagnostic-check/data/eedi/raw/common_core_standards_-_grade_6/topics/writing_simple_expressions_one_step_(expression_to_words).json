@@ -19,7 +19,7 @@
     {
       "questionId": 166219,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/75b5bf92-15c2-4450-a2d6-652e08c6deaf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Although this is a fraction, can you think about it in terms of a calculation ?",
         "B": "You're close! Be careful with the order. Remember it matters the order that we divide in.",
@@ -31,7 +31,7 @@
     {
       "questionId": 166446,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3442a45e-c6c3-4155-8621-ee66c0b397e9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You're close! Be careful with the order. Remember it matters the order that we divide in.",
         "B": "Not quite. It doesn't mean multiply. What operation is it when it's written like a fraction? Think of the calculation...",
@@ -43,7 +43,7 @@
     {
       "questionId": 166220,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/23660ba7-06b6-44b2-a1b9-0d84045ac05e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. You have stated what terms are there, but which mathematical operation is happening?",
         "B": "Not quite! Look carefully. Which mathematical operation is happening between the 9 and the h?",
@@ -79,7 +79,7 @@
     {
       "questionId": 166448,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/53cd721c-f9f4-443b-944d-82b8fa4d715d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Close! You have the correct operation, but remember it matters what order we subtract in. What are you starting with and what are you taking from that?",
         "B": "Not quite! Although when we're finding a difference we do subtract, the order always matters. Think carefully about what this expression is saying...",
@@ -91,7 +91,7 @@
     {
       "questionId": 166222,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/575c845c-68a2-4b8c-bb50-c2d060d4b499.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! Think carefully about what the dot represents between the number and the letter. What mathematical operation is it?",
         "B": "The dot is used to represent multiplication. Multiplying by 3 is the same as tripling.",
@@ -127,7 +127,7 @@
     {
       "questionId": 166450,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/80ac3bbd-0798-4f26-af15-6ef7c5fc5659.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember addition is commutative so can be done in any order.",
         "B": "Adding 7 to something and multiplying by 7 are not the same thing. So 7 + k does not mean 7 times the value of k.",

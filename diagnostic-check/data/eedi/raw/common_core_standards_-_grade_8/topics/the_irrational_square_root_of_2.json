@@ -79,7 +79,7 @@
     {
       "questionId": 167093,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/697efc99-c9a0-4d90-a73b-b8de2ebf0793.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Close, but some non-terminating decimals are still rational, for example 0.33333... What is it that makes those ones rational and others not?",
         "B": "Non-repeating decimals can still be rational if they terminate, for example 1.325 is a rational number. What is it that makes non-repeating non-terminating decimals irrational?",
@@ -115,7 +115,7 @@
     {
       "questionId": 166845,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e703bfaa-5b67-468e-bfa8-166dc4185bfd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, only decimals that either repeat or terminate are rational.",
         "B": "An irrational number has a non-terminating decimal. A calculator has to truncate or round because no display screen could ever fit on all of the digits of an irrational number if it goes on forever! Therefore, we can't use this answer to prove √2 is irrational as we can't see that it goes on forever.",
@@ -127,7 +127,7 @@
     {
       "questionId": 167095,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5c2407a2-1d98-409e-bfe2-2498d9ceb536.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It is true that we can't write it as a fraction, but why is that?",
         "B": "Some non-terminating decimals are still rational numbers, such as 0.7777777... What is it that makes some rational and some not?",

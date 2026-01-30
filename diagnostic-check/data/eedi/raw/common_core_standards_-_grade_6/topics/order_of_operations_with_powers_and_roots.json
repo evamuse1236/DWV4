@@ -37,7 +37,7 @@
     {
       "questionId": 131581,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c038bf0c-cd7e-4c52-84d0-abf24726fecd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Applying the order of operations, you need to complete the division calculation first before any of the addition ones so the sum becomes: 3 + 3 + 1 which gives 7.",
         "B": "I think you have accidentally calculated both addition steps and then divided the resulting answers. Unfortunately we have to apply the order of operations law (BIDMAS/ BODMAS) so we need to calculate the division step before the addition steps.",
@@ -61,7 +61,7 @@
     {
       "questionId": 131582,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/12650a37-f12e-4519-b641-b88d2d2a0754.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you forgot to do the brackets first. Work out what is inside the brackets and then continue with B I DM AS",
         "B": "I think you did the addition first, and then divided by what was in the bracket. Remember to use B I DM AS (order of operations)",
@@ -73,7 +73,7 @@
     {
       "questionId": 133775,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/de748aa4-0812-4d6e-b9b5-5837b8312b03.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you did the calculation from left to right. Remember to use B I DM AS (order of operations)",
         "B": "Using our order of operations we do the brackets first. That leaves 4 + 12 ÷ 4. Then we do division to get 4 + 3 = 7",
@@ -97,7 +97,7 @@
     {
       "questionId": 133776,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/09c4eb8d-397e-4043-ac23-dd5d62f1c6de.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you did the multiplication before squaring. Remember the order of operations, only the 4 is squared",
         "B": "I think instead of squaring the 4 you just added 2, then multiplied by 3. Remember 4² means 4 ✕ 4",
@@ -121,7 +121,7 @@
     {
       "questionId": 133777,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6a1a5a49-04b4-4b25-af94-e82d01e737ba.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have made a calculation error, let's go through both sums step by step. First looking at Tom's: what is the square root of 16? What about 9? If you add those together, what do you get? Now Katie's: what is 16 + 9? What would be the square root of this total? So who is correct, if anyone?",
         "B": "First looking at Tom's sum: the square root of 16 is 4 and the square root of 9 is 3. If we add those together, we get 7. Now if we calculate Katie's: 16 + 9 = 25 so we need to find the square root of 25 which is 5. Therefore, Katie is the only one who is correct.",
@@ -145,7 +145,7 @@
     {
       "questionId": 133778,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/45763c81-0142-458a-97d0-6fd6b626d179.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have accidentally doubled 10 to get 20. The little 2 next to the 10 is index notation telling us we have to square the number, not double it. Then the radical symbol (the box over 10 squared) tells us we have to square root this answer. 10 x 10 = ? now square root your answer.",
         "B": "I think you have accidentally halved 10 and then squared this answer. Let's go through the mathematical symbols shown and what they mean. The little 2 is index notation telling us we have to square 10. This means times 10 by itself: 10 x 10 = ?. Then the box (radical symbol) over the 10 squared means square root so we have to take our answer to 10 x 10 and square root it.",

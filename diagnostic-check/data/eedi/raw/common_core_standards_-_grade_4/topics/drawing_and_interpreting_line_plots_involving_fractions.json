@@ -25,7 +25,7 @@
     {
       "questionId": 158026,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/25091529-20ba-4df8-b996-8c020aa510ff.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have got the correct amount of dots for each fraction but you need to put the fractions in numerical order...",
         "B": "There are four 1/4 fractions in the list so 4 dots above this fraction, there are two 1/2s so 2 dots above this fraction and there are three 3/4s so three dots above this fraction. 1/4, 1/2 and 3/4 are in numerical order so this is the correct line plot for the data set!",
@@ -37,7 +37,7 @@
     {
       "questionId": 158193,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/30c6e287-c3b7-4d0b-8f0d-bd54ca203108.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Double check the number of 5/8s...",
         "B": "Your dots correspond to the numerator in each fraction, the dots need to represent how many of each fraction there are...",
@@ -49,7 +49,7 @@
     {
       "questionId": 158027,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ba4a5337-12b1-42c4-a481-ee44348b8b5f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The mixed numbers are in numerical order and you have the correct number of dots for each: for example, there are 3 terms of 6 1/4 in the list so 3 dots go above 6 1/4 therefore A is the correct line plot!",
         "B": "Double check the number of 6 1/4s...",
@@ -73,7 +73,7 @@
     {
       "questionId": 158028,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3c1be0e6-54f9-47c6-bca4-029e106077e7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is the weight of the heaviest package but the question is asking for the difference in weight between the heaviest and lightest packages...",
         "B": "This is the weight of the lightest package but the question is asking for the difference in weight between the heaviest and lightest packages...",
@@ -97,7 +97,7 @@
     {
       "questionId": 158029,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ad258876-022a-4666-bcac-0c34f5944f21.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is the difference between the heaviest and the lightest packages, the question wants the total of all the packages so you need to add the weights of the packages together...",
         "B": "To find the total weight of the packages, we need to add them: 1/4 + 1/4 + 1/4 + 2/4 + 3/4 + 3/4 = 11/4 = 2 3/4 therefore the total weight of the packages is 2 3/4 pounds.",
@@ -109,7 +109,7 @@
     {
       "questionId": 158196,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4ca7225c-3c73-4d38-bbad-cdf4876ed15c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is the total of 2/6 + 3/6 + 4/6 but there are 3 suitcases weighing 3/6 and 2 suitcases weighing 4/6 not just one of each...",
         "B": "This is the difference between the heaviest and the lightest suitcases, the question wants the total of all the suitcases so you need to add the weights of the suitcases together...",
@@ -133,7 +133,7 @@
     {
       "questionId": 158197,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b2ac009a-15d6-4b5c-b40b-128565c2f36b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have added but to find the difference we need to subtract...",
         "B": "To find the difference between the largest and smallest number of cups required we need to do 3 2/6 - 1 1/6. 3 - 1 = 2 and 2/6 - 1/6 = 1/6 so the difference is 2 1/6 cups.",

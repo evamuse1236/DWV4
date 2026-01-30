@@ -43,7 +43,7 @@
     {
       "questionId": 73584,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4861d574-d677-4c4d-9342-c343682a9248.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! You have multiplied by -1 here, whereas this expression means we are looking for the value of 3 to the power of -1",
         "B": "Not quite! I think you have read this as 3 subtract 1, whereas this expression means we are looking for the value of 3 to the power of -1",
@@ -55,7 +55,7 @@
     {
       "questionId": 73790,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/590674dd-5792-4ff8-bbc8-5d31f0ff91c1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! You have multiplied by -1 here, whereas this expression means we are looking for the value of 5 to the power of -1",
         "B": "A power of -1 means the reciprocal, so 5⁻¹ = 1/5.",
@@ -79,7 +79,7 @@
     {
       "questionId": 73791,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d838ea67-b10c-4547-beac-c4c520d518a0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! You have correctly found the reciprocal, but a power of 2 does not mean multiply by 2. What does it mean instead?",
         "B": "Not quite! You have squared correctly, but the negative attached to the power doesn't make the answer negative, it means something else...",
@@ -91,7 +91,7 @@
     {
       "questionId": 73590,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/be497566-4f31-4aed-95df-8e1da5289b1a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! You have multiplied the top powers and then divided by the denominator power. When we multiply / divide indices we need to remember to add / subtract the powers.",
         "B": "Almost! Think about your final step. You have have added the numerator powers correctly, but then divided by the power in the denominator. What's the rule for what we do to the powers when we divide?",
@@ -127,7 +127,7 @@
     {
       "questionId": 73802,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9821af8c-2481-4b2e-9599-06d00b9dd920.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Good try! I think you are confusing fractional indices with negative indices here, and have found 36 raised to the power of -1. What is the value of 36 raised to the power of ½?",
         "B": "Not quite! You have read this as 36 multiplied by ½, whereas we are looking for the value of 36 raised to the power of ½",
@@ -139,7 +139,7 @@
     {
       "questionId": 102981,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f11c5c72-072e-4473-981f-82421136aa97.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! Have another look at the values of the indices we are adding here.",
         "B": "Not quite! You have multiplied the indices (powers) here, which we do when raising a power to another power, but not when simplifying multiplying. What happens to the indices when expressions with the same base are multiplied?",
@@ -151,7 +151,7 @@
     {
       "questionId": 102990,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0fccea56-6827-4a08-8890-81add3200650.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! Have another look at the values of the indices we are adding here.",
         "B": "When expressions with the same base are multiplied, their indices are added. In this case, both base numbers are 8, so we can add the indices: 8 + (−5) = 8 − 5 = 3, giving a complete answer of 8³.",

@@ -43,7 +43,7 @@
     {
       "questionId": 98492,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4fa34b24-2310-4bc0-a2eb-96301e314311.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, I think you might have missed a length in your calculation.",
         "B": "Not quite, I think you might have missed a length in your calculation.",
@@ -55,7 +55,7 @@
     {
       "questionId": 109443,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/70376ed8-3b66-45b4-916a-927237c7c32e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Be careful. I think you have miscalculated some of the missing lengths. To help, think about what the total of all the vertical lengths on the left hand side of the shape would have to be and then repeat for the horizontal lengths. How can you use these totals to find the missing lengths?",
         "B": "Be careful. I think you have miscalculated some of the missing lengths. To help, think about what the total of all the vertical lengths on the left hand side of the shape would have to be and then repeat for the horizontal lengths. How can you use these totals to find the missing lengths?",
@@ -91,7 +91,7 @@
     {
       "questionId": 129219,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/03624d30-bac5-42f4-889f-d1373d73cf7a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The perimeter is the length all the way around the outside, you seem to have only added the two sides labelled. What will the lengths of the bottom and left sides be?",
         "B": "The area would be 36, but we want the perimeter, which is the length around the outside of the shape. Try adding up all of the side lengths.",
@@ -103,7 +103,7 @@
     {
       "questionId": 137795,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b3ed14e4-cad5-4395-a8e9-9f0805ef30d8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. I think you may have miscalculated or subtracted the width of the rectangle from 8 cm. What do the star and the 8 cm length need to add up to?",
         "B": "The diagram shows that the length of the rectangle is 12 cm. Looking at the opposite side of the rectangle, the star and the 8cm must also add up to 12 cm. ⭐ + 8 = 12 so ⭐ = 12 - 8 = 4 cm.",
@@ -115,7 +115,7 @@
     {
       "questionId": 137810,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3ffeae9b-4cf3-4e1e-8fbd-01edc2656924.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have added up all the lengths given. But we are not finding the perimeter here. The star represents the width of the rectangle. How wide is the rectangle?",
         "B": "I think you might have chosen 12 cm because the length of the rectangle is 12 cm. But the star represents the width of the rectangle. How wide is the rectangle?",
@@ -139,7 +139,7 @@
     {
       "questionId": 158158,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e779d355-5671-4ac5-8dc5-64d7b24e67d0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have taken 34 from 94 and then halved this answer but there are two sides measuring 34cm...",
         "B": "You have correctly subtracted two lots of 34 from 94 but then you have forgotten to halve your answer to find the length of the missing side...",

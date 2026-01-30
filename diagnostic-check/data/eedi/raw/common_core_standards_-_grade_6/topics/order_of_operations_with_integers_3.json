@@ -31,7 +31,7 @@
     {
       "questionId": 89313,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/880a2ec9-1827-4e86-99fb-bdd26d96645c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You may have performed the addition first. Remember your order of operations",
         "B": "You may have made a calculation error. Have another go.",
@@ -67,7 +67,7 @@
     {
       "questionId": 89326,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8c64f27f-ac74-4db1-866b-ad5919d5d24b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You may have forgotten your order of operations. Multiplication must be carried out before addition, unless brackets show otherwise.",
         "B": "You may have forgotten your order of operations. Multiplication must be carried out before addition, unless brackets show otherwise.",
@@ -79,7 +79,7 @@
     {
       "questionId": 89315,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e69de4c0-c2bb-4efa-afb8-15673f9e0793.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You may have forgotten your order of operations. Addition and Subtraction have the same level of priority so you just work from left to right, unless there are brackets.",
         "B": "You may have forgotten that you have to carry out the calculation in the brackets before any other calculation",
@@ -91,7 +91,7 @@
     {
       "questionId": 89327,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c481daa2-2a21-4dfa-9c6a-3ac5cd9af5ca.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You may not have realised that the subtraction applies to everything inside the brackets. You must work out the bracketed calculation first and then the subtraction.",
         "B": "Jo is incorrect because we have to do brackets first, so the calculation would become 9-13= -4. Paul is correct because addition and subtraction have equal priority so going left to right we have 9-8=1 then 1+5 = 6",
@@ -115,7 +115,7 @@
     {
       "questionId": 89328,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ba86d908-f3f5-4c4c-af3b-8d14e5970215.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost. Remember calculations in brackets must be carried out before anything else so here you are suggesting the second addition needs to be done before the division.",
         "B": "Remember your order of operations. Brackets mean you should carry out that calculation first. Check the order in the question.",
@@ -127,7 +127,7 @@
     {
       "questionId": 89317,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8f060ae3-a6f3-469d-9b14-218addf3dd4f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You may have added the 1 and 2 at the end instead of multiplying them. Have another go and make sure you think about your order of operations / BIDMAS.",
         "B": "It looks like you may have worked out the addition before the multiplication. Remember to follow your order of operations / BIDMAS.",
@@ -139,7 +139,7 @@
     {
       "questionId": 89329,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/57e0eaea-1230-4b4b-8b4b-e33a94ca6d45.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you may have worked out the addition before the division. Remember to follow your order of operations / BIDMAS.",
         "B": "Taking into account the order of operations or BIDMAS, the division and multiplication need to be performed first. In such cases, it can be helpful to put brackets around these to avoid any mistakes: (18 ÷ 2) ＋ (2 ✕ 2) = 9 ＋ 4 = 13",

@@ -19,7 +19,7 @@
     {
       "questionId": 158335,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8206ab9a-c1d1-4383-9dee-63e1ee80fd88.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You've multiplied by 10. To divide by 10, we move the decimal point one place to the left. Remember that dividing by 10 will make the answer smaller than 1.3.",
         "B": "To divide by 10, we move the decimal point one place to the left. Therefore, 1.3 ÷ 10 = 0.13",
@@ -31,7 +31,7 @@
     {
       "questionId": 158554,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4f3f3a68-e2e6-47b3-a74d-616c0229eee1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You've put a zero in the middle of the number, but this isn't how we divide by 10. To divide by 10, we move the decimal point one place to the left.",
         "B": "You've put a zero at the start of the number, but this isn't how we divide by 10. To divide by 10, we move the decimal point one place to the left.",
@@ -43,7 +43,7 @@
     {
       "questionId": 158336,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a1d58db6-4dfd-4548-ae36-800a272cbf1c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You've put a zero at the start of the number, but this isn't how we divide by 10. To divide by 10, we move the decimal point one place to the left.",
         "B": "You've multiplied by 10. To divide by 10, we move the decimal point one place to the left. Remember that dividing by 10 will make the answer smaller than 0.8.",
@@ -55,7 +55,7 @@
     {
       "questionId": 158555,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0c13a121-7f3c-462e-a829-2def99891d75.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You've divided by 100, by moving the decimal point two places to the left. To divide by 10, we move the decimal point one place to the left.",
         "B": "You've put a zero at the start of the number, but this isn't how we divide by 10. To divide by 10, we move the decimal point one place to the left.",
@@ -79,7 +79,7 @@
     {
       "questionId": 158556,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aa516565-d5c1-42fe-90ef-42a2e8968ec2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, we can't ignore the zero. To divide by 100, we need to move the decimal point two places to the left.",
         "B": "To divide by 100, we move the decimal point two places to the left. Therefore, 40.7 ÷ 100 = 0.407",
@@ -91,7 +91,7 @@
     {
       "questionId": 158338,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/095b2de8-77b9-4336-bee7-d9055a3b8fcd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You've put three zeros at the start of the number, but this isn't how we divide by 1000. To divide by 1000, we move the decimal point three places to the left.",
         "B": "You've divided by 10,000, by moving the decimal point four places to the left. To divide by 1000, we move the decimal point three places to the left.",
@@ -115,7 +115,7 @@
     {
       "questionId": 158339,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/766621aa-6337-4858-b780-601d2ca14b70.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "If we divided by 10, the decimal point would move one place to the left. But the decimal point has moved two places to the left. ",
         "B": "The decimal point has moved two places to the left. Therefore, 10.3 has been divided by 100.",

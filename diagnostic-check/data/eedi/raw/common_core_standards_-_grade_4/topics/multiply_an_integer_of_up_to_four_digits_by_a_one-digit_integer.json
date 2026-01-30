@@ -25,7 +25,7 @@
     {
       "questionId": 129053,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b275e48e-92b3-459b-bcbd-e135d77f8e1b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. You do get a 1 in this column when you work out 7 x 3, but we also have something in this column that was carried over from when we worked out 7 x 8. Write out your workings in full and see if you can spot it.",
         "B": "When we work out 7 x 8 we get 56. The 6 would stay in the ones column, but the 5 would carry over to the tens. Then when we work out 7 x 3 we get 21. The 1 would stay in the tens column and the 2 would carry over to the hundreds. This leaves us with a 5 and a 1 in the tens column. We add these together to get 6.",
@@ -37,7 +37,7 @@
     {
       "questionId": 129193,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/afca2faf-9cb0-4d4f-a80b-cd4d1e35c869.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. We have to start by multiplying 2 by 8. What will stay in the ones columns? What will move to the tens column? Now try the same with 6 x 8.",
         "B": "I think you have worked out the first step correctly. 2 x 8 gives us 16 and the 1 carries over into the tens column. But when we continue with the calculation where does the answer to 6 x 8 go?",
@@ -49,7 +49,7 @@
     {
       "questionId": 155763,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7c5387b9-e11a-4c28-b826-633b5ca45a90.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have correctly multiplied the 4 and 3 but then have written down the tens. We need to write down the units and carry the tens...",
         "B": "I think you have accidentally added the 4 and 3 but we need to multiply them...",
@@ -85,7 +85,7 @@
     {
       "questionId": 155782,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/05c03e6b-78bf-4fa4-8e1b-99df0670bab6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have forgotten to add on the value carried over to the tens.",
         "B": "You have correctly calculated 3 x 4, and then correctly added the 1 that you'd carried to get 13. However, the square only represents one digit. Which digit of 13 goes here?",
@@ -109,7 +109,7 @@
     {
       "questionId": 155783,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fbf16558-4117-4a02-8ee9-5a9f5d0f119a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have forgotten to add on the value carried over to the hundreds column.",
         "B": "You have written 3 and 2 next to each other, but this is a multiplication sum, so the first thing to do is multiply them together.",
@@ -121,7 +121,7 @@
     {
       "questionId": 158088,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ca35442f-f629-4612-99f6-63c434aed001.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have accidentally added 4,325 and 6 but you need to multiply them...",
         "B": "You have forgotten to carry the digits over. For example 6 x 5 = 30 so you write the 0 down and then add the 3 to the total of the next place value column",

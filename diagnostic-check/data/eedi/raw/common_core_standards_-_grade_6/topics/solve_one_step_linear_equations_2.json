@@ -37,7 +37,7 @@
     {
       "questionId": 106601,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6e61655-9187-4ca7-831e-6fa9fca76d19.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have subtracted 3 from 12. But 𝑝/3 means '𝑝 divided by 3'. To find 𝑝, we need to do the inverse.",
         "B": "To solve this, first we need to know that 𝑝/3 means 𝑝 divided by 3. We need to undo this using the inverse operation. The inverse of dividing by 3 is multiplying by 3. We must multiply both sides by 3 to keep the equation in balance. Doing this gives (𝑝/3) × 3 = 12 × 3, so 𝑝 = 36.",
@@ -49,7 +49,7 @@
     {
       "questionId": 106619,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/01fafea4-b475-4810-8cc3-5895a424fd07.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you may have divided 10 by 5. But 𝑝/5 means '𝑝 divided by 5'. To find 𝑝, we need to do the inverse.",
         "B": "I think you may have added 5 to 10. But 𝑝/5 means '𝑝 divided by 5'. To find 𝑝, we need to do the inverse.",
@@ -61,7 +61,7 @@
     {
       "questionId": 106602,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bc77b7dd-3267-4e37-9bfa-99f55fd6b845.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost! If we multiply both sides of the equation by 3, we get that -36 = -𝑝. But what will 𝑝 be?",
         "B": "To solve this, first we need to know that -𝑝/3 means 𝑝 divided by -3. We need to undo this using the inverse operation. The inverse of dividing by -3 is multiplying by -3. We must multiply both sides by -3 to keep the equation in balance. Doing this gives (-𝑝/3) × -3 = -12 × -3, so 𝑝 = 36.",
@@ -73,7 +73,7 @@
     {
       "questionId": 106620,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d08637c5-b75f-4e3c-9dd8-bba26fa13bb4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have divided -10 by 5. But -𝑝/5 means '𝑝 divided by -5'. To find 𝑝, we need to do the inverse.",
         "B": "Almost! If we multiply both sides of the equation by 5, we get that -50 = -𝑝. But what will 𝑝 be?",
@@ -109,7 +109,7 @@
     {
       "questionId": 106604,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/94ae24e2-ec31-4964-9f0d-cc3518dbd72c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have subtracted 3 from 12. But 3𝑝 means '𝑝 multiplied by 3'. We need to do the inverse of 'multiply by 3' to find 𝑝.",
         "B": "Almost! 3𝑝 means '𝑝 multiplied by 3'. We need to do the inverse operation to find 𝑝.",
@@ -133,7 +133,7 @@
     {
       "questionId": 106607,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4510455e-af28-4636-ac05-ad5333d3b19c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have added 12 to -3 (which is 12 – 3). But 𝑝 + 12 means 'Add 12 to 𝑝'. We need to do the inverse of 'add 12' to find 𝑝.",
         "B": "To solve this, first we need to know that 𝑝 + 12 means 12 has been added to 𝑝. We need to undo this using the inverse operation. The inverse of adding 12 is subtracting 12. We must subtract 12 from both sides to keep the equation in balance. Doing this gives -3 – 12 = 𝑝 + 12 – 12 , so 𝑝 = -15.",
@@ -145,7 +145,7 @@
     {
       "questionId": 106625,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e92b1f4a-455a-4a01-be81-ceb8c40e75db.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have added 10 to -5 (which is 10 – 5). But 𝑝 + 10 means 'Add 10 to 𝑝'. We need to do the inverse of 'add 10' to find 𝑝.",
         "B": "You are right in thinking that 𝑝 will be negative but think carefully about what we have to do to -5 on the left of the equation to get 𝑝 on it's own on the right. Do we add 10 or do we need to do something else?",

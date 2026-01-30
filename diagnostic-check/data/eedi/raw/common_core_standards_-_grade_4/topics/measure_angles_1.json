@@ -67,7 +67,7 @@
     {
       "questionId": 120798,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e413f4b1-f589-4b1e-bd75-254ffb5637df.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have used the correct side of the protractor but the wrong scale. We want to use the scale that starts with 0° not 180°.",
         "B": "I think here you have used the incorrect scale. We want to measure using the right side of the protractor starting at 0°.",
@@ -79,7 +79,7 @@
     {
       "questionId": 93380,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/24f97a9f-931a-4493-88b0-05894152fd90.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have used the wrong scale. Be sure to use the scale that increases from the 0 your line goes through (in this question, the left-hand side).",
         "B": "I think you may have used a combination of two scales. Be sure to use the scale that increases around from the 0° your line goes through (in this question, the left-hand side). You can check your answer is sensible by looking at the two tens your line is between and making sure your answer is in between them.",
@@ -103,7 +103,7 @@
     {
       "questionId": 93381,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/45a1ca66-ee76-4ccc-ad37-eec1971670a5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have used the wrong scale. Be sure to use the scale that increases around from the 0° your line goes through (in this question, the left-hand side).",
         "B": "Start at the 0° your line goes through (the top here). Use the scale which increases from the top in a clockwise direction (the outer scale). Following the outer scale and going up in tens, we can see that the other red line lies between 160° and 170°, and is 5 small divisions more than 160° which means an angle of 165°.",
@@ -115,7 +115,7 @@
     {
       "questionId": 93396,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c4386fa2-34cd-48b6-b091-096aa5a4bae0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have used the wrong scale. Be sure to use the scale that increases around from the 0° your line goes through (in this question, the left-hand side or top of the image).",
         "B": "I think you may have used a combination of two scales. Be sure to use the scale that increases around from the 0° your line goes through (in this question, the left-hand side or top of the image). You can check your answer is sensible by looking at the two tens your line is between and making sure your answer is in-between them.",
@@ -127,7 +127,7 @@
     {
       "questionId": 93382,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a34ccf3a-c4d6-404c-9cd7-5a785c968fbf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You're almost there - you need to take an extra step to measure the red angle.",
         "B": "This question can be looked at in two ways. Firstly, we can measure the angle of the white part (where the marked angle is not), which is 150°, then using the fact that angles around a point add up to 360°, subtract 150° to get 210°. Alternatively, you can measure the part of the marked angle that can be measured using the protractor, 30°, and recognise that the rest of the angle is 180° as it creates a straight line, then you can add 180° and 30° to get 210° in total for the marked angle.",
@@ -139,7 +139,7 @@
     {
       "questionId": 93397,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1300d78c-dd4b-4be2-bebe-abd79c51281b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You're almost there - you need to use an angle fact and to do an extra calculation to measure the red angle.",
         "B": "You're almost there - you need to use an angle fact and to do an extra calculation to measure the red angle.",

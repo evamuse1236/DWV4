@@ -37,7 +37,7 @@
     {
       "questionId": 106672,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0482c95e-7974-48b3-97aa-9c7e8ea7b5c6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "To solve this we need to find d = 'something'. We always do the same thing to both sides. The first step is to add 12 to both sides.",
         "B": "To solve this, we need it to be in the form ‘d = something’. The first step is to add 12 to both sides. This gives 3d = 12. Then we can divide both sides by 3. This gives d = 12/3 = 4.",
@@ -49,7 +49,7 @@
     {
       "questionId": 122130,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bbb012a8-c46f-45a6-ab76-a112711be2fc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "To solve this we need to find t = 'something'. We always do the same thing to both sides. The first step is to add 20 to both sides.",
         "B": "To solve this, we need it to be in the form ‘t = something’. The first step is to add 20 to both sides. This gives 5t = 20. Then we can divide both sides by 5. This gives t = 20/5 = 4",
@@ -61,7 +61,7 @@
     {
       "questionId": 106673,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/714853e1-28e5-4452-bce5-f1cb66ac2957.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost. I think in your first step you have might have subtracted rather than added 3 to both sides.",
         "B": "I think you have worked out 12 divided by 3. We need to add 3 to both sides and then divide by 12.",
@@ -85,7 +85,7 @@
     {
       "questionId": 106674,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/11f47d65-f5c1-4487-bd6b-aa9056ccb551.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost. I think in your first step you have might have subtracted rather than added 3 to both sides.",
         "B": "Not quite. I think you might have carried out your division the wrong way round.",
@@ -109,7 +109,7 @@
     {
       "questionId": 106675,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c240b414-3349-419a-aa19-354160a68fcf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Be careful. The two number terms do not cancel each other out.",
         "B": "To solve this, we need it to be in the form ‘d = something’. The first step could be to add 3 to both sides. This gives 12d = 6d + 6. Then we can subtract 6d from both sides. This gives 6d = 6. Then we can divide both sides by 6. This gives d = 6/6= 1.",
@@ -121,7 +121,7 @@
     {
       "questionId": 122133,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/056a34ed-5adb-4238-8a52-88bf35dd88b7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Be careful. The two number terms do not cancel each other out.",
         "B": "To solve this, we need it to be in the form ‘t = something’. The first step could be to add 5 to both sides. This gives 20t = 5t + 15. Then we can subtract 5t from both sides. This gives 15t = 15. Then we can divide both sides by 15. This gives t = 15/15 = 1.",
@@ -145,7 +145,7 @@
     {
       "questionId": 106682,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/47baa838-1e4b-4844-a9d5-1a13452c2bbe.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you might have ended up cancelling the two number terms. What happens when we add 20 to both sides?",
         "B": "To solve this, we need it to be in the form ‘d = something’. The first step could be to add 20 to both sides. This gives 40 - 2d = 2d. Then we can add 2d to both sides. This gives 40 = 4d. That means that d must equal 10.",

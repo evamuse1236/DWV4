@@ -31,7 +31,7 @@
     {
       "questionId": 79731,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2ca96454-6a47-4a50-9589-3e88cb9e73f2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Remember 180° is half a turn. I think you have only done a quarter turn",
         "B": "You've used the correct angle, but the centre of rotation needs to be at the origin (0,0).",
@@ -67,7 +67,7 @@
     {
       "questionId": 79772,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/227ab3e9-2ae2-4991-9991-fb395a5ee8da.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, I think you have found one point correctly, but try to visualise what orientation the triangle would be in if rotated 90 degrees clockwise",
         "B": "The right angle of the original shape is 1 right and 2 up from the origin. If we rotate this by a quarter turn clockwise we get 1 down and 2 right. This gives us Shape B.",
@@ -115,7 +115,7 @@
     {
       "questionId": 98943,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/af7b8a01-729b-44c7-acdb-4d52eefc779a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Very close! You rotated 90 degrees clockwise instead of anti-clockwise.",
         "B": "Be careful with your centre of rotation, it should be (-2, 2). Try counting squares from one corner of the blue shape to this centre",
@@ -127,7 +127,7 @@
     {
       "questionId": 98928,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/80b54f4e-f3cb-4782-978f-f2c7c9a6ebff.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Start by having a good guess at where the centre might be. The check this using either tracing paper or by counting squares",
         "B": "Start by having a good guess at where the centre might be. Then find a pair of corresponding points on P and Q. Count the squares needed to get from each point back to the centre. They should be equal in magnitude, just rotated. So a journey of 3 squares right and 4 squares up becomes 3 squares down and 4 squares right. If you have tracing paper you can use this to check your guess!",

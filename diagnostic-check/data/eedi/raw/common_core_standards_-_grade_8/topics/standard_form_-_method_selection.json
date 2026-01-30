@@ -43,7 +43,7 @@
     {
       "questionId": 104036,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bf7a1470-4d9b-4ac3-b117-c5beb8e12193.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. For a number to be in standard form we need a number between 1 and 10 (not including 10), then we multiply by a power of 10.",
         "B": "For standard form the first number needs to be greater than or equal to 1 but less than 10. We then need × 10 to a power. Looking at Tom’s number, the first part of the number does not fit this rule because 0.6 < 1. Therefore, this is not in standard form. Katie’s answer fits the rules because 1 ≤ 7.82567 < 10 and the second part is 10 to a power.",
@@ -67,7 +67,7 @@
     {
       "questionId": 104037,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bf6455fb-d5e5-439f-8402-70048ca632f3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, remember with standard form it is the power of 10 that tells us about the place values of the digits. Use this to help order the numbers. The bigger the power the bigger the number.",
         "B": "With standard form, remember to look at the number as a whole, not just the first part. For Tom’s numbers, 2.3 × 10⁶ is to a higher power of 10 than 9.3 × 10⁵, which means it has a higher value. For Katie’s values, again considering the whole number, 9.3 × 10⁻⁵ is the bigger value because the power, −5 is greater than −6 for the other number.",
@@ -103,7 +103,7 @@
     {
       "questionId": 104045,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9deadb38-fd0d-4f86-8a0b-37c3f14d7838.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost, just take into account the negative",
         "B": "Remember the negative power of 10 means we would be dividing by that power of 10",
@@ -115,7 +115,7 @@
     {
       "questionId": 104041,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/867dd8e8-1041-494f-9a91-a9f37acd20c8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have done the subtraction correctly, but just be careful with writing the answer in standard form. The power of 10 is telling you the place value, so a negative power means you are dividing by that power of 10",
         "B": "I think you have subtracted the numbers and powers. Use the powers of 10 to find the place value of all the digits, then you can do the subtraction and put the answer back into standard form",
@@ -127,7 +127,7 @@
     {
       "questionId": 104048,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e2df8fd1-a674-4b44-b6ec-01386057fb5d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have done the subtraction correctly, but just be careful with writing the answer in standard form. The power of 10 is telling you the place value, so a negative power means you are dividing by that power of 10",
         "B": "I think you have subtracted the numbers and powers. Use the powers of 10 to find the place value of all the digits, then you can do the subtraction and put the answer back into standard form",
@@ -139,7 +139,7 @@
     {
       "questionId": 104042,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2589f222-baaf-4fb0-b2a1-2ea0e79b596f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have added the powers of 10. When we divide we don't add the powers. Think about cancelling down to see what you need to do with the powers",
         "B": "I think you have subtracted the numbers and the powers. Try writing this out as a fraction, and then you can divide the number parts and the powers of 10 separately",

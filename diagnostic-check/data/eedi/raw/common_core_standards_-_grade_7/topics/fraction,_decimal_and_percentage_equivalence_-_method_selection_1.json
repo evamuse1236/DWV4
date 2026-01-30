@@ -37,7 +37,7 @@
     {
       "questionId": 75885,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d1dea03-132f-4e19-8122-75e765f56ffd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! It looks as though you have combined the numerator and denominator to make the percentage but unfortunately we can't do that. Remember \"percent\" means \"out of 100\". What do I need to multiply 5 by to make 100?",
         "B": "We can find the percentage by multiplying 0.2 by 100, which gives 20%.",
@@ -49,7 +49,7 @@
     {
       "questionId": 76033,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2fd7dde5-687e-4a05-b086-b41a24b0d10f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Remember \"percent\" means \"out of 100\". What do I need to multiply 2 by to make 100?",
         "B": "Not quite. Remember \"percent\" means \"out of 100\". What do I need to multiply 2 by to make 100?",
@@ -61,7 +61,7 @@
     {
       "questionId": 100599,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/685cc44a-5231-4475-a209-0be5e13047be.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Remember \"percent\" means \"out of 100\". What do I need to multiply 5 by to make 100?",
         "B": "Percentages are special types of fractions with a denominator of 100. Look at the fraction 2/5: the denominator will need to be multiplied by 20 to make 100. The numerator also needs to be multiplied by 20 to keep the values in proportion: 2/5 = 40/100 = 40%.",
@@ -73,7 +73,7 @@
     {
       "questionId": 100615,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2babc1a9-f0b5-44af-b6b0-3218156e0c44.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Remember \"percent\" means \"out of 100\". What do I need to multiply 5 by to make 100?",
         "B": "Not quite. Remember \"percent\" means \"out of 100\". What do I need to multiply 5 by to make 100?",
@@ -97,7 +97,7 @@
     {
       "questionId": 122128,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b5d620e2-2c11-4b17-9dbb-58473e4b41c4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. What do we multiply by to convert a decimal into a percentage?",
         "B": "Nearly. Remember that you can simplify fractions by dividing the numerator and denominator by a common factor.",
@@ -109,7 +109,7 @@
     {
       "questionId": 103961,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/84cc683b-eaf4-4013-a222-86b487b1de7d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Remember \"percent\" means \"out of 100\". What do we need to multiply 50 by to make 100?",
         "B": "\"Percent\" means \"out of 100\" so we need to change the denominator of 11/50 to 100. We can multiply the 11 and 50 by 2 so that we still have an equivalent fraction and we get 22/100. This is 22% (so Katie is correct). As a decimal, this would be 0.22 as 22/100 means 22 hundredths or 2 tenths and 2 hundredths. So Tom is incorrect.",
@@ -121,7 +121,7 @@
     {
       "questionId": 103965,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0c3a3b24-549e-444f-8d62-db8d9eef1249.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Start by making an equivalent fraction with 100 as the denominator. We can then read off the numerator as the percentage answer",
         "B": "Not quite. Start by making an equivalent fraction with 100 as the denominator. We can then divide the numerator by 100 to get the decimal answer.",
@@ -133,7 +133,7 @@
     {
       "questionId": 103962,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7ba50b95-ce76-4b84-9a14-5fefae70882b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Try writing 12.5% as a fraction (over 100) and then double the numerator and denominator to make them whole numbers. Now simplify your answer.",
         "B": "Nearly. Remember that to convert a percentage to a decimal, we divide by 100. That means we move each digit 2 place value columns to the right.",
@@ -145,7 +145,7 @@
     {
       "questionId": 103966,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/73afaa55-8ad5-4ffc-ab8a-9d814145d035.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Try writing 5.5% as a fraction (over 100) and then double the numerator and denominator to make them whole numbers. Now simplify your answer.",
         "B": "Nearly. Remember that to convert a percentage to a decimal, we divide by 100. That means we move each digit 2 place value columns to the right.",

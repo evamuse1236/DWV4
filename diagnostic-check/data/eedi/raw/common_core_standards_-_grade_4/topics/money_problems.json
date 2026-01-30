@@ -43,7 +43,7 @@
     {
       "questionId": 143349,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/16cd0764-44aa-437a-982a-93192736d930.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. I think you forget to add on the 10 ones you carried over from the tens column..",
         "B": "I think you have added £3 to the cost of one pair of trainers but to find the cost of 3 pairs, we need to multiply the cost of one pair by 3.",
@@ -55,7 +55,7 @@
     {
       "questionId": 143364,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bbfc9f8c-249a-45e3-b224-572a56672649.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This would be the cost of three pairs of trainers, the question is asking for the cost of four pairs...",
         "B": "To find the total cost of the four pairs of trainers we need to do £53 x 4. 4 x 3 is 12 so write the 2 down and carry over the 10 ones.4 x 5 is 20 add on the carried over ones to get 21. So our total for £53 x 4 = £212.",
@@ -67,7 +67,7 @@
     {
       "questionId": 143350,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/81b0a925-6085-49f5-9c56-04d1e8826403.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you've added the amounts together. Isaac has paid with a £5 note, but the cost is less than £5, so we need to find how much change he will get.",
         "B": "To find the amount of change, we do the calculation 5.00 - 3.80, doing this in a column is easiest, giving an answer of £1.20. We can break this down into sections to do the calculation in our heads: 5.00 - 3.00 = 2.00. And then 2.00 - 0.80 = £1.20",
@@ -91,7 +91,7 @@
     {
       "questionId": 143351,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/380da00b-fe33-4519-bf48-cb738c355be0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "If Alicia bought 10 bottles at £1.65 each, the total cost would be £16.50. She only has £10 to spend, so how many bottles can she afford?",
         "B": "We can work this out by dividing 10 by 1.65 = 6.06. This is equivalent to 6 full bottles and a tiny part of one, so she can buy 6 whole bottles. Alternatively we can look at multiples of 1.65 until we get just below £10. 6 bottles = £9.90.",
@@ -103,7 +103,7 @@
     {
       "questionId": 143366,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/86c54030-cf81-4cfb-877b-bc22f76f1824.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "If Alicia bought 10 bottles at £1.35 each, the total cost would be £13.50. She only has £10 to spend, so how many bottles can she afford?",
         "B": "If Alicia bought 8 bottles at £1.35 each, the total cost would be £10.80. She only has £10 to spend, so how many bottles can she afford?",
@@ -127,7 +127,7 @@
     {
       "questionId": 143367,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e11b009d-4ad9-4c7b-b4e2-63ea9a9eb698.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've made a mistake when carrying, make sure to put it in the next column.",
         "B": "The price of a sandwich is £3.25, and the price of a tea is £1.55. Adding the two together gives the total cost: 3.25 + 1.55 = £4.80.",
@@ -139,7 +139,7 @@
     {
       "questionId": 143353,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2e445ee8-f643-4253-a722-52850b0a4487.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You've found the total cost of the items, but we need to do an extra step to find out how much change Sunita will get when she pays with a £20 note :)",
         "B": "I think you've made a calculation error when subtracting the amount. Make sure you're not forgetting to reduce by 1 if you borrow from a value :)",

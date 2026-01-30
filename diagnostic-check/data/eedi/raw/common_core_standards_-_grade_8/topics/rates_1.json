@@ -73,7 +73,7 @@
     {
       "questionId": 110275,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/00076b45-f9f1-4c50-8a31-49462492b765.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember that 'speed = distance ÷ time'. The distance would be at the top of the fraction.",
         "B": "50 minutes is equal to 50 × 60 seconds. Remembering that 'speed = distance ÷ time' we have 2 ÷ (50 × 60) = (2/50) ÷ 60",
@@ -97,7 +97,7 @@
     {
       "questionId": 110276,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c0d022f9-f415-4d7c-986f-cd94a31904e5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Look closely at the units that we are given in the question and the units we need for the answer.",
         "B": "This is the distance in metres. We need the distance in kilometres.",
@@ -109,7 +109,7 @@
     {
       "questionId": 110267,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/164cb88d-f1cd-40a1-bd80-d784e4f4188d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you have given the distance after 6 seconds. We need to calculate the gradient of the line.",
         "B": "To find the speed we find the gradient of the line. This will involve a division.",
@@ -133,7 +133,7 @@
     {
       "questionId": 131740,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2eb52bbe-87a3-49f9-b193-30f7bab7d8a8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you might have divided the distance by 3 because there are 3 squares on the x axis between 12:30 and 14:00. How many hours does that represent?",
         "B": "Speed is equal to distance divided by time. She travelled 60 km between 12:30 and 14:00 (1.5 hours) so her speed was 60 ÷ 1.5 = 60/1.5 = 120/3 = 40 km/hr.",

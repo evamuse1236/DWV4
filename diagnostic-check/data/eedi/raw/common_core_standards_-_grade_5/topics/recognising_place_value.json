@@ -25,7 +25,7 @@
     {
       "questionId": 129216,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c82f8d32-f0a4-43f1-894c-0f1fa79c02e4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have found the number in the hundreds column, we need the number in the hundredths column",
         "B": "The 4 is in the tenths column. Which column will be hundredths?",
@@ -37,7 +37,7 @@
     {
       "questionId": 129076,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/13ad66e4-95da-4aba-bd1e-b9d1dc1c248f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have found the number in the tens column, we need the number in the tenths column",
         "B": "Not quite, this is the units column. Which column will be tenths?",
@@ -73,7 +73,7 @@
     {
       "questionId": 130079,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/555f1df3-ee3a-4fbc-a84a-5346b4a7d5c2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is the digit 3, but we need its place value. The 0 is in the ones column. What do we label the columns after the decimal point?",
         "B": "Not quite! Label each column along from the decimal point.",
@@ -85,7 +85,7 @@
     {
       "questionId": 130098,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4ad3822f-59e5-4b9f-864a-dffd6069cf54.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This would represent 400 if we did not have the decimal point and our number was 1467, but the decimal point changes the place value. What do we label each column after the decimal point?",
         "B": "The 0 is in the ones column, the 1 represents 1/10 as it is in the tenths column, the 4 represents 4/100 as it is in the hundredths column.",
@@ -121,7 +121,7 @@
     {
       "questionId": 156417,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4ab1ad90-d8e6-40fd-b21e-81150b441f6b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have just stated the digit. Consider the place value columns and what the 3 is worth in that column.",
         "B": "I think you have read the decimal point or the digit in the wrong place value.",

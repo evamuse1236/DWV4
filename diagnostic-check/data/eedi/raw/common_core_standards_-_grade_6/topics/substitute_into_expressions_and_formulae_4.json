@@ -43,7 +43,7 @@
     {
       "questionId": 91680,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/365d3795-6439-4ae0-8b91-c71ff6f8180f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "What does ab mean? How do we calculate it if a = 1 and b = 4? What is a + b equal to? Are they the same or is one of these expressions bigger than the other?",
         "B": "Substituting the values in: ab = 1 ✕ 4 = 4 and a ＋ b = 1 ＋ 4 = 5. We know that 4 < 5 so the star needs to be replaced by '<'.",
@@ -67,7 +67,7 @@
     {
       "questionId": 91681,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/77e0dac2-ccfc-4ea9-a20a-4e8749ab6a54.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Try substituting in the values given for a and b to see why a - b is NOT more than b - a. If it's not more than, which symbol should replace the star?",
         "B": "Substituting the values in: a − b = 1 − 4 = −3 and b − a = 4 − 1 = 3. We know that −3 < 3, meaning Answer B is correct.",
@@ -91,7 +91,7 @@
     {
       "questionId": 91682,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f0023d85-640b-4608-83fb-99482e85a148.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Try substituting in the values given for a and b to see why 4a/b is NOT more than b/a. Remembering that the fraction line means divide will help you compare these fractions.",
         "B": "Substituting the values in: (4a)/b = (4 ✕ 1)/4 = 4/4 = 1 and b/a = 4/1 = 4. We know that 1 < 4, meaning Answer B is correct.",
@@ -103,7 +103,7 @@
     {
       "questionId": 91665,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3ac9d6b4-5b70-4e58-bcb4-37985a1b812f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Try substituting in the values given for a and b to see why aᵇ is NOT more than bᵃ. Remember 4³ = 4 x 4 x 4.",
         "B": "Substituting the values in: aᵇ = 4³ = 4 ✕ 4 ✕ 4 = 64 and bᵃ = 3⁴ = 3 ✕ 3 ✕ 3 ✕ 3 = 81. We know that 64 < 81, meaning Answer B is correct.",
@@ -139,7 +139,7 @@
     {
       "questionId": 132080,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/17a5ebcf-e773-41a7-b627-78816297ea67.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have written '3a' as 38. When we have a number in front of a letter in algebra, it tells us how many lots of the letter we have. In other words, '3a' means 3 multiplied by a.",
         "B": "I think you might have added b, instead of subtracting. Work out 3a first, then remember to subtract b.",

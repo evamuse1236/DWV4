@@ -31,7 +31,7 @@
     {
       "questionId": 158810,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d071d4b3-0243-4b60-aa03-04d6de2051e2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This symbol means less than. Using the diagrams, is 2/5 less than 1/5?",
         "B": "As the diagrams show, 2/5 is greater than 1/5 as it 2 parts out of 5 instead of 1 out of 5.",
@@ -43,7 +43,7 @@
     {
       "questionId": 159009,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/462fec17-c7f6-4f2a-b600-b95296db2b8f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This symbol means less than. Using the diagrams, is 3/7 less than 2/7?",
         "B": "As the diagrams show, 3/7 is greater than 2/7 as it 3 parts out of 7 instead of 2 parts out of 7.",
@@ -55,7 +55,7 @@
     {
       "questionId": 158811,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/191a09d6-50cb-4179-8ad4-6866830efffb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "4 is smaller than 8, but look at the scale - the top of the scale is counting in quarters, and the bottom is counting in eighths. If we count 3 jumps along each scale, which one is greater?",
         "B": "The top of the scale is counting in quarters, and the bottom is counting in eighths. 3 jumps along the top scale is further than 3 jumps along the bottom scale, so 3/4 is greater than 3/8. We use the greater than symbol, >",
@@ -79,7 +79,7 @@
     {
       "questionId": 158812,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1b33809a-830e-4452-94db-a551003da924.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This symbol means less than. Is 11 sevenths less than 9 sevenths?",
         "B": "Both fractions have the same denominator, so we can compare the numerators. 11 sevenths is greater than 9 sevenths.",
@@ -103,7 +103,7 @@
     {
       "questionId": 158813,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5267a156-14e0-46cf-86af-0fbf12a24ea4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "3 is less than 5, a smaller denominator doesn't mean a smaller fraction. Picture a circle split into 3 equal parts, and one split into 5 equal parts. If we shade 2 parts on each circle, which has a greater amount shaded?",
         "B": "Picture a circle split into 3 equal parts, and one split into 5 equal parts. If we shade 2 parts on each circle, shading 2 out of 3 is more of the circle than 2 out of 5, so 2/3 is greater than 2/5. We can also convert both fractions to have the same denominator: 2/3 = 10/15 and 2/5 = 6/15. 10/15 > 6/15.",
@@ -127,7 +127,7 @@
     {
       "questionId": 158814,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4d956300-a895-48b9-a538-3de8f17c833c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "3/8 is a greater fraction than 2/8, but what if Kiera's pizza is small and Luke's is large?",
         "B": "Is 3 eighths less than 2 eighths? Also, what if Kiera's pizza is small and Luke's is large, or vice versa?",
@@ -139,7 +139,7 @@
     {
       "questionId": 159013,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1ce802ef-94d1-45a1-a3f8-85aaab25b993.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "3/4 is a greater fraction than 1/4, but what if Lola's drink is small and Fenton's is large?",
         "B": "Is 3 quarters less than 1 quarter? Also, what if Lola's drink is small and Fenton's is large, or vice versa?",

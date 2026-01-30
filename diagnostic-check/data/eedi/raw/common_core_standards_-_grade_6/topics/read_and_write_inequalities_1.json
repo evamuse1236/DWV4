@@ -31,7 +31,7 @@
     {
       "questionId": 75914,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b5196871-8f89-4467-ad05-61f5f729f2b3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost. Try reading this inequality forwards? 7 is greater/smaller than than R.",
         "B": "Almost. Try reading this inequality backwards? Write R > 7 in words.",
@@ -43,7 +43,7 @@
     {
       "questionId": 76062,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e9ba5a38-b9af-42cb-92a4-d992376a439d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. If we read this inequality backwards it would be T < 3.",
         "B": "We can read this inequality forwards (3 > T) or backwards (T < 3). This means T is smaller than 3.",
@@ -55,7 +55,7 @@
     {
       "questionId": 75915,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2bc4e049-49d6-4478-b5f1-df0bf0a906e9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, '<' means 'less than'. What would the 'greater than' symbol look like?",
         "B": "=' means equal to. We need to use an inequality symbol to represent 'greater than'.",
@@ -67,7 +67,7 @@
     {
       "questionId": 76063,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1893e0b0-a9b6-4522-8174-a9bd321f6083.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "<' means 'smaller than'. So this means j is smaller than 5.",
         "B": "=' means equal to. We need to use an inequality symbol to represent 'smaller than'.",
@@ -79,7 +79,7 @@
     {
       "questionId": 78183,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c69e9c45-0bb6-4915-b06c-ce6464efe7c9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost, '>' means 'greater than'. What would the 'greater than or equal to' symbol look like?",
         "B": "Not quite, '≤' means 'less than or equal to'. What would the 'greater than or equal to' symbol look like?",
@@ -91,7 +91,7 @@
     {
       "questionId": 78477,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/01c52e8d-2d78-494d-9307-e370ecc8a5ee.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, '<' means 'less than'. What would the 'greater than' symbol look like?",
         "B": "Not quite, '≤' means 'less than or equal to'.",
@@ -115,7 +115,7 @@
     {
       "questionId": 122116,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fe0e25fa-6c37-4c4e-93b1-ba613cc53435.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. The arrow isn't above the numbers that are bigger than 1.",
         "B": "Almost, just remember that an open circle means that number isn't included",
@@ -127,7 +127,7 @@
     {
       "questionId": 78185,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/80c60fa2-8b8d-4b90-b919-0c5690a4bac5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This would be 𝑥 < -3 or 𝑥 ≥ 1. We are looking for the numbers between these values.",
         "B": "The 𝑥 is in between the two values indicated. Because of the open circle it cannot be equal to -3 but it can be equal to 1 (solid circle). If a number is in between 2 values the inequality signs are always shown as < <",
@@ -139,7 +139,7 @@
     {
       "questionId": 78479,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fe0659d3-48ce-41b7-a750-0ab3a414ed6d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This would be 𝑥 < -1 or 𝑥 ≥ 3. We are looking for the numbers between these values. Remember the closed circle means that number is included.",
         "B": "This would be 𝑥 ≤ -1 or 𝑥 > 3. We are looking for the numbers between these.",

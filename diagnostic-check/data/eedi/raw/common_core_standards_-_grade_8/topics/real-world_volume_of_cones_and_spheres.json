@@ -133,7 +133,7 @@
     {
       "questionId": 173957,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a92e3e4c-0da7-44b5-9b12-7591a303ada7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have correctly worked out that the radius of the orange is 6 cm. Read the question carefully - it asks for the diameter.",
         "B": "Start with the formula 𝑉 = (4/3) × π × 𝑟³. Substitute in the volume: 288π = (4/3) × π × 𝑟³. Divide by π, then rearrange to find 𝑟³ = 216. The cube root of 216 is 6, so the radius is 6 cm. The diameter is double the radius, which is 12 cm.",
@@ -145,7 +145,7 @@
     {
       "questionId": 174017,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4924f487-1a8e-441d-bd74-3a20286e4109.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "When you set up the equation, you have pi on both sides: 4500π = (4/3) × π × 𝑟³. You should cancel the π on both sides before you start rearranging. It looks like you might have divided 4500 by π in your calculation.",
         "B": "After rearranging the formula, you should have 𝑟³ = 3375. To find 𝑟, you need to find the cube root of 3375. It seems you have divided by 3 instead. The cube root is the number that multiplies by itself three times to make 3375.",

@@ -79,7 +79,7 @@
     {
       "questionId": 103803,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/94a07511-eec5-449a-9a8f-561e453ed99b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Remember that in 0.8, the 8 represents 8 tenths, not 8 hundredths. Make sure you line up the digits in the correct columns and keep the decimal points lined up vertically when you add.",
         "B": "Not quite. Remember that in 0.8, the 8 represents 8 tenths, not 8 hundredths. Make sure you line up the digits in the correct columns and keep the decimal points lined up vertically when you add.",
@@ -91,7 +91,7 @@
     {
       "questionId": 103792,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/83b802a4-cc7f-4d0d-b295-81f75c0bfedf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have swapped the numbers round but 0.2 - 0.15 is not the same as 0.15 - 0.2. Think about a number line: start from 0.15. If we take away 0.2 where will we end up on the number line?",
         "B": "Not quite. Remember that in 0.2, the 2 represents 2 tenths, not 2 hundredths.",
@@ -115,7 +115,7 @@
     {
       "questionId": 103793,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/92202718-e2f3-4628-84b8-4605b86f2b1f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. We would expect the digit 3 in our answer because 15 x 2 = 30. But how many decimal places are there in 0.15 x 0.2? And how many decimal places do we need in our answer?",
         "B": "We know that 15 × 2 = 30. In the question, 0.15 has 2 decimal places and the 0.2 has 1 decimal place, so the answer needs to have 3 decimal places. This gives an answer of 0.030, which can be written as 0.03.",
@@ -127,7 +127,7 @@
     {
       "questionId": 103805,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d843c41a-6b0f-4712-8ee6-baac10fba73f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you may have tried to add the numbers. But we need to do a multiplication.",
         "B": "Not quite. We would expect the digits 256 in our answer because 32 x 8 = 256. But how many decimal places are there in the question? And how many decimal places do we need in our answer?",
@@ -151,7 +151,7 @@
     {
       "questionId": 103806,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/99bc524d-b816-44b9-9987-1c699688cdda.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. We would expect the digit 4 in our answer because 32 ÷ 8 = 4. But how do we deal with the decimal places? Try thinking about equivalent fractions.",
         "B": "Not quite. We would expect the digit 4 in our answer because 32 ÷ 8 = 4. But how do we deal with the decimal places? Try thinking about equivalent fractions.",

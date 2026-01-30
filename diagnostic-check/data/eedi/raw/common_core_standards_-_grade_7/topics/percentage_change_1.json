@@ -43,7 +43,7 @@
     {
       "questionId": 73604,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/048c5a3f-4f6f-4466-898e-d37a0efdff01.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Nearly! You have increased the price by 10% but we need to increase the price by 20%. What will that give you? :)",
         "B": "You've found 20%, now we need to increase the price by 20%, so how can we do that? :)",
@@ -55,7 +55,7 @@
     {
       "questionId": 73810,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/562f7cc9-0bc6-4af3-9a2b-7d0b804f06da.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Nearly! You have increased the price by 10% but we need to increase the price by 20%. What will that give you? :)",
         "B": "I think you have just added 25 onto 500, rather than 25%. How can we find 25%? Remember you can start off with 10% :)",
@@ -67,7 +67,7 @@
     {
       "questionId": 73605,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d14c122-18af-40f1-9d93-ad9f9d46c685.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have only added on an extra 10% of the 50%. You are increasing the new full amount (150%) by 10%",
         "B": "I think you have added the percentages together, but they are relating to different amounts. Remember we always start with 100%. If I add on 50% what percentage do I now have? Now what if I add on 10% of my new amount?",
@@ -79,7 +79,7 @@
     {
       "questionId": 73811,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/caf868a5-713c-4b63-bbe8-19efe050961a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have added the percentages together, but they are relating to different amounts. Remember we always start with 100%. If I add on 60% what percentage do I now have? Now what if I add on 10% of my new amount?",
         "B": "If I increase by 60% I now have 160%. We then increase by 10% of the new amount and 10% of 160 is 16 so we add on another 16% to get 176%",
@@ -103,7 +103,7 @@
     {
       "questionId": 73812,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2a59260e-afce-47e6-8a3f-4b3ed434cca3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have calculated a percentage increase from 400 to 500. The original amount was 500. Always divide by the original amount",
         "B": "I think you have calculated the change as a fraction of the original. What would one fifth be as a percentage?",
@@ -127,7 +127,7 @@
     {
       "questionId": 101560,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/32a9ad02-3861-49b1-8f3a-64e6b3f402da.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you have multiplied by 40. We need to find 40% of 160 and then add that on.",
         "B": "I think you have just added 40 onto 220 rather than 40% of 220. You need to find 40% of 220, and then add that on.",
@@ -151,7 +151,7 @@
     {
       "questionId": 124612,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5e5b762b-1de1-48db-9c11-6983d8bc9c95.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have managed to find 15% of 360 :) Now we have an extra step, because we need to decrease 360 by that amount :)",
         "B": "I think you have subtracted 15 from 360 rather than subtracting 15% of 360. Remember that to find 15% we can find 10% first and use that to help :)",

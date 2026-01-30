@@ -43,7 +43,7 @@
     {
       "questionId": 135793,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1079a57c-ae0d-4900-9364-20d4350cc63e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! I think you have just added 6 here in the next place after the 9 because the conversion was 1.6. Think about what multiplier we need to apply to 1 mile to get to 1.6 km, and how we can use this to covert from 90 miles to km.",
         "B": "Not quite! I think you've converted the wrong way, from kilometres to miles. Make sure to check whether you are expecting your answer to be bigger or smaller than the value you started with",
@@ -55,7 +55,7 @@
     {
       "questionId": 135813,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ed53fa09-3569-4392-a8de-d6d0889a8f60.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! I think you've converted the wrong way, from kilometres to miles. Make sure to check whether you are expecting your answer to be bigger or smaller than the value you started with",
         "B": "Not quite! I think you have just added 6 here in the next place after the 5 because the conversion was 1.6. Think about what multiplier we need to apply to 1 mile to get to 1.6 km, and how we can use this to covert from 50 miles to km.",
@@ -79,7 +79,7 @@
     {
       "questionId": 135814,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cd810461-c61b-4cad-905a-69e53bb23f8d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! I think you have divided the original length by 0.4, however this gives us a greater number of inches than cm, but the opposite is true. What operation do we need to do with conversions?",
         "B": "Not quite! You have subtracted 4 here from our original length, however when performing conversions we need to multiply and divide rather than add or subtract.",
@@ -91,7 +91,7 @@
     {
       "questionId": 135795,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/10ace979-b6f2-46d2-a28c-8d0623531754.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! I think you have added 1.75 on to 70 and picked the closest number to this. However when performing conversions we need to multiply and divide rather than add or subtract.",
         "B": "Not quite! You have given an answer a little more than double our original volume, which is too much. Think about what multiplier we need to apply for this conversion.",
@@ -103,7 +103,7 @@
     {
       "questionId": 135815,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/15d7501e-4d7f-43ed-89b6-829a6f7484d9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! I think you have added 75 on to 40, rather than finding 0.75 of 40 and adding that on.",
         "B": "We would need to multiply 40 litres by 1.75 to convert this into pints. 40 x 1.75 = 70 pints",
@@ -115,7 +115,7 @@
     {
       "questionId": 135796,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8280ab99-03b0-45f9-af7d-766f33328fd0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! I think you have calculated the number of kg based on conversion being a little more than half of the weight in pounds. This doesn't quite work here, what multiplier do we need to apply in this case?",
         "B": "Not quite! I think you have multiplied by 1000 which would give you the answer in grams. What do we multiply by to go from pounds to kg, use the information in the question to help you.",
@@ -151,7 +151,7 @@
     {
       "questionId": 135817,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/67fad60e-0180-4ffa-b81c-0530bf19d12b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! I think you divided by 9 but forgot to multiply by 5. Think about the order of operations using BIDMAS, and how we can use round numbers to help us estimate the result of the calculation.",
         "B": "Following BIDMAS with the formula given, we need to subtract 32 from 70 and then multiply by 5/9. 70 - 32 = 38. As we are estimating, we can think of 5/9 as a bit more than 1/2, therefore half of 38 is 19, and 20 is a little more than this, so is the best estimate for the conversion we are trying to do.",

@@ -37,7 +37,7 @@
     {
       "questionId": 101022,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/afae6e80-e4d2-44dd-9ec6-6949c3301ae2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This represents one third of 7, rather than one third of one seventh",
         "B": "I think you've added the denominators, remember you must multiply 1/3 by the number to find a third of something",
@@ -49,7 +49,7 @@
     {
       "questionId": 101004,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d4f52ebe-0583-447d-8828-ef65af5231be.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Remember to multiply the numerators to give the numerator answer, and then repeat this process with the denominators: 4/5 ✕ 2/9 = (4 ✕ 2)/(5 ✕ 9) = 8/45.",
         "B": "Almost, I think you've added the numerators, rather than multiplying them. To multiply, multiply the two numerators, and multiply the two denominators.",
@@ -85,7 +85,7 @@
     {
       "questionId": 101024,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/31ff151b-7f91-42c8-8923-dda1108da9c9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've multiplied both the numerator and denominator by 2. Remember 8² means 8 x 8, not 8 x 2",
         "B": "Not quite, make sure you square the numerator and the denominator",
@@ -97,7 +97,7 @@
     {
       "questionId": 101006,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4c03c4e3-bbc4-4b97-b613-c64a77bed8bc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you've found the missing number if this was an addition.",
         "B": "I think you've found the missing number if this was an division.",
@@ -109,7 +109,7 @@
     {
       "questionId": 101025,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d100c300-f2c6-4fa8-be0b-286a8e6f299a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've found the missing number if this was an addition.",
         "B": "A number multiplied by its reciprocal will give an answer of 1. The reciprocal of a number is always the numerator and denominator transposed (swapped). This means the reciprocal of 2/7 is 7/2. Substituting 7/2 in the place of ?, we have 2/7 ✕ 7/2 = (2 ✕ 7)/(7 ✕ 2) = 14/14 = 1.",
@@ -121,7 +121,7 @@
     {
       "questionId": 101007,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c8b5a3a1-f3c6-4788-adc6-46c5ecb33f99.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, 3/5 x 2/3 = 6/15, which simplifies to 2/5",
         "B": "To get the ? on it's own we divide both sides by 3/5. Doing this we get 1/2 ÷ 3/5 which is the same as 1/2 x 5/3 = 5/6",

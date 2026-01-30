@@ -31,7 +31,7 @@
     {
       "questionId": 155050,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1a31ffc1-7c5d-498f-8b6a-964991d7f9a7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "3 less than a number would be written as 𝑥 - 3, so agrees with the expression before the equals sign. Double the number would be written as 2𝑥, which is NOT equivalent to the expression after the equals. Therefore, this situation does not form the equation.",
         "B": "A number subtract 3 would be written as 𝑥 - 3, so agrees with the expression before the equals sign. The number divided by 2 would be written as 𝑥/2, which agrees with the expression after the equals sign. Therefore, this situation WOULD form the equation, we are asked which WOULD NOT.",
@@ -43,7 +43,7 @@
     {
       "questionId": 155046,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/821dbfb5-46ad-43e7-9877-8ff392d11ce9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you believe 2𝑥 - 5 = - 3𝑥. This would be 2𝑥 - 5𝑥. 2𝑥 - 5 cannot be simplified as they are not like terms.",
         "B": "Triple a number is the same as multiplying the number by 3, so would be written as 3𝑥, which agrees with the expression after the equals sign. Two lots of the number would be written as 2𝑥, subtract 5 gives 2𝑥 - 5, which agrees with the expression before the equals sign. It says 'is the same as' which means we place an equals sign between them.",
@@ -55,7 +55,7 @@
     {
       "questionId": 155051,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/617a2191-c2bb-48af-9908-007aea58dba0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you believe 'shared between' represents a subtraction, it actually represents division, so 'shared between 6' is the same as 'divided by 6'.",
         "B": "I think you have mixed up your multipliers. Double is the same as multiply by 2, 4 lots of is the same as multiply by 4.",
@@ -79,7 +79,7 @@
     {
       "questionId": 155052,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/48001a82-b348-4601-b56e-53b5f1c917eb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The two angles labelled are base angles in an isosceles triangle. The angle fact 'base angles in an isosceles triangle are equal' would lead to writing 3𝑥 + 5 = 4𝑥 - 10, which is the equation that has been formed.",
         "B": "The equation does not show the angles added together and 180 degrees is not used. The angles don't meet at a point on the straight line so we couldn't use this angle fact here. What shape do we have? What do the two dashes mean for the type of shape?",
@@ -115,7 +115,7 @@
     {
       "questionId": 155049,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b5908950-353a-41c0-8e9c-918aa3b4d892.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost! You have correctly identified that the algebra represents the perimeters of the shapes. But this information would form the equation 6𝑥 + 8 < 8𝑥.",
         "B": "This statement is a correct statement in itself, but does not form the algebra given. Look at 8𝑥 - how could this be formed from shape B?",
@@ -127,7 +127,7 @@
     {
       "questionId": 155054,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/67b56137-4792-4f23-a965-fa9005f6fc33.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have confused your terminology. The area of a rectangle comes from multiplying the length by the width. Is that how 2𝑥 + 4 and 12𝑥 were formed? Or did you do something else? What is the name for this?",
         "B": "2𝑥 + 4 is the perimeter of shape A, as it is the simplified version of 𝑥 + 𝑥 + 2 + 2. 12𝑥 is the perimeter of shape B, as it is the simplified version of 3𝑥 + 3𝑥 + 3𝑥 + 3𝑥. We have the < sign, which is the less than sign. So reading left to right we have, the perimeter of shape A is less than the perimeter of shape B.",

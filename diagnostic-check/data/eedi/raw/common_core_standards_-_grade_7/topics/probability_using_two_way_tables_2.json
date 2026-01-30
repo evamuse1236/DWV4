@@ -37,7 +37,7 @@
     {
       "questionId": 109621,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/895d3a75-8ed3-4a68-8424-dabef7f8d947.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. I think you have found the probability of picking an 11 year old with a sister. We want the probability that the student is 12 years old and has a sister.",
         "B": "There are 14 children altogether and two of them are 12 and have a sister. Therefore the probability will be 2/14.",
@@ -61,7 +61,7 @@
     {
       "questionId": 109622,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/215c330b-7bcb-406a-9e2a-2f9848d70a63.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have given the probability of choosing a 12 year old, but missed the first part of the question. What does \"Given that they have a sister\" mean?",
         "B": "I think you have mixed up the numerator and denominator. The denominator is the number at the bottom of the fraction and tells us the total children we are choosing from",
@@ -73,7 +73,7 @@
     {
       "questionId": 109609,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e4052c2d-4ae2-42fc-b3d7-b3bfc0921ebf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have confused the numerator and denominator. The numerator is the number on the top of a fraction and here it tells us the number of children who fit our criteria (12 years old and have a sister)",
         "B": "You have given the probability of choosing a 12 year old, but missed the first part of the question. What does \"Given that they have a sister\" mean?",
@@ -85,7 +85,7 @@
     {
       "questionId": 109623,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/514747d9-3b68-4a0d-ab3c-57328ba2d537.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have given the probability of choosing a 12 year old, but missed the first part of the question. What does \"Given that they have a sister\" mean?",
         "B": "Only 2 children are 12 years old and have a sister, so this is the numerator.",
@@ -97,7 +97,7 @@
     {
       "questionId": 109610,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9375e0ce-a74f-4b14-89cd-73c5129d6d75.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have answered as if the probability was the other way around i.e. “Given that they have a sister…”.",
         "B": "\"Given that they are 12 years old\" means we are only choosing from those that are 12 years old. How will this affect the total number of children we can choose from?",
@@ -109,7 +109,7 @@
     {
       "questionId": 109624,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/08ccf9e2-8bc1-4bd8-8b39-d40e8997426e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "\"Given that they are 12 years old\" means we are only choosing from those that are 12 years old. How will this affect the total number of children we can choose from?",
         "B": "\"Given that they are 12 years old\" means we are only choosing from those that are 12 years old. So our total number of possible children is 5. This will be the denominator (bottom) of our fraction.",
@@ -121,7 +121,7 @@
     {
       "questionId": 109611,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ac23aca7-1498-4b0d-a4bf-92474d38f43d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have given the probability that they have a sister, but missed the first part of the question. What does \"Given that they are 12 years old\" mean?",
         "B": "I think you have confused the numerator and denominator. The numerator is the number on the top of a fraction and here it tells us the number of children who fit our criteria (12 years old and have a sister)",
@@ -133,7 +133,7 @@
     {
       "questionId": 109625,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/219e127f-d450-4eb3-ade0-17a8d763ddd0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have confused the numerator and denominator. The numerator is the number on the top of a fraction and here it tells us the number of children who fit our criteria (12 years old and have a sister)",
         "B": "There are two children that have a sister and are 12 years old, so 2 is the numerator.",

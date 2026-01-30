@@ -19,7 +19,7 @@
     {
       "questionId": 158038,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9a24bcdc-90ed-427d-bbd4-cbf4a02c136f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "a is not half of the angle. To work out the value of a take the whole angle which is 88 degrees and remove the 36 degree part...",
         "B": "We can see from the diagram, the whole angle is 88 degrees and one part is 36 degrees. To find a we need to work out the difference between these values 88 - 36 = 52 therefore a is 52 degrees",
@@ -43,7 +43,7 @@
     {
       "questionId": 158039,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f883ced5-30e3-405b-b53f-1b5185b58eec.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have found the difference between the values but we need the total...",
         "B": "We are not looking at angles on a straight line... To find angle b we add together the two labelled angles",
@@ -67,7 +67,7 @@
     {
       "questionId": 158040,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a746cc63-c089-4c98-ac34-18c90200a710.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "60 + 60 = 120.. Remember a right angle is 90 degrees",
         "B": "60 + 40 = 100.. But, remember, a right angle is 90 degrees",
@@ -79,7 +79,7 @@
     {
       "questionId": 158207,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/96d53002-960f-4225-af50-0235ccafc422.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have added 25 and 90 but to find the missing angle we need to do 90 - 25...",
         "B": "A right angle is 90 degrees. If one part is 25 degrees the other must be 65 degrees because 25 + 65 = 90",
@@ -103,7 +103,7 @@
     {
       "questionId": 158208,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/00a0f8c1-2f5a-4dee-9a4f-a9903ee1dd93.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have subtracted the 55 from 75 but we are joining the angles to make a single angle so we need to add them together...",
         "B": "We are not finding a third angle to make a straight line, you are combining the two given angles to form a single angle.. To do this, add together the 55 and 75",
@@ -115,7 +115,7 @@
     {
       "questionId": 158042,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cf0b1df4-2966-4eb0-8d24-7004d3a6b57c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have added all the values together but we need to find the total of the two angles given and take this from 300..",
         "B": "There are 90 degrees in a right angle, if the other angle is 110 we have 90 + 110 = 200. If the total angle is 300 we need to do 300 - 200 = 100 so the third angle is 100 degrees",
@@ -127,7 +127,7 @@
     {
       "questionId": 158209,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e322de11-ec7c-44fc-91c0-429e7e6c3700.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is the correct value of the right angle but you need to find the total of this and the other angle given and take this from 350 to find the missing third angle...",
         "B": "I think you have added all the values together but we need to find the total of the two angles given and take this from 350.",

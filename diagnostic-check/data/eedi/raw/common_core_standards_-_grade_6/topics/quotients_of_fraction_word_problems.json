@@ -43,7 +43,7 @@
     {
       "questionId": 165433,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1a449100-1a43-44fb-8ae6-1dc81449f91c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It seems like you've just divided 16 by 1 here but we need to divide 16 by 1/2 exactly. Try writing 16 as 16/1 and then using the usual rules for dividing fractions.",
         "B": "Not quite - you've multiplied by 1/2 instead of dividing by 1/2 here! Try writing 16 as 16/1 and then using the usual rules for dividing fractions.",
@@ -67,7 +67,7 @@
     {
       "questionId": 165434,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/396d09cf-e4cb-4f4b-8033-105f5dc38e76.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you may have forgotten the 'flip' in the fraction division rule 'keep, change, flip'!",
         "B": "It looks like you may have divided by both the top and the bottom of the fraction but we can't do that - we need to do 'keep, change, flip' like we normally do for dividing fractions!",
@@ -91,7 +91,7 @@
     {
       "questionId": 165435,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e99e0530-ec11-4813-bcfc-9034d494e8da.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It seems like you've divided 18 by 4 and then divided 4.5 by 1/2. Mixed number division doesn't work like this - we need to change the mixed number into an improper fraction before we divide.",
         "B": "Read carefully! She needs to make 36 half-cup servings, which would be 18 cups of smoothie we are dividing by 4 and 1/2.",
@@ -103,7 +103,7 @@
     {
       "questionId": 165442,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d098feb7-932d-412f-a414-b2608b6bf805.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It seems like you've divided by 3 and then just put the 1/2 on. Mixed number division doesn't work like this - we need to change the mixed number into an improper fraction before we divide.",
         "B": "It seems like you've divided by 3 and then by 1/2. Mixed number division doesn't work like this - we need to change the mixed number into an improper fraction before we divide.",
@@ -127,7 +127,7 @@
     {
       "questionId": 165444,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/69b62310-089b-4cba-aa83-77ec8352be09.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It seems like you may have just divided the top and the bottom of the fractions, however we can't do that for a division. We need to use the rule 'keep, change, flip'.",
         "B": "If we do keep, change, flip, that will give us 35/2 x 2/5 which is 70/10. That simplifies to 7 when we do 70 divided by 10.",
@@ -139,7 +139,7 @@
     {
       "questionId": 165438,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/358441da-5449-4c78-a636-9b4961bd7350.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you may have forgotten the 'flip' in the fraction division rule 'keep, change, flip'!",
         "B": "3 1/2 is the same as 7/2, which when divided by 1/4 would give us 7/2 x 4/1 which is 28/2. 28 divided by 2 is 14.",
@@ -151,7 +151,7 @@
     {
       "questionId": 165445,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e787b048-8ef7-417a-9e34-bf74e60f0bb3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It seems like you have flipped the first fraction, however the rule is 'keep, change, flip' in that order!",
         "B": "Not quite - it seems like you might've multiplied 5 by 3 and added 4 when changing the mixed number. We multiply by the bottom and then add to the top.",

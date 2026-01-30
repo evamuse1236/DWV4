@@ -37,7 +37,7 @@
     {
       "questionId": 79113,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6de6e842-235d-456f-b8d5-aba527ca7234.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have found the number of women who ordered tea. You have been asked to find the total number of men. Hint: The first thing you need to find is the number of men who ordered coffee.",
         "B": "I think you have found the number of men who ordered coffee. The table shows that some men also ordered tea. \nHow can you use these two pieces of information to find the total number of men?",
@@ -61,7 +61,7 @@
     {
       "questionId": 79115,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d28a3caf-ff3a-4107-b8b2-5fade5c60ec4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have found a, not b. Before you can find b you need to find the total number of people who ordered a coke.",
         "B": "Not quite, there is enough information in the table. Hint: You need to find the total number of people who ordered a coke before you can find b.",
@@ -73,7 +73,7 @@
     {
       "questionId": 109604,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f7d97fff-0810-4c1d-8d2b-9814c0a1f410.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you have used the total of 11 year olds, but we are choosing a child at random from all the children in total.",
         "B": "The denominator is the total number of children, which is 11.",
@@ -85,7 +85,7 @@
     {
       "questionId": 109618,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ffdc139c-872b-407c-81c5-61b95bfe1c23.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have confused the numerator and denominator. The denominator is the number on the bottom of a fraction and here it tells us how may children we are choosing from.",
         "B": "Not quite. Maybe you double-counted the total? There are only 14 children in total here.",
@@ -97,7 +97,7 @@
     {
       "questionId": 109605,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9e6c3d84-2162-45fb-b45e-4c46eeb90198.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you have used the total of 11 year olds, but we want to find the probability that a child is 12 years old",
         "B": "I think you have confused the numerator and denominator. The numerator is the number on the top of a fraction and here it tells us the number of children who fit our criteria (12 years old)",
@@ -133,7 +133,7 @@
     {
       "questionId": 109620,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2db93545-9f2a-489a-92bb-1b6f8e2ece09.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. We want the probability that they do not have a sister (we need to include both 11 and 12 year olds)",
         "B": "Read the question again. The 9 is the total for the \"11 years old\" row so you have given the probability that they are 11 years old.",

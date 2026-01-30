@@ -43,7 +43,7 @@
     {
       "questionId": 76724,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c4fb05c2-01d0-4b9d-988f-3939b5768e25.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost, but your calculator uses bidmas so will square the 7 and then make it negative if you use method 1",
         "B": "Not quite. Your calculator uses bidmas so will square the 7 and then make it negative if you use method 1",
@@ -55,7 +55,7 @@
     {
       "questionId": 78792,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/621da42a-c47e-41c5-a21e-5f1df4a6a237.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost, but your calculator uses bidmas so will square the 3 and then make it negative if you use method 3",
         "B": "Both 1 and 2 will give the correct answer as your calculator will use BIDMAS.",
@@ -67,7 +67,7 @@
     {
       "questionId": 76729,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e44a543f-16a5-4a0c-b4ad-fd0d89ee49eb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have just subtracted 12 from 15. You need to work out the squares, subtract them and then find the square root",
         "B": "I think you doubled the numbers rather than squaring them. Remember when you square a number you multiply two copies of the number together",
@@ -103,7 +103,7 @@
     {
       "questionId": 89799,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4701c726-1d11-4da0-8a42-f3e178e65c0d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Try working out each power to see if the answers match",
         "B": "3² ✕ 4² is the same as 3 ✕ 3 ✕ 4 ✕ 4 = 9 ✕ 16 = 144. This is 12², so Jo is incorrect. Alternatively, because both the 3 and 4 are being squared, we could rewrite this as (3 ✕ 4)² = 12² so Paul is correct",
@@ -139,7 +139,7 @@
     {
       "questionId": 99537,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ad24fafe-90fb-41f8-9768-d20c75664078.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, try writing out the powers of 5: 5, 25, 125, 625...",
         "B": "Not quite. Try writing out the powers of 2: 2, 4, 8, 16, 32....",
@@ -151,7 +151,7 @@
     {
       "questionId": 99551,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2123cb60-48e5-4710-9e8d-c54e602d7fb5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Try writing out the powers of 4: 4, 16, 64...",
         "B": "Not quite. Try writing out the powers of 3: 3, 9, 27 ....",

@@ -25,7 +25,7 @@
     {
       "questionId": 156420,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/98a7d720-c585-4f4c-af00-947cc3a53992.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have multiplied by 10. The question asks you to divide.",
         "B": "You have multiplied/divided by 1. The question asks you to divide by 10.",
@@ -37,7 +37,7 @@
     {
       "questionId": 156438,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f8584ebc-0a5b-41e0-953d-e477a31c84f4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have multiplied/divided by 1. The question asks you to divide by 10.",
         "B": "Dividing by 10 would move all of the digits one place value column to the right. Therefore the answer is 0.03.",
@@ -49,7 +49,7 @@
     {
       "questionId": 158371,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7291b7ad-f603-48a0-9253-3f7363a39b95.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've multiplied by 100. To divide by 100, we move the decimal point 2 places to the left.",
         "B": "I think you've divided by 10. To divide by 100, we move the decimal point 2 places to the left.",
@@ -61,7 +61,7 @@
     {
       "questionId": 158621,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/871d57c7-121e-4c1a-aa62-81286fdfeafd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've divided by 1,000. To divide by 100, we move the decimal point 2 places to the left.",
         "B": "I think you've divided by 10. To divide by 100, we move the decimal point 2 places to the left.",
@@ -85,7 +85,7 @@
     {
       "questionId": 158622,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7379ac7d-6ad2-409c-8588-2621e5344829.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "0.07 is 100 times smaller than 7. But the dividend, 2.8, is ten times smaller than 28. Therefore the answer to 2.8 ÷ 4 will be ten times smaller than the answer to 28 ÷ 4.",
         "B": "The dividend,2.8, is ten times smaller than 28. Therefore the answer to 2.8÷4 is ten times smaller than the answer to 28÷4. 7÷10 = 0.7",
@@ -97,7 +97,7 @@
     {
       "questionId": 158373,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/42c1ee2c-c013-4509-953a-67e05a17dfdc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is the answer to 15÷3. But, the dividend,0.15, is 100 times smaller than 15. Therefore the answer to 0.15÷3 is 100 times smaller than the answer to 15÷3.",
         "B": "The dividend, 0.15, is 100 times smaller than 15. Therefore the answer to 0.15÷3 is 100 times smaller than the answer to 15÷3. 5÷100 = 0.05",
@@ -121,7 +121,7 @@
     {
       "questionId": 158374,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6a043b52-7046-4a23-adda-ccfc4d74c54c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You've made the answer 100 times smaller, which would be correct if we'd made the dividend, 15, 100 times smaller. However, when the divisor (3) is made smaller, this has the effect of making the answer larger.",
         "B": "You've made the answer 10 times smaller, which would be correct if we'd made the dividend, 15, 10 times smaller. However, it's the divisor (3) that has been made smaller, this has the effect of making the answer larger. How many times larger?",

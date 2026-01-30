@@ -25,7 +25,7 @@
     {
       "questionId": 143743,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9e4c5e78-0c71-46dd-83c4-d8482e437824.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Nearly! This is the probability of getting a 5 when we roll the dice once. Think about how you would use this probability to find out how many times you will get a 5 if you roll the dice 90 times.",
         "B": "Not quite! I think you have divided 90 by 5. Instead, think about using the probability of getting a 5 when you roll a dice. For every 6 rolls, you would expect to get one 5. Use this to work out how many times you would get a 5 if you rolled the dice 90 times.",
@@ -37,7 +37,7 @@
     {
       "questionId": 143763,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/94490c9f-bfa1-4642-b176-7c4cf0933f7d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! Think about using the probability of getting a 3 when you roll a dice. For every 6 rolls, you would expect to get one 3 Use this to work out how many times you would get a 3 if you rolled the dice 150 times.",
         "B": "The probability of getting a 3 when we roll a fair 6 sided dice is 1 out of 6. To find the expected value we multiply the probability by the number of times we roll. So 150 multiplied by 1 out of 6 is the same as doing 150 divided by 6 which is 25. So we would expect to get 25 threes when we roll a fair dice 150 times.",
@@ -49,7 +49,7 @@
     {
       "questionId": 143744,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b897336d-a126-497a-b541-ea16ac3d9014.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Nearly! I think you have found one third of 60. Remember, this probability is two thirds. Think about what we should do to find two thirds, once we know one third.",
         "B": "Not quite, I think you have halved 60 as if the coin is fair. We are told this coin is biased, so you will need to find a different fraction.",
@@ -61,7 +61,7 @@
     {
       "questionId": 143764,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/74b44471-2248-4f78-a5b6-c9d59ed9de12.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Nearly! I think you have found one quarter of 120. Remember, this probability is three quarters. Think about what we should do to find three quarters, once we know one quarter.",
         "B": "Not quite, I think you have halved 120 as if the coin is fair. We are told this coin is biased, so you will need to find a different fraction.",
@@ -85,7 +85,7 @@
     {
       "questionId": 143765,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b5d890c2-979a-4131-b33d-2695c81803be.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, think again about how to find 3/100 of an amount. What operation is represented by of?",
         "B": "Not quite, think again about how to find 3/100 of an amount. What operation is represented by of?",
@@ -97,7 +97,7 @@
     {
       "questionId": 143746,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0c6ae4b4-bf4a-48ed-87e2-8c6caa995c20.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, I think you have multiplied 75 by 240. If the max prize is £240, we cannot have an expected value greater than £240. Think about what fraction of £240 you need to find.",
         "B": "Not quite, I think you have added 75 to 240. If the max prize is £240, we cannot have an expected value greater than £240. Think about what fraction of £240 you need to find.",
@@ -109,7 +109,7 @@
     {
       "questionId": 143766,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c88aac13-e164-4078-b0da-c64b05c179fe.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, I think you have made an error in your calculations. Double check again and think about how to find 1/80 of an amount.",
         "B": "1/80 of £300 is £3.75. The expected value of each ticket is, therefore, £3.75.",
@@ -133,7 +133,7 @@
     {
       "questionId": 143767,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a7d31765-92cc-48d5-93b6-6dcf4b6fe1a4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! I think you have taken the total cost of buying all the raffle tickets from the main prize. To find the expected return, you need to find the fraction of the prize you are expected to win & the subtract the cost of your ticket from this value.",
         "B": "Nearly! This would be your expected return if the raffle ticket was free but you need to consider what you return would be if you have had to pay out for a ticket.",

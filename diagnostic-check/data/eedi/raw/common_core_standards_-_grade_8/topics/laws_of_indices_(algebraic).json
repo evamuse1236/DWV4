@@ -37,7 +37,7 @@
     {
       "questionId": 131771,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5aca7557-1060-4d40-90cd-2ed7431a98e5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! Remember, when we have an index inside the brackets and another outside, we multiply the indices together. Also, think carefully about what happens to the indices when we divide!",
         "B": "You've done the division part correctly, well done. Think carefully about what happens when we raise an index to another power (outside the brackets). If you aren't sure, try writing it out in full.",
@@ -49,7 +49,7 @@
     {
       "questionId": 133964,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fdd5b543-caa4-4ce0-84af-66d0e5020f03.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've multiplied the powers inside and outside the brackets correctly, giving you 7 to the power of 32. But think carefully about what we need to do when we divide!",
         "B": "7 to the power of 8, all to the power of 4 is the same as 7⁸ x 7⁸ x 7⁸ x 7⁸ which gives 7 to the power of 32. When we divide by an index, we subtract the powers, so we do 32 - 2. The answer is 7 to the power of 30, so n is 30.",
@@ -73,7 +73,7 @@
     {
       "questionId": 133965,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/75d3ace5-83da-4c9f-8205-19ed64730b98.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Can you remember the rule for when we multiply indices? If you aren't sure, write out each term in full, for example 2p² would be 2 x p x p. Then multiply them together.",
         "B": "We can think of 3p³ as being 3 x p x p x p and 2p² as being 2 x p x p. As multiplication is commutative, the order of the calculation does not matter so we can do 3 x 2 x p x p x p x p x p. This gives 6p⁵ which is p to the power of 5, multiplied by 6.",
@@ -109,7 +109,7 @@
     {
       "questionId": 131774,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/05a12c5e-6593-42eb-82f9-75e756716bda.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you might have written 5 x 5 as 5² and then added the powers when raising this to the power of 4. But remember that when we have a power inside the brackets and a power outside the brackets, we multiply them.",
         "B": "5 x 5 can also be written as 5². To find 5² to the power of 4, we multiply the powers together giving 2 x 4 = 8. Or we can write it as (5 x 5) x (5 x 5) x (5 x 5) x (5 x 5) = 5⁸. Dividing by 5 gives 5⁷, because when we divide we subtract the powers so 5⁸ ÷ 5 = 5⁸ ÷ 5¹ = 5⁽⁸⁻¹⁾ = 5⁷. Therefore n is 7.",
@@ -121,7 +121,7 @@
     {
       "questionId": 133967,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6580dec-d977-4056-acc4-37b2e36ad48d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "7⁶ ÷ 7 is 7⁵ but we have (7 x 7)⁶ ÷ 7. Try writing 7 x 7 as a power of 7 inside the brackets first. Then when we have a power inside the brackets and a power outside, we can multiply the powers together.",
         "B": "7 x 7⁶ ÷ 7 is 7⁶ but we have (7 x 7)⁶ ÷ 7. Try writing 7 x 7 as a power of 7 inside the brackets first. Then when we have a power inside the brackets and a power outside, we can multiply the powers together.",

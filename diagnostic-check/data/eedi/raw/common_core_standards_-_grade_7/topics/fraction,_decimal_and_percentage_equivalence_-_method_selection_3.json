@@ -43,7 +43,7 @@
     {
       "questionId": 76041,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/696a0d53-000a-462c-8a03-4d16e6c6e744.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have added the two numbers by mistake. What do we have to add to the 2/5 to get to 60%?",
         "B": "Not quite. 2/5 + 60% will be more than 60%. What do we have to add to the 2/5 to get to 60%?",
@@ -67,7 +67,7 @@
     {
       "questionId": 76042,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f864ae68-da16-4b19-9b86-1e69890a31dc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. 37% is 37/100",
         "B": "0.8 = 80% = 80/100 = 8/10 = 4/5.",
@@ -79,7 +79,7 @@
     {
       "questionId": 100600,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f8484a07-3b22-4757-938e-aaf52041d27b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Remember decimals don't have to end.",
         "B": "Not quite. Remember decimals don't have to end.",
@@ -91,7 +91,7 @@
     {
       "questionId": 122900,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1262fa80-b049-4be1-84b1-c9d2592c326a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Can you think of any fractions that are the same as recurring decimals?",
         "B": "Not quite. Think about the place value of a number with 3 decimal places.",
@@ -103,7 +103,7 @@
     {
       "questionId": 101506,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/adbd32ff-4875-43a7-a034-1d024c527a3c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You are almost there. This is the total of the two numbers. What do you have to do to that to find the midpoint?",
         "B": "I think you had the right idea, but 3/4 is not 3.4. 3/4 = 75/100.",
@@ -139,7 +139,7 @@
     {
       "questionId": 101523,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7e10aedf-ccae-4323-a09a-21f60419e287.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Remember that when we go from % to fractions we multiply by 100",
         "B": "Not quite. Can you compare 20/41 to 50%? Does that help you?",

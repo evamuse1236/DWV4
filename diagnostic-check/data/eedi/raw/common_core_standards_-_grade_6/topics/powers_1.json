@@ -43,7 +43,7 @@
     {
       "questionId": 76719,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b008d898-00a6-4b44-9fdf-2848c2468f5c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Remember squaring means multiplying the number by itself. So if you imagine a square with side length 3 to help you, you would need to work out the area of that square, not its perimeter.",
         "B": "A power of 2 is not the same as multiplying by 2. It means you must multiply the number by itself.",
@@ -79,7 +79,7 @@
     {
       "questionId": 78789,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db794b01-91ae-47fa-a234-48343da9a6cb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've remembered that 3 is the power to find a cube number, however 3 isn't a cube number itself. To find a cube number, you multiply a number by itself 3 times, for example, 10 x 10 x 10 = 1000.",
         "B": "36 is a square number, but not a cube number. To find a cube number, you multiply a number by itself 3 times, for example, 10 x 10 x 10 = 1000.",
@@ -91,7 +91,7 @@
     {
       "questionId": 99533,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/df6765e8-121f-45f9-b371-6161b106bb90.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've added 3 and 3 together. The smaller 3 is a power, and means we have to cube 3.",
         "B": "I think you've multiplied 3 and 3 together. The smaller 3 is a power, and means we have to cube 3.",
@@ -103,7 +103,7 @@
     {
       "questionId": 122886,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/08c71261-e5aa-4e25-a7c0-9d0f0800efce.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've multiplied 4 and 3 together. The 3 is a power, and means we have to cube 3.",
         "B": "This means 4 cubed, so 4³ = 4 x 4 x 4 = 64",
@@ -127,7 +127,7 @@
     {
       "questionId": 99548,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/955e9a72-42fa-43f5-a45b-baa7144f8e6e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've found the number of cubes on one face and multiplied by 4. Think of this as layers of cubes, how many layers are there?",
         "B": "This problem can be thought of in a number of different ways: one way would be to think about the shape being three layers of small cubes, with each layer containing 3 ✕ 3 = 9 cubes. This gives a total of 3 ✕ 9 = 27 cubes.",
@@ -139,7 +139,7 @@
     {
       "questionId": 99535,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/93b82b42-d8e5-452a-8da9-6877fa660b8e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "To check who is correct, it might be easiest to calculate the answers to 2⁶ and 4³ and 8², and see which answers are equivalent.",
         "B": "To check who is correct, it might be easiest to calculate the answers to 2⁶ and 4³ and 8², and see which answers are equivalent.",

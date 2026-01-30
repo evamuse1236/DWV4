@@ -79,7 +79,7 @@
     {
       "questionId": 135994,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5022e819-67fb-4c94-ae97-4aae64f37cd8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Think about where the right angle would be if you drew this triangle. The hypotenuse will be opposite this.",
         "B": "Not quite. Think about where the right angle would be if you drew this triangle. The hypotenuse will be opposite this.",
@@ -103,7 +103,7 @@
     {
       "questionId": 135995,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7018ead8-295a-4fa6-b0cb-1db52dfcd24e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost, this would be true if we were looking for a shorter side, but SY is the hypotenuse",
         "B": "Not quite. This finds the area of a triangle. We need to use Pythagoras to find a missing length in a right angled triangle.",
@@ -115,7 +115,7 @@
     {
       "questionId": 135976,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/adc76d6d-ce2f-4fe1-a6da-77167f70d9ff.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost, but I think you subtracted when using Pythagoras. Here we are looking for the longer side so we need to add",
         "B": "I think you have found an area. We need to use Pythagoras to find the missing length as we have a right-angled triangle.",
@@ -151,7 +151,7 @@
     {
       "questionId": 135997,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/999c1da7-cdbf-44a2-90ec-cde363127dbe.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost, but I think you added when using Pythagoras. We are looking for a shorter side so we will need to subtract.",
         "B": "We can find the diagonal across the base first (AP) by using pythagoras, remembering we are calculating a shorter side: 23² - 11² = 408. The square root of 408 is 20.2 soAP is 20.2cm. Then we can use our new triangle APD with the length we have just found. Using pythagoras to find the shorter length (AD) we need to work out 20.2² - 7² and then square root it which will give us a height of 18.9 (1dp). Keep the number 20.2... in your calculator throughout this question rather than rounding it. This will keep your answer more exact.",

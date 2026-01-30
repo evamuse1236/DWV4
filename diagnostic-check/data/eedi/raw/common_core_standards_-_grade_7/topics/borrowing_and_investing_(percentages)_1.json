@@ -43,7 +43,7 @@
     {
       "questionId": 81282,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4f69cb71-8494-4a55-895a-033b6932a105.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have the total amount of the investment if it were compound interest. The question asks for the amount of simple interest earned only.",
         "B": "I think you have worked out the interest for one year only. The questions asks for the interest earned after 6 years.",
@@ -55,7 +55,7 @@
     {
       "questionId": 81457,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/80298e4f-2c57-43d5-a047-3a650582d91c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have the total amount of the investment if it were compound interest. The question asks for the amount of simple interest earned only.",
         "B": "4% of £600 can be calculated by 600 × 0.04 = £24 simple interest per year. After 5 years there she will have earned 5 × £24 = £120 simple interest.",
@@ -67,7 +67,7 @@
     {
       "questionId": 81283,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/32cb41c6-2d1c-4bea-931a-3405049fc570.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have calculated the total interest earned at the end of the period, rather than the overall investment value as the question asks for. How much is the investment worth once 8 years of interest has been applied?",
         "B": "5% of £800 can be calculated by 800 × 0.05 = £40 simple interest per year. After 8 years there she will have earned 8 × £40 = £320 simple interest. We add this onto the principal amount to get a total investment of £800 + £320 = £1120.",
@@ -79,7 +79,7 @@
     {
       "questionId": 81458,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/58e773b6-758d-4263-a94b-2959d59a5fc5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have calculated the total interest earned at the end of the period, rather than the overall investment value as the question asks for. How much is the investment worth once 6 years of interest has been applied?",
         "B": "I think you have worked out the investment value after one year only. The questions asks for the total investment value after 6 years of earning simple interest.",
@@ -91,7 +91,7 @@
     {
       "questionId": 81284,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2c548943-a76a-47b9-927e-146df899b887.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have just stated the interest rate here. If we want to double the value of something we need to add another 100%. If the bond gets 5% per year, how many years will it take to do this?",
         "B": "To double in value we need to earn 100% of the bond again. As the interest rate is 5%, it would take 100 ÷ 5 = 20 years.",
@@ -103,7 +103,7 @@
     {
       "questionId": 81459,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ca5fc680-9106-49fe-a32f-9d55f018edb6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have made a calculation error here. Read the question carefully, the interest rate is 4% per year.",
         "B": "I think you have calculated the time period if the bond attracted compound interest rather than simple interest. It may help to remember simple interest is only calculated on the original amount invested.",
@@ -115,7 +115,7 @@
     {
       "questionId": 81285,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f0b96a72-01f6-4003-9583-c8ba33d340e5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have given the repayment amount after 1 year, but the question asks for 2 years. Start by thinking how many months there are in 2 years.",
         "B": "I think you have multiplied the loan amount by the number of years. Read the question carefully, we need to find how much she has repaid after 2 years at £300 per month.",
@@ -127,7 +127,7 @@
     {
       "questionId": 81460,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0c2b2d22-fff7-4db8-9cca-e2b7a9846452.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have calculated the repayment amount after 2 months rather than 2 years. Start by thinking how many months there are in 2 years.",
         "B": "I think you have given the repayment amount after 1 year, but the question asks for 2 years. Start by thinking how many months there are in 2 years.",
@@ -139,7 +139,7 @@
     {
       "questionId": 81286,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c8153eaf-5cda-4392-bc9c-59221b2b09a3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have found the percentage of the original loan amount paid back each month. It may help to remember that simple interest is a % of the original loan amount charged each year by the loan company.",
         "B": "If she paid £300 per month for 2 years than Margot paid a total of £300 × 24 = £7200. If £5000 was the original loan then she paid £2200 in interest. As interest is applied annually, she paid £2200 ÷ 2 = £1100 in simple interest each year. 1100 ÷ 5000 = 0.22, therefore £1100 is 22% of £5000, so the interest rate is 22%",

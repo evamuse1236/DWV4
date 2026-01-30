@@ -43,7 +43,7 @@
     {
       "questionId": 153780,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6325842-d806-44af-b3d5-9d27508a97d1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! I think you have assumed that the origin is the centre of enlargement rather than the coordinate of 'O'.",
         "B": "After enlarging by scale factor 0.5, the point will be half the distance away from the centre of enlargement, so instead of 2 squares right and 4 down from the centre O, it's 1 square right and 2 squares down.",
@@ -55,7 +55,7 @@
     {
       "questionId": 135568,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f88c05df-a212-480e-8d57-96f0929ca8f7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, work out the distance from O to P and then multiply this distance by 0.5 (half the distance).",
         "B": "Not quite, I think you have enlarged by scale factor 2 as you are twice the distance from O. We are doing s.f 0.5 so half the distance away from O (the new point will actually be closer to the centre).",
@@ -67,7 +67,7 @@
     {
       "questionId": 135588,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e7fbf59b-37b4-4fff-b3cd-a5a86a90b7ee.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, work out the distance from J to K and then multiply this distance by 0.5 (halve the distance).",
         "B": "Not quite, work out the distance from J to K and then multiply this distance by 0.5 (halve the distance)",
@@ -79,7 +79,7 @@
     {
       "questionId": 135569,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3316dda1-7153-40f8-9bc0-2e28e5a1fffa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! I think you may have miscounted the length of the respective edges. The left hand edge of shape 1 is 3 squares long, and the corresponding length on shape 2 is 1 square long. The scale factor is the length of image divided by length of original.",
         "B": "Not quite! I think you have assumed that a negative scale factor will reduce the size of the image. Remember, the scale factor is the length of image divided by length of original.",
@@ -103,7 +103,7 @@
     {
       "questionId": 135570,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8f5c85ab-6142-4c9c-92e4-55c9119014d1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, work out the distance from O to P and then multiply this distance by 1/4 (divide the distance by 4).",
         "B": "When enlarging by scale factor 1/4 (0.25) the point becomes a quarter of the distance away from the centre of enlargement, so instead of 4 squares up from the centre and 2 left, it is 1 square up and 0.5 left.",
@@ -115,7 +115,7 @@
     {
       "questionId": 135590,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fb866e9d-849c-4e6f-9424-96f77d81bd34.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite - make sure you are using the point marked O as the centre of enlargement, not the origin",
         "B": "Not quite, work out the distance from O to A and then multiply this distance by 1/4 (divide the distance by 4)",
@@ -127,7 +127,7 @@
     {
       "questionId": 135571,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e996c7e5-8907-4d43-80cc-35034a11f664.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! I think you have assumed that a negative scale factor will reduce the size of the image. Remember, the scale factor is the length of image divided by length of original.",
         "B": "Not quite! I think you may have confused the image with the original. Shape 2 is the image and shape 1 is the original shape. The scale factor is the length of image divided by length of original.",
@@ -139,7 +139,7 @@
     {
       "questionId": 135591,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/666389ac-0436-42c9-afb8-79b6f47c08ac.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! I think you may have miscounted the length of the respective edges. The left hand edge of shape R is 2 squares long, and the corresponding length on shape Q is 6 squares long. The scale factor is the length of image divided by length of original.",
         "B": "Shape R is the image and shape Q is the original shape. The left hand edge of shape R is 2 squares long, and the corresponding length on shape Q is 6 squares long. The scale factor is the length of image divided by length of original, which in this case is 2/6 = 1/3.",

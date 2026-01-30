@@ -19,7 +19,7 @@
     {
       "questionId": 155065,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/444b42f6-9dcc-4248-8f36-8e50d18fd997.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Make sure you read both statements carefully. Remember the dependent variable is the variable whose value depends on and is affected by changes in the independent variable. Does the side length depend on the perimeter or does the perimeter depend on the side length?",
         "B": "Not quite. Make sure you read both statements carefully. Remember the independent variable is the variable whose value is chosen independently. Changing its value will change the quantity being calculated. Is this true for the side length? Will changing the side length, change the perimeter?",
@@ -31,7 +31,7 @@
     {
       "questionId": 155070,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fdf809e8-57d1-4f33-bb76-ef3ba6550ccb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Make sure you read both statements carefully. Remember the independent variable is the variable whose value is chosen independently. Changing its value will change the quantity being calculated. Is this true for the diameter? Will changing the diameter, change the circumference?",
         "B": "Not quite. Make sure you read both statements carefully. Remember the dependent variable is the variable whose value depends on and is affected by changes in the independent variable. Does the circumference depend on the diameter or does the diameter depend on the circumference?",
@@ -55,7 +55,7 @@
     {
       "questionId": 155071,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e3c9c585-c81c-407e-8155-ff4f89f7abdc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. π is a fixed number, it is a constant not a variable. We are being asked for the dependent variable. Remember the dependent variable is the variable whose value depends on and is affected by changes in the independent variable.",
         "B": "The dependent variable is the variable whose value depends on and is affected by changes in the independent variable. In order to work out the area of a circle, we need to know (or be able to work out) the radius. The value of the area is completely dependent on the value of the radius. Therefore the area is the dependent variable.",
@@ -67,7 +67,7 @@
     {
       "questionId": 155067,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c3667171-a04c-4e3a-b6af-b49e46e3c8cc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Total cost is the dependent variable. What variable is total cost dependent on? What will make it increase or decrease? This is the independent variable.",
         "B": "The independent variable is the variable which affects the other variable. Changing its value will change the quantity being calculated. Total cost is increased by hiring the car for more days. Therefore the number of days would be considered the independent variable.",
@@ -91,7 +91,7 @@
     {
       "questionId": 155068,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f97b5f88-1709-49d2-9125-66bcbb11366d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. This graph shows us the cost for a single person journey. We don't know how the cost would change as the number of people increase. Remember the independent variable is always recorded on the horizontal axis.",
         "B": "Not quite. The amount charged is the dependent variable. As the number of miles increase the amount charged will also increase. Remember the independent variable is always recorded on the horizontal axis.",
@@ -103,7 +103,7 @@
     {
       "questionId": 155073,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e9982e3d-72d9-4582-94a9-6c0c61954c66.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. The speed is fixed at 3mph, its value is not variable. Remember the dependent variable is always recorded on the vertical axis.",
         "B": "The dependent variable is the variable whose value depends on and is affected by changes in the independent variable. In order to work out the distance travelled, we need to know how long the person has been walking for. Therefore the distance travelled is the dependent variable. The graph shows us this as the dependent variable is always recorded on the vertical axis.",
@@ -127,7 +127,7 @@
     {
       "questionId": 155074,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8a79d0ec-9a0e-4a6a-bd71-2d5d1baf1aed.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. In this instance, the number of sides is fixed and not variable so would not be recorded on one of the axis. Remember, when plotting a graph, the independent variable goes on the horizontal axis and the dependent variable goes on the vertical axis.",
         "B": "When drawing a graph the independent variable is recorded on the horizontal axis and the dependent variable is recorded on the vertical axis. A table laid put horizontally has the independent variable in the first row and the dependent variable in the second row. Therefore, the side length is recorded on the horizontal axis and the perimeter on the vertical axis.",

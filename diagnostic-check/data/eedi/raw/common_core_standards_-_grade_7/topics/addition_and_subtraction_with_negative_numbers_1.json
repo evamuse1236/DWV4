@@ -25,7 +25,7 @@
     {
       "questionId": 89412,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/238286d1-9aec-45d6-9610-81ff565ef348.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you might have counted numbers rather than jumps. Where would you need to start on the number line so that when you did 6 jumps up you ended at 4?",
         "B": "I think you have found the difference between 4 and 6. Hint: Where would you need to start on the number line so that when you did 6 jumps up you ended at 4?",
@@ -37,7 +37,7 @@
     {
       "questionId": 89430,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b7e96b05-8736-41d9-bd14-36b138363634.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have added 7 and 2. Hint: Where would you need to start on the number line so that when you did 7 jumps up you ended at 2?",
         "B": "We start at a point, and when we go up 7 jumps we end up at 2. To find out where we started jump back 7 from 2, and you get the answer -5.",
@@ -49,7 +49,7 @@
     {
       "questionId": 89413,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cfdfb4fd-6c1d-43ab-a0b7-9571ce07a048.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "4 + 5 is not equal to 9. Think about where you start on the number line, how far you move and where you end up.",
         "B": "The starting point is at −1, then there are 5 steps in a positive direction (＋ 5) which gives an answer of 4. Put mathematically, this gives: −1 ＋ 5 = 4",
@@ -85,7 +85,7 @@
     {
       "questionId": 89432,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e7bd91d5-0b64-45a2-a80a-15dac13a0127.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost, just remember that we are starting at a negative and moving up the number line to a positive.",
         "B": "I think you have done -4 + 3. If we start at -4, how many jumps up do we do to get to 3?",
@@ -109,7 +109,7 @@
     {
       "questionId": 89433,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ee76251d-f2f3-403a-89a6-22991560f378.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you might have subtracted 7. Remember you are doing 7 jumps up the number line",
         "B": "Picture a number line. You're at −11 and add 7, so take 7 steps in a positive direction: 1 step will take you to −10. The remaining 6 steps will take you to −4, so −11 ＋ 7 = −4",
@@ -121,7 +121,7 @@
     {
       "questionId": 89416,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/90a8ce00-a436-4e5f-b596-52b03b9ec4a4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have subtracted but you need to add the -5 and 1. Start at -5 on the number line and then add 1 on.",
         "B": "Find the sum of the two bricks, 1 and −5, so 1 ＋ (−5). This is the same as 1 − 5. On a vertical number line, start at 1 and take 5 steps down. You will stop at the answer, −4.",

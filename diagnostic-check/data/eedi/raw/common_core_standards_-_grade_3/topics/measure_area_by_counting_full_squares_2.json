@@ -31,7 +31,7 @@
     {
       "questionId": 156543,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9a0dccf6-1431-4e98-82ea-7d24fbc3fef0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have found the perimeter but the question asks for the area...",
         "B": "The are 11 squares in this shape, which each have an area of 1 cm². Therefore the total area of the shape is 11cm².",
@@ -43,7 +43,7 @@
     {
       "questionId": 156526,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e07f734d-39da-43d1-b012-f7f7b645f41b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, I think you may have halved the area. For this question we simply need to count how many squares, each with an area of 1 cm², make up the shape.",
         "B": "I think you may have miscounted. How many squares with an area of of 1 cm² make up the shape?",
@@ -67,7 +67,7 @@
     {
       "questionId": 156527,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/70ff10b3-184d-47e7-96bb-5386ecf0de26.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have miscounted. To find the area count how many squares there are, as each square has an area of 1 cm².",
         "B": "The are 10 squares in this shape, which each have an area of 1 cm². Therefore the total area of the shape is 10cm².",
@@ -79,7 +79,7 @@
     {
       "questionId": 156545,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0b24a76f-616f-4560-8a45-69edd28e0a04.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, I think you may have halved the area. For this question, we simply need to count how many squares, each with an area of 1 cm², make up the shape.",
         "B": "I think you may have miscounted. To find the area you must count how many squares there are, given that they each have an area of 1 cm².",
@@ -91,7 +91,7 @@
     {
       "questionId": 158862,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/323c6d17-ec90-4ed9-b582-45af43c854ae.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have worked out the perimeter of the shape but the question is asking for the area...",
         "B": "I think you have added the length and the width, but to find the area, you need to multiply them...",
@@ -103,7 +103,7 @@
     {
       "questionId": 159061,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f871b77e-2555-4e9c-8fcd-49a22e4ccdc5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have worked out the perimeter of the shape but the question is asking for the area... How many little squares is this shape made from?",
         "B": "The shape is made from 24 squares (3 rows of 8) and the area of each square is 1in² therefore the area of the shape is 24in²",
@@ -115,7 +115,7 @@
     {
       "questionId": 158863,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/57f6bf33-3416-4b9a-ba64-700d28dddfeb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you tried to find the area of each small square by adding the length and width together. But to find the area, we need to multiply length by width; therefore, the area of each small square is 1 ft² (1ft x 1ft).",
         "B": "The shape is made from 8 squares and the area of each square is 1ft² therefore the area of the shape is 8ft²",

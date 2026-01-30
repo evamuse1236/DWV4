@@ -67,7 +67,7 @@
     {
       "questionId": 99566,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/19121ddc-4c6b-4e8f-95cc-ccd4c5882478.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've only multiplied the different factors. Remember, though, ★ may have repeating factors, and these should be taken into account to work out its value.",
         "B": "I think you have multiplied some of the factors, but not all. Remember the circle of ★ includes all of the factors of the number.",
@@ -79,7 +79,7 @@
     {
       "questionId": 99581,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/34dd6ae5-c7bf-4b65-94da-89f6a023fae2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You've found one of the factors of ★, but all of them are contained within the left-hand circle (including in the overlapping section). What value does that give?",
         "B": "All of the left-hand circle contains the prime factors of ★, which means we can write ★ = 11 × 2 × 3 = 66.",
@@ -103,7 +103,7 @@
     {
       "questionId": 99582,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b5fb421d-6f2b-4083-a5c4-106d79999417.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've found the prime factors of 60, but notice that the 2,2 and 3 are already in the circle for 60. What is the missing prime factor?",
         "B": "The numbers in the right-hand circle multiply to give 60. Therefore 60 = 2 × 3 × 2 × ❤, giving 60 = 12 × ❤. This means that the missing prime factor is 5.",
@@ -115,7 +115,7 @@
     {
       "questionId": 99568,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c97110c7-752a-46f6-9d5c-fa485698340a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You may be confusing the highest common factor with the lowest common multiple. Remember, for the LCM we're dealing with multiples, so always values greater than (or sometimes equal to) any of the numbers given.",
         "B": "The intersection of the Venn diagram contains the factors that 36 and 90 have in common. So, 2, 3 and 3 are common factors of 36 and 90. Their product, 2 ✕ 3 ✕ 3 = 18, is the highest common factor of 36 and 90.",
@@ -127,7 +127,7 @@
     {
       "questionId": 99583,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f3ac1432-455f-40e4-b667-14cbeecbf3db.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You've found the lowest common multiple! :) We're looking for the highest common factor here, can you use the prime factors that are in common?",
         "B": "The factors that 66 and 60 have in common are contained in the intersection of the Venn diagram. So, 2 and 3 are common factors of 66 and 60. Their product, 2 ✕ 3 = 6, will be the highest common factor of 66 and 60.",
@@ -151,7 +151,7 @@
     {
       "questionId": 99588,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8b1ee234-f652-4404-b615-22b283074924.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have multiplied the numbers that are not in the intersection: these are not the only factors we need to use. Remember your answer needs to be a multiple of both 66 and 60.",
         "B": "You've found the Highest Common Factor :) We need to find the lowest common multiple for this question. To help you check your next answer, see if it is a multiple of 66 and 60.",

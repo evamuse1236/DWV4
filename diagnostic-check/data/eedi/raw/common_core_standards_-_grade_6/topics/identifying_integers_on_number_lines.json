@@ -31,7 +31,7 @@
     {
       "questionId": 165463,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7f937a59-fa1d-414a-8088-016443dc11cf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It seems like you may have gone to the left of -4, however as we move away from 0, the digit in the number increases so that would be -5!",
         "B": "-3 would be between -4 and -2.",
@@ -55,7 +55,7 @@
     {
       "questionId": 165464,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d749b07a-d73e-4417-a045-efee77cf48c9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It seems like you've just counted 4 spaces up from 30. Have a look really carefully at the scale on this number line!",
         "B": "It seems like you've just counted 4 spaces up from 30 - and that you included 30 (we never include the number we're starting from). Have a look really carefully at the scale on this number line!",
@@ -67,7 +67,7 @@
     {
       "questionId": 165469,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/baf534d3-c332-4804-bfe9-6e12e2ce7426.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It seems like you may have just chosen a number close to 27. Have a think about what the number line is going up in.",
         "B": "The number line is increasing by 2 with every jump. 31 is 4 more than 27, so we would need to go up two jumps which would put us on the triangle.",
@@ -103,7 +103,7 @@
     {
       "questionId": 165466,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/54116eaf-cbda-4d80-992a-8553ba03d542.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It seems like you may have just chosen the first shape at the top. See if you can figure out what the numbers are going down by each time.",
         "B": "The numbers are decreasing by 3 every time. 3 less than 7 would be 4, and then 3 less than that would be 1, so that is the star.",
@@ -127,7 +127,7 @@
     {
       "questionId": 165467,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/69fda7a3-a6e3-4547-afba-98dff91fd6cf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite - it looks like you've found where -4 goes rather than 4.",
         "B": "It seems like you've counted in 1s back from 6. Check again carefully- do the numbers change by 1 every time?",
@@ -139,7 +139,7 @@
     {
       "questionId": 165472,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0bacdf56-946a-461d-93b4-35892c6c0e9c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you might have counted to the left from -7, however as we move away from 0 the digits get bigger so that would actually be -9!",
         "B": "The number line is increasing by 2 every time. -5 is 2 bigger than -7, so that would be one jump up.",

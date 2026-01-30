@@ -43,7 +43,7 @@
     {
       "questionId": 173934,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9601989e-5839-42de-b823-0c0958cbe357.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "To find the total amount of flour, you need to multiply the amount per person (1/4) by the number of people (5 1/2). The best way to do this is to convert 5 1/2 to an improper fraction first. 5 and 1/2 is 11/2, so the calculation is 1/4 x 11/2 = 11/8 which converts to 1 and 3/8 as a mixed number.",
         "B": "You are correct to multiply, but it looks like you have only multiplied the fraction parts together (1/4 x 1/2 = 1/8). To multiply mixed numbers, you should convert them to improper fractions first.",
@@ -55,7 +55,7 @@
     {
       "questionId": 173994,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/65e8f804-be1a-478c-b148-533f449831e3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "When multiplying a mixed number by a fraction, it's best to change the mixed number into an improper fraction first. It looks like you may have only multiplied the fraction parts and left the whole number part as it was.",
         "B": "To find the total amount of sugar, you need to multiply the amount per person (1/5) by the number of people (6 and 1/2). To multiply mixed numbers, it's easiest to convert them to improper fractions first. 6 and 1/2 is 13/2, so the calculation is 1/5 x 13/2 = 13/10. Converting to a mixed number gives 1 and 3/10.",
@@ -91,7 +91,7 @@
     {
       "questionId": 173936,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bbda630f-34c4-449a-9f27-4dac88e78720.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The question asks for 3/5 'of' the total amount of almonds. The word 'of' is a clue that you need to multiply, not divide.",
         "B": "It looks like you have chosen to divide instead of multiply. The question asks for a fraction 'of' an amount, which means you need to multiply. Also, double-check your method for dividing mixed numbers.",
@@ -103,7 +103,7 @@
     {
       "questionId": 173996,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c5adfc71-de84-4247-be0f-e2d4ed0aa863.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The question asks for a fraction 'of' an amount. This tells you to multiply. It looks like you have divided instead of multiplying.",
         "B": "Finding a fraction 'of' a quantity means you need to multiply. It seems you've chosen to divide the numbers instead. Also, it looks like you may have made a mistake when converting the mixed number.",
@@ -115,7 +115,7 @@
     {
       "questionId": 173937,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/56f470ee-449b-4ba7-b411-8276c4431103.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You're right to multiply to find the area. However, it looks like you multiplied the whole numbers and the fractions separately. To multiply mixed numbers, you need to convert them to improper fractions first, then multiply.",
         "B": "The area of a rectangle is found by multiplying its length by its width. To multiply these mixed numbers, first convert them to improper fractions. 3 and 1/2 is 7/2, 2 and 1/4 is 9/4. Then multiply these two fractions together to get 63/8 which is 7 and 7/8 as a mixed number.",
@@ -127,7 +127,7 @@
     {
       "questionId": 173997,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/05df1abb-5306-4079-93fa-92955d1cb55c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "To find the area of a rectangle, you need to multiply the length and the width. It looks like you have added them instead. This would give you part of the perimeter.",
         "B": "It seems you have added the length and width, but the formula for the area of a rectangle is length multiplied by width. Also, check your method for adding fractions – you need a common denominator.",

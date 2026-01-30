@@ -43,7 +43,7 @@
     {
       "questionId": 167025,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e353849e-9662-42d8-a2af-b8675812ae16.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have confused median and mean. Remember, median is the middle of the ordered set of data.",
         "B": "It looks like you have drawn the box from the minimum to the maximum value, but you forgot the whiskers mark the minimum and maximum values.",
@@ -55,7 +55,7 @@
     {
       "questionId": 166776,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4ea7ad90-b204-4d5d-9fc9-a374768dcd23.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. When you find your lower and upper quartiles, you need to find the middle of the values below and above the median.",
         "B": "Once the data was put in order, the minimum was 78, the maximum was 95, the median was 86.5. The lower quartile was 81 and the upper quartile was 92. This plot has the quartile and median lines plotted correctly as well as the whiskers extended to the minimum and maximum values.",
@@ -67,7 +67,7 @@
     {
       "questionId": 167026,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2903e7b1-6d76-4131-9281-030002d2f722.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Remember, the median is the middle of the ordered set of values. If there is an even number of values, the median will be the average of the two middle numbers.",
         "B": "Not quite. When you find your lower and upper quartiles, you need to find the middle of the values below and above the median.",
@@ -103,7 +103,7 @@
     {
       "questionId": 166778,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/63650b10-ff38-4ded-a92b-3a7cbaf03fc4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. When you find your lower and upper quartiles, you need to find the middle of the values below and above the median.",
         "B": "This data set has the correct median, but doesn't show the correct minimum and maximum to reflect the box plot.",
@@ -127,7 +127,7 @@
     {
       "questionId": 166779,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a8ad2ace-a3d7-4282-8925-53a44488ba10.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Close! Remember interquartile range is Q3 - Q1. What are the values for Q3 and Q1?",
         "B": "Close! The range is the maximum subtract the minimum. What is the maximum and what is the minimum?",
@@ -139,7 +139,7 @@
     {
       "questionId": 167029,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ec73f09f-018e-4ad2-9219-0fbb34636096.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Close! The range is the maximum subtract the minimum. What is the maximum and what is the minimum?",
         "B": "Remember the range is the maximum subtract the minimum. The interquartile range is Q3 - Q1. First find the maximum, minimum, Q1 and Q3 from the plot.",

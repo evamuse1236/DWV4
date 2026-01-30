@@ -37,7 +37,7 @@
     {
       "questionId": 76727,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/121e43ed-3801-45a3-a401-527c3399313a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've confused 64 as the perimeter. Remember the area of a square is the side length squared.",
         "B": "I think you have divided by 2, but we need to find which number multiplied by itself makes 64",
@@ -61,7 +61,7 @@
     {
       "questionId": 76731,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4bae51fb-b940-49ac-8564-c9467f4e8812.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, I think you might have doubled the base to find the area rather than halving it. ",
         "B": "I think you've forgotten the final step of the area of a triangle. Remember Area = bh/2",
@@ -73,7 +73,7 @@
     {
       "questionId": 78799,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a568f3be-5714-42b4-a5fb-b3039acb89df.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you've forgotten the final step of the area of a triangle. Remember Area = bh/2",
         "B": "Not quite, I think you might have doubled the base to find the area rather than halving it. ",
@@ -85,7 +85,7 @@
     {
       "questionId": 102973,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3022a344-dcbd-4495-b3bd-9e9a770108be.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Try writing 0.25 as a fraction before you find the square root.",
         "B": "Using the fact that the inverse operation of square root is the square function, we can test these answers: for Tom, (⅕)² = ⅕ × ⅕ = 1/25 = 4/100 = 0.04, which is not 0.25. For Katie, ¼ × ¼ = 1/16, so she is correct.",
@@ -97,7 +97,7 @@
     {
       "questionId": 102978,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4a3cf0e4-7e44-4efc-908b-55f809ed9e35.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Try writing 0.4 as a fraction before you find the square root.",
         "B": "Using the fact that the inverse operation of the square root is the square function, we can test these answers: for Jo, 0.2² = 0.2 × 0.2 = 0.04, which is 10 times smaller than 0.4. For Paul, ⅕ × ⅕ = 1/25, so Paul is correct.",
@@ -109,7 +109,7 @@
     {
       "questionId": 102974,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/81a806ff-56b0-4e52-aca5-e766e0e88b40.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have confused square rooting with dividing by 2. When we find the square root, we are looking for a number that multiplies by itself to give the number under the root.",
         "B": "Let’s look at some square numbers: we know 8² = 64 and 9² = 81, so this must mean that the value of √71 must lie somewhere between 8 and 9.",
@@ -121,7 +121,7 @@
     {
       "questionId": 102979,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b7171a6a-ff68-4307-ba0c-5a26be6677d6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have confused square rooting with dividing by 2. When we find the square root, we are looking for a number that multiplies by itself to give the number under the root.",
         "B": "Not quite. 8² is 64 and 9² is 81, but 89 isn't between these.",
@@ -133,7 +133,7 @@
     {
       "questionId": 102975,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0582f2cb-c061-429b-9f5b-90a1dfa86075.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost, but √62 is closer to the 8 than 7.",
         "B": "√49 is exactly 7, so which root will be a little bigger than this one?",

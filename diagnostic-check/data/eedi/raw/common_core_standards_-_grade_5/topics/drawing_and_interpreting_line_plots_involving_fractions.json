@@ -19,7 +19,7 @@
     {
       "questionId": 158450,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8c4c1bd5-9377-4a3c-a09d-fbd1bdb4e7a8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Careful, check your counting - the fractions also need to be in order from smallest to biggest along the line.",
         "B": "Almost, but the fractions need to be in order from smallest to biggest along the line.",
@@ -43,7 +43,7 @@
     {
       "questionId": 158451,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a391e67c-fd55-4783-bbdf-97da815c2490.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "That's the weight of the heaviest package, but we want the difference between the heaviest and lightest, so you need to subtract the weight of the lightest package.",
         "B": "The heaviest is 1/2 pound and the lightest is 1/8 pound, so the difference is 1/2 - 1/8 = 4/8 - 1/8 = 3/8.",
@@ -55,7 +55,7 @@
     {
       "questionId": 158568,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/69359deb-602b-4e14-beb4-6d46dcb67e4c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "That's the weight of the heaviest package, but we want the difference between the heaviest and lightest, so you need to subtract the weight of the lightest package.",
         "B": "That's the weight of the lightest package, but we want the difference between the heaviest and lightest, so you need to subtract this from the weight of the heaviest package.",
@@ -91,7 +91,7 @@
     {
       "questionId": 158453,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/adb55702-f116-4a0f-8d62-817037376867.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "That's the total of 1/8, 1/4 and 1/2, but look at the dots - there was more than one package that weighed 1/2 pound.",
         "B": "You have added correctly, but is there another way to write that total?",
@@ -103,7 +103,7 @@
     {
       "questionId": 158570,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f1a35463-8be4-42e0-a9f2-44bf013b38f8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have added correctly, but is there another way to write that total?",
         "B": "You have added correctly, but is there another way to write that total?",
@@ -115,7 +115,7 @@
     {
       "questionId": 158454,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b93e2d90-9d7a-4821-9ea4-f5858746cb5e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "That's the total weight of all the packages, so now we need to share that between all the packages by dividing. How many packages are there, if each dot is one package?",
         "B": "That's the total weight of all the packages, so now we need to share that between all the packages by dividing. How many packages are there, if each dot is one package?",
@@ -127,7 +127,7 @@
     {
       "questionId": 158571,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cfeb3b8c-df26-4917-b910-8e78e001b2bc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "That's the total weight of all the packages, so now we need to share that between all the packages by dividing. How many packages are there, if each dot is one package?",
         "B": "The total weight of the packages is 43/20 pounds. There are 6 packages shown on the diagram, so if we redistribute or share the weight equally we get 43/20 ÷ 6 = 43/120.",

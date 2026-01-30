@@ -55,7 +55,7 @@
     {
       "questionId": 133694,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f9e58618-0b97-48e9-b18f-c66f0f86f0ce.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you found the surface area of the cube. Think about how many cubes make up the top layer, and how many layers there are in total.",
         "B": "I think you tried to count the visible cubes, remember there are some that we can't see. Think about how many cubes make up the top layer, and how many layers there are in total.",
@@ -67,7 +67,7 @@
     {
       "questionId": 131462,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/933b63df-c555-4dc3-96a5-b34fb681fa98.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have added to find the volume. Remember we multiply the length by the width by the height",
         "B": "I think you have found the area of one of the faces. Remember we multiply the length by the width by the height to find the volume of a cube",
@@ -91,7 +91,7 @@
     {
       "questionId": 131463,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0dd5e7b7-ffef-4fd6-bce6-45147d259bc4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have added to find the volume. Remember we multiply the length by the width by the height",
         "B": "I think you have found the area of one of the faces. Remember we multiply the length by the width by the height to find the volume of a cube",
@@ -115,7 +115,7 @@
     {
       "questionId": 131464,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/94c42ffb-aa78-45fb-92b4-8a33a24aac93.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, when we are finding the volume we multiply length by width by height. Make sure the units are all the same before doing this.",
         "B": "Not quite, when we are finding the volume we multiply length by width by height",
@@ -127,7 +127,7 @@
     {
       "questionId": 133697,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/331a005a-2443-4838-b7f9-08dd29a51c31.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost, just check that the units are all the same before multiplying.",
         "B": "Volume = l x w x h. We need the units to be the same, so 60mm = 6cm. Then do 7 x 5 x 6",
@@ -139,7 +139,7 @@
     {
       "questionId": 131465,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a29f1678-c96e-4ae5-bc5f-c8542472f352.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you might have added 3 and 2, and then divided 30 by this. Remember to find the volume we are multiplying the lengths. To undo this we will need to divide",
         "B": "Volume = L x W x H so 30 = ⭐x 2 x 3, so 30 =⭐x 6 and therefore the star is 5",
@@ -151,7 +151,7 @@
     {
       "questionId": 133698,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/93fc7f37-e787-4099-a330-32e76af65044.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, I think you have added the lengths you can see. Remember to find the volume we are multiplying the lengths. To undo this we will need to divide",
         "B": "I think you might have added 3 and 3, and then subtracted this from 45. Remember to find the volume we are multiplying the lengths. To undo this we will need to divide",

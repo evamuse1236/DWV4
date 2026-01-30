@@ -19,7 +19,7 @@
     {
       "questionId": 154617,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/86a9f629-9d9e-409e-8e7e-f9de103652a7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Multiplying by 4/5 will make the answer less than 20. Remember, 1 is the only number we can multiply by if we do not want to change the starting value.",
         "B": "Not quite. Multiplying by 6/5 will make the answer more than 20. Remember, 1 is the only number we can multiply by if we do not want to change the starting value.",
@@ -31,7 +31,7 @@
     {
       "questionId": 154622,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/76f475e9-5304-4b2e-9148-dafe56368ed7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Multiplying any number by 0 gives you an answer of 0. Remember, 1 is the only number we can multiply by if we do not want to change the starting value.",
         "B": "Not quite. Multiplying by 2/3 will make the answer less than 50. Remember, 1 is the only number we can multiply by if we do not want to change the starting value.",
@@ -43,7 +43,7 @@
     {
       "questionId": 154618,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/92ea741d-89b6-4c4c-aa33-784739ca1692.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. To get an answer greater than 20 we would have to multiply by a number greater than one. 4/5 is smaller than one.",
         "B": "Multiplying by a number less than one will result in a value smaller than 20. As 4/5 is less than one we know that our answer will be less than (<) 20.",
@@ -55,7 +55,7 @@
     {
       "questionId": 154623,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/53067d9d-5ab2-44bf-b707-96ffb24498b7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. To get an answer greater than 50 we would have to multiply by a number greater than one. 2/3 is smaller than one.",
         "B": "Multiplying by a number less than one will result in a value smaller than 50. As 2/3 is less than one we know that our answer will be less than (<) 50.",
@@ -79,7 +79,7 @@
     {
       "questionId": 154624,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f73bdc9c-a8db-4d33-bbc3-2f897bc115af.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. What is the value of the fraction 5/5? What will happen if you multiply 40 by this number?",
         "B": "Not quite. What is the value of the fraction 5/5? What will happen if you multiply 40 by this number?",
@@ -91,7 +91,7 @@
     {
       "questionId": 154620,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d6cd85dc-042e-4a65-a926-4693764882b9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. To get an answer less than 3/4 we would have to multiply by a number smaller than one. 3/2 is bigger than one.",
         "B": "Multiplying by a number less than one will result in a value smaller than 3/4. All the other options are greater than or equal to one, so 2/3 is the only number that can make the calculation correct.",
@@ -103,7 +103,7 @@
     {
       "questionId": 154625,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f0ff560c-9fc3-4586-a819-15e792001ff6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. To get an answer less than 2/3 we would have to multiply by a number smaller than one. 8/8 is equal to one.",
         "B": "Not quite. To get an answer less than 2/3 we would have to multiply by a number smaller than one. 9/8 is bigger than one.",
@@ -115,7 +115,7 @@
     {
       "questionId": 154621,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/424dd151-bc1d-40e8-92e0-d8a33b0c3ebe.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. The largest value will come from multiplying 7/8 by the largest number. 6/7 is the smallest number multiplying 7/8.",
         "B": "Not quite. Turn 8/7 into a mixed number and compare it to the other values multiplying 7/8.",
@@ -127,7 +127,7 @@
     {
       "questionId": 154626,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b64f3728-b118-44a9-88d1-1ca893fc05d8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Turn the 1 and 1/6 into an improper fraction and compare it to the other values multiplying 7/8.",
         "B": "Not quite. The largest value will come from multiplying 7/8 by the largest number. 5/6 is the smallest number multiplying 7/8.",

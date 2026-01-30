@@ -37,7 +37,7 @@
     {
       "questionId": 103790,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/87c0ac24-1a5a-439e-bc86-2e7528c8a01e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Be careful. When comparing decimals, compare the ones in the same place value column. Remember 0.2 is the same as 0.20.",
         "B": "Remember, the inequality sign always ‘points’ to the smaller value. Tom’s numbers are 0.15 (so 1 tenth and 5 hundredths) and 0.2 (with 2 tenths). His inequality sign is pointing the wrong way because 1 tenth is less than 2 tenths, and the 5 hundredths contributes very little by comparison to tenths. Katie is correct because 0.020 has only 2 hundredths.",
@@ -49,7 +49,7 @@
     {
       "questionId": 103802,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9698160c-363d-4f8c-87ff-74a83784bdc3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Remember to compare the digits with the same place value.",
         "B": "Remember to compare the digits with the same place value.",
@@ -73,7 +73,7 @@
     {
       "questionId": 155952,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5b039017-6612-49e1-a2ae-df2a8f290b8f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, this symbol means that the two numbers are equal to each other. 0.603 is not equal to 0.63 - the extra zero acts as a place value holder. Try using an inequality symbol.",
         "B": "Not quite, this symbols means that the two numbers are completely equivalent to each other. Try using an inequality symbol.",
@@ -85,7 +85,7 @@
     {
       "questionId": 156709,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d1ef705-082c-4764-a23e-25b11728df4e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks as if you've picked the first number from the list. We're looking for the smallest number from the list.",
         "B": "In order to find the smallest, we need to compare units with units and tenths with tenths and so on. None of them have a units. Which has the smallest amount of tenths?",
@@ -97,7 +97,7 @@
     {
       "questionId": 156727,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a5548a0a-d4b7-46e1-9292-fff7e8b144e2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks as if you've picked the first number from the list. We're looking for the smallest number from the list.",
         "B": "0.3 is the smallest decimal. It has no units and 3 tenths.",
@@ -121,7 +121,7 @@
     {
       "questionId": 156730,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/706cc915-a726-43dd-9305-3c0ccc158e0e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks as if you have not understood the meaning of this symbol. The three lines means that it is an identity",
         "B": "It looks as if you've misunderstood the direction of the inequality. The thin end of the wedge points to the smaller number and the open, larger part, points to the bigger number.",
@@ -133,7 +133,7 @@
     {
       "questionId": 156714,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/608e3749-1fae-467b-aa37-a8bfda407f13.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks as if you've picked the first number from the list. We're looking for the greatest number from the list.",
         "B": "Two numbers have an 8 in their tenths column, however, 0.83 is bigger than 0.8 as it has 3 in the hundredths column.",

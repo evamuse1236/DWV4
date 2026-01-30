@@ -25,7 +25,7 @@
     {
       "questionId": 129066,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d33816b5-7732-497e-8c2e-cae0865a6ffb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. You may have subtracted 1 from 4 to get 3 or looked at the plain flour instead of ground almonds. We need to make sure we are looking at the quantity of ground almonds. What do we divide by to get the amount for 1 person?",
         "B": "The recipe makes enough for 4 people, but we only want enough for 1 person. To get from 4 down to 1, we need to divide by 4. 60g of almonds divided by 4 gives us 15g of ground almonds.",
@@ -37,7 +37,7 @@
     {
       "questionId": 129206,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5a00f373-2639-4471-ab54-5006386f9970.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have subtracted 3g because we have subtracted 3 people, but if we need 90g of sugar for 4 people, we can't just need 1g per person. What do we have to divide 4 by to get down to 1?",
         "B": "I think you have found the right scale factor (4), but you have multiplied rather than divided. The recipe gives us the quantities for 4 people. Are we expecting to need more sugar for just 1 person?",
@@ -49,7 +49,7 @@
     {
       "questionId": 129067,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5f958cc0-007d-426e-877e-2f8d39166f3f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. We have been given a recipe for 4 people. Start by thinking about what we need to multiply 4 by to get to 8. Then read the question very carefully to see which ingredient we are interested in.",
         "B": "I think you have added 4g because we have added 4 people, but if we need 60g of almonds for 4 people, we can't just need 1g per person. What do we have to multiply 4 by to get to 8?",
@@ -61,7 +61,7 @@
     {
       "questionId": 129207,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/878a0df7-1fa9-422e-8c73-a115c2336fe7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. We have been given a recipe for 4 people. Start by thinking about what we need to multiply 4 by to get to 12. Then read the question very carefully to see which ingredient we are interested in.",
         "B": "The recipe makes enough for 4 people, but we need enough for 12 people. To get from 4 to 12, we need to multiply by 3. So we need to multiply all our ingredients by 3. 4 people need 90g of brown sugar so 12 people would need 270g of brown sugar.",
@@ -85,7 +85,7 @@
     {
       "questionId": 129208,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2ab96243-a083-478a-a6d7-97b5ca49de07.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have worked out that the scale factor is 12, but you have multiplied rather than divided. Would you expect to need more or less grams of margarine for only 1 person?",
         "B": "I think you have subtracted 11g because we want 11 less cakes. But each cake doesn't need just 1g of margarine. We need to use multiplication/division instead. What do we need to divide 12 by to get down to 1?",
@@ -109,7 +109,7 @@
     {
       "questionId": 129209,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7012a19b-65c5-4d27-beca-9f0b20bc2f4f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Start by working out how much flour you would need for 2 batches. What about half a batch?",
         "B": "We don't quite have enough for a second whole batch of cakes. Could we do half a batch?",
@@ -133,7 +133,7 @@
     {
       "questionId": 129210,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f72c4330-73dd-4c53-9c49-a7bde9dd3a19.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "16 divided by 30g works out how many gingerbread men can be made with 1g of sugar. This is not quite what we want.",
         "B": "We will need the same proportion of ingredients for each gingerbread man. When we are dealing with proportion, we should only use multiplication and division.",

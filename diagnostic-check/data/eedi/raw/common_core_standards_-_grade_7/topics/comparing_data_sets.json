@@ -37,7 +37,7 @@
     {
       "questionId": 166827,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6f7f4fe8-4b96-4d1e-ba57-b1c6ead5ad5d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have performed the division in the wrong order, dividing the MAD by the difference in means (2.4 ÷ 6).",
         "B": "The difference between the means is 50 - 44 = 6 hours. To express this as a multiple of Brand A's variability, you calculate the ratio: 6 / 2.4 = 2.5.",
@@ -49,7 +49,7 @@
     {
       "questionId": 167077,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4ad524e4-0284-442d-b84f-e4e84c822ef5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have divided the mean of brand A by the mean of brand B. We want to know what the difference is between these means, and what multiply of 1.6 it is.",
         "B": "I think you have performed the division in the wrong order, dividing the MAD by the difference in means (1.6 ÷ 6).",
@@ -61,7 +61,7 @@
     {
       "questionId": 166828,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5eae4807-b178-42da-a77d-9289fbcbd79b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you used the upper quartile rather than the median when finding the difference in medians. Remember the median is the middle line",
         "B": "The median for restaurant A is 50, and for restaurant B it is 70. The difference is therefore 20. The interquartile range for A is 55 - 45 = 10. Dividing 20 by 10 we get 2.0",
@@ -73,7 +73,7 @@
     {
       "questionId": 167078,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/188c71d4-13c6-4a9b-bbc2-738f2e5b39d9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you found the difference between the medians. We need to know what multiple of the interquartile range will give us the difference in the medians.",
         "B": "I think you used the upper quartile rather than the median when finding the difference in medians. Remember the median is the middle line",
@@ -85,7 +85,7 @@
     {
       "questionId": 166829,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5e4a9834-029b-48ef-950e-256b87f9373f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you believe a lower mode is related to longer sleep. Points further to the right represent a longer sleep.",
         "B": "The mode for no device is 6 hours, but for no device it is 8 hours. Also more of the points are to the left for device. Therefore those without a device sleep longer.",
@@ -97,7 +97,7 @@
     {
       "questionId": 167079,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/48f0fb0b-685e-4bf9-aeff-9bb3f0679a7a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You can look at the general shape to see who gets more sleep. Remember points further to the right represent longer sleep.",
         "B": "I think you are comparing the spread rather than the amount of sleep. Look at where the points are for each group, remembering points to the right represent longer sleep.",
@@ -121,7 +121,7 @@
     {
       "questionId": 167080,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dcd29ba4-9d62-411c-845d-64b4c8cdfa1d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This conclusion is based on a single data point at the extreme end of one distribution. We need to look at how much overlap there is between all the points in both groups.",
         "B": "This is true. There is a large overlap, with most of the dots in both groups falling between 7 and 11.",
@@ -133,7 +133,7 @@
     {
       "questionId": 166831,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db1b0e3b-0ea8-4d6c-bb41-f2635cc87ca2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you were just looking at the tail of the swimmers. Think about how many quartiles overlap.",
         "B": "There is full overlap for the top 25% of swimmers, and there is partial overlap for the next 25% of swimmers too, which means that between 25% and 50% of the heights overlap.",
@@ -145,7 +145,7 @@
     {
       "questionId": 167081,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0040b1fd-9783-456d-89ca-b98cc25e01d3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you were just considering the boxes. Remember the tails represent 25% of the group too. Think about how many quartiles overlap.",
         "B": "I think you were just looking at the tail of the gymnasts. Think about how many quartiles overlap.",

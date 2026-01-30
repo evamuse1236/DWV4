@@ -25,7 +25,7 @@
     {
       "questionId": 173918,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5831ecc2-314d-4004-bec6-ae081f2b7cfd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This multiplication does equal 12, but it doesn't use the number 4 from the division question. The related multiplication must use the same numbers.",
         "B": "This multiplication uses the number 4 from the division, but the answer is 20, not 12. The related multiplication must equal the first number in the division.",
@@ -37,7 +37,7 @@
     {
       "questionId": 173978,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/becb823c-edd0-4400-ba3f-ef8d7a0638c4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have correctly used the number 6 from the division. However, a related multiplication must also use the number 18. Check which of the multiplications has an answer of 18.",
         "B": "This multiplication does equal 18, which is a good spot! However, to be the calculation that helps find 18 ÷ 6, it must also include the number 6.",
@@ -49,7 +49,7 @@
     {
       "questionId": 173919,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dfb9a636-7094-4dad-8e4d-dc568672ce1c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The opposite operation of division is multiplication, not subtraction. Think about how you can use multiplication and the numbers 24 and 3 to find the star.",
         "B": "The opposite operation of division is multiplication, not addition. Think about how you can use multiplication and the numbers 24 and 3 to find the star.",
@@ -61,7 +61,7 @@
     {
       "questionId": 173979,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/70815d8f-8030-41f2-aac4-c806554f5161.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The opposite operation of division is multiplication, not subtraction. Think about how you can use multiplication and the numbers 28 and 4 to find ★.",
         "B": "Multiplication is the inverse (opposite) of division. So, to find the answer to 28 ÷ 4, you can ask yourself: what number (★) multiplied by 4 equals 28? This gives the calculation ★ x 4 = 28.",
@@ -85,7 +85,7 @@
     {
       "questionId": 173980,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ec4547f1-ce00-458f-85ea-5666524e66a0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember that multiplication is the inverse (opposite) of division. You can use multiplication to check a division calculation.",
         "B": "Division and multiplication are inverse operations. If 40 divided by a number (★) is 8, you can rearrange this using multiplication: 8 multiplied by that same number (★) must equal 40.",
@@ -97,7 +97,7 @@
     {
       "questionId": 173921,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4c57d663-8d35-462f-9548-1048ff004c92.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you've nearly got the right answer. Double-check your 4 times table. What is 4 x 9?",
         "B": "It seems you might have multiplied 32 by 4. The question asks you to solve 4 x ★ = 32, which is the same as 32 ÷ 4.",
@@ -109,7 +109,7 @@
     {
       "questionId": 173981,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9e4410cd-94bf-4674-8743-9ec2632a996f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You need to find the number that multiplies by 6 to make 48. Using your times tables, you know that 6 x 8 = 48. So, ★ = 8.",
         "B": "You are close! Check your 6 times table again. What is 6 x 9?",
@@ -121,7 +121,7 @@
     {
       "questionId": 173922,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1cb05b89-cf23-48ed-a1a7-9c44cc367054.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You're close! Check your 6 times table again. What is 6 x 6?",
         "B": "You're close! Check your 6 times table again. What is 6 x 8?",
@@ -133,7 +133,7 @@
     {
       "questionId": 173982,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4d5c3af7-6207-4add-8c86-0bc7e2a3c24d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You're close! Check your 9 times table. What is 9 x 7? You are looking for the number that gives the answer 54.",
         "B": "You're close! Check your 9 times table. What is 9 x 5? You are looking for the number that gives the answer 54.",

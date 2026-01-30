@@ -31,7 +31,7 @@
     {
       "questionId": 158489,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/997b075a-a19c-4287-9511-fd80f349de5d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you might be mixing up properties - a rhombus has four equal sides, but not always four equal angles. Which shape here has 4 angles that are all 90 degrees?",
         "B": "To be a square, a shape must have four equal sides and four equal angles, each 90 degrees.",
@@ -79,7 +79,7 @@
     {
       "questionId": 158491,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f8b21181-9a55-44ed-b22f-0d9df9a5a85b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "A kite can have 4 equal sides, but only in special cases. Which shape (or shapes) always has all its sides equal?",
         "B": "Is a square the only shape here with four equal sides?",

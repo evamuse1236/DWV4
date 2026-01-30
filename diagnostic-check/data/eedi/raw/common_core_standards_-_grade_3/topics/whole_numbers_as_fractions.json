@@ -49,7 +49,7 @@
     {
       "questionId": 158999,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5279cc7f-b84e-4bf4-a6c9-c3b9387d81e5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite - if we shade 4/4 parts of this shape, how many whole ones have we shaded?",
         "B": "If we shade 4 out of 4 pieces, we are shading the whole shape. 4/4 make one whole, which is 1.",
@@ -61,7 +61,7 @@
     {
       "questionId": 158801,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7574ca9a-4a53-44ba-93a5-e3db26805ee8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This line is split into 4 parts, so each part is 1/4. Where would we find 4/4?",
         "B": "Careful, I think you counted as if the first mark is 1/4, but the scale starts at 0. 4/4 would be four jumps along from 0.",
@@ -73,7 +73,7 @@
     {
       "questionId": 159000,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/96a4ed09-d3b0-476c-bad7-bb8ed4700673.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This line is split into 5 parts, so each part is 1/5. Where would we find 5/5?",
         "B": "Careful, I think you counted as if the first mark is 1/5, but the scale starts at 0. 5/5 would be five jumps along from 0.",

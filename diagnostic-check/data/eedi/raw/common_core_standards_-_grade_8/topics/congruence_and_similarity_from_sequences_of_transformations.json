@@ -43,7 +43,7 @@
     {
       "questionId": 135580,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8eb84a2a-60df-45b8-988d-d7d0f076d895.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Check your definitions of similar and congruent again. A similar shape has the same angles with sides that have all been enlarged by the same scale factor, and a congruent shape has the same angles and lengths. Hint: you could try measuring the side lengths using a ruler! :)",
         "B": "A similar shape is one with the same angles, however the lengths can be enlarged, and a congruent shape has the same angles and lengths. Both shapes here are squares with angles of 90⁰, but the side length of pink is 2, and green is larger (4.2 using Pythagoras' theorem). This means they are similar but not congruent, so only Katie is correct.",
@@ -55,7 +55,7 @@
     {
       "questionId": 165573,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1fe70817-b1a8-4665-9465-1e36237ca61d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! Reflecting a shape produces the same shape of the same size over the mirror line. Remember that similar shapes are the same shape but not necessarily the same size!",
         "B": "Not quite! Translating then reflecting a shape produces the same shape of the same size. Remember that similar shapes are the same shape but not necessarily the same size!",
@@ -67,7 +67,7 @@
     {
       "questionId": 165577,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ca8a744e-9a34-4515-bd24-4bd6c042a319.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! Rotating then reflecting a shape produces the same shape of the same size. Remember that similar shapes are the same shape but not necessarily the same size!",
         "B": "Not quite! Translating a shape produces the same shape of the same size that has been shifted. Remember that similar shapes are the same shape but not necessarily the same size!",
@@ -79,7 +79,7 @@
     {
       "questionId": 165574,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8f12b5ae-d1d5-4615-9b5e-10af65040dcf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you may have transformed triangle R to triangle P rather than triangle P to triangle R!",
         "B": "Not quite.. P to R could be a rotation but you need to include Q! Think about the orientation of the shape... How do you go from P's orientation to Q's?",
@@ -91,7 +91,7 @@
     {
       "questionId": 165578,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/92e4ac86-f44b-4e8c-9cec-936de86cebeb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The 𝑦-axis is the vertical axis, you need to reflect horizontally... Then, think about the orientation, what transformation needs to be done to go from Q's orientation to R's?",
         "B": "To go from P to Q we reflect in the horizontal line 𝑦 = 5 and then to go from Q to R we reflect in the 𝑦-axis so, B is correct!",
@@ -115,7 +115,7 @@
     {
       "questionId": 165579,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/40591084-3f96-43b2-83ec-6d7a332e462c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have correctly identified you need to rotate and then dilate, but some of the details are incorrect. Think about the orientation of Q and R to help you correct your answer...",
         "B": "You have correctly identified you need to rotate and then dilate but double check your angle and scale factor!",
@@ -127,7 +127,7 @@
     {
       "questionId": 165576,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c80614e6-2e96-4079-888a-332cb5cfb150.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Double check your angle of rotation...",
         "B": "I think you have accidentally transformed Y to X rather than X to Y!",

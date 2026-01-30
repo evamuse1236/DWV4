@@ -67,7 +67,7 @@
     {
       "questionId": 131682,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e8d46e97-f6ff-4b6d-9cb7-c1447478bc6a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! Although the values in answer A are spread out, there are a good few smaller and larger values, and this makes the mean a useful average. Look at the other options and try to focus on whether there is an outlier in one of the sets.",
         "B": "Not quite! Values for answer B are repeated and also there's a large gap between them. Despite this, there are a good few smaller and larger values, which would make the mean a useful average. Look at the other options and try to focus on whether there is an outlier in one of the sets.",
@@ -115,7 +115,7 @@
     {
       "questionId": 131684,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1bd2a826-2d30-4bbc-b71e-83218f627c67.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, the mode would be representative of the data here, as it is also the median",
         "B": "Not quite, the mode would be representative of the data here, as it is also the median",
@@ -139,7 +139,7 @@
     {
       "questionId": 131685,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e6fe0a0e-608b-4f1a-a454-b6943f036c2e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, zero may seem like a bit of an 'odd one out', but it is close to most of the other numbers for this set of data.",
         "B": "Not quite, negative 2 may seem like a bit of an 'odd one out', but it is close to most of the other numbers for this set of data.",
@@ -151,7 +151,7 @@
     {
       "questionId": 133878,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cb466043-a0be-4fb0-8dec-ab3299ad3d88.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! Six is quite close to most of the other numbers for this set of data. Is there a number that stands out?",
         "B": "All the values except for 21 are relatively close to one another. The value 21 is described as an outlier because it differs significantly from the other values.",

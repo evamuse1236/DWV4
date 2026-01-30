@@ -43,7 +43,7 @@
     {
       "questionId": 131836,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2164b79b-d10e-456e-bfd1-1fdca07728d7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "In order for simultaneous equations to be in the appropriate form, to be added or subtracted, they need one unknown in both equations to have the same coefficient. Look at both Tom & Katie's equations, ignoring the signs, do the numbers in front of either the xs or the ys match? If so they are in the appropriate form...",
         "B": "In order for simultaneous equations to be in the appropriate form, to be added or subtracted, they need one unknown in both equations to have the same coefficient. Look at both Tom & Katie's equations, ignoring the signs, do the numbers in front of either the xs or the ys match? If so they are in the appropriate form...",
@@ -55,7 +55,7 @@
     {
       "questionId": 134029,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/60917f99-896a-4eea-9b60-7b92d3a54642.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "In order for simultaneous equations to be in the appropriate form, to be added or subtracted, they need one unknown in both equations to have the same coefficient. Look at both Tom & Katie's equations, ignoring the signs, do the numbers in front of either the xs or the ys match? If so they are in the appropriate form...",
         "B": "In order for simultaneous equations to be in the appropriate form, to be added or subtracted, they need one unknown in both equations to have the same coefficient. Look at both Tom & Katie's equations, ignoring the signs, do the numbers in front of either the xs or the ys match? If so they are in the appropriate form...",
@@ -79,7 +79,7 @@
     {
       "questionId": 134030,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3b423ef2-5183-4542-8a88-5d7ce32e2121.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Read the question carefully - you've correctly found the value of p, well done. But we need to keep going and find the value of q, so substitute your value of p into one of the equations.",
         "B": "I think you've made a mistake when trying to find the value of p. Start by adding the equations to eliminate q, find the value of p, then substitute that into one of your equations to find q.",
@@ -91,7 +91,7 @@
     {
       "questionId": 131838,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/085a4c0c-9522-40df-8d11-cb3e249d2a4c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have found the value for q not p!",
         "B": "To find the value of p we need to eliminate q. To do this we multiply the first equation by 2, giving 4p + 2q = 14. This means there are an equal number of qs in both equations, we add the equations to eliminate q, as one is -2q and the other +2q leaving us with 7p = 28. When we divide through by 7, we get p=4.",
@@ -103,7 +103,7 @@
     {
       "questionId": 134031,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6b979a1-5f78-4786-8113-bf2a85836dad.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, I think you have added the numbers but subtracted the p's. Make sure you either add or subtract the equations, we cannot do both. Will we have to add or subtract the equations to eliminate q?",
         "B": "I think you have added the equations without making the values in front of q equal first. Before we add/ subtract we must scale one of the equations up (by multiplying) so that the numbers in front of the q's are the same.",
@@ -115,7 +115,7 @@
     {
       "questionId": 131839,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fff06c2b-0c65-4b60-a257-a4a3f17de962.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. I think you have identified the first equation needs to be multiplied by 3 and the second equation by 2 to make the coefficients of 𝑙 the same, which is correct. But remember - the entire equation needs to be multiplied by the number you choose. Check your numbers after the equals carefully.",
         "B": "Not quite. I think you have identified the first equation needs to be multiplied by 3 and the second equation by 2 to make the coefficients of 𝑙 the same, which is correct. But remember - the entire equation needs to be multiplied by the number you choose. Check your numbers after the equals carefully.",
@@ -127,7 +127,7 @@
     {
       "questionId": 134032,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ba3911af-ca95-4a78-ba4e-ed353b48f3fb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. I think you have identified the first equation needs to be multiplied by 4 and the second equation by 3 to make the coefficients of 𝑚 the same, which is correct. But remember - the entire equation needs to be multiplied by the number you choose.",
         "B": "The whole of the first equation needs to be multiplied by 4 and the whole of the second equation by 3 to make the coefficients of 𝑚 the same, creating 8𝑙 + 12𝑚 = 52 and 9𝑙 + 12𝑚 = 51.",
@@ -139,7 +139,7 @@
     {
       "questionId": 131840,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d1cc847-e685-4fcf-bab8-2aaa87019ed7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. The first step in finding m is to make the 𝑙 coefficients the same in both equations, you can then subtract to eliminate 𝑙 and find m. What can you multiply the equations by to make the 𝑙 coefficients the same?",
         "B": "Not quite. You have subtracted without scaling. This means you will have both 𝑙 and m left in the equation after you subtract. Remember, before you subtract you must make sure that one of the variables have the same coefficient in both equations.",

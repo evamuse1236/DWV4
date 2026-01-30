@@ -43,7 +43,7 @@
     {
       "questionId": 89281,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3418e564-ce8f-44ba-be13-191cf21b5ef4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you might have used subtraction instead of division when solving 12 = 4 ✕ ★.",
         "B": "I think you might have missed the '4 ✕' in the brackets.",
@@ -55,7 +55,7 @@
     {
       "questionId": 102165,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/17d85625-446a-4307-bb8c-54ed2ab76be8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Try dividing some easier numbers - does 10 ÷ 2 = 2 ÷ 10?",
         "B": "\"Commutative\" means \"is the same either way round\".",
@@ -67,7 +67,7 @@
     {
       "questionId": 122885,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bb280d2b-b82d-4d4d-94b7-b4bba96033ed.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Try dividing some easier numbers - does 10 ÷ 2 = 2 ÷ 10?",
         "B": "\"Commutative\" means \"is the same either way round\".",
@@ -79,7 +79,7 @@
     {
       "questionId": 147363,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/312fac24-fb1a-4aa6-b014-4ac52b679806.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Try substituting in some numbers to see if the order matters.",
         "B": "Division is non-commutative which means it DOES matter which order it is carried out in. Multiplication is commutative which means it DOES NOT matter which order it is carried out in. Therefore, only Katie is correct.",
@@ -115,7 +115,7 @@
     {
       "questionId": 154809,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db1c5050-6344-4be4-a1ba-86b72f01eaf8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Look at the statements carefully. Tom is saying 19 more than 3 is the same as 3 more than 19 and Katie is saying 1 subtract 6 is the negative of 6 - 1.",
         "B": "Not quite. Look at the statements carefully. Tom is saying 19 more than 3 is the same as 3 more than 19 and Katie is saying 1 subtract 6 is the negative of 6 - 1.",
@@ -139,7 +139,7 @@
     {
       "questionId": 154810,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e747f115-4632-416a-b204-9d992b90d01e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. I think you have found two numbers that multiply to give 18, but this does not work. 6 lots of 6 add 3 lots of 6 gives 9 lots of 6 instead of 18 lots of 6.",
         "B": "Not quite. I think you have found a pair of numbers that multiply to give 6, but this does not work. We want 18 lots of 6 BUT 3 lots of 6 add 2 lots of 6 gives 5 lots of 6.",

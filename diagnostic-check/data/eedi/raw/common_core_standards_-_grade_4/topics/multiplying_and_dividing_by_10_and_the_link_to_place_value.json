@@ -31,7 +31,7 @@
     {
       "questionId": 101849,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/abcd93ef-846e-4d4a-8f8f-c294589e3cac.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Try to say this number out loud, if you didn't have a 1 in front of the 2, what would the value be? You can also look at the number of digits after the 2 and compare, as there is no decimal point here.",
         "B": "The position of the digits within a number tells you the amount each contributes to the overall value of a number. Starting at the right-hand side of 12,030, the last digit 0 represents ones or units; the 3 tells us there are 3 tens, so 30; the next zero tells us there are 0 hundreds; and the 2 (the other side of the gap in the question) tells us there are 2 thousands, so 2,000.",
@@ -55,7 +55,7 @@
     {
       "questionId": 101852,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/296580ae-327a-4638-a6ef-d73be416b4b1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, I think you have subtracted 10 instead. Hint: pay close attention to the word \"times\" in the question.",
         "B": "Not quite, you have multiplied by 10, making the number 10 times larger than 4300.",
@@ -67,7 +67,7 @@
     {
       "questionId": 101860,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e7f61954-160c-49cc-a615-82a74d6482fa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, I think you have subtracted 10 instead. Hint: pay close attention to the word \"times\" in the question.",
         "B": "Almost, I think you have divided by 10 an extra time than you needed to.",
@@ -79,7 +79,7 @@
     {
       "questionId": 102238,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/43de37fe-4cf9-416d-8c05-5684cdab78bf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Multiplying by 10 makes each digit 10x bigger which moves all the digits one place value column to the left.",
         "B": "I think you've put 10 on the end of 103. Multiplying by 10 makes each digit 10x bigger which moves all the digits one place value column to the left.",
@@ -91,7 +91,7 @@
     {
       "questionId": 102250,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f34b567e-92d7-4070-b391-e1218e277544.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Multiplying by 10 makes each digit 10x bigger which moves all the digits one place value column to the left.",
         "B": "I think you've just put 10 on the end of 215. Multiplying by 10 makes each digit 10x bigger which moves all the digits one place value column to the left.",

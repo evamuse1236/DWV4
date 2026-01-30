@@ -37,7 +37,7 @@
     {
       "questionId": 173948,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f8532005-903a-4a11-956b-09ea58f9d18a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you have used Pythagoras' theorem but have added the squares of the sides. Remember, when you are finding the length of a shorter side, you need to subtract the squares.",
         "B": "It seems you have calculated 10 - 6 = 4. Pythagoras' theorem, 𝑎² + 𝑏² = 𝑐², involves squaring the sides first before adding or subtracting.",
@@ -49,7 +49,7 @@
     {
       "questionId": 174008,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1a0689af-62d1-4545-b5af-89e3f1580ba0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you might have doubled the numbers instead of squaring them. Remember that squaring a number means multiplying it by itself (e.g. 5 squared = 5 x 5 = 25), not multiplying by 2.",
         "B": "You have correctly squared the lengths. However, because you are finding one of the shorter sides, you need to subtract the squares (𝑐² - 𝑏²). We only add when finding the longest side (the hypotenuse).",
@@ -61,7 +61,7 @@
     {
       "questionId": 173949,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9fd629fa-a6ed-42cd-9962-53f073436f52.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you might have just added the two lengths together. Remember that Pythagoras' theorem, 𝑎² + 𝑏² = 𝑐², requires you to square the lengths first.",
         "B": "It seems you may have doubled the lengths (1×2 and 6×2) instead of squaring them (1×1 and 6×6). Remember, squaring a number means multiplying it by itself.",
@@ -73,7 +73,7 @@
     {
       "questionId": 174009,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a2022a4c-3557-4111-98d8-49e829fb6209.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It seems you've added the two shorter lengths together. Remember Pythagoras' theorem involves squaring the lengths first: a squared + b squared = c squared.",
         "B": "The ladder is the longest side of the triangle (the hypotenuse). To find the hypotenuse, you need to add the squares of the other two sides. It looks like you have subtracted them instead.",
@@ -97,7 +97,7 @@
     {
       "questionId": 174010,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d0f97f9a-cadc-4197-963a-81beb230b527.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Remember that squaring a number means multiplying it by itself (e.g. 30 × 30), not multiplying by 2. It looks like you might have doubled the numbers instead of squaring them.",
         "B": "It appears you have calculated 30 - 18. Remember that Pythagoras' theorem involves squaring the side lengths before you add or subtract.",
@@ -121,7 +121,7 @@
     {
       "questionId": 174011,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/10249276-73a7-4489-b1b0-3f534d278d2c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you have subtracted the lengths. Pythagoras' theorem uses the squares of the sides (𝑎² + 𝑏² = 𝑐²). Remember to square the numbers first before doing anything else.",
         "B": "The side 𝑅𝑇 is the hypotenuse of the triangle 𝑇𝑈𝑅 because it is opposite the right angle. To find the hypotenuse, you need to add the squares of the other two sides. It looks like you have subtracted them.",
@@ -133,7 +133,7 @@
     {
       "questionId": 173952,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4d529721-b911-4087-bcd8-d73d6cffc5b4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you have calculated the diagonal along the floor of the container, using just two dimensions (15 m and 8 m). The longest rod will fit along the 'space diagonal', from a bottom corner to the opposite top corner, so you need to use all three dimensions.",
         "B": "It looks like you have added the three dimensions together. To find the longest diagonal in a 3D shape, you need to use the 3D version of Pythagoras' theorem: 𝑑² = 𝑎² + 𝑏² + 𝑐².",

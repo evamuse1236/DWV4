@@ -55,7 +55,7 @@
     {
       "questionId": 130166,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/14cb4d7e-faa6-4108-86f6-3ca0e4d33b0d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Check your calculations carefully. What is being added each time?",
         "B": "A term-to-term rule tells us how to get from one term to the next. Here we start at 4 and add 11 each time.",
@@ -67,7 +67,7 @@
     {
       "questionId": 130147,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/acc8faf5-8c74-4be7-90fb-acdf3dfcfd26.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "We read the sequence from left to right. Are we adding 5 each time or subtracting 5?",
         "B": "Not quite. A position-to-term rule is written in terms of n. A term-to-term rule tells us how to get from one term to the next.",
@@ -79,7 +79,7 @@
     {
       "questionId": 130167,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8d0af619-585f-4dee-9d62-eadcdb5b887c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "What is the first number in our sequence. It isn't 100.",
         "B": "We read the sequence from left to right. Are we adding 10 each time or subtracting 10?",
@@ -91,7 +91,7 @@
     {
       "questionId": 130148,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/451f5e04-465a-4301-a035-421a7ad36a59.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is the second term. We need to find the third term.",
         "B": "The first term is 8. The second term is 8 + 6 = 14. The third term is 14 + 6 = 20.",
@@ -103,7 +103,7 @@
     {
       "questionId": 130168,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/64b7d56a-7fe4-4a3b-97fc-b2299b1433e5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have started at 7 and added 10 each time. We need to start at 10 and add 7 each time.",
         "B": "I think you have used 10 as the first term, instead of the second term.",
@@ -139,7 +139,7 @@
     {
       "questionId": 130150,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c45ba964-67d9-4a22-a47e-3953384c28cc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is the term-to-term rule. Can you use this to find the next term?",
         "B": "This is the first term. Work out how much is being added each time. Can you use this to find the next term after 18?",
@@ -151,7 +151,7 @@
     {
       "questionId": 130170,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5d24ea1f-f688-45a6-8f27-8cc51c7d5ca6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Look again carefully at what is being added each time.",
         "B": "Not quite. Look again carefully at what is being added each time.",

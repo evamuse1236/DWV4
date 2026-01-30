@@ -43,7 +43,7 @@
     {
       "questionId": 135743,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ca246ac3-b796-49dc-982c-6b8507e108df.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have spotted that the shape looks the same following the reflection. Remember, invariant points must stay in exactly the same place, has P stayed where it was?",
         "B": "Invariant points are points on a line or shape which do not move when a specific transformation is applied, in this case following the reflection Q and S have not moved.",
@@ -79,7 +79,7 @@
     {
       "questionId": 135764,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/13bdb858-ef66-40ed-a24f-0382e07b1373.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Remember, invariant points must stay in exactly the same place. Does A remain at (6, 6) following the enlargement? It is 3 right and 3 up from the centre, which would become 3 left and 3 down using the scale factor, moving it to (0, 0). Check all vertices.",
         "B": "Remember, invariant points must stay in exactly the same place. Does B remain at (2, 4) following the enlargement? It is 1 left and 1 up from the centre, which would become 1 right and 1 down using the scale factor, moving it to (4, 2). Check all vertices.",
@@ -91,7 +91,7 @@
     {
       "questionId": 135745,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e24419fd-eec1-4288-a73d-e2f80e2b2a5a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, an invariant point is one which has not moved, has R moved when it has been translated?",
         "B": "Not quite, an invariant point is one which has not moved, have Q, R or S moved when they have been translated?",
@@ -103,7 +103,7 @@
     {
       "questionId": 135765,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/105c1184-0724-42d3-922b-8ae94a9dd0c2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, an invariant point is one which has not moved, have B and C moved when they have been translated?",
         "B": "Not quite, an invariant point is one which has not moved, have E and F moved when they have been translated?",
@@ -127,7 +127,7 @@
     {
       "questionId": 135766,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dc3e1484-924d-4c09-98f4-5886d6eb2d9e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost! Remember, invariant points must stay in exactly the same place. Does A remain at (6, 6) following the rotation? Does C remain at (4, 6) following the rotation?",
         "B": "Not quite. Remember, invariant points must stay in exactly the same place. Does C remain at (4, 6) following the rotation?",
@@ -139,7 +139,7 @@
     {
       "questionId": 135747,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9469c243-67d6-4948-acaa-14c4d328e127.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost, draw out the image and perform the reflection and rotation and see which letters land back where they started.",
         "B": "Following the reflection and rotation R does not move, P reflects to (4,7) and then rotates back to where it started (4,3)",
@@ -151,7 +151,7 @@
     {
       "questionId": 135767,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e8c7d9ea-3a6b-4888-adfd-50e2390e6ca1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost! F is not the only one that is in the same location as they started. Try drawing out the diagram and performing the reflection and translation.",
         "B": "Reflecting in x=1 gives C' as (-2,6) and F' as (-2,2) which then translated 6 right goes back to the original coordinates of (4,6) and (4,2)",

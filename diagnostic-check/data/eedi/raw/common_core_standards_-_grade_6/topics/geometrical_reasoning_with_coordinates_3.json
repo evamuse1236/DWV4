@@ -31,7 +31,7 @@
     {
       "questionId": 98004,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/70787e91-a7b2-4e7f-b601-3248faf1bbf7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, you've found the middle of the line segment. If two of the vertices of the square are (-2, -3) and (2, 1), where can another of the vertices be? (Remember the sides have to be equal length and be perpendicular).",
         "B": "If two of the vertices of the square are (-2, -3) and (2, 1), where can another of the vertices be? (Remember the sides have to be equal length and be perpendicular).",
@@ -43,7 +43,7 @@
     {
       "questionId": 98019,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/09bff927-5129-4410-8aae-821281471293.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, you've found the middle of the line segment. If two of the vertices of the square are (-3, 0) and (3, 0), where can another of the vertices be? (Remember the sides have to be equal length and be perpendicular).",
         "B": "A square has 4 sides of equal length. A vertex is a corner. The side of the square drawn shows there is a vertex at (-3, 0) , then moving 3 right and 3 up takes us to the next vertex at (0, 3). We can now combine 3 vertical and 3 horizontal moves to see where the next vertex could be. Only (-3, 6) can be found this way; moving 3 left and 3 up from (0, 3).",
@@ -55,7 +55,7 @@
     {
       "questionId": 98005,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cc40e330-46d5-4fa2-98aa-4d8f52a04666.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Make sure you've checked all the options for where the square can go, and the coordinates of the vertices carefully. It's easiest to count how many places you move horizontally and vertically to check.",
         "B": "Make sure you've checked all the options for where the square can go, and the coordinates of the vertices carefully. It's easiest to count how many places you move horizontally and vertically to check.",
@@ -115,7 +115,7 @@
     {
       "questionId": 98034,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fc50b1cd-3abb-4a85-9a6a-c8d4bac2c82b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember a parallelogram only has to have two pairs of parallel sides. A rhombus also needs four sides of equal length.",
         "B": "Starting at A, moving 1 right and 3 up takes us to B. The same move from D takes us to C. This means that the lines AB and DC are parallel and equal to each other in length; therefore AD and BC are parallel and equal in length too. This means the shape is a parallelogram as it has 2 pairs of parallel sides. Starting at A again, 3 left and 0 down takes us to D. This length is not equal to the line AB, and so the shape cannot be a rhombus. This means only Paul is correct.",
@@ -139,7 +139,7 @@
     {
       "questionId": 98036,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fd4f361d-5815-446c-a499-e52e275c5c33.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It's easiest to count how many places you move horizontally and vertically to look at distances. For example: to get from (3,4) to (8,1), we have moved 5 right and 3 down. Now compare that with line segment Q's points to find which is longest.",
         "B": "For line segment P, start at (3, 4) then move 5 right and 3 down to (8, 1). For line segment Q, start at (−1, 3) then move 5 right and 4 up to (4, 7). Comparing these moves, we can see that both have a horizontal move of 5 but Q has a longer vertical move of 4. This means that line segment Q is longer.",

@@ -19,7 +19,7 @@
     {
       "questionId": 166338,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/69f17e6b-2e82-4123-96a2-eec1fc118a07.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "One solution means that the two lines would have to cross at one point. These lines are parallel so will they ever cross?",
         "B": "Two straight lines could only cross at one point at the most, otherwise they would not be straight lines. These lines are parallel though. What does that tell us about the number of times they will cross?",
@@ -31,7 +31,7 @@
     {
       "questionId": 166565,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/13ba67b5-c04b-434e-be7e-878262a8ec59.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "One solution means that the two lines would have to cross at one point. These lines are parallel so will they ever cross?",
         "B": "As the lines are parallel, they will never cross so there are no solutions.",
@@ -67,7 +67,7 @@
     {
       "questionId": 166340,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f1ff23e8-036a-49b2-9eae-4c4186112b40.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "One solution means that the two lines would have to cross each other at one point. Can you see two lines?",
         "B": "Two straight lines could only cross at one point at the most, otherwise they would not be straight lines. Can you see two different straight lines?",
@@ -91,7 +91,7 @@
     {
       "questionId": 166341,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f9294af6-5a11-447b-a941-6b6a24dda7e3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have given the coordinates of where one of the lines intercepts the 𝑦-axis. Remember, the solution is where the two lines cross.",
         "B": "The solution is where the two lines cross, which is at the point (3, 2).",
@@ -103,7 +103,7 @@
     {
       "questionId": 166568,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/300d0c83-4bd6-4622-9b32-f688809a5aed.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have mixed up your coordinates. Remember coordinates are written (𝑥, 𝑦).",
         "B": "I think you have given the coordinates of where one of the lines intercepts the 𝑦-axis. Remember, the solution is where the two lines cross.",
@@ -127,7 +127,7 @@
     {
       "questionId": 166569,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/deca55de-00d2-4988-b4c1-a899acf00bca.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have given the coordinates of where one of the lines intercepts the 𝑥-axis. Remember, the solution is where the two lines cross.",
         "B": "The solution is where the two lines cross, which is at the point (2, 9).",

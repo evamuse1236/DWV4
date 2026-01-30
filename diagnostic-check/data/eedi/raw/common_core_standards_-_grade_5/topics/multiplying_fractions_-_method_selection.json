@@ -43,7 +43,7 @@
     {
       "questionId": 89453,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b31740f8-7632-4d23-bd00-93e41a960f39.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you have ignored the fraction and instead worked out 3 x -6. Try writing the -6 as a fraction and have another go.",
         "B": "It looks like you have tried to multiply both the numerator and the denominator by -6. It may help to write the number -6 as a fraction. We can write -6 as -6/1.",
@@ -67,7 +67,7 @@
     {
       "questionId": 101045,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4b57e3e0-6a86-4384-ba48-b83cc9503932.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "If we cut a pizza into 8 slices then each slice is 1/8 of the pizza. If Beth eats 7 of the slices there is only 1 slice left. Does this calculation give 1/8?",
         "B": "Is it possible to cut a pizza into 7 slices and then eat 8 slices?",
@@ -103,7 +103,7 @@
     {
       "questionId": 122890,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1bc004d5-c53c-4186-9932-502f2f562f93.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you have done the wrong calculation. What is the width of Q? What is the height of Q?",
         "B": "It looks like you have done the wrong calculation. What is the width of Q? What is the height of Q?",
@@ -127,7 +127,7 @@
     {
       "questionId": 133674,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b4002d85-5fad-44c4-b490-b6c6a9126d74.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have accidentally multiplied the denominator of the fraction by 2, as well as the numerator. 6/10 = 3/5 not 2 x 3/5. 2 written as a fraction is 2/1 if we multiply this by 3/5, what would we get?",
         "B": "I think you have accidentally forgotten to multiply the 3/5 by 2 as well.",
@@ -139,7 +139,7 @@
     {
       "questionId": 131442,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/26256309-120c-4957-ac81-27f72df464e4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have just multiplied the 1 and 2 together however we need to multiply the 1 by 3/4, the 2/3 by 2 and the 2/3 by 3/4 as well, then add all these together to get the final answer.",
         "B": "I think you have accidentally added the whole numbers together to get 3. The sum is a multiplication sum and we need to make sure we multiply everything in the first mixed number by everything in the second. This means multiplying 1 by 2 and 3/4 & 2/3 by 2 and 3/4 as well. Once you have all these, add them together to get the final answer.",
@@ -151,7 +151,7 @@
     {
       "questionId": 133675,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/697c4cb1-8942-4c1a-90fa-6afcb7f2f068.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have just multiplied the 1 and 3 together however we need to multiply the 1 by 2/3, the 1/2 by 3 and the 1/2 by 2/3 as well, then add all these together to get the final answer.",
         "B": "I think you have multiplied the fractions brilliantly but have made an error in the simplifying step of the calculation. Make sure you have correctly counted the number of 6s in your numerator. If you guessed: turn all the mixed numbers into improper fractions, multiply the numerators and the denominators of these, then convert the answer back into a mixed number.",

@@ -31,7 +31,7 @@
     {
       "questionId": 134010,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cc555e59-7006-4d5f-880e-391dd16505f7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Unit conversions always have a linear relationship.",
         "B": "Not quite. Think about if we travelled zero miles, how many kilometres would we have travelled? Which graph shows this?",
@@ -55,7 +55,7 @@
     {
       "questionId": 134011,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/efcaa48d-c9c3-4784-92fd-2620133f041e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "y = kx will always give a linear relationship. Have a think about which graph shows this, when the value in front of x is positive.",
         "B": "Not quite. y = kx does produce a linear relationship, but think about what this line may look like, when the number in front of x is positive.",
@@ -91,7 +91,7 @@
     {
       "questionId": 146158,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ba4bdcfa-8efe-42c6-82c1-2f651ed49a10.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have assumed that the gradient needs to be positive and constant. Tom’s graph shows this but does not go through the origin. The ratio between the variables has to be constant for them to be in direct proportion. Which graph(s) show this?",
         "B": "I think you have assumed that the graph doesn’t have to go through (0,0), and needs to have a negative and constant gradient. The ratio between the variables has to be constant for them to be in direct proportion. Which graph(s) show this?",
@@ -115,7 +115,7 @@
     {
       "questionId": 154920,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7a613b98-3ccf-4e6b-9082-e798690102ed.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. You have correctly identified the graph needs to be a straight line with a positive gradient. Think about what should happen when x=0.",
         "B": "Not quite. You have correctly identified the graph needs to be a straight line. Think about what should happen when x=0.",
@@ -127,7 +127,7 @@
     {
       "questionId": 154921,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a8cf2c45-54a0-4fd0-8d4a-5dcaa621ab40.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "If y is directly proportional to x the variables have a linear relationship, shown by a straight line. Think about what should happen when x=0.",
         "B": "If y is directly proportional to x the variables have a linear relationship, which is shown by a straight line, ruling out graph a. The graph must also go through the origin, meaning the correct graph is B.",

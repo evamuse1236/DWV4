@@ -49,7 +49,7 @@
     {
       "questionId": 78606,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1d683e33-692e-4b56-9fa3-d3b8c6869fcb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you might have added 1cm to each length, but this does not keep them in proportion. Instead we need to multiply each length by the same number.",
         "B": "Think carefully about the angle placement here. These shapes are isosceles triangles. Which angles will therefore be the same?",
@@ -61,7 +61,7 @@
     {
       "questionId": 78314,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/500df15f-b2d9-4609-a90c-7394a1fe6d3e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Think carefully about how we find the scale factor. We want the side length of the larger shape divided by the side length of the smaller shape.",
         "B": "The scale factor can be found by dividing the longest side (8cm + 2cm) by its corresponding shorter side (8cm). This gives 10 ÷ 8 which equals 1.25. Length EB can then be found by dividing the length DC by this scale factor. So 5 ÷ 1.25 = 4.",
@@ -85,7 +85,7 @@
     {
       "questionId": 78317,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/59074b4d-fe9e-4b6d-9966-6c6c4bb02b9a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have multiplied the angle by 3 as the length scale factor is 3. What would all the angles in the triangle add up to if you multiplied them all by 3? Is this possible?",
         "B": "Similar triangles will have the same angles. Since the triangles are isosceles the two missing angles will be of equal size: (180 - 20) ÷ 2 = 80°.",
@@ -97,7 +97,7 @@
     {
       "questionId": 78611,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d7ace5b3-91bb-46ba-91f3-40f67481c110.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you might be confused about which two angles in an isosceles triangle are equal. What do the marks on the two sides of the triangle tell us about the sides and the angles?",
         "B": "I think you might have subtracted 80 from 100, but remember the interior angles of a triangle add to 180.",
@@ -121,7 +121,7 @@
     {
       "questionId": 78613,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9be2579a-6b0a-447a-a275-837cf7f3ae16.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have worked out the correct scale factor. This would give the ratio 1:2 of the side of the small triangle to the side of the large triangle. But does y represent the whole side of the large triangle?",
         "B": "I think you have worked out the correct scale factor. This would give the ratio 1:2 of the side of the small triangle to the side of the large triangle. But does y represent the whole side of the large triangle?",
@@ -145,7 +145,7 @@
     {
       "questionId": 122888,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/236c8872-6025-4119-a494-4a5ec1b88725.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have found the scale factor the wrong way around. We must divide the length of the larger shape by the length of the smaller shape.",
         "B": "I think you have correctly found the scale factor (q/p) but then multiplied it by r. The side we are finding is smaller than r so do we need to multiply by the scale factor? Or do something else?",

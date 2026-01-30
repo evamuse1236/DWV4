@@ -37,7 +37,7 @@
     {
       "questionId": 76852,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/be429baf-14b1-4fe9-85ec-98a1a584e227.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember, angles on a line sum to 180°",
         "B": "We can find a corresponding angle to a, and then use angles on a straight line to do 180 - 103 = 77",
@@ -49,7 +49,7 @@
     {
       "questionId": 78975,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/323f0f4d-7176-423b-9447-ba69ee7c3c8a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "What kind of angle is a? Are these equal?",
         "B": "Remember, angles on a line sum to 180. Can you use the parallel lines to find equal angles?",

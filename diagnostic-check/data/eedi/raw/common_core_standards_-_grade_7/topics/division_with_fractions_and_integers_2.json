@@ -31,7 +31,7 @@
     {
       "questionId": 101032,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a215c4f0-f4f1-4a99-b6eb-9af33456633a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "1 means 1 whole. What fraction is the question mark pointing to?",
         "B": "The ? is a fifth of the shaded section, but how much is it of the whole?",
@@ -55,7 +55,7 @@
     {
       "questionId": 101034,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/53508c86-8e76-4556-9369-cf58966028ae.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have multiplied. Does dividing by 2 make something bigger or smaller?",
         "B": "It looks like you divided 2 by 1/5 instead of the other way around.",
@@ -67,7 +67,7 @@
     {
       "questionId": 101053,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9841647e-d171-4eff-9bf8-1a29e4448e39.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Sometimes we \"flip\" a fraction we're dividing by, but we don't flip a number to be divided.",
         "B": "÷ 3 is the same as ✕ 1/3, then we multiply the numerators and the denominators.",
@@ -79,7 +79,7 @@
     {
       "questionId": 101035,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1bfd7fc9-de90-4c94-82d4-b0acb0bcf8ca.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you may have multiplied. 2 ÷ 1/5 means how many times does 1/5 fit into 2?",
         "B": "2 ÷ 1/5 is the same as 2 × 5",
@@ -91,7 +91,7 @@
     {
       "questionId": 101054,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/af9ef6c7-f6f4-400a-9891-2d9eb65c4132.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have multiplied. 3 ÷ 1/6 means how many times does 1/6 fit into 3?",
         "B": "Sometimes we \"flip\" a fraction we're dividing by, but we don't flip a number to be divided.",
@@ -103,7 +103,7 @@
     {
       "questionId": 101037,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a0c7be55-4a6f-4bcb-9af8-beb752d2c44a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have multiplied. Does dividing by 3 make something bigger or smaller?",
         "B": "Sometimes we \"flip\" a fraction we're dividing by, but we don't flip a number to be divided.",
@@ -139,7 +139,7 @@
     {
       "questionId": 101058,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/af75491c-871d-4b30-a68b-66eafb82ef06.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you've multiplied the numbers. What operation do you think the question needs?",
         "B": "This asks for 12 ÷ 3/4, which is 12 ✕ 4/3 = 16",

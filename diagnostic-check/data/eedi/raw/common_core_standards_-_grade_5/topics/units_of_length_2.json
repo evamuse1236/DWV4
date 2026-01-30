@@ -49,7 +49,7 @@
     {
       "questionId": 129281,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/561a7e8c-2070-4185-b5a4-6fd703961620.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost. I think you may have rounded your answer but we need to be exact when converting units. It's ok to give your answer as a decimal.",
         "B": "I think you have multiplied 27 by 100. The number 100 is the correct conversion but think carefully about the operation we need. If we change to a larger unit, we'll have less of them.",
@@ -61,7 +61,7 @@
     {
       "questionId": 129142,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d93ba249-60a0-4d1a-b179-4da91d687c25.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have divided 45 by 100. The number 100 is the correct conversion but think carefully about the operation we need. If we change to a smaller unit, we'll have more of them.",
         "B": "Not quite. Remember 'cent' in the word centimetre means a hundredth. And do we need to multiply or divide? Centimetres are smaller than metres so we would expect more of them.",
@@ -73,7 +73,7 @@
     {
       "questionId": 129282,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d0745a58-f7b2-442d-8c2b-4ccb4b542c77.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Remember 'cent' in the word centimetre means a hundredth. What do we need to multiply 1.2 by to get from metres to centimetres?",
         "B": "1 m = 100 cm so to get from m to cm we need to multiply by 100. 1.2 x 100 = 120.",
@@ -85,7 +85,7 @@
     {
       "questionId": 129143,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cbfc6825-fbbb-4a8c-82c7-8b5b80371f28.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Remember 'milli' in the word millimetre means a thousandth. What do we need to multiply by to get from metres to millimetres?",
         "B": "Not quite. Remember 'milli' in the word millimetre means a thousandth. What do we need to multiply by to get from metres to millimetres?",
@@ -109,7 +109,7 @@
     {
       "questionId": 129144,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8e172d10-edd0-49a2-819c-dfdbfdcf4d09.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Start by converting 1 kilometre into metres. Remember that 'kilo' means 'thousand'.",
         "B": "I think you have converted 1 km into metres by multiplying by 1000. That's a great start but we need to keep going and convert 1000 m into millimetres (mm). What does 'milli' tell us?",
@@ -133,7 +133,7 @@
     {
       "questionId": 129145,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4fb0e524-4b0a-45b8-a98c-d89851e1fb79.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have converted 100 km into metres by multiplying by 1000. That's a great start but we need to keep going and convert 100,000 m into millimetres (mm). What does 'milli' tell us?",
         "B": "You are right that we need to multiply but what do we need to multiply by? Start by converting 100 kilometres into metres. Remember that 'kilo' means 'thousand'.",
@@ -145,7 +145,7 @@
     {
       "questionId": 129285,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/07235cb2-e8a7-45f4-8af9-16d1a5e31506.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You are right that we need to multiply but what do we need to multiply by? Start by converting 1000 kilometres into metres. Remember that 'kilo' means 'thousand'.",
         "B": "I think you have converted 1000 km into metres by multiplying by 1000. That's a great start but we need to keep going and convert 1,000,000 m into millimetres (mm). What does 'milli' tell us?",

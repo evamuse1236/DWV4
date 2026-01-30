@@ -37,7 +37,7 @@
     {
       "questionId": 166742,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/25f5b1c0-4028-4cd2-8860-94f674bd4ccc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You are almost there, you just need to add on the areas of the top and bottom of the box.",
         "B": "The area of the top and bottom is 3 x 9 = 27. The sides are 36 each, and the front and back are 108 each. 108 + 108 + 27 + 27 + 9 + 9 = 288.",
@@ -49,7 +49,7 @@
     {
       "questionId": 166992,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d39e67df-77b4-4bc7-9228-a077cd474549.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have found the volume rather than the surface area. Remember to find the area of each part of the net, and then add them all together.",
         "B": "I think you have found the area of one of each sized face. Remember there are two faces of each side on a cuboid.",
@@ -61,7 +61,7 @@
     {
       "questionId": 166743,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6e76424-17cf-406b-aebf-b2b552892c93.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have found the area of all the rectangles, but don't forget the two triangular sides need to be waterproofed too.",
         "B": "Almost, but remember the area of a triangle is base x height / 2. I think you forgot to do the division for the triangles.",
@@ -73,7 +73,7 @@
     {
       "questionId": 166993,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/26f94cc0-d330-4286-995c-b47744a3f75b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost, but remember the area of a triangle is base x height / 2. I think you forgot to do the division for the triangles.",
         "B": "The area of the rectangles are 10 x 15, 12 x 15 and 10 x 15. This is 150, 180 and 150 respectively. For the triangles we have 12 x 8 /2 = 48. In total we have 150 + 180 + 150 + 48 + 48 = 576 square foot.",
@@ -85,7 +85,7 @@
     {
       "questionId": 166744,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/70bededd-2d9b-4d20-a516-b289ae7257b4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have tried to find the volume of the pyramid. We need the surface area, which is the area of all the faces.",
         "B": "I think you have found the area of all the triangles, but remember you need the area of the square too.",
@@ -97,7 +97,7 @@
     {
       "questionId": 166994,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/61ee4d27-603a-4717-a739-f1d4e6c61c5b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have found the area of all the triangles, but remember you need the area of the square too.",
         "B": "The area of the square is 8 x 8 = 64. Each of the triangles is 6 x 8 / 2 = 24. In total we have four triangles, so 4 lots of 24, and the 64 which is 160.",
@@ -109,7 +109,7 @@
     {
       "questionId": 166745,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dfe4dcb2-a856-454a-9c3d-68b5cd1f9b79.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think that you used the wrong dimension for the area of the triangle. Remember it is the base and perpendicular height that you use, not the sloped height.",
         "B": "The area of the rectangles are 14 x 5 = 70, 14 x 12 = 168, 14 x 13 = 178. The triangles are each 5 x 12 / 2 = 30. In total we have 70 + 168 + 182 + 30 + 30 = 480 square cm.",
@@ -121,7 +121,7 @@
     {
       "questionId": 166995,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fe3b731b-c838-49db-9110-989de482553d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost, but remember the area of a triangle is base x height / 2. I think you forgot to do the division for the triangles.",
         "B": "I think you have found the volume rather than the surface area. Remember to find the area of each part of the net, and then add them all together.",
@@ -145,7 +145,7 @@
     {
       "questionId": 166996,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fa0f91b3-ba5e-452d-93e3-2227d844bc3b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have tried to break down the multiplication, but made a mistake when multiplying 5 by 1/2. Try writing your numbers as improper fractions before doing the multiplication.",
         "B": "I think you have squared the 5 1/2. Remember the volume of a prism is base area x height.",

@@ -127,7 +127,7 @@
     {
       "questionId": 136946,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ba767bae-31d8-4ecd-b4da-a2a0f5c2a7f0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have subtracted 65 from 180 to get the missing angle. These angles make an 'F' shape so are corresponding. What must this angle be?",
         "B": "These angles are corresponding as they make an 'F' shape. Corresponding angles are equal so the missing angle is 65⁰.",
@@ -139,7 +139,7 @@
     {
       "questionId": 136942,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ed4c9aa0-40fd-4ed1-956a-f7b77a02b4eb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you thought the angles were the same. These angles are co-interior, what relationship is there between co-interior angles?",
         "B": "The angles are co-interior, which means they add up to 180. 180 - 58 = 122, so 122⁰ is the missing angle",

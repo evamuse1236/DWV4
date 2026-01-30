@@ -31,7 +31,7 @@
     {
       "questionId": 135557,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f91f08f2-070e-4313-986c-b5c159b94ecb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've used 8 as the y-coordinate because it's the x-coordinate of the bottom right corner. We have to do a calculation to find the y-coordinate, which involves finding the bottom length first.",
         "B": "(8,4) is the coordinate of the bottom right corner which is already labelled. To find the top corner's coordinate, you'll need to do some calculations. Remember to use the fact that an isosceles triangle has two lengths that are equal.",
@@ -43,7 +43,7 @@
     {
       "questionId": 135577,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2ab1fdb6-1b7f-40a0-ba2e-279c8540021e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost, I think you've recognised that part of the coordinates will be the same as some of the other points. The x coordinate is the same as it is directly above the bottom left vertex. However, we do need to do a calculation to find the y coordinate.",
         "B": "The top vertex is directly above the bottom left so the x-coordinate is the same, 2. The bottom length is 11-2=9, as this is an isosceles triangle the left side must be 9 long as well. We add 9 to the y-coordinate of the bottom left vertex to get 5+9=14 for the y-coordinate. Giving the coordinates (2,14).",
@@ -67,7 +67,7 @@
     {
       "questionId": 135578,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c1fad3ce-514a-4866-a28f-bcb2c1f8fefd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Remember that congruent means exactly the same size and shape.",
         "B": "Shape P and Shape Q are both exactly 2 by 5 squares, just in different positions.",
@@ -91,7 +91,7 @@
     {
       "questionId": 135579,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/73efb813-063e-425c-b526-a4455af37fa6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Nearly there! I think you've used the difference between x-coordinates of (7,5) and (9,13) to find 11, however we need to use the translation between (4,8) and (7,5) to help us with this.",
         "B": "You're nearly there! :) Try using the transformation from (4,8) to (7,5) to help you find this vertex's position in relation to (9,13) :)",
@@ -115,7 +115,7 @@
     {
       "questionId": 135580,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8eb84a2a-60df-45b8-988d-d7d0f076d895.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Check your definitions of similar and congruent again. A similar shape has the same angles with sides that have all been enlarged by the same scale factor, and a congruent shape has the same angles and lengths. Hint: you could try measuring the side lengths using a ruler! :)",
         "B": "A similar shape is one with the same angles, however the lengths can be enlarged, and a congruent shape has the same angles and lengths. Both shapes here are squares with angles of 90⁰, but the side length of pink is 2, and green is larger (4.2 using Pythagoras' theorem). This means they are similar but not congruent, so only Katie is correct.",
@@ -127,7 +127,7 @@
     {
       "questionId": 135561,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6e33d15a-9c85-4163-947e-c014bf97cba4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Check your definitions of similar and congruent again. A similar shape has the same angles with sides that have all been enlarged by the same scale factor, and a congruent shape has the same angles and lengths. Hint: you could try measuring the side lengths using a ruler! :)",
         "B": "Check your definitions of similar and congruent again. A similar shape has the same angles with sides that have all been enlarged by the same scale factor, and a congruent shape has the same angles and lengths. Hint: you could try measuring the side lengths using a ruler! :)",
@@ -139,7 +139,7 @@
     {
       "questionId": 135581,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ae9db446-3f7d-4532-b493-d84cf1fdf231.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Check your definitions of similar and congruent again. A similar shape has the same angles with sides that have all been enlarged by the same scale factor, and a congruent shape has the same angles and lengths. Hint: you could try measuring the side lengths using a ruler! :)",
         "B": "Check your definitions of similar and congruent again. A similar shape has the same angles with sides that have all been enlarged by the same scale factor, and a congruent shape has the same angles and lengths. Hint: you could try measuring the side lengths using a ruler! :)",

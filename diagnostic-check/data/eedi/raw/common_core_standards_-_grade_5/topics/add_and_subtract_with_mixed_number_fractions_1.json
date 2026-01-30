@@ -49,7 +49,7 @@
     {
       "questionId": 130088,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/96904db2-139b-48ee-95a4-286acfa82a13.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is an improper fraction. We need to give our answer as a mixed number. Also remember that we do not add the denominators.",
         "B": "I think you have added the denominators in your calculation. We only add the numerators.",
@@ -61,7 +61,7 @@
     {
       "questionId": 130070,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d1fdab0-721b-4807-a007-713b87948213.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've just added the numerators, and added the denominators. To start adding the fractions, you first of all need to rewrite the fractions with a common denominator.",
         "B": "This is an improper fraction, what will this be as a mixed number?",
@@ -73,7 +73,7 @@
     {
       "questionId": 130089,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/03a34bca-88df-40a8-81b7-d38093979264.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is an improper fraction, what will this be as a mixed number?",
         "B": "Using the method to treat the whole numbers and fractions separately, we can add the wholes to get 2+2=4. Then we need to add the fractions, to do this we need a common denominator, 20 is the best. 7/10 = 14/20, and 1/4 = 5/20. Now we can add the numerators 14 + 5 = 19, and we have an overall answer of 4 wholes and 19/20.",
@@ -97,7 +97,7 @@
     {
       "questionId": 130090,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/45ea900f-bf71-422e-ae4f-f22079ee508c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is an improper fraction, what will this be as a mixed number?",
         "B": "Don't forget that we don't subtract the denominators too when subtracting fractions. Additionally, this question has asked for the answer as a mixed number, and this is an improper fraction.",
@@ -121,7 +121,7 @@
     {
       "questionId": 130091,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c39f7245-5c9c-4bb1-be9a-8d2fd3bcaeb8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember we need to rewrite the fractions with a common denominator before we do any calculations. We also do not subtract the denominators when subtracting fractions.",
         "B": "We can do this calculation by subtracting the whole numbers 5-2=3 first. To subtract the fractions, we need a common denominator, 10 is best here. 3/5 = 6/10 and 1/2 = 5/10. 6-5 = 1, so we have 3 wholes and 1/10.",
@@ -133,7 +133,7 @@
     {
       "questionId": 130073,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b0c02298-ba89-453f-932c-1018d1d14a99.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Because you split them up and worked on the whole numbers and then the fractions you ended up with a negative fraction. We cannot just turn this into a positive. Start by instead making these into improper fractions",
         "B": "Remember we need to rewrite the fractions with a common denominator before we do any calculations. We also do not subtract the denominators when subtracting fractions.",
@@ -145,7 +145,7 @@
     {
       "questionId": 130092,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8f817d15-b90c-4fcf-8f2a-8fa628f801eb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Remember we need to rewrite the fractions with a common denominator before we do any calculations. We also do not subtract the denominators when subtracting fractions.",
         "B": "Because you split them up and worked on the whole numbers and then the fractions you ended up with a negative fraction. We cannot just turn this into a positive. Start by instead making these into improper fractions",

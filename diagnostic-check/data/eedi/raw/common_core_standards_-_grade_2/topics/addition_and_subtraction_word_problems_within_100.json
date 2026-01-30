@@ -25,7 +25,7 @@
     {
       "questionId": 159330,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/33aed672-2014-47d7-b297-ff3aae0a8ff1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite - I think you started counting up on 37 instead of 38. Count 38, 39, 40, ...",
         "B": "37 + 14 = 51. We can split it as 37 + 10 = 47. 47 + 4 = 51.",
@@ -37,7 +37,7 @@
     {
       "questionId": 159552,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0f00d010-b82a-4d5f-aba4-0c87b89f90fe.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost! I think you forgot to carry the 10. 3 + 9 = 12, so we have an extra 10 to add up with the 20 and 40...",
         "B": "You have done 49 - 23, but \"how many altogether?\" tells us to add 23 + 49.",
@@ -61,7 +61,7 @@
     {
       "questionId": 159553,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/598ec354-f3ce-44dc-95fc-f4a614207e10.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite - I think you did 6 - 4 for the ones digit, but we need to subtract all of 16 from all of 54. Try counting back 10 and then 6.",
         "B": "Juan gave away 16 so we do 54 - 16 = 38. We can split it up as 54 - 10 = 44, then 44 - 6 = 38.",
@@ -73,7 +73,7 @@
     {
       "questionId": 159332,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c823c114-b632-4961-b981-550a3a5a290a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "There are 22 people in front of Tom (numbers 1 - 22 in the line). How many are behind him, if there are 50 altogether?",
         "B": "Almost! I think you forgot to borrow 10. Try splitting this calculation up, and doing 50 - 20, then subtracting another 3.",
@@ -109,7 +109,7 @@
     {
       "questionId": 159555,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5012c1ec-0bbc-44fd-bce5-55e05ed4ae03.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have subtracted, but to find out how much money for both we need to add 39 + 52.",
         "B": "Almost! I think you forgot to carry the 10. 9 + 2 = 11, so we have an extra 10 to add up with the 30 and 50...",
@@ -133,7 +133,7 @@
     {
       "questionId": 159556,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5a7aadb6-a321-4ccd-b871-d824abdde4ec.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite - the question does not say an eraser costs 19 cents. If an eraser is 19 cents less than 45 cents, how much is it?",
         "B": "That's the correct price of the eraser, but how much do they cost together?",

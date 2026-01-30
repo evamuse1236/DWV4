@@ -61,7 +61,7 @@
     {
       "questionId": 75938,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f688dd4d-ad92-4ab7-97df-07090ac7a244.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Out of addition and multiplication, which do you do first?",
         "B": "Out of addition and division, which do you do first?",
@@ -85,7 +85,7 @@
     {
       "questionId": 89312,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/395d076a-9074-4a75-b89c-6faf924e91e0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Inside these brackets are two operations. Which would you do first?",
         "B": "Out of subtraction and multiplication, which do you do first?",
@@ -97,7 +97,7 @@
     {
       "questionId": 89324,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d8095bb1-5e26-4527-8a90-b4fa7976e5bc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Did adding in brackets here change the order at all?",
         "B": "We need brackets to tell us to do the addition before the division.",
@@ -109,7 +109,7 @@
     {
       "questionId": 104296,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b65e7de7-0f71-49d7-ba24-3775f4eb01de.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Think about your order of operations. What operations are there here?",
         "B": "Out of indices and multiplication, which do you do first?",
@@ -133,7 +133,7 @@
     {
       "questionId": 104297,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/75f2420e-ed99-4614-bee6-6c03925c2c93.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Think about your order of operations. What operations are there here?",
         "B": "The numerator acts as though it is in a bracket, so we have to work out the top of the fraction first. There are two operations in the numerator, + and x, we need to do the x first.",

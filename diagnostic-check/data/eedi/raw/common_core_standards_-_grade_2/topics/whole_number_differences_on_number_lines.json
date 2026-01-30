@@ -19,7 +19,7 @@
     {
       "questionId": 165581,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a1958a58-9fce-435f-8219-7828d85d23d7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have confused the difference with the end point. Remember it's the starting point, subtract the difference to get the end point.",
         "B": "I think you have counted the numbers rather than the jumps when finding the difference.",
@@ -31,7 +31,7 @@
     {
       "questionId": 165586,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8e0dfa2e-e1cd-4567-a46b-0ed66e0d271d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost, but I think you have written the calculation as if the arrow was going in the opposite direction. How can we represent the backwards arrow?",
         "B": "The starting point is 9, and the difference is 6 backwards. This means we have 9 - 6. The end point is 3, so we have 9 - 6 = 3.",
@@ -43,7 +43,7 @@
     {
       "questionId": 165582,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5d6c413d-2c46-4a5d-ac07-15a8daea95b8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have counted the numbers rather than the jumps when finding the difference.",
         "B": "I think you have written the end point, but we need to look at how many jumps there are between 8 and 6 on the number line.",
@@ -67,7 +67,7 @@
     {
       "questionId": 165583,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eabd8502-b766-476a-a916-7695a1f5034f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost, but you have confused two of your numbers. Remember we subtract the difference from the start point to get to the end point.",
         "B": "Almost, but I think you have written the calculation as if the arrow was going in the opposite direction. How can we represent the backwards arrow?",
@@ -79,7 +79,7 @@
     {
       "questionId": 165588,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3d266e47-d4a6-46ca-a144-1144db1cf2a8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost, but I think you have written the calculation as if the arrow was going in the opposite direction. How can we represent the backwards arrow?",
         "B": "Almost, but you have confused two of your numbers. Remember we subtract the difference from the start point to get to the end point.",
@@ -91,7 +91,7 @@
     {
       "questionId": 165584,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/be8b094e-788f-4718-8c60-3d10fad4955f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost. Remember the difference, what we are subtracting, is how far back we have gone, not where we end up.",
         "B": "I think you have counted the numbers rather than the jumps when finding the difference.",
@@ -115,7 +115,7 @@
     {
       "questionId": 165585,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/31956554-a7e5-4945-b9bf-a684231add1a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you are confusing the difference and the end point. Remember the difference is how far back the arrow has gone, and this is what is subtracted from the start point.",
         "B": "The start point is 6, the difference is 5 backwards so we have 6 - 5. The end point is 1, so the calculation is 6 - 5 = 1. Therefore Katie is correct.",

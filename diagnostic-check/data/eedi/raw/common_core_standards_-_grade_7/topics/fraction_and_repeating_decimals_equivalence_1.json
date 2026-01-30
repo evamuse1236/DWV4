@@ -25,7 +25,7 @@
     {
       "questionId": 165524,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2715b8e3-cf88-44cb-9c1d-e581e0546060.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It seems like you've just given the digit as the denominator here, but ½ is the same as 0.5. This decimal is 0.222222222...",
         "B": "Not quite, this fraction would give us the decimal 0.22, but this is 0.2 recurring which is 0.2222222222 (ongoing forever!).",
@@ -61,7 +61,7 @@
     {
       "questionId": 165530,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aa8f3fe6-34a8-43e4-a340-84f123bc0f6f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you have just put the digits of the fraction below a recurring sign. If you divide 8 by 9, you don't get 0.89 recurring.",
         "B": "0.88888888... (where the 8 goes on forever) can be written as 8/9. 8 ÷ 9 = .888...",
@@ -73,7 +73,7 @@
     {
       "questionId": 165526,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/28245981-2658-41e4-a90f-b6fffa750fcc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You're close! You just need to remember to write the fraction in its simplest form.",
         "B": "0.44444444444... (where the 4 goes on forever) can be written as ⁴/₉. x = .444... 10x = 4.444... 10x - x = 4.444... - .444... 9x = 4 x = ⁴/₉",
@@ -85,7 +85,7 @@
     {
       "questionId": 165531,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b953a05f-a879-44fe-8dc3-c593ac12f889.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You're close! You just need to remember to write the fraction in its simplest form.",
         "B": "I think here, you have turned 0.7 into a fraction rather than 0.7 recurring.",
@@ -97,7 +97,7 @@
     {
       "questionId": 165527,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/76f852b7-c87d-419d-8e8f-8129d9b725e3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you have just put the digits of the fraction below a recurring sign. If you divide 7 by 9, you don't get 0.79 recurring.",
         "B": "I think you have just put the numerator and the denominator together as a decimal. This is not the same as dividing 7 by 9.",
@@ -109,7 +109,7 @@
     {
       "questionId": 165532,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b274112d-7056-4f6c-87c4-8f031b768e83.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have just put the numerator and the denominator together as a decimal. This is not the same as dividing 5 by 9.",
         "B": "0.55555555... (where the 5 goes on forever) can be written as ⁵/₉. 5 ÷ 9 = .555...",
@@ -121,7 +121,7 @@
     {
       "questionId": 165528,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a392e1b3-85e1-47b2-a875-bfedb05c6dc9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! It looks like you haven't recognised that ⅓ and ³/₉ are equivalent fractions, and so would make the same decimal.",
         "B": "I think you have assumed here that because Tom's fraction doesn't have a denominator of 9, it can't be a recurring decimal but this isn't the case.",
@@ -133,7 +133,7 @@
     {
       "questionId": 165533,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/21970781-f840-4121-8288-291832feeae1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you have written the denominator of the fraction as the digit after the decimal place. This doesn't give us the equivalent decimal to the fraction. ¹/₆ is less than a half, and a half as a decimal is 0.5, so 0.6 would be too big.",
         "B": "0.66666666... (where the 6 goes on forever) can be written as ⁶/₉ but not as ¹/₆ as they are not equivalent fractions, so both only Katie is correct.",

@@ -43,7 +43,7 @@
     {
       "questionId": 78161,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/926c4650-1162-4b43-8a2e-6521baa02736.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have made a mistake when eliminating y. When subtracting the equations, the y terms will eliminate each other and you will be left with (3x - 2x) = (14 - 10). What would x be?",
         "B": "Not quite. Make sure you rearrange your equation so we are finding y NOT 2y.",
@@ -67,7 +67,7 @@
     {
       "questionId": 78162,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2bdd7cbb-4e7c-426a-a356-80a351d6e849.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. I think you have identified the first equation can be changed to make the coefficients of y the same, which is correct. But remember - the entire equation needs to be multiplied by the number you choose.",
         "B": "Both sides of the first equation have been multiplied by 2 to make the coefficients of y the same in both equations allowing one to be subtracted from the other to eliminate y and thus solve for x.",
@@ -79,7 +79,7 @@
     {
       "questionId": 78456,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6227d614-20ae-4c20-acbe-11ef109da1cd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. I think you have identified the second equation can be changed to make the coefficients of y the same, which is correct. But remember - the entire equation needs to be multiplied by the number you choose.",
         "B": "Not quite. I think you have identified the second equation can be changed to make the coefficients of y the same, which is correct. But remember - the entire equation needs to be multiplied by the number you choose.",
@@ -103,7 +103,7 @@
     {
       "questionId": 78457,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f9b1c330-d00d-40c9-a3cd-f1d63c8fabc8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have correctly spotted that we need to scale the second equation by multiplying it by 3, but you only multiplied the left hand side. Don't forget to multiply the -1 by 3 as well!",
         "B": "I think you have attempted to scale the second equation by multiplying it by 3, but you missed one of the terms. Make sure every single term is multiplied by 3.",
@@ -115,7 +115,7 @@
     {
       "questionId": 78164,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2001ce28-7f42-43c1-bba3-0093445104b0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Make sure you double check the number of teas/coffees in your equation so that they match the scenario. For £3.70 you can buy 5 teas and 2 coffees.",
         "B": "If we let t = the cost of a cup of tea and c = the cost of a cup of coffee then 5t + 2c = 3.70 and 2t + 5c = 4.00",
@@ -151,7 +151,7 @@
     {
       "questionId": 154489,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cb65ec62-e646-4541-9f1b-0088eb9d48c3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! Check what labels you used for tea and coffee in your simultaneous equations and be careful not to mix them up",
         "B": "Here we need to form simultaneous equations. From the question wording we get 3t + 2c = 240 and 2t + 5c = 380 (working in pence). Solving these by multiplying the first equation by 2 and the second by 3 and subtracting them would give the correct solution of t = 40p and c = 60p.",

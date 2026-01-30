@@ -49,7 +49,7 @@
     {
       "questionId": 159568,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eea48892-eae1-412e-a2ec-f7a4f9f69140.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "That would be halfway between 0 and 5, but the arrow goes more than halfway... Can you count the marks on the scale?",
         "B": "Not quite - try counting the marks on the scale.",
@@ -61,7 +61,7 @@
     {
       "questionId": 159347,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5928dc9c-4777-40d6-868e-f0f25f942d73.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite - try counting the marks on the scale.",
         "B": "That would be halfway between 5 and 10, but the arrow goes more than halfway... Can you count the marks on the scale?",
@@ -73,7 +73,7 @@
     {
       "questionId": 159569,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/84a6bcf2-967d-4dab-b360-acb9a4c65b2b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "That would be halfway between 5 and 10, but the arrow goes more than halfway... Can you count the marks on the scale?",
         "B": "The scale goes up in 1s. The arrow starts at 0 and ends at the ninth mark, which will be 9.",
@@ -85,7 +85,7 @@
     {
       "questionId": 159348,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/11b13a96-ed18-44f8-8e83-15e08f115a98.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Adding 12 is the same as going 15 forward then 3 backwards, but in this diagram the arrows go 3 forwards then another 15 forwards. How much is added in total?",
         "B": "The first arrow shows adding 3 but the second arrow shows adding 15. How much is added in total?",
@@ -109,7 +109,7 @@
     {
       "questionId": 159349,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c15dc4ef-8240-4cd5-bee0-4933ce99276f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, 80 is a number on the number line, it's not being subtracted. The arrows show that we are subtracting 4 and then 13, how much is that in total?",
         "B": "Following the arrows, we subtract 4 to go from 84 to 80, then we subtract 13 to get to 67. Altogether we subtract 17, so 84 - 17 = 67.",
@@ -121,7 +121,7 @@
     {
       "questionId": 159571,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e0ac0ac2-6f06-467c-ad95-462ab6b71513.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Subtracting 5 would be the same as subtracting 12 then adding 7, but we are subtracting 7 then subtracting another 12. How much is that in total?",
         "B": "The first arrow shows subtracting 7 but the second arrow shows subtracting 12. How much is subtracted in total?",
@@ -133,7 +133,7 @@
     {
       "questionId": 159350,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a8162552-79c1-4fa0-abd8-636a6285bd6b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "To put them on the same step, they need to climb the same number of steps. How many more does Lucy need to climb to have the same total as Sam?",
         "B": "That's how many steps Sam has climbed, so how many more does Lucy need to climb to get to the same place?",
@@ -145,7 +145,7 @@
     {
       "questionId": 159572,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/381e17b6-f756-4703-b3a7-2b333eb3e865.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "That's how many steps Miguel has climbed, so how many more does Luke need to climb to get to the same place?",
         "B": "To put them on the same step, they need to climb the same number of steps. Miguel climbs 2 + 4 + 7 = 13 steps. Luke climbs 3 + 5 = 8 steps, so he has to climb 5 more.",

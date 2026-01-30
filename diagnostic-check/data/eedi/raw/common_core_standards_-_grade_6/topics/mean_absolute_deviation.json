@@ -19,7 +19,7 @@
     {
       "questionId": 155080,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/87a5697f-7a58-42d4-9305-b46cc63f87d1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is the median. To find the mean we need to add all the values together and divide by how many values there are",
         "B": "To find the mean weight we need to add all the values together and divide by how many there were. This gives us 36.9/5 = 7.38.",
@@ -31,7 +31,7 @@
     {
       "questionId": 155085,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a7a5b37a-0b4d-414b-90f0-ca4dab8c1a19.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is the range. To find the mean we need to add all the values together and divide by how many values there are",
         "B": "Nearly! I think you correctly added all the values together, but forgot the last step in finding the mean. What do we have to divide by?",
@@ -55,7 +55,7 @@
     {
       "questionId": 155086,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d7696a11-b6af-47f7-955d-1a88149eec56.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think your method is so close, but just remember we need the absolute difference between each value and the mean, so all our values should be positive.",
         "B": "This is the mean, but we've been asked for the mean absolute deviation. Start by working out how far each point is away from the mean. Now how would you find the mean of your new values?",
@@ -67,7 +67,7 @@
     {
       "questionId": 155082,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f6da7b3e-86d1-4c63-bc0a-8238a825f7af.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. To find the mean absolute deviation we work out how far each data point is away from the mean and then calculate the mean of those values. Which description does that match?",
         "B": "The mean absolute deviation is a measure of spread. It tells us the mean distance between each data point and the mean",
@@ -91,7 +91,7 @@
     {
       "questionId": 155083,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2261787d-7f82-4715-99b2-2aaf596c538f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is the mean, but we've been asked for the mean absolute deviation. Start by working out how far each point is away from the mean. Now how would you find the mean of your new values?",
         "B": "I think your method is so close, but just remember we need the absolute difference between each value and the mean, so all our values should be positive.",
@@ -103,7 +103,7 @@
     {
       "questionId": 155088,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/90f788ff-c4c2-4067-abed-88dc1ef4d28b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is the mean, but we've been asked for the mean absolute deviation. Start by working out how far each point is away from the mean. Now how would you find the mean of your new values?",
         "B": "To find the mean absolute deviation of Brand A we first need the mean which is 48.5. We then need to work out how far away each point is from the mean and divide by the number of data points we have (2.5+0.5+3.5+0.5+3.5+3.5)/6 which gives us 2.3oz. Doing the same for Brand B gives us a mean of 49.5 and then a MAD of (0.5+1.5+1.5+2.5+0.5+0.5)/6 = 1.2oz",
@@ -115,7 +115,7 @@
     {
       "questionId": 155084,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5439e955-1d9e-42ef-84c1-6294007803b8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. The MAD tells us about the spread of data, it is not a measure of average. Look at the MAD values. Would a higher or lower value mean the crop was more consistent?",
         "B": "Not quite. The MAD tells us about the spread of data, it is not a measure of average. Look at the MAD values. Would a higher or lower value mean the crop was more consistent?",

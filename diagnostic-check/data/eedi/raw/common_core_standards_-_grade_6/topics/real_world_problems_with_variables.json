@@ -19,7 +19,7 @@
     {
       "questionId": 166253,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/249c745e-61f4-4c86-ba5b-7a677ff1e748.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you may have added 3 to Dave's age, however the question says that Dave is 3 years older than Jenny. If we know Jenny is 5, what would we need to do to show 3 years older than this?",
         "B": "If Jenny is 5 and Dave is 3 years older than this, we can show Dave's age by adding 3 to Jenny's age which would be d = 5 + 3.",
@@ -31,7 +31,7 @@
     {
       "questionId": 166480,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f9b76164-87c6-4bdf-9d2c-f11308df0322.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite - it looks like you've subtracted 4 from Jenny's age but it says Dave is 4 years OLDER than Jenny.",
         "B": "It seems like you have gotten a bit confused between 4 years older than and 4 times as old. The question doesn't say Dave is 4 times as old, so there shouldn't be any multiplication in our equation.",
@@ -43,7 +43,7 @@
     {
       "questionId": 166254,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/995c96e9-bd87-4302-a648-d8480f8174c1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you might have confused this for a subtraction problem, however if each lane has 12 swimmers each, we would be multiplying the number of swimmers per lane by the number of lanes.",
         "B": "There are 12 swimmers in each lane and there are 6 lanes, so to work out the number of swimmers in total we would multiply 6 and 12. This makes the equation s = 12 x 6.",
@@ -55,7 +55,7 @@
     {
       "questionId": 166481,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/10d1512e-db91-4f79-92c5-749409396dc2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you might have confused this for a subtraction problem, however if each lane has 6 swimmers each, we would be multiplying the number of swimmers per lane by the number of lanes.",
         "B": "I think you might have confused this for a subtraction problem, however if each lane has 6 swimmers each, we would be multiplying the number of swimmers per lane by the number of lanes.",
@@ -67,7 +67,7 @@
     {
       "questionId": 166255,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f3816877-edcf-409f-b1e2-7fcf13962c9d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "'Sharing equally' means that we want to split the $600 between the workers. We wouldn't do this by multiplying! Can you think of which operation we use to 'share equally'?",
         "B": "'Sharing equally' doesn't mean we would be adding on, it means that we are splitting $600 into however many $75 chunks it makes, so it is a division problem!",
@@ -79,7 +79,7 @@
     {
       "questionId": 166482,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c1fe31bb-fadf-44eb-974d-6920a7492026.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Here, it looks like you might have divided $25 between the number of workers, however that is how much they get each rather than how much they share in total!",
         "B": "'Sharing equally' means that we want to split the $500 between the workers. We wouldn't do this by multiplying! Can you think of which operation we use to 'share equally'?",
@@ -115,7 +115,7 @@
     {
       "questionId": 166257,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c05e5f7a-4be7-468c-bbe6-00c85d31f9e0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have put 'd' as the total savings, but we are told in the question that 'd' represents the amount saved per month. We already know the total amount of savings - can you spot it in the question?",
         "B": "'per month' means that for every 1 month, Ina would save $d. That means we want to multiply the number of months, not add to it!",

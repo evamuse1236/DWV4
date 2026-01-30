@@ -43,7 +43,7 @@
     {
       "questionId": 158842,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/19a53335-1bfb-4b35-9556-f671df52ec11.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have added the values together but we need to find the difference between them...",
         "B": "You have divided 550 by 110 but we need to find the difference between them...",
@@ -55,7 +55,7 @@
     {
       "questionId": 159041,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9c48fe26-bf7d-4794-8a28-8221e9a15a09.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have added the values together but \"how much more\" means we need to find the difference between them...",
         "B": "Almost, but double check your calculation. 550g more would take us to 780g.",
@@ -79,7 +79,7 @@
     {
       "questionId": 159042,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7592df38-cf42-445e-af88-852ef1e86f23.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have subtracted but to the find the total mass of the flour and yeast, you need to add...",
         "B": "To find the mass after the yeast is added we do 65 + 8 = 73 therefore the mass will be 73g.",
@@ -115,7 +115,7 @@
     {
       "questionId": 158845,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/22ebbc9b-9715-4fa1-9cfa-9c12eb2bafdf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have multiplied, but we are sharing out the sugar so we need to divide...",
         "B": "I think you have added, but we are sharing out the sugar so we need to divide...",
@@ -139,7 +139,7 @@
     {
       "questionId": 158846,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d070104a-8872-4360-919c-42fcb35c3dfc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is the current mass of flour but the question wants us to add another 150g of flour and say what the mass would be then...",
         "B": "I think you have subtracted 150g from 400g but we're adding more flour so we need to add the value on...",
@@ -151,7 +151,7 @@
     {
       "questionId": 159045,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/03b709db-6566-4bdd-be82-cc8cc0e670cc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Make sure you read the scales as we already have some flour.. Can you see how much? If we add 250g more what will we have in total?",
         "B": "This is the current mass of flour but the question wants us to add another 250g of flour and say what the mass would be then...",

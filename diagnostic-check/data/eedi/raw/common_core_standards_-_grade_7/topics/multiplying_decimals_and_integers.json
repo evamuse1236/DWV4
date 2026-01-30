@@ -19,7 +19,7 @@
     {
       "questionId": 130232,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c2d481fe-87d6-4a6f-9e37-531f6c9fbac0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "6 would be 3x2, but we're multiplying by 0.3 instead, which is 10 times smaller.",
         "B": "This is 0.3 + 2, not 0.3 x 2",
@@ -67,7 +67,7 @@
     {
       "questionId": 130234,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d82eb4f9-faf6-4921-b009-d328b4c78563.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've made a mistake when finding the correct place value. Be careful to put the decimal point in the correct place.",
         "B": "To do this, first of all calculate 4x15 = 60. 0.4 is ten times smaller, so we can divide by 10 to get 6.",
@@ -91,7 +91,7 @@
     {
       "questionId": 130235,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f1e73ad9-be0d-49e9-b932-f62ad6b27950.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you left the same number of zeros after the decimal pace. This doesn't always work with decimal calculations. Try starting with 3 x 12 and then dividing by 100 as 0.03 is 100 times smaller than 3",
         "B": "Think carefully about the order of your digits. There should not be a zero inbetween.",
@@ -103,7 +103,7 @@
     {
       "questionId": 130255,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/62fc123b-5239-4b2c-8b4c-400e063cb413.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "8.4 would be 0.4 x 21. 0.04 is 10 times smaller than 0.4",
         "B": "Think carefully about the order of your digits. There should not be a zero inbetween.",
@@ -127,7 +127,7 @@
     {
       "questionId": 130256,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/482d2e61-7acc-4cd8-89dc-20128955348c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "40 would be 0.5 x 80. We want 0.05 x 80.",
         "B": "Firstly, calculate 5x80 = 400. 0.05 is 100 times smaller than 5, so we can divide by 100 to get an answer of 4.",

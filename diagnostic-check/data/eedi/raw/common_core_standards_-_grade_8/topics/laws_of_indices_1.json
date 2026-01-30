@@ -43,7 +43,7 @@
     {
       "questionId": 73583,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ced95bdb-fc59-4446-9523-aa42c580c70b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have confused powers and multiples. A power of 5 is found by multiplying multiple copies of 5 together.",
         "B": "I think you have confused powers and multiples. A power of 5 is found by multiplying multiple copies of 5 together.",
@@ -55,7 +55,7 @@
     {
       "questionId": 73789,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7727c87d-22a5-4ea5-acc0-d5449e14350a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have confused powers and multiples. A power of 4 is found by multiplying multiple copies of 4 together.",
         "B": "64 is a power of 4, as 64 = 4 x 4 x 4 = 4³ or '4 to the power of 3'.",
@@ -67,7 +67,7 @@
     {
       "questionId": 73586,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7fb4054a-d411-40fc-88ef-5d63bb4c28b3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have written the power as a number. Try looking at 7 squared, 7 to the power of 1, and see what is happening each time you reduce the power by 1.",
         "B": "Any number to the power of 0 is 1.",
@@ -103,7 +103,7 @@
     {
       "questionId": 73793,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d9f77db7-8aec-4c30-9fbe-e172cdb64ba8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have multiplied the powers and multiplied the base numbers. Think about how many copies of 2 we will have multiplied together.",
         "B": "I think you have multiplied the powers. Think about how many copies of 2 we will have multiplied together.",
@@ -115,7 +115,7 @@
     {
       "questionId": 73588,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1b0d4c80-5187-49ce-b106-743ae8d5bbdb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have divided the powers. Think about how many copies of 2 you will have on the top and bottom of the fraction, and how many you can cancel out.",
         "B": "We have 10 copies of 2 multiplied on the top of the fraction, and 5 copies on the bottom. That means we can cancel out 5 copies, leaving 2⁵. We can also get this power by subtracting 5 from 10.",
@@ -151,7 +151,7 @@
     {
       "questionId": 73795,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0fe4e70a-cce7-494b-a16b-942c29be16f1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have added the powers. Remember (4⁶)² means we have 2 copies of 4⁶ being multiplied. How many copies of 4 is this altogether?",
         "B": "I think you have squared the 4. Remember (4⁶)² means we have 2 copies of 4⁶ being multiplied. How many copies of 4 is this altogether?",

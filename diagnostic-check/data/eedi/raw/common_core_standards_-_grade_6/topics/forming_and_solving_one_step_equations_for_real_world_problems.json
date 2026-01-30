@@ -31,7 +31,7 @@
     {
       "questionId": 166717,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9b616ad1-5452-46e2-9267-d0c21b1b054a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite - remember that 𝑚 represents the amount of money in his piggy bank. How could we work out the amount he already had before the extra $12?",
         "B": "I think you may think that 12𝑚 means 12 + 𝑚, but it actually means 12 x 𝑚. We aren't multiplying the amount in the piggy bank by 12, we're only adding $12!",
@@ -43,7 +43,7 @@
     {
       "questionId": 166967,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cd6a9ace-1290-477c-9b55-94ac2e937313.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may think that 15𝑚 means 15 + 𝑚, but it actually means 15 x 𝑚. We aren't multiplying the amount in the savings account by 15, we're only adding $15!",
         "B": "𝑚 is the amount of money she already has - if we add the extra $15 to that we would get 𝑚 + 15, and we know that is equal to $95. If we subtract the 15 to get just 𝑚, that'd be 95 - 15 which is 80!",
@@ -55,7 +55,7 @@
     {
       "questionId": 166718,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/975d951d-3d07-4f37-82ff-56500196d86c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This stage is actually right, because we are subtracting an unknown amount of cards (which we can call 𝑥) from 95 cards, leaving us with 56, so does not answer the question of where Sammy went wrong.",
         "B": "This stage is actually correct, because if we are subtracting 𝑥, we can switch around 𝑥 and the value from the other side of the = symbol.",
@@ -67,7 +67,7 @@
     {
       "questionId": 166968,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/176f734e-36ef-429c-bdb8-0f764833d236.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This stage is actually right, because we are subtracting an unknown amount of marbles (which we can call 𝑥) from 104 marbles, leaving us with 78.",
         "B": "This stage is actually right, because if we are subtracting 𝑥, we can switch around 𝑥 and the value from the other side of the = symbol.",
@@ -79,7 +79,7 @@
     {
       "questionId": 166719,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fca47fa2-cf70-4ef4-bce1-f98c759219bd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You've added here but the question says 2.5 TIMES as many. How could we show 2.5 times 𝒶?",
         "B": "2.5 times 𝒶 can be written as 2.5𝒶. The question tells us that 2.5𝒶 is equal to 20 apples, so the equation would be 2.5a = 20.",
@@ -103,7 +103,7 @@
     {
       "questionId": 166720,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d0d6041e-7d66-48ef-867f-520e483a0259.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite - what decimal would we use to find 15% of a number?",
         "B": "Close, but this shows that the 15% tip on it's own is $46. We also need to include the original cost of the meal!",
@@ -115,7 +115,7 @@
     {
       "questionId": 166970,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eb29f16d-a265-4d38-b5a1-4d7815075694.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It seems like you've added on $12 to the original cost of the shoes instead of adding on 12% of 𝑥. What could we multiply 𝑥 by to find 12%?",
         "B": "We can use 𝑥 to represent the original cost of the shoes, and 0.12𝑥 to represent 12% of this cost. If we add those together we get 1.12𝑥, which is equal to the total cost of $57.",

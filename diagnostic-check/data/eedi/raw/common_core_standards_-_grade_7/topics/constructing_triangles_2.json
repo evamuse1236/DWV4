@@ -43,7 +43,7 @@
     {
       "questionId": 131781,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ad755b50-deb8-4394-95e4-c9b0a9177864.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! If you draw 3 lines and then join them all up, you'd either be changing the length of the lines or adding in more lines so the shape is no longer a triangle.",
         "B": "This is the correct way to construct a triangle with given side lengths. It is important to use a compass to create arcs from either end of the 7cm long line, so that the 6cm and 5cm long lines meet at the correct point.",
@@ -55,7 +55,7 @@
     {
       "questionId": 133974,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d3b95c2a-81e7-44e9-b6f3-84dc4c24ccc0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! We are given the lengths of the sides here, so we need to use a compass and a ruler to make sure the lengths are right. A protractor is used for measuring angles.",
         "B": "Nearly! When you are drawing the 5cm length, we need to set the compass to the other end of the 8cm line so that we can create a triangle.",
@@ -67,7 +67,7 @@
     {
       "questionId": 131782,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/24307153-7c73-450d-9f96-63fd738d04d9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! We don't join the ends of the line to where the arcs meet. What points do we join up?",
         "B": "Nearly! Joining up where the two arcs intersect, which crosses the original straight line provides you with a 90° angle. No additional bisection of the angle created is needed.",
@@ -79,7 +79,7 @@
     {
       "questionId": 133975,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bdbf5d31-bb73-48a5-91fe-29060080b536.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! We don't join the ends of the line to where the arcs meet. What points do we join up?",
         "B": "It is important that the compass is set to a width at least half of the length of the line. Once the arcs are created, they can be joined up and 4 right angles have been created.",
@@ -91,7 +91,7 @@
     {
       "questionId": 131783,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c3dd9d8d-9b61-4c5c-b6be-f294c7cf4592.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Answer A describes the process for drawing an equilateral triangle, and then bisecting the angle created. It may be helpful to remember 'bisect' means 'to cut in half'. What size angle do we end up with here? Think what set of lines / shape would contain a 60° angle when constructed.",
         "B": "Answer B describes the process for constructing a perpendicular line and then bisecting this angle. What angle do perpendicular lines meet at? It may also be helpful to remember bisect means 'cut in half' Think what set of lines / shape would contain a 60° angle when constructed.",

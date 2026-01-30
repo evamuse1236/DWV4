@@ -49,7 +49,7 @@
     {
       "questionId": 98471,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/81ed63ac-4f14-48d5-9023-8acec8bb9942.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you've found the area of the whole grid, rather than the area of the orange coloured shape.",
         "B": "I think you've calculated the perimeter instead of the area. How much space is there inside the shape?",
@@ -73,7 +73,7 @@
     {
       "questionId": 98472,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e21894c3-3caa-49ce-b659-29f14c4a3ba0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've tried to find the perimeter instead of the area. How much space is there inside the shape?",
         "B": "I think might have tried to use the formula for area of a triangle, but forgotten an important step. Or maybe you tried to find perimeter? For area, we need the space inside the shape.",
@@ -97,7 +97,7 @@
     {
       "questionId": 124905,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/324db8cc-92de-4f05-8e8d-6a8871b11059.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "To compare the two areas, carefully count the number of squares in each shape.",
         "B": "To compare the two areas, carefully count the number of squares in each shape.",
@@ -109,7 +109,7 @@
     {
       "questionId": 98464,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d441de90-20de-45df-9598-09b42a1a2365.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Make sure you carefully count the squares inside each diagram (area), and count the square lengths around the outside (perimeter) of each diagram, and then compare them all.",
         "B": "Removing a square each time means that the area decreases. However, if you find the perimeter of all of the shapes, they all have a perimeter of 12, so the perimeter stays the same.",
@@ -121,7 +121,7 @@
     {
       "questionId": 98476,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/24e227fb-8a27-4288-a9e4-dab8be50efbc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Make sure you carefully count the squares inside each diagram (area), and count the square lengths around the outside (perimeter) of each diagram, and then compare them all.",
         "B": "Make sure you carefully count the squares inside each diagram (area), and count the square lengths around the outside (perimeter) of each diagram, and then compare them all.",
@@ -133,7 +133,7 @@
     {
       "questionId": 98466,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c58bc83d-f7bc-46eb-a879-9c0558972238.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "To answer this question, you could count the squares inside the shape: whole squares and part squares. It would help to consider whether the part squares are more or less than half of one whole square.",
         "B": "If we count the total squares in the shape, we have 11 whole squares, and then 4 part squares. Each of the part squares are more than half of one square, and 4 half squares = 2 wholes. 11+2=13, so the area must be larger than 13.",
@@ -145,7 +145,7 @@
     {
       "questionId": 124904,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e8d77cf2-c557-43de-8ddf-48586c1aff53.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "To answer this question, you could count the squares inside the shape: whole squares and part squares. It would help to consider whether the part squares are more or less than half of one whole square.",
         "B": "If we count the total squares in the shape, we have 8 whole squares, and then 4 part squares. Each of the part squares are more than half of one square, and 4 half squares = 2 wholes. 8+2=10, so the area must be larger than 10.",

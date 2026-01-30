@@ -43,7 +43,7 @@
     {
       "questionId": 129211,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8ab2cfc6-3be9-4d3f-ae60-bead09711566.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have multiplied the numerator and denominator by 5. 5/20 is the same as 1/4 which can't be the same as 5 quarters.",
         "B": "I think you have just multiplied the denominator by 5. Remember we have 5 quarters here.",
@@ -55,7 +55,7 @@
     {
       "questionId": 129072,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ff009d03-ce04-49f9-9154-bd29b345c345.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have added the numerators here. We have 3 lots of 5 halves. How many halves would we have?",
         "B": "This is 5 and a half, but we have 3 lots of 5 halves. How many halves is that?",
@@ -115,7 +115,7 @@
     {
       "questionId": 129214,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dcf01ea0-9a95-4c5d-a953-02ff514de0f0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you made a mistake when multiplying the half by 3, I think you multiplied the numerator and denominator. 3 halves is not 3/6.",
         "B": "I think you remembered to multiply the 1 by 3, but I think you forgot to multiply the half by 3.",
@@ -139,7 +139,7 @@
     {
       "questionId": 129215,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9125fbb5-bf76-42dd-8c23-7556f6502cde.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you added 1. We needed to multiply by 1. What is 1 lot of 1 and 2 sevenths?",
         "B": "I think you added 1 seventh. We needed to multiply by 1. What is 1 lot of 1 and 2 sevenths.",

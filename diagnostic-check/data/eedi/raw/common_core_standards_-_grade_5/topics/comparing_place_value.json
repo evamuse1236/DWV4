@@ -19,7 +19,7 @@
     {
       "questionId": 158325,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/863b3f38-afc3-458d-81ab-eb480a4ef8f9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This statement is true. It means 90 x 10 = 900. Remember that when we multiply an integer by 10, we put a zero on the end of the integer.",
         "B": "This statement is true. It means 7 x 10 = 70. Remember that when we multiply an integer by 10, we put a zero on the end of the integer.",
@@ -31,7 +31,7 @@
     {
       "questionId": 158519,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1f2d65d9-d668-41c6-8a4c-ed0616474c3b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This statement is true. It means 8 x 10 = 80. Remember that when we multiply an integer by 10, we put a zero on the end of the integer.",
         "B": "This statement is false. 10 x 60 = 600, not 6,000.",
@@ -55,7 +55,7 @@
     {
       "questionId": 158520,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7f4def99-111d-412a-a970-5eae53dda5c9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've divided by 100. But instead you need to find the missing number here: ? ÷ 10 = 450. Or, rearranging this: 450 x 10 = ?",
         "B": "I think you've divided by 10. But we're not finding 1/10 of 450. Instead, you need to find the missing number here: ? ÷ 10 = 450. Or, rearranging this: 450 x 10 = ?",
@@ -67,7 +67,7 @@
     {
       "questionId": 158327,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c715e5b7-8995-4c09-bf83-16928266902c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You've chosen 9682, where the value of the 8 is 80. But you need to find the number where the value of the 8 is 800 (1/10 of 8000).",
         "B": "The value of 8 in 8,632.4 is 8000. 1/10 of 8000 = 800. The number where 8 has the value 800 is 7,836.",
@@ -91,7 +91,7 @@
     {
       "questionId": 158328,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ed534c63-475d-46c2-a68d-13f11b043d5e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "So that 42.1 becomes 1/10 of its size, we need to divide it by 10. Remember that dividing by 10 will make the number smaller.",
         "B": "42.1 ÷ 10 = 4.21. The decimal point has moved one place to the left.",
@@ -103,7 +103,7 @@
     {
       "questionId": 158522,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4a2ba138-ab27-4e68-8c31-a203cd6f0bbf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "So that 685.1 becomes 1/10 of its size, we need to divide it by 10. Your answer would mean that we'd divided by 100 instead of 10.",
         "B": "So that 685.1 becomes 1/10 of its size, we need to divide it by 10. Remember that dividing by 10 will make the number smaller.",
@@ -115,7 +115,7 @@
     {
       "questionId": 158329,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f873cba4-cec0-44bb-a48f-19a8112519e1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "0.016 is ten times smaller than 0.16, we want to calculate the number that is ten times bigger than 0.16.",
         "B": "I think you've added 10. But instead you need to multiply by 10, to make 0.16 ten times bigger.",
@@ -127,7 +127,7 @@
     {
       "questionId": 158523,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c506dae8-14c4-44a1-b342-58d0d0dc88fa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've added 10. But instead you need to multiply by 10, to make 0.24 ten times bigger...",
         "B": "To find the number ten times bigger than 0.24, we multiply by 10. 0.24 x 10 = 2.4",

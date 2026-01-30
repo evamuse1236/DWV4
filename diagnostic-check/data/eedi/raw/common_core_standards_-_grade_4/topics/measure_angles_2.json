@@ -43,7 +43,7 @@
     {
       "questionId": 131386,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2d7f7ace-8e28-479d-8493-c5cde2ec0527.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have accidentally read the inside scale from the left-hand side rather than the right-hand side, where the angle starts.",
         "B": "First identify where 0 is on the protractor, where the angle starts. In this case, it is on the inside scale so we now follow this scale round until we get to the other red line which makes up the angle. This line is 5 marks after 70 so the angle is 75°.",
@@ -55,7 +55,7 @@
     {
       "questionId": 133619,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/41af124b-1df2-4639-a3c5-839353a89c6e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have accidentally read the value off the outside scale however, the angle started at 0 on the inside scale so we need to read from there.",
         "B": "You have accidentally used the wrong scale. First identify 0 on the protractor where the angle starts. Notice which scale this is on - the outside or the inside. Then follow this scale round until you get to the other red line which makes up the angle. Read off here to identify the size of the angle.",
@@ -67,7 +67,7 @@
     {
       "questionId": 131387,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c72ef46f-55eb-4775-a6d5-c6306949c5e0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is an angle of 135°. I think you have accidentally read the outside scale on the protractor however the 0 where the angle starts is on the inside scale.",
         "B": "This is an angle of 125°. I think you have accidentally read the outside scale from the left. To measure an angle correctly, look at where the angle cuts 0 on the protractor. Is the 0 on the inside or outside scale? Follow this scale round until you get to the other red line that makes up the angle. Then read off the size of the angle.",
@@ -79,7 +79,7 @@
     {
       "questionId": 133620,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1929fad3-3a40-446e-8f50-20381f74b538.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite , look carefully at the protractor. This is an angle of 65 degrees NOT 75 degrees.",
         "B": "This is an angle of 75°. Start counting the size of the angle from where the red line crosses zero on the protractor. Move round following this scale until you get to the other red line which makes up the angle. Read off here to identify the size of the angle.",
@@ -127,7 +127,7 @@
     {
       "questionId": 133622,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/13c505f7-8f58-4577-9f2b-eb3fcce5ebc8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is an angle of 45°. I think you have accidentally read the outside scale on the protractor however the 0 where the angle starts is on the inside scale.",
         "B": "This is an angle of 35°. I think you have accidentally read the outside scale from the left. To measure an angle correctly, look at where the angle cuts 0 on the protractor. Is the 0 on the inside or outside scale? Follow this scale round until you get to the other red line that makes up the angle. Then read off the size of the angle from the same scale.",
@@ -139,7 +139,7 @@
     {
       "questionId": 131390,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/12923c71-b832-4ade-94d4-2007a11f170b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "There are 360° in a full turn. Reading the uncoloured part of the full turn gives a 135° angle. If we take this off 360° we get 225° not 305°. I think you have accidentally read the outside scale but we need to read from the inside scale as this is where the angle crosses zero.",
         "B": "There are 360° in a full turn. Reading the uncoloured part of the full turn gives a 125° angle. If we take this off 360° we get 235° not 305°. I think you have accidentally read the outside scale from the left to get the uncoloured part but we need to read the inside scale from the right as this is where the angle crosses zero.",
@@ -151,7 +151,7 @@
     {
       "questionId": 133623,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f04e34f8-0687-4628-bb2e-8a4b72d1dd76.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "There are 360° in a full turn. Reading the uncoloured part of the full turn gives a 155° angle. If we take this off 360° we get 205° not 325°. I think you have accidentally read the outside scale but we need to read from the inside scale as this is where the angle crosses zero.",
         "B": "There are 360° in a full turn. Reading the uncoloured part of the full turn gives a 25° angle. If we take this off 360° we get 335° not 325°. I think you have accidentally read the inside scale from the left but we need to read it from where the angle crosses zero.",

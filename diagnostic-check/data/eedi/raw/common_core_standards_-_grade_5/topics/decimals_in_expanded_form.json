@@ -31,7 +31,7 @@
     {
       "questionId": 158549,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/70999fed-a2cf-4d6c-98cc-a851c598c5c8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, 0.93 is 9 tenths and 3 hundredths. But the question is the other way around: add together 3 tenths and 9 hundredths.",
         "B": "3 x 0.1 means that we have 3 tenths, 0.3. We're adding this to 9x0.01 which is 9 hundredths, 0.09. Altogether, we have 3 tenths and 9 hundredths = 0.39",
@@ -43,7 +43,7 @@
     {
       "questionId": 158353,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/da3c9fef-6140-4933-8a21-54019efcfd58.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, 3 x 1/100 = 0.03. Remember that the tenths place value column is immediately after the decimal point.",
         "B": "3 is 3 wholes, 0.3 is 3 tenths, they are therefore never equal. Which answer is equal to 3 tenths?",
@@ -67,7 +67,7 @@
     {
       "questionId": 158354,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/01bae020-03ae-4368-b75a-c7fd576c3366.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. This would be 0.25. But, 0.52 is 5 tenths and 2 hundredths. Remember that the tenths place value column is immediately after the decimal point.",
         "B": "0.52 is 5 tenths and 2 hundredths = 5/10 + 2/100 = (5x1/10) + (2x1/100).",
@@ -79,7 +79,7 @@
     {
       "questionId": 158551,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/654e27fe-35ac-4018-b1a5-322a43b02b2c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. This would be 0.067. But, 0.67 is 6 tenths and 7 hundredths...",
         "B": "This would be 67. But, 0.67 is 6 tenths and 7 hundredths...",
@@ -91,7 +91,7 @@
     {
       "questionId": 158355,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/180b9e52-0ff7-43d6-9a14-b4d9893a8e86.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The expression shown is equal to 3 + 2/10 + 7/1000 = 3 wholes, 2 tenths and 7 thousandths. When writing decimals, remember that the tenths place value column is immediately after the decimal point, followed by hundredths and thousandths.",
         "B": "The expression shown is equal to 3 + 2/10 + 7/1000 = 3 wholes, 2 tenths and 7 thousandths. When writing decimals, remember that the whole numbers are in front of the decimal point. And the tenths place value column is immediately after the decimal point, followed by hundredths then thousandths.",
@@ -103,7 +103,7 @@
     {
       "questionId": 158552,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d8828d55-591a-44d4-93d1-1f87b2ddc60b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The expression shown is equal to 5 + 3/10 + 8/1000 = 5 wholes, 3 tenths and 8 thousandths. When writing decimals, remember that the whole numbers are in front of the decimal point. And the tenths place value column is immediately after the decimal point, followed by hundredths then thousandths.",
         "B": "The expression shown is equal to 5 + 3/10 + 8/1000 = 5 wholes, 3 tenths and 8 thousandths. When writing decimals, remember that the tenths place value column is immediately after the decimal point, followed by hundredths and thousandths.",
@@ -115,7 +115,7 @@
     {
       "questionId": 158356,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3c08e069-a592-40d1-9272-0ed7e38f3778.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Remember that the tenths place value column is immediately after the decimal point. Therefore, this answer would only be correct for 27.5. For 27.05, 5 is in the hundredths column.",
         "B": "Not quite. This answer would only be correct for 27.005 (5 in the thousandths column). For 27.05, 5 is in the hundredths column.",

@@ -37,7 +37,7 @@
     {
       "questionId": 78318,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c24f7d6b-b9d0-424e-9bd7-983cae350267.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Nearly! I think you have calculated the length scale factor, of 2.5, then divided the given volume by this. Remember we need to use the volume scale factor to do these calculations.",
         "B": "First we need to work out the length scale factor, which is 15 ÷ 6 = 2.5. Now, we need the volume scale factor, which is 2.5³. So, to find the volume it is 1800 ÷ 2.5³ = 115.2ml.",
@@ -73,7 +73,7 @@
     {
       "questionId": 108012,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/402fb473-badf-4bd6-8010-8471884acf8d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Think about what we need to multiply 6cm by to get 15cm. It might be useful to do 15 divided by 6.",
         "B": "If we times the base length on shape P, 6cm, by 2.5, we get the base length on shape Q, 15cm. Therefore, the length scale factor is 2.5.",
@@ -85,7 +85,7 @@
     {
       "questionId": 107995,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e31d07a3-42f2-4b17-a766-d5229b7e3723.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have found the length scale factor from P to Q. In this question, we are going to Q to P.",
         "B": "I think you might think that a negative scale factor makes a shape smaller. In order to make a shape smaller, we need to multiply by a number between 0 and 1.",
@@ -97,7 +97,7 @@
     {
       "questionId": 108013,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c75ca31f-7853-4187-88a8-3ac2b3f0b7d4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you might think that a negative scale factor makes a shape smaller. In order to make a shape smaller, we need to multiply by a number between 0 and 1.",
         "B": "I think you have got the length scale factor from P to Q. In this question, we are going to Q to P.",
@@ -109,7 +109,7 @@
     {
       "questionId": 107996,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4e0c5b2c-87b4-4cab-bc64-1ecd610a9a6b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have calculated the length scale factor, this question is asking for the area scale factor. To help you, you could imagine a height of 1cm on P, which would help you find the area of the front face. Then you can find what the height of Q would be and the area of that front face, to compare against P.",
         "B": "I think you have doubled the length scale factor. Think about how to calculate the area scale factor, if we know the length scale factor. To help you, you could imagine a height of 1cm on P, which would help you find the area of the front face. Then you can find what the height of Q would be and the area of that front face, to compare against P.",
@@ -133,7 +133,7 @@
     {
       "questionId": 107997,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b602d609-190f-400f-8bc4-438e91e6b22e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have calculated the length scale factor, this question is asking for the volume scale factor.",
         "B": "I think you have doubled the length scale factor. Think about how to calculate the volume scale factor, if we know the length scale factor.",
@@ -145,7 +145,7 @@
     {
       "questionId": 108015,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a70cc9a2-dd91-490f-9df0-396f39af42c7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have calculated the area scale factor, this question is asking for the volume scale factor.",
         "B": "To get the length scale factor, we divide 15 by 6. This simplifies down to 5/2. When we know this, we can find the volume scale factor, by cubing the LSF. 5/2 cubed is 125/8.",

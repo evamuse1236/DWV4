@@ -31,7 +31,7 @@
     {
       "questionId": 155933,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8fd90402-2992-4d45-9fd5-454fef482bc7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, perhaps you have chosen this because 62 is bigger than 8. Place a 0 after the 0.8 - now both numbers have the same amount of digits after the decimal point. Which has the greatest amount of hundredths?",
         "B": "Not quite, this symbol means that the two numbers are equal to each other. Try using an inequality symbol.",
@@ -55,7 +55,7 @@
     {
       "questionId": 156710,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/480f80c3-eb07-41b4-b37e-3a679b9cc556.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks as if you've picked the first number from the list. We're looking for the smallest number from the list.",
         "B": "It looks as if you may have picked the greatest value and not the smallest.",
@@ -67,7 +67,7 @@
     {
       "questionId": 156728,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f9d7715d-e018-485e-9906-9e007946a257.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks as if you've picked the first number from the list. We're looking for the smallest number from the list.",
         "B": "It looks as if you may have picked the greatest value and not the smallest.",
@@ -79,7 +79,7 @@
     {
       "questionId": 158002,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5e85fce5-c028-4220-aa7b-dfea514213dc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The diagram is split into 100 equal parts so each part is worth 0.01 not 0.1...",
         "B": "This would represent 0.8 but we are looking for a diagram that shows a decimal GREATER THAN 0.8",
@@ -91,7 +91,7 @@
     {
       "questionId": 158169,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bb78c7fb-b41a-4b14-94ef-6b483f090fae.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This would represent 0.7 but we are looking for a diagram that shows a decimal GREATER THAN 0.7",
         "B": "The diagram is split into 100 equal pieces and 80 of these pieces are shaded, that gives the fraction 80/100 which when simplified is 0.8 - a decimal greater than 0.7!",

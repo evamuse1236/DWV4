@@ -19,7 +19,7 @@
     {
       "questionId": 156528,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f8ca7df7-1243-4332-9f17-54acd558214b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you have counted the half squares as 1 cm². For these questions it is useful to group pairs of half squares together to make 1 whole square.",
         "B": "It looks like you have not counted the half squares. For these questions it is useful to group pairs of half squares together to make 1 whole square.",
@@ -31,7 +31,7 @@
     {
       "questionId": 156546,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/83cef3fa-c822-4a7a-a767-efef875746f3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Looks like you have tried to find the perimeter. The question asks for the area.",
         "B": "There are 6 whole squares which have an area of 6 cm² and four half squares which together have an area of 2cm². Altogether the area is 8 cm².",
@@ -43,7 +43,7 @@
     {
       "questionId": 156529,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/618eb4fb-8d9d-4159-8b72-46a83d3e85dd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Looks like you have tried to find the perimeter. The question asks for the area.",
         "B": "There are 17 whole squares which have an area of 17 cm², and two half squares which together have an area of 1 cm², so the area of the shape is 18 cm².",
@@ -67,7 +67,7 @@
     {
       "questionId": 156530,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8f4a060a-ce6f-42ea-b675-08d2e0c16e0b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you have considered this as a 2 by 2 square. For this question you need to count how many squares there are, given that they each have an area of 1 cm². You must also consider that two half squares together have an area of 1 cm².",
         "B": "There are 4 whole squares which have an area of 4 cm² and 8 half squares which together have an area of 4 cm². Altogether the area is 8 cm².",
@@ -79,7 +79,7 @@
     {
       "questionId": 156548,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/55d59dd2-a83c-465a-a82c-4844ddc5500e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you have counted the half squares as 1 cm². For these questions, it is useful to group two half squares together to make 1 whole square.",
         "B": "I think you may have miscounted. To consider the area you must count how many squares there are, given that they each have an area of 1 cm². You must also consider that two half squares together have an area of 1 cm².",
@@ -103,7 +103,7 @@
     {
       "questionId": 159068,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6b7b2e5d-51ca-40db-8671-7dcd3a2005ed.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have counted the half squares as whole squares...",
         "B": "You need to include the four half unit squares in the final area of the shape...",
@@ -115,7 +115,7 @@
     {
       "questionId": 158870,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d6aefd1d-86e0-4914-a930-8fb1f2f8d207.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have tried to calculate the perimeter of the shape. To find the area, count the number of whole unit squares and half unit squares...",
         "B": "You need to include the six half unit squares in the final area of the shape...",
@@ -127,7 +127,7 @@
     {
       "questionId": 159069,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1fb5eea9-55bc-471f-8b95-5f33db3cf5d4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You need to include the eight half unit squares in the final area of the shape...",
         "B": "The shape is made from 8 whole squares and 8 half squares, and each square has an area of 1 square inch. Therefore the area of the shape is 8 + (8 x 1/2) = 8 + 4 = 12in²",

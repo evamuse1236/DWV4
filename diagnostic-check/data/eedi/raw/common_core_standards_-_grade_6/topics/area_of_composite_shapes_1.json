@@ -31,7 +31,7 @@
     {
       "questionId": 98479,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4b8665f2-daa1-414b-aebe-7c8e6dad778e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you might have assumed that the two horizontal sections are equal. Can you use subtraction to find the length?",
         "B": "To find p we can look at the horizontal measurements. The 4 cm side and p together are the same length as the 7 cm side. So p + 4 = 7 which means p = 3.",
@@ -67,7 +67,7 @@
     {
       "questionId": 98492,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4fa34b24-2310-4bc0-a2eb-96301e314311.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, I think you might have missed a length in your calculation.",
         "B": "Not quite, I think you might have missed a length in your calculation.",
@@ -79,7 +79,7 @@
     {
       "questionId": 98481,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/873fd497-492c-4405-8919-fcd5ff7b47d7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you might have just multiplied together all of the marked lengths. Split the shape into two rectangles and work out each area separately.",
         "B": "Not quite, it looks like you have worked out a missing length incorrectly. Can you use subtraction to find these lengths?",
@@ -103,7 +103,7 @@
     {
       "questionId": 109438,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6038ace8-e070-4747-bb91-93893a655fc4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, it looks like you have only added the marked lengths. Work out the missing lengths first.",
         "B": "The perimeter is the distance around the shape. Some lengths are missing. The missing horizontal length is 11 - 5 = 6 cm. The missing vertical length is 12 - 4 = 8 cm. Adding all the lengths together gives 5 + 12 + 11 + 4 + 6 + 8 = 46 cm.",
@@ -115,7 +115,7 @@
     {
       "questionId": 109450,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/479d412a-2979-47eb-a152-967ab01b2a3c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, it looks like you have worked out the missing lengths incorrectly. Can you use subtraction to find these lengths?",
         "B": "Not quite, it looks like you have worked out the missing lengths incorrectly. Can you use subtraction to find these lengths?",
@@ -139,7 +139,7 @@
     {
       "questionId": 109451,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0f5b042f-9a42-490d-847a-a0b0c5cca778.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you might have added instead of multiplying to find the area.",
         "B": "It looks like you multiplied the wrong two numbers together. Remember the area of a rectangle = width x height.",

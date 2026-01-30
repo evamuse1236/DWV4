@@ -37,7 +37,7 @@
     {
       "questionId": 104007,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7f925ef8-3d77-4bea-81d3-d6eff3131899.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, your choice of base is wrong. You may find it easier to convert to ordinary numbers, add them together and then convert your answer back to standard form.",
         "B": "Almost, just be careful with your power, we only add the powers when we multiply with the same base, not when we're adding terms.",
@@ -49,7 +49,7 @@
     {
       "questionId": 103999,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2179d06e-fa69-4246-9d24-bc27770050d2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, just be careful with your power, we only add the powers when we multiply with the same base, not when we add.",
         "B": "Not quite! Unless the terms have the same power, we need to convert them to ordinary numbers, add them, and then convert the answer back into standard form.",
@@ -61,7 +61,7 @@
     {
       "questionId": 104008,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b998eaf8-79da-40e2-8fed-54296fd29887.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, just be careful with your power, we only add the powers when we multiply with the same base, not when we add.",
         "B": "Not quite! Unless the terms have the same power, we need to convert them to ordinary numbers, add them, and then convert the answer back into standard form.",
@@ -73,7 +73,7 @@
     {
       "questionId": 104000,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ad0ebfa5-a7f0-4ae7-bd43-b05d9600a7c1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! Unless the terms have the same power, we need to convert them to ordinary numbers, add them, and then convert the answer back into standard form.",
         "B": "The power that 10 is raised to is different for each bracket, namely 4 and 3. This means that the 4 of 4.7 and the 3 of 3.2 have different place values. We can write these values as ordinary numbers to make the calculation clearer: 47,000 + 3,200 = 50,200 = 5.02 × 10^4.",
@@ -85,7 +85,7 @@
     {
       "questionId": 104009,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e8f8bb2b-be86-4b85-9d51-868892b35eda.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! Unless the terms have the same power, we need to convert them to ordinary numbers, add them, and then convert the answer back into standard form.",
         "B": "The power that 10 is raised to is different for each bracket, namely 5 and 6. This means that the 5 of 5.1 and the 2 of 2.6 have different place values. We can write these values as ordinary numbers to make this clearer: 510,000 + 2,600,000 = 3,110,000 = 3.11 × 10^6.",
@@ -97,7 +97,7 @@
     {
       "questionId": 104001,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f63895f5-937a-4183-b86b-40a739fe08f7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Be careful with the borrowing when you are subtracting.",
         "B": "This would be true if both were x 10⁴, but the second number is only x 10³. Think about the place value columns that each of the numbers will be in.",
@@ -109,7 +109,7 @@
     {
       "questionId": 104010,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e68789d4-e779-447f-aeaf-0ae584c831a0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Be careful with the borrowing when you are subtracting.",
         "B": "This would be true if both were x 10⁶, but the second number is only x 10⁵. Think about the place value columns each of the numbers will be in.",
@@ -133,7 +133,7 @@
     {
       "questionId": 104011,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/265220af-9815-4223-9941-7b96a1887e76.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have added the numbers and chosen the highest power of 10. Think about the place value of each of the digits, and use this to line up the numbers before you do the addition",
         "B": "I think you have added the numbers and added the powers. Think about the place value of each of the digits, and use this to line up the numbers before you do the addition",

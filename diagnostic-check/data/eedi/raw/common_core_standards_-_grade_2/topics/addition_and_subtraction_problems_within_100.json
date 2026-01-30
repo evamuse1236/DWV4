@@ -43,7 +43,7 @@
     {
       "questionId": 173913,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4f2ad456-6c54-43e7-9baf-6e1aa48b1a29.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It seems you've added the last two numbers (32 and 40). Don't forget about the 25 words Lucas wrote at the very start.",
         "B": "To find the total number of words written 'altogether', you need to add up all the amounts he wrote. This is 25 + 32 + 40 = 97.",
@@ -55,7 +55,7 @@
     {
       "questionId": 173973,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f33a077f-ae1a-41b6-a5f2-bf2c8cef40ed.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you've only used the last number in the question. The word 'altogether' is a clue that you need to combine all the amounts.",
         "B": "You've made a good start by adding the first two amounts (11 + 20 = 31). But don't forget she read some more pages in bed!",
@@ -79,7 +79,7 @@
     {
       "questionId": 173974,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3d1fc7a1-3aba-4294-a4d1-1fda7fd80f01.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The phrase 'more than' means you need to add. It looks like you might have subtracted to find how many pens Lee has. Reread the question carefully.",
         "B": "First, find out how many pens Lee has. That's 18 + 4 = 22 pens. Then, to find the total, add Kai's pens and Lee's pens together: 18 + 22 = 40.",
@@ -91,7 +91,7 @@
     {
       "questionId": 173915,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/317845ad-096b-4ed2-89fe-fb610a29f655.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You've correctly subtracted the cost of the game from the starting amount ($45 - $30 = $15). Don't forget that Kemi also spent money on snacks.",
         "B": "First, find the total amount Kemi spent: $30 + $8 = $38. Then, subtract this total from the money she started with: $45 - $38 = $7.",
@@ -115,7 +115,7 @@
     {
       "questionId": 173916,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/175b07cb-e850-4530-85d5-1a501811d517.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "First, find out how much money Josh had before his birthday. He started with $10 and earned $60, so he had $10 + $60 = $70. To reach $100, he needed $100 - $70 = $30.",
         "B": "It looks like you've added all the numbers in the question together. Remember, $100 is the total amount he has at the end.",
@@ -127,7 +127,7 @@
     {
       "questionId": 173976,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b4d1a24b-31a9-43f5-864c-0243551d63ea.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have correctly worked out the difference between the final amount and the money she earned. Don't forget that she already had $5 at the very start.",
         "B": "You have correctly calculated how much money Sia had before her birthday ($5 + $30 = $35). The question asks how much money she got for her birthday to reach the total of $50.",
@@ -151,7 +151,7 @@
     {
       "questionId": 173977,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fbf3a2ae-119e-43bb-b857-bcf096d991ad.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You've worked out how many sweets were eaten in total (30 - 10 = 20). But remember that Mark ate some of these. The question asks how many Amy ate.",
         "B": "The number 10 is how many sweets were left at the end. The question asks how many sweets Amy ate. You'll need to do a calculation to find this.",

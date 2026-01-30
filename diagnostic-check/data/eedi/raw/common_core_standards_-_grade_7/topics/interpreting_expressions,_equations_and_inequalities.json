@@ -37,7 +37,7 @@
     {
       "questionId": 75914,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b5196871-8f89-4467-ad05-61f5f729f2b3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost. Try reading this inequality forwards? 7 is greater/smaller than than R.",
         "B": "Almost. Try reading this inequality backwards? Write R > 7 in words.",
@@ -49,7 +49,7 @@
     {
       "questionId": 76062,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e9ba5a38-b9af-42cb-92a4-d992376a439d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. If we read this inequality backwards it would be T < 3.",
         "B": "We can read this inequality forwards (3 > T) or backwards (T < 3). This means T is smaller than 3.",
@@ -85,7 +85,7 @@
     {
       "questionId": 130137,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ec5daf11-7b98-4091-8123-05e75dc21e01.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have understood that 2b means that we multiply by 2, but you have made a mistake with your order of operations. Which do we need to work out first, multiplication or subtraction?",
         "B": "We do need to subtract a, but is is not from \"2 and b\". The 2 is right next to the b which means they are being multiplied together",
@@ -97,7 +97,7 @@
     {
       "questionId": 130157,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/46712c26-9ef8-4a1f-ae5b-73e6c6ce93df.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have understood that 4a means that we multiply by 4, but you have made a mistake with your order of operations. Which do we need to work out first, multiplication or subtraction?",
         "B": "We do need to subtract b, but is is not from \"4 and a\". The 4 is right next to the a which means they are being multiplied together",
@@ -109,7 +109,7 @@
     {
       "questionId": 131455,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/84af1c11-a3a2-43de-8ddc-d9a7043ad558.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. The number of people visiting is a variable, so would be represented by a letter.",
         "B": "The 12 is not affected by the number of rides, so it must be the fixed entry fee.",
@@ -121,7 +121,7 @@
     {
       "questionId": 133688,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/caf87c25-b268-499d-bb7b-2cd55d625208.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. The number of people visiting is a variable, so would be represented by a letter.",
         "B": "The fixed entry fee doesn't depend on the number of rides, so we wouldn't multiply this by p.",
@@ -133,7 +133,7 @@
     {
       "questionId": 131847,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6c23304-6ef5-4545-91c7-e7bbd4d705f9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The fixed entry fee will be the same in all scenarios and does not get multiplied by anything. What else could the '2' represent?",
         "B": "The number of hours will vary depending on the visitor so that will be represented by a letter. If 't' represents the number of hours then what would the '2' represent?",

@@ -67,7 +67,7 @@
     {
       "questionId": 166802,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2048c705-7b57-4a54-b4b4-f0161b0a96c1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "A square cross-section could be created by slicing parallel to the base. However, we are looking at a slice that passes through the apex (the top point of the pyramid) and is perpendicular (at right-angles) to the base. How many vertices will this cross-section have?",
         "B": "Make sure that you are thinking about a slice that passes through the apex (the top point of the pyramid) and is perpendicular (at right-angles) to the base. How many vertices will this cross-section have?",
@@ -91,7 +91,7 @@
     {
       "questionId": 166803,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4b30b22e-39d1-4c64-a6ea-bd47a1dc0119.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "When we slice parallel to the base, we slice through 4 edges and 4 faces, how many vertices (corners) will this create in our cross-section?",
         "B": "When we slice parallel to the base, we get a cross-section the same shape as the base: a square.",

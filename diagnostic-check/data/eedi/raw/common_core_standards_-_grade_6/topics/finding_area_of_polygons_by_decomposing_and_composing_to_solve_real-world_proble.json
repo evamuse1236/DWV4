@@ -37,7 +37,7 @@
     {
       "questionId": 166972,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f0779b3c-fb44-4761-be50-5c771b6a38d9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have started to find the perimeter of the turf rather than the area. Remember: Area of a rectangle = base × height. Area of a triangle = ½ × base × height",
         "B": "I think you have used 13m as the height of the triangle, but that is the height of the whole shape. Have another look at the diagram, what is the height of just the triangle?",
@@ -49,7 +49,7 @@
     {
       "questionId": 166723,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9624a387-5401-45fa-904d-3c795505f680.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have forgotten that the formula for the area of a triangle is ½ × base × height.",
         "B": "It looks like you have used 7 as the height for the top triangle, but that is the height of the whole shape. Think about how you can work out the height of just the triangle.",
@@ -73,7 +73,7 @@
     {
       "questionId": 166724,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/44434d65-c424-4ac9-bc9e-c2a199a2775c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have correctly worked out the total area of the wall including the window, but the window won't be painted. What do we need to do with the area of the window?",
         "B": "I think you have added the total area of the wall and window to the area of the window. Remember, the window will not be painted so we don't want to add it to the total area, what should we do with it instead?",
@@ -85,7 +85,7 @@
     {
       "questionId": 166974,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7c63b73c-4a26-4fef-b391-c85c1622ed25.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have subtracted the entryway lengths from the floor lengths and then multiplied to find the area. However this is not the correct order, you need to find the area of the whole floor and the area of the entryway first and then subtract the areas.",
         "B": "The area of floor to be carpeted, is the area of the whole floor, subtract the area of the tiled entryway. This gives us: 9 × 15 – 3 × 4 = 123𝑓𝑡².",
@@ -97,7 +97,7 @@
     {
       "questionId": 166725,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a39dcaa0-0b9c-4e67-9078-cfcdd89348e7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have worked out the area as if it was one large rectangle with base 10 and height 12, but there is part of that rectangle missing in the top right of the shape. Try splitting the shape into two smaller rectangles and work out each area separately.",
         "B": "One way to do this is to split the shape vertically into two rectangles. This gives us one rectangle of 3𝑓𝑡 by 4𝑓𝑡 and one rectangle of 12𝑓𝑡 by 7𝑓𝑡. The 7 has come from the width 10 – 3. So the total area is: 3 × 4 + 12 × 7 = 96𝑓𝑡²",
@@ -109,7 +109,7 @@
     {
       "questionId": 166975,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dfe447f0-2548-47d4-be3f-f629aa812270.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have split the rectangle vertically into two rectangles and done 3 × 10 + 4 × 8. The rectangle on the left would be 3 × 10 but the rectangle on the right would not have a height of 4 or a width of 8. You need to use the given heights of 10 and 4 to work out the height of the rectangle, and the given widths of 8 and 3 to find the width of the rectangle.",
         "B": "I think you have done 3 × 10 + 8 × 6, but that means you are counting the area in the top left of the shape twice. If you split the shape vertically to give the 3 × 10 rectangle, what would the height of the top right rectangle be?",
@@ -121,7 +121,7 @@
     {
       "questionId": 166726,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4e5fbdfa-44ee-497b-a98a-b0951c5718b2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost! You have worked out the total area of the barn to be covered in paint but the question asks 'How many pots of paint will the farmer need?'.",
         "B": "I think you have forgotten that the formula for the area of a triangle is ½ × base × height.",

@@ -25,7 +25,7 @@
     {
       "questionId": 166235,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/107100f1-6581-4352-a283-c99af2f012b4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you might have gotten division and multiplication mixed up here. Parentheses show multiplication - how could we show division instead?",
         "B": "Not quite - this expression shows all of Todd's cards being divided between 4 but he removes 15 of them first. How could we show that removing 15 came before dividing by 4?",
@@ -37,7 +37,7 @@
     {
       "questionId": 166462,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/48dec798-ac2d-4f81-a318-82b4f8035428.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you may have subtracted 3 here rather than dividing by 3. If we are sharing something into equal parts, we are always dividing it by how many parts we are sharing it into!",
         "B": "Not quite - this expression shows all of Todd's cards being divided between 3 but he removes 12 of them first. How could we show that removing 12 comes before dividing by 3?",
@@ -73,7 +73,7 @@
     {
       "questionId": 166237,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1199d263-9941-4204-a0e4-57ee61d4b550.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have answered the question as if they purchased 44 adult tickets, but there are only 2 tickets at adult price. If adult price is 'n' and student price is half of that, how could we show 42 student tickets?",
         "B": "You have answered the question as if they purchased 44 student tickets, but there are also 2 tickets at adult price. How could we show the 42 student tickets added together with the 2 adult tickets?",
@@ -85,7 +85,7 @@
     {
       "questionId": 166464,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/07e57a64-244f-43f5-a5e2-f2815af0923e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have answered the question as if they purchased 52 student tickets, but there are 2 tickets at adult price. How could we show the 50 student tickets added together with the 2 adult tickets?",
         "B": "If a ticket costs 'n' and a student ticket is a quarter of that, that would be '1/4n'. There were 2 full price tickets, so 2n, and 50 student tickets, so 50(1/4n). To find the total cost, we would need to add those together, giving us 2n + 50(1/4n).",
@@ -97,7 +97,7 @@
     {
       "questionId": 166238,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aa32794d-4168-4c1d-9c08-6ab303f8ee52.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, I think you've added 2 but it says she can make 2 LESS! How could we find 2 less than a number?",
         "B": "15 x 3 would be 45. Kayla can make 2 less than this, and 45 - 2 is 43.",
@@ -109,7 +109,7 @@
     {
       "questionId": 166465,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/393f027c-9ab7-404e-9355-c29399534b92.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite - you've answered the question by using inverse operations but we are working out how many Kayla can make which is the exact calculation that we are given in the question.",
         "B": "It seems like you might have subtracted 3 before multiplying, but the question says '3 less than 2 times', which means the multiplication comes before the subtraction.",
@@ -121,7 +121,7 @@
     {
       "questionId": 166584,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1b0d28b1-5d75-436b-bde3-f28fdddf3786.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite - it says 'plus $5 for each skater' which means we need to be adding 5 rather than subtracting!",
         "B": "The cost is $80 to begin with, so just $80, and then $5 per skater (x), which would be $5 times the number of skaters, or $5x for short. This cost needs to be added to the $80 needed to hire the rink.",
@@ -133,7 +133,7 @@
     {
       "questionId": 166461,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9608d66c-ba53-48bd-a356-6e4b475259f7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "In this expression, you have multiplied the number of skaters by $100 but it isn't $100 per skater, it's only $6 each.",
         "B": "Not quite - it says 'plus $6 for each skater' which means we need to be adding 6 rather than subtracting!",

@@ -43,7 +43,7 @@
     {
       "questionId": 106950,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9225c118-69da-4f83-8fcc-e4f6493a0f1e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It may be helpful to remember that the inequality sign will always ‘point to’ the smaller value. In negative numbers, a value is counted as smaller if it is 'more negative' than another. Try substituting in the value for 𝑑 into each inequality and then deciding which side is smaller, and therefore does this match what is being expressed.",
         "B": "It may be helpful to remember that the inequality sign will always ‘point to’ the smaller value. In negative numbers, a value is counted as smaller if it is 'more negative' than another. Try substituting in the value for 𝑑 into each inequality and then deciding which side is smaller, and therefore does this match what is being expressed.",
@@ -55,7 +55,7 @@
     {
       "questionId": 106957,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bb6c0e58-0831-4506-9470-59baa56c9820.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It may be helpful to remember that the inequality sign will always ‘point to’ the smaller value. In negative numbers, a value is counted as smaller if it is 'more negative' than another. Try substituting in the value for 𝑑 into each inequality and then deciding which side is smaller, and therefore does this match what is being expressed.",
         "B": "It may be helpful to remember that the inequality sign will always ‘point to’ the smaller value. In negative numbers, a value is counted as smaller if it is 'more negative' than another. Try substituting in the value for 𝑑 into each inequality and then deciding which side is smaller, and therefore does this match what is being expressed.",
@@ -67,7 +67,7 @@
     {
       "questionId": 106951,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d32fb9c8-256e-473f-ac6e-5939e191b54c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It may be helpful to remember that the inequality sign will always ‘point to’ the smaller value. Try substituting in the value for 𝑑 into each inequality and then decide whether the numbers match what is being expressed.",
         "B": "Substituting the value 𝑑 = 5 into Inequality 1 gives 2 × 5 > 11, which is incorrect because 10 is less than 11. Substituting the value 𝑑 = 5 into Inequality 2 gives 11 > 5 + 2, which is correct because 11 is greater than 7. So only Inequality 2 is correct here.",
@@ -103,7 +103,7 @@
     {
       "questionId": 106959,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ca0fd2d4-9d2b-4567-93ff-4fe79abe9699.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It may be helpful to remember that the inequality sign will always ‘point to’ the smaller value, and that there is a difference between inequalities that include the end number (i.e. less than or equal to / greater than or equal to) vs those that do not (i.e. the value must be less than or greater than, but cannot be equal to). Try substituting in the value for 𝑑 into each inequality (remembering your algebra rules) and then deciding whether the numbers match what is being expressed.",
         "B": "Let’s work out the middle part of Inequality 1 for the value 𝑑 = 2, as given: 1 − 3𝑑 = 1 − 3 × 2 = 1 − 6 = −5. Putting this into Inequality 1 gives −5 < −5 ≤ 0, which is incorrect because −5 is not less than −5. Repeating this process for Inequality 2, the middle part gives (1 − 𝑑)/3 = (1 − 2)/3 = −⅓, and so we now need to ask whether −1 < −⅓ ≤ 0 is true: it is because −⅓ lies between the values of 0 and −1. So only Inequality 2 is valid here.",
@@ -115,7 +115,7 @@
     {
       "questionId": 106953,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/31b1d3d1-fa3b-4c33-9df6-6669e0c6ff2d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have made a calculation error here. Check your substitution of 𝑑 = −5 into each inequality, taking care with your signs when squaring and subtracting negative numbers. Then decide whether the numbers match what is being expressed.",
         "B": "I think you have made a calculation error here. Check your substitution of 𝑑 = −5 into each inequality, taking care with your signs when squaring and subtracting negative numbers. Then decide whether the numbers match what is being expressed.",
@@ -139,7 +139,7 @@
     {
       "questionId": 106954,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dc4a2a6e-5211-4b49-bc9b-cfe68dc6c635.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "If the coordinates (−2, 5) belong in the inequalities given, then the values 𝑥 = −2 and 𝑦 = 5 will read correctly when substituted in. Do this for both the inequalities given in both sets, and then decide whether the numbers match what is being expressed.",
         "B": "If the coordinates (−2, 5) belong in the inequalities given, then the values 𝑥 = −2 and 𝑦 = 5 will read correctly when substituted in. Do this for both the inequalities given in both sets, and then decide whether the numbers match what is being expressed.",

@@ -37,7 +37,7 @@
     {
       "questionId": 78057,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/afb2c85b-3077-4942-8a6e-cb9e44e4a0fd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. This is the probability that the student is a boy who dislikes tea. How many girls dislike tea?",
         "B": "Not quite. This is the probability that the student is a boy. How many girls dislike tea?",
@@ -49,7 +49,7 @@
     {
       "questionId": 109849,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ae195a28-6706-4f82-b88f-4c7f766cc587.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. That information is not shown in the diagram. The diagram does show that the 120 is split between male and female students, so what could the 120 represent?",
         "B": "Not quite. The diagram shows there are 28 male students who can drive and 32 female students that can drive. Therefore there are 60 students who can drive, NOT 120. What could the 120 represent?",
@@ -73,7 +73,7 @@
     {
       "questionId": 109851,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/24a75e0a-b71e-405b-b177-0f9d65dea695.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. That is the probability that the student is a female who cannot drive. How many males cannot drive?",
         "B": "Not quite. That is the probability that the student is a male who can drive. How many males cannot drive?",
@@ -85,7 +85,7 @@
     {
       "questionId": 109862,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0da1dc26-4088-42b4-8d3e-2d50a670f77d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "So close! This is the probability that the student cannot drive given the fact you know he is male. We want the probability that the student picked is male who cannot drive, therefore we are looking at the total number of students not just the male ones. What would this probability be?",
         "B": "There are 150 students and 52 of them are males who cannot drive, and so we have 52/150 as the probability.",
@@ -109,7 +109,7 @@
     {
       "questionId": 109863,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3284626d-dfd6-4200-af5f-397b019d95ad.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. This is the probability that a student can drive given the fact the student is male. We want the probability that a student can drive given the fact the student is female. How many female students are there? How many of these females can drive?",
         "B": "There are 66 female students and 43 of them can drive, and so the probability is 43/66.",
@@ -121,7 +121,7 @@
     {
       "questionId": 109853,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e0870296-abbe-49f1-a01d-d7f05ba1e98e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. That is the probability that the student can drive given the fact that they are female. We want the probability that the student is female given the fact that they can drive. How many students can drive? How many of those students are female?",
         "B": "Not quite. That is the probability that the student picked is female and can drive. We want the probability that the student is female given the fact that they can drive. Therefore we are only looking at those students who can drive NOT the total number of students. How many students can drive? How many of those students are female?",
@@ -133,7 +133,7 @@
     {
       "questionId": 109864,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ef66c03a-e706-4915-95da-12314eecb579.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. 43/23 > 1 therefore this fraction cannot represent a probability. We are being asked to find the probability that the student is female given the fact that they can drive. How many students can drive? How many of those students are female?",
         "B": "There are 43 + 32 = 75 students who can drive and 43 of them are female, and so the probability is 43/75.",

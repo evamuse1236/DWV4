@@ -25,7 +25,7 @@
     {
       "questionId": 79758,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cd6b5ffe-e059-443b-a680-bf8683b1fafd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! I think maybe you have enlarged by a scale factor of 2. The question is asking you to enlarge by a scale factor of negative 2. The shape will move by the same amount as with a scale factor of 2, but in the opposite direction.",
         "B": "Not quite! I think maybe you have enlarged by a scale factor of -1. The question is asking you to enlarge by a scale factor of -2, which will double the distance from the centre of enlargement.",
@@ -37,7 +37,7 @@
     {
       "questionId": 79848,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9f8e65b4-fe77-4f61-9c80-322715054143.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! I think maybe you have enlarged by a scale factor of -1. The question is asking you to enlarge by a scale factor of -2, which will double the distance from the centre of enlargement.",
         "B": "Not quite! I think maybe you have enlarged by a scale factor of 2. The question is asking you to enlarge by a scale factor of negative 2. The shape will move by the same amount as with a scale factor of 2, but in the opposite direction.",
@@ -61,7 +61,7 @@
     {
       "questionId": 79849,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fa4a177e-9784-43f7-ab0a-5cdbb22af724.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! I think maybe you have enlarged by a scale factor of -1. The question is asking you to enlarge by a scale factor of -2, which will double the distance from the centre of enlargement.",
         "B": "Not quite! I think maybe you have enlarged by a scale factor of 2. The question is asking you to enlarge by a scale factor of negative 2. The shape will move by the same amount as with a scale factor of 2, but in the opposite direction.",
@@ -73,7 +73,7 @@
     {
       "questionId": 79760,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/88af281f-6e65-44eb-92d5-6a9051d48e94.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! The question asked you to use the centre of enlargement (3, 4). Two of the points have been correctly enlarged but one has not.",
         "B": "Not quite! When enlarging a shape by a negative scale factor the orientation will change.",
@@ -85,7 +85,7 @@
     {
       "questionId": 79850,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fda176f1-8596-4e73-bd49-f284395f81cf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! When enlarging by a negative integer scale factor, the sides of the shape will increase. In this case the sice BC will double to make DE.",
         "B": "Point A was originally 1 to the left and 1 down from the centre of enlargement, so when multiplied by -2, would be 2 to the right and 2 up from the centre of enlargement, which would be co-ordinate (4, 6). Here you have only gone up by 1. Point F is incorrect and therefore DF is not the correct length.",
@@ -97,7 +97,7 @@
     {
       "questionId": 79761,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8f301899-88db-4947-9d7a-ce7a0f8bec9d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite - the blue shape is double the size of the red shape, but the orientation is different. How does that affect the scale factor?",
         "B": "The shapes do look like they have been rotated but they are not the same size, what kind of transformation does that?",
@@ -109,7 +109,7 @@
     {
       "questionId": 79851,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/96999a25-f8a0-4fa0-a577-c0379f9eeb0e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, you have given the correct transformation if the shapes were the same size. How can we change the size and orientation with one transformation?",
         "B": "Not quite - the blue shape is double the size of the red shape, but the orientation is different. How does that affect the scale factor?",
@@ -121,7 +121,7 @@
     {
       "questionId": 79763,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ed0bf335-565f-4999-a1b2-7b5a627862ff.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, S is double the size but in a different orientation, how does that affect the scale factor?",
         "B": "Not quite, this is the correct answer if we wanted to end up with shape S instead of shape R.",
@@ -133,7 +133,7 @@
     {
       "questionId": 79853,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/65a4d0b6-1416-4657-aed5-59323aad0abf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, you have mapped to R first and then S.",
         "B": "Almost, but S is on the opposite side of the centre to the red shape. How does that affect the scale factor?",

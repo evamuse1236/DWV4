@@ -43,7 +43,7 @@
     {
       "questionId": 135908,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aa9c525e-95a2-40cc-b2a4-a98a5af0e4d1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, only one of these values is correct. Comparing the coordinates of the points forming the base of the parallelogram will help you find the other value.",
         "B": "To find (?, ?), we can look at (4,5) and (8,5). The difference in the x-coordinates is 4, and the two points have the same y-value. Applying this to (?, ?) and (6,7), we can see that the x-coordinate of (?, ?) must be 6 - 4 = 2, and the two points must have the same y-value, 7, as the top and bottom lines of the shape must be parallel, so we have (2, 7).",
@@ -79,7 +79,7 @@
     {
       "questionId": 135929,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4c576c6d-6a2a-4768-9879-8b63a1d78935.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you've halved 8 to get 4, however we need to take into account the other point which has an x-coordinate of 2. Make sure to find the midpoint of 2 and 8 to get your coordinates :)",
         "B": "Almost, I think you've miscalculated midway between 2 and 8. Remember you can add them together and divide by 2 to find the middle.",
@@ -91,7 +91,7 @@
     {
       "questionId": 135910,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/565f1374-6880-4245-84d8-56442cb3a347.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you've calculated the base as 8 and the height as 5. Remember to calculate the height using the difference in the y-coordinates, and that the area of a triangle is bh/2.",
         "B": "Almost there. Don't forget that the area of a triangle is bh/2! :)",
@@ -127,7 +127,7 @@
     {
       "questionId": 135931,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8a0a828d-3971-4995-a187-0a57d716b714.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost there! You've worked out P being one-quarter from the left, but we need it to be three-quarters from the left.",
         "B": "It looks like you've found the midpoint of the two coordinates, but we need the point P which is three-quarters from the left to the right. Perhaps thinking of this as a ratio would help.",
@@ -139,7 +139,7 @@
     {
       "questionId": 135912,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c8bfe581-3084-4ede-bd2d-2f2c39596c4a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You've found the midpoint of the bottom edge of the shape, between the points (4,5) and (8,5). The point O is actually above and to the left of that point. Try using a different combination of the points to calculate O.",
         "B": "I think you've added 0.5 onto the x and y-coordinates of (4,5). Try looking at another point on the diagram. Could you use one of the other points to help with your calculation?",
@@ -151,7 +151,7 @@
     {
       "questionId": 135932,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/278e8810-de14-4733-9fc4-91896b678852.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've added 0.5 onto the x and y-coordinates of (2,7). Try looking at another point on the diagram. Could you use one of the other points to help with your calculation?",
         "B": "You've found the midpoint of the bottom edge of the shape, between the points (2,7) and (8,7). The point O is actually above and to the left of that point. Try using a different combination of the points to calculate O.",

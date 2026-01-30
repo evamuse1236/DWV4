@@ -37,7 +37,7 @@
     {
       "questionId": 78203,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/986c4240-2af4-4079-9598-4885bc6a33f5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Remember you can check a coordinate in the region to see if it satisfies both the inequalities.",
         "B": "Have a think about what the inequaity signs mean, these are both less than or equal to. . Remember you can check a coordinate in the region to see if it satisfies both the inequalities.",
@@ -61,7 +61,7 @@
     {
       "questionId": 106937,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1651e6c2-e91e-4f3a-be23-802f3a90504a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "We can use y = mx + c, where m is the gradient and c is the y intercept. Once you have substituted in m and c, see if you can rearrange it to get it in different forms",
         "B": "We can use y = mx + c, where m is the gradient and c is the y intercept. Once you have substituted in m and c, see if you can rearrange it to get it in different forms",
@@ -73,7 +73,7 @@
     {
       "questionId": 144878,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f74666c7-defd-41ab-b93a-07759e8978a6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "We can use y = mx + c, where m is the gradient and c is the y intercept. Once you have substituted in m and c, see if you can rearrange it to get it in different forms",
         "B": "We can use y = mx + c, where m is the gradient and c is the y intercept. Once you have substituted in m and c, see if you can rearrange it to get it in different forms",
@@ -85,7 +85,7 @@
     {
       "questionId": 106938,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/593ef5c9-c254-41ae-8463-8b502d84bdbf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Remember the 5 is the x coordinate, and the 6 is the y coordinate. You can substitute these into each of the inequalities to see which ones they satisfy.",
         "B": "Remember the 5 is the x coordinate, and the 6 is the y coordinate. You can substitute these into each of the inequalities to see which ones they satisfy.",
@@ -97,7 +97,7 @@
     {
       "questionId": 106945,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b4c57d4d-1f2c-4089-915c-4adaf1d56200.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Remember the 4 is the x coordinate, and the 11 is the y coordinate. You can substitute these into each of the inequalities to see which ones they satisfy.",
         "B": "Remember the 4 is the x coordinate, and the 11 is the y coordinate. You can substitute these into each of the inequalities to see which ones they satisfy.",
@@ -109,7 +109,7 @@
     {
       "questionId": 106939,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b575c79b-890d-4d86-9952-99281e68368a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember the -5 is the x coordinate, and the 6 is the y coordinate. You can substitute these into each of the inequalities to see which ones they satisfy. Be careful when multiplying negatives by positives",
         "B": "The coordinates (−5, 6) mean that 𝑥 = −5 and 𝑦 = 6. Substituting these values into 𝑥 + 𝑦 < 10 gives −5 + 6 < 10, which is true, so region A does satisfy this inequality. Now try 𝑦 > 2𝑥 with these values. This gives 6 > 2 × (−5) which is again true, meaning these coordinates belong in both regions, identifiable as the intersection (region B).",
@@ -121,7 +121,7 @@
     {
       "questionId": 106946,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bdc850da-8e5c-42d4-89b0-b16022777311.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Remember the -4 is the x coordinate, and the 11 is the y coordinate. You can substitute these into each of the inequalities to see which ones they satisfy. Be careful when subtracting, we are moving down the number line",
         "B": "Remember the -4 is the x coordinate, and the 11 is the y coordinate. You can substitute these into each of the inequalities to see which ones they satisfy. Be careful when multiplying negatives by positives",
@@ -133,7 +133,7 @@
     {
       "questionId": 106940,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5ce77e93-c5d8-4c10-a95c-3d7949761b75.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember the -5 is the x coordinate, and the -6 is the y coordinate. You can substitute these into each of the inequalities to see which ones they satisfy. Be careful when multiplying negatives",
         "B": "The coordinates (−5, −6) mean that 𝑥 = −5 and 𝑦 = −6. Substituting these values into 𝑥 + 𝑦 < 10 gives −5 + −6 < 10, which is true, so Region A does satisfy this inequality. Now try 𝑦 > 2𝑥 with these values. This gives −6 > 2 × −5 or −6 > −10, which is again true, meaning these coordinates belong in both regions, identifiable as the intersection (Region B).",
@@ -145,7 +145,7 @@
     {
       "questionId": 106947,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2d9f1183-3ac9-4519-9754-125d00c45fb6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember the 4 is the x coordinate, and the -11 is the y coordinate. You can substitute these into each of the inequalities to see which ones they satisfy. Be careful when multiplying negatives by positives",
         "B": "The coordinates (4, −11) mean that 𝑥 = 4 and 𝑦 = −11. Substituting these values into 𝑥 − 𝑦 > 8 gives 4 −(−11) > 8, or 15 > 8, which is true, so Region A is applicable. Now try 𝑦 < 3𝑥 with these values: this gives −11 < 3 × 4, which is again true and means that these coordinates belong in Region B, the intersection.",

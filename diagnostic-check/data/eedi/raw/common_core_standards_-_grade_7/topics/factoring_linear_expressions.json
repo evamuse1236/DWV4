@@ -19,7 +19,7 @@
     {
       "questionId": 166298,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/31ee6750-934d-4696-8274-44c74ba10496.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have found a common factor of -18𝑥 and -12 but it is not the greatest common factor",
         "B": "-9 is a factor of -18𝑥 but it is not a factor of -12. You need to find the greatest common factor of -18𝑥 and -12.",
@@ -43,7 +43,7 @@
     {
       "questionId": 166299,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0a8281f7-acb2-4fc7-9ca4-73271460b395.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have subtracted 4 from both terms but we actually need to divide both terms by 4 as 4 is the greatest common factor of -12𝑥 and 8.",
         "B": "The greatest common factor of 12𝑥 + 8 is 4. 12𝑥/4 = 3𝑥 and 8/4 = 2 so we get 4(3𝑥 + 2).",
@@ -55,7 +55,7 @@
     {
       "questionId": 166526,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3593e08b-b342-4285-889f-7bc667b1cd7e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have subtracted 4 from both terms but we actually need to divide both terms by 4 as 4 is the greatest common factor of -16𝑥 and 12.",
         "B": "You have correctly divided 12 by 4 but remember you need to divide both terms by 4. ",
@@ -79,7 +79,7 @@
     {
       "questionId": 166527,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b93ec60d-ae7b-4d8e-9780-565168e6746f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember, the number outside the bracket should be the greatest common factor of both terms.",
         "B": "The greatest common factor of 64𝑥 – 8 is 8. 64𝑥/8 = 8𝑥 and -8/8 = -1 so we get 8(8𝑥 – 1).",
@@ -91,7 +91,7 @@
     {
       "questionId": 166301,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d743716-0e18-469f-af05-42afa51eebef.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Remember, the number outside the bracket should be the greatest common factor of both terms.",
         "B": "Almost, but you need to check -54/-18... A negative divided by a negative gives what type of answer?",
@@ -103,7 +103,7 @@
     {
       "questionId": 166528,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/450e9221-923d-4874-b452-e36254c990e1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember, the number outside the bracket should be the greatest common factor of both terms.",
         "B": "The greatest common factor of -16𝑥 – 48 is -16. -16𝑥/-16 = 𝑥 and -48/-16 = 3 so we get -16(𝑥 + 3).",
@@ -115,7 +115,7 @@
     {
       "questionId": 166302,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1962d549-a042-49d3-8110-087995664be8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Remember we need to find the greatest common factor of -25𝑥 and 150 to go outside of the bracket.",
         "B": "Tom has not found the greatest common factor of -25𝑥 and 150 so his is not fully factored. Katie has found the greatest common factor and if we expand 25(-𝑥 + 6) we get -25𝑥 + 150 so only katie is correct.",

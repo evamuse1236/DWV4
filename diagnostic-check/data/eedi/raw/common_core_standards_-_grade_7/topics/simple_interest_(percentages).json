@@ -37,7 +37,7 @@
     {
       "questionId": 135052,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5a618be9-0386-4c11-b81b-0cbefc801a2d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have added the number of years onto the value of the interest applied per annum here. It might help to remember that the interest amount is applied each year, therefore what operation do we need to perform once we have calculated the per annum interest?",
         "B": "𝑞/100 converts the interest rate to a decimal multiplier. Multiplying this by the initial sum 'p' gives the amount of interest charged per annum, therefore multiplying this by 'n' years of investment gives the total amount of interest applied.",
@@ -61,7 +61,7 @@
     {
       "questionId": 135053,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/63f14f69-a696-4235-8732-f6a741e0a349.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have the total amount of the interest as if it were compound interest applied. The question asks for the amount of simple interest earned only.",
         "B": "I think you have calculated the total value at the end of the period, rather than the interest gained as the question asks for. How much interest has been earned vs the initial sum invested?",
@@ -73,7 +73,7 @@
     {
       "questionId": 135073,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6995085c-5a30-43c3-8d59-46ab10128d23.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have worked out the interest for one year only. The questions asks for the interest earned after 10 years.",
         "B": "I think you have the total amount of the interest as if it were compound interest applied. The question asks for the amount of simple interest earned only.",
@@ -85,7 +85,7 @@
     {
       "questionId": 135054,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/008fb2b4-f252-4a22-934a-adccfd1f3cf5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have just stated the interest rate here. A good place to start would be by working out how much interest is applied per year, and therefore what the total value looks like after the 5 year term.",
         "B": "I think you have just stated the number of years as a percentage here. A good place to start would be by working out how much interest is applied per year, and therefore what the total value looks like after the 5 year term.",
@@ -97,7 +97,7 @@
     {
       "questionId": 135074,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ff0cf3af-f75c-461f-9950-5cf4b6290f07.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have made a calculation error. A good place to start would be by working out how much interest is applied per year, and therefore what the total value looks like after the 7 year term.",
         "B": "2% of £35 000 can be calculated by 35 000 × 0.03 = £700 simple interest per year. After 7 years there she will have earned 7 × £700 = £4900 simple interest. 4900 ÷ 35000 = 0.14. Converted to a percentage this is 14%, therefore the initial investment has grown by 14%.",
@@ -121,7 +121,7 @@
     {
       "questionId": 135075,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dbfc7e69-fd4c-4915-bd0f-b6f1ab4685e3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have worked out the interest for one year only. The questions asks for the interest earned after 30 years.",
         "B": "I think you have the total amount of the investment if it were compound interest. The question asks for the amount of simple interest earned only.",
@@ -133,7 +133,7 @@
     {
       "questionId": 135056,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8957cdb8-4c65-44eb-9a4e-56d68dbdd2b5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have rounded your final answer to the nearest year, however interest is only applied annually. Therefore we need to think about how to round appropriately for this question to reflect the reality of when interest is applied.",
         "B": "11% of £3 000 000 can be calculated by 3 000 000 × 0.11 = £330 000 simple interest per year. The investment needs to gain another £1 million to pass £4 000 000. 1 000 000 ÷ 330 000 = 3.0303.... Therefore it will take 3 and a bit years. As interest is only applied annually, Kris will have to wait 4 whole years until his investment passes £4 000 000 in value.",
@@ -145,7 +145,7 @@
     {
       "questionId": 135076,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d88a3f73-8813-4b8f-8c08-89e4e3d3cb3c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have made a calculation error. A good place to start would be by working out how much interest is applied per year, and how much interest would be required to bring the investment value in total to the stated amount.",
         "B": "I think you have rounded your final answer to the nearest year, however interest is only applied annually. Therefore we need to think about how to round appropriately for this question to reflect the reality of when interest is applied.",

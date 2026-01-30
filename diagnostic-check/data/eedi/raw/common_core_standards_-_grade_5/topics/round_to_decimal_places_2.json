@@ -31,7 +31,7 @@
     {
       "questionId": 75961,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d2d126bd-09a9-42b6-9611-886499ca1e60.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, think carefully about the digit after .1 and what effect that has on your answer.",
         "B": "There are 7 hundredths, and so because 7 is a 5 or above, we have rounded the 1 tenth up to 2 tenths, giving us an answer of 154.2.",
@@ -55,7 +55,7 @@
     {
       "questionId": 104608,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8f4d85fa-cf7e-46b5-864e-28c6515e555e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You're very close. Make sure your answer shows that you have rounded to 1 decimal place, and still has a number in the tenths column.",
         "B": "When rounding to 1 decimal place, anything beyond the tenths column is not kept. In this case, because the digit in the hundredths column is a 4, we can keep the tenths value the same. This means your answer is 0.0. It is important to keep one zero after the decimal point to show this is rounded to 1 decimal place.",
@@ -67,7 +67,7 @@
     {
       "questionId": 104616,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8bbfe88b-19be-4682-a63a-b3a782c906d1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You're very close. Make sure your answer shows that you have rounded to 1 decimal place, and still has a number in the tenths column.",
         "B": "Not quite! You've actually rounded to two decimal places here instead of one :) Make sure you only have one digit after the decimal point.",
@@ -79,7 +79,7 @@
     {
       "questionId": 104609,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f36e9287-dd33-4d8a-bbe9-ae6d16356718.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, think carefully about the digit in the thousandths column and what effect that has on your answer.",
         "B": "There are 6 thousandths, and so because 6 is 5 or above, we have to round the 1 hundredth up to 2 hundredths, giving us an answer of 3.52.",
@@ -91,7 +91,7 @@
     {
       "questionId": 104617,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/90b15b01-839c-4882-8ab8-779ced685fa3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, think carefully about the digit in the thousandths column and what effect that has on your answer.",
         "B": "There are 8 thousandths, and so because 8 is 5 or above, we have to round the 7 hundredths up to 8 hundredths, giving us an answer of 11.48.",
@@ -103,7 +103,7 @@
     {
       "questionId": 104610,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/804eef74-edf6-4881-9cab-f5382e33a1fd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, I think you had the correct method but forgot to carry. Have a think about where 0.9999 and 0.10 would be on a number line to understand where this may have gone wrong.",
         "B": "You're very close. Make sure your answer shows that you have rounded to 2 decimal places, and still has digits in the tenths and hundredths columns.",
@@ -115,7 +115,7 @@
     {
       "questionId": 104618,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ffde06a8-b31e-4d74-86aa-6cccca9e9ef9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You're almost there! 9 hundredths does round to 10 hundredths, but it doesn't become 10.10",
         "B": "You're very close! Remember to show clearly that you've rounded to 2 decimal places",
@@ -139,7 +139,7 @@
     {
       "questionId": 104619,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0132d48a-2aef-46ee-a6d2-c83e1d5df219.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not exactly, only the 3rd digit after the point may be affected in this question.",
         "B": "Almost, you've rounded to two decimal places!",

@@ -37,7 +37,7 @@
     {
       "questionId": 147258,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/265c4f3b-1ad0-4ed8-8e2a-ffeaabc2c6e7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. What is the difference between the first two terms? It is a linear sequence so the same amount will be subtracted each time.",
         "B": "Not quite, this sequence isn't going up by 5 each time. What is the sequence increasing by? How would you use this to find the next term?",
@@ -49,7 +49,7 @@
     {
       "questionId": 147278,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4b2badcd-9e72-4f3b-9bca-130339bb0414.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, this sequence isn't going up by 27 each time. What is the sequence increasing by? How would you use this to find the next term?",
         "B": "Not quite, this sequence isn't going up by 7 each time. What is the sequence increasing by? How would you use this to find the next term?",
@@ -61,7 +61,7 @@
     {
       "questionId": 147259,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6f7462f-7bb1-4871-a95a-f8aa04d1d637.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, this is a descending sequence. Each term is smaller than the one before. Find what the sequence is decreasing by and take this away from the last term given.",
         "B": "Not quite, the terms are not decreasing by 1 every time. What is this sequence decreasing by? Is it more than 1 or less than 1?",
@@ -73,7 +73,7 @@
     {
       "questionId": 147279,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/daff1dc6-7d5b-4999-9617-9599061714f9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, 4.9 - 3.1 = 1.8, this is not the same as 6.5 - 5.7. This is a linear sequence, so the terms should be decreasing by the same amount each time.",
         "B": "Not quite, 4.9 - 4.2 = 0.7, this is not the same as 6.5 - 5.7. This is a linear sequence, so the terms should be decreasing by the same amount each time.",
@@ -85,7 +85,7 @@
     {
       "questionId": 147260,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/75b6fe4f-7381-47a2-9c92-a408be30fcd4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have worked out the 2nd term, but the question is asking for the 1st term.",
         "B": "The 2nd term would be 488 – 17 = 471, and then 1st term would be 471 – 17 = 454.",
@@ -97,7 +97,7 @@
     {
       "questionId": 147280,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b141885d-1671-4750-8783-ee5781d4f9b0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have worked out the 6th term, but the question is asking for the 3rd term. How can we work backwards through this sequence?",
         "B": "I think you have worked out the 7th term but the question is asking for the 3rd term. How can we work backwards through this sequence?",
@@ -109,7 +109,7 @@
     {
       "questionId": 147261,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fa7914bc-1096-4fe0-87e8-ca0182e16ba0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, this is the 4th term. We are being asked to work out the first term.",
         "B": "Not quite, I think you have subtracted rather than added. This is a descending sequence, this means the first term will be bigger than the third term.",
@@ -121,7 +121,7 @@
     {
       "questionId": 147281,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/13a57313-bc68-4ae3-a514-2780e0dc7105.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have worked out the 2nd term, but the question is asking for the 1st term.",
         "B": "The 2nd term would be 712 + 22 = 734, and then the 1st term would be 734 + 22 = 756.",
@@ -133,7 +133,7 @@
     {
       "questionId": 147262,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e2004c67-60e2-47ee-a230-ea1fc4ce5663.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have found the difference in the term number between the 2nd and the 9th term. The question asks for the difference between the value of the 2nd and the 9th terms.",
         "B": "Not quite, there are not 6 jumps between the 2nd and 9th terms. How many ‘differences’ or ‘jumps’ are there?",
@@ -145,7 +145,7 @@
     {
       "questionId": 147282,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5eaf3264-02a8-425f-8292-0443d1b552a8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have found the difference in the term number between the 2nd and the 8th term. The question asks for the difference between the value of the 2nd and the 8th terms.",
         "B": "Not quite, there are not 5 jumps between the 2nd and 8th terms. How many ‘differences’ or ‘jumps’ are there?",

@@ -25,7 +25,7 @@
     {
       "questionId": 155614,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e3687947-c0fa-4bd4-876e-0071f22e25fa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "One of these statements is not true. Remember the open side of the inequality symbol will face the larger number.",
         "B": "I think you have confused the direction of the inequality symbols. Remember the wider/open part of the inequality symbol will face the larger number.",
@@ -37,7 +37,7 @@
     {
       "questionId": 155632,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/df21fb1a-387c-4acd-b8d4-d44c63fe4612.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "One of these statements is not true. Remember the open side of the inequality symbol will face the larger number.",
         "B": "351 is greater than 315, so 351 > 315. 140 is less than 410, so 140 < 410.",
@@ -73,7 +73,7 @@
     {
       "questionId": 159369,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7301a645-cceb-42b4-aaec-cfcbba611ec3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The first digits are the same, so we look at the second digit. 90 is greater than 80, so 398 is greater than 389.",
         "B": "I think you might have looked at the end digit and said 8 is less than 9. We start comparing at the beginning of the number... The first digits are both 3, so compare the second digits.",
@@ -85,7 +85,7 @@
     {
       "questionId": 159591,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4b392e7c-2e82-470e-8548-dc80af091ef4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The first digits are the same, so we look at the second digit. 70 is greater than 60, so 576 is greater than 567.",
         "B": "I think you might have looked at the end digit and said 6 is less than 7. We start comparing at the beginning of the number... The first digits are both 5, so compare the second digits.",
@@ -97,7 +97,7 @@
     {
       "questionId": 159370,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f02d647c-b3dc-4d0a-99e6-fcd3803d4a4e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The first digits are the same, so we look at the second digit. 0 is less than 6, so 406 is less than 460.",
         "B": "I think you might have mixed up the symbols... This symbol means greater than. Is 06 greater than 60?",
@@ -109,7 +109,7 @@
     {
       "questionId": 159592,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5189fd84-bd3d-4da4-b12a-eb8118a8fb0a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you might have mixed up the symbols... This symbol means less than. Is a number in the 800s less than a number in the 600s?",
         "B": "The first number is in the 800s and the second is in the 600s, so 876 is greater than 678.",
@@ -121,7 +121,7 @@
     {
       "questionId": 159371,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4a0c25b1-58e9-4647-94f4-88c9c436531e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you might have mixed up the symbols... This symbol means less than. Is 74 less than 47?",
         "B": "The first digits are the same, so we look at the second digit. 7 is greater than 4, so 874 is greater than 847.",
@@ -133,7 +133,7 @@
     {
       "questionId": 159593,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b84d3d07-2678-45d2-9ed6-26f37d7fc38b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The first digits are the same, so we look at the second digit. 8 is less than 9, so 289 is less than 298.",
         "B": "I think you might have mixed up the symbols... This symbol means greater than. Is 89 greater than 98?",

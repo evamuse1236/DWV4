@@ -97,7 +97,7 @@
     {
       "questionId": 135539,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/df6b5e13-98c1-43e8-8b76-7209b95071e7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, adding the equations will eliminate neither variable. As the coefficients on the x variables are the same we want to eliminate x. What would I have to do to the equations to do this?",
         "B": "Subtracting the two equation gives -3y = -6, which eliminates the x variable making Katie correct. Tom is incorrect as adding the equations gives 6x - y = 22, which has not eliminated one of the variables.",
@@ -109,7 +109,7 @@
     {
       "questionId": 135520,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/66580279-a33b-4738-8632-dd11349060c8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. I think you have forgotten that our equations must always remain balanced. If we add 2x to the left hand side we must also add 2x to the right hand side of the equation. We want to keep x and y only on the left hand side side of the equation. Think about multiplying an equation by a number instead of adding.",
         "B": "Katie is correct as this will allow us to take the two equations away from one another and eliminate x.",
@@ -133,7 +133,7 @@
     {
       "questionId": 135521,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/971e35b1-d95c-4dbd-a816-125d0807b883.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, we are being asked to eliminate the y variable. Multiplying equation 2 by three will make the x coefficients the same, NOT the y coefficients.",
         "B": "Not quite. To eliminate the y variable we need to make the coefficients of y the same for both equations. Will multiplying equation 1 by 5 and equation 2 by 2 make them the same?",
@@ -145,7 +145,7 @@
     {
       "questionId": 135541,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/18f47594-34f6-4fc8-83ab-c327667df747.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Tom's method is correct, as the coefficients of y in each equation will be 6. Check again for Katie's method, what would the coefficients of y be in each case?",
         "B": "Katie's method is correct, as the coefficients of y in each equation will be 12. Check again for Tom's method, what would the coefficients of y be in each case?",

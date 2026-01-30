@@ -43,7 +43,7 @@
     {
       "questionId": 78080,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e5e356cf-0ad1-4baa-95c9-f9b2f5df4cd9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have divided the total frequency by the number of categories of shoe size (5). Remember that to find the mean, we need to add together every person's shoe size and then divide by the total number of people we have. To picture what's happening, it might help you to list out every person's shoe size: 1,1,1,1,1,1,1,1,2,2,2,2... and so on.",
         "B": "The total of all the shoe sizes is 8×1 + 9×2 + 12×3 + 9×4 + 7×5 = 133, and the total frequency is 8 + 9 + 12 + 9 + 7 = 45. The mean is then 133/45 = 2.955...",
@@ -55,7 +55,7 @@
     {
       "questionId": 77918,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9d19efa6-35ba-43d7-bfd2-77bcb9a72b9b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have taken the number of siblings that corresponds to the median frequency (3, 4, 7, 9, 10 with 7 being the middle). But we want the number of siblings of the middle person, if we line them up in order of how many siblings they have. How many people were asked how many siblings they have? And where is the middle person in the table?",
         "B": "I think you have taken the middle number from the number of siblings column (0, 1, 2, 3, 4 with 2 being the middle). But we want the number of siblings of the middle person, if we line them up in order of how many siblings they have. How many people were asked how many siblings they have? And where is the middle person in the table?",
@@ -67,7 +67,7 @@
     {
       "questionId": 78081,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/80fc89f5-eb8a-46be-8878-1409767f431c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have the right idea but remember that we want the median number of siblings, not the frequency.",
         "B": "The total frequency is 15, which means that 15 people were asked how many siblings they have. If we line the 15 people up in order of how many siblings they have, we want the middle person, so the 8th person. Looking at the cumulative frequencies, 3 people have no siblings and 8 people have 1 sibling or less. So the 8th person has 1 sibling and the median is 1.",
@@ -79,7 +79,7 @@
     {
       "questionId": 77921,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea4865e1-b3c2-49ed-8a72-b0f67b317c73.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have divided the total frequency by the total number of spots on all of the ladybirds. We want the mean number of spots per ladybird, not ladybirds per spot.",
         "B": "I think you have divided the total number of spots on all of the ladybirds by the number of rows or categories in the table. We want the mean number of spots per ladybird. How many ladybirds were there?",
@@ -91,7 +91,7 @@
     {
       "questionId": 78085,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5b2937b7-df51-4d65-b910-3104e233912c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have divided the total frequency by the sum of the 'number of spots' column. Remember that to find the mean, we need to add together every ladybird's spots and then divide by the total number of ladybirds. To picture what's happening, it might help you to list out every ladybird's spots: 5,5,5,5,6,6,6,6,... and so on.",
         "B": "I think you have divided the total number of spots on all of the ladybirds by the number of rows or categories in the table. We want the mean number of spots per ladybird. How many ladybirds were there?",
@@ -115,7 +115,7 @@
     {
       "questionId": 108138,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d131acd8-1a33-4c07-970d-6f328c1b11b0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you are have taken the lowest frequency from the highest. The range tells us the spread of the data, not the frequencies, so we need the difference between the highest and lowest number of TVs.",
         "B": "I think you did 4 - 1 = 3 but be careful. When we work out the range, we need to look at the maximum and minimum results that occur.",
@@ -127,7 +127,7 @@
     {
       "questionId": 108131,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0ddcec31-026b-4954-aa29-f028a6ff6948.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Try working out the mean and the mode for the data in this table. Then double all the frequencies and work out the new mean and new mode. Then you will be able to see if Tom or Katie are correct. Remember to multiply the number of TVs by the frequency to work out the total number of TVs for the mean.",
         "B": "Try working out the mean and the mode for the data in this table. Then double all the frequencies and work out the new mean and new mode. Then you will be able to see if Tom or Katie are correct. Remember that the mode is the most common result.",
@@ -139,7 +139,7 @@
     {
       "questionId": 108139,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c6242d09-e9bf-4329-a3c7-0ead35b5146e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Try working out the mean and the median for the data in this table. Then double all the frequencies and work out the new mean and new median. Then you will be able to see if Tom or Katie are correct. Remember to multiply the number of TVs by the frequency to work out the total number of TVs for the mean.",
         "B": "Try working out the mean and the median for the data in this table. Then double all the frequencies and work out the new mean and new median. Then you will be able to see if Tom or Katie are correct. Remember that the median is the middle data value once ordered.",

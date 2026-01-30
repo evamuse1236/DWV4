@@ -55,7 +55,7 @@
     {
       "questionId": 107605,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8913e507-7e7e-4900-a47b-e996ced0d0b2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is a measure of length, not mass.",
         "B": "Mass is the proper name for what we normally refer to as weight. We do use tonnes to measure 'weight'",
@@ -67,7 +67,7 @@
     {
       "questionId": 107596,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6093f420-e84e-432e-8440-02ea93ba84c1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This would be correct if 10g = 1kg, but it is 1000g = 1kg",
         "B": "This would be correct if 100g = 1kg, but it is 1000g = 1kg",
@@ -79,7 +79,7 @@
     {
       "questionId": 107606,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5b743e2c-bfd9-4952-af42-b66a20573d97.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This would be correct if 100g = 1kg, but it is 1000g = 1kg",
         "B": "This would be correct if 10g = 1kg, but it is 1000g = 1kg",
@@ -91,7 +91,7 @@
     {
       "questionId": 107597,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b95554a3-240b-401b-92e3-58673bd982cd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you used the conversion that would change tonnes into kg, but you need to go the other way.",
         "B": "Almost, but I think you used 100 kg = 1 tonne when it is 1000 kg = 1 tonne.",
@@ -103,7 +103,7 @@
     {
       "questionId": 107607,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/43466659-3bff-4d14-86f7-a3ba7c335fa1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you used the conversion that would change tonnes into kg, but you need to go the other way.",
         "B": "There are 1000 kilograms in a tonne (t) and 1000 grams in a kilogram and so 3 kg = 0.003 t and 40 grams = 0.00004 t. Adding these together gives 0.00304 t.",
@@ -115,7 +115,7 @@
     {
       "questionId": 107598,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/01f19fff-5924-44ad-a57b-24364d2f8976.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I wonder if you made a mistake with the number of g in a kg. Remember that 1000g = 1 kg",
         "B": "I wonder if you made a mistake with the number of kg in a tonne. Remember that 1000kg = 1 tonne",
@@ -127,7 +127,7 @@
     {
       "questionId": 107608,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9a828222-17df-4161-bdf3-16137980d9e1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I wonder if you made a mistake with the number of g in a kg, and kg in a tonne. Remember 1000g = 1kg and 1000kg = 1 tonne",
         "B": "I wonder if you made a mistake with the number of g in a kg, and kg in a tonne. Remember 1000g = 1kg and 1000kg = 1 tonne",
@@ -139,7 +139,7 @@
     {
       "questionId": 107599,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bc4867a5-b39e-4610-9f21-e20a239d70ab.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you took off 10g rather than 0.1g. Remember 1kg = 1000g",
         "B": "I think you took off 1g rather than 0.1g. Remember 1kg = 1000g",

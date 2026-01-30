@@ -55,7 +55,7 @@
     {
       "questionId": 124913,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b5de08dc-d1d8-4ba7-b829-47bad15c8edb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you have read the values in the wrong order. When reading or plotting coordinates you read from (0,0). Read across first to the left or right and then up or down.",
         "B": "When reading or plotting coordinates you read from (0,0). Read across first to the left or right and then up or down. Looking at the position of the point, it is at −2 on the x axis. 2 to the left from (0,0) and 4 on the y axis, 4 up from (0,0), giving coordinates of (-2, 4).",
@@ -103,7 +103,7 @@
     {
       "questionId": 107120,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db57efd1-7d0d-4b90-94cc-66034f6c5292.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It seems you have read the midpoint values rather than the 𝑥 and 𝑦 values on the axes.",
         "B": "It looks like you have read the coordinates in the wrong order, mixing up 𝑥 and 𝑦 and thought the lines represent midpoints.",
@@ -115,7 +115,7 @@
     {
       "questionId": 107117,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/167d4a89-9191-4f59-92e1-7b5f9c82495f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You seem to have moved along the 𝑥 axes by the correct amount. Think about the value of the y co-ordinate.",
         "B": "It looks like you have misread this co-ordinate. From (0,0) B has only moved along the y-axis. (3,1) means there are movements along both axes.",
@@ -127,7 +127,7 @@
     {
       "questionId": 107121,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8bcc5425-9ed1-4314-a74f-bed00687c566.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You seem to have mixed up the 𝑥 and 𝑦 co-ordiantes. Remember the starting point is (0,0)",
         "B": "Remember the starting point is (0,0). You seemed to have started from 1 on the 𝑥 axis.",

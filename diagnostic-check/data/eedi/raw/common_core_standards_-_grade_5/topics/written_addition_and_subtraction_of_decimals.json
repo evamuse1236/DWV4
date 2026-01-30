@@ -37,7 +37,7 @@
     {
       "questionId": 103695,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5aefeb0e-5f99-4170-a220-53242833bb97.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Be careful. Remember to line up the digits with the same place value and the decimal points can help do this too.",
         "B": "Not quite. 0.07 does not equal 0.7. Where else could we add a zero, without changing the value of the number, to make sure our place value lines up?",
@@ -49,7 +49,7 @@
     {
       "questionId": 103706,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f1079037-9796-48bf-b56b-744b29c057aa.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Be careful. Remember to line up the digits with the same place value, you can use the decimal points to help with this too.",
         "B": "To add decimal numbers, put the values one below another, taking care to put the decimal points in line. This has only been done correctly in option B where 0.8 has been rewritten as 0.80.",
@@ -61,7 +61,7 @@
     {
       "questionId": 103696,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/da1ce3e6-7217-4fcc-aceb-8d22875db309.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. 0.300 does not equal 3. Where else could we add zeros, without changing the value of the number, to make sure our place value lines up?",
         "B": "Not quite. 0.003 does not equal 3. Where else could we add zeros, without changing the value of the number, to make sure our place value lines up?",
@@ -85,7 +85,7 @@
     {
       "questionId": 103697,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bd96ed4a-d504-43ac-9319-9d4c767a368c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you did 202 - 51 to get the numbers after the decimal points. However, we need to put the 0.51 on top of the subtraction, and the 0.202 below it. You might want to put an extra 0 on the end of 0.51",
         "B": "Not quite. You need to always do the digit on the top subtract the digit underneath it. You might need to borrow to do this.",
@@ -109,7 +109,7 @@
     {
       "questionId": 103698,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1e5ac4a8-363b-411f-ad27-8d4475ded13a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have subtracted 1.4 from 3.215, but we need to add to find that missing number",
         "B": "This question, effectively 𝑥 – 3.215 = 1.4, can be solved by adding 3.215 to both sides, which will keep the equation in balance and leave us with ‘𝑥 = something’, our answer. Performing this stage gives 𝑥 = 1.4 + 3.251 = 4.615",
@@ -121,7 +121,7 @@
     {
       "questionId": 103709,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/38796d71-587f-4a1a-b107-364eb180f5ef.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have subtracted 1.534 from 2.7, but we need to add to find that missing number",
         "B": "I think you have tried to subtract 1.534 from 2.7, but we need to add to find that missing number",
@@ -133,7 +133,7 @@
     {
       "questionId": 103700,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e3f339ea-8aee-4bdc-b66c-ac9a3cc21d54.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have done 0.15 - 0.05. We are taking away a bigger number, so we need to go back to 0, and then see how many more we need to take away.",
         "B": "I think you have done the subtraction backwards. We are taking the bigger number away, so we will get a negative answer",

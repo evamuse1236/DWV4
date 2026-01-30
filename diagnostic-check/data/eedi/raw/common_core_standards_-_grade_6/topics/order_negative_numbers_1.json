@@ -43,7 +43,7 @@
     {
       "questionId": 75909,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a2c91135-1b17-452e-b07b-695d9dff7656.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have counted up in 1s from -10. Make sure to count all the way to the next given number in order to check your intervals.",
         "B": "I think you have counted down in 1s from 2. Make sure to count all the way to the next given number in order to check your intervals.",
@@ -67,7 +67,7 @@
     {
       "questionId": 75910,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bbca43c2-1d61-4de3-970d-3be66d27ee13.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You may have forgotten to look at the negative signs. Try again, but make sure all your positive values come first.",
         "B": "You have correctly identified that the positive number comes first, but have made a mistake ordering your negative numbers. Try drawing them out on a number line.",
@@ -79,7 +79,7 @@
     {
       "questionId": 76058,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ceef8054-32e2-4002-940f-05c6238648e6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You may have forgotten to look at the negative signs. Try again, but make sure all your positive values come first.",
         "B": "You have correctly identified that the negative numbers comes first, but have made a mistake when ordering them. Try drawing them out on a number line.",
@@ -91,7 +91,7 @@
     {
       "questionId": 75912,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/70487ef9-0275-40df-8e0f-92eb8c056a63.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You may have mixed up the inequality symbols. The opening of the inequality symbol is by the greatest number so you are looking for a number greater than -35. It may help you to draw a number line if you are still struggling.",
         "B": "This inequality symbol means that x is greater than -35. So we are looking for any number above -35 on a number line. -1 is greater than -35.",
@@ -115,7 +115,7 @@
     {
       "questionId": 130106,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8d50b991-a224-422c-96b3-21e7a74be403.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, they are both negative but the numbers are different. Think about a number line. The negative numbers get smaller as they get further away from zero.",
         "B": "Think about a number line. We go down from 0 to -1, then down to -2 and so on. The further down you go the smaller, the number is. That means -7 is bigger than -9 so we use >.",
@@ -127,7 +127,7 @@
     {
       "questionId": 130102,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8af3c6c7-0df8-49e7-b984-92f6a0ca2bcf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, they are both negative but the numbers are different. Think about a number line. The negative numbers get smaller as they get further away from zero.",
         "B": "This would be true for positives, but with negatives it's not the same. The negative numbers get smaller as they get further away from zero.",
@@ -151,7 +151,7 @@
     {
       "questionId": 130103,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/075e2226-fbdc-42b3-82d3-556c128a5c96.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you thought each jump (or interval) was worth 1, and went down 2 jumps from 0. But how much would each jump be if 5 jumps is worth 10?",
         "B": "I think you thought each jump (or interval) was worth 1, and went 3 above -10. But how much would each jump be if 5 jumps is worth 10?",

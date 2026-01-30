@@ -31,7 +31,7 @@
     {
       "questionId": 77204,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ac05fdaf-5bac-4fbd-9bd2-35d60030b247.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. That would be one extra disc, but we have more than one.",
         "B": "Almost. Remember that half a disc doesn't represent 5 people. If a whole disc is 50, half a disc is half of 50",
@@ -55,7 +55,7 @@
     {
       "questionId": 131546,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/99476e6e-20ff-4dc3-8159-3cd7501300d6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is the number of full CD symbols that are shown. Look at the key. What does each full symbol represent? What does a quarter of a symbol represent?",
         "B": "This is the number of CD symbols that are shown. Look at the key. What does each full symbol represent? What does a quarter of a symbol represent?",
@@ -67,7 +67,7 @@
     {
       "questionId": 133739,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ddd938ff-6ed4-4007-97c9-84730a28371a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have forgotten to convert the quarter of a CD symbol into a whole number of CDs",
         "B": "Each full CD symbol represents 4 CDs. Each quarter of a CD symbol represents 1 CD. So we have 4 + 4 + 1 = 9",
@@ -79,7 +79,7 @@
     {
       "questionId": 131547,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/881212d7-d098-4129-bc54-670baa6d0ab5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you forgot to use the key to convert the half CD symbol to the real number of CDs.",
         "B": "I think you converted the half CD symbol to the wrong number of real CDs.",
@@ -91,7 +91,7 @@
     {
       "questionId": 133740,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5f09660d-6ed8-487a-8098-757ac6424b3a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've forgotten to use the key to convert your answer to a whole number of CDs.",
         "B": "Each symbol is worth 4 CDs. For 'Rock' Bob has 4 + 4 = 8 CDs. For 'Classical' Bob has 4 + 3 = 7. So there are 8 - 7 = 1 more Rock CDs.",
@@ -115,7 +115,7 @@
     {
       "questionId": 133741,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1af40a91-e508-4181-ab07-fbc688b31827.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have assumed each CD symbol represents 2 CDs in real life. Look again at the key.",
         "B": "Not quite. Each CD symbol represent 4 CDs in real life. This would represent 8 CDs.",

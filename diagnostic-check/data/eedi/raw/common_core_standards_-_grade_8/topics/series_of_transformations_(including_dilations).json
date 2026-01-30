@@ -37,7 +37,7 @@
     {
       "questionId": 167116,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/883a891d-5b0f-46d5-adaa-8405cea4c3b3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you reflected in the y axis rather than the 𝑥 axis.",
         "B": "I think when you reflected you forgot to 'flip' the shape over. Remember the distance from the mirror line is the same for the object and image.",
@@ -49,7 +49,7 @@
     {
       "questionId": 166867,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/500019f9-b907-4472-9844-fc43dacdf6f7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you translated to the right rather than the left.",
         "B": "When dilated the distance from the centre is multiplied by the scale factor, so it becomes (6, 3). The point is then translated 4 left, so it becomes (2, 3).",
@@ -61,7 +61,7 @@
     {
       "questionId": 167117,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e77221a8-9e9b-4619-a5d6-13997b7bdb23.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost, but remember the whole of the coordinate is affected by the dilation, not just the 𝑥 coordinate.",
         "B": "I think you added the scale factor to the coordinates when you dilated, but remember dilation is multiplicative, not additive.",
@@ -73,7 +73,7 @@
     {
       "questionId": 166868,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1cac562b-8cd6-4d18-a76f-8b2d6b5d158e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have selected an option that would map to (-4, 10), which one would not?",
         "B": "You have selected an option that would map to (-4, 10), which one would not?",
@@ -85,7 +85,7 @@
     {
       "questionId": 167118,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ee869ec3-1070-41c5-b5ba-b4db12a28444.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have selected an option that would map to (-6, 8), which one would not?",
         "B": "The rotation would send the point to (-4, 3), and the dilation would send this to (-8, 6), not (-6, 8).",
@@ -97,7 +97,7 @@
     {
       "questionId": 166869,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f5885bfd-8013-4929-8e9c-5cb7d625bdc0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you applied the translation first. Remember it is the dilation first, and then the translation.",
         "B": "I think you applied the translations in the opposite directions, remember a translation right would be added to the 𝑥 coordinate, and a translation down would be subtracted from the y coordinate.",
@@ -109,7 +109,7 @@
     {
       "questionId": 167119,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5ebad27e-18bf-4fd2-b92c-908539375121.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you applied the translations in the opposite directions, remember a translation left would be subtracted from the 𝑥 coordinate, and a translation up would be added to the y coordinate.",
         "B": "I think you applied the translation first. Remember it is the dilation first, and then the translation.",
@@ -121,7 +121,7 @@
     {
       "questionId": 166870,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/25b2f049-26b7-484d-a74f-29d1699c1b1b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember if you do the translation first, the effect of the translation would also be multiplied by the scale factor of the dilation.",
         "B": "When translated the point would go to (𝑥 - 2, y + 3). When dilated from the centre, we multiply the coordinates by the scale factor, so they become (3𝑥 - 6, 3y + 9)",

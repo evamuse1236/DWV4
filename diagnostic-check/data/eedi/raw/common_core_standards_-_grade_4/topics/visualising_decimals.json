@@ -19,7 +19,7 @@
     {
       "questionId": 158128,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5b3ec71d-06df-49b2-9ce1-39302b28edca.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is the value of the unshaded part...",
         "B": "This would be 3 hundredths but the diagram is split into 10 parts...",
@@ -43,7 +43,7 @@
     {
       "questionId": 158129,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/16562825-172a-4617-899e-424e5bf7faa4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This would be 7 tenths but the diagram is split into 100 parts...",
         "B": "The diagram is a whole split into 100 equal parts so each part is worth one hundredth. There are 7 parts colored in so this is 7 hundredths which we write as 0.07",
@@ -55,7 +55,7 @@
     {
       "questionId": 158296,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a35b109a-f7f8-4205-b2ea-f278eb4782f9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This would be 9 thousandths but the diagram is split into 100 parts...",
         "B": "We don't have 9 wholes, we have one whole split into 100 equal parts with 9 parts shaded in. What is the shaded part as a decimal?",
@@ -67,7 +67,7 @@
     {
       "questionId": 158130,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea3c34a6-1d45-4fc4-9401-33f52782011b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have shaded in 3/100 but 0.3 is 3/10. Can you find the equivalent fraction out of 100?",
         "B": "The diagram is split into 100 equal parts. If we need to colour in 0.3 that is 3/10 which is equivalent to 30/100 therefore we need to shade in 30 squares.",
@@ -79,7 +79,7 @@
     {
       "questionId": 158297,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ff69b6aa-2a00-4c87-916e-9bc44bfdd231.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is how many squares will be unshaded...",
         "B": "Not quite... 0.2 means 2/10 and we have a whole split into 100 parts so 2/10 = ?/100",
@@ -91,7 +91,7 @@
     {
       "questionId": 158131,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4fb03c77-6032-496e-b645-18ca407891ab.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "There are 15 parts shaded in but what is the value of each part if we have one whole and have split it into 10 equal parts?",
         "B": "0.15 is 15 hundredths but we have wholes split into 10 equal parts...",
@@ -103,7 +103,7 @@
     {
       "questionId": 158298,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5585241c-8781-4ad3-a7a7-43592fb67c16.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have forgotten about the first part of the diagram...",
         "B": "In the diagram we have one whole (10/10) and 8/10 shaded in: 1 + 8/10 = 1.8",
@@ -115,7 +115,7 @@
     {
       "questionId": 158132,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e5b4a515-50fc-4436-9a9f-6e9206f46aa5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The 2 is correct but 0.28 is the value of the unshaded part in the last square...",
         "B": "The 2 is correct but think about the last square... We have one whole split into 100 equal parts with how many are shaded in?",

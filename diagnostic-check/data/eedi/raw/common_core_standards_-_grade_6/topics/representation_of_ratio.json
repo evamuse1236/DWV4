@@ -25,7 +25,7 @@
     {
       "questionId": 147481,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1f25770b-47d5-44c9-9735-b10a323cb498.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is the number of triangles. The question asks for the number of squares. How many squares are there for 3 triangles?",
         "B": "I think you have stated the number of squares for two triangles. The question asks for the number of squares for three triangles. There are three triangles in the picture. How many squares are there for 3 triangles?",
@@ -73,7 +73,7 @@
     {
       "questionId": 147483,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0b1963f6-83f4-40cb-ad0c-bb6103067ddd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost! Count how many circles each of them has, are the number of squares twice the number of circles?",
         "B": "Almost! Count how many circles each of them has, are the number of squares twice the number of circles?",
@@ -85,7 +85,7 @@
     {
       "questionId": 147503,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/99aeff88-0133-4931-8639-b38f5a0f6454.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost! Count how many circles each of them has, are the number of squares three times the number of circles?",
         "B": "Almost! Count how many circles each of them has, are the number of squares three times the number of circles?",
@@ -97,7 +97,7 @@
     {
       "questionId": 147484,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c203d545-b42b-4b37-858f-8362fc15828f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have just stated the number of red squares in the question. Try sketching the grid and colouring or labelling 2 green for every 1 red. How many squares end up coloured red?",
         "B": "I think you have just stated the total number of parts in the question (1 + 2 = 3). Try sketching the grid and colouring or labelling 2 green for every 1 red. How many squares end up coloured red?",
@@ -109,7 +109,7 @@
     {
       "questionId": 147504,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2e884c48-cb9b-4f33-a881-017d96ef330e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have just stated the number of red squares in the question. Try sketching the grid and colouring or labelling 3 green for every 2 red. How many squares end up coloured red?",
         "B": "There are 20 squares overall. If we colour 3 green and then 2 red, we will have coloured in 5 squares. We could do this 4 times over. 2 red squares x 4 times = 8 red squares. Therefore, there would be 8 red squares in total.",
@@ -121,7 +121,7 @@
     {
       "questionId": 147485,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6ec41ab6-c840-45a2-8f70-5e27684e00ce.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have just stated the number of greens in the question. Try sketching the grid and colouring or labelling 3 green for every 1 red. How many squares end up coloured green?",
         "B": "I think you have assumed that ½ of the grid would be green and ½ of the grid would be red because there are two colours. Try sketching the grid and colouring or labelling 3 green for every 1 red. How many squares end up coloured green?",
@@ -133,7 +133,7 @@
     {
       "questionId": 147505,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2097335b-9f53-4340-8d44-8a2d3f952557.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have just stated the number of greens in the question. Try sketching the grid and colouring or labelling 3 green for every 1 red. How many squares end up coloured green?",
         "B": "I think you have assumed that the number of parts (3 + 1 = 4) would be doubled for the green squares. Try sketching the grid and colouring or labelling 3 green for every 1 red. How many squares end up coloured green?",

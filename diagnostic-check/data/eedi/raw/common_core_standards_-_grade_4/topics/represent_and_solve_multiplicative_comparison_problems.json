@@ -25,7 +25,7 @@
     {
       "questionId": 173923,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/88ad616e-3953-430a-9175-a6a83f8f0c49.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The phrase 'times as long' means you need to multiply. It looks like you have added the numbers instead.",
         "B": "The beetle is '4 times as long' as the ant. This means we need to multiply the ant's length by 4. So, the calculation is 8 mm x 4 = 32 mm.",
@@ -37,7 +37,7 @@
     {
       "questionId": 173983,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b94cc2d9-88ca-4941-bb14-9f09fcf27c78.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The phrase '3 times as expensive' is a clue to multiply. It looks like you might have added the two numbers instead.",
         "B": "It looks like you have divided the cost of the pen by 3. The book is 'times as expensive', which means it costs more than the pen, so you need to multiply.",
@@ -49,7 +49,7 @@
     {
       "questionId": 173924,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cd0a480b-2b44-4293-b843-da6d270734c5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you've chosen to add the numbers. Read the question again. What does the phrase '5 times as far' tell you to do?",
         "B": "You have chosen to divide. The phrase '5 times as far' means the distance is getting larger, so you need to multiply.",
@@ -73,7 +73,7 @@
     {
       "questionId": 173925,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/82be69d3-6f11-40e9-b64c-5264226281b0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This equation would mean the lizard's length divided by 9 is 54, which would make the lizard very long! We know the snake is longer than the lizard.",
         "B": "The snake is 9 times as long as the lizard, which means the lizard is shorter than the snake. Multiplying will give you an even bigger number. You need to use the inverse operation.",
@@ -85,7 +85,7 @@
     {
       "questionId": 173985,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a9f40398-561a-4e5d-9b9d-77524ff0ca6d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "We know the red ribbon (45 cm) is 5 times longer than the blue ribbon (star). This means 5 x star = 45. To find the star, we need to do the inverse operation, which is division: 45 ÷ 5 = star.",
         "B": "The red ribbon is longer than the blue ribbon. If you multiply 45 by 5, you will get a very long ribbon! The red ribbon's length is the result of a multiplication, so to find the blue ribbon's length you need to divide.",
@@ -97,7 +97,7 @@
     {
       "questionId": 173926,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/15f5f009-bf6a-4ce4-8718-8209d5cb77fc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you multiplied the numbers together. The building is '6 times as tall' as the tree, which means the tree must be shorter. Does your answer make sense?",
         "B": "The phrase 'times as tall' means you need to use multiplication or division. It looks like you have subtracted instead.",
@@ -121,7 +121,7 @@
     {
       "questionId": 173927,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/263988e1-b98f-4468-a980-d2f95cc74f91.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The phrase 'times as long' tells us to use multiplication or division. It looks like you have subtracted the two numbers.",
         "B": "It looks like you might have added the numbers together. The phrase 'times as long' is a clue to use multiplication or division.",
@@ -133,7 +133,7 @@
     {
       "questionId": 173987,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a85c6580-0352-4ab6-9641-e3c7b12bef13.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The phrase '8 times as much' is about multiplication and division. It looks like you have subtracted 8 from 96.",
         "B": "The phrase '8 times as much' means we are comparing the prices using multiplication and division, not addition. It looks like you have added 8 instead.",

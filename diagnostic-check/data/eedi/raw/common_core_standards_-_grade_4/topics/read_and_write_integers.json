@@ -67,7 +67,7 @@
     {
       "questionId": 101835,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8a2d64c4-5694-4fd8-8349-df21d5a5bc78.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Although these numbers could be written separately as ten and seven, you need to take care of the place value. What does the 1 represent here?",
         "B": "This number can be thought of in the following way: 107 = 100 + 7. It then follows that we have one hundred and seven.",
@@ -79,7 +79,7 @@
     {
       "questionId": 101842,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0f7f418f-8d4b-490d-a745-3f3dd6ac3c13.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Although these numbers could be written separately as twenty and nine, you need to take care of the place value. What does the 2 represent here?",
         "B": "Two hundred and ninety is 200 + 90 = 290. You appear to have switched the 9 and 0 around. The 9 is in the units column here, what does it represent?",
@@ -103,7 +103,7 @@
     {
       "questionId": 101843,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/130c1287-a34a-4702-b109-f34a7b439198.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've been thrown off by the order of the images. The hundred square represents more than the 4 ten strips. Think about the place value of the digits you've used.",
         "B": "I think you've been thrown off by the order of the images. The hundred square represents more than the 4 ten strips. Think about the place value of the digits you've used.",
@@ -115,7 +115,7 @@
     {
       "questionId": 101839,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/83ceba4b-7ac6-4bb9-b8a1-da2cfca7003c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This would be 2,004,050. Think about your place value for all of your digits. Working from the right (with no decimal point), we have units, tens, hundreds, thousands, ten thousands, hundred thousands, millions.",
         "B": "Using our place value, and working from the right (where there is no decimal point), we have 0 units, 5 tens (fifty), 0 hundreds, 4 thousands, 0 ten thousands, 2 hundred thousands. We can group the thousands together for two hundred and four thousand, and the rest group as fifty. So we have \"two hundred and four thousand and fifty\".",
@@ -127,7 +127,7 @@
     {
       "questionId": 101846,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bf61efad-f036-49b8-8f42-9c5f89b53eec.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This would be 3,007,050. Think about your place value for all of your digits. Working from the right (with no decimal point), we have units, tens, hundreds, thousands, ten thousands, hundred thousands, millions.",
         "B": "Look carefully at your place value. This would be 370,060. What does the 7 actually represent here?",
@@ -139,7 +139,7 @@
     {
       "questionId": 101840,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/549be7be-9a12-43b2-b532-359f1a9296db.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You appear to have forgotten what one million is worth; this number would be \"Two billion, three hundred thousand and four\". Remember that one million is 1 000 000",
         "B": "Try reading the number again, I think you've missed the \"thousand\".",
@@ -151,7 +151,7 @@
     {
       "questionId": 101847,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/665a10ff-df35-4efd-9735-45aca8e61b58.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Try reading the number again, I think you've missed the \"thousand\".",
         "B": "You appear to have forgotten what one million is worth; this number would be \"Eight billion, two hundred thousand and six\". Remember that one million is 1 000 000",

@@ -43,7 +43,7 @@
     {
       "questionId": 166808,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2c602fc7-0bcf-461f-b9f6-763bbd227e86.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite - we are adding NEGATIVE 3 here, which is the same as subtracting 3!",
         "B": "If he was 15 below sea level, our calculation would start at -15, but it is starting at +15. We are looking for a positive value of 15, subtracting 3.",
@@ -79,7 +79,7 @@
     {
       "questionId": 167059,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2f1fdb51-40bf-4c83-8969-7957fe14a289.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite - if the shark descended another 6.3 feet, that would be a subtraction as that would be getting even deeper! What kind of situation might mean we add?",
         "B": "To start below sea level (0), we would need to be at -17.5, and then to rise means to increase. So, we are starting at -17.5 and adding 6.3, just like the calculation given in the question.",
@@ -91,7 +91,7 @@
     {
       "questionId": 166810,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b1392dd6-a8a3-4c60-b748-d65ad6ad650f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have missed the negative in front of the 4.5. If we are adding a negative, we are subtracting, so this calculation is - 10 - 4.5 which can't be an increase.",
         "B": "If you owed $10 and then paid back $4.50, you would actually owe less ($5.50) so that would be an addition, not a subtraction.",

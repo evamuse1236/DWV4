@@ -67,7 +67,7 @@
     {
       "questionId": 109772,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5b45654f-867b-4e0b-8b57-c5a1c186a328.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may be confusing area with perimeter. The area is the amount of space within the perimeter of a shape. Try again!",
         "B": "The units for area always involve a squared element, which means that answer B of mm² is the only possible correct answer. Answers A and D represent a unit of length, and C represents volume.",
@@ -79,7 +79,7 @@
     {
       "questionId": 109782,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db4bd242-11bb-427b-94f5-b11080135aa6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may be confusing area with perimeter. The area is the amount of space within the perimeter of a shape. Try again!",
         "B": "I think you may be confusing area with volume. The area is the amount of space within the perimeter of a shape. Try again!",
@@ -103,7 +103,7 @@
     {
       "questionId": 109783,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fd5c4929-48bf-4de3-a52a-da0fe28ce201.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Possibly you're thinking the ½ refers to the diameter. In this question, the radius has been given as ½ cm, and this is what's used in the calculation. Try again!",
         "B": "I think you have made a mistake when squaring 1/2. Remember it is 1/2 x 1/2 where we multiply the numerators and denominators.",
@@ -115,7 +115,7 @@
     {
       "questionId": 109774,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/706b5d9f-9a39-43f3-a6e4-b49ef29745c3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! Possibly you're confusing radius and diameter. Here, the diameter has been given as 6 cm, so what does that make the radius?",
         "B": "Not quite! Possibly you're confusing radius and diameter, and also squaring and doubling. Here, the diameter has been given as 6 cm, so what does that make the radius?",
@@ -151,7 +151,7 @@
     {
       "questionId": 109785,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/28b8a6d7-57c5-4fe4-98ca-0e56b430c949.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost, but maybe you thought you needed to halve the answer, which isn't the case because 𝐴 = 𝜋𝑟², so the area is already expressed in terms of the radius.",
         "B": "Almost ... you've found the diameter! Because 𝐴 = 𝜋𝑟², the area is already expressed in terms of the radius.",

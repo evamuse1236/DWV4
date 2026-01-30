@@ -31,7 +31,7 @@
     {
       "questionId": 89271,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/765fe476-8d92-4a08-be27-30e97d51b8da.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have a place value error. Roughly how big should the answer be?",
         "B": "Nearly, I think you may have made a slip with a number. Maybe when halving?",
@@ -43,7 +43,7 @@
     {
       "questionId": 89284,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/04ae9184-83ca-44f3-a852-89b9a4491b42.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Nearly, I think you may have made a slip with a number. Maybe when multiplying by 4?",
         "B": "I think you have a place value error. Roughly how big should the answer be?",
@@ -55,7 +55,7 @@
     {
       "questionId": 103720,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c71a8789-3ff5-4b4c-841b-69c077ae6ff5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, try and work out both sets of answers to check :)",
         "B": "Not quite, try and work out both sets of answers to check :)",
@@ -67,7 +67,7 @@
     {
       "questionId": 103729,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5a7f7c60-50df-4db1-8b3c-ace036963216.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, try and work out both sets of answers to check :)",
         "B": "Jo is incorrect: both calculations involve 4 × 8 = 32, but the left is divided by 10 overall, and the right side is divided by 10 and 100 so 1000 overall. Paul is correct: the left is divided by 10 and 10 so 100 overall, and the right side is divided by 1000 and multiplied by 10, so the equivalent of dividing by 100 overall (the same as the left).",
@@ -79,7 +79,7 @@
     {
       "questionId": 103721,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c63c590b-3ca7-4686-aa9d-42ee59ae9a06.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, remember that 0.4² means 0.4 squared",
         "B": "Not quite, remember that 0.4² means 0.4 squared",
@@ -91,7 +91,7 @@
     {
       "questionId": 103730,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3b5f42ee-5ed6-48bd-bb89-9aec48170d9f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, remember that 0.3² means 0.3 squared",
         "B": "0.3² is the same as 0.3 × 0.3. We know 3 × 3 = 9, and then, because 3 divided by 10 is 0.3, we must divide our answer by 10 twice, which is the same as dividing by 100, where all our digits move 2 place value columns to the right.",
@@ -103,7 +103,7 @@
     {
       "questionId": 103722,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/27224857-f204-4c24-990d-fc86f3417850.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, think carefully about the number of decimal places your answer will have.",
         "B": "0.02³ is the same as 0.02 x 0.02 x 0.02. We know 2 x 2 x 2 = 8, and then, because 2 divided by 100 is 0.02, we must divide our answer by 100 three times, which is the same as dividing by 1,000,000, (moving each digit 6 place value columns to the right).",
@@ -115,7 +115,7 @@
     {
       "questionId": 103731,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/41f506fe-2779-45b1-9833-c8c61de93b02.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, think carefully about the number of decimal places your answer will have.",
         "B": "0.01³ is the same as 0.01 x 0.01 x 0.01. We know 1 x 1 x 1 = 1, and then, because 1 divided by 100 is 0.01, we must divide our answer by 100 three times, which is the same as dividing by 1,000,000, (moving each digit 6 place value columns to the right).",
@@ -127,7 +127,7 @@
     {
       "questionId": 103723,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/829c503c-8119-41e9-bc71-d8d9eea88d70.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, on the left side, Tom is doing 5 x 3 and 5 x 0.9. On the right side he is doing 3 x 5 and 3 x 0.9, therefore these answers are not equivalent.",
         "B": "Katie’s statement has just involved swapping the order of the numbers which is correct. Tom is incorrect because he has swapped the digits, which give different answers. You can see this easily by using estimation: 5 × 3.9 ≈ 5 × 4 = 20 whereas 3 × 5.9 ≈ 3 × 6 = 18.",

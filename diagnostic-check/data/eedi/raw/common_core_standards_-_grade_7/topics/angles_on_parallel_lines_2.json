@@ -55,7 +55,7 @@
     {
       "questionId": 78965,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ebd9face-2b48-437d-9d23-b6b73298664b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I can see why you might think that because angle AZF and angle FZE are next to each other but vertically opposite angles need to be on opposite sides of the point where they meet. Angle AZF is formed where lines AD and FC intersect. Can you see any other angles that are formed between the same two lines?",
         "B": "You're almost there, but make sure that the middle letter in the angle notation is the point where the two lines meet.",
@@ -67,7 +67,7 @@
     {
       "questionId": 76848,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a2d6259f-901b-4aa2-b035-1f8061275b60.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you chose sides that are equal length rather than parallel. What symbol means parallel?",
         "B": "I think you found the perpendicular lines (ones at right angles) rather than parallel. What symbol means parallel?",
@@ -139,7 +139,7 @@
     {
       "questionId": 76851,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/89ed845c-f48f-4036-b37a-e8f82212f99c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Think about what they would make if they were right next to each other.",
         "B": "Co-interior angles add up to 180°.",

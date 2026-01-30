@@ -19,7 +19,7 @@
     {
       "questionId": 166128,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d687f9f4-1849-4656-83bf-4b18d0e41ddf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have worked out the ratio of circles to triangles. How many shapes are there in total?",
         "B": "There are 4 circles, and 10 shapes in total so the ratio of circles to total shapes is 4:10",
@@ -55,7 +55,7 @@
     {
       "questionId": 166357,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1dc71d4d-bb2e-4a3e-b584-bfa45a67c2ca.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have worked out the ratio of stars to total shapes. Check how many circles there are and then write the ratio of stars to circles.",
         "B": "This is the ratio of circles to stars. Notice in the wording of the question it asks for the ratio of stars to circles. As it says stars first we need to write the number of stars first in the ratio, and then the number of circles.",
@@ -67,7 +67,7 @@
     {
       "questionId": 166130,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/561f6eb5-44ae-4c03-b3cd-5d3b3dc96bbc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Nearly! I think you have worked out the ratio of stars to squares, instead of the ratio of stars to total shapes.",
         "B": "There are 6 stars and 8 squares, which is 14 shapes in total. The ratio of stars to total shapes is 6:14, which simplifies to 3:7",
@@ -127,7 +127,7 @@
     {
       "questionId": 166360,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c1d07256-92b1-49ce-beb0-faafc459b869.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you've worked out the ratio of circles to triangles. Find the total number of shapes and use that to write the ratio of circles to total shapes, which then simplifies.",
         "B": "There are 6 circles, 3 triangles and 5 squares. Altogether there are 14 shapes. The ratio of circles to total shapes is 6:14, which simplifies to 3:7",

@@ -49,7 +49,7 @@
     {
       "questionId": 158740,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/02f58566-56d9-4982-a855-c45b527db96f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "If 21 goes in the box, we would have 3 x 21. Does that equal 21? Think about how many groups of 3 there are in the diagram.",
         "B": "If 3 goes in the box, we would have 3 x 3. Does that equal 21? Think about how many groups of 3 there are in the diagram.",
@@ -85,7 +85,7 @@
     {
       "questionId": 158938,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d63dad72-803f-4c4f-925a-4ca1ca6caa3d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite... The calculation 51 x 2 = 102 tells us how many 51s or how many 2s are in 102, which division shows this?",
         "B": "Not quite... The calculation 51 x 2 = 102 tells us how many 51s or how many 2s are in 102, which division shows this?",
@@ -97,7 +97,7 @@
     {
       "questionId": 158738,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5ae8bd68-391e-4812-8bbb-9b61e832f022.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "If A and B were equal, we would be saying that A groups of 4 make A total circles. That can't be right... Try replacing the letters with numbers to show how the circles are grouped in this diagram. How many total circles? How many rows of 4?",
         "B": "If A and C/B and D were equal, then dividing a number by 4 and multiplying it by 4 would have to give the same answer, which only works if the number is 0... Try replacing the letters with numbers to show how the circles are grouped in this diagram. How many total circles? How many rows of 4?",
@@ -109,7 +109,7 @@
     {
       "questionId": 158937,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2b08a8d3-31c4-43a3-bc8d-d9c87986d891.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "If A and B were equal, we would be saying that A groups of 5 make A total circles. That can't be right... Try replacing the letters with numbers to show how the circles are grouped in this diagram. How many total circles? How many columns of 5?",
         "B": "If A and C/B and D were equal, then dividing a number by 5 and multiplying it by 5 would have to give the same answer, which only works if the number is 0... Try replacing the letters with numbers to show how the circles are grouped in this diagram. How many total circles? How many columns of 5?",
@@ -133,7 +133,7 @@
     {
       "questionId": 158936,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/be803af2-1c71-4e04-8e5b-794318f6819b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Look at the groups of small squares. How many groups are there? How many squares in each? How many in total? Which number is missing from the calculation to represent this?",
         "B": "There are 20 small squares, but 20 is already in the calculation as the total. What number could go in the box to show how many groups of 4 make 20?",

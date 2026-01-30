@@ -37,7 +37,7 @@
     {
       "questionId": 77102,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1cf79a36-d231-4f48-9b78-d8190bfddbc3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! You have successfully learnt when an expression involves multiplication, even when 'x' doesn't appear! :) You just need to remember the order of operations: multiplications come before additions. You'll be ready next time! :)",
         "B": "Not quite! ac actually means a x c rather than a + c. You'll be ready next time! :)",
@@ -73,7 +73,7 @@
     {
       "questionId": 78874,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/76ae300a-a2e5-408c-8704-c016e39460ed.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! The expression is written well, but remember to think about which number is adding and which is multiplying. You'll get there next time! :)",
         "B": "This answer is correct! Adding four to h can be written as h+4 but also as 4+h, because they both give the same answer. Then we need to multiply all of that by 3, so we put it into brackets, with the three in front and no multiplication sign as we know 3 in front of the brackets means we have to multiply! :)",
@@ -85,7 +85,7 @@
     {
       "questionId": 77104,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b75e5076-e2f2-4402-94d6-0ab22a64c6b6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You are so close here! :) Just have a little think about how we usually write y x 5, it needs to look different enough from y to the power of 5 so it can't be confused. You'll get it next time! :)",
         "B": "Not quite! Reconsider which variables (letters) and numbers are being multiplied together here. You were close! :)",
@@ -97,7 +97,7 @@
     {
       "questionId": 78875,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a82cdb94-65e8-4f77-b959-3007150cd345.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You are so close here! :) Just have a little think about how we usually write b x 3, it needs to look different enough from b to the power of 3 so it can't be confused. You'll get it next time! :)",
         "B": "xy + 3b is the correct way to write this :) Following the order of operations, do the multiplications first and keep them separate, remembering that b x 3 is the same as 3 x b, so is best written as 3b, and then putting the addition sign in-between :) xy is the same as yx, but us mathematicians like alphabetical order! :)",
@@ -109,7 +109,7 @@
     {
       "questionId": 77105,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a4fb27cd-89d1-4b61-a81f-931c2ad5006e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You're not quite there yet - fantastic work removing the multiplication symbols, try putting them in alphabetical order with the number at the beginning and think about if there is a better way to write gg or gxg and you'll get there next time! :)",
         "B": "You're close but have a little bit more to do! Multiplications can be done in any order, but when writing them we like to do numbers first and then put the letters in alphabetical order, have another think :)",
@@ -121,7 +121,7 @@
     {
       "questionId": 78876,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6656cbc4-f91d-45fb-8e04-bd6f4dbd0092.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Great try! :) This answer is so close, but there is just one more thing to do! Can ggg be written better? (more like ll has?)",
         "B": "This answer is correct :) The number comes first, followed by the letters in alphabetical order and using powers instead of repeating the same letter. So gxgxg becomes g³ :)",
@@ -133,7 +133,7 @@
     {
       "questionId": 77106,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5e857139-9621-4773-9e74-f96eb4148fad.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "So close! Have another think about which number is being divided :)",
         "B": "There is a better way to write this, try thinking about what the divide symbol also looks like :)",

@@ -49,7 +49,7 @@
     {
       "questionId": 78683,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bee22a3c-5910-44a3-a67f-06ace563e171.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you went up 1 dash because of the 1 in the numerator Try to think about an equivalent fraction to ⅕ with a denominator of 10, and this may help you correctly locate its position on the number line: ⅕ = ?/10.",
         "B": "Convert ⅕ to a decimal: ⅕ = 2/10 = 2 ÷ 10 = 0.2. There are 10 marks in total, which takes us to 1, so each mark is 1 ÷ 10 = 0.1, making B the correct position for 0.2 or ⅕.",
@@ -85,7 +85,7 @@
     {
       "questionId": 109468,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/10fe1546-dfd7-4f80-90ed-b4ca6afc380a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you've the right idea, but may have made a place value error. Check by adding 0.02 and 0.8.",
         "B": "You possibly think these probabilities are the same, but take as a starting point the fact that the sum of the probabilities of all possibilities must equal 1. In this question, the event either happens or it doesn't.",
@@ -109,7 +109,7 @@
     {
       "questionId": 109469,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/35085f38-49d8-4d32-b1f4-bf721633cc3b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have had the right idea but you made a mistake subtracting the fraction. Thinking of 1 as being 11/11 may help.",
         "B": "You might be thinking that because there are three events, each has probability of one-third, but this isn't the case because we're told that winning has a probability of 3/11, and so does drawing a game. What does this make the total probability of winning or drawing? This may help you to think about the only other possibility, that of losing.",
@@ -121,7 +121,7 @@
     {
       "questionId": 109477,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1fb11557-c3cb-4a0b-9505-14aaa2e0bd47.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have had the right idea but subtracting the fractions may have been an issue. Thinking of 1 as being 5/5 for this question may help.",
         "B": "You may think that the probabilities are the same, but we know that there are just these three options: win, lose or draw, so they must add to give 1. Does 2/5 + 2/5 + 2/5 equal 1? What could you change the lose probability to in order to give an answer of 1?",
@@ -145,7 +145,7 @@
     {
       "questionId": 109478,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/76922b18-60f7-459b-bf0c-17b76d32e22d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Remember - a probability of 1 is a definite event, so a certainty. Would a probability greater than this value be possible?",
         "B": "I think you've recognised that 0.2 is less than 1, but take care with signs - probabilities can't be negative",

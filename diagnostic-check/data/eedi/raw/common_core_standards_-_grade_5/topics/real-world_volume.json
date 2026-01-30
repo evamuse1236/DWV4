@@ -37,7 +37,7 @@
     {
       "questionId": 173988,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/abd6f77a-a429-43cc-a217-29117a9a6d16.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you have found the difference between the two volumes. The question asks for the 'total volume', which is a clue that you need to add them together.",
         "B": "To find the total volume of the fort, you need to combine the volumes of the two boxes. It seems you have divided one volume by the other. The word 'total' is a hint to add.",
@@ -49,7 +49,7 @@
     {
       "questionId": 173929,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dc2c83b4-94f9-4dd9-87dd-4aa056ce1334.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "To find the total amount of water the trough holds, you need to add the volumes of the two sections together. The total volume is 7 m³ + 4 m³ = 11 m³.",
         "B": "The question asks for the 'total' amount. This is a clue to add the two volumes together. It looks like you have multiplied them.",
@@ -61,7 +61,7 @@
     {
       "questionId": 173989,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ad3bd67f-1e3f-4d89-8365-eb6482b75041.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The question asks for the total amount of water. It looks like you have found the difference between the two sections instead. 'Total' is a clue to add.",
         "B": "It seems you have multiplied the two volumes. To find the total volume when you are combining amounts, you should add them together.",
@@ -73,7 +73,7 @@
     {
       "questionId": 173930,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aad258f9-27ef-45d1-a899-29a84774258a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you've multiplied all the lengths you can see together. To find the volume of a composite shape, you need to find the volume of each part separately and then add them together.",
         "B": "It looks like you may have calculated the surface area of the shape instead of the volume. Remember, volume is the space inside the 3D shape.",
@@ -97,7 +97,7 @@
     {
       "questionId": 173931,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/78134497-efbc-45ae-b859-51390d539d41.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you've multiplied all the given dimensions together. You need to calculate the volume of each cake layer separately and then add them.",
         "B": "First, find the volume of each cake layer. The bottom layer is 12 x 12 x 3 = 432 cubic inches. The top layer is 8 x 8 x 2 = 128 cubic inches. Adding them together gives a total volume of 432 + 128 = 560 cubic inches.",
@@ -109,7 +109,7 @@
     {
       "questionId": 173991,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ad799706-20c2-45c6-807f-9dccd795bfc3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It looks like you've multiplied all the given dimensions together. Remember to find the volume of each cake layer separately first, and then add those two volumes together.",
         "B": "It seems you have found the surface area of the cake, which is the area of the outside that you could ice. The question asks for the volume, which is the amount of cake there is in total.",
@@ -121,7 +121,7 @@
     {
       "questionId": 173932,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8bdcd371-4aa9-444f-9fd7-41b2a05e92fb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It seems you've multiplied all the dimensions together to find the volume of one platform. You need to split the shape into two parts, find their volumes separately, and add them together.",
         "B": "You have correctly calculated the amount of concrete needed for one platform. Read the question again to see how many platforms Sam needs to make.",
@@ -133,7 +133,7 @@
     {
       "questionId": 173992,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/137085d1-75eb-4701-866b-9ba6cfbc38f6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have correctly calculated the volume of one platform, which is a great first step! Now, read the question again to see how many platforms Ann needs to make.",
         "B": "To find the volume of this shape, you need to split it into two smaller parts, find their volumes, and add them. It looks like you might have multiplied all the given numbers together.",

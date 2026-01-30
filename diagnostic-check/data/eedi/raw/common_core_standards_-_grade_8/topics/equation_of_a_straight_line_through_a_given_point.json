@@ -55,7 +55,7 @@
     {
       "questionId": 133989,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/48c36778-1df9-4354-ab6b-f59068f6fdf4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. I think you have confused the gradient and y-intercept in the equation of a straight line. If we think of the line in the form y = mx + c, m is the gradient and c is the where the line crosses the y axis.",
         "B": "Not quite. Look closely at the signs. This line has a gradient of +5 but we want the equation of a line with gradient -5.",
@@ -67,7 +67,7 @@
     {
       "questionId": 131797,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d5c7bfb6-bc33-4fae-9438-2a6562ce1e05.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This line does have a gradient of 2, but the point (1,1) does not lie on y = 2x + 1. Try substituting the values x=1 and y=1 into the equation to find the value for c.",
         "B": "This line does not have gradient of 2 because the coefficient (number in front) of x is 1 not 2.",
@@ -91,7 +91,7 @@
     {
       "questionId": 131798,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eb12274c-bcb6-4132-90dc-a097202d0335.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Tom is correct, we can calculate the gradient from the points given. Can we tell where this line crosses the y axis from the information given in the question?",
         "B": "Katie is correct (0,5) is the y intercept as this is the point the line will cross the y axis. We can calculate the gradient by working the difference in the y coordinates divided by the difference in the x coordinates.",
@@ -139,7 +139,7 @@
     {
       "questionId": 131800,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d82bb4b8-aeca-46b8-b436-fff08bba364f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, double check the calculations for Tom's gradient once again. Remember, -11 - 5 is -16.",
         "B": "Katie is correct as the line will cross the y axis at the point (0,-5).",

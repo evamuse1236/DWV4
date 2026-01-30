@@ -55,7 +55,7 @@
     {
       "questionId": 78218,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e918912b-0c1c-437b-917f-6d5e33ecfc71.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! I think you have assumed that every 1 mile travelled costs £1 but the graph doesn't show this. Which axis shows distance travelled? Can you find 30 miles? Can you read off the corresponding amount?",
         "B": "Not quite! I think you have used the wrong axis for distance travelled. The horizontal axis (x-axis) is the one that shows distance travelled.",
@@ -67,7 +67,7 @@
     {
       "questionId": 78512,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/85ab4e16-24a8-438f-ac1e-8ef38cf340a3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! I think you have used the wrong axis for distance travelled. The horizontal (x-axis) is the one that shows distance travelled.",
         "B": "Be careful. Have a look again. Do we go up one square until we get to £10?",
@@ -79,7 +79,7 @@
     {
       "questionId": 78219,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/44dea3ac-4bb1-4c93-87ed-31b8501a451a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Be careful. Have a look again. Using a ruler to read down to the axis can help with accuracy.",
         "B": "The graph shows that if Kay was paid £20 then she would have travelled 25 miles. Multiplying both of these by 4 (20 ✕ 4 = 80) tells us that if Kay got paid £80 she would have travelled 100 miles.\n\n",
@@ -91,7 +91,7 @@
     {
       "questionId": 78513,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eaeb9c63-25c3-4a78-a768-dbd32f1445ba.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! I think you have used the wrong axis for amount paid. The vertical axis (y-axis) is the one that shows the amount of money Kay gets paid for any distance travelled.",
         "B": "Not quite! I think you have assumed that every 1 mile travelled costs £1 but the graph doesn't show this. How far can Kay travel if the company pays her £20? Can you use this to work out how far Kay travelled if the company paid her £100?",
@@ -103,7 +103,7 @@
     {
       "questionId": 78222,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d616eca6-f63c-468a-aff8-37b8f478edaf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! I think you have seen the graph starts on the y-axis at £10 and assumed this was the cost per mile. This £10 is the fixed cost, as it has to be paid even if the customer travels 0 miles. The cost for every additional mile can be found by comparing two distances and their corresponding costs. \n\n",
         "B": "Not quite! The cost for every additional mile can be found by comparing two distances and their corresponding costs. How much does it cost to travel 10 miles? How much does it cost to travel 20 miles? How many additional miles is this? How much does it cost to travel these additional miles? Can you share this between each additional mile?",
@@ -127,7 +127,7 @@
     {
       "questionId": 78224,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aab046a7-d09e-4f35-b3b3-084a67abc331.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have the right idea, but how many seconds are in a minute?",
         "B": "It looks like you have read from the time (seconds) axis. Using the line labelled 'Q', we need to read across to the y axis to work out how much water leaks in a certain time (for example, 30 seconds) and then use this to find the rate per 60 seconds",

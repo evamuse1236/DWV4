@@ -61,7 +61,7 @@
     {
       "questionId": 135198,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dfa566e6-e69d-4a37-ad33-8ff4b6426753.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite - the speed is represented by the y axis, not by the gradient. Think about what is represented by the gradient",
         "B": "Almost! You've correctly recognised that the gradient represents acceleration, but you also need to consider the impact the direction of the slope has on your answer",
@@ -85,7 +85,7 @@
     {
       "questionId": 135199,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b1c11af8-89c1-4e9f-b7a9-816137ba21a8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite - the speed is represented by the y axis, not by the gradient. Think about what is represented by the gradient",
         "B": "On a speed-time graph the gradient represents acceleration. Where the gradient is negative, that means the acceleration is negative, and so Jadon is decelerating",
@@ -97,7 +97,7 @@
     {
       "questionId": 135219,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/866967e4-1e48-43d2-9856-53703a08c19b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost! You've correctly identified that the gradient on a distance-time graph represents speed. However, think about the impact the slope of the gradient has on the nature of the movement",
         "B": "Not quite! The gradient represents acceleration on a speed-time graph, but this is a distance-time graph. What does the gradient represent on a distance-time graph?",
@@ -109,7 +109,7 @@
     {
       "questionId": 135200,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d455da3-4b5f-4bbf-b60c-427fbdcfd763.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Look carefully at what is happening when the number of dollars is 0. If we exchanged $0 would we expect to get some euros?",
         "B": "Not quite. This graph has a negative gradient, which means the more dollars we exchange the less euros we would get. Is this what happens when you exchange currency?",
@@ -121,7 +121,7 @@
     {
       "questionId": 135220,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c5695358-07f7-4452-8b9e-524c1a849382.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Remember, for direct proportion if y = 0 then x = 0.",
         "B": "Not quite. This graph has a negative gradient which means as x increases y decreases. For direct proportion as x increases y should also increase.",

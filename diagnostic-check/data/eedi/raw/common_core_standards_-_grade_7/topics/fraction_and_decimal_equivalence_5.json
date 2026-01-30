@@ -25,7 +25,7 @@
     {
       "questionId": 100570,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c20f6696-287e-4200-bce4-a1c49ccda35e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The numerator will only tell us about the number after the decimal if we have a denominator of 10, 100, 1000 etc. Try finding an equivalent fraction out of 100.",
         "B": "3/20 can be changed into 15/100 by multiplying the numerator and denominator by 5. Then 15 ÷ 100 = 0.15",
@@ -37,7 +37,7 @@
     {
       "questionId": 100587,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f6e3a7e8-2c4d-4054-9685-f408c3bea7b8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The numerator will only tell us about the number after the decimal if we have a denominator of 10, 100, 1000 etc. Try finding an equivalent fraction out of 100.",
         "B": "This would be true if the denominator was 10. Try rewriting this fraction over 100 instead",
@@ -61,7 +61,7 @@
     {
       "questionId": 100617,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/60a16ab7-3d1a-44fb-a399-8b1ae6946db3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This number line doesn't go up in tenths so it isn't 2/10. Use the fact that this arrow is half way between 1/10 and 4/10 to help you find the fraction (making the denominator 20 might help), and then use division to change it into a decimal",
         "B": "This arrow is pointing half way between 1/10 and 4/10, so that is half way between 2/20 and 8/20. That means the arrow is pointing to 5/20. Using the bus stop method to do 5 divided by 20 we get 0.25",
@@ -97,7 +97,7 @@
     {
       "questionId": 100603,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/65bab30b-0d7a-476d-95ac-6d9d1c8d1bb9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The 3 and 5 don't tell us the fraction. We need to look at the difference between these numbers and how many jumps it has been split into.",
         "B": "Almost, this would have been right if the marked numbers were 3 and 4. What difference does the extra 1 make?",
@@ -109,7 +109,7 @@
     {
       "questionId": 100619,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/96b11f96-a227-423f-826f-69e53b65444a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Think about the difference between the 3 and 7, and how many jumps it has been split into.",
         "B": "The difference between the marked values of 7 and 3 is 4. This amount is shared evenly along 3 intervals, meaning that each of those intervals has a value of 4 ÷ 3 = 4/3.",
@@ -133,7 +133,7 @@
     {
       "questionId": 100620,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0417b598-4580-4215-8be7-00627ba9d222.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. We need to look at the difference between these numbers and how many jumps it has been split into.",
         "B": "The -3 and 7 don't tell us the fraction. We need to look at the difference between these numbers and how many jumps it has been split into.",

@@ -31,7 +31,7 @@
     {
       "questionId": 158664,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e18731a3-3376-4c36-9ac2-d3f9c2df5097.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you've rounded to the nearest ten. But we're asked to round to the nearest tenth. Remember that the tenths place value column is immediately after the decimal point.",
         "B": "You've rounded to the nearest hundredth. Remember that the tenths place value column is immediately after the decimal point.",
@@ -43,7 +43,7 @@
     {
       "questionId": 158358,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/04012dc5-1047-42d1-8804-ad1864a928de.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "To decide whether to round the 7 up or down. We look at the digit after the 7. If that digit is less than 5 we round down. If that digit is 5 or more, we round up.",
         "B": "The tenths place value column is immediately after the decimal point. Therefore, we need to decide whether to round the 7 up or down. We look at the digit after the 7 (6) and because it is greater than or equal to 5, we round up to 9.8.",
@@ -55,7 +55,7 @@
     {
       "questionId": 158665,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/553fcb35-5c4f-4a38-9e95-cdf1c7e24c30.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You've rounded to the nearest hundredth. Remember that the tenths place value column is immediately after the decimal point.",
         "B": "I think you've rounded to the nearest ten. But we're asked to round to the nearest tenth. Remember that the tenths place value column is immediately after the decimal point.",
@@ -79,7 +79,7 @@
     {
       "questionId": 158666,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8e6247e4-217c-4a6e-becb-589baab0da1e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've rounded to the nearest ten. But we're asked to round to the nearest tenth. Remember that the tenths place value column is immediately after the decimal point.",
         "B": "I think you might have tried to round down. But we decide whether to round the 2 up or down by looking at the digit after the 2. If that digit is less than 5 we round down (i.e. the 2 stays as a 2). Or, if that digit is 5 or more, we round up.",
@@ -103,7 +103,7 @@
     {
       "questionId": 158667,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/39a8cfe5-0a41-48f0-85ff-472fa8e3a1d2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The hundredths place value column is the second number after the decimal point. Therefore, we need to decide whether to round the 6 up or down. We look at the digit after the 6 (3) and because it is less than 5, we round down to 7.86",
         "B": "The hundredths place value column is the second number after the decimal point. Therefore, once we've rounded to the nearest hundredth, there will be only 2 numbers after the decimal point.",
@@ -115,7 +115,7 @@
     {
       "questionId": 158361,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/017430ce-7e94-4c6e-aad1-8638b920216f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Remember that when rounding up a 9, it becomes zero and we add 1 to the previous digit.",
         "B": "I think you've truncated 0.799 or rounded it down. But, to decide whether to round the 9 in the hundredths column up or down, we look at the digit after that 9. If that digit is less than 5 we round down. If that digit is 5 or more, we round up.",
@@ -127,7 +127,7 @@
     {
       "questionId": 158668,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/145b3a43-03ec-4e76-ba35-30113ea3c593.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Remember that when rounding up a 9, it becomes zero and we add 1 to the previous digit.",
         "B": "Remember that when rounding up a 9, it becomes zero and we add 1 to the previous digit.",

@@ -25,7 +25,7 @@
     {
       "questionId": 102999,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/34720ec3-0ed5-4587-8f93-d7483117eaa6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, this is half of 16. To find 16 squared we need to multiply 2 copies of 16 together",
         "B": "I think you have doubled rather than squared. You need to multiply two copies of 16 together",
@@ -49,7 +49,7 @@
     {
       "questionId": 103000,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d9615f98-618c-4128-a06f-4bd4d6a39875.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost, just remember a negative x a negative = positive",
         "B": "I think you have tried to double rather than squaring. You need to multiply two copies of -16 together",
@@ -61,7 +61,7 @@
     {
       "questionId": 103020,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6cfe258b-1bee-4797-8e86-ca1b79ed044f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have tried to double rather than squaring. You need to multiply two copies of -25 together",
         "B": "The calculation (–25)² is equivalent to –25 × –25. This will give a positive value equal to 25 × 25 = 625.",
@@ -85,7 +85,7 @@
     {
       "questionId": 103021,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9ea55df3-495f-402e-b9b1-13a89a9075ff.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have tried to double rather than squaring. You need to multiply two copies of 25 together and then make the answer negative",
         "B": "Not quite. As the negative is outside the bracket you need to work out 25 squared and then make the answer negative",
@@ -97,7 +97,7 @@
     {
       "questionId": 103002,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0840da47-1529-42ac-bdf8-61b4388c94ae.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have remembered square rooting has something to do with 2. What we need is 2 numbers that are the same which x together to make 16",
         "B": "This question is asking for the square root of 16, in other words the value that when multiplied by itself gives the number 16. This is 4",
@@ -109,7 +109,7 @@
     {
       "questionId": 103022,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0117faf5-d4d9-478d-821a-dc78362257a6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have remembered square rooting has something to do with 2. What we need is 2 numbers that are the same which x together to make 25",
         "B": "I think you have doubled. We need the number that multiplies by itself to give 25",
@@ -121,7 +121,7 @@
     {
       "questionId": 103003,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/90f5ccc8-3901-4729-a9e4-71aa43cc6c64.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. If the answer is -4 then -4 x -4 would have to equal -16, but it is actually +16",
         "B": "Not quite. 4 x 4 = 16, not -16",
@@ -133,7 +133,7 @@
     {
       "questionId": 103023,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ee4d0665-b466-4d5d-bbc1-f616b43ccbf2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. If the answer is -5 then -5 x -5 would have to equal -25, but it is actually +25",
         "B": "Not quite. 5 x 5 = 25, not -25",

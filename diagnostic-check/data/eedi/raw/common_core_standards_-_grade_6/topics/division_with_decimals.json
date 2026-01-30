@@ -37,7 +37,7 @@
     {
       "questionId": 103733,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7b5d25e1-b4c3-4637-b65d-3d8c762e7bd7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have subtracted rather than divided. You can use 5 divided by 2 to help you",
         "B": "Almost, but just check your place value",
@@ -49,7 +49,7 @@
     {
       "questionId": 103741,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/293c2944-c617-4224-a431-e7d144f4dcb4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have subtracted 0.1 from 0.4. We are dividing 0.1 by 4.",
         "B": "We know that 1 divided by 4 is a quarter or 0.25. We have started with a number that is ten times smaller, so the answer is also ten times smaller.",
@@ -73,7 +73,7 @@
     {
       "questionId": 103742,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/79a1f089-3726-40ba-9711-4e97f1ba8d0f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you have multiplied rather than divided. Try writing the question as a fraction to help you.",
         "B": "I think you have combined the digits rather than dividing. Writing this as a fraction might help you",
@@ -85,7 +85,7 @@
     {
       "questionId": 103735,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/13ee0f1f-064e-4c59-ba11-cb7cabd305c7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have multiplied rather than divided. Writing this as a fraction might help",
         "B": "Think of this as a fraction, 0.2/0.4. We multiply the top and bottom by 10 to get 2/4. This is the same as 1/2 = 0.5",
@@ -97,7 +97,7 @@
     {
       "questionId": 103743,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8bdae6cf-52e0-4a51-859e-3b6c2d23937f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you subtracted rather than divided. Writing this as a fraction will help.",
         "B": "I think you did 0.8 divided by 0.4. Try writing this as a fraction to help you",
@@ -121,7 +121,7 @@
     {
       "questionId": 122114,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/130b771b-07c8-4c24-a7a9-fb1d6758cc89.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you might have chosen the 0.5 because 0.3 x 5 = 1.5, but this is a division. Try rearranging to get the star on its own",
         "B": "I think you have multiplied these numbers to find the star. However, this is not how we get the star on it's own. Try writing it as a fraction and then rearranging.",

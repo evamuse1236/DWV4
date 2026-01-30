@@ -55,7 +55,7 @@
     {
       "questionId": 76013,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/edfb2887-cab3-42b0-b3d4-43dc109e6795.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have multiplied by 1.31. We need to work out what we would multiply 1.31 by to get 5.",
         "B": "I think you have converted to euros rather than pounds.",
@@ -67,7 +67,7 @@
     {
       "questionId": 76272,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cd93cb9e-4935-4185-bf82-1b2bd52f1b47.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you used the euros exchange rate rather than the dollar exchange rate",
         "B": "$6 = £6/1.31 = £4.58.",
@@ -91,7 +91,7 @@
     {
       "questionId": 76273,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2f0ae21c-406a-4a07-8164-8b4ba8d47b1d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have converted $6 to euros. We need to go from euros to pounds, and then pounds to dollars",
         "B": "I think you have converted £6 to dollars. We need to go from euros to pounds, and then pounds to dollars.",
@@ -127,7 +127,7 @@
     {
       "questionId": 104258,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/98f0f4f4-ac10-408d-b8a3-e74dbd37fed5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost. You changed the pounds into euros correctly, but be careful changing that to dollars",
         "B": "This is a two-stage calculation, going from pounds to euros, then euros to dollars. The first calculation is £10 × 1.2 to give the value in euros. To go from Euros to dollars we need to divide by 0.9.",
@@ -139,7 +139,7 @@
     {
       "questionId": 104260,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cb977235-30b5-4df2-89cb-cbc3ebb866dd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost. You changed the dollars into euros correctly, but be careful changing that to pounds",
         "B": "Almost, just check your operations.",

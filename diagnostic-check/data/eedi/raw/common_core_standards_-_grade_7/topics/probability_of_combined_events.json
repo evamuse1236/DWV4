@@ -67,7 +67,7 @@
     {
       "questionId": 78046,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c222eae2-db92-4aa4-b72d-2e81bde80416.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. This is the least likely outcome, as a 2 or a 12 only occurs twice in the table. Which outcome is most likely?",
         "B": "Rolling a 7 appears 6 times in the grid, making it the most likely.",
@@ -79,7 +79,7 @@
     {
       "questionId": 77876,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eca6adc0-866d-42f2-81ec-cb71523ed0af.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. To find the probability we need to multiply rather than add. As well this, think about how many cards there would be after you have picked the first card? Would there still be 52?",
         "B": "There are 4 aces, so the probability of getting the first ace is 4/52. As there are now 3 aces and 51 cards, the next probability is 3/51. Multiplying the two together gives the full probability.",
@@ -91,7 +91,7 @@
     {
       "questionId": 78047,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/81b84072-c1c2-45d1-ba6e-3c2e719c2e5f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. This is the probability of picking a 5 of hearts OR a 9 of hearts. To find the probability of picking ANY two hearts from a pack of cards you need to first find the probability of picking one heart and multiply it with the probability of picking another heart given the fact you have taken one out already.",
         "B": "So close! How many cards would be in the pack after you have picked the first heart?",
@@ -103,7 +103,7 @@
     {
       "questionId": 77877,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e218040c-ee7c-4f02-ad33-c60f86a14beb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Be careful! I think you have tried to add the denominators. To find the probability of getting a 1 on the first spinner AND a 1 on the second spinner we need to multiply.",
         "B": "We need to get 1 on both spinners, so the probability is 1/4 × 1/5 (as there are 4 outcomes on the first spinner and 5 on the second). This gives 1/20.",
@@ -139,7 +139,7 @@
     {
       "questionId": 78049,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e872dfdc-24e4-4b38-a7a4-19873a8b9652.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. I think you added the probabilities rather than multiplied.",
         "B": "So close! 3 x 0.5 = 1.5. What would 0.3 x 0.5 equal?",

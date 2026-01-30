@@ -25,7 +25,7 @@
     {
       "questionId": 103770,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/649f1cde-e304-4cfe-a43a-c2d96c0ccb6c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost. Remember BOTH the numbers in the calculation are 10 times smaller, so the answer is not just 10 times smaller.",
         "B": "Not quite. BOTH of the numbers in the calculation are 10 times smaller, so the answer won't be 1000 times smaller.",
@@ -61,7 +61,7 @@
     {
       "questionId": 103778,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8f882f85-8ac8-4231-8e0f-fe685076c9c9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The first number is 100 times smaller and the second one is 10 times bigger. What is the overall change?",
         "B": "Comparing 64 × 85 with 0.64 × 850, in the second calculation the 0.64 is 100 times smaller and 850 is ten times bigger. We can think of this as ÷ 100 × 10 = ÷ 10, so a combined result that is 10 times smaller: 5440 ÷ 10 = 544",
@@ -73,7 +73,7 @@
     {
       "questionId": 103772,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3c8eac40-e4aa-42be-9cb8-b717a09084db.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. The 2080 has changed to 208. Try rearranging the first calculation and then look at how the different number will affect the answer.",
         "B": "Looking at 32 × 65 = 2080, if we divide both sides by 32 (‘both sides’ to keep the calculation in balance, and ‘divide ... by 32’ in order to work towards the calculation requested), it becomes (32 × 65) ÷ 32 = 2080 ÷ 32. This simplifies to 65 = 2080 ÷ 32 but the right-hand side is still too big. To change 2080 to 208, divide both sides by 10 to give 6.5 = 208 ÷ 32. Also, thinking about an estimated answer for 208 ÷ 32, we could say it’s roughly of the order 200/30 = 20/3 ≈ 6.5, so estimating can be useful in deciding the size of the answer.",
@@ -85,7 +85,7 @@
     {
       "questionId": 103779,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0f5d3a44-2371-4b45-8c74-6e2cfb1b4948.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. The 5440 has changed to 544. Try rearranging the first calculation and then look at how the different number will affect the answer.",
         "B": "Looking at 64 × 85 = 5440, if we divide both sides by 64 (‘both sides’ to keep the calculation in balance, and ‘divide by 64’ in order to work towards the calculation requested), it becomes (64 × 85) ÷ 64 = 5440 ÷ 64. This simplifies to 85 = 5440 ÷ 64 but the right-hand side is still too big. To change 5440 to 544, divide both sides by 10 to give 8.5 = 544 ÷ 64. Also, thinking about an estimated answer for 544 ÷ 64, we could say it’s roughly of the order 500/60 = 50/6 ≈ 8.5, so estimating can be useful in deciding the size of the answer.",
@@ -109,7 +109,7 @@
     {
       "questionId": 103780,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7a31aa8b-875a-41f9-ab7d-59c976ed3e10.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Try rearranging the first calculation. You are then dividing by a number that is 100 times smaller. How will that affect your answer?",
         "B": "Not quite. Try rearranging the first calculation. You are then dividing by a number that is 100 times smaller. How will that affect your answer?",
@@ -121,7 +121,7 @@
     {
       "questionId": 103774,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/17f12ad9-694f-41a4-a1ac-a87d528a804c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Try rearranging the calculation first and then think about division. You have started off with a smaller number and divided by a smaller number. How will this affect the answer?",
         "B": "Almost, don't forget that the 6.5 is 10 times smaller. How will dividing by a smaller number affect the answer?",
@@ -133,7 +133,7 @@
     {
       "questionId": 103781,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b5400a5e-d76e-4715-a878-79fa5596004a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Try rearranging the calculation first and then think about division. You have started off with a smaller number and divided by a smaller number. How will this affect the answer?",
         "B": "Looking at 64 × 85 = 5440, if we divide both sides by 1000 (in order to get 5.44) and also by 6.4, it becomes (64 × 85) ÷ 1000 ÷ 6.4 = 5440 ÷ 1000 ÷ 6.4. The right-hand side is now 5.44 ÷ 6.4 and the left-hand side can be written as (64 × 85)/(1000 × 6.4) and simplifies to (85 × 10)/1000 = 85/100 = 0.85 .",

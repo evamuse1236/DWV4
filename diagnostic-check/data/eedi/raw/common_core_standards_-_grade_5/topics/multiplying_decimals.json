@@ -49,7 +49,7 @@
     {
       "questionId": 103724,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7d858e00-2117-4910-9ebd-b4fc38e65fb6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost. I think you multiplied 5 x 8, but you have made your answer 100 times smaller. Only one number has been made 10 times smaller.",
         "B": "I think you have tried to add rather than multiply. You can use 5 x 8 to help you answer this question",
@@ -61,7 +61,7 @@
     {
       "questionId": 103716,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/08b02359-13ed-45cc-98ad-f42476111535.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite, we don't combine the numbers like this when we multiply them. Remember you can use 3x7 to help you answer this question",
         "B": "Almost. You have used 3 x 7 = 21, but each number in our question is 10 times smaller. How does this effect the answer? It is not just 10 times smaller.",
@@ -73,7 +73,7 @@
     {
       "questionId": 103725,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1e6a4784-9ff2-4958-abc7-3e4802bcfc02.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, we don't combine the numbers like this when we multiply them. Remember you can use 2 x 8 to help you answer this question",
         "B": "Almost. You have used 2 x 8 = 16, but each number in our question is 10 times smaller. How does this effect the answer? It is not just 10 times smaller.",
@@ -85,7 +85,7 @@
     {
       "questionId": 103717,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7a51d1cd-66d1-4eda-b46d-d8f0fbb747b1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "We need to multiply 0.15 by 0.8. If we multiplied 0.15 by 1 we get 0.15 x 1 = 0.15. Would you expect that multiplying by 0.8 (rather than 1) would make the answer bigger or smaller than 0.15?",
         "B": "We need to multiply 0.15 by 0.8. If we multiplied 0.15 by 1 we get 0.15 x 1 = 0.15. Would you expect that multiplying by 0.8 (rather than 1) would make the answer bigger or smaller than 0.15?",
@@ -97,7 +97,7 @@
     {
       "questionId": 103726,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5944cb37-6ea5-4f56-b9fa-ebb35849668e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "We need to multiply 0.65 by 0.2. If we multiplied 0.65 by 1 we get 0.65 x 1 = 0.65. Would you expect that multiplying by 0.2 (rather than 1) would make the answer bigger or smaller than 0.65?",
         "B": "2 × 65 = 130. Looking at the question, 0.2 has 1 decimal place and 0.65 has 2 decimal places, so we have a total of 3 decimal places. So we need to put 130 into the 3 decimal places, so it is 0.130, which can be written as 0.13.",
@@ -109,7 +109,7 @@
     {
       "questionId": 103719,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3f3bc8d6-3cd4-4ad2-a329-46d20d974ee8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. We would expect the digits 64 in our answer because 16 x 4 = 64. But how many decimal places are there in 0.16 x 0.4? And how many decimal places do we need in our answer?",
         "B": "I think you may have confused perimeter and area. How do we find the area of a rectangle?",
@@ -121,7 +121,7 @@
     {
       "questionId": 103728,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fe8366bd-af80-4219-9e27-72118f34b8c1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. We would expect the digits 161 in our answer because 23 x 7 = 161. But how many decimal places are there in 0.23 x 0.7? And how many decimal places do we need in our answer?",
         "B": "I think you may have confused perimeter and area. How do we find the area of a rectangle?",
@@ -145,7 +145,7 @@
     {
       "questionId": 158620,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5a0dd51e-7e31-4a6e-a8b3-3c47e5f159b9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "0.3 x 0.9= 0.27. So, 0.9 is too small - we don't need both numbers to be decimals to get a decimal answer. How many times larger does 0.9 need to be, to get the answer 2.7?",
         "B": "We could first work out that 3 x 9 = 27. Then, making the 3 ten times smaller, we can calculate 0.3 x 9. This would make the answer 10 times smaller, so 0.3 x 9 = 2.7. Therefore, the missing number is 9.",

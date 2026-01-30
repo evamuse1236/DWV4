@@ -55,7 +55,7 @@
     {
       "questionId": 109530,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/36ee32cb-d54a-4e36-bb4e-15c86e4dc6e0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost. Remember that probability lies between 0 and 1",
         "B": "Almost. Remember that probability lies between 0 and 1",
@@ -67,7 +67,7 @@
     {
       "questionId": 109521,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4ecf18f3-ebd6-498a-9889-037e39aa8bc9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost. Remember the denominator needs to be the total number of possible outcomes",
         "B": "You are really close. Can you have a probability greater than 1?",
@@ -79,7 +79,7 @@
     {
       "questionId": 109531,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ffb2f446-0f75-48c3-bd05-5f0304cb5643.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost. Remember the denominator needs to be the total number of possible outcomes",
         "B": "There are 5 red balls and 9 in total, so the probability is 5/9.",
@@ -91,7 +91,7 @@
     {
       "questionId": 109522,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b70224a5-552d-41f7-9307-c4abec049547.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. The 3 yellow balls need to represent 1/3 of all the balls, so 1/3 = 3. Think about the fraction that would be red, and how many more reds you need.",
         "B": "Adding 2 red balls means that there will be 3 yellow balls out of a total of 9, and so the probability is 3/9 = ⅓",
@@ -103,7 +103,7 @@
     {
       "questionId": 109532,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/11622f3f-6d91-46c0-a77d-c67838538f7c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. The 4 yellow balls need to represent 1/3 of all the balls, so 1/3 = 4. Think about the fraction that would be red, and how many more reds you need.",
         "B": "Not quite. The 4 yellow balls need to represent 1/3 of all the balls, so 1/3 = 4. Think about the fraction that would be red, and how many more reds you need.",
@@ -127,7 +127,7 @@
     {
       "questionId": 109533,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8ff7c97b-0d64-42e0-af21-5bd992ba57a7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you assumed she didn't put the yellow ball back in so the number of yellow balls and the total balls has decreased. As it was replaced the number of balls is unchanged.",
         "B": "If she puts the yellow ball back, the number of yellow balls will remain as four. Dividing by the total (9) gives the probability.",
@@ -139,7 +139,7 @@
     {
       "questionId": 109524,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ba6de0b2-ff79-429e-acf5-6f75a4de8fe9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you assumed she put the ball back, but she kept the yellow ball she picked. Think about how many yellow balls are now in the cup, and how many balls there will be in total.",
         "B": "I think that you saw that the number of balls will decrease as she didn't replace it. Think about how many yellow balls are now in the cup.",
@@ -151,7 +151,7 @@
     {
       "questionId": 109534,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ffee92c8-23a2-4d61-b281-677c3d753f12.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you assumed she put the ball back, but she kept the yellow ball she picked. Think about how many yellow balls are now in the cup, and how many balls there will be in total",
         "B": "Removing one yellow ball means that there will be 3 left out of a total of 8, so the probability is 3/8.",

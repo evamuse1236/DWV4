@@ -19,7 +19,7 @@
     {
       "questionId": 159325,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/23cdc08a-6546-4c93-8ea4-e09690c90f86.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite - we want to count up 100, not just 1.",
         "B": "Not quite - we want to count up 100, not just 10. Which digit is the hundreds?",
@@ -43,7 +43,7 @@
     {
       "questionId": 159326,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e2dc9246-03dd-4f36-b4ad-26fb54350440.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "If we are skip counting in 100s, the next number will be 200 + 100 = 300. Which number here can we not get to by adding hundreds on to 200?",
         "B": "If we are skip counting up from 200, the numbers will never get smaller than 200, so we will never say 100.",
@@ -55,7 +55,7 @@
     {
       "questionId": 159548,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0e31485b-401f-4f52-ab02-aba6f442cef0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "If we keep skip counting in 100s, after 900 we will reach 1000! Which number can we not get to by counting in 100s from 600?",
         "B": "If we keep skip counting 600, 700, 800... we will reach 800. Which number can we not get to by counting in 100s from 600?",
@@ -67,7 +67,7 @@
     {
       "questionId": 159327,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cc2fe541-04b7-46ea-900d-dfcf64c5aa8e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite - we want to count up 100, not just 1. Which digit is the hundreds?",
         "B": "Not quite - we want to count up 100, not just 10. Which digit is the hundreds?",
@@ -79,7 +79,7 @@
     {
       "questionId": 159549,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cfde7046-f03f-4bf2-9e82-374696f82211.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite - we want to count up 100, not just 10. Which digit is the hundreds?",
         "B": "If we are skip counting in 100s, we want the hundreds column to change. After 700 comes 800, so 100 after 728 is 828.",
@@ -91,7 +91,7 @@
     {
       "questionId": 159328,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bd0fb22b-bc43-4f05-ad85-f932b1f799b0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you skipped 200 back instead of 100! What comes before 300, counting in 100s?",
         "B": "If we are skip counting in 100s, we want the hundreds column to change. Before 300 comes 200, so 100 before 399 is 299.",
@@ -103,7 +103,7 @@
     {
       "questionId": 159550,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/91741b7e-a25c-4b4c-b7b4-d8bd82363f79.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "556 is the next number after 456. We want the number at the beginning of the sequence, before 256!",
         "B": "It looks like you skipped 200 back instead of 100! What comes before 200, counting in 100s?",
@@ -115,7 +115,7 @@
     {
       "questionId": 159329,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cb29133f-9e97-4b4b-b69d-b983d64ef78d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite - we want to count back 100, not just 1. How many hundreds are in this number?",
         "B": "Not quite - we want to count back 100, not just 10. How many hundreds are in this number?",

@@ -37,7 +37,7 @@
     {
       "questionId": 166545,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/37b99b68-39de-45c1-bc02-9a45ca6a4e5e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Close, but if he has $40 to spend, he could also spend exactly 40. How could we show this in our inequality sign?",
         "B": "It's $2.50 admission and $3 per ride (𝑥). We can represent this cost as 2.50 + 3𝑥. He has $40, so the amount he spends must be less than or equal to 40. Therefore, 2.50 + 3𝑥 ≤ 40.",
@@ -61,7 +61,7 @@
     {
       "questionId": 166546,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0ebc1885-1ad1-41d1-956d-60673966155d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you've used $4 as the admission fee and then $5.50 per ride which is mixed up from what we are given in the question.",
         "B": "I think you've added $5.50 and $4 together and then divided by this, but the $5.50 admission is only a one-off payment so only needs to be taken away once.",
@@ -73,7 +73,7 @@
     {
       "questionId": 166320,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/85f80dc2-3cd2-4b57-a436-320496954fcd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Very close, but because the question says 'at most', this could also include 65 pounds. How could we show that in our inequality symbol?",
         "B": "I think you've got your inequalities mixed up. > is 'greater than' but we are told that the dog has to weigh 65 or less.",
@@ -97,7 +97,7 @@
     {
       "questionId": 166321,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7f8f0362-c403-40f5-ac01-13397c49e141.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Close, but remember that when we divide an inequality by a negative, we have to switch the sign!",
         "B": "65 - 98 = -33, giving us -3x ≤ -33. When we divide by -3, we switch the inequality symbol, so we would have x ≥ 11.",
@@ -109,7 +109,7 @@
     {
       "questionId": 166548,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f2701d6c-ca05-4f05-9bad-ce2ad18d9939.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think your inequality might be back to front. We are starting at 72 and then subtracting 2 pounds per week (𝑥).",
         "B": "Close, but remember that when we divide an inequality by a negative, we have to switch the sign!",

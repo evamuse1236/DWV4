@@ -55,7 +55,7 @@
     {
       "questionId": 155605,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6b76f723-c50f-4c54-acc0-42273315f357.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have added the two numbers. The question asks you to subtract.",
         "B": "In the units column, we cannot calculate 2 - 8, so we would need to borrow from the tens column. 1 ten is regrouped into 10 units. We then have 12 - 8 = 4 in the units column, so the star would be 4.",
@@ -79,7 +79,7 @@
     {
       "questionId": 159581,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fc17b91d-5627-49a7-8d09-93b824ca23a7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "We can't just write the digits together, we need to count on 3 from 897. The next number is 898, then, then...",
         "B": "We can't just write the digits together, we need to count on 3 from 897. The next number is 898, then, then...",
@@ -103,7 +103,7 @@
     {
       "questionId": 159582,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fcfa79a1-93b1-47dc-9049-ce049f094cdd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Look at the top fact again. If we take away 398 from 855, what is the part that is left over?",
         "B": "You have added the numbers together, but we are trying to subtract. Look at the top fact - what will be left over if we take 398 away from 855?",
@@ -115,7 +115,7 @@
     {
       "questionId": 159361,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/54e0928a-89d4-4cf4-bca4-99de1d9ccd2c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite - the stick has 10 cubes so it represents 10, not 1.",
         "B": "The cube has 10 x 10 x 10 = 1000 small cubes in. The stick has 10 cubes in. 1000 - 10 = 990.",
@@ -127,7 +127,7 @@
     {
       "questionId": 159583,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7003ff22-695f-4c84-9bcc-f72e56422f97.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite - the stick has 10 cubes so it represents 10, not 100.",
         "B": "Not quite - the cube has 10 x 10 x 10 = 1000 cubes in it, not 100...",
@@ -139,7 +139,7 @@
     {
       "questionId": 159362,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6c005400-527f-4c31-bee3-f7e1652ad4ec.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have added the total number of days to the days he has already done. This would mean he has more days left than he goes to school in a whole year! We want to know how many days are left in the year after 114 days, what calculation is that?",
         "B": "That is the number of days Tom has gone to school up to yesterday. How many are left between 114 days and 170 days for the whole year?",
@@ -151,7 +151,7 @@
     {
       "questionId": 159584,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/68135240-6447-4a05-bddc-688208eee5cc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have added the total number of days to the days he has already done. This would mean he has more days left than he goes to school in a whole year! We want to know how many days are left in the year after 123 days, what calculation is that?",
         "B": "We want to know how many more days are left, so we do 170 - 123 = 152.",

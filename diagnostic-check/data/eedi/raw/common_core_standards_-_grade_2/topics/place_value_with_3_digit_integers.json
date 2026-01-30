@@ -25,7 +25,7 @@
     {
       "questionId": 159382,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6cbd30ff-c404-42a3-8682-e5ae480ef153.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, that's the hundreds place.",
         "B": "The digits in this number are hundreds, tens, ones, so 3 is in the tens place.",
@@ -37,7 +37,7 @@
     {
       "questionId": 159604,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ac338aa8-6fb1-4230-981d-a98a8c74e007.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, that's the hundreds place.",
         "B": "Not quite, that's the tens place.",
@@ -61,7 +61,7 @@
     {
       "questionId": 159605,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c244fb1f-c0ac-46e0-89c9-8e4116de3333.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite - you have mixed up the hundreds and the tens.",
         "B": "Almost, but this number has 2 ones instead of 2 tens.",
@@ -73,7 +73,7 @@
     {
       "questionId": 159384,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/487fc52d-d2cb-48fc-aeaf-3f1a4debe4a9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite - remember the values of the digits are hundreds, tens, ones.",
         "B": "The values of the digits are hundreds, tens, ones, so 6 is in the ones place.",
@@ -85,7 +85,7 @@
     {
       "questionId": 159606,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/73b48220-df56-41e7-8df0-8b045e3d1fd3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite - remember the values of the digits are hundreds, tens, ones.",
         "B": "Not quite - remember the values of the digits are hundreds, tens, ones.",
@@ -97,7 +97,7 @@
     {
       "questionId": 159385,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fb593eed-db03-4a08-97d2-78bdd42bf79f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite - remember the values of the digits are hundreds, tens, ones. Which place is the 7 in?",
         "B": "Not quite - remember the values of the digits are hundreds, tens, ones. Which place is the 7 in?",
@@ -109,7 +109,7 @@
     {
       "questionId": 159607,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4e0064b0-35c7-4282-982a-e3d2fbe45fd7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite - remember the values of the digits are hundreds, tens, ones. Which place is the 5 in?",
         "B": "5 is in the tens place, so its value is 5 tens or 50.",
@@ -121,7 +121,7 @@
     {
       "questionId": 159386,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9c8d9f2e-5349-4334-811d-a05393b5e411.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Can you see that each of the big blocks has 100 little cubes in, and each stick has 10 little cubes in? What number does 2 hundreds and 3 tens make?",
         "B": "Each green block has 100 cubes, so two blocks make 200. Each yellow stick has 10 cubes, so three sticks make 30. Altogether, 230.",
@@ -133,7 +133,7 @@
     {
       "questionId": 159608,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/75531eff-772e-44c7-803a-b079c9372aa2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Can you see that each of the big blocks has 100 little cubes in, and each stick has 10 little cubes in? What number does 3 hundreds and 5 tens make?",
         "B": "Almost, but the yellow sticks don't represent ones. How many little cubes are in each stick?",

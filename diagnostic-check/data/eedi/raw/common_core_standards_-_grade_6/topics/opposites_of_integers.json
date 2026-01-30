@@ -61,7 +61,7 @@
     {
       "questionId": 165479,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fd1f7f0a-3137-4914-87b9-7475826da3d3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have confused the distance of the opposite from -1. The opposite has to be the same distance away from 0 as -1. What number is opposite of -1?",
         "B": "-1 is 1 unit away from 0 and 1 is also 1 unit away from 0, making 1 the opposite of -1.",
@@ -73,7 +73,7 @@
     {
       "questionId": 165475,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/13bf9dce-719c-421a-b74f-59aa4a2edada.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have confused opposite with squaring. Squaring a number is multiplying it by itself. The opposite of a number is the same distance from 0. What other number is 10 units from 0?",
         "B": "I think you may have confused opposite with absolute value. We are looking for the number that lies the same distance from 0 as 10 does. This number could be negative, unlike absolute value.",
@@ -85,7 +85,7 @@
     {
       "questionId": 165480,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4d708834-045e-411c-9337-1b3727d785af.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have confused the distance of the opposite from 8. The opposite has to be the same distance away from 0 as 8. What number is opposite of 8?",
         "B": "I think you may have confused opposite with absolute value. We are looking for the number that lies the same distance from 0 as 8 does. This number could be negative, unlike absolute value.",
@@ -97,7 +97,7 @@
     {
       "questionId": 165476,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bb3b8bbc-a401-4a24-9ce6-693ad626b831.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have confused the distance of the opposite from -25. The opposite has to be the same distance away from 0 as -25. What number is opposite of -25?",
         "B": "-25 is 25 units away from 0 and 25 is also 25 units away from 0, making 25 the opposite of -25.",
@@ -109,7 +109,7 @@
     {
       "questionId": 165481,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a478f19d-03d7-43e7-a124-ec8daecc0e69.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you may have switched the order of the digits. Remember, the opposite of a number is the same distance from 0, but on the other side. What number is 16 away from 0 in the other direction?",
         "B": "I think you may have confused the distance of the opposite from -16. The opposite has to be the same distance away from 0 as -16. What number is opposite of -16?",
@@ -133,7 +133,7 @@
     {
       "questionId": 165482,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e569ace8-cbbb-425b-b7b8-ed29b1a28849.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have assumed that the opposite of 0 is infinity, or a very large number. Remember, the opposite is how far away a number lies from 0. How far away is 0 from 0?",
         "B": "The opposite is the same distance from 0 on a number line. 0 is 0 distance from itself, so it is its own opposite.",

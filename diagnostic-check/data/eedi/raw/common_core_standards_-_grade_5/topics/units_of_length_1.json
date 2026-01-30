@@ -37,7 +37,7 @@
     {
       "questionId": 107575,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fe8f6403-fa5a-446f-9815-0ca8580f3185.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "cm is a unit of length; cm represents centimetres, which is one hundredth of one metre. When calculating the perimeter, you are using lengths; cm can be used.",
         "B": "ml represents millilitres, which is a measure of volume. When calculating the perimeter, you use lengths, and so ml is an incorrect unit for the perimeter.",
@@ -61,7 +61,7 @@
     {
       "questionId": 107576,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4e887615-3447-4cd5-a07a-0b719787430a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember there are 100cm in 1m. Consider first what 7cm is in metres",
         "B": "There are 100 cm in a metre, and so 7 cm = 7/100 = 0.07 m. Adding this to the other 5 m gives 5.07 m.",
@@ -85,7 +85,7 @@
     {
       "questionId": 107577,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2df5fc31-dba6-4a72-96b3-c0e929beae04.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have changed the km into m correctly, but remember centimetres are shorter than metres. 1m = 100cm.",
         "B": "There are 100 centimetres in a metre and so 7 cm = 7/100 = 0.07 metres. 1 kilometre is 1000 metres, , so 5 km = 5 × 1000 = 5000 m. Adding the two together gives 5000.07 m.",
@@ -97,7 +97,7 @@
     {
       "questionId": 107587,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/aeba2472-4b62-4a1e-b9ae-3e4494124a86.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Remember centimetres are shorter than metres. 1m = 100cm, what will 40cm be equal to?",
         "B": "I think you've forgotten to convert 40cm into metres as well :)",
@@ -109,7 +109,7 @@
     {
       "questionId": 107578,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/275fb21f-5392-4a0b-ba21-ddc96c7e62e8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Remember there are 100cm in 1m, what will 1 metre 6 centimetres be in metres?",
         "B": "Remember there are 1000 metres in 1 kilometre. What will 25km be in metres?",
@@ -121,7 +121,7 @@
     {
       "questionId": 107588,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c80dc477-683e-4153-bdf3-217391255002.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember that 1km = 1000m, what will 8980m be in km?",
         "B": "The distance 9 km is equal to 9000 m, and so Katie is incorrect. The measurement 2¼ m is equal to 2.25 metres, and so Tom is correct.",
@@ -133,7 +133,7 @@
     {
       "questionId": 107579,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d1340748-b03c-4556-839f-26a82529598b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you've chopped off 0.1m, rather than 0.1cm.",
         "B": "I think you've chopped off 0.1m, and converted your answer to cm, rather than mm",
@@ -145,7 +145,7 @@
     {
       "questionId": 124601,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cc7ba0ad-5b17-479d-93e2-39ffeb8ec3f9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you've chopped off 0.5mm, rather than 0.5cm.",
         "B": "Two metres is equal to 200 cm, and so the length of rope that remains is 200 – 0.5 = 199.5 cm long. There are 10 mm in a centimetre, and so we have 199.5 cm = 199.5 × 10 = 1995 mm",

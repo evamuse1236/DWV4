@@ -43,7 +43,7 @@
     {
       "questionId": 135232,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d07b4bda-9d97-4ec2-989c-91063d89a57d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! Have a think about how many ways there are of spinning a 1 and then about the total number of ways in which the spinner can land.",
         "B": "Not quite, this is the same as 1/5. What's the total number of ways in which the spinner can land on a 1?",
@@ -67,7 +67,7 @@
     {
       "questionId": 135233,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7c38b95e-2577-41cd-a9e0-154d11034fdf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! Have a think about how many ways there are of spinning a 3 and then about the total number of ways in which the spinner can land.",
         "B": "Not quite, this is the same as 1/4. How many different ways can the spinner land?",
@@ -79,7 +79,7 @@
     {
       "questionId": 135214,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/76e1db60-5f4d-46a0-855a-dc93d6d40319.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! I think you've considered the two outcomes of red, but you also need to think what the 2 is out of. How many ball are in the bag?",
         "B": "Not quite! Think about how many outcomes would give red. Also, ask yourself about the total number of outcomes.",
@@ -91,7 +91,7 @@
     {
       "questionId": 135234,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d30d6827-9c6b-4e15-bcbd-9e7cb1c39b65.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you've got the right idea, but maybe the wrong colour of ball!",
         "B": "There are three possible outcomes for choosing a blue ball, and this is out of a total of 10 possibilities. This gives a probability of 3/10 = 3 ÷ 10 = 0.3",
@@ -103,7 +103,7 @@
     {
       "questionId": 135215,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2725a03c-70c6-4d26-8c48-0fbe82ca03c5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you're focussing on the choice of two different colours. Try thinking about how many outcomes would give blue. Also, ask yourself about the total number of outcomes.",
         "B": "There are three possible outcomes for choosing a blue ball, and this is out of a total of 5 possibilities. This gives a probability of 3/5 = 60/100 = 60%",
@@ -115,7 +115,7 @@
     {
       "questionId": 135235,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e9928ae7-14ed-4569-9c6d-a886bf31c2bc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have the right idea but have struggled with converting your fraction to a percentage. What would the equivalent fraction be if the denominator (bottom number) was multiplied to give a value of 100?",
         "B": "Not quite! I think you're focussing on the choice of two different colours. Try thinking about how many outcomes would give blue. Also, ask yourself about the total number of outcomes.",
@@ -127,7 +127,7 @@
     {
       "questionId": 135216,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5e9ce313-f4cf-42f2-b060-142156fda0ad.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! I think you've considered the two outcomes of red, but you also need to think what the 2 is out of. How many ball are in the bag?",
         "B": "Not quite! I think you're focussing on the choice of two different colours. Try thinking about how many outcomes would give red. Also, ask yourself about the total number of outcomes.",

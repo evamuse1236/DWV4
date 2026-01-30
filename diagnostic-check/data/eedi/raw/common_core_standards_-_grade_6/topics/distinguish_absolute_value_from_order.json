@@ -49,7 +49,7 @@
     {
       "questionId": 165498,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b3fffcf6-2f75-4724-a7c6-895bf1fd3e53.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost. Owen has as good score, but did someone score higher than him?",
         "B": "I think you have confused the lowest score for the highest score. Can you find the highest score?",
@@ -97,7 +97,7 @@
     {
       "questionId": 165500,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/15a4c623-033a-4d03-9899-63cac11668d9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you may have confused -20 and |-20|. Remember, |-20| is asking how far away is -20 from 0? With that in mind, which value would be less than 12?",
         "B": "Remember the small end of the inequality sign should point to the smaller value and the larger end should point to the larger value. Is 40 < 12?",
@@ -133,7 +133,7 @@
     {
       "questionId": 165497,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7cce822e-92db-4797-805e-fc767999816f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you may have put these in order from greatest to least.",
         "B": "Careful, look closely at -|10|. What does it mean if the negative sign is outside of the absolute value?",
@@ -145,7 +145,7 @@
     {
       "questionId": 165502,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1a44e77b-bbe5-4a96-8a93-302b0312ac9e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember |-4| is asking how far away from 0 is -4 located? Keeping that in mind, how should we put these values in order from least to greatest?",
         "B": "-|9| = -9, |-4| = 4, |2| = 2, 5. These numbers are ordered from least to greatest.",

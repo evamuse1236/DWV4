@@ -43,7 +43,7 @@
     {
       "questionId": 78415,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0afc3c88-04aa-49ab-8c74-05648591beef.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Student A has scored a 3 in science and a 3 in Maths but Katie scored a 3 in science and a 7 in Maths.",
         "B": "Not quite. Student B has scored a 7 in science and a 7 in Maths but Katie scored a 3 in science and a 7 in Maths.",
@@ -55,7 +55,7 @@
     {
       "questionId": 78709,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/37cfd2a3-d4f6-4f21-866c-e97192a2264b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have accidentally swapped the axes round. Make sure you are looking for a score of 8 on the maths axis and 5 on the science one.",
         "B": "The science mark is on the 𝑦-axis and the maths mark is on the 𝑥-axis. Reading 5 on the 𝑦-axis and 8 on the maths axis, you get the point B.",
@@ -103,7 +103,7 @@
     {
       "questionId": 78712,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/084cf051-0f19-4cc9-81ea-8874e6dcf489.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Remember, a line of best fit needs to go in the same direction as the points.",
         "B": "The blue line goes in the same direction as the points, and has roughly the same amount of points above and below the line.",
@@ -115,7 +115,7 @@
     {
       "questionId": 78419,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1fe3883b-bd80-4c52-bd31-86cafeb55cb7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. A line of best fit is shown in the diagram, but it does not describe the relationship. Think about what happens as age increases.",
         "B": "From following the points in the scatter graph, and the general trend of the line of best fit, it can be seen that as age increases, weight also increases.",
@@ -151,7 +151,7 @@
     {
       "questionId": 78715,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bb70728a-4dda-4ef8-9f58-f28673570dd3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! If we drew a line of best fit for these points, A would be close to it. Can you spot any points that would lie far away from the line?",
         "B": "If we drew a line of best fit for these points, point B would not fit with it.",

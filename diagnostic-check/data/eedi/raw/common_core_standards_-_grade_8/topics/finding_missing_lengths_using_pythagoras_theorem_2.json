@@ -61,7 +61,7 @@
     {
       "questionId": 79640,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/38e06648-462f-4dc1-805e-860883496efd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! I think you have forgotten to square your side lengths to use Pythagoras' Theorem correctly.",
         "B": "Not quite. Remember that a right angled triangle will fit the formula: a² + b² = c², so check if 11² + 11² = 18². Then check out the other triangles the same way.",
@@ -73,7 +73,7 @@
     {
       "questionId": 79684,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1a507fde-5240-4ff8-909a-e4c3e3a96e93.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! It's tempting to feel that 15 and 17 are too close together, however a right angled triangle will always fit the formula: a² + b² = c². Here we have 8² + 15² = 17², so this is a right-angled triangle.",
         "B": "Remember, the hypotenuse is always the longest side, in this case 26, so we use this for 'c' in the formula a² + b² = c². Here we have 10² + 24² = 26², so this is a right-angled triangle.",
@@ -85,7 +85,7 @@
     {
       "questionId": 79641,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b008eed8-37ea-40a6-a063-d3efee3b4d75.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you calculated √(14² - 4²) = 13.4 cm and then doubled it. That would work if both parts of the line PQ were equal, but they are not. Use the c² - b² = a² form of Pythagoras' Theorem for the left triangle too.",
         "B": "Notice that the two sides of the base need to be calculated individually as they are not equal. Use the c² - b² = a² form of Pythagoras' Theorem for each triangle here.",
@@ -109,7 +109,7 @@
     {
       "questionId": 79643,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c1f68fcd-3080-4750-bdef-a93f851bf32b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Nearly! Take a look at the final step of your calculation - I think you have subtracted rather than added here.",
         "B": "Not quite! I think you have used 7cm as the length of the shorter diagonal side. We need to calculate this using Pythagoras' Theorem, with the base sides of 7cm each to work out the hypotenuse AC, and then go from there.",
@@ -121,7 +121,7 @@
     {
       "questionId": 79687,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/61ef1e27-8aef-4758-b042-0fdcb4d01b62.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Nearly! Take a look at the final step of your calculation - I think you have subtracted rather than added here.",
         "B": "The length between A and the centre of ABCD is √(2.5² + 2.5²) = √12.5, and then AE = √(12.5 + 10²) = 10.61cm.",
@@ -145,7 +145,7 @@
     {
       "questionId": 95840,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fb203b2f-9938-430a-b054-8cc794ea49a0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Keep going! I think you have forgotten the final step in calculating the area of a triangle, which is to divide by 2.",
         "B": "Not quite! Remember for area of a triangle we need the perpendicular height (imagine a stone being dropped from the apex (top) of the triangle). You have used the slant height here.",

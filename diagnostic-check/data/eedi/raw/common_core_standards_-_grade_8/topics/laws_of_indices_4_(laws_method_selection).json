@@ -67,7 +67,7 @@
     {
       "questionId": 135088,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3f544d0b-7720-4503-a4b6-769e114138df.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have subtracted the powers the wrong way round.",
         "B": "When we have the same base we subtract the powers when we divide. 3 - 4 = -1, so we have 2^-1",
@@ -79,7 +79,7 @@
     {
       "questionId": 135108,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a803336d-7253-4220-9a4e-6ef140684eab.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have divided the powers. When we have the same base we subtract the powers when we divide",
         "B": "I think you have subtracted the powers the wrong way round.",
@@ -103,7 +103,7 @@
     {
       "questionId": 135109,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d27c4e8e-2d14-463b-baa6-e8f026f25946.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you forgot to take into account the negative signs. Remember subtracting a negative is the same as adding a positive.",
         "B": "I think you made a mistake with the subtraction. Remember subtracting a negative is the same as adding a positive.",
@@ -115,7 +115,7 @@
     {
       "questionId": 135090,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0560984e-bf47-442b-8896-aa0cb58da9d9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you multiplied the numbers inside the bracket. This question is saying that we have 5 copies of 2 cubed multiplied together. How many copies of 2 is this?",
         "B": "I think you multiplied the 2 by the 5. This question is saying that we have 5 copies of 2 cubed multiplied together. How many copies of 2 is this?",
@@ -127,7 +127,7 @@
     {
       "questionId": 135110,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/72557d28-8b05-41ea-87d2-591a45bc1eac.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you added the powers. This question is saying that we have 2 copies of 7 to the power of 5, all multiplied together. How many copies of 7 is this?",
         "B": "I think you squared the 7 and squared the 5. This question is saying that we have 2 copies of 7 to the power of 5, all multiplied together. How many copies of 7 is this?",
@@ -139,7 +139,7 @@
     {
       "questionId": 135091,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2cd8fc42-6243-4be6-a4a0-af9c0f241c0c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Just be careful with your negatives here.",
         "B": "I think you added the powers, but we use this when we are multiplying. What operation do we use on the powers when we are raising to a power?",
@@ -151,7 +151,7 @@
     {
       "questionId": 135111,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4aa50541-a913-46b4-8a14-b90f7ab52831.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Just be careful with your negatives here.",
         "B": "Here we need to multiply the powers. -3 x -4 = 12, so we have 3¹².",

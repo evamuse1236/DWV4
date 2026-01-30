@@ -43,7 +43,7 @@
     {
       "questionId": 129082,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/86e41026-82b3-451e-ae9f-d1d7d7676711.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you might have found the distance around the outside of the square, which is the perimeter. How do we find the area?",
         "B": "It looks like you have multiplied the side length by 2 to get your answer. But we need to square the side length. How do we square a number?",
@@ -67,7 +67,7 @@
     {
       "questionId": 129083,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e57087ea-7ff4-4814-8521-569dd295339d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have added the two sides together, which will give us a length. Try to picture how many centimetre squares fit inside the shape. We will have 8 rows of 5 squares. How many squares will that give us?",
         "B": "To find the area of a rectangle, we multiply the length by the width. 8 x 5 = 40. We are multiplying cm by cm so our units are cm². So the area is 40 cm².",
@@ -79,7 +79,7 @@
     {
       "questionId": 129223,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/56e5413e-5aa6-4fa4-890c-cb6b54dc3a9d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you might have found the distance around the outside of the rectangle, which is the perimeter. How do we find the area?",
         "B": "I think you have added the two sides together, which will give us a length. Try to picture how many centimetre squares fit inside the shape. We will have 9 rows of 4 squares. How many squares will that give us?",
@@ -91,7 +91,7 @@
     {
       "questionId": 129084,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f2dac85d-e7b8-470b-a1eb-8b0663700481.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. Adding the side lengths doesn't give us an area. We calculate the area of a rectangle by multiplying the length and the width. So what operation do we need to use to find the missing length from the area?",
         "B": "I think you have divided the 15 cm length by 2. But we need to work backwards from the area. Start by thinking about how we calculate area. What do we have to do to 15 cm to get 45 cm²?",
@@ -115,7 +115,7 @@
     {
       "questionId": 129085,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a9bba61a-1608-422c-bfe6-2351a1bc31e5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Almost. Try counting the number of full squares and half squares that are covered by the triangle. Try to be as accurate as possible.",
         "B": "There are 3 full squares covered by the triangle but what about the part-squares? How many are there? And can we put them together to make any more full squares?",
@@ -127,7 +127,7 @@
     {
       "questionId": 129225,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b219cd8f-d5bc-4c42-b3ad-0fd91c926f01.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Try counting the number of full squares and half squares that are covered by the triangle. Try to be as accurate as possible.",
         "B": "We can find the total area by counting the number of centimetre squares that are covered by the triangle. There are 6 full squares covered by the triangle, and also 4 half squares. 6 + ½ + ½ + ½ + ½ = 8 cm².",
@@ -139,7 +139,7 @@
     {
       "questionId": 129086,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7f8decca-fbe2-42e6-b4c1-b6d1ae552c9b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have tried to count the length around the outside of the triangle, which is how we find the perimeter. We need to count the number of centimetre squares that are covered by the triangle.",
         "B": "The triangle is 3 squares wide by 4 squares long. If we had a rectangle this size, it would cover 3 x 4 = 12 squares. But this triangle is half of the rectangle so the area is 12 ÷ 2 = 6 cm². We can also find the area by counting the number of centimetre squares that are covered by the triangle. There are 3 full squares and 6 part-squares which can be paired up to make 3 more full squares, so 6 centimetre squares in total.",
@@ -151,7 +151,7 @@
     {
       "questionId": 129226,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bbadf3f9-ebc8-4b75-8aee-911f335e1c82.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Almost. We need to count the number of centimetre squares that are covered by the triangle. Try to pair up any part-squares carefully so that they make full squares.",
         "B": "Almost. We need to count the number of centimetre squares that are covered by the triangle. Try to pair up any part-squares carefully so that they make full squares.",

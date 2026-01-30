@@ -37,7 +37,7 @@
     {
       "questionId": 98482,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/307b02ff-0992-4968-bbb7-7e1886fee838.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! Why don't you try to draw yourself a compound shape made of 2 rectangles to see if you can work out the perimeter and/ or area?",
         "B": "Not quite! Why don't you try to draw yourself a compound shape made of 2 rectangles to see if you can work out the perimeter and/ or area?",
@@ -49,7 +49,7 @@
     {
       "questionId": 98494,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ce9c7926-554a-438a-b84c-bb540e835166.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! Why don't you try to draw yourself a compound shape made of 2 squares to see if you can work out the perimeter and/ or area?",
         "B": "Not quite! Why don't you try to draw yourself a compound shape made of 2 squares to see if you can work out the perimeter and/ or area?",
@@ -61,7 +61,7 @@
     {
       "questionId": 109445,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1a229ef1-b5cb-4b9a-a0b4-72f8e2174e64.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite, you'll need to calculate the width and height of the lilac rectangle first :)",
         "B": "Area of the lilac rectangle = width × height. We need its width and height. For the height, look to other vertical measurements: 22 − 8 = 14 m. For the width, look to other horizontal measurements: 23 − 7 = 16 m. Therefore, area = 14 × 16 = 224 m²",
@@ -73,7 +73,7 @@
     {
       "questionId": 109457,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9275c66b-c500-496d-bb28-fdadfb99863b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You're close! 15 isn't a correct measurement of the lilac rectangle though. See if you can find what it should be :)",
         "B": "Nearly there! :) 12 is not one of the measurements you need",
@@ -97,7 +97,7 @@
     {
       "questionId": 109458,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f5effb1d-ea06-45dd-b6c9-c8af3c61a848.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite, it looks like you have worked out the missing lengths incorrectly. Can you use subtraction to find these lengths?",
         "B": "Not quite. Be careful to add only the lengths that make up the shape.",
@@ -121,7 +121,7 @@
     {
       "questionId": 109459,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d9ab19b0-07d4-411e-8343-c49a50d27097.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. It looks like you have correctly identified the vertical length of the shaded rectangle as 3m but the horizontal length is not 16m. How can you use subtraction to work out this length?",
         "B": "Area of the beige rectangle = width × length. We need its length (the longer side), so look to other horizontal measurements: 16 − 7 − 2 = 7 m. Therefore, area = 3 × 7 = 21 m²",
@@ -145,7 +145,7 @@
     {
       "questionId": 109460,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fea0b72c-6bac-49be-9a2e-169bafb794f7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite. It looks you might have made a slight error when multiplying. Check your workings.",
         "B": "Be careful here. The 16m is not a length in the shaded rectangle. 7m is the correct width, how would we find the length?",

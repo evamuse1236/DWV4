@@ -19,7 +19,7 @@
     {
       "questionId": 158467,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d018ca92-94fb-496b-85ae-02d91b87cab6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is the volume of one layer of boxes, but the truck can hold 5 layers of boxes. How many cubic meters is that in total?",
         "B": "The truck can hold 12 boxes on the floor, and then we can stack four more layers of 12 on top. Altogether, that is 12 x 5 = 60 boxes, so a volume of 60 cubic meters.",
@@ -55,7 +55,7 @@
     {
       "questionId": 158687,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b27fe817-e611-4ff6-acec-29ef3a843529.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite - you have multiplied 8 x 8 x 45 but we are not given three dimensions to multiply here. There are 8 layers in the crate, and each layer has 45 boxes, and each box ia 1 cubic foot. What is the volume of the crate?",
         "B": "Not quite - 45 isn't one of the dimensions of the crate, it's the number of boxes in a whole layer. So what should we multiply 45 by to get the total volume?",
@@ -67,7 +67,7 @@
     {
       "questionId": 158469,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/813917ab-43df-484f-a4d6-e8015a665ba0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is the volume of one piece of cake, but we want the volume of the whole container. If there are 3 layers that are each 5 rows of 4 pieces, how many cubic inches is that altogether?",
         "B": "It looks like you have added, but for volume we want to work out how many cubes of cake the container holds in total. If there are 3 layers that are each 5 rows of 4 pieces, how many cubic inches is that altogether?",
@@ -79,7 +79,7 @@
     {
       "questionId": 158688,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/028c251f-972f-4ef4-b317-fde321925ee5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you have added the dimensions, but for volume we multiply. If there are 7 layers that are each 3 rows of 6 pieces, how many cubic inches is that altogether?",
         "B": "The container holds 7 layers with 3 rows of 6 pieces in each, so it holds 7 x 3 x 6 = 126 pieces of cake. Each piece is a 1-inch cube, so the volume is 126 cubic inches.",
@@ -91,7 +91,7 @@
     {
       "questionId": 158470,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3de3be26-381b-4dd2-b7e3-cb2a99106fcb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It looks like you have added 25 and 9, but for volume we multiply. If there are 9 layers with 25 crates in each, and each crate is 1 cubic foot. What is the total volume?",
         "B": "The container holds 25 x 9 = 225 crates, and each crate is one cubic yard, so the volume is 225 cubic yards.",
@@ -103,7 +103,7 @@
     {
       "questionId": 158689,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dd78e7bf-cecc-4367-832c-a55562835e46.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you have added 40 and 4, but for volume we multiply. If there are 4 layers with 40 crates in each, and each crate is 1 cubic foot, what is the total volume?",
         "B": "Not quite - you have multiplied 40 x 4 x 4 but we are not given three dimensions to multiply here. There are 4 layers in the container, each layer has 40 crates, and each crate is 1 cubic foot, what is the total volume?",
@@ -115,7 +115,7 @@
     {
       "questionId": 158471,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ea208d3b-985e-4715-a824-de8c4554f44f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Careful, you have found the correct number of boxes that fit into the large box, but they are not 1 cubic centimeter each. Each box of chocolates is 50 cubic centimeters, so what is the last step to find the total volume?",
         "B": "The box holds 12 x 10 = 120 small boxes. Each box is 50 cubic centimeters, so in total the volume is 120 x 50 = 6000 cubic centimeters.",

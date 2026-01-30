@@ -43,7 +43,7 @@
     {
       "questionId": 91620,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/707b5a21-3073-4b3b-89f4-aaaea6f3c35f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! Multiplying a number by 5 then adding 2 is not the same as multiplying a number by 10. Substituting in a value for p will help you compare the output of the function machine with the value of the expressions.",
         "B": "Be careful! Multiplying a number by 5 then adding 2 is not the same as multiplying a number by 7. Substituting in a value for p will help you compare the output of the function machine with the value of the expressions.",
@@ -55,7 +55,7 @@
     {
       "questionId": 91636,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5572e959-5a36-4c1e-9aa1-dd066648d2a4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite! Multiplying a number by 8 then subtracting 3 is not the same as multiplying a number by 24. Substituting in a value for p will help you compare the output of the function machine with the value of the expressions.",
         "B": "The input is q. This goes through the first stage where it is multiplied by 8. This produces 8 ✕ q or 8q. This value then goes through the next stage where 3 is subtracted. This gives an output of 8q − 3.",
@@ -67,7 +67,7 @@
     {
       "questionId": 91621,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/58d0752d-d0da-408f-9de8-003785210104.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Be careful! Substituting in a value for n will help you to compare the output of the function machine with the value of Tom and Katie's expressions.",
         "B": "Be careful! Substituting in a value for n will help you to compare the output of the function machine with the value of Tom and Katie's expressions.",
@@ -79,7 +79,7 @@
     {
       "questionId": 91637,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fac9769e-f5ba-4c73-92da-fd8c1b769d3c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The input is n. This goes into the first stage of the function machine, where it is divided by 5. This produces n/5. This value (n/5) all goes into the next stage where 3 is added. This gives an output of (n/5) ＋ 3 which is Jo's answer. Paul's answer of (n ＋ 3)/5 represents a function machine where 'add 3' is the first stage, followed by 'divide by 5'.",
         "B": "Be careful! Have a look again at the function machine, I think you have mixed up the order of the operations.",
@@ -91,7 +91,7 @@
     {
       "questionId": 91622,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ba37a091-4fb4-4904-83ca-1502add78275.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite! The fraction line means divide not subtract.",
         "B": "Almost! Have a look again at the position of the fraction line, is it just under t or all of t - 3?",
@@ -115,7 +115,7 @@
     {
       "questionId": 104950,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6cbe658c-1085-4726-959d-c4553830c039.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. Remember that we do not use the multiplication sign when writing expressions.",
         "B": "So close! We would write the number first and then the letter.",
@@ -127,7 +127,7 @@
     {
       "questionId": 104952,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5506b3ca-fdb5-4e43-8856-4d27bfa82478.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. m⁷ = m ✕ m ✕ m ✕ m ✕ m ✕ m ✕ m this is not the same as\" m multiplied by 7.\" How could we write this?",
         "B": "For ‘𝑚 multiplied by 7’, this could initially be thought of as 𝑚 × 7. However, certain rules are followed for algebra: in this case, where the order of operations doesn’t matter, the number always comes before the letter, and also the multiplication sign between the two is not necessary. This then gives an answer of 7𝑚",
@@ -139,7 +139,7 @@
     {
       "questionId": 104951,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/db46f36e-c621-4f1a-b3bc-61b1b89fab45.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite! 2m means two lots of m not \"m multiplied by m.\"",
         "B": "Almost! Is there another way that you could write this? To help, think about how else you can write 5 ✕ 5.",
@@ -151,7 +151,7 @@
     {
       "questionId": 104953,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5e9ea114-7854-4530-a383-54851a3fbf06.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Remember that we do not use the multiplication sign when writing expressions.",
         "B": "For ‘𝑚 multiplied by 𝑚 multiplied by 𝑚’, this could initially be thought of as 𝑚 × 𝑚 × 𝑚. Another way of writing 2 × 2 × 2, for example, is 2³, and this is also true of 𝑚 × 𝑚 × 𝑚, so the correct answer is 𝑚³",

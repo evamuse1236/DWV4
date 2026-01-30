@@ -55,7 +55,7 @@
     {
       "questionId": 135732,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/32649123-0148-4c7d-a2bd-5d7c22b9f978.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Data is the information you would collect, but what do we call the people that we get this data from?",
         "B": "Almost, this is a method of selecting the people. What is the name of the group of peole we choose?",
@@ -79,7 +79,7 @@
     {
       "questionId": 135733,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/42d6f546-4bbf-4814-b55f-0fef8ecebdef.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite. To be a random sample, every person should have the same chance of being selected. In this method, taller people are more likely to be selected.",
         "B": "Not quite. To be a random sample, every person should have the same chance of being selected. In this method, you are more likely to be chosen if you belong to a class with less students in.",
@@ -91,7 +91,7 @@
     {
       "questionId": 135714,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/53c6d163-3d6b-4b92-85fb-57b3c1813c6b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you've halved the number of females at the company. We want to have only 50 people in the sample, so we can't have more than 50. What proportion of the company are female?",
         "B": "I think you have halved the number of people in the sample, but to find a stratified sample, we need to have the same proportion of females in the sample as in the company. How could we work out the proportion of females in the company?",
@@ -115,7 +115,7 @@
     {
       "questionId": 135715,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c215326a-ddbc-40a2-81df-502c4b46a6bc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like you have calculated 20 - 8 to get 12. Remember that total number of cockroaches = (number caught first x number caught second) ÷ number marked",
         "B": "Remember that total number of cockroaches = (number caught first x number caught second) ÷ number marked",
@@ -127,7 +127,7 @@
     {
       "questionId": 135735,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/185b70f8-8023-451e-b7ec-13be4c9d88cd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Remember that total number of fish= (number caught first x number caught second) ÷ number marked",
         "B": "36/(Total fish) = 4/10. If we rearrange we find an estimate for the total fish is 90.",
@@ -139,7 +139,7 @@
     {
       "questionId": 135716,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7cccd652-bc08-48bb-8085-e513a099c9a0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Almost, think about whether who is being asked and where people are being asked might influence how often they eat out at a restaurant.",
         "B": "Almost, think about whether who is being asked and where people are being asked might influence how often they eat out at a restaurant.",
@@ -151,7 +151,7 @@
     {
       "questionId": 135736,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/38f00823-5eab-4b62-a499-f8c435dcabc3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Not quite. Using a random sample can give unbiased results if who is being asked, when they are being asked and where they are being asked is also unbiased. Is this the case in this situation?",
         "B": "Tom is incorrect as a random sample does not automatically avoid bias. Katie is correct as asking people on a single day may have given biased results. Part time employees may be more likely to work on certain days (perhaps weekends), so a sample would need to be taken on every day the company is open to get a fair sample.",

@@ -55,7 +55,7 @@
     {
       "questionId": 158763,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0cd9aee5-3a0b-4cf6-8496-a88335c2c20d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Even numbers are in the two times table, and the highlighted numbers 2, 4, 6, 8, 10 are all in the two times table, so this is true. Check the row and column each highlighted number is in, to see what is being added together.",
         "B": "The highlighted numbers 2, 4, 6, 8, 10 are all made by adding the same number, eg. 1+1=2, 2+2=4, so this is true. Which statement is not true about the numbers being added together?",
@@ -67,7 +67,7 @@
     {
       "questionId": 158962,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/29032014-9baa-46da-8165-da90bb427e71.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "These numbers are not in the two times table, maybe you're thinking of the notation we use.. 1x1 =1², 2x2=2²... What does that little 2 mean?",
         "B": "We are not adding the same number together, we are multiplying them... Look for the true statement",
@@ -103,7 +103,7 @@
     {
       "questionId": 158765,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/83c58cd9-8954-4e09-ae8c-d24e498f4571.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "All the numbers in the 4 times table are also in the 2 times table, so they are all even. This statement is true. Try using some examples to check each of the other statements.",
         "B": "The 6 times table is highlighted in green: 6, 12, 18, .... If we halve these we get 3, 6, 9, ... which is the 3 times table, not the 2 times table. This statement is not true.",
@@ -115,7 +115,7 @@
     {
       "questionId": 158964,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dc3eb27b-b4a1-4fec-8c2c-179908ea436f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The three times table is highlighted in purple: 3, 6, 9,... If we double these we get 6, 12, 18,... which is the 6 times table. This statement is true. Try using examples like this to check the other statements.",
         "B": "If we add the red number (2 times table) and the yellow number (4 times table) in each column, we get 2+4 = 6, 4 + 8 = 12, 6+12 = 18, etc. which is the 6 times table. This statement is true. Try using examples like this to check the other statements.",
@@ -127,7 +127,7 @@
     {
       "questionId": 158766,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3440c8e7-8502-4c20-a574-6086a1e7490e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Not quite - maybe you thought the middle row was the 6 times table, so you added 6 to 49. Actually 42 and 49 are in the 7 times table, so try adding 7.",
         "B": "Not quite - maybe you thought the middle row was the 8 times table, so you added 8 to 49. Actually 42 and 49 are in the 7 times table, so try adding 7.",
@@ -139,7 +139,7 @@
     {
       "questionId": 158965,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8b240e95-b7da-4bd1-bd96-908b87546b74.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Not quite - maybe you thought the middle row was the 5 times table, so you added 5 to 16. Actually 12 and 16 are in the 4 times table, so try adding 4.",
         "B": "Not quite - maybe you thought the middle row was the 3 times table, so you added 3 to 16. Actually 12 and 16 are in the 4 times table, so try adding 4.",

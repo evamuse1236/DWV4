@@ -43,7 +43,7 @@
     {
       "questionId": 165503,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/80f9cbb0-2598-4ea9-aff5-bcf88101d77f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This would be the equation for car A... Look at the steepness of the lines. Is car B traveling faster or slower?",
         "B": "Although car B looks to have a shorter line than A, when thinking about the speed on a distance-time graph, we need to look at the steepness of the line!",
@@ -55,7 +55,7 @@
     {
       "questionId": 165568,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f73ab1ba-6cb2-4e81-8302-c4858309d8ac.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you might be trying to double the speed of car C, but look at the steepness of the lines. Is car D traveling faster or slower..?",
         "B": "Car C has a steeper line than car D which means car D is traveling slower than 38 meters per second. The only equation with a slower speed would be 𝑦 = 20𝑥 as this represents 20 meters per second!",
@@ -67,7 +67,7 @@
     {
       "questionId": 165564,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b2432296-91e2-4fa0-9cee-7b8679315e60.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You have correctly worked out the rates, but have accidentally swapped them over!",
         "B": "You have correctly worked out the rate of filling for pool B, but double-check it for pool A. To find the rate, do gallons ÷ minutes!",
@@ -79,7 +79,7 @@
     {
       "questionId": 165569,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7bd09afd-d89f-42ee-9ba5-72ba673e0ab9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You have correctly worked out the rate of filling for pool A, but double-check it for pool B. To find the rate, do gallons ÷ minutes!",
         "B": "You have correctly worked out the rates, but have accidentally swapped them over!",
@@ -115,7 +115,7 @@
     {
       "questionId": 165566,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3cfd22c4-724e-47ca-bd28-eea333df3c7d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This would be the difference in the number of pieces of candy in 10 boxes of candy... The question is asking 'per box', so in 1 box of candy!",
         "B": "I think you are comparing 35 and 300, but 300 is how many pieces of candy are in 10 boxes at company B... How many pieces of candy would be in one box?",
@@ -127,7 +127,7 @@
     {
       "questionId": 165571,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6e0a7a3e-feca-4c53-a266-8348812a7658.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You have correctly calculated the difference in pieces of candy, but have accidentally swapped round the companies...",
         "B": "We can see from the equation 𝑦 = 40𝑥 that company A sells 40 pieces of candy per box. Looking at the table for company B, if there are 420 pieces of candy in 10 boxes then 420 ÷ 10 = 42 pieces of candy per box. So, company B sells 2 more pieces of candy per box than company A!",
@@ -151,7 +151,7 @@
     {
       "questionId": 165572,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/31fd8588-49e5-415f-9f2b-278a8383299b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have accidentally compared the earnings of Liam after 1.5 hours and Bryan after 1 hour. Make sure you are comparing earnings after the same amount of time worked!",
         "B": "I think you have accidentally compared the earnings of Liam after 4 hours and Bryan after 1 hour. Make sure you are comparing earnings after the same amount of time worked!",

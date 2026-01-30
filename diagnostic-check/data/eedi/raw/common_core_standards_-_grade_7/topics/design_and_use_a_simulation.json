@@ -97,7 +97,7 @@
     {
       "questionId": 166839,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/237b3fbf-4a79-499e-9d9f-2cd95beeda13.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I think you have found the theoretical probability, we need to use the outcomes of the experiment.",
         "B": "In the trial there were 3 occasions where there was a head and a 4, out of 20 trials in total. Therefore the probability is 3/20.",
@@ -121,7 +121,7 @@
     {
       "questionId": 166840,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/46ef31f6-4619-4f2f-be53-8ff93fccd782.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "I think you counted the total number of girls (14) and divided by the total number of children (24), instead of counting successful trials.",
         "B": "I think you have found the theoretical probability, we need to use the outcomes of the experiment.",

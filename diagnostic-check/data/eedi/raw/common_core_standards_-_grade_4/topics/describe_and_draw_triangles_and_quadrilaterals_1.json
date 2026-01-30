@@ -43,7 +43,7 @@
     {
       "questionId": 131371,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/825c0217-7252-46be-86fe-2800f1622f4a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is a parallelogram, a shape with two pairs of parallel sides shown by the arrow notation. A rectangle is a four-sided shape with four right-angles and opposite sides equal in length. Do any of the shapes shown have these properties?",
         "B": "This is a rectangle as it has four sides, four right-angles and the opposite sides are equal in length.",
@@ -79,7 +79,7 @@
     {
       "questionId": 133605,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/62f93e0c-3692-4e63-b2d7-92d2eaf36a56.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is an isosceles triangle. An isosceles triangle has two equal sides and two equal angles. We can tell two sides are equal as they have matching marks on and two angles are equal as they also have matching marks. An equilateral triangle has three equal angles and three equal sides. Which of the diagrams shows all sides being equal and all angles?",
         "B": "This is a right-angled triangle as the right-angle has been highlighted. We are looking for an equilateral triangle where all three sides are equal. Which of the triangles shown has notation highlighting that the sides are all equal?",
@@ -91,7 +91,7 @@
     {
       "questionId": 131373,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e2d7c7a1-aa08-4a6f-95ba-8567f1cde52a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is a scalene triangle - a triangle with no sides of equal length. An isosceles triangle has two equal sides and two equal angles. Which of the shapes shown has notation highlighting that two sides are equal and two angles are equal?",
         "B": "This is an isosceles triangle. This type of triangle has two equal sides and two equal angles. We can tell two sides are equal as they have matching marks on and two angles are equal as they also have matching marks.",
@@ -115,7 +115,7 @@
     {
       "questionId": 131374,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/68a75c9a-8d86-40e2-b849-4d5dfb5d34ab.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is a scalene triangle - a triangle with equal sides or angles. A right-angled triangle has one 90° angle. Which shape has this property labelled?",
         "B": "This is an isosceles triangle. A right-angled triangle has one 90° angle. Which shape has this property labelled?",
@@ -127,7 +127,7 @@
     {
       "questionId": 133607,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ffb7fd34-6cb4-43e3-bc4a-6dac88adf2bc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is an isosceles triangle. A right-angled triangle has one 90° angle. Which shape has this property labelled?",
         "B": "This is a right-angled triangle, we can tell as the 90° angle has been labelled.",
