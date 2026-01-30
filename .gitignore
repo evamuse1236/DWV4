@@ -36,3 +36,9 @@ diagnostic-check/.git/
 
 # Local Netlify folder
 .netlify
+
+# Generated diagnostic data (rebuilt from diagnostic-check/archive/)
+public/diagnostic/
+
+# Web preview directory
+web/
