@@ -1,15 +1,15 @@
 # AI System Documentation
 
-This document describes the AI-powered features in the Deep Work Tracker app.
+**Last Updated:** 2026-01-30
+
+Guide for understanding and modifying the AI features. For the technical codemap (internal functions, prompt builders), see [CODEMAPS/ai-system.md](./CODEMAPS/ai-system.md).
 
 ## Overview
 
-The app uses AI for three main features:
-1. **Goal-Setting Chat** - Helps students create SMART goals through conversation
-2. **Book Buddy** - Recommends books based on reading history
-3. **Project Data Entry** - Helps admins enter student project data via chat
-
-All AI logic lives in `convex/ai.ts`.
+Three AI features, all in `convex/ai.ts`:
+1. **Goal-Setting Chat** -- SMART goals through conversation
+2. **Book Buddy** -- Reading recommendations from history
+3. **Project Data Entry** -- Admin data extraction via chat
 
 ## Architecture
 
@@ -32,11 +32,9 @@ All AI logic lives in `convex/ai.ts`.
 
 ### Environment Variables
 
-Set these in your Convex dashboard (Settings > Environment Variables):
-- `GROQ_API_KEY` - Get from [console.groq.com](https://console.groq.com)
-- `OPENROUTER_API_KEY` - Get from [openrouter.ai](https://openrouter.ai)
-
-At least one must be set. Both are recommended for reliability.
+Set in the Convex dashboard (see [RUNBOOK.md](./RUNBOOK.md#environment-variable-reference) for full details):
+- `GROQ_API_KEY` (required) -- [console.groq.com](https://console.groq.com)
+- `OPENROUTER_API_KEY` (optional fallback) -- [openrouter.ai](https://openrouter.ai)
 
 ## Feature 1: Goal-Setting Chat
 

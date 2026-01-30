@@ -1,6 +1,6 @@
 # Runbook -- Deep Work Tracker
 
-**Last Updated:** 2026-01-29
+**Last Updated:** 2026-01-30
 
 ## Environments
 
@@ -115,6 +115,24 @@ npx convex deploy
 # 5. Run the seed mutation on prod
 npx convex run seed:seedMathFromPlaylist --prod
 ```
+
+## Diagnostic Question Sets
+
+Pre-built sets: 10 per module group, 30 questions each, deterministic (same set index = same questions). Set selection: `attemptCount % 10` via Convex `getAttemptCount`. See [CODEMAPS/diagnostics.md](./CODEMAPS/diagnostics.md) for architecture details.
+
+**Rebuilding after question bank changes:**
+
+```bash
+# 1. Rebuild data.js + data-sets.js from raw Eedi data
+cd diagnostic-check && python tools/build_ka_diagnostic.py && cd ..
+
+# 2. Export to public/diagnostic/ for the frontend
+node scripts/export-diagnostic-data.mjs
+
+# 3. Verify: public/diagnostic/diagnostic-sets.json should have 70 sets, 30 questions each
+```
+
+Sets reference question IDs from `data.js`. If the question bank changes, sets must be regenerated.
 
 ## Common Issues and Fixes
 

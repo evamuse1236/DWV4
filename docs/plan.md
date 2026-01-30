@@ -1,5 +1,11 @@
 # Diagnostic Mastery Checks (Deep Work) — Integration Plan
 
+**Last Updated:** 2026-01-30
+
+> **Implementation status:** The core diagnostic system is live. Tables (`diagnosticUnlockRequests`, `diagnosticUnlocks`, `diagnosticAttempts`) are in `convex/schema.ts`. Backend functions are in `convex/diagnostics.ts`. The student quiz runs at `/deep-work/diagnostic/:majorObjectiveId` via `DiagnosticPage.tsx` + `src/lib/diagnostic.ts`. Pre-built question sets (10 per module group, 30 questions each) replaced the original "random 1/3 of pool" approach. Set selection uses Convex-based attempt counting (`getAttemptCount`) instead of localStorage. See [CODEMAPS/diagnostics.md](./CODEMAPS/diagnostics.md) for the current architecture.
+>
+> Items marked **[DONE]** below are implemented. Items marked **[CHANGED]** deviate from the original plan. Unmarked items remain as-designed or are not yet implemented.
+
 ## Context (current behavior)
 
 - Student Deep Work UX:
@@ -83,16 +89,16 @@ We will map each **major objective** to exactly one **diagnostic module group** 
 
 This satisfies “figure it out” while still giving a safe escape hatch for edge cases.
 
-## Data model changes (Convex)
+## Data model changes (Convex) [DONE]
 
-### Coach approval gate (new tables)
+### Coach approval gate (new tables) [DONE]
 
 To prevent brute-force attempts, enforce server-side “unlock” before the student can start/submit an attempt.
 
-#### New table: `diagnosticUnlocks`
+#### New table: `diagnosticUnlocks` [DONE]
 Purpose: a coach-approved, time-bounded authorization to attempt a diagnostic for a specific student + major objective.
 
-Fields (proposed):
+Fields:
 - `userId: Id<"users">`
 - `majorObjectiveId: Id<"majorObjectives">`
 - `approvedBy: Id<"users">`
@@ -101,14 +107,14 @@ Fields (proposed):
 - `attemptsRemaining: number` (default: 1)
 - `status: "approved" | "consumed" | "expired" | "revoked"`
 
-Indexes (proposed):
+Indexes:
 - `by_user_major` (`userId`, `majorObjectiveId`, `approvedAt`)
 - `by_status` (`status`, `approvedAt`)
 
-#### New table: `diagnosticUnlockRequests`
+#### New table: `diagnosticUnlockRequests` [DONE]
 Purpose: allow students to request an unlock (so the coach can approve from the queue).
 
-Fields (proposed):
+Fields:
 - `userId: Id<"users">`
 - `majorObjectiveId: Id<"majorObjectives">`
 - `requestedAt: number`
@@ -116,14 +122,14 @@ Fields (proposed):
 - `handledBy?: Id<"users">`
 - `handledAt?: number`
 
-Indexes (proposed):
+Indexes:
 - `by_status` (`status`, `requestedAt`)
 - `by_user_major` (`userId`, `majorObjectiveId`, `requestedAt`)
 
-### New table: `diagnosticAttempts`
+### New table: `diagnosticAttempts` [DONE]
 Purpose: store every diagnostic attempt (practice + mastery attempts), with full detail for admin review.
 
-Fields (proposed):
+Fields:
 - `userId: Id<"users">`
 - `domainId: Id<"domains">`
 - `majorObjectiveId: Id<"majorObjectives">`
@@ -140,9 +146,9 @@ Fields (proposed):
 - `durationMs: number` (soft timer)
 - `results: { questionId, topic, chosenLabel, correctLabel, correct, misconception, explanation }[]`
 
-Indexes (proposed):
+Indexes:
 - `by_user_major` (`userId`, `majorObjectiveId`, `submittedAt`)
-- `by_major_status` (`majorObjectiveId`, `passed`, `submittedAt`)
+- `by_major_passed` (`majorObjectiveId`, `passed`, `submittedAt`)
 - `by_passed` (`passed`, `submittedAt`) (for queue queries)
 
 ### Optional: link last diagnostic on major assignment
@@ -153,9 +159,9 @@ If we want fast “show latest failed attempt” UX:
 ### Docs update
 Update `docs/DATA-MODEL.md` for the new table and indexes.
 
-## Backend API (Convex) additions
+## Backend API (Convex) additions [DONE]
 
-Create `convex/diagnostics.ts`:
+Implemented in `convex/diagnostics.ts`:
 
 ### Queries
 - `diagnostics.getPendingUnlockRequests()`
@@ -190,10 +196,10 @@ Create `convex/diagnostics.ts`:
     - no status change by default
     - enables student UI to show “Request Viva” with a link to the attempt
 
-## Student UI changes (React)
+## Student UI changes (React) [DONE]
 
-### Routing
-Add student routes in `src/App.tsx`, e.g.:
+### Routing [DONE]
+Route added in `src/App.tsx`:
 - `/deep-work/diagnostic/:majorObjectiveId` → `src/pages/student/DiagnosticPage.tsx`
 
 ### UI entry points
@@ -206,23 +212,14 @@ Update `src/components/skill-tree/ObjectivePopover.tsx`:
 - If latest attempt for that major is failed:
   - show “Request Viva” as primary CTA (as requested).
 
-### Quiz runner (React rebuild)
-Implement in a new module, e.g. `src/components/diagnostic/`:
-- `DiagnosticLoader`:
-  - lazy-load the diagnostic dataset on demand (to avoid ballooning initial bundle).
-  - recommended: convert `diagnostic-check/data.js` into a static JSON asset in `public/diagnostic/diagnostic-data.json` and `fetch()` it when needed.
-  - keep `diagnostic-check/` untouched as the archived source.
-- `DiagnosticQuiz`:
-  - build a question pool from the mapped `module_name` group (union across all `mod.id` in that group).
-  - choose quiz length = `round(totalPool / 3)` (min 1), consistent with prototype.
-  - avoid repeats using `localStorage` key per `(userId, majorObjectiveId, module_name)`:
-    - `diag_used_${userId}_${majorObjectiveId}` storing used question IDs.
-  - record:
-    - start time, per-question selection, correctness, misconceptions, topic
-    - end time + duration
-- `DiagnosticResults`:
-  - if perfect: “Mastered” success state
-  - else: show misconceptions + remediation links (carry over prototype)
+### Quiz runner (React rebuild) [DONE, CHANGED]
+Implemented in `src/pages/student/DiagnosticPage.tsx` + `src/lib/diagnostic.ts`:
+- Data loading: `diagnostic-data.json` and `diagnostic-sets.json` fetched from `public/diagnostic/` and cached in memory.
+- **[CHANGED]** Question selection uses **pre-built deterministic sets** (10 per module group, 30 questions each) instead of random 1/3 pool selection. Set index = `attemptCount % 10` via Convex `getAttemptCount` query, replacing localStorage-based tracking.
+- **[CHANGED]** Quiz length is always 30 (not `round(pool / 3)`).
+- Falls back to random 30 from pool if sets fail to load.
+- Records: start time, per-question selection, correctness, misconceptions, topic, end time + duration.
+- Results: "Mastered" success state on pass, misconceptions + remediation links on fail.
 
 ### Submit + post-submit state
 On quiz completion:
@@ -275,17 +272,17 @@ Update `src/pages/admin/VivaQueuePage.tsx`:
   - diagnostic failures appear in Viva Queue
   - detail view shows misconceptions and question context
 
-## Rollout / migration
+## Rollout / migration [DONE]
 
-- Keep `diagnostic-check/` as the archived source-of-truth.
-- Add a small “export” script (repo-local) that produces `public/diagnostic/diagnostic-data.json` from `diagnostic-check/data.js` (one-time generation + rerunnable when the bank updates).
-- If mapping confidence issues appear, add `docs/diagnostic-mapping-overrides.json` and read it before fuzzy matching.
+- `diagnostic-check/` retained as the archived source-of-truth.
+- Export pipeline: `diagnostic-check/tools/build_ka_diagnostic.py` generates `data.js` + `data-sets.js`; `scripts/export-diagnostic-data.mjs` converts to JSON in `public/diagnostic/`.
+- Mapping uses `getCurriculumModuleIndex` query (section + moduleIndex) instead of fuzzy title matching. No override file needed.
 
-## Proposed implementation steps (order)
+## Implementation steps (order) [DONE]
 
-1. Create diagnostic data export pipeline (`diagnostic-check/` → `public/diagnostic/`).
-2. Add `diagnosticAttempts` table + indexes in `convex/schema.ts`; update `docs/DATA-MODEL.md`.
-3. Implement `convex/diagnostics.ts` queries/mutations; add to generated API usage.
-4. Build student diagnostic route + React quiz runner; hook into popover CTAs.
-5. Update `VivaQueuePage` to show diagnostic failures + detail view.
-6. Add tests + run through manual verification checklist.
+1. **[DONE]** Create diagnostic data export pipeline (`diagnostic-check/` -> `public/diagnostic/`).
+2. **[DONE]** Add `diagnosticAttempts`, `diagnosticUnlocks`, `diagnosticUnlockRequests` tables + indexes in `convex/schema.ts`.
+3. **[DONE]** Implement `convex/diagnostics.ts` queries/mutations.
+4. **[DONE]** Build student diagnostic route + React quiz runner (`DiagnosticPage.tsx`).
+5. **[DONE]** Update `VivaQueuePage` to show diagnostic unlock requests + failures.
+6. Tests remain to be added (see `docs/TEST-PLAN.md`).

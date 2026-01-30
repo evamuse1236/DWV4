@@ -1,7 +1,6 @@
 # Deep Work Tracker -- Codemap Index
 
-**Last Updated:** 2026-01-29
-**Generated From:** Actual codebase analysis (not manual)
+**Last Updated:** 2026-01-30
 
 ## What are Codemaps?
 
@@ -40,7 +39,7 @@ Convex Backend
 Convex DB + External Services
   +-- Groq (Kimi K2, Llama 8B)
   +-- OpenRouter (fallback)
-  +-- Static diagnostic JSON (/public/diagnostic/diagnostic-data.json)
+  +-- Static diagnostic JSON (/public/diagnostic/diagnostic-data.json, diagnostic-sets.json)
 ```
 
 ## Two User Roles, Two UIs
@@ -69,11 +68,7 @@ Convex DB + External Services
 
 ## Related Documentation
 
-| Doc | Purpose |
-|-----|---------|
-| [docs/ARCHITECTURE.md](../ARCHITECTURE.md) | Narrative architecture explanation |
-| [docs/DATA-MODEL.md](../DATA-MODEL.md) | Full table field reference |
-| [docs/COMPONENTS.md](../COMPONENTS.md) | Quick component lookup |
-| [docs/PATTERNS.md](../PATTERNS.md) | Coding conventions |
-| [docs/USER-JOURNEYS.md](../USER-JOURNEYS.md) | End-to-end user flows |
-| [docs/curriculum/](../curriculum/) | Curriculum mapping and seeding workflow |
+See [docs/README.md](../README.md) for the full documentation index. Key references:
+- [ARCHITECTURE.md](../ARCHITECTURE.md) -- Narrative architecture
+- [DATA-MODEL.md](../DATA-MODEL.md) -- Full table field reference
+- [PATTERNS.md](../PATTERNS.md) -- Coding conventions

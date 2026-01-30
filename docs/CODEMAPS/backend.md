@@ -1,6 +1,6 @@
 # Backend Codemap
 
-**Last Updated:** 2026-01-29
+**Last Updated:** 2026-01-30
 **Runtime:** Convex (serverless functions)
 **Schema:** `convex/schema.ts` (26 tables)
 
@@ -225,8 +225,8 @@ convex/
 ### `visionBoard.ts` -- Vision Board
 See [vision-board.md](./vision-board.md) for full details.
 
-### `diagnostics.ts` -- Diagnostic System
-See [diagnostics.md](./diagnostics.md) for full details.
+### `diagnostics.ts` -- Diagnostic System (12 functions)
+See [diagnostics.md](./diagnostics.md) for full details. Key addition: `getAttemptCount` query for pre-built set cycling.
 
 ### `ai.ts` -- AI Actions
 See [ai-system.md](./ai-system.md) for full details.

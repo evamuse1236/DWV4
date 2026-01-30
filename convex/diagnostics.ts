@@ -295,6 +295,19 @@ export const getFailuresForQueue = query({
   },
 });
 
+export const getAttemptCount = query({
+  args: { userId: v.id("users"), majorObjectiveId: v.id("majorObjectives") },
+  handler: async (ctx, args) => {
+    const attempts = await ctx.db
+      .query("diagnosticAttempts")
+      .withIndex("by_user_major", (q: any) =>
+        q.eq("userId", args.userId).eq("majorObjectiveId", args.majorObjectiveId)
+      )
+      .collect();
+    return { count: attempts.length };
+  },
+});
+
 export const getAttemptDetails = query({
   args: { attemptId: v.id("diagnosticAttempts") },
   handler: async (ctx, args) => {

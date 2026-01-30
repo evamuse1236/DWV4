@@ -1,0 +1,56 @@
+Codemap Update Report
+=====================
+Date: 2026-01-30
+Trigger: Pre-built diagnostic question sets feature
+
+Change Summary
+--------------
+Files modified: 8
+Lines added: 97
+Lines removed: 25
+Net change: +72 lines
+Total doc lines: 1702
+Change percentage: ~5.7% (well under 30% threshold)
+
+Files Changed
+-------------
+docs/CODEMAPS/diagnostics.md  +50/-10   Major update: pre-built sets, new functions, build pipeline
+docs/RUNBOOK.md               +25/-1    Added diagnostic set rebuild procedures
+docs/CONTRIB.md               +15/-1    Added diagnostic build/export script docs
+docs/CODEMAPS/backend.md      +3/-3     getAttemptCount query noted, function count updated
+docs/CODEMAPS/INDEX.md        +2/-2     Added diagnostic-sets.json to system overview
+docs/CODEMAPS/frontend.md     +2/-2     Updated lib/diagnostic.ts description
+docs/CODEMAPS/scripts.md      +2/-2     Updated export script description
+docs/CODEMAPS/data-model.md   +1/-1     Timestamp only
+
+What Changed (Feature: Pre-Built Diagnostic Sets)
+--------------------------------------------------
+Backend:
+  - convex/diagnostics.ts: new getAttemptCount query (counts attempts for set cycling)
+
+Frontend lib (src/lib/diagnostic.ts):
+  - New type: DiagnosticSet { groupPrefix, setIndex, questionIds }
+  - New: loadDiagnosticSets() -- fetch/cache diagnostic-sets.json
+  - New: getSetForAttempt() -- pick set by attemptCount % 10
+  - New: resolveSetQuestions() -- map IDs to full question objects
+  - Deprecated (kept but unused): getQuizLength, selectQuizQuestions, localStorage helpers
+
+Frontend page (src/pages/student/DiagnosticPage.tsx):
+  - Uses pre-built sets instead of random selection
+  - Queries Convex for attempt count (replaces localStorage tracking)
+  - Fixed 30-question display instead of pool/3
+
+Build pipeline:
+  - diagnostic-check/tools/build_ka_diagnostic.py: generates data-sets.js (70 sets, 7 groups x 10)
+  - scripts/export-diagnostic-data.mjs: exports diagnostic-sets.json alongside diagnostic-data.json
+
+No Structural Changes
+---------------------
+  - No new pages, hooks, or component directories
+  - No new database tables or indexes
+  - No removed files
+  - No routing changes
+
+Stale Docs Check
+----------------
+  - No docs older than 90 days found

@@ -10,7 +10,9 @@ Usage:
     python tools/scrape/build_ka_diagnostic.py
 """
 
+import hashlib
 import json
+import random
 import re
 from pathlib import Path
 
@@ -18,6 +20,8 @@ ROOT = Path(__file__).resolve().parent.parent.parent
 EEDI_RAW = ROOT / "data" / "eedi" / "raw"
 CURRICULUM_HTML = ROOT / "data" / "Curriculum_Map_Links.html"
 OUTPUT_DIR = ROOT / "web" / "public" / "check"
+# diagnostic-check/ is where the export script reads data from
+DIAGNOSTIC_CHECK_DIR = Path(__file__).resolve().parent.parent
 
 # ────────────────────────────────────────────────────────────
 # Module definitions: each module maps to KA exercises and
@@ -563,6 +567,81 @@ def build_module_data(module, matched_topics):
     return questions
 
 
+NUM_SETS = 10
+MAX_QUESTIONS_PER_SET = 30
+
+
+def generate_sets(all_modules):
+    """Generate pre-built question sets for each module group.
+
+    Groups modules by their module_name prefix (e.g. "Module 1:"),
+    then for each group creates NUM_SETS deterministic sets using
+    seeded PRNG and round-robin across sub-modules.
+    """
+    # Group modules by their shared prefix (e.g. "Module 1: Whole Number Foundations")
+    groups = {}
+    for mod in all_modules:
+        # The prefix is the "Module N:" part of the module_name
+        prefix = mod["module_name"].split(":")[0] + ":"
+        if prefix not in groups:
+            groups[prefix] = []
+        groups[prefix].append(mod)
+
+    all_sets = []
+
+    for prefix, group_modules in sorted(groups.items()):
+        # Collect questions per sub-module (keyed by sub-module id like "1.1")
+        sub_module_questions = {}
+        for mod in group_modules:
+            qids = [q["id"] for q in mod["questions"]]
+            sub_module_questions[mod["id"]] = qids
+
+        sub_module_ids = sorted(sub_module_questions.keys())
+
+        for set_idx in range(NUM_SETS):
+            # Deterministic seed from group prefix + set index
+            seed_str = f"{prefix}{set_idx}"
+            seed = int(hashlib.sha256(seed_str.encode()).hexdigest()[:8], 16)
+            rng = random.Random(seed)
+
+            # Shuffle each sub-module's questions independently
+            shuffled = {}
+            for sm_id in sub_module_ids:
+                pool = sub_module_questions[sm_id][:]
+                rng.shuffle(pool)
+                shuffled[sm_id] = pool
+
+            # Round-robin: pick 1 from each sub-module in turn until 30
+            pointers = {sm_id: 0 for sm_id in sub_module_ids}
+            selected = []
+
+            while len(selected) < MAX_QUESTIONS_PER_SET:
+                picked_any = False
+                for sm_id in sub_module_ids:
+                    if len(selected) >= MAX_QUESTIONS_PER_SET:
+                        break
+                    if pointers[sm_id] < len(shuffled[sm_id]):
+                        selected.append(shuffled[sm_id][pointers[sm_id]])
+                        pointers[sm_id] += 1
+                        picked_any = True
+                # All sub-modules exhausted
+                if not picked_any:
+                    break
+
+            all_sets.append({
+                "groupPrefix": prefix,
+                "setIndex": set_idx,
+                "questionIds": selected,
+            })
+
+        total_pool = sum(len(q) for q in sub_module_questions.values())
+        print(f"  {prefix} {len(sub_module_ids)} sub-modules, "
+              f"{total_pool} total questions, "
+              f"{NUM_SETS} sets (max {MAX_QUESTIONS_PER_SET} each)")
+
+    return all_sets
+
+
 def main():
     print("Loading CC topics...")
     topics_by_grade = load_cc_topics()
@@ -605,6 +684,27 @@ def main():
 
     print(f"\n  Total: {grand_total} questions across {len(all_modules)} modules")
     print(f"  Data: {data_js_path}")
+
+    # Generate pre-built question sets
+    print("\nGenerating pre-built question sets...")
+    sets = generate_sets(all_modules)
+
+    sets_js_content = (
+        f"// Auto-generated diagnostic question sets\n"
+        f"// {len(sets)} sets across {len(set(s['groupPrefix'] for s in sets))} groups\n"
+        f"var DIAGNOSTIC_SETS = {json.dumps(sets, indent=2, ensure_ascii=False)};\n"
+    )
+
+    sets_js_path = OUTPUT_DIR / "data-sets.js"
+    with open(sets_js_path, "w") as f:
+        f.write(sets_js_content)
+    print(f"  Sets: {sets_js_path}")
+
+    # Also write to diagnostic-check/ where the export script reads from
+    sets_export_path = DIAGNOSTIC_CHECK_DIR / "data-sets.js"
+    with open(sets_export_path, "w") as f:
+        f.write(sets_js_content)
+    print(f"  Sets (export): {sets_export_path}")
 
 
 if __name__ == "__main__":

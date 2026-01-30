@@ -27,7 +27,6 @@ export interface DiagnosticModule {
   id: string;
   name: string;
   module_name: string;
-  section: DiagnosticSection;
   ka_links: DiagnosticKALink[];
   standards: string[];
   questions: DiagnosticQuestion[];
@@ -40,6 +39,12 @@ export interface DiagnosticGroupConfig {
   moduleIds: string[];
   questionPool: DiagnosticQuestion[];
   kaLinks: DiagnosticKALink[];
+}
+
+export interface DiagnosticSet {
+  groupPrefix: string; // e.g. "Module 1:"
+  setIndex: number; // 0-9
+  questionIds: string[];
 }
 
 let cachedData: DiagnosticModule[] | null = null;
@@ -67,6 +72,62 @@ export async function loadDiagnosticData(): Promise<DiagnosticModule[]> {
   return cachedDataPromise;
 }
 
+let cachedSets: DiagnosticSet[] | null = null;
+let cachedSetsPromise: Promise<DiagnosticSet[]> | null = null;
+
+export async function loadDiagnosticSets(): Promise<DiagnosticSet[]> {
+  if (cachedSets) return cachedSets;
+  if (cachedSetsPromise) return cachedSetsPromise;
+
+  cachedSetsPromise = fetch("/diagnostic/diagnostic-sets.json")
+    .then(async (res) => {
+      if (!res.ok) {
+        throw new Error(`Failed to load diagnostic sets: ${res.status}`);
+      }
+      return (await res.json()) as DiagnosticSet[];
+    })
+    .then((data) => {
+      cachedSets = data;
+      return data;
+    })
+    .finally(() => {
+      cachedSetsPromise = null;
+    });
+
+  return cachedSetsPromise;
+}
+
+/**
+ * Pick the pre-built set for this attempt.
+ * Cycles through 10 sets (0-9) based on attemptCount.
+ */
+export function getSetForAttempt(
+  sets: DiagnosticSet[],
+  groupPrefix: string,
+  attemptCount: number
+): DiagnosticSet | null {
+  const groupSets = sets.filter((s) => s.groupPrefix === groupPrefix);
+  if (groupSets.length === 0) return null;
+  const idx = attemptCount % groupSets.length;
+  return groupSets.find((s) => s.setIndex === idx) ?? groupSets[0];
+}
+
+/**
+ * Map question IDs from a set to full question objects, preserving set order.
+ */
+export function resolveSetQuestions(
+  set: DiagnosticSet,
+  questionPool: DiagnosticQuestion[]
+): DiagnosticQuestion[] {
+  const byId = new Map(questionPool.map((q) => [q.id, q]));
+  const resolved: DiagnosticQuestion[] = [];
+  for (const id of set.questionIds) {
+    const q = byId.get(id);
+    if (q) resolved.push(q);
+  }
+  return resolved;
+}
+
 function uniqBy<T>(items: T[], keyFn: (item: T) => string): T[] {
   const seen = new Set<string>();
   const out: T[] = [];
@@ -86,9 +147,9 @@ export function findDiagnosticGroup(
 ): DiagnosticGroupConfig | null {
   const prefix = section === "pyp" ? `PYP ${moduleIndex}:` : `Module ${moduleIndex}:`;
 
-  const matching = modules.filter(
-    (m) => m.section === section && m.module_name.startsWith(prefix)
-  );
+  // Data JSON doesn't include a `section` field — the prefix already
+  // encodes the section ("Module N:" for DW, "PYP N:" for PYP).
+  const matching = modules.filter((m) => m.module_name.startsWith(prefix));
   if (matching.length === 0) return null;
 
   const moduleName = matching[0].module_name;

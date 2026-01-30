@@ -32,53 +32,21 @@ Why this shape:
 
 ```
 DW/
-  src/
+  src/                          # React frontend (see CODEMAPS/frontend.md)
     App.tsx                     # Router, role-based guards
     main.tsx                    # React entrypoint
-    components/
-      auth/                     # ProtectedRoute/PublicOnlyRoute, LoginForm
-      layout/                   # DashboardLayout, AdminLayout, CheckInGate
-      paper/                    # Student UI system
-      ui/                       # Admin UI system (shadcn)
-      sprint/                   # GoalChatPalette, GoalEditor, HabitTracker
-      reading/                  # BookBuddy, BookCard
-      projects/                 # ProjectDataChat
-      trustjar/                 # TrustJar (Matter.js physics)
-      skill-tree/               # SkillTreeCanvas, nodes, connections
-      deepwork/                 # DomainCard, LearningObjectiveCard
-      visionboard/              # VisionBoardGrid, FAB, CardCreator, 8 card types
+    components/                 # Feature-grouped UI components
     hooks/                      # useAuth, useVisionBoard, useDelayedLoading, use-mobile
-    pages/
-      student/                  # Student routes
-      admin/                    # Admin routes
-    lib/                        # Domain/status/emotion helpers
+    pages/                      # student/ and admin/ route pages
+    lib/                        # Domain/status/emotion/diagnostic helpers
     types/                      # Temporary types (pre-Convex generated types)
-  convex/
+  convex/                       # Convex backend (see CODEMAPS/backend.md)
     schema.ts                   # Database schema (26 tables)
-    auth.ts                     # Auth + sessions
-    users.ts                    # Student/admin queries
-    emotions.ts                 # Check-in data
-    sprints.ts                  # Sprint lifecycle
-    goals.ts                    # Goals + action items
-    habits.ts                   # Habit tracking
-    domains.ts                  # Learning domains
-    objectives.ts               # Major/sub objectives + assignments
-    activities.ts               # Objective activities
-    progress.ts                 # Activity completion + status updates
-    books.ts                    # Reading library
-    projects.ts                 # 6-week projects
-    projectLinks.ts             # Project submissions
-    projectReflections.ts       # Project reflections
-    trustJar.ts                 # Trust jar state
-    ai.ts                       # AI actions (goal chat, book buddy, project data)
-    visionBoard.ts              # Vision board areas + cards
-    diagnostics.ts              # Diagnostic unlock/attempt/mastery
-    chatLogs.ts                 # AI chat logging
-    migrations.ts               # One-time data migrations
-    seed.ts                     # Initial data seeding (2841 lines)
-  scripts/                      # Offline curriculum data tools
+    *.ts                        # Domain-specific queries/mutations/actions
+    seed.ts                     # Data seeding (2841 lines)
+  scripts/                      # Offline curriculum data tools (see CODEMAPS/scripts.md)
   docs/                         # Architecture + data model + patterns
-    CODEMAPS/                   # High-level architecture maps (this system)
+    CODEMAPS/                   # High-level architecture maps
 ```
 
 ## Runtime entry points
@@ -88,39 +56,12 @@ DW/
 
 ## Routing (from `src/App.tsx`)
 
-### Public
-| Path | Component | Notes |
-| --- | --- | --- |
-| `/login` | `src/pages/LoginPage.tsx` | Redirects to dashboards when already authenticated |
-| `/setup` | `src/pages/SetupPage.tsx` | First-time admin bootstrap + seed |
+For the full route table, see [CODEMAPS/frontend.md](CODEMAPS/frontend.md#routing-map).
 
-### Student (role: student)
-| Path | Component | Notes |
-| --- | --- | --- |
-| `/dashboard` | `src/pages/student/StudentDashboard.tsx` | Primary student landing |
-| `/check-in` | `src/pages/student/EmotionCheckInPage.tsx` | Check-in view (also enforced by gate) |
-| `/sprint` | `src/pages/student/SprintPage.tsx` | Goals and habits |
-| `/deep-work` | `src/pages/student/DeepWorkPage.tsx` | Domain list |
-| `/deep-work/:domainId` | `src/pages/student/DomainDetailPage.tsx` | Objectives + activities |
-| `/reading` | `src/pages/student/ReadingPage.tsx` | Library + Book Buddy |
-| `/trust-jar` | `src/pages/student/TrustJarPage.tsx` | Full-screen jar view |
-| `/deep-work/diagnostic/:majorObjectiveId` | `src/pages/student/DiagnosticPage.tsx` | Diagnostic quiz |
-| `/vision-board` | `src/pages/student/VisionBoardPage.tsx` | Personal vision board |
-
-### Admin (role: admin)
-| Path | Component | Notes |
-| --- | --- | --- |
-| `/admin` | `src/pages/admin/AdminDashboard.tsx` | Admin landing |
-| `/admin/students` | `src/pages/admin/StudentsPage.tsx` | Student list |
-| `/admin/students/:studentId` | `src/pages/admin/StudentDetailPage.tsx` | Student detail |
-| `/admin/sprints` | `src/pages/admin/SprintsPage.tsx` | Sprint management |
-| `/admin/projects` | `src/pages/admin/ProjectsPage.tsx` | Projects list |
-| `/admin/projects/:projectId` | `src/pages/admin/ProjectDetailPage.tsx` | Project detail |
-| `/admin/objectives` | `src/pages/admin/ObjectivesPage.tsx` | Objective management |
-| `/admin/viva` | `src/pages/admin/VivaQueuePage.tsx` | Viva queue |
-| `/admin/presentations` | `src/pages/admin/PresentationQueuePage.tsx` | Reading presentations |
-| `/admin/books` | `src/pages/admin/BooksPage.tsx` | Library management |
-| `/admin/trust-jar` | `src/pages/admin/TrustJarPage.tsx` | Jar controls |
+Key rules:
+- Public: `/login` (redirects if authenticated), `/setup` (first-time bootstrap)
+- Student routes: wrapped in `ProtectedRoute` + `DashboardLayout` (includes `CheckInGate`)
+- Admin routes: wrapped in `ProtectedRoute` + `AdminLayout`
 
 ## Key UI subsystems (why they exist)
 
@@ -159,7 +100,7 @@ DW/
 
 - Diagnostics (`src/pages/student/DiagnosticPage.tsx`, `src/lib/diagnostic.ts`)
   - Why: Fast-track mastery proof. Students take quizzes that auto-complete all work if passed.
-  - Uses `api.diagnostics` for unlock/attempt lifecycle. Questions loaded from `/diagnostic-data.json`.
+  - Uses `api.diagnostics` for unlock/attempt lifecycle. Pre-built question sets loaded from `/diagnostic/diagnostic-sets.json`; question bank from `/diagnostic/diagnostic-data.json`. Set selection uses Convex attempt counting (`getAttemptCount`).
   - See [docs/CODEMAPS/diagnostics.md](CODEMAPS/diagnostics.md) for full details.
 
 ## Backend design (why it is organized this way)

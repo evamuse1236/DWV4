@@ -1,6 +1,6 @@
 # Frontend Codemap
 
-**Last Updated:** 2026-01-29
+**Last Updated:** 2026-01-30
 **Framework:** React 19 + Vite 7 + TypeScript 5.9
 **Entry Point:** `src/main.tsx` -> `src/App.tsx`
 
@@ -62,7 +62,7 @@ src/
     use-mobile.tsx          # Mobile viewport detection
 
   lib/
-    diagnostic.ts           # Diagnostic quiz types, data loader, question selection
+    diagnostic.ts           # Diagnostic quiz types, data loader, pre-built set selection
     domain-utils.tsx        # Domain icons (SVG), colors, descriptions
     emotions.ts             # Emotion category/subcategory helpers
     status-utils.ts         # Status badge configs for objectives, goals, books

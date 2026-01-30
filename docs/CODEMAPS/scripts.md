@@ -1,6 +1,6 @@
 # Scripts Codemap
 
-**Last Updated:** 2026-01-29
+**Last Updated:** 2026-01-30
 **Location:** `scripts/`
 **Runtime:** Node.js via `npx tsx scripts/<name>.ts`
 
@@ -43,7 +43,7 @@ The scripts directory contains offline data management tools for maintaining cur
 | Script | Purpose |
 |--------|---------|
 | `export-chat-logs.sh` | Export AI chat logs from Convex |
-| `export-diagnostic-data.mjs` | Export diagnostic question bank |
+| `export-diagnostic-data.mjs` | Export diagnostic question bank + pre-built sets to `public/diagnostic/` |
 
 ## Config Files
 
@@ -77,22 +77,7 @@ The scripts directory contains offline data management tools for maintaining cur
 
 ## Curriculum Documentation
 
-The `docs/curriculum/` directory contains detailed documentation about the curriculum mapping process:
-
-| Doc | Purpose |
-|-----|---------|
-| `README.md` | Overview of curriculum workflow |
-| `WORKFLOW.md` | Step-by-step seeding process |
-| `QUALITY-CONTRACT.md` | Quality standards for curriculum data |
-| `ACTIVITY-LIBRARY-MIGRATION.md` | Migration plan for activity library |
-| `CCSS-GRADE-6.md` | Common Core State Standards Grade 6 mapping |
-| `CCSS-G6-REFACTOR-PLAN.md` | Grade 6 refactor plan |
-| `ccss-grade-6.json` | Grade 6 standards data |
-| `snapshot.md` | Database snapshot documentation |
-| `validation.md` | Validation rules and results |
-| `repair-report.md` | Repair action log |
-| `semantic-mismatch-report.md` | Semantic mismatch analysis |
-| `mismatch-risk-patch-report.md` | Patch action log |
+See [docs/curriculum/README.md](../curriculum/README.md) for the full index of curriculum docs (workflow, quality contract, CCSS mappings, generated reports).
 
 ## Typical Workflow
 

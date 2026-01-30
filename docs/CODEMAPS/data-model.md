@@ -1,6 +1,6 @@
 # Data Model Codemap
 
-**Last Updated:** 2026-01-29
+**Last Updated:** 2026-01-30
 **Schema File:** `convex/schema.ts`
 **Total Tables:** 26
 

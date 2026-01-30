@@ -5,12 +5,17 @@
 | Document | Description |
 |----------|-------------|
 | [CODEMAPS/INDEX.md](./CODEMAPS/INDEX.md) | High-level architecture maps (start here) |
-| [USER-JOURNEYS.md](./USER-JOURNEYS.md) | Complete user flows for students and coaches |
-| [ARCHITECTURE.md](./ARCHITECTURE.md) | System architecture and component structure |
+| [ARCHITECTURE.md](./ARCHITECTURE.md) | System architecture and design rationale |
 | [DATA-MODEL.md](./DATA-MODEL.md) | Convex database schema and relationships |
 | [COMPONENTS.md](./COMPONENTS.md) | Quick component/file lookup guide |
-| [PATTERNS.md](./PATTERNS.md) | Code patterns and conventions used |
-| [CURRICULUM-MATH-MAPPING.md](./CURRICULUM-MATH-MAPPING.md) | How Math LO -> objective -> activity seeding works |
+| [PATTERNS.md](./PATTERNS.md) | Code patterns and conventions |
+| [USER-JOURNEYS.md](./USER-JOURNEYS.md) | Complete user flows for students and coaches |
+| [CONTRIB.md](./CONTRIB.md) | Setup, development workflow, scripts |
+| [RUNBOOK.md](./RUNBOOK.md) | Deployment, seeding, troubleshooting |
+| [AI-SYSTEM.md](./AI-SYSTEM.md) | AI features guide (goal chat, book buddy, project data) |
+| [TEST-PLAN.md](./TEST-PLAN.md) | Test plan and priorities |
+| [plan.md](./plan.md) | Diagnostic integration plan (implementation status) |
+| [CURRICULUM-MATH-MAPPING.md](./CURRICULUM-MATH-MAPPING.md) | Math LO -> objective -> activity seeding |
 
 ### Codemaps (architecture maps by area)
 
@@ -26,11 +31,17 @@
 
 ## Recent Changes
 
+### Diagnostic Pre-Built Sets (Jan 2026)
+- Question selection now uses **pre-built deterministic sets** (10 per module group, 30 questions each)
+- Set cycling via Convex `getAttemptCount` query (replaces localStorage-based random selection)
+- Build pipeline: `build_ka_diagnostic.py` generates sets, `export-diagnostic-data.mjs` exports to `public/diagnostic/`
+- See [CODEMAPS/diagnostics.md](./CODEMAPS/diagnostics.md) for architecture details
+
 ### Viva Request Flow (Jan 2026)
-- Removed modal confirmation - button now directly updates status
+- Removed modal confirmation -- button directly updates status
 - "Request for Viva" button only appears when ALL activities are complete
 - Sub-objectives in major view are clickable (navigate to detail)
-- Activity checkboxes have optimistic updates (instant UI feedback)
+- Activity checkboxes have optimistic updates
 
 ## Key Concepts
 

@@ -1,5 +1,7 @@
 # Data Model and Contracts
 
+**Last Updated:** 2026-01-30
+
 ## Source of truth
 - Schema: `convex/schema.ts` defines 26 tables and indexes.
 - Generated types: `convex/_generated/dataModel.d.ts` should be used when available.
@@ -478,7 +480,7 @@ users ──< sessions
   +──< projectLinks >── projects
   +──< projectReflections >── projects
 
-trustJar (single-row global state)
+trustJar (per-batch singleton, indexed by "batch")
 ```
 
 Why this model:
@@ -487,231 +489,13 @@ Why this model:
 - Reading uses `studentBooks` as the join table to support status transitions and reviews.
 - Projects separate links and reflections to allow incremental data entry and AI-assisted extraction.
 
-## Convex contracts (queries, mutations, actions)
+## Convex function reference
 
-### `convex/auth.ts`
-| Function | Type | Purpose |
-| --- | --- | --- |
-| `checkNeedsBootstrap` | query | Returns true if no users exist |
-| `login` | mutation | Authenticate and create session token |
-| `logout` | mutation | Remove session by token |
-| `getCurrentUser` | query | Resolve user from token |
-| `createUser` | mutation | Admin-only user creation |
-| `initializeAdmin` | mutation | First admin bootstrapping |
-| `initializeStudent` | mutation | First student bootstrapping |
-| `cleanupExpiredSessions` | mutation | Delete expired sessions |
-
-### `convex/users.ts`
-| Function | Type | Purpose |
-| --- | --- | --- |
-| `getAll` | query | All students |
-| `getById` | query | User by id |
-| `getStudentCount` | query | Count students |
-| `getAllUsers` | query | All users (debug) |
-| `getTodayCheckInCount` | query | Check-in count for today |
-| `getByBatch` | query | Students by batch |
-| `updateBatch` | mutation | Update student batch |
-| `getBatches` | query | Unique batch list |
-| `remove` | mutation | Remove student and related data |
-
-### `convex/emotions.ts`
-| Function | Type | Purpose |
-| --- | --- | --- |
-| `getCategories` | query | Categories with subcategories |
-| `saveCheckIn` | mutation | Insert a new check-in |
-| `updateCheckIn` | mutation | Patch an existing check-in |
-| `getTodayCheckIn` | query | Today check-in for user |
-| `getHistory` | query | Recent check-ins |
-| `getStats` | query | Streak and counts |
-| `getTodayCheckIns` | query | Admin view of all today check-ins |
-| `deleteTodayCheckIn` | mutation | Remove today check-in (dev/testing) |
-
-### `convex/sprints.ts`
-| Function | Type | Purpose |
-| --- | --- | --- |
-| `getActive` | query | Active sprint |
-| `getAll` | query | All sprints sorted by start date |
-| `create` | mutation | Create sprint and deactivate current |
-| `update` | mutation | Patch sprint fields |
-| `setActive` | mutation | Switch active sprint |
-| `remove` | mutation | Delete sprint |
-
-### `convex/goals.ts`
-| Function | Type | Purpose |
-| --- | --- | --- |
-| `getByUserAndSprint` | query | Goals + action items for sprint |
-| `getWithActions` | query | Goal with actions |
-| `create` | mutation | Create goal |
-| `update` | mutation | Patch goal |
-| `remove` | mutation | Delete goal and actions |
-| `addActionItem` | mutation | Insert action item |
-| `toggleActionItem` | mutation | Toggle completion |
-| `updateActionItem` | mutation | Patch action item |
-| `removeActionItem` | mutation | Delete action item |
-| `getActionItemsByDay` | query | Action items for a day |
-| `getPreviousSprintGoals` | query | Import candidates |
-| `duplicate` | mutation | Duplicate goal (optionally with actions) |
-| `importGoal` | mutation | Import goal into target sprint |
-
-### `convex/habits.ts`
-| Function | Type | Purpose |
-| --- | --- | --- |
-| `getByUserAndSprint` | query | Habits + completions |
-| `getWithCompletions` | query | Single habit + completions |
-| `create` | mutation | Create habit |
-| `update` | mutation | Patch habit |
-| `remove` | mutation | Delete habit and completions |
-| `toggleCompletion` | mutation | Toggle completion by date |
-| `getCompletionsInRange` | query | Completions by range |
-| `getStreak` | query | Completion streak |
-
-### `convex/domains.ts`
-| Function | Type | Purpose |
-| --- | --- | --- |
-| `getAll` | query | All domains |
-| `getById` | query | Domain by id |
-
-### `convex/objectives.ts`
-| Function | Type | Purpose |
-| --- | --- | --- |
-| `getAll` | query | All major objectives with counts |
-| `getByDomain` | query | Majors with subs for a domain |
-| `getAllSubObjectives` | query | All subs with domain/major info |
-| `create` | mutation | Create major objective |
-| `update` | mutation | Patch major objective |
-| `remove` | mutation | Delete major objective + related data |
-| `createSubObjective` | mutation | Create sub objective |
-| `updateSubObjective` | mutation | Patch sub objective |
-| `removeSubObjective` | mutation | Delete sub objective + related data |
-| `assignToStudent` | mutation | Assign sub objective to a student |
-| `assignToMultipleStudents` | mutation | Batch assign sub objectives |
-| `unassignFromStudent` | mutation | Remove assignment and progress |
-| `getAssignedStudents` | query | Students for a sub objective |
-| `updateStatus` | mutation | Update major objective status |
-| `getVivaRequests` | query | Viva queue |
-| `getAssignedToStudent` | query | Student objectives (grouped) |
-| `getAssignedByDomain` | query | Student objectives by domain |
-| `getTreeData` | query | Skill tree data |
-| `migrateObjectivesToMajorSub` | mutation | Legacy migration |
-
-### `convex/activities.ts`
-| Function | Type | Purpose |
-| --- | --- | --- |
-| `getByObjective` | query | Activities for sub objective |
-| `create` | mutation | Create activity |
-| `update` | mutation | Patch activity |
-| `remove` | mutation | Delete activity |
-
-### `convex/progress.ts`
-| Function | Type | Purpose |
-| --- | --- | --- |
-| `getByStudentObjective` | query | Activity progress for sub objective |
-| `toggleActivity` | mutation | Toggle completion and update statuses |
-| `getDomainSummary` | query | Domain progress summary |
-
-### `convex/books.ts`
-| Function | Type | Purpose |
-| --- | --- | --- |
-| `getAll` | query | All books |
-| `getByGenre` | query | Books by genre |
-| `getStudentBooks` | query | Student book list with details |
-| `getReadingHistory` | query | AI context for Book Buddy |
-| `getCurrentlyReading` | query | Current reading book |
-| `startReading` | mutation | Add book to student list |
-| `updateStatus` | mutation | Update reading status |
-| `addReview` | mutation | Add rating/review |
-| `create` | mutation | Create book |
-| `update` | mutation | Patch book |
-| `remove` | mutation | Delete book and student links |
-| `removeFromMyBooks` | mutation | Remove studentBook entry |
-| `getReadingStats` | query | Reading stats summary |
-| `getPresentationRequests` | query | Presentation queue |
-| `approvePresentationRequest` | mutation | Approve/reject presentation |
-
-### `convex/projects.ts`
-| Function | Type | Purpose |
-| --- | --- | --- |
-| `getAll` | query | All projects (desc cycle) |
-| `getActive` | query | Active project |
-| `getById` | query | Project by id |
-| `getWithStats` | query | Project with completion stats |
-| `create` | mutation | Create project and deactivate current |
-| `update` | mutation | Patch project |
-| `setActive` | mutation | Set active project |
-| `remove` | mutation | Delete project and related data |
-| `getNextCycleNumber` | query | Next cycle index |
-
-### `convex/projectLinks.ts`
-| Function | Type | Purpose |
-| --- | --- | --- |
-| `getByProject` | query | Links for project |
-| `getByProjectAndUser` | query | Links for student in project |
-| `add` | mutation | Add a link |
-| `addMany` | mutation | Batch add links |
-| `update` | mutation | Patch link |
-| `remove` | mutation | Delete link |
-| `removeAllForUser` | mutation | Delete all links for student |
-
-### `convex/projectReflections.ts`
-| Function | Type | Purpose |
-| --- | --- | --- |
-| `getByProject` | query | Reflections for project |
-| `getByProjectAndUser` | query | Reflection for student |
-| `getOrCreate` | mutation | Get or insert empty reflection |
-| `update` | mutation | Update reflection + completion flag |
-| `batchUpdate` | mutation | Batch update reflections |
-| `remove` | mutation | Delete reflection |
-| `getProjectStats` | query | Reflection completion stats |
-
-### `convex/trustJar.ts`
-| Function | Type | Purpose |
-| --- | --- | --- |
-| `get` | query | Current jar count |
-| `add` | mutation | Add marble (admin) |
-| `remove` | mutation | Remove marble (admin) |
-| `reset` | mutation | Reset jar (admin) |
-
-### `convex/ai.ts` (actions)
-| Function | Type | Purpose |
-| --- | --- | --- |
-| `chat` | action | Goal chat (SMART + tasks) |
-| `libraryChat` | action | Book Buddy recommendations |
-| `projectDataChat` | action | Extract project links/reflections |
+For the complete function inventory (all queries, mutations, and actions), see [CODEMAPS/backend.md](./CODEMAPS/backend.md).
 
 ## Data flow examples
 
-### Daily check-in gate
-
-```
-Student UI -> api.emotions.getTodayCheckIn
-  if null: show CheckInGate
-    -> api.emotions.saveCheckIn
-    -> emotionCheckIns insert
-```
-
-### Activity completion and status propagation
-
-```
-Student UI -> api.progress.toggleActivity
-  -> activityProgress insert/update
-  -> studentObjectives.status recalculated
-  -> studentMajorObjectives.status recalculated (if needed)
-```
-
-### Reading presentation queue
-
-```
-Student UI -> api.books.updateStatus (presentation_requested)
-Admin UI   -> api.books.getPresentationRequests
-Admin UI   -> api.books.approvePresentationRequest (presented or reset to reading)
-```
-
-### Trust jar
-
-```
-Admin UI -> api.trustJar.add/remove/reset (adminToken)
-Student UI -> api.trustJar.get (public read)
-```
+For data flow diagrams (check-in gate, activity completion, diagnostic auto-mastery, etc.), see [CODEMAPS/backend.md](./CODEMAPS/backend.md#data-flow-patterns).
 
 ## Model gotchas
 

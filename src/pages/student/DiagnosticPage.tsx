@@ -6,13 +6,13 @@ import { useAuth } from "../../hooks/useAuth";
 import {
   extractImageSrc,
   findDiagnosticGroup,
-  getQuizLength,
-  getUsedQuestionKey,
+  getSetForAttempt,
   loadDiagnosticData,
-  readUsedQuestionIds,
-  selectQuizQuestions,
-  writeUsedQuestionIds,
+  loadDiagnosticSets,
+  resolveSetQuestions,
+  shuffleInPlace,
   type DiagnosticQuestion,
+  type DiagnosticSet,
 } from "../../lib/diagnostic";
 
 type AttemptType = "practice" | "mastery";
@@ -47,8 +47,16 @@ export function DiagnosticPage() {
       : "skip"
   );
 
+  const attemptCountResult = useQuery(
+    api.diagnostics.getAttemptCount,
+    user && majorObjectiveId
+      ? { userId: user._id as any, majorObjectiveId: majorObjectiveId as any }
+      : "skip"
+  );
+
   const [dataLoadingError, setDataLoadingError] = useState<string | null>(null);
   const [modules, setModules] = useState<any[] | null>(null);
+  const [diagnosticSets, setDiagnosticSets] = useState<DiagnosticSet[] | null>(null);
 
   // Quiz state
   const [startedAt, setStartedAt] = useState<number | null>(null);
@@ -86,8 +94,13 @@ export function DiagnosticPage() {
   useEffect(() => {
     setDataLoadingError(null);
     setModules(null);
-    loadDiagnosticData()
-      .then((d) => setModules(d))
+    setDiagnosticSets(null);
+
+    Promise.all([loadDiagnosticData(), loadDiagnosticSets()])
+      .then(([data, sets]) => {
+        setModules(data);
+        setDiagnosticSets(sets);
+      })
       .catch((err: any) => setDataLoadingError(err?.message || "Failed to load diagnostic data"));
   }, []);
 
@@ -112,25 +125,31 @@ export function DiagnosticPage() {
   };
 
   const handleStartQuiz = () => {
-    if (!user || !majorObjectiveId || !group) return;
+    if (!user || !majorObjectiveId || !group || !majorMeta) return;
 
-    const quizLen = getQuizLength(group.questionPool.length);
-    const key = getUsedQuestionKey({
-      userId: String(user._id),
-      majorObjectiveId,
-      diagnosticModuleName: group.moduleName,
-    });
+    const attemptCount = attemptCountResult?.count ?? 0;
+    const prefix = majorMeta.section === "pyp"
+      ? `PYP ${majorMeta.moduleIndex}:`
+      : `Module ${majorMeta.moduleIndex}:`;
 
-    const usedIds = readUsedQuestionIds(key);
-    const selection = selectQuizQuestions({
-      questionPool: group.questionPool,
-      quizLen,
-      usedQuestionIds: usedIds,
-    });
-    writeUsedQuestionIds(key, selection.nextUsedQuestionIds);
+    let selected: DiagnosticQuestion[];
+
+    // Try pre-built set first, fall back to random selection
+    const set = diagnosticSets
+      ? getSetForAttempt(diagnosticSets, prefix, attemptCount)
+      : null;
+
+    if (set) {
+      selected = resolveSetQuestions(set, group.questionPool);
+    } else {
+      // Fallback: pick 30 random from pool
+      const pool = group.questionPool.slice();
+      shuffleInPlace(pool);
+      selected = pool.slice(0, 30);
+    }
 
     setStartedAt(Date.now());
-    setQuestions(selection.questions);
+    setQuestions(selected);
     setQIndex(0);
     setAnswered(false);
     setSelectedIdx(null);
@@ -351,7 +370,7 @@ export function DiagnosticPage() {
         </p>
 
         <div className="mt-4 text-sm text-muted-foreground">
-          <div>Questions: {getQuizLength(group.questionPool.length)} (rotates from a larger pool)</div>
+          <div>Questions: 30 (pre-built set, rotates each attempt)</div>
           <div>Pass: 100% only</div>
           {typeof attemptsRemaining === "number" && (
             <div>Attempts remaining: {attemptsRemaining}</div>

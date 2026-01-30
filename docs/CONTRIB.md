@@ -1,6 +1,6 @@
 # Contributing to Deep Work Tracker
 
-**Last Updated:** 2026-01-29
+**Last Updated:** 2026-01-30
 
 ## Prerequisites
 
@@ -93,6 +93,20 @@ After starting both servers, open the app in a browser. The first visit routes t
 | `seed:assignReadingToAllStudents` | Assign reading objectives to all students |
 | `seed:migrateCurriculum` | Run curriculum migration |
 
+### Diagnostic build scripts
+
+| Script | Command | Description |
+|--------|---------|-------------|
+| `build_ka_diagnostic.py` | `python diagnostic-check/tools/build_ka_diagnostic.py` | Build question bank (`data.js`) and pre-built sets (`data-sets.js`) from Eedi raw data |
+| `export-diagnostic-data.mjs` | `node scripts/export-diagnostic-data.mjs` | Export `data.js` and `data-sets.js` to `public/diagnostic/` as JSON |
+
+Run the build first (from `diagnostic-check/`), then the export (from project root):
+
+```bash
+cd diagnostic-check && python tools/build_ka_diagnostic.py && cd ..
+node scripts/export-diagnostic-data.mjs
+```
+
 ### Curriculum scripts (run with `npx tsx` or `node --experimental-strip-types`)
 
 These scripts manage the `playlist_mapping.json` file and generate seed data. They live in `scripts/` and are documented in detail in `scripts/README.md`.
@@ -121,18 +135,7 @@ npx tsx scripts/validate-playlist-mapping.ts
 
 ## Curriculum Seeding Workflow
 
-The full workflow for updating curriculum data (see `docs/curriculum/WORKFLOW.md`):
-
-```
-1. Edit config files (chapter-assignment-config.json, ka-new-content-config.json)
-2. Repair + normalize:     npx tsx scripts/repair-playlist-mapping.ts
-3. Validate:               npx tsx scripts/validate-playlist-mapping.ts
-4. Generate seed data:     npx tsx scripts/generate-seed-data.ts
-5. Review output:          scripts/generated-seed-block.ts
-6. Apply to seed file:     npx tsx scripts/apply-generated-seed-block.ts
-7. Run seed on dev:        npx convex run seed:seedMathFromPlaylist
-8. Run seed on prod:       npx convex run seed:seedMathFromPlaylist --prod
-```
+See [docs/curriculum/WORKFLOW.md](./curriculum/WORKFLOW.md) for the full repair -> validate -> seed pipeline.
 
 ## Testing
 
@@ -166,35 +169,16 @@ See `docs/TEST-PLAN.md` for the full test plan and priorities.
 
 ## Project Structure
 
+For the full layout, see [ARCHITECTURE.md](./ARCHITECTURE.md#project-layout-what-lives-where).
+
 ```
 DW/
-  src/                    # React frontend
-    App.tsx               # Router + providers
-    main.tsx              # React entrypoint
-    components/           # UI components (paper/ for students, ui/ for admin)
-    hooks/                # Custom hooks (useAuth, useVisionBoard, etc.)
-    pages/                # Route pages (student/, admin/)
-    lib/                  # Utility helpers
-  convex/                 # Convex backend
-    schema.ts             # Database schema (26 tables)
-    seed.ts               # Seed data functions
-    ai.ts                 # AI actions (Groq/OpenRouter)
-    *.ts                  # Domain-specific queries/mutations
-  scripts/                # Curriculum data management tools
-  docs/                   # Architecture + guides + codemaps
-    CODEMAPS/             # High-level architecture maps
-    curriculum/           # Curriculum mapping documentation
+  src/          # React frontend (components/, hooks/, pages/, lib/)
+  convex/       # Convex backend (schema.ts, seed.ts, ai.ts, domain *.ts files)
+  scripts/      # Curriculum data management tools
+  docs/         # Architecture, guides, codemaps, curriculum docs
 ```
 
 ## Related Documentation
 
-| Doc | Purpose |
-|-----|---------|
-| [README.md](./README.md) | Documentation index |
-| [ARCHITECTURE.md](./ARCHITECTURE.md) | System architecture |
-| [DATA-MODEL.md](./DATA-MODEL.md) | Database schema reference |
-| [COMPONENTS.md](./COMPONENTS.md) | Component lookup |
-| [PATTERNS.md](./PATTERNS.md) | Code conventions |
-| [TEST-PLAN.md](./TEST-PLAN.md) | Test plan and priorities |
-| [CODEMAPS/INDEX.md](./CODEMAPS/INDEX.md) | Architecture maps |
-| [RUNBOOK.md](./RUNBOOK.md) | Deployment and operations |
+See [README.md](./README.md) for the full documentation index.
