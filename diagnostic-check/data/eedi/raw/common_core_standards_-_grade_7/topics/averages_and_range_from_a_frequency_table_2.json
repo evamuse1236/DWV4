@@ -73,7 +73,7 @@
     {
       "questionId": 108134,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0124bb64-3ecb-47fb-80e0-a86a9bffeb3f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "10 is just the sum of the different categories, not the total number of TVs. How many households have just one TV? How many TVs is that altogether? Keep going to work out the total number of TVs.",
         "B": "I think you might have counted the number of categories (rows). For the mean, we want the number of TVs per household. Do we need the number of categories, the number of TVs or the number of households?",
@@ -85,7 +85,7 @@
     {
       "questionId": 108127,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3be7a2d4-44d4-4c52-b708-b434b3fd2001.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The total 'TVs x Frequency' of 50 is the total number of TVs. For the mean, we want total TVs per household, not households divided by TVs.",
         "B": "To find the mean, we need to divide the total number of TVs in all the households by the total number of households. So we replace the circle with the total in the \"Frequency\" column, which represents the total number of households of 28.",
@@ -121,7 +121,7 @@
     {
       "questionId": 108136,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/85963055-eb57-46c6-bf21-58125b18b962.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The highest frequency is 8. 8 households have 1 TV. But do any other results have a frequency of 8?",
         "B": "The number 8 is the most common frequency in the table, but that is not the modal number of TVs. The modal number of TVs is the number of TVs that that applies to the most households.",

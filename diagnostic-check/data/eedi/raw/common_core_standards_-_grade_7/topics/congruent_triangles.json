@@ -91,7 +91,7 @@
     {
       "questionId": 131788,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/75418e8a-bd58-4964-9652-62368235dfdf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "If two triangles both have the same three angles, it does not mean that they will be the same size. For two triangles to be congruent, both must be exactly the same size.",
         "B": "At least one of these is not a condition for congruence. Remember, for two triangles to be congruent, they must be exactly the same shape and size. Would these conditions guarantee that?",
@@ -103,7 +103,7 @@
     {
       "questionId": 133981,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/65edc40d-5f2b-43b5-a565-e2466312c66c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "For two triangles to be congruent, they must be exactly the same size and shape. If a pair of triangles has two corresponding sides the same length, but the angle between them isn't the same, they won't be the same shape.",
         "B": "For two triangles to be congruent, they must be the same shape and size. If a pair of triangles has two corresponding sides the same length, but the angle between them isn't the same, they won't be the same shape. So Tom is not correct. If we know that an angle, an adjacent angle and its neighbouring side (Angle-Angle-Side) are the same on two triangles, the two triangles must be the same size and shape. So only Katie is correct.",
@@ -127,7 +127,7 @@
     {
       "questionId": 133982,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/87a6d73c-1ac9-4066-8187-58703710a2c9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "For Angle-Side-Angle to be used, we need the same two angles in both triangles and the same side length between these two angles. Is this the case for Tom's triangles?",
         "B": "For Angle-Side-Angle to be used, we need the same two angles in both triangles and the same side length between these two angles. Is this the case for Katie's triangles?",
@@ -139,7 +139,7 @@
     {
       "questionId": 131790,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/14c32623-4373-4b64-9eeb-6500829d9568.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The hypotenuse is the longest side (opposite the right angle). In Tom's first triangle, the hypotenuse is 12cm. Which side is the hypotenuse in Tom's second triangle?",
         "B": "In Tom's first triangle, the hypotenuse is 12 cm but in the second triangle, the hypotenuse is unknown. So Tom is not correct. Katie's two right-angled triangles are exactly the same shape and size. Both have a base of 6cm and a hypotenuse of 12cm. So only Katie is correct.",
@@ -151,7 +151,7 @@
     {
       "questionId": 133983,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/01607757-7e5d-4f89-b8e2-c59d11fe7569.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The hypotenuse is the longest side (opposite the right angle). In Tom's first triangle, the hypotenuse is 8cm. Which side is the hypotenuse in Tom's second triangle?",
         "B": "In Tom's first triangle, the hypotenuse is 8 cm but in the second triangle, the hypotenuse is unknown. So Tom is not correct. Katie has two angles in her second triangle of 70 and 20, and as angles in a triangle must add to 180, the remaining angle must be 90 degrees, which is a right angle. The side opposite the right angle is 8cm in both triangles, and the base is 5cm in both triangles. So only Katie is correct.",

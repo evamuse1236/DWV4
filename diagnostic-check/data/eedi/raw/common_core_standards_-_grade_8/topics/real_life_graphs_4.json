@@ -31,7 +31,7 @@
     {
       "questionId": 131826,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f29eba4c-4a0b-4ba0-9cfb-5cd4f58f8c72.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Have a think about how much the journey costs, no matter the distance. This graph suggests that the cost starts at zero - this isn't the case.",
         "B": "This graph begins at a cost of £2, which is the fixed charge of all journeys. The cost then increases as the distance increases.",
@@ -55,7 +55,7 @@
     {
       "questionId": 131827,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e46d8fc1-4dd2-4bac-85a2-ce2e0be9f100.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The line to the right of the graph shows a gradual slope down to the x-axis indicating he came out of a deep sleep over some period of time. This does not fit with being awoken suddenly by a car alarm. Which graph matches this sudden wake up?",
         "B": "Graph B shows a steep line from a deep sleep back down to the x-axis which would indicate he was awakened sharply. This matches a quick wake up by a sudden noise. The fact that there is no further line into sleep matches the description that he could not get back to sleep.",
@@ -67,7 +67,7 @@
     {
       "questionId": 134020,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f21cb475-c29f-4833-81ad-179ba5afa01e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This graph shape shows someone getting into a deep sleep quickly. This does not match the description that kept waking up at the start of the night. Which graph has a better match for this description of his initial sleep?",
         "B": "This graph shape shows someone getting into a deep sleep quickly. This does not match the description that kept waking up at the start of the night. Which graph has a better match for this description of his initial sleep?",
@@ -91,7 +91,7 @@
     {
       "questionId": 134021,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/196ca78f-4fd9-4ef8-a396-bbcd68a1f4ac.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Notice that Tom and Katie's graphs are different types (Tom's is a Velocity-Time graph, while Katie's is Distance-Time). Think about what happens to the speed and the distance over time for an object travelling at a constant speed.",
         "B": "Notice that Tom and Katie's graphs are different types (Tom's is a Velocity-Time graph, while Katie's is Distance-Time). Think about what happens to the speed and the distance over time for an object travelling at a constant speed.",
@@ -115,7 +115,7 @@
     {
       "questionId": 134022,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/46203916-e7af-4312-a7c4-edf95e1f1c09.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "A straight line sloping up means that the displacement is changing by the same amount with each unit of time. So this line represents an object at constant speed. We want the object to be accelerating, or getting faster with time. Which graph shows that?",
         "B": "A horizontal line means that the displacement is not changing as time goes by. So this line shows an object that is not moving. If the object is accelerating, it will be getting faster as time goes by. What will that look like on a graph?",
@@ -127,7 +127,7 @@
     {
       "questionId": 131830,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/300ed358-8c22-43e6-a13a-f07a2e013a99.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The curve in graph A gets gradually steeper suggesting it is increasing more quickly towards the end of the time, which doesn't match the description of p given. You could test some values to help you think about what would happen and if that would match any of the graphs given.",
         "B": "The curve in graph B is initially very steep, and then begins to flatten out, suggesting that p has increased very quickly and then slowed down to a constant value for p, this doesn't match the description given, because p hasn't increased quickly again.",
@@ -139,7 +139,7 @@
     {
       "questionId": 134023,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ca293188-f17a-4e79-a62d-879dca057085.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The curve in graph A gets gradually steeper suggesting continued quicker increasing over the time period, which doesn't match the description of p given as we need it to show p increasing more slowly at the end again. Remember that p increasing quickly gives a steeper curve for that section.",
         "B": "The curve in graph B is initially very steep, and then begins to flatten out, suggesting that p has increased very quickly and then slowed down to a constant value for p, this doesn't match the description given, because p starts increasing slowly, and gets quicker in the middle.",

@@ -55,7 +55,7 @@
     {
       "questionId": 135993,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e6c7679e-7fdd-4662-a385-10258a485802.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This would give you a right angled triangle, but are there any others? We need two points that form an edge of the cuboid and a third point in a plane perpendicular to that edge.",
         "B": "This would give you a right angled triangle, but there are others. Think about looking at the shape from different angles, and joining the three points.",

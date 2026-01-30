@@ -67,7 +67,7 @@
     {
       "questionId": 158714,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d599d271-7b3e-48bc-ac10-d13bf3459311.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This would mean 3 and 7 put together, but we have 3 whole rows of 7. Which calculation would give us the total number of squares?",
         "B": "We have 3 rows of 7, so 3 x 7 would give the total number of squares in the diagram.",
@@ -79,7 +79,7 @@
     {
       "questionId": 158913,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d68420aa-b005-47ec-a011-7f3716396ffd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This would mean 3 and 6 put together, but we have 3 whole rows of 6. Which calculation would give us the total number of squares?",
         "B": "This would mean starting with 3 and taking away 6, but we have 3 whole rows of 6. Which calculation would give us the total number of squares?",
@@ -91,7 +91,7 @@
     {
       "questionId": 158715,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/49d92f7e-2181-4836-9d84-7ce233d4591f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "We do have 1 group of 8 squares, which is 1 x 8, but are there 0 total squares?",
         "B": "We do have 1 group of 8 squares, which is 1 x 8, but is there only 1 square in total?",
@@ -103,7 +103,7 @@
     {
       "questionId": 158914,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/08be1977-5622-4524-972b-8aff94e78007.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "We do have 1 group of 10 squares, which is 1 x 10, but are there 0 total squares?",
         "B": "We do have 1 group of 10 squares, which is 1 x 10, but is there only 1 square in total?",

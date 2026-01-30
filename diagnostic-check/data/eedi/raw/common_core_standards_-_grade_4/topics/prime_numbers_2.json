@@ -85,7 +85,7 @@
     {
       "questionId": 103047,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/25c84697-43f5-4961-9e09-07e001d43da5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Let's remind ourselves of what a prime number is :) a number with exactly two factors, so it cannot be divided by anything other than 1 and itself. 81 can be divided by 1,3,9,27,81.",
         "B": "Let's remind ourselves of what a prime number is :) a number with exactly two factors, so it cannot be divided by anything other than 1 and itself. 33 can be divided by 1,3,11,33.",
@@ -97,7 +97,7 @@
     {
       "questionId": 103040,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f737f974-c8b7-4cef-b424-4a77fd38bf97.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Let's remind ourselves of what a prime number is :) a number with exactly two factors, so it cannot be divided by anything other than 1 and itself. 49 can be divided by 1,7 and 49, so is not prime.",
         "B": "Let's remind ourselves of what a prime number is :) a number with exactly two factors, so it cannot be divided by anything other than 1 and itself. 51 can be divided by 1,3,17,51, so is not prime",
@@ -109,7 +109,7 @@
     {
       "questionId": 103048,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/441bee28-4db3-4331-8f3c-b85fa6bbdb34.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Let's remind ourselves of what a prime number is :) a number with exactly two factors, so it cannot be divided by anything other than 1 and itself. 39 can be divided by 1,3,13,39, so is not prime.",
         "B": "A prime number has to have exactly 2 factors, 1 and itself. 39 can be divided by 1,3,13,39, 45 can be divided by 1,3,5,9,15,45 and so are not prime, and 43 is prime because it can only be divided by 1 and 43, however 41 is the first prime after 37.",

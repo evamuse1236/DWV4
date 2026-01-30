@@ -55,7 +55,7 @@
     {
       "questionId": 107171,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/80aadb1e-bd30-4f96-b0e4-4e7763220597.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This line does have a negative gradient, and it does cross the x and y axis at 2, but that is not the gradient. Remember, to find the gradient, we calculate the change in y, over the change in x.",
         "B": "The gradient of the line is the change in 𝑦 over the change in 𝑥, so using the coordinates of the axes intercepts (0,2) and (2,0) we have (0 - 2)/(2 - 0) = −1",
@@ -79,7 +79,7 @@
     {
       "questionId": 107172,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e47a47d9-4790-4a29-a96e-b33c3196d36b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "To calculate the gradient of the line, we need to find the change in 𝑦 divided by the change in 𝑥. It looks like you might have calculated the change in x divided by the change in y.",
         "B": "Not quite. To calculate the gradient of the line, we need to find the change in 𝑦 divided by the change in 𝑥. To do this we can use two points on the line and calculate the difference between their y coordinates and their x coordinates.",

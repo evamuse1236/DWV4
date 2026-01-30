@@ -43,7 +43,7 @@
     {
       "questionId": 158011,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b1cee864-6076-4330-9e44-689ab71718ab.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "80/10 = 8 not 0.8. What divided by 10 gives 0.8?",
         "B": "The denominator is the bottom value in a fraction and 0.8 means we have 8 tenths so we write 8/10",
@@ -91,7 +91,7 @@
     {
       "questionId": 158013,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9053327d-5df1-4804-8625-69d5f8e3a0f0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is equivalent to 0.25 but the question asks for a fraction with a denominator of 100 not 4...",
         "B": "You have swapped round your numerator and denominator, the denominator is the bottom value...",

@@ -91,7 +91,7 @@
     {
       "questionId": 101048,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/eacbb4e9-06ca-4b85-bd17-3ba61cd381d5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Product means '✕'. We need to solve 5/8 ✕ ? = 1/6",
         "B": "It looks like you have multiplied 5/8 and 1/6. We need to solve 5/8 ✕ ? = 1/6",
@@ -103,7 +103,7 @@
     {
       "questionId": 101067,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/27741b1a-3fe5-4994-b32f-0c6a91e60fdd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Product means '✕'. We need to solve 3/7 ✕ ? = 2/5",
         "B": "Product means '✕'. We need to solve 3/7 ✕ ? = 2/5 and that means that ? = 2/5 ÷ 3/7 = 2/5 ✕ 7/3 = 14/15",

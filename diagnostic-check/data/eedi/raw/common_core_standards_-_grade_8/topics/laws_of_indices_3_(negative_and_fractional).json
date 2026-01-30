@@ -115,7 +115,7 @@
     {
       "questionId": 73596,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1c9ac434-3615-4dd2-a5a8-f018b637098f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Have another look. You have added ½ onto 64 here, whereas we are looking for the value of 64 raised to the power of ½",
         "B": "Raising something to the power of ½ is the same as finding the square root of the base number 64. √64 = 8.",

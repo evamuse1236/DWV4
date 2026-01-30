@@ -127,7 +127,7 @@
     {
       "questionId": 130135,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6310eb4-2f68-4310-92fd-54d273ab25e2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "None of the later patterns can have just one square on the right. Think about how many squares are added to the right each time.",
         "B": "This is the next pattern which is the 4th pattern. We need the 6th pattern.",
@@ -139,7 +139,7 @@
     {
       "questionId": 130155,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8dd016b6-0294-401c-af89-843a5ff29dd5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is the next pattern which is the 4th pattern. We need the 7th pattern.",
         "B": "This is the next pattern which is the 5th pattern. We need the 7th pattern.",

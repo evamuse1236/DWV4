@@ -55,7 +55,7 @@
     {
       "questionId": 167051,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a274586a-2c79-4007-9e4a-39e2aa7b1615.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Cuboid' is another name for a right-rectangular prism which is the 3D shape we're starting with. The cross-section is a 2D slice of the prism, so we're looking for the name of a 2D shape. Think about the angle between each pair of joined faces in this prism. This is the size of the angle at each of the corners of the cross-section and will help you to name the shape.",
         "B": "We can see that the cross-section has two pairs of parallel sides. The angle at each corner of the cross-section is a right-angle because the angles between joined faces of a right-rectangular prism are right-angles. So, we're looking for the name of a 2D shape with 4 sides and 4 right-angles in the available options. Therefore, the cross-section must be a rectangle.",
@@ -115,7 +115,7 @@
     {
       "questionId": 166804,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e65109eb-82aa-4548-ad0e-624ad5de27f1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It is possible to create a triangular cross-section by slicing off the corner of a cube with a plane that passes through 3 faces.",
         "B": "It is possible to create a square cross-section by slicing the cube vertically or horizontally, parallel with 2 opposite faces.",

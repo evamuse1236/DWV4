@@ -49,7 +49,7 @@
     {
       "questionId": 130064,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ddf7ba22-4077-404e-80be-6e5e0a872b09.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The 5 is not in the tens column. Use a place value grid, putting the 7 in the units column, the 3 in the tens column and so on, to help you decide the value of the number 5.",
         "B": "The 5 is not in the units column. Use a place value grid, putting the 7 in the units column, the 3 in the tens column and so on, to help you decide the value of the number 5.",
@@ -61,7 +61,7 @@
     {
       "questionId": 130083,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/17030667-6fad-4a3f-a961-4a4a8fdb80c1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The 3 is not in the units column. Use a place value grid, putting the 0 in the units column, the 5 in the tens column and so on, to help you decide the value of the number 3.",
         "B": "If we put this number in a place value grid the number 3 would go in the hundred thousands column. Therefore this 3 represents 3 lots of one hundred thousand which is 300,000.",
@@ -109,7 +109,7 @@
     {
       "questionId": 155598,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/69446670-5af5-41f7-89b0-9ea3db6b58e0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is 4 units, or 4 x 1, which would position it in the far right column.",
         "B": "The 4 is in the tens column, so will be worth 4 x 10 = 40.",

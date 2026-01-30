@@ -37,7 +37,7 @@
     {
       "questionId": 173953,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/96562c83-f582-4796-a717-cbf829fdef31.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The formula for the volume of a cone uses the radius (𝑟), not the diameter. The question gives the radius as 6 inches. It looks like you may have used the diameter, which would be 12 inches.",
         "B": "It looks like you have used the formula for the volume of a cylinder (π × 𝑟² × ℎ). Remember that the formula for a cone's volume is (1/3) × π × 𝑟² × ℎ, so you need to divide your answer by 3.",
@@ -49,7 +49,7 @@
     {
       "questionId": 174013,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/927ca5ee-1b6e-4f76-bb4b-3c85eb26a2b5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The formula for the volume of a cone includes 𝑟² (radius squared). It looks like you might have doubled the radius (multiplied by 2) instead of squaring it (multiplying it by itself).",
         "B": "The formula for the volume of a cone is 𝑉 = (1/3) × π × 𝑟² × ℎ. Here, 𝑟 = 5 and ℎ = 36. So, 𝑉 = (1/3) × π × 5² × 36 = (1/3) × π × 25 × 36, which equals 300π.",
@@ -61,7 +61,7 @@
     {
       "questionId": 173954,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a45d8fa7-8f0b-4db3-8d4f-623498b2fa5a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The formula for the volume of a cone uses the radius, but the question gives you the diameter (8 cm). Remember to halve the diameter to find the radius before you put it into the formula.",
         "B": "First, find the volume of the cone. The radius is half the diameter, so 𝑟 = 4 cm. Volume = (1/3) × π × 4² × 12, which is approx 201 cm³. Then divide the volume by the rate: 201 / 8 = 25.13 seconds, which rounds to 25 s.",
@@ -85,7 +85,7 @@
     {
       "questionId": 173955,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f8edf4b2-cb44-4f8f-a52f-d289e26bcd26.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The formula for the volume of a sphere is 𝑉 = (4/3) × π × 𝑟³. It looks like you may have mixed up the fraction and used 3/4 instead of 4/3.",
         "B": "The question gives the diameter of the basketball as 24 cm. The volume formula uses the radius (𝑟). Remember to halve the diameter to find the radius before substituting it into the formula.",
@@ -97,7 +97,7 @@
     {
       "questionId": 174015,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/de1c1b1d-b32c-4c1f-98c3-6d27f56701c2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The formula for the volume of a sphere uses 𝑟³ (radius cubed). It looks like you might have used 𝑟² (radius squared) by mistake. Remember to multiply the radius by itself three times.",
         "B": "The formula for the volume of a sphere is 𝑉 = (4/3) × π × 𝑟³. The diameter is 18 cm, so the radius is 9 cm. 𝑉 = (4/3) × π × 9³ = (4/3) × π × 729, which simplifies to 972π cm³.",
@@ -121,7 +121,7 @@
     {
       "questionId": 174016,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/672380cb-ff99-432a-a61c-2b5f7334d29e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The radius of the basketball is 4 times larger than the tennis ball. However, this means the volume is 4³ (or 64) times larger. It looks like you might have assumed the volume was only 4 times larger. It's safer to work out each volume separately and then subtract.",
         "B": "Your calculation of the number is correct, but remember that both volumes are 'in terms of π'. When you subtract them, the answer should also be in terms of π. It looks like you have forgotten to include π in your final answer.",

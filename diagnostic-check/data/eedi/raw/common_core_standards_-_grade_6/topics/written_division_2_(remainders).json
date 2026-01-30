@@ -127,7 +127,7 @@
     {
       "questionId": 129124,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7612f1a3-22b6-4e81-b472-a31d0482085f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The remainder is 1 and this is the part of 231 that has not yet been divided by 5. What do we get if we divide this remainder by 5?",
         "B": "Not quite. The remainder is 1 which is the part of 231 that has not yet been divided. 5 is the number that we still need to divide it by. What do we get if we divide the remainder by 5?",

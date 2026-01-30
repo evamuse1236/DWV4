@@ -127,7 +127,7 @@
     {
       "questionId": 133977,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/97cee6b8-b654-400e-9301-28b67511d576.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This set of instructions draws and angle of 60° at the wrong end of the 8cm line, so the angle does not end up in between the 8cm and 5cm side lengths as instructed. Think what steps would make sure this angle was between these two sides as instructed in the question.",
         "B": "This set of instructions has confused a side length of 5cm with drawing an angle measuring 5°. Which set of steps match the instructions given in the question?",
@@ -139,7 +139,7 @@
     {
       "questionId": 131785,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/322c20f6-574a-40d1-8587-7ecd121f89dc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This set of instructions has confused an angle of 50° with a compass length of 50cm. What can help us to draw angles when constructing shapes?",
         "B": "This set of instructions has confused drawing the angles of 40° & 50° with compass lengths of 40cm & 50cm respectively. What can help us to draw angles when constructing shapes?",
@@ -151,7 +151,7 @@
     {
       "questionId": 133978,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/51d1bc08-902d-40c2-822a-55ae95bff87f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This set of instructions draws two angles from the same end of the 8cm line. This would not allow us to draw a triangle. What might be a more sensible way to draw the two angles given?",
         "B": "The process described in answer B takes us through the steps to constructing a triangle using the angle-side-angle method, which is an excellent way to approach it.",

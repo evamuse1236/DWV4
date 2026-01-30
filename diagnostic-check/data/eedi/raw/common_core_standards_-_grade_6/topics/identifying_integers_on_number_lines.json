@@ -43,7 +43,7 @@
     {
       "questionId": 165468,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6392a36f-4416-450b-893d-626792e0ae31.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This would be where a positive 2 would go, but the question is asking about negative 2.",
         "B": "It doesn't look like you've gone as many spaces as you need to! Have a think about how far away from 0 -2 would be.",
@@ -79,7 +79,7 @@
     {
       "questionId": 165465,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a20dfd73-4ede-4e8d-b239-1e2dcd1c330e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "It seems like you might think that each point on the number line increases by 2. Check carefully how many there are between -6 and -1, that will help you work out what it is going up in!",
         "B": "It looks like you might be counting as if the numbers are getting further away from 0, but would that be true if we're looking at a number between -6 and -1?",
@@ -103,7 +103,7 @@
     {
       "questionId": 165466,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/54116eaf-cbda-4d80-992a-8553ba03d542.jpg",
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It seems like you may have just chosen the first shape at the top. See if you can figure out what the numbers are going down by each time.",
         "B": "The numbers are decreasing by 3 every time. 3 less than 7 would be 4, and then 3 less than that would be 1, so that is the star.",
@@ -115,7 +115,7 @@
     {
       "questionId": 165471,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/44b242a1-fa1d-4b72-8896-b738fc2a221d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "That would be correct for positive 4, however this question is asking about negative 4.",
         "B": "I think you may have miscounted here. Can you figure out what the number line is changing by with every jump?",

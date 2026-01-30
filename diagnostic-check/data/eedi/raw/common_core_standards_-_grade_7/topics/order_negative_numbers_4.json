@@ -115,7 +115,7 @@
     {
       "questionId": 104263,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fb5ea15b-75c1-4fe4-9cde-538a6867e09a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is the number that is furthest away from 0. If you consider the distance from 0 as the positive of these numbers, you just need to find the smallest from the list 4, 3.198, 3.02 and 3.2.",
         "B": "This one has the most digits, but because of the decimal point it doesn't mean it is the furthest away. If you consider the distance from 0 as the positive of these numbers, you just need to find the smallest from the list 4, 3.198, 3.02 and 3.2. Don't forget to think about the place value of the digits",

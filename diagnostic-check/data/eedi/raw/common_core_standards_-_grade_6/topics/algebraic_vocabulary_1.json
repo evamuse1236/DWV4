@@ -43,7 +43,7 @@
     {
       "questionId": 131446,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1beea0be-4e17-4208-9e54-538a12a61228.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "An equation always contains an equals '=' symbol. Which of the remaining words could contain numbers, letters AND an addition symbol?",
         "B": "A term is a single component. e.g. 3p is a term and 7 is a term. This contains an addition symbol as well, which of the choices could that lead you to?",
@@ -55,7 +55,7 @@
     {
       "questionId": 133679,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/659e8453-991d-41a3-8803-6e28b0e0863a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "A variable is a letter that represents an unknown value. Here 'g' is the variable. This contains a subtraction symbol as well, which of the choices could that lead you to?",
         "B": "This is an expression. It contains one or more terms and does not contain an equals '=' sign.",
@@ -115,7 +115,7 @@
     {
       "questionId": 131449,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a967e396-6723-40d0-8de2-99499f260147.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "We could call this an equation, because it contains an equals sign, but there is a more appropriate word to use.",
         "B": "This is a formula because it gives us a mathematical rule to calculate the volume of a cone. By substituting values for the radius (r) and the height (h) we can work out the volume (V).",
@@ -127,7 +127,7 @@
     {
       "questionId": 133682,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e01aba55-d418-4683-b13e-c734667ddf26.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "A variable is a letter that represents an unknown value. Here 'r' is the variable. This also contains an equals symbol and has a mathematical use. Which word would that make most appropiate?",
         "B": "Expressions do not contain equals '=' signs. This contains an equals symbol and has a mathematical use. Which word would that make most appropiate?",

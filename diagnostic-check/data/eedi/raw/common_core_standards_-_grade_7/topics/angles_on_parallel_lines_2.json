@@ -91,7 +91,7 @@
     {
       "questionId": 76849,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1c461537-e59a-4b89-83bb-1f0362b57eae.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Alternate angles make a 'z' shape. What is the name of the angles that make an 'F' shape?",
         "B": "These are corresponding angles as they make an F shape, with both angles sitting below a parallel line on the same side of the transversal. ",
@@ -103,7 +103,7 @@
     {
       "questionId": 120831,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f259633e-da81-4905-97be-71e59ac97ffb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Alternate angles make a 'z' shape. What is the name of the angles that make an 'F' shape?",
         "B": "These are corresponding angles as they make an F shape. These angles will not be equal as the lines are not parallel.",
@@ -151,7 +151,7 @@
     {
       "questionId": 120833,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d530a3f0-14ff-4c54-8171-b02e10994abd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "These angles are co-interior, but the lines are not parallel. What, if anything do we know about the angles?",
         "B": "This would be true if the lines were parallel, but they are not. So, what do we know about them?",

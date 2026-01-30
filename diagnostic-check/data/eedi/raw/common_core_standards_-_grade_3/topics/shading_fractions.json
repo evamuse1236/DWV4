@@ -43,7 +43,7 @@
     {
       "questionId": 158984,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/221571b9-e31b-47dc-b3ea-466ddd2c4265.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "1 part is shaded, but we want this as a fraction. How many parts is the shape split into altogether? That will be the denominator of the fraction.",
         "B": "Not quite - you have written shaded parts out of unshaded parts, but we want shaded parts out of total parts. How many parts is the whole shape split into?",
@@ -55,7 +55,7 @@
     {
       "questionId": 158786,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6f3648a-aa53-4038-8f42-409da8b974e8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The shape is split into 5 equal parts so each one is 1/5, but how many are shaded? This will be the numerator of the fraction.",
         "B": "Not quite - you have written shaded parts out of unshaded parts, but we want shaded parts out of total parts. How many parts is the whole shape split into?",
@@ -67,7 +67,7 @@
     {
       "questionId": 158985,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8ae6cba2-69e2-4149-a307-8f7f21cd76e8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The shape is split into 7 equal parts so each one is 1/7, but how many are shaded? This will be the numerator of the fraction.",
         "B": "That is the fraction that is unshaded. How many parts are shaded blue?",

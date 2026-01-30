@@ -151,7 +151,7 @@
     {
       "questionId": 143378,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/144ab722-b160-4129-84dc-71c5f7728b44.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "We are subtracting 20% but to answer this question, we need to find out what this 20% is as a percentage of the 120% we now have.",
         "B": "If an investment appreciates by 20% there is now 120%. We need to think about what percentage to decrease 120 by to get back to 100%, as this would be the original value. We can do 20/120 and multiply by 100 which will give us 16.666666.. so we need to decrease the 120% by 16 2/3% to get it back to 100% which is the original value.",

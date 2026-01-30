@@ -43,7 +43,7 @@
     {
       "questionId": 130233,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0990d0c8-b8c7-4d35-847d-a28a8bdf9f16.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "36 is the answer to 3x12, but we're multiplying by 0.3, which is 10 times smaller.",
         "B": "We could do this calculation by firstly doing 3x12 = 36, and then remembering that 0.3 is 10 times smaller so we can divide 36 by 10, to get 3.6.",
@@ -79,7 +79,7 @@
     {
       "questionId": 130254,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a1ea6156-bf54-4f31-a024-70e8a941d032.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "80 = 4x20, but we want 0.4 x 20 which is 10 times smaller.",
         "B": "I think you've multiplied 4 by 20 and then kept it behind the point. Try multiplying by 10 first, and then doubling your answer.",

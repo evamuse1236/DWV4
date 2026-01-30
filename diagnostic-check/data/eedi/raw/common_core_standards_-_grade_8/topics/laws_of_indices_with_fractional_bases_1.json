@@ -67,7 +67,7 @@
     {
       "questionId": 135093,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/559171ab-a75b-48a3-a121-22c0b30525ea.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Nearly! Remember, to square something, we times it by itself. Think about what -1 times -1 is equal to. You also need to check what 4 x 4 is equal to.",
         "B": "Nearly! Check what 4 x 4 is equal to.",
@@ -139,7 +139,7 @@
     {
       "questionId": 135096,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/74018eb6-fb09-4250-9f76-2ae4e2706871.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Nearly! Remember, the cube root of a negative number will also be a negative value.",
         "B": "It looks like you've divided the base (-8/27) by the 1/3. Remember that an index of 1/3 means you need to find the cube root of the value inside the bracket.",

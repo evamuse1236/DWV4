@@ -115,7 +115,7 @@
     {
       "questionId": 130149,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1aecb356-78e2-4e03-bdab-8686804795e8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is the second term in the sequence. We need to find the 10th term.",
         "B": "To get to the 2nd term we subtract 5 one time. To get to the 10th term we subtract 5 nine times. This gives 55.",

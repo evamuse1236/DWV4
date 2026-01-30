@@ -61,7 +61,7 @@
     {
       "questionId": 132168,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/82aca42b-9c95-4c4e-b8b9-b7e2942fd2e1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "What does the word equilateral mean? If side AC is 5cm and the triangle is equilateral, think about what side BC will be.",
         "B": "What does the word equilateral mean? If side AC is 5cm and the triangle is equilateral, think about what side BC will be.",
@@ -73,7 +73,7 @@
     {
       "questionId": 134163,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3c6755c9-7ce1-4b5c-a62d-c2f8cdb76ae5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "What does the word equilateral mean? If side BC is 8cm and the triangle is equilateral, think about what side AC will be.",
         "B": "What does the word equilateral mean? If side BC is 8cm and the triangle is equilateral, think about what side AC will be.",
@@ -85,7 +85,7 @@
     {
       "questionId": 132169,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/568ec0d4-5440-4a6f-9d3a-c971f6935278.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is the description of a right-angled triangle. You can get isosceles triangles with right-angles but not all isosceles triangles have them so it is not a defining property.",
         "B": "An isosceles triangle has two sides of equal length and at the base of these sides are two equal angles.",
@@ -97,7 +97,7 @@
     {
       "questionId": 134162,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e1b528ca-8e7d-4fec-9414-402567bf276b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This would not be possible. A triangle cannot have a pair of parallel sides, otherwise you would need at least two more sides to join them up.",
         "B": "This is the description of an equilateral triangle rather than an isosceles",

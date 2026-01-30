@@ -25,7 +25,7 @@
     {
       "questionId": 158727,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/914c32a8-e333-4f79-ba7b-f05d2f2b175d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "That would be correct if we had 4 + ___ = 24, but we are looking for the number that multiplies with 4 to give 24, not adds.",
         "B": "If 28 goes in the box, we have 4 x 28. Does that equal 24? Think about how many 4s make 24.",
@@ -73,7 +73,7 @@
     {
       "questionId": 158729,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d1e312d7-d033-48aa-8c43-de52b74de8b7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "That would be correct if we had 30 - ___ = 5, but we are looking for the number that divides 30 to give 5, not subtracts from it.",
         "B": "Close! 30 ÷ 5 = 6, but we need it to equal 5.",
@@ -85,7 +85,7 @@
     {
       "questionId": 158928,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/57b3e101-6a77-4003-9fa2-0edbbc2834ef.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "40 ÷ 10 = 4, but we need it to equal 8...",
         "B": "40 ÷ 5 = 8 so 5 goes in the box.",

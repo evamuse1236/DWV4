@@ -127,7 +127,7 @@
     {
       "questionId": 78458,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3e56809e-44f2-4dc3-8967-67f3cd1cf146.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The scenario give us information on the number of teas, coffees and the total cost. Therefore there is enough information to create the pair of equations.",
         "B": "Not quite. These equations show the cost of only one cup of tea and one cup of coffee in each case. Remember to look at the numbers given in the scenario and make sure your equations match this.",
@@ -139,7 +139,7 @@
     {
       "questionId": 78165,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ce5977c3-3225-4352-8d70-3416999599b2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Nearly! Just consider what unit the values you used were in. Was it pence? Or pounds?",
         "B": "Not quite. Here we need to start by forming simultaneous equations from the information in the question. The first statement gives us 5t + 2c = 370 (working in pence) where t stands for the cost of a cup of tea and c for the cost of a cup of coffee. Can you create an equation for the second statement?",

@@ -73,7 +73,7 @@
     {
       "questionId": 130143,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cee80a5d-4f09-4748-8847-ddfda4400dac.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "If we replaced x with 10 and y with 2 we would get 10 + 2 = 20. This is incorrect as 10 + 2 = 12",
         "B": "If we replaced x with 10 and y with -2 we would get 10 + -2 = 20 or 10 - 2 = 20. This is incorrect as 10 + -2 = 8.",
@@ -85,7 +85,7 @@
     {
       "questionId": 130163,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1e05aa71-9724-4f19-9709-10bebaa342ee.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "If we replaced x with 10 and y with 2 we would get 10 + 2 = 8. This is incorrect as 10 + 2 = 12",
         "B": "We can replace x with 10 and y with -2 to get 10 + -2 = 8. This is true because when we add negative 2 it is the same as subtracting 2",
@@ -97,7 +97,7 @@
     {
       "questionId": 130144,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/83d7f9f5-c8bd-40a2-9e15-6eb47c79b0be.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "If we replace x with 2 and y with 34 we would get 3(2) + 2 = 34. This is incorrect. What would we get if we multiplied 3 by 2 and then added on 2?",
         "B": "If we replace x with 2 and y with 7 we would get 3(2) + 2 = 7. This is incorrect. What would we get if we multiplied 3 by 2 and then added on 2?",
@@ -109,7 +109,7 @@
     {
       "questionId": 130164,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3d419640-3b35-4810-a25b-6820c5b40948.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "If we replace x with 3 and y with 41 we would get 41 = 4(3) - 2. This is incorrect. What would we get if we multiplied 4 by 3 and then subtracted 2?",
         "B": "We can replace x with 3 and y with 10 to get 10 = 4(3) - 2. This is true because 4x3 is 12 and then when we subtract 2 we get 10",

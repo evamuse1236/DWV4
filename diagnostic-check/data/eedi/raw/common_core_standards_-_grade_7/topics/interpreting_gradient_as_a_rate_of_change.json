@@ -91,7 +91,7 @@
     {
       "questionId": 135202,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c4135583-626c-4809-96b8-42a51e0d8901.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The y axis here measures depth. As we have a negative gradient, what does that mean is happening to the depth of the water in the bath?",
         "B": "Consider what is represented by the gradient (slope) of this depth-time graph.",
@@ -115,7 +115,7 @@
     {
       "questionId": 135400,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5d5a8906-70a6-49e5-a3ea-28a434395e3f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The step took the full 10 seconds shown on the graph (time is on the x axis). Consider what is represented by the gradient (slope) of a displacement-time graph.",
         "B": "The height (distance) is actually measured on the y axis here. Consider what is represented by the gradient (slope) of a displacement-time graph.",
@@ -127,7 +127,7 @@
     {
       "questionId": 135420,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0e88ada6-518f-4306-b3cb-3d38f953f7e8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The gradient of a displacement-time graph does not represent acceleration. How did we calculate a gradient of 15? Can you use these units to figure out what the 15 represents?",
         "B": "The gradient of a displacement-time graph represents speed. So her speed during this section was 15m/s",

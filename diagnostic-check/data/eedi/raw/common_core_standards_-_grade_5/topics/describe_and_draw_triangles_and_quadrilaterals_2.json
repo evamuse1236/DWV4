@@ -67,7 +67,7 @@
     {
       "questionId": 132161,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/028b5e58-15be-44b4-abb0-aeb965cbc0f7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This shows a triangle, but not an isosceles triangle. This has a 90 degree angle, and all lengths are different, so is called a right angled triangle.",
         "B": "This shows a triangle, but not an isosceles triangle. All lengths are different, so is called a scalene triangle.",
@@ -79,7 +79,7 @@
     {
       "questionId": 134169,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d73e86e3-de0a-43e0-be80-54d60e7b3bb3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This shows a triangle, but not an isosceles triangle. All lengths are different, 4cm, 5cm and 7cm, so this is called a scalene triangle.",
         "B": "An isosceles triangle has 2 equal lengths and 2 equal angles. There are 2 lengths of 5cm on this triangle, so this is an isosceles triangle.",

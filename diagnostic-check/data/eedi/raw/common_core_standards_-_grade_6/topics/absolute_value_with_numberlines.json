@@ -25,7 +25,7 @@
     {
       "questionId": 166195,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/66984950-4d63-4e3f-80b7-450b4ee33eef.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You're correct that we are looking at the point −3, but we want to know the number of jumps (spaces) between 0 and −3. Because we're counting the number of jumps, the answer will not be negative.",
         "B": "Starting at zero, we need to count the number of jumps along the number line until we get to −3. We jump from 0 to −1, then from −1 to −2 and then from −2 to −3, so that's 3 jumps.",
@@ -61,7 +61,7 @@
     {
       "questionId": 166423,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d528e176-8ffc-4e5c-9bf6-2a990f8b9024.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The 'absolute value' of 2, means 'how far away from 0 is 2?'",
         "B": "Not quite, the 'absolute value' of 2, means 'how far away from 0 is 2?' Because we're counting the number of jumps (spaces) between 0 and 2, the answer will not be negative.",

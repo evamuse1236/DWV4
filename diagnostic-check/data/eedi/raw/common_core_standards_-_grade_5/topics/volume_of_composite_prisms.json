@@ -19,7 +19,7 @@
     {
       "questionId": 158472,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bd01d236-a0ae-4d58-acf3-4a37bbcf940c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This calculation is adding all the dimensions, but for volume of a rectangular prism we multiply. Which option shows length x width x height for each one, then adding them to find the total volume of the shape?",
         "B": "Almost! We do multiply dimensions to find the volume of a rectangular prism, but then we need to add the two prism volumes to get the total volume of the compound shape.",
@@ -31,7 +31,7 @@
     {
       "questionId": 158691,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/058b163e-199c-4e7e-a241-9413a8e9f08d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This calculation is adding the dimensions of each rectangular prism, but for volume of a rectangular prism we multiply. Which option shows length x width x height for each prism, then adding them to find the total volume of the shape?",
         "B": "Volume of a rectangular prism = length x width x height, so we multiply the dimensions of each one, then add together those two volumes to find the total volume of the compound shape.",

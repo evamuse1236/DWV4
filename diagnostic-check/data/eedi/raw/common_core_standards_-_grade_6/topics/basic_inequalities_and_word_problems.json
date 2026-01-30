@@ -79,7 +79,7 @@
     {
       "questionId": 165593,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/04c4a6b7-dd15-4878-b76d-56dba1f63181.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This would be true if you had to be exactly 4 ft tall. How could we show that only OVER 4 ft is allowed?",
         "B": "Here we have to have a height over 4 ft, so h has to be greater than 4, so h > 4.",
@@ -91,7 +91,7 @@
     {
       "questionId": 165598,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f707bfed-8052-4d8e-b3c3-1cdd8a238bed.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This would mean that heights of 4 and a half ft would not be allowed on the ride, which isn't true. How can we make sure all heights under 5 ft are included?",
         "B": "Here we have to have a height under 5 ft, so h has to be less than 5, so h < 5.",

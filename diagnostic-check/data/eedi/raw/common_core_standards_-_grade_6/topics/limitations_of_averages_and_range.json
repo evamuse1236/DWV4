@@ -43,7 +43,7 @@
     {
       "questionId": 131681,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/206c3c17-5879-4a88-8f9c-32fc54f10904.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The negative values still make working out the range possible, but we have to be careful with signs: 46 − (−3) = 46 + 3 = 49. The question is more concerned with why a value of 49 as an answer isn't particularly representative of the data. Can you think why this might be?",
         "B": "Repeated values still make working out the range possible: 46 − (−3) = 46 + 3 = 49. The question is more concerned with why a value of 49 as an answer isn't particularly representative of the data. Can you think why this might be?",
@@ -55,7 +55,7 @@
     {
       "questionId": 133874,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e7e5b57b-0e72-4c72-8db3-9d05974eee24.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Data recorded as 0 still makes working out the range possible: 4 − (−21) = 4 + 21 = 25. The question is more concerned with why a value of 25 as an answer isn't particularly representative of the data. Can you think why this might be?",
         "B": "The value of −21 is an outlier. An outlier is a value in a data set that is very different from the other values, and as a result, calculating the range using −21 could be misleading.",
@@ -91,7 +91,7 @@
     {
       "questionId": 131683,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5d4963eb-32e2-4db0-a247-b8d739790e8e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The median of a set of numbers is the middle value, which means that just the position of the other numbers is used, but their values are ignored.",
         "B": "Outliers would distort the mean, but have little effect on the median.",
@@ -103,7 +103,7 @@
     {
       "questionId": 142373,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4e0d2f3e-9d3a-4a34-aa7b-4f60af5375cf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "In this case you would find the median of the two middle values.",
         "B": "When finding the median, the values of the other pieces of data are ignored. The mean takes the value of every piece of data into account.",

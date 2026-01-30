@@ -73,7 +73,7 @@
     {
       "questionId": 100602,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bac27e52-ae8b-499b-8987-6507d7f5e4f3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "13 is bigger than 7, but we have 13/20 and 7 tenths that we need to compare. Try changing one of them so that they are either both decimals or both fractions to make the comparison easier",
         "B": "One way of tackling this problem is to convert 13/20 into 65/100 = 0.65. This is less than 0.7",

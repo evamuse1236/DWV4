@@ -103,7 +103,7 @@
     {
       "questionId": 133621,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/25df8cc2-1fc2-403f-805f-0ddcdb83b127.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This would be the value of the full turn that has not been coloured. We are looking for the size of the red angle. Starting from 0° read round in a clockwise direction until you get to the other red line that makes up the angle. This is the value the question is asking for.",
         "B": "It is a reflex angle but the question is asking the  size of the angle not the type of angle.",

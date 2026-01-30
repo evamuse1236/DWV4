@@ -97,7 +97,7 @@
     {
       "questionId": 165396,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/310c8db7-3c48-428b-9b3d-a2a650b965a8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Every value in the set is less than 25 but we need to substitute each value into the expression 5 + 2𝑥 and see if that is less than or equal to 25...",
         "B": "If we substitute each of these values in, we get: -5, 5, 15 and 25 which are all less than or equal to 25! 15 would give 35 which is greater than 25 so is not included.",
@@ -109,7 +109,7 @@
     {
       "questionId": 165401,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/04ec6c4a-4997-4869-9e3d-17fea34b0619.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This inequality means less than or equal to...",
         "B": "Every value in the set is less than 18 but we need to substitute each value into the expression 6 + 3𝑥 and see if that is less than or equal to 18...",
@@ -121,7 +121,7 @@
     {
       "questionId": 165397,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dc178084-012e-4784-8b85-571e01458e7c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "15//5 = 3 and 4 - 3 = 1 which is less than 2. Test out all the numbers again seeing which give an answer that is greater than or equal to 2!",
         "B": "Every value in the set is greater than 2 but we need to substitute each value into the expression 4 - 𝑥/5 and see if that is greater than or equal to 2...",
@@ -133,7 +133,7 @@
     {
       "questionId": 165402,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/91f1e9df-f2d1-4a62-a12d-b028fc7d4043.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "12/2 = 6 and 8 - 6 = 2 which is less than 6. Test out all the numbers again seeing which give an answer that is greater than or equal to 6!",
         "B": "12 is greater than 6 but we need to substitute the values into the expression 8 - 𝑥/2 and see if that is greater than or equal to 6...",

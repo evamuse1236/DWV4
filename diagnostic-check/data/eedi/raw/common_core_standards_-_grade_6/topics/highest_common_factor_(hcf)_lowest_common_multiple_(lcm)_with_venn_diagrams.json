@@ -43,7 +43,7 @@
     {
       "questionId": 76708,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b512b334-fa96-4dff-a3ea-71d3ce386337.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Try testing out some values to check. You could try finding the lowest common multiple of 5 and 7, as well as 6 and 10, and then trying this method afterwards. Do you get the same answer?",
         "B": "We can multiply the numbers together only if the numbers share no factors except 1, for example 10 and 27, their LCM is 270, which is 27x10. However, if we try two numbers that do share factors other than 1, for example, 12 and 10, the LCM is 60, which is not 12x10.",
@@ -91,7 +91,7 @@
     {
       "questionId": 99567,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2255d451-ce5b-4a7c-a67d-44c6508ce8c1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "All the numbers in the right-hand circle will have to multiply to give 90. But if ❤ = 2, then this wouldn't be the case.",
         "B": "If ❤ = 3, then the right-hand circle would be 2 × 3 × 3 × 3 = 54, so not 90. Can you think of the quickest way of working out the value of ❤?",

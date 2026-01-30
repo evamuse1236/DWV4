@@ -37,7 +37,7 @@
     {
       "questionId": 166669,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/46172bd8-5369-4075-b488-0fbfc6b2e788.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "7 is bigger but we are dividing by the 5 and 7. Will the pieces be bigger or smaller if you are dividing into more pieces?",
         "B": "The numerators are equal but the denominators are different. Think about the fractions as divisions, which would be bigger 3 ÷ 5 or 3 ÷ 7?",
@@ -109,7 +109,7 @@
     {
       "questionId": 166672,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cb4393b8-7f97-4dde-8ec0-31df4af8ccde.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "1/4 + 1/4 + 1/4 + 1/4 = 4/4. You are breaking up 4/3 into 4 parts... What would each part be worth?",
         "B": "4/3 means we have four thirds. There are four boxes therefore we need to put a third in each box as four thirds (1/3 + 1/3 + 1/3 + 1/3) will add together to give 4/3!",
@@ -133,7 +133,7 @@
     {
       "questionId": 166673,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3062c4f6-a4cf-440b-9780-2a3b666e65f9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "1/3 + 1/3 + 1/3 = 3/3 but we want 5/3...",
         "B": "5/3 means we have 5 x 1/3 or five thirds added together. Therefore, 1/3 + 1/3 + 1/3 + 1/3 + 1/3 = 5/3!",

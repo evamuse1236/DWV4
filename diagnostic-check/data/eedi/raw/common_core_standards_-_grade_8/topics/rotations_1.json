@@ -79,7 +79,7 @@
     {
       "questionId": 98926,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3c8ac0e3-5c54-4e2a-a288-4851df74ca37.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Nearly! You've rotated the shape 90°, not 180°.",
         "B": "When rotated 180 degrees, the shape P would rotate by a half turn. Point (3, 4) would rotate around to (−3, −4).",
@@ -91,7 +91,7 @@
     {
       "questionId": 98942,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/22d619a3-c1f6-4c1d-b532-5beec168e75a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Nearly! You've rotated the shape 90° clockwise, not 180°.",
         "B": "Almost, remember it's the position of the red point after the rotation.",

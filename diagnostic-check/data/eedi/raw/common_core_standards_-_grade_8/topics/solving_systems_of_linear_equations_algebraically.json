@@ -85,7 +85,7 @@
     {
       "questionId": 166345,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ab6ce7d2-fcc0-482c-85b3-1af0b23651d7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "(6, 24) is a solution for 𝑦 = 4𝑥 but it doesn't work for 2𝑥 + 𝑦 = 12. Start by substituting 𝑦 = 4𝑥 into 2𝑥 + 𝑦 = 12 to get 2𝑥 + 4𝑥 = 12.",
         "B": "(1.5, 6) is a solution for 𝑦 = 4𝑥 but it doesn't work for 2𝑥 + 𝑦 = 12. Start by substituting 𝑦 = 4𝑥 into 2𝑥 + 𝑦 = 12 to get 2𝑥 + 4𝑥 = 12.",
@@ -97,7 +97,7 @@
     {
       "questionId": 166572,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b2d8ed73-1c9f-49e0-8ad7-2075bd276e07.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "(1, 6) is a solution for 𝑦 = 6𝑥 but it doesn't work for 4𝑥 + 𝑦 = 20. Start by substituting 𝑦 = 6𝑥 into 4𝑥 + 𝑦 = 20 to get 4𝑥 + 6𝑥 = 20.",
         "B": "(4, 24) is a solution for 𝑦 = 6𝑥 but it doesn't work for 4𝑥 + 𝑦 = 20. Start by substituting 𝑦 = 6𝑥 into 4𝑥 + 𝑦 = 20 to get 4𝑥 + 6𝑥 = 20.",

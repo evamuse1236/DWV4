@@ -43,7 +43,7 @@
     {
       "questionId": 135532,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c0e232a4-95f3-4fb9-8471-f64864b3026e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "An angle bisector will cut any angle in half. This would not always result in a 90 degree angle.",
         "B": "A locus is a path of points that follow a certain rule. Some loci may form 90 degree angles, but definitely not all of them.",
@@ -79,7 +79,7 @@
     {
       "questionId": 135553,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/21431631-1af6-489d-8aae-ced3e834036e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "A 90 degree angle will form at the end of step 1.",
         "B": "A 60 degree angle will form when constructing an equilateral triangle. This is not a perpendicular bisector.",

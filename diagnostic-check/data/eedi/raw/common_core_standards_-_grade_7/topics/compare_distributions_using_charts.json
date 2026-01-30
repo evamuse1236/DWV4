@@ -43,7 +43,7 @@
     {
       "questionId": 146903,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/397ff331-e774-4243-9101-650b96680cbd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "We don't know how much a full pie chart represents each time, so we can't conclude about the amount recycled. Can we conclude about the proportion?",
         "B": "The pie charts tell us the proportion of rubbish recycled rather than the amount of rubbish recycled. So Katie was correct in saying that a greater proportion of rubbish was recycled in 2019. Tom was incorrect because he assumed a bigger sector represents a larger amount, which we cannot conclude unless we know the total for each pie chart.",
@@ -55,7 +55,7 @@
     {
       "questionId": 146923,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3ce6126a-9276-4d7e-8be9-684bfce3893b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "We don't know how much a full pie chart represents each time, so we can't conclude about the weight/amount recycled. Can we conclude about the proportion?",
         "B": "The pie charts tell us the proportion of rubbish recycled rather than the amount of rubbish recycled. So Katie was correct in saying that a greater proportion of rubbish was recycled in 2019. Tom was incorrect because he assumed a bigger sector represents a larger amount, which we cannot conclude unless we know the total for each pie chart.",
@@ -139,7 +139,7 @@
     {
       "questionId": 146907,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a32b2348-ff6d-41f8-a8d7-11d6c9c98109.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Nearly! What would the line for City A look like if it showed that the population increased over time? Now compare this to what we have on the graph.",
         "B": "Nearly! Consider what the graph would look like if the population of the two cities was the same.",

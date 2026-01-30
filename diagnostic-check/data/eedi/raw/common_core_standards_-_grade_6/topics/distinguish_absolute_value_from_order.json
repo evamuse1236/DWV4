@@ -37,7 +37,7 @@
     {
       "questionId": 165493,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b471c5c7-d94a-4951-aedb-07b77bf06b70.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Look carefully! We are looking for the highest score. Is there a score higher than Owen's?",
         "B": "Ava's score of 130 is the highest score recorded.",
@@ -61,7 +61,7 @@
     {
       "questionId": 165494,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d30848ee-34e8-4bfd-8c8e-452b76636033.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Imagine a number line. Is there another value that would be farther away from 0?",
         "B": "I think you may have confused highest score with the score that is farthest from 0. Imagine a number line. Which number would be farthest from 0?",
@@ -109,7 +109,7 @@
     {
       "questionId": 165496,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/99ffd965-c319-4ec2-8277-ee87725d6ac8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Careful, while -3 > -10, we are looking at the absolute value of each term.",
         "B": "Careful, while 7 > -10, we are looking at the absolute value of each term.",
@@ -121,7 +121,7 @@
     {
       "questionId": 165501,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2b9a0a4c-9aca-4352-98c2-d9aefd2688f6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Careful, while 4 > -5, we are looking at the absolute value of each term.",
         "B": "|-10| is 10 and |-5| is 5, so 10 > 5.",

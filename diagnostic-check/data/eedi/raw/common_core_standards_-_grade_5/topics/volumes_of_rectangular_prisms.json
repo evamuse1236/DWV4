@@ -61,7 +61,7 @@
     {
       "questionId": 158682,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/35f74c4b-9e1b-4e42-a798-79b88187e218.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Volume = length x width x height, so this would find the volume. It also describes the number of small cubes: 3 layers of 3 rows of 2 cubes. Which of these is not a way of counting the cubes in the shape?",
         "B": "Volume = length x width x height, so this would find the volume. It also describes the number of small cubes: 2 layers of 3 rows of 3 cubes. Which of these is not a way of counting the cubes in the shape?",
@@ -97,7 +97,7 @@
     {
       "questionId": 158465,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9601de04-7572-4648-be32-83a0d1fc6da5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is the number of cubes in one layer, so how many layers would we need to make 12 cubic units total?",
         "B": "This would be the total number of cubes in the shape, so how many layers of 3 would that be?",
@@ -121,7 +121,7 @@
     {
       "questionId": 158466,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0d9c9792-43a8-4f3a-ab99-29c6f6cc1dae.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This row has 6 small cubes in, so how many rows would it take to make 24 cubes in total?",
         "B": "I think you have tried to count the faces instead of the cubes when you decided on the volume of this row. How many small cubes would we need to make this row? So if the whole shape is made from 24 small cubes, how many rows is that?",

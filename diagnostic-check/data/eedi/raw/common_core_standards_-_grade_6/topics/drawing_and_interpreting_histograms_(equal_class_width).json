@@ -43,7 +43,7 @@
     {
       "questionId": 166781,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fb7d062b-2d45-4d48-abf7-bd6ef3890ba6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "While 0 is the lower boundary, we can't know how many, if any of the data values are 0 seconds. What range would the quickest time be in?",
         "B": "While 10 is the upper boundary, we can't know how many, if any of the data values are 10 seconds. What range would the quickest time be in?",
@@ -79,7 +79,7 @@
     {
       "questionId": 167032,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ad009b03-03dd-4b27-ab19-10af249d90a2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It seems you just gave the end points on the time axis. We need to find a data set that could be represented by the histogram. Which data set has 4 data points between 10 and 20?",
         "B": "It looks like you have noted the frequency of the histogram. We need to find a data set that could be represented by the histogram. Which data set has 4 data points greater than or equal to 10, but less than 20?",
@@ -91,7 +91,7 @@
     {
       "questionId": 166783,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8d401d5a-2120-48a8-ac1e-7b5853b69577.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "While we can tell 10cm is in the bin with the highest frequency, can we tell how many, if any values in that bin have a height of 10cm?",
         "B": "20cm is an endpoint and would be located in the bin to the right. Can we tell by looking at a histogram how many specific heights are located in a bin?",
@@ -115,7 +115,7 @@
     {
       "questionId": 166784,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ce93a4f8-ec1f-4ec9-b2ba-7e27ad325db7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The existing value in the bin is greater than or equal to 30, but less than 40. Is 40 greater than that range?",
         "B": "I think you believe the value has to be within the range of the largest bin, but the height axis could be extended.",
@@ -127,7 +127,7 @@
     {
       "questionId": 167034,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5ed48446-d199-4726-aa11-a29348056ea7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The existing values in the bin are greater than or equal to 40, but less than 50. Is 50 greater than that range?",
         "B": "I think you believe the value has to be within the range of the largest bin, but the height axis could be extended.",

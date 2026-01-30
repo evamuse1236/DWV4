@@ -37,7 +37,7 @@
     {
       "questionId": 79638,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/790e00c6-1776-451a-a6cd-b972e9818c07.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Very close - You still have one more step to do in the calculation - at the moment you have the side length squared.",
         "B": "We need to use the c² - b² = a² form of Pythagoras' Theorem; so we have 8² - 4² = 48, and the square root of this is 6.93 cm.",

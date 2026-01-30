@@ -19,7 +19,7 @@
     {
       "questionId": 158752,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/364d8b58-0f0a-4b60-b7e8-c14fe52791f2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This would mean c is the total number of candy bars, is that correct?",
         "B": "The total, 40, is made up of 5 lots of c, so 40 = c x 5.",
@@ -31,7 +31,7 @@
     {
       "questionId": 158951,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/75f8f275-8f14-4750-91c0-0855cc8cea2e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This would mean c is the total number of candy bars, is that correct?",
         "B": "This would mean 3 is the total number of bars, is that correct?",
@@ -43,7 +43,7 @@
     {
       "questionId": 158753,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cc84c444-57e3-4b41-aec5-dfc3bd2cd2e0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "600 x 75 would be correct if there were 600 people getting $75 each, but that's not the situation. Which calculation represents sharing out the $600?",
         "B": "You have added the total amount of money and one share of the money, which won't find the number of people who shared it... Which calculation represents sharing out the $600?",
@@ -103,7 +103,7 @@
     {
       "questionId": 158954,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bae189a8-2c85-4e3d-91ae-87a4e8f5a78c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This would represent multiplying the total savings by the number of months. Which calculation would show finding the total of $d per month for 12 months?",
         "B": "d x 12 represents multiplying the savings per month by the number of months. The final total is $420, so d x 12 = 420.",
@@ -127,7 +127,7 @@
     {
       "questionId": 158955,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/36c2bc56-2d8a-4225-adf7-918e3a087315.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This would mean adding the total number of cards to the number of people. Which calculation shows multiplying the number of cards per person by the number of people?",
         "B": "9 people get 11 cards each, so the total number would be 11 x 9. Therefore, if f is the total number of cards, f = 11 x 9.",

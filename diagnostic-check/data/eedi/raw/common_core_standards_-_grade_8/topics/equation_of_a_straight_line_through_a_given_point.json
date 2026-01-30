@@ -127,7 +127,7 @@
     {
       "questionId": 133992,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c84a7413-c3cb-45b4-9935-5bce0aa807c6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Tom is correct, we can calculate the gradient by working the difference in the y coordinates divided by the difference in the x coordinate. (11-5)/(3-1) = 6/2 = 3. Using this information we know that the equation of the line is y = 3x + c. To find c (which is the y intercept) we can substitute either point from the question into this equation.",
         "B": "Katie is correct, the line crosses the y axis at (0,2). We can calculate the gradient by working the difference in the y coordinates divided by the difference in the x coordinates.",
@@ -151,7 +151,7 @@
     {
       "questionId": 133993,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cef6abb0-1245-466c-bfb0-37e7db93c638.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Nearly! Tom is definitely correct. Remember, the y-intercept is where the line crosses the y axis.",
         "B": "Nearly! Katie is definitely correct. Remember for the gradient, we do the difference in y coordinates/ the difference in x coordinates.",

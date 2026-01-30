@@ -37,7 +37,7 @@
     {
       "questionId": 165478,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/140c3e87-82e6-4964-9188-5b9388111ab7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The opposite of 2 would be the same distance from 0 as 2 would be. 0 is its own opposite.",
         "B": "I think you may have confused opposite with absolute value. We are looking for the number that lies the same distance from 0 as 2 does. This number could be negative, unlike absolute value.",
@@ -49,7 +49,7 @@
     {
       "questionId": 165474,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c35569ac-e0ba-4e1f-b76f-12d25cb66fd5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "We are looking for the number that is the same distance from 0 as -2. -2 cannot be its own opposite.",
         "B": "The opposite of -2 would be the same distance from 0 as -2 would be. 0 is its own opposite.",

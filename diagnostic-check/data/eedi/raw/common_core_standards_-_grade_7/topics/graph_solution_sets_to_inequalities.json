@@ -55,7 +55,7 @@
     {
       "questionId": 166314,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9021231e-4b2e-400a-8c7e-2d7b508923e0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "If the circle is colored in, it means it can include the value it is on too!",
         "B": "The direction of the arrow tells us the solution set is less than -2. The question is asking about the circle...",
@@ -67,7 +67,7 @@
     {
       "questionId": 166541,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a92ccf73-57d9-47b8-9fa3-afb35c3477e8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The direction of the arrow tells us the solution set is less than 3. The question is asking about the circle...",
         "B": "Not quite - the circle tells us whether to include the number it is above in the set or not. The circle is colored in here, what do you think that means?",
@@ -91,7 +91,7 @@
     {
       "questionId": 166542,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bac509d1-909a-4c8a-8538-ec4103dc1ab1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "If the circle is colored in (closed), it means it can include the value it is on too! How could we show that with an inequality symbol?",
         "B": "I think you've got your inequality symbols mixed up. < means less than. Is the arrow pointing to values less than 0?",
@@ -127,7 +127,7 @@
     {
       "questionId": 166317,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/533ceccf-8dfc-4395-8d97-d7ed1fbb0fc6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "If the circle is open (not colored in), it means it cannot include the value it is on too! The symbol ≥ means it can also be equal to the value, how could we show that on a number line?",
         "B": "The arrow is pointing to values greater than -1 and the circle is closed, which means it can include the value it is on. This matches the inequality symbol ≥ which is 'greater than or equal to'",
@@ -139,7 +139,7 @@
     {
       "questionId": 166544,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/83e1ff25-0a84-4bd3-8dac-68b1e16466e7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The arrow here is pointing to values less than 1, but the ≥ symbol means greater than or equal to.",
         "B": "The arrow here is pointing to values less than 1, but the ≥ symbol means greater than or equal to...",

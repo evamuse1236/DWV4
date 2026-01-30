@@ -49,7 +49,7 @@
     {
       "questionId": 165555,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8ca5bb49-f406-4fe3-85bb-48556f0b8c78.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is 0.777777..., but we have both 0 and 7 being repeated. Remember when two digits are being repeated we do 100 lots of the decimal subtract 1 lot of the decimal.",
         "B": "100 lots of the number is 07.070707... Subtracting 1 lot gives us 99 lots equal to 7. Therefore 1 lot is 7/99",

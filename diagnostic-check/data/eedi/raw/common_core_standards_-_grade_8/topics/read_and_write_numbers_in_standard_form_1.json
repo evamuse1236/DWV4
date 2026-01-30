@@ -43,7 +43,7 @@
     {
       "questionId": 78130,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9771808c-5cac-4436-adf0-954dc8d6b71b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The value is correct, however, it has not been written in standard form. The first number must be between 1 and 9.99..",
         "B": "The first number must be between 1 and 9.99.... The power of 10 means that the first number is to be multiplied by 1 million (10^6). Digits are moved 6 places to the left, but remember the decimal point will not move. Therefore 5,672,000 in standard form is 5.672 x 10^6.",
@@ -55,7 +55,7 @@
     {
       "questionId": 78423,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/36622076-758e-4f64-a5e5-a7529e6c0e88.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "A negative place value indicates division, and moving the digits 7 places to the right. The first number must be between 1 and 9.99..",
         "B": "The value is correct, but it has not been written in standard form. The first number must be between 1 and 9.99....",
@@ -103,7 +103,7 @@
     {
       "questionId": 78425,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4234aef1-2a08-4f52-8848-189f4fc7f345.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "It looks like the power of 10 has not been taken into account. The power tells us how many times we are multiplying or dividing by 10.",
         "B": "It looks like have taken the negative power to mean the number should be negative. The negative power means we are dividing by 10 rather than multiplying. The power tells us how many times we are dividing",
@@ -139,7 +139,7 @@
     {
       "questionId": 103987,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/968bfc12-41ac-466b-b8f4-5d370b444036.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "If you multiply by 10, 3 times, the number will be 1000 times bigger. This will give 506000. Look carefully at the power and how we achieve very small decimal values.",
         "B": "This is 0.0056, you have lost the 0 between 5 and 6.",
@@ -151,7 +151,7 @@
     {
       "questionId": 103993,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a83bc366-f794-4dcc-861f-309f45a59003.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "If you multiply by 10, 4 times, the number will be 10,000 times bigger. Look carefully at the power and how we achieve very small decimal values.",
         "B": "This would be 0.00031, you have lost the zeros between the 3 and 1.",

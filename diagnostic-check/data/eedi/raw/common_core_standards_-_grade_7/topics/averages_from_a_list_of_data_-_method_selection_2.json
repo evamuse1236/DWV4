@@ -139,7 +139,7 @@
     {
       "questionId": 77932,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2fc40d5f-a84f-4226-96ee-2c2e2bed477c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "You are correct that Batch B's lightbulbs seem to last a shorter length of time, but does a higher range mean they are more consistent?",
         "B": "Batch A's lightbulbs are more consistent as they have a smaller range, but do they last a shorter amount of time than Batch B?",
@@ -151,7 +151,7 @@
     {
       "questionId": 78094,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6746c185-64d0-486e-a9cd-35af163d543f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "You are correct that Batch B's lightbulbs seem to last a longer length of time, but does a higher range mean they are more consistent?",
         "B": "A lower range implies more consistency as the lifespans are grouped closer together. A lower mean implies a shorter average life.",

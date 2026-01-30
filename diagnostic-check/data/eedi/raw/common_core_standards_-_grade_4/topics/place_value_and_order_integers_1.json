@@ -79,7 +79,7 @@
     {
       "questionId": 101857,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7a45ce1f-5c22-41ec-940f-dfccf5af423d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Make sure the 3 has not moved in place value. Is this the same position it has in 43075? It might help to say the number out loud, ignoring the numbers before 3.",
         "B": "Have a think about which column or place value the 3 has in the number. You could try ignoring the digits before 3 and reading the number out loud to help.",
@@ -103,7 +103,7 @@
     {
       "questionId": 101858,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ee1e9eb5-75fd-4d81-952b-e7e297553dd8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The first number is the smallest, however with the other two numbers, they appear to have been put in order using the last digit only. Make sure to compare all digits in the same place value from left to right.",
         "B": "When comparing numbers, putting them one below another can be an efficient way of doing things, of course taking care to line up the units, tens, hundreds, etc. Within a number, the digit furthest to the left contributes the highest amount to the value of that number. By putting the numbers given in answer B one below another, it can be seen that all have 300,000. Moving to the next digit, we can decide that 322,991 must be the smallest because both other numbers have 70,000 whereas this value has 20,000. Both other numbers also have 4,000; however, the hundreds column presents a difference in that 374,114 has 100, whereas 374,225 has 200, meaning that answer B has given the correct order.",

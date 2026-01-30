@@ -49,7 +49,7 @@
     {
       "questionId": 78773,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e584e819-24f2-41a1-973c-c34a4bfab9a4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "28 is the highest factor of 28 :) But 28 is not a factor of 8. The factors of a number are the times tables it can be found in, or a number it can be divided by.",
         "B": "8 is the highest factor of 8 :) But 8 is not a factor of 28. The factors of a number are the times tables it can be found in, or a number it can be divided by.",
@@ -61,7 +61,7 @@
     {
       "questionId": 76706,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ef21821a-d53e-4c72-9959-31b8629a6978.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Nearly! You have learnt what multiples are! Multiplying two numbers together (10 x 12 = 120) will always give you a common multiple, but not always the lowest one. Try writing out the multiples of 10 and of 12, and finding the smallest one that is in both lists.",
         "B": "It looks as though you've added the two numbers together. Try writing out the multiples of 10 and 12, and find which is the lowest common one.",
@@ -121,7 +121,7 @@
     {
       "questionId": 99586,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4e1dfaa2-13d3-48fb-9294-8ed61cfa10ec.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "1 is the highest common factor, but we want the lowest common multiple of 6 and 7.. The word 'multiples', has a bit of a clue ... think 'multiply', so the times table for that number.",
         "B": "Multiples of 8 are 8, 16, 24, 32, 40, 48, 56... Multiples of 5 are 5, 10, 15, 20, 25, 30, 35, 40, 45… It can be seen from these lists that 40 is the lowest common multiple of 8 and 5.",

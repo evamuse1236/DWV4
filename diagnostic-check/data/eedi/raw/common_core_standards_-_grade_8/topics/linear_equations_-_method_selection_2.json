@@ -133,7 +133,7 @@
     {
       "questionId": 106677,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/de3d4ac8-696d-4fd4-95b2-e5772f2bd0cf.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "If d=0 we would have 0-3 = 0-9, but these are not equal to each other.",
         "B": "If d=12 we would have 144-3 = 144-9, but these are not equal to each other.",
@@ -145,7 +145,7 @@
     {
       "questionId": 120910,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2ec95ec7-fd0f-4ab0-99bb-e6689f6c9cf7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "If d=-2.5 we would have -5 - 5 = -5 - 10, but these are not equal to each other.",
         "B": "If d=2.5 we would have 5 - 5 = 5 - 10, but these are not equal to each other.",

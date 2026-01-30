@@ -127,7 +127,7 @@
     {
       "questionId": 166209,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c25beea1-6ddf-47ef-8539-9341e87dbd38.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "|x| means absolute value, the distance away from 0. The absolute value of -5 is 5 and the absolute value of -6 is 6, so |-6| would actually be greater than |-5| .",
         "B": "It seems you've given a number that has a greater value than the absolute value of -5! Remember < means less than.",

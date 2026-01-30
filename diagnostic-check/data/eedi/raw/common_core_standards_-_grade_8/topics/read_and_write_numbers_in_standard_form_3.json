@@ -43,7 +43,7 @@
     {
       "questionId": 131741,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/be5f09b2-7e96-42a2-a1e7-52a87c9b9192.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Standard form a useful way of writing very big or very small numbers. The conditions are that the number is written in two parts. The first part involves using the digits in a way that the value is greater than or equal to 1 but less than 10, and the second part which is × 10 to a power. Both these conditions are met, and this is in standard form.",
         "B": "Standard form a useful way of writing very big or very small numbers. The conditions are that the number is written in two parts. The first part involves using the digits in a way that the value is greater than or equal to 1 but less than 10, and the second part which is × 10 to a power. 10 means 10 to the power of 1, so both these conditions are met, and this is in standard form.",
@@ -55,7 +55,7 @@
     {
       "questionId": 133934,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6467c63b-1ae2-48d4-bd44-d5d1351de8e0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Standard form a useful way of writing very big or very small numbers. The conditions are that the number is written in two parts. The first part involves using the digits in a way that the value is greater than or equal to 1 but less than 10, and the second part which is × 10 to a power. Both of these conditions are met, therefore, this is in standard form.",
         "B": "Standard form a useful way of writing very big or very small numbers. The conditions are that the number is written in two parts. The first part involves using the digits in a way that the value is greater than or equal to 1 but less than 10, and the second part which is × 10 to a power. Looking at the values in B, the issue is that the value of the first part for answer B does not fit this rule because 0.28 <1. Therefore, this is not in standard form.",
@@ -127,7 +127,7 @@
     {
       "questionId": 133937,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/50f3cb89-72aa-4a01-9ad7-f6d74d373e0d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You seemed to have multiplied the number 2.1 by 10, but compensated in the wrong way",
         "B": "You seem to have multiplied 2.1 by 10, but not changed the power",
@@ -151,7 +151,7 @@
     {
       "questionId": 133938,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1c3d3500-2fd1-4201-98fd-ece27debdff1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is the 4800 in standard form, but you still need to take into account the x 10⁵",
         "B": "Not quite, Think about how many times you will need to multiply 4.8 by 10 to get to 4800, and then how many times this means we are multiplying by 10 in total.",

@@ -43,7 +43,7 @@
     {
       "questionId": 101051,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/27d5de83-5236-48ba-a872-2faf7e42ccfb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "4/5 is just less than 1, but 5/4 is bigger than 1. Is this section bigger than 4/5?",
         "B": "The whole bar is split into 5 equal pieces. The question mark represents 1 piece. Therefore it is 1/5 of the whole.",
@@ -127,7 +127,7 @@
     {
       "questionId": 101039,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/56d1c7ca-c34e-4886-94d3-d735aed512a7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "45/75 simplifies to 3/5, so this is an equivalent fraction. What operation do you think the question needs?",
         "B": "1/5 would fit 75 times into 15, but we're asking about 3/5.",

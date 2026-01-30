@@ -121,7 +121,7 @@
     {
       "questionId": 130241,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/fa032aba-9d55-43dd-b59e-87b393b30705.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "When we divide a fraction, we don't need to divide the numerator and the denominator. 2/4 is equivalent to 4/8, rather than half of it.",
         "B": "When we divide a fraction by 2, we can simply divide the numerator by 2. 4 ÷ 2 = 2, and the denominator stays the same, so we get 2/8.",

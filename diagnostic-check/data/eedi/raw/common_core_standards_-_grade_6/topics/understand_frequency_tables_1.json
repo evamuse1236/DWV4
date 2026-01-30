@@ -31,7 +31,7 @@
     {
       "questionId": 129110,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7ac1486d-eece-4936-afaf-d3ce29b7ddba.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This 1 is a label showing that the row represents people with 1 pet. This won't change if someone else joins the class.",
         "B": "The 6 is the number of people who have one pet. The new person has two pets in total so this frequency wouldn't change",

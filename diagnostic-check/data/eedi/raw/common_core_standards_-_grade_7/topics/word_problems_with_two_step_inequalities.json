@@ -121,7 +121,7 @@
     {
       "questionId": 166322,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/de01c643-ad93-4c2e-b30b-e2b4b121d8ce.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "We only have to switch the symbol when dividing by a negative. It's fine to leave it as it is if the inequality contains negatives as long as we don't divide by one!",
         "B": "When solving an inequality, we want to do things in the opposite order. So if the inequality is 2𝑥 + 6, we would subtract the 6 first!",

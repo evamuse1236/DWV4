@@ -109,7 +109,7 @@
     {
       "questionId": 131779,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9e02edcc-85c3-4033-a4c8-b79f6b4466c6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Nearly! Check the signs on your y values. Remember we have -2y and +3y.",
         "B": "There are no other x terms apart from 6x, and no other z terms apart from -z. Simplifying -2y + 3y gives +y. This gives a final answer of 6x + y - z.",

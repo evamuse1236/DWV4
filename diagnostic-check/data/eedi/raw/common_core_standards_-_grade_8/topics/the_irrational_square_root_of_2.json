@@ -19,7 +19,7 @@
     {
       "questionId": 166841,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e33dba4b-bb39-41bd-aac9-b214cecaa96d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "It's great that you know a rational number needs to be able to be written as a fraction; however the numerator and denominator of the fraction must be a whole number, which √2 isn't!",
         "B": "The square root of 2 has a non-repeating and non-terminating decimal, meaning it can't be written as a fraction with an integer numerator and denominator. That means it must be irrational!",
@@ -43,7 +43,7 @@
     {
       "questionId": 166842,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/29112e50-b64c-4dd8-bb57-87deae85b11b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "An irrational number is a decimal that goes on forever and doesn't repeat in a pattern. √4 is exactly 2, so that isn't an irrational number!",
         "B": "A decimal isn't necessarily irrational - an irrational number is one that can't be written as a fraction and has a decimal that goes on forever and doesn't repeat. This one isn't irrational as it does terminate!",
@@ -91,7 +91,7 @@
     {
       "questionId": 166844,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/00c34559-7219-4604-a070-1ca2ce5c6fe8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is an approximation where only the first three digits of the decimals have been kept. The actual decimal goes on much longer than this!",
         "B": "Although the first few digits (1 and 4) repeat a couple of times, the whole decimal actually doesn't repeat even though it goes on forever. Have a think about what that means for a number!",

@@ -103,7 +103,7 @@
     {
       "questionId": 131734,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1ca5f23d-abea-431c-b920-4770a08b70d3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The volume is measured from the y axis scale. Calculating the gradient gives us the rate of how the volume changes over time",
         "B": "The gradient calculates a rate, the positive slope shows the rate the volume of water in the bath is increasing.",

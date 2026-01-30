@@ -55,7 +55,7 @@
     {
       "questionId": 166447,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/92941c5d-1b95-4e39-9c89-d128fd548719.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Look carefully at the expression. Which mathematical operation is happening?",
         "B": "Addition is commutative so we can add in any order. That means 6+p is the same as 6 more than p or p more than 6.",
@@ -115,7 +115,7 @@
     {
       "questionId": 166223,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cc1587f1-f774-4425-a769-2a10dab51074.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Addition is commutative so it can be done in any order. If you wanted 2 more than g, what mathematical operation would you do?",
         "B": "If you wanted the sum of g and 2, what mathematical operation would you do? Think about what the word 'sum' means.",

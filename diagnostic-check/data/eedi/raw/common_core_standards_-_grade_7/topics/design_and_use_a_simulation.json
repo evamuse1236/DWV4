@@ -37,7 +37,7 @@
     {
       "questionId": 167086,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ceade8cf-63a1-49bc-ac07-2093a303d8be.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "There are 4 outcomes to match the 4 toys, but here two are identical so you couldn't tell when you had picked out all 4.",
         "B": "This tool has 6 outcomes, but there are 4 outcomes in the event. Which of these simulations has 4 equally likely outcomes?",
@@ -49,7 +49,7 @@
     {
       "questionId": 166837,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dae62795-d5d2-4e35-8b48-61b701b2b88a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This models a 50% chance of rain. How could we alter it so it was 75%?",
         "B": "The assignments are representing 75% chance of rain, but we would only get one day if we generate a single number.",
@@ -73,7 +73,7 @@
     {
       "questionId": 166838,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9d141b34-c82b-4506-bcb3-8d1f82cf9783.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This trial is simulating the next 5 customers entering, and whether they will each order coffee. It will not simulate how many orders need to be taken before 5 coffees are purchased. What do we need to get 5 of?",
         "B": "The coin represents the 50% chance, and counting the total flips (customers) until 5 coffees are ordered directly answers the question.",
@@ -85,7 +85,7 @@
     {
       "questionId": 167088,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/44b965c5-ea73-474f-b477-e76ff69c9f46.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This trial finds out how many croissants are ordered out of a fixed group of 10 customers, not how many it takes to reach the goal.",
         "B": "This trial only simulates the event of one customer ordering a croissant, not the 10 required for a coupon.",

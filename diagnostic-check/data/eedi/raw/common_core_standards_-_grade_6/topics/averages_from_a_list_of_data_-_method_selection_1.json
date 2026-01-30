@@ -37,7 +37,7 @@
     {
       "questionId": 77628,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dfb892f1-b4c2-43fa-b38d-502cdfd6688e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "That is the median. What do we do to find the mean?",
         "B": "Almost, this is the first thing we do for the mean.",
@@ -49,7 +49,7 @@
     {
       "questionId": 79092,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a2e18e3a-2c85-4f41-b930-bcd3d4cbebb0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "That is the median. What do we do to find the mean?",
         "B": "To find the mean, we add the numbers together and then divide by how many numbers there are, so B is the first step.",
@@ -73,7 +73,7 @@
     {
       "questionId": 120827,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b7a349f9-2464-47b2-b852-5299a64a5af6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "To find the range we subtract the smallest from the largest",
         "B": "We need to check the units are the same before we subtract, so this is needed",

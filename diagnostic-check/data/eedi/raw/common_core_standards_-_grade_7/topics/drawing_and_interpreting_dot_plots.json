@@ -19,7 +19,7 @@
     {
       "questionId": 154860,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/53314689-0831-44c1-ae76-48f662e7e955.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is a BOX plot. We want a DOT plot. A dot plot has one scale and uses a dot to show a frequency of one, or one piece of data. Which diagram is that?",
         "B": "This is a frequency diagram. We want a dot plot. A dot plot has one scale and uses a dot to show a frequency of one, or one piece of data. Which diagram is that?",
@@ -31,7 +31,7 @@
     {
       "questionId": 154865,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/78a41eea-43fc-40fd-8e7e-9d79033122a8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is a scatter graph. We want a dot plot. A dot plot has one scale and uses a dot to show a frequency of one, or one piece of data. Which diagram is that?",
         "B": "This is a dot plot. It has one scale and uses a dot to show a frequency of one, or one piece of data.",

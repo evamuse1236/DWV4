@@ -25,7 +25,7 @@
     {
       "questionId": 146056,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/69a093ce-9b27-405a-af0a-cc98184b865b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I can see why you think this as the 6 and 4 look like the top & base of the trapezium but the a and b are always the parallel sides. Questions often rotate the shape round to confuse you. Which sides are parallel to each other?",
         "B": "These sides are perpendicular. The a and b represent the parallel sides of the trapezium, which sides are parallel to each other?",
@@ -37,7 +37,7 @@
     {
       "questionId": 146076,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/97b22cc0-4dd6-40a6-9493-e799459853b2.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "I can see why you think this as the 5 and 7 look like the top & base of the trapezium but the a and b are always the parallel sides. Questions often rotate the shape to confuse you. Which sides are parallel to each other?",
         "B": "a and b are the parallel sides of the trapezium, in this case they are the 6cm and 2cm sides.",
@@ -61,7 +61,7 @@
     {
       "questionId": 146077,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/28815f35-829c-4297-9d73-87f8519eb895.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This does look like the height but the trapezium has been rotated... The height is actually the perpendicular distance between the parallel sides a and b. Start by finding the parallel sides and see which length is the perpendicular distance between them.",
         "B": "When finding the height of the trapezium, start by finding the two parallel sides: a and b. The perpendicular distance between these 2 sides is the height. In this case the parallel sides are 2cm and 6cm so the height is 5cm.",

@@ -97,7 +97,7 @@
     {
       "questionId": 133636,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c58ce472-a186-4bc4-b7f7-d06d803584a3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "15 is only a multiple of 3 and 15. Think about a multiple of 3, 6 and 15",
         "B": "24 is only a multiple of 3 and 6. Think about a multiple of 3, 6 and 15",
@@ -109,7 +109,7 @@
     {
       "questionId": 131404,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a299663f-7c76-4719-af7b-5cfd44fca6d8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The product means to multiply numbers together. 6 x 9 = 54. Will this be the first time these lights flash together?",
         "B": "The sum adds values together. 9 + 6 = 15. If one light flashes every 9 minutes, and the other every 6 minutes, will they flash at 15 seconds together?",
@@ -133,7 +133,7 @@
     {
       "questionId": 131405,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a13f8fd3-c734-4a2b-b084-de31d289e318.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The product means to multiply numbers together. 18 x 15. Will this give the smallest number of each packet to use?",
         "B": "The sum adds values together. To work out the number of each packet we need, we could try thinking about how many bread rolls there would be in 2 packets, 3 packets and so on. Could we get the same amount in packets of hot dogs. What are we finding here?",

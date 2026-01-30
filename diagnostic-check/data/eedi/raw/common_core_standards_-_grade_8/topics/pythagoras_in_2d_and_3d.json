@@ -85,7 +85,7 @@
     {
       "questionId": 173950,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1a7a65af-d046-4eb8-a613-cf52a6695641.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Make sure you are squaring the numbers, not doubling them. For example, 52 squared is 52 × 52, not 52 × 2.",
         "B": "The helicopter's path creates a right-angled triangle. The direct distance of 52 km is the hypotenuse. Using Pythagoras' theorem: 𝑦² + 20² = 52². Rearranging gives 𝑦² = 52² - 20² = 2704 - 400 = 2304. The square root of 2304 is 48, so 𝑦 = 48 km.",
@@ -145,7 +145,7 @@
     {
       "questionId": 174012,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a003096c-181a-48e5-ad48-92b6ddeeb7af.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "You correctly found the diagonal of the base to be 10 m. For the second step, you must use this length in Pythagoras' theorem again with the height. The formula is L² = 10² + 11². It looks like you forgot to square the 10.",
         "B": "It seems you have added the three lengths together. To find the diagonal in 3D, you need to use Pythagoras' theorem, which involves squaring each length, adding them, and then finding the square root.",

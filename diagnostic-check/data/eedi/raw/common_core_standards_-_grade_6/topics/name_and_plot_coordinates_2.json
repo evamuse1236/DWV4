@@ -79,7 +79,7 @@
     {
       "questionId": 98008,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1c1a29a2-accd-435b-b0ba-87ecf4a36fc3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "To read a coordinate, start from the origin (0,0). The first movement is horizontal and is represented by the first value, right if positive and left if negative, The second movement is vertical and is represented by the second value, up if positive and down if negative. Look again at how you have moved from (0,0).",
         "B": "It looks like you've mixed up the x and y coordinates. Remember it's across and then down",
@@ -139,7 +139,7 @@
     {
       "questionId": 107119,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4e087481-ca72-44a4-9f78-175468e78279.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "A coordinate is made up of 2 values, the first representing the movement along the on the 𝑥 axis and the second, the movement along the 𝑦 axis. If a point lies on the y axis, think about the movement made from (0,0).",
         "B": "If a coordinate lies on the y axis, there is only a vertical movement from the origin (0,0). Remember coordinates are (x, y)",

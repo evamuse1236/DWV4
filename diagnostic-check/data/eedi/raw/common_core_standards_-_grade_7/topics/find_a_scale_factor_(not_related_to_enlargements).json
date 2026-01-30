@@ -103,7 +103,7 @@
     {
       "questionId": 129341,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/99c93b61-98d3-49ca-9a4f-7f166fa38e07.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This method doesn't work because 15 and 3 are not related to each other in the table. We need to use a related pair, 8 and 3 or 8 and 15, to get a scale factor we can use.",
         "B": "This method finds the scale factor from a to b and multiplies it by 15 to find the missing value. It does work.",

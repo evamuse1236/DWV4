@@ -31,7 +31,7 @@
     {
       "questionId": 76012,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3d094a9c-5519-4e6c-8f5c-81d67440764c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This graph shows £20 = $10, so £2 = $1. We need £1 = $2",
         "B": "This graph is correct, as we would expect £10 = $20, and it goes through the origin.",
@@ -43,7 +43,7 @@
     {
       "questionId": 76271,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/09162b6a-12fe-4b94-880a-c9a6ae2584ee.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This graph shows £15 = $10, so £1.50 = $1. We need £1 = $1.5",
         "B": "Not quite. This graph shows that £0 = $15, which is not true.",

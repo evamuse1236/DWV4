@@ -37,7 +37,7 @@
     {
       "questionId": 110260,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7969c65b-47fe-4524-a247-752c939efcda.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Miles per hour' means 'miles travelled in one hour'. How far will the car travel in 2 hours? How far in 4 hours? Thinking this way will help you find the correct calculation.",
         "B": "We have distance = speed × time, and so we have 45 × 4.",
@@ -49,7 +49,7 @@
     {
       "questionId": 110270,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a44b018c-ff1c-4499-9579-ad6e03d1b159.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Miles per hour' means 'miles travelled in one hour'. How far will the car travel in 2 hours? How far in 3 hours? Thinking this way will help you find the correct calculation.",
         "B": "Miles per hour' means 'miles travelled in one hour'. How far will the car travel in 2 hours? How far in 3 hours? Thinking this way will help you find the correct calculation.",
@@ -85,7 +85,7 @@
     {
       "questionId": 110266,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f2893581-d9c0-4778-9ffb-8d579618a3df.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is the distance in metres. We need the distance in kilometres.",
         "B": "10 minutes is equal to 10 × 60 seconds. The distance in metres is then 7 × (10 × 60). We convert to kilometres by dividing by 1000.",
@@ -145,7 +145,7 @@
     {
       "questionId": 133933,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/37658b9f-84dd-4573-8694-5ad0d94fbee7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Hilal does travel 30 km between 09:00 and 11:00 but we need to divide distance by time to get the speed. How many hours did it take her to travel the 30 km? How does that affect the speed?",
         "B": "I think you might have divided the distance by 4 because there are 4 squares on the x axis between 09:00 and 11:00. How many hours does that represent?",

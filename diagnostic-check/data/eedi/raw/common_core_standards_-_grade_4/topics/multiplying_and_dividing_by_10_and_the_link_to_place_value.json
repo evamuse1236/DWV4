@@ -43,7 +43,7 @@
     {
       "questionId": 101857,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7a45ce1f-5c22-41ec-940f-dfccf5af423d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Make sure the 3 has not moved in place value. Is this the same position it has in 43075? It might help to say the number out loud, ignoring the numbers before 3.",
         "B": "Have a think about which column or place value the 3 has in the number. You could try ignoring the digits before 3 and reading the number out loud to help.",
@@ -115,7 +115,7 @@
     {
       "questionId": 155598,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/69446670-5af5-41f7-89b0-9ea3db6b58e0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is 4 units, or 4 x 1, which would position it in the far right column.",
         "B": "The 4 is in the tens column, so will be worth 4 x 10 = 40.",
@@ -127,7 +127,7 @@
     {
       "questionId": 155581,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6c2ba214-59d4-4f13-964a-4fed9062b666.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is 30, or 3 tens, or 3 x 10, which would position the 3 in the second column from the right.",
         "B": "This is 3 units, or 3 x 1, which would position it in the far right column.",
@@ -139,7 +139,7 @@
     {
       "questionId": 155599,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8de57979-f2b0-4799-966d-2480c2af73fb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is 4 units, or 4 x 1, which would position it in the far right column.",
         "B": "This is 40, or 4 tens, or 4 x 10, which would position the 4 in the second column from the right.",

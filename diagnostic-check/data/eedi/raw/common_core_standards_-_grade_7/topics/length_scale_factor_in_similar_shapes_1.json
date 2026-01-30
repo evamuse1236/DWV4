@@ -85,7 +85,7 @@
     {
       "questionId": 78307,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/40b123c6-f32f-4602-94d8-f1e450056702.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "If two objects are 'similar' they have the same shape. Can a circle be enlarged or shrunk to make any other circle?",
         "B": "If two triangles are 'similar' then corresponding angles are equal. Are all corresponding angles equal in different equilateral triangles?",
@@ -97,7 +97,7 @@
     {
       "questionId": 78601,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/996623de-9e2c-4d7a-8247-5873a501675e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "If two objects are 'similar' then corresponding angles are equal and one shape is an enlargement of the other. Is this true for regular pentagons?",
         "B": "If two objects are 'similar' then one is an enlargement of the other. A rectangle cannot be enlarged or shrunk to make all other rectangles.",
@@ -133,7 +133,7 @@
     {
       "questionId": 101412,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/24d4e298-bcf1-48ea-9a69-2e28baa64c2d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "What is the scale factor to get from 6 to 9? What do we multiply by? How can we use this to find the star?",
         "B": "Looking at the right-hand edges. We go from 6 to 9 so the scale factor is ✕1.5 or ✕3/2. Looking at the bottom edges we multiply by the same scale factor. ★ ✕ 3/2 = 12. Solving this we get 8.",

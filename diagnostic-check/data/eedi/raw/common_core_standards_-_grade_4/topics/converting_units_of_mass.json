@@ -31,7 +31,7 @@
     {
       "questionId": 107591,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/61045359-4274-4493-9a16-0c49f318c270.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "A kilogram is larger than a gram so we are expecting an answer that is more than 3.",
         "B": "Start by thinking about how many grams there are in 1 kilogram. We can use this to work out how many grams in 3 kilograms.",
@@ -43,7 +43,7 @@
     {
       "questionId": 107601,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8e6de0db-973e-4b7b-8223-d67945f5a544.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "A kilogram is larger than a gram so we are expecting an answer that is more than 20.",
         "B": "There are 1,000 grams in a kilogram and so 20 kg = 20 × 1,000 = 20,000 grams.",

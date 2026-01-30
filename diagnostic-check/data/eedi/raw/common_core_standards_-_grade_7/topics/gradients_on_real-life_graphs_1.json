@@ -37,7 +37,7 @@
     {
       "questionId": 135197,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/903e40e5-3c12-43c1-9840-237179e8f03e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The positive sloping section of the graph shows us that the depth is increasing over time. If the sun came out would you expect to see this?",
         "B": "The positive sloping section of the graph shows us that the depth is increasing over time. If it stopped raining would you expect the depth of water in the bucket to increase?",
@@ -49,7 +49,7 @@
     {
       "questionId": 135217,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3ffa7eea-5ece-4192-9dbf-d6afb795daeb.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Section Y shows us that the height is increasing over time. Would this happen once the sunflower has reached its maximum height?",
         "B": "Section Y shows us that the height is increasing over time. As it is a straight line it is increasing at a constant (steady) rate.",
@@ -133,7 +133,7 @@
     {
       "questionId": 135201,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/9d3e62e4-5878-44ff-b25a-34076d3f3171.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This graph shows that as the number of people working on it increase, as does the time taken. Would more people working on a job mean it takes more or less time?",
         "B": "This graph crosses the axes, which means there must be a point where the number of people = 0 or the time taken = 0. Is this possible when completing a job?",
@@ -145,7 +145,7 @@
     {
       "questionId": 135221,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/573bda36-dd17-44cc-8be5-ef77eaf87c06.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This graph shows that as x increases, y also increases. For two variables to be inversely proportional, one must increase as the other decreases. Which graph represents this?",
         "B": "This graph is a parabola, which is the shape of a quadratic curve. For two variables to be inversely proportional, one must increase as the other decreases. Which graph represents this?",

@@ -79,7 +79,7 @@
     {
       "questionId": 133725,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7e42249c-386c-4699-ab9e-14e287098214.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Nearly! Check the bottom number on your vector. This -2 tells us to move 2 down. Would this be correct to go from P to Q?",
         "B": "Nearly! Check your counting again carefully. I think you are counting the square you are starting on as 'one.' The point where you start at is zero.",
@@ -127,7 +127,7 @@
     {
       "questionId": 133727,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/3cdbd1b7-e1c1-452a-8e59-fc9402b41ac1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Nearly! '3' on the top part of the vector means 3 to the right. We want to move 3 to the left.",
         "B": "The top part of the vector represents the left/right movement. We need to move three left so we write -3 in place of the triangle",

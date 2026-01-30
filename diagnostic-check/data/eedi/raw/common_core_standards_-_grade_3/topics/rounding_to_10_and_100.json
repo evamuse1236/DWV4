@@ -49,7 +49,7 @@
     {
       "questionId": 158768,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/037c97fd-e791-459d-bc3d-b9b7d08a7125.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "We want to choose the nearest 100 to 172. Picture where 172 is on this line. Is it before 150 or after? Anything that is before 150 will be closer to 100, anything from 150 onwards will be closer to 200.",
         "B": "170 is the nearest ten, but we want the nearest hundred, so 100 or 200.",
@@ -121,7 +121,7 @@
     {
       "questionId": 158771,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/768386c9-1d60-4fba-a6ca-b921c3a8be71.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "30 is the nearest ten, but we want the nearest hundred.",
         "B": "You have multiplied by 10, but rounding means finding the closest number in the 100 times table. That will be either 0 or 100.",
@@ -133,7 +133,7 @@
     {
       "questionId": 158970,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c6900ade-fe48-4355-abec-01e3f04e5328.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "50 is the nearest ten, but we want the nearest hundred.",
         "B": "You might have been confused because 49 is between 0 and 100, so you thought the nearest hundred had to be 100. But 0 still counts as a hundred when we are rounding, so which is 49 closer to, 0 or 100?",

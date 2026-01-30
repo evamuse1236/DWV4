@@ -109,7 +109,7 @@
     {
       "questionId": 155012,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/add1e629-1bad-4c5a-8315-df8638843ffe.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "π is 3.14..., so π²/4 is a bit bigger than 3²/4, so a bit bigger than 2.25, which would lie between these numbers. √16 = 4, so √16/4 = ?. 3π = 3 x 3.14... = ? So we need the answer that is NOT between these.",
         "B": "√16 is 4, which would lie between these numbers. √16 = 4, so √16/4 = ?. 3π = 3 x 3.14... = ? So we need the answer that is NOT between these.",
@@ -121,7 +121,7 @@
     {
       "questionId": 155008,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ac16e996-3c3a-4f47-af5b-d6dc17be3185.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "We need to estimate the sizes of 9π and √3/2. 9π is a bit larger than 9 x 3 = ?. √3/2 is a bit less than √4/2 = 2/2 = ?. Can you compare these to 26.5 and hence determine the order?",
         "B": "Almost! I think you have ordered these from smallest to largest area, is that what we were asked to do?",

@@ -19,7 +19,7 @@
     {
       "questionId": 166770,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ba4b7d4c-8df2-40e8-8571-022607d7a9dd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This question has just one correct answer so it is NOT a statistical question. A statistical question requires a variety of answers collected from a group.",
         "B": "This question has just one correct answer so it is NOT a statistical question. A statistical question requires a variety of answers collected from a group.",
@@ -43,7 +43,7 @@
     {
       "questionId": 166771,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cc20d5f0-0f00-4a8d-9d9e-2cd277a99fa4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This question has just one correct answer so it is NOT a statistical question. A statistical question requires a variety of answers collected from a group.",
         "B": "This IS a statistical question because we need to collect data from a group to answer it and this data will have variation. In this example, the data is eye color and the group is all the students in the school.",
@@ -91,7 +91,7 @@
     {
       "questionId": 166773,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e7001ff9-e2de-4787-af96-db41a5a36bb7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This question has just one correct answer so it is NOT a statistical question. A statistical question requires a variety of answers collected from a group.",
         "B": "This IS a statistical question because we need to collect data from a group to answer this question and this data will have variation. In this example, the data is the number of books read this month and the group is all the students in the book club.",

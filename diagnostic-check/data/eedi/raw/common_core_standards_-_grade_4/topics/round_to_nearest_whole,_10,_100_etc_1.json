@@ -79,7 +79,7 @@
     {
       "questionId": 130035,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bb7e0da5-8344-4e82-94fd-afdb463c229c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "If we were rounding to the nearest 100,000 then that would work but we need to round to the nearest 100. Start by finding the multiple of 100 that is just less than the number we are rounding; then find the multiple of 100 that is just greater than the number. Drawing this on a number line might help.",
         "B": "The two multiples of 100 either side of 720,949 are 720,900 and 721,000. We round down because the digit in the column to the right of the hundreds (the tens column) is a 4 and we know that 0, 1, 2, 3 or 4 round down.",

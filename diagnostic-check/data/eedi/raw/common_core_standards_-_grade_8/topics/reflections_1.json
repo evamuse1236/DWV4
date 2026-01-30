@@ -49,7 +49,7 @@
     {
       "questionId": 129301,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6b20c99f-f11b-4402-9e85-a4f452dd5b91.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The marked corner is 1 square below the horizontal line. Where will it end up when reflected?",
         "B": "The marked corner is 1 square below the horizontal line. Where will it end up when reflected?",
@@ -85,7 +85,7 @@
     {
       "questionId": 129163,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/97fd0806-d4cf-40f8-ae67-9cf90f03c626.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Point P is 3 squares to the left of the vertical line. Where will it end up once reflected?",
         "B": "As point Q is on the vertical line it is 0 squares away from the line so will remain 0 squares away from the line once reflected. Point P is 3 squares to the left of the vertical line so will be 3 squares to the right of the line when reflected",

@@ -85,7 +85,7 @@
     {
       "questionId": 131773,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7773e7da-3dd1-4c9f-8de2-8491305a9692.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Nearly! Think about what happens when you calculate 6 ÷ 2.",
         "B": "We can divide the coefficients giving us 6 ÷ 2 = 3, so the new coefficient will be 3. To divide the indices we need to subtract the powers. So p to the power of 6 ÷ p to the power of 2 gives p to the power of 4, because 6 - 2 = 4 . Therefore, the answer is 3p⁴.",
@@ -97,7 +97,7 @@
     {
       "questionId": 133966,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/10541e1c-550f-45ba-864b-6fc9d504b0a9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Nearly! Think carefully about what happens when you divide the coefficients, 6 ÷ 3.",
         "B": "You have divided 6 by 3 correctly but think carefully about how we calculate p to the power of 6 divided by p to the power of 3. Try writing each index in full before you divide. For example p⁶ = p x p x p x p x p x p.",
@@ -133,7 +133,7 @@
     {
       "questionId": 131775,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ccfad463-f426-4890-8bda-579518a851f7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "We only have one q in the question, so the q can't be cubed. Think carefully about the number of letter p's and the number of letter q's in the question. Writing each term out in full can help.",
         "B": "5p² can be written 5 x p x p and 2pq as 2 x p x q. As multiplication is commutative, the order of the calculation does not matter. So we can do 5 x 2 x p x p x p x q. This gives us 10p³q.",

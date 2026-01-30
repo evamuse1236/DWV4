@@ -55,7 +55,7 @@
     {
       "questionId": 134049,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f44f3b88-d5ed-41e0-8c07-751bce30500d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "To help you with this question, start by setting up an equation to show that the angles around a point add to 360. Then you can simplify this and rearrange to get the correct equation.",
         "B": "The angles around a point add to 360, so we have m + 50 + 220 - 2m + 2m + n = 360. Simplifying we have m + n + 270 = 360. Subtracting 270 from both sides we have m + n = 90",

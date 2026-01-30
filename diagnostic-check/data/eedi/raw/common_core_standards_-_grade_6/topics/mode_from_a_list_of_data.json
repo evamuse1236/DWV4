@@ -37,7 +37,7 @@
     {
       "questionId": 107889,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a19eaeac-4c9b-4d1c-a59d-68bfbfb44d3d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is the mean. The mode is the most common",
         "B": "This is the median. The mode is the most common",
@@ -49,7 +49,7 @@
     {
       "questionId": 107896,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b88e8026-ec4c-4a61-bb45-384af1200d6d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is the median. The mode is the most common",
         "B": "The mode is the number that occurs the most frequently, and so for this set of numbers it is 7.",
@@ -85,7 +85,7 @@
     {
       "questionId": 107892,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d8249326-1592-4870-8c81-1b93bd53319c.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is the largest number, but does it appear more than any others?",
         "B": "This is the median. The mode is the most common number",
@@ -97,7 +97,7 @@
     {
       "questionId": 107899,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f7461e7a-a344-4b48-8dc3-9940c8ea07ef.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "When all the numbers appear the same number of times we don't call them all modes. How do we deal with this situation?",
         "B": "This is the largest number, but does it appear more than any others?",

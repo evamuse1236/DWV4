@@ -91,7 +91,7 @@
     {
       "questionId": 106934,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/dbaf0104-6411-483f-ab67-b434fb11d092.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Choose a coordinate in region A. x<0 means that the x coordinate should be less than 0 and y>0 means that the y coordinate should be greater than 0. Is this true for region A?",
         "B": "I think you are on the right track, but have misinterpreted your inequalities. x<0 means the x coordinates must be less than 0 and y>0 means the y coordinates must be greater than 0",
@@ -103,7 +103,7 @@
     {
       "questionId": 106941,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/adbe40d8-b40f-4dfc-9746-4e4d85610dbe.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Choose a coordinate in region A. x>0 means that the x coordinate should be greater than 0 and y<0 means that the y coordinate should be less than 0. Is this true for region A?",
         "B": "x>0 means that the x coordinates have to be greater than 0. This is true in the regions to the right of the y axis. y<0 means that the y coordinates have to be less than 0. This is true for the regions below the x axis. Therefore the region that satisfies both these inequalities is B.",

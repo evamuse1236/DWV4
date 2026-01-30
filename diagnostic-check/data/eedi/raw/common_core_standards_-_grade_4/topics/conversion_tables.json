@@ -91,7 +91,7 @@
     {
       "questionId": 158008,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/63529415-14a3-4472-87ce-74932602d939.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is the wrong gap, we are looking for the value that goes under the gold star!",
         "B": "3m = 300cm so 1m = 100cm. We have 14m so we do 14 x 100 = 1400cm therefore 14m = 1400cm",
@@ -115,7 +115,7 @@
     {
       "questionId": 158009,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/207c90f4-782c-4c56-a8c0-00511ec707e0.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "Use the fact 3 lbs = 48 ounces to work out how many ounces in one lb and then you can work out the ounces in 2 lbs",
         "B": "This is how many ounces are in 1 lb but the question is asking us how many ounces in 2 lbs...",
@@ -127,7 +127,7 @@
     {
       "questionId": 158176,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e4e73e61-1742-4c68-b6a1-2cd5f9675f3a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This is how many ounces are in 1 lb but the question is asking us how many ounces in 5 lbs...",
         "B": "7 lbs = 112 ounces therefore 1 lb = 16 ounces. If we have 5 lbs 5 x 16 = 80 so 5 lbs = 80 ounces",

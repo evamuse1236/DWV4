@@ -31,7 +31,7 @@
     {
       "questionId": 146986,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/79ff0cac-66cd-4d70-bec2-b0defafc77f7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "A multiple of a number is in that number’s times table. Consider listing the multiples of 12 and 20 until you pass 60 in order to be able to accurately assess the two statements",
         "B": "The first 5 multiples of 12 are 12, 24, 36, 48, 60. The first five multiples of 20 are 20, 40, 60, 80, 100, 120. Therefore we can see that 60 is a common multiple of both 12 and 20.",
@@ -67,7 +67,7 @@
     {
       "questionId": 147007,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c94544e3-5f0f-4d5e-a0bd-6ec4f84508be.jpg",
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanations": {
         "A": "I think you have chosen the highest common factor rather than the lowest common multiple. A multiple of a number is in that number’s times table. Consider listing the multiples of 4 and 6 until you find the smallest number that is in both their times tables.",
         "B": "16 is not a multiple of 6. Consider listing the multiples of 4 and 6 until you find the smallest number that is in both their times tables.",
@@ -127,7 +127,7 @@
     {
       "questionId": 146990,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d90f6259-c8f9-4f21-9f29-592f2158b3b5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "20 is not a multiple of 3. Consider listing the ten times table until you find a number that is also divisible by 3 and 4.",
         "B": "30 is not a multiple of 4. Consider listing the ten times table until you find a number that is also divisible by 3 and 4.",
@@ -139,7 +139,7 @@
     {
       "questionId": 147010,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ef069807-325c-4588-9b31-415d26bc167d.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "20 is not a multiple of 7. Consider listing the 20 times table until you find a number that is also divisible by 5 and 7.",
         "B": "70 is not a multiple of 20. Consider listing the 20 times table until you find a number that is also divisible by 5 and 7.",

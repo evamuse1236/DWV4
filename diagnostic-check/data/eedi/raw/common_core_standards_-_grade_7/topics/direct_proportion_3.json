@@ -139,7 +139,7 @@
     {
       "questionId": 75989,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/82175606-00b7-4927-883b-6c1229fe9291.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "We know that speed = distance / time, which of these options shows a unit of distance divided by a unit of time?",
         "B": "Kilometre is a measurement of distance and hour is a measurement of time, so we have distance/time = speed.",
@@ -151,7 +151,7 @@
     {
       "questionId": 76137,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/cc18d2a0-daa2-4682-9013-e888d22c59d9.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Speed is measured distance / time, what option shows a unit of distance divided by a unit of time?",
         "B": "You have chosen a unit of time divided by a unit of distance. Remember that speed = distance / time.",

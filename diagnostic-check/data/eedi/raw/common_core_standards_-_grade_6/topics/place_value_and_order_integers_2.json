@@ -43,7 +43,7 @@
     {
       "questionId": 130064,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/ddf7ba22-4077-404e-80be-6e5e0a872b09.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "The 5 is not in the tens column. Use a place value grid, putting the 7 in the units column, the 3 in the tens column and so on, to help you decide the value of the number 5.",
         "B": "The 5 is not in the units column. Use a place value grid, putting the 7 in the units column, the 3 in the tens column and so on, to help you decide the value of the number 5.",
@@ -55,7 +55,7 @@
     {
       "questionId": 130083,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/17030667-6fad-4a3f-a961-4a4a8fdb80c1.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The 3 is not in the units column. Use a place value grid, putting the 0 in the units column, the 5 in the tens column and so on, to help you decide the value of the number 3.",
         "B": "If we put this number in a place value grid the number 3 would go in the hundred thousands column. Therefore this 3 represents 3 lots of one hundred thousand which is 300,000.",
@@ -67,7 +67,7 @@
     {
       "questionId": 130065,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7a45de3f-63db-4a31-8a99-da5376eebdd6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This list orders the numbers largest to smallest the question asks for smallest to largest.",
         "B": "When comparing numbers always start from the digit with the highest place value, not the smallest. Writing your numbers in a vertical list will help.",
@@ -91,7 +91,7 @@
     {
       "questionId": 130066,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/1de7573c-8f80-4da0-b03a-ed6426be69c7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This list orders the numbers largest to smallest the question asks for smallest to largest.",
         "B": "Make sure you are comparing digits with the same place value. Writing your numbers in a vertical column, lining up the numbers with the same place value will help.",
@@ -103,7 +103,7 @@
     {
       "questionId": 130085,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/faab2f72-acd4-48fe-9e43-060a035f908f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "Make sure you are comparing digits with the same place value. Writing your numbers in a vertical column, lining up the numbers with the same place value will help.",
         "B": "To order these numbers write them underneath each other in a vertical column, lining up the digits with the same place value. Starting from the largest digit, compare the numbers within the same place value column. If two or more of the numbers have the same digit in any one column move to the next column to compare. Doing this we can see that option C orders these numbers from smallest to largest.",

@@ -37,7 +37,7 @@
     {
       "questionId": 131721,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/98f5cfd3-9d92-44ad-a71b-f7581518c1f6.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The gradient of this graph is steeper at the start and then flattens out. This shows that the depth is increasing more quickly at the start. If the depth increases quickly does this mean our glass has a narrow or wide base? Our gradient then gradually reduces. What might this mean in terms of the width of the glass?",
         "B": "The gradient of this graph is steeper at the start and then flattens out. This shows that the depth is increasing more quickly at the start. If the depth increases quickly does this mean our glass has a narrow or wide base?",
@@ -85,7 +85,7 @@
     {
       "questionId": 131723,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e920c886-5a2e-4599-b153-4272a22f74fd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The first part of this graph is horizontal which indicates that displacement is not changing with time. But we know that John starts his journey by walking from home at constant speed. So we need a graph where the displacement is changing in the first part of the graph. Think about John's speed and direction on each part of his journey to help you find the right graph.",
         "B": "We know that John walks on the first part of his journey and runs home, and that does not match this graph. On which part of his journey is he travelling fastest? Which line will be steeper?",
@@ -97,7 +97,7 @@
     {
       "questionId": 133916,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a301ffd4-4340-478b-ab77-0016614f25dc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The first part of this graph is horizontal which indicates that displacement is not changing with time. But we know that John starts his journey by running from home at constant speed. So we need a graph where the displacement is changing in the first part of the graph. Think about John's speed and direction on each part of his journey to help you find the right graph.",
         "B": "John runs from home at a constant speed so the first part of the graph is a straight line with a positive gradient. When John stops for a rest, his displacement does not change so the line on the graph is horizontal. In the last part of the journey, John is travelling towards home so the line needs to slope downwards, as his displacement away from home gets smaller. The line also needs to be flatter than the first part of the journey, to show that John is moving slower (walking).",

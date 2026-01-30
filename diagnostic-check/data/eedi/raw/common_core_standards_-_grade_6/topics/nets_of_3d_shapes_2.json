@@ -31,7 +31,7 @@
     {
       "questionId": 131541,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/b3c62b6d-a65d-4c0e-8d33-b86c5ae415e3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "A triangle is a three-sided 2D shape with straight edges. This net will fold into a 3D shape.",
         "B": "A triangular prism has a triangular face at each end, plus three rectangular faces. Which 3D shape would only have two faces, as shown in this net?",
@@ -43,7 +43,7 @@
     {
       "questionId": 133734,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e9a7b75d-9ecf-4b96-99da-e4e8ecd30e59.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "A triangle is a three-sided 2D shape with straight edges. This net will fold into a 3D shape. What shape will the face on the base be?",
         "B": "A triangular prism has a triangular face at each end, plus three rectangular faces. Which 3D shape would have one square and 4 triangular faces?",
@@ -55,7 +55,7 @@
     {
       "questionId": 131542,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/c11bd29d-6ade-4271-be6f-b64eb1bb1a1b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "A triangle is a 2D shape. A net forms a 3D shape.",
         "B": "The two triangles will form the two identical end faces of a triangular prism. The squares will fold up to form the connecting sides.",
@@ -67,7 +67,7 @@
     {
       "questionId": 133735,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/7b48fd57-bbb1-469d-bf15-50906428ba22.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "A rectangle is a 2D shape. A net forms a 3D shape.",
         "B": "This forms a cuboid with three pairs of identical rectangles that are opposite each other.",
@@ -103,7 +103,7 @@
     {
       "questionId": 131544,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/e99b6931-0ae9-4800-993d-1b579383251e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "A pentagonal prism would have a pentagon-shaped face at either end. How many pentagons in total would we need to draw this?",
         "B": "A pentagonal prism would have a pentagon-shaped face at either end. But what shape would make up the faces in between them?",
@@ -115,7 +115,7 @@
     {
       "questionId": 133737,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/89e8b118-7a9d-4e43-aca1-c317c8591254.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "A hexagonal prism would have a hexagon shaped face at either end. How many hexagons would you need in total to draw this net?",
         "B": "A hexagonal prism would have a hexagon-shaped face at either end, with rectangles joining up the corresponding edges.",
@@ -127,7 +127,7 @@
     {
       "questionId": 131545,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/f5545fe5-6357-4895-ab9d-efc0b35d6353.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "A pyramid always has some triangular sides. This net has none.",
         "B": "The two hexagons will form the two identical end faces of a hexagonal prism. The squares will fold around to form the connecting sides.",
@@ -139,7 +139,7 @@
     {
       "questionId": 133738,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/d5c7ca69-d527-48b2-857a-4fc274452376.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "An octagon is a 2D shape. A net forms a 3D shape.",
         "B": "A pyramid always has some triangular sides. This net has none.",

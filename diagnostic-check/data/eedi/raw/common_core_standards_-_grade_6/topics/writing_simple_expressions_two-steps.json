@@ -115,7 +115,7 @@
     {
       "questionId": 166233,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/4d30557c-5684-4819-b381-ba15199bd93e.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "𝑞³ means 𝑞 × 𝑞 × 𝑞 but we want triple 𝑞 which is just 3 lots of 𝑞. How would you write 3 lots of 𝑞?",
         "B": "It looks like you might think that triple means we divide it by 3, but if we triple something we multiply it by 3.",
@@ -127,7 +127,7 @@
     {
       "questionId": 166460,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/57d0b179-57d7-438c-905a-f73c077d3838.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "This expression represents the difference of 3 and 7𝑓, but we want the difference of 3𝑓 and 7.",
         "B": "Difference means we subtract. Triple 𝑓 means 3 lots of 𝑓 which we write as 3𝑓, so our final answer is: 3𝑓 – 7",

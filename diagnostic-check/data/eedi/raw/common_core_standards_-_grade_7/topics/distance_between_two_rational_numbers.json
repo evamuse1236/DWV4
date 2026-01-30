@@ -37,7 +37,7 @@
     {
       "questionId": 167062,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/bbd13f2b-9492-4a66-8426-07d5583395c3.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "4 1/5 is not the same as 4.5, 4 1/5 = 4.2. So, which sum gives the distance between 4 1/5 and 4.5?",
         "B": "This would be the sum of the values but we want to find the positive difference as that is what the distance is!",
@@ -73,7 +73,7 @@
     {
       "questionId": 166814,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a6ee8f82-c8b1-448b-a1d1-3d11d492fdd8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This does represent the distance between -7 and 2 as it is the absolute value of the difference between them! Which one doesn't give the positive difference of -7 and 2?",
         "B": "This does represent the distance between -7 and 2 as it is the positive difference between them! Which one doesn't give the positive difference?",
@@ -85,7 +85,7 @@
     {
       "questionId": 167064,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/129b920f-5ada-4253-993d-57ad95017103.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The distance between -6 and 3 is 9, because from -6 to 0 is 6, from 0 to 3 is 3 and 3 + 6 =9. So, this does give the distance between them, which one doesn't?",
         "B": "3 - 6 = -3 and we cannot have a negative distance. Therefore this one does NOT represent the distance between 3 and -6.",

@@ -49,7 +49,7 @@
     {
       "questionId": 133854,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/6528e4f6-31e7-4ee8-a738-958ff5e9742a.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Very nearly! The p is a variable, but because the cubed is also highlighted, there is an operation being performed on the variable making this something else.",
         "B": "Not quite! If the + 4 was also highlighted this would be an expression, as an operation has been performed and there is more than one term.",

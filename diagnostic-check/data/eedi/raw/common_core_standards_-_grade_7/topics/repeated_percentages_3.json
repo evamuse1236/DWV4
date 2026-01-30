@@ -145,7 +145,7 @@
     {
       "questionId": 81472,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/8ca1520a-55df-4e73-b689-fe5fe842fad4.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "Graph A is a straight line. This would be correct for a value that increases by the same amount every year. However, our investment will increase by a larger value each year.",
         "B": "Graph B increases every year, but the value of that increase gets smaller and smaller. We are looking for a graph that shows an increasing gradient over time.",

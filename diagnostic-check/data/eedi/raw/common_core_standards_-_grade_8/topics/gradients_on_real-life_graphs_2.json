@@ -37,7 +37,7 @@
     {
       "questionId": 135397,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/10e80377-5102-4495-84c5-acfbcab8f1e7.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The displacement is constant, meaning they are not moving. Consider what type of gradient on a displacement-time graph would represent a constant speed.",
         "B": "The time has not changed, but the displacement has shot up. Would this be possible?",
@@ -61,7 +61,7 @@
     {
       "questionId": 135398,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/86ab84b4-08a6-499b-acab-091524f8d2f5.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "A horizontal section on a velocity-time graph would represent constant velocity which is possible. A vertical section would represent an instantaneous change, and the object being in two places at once, so this would not be possible.",
         "B": "A vertical section would represent an instantaneous change, with undefined acceleration, which is not possible in real life",
@@ -73,7 +73,7 @@
     {
       "questionId": 135418,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/58a53e2a-141a-4b6f-aa24-49e84920604f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "A vertical section would represent an instantaneous change, with undefined acceleration, which is not possible in real life",
         "B": "A horizontal section on a velocity-time graph would represent constant velocity which is possible. A vertical section would represent an instantaneous change, and the object being in two places at once, so this would not be possible.",
@@ -109,7 +109,7 @@
     {
       "questionId": 135400,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/5d5a8906-70a6-49e5-a3ea-28a434395e3f.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "The step took the full 10 seconds shown on the graph (time is on the x axis). Consider what is represented by the gradient (slope) of a displacement-time graph.",
         "B": "The height (distance) is actually measured on the y axis here. Consider what is represented by the gradient (slope) of a displacement-time graph.",
@@ -121,7 +121,7 @@
     {
       "questionId": 135420,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/0e88ada6-518f-4306-b3cb-3d38f953f7e8.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "The gradient of a displacement-time graph does not represent acceleration. How did we calculate a gradient of 15? Can you use these units to figure out what the 15 represents?",
         "B": "The gradient of a displacement-time graph represents speed. So her speed during this section was 15m/s",

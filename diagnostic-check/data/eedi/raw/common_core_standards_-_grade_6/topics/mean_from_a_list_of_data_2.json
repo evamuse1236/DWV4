@@ -109,7 +109,7 @@
     {
       "questionId": 107858,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/a4271de3-351f-4b02-90b8-92fa8da272dd.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "For the mean, we add up all the data points and then divide by the number of points. Can you do this on a line graph?",
         "B": "For the mean, we add to find the total and then divide by the number of entries. Can you do this from a bar chart?",
@@ -121,7 +121,7 @@
     {
       "questionId": 107870,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/07b942df-dac3-4b76-8a03-684679355f12.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanations": {
         "A": "For the mean, we add to find the total and then divide by the number of entries. Can you do this from a histogram?",
         "B": "A pie chart doesn't tell us all the information we would need to find the mean.",

@@ -37,7 +37,7 @@
     {
       "questionId": 81307,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/374e5e7a-d6d0-4b3f-9212-772531b159cc.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanations": {
         "A": "This is 0.4, but what happens when we have the 4 recurring?",
         "B": "Not quite. This is 0.40404040",
@@ -73,7 +73,7 @@
     {
       "questionId": 81483,
       "imageURL": "https://images.diagnosticquestions.com/uploads/questions/2ff63f25-1093-409c-9d58-1d14b917dd4b.jpg",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanations": {
         "A": "This is 0.33333333, but the question is 0.323232... How do we take account of the two numbers being repeated?",
         "B": "This is 0.32, but what happens when we have the recurring dots?",
