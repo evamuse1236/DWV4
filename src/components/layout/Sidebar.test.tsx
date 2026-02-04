@@ -74,6 +74,7 @@ describe("Sidebar", () => {
       expect(screen.queryByText("Viva Queue")).not.toBeInTheDocument();
       expect(screen.queryByText("Presentations")).not.toBeInTheDocument();
       expect(screen.queryByText("Books")).not.toBeInTheDocument();
+      expect(screen.queryByText("Norms")).not.toBeInTheDocument();
     });
 
     it("displays student username and role", () => {
@@ -106,6 +107,7 @@ describe("Sidebar", () => {
       // Admin nav items should be visible
       expect(screen.getByText("Dashboard")).toBeInTheDocument();
       expect(screen.getByText("Students")).toBeInTheDocument();
+      expect(screen.getByText("Norms")).toBeInTheDocument();
       expect(screen.getByText("Sprints")).toBeInTheDocument();
       expect(screen.getByText("Objectives")).toBeInTheDocument();
       expect(screen.getByText("Viva Queue")).toBeInTheDocument();

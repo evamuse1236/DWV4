@@ -91,6 +91,7 @@ const studentNavItems: NavItem[] = [
 const adminNavItems: NavItem[] = [
   { path: "/admin", label: "Dashboard", icon: Icons.home },
   { path: "/admin/students", label: "Students", icon: Icons.users },
+  { path: "/admin/norms", label: "Norms", icon: Icons.listChecks },
   { path: "/admin/sprints", label: "Sprints", icon: Icons.calendar },
   { path: "/admin/objectives", label: "Objectives", icon: Icons.clipboard },
   { path: "/admin/viva", label: "Viva Queue", icon: Icons.check },

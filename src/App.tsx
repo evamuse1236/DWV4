@@ -29,6 +29,7 @@ import {
   VivaQueuePage,
   PresentationQueuePage,
   BooksPage,
+  NormsPage,
 } from "./pages/admin";
 
 import { ProjectDetailPage } from "./pages/admin/ProjectDetailPage";
@@ -95,6 +96,7 @@ function App() {
               <Route path="/admin/viva" element={<VivaQueuePage />} />
               <Route path="/admin/presentations" element={<PresentationQueuePage />} />
               <Route path="/admin/books" element={<BooksPage />} />
+              <Route path="/admin/norms" element={<NormsPage />} />
               <Route path="/admin/trust-jar" element={<AdminTrustJarPage />} />
             </Route>
 

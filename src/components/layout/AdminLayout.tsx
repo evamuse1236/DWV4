@@ -48,12 +48,14 @@ import {
   Mic,
   FolderKanban,
   Search,
+  ListChecks,
 } from "lucide-react";
 
 // Admin navigation items
 const adminNavItems = [
   { path: "/admin", label: "Dashboard", icon: Home },
   { path: "/admin/students", label: "Students", icon: Users },
+  { path: "/admin/norms", label: "Norms", icon: ListChecks },
   { path: "/admin/sprints", label: "Sprints", icon: Calendar },
   { path: "/admin/projects", label: "Projects", icon: FolderKanban },
   { path: "/admin/objectives", label: "Objectives", icon: Target },

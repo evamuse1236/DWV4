@@ -361,6 +361,16 @@ export default defineSchema({
     updatedBy: v.optional(v.id("users")), // Who made the last change
   }).index("by_batch", ["batch"]),
 
+  // ============ CLASS NORMS (STRIKES & PENALTIES) ============
+  studentNorms: defineTable({
+    userId: v.id("users"),
+    strikes: v.number(),
+    penalties: v.number(),
+    penaltyPending: v.boolean(),
+    updatedAt: v.number(),
+    updatedBy: v.optional(v.id("users")),
+  }).index("by_user", ["userId"]),
+
   // ============ PROJECTS (6-week learning cycles) ============
   projects: defineTable({
     name: v.string(), // "Project 3: Renewable Energy"

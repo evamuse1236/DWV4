@@ -7,3 +7,4 @@ export { ObjectivesPage } from "./ObjectivesPage";
 export { VivaQueuePage } from "./VivaQueuePage";
 export { PresentationQueuePage } from "./PresentationQueuePage";
 export { BooksPage } from "./BooksPage";
+export { NormsPage } from "./NormsPage";
