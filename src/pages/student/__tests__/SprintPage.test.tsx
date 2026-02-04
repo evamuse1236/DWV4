@@ -26,7 +26,7 @@ vi.mock("convex/react", () => ({
 // Mock the API
 vi.mock("../../../../convex/_generated/api", () => ({
   api: {
-    sprints: { getActive: "sprints.getActive" },
+    sprints: { getActive: "sprints.getActive", getAll: "sprints.getAll" },
     goals: {
       getByUserAndSprint: "goals.getByUserAndSprint",
       getPreviousSprintGoals: "goals.getPreviousSprintGoals",
@@ -119,6 +119,14 @@ const mockActiveSprint = {
   status: "active",
 };
 
+const mockPreviousSprint = {
+  _id: "sprint_0",
+  name: "December Sprint",
+  startDate: new Date(Date.now() - 28 * 24 * 60 * 60 * 1000).toISOString(),
+  endDate: new Date(Date.now() - 14 * 24 * 60 * 60 * 1000).toISOString(),
+  status: "completed",
+};
+
 const mockGoals = [
   {
     _id: "goal_1",
@@ -146,6 +154,24 @@ const mockGoals = [
     actionItems: [],
   },
 ];
+
+const mockPreviousGoals = [
+  {
+    _id: "goal_prev_1",
+    title: "Review old notes",
+    status: "completed",
+    specific: "Review notes from last sprint",
+    measurable: "Finish all sections",
+    achievable: "Yes",
+    relevant: "Improve retention",
+    timeBound: "Last sprint",
+    actionItems: [
+      { _id: "item_prev_1", title: "Summarize chapter", isCompleted: true, weekNumber: 1, dayOfWeek: 1 },
+    ],
+  },
+];
+
+const mockAllSprints = [mockActiveSprint, mockPreviousSprint];
 
 describe("SprintPage", () => {
   beforeEach(() => {
@@ -183,7 +209,10 @@ describe("SprintPage", () => {
       (useQuery as any).mockImplementation((query: any, args: any) => {
         if (args === "skip") return undefined;
         if (query === "sprints.getActive") return mockActiveSprint;
-        if (query === "goals.getByUserAndSprint") return mockGoals;
+        if (query === "sprints.getAll") return mockAllSprints;
+        if (query === "goals.getByUserAndSprint") {
+          return args?.sprintId === "sprint_0" ? mockPreviousGoals : mockGoals;
+        }
         if (query === "goals.getPreviousSprintGoals") return [];
         return undefined;
       });
@@ -191,7 +220,7 @@ describe("SprintPage", () => {
 
     it("displays the sprint name", () => {
       render(<SprintPage />);
-      expect(screen.getByText(/january sprint/i)).toBeInTheDocument();
+      expect(screen.getByRole("heading", { level: 1, name: /january sprint/i })).toBeInTheDocument();
     });
 
     it("displays 'Sprint Cycle' label", () => {
@@ -231,6 +260,11 @@ describe("SprintPage", () => {
       render(<SprintPage />);
       expect(screen.getByTestId("habit-tracker")).toBeInTheDocument();
     });
+
+    it("shows sprint selector with current sprint indicator", () => {
+      render(<SprintPage />);
+      expect(screen.getByText(/january sprint\s+\(current\)/i)).toBeInTheDocument();
+    });
   });
 
   describe("Week view", () => {
@@ -238,7 +272,10 @@ describe("SprintPage", () => {
       (useQuery as any).mockImplementation((query: any, args: any) => {
         if (args === "skip") return undefined;
         if (query === "sprints.getActive") return mockActiveSprint;
-        if (query === "goals.getByUserAndSprint") return mockGoals;
+        if (query === "sprints.getAll") return mockAllSprints;
+        if (query === "goals.getByUserAndSprint") {
+          return args?.sprintId === "sprint_0" ? mockPreviousGoals : mockGoals;
+        }
         if (query === "goals.getPreviousSprintGoals") return [];
         return undefined;
       });
@@ -268,6 +305,7 @@ describe("SprintPage", () => {
       (useQuery as any).mockImplementation((query: any, args: any) => {
         if (args === "skip") return undefined;
         if (query === "sprints.getActive") return mockActiveSprint;
+        if (query === "sprints.getAll") return mockAllSprints;
         if (query === "goals.getByUserAndSprint") return []; // No goals
         if (query === "goals.getPreviousSprintGoals") return [];
         return undefined;
@@ -287,7 +325,10 @@ describe("SprintPage", () => {
       (useQuery as any).mockImplementation((query: any, args: any) => {
         if (args === "skip") return undefined;
         if (query === "sprints.getActive") return mockActiveSprint;
-        if (query === "goals.getByUserAndSprint") return mockGoals;
+        if (query === "sprints.getAll") return mockAllSprints;
+        if (query === "goals.getByUserAndSprint") {
+          return args?.sprintId === "sprint_0" ? mockPreviousGoals : mockGoals;
+        }
         if (query === "goals.getPreviousSprintGoals") return [];
         return undefined;
       });

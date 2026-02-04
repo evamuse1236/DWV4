@@ -92,6 +92,8 @@ export function SprintPage() {
 
   // Week toggle state (1 or 2)
   const [activeWeek, setActiveWeek] = useState(1);
+  const [selectedSprintId, setSelectedSprintId] = useState<string | null>(null);
+  const [copyingGoalId, setCopyingGoalId] = useState<string | null>(null);
 
   // Goal expansion state - all goals expand/collapse together
   const [goalsExpanded, setGoalsExpanded] = useState(false);
@@ -123,20 +125,46 @@ export function SprintPage() {
 
   // Get active sprint
   const activeSprint = useQuery(api.sprints.getActive);
+  const allSprints = useQuery(api.sprints.getAll);
+
+  // Keep selected sprint in sync with available sprint data
+  useEffect(() => {
+    if (!activeSprint) return;
+    setSelectedSprintId((prev) => {
+      if (!prev) return activeSprint._id as string;
+      if (prev === (activeSprint._id as string)) return prev;
+      if (!allSprints || allSprints.some((s: any) => s._id === prev)) return prev;
+      return activeSprint._id as string;
+    });
+  }, [activeSprint?._id, allSprints]);
+
+  const availableSprints = (allSprints && allSprints.length > 0)
+    ? allSprints
+    : (activeSprint ? [activeSprint] : []);
+
+  const displayedSprint = (
+    availableSprints.find((s: any) => s._id === selectedSprintId)
+    || activeSprint
+  );
+  const isHistoryView = !!(displayedSprint && activeSprint && displayedSprint._id !== activeSprint._id);
 
   // Default to current week when sprint loads
   useEffect(() => {
-    if (!activeSprint) return;
-    const sprintStart = new Date(activeSprint.startDate);
+    if (!displayedSprint) return;
+    if (isHistoryView) {
+      setActiveWeek(1);
+      return;
+    }
+    const sprintStart = new Date(displayedSprint.startDate);
     const dayIndex = Math.floor((Date.now() - sprintStart.getTime()) / MS_PER_DAY);
     setActiveWeek(dayIndex < 7 ? 1 : 2);
-  }, [activeSprint?._id]);
+  }, [displayedSprint?._id, isHistoryView]);
 
   // Get user's goals and habits for the sprint
   const goals = useQuery(
     api.goals.getByUserAndSprint,
-    activeSprint && user
-      ? { userId: user._id as any, sprintId: activeSprint._id }
+    displayedSprint && user
+      ? { userId: user._id as any, sprintId: displayedSprint._id }
       : "skip"
   );
 
@@ -315,7 +343,7 @@ export function SprintPage() {
 
   // Quick add task with goal color selection (or standalone if goalId is null)
   const handleQuickAddTask = async (dayOfWeek: number, goalId: string | null) => {
-    if (!user || !activeSprint) return;
+    if (!user || !activeSprint || isHistoryView) return;
     await addActionItem({
       goalId: goalId ? (goalId as any) : undefined,
       userId: user._id as any,
@@ -331,6 +359,7 @@ export function SprintPage() {
     const handleKeyDown = (e: KeyboardEvent) => {
       // Disable global shortcuts while any inline editor/dropdown is active
       if (openTimeSelectTaskId || editingTaskTitle || editingGoalTitle) return;
+      if (isHistoryView) return;
 
       // Ignore if typing in an input field
       const target = e.target as HTMLElement;
@@ -410,6 +439,7 @@ export function SprintPage() {
   }, [
     selectedTaskId,
     activeSprint,
+    isHistoryView,
     goals,
     activeWeek,
     updateActionItem,
@@ -446,6 +476,10 @@ export function SprintPage() {
     );
   }
 
+  if (!displayedSprint) {
+    return null;
+  }
+
   const sprintDaysLeft = Math.max(
     0,
     Math.ceil(
@@ -454,7 +488,7 @@ export function SprintPage() {
   );
 
   // Calculate dates for the sprint
-  const sprintStart = new Date(activeSprint.startDate);
+  const sprintStart = new Date(displayedSprint.startDate);
   const today = new Date();
   const todayStr = getLocalDateStr(today);
 
@@ -502,7 +536,9 @@ export function SprintPage() {
   ) || [];
 
   // Get standalone tasks for the active week
-  const standaloneTasks = (activeWeek === 1 ? standaloneTasksWeek1 : standaloneTasksWeek2) || [];
+  const standaloneTasks = isHistoryView
+    ? []
+    : ((activeWeek === 1 ? standaloneTasksWeek1 : standaloneTasksWeek2) || []);
   const standaloneActionItems = standaloneTasks.map((item: any) => ({
     ...item,
     goalTitle: null,
@@ -534,10 +570,25 @@ export function SprintPage() {
     setMuseExpanded(true);
   };
 
+  const handleCopyGoalToCurrentSprint = async (goalId: string) => {
+    if (!activeSprint || !isHistoryView) return;
+    setCopyingGoalId(goalId);
+    try {
+      await importGoal({
+        goalId: goalId as any,
+        targetSprintId: activeSprint._id,
+        includeActionItems: true,
+      });
+    } finally {
+      setCopyingGoalId(null);
+    }
+  };
+
   // Render the goals container (scrollable)
   const renderGoalsContainer = () => {
     const goalSlots = (goals || []).map((goal: any, i: number) => {
       const isExpanded = goalsExpanded;
+      const isCopying = copyingGoalId === goal._id;
       const completedItems = goal.actionItems?.filter((item: any) => item.isCompleted).length || 0;
       const totalItems = goal.actionItems?.length || 0;
       const progress = totalItems > 0 ? (completedItems / totalItems) * 100 : 0;
@@ -573,7 +624,7 @@ export function SprintPage() {
             {/* Goal header - HUD style: title top left */}
             <div style={{ width: "100%", paddingRight: "80px" }}>
               {/* Goal title (inline editable) - Sans-serif, bold */}
-              {editingGoalTitle === goal._id ? (
+              {!isHistoryView && editingGoalTitle === goal._id ? (
                 <input
                   type="text"
                   value={goalTitleValue}
@@ -609,6 +660,7 @@ export function SprintPage() {
               ) : (
                 <h3
                   onClick={(e) => {
+                    if (isHistoryView) return;
                     e.stopPropagation();
                     setEditingGoalTitle(goal._id);
                     setGoalTitleValue(goal.title);
@@ -659,88 +711,130 @@ export function SprintPage() {
                     key={item._id}
                     item={item}
                     isCompleted={optimisticCompletions[item._id] ?? item.isCompleted}
-                    onToggle={() => handleToggleAction(item._id, item.isCompleted)}
+                    onToggle={() => {
+                      if (isHistoryView) return;
+                      handleToggleAction(item._id, item.isCompleted);
+                    }}
                   />
                 ))}
               </ul>
 
-              <div style={{ display: "flex", gap: "16px", marginTop: "16px" }}>
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setEditingGoal(goal);
-                  }}
-                  style={{
-                    fontFamily: "var(--font-body, 'DM Sans', sans-serif)",
-                    fontSize: "11px",
-                    fontWeight: 500,
-                    textTransform: "uppercase",
-                    letterSpacing: "0.08em",
-                    color: "#786B62",
-                    background: "transparent",
-                    border: "none",
-                    cursor: "pointer",
-                  }}
-                  className="hover:opacity-100 transition-opacity"
-                >
-                  Edit Goal
-                </button>
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    if (confirm(`Delete "${goal.title}" and all its tasks?`)) {
-                      removeGoal({ goalId: goal._id as any });
-                    }
-                  }}
-                  style={{
-                    fontFamily: "var(--font-body, 'DM Sans', sans-serif)",
-                    fontSize: "11px",
-                    fontWeight: 500,
-                    textTransform: "uppercase",
-                    letterSpacing: "0.08em",
-                    color: "#c44",
-                    background: "transparent",
-                    border: "none",
-                    cursor: "pointer",
-                  }}
-                  className="hover:opacity-100 transition-opacity"
-                >
-                  Delete
-                </button>
-              </div>
+              {isHistoryView ? (
+                <div style={{ display: "flex", gap: "16px", marginTop: "16px" }}>
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleCopyGoalToCurrentSprint(goal._id);
+                    }}
+                    disabled={isCopying}
+                    style={{
+                      fontFamily: "var(--font-body, 'DM Sans', sans-serif)",
+                      fontSize: "11px",
+                      fontWeight: 500,
+                      textTransform: "uppercase",
+                      letterSpacing: "0.08em",
+                      color: "#2D2420",
+                      background: "transparent",
+                      border: "none",
+                      cursor: isCopying ? "wait" : "pointer",
+                      opacity: isCopying ? 0.5 : 1,
+                    }}
+                    className="hover:opacity-100 transition-opacity"
+                  >
+                    {isCopying ? "Copying..." : "Copy to Current Sprint"}
+                  </button>
+                </div>
+              ) : (
+                <div style={{ display: "flex", gap: "16px", marginTop: "16px" }}>
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setEditingGoal(goal);
+                    }}
+                    style={{
+                      fontFamily: "var(--font-body, 'DM Sans', sans-serif)",
+                      fontSize: "11px",
+                      fontWeight: 500,
+                      textTransform: "uppercase",
+                      letterSpacing: "0.08em",
+                      color: "#786B62",
+                      background: "transparent",
+                      border: "none",
+                      cursor: "pointer",
+                    }}
+                    className="hover:opacity-100 transition-opacity"
+                  >
+                    Edit Goal
+                  </button>
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      if (confirm(`Delete "${goal.title}" and all its tasks?`)) {
+                        removeGoal({ goalId: goal._id as any });
+                      }
+                    }}
+                    style={{
+                      fontFamily: "var(--font-body, 'DM Sans', sans-serif)",
+                      fontSize: "11px",
+                      fontWeight: 500,
+                      textTransform: "uppercase",
+                      letterSpacing: "0.08em",
+                      color: "#c44",
+                      background: "transparent",
+                      border: "none",
+                      cursor: "pointer",
+                    }}
+                    className="hover:opacity-100 transition-opacity"
+                  >
+                    Delete
+                  </button>
+                </div>
+              )}
             </div>
           </div>
       );
     });
 
-    goalSlots.push(
-      <div
-        key="add-goal"
-        className={styles['goal-slot']}
-        onClick={handleOpenGoalChat}
-        style={{
-          border: "2px dashed #C0B5AD",
-          background: "transparent",
-          justifyContent: "center",
-          alignItems: "center",
-        } as React.CSSProperties}
-      >
-        <div style={{ opacity: 0.5, textAlign: "center" }}>
-          <i className="ph ph-plus" style={{ fontSize: "20px", display: "block", color: "#786B62" }} />
-          <div
-            style={{
-              fontFamily: "var(--font-body, 'DM Sans', sans-serif)",
-              fontSize: "13px",
-              fontWeight: 500,
-              marginTop: "6px",
-              color: "#786B62",
-            }}
-          >
-            Set Goal
+    if (goalSlots.length === 0 && isHistoryView) {
+      return (
+        <div className={cn(styles['goals-container'], "fade-in-up delay-1")}>
+          <div className={styles['goal-slot']} style={{ opacity: 0.7 }}>
+            No goals were set in this sprint.
           </div>
         </div>
-      </div>
-    );
+      );
+    }
+
+    if (!isHistoryView) {
+      goalSlots.push(
+        <div
+          key="add-goal"
+          className={styles['goal-slot']}
+          onClick={handleOpenGoalChat}
+          style={{
+            border: "2px dashed #C0B5AD",
+            background: "transparent",
+            justifyContent: "center",
+            alignItems: "center",
+          } as React.CSSProperties}
+        >
+          <div style={{ opacity: 0.5, textAlign: "center" }}>
+            <i className="ph ph-plus" style={{ fontSize: "20px", display: "block", color: "#786B62" }} />
+            <div
+              style={{
+                fontFamily: "var(--font-body, 'DM Sans', sans-serif)",
+                fontSize: "13px",
+                fontWeight: 500,
+                marginTop: "6px",
+                color: "#786B62",
+              }}
+            >
+              Set Goal
+            </div>
+          </div>
+        </div>
+      );
+    }
 
     return <div className={cn(styles['goals-container'], "fade-in-up delay-1")}>{goalSlots}</div>;
   };
@@ -750,7 +844,7 @@ export function SprintPage() {
     <div className={cn(styles['week-view-container'], "fade-in-up delay-2")}>
       <div className={styles['week-view']}>
         {weekDates.map((dayInfo) => {
-          const isToday = dayInfo.date === todayStr && activeWeek === currentWeek;
+          const isToday = !isHistoryView && dayInfo.date === todayStr && activeWeek === currentWeek;
           const dayTasks = tasksByDay[dayInfo.dayOfWeek] || [];
 
           return (
@@ -790,6 +884,7 @@ export function SprintPage() {
                       style={{ background: taskColor.bg }}
                     whileHover={{ y: -2 }}
                     onClick={(e) => {
+                      if (isHistoryView) return;
                       e.stopPropagation();
                       if (isTimeSelectOpen || editingTaskTitle === task._id) return;
                       // Select the task (completion handled by checkbox)
@@ -811,60 +906,75 @@ export function SprintPage() {
                           />
                           {isStandalone ? "Quick Task" : task.goalTitle}
                       </div>
-                      {/* Editable time field */}
-                      <div onClick={(e) => e.stopPropagation()} title="Set time">
-                        <Select
-                          value={selectValue}
-                          open={isTimeSelectOpen}
-                          onOpenChange={(open) => setOpenTimeSelectTaskId(open ? task._id : null)}
-                          onValueChange={async (selectedValue) => {
-                            const newTime = selectedValue === NO_TIME_VALUE ? "" : selectedValue;
-                            if (newTime === displayTimeValue) return;
-
-                            // Optimistically update UI
-                            setTimeSaveErrorTaskId(null);
-                            setOptimisticTaskTimes((prev) => ({ ...prev, [task._id]: newTime }));
-
-                            // Persist to server
-                            try {
-                              await updateActionItem({
-                                itemId: task._id as any,
-                                scheduledTime: newTime,
-                              });
-                            } catch (err) {
-                              console.error("Failed to update scheduled time:", err);
-                              setTimeSaveErrorTaskId(task._id);
-                            }
+                      {isHistoryView ? (
+                        <div
+                          style={{
+                            fontFamily: "var(--font-body, 'DM Sans', sans-serif)",
+                            fontSize: "10px",
+                            textTransform: "uppercase",
+                            letterSpacing: "0.08em",
+                            color: "#786B62",
+                            opacity: displayTimeValue ? 0.8 : 0.4,
                           }}
                         >
-                          <SelectTrigger
-                            className={[
-                              "h-5 min-w-[56px] px-2 py-0 text-[10px] font-body shadow-none",
-                              "bg-transparent border-[rgba(168,197,181,0.5)]",
-                              "focus:ring-0 focus:ring-offset-0",
-                              displayTimeValue ? "opacity-70" : "opacity-30",
-                              timeSaveErrorTaskId === task._id ? "border-red-400" : "",
-                            ].join(" ")}
-                            onPointerDown={(e) => e.stopPropagation()}
+                          {displayTimeValue || "time"}
+                        </div>
+                      ) : (
+                        /* Editable time field */
+                        <div onClick={(e) => e.stopPropagation()} title="Set time">
+                          <Select
+                            value={selectValue}
+                            open={isTimeSelectOpen}
+                            onOpenChange={(open) => setOpenTimeSelectTaskId(open ? task._id : null)}
+                            onValueChange={async (selectedValue) => {
+                              const newTime = selectedValue === NO_TIME_VALUE ? "" : selectedValue;
+                              if (newTime === displayTimeValue) return;
+
+                              // Optimistically update UI
+                              setTimeSaveErrorTaskId(null);
+                              setOptimisticTaskTimes((prev) => ({ ...prev, [task._id]: newTime }));
+
+                              // Persist to server
+                              try {
+                                await updateActionItem({
+                                  itemId: task._id as any,
+                                  scheduledTime: newTime,
+                                });
+                              } catch (err) {
+                                console.error("Failed to update scheduled time:", err);
+                                setTimeSaveErrorTaskId(task._id);
+                              }
+                            }}
                           >
-                            <SelectValue placeholder="time" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value={NO_TIME_VALUE}>time</SelectItem>
-                            {hasCustomTime && (
-                              <SelectItem value={displayTimeValue}>{displayTimeValue}</SelectItem>
-                            )}
-                            {TIME_OPTIONS.map((opt) => (
-                              <SelectItem key={opt} value={opt}>
-                                {opt}
-                              </SelectItem>
-                            ))}
-                          </SelectContent>
-                        </Select>
-                      </div>
+                            <SelectTrigger
+                              className={[
+                                "h-5 min-w-[56px] px-2 py-0 text-[10px] font-body shadow-none",
+                                "bg-transparent border-[rgba(168,197,181,0.5)]",
+                                "focus:ring-0 focus:ring-offset-0",
+                                displayTimeValue ? "opacity-70" : "opacity-30",
+                                timeSaveErrorTaskId === task._id ? "border-red-400" : "",
+                              ].join(" ")}
+                              onPointerDown={(e) => e.stopPropagation()}
+                            >
+                              <SelectValue placeholder="time" />
+                            </SelectTrigger>
+                            <SelectContent>
+                              <SelectItem value={NO_TIME_VALUE}>time</SelectItem>
+                              {hasCustomTime && (
+                                <SelectItem value={displayTimeValue}>{displayTimeValue}</SelectItem>
+                              )}
+                              {TIME_OPTIONS.map((opt) => (
+                                <SelectItem key={opt} value={opt}>
+                                  {opt}
+                                </SelectItem>
+                              ))}
+                            </SelectContent>
+                          </Select>
+                        </div>
+                      )}
                     </div>
                       {/* Task title (inline editable) - Sans-serif, no strikethrough */}
-                      {editingTaskTitle === task._id ? (
+                      {!isHistoryView && editingTaskTitle === task._id ? (
                         <input
                           type="text"
                           value={taskTitleValue}
@@ -896,6 +1006,19 @@ export function SprintPage() {
                             color: "#2D2420",
                           }}
                         />
+                      ) : isHistoryView ? (
+                        <div
+                          style={{
+                            fontFamily: "var(--font-body, 'DM Sans', sans-serif)",
+                            fontSize: "14px",
+                            fontWeight: 500,
+                            color: task.isCompleted ? "#786B62" : "#2D2420",
+                            textDecoration: task.isCompleted ? "line-through" : "none",
+                            lineHeight: 1.4,
+                          }}
+                        >
+                          {task.title}
+                        </div>
                       ) : (
                         <TaskTitleDisplay
                           task={task}
@@ -908,7 +1031,7 @@ export function SprintPage() {
                         />
                       )}
                       {/* Selection hint */}
-                      {isSelected && (
+                      {isSelected && !isHistoryView && (
                         <div style={{ fontSize: "9px", opacity: 0.5, marginTop: "6px" }}>
                           ← → move • Enter complete • Del delete • Esc deselect
                         </div>
@@ -925,7 +1048,7 @@ export function SprintPage() {
               )}
 
               {/* Quick add task button - always show (can add standalone tasks even without goals) */}
-              {user && (
+              {user && !isHistoryView && (
                 <div style={{ marginTop: "auto", paddingTop: "12px" }}>
                   {showingAddTaskForDay === dayInfo.dayOfWeek ? (
                     <div className={styles['quick-add-goals']}>
@@ -1026,7 +1149,7 @@ export function SprintPage() {
               color: "#786B62",
             }}
           >
-            Sprint Cycle
+            {isHistoryView ? "Sprint Archive" : "Sprint Cycle"}
           </span>
           <h1 style={{
             fontFamily: "var(--font-display, 'Fraunces', serif)",
@@ -1037,12 +1160,31 @@ export function SprintPage() {
             lineHeight: 1,
             color: "#2D2420",
           }}>
-            {activeSprint.name}
+            {displayedSprint.name}
           </h1>
         </div>
 
-        {/* Week Toggle */}
-        <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+        {/* Sprint picker + Week Toggle */}
+        <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap", justifyContent: "flex-end" }}>
+          <Select
+            value={displayedSprint._id}
+            onValueChange={(value) => {
+              setSelectedTaskId(null);
+              setSelectedSprintId(value);
+            }}
+          >
+            <SelectTrigger className="min-w-[220px] h-10">
+              <SelectValue placeholder="Choose sprint" />
+            </SelectTrigger>
+            <SelectContent>
+              {availableSprints.map((sprint: any) => (
+                <SelectItem key={sprint._id} value={sprint._id}>
+                  {sprint.name}
+                  {sprint._id === activeSprint._id ? " (Current)" : ""}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
           <div className={styles['week-toggle']}>
             <div
               className={cn(styles['toggle-btn'], activeWeek === 1 && styles.active)}
@@ -1060,6 +1202,22 @@ export function SprintPage() {
         </div>
       </div>
 
+      {isHistoryView && (
+        <div
+          className="fade-in-up"
+          style={{
+            marginTop: "-14px",
+            marginBottom: "20px",
+            fontFamily: "var(--font-body, 'DM Sans', sans-serif)",
+            fontSize: "12px",
+            letterSpacing: "0.02em",
+            color: "#786B62",
+          }}
+        >
+          Read-only view. Use "Copy to Current Sprint" inside a goal to bring it into {activeSprint.name}.
+        </div>
+      )}
+
       {/* Goals Container */}
       {renderGoalsContainer()}
 
@@ -1067,7 +1225,7 @@ export function SprintPage() {
       {renderWeekView()}
 
       {/* Habit Tracker */}
-      {user && activeSprint && (
+      {user && !isHistoryView && activeSprint && (
         <HabitTracker
           userId={user._id as any}
           sprintId={activeSprint._id}
@@ -1076,18 +1234,20 @@ export function SprintPage() {
       )}
 
       {/* The Muse: AI Chatbox */}
-      <TheMuse
-        expanded={museExpanded}
-        onToggle={() => setMuseExpanded(!museExpanded)}
-        onClose={() => setMuseExpanded(false)}
-        sprintDaysRemaining={sprintDaysLeft}
-        onGoalComplete={handleAIGoalComplete}
-        existingGoals={goals?.map((g: any) => ({ id: g._id, title: g.title })) || []}
-        previousSprintGoals={previousSprintGoals?.map((g: any) => ({ id: g._id, title: g.title, sprintName: g.sprintName })) || []}
-        onDuplicateGoal={handleAIDuplicateGoal}
-        onImportGoal={handleAIImportGoal}
-        onEditGoal={handleAIEditGoal}
-      />
+      {!isHistoryView && (
+        <TheMuse
+          expanded={museExpanded}
+          onToggle={() => setMuseExpanded(!museExpanded)}
+          onClose={() => setMuseExpanded(false)}
+          sprintDaysRemaining={sprintDaysLeft}
+          onGoalComplete={handleAIGoalComplete}
+          existingGoals={goals?.map((g: any) => ({ id: g._id, title: g.title })) || []}
+          previousSprintGoals={previousSprintGoals?.map((g: any) => ({ id: g._id, title: g.title, sprintName: g.sprintName })) || []}
+          onDuplicateGoal={handleAIDuplicateGoal}
+          onImportGoal={handleAIImportGoal}
+          onEditGoal={handleAIEditGoal}
+        />
+      )}
 
       {/* Edit Goal Modal */}
       <Modal
