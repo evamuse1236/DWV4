@@ -150,10 +150,18 @@ export function Sidebar() {
         <div className="flex items-center gap-3 mb-4">
           {/* Avatar */}
           <div
-            className="w-10 h-10 rounded-full flex items-center justify-center font-display italic text-lg"
+            className="w-10 h-10 rounded-full flex items-center justify-center font-display italic text-lg overflow-hidden"
             style={{ background: "var(--color-secondary)" }}
           >
-            {user?.displayName?.charAt(0).toUpperCase() || "?"}
+            {user?.avatarUrl ? (
+              <img
+                src={user.avatarUrl}
+                alt={user.displayName ?? "User"}
+                className="w-full h-full object-cover"
+              />
+            ) : (
+              user?.displayName?.charAt(0).toUpperCase() || "?"
+            )}
           </div>
           <div className="flex-1 min-w-0">
             <p className="text-sm font-medium truncate" style={{ color: "var(--color-text)" }}>
