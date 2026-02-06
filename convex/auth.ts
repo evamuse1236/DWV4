@@ -1,6 +1,8 @@
 import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
 import { hashPassword } from "./utils";
+import type { MutationCtx } from "./_generated/server";
+import type { Doc } from "./_generated/dataModel";
 
 /**
  * Generate a random session token
@@ -9,6 +11,47 @@ function generateToken(): string {
   const array = new Uint8Array(32);
   crypto.getRandomValues(array);
   return Array.from(array, (byte) => byte.toString(16).padStart(2, "0")).join("");
+}
+
+function normalizeUsername(username: string): string {
+  return username.trim();
+}
+
+function normalizeAvatarUrl(avatarUrl: string | undefined): string | undefined {
+  const normalized = avatarUrl?.trim();
+  return normalized ? normalized : undefined;
+}
+
+async function getSessionUser(
+  ctx: MutationCtx,
+  token: string
+): Promise<{ session: Doc<"sessions">; user: Doc<"users"> } | null> {
+  const session = await ctx.db
+    .query("sessions")
+    .withIndex("by_token", (q) => q.eq("token", token))
+    .unique();
+
+  if (!session) return null;
+
+  if (session.expiresAt < Date.now()) {
+    await ctx.db.delete(session._id);
+    return null;
+  }
+
+  const user = await ctx.db.get(session.userId);
+  if (!user) return null;
+
+  return { session, user };
+}
+
+async function getAdminFromToken(
+  ctx: MutationCtx,
+  adminToken: string
+): Promise<Doc<"users"> | null> {
+  const sessionUser = await getSessionUser(ctx, adminToken);
+  if (!sessionUser) return null;
+  if (sessionUser.user.role !== "admin") return null;
+  return sessionUser.user;
 }
 
 /**
@@ -166,25 +209,23 @@ export const createUser = mutation({
     batch: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
-    // Verify admin
-    const adminSession = await ctx.db
-      .query("sessions")
-      .withIndex("by_token", (q) => q.eq("token", args.adminToken))
-      .unique();
-
-    if (!adminSession) {
+    const admin = await getAdminFromToken(ctx, args.adminToken);
+    if (!admin) {
       return { success: false, error: "Unauthorized" };
     }
 
-    const admin = await ctx.db.get(adminSession.userId);
-    if (!admin || admin.role !== "admin") {
-      return { success: false, error: "Unauthorized" };
+    const normalizedUsername = normalizeUsername(args.username);
+    if (!normalizedUsername) {
+      return { success: false, error: "Username cannot be empty" };
+    }
+    if (args.password.length < 6) {
+      return { success: false, error: "Password must be at least 6 characters" };
     }
 
     // Check if username exists
     const existingUser = await ctx.db
       .query("users")
-      .withIndex("by_username", (q) => q.eq("username", args.username))
+      .withIndex("by_username", (q) => q.eq("username", normalizedUsername))
       .unique();
 
     if (existingUser) {
@@ -196,7 +237,7 @@ export const createUser = mutation({
 
     // Create user
     const userId = await ctx.db.insert("users", {
-      username: args.username,
+      username: normalizedUsername,
       passwordHash,
       displayName: args.displayName,
       role: args.role,
@@ -205,6 +246,221 @@ export const createUser = mutation({
     });
 
     return { success: true, userId };
+  },
+});
+
+/**
+ * Change current user's username
+ */
+export const changeOwnUsername = mutation({
+  args: {
+    token: v.string(),
+    currentPassword: v.string(),
+    newUsername: v.string(),
+  },
+  handler: async (ctx, args) => {
+    const sessionUser = await getSessionUser(ctx, args.token);
+    if (!sessionUser) {
+      return { success: false, error: "Session expired. Please log in again." };
+    }
+
+    const normalizedUsername = normalizeUsername(args.newUsername);
+    if (!normalizedUsername) {
+      return { success: false, error: "Username cannot be empty" };
+    }
+
+    const currentPasswordHash = await hashPassword(args.currentPassword);
+    if (currentPasswordHash !== sessionUser.user.passwordHash) {
+      return { success: false, error: "Current password is incorrect" };
+    }
+
+    if (normalizedUsername === sessionUser.user.username) {
+      return { success: true, username: normalizedUsername };
+    }
+
+    const existingUser = await ctx.db
+      .query("users")
+      .withIndex("by_username", (q) => q.eq("username", normalizedUsername))
+      .unique();
+
+    if (existingUser && existingUser._id.toString() !== sessionUser.user._id.toString()) {
+      return { success: false, error: "Username already exists" };
+    }
+
+    await ctx.db.patch(sessionUser.user._id, { username: normalizedUsername });
+    return { success: true, username: normalizedUsername };
+  },
+});
+
+/**
+ * Change current user's password
+ */
+export const changeOwnPassword = mutation({
+  args: {
+    token: v.string(),
+    currentPassword: v.string(),
+    newPassword: v.string(),
+  },
+  handler: async (ctx, args) => {
+    const sessionUser = await getSessionUser(ctx, args.token);
+    if (!sessionUser) {
+      return { success: false, error: "Session expired. Please log in again." };
+    }
+
+    if (args.newPassword.length < 6) {
+      return { success: false, error: "New password must be at least 6 characters" };
+    }
+
+    const currentPasswordHash = await hashPassword(args.currentPassword);
+    if (currentPasswordHash !== sessionUser.user.passwordHash) {
+      return { success: false, error: "Current password is incorrect" };
+    }
+
+    if (args.newPassword === args.currentPassword) {
+      return { success: false, error: "New password must be different from current password" };
+    }
+
+    const newPasswordHash = await hashPassword(args.newPassword);
+    await ctx.db.patch(sessionUser.user._id, { passwordHash: newPasswordHash });
+
+    return { success: true };
+  },
+});
+
+/**
+ * Update current user's profile fields.
+ * Initial scope: avatar URL only.
+ */
+export const updateOwnProfile = mutation({
+  args: {
+    token: v.string(),
+    avatarUrl: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    const sessionUser = await getSessionUser(ctx, args.token);
+    if (!sessionUser) {
+      return { success: false, error: "Session expired. Please log in again." };
+    }
+
+    const normalizedAvatarUrl = normalizeAvatarUrl(args.avatarUrl);
+    await ctx.db.patch(sessionUser.user._id, {
+      avatarUrl: normalizedAvatarUrl,
+    });
+
+    return { success: true, avatarUrl: normalizedAvatarUrl };
+  },
+});
+
+/**
+ * Admin: update another user's username
+ */
+export const adminUpdateUsername = mutation({
+  args: {
+    adminToken: v.string(),
+    userId: v.id("users"),
+    newUsername: v.string(),
+  },
+  handler: async (ctx, args) => {
+    const admin = await getAdminFromToken(ctx, args.adminToken);
+    if (!admin) {
+      return { success: false, error: "Unauthorized" };
+    }
+
+    const targetUser = await ctx.db.get(args.userId);
+    if (!targetUser) {
+      return { success: false, error: "User not found" };
+    }
+
+    const normalizedUsername = normalizeUsername(args.newUsername);
+    if (!normalizedUsername) {
+      return { success: false, error: "Username cannot be empty" };
+    }
+
+    if (normalizedUsername === targetUser.username) {
+      return { success: true, username: normalizedUsername };
+    }
+
+    const existingUser = await ctx.db
+      .query("users")
+      .withIndex("by_username", (q) => q.eq("username", normalizedUsername))
+      .unique();
+    if (existingUser && existingUser._id.toString() !== targetUser._id.toString()) {
+      return { success: false, error: "Username already exists" };
+    }
+
+    await ctx.db.patch(args.userId, { username: normalizedUsername });
+    return { success: true, username: normalizedUsername };
+  },
+});
+
+/**
+ * Admin: reset another user's password
+ */
+export const adminResetPassword = mutation({
+  args: {
+    adminToken: v.string(),
+    userId: v.id("users"),
+    newPassword: v.string(),
+  },
+  handler: async (ctx, args) => {
+    const admin = await getAdminFromToken(ctx, args.adminToken);
+    if (!admin) {
+      return { success: false, error: "Unauthorized" };
+    }
+
+    const targetUser = await ctx.db.get(args.userId);
+    if (!targetUser) {
+      return { success: false, error: "User not found" };
+    }
+
+    if (args.newPassword.length < 6) {
+      return { success: false, error: "Password must be at least 6 characters" };
+    }
+
+    const passwordHash = await hashPassword(args.newPassword);
+    await ctx.db.patch(args.userId, { passwordHash });
+    return { success: true };
+  },
+});
+
+/**
+ * Admin: get safe credential summary for all users.
+ * Note: Passwords are never stored in plaintext and cannot be retrieved.
+ */
+export const getCredentialSummaries = query({
+  args: {
+    adminToken: v.string(),
+  },
+  handler: async (ctx, args) => {
+    if (!args.adminToken) {
+      return [];
+    }
+
+    const session = await ctx.db
+      .query("sessions")
+      .withIndex("by_token", (q) => q.eq("token", args.adminToken))
+      .unique();
+    if (!session || session.expiresAt < Date.now()) {
+      return [];
+    }
+
+    const admin = await ctx.db.get(session.userId);
+    if (!admin || admin.role !== "admin") {
+      return [];
+    }
+
+    const users = await ctx.db.query("users").collect();
+    return users
+      .map((user) => ({
+        _id: user._id,
+        displayName: user.displayName,
+        username: user.username,
+        role: user.role,
+        batch: user.batch,
+        createdAt: user.createdAt,
+        lastLoginAt: user.lastLoginAt,
+      }))
+      .sort((a, b) => a.displayName.localeCompare(b.displayName));
   },
 });
 

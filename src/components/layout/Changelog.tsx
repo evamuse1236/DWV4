@@ -10,6 +10,27 @@ interface ChangelogEntry {
 
 const CHANGELOG: ChangelogEntry[] = [
   {
+    date: "Feb 6",
+    sortDate: "2026-02-06",
+    title: "Settings & Account Management",
+    description:
+      "New Settings page for students and admins. Change your username, password, or profile photo (including GIFs). Admins also get a credential dashboard to manage all user accounts.",
+  },
+  {
+    date: "Feb 6",
+    sortDate: "2026-02-06",
+    title: "Project Link Editing",
+    description:
+      "Admin project detail pages now let you inline-edit link titles, URLs, and link types with a save/cancel flow — no more delete-and-recreate.",
+  },
+  {
+    date: "Feb 5",
+    sortDate: "2026-02-05",
+    title: "Smarter AI Data Chat",
+    description:
+      "The project AI data-entry chat now remembers your conversation across messages in the same session, and handles malformed responses gracefully.",
+  },
+  {
     date: "Jan 29",
     sortDate: "2026-01-29",
     title: "Diagnostics for Mastery",

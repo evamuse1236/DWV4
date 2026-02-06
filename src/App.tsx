@@ -18,6 +18,7 @@ import { DiagnosticPage } from "./pages/student/DiagnosticPage";
 import { ReadingPage } from "./pages/student/ReadingPage";
 import { TrustJarPage } from "./pages/student/TrustJarPage";
 import { VisionBoardPage } from "./pages/student/VisionBoardPage";
+import { SettingsPage as StudentSettingsPage } from "./pages/student/SettingsPage";
 
 // Admin pages
 import {
@@ -30,6 +31,7 @@ import {
   PresentationQueuePage,
   BooksPage,
   NormsPage,
+  AdminSettingsPage,
 } from "./pages/admin";
 
 import { ProjectDetailPage } from "./pages/admin/ProjectDetailPage";
@@ -76,6 +78,7 @@ function App() {
               <Route path="/reading" element={<ReadingPage />} />
               <Route path="/trust-jar" element={<TrustJarPage />} />
               <Route path="/vision-board" element={<VisionBoardPage />} />
+              <Route path="/settings" element={<StudentSettingsPage />} />
             </Route>
 
             {/* Admin routes */}
@@ -98,6 +101,7 @@ function App() {
               <Route path="/admin/books" element={<BooksPage />} />
               <Route path="/admin/norms" element={<NormsPage />} />
               <Route path="/admin/trust-jar" element={<AdminTrustJarPage />} />
+              <Route path="/admin/settings" element={<AdminSettingsPage />} />
             </Route>
 
             {/* Default redirect */}

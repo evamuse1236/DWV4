@@ -59,6 +59,11 @@ const Icons = {
       <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
     </svg>
   ),
+  settings: (
+    <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6h3m-7.5 6h12m-9 6h6M3 6h.008v.008H3V6zm3 0a3 3 0 11-6 0 3 3 0 016 0zm0 12a3 3 0 11-6 0 3 3 0 016 0zm18-6a3 3 0 11-6 0 3 3 0 016 0z" />
+    </svg>
+  ),
   visionBoard: (
     <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z" />
@@ -85,6 +90,7 @@ const studentNavItems: NavItem[] = [
   { path: "/reading", label: "Library", icon: Icons.books },
   { path: "/trust-jar", label: "Trust Jar", icon: Icons.jar },
   { path: "/vision-board", label: "Vision Board", icon: Icons.visionBoard },
+  { path: "/settings", label: "Settings", icon: Icons.settings },
 ];
 
 // Admin navigation items
@@ -98,6 +104,7 @@ const adminNavItems: NavItem[] = [
   { path: "/admin/presentations", label: "Presentations", icon: Icons.presentation },
   { path: "/admin/books", label: "Books", icon: Icons.books },
   { path: "/admin/trust-jar", label: "Trust Jar", icon: Icons.jar },
+  { path: "/admin/settings", label: "Settings", icon: Icons.settings },
 ];
 
 /**
@@ -150,10 +157,10 @@ export function Sidebar() {
           </div>
           <div className="flex-1 min-w-0">
             <p className="text-sm font-medium truncate" style={{ color: "var(--color-text)" }}>
-              {user?.displayName}
+              @{user?.username}
             </p>
-            <p className="text-xs capitalize" style={{ color: "var(--color-text-muted)" }}>
-              {user?.role}
+            <p className="text-xs truncate" style={{ color: "var(--color-text-muted)" }}>
+              {user?.displayName}
             </p>
           </div>
         </div>

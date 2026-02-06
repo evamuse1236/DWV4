@@ -42,7 +42,7 @@ Located in `src/components/paper/` - Custom "paper" aesthetic components.
 |-------------------|----------------|
 | Dashboard layout/sidebar | `src/components/layout/DashboardLayout.tsx` |
 | Admin layout/navigation | `src/components/layout/AdminLayout.tsx` |
-| Student sidebar | `src/components/layout/Sidebar.tsx` |
+| Student sidebar (shows @username + displayName) | `src/components/layout/Sidebar.tsx` |
 | Header/top bar | `src/components/layout/Header.tsx` |
 | Emotion check-in gate | `src/components/layout/CheckInGate.tsx` |
 
@@ -93,8 +93,8 @@ Located in `src/components/paper/` - Custom "paper" aesthetic components.
 ### Projects
 | Want to change... | Edit this file |
 |-------------------|----------------|
-| Student project cards | `src/components/projects/StudentProjectCard.tsx` |
-| AI data entry chat | `src/components/projects/ProjectDataChat.tsx` |
+| Student project cards (add/edit/delete links + reflections) | `src/components/projects/StudentProjectCard.tsx` |
+| AI data entry chat (multi-turn project data assistant) | `src/components/projects/ProjectDataChat.tsx` |
 
 ### Vision Board
 | Want to change... | Edit this file |
@@ -138,6 +138,7 @@ All pages are in `src/pages/`.
 | Diagnostic quiz | `student/DiagnosticPage.tsx` |
 | Trust jar | `student/TrustJarPage.tsx` |
 | Vision board | `student/VisionBoardPage.tsx` |
+| Settings (student: username/password + avatar URL/GIF) | `student/SettingsPage.tsx` |
 
 ### Admin Pages
 | Page | File |
@@ -153,6 +154,8 @@ All pages are in `src/pages/`.
 | Viva queue | `admin/VivaQueuePage.tsx` |
 | Presentation queue | `admin/PresentationQueuePage.tsx` |
 | Trust jar (admin) | `admin/TrustJarPage.tsx` |
+| Norms (strikes/penalties) | `admin/NormsPage.tsx` |
+| Settings (admin: own profile photo + credential management) | `admin/SettingsPage.tsx` |
 
 ## Hooks
 
@@ -206,6 +209,7 @@ All database code is in `convex/`.
 | Project reflections | `projectReflections.ts` |
 | Trust jar | `trustJar.ts` |
 | Vision board | `visionBoard.ts` |
+| Norms (strikes/penalties) | `norms.ts` |
 | Diagnostics | `diagnostics.ts` |
 | Chat logs | `chatLogs.ts` |
 | Migrations | `migrations.ts` |

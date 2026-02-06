@@ -23,6 +23,7 @@ import {
   Link as LinkIcon,
   Plus,
   Trash2,
+  Pencil,
   ExternalLink,
   Loader2,
 } from "lucide-react";
@@ -65,6 +66,7 @@ export function StudentProjectCard({
 }: StudentProjectCardProps) {
   // Mutations
   const addLink = useMutation(api.projectLinks.add);
+  const updateLink = useMutation(api.projectLinks.update);
   const removeLink = useMutation(api.projectLinks.remove);
   const updateReflection = useMutation(api.projectReflections.update);
 
@@ -76,6 +78,20 @@ export function StudentProjectCard({
   });
   const [isAddingLink, setIsAddingLink] = useState(false);
   const [isSavingLink, setIsSavingLink] = useState(false);
+  const [editingLinkId, setEditingLinkId] = useState<Id<"projectLinks"> | null>(
+    null
+  );
+  const [editingLink, setEditingLink] = useState<{
+    title: string;
+    url: string;
+    linkType: LinkType;
+  }>({
+    title: "",
+    url: "",
+    linkType: "other",
+  });
+  const [linkEditError, setLinkEditError] = useState("");
+  const [isUpdatingLink, setIsUpdatingLink] = useState(false);
 
   // Local state for reflection edits (debounced saves)
   const [localReflection, setLocalReflection] = useState({
@@ -123,6 +139,50 @@ export function StudentProjectCard({
       await removeLink({ linkId });
     } catch (err) {
       console.error("Failed to remove link:", err);
+    }
+  };
+
+  const startEditingLink = (link: StudentLink) => {
+    setEditingLinkId(link._id);
+    setEditingLink({
+      title: link.title,
+      url: link.url,
+      linkType: link.linkType,
+    });
+    setLinkEditError("");
+  };
+
+  const cancelEditingLink = () => {
+    setEditingLinkId(null);
+    setLinkEditError("");
+    setIsUpdatingLink(false);
+  };
+
+  const handleSaveEditedLink = async () => {
+    if (!editingLinkId) return;
+
+    const trimmedTitle = editingLink.title.trim();
+    const trimmedUrl = editingLink.url.trim();
+    if (!trimmedTitle || !trimmedUrl) {
+      setLinkEditError("Title and URL are required.");
+      return;
+    }
+
+    setLinkEditError("");
+    setIsUpdatingLink(true);
+    try {
+      await updateLink({
+        linkId: editingLinkId,
+        title: trimmedTitle,
+        url: trimmedUrl,
+        linkType: editingLink.linkType,
+      });
+      setEditingLinkId(null);
+    } catch (err) {
+      console.error("Failed to update link:", err);
+      setLinkEditError("Failed to update link. Please try again.");
+    } finally {
+      setIsUpdatingLink(false);
     }
   };
 
@@ -246,33 +306,124 @@ export function StudentProjectCard({
                     {student.links.map((link) => (
                       <div
                         key={link._id}
-                        className="flex items-center gap-3 p-2 bg-muted/50 rounded-lg group"
+                        className="space-y-2 p-2 bg-muted/50 rounded-lg"
                       >
-                        <span className="text-lg">{linkTypeIcons[link.linkType]}</span>
-                        <div className="flex-1 min-w-0">
-                          <p className="font-medium text-sm truncate">
-                            {link.title}
-                          </p>
-                          <a
-                            href={link.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-xs text-primary hover:underline flex items-center gap-1"
-                            onClick={(e) => e.stopPropagation()}
-                          >
-                            {link.url.slice(0, 50)}
-                            {link.url.length > 50 && "..."}
-                            <ExternalLink className="h-3 w-3" />
-                          </a>
-                        </div>
-                        <Button
-                          variant="ghost"
-                          size="icon"
-                          className="opacity-0 group-hover:opacity-100 transition-opacity h-8 w-8"
-                          onClick={() => handleRemoveLink(link._id)}
-                        >
-                          <Trash2 className="h-4 w-4 text-destructive" />
-                        </Button>
+                        {editingLinkId === link._id ? (
+                          <>
+                            <div className="grid gap-2">
+                              <Input
+                                aria-label="Edit link title"
+                                placeholder="Link title"
+                                value={editingLink.title}
+                                onChange={(e) =>
+                                  setEditingLink((prev) => ({
+                                    ...prev,
+                                    title: e.target.value,
+                                  }))
+                                }
+                              />
+                              <Input
+                                aria-label="Edit link URL"
+                                placeholder="URL (https://...)"
+                                value={editingLink.url}
+                                onChange={(e) =>
+                                  setEditingLink((prev) => ({
+                                    ...prev,
+                                    url: e.target.value,
+                                  }))
+                                }
+                              />
+                              <Select
+                                value={editingLink.linkType}
+                                onValueChange={(value) =>
+                                  setEditingLink((prev) => ({
+                                    ...prev,
+                                    linkType: value as LinkType,
+                                  }))
+                                }
+                              >
+                                <SelectTrigger>
+                                  <SelectValue />
+                                </SelectTrigger>
+                                <SelectContent>
+                                  <SelectItem value="presentation">
+                                    📊 Presentation
+                                  </SelectItem>
+                                  <SelectItem value="document">
+                                    📄 Document
+                                  </SelectItem>
+                                  <SelectItem value="video">🎬 Video</SelectItem>
+                                  <SelectItem value="other">🔗 Other</SelectItem>
+                                </SelectContent>
+                              </Select>
+                            </div>
+                            {linkEditError && (
+                              <p className="text-xs text-destructive">{linkEditError}</p>
+                            )}
+                            <div className="flex items-center gap-2">
+                              <Button
+                                size="sm"
+                                onClick={handleSaveEditedLink}
+                                disabled={isUpdatingLink}
+                              >
+                                {isUpdatingLink && (
+                                  <Loader2 className="mr-2 h-3 w-3 animate-spin" />
+                                )}
+                                Save
+                              </Button>
+                              <Button
+                                size="sm"
+                                variant="ghost"
+                                onClick={cancelEditingLink}
+                                disabled={isUpdatingLink}
+                              >
+                                Cancel
+                              </Button>
+                            </div>
+                          </>
+                        ) : (
+                          <div className="flex items-center gap-3 group">
+                            <span className="text-lg">
+                              {linkTypeIcons[link.linkType]}
+                            </span>
+                            <div className="flex-1 min-w-0">
+                              <p className="font-medium text-sm truncate">
+                                {link.title}
+                              </p>
+                              <a
+                                href={link.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-xs text-primary hover:underline flex items-center gap-1"
+                                onClick={(e) => e.stopPropagation()}
+                              >
+                                {link.url.slice(0, 50)}
+                                {link.url.length > 50 && "..."}
+                                <ExternalLink className="h-3 w-3" />
+                              </a>
+                            </div>
+                            <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                              <Button
+                                variant="ghost"
+                                size="icon"
+                                className="h-8 w-8"
+                                onClick={() => startEditingLink(link)}
+                                aria-label="Edit link"
+                              >
+                                <Pencil className="h-4 w-4" />
+                              </Button>
+                              <Button
+                                variant="ghost"
+                                size="icon"
+                                className="h-8 w-8"
+                                onClick={() => handleRemoveLink(link._id)}
+                                aria-label="Delete link"
+                              >
+                                <Trash2 className="h-4 w-4 text-destructive" />
+                              </Button>
+                            </div>
+                          </div>
+                        )}
                       </div>
                     ))}
                   </div>

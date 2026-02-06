@@ -88,6 +88,11 @@ Key rules:
 - Project data AI (`src/components/projects/ProjectDataChat.tsx`)
   - Why: Reduce admin data entry by extracting links/reflections from chat.
   - Uses `api.ai.projectDataChat` action and expects a `project-data` JSON block.
+  - Companion manual workflow lives in `src/components/projects/StudentProjectCard.tsx` (inline add/edit/delete links + reflection edits).
+
+- Profile settings (`src/pages/student/SettingsPage.tsx`, `src/pages/admin/SettingsPage.tsx`)
+  - Why: Let users manage their own account photo without admin intervention.
+  - Uses `api.auth.updateOwnProfile` to persist `users.avatarUrl` (URL-based images, including GIF links).
 
 - Trust Jar (`src/components/trustjar/TrustJar.tsx`)
   - Why: Visual, physics-based shared reward mechanism.

@@ -1,6 +1,6 @@
 # AI System Documentation
 
-**Last Updated:** 2026-01-30
+**Last Updated:** 2026-02-06
 
 Guide for understanding and modifying the AI features. For the technical codemap (internal functions, prompt builders), see [CODEMAPS/ai-system.md](./CODEMAPS/ai-system.md).
 
@@ -137,8 +137,17 @@ Edit `PERSONALITY_PROMPTS` object in `convex/ai.ts`. Each entry defines:
 ### How It Works
 
 1. Admin tells AI about student work in natural language
-2. AI extracts: student names, links, reflections
-3. Outputs structured JSON for database
+2. The component sends a dedicated conversation history (`user`/`assistant` turns only) so repeated turns in one chat session stay stable
+3. AI extracts: student names, links, reflections
+4. Outputs structured JSON for database
+
+### Frontend Safeguards
+
+- `ProjectDataChat.tsx` passes the real project name from `ProjectDetailPage.tsx` to `api.ai.projectDataChat`
+- Structured parsing is defensive:
+  - If `project-data` JSON is valid, the UI shows a save preview panel
+  - If JSON is malformed, the chat still renders the assistant text and continues normally
+- Save/discard confirmation copy shown in the UI is intentionally not sent back to the model as context
 
 ### Output Format
 

@@ -1,6 +1,6 @@
 # Data Model and Contracts
 
-**Last Updated:** 2026-01-30
+**Last Updated:** 2026-02-06
 
 ## Source of truth
 - Schema: `convex/schema.ts` defines 26 tables and indexes.
@@ -37,7 +37,7 @@
 | `passwordHash` | `string` | Hashed password |
 | `role` | `"student" | "admin"` | Role gating |
 | `displayName` | `string` | Display name |
-| `avatarUrl` | `string?` | Optional avatar |
+| `avatarUrl` | `string?` | Optional external image URL (supports GIF URLs) |
 | `batch` | `string?` | Student cohort (e.g. "2156") |
 | `createdAt` | `number` | Unix ms timestamp |
 | `lastLoginAt` | `number?` | Unix ms timestamp |

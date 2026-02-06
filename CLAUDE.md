@@ -6,7 +6,8 @@ This project has **two separate databases**:
 - **Dev**: `ardent-penguin-515` (used by `npx convex dev` and local development)
 - **Prod**: `greedy-marten-449` (used by `npx convex deploy`)
 
-The frontend uses the **dev database** (see `VITE_CONVEX_URL` in `.env.local`).
+- **Local dev** uses the dev database (see `VITE_CONVEX_URL` in `.env.local`)
+- **Students (deployed app)** use the **prod database** (see `.env.production`)
 
 When running Convex mutations:
 - `npx convex run <function>` → runs on **dev**

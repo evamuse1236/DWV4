@@ -40,6 +40,7 @@ interface ExtractedData {
 
 interface ProjectDataChatProps {
   projectId: Id<"projects">;
+  projectName: string;
   students: StudentData[];
   onClose: () => void;
 }
@@ -55,6 +56,39 @@ function createMessage(role: "user" | "assistant", content: string): Message {
 const INITIAL_GREETING = `Hi! I'm here to help you enter project data quickly. You can tell me about student work in natural language - like "John's presentation is at [link], he did great research on solar panels."
 
 I'll extract the data and confirm before saving. Ready when you are!`;
+
+type ChatHistoryTurn = {
+  role: "user" | "assistant";
+  content: string;
+};
+
+function parseProjectDataResponse(content: string): {
+  assistantText: string;
+  extractedData: ExtractedData | null;
+} {
+  const dataMatch = content.match(/```project-data\s*([\s\S]*?)```/);
+  if (!dataMatch) {
+    return {
+      assistantText: content.trim(),
+      extractedData: null,
+    };
+  }
+
+  try {
+    const parsed = JSON.parse(dataMatch[1].trim()) as ExtractedData;
+    const textBeforeJson = content.slice(0, dataMatch.index).trim();
+    return {
+      assistantText:
+        textBeforeJson || "I found the following data. Want me to save it?",
+      extractedData: parsed,
+    };
+  } catch {
+    return {
+      assistantText: content.trim(),
+      extractedData: null,
+    };
+  }
+}
 
 function TypingIndicator() {
   return (
@@ -81,10 +115,12 @@ function TypingIndicator() {
 
 export function ProjectDataChat({
   projectId,
+  projectName,
   students,
   onClose,
 }: ProjectDataChatProps) {
   const [messages, setMessages] = useState<Message[]>([]);
+  const [chatHistory, setChatHistory] = useState<ChatHistoryTurn[]>([]);
   const [inputValue, setInputValue] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -123,7 +159,13 @@ export function ProjectDataChat({
     if (!trimmedInput || isLoading) return;
 
     const userMessage = createMessage("user", trimmedInput);
+    const nextHistory: ChatHistoryTurn[] = [
+      ...chatHistory,
+      { role: "user", content: trimmedInput },
+    ];
+
     setMessages((prev) => [...prev, userMessage]);
+    setChatHistory(nextHistory);
     setInputValue("");
     setIsLoading(true);
     setError(null);
@@ -131,15 +173,9 @@ export function ProjectDataChat({
     setSaveSuccess(false);
 
     try {
-      // Convert to API format (exclude initial greeting)
-      const apiMessages = messages
-        .filter((m) => m.id !== "initial")
-        .concat(userMessage)
-        .map((m) => ({ role: m.role, content: m.content }));
-
       const response = await chatAction({
-        messages: apiMessages,
-        projectName: "Current Project", // Could be passed as prop if needed
+        messages: nextHistory,
+        projectName,
         students: students.map((s) => ({
           id: s._id,
           name: s.displayName,
@@ -147,45 +183,29 @@ export function ProjectDataChat({
         })),
       });
 
-      // Check if AI returned structured data
-      const dataMatch = response.content.match(/```project-data\n([\s\S]*?)\n```/);
+      const { assistantText, extractedData } = parseProjectDataResponse(
+        response.content
+      );
+      const assistantMessage =
+        assistantText || "I had trouble understanding that. Could you rephrase?";
 
-      if (dataMatch) {
-        try {
-          const parsed = JSON.parse(dataMatch[1]) as ExtractedData;
-          setPendingData(parsed);
-
-          // Show the message text (before the JSON block)
-          const textBeforeJson = response.content.split("```project-data")[0].trim();
-          const displayContent =
-            textBeforeJson || "I found the following data. Want me to save it?";
-          setMessages((prev) => [
-            ...prev,
-            createMessage("assistant", displayContent),
-          ]);
-        } catch {
-          // JSON parse failed, show full response
-          setMessages((prev) => [
-            ...prev,
-            createMessage("assistant", response.content),
-          ]);
-        }
-      } else {
-        // Regular chat response
-        setMessages((prev) => [
-          ...prev,
-          createMessage("assistant", response.content),
-        ]);
-      }
+      setPendingData(extractedData);
+      setMessages((prev) => [...prev, createMessage("assistant", assistantMessage)]);
+      setChatHistory((prev) => [
+        ...prev,
+        { role: "assistant", content: assistantMessage },
+      ]);
     } catch (err) {
       console.error("Chat error:", err);
       setError("Something went wrong. Please try again.");
+      const fallbackMessage = "I had trouble processing that. Could you try again?";
       setMessages((prev) => [
         ...prev,
-        createMessage(
-          "assistant",
-          "I had trouble processing that. Could you try again?"
-        ),
+        createMessage("assistant", fallbackMessage),
+      ]);
+      setChatHistory((prev) => [
+        ...prev,
+        { role: "assistant", content: fallbackMessage },
       ]);
     } finally {
       setIsLoading(false);

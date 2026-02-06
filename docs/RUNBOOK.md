@@ -1,6 +1,6 @@
 # Runbook -- Deep Work Tracker
 
-**Last Updated:** 2026-01-30
+**Last Updated:** 2026-02-06
 
 ## Environments
 
@@ -271,6 +271,7 @@ The Netlify dashboard shows:
 |----------|-------------|
 | `CONVEX_DEPLOYMENT` | Convex deployment slug (dev only, used by `npx convex dev`) |
 | `VITE_CONVEX_URL` | Convex cloud URL the frontend connects to |
+| `VITE_CONVEX_SITE_URL` | Convex HTTP actions endpoint (dev only) |
 
 ### Convex (set in Convex dashboard, not in files)
 

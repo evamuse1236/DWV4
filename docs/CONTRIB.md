@@ -1,6 +1,6 @@
 # Contributing to Deep Work Tracker
 
-**Last Updated:** 2026-01-30
+**Last Updated:** 2026-02-06
 
 ## Prerequisites
 

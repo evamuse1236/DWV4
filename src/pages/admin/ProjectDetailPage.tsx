@@ -321,6 +321,7 @@ export function ProjectDetailPage() {
       {isChatOpen && projectId && (
         <ProjectDataChat
           projectId={projectId as Id<"projects">}
+          projectName={project.name}
           students={studentsWithData}
           onClose={() => setIsChatOpen(false)}
         />

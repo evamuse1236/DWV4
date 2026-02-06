@@ -49,6 +49,7 @@ import {
   FolderKanban,
   Search,
   ListChecks,
+  Settings,
 } from "lucide-react";
 
 // Admin navigation items
@@ -63,6 +64,7 @@ const adminNavItems = [
   { path: "/admin/presentations", label: "Presentations", icon: Mic },
   { path: "/admin/books", label: "Books", icon: BookOpen },
   { path: "/admin/trust-jar", label: "Trust Jar", icon: Cookie },
+  { path: "/admin/settings", label: "Settings", icon: Settings },
 ];
 
 /**

@@ -13,6 +13,13 @@
 - Vision Board: rename areas (name + emoji) via pencil icon on hover in the FAB menu
 - Vision Board: delete areas with two-step confirmation showing card count; cascade-deletes all cards in the area
 - Active filter resets to "All Goals" when the currently-filtered area is deleted
+- Profile settings: students and admins can set or clear their own avatar via image URL (including GIF URLs)
+- Project detail: admin link rows now support inline edit (title, URL, link type) with save/cancel flow
+- Settings page: students can change their own username, password, and avatar
+- Admin settings: credential dashboard with ability to edit any user's username or reset their password
+- Sidebar now shows @username with display name below instead of display name with role
 
 ### Fixed
 - DeepWork page background color mismatch with sidebar — removed page-specific watercolor blobs that created a visible yellowish rectangle not extending into the sidebar; the body's ambient blobs now provide a seamless atmosphere across all pages
+- Project AI data-entry chat now preserves turn history across consecutive messages in the same session
+- Project AI chat now safely handles malformed `project-data` JSON blocks without breaking the chat flow

@@ -1,6 +1,6 @@
 # AI System Codemap
 
-**Last Updated:** 2026-01-30
+**Last Updated:** 2026-02-06
 **Backend File:** `convex/ai.ts`
 **Frontend Components:** `GoalChatPalette.tsx`, `BookBuddy.tsx`, `ProjectDataChat.tsx`
 
@@ -101,6 +101,12 @@ Stage 2: JSON formatting (Llama 8B, temp 0.1)
 - Admin describes student work in natural language
 - AI extracts structured data: links, reflections, student IDs
 - Returns `` ```project-data `` JSON block
+
+**Frontend state behavior (important):**
+- API requests use a dedicated chat history state, not raw rendered message state
+- History includes only user/assistant turns sent to the model
+- UI-only confirmation messages (save/discard) are excluded from model context
+- Malformed `project-data` JSON is handled safely by falling back to plain assistant text
 
 ### 4. Test Chat (`api.ai.testChat`)
 
