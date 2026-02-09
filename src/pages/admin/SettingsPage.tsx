@@ -35,7 +35,13 @@ type CredentialUser = {
   lastLoginAt?: number;
 };
 
-function isValidHttpUrl(value: string): boolean {
+const BASE64_DATA_IMAGE_PATTERN = /^data:image\/[a-zA-Z0-9.+-]+;base64,[a-zA-Z0-9+/=_-]+$/;
+
+function isValidAvatarUrl(value: string): boolean {
+  if (BASE64_DATA_IMAGE_PATTERN.test(value)) {
+    return true;
+  }
+
   try {
     const url = new URL(value);
     return url.protocol === "http:" || url.protocol === "https:";
@@ -106,8 +112,8 @@ export function AdminSettingsPage() {
     }
 
     const normalizedAvatarUrl = rawAvatarUrl.trim();
-    if (normalizedAvatarUrl && !isValidHttpUrl(normalizedAvatarUrl)) {
-      setAvatarError("Enter a valid image URL starting with http:// or https://");
+    if (normalizedAvatarUrl && !isValidAvatarUrl(normalizedAvatarUrl)) {
+      setAvatarError("Enter a valid image URL starting with http://, https://, or data:image/");
       return;
     }
 
@@ -369,7 +375,7 @@ export function AdminSettingsPage() {
                 </AvatarFallback>
               </Avatar>
               <p className="text-sm text-muted-foreground">
-                Use a direct image URL, including GIF links.
+                Use a direct URL or <code>data:image/...;base64,...</code>.
               </p>
             </div>
             <Input

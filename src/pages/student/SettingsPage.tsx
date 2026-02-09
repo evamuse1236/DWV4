@@ -4,7 +4,13 @@ import { api } from "../../../convex/_generated/api";
 import { useAuth, useSessionToken } from "../../hooks/useAuth";
 import { Button, Card, CardContent, CardHeader, Input } from "../../components/paper";
 
-function isValidHttpUrl(value: string): boolean {
+const BASE64_DATA_IMAGE_PATTERN = /^data:image\/[a-zA-Z0-9.+-]+;base64,[a-zA-Z0-9+/=_-]+$/;
+
+function isValidAvatarUrl(value: string): boolean {
+  if (BASE64_DATA_IMAGE_PATTERN.test(value)) {
+    return true;
+  }
+
   try {
     const url = new URL(value);
     return url.protocol === "http:" || url.protocol === "https:";
@@ -53,8 +59,8 @@ export function SettingsPage() {
     }
 
     const normalizedAvatarUrl = rawAvatarUrl.trim();
-    if (normalizedAvatarUrl && !isValidHttpUrl(normalizedAvatarUrl)) {
-      setAvatarError("Enter a valid image URL starting with http:// or https://");
+    if (normalizedAvatarUrl && !isValidAvatarUrl(normalizedAvatarUrl)) {
+      setAvatarError("Enter a valid image URL starting with http://, https://, or data:image/");
       return;
     }
 
@@ -195,7 +201,7 @@ export function SettingsPage() {
       <Card variant="outlined" padding="lg">
         <CardHeader
           title="Profile Photo"
-          subtitle="Paste an image URL. GIF URLs are supported."
+          subtitle="Paste an image URL. GIF and data:image URLs are supported."
         />
         <CardContent className="space-y-4">
           {avatarError && (
@@ -222,7 +228,7 @@ export function SettingsPage() {
               )}
             </div>
             <p className="text-sm text-gray-600">
-              Use a direct image URL like <code>https://.../profile.gif</code>.
+              Use <code>https://.../profile.gif</code> or <code>data:image/...;base64,...</code>.
             </p>
           </div>
 

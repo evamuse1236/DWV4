@@ -75,4 +75,22 @@ describe("AdminSettingsPage avatar URL", () => {
       });
     });
   });
+
+  it("saves a base64 data image URL for the current admin profile", async () => {
+    const user = userEvent.setup();
+    render(<AdminSettingsPage />);
+
+    const dataUrl = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQ";
+    const avatarInput = screen.getByPlaceholderText("https://example.com/profile.gif");
+    await user.clear(avatarInput);
+    await user.type(avatarInput, dataUrl);
+    await user.click(screen.getByRole("button", { name: "Save Photo" }));
+
+    await waitFor(() => {
+      expect(mockUpdateOwnProfile).toHaveBeenCalledWith({
+        token: "admin_token_123",
+        avatarUrl: dataUrl,
+      });
+    });
+  });
 });

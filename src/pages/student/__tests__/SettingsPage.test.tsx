@@ -66,6 +66,24 @@ describe("Student Settings avatar URL", () => {
     });
   });
 
+  it("saves a base64 data image URL via updateOwnProfile", async () => {
+    const user = userEvent.setup();
+    render(<SettingsPage />);
+
+    const dataUrl = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA";
+    const avatarInput = screen.getByLabelText("Avatar URL");
+    await user.clear(avatarInput);
+    await user.type(avatarInput, dataUrl);
+    await user.click(screen.getByRole("button", { name: "Save Photo" }));
+
+    await waitFor(() => {
+      expect(mockUpdateOwnProfile).toHaveBeenCalledWith({
+        token: "token_123",
+        avatarUrl: dataUrl,
+      });
+    });
+  });
+
   it("clears avatar URL via updateOwnProfile", async () => {
     const user = userEvent.setup();
     mockUpdateOwnProfile.mockResolvedValueOnce({ success: true, avatarUrl: undefined });
