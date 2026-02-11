@@ -62,8 +62,21 @@ function rewriteWarmMisconception(raw) {
     text = text.replaceAll(from, to);
   }
 
+  const cleanupFixes = [
+    ["you you're", "you're"],
+    ["for check the", "to check the"],
+    ['"base times base.".', '"base times base."'],
+  ];
+  for (const [from, to] of cleanupFixes) {
+    text = text.replaceAll(from, to);
+  }
+
   text = normalizeText(text);
   if (!text) return text;
+
+  if (/^you['’]re\b/i.test(text)) {
+    return text;
+  }
 
   if (/^you\b/i.test(text)) {
     const rest = text.replace(/^you\s+/i, "");
