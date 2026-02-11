@@ -13,7 +13,7 @@ import { MemoryRouter } from "react-router-dom";
 // Mock the useAuth hook before importing the component
 vi.mock("@/hooks/useAuth", () => ({
   useAuth: vi.fn(() => ({
-    user: { role: "student", displayName: "Test Student" },
+    user: { role: "student", displayName: "Test Student", username: "test.student" },
     logout: vi.fn(),
   })),
 }));
@@ -45,7 +45,7 @@ describe("Sidebar", () => {
     beforeEach(() => {
       // Set up student user for these tests
       mockUseAuth.mockReturnValue({
-        user: { role: "student", displayName: "Test Student" },
+        user: { role: "student", displayName: "Test Student", username: "test.student" },
         logout: vi.fn(),
       });
     });
@@ -61,6 +61,7 @@ describe("Sidebar", () => {
       expect(within(nav).getByText("Sprint")).toBeInTheDocument();
       expect(within(nav).getByText("DeepWork")).toBeInTheDocument();
       expect(within(nav).getByText("Library")).toBeInTheDocument();
+      expect(within(nav).queryByText("Character")).not.toBeInTheDocument();
       expect(within(nav).getByText("Trust Jar")).toBeInTheDocument();
     });
 
@@ -77,11 +78,11 @@ describe("Sidebar", () => {
       expect(screen.queryByText("Norms")).not.toBeInTheDocument();
     });
 
-    it("displays student username and role", () => {
+    it("displays student username and display name", () => {
       renderWithRouter(<Sidebar />, { route: "/dashboard" });
 
       expect(screen.getByText("Test Student")).toBeInTheDocument();
-      expect(screen.getByText("student")).toBeInTheDocument();
+      expect(screen.getByText("@test.student")).toBeInTheDocument();
     });
 
     it("displays avatar with first letter of display name", () => {
@@ -96,7 +97,7 @@ describe("Sidebar", () => {
     beforeEach(() => {
       // Set up admin user for these tests
       mockUseAuth.mockReturnValue({
-        user: { role: "admin", displayName: "Admin User" },
+        user: { role: "admin", displayName: "Admin User", username: "admin.user" },
         logout: vi.fn(),
       });
     });
@@ -130,11 +131,11 @@ describe("Sidebar", () => {
       expect(within(nav).queryByText("Library")).not.toBeInTheDocument();
     });
 
-    it("displays admin username and role", () => {
+    it("displays admin username and display name", () => {
       renderWithRouter(<Sidebar />, { route: "/admin" });
 
       expect(screen.getByText("Admin User")).toBeInTheDocument();
-      expect(screen.getByText("admin")).toBeInTheDocument();
+      expect(screen.getByText("@admin.user")).toBeInTheDocument();
     });
   });
 

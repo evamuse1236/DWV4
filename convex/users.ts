@@ -197,6 +197,47 @@ export const remove = mutation({
       await ctx.db.delete(habit._id);
     }
 
+    // Delete associated character data
+    const characterProfile = await ctx.db
+      .query("characterProfiles")
+      .withIndex("by_user", (q: any) => q.eq("userId", args.userId))
+      .first();
+    if (characterProfile) {
+      await ctx.db.delete(characterProfile._id);
+    }
+
+    const characterDomainStats = await ctx.db
+      .query("characterDomainStats")
+      .withIndex("by_user", (q: any) => q.eq("userId", args.userId))
+      .collect();
+    for (const stat of characterDomainStats) {
+      await ctx.db.delete(stat._id);
+    }
+
+    const xpLedgerRows = await ctx.db
+      .query("characterXpLedger")
+      .withIndex("by_user_awardedAt", (q: any) => q.eq("userId", args.userId))
+      .collect();
+    for (const row of xpLedgerRows) {
+      await ctx.db.delete(row._id);
+    }
+
+    const tarotUnlocks = await ctx.db
+      .query("studentTarotUnlocks")
+      .withIndex("by_user", (q: any) => q.eq("userId", args.userId))
+      .collect();
+    for (const unlock of tarotUnlocks) {
+      await ctx.db.delete(unlock._id);
+    }
+
+    const studentBadges = await ctx.db
+      .query("studentBadges")
+      .withIndex("by_user", (q: any) => q.eq("userId", args.userId))
+      .collect();
+    for (const badge of studentBadges) {
+      await ctx.db.delete(badge._id);
+    }
+
     // Finally delete the user
     await ctx.db.delete(args.userId);
 

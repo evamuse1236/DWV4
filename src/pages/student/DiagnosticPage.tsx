@@ -1,35 +1,24 @@
 import { useEffect, useMemo, useState } from "react";
-import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "../../../convex/_generated/api";
 import { useAuth } from "../../hooks/useAuth";
 import {
   extractImageSrc,
   findDiagnosticGroup,
-  getSetForAttempt,
   loadDiagnosticData,
-  loadDiagnosticSets,
-  resolveSetQuestions,
-  shuffleInPlace,
+  selectDeterministicQuestions,
   type DiagnosticQuestion,
-  type DiagnosticSet,
 } from "../../lib/diagnostic";
+import { MathText } from "@/components/math/MathText";
 
 type AttemptType = "practice" | "mastery";
-
-function useAttemptTypeFromUrl(): AttemptType {
-  const location = useLocation();
-  return useMemo(() => {
-    const type = new URLSearchParams(location.search).get("type");
-    return type === "mastery" ? "mastery" : "practice";
-  }, [location.search]);
-}
 
 export function DiagnosticPage() {
   const { user } = useAuth();
   const { majorObjectiveId } = useParams<{ majorObjectiveId: string }>();
   const navigate = useNavigate();
-  const attemptType = useAttemptTypeFromUrl();
+  const attemptType: AttemptType = "mastery";
 
   const requestUnlock = useMutation(api.diagnostics.requestUnlock);
   const submitAttempt = useMutation(api.diagnostics.submitAttempt);
@@ -56,7 +45,6 @@ export function DiagnosticPage() {
 
   const [dataLoadingError, setDataLoadingError] = useState<string | null>(null);
   const [modules, setModules] = useState<any[] | null>(null);
-  const [diagnosticSets, setDiagnosticSets] = useState<DiagnosticSet[] | null>(null);
 
   // Quiz state
   const [startedAt, setStartedAt] = useState<number | null>(null);
@@ -75,6 +63,7 @@ export function DiagnosticPage() {
       misconception: string;
       explanation: string;
       visualHtml?: string;
+      stem?: string;
     }>
   >([]);
 
@@ -83,30 +72,65 @@ export function DiagnosticPage() {
   const [completedDurationMs, setCompletedDurationMs] = useState<number | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
+  const [unlockActionError, setUnlockActionError] = useState<string | null>(null);
 
   const group = useMemo(() => {
     if (!modules || !majorMeta) return null;
     return findDiagnosticGroup(modules as any, majorMeta.section, majorMeta.moduleIndex);
   }, [modules, majorMeta]);
 
+  const passThresholdPercent = unlockState?.policy?.passThresholdPercent ?? 90;
+  const passThresholdScore = questions
+    ? Math.ceil((questions.length * passThresholdPercent) / 100)
+    : 0;
+
+  const majorStatus = unlockState?.majorAssignment?.status;
   const hasActiveUnlock = Boolean(unlockState?.activeUnlock);
+  const hasPendingUnlockRequest = Boolean(unlockState?.pendingRequest);
+  const latestAttemptFailed = unlockState?.latestAttempt?.passed === false;
+  const requiresVivaRequest =
+    unlockState?.policy?.requiresVivaRequest ??
+    Boolean(latestAttemptFailed && majorStatus !== "viva_requested");
+  const requiresUnlock =
+    unlockState?.policy?.requiresUnlock ??
+    Boolean(latestAttemptFailed && majorStatus === "viva_requested" && !hasActiveUnlock);
+  const canStartNow =
+    unlockState?.policy?.canStart ??
+    Boolean(!latestAttemptFailed || (majorStatus === "viva_requested" && hasActiveUnlock));
 
   useEffect(() => {
     setDataLoadingError(null);
     setModules(null);
-    setDiagnosticSets(null);
 
-    Promise.all([loadDiagnosticData(), loadDiagnosticSets()])
-      .then(([data, sets]) => {
+    loadDiagnosticData()
+      .then((data) => {
         setModules(data);
-        setDiagnosticSets(sets);
       })
       .catch((err: any) => setDataLoadingError(err?.message || "Failed to load diagnostic data"));
   }, []);
 
   const handleRequestUnlock = async () => {
     if (!user || !majorObjectiveId) return;
-    await requestUnlock({ userId: user._id as any, majorObjectiveId: majorObjectiveId as any });
+    try {
+      setUnlockActionError(null);
+      await requestUnlock({ userId: user._id as any, majorObjectiveId: majorObjectiveId as any });
+    } catch (err: any) {
+      setUnlockActionError(err?.message || "Failed to request unlock");
+    }
+  };
+
+  const handleRequestViva = async () => {
+    const studentMajorObjectiveId = unlockState?.majorAssignment?.studentMajorObjectiveId;
+    if (!studentMajorObjectiveId) {
+      setSubmitError("Could not find the module assignment for viva request.");
+      return;
+    }
+
+    await updateMajorStatus({
+      studentMajorObjectiveId: studentMajorObjectiveId as any,
+      status: "viva_requested",
+    });
+    navigate("/deep-work");
   };
 
   const resetQuiz = () => {
@@ -125,28 +149,15 @@ export function DiagnosticPage() {
   };
 
   const handleStartQuiz = () => {
-    if (!user || !majorObjectiveId || !group || !majorMeta) return;
+    if (!user || !majorObjectiveId || !group) return;
 
     const attemptCount = attemptCountResult?.count ?? 0;
-    const prefix = majorMeta.section === "pyp"
-      ? `PYP ${majorMeta.moduleIndex}:`
-      : `Module ${majorMeta.moduleIndex}:`;
-
-    let selected: DiagnosticQuestion[];
-
-    // Try pre-built set first, fall back to random selection
-    const set = diagnosticSets
-      ? getSetForAttempt(diagnosticSets, prefix, attemptCount)
-      : null;
-
-    if (set) {
-      selected = resolveSetQuestions(set, group.questionPool);
-    } else {
-      // Fallback: pick 30 random from pool
-      const pool = group.questionPool.slice();
-      shuffleInPlace(pool);
-      selected = pool.slice(0, 30);
-    }
+    const targetCount = Math.max(1, Math.min(30, group.questionPool.length));
+    const selected = selectDeterministicQuestions({
+      questionPool: group.questionPool,
+      count: targetCount,
+      seed: `${user._id}:${majorObjectiveId}:${attemptCount}`,
+    });
 
     setStartedAt(Date.now());
     setQuestions(selected);
@@ -158,6 +169,7 @@ export function DiagnosticPage() {
     setCompletedAttemptId(null);
     setCompletedPassed(null);
     setSubmitError(null);
+    setUnlockActionError(null);
   };
 
   const currentQuestion = questions?.[qIndex] ?? null;
@@ -192,6 +204,7 @@ export function DiagnosticPage() {
         misconception,
         explanation,
         visualHtml: currentQuestion.visual_html || undefined,
+        stem: currentQuestion.stem || undefined,
       },
     ]);
   };
@@ -220,7 +233,7 @@ export function DiagnosticPage() {
         diagnosticModuleIds: group.moduleIds,
         questionCount: questions.length,
         score,
-        passed: score === questions.length,
+        passed: score >= passThresholdScore,
         startedAt,
         durationMs,
         results,
@@ -234,16 +247,6 @@ export function DiagnosticPage() {
     } finally {
       setIsSubmitting(false);
     }
-  };
-
-  const handleRequestViva = async () => {
-    const studentMajorObjectiveId = unlockState?.majorAssignment?.studentMajorObjectiveId;
-    if (!studentMajorObjectiveId) return;
-    await updateMajorStatus({
-      studentMajorObjectiveId: studentMajorObjectiveId as any,
-      status: "viva_requested",
-    });
-    navigate("/deep-work");
   };
 
   if (!majorObjectiveId) {
@@ -281,9 +284,7 @@ export function DiagnosticPage() {
     return (
       <div className="p-6">
         <h1 className="text-2xl font-serif font-semibold mb-2">{title}</h1>
-        <p className="text-muted-foreground">
-          No diagnostic mapping found for this objective.
-        </p>
+        <p className="text-muted-foreground">No diagnostic mapping found for this objective.</p>
         <button
           type="button"
           className="mt-4 px-4 py-2 rounded bg-black text-white"
@@ -299,9 +300,7 @@ export function DiagnosticPage() {
     return (
       <div className="p-6">
         <h1 className="text-2xl font-serif font-semibold mb-2">{title}</h1>
-        <p className="text-muted-foreground">
-          Could not find the diagnostic question pool for this module.
-        </p>
+        <p className="text-muted-foreground">Could not find the diagnostic question pool for this module.</p>
         <button
           type="button"
           className="mt-4 px-4 py-2 rounded bg-black text-white"
@@ -313,9 +312,8 @@ export function DiagnosticPage() {
     );
   }
 
-  // Unlock gate
-  if (!hasActiveUnlock && !questions && completedPassed === null) {
-    const pending = Boolean(unlockState?.pendingRequest);
+  // Pre-start gate
+  if (!questions && completedPassed === null && !canStartNow) {
     return (
       <div className="p-6 max-w-2xl mx-auto">
         <button
@@ -327,24 +325,45 @@ export function DiagnosticPage() {
         </button>
 
         <h1 className="text-2xl font-serif font-semibold mt-4">{title}</h1>
-        <p className="text-muted-foreground mt-2">
-          Diagnostics require coach approval. Request an unlock to begin.
-        </p>
+        <p className="text-muted-foreground mt-2">{group.moduleName}</p>
 
-        <div className="mt-6 flex items-center gap-3">
-          <button
-            type="button"
-            className="px-4 py-2 rounded bg-black text-white disabled:opacity-50"
-            onClick={handleRequestUnlock}
-            disabled={pending}
-          >
-            {pending ? "Requested" : "Request Diagnostic"}
-          </button>
-          {pending && (
-            <span className="text-sm text-muted-foreground">
-              Waiting for coach approval (valid for 24h once approved).
-            </span>
+        <div className="mt-6 p-4 rounded border bg-white/70 space-y-3">
+          {requiresVivaRequest && (
+            <>
+              <p className="text-sm text-muted-foreground">
+                You must request viva after a failed attempt before retakes can be unlocked.
+              </p>
+              <button
+                type="button"
+                className="px-4 py-2 rounded bg-black text-white"
+                onClick={handleRequestViva}
+                disabled={!unlockState?.majorAssignment?.studentMajorObjectiveId}
+              >
+                Request Viva
+              </button>
+            </>
           )}
+
+          {!requiresVivaRequest && requiresUnlock && (
+            <>
+              <p className="text-sm text-muted-foreground">
+                Retakes require coach unlock (24h, 1 attempt by default).
+              </p>
+              <button
+                type="button"
+                className="px-4 py-2 rounded bg-black text-white disabled:opacity-50"
+                onClick={handleRequestUnlock}
+                disabled={hasPendingUnlockRequest}
+              >
+                {hasPendingUnlockRequest ? "Diagnostic Requested" : "Request Diagnostic"}
+              </button>
+              {hasPendingUnlockRequest && (
+                <p className="text-xs text-muted-foreground">Waiting for coach approval.</p>
+              )}
+            </>
+          )}
+
+          {unlockActionError && <p className="text-sm text-destructive">{unlockActionError}</p>}
         </div>
       </div>
     );
@@ -354,6 +373,9 @@ export function DiagnosticPage() {
   if (!questions && completedPassed === null) {
     const expiresAt = unlockState?.activeUnlock?.expiresAt;
     const attemptsRemaining = unlockState?.activeUnlock?.attemptsRemaining;
+    const quizLength = Math.max(1, Math.min(30, group.questionPool.length));
+    const neededToPass = Math.ceil((quizLength * passThresholdPercent) / 100);
+
     return (
       <div className="p-6 max-w-2xl mx-auto">
         <button
@@ -365,20 +387,14 @@ export function DiagnosticPage() {
         </button>
 
         <h1 className="text-2xl font-serif font-semibold mt-4">{title}</h1>
-        <p className="text-muted-foreground mt-2">
-          {group.moduleName} • {attemptType === "mastery" ? "Mastery attempt" : "Practice attempt"}
-        </p>
+        <p className="text-muted-foreground mt-2">{group.moduleName} • Mastery attempt</p>
 
         <div className="mt-4 text-sm text-muted-foreground">
-          <div>Questions: 30 (pre-built set, rotates each attempt)</div>
-          <div>Pass: 100% only</div>
-          {typeof attemptsRemaining === "number" && (
-            <div>Attempts remaining: {attemptsRemaining}</div>
-          )}
+          <div>Questions: {quizLength}</div>
+          <div>Pass: {passThresholdPercent}% ({neededToPass}/{quizLength})</div>
+          {typeof attemptsRemaining === "number" && <div>Attempts remaining: {attemptsRemaining}</div>}
           {typeof expiresAt === "number" && (
-            <div>
-              Unlock expires: {new Date(expiresAt).toLocaleString()}
-            </div>
+            <div>Unlock expires: {new Date(expiresAt).toLocaleString()}</div>
           )}
         </div>
 
@@ -405,6 +421,8 @@ export function DiagnosticPage() {
   // Results screen
   if (completedPassed !== null && questions) {
     const incorrect = results.filter((r) => !r.correct);
+    const vivaAlreadyRequested = majorStatus === "viva_requested";
+
     return (
       <div className="p-6 max-w-3xl mx-auto">
         <button
@@ -420,7 +438,10 @@ export function DiagnosticPage() {
 
         <div className="mt-6 p-4 rounded border bg-white/70">
           <div className="text-lg font-semibold">
-            Score: {score}/{questions.length} {completedPassed ? "— Mastered" : "— Not yet"}
+            Score: {score}/{questions.length} ({Math.round((score / questions.length) * 100)}%) {completedPassed ? "— Mastered" : "— Not yet"}
+          </div>
+          <div className="text-sm text-muted-foreground mt-1">
+            Pass target: {passThresholdScore}/{questions.length} ({passThresholdPercent}%)
           </div>
           {completedDurationMs !== null && (
             <div className="text-sm text-muted-foreground">
@@ -428,9 +449,7 @@ export function DiagnosticPage() {
             </div>
           )}
           {completedAttemptId && (
-            <div className="text-xs text-muted-foreground mt-1">
-              Attempt saved: {completedAttemptId}
-            </div>
+            <div className="text-xs text-muted-foreground mt-1">Attempt saved: {completedAttemptId}</div>
           )}
         </div>
 
@@ -475,11 +494,11 @@ export function DiagnosticPage() {
             <div className="mt-6 flex items-center gap-3">
               <button
                 type="button"
-                className="px-4 py-2 rounded bg-black text-white"
+                className="px-4 py-2 rounded bg-black text-white disabled:opacity-50"
                 onClick={handleRequestViva}
-                disabled={!unlockState?.majorAssignment?.studentMajorObjectiveId}
+                disabled={!unlockState?.majorAssignment?.studentMajorObjectiveId || vivaAlreadyRequested}
               >
-                Request Viva
+                {vivaAlreadyRequested ? "Viva Requested" : "Request Viva"}
               </button>
               <button
                 type="button"
@@ -518,6 +537,8 @@ export function DiagnosticPage() {
   }
 
   const imageSrc = extractImageSrc(currentQuestion.visual_html);
+  const questionStem = currentQuestion.stem?.trim() || "";
+  const visualHtml = currentQuestion.visual_html?.trim() || "";
   const total = questions.length;
   const isLast = qIndex === total - 1;
   const chosen = selectedIdx !== null ? currentQuestion.choices[selectedIdx] : null;
@@ -532,17 +553,20 @@ export function DiagnosticPage() {
         >
           ← Back
         </button>
-        <div className="text-sm text-muted-foreground">
-          {group.moduleName}
-        </div>
+        <div className="text-sm text-muted-foreground">{group.moduleName}</div>
       </div>
 
       <h1 className="text-2xl font-serif font-semibold mt-4">{title}</h1>
 
       <div className="mt-6 p-5 rounded-xl border bg-white/70">
-        <div className="text-sm text-muted-foreground">
-          Question {qIndex + 1} of {total}
-        </div>
+        <div className="text-sm text-muted-foreground">Question {qIndex + 1} of {total}</div>
+        <div className="mt-3 text-sm text-muted-foreground">{currentQuestion.topic}</div>
+
+        {questionStem && (
+          <div className="mt-2 text-lg font-medium leading-relaxed whitespace-pre-wrap">
+            <MathText text={questionStem} />
+          </div>
+        )}
 
         {imageSrc && (
           <div className="mt-4 flex justify-center bg-muted/40 rounded-lg p-3">
@@ -555,7 +579,12 @@ export function DiagnosticPage() {
           </div>
         )}
 
-        <div className="mt-4 text-lg font-medium">{currentQuestion.topic}</div>
+        {!imageSrc && visualHtml && (
+          <div
+            className="mt-4 rounded-lg border bg-white p-3 text-sm"
+            dangerouslySetInnerHTML={{ __html: visualHtml }}
+          />
+        )}
 
         <div className="mt-4 space-y-2">
           {currentQuestion.choices.map((c, idx) => {
@@ -563,8 +592,7 @@ export function DiagnosticPage() {
             const isChosen = selectedIdx === idx;
             const showState = answered;
 
-            const base =
-              "w-full text-left px-4 py-3 rounded-lg border transition-colors";
+            const base = "w-full text-left px-4 py-3 rounded-lg border transition-colors";
             const idle = "bg-white hover:bg-muted/30";
             const correctCls = "bg-emerald-50 border-emerald-300";
             const wrongCls = "bg-orange-50 border-orange-300";
@@ -584,7 +612,7 @@ export function DiagnosticPage() {
                 onClick={() => handleSelectAnswer(idx)}
               >
                 <span className="font-semibold mr-2">{c.label}.</span>
-                {labelText}
+                <MathText text={labelText} />
               </button>
             );
           })}
@@ -596,20 +624,20 @@ export function DiagnosticPage() {
               <div className="text-sm">
                 <div className="font-semibold text-emerald-700">Correct</div>
                 {currentQuestion.explanation && (
-                  <div className="text-muted-foreground mt-1">
-                    {currentQuestion.explanation}
+                  <div className="text-muted-foreground mt-1 whitespace-pre-wrap">
+                    <MathText text={currentQuestion.explanation} />
                   </div>
                 )}
               </div>
             ) : (
               <div className="text-sm">
                 <div className="font-semibold text-orange-700">Not quite</div>
-                <div className="text-muted-foreground mt-1">
-                  {chosen?.misconception || "Review and try again later."}
+                <div className="text-muted-foreground mt-1 whitespace-pre-wrap">
+                  <MathText text={chosen?.misconception || "Review and try again later."} />
                 </div>
                 {currentQuestion.explanation && (
-                  <div className="text-muted-foreground mt-2">
-                    {currentQuestion.explanation}
+                  <div className="text-muted-foreground mt-2 whitespace-pre-wrap">
+                    <MathText text={currentQuestion.explanation} />
                   </div>
                 )}
               </div>
@@ -617,13 +645,11 @@ export function DiagnosticPage() {
           </div>
         )}
 
-        {submitError && (
-          <div className="mt-4 text-sm text-destructive">{submitError}</div>
-        )}
+        {submitError && <div className="mt-4 text-sm text-destructive">{submitError}</div>}
 
         <div className="mt-5 flex items-center justify-between gap-3">
           <div className="text-sm text-muted-foreground">
-            Score: {score}/{total}
+            Score: {score}/{total} • Pass target: {Math.ceil((total * passThresholdPercent) / 100)}
           </div>
           <button
             type="button"

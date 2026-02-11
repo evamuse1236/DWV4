@@ -7,5 +7,7 @@ export { ObjectivesPage } from "./ObjectivesPage";
 export { VivaQueuePage } from "./VivaQueuePage";
 export { PresentationQueuePage } from "./PresentationQueuePage";
 export { BooksPage } from "./BooksPage";
+export { CharacterCatalogPage } from "./CharacterCatalogPage";
 export { NormsPage } from "./NormsPage";
+export { CommentsPage } from "./CommentsPage";
 export { AdminSettingsPage } from "./SettingsPage";

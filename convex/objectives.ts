@@ -1,6 +1,7 @@
 import { query, mutation } from "./_generated/server";
 import { v } from "convex/values";
 import type { Id } from "./_generated/dataModel";
+import { CHARACTER_XP, awardXpIfNotExists } from "./characterAwards";
 
 const difficulty = v.union(
   v.literal("beginner"),
@@ -738,6 +739,11 @@ export const updateStatus = mutation({
     vivaRequestNotes: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
+    const assignment = await ctx.db.get(args.studentMajorObjectiveId);
+    if (!assignment) {
+      throw new Error("Student major objective not found");
+    }
+
     const updates: any = { status: args.status };
 
     if (args.status === "viva_requested") {
@@ -751,6 +757,21 @@ export const updateStatus = mutation({
     }
 
     await ctx.db.patch(args.studentMajorObjectiveId, updates);
+
+    if (args.status === "mastered" && assignment.status !== "mastered") {
+      const major = await ctx.db.get(assignment.majorObjectiveId);
+      await awardXpIfNotExists(ctx, {
+        userId: assignment.userId,
+        sourceType: "major_mastered",
+        sourceKey: `major_mastered:${assignment.userId}:${assignment.majorObjectiveId}`,
+        xp: CHARACTER_XP.majorMastered,
+        domainId: major?.domainId,
+        meta: {
+          majorObjectiveId: assignment.majorObjectiveId,
+          via: "manual_status_update",
+        },
+      });
+    }
   },
 });
 

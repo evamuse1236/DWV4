@@ -1,6 +1,9 @@
 import { query, mutation } from "./_generated/server";
 import { v } from "convex/values";
 import type { Id } from "./_generated/dataModel";
+import { CHARACTER_XP, awardXpIfNotExists } from "./characterAwards";
+
+const PASS_THRESHOLD_PERCENT = 90;
 
 function isCurriculumPyp(curriculum: string | undefined | null): boolean {
   return Boolean(curriculum && curriculum.toLowerCase().includes("pyp"));
@@ -12,6 +15,11 @@ function getActiveUnlockOrNull(unlock: any, now: number) {
   if (unlock.attemptsRemaining <= 0) return null;
   if (unlock.expiresAt <= now) return null;
   return unlock;
+}
+
+function toScorePercent(score: number, questionCount: number): number {
+  if (questionCount <= 0) return 0;
+  return Math.round((score / questionCount) * 1000) / 10;
 }
 
 export const getCurriculumModuleIndex = query({
@@ -90,14 +98,23 @@ export const getUnlockState = query({
       .order("desc")
       .first();
 
+    const mastered = majorAssignment?.status === "mastered";
+    const latestAttemptFailed = latestAttempt?.passed === false;
+    const vivaRequested = majorAssignment?.status === "viva_requested";
+    const requiresVivaRequest = Boolean(latestAttemptFailed && !vivaRequested);
+    const requiresUnlock = Boolean(latestAttemptFailed && vivaRequested && !activeUnlock);
+    const canStart =
+      !mastered &&
+      (!latestAttemptFailed || (vivaRequested && Boolean(activeUnlock)));
+
     return {
       majorAssignment: majorAssignment
         ? { studentMajorObjectiveId: majorAssignment._id, status: majorAssignment.status }
         : null,
       activeUnlock: activeUnlock
         ? {
-          unlockId: activeUnlock._id,
-          expiresAt: activeUnlock.expiresAt,
+            unlockId: activeUnlock._id,
+            expiresAt: activeUnlock.expiresAt,
             attemptsRemaining: activeUnlock.attemptsRemaining,
           }
         : null,
@@ -108,12 +125,19 @@ export const getUnlockState = query({
             passed: latestAttempt.passed,
             score: latestAttempt.score,
             questionCount: latestAttempt.questionCount,
+            scorePercent: latestAttempt.scorePercent ?? toScorePercent(latestAttempt.score, latestAttempt.questionCount),
             durationMs: latestAttempt.durationMs,
             submittedAt: latestAttempt.submittedAt,
             attemptType: latestAttempt.attemptType,
             diagnosticModuleName: latestAttempt.diagnosticModuleName,
           }
         : null,
+      policy: {
+        passThresholdPercent: PASS_THRESHOLD_PERCENT,
+        requiresVivaRequest,
+        requiresUnlock,
+        canStart,
+      },
     };
   },
 });
@@ -133,6 +157,42 @@ export const requestUnlock = mutation({
 
     if (latest && latest.status === "pending") {
       return { requestId: latest._id, status: "pending" as const };
+    }
+
+    const latestAttempt = await ctx.db
+      .query("diagnosticAttempts")
+      .withIndex("by_user_major", (q: any) =>
+        q.eq("userId", args.userId).eq("majorObjectiveId", args.majorObjectiveId)
+      )
+      .order("desc")
+      .first();
+
+    if (!latestAttempt || latestAttempt.passed) {
+      throw new Error("Unlock requests are only available after a failed attempt.");
+    }
+
+    const majorAssignment = await ctx.db
+      .query("studentMajorObjectives")
+      .withIndex("by_user_major", (q: any) =>
+        q.eq("userId", args.userId).eq("majorObjectiveId", args.majorObjectiveId)
+      )
+      .first();
+
+    if (!majorAssignment || majorAssignment.status !== "viva_requested") {
+      throw new Error("Request viva before asking for a diagnostic unlock.");
+    }
+
+    const latestUnlock = await ctx.db
+      .query("diagnosticUnlocks")
+      .withIndex("by_user_major", (q: any) =>
+        q.eq("userId", args.userId).eq("majorObjectiveId", args.majorObjectiveId)
+      )
+      .order("desc")
+      .first();
+
+    const activeUnlock = getActiveUnlockOrNull(latestUnlock, now);
+    if (activeUnlock) {
+      return { requestId: null, status: "approved" as const };
     }
 
     const requestId = await ctx.db.insert("diagnosticUnlockRequests", {
@@ -295,6 +355,41 @@ export const getFailuresForQueue = query({
   },
 });
 
+export const getAllAttemptsForAdmin = query({
+  args: {},
+  handler: async (ctx) => {
+    const attempts = await ctx.db.query("diagnosticAttempts").order("desc").take(500);
+
+    return await Promise.all(
+      attempts.map(async (attempt: any) => {
+        const [user, major, assignment] = await Promise.all([
+          ctx.db.get(attempt.userId),
+          ctx.db.get(attempt.majorObjectiveId as Id<"majorObjectives">),
+          ctx.db
+            .query("studentMajorObjectives")
+            .withIndex("by_user_major", (q: any) =>
+              q
+                .eq("userId", attempt.userId)
+                .eq("majorObjectiveId", attempt.majorObjectiveId)
+            )
+            .first(),
+        ]);
+
+        const domain = major ? await ctx.db.get(major.domainId) : null;
+
+        return {
+          attemptId: attempt._id,
+          attempt,
+          user,
+          majorObjective: major,
+          domain,
+          majorAssignment: assignment || null,
+        };
+      })
+    );
+  },
+});
+
 export const getAttemptCount = query({
   args: { userId: v.id("users"), majorObjectiveId: v.id("majorObjectives") },
   handler: async (ctx, args) => {
@@ -343,59 +438,100 @@ export const submitAttempt = mutation({
         misconception: v.string(),
         explanation: v.string(),
         visualHtml: v.optional(v.string()),
+        stem: v.optional(v.string()),
       })
     ),
   },
   handler: async (ctx, args) => {
     const now = Date.now();
-    const passed = args.score === args.questionCount;
+    const safeQuestionCount = Math.max(1, args.questionCount);
+    const scorePercent = toScorePercent(args.score, safeQuestionCount);
+    const passed = scorePercent >= PASS_THRESHOLD_PERCENT;
 
-    const latestUnlock = await ctx.db
-      .query("diagnosticUnlocks")
-      .withIndex("by_user_major", (q: any) =>
-        q.eq("userId", args.userId).eq("majorObjectiveId", args.majorObjectiveId)
-      )
-      .order("desc")
-      .first();
-
-    if (!latestUnlock) {
-      throw new Error("Diagnostic not approved yet");
-    }
-
-    if (latestUnlock.status === "approved" && latestUnlock.expiresAt <= now) {
-      await ctx.db.patch(latestUnlock._id, { status: "expired" });
-      throw new Error("Diagnostic approval expired");
-    }
-
-    const activeUnlock = getActiveUnlockOrNull(latestUnlock, now);
-    if (!activeUnlock) {
-      throw new Error("Diagnostic not approved yet");
-    }
-
-    const nextRemaining = Math.max(0, activeUnlock.attemptsRemaining - 1);
-    await ctx.db.patch(activeUnlock._id, {
-      attemptsRemaining: nextRemaining,
-      status: nextRemaining === 0 ? "consumed" : "approved",
-    });
-
-    const existingMajorAssignment = await ctx.db
+    let majorAssignment = await ctx.db
       .query("studentMajorObjectives")
       .withIndex("by_user_major", (q: any) =>
         q.eq("userId", args.userId).eq("majorObjectiveId", args.majorObjectiveId)
       )
       .first();
 
+    if (!majorAssignment) {
+      const createdId = await ctx.db.insert("studentMajorObjectives", {
+        userId: args.userId,
+        majorObjectiveId: args.majorObjectiveId,
+        assignedBy: args.userId,
+        assignedAt: now,
+        status: "in_progress",
+      });
+      majorAssignment = await ctx.db.get(createdId);
+    }
+
+    if (majorAssignment?.status === "mastered") {
+      throw new Error("This module is already mastered.");
+    }
+
+    const latestAttempt = await ctx.db
+      .query("diagnosticAttempts")
+      .withIndex("by_user_major", (q: any) =>
+        q.eq("userId", args.userId).eq("majorObjectiveId", args.majorObjectiveId)
+      )
+      .order("desc")
+      .first();
+
+    let unlockId: Id<"diagnosticUnlocks"> | undefined = undefined;
+    let approvedByForAutofill: Id<"users"> =
+      (majorAssignment?.assignedBy as Id<"users"> | undefined) ?? args.userId;
+
+    if (latestAttempt && latestAttempt.passed === false) {
+      if (majorAssignment?.status !== "viva_requested") {
+        throw new Error("Request viva before taking a retake.");
+      }
+
+      const latestUnlock = await ctx.db
+        .query("diagnosticUnlocks")
+        .withIndex("by_user_major", (q: any) =>
+          q.eq("userId", args.userId).eq("majorObjectiveId", args.majorObjectiveId)
+        )
+        .order("desc")
+        .first();
+
+      if (!latestUnlock) {
+        throw new Error("Diagnostic unlock required for retake.");
+      }
+
+      if (latestUnlock.status === "approved" && latestUnlock.expiresAt <= now) {
+        await ctx.db.patch(latestUnlock._id, { status: "expired" });
+        throw new Error("Diagnostic approval expired");
+      }
+
+      const activeUnlock = getActiveUnlockOrNull(latestUnlock, now);
+      if (!activeUnlock) {
+        throw new Error("Diagnostic unlock required for retake.");
+      }
+
+      const nextRemaining = Math.max(0, activeUnlock.attemptsRemaining - 1);
+      await ctx.db.patch(activeUnlock._id, {
+        attemptsRemaining: nextRemaining,
+        status: nextRemaining === 0 ? "consumed" : "approved",
+      });
+
+      unlockId = activeUnlock._id;
+      approvedByForAutofill = activeUnlock.approvedBy;
+    }
+
     const attemptId = await ctx.db.insert("diagnosticAttempts", {
       userId: args.userId,
       domainId: args.domainId,
       majorObjectiveId: args.majorObjectiveId,
-      studentMajorObjectiveId: existingMajorAssignment?._id ?? undefined,
-      unlockId: activeUnlock._id,
+      studentMajorObjectiveId: majorAssignment?._id ?? undefined,
+      unlockId,
       attemptType: args.attemptType,
       diagnosticModuleName: args.diagnosticModuleName,
       diagnosticModuleIds: args.diagnosticModuleIds,
-      questionCount: args.questionCount,
+      questionCount: safeQuestionCount,
       score: args.score,
+      scorePercent,
+      passThresholdPercent: PASS_THRESHOLD_PERCENT,
       passed,
       startedAt: args.startedAt,
       submittedAt: now,
@@ -403,26 +539,46 @@ export const submitAttempt = mutation({
       results: args.results,
     });
 
+    await awardXpIfNotExists(ctx, {
+      userId: args.userId,
+      sourceType: "diagnostic_attempt",
+      sourceKey: `diagnostic_attempt:${attemptId}`,
+      xp: passed ? CHARACTER_XP.diagnosticPass : CHARACTER_XP.diagnosticFail,
+      domainId: args.domainId,
+      meta: {
+        majorObjectiveId: args.majorObjectiveId,
+        attemptType: args.attemptType,
+        score: args.score,
+        scorePercent,
+        passed,
+      },
+    });
+
     if (!passed) {
-      return { attemptId, passed: false };
+      return {
+        attemptId,
+        passed: false,
+        scorePercent,
+        passThresholdPercent: PASS_THRESHOLD_PERCENT,
+      };
     }
 
-    // ===== PASS: auto-complete all remaining work + auto-master =====
-    const majorAssignmentId =
-      existingMajorAssignment?._id ??
-      (await ctx.db.insert("studentMajorObjectives", {
-        userId: args.userId,
-        majorObjectiveId: args.majorObjectiveId,
-        assignedBy: activeUnlock.approvedBy,
-        assignedAt: now,
+    if (majorAssignment) {
+      await ctx.db.patch(majorAssignment._id, {
         status: "mastered",
         masteredAt: now,
-      }));
+      });
 
-    if (existingMajorAssignment) {
-      await ctx.db.patch(existingMajorAssignment._id, {
-        status: "mastered",
-        masteredAt: now,
+      await awardXpIfNotExists(ctx, {
+        userId: args.userId,
+        sourceType: "major_mastered",
+        sourceKey: `major_mastered:${args.userId}:${args.majorObjectiveId}`,
+        xp: CHARACTER_XP.majorMastered,
+        domainId: args.domainId,
+        meta: {
+          majorObjectiveId: args.majorObjectiveId,
+          via: "diagnostic_pass",
+        },
       });
     }
 
@@ -446,7 +602,7 @@ export const submitAttempt = mutation({
           userId: args.userId,
           objectiveId: lo._id,
           majorObjectiveId: args.majorObjectiveId,
-          assignedBy: activeUnlock.approvedBy,
+          assignedBy: approvedByForAutofill,
           assignedAt: now,
           status: "completed",
         });
@@ -494,13 +650,11 @@ export const submitAttempt = mutation({
       }
     }
 
-    // Patch the attempt with studentMajorObjectiveId if it was created above.
-    if (!existingMajorAssignment) {
-      await ctx.db.patch(attemptId, {
-        studentMajorObjectiveId: majorAssignmentId,
-      });
-    }
-
-    return { attemptId, passed: true };
+    return {
+      attemptId,
+      passed: true,
+      scorePercent,
+      passThresholdPercent: PASS_THRESHOLD_PERCENT,
+    };
   },
 });

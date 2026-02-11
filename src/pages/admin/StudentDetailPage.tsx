@@ -58,6 +58,10 @@ export function StudentDetailPage() {
   );
   const domains = useQuery(api.domains.getAll);
   const allSubObjectives = useQuery(api.objectives.getAllSubObjectives);
+  const character = useQuery(
+    api.character.getStudentCharacter,
+    studentId ? { userId: studentId as any } : "skip"
+  );
 
   const assignObjective = useMutation(api.objectives.assignToStudent);
   const unassignObjective = useMutation(api.objectives.unassignFromStudent);
@@ -225,6 +229,110 @@ export function StudentDetailPage() {
               </div>
             </div>
           </div>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Character Progress</CardTitle>
+          <CardDescription>
+            XP progression, active card, and recent character events
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          {character === undefined ? (
+            <p className="text-sm text-muted-foreground">Loading character data...</p>
+          ) : (
+            <div className="space-y-4">
+              <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
+                <div className="rounded-md border bg-muted/30 p-3">
+                  <p className="text-xs text-muted-foreground">Total XP</p>
+                  <p className="text-xl font-semibold">{character?.summary.totalXp ?? 0}</p>
+                </div>
+                <div className="rounded-md border bg-muted/30 p-3">
+                  <p className="text-xs text-muted-foreground">Level</p>
+                  <p className="text-xl font-semibold">{character?.summary.level ?? 1}</p>
+                </div>
+                <div className="rounded-md border bg-muted/30 p-3">
+                  <p className="text-xs text-muted-foreground">Badges</p>
+                  <p className="text-xl font-semibold">{character?.summary.badgeCount ?? 0}</p>
+                </div>
+                <div className="rounded-md border bg-muted/30 p-3">
+                  <p className="text-xs text-muted-foreground">Unlocked Cards</p>
+                  <p className="text-xl font-semibold">
+                    {character?.summary.unlockedCards ?? 0}
+                  </p>
+                </div>
+              </div>
+
+              <div className="grid gap-4 md:grid-cols-[120px_1fr]">
+                <div className="h-[160px] overflow-hidden rounded-md border bg-muted">
+                  {character?.activeCard?.imageUrl ? (
+                    <img
+                      src={character.activeCard.imageUrl}
+                      alt={character.activeCard.name}
+                      className="h-full w-full object-cover"
+                    />
+                  ) : (
+                    <div className="grid h-full place-items-center text-xs text-muted-foreground">
+                      No active card
+                    </div>
+                  )}
+                </div>
+                <div className="space-y-2">
+                  <p className="text-sm font-medium">Top Domain Stats</p>
+                  {character?.domainStats && character.domainStats.length > 0 ? (
+                    character.domainStats.slice(0, 3).map((stat: any) => (
+                      <div
+                        key={stat._id}
+                        className="flex items-center justify-between rounded-md border px-3 py-2 text-sm"
+                      >
+                        <span>{stat.domain?.name || "Unknown Domain"}</span>
+                        <Badge variant="outline">
+                          Lv. {stat.statLevel} • {stat.xp} XP
+                        </Badge>
+                      </div>
+                    ))
+                  ) : (
+                    <p className="text-sm text-muted-foreground">
+                      No domain XP tracked yet.
+                    </p>
+                  )}
+                </div>
+              </div>
+
+              <div>
+                <p className="mb-2 text-sm font-medium">Recent XP Events</p>
+                {character?.recentXp && character.recentXp.length > 0 ? (
+                  <div className="space-y-2">
+                    {character.recentXp.slice(0, 5).map((entry: any) => (
+                      <div
+                        key={entry._id}
+                        className="flex items-center justify-between rounded-md border px-3 py-2 text-sm"
+                      >
+                        <div>
+                          <p className="font-medium">
+                            {entry.sourceType.replaceAll("_", " ")}
+                          </p>
+                          <p className="text-xs text-muted-foreground">
+                            {formatDate(entry.awardedAt)}
+                          </p>
+                          <p className="text-xs text-muted-foreground">
+                            {entry.domain?.name || "Unmapped domain"}
+                          </p>
+                        </div>
+                        <Badge variant="outline">+{entry.xpAwarded} XP</Badge>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="text-sm text-muted-foreground">
+                    No XP events recorded yet.
+                  </p>
+                )}
+              </div>
+            </div>
+          )}
         </CardContent>
       </Card>
 

@@ -83,6 +83,7 @@ vi.mock("../../../convex/_generated/api", () => ({
       importGoal: "goals.importGoal",
     },
     progress: { getDomainSummary: "progress.getDomainSummary" },
+    character: { getMyCharacter: "character.getMyCharacter" },
     books: { getCurrentlyReading: "books.getCurrentlyReading" },
     habits: {
       getByUserAndSprint: "habits.getByUserAndSprint",
@@ -861,7 +862,9 @@ describe("Integration Tests: User Journeys", () => {
 
       // Should show sprint name
       await waitFor(() => {
-        expect(screen.getByText(/january sprint/i)).toBeInTheDocument();
+        expect(
+          screen.getByRole("heading", { name: /january sprint/i })
+        ).toBeInTheDocument();
       });
 
       // Should show existing goal (may appear in multiple places - goal card + task pills)
@@ -1003,7 +1006,9 @@ describe("Integration Tests: User Journeys", () => {
 
       // Wait for sprint page to render
       await waitFor(() => {
-        expect(screen.getByText(/january sprint/i)).toBeInTheDocument();
+        expect(
+          screen.getByRole("heading", { name: /january sprint/i })
+        ).toBeInTheDocument();
       });
 
       // All 7 days should be visible
@@ -1039,7 +1044,9 @@ describe("Integration Tests: User Journeys", () => {
 
       // Wait for sprint page to render
       await waitFor(() => {
-        expect(screen.getByText(/january sprint/i)).toBeInTheDocument();
+        expect(
+          screen.getByRole("heading", { name: /january sprint/i })
+        ).toBeInTheDocument();
       });
 
       expect(screen.getByTestId("habit-tracker")).toBeInTheDocument();

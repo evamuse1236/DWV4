@@ -1,5 +1,10 @@
 import { query, mutation } from "./_generated/server";
 import { v } from "convex/values";
+import {
+  CHARACTER_XP,
+  awardXpIfNotExists,
+  getReadingDomainId,
+} from "./characterAwards";
 
 // Get all books
 export const getAll = query({
@@ -133,6 +138,11 @@ export const updateStatus = mutation({
     ),
   },
   handler: async (ctx, args) => {
+    const studentBook = await ctx.db.get(args.studentBookId);
+    if (!studentBook) {
+      throw new Error("Student book not found");
+    }
+
     const updates: any = { status: args.status };
 
     if (args.status === "completed") {
@@ -144,6 +154,40 @@ export const updateStatus = mutation({
     }
 
     await ctx.db.patch(args.studentBookId, updates);
+    const readingDomainId = await getReadingDomainId(ctx);
+
+    if (
+      args.status === "presentation_requested" &&
+      studentBook.status !== "presentation_requested"
+    ) {
+      await awardXpIfNotExists(ctx, {
+        userId: studentBook.userId,
+        sourceType: "reading_milestone",
+        sourceKey: `reading_milestone:${args.studentBookId}:presentation_requested`,
+        xp: CHARACTER_XP.readingPresentationRequested,
+        domainId: readingDomainId,
+        meta: {
+          studentBookId: args.studentBookId,
+          bookId: studentBook.bookId,
+          status: "presentation_requested",
+        },
+      });
+    }
+
+    if (args.status === "presented" && studentBook.status !== "presented") {
+      await awardXpIfNotExists(ctx, {
+        userId: studentBook.userId,
+        sourceType: "reading_milestone",
+        sourceKey: `reading_milestone:${args.studentBookId}:presented`,
+        xp: CHARACTER_XP.readingPresented,
+        domainId: readingDomainId,
+        meta: {
+          studentBookId: args.studentBookId,
+          bookId: studentBook.bookId,
+          status: "presented",
+        },
+      });
+    }
   },
 });;
 
@@ -297,11 +341,33 @@ export const approvePresentationRequest = mutation({
     approved: v.boolean(),
   },
   handler: async (ctx, args) => {
+    const studentBook = await ctx.db.get(args.studentBookId);
+    if (!studentBook) {
+      throw new Error("Student book not found");
+    }
+
     if (args.approved) {
+      const readingDomainId = await getReadingDomainId(ctx);
       await ctx.db.patch(args.studentBookId, {
         status: "presented",
         presentedAt: Date.now(),
       });
+
+      if (studentBook.status !== "presented") {
+        await awardXpIfNotExists(ctx, {
+          userId: studentBook.userId,
+          sourceType: "reading_milestone",
+          sourceKey: `reading_milestone:${args.studentBookId}:presented`,
+          xp: CHARACTER_XP.readingPresented,
+          domainId: readingDomainId,
+          meta: {
+            studentBookId: args.studentBookId,
+            bookId: studentBook.bookId,
+            status: "presented",
+            approvedViaQueue: true,
+          },
+        });
+      }
     } else {
       // Rejected - back to reading status
       await ctx.db.patch(args.studentBookId, {

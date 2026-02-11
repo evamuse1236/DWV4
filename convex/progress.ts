@@ -1,5 +1,6 @@
 import { query, mutation } from "./_generated/server";
 import { v } from "convex/values";
+import { CHARACTER_XP, awardXpIfNotExists } from "./characterAwards";
 
 // Get progress for a student objective
 export const getByStudentObjective = query({
@@ -24,6 +25,7 @@ export const toggleActivity = mutation({
   handler: async (ctx, args) => {
     const studentObjective = await ctx.db.get(args.studentObjectiveId);
     if (!studentObjective) return;
+    const objective = await ctx.db.get(studentObjective.objectiveId);
 
     // Check if already exists (include studentObjectiveId to prevent collisions
     // when the same activity is used in multiple objectives)
@@ -38,10 +40,12 @@ export const toggleActivity = mutation({
       )
       .first();
 
+    let becameCompleted = false;
     if (existing) {
+      becameCompleted = !existing.completed;
       await ctx.db.patch(existing._id, {
-        completed: !existing.completed,
-        completedAt: existing.completed ? undefined : Date.now(),
+        completed: becameCompleted,
+        completedAt: becameCompleted ? Date.now() : undefined,
       });
     } else {
       await ctx.db.insert("activityProgress", {
@@ -50,6 +54,21 @@ export const toggleActivity = mutation({
         studentObjectiveId: args.studentObjectiveId,
         completed: true,
         completedAt: Date.now(),
+      });
+      becameCompleted = true;
+    }
+
+    if (becameCompleted) {
+      await awardXpIfNotExists(ctx, {
+        userId: args.userId,
+        sourceType: "activity_completion",
+        sourceKey: `activity_completion:${args.studentObjectiveId}:${args.activityId}`,
+        xp: CHARACTER_XP.activityCompletion,
+        domainId: objective?.domainId,
+        meta: {
+          studentObjectiveId: args.studentObjectiveId,
+          activityId: args.activityId,
+        },
       });
     }
 

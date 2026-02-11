@@ -178,9 +178,9 @@ export function ObjectivePopover({
     });
   };
 
-  const handleStartDiagnostic = (attemptType: "practice" | "mastery") => {
+  const handleStartDiagnostic = () => {
     if (!selectedMajorObjectiveId) return;
-    navigate(`/deep-work/diagnostic/${selectedMajorObjectiveId}?type=${attemptType}`);
+    navigate(`/deep-work/diagnostic/${selectedMajorObjectiveId}?type=mastery`);
   };
 
   const handleToggleActivity = (
@@ -230,12 +230,11 @@ export function ObjectivePopover({
   };
 
   if (selectedNode.type === "sub") {
-    const { subObjective, majorAssignment, allSubObjectives } = selectedNode.data;
+    const { subObjective, majorAssignment } = selectedNode.data;
     const { objective, activities } = subObjective;
     const firstActivityType = activities[0]?.type || "default";
     const IconComponent = activityIcons[firstActivityType] || activityIcons.default;
 
-    const allSiblingsCompleted = allSubObjectives.every(isSubObjectiveCompleted);
     const vivaRequested = majorAssignment?.status === "viva_requested";
     const mastered = majorAssignment?.status === "mastered";
 
@@ -312,42 +311,39 @@ export function ObjectivePopover({
               {hasFailedDiagnostic ? (
                 <button
                   type="button"
-                  className={cn(
-                    styles["viva-btn"],
-                    styles.active,
-                    vivaRequested && styles.requested
-                  )}
-                  onClick={() => {
-                    if (!vivaRequested) {
-                      updateStatus({
-                        studentMajorObjectiveId: majorAssignment._id,
-                        status: "viva_requested",
-                      });
-                      onVivaRequested?.();
-                    }
-                  }}
-                  disabled={vivaRequested}
-                >
-                  {vivaRequested ? "Viva Requested!" : "Request Viva"}
-                </button>
-              ) : hasActiveUnlock ? (
-                <button
-                  type="button"
                   className={cn(styles["viva-btn"], styles.active)}
-                  onClick={() =>
-                    handleStartDiagnostic(allSiblingsCompleted ? "mastery" : "practice")
-                  }
+                  onClick={() => {
+                    if (vivaRequested && hasActiveUnlock) {
+                      handleStartDiagnostic();
+                      return;
+                    }
+                    if (vivaRequested) {
+                      handleRequestDiagnostic();
+                      return;
+                    }
+                    updateStatus({
+                      studentMajorObjectiveId: majorAssignment._id,
+                      status: "viva_requested",
+                    });
+                    onVivaRequested?.();
+                  }}
+                  disabled={vivaRequested && hasPendingUnlockRequest}
                 >
-                  {allSiblingsCompleted ? "Start Mastery Diagnostic" : "Start Practice Diagnostic"}
+                  {vivaRequested
+                    ? hasActiveUnlock
+                      ? "Start Diagnostic"
+                      : hasPendingUnlockRequest
+                        ? "Diagnostic Requested"
+                        : "Request Diagnostic"
+                    : "Request Viva"}
                 </button>
               ) : (
                 <button
                   type="button"
                   className={cn(styles["viva-btn"], styles.active)}
-                  onClick={handleRequestDiagnostic}
-                  disabled={hasPendingUnlockRequest}
+                  onClick={handleStartDiagnostic}
                 >
-                  {hasPendingUnlockRequest ? "Diagnostic Requested" : "Request Diagnostic"}
+                  Start Diagnostic
                 </button>
               )}
             </>
@@ -370,8 +366,6 @@ export function ObjectivePopover({
   }
 
   const { majorObjective, subObjectives, assignment } = selectedNode.data;
-  const completedCount = subObjectives.filter(isSubObjectiveCompleted).length;
-  const allSubsCompleted = subObjectives.length > 0 && completedCount === subObjectives.length;
   const vivaRequested = assignment?.status === "viva_requested";
   const mastered = assignment?.status === "mastered";
 
@@ -423,40 +417,40 @@ export function ObjectivePopover({
                 type="button"
                 className={cn(
                   styles["viva-btn"],
-                  styles.active,
-                  vivaRequested && styles.requested
+                  styles.active
                 )}
                 onClick={() => {
-                  if (!vivaRequested) {
-                    updateStatus({
-                      studentMajorObjectiveId: assignment._id,
-                      status: "viva_requested",
-                    });
-                    onVivaRequested?.();
+                  if (vivaRequested && hasActiveUnlock) {
+                    handleStartDiagnostic();
+                    return;
                   }
+                  if (vivaRequested) {
+                    handleRequestDiagnostic();
+                    return;
+                  }
+                  updateStatus({
+                    studentMajorObjectiveId: assignment._id,
+                    status: "viva_requested",
+                  });
+                  onVivaRequested?.();
                 }}
-                disabled={vivaRequested}
+                disabled={vivaRequested && hasPendingUnlockRequest}
               >
-                {vivaRequested ? "Viva Requested!" : "Request Viva"}
-              </button>
-            ) : hasActiveUnlock ? (
-              <button
-                type="button"
-                className={cn(styles["viva-btn"], styles.active)}
-                onClick={() =>
-                  handleStartDiagnostic(allSubsCompleted ? "mastery" : "practice")
-                }
-              >
-                {allSubsCompleted ? "Start Mastery Diagnostic" : "Start Practice Diagnostic"}
+                {vivaRequested
+                  ? hasActiveUnlock
+                    ? "Start Diagnostic"
+                    : hasPendingUnlockRequest
+                      ? "Diagnostic Requested"
+                      : "Request Diagnostic"
+                  : "Request Viva"}
               </button>
             ) : (
               <button
                 type="button"
                 className={cn(styles["viva-btn"], styles.active)}
-                onClick={handleRequestDiagnostic}
-                disabled={hasPendingUnlockRequest}
+                onClick={handleStartDiagnostic}
               >
-                {hasPendingUnlockRequest ? "Diagnostic Requested" : "Request Diagnostic"}
+                Start Diagnostic
               </button>
             )}
           </>

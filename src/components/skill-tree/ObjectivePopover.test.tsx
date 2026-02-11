@@ -214,7 +214,7 @@ describe("ObjectivePopover", () => {
         expect(screen.getByText("Mastered")).toBeInTheDocument();
       });
 
-      it("shows diagnostic CTA when sub-objectives are complete", () => {
+      it("shows start diagnostic CTA when sub-objectives are complete", () => {
         // Create a major node where all sub-objectives are complete
         const completedSubObj = createSubObjectiveNode({
           activities: [
@@ -243,7 +243,7 @@ describe("ObjectivePopover", () => {
         );
 
         expect(
-          screen.getByRole("button", { name: /request diagnostic/i })
+          screen.getByRole("button", { name: /start diagnostic/i })
         ).toBeInTheDocument();
       });
     });
@@ -633,7 +633,7 @@ describe("ObjectivePopover", () => {
       expect(onVivaRequested).toHaveBeenCalled();
     });
 
-    it("shows viva requested state when already requested", () => {
+    it("shows request diagnostic when viva is already requested after a failed attempt", () => {
       (useQuery as any).mockReturnValue({
         activeUnlock: null,
         pendingRequest: null,
@@ -670,9 +670,9 @@ describe("ObjectivePopover", () => {
       );
 
       const vivaButton = screen.getByRole("button", {
-        name: /viva requested/i,
+        name: /request diagnostic/i,
       });
-      expect(vivaButton).toBeDisabled();
+      expect(vivaButton).toBeEnabled();
     });
   });
 

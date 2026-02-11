@@ -50,6 +50,8 @@ import {
   Search,
   ListChecks,
   Settings,
+  MessageSquare,
+  Sparkles,
 } from "lucide-react";
 
 // Admin navigation items
@@ -63,6 +65,8 @@ const adminNavItems = [
   { path: "/admin/viva", label: "Viva Queue", icon: CheckCircle },
   { path: "/admin/presentations", label: "Presentations", icon: Mic },
   { path: "/admin/books", label: "Books", icon: BookOpen },
+  { path: "/admin/character", label: "Character", icon: Sparkles },
+  { path: "/admin/comments", label: "Comments", icon: MessageSquare },
   { path: "/admin/trust-jar", label: "Trust Jar", icon: Cookie },
   { path: "/admin/settings", label: "Settings", icon: Settings },
 ];

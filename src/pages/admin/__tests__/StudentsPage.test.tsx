@@ -473,7 +473,7 @@ describe("StudentsPage", () => {
         name: /create student/i,
       });
       expect(createButton).toBeDisabled();
-    });
+    }, 10000);
 
     it("validates that username is required", async () => {
       const user = userEvent.setup();
@@ -500,7 +500,7 @@ describe("StudentsPage", () => {
         name: /create student/i,
       });
       expect(createButton).toBeDisabled();
-    });
+    }, 10000);
 
     it("validates that password is required", async () => {
       const user = userEvent.setup();

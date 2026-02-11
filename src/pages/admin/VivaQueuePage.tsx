@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "../../../convex/_generated/api";
@@ -27,6 +27,7 @@ import {
   BookOpen,
 } from "lucide-react";
 import { extractImageSrc } from "@/lib/diagnostic";
+import { MathText } from "@/components/math/MathText";
 
 /**
  * Viva Queue Page
@@ -39,6 +40,7 @@ export function VivaQueuePage() {
   const updateStatus = useMutation(api.objectives.updateStatus);
   const pendingUnlockRequests = useQuery(api.diagnostics.getPendingUnlockRequests);
   const diagnosticFailures = useQuery(api.diagnostics.getFailuresForQueue);
+  const diagnosticAttempts = useQuery(api.diagnostics.getAllAttemptsForAdmin);
   const approveUnlock = useMutation(api.diagnostics.approveUnlock);
   const denyUnlock = useMutation(api.diagnostics.denyUnlock);
 
@@ -54,11 +56,37 @@ export function VivaQueuePage() {
     isOpen: boolean;
     attemptId: string | null;
   }>({ isOpen: false, attemptId: null });
+  const [studentFilter, setStudentFilter] = useState("");
+  const [moduleFilter, setModuleFilter] = useState("all");
+  const [passFilter, setPassFilter] = useState<"all" | "passed" | "failed">("all");
 
   const failureDetails = useQuery(
     api.diagnostics.getAttemptDetails,
     failureDialog.attemptId ? { attemptId: failureDialog.attemptId as any } : "skip"
   );
+
+  const moduleOptions = useMemo(() => {
+    const set = new Set<string>();
+    for (const row of diagnosticAttempts ?? []) {
+      const name = row?.attempt?.diagnosticModuleName;
+      if (name) set.add(name);
+    }
+    return Array.from(set).sort();
+  }, [diagnosticAttempts]);
+
+  const filteredAttempts = useMemo(() => {
+    const byStudent = studentFilter.trim().toLowerCase();
+    return (diagnosticAttempts ?? []).filter((row: any) => {
+      if (passFilter === "passed" && !row.attempt?.passed) return false;
+      if (passFilter === "failed" && row.attempt?.passed) return false;
+      if (moduleFilter !== "all" && row.attempt?.diagnosticModuleName !== moduleFilter) {
+        return false;
+      }
+      if (!byStudent) return true;
+      const haystack = `${row.user?.displayName ?? ""} ${row.user?.username ?? ""}`.toLowerCase();
+      return haystack.includes(byStudent);
+    });
+  }, [diagnosticAttempts, moduleFilter, passFilter, studentFilter]);
 
   const openConfirmDialog = (type: "approve" | "reject", request: any) => {
     setConfirmDialog({ isOpen: true, type, request });
@@ -274,16 +302,47 @@ export function VivaQueuePage() {
         )}
       </div>
 
-      {/* Diagnostic Failures */}
+      {/* Diagnostic Attempts */}
       <div>
-        <h2 className="text-lg font-semibold mb-1">Diagnostic Failures</h2>
+        <h2 className="text-lg font-semibold mb-1">Diagnostic Attempts</h2>
         <p className="text-sm text-muted-foreground mb-4">
-          Review what went wrong and run a directed viva.
+          All attempts (pass + fail). Click any row to review per-question evidence.
         </p>
 
-        {diagnosticFailures && diagnosticFailures.length > 0 ? (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-4">
+          <input
+            type="text"
+            placeholder="Filter by student name or username"
+            value={studentFilter}
+            onChange={(e) => setStudentFilter(e.target.value)}
+            className="h-9 rounded-md border bg-background px-3 text-sm"
+          />
+          <select
+            value={moduleFilter}
+            onChange={(e) => setModuleFilter(e.target.value)}
+            className="h-9 rounded-md border bg-background px-3 text-sm"
+          >
+            <option value="all">All modules</option>
+            {moduleOptions.map((moduleName) => (
+              <option key={moduleName} value={moduleName}>
+                {moduleName}
+              </option>
+            ))}
+          </select>
+          <select
+            value={passFilter}
+            onChange={(e) => setPassFilter(e.target.value as "all" | "passed" | "failed")}
+            className="h-9 rounded-md border bg-background px-3 text-sm"
+          >
+            <option value="all">All outcomes</option>
+            <option value="passed">Passed</option>
+            <option value="failed">Failed</option>
+          </select>
+        </div>
+
+        {filteredAttempts.length > 0 ? (
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            {diagnosticFailures.map((row: any) => (
+            {filteredAttempts.map((row: any) => (
               <div
                 key={row.attemptId}
                 className="group rounded-xl border bg-card shadow-sm p-5 hover:bg-accent/40 transition-colors cursor-pointer"
@@ -318,8 +377,11 @@ export function VivaQueuePage() {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
                     {row.domain?.name && <Badge variant="outline">{row.domain.name}</Badge>}
-                    <Badge variant="secondary">
+                    <Badge variant={row.attempt.passed ? "default" : "secondary"}>
                       {row.attempt.score}/{row.attempt.questionCount}
+                    </Badge>
+                    <Badge variant={row.attempt.passed ? "default" : "destructive"}>
+                      {row.attempt.passed ? "PASS" : "FAIL"}
                     </Badge>
                   </div>
                   <span className="text-xs text-muted-foreground">
@@ -331,8 +393,80 @@ export function VivaQueuePage() {
           </div>
         ) : (
           <div className="text-center py-10">
-            <p className="text-muted-foreground">No diagnostic failures</p>
+            <p className="text-muted-foreground">No attempts match current filters</p>
           </div>
+        )}
+      </div>
+
+      {/* Diagnostic Failures (quick triage) */}
+      <div>
+        <h2 className="text-lg font-semibold mb-1">Diagnostic Failures</h2>
+        <p className="text-sm text-muted-foreground mb-4">
+          Latest unresolved failures for directed viva prep.
+        </p>
+        <div className="text-sm text-muted-foreground">
+          {diagnosticFailures?.length || 0} active failure cases
+        </div>
+
+        {diagnosticFailures && diagnosticFailures.length > 0 ? (
+          <div className="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
+            {diagnosticFailures.map((row: any) => (
+              <div key={row.attemptId} className="rounded-xl border bg-card shadow-sm p-5">
+                <div className="flex items-center gap-3 mb-3">
+                  <Avatar className="h-10 w-10">
+                    <AvatarImage src={row.user?.avatarUrl} alt={row.user?.displayName} />
+                    <AvatarFallback className="bg-primary text-primary-foreground">
+                      {row.user?.displayName?.charAt(0) || "?"}
+                    </AvatarFallback>
+                  </Avatar>
+                  <div className="min-w-0 flex-1">
+                    <p className="font-medium truncate">{row.user?.displayName}</p>
+                    <p className="text-sm text-muted-foreground truncate">
+                      @{row.user?.username}
+                    </p>
+                  </div>
+                  <span className="text-xs text-muted-foreground">
+                    {formatDate(row.attempt?.submittedAt)}
+                  </span>
+                </div>
+
+                <div className="flex items-center gap-2 mb-3">
+                  <BookOpen className="h-4 w-4 text-muted-foreground shrink-0" />
+                  <p className="font-medium text-sm truncate">
+                    {row.majorObjective?.title || row.attempt?.diagnosticModuleName}
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-2 mb-4">
+                  {row.domain?.name && <Badge variant="outline">{row.domain.name}</Badge>}
+                  <Badge variant="destructive">
+                    {row.attempt?.score}/{row.attempt?.questionCount}
+                  </Badge>
+                  <Badge variant={row.majorAssignment?.status === "viva_requested" ? "default" : "secondary"}>
+                    {row.majorAssignment?.status === "viva_requested" ? "Viva Requested" : "Needs Viva"}
+                  </Badge>
+                </div>
+
+                <div className="flex items-center justify-end gap-2">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() => navigate(`/admin/students/${row.attempt?.userId}`)}
+                    disabled={!row.attempt?.userId}
+                  >
+                    Open Student
+                  </Button>
+                  <Button size="sm" onClick={() => openFailureDialog(row.attemptId)}>
+                    Review Attempt
+                  </Button>
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <p className="text-sm text-muted-foreground mt-3">
+            No unresolved diagnostic failures right now.
+          </p>
         )}
       </div>
 
@@ -423,9 +557,9 @@ export function VivaQueuePage() {
           <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center mx-auto mb-4">
             <CheckCircle className="h-6 w-6 text-muted-foreground" />
           </div>
-          <p className="text-muted-foreground">No pending viva requests</p>
+          <p className="text-muted-foreground">No pending viva requests yet</p>
           <p className="text-sm text-muted-foreground">
-            Students will appear here when they request mastery verification
+            Students appear here only after they submit a viva request after a failed diagnostic.
           </p>
         </div>
       )}
@@ -436,7 +570,7 @@ export function VivaQueuePage() {
           <DialogHeader>
             <DialogTitle>Diagnostic Attempt Review</DialogTitle>
             <DialogDescription>
-              Review mistakes and decide whether to approve mastery.
+              Review full question-level evidence and decide whether to approve mastery.
             </DialogDescription>
           </DialogHeader>
 
@@ -460,18 +594,24 @@ export function VivaQueuePage() {
               </div>
 
               <div className="space-y-3 max-h-[60vh] overflow-y-auto pr-2">
-                {failureDetails.attempt.results
-                  .filter((r: any) => !r.correct)
-                  .map((r: any, idx: number) => {
+                {failureDetails.attempt.results.map((r: any, idx: number) => {
                     const img = extractImageSrc(r.visualHtml);
                     return (
                       <div key={`${r.questionId}-${idx}`} className="rounded-lg border p-4">
                         <div className="flex items-center justify-between gap-3 mb-2">
-                          <div className="font-medium text-sm">{r.topic}</div>
-                          <Badge variant="secondary">
-                            {r.chosenLabel} vs {r.correctLabel}
+                          <div className="font-medium text-sm whitespace-pre-wrap">
+                            {r.stem ? <MathText text={r.stem} /> : r.topic}
+                          </div>
+                          <Badge variant={r.correct ? "default" : "secondary"}>
+                            {r.correct ? "Correct" : `${r.chosenLabel} vs ${r.correctLabel}`}
                           </Badge>
                         </div>
+
+                        {r.stem && (
+                          <div className="text-xs text-muted-foreground mb-2">
+                            {r.topic}
+                          </div>
+                        )}
 
                         {img && (
                           <div className="mb-3 flex justify-center bg-muted/40 rounded-md p-2">
@@ -485,24 +625,24 @@ export function VivaQueuePage() {
                         )}
 
                         {r.misconception && (
-                          <div className="text-sm text-muted-foreground">
+                          <div className="text-sm text-muted-foreground whitespace-pre-wrap">
                             <span className="font-medium text-foreground">Misconception:</span>{" "}
-                            {r.misconception}
+                            <MathText text={r.misconception} />
                           </div>
                         )}
                         {r.explanation && (
-                          <div className="text-sm text-muted-foreground mt-2">
+                          <div className="text-sm text-muted-foreground mt-2 whitespace-pre-wrap">
                             <span className="font-medium text-foreground">Explanation:</span>{" "}
-                            {r.explanation}
+                            <MathText text={r.explanation} />
                           </div>
                         )}
                       </div>
                     );
                   })}
 
-                {failureDetails.attempt.results.filter((r: any) => !r.correct).length === 0 && (
+                {failureDetails.attempt.results.length === 0 && (
                   <div className="text-sm text-muted-foreground">
-                    No incorrect questions recorded for this attempt.
+                    No question results recorded for this attempt.
                   </div>
                 )}
               </div>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diagnostic V2 Mastery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#0b1220; --card:#111a2d; --card-alt:#0f1728; --panel:#0d1527; --text:#e5eefc; --muted:#9fb2cc; --border:#24334d; --primary:#34d399; --primary-soft:#0f2f2a; --warn:#f59e0b; --warn-bg:#2b2111; --err:#f87171; --err-bg:#2a1619; --ok:#34d399; --ok-bg:#112a22; }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--text);padding:1rem;line-height:1.45}
+    .container{max-width:980px;margin:0 auto;display:grid;gap:.8rem}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:.9rem}
+    .toplink{font-size:.9rem;color:var(--muted);text-decoration:none;font-weight:800}
+    h1{font-size:1.35rem;font-weight:800}.sub{color:var(--muted);font-weight:700;margin-top:.25rem}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.55rem;margin-top:.6rem}
+    .field{display:grid;gap:.25rem}.field label{font-size:.78rem;color:var(--muted);font-weight:900;text-transform:uppercase;letter-spacing:.03em}
+    .field input,.field select{font:inherit;padding:.45rem .55rem;border:1px solid var(--border);border-radius:10px;background:var(--card-alt);color:var(--text);font-weight:700}
+    .row{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin-top:.65rem}
+    .btn{appearance:none;border:1px solid rgba(15,118,110,.2);background:var(--primary);color:#fff;border-radius:10px;padding:.45rem .7rem;font:inherit;font-weight:900;cursor:pointer}
+    .btn.secondary{background:var(--card-alt);color:var(--text);border-color:var(--border)}
+    .btn:disabled{opacity:.55;cursor:not-allowed}
+    .pill{display:inline-flex;align-items:center;border-radius:999px;padding:.16rem .5rem;font-size:.78rem;font-weight:900;border:1px solid rgba(15,118,110,.2);background:var(--primary-soft);color:var(--primary)}
+    .banner{margin-top:.55rem;border:1px solid var(--border);border-radius:10px;padding:.5rem .55rem;font-weight:700;color:var(--muted);background:var(--panel)}
+    .banner.warn{border-color:#fcd34d;background:var(--warn-bg);color:var(--warn)}
+    .banner.error{border-color:#fecaca;background:var(--err-bg);color:var(--err)}
+    .hidden{display:none!important}
+    .quizhead{display:flex;justify-content:space-between;gap:.7rem;align-items:center;flex-wrap:wrap}
+    .bar{height:10px;border:1px solid var(--border);border-radius:999px;overflow:hidden;background:var(--panel);margin-top:.55rem}
+    .bar>div{height:100%;width:0;background:linear-gradient(90deg,#0f766e,#10b981);transition:width .2s}
+    .stem{margin-top:.65rem;font-weight:800}
+    .visual{margin-top:.6rem;border:1px dashed var(--border);border-radius:10px;padding:.5rem;overflow:auto;background:var(--panel)}
+    .choices{margin-top:.55rem;display:grid;gap:.45rem}
+    .choice{width:100%;text-align:left;border:1px solid var(--border);border-radius:10px;padding:.5rem .6rem;background:var(--card-alt);font:inherit;font-weight:800;display:flex;gap:.5rem;cursor:pointer}
+    .tag{width:24px;height:24px;border:1px solid var(--border);border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:.78rem;font-weight:900;background:var(--panel)}
+    .choice.correct{border-color:rgba(6,95,70,.35);background:var(--ok-bg)} .choice.correct .tag{border-color:rgba(6,95,70,.35);color:var(--ok)}
+    .choice.wrong{border-color:rgba(153,27,27,.35);background:var(--err-bg)} .choice.wrong .tag{border-color:rgba(153,27,27,.35);color:var(--err)}
+    .choice[disabled]{cursor:default}
+    .feedback{margin-top:.6rem;border:1px solid var(--border);border-radius:10px;padding:.5rem .55rem;background:var(--panel);display:grid;gap:.3rem}
+    .feedback .lbl{font-size:.78rem;font-weight:900;color:var(--primary);text-transform:uppercase;letter-spacing:.03em}
+    .feedback .mis{color:var(--err);font-weight:800}
+    .result{margin-top:.45rem;border:1px solid var(--border);border-radius:10px;padding:.45rem .55rem;background:var(--panel);color:var(--muted);font-weight:700}
+    .result strong{color:var(--text)}
+    .links{display:grid;gap:.35rem;margin-top:.55rem}.links a{color:var(--primary);text-decoration:none;font-weight:800;border-bottom:1px dotted rgba(15,118,110,.4);width:fit-content}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a class="toplink" href="index.html">&larr; Back to standards</a>
+
+    <section class="card">
+      <h1>Mastery Exercise (Topic-Based)</h1>
+      <div class="sub">Profile -> Module -> Topic -> Focus. Power mastery gates Challenge.</div>
+      <div class="row"><span class="pill" id="rulesPill">Rules</span></div>
+    </section>
+
+    <section class="card" id="setupCard">
+      <h2 style="font-size:1.02rem;font-weight:800;">Student Profile</h2>
+      <div class="grid">
+        <div class="field"><label for="profileSelect">Existing profile</label><select id="profileSelect"></select></div>
+        <div class="field"><label for="newProfileName">New profile name</label><input id="newProfileName" type="text" placeholder="Child name" /></div>
+        <div class="field"><label for="newProfileGrade">New profile grade</label><select id="newProfileGrade"><option value="5">Grade 5</option><option value="6">Grade 6</option><option value="7">Grade 7</option></select></div>
+      </div>
+      <div class="row"><button class="btn" id="createProfileBtn" type="button">Create Profile</button></div>
+      <div class="banner hidden" id="profileBanner"></div>
+    </section>
+
+    <section class="card" id="builderCard">
+      <h2 style="font-size:1.02rem;font-weight:800;">Build Test Session</h2>
+      <div class="grid">
+        <div class="field"><label for="gradeSelect">Grade</label><select id="gradeSelect"><option value="5">Grade 5</option><option value="6">Grade 6</option><option value="7">Grade 7</option></select></div>
+        <div class="field"><label for="moduleSelect">Module</label><select id="moduleSelect"></select></div>
+        <div class="field"><label for="topicSelect">Topic</label><select id="topicSelect"></select></div>
+        <div class="field"><label for="focusSelect">Focus Area</label><select id="focusSelect"><option value="power">Power Focus</option><option value="challenge">Challenge Focus</option></select></div>
+      </div>
+      <div class="banner" id="coverageBanner"></div>
+      <div class="banner hidden" id="lockBanner"></div>
+      <div class="row"><button class="btn" id="startBtn" type="button">Start Test</button></div>
+    </section>
+
+    <section class="card hidden" id="quizCard">
+      <div class="quizhead"><div><div style="font-weight:800;" id="quizTitle">Question</div><div class="sub" id="quizMeta"></div></div><span class="pill" id="quizScorePill">0 / 0</span></div>
+      <div class="bar"><div id="barFill"></div></div>
+      <div class="stem" id="qStem"></div>
+      <div class="visual hidden" id="qVisual"></div>
+      <div class="choices" id="qChoices"></div>
+      <div class="feedback hidden" id="qFeedback"><div class="lbl">Feedback</div><div id="qExplanation"></div><div class="mis hidden" id="qMisconception"></div></div>
+      <div class="row" style="justify-content:flex-end;"><button class="btn secondary" id="quitBtn" type="button">Quit</button><button class="btn" id="nextBtn" type="button" disabled>Next</button></div>
+    </section>
+
+    <section class="card hidden" id="resultCard">
+      <h2 style="font-size:1.05rem;font-weight:800;">Attempt Results</h2>
+      <div class="banner" id="resultBanner"></div>
+      <div id="resultRows"></div>
+      <div class="links" id="kaLinks"></div>
+      <div class="row" style="justify-content:flex-end;"><button class="btn secondary" id="newTopicBtn" type="button">Pick Another Topic</button><button class="btn" id="retakeBtn" type="button">Retake Topic</button></div>
+    </section>
+  </div>
+
+  <script src="mastery_data.js"></script>
+  <script src="mastery_engine.js"></script>
+  <script>
+    (function () {
+      function byId(id){return document.getElementById(id);} function safe(v){return v==null?"":String(v);} function clear(el){while(el.firstChild)el.removeChild(el.firstChild);} function pct(v){return (Math.round(Number(v||0)*10)/10).toFixed(1);} function uniq(a){var o=[],s={};for(var i=0;i<a.length;i++){var k=safe(a[i]);if(!k||s[k])continue;s[k]=1;o.push(k);}return o;}
+      var data=window.MASTERY_V2_DATA, engine=window.MASTERY_ENGINE; if(!data||!engine){alert("Missing mastery data/engine");return;}
+      var st={profile:null,session:null,answers:{},i:0,score:0,ctx:null}; var rules=engine.getRules(data);
+
+      var profileSelect=byId("profileSelect"), newProfileName=byId("newProfileName"), newProfileGrade=byId("newProfileGrade"), createProfileBtn=byId("createProfileBtn"), profileBanner=byId("profileBanner");
+      var gradeSelect=byId("gradeSelect"), moduleSelect=byId("moduleSelect"), topicSelect=byId("topicSelect"), focusSelect=byId("focusSelect"), coverageBanner=byId("coverageBanner"), lockBanner=byId("lockBanner"), startBtn=byId("startBtn");
+      var setupCard=byId("setupCard"), builderCard=byId("builderCard"), quizCard=byId("quizCard"), resultCard=byId("resultCard");
+      var quizTitle=byId("quizTitle"), quizMeta=byId("quizMeta"), quizScorePill=byId("quizScorePill"), barFill=byId("barFill"), qStem=byId("qStem"), qVisual=byId("qVisual"), qChoices=byId("qChoices"), qFeedback=byId("qFeedback"), qExplanation=byId("qExplanation"), qMisconception=byId("qMisconception"), nextBtn=byId("nextBtn"), quitBtn=byId("quitBtn");
+      var resultBanner=byId("resultBanner"), resultRows=byId("resultRows"), kaLinks=byId("kaLinks"), retakeBtn=byId("retakeBtn"), newTopicBtn=byId("newTopicBtn");
+      byId("rulesPill").textContent="Power pass "+rules.power_pass_percent+"%, min "+rules.power_min_attempts+" attempts";
+
+      function banner(el,msg,kind){el.textContent=msg||"";el.classList.remove("hidden","warn","error");if(kind==="warn")el.classList.add("warn");if(kind==="error")el.classList.add("error");if(!msg)el.classList.add("hidden");}
+      function refreshProfiles(){var ps=engine.listProfiles();clear(profileSelect);var p=document.createElement("option");p.value="";p.textContent=ps.length?"Select a profile":"No profiles yet";profileSelect.appendChild(p);for(var i=0;i<ps.length;i++){var o=document.createElement("option");o.value=ps[i].profile_id;o.textContent=ps[i].name+" (Grade "+ps[i].grade+")";profileSelect.appendChild(o);}}
+      function refreshModules(){var g=Number(gradeSelect.value||5), mods=engine.getModulesByGrade(data,g), prev=moduleSelect.value;clear(moduleSelect);for(var i=0;i<mods.length;i++){var o=document.createElement("option");o.value=mods[i];o.textContent=mods[i];moduleSelect.appendChild(o);} if(prev&&mods.indexOf(prev)>=0)moduleSelect.value=prev; refreshTopics();}
+      function refreshTopics(){var g=Number(gradeSelect.value||5), m=moduleSelect.value, ts=engine.getTopicsByGrade(data,g).filter(function(t){return t.module===m;}), prev=topicSelect.value; clear(topicSelect); for(var i=0;i<ts.length;i++){var o=document.createElement("option");o.value=ts[i].topic_id;o.textContent="Topic "+ts[i].topic_id+" - "+ts[i].topic_title;topicSelect.appendChild(o);} if(prev)topicSelect.value=prev; if(!topicSelect.value&&ts.length)topicSelect.value=ts[0].topic_id; renderCoverage();}
+      function bindProfile(id){st.profile=id?engine.getProfile(id):null; if(!st.profile){banner(profileBanner,"Select a profile to track mastery.","warn");startBtn.disabled=true;return;} banner(profileBanner,"Active profile: "+st.profile.name+" (Grade "+st.profile.grade+")",""); gradeSelect.value=String(st.profile.grade); refreshModules(); renderCoverage();}
+      function renderCoverage(){var g=Number(gradeSelect.value||5), tId=safe(topicSelect.value), focus=safe(focusSelect.value||"power"), topic=engine.getTopic(data,g,tId); if(!topic){banner(coverageBanner,"No topic selected.","warn");startBtn.disabled=true;return;} var c=engine.getCoverageSummary(topic), mapped=focus==="power"?c.power_mapped_count:c.challenge_mapped_count, avail=focus==="power"?c.power_available_count:c.challenge_available_count, minLen=Math.max(rules.min_questions,mapped); banner(coverageBanner,"Mapped standards: "+mapped+" | standards with pools: "+avail+" | attempt min length: "+minLen, avail<mapped?"warn":""); if(focus==="challenge"){ if(!st.profile){banner(lockBanner,"Challenge is locked until a profile is selected and checked.","warn");startBtn.disabled=true;return;} var unlocked=engine.isChallengeUnlocked(data,st.profile,g,tId); if(!unlocked){banner(lockBanner,"Challenge locked: pass Power first.","warn");startBtn.disabled=true;return;} banner(lockBanner,"Challenge unlocked.",""); } else {banner(lockBanner,"","");} startBtn.disabled=!st.profile||avail===0;}
+      function disableChoices(){var nodes=qChoices.querySelectorAll("button.choice");for(var i=0;i<nodes.length;i++)nodes[i].disabled=true;}
+      function renderQ(){var s=st.session, q=s.questions[st.i]; if(!q)return; barFill.style.width=Math.round((st.i/s.questions.length)*100)+"%"; quizTitle.textContent="Question "+(st.i+1)+" of "+s.questions.length; quizMeta.textContent="Standard "+safe(q.standard_id); quizScorePill.textContent=st.score+" / "+s.questions.length; qStem.textContent=safe(q.stem); if(q.visual_html&&q.visual_html.trim()){qVisual.classList.remove("hidden"); qVisual.innerHTML=q.visual_html;} else {qVisual.classList.add("hidden"); qVisual.innerHTML="";} clear(qChoices); qFeedback.classList.add("hidden"); qExplanation.textContent=""; qMisconception.textContent=""; qMisconception.classList.add("hidden"); nextBtn.disabled=true; nextBtn.textContent=st.i===s.questions.length-1?"Finish":"Next";
+        for(var i=0;i<q.choices.length;i++){(function(ch){var b=document.createElement("button");b.type="button";b.className="choice";b.innerHTML='<span class="tag">'+safe(ch.label)+'</span><span>'+safe(ch.text)+'</span>';b.addEventListener("click",function(){var qid=safe(q.session_question_id); if(st.answers[qid])return; st.answers[qid]=safe(ch.label); disableChoices(); var ok=ch.correct===true; if(ok)st.score+=1; quizScorePill.textContent=st.score+" / "+s.questions.length; var ns=qChoices.querySelectorAll("button.choice"); for(var j=0;j<ns.length;j++){if(q.choices[j]&&q.choices[j].correct===true)ns[j].classList.add("correct");} if(!ok)b.classList.add("wrong"); qFeedback.classList.remove("hidden"); qExplanation.textContent=safe(q.explanation); if(!ok&&ch.misconception_text){qMisconception.classList.remove("hidden"); qMisconception.textContent=safe(ch.misconception_text)+" (Code: "+safe(ch.misconception_code)+")";} nextBtn.disabled=false;}); qChoices.appendChild(b);})(q.choices[i]); }
+      }
+      function startSession(){if(!st.profile){banner(profileBanner,"Select or create a profile first.","error");return;} var g=Number(gradeSelect.value||st.profile.grade||5), tId=safe(topicSelect.value), focus=safe(focusSelect.value||"power"), attempts=engine.getAttemptsFor(st.profile,g,tId,focus), n=attempts.length+1, recent=[]; if(attempts.length){var rows=Array.isArray(attempts[attempts.length-1].rows)?attempts[attempts.length-1].rows:[]; for(var i=0;i<rows.length;i++){if(rows[i]&&rows[i].template_id)recent.push(rows[i].template_id);}}
+        try{var sess=engine.buildSession(data,{profile:st.profile,profile_id:st.profile.profile_id,grade:g,topic_id:tId,focus_area:focus,attempt_no:n,recent_template_ids:recent}); st.session=sess; st.answers={}; st.i=0; st.score=0; st.ctx={grade:g,module:moduleSelect.value,topic_id:tId,focus_area:focus}; setupCard.classList.add("hidden"); builderCard.classList.add("hidden"); resultCard.classList.add("hidden"); quizCard.classList.remove("hidden"); renderQ(); } catch(err){banner(coverageBanner,safe(err&&err.message?err.message:err),"error");}
+      }
+      function addResult(text){var d=document.createElement("div"); d.className="result"; d.innerHTML=text; resultRows.appendChild(d);}
+      function finishSession(){var scoring=engine.scoreSession(st.session,st.answers), p=engine.recordAttempt(data,st.profile,st.session,scoring); st.profile=p; quizCard.classList.add("hidden"); resultCard.classList.remove("hidden"); setupCard.classList.remove("hidden"); builderCard.classList.remove("hidden"); clear(resultRows); clear(kaLinks); banner(resultBanner,(st.session.focus_area==="power"?"Power":"Challenge")+": "+pct(scoring.score_percent)+"% ("+scoring.correct_count+"/"+scoring.total_questions+") - "+(scoring.pass?"PASS":"NOT YET"),scoring.pass?"":"warn");
+        var status=engine.summarizeTopicMastery(data,st.profile,st.session.grade,st.session.topic_id); addResult("<strong>Power mastery:</strong> "+(status.power.mastered?"Mastered":"In progress")+" | attempts: "+status.power.attempts+" | latest: "+(status.power.latest_score_percent==null?"-":pct(status.power.latest_score_percent)+"%"));
+        if(Array.isArray(st.session.missing_standards)&&st.session.missing_standards.length){addResult("<strong>Missing question pools:</strong> "+st.session.missing_standards.join(", "));}
+        var missed=[], per=scoring.per_standard||{}; for(var sid in per){if(!Object.prototype.hasOwnProperty.call(per,sid))continue; if(Number(per[sid].correct||0)<Number(per[sid].total||0))missed.push(sid);} addResult("<strong>Standards to revisit:</strong> "+(missed.length?missed.join(", "):"none in this attempt"));
+        var ms=scoring.misconceptions||{}, codes=[]; for(var c in ms){if(Object.prototype.hasOwnProperty.call(ms,c))codes.push(c);} codes.sort(function(a,b){return Number(ms[b].count||0)-Number(ms[a].count||0);}); if(!codes.length){addResult("<strong>Misconceptions:</strong> none selected in this attempt.");} else {for(var i=0;i<codes.length;i++){var cd=codes[i], ex=Array.isArray(ms[cd].examples)&&ms[cd].examples.length?" Example: "+safe(ms[cd].examples[0]):""; addResult("<strong>"+safe(cd)+":</strong> "+Number(ms[cd].count||0)+" selections."+ex);}}
+        var links=engine.getKaLinksForStandards(data, missed.length?missed:st.session.covered_standards); if(links.length){var h=document.createElement("div");h.className="sub";h.style.fontWeight="800";h.textContent="Suggested Khan links:";kaLinks.appendChild(h);for(var k=0;k<links.length;k++){var a=document.createElement("a");a.href=links[k].url;a.target="_blank";a.rel="noreferrer";a.textContent=links[k].standard_id+": "+links[k].label;kaLinks.appendChild(a);}}
+        profileSelect.value=st.profile.profile_id; renderCoverage();
+      }
+
+      createProfileBtn.addEventListener("click",function(){try{var p=engine.createProfile(newProfileName.value,Number(newProfileGrade.value));newProfileName.value="";refreshProfiles();profileSelect.value=p.profile_id;bindProfile(p.profile_id);}catch(err){banner(profileBanner,safe(err&&err.message?err.message:err),"error");}});
+      profileSelect.addEventListener("change",function(){bindProfile(profileSelect.value);});
+      gradeSelect.addEventListener("change",refreshModules); moduleSelect.addEventListener("change",refreshTopics); topicSelect.addEventListener("change",renderCoverage); focusSelect.addEventListener("change",renderCoverage);
+      startBtn.addEventListener("click",startSession);
+      nextBtn.addEventListener("click",function(){if(!st.session)return; if(!st.answers[safe(st.session.questions[st.i].session_question_id)])return; if(st.i>=st.session.questions.length-1){finishSession();return;} st.i+=1; renderQ();});
+      quitBtn.addEventListener("click",function(){st.session=null; quizCard.classList.add("hidden"); resultCard.classList.add("hidden"); setupCard.classList.remove("hidden"); builderCard.classList.remove("hidden"); renderCoverage();});
+      retakeBtn.addEventListener("click",function(){if(!st.ctx)return; gradeSelect.value=String(st.ctx.grade); refreshModules(); if(st.ctx.module){moduleSelect.value=String(st.ctx.module); refreshTopics();} topicSelect.value=String(st.ctx.topic_id); focusSelect.value=String(st.ctx.focus_area); renderCoverage(); startSession();});
+      newTopicBtn.addEventListener("click",function(){quizCard.classList.add("hidden"); resultCard.classList.add("hidden"); setupCard.classList.remove("hidden"); builderCard.classList.remove("hidden"); renderCoverage();});
+
+      refreshProfiles(); refreshModules(); bindProfile("");
+    })();
+  </script>
+</body>
+</html>

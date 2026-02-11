@@ -47,7 +47,7 @@ function MajorDiagnosticActions({
   majorObjectiveId,
   studentMajorObjectiveId,
   majorStatus,
-  majorReady,
+  majorReady: _majorReady,
 }: {
   userId: string;
   majorObjectiveId: string;
@@ -72,14 +72,6 @@ function MajorDiagnosticActions({
   const vivaRequested = majorStatus === "viva_requested";
   const mastered = majorStatus === "mastered";
 
-  if (vivaRequested) {
-    return (
-      <div className="text-xs text-[#7c3aed] bg-[#7c3aed]/10 px-3 py-2 rounded-full">
-        Viva requested
-      </div>
-    );
-  }
-
   if (mastered) {
     return (
       <div className="text-xs text-[#15803d] bg-[#15803d]/10 px-3 py-2 rounded-full">
@@ -89,34 +81,52 @@ function MajorDiagnosticActions({
   }
 
   if (hasFailedDiagnostic) {
+    if (!vivaRequested) {
+      return (
+        <button
+          type="button"
+          onClick={() =>
+            updateMajorStatus({
+              studentMajorObjectiveId: studentMajorObjectiveId as any,
+              status: "viva_requested",
+            })
+          }
+          className="px-4 py-2 rounded-full text-xs uppercase tracking-[0.1em] transition-colors bg-black text-white"
+        >
+          Request Viva
+        </button>
+      );
+    }
+
+    if (hasActiveUnlock) {
+      return (
+        <button
+          type="button"
+          onClick={() =>
+            navigate(`/deep-work/diagnostic/${majorObjectiveId}?type=mastery`)
+          }
+          className="px-4 py-2 rounded-full text-xs uppercase tracking-[0.1em] transition-colors bg-black text-white"
+        >
+          Start Diagnostic
+        </button>
+      );
+    }
+
     return (
       <button
         type="button"
         onClick={() =>
-          updateMajorStatus({
-            studentMajorObjectiveId: studentMajorObjectiveId as any,
-            status: "viva_requested",
+          requestUnlock({
+            userId: userId as any,
+            majorObjectiveId: majorObjectiveId as any,
           })
         }
-        className="px-4 py-2 rounded-full text-xs uppercase tracking-[0.1em] transition-colors bg-black text-white"
+        disabled={hasPendingUnlockRequest}
+        className={`px-4 py-2 rounded-full text-xs uppercase tracking-[0.1em] transition-colors ${
+          hasPendingUnlockRequest ? "bg-black/5 text-[#888]" : "bg-black text-white"
+        }`}
       >
-        Request Viva
-      </button>
-    );
-  }
-
-  if (hasActiveUnlock) {
-    return (
-      <button
-        type="button"
-        onClick={() =>
-          navigate(
-            `/deep-work/diagnostic/${majorObjectiveId}?type=${majorReady ? "mastery" : "practice"}`
-          )
-        }
-        className="px-4 py-2 rounded-full text-xs uppercase tracking-[0.1em] transition-colors bg-black text-white"
-      >
-        {majorReady ? "Start Diagnostic" : "Practice Diagnostic"}
+        {hasPendingUnlockRequest ? "Diagnostic Requested" : "Request Diagnostic"}
       </button>
     );
   }
@@ -124,18 +134,10 @@ function MajorDiagnosticActions({
   return (
     <button
       type="button"
-      onClick={() =>
-        requestUnlock({
-          userId: userId as any,
-          majorObjectiveId: majorObjectiveId as any,
-        })
-      }
-      disabled={hasPendingUnlockRequest}
-      className={`px-4 py-2 rounded-full text-xs uppercase tracking-[0.1em] transition-colors ${
-        hasPendingUnlockRequest ? "bg-black/5 text-[#888]" : "bg-black text-white"
-      }`}
+      onClick={() => navigate(`/deep-work/diagnostic/${majorObjectiveId}?type=mastery`)}
+      className="px-4 py-2 rounded-full text-xs uppercase tracking-[0.1em] transition-colors bg-black text-white"
     >
-      {hasPendingUnlockRequest ? "Diagnostic Requested" : "Request Diagnostic"}
+      Start Diagnostic
     </button>
   );
 }

@@ -59,6 +59,29 @@ const TIME_OPTIONS = Array.from({ length: 17 }, (_, i) => formatHourLabel(6 + i)
 // Sentinel value for "no time selected" in the dropdown
 const NO_TIME_VALUE = "__no_time__";
 
+const IS_PROD = import.meta.env.PROD;
+const ALWAYS_PERSIST_LOG_TYPES = new Set(["action", "error"]);
+
+function parseChatLogSampleRate(raw: string | undefined): number {
+  const fallback = IS_PROD ? 0.02 : 1;
+  if (!raw) return fallback;
+  const parsed = Number(raw);
+  if (!Number.isFinite(parsed)) return fallback;
+  return Math.max(0, Math.min(1, parsed));
+}
+
+// In production, sample noisy chat trace logs to avoid DB bloat.
+// Override with VITE_CHAT_LOG_SAMPLE_RATE in [0..1], e.g. 0.01 (1%).
+const CHAT_LOG_SAMPLE_RATE = parseChatLogSampleRate(import.meta.env.VITE_CHAT_LOG_SAMPLE_RATE);
+
+function shouldPersistChatLog(type: string): boolean {
+  if (!IS_PROD) return true;
+  if (ALWAYS_PERSIST_LOG_TYPES.has(type)) return true;
+  if (CHAT_LOG_SAMPLE_RATE <= 0) return false;
+  if (CHAT_LOG_SAMPLE_RATE >= 1) return true;
+  return Math.random() < CHAT_LOG_SAMPLE_RATE;
+}
+
 // X icon for close button
 function XIcon({ className = "w-4 h-4" }: { className?: string }) {
   return (
@@ -1489,7 +1512,10 @@ function TheMuse({
 
   // Auto-log to Convex (fire and forget)
   const addChatLog = (type: string, data: any) => {
-    console.log(`[AI Chat] ${type}:`, data);
+    if (!IS_PROD) {
+      console.log(`[AI Chat] ${type}:`, data);
+    }
+    if (!shouldPersistChatLog(type)) return;
     logMutation({ type, data }).catch((e) => console.error("[AI Chat] Log failed:", e));
   };
 

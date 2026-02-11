@@ -1,0 +1,1 @@
+export const STUDENT_CHARACTER_SYSTEM_ENABLED = false;

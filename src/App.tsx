@@ -18,6 +18,7 @@ import { DiagnosticPage } from "./pages/student/DiagnosticPage";
 import { ReadingPage } from "./pages/student/ReadingPage";
 import { TrustJarPage } from "./pages/student/TrustJarPage";
 import { VisionBoardPage } from "./pages/student/VisionBoardPage";
+import { CharacterPage } from "./pages/student/CharacterPage";
 import { SettingsPage as StudentSettingsPage } from "./pages/student/SettingsPage";
 
 // Admin pages
@@ -31,12 +32,15 @@ import {
   PresentationQueuePage,
   BooksPage,
   NormsPage,
+  CommentsPage,
   AdminSettingsPage,
 } from "./pages/admin";
 
 import { ProjectDetailPage } from "./pages/admin/ProjectDetailPage";
 import { StudentDetailPage } from "./pages/admin/StudentDetailPage";
 import { AdminTrustJarPage } from "./pages/admin/TrustJarPage";
+import { CharacterCatalogPage } from "./pages/admin/CharacterCatalogPage";
+import { STUDENT_CHARACTER_SYSTEM_ENABLED } from "./lib/featureFlags";
 
 // Initialize Convex client
 // Note: Replace with your actual Convex URL after running `npx convex dev`
@@ -78,6 +82,16 @@ function App() {
               <Route path="/reading" element={<ReadingPage />} />
               <Route path="/trust-jar" element={<TrustJarPage />} />
               <Route path="/vision-board" element={<VisionBoardPage />} />
+              <Route
+                path="/character"
+                element={
+                  STUDENT_CHARACTER_SYSTEM_ENABLED ? (
+                    <CharacterPage />
+                  ) : (
+                    <Navigate to="/dashboard" replace />
+                  )
+                }
+              />
               <Route path="/settings" element={<StudentSettingsPage />} />
             </Route>
 
@@ -100,6 +114,8 @@ function App() {
               <Route path="/admin/presentations" element={<PresentationQueuePage />} />
               <Route path="/admin/books" element={<BooksPage />} />
               <Route path="/admin/norms" element={<NormsPage />} />
+              <Route path="/admin/comments" element={<CommentsPage />} />
+              <Route path="/admin/character" element={<CharacterCatalogPage />} />
               <Route path="/admin/trust-jar" element={<AdminTrustJarPage />} />
               <Route path="/admin/settings" element={<AdminSettingsPage />} />
             </Route>

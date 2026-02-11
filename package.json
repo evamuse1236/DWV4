@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "test": "vitest",
     "test:run": "vitest run",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "diagnostic:v2:sync": "node scripts/sync-diagnostic-v2.mjs"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",
@@ -28,6 +29,7 @@
     "cmdk": "^1.1.1",
     "convex": "^1.31.7",
     "framer-motion": "^12.25.0",
+    "katex": "^0.16.28",
     "lucide-react": "^0.562.0",
     "matter-js": "^0.20.0",
     "react": "^19.2.0",

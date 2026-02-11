@@ -356,7 +356,7 @@ describe("DomainDetailPage", () => {
       (useParams as any).mockReturnValue({ domainId: "domain_123_valid_id" });
     });
 
-    it("shows 'Request Diagnostic' when no unlock is active", () => {
+    it("shows 'Start Diagnostic' when there is no failed attempt", () => {
       (useQuery as any).mockImplementation((query: string) => {
         if (query === "domains.getById") return mockDomain;
         if (query === "objectives.getAssignedByDomain")
@@ -377,7 +377,7 @@ describe("DomainDetailPage", () => {
       render(<DomainDetailPage />);
 
       expect(
-        screen.getByRole("button", { name: /request diagnostic/i })
+        screen.getByRole("button", { name: /start diagnostic/i })
       ).toBeInTheDocument();
     });
 
@@ -406,7 +406,7 @@ describe("DomainDetailPage", () => {
       ).toBeInTheDocument();
     });
 
-    it("shows 'Practice Diagnostic' when major is not ready and unlock is active", () => {
+    it("shows 'Start Diagnostic' when major is not ready and there is no failed attempt", () => {
       (useQuery as any).mockImplementation((query: string) => {
         if (query === "domains.getById") return mockDomain;
         if (query === "objectives.getAssignedByDomain")
@@ -427,7 +427,7 @@ describe("DomainDetailPage", () => {
       render(<DomainDetailPage />);
 
       expect(
-        screen.getByRole("button", { name: /practice diagnostic/i })
+        screen.getByRole("button", { name: /start diagnostic/i })
       ).toBeInTheDocument();
     });
 

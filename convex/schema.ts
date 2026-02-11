@@ -65,6 +65,7 @@ export default defineSchema({
   goals: defineTable({
     userId: v.id("users"),
     sprintId: v.id("sprints"),
+    domainId: v.optional(v.id("domains")),
     title: v.string(),
     // SMART goal components
     specific: v.string(),
@@ -88,6 +89,7 @@ export default defineSchema({
   actionItems: defineTable({
     goalId: v.optional(v.id("goals")), // Optional - null for standalone/quick tasks
     userId: v.id("users"),
+    domainId: v.optional(v.id("domains")),
     title: v.string(),
     description: v.optional(v.string()),
     weekNumber: v.number(),
@@ -105,6 +107,7 @@ export default defineSchema({
   habits: defineTable({
     userId: v.id("users"),
     sprintId: v.id("sprints"),
+    domainId: v.optional(v.id("domains")),
     name: v.string(),
     description: v.optional(v.string()),
     whatIsHabit: v.string(),
@@ -293,6 +296,8 @@ export default defineSchema({
     diagnosticModuleIds: v.array(v.string()),
     questionCount: v.number(),
     score: v.number(),
+    scorePercent: v.optional(v.number()),
+    passThresholdPercent: v.optional(v.number()),
     passed: v.boolean(),
     startedAt: v.number(),
     submittedAt: v.number(),
@@ -307,12 +312,147 @@ export default defineSchema({
         misconception: v.string(),
         explanation: v.string(),
         visualHtml: v.optional(v.string()),
+        stem: v.optional(v.string()),
       })
     ),
   })
     .index("by_user_major", ["userId", "majorObjectiveId", "submittedAt"])
     .index("by_passed", ["passed", "submittedAt"])
     .index("by_major_passed", ["majorObjectiveId", "passed", "submittedAt"]),
+
+  studentComments: defineTable({
+    userId: v.id("users"),
+    message: v.string(),
+    route: v.optional(v.string()),
+    pageTitle: v.optional(v.string()),
+    pageUrl: v.optional(v.string()),
+    commenterDisplayName: v.optional(v.string()),
+    commenterUsername: v.optional(v.string()),
+    attachments: v.optional(
+      v.array(
+        v.object({
+          storageId: v.id("_storage"),
+          fileName: v.string(),
+          contentType: v.optional(v.string()),
+          sizeBytes: v.optional(v.number()),
+        })
+      )
+    ),
+    majorObjectiveId: v.optional(v.id("majorObjectives")),
+    diagnosticAttemptId: v.optional(v.id("diagnosticAttempts")),
+    status: v.union(v.literal("open"), v.literal("resolved")),
+    createdAt: v.number(),
+    resolvedAt: v.optional(v.number()),
+    resolvedBy: v.optional(v.id("users")),
+  })
+    .index("by_created", ["createdAt"])
+    .index("by_user_created", ["userId", "createdAt"])
+    .index("by_status_created", ["status", "createdAt"]),
+
+  // ============ CHARACTER SYSTEM ============
+  characterProfiles: defineTable({
+    userId: v.id("users"),
+    totalXp: v.number(),
+    level: v.number(),
+    xpIntoLevel: v.number(),
+    xpNeededForNextLevel: v.number(),
+    activeTarotCardId: v.optional(v.id("tarotCards")),
+    createdAt: v.number(),
+    updatedAt: v.number(),
+  }).index("by_user", ["userId"]),
+
+  characterDomainStats: defineTable({
+    userId: v.id("users"),
+    domainId: v.id("domains"),
+    xp: v.number(),
+    statLevel: v.number(),
+    updatedAt: v.number(),
+  })
+    .index("by_user", ["userId"])
+    .index("by_user_domain", ["userId", "domainId"]),
+
+  characterXpLedger: defineTable({
+    userId: v.id("users"),
+    sourceType: v.union(
+      v.literal("action_item"),
+      v.literal("habit_completion"),
+      v.literal("activity_completion"),
+      v.literal("diagnostic_attempt"),
+      v.literal("major_mastered"),
+      v.literal("reading_milestone"),
+      v.literal("manual_adjustment")
+    ),
+    sourceKey: v.string(),
+    xpAwarded: v.number(),
+    domainId: v.optional(v.id("domains")),
+    meta: v.optional(v.any()),
+    awardedAt: v.number(),
+  })
+    .index("by_user_awardedAt", ["userId", "awardedAt"])
+    .index("by_user_sourceKey", ["userId", "sourceKey"]),
+
+  tarotCards: defineTable({
+    name: v.string(),
+    slug: v.string(),
+    description: v.optional(v.string()),
+    imageStorageId: v.id("_storage"),
+    unlockLevel: v.number(),
+    domainAffinityId: v.optional(v.id("domains")),
+    rarity: v.union(
+      v.literal("common"),
+      v.literal("rare"),
+      v.literal("epic"),
+      v.literal("legendary")
+    ),
+    isActive: v.boolean(),
+    displayOrder: v.number(),
+    createdAt: v.number(),
+    updatedAt: v.number(),
+  })
+    .index("by_unlockLevel", ["unlockLevel"])
+    .index("by_active_order", ["isActive", "displayOrder"])
+    .index("by_slug", ["slug"]),
+
+  studentTarotUnlocks: defineTable({
+    userId: v.id("users"),
+    tarotCardId: v.id("tarotCards"),
+    unlockedAt: v.number(),
+    unlockReason: v.union(
+      v.literal("level"),
+      v.literal("badge"),
+      v.literal("admin")
+    ),
+  })
+    .index("by_user", ["userId"])
+    .index("by_user_card", ["userId", "tarotCardId"]),
+
+  badgeDefinitions: defineTable({
+    code: v.string(),
+    name: v.string(),
+    description: v.string(),
+    icon: v.string(),
+    thresholdType: v.union(
+      v.literal("level"),
+      v.literal("total_mastered"),
+      v.literal("diagnostic_passes"),
+      v.literal("habit_streak"),
+      v.literal("reading_presented")
+    ),
+    thresholdValue: v.number(),
+    displayOrder: v.number(),
+    isActive: v.boolean(),
+  })
+    .index("by_thresholdType", ["thresholdType"])
+    .index("by_code", ["code"]),
+
+  studentBadges: defineTable({
+    userId: v.id("users"),
+    badgeCode: v.string(),
+    awardedAt: v.number(),
+    meta: v.optional(v.any()),
+  })
+    .index("by_user", ["userId"])
+    .index("by_user_badge", ["userId", "badgeCode"]),
 
   // ============ READING LIBRARY ============
   books: defineTable({

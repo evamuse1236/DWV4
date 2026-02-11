@@ -1,5 +1,10 @@
 import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
+import {
+  CHARACTER_XP,
+  awardXpIfNotExists,
+  ensureMomentumDomain,
+} from "./characterAwards";
 
 /**
  * Get goals for a user in a sprint (with action items)
@@ -62,6 +67,7 @@ export const create = mutation({
   args: {
     userId: v.id("users"),
     sprintId: v.id("sprints"),
+    domainId: v.optional(v.id("domains")),
     title: v.string(),
     specific: v.string(),
     measurable: v.string(),
@@ -87,6 +93,7 @@ export const create = mutation({
 export const update = mutation({
   args: {
     goalId: v.id("goals"),
+    domainId: v.optional(v.id("domains")),
     title: v.optional(v.string()),
     specific: v.optional(v.string()),
     measurable: v.optional(v.string()),
@@ -139,6 +146,7 @@ export const addActionItem = mutation({
   args: {
     goalId: v.optional(v.id("goals")), // Optional - null for standalone tasks
     userId: v.id("users"),
+    domainId: v.optional(v.id("domains")),
     title: v.string(),
     description: v.optional(v.string()),
     weekNumber: v.number(),
@@ -146,6 +154,7 @@ export const addActionItem = mutation({
   },
   handler: async (ctx, args) => {
     let maxOrder = -1;
+    const momentumDomainId = await ensureMomentumDomain(ctx);
 
     if (args.goalId) {
       // Get current max order for this goal
@@ -172,6 +181,7 @@ export const addActionItem = mutation({
     const itemId = await ctx.db.insert("actionItems", {
       goalId: args.goalId, // Will be undefined for standalone tasks
       userId: args.userId,
+      domainId: momentumDomainId,
       title: args.title,
       description: args.description,
       weekNumber: args.weekNumber,
@@ -194,11 +204,31 @@ export const toggleActionItem = mutation({
   handler: async (ctx, args) => {
     const item = await ctx.db.get(args.itemId);
     if (!item) return { success: false };
+    const momentumDomainId = await ensureMomentumDomain(ctx);
 
+    const completing = !item.isCompleted;
     await ctx.db.patch(args.itemId, {
-      isCompleted: !item.isCompleted,
-      completedAt: !item.isCompleted ? Date.now() : undefined,
+      isCompleted: completing,
+      completedAt: completing ? Date.now() : undefined,
     });
+
+    if (completing) {
+      if (item.domainId !== momentumDomainId) {
+        await ctx.db.patch(args.itemId, { domainId: momentumDomainId });
+      }
+
+      await awardXpIfNotExists(ctx, {
+        userId: item.userId,
+        sourceType: "action_item",
+        sourceKey: `action_item:${args.itemId}`,
+        xp: CHARACTER_XP.actionItem,
+        domainId: momentumDomainId,
+        meta: {
+          actionItemId: args.itemId,
+          goalId: item.goalId,
+        },
+      });
+    }
 
     return { success: true };
   },
@@ -211,6 +241,7 @@ export const toggleActionItem = mutation({
 export const updateActionItem = mutation({
   args: {
     itemId: v.id("actionItems"),
+    domainId: v.optional(v.id("domains")),
     title: v.optional(v.string()),
     description: v.optional(v.string()),
     weekNumber: v.optional(v.number()),
@@ -357,6 +388,7 @@ async function copyActionItems(
   sourceGoalId: any,
   targetGoalId: any
 ): Promise<void> {
+  const momentumDomainId = await ensureMomentumDomain(ctx);
   const actionItems = await ctx.db
     .query("actionItems")
     .withIndex("by_goal", (q: any) => q.eq("goalId", sourceGoalId))
@@ -366,6 +398,7 @@ async function copyActionItems(
     await ctx.db.insert("actionItems", {
       goalId: targetGoalId,
       userId: item.userId,
+      domainId: momentumDomainId,
       title: item.title,
       description: item.description,
       weekNumber: item.weekNumber,
@@ -395,6 +428,7 @@ export const duplicate = mutation({
     const newGoalId = await ctx.db.insert("goals", {
       userId: sourceGoal.userId,
       sprintId: args.targetSprintId || sourceGoal.sprintId,
+      domainId: sourceGoal.domainId,
       title: `${sourceGoal.title} (copy)`,
       specific: sourceGoal.specific,
       measurable: sourceGoal.measurable,
@@ -433,6 +467,7 @@ export const importGoal = mutation({
     const newGoalId = await ctx.db.insert("goals", {
       userId: sourceGoal.userId,
       sprintId: args.targetSprintId,
+      domainId: sourceGoal.domainId,
       title: sourceGoal.title,
       specific: sourceGoal.specific,
       measurable: sourceGoal.measurable,

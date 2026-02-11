@@ -1,5 +1,10 @@
 import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
+import {
+  CHARACTER_XP,
+  awardXpIfNotExists,
+  ensureMomentumDomain,
+} from "./characterAwards";
 
 /**
  * Get habits for a user in a sprint (with completions)
@@ -59,6 +64,7 @@ export const create = mutation({
   args: {
     userId: v.id("users"),
     sprintId: v.id("sprints"),
+    domainId: v.optional(v.id("domains")),
     name: v.string(),
     description: v.optional(v.string()),
     whatIsHabit: v.string(),
@@ -67,8 +73,10 @@ export const create = mutation({
     reward: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
+    const momentumDomainId = await ensureMomentumDomain(ctx);
     const habitId = await ctx.db.insert("habits", {
       ...args,
+      domainId: momentumDomainId,
       createdAt: Date.now(),
     });
     return { success: true, habitId };
@@ -81,6 +89,7 @@ export const create = mutation({
 export const update = mutation({
   args: {
     habitId: v.id("habits"),
+    domainId: v.optional(v.id("domains")),
     name: v.optional(v.string()),
     description: v.optional(v.string()),
     whatIsHabit: v.optional(v.string()),
@@ -131,6 +140,10 @@ export const toggleCompletion = mutation({
     date: v.string(),
   },
   handler: async (ctx, args) => {
+    const habit = await ctx.db.get(args.habitId);
+    if (!habit) throw new Error("Habit not found");
+    const momentumDomainId = await ensureMomentumDomain(ctx);
+
     // Check if completion exists
     const existing = await ctx.db
       .query("habitCompletions")
@@ -139,9 +152,11 @@ export const toggleCompletion = mutation({
       )
       .first();
 
+    let becameCompleted = false;
     if (existing) {
       // Toggle existing
-      await ctx.db.patch(existing._id, { completed: !existing.completed });
+      becameCompleted = !existing.completed;
+      await ctx.db.patch(existing._id, { completed: becameCompleted });
     } else {
       // Create new completion
       await ctx.db.insert("habitCompletions", {
@@ -149,6 +164,25 @@ export const toggleCompletion = mutation({
         userId: args.userId,
         date: args.date,
         completed: true,
+      });
+      becameCompleted = true;
+    }
+
+    if (becameCompleted) {
+      if (habit.domainId !== momentumDomainId) {
+        await ctx.db.patch(args.habitId, { domainId: momentumDomainId });
+      }
+
+      await awardXpIfNotExists(ctx, {
+        userId: args.userId,
+        sourceType: "habit_completion",
+        sourceKey: `habit_completion:${args.habitId}:${args.date}`,
+        xp: CHARACTER_XP.habitCompletion,
+        domainId: momentumDomainId,
+        meta: {
+          habitId: args.habitId,
+          date: args.date,
+        },
       });
     }
 

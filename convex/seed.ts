@@ -2,6 +2,211 @@ import { mutation } from "./_generated/server";
 import { v } from "convex/values";
 import { hashPassword } from "./utils";
 
+const defaultBadgeDefinitions = [
+  {
+    code: "LVL_5",
+    name: "Level 5",
+    description: "Reach level 5 in your character journey.",
+    icon: "⭐",
+    thresholdType: "level",
+    thresholdValue: 5,
+    displayOrder: 1,
+  },
+  {
+    code: "LVL_10",
+    name: "Level 10",
+    description: "Reach level 10 in your character journey.",
+    icon: "🌟",
+    thresholdType: "level",
+    thresholdValue: 10,
+    displayOrder: 2,
+  },
+  {
+    code: "MASTER_3",
+    name: "Mastery Starter",
+    description: "Master 3 major objectives.",
+    icon: "🏅",
+    thresholdType: "total_mastered",
+    thresholdValue: 3,
+    displayOrder: 3,
+  },
+  {
+    code: "MASTER_10",
+    name: "Mastery Adept",
+    description: "Master 10 major objectives.",
+    icon: "🎖️",
+    thresholdType: "total_mastered",
+    thresholdValue: 10,
+    displayOrder: 4,
+  },
+  {
+    code: "DIAG_PASS_5",
+    name: "Diagnostic Striker",
+    description: "Pass 5 diagnostics.",
+    icon: "🧠",
+    thresholdType: "diagnostic_passes",
+    thresholdValue: 5,
+    displayOrder: 5,
+  },
+  {
+    code: "HABIT_STREAK_7",
+    name: "Consistency Pulse",
+    description: "Hold a 7-day streak on any habit.",
+    icon: "🔥",
+    thresholdType: "habit_streak",
+    thresholdValue: 7,
+    displayOrder: 6,
+  },
+  {
+    code: "READER_3",
+    name: "Reading Voice",
+    description: "Present 3 books.",
+    icon: "📚",
+    thresholdType: "reading_presented",
+    thresholdValue: 3,
+    displayOrder: 7,
+  },
+] as const;
+
+const defaultTarotCardSeeds = [
+  {
+    name: "The Initiate",
+    slug: "the-initiate",
+    description: "Your first step into focused mastery.",
+    unlockLevel: 1,
+    rarity: "common",
+    displayOrder: 1,
+    domainHint: "math",
+    palette: { bg: "#f5e9d6", fg: "#5a3e2b" },
+  },
+  {
+    name: "The Storyweaver",
+    slug: "the-storyweaver",
+    description: "Ideas woven into language and expression.",
+    unlockLevel: 3,
+    rarity: "rare",
+    displayOrder: 2,
+    domainHint: "writing",
+    palette: { bg: "#e8f3e4", fg: "#335a2a" },
+  },
+  {
+    name: "The Archivist",
+    slug: "the-archivist",
+    description: "Keeper of memory, meaning, and perspective.",
+    unlockLevel: 5,
+    rarity: "epic",
+    displayOrder: 3,
+    domainHint: "reading",
+    palette: { bg: "#e5eff8", fg: "#25445f" },
+  },
+  {
+    name: "The Compiler",
+    slug: "the-compiler",
+    description: "Builder of logic, systems, and possibility.",
+    unlockLevel: 8,
+    rarity: "legendary",
+    displayOrder: 4,
+    domainHint: "coding",
+    palette: { bg: "#fbe6ea", fg: "#6a2738" },
+  },
+] as const;
+
+async function ensureCharacterSeedData(ctx: any) {
+  const existingDomains = await ctx.db.query("domains").collect();
+  const hasMomentum = existingDomains.some(
+    (domain: any) => domain.name.toLowerCase() === "momentum"
+  );
+  if (!hasMomentum) {
+    const nextOrder =
+      existingDomains.length > 0
+        ? Math.max(...existingDomains.map((domain: any) => domain.order ?? 0)) + 1
+        : 1;
+    await ctx.db.insert("domains", {
+      name: "Momentum",
+      icon: "⚡",
+      color: "#f59e0b",
+      description: "Consistency momentum built through tasks and habits.",
+      order: nextOrder,
+    });
+  }
+
+  let badgeDefinitionsCreated = 0;
+  for (const badge of defaultBadgeDefinitions) {
+    const existing = await ctx.db
+      .query("badgeDefinitions")
+      .withIndex("by_code", (q: any) => q.eq("code", badge.code))
+      .first();
+    if (existing) continue;
+
+    await ctx.db.insert("badgeDefinitions", {
+      ...badge,
+      isActive: true,
+    });
+    badgeDefinitionsCreated += 1;
+  }
+
+  const domains = await ctx.db.query("domains").collect();
+  const resolveDomainId = (hint: string) => {
+    const loweredHint = hint.toLowerCase();
+    const match = domains.find((domain: any) =>
+      domain.name.toLowerCase().includes(loweredHint)
+    );
+    return match?._id;
+  };
+
+  let fallbackImageStorageId: string | undefined;
+  const existingCardWithImage = await ctx.db.query("tarotCards").first();
+  if (existingCardWithImage?.imageStorageId) {
+    fallbackImageStorageId = existingCardWithImage.imageStorageId;
+  } else {
+    const comments = await ctx.db.query("studentComments").collect();
+    for (const comment of comments) {
+      const attachment = (comment.attachments || [])[0];
+      if (attachment?.storageId) {
+        fallbackImageStorageId = attachment.storageId;
+        break;
+      }
+    }
+  }
+
+  let tarotCardsCreated = 0;
+  let tarotCardsSkipped = 0;
+  for (const card of defaultTarotCardSeeds) {
+    const existing = await ctx.db
+      .query("tarotCards")
+      .withIndex("by_slug", (q: any) => q.eq("slug", card.slug))
+      .first();
+    if (existing) continue;
+
+    if (!fallbackImageStorageId) {
+      tarotCardsSkipped += 1;
+      continue;
+    }
+
+    await ctx.db.insert("tarotCards", {
+      name: card.name,
+      slug: card.slug,
+      description: card.description,
+      imageStorageId: fallbackImageStorageId as any,
+      unlockLevel: card.unlockLevel,
+      domainAffinityId: resolveDomainId(card.domainHint),
+      rarity: card.rarity,
+      isActive: true,
+      displayOrder: card.displayOrder,
+      createdAt: Date.now(),
+      updatedAt: Date.now(),
+    });
+    tarotCardsCreated += 1;
+  }
+
+  return {
+    badgeDefinitionsCreated,
+    tarotCardsCreated,
+    tarotCardsSkipped,
+    tarotSeedRequiresManualImages: tarotCardsSkipped > 0,
+  };
+}
+
 /**
  * Seed all starter content (emotions, domains, books)
  * Called from SetupPage after admin account creation
@@ -12,7 +217,12 @@ export const seedAll = mutation({
     // Check if already seeded (by checking if emotion categories exist)
     const existingEmotions = await ctx.db.query("emotionCategories").first();
     if (existingEmotions) {
-      return { success: true, message: "Already seeded" };
+      const characterSeedSummary = await ensureCharacterSeedData(ctx);
+      return {
+        success: true,
+        message: "Already seeded core data",
+        ...characterSeedSummary,
+      };
     }
 
     // Seed emotion categories and subcategories
@@ -50,6 +260,7 @@ export const seedAll = mutation({
       { name: "Reading", icon: "📖", description: "Comprehension and literary analysis", color: "#60a5fa" },
       { name: "Coding", icon: "💻", description: "Programming and computational thinking", color: "#f472b6" },
       { name: "Writing", icon: "✍️", description: "Expression and communication", color: "#4ade80" },
+      { name: "Momentum", icon: "⚡", description: "Consistency momentum built through tasks and habits.", color: "#f59e0b" },
     ];
 
     for (let i = 0; i < domains.length; i++) {
@@ -104,7 +315,12 @@ export const seedAll = mutation({
       });
     }
 
-    return { success: true, message: "Seeded emotions, domains, and books" };
+    const characterSeedSummary = await ensureCharacterSeedData(ctx);
+    return {
+      success: true,
+      message: "Seeded emotions, domains, books, character badges, and tarot cards",
+      ...characterSeedSummary,
+    };
   },
 });
 
@@ -2838,4 +3054,3 @@ export const seedBrilliantCurriculum = mutation({
     };
   },
 });
-

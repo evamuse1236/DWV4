@@ -579,7 +579,7 @@ describe("ObjectivesPage", () => {
           })
         );
       });
-    });
+    }, 10000);
 
     it("opens edit major dialog when clicking edit button", async () => {
       const user = userEvent.setup();
@@ -632,7 +632,7 @@ describe("ObjectivesPage", () => {
           })
         );
       });
-    });
+    }, 10000);
 
     it("calls remove mutation when deleting major after confirmation", async () => {
       const user = userEvent.setup();

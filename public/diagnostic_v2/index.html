@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diagnostic V2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: #111a2d;
+      --card-alt: #0f1728;
+      --text: #e5eefc;
+      --muted: #9fb2cc;
+      --border: #24334d;
+      --primary: #34d399;
+      --primary-soft: #0f2f2a;
+      --radius: 16px;
+      --shadow: 0 10px 24px rgba(0,0,0,0.35);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      min-height: 100vh;
+      padding: 1.5rem;
+    }
+    .container { max-width: 880px; margin: 0 auto; }
+    .top {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 1.25rem;
+    }
+    h1 { font-size: 1.6rem; font-weight: 800; letter-spacing: -0.01em; }
+    .sub { color: var(--muted); font-weight: 700; font-size: 0.95rem; margin-top: 0.25rem; }
+    .search {
+      display: flex;
+      gap: 0.6rem;
+      align-items: center;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.55rem 0.8rem;
+      box-shadow: var(--shadow);
+      min-width: min(420px, 100%);
+    }
+    .pilot-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      text-decoration: none;
+      color: var(--primary);
+      background: var(--primary-soft);
+      border: 1px solid rgba(15,118,110,0.2);
+      border-radius: 999px;
+      padding: 0.35rem 0.65rem;
+      font-size: 0.82rem;
+      font-weight: 900;
+    }
+    .pilot-link:hover {
+      border-color: rgba(15,118,110,0.38);
+      color: var(--primary);
+    }
+    .search input {
+      border: none;
+      outline: none;
+      width: 100%;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      background: transparent;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: var(--primary);
+      background: var(--primary-soft);
+      border: 1px solid rgba(15,118,110,0.18);
+      padding: 0.25rem 0.55rem;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 0.9rem;
+      margin-top: 1rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem 1rem 0.9rem;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+    .title-row { display: flex; align-items: center; justify-content: space-between; gap: 0.8rem; }
+    .std { font-weight: 800; font-size: 1.05rem; }
+    .topic { color: var(--muted); font-weight: 700; font-size: 0.9rem; }
+    .module-line { color: var(--muted); font-weight: 700; font-size: 0.85rem; }
+    .stmt { color: var(--text); font-weight: 700; font-size: 0.92rem; }
+    .actions {
+      margin-top: 0.35rem;
+      display: flex;
+      gap: 0.6rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .btn {
+      appearance: none;
+      border: 1px solid rgba(15,118,110,0.22);
+      background: var(--primary);
+      color: white;
+      font-weight: 800;
+      font-size: 0.9rem;
+      padding: 0.55rem 0.75rem;
+      border-radius: 12px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 110px;
+    }
+    .btn:focus { outline: 3px solid rgba(15,118,110,0.25); outline-offset: 2px; }
+    .links a {
+      color: var(--muted);
+      font-weight: 800;
+      font-size: 0.85rem;
+      text-decoration: none;
+      border-bottom: 1px dotted rgba(107,101,96,0.55);
+    }
+    .links a:hover { color: var(--text); border-bottom-color: rgba(229,238,252,0.45); }
+    .empty {
+      margin-top: 1rem;
+      padding: 1rem;
+      color: var(--muted);
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top">
+      <div>
+        <h1>Diagnostic V2</h1>
+        <div class="sub">Neo Module -> Topic -> CC Standard. 5 questions per standard.</div>
+        <a class="pilot-link" href="grade7_textbook_tests.html">Open Grade 7 Pilot Tests</a>
+        <a class="pilot-link" href="grade5_textbook_tests.html">Open Grade 5 Pilot Tests</a>
+        <a class="pilot-link" href="mastery.html">Open Mastery Exercise</a>
+      </div>
+      <div class="search" role="search">
+        <span class="pill" id="countPill">0 standards</span>
+        <input id="q" type="search" placeholder="Search CC standard, module, or topic..." autocomplete="off" />
+      </div>
+    </div>
+
+    <div id="grid" class="grid" aria-live="polite"></div>
+    <div id="empty" class="empty" style="display:none;">No matches.</div>
+  </div>
+
+  <script src="data.js"></script>
+  <script>
+    (function () {
+      function safeText(s) { return (s == null) ? '' : String(s); }
+      function matches(s, q) { return safeText(s).toLowerCase().indexOf(q) !== -1; }
+
+      var data = (typeof DIAGNOSTIC_V2_DATA !== 'undefined') ? DIAGNOSTIC_V2_DATA : null;
+      var standards = data && Array.isArray(data.standards) ? data.standards : [];
+
+      var grid = document.getElementById('grid');
+      var empty = document.getElementById('empty');
+      var input = document.getElementById('q');
+      var countPill = document.getElementById('countPill');
+
+      function render(list) {
+        grid.innerHTML = '';
+        empty.style.display = list.length ? 'none' : 'block';
+        countPill.textContent = list.length + ' standard' + (list.length === 1 ? '' : 's');
+
+        for (var i = 0; i < list.length; i++) {
+          var s = list[i];
+          var std = safeText(s.standard_id);
+          var topicId = safeText(s.topic_id);
+          var topic = safeText(s.topic_title);
+          var stmt = safeText(s.standard_statement);
+          var module = safeText(s.module);
+          var topicText = topic ? ('Topic ' + (topicId ? (topicId + ' - ') : '') + topic) : '';
+          var moduleText = module ? ('Module: ' + module) : '';
+          var kaLinks = Array.isArray(s.ka_links) ? s.ka_links : [];
+
+          var card = document.createElement('div');
+          card.className = 'card';
+          card.innerHTML =
+            '<div class="title-row">' +
+              '<div>' +
+                '<div class="std">' + std + '</div>' +
+                '<div class="topic">' + (topicText || moduleText) + '</div>' +
+                '<div class="module-line">' + (topicText ? moduleText : '') + '</div>' +
+              '</div>' +
+              '<span class="pill">5Q</span>' +
+            '</div>' +
+            '<div class="stmt">' + stmt + '</div>' +
+            '<div class="actions">' +
+              '<a class="btn" href="quiz.html?standard_id=' + encodeURIComponent(std) + '">Start</a>' +
+              '<div class="links" id="links-' + i + '"></div>' +
+            '</div>';
+
+          grid.appendChild(card);
+
+          var linksEl = card.querySelector('#links-' + i);
+          if (!linksEl) continue;
+          if (!kaLinks.length) {
+            linksEl.textContent = '';
+            continue;
+          }
+          // Only show first KA link to keep UI minimal.
+          var link = kaLinks[0];
+          if (link && link.url) {
+            var a = document.createElement('a');
+            a.href = link.url;
+            a.target = '_blank';
+            a.rel = 'noreferrer';
+            a.textContent = link.label ? link.label : 'Khan Academy';
+            linksEl.appendChild(a);
+          }
+        }
+      }
+
+      function applyFilter() {
+        var q = safeText(input.value).trim().toLowerCase();
+        if (!q) { render(standards); return; }
+        var out = [];
+        for (var i = 0; i < standards.length; i++) {
+          var s = standards[i];
+          if (
+            matches(s.standard_id, q) ||
+            matches(s.standard_statement, q) ||
+            matches(s.topic_title, q) ||
+            matches(s.module, q)
+          ) {
+            out.push(s);
+          }
+        }
+        render(out);
+      }
+
+      if (!standards.length) {
+        empty.style.display = 'block';
+        empty.textContent = 'No DIAGNOSTIC_V2_DATA found. Run tools/build/build_diagnostic_v2.py.';
+        return;
+      }
+
+      render(standards);
+      input.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

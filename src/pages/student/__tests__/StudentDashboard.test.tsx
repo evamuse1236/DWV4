@@ -25,6 +25,7 @@ vi.mock("../../../../convex/_generated/api", () => ({
     goals: { getByUserAndSprint: "goals.getByUserAndSprint" },
     progress: { getDomainSummary: "progress.getDomainSummary" },
     books: { getCurrentlyReading: "books.getCurrentlyReading" },
+    character: { getMyCharacter: "character.getMyCharacter" },
     emotions: { deleteTodayCheckIn: "emotions.deleteTodayCheckIn" },
   },
 }));
