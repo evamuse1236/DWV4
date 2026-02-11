@@ -1,8 +1,13 @@
 import fs from "node:fs";
 import path from "node:path";
 
-function readLines(filePath) {
-  return fs.readFileSync(filePath, "utf8").split(/\r?\n/);
+function toChoiceLabel(choice, index) {
+  if (choice?.label) return String(choice.label).trim();
+  return String.fromCharCode(65 + index);
+}
+
+function normalizeText(value) {
+  return String(value ?? "").replace(/\s+/g, " ").trim();
 }
 
 function partIndex(fileName) {
@@ -10,7 +15,67 @@ function partIndex(fileName) {
   return match ? Number(match[1]) : Number.MAX_SAFE_INTEGER;
 }
 
-function loadMisconceptionMap(partsDir) {
+function parseMarkdownQuestionMap(filePath) {
+  const lines = fs.readFileSync(filePath, "utf8").split(/\r?\n/);
+  const map = new Map();
+
+  let currentQuestionId = null;
+  let pendingChoice = null;
+
+  for (const line of lines) {
+    const questionMatch = line.match(/^#### Q\d+ - (.+)\s*$/);
+    if (questionMatch) {
+      currentQuestionId = questionMatch[1].trim();
+      if (!map.has(currentQuestionId)) map.set(currentQuestionId, new Map());
+      pendingChoice = null;
+      continue;
+    }
+
+    const choiceMatch = line.match(
+      /^- ([A-Z])\. (.+) \[(CORRECT|WRONG)\]\s*$/
+    );
+    if (choiceMatch && currentQuestionId) {
+      const label = choiceMatch[1];
+      const choiceText = choiceMatch[2].trim();
+      const isCorrect = choiceMatch[3] === "CORRECT";
+      map.get(currentQuestionId).set(label, {
+        label,
+        text: choiceText,
+        correct: isCorrect,
+        misconception: null,
+      });
+      pendingChoice = isCorrect ? null : label;
+      continue;
+    }
+
+    const misconceptionMatch = line.match(/^\s*-\s*Misconception:\s*(.+)\s*$/);
+    if (misconceptionMatch && currentQuestionId && pendingChoice) {
+      const row = map.get(currentQuestionId).get(pendingChoice);
+      if (row) {
+        row.misconception = misconceptionMatch[1].trim();
+      }
+      pendingChoice = null;
+    }
+  }
+
+  return map;
+}
+
+function mergeQuestionMaps(questionMaps) {
+  const merged = new Map();
+  for (const map of questionMaps) {
+    for (const [questionId, labelMap] of map.entries()) {
+      if (!merged.has(questionId)) merged.set(questionId, new Map());
+      const target = merged.get(questionId);
+      for (const [label, row] of labelMap.entries()) {
+        target.set(label, row);
+      }
+    }
+  }
+  return merged;
+}
+
+function loadReadableParts(partsDir) {
   const partFiles = fs
     .readdirSync(partsDir)
     .filter((name) => /^diagnostic-part-\d+\.md$/.test(name))
@@ -20,111 +85,263 @@ function loadMisconceptionMap(partsDir) {
     throw new Error(`No readable parts found in: ${partsDir}`);
   }
 
-  const byQuestion = new Map();
+  const parsedMaps = partFiles.map((partFile) =>
+    parseMarkdownQuestionMap(path.join(partsDir, partFile))
+  );
 
-  for (const partFile of partFiles) {
-    const fullPath = path.join(partsDir, partFile);
-    const lines = readLines(fullPath);
+  return {
+    partFiles,
+    map: mergeQuestionMaps(parsedMaps),
+  };
+}
 
-    let currentQuestionId = null;
-    let pendingWrongChoiceLabel = null;
-
-    for (const line of lines) {
-      const questionMatch = line.match(/^#### Q\d+ - (.+)\s*$/);
-      if (questionMatch) {
-        currentQuestionId = questionMatch[1].trim();
-        pendingWrongChoiceLabel = null;
-        continue;
-      }
-
-      const choiceMatch = line.match(/^- ([A-Z])\. .+ \[(CORRECT|WRONG)\]\s*$/);
-      if (choiceMatch) {
-        pendingWrongChoiceLabel =
-          choiceMatch[2] === "WRONG" ? choiceMatch[1] : null;
-        continue;
-      }
-
-      const misconceptionMatch = line.match(/^  - Misconception:\s*(.+)\s*$/);
-      if (
-        misconceptionMatch &&
-        currentQuestionId &&
-        pendingWrongChoiceLabel
-      ) {
-        if (!byQuestion.has(currentQuestionId)) {
-          byQuestion.set(currentQuestionId, new Map());
-        }
-        byQuestion
-          .get(currentQuestionId)
-          .set(pendingWrongChoiceLabel, misconceptionMatch[1].trim());
-        pendingWrongChoiceLabel = null;
-      }
-    }
+function loadReadableBaseline(fullReadablePath) {
+  if (!fs.existsSync(fullReadablePath)) {
+    throw new Error(`Baseline readable file not found: ${fullReadablePath}`);
   }
-
-  return byQuestion;
+  return parseMarkdownQuestionMap(fullReadablePath);
 }
 
-function toChoiceLabel(choice, index) {
-  if (choice?.label) return String(choice.label).trim();
-  return String.fromCharCode(65 + index);
-}
-
-function applyMapToPayload(payload, misconceptionMap) {
+function applyMapToPayload(payload, partsMap, baselineMap) {
   const questionBank = payload?.question_bank ?? {};
-  let updatedChoices = 0;
+  let safeApplied = 0;
+  let safeAlreadyCorrect = 0;
+  let rollbackApplied = 0;
+  let riskySourceSkipped = 0;
+  let missingPartLabel = 0;
+  let missingPartMisconception = 0;
+  let missingBaselineFallback = 0;
   let matchedQuestions = 0;
+  const riskyRows = [];
 
   for (const questions of Object.values(questionBank)) {
     if (!Array.isArray(questions)) continue;
 
     for (const question of questions) {
       const questionId = String(question?.question_id ?? "").trim();
-      if (!questionId || !misconceptionMap.has(questionId)) continue;
-
-      const labelMap = misconceptionMap.get(questionId);
+      if (!questionId) continue;
       matchedQuestions += 1;
+      const sourceChoices = partsMap.get(questionId) ?? null;
+      const baselineChoices = baselineMap.get(questionId) ?? null;
 
       if (!Array.isArray(question.choices)) continue;
       question.choices.forEach((choice, index) => {
         if (choice?.correct) return;
         const label = toChoiceLabel(choice, index);
-        const replacement = labelMap.get(label);
-        if (!replacement) return;
-
-        const current = String(
+        const liveText = normalizeText(choice?.text ?? "");
+        const liveCorrect = Boolean(choice?.correct);
+        const liveMisconception = String(
           choice?.misconception_text ?? choice?.misconception ?? ""
         ).trim();
-        if (current === replacement) return;
 
+        const source = sourceChoices?.get(label);
+        const baseline = baselineChoices?.get(label);
+        const canUseSource =
+          source &&
+          source.misconception &&
+          normalizeText(source.text) === liveText &&
+          source.correct === liveCorrect;
+
+        if (canUseSource) {
+          const replacement = String(source.misconception).trim();
+          if (replacement === liveMisconception) {
+            safeAlreadyCorrect += 1;
+            return;
+          }
+
+          if ("misconception_text" in choice || !("misconception" in choice)) {
+            choice.misconception_text = replacement;
+          }
+          if ("misconception" in choice) {
+            choice.misconception = replacement;
+          }
+          safeApplied += 1;
+          return;
+        }
+
+        if (!source) {
+          missingPartLabel += 1;
+          return;
+        }
+
+        if (!source.misconception) {
+          missingPartMisconception += 1;
+        } else {
+          riskySourceSkipped += 1;
+          riskyRows.push({
+            questionId,
+            label,
+            sourceChoiceText: source.text,
+            liveChoiceText: String(choice?.text ?? ""),
+            sourceCorrect: source.correct,
+            liveCorrect,
+            reason:
+              source.correct !== liveCorrect
+                ? "correctness_mismatch"
+                : "choice_text_mismatch",
+          });
+        }
+
+        const canUseBaseline =
+          baseline &&
+          baseline.misconception &&
+          normalizeText(baseline.text) === liveText &&
+          baseline.correct === liveCorrect;
+
+        if (!canUseBaseline) {
+          missingBaselineFallback += 1;
+          return;
+        }
+
+        const fallback = String(baseline.misconception).trim();
+        if (fallback === liveMisconception) return;
         if ("misconception_text" in choice || !("misconception" in choice)) {
-          choice.misconception_text = replacement;
+          choice.misconception_text = fallback;
         }
         if ("misconception" in choice) {
-          choice.misconception = replacement;
+          choice.misconception = fallback;
         }
-        updatedChoices += 1;
+        rollbackApplied += 1;
       });
     }
   }
 
-  return { updatedChoices, matchedQuestions };
+  return {
+    safeApplied,
+    safeAlreadyCorrect,
+    rollbackApplied,
+    riskySourceSkipped,
+    missingPartLabel,
+    missingPartMisconception,
+    missingBaselineFallback,
+    matchedQuestions,
+    riskyRows,
+  };
 }
 
-function updateJsonFile(jsonPath, misconceptionMap) {
+function updateJsonFile(jsonPath, partsMap, baselineMap) {
   if (!fs.existsSync(jsonPath)) {
-    return { file: jsonPath, updatedChoices: 0, matchedQuestions: 0, skipped: true };
+    return {
+      file: jsonPath,
+      skipped: true,
+      safeApplied: 0,
+      safeAlreadyCorrect: 0,
+      rollbackApplied: 0,
+      riskySourceSkipped: 0,
+      missingPartLabel: 0,
+      missingPartMisconception: 0,
+      missingBaselineFallback: 0,
+      matchedQuestions: 0,
+      riskyRows: [],
+    };
   }
 
   const payload = JSON.parse(fs.readFileSync(jsonPath, "utf8"));
-  const result = applyMapToPayload(payload, misconceptionMap);
+  const result = applyMapToPayload(payload, partsMap, baselineMap);
   fs.writeFileSync(jsonPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
   return { file: jsonPath, ...result, skipped: false };
+}
+
+function writeReport(args) {
+  const { reportPath, partsInfo, results } = args;
+  const totals = results.reduce(
+    (acc, row) => {
+      acc.safeApplied += row.safeApplied;
+      acc.safeAlreadyCorrect += row.safeAlreadyCorrect;
+      acc.rollbackApplied += row.rollbackApplied;
+      acc.riskySourceSkipped += row.riskySourceSkipped;
+      acc.missingPartLabel += row.missingPartLabel;
+      acc.missingPartMisconception += row.missingPartMisconception;
+      acc.missingBaselineFallback += row.missingBaselineFallback;
+      return acc;
+    },
+    {
+      safeApplied: 0,
+      safeAlreadyCorrect: 0,
+      rollbackApplied: 0,
+      riskySourceSkipped: 0,
+      missingPartLabel: 0,
+      missingPartMisconception: 0,
+      missingBaselineFallback: 0,
+    }
+  );
+
+  const riskyExamples = results.flatMap((row) =>
+    row.riskyRows.slice(0, 20).map((r) => ({
+      file: row.file,
+      ...r,
+    }))
+  );
+
+  const lines = [
+    "# Misconception Sync Report",
+    "",
+    `Generated: ${new Date().toISOString()}`,
+    "",
+    "## Sources",
+    "",
+    `- Parts directory files: ${partsInfo.partFiles.length}`,
+    `- Baseline readable file: \`diagnostic-v2-readable.md\``,
+    "",
+    "## Totals",
+    "",
+    `- Safe applied from readable parts: ${totals.safeApplied}`,
+    `- Already matching safe rows: ${totals.safeAlreadyCorrect}`,
+    `- Rollback applied from baseline (risky rows): ${totals.rollbackApplied}`,
+    `- Risky source rows skipped: ${totals.riskySourceSkipped}`,
+    `- Missing label in parts: ${totals.missingPartLabel}`,
+    `- Missing misconception line in parts: ${totals.missingPartMisconception}`,
+    `- Missing baseline fallback: ${totals.missingBaselineFallback}`,
+    "",
+    "## Per Target",
+    "",
+  ];
+
+  for (const row of results) {
+    lines.push(`### ${row.file}`);
+    lines.push("");
+    if (row.skipped) {
+      lines.push("- Status: skipped (file missing)");
+    } else {
+      lines.push(`- Safe applied: ${row.safeApplied}`);
+      lines.push(`- Already safe-match: ${row.safeAlreadyCorrect}`);
+      lines.push(`- Rollback applied: ${row.rollbackApplied}`);
+      lines.push(`- Risky rows skipped: ${row.riskySourceSkipped}`);
+      lines.push(`- Missing part label: ${row.missingPartLabel}`);
+      lines.push(
+        `- Missing part misconception: ${row.missingPartMisconception}`
+      );
+      lines.push(`- Missing baseline fallback: ${row.missingBaselineFallback}`);
+    }
+    lines.push("");
+  }
+
+  lines.push("## Risky Examples");
+  lines.push("");
+  if (riskyExamples.length === 0) {
+    lines.push("- None");
+  } else {
+    for (const row of riskyExamples.slice(0, 20)) {
+      lines.push(
+        `- ${row.questionId} [${row.label}] (${row.reason}) in \`${row.file}\``
+      );
+      lines.push(`  - Source choice text: ${row.sourceChoiceText}`);
+      lines.push(`  - Live choice text: ${row.liveChoiceText}`);
+    }
+  }
+  lines.push("");
+
+  fs.writeFileSync(reportPath, `${lines.join("\n")}\n`, "utf8");
 }
 
 function main() {
   const root = process.cwd();
   const partsDir = path.join(root, "readable");
-  const misconceptionMap = loadMisconceptionMap(partsDir);
+  const fullReadablePath = path.join(root, "diagnostic-v2-readable.md");
+  const reportPath = path.join(root, "readable", "misconception-sync-report.md");
+
+  const partsInfo = loadReadableParts(partsDir);
+  const baselineMap = loadReadableBaseline(fullReadablePath);
 
   const targets = [
     path.join(root, "Diagnostic V2", "web", "public", "diagnostic_v2", "mastery_data.json"),
@@ -132,8 +349,14 @@ function main() {
   ];
 
   const results = targets.map((target) =>
-    updateJsonFile(target, misconceptionMap)
+    updateJsonFile(target, partsInfo.map, baselineMap)
   );
+
+  writeReport({
+    reportPath,
+    partsInfo,
+    results,
+  });
 
   for (const result of results) {
     if (result.skipped) {
@@ -141,9 +364,10 @@ function main() {
       continue;
     }
     console.log(
-      `[ok] ${result.file} -> updated choices: ${result.updatedChoices}, matched questions: ${result.matchedQuestions}`
+      `[ok] ${result.file} -> safeApplied=${result.safeApplied}, safeAlreadyCorrect=${result.safeAlreadyCorrect}, rollbackApplied=${result.rollbackApplied}, riskySourceSkipped=${result.riskySourceSkipped}`
     );
   }
+  console.log(`[report] ${reportPath}`);
 }
 
 main();

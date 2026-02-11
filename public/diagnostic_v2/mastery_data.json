@@ -3890,14 +3890,14 @@
             "label": "C",
             "text": "40 cm²",
             "correct": false,
-            "misconception_text": "Careful! It looks like all three numbers were multiplied together. Let's try adding the bases first, then multiplying by the height and dividing by 2!",
+            "misconception_text": "Misconception: You treated it like a rectangle using only the longer base: 10 × 4. A trapezoid has two bases, so you must use both.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "30 cm²",
             "correct": false,
-            "misconception_text": "Not quite. It seems some of the steps might have been skipped.",
+            "misconception_text": "Misconception: You multiplied the bases and then halved. Trapezoid area does not use \"base times base.\".",
             "misconception_code": "AREA_VOLUME_SWAP"
           }
         ]
@@ -7589,7 +7589,7 @@
             "label": "B",
             "text": "centimeters",
             "correct": false,
-            "misconception_text": "Misconception: You linear units measure length, not volume.",
+            "misconception_text": "Centimeters are perfect for measuring the length of one edge. Since a box has three dimensions, we need a unit that represents all of that space together.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
@@ -14961,7 +14961,7 @@
             "label": "C",
             "text": "Triangle",
             "correct": false,
-            "misconception_text": "Not quite. Since the pyramid is made of straight-edged faces, our slice will always have four straight sides.",
+            "misconception_text": "Misconception: You a full through-cut of opposite edges in a prism gives four sides.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -15000,14 +15000,14 @@
             "label": "C",
             "text": "Cross-section is always a circle",
             "correct": false,
-            "misconception_text": "Not quite. While the slice will have four sides, that diagonal cut is actually longer than the sides of the cube, making it a non-square rectangle.",
+            "misconception_text": "Misconception: You pyramid faces are polygonal.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Cross-section has no relation to the base",
             "correct": false,
-            "misconception_text": "Careful! Slicing through a flat-faced cube will always give you a shape with straight edges, never a curved circle.",
+            "misconception_text": "Misconception: You parallel sections preserve shape type.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15231,21 +15231,21 @@
             "label": "B",
             "text": "143 degrees",
             "correct": false,
-            "misconception_text": "Oops! Complementary angles add up to 90 degrees. It looks like the math was just a tiny bit off during the subtraction.",
+            "misconception_text": "Misconception: You used supplementary instead of complementary.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "37 degrees",
             "correct": false,
-            "misconception_text": "Not quite. 145 degrees is what you'd get if the angles were supplementary (adding to 180). Complementary angles add to just 90!",
+            "misconception_text": "Misconception: You complementary angles do not have to be equal.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "63 degrees",
             "correct": false,
-            "misconception_text": "Careful! These angles aren't \"twins\" (vertical)—they are a pair that adds up to a right angle!",
+            "misconception_text": "Misconception: You subtracted from 100, not 90.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15270,21 +15270,21 @@
             "label": "B",
             "text": "22 degrees",
             "correct": false,
-            "misconception_text": "Oops! 68 is what you'd find if they were supplementary (on a straight line). Vertical angles are \"mirror twins\" and are always equal!",
+            "misconception_text": "Misconception: You subtracted from 90 instead of 180.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "112 degrees",
             "correct": false,
-            "misconception_text": "Not quite. It seems the angle was doubled. Vertical angles simply match each other—no math needed!",
+            "misconception_text": "Misconception: You assumed supplementary means equal.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "292 degrees",
             "correct": false,
-            "misconception_text": "Careful! It seems the angle was cut in half by mistake. Remember our rule: Vertical angles are always identical!",
+            "misconception_text": "Misconception: You added instead of finding missing angle.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15304,7 +15304,7 @@
             "label": "A",
             "text": "6",
             "correct": false,
-            "misconception_text": "Oops! It looks like 4x was set equal to 60. Since they sit on a straight line, they should add up to 180 instead!",
+            "misconception_text": "Misconception: You solved with arithmetic error.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -15316,14 +15316,14 @@
             "label": "C",
             "text": "7",
             "correct": false,
-            "misconception_text": "Not quite. Our equation should be 4x + 60 = 180. Let's solve that step-by-step!",
+            "misconception_text": "Misconception: You may have subtracted constants incorrectly.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "24",
             "correct": false,
-            "misconception_text": "Careful with your final step! 120 is the value of 4x, but we're looking for what x itself equals.",
+            "misconception_text": "Misconception: You doubled the correct value.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15348,14 +15348,14 @@
             "label": "B",
             "text": "54",
             "correct": false,
-            "misconception_text": "Oops! You're so close! You found the whole first angle, but remember to subtract that 10 to find out what x equals.",
+            "misconception_text": "Misconception: You likely made a subtraction error after combining terms.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "62",
             "correct": false,
-            "misconception_text": "Not quite. These angles form a *right* angle (90 degrees), not a straight line (180 degrees).",
+            "misconception_text": "Misconception: You likely added constants with the wrong sign.",
             "misconception_code": "SIGN_RULE"
           },
           {
@@ -15382,14 +15382,14 @@
             "label": "A",
             "text": "50 degrees",
             "correct": false,
-            "misconception_text": "Oops! Careful with those terms. Complementary angles are a smaller pair—they add up to just 90 degrees.",
+            "misconception_text": "Misconception: You solved the linear equation with an arithmetic error.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "130 degrees",
             "correct": false,
-            "misconception_text": "Not quite. Vertical angles are \"twins\" (equal), but they don't necessarily have to add up to 180.",
+            "misconception_text": "Misconception: You chose the larger supplementary angle.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -15501,7 +15501,7 @@
             "label": "A",
             "text": "36 square units",
             "correct": false,
-            "misconception_text": "Oops! That's the volume of the cube. For surface area, we want to find the area of *one* face and then multiply it by 6!",
+            "misconception_text": "Misconception: You found area of one face only.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
@@ -15513,14 +15513,14 @@
             "label": "C",
             "text": "72 square units",
             "correct": false,
-            "misconception_text": "Not quite! 16 is the area of just one face. Since a cube has 6 identical faces, we need to multiply that by 6!",
+            "misconception_text": "Misconception: You used two faces instead of six.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "180 square units",
             "correct": false,
-            "misconception_text": "Careful! It looks like the side (4) was multiplied by 6. We first need to square the side to find the area of one face!",
+            "misconception_text": "Misconception: You used an incorrect formula.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15552,7 +15552,7 @@
             "label": "C",
             "text": "432 square units",
             "correct": false,
-            "misconception_text": "Careful! It seems the total was doubled. Two 9-unit squares joined together makes 18 in total.",
+            "misconception_text": "Misconception: You multiplied instead of summing parts.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -15584,21 +15584,21 @@
             "label": "B",
             "text": "20.5 cubic units",
             "correct": false,
-            "misconception_text": "Oops! It looks like you included the top lid! We only want to count the 4 sides and the 1 bottom floor.",
+            "misconception_text": "Misconception: You added base area and height.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
             "label": "C",
             "text": "4.5 cubic units",
             "correct": false,
-            "misconception_text": "Not quite! 40 is the volume. For surface area, we need the total amount of \"paint\" needed to cover all the outside faces!",
+            "misconception_text": "Misconception: You subtracted instead of multiplying.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "96 cubic units",
             "correct": false,
-            "misconception_text": "Careful! That's only the area of the bottom floor. We still need to add up the areas of those 4 walls!",
+            "misconception_text": "Misconception: You used a nearby product with arithmetic error.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15900,21 +15900,21 @@
             "label": "B",
             "text": "3 1/4 cups",
             "correct": false,
-            "misconception_text": "Oops! It seems only the 2 was multiplied by the 3/4. We need to multiply the 3/4 by the entire 2 1/2 batches!",
+            "misconception_text": "Misconception: You added 3/4 and 2 1/2 instead of multiplying per-batch amount by number of batches.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "15/4 cups",
             "correct": false,
-            "misconception_text": "Not quite. It looks like the numbers were added together instead of multiplied. For multiple batches, multiplication is the way to go!",
+            "misconception_text": "Misconception: You multiplied numerators and denominators but did not simplify correctly.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
             "label": "D",
             "text": "1 1/8 cups",
             "correct": false,
-            "misconception_text": "Almost! It looks like only 2 batches were calculated. Don't forget that extra half batch!",
+            "misconception_text": "Misconception: You likely multiplied one factor incorrectly after converting the mixed number.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
