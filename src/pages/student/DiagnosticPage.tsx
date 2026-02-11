@@ -14,6 +14,23 @@ import { MathText } from "@/components/math/MathText";
 
 type AttemptType = "practice" | "mastery";
 
+const WARM_FEEDBACK_FALLBACK = "Nice try. Let's review this one together.";
+const WARM_FEEDBACK_STARTER =
+  /^(Nice try|Good try|Close|Almost|Oops|Careful|Not quite|It looks like|You're close|You’re close)/i;
+
+function ensureWarmFeedbackTone(value: string | undefined | null) {
+  const trimmed = String(value ?? "").trim();
+  if (!trimmed) return WARM_FEEDBACK_FALLBACK;
+
+  let normalized = trimmed;
+  while (/^misconception:\s*/i.test(normalized)) {
+    normalized = normalized.replace(/^misconception:\s*/i, "").trim();
+  }
+  if (!normalized) return WARM_FEEDBACK_FALLBACK;
+  if (WARM_FEEDBACK_STARTER.test(normalized)) return normalized;
+  return `Nice try. ${normalized}`;
+}
+
 export function DiagnosticPage() {
   const { user } = useAuth();
   const { majorObjectiveId } = useParams<{ majorObjectiveId: string }>();
@@ -186,7 +203,9 @@ export function DiagnosticPage() {
     const correct = Boolean(chosen?.correct);
     const correctLabel = correctChoice?.label ?? "";
     const chosenLabel = chosen?.label ?? "";
-    const misconception = chosen?.misconception || (correct ? "" : "Not quite.");
+    const misconception = correct
+      ? ""
+      : ensureWarmFeedbackTone(chosen?.misconception);
     const explanation = currentQuestion.explanation || "";
 
     setAnswered(true);
@@ -456,7 +475,7 @@ export function DiagnosticPage() {
         {!completedPassed && (
           <>
             <div className="mt-6">
-              <h2 className="text-lg font-semibold mb-2">What went wrong</h2>
+              <h2 className="text-lg font-semibold mb-2">Let&apos;s Review Together</h2>
               {incorrect.length === 0 ? (
                 <div className="text-muted-foreground">No misconceptions captured.</div>
               ) : (
@@ -631,9 +650,9 @@ export function DiagnosticPage() {
               </div>
             ) : (
               <div className="text-sm">
-                <div className="font-semibold text-orange-700">Not quite</div>
+                <div className="font-semibold text-orange-700">Nice try</div>
                 <div className="text-muted-foreground mt-1 whitespace-pre-wrap">
-                  <MathText text={chosen?.misconception || "Review and try again later."} />
+                  <MathText text={ensureWarmFeedbackTone(chosen?.misconception)} />
                 </div>
                 {currentQuestion.explanation && (
                   <div className="text-muted-foreground mt-2 whitespace-pre-wrap">
