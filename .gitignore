@@ -42,3 +42,11 @@ public/diagnostic/
 
 # Web preview directory
 web/
+
+# Generated misconception rewrite artifacts
+readable/misconception-groq-rewrite-report*.md
+readable/misconception-groq-sample*.json
+readable/misconception-manual-sample*.json
+readable/misconception-pass*-target-keys.txt
+readable/misconception-remaining-*.json
+readable/manual-misconception-rewrites-pass*.json

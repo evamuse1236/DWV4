@@ -23,3 +23,17 @@ All `.ts` scripts here are designed to run on Node (type-stripping) without extr
 - `scripts/analyze-duplicates.ts`: Reports duplicated Brilliant chapters and duplicated KA unit URLs across rows.
 - `scripts/validate-playlist-mapping.ts`: Validates `playlist_mapping.json` against `docs/curriculum/QUALITY-CONTRACT.md` and writes `docs/curriculum/validation.md`.
 - `scripts/analyze-semantic-mismatches.ts`: Heuristic report for why mappings feel off (overly-specific LOs + constraint mismatch vs activity titles). Writes `docs/curriculum/semantic-mismatch-report.md`.
+
+## Diagnostic misconception tooling
+
+- `scripts/apply-readable-misconceptions.mjs`: Applies misconception text from readable markdown into diagnostic JSON files with mismatch safeguards. Writes `readable/misconception-sync-report.md`.
+- `scripts/normalize-misconceptions-tone.mjs`: Normalizes misconception tone and cleans common artifacts. Writes `readable/misconception-tone-normalization-report.md`.
+- `scripts/rewrite-misconceptions-groq.mjs`: Uses Groq chat completions to batch-rewrite misconception text in warm/friendly tone while preserving math meaning, with retry + fallback model support. Writes `readable/misconception-groq-rewrite-report.md`.
+
+### Groq rewrite usage
+
+- Env: set `GROQ_API_KEY`.
+- Run full rewrite: `npm run diagnostic:misconceptions:rewrite:groq`
+- Dry run sample: `node scripts/rewrite-misconceptions-groq.mjs --limit 24 --batch-size 8 --dry-run`
+- Targeted pass: `node scripts/rewrite-misconceptions-groq.mjs --target-keys-file readable/misconception-pass2-target-keys.txt --allow-missing-numeric-tokens`
+- Generated audit files are written under `readable/` and are git-ignored.

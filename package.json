@@ -10,7 +10,8 @@
     "test": "vitest",
     "test:run": "vitest run",
     "preview": "vite preview",
-    "diagnostic:v2:sync": "node scripts/sync-diagnostic-v2.mjs"
+    "diagnostic:v2:sync": "node scripts/sync-diagnostic-v2.mjs",
+    "diagnostic:misconceptions:rewrite:groq": "node scripts/rewrite-misconceptions-groq.mjs"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",

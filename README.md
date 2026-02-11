@@ -56,6 +56,12 @@ npm run dev
    - Create Sprint
    - Add Learning Objectives
 
+### Diagnostic Misconception Maintenance
+
+- Rewrite misconception feedback tone in bulk with Groq:
+  - `GROQ_API_KEY=... npm run diagnostic:misconceptions:rewrite:groq`
+- Script docs and targeted-pass options are in `scripts/README.md`.
+
 ---
 
 ## 👥 User Roles
