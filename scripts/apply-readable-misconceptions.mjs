@@ -10,6 +10,78 @@ function normalizeText(value) {
   return String(value ?? "").replace(/\s+/g, " ").trim();
 }
 
+function rewriteWarmMisconception(raw) {
+  let text = String(raw ?? "").trim();
+  while (/^misconception:\s*/i.test(text)) {
+    text = text.replace(/^misconception:\s*/i, "").trim();
+  }
+
+  text = text.replace(/\uFFFD/g, "×");
+
+  const phraseFixes = [
+    ["You this is", "This is"],
+    ["You variables are", "Variables are"],
+    ["You rhombuses", "Rhombuses"],
+    ["You not all", "Not all"],
+    ["You equal sides", "Equal sides"],
+    ["You definition", "Definition"],
+    ["You category membership", "Category membership"],
+    ["You triangle is", "A triangle is"],
+    ["You square is", "A square is"],
+    ["You quadrilaterals", "Quadrilaterals"],
+    ["You rectangles", "Rectangles"],
+    ["You parallelograms", "Parallelograms"],
+    ["You linear units", "Linear units"],
+    ["You square units", "Square units"],
+    ["You degrees", "Degrees"],
+    ["You less than", "Less than"],
+    ["You equality", "Equality"],
+    ["You strict less-than", "Strict less-than"],
+    ["You both endpoint", "Both endpoint"],
+    ["You an inequality", "An inequality"],
+    [
+      "You this solid and cut do not create curved boundaries.",
+      "This solid and this cut do not create curved boundaries.",
+    ],
+    [
+      "You a full through-cut of opposite edges in a prism gives four sides.",
+      "A full through-cut of opposite edges in a prism gives four sides.",
+    ],
+    [
+      "You parallel-to-base slices of pyramids match base shape.",
+      "Slices parallel to a pyramid's base match the base shape.",
+    ],
+    ["You pyramid faces are polygonal.", "Pyramid faces are polygonal."],
+    ["You parallel sections preserve shape type.", "Parallel sections preserve shape type."],
+    [
+      "You complementary angles do not have to be equal.",
+      "Complementary angles do not have to be equal.",
+    ],
+  ];
+  for (const [from, to] of phraseFixes) {
+    text = text.replaceAll(from, to);
+  }
+
+  text = normalizeText(text);
+  if (!text) return text;
+
+  if (/^you\b/i.test(text)) {
+    const rest = text.replace(/^you\s+/i, "");
+    const loweredRest = rest.charAt(0).toLowerCase() + rest.slice(1);
+    return `Nice try. It looks like you ${loweredRest}`;
+  }
+
+  if (
+    /^(Nice try|Good try|Close|Almost|Oops|Careful|Not quite|It looks like|You\'re close|You’re close)/i.test(
+      text
+    )
+  ) {
+    return text;
+  }
+
+  return `Nice try. ${text}`;
+}
+
 function partIndex(fileName) {
   const match = fileName.match(/^diagnostic-part-(\d+)\.md$/);
   return match ? Number(match[1]) : Number.MAX_SAFE_INTEGER;
@@ -193,7 +265,9 @@ function applyMapToPayload(payload, partsMap, baselineMap) {
           return;
         }
 
-        const fallback = String(baseline.misconception).trim();
+        const fallback = rewriteWarmMisconception(
+          String(baseline.misconception).trim()
+        );
         if (fallback === liveMisconception) return;
         if ("misconception_text" in choice || !("misconception" in choice)) {
           choice.misconception_text = fallback;

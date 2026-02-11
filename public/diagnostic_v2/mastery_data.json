@@ -3890,14 +3890,14 @@
             "label": "C",
             "text": "40 cm²",
             "correct": false,
-            "misconception_text": "Misconception: You treated it like a rectangle using only the longer base: 10 × 4. A trapezoid has two bases, so you must use both.",
+            "misconception_text": "Nice try. It looks like you treated it like a rectangle using only the longer base: 10 × 4. A trapezoid has two bases, so you must use both.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "30 cm²",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied the bases and then halved. Trapezoid area does not use \"base times base.\".",
+            "misconception_text": "Nice try. It looks like you multiplied the bases and then halved. Trapezoid area does not use \"base times base.\".",
             "misconception_code": "AREA_VOLUME_SWAP"
           }
         ]
@@ -10386,7 +10386,7 @@
             "label": "B",
             "text": "2(p - 5)",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted before doubling.",
+            "misconception_text": "Nice try. It looks like you subtracted before doubling.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -14954,14 +14954,14 @@
             "label": "B",
             "text": "Circle",
             "correct": false,
-            "misconception_text": "Misconception: You this solid and cut do not create curved boundaries.",
+            "misconception_text": "Nice try. This solid and this cut do not create curved boundaries.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Triangle",
             "correct": false,
-            "misconception_text": "Misconception: You a full through-cut of opposite edges in a prism gives four sides.",
+            "misconception_text": "Nice try. A full through-cut of opposite edges in a prism gives four sides.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -14993,21 +14993,21 @@
             "label": "B",
             "text": "Cross-section is always a triangle",
             "correct": false,
-            "misconception_text": "Misconception: You parallel-to-base slices of pyramids match base shape.",
+            "misconception_text": "Nice try. Slices parallel to a pyramid's base match the base shape.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Cross-section is always a circle",
             "correct": false,
-            "misconception_text": "Misconception: You pyramid faces are polygonal.",
+            "misconception_text": "Nice try. Pyramid faces are polygonal.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Cross-section has no relation to the base",
             "correct": false,
-            "misconception_text": "Misconception: You parallel sections preserve shape type.",
+            "misconception_text": "Nice try. Parallel sections preserve shape type.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15231,21 +15231,21 @@
             "label": "B",
             "text": "143 degrees",
             "correct": false,
-            "misconception_text": "Misconception: You used supplementary instead of complementary.",
+            "misconception_text": "Nice try. It looks like you used supplementary instead of complementary.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "37 degrees",
             "correct": false,
-            "misconception_text": "Misconception: You complementary angles do not have to be equal.",
+            "misconception_text": "Nice try. Complementary angles do not have to be equal.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "63 degrees",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted from 100, not 90.",
+            "misconception_text": "Nice try. It looks like you subtracted from 100, not 90.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15270,21 +15270,21 @@
             "label": "B",
             "text": "22 degrees",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted from 90 instead of 180.",
+            "misconception_text": "Nice try. It looks like you subtracted from 90 instead of 180.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "112 degrees",
             "correct": false,
-            "misconception_text": "Misconception: You assumed supplementary means equal.",
+            "misconception_text": "Nice try. It looks like you assumed supplementary means equal.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "292 degrees",
             "correct": false,
-            "misconception_text": "Misconception: You added instead of finding missing angle.",
+            "misconception_text": "Nice try. It looks like you added instead of finding missing angle.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15304,7 +15304,7 @@
             "label": "A",
             "text": "6",
             "correct": false,
-            "misconception_text": "Misconception: You solved with arithmetic error.",
+            "misconception_text": "Nice try. It looks like you solved with arithmetic error.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -15316,14 +15316,14 @@
             "label": "C",
             "text": "7",
             "correct": false,
-            "misconception_text": "Misconception: You may have subtracted constants incorrectly.",
+            "misconception_text": "Nice try. It looks like you may have subtracted constants incorrectly.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "24",
             "correct": false,
-            "misconception_text": "Misconception: You doubled the correct value.",
+            "misconception_text": "Nice try. It looks like you doubled the correct value.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15348,14 +15348,14 @@
             "label": "B",
             "text": "54",
             "correct": false,
-            "misconception_text": "Misconception: You likely made a subtraction error after combining terms.",
+            "misconception_text": "Nice try. It looks like you likely made a subtraction error after combining terms.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "62",
             "correct": false,
-            "misconception_text": "Misconception: You likely added constants with the wrong sign.",
+            "misconception_text": "Nice try. It looks like you likely added constants with the wrong sign.",
             "misconception_code": "SIGN_RULE"
           },
           {
@@ -15382,21 +15382,21 @@
             "label": "A",
             "text": "50 degrees",
             "correct": false,
-            "misconception_text": "Misconception: You solved the linear equation with an arithmetic error.",
+            "misconception_text": "Nice try. It looks like you solved the linear equation with an arithmetic error.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "130 degrees",
             "correct": false,
-            "misconception_text": "Misconception: You chose the larger supplementary angle.",
+            "misconception_text": "Nice try. It looks like you chose the larger supplementary angle.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "30 degrees",
             "correct": false,
-            "misconception_text": "Misconception: You treated 2x + 30 as if x were 0.",
+            "misconception_text": "Nice try. It looks like you treated 2x + 30 as if x were 0.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -15501,7 +15501,7 @@
             "label": "A",
             "text": "36 square units",
             "correct": false,
-            "misconception_text": "Misconception: You found area of one face only.",
+            "misconception_text": "Nice try. It looks like you found area of one face only.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
@@ -15513,14 +15513,14 @@
             "label": "C",
             "text": "72 square units",
             "correct": false,
-            "misconception_text": "Misconception: You used two faces instead of six.",
+            "misconception_text": "Nice try. It looks like you used two faces instead of six.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "180 square units",
             "correct": false,
-            "misconception_text": "Misconception: You used an incorrect formula.",
+            "misconception_text": "Nice try. It looks like you used an incorrect formula.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15540,7 +15540,7 @@
             "label": "A",
             "text": "6 square units",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted areas instead of adding.",
+            "misconception_text": "Nice try. It looks like you subtracted areas instead of adding.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -15552,7 +15552,7 @@
             "label": "C",
             "text": "432 square units",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied instead of summing parts.",
+            "misconception_text": "Nice try. It looks like you multiplied instead of summing parts.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -15584,21 +15584,21 @@
             "label": "B",
             "text": "20.5 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You added base area and height.",
+            "misconception_text": "Nice try. It looks like you added base area and height.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
             "label": "C",
             "text": "4.5 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted instead of multiplying.",
+            "misconception_text": "Nice try. It looks like you subtracted instead of multiplying.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "96 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You used a nearby product with arithmetic error.",
+            "misconception_text": "Nice try. It looks like you used a nearby product with arithmetic error.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15900,21 +15900,21 @@
             "label": "B",
             "text": "3 1/4 cups",
             "correct": false,
-            "misconception_text": "Misconception: You added 3/4 and 2 1/2 instead of multiplying per-batch amount by number of batches.",
+            "misconception_text": "Nice try. It looks like you added 3/4 and 2 1/2 instead of multiplying per-batch amount by number of batches.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "15/4 cups",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied numerators and denominators but did not simplify correctly.",
+            "misconception_text": "Nice try. It looks like you multiplied numerators and denominators but did not simplify correctly.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
             "label": "D",
             "text": "1 1/8 cups",
             "correct": false,
-            "misconception_text": "Misconception: You likely multiplied one factor incorrectly after converting the mixed number.",
+            "misconception_text": "Nice try. It looks like you likely multiplied one factor incorrectly after converting the mixed number.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
