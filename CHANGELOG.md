@@ -28,3 +28,4 @@
 - Project AI chat now safely handles malformed `project-data` JSON blocks without breaking the chat flow
 - Diagnostic math rendering: spaced slash expressions like `7 / 4` now render as division (not stacked fraction), while compact `7/4` still renders as a fraction
 - Viva attempt review: clearer per-question evidence with question numbering and explicit "Student picked" vs "Correct answer" text
+- Student diagnostic answer flow: selecting an option no longer auto-submits; answers are committed on `Next/Finish`, and `Skip` now correctly submits on the last question

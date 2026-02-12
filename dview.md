@@ -90,6 +90,12 @@ The student diagnostic page (`src/pages/student/DiagnosticPage.tsx`) builds a â€
 - explanation text
 - skipped questions are recorded as skipped/incorrect and still carry the correct label + explanation for review
 
+How answer submission now works:
+- Clicking an option only selects it (it does not immediately lock or submit).
+- The selected answer is committed only when the student clicks **Next** (or **Finish** on the last question).
+- Clicking **Skip** commits that question as skipped immediately and moves on.
+- On the last question, **Skip** also submits the full attempt correctly.
+
 When the attempt is submitted, it calls:
 - Backend mutation: `convex/diagnostics.submitAttempt`
 

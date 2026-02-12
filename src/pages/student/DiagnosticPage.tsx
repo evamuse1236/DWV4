@@ -67,8 +67,6 @@ export function DiagnosticPage() {
   const [startedAt, setStartedAt] = useState<number | null>(null);
   const [questions, setQuestions] = useState<DiagnosticQuestion[] | null>(null);
   const [qIndex, setQIndex] = useState(0);
-  const [answered, setAnswered] = useState(false);
-  const [skippedCurrent, setSkippedCurrent] = useState(false);
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
   const [score, setScore] = useState(0);
   const [results, setResults] = useState<
@@ -155,8 +153,6 @@ export function DiagnosticPage() {
     setStartedAt(null);
     setQuestions(null);
     setQIndex(0);
-    setAnswered(false);
-    setSkippedCurrent(false);
     setSelectedIdx(null);
     setScore(0);
     setResults([]);
@@ -181,8 +177,6 @@ export function DiagnosticPage() {
     setStartedAt(Date.now());
     setQuestions(selected);
     setQIndex(0);
-    setAnswered(false);
-    setSkippedCurrent(false);
     setSelectedIdx(null);
     setScore(0);
     setResults([]);
@@ -199,52 +193,13 @@ export function DiagnosticPage() {
     return currentQuestion.choices.find((c) => c.correct) ?? null;
   }, [currentQuestion]);
 
-  const handleSelectAnswer = (choiceIdx: number) => {
-    if (!currentQuestion || answered) return;
-
-    const chosen = currentQuestion.choices[choiceIdx];
-    const correct = Boolean(chosen?.correct);
-    const correctLabel = correctChoice?.label ?? "";
-    const chosenLabel = chosen?.label ?? "";
-    const misconception = correct
-      ? ""
-      : ensureWarmFeedbackTone(chosen?.misconception);
-    const explanation = currentQuestion.explanation || "";
-
-    setAnswered(true);
-    setSkippedCurrent(false);
-    setSelectedIdx(choiceIdx);
-    if (correct) setScore((s) => s + 1);
-
-    setResults((prev) => [
-      ...prev,
-      {
-        questionId: currentQuestion.id,
-        topic: currentQuestion.topic,
-        chosenLabel,
-        correctLabel,
-        correct,
-        misconception,
-        explanation,
-        visualHtml: currentQuestion.visual_html || undefined,
-        stem: currentQuestion.stem || undefined,
-      },
-    ]);
-  };
-
-  const handleSkipQuestion = () => {
-    if (!currentQuestion || answered) return;
-
+  const buildQuestionResult = (choiceIdx: number | null) => {
+    if (!currentQuestion) return null;
     const correctLabel = correctChoice?.label ?? "";
     const explanation = currentQuestion.explanation || "";
 
-    setAnswered(true);
-    setSkippedCurrent(true);
-    setSelectedIdx(null);
-
-    setResults((prev) => [
-      ...prev,
-      {
+    if (choiceIdx === null) {
+      return {
         questionId: currentQuestion.id,
         topic: currentQuestion.topic,
         chosenLabel: "Skipped",
@@ -254,22 +209,29 @@ export function DiagnosticPage() {
         explanation,
         visualHtml: currentQuestion.visual_html || undefined,
         stem: currentQuestion.stem || undefined,
-      },
-    ]);
-  };
-
-  const handleNext = async () => {
-    if (!questions) return;
-    if (qIndex < questions.length - 1) {
-      setQIndex((i) => i + 1);
-      setAnswered(false);
-      setSkippedCurrent(false);
-      setSelectedIdx(null);
-      return;
+      };
     }
 
-    if (!user || !majorObjectiveId || !group || !startedAt || !majorMeta) return;
+    const chosen = currentQuestion.choices[choiceIdx];
+    const correct = Boolean(chosen?.correct);
+    const chosenLabel = chosen?.label ?? "";
+    const misconception = correct ? "" : ensureWarmFeedbackTone(chosen?.misconception);
 
+    return {
+      questionId: currentQuestion.id,
+      topic: currentQuestion.topic,
+      chosenLabel,
+      correctLabel,
+      correct,
+      misconception,
+      explanation,
+      visualHtml: currentQuestion.visual_html || undefined,
+      stem: currentQuestion.stem || undefined,
+    };
+  };
+
+  const finalizeAttempt = async (finalResults: typeof results, finalScore: number) => {
+    if (!questions || !user || !majorObjectiveId || !group || !startedAt || !majorMeta) return;
     setIsSubmitting(true);
     setSubmitError(null);
     try {
@@ -282,11 +244,11 @@ export function DiagnosticPage() {
         diagnosticModuleName: group.moduleName,
         diagnosticModuleIds: group.moduleIds,
         questionCount: questions.length,
-        score,
-        passed: score >= passThresholdScore,
+        score: finalScore,
+        passed: finalScore >= passThresholdScore,
         startedAt,
         durationMs,
-        results,
+        results: finalResults,
       });
 
       setCompletedAttemptId(String(res.attemptId));
@@ -297,6 +259,51 @@ export function DiagnosticPage() {
     } finally {
       setIsSubmitting(false);
     }
+  };
+
+  const handleSelectAnswer = (choiceIdx: number) => {
+    if (!currentQuestion || isSubmitting) return;
+    setSelectedIdx(choiceIdx);
+  };
+
+  const handleNext = async () => {
+    if (!questions || !currentQuestion || selectedIdx === null || isSubmitting) return;
+
+    const nextResult = buildQuestionResult(selectedIdx);
+    if (!nextResult) return;
+    const nextScore = score + (nextResult.correct ? 1 : 0);
+    const nextResults = [...results, nextResult];
+
+    setScore(nextScore);
+    setResults(nextResults);
+
+    if (qIndex < questions.length - 1) {
+      setQIndex((i) => i + 1);
+      setSelectedIdx(null);
+      setSubmitError(null);
+      return;
+    }
+
+    await finalizeAttempt(nextResults, nextScore);
+  };
+
+  const handleSkipQuestion = async () => {
+    if (!questions || !currentQuestion || isSubmitting) return;
+
+    const nextResult = buildQuestionResult(null);
+    if (!nextResult) return;
+    const nextResults = [...results, nextResult];
+
+    setResults(nextResults);
+    setSelectedIdx(null);
+    setSubmitError(null);
+
+    if (qIndex < questions.length - 1) {
+      setQIndex((i) => i + 1);
+      return;
+    }
+
+    await finalizeAttempt(nextResults, score);
   };
 
   if (!majorObjectiveId) {
@@ -579,7 +586,7 @@ export function DiagnosticPage() {
   // Quiz screen
   if (!questions || !currentQuestion) {
     return (
-      <div className="p-6 max-w-2xl mx-auto">
+      <div className="p-6 max-w-3xl mx-auto">
         <h1 className="text-2xl font-serif font-semibold">{title}</h1>
         <p className="text-muted-foreground mt-2">Preparing quiz…</p>
       </div>
@@ -591,10 +598,9 @@ export function DiagnosticPage() {
   const visualHtml = currentQuestion.visual_html?.trim() || "";
   const total = questions.length;
   const isLast = qIndex === total - 1;
-  const chosen = selectedIdx !== null ? currentQuestion.choices[selectedIdx] : null;
 
   return (
-    <div className="p-6 max-w-2xl mx-auto">
+    <div className="p-6 max-w-3xl mx-auto">
       <div className="flex items-center justify-between gap-4">
         <button
           type="button"
@@ -608,12 +614,12 @@ export function DiagnosticPage() {
 
       <h1 className="text-2xl font-serif font-semibold mt-4">{title}</h1>
 
-      <div className="mt-6 p-5 rounded-xl border bg-white/70">
-        <div className="text-sm text-muted-foreground">Question {qIndex + 1} of {total}</div>
-        <div className="mt-3 text-sm text-muted-foreground">{currentQuestion.topic}</div>
+      <div className="mt-6 p-6 rounded-xl border bg-white/70">
+        <div className="text-base text-muted-foreground">Question {qIndex + 1} of {total}</div>
+        <div className="mt-3 text-base text-muted-foreground">{currentQuestion.topic}</div>
 
         {questionStem && (
-          <div className="mt-2 text-lg font-medium leading-relaxed whitespace-pre-wrap">
+          <div className="mt-3 text-xl font-medium leading-relaxed whitespace-pre-wrap">
             <MathText text={questionStem} />
           </div>
         )}
@@ -636,24 +642,20 @@ export function DiagnosticPage() {
           />
         )}
 
-        <div className="mt-4 text-xs text-muted-foreground">
+        <div className="mt-5 text-sm text-muted-foreground">
           If you do not know the answer, skipping is better than guessing.
         </div>
 
         <div className="mt-4 space-y-2">
           {currentQuestion.choices.map((c, idx) => {
-            const isCorrect = Boolean(c.correct);
             const isChosen = selectedIdx === idx;
-            const showState = answered;
 
-            const base = "w-full text-left px-4 py-3 rounded-lg border transition-colors";
+            const base = "w-full text-left px-4 py-3 rounded-lg border text-base transition-colors";
             const idle = "bg-white hover:bg-muted/30";
-            const correctCls = "bg-emerald-50 border-emerald-300";
-            const wrongCls = "bg-orange-50 border-orange-300";
+            const selectedCls = "bg-foreground/5 border-foreground/40";
 
             let cls = `${base} ${idle}`;
-            if (showState && isCorrect) cls = `${base} ${correctCls}`;
-            if (showState && isChosen && !isCorrect) cls = `${base} ${wrongCls}`;
+            if (isChosen) cls = `${base} ${selectedCls}`;
 
             const labelText = c.text || c.label;
 
@@ -662,7 +664,7 @@ export function DiagnosticPage() {
                 key={`${currentQuestion.id}-${c.label}`}
                 type="button"
                 className={cls}
-                disabled={answered}
+                disabled={isSubmitting}
                 onClick={() => handleSelectAnswer(idx)}
               >
                 <span className="font-semibold mr-2">{c.label}.</span>
@@ -671,42 +673,6 @@ export function DiagnosticPage() {
             );
           })}
         </div>
-
-        {answered && (
-          <div className="mt-4 p-3 rounded-lg border bg-white">
-            {skippedCurrent ? (
-              <div className="text-sm">
-                <div className="font-semibold text-muted-foreground">Skipped</div>
-                {currentQuestion.explanation && (
-                  <div className="text-muted-foreground mt-1 whitespace-pre-wrap">
-                    <MathText text={currentQuestion.explanation} />
-                  </div>
-                )}
-              </div>
-            ) : chosen?.correct ? (
-              <div className="text-sm">
-                <div className="font-semibold text-emerald-700">Correct</div>
-                {currentQuestion.explanation && (
-                  <div className="text-muted-foreground mt-1 whitespace-pre-wrap">
-                    <MathText text={currentQuestion.explanation} />
-                  </div>
-                )}
-              </div>
-            ) : (
-              <div className="text-sm">
-                <div className="font-semibold text-orange-700">Nice try</div>
-                <div className="text-muted-foreground mt-1 whitespace-pre-wrap">
-                  <MathText text={ensureWarmFeedbackTone(chosen?.misconception)} />
-                </div>
-                {currentQuestion.explanation && (
-                  <div className="text-muted-foreground mt-2 whitespace-pre-wrap">
-                    <MathText text={currentQuestion.explanation} />
-                  </div>
-                )}
-              </div>
-            )}
-          </div>
-        )}
 
         {submitError && <div className="mt-4 text-sm text-destructive">{submitError}</div>}
 
@@ -718,7 +684,7 @@ export function DiagnosticPage() {
             <button
               type="button"
               className="px-4 py-2 rounded border disabled:opacity-50"
-              disabled={answered || isSubmitting}
+              disabled={isSubmitting}
               onClick={handleSkipQuestion}
             >
               Skip
@@ -726,7 +692,7 @@ export function DiagnosticPage() {
             <button
               type="button"
               className="px-4 py-2 rounded bg-black text-white disabled:opacity-50"
-              disabled={!answered || isSubmitting}
+              disabled={selectedIdx === null || isSubmitting}
               onClick={handleNext}
             >
               {isSubmitting ? "Submitting…" : isLast ? "Finish" : "Next"}
