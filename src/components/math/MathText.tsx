@@ -14,7 +14,7 @@ type Segment = SegmentText | SegmentMath;
 
 const INLINE_LATEX_RE = /\\\((.+?)\\\)|\$\$(.+?)\$\$|\$(.+?)\$/g;
 const AUTO_MATH_RE =
-  /-?\d+\s+-?\d+\s*\/\s*-?\d+|-?\d+\s*\/\s*-?\d+|-?\d+(?:\.\d+)?(?:\s*[+\-×÷]\s*-?\d+(?:\.\d+)?)+/g;
+  /(?<![\d.])-?\d+\s+-?\d+\s*\/\s*-?\d+(?![\d.])|(?<![\d.])-?\d+(?:\.\d+)?\s*\/\s*-?\d+(?:\^-?\d+)?(?![\d.])|(?<![\d.])-?\d+(?:\.\d+)?(?:\s*[+\-×÷]\s*-?\d+(?:\.\d+)?)+(?![\d.])/g;
 
 function parseAutoMath(text: string): Segment[] {
   const out: Segment[] = [];
@@ -42,7 +42,16 @@ function parseAutoMath(text: string): Segment[] {
 }
 
 function toMathLatex(token: string): string {
-  const normalized = token.replace(/\s*\/\s*/g, "/").trim();
+  const raw = token.trim();
+  const normalized = raw.replace(/\s*\/\s*/g, "/");
+
+  const spacedDivision = raw.match(
+    /^(-?\d+(?:\.\d+)?)\s+\/\s+(-?\d+(?:\.\d+)?(?:\^-?\d+)?)$/
+  );
+  if (spacedDivision) {
+    const [, num, den] = spacedDivision;
+    return `${num}\\div ${den}`;
+  }
 
   const mixed = normalized.match(/^(-?\d+)\s+(-?\d+)\/(-?\d+)$/);
   if (mixed) {
@@ -50,7 +59,13 @@ function toMathLatex(token: string): string {
     return `${whole}\\,\\frac{${num}}{${den}}`;
   }
 
-  const fraction = normalized.match(/^(-?\d+)\/(-?\d+)$/);
+  const poweredFraction = normalized.match(/^(-?\d+(?:\.\d+)?)\/(-?\d+(?:\.\d+)?)\^(-?\d+)$/);
+  if (poweredFraction) {
+    const [, num, denBase, denExp] = poweredFraction;
+    return `\\frac{${num}}{${denBase}^{${denExp}}}`;
+  }
+
+  const fraction = normalized.match(/^(-?\d+(?:\.\d+)?)\/(-?\d+(?:\.\d+)?)$/);
   if (fraction) {
     const [, num, den] = fraction;
     return `\\frac{${num}}{${den}}`;
@@ -62,8 +77,8 @@ function toMathLatex(token: string): string {
     return `\\frac{${num}}{${den}}`;
   }
 
-  const expression = normalized.replace(/×/g, "\\times ").replace(/÷/g, "\\div ");
-  if (expression !== normalized) {
+  const expression = raw.replace(/×/g, "\\times ").replace(/÷/g, "\\div ");
+  if (expression !== raw) {
     return expression;
   }
 

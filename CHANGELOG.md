@@ -18,6 +18,7 @@
 - Settings page: students can change their own username, password, and avatar
 - Admin settings: credential dashboard with ability to edit any user's username or reset their password
 - Sidebar now shows @username with display name below instead of display name with role
+- Student diagnostics: `Skip` action per question with guidance text ("if you don't know, skipping is better than guessing")
 
 ### Fixed
 - Deep Work Diagnostics: retired legacy V1 quiz-bank fallback; diagnostics now require `public/diagnostic_v2/mastery_data.json` and fail loudly when V2 is unavailable or invalid
@@ -25,3 +26,5 @@
 - DeepWork page background color mismatch with sidebar — removed page-specific watercolor blobs that created a visible yellowish rectangle not extending into the sidebar; the body's ambient blobs now provide a seamless atmosphere across all pages
 - Project AI data-entry chat now preserves turn history across consecutive messages in the same session
 - Project AI chat now safely handles malformed `project-data` JSON blocks without breaking the chat flow
+- Diagnostic math rendering: spaced slash expressions like `7 / 4` now render as division (not stacked fraction), while compact `7/4` still renders as a fraction
+- Viva attempt review: clearer per-question evidence with question numbering and explicit "Student picked" vs "Correct answer" text

@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "../../../convex/_generated/api";
@@ -33,7 +33,7 @@ import {
   BookOpen,
   Filter,
 } from "lucide-react";
-import { extractImageSrc } from "@/lib/diagnostic";
+import { extractImageSrc, loadDiagnosticData } from "@/lib/diagnostic";
 import { MathText } from "@/components/math/MathText";
 
 /**
@@ -65,11 +65,47 @@ export function VivaQueuePage() {
   const [moduleFilter, setModuleFilter] = useState("all");
   const [passFilter, setPassFilter] = useState<"all" | "passed" | "failed">("all");
   const [insightsTab, setInsightsTab] = useState<"failures" | "attempts">("failures");
+  const [questionChoiceTextById, setQuestionChoiceTextById] = useState<Record<string, Record<string, string>>>({});
+  const resultsScrollRef = useRef<HTMLDivElement | null>(null);
 
   const failureDetails = useQuery(
     api.diagnostics.getAttemptDetails,
     failureDialog.attemptId ? { attemptId: failureDialog.attemptId as any } : "skip"
   );
+
+  useEffect(() => {
+    let cancelled = false;
+
+    loadDiagnosticData()
+      .then((modules) => {
+        if (cancelled) return;
+        const nextMap: Record<string, Record<string, string>> = {};
+        for (const module of modules ?? []) {
+          for (const question of module.questions ?? []) {
+            const byLabel: Record<string, string> = {};
+            for (const choice of question.choices ?? []) {
+              byLabel[choice.label] = choice.text ?? "";
+            }
+            nextMap[question.id] = byLabel;
+          }
+        }
+        setQuestionChoiceTextById(nextMap);
+      })
+      .catch(() => {
+        // Keep fallback behavior: review still works with labels even if bank lookup fails.
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!failureDialog.isOpen) return;
+    if (resultsScrollRef.current) {
+      resultsScrollRef.current.scrollTop = 0;
+    }
+  }, [failureDialog.isOpen, failureDialog.attemptId]);
 
   const moduleOptions = useMemo(() => {
     const set = new Set<string>();
@@ -624,17 +660,23 @@ export function VivaQueuePage() {
                 </div>
               </div>
 
-              <div className="space-y-3 max-h-[60vh] overflow-y-auto pr-2">
+              <div ref={resultsScrollRef} className="space-y-3 max-h-[60vh] overflow-y-auto pr-2">
                 {failureDetails.attempt.results.map((r: any, idx: number) => {
                     const img = extractImageSrc(r.visualHtml);
+                    const choiceTextByLabel = questionChoiceTextById[r.questionId] ?? {};
+                    const chosenText = r.chosenLabel ? choiceTextByLabel[r.chosenLabel] : "";
+                    const correctText = r.correctLabel ? choiceTextByLabel[r.correctLabel] : "";
                     return (
                       <div key={`${r.questionId}-${idx}`} className="rounded-lg border p-4">
                         <div className="flex items-center justify-between gap-3 mb-2">
                           <div className="font-medium text-sm whitespace-pre-wrap">
+                            <div className="text-xs text-muted-foreground mb-1">
+                              Question {idx + 1} of {failureDetails.attempt.results.length}
+                            </div>
                             {r.stem ? <MathText text={r.stem} /> : r.topic}
                           </div>
-                          <Badge variant={r.correct ? "default" : "secondary"}>
-                            {r.correct ? "Correct" : `${r.chosenLabel} vs ${r.correctLabel}`}
+                          <Badge variant={r.correct ? "default" : "destructive"}>
+                            {r.correct ? "Correct" : "Incorrect"}
                           </Badge>
                         </div>
 
@@ -654,6 +696,41 @@ export function VivaQueuePage() {
                             />
                           </div>
                         )}
+
+                        <div className="text-sm text-muted-foreground space-y-1">
+                          {r.correct ? (
+                            <div className="whitespace-pre-wrap">
+                              <span className="font-medium text-foreground">Answer:</span>{" "}
+                              <span className="font-medium">{r.correctLabel}</span>
+                              {correctText ? (
+                                <>
+                                  {" "}• <MathText text={correctText} />
+                                </>
+                              ) : null}
+                            </div>
+                          ) : (
+                            <>
+                              <div className="whitespace-pre-wrap">
+                                <span className="font-medium text-foreground">Student picked:</span>{" "}
+                                <span className="font-medium">{r.chosenLabel}</span>
+                                {chosenText ? (
+                                  <>
+                                    {" "}• <MathText text={chosenText} />
+                                  </>
+                                ) : null}
+                              </div>
+                              <div className="whitespace-pre-wrap">
+                                <span className="font-medium text-foreground">Correct answer:</span>{" "}
+                                <span className="font-medium">{r.correctLabel}</span>
+                                {correctText ? (
+                                  <>
+                                    {" "}• <MathText text={correctText} />
+                                  </>
+                                ) : null}
+                              </div>
+                            </>
+                          )}
+                        </div>
 
                         {r.misconception && (
                           <div className="text-sm text-muted-foreground whitespace-pre-wrap">

@@ -68,6 +68,7 @@ export function DiagnosticPage() {
   const [questions, setQuestions] = useState<DiagnosticQuestion[] | null>(null);
   const [qIndex, setQIndex] = useState(0);
   const [answered, setAnswered] = useState(false);
+  const [skippedCurrent, setSkippedCurrent] = useState(false);
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
   const [score, setScore] = useState(0);
   const [results, setResults] = useState<
@@ -155,6 +156,7 @@ export function DiagnosticPage() {
     setQuestions(null);
     setQIndex(0);
     setAnswered(false);
+    setSkippedCurrent(false);
     setSelectedIdx(null);
     setScore(0);
     setResults([]);
@@ -180,6 +182,7 @@ export function DiagnosticPage() {
     setQuestions(selected);
     setQIndex(0);
     setAnswered(false);
+    setSkippedCurrent(false);
     setSelectedIdx(null);
     setScore(0);
     setResults([]);
@@ -209,6 +212,7 @@ export function DiagnosticPage() {
     const explanation = currentQuestion.explanation || "";
 
     setAnswered(true);
+    setSkippedCurrent(false);
     setSelectedIdx(choiceIdx);
     if (correct) setScore((s) => s + 1);
 
@@ -228,11 +232,38 @@ export function DiagnosticPage() {
     ]);
   };
 
+  const handleSkipQuestion = () => {
+    if (!currentQuestion || answered) return;
+
+    const correctLabel = correctChoice?.label ?? "";
+    const explanation = currentQuestion.explanation || "";
+
+    setAnswered(true);
+    setSkippedCurrent(true);
+    setSelectedIdx(null);
+
+    setResults((prev) => [
+      ...prev,
+      {
+        questionId: currentQuestion.id,
+        topic: currentQuestion.topic,
+        chosenLabel: "Skipped",
+        correctLabel,
+        correct: false,
+        misconception: "Skipped by student.",
+        explanation,
+        visualHtml: currentQuestion.visual_html || undefined,
+        stem: currentQuestion.stem || undefined,
+      },
+    ]);
+  };
+
   const handleNext = async () => {
     if (!questions) return;
     if (qIndex < questions.length - 1) {
       setQIndex((i) => i + 1);
       setAnswered(false);
+      setSkippedCurrent(false);
       setSelectedIdx(null);
       return;
     }
@@ -605,6 +636,10 @@ export function DiagnosticPage() {
           />
         )}
 
+        <div className="mt-4 text-xs text-muted-foreground">
+          If you do not know the answer, skipping is better than guessing.
+        </div>
+
         <div className="mt-4 space-y-2">
           {currentQuestion.choices.map((c, idx) => {
             const isCorrect = Boolean(c.correct);
@@ -639,7 +674,16 @@ export function DiagnosticPage() {
 
         {answered && (
           <div className="mt-4 p-3 rounded-lg border bg-white">
-            {chosen?.correct ? (
+            {skippedCurrent ? (
+              <div className="text-sm">
+                <div className="font-semibold text-muted-foreground">Skipped</div>
+                {currentQuestion.explanation && (
+                  <div className="text-muted-foreground mt-1 whitespace-pre-wrap">
+                    <MathText text={currentQuestion.explanation} />
+                  </div>
+                )}
+              </div>
+            ) : chosen?.correct ? (
               <div className="text-sm">
                 <div className="font-semibold text-emerald-700">Correct</div>
                 {currentQuestion.explanation && (
@@ -670,14 +714,24 @@ export function DiagnosticPage() {
           <div className="text-sm text-muted-foreground">
             Score: {score}/{total} • Pass target: {Math.ceil((total * passThresholdPercent) / 100)}
           </div>
-          <button
-            type="button"
-            className="px-4 py-2 rounded bg-black text-white disabled:opacity-50"
-            disabled={!answered || isSubmitting}
-            onClick={handleNext}
-          >
-            {isSubmitting ? "Submitting…" : isLast ? "Finish" : "Next"}
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              className="px-4 py-2 rounded border disabled:opacity-50"
+              disabled={answered || isSubmitting}
+              onClick={handleSkipQuestion}
+            >
+              Skip
+            </button>
+            <button
+              type="button"
+              className="px-4 py-2 rounded bg-black text-white disabled:opacity-50"
+              disabled={!answered || isSubmitting}
+              onClick={handleNext}
+            >
+              {isSubmitting ? "Submitting…" : isLast ? "Finish" : "Next"}
+            </button>
+          </div>
         </div>
       </div>
     </div>

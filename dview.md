@@ -88,6 +88,7 @@ The student diagnostic page (`src/pages/student/DiagnosticPage.tsx`) builds a �
 - chosen answer label vs correct answer label
 - misconception text (warm feedback)
 - explanation text
+- skipped questions are recorded as skipped/incorrect and still carry the correct label + explanation for review
 
 When the attempt is submitted, it calls:
 - Backend mutation: `convex/diagnostics.submitAttempt`
@@ -96,6 +97,7 @@ Important behavior:
 - The backend re-computes pass/fail using a fixed threshold:
   - `PASS_THRESHOLD_PERCENT = 90`
 - So the Admin page will reflect the backend’s decision, even if the frontend tried to send a different `passed` value.
+- Students now see a clear hint during the quiz: if they are unsure, skipping is better than guessing.
 
 ---
 
@@ -140,8 +142,12 @@ For each question result, the UI shows:
 - **Question title**
   - If `stem` exists, it renders the stem (using `MathText`)
   - Otherwise it falls back to the `topic` string
-- **Correctness badge**
-  - Either “Correct” or “A vs B” style (chosen vs correct label)
+- **Question number + correctness badge**
+  - Example: `Question 4 of 30`
+  - Badge is now simply “Correct” or “Incorrect” for faster scanning
+- **Answer evidence**
+  - For incorrect attempts: explicit “Student picked: X …” and “Correct answer: Y …”
+  - The UI also looks up answer text from the diagnostic bank so labels are shown with real choice content
 - **Image**
   - It calls `extractImageSrc(result.visualHtml)` from `src/lib/diagnostic.ts`
   - That function looks for `src="..."` inside the HTML and extracts just the URL
