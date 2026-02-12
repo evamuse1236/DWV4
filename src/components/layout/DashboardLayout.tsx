@@ -6,10 +6,10 @@ import { CheckInGate } from "./CheckInGate";
 import { Changelog } from "./Changelog";
 import { api } from "../../../convex/_generated/api";
 import { useAuth } from "@/hooks/useAuth";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { MessageSquare } from "lucide-react";
+import { ImagePlus, MessageSquare } from "lucide-react";
 
 /**
  * Main dashboard layout with Paper UI sidebar and content area
@@ -29,6 +29,8 @@ export function DashboardLayout() {
   const [isSubmittingComment, setIsSubmittingComment] = useState(false);
   const [commentError, setCommentError] = useState<string | null>(null);
   const maxImages = 4;
+  const imageInputId = "comment-images-input";
+  const remainingImageSlots = Math.max(0, maxImages - commentImages.length);
 
   const resetCommentForm = () => {
     setCommentText("");
@@ -58,6 +60,7 @@ export function DashboardLayout() {
 
   const removeImage = (indexToRemove: number) => {
     setCommentImages((prev) => prev.filter((_, idx) => idx !== indexToRemove));
+    setCommentError(null);
   };
 
   const handleSubmitComment = async () => {
@@ -156,44 +159,80 @@ export function DashboardLayout() {
             if (!open) resetCommentForm();
           }}
         >
-          <DialogContent className="max-w-md">
-            <DialogHeader>
-              <DialogTitle>Share a Comment</DialogTitle>
-            </DialogHeader>
-            <div className="space-y-3">
-              <p className="text-sm text-muted-foreground">
-                Tell us what is not working or what can be improved.
+          <DialogContent className="max-w-md overflow-hidden border-divider bg-canvas shadow-[0_28px_64px_rgba(45,36,32,0.18)] sm:rounded-2xl">
+            <DialogTitle className="sr-only">Add Comment & Images</DialogTitle>
+            <div className="space-y-4">
+              <p className="text-sm text-taupe">
+                Tell us what is not working and add screenshots if helpful.
               </p>
               <Textarea
                 value={commentText}
                 onChange={(e) => setCommentText(e.target.value)}
                 placeholder="Type your comment..."
                 rows={5}
+                className="border-divider bg-card-active text-espresso placeholder:text-taupe/70 focus-visible:ring-espresso/20"
               />
-              <div className="space-y-2">
-                <label className="text-sm font-medium block">Add images (optional)</label>
+              <div className="space-y-3">
+                <div className="flex items-center justify-between gap-2 border-b border-divider/80 pb-2">
+                  <label
+                    htmlFor={imageInputId}
+                    className="block text-[11px] font-semibold uppercase tracking-[0.14em] text-taupe"
+                  >
+                    Add images (optional)
+                  </label>
+                  <span className="text-[11px] font-medium text-taupe/80">
+                    {remainingImageSlots} of {maxImages} slots left
+                  </span>
+                </div>
                 <input
+                  id={imageInputId}
                   type="file"
                   accept="image/*"
                   multiple
+                  disabled={remainingImageSlots === 0}
                   onChange={(e) => {
                     handleImagesSelected(e.target.files);
                     e.currentTarget.value = "";
                   }}
-                  className="block w-full text-sm"
+                  className="sr-only"
                 />
+                <label
+                  htmlFor={imageInputId}
+                  aria-disabled={remainingImageSlots === 0}
+                  className={`group relative flex w-full items-center gap-3 rounded-2xl border border-dashed px-4 py-5 text-sm transition ${
+                    remainingImageSlots === 0
+                      ? "cursor-not-allowed border-divider/70 bg-white/40 opacity-60"
+                      : "cursor-pointer border-divider bg-white/75 hover:border-primary/60 hover:bg-white"
+                  }`}
+                >
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-divider/80 bg-canvas shadow-sm transition-transform duration-200 group-hover:scale-105">
+                    <ImagePlus className="h-4 w-4 text-espresso" />
+                  </div>
+                  <div className="min-w-0">
+                    <p className="font-display text-lg italic leading-none text-espresso">
+                      {commentImages.length > 0 ? "Add more screenshots" : "Choose screenshots"}
+                    </p>
+                    <p className="mt-1 text-xs text-taupe">
+                      PNG, JPG, or WEBP. Up to {maxImages} images per comment.
+                    </p>
+                  </div>
+                </label>
                 {commentImages.length > 0 && (
-                  <div className="space-y-1 rounded-md border bg-muted/30 p-2">
+                  <div className="space-y-2 rounded-2xl border border-divider bg-white/65 p-3">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-taupe">
+                      Selected images
+                    </p>
                     {commentImages.map((file, idx) => (
-                      <div key={`${file.name}-${idx}`} className="flex items-center justify-between gap-2 text-xs">
-                        <span className="truncate">
-                          {file.name} ({Math.max(1, Math.round(file.size / 1024))} KB)
-                        </span>
+                      <div key={`${file.name}-${idx}`} className="flex items-center justify-between gap-2 rounded-xl bg-card-active px-2.5 py-2 text-xs">
+                        <div className="min-w-0">
+                          <p className="truncate font-medium text-espresso">{file.name}</p>
+                          <p className="text-[11px] text-taupe">{Math.max(1, Math.round(file.size / 1024))} KB</p>
+                        </div>
                         <Button
                           type="button"
                           variant="ghost"
                           size="sm"
-                          className="h-6 px-2"
+                          className="h-7 px-2 text-[11px] text-taupe hover:bg-secondary/40 hover:text-espresso"
                           onClick={() => removeImage(idx)}
                         >
                           Remove
