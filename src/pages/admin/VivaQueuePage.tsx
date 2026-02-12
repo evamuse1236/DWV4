@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "../../../convex/_generated/api";
@@ -20,11 +20,18 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { Textarea } from "@/components/ui/textarea";
+import { Input } from "@/components/ui/input";
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@/components/ui/tabs";
 import {
   CheckCircle,
   Clock,
   BookOpen,
+  Filter,
 } from "lucide-react";
 import { extractImageSrc } from "@/lib/diagnostic";
 import { MathText } from "@/components/math/MathText";
@@ -50,8 +57,6 @@ export function VivaQueuePage() {
     type: "approve" | "reject";
     request: any | null;
   }>({ isOpen: false, type: "approve", request: null });
-  const [note, setNote] = useState("");
-
   const [failureDialog, setFailureDialog] = useState<{
     isOpen: boolean;
     attemptId: string | null;
@@ -59,6 +64,7 @@ export function VivaQueuePage() {
   const [studentFilter, setStudentFilter] = useState("");
   const [moduleFilter, setModuleFilter] = useState("all");
   const [passFilter, setPassFilter] = useState<"all" | "passed" | "failed">("all");
+  const [insightsTab, setInsightsTab] = useState<"failures" | "attempts">("failures");
 
   const failureDetails = useQuery(
     api.diagnostics.getAttemptDetails,
@@ -74,28 +80,43 @@ export function VivaQueuePage() {
     return Array.from(set).sort();
   }, [diagnosticAttempts]);
 
-  const filteredAttempts = useMemo(() => {
-    const byStudent = studentFilter.trim().toLowerCase();
-    return (diagnosticAttempts ?? []).filter((row: any) => {
-      if (passFilter === "passed" && !row.attempt?.passed) return false;
-      if (passFilter === "failed" && row.attempt?.passed) return false;
-      if (moduleFilter !== "all" && row.attempt?.diagnosticModuleName !== moduleFilter) {
-        return false;
-      }
-      if (!byStudent) return true;
-      const haystack = `${row.user?.displayName ?? ""} ${row.user?.username ?? ""}`.toLowerCase();
-      return haystack.includes(byStudent);
-    });
-  }, [diagnosticAttempts, moduleFilter, passFilter, studentFilter]);
+  const byStudent = studentFilter.trim().toLowerCase();
+  const matchesStudent = (rowUser: any) => {
+    if (!byStudent) return true;
+    const haystack = `${rowUser?.displayName ?? ""} ${rowUser?.username ?? ""}`.toLowerCase();
+    return haystack.includes(byStudent);
+  };
+
+  const filteredAttempts = (diagnosticAttempts ?? []).filter((row: any) => {
+    if (passFilter === "passed" && !row.attempt?.passed) return false;
+    if (passFilter === "failed" && row.attempt?.passed) return false;
+    if (moduleFilter !== "all" && row.attempt?.diagnosticModuleName !== moduleFilter) {
+      return false;
+    }
+    return matchesStudent(row.user);
+  });
+
+  const filteredFailures = (diagnosticFailures ?? []).filter((row: any) => {
+    if (moduleFilter !== "all" && row.attempt?.diagnosticModuleName !== moduleFilter) {
+      return false;
+    }
+    return matchesStudent(row.user);
+  });
+
+  const filteredUnlockRequests = (pendingUnlockRequests ?? []).filter((row: any) =>
+    matchesStudent(row.user)
+  );
+
+  const filteredVivaRequests = (vivaRequests ?? []).filter((row: any) =>
+    matchesStudent(row.user)
+  );
 
   const openConfirmDialog = (type: "approve" | "reject", request: any) => {
     setConfirmDialog({ isOpen: true, type, request });
-    setNote("");
   };
 
   const closeConfirmDialog = () => {
     setConfirmDialog({ isOpen: false, type: "approve", request: null });
-    setNote("");
   };
 
   const openFailureDialog = (attemptId: string) => {
@@ -154,87 +175,153 @@ export function VivaQueuePage() {
     closeFailureDialog();
   };
 
+  const clearFilters = () => {
+    setStudentFilter("");
+    setModuleFilter("all");
+    setPassFilter("all");
+  };
+
   return (
     <div className="space-y-6">
-      {/* Header */}
-      <div>
-        <h1 className="text-2xl font-serif font-semibold">Viva Queue</h1>
-        <p className="text-muted-foreground">
-          Review and approve student mastery demonstrations
-        </p>
+      <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
+        <div>
+          <h1 className="text-2xl font-serif font-semibold">Viva Queue</h1>
+          <p className="text-muted-foreground">
+            Clear urgent decisions first, then review attempt evidence.
+          </p>
+        </div>
+        <Badge variant="outline" className="w-fit">
+          <Clock className="mr-1 h-3.5 w-3.5" />
+          Live Queue
+        </Badge>
       </div>
 
-      {/* Stats */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <Card>
+        <CardHeader className="pb-3">
+          <CardTitle className="text-base flex items-center gap-2">
+            <Filter className="h-4 w-4 text-muted-foreground" />
+            Global Filters
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-3">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+            <Input
+              type="text"
+              placeholder="Search student name or username"
+              value={studentFilter}
+              onChange={(e) => setStudentFilter(e.target.value)}
+              className="md:col-span-1"
+            />
+            <select
+              value={moduleFilter}
+              onChange={(e) => setModuleFilter(e.target.value)}
+              className="h-9 rounded-md border bg-background px-3 text-sm"
+            >
+              <option value="all">All modules</option>
+              {moduleOptions.map((moduleName) => (
+                <option key={moduleName} value={moduleName}>
+                  {moduleName}
+                </option>
+              ))}
+            </select>
+            <select
+              value={passFilter}
+              onChange={(e) => setPassFilter(e.target.value as "all" | "passed" | "failed")}
+              className="h-9 rounded-md border bg-background px-3 text-sm"
+            >
+              <option value="all">All outcomes</option>
+              <option value="passed">Passed only</option>
+              <option value="failed">Failed only</option>
+            </select>
+          </div>
+          <div className="flex items-center justify-between text-xs text-muted-foreground">
+            <span>
+              {filteredUnlockRequests.length} unlocks • {filteredVivaRequests.length} viva
+              requests • {filteredFailures.length} failures • {filteredAttempts.length} attempts
+            </span>
+            <Button variant="ghost" size="sm" onClick={clearFilters}>
+              Clear filters
+            </Button>
+          </div>
+        </CardContent>
+      </Card>
+
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Pending</CardTitle>
+            <CardTitle className="text-sm font-medium">Unlock Requests</CardTitle>
             <Clock className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">
-              {vivaRequests?.length || 0}
-            </div>
+            <div className="text-2xl font-bold">{filteredUnlockRequests.length}</div>
             <p className="text-xs text-muted-foreground">
-              Awaiting review
+              Awaiting approval
             </p>
           </CardContent>
         </Card>
 
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Today</CardTitle>
+            <CardTitle className="text-sm font-medium">Pending Vivas</CardTitle>
             <CheckCircle className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-primary">
-              {vivaRequests?.filter(
-                (r: any) =>
-                  r.vivaRequestedAt &&
-                  new Date(r.vivaRequestedAt).toDateString() ===
-                    new Date().toDateString()
-              ).length || 0}
-            </div>
+            <div className="text-2xl font-bold text-primary">{filteredVivaRequests.length}</div>
             <p className="text-xs text-muted-foreground">
-              Requested today
+              Ready for decision
             </p>
           </CardContent>
         </Card>
 
-        <Card>
+        <Card
+          className="cursor-pointer hover:bg-accent/40 transition-colors"
+          onClick={() => setInsightsTab("failures")}
+        >
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Oldest</CardTitle>
+            <CardTitle className="text-sm font-medium">Active Failures</CardTitle>
             <Clock className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">
-              {vivaRequests && vivaRequests.length > 0
-                ? Math.ceil(
-                    (Date.now() -
-                      Math.min(
-                        ...vivaRequests.map((r: any) => r.vivaRequestedAt || Date.now())
-                      )) /
-                      (1000 * 60 * 60 * 24)
-                  )
-                : 0}
-            </div>
+            <div className="text-2xl font-bold text-destructive">{filteredFailures.length}</div>
             <p className="text-xs text-muted-foreground">
-              Days waiting
+              Click to open failures
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card
+          className="cursor-pointer hover:bg-accent/40 transition-colors"
+          onClick={() => setInsightsTab("attempts")}
+        >
+          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+            <CardTitle className="text-sm font-medium">Attempts</CardTitle>
+            <BookOpen className="h-4 w-4 text-muted-foreground" />
+          </CardHeader>
+          <CardContent>
+            <div className="text-2xl font-bold">{filteredAttempts.length}</div>
+            <p className="text-xs text-muted-foreground">
+              Click to open attempts
             </p>
           </CardContent>
         </Card>
       </div>
 
-      {/* Diagnostic Unlock Requests */}
+      <div>
+        <h2 className="text-lg font-semibold mb-1">Immediate Action</h2>
+        <p className="text-sm text-muted-foreground mb-4">
+          Approve unlocks and viva requests first. Use Insights for deeper diagnostic review.
+        </p>
+      </div>
+
       <div>
         <h2 className="text-lg font-semibold mb-1">Diagnostic Unlock Requests</h2>
         <p className="text-sm text-muted-foreground mb-4">
           Approve a 24-hour, 1-attempt diagnostic window for students.
         </p>
 
-        {pendingUnlockRequests && pendingUnlockRequests.length > 0 ? (
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            {pendingUnlockRequests.map((req: any) => (
+        {filteredUnlockRequests.length > 0 ? (
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
+            {filteredUnlockRequests.map((req: any) => (
               <div
                 key={req._id}
                 className="rounded-xl border bg-card shadow-sm p-5"
@@ -302,185 +389,16 @@ export function VivaQueuePage() {
         )}
       </div>
 
-      {/* Diagnostic Attempts */}
-      <div>
-        <h2 className="text-lg font-semibold mb-1">Diagnostic Attempts</h2>
-        <p className="text-sm text-muted-foreground mb-4">
-          All attempts (pass + fail). Click any row to review per-question evidence.
-        </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-4">
-          <input
-            type="text"
-            placeholder="Filter by student name or username"
-            value={studentFilter}
-            onChange={(e) => setStudentFilter(e.target.value)}
-            className="h-9 rounded-md border bg-background px-3 text-sm"
-          />
-          <select
-            value={moduleFilter}
-            onChange={(e) => setModuleFilter(e.target.value)}
-            className="h-9 rounded-md border bg-background px-3 text-sm"
-          >
-            <option value="all">All modules</option>
-            {moduleOptions.map((moduleName) => (
-              <option key={moduleName} value={moduleName}>
-                {moduleName}
-              </option>
-            ))}
-          </select>
-          <select
-            value={passFilter}
-            onChange={(e) => setPassFilter(e.target.value as "all" | "passed" | "failed")}
-            className="h-9 rounded-md border bg-background px-3 text-sm"
-          >
-            <option value="all">All outcomes</option>
-            <option value="passed">Passed</option>
-            <option value="failed">Failed</option>
-          </select>
-        </div>
-
-        {filteredAttempts.length > 0 ? (
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            {filteredAttempts.map((row: any) => (
-              <div
-                key={row.attemptId}
-                className="group rounded-xl border bg-card shadow-sm p-5 hover:bg-accent/40 transition-colors cursor-pointer"
-                onClick={() => openFailureDialog(row.attemptId)}
-                title="View attempt details"
-              >
-                <div className="flex items-center gap-3 mb-3">
-                  <Avatar className="h-10 w-10">
-                    <AvatarImage src={row.user?.avatarUrl} alt={row.user?.displayName} />
-                    <AvatarFallback className="bg-primary text-primary-foreground">
-                      {row.user?.displayName?.charAt(0) || "?"}
-                    </AvatarFallback>
-                  </Avatar>
-                  <div className="min-w-0 flex-1">
-                    <p className="font-medium truncate">{row.user?.displayName}</p>
-                    <p className="text-sm text-muted-foreground truncate">
-                      @{row.user?.username}
-                    </p>
-                  </div>
-                  <span className="text-xs text-muted-foreground">
-                    {formatDate(row.attempt.submittedAt)}
-                  </span>
-                </div>
-
-                <div className="flex items-center gap-2 mb-3">
-                  <BookOpen className="h-4 w-4 text-muted-foreground shrink-0" />
-                  <p className="font-medium text-sm truncate">
-                    {row.majorObjective?.title}
-                  </p>
-                </div>
-
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    {row.domain?.name && <Badge variant="outline">{row.domain.name}</Badge>}
-                    <Badge variant={row.attempt.passed ? "default" : "secondary"}>
-                      {row.attempt.score}/{row.attempt.questionCount}
-                    </Badge>
-                    <Badge variant={row.attempt.passed ? "default" : "destructive"}>
-                      {row.attempt.passed ? "PASS" : "FAIL"}
-                    </Badge>
-                  </div>
-                  <span className="text-xs text-muted-foreground">
-                    {Math.round((row.attempt.durationMs || 0) / 1000)}s
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-        ) : (
-          <div className="text-center py-10">
-            <p className="text-muted-foreground">No attempts match current filters</p>
-          </div>
-        )}
-      </div>
-
-      {/* Diagnostic Failures (quick triage) */}
-      <div>
-        <h2 className="text-lg font-semibold mb-1">Diagnostic Failures</h2>
-        <p className="text-sm text-muted-foreground mb-4">
-          Latest unresolved failures for directed viva prep.
-        </p>
-        <div className="text-sm text-muted-foreground">
-          {diagnosticFailures?.length || 0} active failure cases
-        </div>
-
-        {diagnosticFailures && diagnosticFailures.length > 0 ? (
-          <div className="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
-            {diagnosticFailures.map((row: any) => (
-              <div key={row.attemptId} className="rounded-xl border bg-card shadow-sm p-5">
-                <div className="flex items-center gap-3 mb-3">
-                  <Avatar className="h-10 w-10">
-                    <AvatarImage src={row.user?.avatarUrl} alt={row.user?.displayName} />
-                    <AvatarFallback className="bg-primary text-primary-foreground">
-                      {row.user?.displayName?.charAt(0) || "?"}
-                    </AvatarFallback>
-                  </Avatar>
-                  <div className="min-w-0 flex-1">
-                    <p className="font-medium truncate">{row.user?.displayName}</p>
-                    <p className="text-sm text-muted-foreground truncate">
-                      @{row.user?.username}
-                    </p>
-                  </div>
-                  <span className="text-xs text-muted-foreground">
-                    {formatDate(row.attempt?.submittedAt)}
-                  </span>
-                </div>
-
-                <div className="flex items-center gap-2 mb-3">
-                  <BookOpen className="h-4 w-4 text-muted-foreground shrink-0" />
-                  <p className="font-medium text-sm truncate">
-                    {row.majorObjective?.title || row.attempt?.diagnosticModuleName}
-                  </p>
-                </div>
-
-                <div className="flex items-center gap-2 mb-4">
-                  {row.domain?.name && <Badge variant="outline">{row.domain.name}</Badge>}
-                  <Badge variant="destructive">
-                    {row.attempt?.score}/{row.attempt?.questionCount}
-                  </Badge>
-                  <Badge variant={row.majorAssignment?.status === "viva_requested" ? "default" : "secondary"}>
-                    {row.majorAssignment?.status === "viva_requested" ? "Viva Requested" : "Needs Viva"}
-                  </Badge>
-                </div>
-
-                <div className="flex items-center justify-end gap-2">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    onClick={() => navigate(`/admin/students/${row.attempt?.userId}`)}
-                    disabled={!row.attempt?.userId}
-                  >
-                    Open Student
-                  </Button>
-                  <Button size="sm" onClick={() => openFailureDialog(row.attemptId)}>
-                    Review Attempt
-                  </Button>
-                </div>
-              </div>
-            ))}
-          </div>
-        ) : (
-          <p className="text-sm text-muted-foreground mt-3">
-            No unresolved diagnostic failures right now.
-          </p>
-        )}
-      </div>
-
-      {/* Queue */}
       <div>
         <h2 className="text-lg font-semibold mb-1">Pending Viva Requests</h2>
         <p className="text-sm text-muted-foreground mb-4">
-          Students ready to demonstrate mastery of their learning objectives
+          Students ready to demonstrate mastery of their learning objectives.
         </p>
       </div>
 
-      {vivaRequests && vivaRequests.length > 0 ? (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          {vivaRequests.map((request: any) => (
+      {filteredVivaRequests.length > 0 ? (
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
+          {filteredVivaRequests.map((request: any) => (
             <div
               key={request._id}
               className="group rounded-xl border bg-card shadow-sm p-5 hover:bg-accent/40 transition-colors cursor-pointer"
@@ -489,42 +407,29 @@ export function VivaQueuePage() {
             >
               <div className="flex items-center gap-3 mb-3">
                 <Avatar className="h-10 w-10">
-                  <AvatarImage
-                    src={request.user?.avatarUrl}
-                    alt={request.user?.displayName}
-                  />
+                  <AvatarImage src={request.user?.avatarUrl} alt={request.user?.displayName} />
                   <AvatarFallback className="bg-primary text-primary-foreground">
                     {request.user?.displayName?.charAt(0) || "?"}
                   </AvatarFallback>
                 </Avatar>
                 <div className="min-w-0 flex-1">
-                  <p className="font-medium truncate">
-                    {request.user?.displayName}
-                  </p>
-                  <p className="text-sm text-muted-foreground truncate">
-                    @{request.user?.username}
-                  </p>
+                  <p className="font-medium truncate">{request.user?.displayName}</p>
+                  <p className="text-sm text-muted-foreground truncate">@{request.user?.username}</p>
                 </div>
                 <span className="text-xs text-muted-foreground">
-                  {request.vivaRequestedAt
-                    ? formatDate(request.vivaRequestedAt)
-                    : "Unknown"}
+                  {request.vivaRequestedAt ? formatDate(request.vivaRequestedAt) : "Unknown"}
                 </span>
               </div>
 
               <div className="flex items-center gap-2 mb-3">
                 <BookOpen className="h-4 w-4 text-muted-foreground shrink-0" />
-                <p className="font-medium text-sm truncate">
-                  {request.objective?.title}
-                </p>
+                <p className="font-medium text-sm truncate">{request.objective?.title}</p>
               </div>
 
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <Badge variant="outline">{request.domain?.name}</Badge>
-                  <Badge variant="secondary">
-                    {request.objective?.difficulty}
-                  </Badge>
+                  <Badge variant="secondary">{request.objective?.difficulty}</Badge>
                 </div>
                 <div className="flex items-center gap-2">
                   <Button
@@ -557,12 +462,138 @@ export function VivaQueuePage() {
           <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center mx-auto mb-4">
             <CheckCircle className="h-6 w-6 text-muted-foreground" />
           </div>
-          <p className="text-muted-foreground">No pending viva requests yet</p>
-          <p className="text-sm text-muted-foreground">
-            Students appear here only after they submit a viva request after a failed diagnostic.
-          </p>
+          <p className="text-muted-foreground">Queue clear. No pending viva requests.</p>
         </div>
       )}
+
+      <Card>
+        <CardHeader className="pb-3">
+          <CardTitle className="text-base">Insights & Review</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <Tabs
+            value={insightsTab}
+            onValueChange={(value) => setInsightsTab(value as "failures" | "attempts")}
+          >
+            <TabsList className="grid w-full grid-cols-2">
+              <TabsTrigger value="failures">Failures ({filteredFailures.length})</TabsTrigger>
+              <TabsTrigger value="attempts">Attempts ({filteredAttempts.length})</TabsTrigger>
+            </TabsList>
+
+            <TabsContent value="failures" className="mt-4">
+              {filteredFailures.length > 0 ? (
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                  {filteredFailures.map((row: any) => (
+                    <div key={row.attemptId} className="rounded-xl border bg-card shadow-sm p-5">
+                      <div className="flex items-center gap-3 mb-3">
+                        <Avatar className="h-10 w-10">
+                          <AvatarImage src={row.user?.avatarUrl} alt={row.user?.displayName} />
+                          <AvatarFallback className="bg-primary text-primary-foreground">
+                            {row.user?.displayName?.charAt(0) || "?"}
+                          </AvatarFallback>
+                        </Avatar>
+                        <div className="min-w-0 flex-1">
+                          <p className="font-medium truncate">{row.user?.displayName}</p>
+                          <p className="text-sm text-muted-foreground truncate">@{row.user?.username}</p>
+                        </div>
+                        <span className="text-xs text-muted-foreground">
+                          {formatDate(row.attempt?.submittedAt)}
+                        </span>
+                      </div>
+
+                      <div className="flex items-center gap-2 mb-3">
+                        <BookOpen className="h-4 w-4 text-muted-foreground shrink-0" />
+                        <p className="font-medium text-sm truncate">
+                          {row.majorObjective?.title || row.attempt?.diagnosticModuleName}
+                        </p>
+                      </div>
+
+                      <div className="flex items-center gap-2 mb-4">
+                        {row.domain?.name && <Badge variant="outline">{row.domain.name}</Badge>}
+                        <Badge variant="destructive">
+                          {row.attempt?.score}/{row.attempt?.questionCount}
+                        </Badge>
+                        <Badge variant={row.majorAssignment?.status === "viva_requested" ? "default" : "secondary"}>
+                          {row.majorAssignment?.status === "viva_requested" ? "Viva Requested" : "Needs Viva"}
+                        </Badge>
+                      </div>
+
+                      <div className="flex items-center justify-end gap-2">
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          onClick={() => navigate(`/admin/students/${row.attempt?.userId}`)}
+                          disabled={!row.attempt?.userId}
+                        >
+                          Open Student
+                        </Button>
+                        <Button size="sm" onClick={() => openFailureDialog(row.attemptId)}>
+                          Review Attempt
+                        </Button>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <p className="text-sm text-muted-foreground">No unresolved failures for current filters.</p>
+              )}
+            </TabsContent>
+
+            <TabsContent value="attempts" className="mt-4">
+              {filteredAttempts.length > 0 ? (
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                  {filteredAttempts.map((row: any) => (
+                    <div
+                      key={row.attemptId}
+                      className="group rounded-xl border bg-card shadow-sm p-5 hover:bg-accent/40 transition-colors cursor-pointer"
+                      onClick={() => openFailureDialog(row.attemptId)}
+                      title="View attempt details"
+                    >
+                      <div className="flex items-center gap-3 mb-3">
+                        <Avatar className="h-10 w-10">
+                          <AvatarImage src={row.user?.avatarUrl} alt={row.user?.displayName} />
+                          <AvatarFallback className="bg-primary text-primary-foreground">
+                            {row.user?.displayName?.charAt(0) || "?"}
+                          </AvatarFallback>
+                        </Avatar>
+                        <div className="min-w-0 flex-1">
+                          <p className="font-medium truncate">{row.user?.displayName}</p>
+                          <p className="text-sm text-muted-foreground truncate">@{row.user?.username}</p>
+                        </div>
+                        <span className="text-xs text-muted-foreground">
+                          {formatDate(row.attempt.submittedAt)}
+                        </span>
+                      </div>
+
+                      <div className="flex items-center gap-2 mb-3">
+                        <BookOpen className="h-4 w-4 text-muted-foreground shrink-0" />
+                        <p className="font-medium text-sm truncate">{row.majorObjective?.title}</p>
+                      </div>
+
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-2">
+                          {row.domain?.name && <Badge variant="outline">{row.domain.name}</Badge>}
+                          <Badge variant={row.attempt.passed ? "default" : "secondary"}>
+                            {row.attempt.score}/{row.attempt.questionCount}
+                          </Badge>
+                          <Badge variant={row.attempt.passed ? "default" : "destructive"}>
+                            {row.attempt.passed ? "PASS" : "FAIL"}
+                          </Badge>
+                        </div>
+                        <span className="text-xs text-muted-foreground">
+                          {Math.round((row.attempt.durationMs || 0) / 1000)}s
+                        </span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <p className="text-sm text-muted-foreground">No attempts match current filters.</p>
+              )}
+            </TabsContent>
+          </Tabs>
+        </CardContent>
+      </Card>
 
       {/* Diagnostic Failure Dialog */}
       <Dialog open={failureDialog.isOpen} onOpenChange={(open) => !open && closeFailureDialog()}>
@@ -700,28 +731,6 @@ export function VivaQueuePage() {
               )}
             </DialogDescription>
           </DialogHeader>
-          <div className="space-y-4 py-4">
-            <div className="space-y-2">
-              <label className="text-sm font-medium">
-                Note (optional)
-              </label>
-              <Textarea
-                placeholder={
-                  confirmDialog.type === "approve"
-                    ? "Great work on the demonstration..."
-                    : "Feedback for the student..."
-                }
-                value={note}
-                onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setNote(e.target.value)}
-                rows={3}
-              />
-              <p className="text-xs text-muted-foreground">
-                {confirmDialog.type === "reject"
-                  ? "Help the student understand what they need to work on."
-                  : "Optional feedback or recognition for the student."}
-              </p>
-            </div>
-          </div>
           <DialogFooter>
             <Button variant="outline" onClick={closeConfirmDialog}>
               Cancel

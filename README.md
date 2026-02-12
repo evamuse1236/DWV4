@@ -86,7 +86,7 @@ npm run dev
 | **Setup Checklist** | Guided onboarding: students → sprint → objectives |
 | **Student Management** | Create accounts, assign batches, view details |
 | **Learning Objectives** | Create objectives, assign to students, manage activities |
-| **Viva Queue** | Review mastery requests with confirmation + notes |
+| **Viva Queue** | Urgent-first triage with global filters, unlock/viva actions, and diagnostic insights tabs |
 | **Sprint Management** | Create/edit sprints with safe deletion dialogs |
 | **Visibility Dashboard** | See today's check-ins with emotional state + journal |
 

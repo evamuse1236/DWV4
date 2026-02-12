@@ -184,36 +184,32 @@ function buildModulesFromV2(payload: V2MasteryData): DiagnosticModule[] {
   return modules.filter((m) => Boolean(m.module_name) && m.questions.length > 0);
 }
 
-async function fetchLegacyModules(): Promise<DiagnosticModule[]> {
-  const res = await fetch("/diagnostic/diagnostic-data.json");
-  if (!res.ok) {
-    throw new Error(`Failed to load diagnostic data: ${res.status}`);
-  }
-  return (await res.json()) as DiagnosticModule[];
-}
-
 export async function loadDiagnosticData(): Promise<DiagnosticModule[]> {
   if (cachedData) return cachedData;
   if (cachedDataPromise) return cachedDataPromise;
 
   cachedDataPromise = (async () => {
-    try {
-      const res = await fetch("/diagnostic_v2/mastery_data.json");
-      if (!res.ok) {
-        throw new Error(`Failed to load V2 mastery data: ${res.status}`);
-      }
-      const payload = (await res.json()) as V2MasteryData;
-      const modules = buildModulesFromV2(payload);
-      if (modules.length === 0) {
-        throw new Error("No module data in V2 mastery payload");
-      }
-      cachedData = modules;
-      return modules;
-    } catch {
-      const legacy = await fetchLegacyModules();
-      cachedData = legacy;
-      return legacy;
+    const res = await fetch("/diagnostic_v2/mastery_data.json");
+    if (!res.ok) {
+      throw new Error(
+        `Diagnostic V2 is required but unavailable (status ${res.status}). Legacy fallback is disabled.`
+      );
     }
+
+    let payload: V2MasteryData;
+    try {
+      payload = (await res.json()) as V2MasteryData;
+    } catch {
+      throw new Error("Diagnostic V2 payload is invalid JSON. Legacy fallback is disabled.");
+    }
+
+    const modules = buildModulesFromV2(payload);
+    if (modules.length === 0) {
+      throw new Error("Diagnostic V2 payload has no module data. Legacy fallback is disabled.");
+    }
+
+    cachedData = modules;
+    return modules;
   })().finally(() => {
     cachedDataPromise = null;
   });

@@ -20,6 +20,8 @@
 - Sidebar now shows @username with display name below instead of display name with role
 
 ### Fixed
+- Deep Work Diagnostics: retired legacy V1 quiz-bank fallback; diagnostics now require `public/diagnostic_v2/mastery_data.json` and fail loudly when V2 is unavailable or invalid
+- Viva Queue UX: restructured to urgent-first triage with global filters, immediate action sections, and tabbed insights for failures vs attempts
 - DeepWork page background color mismatch with sidebar — removed page-specific watercolor blobs that created a visible yellowish rectangle not extending into the sidebar; the body's ambient blobs now provide a seamless atmosphere across all pages
 - Project AI data-entry chat now preserves turn history across consecutive messages in the same session
 - Project AI chat now safely handles malformed `project-data` JSON blocks without breaking the chat flow
