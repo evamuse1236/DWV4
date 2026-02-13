@@ -1,6 +1,6 @@
 # Runbook -- Deep Work Tracker
 
-**Last Updated:** 2026-02-06
+**Last Updated:** 2026-02-13
 
 ## Environments
 
@@ -14,6 +14,22 @@ The frontend environment variable `VITE_CONVEX_URL` determines which database th
 - `.env.production` points to prod (`greedy-marten-449`)
 
 ## Deployment
+
+### In-app "What's New" Changelog
+
+The student-facing top-right changelog panel is generated from git commit history.
+
+- Generator script: `scripts/generate-whats-new.mjs`
+- Generated file: `src/data/whatsNew.generated.ts`
+- Automatic refresh:
+  - `npm run dev` triggers `predev` -> `npm run changelog:generate`
+  - `npm run build` triggers `prebuild` -> `npm run changelog:generate`
+
+Manual refresh command:
+
+```bash
+npm run changelog:generate
+```
 
 ### Frontend (Netlify)
 
@@ -32,6 +48,9 @@ Convex functions and schema are deployed separately from the frontend.
 ```bash
 # Deploy to prod (schema + all functions)
 npx convex deploy
+
+# Deploy to prod in non-interactive environments (CI/agents)
+npx convex deploy -y
 ```
 
 This pushes the contents of `convex/` (schema, queries, mutations, actions) to the prod deployment (`greedy-marten-449`).
@@ -44,7 +63,7 @@ When both backend and frontend changes are needed:
 
 ```bash
 # 1. Deploy Convex backend to prod
-npx convex deploy
+npx convex deploy -y
 
 # 2. Push to main branch (triggers Netlify build)
 git push origin master
@@ -52,6 +71,17 @@ git push origin master
 
 If only Convex functions changed (no frontend changes), just run `npx convex deploy`.
 If only frontend changed (no schema/function changes), just push to master.
+
+### Release Validation Checklist (prod)
+
+When frontend code calls a newly added Convex query/mutation/action:
+
+1. Deploy Convex first: `npx convex deploy -y`
+2. Deploy frontend (Netlify build from latest `master`)
+3. Verify logs:
+   - `npx convex logs --prod --history 50`
+4. Check for missing-function errors before signoff
+5. Hard refresh browser (`Ctrl+Shift+R`) during QA
 
 ## Seeding Data
 
@@ -165,6 +195,25 @@ Sets reference question IDs from `data.js`. If the question bank changes, sets m
 **Fix:** Check which env file is active:
 - Local dev: `.env.local` should point to `ardent-penguin-515`
 - Production build: `.env.production` should point to `greedy-marten-449`
+
+### "Could not find public function for 'auth:<name>'"
+
+**Symptom:** Browser shows query/mutation server error and logs include:
+`Could not find public function for 'auth:getFriendProfiles'`.
+
+**Cause:** Frontend was deployed with a call to a Convex function that was not yet deployed to prod.
+
+**Fix:**
+
+```bash
+# 1. Deploy Convex backend to prod
+npx convex deploy -y
+
+# 2. Confirm no missing-function errors
+npx convex logs --prod --history 50
+```
+
+If the error persists, verify the frontend deploy is built from the commit that contains the corresponding Convex function.
 
 ### Convex function runs on wrong database
 

@@ -31,6 +31,16 @@
 
 ## Recent Changes
 
+### Deployment Guardrail (Feb 2026)
+- Added explicit runbook guidance for frontend + Convex sync deploys
+- New checklist requires deploying Convex first when frontend references new functions
+- Added troubleshooting entry for: `Could not find public function for 'auth:<name>'`
+
+### Auto "What's New" Feed (Feb 2026)
+- The in-app top-right changelog now auto-generates from git history
+- Regenerated on every `npm run dev` and `npm run build` via npm lifecycle hooks
+- Source script: `scripts/generate-whats-new.mjs`
+
 ### Diagnostic Pre-Built Sets (Jan 2026)
 - Question selection now uses **pre-built deterministic sets** (10 per module group, 30 questions each)
 - Set cycling via Convex `getAttemptCount` query (replaces localStorage-based random selection)

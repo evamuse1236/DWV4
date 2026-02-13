@@ -4,6 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "changelog:generate": "node scripts/generate-whats-new.mjs",
+    "predev": "npm run changelog:generate",
+    "prebuild": "npm run changelog:generate",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",

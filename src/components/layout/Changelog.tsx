@@ -1,141 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import styles from "../../styles/changelog.module.css";
-
-interface ChangelogEntry {
-  date: string;
-  sortDate: string; // ISO date string used for unread detection
-  title: string;
-  description: string;
-}
-
-const CHANGELOG: ChangelogEntry[] = [
-  {
-    date: "Feb 6",
-    sortDate: "2026-02-06",
-    title: "Settings & Account Management",
-    description:
-      "New Settings page for students and admins. Change your username, password, or profile photo (including GIFs). Admins also get a credential dashboard to manage all user accounts.",
-  },
-  {
-    date: "Feb 6",
-    sortDate: "2026-02-06",
-    title: "Project Link Editing",
-    description:
-      "Admin project detail pages now let you inline-edit link titles, URLs, and link types with a save/cancel flow — no more delete-and-recreate.",
-  },
-  {
-    date: "Feb 5",
-    sortDate: "2026-02-05",
-    title: "Smarter AI Data Chat",
-    description:
-      "The project AI data-entry chat now remembers your conversation across messages in the same session, and handles malformed responses gracefully.",
-  },
-  {
-    date: "Jan 29",
-    sortDate: "2026-01-29",
-    title: "Diagnostics for Mastery",
-    description:
-      "When you finish a Deep Work module, you can now take a coach-approved diagnostic. If you score 100%, you’ll be auto-mastered. If not, your coach gets a detailed breakdown for a targeted viva.",
-  },
-  {
-    date: "Jan 27",
-    sortDate: "2026-01-27",
-    title: "Vision Board",
-    description:
-      "New Vision Board page where you can visualize your goals across different life areas. Add cards for counters, habits, streaks, journal entries, and more — all saved to the cloud.",
-  },
-  {
-    date: "Jan 27",
-    sortDate: "2026-01-27",
-    title: "Queue Pages Refresh",
-    description:
-      "The Presentation Queue and Viva Queue pages got a cleaner layout with better card design and less visual clutter.",
-  },
-  {
-    date: "Jan 26",
-    sortDate: "2026-01-26",
-    title: "Daily Rituals Fix",
-    description:
-      "The ritual counter now correctly shows how many days you completed this week (e.g. 6/7) instead of a confusing streak number. Day orbs also respond instantly when clicked.",
-  },
-  {
-    date: "Jan 26",
-    sortDate: "2026-01-26",
-    title: "Batch Trust Jars",
-    description:
-      "The Trust Jar now works independently per batch. Each batch earns marbles separately, and admins can switch between batches with a dropdown selector.",
-  },
-  {
-    date: "Jan 26",
-    sortDate: "2026-01-26",
-    title: "Book Buddy Redesign",
-    description:
-      "Book Buddy now matches the app's warm design. The personality toggle is a compact cycling icon next to the name, and chips are transparent so you see more books.",
-  },
-  {
-    date: "Jan 26",
-    sortDate: "2026-01-26",
-    title: "Quick Duplicate Last Week",
-    description:
-      "The Muse now has a 'Duplicate last week' command chip that instantly imports all your previous sprint goals — no AI conversation needed.",
-  },
-  {
-    date: "Jan 26",
-    sortDate: "2026-01-26",
-    title: "Smart Week Toggle",
-    description:
-      "The sprint page now automatically opens to the current week. No more manually switching from Week 1 to Week 2 mid-sprint.",
-  },
-  {
-    date: "Jan 25",
-    sortDate: "2026-01-25",
-    title: "Better Task Checkboxes",
-    description:
-      "Tasks now have clear square checkboxes that toggle instantly. No more double-clicking! The home page also shows today's remaining tasks instead of total goals.",
-  },
-  {
-    date: "Jan 25",
-    sortDate: "2026-01-25",
-    title: "Sprint View Overhaul",
-    description:
-      "Completely redesigned the sprint page with the Structured Serenity design system. Goals now expand together to show scrollable task lists, and the Trust Jar is now part of your dashboard.",
-  },
-  {
-    date: "Jan 17-18",
-    sortDate: "2026-01-18",
-    title: "Skill Tree & Projects",
-    description:
-      "New collapsible skill tree visualization with an objectives panel on the right side. Plus, you can now organize your work into projects and request vivas when you're ready.",
-  },
-  {
-    date: "Jan 15",
-    sortDate: "2026-01-15",
-    title: "Trust Jar & Reading",
-    description:
-      "Added the Trust Jar for class rewards tracking. Book Buddy now has the real DW curriculum books, a cleaner card design, and a presentation queue for book approvals.",
-  },
-  {
-    date: "Jan 14",
-    sortDate: "2026-01-14",
-    title: "AI Goal Coach",
-    description:
-      "Meet your new AI assistant for goal setting! It helps you craft better goals and can revise them based on your feedback. Powered by Kimi K2.",
-  },
-  {
-    date: "Jan 13",
-    sortDate: "2026-01-13",
-    title: "Palette of Presence",
-    description:
-      "The daily check-in got a complete makeover. Select multiple emotions from beautiful color palettes that capture how you're really feeling.",
-  },
-  {
-    date: "Jan 11",
-    sortDate: "2026-01-11",
-    title: "Deep Work Tracker v4",
-    description:
-      "Major release with the complete learning management system. New setup wizard, improved UI across the board, and better performance.",
-  },
-];
+import { WHATS_NEW } from "@/data/whatsNew.generated";
 
 // Key for storing last viewed date in localStorage
 const LAST_VIEWED_KEY = "changelog-last-viewed";
@@ -153,7 +18,7 @@ export function Changelog() {
     } else {
       // Compare with most recent entry date
       const lastViewedDate = new Date(lastViewed);
-      const latestEntryDate = new Date(CHANGELOG[0].sortDate);
+      const latestEntryDate = new Date(WHATS_NEW[0]?.sortDate ?? "1970-01-01");
       setHasUnread(latestEntryDate > lastViewedDate);
     }
   }, []);
@@ -231,13 +96,23 @@ export function Changelog() {
         </div>
 
         <div className={styles["changelog-body"]}>
-          {CHANGELOG.map((entry, index) => (
-            <div key={index} className={styles["changelog-entry"]}>
-              <div className={styles["entry-date"]}>{entry.date}</div>
-              <h3 className={styles["entry-title"]}>{entry.title}</h3>
-              <p className={styles["entry-description"]}>{entry.description}</p>
+          {WHATS_NEW.length > 0 ? (
+            WHATS_NEW.map((entry, index) => (
+              <div key={index} className={styles["changelog-entry"]}>
+                <div className={styles["entry-date"]}>{entry.date}</div>
+                <h3 className={styles["entry-title"]}>{entry.title}</h3>
+                <p className={styles["entry-description"]}>{entry.description}</p>
+              </div>
+            ))
+          ) : (
+            <div className={styles["changelog-entry"]}>
+              <div className={styles["entry-date"]}>No updates</div>
+              <h3 className={styles["entry-title"]}>No commits found</h3>
+              <p className={styles["entry-description"]}>
+                Run <code>npm run changelog:generate</code> to generate entries.
+              </p>
             </div>
-          ))}
+          )}
         </div>
       </div>
     </div>
