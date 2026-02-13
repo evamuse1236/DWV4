@@ -5,10 +5,12 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 const mockChangeOwnUsername = vi.fn();
 const mockChangeOwnPassword = vi.fn();
 const mockUpdateOwnProfile = vi.fn();
+const mockUseQuery = vi.fn();
 const mockUseAuth = vi.fn();
 const mockUseSessionToken = vi.fn();
 
 vi.mock("convex/react", () => ({
+  useQuery: (...args: any[]) => mockUseQuery(...args),
   useMutation: vi.fn((mutationRef: string) => {
     if (mutationRef === "auth.changeOwnUsername") return mockChangeOwnUsername;
     if (mutationRef === "auth.changeOwnPassword") return mockChangeOwnPassword;
@@ -23,6 +25,7 @@ vi.mock("../../../../convex/_generated/api", () => ({
       changeOwnUsername: "auth.changeOwnUsername",
       changeOwnPassword: "auth.changeOwnPassword",
       updateOwnProfile: "auth.updateOwnProfile",
+      getFriendProfiles: "auth.getFriendProfiles",
     },
   },
 }));
@@ -46,6 +49,27 @@ describe("Student Settings avatar URL", () => {
       },
     });
     mockUseSessionToken.mockReturnValue("token_123");
+    mockUseQuery.mockImplementation((queryRef: string) => {
+      if (queryRef === "auth.getFriendProfiles") {
+        return [
+          {
+            _id: "user_2",
+            displayName: "Friend One",
+            username: "friend1",
+            avatarUrl: "https://example.com/friend1.gif",
+            batch: "2156",
+          },
+          {
+            _id: "user_3",
+            displayName: "Friend Two",
+            username: "friend2",
+            avatarUrl: undefined,
+            batch: "2156",
+          },
+        ];
+      }
+      return undefined;
+    });
     mockUpdateOwnProfile.mockResolvedValue({ success: true, avatarUrl: "https://example.com/new.gif" });
   });
 
@@ -97,5 +121,23 @@ describe("Student Settings avatar URL", () => {
         avatarUrl: undefined,
       });
     });
+  });
+
+  it("shows friend profile GIFs and expands when clicked", async () => {
+    const user = userEvent.setup();
+    render(<SettingsPage />);
+
+    expect(screen.getByText("Friends' Profile GIFs")).toBeInTheDocument();
+    expect(screen.getByRole("img", { name: "Friend One profile" })).toBeInTheDocument();
+    expect(
+      screen.queryByRole("img", { name: "Friend Two profile" })
+    ).not.toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: /Friend One/i }));
+
+    expect(
+      screen.getByRole("img", { name: "Friend One expanded profile" })
+    ).toBeInTheDocument();
+    expect(screen.getByText("Friend One's Profile GIF")).toBeInTheDocument();
   });
 });

@@ -352,6 +352,60 @@ export const updateOwnProfile = mutation({
 });
 
 /**
+ * Get friend profile photos for the current student.
+ * Returns only safe public fields.
+ */
+export const getFriendProfiles = query({
+  args: {
+    token: v.string(),
+  },
+  handler: async (ctx, args) => {
+    if (!args.token) {
+      return [];
+    }
+
+    const session = await ctx.db
+      .query("sessions")
+      .withIndex("by_token", (q) => q.eq("token", args.token))
+      .unique();
+
+    if (!session || session.expiresAt < Date.now()) {
+      return [];
+    }
+
+    const currentUser = await ctx.db.get(session.userId);
+    if (!currentUser || currentUser.role !== "student") {
+      return [];
+    }
+
+    const candidateStudents = currentUser.batch
+      ? await ctx.db
+          .query("users")
+          .withIndex("by_batch", (q) => q.eq("batch", currentUser.batch))
+          .collect()
+      : await ctx.db
+          .query("users")
+          .withIndex("by_role", (q) => q.eq("role", "student"))
+          .collect();
+
+    return candidateStudents
+      .filter(
+        (student) =>
+          student.role === "student" &&
+          student._id.toString() !== currentUser._id.toString()
+      )
+      .map((student) => ({
+        _id: student._id,
+        displayName: student.displayName,
+        username: student.username,
+        avatarUrl: student.avatarUrl,
+        batch: student.batch,
+      }))
+      .sort((a, b) => a.displayName.localeCompare(b.displayName));
+  },
+});
+
+/**
  * Admin: update another user's username
  */
 export const adminUpdateUsername = mutation({

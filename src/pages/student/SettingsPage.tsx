@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
-import { useMutation } from "convex/react";
+import { useEffect, useMemo, useState } from "react";
+import { useMutation, useQuery } from "convex/react";
 import { api } from "../../../convex/_generated/api";
 import { useAuth, useSessionToken } from "../../hooks/useAuth";
-import { Button, Card, CardContent, CardHeader, Input } from "../../components/paper";
+import { Button, Card, CardContent, CardHeader, Input, Modal } from "../../components/paper";
 
 const BASE64_DATA_IMAGE_PATTERN = /^data:image\/[a-zA-Z0-9.+-]+;base64,[a-zA-Z0-9+/=_-]+$/;
 
@@ -25,6 +25,10 @@ export function SettingsPage() {
   const changeOwnUsername = useMutation(api.auth.changeOwnUsername);
   const changeOwnPassword = useMutation(api.auth.changeOwnPassword);
   const updateOwnProfile = useMutation(api.auth.updateOwnProfile);
+  const friendProfiles = useQuery(
+    api.auth.getFriendProfiles,
+    token ? { token } : "skip"
+  );
 
   const [avatarUrlInput, setAvatarUrlInput] = useState("");
   const [avatarError, setAvatarError] = useState("");
@@ -43,6 +47,7 @@ export function SettingsPage() {
   const [passwordError, setPasswordError] = useState("");
   const [passwordSuccess, setPasswordSuccess] = useState("");
   const [updatingPassword, setUpdatingPassword] = useState(false);
+  const [expandedFriendId, setExpandedFriendId] = useState<string | null>(null);
 
   useEffect(() => {
     setNewUsername(user?.username ?? "");
@@ -188,6 +193,13 @@ export function SettingsPage() {
       setUpdatingPassword(false);
     }
   };
+
+  const friendsWithPhotos = useMemo(
+    () => (friendProfiles ?? []).filter((friend: any) => Boolean(friend.avatarUrl)),
+    [friendProfiles]
+  );
+  const expandedFriend =
+    friendsWithPhotos.find((friend: any) => friend._id === expandedFriendId) ?? null;
 
   return (
     <div className="space-y-6">
@@ -351,6 +363,63 @@ export function SettingsPage() {
           </div>
         </CardContent>
       </Card>
+
+      <Card variant="outlined" padding="lg">
+        <CardHeader
+          title="Friends' Profile GIFs"
+          subtitle="Click any friend photo to expand it."
+        />
+        <CardContent className="space-y-4">
+          {!token ? (
+            <p className="text-sm text-gray-600">Sign in to view friends.</p>
+          ) : friendProfiles === undefined ? (
+            <p className="text-sm text-gray-600">Loading friends…</p>
+          ) : friendsWithPhotos.length === 0 ? (
+            <p className="text-sm text-gray-600">No friends with profile photos yet.</p>
+          ) : (
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+              {friendsWithPhotos.map((friend: any) => (
+                <button
+                  key={friend._id}
+                  type="button"
+                  onClick={() => setExpandedFriendId(friend._id)}
+                  className="rounded-xl border border-gray-200 bg-white p-2 text-left hover:border-gray-300 hover:shadow-sm transition"
+                >
+                  <div className="aspect-square w-full overflow-hidden rounded-lg bg-gray-100">
+                    <img
+                      src={friend.avatarUrl}
+                      alt={`${friend.displayName} profile`}
+                      className="h-full w-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                  <p className="mt-2 text-sm font-medium text-gray-900 truncate">
+                    {friend.displayName}
+                  </p>
+                  <p className="text-xs text-gray-600 truncate">@{friend.username}</p>
+                </button>
+              ))}
+            </div>
+          )}
+        </CardContent>
+      </Card>
+
+      <Modal
+        isOpen={Boolean(expandedFriend)}
+        onClose={() => setExpandedFriendId(null)}
+        title={expandedFriend ? `${expandedFriend.displayName}'s Profile GIF` : "Profile GIF"}
+        size="lg"
+      >
+        {expandedFriend?.avatarUrl ? (
+          <div className="flex justify-center">
+            <img
+              src={expandedFriend.avatarUrl}
+              alt={`${expandedFriend.displayName} expanded profile`}
+              className="max-h-[70vh] w-auto max-w-full rounded-xl border border-gray-200"
+            />
+          </div>
+        ) : null}
+      </Modal>
     </div>
   );
 }

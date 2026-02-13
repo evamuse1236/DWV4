@@ -64,6 +64,7 @@ export function VivaQueuePage() {
   const [studentFilter, setStudentFilter] = useState("");
   const [moduleFilter, setModuleFilter] = useState("all");
   const [passFilter, setPassFilter] = useState<"all" | "passed" | "failed">("all");
+  const [batchFilter, setBatchFilter] = useState<"all" | "2153" | "2156">("all");
   const [insightsTab, setInsightsTab] = useState<"failures" | "attempts">("failures");
   const [questionChoiceTextById, setQuestionChoiceTextById] = useState<Record<string, Record<string, string>>>({});
   const resultsScrollRef = useRef<HTMLDivElement | null>(null);
@@ -123,28 +124,33 @@ export function VivaQueuePage() {
     return haystack.includes(byStudent);
   };
 
+  const matchesBatch = (rowUser: any) => {
+    if (batchFilter === "all") return true;
+    return rowUser?.batch === batchFilter;
+  };
+
   const filteredAttempts = (diagnosticAttempts ?? []).filter((row: any) => {
     if (passFilter === "passed" && !row.attempt?.passed) return false;
     if (passFilter === "failed" && row.attempt?.passed) return false;
     if (moduleFilter !== "all" && row.attempt?.diagnosticModuleName !== moduleFilter) {
       return false;
     }
-    return matchesStudent(row.user);
+    return matchesStudent(row.user) && matchesBatch(row.user);
   });
 
   const filteredFailures = (diagnosticFailures ?? []).filter((row: any) => {
     if (moduleFilter !== "all" && row.attempt?.diagnosticModuleName !== moduleFilter) {
       return false;
     }
-    return matchesStudent(row.user);
+    return matchesStudent(row.user) && matchesBatch(row.user);
   });
 
   const filteredUnlockRequests = (pendingUnlockRequests ?? []).filter((row: any) =>
-    matchesStudent(row.user)
+    matchesStudent(row.user) && matchesBatch(row.user)
   );
 
   const filteredVivaRequests = (vivaRequests ?? []).filter((row: any) =>
-    matchesStudent(row.user)
+    matchesStudent(row.user) && matchesBatch(row.user)
   );
 
   const openConfirmDialog = (type: "approve" | "reject", request: any) => {
@@ -215,6 +221,7 @@ export function VivaQueuePage() {
     setStudentFilter("");
     setModuleFilter("all");
     setPassFilter("all");
+    setBatchFilter("all");
   };
 
   return (
@@ -270,8 +277,41 @@ export function VivaQueuePage() {
               <option value="failed">Failed only</option>
             </select>
           </div>
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="text-xs font-medium text-muted-foreground">Batch</span>
+            <div className="inline-flex items-center rounded-md border bg-background p-1">
+              <Button
+                type="button"
+                size="sm"
+                variant={batchFilter === "all" ? "default" : "ghost"}
+                className="h-7 px-3"
+                onClick={() => setBatchFilter("all")}
+              >
+                All
+              </Button>
+              <Button
+                type="button"
+                size="sm"
+                variant={batchFilter === "2153" ? "default" : "ghost"}
+                className="h-7 px-3"
+                onClick={() => setBatchFilter("2153")}
+              >
+                2153
+              </Button>
+              <Button
+                type="button"
+                size="sm"
+                variant={batchFilter === "2156" ? "default" : "ghost"}
+                className="h-7 px-3"
+                onClick={() => setBatchFilter("2156")}
+              >
+                2156
+              </Button>
+            </div>
+          </div>
           <div className="flex items-center justify-between text-xs text-muted-foreground">
             <span>
+              {batchFilter === "all" ? "All batches" : `Batch ${batchFilter} only`} •{" "}
               {filteredUnlockRequests.length} unlocks • {filteredVivaRequests.length} viva
               requests • {filteredFailures.length} failures • {filteredAttempts.length} attempts
             </span>
