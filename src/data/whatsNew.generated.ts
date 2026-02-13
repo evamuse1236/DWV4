@@ -13,6 +13,12 @@ export const WHATS_NEW: WhatsNewEntry[] = [
   {
     date: "Feb 13",
     sortDate: "2026-02-13",
+    title: "Improve Viva review clarity and attempts metrics",
+    description: "Code updates shipped in commit 1bd06ae.",
+  },
+  {
+    date: "Feb 13",
+    sortDate: "2026-02-13",
     title: "Fix student comment widget overlap across pages",
     description: "Code updates shipped in commit 9ed1870.",
   },
@@ -183,12 +189,6 @@ export const WHATS_NEW: WhatsNewEntry[] = [
     sortDate: "2026-01-29",
     title: "chore: update in-app changelog",
     description: "Code updates shipped in commit 21f2497.",
-  },
-  {
-    date: "Jan 29",
-    sortDate: "2026-01-29",
-    title: "docs: update changelog for diagnostics",
-    description: "Code updates shipped in commit 967ff2d.",
   },
 ];
 

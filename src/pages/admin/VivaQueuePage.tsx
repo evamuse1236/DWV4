@@ -32,6 +32,8 @@ import {
   Clock,
   BookOpen,
   Filter,
+  ShieldCheck,
+  Inbox,
 } from "lucide-react";
 import { extractImageSrc, loadDiagnosticData } from "@/lib/diagnostic";
 import { MathText } from "@/components/math/MathText";
@@ -419,11 +421,13 @@ export function VivaQueuePage() {
         </p>
       </div>
 
-      <div>
-        <h2 className="text-lg font-semibold mb-1">Diagnostic Unlock Requests</h2>
-        <p className="text-sm text-muted-foreground mb-4">
-          Approve a 24-hour, 1-attempt diagnostic window for students.
-        </p>
+      <div className="space-y-4">
+        <div>
+          <h2 className="text-lg font-semibold mb-1">Diagnostic Unlock Requests</h2>
+          <p className="text-sm text-muted-foreground">
+            Approve a 24-hour, 1-attempt diagnostic window for students.
+          </p>
+        </div>
 
         {filteredUnlockRequests.length > 0 ? (
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
@@ -486,91 +490,99 @@ export function VivaQueuePage() {
             ))}
           </div>
         ) : (
-          <div className="text-center py-10">
-            <p className="text-muted-foreground">No pending unlock requests</p>
-            <p className="text-sm text-muted-foreground">
+          <div className="flex flex-col items-center justify-center rounded-xl border border-dashed bg-muted/20 p-8 text-center">
+            <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-background shadow-sm">
+              <ShieldCheck className="h-5 w-5 text-muted-foreground/70" />
+            </div>
+            <p className="text-sm font-medium text-foreground">No pending unlock requests</p>
+            <p className="mt-1 max-w-[280px] text-xs text-muted-foreground">
               Students will appear here when they request a diagnostic.
             </p>
           </div>
         )}
       </div>
 
-      <div>
-        <h2 className="text-lg font-semibold mb-1">Pending Viva Requests</h2>
-        <p className="text-sm text-muted-foreground mb-4">
-          Students ready to demonstrate mastery of their learning objectives.
-        </p>
-      </div>
-
-      {filteredVivaRequests.length > 0 ? (
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
-          {filteredVivaRequests.map((request: any) => (
-            <div
-              key={request._id}
-              className="group rounded-xl border bg-card shadow-sm p-5 hover:bg-accent/40 transition-colors cursor-pointer"
-              onClick={() => navigate(`/admin/students/${request.userId}`)}
-              title="View student details"
-            >
-              <div className="flex items-center gap-3 mb-3">
-                <Avatar className="h-10 w-10">
-                  <AvatarImage src={request.user?.avatarUrl} alt={request.user?.displayName} />
-                  <AvatarFallback className="bg-primary text-primary-foreground">
-                    {request.user?.displayName?.charAt(0) || "?"}
-                  </AvatarFallback>
-                </Avatar>
-                <div className="min-w-0 flex-1">
-                  <p className="font-medium truncate">{request.user?.displayName}</p>
-                  <p className="text-sm text-muted-foreground truncate">@{request.user?.username}</p>
-                </div>
-                <span className="text-xs text-muted-foreground">
-                  {request.vivaRequestedAt ? formatDate(request.vivaRequestedAt) : "Unknown"}
-                </span>
-              </div>
-
-              <div className="flex items-center gap-2 mb-3">
-                <BookOpen className="h-4 w-4 text-muted-foreground shrink-0" />
-                <p className="font-medium text-sm truncate">{request.objective?.title}</p>
-              </div>
-
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <Badge variant="outline">{request.domain?.name}</Badge>
-                  <Badge variant="secondary">{request.objective?.difficulty}</Badge>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      openConfirmDialog("reject", request);
-                    }}
-                  >
-                    Not Yet
-                  </Button>
-                  <Button
-                    size="sm"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      openConfirmDialog("approve", request);
-                    }}
-                  >
-                    <CheckCircle className="mr-1 h-4 w-4" />
-                    Approve
-                  </Button>
-                </div>
-              </div>
-            </div>
-          ))}
+      <div className="space-y-4">
+        <div>
+          <h2 className="text-lg font-semibold mb-1">Pending Viva Requests</h2>
+          <p className="text-sm text-muted-foreground">
+            Students ready to demonstrate mastery of their learning objectives.
+          </p>
         </div>
-      ) : (
-        <div className="text-center py-12">
-          <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center mx-auto mb-4">
-            <CheckCircle className="h-6 w-6 text-muted-foreground" />
+
+        {filteredVivaRequests.length > 0 ? (
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
+            {filteredVivaRequests.map((request: any) => (
+              <div
+                key={request._id}
+                className="group rounded-xl border bg-card shadow-sm p-5 hover:bg-accent/40 transition-colors cursor-pointer"
+                onClick={() => navigate(`/admin/students/${request.userId}`)}
+                title="View student details"
+              >
+                <div className="flex items-center gap-3 mb-3">
+                  <Avatar className="h-10 w-10">
+                    <AvatarImage src={request.user?.avatarUrl} alt={request.user?.displayName} />
+                    <AvatarFallback className="bg-primary text-primary-foreground">
+                      {request.user?.displayName?.charAt(0) || "?"}
+                    </AvatarFallback>
+                  </Avatar>
+                  <div className="min-w-0 flex-1">
+                    <p className="font-medium truncate">{request.user?.displayName}</p>
+                    <p className="text-sm text-muted-foreground truncate">@{request.user?.username}</p>
+                  </div>
+                  <span className="text-xs text-muted-foreground">
+                    {request.vivaRequestedAt ? formatDate(request.vivaRequestedAt) : "Unknown"}
+                  </span>
+                </div>
+
+                <div className="flex items-center gap-2 mb-3">
+                  <BookOpen className="h-4 w-4 text-muted-foreground shrink-0" />
+                  <p className="font-medium text-sm truncate">{request.objective?.title}</p>
+                </div>
+
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <Badge variant="outline">{request.domain?.name}</Badge>
+                    <Badge variant="secondary">{request.objective?.difficulty}</Badge>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        openConfirmDialog("reject", request);
+                      }}
+                    >
+                      Not Yet
+                    </Button>
+                    <Button
+                      size="sm"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        openConfirmDialog("approve", request);
+                      }}
+                    >
+                      <CheckCircle className="mr-1 h-4 w-4" />
+                      Approve
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-          <p className="text-muted-foreground">Queue clear. No pending viva requests.</p>
-        </div>
-      )}
+        ) : (
+          <div className="flex flex-col items-center justify-center rounded-xl border border-dashed bg-muted/20 p-8 text-center">
+            <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-background shadow-sm">
+              <Inbox className="h-5 w-5 text-muted-foreground/70" />
+            </div>
+            <p className="text-sm font-medium text-foreground">Viva queue clear</p>
+            <p className="mt-1 max-w-[280px] text-xs text-muted-foreground">
+              No students are currently awaiting mastery reviews.
+            </p>
+          </div>
+        )}
+      </div>
 
       <Card>
         <CardHeader className="pb-3">
