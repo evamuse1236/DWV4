@@ -13,6 +13,12 @@ export const WHATS_NEW: WhatsNewEntry[] = [
   {
     date: "Feb 13",
     sortDate: "2026-02-13",
+    title: "Automate in-app What's New from git history",
+    description: "Code updates shipped in commit bb8ca1f.",
+  },
+  {
+    date: "Feb 13",
+    sortDate: "2026-02-13",
     title: "Add viva batch toggle and friend GIF expansion in settings",
     description: "Code updates shipped in commit 63fd321.",
   },
@@ -183,12 +189,6 @@ export const WHATS_NEW: WhatsNewEntry[] = [
     sortDate: "2026-01-29",
     title: "docs: add runbook",
     description: "Code updates shipped in commit c67802d.",
-  },
-  {
-    date: "Jan 29",
-    sortDate: "2026-01-29",
-    title: "feat: integrate diagnostic unlock + auto-master flow",
-    description: "Code updates shipped in commit 8dacc97.",
   },
 ];
 

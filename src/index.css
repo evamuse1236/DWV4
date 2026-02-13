@@ -417,6 +417,10 @@ h3 {
     width: 100%;
   }
 
+  .mobile-comment-trigger {
+    display: none;
+  }
+
   @media (max-width: 900px) {
     .emotion-grid,
     .bento-grid,
@@ -431,6 +435,10 @@ h3 {
 
     .sidebar {
       display: none;
+    }
+
+    .mobile-comment-trigger {
+      display: inline-flex;
     }
   }
 

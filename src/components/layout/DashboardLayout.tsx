@@ -21,6 +21,7 @@ export function DashboardLayout() {
   const location = useLocation();
   const { pathname } = location;
   const hideChangelog = pathname === "/vision-board";
+  const hideFloatingComment = pathname === "/vision-board";
   const submitComment = useMutation(api.studentComments.submit);
   const generateUploadUrl = useMutation(api.studentComments.generateUploadUrl);
   const [commentOpen, setCommentOpen] = useState(false);
@@ -130,7 +131,13 @@ export function DashboardLayout() {
     <CheckInGate>
       <div className="min-h-screen">
         {/* Sidebar - Uses CSS class from index.css */}
-        <Sidebar />
+        <Sidebar
+          showCommentButton
+          onOpenComment={() => {
+            setCommentOpen(true);
+            setCommentError(null);
+          }}
+        />
 
         {/* Changelog notification - hidden on Vision Board (full-bleed immersive page) */}
         {!hideChangelog && <Changelog />}
@@ -142,15 +149,17 @@ export function DashboardLayout() {
           </div>
         </main>
 
-        <button
-          type="button"
-          onClick={() => setCommentOpen(true)}
-          className="fixed bottom-6 right-6 z-40 flex items-center gap-2 rounded-full bg-black px-4 py-2 text-sm text-white shadow-lg hover:bg-black/90"
-          aria-label="Open comments"
-        >
-          <MessageSquare className="h-4 w-4" />
-          Comment
-        </button>
+        {!hideFloatingComment && (
+          <button
+            type="button"
+            onClick={() => setCommentOpen(true)}
+            className="mobile-comment-trigger fixed bottom-5 right-5 z-40 h-11 w-11 items-center justify-center rounded-full bg-black text-white shadow-lg hover:bg-black/90"
+            aria-label="Open comments"
+            title="Comment"
+          >
+            <MessageSquare className="h-4 w-4" />
+          </button>
+        )}
 
         <Dialog
           open={commentOpen}

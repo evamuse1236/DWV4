@@ -8,6 +8,11 @@ interface NavItem {
   icon: React.ReactNode;
 }
 
+interface SidebarProps {
+  onOpenComment?: () => void;
+  showCommentButton?: boolean;
+}
+
 // Simple SVG icons matching Paper UI aesthetic
 const Icons = {
   home: (
@@ -86,6 +91,11 @@ const Icons = {
       <path strokeLinecap="round" strokeLinejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
     </svg>
   ),
+  message: (
+    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M8.625 9.75h6.75m-6.75 3h4.5m6.621 2.846a9 9 0 10-4.621 1.272c.781 0 1.54-.099 2.264-.284l3.684 1.228-1.227-3.684a8.962 8.962 0 00.9-3.878z" />
+    </svg>
+  ),
 };
 
 // Student navigation items
@@ -122,7 +132,7 @@ const adminNavItems: NavItem[] = [
  * Paper UI Sidebar navigation component
  * Ethereal gradient fade, uppercase labels, minimal design
  */
-export function Sidebar() {
+export function Sidebar({ onOpenComment, showCommentButton = false }: SidebarProps) {
   const { user, logout } = useAuth();
   const location = useLocation();
 
@@ -185,6 +195,17 @@ export function Sidebar() {
         </div>
 
         {/* Logout link */}
+        {showCommentButton && onOpenComment && (
+          <button
+            type="button"
+            onClick={onOpenComment}
+            className="nav-link w-full text-left"
+            style={{ padding: "8px 0" }}
+          >
+            {Icons.message}
+            Comment
+          </button>
+        )}
         <button
           onClick={() => logout()}
           className="nav-link w-full text-left"
