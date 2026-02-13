@@ -13,6 +13,12 @@ export const WHATS_NEW: WhatsNewEntry[] = [
   {
     date: "Feb 13",
     sortDate: "2026-02-13",
+    title: "Fix student comment widget overlap across pages",
+    description: "Code updates shipped in commit 9ed1870.",
+  },
+  {
+    date: "Feb 13",
+    sortDate: "2026-02-13",
     title: "Automate in-app What's New from git history",
     description: "Code updates shipped in commit bb8ca1f.",
   },
@@ -183,12 +189,6 @@ export const WHATS_NEW: WhatsNewEntry[] = [
     sortDate: "2026-01-29",
     title: "docs: update changelog for diagnostics",
     description: "Code updates shipped in commit 967ff2d.",
-  },
-  {
-    date: "Jan 29",
-    sortDate: "2026-01-29",
-    title: "docs: add runbook",
-    description: "Code updates shipped in commit c67802d.",
   },
 ];
 

@@ -35,6 +35,7 @@ import {
 } from "lucide-react";
 import { extractImageSrc, loadDiagnosticData } from "@/lib/diagnostic";
 import { MathText } from "@/components/math/MathText";
+import { cn } from "@/lib/utils";
 
 /**
  * Viva Queue Page
@@ -152,6 +153,34 @@ export function VivaQueuePage() {
   const filteredVivaRequests = (vivaRequests ?? []).filter((row: any) =>
     matchesStudent(row.user) && matchesBatch(row.user)
   );
+
+  const latestFilteredAttempts = useMemo(() => {
+    const seen = new Set<string>();
+    const rows: any[] = [];
+    for (const row of filteredAttempts) {
+      const userId =
+        row.user?._id?.toString?.() ??
+        row.attempt?.userId?.toString?.() ??
+        "unknown";
+      const moduleName = row.attempt?.diagnosticModuleName ?? "";
+      const key = `${userId}-${moduleName}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      rows.push(row);
+    }
+    return rows;
+  }, [filteredAttempts]);
+
+  const attemptStudentCount = useMemo(() => {
+    const uniqueStudents = new Set<string>();
+    for (const row of filteredAttempts) {
+      const userId =
+        row.user?._id?.toString?.() ??
+        row.attempt?.userId?.toString?.();
+      if (userId) uniqueStudents.add(userId);
+    }
+    return uniqueStudents.size;
+  }, [filteredAttempts]);
 
   const openConfirmDialog = (type: "approve" | "reject", request: any) => {
     setConfirmDialog({ isOpen: true, type, request });
@@ -313,7 +342,8 @@ export function VivaQueuePage() {
             <span>
               {batchFilter === "all" ? "All batches" : `Batch ${batchFilter} only`} •{" "}
               {filteredUnlockRequests.length} unlocks • {filteredVivaRequests.length} viva
-              requests • {filteredFailures.length} failures • {filteredAttempts.length} attempts
+              requests • {filteredFailures.length} failures • {latestFilteredAttempts.length} latest
+              attempts ({filteredAttempts.length} submissions, {attemptStudentCount} students)
             </span>
             <Button variant="ghost" size="sm" onClick={clearFilters}>
               Clear filters
@@ -374,9 +404,9 @@ export function VivaQueuePage() {
             <BookOpen className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">{filteredAttempts.length}</div>
+            <div className="text-2xl font-bold">{latestFilteredAttempts.length}</div>
             <p className="text-xs text-muted-foreground">
-              Click to open attempts
+              {filteredAttempts.length} submissions • {attemptStudentCount} students
             </p>
           </CardContent>
         </Card>
@@ -553,7 +583,7 @@ export function VivaQueuePage() {
           >
             <TabsList className="grid w-full grid-cols-2">
               <TabsTrigger value="failures">Failures ({filteredFailures.length})</TabsTrigger>
-              <TabsTrigger value="attempts">Attempts ({filteredAttempts.length})</TabsTrigger>
+              <TabsTrigger value="attempts">Attempts ({latestFilteredAttempts.length})</TabsTrigger>
             </TabsList>
 
             <TabsContent value="failures" className="mt-4">
@@ -616,9 +646,9 @@ export function VivaQueuePage() {
             </TabsContent>
 
             <TabsContent value="attempts" className="mt-4">
-              {filteredAttempts.length > 0 ? (
+              {latestFilteredAttempts.length > 0 ? (
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                  {filteredAttempts.map((row: any) => (
+                  {latestFilteredAttempts.map((row: any) => (
                     <div
                       key={row.attemptId}
                       className="group rounded-xl border bg-card shadow-sm p-5 hover:bg-accent/40 transition-colors cursor-pointer"
@@ -707,7 +737,15 @@ export function VivaQueuePage() {
                     const chosenText = r.chosenLabel ? choiceTextByLabel[r.chosenLabel] : "";
                     const correctText = r.correctLabel ? choiceTextByLabel[r.correctLabel] : "";
                     return (
-                      <div key={`${r.questionId}-${idx}`} className="rounded-lg border p-4">
+                      <div
+                        key={`${r.questionId}-${idx}`}
+                        className={cn(
+                          "rounded-lg border p-4",
+                          r.correct
+                            ? "bg-card"
+                            : "border-destructive/30 bg-destructive/5"
+                        )}
+                      >
                         <div className="flex items-center justify-between gap-3 mb-2">
                           <div className="font-medium text-sm whitespace-pre-wrap">
                             <div className="text-xs text-muted-foreground mb-1">
@@ -737,7 +775,12 @@ export function VivaQueuePage() {
                           </div>
                         )}
 
-                        <div className="text-sm text-muted-foreground space-y-1">
+                        <div
+                          className={cn(
+                            "text-sm text-muted-foreground space-y-1",
+                            !r.correct && "rounded-md border border-destructive/20 bg-destructive/5 p-2"
+                          )}
+                        >
                           {r.correct ? (
                             <div className="whitespace-pre-wrap">
                               <span className="font-medium text-foreground">Answer:</span>{" "}
