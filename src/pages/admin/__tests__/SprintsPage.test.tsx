@@ -115,6 +115,7 @@ vi.mock("../../../../convex/_generated/api", () => ({
     sprints: {
       getAll: "sprints.getAll",
       getActive: "sprints.getActive",
+      getStudentInsights: "sprints.getStudentInsights",
       create: "sprints.create",
       update: "sprints.update",
       setActive: "sprints.setActive",
@@ -176,6 +177,72 @@ const mockFutureSprint = {
 
 const mockSprints = [mockActiveSprint, mockInactiveSprint, mockFutureSprint];
 
+const mockStudentInsights = {
+  sprint: {
+    _id: "sprint_1",
+    name: "January Sprint",
+    startDate: mockActiveSprint.startDate,
+    endDate: mockActiveSprint.endDate,
+    totalDays: 14,
+    elapsedDays: 7,
+  },
+  students: [
+    {
+      student: {
+        _id: "student_1",
+        displayName: "Alex Carter",
+        username: "alex.carter",
+        batch: "2156",
+      },
+      metrics: {
+        goalsTotal: 2,
+        goalsCompleted: 1,
+        goalCompletionPercent: 50,
+        tasksTotal: 6,
+        tasksCompleted: 3,
+        taskCompletionPercent: 50,
+        habitsTotal: 2,
+        habitCompletedTotal: 8,
+        habitExpectedTotal: 14,
+        habitConsistencyPercent: 57,
+        engagementScore: 52,
+      },
+      currentFocus: {
+        goals: ["Improve math fluency"],
+        tasks: [
+          {
+            _id: "task_1",
+            title: "Practice equations",
+            weekNumber: 1,
+            dayOfWeek: 2,
+            scheduledTime: "4pm",
+            isCompleted: false,
+          },
+        ],
+      },
+      goals: [
+        {
+          _id: "goal_1",
+          title: "Improve math fluency",
+          status: "in_progress",
+          tasksTotal: 4,
+          tasksCompleted: 2,
+          actionItems: [],
+        },
+      ],
+      habits: [
+        {
+          _id: "habit_1",
+          name: "Daily reflection",
+          completedCount: 5,
+          expectedCount: 7,
+          consistencyPercent: 71,
+        },
+      ],
+    },
+  ],
+};
+
 describe("SprintsPage", () => {
   beforeEach(() => {
     vi.clearAllMocks();
@@ -185,6 +252,7 @@ describe("SprintsPage", () => {
     (useQuery as Mock).mockImplementation((query: string) => {
       if (query === "sprints.getAll") return mockSprints;
       if (query === "sprints.getActive") return mockActiveSprint;
+      if (query === "sprints.getStudentInsights") return mockStudentInsights;
       return undefined;
     });
 
@@ -233,6 +301,34 @@ describe("SprintsPage", () => {
       expect(
         screen.getByText("Create your first sprint to get started")
       ).toBeInTheDocument();
+    });
+  });
+
+  describe("Student insights", () => {
+    it("renders one-stop student goal insights section", () => {
+      render(<SprintsPage />);
+
+      expect(screen.getByText("Student Goal Insights")).toBeInTheDocument();
+      expect(
+        screen.getByText(
+          "One place to review each student's goals, tasks, habits, and sprint progress."
+        )
+      ).toBeInTheDocument();
+      expect(screen.getByText("Alex Carter")).toBeInTheDocument();
+      expect(screen.getByText(/engagement 52%/i)).toBeInTheDocument();
+    });
+
+    it("filters student insight cards by search query", async () => {
+      const user = userEvent.setup();
+      render(<SprintsPage />);
+
+      const searchInput = screen.getByPlaceholderText(
+        "Search by name, username, or batch"
+      );
+      await user.type(searchInput, "not-a-student");
+
+      expect(screen.getByText("No students match this search.")).toBeInTheDocument();
+      expect(screen.queryByText("Alex Carter")).not.toBeInTheDocument();
     });
   });
 
