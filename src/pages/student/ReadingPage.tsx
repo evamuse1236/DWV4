@@ -2,7 +2,7 @@ import { useState, useDeferredValue, useMemo } from "react";
 import { useQuery, useMutation } from "convex/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { api } from "../../../convex/_generated/api";
-import type { Id } from "../../../../convex/_generated/dataModel";
+import type { Id } from "../../../convex/_generated/dataModel";
 import { useAuth } from "../../hooks/useAuth";
 import { useDelayedLoading } from "../../hooks/useDelayedLoading";
 import { getBookBadgeClass, type BookStatus } from "../../lib/status-utils";
@@ -228,6 +228,15 @@ export function ReadingPage() {
     api.books.getReadingHistory,
     user ? { userId: user._id as any } : "skip"
   ) as ReadingHistoryRecord[] | undefined;
+
+  const readingHistoryForBuddy = useMemo(
+    () =>
+      (readingHistory ?? []).map((item) => ({
+        ...item,
+        status: item.status ?? "unknown",
+      })),
+    [readingHistory]
+  );
 
   // Mutations
   const startReading = useMutation(api.books.startReading);
@@ -886,7 +895,9 @@ export function ReadingPage() {
                       <StarRating rating={selectedBook.myBook.rating} size="md" />
                       <button
                         type="button"
-                        onClick={() => handleOpenReviewForm(selectedBook.myBook.rating, selectedBook.myBook.review)}
+                        onClick={() =>
+                          handleOpenReviewForm(selectedBook.myBook?.rating, selectedBook.myBook?.review)
+                        }
                         className="text-xs opacity-50 hover:opacity-100 transition-opacity underline"
                       >
                         Edit
@@ -913,7 +924,9 @@ export function ReadingPage() {
                     <h3 className="font-display text-lg">My Review</h3>
                     <button
                       type="button"
-                      onClick={() => handleOpenReviewForm(selectedBook.myBook.rating, selectedBook.myBook.review)}
+                      onClick={() =>
+                        handleOpenReviewForm(selectedBook.myBook?.rating, selectedBook.myBook?.review)
+                      }
                       className="text-xs opacity-50 hover:opacity-100 transition-opacity"
                       aria-label="Edit review"
                     >
@@ -1071,7 +1084,7 @@ export function ReadingPage() {
       {/* Book Buddy AI Chat */}
       {allBooks && (
         <BookBuddy
-          readingHistory={readingHistory || []}
+          readingHistory={readingHistoryForBuddy}
           availableBooks={
             allBooks
               .filter((book) => !myBooksMap.has(book._id))

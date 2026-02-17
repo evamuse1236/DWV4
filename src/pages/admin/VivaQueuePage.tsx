@@ -864,7 +864,7 @@ export function VivaQueuePage() {
                         <div className="flex items-center justify-between gap-3 mb-2">
                           <div className="font-medium text-sm whitespace-pre-wrap">
                             <div className="text-xs text-muted-foreground mb-1">
-                              Question {idx + 1} of {failureDetails.attempt.results.length}
+                              Question {idx + 1} of {(failureDetails.attempt.results ?? []).length}
                             </div>
                             {r.stem ? <MathText text={r.stem} /> : r.topic}
                           </div>
@@ -946,7 +946,7 @@ export function VivaQueuePage() {
                     );
                   })}
 
-                {failureDetails.attempt.results.length === 0 && (
+                {(failureDetails.attempt.results ?? []).length === 0 && (
                   <div className="text-sm text-muted-foreground">
                     No question results recorded for this attempt.
                   </div>
