@@ -1,54 +1,51 @@
 # Curriculum Mapping Workflow (Math)
 
-This workflow keeps `playlist_mapping.json` and seeded Convex objectives in sync.
+Use this workflow when updating `playlist_mapping.json` and reseeding Convex data.
 
-## 1) Repair + normalize the mapping
+## 1. Repair mapping
 
-- `node --experimental-strip-types scripts/repair-playlist-mapping.ts`
+```bash
+node --experimental-strip-types scripts/repair-playlist-mapping.ts
+```
 
-Outputs:
-- `docs/curriculum/repair-report.md`
+Generates `docs/curriculum/repair-report.md`.
 
-## 2) Validate against the quality contract
+## 2. Validate contract
 
-- `node --experimental-strip-types scripts/validate-playlist-mapping.ts`
+```bash
+node --experimental-strip-types scripts/validate-playlist-mapping.ts
+```
 
-Outputs:
-- `docs/curriculum/validation.md`
+Generates `docs/curriculum/validation.md`.
 
-## 2b) (Recommended) Diagnose mismatch-risk rows
+## 3. Optional semantic audit and targeted patch
 
-- `node --experimental-strip-types scripts/analyze-semantic-mismatches.ts`
+```bash
+node --experimental-strip-types scripts/analyze-semantic-mismatches.ts
+node --experimental-strip-types scripts/patch-mismatch-risk-rows.ts
+```
 
-Outputs:
-- `docs/curriculum/semantic-mismatch-report.md`
+Generates mismatch reports under `docs/curriculum/`.
 
-If you want a quick, deterministic cleanup for the most common issues (digit-specific objective wording + missing KA display titles), run:
+## 4. Generate seed block
 
-- `node --experimental-strip-types scripts/patch-mismatch-risk-rows.ts`
+```bash
+node --experimental-strip-types scripts/generate-seed-data.ts
+```
 
-Outputs:
-- `docs/curriculum/mismatch-risk-patch-report.md`
+Outputs `scripts/generated-seed-block.ts`.
 
-If you are doing taxonomy work, use:
+## 5. Apply generated block to seed file
 
-- `docs/curriculum/CCSS-G6-REFACTOR-PLAN.md`
+```bash
+node --experimental-strip-types scripts/apply-generated-seed-block.ts
+```
 
-## 3) Regenerate seed data
+## 6. Run Convex seed mutations
 
-- `node --experimental-strip-types scripts/generate-seed-data.ts`
+```bash
+npx convex run seed:seedMathFromPlaylist
+npx convex run seed:seedPypMathFromPlaylist
+```
 
-Outputs:
-- `scripts/generated-seed-block.ts`
-
-## 4) Apply seed block into Convex seed file
-
-- `node --experimental-strip-types scripts/apply-generated-seed-block.ts`
-
-This replaces the two marked sections in `convex/seed.ts`.
-
-## 5) Apply to the database (manual)
-
-Run the Convex mutations:
-- `seed:seedMathFromPlaylist` (MYP Y1)
-- `seed:seedPypMathFromPlaylist` (PYP Y2)
+Use `--prod` only when explicitly targeting production.

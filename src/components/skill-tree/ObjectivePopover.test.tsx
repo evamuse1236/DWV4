@@ -394,6 +394,7 @@ describe("ObjectivePopover", () => {
 
   describe("Keyboard toggles", () => {
     it("toggles checkbox with Space key", async () => {
+      const user = userEvent.setup();
       const subNode = createSubNode();
 
       render(
@@ -412,14 +413,15 @@ describe("ObjectivePopover", () => {
       firstCheckbox.focus();
       expect(firstCheckbox).toHaveFocus();
 
-      // Press space using fireEvent (more reliable for onKeyDown on divs)
-      fireEvent.keyDown(firstCheckbox, { key: " " });
+      // Press space key
+      await user.keyboard("[Space]");
 
       // Should call toggle mutation
       expect(mockToggleActivity).toHaveBeenCalled();
     });
 
     it("toggles checkbox with Enter key", async () => {
+      const user = userEvent.setup();
       const subNode = createSubNode();
 
       render(
@@ -438,8 +440,8 @@ describe("ObjectivePopover", () => {
       firstCheckbox.focus();
       expect(firstCheckbox).toHaveFocus();
 
-      // Press Enter using fireEvent (more reliable for onKeyDown on divs)
-      fireEvent.keyDown(firstCheckbox, { key: "Enter" });
+      // Press Enter key
+      await user.keyboard("[Enter]");
 
       // Should call toggle mutation
       expect(mockToggleActivity).toHaveBeenCalled();

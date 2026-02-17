@@ -115,10 +115,10 @@ vi.mock("framer-motion", () => ({
     div: ({ children, whileHover, whileTap, initial, animate, exit, variants, transition, layout, layoutId, ...props }: any) => (
       <div {...props}>{children}</div>
     ),
-    button: ({ children, whileHover, whileTap, initial, animate, exit, variants, transition, ...props }: any) => (
+    button: ({ children, whileHover, whileTap, initial, animate, exit, variants, transition, layout, layoutId, ...props }: any) => (
       <button {...props}>{children}</button>
     ),
-    textarea: ({ whileHover, whileTap, initial, animate, exit, variants, transition, ...props }: any) => (
+    textarea: ({ whileHover, whileTap, initial, animate, exit, variants, transition, layout, layoutId, ...props }: any) => (
       <textarea {...props} />
     ),
   },
@@ -159,7 +159,7 @@ vi.mock("@radix-ui/react-tooltip", () => ({
 
 // Mock paper components for SetupPage
 vi.mock("../../components/paper", () => ({
-  Button: ({ children, onClick, type, disabled, isLoading, ...props }: any) => (
+  Button: ({ children, onClick, type, disabled, isLoading, fullWidth: _fullWidth, ...props }: any) => (
     <button onClick={onClick} type={type} disabled={disabled || isLoading} {...props}>
       {isLoading ? "Loading..." : children}
     </button>

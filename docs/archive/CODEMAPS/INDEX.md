@@ -1,6 +1,6 @@
 # Deep Work Tracker -- Codemap Index
 
-**Last Updated:** 2026-01-30
+**Last Updated:** 2026-02-17
 
 ## What are Codemaps?
 
@@ -39,7 +39,7 @@ Convex Backend
 Convex DB + External Services
   +-- Groq (Kimi K2, Llama 8B)
   +-- OpenRouter (fallback)
-  +-- Static diagnostic JSON (/public/diagnostic/diagnostic-data.json, diagnostic-sets.json)
+  +-- Diagnostic runtime data (/public/diagnostic_v2/mastery_data.json)
 ```
 
 ## Two User Roles, Two UIs
@@ -64,11 +64,11 @@ Convex DB + External Services
 | Router + providers | `src/App.tsx` |
 | Database schema | `convex/schema.ts` |
 | Auth context | `src/hooks/useAuth.tsx` |
-| Seed data | `convex/seed.ts` (2841 lines) |
+| Seed data | `convex/seed.ts` |
 
 ## Related Documentation
 
-See [docs/README.md](../README.md) for the full documentation index. Key references:
-- [ARCHITECTURE.md](../ARCHITECTURE.md) -- Narrative architecture
-- [DATA-MODEL.md](../DATA-MODEL.md) -- Full table field reference
-- [PATTERNS.md](../PATTERNS.md) -- Coding conventions
+See [docs/README.md](../../README.md) for the full documentation index. Key references:
+- [ARCHITECTURE.md](../../ARCHITECTURE.md) -- Narrative architecture
+- [DATA-MODEL.md](../../DATA-MODEL.md) -- Full table field reference
+- [PATTERNS.md](../../PATTERNS.md) -- Coding conventions

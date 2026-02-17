@@ -72,6 +72,7 @@ vi.mock("../../components/paper", () => ({
     type,
     disabled,
     isLoading,
+    fullWidth: _fullWidth,
     ...props
   }: any) => (
     <button

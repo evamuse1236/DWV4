@@ -156,4 +156,4 @@ Unlock:   approved -> consumed | expired | revoked
 
 ## Full Field Reference
 
-See [docs/DATA-MODEL.md](../DATA-MODEL.md) for the complete field-by-field table reference.
+See [docs/DATA-MODEL.md](../../DATA-MODEL.md) for the complete field-by-field table reference.

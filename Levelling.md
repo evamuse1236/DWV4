@@ -2,6 +2,9 @@
 
 Last updated: 2026-02-11
 
+Status: planning/reference context.
+Current implementation source-of-truth is runtime code plus `docs/CODEBASE-MAP.md` and `docs/DATA-MODEL.md`.
+
 This document captures the current end-to-end character levelling system so it can be researched, tuned, and revised externally.
 
 ## 1. Product Intent

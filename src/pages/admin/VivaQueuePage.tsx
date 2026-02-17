@@ -39,6 +39,64 @@ import { extractImageSrc, loadDiagnosticData } from "@/lib/diagnostic";
 import { MathText } from "@/components/math/MathText";
 import { cn } from "@/lib/utils";
 
+interface QueueUser {
+  _id?: string;
+  displayName?: string;
+  username?: string;
+  avatarUrl?: string;
+  batch?: string;
+}
+
+interface QueueAttempt {
+  _id?: string;
+  userId?: string;
+  diagnosticModuleName?: string;
+  passed?: boolean;
+  score?: number;
+  questionCount?: number;
+  submittedAt?: number;
+  durationMs?: number;
+  studentMajorObjectiveId?: string;
+  results?: Array<{
+    questionId: string;
+    topic?: string;
+    chosenLabel?: string;
+    correctLabel?: string;
+    correct?: boolean;
+    misconception?: string;
+    explanation?: string;
+    visualHtml?: string;
+    stem?: string;
+  }>;
+}
+
+interface QueueRow {
+  attemptId?: string;
+  attempt?: QueueAttempt;
+  user?: QueueUser;
+  majorObjective?: { title?: string; curriculum?: string };
+  majorAssignment?: { status?: string };
+  domain?: { name?: string };
+}
+
+interface VivaRequestRow {
+  _id: string;
+  userId?: string;
+  user?: QueueUser;
+  objective?: { title?: string; difficulty?: string };
+  domain?: { name?: string };
+  vivaRequestedAt?: number;
+}
+
+interface UnlockRequestRow {
+  _id: string;
+  user?: QueueUser;
+  majorObjective?: { title?: string; curriculum?: string };
+  majorObjectiveId?: string;
+  domain?: { name?: string };
+  requestedAt: number;
+}
+
 /**
  * Viva Queue Page
  * Review and approve student mastery claims
@@ -46,11 +104,19 @@ import { cn } from "@/lib/utils";
 export function VivaQueuePage() {
   const navigate = useNavigate();
   const { user } = useAuth();
-  const vivaRequests = useQuery(api.objectives.getVivaRequests);
+  const vivaRequests = useQuery(api.objectives.getVivaRequests) as
+    | VivaRequestRow[]
+    | undefined;
   const updateStatus = useMutation(api.objectives.updateStatus);
-  const pendingUnlockRequests = useQuery(api.diagnostics.getPendingUnlockRequests);
-  const diagnosticFailures = useQuery(api.diagnostics.getFailuresForQueue);
-  const diagnosticAttempts = useQuery(api.diagnostics.getAllAttemptsForAdmin);
+  const pendingUnlockRequests = useQuery(api.diagnostics.getPendingUnlockRequests) as
+    | UnlockRequestRow[]
+    | undefined;
+  const diagnosticFailures = useQuery(api.diagnostics.getFailuresForQueue) as
+    | QueueRow[]
+    | undefined;
+  const diagnosticAttempts = useQuery(api.diagnostics.getAllAttemptsForAdmin) as
+    | QueueRow[]
+    | undefined;
   const approveUnlock = useMutation(api.diagnostics.approveUnlock);
   const denyUnlock = useMutation(api.diagnostics.denyUnlock);
 
@@ -58,7 +124,7 @@ export function VivaQueuePage() {
   const [confirmDialog, setConfirmDialog] = useState<{
     isOpen: boolean;
     type: "approve" | "reject";
-    request: any | null;
+    request: VivaRequestRow | null;
   }>({ isOpen: false, type: "approve", request: null });
   const [failureDialog, setFailureDialog] = useState<{
     isOpen: boolean;
@@ -75,7 +141,15 @@ export function VivaQueuePage() {
   const failureDetails = useQuery(
     api.diagnostics.getAttemptDetails,
     failureDialog.attemptId ? { attemptId: failureDialog.attemptId as any } : "skip"
-  );
+  ) as
+    | {
+        attempt: QueueAttempt;
+        user?: QueueUser;
+        majorObjective?: { title?: string };
+        domain?: { name?: string };
+      }
+    | null
+    | undefined;
 
   useEffect(() => {
     let cancelled = false;
@@ -121,18 +195,18 @@ export function VivaQueuePage() {
   }, [diagnosticAttempts]);
 
   const byStudent = studentFilter.trim().toLowerCase();
-  const matchesStudent = (rowUser: any) => {
+  const matchesStudent = (rowUser: QueueUser | undefined) => {
     if (!byStudent) return true;
     const haystack = `${rowUser?.displayName ?? ""} ${rowUser?.username ?? ""}`.toLowerCase();
     return haystack.includes(byStudent);
   };
 
-  const matchesBatch = (rowUser: any) => {
+  const matchesBatch = (rowUser: QueueUser | undefined) => {
     if (batchFilter === "all") return true;
     return rowUser?.batch === batchFilter;
   };
 
-  const filteredAttempts = (diagnosticAttempts ?? []).filter((row: any) => {
+  const filteredAttempts = (diagnosticAttempts ?? []).filter((row) => {
     if (passFilter === "passed" && !row.attempt?.passed) return false;
     if (passFilter === "failed" && row.attempt?.passed) return false;
     if (moduleFilter !== "all" && row.attempt?.diagnosticModuleName !== moduleFilter) {
@@ -141,24 +215,24 @@ export function VivaQueuePage() {
     return matchesStudent(row.user) && matchesBatch(row.user);
   });
 
-  const filteredFailures = (diagnosticFailures ?? []).filter((row: any) => {
+  const filteredFailures = (diagnosticFailures ?? []).filter((row) => {
     if (moduleFilter !== "all" && row.attempt?.diagnosticModuleName !== moduleFilter) {
       return false;
     }
     return matchesStudent(row.user) && matchesBatch(row.user);
   });
 
-  const filteredUnlockRequests = (pendingUnlockRequests ?? []).filter((row: any) =>
+  const filteredUnlockRequests = (pendingUnlockRequests ?? []).filter((row) =>
     matchesStudent(row.user) && matchesBatch(row.user)
   );
 
-  const filteredVivaRequests = (vivaRequests ?? []).filter((row: any) =>
+  const filteredVivaRequests = (vivaRequests ?? []).filter((row) =>
     matchesStudent(row.user) && matchesBatch(row.user)
   );
 
-  const latestFilteredAttempts = useMemo(() => {
+  const latestFilteredAttempts = (() => {
     const seen = new Set<string>();
-    const rows: any[] = [];
+    const rows: QueueRow[] = [];
     for (const row of filteredAttempts) {
       const userId =
         row.user?._id?.toString?.() ??
@@ -171,9 +245,9 @@ export function VivaQueuePage() {
       rows.push(row);
     }
     return rows;
-  }, [filteredAttempts]);
+  })();
 
-  const attemptStudentCount = useMemo(() => {
+  const attemptStudentCount = (() => {
     const uniqueStudents = new Set<string>();
     for (const row of filteredAttempts) {
       const userId =
@@ -182,9 +256,9 @@ export function VivaQueuePage() {
       if (userId) uniqueStudents.add(userId);
     }
     return uniqueStudents.size;
-  }, [filteredAttempts]);
+  })();
 
-  const openConfirmDialog = (type: "approve" | "reject", request: any) => {
+  const openConfirmDialog = (type: "approve" | "reject", request: VivaRequestRow) => {
     setConfirmDialog({ isOpen: true, type, request });
   };
 
@@ -211,7 +285,8 @@ export function VivaQueuePage() {
     closeConfirmDialog();
   };
 
-  const formatDate = (timestamp: number) => {
+  const formatDate = (timestamp?: number) => {
+    if (!timestamp) return "Unknown";
     return new Date(timestamp).toLocaleDateString("en-US", {
       month: "short",
       day: "numeric",
@@ -381,37 +456,43 @@ export function VivaQueuePage() {
           </CardContent>
         </Card>
 
-        <Card
-          className="cursor-pointer hover:bg-accent/40 transition-colors"
+        <button
+          type="button"
+          className="text-left"
           onClick={() => setInsightsTab("failures")}
         >
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Active Failures</CardTitle>
-            <Clock className="h-4 w-4 text-muted-foreground" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold text-destructive">{filteredFailures.length}</div>
-            <p className="text-xs text-muted-foreground">
-              Click to open failures
-            </p>
-          </CardContent>
-        </Card>
+          <Card className="cursor-pointer hover:bg-accent/40 transition-colors">
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">Active Failures</CardTitle>
+              <Clock className="h-4 w-4 text-muted-foreground" />
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold text-destructive">{filteredFailures.length}</div>
+              <p className="text-xs text-muted-foreground">
+                Click to open failures
+              </p>
+            </CardContent>
+          </Card>
+        </button>
 
-        <Card
-          className="cursor-pointer hover:bg-accent/40 transition-colors"
+        <button
+          type="button"
+          className="text-left"
           onClick={() => setInsightsTab("attempts")}
         >
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Attempts</CardTitle>
-            <BookOpen className="h-4 w-4 text-muted-foreground" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold">{latestFilteredAttempts.length}</div>
-            <p className="text-xs text-muted-foreground">
-              {filteredAttempts.length} submissions • {attemptStudentCount} students
-            </p>
-          </CardContent>
-        </Card>
+          <Card className="cursor-pointer hover:bg-accent/40 transition-colors">
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">Attempts</CardTitle>
+              <BookOpen className="h-4 w-4 text-muted-foreground" />
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold">{latestFilteredAttempts.length}</div>
+              <p className="text-xs text-muted-foreground">
+                {filteredAttempts.length} submissions • {attemptStudentCount} students
+              </p>
+            </CardContent>
+          </Card>
+        </button>
       </div>
 
       <div>
@@ -431,7 +512,7 @@ export function VivaQueuePage() {
 
         {filteredUnlockRequests.length > 0 ? (
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
-            {filteredUnlockRequests.map((req: any) => (
+            {filteredUnlockRequests.map((req) => (
               <div
                 key={req._id}
                 className="rounded-xl border bg-card shadow-sm p-5"
@@ -512,11 +593,20 @@ export function VivaQueuePage() {
 
         {filteredVivaRequests.length > 0 ? (
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
-            {filteredVivaRequests.map((request: any) => (
+            {filteredVivaRequests.map((request) => (
               <div
                 key={request._id}
                 className="group rounded-xl border bg-card shadow-sm p-5 hover:bg-accent/40 transition-colors cursor-pointer"
                 onClick={() => navigate(`/admin/students/${request.userId}`)}
+                onKeyDown={(e) => {
+                  if (!request.userId) return;
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    navigate(`/admin/students/${request.userId}`);
+                  }
+                }}
+                role="button"
+                tabIndex={0}
                 title="View student details"
               >
                 <div className="flex items-center gap-3 mb-3">
@@ -601,8 +691,8 @@ export function VivaQueuePage() {
             <TabsContent value="failures" className="mt-4">
               {filteredFailures.length > 0 ? (
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                  {filteredFailures.map((row: any) => (
-                    <div key={row.attemptId} className="rounded-xl border bg-card shadow-sm p-5">
+                  {filteredFailures.map((row) => (
+                    <div key={row.attemptId ?? `${row.user?._id ?? "unknown"}-failure`} className="rounded-xl border bg-card shadow-sm p-5">
                       <div className="flex items-center gap-3 mb-3">
                         <Avatar className="h-10 w-10">
                           <AvatarImage src={row.user?.avatarUrl} alt={row.user?.displayName} />
@@ -645,7 +735,11 @@ export function VivaQueuePage() {
                         >
                           Open Student
                         </Button>
-                        <Button size="sm" onClick={() => openFailureDialog(row.attemptId)}>
+                        <Button
+                          size="sm"
+                          onClick={() => row.attemptId && openFailureDialog(row.attemptId)}
+                          disabled={!row.attemptId}
+                        >
                           Review Attempt
                         </Button>
                       </div>
@@ -660,11 +754,20 @@ export function VivaQueuePage() {
             <TabsContent value="attempts" className="mt-4">
               {latestFilteredAttempts.length > 0 ? (
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                  {latestFilteredAttempts.map((row: any) => (
+                  {latestFilteredAttempts.map((row) => (
                     <div
-                      key={row.attemptId}
+                      key={row.attemptId ?? `${row.user?._id ?? "unknown"}-attempt`}
                       className="group rounded-xl border bg-card shadow-sm p-5 hover:bg-accent/40 transition-colors cursor-pointer"
-                      onClick={() => openFailureDialog(row.attemptId)}
+                      onClick={() => row.attemptId && openFailureDialog(row.attemptId)}
+                      onKeyDown={(e) => {
+                        if (!row.attemptId) return;
+                        if (e.key === "Enter" || e.key === " ") {
+                          e.preventDefault();
+                          openFailureDialog(row.attemptId);
+                        }
+                      }}
+                      role="button"
+                      tabIndex={0}
                       title="View attempt details"
                     >
                       <div className="flex items-center gap-3 mb-3">
@@ -679,7 +782,7 @@ export function VivaQueuePage() {
                           <p className="text-sm text-muted-foreground truncate">@{row.user?.username}</p>
                         </div>
                         <span className="text-xs text-muted-foreground">
-                          {formatDate(row.attempt.submittedAt)}
+                          {formatDate(row.attempt?.submittedAt)}
                         </span>
                       </div>
 
@@ -691,15 +794,15 @@ export function VivaQueuePage() {
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2">
                           {row.domain?.name && <Badge variant="outline">{row.domain.name}</Badge>}
-                          <Badge variant={row.attempt.passed ? "default" : "secondary"}>
-                            {row.attempt.score}/{row.attempt.questionCount}
+                          <Badge variant={row.attempt?.passed ? "default" : "secondary"}>
+                            {row.attempt?.score ?? 0}/{row.attempt?.questionCount ?? 0}
                           </Badge>
-                          <Badge variant={row.attempt.passed ? "default" : "destructive"}>
-                            {row.attempt.passed ? "PASS" : "FAIL"}
+                          <Badge variant={row.attempt?.passed ? "default" : "destructive"}>
+                            {row.attempt?.passed ? "PASS" : "FAIL"}
                           </Badge>
                         </div>
                         <span className="text-xs text-muted-foreground">
-                          {Math.round((row.attempt.durationMs || 0) / 1000)}s
+                          {Math.round(((row.attempt?.durationMs || 0) / 1000))}s
                         </span>
                       </div>
                     </div>
@@ -743,7 +846,7 @@ export function VivaQueuePage() {
               </div>
 
               <div ref={resultsScrollRef} className="space-y-3 max-h-[60vh] overflow-y-auto pr-2">
-                {failureDetails.attempt.results.map((r: any, idx: number) => {
+                {(failureDetails.attempt.results ?? []).map((r, idx: number) => {
                     const img = extractImageSrc(r.visualHtml);
                     const choiceTextByLabel = questionChoiceTextById[r.questionId] ?? {};
                     const chosenText = r.chosenLabel ? choiceTextByLabel[r.chosenLabel] : "";

@@ -1,8 +1,8 @@
 # Scripts Codemap
 
-**Last Updated:** 2026-01-30
+**Last Updated:** 2026-02-17
 **Location:** `scripts/`
-**Runtime:** Node.js via `npx tsx scripts/<name>.ts`
+**Runtime:** TypeScript scripts via `npx tsx`, `.mjs` scripts via `node`
 
 ## Purpose
 
@@ -15,7 +15,7 @@ The scripts directory contains offline data management tools for maintaining cur
 |--------|---------|
 | `generate-seed-data.ts` | Generate seed data blocks from playlist mappings and configs |
 | `generated-seed-block.ts` | Output of generate-seed-data (paste into seed.ts) |
-| `apply-generated-seed-block.ts` | Apply a generated seed block to the database |
+| `apply-generated-seed-block.ts` | Inject generated seed block into `convex/seed.ts` |
 
 ### Curriculum Maintenance
 | Script | Purpose |
@@ -43,7 +43,9 @@ The scripts directory contains offline data management tools for maintaining cur
 | Script | Purpose |
 |--------|---------|
 | `export-chat-logs.sh` | Export AI chat logs from Convex |
-| `export-diagnostic-data.mjs` | Export diagnostic question bank + pre-built sets to `public/diagnostic/` |
+| `sync-diagnostic-v2.mjs` | Sync Diagnostic V2 assets into `public/diagnostic_v2/` |
+| `export-diagnostic-v2-md.mjs` | Export Diagnostic V2 `mastery_data.json` into a readable markdown snapshot |
+| `generate-whats-new.mjs` | Generate `src/data/whatsNew.generated.ts` from recent git history |
 
 ## Config Files
 
@@ -72,12 +74,12 @@ The scripts directory contains offline data management tools for maintaining cur
 
 | File | Purpose |
 |------|---------|
-| `convex/seed.ts` | Main seed function (2841 lines) -- seeds emotions, domains, MYP/PYP curricula, Brilliant activities |
+| `convex/seed.ts` | Main seed function -- seeds emotions, domains, MYP/PYP curricula, Brilliant activities |
 | `convex/migrations.ts` | One-time data migrations (trust jar batch split) |
 
 ## Curriculum Documentation
 
-See [docs/curriculum/README.md](../curriculum/README.md) for the full index of curriculum docs (workflow, quality contract, CCSS mappings, generated reports).
+See [docs/curriculum/README.md](../../curriculum/README.md) for the full index of curriculum docs (workflow, quality contract, CCSS mappings, generated reports).
 
 ## Typical Workflow
 
@@ -88,4 +90,10 @@ See [docs/curriculum/README.md](../curriculum/README.md) for the full index of c
 4. Apply: npx tsx scripts/apply-generated-seed-block.ts
 5. Validate: npx tsx scripts/validate-playlist-mapping.ts
 6. Audit: npx tsx scripts/audit-playlist-mapping.ts
+```
+
+Diagnostic V2 asset sync workflow:
+
+```bash
+npm run diagnostic:v2:sync
 ```

@@ -3,6 +3,7 @@ import { useMutation, useQuery } from "convex/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Sun, Plant, Drop, CloudRain } from "@phosphor-icons/react";
 import { api } from "../../../convex/_generated/api";
+import type { Id } from "../../../convex/_generated/dataModel";
 import { useAuth } from "../../hooks/useAuth";
 import { useDelayedLoading } from "../../hooks/useDelayedLoading";
 import { Skeleton } from "../ui/skeleton";
@@ -100,6 +101,15 @@ const shadesData = {
 
 type QuadrantKey = keyof typeof shadesData;
 type Shade = { name: string; color: string; def: string };
+interface EmotionSubcategoryRecord {
+  _id: Id<"emotionSubcategories">;
+  name: string;
+}
+interface EmotionCategoryRecord {
+  _id: Id<"emotionCategories">;
+  name: string;
+  subcategories?: EmotionSubcategoryRecord[];
+}
 
 interface CheckInGateProps {
   children: ReactNode;
@@ -135,7 +145,9 @@ export function CheckInGate({ children }: CheckInGateProps) {
   }, [selectedShades, showJournal]);
 
   // Query emotion categories from database (for mapping)
-  const categories = useQuery(api.emotions.getCategories);
+  const categories = useQuery(api.emotions.getCategories) as
+    | EmotionCategoryRecord[]
+    | undefined;
 
   // Get today's check-in if exists
   const todayCheckIn = useQuery(
@@ -206,6 +218,40 @@ export function CheckInGate({ children }: CheckInGateProps) {
     setTooltip(null);
   };
 
+  const normalizeEmotion = (value: string) => value.trim().toLowerCase();
+
+  const resolveEmotionIds = (emotionName: string) => {
+    const normalizedEmotion = normalizeEmotion(emotionName);
+    if (!categories || categories.length === 0) return null;
+
+    for (const category of categories) {
+      const matchingSubcategory = (category.subcategories ?? []).find(
+        (subcategory) => normalizeEmotion(subcategory.name) === normalizedEmotion
+      );
+      if (matchingSubcategory) {
+        return { categoryId: category._id, subcategoryId: matchingSubcategory._id };
+      }
+    }
+
+    const looseCategory = categories.find((category) => {
+      const normalizedCategory = normalizeEmotion(category.name);
+      return (
+        normalizedCategory.includes(normalizedEmotion) ||
+        normalizedEmotion.includes(normalizedCategory)
+      );
+    });
+
+    const fallbackCategory = looseCategory ?? categories[0];
+    const fallbackSubcategory =
+      fallbackCategory?.subcategories?.[0] ?? categories[0]?.subcategories?.[0];
+
+    if (!fallbackCategory?._id || !fallbackSubcategory?._id) return null;
+    return {
+      categoryId: fallbackCategory._id,
+      subcategoryId: fallbackSubcategory._id,
+    };
+  };
+
   // Save check-in
   const handleSave = async () => {
     if (!user || selectedShades.length === 0) return;
@@ -214,18 +260,12 @@ export function CheckInGate({ children }: CheckInGateProps) {
     setSaveError(false);
 
     try {
-      // Use the first selected emotion for mapping to database
       const primaryEmotion = selectedShades[0];
-      const emotionName = primaryEmotion.name.toLowerCase();
-      const category = categories?.find(
-        (c: any) =>
-          c.name.toLowerCase().includes(emotionName) ||
-          emotionName.includes(c.name.toLowerCase())
-      );
-
-      const categoryId = category?._id || categories?.[0]?._id;
-      const subcategoryId =
-        category?.subcategories?.[0]?._id || categories?.[0]?.subcategories?.[0]?._id;
+      const ids = resolveEmotionIds(primaryEmotion.name);
+      if (!ids) {
+        setSaveError(true);
+        return;
+      }
 
       // Include all selected emotions in journal entry
       const emotionsList = selectedShades.map((s) => s.name).join(", ");
@@ -233,14 +273,12 @@ export function CheckInGate({ children }: CheckInGateProps) {
         ? `Feeling: ${emotionsList}\n\n${journalEntry}`
         : `Feeling: ${emotionsList}`;
 
-      if (categoryId && subcategoryId) {
-        await saveCheckIn({
-          userId: user._id as any,
-          categoryId: categoryId as any,
-          subcategoryId: subcategoryId as any,
-          journalEntry: fullJournalEntry,
-        });
-      }
+      await saveCheckIn({
+        userId: user._id as any,
+        categoryId: ids.categoryId as any,
+        subcategoryId: ids.subcategoryId as any,
+        journalEntry: fullJournalEntry,
+      });
     } catch (error) {
       console.error("Failed to save check-in:", error);
       setSaveError(true);
@@ -278,6 +316,7 @@ export function CheckInGate({ children }: CheckInGateProps) {
         {/* Back button - shows when quadrant is expanded */}
         {activeQuadrant && (
           <motion.button
+            type="button"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -297,13 +336,15 @@ export function CheckInGate({ children }: CheckInGateProps) {
             const IconComponent = quadrant.icon;
 
             return (
-              <motion.div
+              <motion.button
+                type="button"
                 key={key}
                 onClick={() => handleQuadrantClick(key)}
                 className={`mood-card primary ${isActive ? "active-primary" : ""}`}
                 style={{ backgroundColor: quadrant.color }}
                 layout
                 transition={{ duration: 0.5, ease: [0.2, 0.8, 0.2, 1] }}
+                aria-label={`Open ${quadrant.label}`}
               >
                 <IconComponent
                   weight="light"
@@ -320,7 +361,7 @@ export function CheckInGate({ children }: CheckInGateProps) {
                     ))}
                   </div>
                 )}
-              </motion.div>
+              </motion.button>
             );
           })}
         </div>
@@ -336,6 +377,7 @@ export function CheckInGate({ children }: CheckInGateProps) {
               Selected: {selectedShades.map((s) => s.name).join(", ")}
             </p>
             <button
+              type="button"
               onClick={handleProceed}
               className="btn btn-primary"
               style={{ padding: "16px 48px" }}
@@ -357,7 +399,8 @@ export function CheckInGate({ children }: CheckInGateProps) {
                 transition={{ duration: 0.4, ease: [0.2, 0.8, 0.2, 1] }}
               >
                 {shadesData[activeQuadrant].shades.map((shade, idx) => (
-                  <motion.div
+                  <motion.button
+                    type="button"
                     key={shade.name}
                     className={`shade-tile ${isShadeSelected(shade) ? "selected" : ""}`}
                     style={{
@@ -379,9 +422,11 @@ export function CheckInGate({ children }: CheckInGateProps) {
                     onClick={() => handleShadeClick(shade)}
                     onMouseEnter={(e) => showTooltip(e, shade.def)}
                     onMouseLeave={hideTooltip}
+                    aria-pressed={isShadeSelected(shade)}
+                    aria-label={`Select ${shade.name}`}
                   >
                     {shade.name}
-                  </motion.div>
+                  </motion.button>
                 ))}
               </motion.div>
 
@@ -396,6 +441,7 @@ export function CheckInGate({ children }: CheckInGateProps) {
                     Selected: {selectedShades.map((s) => s.name).join(", ")}
                   </p>
                   <button
+                    type="button"
                     onClick={handleProceed}
                     className="btn btn-primary"
                     style={{ padding: "16px 48px" }}
@@ -494,6 +540,7 @@ export function CheckInGate({ children }: CheckInGateProps) {
                 )}
                 <div className="flex items-center justify-center gap-8">
                   <button
+                    type="button"
                     onClick={handleDiscard}
                     className="bg-transparent border-none text-[14px] opacity-50 text-[#1a1a1a] cursor-pointer hover:opacity-100 transition-opacity"
                     disabled={isSubmitting}
@@ -501,6 +548,7 @@ export function CheckInGate({ children }: CheckInGateProps) {
                     START OVER
                   </button>
                   <button
+                    type="button"
                     onClick={handleSave}
                     disabled={isSubmitting}
                     className="btn btn-primary"

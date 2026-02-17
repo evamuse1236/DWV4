@@ -1,5 +1,8 @@
 # Character System Implementation Plan
 
+Status: implementation plan/reference.
+Authoritative runtime behavior should be verified in `convex/character*.ts`, `src/pages/student/CharacterPage.tsx`, and `docs/ARCHITECTURE.md`.
+
 ## 1. Objective
 Build a new student-facing **Character** system that makes progress tangible through:
 - XP and level progression

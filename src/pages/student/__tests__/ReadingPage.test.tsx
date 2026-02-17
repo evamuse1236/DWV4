@@ -12,7 +12,7 @@
  */
 import { render, screen, waitFor, fireEvent } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi, beforeEach } from "vitest";
+import { describe, expect, it, vi, beforeEach, afterEach } from "vitest";
 
 // Mock convex/react
 const mockStartReading = vi.fn().mockResolvedValue("studentBook_123");
@@ -80,12 +80,42 @@ vi.mock("../../../hooks/useDelayedLoading", () => ({
 // Mock framer-motion
 vi.mock("framer-motion", () => ({
   motion: {
-    div: ({ children, onClick, className, style, ...props }: any) => (
+    div: ({
+      children,
+      onClick,
+      className,
+      style,
+      whileHover,
+      whileTap,
+      initial,
+      animate,
+      exit,
+      variants,
+      transition,
+      layout,
+      layoutId,
+      ...props
+    }: any) => (
       <div onClick={onClick} className={className} style={style} {...props}>
         {children}
       </div>
     ),
-    button: ({ children, onClick, className, disabled, ...props }: any) => (
+    button: ({
+      children,
+      onClick,
+      className,
+      disabled,
+      whileHover,
+      whileTap,
+      initial,
+      animate,
+      exit,
+      variants,
+      transition,
+      layout,
+      layoutId,
+      ...props
+    }: any) => (
       <button onClick={onClick} className={className} disabled={disabled} {...props}>
         {children}
       </button>
@@ -183,10 +213,15 @@ const mockReadingHistory = [
 describe("ReadingPage", () => {
   beforeEach(() => {
     vi.clearAllMocks();
+    vi.spyOn(window, "open").mockImplementation(() => null);
     mockStartReading.mockClear().mockResolvedValue("studentBook_new");
     mockUpdateStatus.mockClear().mockResolvedValue({});
     mockAddReview.mockClear().mockResolvedValue({});
     mockRemoveFromMyBooks.mockClear().mockResolvedValue({});
+  });
+
+  afterEach(() => {
+    vi.restoreAllMocks();
   });
 
   const setupDefaultQueries = () => {

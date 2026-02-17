@@ -52,12 +52,41 @@ vi.mock("framer-motion", () => ({
         {children}
       </div>
     ),
-    button: ({ children, onClick, className, whileHover, whileTap, initial, animate, exit, variants, transition, ...props }: any) => (
+    button: ({
+      children,
+      onClick,
+      className,
+      layout,
+      layoutId,
+      whileHover,
+      whileTap,
+      initial,
+      animate,
+      exit,
+      variants,
+      transition,
+      ...props
+    }: any) => (
       <button onClick={onClick} className={className} {...props}>
         {children}
       </button>
     ),
-    textarea: ({ className, placeholder, value, onChange, whileHover, whileTap, initial, animate, exit, variants, transition, ...props }: any) => (
+    textarea: ({
+      className,
+      placeholder,
+      value,
+      onChange,
+      layout,
+      layoutId,
+      whileHover,
+      whileTap,
+      initial,
+      animate,
+      exit,
+      variants,
+      transition,
+      ...props
+    }: any) => (
       <textarea
         className={className}
         placeholder={placeholder}

@@ -1,5 +1,8 @@
 # Admin Diagnostic V2: What The “Viva Queue” Is Showing (Visual Explainer)
 
+Status: reference explainer (not a source-of-truth contract).
+For implementation decisions, prioritize `convex/diagnostics.ts`, `src/pages/admin/VivaQueuePage.tsx`, and `docs/DATA-MODEL.md`.
+
 This explains, in plain language, how the current Admin page displays and reviews **Diagnostic V2** attempts.
 
 In the app, the Admin view for diagnostics lives in the **Viva Queue** page:

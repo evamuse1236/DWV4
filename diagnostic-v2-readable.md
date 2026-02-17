@@ -2,6 +2,7 @@
 
 Generated: 2026-02-11T08:09:22.772Z
 Source: `C:\WProjects\DW\public\diagnostic_v2\mastery_data.json`
+Status: generated export for review workflows. Do not manually curate business rules here.
 
 ## Summary
 

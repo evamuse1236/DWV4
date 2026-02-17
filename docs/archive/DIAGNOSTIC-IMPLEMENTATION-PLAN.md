@@ -1,5 +1,7 @@
 # Diagnostic Mastery Checks (Deep Work) — Integration Plan
 
+> Archived document: historical implementation notes. Some details are outdated relative to current runtime behavior.
+
 **Last Updated:** 2026-01-30
 
 > **Implementation status:** The core diagnostic system is live. Tables (`diagnosticUnlockRequests`, `diagnosticUnlocks`, `diagnosticAttempts`) are in `convex/schema.ts`. Backend functions are in `convex/diagnostics.ts`. The student quiz runs at `/deep-work/diagnostic/:majorObjectiveId` via `DiagnosticPage.tsx` + `src/lib/diagnostic.ts`. Pre-built question sets (10 per module group, 30 questions each) replaced the original "random 1/3 of pool" approach. Set selection uses Convex-based attempt counting (`getAttemptCount`) instead of localStorage. See [CODEMAPS/diagnostics.md](./CODEMAPS/diagnostics.md) for the current architecture.
@@ -214,10 +216,9 @@ Update `src/components/skill-tree/ObjectivePopover.tsx`:
 
 ### Quiz runner (React rebuild) [DONE, CHANGED]
 Implemented in `src/pages/student/DiagnosticPage.tsx` + `src/lib/diagnostic.ts`:
-- Data loading: `diagnostic-data.json` and `diagnostic-sets.json` fetched from `public/diagnostic/` and cached in memory.
-- **[CHANGED]** Question selection uses **pre-built deterministic sets** (10 per module group, 30 questions each) instead of random 1/3 pool selection. Set index = `attemptCount % 10` via Convex `getAttemptCount` query, replacing localStorage-based tracking.
-- **[CHANGED]** Quiz length is always 30 (not `round(pool / 3)`).
-- Falls back to random 30 from pool if sets fail to load.
+- Data loading: Diagnostic V2 `mastery_data.json` fetched from `public/diagnostic_v2/` and normalized in memory.
+- **[CHANGED]** Question selection uses deterministic seeded sampling (`selectDeterministicQuestions`) with seed `${userId}:${majorObjectiveId}:${attemptCount}`.
+- **[CHANGED]** Quiz length is `min(30, questionPool.length)`.
 - Records: start time, per-question selection, correctness, misconceptions, topic, end time + duration.
 - Results: "Mastered" success state on pass, misconceptions + remediation links on fail.
 
@@ -266,7 +267,7 @@ Update `src/pages/admin/VivaQueuePage.tsx`:
 - Student:
   - practice diagnostic works on a not-ready major
   - mastery diagnostic appears only when ready
-  - 100% pass auto-masters and Deep Work UI reflects it
+  - 90% pass auto-masters and Deep Work UI reflects it
   - fail stores attempt and flips CTA to “Request Viva”
 - Admin:
   - diagnostic failures appear in Viva Queue
@@ -274,8 +275,7 @@ Update `src/pages/admin/VivaQueuePage.tsx`:
 
 ## Rollout / migration [DONE]
 
-- `diagnostic-check/` retained as the archived source-of-truth.
-- Export pipeline: `diagnostic-check/tools/build_ka_diagnostic.py` generates `data.js` + `data-sets.js`; `scripts/export-diagnostic-data.mjs` converts to JSON in `public/diagnostic/`.
+- Diagnostic V2 web bundle is synced into `public/diagnostic_v2/` via `npm run diagnostic:v2:sync`.
 - Mapping uses `getCurriculumModuleIndex` query (section + moduleIndex) instead of fuzzy title matching. No override file needed.
 
 ## Implementation steps (order) [DONE]
@@ -285,4 +285,4 @@ Update `src/pages/admin/VivaQueuePage.tsx`:
 3. **[DONE]** Implement `convex/diagnostics.ts` queries/mutations.
 4. **[DONE]** Build student diagnostic route + React quiz runner (`DiagnosticPage.tsx`).
 5. **[DONE]** Update `VivaQueuePage` to show diagnostic unlock requests + failures.
-6. Tests remain to be added (see `docs/TEST-PLAN.md`).
+6. Tests remain to be added (see `docs/reference/TEST-PLAN.md`).

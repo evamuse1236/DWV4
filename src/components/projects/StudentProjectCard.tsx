@@ -246,9 +246,12 @@ export function StudentProjectCard({
   return (
     <Card className={isExpanded ? "ring-2 ring-primary/20" : ""}>
       {/* Header - Always visible */}
-      <div
-        className="flex items-center justify-between p-4 cursor-pointer hover:bg-muted/50 transition-colors"
+      <button
+        type="button"
+        className="w-full text-left flex items-center justify-between p-4 cursor-pointer hover:bg-muted/50 transition-colors border-0 bg-transparent"
         onClick={onToggleExpand}
+        aria-expanded={isExpanded}
+        aria-label={`Toggle ${student.displayName} project details`}
       >
         <div className="flex items-center gap-4">
           <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center font-medium text-primary">
@@ -281,7 +284,7 @@ export function StudentProjectCard({
             <ChevronDown className="h-5 w-5 text-muted-foreground" />
           )}
         </div>
-      </div>
+      </button>
 
       {/* Expandable Content */}
       <AnimatePresence>
@@ -402,12 +405,15 @@ export function StudentProjectCard({
                                 <ExternalLink className="h-3 w-3" />
                               </a>
                             </div>
-                            <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div className="flex items-center gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 md:group-focus-within:opacity-100 transition-opacity">
                               <Button
                                 variant="ghost"
                                 size="icon"
                                 className="h-8 w-8"
-                                onClick={() => startEditingLink(link)}
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  startEditingLink(link);
+                                }}
                                 aria-label="Edit link"
                               >
                                 <Pencil className="h-4 w-4" />
@@ -416,7 +422,10 @@ export function StudentProjectCard({
                                 variant="ghost"
                                 size="icon"
                                 className="h-8 w-8"
-                                onClick={() => handleRemoveLink(link._id)}
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  handleRemoveLink(link._id);
+                                }}
                                 aria-label="Delete link"
                               >
                                 <Trash2 className="h-4 w-4 text-destructive" />
