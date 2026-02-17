@@ -13,6 +13,12 @@ export const WHATS_NEW: WhatsNewEntry[] = [
   {
     date: "Feb 17",
     sortDate: "2026-02-17",
+    title: "fix(ui): replace comment icon with cleaner chat glyph",
+    description: "Code updates shipped in commit ed2e83f.",
+  },
+  {
+    date: "Feb 17",
+    sortDate: "2026-02-17",
     title: "chore: refresh generated whats-new feed",
     description: "Code updates shipped in commit 782ef8e.",
   },
@@ -183,12 +189,6 @@ export const WHATS_NEW: WhatsNewEntry[] = [
     sortDate: "2026-02-04",
     title: "feat: add sprint history view with week navigation and goal import",
     description: "Browse previous sprints in read-only mode via a sprint selector dropdown.",
-  },
-  {
-    date: "Feb 4",
-    sortDate: "2026-02-04",
-    title: "fix: exclude test setup dir from build tsconfig",
-    description: "Code updates shipped in commit 8cb64f6.",
   },
 ];
 
