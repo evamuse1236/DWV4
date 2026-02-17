@@ -13,6 +13,12 @@ export const WHATS_NEW: WhatsNewEntry[] = [
   {
     date: "Feb 17",
     sortDate: "2026-02-17",
+    title: "fix(ui): improve sidebar comment action affordance",
+    description: "Code updates shipped in commit 41bcf4e.",
+  },
+  {
+    date: "Feb 17",
+    sortDate: "2026-02-17",
     title: "docs(agent): add postmortem and mandatory build/deploy gates",
     description: "Code updates shipped in commit 4c8cfa3.",
   },
@@ -183,12 +189,6 @@ export const WHATS_NEW: WhatsNewEntry[] = [
     sortDate: "2026-02-04",
     title: "chore: bump convex to 1.31.7, add storage polyfill for tests",
     description: "Code updates shipped in commit e7fae9f.",
-  },
-  {
-    date: "Feb 4",
-    sortDate: "2026-02-04",
-    title: "feat: add admin norms page with strikes and penalties tracking",
-    description: "New studentNorms table with Convex backend (CRUD + reset) and admin",
   },
 ];
 
