@@ -13,6 +13,12 @@ export const WHATS_NEW: WhatsNewEntry[] = [
   {
     date: "Feb 17",
     sortDate: "2026-02-17",
+    title: "fix: resolve netlify production build type errors",
+    description: "Code updates shipped in commit b146273.",
+  },
+  {
+    date: "Feb 17",
+    sortDate: "2026-02-17",
     title: "docs: streamline agent routing and simplify repository documentation",
     description: "Code updates shipped in commit 32c93c0.",
   },
@@ -183,12 +189,6 @@ export const WHATS_NEW: WhatsNewEntry[] = [
     sortDate: "2026-01-30",
     title: "fix: remove topic-contaminated questions from Module 1 diagnostic",
     description: "Module 1 (Whole Number Foundations) had ~56% off-topic questions",
-  },
-  {
-    date: "Jan 30",
-    sortDate: "2026-01-30",
-    title: "feat: pre-built diagnostic question sets (10 per module, 30 questions each)",
-    description: "Replace random question selection with deterministic pre-built sets.",
   },
 ];
 
