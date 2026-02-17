@@ -92,8 +92,9 @@ const Icons = {
     </svg>
   ),
   message: (
-    <svg className="w-[18px] h-[18px]" fill="none" stroke="currentColor" strokeWidth={1.6} viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M8.625 9.75h6.75m-6.75 3h4.5m6.621 2.846a9 9 0 10-4.621 1.272c.781 0 1.54-.099 2.264-.284l3.684 1.228-1.227-3.684a8.962 8.962 0 00.9-3.878z" />
+    <svg className="w-[19px] h-[19px]" fill="none" stroke="currentColor" strokeWidth={1.7} viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M7 10h10M7 14h6" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M21 12c0 4.418-4.03 8-9 8a9.84 9.84 0 01-4.083-.86L3 20l1.146-3.438A7.36 7.36 0 013 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
     </svg>
   ),
 };
