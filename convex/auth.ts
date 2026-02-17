@@ -389,11 +389,7 @@ export const getFriendProfiles = query({
           .collect();
 
     return candidateStudents
-      .filter(
-        (student) =>
-          student.role === "student" &&
-          student._id.toString() !== currentUser._id.toString()
-      )
+      .filter((student) => student.role === "student")
       .map((student) => ({
         _id: student._id,
         displayName: student.displayName,
