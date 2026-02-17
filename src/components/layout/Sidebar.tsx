@@ -135,8 +135,12 @@ const adminNavItems: NavItem[] = [
 export function Sidebar({ onOpenComment, showCommentButton = false }: SidebarProps) {
   const { user, logout } = useAuth();
   const location = useLocation();
-  const footerActionClass =
-    "w-full text-left flex items-center gap-3 rounded-md px-2 py-2 transition-colors duration-200 text-[13px] font-medium text-[var(--color-text-muted)] hover:text-[var(--color-text)] hover:bg-black/5";
+  const footerActionBaseClass =
+    "group w-full text-left flex items-center gap-2.5 rounded-xl px-2.5 py-2.5 transition-all duration-200";
+  const commentActionClass =
+    `${footerActionBaseClass} border border-black/10 bg-white/70 text-[var(--color-text)] hover:bg-white hover:border-black/20 hover:shadow-[0_4px_14px_rgba(0,0,0,0.06)]`;
+  const signOutActionClass =
+    `${footerActionBaseClass} mt-1 text-[var(--color-text-muted)] hover:text-[var(--color-text)] hover:bg-black/5`;
 
   const navItems = user?.role === "admin" ? adminNavItems : studentNavItems;
 
@@ -201,18 +205,23 @@ export function Sidebar({ onOpenComment, showCommentButton = false }: SidebarPro
           <button
             type="button"
             onClick={onOpenComment}
-            className={footerActionClass}
+            className={commentActionClass}
+            aria-label="Open comments"
           >
-            {Icons.message}
-            Comment
+            <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-black/5 text-[var(--color-text-muted)] transition-colors duration-200 group-hover:bg-black/10 group-hover:text-[var(--color-text)]">
+              {Icons.message}
+            </span>
+            <span className="text-[11px] font-semibold tracking-[0.12em] uppercase">Comment</span>
           </button>
         )}
         <button
           onClick={() => logout()}
-          className={footerActionClass}
+          className={signOutActionClass}
         >
-          {Icons.logout}
-          Sign Out
+          <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-black/5 text-[var(--color-text-muted)] transition-colors duration-200 group-hover:bg-black/10 group-hover:text-[var(--color-text)]">
+            {Icons.logout}
+          </span>
+          <span className="text-[11px] font-semibold tracking-[0.12em] uppercase">Sign Out</span>
         </button>
       </div>
     </aside>

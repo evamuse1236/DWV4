@@ -13,6 +13,18 @@ export const WHATS_NEW: WhatsNewEntry[] = [
   {
     date: "Feb 17",
     sortDate: "2026-02-17",
+    title: "docs(agent): add postmortem and mandatory build/deploy gates",
+    description: "Code updates shipped in commit 4c8cfa3.",
+  },
+  {
+    date: "Feb 17",
+    sortDate: "2026-02-17",
+    title: "chore: refresh generated whats-new feed",
+    description: "Code updates shipped in commit 022ba5f.",
+  },
+  {
+    date: "Feb 17",
+    sortDate: "2026-02-17",
     title: "fix: resolve netlify production build type errors",
     description: "Code updates shipped in commit b146273.",
   },
@@ -177,18 +189,6 @@ export const WHATS_NEW: WhatsNewEntry[] = [
     sortDate: "2026-02-04",
     title: "feat: add admin norms page with strikes and penalties tracking",
     description: "New studentNorms table with Convex backend (CRUD + reset) and admin",
-  },
-  {
-    date: "Jan 30",
-    sortDate: "2026-01-30",
-    title: "chore: archive diagnostic data, remove from git tracking",
-    description: "Move all diagnostic question data to diagnostic-check/archive/",
-  },
-  {
-    date: "Jan 30",
-    sortDate: "2026-01-30",
-    title: "fix: remove topic-contaminated questions from Module 1 diagnostic",
-    description: "Module 1 (Whole Number Foundations) had ~56% off-topic questions",
   },
 ];
 
