@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { type ChangeEvent, useEffect, useMemo, useState } from "react";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "../../../convex/_generated/api";
 import type { Id } from "../../../convex/_generated/dataModel";
@@ -24,6 +24,7 @@ import {
 } from "@/components/ui/dialog";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Eye, EyeOff } from "lucide-react";
 
 type CredentialUser = {
   _id: Id<"users">;
@@ -48,6 +49,50 @@ function isValidAvatarUrl(value: string): boolean {
   } catch {
     return false;
   }
+}
+
+type PasswordFieldProps = {
+  value: string;
+  onChange: (event: ChangeEvent<HTMLInputElement>) => void;
+  placeholder: string;
+  disabled?: boolean;
+  visible: boolean;
+  onToggleVisibility: () => void;
+  toggleLabel: string;
+};
+
+function PasswordField({
+  value,
+  onChange,
+  placeholder,
+  disabled,
+  visible,
+  onToggleVisibility,
+  toggleLabel,
+}: PasswordFieldProps) {
+  return (
+    <div className="relative">
+      <Input
+        type={visible ? "text" : "password"}
+        value={value}
+        onChange={onChange}
+        placeholder={placeholder}
+        disabled={disabled}
+        className="pr-10"
+      />
+      <Button
+        type="button"
+        variant="ghost"
+        size="icon"
+        className="absolute right-1 top-1 h-7 w-7"
+        onClick={onToggleVisibility}
+        disabled={disabled}
+        aria-label={toggleLabel}
+      >
+        {visible ? <EyeOff /> : <Eye />}
+      </Button>
+    </div>
+  );
 }
 
 export function AdminSettingsPage() {
@@ -94,6 +139,12 @@ export function AdminSettingsPage() {
   const [resetError, setResetError] = useState("");
   const [resetSuccess, setResetSuccess] = useState("");
   const [resetLoading, setResetLoading] = useState(false);
+  const [showUsernamePassword, setShowUsernamePassword] = useState(false);
+  const [showCurrentPassword, setShowCurrentPassword] = useState(false);
+  const [showNewPassword, setShowNewPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [showResetPassword, setShowResetPassword] = useState(false);
+  const [showResetConfirmPassword, setShowResetConfirmPassword] = useState(false);
 
   useEffect(() => {
     setNewUsername(user?.username ?? "");
@@ -290,6 +341,8 @@ export function AdminSettingsPage() {
     setResetConfirmPassword("");
     setResetError("");
     setResetSuccess("");
+    setShowResetPassword(false);
+    setShowResetConfirmPassword(false);
   };
 
   const handleAdminPasswordReset = async () => {
@@ -419,12 +472,14 @@ export function AdminSettingsPage() {
               placeholder="New username"
               disabled={updatingUsername}
             />
-            <Input
-              type="password"
+            <PasswordField
               value={usernamePassword}
               onChange={(event) => setUsernamePassword(event.target.value)}
               placeholder="Current password"
               disabled={updatingUsername}
+              visible={showUsernamePassword}
+              onToggleVisibility={() => setShowUsernamePassword((value) => !value)}
+              toggleLabel={showUsernamePassword ? "Hide current username password" : "Show current username password"}
             />
             <div className="flex justify-end">
               <Button onClick={handleOwnUsernameUpdate} disabled={updatingUsername || !token}>
@@ -445,26 +500,32 @@ export function AdminSettingsPage() {
                 {passwordSuccess}
               </div>
             )}
-            <Input
-              type="password"
+            <PasswordField
               value={currentPassword}
               onChange={(event) => setCurrentPassword(event.target.value)}
               placeholder="Current password"
               disabled={updatingPassword}
+              visible={showCurrentPassword}
+              onToggleVisibility={() => setShowCurrentPassword((value) => !value)}
+              toggleLabel={showCurrentPassword ? "Hide current password" : "Show current password"}
             />
-            <Input
-              type="password"
+            <PasswordField
               value={newPassword}
               onChange={(event) => setNewPassword(event.target.value)}
               placeholder="New password"
               disabled={updatingPassword}
+              visible={showNewPassword}
+              onToggleVisibility={() => setShowNewPassword((value) => !value)}
+              toggleLabel={showNewPassword ? "Hide new password" : "Show new password"}
             />
-            <Input
-              type="password"
+            <PasswordField
               value={confirmPassword}
               onChange={(event) => setConfirmPassword(event.target.value)}
               placeholder="Confirm new password"
               disabled={updatingPassword}
+              visible={showConfirmPassword}
+              onToggleVisibility={() => setShowConfirmPassword((value) => !value)}
+              toggleLabel={showConfirmPassword ? "Hide confirm new password" : "Show confirm new password"}
             />
             <div className="flex justify-end">
               <Button onClick={handleOwnPasswordUpdate} disabled={updatingPassword || !token}>
@@ -479,7 +540,7 @@ export function AdminSettingsPage() {
         <CardHeader>
           <CardTitle>User Credentials</CardTitle>
           <CardDescription>
-            View usernames and manage credentials. Passwords are never shown in plaintext.
+            View usernames and manage credentials. Stored passwords remain hashed and are never retrievable.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -580,19 +641,23 @@ export function AdminSettingsPage() {
                 {resetSuccess}
               </div>
             )}
-            <Input
-              type="password"
+            <PasswordField
               value={resetPassword}
               onChange={(event) => setResetPassword(event.target.value)}
               placeholder="New password"
               disabled={resetLoading}
+              visible={showResetPassword}
+              onToggleVisibility={() => setShowResetPassword((value) => !value)}
+              toggleLabel={showResetPassword ? "Hide reset password" : "Show reset password"}
             />
-            <Input
-              type="password"
+            <PasswordField
               value={resetConfirmPassword}
               onChange={(event) => setResetConfirmPassword(event.target.value)}
               placeholder="Confirm new password"
               disabled={resetLoading}
+              visible={showResetConfirmPassword}
+              onToggleVisibility={() => setShowResetConfirmPassword((value) => !value)}
+              toggleLabel={showResetConfirmPassword ? "Hide reset confirm password" : "Show reset confirm password"}
             />
           </div>
           <DialogFooter>

@@ -1,4 +1,4 @@
-import { render, screen, waitFor } from "@testing-library/react";
+import { render, screen, waitFor, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
@@ -92,5 +92,30 @@ describe("AdminSettingsPage avatar URL", () => {
         avatarUrl: dataUrl,
       });
     });
+  });
+
+  it("allows admins to toggle reset password visibility", async () => {
+    const user = userEvent.setup();
+    mockUseQuery.mockReturnValue([
+      {
+        _id: "user_1",
+        displayName: "Student One",
+        username: "student1",
+        role: "student",
+        createdAt: Date.now(),
+      },
+    ]);
+
+    render(<AdminSettingsPage />);
+
+    await user.click(screen.getByRole("button", { name: "Reset Password" }));
+
+    const resetDialog = screen.getByRole("dialog", { name: "Reset Password" });
+    const newPasswordInput = within(resetDialog).getByPlaceholderText("New password");
+    expect(newPasswordInput).toHaveAttribute("type", "password");
+
+    await user.click(within(resetDialog).getByRole("button", { name: "Show reset password" }));
+
+    expect(newPasswordInput).toHaveAttribute("type", "text");
   });
 });
