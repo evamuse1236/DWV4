@@ -27,7 +27,8 @@ For exact field validators and index definitions, always verify in schema.
 2. `studentObjectives.status` contains legacy-compatible values.
 3. Activity completion updates can propagate objective status changes.
 4. Diagnostic pass/fail is backend-derived from score percent and threshold.
-5. Reading queue logic still treats `studentBooks.status = "completed"` as legacy-compatible.
+5. Diagnostic retake unlock consumption tolerates legacy unlock rows by defaulting missing `attemptsRemaining` to `1` and missing `expiresAt` to `approvedAt + 24h`.
+6. Reading queue logic still treats `studentBooks.status = "completed"` as legacy-compatible.
 
 ## Status lifecycles
 

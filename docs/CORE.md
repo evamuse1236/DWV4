@@ -31,6 +31,7 @@ The product balances:
 3. Diagnostic pass policy is backend-enforced in `convex/diagnostics.ts`.
 4. Student routes under `DashboardLayout` are check-in gated.
 5. AI actions must return parseable structured outputs consumed by UI.
+6. Diagnostic submission retries must not mutate client-side score/results more than once for the same final question.
 
 ## System shape
 

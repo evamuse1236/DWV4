@@ -101,18 +101,10 @@ export function DiagnosticPage() {
     : 0;
 
   const majorStatus = unlockState?.majorAssignment?.status;
-  const hasActiveUnlock = Boolean(unlockState?.activeUnlock);
   const hasPendingUnlockRequest = Boolean(unlockState?.pendingRequest);
-  const latestAttemptFailed = unlockState?.latestAttempt?.passed === false;
-  const requiresVivaRequest =
-    unlockState?.policy?.requiresVivaRequest ??
-    Boolean(latestAttemptFailed && majorStatus !== "viva_requested");
-  const requiresUnlock =
-    unlockState?.policy?.requiresUnlock ??
-    Boolean(latestAttemptFailed && majorStatus === "viva_requested" && !hasActiveUnlock);
-  const canStartNow =
-    unlockState?.policy?.canStart ??
-    Boolean(!latestAttemptFailed || (majorStatus === "viva_requested" && hasActiveUnlock));
+  const requiresVivaRequest = unlockState?.policy?.requiresVivaRequest ?? false;
+  const requiresUnlock = unlockState?.policy?.requiresUnlock ?? false;
+  const canStartNow = unlockState?.policy?.canStart ?? false;
 
   useEffect(() => {
     setDataLoadingError(null);
@@ -251,11 +243,28 @@ export function DiagnosticPage() {
         results: finalResults,
       });
 
+      // Commit final scored state only after submit succeeds.
+      setScore(finalScore);
+      setResults(finalResults);
       setCompletedAttemptId(String(res.attemptId));
       setCompletedPassed(Boolean(res.passed));
       setCompletedDurationMs(durationMs);
     } catch (err: any) {
-      setSubmitError(err?.message || "Failed to submit attempt");
+      const message = err?.message || "Failed to submit attempt";
+      setSubmitError(message);
+
+      const likelyGateIssue =
+        message.includes("Request viva before taking a retake.") ||
+        message.includes("Diagnostic unlock required for retake.") ||
+        message.includes("Diagnostic approval expired");
+
+      // If backend gate changed while the quiz was in progress, return to gate UI.
+      if (likelyGateIssue) {
+        setStartedAt(null);
+        setQuestions(null);
+        setQIndex(0);
+        setSelectedIdx(null);
+      }
     } finally {
       setIsSubmitting(false);
     }
@@ -267,17 +276,17 @@ export function DiagnosticPage() {
   };
 
   const handleNext = async () => {
-    if (!questions || !currentQuestion || selectedIdx === null || isSubmitting) return;
+    if (!questions || !currentQuestion || isSubmitting) return;
+    if (selectedIdx === null) return;
 
     const nextResult = buildQuestionResult(selectedIdx);
     if (!nextResult) return;
     const nextScore = score + (nextResult.correct ? 1 : 0);
     const nextResults = [...results, nextResult];
 
-    setScore(nextScore);
-    setResults(nextResults);
-
     if (qIndex < questions.length - 1) {
+      setScore(nextScore);
+      setResults(nextResults);
       setQIndex((i) => i + 1);
       setSelectedIdx(null);
       setSubmitError(null);
@@ -294,11 +303,10 @@ export function DiagnosticPage() {
     if (!nextResult) return;
     const nextResults = [...results, nextResult];
 
-    setResults(nextResults);
-    setSelectedIdx(null);
-    setSubmitError(null);
-
     if (qIndex < questions.length - 1) {
+      setResults(nextResults);
+      setSelectedIdx(null);
+      setSubmitError(null);
       setQIndex((i) => i + 1);
       return;
     }

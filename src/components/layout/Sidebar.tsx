@@ -106,6 +106,7 @@ const studentNavItems: NavItem[] = [
   { path: "/sprint", label: "Sprint", icon: Icons.listChecks },
   { path: "/deep-work", label: "DeepWork", icon: Icons.book },
   { path: "/reading", label: "Library", icon: Icons.books },
+  { path: "/review", label: "Review", icon: Icons.clipboard },
   ...(STUDENT_CHARACTER_SYSTEM_ENABLED
     ? [{ path: "/character", label: "Character", icon: Icons.character }]
     : []),

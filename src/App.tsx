@@ -18,6 +18,7 @@ import { DiagnosticPage } from "./pages/student/DiagnosticPage";
 import { ReadingPage } from "./pages/student/ReadingPage";
 import { TrustJarPage } from "./pages/student/TrustJarPage";
 import { VisionBoardPage } from "./pages/student/VisionBoardPage";
+import { ReviewPage } from "./pages/student/ReviewPage";
 import { CharacterPage } from "./pages/student/CharacterPage";
 import { SettingsPage as StudentSettingsPage } from "./pages/student/SettingsPage";
 
@@ -80,6 +81,7 @@ function App() {
               <Route path="/deep-work/:domainId" element={<DomainDetailPage />} />
               <Route path="/deep-work/diagnostic/:majorObjectiveId" element={<DiagnosticPage />} />
               <Route path="/reading" element={<ReadingPage />} />
+              <Route path="/review" element={<ReviewPage />} />
               <Route path="/trust-jar" element={<TrustJarPage />} />
               <Route path="/vision-board" element={<VisionBoardPage />} />
               <Route

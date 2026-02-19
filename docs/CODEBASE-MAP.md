@@ -30,7 +30,7 @@ docs/     architecture, operations, process documentation
 
 ### Student pages
 
-`src/pages/student/` includes dashboard, check-in, sprint, deep work, diagnostic, reading, trust jar, vision board, character, settings.
+`src/pages/student/` includes dashboard, check-in, sprint, deep work, diagnostic, reading, review, trust jar, vision board, character, settings.
 
 ### Admin pages
 
@@ -72,7 +72,7 @@ docs/     architecture, operations, process documentation
 
 - `/dashboard`, `/check-in`, `/sprint`, `/deep-work`, `/deep-work/:domainId`
 - `/deep-work/diagnostic/:majorObjectiveId`
-- `/reading`, `/trust-jar`, `/vision-board`, `/character`, `/settings`
+- `/reading`, `/review`, `/trust-jar`, `/vision-board`, `/character`, `/settings`
 
 ### Admin
 

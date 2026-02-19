@@ -4,6 +4,31 @@ import type { Id } from "./_generated/dataModel";
 import { CHARACTER_XP, awardXpIfNotExists } from "./characterAwards";
 
 const PASS_THRESHOLD_PERCENT = 90;
+const DEFAULT_UNLOCK_EXPIRY_MS = 24 * 60 * 60 * 1000;
+
+function toFiniteNumberOrNull(value: unknown): number | null {
+  if (typeof value !== "number" || !Number.isFinite(value)) return null;
+  return value;
+}
+
+function getUnlockAttemptsRemaining(unlock: any): number {
+  const raw = toFiniteNumberOrNull(unlock?.attemptsRemaining);
+  // Legacy unlock rows can be missing this field; default to one remaining attempt.
+  if (raw === null) return 1;
+  return Math.max(0, Math.floor(raw));
+}
+
+function getUnlockExpiresAt(unlock: any, now: number): number {
+  const explicit = toFiniteNumberOrNull(unlock?.expiresAt);
+  if (explicit !== null && explicit > 0) return explicit;
+
+  const approvedAt = toFiniteNumberOrNull(unlock?.approvedAt);
+  if (approvedAt !== null && approvedAt > 0) {
+    return approvedAt + DEFAULT_UNLOCK_EXPIRY_MS;
+  }
+
+  return now + DEFAULT_UNLOCK_EXPIRY_MS;
+}
 
 function isCurriculumPyp(curriculum: string | undefined | null): boolean {
   return Boolean(curriculum && curriculum.toLowerCase().includes("pyp"));
@@ -12,9 +37,15 @@ function isCurriculumPyp(curriculum: string | undefined | null): boolean {
 function getActiveUnlockOrNull(unlock: any, now: number) {
   if (!unlock) return null;
   if (unlock.status !== "approved") return null;
-  if (unlock.attemptsRemaining <= 0) return null;
-  if (unlock.expiresAt <= now) return null;
-  return unlock;
+  const attemptsRemaining = getUnlockAttemptsRemaining(unlock);
+  if (attemptsRemaining <= 0) return null;
+  const expiresAt = getUnlockExpiresAt(unlock, now);
+  if (expiresAt <= now) return null;
+  return {
+    ...unlock,
+    attemptsRemaining,
+    expiresAt,
+  };
 }
 
 function toScorePercent(score: number, questionCount: number): number {
@@ -390,6 +421,80 @@ export const getAllAttemptsForAdmin = query({
   },
 });
 
+export const getStudentAttempts = query({
+  args: { userId: v.id("users") },
+  handler: async (ctx, args) => {
+    const attempts = await ctx.db
+      .query("diagnosticAttempts")
+      .order("desc")
+      .filter((q: any) => q.eq(q.field("userId"), args.userId))
+      .take(200);
+
+    return await Promise.all(
+      attempts.map(async (attempt: any) => {
+        const major = await ctx.db.get(attempt.majorObjectiveId as Id<"majorObjectives">);
+        const domain = major ? await ctx.db.get(major.domainId) : null;
+        return {
+          attemptId: attempt._id,
+          attempt: {
+            _id: attempt._id,
+            passed: attempt.passed,
+            score: attempt.score,
+            questionCount: attempt.questionCount,
+            scorePercent:
+              attempt.scorePercent ??
+              toScorePercent(attempt.score, Math.max(1, attempt.questionCount)),
+            submittedAt: attempt.submittedAt,
+            durationMs: attempt.durationMs,
+            diagnosticModuleName: attempt.diagnosticModuleName,
+            attemptType: attempt.attemptType,
+          },
+          majorObjective: major
+            ? {
+                _id: major._id,
+                title: major.title,
+              }
+            : null,
+          domain: domain
+            ? {
+                _id: domain._id,
+                name: domain.name,
+              }
+            : null,
+        };
+      })
+    );
+  },
+});
+
+export const getStudentAttemptDetails = query({
+  args: { userId: v.id("users"), attemptId: v.id("diagnosticAttempts") },
+  handler: async (ctx, args) => {
+    const attempt = await ctx.db.get(args.attemptId);
+    if (!attempt) return null;
+    if (attempt.userId.toString() !== args.userId.toString()) return null;
+
+    const major = await ctx.db.get(attempt.majorObjectiveId as Id<"majorObjectives">);
+    const domain = major ? await ctx.db.get(major.domainId) : null;
+
+    return {
+      attempt,
+      majorObjective: major
+        ? {
+            _id: major._id,
+            title: major.title,
+          }
+        : null,
+      domain: domain
+        ? {
+            _id: domain._id,
+            name: domain.name,
+          }
+        : null,
+    };
+  },
+});
+
 export const getAttemptCount = query({
   args: { userId: v.id("users"), majorObjectiveId: v.id("majorObjectives") },
   handler: async (ctx, args) => {
@@ -499,8 +604,13 @@ export const submitAttempt = mutation({
         throw new Error("Diagnostic unlock required for retake.");
       }
 
-      if (latestUnlock.status === "approved" && latestUnlock.expiresAt <= now) {
-        await ctx.db.patch(latestUnlock._id, { status: "expired" });
+      const latestUnlockExpiresAt = getUnlockExpiresAt(latestUnlock, now);
+      if (latestUnlock.status === "approved" && latestUnlockExpiresAt <= now) {
+        await ctx.db.patch(latestUnlock._id, {
+          status: "expired",
+          expiresAt: latestUnlockExpiresAt,
+          attemptsRemaining: 0,
+        });
         throw new Error("Diagnostic approval expired");
       }
 
@@ -512,11 +622,15 @@ export const submitAttempt = mutation({
       const nextRemaining = Math.max(0, activeUnlock.attemptsRemaining - 1);
       await ctx.db.patch(activeUnlock._id, {
         attemptsRemaining: nextRemaining,
+        expiresAt: activeUnlock.expiresAt,
         status: nextRemaining === 0 ? "consumed" : "approved",
       });
 
       unlockId = activeUnlock._id;
-      approvedByForAutofill = activeUnlock.approvedBy;
+      approvedByForAutofill =
+        (activeUnlock.approvedBy as Id<"users"> | undefined) ??
+        (majorAssignment?.assignedBy as Id<"users"> | undefined) ??
+        args.userId;
     }
 
     const attemptId = await ctx.db.insert("diagnosticAttempts", {
