@@ -74,6 +74,7 @@ const shadesData = {
     color: "#E5E7EB",
     shades: [
       { name: "Tired", color: "#F9FAFB", def: "Feeling like you have no energy and need to rest or sleep." },
+      { name: "Sleepy", color: "#F3F4F6", def: "Feeling drowsy and like your body wants rest right now." },
       { name: "Bored", color: "#F1F5F9", def: "Feeling restless because you want to do something fun but can't find anything to do." },
       { name: "Sad", color: "#E0F2FE", def: "Feeling down or unhappy because you lost something or something bad happened." },
       { name: "Lonely", color: "#EEF2FF", def: "Feeling sad because you want to be with friends or feel close to others, but you aren't." },
@@ -219,14 +220,18 @@ export function CheckInGate({ children }: CheckInGateProps) {
   };
 
   const normalizeEmotion = (value: string) => value.trim().toLowerCase();
+  const emotionAliases: Record<string, string[]> = {
+    sleepy: ["sleepy", "tired"],
+  };
 
   const resolveEmotionIds = (emotionName: string) => {
     const normalizedEmotion = normalizeEmotion(emotionName);
+    const candidateNames = emotionAliases[normalizedEmotion] ?? [normalizedEmotion];
     if (!categories || categories.length === 0) return null;
 
     for (const category of categories) {
       const matchingSubcategory = (category.subcategories ?? []).find(
-        (subcategory) => normalizeEmotion(subcategory.name) === normalizedEmotion
+        (subcategory) => candidateNames.includes(normalizeEmotion(subcategory.name))
       );
       if (matchingSubcategory) {
         return { categoryId: category._id, subcategoryId: matchingSubcategory._id };

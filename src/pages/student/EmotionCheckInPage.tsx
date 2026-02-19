@@ -44,6 +44,7 @@ const shadesData = {
     color: "#E5E7EB", // Gray
     shades: [
       { name: "Tired", color: "#F9FAFB", def: "Feeling like you have no energy and need to rest or sleep." },
+      { name: "Sleepy", color: "#F3F4F6", def: "Feeling drowsy and like your body wants rest right now." },
       { name: "Bored", color: "#F1F5F9", def: "Feeling restless because you want to do something fun but can't find anything to do." },
       { name: "Sad", color: "#E0F2FE", def: "Feeling down or unhappy because you lost something or something bad happened." },
       { name: "Lonely", color: "#EEF2FF", def: "Feeling sad because you want to be with friends or feel close to others, but you aren't." },
@@ -71,6 +72,10 @@ const shadesData = {
 
 type QuadrantKey = keyof typeof shadesData;
 type Shade = { name: string; color: string; def: string };
+const emotionAliases: Record<string, string[]> = {
+  sleepy: ["sleepy", "tired"],
+};
+const normalizeEmotion = (value: string) => value.trim().toLowerCase();
 
 /**
  * Emotion Check-in Page - Palette of Presence Design
@@ -128,31 +133,20 @@ export function EmotionCheckInPage() {
     setIsSubmitting(true);
 
     try {
-      // Map our UI emotion to Convex category
-      const emotionName = selectedShade.name.toLowerCase();
-      const category = categories?.find(
-        (c: any) =>
-          c.name.toLowerCase().includes(emotionName) ||
-          emotionName.includes(c.name.toLowerCase())
-      );
-
-      const categoryId = category?._id || categories?.[0]?._id;
-      const subcategoryId =
-        category?.subcategories?.[0]?._id || categories?.[0]?.subcategories?.[0]?._id;
-
-      if (categoryId && subcategoryId) {
+      const ids = resolveEmotionIds(selectedShade.name);
+      if (ids?.categoryId && ids?.subcategoryId) {
         if (isEditing && todayCheckIn?._id) {
           await updateCheckIn({
             checkInId: todayCheckIn._id as any,
-            categoryId: categoryId as any,
-            subcategoryId: subcategoryId as any,
+            categoryId: ids.categoryId as any,
+            subcategoryId: ids.subcategoryId as any,
             journalEntry: journalEntry || undefined,
           });
         } else {
           await saveCheckIn({
             userId: user._id as any,
-            categoryId: categoryId as any,
-            subcategoryId: subcategoryId as any,
+            categoryId: ids.categoryId as any,
+            subcategoryId: ids.subcategoryId as any,
             journalEntry: journalEntry || undefined,
           });
         }
@@ -192,6 +186,40 @@ export function EmotionCheckInPage() {
 
   const hideTooltip = () => {
     setTooltip(null);
+  };
+
+  const resolveEmotionIds = (emotionName: string) => {
+    if (!categories || categories.length === 0) return null;
+
+    const normalizedEmotion = normalizeEmotion(emotionName);
+    const candidateNames = emotionAliases[normalizedEmotion] ?? [normalizedEmotion];
+
+    for (const category of categories as any[]) {
+      const matchingSubcategory = (category.subcategories ?? []).find((subcategory: any) =>
+        candidateNames.includes(normalizeEmotion(subcategory.name))
+      );
+      if (matchingSubcategory?._id) {
+        return { categoryId: category._id, subcategoryId: matchingSubcategory._id };
+      }
+    }
+
+    const looseCategory = (categories as any[]).find((category) => {
+      const normalizedCategory = normalizeEmotion(category.name);
+      return (
+        normalizedCategory.includes(normalizedEmotion) ||
+        normalizedEmotion.includes(normalizedCategory)
+      );
+    });
+
+    const fallbackCategory = looseCategory ?? (categories as any[])[0];
+    const fallbackSubcategory =
+      fallbackCategory?.subcategories?.[0] ?? (categories as any[])[0]?.subcategories?.[0];
+
+    if (!fallbackCategory?._id || !fallbackSubcategory?._id) return null;
+    return {
+      categoryId: fallbackCategory._id,
+      subcategoryId: fallbackSubcategory._id,
+    };
   };
 
   // Already checked in today (and not editing)

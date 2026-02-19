@@ -283,6 +283,23 @@ describe("CheckInGate", () => {
       });
     });
 
+    it("shows sleepy in bad + low energy options", async () => {
+      const user = userEvent.setup();
+
+      render(
+        <CheckInGate>
+          <MockDashboard />
+        </CheckInGate>
+      );
+
+      const quadrantCards = document.querySelectorAll(".mood-card");
+      await user.click(quadrantCards[2]);
+
+      await waitFor(() => {
+        expect(screen.getByText(/sleepy/i)).toBeInTheDocument();
+      });
+    });
+
     it("shows back button when quadrant is expanded", async () => {
       const user = userEvent.setup();
 
