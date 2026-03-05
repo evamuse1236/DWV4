@@ -1,10 +1,69 @@
-import { query, mutation } from "./_generated/server";
+import { mutation, query } from "./_generated/server";
 import { v } from "convex/values";
 import {
   CHARACTER_XP,
   awardXpIfNotExists,
   getReadingDomainId,
 } from "./characterAwards";
+
+const DONE_STATUSES = new Set(["review_approved", "presented"]);
+
+function hasReviewText(review?: string) {
+  return Boolean(review && review.trim().length > 0);
+}
+
+function isDoneStatus(status: string) {
+  return DONE_STATUSES.has(status);
+}
+
+function getDoneTimestamp(studentBook: any) {
+  return (
+    studentBook.reviewApprovedAt ??
+    studentBook.presentedAt ??
+    studentBook.reviewSubmittedAt ??
+    studentBook.presentationRequestedAt ??
+    studentBook.completedAt ??
+    studentBook.startedAt ??
+    0
+  );
+}
+
+function ensureValidRating(rating?: number) {
+  if (rating === undefined) return;
+  if (!Number.isInteger(rating) || rating < 1 || rating > 5) {
+    throw new Error("Rating must be an integer between 1 and 5");
+  }
+}
+
+async function ensureCommentableReview(ctx: any, studentBookId: any) {
+  const studentBook = await ctx.db.get(studentBookId);
+  if (!studentBook) {
+    throw new Error("Review not found");
+  }
+  if (!isDoneStatus(studentBook.status)) {
+    throw new Error("Comments are only allowed on approved reviews");
+  }
+  if (!hasReviewText(studentBook.review)) {
+    throw new Error("Comments require a published review");
+  }
+  return studentBook;
+}
+
+async function awardReviewDoneXp(ctx: any, studentBook: any) {
+  const readingDomainId = await getReadingDomainId(ctx);
+  await awardXpIfNotExists(ctx, {
+    userId: studentBook.userId,
+    sourceType: "reading_milestone",
+    sourceKey: `reading_milestone:${studentBook._id}:review_approved`,
+    xp: CHARACTER_XP.readingPresented,
+    domainId: readingDomainId,
+    meta: {
+      studentBookId: studentBook._id,
+      bookId: studentBook.bookId,
+      status: "review_approved",
+    },
+  });
+}
 
 // Get all books
 export const getAll = query({
@@ -34,12 +93,11 @@ export const getStudentBooks = query({
       .filter((q) => q.eq(q.field("userId"), args.userId))
       .collect();
 
-    // Fetch book details
     return await Promise.all(
-      studentBooks.map(async (sb) => {
-        const book = await ctx.db.get(sb.bookId);
+      studentBooks.map(async (studentBook) => {
+        const book = await ctx.db.get(studentBook.bookId);
         return {
-          ...sb,
+          ...studentBook,
           book,
         };
       })
@@ -56,21 +114,18 @@ export const getReadingHistory = query({
       .filter((q) => q.eq(q.field("userId"), args.userId))
       .collect();
 
-    // Fetch book details and format for AI
-    const history = await Promise.all(
-      studentBooks.map(async (sb) => {
-        const book = await ctx.db.get(sb.bookId);
+    return await Promise.all(
+      studentBooks.map(async (studentBook) => {
+        const book = await ctx.db.get(studentBook.bookId);
         return {
           title: book?.title || "Unknown",
           author: book?.author || "Unknown",
           genre: book?.genre,
-          rating: sb.rating,
-          status: sb.status,
+          rating: studentBook.rating,
+          status: studentBook.status,
         };
       })
     );
-
-    return history;
   },
 });
 
@@ -102,7 +157,6 @@ export const startReading = mutation({
     bookId: v.id("books"),
   },
   handler: async (ctx, args) => {
-    // Check if already started
     const existing = await ctx.db
       .query("studentBooks")
       .filter((q) =>
@@ -126,13 +180,17 @@ export const startReading = mutation({
   },
 });
 
-// Update reading status
+// Legacy status updater (kept for compatibility)
 export const updateStatus = mutation({
   args: {
     studentBookId: v.id("studentBooks"),
     status: v.union(
       v.literal("reading"),
-      v.literal("completed"), // Legacy status
+      v.literal("completed"),
+      v.literal("review_draft"),
+      v.literal("review_submitted"),
+      v.literal("review_changes_requested"),
+      v.literal("review_approved"),
       v.literal("presentation_requested"),
       v.literal("presented")
     ),
@@ -143,23 +201,25 @@ export const updateStatus = mutation({
       throw new Error("Student book not found");
     }
 
+    const now = Date.now();
     const updates: any = { status: args.status };
 
     if (args.status === "completed") {
-      updates.completedAt = Date.now();
+      updates.completedAt = now;
     } else if (args.status === "presentation_requested") {
-      updates.presentationRequestedAt = Date.now();
+      updates.presentationRequestedAt = now;
     } else if (args.status === "presented") {
-      updates.presentedAt = Date.now();
+      updates.presentedAt = now;
+    } else if (args.status === "review_submitted") {
+      updates.reviewSubmittedAt = now;
+    } else if (args.status === "review_approved") {
+      updates.reviewApprovedAt = now;
     }
 
     await ctx.db.patch(args.studentBookId, updates);
-    const readingDomainId = await getReadingDomainId(ctx);
 
-    if (
-      args.status === "presentation_requested" &&
-      studentBook.status !== "presentation_requested"
-    ) {
+    if (args.status === "presentation_requested" && studentBook.status !== "presentation_requested") {
+      const readingDomainId = await getReadingDomainId(ctx);
       await awardXpIfNotExists(ctx, {
         userId: studentBook.userId,
         sourceType: "reading_milestone",
@@ -174,7 +234,15 @@ export const updateStatus = mutation({
       });
     }
 
+    if (args.status === "review_approved" && !isDoneStatus(studentBook.status)) {
+      await awardReviewDoneXp(ctx, {
+        ...studentBook,
+        _id: args.studentBookId,
+      });
+    }
+
     if (args.status === "presented" && studentBook.status !== "presented") {
+      const readingDomainId = await getReadingDomainId(ctx);
       await awardXpIfNotExists(ctx, {
         userId: studentBook.userId,
         sourceType: "reading_milestone",
@@ -189,9 +257,9 @@ export const updateStatus = mutation({
       });
     }
   },
-});;
+});
 
-// Add rating and review
+// Legacy review writer (kept for compatibility)
 export const addReview = mutation({
   args: {
     studentBookId: v.id("studentBooks"),
@@ -199,10 +267,145 @@ export const addReview = mutation({
     review: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
+    ensureValidRating(args.rating);
     await ctx.db.patch(args.studentBookId, {
       rating: args.rating,
       review: args.review,
     });
+  },
+});
+
+export const saveReviewDraft = mutation({
+  args: {
+    studentBookId: v.id("studentBooks"),
+    rating: v.optional(v.number()),
+    review: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    const studentBook = await ctx.db.get(args.studentBookId);
+    if (!studentBook) {
+      throw new Error("Student book not found");
+    }
+
+    ensureValidRating(args.rating);
+    const updates: any = {};
+
+    if (args.review !== undefined) {
+      updates.review = args.review.trim();
+    }
+    if (args.rating !== undefined) {
+      updates.rating = args.rating;
+    }
+    if (studentBook.status === "reading") {
+      updates.status = "review_draft";
+    }
+
+    if (Object.keys(updates).length > 0) {
+      await ctx.db.patch(args.studentBookId, updates);
+    }
+  },
+});
+
+export const submitReview = mutation({
+  args: {
+    studentBookId: v.id("studentBooks"),
+    rating: v.optional(v.number()),
+    review: v.string(),
+  },
+  handler: async (ctx, args) => {
+    const studentBook = await ctx.db.get(args.studentBookId);
+    if (!studentBook) {
+      throw new Error("Student book not found");
+    }
+
+    ensureValidRating(args.rating);
+    const normalizedReview = args.review.trim();
+    if (!normalizedReview) {
+      throw new Error("Review text is required");
+    }
+
+    const now = Date.now();
+    const updates: any = {
+      review: normalizedReview,
+      reviewSubmittedAt: now,
+      status: "review_submitted",
+    };
+
+    if (args.rating !== undefined) {
+      updates.rating = args.rating;
+    }
+
+    if (studentBook.status === "review_approved" || studentBook.status === "presented") {
+      updates.status = studentBook.status;
+    }
+
+    await ctx.db.patch(args.studentBookId, updates);
+  },
+});
+
+export const approveReview = mutation({
+  args: {
+    studentBookId: v.id("studentBooks"),
+    approvedBy: v.optional(v.id("users")),
+  },
+  handler: async (ctx, args) => {
+    const studentBook = await ctx.db.get(args.studentBookId);
+    if (!studentBook) {
+      throw new Error("Student book not found");
+    }
+    if (!hasReviewText(studentBook.review)) {
+      throw new Error("Cannot approve an empty review");
+    }
+
+    const now = Date.now();
+    const updates: any = {
+      status: "review_approved",
+      reviewApprovedAt: now,
+    };
+
+    if (args.approvedBy !== undefined) {
+      updates.reviewApprovedBy = args.approvedBy;
+    }
+
+    await ctx.db.patch(args.studentBookId, updates);
+
+    if (!isDoneStatus(studentBook.status)) {
+      await awardReviewDoneXp(ctx, {
+        ...studentBook,
+        _id: args.studentBookId,
+      });
+    }
+  },
+});
+
+export const requestReviewChanges = mutation({
+  args: {
+    studentBookId: v.id("studentBooks"),
+    feedback: v.string(),
+    feedbackBy: v.optional(v.id("users")),
+  },
+  handler: async (ctx, args) => {
+    const studentBook = await ctx.db.get(args.studentBookId);
+    if (!studentBook) {
+      throw new Error("Student book not found");
+    }
+
+    const normalizedFeedback = args.feedback.trim();
+    if (!normalizedFeedback) {
+      throw new Error("Feedback is required");
+    }
+
+    const updates: any = {
+      status: "review_changes_requested",
+      coachFeedback: normalizedFeedback,
+      coachFeedbackAt: Date.now(),
+    };
+
+    if (args.feedbackBy !== undefined) {
+      updates.coachFeedbackBy = args.feedbackBy;
+    }
+
+    await ctx.db.patch(args.studentBookId, updates);
   },
 });
 
@@ -243,9 +446,8 @@ export const update = mutation({
   },
   handler: async (ctx, args) => {
     const { bookId, ...updates } = args;
-    // Filter out undefined values
     const filteredUpdates = Object.fromEntries(
-      Object.entries(updates).filter(([, v]) => v !== undefined)
+      Object.entries(updates).filter(([, value]) => value !== undefined)
     );
     await ctx.db.patch(bookId, filteredUpdates);
     return bookId;
@@ -256,17 +458,15 @@ export const update = mutation({
 export const remove = mutation({
   args: { bookId: v.id("books") },
   handler: async (ctx, args) => {
-    // First, delete any student book associations
     const studentBooks = await ctx.db
       .query("studentBooks")
       .filter((q) => q.eq(q.field("bookId"), args.bookId))
       .collect();
 
-    for (const sb of studentBooks) {
-      await ctx.db.delete(sb._id);
+    for (const studentBook of studentBooks) {
+      await ctx.db.delete(studentBook._id);
     }
 
-    // Then delete the book itself
     await ctx.db.delete(args.bookId);
     return { success: true };
   },
@@ -290,52 +490,88 @@ export const getReadingStats = query({
       .filter((q) => q.eq(q.field("userId"), args.userId))
       .collect();
 
-    const reading = studentBooks.filter((sb) => sb.status === "reading").length;
-    // Count both "completed" (legacy) and "presentation_requested" as pending
-    const pendingPresentation = studentBooks.filter((sb) => 
-      sb.status === "presentation_requested" || sb.status === "completed"
+    const reading = studentBooks.filter((studentBook) =>
+      studentBook.status === "reading" ||
+      studentBook.status === "review_draft" ||
+      studentBook.status === "review_changes_requested"
     ).length;
-    const presented = studentBooks.filter((sb) => sb.status === "presented").length;
+
+    const pendingReview = studentBooks.filter((studentBook) =>
+      studentBook.status === "review_submitted" ||
+      studentBook.status === "presentation_requested" ||
+      studentBook.status === "completed"
+    ).length;
+
+    const approved = studentBooks.filter((studentBook) =>
+      studentBook.status === "review_approved" || studentBook.status === "presented"
+    ).length;
 
     return {
       total: studentBooks.length,
       reading,
-      pendingPresentation,
-      presented,
+      pendingReview,
+      approved,
+      pendingPresentation: pendingReview,
+      presented: approved,
     };
   },
-});;
+});
 
-
-// Get all pending presentation requests (for coach approval queue)
-export const getPresentationRequests = query({
+// Get all pending review submissions for coach approval queue
+export const getReviewSubmissions = query({
   args: {},
   handler: async (ctx) => {
-    // Get all books pending presentation (both new and legacy statuses)
-    const allBooks = await ctx.db
-      .query("studentBooks")
-      .collect();
-    
-    const requests = allBooks.filter(
-      (sb) => sb.status === "presentation_requested" || sb.status === "completed"
-    );
+    const studentBooks = await ctx.db.query("studentBooks").collect();
+    const submissions = studentBooks
+      .filter((studentBook) =>
+        studentBook.status === "review_submitted" ||
+        studentBook.status === "presentation_requested" ||
+        studentBook.status === "completed"
+      )
+      .sort((a, b) => getDoneTimestamp(b) - getDoneTimestamp(a));
 
-    // Fetch full details for each request
     return await Promise.all(
-      requests.map(async (req) => {
-        const user = await ctx.db.get(req.userId);
-        const book = await ctx.db.get(req.bookId);
+      submissions.map(async (submission) => {
+        const user = await ctx.db.get(submission.userId);
+        const book = await ctx.db.get(submission.bookId);
         return {
-          ...req,
+          ...submission,
           user,
           book,
         };
       })
     );
   },
-});;
+});
 
-// Approve or reject a presentation request
+// Backward-compatible alias
+export const getPresentationRequests = query({
+  args: {},
+  handler: async (ctx) => {
+    const studentBooks = await ctx.db.query("studentBooks").collect();
+    const submissions = studentBooks
+      .filter((studentBook) =>
+        studentBook.status === "review_submitted" ||
+        studentBook.status === "presentation_requested" ||
+        studentBook.status === "completed"
+      )
+      .sort((a, b) => getDoneTimestamp(b) - getDoneTimestamp(a));
+
+    return await Promise.all(
+      submissions.map(async (submission) => {
+        const user = await ctx.db.get(submission.userId);
+        const book = await ctx.db.get(submission.bookId);
+        return {
+          ...submission,
+          user,
+          book,
+        };
+      })
+    );
+  },
+});
+
+// Backward-compatible alias
 export const approvePresentationRequest = mutation({
   args: {
     studentBookId: v.id("studentBooks"),
@@ -348,33 +584,92 @@ export const approvePresentationRequest = mutation({
     }
 
     if (args.approved) {
-      const readingDomainId = await getReadingDomainId(ctx);
+      const now = Date.now();
       await ctx.db.patch(args.studentBookId, {
-        status: "presented",
-        presentedAt: Date.now(),
+        status: "review_approved",
+        reviewApprovedAt: now,
       });
-
-      if (studentBook.status !== "presented") {
-        await awardXpIfNotExists(ctx, {
-          userId: studentBook.userId,
-          sourceType: "reading_milestone",
-          sourceKey: `reading_milestone:${args.studentBookId}:presented`,
-          xp: CHARACTER_XP.readingPresented,
-          domainId: readingDomainId,
-          meta: {
-            studentBookId: args.studentBookId,
-            bookId: studentBook.bookId,
-            status: "presented",
-            approvedViaQueue: true,
-          },
+      if (!isDoneStatus(studentBook.status)) {
+        await awardReviewDoneXp(ctx, {
+          ...studentBook,
+          _id: args.studentBookId,
         });
       }
     } else {
-      // Rejected - back to reading status
       await ctx.db.patch(args.studentBookId, {
-        status: "reading",
-        presentationRequestedAt: undefined,
+        status: "review_changes_requested",
+        coachFeedback: "Please update your review and submit again.",
+        coachFeedbackAt: Date.now(),
       });
     }
+  },
+});
+
+export const getApprovedReviews = query({
+  args: {},
+  handler: async (ctx) => {
+    const studentBooks = await ctx.db.query("studentBooks").collect();
+    const approvedReviews = studentBooks
+      .filter((studentBook) =>
+        isDoneStatus(studentBook.status) && hasReviewText(studentBook.review)
+      )
+      .sort((a, b) => getDoneTimestamp(b) - getDoneTimestamp(a));
+
+    return await Promise.all(
+      approvedReviews.map(async (review) => {
+        const user = await ctx.db.get(review.userId);
+        const book = await ctx.db.get(review.bookId);
+        return {
+          ...review,
+          user,
+          book,
+        };
+      })
+    );
+  },
+});
+
+export const getReviewComments = query({
+  args: { studentBookId: v.id("studentBooks") },
+  handler: async (ctx, args) => {
+    await ensureCommentableReview(ctx, args.studentBookId);
+
+    const comments = await ctx.db
+      .query("bookReviewComments")
+      .withIndex("by_review_created", (q) => q.eq("studentBookId", args.studentBookId))
+      .collect();
+
+    return await Promise.all(
+      comments.map(async (comment) => {
+        const user = await ctx.db.get(comment.userId);
+        return {
+          ...comment,
+          user,
+        };
+      })
+    );
+  },
+});
+
+export const addReviewComment = mutation({
+  args: {
+    studentBookId: v.id("studentBooks"),
+    userId: v.id("users"),
+    message: v.string(),
+  },
+  handler: async (ctx, args) => {
+    await ensureCommentableReview(ctx, args.studentBookId);
+
+    const message = args.message.trim();
+    if (!message) {
+      throw new Error("Comment cannot be empty");
+    }
+
+    return await ctx.db.insert("bookReviewComments", {
+      studentBookId: args.studentBookId,
+      userId: args.userId,
+      message,
+      createdAt: Date.now(),
+    });
   },
 });

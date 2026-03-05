@@ -77,7 +77,7 @@ export function AdminDashboard() {
   const students = useQuery(api.users.getAll);
   const activeSprint = useQuery(api.sprints.getActive);
   const vivaRequests = useQuery(api.objectives.getVivaRequests);
-  const presentationRequests = useQuery(api.books.getPresentationRequests);
+  const reviewSubmissions = useQuery(api.books.getReviewSubmissions);
   const todayCheckIns = useQuery(api.users.getTodayCheckInCount);
   const todayCheckInsDetails = useQuery(api.emotions.getTodayCheckIns);
   const objectives = useQuery(api.objectives.getAll);
@@ -98,7 +98,7 @@ export function AdminDashboard() {
 
   // Mutations
   const updateStatus = useMutation(api.objectives.updateStatus);
-  const approvePresentationRequest = useMutation(api.books.approvePresentationRequest);
+  const approveReview = useMutation(api.books.approveReview);
 
   const handleApproveViva = async (studentMajorObjectiveId: string, studentName: string): Promise<void> => {
     try {
@@ -113,16 +113,16 @@ export function AdminDashboard() {
     }
   };
 
-  const handleApprovePresentation = async (studentBookId: string, studentName: string): Promise<void> => {
+  const handleApproveReview = async (studentBookId: string, studentName: string): Promise<void> => {
     try {
-      await approvePresentationRequest({
+      await approveReview({
         studentBookId: studentBookId as any,
-        approved: true,
+        approvedBy: user?._id as any,
       });
-      toast.success(`Presentation approved for ${studentName}`);
+      toast.success(`Review approved for ${studentName}`);
     } catch (err) {
-      console.error("Failed to approve presentation:", err);
-      toast.error("Failed to approve presentation. Please try again.");
+      console.error("Failed to approve review:", err);
+      toast.error("Failed to approve review. Please try again.");
     }
   };
 
@@ -136,7 +136,7 @@ export function AdminDashboard() {
     students === undefined ||
     activeSprint === undefined ||
     vivaRequests === undefined ||
-    presentationRequests === undefined ||
+    reviewSubmissions === undefined ||
     todayCheckIns === undefined;
 
   // Delayed skeleton - only show if loading takes >200ms to avoid flash
@@ -612,21 +612,21 @@ export function AdminDashboard() {
           </CardContent>
         </Card>
 
-        {/* Presentation Queue */}
+        {/* Review Queue */}
         <Card>
           <CardHeader>
             <div className="flex items-center justify-between">
-              <CardTitle>Presentations</CardTitle>
-              <Badge variant={presentationRequests?.length ? "destructive" : "secondary"}>
-                {presentationRequests?.length || 0} pending
+              <CardTitle>Reviews</CardTitle>
+              <Badge variant={reviewSubmissions?.length ? "destructive" : "secondary"}>
+                {reviewSubmissions?.length || 0} pending
               </Badge>
             </div>
-            <CardDescription>Book presentations awaiting approval</CardDescription>
+            <CardDescription>Book reviews awaiting approval</CardDescription>
           </CardHeader>
           <CardContent>
-            {presentationRequests && presentationRequests.length > 0 ? (
+            {reviewSubmissions && reviewSubmissions.length > 0 ? (
               <div className="space-y-3">
-                {presentationRequests.slice(0, 3).map((request: any) => (
+                {reviewSubmissions.slice(0, 3).map((request: any) => (
                   <div
                     key={request._id}
                     className="p-3 rounded-lg border bg-card hover:bg-accent/50 transition-colors"
@@ -649,26 +649,26 @@ export function AdminDashboard() {
                         <TooltipTrigger asChild>
                           <Button
                             size="sm"
-                            onDoubleClick={() => handleApprovePresentation(request._id, request.user?.displayName || "Student")}
+                            onDoubleClick={() => handleApproveReview(request._id, request.user?.displayName || "Student")}
                             onClick={(e) => e.stopPropagation()}
                           >
                             <CheckCircle className="h-4 w-4" />
                           </Button>
                         </TooltipTrigger>
                         <TooltipContent>
-                          <p>Double-click to approve presentation</p>
+                          <p>Double-click to approve review</p>
                         </TooltipContent>
                       </Tooltip>
                     </div>
                   </div>
                 ))}
-                {presentationRequests.length > 3 && (
+                {reviewSubmissions.length > 3 && (
                   <Button
                     variant="outline"
                     className="w-full"
-                    onClick={() => navigate("/admin/presentations")}
+                    onClick={() => navigate("/admin/reviews")}
                   >
-                    View All ({presentationRequests.length})
+                    View All ({reviewSubmissions.length})
                     <ChevronRight className="ml-1 h-4 w-4" />
                   </Button>
                 )}
@@ -676,7 +676,7 @@ export function AdminDashboard() {
             ) : (
               <div className="text-center py-8">
                 <BookOpen className="h-12 w-12 text-muted-foreground mx-auto mb-3" />
-                <p className="text-muted-foreground">No pending presentations.</p>
+                <p className="text-muted-foreground">No pending reviews.</p>
                 <p className="text-sm text-muted-foreground">All caught up!</p>
               </div>
             )}

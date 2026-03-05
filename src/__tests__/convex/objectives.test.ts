@@ -9,6 +9,105 @@ import { describe, it, expect, beforeEach, vi } from "vitest";
 import { createMockCtx, createMockId, resetMockIdCounter } from "./mockDb";
 import type { Id } from "../../../convex/_generated/dataModel";
 
+type MockCtx = ReturnType<typeof createMockCtx>;
+
+const seedUser = (
+  mockCtx: MockCtx,
+  userId: Id<"users">,
+  {
+    username,
+    role,
+    displayName,
+  }: { username: string; role: "admin" | "student"; displayName: string }
+) => {
+  mockCtx.db._seed(userId, {
+    username,
+    role,
+    displayName,
+    createdAt: Date.now(),
+  });
+};
+
+const seedDomain = (
+  mockCtx: MockCtx,
+  domainId: Id<"domains">,
+  {
+    name,
+    icon = "calc",
+    color = "#000",
+    description = name,
+    order = 1,
+  }: {
+    name: string;
+    icon?: string;
+    color?: string;
+    description?: string;
+    order?: number;
+  }
+) => {
+  mockCtx.db._seed(domainId, {
+    name,
+    icon,
+    color,
+    description,
+    order,
+  });
+};
+
+const seedMajorObjective = (
+  mockCtx: MockCtx,
+  majorId: Id<"majorObjectives">,
+  {
+    domainId,
+    createdBy,
+    title,
+    description,
+  }: {
+    domainId: Id<"domains">;
+    createdBy: Id<"users">;
+    title: string;
+    description: string;
+  }
+) => {
+  mockCtx.db._seed(majorId, {
+    domainId,
+    title,
+    description,
+    createdBy,
+    createdAt: Date.now(),
+  });
+};
+
+const seedSubObjective = (
+  mockCtx: MockCtx,
+  subId: Id<"learningObjectives">,
+  {
+    domainId,
+    majorObjectiveId,
+    createdBy,
+    title,
+    description,
+    difficulty = "beginner",
+  }: {
+    domainId: Id<"domains">;
+    majorObjectiveId: Id<"majorObjectives">;
+    createdBy: Id<"users">;
+    title: string;
+    description: string;
+    difficulty?: "beginner" | "intermediate" | "advanced";
+  }
+) => {
+  mockCtx.db._seed(subId, {
+    domainId,
+    majorObjectiveId,
+    title,
+    description,
+    difficulty,
+    createdBy,
+    createdAt: Date.now(),
+  });
+};
+
 describe("Objectives - Major CRUD", () => {
   let mockCtx: ReturnType<typeof createMockCtx>;
   let mockAdminId: Id<"users">;
@@ -22,14 +121,13 @@ describe("Objectives - Major CRUD", () => {
     mockAdminId = createMockId("users");
     mockDomainId = createMockId("domains");
 
-    mockCtx.db._seed(mockAdminId, {
+    seedUser(mockCtx, mockAdminId, {
       username: "admin",
       role: "admin",
       displayName: "Admin User",
-      createdAt: Date.now(),
     });
 
-    mockCtx.db._seed(mockDomainId, {
+    seedDomain(mockCtx, mockDomainId, {
       name: "Mathematics",
       icon: "calculator",
       color: "#4CAF50",
@@ -316,14 +414,13 @@ describe("Objectives - Sub CRUD", () => {
     mockDomainId = createMockId("domains");
     mockMajorId = createMockId("majorObjectives");
 
-    mockCtx.db._seed(mockAdminId, {
+    seedUser(mockCtx, mockAdminId, {
       username: "admin",
       role: "admin",
       displayName: "Admin User",
-      createdAt: Date.now(),
     });
 
-    mockCtx.db._seed(mockDomainId, {
+    seedDomain(mockCtx, mockDomainId, {
       name: "Mathematics",
       icon: "calculator",
       color: "#4CAF50",
@@ -331,12 +428,11 @@ describe("Objectives - Sub CRUD", () => {
       order: 1,
     });
 
-    mockCtx.db._seed(mockMajorId, {
+    seedMajorObjective(mockCtx, mockMajorId, {
       domainId: mockDomainId,
       title: "Algebra",
       description: "Algebra fundamentals",
       createdBy: mockAdminId,
-      createdAt: Date.now(),
     });
   });
 
@@ -508,21 +604,19 @@ describe("Objectives - assignToStudent", () => {
     mockMajorId = createMockId("majorObjectives");
     mockSubId = createMockId("learningObjectives");
 
-    mockCtx.db._seed(mockAdminId, {
+    seedUser(mockCtx, mockAdminId, {
       username: "admin",
       role: "admin",
       displayName: "Admin",
-      createdAt: Date.now(),
     });
 
-    mockCtx.db._seed(mockStudentId, {
+    seedUser(mockCtx, mockStudentId, {
       username: "student",
       role: "student",
       displayName: "Student",
-      createdAt: Date.now(),
     });
 
-    mockCtx.db._seed(mockDomainId, {
+    seedDomain(mockCtx, mockDomainId, {
       name: "Math",
       icon: "calc",
       color: "#000",
@@ -530,22 +624,19 @@ describe("Objectives - assignToStudent", () => {
       order: 1,
     });
 
-    mockCtx.db._seed(mockMajorId, {
+    seedMajorObjective(mockCtx, mockMajorId, {
       domainId: mockDomainId,
       title: "Major",
       description: "Major obj",
       createdBy: mockAdminId,
-      createdAt: Date.now(),
     });
 
-    mockCtx.db._seed(mockSubId, {
+    seedSubObjective(mockCtx, mockSubId, {
       domainId: mockDomainId,
       majorObjectiveId: mockMajorId,
       title: "Sub",
       description: "Sub obj",
-      difficulty: "beginner",
       createdBy: mockAdminId,
-      createdAt: Date.now(),
     });
   });
 
@@ -675,35 +766,31 @@ describe("Objectives - assignToMultipleStudents", () => {
     mockMajorId = createMockId("majorObjectives");
     mockSubId = createMockId("learningObjectives");
 
-    mockCtx.db._seed(mockAdminId, {
+    seedUser(mockCtx, mockAdminId, {
       username: "admin",
       role: "admin",
       displayName: "Admin",
-      createdAt: Date.now(),
     });
 
-    mockCtx.db._seed(mockStudent1Id, {
+    seedUser(mockCtx, mockStudent1Id, {
       username: "student1",
       role: "student",
       displayName: "Student 1",
-      createdAt: Date.now(),
     });
 
-    mockCtx.db._seed(mockStudent2Id, {
+    seedUser(mockCtx, mockStudent2Id, {
       username: "student2",
       role: "student",
       displayName: "Student 2",
-      createdAt: Date.now(),
     });
 
-    mockCtx.db._seed(mockStudent3Id, {
+    seedUser(mockCtx, mockStudent3Id, {
       username: "student3",
       role: "student",
       displayName: "Student 3",
-      createdAt: Date.now(),
     });
 
-    mockCtx.db._seed(mockDomainId, {
+    seedDomain(mockCtx, mockDomainId, {
       name: "Math",
       icon: "calc",
       color: "#000",
@@ -711,22 +798,19 @@ describe("Objectives - assignToMultipleStudents", () => {
       order: 1,
     });
 
-    mockCtx.db._seed(mockMajorId, {
+    seedMajorObjective(mockCtx, mockMajorId, {
       domainId: mockDomainId,
       title: "Major",
       description: "Major obj",
       createdBy: mockAdminId,
-      createdAt: Date.now(),
     });
 
-    mockCtx.db._seed(mockSubId, {
+    seedSubObjective(mockCtx, mockSubId, {
       domainId: mockDomainId,
       majorObjectiveId: mockMajorId,
       title: "Sub",
       description: "Sub obj",
-      difficulty: "beginner",
       createdBy: mockAdminId,
-      createdAt: Date.now(),
     });
   });
 
@@ -887,21 +971,19 @@ describe("Objectives - unassignFromStudent", () => {
     mockSub1Id = createMockId("learningObjectives");
     mockSub2Id = createMockId("learningObjectives");
 
-    mockCtx.db._seed(mockAdminId, {
+    seedUser(mockCtx, mockAdminId, {
       username: "admin",
       role: "admin",
       displayName: "Admin",
-      createdAt: Date.now(),
     });
 
-    mockCtx.db._seed(mockStudentId, {
+    seedUser(mockCtx, mockStudentId, {
       username: "student",
       role: "student",
       displayName: "Student",
-      createdAt: Date.now(),
     });
 
-    mockCtx.db._seed(mockDomainId, {
+    seedDomain(mockCtx, mockDomainId, {
       name: "Math",
       icon: "calc",
       color: "#000",
@@ -909,32 +991,27 @@ describe("Objectives - unassignFromStudent", () => {
       order: 1,
     });
 
-    mockCtx.db._seed(mockMajorId, {
+    seedMajorObjective(mockCtx, mockMajorId, {
       domainId: mockDomainId,
       title: "Major",
       description: "Major obj",
       createdBy: mockAdminId,
-      createdAt: Date.now(),
     });
 
-    mockCtx.db._seed(mockSub1Id, {
+    seedSubObjective(mockCtx, mockSub1Id, {
       domainId: mockDomainId,
       majorObjectiveId: mockMajorId,
       title: "Sub 1",
       description: "First sub",
-      difficulty: "beginner",
       createdBy: mockAdminId,
-      createdAt: Date.now(),
     });
 
-    mockCtx.db._seed(mockSub2Id, {
+    seedSubObjective(mockCtx, mockSub2Id, {
       domainId: mockDomainId,
       majorObjectiveId: mockMajorId,
       title: "Sub 2",
       description: "Second sub",
-      difficulty: "beginner",
       createdBy: mockAdminId,
-      createdAt: Date.now(),
     });
   });
 
@@ -1094,21 +1171,19 @@ describe("Objectives - Viva Workflow", () => {
     const mockMajorId = createMockId("majorObjectives");
     mockMajorAssignmentId = createMockId("studentMajorObjectives");
 
-    mockCtx.db._seed(mockAdminId, {
+    seedUser(mockCtx, mockAdminId, {
       username: "admin",
       role: "admin",
       displayName: "Admin",
-      createdAt: Date.now(),
     });
 
-    mockCtx.db._seed(mockStudentId, {
+    seedUser(mockCtx, mockStudentId, {
       username: "student",
       role: "student",
       displayName: "Student",
-      createdAt: Date.now(),
     });
 
-    mockCtx.db._seed(mockDomainId, {
+    seedDomain(mockCtx, mockDomainId, {
       name: "Math",
       icon: "calc",
       color: "#000",
@@ -1116,12 +1191,11 @@ describe("Objectives - Viva Workflow", () => {
       order: 1,
     });
 
-    mockCtx.db._seed(mockMajorId, {
+    seedMajorObjective(mockCtx, mockMajorId, {
       domainId: mockDomainId,
       title: "Major",
       description: "Major obj",
       createdBy: mockAdminId,
-      createdAt: Date.now(),
     });
 
     mockCtx.db._seed(mockMajorAssignmentId, {
@@ -1197,11 +1271,10 @@ describe("Objectives - getVivaRequests", () => {
     mockCtx = createMockCtx();
 
     mockAdminId = createMockId("users");
-    mockCtx.db._seed(mockAdminId, {
+    seedUser(mockCtx, mockAdminId, {
       username: "admin",
       role: "admin",
       displayName: "Admin",
-      createdAt: Date.now(),
     });
   });
 
@@ -1331,21 +1404,19 @@ describe("Objectives - getAssignedByDomain", () => {
     mockDomainId = createMockId("domains");
     mockMajorId = createMockId("majorObjectives");
 
-    mockCtx.db._seed(mockAdminId, {
+    seedUser(mockCtx, mockAdminId, {
       username: "admin",
       role: "admin",
       displayName: "Admin",
-      createdAt: Date.now(),
     });
 
-    mockCtx.db._seed(mockStudentId, {
+    seedUser(mockCtx, mockStudentId, {
       username: "student",
       role: "student",
       displayName: "Student",
-      createdAt: Date.now(),
     });
 
-    mockCtx.db._seed(mockDomainId, {
+    seedDomain(mockCtx, mockDomainId, {
       name: "Math",
       icon: "calc",
       color: "#000",
@@ -1353,12 +1424,11 @@ describe("Objectives - getAssignedByDomain", () => {
       order: 1,
     });
 
-    mockCtx.db._seed(mockMajorId, {
+    seedMajorObjective(mockCtx, mockMajorId, {
       domainId: mockDomainId,
       title: "Algebra",
       description: "Algebra fundamentals",
       createdBy: mockAdminId,
-      createdAt: Date.now(),
     });
   });
 
@@ -1576,18 +1646,16 @@ describe("Objectives - getTreeData", () => {
     mockAdminId = createMockId("users");
     mockStudentId = createMockId("users");
 
-    mockCtx.db._seed(mockAdminId, {
+    seedUser(mockCtx, mockAdminId, {
       username: "admin",
       role: "admin",
       displayName: "Admin",
-      createdAt: Date.now(),
     });
 
-    mockCtx.db._seed(mockStudentId, {
+    seedUser(mockCtx, mockStudentId, {
       username: "student",
       role: "student",
       displayName: "Student",
-      createdAt: Date.now(),
     });
   });
 

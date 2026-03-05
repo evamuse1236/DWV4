@@ -356,13 +356,39 @@ describe("ObjectivesPage", () => {
     });
   };
 
+  const renderPage = () => render(<ObjectivesPage />);
+
+  const expandMajorObjective = async (
+    user: ReturnType<typeof userEvent.setup>,
+    majorTitle = "Fractions Fundamentals"
+  ) => {
+    await user.click(screen.getByText(majorTitle));
+  };
+
+  const expandFirstSubObjective = async (
+    user: ReturnType<typeof userEvent.setup>
+  ) => {
+    await expandMajorObjective(user);
+    const subObjective = screen.getByText("Add fractions with like denominators");
+    await user.click(subObjective);
+    return subObjective;
+  };
+
+  const openSubObjectiveAssignmentDialog = async (
+    user: ReturnType<typeof userEvent.setup>
+  ) => {
+    await expandMajorObjective(user);
+    const [, subAssignmentButton] = screen.getAllByText("Assign");
+    await user.click(subAssignmentButton);
+  };
+
   describe("Initial rendering", () => {
     beforeEach(() => {
       setupDefaultQueries();
     });
 
     it("renders the page title and description", () => {
-      render(<ObjectivesPage />);
+      renderPage();
 
       expect(screen.getByText("Learning Objectives")).toBeInTheDocument();
       expect(
@@ -371,13 +397,13 @@ describe("ObjectivesPage", () => {
     });
 
     it("renders the Add Major Objective button", () => {
-      render(<ObjectivesPage />);
+      renderPage();
 
       expect(screen.getByText("Add Major Objective")).toBeInTheDocument();
     });
 
     it("displays domain tabs", () => {
-      render(<ObjectivesPage />);
+      renderPage();
 
       expect(screen.getByRole("tablist")).toBeInTheDocument();
       // Use getAllByRole to find tabs specifically, since domain names also appear in card headers
@@ -389,7 +415,7 @@ describe("ObjectivesPage", () => {
     });
 
     it("displays major objectives for the selected domain", () => {
-      render(<ObjectivesPage />);
+      renderPage();
 
       expect(screen.getByText("Fractions Fundamentals")).toBeInTheDocument();
       expect(screen.getByText("Algebra Basics")).toBeInTheDocument();
@@ -397,7 +423,7 @@ describe("ObjectivesPage", () => {
 
     it("displays sub-objectives under major objectives", async () => {
       const user = userEvent.setup();
-      render(<ObjectivesPage />);
+      renderPage();
 
       // Expand the first major to reveal sub-objectives
       await user.click(screen.getByText("Fractions Fundamentals"));
@@ -407,7 +433,7 @@ describe("ObjectivesPage", () => {
     });
 
     it("displays difficulty badges", () => {
-      render(<ObjectivesPage />);
+      renderPage();
 
       // Multiple "beginner" badges for major and sub objectives
       const beginnerBadges = screen.getAllByText("beginner");
@@ -418,7 +444,7 @@ describe("ObjectivesPage", () => {
     });
 
     it("shows sub-objective count badge for majors", () => {
-      render(<ObjectivesPage />);
+      renderPage();
 
       expect(screen.getByText("2 sub-objectives")).toBeInTheDocument();
       expect(screen.getByText("0 sub-objectives")).toBeInTheDocument();
@@ -829,14 +855,8 @@ describe("ObjectivesPage", () => {
 
     it("expands sub-objective to show activities when clicked", async () => {
       const user = userEvent.setup();
-      render(<ObjectivesPage />);
-
-      // Expand major to reveal sub-objectives
-      await user.click(screen.getByText("Fractions Fundamentals"));
-
-      // Click on a sub-objective to expand it
-      const subObjective = screen.getByText("Add fractions with like denominators");
-      await user.click(subObjective);
+      renderPage();
+      await expandFirstSubObjective(user);
 
       // Should show activities section
       expect(screen.getByText(/activities \(2\)/i)).toBeInTheDocument();
@@ -846,23 +866,16 @@ describe("ObjectivesPage", () => {
 
     it("shows Add Activity button when sub-objective is expanded", async () => {
       const user = userEvent.setup();
-      render(<ObjectivesPage />);
-
-      await user.click(screen.getByText("Fractions Fundamentals"));
-      const subObjective = screen.getByText("Add fractions with like denominators");
-      await user.click(subObjective);
+      renderPage();
+      await expandFirstSubObjective(user);
 
       expect(screen.getByText("Add Activity")).toBeInTheDocument();
     });
 
     it("opens add activity dialog when clicking Add Activity", async () => {
       const user = userEvent.setup();
-      render(<ObjectivesPage />);
-
-      // Expand major, then sub-objective
-      await user.click(screen.getByText("Fractions Fundamentals"));
-      const subObjective = screen.getByText("Add fractions with like denominators");
-      await user.click(subObjective);
+      renderPage();
+      await expandFirstSubObjective(user);
 
       // Click Add Activity
       const addActivityButton = screen.getByText("Add Activity");
@@ -875,11 +888,8 @@ describe("ObjectivesPage", () => {
 
     it("shows activity form fields", async () => {
       const user = userEvent.setup();
-      render(<ObjectivesPage />);
-
-      await user.click(screen.getByText("Fractions Fundamentals"));
-      const subObjective = screen.getByText("Add fractions with like denominators");
-      await user.click(subObjective);
+      renderPage();
+      await expandFirstSubObjective(user);
 
       const addActivityButton = screen.getByText("Add Activity");
       await user.click(addActivityButton);
@@ -893,12 +903,8 @@ describe("ObjectivesPage", () => {
 
     it("calls create activity mutation with correct args", async () => {
       const user = userEvent.setup();
-      render(<ObjectivesPage />);
-
-      // Expand major, then sub-objective
-      await user.click(screen.getByText("Fractions Fundamentals"));
-      const subObjective = screen.getByText("Add fractions with like denominators");
-      await user.click(subObjective);
+      renderPage();
+      await expandFirstSubObjective(user);
 
       // Open add activity dialog
       const addActivityButton = screen.getByText("Add Activity");
@@ -934,11 +940,8 @@ describe("ObjectivesPage", () => {
 
     it("displays activity type icons correctly", async () => {
       const user = userEvent.setup();
-      render(<ObjectivesPage />);
-
-      await user.click(screen.getByText("Fractions Fundamentals"));
-      const subObjective = screen.getByText("Add fractions with like denominators");
-      await user.click(subObjective);
+      renderPage();
+      await expandFirstSubObjective(user);
 
       // Check for activity type labels
       expect(screen.getByText("video")).toBeInTheDocument();
@@ -947,11 +950,8 @@ describe("ObjectivesPage", () => {
 
     it("displays activity platform when available", async () => {
       const user = userEvent.setup();
-      render(<ObjectivesPage />);
-
-      await user.click(screen.getByText("Fractions Fundamentals"));
-      const subObjective = screen.getByText("Add fractions with like denominators");
-      await user.click(subObjective);
+      renderPage();
+      await expandFirstSubObjective(user);
 
       expect(screen.getByText("YouTube")).toBeInTheDocument();
       expect(screen.getByText("Khan Academy")).toBeInTheDocument();
@@ -959,12 +959,8 @@ describe("ObjectivesPage", () => {
 
     it("opens edit activity dialog when clicking edit on activity", async () => {
       const user = userEvent.setup();
-      render(<ObjectivesPage />);
-
-      // Expand major, then sub-objective
-      await user.click(screen.getByText("Fractions Fundamentals"));
-      const subObjective = screen.getByText("Add fractions with like denominators");
-      await user.click(subObjective);
+      renderPage();
+      await expandFirstSubObjective(user);
 
       // Find all edit buttons with icon-edit inside the activity section
       const activitySection = screen.getByText("Watch Fractions Video").closest("div");
@@ -978,12 +974,8 @@ describe("ObjectivesPage", () => {
 
     it("calls update activity mutation with correct args", async () => {
       const user = userEvent.setup();
-      render(<ObjectivesPage />);
-
-      // Expand major, then sub-objective
-      await user.click(screen.getByText("Fractions Fundamentals"));
-      const subObjective = screen.getByText("Add fractions with like denominators");
-      await user.click(subObjective);
+      renderPage();
+      await expandFirstSubObjective(user);
 
       // Find edit button for activity
       const activitySection = screen.getByText("Watch Fractions Video").closest("div");
@@ -1015,12 +1007,8 @@ describe("ObjectivesPage", () => {
       const user = userEvent.setup();
       const confirmSpy = vi.spyOn(window, "confirm").mockReturnValue(true);
 
-      render(<ObjectivesPage />);
-
-      // Expand major, then sub-objective
-      await user.click(screen.getByText("Fractions Fundamentals"));
-      const subObjective = screen.getByText("Add fractions with like denominators");
-      await user.click(subObjective);
+      renderPage();
+      await expandFirstSubObjective(user);
 
       // Find delete button for activity (last button in activity row)
       const activitySection = screen.getByText("Watch Fractions Video").closest("div");
@@ -1054,12 +1042,8 @@ describe("ObjectivesPage", () => {
       });
 
       const user = userEvent.setup();
-      render(<ObjectivesPage />);
-
-      // Expand major, then first sub-objective
-      await user.click(screen.getByText("Fractions Fundamentals"));
-      const subObjective = screen.getByText("Add fractions with like denominators");
-      await user.click(subObjective);
+      renderPage();
+      await expandFirstSubObjective(user);
 
       expect(
         screen.getByText("No activities yet. Add videos, readings, or exercises for students.")
@@ -1068,12 +1052,8 @@ describe("ObjectivesPage", () => {
 
     it("collapses sub-objective when clicked again", async () => {
       const user = userEvent.setup();
-      render(<ObjectivesPage />);
-
-      // Expand major, then sub-objective
-      await user.click(screen.getByText("Fractions Fundamentals"));
-      const subObjective = screen.getByText("Add fractions with like denominators");
-      await user.click(subObjective);
+      renderPage();
+      const subObjective = await expandFirstSubObjective(user);
 
       // When expanded, we should see the Activities heading with count
       expect(screen.getByRole("heading", { level: 4, name: /activities/i })).toBeInTheDocument();
@@ -1093,21 +1073,16 @@ describe("ObjectivesPage", () => {
 
     it("shows Assign button on sub-objectives", async () => {
       const user = userEvent.setup();
-      render(<ObjectivesPage />);
-
-      await user.click(screen.getByText("Fractions Fundamentals"));
+      renderPage();
+      await expandMajorObjective(user);
       const assignButtons = screen.getAllByText("Assign");
       expect(assignButtons.length).toBeGreaterThan(0);
     });
 
     it("opens assign students dialog when clicking Assign", async () => {
       const user = userEvent.setup();
-      render(<ObjectivesPage />);
-
-      await user.click(screen.getByText("Fractions Fundamentals"));
-      const assignButtons = screen.getAllByText("Assign");
-      // Index 0 is chapter-level Assign on the major header; index 1 is the sub-objective Assign
-      await user.click(assignButtons[1]);
+      renderPage();
+      await openSubObjectiveAssignmentDialog(user);
 
       expect(screen.getByText("Assign Students")).toBeInTheDocument();
       expect(
@@ -1117,12 +1092,8 @@ describe("ObjectivesPage", () => {
 
     it("displays already assigned students in dialog", async () => {
       const user = userEvent.setup();
-      render(<ObjectivesPage />);
-
-      await user.click(screen.getByText("Fractions Fundamentals"));
-      const assignButtons = screen.getAllByText("Assign");
-      // Index 0 is chapter-level Assign on the major header; index 1 is the sub-objective Assign
-      await user.click(assignButtons[1]);
+      renderPage();
+      await openSubObjectiveAssignmentDialog(user);
 
       expect(screen.getByText(/already assigned \(1\)/i)).toBeInTheDocument();
       expect(screen.getByText("Alice")).toBeInTheDocument();
@@ -1130,12 +1101,8 @@ describe("ObjectivesPage", () => {
 
     it("displays available students for assignment", async () => {
       const user = userEvent.setup();
-      render(<ObjectivesPage />);
-
-      await user.click(screen.getByText("Fractions Fundamentals"));
-      const assignButtons = screen.getAllByText("Assign");
-      // Index 0 is chapter-level Assign on the major header; index 1 is the sub-objective Assign
-      await user.click(assignButtons[1]);
+      renderPage();
+      await openSubObjectiveAssignmentDialog(user);
 
       expect(screen.getByText(/available students \(2\)/i)).toBeInTheDocument();
       expect(screen.getByText("Bob")).toBeInTheDocument();
@@ -1144,12 +1111,8 @@ describe("ObjectivesPage", () => {
 
     it("allows selecting multiple students", async () => {
       const user = userEvent.setup();
-      render(<ObjectivesPage />);
-
-      await user.click(screen.getByText("Fractions Fundamentals"));
-      const assignButtons = screen.getAllByText("Assign");
-      // Index 0 is chapter-level Assign on the major header; index 1 is the sub-objective Assign
-      await user.click(assignButtons[1]);
+      renderPage();
+      await openSubObjectiveAssignmentDialog(user);
 
       // Click on Bob to select
       const bobCard = screen.getByText("Bob").closest("div[class*='cursor-pointer']");
@@ -1169,12 +1132,8 @@ describe("ObjectivesPage", () => {
 
     it("shows selected count in Assign button", async () => {
       const user = userEvent.setup();
-      render(<ObjectivesPage />);
-
-      await user.click(screen.getByText("Fractions Fundamentals"));
-      const assignButtons = screen.getAllByText("Assign");
-      // Index 0 is chapter-level Assign on the major header; index 1 is the sub-objective Assign
-      await user.click(assignButtons[1]);
+      renderPage();
+      await openSubObjectiveAssignmentDialog(user);
 
       // Select Bob
       const bobCard = screen.getByText("Bob").closest("div[class*='cursor-pointer']");
@@ -1189,12 +1148,8 @@ describe("ObjectivesPage", () => {
 
     it("calls assignToMultipleStudents mutation with selected students", async () => {
       const user = userEvent.setup();
-      render(<ObjectivesPage />);
-
-      await user.click(screen.getByText("Fractions Fundamentals"));
-      const assignButtons = screen.getAllByText("Assign");
-      // Index 0 is chapter-level Assign on the major header; index 1 is the sub-objective Assign
-      await user.click(assignButtons[1]);
+      renderPage();
+      await openSubObjectiveAssignmentDialog(user);
 
       // Select Bob
       const bobCard = screen.getByText("Bob").closest("div[class*='cursor-pointer']");
@@ -1225,12 +1180,8 @@ describe("ObjectivesPage", () => {
 
     it("disables Assign button when no students selected", async () => {
       const user = userEvent.setup();
-      render(<ObjectivesPage />);
-
-      await user.click(screen.getByText("Fractions Fundamentals"));
-      const assignButtons = screen.getAllByText("Assign");
-      // Index 0 is chapter-level Assign on the major header; index 1 is the sub-objective Assign
-      await user.click(assignButtons[1]);
+      renderPage();
+      await openSubObjectiveAssignmentDialog(user);
 
       // The submit Assign button should be disabled
       const submitButtons = screen.getAllByRole("button", { name: /^assign$/i });
@@ -1263,12 +1214,8 @@ describe("ObjectivesPage", () => {
       });
 
       const user = userEvent.setup();
-      render(<ObjectivesPage />);
-
-      await user.click(screen.getByText("Fractions Fundamentals"));
-      const assignButtons = screen.getAllByText("Assign");
-      // Index 0 is chapter-level Assign on the major header; index 1 is the sub-objective Assign
-      await user.click(assignButtons[1]);
+      renderPage();
+      await openSubObjectiveAssignmentDialog(user);
 
       expect(
         screen.getByText("All students are already assigned to this sub objective")
@@ -1277,12 +1224,8 @@ describe("ObjectivesPage", () => {
 
     it("toggles student selection on click", async () => {
       const user = userEvent.setup();
-      render(<ObjectivesPage />);
-
-      await user.click(screen.getByText("Fractions Fundamentals"));
-      const assignButtons = screen.getAllByText("Assign");
-      // Index 0 is chapter-level Assign on the major header; index 1 is the sub-objective Assign
-      await user.click(assignButtons[1]);
+      renderPage();
+      await openSubObjectiveAssignmentDialog(user);
 
       const bobCard = screen.getByText("Bob").closest("div[class*='cursor-pointer']");
       if (bobCard) {
@@ -1298,12 +1241,8 @@ describe("ObjectivesPage", () => {
 
     it("displays student batch information", async () => {
       const user = userEvent.setup();
-      render(<ObjectivesPage />);
-
-      await user.click(screen.getByText("Fractions Fundamentals"));
-      const assignButtons = screen.getAllByText("Assign");
-      // Index 0 is chapter-level Assign on the major header; index 1 is the sub-objective Assign
-      await user.click(assignButtons[1]);
+      renderPage();
+      await openSubObjectiveAssignmentDialog(user);
 
       expect(screen.getByText("Batch A")).toBeInTheDocument();
       expect(screen.getByText("Batch B")).toBeInTheDocument();

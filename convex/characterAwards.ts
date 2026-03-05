@@ -516,12 +516,14 @@ export async function evaluateAndAwardBadges(ctx: any, userId: Id<"users">) {
       .collect()
   ).length;
 
-  const readingPresented = (
-    await ctx.db
-      .query("studentBooks")
-      .withIndex("by_user", (q: any) => q.eq("userId", userId))
-      .filter((q: any) => q.eq(q.field("status"), "presented"))
-      .collect()
+  const readingPresentedRows = await ctx.db
+    .query("studentBooks")
+    .withIndex("by_user", (q: any) => q.eq("userId", userId))
+    .collect();
+
+  const readingPresented = readingPresentedRows.filter(
+    (studentBook: any) =>
+      studentBook.status === "review_approved" || studentBook.status === "presented"
   ).length;
 
   const habitStreak = await getAnyHabitMaxStreak(ctx, userId);

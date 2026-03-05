@@ -224,7 +224,15 @@ export interface Book {
   createdAt: number;
 }
 
-export type BookStatus = "reading" | "completed" | "presented";
+export type BookStatus =
+  | "reading"
+  | "completed"
+  | "review_draft"
+  | "review_submitted"
+  | "review_changes_requested"
+  | "review_approved"
+  | "presentation_requested"
+  | "presented";
 
 export interface StudentBook {
   _id: Id<"studentBooks">;
@@ -233,7 +241,14 @@ export interface StudentBook {
   status: BookStatus;
   startedAt: number;
   completedAt?: number;
+  presentationRequestedAt?: number;
   presentedAt?: number;
+  reviewSubmittedAt?: number;
+  reviewApprovedAt?: number;
+  reviewApprovedBy?: Id<"users">;
+  coachFeedback?: string;
+  coachFeedbackAt?: number;
+  coachFeedbackBy?: Id<"users">;
   rating?: number;
   review?: string;
 }

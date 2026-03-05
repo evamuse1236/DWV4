@@ -357,6 +357,56 @@ function TestApp({ initialRoute = "/login", children }: TestAppProps) {
   );
 }
 
+const getOperationName = (operationName: unknown) =>
+  typeof operationName === "string" ? operationName.split(".").pop() ?? "" : "";
+
+const getQueryResult = (queryName: unknown) => {
+  if (typeof queryName !== "string") return undefined;
+  const name = getOperationName(queryName);
+  return queryResults[name] ?? queryResults[queryName] ?? undefined;
+};
+
+const renderSetupPage = () =>
+  render(
+    <MemoryRouter initialEntries={["/setup"]}>
+      <Routes>
+        <Route path="/setup" element={<SetupPage />} />
+      </Routes>
+    </MemoryRouter>
+  );
+
+const renderDashboardWithGate = () =>
+  render(
+    <MemoryRouter initialEntries={["/dashboard"]}>
+      <Routes>
+        <Route
+          path="/dashboard"
+          element={
+            <CheckInGate>
+              <StudentDashboard />
+            </CheckInGate>
+          }
+        />
+      </Routes>
+    </MemoryRouter>
+  );
+
+const renderSprintWithGate = () =>
+  render(
+    <MemoryRouter initialEntries={["/sprint"]}>
+      <Routes>
+        <Route
+          path="/sprint"
+          element={
+            <CheckInGate>
+              <SprintPage />
+            </CheckInGate>
+          }
+        />
+      </Routes>
+    </MemoryRouter>
+  );
+
 // ============================================================
 // TESTS
 // ============================================================
@@ -387,14 +437,12 @@ describe("Integration Tests: User Journeys", () => {
     (useQuery as any).mockImplementation((queryName: string, args?: any) => {
       // Skip pattern for conditional queries
       if (args === "skip") return undefined;
-      // Return result based on query name (extract last part of path)
-      const name = typeof queryName === "string" ? queryName.split(".").pop() : "";
-      return queryResults[name!] ?? queryResults[queryName] ?? undefined;
+      return getQueryResult(queryName);
     });
 
     // Configure useMutation mock
     (useMutation as any).mockImplementation((mutationName: string) => {
-      const name = typeof mutationName === "string" ? mutationName.split(".").pop() : "";
+      const name = getOperationName(mutationName);
       return mockMutations[name!] ?? vi.fn().mockResolvedValue({});
     });
 
@@ -434,14 +482,7 @@ describe("Integration Tests: User Journeys", () => {
 
     it("SetupPage completes full admin creation flow", async () => {
       const user = userEvent.setup();
-
-      render(
-        <MemoryRouter initialEntries={["/setup"]}>
-          <Routes>
-            <Route path="/setup" element={<SetupPage />} />
-          </Routes>
-        </MemoryRouter>
-      );
+      renderSetupPage();
 
       // Step 1: Should see welcome message
       expect(screen.getByText(/welcome, coach!/i)).toBeInTheDocument();
@@ -496,14 +537,7 @@ describe("Integration Tests: User Journeys", () => {
 
     it("SetupPage handles validation errors correctly", async () => {
       const user = userEvent.setup();
-
-      render(
-        <MemoryRouter initialEntries={["/setup"]}>
-          <Routes>
-            <Route path="/setup" element={<SetupPage />} />
-          </Routes>
-        </MemoryRouter>
-      );
+      renderSetupPage();
 
       // Try to submit without filling form
       const submitButton = screen.getByRole("button", { name: /create my account/i });
@@ -518,14 +552,7 @@ describe("Integration Tests: User Journeys", () => {
 
     it("SetupPage shows password mismatch error", async () => {
       const user = userEvent.setup();
-
-      render(
-        <MemoryRouter initialEntries={["/setup"]}>
-          <Routes>
-            <Route path="/setup" element={<SetupPage />} />
-          </Routes>
-        </MemoryRouter>
-      );
+      renderSetupPage();
 
       const displayNameInput = screen.getByLabelText(/your name/i);
       const usernameInput = screen.getByLabelText(/^username$/i);
@@ -547,14 +574,7 @@ describe("Integration Tests: User Journeys", () => {
     it("SetupPage allows skipping seed step", async () => {
       const user = userEvent.setup();
       mockMutations.initializeAdmin.mockResolvedValue({ success: true });
-
-      render(
-        <MemoryRouter initialEntries={["/setup"]}>
-          <Routes>
-            <Route path="/setup" element={<SetupPage />} />
-          </Routes>
-        </MemoryRouter>
-      );
+      renderSetupPage();
 
       // Complete step 1
       await user.type(screen.getByLabelText(/your name/i), "Coach");
@@ -594,7 +614,7 @@ describe("Integration Tests: User Journeys", () => {
       // Reconfigure useQuery for this test - need to handle the userId argument pattern
       (useQuery as any).mockImplementation((queryName: string, args?: any) => {
         if (args === "skip") return undefined;
-        const name = typeof queryName === "string" ? queryName.split(".").pop() : "";
+        const name = getOperationName(queryName);
 
         // Handle getTodayCheckIn specially - it passes { userId } as args
         if (name === "getTodayCheckIn") {
@@ -602,23 +622,9 @@ describe("Integration Tests: User Journeys", () => {
           return null;
         }
 
-        return queryResults[name!] ?? queryResults[queryName] ?? undefined;
+        return getQueryResult(queryName);
       });
-
-      render(
-        <MemoryRouter initialEntries={["/dashboard"]}>
-          <Routes>
-            <Route
-              path="/dashboard"
-              element={
-                <CheckInGate>
-                  <StudentDashboard />
-                </CheckInGate>
-              }
-            />
-          </Routes>
-        </MemoryRouter>
-      );
+      renderDashboardWithGate();
 
       // Should show CheckInGate UI, not dashboard
       expect(screen.getByText(/the palette of presence/i)).toBeInTheDocument();
@@ -647,20 +653,7 @@ describe("Integration Tests: User Journeys", () => {
       queryResults.getByUserAndSprint = mockGoals;
       queryResults.getCurrentlyReading = null;
 
-      render(
-        <MemoryRouter initialEntries={["/dashboard"]}>
-          <Routes>
-            <Route
-              path="/dashboard"
-              element={
-                <CheckInGate>
-                  <StudentDashboard />
-                </CheckInGate>
-              }
-            />
-          </Routes>
-        </MemoryRouter>
-      );
+      renderDashboardWithGate();
 
       // Should show dashboard, not check-in gate
       expect(screen.queryByText(/the palette of presence/i)).not.toBeInTheDocument();
@@ -679,7 +672,7 @@ describe("Integration Tests: User Journeys", () => {
       // Dynamic query results based on check-in state
       (useQuery as any).mockImplementation((queryName: string, args: any) => {
         if (args === "skip") return undefined;
-        const name = typeof queryName === "string" ? queryName.split(".").pop() : queryName;
+        const name = getOperationName(queryName) || queryName;
 
         if (name === "getCategories") return mockEmotionCategories;
         if (name === "getTodayCheckIn") {
@@ -701,20 +694,7 @@ describe("Integration Tests: User Journeys", () => {
         return {};
       });
 
-      render(
-        <MemoryRouter initialEntries={["/dashboard"]}>
-          <Routes>
-            <Route
-              path="/dashboard"
-              element={
-                <CheckInGate>
-                  <StudentDashboard />
-                </CheckInGate>
-              }
-            />
-          </Routes>
-        </MemoryRouter>
-      );
+      renderDashboardWithGate();
 
       // Should show check-in gate
       expect(screen.getByText(/the palette of presence/i)).toBeInTheDocument();
@@ -768,33 +748,20 @@ describe("Integration Tests: User Journeys", () => {
       // Reconfigure useQuery for this test - need to handle the userId argument pattern
       (useQuery as any).mockImplementation((queryName: string, args?: any) => {
         if (args === "skip") return undefined;
-        const name = typeof queryName === "string" ? queryName.split(".").pop() : "";
+        const name = getOperationName(queryName);
 
         // Handle getTodayCheckIn specially - it passes { userId } as args
         if (name === "getTodayCheckIn") {
           return null;
         }
 
-        return queryResults[name!] ?? queryResults[queryName] ?? undefined;
+        return getQueryResult(queryName);
       });
 
       // Make save fail
       mockMutations.saveCheckIn.mockRejectedValueOnce(new Error("Network error"));
 
-      render(
-        <MemoryRouter initialEntries={["/dashboard"]}>
-          <Routes>
-            <Route
-              path="/dashboard"
-              element={
-                <CheckInGate>
-                  <StudentDashboard />
-                </CheckInGate>
-              }
-            />
-          </Routes>
-        </MemoryRouter>
-      );
+      renderDashboardWithGate();
 
       // Go through check-in flow
       const quadrantCards = document.querySelectorAll(".mood-card");
@@ -844,21 +811,7 @@ describe("Integration Tests: User Journeys", () => {
       queryResults.getByUserAndSprint = mockGoals;
       queryResults.getPreviousSprintGoals = [];
       queryResults.getCompletionsInRange = [];
-
-      render(
-        <MemoryRouter initialEntries={["/sprint"]}>
-          <Routes>
-            <Route
-              path="/sprint"
-              element={
-                <CheckInGate>
-                  <SprintPage />
-                </CheckInGate>
-              }
-            />
-          </Routes>
-        </MemoryRouter>
-      );
+      renderSprintWithGate();
 
       // Should show sprint name
       await waitFor(() => {
@@ -880,21 +833,7 @@ describe("Integration Tests: User Journeys", () => {
       queryResults.getActive = null;
       queryResults.getByUserAndSprint = [];
       queryResults.getPreviousSprintGoals = [];
-
-      render(
-        <MemoryRouter initialEntries={["/sprint"]}>
-          <Routes>
-            <Route
-              path="/sprint"
-              element={
-                <CheckInGate>
-                  <SprintPage />
-                </CheckInGate>
-              }
-            />
-          </Routes>
-        </MemoryRouter>
-      );
+      renderSprintWithGate();
 
       expect(screen.getByText(/no active cycle/i)).toBeInTheDocument();
     });
@@ -903,21 +842,7 @@ describe("Integration Tests: User Journeys", () => {
       queryResults.getActive = mockActiveSprint;
       queryResults.getByUserAndSprint = [];
       queryResults.getPreviousSprintGoals = [];
-
-      render(
-        <MemoryRouter initialEntries={["/sprint"]}>
-          <Routes>
-            <Route
-              path="/sprint"
-              element={
-                <CheckInGate>
-                  <SprintPage />
-                </CheckInGate>
-              }
-            />
-          </Routes>
-        </MemoryRouter>
-      );
+      renderSprintWithGate();
 
       // Single "Set Goal" add-slot is shown when there are no goals
       const setGoalButtons = screen.getAllByText(/set goal/i);
@@ -930,21 +855,7 @@ describe("Integration Tests: User Journeys", () => {
       queryResults.getActive = mockActiveSprint;
       queryResults.getByUserAndSprint = mockGoals; // 1 in_progress goal
       queryResults.getCurrentlyReading = null;
-
-      render(
-        <MemoryRouter initialEntries={["/dashboard"]}>
-          <Routes>
-            <Route
-              path="/dashboard"
-              element={
-                <CheckInGate>
-                  <StudentDashboard />
-                </CheckInGate>
-              }
-            />
-          </Routes>
-        </MemoryRouter>
-      );
+      renderDashboardWithGate();
 
       // Should show "1 Tasks Left" (1 incomplete task for today)
       expect(screen.getByText(/1 tasks left/i)).toBeInTheDocument();
@@ -962,21 +873,7 @@ describe("Integration Tests: User Journeys", () => {
       queryResults.getActive = mockActiveSprint;
       queryResults.getByUserAndSprint = mockGoals;
       queryResults.getCurrentlyReading = null;
-
-      render(
-        <MemoryRouter initialEntries={["/dashboard"]}>
-          <Routes>
-            <Route
-              path="/dashboard"
-              element={
-                <CheckInGate>
-                  <StudentDashboard />
-                </CheckInGate>
-              }
-            />
-          </Routes>
-        </MemoryRouter>
-      );
+      renderDashboardWithGate();
 
       // Total mastered should be 5 + 3 = 8
       expect(screen.getByText("8")).toBeInTheDocument();
@@ -988,21 +885,7 @@ describe("Integration Tests: User Journeys", () => {
       queryResults.getByUserAndSprint = mockGoals;
       queryResults.getPreviousSprintGoals = [];
       queryResults.getCompletionsInRange = [];
-
-      render(
-        <MemoryRouter initialEntries={["/sprint"]}>
-          <Routes>
-            <Route
-              path="/sprint"
-              element={
-                <CheckInGate>
-                  <SprintPage />
-                </CheckInGate>
-              }
-            />
-          </Routes>
-        </MemoryRouter>
-      );
+      renderSprintWithGate();
 
       // Wait for sprint page to render
       await waitFor(() => {
@@ -1012,13 +895,9 @@ describe("Integration Tests: User Journeys", () => {
       });
 
       // All 7 days should be visible
-      expect(screen.getByText("Mon")).toBeInTheDocument();
-      expect(screen.getByText("Tue")).toBeInTheDocument();
-      expect(screen.getByText("Wed")).toBeInTheDocument();
-      expect(screen.getByText("Thu")).toBeInTheDocument();
-      expect(screen.getByText("Fri")).toBeInTheDocument();
-      expect(screen.getByText("Sat")).toBeInTheDocument();
-      expect(screen.getByText("Sun")).toBeInTheDocument();
+      for (const day of ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]) {
+        expect(screen.getByText(day)).toBeInTheDocument();
+      }
     });
 
     it("SprintPage renders habit tracker component", async () => {
@@ -1026,21 +905,7 @@ describe("Integration Tests: User Journeys", () => {
       queryResults.getByUserAndSprint = mockGoals;
       queryResults.getPreviousSprintGoals = [];
       queryResults.getCompletionsInRange = [];
-
-      render(
-        <MemoryRouter initialEntries={["/sprint"]}>
-          <Routes>
-            <Route
-              path="/sprint"
-              element={
-                <CheckInGate>
-                  <SprintPage />
-                </CheckInGate>
-              }
-            />
-          </Routes>
-        </MemoryRouter>
-      );
+      renderSprintWithGate();
 
       // Wait for sprint page to render
       await waitFor(() => {
@@ -1058,21 +923,7 @@ describe("Integration Tests: User Journeys", () => {
       queryResults.getActive = mockActiveSprint;
       queryResults.getByUserAndSprint = mockGoals;
       queryResults.getCurrentlyReading = null;
-
-      render(
-        <MemoryRouter initialEntries={["/dashboard"]}>
-          <Routes>
-            <Route
-              path="/dashboard"
-              element={
-                <CheckInGate>
-                  <StudentDashboard />
-                </CheckInGate>
-              }
-            />
-          </Routes>
-        </MemoryRouter>
-      );
+      renderDashboardWithGate();
 
       // Should show domain names
       expect(screen.getByText("Math")).toBeInTheDocument();
@@ -1089,21 +940,7 @@ describe("Integration Tests: User Journeys", () => {
       queryResults.getActive = mockActiveSprint;
       queryResults.getByUserAndSprint = mockGoals;
       queryResults.getCurrentlyReading = null;
-
-      render(
-        <MemoryRouter initialEntries={["/dashboard"]}>
-          <Routes>
-            <Route
-              path="/dashboard"
-              element={
-                <CheckInGate>
-                  <StudentDashboard />
-                </CheckInGate>
-              }
-            />
-          </Routes>
-        </MemoryRouter>
-      );
+      renderDashboardWithGate();
 
       expect(screen.getByText(/start a book/i)).toBeInTheDocument();
     });
@@ -1120,21 +957,7 @@ describe("Integration Tests: User Journeys", () => {
           author: "J.K. Rowling",
         },
       };
-
-      render(
-        <MemoryRouter initialEntries={["/dashboard"]}>
-          <Routes>
-            <Route
-              path="/dashboard"
-              element={
-                <CheckInGate>
-                  <StudentDashboard />
-                </CheckInGate>
-              }
-            />
-          </Routes>
-        </MemoryRouter>
-      );
+      renderDashboardWithGate();
 
       expect(screen.getByText(/harry potter/i)).toBeInTheDocument();
       expect(screen.getByText(/j\.k\. rowling/i)).toBeInTheDocument();
@@ -1146,21 +969,7 @@ describe("Integration Tests: User Journeys", () => {
       queryResults.getActive = null;
       queryResults.getByUserAndSprint = [];
       queryResults.getCurrentlyReading = null;
-
-      render(
-        <MemoryRouter initialEntries={["/dashboard"]}>
-          <Routes>
-            <Route
-              path="/dashboard"
-              element={
-                <CheckInGate>
-                  <StudentDashboard />
-                </CheckInGate>
-              }
-            />
-          </Routes>
-        </MemoryRouter>
-      );
+      renderDashboardWithGate();
 
       expect(screen.getByText(/no sprint/i)).toBeInTheDocument();
     });

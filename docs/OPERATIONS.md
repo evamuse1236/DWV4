@@ -64,4 +64,5 @@ Generated curriculum reports are written under `docs/curriculum/`.
    - Login and role routing
    - Check-in gating
    - Diagnostic attempt submit flow
+   - Reading modal flow (`Read Book` opens link, adds to Reading immediately, hover-remove works)
    - Admin queue actions (viva, reading, comments)

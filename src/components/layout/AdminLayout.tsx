@@ -63,7 +63,7 @@ const adminNavItems = [
   { path: "/admin/projects", label: "Projects", icon: FolderKanban },
   { path: "/admin/objectives", label: "Objectives", icon: Target },
   { path: "/admin/viva", label: "Viva Queue", icon: CheckCircle },
-  { path: "/admin/presentations", label: "Presentations", icon: Mic },
+  { path: "/admin/reviews", label: "Reviews", icon: Mic },
   { path: "/admin/books", label: "Books", icon: BookOpen },
   { path: "/admin/character", label: "Character", icon: Sparkles },
   { path: "/admin/comments", label: "Comments", icon: MessageSquare },

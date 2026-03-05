@@ -41,10 +41,13 @@ Single source of truth: this file. `CLAUDE.md` exists only as a compatibility po
 
 ## UI Workflow Policy
 
-1. Do not use Claude Code workflows in this repository.
-2. If external UI ideation is needed, use Gemini CLI only.
-3. Gemini is advisory-only: ideas and suggested diffs.
-4. Implementing agent must apply edits and verify locally.
+1. For every frontend/UI task, run the frontend design skill first and apply it before coding.
+2. Frontend design skill source: `C:/Users/vishw/.codex/skills/claude-code/SKILL.md` (until a dedicated frontend-design skill is added).
+3. When invoking Claude for frontend work, append the full frontend design skill content to the Claude prompt.
+4. Claude Code is allowed for visual/UX-only frontend tasks using `--dangerously-skip-permissions`.
+5. Guardrails: keep edits inside `src/` (and `public/` only if needed); do not edit `convex/`, auth flows, or docs unless explicitly requested.
+6. Never read `.env*` files or secrets; require diff-style output from Claude; implementing agent must review and verify locally.
+7. If Claude Code is unavailable, use Gemini CLI advisory-only (ideas + suggested diffs), then implement locally.
 
 ## Code Simplifier Policy
 

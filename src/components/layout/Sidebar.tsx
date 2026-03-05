@@ -123,7 +123,7 @@ const adminNavItems: NavItem[] = [
   { path: "/admin/sprints", label: "Sprints", icon: Icons.calendar },
   { path: "/admin/objectives", label: "Objectives", icon: Icons.clipboard },
   { path: "/admin/viva", label: "Viva Queue", icon: Icons.check },
-  { path: "/admin/presentations", label: "Presentations", icon: Icons.presentation },
+  { path: "/admin/reviews", label: "Reviews", icon: Icons.presentation },
   { path: "/admin/books", label: "Books", icon: Icons.books },
   { path: "/admin/character", label: "Character", icon: Icons.character },
   { path: "/admin/trust-jar", label: "Trust Jar", icon: Icons.jar },

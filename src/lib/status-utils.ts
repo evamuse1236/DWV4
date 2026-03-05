@@ -6,7 +6,15 @@
 export type ObjectiveStatus = "assigned" | "in_progress" | "viva_requested" | "mastered";
 export type SubObjectiveStatus = "assigned" | "in_progress" | "completed";
 export type GoalStatus = "not_started" | "in_progress" | "completed";
-export type BookStatus = "reading" | "completed" | "presentation_requested" | "presented";
+export type BookStatus =
+  | "reading"
+  | "completed"
+  | "review_draft"
+  | "review_submitted"
+  | "review_changes_requested"
+  | "review_approved"
+  | "presentation_requested"
+  | "presented";
 
 /**
  * Learning objective status configuration
@@ -39,6 +47,10 @@ export const goalStatusConfig: Record<GoalStatus, { label: string; variant: stri
 export const bookStatusConfig: Record<BookStatus, { label: string; variant: string; emoji: string }> = {
   reading: { label: "Reading", variant: "warning", emoji: "📖" },
   completed: { label: "Completed", variant: "success", emoji: "✅" }, // Legacy status
+  review_draft: { label: "Review Draft", variant: "warning", emoji: "✍️" },
+  review_submitted: { label: "Awaiting Approval", variant: "info", emoji: "⏳" },
+  review_changes_requested: { label: "Changes Requested", variant: "destructive", emoji: "🛠️" },
+  review_approved: { label: "Finished", variant: "success", emoji: "✅" },
   presentation_requested: { label: "Pending Presentation", variant: "info", emoji: "🙋" },
   presented: { label: "Finished", variant: "success", emoji: "✅" },
 };
@@ -105,6 +117,10 @@ export const goalStatusLabels: Record<GoalStatus, string> = {
 export const bookStatusIndicatorColors: Record<BookStatus, string> = {
   reading: "bg-[#ca8a04]",
   completed: "bg-[#15803d]", // Legacy status
+  review_draft: "bg-[#ca8a04]",
+  review_submitted: "bg-[#7c3aed]",
+  review_changes_requested: "bg-[#b45309]",
+  review_approved: "bg-[#15803d]",
   presentation_requested: "bg-[#7c3aed]",
   presented: "bg-[#15803d]",
 };
@@ -113,6 +129,10 @@ export const bookStatusIndicatorColors: Record<BookStatus, string> = {
 export const bookStatusBadgeColors: Record<BookStatus, { bg: string; text: string }> = {
   reading: { bg: "bg-[#ca8a04]/20", text: "text-[#ca8a04]" },
   completed: { bg: "bg-[#15803d]/20", text: "text-[#15803d]" }, // Legacy status
+  review_draft: { bg: "bg-[#ca8a04]/20", text: "text-[#ca8a04]" },
+  review_submitted: { bg: "bg-[#7c3aed]/20", text: "text-[#7c3aed]" },
+  review_changes_requested: { bg: "bg-[#b45309]/20", text: "text-[#b45309]" },
+  review_approved: { bg: "bg-[#15803d]/20", text: "text-[#15803d]" },
   presentation_requested: { bg: "bg-[#7c3aed]/20", text: "text-[#7c3aed]" },
   presented: { bg: "bg-[#15803d]/20", text: "text-[#15803d]" },
 };

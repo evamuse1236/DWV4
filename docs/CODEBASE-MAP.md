@@ -47,7 +47,7 @@ Purpose: fast navigation to where behavior actually lives.
 - `/admin/projects/:projectId`
 - `/admin/objectives`
 - `/admin/viva`
-- `/admin/presentations`
+- `/admin/reviews` (with `/admin/presentations` redirected)
 - `/admin/books`
 - `/admin/norms`
 - `/admin/comments`
@@ -61,5 +61,5 @@ Purpose: fast navigation to where behavior actually lives.
 - Deep work/progress: `convex/objectives.ts`, `convex/progress.ts`
 - Diagnostics: `src/pages/student/DiagnosticPage.tsx`, `src/lib/diagnostic.ts`, `convex/diagnostics.ts`
 - AI actions: `convex/ai.ts`
-- Reading flow: `src/pages/student/ReadingPage.tsx`, `convex/books.ts`
-- Admin queues: `src/pages/admin/*`, `convex/objectives.ts`, `convex/books.ts`, `convex/diagnostics.ts`
+- Reading flow: `src/pages/student/ReadingPage.tsx`, `src/pages/student/ReviewPage.tsx`, `convex/books.ts` (modal `Read Book` CTA + optimistic Reading list updates + review prompt suggestions)
+- Admin queues: `src/pages/admin/*` (including `ReviewQueuePage.tsx` inline changes-request editor), `convex/objectives.ts`, `convex/books.ts`, `convex/diagnostics.ts`

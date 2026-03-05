@@ -57,10 +57,9 @@ describe("Sidebar", () => {
       const nav = screen.getByRole("navigation");
 
       // Student nav items should be visible in the navigation
-      expect(within(nav).getByText("Home")).toBeInTheDocument();
-      expect(within(nav).getByText("Sprint")).toBeInTheDocument();
-      expect(within(nav).getByText("DeepWork")).toBeInTheDocument();
-      expect(within(nav).getByText("Library")).toBeInTheDocument();
+      for (const label of ["Home", "Sprint", "DeepWork", "Library"] as const) {
+        expect(within(nav).getByText(label)).toBeInTheDocument();
+      }
       expect(within(nav).queryByText("Character")).not.toBeInTheDocument();
       expect(within(nav).getByText("Trust Jar")).toBeInTheDocument();
     });
@@ -69,13 +68,9 @@ describe("Sidebar", () => {
       renderWithRouter(<Sidebar />, { route: "/dashboard" });
 
       // Admin-only items should NOT be visible
-      expect(screen.queryByText("Students")).not.toBeInTheDocument();
-      expect(screen.queryByText("Sprints")).not.toBeInTheDocument();
-      expect(screen.queryByText("Objectives")).not.toBeInTheDocument();
-      expect(screen.queryByText("Viva Queue")).not.toBeInTheDocument();
-      expect(screen.queryByText("Presentations")).not.toBeInTheDocument();
-      expect(screen.queryByText("Books")).not.toBeInTheDocument();
-      expect(screen.queryByText("Norms")).not.toBeInTheDocument();
+      for (const label of ["Students", "Sprints", "Objectives", "Viva Queue", "Reviews", "Books", "Norms"] as const) {
+        expect(screen.queryByText(label)).not.toBeInTheDocument();
+      }
     });
 
     it("displays student username and display name", () => {
@@ -106,15 +101,9 @@ describe("Sidebar", () => {
       renderWithRouter(<Sidebar />, { route: "/admin" });
 
       // Admin nav items should be visible
-      expect(screen.getByText("Dashboard")).toBeInTheDocument();
-      expect(screen.getByText("Students")).toBeInTheDocument();
-      expect(screen.getByText("Norms")).toBeInTheDocument();
-      expect(screen.getByText("Sprints")).toBeInTheDocument();
-      expect(screen.getByText("Objectives")).toBeInTheDocument();
-      expect(screen.getByText("Viva Queue")).toBeInTheDocument();
-      expect(screen.getByText("Presentations")).toBeInTheDocument();
-      expect(screen.getByText("Books")).toBeInTheDocument();
-      expect(screen.getByText("Trust Jar")).toBeInTheDocument();
+      for (const label of ["Dashboard", "Students", "Norms", "Sprints", "Objectives", "Viva Queue", "Reviews", "Books", "Trust Jar"] as const) {
+        expect(screen.getByText(label)).toBeInTheDocument();
+      }
     });
 
     it("does not show student-specific navigation items for admin users", () => {

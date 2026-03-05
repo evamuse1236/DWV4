@@ -1,9 +1,11 @@
 import { useEffect, useMemo, useState } from "react";
 import { useQuery } from "convex/react";
+import { Link } from "react-router-dom";
 import { api } from "../../../convex/_generated/api";
 import { useAuth } from "../../hooks/useAuth";
 import { extractImageSrc, loadDiagnosticData } from "../../lib/diagnostic";
 import { MathText } from "@/components/math/MathText";
+import { getBookBadgeClass, type BookStatus } from "../../lib/status-utils";
 
 type AttemptListRow = {
   attemptId: string;
@@ -50,6 +52,25 @@ type AttemptDetails = {
   domain?: { _id: string; name?: string } | null;
 };
 
+type StudentBookStatus =
+  | "reading"
+  | "completed"
+  | "review_draft"
+  | "review_submitted"
+  | "review_changes_requested"
+  | "review_approved"
+  | "presentation_requested"
+  | "presented";
+
+type ReviewBookRow = {
+  _id: string;
+  status: StudentBookStatus;
+  coachFeedback?: string;
+  book?: { _id: string; title?: string; author?: string } | null;
+};
+
+const DONE_BOOK_STATUSES = new Set<StudentBookStatus>(["review_approved", "presented"]);
+
 export function ReviewPage() {
   const { user } = useAuth();
   const [selectedAttemptId, setSelectedAttemptId] = useState<string | null>(null);
@@ -68,6 +89,18 @@ export function ReviewPage() {
       ? { userId: user._id as any, attemptId: selectedAttemptId as any }
       : "skip"
   ) as AttemptDetails | null | undefined;
+  const reviewBooks = useQuery(
+    api.books.getStudentBooks,
+    user ? { userId: user._id as any } : "skip"
+  ) as ReviewBookRow[] | undefined;
+
+  const pendingBookReviews = useMemo(
+    () =>
+      (reviewBooks || []).filter(
+        (studentBook) => !DONE_BOOK_STATUSES.has(studentBook.status) && studentBook.book
+      ),
+    [reviewBooks]
+  );
 
   useEffect(() => {
     if (!attempts || attempts.length === 0) return;
@@ -115,25 +148,7 @@ export function ReviewPage() {
     );
   }
 
-  if (attempts === undefined) {
-    return (
-      <div className="p-6 max-w-6xl mx-auto">
-        <h1 className="text-3xl font-serif font-semibold">Review</h1>
-        <p className="text-muted-foreground mt-2">Loading your diagnostic attempts...</p>
-      </div>
-    );
-  }
-
-  if (attempts.length === 0) {
-    return (
-      <div className="p-6 max-w-6xl mx-auto">
-        <h1 className="text-3xl font-serif font-semibold">Review</h1>
-        <p className="text-muted-foreground mt-2">
-          No diagnostic attempts yet. Finish a diagnostic and your review history will appear here.
-        </p>
-      </div>
-    );
-  }
+  const hasAttempts = (attempts?.length ?? 0) > 0;
 
   return (
     <div className="p-6 max-w-6xl mx-auto space-y-6">
@@ -144,36 +159,113 @@ export function ReviewPage() {
         </p>
       </div>
 
+      <section className="rounded-xl border bg-white/70 p-4 space-y-4">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <h2 className="text-lg font-semibold">Book Review Suggestions</h2>
+            <p className="text-sm text-muted-foreground">
+              Use these prompts while writing your book reviews.
+            </p>
+          </div>
+        </div>
+        {reviewBooks === undefined ? (
+          <p className="text-sm text-muted-foreground">Loading your reading list...</p>
+        ) : pendingBookReviews.length === 0 ? (
+          <p className="text-sm text-muted-foreground">
+            No active book reviews right now. Start reading a book to get review prompts here.
+          </p>
+        ) : (
+          <div className="grid gap-3 md:grid-cols-2">
+            {pendingBookReviews.map((studentBook) => (
+              <article key={studentBook._id} className="rounded-lg border bg-background/70 p-3">
+                <div className="flex items-start justify-between gap-2">
+                  <div>
+                    <div className="font-medium">{studentBook.book?.title || "Book"}</div>
+                    <div className="text-xs text-muted-foreground">
+                      {studentBook.book?.author || "Unknown author"}
+                    </div>
+                  </div>
+                  <span
+                    className={`text-[10px] px-2 py-1 rounded-full ${getBookBadgeClass(
+                      studentBook.status as BookStatus
+                    )}`}
+                  >
+                    {studentBook.status.replaceAll("_", " ")}
+                  </span>
+                </div>
+                <ul className="mt-3 space-y-1 text-sm text-muted-foreground list-disc pl-4">
+                  <li>What is the book about in 2-3 lines?</li>
+                  <li>Which idea or moment stayed with you most, and why?</li>
+                  <li>Who should read this, and what star rating would you give it?</li>
+                </ul>
+                {studentBook.status === "review_changes_requested" &&
+                studentBook.coachFeedback?.trim() ? (
+                  <div className="mt-3 rounded-md border border-amber-300/80 bg-amber-50 px-3 py-2 text-sm text-amber-900">
+                    <p className="text-[11px] font-semibold uppercase tracking-wide text-amber-700">
+                      Coach Note
+                    </p>
+                    <p className="mt-1 whitespace-pre-wrap">{studentBook.coachFeedback.trim()}</p>
+                  </div>
+                ) : null}
+                {studentBook.book?._id ? (
+                  <div className="mt-3">
+                    <Link
+                      to={`/reading?openBook=${studentBook.book._id}&view=review`}
+                      className="inline-flex items-center rounded-full border px-3 py-1.5 text-sm hover:bg-black/[0.03]"
+                    >
+                      Open Reading Page
+                    </Link>
+                  </div>
+                ) : null}
+              </article>
+            ))}
+          </div>
+        )}
+      </section>
+
       <div className="grid gap-4 lg:grid-cols-[320px_minmax(0,1fr)]">
         <aside className="rounded-xl border bg-white/70 p-3 space-y-2 max-h-[72vh] overflow-y-auto">
-          {attempts.map((row) => {
-            const isActive = selectedAttemptId === String(row.attemptId);
-            const submitted = new Date(row.attempt.submittedAt).toLocaleString();
-            return (
-              <button
-                key={row.attemptId}
-                type="button"
-                onClick={() => setSelectedAttemptId(String(row.attemptId))}
-                className={`w-full text-left rounded-lg border p-3 transition-colors ${
-                  isActive ? "border-black/30 bg-black/5" : "bg-white hover:bg-black/[0.03]"
-                }`}
-              >
-                <div className="font-medium truncate">{row.majorObjective?.title || "Diagnostic"}</div>
-                <div className="text-xs text-muted-foreground truncate mt-1">
-                  {row.domain?.name || "Domain"} • {row.attempt.diagnosticModuleName}
-                </div>
-                <div className="text-xs text-muted-foreground mt-2">
-                  {row.attempt.score}/{row.attempt.questionCount} •{" "}
-                  {Math.round(row.attempt.scorePercent ?? 0)}% • {row.attempt.passed ? "Passed" : "Failed"}
-                </div>
-                <div className="text-[11px] text-muted-foreground mt-1">{submitted}</div>
-              </button>
-            );
-          })}
+          {!hasAttempts ? (
+            <p className="text-sm text-muted-foreground p-2">
+              {attempts === undefined
+                ? "Loading your diagnostic attempts..."
+                : "No diagnostic attempts yet. Finish a diagnostic and your attempt history will appear here."}
+            </p>
+          ) : (
+            attempts!.map((row) => {
+              const isActive = selectedAttemptId === String(row.attemptId);
+              const submitted = new Date(row.attempt.submittedAt).toLocaleString();
+              return (
+                <button
+                  key={row.attemptId}
+                  type="button"
+                  onClick={() => setSelectedAttemptId(String(row.attemptId))}
+                  className={`w-full text-left rounded-lg border p-3 transition-colors ${
+                    isActive ? "border-black/30 bg-black/5" : "bg-white hover:bg-black/[0.03]"
+                  }`}
+                >
+                  <div className="font-medium truncate">{row.majorObjective?.title || "Diagnostic"}</div>
+                  <div className="text-xs text-muted-foreground truncate mt-1">
+                    {row.domain?.name || "Domain"} • {row.attempt.diagnosticModuleName}
+                  </div>
+                  <div className="text-xs text-muted-foreground mt-2">
+                    {row.attempt.score}/{row.attempt.questionCount} •{" "}
+                    {Math.round(row.attempt.scorePercent ?? 0)}% •{" "}
+                    {row.attempt.passed ? "Passed" : "Failed"}
+                  </div>
+                  <div className="text-[11px] text-muted-foreground mt-1">{submitted}</div>
+                </button>
+              );
+            })
+          )}
         </aside>
 
         <section className="rounded-xl border bg-white/70 p-4">
-          {!details ? (
+          {!hasAttempts ? (
+            <div className="text-sm text-muted-foreground py-8">
+              Build your diagnostic history and revisit mistakes here after each attempt.
+            </div>
+          ) : !details ? (
             <div className="text-sm text-muted-foreground py-8">Loading attempt details...</div>
           ) : (
             <div className="space-y-4">

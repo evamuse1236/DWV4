@@ -136,17 +136,23 @@ export function BookCard({
                 }}
                 className="w-full"
               >
-                Request Presentation
+                Write Review
               </Button>
             )}
 
-            {status === "presentation_requested" && (
+            {(status === "review_submitted" || status === "presentation_requested") && (
               <div className="text-center text-sm text-purple-600 font-medium">
                 Waiting for approval
               </div>
             )}
 
-            {status === "presented" && (
+            {(status === "review_changes_requested") && (
+              <div className="text-center text-sm text-amber-600 font-medium">
+                Changes requested
+              </div>
+            )}
+
+            {(status === "presented" || status === "review_approved") && (
               <div className="text-center text-sm text-green-600 font-medium">
                 Finished!
               </div>

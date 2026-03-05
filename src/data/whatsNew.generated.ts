@@ -11,6 +11,18 @@ export interface WhatsNewEntry {
 
 export const WHATS_NEW: WhatsNewEntry[] = [
   {
+    date: "Mar 5",
+    sortDate: "2026-03-05",
+    title: "docs updated",
+    description: "Code updates shipped in commit f45f1a3.",
+  },
+  {
+    date: "Mar 5",
+    sortDate: "2026-03-05",
+    title: "Confirm AI link updates",
+    description: "Code updates shipped in commit 0e4e72f.",
+  },
+  {
     date: "Feb 19",
     sortDate: "2026-02-19",
     title: "Add student diagnostic review page and harden retake submit flow",
@@ -177,18 +189,6 @@ export const WHATS_NEW: WhatsNewEntry[] = [
     sortDate: "2026-02-11",
     title: "Polish rollback misconception tone and extend sync audit",
     description: "Code updates shipped in commit 443cd84.",
-  },
-  {
-    date: "Feb 11",
-    sortDate: "2026-02-11",
-    title: "Harden misconception sync with strict matching and rollback",
-    description: "Code updates shipped in commit ed0708d.",
-  },
-  {
-    date: "Feb 11",
-    sortDate: "2026-02-11",
-    title: "Implement character system updates and disable student XP flow",
-    description: "Code updates shipped in commit 766efa0.",
   },
 ];
 

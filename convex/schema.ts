@@ -477,6 +477,10 @@ export default defineSchema({
     status: v.union(
       v.literal("reading"),
       v.literal("completed"), // Legacy status for existing data
+      v.literal("review_draft"),
+      v.literal("review_submitted"),
+      v.literal("review_changes_requested"),
+      v.literal("review_approved"),
       v.literal("presentation_requested"),
       v.literal("presented")
     ),
@@ -484,6 +488,12 @@ export default defineSchema({
     completedAt: v.optional(v.number()), // Legacy field for existing data
     presentationRequestedAt: v.optional(v.number()),
     presentedAt: v.optional(v.number()),
+    reviewSubmittedAt: v.optional(v.number()),
+    reviewApprovedAt: v.optional(v.number()),
+    reviewApprovedBy: v.optional(v.id("users")),
+    coachFeedback: v.optional(v.string()),
+    coachFeedbackAt: v.optional(v.number()),
+    coachFeedbackBy: v.optional(v.id("users")),
     rating: v.optional(v.number()),
     review: v.optional(v.string()),
   })
@@ -491,6 +501,16 @@ export default defineSchema({
     .index("by_book", ["bookId"])
     .index("by_user_book", ["userId", "bookId"])
     .index("by_status", ["status"]),
+
+  bookReviewComments: defineTable({
+    studentBookId: v.id("studentBooks"),
+    userId: v.id("users"),
+    message: v.string(),
+    createdAt: v.number(),
+    updatedAt: v.optional(v.number()),
+  })
+    .index("by_review_created", ["studentBookId", "createdAt"])
+    .index("by_user_created", ["userId", "createdAt"]),
 
   // ============ TRUST JAR ============
   trustJar: defineTable({

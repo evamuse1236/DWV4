@@ -6,6 +6,7 @@ export { ProjectsPage } from "./ProjectsPage";
 export { ObjectivesPage } from "./ObjectivesPage";
 export { VivaQueuePage } from "./VivaQueuePage";
 export { PresentationQueuePage } from "./PresentationQueuePage";
+export { ReviewQueuePage } from "./ReviewQueuePage";
 export { BooksPage } from "./BooksPage";
 export { CharacterCatalogPage } from "./CharacterCatalogPage";
 export { NormsPage } from "./NormsPage";
