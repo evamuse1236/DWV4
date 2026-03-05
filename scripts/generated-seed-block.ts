@@ -118,7 +118,7 @@
         description: "SWBAT multiply multi-digit whole numbers using the standard algorithm (e.g., 3-digit × 2-digit).",
         activities: [
         { title: "Multi-digit multiplication and division (standard algorithm)", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division" },
-        { title: "Multiplication & division (word problems + multi-digit practice)", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/cc-4th-mult-div-topic" }
+        { title: "Multiplication & division (word problems + multi-digit practice)", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2" }
         ],
       },
       {
@@ -132,16 +132,16 @@
         title: "Solve simple word problems using addition, subtraction, multiplication, and division",
         description: "SWBAT solve simple word problems using addition, subtraction, multiplication, and division",
         activities: [
-        { title: "Add & subtract", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/cc-4th-add-sub-topic" },
-        { title: "Multiplication & division", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/cc-4th-mult-div-topic" }
+        { title: "Add & subtract", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-addition-and-subtraction-2" },
+        { title: "Multiplication & division", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2" }
         ],
       },
       {
         title: "Solve multi-step word problems using addition, subtraction, multiplication, and division.",
         description: "SWBAT solve multi-step word problems using addition, subtraction, multiplication, and division.",
         activities: [
-        { title: "Multiplication and division", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/cc-4th-mult-div-topic" },
-        { title: "Add & subtract", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/cc-4th-add-sub-topic" }
+        { title: "Multiplication and division", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2" },
+        { title: "Add & subtract", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-addition-and-subtraction-2" }
         ],
       },
       {
@@ -156,7 +156,7 @@
         description: "SWBAT use rounding strategies and inverse operations to verify and cross-check answers to word problems",
         activities: [
         { title: "More with multiplication and division", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-third-grade-math/imp-multiplication-and-division" },
-        { title: "Place value & rounding", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-place-value-and-rounding" }
+        { title: "Place value & rounding", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-place-value-and-decimals" }
         ],
       },
       {
@@ -206,7 +206,7 @@
         title: "Divisibility rules",
         description: "Deepwork: Divisibility rules",
         activities: [
-        { title: "Divisibility tests", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/arithmetic-home/arith-review-factors-multiples/arith-review-divisibility-tests" },
+        { title: "Divisibility tests", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-factors-multiples-and-patterns" },
         { title: "Number Theory: divisibility", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/digits-and-divisibility/divisibility/" },
         { title: "Number Theory: last-digits-part-i", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/digits-and-divisibility/last-digits-part-i/" },
         { title: "Number Theory: last-digits-part-ii", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-number-theory/digits-and-divisibility/last-digits-part-ii/" },
@@ -280,7 +280,7 @@
         title: "Divide a fraction with another fraction",
         description: "SWBAT divide a fraction with another fraction ",
         activities: [
-        { title: "Fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/pre-algebra/pre-algebra-fractions" }
+        { title: "Fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/arithmetic-home/arith-review-fractions" }
         ],
       },
       {
@@ -344,9 +344,9 @@
         title: "Solve word problems involving addition, subtraction, multiplication, division of Decimals using equations and visual models.",
         description: "SWBAT solve word problems involving addition, subtraction, multiplication, division of Decimals using equations and visual models.",
         activities: [
-        { title: "Adding decimals word problems", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/add-decimals/addition_word_problems" },
-        { title: "Subtracting decimals word problems", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/subtract-decimals/subtraction_word_problems" },
-        { title: "Multiplying decimals word problems", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/multiply-decimals/multiplying-decimals-word-problems" }
+        { title: "Adding decimals word problems", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-place-value-and-decimals" },
+        { title: "Subtracting decimals word problems", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-place-value-and-decimals" },
+        { title: "Multiplying decimals word problems", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/grade-4-math-snc-aligned/x6f85f380d87b3bb6:decimals/x6f85f380d87b3bb6:word-problems-of-decimal-numbers/v/multiplying-decimals-word-problems" }
         ],
       }
     ]);
@@ -423,7 +423,7 @@
         description: "SWBAT distinguish variables and constants in an expression/equation. \nIdentify the constant and variable in each:\na. 4x + 7\nb. X is the number of tickets bought. Cost of each ticket is 50 Rs. I pay a total cost according to the number of tickets bought.  T = 50X ",
         activities: [
         { title: "Variables & expressions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables" },
-        { title: "Expressions & equations", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/pre-algebra/pre-algebra-expressions-equations" }
+        { title: "Expressions & equations", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables" }
         ],
       },
       {
@@ -454,8 +454,8 @@
         title: "Solve word problems and solving equations of the form x + p = q and px = q (with non-negative rational numbers).",
         description: "SWBAT solve word problems and solving equations of the form x + p = q and px = q (with non-negative rational numbers).\neg. A pen and a notebook together cost ₹120. The pen costs ₹45. How much is the notebook?”\nEquation: 45 + n = 120 → n = 120 – 45 = 75.",
         activities: [
-        { title: "One-step add/subtract equations", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities/one-step-add-subtract-equations" },
-        { title: "One-step multiply/divide equations", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities/one-step-multiply-divide-equations" }
+        { title: "One-step add/subtract equations", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities" },
+        { title: "One-step multiply/divide equations", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities" }
         ],
       },
       {
@@ -491,7 +491,7 @@
         title: "Understand the relationship between two-dimensional figures and three-dimensional objects.",
         description: "SWBAT understand the relationship between two-dimensional figures and three-dimensional objects.",
         activities: [
-        { title: "Nets of 3D figures", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/cc-6th-nets-of-3-dimensional-figures" }
+        { title: "Nets of 3D figures", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/cc-6th-surface-area" }
         ],
       },
       {
@@ -526,7 +526,7 @@
         description: "SWBAT solve real-world problems involving the area of other two-dimensional figures (Triangles, Parallelograms, composite shapes)  (exception Circles)",
         activities: [
         { title: "Geometry (area of parallelograms, triangles, composite figures)", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic" },
-        { title: "Area of composite figures", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/area-of-composite-figures" },
+        { title: "Area of composite figures", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic" },
         { title: "Beautiful Geometry: composite-geometry-warmups", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-2d-geometry/composite-polygons-2/composite-geometry-warmups/" },
         { title: "Beautiful Geometry: adding-lines-and-grids", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-2d-geometry/composite-polygons-2/adding-lines-and-grids/" },
         { title: "Beautiful Geometry: complementary-areas", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/basic-2d-geometry/composite-polygons-2/complementary-areas/" },
@@ -550,7 +550,7 @@
         description: "SWBAT plot a line graph",
         activities: [
         { title: "Line plots", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/line-plots" },
-        { title: "Coordinate plane (5th grade) — plot points & interpret graphs", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/coordinate-plane" }
+        { title: "Coordinate plane (5th grade) — plot points & interpret graphs", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:coordinate-plane" }
         ],
       }
     ]);
@@ -587,7 +587,7 @@
         title: "SWBAT solve word problems involving angles",
         description: "SWBAT solve word problems involving angles",
         activities: [
-        { title: "Angle addition (word problems)", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2/imp-angle-addition" }
+        { title: "Angle addition (word problems)", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2" }
         ],
       }
     ]);
@@ -634,14 +634,14 @@
         title: "SWBAT read and write multi-digit numbers in standard, word, and expanded form.",
         description: "SWBAT read and write multi-digit numbers in standard, word, and expanded form.",
         activities: [
-        { title: "Place value", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-place-value-and-rounding" }
+        { title: "Place value", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-place-value-and-decimals" }
         ],
       },
       {
         title: "SWBAT explain that each digit is 10× the value of the digit to its right and 1/10 of the digit to its left.",
         description: "SWBAT explain that each digit is 10× the value of the digit to its right and 1/10 of the digit to its left.",
         activities: [
-        { title: "Place value and rounding", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/k-8-grades/cc-third-grade-math/cc-3rd-place-value-rounding" }
+        { title: "Place value and rounding", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-place-value-and-decimals" }
         ],
       },
       {
@@ -684,8 +684,8 @@
         title: "SWBAT Multi-step word problem of add/sub/mul/div, using equations with Unknowns.",
         description: "SWBAT Multi-step word problem of add/sub/mul/div, using equations with Unknowns.",
         activities: [
-        { title: "Multiplication and division", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/cc-4th-mult-div-topic" },
-        { title: "Add & subtract", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/cc-4th-add-sub-topic" }
+        { title: "Multiplication and division", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2" },
+        { title: "Add & subtract", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-addition-and-subtraction-2" }
         ],
       },
       {
@@ -707,14 +707,14 @@
         description: "SWBAT verify calculations using inverse operations (mul ↔ div; add ↔ sub) ",
         activities: [
         { title: "More with multiplication and division", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-third-grade-math/imp-multiplication-and-division" },
-        { title: "Add & subtract", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/cc-4th-add-sub-topic" }
+        { title: "Add & subtract", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-addition-and-subtraction-2" }
         ],
       },
       {
         title: "SWBAT Verify calculation using estimation and rounding.",
         description: "SWBAT Verify calculation using estimation and rounding.",
         activities: [
-        { title: "Place value and rounding", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/k-8-grades/cc-fourth-grade-math/cc-4th-place-value-rounding" }
+        { title: "Place value and rounding", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-place-value-and-decimals" }
         ],
       }
     ]);
@@ -736,14 +736,14 @@
         title: "SWBAT mark fractions on a number line.",
         description: "SWBAT mark fractions on a number line.",
         activities: [
-        { title: "Fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/k-8-grades/cc-third-grade-math/cc-3rd-fractions-topic" }
+        { title: "Fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2" }
         ],
       },
       {
         title: "SWBAT compare fractions using models and the number line.",
         description: "SWBAT compare fractions using models and the number line.",
         activities: [
-        { title: "Fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/cc-4th-fractions-topic" }
+        { title: "Fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2" }
         ],
       },
       {
@@ -776,7 +776,7 @@
         title: "SWBAT Simplify a given fraction.",
         description: "SWBAT Simplify a given fraction.",
         activities: [
-        { title: "Simplifying fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/arithmetic-home/arith-review-fractions/arith-review-simplifying-fractions" },
+        { title: "Simplifying fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/comparing-fractions-and-equivalent-fractions" },
         { title: "Arithmetic Thinking: Simplifying Fractions", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/math-fundamentals/equivalent-fractions/simplifying-fractions/" }
         ],
       },
@@ -799,7 +799,7 @@
         title: "SWBAT Compare unlike fractions",
         description: "SWBAT Compare unlike fractions",
         activities: [
-        { title: "Fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/cc-4th-fractions-topic" },
+        { title: "Fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2" },
         { title: "Equivalent fractions and comparing fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/comparing-fractions-and-equivalent-fractions" }
         ],
       },
@@ -807,7 +807,7 @@
         title: "SWBAT express a fraction (a/b, where a > 1) as a sum of unit fractions (1/b).",
         description: "SWBAT express a fraction (a/b, where a > 1) as a sum of unit fractions (1/b).",
         activities: [
-        { title: "Compose & decompose fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/arithmetic-home/arith-review-fractions/arith-review-compose-decompose-fractions" }
+        { title: "Compose & decompose fractions", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2" }
         ],
       },
       {
@@ -843,7 +843,7 @@
         description: "SWBAT convert common units (km–m–cm; kg–g; l–ml; hr–min–sec)",
         activities: [
         { title: "Converting units of measure", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-measurement-and-data-3" },
-        { title: "Converting units", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-measurement-and-data-3/converting-units" }
+        { title: "Converting units", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/6th-grade-illustrative-math/unit-3-unit-rates-and-percentages/x6d0461550282bed1:converting-units/a/converting-units" }
         ],
       },
       {
@@ -857,7 +857,7 @@
         title: "SWBAT calculate area for rectangles and composite rectangles",
         description: "SWBAT calculate area for rectangles and composite rectangles",
         activities: [
-        { title: "Area of rectangles (4th grade) — includes composite figures", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/area-perimeter/area-of-rectangles" },
+        { title: "Area of rectangles (4th grade) — includes composite figures", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-measurement-and-data-2" },
         { title: "Geometry Fundamentals: calculating-area-6", type: "exercise", platform: "Brilliant", url: "https://brilliant.org/courses/geometry-fundamentals/areas/calculating-area-6/" }
         ],
       },
@@ -865,7 +865,7 @@
         title: "SWBAT calculate perimeter for triangles, rectangles, and composite shapes",
         description: "SWBAT calculate perimeter for triangles, rectangles, and composite shapes",
         activities: [
-        { title: "Perimeter (triangles, rectangles, composite shapes)", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/k-8-grades/cc-third-grade-math/imp-perimeter" }
+        { title: "Perimeter (triangles, rectangles, composite shapes)", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-third-grade-math/3rd-perimeter/imp-perimeter" }
         ],
       },
       {
@@ -873,7 +873,7 @@
         description: "SWBAT solve word problesm involving area and perimeter of rectangles.",
         activities: [
         { title: "Area and perimeter", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/area-perimeter" },
-        { title: "Area & perimeter word problems", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fourth-grade-math/area-perimeter/area-perimeter-word-problems" }
+        { title: "Area & perimeter word problems", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-third-grade-math/3rd-perimeter/imp-comparing-area-and-perimeter/e/area-perimeter-word-problems" }
         ],
       },
       {
@@ -896,7 +896,7 @@
         description: "SWBAT solve word problems of surface area and volume.",
         activities: [
         { title: "Unit 1: Area and Surface Area (6th Illustrative Math)", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/6th-grade-illustrative-math/unit-1-area-and-surface-area" },
-        { title: "Volume word problems", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/volume/volume_word_problems" }
+        { title: "Volume word problems", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/5th-volume" }
         ],
       }
     ]);
@@ -919,8 +919,8 @@
         title: "SWBAT solve problems, like distances between 2 points their midpoints.",
         description: "SWBAT solve problems, like distances between 2 points their midpoints.",
         activities: [
-        { title: "Coordinate plane", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/coordinate-plane" },
-        { title: "Number line (6th grade) — finding midpoints", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic/cc-6th-number-line" }
+        { title: "Coordinate plane", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:coordinate-plane" },
+        { title: "Number line (6th grade) — finding midpoints", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic" }
         ],
       }
     ]);
@@ -954,7 +954,7 @@
         title: "SWBAT compare and order decimals upto hundredths place",
         description: "SWBAT compare and order decimals upto hundredths place",
         activities: [
-        { title: "Place value and decimals", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/k-8-grades/cc-fifth-grade-math/cc-5th-place-value-decimals-top" }
+        { title: "Place value and decimals", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-place-value-and-decimals" }
         ],
       },
       {
@@ -1004,7 +1004,7 @@
         description: "SWBAT solve multi-digit computation problems that too word problems involving decimals.",
         activities: [
         { title: "Arithmetic decimals", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/arithmetic/arith-decimals" },
-        { title: "Decimals word problems", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/arithmetic/arith-decimals/decimals-word-problems" }
+        { title: "Decimals word problems", type: "video", platform: "Khan Academy", url: "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-multiplication-and-division-3" }
         ],
       }
     ]);

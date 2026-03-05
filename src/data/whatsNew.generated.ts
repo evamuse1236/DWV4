@@ -11,6 +11,30 @@ export interface WhatsNewEntry {
 
 export const WHATS_NEW: WhatsNewEntry[] = [
   {
+    date: "Feb 19",
+    sortDate: "2026-02-19",
+    title: "Add student diagnostic review page and harden retake submit flow",
+    description: "Code updates shipped in commit 31e2d63.",
+  },
+  {
+    date: "Feb 19",
+    sortDate: "2026-02-19",
+    title: "Add sleepy low-energy check-in option",
+    description: "Code updates shipped in commit 519b1a0.",
+  },
+  {
+    date: "Feb 18",
+    sortDate: "2026-02-18",
+    title: "Allow admins to view password inputs in settings",
+    description: "Code updates shipped in commit 8878e58.",
+  },
+  {
+    date: "Feb 17",
+    sortDate: "2026-02-17",
+    title: "chore: refresh generated whats-new feed",
+    description: "Code updates shipped in commit e3ee3a5.",
+  },
+  {
     date: "Feb 17",
     sortDate: "2026-02-17",
     title: "fix(ui): replace comment icon with cleaner chat glyph",
@@ -165,30 +189,6 @@ export const WHATS_NEW: WhatsNewEntry[] = [
     sortDate: "2026-02-11",
     title: "Implement character system updates and disable student XP flow",
     description: "Code updates shipped in commit 766efa0.",
-  },
-  {
-    date: "Feb 9",
-    sortDate: "2026-02-09",
-    title: "fix: allow data image profile photo URLs",
-    description: "Code updates shipped in commit c4437db.",
-  },
-  {
-    date: "Feb 6",
-    sortDate: "2026-02-06",
-    title: "fix: show avatar image in sidebar when user has avatarUrl set",
-    description: "Code updates shipped in commit 57bd83b.",
-  },
-  {
-    date: "Feb 6",
-    sortDate: "2026-02-06",
-    title: "feat: add settings pages, credential management, and project link editing",
-    description: "- Settings page for students (avatar, username, password)",
-  },
-  {
-    date: "Feb 4",
-    sortDate: "2026-02-04",
-    title: "feat: add sprint history view with week navigation and goal import",
-    description: "Browse previous sprints in read-only mode via a sprint selector dropdown.",
   },
 ];
 

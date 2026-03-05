@@ -216,6 +216,7 @@ export const create = mutation({
     description: v.optional(v.string()),
     gradeLevel: v.optional(v.string()),
     genre: v.optional(v.string()),
+    pageCount: v.optional(v.number()),
     addedBy: v.optional(v.id("users")),
   },
   handler: async (ctx, args) => {

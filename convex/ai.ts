@@ -1420,43 +1420,21 @@ function buildProjectDataPrompt(
     .map((s) => `- ${s.name}${s.batch ? ` (Batch ${s.batch})` : ""} [id: ${s.id}]`)
     .join("\n");
 
-  return `You are a helpful assistant for entering project data for "${projectName}". Your job is to extract structured data from admin messages about student work.
+  return `You are an admin operations assistant for "${projectName}".
 
 AVAILABLE STUDENTS:
 ${studentList}
 
 YOUR TASK:
-1. Listen to what the admin tells you about student work
-2. Match student names mentioned (fuzzy match OK - "John", "John S.", "Smith" all match "John Smith")
-3. Extract: links to work, what they did well, project description, areas to improve
-4. Output structured data for saving
+1. Understand the admin's natural-language request.
+2. If it's about student project reports, extract structured project updates.
+3. If it's about adding a book, extract structured book details (especially Google Drive reading links).
+4. Keep your conversational response short and actionable.
 
 CONVERSATION STYLE:
-- Be efficient and helpful
-- Confirm what you understood
-- Ask for clarification only if truly ambiguous
-- You can handle multiple students in one message
-
-WHEN YOU HAVE DATA TO SAVE, output:
-\`\`\`project-data
-{
-  "students": [
-    {
-      "studentName": "matched student name",
-      "studentId": "the_student_id_from_list",
-      "links": [
-        { "url": "https://...", "title": "Link title", "type": "presentation|document|video|other" }
-      ],
-      "reflections": {
-        "didWell": "What they did well (or null if not mentioned)",
-        "projectDescription": "Description of their project (or null)",
-        "couldImprove": "Areas for improvement (or null)"
-      }
-    }
-  ],
-  "summary": "Brief summary of what was captured"
-}
-\`\`\`
+- Fast, clear, and coach-friendly.
+- Confirm what you captured.
+- Ask a clarification question only when required fields are missing.
 
 LINK TYPE DETECTION:
 - URLs containing "presentation", "slides", "ppt" → "presentation"
@@ -1464,17 +1442,82 @@ LINK TYPE DETECTION:
 - URLs containing "video", "youtube", "loom" → "video"
 - Otherwise → "other"
 
-IMPORTANT RULES:
-1. Only output the JSON block when you have actual data to save
-2. Use null for reflection fields not mentioned (don't make up content)
-3. Always include a friendly message BEFORE the JSON block
-4. If you can't match a student name, ask for clarification
-5. Partial data is OK - admin can add more later
+BOOK EXTRACTION RULES:
+- Prefer Google Drive URLs in "readingUrl" when present.
+- Keep required fields for add-book as title + author.
+- Optional fields: genre, gradeLevel, description, coverImageUrl, pageCount.
 
-OPENING MESSAGE (first message only):
-"Hi! I'm here to help you enter project data quickly. You can tell me about student work in natural language - like 'John's presentation is at [link], he did great research on solar panels.'
+INTENT HINTS:
+- If the user text includes [INTENT:add_project_data], prioritize extracting project updates.
+- If the user text includes [INTENT:add_book], prioritize extracting add-book details.
+- You may return both in one response when both are present.`;
+}
 
-I'll extract the data and confirm before saving. Ready when you are!"`;
+function buildProjectDataFormatterPrompt(
+  creativeResponse: string,
+  projectName: string,
+  students: Array<{ id: string; name: string; batch?: string }>
+): string {
+  const studentList = students
+    .map((s) => `- ${s.name}${s.batch ? ` (Batch ${s.batch})` : ""} [id: ${s.id}]`)
+    .join("\n");
+
+  return `Convert the assistant response into structured executable commands for the admin panel.
+
+PROJECT:
+${projectName}
+
+AVAILABLE STUDENTS:
+${studentList}
+
+ASSISTANT RESPONSE TO CONVERT:
+${creativeResponse}
+
+OUTPUT EXACTLY THIS FORMAT (start with \`\`\`admin-commands, end with \`\`\`):
+\`\`\`admin-commands
+{
+  "assistantText": "Short user-facing response (1-2 lines)",
+  "summary": "Brief summary of what will be saved",
+  "commands": [
+    {
+      "type": "add_project_data",
+      "studentName": "Matched student name",
+      "studentId": "student_id_from_available_students",
+      "links": [
+        { "url": "https://...", "title": "Link title", "type": "presentation|document|video|other" }
+      ],
+      "reflections": {
+        "didWell": "string or null",
+        "projectDescription": "string or null",
+        "couldImprove": "string or null"
+      }
+    },
+    {
+      "type": "add_book",
+      "book": {
+        "title": "Book title",
+        "author": "Author name",
+        "readingUrl": "https://... or null",
+        "coverImageUrl": "https://... or null",
+        "description": "string or null",
+        "gradeLevel": "string or null",
+        "genre": "string or null",
+        "pageCount": 123
+      }
+    }
+  ]
+}
+\`\`\`
+
+RULES:
+- Start with EXACTLY \`\`\`admin-commands (not \`\`\`json)
+- Output ONLY the code block, no prose outside it
+- Use only valid student IDs from AVAILABLE STUDENTS
+- If a student name is ambiguous, exclude that command and explain in assistantText
+- For project data, allow partial reflections; use null for missing fields
+- For add_book, require title + author; skip command if either is missing
+- For pageCount, return a number only when confident; otherwise omit the field
+- If nothing actionable is found, return "commands": [] with a clear assistantText`;
 }
 
 // ============================================================================
@@ -1675,7 +1718,41 @@ export const projectDataChat = action({
       ...args.messages.map((m) => ({ role: m.role, content: m.content })),
     ];
 
-    return callAIWithFallback(apiMessages, 0.6, "ProjectData");
+    const creativeResult = await callAIWithFallback(
+      apiMessages,
+      0.5,
+      "ProjectData:creative"
+    );
+
+    try {
+      const formatterPrompt = buildProjectDataFormatterPrompt(
+        creativeResult.content,
+        args.projectName,
+        args.students
+      );
+      const formattedResult = await callGroqWithRetry(
+        GROQ_FORMATTER_MODEL,
+        [{ role: "user", content: formatterPrompt }],
+        0.1,
+        "ProjectData:formatter"
+      );
+
+      return {
+        content: formattedResult.content,
+        usage: {
+          creative: creativeResult.usage,
+          formatter: formattedResult.usage,
+        },
+        provider: `${creativeResult.provider}+groq-formatter`,
+      };
+    } catch (error) {
+      console.warn(
+        `[ProjectData] Formatter failed, falling back to creative response: ${
+          error instanceof Error ? error.message : String(error)
+        }`
+      );
+      return creativeResult;
+    }
   },
 });
 

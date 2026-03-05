@@ -18,13 +18,17 @@ interface StudentData {
   batch?: string;
 }
 
-interface ExtractedStudentData {
+type PromptIntent = "add_project_data" | "add_book";
+type LinkType = "presentation" | "document" | "video" | "other";
+
+interface AddProjectDataCommand {
+  type: "add_project_data";
   studentName: string;
   studentId: string;
   links: Array<{
     url: string;
     title: string;
-    type: "presentation" | "document" | "video" | "other";
+    type: LinkType;
   }>;
   reflections: {
     didWell: string | null;
@@ -33,9 +37,26 @@ interface ExtractedStudentData {
   };
 }
 
+interface AddBookCommand {
+  type: "add_book";
+  book: {
+    title: string;
+    author: string;
+    readingUrl?: string | null;
+    coverImageUrl?: string | null;
+    description?: string | null;
+    gradeLevel?: string | null;
+    genre?: string | null;
+    pageCount?: number;
+  };
+}
+
+type AdminCommand = AddProjectDataCommand | AddBookCommand;
+
 interface ExtractedData {
-  students: ExtractedStudentData[];
+  assistantText: string;
   summary: string;
+  commands: AdminCommand[];
 }
 
 interface ProjectDataChatProps {
@@ -55,17 +76,164 @@ function createMessage(role: "user" | "assistant", content: string): Message {
 
 const INITIAL_GREETING = `Hi! I'm here to help you enter project data quickly. You can tell me about student work in natural language - like "John's presentation is at [link], he did great research on solar panels."
 
-I'll extract the data and confirm before saving. Ready when you are!`;
+I can also add books from your notes (including Google Drive links). I'll extract commands and confirm before saving. Ready when you are!`;
+
+const PROMPT_BUBBLES: Array<{
+  label: string;
+  intent: PromptIntent;
+  template: string;
+}> = [
+  {
+    label: "Add project",
+    intent: "add_project_data",
+    template:
+      "Update project reports: [student name], did well: [...], project: [...], improve: [...], link: [...]",
+  },
+  {
+    label: "Add book",
+    intent: "add_book",
+    template:
+      "Add book: title [...], author [...], Google Drive link [...], genre [...], grade [...], description [...]",
+  },
+];
 
 type ChatHistoryTurn = {
   role: "user" | "assistant";
   content: string;
 };
 
+function normalizeLinkType(value: unknown): LinkType {
+  if (value === "presentation" || value === "document" || value === "video") {
+    return value;
+  }
+  return "other";
+}
+
 function parseProjectDataResponse(content: string): {
   assistantText: string;
   extractedData: ExtractedData | null;
 } {
+  const adminCommandMatch = content.match(/```admin-commands\s*([\s\S]*?)```/);
+  if (adminCommandMatch) {
+    try {
+      const parsed = JSON.parse(adminCommandMatch[1].trim()) as {
+        assistantText?: string;
+        summary?: string;
+        commands?: Array<Record<string, unknown>>;
+      };
+
+      const commands: AdminCommand[] = [];
+      for (const rawCommand of parsed.commands ?? []) {
+        if (rawCommand?.type === "add_project_data") {
+          if (
+            typeof rawCommand.studentName !== "string" ||
+            typeof rawCommand.studentId !== "string"
+          ) {
+            continue;
+          }
+
+          const links = Array.isArray(rawCommand.links)
+            ? rawCommand.links
+                .map((link) => {
+                  if (
+                    !link ||
+                    typeof link !== "object" ||
+                    typeof (link as Record<string, unknown>).url !== "string"
+                  ) {
+                    return null;
+                  }
+                  const typedLink = link as Record<string, unknown>;
+                  return {
+                    url: typedLink.url as string,
+                    title:
+                      typeof typedLink.title === "string" && typedLink.title.trim()
+                        ? (typedLink.title as string)
+                        : "Project link",
+                    type: normalizeLinkType(typedLink.type),
+                  };
+                })
+                .filter((link): link is { url: string; title: string; type: LinkType } => !!link)
+            : [];
+
+          const reflections = (rawCommand.reflections as Record<string, unknown> | undefined) ?? {};
+          commands.push({
+            type: "add_project_data",
+            studentName: rawCommand.studentName,
+            studentId: rawCommand.studentId,
+            links,
+            reflections: {
+              didWell:
+                typeof reflections.didWell === "string" ? reflections.didWell : null,
+              projectDescription:
+                typeof reflections.projectDescription === "string"
+                  ? reflections.projectDescription
+                  : null,
+              couldImprove:
+                typeof reflections.couldImprove === "string"
+                  ? reflections.couldImprove
+                  : null,
+            },
+          });
+          continue;
+        }
+
+        if (rawCommand?.type === "add_book") {
+          const rawBook = rawCommand.book as Record<string, unknown> | undefined;
+          if (
+            !rawBook ||
+            typeof rawBook.title !== "string" ||
+            typeof rawBook.author !== "string"
+          ) {
+            continue;
+          }
+
+          const nextBook: AddBookCommand["book"] = {
+            title: rawBook.title,
+            author: rawBook.author,
+          };
+          if (typeof rawBook.readingUrl === "string") nextBook.readingUrl = rawBook.readingUrl;
+          if (typeof rawBook.coverImageUrl === "string") nextBook.coverImageUrl = rawBook.coverImageUrl;
+          if (typeof rawBook.description === "string") nextBook.description = rawBook.description;
+          if (typeof rawBook.gradeLevel === "string") nextBook.gradeLevel = rawBook.gradeLevel;
+          if (typeof rawBook.genre === "string") nextBook.genre = rawBook.genre;
+          if (typeof rawBook.pageCount === "number" && Number.isFinite(rawBook.pageCount)) {
+            nextBook.pageCount = rawBook.pageCount;
+          }
+
+          commands.push({
+            type: "add_book",
+            book: nextBook,
+          });
+        }
+      }
+
+      const assistantText =
+        typeof parsed.assistantText === "string" && parsed.assistantText.trim()
+          ? parsed.assistantText.trim()
+          : "I parsed your request and prepared commands to save.";
+      const summary =
+        typeof parsed.summary === "string" && parsed.summary.trim()
+          ? parsed.summary.trim()
+          : "";
+      return {
+        assistantText,
+        extractedData:
+          commands.length > 0
+            ? {
+                assistantText,
+                summary,
+                commands,
+              }
+            : null,
+      };
+    } catch {
+      return {
+        assistantText: content.trim(),
+        extractedData: null,
+      };
+    }
+  }
+
   const dataMatch = content.match(/```project-data\s*([\s\S]*?)```/);
   if (!dataMatch) {
     return {
@@ -75,12 +243,53 @@ function parseProjectDataResponse(content: string): {
   }
 
   try {
-    const parsed = JSON.parse(dataMatch[1].trim()) as ExtractedData;
+    const parsed = JSON.parse(dataMatch[1].trim()) as {
+      students?: Array<{
+        studentName: string;
+        studentId: string;
+        links?: Array<{ url: string; title?: string; type?: string }>;
+        reflections?: {
+          didWell?: string | null;
+          projectDescription?: string | null;
+          couldImprove?: string | null;
+        };
+      }>;
+      summary?: string;
+    };
+    const commands: AdminCommand[] = [];
+    for (const student of parsed.students ?? []) {
+      if (!student?.studentName || !student?.studentId) continue;
+      commands.push({
+        type: "add_project_data",
+        studentName: student.studentName,
+        studentId: student.studentId,
+        links: (student.links ?? [])
+          .filter((link) => typeof link.url === "string")
+          .map((link) => ({
+            url: link.url,
+            title: link.title || "Project link",
+            type: normalizeLinkType(link.type),
+          })),
+        reflections: {
+          didWell: student.reflections?.didWell ?? null,
+          projectDescription: student.reflections?.projectDescription ?? null,
+          couldImprove: student.reflections?.couldImprove ?? null,
+        },
+      });
+    }
     const textBeforeJson = content.slice(0, dataMatch.index).trim();
+    const assistantText =
+      textBeforeJson || "I found the following data. Want me to save it?";
     return {
-      assistantText:
-        textBeforeJson || "I found the following data. Want me to save it?",
-      extractedData: parsed,
+      assistantText,
+      extractedData:
+        commands.length > 0
+          ? {
+              assistantText,
+              summary: parsed.summary || "",
+              commands,
+            }
+          : null,
     };
   } catch {
     return {
@@ -127,10 +336,12 @@ export function ProjectDataChat({
   const [pendingData, setPendingData] = useState<ExtractedData | null>(null);
   const [isSaving, setIsSaving] = useState(false);
   const [saveSuccess, setSaveSuccess] = useState(false);
+  const [selectedIntent, setSelectedIntent] = useState<PromptIntent | null>(null);
 
   const chatAction = useAction(api.ai.projectDataChat);
   const addLink = useMutation(api.projectLinks.add);
   const updateReflection = useMutation(api.projectReflections.update);
+  const createBook = useMutation(api.books.create);
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -154,14 +365,17 @@ export function ProjectDataChat({
     }
   }, [isLoading, isSaving]);
 
-  const handleSend = async () => {
-    const trimmedInput = inputValue.trim();
+  const handleSend = async (overrideInput?: string) => {
+    const trimmedInput = (overrideInput ?? inputValue).trim();
     if (!trimmedInput || isLoading) return;
 
     const userMessage = createMessage("user", trimmedInput);
+    const intentPrefix = selectedIntent ? `[INTENT:${selectedIntent}] ` : "";
+    const inputForModel =
+      trimmedInput.startsWith("[INTENT:") ? trimmedInput : `${intentPrefix}${trimmedInput}`;
     const nextHistory: ChatHistoryTurn[] = [
       ...chatHistory,
-      { role: "user", content: trimmedInput },
+      { role: "user", content: inputForModel },
     ];
 
     setMessages((prev) => [...prev, userMessage]);
@@ -189,7 +403,9 @@ export function ProjectDataChat({
       const assistantMessage =
         assistantText || "I had trouble understanding that. Could you rephrase?";
 
-      setPendingData(extractedData);
+      setPendingData(
+        extractedData && extractedData.commands.length > 0 ? extractedData : null
+      );
       setMessages((prev) => [...prev, createMessage("assistant", assistantMessage)]);
       setChatHistory((prev) => [
         ...prev,
@@ -219,48 +435,83 @@ export function ProjectDataChat({
     setError(null);
 
     try {
-      // Save each student's data
-      for (const student of pendingData.students) {
-        const studentId = student.studentId as Id<"users">;
+      let projectCommandCount = 0;
+      let bookCommandCount = 0;
 
-        // Add links
-        for (const link of student.links) {
-          await addLink({
-            projectId,
-            userId: studentId,
-            url: link.url,
-            title: link.title,
-            linkType: link.type,
-          });
+      for (const command of pendingData.commands) {
+        if (command.type === "add_project_data") {
+          const studentId = command.studentId as Id<"users">;
+
+          for (const link of command.links) {
+            await addLink({
+              projectId,
+              userId: studentId,
+              url: link.url,
+              title: link.title,
+              linkType: link.type,
+            });
+          }
+
+          const hasReflectionData =
+            command.reflections.didWell ||
+            command.reflections.projectDescription ||
+            command.reflections.couldImprove;
+
+          if (hasReflectionData) {
+            await updateReflection({
+              projectId,
+              userId: studentId,
+              didWell: command.reflections.didWell || undefined,
+              projectDescription:
+                command.reflections.projectDescription || undefined,
+              couldImprove: command.reflections.couldImprove || undefined,
+            });
+          }
+
+          projectCommandCount += 1;
+          continue;
         }
 
-        // Update reflections (only non-null values)
-        const hasReflectionData =
-          student.reflections.didWell ||
-          student.reflections.projectDescription ||
-          student.reflections.couldImprove;
-
-        if (hasReflectionData) {
-          await updateReflection({
-            projectId,
-            userId: studentId,
-            didWell: student.reflections.didWell || undefined,
-            projectDescription:
-              student.reflections.projectDescription || undefined,
-            couldImprove: student.reflections.couldImprove || undefined,
+        if (command.type === "add_book") {
+          await createBook({
+            title: command.book.title,
+            author: command.book.author,
+            readingUrl: command.book.readingUrl || undefined,
+            coverImageUrl: command.book.coverImageUrl || undefined,
+            description: command.book.description || undefined,
+            gradeLevel: command.book.gradeLevel || undefined,
+            genre: command.book.genre || undefined,
+            pageCount: command.book.pageCount,
           });
+          bookCommandCount += 1;
         }
       }
 
       setSaveSuccess(true);
       setPendingData(null);
 
+      const summaryParts: string[] = [];
+      if (projectCommandCount > 0) {
+        summaryParts.push(
+          `updated ${projectCommandCount} project entr${
+            projectCommandCount === 1 ? "y" : "ies"
+          }`
+        );
+      }
+      if (bookCommandCount > 0) {
+        summaryParts.push(`added ${bookCommandCount} book${bookCommandCount === 1 ? "" : "s"}`);
+      }
+      const saveSummary =
+        summaryParts.length > 0
+          ? summaryParts.join(" and ")
+          : pendingData.summary || "Data has been recorded.";
+
       // Add confirmation message
       setMessages((prev) => [
         ...prev,
         createMessage(
           "assistant",
-          `Saved! ${pendingData.summary || "Data has been recorded."}\n\nWhat's next?`
+          `Saved! I ${saveSummary}.\n\nWhat's next?`
         ),
       ]);
     } catch (err) {
@@ -289,6 +540,18 @@ export function ProjectDataChat({
     }
   };
 
+  const handlePromptBubbleClick = (intent: PromptIntent, template: string) => {
+    const isSameIntent = selectedIntent === intent;
+    setSelectedIntent(isSameIntent ? null : intent);
+    setInputValue(isSameIntent ? "" : template);
+    inputRef.current?.focus();
+  };
+
+  const placeholder =
+    selectedIntent === "add_book"
+      ? "Paste Google Drive link and book details..."
+      : "Tell me about student work...";
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20, scale: 0.95 }}
@@ -302,7 +565,7 @@ export function ProjectDataChat({
           <span className="text-[0.65rem] uppercase tracking-[0.15em] text-[#888]">
             AI Assistant
           </span>
-          <h3 className="font-serif text-base">Project Data Entry</h3>
+          <h3 className="font-serif text-base">Admin Data Entry</h3>
         </div>
         <button
           onClick={onClose}
@@ -351,22 +614,38 @@ export function ProjectDataChat({
           >
             <h4 className="text-sm font-medium mb-2">Ready to save:</h4>
             <div className="space-y-2 text-sm">
-              {pendingData.students.map((student, i) => (
-                <div key={i} className="bg-white rounded-lg p-3">
-                  <p className="font-medium">{student.studentName}</p>
-                  <div className="text-xs text-muted-foreground mt-1 space-y-1">
-                    {student.links.length > 0 && (
-                      <p>
-                        {student.links.length} link
-                        {student.links.length !== 1 && "s"}
+              {pendingData.commands.map((command, i) => (
+                <div key={`${command.type}-${i}`} className="bg-white rounded-lg p-3">
+                  {command.type === "add_project_data" ? (
+                    <>
+                      <p className="font-medium">{command.studentName}</p>
+                      <div className="text-xs text-muted-foreground mt-1 space-y-1">
+                        {command.links.length > 0 && (
+                          <p>
+                            {command.links.length} link
+                            {command.links.length !== 1 && "s"}
+                          </p>
+                        )}
+                        {command.reflections.didWell && <p>Did well</p>}
+                        {command.reflections.projectDescription && (
+                          <p>Project desc</p>
+                        )}
+                        {command.reflections.couldImprove && <p>Could improve</p>}
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      <p className="font-medium">Book: {command.book.title}</p>
+                      <p className="text-xs text-muted-foreground">
+                        by {command.book.author}
                       </p>
-                    )}
-                    {student.reflections.didWell && <p>Did well</p>}
-                    {student.reflections.projectDescription && (
-                      <p>Project desc</p>
-                    )}
-                    {student.reflections.couldImprove && <p>Could improve</p>}
-                  </div>
+                      {command.book.readingUrl && (
+                        <p className="text-xs text-muted-foreground mt-1 truncate">
+                          Link: {command.book.readingUrl}
+                        </p>
+                      )}
+                    </>
+                  )}
                 </div>
               ))}
             </div>
@@ -418,6 +697,23 @@ export function ProjectDataChat({
             {error}
           </div>
         )}
+        <div className="flex flex-wrap gap-2 mb-2">
+          {PROMPT_BUBBLES.map((bubble) => (
+            <button
+              key={bubble.intent}
+              type="button"
+              onClick={() => handlePromptBubbleClick(bubble.intent, bubble.template)}
+              disabled={isLoading || isSaving}
+              className={`px-3 py-1.5 rounded-full text-xs border transition-colors ${
+                selectedIntent === bubble.intent
+                  ? "bg-[#1a1a1a] text-white border-[#1a1a1a]"
+                  : "bg-white text-[#333] border-black/15 hover:border-black/30"
+              }`}
+            >
+              {bubble.label}
+            </button>
+          ))}
+        </div>
         <div className="flex gap-2">
           <input
             ref={inputRef}
@@ -425,20 +721,22 @@ export function ProjectDataChat({
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder="Tell me about student work..."
+            placeholder={placeholder}
             disabled={isLoading || isSaving}
             className="flex-1 px-4 py-2.5 border border-black/10 rounded-xl text-sm focus:outline-none focus:border-black/30 disabled:opacity-50"
           />
           <Button
             size="icon"
-            onClick={handleSend}
+            onClick={() => handleSend()}
             disabled={!inputValue.trim() || isLoading || isSaving}
           >
             <Send className="h-4 w-4" />
           </Button>
         </div>
         <p className="text-[10px] text-muted-foreground mt-2 text-center">
-          Tip: Mention student names and URLs - I'll extract the data automatically
+          {selectedIntent === "add_book"
+            ? "Tip: Include title, author, and a Google Drive link for the book."
+            : "Tip: Mention student names and URLs - I'll extract project updates automatically."}
         </p>
       </div>
     </motion.div>

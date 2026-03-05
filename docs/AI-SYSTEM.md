@@ -8,7 +8,9 @@ AI logic lives in `convex/ai.ts` and is consumed by React components.
 
 1. Goal Chat (`api.ai.chat`) from `GoalChatPalette.tsx`
 2. Book Buddy (`api.ai.libraryChat`) from `BookBuddy.tsx`
-3. Project Data Chat (`api.ai.projectDataChat`) from `ProjectDataChat.tsx`
+3. Admin Data Chat (`api.ai.projectDataChat`) from `ProjectDataChat.tsx`
+   - Supports project report extraction and add-book command extraction.
+   - Uses Groq formatter stage to return executable command JSON.
 
 ## Provider strategy
 
@@ -27,7 +29,8 @@ Configure in Convex dashboard:
 All AI outputs must contain parseable fenced blocks used by UI:
 - `goal-ready`
 - `buddy-response`
-- `project-data`
+- `admin-commands` (primary for admin data chat)
+- `project-data` (legacy fallback support in UI parser)
 
 If parsing fails, UI should degrade safely to plain text.
 

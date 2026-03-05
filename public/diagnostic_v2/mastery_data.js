@@ -1073,7 +1073,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 5: Coordinate Plane",
-          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:coordinate-plane"
         }
       ]
     },
@@ -1090,7 +1090,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 5: Coordinate Plane Word Problems",
-          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:coordinate-plane"
         }
       ]
     },
@@ -1107,7 +1107,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 5: Classify 2D Shapes",
-          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/properties-of-shapes"
         }
       ]
     },
@@ -1124,7 +1124,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 5: Shape Hierarchies",
-          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/properties-of-shapes"
         }
       ]
     },
@@ -1141,7 +1141,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 5: Unit Conversion",
-          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/converting-units-of-measure"
         }
       ]
     },
@@ -1158,7 +1158,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 5: Line Plots with Fractions",
-          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/line-plots"
         }
       ]
     },
@@ -1175,7 +1175,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 5: Understand Volume",
-          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/5th-volume"
         }
       ]
     },
@@ -1192,7 +1192,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 5: Volume by Counting Cubes",
-          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/5th-volume"
         }
       ]
     },
@@ -1209,7 +1209,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 5: Volume of Rectangular Prisms",
-          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/5th-volume"
         }
       ]
     },
@@ -1226,7 +1226,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 5: Place Value and Powers of Ten",
-          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/powers-of-ten"
         }
       ]
     },
@@ -1243,7 +1243,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 5: Powers of 10",
-          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/powers-of-ten"
         }
       ]
     },
@@ -1260,7 +1260,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 5: Place Value and Decimals",
-          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-place-value-and-decimals"
         }
       ]
     },
@@ -1277,7 +1277,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 5: Rounding Decimals",
-          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-place-value-and-decimals"
         }
       ]
     },
@@ -1311,7 +1311,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 5: Multi-Digit Division",
-          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division"
         }
       ]
     },
@@ -1362,7 +1362,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 5: Add and Subtract Fractions",
-          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-3"
         }
       ]
     },
@@ -1379,7 +1379,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 5: Fractions as Division",
-          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-3"
         }
       ]
     },
@@ -1413,7 +1413,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 5: Fraction Multiplication as Scaling",
-          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/5th-multiply-fractions"
         }
       ]
     },
@@ -1430,7 +1430,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 5: Multiply Fractions and Mixed Numbers",
-          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/5th-multiply-fractions"
         }
       ]
     },
@@ -1447,7 +1447,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 5: Divide Unit Fractions",
-          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/divide-fractions"
         }
       ]
     },
@@ -1464,7 +1464,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 5: Numerical Expressions",
-          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-algebraic-thinking"
         }
       ]
     },
@@ -1481,7 +1481,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 5: Numerical Expressions",
-          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-algebraic-thinking"
         }
       ]
     },
@@ -1498,7 +1498,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 5: Numerical Patterns",
-          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-algebraic-thinking"
         }
       ]
     },
@@ -1549,7 +1549,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 6: Equivalent Expressions",
-          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables"
         }
       ]
     },
@@ -1566,7 +1566,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 6: Equivalent Expressions",
-          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables"
         }
       ]
     },
@@ -1634,7 +1634,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 6: One-Step Inequalities",
-          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities"
         }
       ]
     },
@@ -1685,7 +1685,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 6: Volume with Fractional Edges",
-          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic"
         }
       ]
     },
@@ -1702,7 +1702,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 6: Polygons on Coordinate Plane",
-          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:coordinate-plane"
         }
       ]
     },
@@ -1787,7 +1787,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 6: LCM & GCF",
-          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-factors-and-multiples"
+          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables"
         }
       ]
     },
@@ -1906,7 +1906,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 6: Intro to Percents",
-          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic/cc-6th-percents"
+          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:cc-6th-rates-and-percentages/cc-6th-percentages"
         }
       ]
     },
@@ -1957,7 +1957,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 6: Center and Variation",
-          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics"
         }
       ]
     },
@@ -1991,7 +1991,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 6: Summarize Numerical Data",
-          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics"
         }
       ]
     },
@@ -2008,7 +2008,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 7: Equivalent Linear Expressions",
-          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-variables-expressions"
         }
       ]
     },
@@ -2025,7 +2025,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 7: Rewrite Expressions in Context",
-          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-variables-expressions"
         }
       ]
     },
@@ -2042,7 +2042,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 7: Multi-Step Rational Number Problems",
-          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-variables-expressions"
         }
       ]
     },
@@ -2059,7 +2059,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 7: Solving Equations and Inequalities",
-          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-expressions-equations"
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-variables-expressions"
         }
       ]
     },
@@ -2076,7 +2076,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 7: Scale Drawings",
-          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry/cc-7th-scale-drawings"
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/x6b17ba59:scale-drawings/cc-7th-scale-drawings"
         }
       ]
     },
@@ -2093,7 +2093,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 7: Constructing Triangles",
-          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry"
         }
       ]
     },
@@ -2110,7 +2110,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 7: Cross Sections of Solids",
-          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry"
         }
       ]
     },
@@ -2127,7 +2127,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 7: Area and Circumference of Circles",
-          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry/cc-7th-area-and-circumference"
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry/cc-7th-area-circumference"
         }
       ]
     },
@@ -2144,7 +2144,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 7: Angle Relationships",
-          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry"
         }
       ]
     },
@@ -2161,7 +2161,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 7: Area Volume and Surface Area",
-          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry"
         }
       ]
     },
@@ -2195,7 +2195,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 7: Multiply & Divide Rational Numbers",
-          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-multiply-divide"
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-multiply-and-divide"
         }
       ]
     },
@@ -2212,7 +2212,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 7: Rational Number Word Problems",
-          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-multiply-divide"
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-multiply-and-divide"
         }
       ]
     },
@@ -2229,7 +2229,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 7: Unit Rates and Proportional Relationships",
-          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-proportional-relationships"
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-ratio-proportion"
         }
       ]
     },
@@ -2246,7 +2246,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 7: Proportional Relationships",
-          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-proportional-relationships"
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-ratio-proportion"
         }
       ]
     },
@@ -2263,7 +2263,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 7: Percent Problems",
-          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-fractions-decimals-percentages"
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-fractions-decimals"
         }
       ]
     },
@@ -2280,7 +2280,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 7: Sampling Methods",
-          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-statistics-probability/cc-7th-samples"
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-probability-statistics"
         }
       ]
     },
@@ -2297,7 +2297,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 7: Inference from Samples",
-          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-statistics-probability/cc-7th-samples"
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-probability-statistics"
         }
       ]
     },
@@ -2314,7 +2314,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 7: Comparing Distributions",
-          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-probability-statistics"
         }
       ]
     },
@@ -2331,7 +2331,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 7: Comparative Inference",
-          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-probability-statistics"
         }
       ]
     },
@@ -2348,7 +2348,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 7: Probability Basics",
-          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-statistics-probability/cc-7th-probability"
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-probability-statistics"
         }
       ]
     },
@@ -2365,7 +2365,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 7: Experimental Probability",
-          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-statistics-probability/cc-7th-probability"
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-probability-statistics"
         }
       ]
     },
@@ -2382,7 +2382,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 7: Probability Models",
-          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-probability-statistics"
         }
       ]
     },
@@ -2399,7 +2399,7 @@ var MASTERY_V2_DATA = {
       "ka_links": [
         {
           "label": "KA Grade 7: Compound Probability",
-          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math"
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-probability-statistics"
         }
       ]
     }
@@ -2421,7 +2421,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "25,936",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied, but you forgot to add a carry into the next place. In the standard algorithm, each carry must be added to the next digit’s product.",
+            "misconception_text": "Nice try. A tiny carry got skipped. Just add that carry to the next digit’s product and keep going.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
@@ -2433,14 +2433,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "26,136",
             "correct": false,
-            "misconception_text": "Misconception: You carried the wrong number from a step. Check the tens step: 4×7=28 plus the carry makes 33, so the carry should be 3.",
+            "misconception_text": "Nice try. One carry was off. 4 times 7 is 28, plus the old carry makes 33, so the new carry is 3.",
             "misconception_code": "REGROUPING_ERROR"
           },
           {
             "label": "D",
             "text": "8,236",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied 748×7, but you didn’t multiply the thousands digit (3,000) by 7. Every digit in 3,748 must be multiplied by 7.",
+            "misconception_text": "Nice try. Each digit in 3,748 must be multiplied by 7 to get the full answer.",
             "misconception_code": "OPERATION_SELECTION"
           }
         ]
@@ -2465,21 +2465,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "72",
             "correct": false,
-            "misconception_text": "Misconception: You treated the 2 in 25 as 2 ones instead of 2 tens, so you didn’t shift left. The second row should start in the tens place.",
+            "misconception_text": "Nice try. The 2 in 25 means 20, so move the second row one place left to the tens place.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "360",
             "correct": false,
-            "misconception_text": "Misconception: You added a zero because it’s a tens row, but you didn’t multiply by 2 first. You must do 36×2, then place it in the tens row.",
+            "misconception_text": "Nice try. You added the zero for the tens row. Next, multiply 36 by 2 and write that in the tens row.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
             "label": "D",
             "text": "7,200",
             "correct": false,
-            "misconception_text": "Misconception: You shifted the second row too far, as if the 2 meant 200. The 2 in 25 represents 20, so you shift one place, not two.",
+            "misconception_text": "Nice try. The 2 means 20, so shift the second row only one place left.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -2499,14 +2499,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "135",
             "correct": false,
-            "misconception_text": "Misconception: You found both partial products but added them without shifting the tens row. The row for the ‘1’ in 14 represents 10, so it must be one place to the left.",
+            "misconception_text": "Nice try. The tens row must be moved one place left before we add.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "2,808",
             "correct": false,
-            "misconception_text": "Misconception: You shifted the tens row two places, as if the 1 in 14 meant 100. It actually means 10, so you shift only one place.",
+            "misconception_text": "Nice try. The 1 means 10, so shift the tens row just one place.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -2518,7 +2518,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "358",
             "correct": false,
-            "misconception_text": "Misconception: You made a carry mistake while multiplying 27×4 (you didn’t add the carry to the next step). Recheck 7×4=28, then 2×4 should include the carried 2.",
+            "misconception_text": "Nice try. Check the carry from 7 times 4 and add it in the next step.",
             "misconception_code": "OPERATION_SELECTION"
           }
         ]
@@ -2543,21 +2543,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "9,244",
             "correct": false,
-            "misconception_text": "Misconception: You forgot to add the carry from 6×4=24 into the tens step. The carry must be added to 1×4.",
+            "misconception_text": "Nice try. You missed the extra tens from 6 times 4. Add that carry to the tens from 1 times 4.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
             "label": "C",
             "text": "9,444",
             "correct": false,
-            "misconception_text": "Misconception: You added the carry to the wrong place value (hundreds instead of tens). Carries always move to the next place to the left immediately.",
+            "misconception_text": "Nice try. The carry went to the wrong place. Carries always hop just one spot left.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "D",
             "text": "92,640",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied by 40 instead of 4 by adding an extra zero. Make sure you’re multiplying by 4 (ones), not 40 (tens).",
+            "misconception_text": "Nice try. You multiplied by 40, but we only need to multiply by 4. Check you are using ones, not tens.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -2577,7 +2577,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "8,120",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied by 4 but forgot that 40 is ten times bigger than 4. Your final answer should be shifted one place left (one extra zero).",
+            "misconception_text": "Nice try. You did 4 times well, but we are doing 40. Shift your answer one place left to show tens.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -2589,14 +2589,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "9,200",
             "correct": false,
-            "misconception_text": "Misconception: You dropped the zero in 2,030 and treated it like 230. The zero in the middle still changes place value and must be included.",
+            "misconception_text": "Nice try. Keep the zero in 2,030; it holds the tens place.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "D",
             "text": "812,000",
             "correct": false,
-            "misconception_text": "Misconception: You added one extra zero, treating 40 like 400. Since 40 has one zero, you shift one place, not two.",
+            "misconception_text": "Nice try. 40 has just one zero, so move the answer one place. You added too many zeros.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -2618,7 +2618,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "9.08",
             "correct": false,
-            "misconception_text": "Misconception: You added only the whole numbers and kept the .08. You also need to add the tenths and hundredths from 2.90.",
+            "misconception_text": "Nice try. You added the whole parts and kept .08. Also add the tenths and hundredths from 2.90.",
             "misconception_code": "PLACE_VALUE"
           },
           {
@@ -2630,14 +2630,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "7.37",
             "correct": false,
-            "misconception_text": "Misconception: You lined up digits instead of lining up the decimal points, so 2.90 acted like 0.29. Always align the decimal points first.",
+            "misconception_text": "Nice try. Line up the decimal points first, not just the digits.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "D",
             "text": "9.17",
             "correct": false,
-            "misconception_text": "Misconception: You placed the 9 from 2.9 into the hundredths place (like 2.09). But 2.9 means 2.90, so the 9 is in the tenths place.",
+            "misconception_text": "Nice try. 2.9 is the same as 2.90, so the 9 is in the tenths place, not the hundredths. Line up the decimal points and try again.",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -2657,7 +2657,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "3.67",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted the whole numbers and then kept 0.67 instead of borrowing. Because 0.00 is smaller than 0.67, you must borrow across the decimal.",
+            "misconception_text": "Nice try. You kept 0.67 but 0 is smaller. Borrow across the decimal so you can subtract.",
             "misconception_code": "PLACE_VALUE"
           },
           {
@@ -2669,14 +2669,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "2.43",
             "correct": false,
-            "misconception_text": "Misconception: You borrowed from 5.00 but didn’t adjust the tenths correctly after borrowing to the hundredths. After borrowing 1 tenth to make 10 hundredths, the tenths should be 9, not 10.",
+            "misconception_text": "Nice try. After you borrow 1 tenth, that tenth becomes 10 hundredths, and the tenths digit drops to 9, not 10.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "D",
             "text": "2.93",
             "correct": false,
-            "misconception_text": "Misconception: You treated 2.67 like it was 2.067 by misaligning the digits. In subtraction, the decimal points must line up so tenths subtract from tenths and hundredths from hundredths.",
+            "misconception_text": "Nice try. Keep the decimal points stacked. Tenths must subtract tenths, and hundredths must subtract hundredths.",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -2696,7 +2696,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "2850",
             "correct": false,
-            "misconception_text": "Misconception: You ignored the decimal point and multiplied 475 × 6. The digits are right, but the decimal value must stay correct: 4.75 is less than 5, so the product can’t be in the thousands.",
+            "misconception_text": "Nice try. You used 475 instead of 4.75. 4.75 is less than 5, so your answer should be much smaller.",
             "misconception_code": "PLACE_VALUE"
           },
           {
@@ -2708,14 +2708,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "10.75",
             "correct": false,
-            "misconception_text": "Misconception: You added instead of multiplying. Multiplication means 6 groups of 4.75, not 4.75 + 6.",
+            "misconception_text": "Nice try. This problem wants 6 groups of 4.75, so multiply, don’t add. 4.75 × 6 gives the total.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "24.75",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied only the whole-number part (4×6) and left the .75 unchanged. The decimal part is also multiplied by 6.",
+            "misconception_text": "Nice try. You only multiplied the 4 part. Multiply the .75 part by 6 too.",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -2735,14 +2735,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "10",
             "correct": false,
-            "misconception_text": "Misconception: You placed the decimal too far to the right by not counting all the decimal places. The product of two decimals less than 1 should be less than 1.",
+            "misconception_text": "Nice try. Count every decimal place in both numbers, then put that many in the product. Two decimals under 1 stay under 1.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "B",
             "text": "1",
             "correct": false,
-            "misconception_text": "Misconception: You counted too few decimal places in the product. Since both factors are less than 1, the product should be smaller than each factor, not equal to 1.",
+            "misconception_text": "Nice try. You missed some decimal places. Both numbers are less than 1, so the answer must be smaller than 1.",
             "misconception_code": "PLACE_VALUE"
           },
           {
@@ -2754,7 +2754,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "0.01",
             "correct": false,
-            "misconception_text": "Misconception: You placed the decimal too far to the left (too many decimal places). Count the total decimal places in both factors to place the decimal correctly.",
+            "misconception_text": "Nice try. You moved the decimal too far left. Add the decimal places from both numbers and place it right.",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -2774,7 +2774,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "0.07",
             "correct": false,
-            "misconception_text": "Misconception: You moved the decimal in the divisor (0.09 → 9) but didn’t move the decimal in the dividend the same way. If you multiply the divisor by 100, you must multiply the dividend by 100 too.",
+            "misconception_text": "Nice try. You moved the decimal in 0.09 but not in 0.63. Move both two places right to stay fair.",
             "misconception_code": "PLACE_VALUE"
           },
           {
@@ -2786,14 +2786,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "0.7",
             "correct": false,
-            "misconception_text": "Misconception: You treated 0.09 like 9 and also shifted the dividend only a little. When you make 0.09 into 9, you have to shift the dividend the same number of places.",
+            "misconception_text": "Nice try. Move the decimal in 0.63 two places right, just like you did for 0.09.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "700",
             "correct": false,
-            "misconception_text": "Misconception: You moved the decimal in the dividend (0.63 → 63) but didn’t move the divisor to match. In decimal division, you must scale both numbers by the same power of 10.",
+            "misconception_text": "Nice try. Move both decimals the same amount so the problem stays balanced, then divide the new whole numbers.",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -2815,7 +2815,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "3/8",
             "correct": false,
-            "misconception_text": "Misconception: You added the numerators and added the denominators. That changes the size of the pieces, so it doesn’t keep the fractions fair to add.",
+            "misconception_text": "Nice try. You added tops and bottoms. First make the pieces the same size, then add the tops.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
@@ -2827,14 +2827,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "3/5",
             "correct": false,
-            "misconception_text": "Misconception: You added the numerators but kept one denominator. You can only add numerators when the denominators (piece sizes) match.",
+            "misconception_text": "Nice try. You added only the tops and kept one bottom. Make the bottoms match first.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
             "label": "D",
             "text": "7/15",
             "correct": false,
-            "misconception_text": "Misconception: You tried to use a common denominator but changed the denominator without changing the numerator the same way. When the denominator is multiplied, the numerator must be multiplied too.",
+            "misconception_text": "Nice try. You fixed the bottom but not the top. Change both numbers when you change the size.",
             "misconception_code": "DENOMINATOR_REASONING"
           }
         ]
@@ -2854,7 +2854,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "2",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted straight across in both numerator and denominator. Denominators tell the size of the parts, so you can’t subtract them like that.",
+            "misconception_text": "Nice try. You subtracted straight across. Make the pieces the same size before you subtract the tops.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
@@ -2866,14 +2866,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "2/3",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted the numerators but kept the denominator 6. That only works when the fractions already have the same denominator.",
+            "misconception_text": "Nice try. First rewrite both fractions with the same denominator, then subtract only the top numbers while keeping the bottom the same.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
             "label": "D",
             "text": "3/4",
             "correct": false,
-            "misconception_text": "Misconception: You used 12 as a common denominator but didn’t change 1/4 correctly. If 1/4 becomes twelfths, it must be 3/12, not 1/12.",
+            "misconception_text": "Nice try. 12 works, but 1/4 must become 3/12. Then add the fractions.",
             "misconception_code": "DENOMINATOR_REASONING"
           }
         ]
@@ -2893,7 +2893,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "3 5/7",
             "correct": false,
-            "misconception_text": "Misconception: You added the numerators and denominators of the fractional parts (2/3 + 3/4). For unlike denominators, you must rename to like denominators first.",
+            "misconception_text": "Nice try. You added tops and bottoms, but the bottoms must match first. Make them match, then add the tops.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
@@ -2905,14 +2905,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "3 11/12",
             "correct": false,
-            "misconception_text": "Misconception: You found a common denominator but changed one fraction without changing its numerator the same way. Renaming must keep the fraction’s value the same.",
+            "misconception_text": "Nice try. You renamed a fraction but forgot to fix the top. Multiply top and bottom by the same number to keep it equal.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
             "label": "D",
             "text": "4 17/12",
             "correct": false,
-            "misconception_text": "Misconception: You stopped after adding and left the fractional part as an improper fraction. The problem asks for simplest form, so you should regroup 17/12 as 1 5/12.",
+            "misconception_text": "Nice try. 17/12 is the same as 1 5/12. Just split it into a whole and the leftover part.",
             "misconception_code": "REGROUPING_ERROR"
           }
         ]
@@ -2932,7 +2932,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "2 13/24",
             "correct": false,
-            "misconception_text": "Misconception: You borrowed for the fractions but forgot to reduce the whole-number part before subtracting. Borrowing 1 whole means the top whole number goes down by 1.",
+            "misconception_text": "Nice try. You borrowed for the fractions. After you take 1 from the 3, change it to 2.",
             "misconception_code": "REGROUPING_ERROR"
           },
           {
@@ -2944,14 +2944,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "2 11/24",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted the fractions in the wrong order instead of borrowing (you did 5/8 − 1/6). In subtraction, you must keep the order and borrow when needed.",
+            "misconception_text": "Nice try. You flipped the fractions to skip borrowing. If the top piece is too small, borrow from the whole number first.",
             "misconception_code": "REGROUPING_ERROR"
           },
           {
             "label": "D",
             "text": "1 1/7",
             "correct": false,
-            "misconception_text": "Misconception: You chose a ‘common denominator’ by adding denominators (6+8=14). A common denominator must be a common multiple, like 24 for sixths and eighths.",
+            "misconception_text": "Nice try. You added the bottoms. Find a number both 6 and 8 fit into, like 24.",
             "misconception_code": "DENOMINATOR_REASONING"
           }
         ]
@@ -2971,7 +2971,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Add the denominators to get 9, then rewrite both fractions with denominator 9.",
             "correct": false,
-            "misconception_text": "Misconception: You used 3+6 as the common denominator. A common denominator must be a common multiple of both denominators, not their sum.",
+            "misconception_text": "Nice try. The bottoms 3 and 6 were added. Pick a number both 3 and 6 divide into.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
@@ -2983,14 +2983,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Add numerators and denominators: (2+5)/(3+6).",
             "correct": false,
-            "misconception_text": "Misconception: You’re combining denominators like they are numbers you can add, but denominators represent piece size. You must make the piece sizes the same first.",
+            "misconception_text": "Nice try. You joined the tops and bottoms right away. First make the bottoms match so the pieces are the same size.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
             "label": "D",
             "text": "Change 2/3 into 2/6 by changing only the denominator to match 6.",
             "correct": false,
-            "misconception_text": "Misconception: You changed the denominator without changing the numerator the same way. When you rename a fraction, you must multiply numerator and denominator by the same number to keep its value.",
+            "misconception_text": "Nice try. You only fixed the bottom. To keep the value, multiply the top and bottom by the same number.",
             "misconception_code": "DENOMINATOR_REASONING"
           }
         ]
@@ -3012,7 +3012,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "8 3/5",
             "correct": false,
-            "misconception_text": "Misconception: You added instead of multiplying. In fraction multiplication, you scale the fraction by the whole number (8 groups of 3/5).",
+            "misconception_text": "Nice try. You added 8 and 3/5. We need 8 groups of 3/5, so multiply 8 times 3/5.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -3024,14 +3024,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "24",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied the numerator but forgot the denominator still matters. The 5 stays as the denominator because you are taking fifths.",
+            "misconception_text": "Nice try. You multiplied the top number, but keep the bottom number too so we are still counting fifths.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
             "label": "D",
             "text": "3/40",
             "correct": false,
-            "misconception_text": "Misconception: You changed only the denominator as if you were splitting 3/5 into 8 parts. Multiplying by 8 means making 8 copies, so the numerator must change too.",
+            "misconception_text": "Nice try. This looks like 3/5 was split into 8. Times 8 makes it bigger, so times the top.",
             "misconception_code": "DENOMINATOR_REASONING"
           }
         ]
@@ -3051,7 +3051,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "7 1/4",
             "correct": false,
-            "misconception_text": "Misconception: You added 6 + 5/4 instead of multiplying. The problem is asking for 6 groups of 5/4, not a sum.",
+            "misconception_text": "Nice try. You added 6 and 5/4. We need 6 groups of 5/4, so multiply 6×5/4.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -3063,14 +3063,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "15/2",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied correctly but didn’t follow the instruction to write a mixed number. Convert 15/2 to a mixed number.",
+            "misconception_text": "Nice try. You have the right improper fraction. Change it to a mixed number for the final answer.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "5/24",
             "correct": false,
-            "misconception_text": "Misconception: You treated the multiplication like dividing or like making the fraction smaller. Multiplying by 6 should make the amount larger here.",
+            "misconception_text": "Nice try. You put 6 in the bottom. Multiplying by a whole number usually makes the answer bigger.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -3090,7 +3090,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "18/36",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied correctly but stopped before simplifying. 18/36 can be reduced by dividing numerator and denominator by 18.",
+            "misconception_text": "Nice try. Good start. Divide top and bottom of 18/36 by the same number to make it simplest.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
@@ -3102,14 +3102,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "1/4",
             "correct": false,
-            "misconception_text": "Misconception: You used a wrong rule like adding numerators while multiplying denominators. In multiplication, you must multiply both numerators and both denominators.",
+            "misconception_text": "Nice try. You mixed up the rule. When multiplying fractions, go straight across: top×top and bottom×bottom.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
             "label": "D",
             "text": "2",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied the numerators but forgot to multiply the denominators. In fraction multiplication, both parts change: (6×3)/(9×4).",
+            "misconception_text": "Nice try. You only multiplied the tops. Multiply top×top and bottom×bottom to get the new fraction.",
             "misconception_code": "DENOMINATOR_REASONING"
           }
         ]
@@ -3134,21 +3134,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "1 5/12 cup",
             "correct": false,
-            "misconception_text": "Misconception: You treated “of” like addition and added the fractions. “3/4 of 2/3” means multiply, not add.",
+            "misconception_text": "Nice try. You added the amounts. The word \"of\" tells us to multiply, so multiply the two numbers.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
             "label": "C",
             "text": "2/9 cup",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied only the denominators and kept the numerator the same. In multiplication, you must multiply the numerators too.",
+            "misconception_text": "Nice try. You only multiplied the bottoms. Multiply the tops together too to finish the problem.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
             "label": "D",
             "text": "8/9 cup",
             "correct": false,
-            "misconception_text": "Misconception: You treated “of” like division and flipped a fraction. The problem is asking for a part of 2/3, so you should multiply.",
+            "misconception_text": "Nice try. It looks like you flipped a fraction, like in divide. We want part of 2/3, so multiply.",
             "misconception_code": "OPERATION_SELECTION"
           }
         ]
@@ -3168,7 +3168,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "3/2",
             "correct": false,
-            "misconception_text": "Misconception: You added the fractions instead of multiplying. Multiplication means multiply across, not find a common denominator and add.",
+            "misconception_text": "Nice try. You added. For times, multiply across without matching bottoms.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
@@ -3180,14 +3180,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "7/18",
             "correct": false,
-            "misconception_text": "Misconception: You used a wrong rule like adding numerators but multiplying denominators. For multiplication, you multiply the numerators and multiply the denominators.",
+            "misconception_text": "Nice try. You added tops and kept bottoms. Multiply tops and bottoms straight across for the right answer.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
             "label": "D",
             "text": "10/18",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied correctly but didn’t simplify to simplest form. 10/18 can be reduced by dividing numerator and denominator by 2.",
+            "misconception_text": "Nice try. You have the right product. Now divide top and bottom by their largest common factor to simplify.",
             "misconception_code": "DENOMINATOR_REASONING"
           }
         ]
@@ -3209,14 +3209,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "12",
             "correct": false,
-            "misconception_text": "Misconception: You treated the exponent like a multiplier and did 3 × 4. Exponents mean repeated multiplication, not \"times the exponent.\".",
+            "misconception_text": "Nice try. 3^4 is not 3x4. It means 3x3x3x3.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "64",
             "correct": false,
-            "misconception_text": "Misconception: You switched the base and exponent and did 4³. The base is 3 and the exponent is 4 here.",
+            "misconception_text": "Nice try. You swapped base and power. Use 3 as base and multiply it four times.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -3228,7 +3228,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "27",
             "correct": false,
-            "misconception_text": "Misconception: You used the wrong exponent and did 3³. The exponent tells how many 3's to multiply, and here it's 4.",
+            "misconception_text": "Nice try. You only multiplied 3 three times. Add one more 3 to finish 3 to the fourth power.",
             "misconception_code": "OPERATION_SELECTION"
           }
         ]
@@ -3248,7 +3248,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "15",
             "correct": false,
-            "misconception_text": "Misconception: You did 5 × 3. But 5³ means three 5's multiplied together, not 5 times 3.",
+            "misconception_text": "Nice try. It looks like 5×3. Cube means 5×5×5.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -3260,14 +3260,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "243",
             "correct": false,
-            "misconception_text": "Misconception: You flipped it and did 3⁵. Don't swap base and exponent—5³ is different from 3⁵.",
+            "misconception_text": "Nice try. 5³ and 3⁵ give different answers. Be sure the base and exponent stay in place.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "25",
             "correct": false,
-            "misconception_text": "Misconception: You only multiplied two 5's, like 5². The exponent 3 needs three 5's: 5 × 5 × 5.",
+            "misconception_text": "Nice try. You used two 5’s. Cube needs three: 5×5×5.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -3287,14 +3287,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "12",
             "correct": false,
-            "misconception_text": "Misconception: You treated 4 × 2 like just \"+4\" and didn't multiply by 2. The × means multiply first, then add.",
+            "misconception_text": "Nice try. Do the power and multiplication before you add. That keeps every step in order.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
             "label": "B",
             "text": "14",
             "correct": false,
-            "misconception_text": "Misconception: You treated 2³ like 2 × 3. Exponents mean repeated multiplication: 2³ = 2 × 2 × 2.",
+            "misconception_text": "Nice try. 2³ means 2×2×2, not 2×3.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -3306,7 +3306,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "24",
             "correct": false,
-            "misconception_text": "Misconception: You added 2³ + 4 first and then multiplied by 2. Multiplication comes before addition unless parentheses say otherwise.",
+            "misconception_text": "Nice try. Do multiplication and powers before you add. That is the order of operations.",
             "misconception_code": "ORDER_OF_OPERATIONS"
           }
         ]
@@ -3331,21 +3331,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "−9 and −9",
             "correct": false,
-            "misconception_text": "Misconception: You acted like the parentheses don't matter. But (−3)² squares the negative number inside the parentheses.",
+            "misconception_text": "Nice try. The whole −3 is squared, so the answer is positive.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "C",
             "text": "9 and 9",
             "correct": false,
-            "misconception_text": "Misconception: You assumed \"squaring always makes it positive,\" but in −3² the square happens first, then the negative sign is applied.",
+            "misconception_text": "Nice try. For −3², square 3 first, then keep the minus.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "D",
             "text": "−9 and 9",
             "correct": false,
-            "misconception_text": "Misconception: You swapped which expression has the negative included in the square. The parentheses decide whether the −3 is squared or not.",
+            "misconception_text": "Nice try. Parentheses tell which number is squared. Keep track of what is inside them.",
             "misconception_code": "SIGN_RULE"
           }
         ]
@@ -3370,21 +3370,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "2² + 5²",
             "correct": false,
-            "misconception_text": "Misconception: You squared each number separately. The words say square the sum, so you must add first, then square.",
+            "misconception_text": "Nice try. First add the numbers, then square the total. Do not square each number alone.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           },
           {
             "label": "C",
             "text": "2 + 5²",
             "correct": false,
-            "misconception_text": "Misconception: You squared only the 5. The phrase \"square of the sum\" means the entire (2 + 5) gets squared.",
+            "misconception_text": "Nice try. You squared only 5. Add 2 and 5 first, then square that whole sum.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "(2 + 5) × 2",
             "correct": false,
-            "misconception_text": "Misconception: You treated \"square\" like \"multiply by 2.\" Squaring means multiply the quantity by itself.",
+            "misconception_text": "Nice try. Square means multiply the number by itself, not multiply by 2.",
             "misconception_code": "OPERATION_SELECTION"
           }
         ]
@@ -3411,21 +3411,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "No, x = 2 does not make the equation true.",
             "correct": false,
-            "misconception_text": "Misconception: You added 3 + 2 instead of multiplying 3 × 2, so you didn’t actually check 3x.",
+            "misconception_text": "Nice try. You added 3+2, but we need 3×2 to test 3x.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Yes, because 6 ÷ 3 = 3.",
             "correct": false,
-            "misconception_text": "Misconception: You solved for x and got 3, but the question is asking whether x = 2 works; you still need to substitute 2.",
+            "misconception_text": "Nice try. You solved for x. Just plug in 2 to see if it fits.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "No, because 2 ÷ 3 = 0.67, not 6.",
             "correct": false,
-            "misconception_text": "Misconception: You divided the numbers the wrong way; the equation is 3 × x, not x ÷ 3.",
+            "misconception_text": "Nice try. The equation is 3 times x. Do not divide x over 3.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -3450,21 +3450,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "{1.1}",
             "correct": false,
-            "misconception_text": "Misconception: You chose the number on the right side without substituting; x has to be tested in x − 0.4, not matched to 1.1.",
+            "misconception_text": "Nice try. Don't just pick 1.1. Try each x in x - 0.4 and see which one equals 1.1.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "{0.7}",
             "correct": false,
-            "misconception_text": "Misconception: You did 1.1 − 0.4 and treated that as x, but the equation says x is the number you subtract 0.4 from.",
+            "misconception_text": "Nice try. The equation is x take away 0.4, not 1.1 take away 0.4.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
             "label": "D",
             "text": "{0.7, 1.5}",
             "correct": false,
-            "misconception_text": "Misconception: You didn’t check each value carefully; only one of these makes the left side equal 1.1.",
+            "misconception_text": "Nice try. Only one of these values makes the left side equal 1.1. Check each one carefully.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -3489,21 +3489,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "Yes, x = 7 makes the inequality true.",
             "correct": false,
-            "misconception_text": "Misconception: You included the “equal” case; 7 + 3 equals 10, but the inequality is “< 10,” not “≤ 10.”.",
+            "misconception_text": "Nice try. The sign is < 10, so 10 itself is not included. 7 + 3 equals 10, so it does not fit.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Yes, because 10 − 3 = 7.",
             "correct": false,
-            "misconception_text": "Misconception: You solved like it was an equation and stopped; you still need to substitute 7 and check whether the result is strictly less than 10.",
+            "misconception_text": "Nice try. Put 7 in and add. Make sure that total stays under 10.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Yes, because 7 is less than 10.",
             "correct": false,
-            "misconception_text": "Misconception: You compared x to 10 but forgot to add 3 first; the inequality is about x + 3.",
+            "misconception_text": "Nice try. First add 3 to x, then compare that sum to 10. The inequality is about x + 3.",
             "misconception_code": "OPERATION_SELECTION"
           }
         ]
@@ -3528,21 +3528,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "9 − 5 = 4, so x = 2 IS a solution.",
             "correct": false,
-            "misconception_text": "Misconception: You found what x should be, but you didn’t compare that to the given value x = 2.",
+            "misconception_text": "Nice try. You found x, but you still need to check if that x equals 2.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Substitute 2: 2 + 5 = 9, so x = 2 IS a solution.",
             "correct": false,
-            "misconception_text": "Misconception: You made an arithmetic error; 2 + 5 equals 7, not 9.",
+            "misconception_text": "Nice try. 2 + 5 is 7, not 9. Check your add again.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Substitute 2: 2 + 5 = 7, and 7 < 9, so x = 2 IS a solution.",
             "correct": false,
-            "misconception_text": "Misconception: You treated an equation like an inequality; equations require both sides to be equal.",
+            "misconception_text": "Nice try. An equation needs both sides to match exactly. You used an inequality idea instead.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -3562,7 +3562,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "3.4",
             "correct": false,
-            "misconception_text": "Misconception: You chose the result (3.4) as x, but you need x such that x − 0.6 equals 3.4.",
+            "misconception_text": "Nice try. 3.4 is the answer. Find the x that makes x - 0.6 equal that.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -3574,14 +3574,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "4.6",
             "correct": false,
-            "misconception_text": "Misconception: You added 0.6 to the wrong side in your thinking; check by substituting to see whether 4.6 − 0.6 equals 3.4.",
+            "misconception_text": "Nice try. Try 4.6 − x = 3.4 to see if x = 0.6 fits.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "5.2",
             "correct": false,
-            "misconception_text": "Misconception: You likely treated 0.6 like 6 or made a place-value slip; subtracting 0.6 should change the number by less than 1.",
+            "misconception_text": "Nice try. You may have used 6 instead of 0.6. The change should stay smaller than 1.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -3603,7 +3603,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Independent: c, Dependent: t",
             "correct": false,
-            "misconception_text": "Misconception: You swapped them. The total cost depends on how many tickets you buy, not the other way around.",
+            "misconception_text": "Nice try. The total cost changes when you pick more tickets, so cost depends on tickets.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -3615,14 +3615,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Independent: 6, Dependent: c",
             "correct": false,
-            "misconception_text": "Misconception: You treated the price \"6\" like a variable that changes. The $6 is a constant, not one of the changing quantities.",
+            "misconception_text": "Nice try. The $6 never moves. Look for the things that can go up or down.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Independent: c, Dependent: 6",
             "correct": false,
-            "misconception_text": "Misconception: You chose the cost as \"independent\" because it looks like the main number. But cost changes because the number of tickets changes.",
+            "misconception_text": "Nice try. As ticket count grows, the cost grows with it. Cost depends on tickets.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -3647,21 +3647,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "y = 2x + 3",
             "correct": false,
-            "misconception_text": "Misconception: You switched the starting bonus and the \"points per level.\" The bonus is the constant, and the per-level points multiply x.",
+            "misconception_text": "Nice try. You swapped the starting bonus and the per-level part. Keep the bonus alone.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
             "label": "C",
             "text": "y = 3x − 2",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted the bonus instead of adding it. The situation says you start with extra points, so it should increase the total.",
+            "misconception_text": "Nice try. The free points come one time at the start. Add them after the level points.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "y = 3(x + 2)",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied the bonus by 3 as if the bonus repeats every level. The bonus happens once at the start, so it should be added, not multiplied.",
+            "misconception_text": "Nice try. A starting bonus only lands once. You get it at the very start.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -3686,21 +3686,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "y = 4x − 1",
             "correct": false,
-            "misconception_text": "Misconception: You used the right \"+4 each pack\" pattern but chose the wrong starting value. When x = 0, the table shows y = 1, not −1.",
+            "misconception_text": "Nice try. You saw the add 4 pattern. Now check the start number when x is 0 to finish.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "y = x + 4",
             "correct": false,
-            "misconception_text": "Misconception: You noticed \"add 4\" in the table, but you made the multiplier 1. The table increases by 4 each time x increases by 1, so the coefficient should be 4.",
+            "misconception_text": "Nice try. The numbers go up by 4 each time, so we write 4x. It means 4 times the packs you buy.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
             "label": "D",
             "text": "y = 5x + 1",
             "correct": false,
-            "misconception_text": "Misconception: You picked the wrong step size. The stickers go up by 4 each pack, not 5.",
+            "misconception_text": "Nice try. The growth is just a bit off. Each new pack adds exactly 4 stickers.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -3725,21 +3725,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "10",
             "correct": false,
-            "misconception_text": "Misconception: You did 2 × 5 but forgot to add the +3. The +3 is part of the rule every time.",
+            "misconception_text": "Nice try. You did 2 x 5 right. Now add the last 3 to get the total.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
             "label": "C",
             "text": "16",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied after adding: 2(5 + 3). In 2x + 3, the +3 is added after multiplying 2x, not inside the multiplication.",
+            "misconception_text": "Nice try. It looks like you added before you multiply. Follow the rule in order.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "8",
             "correct": false,
-            "misconception_text": "Misconception: You added 5 + 3 and forgot to multiply by 2. The rule says \"2 times x\" first, then +3.",
+            "misconception_text": "Nice try. You added 5 and 3. Remember, 2x means multiply 2 by your x-value first, then use that result.",
             "misconception_code": "OPERATION_SELECTION"
           }
         ]
@@ -3764,21 +3764,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "When x increases by 1 ride, y increases by $4.",
             "correct": false,
-            "misconception_text": "Misconception: You used the entry fee as the change each ride. The $4 happens once, not every time x goes up.",
+            "misconception_text": "Nice try. The $4 is the one-time entry fee. The $2 is what you add for every ride.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Each time x increases by 1, y doubles.",
             "correct": false,
-            "misconception_text": "Misconception: You treated 2x like \"multiply the whole cost by 2 each step.\" But 2x means add $2 per ride, not doubling.",
+            "misconception_text": "Nice try. Adding $2 for each ride is not the same as doubling the whole total.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
             "label": "D",
             "text": "When x increases by 1 ride, y increases by $6.",
             "correct": false,
-            "misconception_text": "Misconception: You combined the entry fee and per-ride cost as if both repeat each ride. The entry fee doesn't repeat when you take another ride.",
+            "misconception_text": "Nice try. You pay the entry fee only one time. Do not add it for every ride.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -3800,7 +3800,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "48 cm²",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied 8 × 6 but forgot the ½. A triangle is half of a rectangle with the same base and height.",
+            "misconception_text": "Nice try. You multiplied 8 × 6. A triangle is half of a rectangle with those sizes, so divide by 2.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -3812,14 +3812,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "40 cm²",
             "correct": false,
-            "misconception_text": "Misconception: You used a non-perpendicular side as the height. The area uses the height that makes a right angle with the base.",
+            "misconception_text": "Nice try. Use the height that makes a right angle with the base, not a slanted side.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
             "label": "D",
             "text": "14 cm²",
             "correct": false,
-            "misconception_text": "Misconception: You added 8 + 6. Adding lengths is related to perimeter, not area.",
+            "misconception_text": "Nice try. You added the base and height. Area needs multiplication, not addition.",
             "misconception_code": "AREA_VOLUME_SWAP"
           }
         ]
@@ -3839,7 +3839,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "70 m²",
             "correct": false,
-            "misconception_text": "Misconception: You did 10 × 7 but forgot the ½. Triangle area is half of bh.",
+            "misconception_text": "Nice try. You multiplied base × height. For a triangle, take half of that product to get the area.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
@@ -3851,14 +3851,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "45 m²",
             "correct": false,
-            "misconception_text": "Misconception: You used the slanted side (9 m) as the height. The height must be perpendicular to the base.",
+            "misconception_text": "Nice try. The slanted side is not the height. Use the straight up and down distance from the base.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "17 m²",
             "correct": false,
-            "misconception_text": "Misconception: You added 10 + 7. That combines lengths, but area needs multiplication of base and height.",
+            "misconception_text": "Nice try. Adding the sides will not give the area. Multiply base × height, then divide by 2.",
             "misconception_code": "AREA_VOLUME_SWAP"
           }
         ]
@@ -3878,7 +3878,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "64 cm²",
             "correct": false,
-            "misconception_text": "Misconception: You added the bases and multiplied by the height, but forgot to take half. Trapezoid area uses the average of the bases.",
+            "misconception_text": "Nice try. First find the average of the two bases, then use that in the trapezoid formula.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
@@ -3890,14 +3890,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "40 cm²",
             "correct": false,
-            "misconception_text": "Misconception: You treated it like a rectangle using only the longer base: 10 × 4. A trapezoid has two bases, so you must use both.",
+            "misconception_text": "Nice try. You used only the long base. A trapezoid has two bases, so use both.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "30 cm²",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied the bases and then halved. Trapezoid area does not use \"base times base.\".",
+            "misconception_text": "Nice try. Multiplying the two bases and halving is not the trapezoid rule. Add the bases first, then average.",
             "misconception_code": "AREA_VOLUME_SWAP"
           }
         ]
@@ -3917,21 +3917,21 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "64 m²",
             "correct": false,
-            "misconception_text": "Misconception: You treated the triangle like a rectangle and did 8 × 3 instead of ½ × 8 × 3.",
+            "misconception_text": "Nice try. You treated the triangle like a rectangle and did 8 × 3. Use ½ × 8 × 3.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "60 m²",
             "correct": false,
-            "misconception_text": "Misconception: You used a side length that isn't the perpendicular height. The triangle's area needs the perpendicular height of 3 m.",
+            "misconception_text": "Nice try. Use the perpendicular height, not a slanted side. The height straight up is 3 m.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
             "label": "C",
             "text": "37 m²",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted the triangle's area. The triangle is added on top, so its area should be added, not removed.",
+            "misconception_text": "Nice try. The triangle sits on top, so add its area. Do not subtract it.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
@@ -3956,21 +3956,21 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "96 ft²",
             "correct": false,
-            "misconception_text": "Misconception: You found the rectangle's area but forgot to subtract the cut-out triangle. The garden is missing that corner.",
+            "misconception_text": "Nice try. You found the big rectangle. Now subtract the missing triangle corner to get the garden.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
             "label": "B",
             "text": "84 ft²",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted 4 × 3 instead of ½ × 4 × 3. The cut-out is a triangle, not a rectangle.",
+            "misconception_text": "Nice try. You subtracted 4 × 3. The cut-out is a triangle, so subtract ½ × 4 × 3.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "86 ft²",
             "correct": false,
-            "misconception_text": "Misconception: You used the wrong triangle area. The legs 4 ft and 3 ft are the base and height, so you shouldn't use a different side or method.",
+            "misconception_text": "Nice try. You picked a wrong side. Use the legs 4 ft and 3 ft for base and height.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
@@ -4002,21 +4002,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "48 cm²",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied 8 × 3 × 2, which finds volume, not the total area of all the faces.",
+            "misconception_text": "Nice try. 8 x 3 x 2 finds volume. Surface area adds the areas of all the faces.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
             "label": "C",
             "text": "46 cm²",
             "correct": false,
-            "misconception_text": "Misconception: You added the three different face areas only once; each type comes in a pair on a prism.",
+            "misconception_text": "Nice try. Each flat side has a twin. Be sure to count both twins.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "52 cm²",
             "correct": false,
-            "misconception_text": "Misconception: You added lengths instead of areas, like doing a perimeter-type calculation.",
+            "misconception_text": "Nice try. You added lengths. Add the areas of all the flat faces.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -4041,21 +4041,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "64 m²",
             "correct": false,
-            "misconception_text": "Misconception: You used 4³, which is volume, not surface area.",
+            "misconception_text": "Nice try. You used 4³, which is volume. Surface area is the sum of all face areas, not volume.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
             "label": "C",
             "text": "80 m²",
             "correct": false,
-            "misconception_text": "Misconception: You counted only 5 faces instead of all 6 faces of the cube.",
+            "misconception_text": "Nice try. You counted only 5 faces. A cube has 6 equal faces, so add the missing one.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "24 m²",
             "correct": false,
-            "misconception_text": "Misconception: You did 6 × 4 but forgot each face is a square with area 4².",
+            "misconception_text": "Nice try. You did 6 × 4. Each face is a square with side 4, so its area is 4 × 4.",
             "misconception_code": "AREA_VOLUME_SWAP"
           }
         ]
@@ -4080,21 +4080,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "54 in²",
             "correct": false,
-            "misconception_text": "Misconception: You left out one pair of faces: the two 5×4 faces (top and bottom).",
+            "misconception_text": "Nice try. You left out the top and bottom 5×4 faces. Add those two areas to finish.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "60 in²",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied 5 × 4 × 3, which gives volume, not surface area.",
+            "misconception_text": "Nice try. You multiplied 5 × 4 × 3, which gives volume. Surface area adds face areas, not volume.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
             "label": "D",
             "text": "12 in²",
             "correct": false,
-            "misconception_text": "Misconception: You added the edge lengths (5 + 4 + 3) instead of adding areas of faces.",
+            "misconception_text": "Nice try. You added edge lengths. Add the areas of all six faces instead, not the edges.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -4119,21 +4119,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "Two triangles (3–4–5) and two rectangles: 3×6 and 4×6",
             "correct": false,
-            "misconception_text": "Misconception: You forgot one of the three rectangular side faces that wraps around the prism.",
+            "misconception_text": "Nice try. One rectangle was missed. There are three wrapping rectangles in all.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "One triangle (3–4–5) and three rectangles: 3×6, 4×6, and 5×6",
             "correct": false,
-            "misconception_text": "Misconception: You included only one base; a prism has two congruent bases.",
+            "misconception_text": "Nice try. You left out the second base. A prism has two bases.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Two triangles (3–4–5) and three rectangles: 3×4, 4×6, and 5×6",
             "correct": false,
-            "misconception_text": "Misconception: You used 3×4 as a rectangle face, but the rectangles must use the prism length 6 as one side.",
+            "misconception_text": "Nice try. You used 3 × 4 for a rectangle. The rectangles must use the prism length 6 as one side.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -4158,21 +4158,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "72 cm²",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied 6 × 4 × 3, which is volume, not the area needed to cover the outside.",
+            "misconception_text": "Nice try. You multiplied 6 × 4 × 3, which is volume. Find the area that wraps the outside.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
             "label": "C",
             "text": "84 cm²",
             "correct": false,
-            "misconception_text": "Misconception: You missed one pair of faces: the two 4×3 faces on the sides.",
+            "misconception_text": "Nice try. You skipped the two 4×3 faces on the sides. Count every face to cover the whole box.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "52 cm²",
             "correct": false,
-            "misconception_text": "Misconception: You added lengths like 4(l + w + h) instead of adding the areas of the faces.",
+            "misconception_text": "Nice try. You added the lengths 4(l + w + h). Add the face areas to get the total wrap.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -4194,21 +4194,21 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "15/32",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied instead of dividing. For division, you should multiply by the reciprocal of 3/4, not multiply the fractions as-is.",
+            "misconception_text": "Nice try. You multiplied instead of dividing. Flip the second fraction and multiply to divide fractions.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
             "label": "B",
             "text": "1/2",
             "correct": false,
-            "misconception_text": "Misconception: You divided \"top by top\" and \"bottom by bottom\" using whole-number thinking (like 5÷3=1). That changes the fractions and doesn't represent the real quotient.",
+            "misconception_text": "Nice try. You did top ÷ top and bottom ÷ bottom. Keep the first fraction and flip the second, then multiply.",
             "misconception_code": "QUOTIENT_REMAINDER"
           },
           {
             "label": "C",
             "text": "6/5",
             "correct": false,
-            "misconception_text": "Misconception: You inverted the wrong fraction. Only the divisor (3/4) should be flipped, not (5/8).",
+            "misconception_text": "Nice try. You flipped the first fraction instead of the second. Only flip the fraction you are dividing by.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -4233,21 +4233,21 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "7/8",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied instead of dividing. Dividing by 1/4 should make the result larger, not smaller.",
+            "misconception_text": "Nice try. You multiplied instead of dividing. Division by 1/4 should give a larger answer.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "12",
             "correct": false,
-            "misconception_text": "Misconception: You ignored the 1/2 and used only 3. The mixed number 3 1/2 must be treated as one value.",
+            "misconception_text": "Nice try. Keep 3 1/2 as one number. Do not drop 1/2.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "28",
             "correct": false,
-            "misconception_text": "Misconception: You set it up correctly but forgot to divide by 2 after multiplying: 7/2 × 4 = 28/2, not 28.",
+            "misconception_text": "Nice try. After you multiply, remember to divide that answer by 2.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
@@ -4272,21 +4272,21 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "9/2",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied by 6 instead of dividing. Dividing by 6 should make the result smaller than 3/4.",
+            "misconception_text": "Nice try. Dividing by 6 makes the answer smaller than 3/4.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "1/6",
             "correct": false,
-            "misconception_text": "Misconception: You set up 3/24 but simplified incorrectly. When you divide 3 and 24 by 3, you get 1/8, not 1/6.",
+            "misconception_text": "Nice try. 3/24 simplifies to 1/8, not 1/6. Divide 3 and 24 by 3.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
             "label": "C",
             "text": "2/9",
             "correct": false,
-            "misconception_text": "Misconception: You inverted the wrong number. You flipped 3/4 instead of using the reciprocal of 6, which is 1/6.",
+            "misconception_text": "Nice try. Flip only the 6. Keep 3/4 just as it is.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -4311,21 +4311,21 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "1/9",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied instead of dividing. This question asks how many 1/6-cups fit into 2/3, which is division.",
+            "misconception_text": "Nice try. You multiplied instead of divided. We need to see how many 1/6-cups fit into 2/3, so please divide.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "9",
             "correct": false,
-            "misconception_text": "Misconception: You inverted the wrong fraction. You flipped 2/3 instead of flipping the serving size 1/6.",
+            "misconception_text": "Nice try. Flip 1/6, not 2/3.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "6",
             "correct": false,
-            "misconception_text": "Misconception: You set it up correctly but made an arithmetic slip: 2/3 × 6 = 12/3, and 12/3 = 4, not 6.",
+            "misconception_text": "Nice try. 2/3 × 6 is 12/3, and 12/3 is 4.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -4350,21 +4350,21 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "9/2",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied instead of dividing. Sharing equally into 3 bottles means divide by 3, not multiply by 3.",
+            "misconception_text": "Nice try. You multiplied by 3, but sharing means divide by 3.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
             "label": "B",
             "text": "2",
             "correct": false,
-            "misconception_text": "Misconception: You inverted the wrong number. You flipped the mixed number instead of dividing it by 3.",
+            "misconception_text": "Nice try. You flipped the wrong number. Keep the mixed number as it is and divide it by 3.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "1/6",
             "correct": false,
-            "misconception_text": "Misconception: You forgot to convert the mixed number and used only 1/2 ÷ 3. The total is 1 1/2, not 1/2.",
+            "misconception_text": "Nice try. Use 1 1/2 gallons, not 1/2.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -4391,7 +4391,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "83",
             "correct": false,
-            "misconception_text": "Misconception: You likely chose 8 instead of 9 for 37 ÷ 4, and then you also dropped a digit when the next part was 52 ÷ 4 = 13. In long division, each step must use the biggest whole number that still fits.",
+            "misconception_text": "Nice try. In the first step, see how many nines fit in 37.",
             "misconception_code": "QUOTIENT_REMAINDER"
           },
           {
@@ -4403,14 +4403,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "90",
             "correct": false,
-            "misconception_text": "Misconception: You brought down the 2 without combining it with the remainder. After 37 − 36 = 1, the next number is 12 (not 2).",
+            "misconception_text": "Nice try. You stopped part-way. Finish the division with the leftover number to get the whole answer.",
             "misconception_code": "QUOTIENT_REMAINDER"
           },
           {
             "label": "D",
             "text": "98",
             "correct": false,
-            "misconception_text": "Misconception: You made a subtraction mistake after multiplying. If 9 × 4 = 36, then 37 − 36 should leave a remainder of 1, not 3.",
+            "misconception_text": "Nice try. Check the subtraction 37 - 36 again.",
             "misconception_code": "QUOTIENT_REMAINDER"
           }
         ]
@@ -4430,7 +4430,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "106",
             "correct": false,
-            "misconception_text": "Misconception: You forgot to place a 0 in the quotient when you reached a place where 4 went in 0 times. Zeros in the quotient are important placeholders for place value.",
+            "misconception_text": "Nice try. When 4 cannot fit at all, put 0 in that place value; it keeps every digit lined up.",
             "misconception_code": "PLACE_VALUE"
           },
           {
@@ -4442,14 +4442,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "101",
             "correct": false,
-            "misconception_text": "Misconception: You likely skipped a digit when bringing down numbers. In long division you must bring down digits one at a time, in order.",
+            "misconception_text": "Nice try. Bring each digit down slowly, one at a time, so nothing gets skipped in the long divide.",
             "misconception_code": "QUOTIENT_REMAINDER"
           },
           {
             "label": "D",
             "text": "1001",
             "correct": false,
-            "misconception_text": "Misconception: You treated the last step like it was 4 ÷ 4 instead of 24 ÷ 4. When you bring down the last digit, you divide the whole new number you formed (24), not just the final digit.",
+            "misconception_text": "Nice try. Look at 24 and see how many 4s fit inside it.",
             "misconception_code": "OPERATION_SELECTION"
           }
         ]
@@ -4469,7 +4469,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "60",
             "correct": false,
-            "misconception_text": "Misconception: You found 24 goes into 151 about 6 times, but then you didn’t use the remainder to make 72. After subtracting, you must bring down the next digit and divide the new number.",
+            "misconception_text": "Nice try. You found the first digit just right! Keep dividing with that remainder to finish the problem.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
@@ -4481,14 +4481,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "61",
             "correct": false,
-            "misconception_text": "Misconception: You likely subtracted wrong after 6×24=144. If 151−144 is not correct, the next number you form after bringing down 2 will also be wrong.",
+            "misconception_text": "Nice try. Subtract 144 from 151 once more and see what you get.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "66",
             "correct": false,
-            "misconception_text": "Misconception: You made a division fact mistake with 72 ÷ 24. Since 24×3=72, the next quotient digit should be 3, not 6.",
+            "misconception_text": "Nice try. A tiny slip happened in the last multiply step. Try it once more carefully.",
             "misconception_code": "QUOTIENT_REMAINDER"
           }
         ]
@@ -4508,7 +4508,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "247 R0",
             "correct": false,
-            "misconception_text": "Misconception: You treated the final remainder as 0, which usually comes from a subtraction mistake at the end. Since 5×7=35, 37−35 should leave 2, not 0.",
+            "misconception_text": "Nice try. The last subtraction is a bit off. Since 5 times 7 is 35, you should have 2 left as the remainder.",
             "misconception_code": "QUOTIENT_REMAINDER"
           },
           {
@@ -4520,14 +4520,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "254 R3",
             "correct": false,
-            "misconception_text": "Misconception: You brought down digits in the wrong order or skipped a step. In long division, you must bring down the next digit one at a time (first the 3, then the 7).",
+            "misconception_text": "Nice try. Some digits came down too fast. Bring them one at a time to stay on track.",
             "misconception_code": "QUOTIENT_REMAINDER"
           },
           {
             "label": "D",
             "text": "247.4",
             "correct": false,
-            "misconception_text": "Misconception: You converted the remainder into a decimal even though the problem asked for a remainder. Here you should stop after the remainder and write it as R2.",
+            "misconception_text": "Nice try. Your decimal is right! The question just wants the answer with a \"remainder\" (like R2).",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -4547,7 +4547,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "12",
             "correct": false,
-            "misconception_text": "Misconception: You forgot to write a 0 in the quotient when you reached the 0 in 306. Even if 3 goes into 0 zero times, you still need the 0 as a placeholder.",
+            "misconception_text": "Nice try. That middle zero is easy to skip. Write a 0 there so every digit stays in place.",
             "misconception_code": "QUOTIENT_REMAINDER"
           },
           {
@@ -4559,14 +4559,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "112",
             "correct": false,
-            "misconception_text": "Misconception: You brought down two digits at once (making 36) instead of dividing the 0 place first. In long division, you must bring down one digit at a time to keep place value correct.",
+            "misconception_text": "Nice try. Two digits were brought down together. Do one digit at a time for a correct answer.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "D",
             "text": "100",
             "correct": false,
-            "misconception_text": "Misconception: You stopped too early and didn’t divide the last digit. After you handle 30, you still need to bring down and divide the 6.",
+            "misconception_text": "Nice try. You stopped one step early. Divide the last 6 to finish the problem.",
             "misconception_code": "OPERATION_SELECTION"
           }
         ]
@@ -4593,21 +4593,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "46.15",
             "correct": false,
-            "misconception_text": "Misconception: You might have lined up digits instead of decimal points and treated 12.7 like 127.0. In addition, decimals must be aligned by the decimal point so tenths add with tenths.",
+            "misconception_text": "Nice try. Line up the decimal points, not the digits. 12.7 stays 12.7.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "C",
             "text": "12.745",
             "correct": false,
-            "misconception_text": "Misconception: You may have just “stuck” the numbers together or added only the decimal parts. You need to add the whole-number parts and the decimal parts using place value.",
+            "misconception_text": "Nice try. The numbers were stuck together. Add the tens, ones, and decimals with their place values.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "D",
             "text": "16.52",
             "correct": false,
-            "misconception_text": "Misconception: You likely added 7 + 45 as if they were in the same place value. Write 12.7 as 12.70 so hundredths line up before adding.",
+            "misconception_text": "Nice try. Write 12.7 as 12.70 so the hundredths line up before adding.",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -4632,21 +4632,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "43.17",
             "correct": false,
-            "misconception_text": "Misconception: You likely subtracted without borrowing correctly across the decimal. In 50.20 − 7.85, you must borrow 1 tenth as 10 hundredths (and possibly borrow from the whole number too).",
+            "misconception_text": "Nice try. You may have skipped borrowing past the decimal. In 50.20 − 7.85, borrow 1 tenth to make 10 hundredths so you can subtract.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "C",
             "text": "42.17",
             "correct": false,
-            "misconception_text": "Misconception: You may have subtracted 85 from 20 as if you could do 20 − 85 without regrouping. You need to rename 50.20 by borrowing so the hundredths place is large enough.",
+            "misconception_text": "Nice try. Borrow from the tens place so you can subtract 85 from a bigger number.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "D",
             "text": "48.35",
             "correct": false,
-            "misconception_text": "Misconception: You might have subtracted only the decimal part (0.2 − 0.85) incorrectly and kept 50 − 7 as 48. You must subtract the whole number and decimal parts together after lining up decimals.",
+            "misconception_text": "Nice try. Line up the decimals first. Then subtract the whole part and decimal part together.",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -4671,21 +4671,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "4.38",
             "correct": false,
-            "misconception_text": "Misconception: You placed the decimal too far left. Multiply as whole numbers (146 × 3 = 438) and then put the decimal back using the one decimal place in 14.6.",
+            "misconception_text": "Nice try. Multiply 146 x 3 = 438, then put the decimal back. 14.6 has one decimal place, so the answer is 43.8.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "C",
             "text": "438",
             "correct": false,
-            "misconception_text": "Misconception: You forgot to put the decimal back in the product. Since 14.6 has one digit after the decimal, the answer must also have one digit after the decimal.",
+            "misconception_text": "Nice try. You forgot to show the decimal in the answer. 14.6 has one place after the decimal, so your product needs one too.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "D",
             "text": "44.6",
             "correct": false,
-            "misconception_text": "Misconception: You may have multiplied only the whole-number part and then added the decimal part. The 0.6 is part of 14.6, so it must also be multiplied by 3.",
+            "misconception_text": "Nice try. Multiply all of 14.6 by 3, including the 0.6 part.",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -4710,21 +4710,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "8.4",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied 24 × 35 correctly but didn’t place the decimal. The product must have 1 + 2 = 3 decimal places total.",
+            "misconception_text": "Nice try. Move the decimal three spots left to show the correct place value.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "C",
             "text": "0.084",
             "correct": false,
-            "misconception_text": "Misconception: You counted one extra decimal place. 2.4 has 1 decimal place and 0.35 has 2, so the answer should have 3 decimal places, not 4.",
+            "misconception_text": "Nice try. Count the decimal places again. 2.4 gives one and 0.35 gives two, so the answer needs three places.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "D",
             "text": "0.89",
             "correct": false,
-            "misconception_text": "Misconception: You likely made a multiplication error with the whole-number version. 24 × 35 should be 840, and then you place the decimal.",
+            "misconception_text": "Nice try. A small multiplication slip happened. 24 × 35 should be 840, then move the decimal three spots.",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -4749,21 +4749,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "41.6",
             "correct": false,
-            "misconception_text": "Misconception: You moved the decimal in the quotient the wrong way. When dividing by a whole number, keep the decimal in the quotient lined up with the decimal in the dividend.",
+            "misconception_text": "Nice try. Keep the decimal point straight up and down when you divide.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "C",
             "text": "0.416",
             "correct": false,
-            "misconception_text": "Misconception: You placed the decimal too far left, as if you divided by 30 instead of 3. In long division, bring the decimal point straight up into the quotient.",
+            "misconception_text": "Nice try. The decimal shifted left and made the number too small. Just bring the decimal straight up into your answer line.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "D",
             "text": "4.6",
             "correct": false,
-            "misconception_text": "Misconception: You likely stopped too early or didn’t divide the hundredths place. 12.48 has hundredths, so you must continue dividing past the decimal to include them.",
+            "misconception_text": "Nice try. Keep dividing to show the hundredths in 12.48.",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -4785,7 +4785,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "6",
             "correct": false,
-            "misconception_text": "Misconception: You found a common factor, but you stopped too early. Both numbers are divisible by 12, which is greater than 6.",
+            "misconception_text": "Nice try. You found a factor of both 36 and 48. Keep looking for the biggest one that fits both.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -4797,14 +4797,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "16",
             "correct": false,
-            "misconception_text": "Misconception: You chose a factor of 48 but didn’t check 36. A GCF must divide both numbers exactly.",
+            "misconception_text": "Nice try. 16 fits 48 but not 36. The GCF must fit both numbers.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
             "label": "D",
             "text": "144",
             "correct": false,
-            "misconception_text": "Misconception: You found a common multiple (actually the LCM), not a common factor. The GCF must be a number that goes into both 36 and 48.",
+            "misconception_text": "Nice try. A common multiple grows from both numbers. For GCF, pick the biggest number that hides inside both.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -4824,7 +4824,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "2",
             "correct": false,
-            "misconception_text": "Misconception: You noticed both numbers are even and stopped at 2. Keep checking—there is a larger number that divides both.",
+            "misconception_text": "Nice try. Two works, but an even bigger number also goes into both. Hunt for the largest one.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -4836,14 +4836,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "7",
             "correct": false,
-            "misconception_text": "Misconception: You found a common factor, but it is not the greatest. Since both numbers are also divisible by 14, 7 can’t be the GCF.",
+            "misconception_text": "Nice try. Seven is common, but 14 is also common and larger. 14 is the greatest common factor.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "84",
             "correct": false,
-            "misconception_text": "Misconception: You found a common multiple (the LCM), not a common factor. The GCF must be smaller than or equal to both numbers and divide both.",
+            "misconception_text": "Nice try. That’s the least common multiple. For GCF, find the largest number that hides inside 28 and 42.",
             "misconception_code": "OPERATION_SELECTION"
           }
         ]
@@ -4863,7 +4863,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "2",
             "correct": false,
-            "misconception_text": "Misconception: You gave the greatest common factor instead of the least common multiple. LCM is a number both 6 and 8 can multiply to make.",
+            "misconception_text": "Nice try. You found the greatest common factor. For LCM, find the smallest number both 6 and 8 can reach.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
@@ -4875,14 +4875,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "48",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied 6×8, but the LCM is not always the product. Since 6 and 8 share a factor (2), the LCM is smaller than 48.",
+            "misconception_text": "Nice try. You found a common multiple. 24 is smaller and also works, so it is the least common multiple.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "12",
             "correct": false,
-            "misconception_text": "Misconception: You may have listed multiples of 6 and stopped too soon. 12 is not a multiple of 8, so it can’t be the LCM.",
+            "misconception_text": "Nice try. 12 is a multiple of 6, but it is not a multiple of 8.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -4902,7 +4902,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "3",
             "correct": false,
-            "misconception_text": "Misconception: You found a common factor (GCF), not a common multiple. LCM must be a number that both 9 and 12 go into.",
+            "misconception_text": "Nice try. You found the greatest common factor. For LCM, find the smallest number that 9 and 12 can reach.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -4914,14 +4914,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "108",
             "correct": false,
-            "misconception_text": "Misconception: You used 9×12, but the LCM is not always the product. Because 9 and 12 share a factor (3), the LCM is smaller than 108.",
+            "misconception_text": "Nice try. You used 9×12, yet the LCM is not always that product. Since both share 3, the LCM is smaller than 108.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "24",
             "correct": false,
-            "misconception_text": "Misconception: You picked a multiple of 12 but didn’t check 9. 24 is not divisible by 9, so it can’t be a common multiple.",
+            "misconception_text": "Nice try. You picked a multiple of 12 but did not check 9. Twenty-four is not divisible by 9, so it can’t be a common multiple.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -4941,7 +4941,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "4(9 + 6)",
             "correct": false,
-            "misconception_text": "Misconception: You factored out a common factor, but not the greatest one. Since 9 and 6 still share a factor (3), you can factor more.",
+            "misconception_text": "Nice try. You factored out a common factor, but not the greatest one. Nine and six still share 3, so you can factor more.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -4953,14 +4953,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "12(3 + 24)",
             "correct": false,
-            "misconception_text": "Misconception: You divided only 36 by 12, but you must divide both addends. When you factor out 12, 24 must become 2, not stay 24.",
+            "misconception_text": "Nice try. You divided only 36 by 12, but you must divide both addends. When you factor out 12, 24 becomes 2, not stay 24.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
             "label": "D",
             "text": "12(36 + 24)",
             "correct": false,
-            "misconception_text": "Misconception: You pulled out 12 but didn’t change the numbers inside the parentheses. Factoring means each addend is rewritten as 12 times a smaller number.",
+            "misconception_text": "Nice try. You took out 12 but left the inside unchanged. Each addend becomes 12 times a smaller number.",
             "misconception_code": "ORDER_OF_OPERATIONS"
           }
         ]
@@ -4987,21 +4987,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "−1.5, −1.75, −0.25, 0.2",
             "correct": false,
-            "misconception_text": "Misconception: You compared the digits and treated the negatives like positives. For negatives, the number closer to 0 is actually greater.",
+            "misconception_text": "Nice try. On the number line, -1.75 is farther left, so it is smaller than -1.5.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "C",
             "text": "−1.75, −0.25, −1.5, 0.2",
             "correct": false,
-            "misconception_text": "Misconception: You placed −0.25 to the left of −1.5 as if \"0.25 is smaller than 1.5.\" The sign matters: −0.25 is closer to 0, so it should be to the right of −1.5.",
+            "misconception_text": "Nice try. -0.25 is closer to zero than -1.5, so -0.25 is bigger on the number line.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "D",
             "text": "0.2, −0.25, −1.5, −1.75",
             "correct": false,
-            "misconception_text": "Misconception: You reversed the direction of the number line. Numbers increase as you move right, not left.",
+            "misconception_text": "Nice try. The list goes from big to small. For least to greatest, start at the most negative.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -5026,21 +5026,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "(−2/3 > −0.6)",
             "correct": false,
-            "misconception_text": "Misconception: You compared the sizes 0.67 and 0.6 and forgot that with negatives, the one farther from 0 is actually smaller.",
+            "misconception_text": "Nice try. You are right that 0.67 is bigger than 0.6, but both are negative. The number further from zero, -2/3, is smaller on the line.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "C",
             "text": "(−2/3 = −0.6)",
             "correct": false,
-            "misconception_text": "Misconception: You rounded −0.666... to −0.6 and treated it as exact. A rounded value doesn't make them equal.",
+            "misconception_text": "Nice try. -0.666... is close to -0.6, but it is not equal. So -2/3 is less than -0.6.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "(−0.6 < −2/3)",
             "correct": false,
-            "misconception_text": "Misconception: You treated \"less than\" like it means \"closer to zero\" without checking which side is actually farther left on the number line.",
+            "misconception_text": "Nice try. Pick the number that sits farther left on the number line. That one is smaller.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -5065,21 +5065,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "−7.5 m",
             "correct": false,
-            "misconception_text": "Misconception: You kept the negative sign, but distance is how far, not which direction. Distance cannot be negative.",
+            "misconception_text": "Nice try. You found the diver’s spot. Distance is always a positive measure, so drop the minus sign.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "C",
             "text": "0 m",
             "correct": false,
-            "misconception_text": "Misconception: You treated sea level as the answer without measuring the gap from (−7.5) to 0.",
+            "misconception_text": "Nice try. The water level is 0, but the diver is a few meters from it. We need that total distance.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "15 m",
             "correct": false,
-            "misconception_text": "Misconception: You measured from (−7.5) to (+7.5) instead of from (−7.5) to 0.",
+            "misconception_text": "Nice try. Count only from the diver up to 0. Do not double the depth.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -5104,21 +5104,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "−0.75",
             "correct": false,
-            "misconception_text": "Misconception: You thought \"75 is bigger than 60 so it must be bigger.\" With negatives, the number closer to 0 is greater.",
+            "misconception_text": "Nice try. Sevent-five looks larger than 60, yet for negatives, the one closer to zero, -0.6, is greatest in the group.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "C",
             "text": "(−2/3)",
             "correct": false,
-            "misconception_text": "Misconception: You focused on the fraction looking \"big\" and didn't compare its decimal value. (−2/3 ≈ −0.666...) which is less than −0.6.",
+            "misconception_text": "Nice try. -2/3 is about -0.666. That tiny extra distance from zero makes it smaller than -0.6.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "D",
             "text": "(−5/8)",
             "correct": false,
-            "misconception_text": "Misconception: You compared 5 and 8 without converting or estimating. (−5/8 = −0.625), which is close, but still less than −0.6.",
+            "misconception_text": "Nice try. -5/8 equals -0.625. It is just a bit farther from zero than -0.6.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -5143,21 +5143,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "Because 8 is greater than 3, (−8) must be greater than (−3).",
             "correct": false,
-            "misconception_text": "Misconception: You compared the digits and ignored how negatives work. A larger absolute value means the number is farther left, not greater.",
+            "misconception_text": "Nice try. With minus numbers, bigger absolute value means the number is smaller on the line.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "C",
             "text": "Since |−8| > |−3|, (−8) is greater.",
             "correct": false,
-            "misconception_text": "Misconception: You used absolute value to decide which is greater. Absolute value tells distance from 0, not which number is larger.",
+            "misconception_text": "Nice try. Absolute value tells distance, but distance alone does not show order on the line.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Any negative number is greater than any other negative number if it has the minus sign.",
             "correct": false,
-            "misconception_text": "Misconception: You treated the negative sign like it makes numbers all \"the same kind.\" Negatives still have an order based on position on the number line.",
+            "misconception_text": "Nice try. Negative numbers keep order. Closer to zero is always greater than farther away.",
             "misconception_code": "SIGN_RULE"
           }
         ]
@@ -5179,7 +5179,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Quadrant I",
             "correct": false,
-            "misconception_text": "Misconception: You treated the negative sign on x like it doesn't matter. Quadrant I needs both coordinates positive.",
+            "misconception_text": "Nice try. Do not forget the negative sign on 3. Quadrant I is only for points where both numbers are positive.",
             "misconception_code": "SIGN_RULE"
           },
           {
@@ -5191,14 +5191,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Quadrant III",
             "correct": false,
-            "misconception_text": "Misconception: You assumed \"negative somewhere\" means Quadrant III, but Quadrant III has both x and y negative.",
+            "misconception_text": "Nice try. Quadrant III needs both x and y to be negative. Our y-value here is positive 5.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "D",
             "text": "Quadrant IV",
             "correct": false,
-            "misconception_text": "Misconception: You mixed up which coordinate is negative. Quadrant IV has a positive x and a negative y.",
+            "misconception_text": "Nice try. Quadrant IV has x positive and y negative. The given point has y positive, so no.",
             "misconception_code": "SIGN_RULE"
           }
         ]
@@ -5218,21 +5218,21 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "(−7, −1)",
             "correct": false,
-            "misconception_text": "Misconception: You moved left 5 instead of right 5. Moving right increases the x-value.",
+            "misconception_text": "Nice try. First move went left. Moving right makes the x-value grow, not shrink.",
             "misconception_code": "COORDINATE_REASONING"
           },
           {
             "label": "B",
             "text": "(3, 7)",
             "correct": false,
-            "misconception_text": "Misconception: You moved up 4 instead of down 4. Moving down decreases the y-value.",
+            "misconception_text": "Nice try. Second move went up. Moving down makes the y-value smaller, not larger.",
             "misconception_code": "COORDINATE_REASONING"
           },
           {
             "label": "C",
             "text": "(−6, 8)",
             "correct": false,
-            "misconception_text": "Misconception: You changed the wrong coordinate for each move. Left/right changes x, and up/down changes y.",
+            "misconception_text": "Nice try. Check the order. It looks like x and y were swapped by mistake.",
             "misconception_code": "COORDINATE_REASONING"
           },
           {
@@ -5257,14 +5257,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "9",
             "correct": false,
-            "misconception_text": "Misconception: You added the y-values instead of finding how far apart they are. Distance uses the difference, not the sum.",
+            "misconception_text": "Nice try. You added the numbers. To find distance, subtract the y-values to see the gap between them.",
             "misconception_code": "COORDINATE_REASONING"
           },
           {
             "label": "B",
             "text": "0",
             "correct": false,
-            "misconception_text": "Misconception: You used the x-values, but the x-values are the same. Same x means the distance is vertical, so use y-values.",
+            "misconception_text": "Nice try. The x-values are the same, so the points line up straight up and down. Subtract the y-values.",
             "misconception_code": "COORDINATE_REASONING"
           },
           {
@@ -5276,7 +5276,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "−5",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted to get −5, but distance can't be negative. You must take the absolute value.",
+            "misconception_text": "Nice try. Your gap size is right! Distance is always positive, so drop any minus sign.",
             "misconception_code": "SIGN_RULE"
           }
         ]
@@ -5296,21 +5296,21 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "5",
             "correct": false,
-            "misconception_text": "Misconception: You added the x-values and took an absolute value. Distance is the absolute difference: subtract the x-values.",
+            "misconception_text": "Nice try. You added instead of finding the gap. Subtract the two x-values to get the distance.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
             "label": "B",
             "text": "0",
             "correct": false,
-            "misconception_text": "Misconception: You used the y-values, but the y-values are the same. Same y means the distance is horizontal, so use x-values.",
+            "misconception_text": "Nice try. The y-values match, so the points lie flat. Check the gap between the two x-values.",
             "misconception_code": "COORDINATE_REASONING"
           },
           {
             "label": "C",
             "text": "−7",
             "correct": false,
-            "misconception_text": "Misconception: You found the difference but forgot distance is always positive. Use absolute value.",
+            "misconception_text": "Nice try. Your gap is right! Just write distance as a positive number, with no minus sign.",
             "misconception_code": "SIGN_RULE"
           },
           {
@@ -5335,21 +5335,21 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "4",
             "correct": false,
-            "misconception_text": "Misconception: You added coordinates like −2 + 4 and −5 + 3. Distance comes from absolute differences, not adding coordinates.",
+            "misconception_text": "Nice try. You added everything at once. Find each short move first, then add those small trips together.",
             "misconception_code": "COORDINATE_REASONING"
           },
           {
             "label": "B",
             "text": "6",
             "correct": false,
-            "misconception_text": "Misconception: You only counted the first part of the trip (Camp to Waterfall). You forgot to include the walk from Waterfall to Treasure.",
+            "misconception_text": "Nice try. You got the first move. Now add the steps for the second part of the trip.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "8",
             "correct": false,
-            "misconception_text": "Misconception: You treated −5 like +5 when finding the horizontal distance. That makes you subtract 3 − 5 instead of 3 − (−5).",
+            "misconception_text": "Nice try. From -5 to 3 is 8 steps across. Use that for the side-to-side part.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
@@ -5381,21 +5381,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "$0.30 per notebook",
             "correct": false,
-            "misconception_text": "Misconception: You divided notebooks by dollars, which flips the rate. That gives notebooks per dollar, not dollars per notebook.",
+            "misconception_text": "Nice try. You flipped the division. Divide dollars by the number of notebooks to get the price for one.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           },
           {
             "label": "C",
             "text": "$10 per 3 notebooks",
             "correct": false,
-            "misconception_text": "Misconception: You kept the ratio \"per 3\" instead of converting it to \"per 1 notebook.\".",
+            "misconception_text": "Nice try. You found the total cost. To get unit price, divide that total by the number of notebooks.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           },
           {
             "label": "D",
             "text": "$3.30 per notebook",
             "correct": false,
-            "misconception_text": "Misconception: You rounded too early and stopped at one decimal place before writing the final answer to the nearest cent.",
+            "misconception_text": "Nice try. You almost have it. Keep dividing to two decimal places to round the price correctly.",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -5420,21 +5420,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "0.67 miles per minute",
             "correct": false,
-            "misconception_text": "Misconception: You used minutes instead of hours, so your \"per\" unit doesn't match miles per hour.",
+            "misconception_text": "Nice try. You changed hours to minutes, but we still need miles each hour.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "120 miles per hour",
             "correct": false,
-            "misconception_text": "Misconception: You treated 120 miles as if it happened in 1 hour and forgot to divide by 3 hours.",
+            "misconception_text": "Nice try. 120 is for three hours. We need the miles for just one hour.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
             "label": "D",
             "text": "0.025 hours per mile",
             "correct": false,
-            "misconception_text": "Misconception: You flipped the rate; that's hours per mile, not miles per hour.",
+            "misconception_text": "Nice try. That gives hours for one mile. Flip it to get miles in one hour.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           }
         ]
@@ -5459,21 +5459,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "0.1 mile per minute",
             "correct": false,
-            "misconception_text": "Misconception: You found a unit rate, but it's per 1 minute, not per 10 minutes.",
+            "misconception_text": "Nice try. You found the rate for 1 minute. Now multiply it by 10 to get the asked-for time.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           },
           {
             "label": "C",
             "text": "6 miles per hour",
             "correct": false,
-            "misconception_text": "Misconception: You converted to per hour instead of per 10 minutes.",
+            "misconception_text": "Nice try. You switched the time to one hour. Try the same math for just 10 minutes.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "3 miles per 30 minutes",
             "correct": false,
-            "misconception_text": "Misconception: You kept the original ratio and didn't convert it to \"per 10 minutes.\".",
+            "misconception_text": "Nice try. That is the whole amount. Split it to find the ten-minute rate.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           }
         ]
@@ -5498,21 +5498,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "$0.33 per cookie",
             "correct": false,
-            "misconception_text": "Misconception: You found dollars per cookie, which is the opposite of cookies per dollar.",
+            "misconception_text": "Nice try. That is dollars per cookie. We need cookies per one dollar.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "12 cookies per $4",
             "correct": false,
-            "misconception_text": "Misconception: You didn't convert the rate to \"per $1.\".",
+            "misconception_text": "Nice try. Good start! For a unit rate we need the amount for exactly one dollar.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           },
           {
             "label": "D",
             "text": "0.33 cookies per $1",
             "correct": false,
-            "misconception_text": "Misconception: You divided $4 by 12 instead of 12 by $4, so the numerator/denominator got swapped.",
+            "misconception_text": "Nice try. Divide cookies by cost to see how many cookies one dollar buys.",
             "misconception_code": "DENOMINATOR_REASONING"
           }
         ]
@@ -5537,21 +5537,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "The cyclist rides 6 miles per hour.",
             "correct": false,
-            "misconception_text": "Misconception: You rounded 1.5 hours to 2 hours before dividing, which changes the rate.",
+            "misconception_text": "Nice try. Stay exact. Divide by 1.5 right away and you will get a cleaner decimal result.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           },
           {
             "label": "C",
             "text": "The cyclist rides 12 miles per hour.",
             "correct": false,
-            "misconception_text": "Misconception: You used the 12 miles as if it happened in 1 hour and didn't divide by 1.5 hours.",
+            "misconception_text": "Nice try. That would work only if the trip lasted one full hour.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
             "label": "D",
             "text": "The cyclist rides 0.125 hours per mile.",
             "correct": false,
-            "misconception_text": "Misconception: You flipped the rate; that's hours per mile, not miles per hour.",
+            "misconception_text": "Nice try. Flip the division to get miles in one hour, not hours per mile.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           }
         ]
@@ -5573,7 +5573,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "1000",
             "correct": false,
-            "misconception_text": "Misconception: You treated 20% like the number 20 and did 20 × 50. Percent means \"out of 100,\" not \"times 20.\".",
+            "misconception_text": "Nice try. 20% means 20 for each 100, so we need a part of 50, not 20 times 50.",
             "misconception_code": "PERCENT_INTERPRETATION"
           },
           {
@@ -5585,14 +5585,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "2.5",
             "correct": false,
-            "misconception_text": "Misconception: You divided 50 ÷ 20, but \"20% of 50\" means take a part of 50, which uses multiplication by a percent.",
+            "misconception_text": "Nice try. When finding a percent of something, multiply the number by the decimal form of the percent.",
             "misconception_code": "PERCENT_INTERPRETATION"
           },
           {
             "label": "D",
             "text": "30",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted 20 from 50 as if 20% meant \"take away 20.\" A percent is not the same as subtracting that number.",
+            "misconception_text": "Nice try. We need 20% of 50, not 50 take away 20. Think of the portion of the whole.",
             "misconception_code": "PERCENT_INTERPRETATION"
           }
         ]
@@ -5612,7 +5612,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "1440",
             "correct": false,
-            "misconception_text": "Misconception: You treated 60% like 60 and did 24 × 60. Percent is a ratio out of 100, not a whole-number multiplier.",
+            "misconception_text": "Nice try. A percent is a ratio out of 100, so you divide, not multiply, to find the whole.",
             "misconception_code": "PERCENT_INTERPRETATION"
           },
           {
@@ -5624,14 +5624,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "0.4",
             "correct": false,
-            "misconception_text": "Misconception: You did 24 ÷ 60 and forgot that 60% means 60/100, not 60.",
+            "misconception_text": "Nice try. You almost have it. Just remember 60% means 0.6 when you multiply.",
             "misconception_code": "PERCENT_INTERPRETATION"
           },
           {
             "label": "D",
             "text": "84",
             "correct": false,
-            "misconception_text": "Misconception: You added the part and the percent: 24 + 60. The percent is not another amount to add to the part.",
+            "misconception_text": "Nice try. Percents work by multiplying a fraction. You divide, not add, to find the whole.",
             "misconception_code": "PERCENT_INTERPRETATION"
           }
         ]
@@ -5656,21 +5656,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "30% of 40",
             "correct": false,
-            "misconception_text": "Misconception: You chose the bigger percent (30%) without checking the wholes. A bigger percent of a smaller number can still be smaller.",
+            "misconception_text": "Nice try. 30% looks bigger, yet a smaller percent of a bigger number can win. Always multiply and compare the real amounts.",
             "misconception_code": "PERCENT_INTERPRETATION"
           },
           {
             "label": "C",
             "text": "They are equal",
             "correct": false,
-            "misconception_text": "Misconception: You assumed the higher percent \"balances out\" the smaller whole. You still need to compare the actual amounts.",
+            "misconception_text": "Nice try. They look close, but if you multiply each percent by its number, you will see different answers.",
             "misconception_code": "PERCENT_INTERPRETATION"
           },
           {
             "label": "D",
             "text": "Not enough information",
             "correct": false,
-            "misconception_text": "Misconception: You can find each amount from the given numbers. You don't need any extra information.",
+            "misconception_text": "Nice try. You already have the numbers you need. Just multiply each percent by its amount.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -5690,7 +5690,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "150",
             "correct": false,
-            "misconception_text": "Misconception: You used 25 like a whole number and multiplied 25 × 6. But 25% means 25 out of 100, not \"times 25.\".",
+            "misconception_text": "Nice try. 25% is a small slice, so we need a part of 60, not 25 times 6.",
             "misconception_code": "PERCENT_INTERPRETATION"
           },
           {
@@ -5702,14 +5702,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "2.4",
             "correct": false,
-            "misconception_text": "Misconception: You divided 60 ÷ 25, but 25% is not 25; it's 25/100.",
+            "misconception_text": "Nice try. 25% is one fourth, so we find that small slice, not 60 split by 25.",
             "misconception_code": "PERCENT_INTERPRETATION"
           },
           {
             "label": "D",
             "text": "35",
             "correct": false,
-            "misconception_text": "Misconception: You did 60 − 25, mixing a percent with a whole-number subtraction. You can't subtract \"25%\" as if it's 25.",
+            "misconception_text": "Nice try. We need 25% of 60, not 60 minus 25. The percent gives us the slice size.",
             "misconception_code": "PERCENT_INTERPRETATION"
           }
         ]
@@ -5729,7 +5729,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "45G = 180",
             "correct": false,
-            "misconception_text": "Misconception: You treated 45% like 45. Percent means per 100, so 45% should be written as 0.45 or 45/100.",
+            "misconception_text": "Nice try. 45% as a decimal is 0.45. Use 0.45 in the equation.",
             "misconception_code": "PERCENT_INTERPRETATION"
           },
           {
@@ -5741,14 +5741,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "G ÷ 0.45 = 180",
             "correct": false,
-            "misconception_text": "Misconception: You put the division in the wrong place. The situation says \"part = percent of whole,\" so the percent should multiply the whole.",
+            "misconception_text": "Nice try. The rule says \"part = percent of whole.\" That means multiply, not divide.",
             "misconception_code": "PERCENT_INTERPRETATION"
           },
           {
             "label": "D",
             "text": "0.45 × 180 = G",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied the percent by the part, which mixes up part and whole. The percent should be applied to the goal (G), not to 180.",
+            "misconception_text": "Nice try. Multiply the percent by the goal, not by the part.",
             "misconception_code": "PERCENT_INTERPRETATION"
           }
         ]
@@ -5770,14 +5770,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "6 pages",
             "correct": false,
-            "misconception_text": "Misconception: You picked the largest number of pages. The mode is the value with the most dots, not the biggest value.",
+            "misconception_text": "Nice try. The mode is the page number with the tallest dot stack, not the biggest page number.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "4 pages",
             "correct": false,
-            "misconception_text": "Misconception: You counted the dots incorrectly for 3 and 4. The mode depends on which row has the most dots.",
+            "misconception_text": "Nice try. The stacks for 3 and 4 pages may look alike. Pick the page with the tallest dot stack.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -5789,7 +5789,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "5 pages",
             "correct": false,
-            "misconception_text": "Misconception: You chose the value that \"stands out\" as different, but mode is about the tallest stack (most dots).",
+            "misconception_text": "Nice try. 5 is special, yet the mode is the number that shows up most. Choose the page with the highest dot pile.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -5809,7 +5809,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "6 students",
             "correct": false,
-            "misconception_text": "Misconception: You counted only the 20–29 bin and forgot that \"at least 20\" also includes 30–39.",
+            "misconception_text": "Nice try. You only counted the 20–29 bar. \"At least 20\" also means add the students in the 30–39 bar.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -5821,14 +5821,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "15 students",
             "correct": false,
-            "misconception_text": "Misconception: You included the 10–19 bin, but \"at least 20\" does not include any of 10–19.",
+            "misconception_text": "Nice try. You added some from the 10-19 bar, yet \"at least 20\" means only count bars that start at 20 or higher.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "20 students",
             "correct": false,
-            "misconception_text": "Misconception: You added the bin labels (like 20 and 39) instead of using the frequencies. Histogram questions use the counts in each bin.",
+            "misconception_text": "Nice try. Add the students in each bin, not the bin labels. Count heads, not edges.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -5848,7 +5848,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "14",
             "correct": false,
-            "misconception_text": "Misconception: You chose Q1. The median is the middle value, which is listed separately from Q1 and Q3.",
+            "misconception_text": "Nice try. 14 is Q1. The median is the middle value in the ordered list, which is 16.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           },
           {
@@ -5860,14 +5860,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "20",
             "correct": false,
-            "misconception_text": "Misconception: You chose Q3. Q3 is the third quartile, not the median.",
+            "misconception_text": "Nice try. 20 is the third quartile. The median is the value that sits right in the center of all the data.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "17",
             "correct": false,
-            "misconception_text": "Misconception: You averaged Q1 and Q3. The median is given in the 5-number summary; you don't compute it by averaging quartiles.",
+            "misconception_text": "Nice try. The box plot already shows the median is 16. No averaging Q1 and Q3 needed.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -5887,7 +5887,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Dot plot",
             "correct": false,
-            "misconception_text": "Misconception: You're choosing a dot plot even though there are many data points. With 240 points, dots can get crowded and hard to read.",
+            "misconception_text": "Nice try. With 240 students, a dot plot would be too busy. A histogram shows the same data in neat bars.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -5899,14 +5899,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Box plot",
             "correct": false,
-            "misconception_text": "Misconception: You chose a box plot, but it won't show how many students are in each height range. It summarizes with quartiles instead of bin counts.",
+            "misconception_text": "Nice try. A box plot shows a quick summary, but a histogram shows how many students are in each height group.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Dot plot and box plot are equally best",
             "correct": false,
-            "misconception_text": "Misconception: You're treating all plots as the same, but only a histogram is designed to show frequencies in bins/ranges.",
+            "misconception_text": "Nice try. Each plot has a job. For seeing data in piles or bins, a histogram is best.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -5926,7 +5926,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "\"20 belongs in 10–19 because bins overlap.\"",
             "correct": false,
-            "misconception_text": "Misconception: You're assuming bins overlap, but well-made histogram bins do not overlap.",
+            "misconception_text": "Nice try. In a histogram the bars touch but do not cross. Every number fits in one place.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -5938,14 +5938,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "\"20 belongs in both 10–19 and 20–29.\"",
             "correct": false,
-            "misconception_text": "Misconception: You're double-counting. A data value should go into exactly one bin.",
+            "misconception_text": "Nice try. Put the number 20 in one bin only. Count each value once to keep it tidy.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "\"20 belongs in 30–39 because you round 20 up.\"",
             "correct": false,
-            "misconception_text": "Misconception: You're using rounding rules that don't apply. Histogram bins are about exact boundaries, not rounding.",
+            "misconception_text": "Nice try. No guessing or rounding needed. The bin range tells you exactly where the number belongs.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -5967,7 +5967,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "−11",
             "correct": false,
-            "misconception_text": "Misconception: You added the absolute values but kept the negative sign even though 7 has the larger absolute value.",
+            "misconception_text": "Nice try. 7 is positive and bigger, so the answer stays positive. Do not treat both numbers as negatives.",
             "misconception_code": "SIGN_RULE"
           },
           {
@@ -5979,14 +5979,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "−3",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted 7 − 4 but chose the wrong sign for the result.",
+            "misconception_text": "Nice try. You subtracted fine, but keep the sign of the bigger number. 7 is bigger, so stay positive.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "D",
             "text": "11",
             "correct": false,
-            "misconception_text": "Misconception: You ignored the negative sign and added 4 + 7 as if both were positive.",
+            "misconception_text": "Nice try. Start at -4 and move 7 steps right. The negative sign on 4 matters.",
             "misconception_code": "SIGN_RULE"
           }
         ]
@@ -6006,7 +6006,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "−7",
             "correct": false,
-            "misconception_text": "Misconception: You treated subtracting a negative like subtracting a positive: −5 − 2.",
+            "misconception_text": "Nice try. Subtracting a negative becomes adding. -5 - (-2) is -5 + 2.",
             "misconception_code": "SIGN_RULE"
           },
           {
@@ -6018,14 +6018,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "7",
             "correct": false,
-            "misconception_text": "Misconception: You flipped both signs and computed 5 + 2 instead of keeping the −5.",
+            "misconception_text": "Nice try. Keep the first sign the same. Only the second minus flips, so -5 minus -2 becomes -5 plus 2.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "3",
             "correct": false,
-            "misconception_text": "Misconception: You reversed the order and effectively did (−2) − (−5) instead of −5 − (−2).",
+            "misconception_text": "Nice try. Keep -5 first and follow the double sign rule. Start at -5 and add the change.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -6050,21 +6050,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "−4",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted the numbers (7 − 3) but kept a negative sign without thinking about direction on the number line.",
+            "misconception_text": "Nice try. Start at -3 and subtract 7, so you move 7 more steps left to -10.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "C",
             "text": "4",
             "correct": false,
-            "misconception_text": "Misconception: You took the distance between 7 and 3 and forgot that −3 − 7 moves left on the number line.",
+            "misconception_text": "Nice try. On a number line, start at -3 and move 7 steps left. You land on -10.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "10",
             "correct": false,
-            "misconception_text": "Misconception: You added absolute values but chose the wrong sign even though you're moving further into negatives.",
+            "misconception_text": "Nice try. 3 and 7 make 10, and the result is negative because you start at -3 and move left. So the answer is -10.",
             "misconception_code": "SIGN_RULE"
           }
         ]
@@ -6089,21 +6089,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "1.7",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted 3.2 − 1.5 but chose a positive sign even though the negative part is larger.",
+            "misconception_text": "Nice try. You found the gap, but -3.2 has more pull, so the answer keeps its minus sign.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "C",
             "text": "−4.7",
             "correct": false,
-            "misconception_text": "Misconception: You added absolute values (3.2 + 1.5) as if both numbers had the same sign.",
+            "misconception_text": "Nice try. The signs are opposite, so subtract the smaller from the larger. Keep the sign of the stronger one.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "D",
             "text": "4.7",
             "correct": false,
-            "misconception_text": "Misconception: You ignored the negative sign and added 3.2 + 1.5.",
+            "misconception_text": "Nice try. Since one number is negative and one is positive, we subtract the absolute values and keep the sign of the bigger absolute value.",
             "misconception_code": "SIGN_RULE"
           }
         ]
@@ -6123,7 +6123,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Start at −1. Subtracting −4 means move 4 units left to −5.",
             "correct": false,
-            "misconception_text": "Misconception: You moved the wrong direction: subtracting a negative doesn't move left.",
+            "misconception_text": "Nice try. Move left when you subtract a positive. Move right when you subtract a negative.",
             "misconception_code": "SIGN_RULE"
           },
           {
@@ -6135,14 +6135,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Start at −4 and move to −1, so the answer is −3.",
             "correct": false,
-            "misconception_text": "Misconception: You found a difference but reversed the order and changed the problem.",
+            "misconception_text": "Nice try. Start at the first number, then move the way the second number tells you.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Negatives always make it smaller, so the answer must be less than −1.",
             "correct": false,
-            "misconception_text": "Misconception: You used the false rule that subtraction always decreases the value.",
+            "misconception_text": "Nice try. Taking away a negative makes the number bigger, so we slide right on the line.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -6169,21 +6169,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "$37.20",
             "correct": false,
-            "misconception_text": "Misconception: You calculated the discount correctly, but you applied the 8% tax to the original $40 instead of to the discounted price.",
+            "misconception_text": "Nice try. You found the discount okay, but apply the 8% tax to the sale price, not the old price.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "$33.00",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted 15 and added 8 as if they were dollar amounts, instead of taking 15% and 8% of a price.",
+            "misconception_text": "Nice try. 15 percent and 8 percent are rates, not dollars. Find each percent of the price, then adjust.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "$61.20",
             "correct": false,
-            "misconception_text": "Misconception: You treated 8% as 0.8, which makes the tax 80% instead of 8%.",
+            "misconception_text": "Nice try. 8% is 0.08, not 0.8. 0.8 would mean 80% tax instead of 8%.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -6208,21 +6208,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "$46.00",
             "correct": false,
-            "misconception_text": "Misconception: You added 18 as if \"18%\" meant $18, instead of finding 18% of $28.",
+            "misconception_text": "Nice try. 18% does not mean $18. Find 18% of $28, then add it to $28.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "$28.18",
             "correct": false,
-            "misconception_text": "Misconception: You added $0.18, but 18% means 0.18 of the bill, not $0.18.",
+            "misconception_text": "Nice try. 18% means 0.18 of the bill, not $0.18. Multiply $28 by 0.18 for the tip.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "$30.24",
             "correct": false,
-            "misconception_text": "Misconception: You found 18% of 28 incorrectly due to a decimal place-value slip; the tip should be several dollars, not just a little over $2.",
+            "misconception_text": "Nice try. Check your place value. 18% of 28 is more than $2.",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -6247,21 +6247,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "$85",
             "correct": false,
-            "misconception_text": "Misconception: You added 25 dollars instead of adding 25% of $60.",
+            "misconception_text": "Nice try. 25% of $60 is not $25. Find 0.25 x $60, then add it to $60.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "$15",
             "correct": false,
-            "misconception_text": "Misconception: You found 25% of $60 but stopped there; the question asks for the new total price.",
+            "misconception_text": "Nice try. You found 25% of $60. Now add that to $60 to get the new total.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "$60.25",
             "correct": false,
-            "misconception_text": "Misconception: You added 0.25 as if 25% were $0.25, not 0.25 of the price.",
+            "misconception_text": "Nice try. 25% means 0.25 of the price, not $0.25. Add 0.25 x $60 to $60.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -6286,21 +6286,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "$40.00",
             "correct": false,
-            "misconception_text": "Misconception: You added the percents (10% + 10% = 20%) and took 20% off the original $50, but the second 10% should be taken off the reduced price.",
+            "misconception_text": "Nice try. Do not add the percents. Take 10% off first, then 10% off that new price.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "$45.00",
             "correct": false,
-            "misconception_text": "Misconception: You only applied one 10% discount and didn't do the second discount.",
+            "misconception_text": "Nice try. Use 10% twice. One discount is not enough.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "$44.50",
             "correct": false,
-            "misconception_text": "Misconception: You took 10% of $50, then took 10% of that discount amount, instead of taking 10% of the new price in February.",
+            "misconception_text": "Nice try. You took 10% of $50, then 10% of that little bit. Instead, take 10% of the new February price.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -6325,21 +6325,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "$90.00",
             "correct": false,
-            "misconception_text": "Misconception: You removed only the 5% tax by dividing by 1.05, but you didn't undo the 10% discount.",
+            "misconception_text": "Nice try. You divided by 1.05 to drop the 5% tax. Now also undo the 10% discount to get the start price.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "$105.00",
             "correct": false,
-            "misconception_text": "Misconception: You undid the discount by dividing by 0.90, but you didn't remove the 5% tax first.",
+            "misconception_text": "Nice try. You divided by 0.90 to undo the discount. First remove the 5% tax, then undo the discount.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "$99.47",
             "correct": false,
-            "misconception_text": "Misconception: You treated \"10% off then 5% tax\" as a simple net 5% off and divided by 0.95, but successive percent changes don't combine that way.",
+            "misconception_text": "Nice try. You joined 10% off and 5% tax into 5% off. Percents stack in order, so handle each step one by one.",
             "misconception_code": "PERCENT_INTERPRETATION"
           }
         ]
@@ -6366,21 +6366,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "5",
             "correct": false,
-            "misconception_text": "Misconception: You used the y-coordinate for horizontal movement.",
+            "misconception_text": "Nice try. You shared the y number. The pair (x, y) always shows across first, so use the first number.",
             "misconception_code": "COORDINATE_REASONING"
           },
           {
             "label": "C",
             "text": "8",
             "correct": false,
-            "misconception_text": "Misconception: You added x and y instead of reading the ordered pair.",
+            "misconception_text": "Nice try. The two numbers were added. Just take the first number to get the x value.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "0",
             "correct": false,
-            "misconception_text": "Misconception: You treated the point as if it were on the y-axis.",
+            "misconception_text": "Nice try. The point was thought to sit on a vertical line. The value 3 means three units right.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -6400,7 +6400,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "(2, 4)",
             "correct": false,
-            "misconception_text": "Misconception: You reversed x and y.",
+            "misconception_text": "Nice try. It is easy to flip x and y. Think across then up, so 4 comes first.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -6412,14 +6412,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "(-4, 2)",
             "correct": false,
-            "misconception_text": "Misconception: You moved left instead of right on the x-axis.",
+            "misconception_text": "Nice try. Moving right gives a positive x. A minus sign would move you left instead.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "(4, -2)",
             "correct": false,
-            "misconception_text": "Misconception: You moved down instead of up on the y-axis.",
+            "misconception_text": "Nice try. Moving up gives a positive y on the axis. A minus would move you down.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -6439,7 +6439,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "(1, 6)",
             "correct": false,
-            "misconception_text": "Misconception: You reversed the order of coordinates.",
+            "misconception_text": "Nice try. The x and y were flipped. Always write the across number first in the pair.",
             "misconception_code": "COORDINATE_REASONING"
           },
           {
@@ -6451,14 +6451,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "(6, -1)",
             "correct": false,
-            "misconception_text": "Misconception: You changed the sign of the y-coordinate.",
+            "misconception_text": "Nice try. Check the sign of the y. It needs to be positive 1.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "D",
             "text": "(7, 1)",
             "correct": false,
-            "misconception_text": "Misconception: You changed the x-coordinate value.",
+            "misconception_text": "Nice try. The x got changed a bit. Keep it at 6 to land on the right spot.",
             "misconception_code": "COORDINATE_REASONING"
           }
         ]
@@ -6478,7 +6478,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Point B is on the x-axis.",
             "correct": false,
-            "misconception_text": "Misconception: You treated y=0 as x=0.",
+            "misconception_text": "Nice try. It looks like y = 0 was treated as the y-axis line x = 0.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -6490,14 +6490,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Point B is the origin.",
             "correct": false,
-            "misconception_text": "Misconception: You treated any point with a zero as the origin.",
+            "misconception_text": "Nice try. A point with a zero is not always the origin. Check both numbers to be sure.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Point B is in quadrant II.",
             "correct": false,
-            "misconception_text": "Misconception: You points on an axis are not inside a quadrant.",
+            "misconception_text": "Nice try. Points that sit on an axis are not inside a quadrant.",
             "misconception_code": "COORDINATE_REASONING"
           }
         ]
@@ -6517,21 +6517,21 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Maya only",
             "correct": false,
-            "misconception_text": "Misconception: You may be assuming order does not matter in an ordered pair.",
+            "misconception_text": "Nice try. In an ordered pair, the first number is the x and the second is the y. Order always counts.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "Leo only",
             "correct": false,
-            "misconception_text": "Misconception: You may have swapped axis names.",
+            "misconception_text": "Nice try. x is first, y is second. Check which axis you called which.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Both are correct.",
             "correct": false,
-            "misconception_text": "Misconception: You treated ordered pairs as interchangeable.",
+            "misconception_text": "Nice try. Ordered pairs are not swaps. First spot means x, second spot means y.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -6558,7 +6558,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "28 days and 4 pages",
             "correct": false,
-            "misconception_text": "Misconception: You reversed the meaning of x and y.",
+            "misconception_text": "Nice try. You swapped x and y. The first number tells the side move; the second tells up or down.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -6570,14 +6570,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "4 pages total in 28 days",
             "correct": false,
-            "misconception_text": "Misconception: You reversed axes and context.",
+            "misconception_text": "Nice try. You mixed up the axes and the story. Match the first number with the side move.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Day 32 with no pages",
             "correct": false,
-            "misconception_text": "Misconception: You added coordinates instead of interpreting ordered pair.",
+            "misconception_text": "Nice try. An ordered pair shows where to go. Do not add x and y.",
             "misconception_code": "COORDINATE_REASONING"
           }
         ]
@@ -6597,7 +6597,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "(15, 3)",
             "correct": false,
-            "misconception_text": "Misconception: You reversed x and y values.",
+            "misconception_text": "Nice try. x is first, y is second. Swap them and the point lands far away.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -6609,14 +6609,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "(18, 0)",
             "correct": false,
-            "misconception_text": "Misconception: You combined values incorrectly.",
+            "misconception_text": "Nice try. Use each number once. Do not mix the values.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "(12, 3)",
             "correct": false,
-            "misconception_text": "Misconception: You used a difference instead of the given y-value.",
+            "misconception_text": "Nice try. Read the y value. Do not subtract values.",
             "misconception_code": "COORDINATE_REASONING"
           }
         ]
@@ -6636,7 +6636,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Each bag has 1 apple",
             "correct": false,
-            "misconception_text": "Misconception: You ignored that y is double x.",
+            "misconception_text": "Nice try. y must be double x on this line. Check each pair again.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -6648,14 +6648,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Each bag has 3 apples",
             "correct": false,
-            "misconception_text": "Misconception: You used the change in x+y, not y/x.",
+            "misconception_text": "Nice try. We need y divided by x, not x plus y. Look at the ratio.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Number of apples decreases as bags increase",
             "correct": false,
-            "misconception_text": "Misconception: You misread increasing coordinates.",
+            "misconception_text": "Nice try. The line goes up, so both x and y grow together.",
             "misconception_code": "COORDINATE_REASONING"
           }
         ]
@@ -6675,7 +6675,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "At week 9 there are 0 plants",
             "correct": false,
-            "misconception_text": "Misconception: You reversed x and y.",
+            "misconception_text": "Nice try. You mixed up x and y. Swap them back.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -6687,14 +6687,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "The graph is invalid because x cannot be 0",
             "correct": false,
-            "misconception_text": "Misconception: You x = 0 is valid in first-quadrant coordinate contexts.",
+            "misconception_text": "Nice try. x = 0 is okay in the first part.",
             "misconception_code": "COORDINATE_REASONING"
           },
           {
             "label": "D",
             "text": "There are 9 weeks and 9 plants",
             "correct": false,
-            "misconception_text": "Misconception: You duplicated y into x without evidence.",
+            "misconception_text": "Nice try. Copied y into x without proof.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -6719,21 +6719,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "The runner goes 2 laps per minute in both points",
             "correct": false,
-            "misconception_text": "Misconception: You divided x by y instead of y by x.",
+            "misconception_text": "Nice try. You did x ÷ y. It needs y ÷ x.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "The rate is different at the two points",
             "correct": false,
-            "misconception_text": "Misconception: You both points show the same y/x ratio.",
+            "misconception_text": "Nice try. Both pairs keep same y ÷ x.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           },
           {
             "label": "D",
             "text": "Cannot compare because x-values differ",
             "correct": false,
-            "misconception_text": "Misconception: You rate comparison uses ratio, not equal x-values.",
+            "misconception_text": "Nice try. Ratio is used to match the rates.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           }
         ]
@@ -6755,7 +6755,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Squares can have three right angles",
             "correct": false,
-            "misconception_text": "Misconception: You broke the inherited rectangle property.",
+            "misconception_text": "Nice try. Rectangles give this rule to all.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -6767,14 +6767,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Squares cannot be rectangles",
             "correct": false,
-            "misconception_text": "Misconception: You ignored the subcategory relationship.",
+            "misconception_text": "Nice try. Every square is a kind of rectangle first.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Squares have no parallel sides",
             "correct": false,
-            "misconception_text": "Misconception: You used a false property of squares.",
+            "misconception_text": "Nice try. Check that trait again; it is false.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -6794,7 +6794,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Exactly one pair of parallel sides",
             "correct": false,
-            "misconception_text": "Misconception: You described a trapezoid property.",
+            "misconception_text": "Nice try. You used a trapezoid rule by mistake.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -6806,14 +6806,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Four right angles",
             "correct": false,
-            "misconception_text": "Misconception: You not all rhombuses are squares.",
+            "misconception_text": "Nice try. Rhombuses are not all squares.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "No equal sides",
             "correct": false,
-            "misconception_text": "Misconception: You rhombuses actually have all sides equal.",
+            "misconception_text": "Nice try. Rhombus has all four sides equal.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -6833,7 +6833,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Correct, because squares are separate from parallelograms",
             "correct": false,
-            "misconception_text": "Misconception: You ignored class inclusion by properties.",
+            "misconception_text": "Nice try. Check the shape’s rules again.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -6845,14 +6845,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Correct, because squares have equal sides only",
             "correct": false,
-            "misconception_text": "Misconception: You equal sides do not remove parallel-side properties.",
+            "misconception_text": "Nice try. Equal sides still keep the parallel sides.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Cannot tell without measuring each square",
             "correct": false,
-            "misconception_text": "Misconception: You definition already determines the category.",
+            "misconception_text": "Nice try. The rule already sets the group.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -6872,7 +6872,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Exactly three sides",
             "correct": false,
-            "misconception_text": "Misconception: You described a triangle.",
+            "misconception_text": "Nice try. That sounds like a triangle.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -6884,14 +6884,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "All sides equal",
             "correct": false,
-            "misconception_text": "Misconception: You not all rectangles are squares.",
+            "misconception_text": "Nice try. Some rectangles are not squares.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "No right angles",
             "correct": false,
-            "misconception_text": "Misconception: You rectangles are defined by right angles.",
+            "misconception_text": "Nice try. Right angles make the rectangle.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -6911,14 +6911,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "A square has equal sides, so it cannot be a rectangle.",
             "correct": false,
-            "misconception_text": "Misconception: You treated extra properties as disqualifying.",
+            "misconception_text": "Nice try. A square still follows every rectangle rule, so it stays in the rectangle family.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "A square is a rectangle, so square properties are exactly the same as all rectangle properties.",
             "correct": false,
-            "misconception_text": "Misconception: You ignored that squares have additional properties.",
+            "misconception_text": "Nice try. A square meets every rectangle rule, plus the extra rule of equal sides.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -6930,7 +6930,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "Categories are unrelated unless the names are similar.",
             "correct": false,
-            "misconception_text": "Misconception: You category membership depends on definitions, not names.",
+            "misconception_text": "Nice try. Names do not decide; the rule decides.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -6957,21 +6957,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "Square -> Rectangle -> Quadrilateral",
             "correct": false,
-            "misconception_text": "Misconception: You reversed parent and subcategory order.",
+            "misconception_text": "Nice try. Start with the big group, then list smaller groups inside.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Rectangle -> Triangle -> Square",
             "correct": false,
-            "misconception_text": "Misconception: You triangle is not in the rectangle/square branch.",
+            "misconception_text": "Nice try. Rectangles have four sides, but a triangle only has three.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Square -> Rhombus -> Triangle",
             "correct": false,
-            "misconception_text": "Misconception: You triangle does not contain quadrilateral categories.",
+            "misconception_text": "Nice try. Triangles have three sides, so they go in a different group.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -6996,21 +6996,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "Square only",
             "correct": false,
-            "misconception_text": "Misconception: You ignored parent categories in the hierarchy.",
+            "misconception_text": "Nice try. You saw the square! A square is also a rectangle and a quadrilateral, because it keeps every rule those shapes need.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Rectangle and triangle",
             "correct": false,
-            "misconception_text": "Misconception: You a triangle cannot have four sides.",
+            "misconception_text": "Nice try. The shape has four sides, so it is a quadrilateral, not a triangle. Triangles have only three sides.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Rhombus only",
             "correct": false,
-            "misconception_text": "Misconception: You omitted valid parent categories.",
+            "misconception_text": "Nice try. You found the rhombus! It can also be called a parallelogram, a quadrilateral, and even a square if it has right angles.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -7030,14 +7030,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "All parallelograms are rectangles",
             "correct": false,
-            "misconception_text": "Misconception: You parallelograms do not all have right angles.",
+            "misconception_text": "Nice try. Parallelograms only need both pairs of opposite sides parallel. Only the ones with right angles are rectangles.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "All rectangles are squares",
             "correct": false,
-            "misconception_text": "Misconception: You rectangles do not require all sides equal.",
+            "misconception_text": "Nice try. Rectangles must have four right angles. If all four sides are also equal, then the rectangle is a square.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -7049,7 +7049,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "All quadrilaterals are rhombuses",
             "correct": false,
-            "misconception_text": "Misconception: You quadrilaterals include many non-rhombus shapes.",
+            "misconception_text": "Nice try. Rhombuses need four equal sides and two pairs of parallel sides. Other foursided shapes, like trapezoids, do not fit that rule.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -7069,7 +7069,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Parallelogram",
             "correct": false,
-            "misconception_text": "Misconception: You parallelograms have two pairs of parallel sides.",
+            "misconception_text": "Nice try. Parallelograms must have two pairs of parallel sides, not just one pair. Keep looking for that second pair.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -7081,14 +7081,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Rectangle",
             "correct": false,
-            "misconception_text": "Misconception: You rectangles have two pairs of parallel sides and right angles.",
+            "misconception_text": "Nice try. A rectangle needs two pairs of parallel sides. This shape only has one pair, so it is not a rectangle.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Square",
             "correct": false,
-            "misconception_text": "Misconception: You squares have two pairs of parallel sides and equal sides.",
+            "misconception_text": "Nice try. Squares need four equal sides and two pairs of parallel sides. This shape only has one pair, so it is not a square.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -7113,21 +7113,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "Quadrilateral -> Triangle -> Polygon",
             "correct": false,
-            "misconception_text": "Misconception: You triangle is not a subcategory of quadrilateral.",
+            "misconception_text": "Nice try. Triangles have three sides and quadrilaterals have four. A triangle is never a quadrilateral.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Square -> Rectangle -> Triangle",
             "correct": false,
-            "misconception_text": "Misconception: You triangle is outside the four-sided hierarchy.",
+            "misconception_text": "Nice try. Triangles have three sides and quadrilaterals have four. They belong in different shape families.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Parallelogram -> Square -> Rectangle",
             "correct": false,
-            "misconception_text": "Misconception: You square is a subcategory of rectangle, not the reverse.",
+            "misconception_text": "Nice try. A square is a special rectangle with four equal sides. Every square is a rectangle, but not every rectangle is a square.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -7149,7 +7149,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "35 cm",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied by 10 instead of 100.",
+            "misconception_text": "Nice try. You multiplied by 10. To change meters to centimeters, multiply by 100.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -7161,14 +7161,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "0.35 cm",
             "correct": false,
-            "misconception_text": "Misconception: You divided instead of multiplying when moving to smaller units.",
+            "misconception_text": "Nice try. Centimeters are tiny, so we need more of them. Your number should grow bigger.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "3500 cm",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied by 1000 instead of 100.",
+            "misconception_text": "Nice try. You multiplied by 1000. Meters to centimeters uses 100, not 1000.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -7188,7 +7188,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "42 L",
             "correct": false,
-            "misconception_text": "Misconception: You divided by 100 instead of 1000.",
+            "misconception_text": "Nice try. You divided by 100. To change milliliters to liters, divide by 1000.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -7200,14 +7200,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "0.42 L",
             "correct": false,
-            "misconception_text": "Misconception: You divided one place too far.",
+            "misconception_text": "Nice try. You moved the decimal four spots. For 1000, slide it left three places.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "420 L",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied instead of dividing.",
+            "misconception_text": "Nice try. Liters are bigger, so we need fewer of them. The number goes down.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -7227,14 +7227,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "72 in",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied by 8 instead of 12.",
+            "misconception_text": "Nice try. You used 8, but one foot has 12 inches. Multiply the 9 by 12.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "96 in",
             "correct": false,
-            "misconception_text": "Misconception: You used an incorrect feet-to-inches conversion factor.",
+            "misconception_text": "Nice try. Multiply the feet by 12 to get the exact inches.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -7246,7 +7246,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "900 in",
             "correct": false,
-            "misconception_text": "Misconception: You scaled by 100 as if feet were metric.",
+            "misconception_text": "Nice try. This is feet to inches, not metric. Multiply by 12 inches per foot.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -7266,7 +7266,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "1 pint",
             "correct": false,
-            "misconception_text": "Misconception: You treated cups and pints as equal units.",
+            "misconception_text": "Nice try. A pint is bigger than a cup. You will need more than one pint.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -7278,14 +7278,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "2 pints",
             "correct": false,
-            "misconception_text": "Misconception: You rounded up instead of converting exactly.",
+            "misconception_text": "Nice try. Don't round yet. Since 2 cups = 1 pint, 3 cups is 1.5 pints.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "6 pints",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied by 2 in the wrong direction.",
+            "misconception_text": "Nice try. You flipped the units. Pints are bigger, so we need fewer.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -7305,14 +7305,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "235 m",
             "correct": false,
-            "misconception_text": "Misconception: You treated 1 km as 100 m.",
+            "misconception_text": "Nice try. 1 kilometer is 1000 meters. 2 km is 2000 m, and 2000 + 350 = 2350 m.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "200350 m",
             "correct": false,
-            "misconception_text": "Misconception: You concatenated numbers instead of adding converted units.",
+            "misconception_text": "Nice try. Listing the digits side-by-side mixes them. Convert kilometers into meters first, then add the numbers.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -7324,7 +7324,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "2500 m",
             "correct": false,
-            "misconception_text": "Misconception: You rounded 350 up to 500 before adding.",
+            "misconception_text": "Nice try. Rounding 350 before you add changes the answer. Keep the exact value to find the true total.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -7346,7 +7346,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "3 1/4 units",
             "correct": false,
-            "misconception_text": "Misconception: You likely missed one full unit or one fractional group.",
+            "misconception_text": "Nice try. One of the numbers looks left out. Add every data point again and check the total.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -7358,14 +7358,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "4 units",
             "correct": false,
-            "misconception_text": "Misconception: You rounded fractional lengths to whole numbers.",
+            "misconception_text": "Nice try. Rounding the numbers before you total them changes the answer. Keep every fraction exact until the end.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "2 3/4 units",
             "correct": false,
-            "misconception_text": "Misconception: You omitted part of the data set.",
+            "misconception_text": "Nice try. Some ribbon lengths were skipped. Look back at the plot, add every single value shown.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -7390,21 +7390,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "3/8",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted using wrong common-denominator steps.",
+            "misconception_text": "Nice try. A tiny subtracting mistake with the fractions slipped in. Pay extra attention to the bottom numbers while subtracting.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
             "label": "C",
             "text": "1/4",
             "correct": false,
-            "misconception_text": "Misconception: You compared middle values instead of greatest and least.",
+            "misconception_text": "Nice try. We need the biggest and the smallest numbers of all, not just any close pair.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "5/8",
             "correct": false,
-            "misconception_text": "Misconception: You selected one endpoint instead of the difference.",
+            "misconception_text": "Nice try. Picking one value does not give the range. Subtract the smallest from the biggest and you will.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -7424,7 +7424,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "1/2",
             "correct": false,
-            "misconception_text": "Misconception: You chose the midpoint of endpoints, not the mean of all data.",
+            "misconception_text": "Nice try. Add all four numbers. Then divide that sum by 4 to find the mean.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -7436,14 +7436,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "3/4",
             "correct": false,
-            "misconception_text": "Misconception: You selected a common value instead of computing average.",
+            "misconception_text": "Nice try. The mean is the average of all four points. Add them together first, then divide by four.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "1",
             "correct": false,
-            "misconception_text": "Misconception: You chose the maximum value.",
+            "misconception_text": "Nice try. The largest number alone is not the mean. Add all values up, then find the perfect middle value.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -7463,7 +7463,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "3/8",
             "correct": false,
-            "misconception_text": "Misconception: You chose the mode instead of equal-share amount.",
+            "misconception_text": "Nice try. Add all four numbers. Then divide the total by 4 to share fairly.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -7475,14 +7475,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "5/8",
             "correct": false,
-            "misconception_text": "Misconception: You chose the largest value instead of computing average.",
+            "misconception_text": "Nice try. You chose the biggest. For equal shares, we need the middle value that balances every point.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "1/2",
             "correct": false,
-            "misconception_text": "Misconception: You rounded instead of exact fraction division.",
+            "misconception_text": "Nice try. You are close. Keep exact fractions at each step; do not round, and the average will be perfect.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -7507,21 +7507,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "3/4",
             "correct": false,
-            "misconception_text": "Misconception: You compared one 3/4 value to one 1/2 value only.",
+            "misconception_text": "Nice try. You compared one stick only. Look at the full groups together; the real gap is a bit bigger.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "2 1/4",
             "correct": false,
-            "misconception_text": "Misconception: You computed only the 3/4 sum and forgot to subtract.",
+            "misconception_text": "Nice try. You added the first group. Now subtract the other group’s sum to see how much extra you have.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
             "label": "D",
             "text": "1/4",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted 3/4 - 1/2 and ignored counts.",
+            "misconception_text": "Nice try. Count every 3/4 and every 1/2 on the plot. Then find the full difference.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -7543,7 +7543,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "How long the shape is",
             "correct": false,
-            "misconception_text": "Misconception: You described length, not volume.",
+            "misconception_text": "Nice try. Length is one side. Volume is the space inside all three sides.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
@@ -7555,14 +7555,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "How far around the shape is",
             "correct": false,
-            "misconception_text": "Misconception: You described perimeter.",
+            "misconception_text": "Nice try. Perimeter is the edge total. Volume measures the space inside the shape.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "How much surface is on the outside",
             "correct": false,
-            "misconception_text": "Misconception: You described surface area.",
+            "misconception_text": "Nice try. That’s surface area, the skin. Volume checks the space inside the box, not the outside.",
             "misconception_code": "AREA_VOLUME_SWAP"
           }
         ]
@@ -7582,14 +7582,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "square centimeters",
             "correct": false,
-            "misconception_text": "Misconception: You square units measure area, not volume.",
+            "misconception_text": "Nice try. Square units are flat. Cubic units measure space inside a 3D box.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
             "label": "B",
             "text": "centimeters",
             "correct": false,
-            "misconception_text": "Misconception: You linear units measure length, not volume.",
+            "misconception_text": "Nice try. Centimeters measure one edge. Volume needs cubic units that fill the whole box.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
@@ -7601,7 +7601,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "degrees",
             "correct": false,
-            "misconception_text": "Misconception: You degrees measure angles.",
+            "misconception_text": "Nice try. Degrees measure angles. To measure a box’s space, we use cubic units, not degrees.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -7621,7 +7621,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "1 square cm",
             "correct": false,
-            "misconception_text": "Misconception: You used an area unit instead of a volume unit.",
+            "misconception_text": "Nice try. \"Square\" units show flat area. This solid cube needs the 3D name \"cubic\" centimeter.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
@@ -7633,14 +7633,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "3 cubic cm",
             "correct": false,
-            "misconception_text": "Misconception: You added the three side lengths instead of multiplying dimensions.",
+            "misconception_text": "Nice try. You added the sides. For volume we multiply the three dimensions together.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "1 cm",
             "correct": false,
-            "misconception_text": "Misconception: You used a length unit instead of a volume unit.",
+            "misconception_text": "Nice try. That number is just a length. A cube needs a 3D unit like cubic cm.",
             "misconception_code": "AREA_VOLUME_SWAP"
           }
         ]
@@ -7665,21 +7665,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "The taller one always has greater volume.",
             "correct": false,
-            "misconception_text": "Misconception: You ignored base area and total cubes.",
+            "misconception_text": "Nice try. A short shape can still hold more cubes if it is wide or deep.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
             "label": "C",
             "text": "Volume depends only on outside shape.",
             "correct": false,
-            "misconception_text": "Misconception: You confused volume with surface appearance.",
+            "misconception_text": "Nice try. Volume counts the cubes inside the shape, not its outside look.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
             "label": "D",
             "text": "If they have the same height, they must have same volume.",
             "correct": false,
-            "misconception_text": "Misconception: You ignored length and width.",
+            "misconception_text": "Nice try. We must check length and width too before we know the volume.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -7704,21 +7704,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "24 square units",
             "correct": false,
-            "misconception_text": "Misconception: You used area units instead of volume units.",
+            "misconception_text": "Nice try. Flat surfaces use square units. A solid prism is measured in cubic units.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
             "label": "C",
             "text": "12 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You halved without reason.",
+            "misconception_text": "Nice try. Every cube in the box counts toward the total volume.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "48 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You doubled instead of counting cubes directly.",
+            "misconception_text": "Nice try. Count the cubes exactly as they are to find the right volume.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -7740,7 +7740,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "11 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You added instead of multiplying layers by cubes per layer.",
+            "misconception_text": "Nice try. You added layers and cubes. Multiply the layers by cubes in each layer.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -7752,14 +7752,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "16 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You counted only two layers.",
+            "misconception_text": "Nice try. It looks like you missed one layer. Count all three layers for the full total.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "32 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You overcounted one extra layer.",
+            "misconception_text": "Nice try. It seems an extra layer was added. Count only the real layers.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -7784,21 +7784,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "18 square inches",
             "correct": false,
-            "misconception_text": "Misconception: You used area units.",
+            "misconception_text": "Nice try. Flat shapes use square inches. Space inside a box needs cubic inches.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
             "label": "C",
             "text": "9 cubic inches",
             "correct": false,
-            "misconception_text": "Misconception: You halved the cube count.",
+            "misconception_text": "Nice try. Each cube fills space inside. Count all 18 to get the total.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "36 cubic inches",
             "correct": false,
-            "misconception_text": "Misconception: You doubled the cube count.",
+            "misconception_text": "Nice try. Count every cube one time only.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -7818,7 +7818,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "9",
             "correct": false,
-            "misconception_text": "Misconception: You added dimensions instead of multiplying.",
+            "misconception_text": "Nice try. Adding will not give the space inside. Multiply the three sides to find the volume.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -7830,14 +7830,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "12",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied only two dimensions.",
+            "misconception_text": "Nice try. You multiplied two sides. Multiply all three sides to finish.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "48",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied correctly, then doubled.",
+            "misconception_text": "Nice try. Use each side one time in multiplication.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -7862,21 +7862,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "15 feet",
             "correct": false,
-            "misconception_text": "Misconception: You used linear units instead of cubic units.",
+            "misconception_text": "Nice try. Feet measures lines, not space. Use cubic feet for volume.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "15 square feet",
             "correct": false,
-            "misconception_text": "Misconception: You used area units instead of volume units.",
+            "misconception_text": "Nice try. Flat area uses square feet. This storage cube is 3D, so we say cubic feet.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
             "label": "D",
             "text": "5 cubic feet",
             "correct": false,
-            "misconception_text": "Misconception: You divided cube count without reason.",
+            "misconception_text": "Nice try. Count every cube. Each one adds to the full volume.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -7901,21 +7901,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "37 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You added instead of finding difference.",
+            "misconception_text": "Nice try. Subtract to see how much bigger one is.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "17 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You used only one solid's volume.",
+            "misconception_text": "Nice try. That's just one block. We need to compare the two blocks by subtracting.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
             "label": "D",
             "text": "20 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You chose the larger volume instead of difference.",
+            "misconception_text": "Nice try. Subtract to see the difference between the two blocks.",
             "misconception_code": "AREA_VOLUME_SWAP"
           }
         ]
@@ -7937,14 +7937,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "13 cubic cm",
             "correct": false,
-            "misconception_text": "Misconception: You added dimensions instead of multiplying.",
+            "misconception_text": "Nice try. It looks like the numbers were added. For volume, multiply length, width, and height together.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "24 cubic cm",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied only length and width.",
+            "misconception_text": "Nice try. You used two numbers. Multiply length, width, and height for the full volume.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -7956,7 +7956,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "144 cubic cm",
             "correct": false,
-            "misconception_text": "Misconception: You doubled the correct product.",
+            "misconception_text": "Nice try. You multiplied well, but the answer got doubled at the end.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -7976,7 +7976,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "23 cubic ft",
             "correct": false,
-            "misconception_text": "Misconception: You added area and height instead of multiplying.",
+            "misconception_text": "Nice try. You added area and height. Multiply the base area by height for volume.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
@@ -7988,14 +7988,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "90 square ft",
             "correct": false,
-            "misconception_text": "Misconception: You used square units for volume.",
+            "misconception_text": "Nice try. The number is right. Volume needs cubic feet, not square feet.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
             "label": "D",
             "text": "13 cubic ft",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted instead of multiplying.",
+            "misconception_text": "Nice try. The numbers were subtracted. Multiply them to get the space inside.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -8015,7 +8015,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "6 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted instead of adding the parts.",
+            "misconception_text": "Nice try. You subtracted. Add the two volumes to find the total.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -8027,14 +8027,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "432 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied the two volumes.",
+            "misconception_text": "Nice try. You tried multiplying, but adding the two volumes gives the total.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "24 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You counted only one part.",
+            "misconception_text": "Nice try. You found one piece. Add the second volume to finish.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -8054,14 +8054,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "20",
             "correct": false,
-            "misconception_text": "Misconception: You may have multiplied only two dimensions.",
+            "misconception_text": "Nice try. You used two numbers. Multiply length, width, and height to count all the cubes.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "40",
             "correct": false,
-            "misconception_text": "Misconception: You may have used only length x height.",
+            "misconception_text": "Nice try. You used two numbers. Multiply length, width, and height for the right count.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -8073,7 +8073,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "120",
             "correct": false,
-            "misconception_text": "Misconception: You may have halved the full product.",
+            "misconception_text": "Nice try. Your answer was cut in half. Check your multiply again.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -8093,7 +8093,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "6 cubic cm",
             "correct": false,
-            "misconception_text": "Misconception: You found base-area difference but forgot to apply height.",
+            "misconception_text": "Nice try. You found the gap between bases. Now multiply that gap by 3 cm to get the difference.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
@@ -8105,14 +8105,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "34 cubic cm",
             "correct": false,
-            "misconception_text": "Misconception: You added base areas then multiplied.",
+            "misconception_text": "Nice try. You added volumes, but we need the difference. Subtract small from big to find what’s left.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "102 cubic cm",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied sum and difference incorrectly.",
+            "misconception_text": "Nice try. Some numbers were mixed and grew too big. Subtract the volumes to get the right gap.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -8134,7 +8134,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "0.063",
             "correct": false,
-            "misconception_text": "Misconception: You shifted digits in the wrong direction.",
+            "misconception_text": "Nice try. Multiplying by 10 moves each digit one place value bigger, not smaller.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -8146,14 +8146,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "63",
             "correct": false,
-            "misconception_text": "Misconception: You shifted by too many places.",
+            "misconception_text": "Nice try. The digits moved one extra spot. Multiplying by 10 moves one place value, not two.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "0.73",
             "correct": false,
-            "misconception_text": "Misconception: You changed digits instead of shifting place value.",
+            "misconception_text": "Nice try. The digits stayed same shape. Keep the digits and move their spot to the left.",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -8173,7 +8173,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "48",
             "correct": false,
-            "misconception_text": "Misconception: You shifted by one place instead of two.",
+            "misconception_text": "Nice try. The digits slid one step alone. To multiply by 100, slide every digit two steps left at once.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -8185,14 +8185,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "0.048",
             "correct": false,
-            "misconception_text": "Misconception: You shifted in the wrong direction.",
+            "misconception_text": "Nice try. Multiplying by 100 makes the number bigger. The digits moved the wrong way.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "40.8",
             "correct": false,
-            "misconception_text": "Misconception: You moved only one digit and kept decimal placement incorrect.",
+            "misconception_text": "Nice try. You moved digits apart. Keep the whole number together and slide every digit two steps left.",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -8212,14 +8212,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "532",
             "correct": false,
-            "misconception_text": "Misconception: You shifted digits left instead of right when dividing by 10.",
+            "misconception_text": "Nice try. The digits slid left, so the number got bigger. To divide, slide every digit one step right.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "0.532",
             "correct": false,
-            "misconception_text": "Misconception: You shifted one place too far.",
+            "misconception_text": "Nice try. The digits slid two spots to the right. They should slide only one.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -8231,7 +8231,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "53.02",
             "correct": false,
-            "misconception_text": "Misconception: You inserted digits instead of shifting place value.",
+            "misconception_text": "Nice try. A zero jumped inside. To divide by 10, just slide each digit one spot right, no extra zero.",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -8251,21 +8251,21 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "0.705",
             "correct": false,
-            "misconception_text": "Misconception: You shifted one place instead of two.",
+            "misconception_text": "Nice try. Dividing by 100 moves every digit two places to the right. It looks like you moved them only one place.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "70.5",
             "correct": false,
-            "misconception_text": "Misconception: You shifted in the wrong direction.",
+            "misconception_text": "Nice try. The digits seem to have slid left, so the number got bigger. Division by 100 should make it smaller.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "7.5",
             "correct": false,
-            "misconception_text": "Misconception: You dropped zeros and mis-shifted decimal position.",
+            "misconception_text": "Nice try. Keep every digit, even the zero, in its new place. Each place matters for the right answer.",
             "misconception_code": "PLACE_VALUE"
           },
           {
@@ -8290,21 +8290,21 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "0.89",
             "correct": false,
-            "misconception_text": "Misconception: You shifted by one place instead of three.",
+            "misconception_text": "Nice try. Multiplying by 1000 slides every digit three places left. It looks like you slid them only one place.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "8.9",
             "correct": false,
-            "misconception_text": "Misconception: You shifted by two places instead of three.",
+            "misconception_text": "Nice try. The digits moved two places, but 1000 needs three. Slide them one more spot to the left.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "890",
             "correct": false,
-            "misconception_text": "Misconception: You shifted by four places.",
+            "misconception_text": "Nice try. The digits hopped four spots. They need to hop three spots.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -8331,14 +8331,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "470",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied by 10 once instead of 1000.",
+            "misconception_text": "Nice try. The little 3 tells us to multiply by 10 three times. It looks like you did it only once.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "4700",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied by 100 instead of 1000.",
+            "misconception_text": "Nice try. Move the digits three place-value spots left when you multiply by ten three times.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -8350,7 +8350,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "470000",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied by 10000 instead of 1000.",
+            "misconception_text": "Nice try. It looks like the digits moved four places instead of three. 47 × 10^3 is 47000.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -8370,7 +8370,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "62.5",
             "correct": false,
-            "misconception_text": "Misconception: You shifted one place instead of two.",
+            "misconception_text": "Nice try. Multiplying by 100 slides digits two places left. It looks like you slid them only one place.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -8382,14 +8382,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "0.0625",
             "correct": false,
-            "misconception_text": "Misconception: You divided instead of multiplying by 100.",
+            "misconception_text": "Nice try. The digits slid right, so the number shrank. Multiplying by 100 makes digits slide left and grow.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "6.2500",
             "correct": false,
-            "misconception_text": "Misconception: You added zeros without changing value.",
+            "misconception_text": "Nice try. Putting zeros on the end of a decimal does not change its value. Slide the real digits left two places.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -8409,7 +8409,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "0.048",
             "correct": false,
-            "misconception_text": "Misconception: You divided by 10 once, not by 100.",
+            "misconception_text": "Nice try. The exponent 2 means divide by 10 twice. You divided only once.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -8421,14 +8421,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "48",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied by 100 instead of dividing.",
+            "misconception_text": "Nice try. Division makes the number smaller. Slide the digits to the right, not left.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "0.48",
             "correct": false,
-            "misconception_text": "Misconception: You ignored the power-of-10 divisor.",
+            "misconception_text": "Nice try. You still need to divide. Powers of ten always change the size.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -8448,7 +8448,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "9 x 10^4",
             "correct": false,
-            "misconception_text": "Misconception: You 10^4 gives 90000, one zero short.",
+            "misconception_text": "Nice try. We need a six-digit number. Add one more power of ten to reach it.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -8460,14 +8460,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "9 x 10^6",
             "correct": false,
-            "misconception_text": "Misconception: You 10^6 gives one extra zero.",
+            "misconception_text": "Nice try. Nine million is too big. We need a smaller number of zeros.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "90 x 10^5",
             "correct": false,
-            "misconception_text": "Misconception: You this is ten times too large.",
+            "misconception_text": "Nice try. This answer is ten times too big. We only need six zeros after 90, not seven.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -8487,14 +8487,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "1",
             "correct": false,
-            "misconception_text": "Misconception: You 10^1 gives 37, not 3700.",
+            "misconception_text": "Nice try. Ten times 37 is 37, not 3700. Slide the digits two more places.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "2",
             "correct": false,
-            "misconception_text": "Misconception: You 10^2 gives 370, still one place short.",
+            "misconception_text": "Nice try. 10^2 makes 370. Move the decimal one more place to get 3700, so n = 3.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -8506,7 +8506,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "4",
             "correct": false,
-            "misconception_text": "Misconception: You 10^4 gives 37000, one place too far.",
+            "misconception_text": "Nice try. This would make 37,000, which is one place too far. We need 3700, so n = 3.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -8528,7 +8528,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "4.270",
             "correct": false,
-            "misconception_text": "Misconception: You read twenty-seven thousandths as two hundred seventy thousandths.",
+            "misconception_text": "Nice try. The digits for twenty-seven need to start one place to the right. Then we get the right words.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -8540,14 +8540,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "4.27",
             "correct": false,
-            "misconception_text": "Misconception: You stopped at hundredths instead of thousandths.",
+            "misconception_text": "Nice try. That reads four and twenty-seven hundredths. Put a zero in tenths so 27 lands in thousandths.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "D",
             "text": "4.0027",
             "correct": false,
-            "misconception_text": "Misconception: You placed digits in ten-thousandths instead of thousandths.",
+            "misconception_text": "Nice try. Those digits slid one place too far right. Slide them back one spot.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -8567,14 +8567,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "five hundred six tenths",
             "correct": false,
-            "misconception_text": "Misconception: You used the wrong place-value unit.",
+            "misconception_text": "Nice try. Count the spots after the decimal point. That count tells you the place value name.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "five hundred six hundredths",
             "correct": false,
-            "misconception_text": "Misconception: You read three decimal places as hundredths.",
+            "misconception_text": "Nice try. Three spots after the decimal means thousandths. Two spots mean hundredths.",
             "misconception_code": "PLACE_VALUE"
           },
           {
@@ -8586,7 +8586,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "fifty-six thousandths",
             "correct": false,
-            "misconception_text": "Misconception: You dropped the zero in the tenths place and changed the value.",
+            "misconception_text": "Nice try. Do not skip the middle zero. It keeps every digit in its own place.",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -8606,14 +8606,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "0.47 > 0.507",
             "correct": false,
-            "misconception_text": "Misconception: You compared digit length instead of place value.",
+            "misconception_text": "Nice try. Start at the tenths place. 0.5 beats 0.4.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "B",
             "text": "0.507 > 0.57",
             "correct": false,
-            "misconception_text": "Misconception: You ignored that 0.57 is 0.570.",
+            "misconception_text": "Nice try. Add a zero to 0.57 so it becomes 0.570. Then 570 is clearly bigger than 507.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -8625,7 +8625,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "0.507 = 0.57",
             "correct": false,
-            "misconception_text": "Misconception: You treated missing digits as no change in place value.",
+            "misconception_text": "Nice try. The digits look alike, but their spots change the value.",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -8650,21 +8650,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "0.604, 0.46, 0.64, 0.640",
             "correct": false,
-            "misconception_text": "Misconception: You compared tenths only and misplaced 0.46.",
+            "misconception_text": "Nice try. Check the tenths place first. 4 is smaller than 6, so 0.46 comes first.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "C",
             "text": "0.46, 0.64, 0.640, 0.604",
             "correct": false,
-            "misconception_text": "Misconception: You treated 0.604 as larger than 0.640.",
+            "misconception_text": "Nice try. Compare 0.604 and 0.64. Six hundred forty thousandths beats six hundred four.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "0.604, 0.64, 0.640, 0.46",
             "correct": false,
-            "misconception_text": "Misconception: You treated 0.46 as if it were 0.046.",
+            "misconception_text": "Nice try. 0.46 has 4 tenths, so it is fairly close to the other numbers.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -8684,7 +8684,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "3 ones",
             "correct": false,
-            "misconception_text": "Misconception: You placed the digit in the ones place.",
+            "misconception_text": "Nice try. Left of the point is ones. Right of the point is less than one.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -8696,14 +8696,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "3 hundredths",
             "correct": false,
-            "misconception_text": "Misconception: You shifted one place too far right.",
+            "misconception_text": "Nice try. The first spot after the point is tenths. The second spot is hundredths.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "3 thousandths",
             "correct": false,
-            "misconception_text": "Misconception: You shifted two places too far right.",
+            "misconception_text": "Nice try. Count the spots after the decimal again. Stay close to the point.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -8725,7 +8725,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "6.2",
             "correct": false,
-            "misconception_text": "Misconception: You dropped digits without checking the hundredths place.",
+            "misconception_text": "Nice try. Look at the next digit. 8 is big, so we round up to 6.3.",
             "misconception_code": "PLACE_VALUE"
           },
           {
@@ -8737,14 +8737,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "6.28",
             "correct": false,
-            "misconception_text": "Misconception: You rounded to the nearest hundredth instead of tenth.",
+            "misconception_text": "Nice try. You kept two places after the point. We only want one, the tenths place.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "7.0",
             "correct": false,
-            "misconception_text": "Misconception: You rounded to the nearest whole number.",
+            "misconception_text": "Nice try. You rounded to a whole number. Stay at the tenths place, one spot after the point.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -8764,7 +8764,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "9.74",
             "correct": false,
-            "misconception_text": "Misconception: You did not round up when the thousandths digit was 6.",
+            "misconception_text": "Nice try. The 6 tells us to round the hundredths up one notch.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -8776,14 +8776,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "9.8",
             "correct": false,
-            "misconception_text": "Misconception: You rounded to tenths, not hundredths.",
+            "misconception_text": "Nice try. You kept one place after the point. We need two, the hundredths place.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "D",
             "text": "10.00",
             "correct": false,
-            "misconception_text": "Misconception: You over-rounded to a whole number.",
+            "misconception_text": "Nice try. You rounded to a whole number. Keep two places after the point.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -8808,21 +8808,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "13",
             "correct": false,
-            "misconception_text": "Misconception: You rounded up even though the tenths digit is 4.",
+            "misconception_text": "Nice try. The tenths digit is 4, so we round down. The answer stays 12.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "C",
             "text": "12.5",
             "correct": false,
-            "misconception_text": "Misconception: You rounded to tenths instead of whole numbers.",
+            "misconception_text": "Nice try. You kept one place after the point. We want a whole number with no point.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "D",
             "text": "12.4",
             "correct": false,
-            "misconception_text": "Misconception: You changed the decimal place instead of rounding to a whole number.",
+            "misconception_text": "Nice try. You kept the point. Stop at the ones place for a whole number.",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -8842,7 +8842,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "3.6",
             "correct": false,
-            "misconception_text": "Misconception: You treated a 5 in the hundredths place as round down.",
+            "misconception_text": "Nice try. A 5 in the hundredths place tells us to add one to the tenths place.",
             "misconception_code": "PLACE_VALUE"
           },
           {
@@ -8854,14 +8854,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "3.65",
             "correct": false,
-            "misconception_text": "Misconception: You rounded to hundredths instead of tenths.",
+            "misconception_text": "Nice try. You kept two places after the point. We only want one, the tenths place.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "D",
             "text": "4.0",
             "correct": false,
-            "misconception_text": "Misconception: You rounded to whole numbers instead of tenths.",
+            "misconception_text": "Nice try. You rounded to a whole number. Keep one place after the point.",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -8886,21 +8886,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "1.99 L",
             "correct": false,
-            "misconception_text": "Misconception: You rounded up even though the thousandths digit is 3.",
+            "misconception_text": "Nice try. Because the next digit is 3 and 3 is less than 5, the 8 in the hundredths place stays put.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "2.00 L",
             "correct": false,
-            "misconception_text": "Misconception: You rounded to the nearest whole number.",
+            "misconception_text": "Nice try. This gives a whole number answer, but we need to keep two decimal places.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "1.9 L",
             "correct": false,
-            "misconception_text": "Misconception: You rounded to tenths and changed too much precision.",
+            "misconception_text": "Nice try. This shows one decimal place. The question asked for the hundredths place, so keep two decimals after the decimal point.",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -8922,7 +8922,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "54",
             "correct": false,
-            "misconception_text": "Misconception: You likely used an incorrect multiplication fact for 24.",
+            "misconception_text": "Nice try. Check the 24 facts again. A small slip changed the answer.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -8934,14 +8934,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "74",
             "correct": false,
-            "misconception_text": "Misconception: You overestimated the quotient.",
+            "misconception_text": "Nice try. Your estimate said 24 goes into the number more times than it actually does.",
             "misconception_code": "QUOTIENT_REMAINDER"
           },
           {
             "label": "D",
             "text": "640",
             "correct": false,
-            "misconception_text": "Misconception: You misplaced place value by a factor of 10.",
+            "misconception_text": "Nice try. The place value looks off by ten. Double-check where you put the first digit of your division answer.",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -8966,21 +8966,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "74",
             "correct": false,
-            "misconception_text": "Misconception: You stopped one group too early.",
+            "misconception_text": "Nice try. This stops one group short. Keep dividing until you have taken away all the groups you can.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "96",
             "correct": false,
-            "misconception_text": "Misconception: You overestimated how many groups of 32 fit.",
+            "misconception_text": "Nice try. You guessed more groups of 32 than fit. Lower your estimate and check again.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "8.4",
             "correct": false,
-            "misconception_text": "Misconception: You treated whole-number division as decimal scaling.",
+            "misconception_text": "Nice try. We are dividing whole numbers, so your answer should stay a whole number without any decimal point.",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -9000,14 +9000,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "95",
             "correct": false,
-            "misconception_text": "Misconception: You underestimated by one group of 25.",
+            "misconception_text": "Nice try. You are almost there. Add one more group of 25 to make the total match.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "96",
             "correct": false,
-            "misconception_text": "Misconception: You used 25 x 96 = 2400 instead of checking the full dividend.",
+            "misconception_text": "Nice try. 25 times 96 leaves some amount left. Check the remainder to see how many more groups fit.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -9019,7 +9019,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "100",
             "correct": false,
-            "misconception_text": "Misconception: You rounded to a friendly number instead of dividing exactly.",
+            "misconception_text": "Nice try. Estimating with 100 is a good start, but the question wants the exact final division answer.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -9039,14 +9039,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "46",
             "correct": false,
-            "misconception_text": "Misconception: You may have used subtraction steps but stopped too early.",
+            "misconception_text": "Nice try. You began to subtract, which is a fine way to divide. Keep going a bit further to finish the job.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "54",
             "correct": false,
-            "misconception_text": "Misconception: You may have divided by a nearby divisor like 40.",
+            "misconception_text": "Nice try. You may have used 40 instead of the real 36. Stick with 36 and you will get the correct answer.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -9058,7 +9058,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "66",
             "correct": false,
-            "misconception_text": "Misconception: You overestimated the number of groups.",
+            "misconception_text": "Nice try. Your guess for the number of boxes was a little too big.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -9078,14 +9078,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "48 + 38 = 1824",
             "correct": false,
-            "misconception_text": "Misconception: You used addition instead of the inverse operation.",
+            "misconception_text": "Nice try. You added, but to check division we usually multiply instead. Try multiplying to see if it works.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "1824 - 48 = 38",
             "correct": false,
-            "misconception_text": "Misconception: You used subtraction instead of multiplication for checking division.",
+            "misconception_text": "Nice try. Subtraction is linked to division, yet multiplying is the quick way to check your division answer.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -9097,7 +9097,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "38 x 38 = 1824",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied by the quotient twice and ignored the divisor.",
+            "misconception_text": "Nice try. You multiplied the answer by itself. Instead, multiply the answer by the divisor to check your work.",
             "misconception_code": "QUOTIENT_REMAINDER"
           }
         ]
@@ -9119,7 +9119,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "3/7 mile",
             "correct": false,
-            "misconception_text": "Misconception: You added numerators and denominators directly.",
+            "misconception_text": "Nice try. You added top to top and bottom to bottom. First make the denominators match, then add the fractions.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
@@ -9131,14 +9131,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "5/7 mile",
             "correct": false,
-            "misconception_text": "Misconception: You used an incorrect common denominator.",
+            "misconception_text": "Nice try. Make a common bottom number first. 12 works for both 4 and 3.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
             "label": "D",
             "text": "1 5/6 miles",
             "correct": false,
-            "misconception_text": "Misconception: You added with denominator confusion and overestimated.",
+            "misconception_text": "Nice try. Your answer is bigger than the two parts added. Each fraction is small, so the total should be under 1 1/2.",
             "misconception_code": "DENOMINATOR_REASONING"
           }
         ]
@@ -9158,14 +9158,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "6/5 meter",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted denominators and got an invalid setup.",
+            "misconception_text": "Nice try. You subtracted the bottom numbers, so the fraction may be off. Make the denominators match first, then subtract.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
             "label": "B",
             "text": "11/24 meter",
             "correct": false,
-            "misconception_text": "Misconception: You may have subtracted in the wrong order.",
+            "misconception_text": "Nice try. You are almost there. Check your top-number subtraction again after you use the common denominator 24.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -9177,7 +9177,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "2/5 meter",
             "correct": false,
-            "misconception_text": "Misconception: You changed denominators without equivalent fractions.",
+            "misconception_text": "Nice try. You changed the bottom numbers without keeping each fraction equal. Multiply top and bottom by the same number to keep the value.",
             "misconception_code": "DENOMINATOR_REASONING"
           }
         ]
@@ -9197,14 +9197,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "0",
             "correct": false,
-            "misconception_text": "Misconception: You ignored that both fractions are close to 1.",
+            "misconception_text": "Nice try. Each fraction is almost 1. Add them and you get way past zero.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "1",
             "correct": false,
-            "misconception_text": "Misconception: You underestimated the sum of two large fractions.",
+            "misconception_text": "Nice try. Two fractions near 1 add up close to 2.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -9216,7 +9216,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "3",
             "correct": false,
-            "misconception_text": "Misconception: You overestimated beyond possible range.",
+            "misconception_text": "Nice try. This guess is a bit high. Both parts are less than 1, so the total must be less than 2.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -9236,7 +9236,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "4/9",
             "correct": false,
-            "misconception_text": "Misconception: You added numerators and denominators directly.",
+            "misconception_text": "Nice try. It looks like tops and bottoms were added. First give the fractions the same bottom, then add.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
@@ -9248,14 +9248,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "7/10",
             "correct": false,
-            "misconception_text": "Misconception: You used an incorrect common denominator.",
+            "misconception_text": "Nice try. Use 20 for the common bottom. Both 5 and 4 fit into it.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
             "label": "D",
             "text": "1 2/5",
             "correct": false,
-            "misconception_text": "Misconception: You overcounted beyond one whole tank.",
+            "misconception_text": "Nice try. 3/5 and 1/4 are each less than 1. Their sum stays under 1.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -9275,7 +9275,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "77/80",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied instead of subtracting.",
+            "misconception_text": "Nice try. This answer is bigger than 7/8. When you subtract, the leftover part must be smaller than what you started with.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -9287,14 +9287,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "1/80",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted numerators and denominators directly.",
+            "misconception_text": "Nice try. It looks like tops and bottoms were subtracted straight. Make the bottoms the same first, then subtract.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
             "label": "D",
             "text": "9/8",
             "correct": false,
-            "misconception_text": "Misconception: You added instead of subtracting.",
+            "misconception_text": "Nice try. This looks like addition, not subtraction. Taking 1/10 away from 7/8 leaves a smaller amount.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -9316,14 +9316,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "7 + 4",
             "correct": false,
-            "misconception_text": "Misconception: You interpreted the fraction bar as addition.",
+            "misconception_text": "Nice try. The bar was read like a plus sign. The bar means divide the top by the bottom.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "7 - 4",
             "correct": false,
-            "misconception_text": "Misconception: You interpreted the fraction bar as subtraction.",
+            "misconception_text": "Nice try. The bar was treated like a minus. That bar really means divide.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -9335,7 +9335,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "4 / 7",
             "correct": false,
-            "misconception_text": "Misconception: You reversed numerator and denominator.",
+            "misconception_text": "Nice try. The numbers are right, but they are swapped. In division, the top number always goes first.",
             "misconception_code": "DENOMINATOR_REASONING"
           }
         ]
@@ -9355,7 +9355,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "4/3 sandwich",
             "correct": false,
-            "misconception_text": "Misconception: You reversed the division order.",
+            "misconception_text": "Nice try. Put the 3 sandwiches on top because you are sharing 3 sandwiches among 4 children.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -9367,14 +9367,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "1 1/3 sandwiches",
             "correct": false,
-            "misconception_text": "Misconception: You computed sandwiches per group incorrectly.",
+            "misconception_text": "Nice try. You swapped the numbers. We have 3 sandwiches and 4 kids, so each child gets less than one whole.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "1/4 sandwich",
             "correct": false,
-            "misconception_text": "Misconception: You divided one sandwich instead of all three.",
+            "misconception_text": "Nice try. One sandwich was shared. We must share all three sandwiches at once.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -9399,21 +9399,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "2/5 L",
             "correct": false,
-            "misconception_text": "Misconception: You reversed numerator and denominator.",
+            "misconception_text": "Nice try. Swap the numbers. We divide 5 liters by 2 pitchers, so 5 goes on top.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
             "label": "C",
             "text": "3 L",
             "correct": false,
-            "misconception_text": "Misconception: You rounded up instead of dividing exactly.",
+            "misconception_text": "Nice try. Keep the exact answer. Split the last liter in half instead of rounding.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "2 L",
             "correct": false,
-            "misconception_text": "Misconception: You ignored the remaining half liter.",
+            "misconception_text": "Nice try. You missed the 5th liter. Split that last liter between the two pitchers to add a bit more.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -9433,7 +9433,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "3 1/3",
             "correct": false,
-            "misconception_text": "Misconception: You used the wrong remainder when dividing 11 by 3.",
+            "misconception_text": "Nice try. After dividing 11 by 3, check the leftover part and write it as a fraction.",
             "misconception_code": "QUOTIENT_REMAINDER"
           },
           {
@@ -9445,14 +9445,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "2 3/3",
             "correct": false,
-            "misconception_text": "Misconception: You did not convert the improper fraction correctly.",
+            "misconception_text": "Nice try. 11 is close to 12, so the whole number part should be a little bigger.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "4 1/3",
             "correct": false,
-            "misconception_text": "Misconception: You overestimated the quotient.",
+            "misconception_text": "Nice try. You counted 3 into 11 a bit too many times. Try again and lower the whole number.",
             "misconception_code": "QUOTIENT_REMAINDER"
           }
         ]
@@ -9472,7 +9472,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Each student gets 2 brownies.",
             "correct": false,
-            "misconception_text": "Misconception: You ignored the remaining brownies after whole-number division.",
+            "misconception_text": "Nice try. After 2 brownies each, some pieces are still left. Split them so everyone gets a fair share.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -9484,14 +9484,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Each student gets 3/8 brownie.",
             "correct": false,
-            "misconception_text": "Misconception: You reversed the fraction for equal sharing.",
+            "misconception_text": "Nice try. We share 8 among 3 people, so each person gets more than one.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Each student gets 3 brownies.",
             "correct": false,
-            "misconception_text": "Misconception: You rounded up and changed total amount.",
+            "misconception_text": "Nice try. 3 per person needs 9 brownies, but we have 8, so each gets a bit less.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -9513,14 +9513,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "greater than 12",
             "correct": false,
-            "misconception_text": "Misconception: You treated multiplying by a fraction less than 1 as enlargement.",
+            "misconception_text": "Nice try. Multiplying by a fraction less than 1 makes the number smaller, not bigger.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "equal to 12",
             "correct": false,
-            "misconception_text": "Misconception: You ignored scaling by 3/4.",
+            "misconception_text": "Nice try. You missed the times 3/4 step. Do not skip it.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -9532,7 +9532,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "cannot be determined",
             "correct": false,
-            "misconception_text": "Misconception: You missed the scaling rule for factors below 1.",
+            "misconception_text": "Nice try. A factor below 1 shrinks the number. Do not forget this rule.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -9552,14 +9552,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "less than 8",
             "correct": false,
-            "misconception_text": "Misconception: You treated a factor greater than 1 as shrinking.",
+            "misconception_text": "Nice try. A factor bigger than 1 grows the number. It does not shrink.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "equal to 8",
             "correct": false,
-            "misconception_text": "Misconception: You ignored scaling by 5/4.",
+            "misconception_text": "Nice try. You still need to scale by 5/4. That step was missed.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -9571,7 +9571,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "zero",
             "correct": false,
-            "misconception_text": "Misconception: You confused multiplication by a fraction with multiplication by 0.",
+            "misconception_text": "Nice try. Multiplying by a fraction is not the same as multiplying by 0.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -9591,14 +9591,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "7/6",
             "correct": false,
-            "misconception_text": "Misconception: You a factor greater than 1 enlarges, not shrinks.",
+            "misconception_text": "Nice try. A factor bigger than 1 makes the number larger, not smaller.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "1",
             "correct": false,
-            "misconception_text": "Misconception: You multiplying by 1 keeps value the same.",
+            "misconception_text": "Nice try. Multiplying by 1 keeps the same value. No change happens.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -9610,7 +9610,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "12/11",
             "correct": false,
-            "misconception_text": "Misconception: You this factor is greater than 1, so it increases 15.",
+            "misconception_text": "Nice try. The factor is bigger than 1, so 15 gets larger.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -9630,14 +9630,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "6 x 2/3 is larger",
             "correct": false,
-            "misconception_text": "Misconception: You reversed scaling effects of factors below and above 1.",
+            "misconception_text": "Nice try. A factor less than 1 makes the result smaller, and a factor greater than 1 makes it larger. Since 2/3 < 1 and 4/3 > 1, 6 x 4/3 is larger.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "They are equal",
             "correct": false,
-            "misconception_text": "Misconception: You ignored different multipliers.",
+            "misconception_text": "Nice try. Watch how the multipliers size your answer.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -9649,7 +9649,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "Cannot compare without exact multiplication",
             "correct": false,
-            "misconception_text": "Misconception: You scaling comparison is enough to decide.",
+            "misconception_text": "Nice try. Compare how big the multipliers are, then find the answer.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -9669,7 +9669,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "4/4 is greater than 1 so it increases 9",
             "correct": false,
-            "misconception_text": "Misconception: You 4/4 equals 1, not greater than 1.",
+            "misconception_text": "Nice try. 4/4 equals 1, so it is not bigger than 1.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -9681,14 +9681,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Any fraction multiplied by 9 gives 9",
             "correct": false,
-            "misconception_text": "Misconception: You only multiplying by 1 leaves a number unchanged.",
+            "misconception_text": "Nice try. Multiplying by 1 keeps the number the same.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Because 9 is odd, fraction multiplication does not change it",
             "correct": false,
-            "misconception_text": "Misconception: You parity is unrelated to this scaling rule.",
+            "misconception_text": "Nice try. Odd or even does not matter here. Only the size of the fraction matters.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -9710,7 +9710,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "3/8 cup",
             "correct": false,
-            "misconception_text": "Misconception: You divided by 2 instead of multiplying by 2.",
+            "misconception_text": "Nice try. Two batches need twice as much, so we multiply by 2.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -9722,14 +9722,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "2 3/4 cups",
             "correct": false,
-            "misconception_text": "Misconception: You added 2 and 3/4 instead of multiplying.",
+            "misconception_text": "Nice try. Do not add. Multiply 3/4 by 2 to get both batches.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "6/4 cups",
             "correct": false,
-            "misconception_text": "Misconception: You did not simplify the fraction result.",
+            "misconception_text": "Nice try. You have the right amount. Just write 6/4 as 1 1/2.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -9749,7 +9749,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "6/15",
             "correct": false,
-            "misconception_text": "Misconception: You did not simplify the product.",
+            "misconception_text": "Nice try. 6/15 is not simplest yet. Divide the top and bottom by the same factor to simplify.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -9761,14 +9761,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "5/2",
             "correct": false,
-            "misconception_text": "Misconception: You inverted a factor incorrectly.",
+            "misconception_text": "Nice try. Do not flip. Just multiply top by top and bottom by bottom.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "1",
             "correct": false,
-            "misconception_text": "Misconception: You canceled incorrectly and over-simplified.",
+            "misconception_text": "Nice try. Multiply all first, then simplify the answer.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -9793,21 +9793,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "1 3/4 m",
             "correct": false,
-            "misconception_text": "Misconception: You took 1/2 of the rope, not 2/3.",
+            "misconception_text": "Nice try. We need two-thirds, not one-half.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "3 2/3 m",
             "correct": false,
-            "misconception_text": "Misconception: You added instead of multiplying by a fraction.",
+            "misconception_text": "Nice try. You added the numbers. Multiply the rope length by 2/3 to find the part used.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "7/6 m",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied without converting mixed number correctly.",
+            "misconception_text": "Nice try. Change the mixed number to an improper fraction, then multiply.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -9827,7 +9827,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "4 1/4 miles",
             "correct": false,
-            "misconception_text": "Misconception: You added 1 each day but not the fractional part correctly.",
+            "misconception_text": "Nice try. You added 1 each day. Do not forget to add the fraction part too.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -9839,14 +9839,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "16/4 miles",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied only whole-number parts and ignored the quarter.",
+            "misconception_text": "Nice try. Count both the whole and the quarter each day.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "6 miles",
             "correct": false,
-            "misconception_text": "Misconception: You overestimated the repeated addition.",
+            "misconception_text": "Nice try. Count each add one and one quarter step carefully.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -9871,21 +9871,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "3 3/20 L",
             "correct": false,
-            "misconception_text": "Misconception: You added instead of multiplying.",
+            "misconception_text": "Nice try. You need to multiply, not add.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "1 1/4 L",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied with incorrect common denominator handling.",
+            "misconception_text": "Nice try. First make the denominators match, then multiply.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
             "label": "D",
             "text": "2 2/5 L",
             "correct": false,
-            "misconception_text": "Misconception: You ignored the 3/4 factor and kept the original amount.",
+            "misconception_text": "Nice try. You kept the old amount, but we need to multiply by 3/4 to find the new amount.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -9907,7 +9907,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "2",
             "correct": false,
-            "misconception_text": "Misconception: You divided in the wrong direction.",
+            "misconception_text": "Nice try. You divided the big number by the small one. Flip it: divide the small fraction into 4 parts.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -9919,14 +9919,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "2/4",
             "correct": false,
-            "misconception_text": "Misconception: You did not simplify and used an incorrect operation.",
+            "misconception_text": "Nice try. Dividing by 4 makes the pieces smaller. Half split into 4 equal parts is 1/8.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "4/2",
             "correct": false,
-            "misconception_text": "Misconception: You inverted the expression incorrectly.",
+            "misconception_text": "Nice try. Keep the numbers in their first order.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -9946,7 +9946,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "3/4",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied by 1/4 instead of dividing by it.",
+            "misconception_text": "Nice try. This asks how many fourths are in 3, not 3 × 1/4. There are 12 fourths in 3.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -9958,14 +9958,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "7",
             "correct": false,
-            "misconception_text": "Misconception: You added the denominator instead of counting fourths.",
+            "misconception_text": "Nice try. It looks like you added the whole number and the bottom part. Try multiplying to count all the fourths.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
             "label": "D",
             "text": "1/12",
             "correct": false,
-            "misconception_text": "Misconception: You inverted the full result.",
+            "misconception_text": "Nice try. The answer looks flipped. We want how many small pieces fit in 3 wholes, so the answer should be bigger.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -9985,14 +9985,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "2/3",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied by 2 instead of dividing by 2.",
+            "misconception_text": "Nice try. It looks like you multiplied by 2. Dividing by 2 makes the piece smaller, so (1/3) ÷ 2 is 1/6.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "1/5",
             "correct": false,
-            "misconception_text": "Misconception: You added denominators instead of splitting the fraction.",
+            "misconception_text": "Nice try. You added the number to the bottom. Think of sharing 1/3 equally between two people.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
@@ -10004,7 +10004,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "2/6",
             "correct": false,
-            "misconception_text": "Misconception: You did not simplify after using the wrong operation.",
+            "misconception_text": "Nice try. The answer is very close. Just write the fraction the short way (1/6) for the final answer.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -10024,14 +10024,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "2/5 serving",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied by 1/5 instead of dividing by 1/5.",
+            "misconception_text": "Nice try. To see how many servings fit, divide the 2 cups by the size of one serving.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "7 servings",
             "correct": false,
-            "misconception_text": "Misconception: You counted with incorrect partitioning.",
+            "misconception_text": "Nice try. Each cup holds 5 fifths, so multiply 2 by 5 to count the total servings.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -10043,7 +10043,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "1/10 serving",
             "correct": false,
-            "misconception_text": "Misconception: You inverted the unit-fraction division result.",
+            "misconception_text": "Nice try. Less than one serving cannot be right. 2 cups is much bigger than 1/5 cup, so we have many.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -10068,21 +10068,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "1/2 m",
             "correct": false,
-            "misconception_text": "Misconception: You treated division by 3 as division of denominator only in the wrong way.",
+            "misconception_text": "Nice try. When you cut a small strip into 3 equal pieces, each new piece is even smaller.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
             "label": "C",
             "text": "3/6 m",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied by 3 instead of dividing.",
+            "misconception_text": "Nice try. You multiplied, but cutting the strip means each piece should get shorter, not longer.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "1/9 m",
             "correct": false,
-            "misconception_text": "Misconception: You divided denominator incorrectly.",
+            "misconception_text": "Nice try. Check the bottom number. Think of 3 split into groups of 1/6 to see how many groups we get.",
             "misconception_code": "DENOMINATOR_REASONING"
           }
         ]
@@ -10109,21 +10109,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "36",
             "correct": false,
-            "misconception_text": "Misconception: You added first and then multiplied.",
+            "misconception_text": "Nice try. Do the multiplication step first, then add the parts to finish the problem in order.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "24",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied and stopped before adding 8.",
+            "misconception_text": "Nice try. The multiplying is done. Now add that onto the 8 and you will be done.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "44",
             "correct": false,
-            "misconception_text": "Misconception: You combined operations in the wrong order.",
+            "misconception_text": "Nice try. Check the order of steps to be sure you multiply before you add.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -10143,7 +10143,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "20",
             "correct": false,
-            "misconception_text": "Misconception: You ignored parentheses and multiplied before adding.",
+            "misconception_text": "Nice try. When you see parentheses, do that part first. Then you add, not multiply.",
             "misconception_code": "ORDER_OF_OPERATIONS"
           },
           {
@@ -10155,14 +10155,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "24",
             "correct": false,
-            "misconception_text": "Misconception: You added inside parentheses but forgot to multiply by 3.",
+            "misconception_text": "Nice try. You added inside the parentheses, great. Next, multiply that answer by 3.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
             "label": "D",
             "text": "15",
             "correct": false,
-            "misconception_text": "Misconception: You added and multiplied the wrong terms.",
+            "misconception_text": "Nice try. The steps got mixed up a bit. Try the parentheses first, then multiply.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -10182,14 +10182,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "36",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied 24 by 2 and 3 instead of dividing by the grouped value.",
+            "misconception_text": "Nice try. First multiply 2 and 3. Then use that answer to divide 24 and you are done.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "12",
             "correct": false,
-            "misconception_text": "Misconception: You divided by 2 but forgot to divide by 3.",
+            "misconception_text": "Nice try. You divided 24 by 2. Now take that new number and divide it by the other part.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
@@ -10201,7 +10201,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "1",
             "correct": false,
-            "misconception_text": "Misconception: You may have divided by 24 instead of dividing 24.",
+            "misconception_text": "Nice try. The numbers were used in the wrong order. Multiply first, then divide.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -10221,21 +10221,21 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "(7 + 5) x 6",
             "correct": false,
-            "misconception_text": "Misconception: You added before taking the product of 5 and 6.",
+            "misconception_text": "Nice try. Add came first, but we need 5 and 6 multiplied first. Do that pair.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "7 x (5 + 6)",
             "correct": false,
-            "misconception_text": "Misconception: You turned the phrase into multiplication of a sum.",
+            "misconception_text": "Nice try. You tried to multiply 7 by a total. First multiply 5 and 6, then add 7.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "5 x (6 + 7)",
             "correct": false,
-            "misconception_text": "Misconception: You changed the structure to multiply 5 by a sum.",
+            "misconception_text": "Nice try. Add came before multiply, but save the add for last.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
@@ -10260,7 +10260,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "19",
             "correct": false,
-            "misconception_text": "Misconception: You did addition before multiplication.",
+            "misconception_text": "Nice try. Add happened too soon. Finish all divide and multiply before you add.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -10272,14 +10272,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "22",
             "correct": false,
-            "misconception_text": "Misconception: You combined operations in the wrong order.",
+            "misconception_text": "Nice try. The steps were done out of order. Check the signs again.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "8",
             "correct": false,
-            "misconception_text": "Misconception: You may have stopped after the division part.",
+            "misconception_text": "Nice try. You did the first division. Keep going with the next step.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -10306,21 +10306,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "35",
             "correct": false,
-            "misconception_text": "Misconception: You concatenated or multiplied incorrectly instead of evaluating 3 x 5 + 4.",
+            "misconception_text": "Nice try. It looks like you joined 3 and 5 to make 35. When a number sits next to a letter, you multiply.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "17",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted 4 instead of adding 4.",
+            "misconception_text": "Nice try. Look again at the plus sign. You will want to add, not subtract, the 4 this time.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "12",
             "correct": false,
-            "misconception_text": "Misconception: You computed 3n only and stopped.",
+            "misconception_text": "Nice try. You multiplied 3 by 5 to get 15. Next add the 4 and you will be done.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -10340,7 +10340,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "54",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied by m instead of dividing by m.",
+            "misconception_text": "Nice try. This time we need to divide 18 into 3 equal parts, not multiply.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -10352,14 +10352,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "15",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted m from 18 instead of dividing.",
+            "misconception_text": "Nice try. You used subtract. The problem asks for division, so divide 18 by m.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "3",
             "correct": false,
-            "misconception_text": "Misconception: You confused dividend and divisor.",
+            "misconception_text": "Nice try. Check how 18 divides by 3 to get the right number.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -10379,14 +10379,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "5 - 2p",
             "correct": false,
-            "misconception_text": "Misconception: You reversed the subtraction order.",
+            "misconception_text": "Nice try. This says \"2p less than 5.\" Start with 2p, then subtract 5.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "2(p - 5)",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted before doubling.",
+            "misconception_text": "Nice try. It looks like you subtracted first before doubling. Try adding first, then doubling that amount.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -10398,7 +10398,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "p - 10",
             "correct": false,
-            "misconception_text": "Misconception: You doubled 5 instead of doubling p.",
+            "misconception_text": "Nice try. You doubled 5 instead of p. \"Twice p\" means p times 2.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -10418,21 +10418,21 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "3",
             "correct": false,
-            "misconception_text": "Misconception: You divided x by 4 and ignored adding 8 first.",
+            "misconception_text": "Nice try. The parentheses mean to add x and 8 first. After that, divide by 4 and you will have it.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "11",
             "correct": false,
-            "misconception_text": "Misconception: You added but forgot to divide by 4.",
+            "misconception_text": "Nice try. First add 12 + 8 = 20. Then divide 20 by 4.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
             "label": "C",
             "text": "8",
             "correct": false,
-            "misconception_text": "Misconception: You added and divided in the wrong order.",
+            "misconception_text": "Nice try. Do the part inside the parentheses first. Then do the rest.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -10462,21 +10462,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "34",
             "correct": false,
-            "misconception_text": "Misconception: You combined digits instead of substituting and calculating.",
+            "misconception_text": "Nice try. When a number and a letter touch, we multiply them.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "-2",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted in the wrong order after substitution.",
+            "misconception_text": "Nice try. After you multiply both parts, take the second answer away from the first.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "22",
             "correct": false,
-            "misconception_text": "Misconception: You computed 4a and 2b incorrectly.",
+            "misconception_text": "Nice try. It looks like there was a small slip during the multiplication step. Multiplying 4 times 3 and 2 times 5 separately first will clear things up.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -10498,7 +10498,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "A is always twice B",
             "correct": false,
-            "misconception_text": "Misconception: You reversed which pattern is larger.",
+            "misconception_text": "Nice try. It looks like the patterns were switched. Since B grows by 6 while A grows by 3, Pattern B will be the larger one.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -10510,14 +10510,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "A and B are always equal",
             "correct": false,
-            "misconception_text": "Misconception: You ignored different step sizes.",
+            "misconception_text": "Nice try. They start together, but B takes bigger steps, so B moves ahead.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "B is always A + 1",
             "correct": false,
-            "misconception_text": "Misconception: You used a constant difference that does not fit the pattern.",
+            "misconception_text": "Nice try. The difference changes, so look for a multiplier. Pattern A is 3, 6, 9... and Pattern B is 6, 12, 18..., so B is twice A.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -10537,7 +10537,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "(10, 18)",
             "correct": false,
-            "misconception_text": "Misconception: You stopped at term 3 instead of term 4.",
+            "misconception_text": "Nice try. You found the third term. Take one more step to get the fourth.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -10549,14 +10549,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "(12, 24)",
             "correct": false,
-            "misconception_text": "Misconception: You likely applied incorrect start values or step sizes.",
+            "misconception_text": "Nice try. The steps got a bit mixed up. Start from 2 and list the numbers one by one.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "(16, 30)",
             "correct": false,
-            "misconception_text": "Misconception: You likely counted one extra step.",
+            "misconception_text": "Nice try. It looks like there might have been an extra step added on at the end.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -10576,7 +10576,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "B is always A + 3",
             "correct": false,
-            "misconception_text": "Misconception: You used an additive relationship for multiplicative patterns.",
+            "misconception_text": "Nice try. Multiplying makes the gap grow bigger each time.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -10588,14 +10588,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "A is always 4 times B",
             "correct": false,
-            "misconception_text": "Misconception: You inverted the scale factor.",
+            "misconception_text": "Nice try. It looks like you've found the right relationship, but the order is reversed. Since B starts at 4 and A starts at 1, B is the larger number.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "A and B become equal after enough steps",
             "correct": false,
-            "misconception_text": "Misconception: You assumed scaling factor can disappear over time.",
+            "misconception_text": "Nice try. Both patterns grow by the same factor, so B stays ahead.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -10615,14 +10615,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "y = x + 2",
             "correct": false,
-            "misconception_text": "Misconception: You used only the first pair and ignored others.",
+            "misconception_text": "Nice try. That works for the first pair, but not for the rest. Try a multiply rule that fits every pair.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "y = 2x",
             "correct": false,
-            "misconception_text": "Misconception: You assumed doubling instead of checking ratio.",
+            "misconception_text": "Nice try. Doubling gives 6, 12, 18. Your y-numbers are just a little smaller than those.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           },
           {
@@ -10634,7 +10634,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "y = x - 2",
             "correct": false,
-            "misconception_text": "Misconception: You used subtraction with the wrong sign.",
+            "misconception_text": "Nice try. It looks like the subtract was done with different numbers.",
             "misconception_code": "SIGN_RULE"
           }
         ]
@@ -10654,14 +10654,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "It stays 5",
             "correct": false,
-            "misconception_text": "Misconception: You ignored that B grows faster than A.",
+            "misconception_text": "Nice try. B adds 3 and A adds 2, so B pulls ahead by one each time.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "It decreases by 1 each term",
             "correct": false,
-            "misconception_text": "Misconception: You reversed which pattern has larger step size.",
+            "misconception_text": "Nice try. Pattern B grows faster, so the gap between them keeps getting bigger.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -10673,7 +10673,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "It alternates between 5 and 6",
             "correct": false,
-            "misconception_text": "Misconception: You introduced alternation not present in arithmetic sequences.",
+            "misconception_text": "Nice try. Both rules stay the same, so the gap between the patterns changes in a steady way.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -10700,21 +10700,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "Three times the sum of a number and five",
             "correct": false,
-            "misconception_text": "Misconception: You that phrase corresponds to 3(x + 5), not 3x + 5.",
+            "misconception_text": "Nice try. That phrase is for 3(x + 5), where the whole group is multiplied. In 3x + 5, only x is multiplied by 3.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Five times a number, then add three",
             "correct": false,
-            "misconception_text": "Misconception: You swapped coefficients and constants.",
+            "misconception_text": "Nice try. It looks like the numbers were swapped around.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Three plus a number, times five",
             "correct": false,
-            "misconception_text": "Misconception: You this implies (3 + x) x 5, a different expression.",
+            "misconception_text": "Nice try. That would mean (3 + x) * 5, which is a different calculation.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -10739,21 +10739,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "17",
             "correct": false,
-            "misconception_text": "Misconception: You may have added 12 and 7 instead of subtracting 7.",
+            "misconception_text": "Nice try. It looks like 7 was added to 12. Check the minus sign again.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "-5",
             "correct": false,
-            "misconception_text": "Misconception: You reversed subtraction order and likely computed 7 - 12.",
+            "misconception_text": "Nice try. It looks like the subtraction was done the other way (7 - 12).",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "12",
             "correct": false,
-            "misconception_text": "Misconception: You stopped after 2a and forgot to subtract 7.",
+            "misconception_text": "Nice try. You found 2a. Now just subtract 7 to finish.",
             "misconception_code": "OPERATION_SELECTION"
           }
         ]
@@ -10778,21 +10778,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "10",
             "correct": false,
-            "misconception_text": "Misconception: You used n x 2 instead of n squared.",
+            "misconception_text": "Nice try. Use n times n, not n times 2.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "49",
             "correct": false,
-            "misconception_text": "Misconception: You likely squared the full sum instead of only n.",
+            "misconception_text": "Nice try. You squared the whole sum, but we only square n.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "7",
             "correct": false,
-            "misconception_text": "Misconception: You added n and 4 without evaluating n squared.",
+            "misconception_text": "Nice try. You added n and 4 without squaring n first.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -10817,21 +10817,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "5 - 2m",
             "correct": false,
-            "misconception_text": "Misconception: You reversed 'five less than' and changed the order.",
+            "misconception_text": "Nice try. The words 'five less than' need to flip the order.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "2(m - 5)",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted before doubling, which changes the expression.",
+            "misconception_text": "Nice try. First double m, then take away five.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "m - 10",
             "correct": false,
-            "misconception_text": "Misconception: You doubled 5 instead of doubling m.",
+            "misconception_text": "Nice try. Double the letter m, not the 5.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -10856,21 +10856,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "14",
             "correct": false,
-            "misconception_text": "Misconception: You added 4 and 3 first, then multiplied by x.",
+            "misconception_text": "Nice try. You added 4 and 3 first. Do the multiply by x before adding.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "9",
             "correct": false,
-            "misconception_text": "Misconception: You may have used 3 + x then added 4.",
+            "misconception_text": "Nice try. Add 4 after you add 3 and x.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "24",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied all terms instead of evaluating the expression structure.",
+            "misconception_text": "Nice try. Multiply only what needs to be multiplied.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -10897,21 +10897,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "8 + x",
             "correct": false,
-            "misconception_text": "Misconception: You distributed 4 to 2 but not to x.",
+            "misconception_text": "Nice try. You only multiplied 4 times 2. Remember to multiply 4 by x too.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "6x",
             "correct": false,
-            "misconception_text": "Misconception: You combined unlike terms incorrectly.",
+            "misconception_text": "Nice try. 8 and 4x are different, so we leave them as 8 + 4x.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "4x + 2",
             "correct": false,
-            "misconception_text": "Misconception: You forgot to multiply 2 by 4.",
+            "misconception_text": "Nice try. The 2 also needs to multiply by the 4 outside.",
             "misconception_code": "OPERATION_SELECTION"
           }
         ]
@@ -10936,21 +10936,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "15(a + 10)",
             "correct": false,
-            "misconception_text": "Misconception: You treated 15 as a common factor of both terms.",
+            "misconception_text": "Nice try. Pick a number that fits into 10 and 15 both.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "10(15a + 1)",
             "correct": false,
-            "misconception_text": "Misconception: You introduced an incorrect outside factor.",
+            "misconception_text": "Nice try. Pick the number that divides both terms evenly.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "5(3a + 5)",
             "correct": false,
-            "misconception_text": "Misconception: You used the wrong constant term inside parentheses.",
+            "misconception_text": "Nice try. 10 divided by 5 gives 2, not 10.",
             "misconception_code": "ORDER_OF_OPERATIONS"
           }
         ]
@@ -10970,7 +10970,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "7y",
             "correct": false,
-            "misconception_text": "Misconception: You added an extra y-term.",
+            "misconception_text": "Nice try. Check the y’s one more time; we may have counted too many of them.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -10982,14 +10982,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "y^4",
             "correct": false,
-            "misconception_text": "Misconception: You treated repeated addition as exponentiation.",
+            "misconception_text": "Nice try. Adding y’s makes 3y, not y cubed.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "2y^2",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied terms instead of combining like terms.",
+            "misconception_text": "Nice try. When we just add, we keep the plain sum; no need for exponents or fancy marks.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -11014,21 +11014,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "10 - n",
             "correct": false,
-            "misconception_text": "Misconception: You distributed 2 to 5 but not to n.",
+            "misconception_text": "Nice try. Multiply both 5 and n by 2.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "10 + 2n",
             "correct": false,
-            "misconception_text": "Misconception: You lost the subtraction sign when distributing.",
+            "misconception_text": "Nice try. Keep that minus sign safe; make sure the 2 multiplies both its number and its sign.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "D",
             "text": "7n",
             "correct": false,
-            "misconception_text": "Misconception: You combined unlike terms incorrectly.",
+            "misconception_text": "Nice try. Numbers and letters cannot smush into one; they stay as separate pieces when we simplify.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -11053,21 +11053,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "3x + 6",
             "correct": false,
-            "misconception_text": "Misconception: You distributed incorrectly and undercounted constants.",
+            "misconception_text": "Nice try. Take the outside 3 and give it to each term inside; do not skip anyone.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "5x + 4",
             "correct": false,
-            "misconception_text": "Misconception: You forgot to multiply 4 by 3.",
+            "misconception_text": "Nice try. Multiply the 3 by the 4 as well; both numbers need the 3’s hug.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
             "label": "D",
             "text": "6x + 4",
             "correct": false,
-            "misconception_text": "Misconception: You incorrectly distributed the 3 to x only.",
+            "misconception_text": "Nice try. The outside 3 must multiply both the x and the plain number. Double-check each part.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -11094,21 +11094,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "No, never",
             "correct": false,
-            "misconception_text": "Misconception: You did not recognize repeated addition as multiplication.",
+            "misconception_text": "Nice try. Adding a number three times is the same as times 3.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Only when y = 1",
             "correct": false,
-            "misconception_text": "Misconception: You equivalent expressions work for all values, not one value.",
+            "misconception_text": "Nice try. Equivalent expressions give the same answer no matter what number you plug in.",
             "misconception_code": "FRACTION_EQUIVALENCE"
           },
           {
             "label": "D",
             "text": "Only when y = 0",
             "correct": false,
-            "misconception_text": "Misconception: You checked a single value, not all values.",
+            "misconception_text": "Nice try. These expressions match for zero and for every other number you try.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -11133,21 +11133,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "No, because one has parentheses",
             "correct": false,
-            "misconception_text": "Misconception: You parentheses do not prevent equivalence after expansion.",
+            "misconception_text": "Nice try. They look different, but distribution makes them the same.",
             "misconception_code": "ORDER_OF_OPERATIONS"
           },
           {
             "label": "C",
             "text": "Only for even x",
             "correct": false,
-            "misconception_text": "Misconception: You equivalent expressions are not restricted by parity here.",
+            "misconception_text": "Nice try. These will match for even, odd, or any x.",
             "misconception_code": "FRACTION_EQUIVALENCE"
           },
           {
             "label": "D",
             "text": "Only for positive x",
             "correct": false,
-            "misconception_text": "Misconception: You sign of x does not change this equivalence.",
+            "misconception_text": "Nice try. These expressions are equivalent for any value, even negatives.",
             "misconception_code": "SIGN_RULE"
           }
         ]
@@ -11167,7 +11167,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "4(a + 1) and 4a + 4",
             "correct": false,
-            "misconception_text": "Misconception: You these are equivalent by distribution.",
+            "misconception_text": "Nice try. If you distribute the 4, the two expressions match.",
             "misconception_code": "FRACTION_EQUIVALENCE"
           },
           {
@@ -11179,14 +11179,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "3m + 3m and 6m",
             "correct": false,
-            "misconception_text": "Misconception: You these are equivalent by combining like terms.",
+            "misconception_text": "Nice try. Adding 3m and 3m will always give 6m.",
             "misconception_code": "FRACTION_EQUIVALENCE"
           },
           {
             "label": "D",
             "text": "7 - n and -(n - 7)",
             "correct": false,
-            "misconception_text": "Misconception: You these are equivalent after distributing -1.",
+            "misconception_text": "Nice try. Rewrite the second one and you will see they are the same.",
             "misconception_code": "FRACTION_EQUIVALENCE"
           }
         ]
@@ -11211,21 +11211,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "No, it should be 3a + 2",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted from 4 before multiplying by 3.",
+            "misconception_text": "Nice try. Finish the distribution before you subtract.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "No, it should be 3a + 14",
             "correct": false,
-            "misconception_text": "Misconception: You added instead of subtracting 2 after distribution.",
+            "misconception_text": "Nice try. You added 2 at the end, but we need to subtract 2 instead.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "No, it should be 12a - 2",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied 3 and 4 incorrectly with variables.",
+            "misconception_text": "Nice try. The parts got moved in a way that changed the value.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -11245,14 +11245,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Check one value of the variable",
             "correct": false,
-            "misconception_text": "Misconception: You one value can match by chance.",
+            "misconception_text": "Nice try. One number can fool us. We need a rule that works for every number.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "Check two values of the variable",
             "correct": false,
-            "misconception_text": "Misconception: You a few checks do not prove all values.",
+            "misconception_text": "Nice try. Two matching numbers do not prove all billions will match. We need a stronger test.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -11264,7 +11264,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "Compare which expression looks longer",
             "correct": false,
-            "misconception_text": "Misconception: You appearance does not determine equivalence.",
+            "misconception_text": "Nice try. Short or long looks do not tell us if two bits are the same.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -11291,21 +11291,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "n + 5",
             "correct": false,
-            "misconception_text": "Misconception: You used addition instead of repeated multiplication for equal groups.",
+            "misconception_text": "Nice try. You used add. Try multiply to show the equal groups.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "n/5",
             "correct": false,
-            "misconception_text": "Misconception: You divided by 5 instead of multiplying by 5 groups.",
+            "misconception_text": "Nice try. Multiply by 5 groups, do not divide.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "5 + n + n",
             "correct": false,
-            "misconception_text": "Misconception: You mixed constants and variables without representing 5 full groups.",
+            "misconception_text": "Nice try. You mixed parts. Show all 5 full groups first.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -11325,7 +11325,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "l + 4",
             "correct": false,
-            "misconception_text": "Misconception: You added one length and one width but perimeter includes all four sides.",
+            "misconception_text": "Nice try. You added one length and one width. Perimeter adds all four sides.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -11337,14 +11337,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "4l",
             "correct": false,
-            "misconception_text": "Misconception: You treated all sides as length l.",
+            "misconception_text": "Nice try. You made every side the letter l. We still need width w.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "l x 4",
             "correct": false,
-            "misconception_text": "Misconception: You used area formula structure instead of perimeter.",
+            "misconception_text": "Nice try. You used the area plan. Switch to the perimeter plan.",
             "misconception_code": "AREA_VOLUME_SWAP"
           }
         ]
@@ -11364,14 +11364,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "a - 3",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted even though 'older' means add.",
+            "misconception_text": "Nice try. You subtracted. The word older tells us to add.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
             "label": "B",
             "text": "3a",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied by 3 instead of adding 3 years.",
+            "misconception_text": "Nice try. Add 3 years, do not multiply by 3.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -11383,7 +11383,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "a/3",
             "correct": false,
-            "misconception_text": "Misconception: You divided by 3 instead of representing an age difference.",
+            "misconception_text": "Nice try. Show an age difference, do not divide by 3.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -11403,7 +11403,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Only the number 1",
             "correct": false,
-            "misconception_text": "Misconception: You variables are not fixed to one value unless specified.",
+            "misconception_text": "Nice try. A variable can hold any number unless a rule says it can’t.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -11415,14 +11415,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Only positive integers",
             "correct": false,
-            "misconception_text": "Misconception: You variables can represent many types of numbers unless restricted.",
+            "misconception_text": "Nice try. A variable can stand for many different numbers until a limit is set.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "No number at all",
             "correct": false,
-            "misconception_text": "Misconception: You a variable is a placeholder for a number.",
+            "misconception_text": "Nice try. A variable is a placeholder for any number.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -11447,21 +11447,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "4(g + 7)",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied the bonus by 4, but bonus is added once.",
+            "misconception_text": "Nice try. Add the bonus once after you count the games.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "g + 11",
             "correct": false,
-            "misconception_text": "Misconception: You replaced repeated 4-point scoring with addition.",
+            "misconception_text": "Nice try. You added the 4 points. Since we get 4 points for every game, we multiply.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "7g + 4",
             "correct": false,
-            "misconception_text": "Misconception: You swapped the coefficient and constant roles.",
+            "misconception_text": "Nice try. The 7 and 4 swapped places. Keep the 4 with each game by multiplying first.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -11488,21 +11488,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "32",
             "correct": false,
-            "misconception_text": "Misconception: You added 9 and 23 instead of subtracting 9.",
+            "misconception_text": "Nice try. You added the numbers. To find x, subtract 9 from 23 instead.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "12",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted incorrectly.",
+            "misconception_text": "Nice try. You almost had it. Try 23 minus 9 one more time.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "2",
             "correct": false,
-            "misconception_text": "Misconception: You likely subtracted in the wrong order.",
+            "misconception_text": "Nice try. We need to subtract in the right order. Check which number should come first.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -11527,21 +11527,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "36",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted instead of dividing by 6.",
+            "misconception_text": "Nice try. You subtracted, but we need to divide to get x by itself.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "252",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied instead of dividing.",
+            "misconception_text": "Nice try. To undo the times 6, divide 42 by 6. That will give x.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "8",
             "correct": false,
-            "misconception_text": "Misconception: You made an arithmetic error in division.",
+            "misconception_text": "Nice try. Divide 42 by 6 carefully. 42 / 6 = 7.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -11566,21 +11566,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "8.6",
             "correct": false,
-            "misconception_text": "Misconception: You added the terms instead of isolating x.",
+            "misconception_text": "Nice try. It looks like the numbers were added. To get x alone, subtract 2.5 from 6.1.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "3.1",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted incorrectly after aligning decimals.",
+            "misconception_text": "Nice try. Almost right! You set it up well, but check the subtraction again.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "D",
             "text": "2.44",
             "correct": false,
-            "misconception_text": "Misconception: You divided instead of subtracting the constant term.",
+            "misconception_text": "Nice try. You used divide when you needed subtract. Add means you take away, so use subtract.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -11605,21 +11605,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "4.5",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied by 3/4 instead of dividing by 3/4.",
+            "misconception_text": "Nice try. To undo times 3/4, divide by 3/4. That is the same as times 4/3.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "2",
             "correct": false,
-            "misconception_text": "Misconception: You divided by the numerator only.",
+            "misconception_text": "Nice try. Use both the top and the bottom of the fraction to find x.",
             "misconception_code": "NUMERATOR_REASONING"
           },
           {
             "label": "D",
             "text": "24",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied by denominator without accounting for numerator.",
+            "misconception_text": "Nice try. You need both 3 and 4. First multiply by 4, then divide by 3 to solve for x.",
             "misconception_code": "DENOMINATOR_REASONING"
           }
         ]
@@ -11644,21 +11644,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "x + 3 = 27, so x = 24",
             "correct": false,
-            "misconception_text": "Misconception: You used addition instead of multiplication for equal groups.",
+            "misconception_text": "Nice try. Three equal-price groups are shown best with multiplication. Try 3x to show the total.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "27x = 3, so x = 9",
             "correct": false,
-            "misconception_text": "Misconception: You reversed the relationship between total and each pack.",
+            "misconception_text": "Nice try. Check the order: 27 is the total cost, and 3 is the number of packs.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "3x = 27, so x = 30",
             "correct": false,
-            "misconception_text": "Misconception: You wrote the right equation but solved it incorrectly.",
+            "misconception_text": "Nice try. You have the right setup. Now divide 27 by 3 to get the cost.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -11680,7 +11680,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "h < 140",
             "correct": false,
-            "misconception_text": "Misconception: You reversed the direction of the inequality.",
+            "misconception_text": "Nice try. Flip the sign. \"Taller than 140\" means heights bigger than 140.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -11692,14 +11692,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "h = 140",
             "correct": false,
-            "misconception_text": "Misconception: You used equality for a strict condition.",
+            "misconception_text": "Nice try. This says exactly 140 cm. Anyone taller can ride, so we need the > sign.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "h + 140",
             "correct": false,
-            "misconception_text": "Misconception: You this is an expression, not an inequality.",
+            "misconception_text": "Nice try. This puts the letter and number together. We need the > symbol to show a rule.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -11719,7 +11719,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "w > 5",
             "correct": false,
-            "misconception_text": "Misconception: You reversed the inequality direction.",
+            "misconception_text": "Nice try. Flip the sign. \"Less than 5 kg\" means weights smaller than 5.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -11731,14 +11731,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "w = 5",
             "correct": false,
-            "misconception_text": "Misconception: You less than does not include 5.",
+            "misconception_text": "Nice try. \"Less than 5\" means any number smaller than 5, not 5 itself.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "w - 5",
             "correct": false,
-            "misconception_text": "Misconception: You this is not an inequality statement.",
+            "misconception_text": "Nice try. You still need a sign to show one thing is less than the other. Add that symbol.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -11763,21 +11763,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "Open circle at -2, arrow to the right",
             "correct": false,
-            "misconception_text": "Misconception: You used greater-than direction.",
+            "misconception_text": "Nice try. Turn the arrow left to show the smaller numbers. Less than means left on the line.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Closed circle at -2, arrow to the left",
             "correct": false,
-            "misconception_text": "Misconception: You strict less-than uses open, not closed, circle.",
+            "misconception_text": "Nice try. Use an open circle because -2 itself is not included. Less than skips the exact point.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Closed circle at -2, arrow to the right",
             "correct": false,
-            "misconception_text": "Misconception: You both endpoint inclusion and direction are incorrect.",
+            "misconception_text": "Nice try. Fix two things: a solid or open dot and which way the arrow points.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -11797,21 +11797,21 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "0",
             "correct": false,
-            "misconception_text": "Misconception: You ignored numbers greater than 3.",
+            "misconception_text": "Nice try. There are endless numbers bigger than 3.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "1",
             "correct": false,
-            "misconception_text": "Misconception: You an inequality usually has more than one value.",
+            "misconception_text": "Nice try. Inequalities give a whole range of numbers, not one exact answer.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "3",
             "correct": false,
-            "misconception_text": "Misconception: You treated 3 as the count of solutions.",
+            "misconception_text": "Nice try. Any number bigger than 3 works, not only 3 itself.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -11836,7 +11836,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "a > 16, and 14 is a solution",
             "correct": false,
-            "misconception_text": "Misconception: You reversed the inequality.",
+            "misconception_text": "Nice try. Flip the sign. \"Younger than 16\" means ages smaller than 16.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -11848,14 +11848,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "a < 16, and 16 is a solution",
             "correct": false,
-            "misconception_text": "Misconception: You strict less-than does not include 16.",
+            "misconception_text": "Nice try. 16 is not less than 16. Pick any number smaller than 16.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "a = 16, and 16 is a solution",
             "correct": false,
-            "misconception_text": "Misconception: You equality does not match a strict inequality condition.",
+            "misconception_text": "Nice try. Many ages work, not just one. We need a sign that shows them all.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -11882,21 +11882,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "7 1/2 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You added dimensions instead of multiplying.",
+            "misconception_text": "Nice try. You added the sides, but we need to multiply them to get volume.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "12 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You ignored the 1/2 factor.",
+            "misconception_text": "Nice try. Remember to multiply by the 1/2 that is shown in the formula.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "1 1/2 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied only two dimensions.",
+            "misconception_text": "Nice try. Be sure to multiply all three numbers to find the full volume.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -11921,21 +11921,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "13 1/4 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You added instead of multiplying area by height.",
+            "misconception_text": "Nice try. You added the numbers, but we need to multiply area by height.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
             "label": "C",
             "text": "5/32 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You divided instead of multiplying.",
+            "misconception_text": "Nice try. You divided the numbers, yet we must multiply to get volume.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "8 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You ignored the fractional base area.",
+            "misconception_text": "Nice try. Keep the fraction with the base area before you multiply by height.",
             "misconception_code": "AREA_VOLUME_SWAP"
           }
         ]
@@ -11955,7 +11955,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "8 1/2 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You likely added factors or multiplied incompletely.",
+            "misconception_text": "Nice try. Check that you multiply every factor so no part is missed.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -11967,14 +11967,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "6 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You likely used whole-number parts only.",
+            "misconception_text": "Nice try. Use the decimal or fraction part, not just the whole number.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "3 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You used one dimension as the volume.",
+            "misconception_text": "Nice try. One side alone cannot give the volume; multiply all sides.",
             "misconception_code": "AREA_VOLUME_SWAP"
           }
         ]
@@ -11994,14 +11994,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "24 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You treated each cube as 1 cubic unit.",
+            "misconception_text": "Nice try. Each cube is not one unit. Count its real size to get the correct volume.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "12 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You halved cube count instead of cube volume.",
+            "misconception_text": "Nice try. Halve the volume of each little cube, not the cube count.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
@@ -12013,7 +12013,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "6 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You used an incorrect unit-cube volume.",
+            "misconception_text": "Nice try. Check the size of one unit cube and use it again.",
             "misconception_code": "AREA_VOLUME_SWAP"
           }
         ]
@@ -12033,7 +12033,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "(3/4) + 2 + (2/3)",
             "correct": false,
-            "misconception_text": "Misconception: You volume uses multiplication, not addition.",
+            "misconception_text": "Nice try. We multiply the three lengths, not add them.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
@@ -12045,14 +12045,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "2 x (3/4 + 2/3)",
             "correct": false,
-            "misconception_text": "Misconception: You changed the prism formula structure.",
+            "misconception_text": "Nice try. We need to multiply length, width, and height all together.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "(3/4) x (2/3)",
             "correct": false,
-            "misconception_text": "Misconception: You omitted one dimension.",
+            "misconception_text": "Nice try. We need all three numbers to multiply for volume.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -12074,7 +12074,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "5",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted incorrectly.",
+            "misconception_text": "Nice try. Try 7 - 1 again.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -12086,14 +12086,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "8",
             "correct": false,
-            "misconception_text": "Misconception: You added coordinates instead of finding distance.",
+            "misconception_text": "Nice try. We subtract to find the gap, not add.",
             "misconception_code": "COORDINATE_REASONING"
           },
           {
             "label": "D",
             "text": "3",
             "correct": false,
-            "misconception_text": "Misconception: You used x-values even though they are equal.",
+            "misconception_text": "Nice try. The x-values are the same, so look at the y-values.",
             "misconception_code": "COORDINATE_REASONING"
           }
         ]
@@ -12118,21 +12118,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "6",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted in the wrong order or value.",
+            "misconception_text": "Nice try. Check your subtraction one more time.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "16",
             "correct": false,
-            "misconception_text": "Misconception: You added x-values.",
+            "misconception_text": "Nice try. We subtract the x-values, not add them.",
             "misconception_code": "COORDINATE_REASONING"
           },
           {
             "label": "D",
             "text": "5",
             "correct": false,
-            "misconception_text": "Misconception: You used the common y-value as distance.",
+            "misconception_text": "Nice try. That shared y-value is not the distance. We need the x-difference.",
             "misconception_code": "COORDINATE_REASONING"
           }
         ]
@@ -12152,7 +12152,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "4 and 6",
             "correct": false,
-            "misconception_text": "Misconception: You used endpoint values instead of differences.",
+            "misconception_text": "Nice try. Subtract to find the gaps first.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -12164,14 +12164,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "1 and 5",
             "correct": false,
-            "misconception_text": "Misconception: You used x-coordinates directly.",
+            "misconception_text": "Nice try. Use the gaps, not the x-coordinates alone.",
             "misconception_code": "COORDINATE_REASONING"
           },
           {
             "label": "D",
             "text": "2 and 6",
             "correct": false,
-            "misconception_text": "Misconception: You used y-coordinates directly.",
+            "misconception_text": "Nice try. Subtract to find length and width.",
             "misconception_code": "COORDINATE_REASONING"
           }
         ]
@@ -12196,21 +12196,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "PQ = 2 and QR = 3",
             "correct": false,
-            "misconception_text": "Misconception: You undercounted coordinate differences.",
+            "misconception_text": "Nice try. Count again when you subtract the x-coordinates and the y-coordinates. This gives the true side length.",
             "misconception_code": "COORDINATE_REASONING"
           },
           {
             "label": "C",
             "text": "PQ = 6 and QR = 2",
             "correct": false,
-            "misconception_text": "Misconception: You mixed subtraction across coordinates.",
+            "misconception_text": "Nice try. Check each subtract step again. Mix-ups happen, but a quick double-check keeps the numbers right.",
             "misconception_code": "COORDINATE_REASONING"
           },
           {
             "label": "D",
             "text": "PQ = 5 and QR = 4",
             "correct": false,
-            "misconception_text": "Misconception: You swapped the two distances.",
+            "misconception_text": "Nice try. It looks like the two answers traded places. Swap them back and the lengths will fit.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -12230,7 +12230,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "10",
             "correct": false,
-            "misconception_text": "Misconception: You doubled one side instead of using four sides.",
+            "misconception_text": "Nice try. You found the side length. Now add that length four times to get the perimeter.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -12242,14 +12242,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "25",
             "correct": false,
-            "misconception_text": "Misconception: You used side squared instead of perimeter.",
+            "misconception_text": "Nice try. 25 is the area. For perimeter, add the four side lengths around the outside.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "9",
             "correct": false,
-            "misconception_text": "Misconception: You added coordinates rather than side lengths.",
+            "misconception_text": "Nice try. Add the side lengths, not the raw coordinates. Find each side first, then add them.",
             "misconception_code": "COORDINATE_REASONING"
           }
         ]
@@ -12276,21 +12276,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "+7",
             "correct": false,
-            "misconception_text": "Misconception: You ignored that 'below zero' means negative.",
+            "misconception_text": "Nice try. \"Below zero\" always means a negative number. Use the minus sign in front.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "C",
             "text": "0",
             "correct": false,
-            "misconception_text": "Misconception: You 0 means exactly at zero, not below zero.",
+            "misconception_text": "Nice try. 0 is right on the zero line. Seven below means we move 7 steps down.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "7/0",
             "correct": false,
-            "misconception_text": "Misconception: You used an invalid expression instead of an integer sign.",
+            "misconception_text": "Nice try. A division slash is not needed. Just put a minus sign to show below zero.",
             "misconception_code": "SIGN_RULE"
           }
         ]
@@ -12310,7 +12310,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "12",
             "correct": false,
-            "misconception_text": "Misconception: You ignored that below sea level is negative.",
+            "misconception_text": "Nice try. \"Below sea level\" needs a negative sign. Put − in front of the number.",
             "misconception_code": "SIGN_RULE"
           },
           {
@@ -12322,14 +12322,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "0",
             "correct": false,
-            "misconception_text": "Misconception: You 0 represents sea level, not below it.",
+            "misconception_text": "Nice try. 0 marks sea level. The diver is under it, so we use a negative number.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "1/12",
             "correct": false,
-            "misconception_text": "Misconception: You converted the value to a fraction instead of using a signed integer.",
+            "misconception_text": "Nice try. Skip the fraction. Use a plain positive or negative integer for the elevation.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -12349,7 +12349,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Deposit is negative, withdrawal is positive.",
             "correct": false,
-            "misconception_text": "Misconception: You reversed the usual sign convention for gains and losses.",
+            "misconception_text": "Nice try. A deposit adds money, so it is positive. A withdrawal takes money out, so it is negative.",
             "misconception_code": "SIGN_RULE"
           },
           {
@@ -12361,14 +12361,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Both deposit and withdrawal are positive.",
             "correct": false,
-            "misconception_text": "Misconception: You using the same sign loses the idea of opposite directions of change.",
+            "misconception_text": "Nice try. If both had the same sign, we could not see money coming or going. Different signs show if the balance grows or shrinks.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "D",
             "text": "Both deposit and withdrawal are negative.",
             "correct": false,
-            "misconception_text": "Misconception: You using the same sign loses the distinction between adding and removing value.",
+            "misconception_text": "Nice try. One action adds money, the other takes it. We need one plus sign and one minus sign.",
             "misconception_code": "SIGN_RULE"
           }
         ]
@@ -12388,7 +12388,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "0 means no temperature exists.",
             "correct": false,
-            "misconception_text": "Misconception: You 0 is a point on the number line, not the absence of the quantity.",
+            "misconception_text": "Nice try. Zero is just another spot on the scale. Cold temps can still be above or below it.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -12400,14 +12400,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "0 means the temperature is positive.",
             "correct": false,
-            "misconception_text": "Misconception: You 0 is neither positive nor negative.",
+            "misconception_text": "Nice try. Zero is right in the middle. It is not positive and it is not negative.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "D",
             "text": "0 means the temperature is negative.",
             "correct": false,
-            "misconception_text": "Misconception: You 0 is not negative; it separates positive and negative values.",
+            "misconception_text": "Nice try. Zero is the fence between the plus side and the minus side.",
             "misconception_code": "SIGN_RULE"
           }
         ]
@@ -12427,14 +12427,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "-9",
             "correct": false,
-            "misconception_text": "Misconception: You negative values represent losses or opposite direction, not gains.",
+            "misconception_text": "Nice try. Big or small, the minus sign shows a loss, not a gain.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "B",
             "text": "+5",
             "correct": false,
-            "misconception_text": "Misconception: You this is a gain, but not the larger one among the options.",
+            "misconception_text": "Nice try. This number is a gain. Look for the other positive number that is even bigger.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -12446,7 +12446,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "0",
             "correct": false,
-            "misconception_text": "Misconception: You 0 means no gain or loss, not a larger gain.",
+            "misconception_text": "Nice try. Zero means no change. There was no gain and no loss.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -12468,7 +12468,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "-8",
             "correct": false,
-            "misconception_text": "Misconception: You opposites are the same distance from 0 but on opposite sides.",
+            "misconception_text": "Nice try. Opposites are mirror images. They are the same distance from zero, but on the other side.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -12480,14 +12480,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "-16",
             "correct": false,
-            "misconception_text": "Misconception: You doubled the value instead of reflecting across 0.",
+            "misconception_text": "Nice try. It looks like you doubled the number. Just jump across zero from negative to positive.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "0",
             "correct": false,
-            "misconception_text": "Misconception: You 0 is the center point, not the opposite of -8.",
+            "misconception_text": "Nice try. 0 sits between opposite numbers. It is the starting point on the number line.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -12507,7 +12507,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Quadrant I",
             "correct": false,
-            "misconception_text": "Misconception: You quadrant I requires both coordinates positive.",
+            "misconception_text": "Nice try. In Quadrant I both x and y are positive. Here x is -3, so we are not there.",
             "misconception_code": "SIGN_RULE"
           },
           {
@@ -12519,14 +12519,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Quadrant III",
             "correct": false,
-            "misconception_text": "Misconception: You quadrant III requires both coordinates negative.",
+            "misconception_text": "Nice try. In Quadrant III, both x and y must be negative.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "D",
             "text": "Quadrant IV",
             "correct": false,
-            "misconception_text": "Misconception: You quadrant IV requires positive x and negative y.",
+            "misconception_text": "Nice try. Quadrant IV has positive x and negative y; our point has the opposite signs.",
             "misconception_code": "SIGN_RULE"
           }
         ]
@@ -12551,21 +12551,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "(-7, -1)",
             "correct": false,
-            "misconception_text": "Misconception: You moved left 5 instead of right 5.",
+            "misconception_text": "Nice try. Moving right adds to the x-value; it looks like you moved 5 steps left instead.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "(3, 7)",
             "correct": false,
-            "misconception_text": "Misconception: You moved up 4 instead of down 4.",
+            "misconception_text": "Nice try. Moving down subtracts from the y-value; you moved up 4 instead.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "(-1, 3)",
             "correct": false,
-            "misconception_text": "Misconception: You changed the wrong coordinate for each movement.",
+            "misconception_text": "Nice try. It seems the x and y moves were swapped.",
             "misconception_code": "COORDINATE_REASONING"
           }
         ]
@@ -12590,21 +12590,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "(-4, 0)",
             "correct": false,
-            "misconception_text": "Misconception: You this lies on the x-axis because y = 0.",
+            "misconception_text": "Nice try. This point is on the x-axis because y is 0. Y-axis points have x = 0.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "(3, 0)",
             "correct": false,
-            "misconception_text": "Misconception: You points on y-axis must have x = 0, not y = 0.",
+            "misconception_text": "Nice try. On the y-axis, x must be 0.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "(2, -4)",
             "correct": false,
-            "misconception_text": "Misconception: You both coordinates are nonzero, so it is not on an axis.",
+            "misconception_text": "Nice try. Since both numbers are non-zero, the point floats in a quadrant, not on an axis.",
             "misconception_code": "COORDINATE_REASONING"
           }
         ]
@@ -12624,7 +12624,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "(2/3, -1/2)",
             "correct": false,
-            "misconception_text": "Misconception: You signs are reversed: x is positive and y is negative.",
+            "misconception_text": "Nice try. The signs are swapped; this point has positive x and negative y.",
             "misconception_code": "SIGN_RULE"
           },
           {
@@ -12636,14 +12636,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "(-2/3, -1/2)",
             "correct": false,
-            "misconception_text": "Misconception: You both coordinates are negative.",
+            "misconception_text": "Nice try. Both numbers are negative, so the point lands in Quadrant III.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "D",
             "text": "(2/3, 1/2)",
             "correct": false,
-            "misconception_text": "Misconception: You both coordinates are positive.",
+            "misconception_text": "Nice try. Both numbers are positive, so the point belongs in Quadrant I.",
             "misconception_code": "SIGN_RULE"
           }
         ]
@@ -12670,21 +12670,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "3:2",
             "correct": false,
-            "misconception_text": "Misconception: You reversed the order. The question asks apples to oranges.",
+            "misconception_text": "Nice try. The question asked for apples to oranges, so list the apples number first.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "8:12",
             "correct": false,
-            "misconception_text": "Misconception: You this ratio is correct but not simplified.",
+            "misconception_text": "Nice try. Your numbers are right. Now divide both by the same small number to simplify it more.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           },
           {
             "label": "D",
             "text": "4:6",
             "correct": false,
-            "misconception_text": "Misconception: You simplified only partway; ratio can be reduced further.",
+            "misconception_text": "Nice try. You simplified once, but another divide step will give the simplest form.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           }
         ]
@@ -12709,21 +12709,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "The ratio of girls to boys is 10 to 15.",
             "correct": false,
-            "misconception_text": "Misconception: You reversed girls and boys in the ratio.",
+            "misconception_text": "Nice try. Girls came first in the sentence, so put girls first in the ratio too.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           },
           {
             "label": "C",
             "text": "The ratio of girls to boys is 25.",
             "correct": false,
-            "misconception_text": "Misconception: You a ratio compares two quantities; it is not their sum.",
+            "misconception_text": "Nice try. Ratios show one group to another group, not one big total of everyone.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           },
           {
             "label": "D",
             "text": "The ratio of girls to boys is 15/25.",
             "correct": false,
-            "misconception_text": "Misconception: You compared girls to total students, not girls to boys.",
+            "misconception_text": "Nice try. This shows girls to the whole class, but we need girls to boys.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -12748,21 +12748,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "2:3",
             "correct": false,
-            "misconception_text": "Misconception: You found red to blue, not red to total.",
+            "misconception_text": "Nice try. You gave red to blue, but the question wants red to all marbles combined.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "5:2",
             "correct": false,
-            "misconception_text": "Misconception: You reversed the ratio red to total.",
+            "misconception_text": "Nice try. The order was flipped. List red first, then the total of all marbles.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           },
           {
             "label": "D",
             "text": "6:9",
             "correct": false,
-            "misconception_text": "Misconception: You used red to blue and did not simplify.",
+            "misconception_text": "Nice try. That is red to blue. Try red to the total of all marbles.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -12787,21 +12787,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "16",
             "correct": false,
-            "misconception_text": "Misconception: You scaled the wrong term in the ratio.",
+            "misconception_text": "Nice try. Match the 12 dogs to the 4 in the ratio. Multiply the other parts the same way.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           },
           {
             "label": "C",
             "text": "8",
             "correct": false,
-            "misconception_text": "Misconception: You may have used additive reasoning instead of multiplicative ratio scaling.",
+            "misconception_text": "Nice try. Ratios grow by multiplying both parts by the same number, not by adding.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           },
           {
             "label": "D",
             "text": "15",
             "correct": false,
-            "misconception_text": "Misconception: You added the ratio parts then subtracted incorrectly.",
+            "misconception_text": "Nice try. Adding mixes it up. Use multiplication to scale both parts of the ratio.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           }
         ]
@@ -12826,21 +12826,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "7:4",
             "correct": false,
-            "misconception_text": "Misconception: You reversed the order of the ratio terms.",
+            "misconception_text": "Nice try. Order matters in ratios. Switching the numbers changes what the ratio tells us.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           },
           {
             "label": "C",
             "text": "12:14",
             "correct": false,
-            "misconception_text": "Misconception: You only one term was scaled correctly.",
+            "misconception_text": "Nice try. You scaled only one number. To keep the ratio fair, multiply both numbers by the same amount.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "4:11",
             "correct": false,
-            "misconception_text": "Misconception: You changing only one term does not keep ratios equivalent.",
+            "misconception_text": "Nice try. Change just one number and the 4:7 match is lost.",
             "misconception_code": "FRACTION_EQUIVALENCE"
           }
         ]
@@ -12862,7 +12862,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "How many letters are in my first name?",
             "correct": false,
-            "misconception_text": "Misconception: You this asks about one fixed value, not variability across data.",
+            "misconception_text": "Nice try. This question has only one answer. A statistical question needs many different answers from a group.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -12874,14 +12874,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "What is 8 x 7?",
             "correct": false,
-            "misconception_text": "Misconception: You this has one exact mathematical answer.",
+            "misconception_text": "Nice try. This math fact has one exact answer. We want a question with different answers from each person.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "What day is today?",
             "correct": false,
-            "misconception_text": "Misconception: You this has one direct answer, not a data distribution.",
+            "misconception_text": "Nice try. Today is the same for everyone, so there is no spread of data. Pick a question with variety.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -12901,7 +12901,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Because every student will have the same answer.",
             "correct": false,
-            "misconception_text": "Misconception: You statistical questions expect different answers, not identical ones.",
+            "misconception_text": "Nice try. In a statistical question we expect different answers. The variety is what makes it statistical.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -12913,14 +12913,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Because it can be answered without collecting data.",
             "correct": false,
-            "misconception_text": "Misconception: You statistical questions rely on data collection from a group.",
+            "misconception_text": "Nice try. We need real data from students to see how the answers vary. Then we can decide.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Because it has exactly one correct number.",
             "correct": false,
-            "misconception_text": "Misconception: You one exact value would make it non-statistical.",
+            "misconception_text": "Nice try. If every answer were the same, there would be no spread to study. We need variety.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -12940,14 +12940,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "How tall are the trees in this park?",
             "correct": false,
-            "misconception_text": "Misconception: You tree heights vary, so this is statistical.",
+            "misconception_text": "Nice try. Tree heights in a park vary. That variety makes this a statistical question.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "How many books did each student read this month?",
             "correct": false,
-            "misconception_text": "Misconception: You different students can have different counts, so this is statistical.",
+            "misconception_text": "Nice try. Students read different numbers of books. Those different counts make it a statistical question.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -12959,7 +12959,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "What are the daily high temperatures this week?",
             "correct": false,
-            "misconception_text": "Misconception: You temperatures vary by day, making this statistical.",
+            "misconception_text": "Nice try. Daily high temperatures change. The changing values give us data to study statistically.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -12979,7 +12979,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "What is the color of this one student's backpack?",
             "correct": false,
-            "misconception_text": "Misconception: You this targets one individual, so it does not create a useful data distribution.",
+            "misconception_text": "Nice try. We need to ask a whole group, not just one kid. Then we can see how answers differ!",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -12991,14 +12991,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "What is the classroom number?",
             "correct": false,
-            "misconception_text": "Misconception: You this has one fixed answer for the class.",
+            "misconception_text": "Nice try. One room number can’t change, so we won’t see any differences to study.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "What is 100 divided by 4?",
             "correct": false,
-            "misconception_text": "Misconception: You this is a single arithmetic answer, not a data question.",
+            "misconception_text": "Nice try. This math has one exact answer. We need many answers to make a data set.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -13023,21 +13023,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "From 'What is my shoe size?' to 'What is my shoe size exactly?'",
             "correct": false,
-            "misconception_text": "Misconception: You this still asks about one person with one value.",
+            "misconception_text": "Nice try. We still need to ask a group, not one kid. Then the answers can vary.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "From 'What is the class number?' to 'What is the class number today?'",
             "correct": false,
-            "misconception_text": "Misconception: You this still has one fixed answer.",
+            "misconception_text": "Nice try. Even on one day, the class still has only one room number. No change to see!",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "From 'What is 5 + 7?' to 'What is 5 + 7 quickly?'",
             "correct": false,
-            "misconception_text": "Misconception: You this remains a single-answer arithmetic question.",
+            "misconception_text": "Nice try. A quick math problem gives one right answer. We need many answers to study.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -13059,7 +13059,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "4",
             "correct": false,
-            "misconception_text": "Misconception: You chose a near-middle value but not the middle value in ordered data.",
+            "misconception_text": "Nice try. You got close to the middle. Now line up the data and pick the dead-center number.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -13071,14 +13071,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "6",
             "correct": false,
-            "misconception_text": "Misconception: You chose the value above the true center.",
+            "misconception_text": "Nice try. 6 is not the middle value. Look for the number that splits the list in half.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "7",
             "correct": false,
-            "misconception_text": "Misconception: You selected the maximum instead of a center.",
+            "misconception_text": "Nice try. 7 is the biggest number. We want the median, the value that sits in the center.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -13098,7 +13098,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "5",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted two middle values instead of max minus min.",
+            "misconception_text": "Nice try. You used middle numbers. Range is big number minus small number, always.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -13110,14 +13110,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "15",
             "correct": false,
-            "misconception_text": "Misconception: You chose the maximum value instead of spread.",
+            "misconception_text": "Nice try. 15 is the top. Range is the whole distance from bottom to top.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "11.5",
             "correct": false,
-            "misconception_text": "Misconception: You computed a center value rather than spread.",
+            "misconception_text": "Nice try. That looks like a center. Range tells how far the data spreads, not the middle.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -13137,7 +13137,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Roughly symmetric",
             "correct": false,
-            "misconception_text": "Misconception: You a long tail on one side indicates asymmetry.",
+            "misconception_text": "Nice try. A symmetric graph would look the same on both sides. The extra point at 40 stretches it out.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -13149,14 +13149,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Skewed left",
             "correct": false,
-            "misconception_text": "Misconception: You the long tail is on the high-value side, not the low-value side.",
+            "misconception_text": "Nice try. The long tail points right, so we call it skewed right.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Uniform",
             "correct": false,
-            "misconception_text": "Misconception: You uniform means values spread evenly, not clustered with a tail.",
+            "misconception_text": "Nice try. Uniform means dots spread evenly. Here they bunch up with a few far-out dots.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -13176,7 +13176,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Both sets have the same center and same spread.",
             "correct": false,
-            "misconception_text": "Misconception: You the centers match, but spreads differ.",
+            "misconception_text": "Nice try. Both sets center on 10, but Set B is more spread out.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -13188,14 +13188,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Set A has greater spread because all values are 10.",
             "correct": false,
-            "misconception_text": "Misconception: You no variation means zero spread.",
+            "misconception_text": "Nice try. Set A has every number the same, so its spread is zero. Set B spreads more.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Set B has center 12 and smaller spread.",
             "correct": false,
-            "misconception_text": "Misconception: You overestimated center and misread variability.",
+            "misconception_text": "Nice try. Set B centers on 10 and is much more spread out than Set A.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -13220,21 +13220,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "Center is always the largest value, spread is always zero, and shape is not useful.",
             "correct": false,
-            "misconception_text": "Misconception: You this confuses all three distribution features.",
+            "misconception_text": "Nice try. Mix-up! Center, spread, and shape all help us see the data clearly.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Center and spread are the same thing.",
             "correct": false,
-            "misconception_text": "Misconception: You center describes typical value; spread describes variability.",
+            "misconception_text": "Nice try. Center shows the middle. Spread shows how far the rest are from that middle.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Shape is only for geometry, not data.",
             "correct": false,
-            "misconception_text": "Misconception: You distribution shape is a core data concept.",
+            "misconception_text": "Nice try. In stats, shape matters. It tells how the data values cluster together.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -13261,21 +13261,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "Range",
             "correct": false,
-            "misconception_text": "Misconception: You range measures spread, not center.",
+            "misconception_text": "Nice try. Range shows overall spread, not the middle.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Interquartile range",
             "correct": false,
-            "misconception_text": "Misconception: You iQR is variation.",
+            "misconception_text": "Nice try. The interquartile range tells how much the data spreads.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Mean absolute deviation",
             "correct": false,
-            "misconception_text": "Misconception: You mAD is variation.",
+            "misconception_text": "Nice try. This shows how far points are from the mean, so it measures spread.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -13295,7 +13295,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Median",
             "correct": false,
-            "misconception_text": "Misconception: You median is center, not spread from mean.",
+            "misconception_text": "Nice try. Median is the middle. We want the spread, the gap between numbers.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -13307,14 +13307,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Mode",
             "correct": false,
-            "misconception_text": "Misconception: You mode is a common value, not variation.",
+            "misconception_text": "Nice try. Mode is the most common value. It does not tell how far apart numbers are.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Total sum",
             "correct": false,
-            "misconception_text": "Misconception: You sum alone does not describe spread.",
+            "misconception_text": "Nice try. Adding gives the total. It does not show the gaps between numbers.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -13334,7 +13334,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Both center and variation are the same",
             "correct": false,
-            "misconception_text": "Misconception: You same mean does not imply same spread.",
+            "misconception_text": "Nice try. The means match, but Set B is more spread out. So the variation is different.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -13346,14 +13346,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Variation is same, center is different",
             "correct": false,
-            "misconception_text": "Misconception: You prompt already states equal means.",
+            "misconception_text": "Nice try. Both means are 20, so the center matches. The spread is what differs.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Neither center nor variation can be compared",
             "correct": false,
-            "misconception_text": "Misconception: You the scenario gives enough info to compare both.",
+            "misconception_text": "Nice try. We can see the centers match. The spreads do not match.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -13378,21 +13378,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "Mean is 4 and range is 6",
             "correct": false,
-            "misconception_text": "Misconception: You swapped center and spread values.",
+            "misconception_text": "Nice try. 6 is the mean and 4 is the range. Swap them back.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Mean is 6 and range is 2",
             "correct": false,
-            "misconception_text": "Misconception: You used adjacent difference, not max-minus-min.",
+            "misconception_text": "Nice try. Range is max minus min, so 8 - 4 = 4.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Mean is 8 and range is 2",
             "correct": false,
-            "misconception_text": "Misconception: You used max as center.",
+            "misconception_text": "Nice try. 8 is the biggest. The mean is the average of all.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -13412,14 +13412,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Because center alone describes everything about a data set",
             "correct": false,
-            "misconception_text": "Misconception: You center does not describe spread.",
+            "misconception_text": "Nice try. Center shows the middle. It does not show if data is tight or wide.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "Because variation alone gives the typical value",
             "correct": false,
-            "misconception_text": "Misconception: You variation does not identify typical central value.",
+            "misconception_text": "Nice try. Variation shows spread. We also need center for the typical value.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -13431,7 +13431,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "Because both numbers are always equal",
             "correct": false,
-            "misconception_text": "Misconception: You center and spread measure different features.",
+            "misconception_text": "Nice try. Center and variation are two different ideas. They are not the same.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -13458,21 +13458,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "A color for the graph",
             "correct": false,
-            "misconception_text": "Misconception: You visual style is not a core statistical summary element.",
+            "misconception_text": "Nice try. Colors look nice, but we need to see if 152 is cm, inches, or something else.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Whether the average is an integer",
             "correct": false,
-            "misconception_text": "Misconception: You integer status is less essential than units.",
+            "misconception_text": "Nice try. A whole number or not is tiny news next to knowing what we are measuring.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "A second decimal place",
             "correct": false,
-            "misconception_text": "Misconception: You precision is secondary to missing units.",
+            "misconception_text": "Nice try. Extra decimals help, but the unit like cm is the big must-know here.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -13492,7 +13492,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Median",
             "correct": false,
-            "misconception_text": "Misconception: You median is center, not variability.",
+            "misconception_text": "Nice try. Median is the middle value. We want the number that tells how spread out the data is.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -13504,14 +13504,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Mode",
             "correct": false,
-            "misconception_text": "Misconception: You mode is a central tendency measure.",
+            "misconception_text": "Nice try. Mode just shows the most common value, not how wide the data stretches.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Sample size",
             "correct": false,
-            "misconception_text": "Misconception: You count alone is not variability.",
+            "misconception_text": "Nice try. Sample size only says how many items we have, not how different they are.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -13536,21 +13536,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "Scores are perfectly symmetric with no unusual values",
             "correct": false,
-            "misconception_text": "Misconception: You 95 is a clear deviation from the cluster.",
+            "misconception_text": "Nice try. The 95 is way bigger than the 70s, so it is an outlier.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Scores show two equal clusters around 72 and 95",
             "correct": false,
-            "misconception_text": "Misconception: You there is one high value, not a second cluster.",
+            "misconception_text": "Nice try. One 95 is just one dot. A cluster needs more dots together.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Scores cannot be summarized because there are only five values",
             "correct": false,
-            "misconception_text": "Misconception: You small sets can still be summarized.",
+            "misconception_text": "Nice try. Even with just a few points we can still spot the data shape.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -13570,7 +13570,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Only the mean",
             "correct": false,
-            "misconception_text": "Misconception: You mean alone misses spread, count, and context.",
+            "misconception_text": "Nice try. The mean helps, but it does not tell the count or the spread.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -13582,14 +13582,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Only a graph title and axis labels",
             "correct": false,
-            "misconception_text": "Misconception: You labels help, but do not complete a statistical summary.",
+            "misconception_text": "Nice try. Labels are good, yet we also need to say what the numbers mean.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Only minimum and maximum",
             "correct": false,
-            "misconception_text": "Misconception: You min and max omit center and richer context.",
+            "misconception_text": "Nice try. Range is useful, but we still need to see what happens in the middle.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -13614,21 +13614,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "Class A has higher center",
             "correct": false,
-            "misconception_text": "Misconception: You means are stated as equal.",
+            "misconception_text": "Nice try. The words say both classes have the same mean, so their middles are matched. You do not need to change that.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Class B must have more students",
             "correct": false,
-            "misconception_text": "Misconception: You iQR does not determine sample size.",
+            "misconception_text": "Nice try. The IQR shows how scores spread, not how many kids are in class. Keep the spread idea and the count idea apart.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "The two classes have identical distributions",
             "correct": false,
-            "misconception_text": "Misconception: You different IQR means different spread.",
+            "misconception_text": "Nice try. Class A has a wider spread, so the shapes differ even if the means are twins. Check the spread more than the middle.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -13655,21 +13655,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "10x - 5",
             "correct": false,
-            "misconception_text": "Misconception: You distributed 3 incorrectly to the constant term.",
+            "misconception_text": "Nice try. The 3 must multiply both 2x and 5. Share it with each part.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "6x - 1",
             "correct": false,
-            "misconception_text": "Misconception: You combined unlike terms incorrectly.",
+            "misconception_text": "Nice try. -15 has no x, and 4x has an x. They are not like terms, so let them stay apart.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "7x - 15",
             "correct": false,
-            "misconception_text": "Misconception: You forgot one x-term while combining.",
+            "misconception_text": "Nice try. 6x + 4x = 10x.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -13694,21 +13694,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "14(y + 21)",
             "correct": false,
-            "misconception_text": "Misconception: You did not extract a true common factor.",
+            "misconception_text": "Nice try. 14 does not divide 21 evenly. Hunt for a smaller number that can divide both 14 and 21.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "3(14y + 7)",
             "correct": false,
-            "misconception_text": "Misconception: You 3 is not a common factor of both terms.",
+            "misconception_text": "Nice try. 3 fits into 21, but not into 14. Try 7 instead; it slides into both numbers neatly.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "7(2y + 21)",
             "correct": false,
-            "misconception_text": "Misconception: You did not divide the second term by 7 correctly.",
+            "misconception_text": "Nice try. You pulled out the 7. Now split the 21 by 7 too.",
             "misconception_code": "OPERATION_SELECTION"
           }
         ]
@@ -13733,21 +13733,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "-a - 13",
             "correct": false,
-            "misconception_text": "Misconception: You likely made a sign error when distributing.",
+            "misconception_text": "Nice try. Negative times negative is positive.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "C",
             "text": "a + 3",
             "correct": false,
-            "misconception_text": "Misconception: You flipped the sign of the variable term.",
+            "misconception_text": "Nice try. Check the sign when you add -6a and 5a.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "D",
             "text": "11a - 3",
             "correct": false,
-            "misconception_text": "Misconception: You added coefficients before distribution.",
+            "misconception_text": "Nice try. Give every number its own group first. After that, you can safely add up all the a’s together.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -13772,21 +13772,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "2.5x + 3",
             "correct": false,
-            "misconception_text": "Misconception: You changed the constant sign during distribution.",
+            "misconception_text": "Nice try. Keep the -3 as minus, not plus.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "C",
             "text": "5.5x - 3",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted variable terms incorrectly.",
+            "misconception_text": "Nice try. When you subtract 1.5x from 4x, the x part should get smaller.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "4x - 9",
             "correct": false,
-            "misconception_text": "Misconception: You distributed and combined inconsistently.",
+            "misconception_text": "Nice try. Go one step at a time so no parts get lost.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -13811,21 +13811,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "6(2m - 3)",
             "correct": false,
-            "misconception_text": "Misconception: You combined like terms incorrectly before factoring.",
+            "misconception_text": "Nice try. Add 12m and 6m to get 18m before you factor.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "3(6m - 6)",
             "correct": false,
-            "misconception_text": "Misconception: You this is not equivalent to the simplified expression.",
+            "misconception_text": "Nice try. Three works, but we can pull out a bigger number. Find the largest one.",
             "misconception_code": "FRACTION_EQUIVALENCE"
           },
           {
             "label": "D",
             "text": "18m - 18",
             "correct": false,
-            "misconception_text": "Misconception: You simplified but did not factor as asked.",
+            "misconception_text": "Nice try. You got 18m + 18. Now pull out the same number from both parts.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -13852,21 +13852,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "15c",
             "correct": false,
-            "misconception_text": "Misconception: You treated the fixed monthly fee as repeated per class.",
+            "misconception_text": "Nice try. The $12 is paid only once each month, not for every class.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "3(12 + c)",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied the monthly fee by 3 incorrectly.",
+            "misconception_text": "Nice try. Keep the $12 alone. Only the 3 should multiply the class count c.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "12c + 3",
             "correct": false,
-            "misconception_text": "Misconception: You swapped fixed and variable parts.",
+            "misconception_text": "Nice try. Swap the fee and the class price back.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -13886,14 +13886,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "4x + 2",
             "correct": false,
-            "misconception_text": "Misconception: You distributed incorrectly to the constant.",
+            "misconception_text": "Nice try. Multiply the 3 by the 2 inside the parentheses again.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "4x + 6",
             "correct": false,
-            "misconception_text": "Misconception: You simplified but did not show a factored form.",
+            "misconception_text": "Nice try. You have 4 and 6. Pull out the same small number from both.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -13905,7 +13905,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "x(3 + 2) + x",
             "correct": false,
-            "misconception_text": "Misconception: You factored incorrectly inside parentheses.",
+            "misconception_text": "Nice try. Only pull out letters that really belong to both parts.",
             "misconception_code": "ORDER_OF_OPERATIONS"
           }
         ]
@@ -13925,7 +13925,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "p - 0.2p + 5",
             "correct": false,
-            "misconception_text": "Misconception: You correct form, but not the most simplified equivalent.",
+            "misconception_text": "Nice try. This math is correct! The answer can be just a bit shorter: write 0.8p for the discount.",
             "misconception_code": "FRACTION_EQUIVALENCE"
           },
           {
@@ -13937,14 +13937,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "1.2p + 5",
             "correct": false,
-            "misconception_text": "Misconception: You increased price instead of discounting.",
+            "misconception_text": "Nice try. 1.2p means the price goes up by 20%. For a discount, subtract 20% from the whole.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "0.8(p + 5)",
             "correct": false,
-            "misconception_text": "Misconception: You incorrectly applied discount to shipping too.",
+            "misconception_text": "Nice try. The 20% off only touches the item cost, not the shipping. Only the item gets the discount.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -13964,14 +13964,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Plan A is always cheaper",
             "correct": false,
-            "misconception_text": "Misconception: You did not expand Plan B correctly.",
+            "misconception_text": "Nice try. Look again at Plan B. It is the exact same math as Plan A.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "Plan B is always cheaper",
             "correct": false,
-            "misconception_text": "Misconception: You compared forms without simplifying.",
+            "misconception_text": "Nice try. Multiply by 3 in Plan B. You will see it matches Plan A perfectly.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -13983,7 +13983,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "They are equal only when n = 0",
             "correct": false,
-            "misconception_text": "Misconception: You checked a single value only.",
+            "misconception_text": "Nice try. They are equal at zero, and they stay equal no matter what n is.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -14008,21 +14008,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "P = s + 12",
             "correct": false,
-            "misconception_text": "Misconception: You ignored repeated side contribution.",
+            "misconception_text": "Nice try. A square has four equal sides, so count all four sides (4s).",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "P = 8s + 4",
             "correct": false,
-            "misconception_text": "Misconception: You swapped coefficients and constants.",
+            "misconception_text": "Nice try. Check again. The number of sides and the bonus seem to be swapped.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "P = 2(2s + 8)",
             "correct": false,
-            "misconception_text": "Misconception: You this expands to 4s + 16, not the original.",
+            "misconception_text": "Nice try. If you multiply, you get 4s + 16. That is not the same as the start.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -14049,21 +14049,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "-10.7 degrees",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted instead of adding the rise.",
+            "misconception_text": "Nice try. The temp rose, so add 7.2 to the start, not subtract.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "-3.7 degrees",
             "correct": false,
-            "misconception_text": "Misconception: You handled signs incorrectly.",
+            "misconception_text": "Nice try. 7.2 is bigger than 3.5, so the temp goes past zero and lands in the warm plus side.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "10.7 degrees",
             "correct": false,
-            "misconception_text": "Misconception: You ignored the starting negative value.",
+            "misconception_text": "Nice try. Start at -3.5, then add 7.2. Watch the negative sign.",
             "misconception_code": "SIGN_RULE"
           }
         ]
@@ -14088,21 +14088,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "175.5 meters",
             "correct": false,
-            "misconception_text": "Misconception: You added descents instead of subtracting.",
+            "misconception_text": "Nice try. Descend means go down. Take the steps away from 120, do not add them.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "101.5 meters",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted once, not three times.",
+            "misconception_text": "Nice try. You still need to subtract the other two steps so we count all three drops.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "-64.5 meters",
             "correct": false,
-            "misconception_text": "Misconception: You changed sign of final elevation incorrectly.",
+            "misconception_text": "Nice try. The number is right, but the hiker is still above sea level so keep the sign positive.",
             "misconception_code": "SIGN_RULE"
           }
         ]
@@ -14127,21 +14127,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "1 3/20 liters",
             "correct": false,
-            "misconception_text": "Misconception: You may have subtracted both changes.",
+            "misconception_text": "Nice try. The last step was add water back, so do not subtract that final amount.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "2 7/10 liters",
             "correct": false,
-            "misconception_text": "Misconception: You likely converted fractions with inconsistent denominators.",
+            "misconception_text": "Nice try. Check the common denominator step again so the fractions line up perfectly.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
             "label": "D",
             "text": "1 13/20 liters",
             "correct": false,
-            "misconception_text": "Misconception: You mixed subtraction and addition in wrong order.",
+            "misconception_text": "Nice try. Do the add before the subtract, in the right order.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -14166,21 +14166,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "330 minutes",
             "correct": false,
-            "misconception_text": "Misconception: You divided full bill by rate without removing fixed fee.",
+            "misconception_text": "Nice try. Take away the $12 fee first, then divide.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           },
           {
             "label": "C",
             "text": "145 minutes",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted incorrectly before dividing.",
+            "misconception_text": "Nice try. Look again at the subtract or divide step for a small math slip.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "14.4 minutes",
             "correct": false,
-            "misconception_text": "Misconception: You divided by 1 instead of by 0.08.",
+            "misconception_text": "Nice try. Divide by a small decimal like 0.08 makes the answer bigger than 14.4.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -14200,14 +14200,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "about 10",
             "correct": false,
-            "misconception_text": "Misconception: You dividing by 0.5 makes numbers larger, not smaller.",
+            "misconception_text": "Nice try. Dividing by 0.5 doubles the number. It asks how many halves fit inside 20.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "about 20",
             "correct": false,
-            "misconception_text": "Misconception: You treated division by 0.5 as no change.",
+            "misconception_text": "Nice try. 0.5 is smaller than 1, so the answer will be larger than the original.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -14219,7 +14219,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "about 4",
             "correct": false,
-            "misconception_text": "Misconception: You moved decimal in wrong direction.",
+            "misconception_text": "Nice try. Divide by 0.5 is the same as multiply by 2.",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -14246,21 +14246,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "21",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted correctly but lost the negative sign.",
+            "misconception_text": "Nice try. A minus number take away a plus stays minus. Keep the sign and try again.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "C",
             "text": "-5",
             "correct": false,
-            "misconception_text": "Misconception: You added 8 to -13 instead of subtracting 8 from both sides.",
+            "misconception_text": "Nice try. To free x, subtract 8 from both sides, not add. That keeps the balance and shows x.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "5",
             "correct": false,
-            "misconception_text": "Misconception: You combined numbers with wrong sign handling.",
+            "misconception_text": "Nice try. Watch the sign when you subtract from a minus number. Stay calm and check again.",
             "misconception_code": "SIGN_RULE"
           }
         ]
@@ -14285,21 +14285,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "x = 11",
             "correct": false,
-            "misconception_text": "Misconception: You added 5 but forgot to divide by 3.",
+            "misconception_text": "Nice try. You added 5. Now divide that total by 3 to finish.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
             "label": "C",
             "text": "x = 21",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied by 3 instead of dividing by 3.",
+            "misconception_text": "Nice try. After you add 5, divide by 3 to find one x.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "x = -7",
             "correct": false,
-            "misconception_text": "Misconception: You made a sign error while isolating x.",
+            "misconception_text": "Nice try. 3x = 21 and both are plus, so x will be plus too.",
             "misconception_code": "SIGN_RULE"
           }
         ]
@@ -14324,21 +14324,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "x = 3",
             "correct": false,
-            "misconception_text": "Misconception: You solved 2x = 6 but forgot the coefficient is -2, not 2.",
+            "misconception_text": "Nice try. You saw 2x links to 6, but the real mate is -2x. Divide by -2 next.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "x = -7",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted 4 from 10 incorrectly and then divided by 2.",
+            "misconception_text": "Nice try. Check 10 minus 4 once more. It should leave 6 before we divide.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "x = 7",
             "correct": false,
-            "misconception_text": "Misconception: You treated the equation like 4 + 2x = 10.",
+            "misconception_text": "Nice try. Bring -2x to one side first. Then we can clear x.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -14363,21 +14363,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "x = 6",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted 3 but forgot dividing by 0.5 doubles the value.",
+            "misconception_text": "Nice try. 9 - 3 = 6 is right. Now divide by 0.5, which is the same as doubling, so x = 12.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "x = 3",
             "correct": false,
-            "misconception_text": "Misconception: You divided the constant term by 0.5 without isolating x first.",
+            "misconception_text": "Nice try. Do 9 minus 3 first. Then we can face the 0.5.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "x = 18",
             "correct": false,
-            "misconception_text": "Misconception: You added and multiplied in the wrong order after moving terms.",
+            "misconception_text": "Nice try. Take it step by step. Get x alone before moving on.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -14402,21 +14402,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "10",
             "correct": false,
-            "misconception_text": "Misconception: You used only the +2 scoring and ignored that wrong answers deduct points.",
+            "misconception_text": "Nice try. Each miss takes away one point. Remember to subtract the missed ones from the total.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "9",
             "correct": false,
-            "misconception_text": "Misconception: You likely formed an equation with wrong total-question constraint.",
+            "misconception_text": "Nice try. If only 9 are right, we still subtract 6 for the wrong ones. That score is too low.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "13",
             "correct": false,
-            "misconception_text": "Misconception: You treated wrong answers as 0 points instead of -1 point.",
+            "misconception_text": "Nice try. If she got 13 correct, that's 26 points, then subtract 2 for two wrong answers: 24, not 21. So it must be fewer correct.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -14443,21 +14443,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "20 cm",
             "correct": false,
-            "misconception_text": "Misconception: You likely converted meters to centimeters incorrectly by missing one power of 10.",
+            "misconception_text": "Nice try. Check the zeros when you change meters to centimeters. Try the conversion once more.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "0.2 cm",
             "correct": false,
-            "misconception_text": "Misconception: You divided by an extra factor of 10 after applying the scale.",
+            "misconception_text": "Nice try. You divided by ten too many times. 90,000 divided by 45,000 is just 2.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "4.5 cm",
             "correct": false,
-            "misconception_text": "Misconception: You treated 1:45,000 as if it meant divide meters directly by 45,000 without unit conversion.",
+            "misconception_text": "Nice try. First turn 900 meters into centimeters. Then use the map scale.",
             "misconception_code": "OPERATION_SELECTION"
           }
         ]
@@ -14482,21 +14482,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "3.6 m",
             "correct": false,
-            "misconception_text": "Misconception: You divided by an extra factor of 10 when converting centimeters to meters.",
+            "misconception_text": "Nice try. When you change centimeters to meters, watch for an extra divide-by-ten that slipped in.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "0.36 m",
             "correct": false,
-            "misconception_text": "Misconception: You divided by 1,000 in the final conversion instead of 100.",
+            "misconception_text": "Nice try. 100 cm makes one meter. You used 1,000 for the switch.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "14.4 m",
             "correct": false,
-            "misconception_text": "Misconception: You doubled the drawing length instead of applying the given scale factor.",
+            "misconception_text": "Nice try. Multiply the drawing size by the full 500 to get the real length.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -14521,21 +14521,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "9 cm",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied by 30/20 instead of shrinking to the new scale.",
+            "misconception_text": "Nice try. A smaller scale means the drawing shrinks. The new 1:30 drawing will be smaller.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "10 cm",
             "correct": false,
-            "misconception_text": "Misconception: You used the denominator difference (30 - 20) instead of scale ratios.",
+            "misconception_text": "Nice try. Scale problems use multiply and divide, not adding the scale numbers together.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
             "label": "D",
             "text": "3 cm",
             "correct": false,
-            "misconception_text": "Misconception: You halved the old drawing length instead of using equivalent actual length.",
+            "misconception_text": "Nice try. First find the real length, 120 cm. Then see how many 30 cm pieces fit inside.",
             "misconception_code": "FRACTION_EQUIVALENCE"
           }
         ]
@@ -14555,7 +14555,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "1500 m^2",
             "correct": false,
-            "misconception_text": "Misconception: You scaled one dimension correctly but treated area scaling like a single linear scale.",
+            "misconception_text": "Nice try. You scaled the area once, but we must scale both the length and the width.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
@@ -14567,14 +14567,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "0.15 m^2",
             "correct": false,
-            "misconception_text": "Misconception: You converted square centimeters to square meters incorrectly by two powers of 10.",
+            "misconception_text": "Nice try. Check the zeros when you change cm² to m².",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "150 m^2",
             "correct": false,
-            "misconception_text": "Misconception: You applied one extra factor of 10 when converting scaled lengths to meters.",
+            "misconception_text": "Nice try. Count the zeros again after you change each side from cm to m.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -14599,21 +14599,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "1:120",
             "correct": false,
-            "misconception_text": "Misconception: You assumed a larger denominator means a larger drawing, but it means more reduction.",
+            "misconception_text": "Nice try. A smaller bottom number means each drawing unit shows less real space, so the drawing stays big.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
             "label": "C",
             "text": "Both produce the same drawing size",
             "correct": false,
-            "misconception_text": "Misconception: You ignored that different scale ratios produce different drawing lengths.",
+            "misconception_text": "Nice try. Different scales always give different sized drawings for the same real thing.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Cannot be determined",
             "correct": false,
-            "misconception_text": "Misconception: You can compare drawing size directly: smaller denominator gives larger drawing for same object.",
+            "misconception_text": "Nice try. The 1:80 scale reduces the object less, so it gives the bigger drawing.",
             "misconception_code": "DENOMINATOR_REASONING"
           }
         ]
@@ -14635,7 +14635,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "No triangle",
             "correct": false,
-            "misconception_text": "Misconception: You angles sum to 180, so a triangle is possible.",
+            "misconception_text": "Nice try. The angles add to 180°, so it makes a perfect equilateral triangle.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -14647,14 +14647,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Exactly two different triangles",
             "correct": false,
-            "misconception_text": "Misconception: You angle information alone does not force just two.",
+            "misconception_text": "Nice try. You can draw many sizes, but every one will still be equilateral.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Infinite triangles of unrelated angle types",
             "correct": false,
-            "misconception_text": "Misconception: You all triangles with these angles are similar, same angle type.",
+            "misconception_text": "Nice try. All 60-60-60 triangles match, just big or small.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -14674,14 +14674,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Yes, one unique triangle",
             "correct": false,
-            "misconception_text": "Misconception: You missed triangle inequality.",
+            "misconception_text": "Nice try. The two short sides must add to more than the long side. Two plus three is only five.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "Yes, more than one triangle",
             "correct": false,
-            "misconception_text": "Misconception: You triangle inequality still fails.",
+            "misconception_text": "Nice try. These sides are too short to meet and close the shape.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -14693,7 +14693,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "Only a right triangle",
             "correct": false,
-            "misconception_text": "Misconception: You side lengths do not satisfy a valid right-triangle relation.",
+            "misconception_text": "Nice try. For a right triangle we need a² + b² = c². These numbers do not fit.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -14713,7 +14713,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "0",
             "correct": false,
-            "misconception_text": "Misconception: You triangle inequality is actually satisfied.",
+            "misconception_text": "Nice try. Five plus five is ten, and ten is bigger than eight, so the triangle works.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -14725,14 +14725,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "2",
             "correct": false,
-            "misconception_text": "Misconception: You sSS gives a unique triangle up to congruence.",
+            "misconception_text": "Nice try. With three set side lengths, only one triangle shape can fit together.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Infinitely many",
             "correct": false,
-            "misconception_text": "Misconception: You exact side lengths fix the triangle shape and size.",
+            "misconception_text": "Nice try. Given side lengths fix the size, so there is no room left to change it.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -14752,7 +14752,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "No triangle is possible",
             "correct": false,
-            "misconception_text": "Misconception: You third angle can be 90, so triangle exists.",
+            "misconception_text": "Nice try. Two angles give the third: 180 minus their sum. It can make a 90° corner.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -14764,14 +14764,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Angles determine infinitely many unrelated shapes",
             "correct": false,
-            "misconception_text": "Misconception: You one side length fixes scale as well.",
+            "misconception_text": "Nice try. One side plus two angles anchors the triangle into only one possible size.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Exactly two non-congruent triangles",
             "correct": false,
-            "misconception_text": "Misconception: You with two angles and one side, the triangle is unique.",
+            "misconception_text": "Nice try. Two angles and one side leave just one way to finish the triangle.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -14791,14 +14791,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Only three angles",
             "correct": false,
-            "misconception_text": "Misconception: You aAA gives shape but not size.",
+            "misconception_text": "Nice try. The angles fix the shape, but you could draw it big or small.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "Only one side",
             "correct": false,
-            "misconception_text": "Misconception: You one side leaves many possibilities.",
+            "misconception_text": "Nice try. One side alone does not tell the other sides how far to tilt or meet.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -14810,7 +14810,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "One angle only",
             "correct": false,
-            "misconception_text": "Misconception: You one angle does not determine a triangle.",
+            "misconception_text": "Nice try. Knowing just one corner gives no clues about the other corners or side lengths.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -14837,21 +14837,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "Triangle",
             "correct": false,
-            "misconception_text": "Misconception: You parallel-to-base cuts keep base shape for prisms.",
+            "misconception_text": "Nice try. Slice a box flat and parallel to the base and you get a same-size rectangle.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Circle",
             "correct": false,
-            "misconception_text": "Misconception: You prisms do not produce circular sections with such cuts.",
+            "misconception_text": "Nice try. A straight cut through a box always leaves a flat shape with straight edges.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Pentagon",
             "correct": false,
-            "misconception_text": "Misconception: You face structure does not support this section.",
+            "misconception_text": "Nice try. A straight cut through a rectangular prism gives four sides, not five.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -14876,21 +14876,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "Rectangle",
             "correct": false,
-            "misconception_text": "Misconception: You cuts through apex of a pyramid typically produce triangular sections.",
+            "misconception_text": "Nice try. A straight-down cut from the top point of a pyramid gives a triangle slice, not a circle.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Circle",
             "correct": false,
-            "misconception_text": "Misconception: You pyramids with flat faces do not form circles by planar cuts.",
+            "misconception_text": "Nice try. Pyramid faces are flat triangles, so a straight cut makes straight edges, never a curved circle.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Hexagon",
             "correct": false,
-            "misconception_text": "Misconception: You too many edges for this simple apex-based cut.",
+            "misconception_text": "Nice try. One quick slice through the pyramid’s triangle point can’t give six sides.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -14910,14 +14910,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Rectangle",
             "correct": false,
-            "misconception_text": "Misconception: You this is common for many slice orientations.",
+            "misconception_text": "Nice try. Cutting a box straight gives a rectangle, which is what we see most often.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "Parallelogram",
             "correct": false,
-            "misconception_text": "Misconception: You oblique slices can form parallelograms.",
+            "misconception_text": "Nice try. A tilted slice through the prism can give a slanty parallelogram shape, not just rectangles.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -14929,7 +14929,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "Square",
             "correct": false,
-            "misconception_text": "Misconception: You a square is a special rectangle and is possible.",
+            "misconception_text": "Nice try. A square is a rectangle with equal sides, so it shows up when we cut straight across.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -14954,21 +14954,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "Circle",
             "correct": false,
-            "misconception_text": "Misconception: You this solid and cut do not create curved boundaries.",
+            "misconception_text": "Nice try. This solid and this cut give straight edges, so the slice shows no curves.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Triangle",
             "correct": false,
-            "misconception_text": "Misconception: You a full through-cut of opposite edges in a prism gives four sides.",
+            "misconception_text": "Nice try. A full straight cut between opposite edges of a prism gives a four-sided shape.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Trapezoid",
             "correct": false,
-            "misconception_text": "Misconception: You in this orientation opposite sides remain parallel and equal.",
+            "misconception_text": "Nice try. A tilted slice can make a trapezoid, but a flat slice parallel to the base stays a rectangle.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -14993,21 +14993,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "Cross-section is always a triangle",
             "correct": false,
-            "misconception_text": "Misconception: You parallel-to-base slices of pyramids match base shape.",
+            "misconception_text": "Nice try. A slice that stays parallel to the base of a pyramid keeps the base shape.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Cross-section is always a circle",
             "correct": false,
-            "misconception_text": "Misconception: You pyramid faces are polygonal.",
+            "misconception_text": "Nice try. Pyramid faces are flat polygons, so the slice edge stays a straight-edged polygon.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Cross-section has no relation to the base",
             "correct": false,
-            "misconception_text": "Misconception: You parallel sections preserve shape type.",
+            "misconception_text": "Nice try. Cutting parallel to the base keeps the same flat polygon shape on the slice.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15034,21 +15034,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "About 2,510 cm^2",
             "correct": false,
-            "misconception_text": "Misconception: You used diameter as radius in A = pi r^2.",
+            "misconception_text": "Nice try. Take half of the diameter to get the radius, then use that radius in the area formula.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "About 630 cm^2",
             "correct": false,
-            "misconception_text": "Misconception: You used r^2 incorrectly, likely halving area instead of squaring the radius.",
+            "misconception_text": "Nice try. Square the 20 cm first, then multiply by PI. Do not divide the final area by two.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
             "label": "D",
             "text": "About 125 cm^2",
             "correct": false,
-            "misconception_text": "Misconception: You confused area with circumference and used the wrong formula.",
+            "misconception_text": "Nice try. That looks like a circumference answer. Use PI times radius squared to find the area.",
             "misconception_code": "AREA_VOLUME_SWAP"
           }
         ]
@@ -15073,21 +15073,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "154 cm",
             "correct": false,
-            "misconception_text": "Misconception: You used area formula pi r^2 instead of circumference formula.",
+            "misconception_text": "Nice try. That answer comes from the area formula. Use 2 times PI times the radius for circumference.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
             "label": "C",
             "text": "22 cm",
             "correct": false,
-            "misconception_text": "Misconception: You forgot the factor 2 in C = 2pi r.",
+            "misconception_text": "Nice try. Use 2πr for the circle’s distance. Don’t drop the two.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "14 cm",
             "correct": false,
-            "misconception_text": "Misconception: You used diameter only and omitted pi.",
+            "misconception_text": "Nice try. After you find the diameter, multiply by π to go all the way around.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15112,21 +15112,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "5 cm",
             "correct": false,
-            "misconception_text": "Misconception: You divided by 2 twice by confusing radius and diameter.",
+            "misconception_text": "Nice try. 5 is the radius, but we need the diameter, which is twice the radius.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "9.99 cm",
             "correct": false,
-            "misconception_text": "Misconception: You rounded too early in a multi-step calculation.",
+            "misconception_text": "Nice try. Rounding is okay, yet 31.4 divided by 3.14 is exactly 10.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "100 cm",
             "correct": false,
-            "misconception_text": "Misconception: You moved the decimal incorrectly while dividing by pi.",
+            "misconception_text": "Nice try. Watch the decimal point. 31.4 divided by 3.14 gives 10, not 100.",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -15151,21 +15151,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "22 cm^2",
             "correct": false,
-            "misconception_text": "Misconception: You used pi only and did not include r^2.",
+            "misconception_text": "Nice try. Multiply PI by the radius, then multiply by the radius again to square it.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "77 cm^2",
             "correct": false,
-            "misconception_text": "Misconception: You treated diameter as radius while squaring.",
+            "misconception_text": "Nice try. Keep the radius as 3.5 cm and square that, not the diameter.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "24.5 cm^2",
             "correct": false,
-            "misconception_text": "Misconception: You used C = 2pi r and reported it as area.",
+            "misconception_text": "Nice try. That answer looks like a circumference. Use PI times radius squared for area.",
             "misconception_code": "AREA_VOLUME_SWAP"
           }
         ]
@@ -15185,14 +15185,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "pi d",
             "correct": false,
-            "misconception_text": "Misconception: You that expression gives circumference, not area.",
+            "misconception_text": "Nice try. πr² gives the space inside the circle, not the distance around it.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
             "label": "B",
             "text": "pi d^2",
             "correct": false,
-            "misconception_text": "Misconception: You forgot to divide diameter by 2 before squaring.",
+            "misconception_text": "Nice try. Split the diameter in half to get the radius. Then multiply pi by radius times radius.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
@@ -15204,7 +15204,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "2pi(d/2)^2",
             "correct": false,
-            "misconception_text": "Misconception: You added an extra factor of 2 that does not belong in the area formula.",
+            "misconception_text": "Nice try. The area is pi times radius times radius. Do not put an extra 2 in the formula.",
             "misconception_code": "AREA_VOLUME_SWAP"
           }
         ]
@@ -15231,21 +15231,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "143 degrees",
             "correct": false,
-            "misconception_text": "Misconception: You used supplementary instead of complementary.",
+            "misconception_text": "Nice try. You picked supplementary, but we need complementary.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "37 degrees",
             "correct": false,
-            "misconception_text": "Misconception: You complementary angles do not have to be equal.",
+            "misconception_text": "Nice try. Complementary angles can be different sizes.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "63 degrees",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted from 100, not 90.",
+            "misconception_text": "Nice try. You took away from 100, not 90.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15270,21 +15270,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "22 degrees",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted from 90 instead of 180.",
+            "misconception_text": "Nice try. You took away from 90, not 180.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "112 degrees",
             "correct": false,
-            "misconception_text": "Misconception: You assumed supplementary means equal.",
+            "misconception_text": "Nice try. Supplementary does not always mean equal.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "292 degrees",
             "correct": false,
-            "misconception_text": "Misconception: You added instead of finding missing angle.",
+            "misconception_text": "Nice try. You added, but we need the missing angle.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15304,7 +15304,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "6",
             "correct": false,
-            "misconception_text": "Misconception: You solved with arithmetic error.",
+            "misconception_text": "Nice try. Check the arithmetic one more time.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -15316,14 +15316,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "7",
             "correct": false,
-            "misconception_text": "Misconception: You may have subtracted constants incorrectly.",
+            "misconception_text": "Nice try. Try the subtraction again carefully.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "24",
             "correct": false,
-            "misconception_text": "Misconception: You doubled the correct value.",
+            "misconception_text": "Nice try. The answer is half of what you got.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15348,21 +15348,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "54",
             "correct": false,
-            "misconception_text": "Misconception: You likely made a subtraction error after combining terms.",
+            "misconception_text": "Nice try. Check your subtract step after you combine like terms.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "62",
             "correct": false,
-            "misconception_text": "Misconception: You likely added constants with the wrong sign.",
+            "misconception_text": "Nice try. Watch the plus and minus signs when you add the numbers.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "D",
             "text": "30",
             "correct": false,
-            "misconception_text": "Misconception: You treated them as complementary.",
+            "misconception_text": "Nice try. Add (x + 10) + 40 = 90, then solve for x.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15382,21 +15382,21 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "50 degrees",
             "correct": false,
-            "misconception_text": "Misconception: You solved the linear equation with an arithmetic error.",
+            "misconception_text": "Nice try. Check your add or subtract step in the equation.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "130 degrees",
             "correct": false,
-            "misconception_text": "Misconception: You chose the larger supplementary angle.",
+            "misconception_text": "Nice try. It looks like you picked the bigger supplementary angle.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "30 degrees",
             "correct": false,
-            "misconception_text": "Misconception: You treated 2x + 30 as if x were 0.",
+            "misconception_text": "Nice try. You plugged x = 0 into 2x + 30.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -15428,21 +15428,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "70 square units",
             "correct": false,
-            "misconception_text": "Misconception: You forgot the 1/2 factor for triangle area.",
+            "misconception_text": "Nice try. For a triangle, take half the rectangle’s area.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
             "label": "C",
             "text": "17 square units",
             "correct": false,
-            "misconception_text": "Misconception: You added base and height.",
+            "misconception_text": "Nice try. Multiply base times height, do not add them.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "24.5 square units",
             "correct": false,
-            "misconception_text": "Misconception: You used an incorrect multiplication.",
+            "misconception_text": "Nice try. First find 10 × 7, then split that in half.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15462,7 +15462,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "12 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied only two dimensions.",
+            "misconception_text": "Nice try. Multiply all three side lengths, not just two.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -15474,14 +15474,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "47 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You added dimensions with multiplication mixed.",
+            "misconception_text": "Nice try. Use volume, not surface area steps.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "120 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You doubled the correct product.",
+            "misconception_text": "Nice try. 5 times 4 times 3 equals 60.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15501,7 +15501,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "36 square units",
             "correct": false,
-            "misconception_text": "Misconception: You found area of one face only.",
+            "misconception_text": "Nice try. You only found one face’s area. Most solids have six faces to add.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
@@ -15513,14 +15513,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "72 square units",
             "correct": false,
-            "misconception_text": "Misconception: You used two faces instead of six.",
+            "misconception_text": "Nice try. You used two faces, but the whole box has six to count.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "180 square units",
             "correct": false,
-            "misconception_text": "Misconception: You used an incorrect formula.",
+            "misconception_text": "Nice try. The formula you chose was a bit off. Check the surface rule again.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15540,7 +15540,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "6 square units",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted areas instead of adding.",
+            "misconception_text": "Nice try. Areas should be added, not subtracted. Try adding all the parts.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -15552,14 +15552,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "432 square units",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied instead of summing parts.",
+            "misconception_text": "Nice try. You multiplied the parts, but you need to add them.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "24 square units",
             "correct": false,
-            "misconception_text": "Misconception: You counted only one part.",
+            "misconception_text": "Nice try. You only counted one part. Make sure you add every part.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15584,21 +15584,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "20.5 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You added base area and height.",
+            "misconception_text": "Nice try. You added the base to the height. For a prism we multiply base times height.",
             "misconception_code": "AREA_VOLUME_SWAP"
           },
           {
             "label": "C",
             "text": "4.5 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted instead of multiplying.",
+            "misconception_text": "Nice try. You subtracted, but we need to multiply base area by height.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "96 cubic units",
             "correct": false,
-            "misconception_text": "Misconception: You used a nearby product with arithmetic error.",
+            "misconception_text": "Nice try. The numbers were close, but the product slipped a bit. Try multiplying again slowly.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15625,21 +15625,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "12",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied the absolute values correctly but ignored the sign rule for a negative times a positive.",
+            "misconception_text": "Nice try. You did 4 × 3, but a negative times a positive is negative.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "C",
             "text": "-1",
             "correct": false,
-            "misconception_text": "Misconception: You may have mixed multiplication and division and treated 4 and 3 as a ratio instead of a product.",
+            "misconception_text": "Nice try. Looks like 4 and 3 were subtracted. We need to multiply them instead.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           },
           {
             "label": "D",
             "text": "7",
             "correct": false,
-            "misconception_text": "Misconception: You added 4 and 3 instead of multiplying.",
+            "misconception_text": "Nice try. You added 4 and 3. We need to multiply them.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15659,7 +15659,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "-3/2",
             "correct": false,
-            "misconception_text": "Misconception: You simplified correctly but used the wrong sign. A negative times a negative is positive.",
+            "misconception_text": "Nice try. A minus times a minus always makes a plus. Your fraction steps were great, just flip the sign.",
             "misconception_code": "SIGN_RULE"
           },
           {
@@ -15671,14 +15671,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "18/12",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied correctly but did not simplify to lowest terms.",
+            "misconception_text": "Nice try. 18/12 is on the way. Simplify to lowest terms and you are done.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "2/27",
             "correct": false,
-            "misconception_text": "Misconception: You divided instead of multiplying fractions.",
+            "misconception_text": "Nice try. We multiply: top times top, bottom times bottom. Division is not needed here.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15703,21 +15703,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "5",
             "correct": false,
-            "misconception_text": "Misconception: You divided the absolute values correctly but ignored the sign rule for positive divided by negative.",
+            "misconception_text": "Nice try. 15 divided by 3 is 5, but different signs make it negative.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "C",
             "text": "-45",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied instead of dividing.",
+            "misconception_text": "Nice try. You used multiply. For 15 divided by -3, count how many -3 fit inside 15.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "-12",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted 3 from 15 instead of dividing.",
+            "misconception_text": "Nice try. You did 15 minus 3. For division, share 15 into 3 equal negative groups.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15742,21 +15742,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "3",
             "correct": false,
-            "misconception_text": "Misconception: You found 1.8 ÷ 0.6 correctly but ignored the negative sign.",
+            "misconception_text": "Nice try. 1.8 divided by 0.6 is 3. Since 1.8 is negative, the answer is -3.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "C",
             "text": "-1.2",
             "correct": false,
-            "misconception_text": "Misconception: You may have subtracted decimals instead of dividing.",
+            "misconception_text": "Nice try. Use division, not subtraction. Find how many 0.6 parts fit into 1.8.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "D",
             "text": "-0.3",
             "correct": false,
-            "misconception_text": "Misconception: You moved the decimal in the wrong direction while dividing by a decimal less than 1.",
+            "misconception_text": "Nice try. Dividing 1.8 by a small decimal like 0.6 gives a result bigger than 1.",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -15776,14 +15776,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "A negative divided by a negative is always negative.",
             "correct": false,
-            "misconception_text": "Misconception: You mixed up the sign rule. Same signs give a positive result.",
+            "misconception_text": "Nice try. If both signs are minus, they team up and make a plus answer.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "B",
             "text": "A negative multiplied by a positive is always positive.",
             "correct": false,
-            "misconception_text": "Misconception: You reversed the sign rule for multiplication.",
+            "misconception_text": "Nice try. When the signs are different, the answer is always negative.",
             "misconception_code": "SIGN_RULE"
           },
           {
@@ -15795,7 +15795,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "A positive multiplied by a positive is always negative.",
             "correct": false,
-            "misconception_text": "Misconception: You applied the negative-sign rule where both factors are positive.",
+            "misconception_text": "Nice try. Two positives give a positive answer. Put in a negative and the sign may flip.",
             "misconception_code": "SIGN_RULE"
           }
         ]
@@ -15822,21 +15822,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "-11 deg C",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted 8 from -3 instead of adding the rise.",
+            "misconception_text": "Nice try. The temp drops. It rose 8, so add 8 to the start -3.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "-5 deg C",
             "correct": false,
-            "misconception_text": "Misconception: You used the wrong sign after combining opposite-signed integers.",
+            "misconception_text": "Nice try. Since 8 is bigger than 3, the temp goes past zero into positive.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "D",
             "text": "11 deg C",
             "correct": false,
-            "misconception_text": "Misconception: You added absolute values and ignored the negative starting value.",
+            "misconception_text": "Nice try. You added both as positives. We started at -3 before it warmed.",
             "misconception_code": "SIGN_RULE"
           }
         ]
@@ -15856,7 +15856,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "-$9",
             "correct": false,
-            "misconception_text": "Misconception: You may have reversed the sign of the final value after combining all transactions.",
+            "misconception_text": "Nice try. We need the final balance, not the start. Add all credits and debits to find it.",
             "misconception_code": "SIGN_RULE"
           },
           {
@@ -15868,14 +15868,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "$29 credit",
             "correct": false,
-            "misconception_text": "Misconception: You likely added payments and spending without including the starting debt correctly.",
+            "misconception_text": "Nice try. Add what he pays and subtract what he spends to find the total balance.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "$1 credit",
             "correct": false,
-            "misconception_text": "Misconception: You made an arithmetic error when combining the middle two transactions.",
+            "misconception_text": "Nice try. Please add the payments again and subtract the debts to check the final balance.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15900,21 +15900,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "3 1/4 cups",
             "correct": false,
-            "misconception_text": "Misconception: You added 3/4 and 2 1/2 instead of multiplying per-batch amount by number of batches.",
+            "misconception_text": "Nice try. You added 3/4 and 2 1/2. We multiply by batch count.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "15/4 cups",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied numerators and denominators but did not simplify correctly.",
+            "misconception_text": "Nice try. After we multiply the top and bottom, we must simplify the new fraction fully.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
             "label": "D",
             "text": "1 1/8 cups",
             "correct": false,
-            "misconception_text": "Misconception: You likely multiplied one factor incorrectly after converting the mixed number.",
+            "misconception_text": "Nice try. One number multiplied wrong after changing the mixed number.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -15939,21 +15939,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "4.2",
             "correct": false,
-            "misconception_text": "Misconception: You divided correctly but ignored the sign rule for positive divided by negative.",
+            "misconception_text": "Nice try. You divided right but forgot the sign. Positive divided by negative gives negative.",
             "misconception_code": "SIGN_RULE"
           },
           {
             "label": "C",
             "text": "-3.2",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted instead of dividing.",
+            "misconception_text": "Nice try. You subtracted instead of dividing. Divide the decimals and watch the sign.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "-42",
             "correct": false,
-            "misconception_text": "Misconception: You misplaced the decimal point by treating 12.6 as 126.",
+            "misconception_text": "Nice try. You moved the decimal, so 12.6 looked like 126. Check the place value again.",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -15973,14 +15973,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "-2",
             "correct": false,
-            "misconception_text": "Misconception: You added first and then multiplied, ignoring order of operations.",
+            "misconception_text": "Nice try. You added first, then multiplied. Please follow the order: multiply and divide before you add or subtract.",
             "misconception_code": "ORDER_OF_OPERATIONS"
           },
           {
             "label": "B",
             "text": "2",
             "correct": false,
-            "misconception_text": "Misconception: You used multiplication first but lost a negative sign.",
+            "misconception_text": "Nice try. You multiplied first, but a negative sign slipped away. Keep the minus with its number.",
             "misconception_code": "SIGN_RULE"
           },
           {
@@ -15992,7 +15992,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "10",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied and added absolute values while ignoring both negative signs.",
+            "misconception_text": "Nice try. You lost both negative signs when you found absolute values. Keep each sign with its number.",
             "misconception_code": "SIGN_RULE"
           }
         ]
@@ -16014,7 +16014,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "3/8 mph",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied the fractions instead of dividing distance by time.",
+            "misconception_text": "Nice try. You multiplied the two fractions. Instead, divide distance by time to find the speed or rate.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -16026,14 +16026,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "2/3 mph",
             "correct": false,
-            "misconception_text": "Misconception: You reversed the ratio and divided time by distance.",
+            "misconception_text": "Nice try. You flipped the ratio and divided time by distance. Keep it as distance divided by time.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           },
           {
             "label": "D",
             "text": "1 1/4 mph",
             "correct": false,
-            "misconception_text": "Misconception: You added the fractions instead of computing a rate.",
+            "misconception_text": "Nice try. You added the two fractions. To find a rate, divide distance by time, not add.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           }
         ]
@@ -16053,7 +16053,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "$3.75 per kg",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied 4.50 by 5/6 instead of dividing by 5/6.",
+            "misconception_text": "Nice try. You multiplied 4.50 by 5/6. Instead, divide 4.50 by 5/6 to find the unit cost.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -16065,14 +16065,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "$4.20 per kg",
             "correct": false,
-            "misconception_text": "Misconception: You used an incorrect decimal conversion while scaling to one kilogram.",
+            "misconception_text": "Nice try. The decimal moved to the wrong spot while you scaled to one kilogram. Take another look.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "D",
             "text": "$2.70 per kg",
             "correct": false,
-            "misconception_text": "Misconception: You treated 5/6 as 0.6 and divided by the wrong value.",
+            "misconception_text": "Nice try. You saw 5/6 as 0.6 and then divided by the wrong number. Try the fraction again.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -16097,21 +16097,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "1/2 cup",
             "correct": false,
-            "misconception_text": "Misconception: You simplified the numerator and denominator without dividing by the total number of cookies.",
+            "misconception_text": "Nice try. You simplified top and bottom, but forgot to divide by the total cookies. Finish the division.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
             "label": "C",
             "text": "7/14 cup",
             "correct": false,
-            "misconception_text": "Misconception: You ignored the denominator in 7/8 and used only 7 as the total sugar amount.",
+            "misconception_text": "Nice try. 7/8 is the total sugar, not just 7. Use the whole 7/8 and divide by 14.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
             "label": "D",
             "text": "7/112 cups",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied denominators but did not simplify the fraction rate.",
+            "misconception_text": "Nice try. You multiplied the denominators. Simplify distance divided by cookies to find the sugar per cookie.",
             "misconception_code": "DENOMINATOR_REASONING"
           }
         ]
@@ -16136,21 +16136,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "1.33 liters per minute",
             "correct": false,
-            "misconception_text": "Misconception: You divided 3 by 2.25 instead of 2.25 by 3.",
+            "misconception_text": "Nice try. The division was flipped. Divide total liters by minutes to get liters each minute.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "6.75 liters per minute",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied liters and minutes instead of dividing to get a unit rate.",
+            "misconception_text": "Nice try. You multiplied when you needed to divide. Divide 2.25 liters by 3 minutes.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           },
           {
             "label": "D",
             "text": "2.25 liters per minute",
             "correct": false,
-            "misconception_text": "Misconception: You used the total amount and ignored that unit rate must be per 1 minute.",
+            "misconception_text": "Nice try. 2.25 liters is for all 3 minutes. Find the amount for just 1 minute.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           }
         ]
@@ -16175,21 +16175,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "27/50 meters per second",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied the fractions instead of dividing distance by time.",
+            "misconception_text": "Nice try. You multiplied the fractions. Please divide distance by time to get meters for one second.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "2/3 meters per second",
             "correct": false,
-            "misconception_text": "Misconception: You inverted the ratio and divided time by distance.",
+            "misconception_text": "Nice try. Your fraction flipped. Keep meters on top and seconds on bottom, then divide straight across.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           },
           {
             "label": "D",
             "text": "6/5 meters per second",
             "correct": false,
-            "misconception_text": "Misconception: You made an inversion error when multiplying by the reciprocal.",
+            "misconception_text": "Nice try. Something went wrong when you flipped and multiplied. Let’s walk through the flip-and-multiply step again carefully.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -16211,7 +16211,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "2",
             "correct": false,
-            "misconception_text": "Misconception: You compared differences instead of using the ratio y/x.",
+            "misconception_text": "Nice try. You subtracted the numbers. Please divide y by x to find the constant k that fits everywhere.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           },
           {
@@ -16223,14 +16223,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "5",
             "correct": false,
-            "misconception_text": "Misconception: You used y from the first row and ignored x.",
+            "misconception_text": "Nice try. 5 is the first y, but match it with its x, which is 2.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "0.4",
             "correct": false,
-            "misconception_text": "Misconception: You reversed the ratio and computed x/y instead of y/x.",
+            "misconception_text": "Nice try. You did x divided by y. Please do y divided by x to find k.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           }
         ]
@@ -16250,7 +16250,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "y = 3x",
             "correct": false,
-            "misconception_text": "Misconception: You used x-value as the constant instead of y/x.",
+            "misconception_text": "Nice try. The x-value 3 became the constant. Divide y by x: 12 divided by 3.",
             "misconception_code": "COORDINATE_REASONING"
           },
           {
@@ -16262,14 +16262,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "y = x + 9",
             "correct": false,
-            "misconception_text": "Misconception: You wrote a non-proportional linear equation with a nonzero intercept.",
+            "misconception_text": "Nice try. 3 plus 9 gives 12, but y = kx with no plus.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "y = 12x",
             "correct": false,
-            "misconception_text": "Misconception: You used y-value directly as k without dividing by x.",
+            "misconception_text": "Nice try. 12 is just one y-value. We want k, the number we multiply every x by.",
             "misconception_code": "COORDINATE_REASONING"
           }
         ]
@@ -16289,14 +16289,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "x: 1, 2, 3; y: 4, 8, 12",
             "correct": false,
-            "misconception_text": "Misconception: You this one is proportional because y/x is constant at 4.",
+            "misconception_text": "Nice try. This table is proportional. If you divide y by x each time, you get 4 every row.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "x: 2, 4, 6; y: 6, 12, 18",
             "correct": false,
-            "misconception_text": "Misconception: You this one is proportional because y/x is constant at 3.",
+            "misconception_text": "Nice try. This one is proportional too. Each y divided by x is 3 every time.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -16308,7 +16308,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "x: 5, 10, 15; y: 2, 4, 6",
             "correct": false,
-            "misconception_text": "Misconception: You this one is proportional because y/x is constant at 0.4.",
+            "misconception_text": "Nice try. The ratio y to x is always 0.4, so the link is still proportional. Check the line to see if every point fits that rule.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -16328,7 +16328,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "(0, 3.5)",
             "correct": false,
-            "misconception_text": "Misconception: You treated the relationship as having a y-intercept of 3.5. Proportional graphs pass through the origin.",
+            "misconception_text": "Nice try. Proportional graphs must go through the point (0, 0). If x is 0, y must be 0 too.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -16340,14 +16340,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "(2, 5.5)",
             "correct": false,
-            "misconception_text": "Misconception: You used an incorrect product for 3.5 x 2.",
+            "misconception_text": "Nice try. Try 3.5 times 2 again. You will make it!",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "(3.5, 2)",
             "correct": false,
-            "misconception_text": "Misconception: You reversed x and y coordinates.",
+            "misconception_text": "Nice try. It looks like x and y were swapped. Plug 2 in for x and find the correct y value.",
             "misconception_code": "COORDINATE_REASONING"
           }
         ]
@@ -16367,7 +16367,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "24",
             "correct": false,
-            "misconception_text": "Misconception: You used additive change instead of scaling by a constant of proportionality.",
+            "misconception_text": "Nice try. You added 6 to both x and y, but we need to multiply, not add, in proportional problems.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -16379,14 +16379,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "28",
             "correct": false,
-            "misconception_text": "Misconception: You doubled 14 without matching the change in x from 4 to 10.",
+            "misconception_text": "Nice try. x did not double; it went from 4 to 10. Find k = y ÷ x first.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "140",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied by x directly without first finding k.",
+            "misconception_text": "Nice try. Multiply by 14 is too big. First see how y links to x (4) to find the jump factor.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -16408,7 +16408,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Ask only students in the advanced math club.",
             "correct": false,
-            "misconception_text": "Misconception: You this is a biased subgroup and not representative of all students.",
+            "misconception_text": "Nice try. This group is biased. It does not fairly represent all students in the school.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -16420,14 +16420,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Ask the first 20 students who arrive early.",
             "correct": false,
-            "misconception_text": "Misconception: You convenience samples can overrepresent specific behaviors.",
+            "misconception_text": "Nice try. Convenience samples can favor certain habits. They may not show the true picture of everyone.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Ask only students who volunteer online.",
             "correct": false,
-            "misconception_text": "Misconception: You volunteer samples can bias results toward students with stronger opinions.",
+            "misconception_text": "Nice try. Picking only volunteers can tilt the answers toward kids with strong views.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -16447,7 +16447,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Choosing every 10th name from an alphabetized list.",
             "correct": false,
-            "misconception_text": "Misconception: You systematic sampling can still be representative if the list has no harmful pattern.",
+            "misconception_text": "Nice try. Picking every tenth name can work if the list has no hidden loop. Check twice.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -16459,14 +16459,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Using random number generator to pick IDs.",
             "correct": false,
-            "misconception_text": "Misconception: You this is generally an unbiased random method.",
+            "misconception_text": "Nice try. Pulling names from a hat is usually fair. Everyone gets the same chance.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Sampling students from each grade proportionally.",
             "correct": false,
-            "misconception_text": "Misconception: You stratified sampling by grade is often used to improve representativeness.",
+            "misconception_text": "Nice try. Splitting the kids by grade first can balance the survey. Each grade shows its view.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -16486,7 +16486,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "You can never use a sample to learn about a population.",
             "correct": false,
-            "misconception_text": "Misconception: You statistics is specifically used to infer population characteristics from samples.",
+            "misconception_text": "Nice try. We use stats to guess the whole group from just a slice. That is its job.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -16498,14 +16498,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "The sample gives exact values for every student.",
             "correct": false,
-            "misconception_text": "Misconception: You samples provide estimates, not exact information for each individual.",
+            "misconception_text": "Nice try. A sample gives a close guess, not the exact truth for each kid.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "A sample smaller than 100 is always invalid.",
             "correct": false,
-            "misconception_text": "Misconception: You validity depends on sampling method and context, not a fixed sample-size cutoff.",
+            "misconception_text": "Nice try. Good data depends on how we pick, not on a magic number.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -16525,7 +16525,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Sample A, because smaller samples are always better.",
             "correct": false,
-            "misconception_text": "Misconception: You smaller random samples usually have more variability.",
+            "misconception_text": "Nice try. Smaller random groups bounce around more. Their guesses can be far off.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -16537,14 +16537,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Both are exactly equally reliable in all cases.",
             "correct": false,
-            "misconception_text": "Misconception: You larger random samples generally reduce sampling error.",
+            "misconception_text": "Nice try. Bigger random groups smooth the bumps. They usually land closer to the truth.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Neither can ever estimate population sleep time.",
             "correct": false,
-            "misconception_text": "Misconception: You samples can provide useful estimates when collected appropriately.",
+            "misconception_text": "Nice try. Even a small slice can give a decent guess if we pick with care.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -16564,7 +16564,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "It is random because park users are easy to identify.",
             "correct": false,
-            "misconception_text": "Misconception: You ease of sampling does not make a sample random or representative.",
+            "misconception_text": "Nice try. Easy is not the same as random. We still need a fair way to choose.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -16576,14 +16576,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "It is unbiased because park users are part of the population.",
             "correct": false,
-            "misconception_text": "Misconception: You using only one subgroup can still bias the estimate.",
+            "misconception_text": "Nice try. Using just the front row leaves out the rest. One group can tilt the answer.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "It is valid only if exactly 100 families are surveyed.",
             "correct": false,
-            "misconception_text": "Misconception: You sample size alone does not fix selection bias.",
+            "misconception_text": "Nice try. More kids does not fix a crooked start. Fair picking comes first.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -16610,21 +16610,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "72",
             "correct": false,
-            "misconception_text": "Misconception: You scaled to 200 students instead of 400.",
+            "misconception_text": "Nice try. You scaled to 200 students, but we need 400. Just double your number.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "180",
             "correct": false,
-            "misconception_text": "Misconception: You used 18/40 instead of 18/50 when finding the sample proportion.",
+            "misconception_text": "Nice try. Use 18/50, not 18/40. Then scale that proportion to 400.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "225",
             "correct": false,
-            "misconception_text": "Misconception: You treated 18 as 45% instead of 36%.",
+            "misconception_text": "Nice try. You read 18 as 45% instead of 36%. Check the division again.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -16649,21 +16649,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "150",
             "correct": false,
-            "misconception_text": "Misconception: You doubled the estimate by treating 3/20 as 30%.",
+            "misconception_text": "Nice try. 3/20 is 15%, not 30%. Use that rate to scale to 500.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "60",
             "correct": false,
-            "misconception_text": "Misconception: You used 3/25 instead of 3/20 when scaling.",
+            "misconception_text": "Nice try. Keep the sample fraction 3/20 when you scale. Using 3/25 changes the rate.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "15",
             "correct": false,
-            "misconception_text": "Misconception: You used the sample count directly without scaling to the full shipment.",
+            "misconception_text": "Nice try. You used the sample count only. Scale 3 out of 20 up to the full 500.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -16683,7 +16683,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "At least one sample must be invalid because estimates are different.",
             "correct": false,
-            "misconception_text": "Misconception: You different random samples can naturally produce slightly different estimates.",
+            "misconception_text": "Nice try. Each random sample can give a slightly different answer. That is normal.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -16695,14 +16695,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "The population percentage is exactly the average, 44.5%.",
             "correct": false,
-            "misconception_text": "Misconception: You the true population value is unknown; sample averages do not guarantee exactness.",
+            "misconception_text": "Nice try. We never know the true number. Samples only give close guesses.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "The larger estimate is always the true population value.",
             "correct": false,
-            "misconception_text": "Misconception: You a larger sample estimate is not automatically more accurate.",
+            "misconception_text": "Nice try. Bigger samples are better, but they can still be a bit off.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           }
         ]
@@ -16722,7 +16722,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "To eliminate all variation so every estimate is identical.",
             "correct": false,
-            "misconception_text": "Misconception: You sampling variation is expected and cannot be fully eliminated this way.",
+            "misconception_text": "Nice try. We can not remove all variation. More samples just show how much the numbers jump around.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -16734,14 +16734,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Because one random sample can never be used for inference.",
             "correct": false,
-            "misconception_text": "Misconception: You one random sample can still be used for inference; multiple samples help gauge variability.",
+            "misconception_text": "Nice try. One sample is good, but more samples help us see the wiggle room.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "To guarantee the true population value is found exactly.",
             "correct": false,
-            "misconception_text": "Misconception: You sampling provides estimates, not guaranteed exact population values.",
+            "misconception_text": "Nice try. A sample gives a good guess, but it rarely hits the exact population number.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -16766,21 +16766,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "640",
             "correct": false,
-            "misconception_text": "Misconception: You treated 64% as 0.64 of 1,000 instead of 2,500.",
+            "misconception_text": "Nice try. Use all 2,500 households. Multiply 0.64 x 2,500.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "2,040",
             "correct": false,
-            "misconception_text": "Misconception: You subtracted 64% from 100% and estimated non-recycling households.",
+            "misconception_text": "Nice try. You found the houses that do not recycle. We want the ones that do recycle instead.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "1,250",
             "correct": false,
-            "misconception_text": "Misconception: You used 50% instead of the given 64%.",
+            "misconception_text": "Nice try. 50% was a tidy guess, but the survey says about 64%.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -16802,7 +16802,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "1",
             "correct": false,
-            "misconception_text": "Misconception: You used half the center difference.",
+            "misconception_text": "Nice try. The gap between centers is 4. That is two steps of size 2.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -16814,14 +16814,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "4",
             "correct": false,
-            "misconception_text": "Misconception: You used raw center difference, not a multiple.",
+            "misconception_text": "Nice try. You found 4. Now divide 4 by 2 to see how many MAD units fit in.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "8",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied instead of dividing by variability.",
+            "misconception_text": "Nice try. 46 - 42 = 4 is the gap. To count variability units, divide 4 by 2.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -16841,7 +16841,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "The groups are definitely identical",
             "correct": false,
-            "misconception_text": "Misconception: You overlap does not prove identical populations.",
+            "misconception_text": "Nice try. When centers are close, the groups can still mix a little. Not every dot has to match.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -16853,14 +16853,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Centers must differ by at least 5 spread units",
             "correct": false,
-            "misconception_text": "Misconception: You large multiples would usually reduce overlap.",
+            "misconception_text": "Nice try. Far-apart centers would make the clouds sit on opposite sides with hardly any overlap.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Variability is zero",
             "correct": false,
-            "misconception_text": "Misconception: You overlap with similar spread still implies nonzero variation.",
+            "misconception_text": "Nice try. Zero variability would stack every dot in one spot. Small spread just lets the circles mix.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -16880,14 +16880,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "1",
             "correct": false,
-            "misconception_text": "Misconception: You used difference 9 but divided incorrectly.",
+            "misconception_text": "Nice try. 27 minus 18 is 9. Divide 9 by 3 to get the MADs.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "2",
             "correct": false,
-            "misconception_text": "Misconception: You rounded the multiple too low.",
+            "misconception_text": "Nice try. 9 divided by 3 is a neat whole number.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -16899,7 +16899,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "9",
             "correct": false,
-            "misconception_text": "Misconception: You used raw center difference instead of dividing by MAD.",
+            "misconception_text": "Nice try. 27 - 18 = 9 is the gap. Divide 9 by the MAD of 3 to get 3 MADs.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -16919,14 +16919,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Center difference is 0.5 MAD",
             "correct": false,
-            "misconception_text": "Misconception: You small center difference often means strong overlap.",
+            "misconception_text": "Nice try! When the centers are only half a MAD apart, the two groups pile together and overlap a lot.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "Center difference is 1 MAD",
             "correct": false,
-            "misconception_text": "Misconception: You still usually moderate overlap.",
+            "misconception_text": "Nice try! With just 1 MAD between centers, the groups still mix in the middle.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           },
           {
@@ -16938,7 +16938,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "Center difference is 0 MAD",
             "correct": false,
-            "misconception_text": "Misconception: You same centers often imply most overlap.",
+            "misconception_text": "Nice try! If the centers match exactly, the groups land on top of each other and overlap the most.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -16963,21 +16963,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "Groups differ by 6 variability units",
             "correct": false,
-            "misconception_text": "Misconception: You used center difference without dividing by variability.",
+            "misconception_text": "Nice try! 6 is the plain gap. Divide 6 by the scale 2 to get the variability units.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Groups differ by 1 variability unit",
             "correct": false,
-            "misconception_text": "Misconception: You divided by an incorrect value.",
+            "misconception_text": "Nice try. Sixty four minus 58 equals 6. Divide 6 by 2 to count how many 2s fit.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Groups cannot be compared without exact same data values",
             "correct": false,
-            "misconception_text": "Misconception: You center and variability are sufficient for informal comparison.",
+            "misconception_text": "Nice try! We can still learn plenty by comparing centers and spread, even without every number.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -17004,21 +17004,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "Schools must have exactly identical populations",
             "correct": false,
-            "misconception_text": "Misconception: You different sample centers suggest likely population difference.",
+            "misconception_text": "Nice try. One score is 78, the other is 85. That gap hints the schools are different.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "No inference is possible from random samples",
             "correct": false,
-            "misconception_text": "Misconception: You random samples are specifically used for inference.",
+            "misconception_text": "Nice try! Random samples help us make smart \"likely\" guesses about the whole group.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "School A is definitely better with certainty",
             "correct": false,
-            "misconception_text": "Misconception: You direction and certainty are both incorrect.",
+            "misconception_text": "Nice try! School A’s 78 is lower than 85, so the data does not support that claim.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -17043,21 +17043,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "Populations must have different means",
             "correct": false,
-            "misconception_text": "Misconception: You sample means are stated equal.",
+            "misconception_text": "Nice try! The means are equal here. It is the spread that differs between the groups.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Variability has no effect on inference",
             "correct": false,
-            "misconception_text": "Misconception: You variation affects how strongly we compare groups.",
+            "misconception_text": "Nice try! Variability shows if the data stays close or scatters all around.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Sample X has no spread",
             "correct": false,
-            "misconception_text": "Misconception: You larger variability means more spread, not less.",
+            "misconception_text": "Nice try! Larger variability means Sample X spreads out more than Sample Y.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -17082,21 +17082,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "Population 2 is certainly much larger in center",
             "correct": false,
-            "misconception_text": "Misconception: You small center gap with high spread does not support strong certainty.",
+            "misconception_text": "Nice try. The two groups overlap a lot, so a tiny gap does not give big proof of a huge difference.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Population 1 must be larger because 14 is smaller",
             "correct": false,
-            "misconception_text": "Misconception: You interpretation direction is incorrect.",
+            "misconception_text": "Nice try. 14 is the smaller number. Even then, the big overlap makes us unsure about any real gap.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Random samples cannot be used for inference",
             "correct": false,
-            "misconception_text": "Misconception: You random sampling supports inference.",
+            "misconception_text": "Nice try. We can guess, but the data shows only a small difference, so stay cautious.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -17121,21 +17121,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "Centers very close and variability large",
             "correct": false,
-            "misconception_text": "Misconception: You this weakens comparison.",
+            "misconception_text": "Nice try. When centers are close and data is spread out, we cannot claim the groups are truly different.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Non-random convenience samples only",
             "correct": false,
-            "misconception_text": "Misconception: You random sampling improves reliability.",
+            "misconception_text": "Nice try. Random samples give the best proof, so they make the strongest, most trusted inference.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Ignoring variability entirely",
             "correct": false,
-            "misconception_text": "Misconception: You variation is essential for comparison.",
+            "misconception_text": "Nice try. We always check variability; it shows how much we can trust the typical center value.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -17160,21 +17160,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "A has higher center and greater spread",
             "correct": false,
-            "misconception_text": "Misconception: You both center and variability are reversed.",
+            "misconception_text": "Nice try. Switch the tags: Data B has mean 55 and MAD 8, so it is more spread out.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "The samples must come from identical populations",
             "correct": false,
-            "misconception_text": "Misconception: You centers and spreads differ notably.",
+            "misconception_text": "Nice try. Because the centers and the spreads are both quite different, the groups are likely not the same.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "MAD does not matter for inference",
             "correct": false,
-            "misconception_text": "Misconception: You mAD directly describes variability.",
+            "misconception_text": "Nice try. The MAD shows that Group B is less steady and predictable than Group A.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -17201,21 +17201,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "2/3",
             "correct": false,
-            "misconception_text": "Misconception: You compared red sections to non-red sections instead of total sections.",
+            "misconception_text": "Nice try. Compare red to the whole board: 2 red sections out of 8 total sections.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "1/8",
             "correct": false,
-            "misconception_text": "Misconception: You counted one red section instead of two.",
+            "misconception_text": "Nice try. Two parts are red, so the top of the fraction is 2, not 1.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "2",
             "correct": false,
-            "misconception_text": "Misconception: You used the number of favorable outcomes but did not form a probability.",
+            "misconception_text": "Nice try. A chance must be between 0 and 1. 2 is how many red parts, but we need the fraction red.",
             "misconception_code": "PROBABILITY_COUNTING"
           }
         ]
@@ -17235,21 +17235,21 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "0",
             "correct": false,
-            "misconception_text": "Misconception: You 0 is valid and means impossible.",
+            "misconception_text": "Nice try. 0 is a real chance. It just means the thing can’t happen, like getting a 7 on a six-side die.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "0.62",
             "correct": false,
-            "misconception_text": "Misconception: You 0.62 is valid because it is between 0 and 1.",
+            "misconception_text": "Nice try. 0.62 sits between 0 and 1, so it is a fine probability.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "1",
             "correct": false,
-            "misconception_text": "Misconception: You 1 is valid and means certain.",
+            "misconception_text": "Nice try. 1 is the biggest chance. It means the thing will surely happen, 100 percent!",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -17279,21 +17279,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "Event B with probability 3/5",
             "correct": false,
-            "misconception_text": "Misconception: You did not convert 3/5 to decimal (0.6) before comparing.",
+            "misconception_text": "Nice try. 3/5 equals 0.60. Since 0.60 is less than 0.72, Event B is less likely.",
             "misconception_code": "PLACE_VALUE"
           },
           {
             "label": "C",
             "text": "They are equally likely",
             "correct": false,
-            "misconception_text": "Misconception: You 0.72 and 0.6 are not equal.",
+            "misconception_text": "Nice try. Change 3/5 to 0.60. Then you can see 0.60 is smaller than 0.72.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Cannot be determined",
             "correct": false,
-            "misconception_text": "Misconception: You both probabilities are given numerically, so they are directly comparable.",
+            "misconception_text": "Nice try. We already have the numbers. Just write both as decimals to compare them easily.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -17313,14 +17313,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Likely",
             "correct": false,
-            "misconception_text": "Misconception: You a value near 0 means the event is unlikely, not likely.",
+            "misconception_text": "Nice try. Likely means near 1, like 0.90. 0.03 is tiny, almost zero.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "B",
             "text": "Neither likely nor unlikely",
             "correct": false,
-            "misconception_text": "Misconception: You a value around 1/2 represents neither likely nor unlikely.",
+            "misconception_text": "Nice try. That word fits probabilities near 0.50. 0.03 is way smaller.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -17332,7 +17332,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "Certain",
             "correct": false,
-            "misconception_text": "Misconception: You certain events have probability 1.",
+            "misconception_text": "Nice try. A certain event has probability 1. 0.03 means the event is very rare.",
             "misconception_code": "PROBABILITY_COUNTING"
           }
         ]
@@ -17352,7 +17352,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "0.28",
             "correct": false,
-            "misconception_text": "Misconception: You repeated the original probability instead of using complements.",
+            "misconception_text": "Nice try. 0.28 is the chance it will rain. No rain is the rest: 1 - 0.28 = 0.72.",
             "misconception_code": "PROBABILITY_COUNTING"
           },
           {
@@ -17364,14 +17364,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "1.28",
             "correct": false,
-            "misconception_text": "Misconception: You added the event probability to 1 instead of subtracting from 1.",
+            "misconception_text": "Nice try. A chance can’t be bigger than 1. To find the other part, subtract 0.28 from 1.",
             "misconception_code": "PROBABILITY_COUNTING"
           },
           {
             "label": "D",
             "text": "0.5",
             "correct": false,
-            "misconception_text": "Misconception: You treated unknown weather outcomes as equally likely without using the given probability.",
+            "misconception_text": "Nice try. Use the 0.28 chance to find the exact opposite chance, 0.72.",
             "misconception_code": "PROBABILITY_COUNTING"
           }
         ]
@@ -17398,21 +17398,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "0.48",
             "correct": false,
-            "misconception_text": "Misconception: You used tails instead of heads.",
+            "misconception_text": "Nice try. 0.48 is how often the coin landed tails. We want to know how many times it landed heads.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "52",
             "correct": false,
-            "misconception_text": "Misconception: You used favorable outcomes only and did not divide by total trials.",
+            "misconception_text": "Nice try. You counted 52. Write it as 52 out of 100, or 0.52.",
             "misconception_code": "OPERATION_SELECTION"
           },
           {
             "label": "D",
             "text": "5.2",
             "correct": false,
-            "misconception_text": "Misconception: You moved the decimal incorrectly when converting 52/100.",
+            "misconception_text": "Nice try. 52 out of 100 is 0.52. Keep your answer between 0 and 1.",
             "misconception_code": "PLACE_VALUE"
           }
         ]
@@ -17437,21 +17437,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "0.70",
             "correct": false,
-            "misconception_text": "Misconception: You found probability of not red instead of red.",
+            "misconception_text": "Nice try. 0.70 is the chance the spinner skips red. We want the chance it lands on red.",
             "misconception_code": "PROBABILITY_COUNTING"
           },
           {
             "label": "C",
             "text": "0.18",
             "correct": false,
-            "misconception_text": "Misconception: You divided by 100 instead of total trials 60.",
+            "misconception_text": "Nice try. Use 60 spins, not 100. Divide 18 by 60 to get the right answer.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "3.33",
             "correct": false,
-            "misconception_text": "Misconception: You divided 60 by 18 instead of 18 by 60.",
+            "misconception_text": "Nice try. Turn the division the right way. Put the wins 18 on top and the total tries 60 below.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -17471,14 +17471,14 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Moves farther away from theoretical probability.",
             "correct": false,
-            "misconception_text": "Misconception: You long-run relative frequency generally stabilizes toward theoretical probability.",
+            "misconception_text": "Nice try. The more tries we make, the closer the results settle to the math theory.",
             "misconception_code": "PROBABILITY_COUNTING"
           },
           {
             "label": "B",
             "text": "Becomes exactly equal to theoretical probability after 10 trials.",
             "correct": false,
-            "misconception_text": "Misconception: You small fixed trial counts do not guarantee an exact match.",
+            "misconception_text": "Nice try. 10 tries is still tiny. We need lots more turns before the numbers settle close to the theory.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -17490,7 +17490,7 @@ var MASTERY_V2_DATA = {
             "label": "D",
             "text": "Has no relationship to theoretical probability.",
             "correct": false,
-            "misconception_text": "Misconception: You experimental probability is specifically used to estimate theoretical likelihood.",
+            "misconception_text": "Nice try. Both go together. Trials let us test if our theory values are right.",
             "misconception_code": "PROBABILITY_COUNTING"
           }
         ]
@@ -17515,21 +17515,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "35",
             "correct": false,
-            "misconception_text": "Misconception: You applied the probability to 100 trials, not 200.",
+            "misconception_text": "Nice try. 35 fits for 100 tries. We have 200, so we need to double the result.",
             "misconception_code": "PROBABILITY_COUNTING"
           },
           {
             "label": "C",
             "text": "130",
             "correct": false,
-            "misconception_text": "Misconception: You computed the expected count of the complement event.",
+            "misconception_text": "Nice try. 130 is how many times we think it will not land on the space. Let's find the 0.35 part instead.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "57",
             "correct": false,
-            "misconception_text": "Misconception: You multiplied by an incorrect trial count.",
+            "misconception_text": "Nice try. A small math step was off. Please multiply 0.35 by 200 once more.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -17549,7 +17549,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "Student A, because 0.60 is farther from 0.5.",
             "correct": false,
-            "misconception_text": "Misconception: You being farther from 0.5 does not make an estimate more reliable.",
+            "misconception_text": "Nice try. Farther away does not mean better. Student A might have just had a short lucky run.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -17561,14 +17561,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Both are equally reliable because both used random tosses.",
             "correct": false,
-            "misconception_text": "Misconception: You trial count affects reliability even when both are random.",
+            "misconception_text": "Nice try. 20 tries is okay. More tries like 400 make the answer much safer to trust.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Neither is useful because experimental probability cannot estimate true probability.",
             "correct": false,
-            "misconception_text": "Misconception: You experimental probability is used specifically as an estimate.",
+            "misconception_text": "Nice try. Big trials give good estimates.",
             "misconception_code": "PROBABILITY_COUNTING"
           }
         ]
@@ -17595,21 +17595,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "1/5",
             "correct": false,
-            "misconception_text": "Misconception: You a die has six equally likely outcomes.",
+            "misconception_text": "Nice try. A normal die has six sides. Put 6 on the bottom of your fraction.",
             "misconception_code": "PROBABILITY_COUNTING"
           },
           {
             "label": "C",
             "text": "5/6",
             "correct": false,
-            "misconception_text": "Misconception: You counted non-favorable outcomes.",
+            "misconception_text": "Nice try. 5/6 means not getting a five. We only want the chance of rolling a five.",
             "misconception_code": "PROBABILITY_COUNTING"
           },
           {
             "label": "D",
             "text": "1/2",
             "correct": false,
-            "misconception_text": "Misconception: You treated event as two-outcome only.",
+            "misconception_text": "Nice try. 1/2 fits evens or odds. For one exact side, the chance is 1 out of 6.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -17634,21 +17634,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "2/5",
             "correct": false,
-            "misconception_text": "Misconception: You used probability of blue.",
+            "misconception_text": "Nice try. 2/5 is the chance for blue. The question asks for red.",
             "misconception_code": "PROBABILITY_COUNTING"
           },
           {
             "label": "C",
             "text": "3/2",
             "correct": false,
-            "misconception_text": "Misconception: You probability cannot exceed 1.",
+            "misconception_text": "Nice try. Probability can't be bigger than 1. Put 3 over 5, so the probability is 3/5.",
             "misconception_code": "PROBABILITY_COUNTING"
           },
           {
             "label": "D",
             "text": "1/5",
             "correct": false,
-            "misconception_text": "Misconception: You used one favorable outcome instead of three.",
+            "misconception_text": "Nice try. Three red marbles mean three ways to win, not just one.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -17668,7 +17668,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "The model must be wrong in every case",
             "correct": false,
-            "misconception_text": "Misconception: You small samples can vary from model values.",
+            "misconception_text": "Nice try. One odd result does not break the model. It can just be luck.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -17680,14 +17680,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "Probability guarantees exact outcomes every time",
             "correct": false,
-            "misconception_text": "Misconception: You probability models predict long-run behavior, not exact short-run counts.",
+            "misconception_text": "Nice try. Probability shows the long-run story. Short runs can still be wild.",
             "misconception_code": "PROBABILITY_COUNTING"
           },
           {
             "label": "D",
             "text": "Green is impossible on this spinner",
             "correct": false,
-            "misconception_text": "Misconception: You observed green outcomes show it is possible.",
+            "misconception_text": "Nice try. Green happened 9 times, so it is clearly possible.",
             "misconception_code": "PROBABILITY_COUNTING"
           }
         ]
@@ -17712,21 +17712,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "The coin is definitely biased",
             "correct": false,
-            "misconception_text": "Misconception: You difference of 2 in 1000 is very small.",
+            "misconception_text": "Nice try. 502 out of 1000 is still very close to half. A small gap is just normal chance.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Model probability should be changed to 0.502 exactly",
             "correct": false,
-            "misconception_text": "Misconception: You single experiment does not require exact replacement of model.",
+            "misconception_text": "Nice try. We do not rewrite rules after one test. Our results show the fair coin idea still works!",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "No probability model can be used for coins",
             "correct": false,
-            "misconception_text": "Misconception: You coins are standard probability-model examples.",
+            "misconception_text": "Nice try. Coins are a great way to learn how probability models work.",
             "misconception_code": "PROBABILITY_COUNTING"
           }
         ]
@@ -17751,21 +17751,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "0.42 is essentially equal to 0.7",
             "correct": false,
-            "misconception_text": "Misconception: You difference is large and not close.",
+            "misconception_text": "Nice try. 0.42 and 0.70 are quite far apart. A gap that big can mean the model might be wrong.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "C",
             "text": "Model is proven correct",
             "correct": false,
-            "misconception_text": "Misconception: You data do not support this claim.",
+            "misconception_text": "Nice try. 21/50 is 0.42, which is much less than 0.7. This suggests the game may not match the claim.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "Probability models are never useful",
             "correct": false,
-            "misconception_text": "Misconception: You models are useful even when needing revision.",
+            "misconception_text": "Nice try. Models help us see hidden tricks, like spotting that this game might not be fair.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -17787,7 +17787,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "1/4",
             "correct": false,
-            "misconception_text": "Misconception: You counted one favorable outcome instead of two.",
+            "misconception_text": "Nice try. There are two ways to get one head: HT or TH. That gives 2 chances out of 4!",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -17799,14 +17799,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "3/4",
             "correct": false,
-            "misconception_text": "Misconception: You counted outcomes with at least one head.",
+            "misconception_text": "Nice try. 3/4 is the chance for at least one head. We want only one head!",
             "misconception_code": "PROBABILITY_COUNTING"
           },
           {
             "label": "D",
             "text": "2/3",
             "correct": false,
-            "misconception_text": "Misconception: You used incorrect total outcome count.",
+            "misconception_text": "Nice try. With two coins there are four outcomes: HH, HT, TH, TT. Count all four for the total.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -17826,7 +17826,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "1/6",
             "correct": false,
-            "misconception_text": "Misconception: You used only one event probability.",
+            "misconception_text": "Nice try. That might be the chance for one event. Do not forget we need both the die and the coin!",
             "misconception_code": "PROBABILITY_COUNTING"
           },
           {
@@ -17838,14 +17838,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "1/3",
             "correct": false,
-            "misconception_text": "Misconception: You ignored coin probability.",
+            "misconception_text": "Nice try. Half the die rolls are even, that is 1/2. Half of those get heads again, 1/2 of 1/2 equals 1/4.",
             "misconception_code": "PROBABILITY_COUNTING"
           },
           {
             "label": "D",
             "text": "1/12",
             "correct": false,
-            "misconception_text": "Misconception: You used odd count of even outcomes.",
+            "misconception_text": "Nice try. There are 3 even numbers on a die (2, 4, 6). With heads, that makes 3 winning outcomes out of 12 total.",
             "misconception_code": "PROBABILITY_COUNTING"
           }
         ]
@@ -17865,7 +17865,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "9/25",
             "correct": false,
-            "misconception_text": "Misconception: You treated draws as independent with replacement.",
+            "misconception_text": "Nice try. The first marble was not put back, so there are now fewer red marbles for the next pick.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -17877,14 +17877,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "6/25",
             "correct": false,
-            "misconception_text": "Misconception: You used incorrect second-draw probability.",
+            "misconception_text": "Nice try. After you take one marble out, only 4 marbles are left for the next draw.",
             "misconception_code": "PROBABILITY_COUNTING"
           },
           {
             "label": "D",
             "text": "1/2",
             "correct": false,
-            "misconception_text": "Misconception: You overestimated chance of two reds.",
+            "misconception_text": "Nice try. Multiply 3/5 by 2/4 to get the exact answer instead of estimating too high.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -17904,7 +17904,7 @@ var MASTERY_V2_DATA = {
             "label": "A",
             "text": "3/9",
             "correct": false,
-            "misconception_text": "Misconception: You added probabilities instead of multiplying.",
+            "misconception_text": "Nice try. These two events happen together, so multiply the chances instead of adding them.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
@@ -17916,14 +17916,14 @@ var MASTERY_V2_DATA = {
             "label": "C",
             "text": "2/9",
             "correct": false,
-            "misconception_text": "Misconception: You used incorrect denominators.",
+            "misconception_text": "Nice try. Multiply 4 sectors by 5 sectors to see 20 different bottom combinations in total.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
             "label": "D",
             "text": "3/20",
             "correct": false,
-            "misconception_text": "Misconception: You mixed event counts inconsistently.",
+            "misconception_text": "Nice try. For the top we multiply 1 green by 2 greens to get 2 winning pairs out of 20.",
             "misconception_code": "GENERAL_REASONING"
           }
         ]
@@ -17948,21 +17948,21 @@ var MASTERY_V2_DATA = {
             "label": "B",
             "text": "1/7",
             "correct": false,
-            "misconception_text": "Misconception: You used the sum value as denominator.",
+            "misconception_text": "Nice try. 7 is the sum we want, but the chance is wins 92 over total 600 tries.",
             "misconception_code": "DENOMINATOR_REASONING"
           },
           {
             "label": "C",
             "text": "7/600",
             "correct": false,
-            "misconception_text": "Misconception: You used event value instead of event count.",
+            "misconception_text": "Nice try. Seven is just the target. We need the real count, 92, for how many times seven came.",
             "misconception_code": "GENERAL_REASONING"
           },
           {
             "label": "D",
             "text": "600/92",
             "correct": false,
-            "misconception_text": "Misconception: You inverted the experimental probability ratio.",
+            "misconception_text": "Nice try. Flip the fraction: divide successes by total tries, never total by successes.",
             "misconception_code": "RATE_UNIT_CONFUSION"
           }
         ]
@@ -17975,4 +17975,3 @@ var MASTERY_V2_DATA = {
     "topics_total": 46
   }
 };
-if (typeof window !== 'undefined') window.MASTERY_V2_DATA = MASTERY_V2_DATA;
