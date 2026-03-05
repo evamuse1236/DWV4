@@ -155,7 +155,8 @@ function buildMarkdown(payload, sourcePath) {
 
 function main() {
   const sourceArg = process.argv[2] ?? "public/diagnostic_v2/mastery_data.json";
-  const outArg = process.argv[3] ?? "diagnostic-v2-readable.md";
+  const outArg =
+    process.argv[3] ?? path.join("workspace", "diagnostic-readable", "diagnostic-v2-readable.md");
   const sourcePath = path.resolve(sourceArg);
   const outPath = path.resolve(outArg);
 
@@ -165,6 +166,7 @@ function main() {
 
   const payload = loadJson(sourcePath);
   const markdown = buildMarkdown(payload, sourcePath);
+  fs.mkdirSync(path.dirname(outPath), { recursive: true });
   fs.writeFileSync(outPath, markdown, "utf8");
 
   const questionBank = payload.question_bank ?? {};

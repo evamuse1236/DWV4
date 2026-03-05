@@ -1,57 +1,31 @@
-# Deep Work Tracker Core Guide
+# Core Product Guide
 
-Last updated: 2026-02-17
+## What this app is
 
-## What this product is
+Deep Work Tracker is a learning platform with two interfaces:
+- Student interface: daily learning rhythm (check-in, sprint work, deep work, reading).
+- Admin interface: operational coaching (students, objectives, queues, projects).
 
-Deep Work Tracker is a student learning platform with an admin coaching console.
-- Student UX is calm and guided.
-- Admin UX is dense and operational.
+Both interfaces share one Convex backend.
 
-Both surfaces share one Convex backend and schema.
+## Core loop
 
-## Why it exists
-
-The product balances:
-1. Daily momentum (check-in, sprint tasks, reading)
-2. Mastery evidence (activities, diagnostics, viva)
-3. Coach leverage (queues, fast intervention, AI-assisted entry)
-
-## Core product loop
-
-1. Student checks in
-2. Student works assigned objectives and sprint tasks
-3. Student requests mastery checks (viva/diagnostic)
-4. Coach reviews queues and advances mastery states
+1. Student checks in.
+2. Student works sprint and learning objectives.
+3. Student requests mastery checks (viva and diagnostics).
+4. Admin reviews queues and advances progress.
 
 ## Non-negotiable invariants
 
-1. `studentMajorObjectives.status` is the authoritative major-objective status.
-2. `studentObjectives.status` is legacy-compatible state.
-3. Diagnostic pass policy is backend-enforced in `convex/diagnostics.ts`.
-4. Student routes under `DashboardLayout` are check-in gated.
-5. AI actions must return parseable structured outputs consumed by UI.
-6. Diagnostic submission retries must not mutate client-side score/results more than once for the same final question.
+1. `studentMajorObjectives.status` is the authoritative major-objective state.
+2. `studentObjectives.status` is legacy-compatible and not the source of truth.
+3. Diagnostic scoring and pass/fail policy are backend-owned.
+4. Student routes and admin routes are role-protected.
+5. AI responses consumed by UI must include parseable fenced blocks.
 
-## System shape
+## Product direction
 
-```text
-React (Vite) frontend
-  -> Convex hooks
-  -> Convex functions + schema
-  -> Convex DB
-  -> AI providers via Convex actions
-```
-
-## Current direction (2026)
-
-1. Keep mastery flows deterministic and auditable.
-2. Improve accessibility and mobile reliability in core flows.
-3. Keep AI contracts strict with robust fallbacks.
-4. Keep docs low-overlap and agent-friendly.
-
-## Read next
-
-- `docs/CODEBASE-MAP.md`
-- `docs/ARCHITECTURE.md`
-- `docs/DATA-MODEL.md`
+1. Keep mastery transitions deterministic and auditable.
+2. Keep student UX calm and guided.
+3. Keep admin UX fast and operational.
+4. Keep docs short, current, and non-overlapping.

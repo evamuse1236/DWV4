@@ -74,4 +74,7 @@ def split_file(input_file, output_dir, num_parts=8):
          print(f"Written {output_file} ({len(current_part)} lines)")
 
 if __name__ == "__main__":
-    split_file("c:\\WProjects\\DW\\diagnostic-v2-readable.md", "c:\\WProjects\\DW\\readable")
+    split_file(
+        "c:\\WProjects\\DW\\workspace\\diagnostic-readable\\diagnostic-v2-readable.md",
+        "c:\\WProjects\\DW\\workspace\\diagnostic-readable\\parts"
+    )

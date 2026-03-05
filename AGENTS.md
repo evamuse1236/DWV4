@@ -2,6 +2,8 @@
 
 Purpose: deterministic routing for AI agents working in this repo.
 
+Single source of truth: this file. `CLAUDE.md` exists only as a compatibility pointer.
+
 ## Boot Sequence (Always)
 
 1. Read `docs/README.md`
@@ -15,27 +17,23 @@ Purpose: deterministic routing for AI agents working in this repo.
 |---|---|
 | Product intent, invariants, direction | `docs/CORE.md` |
 | Code/file ownership and route locations | `docs/CODEBASE-MAP.md` |
-| Architecture decisions and boundaries | `docs/ARCHITECTURE.md` |
-| Schema/status contracts and data rules | `docs/DATA-MODEL.md` |
-| Deploy, rollback, operations | `docs/RUNBOOK.md` |
-| Local setup and contributor workflow | `docs/CONTRIBUTING.md` |
-| AI prompts/contracts/providers | `docs/AI-SYSTEM.md` |
-| Curriculum mapping pipeline | `docs/curriculum/README.md`, `docs/curriculum/WORKFLOW.md` |
-| Test planning priorities | `docs/reference/TEST-PLAN.md` |
-| Historical context only | `docs/archive/README.md` |
+| Architecture, schema/status contracts, AI contracts | `docs/SYSTEM.md` |
+| Deploy, rollback, setup, verification | `docs/OPERATIONS.md` |
+| Curriculum pipeline outputs | `docs/curriculum/README.md` |
+| Non-jargon human docs | `docsForMe/README.md` |
 
 ## Source-of-Truth Priority
 
 1. Runtime code (`src/`, `convex/`, `scripts/`)
 2. `convex/schema.ts`
-3. `docs/DATA-MODEL.md`
+3. `src/App.tsx`
 4. `docs/CORE.md`
-5. `docs/RUNBOOK.md`
-6. `docs/archive/` (historical only)
+5. `docs/SYSTEM.md`
+6. `docs/OPERATIONS.md`
 
 ## Required Agent Rules
 
-1. Do not implement from `docs/archive/` unless explicitly requested.
+1. Do not implement from deleted or historical docs; use current docs + runtime code.
 2. Update owner docs instead of creating overlapping docs.
 3. If behavior changes, update the matching owner doc.
 4. Validate route assumptions in `src/App.tsx`.

@@ -66,6 +66,6 @@ def process_file(file_path):
         f.writelines(new_lines)
 
 if __name__ == "__main__":
-    file_path = "c:\\WProjects\\DW\\diagnostic-v2-readable.md"
+    file_path = "c:\\WProjects\\DW\\workspace\\diagnostic-readable\\diagnostic-v2-readable.md"
     process_file(file_path)
     print("Done rewriting misconceptions.")

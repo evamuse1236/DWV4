@@ -9,4 +9,4 @@ Pipeline summary:
 4. Apply seed block to `convex/seed.ts`
 5. Run Convex seed mutations
 
-Canonical workflow doc: `docs/curriculum/WORKFLOW.md`.
+Canonical workflow doc: `docs/OPERATIONS.md`.

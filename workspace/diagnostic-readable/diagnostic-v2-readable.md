@@ -1,8 +1,7 @@
 # Diagnostic V2 Question Bank (Readable Export)
 
-Generated: 2026-02-11T08:09:22.772Z
+Generated: 2026-03-05T02:43:09.455Z
 Source: `C:\WProjects\DW\public\diagnostic_v2\mastery_data.json`
-Status: generated export for review workflows. Do not manually curate business rules here.
 
 ## Summary
 
@@ -30,12 +29,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 25,936 [WRONG]
-  - Misconception: Misconception: You multiplied, but you forgot to add a carry into the next place. In the standard algorithm, each carry must be added to the next digit’s product.
+  - Misconception: Nice try. A tiny carry got skipped. Just add that carry to the next digit’s product and keep going.
 - B. 26,236 [CORRECT]
 - C. 26,136 [WRONG]
-  - Misconception: Misconception: You carried the wrong number from a step. Check the tens step: 4×7=28 plus the carry makes 33, so the carry should be 3.
+  - Misconception: Nice try. One carry was off. 4 times 7 is 28, plus the old carry makes 33, so the new carry is 3.
 - D. 8,236 [WRONG]
-  - Misconception: Misconception: You multiplied 748×7, but you didn’t multiply the thousands digit (3,000) by 7. Every digit in 3,748 must be multiplied by 7.
+  - Misconception: Nice try. Each digit in 3,748 must be multiplied by 7 to get the full answer.
 
 **Correct Answer(s):** B. 26,236
 
@@ -50,11 +49,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 720 [CORRECT]
 - B. 72 [WRONG]
-  - Misconception: Misconception: You treated the 2 in 25 as 2 ones instead of 2 tens, so you didn’t shift left. The second row should start in the tens place.
+  - Misconception: Nice try. The 2 in 25 means 20, so move the second row one place left to the tens place.
 - C. 360 [WRONG]
-  - Misconception: Misconception: You added a zero because it’s a tens row, but you didn’t multiply by 2 first. You must do 36×2, then place it in the tens row.
+  - Misconception: Nice try. You added the zero for the tens row. Next, multiply 36 by 2 and write that in the tens row.
 - D. 7,200 [WRONG]
-  - Misconception: Misconception: You shifted the second row too far, as if the 2 meant 200. The 2 in 25 represents 20, so you shift one place, not two.
+  - Misconception: Nice try. The 2 means 20, so shift the second row only one place left.
 
 **Correct Answer(s):** A. 720
 
@@ -68,12 +67,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 135 [WRONG]
-  - Misconception: Misconception: You found both partial products but added them without shifting the tens row. The row for the ‘1’ in 14 represents 10, so it must be one place to the left.
+  - Misconception: Nice try. The tens row must be moved one place left before we add.
 - B. 2,808 [WRONG]
-  - Misconception: Misconception: You shifted the tens row two places, as if the 1 in 14 meant 100. It actually means 10, so you shift only one place.
+  - Misconception: Nice try. The 1 means 10, so shift the tens row just one place.
 - C. 378 [CORRECT]
 - D. 358 [WRONG]
-  - Misconception: Misconception: You made a carry mistake while multiplying 27×4 (you didn’t add the carry to the next step). Recheck 7×4=28, then 2×4 should include the carried 2.
+  - Misconception: Nice try. Check the carry from 7 times 4 and add it in the next step.
 
 **Correct Answer(s):** C. 378
 
@@ -88,11 +87,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 9,264 [CORRECT]
 - B. 9,244 [WRONG]
-  - Misconception: Misconception: You forgot to add the carry from 6×4=24 into the tens step. The carry must be added to 1×4.
+  - Misconception: Nice try. You missed the extra tens from 6 times 4. Add that carry to the tens from 1 times 4.
 - C. 9,444 [WRONG]
-  - Misconception: Misconception: You added the carry to the wrong place value (hundreds instead of tens). Carries always move to the next place to the left immediately.
+  - Misconception: Nice try. The carry went to the wrong place. Carries always hop just one spot left.
 - D. 92,640 [WRONG]
-  - Misconception: Misconception: You multiplied by 40 instead of 4 by adding an extra zero. Make sure you’re multiplying by 4 (ones), not 40 (tens).
+  - Misconception: Nice try. You multiplied by 40, but we only need to multiply by 4. Check you are using ones, not tens.
 
 **Correct Answer(s):** A. 9,264
 
@@ -106,12 +105,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 8,120 [WRONG]
-  - Misconception: Misconception: You multiplied by 4 but forgot that 40 is ten times bigger than 4. Your final answer should be shifted one place left (one extra zero).
+  - Misconception: Nice try. You did 4 times well, but we are doing 40. Shift your answer one place left to show tens.
 - B. 81,200 [CORRECT]
 - C. 9,200 [WRONG]
-  - Misconception: Misconception: You dropped the zero in 2,030 and treated it like 230. The zero in the middle still changes place value and must be included.
+  - Misconception: Nice try. Keep the zero in 2,030; it holds the tens place.
 - D. 812,000 [WRONG]
-  - Misconception: Misconception: You added one extra zero, treating 40 like 400. Since 40 has one zero, you shift one place, not two.
+  - Misconception: Nice try. 40 has just one zero, so move the answer one place. You added too many zeros.
 
 **Correct Answer(s):** B. 81,200
 
@@ -135,12 +134,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 54 [WRONG]
-  - Misconception: Misconception: You likely used an incorrect multiplication fact for 24.
+  - Misconception: Nice try. Check the 24 facts again. A small slip changed the answer.
 - B. 64 [CORRECT]
 - C. 74 [WRONG]
-  - Misconception: Misconception: You overestimated the quotient.
+  - Misconception: Nice try. Your estimate said 24 goes into the number more times than it actually does.
 - D. 640 [WRONG]
-  - Misconception: Misconception: You misplaced place value by a factor of 10.
+  - Misconception: Nice try. The place value looks off by ten. Double-check where you put the first digit of your division answer.
 
 **Correct Answer(s):** B. 64
 
@@ -155,11 +154,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 84 [CORRECT]
 - B. 74 [WRONG]
-  - Misconception: Misconception: You stopped one group too early.
+  - Misconception: Nice try. This stops one group short. Keep dividing until you have taken away all the groups you can.
 - C. 96 [WRONG]
-  - Misconception: Misconception: You overestimated how many groups of 32 fit.
+  - Misconception: Nice try. You guessed more groups of 32 than fit. Lower your estimate and check again.
 - D. 8.4 [WRONG]
-  - Misconception: Misconception: You treated whole-number division as decimal scaling.
+  - Misconception: Nice try. We are dividing whole numbers, so your answer should stay a whole number without any decimal point.
 
 **Correct Answer(s):** A. 84
 
@@ -173,12 +172,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 95 [WRONG]
-  - Misconception: Misconception: You underestimated by one group of 25.
+  - Misconception: Nice try. You are almost there. Add one more group of 25 to make the total match.
 - B. 96 [WRONG]
-  - Misconception: Misconception: You used 25 x 96 = 2400 instead of checking the full dividend.
+  - Misconception: Nice try. 25 times 96 leaves some amount left. Check the remainder to see how many more groups fit.
 - C. 99 [CORRECT]
 - D. 100 [WRONG]
-  - Misconception: Misconception: You rounded to a friendly number instead of dividing exactly.
+  - Misconception: Nice try. Estimating with 100 is a good start, but the question wants the exact final division answer.
 
 **Correct Answer(s):** C. 99
 
@@ -192,12 +191,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 46 [WRONG]
-  - Misconception: Misconception: You may have used subtraction steps but stopped too early.
+  - Misconception: Nice try. You began to subtract, which is a fine way to divide. Keep going a bit further to finish the job.
 - B. 54 [WRONG]
-  - Misconception: Misconception: You may have divided by a nearby divisor like 40.
+  - Misconception: Nice try. You may have used 40 instead of the real 36. Stick with 36 and you will get the correct answer.
 - C. 56 [CORRECT]
 - D. 66 [WRONG]
-  - Misconception: Misconception: You overestimated the number of groups.
+  - Misconception: Nice try. Your guess for the number of boxes was a little too big.
 
 **Correct Answer(s):** C. 56
 
@@ -211,12 +210,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 48 + 38 = 1824 [WRONG]
-  - Misconception: Misconception: You used addition instead of the inverse operation.
+  - Misconception: Nice try. You added, but to check division we usually multiply instead. Try multiplying to see if it works.
 - B. 1824 - 48 = 38 [WRONG]
-  - Misconception: Misconception: You used subtraction instead of multiplication for checking division.
+  - Misconception: Nice try. Subtraction is linked to division, yet multiplying is the quick way to check your division answer.
 - C. 48 x 38 = 1824 [CORRECT]
 - D. 38 x 38 = 1824 [WRONG]
-  - Misconception: Misconception: You multiplied by the quotient twice and ignored the divisor.
+  - Misconception: Nice try. You multiplied the answer by itself. Instead, multiply the answer by the divisor to check your work.
 
 **Correct Answer(s):** C. 48 x 38 = 1824
 
@@ -240,12 +239,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 7 + 4 [WRONG]
-  - Misconception: Misconception: You interpreted the fraction bar as addition.
+  - Misconception: Nice try. The bar was read like a plus sign. The bar means divide the top by the bottom.
 - B. 7 - 4 [WRONG]
-  - Misconception: Misconception: You interpreted the fraction bar as subtraction.
+  - Misconception: Nice try. The bar was treated like a minus. That bar really means divide.
 - C. 7 / 4 [CORRECT]
 - D. 4 / 7 [WRONG]
-  - Misconception: Misconception: You reversed numerator and denominator.
+  - Misconception: Nice try. The numbers are right, but they are swapped. In division, the top number always goes first.
 
 **Correct Answer(s):** C. 7 / 4
 
@@ -259,12 +258,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 4/3 sandwich [WRONG]
-  - Misconception: Misconception: You reversed the division order.
+  - Misconception: Nice try. Put the 3 sandwiches on top because you are sharing 3 sandwiches among 4 children.
 - B. 3/4 sandwich [CORRECT]
 - C. 1 1/3 sandwiches [WRONG]
-  - Misconception: Misconception: You computed sandwiches per group incorrectly.
+  - Misconception: Nice try. You swapped the numbers. We have 3 sandwiches and 4 kids, so each child gets less than one whole.
 - D. 1/4 sandwich [WRONG]
-  - Misconception: Misconception: You divided one sandwich instead of all three.
+  - Misconception: Nice try. One sandwich was shared. We must share all three sandwiches at once.
 
 **Correct Answer(s):** B. 3/4 sandwich
 
@@ -279,11 +278,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 2 1/2 L [CORRECT]
 - B. 2/5 L [WRONG]
-  - Misconception: Misconception: You reversed numerator and denominator.
+  - Misconception: Nice try. Swap the numbers. We divide 5 liters by 2 pitchers, so 5 goes on top.
 - C. 3 L [WRONG]
-  - Misconception: Misconception: You rounded up instead of dividing exactly.
+  - Misconception: Nice try. Keep the exact answer. Split the last liter in half instead of rounding.
 - D. 2 L [WRONG]
-  - Misconception: Misconception: You ignored the remaining half liter.
+  - Misconception: Nice try. You missed the 5th liter. Split that last liter between the two pitchers to add a bit more.
 
 **Correct Answer(s):** A. 2 1/2 L
 
@@ -297,12 +296,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 3 1/3 [WRONG]
-  - Misconception: Misconception: You used the wrong remainder when dividing 11 by 3.
+  - Misconception: Nice try. After dividing 11 by 3, check the leftover part and write it as a fraction.
 - B. 3 2/3 [CORRECT]
 - C. 2 3/3 [WRONG]
-  - Misconception: Misconception: You did not convert the improper fraction correctly.
+  - Misconception: Nice try. 11 is close to 12, so the whole number part should be a little bigger.
 - D. 4 1/3 [WRONG]
-  - Misconception: Misconception: You overestimated the quotient.
+  - Misconception: Nice try. You counted 3 into 11 a bit too many times. Try again and lower the whole number.
 
 **Correct Answer(s):** B. 3 2/3
 
@@ -316,12 +315,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. Each student gets 2 brownies. [WRONG]
-  - Misconception: Misconception: You ignored the remaining brownies after whole-number division.
+  - Misconception: Nice try. After 2 brownies each, some pieces are still left. Split them so everyone gets a fair share.
 - B. Each student gets 2 2/3 brownies. [CORRECT]
 - C. Each student gets 3/8 brownie. [WRONG]
-  - Misconception: Misconception: You reversed the fraction for equal sharing.
+  - Misconception: Nice try. We share 8 among 3 people, so each person gets more than one.
 - D. Each student gets 3 brownies. [WRONG]
-  - Misconception: Misconception: You rounded up and changed total amount.
+  - Misconception: Nice try. 3 per person needs 9 brownies, but we have 8, so each gets a bit less.
 
 **Correct Answer(s):** B. Each student gets 2 2/3 brownies.
 
@@ -345,12 +344,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 3/8 [WRONG]
-  - Misconception: Misconception: You added the numerators and added the denominators. That changes the size of the pieces, so it doesn’t keep the fractions fair to add.
+  - Misconception: Nice try. You added tops and bottoms. First make the pieces the same size, then add the tops.
 - B. 11/15 [CORRECT]
 - C. 3/5 [WRONG]
-  - Misconception: Misconception: You added the numerators but kept one denominator. You can only add numerators when the denominators (piece sizes) match.
+  - Misconception: Nice try. You added only the tops and kept one bottom. Make the bottoms match first.
 - D. 7/15 [WRONG]
-  - Misconception: Misconception: You tried to use a common denominator but changed the denominator without changing the numerator the same way. When the denominator is multiplied, the numerator must be multiplied too.
+  - Misconception: Nice try. You fixed the bottom but not the top. Change both numbers when you change the size.
 
 **Correct Answer(s):** B. 11/15
 
@@ -364,12 +363,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 2 [WRONG]
-  - Misconception: Misconception: You subtracted straight across in both numerator and denominator. Denominators tell the size of the parts, so you can’t subtract them like that.
+  - Misconception: Nice try. You subtracted straight across. Make the pieces the same size before you subtract the tops.
 - B. 7/12 [CORRECT]
 - C. 2/3 [WRONG]
-  - Misconception: Misconception: You subtracted the numerators but kept the denominator 6. That only works when the fractions already have the same denominator.
+  - Misconception: Nice try. First rewrite both fractions with the same denominator, then subtract only the top numbers while keeping the bottom the same.
 - D. 3/4 [WRONG]
-  - Misconception: Misconception: You used 12 as a common denominator but didn’t change 1/4 correctly. If 1/4 becomes twelfths, it must be 3/12, not 1/12.
+  - Misconception: Nice try. 12 works, but 1/4 must become 3/12. Then add the fractions.
 
 **Correct Answer(s):** B. 7/12
 
@@ -383,12 +382,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 3 5/7 [WRONG]
-  - Misconception: Misconception: You added the numerators and denominators of the fractional parts (2/3 + 3/4). For unlike denominators, you must rename to like denominators first.
+  - Misconception: Nice try. You added tops and bottoms, but the bottoms must match first. Make them match, then add the tops.
 - B. 4 5/12 [CORRECT]
 - C. 3 11/12 [WRONG]
-  - Misconception: Misconception: You found a common denominator but changed one fraction without changing its numerator the same way. Renaming must keep the fraction’s value the same.
+  - Misconception: Nice try. You renamed a fraction but forgot to fix the top. Multiply top and bottom by the same number to keep it equal.
 - D. 4 17/12 [WRONG]
-  - Misconception: Misconception: You stopped after adding and left the fractional part as an improper fraction. The problem asks for simplest form, so you should regroup 17/12 as 1 5/12.
+  - Misconception: Nice try. 17/12 is the same as 1 5/12. Just split it into a whole and the leftover part.
 
 **Correct Answer(s):** B. 4 5/12
 
@@ -402,12 +401,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 2 13/24 [WRONG]
-  - Misconception: Misconception: You borrowed for the fractions but forgot to reduce the whole-number part before subtracting. Borrowing 1 whole means the top whole number goes down by 1.
+  - Misconception: Nice try. You borrowed for the fractions. After you take 1 from the 3, change it to 2.
 - B. 1 13/24 [CORRECT]
 - C. 2 11/24 [WRONG]
-  - Misconception: Misconception: You subtracted the fractions in the wrong order instead of borrowing (you did 5/8 − 1/6). In subtraction, you must keep the order and borrow when needed.
+  - Misconception: Nice try. You flipped the fractions to skip borrowing. If the top piece is too small, borrow from the whole number first.
 - D. 1 1/7 [WRONG]
-  - Misconception: Misconception: You chose a ‘common denominator’ by adding denominators (6+8=14). A common denominator must be a common multiple, like 24 for sixths and eighths.
+  - Misconception: Nice try. You added the bottoms. Find a number both 6 and 8 fit into, like 24.
 
 **Correct Answer(s):** B. 1 13/24
 
@@ -421,12 +420,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. Add the denominators to get 9, then rewrite both fractions with denominator 9. [WRONG]
-  - Misconception: Misconception: You used 3+6 as the common denominator. A common denominator must be a common multiple of both denominators, not their sum.
+  - Misconception: Nice try. The bottoms 3 and 6 were added. Pick a number both 3 and 6 divide into.
 - B. Rewrite 2/3 as an equivalent fraction with denominator 6 (so both fractions have like denominators). [CORRECT]
 - C. Add numerators and denominators: (2+5)/(3+6). [WRONG]
-  - Misconception: Misconception: You’re combining denominators like they are numbers you can add, but denominators represent piece size. You must make the piece sizes the same first.
+  - Misconception: Nice try. You joined the tops and bottoms right away. First make the bottoms match so the pieces are the same size.
 - D. Change 2/3 into 2/6 by changing only the denominator to match 6. [WRONG]
-  - Misconception: Misconception: You changed the denominator without changing the numerator the same way. When you rename a fraction, you must multiply numerator and denominator by the same number to keep its value.
+  - Misconception: Nice try. You only fixed the bottom. To keep the value, multiply the top and bottom by the same number.
 
 **Correct Answer(s):** B. Rewrite 2/3 as an equivalent fraction with denominator 6 (so both fractions have like denominators).
 
@@ -444,12 +443,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 3/7 mile [WRONG]
-  - Misconception: Misconception: You added numerators and denominators directly.
+  - Misconception: Nice try. You added top to top and bottom to bottom. First make the denominators match, then add the fractions.
 - B. 11/12 mile [CORRECT]
 - C. 5/7 mile [WRONG]
-  - Misconception: Misconception: You used an incorrect common denominator.
+  - Misconception: Nice try. Make a common bottom number first. 12 works for both 4 and 3.
 - D. 1 5/6 miles [WRONG]
-  - Misconception: Misconception: You added with denominator confusion and overestimated.
+  - Misconception: Nice try. Your answer is bigger than the two parts added. Each fraction is small, so the total should be under 1 1/2.
 
 **Correct Answer(s):** B. 11/12 mile
 
@@ -463,12 +462,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 6/5 meter [WRONG]
-  - Misconception: Misconception: You subtracted denominators and got an invalid setup.
+  - Misconception: Nice try. You subtracted the bottom numbers, so the fraction may be off. Make the denominators match first, then subtract.
 - B. 11/24 meter [WRONG]
-  - Misconception: Misconception: You may have subtracted in the wrong order.
+  - Misconception: Nice try. You are almost there. Check your top-number subtraction again after you use the common denominator 24.
 - C. 13/24 meter [CORRECT]
 - D. 2/5 meter [WRONG]
-  - Misconception: Misconception: You changed denominators without equivalent fractions.
+  - Misconception: Nice try. You changed the bottom numbers without keeping each fraction equal. Multiply top and bottom by the same number to keep the value.
 
 **Correct Answer(s):** C. 13/24 meter
 
@@ -482,12 +481,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 0 [WRONG]
-  - Misconception: Misconception: You ignored that both fractions are close to 1.
+  - Misconception: Nice try. Each fraction is almost 1. Add them and you get way past zero.
 - B. 1 [WRONG]
-  - Misconception: Misconception: You underestimated the sum of two large fractions.
+  - Misconception: Nice try. Two fractions near 1 add up close to 2.
 - C. 2 [CORRECT]
 - D. 3 [WRONG]
-  - Misconception: Misconception: You overestimated beyond possible range.
+  - Misconception: Nice try. This guess is a bit high. Both parts are less than 1, so the total must be less than 2.
 
 **Correct Answer(s):** C. 2
 
@@ -501,12 +500,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 4/9 [WRONG]
-  - Misconception: Misconception: You added numerators and denominators directly.
+  - Misconception: Nice try. It looks like tops and bottoms were added. First give the fractions the same bottom, then add.
 - B. 17/20 [CORRECT]
 - C. 7/10 [WRONG]
-  - Misconception: Misconception: You used an incorrect common denominator.
+  - Misconception: Nice try. Use 20 for the common bottom. Both 5 and 4 fit into it.
 - D. 1 2/5 [WRONG]
-  - Misconception: Misconception: You overcounted beyond one whole tank.
+  - Misconception: Nice try. 3/5 and 1/4 are each less than 1. Their sum stays under 1.
 
 **Correct Answer(s):** B. 17/20
 
@@ -520,12 +519,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 77/80 [WRONG]
-  - Misconception: Misconception: You multiplied instead of subtracting.
+  - Misconception: Nice try. This answer is bigger than 7/8. When you subtract, the leftover part must be smaller than what you started with.
 - B. 3/4 [CORRECT]
 - C. 1/80 [WRONG]
-  - Misconception: Misconception: You subtracted numerators and denominators directly.
+  - Misconception: Nice try. It looks like tops and bottoms were subtracted straight. Make the bottoms the same first, then subtract.
 - D. 9/8 [WRONG]
-  - Misconception: Misconception: You added instead of subtracting.
+  - Misconception: Nice try. This looks like addition, not subtraction. Taking 1/10 away from 7/8 leaves a smaller amount.
 
 **Correct Answer(s):** B. 3/4
 
@@ -549,12 +548,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 8 3/5 [WRONG]
-  - Misconception: Misconception: You added instead of multiplying. In fraction multiplication, you scale the fraction by the whole number (8 groups of 3/5).
+  - Misconception: Nice try. You added 8 and 3/5. We need 8 groups of 3/5, so multiply 8 times 3/5.
 - B. 24/5 [CORRECT]
 - C. 24 [WRONG]
-  - Misconception: Misconception: You multiplied the numerator but forgot the denominator still matters. The 5 stays as the denominator because you are taking fifths.
+  - Misconception: Nice try. You multiplied the top number, but keep the bottom number too so we are still counting fifths.
 - D. 3/40 [WRONG]
-  - Misconception: Misconception: You changed only the denominator as if you were splitting 3/5 into 8 parts. Multiplying by 8 means making 8 copies, so the numerator must change too.
+  - Misconception: Nice try. This looks like 3/5 was split into 8. Times 8 makes it bigger, so times the top.
 
 **Correct Answer(s):** B. 24/5
 
@@ -568,12 +567,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 7 1/4 [WRONG]
-  - Misconception: Misconception: You added 6 + 5/4 instead of multiplying. The problem is asking for 6 groups of 5/4, not a sum.
+  - Misconception: Nice try. You added 6 and 5/4. We need 6 groups of 5/4, so multiply 6×5/4.
 - B. 7 1/2 [CORRECT]
 - C. 15/2 [WRONG]
-  - Misconception: Misconception: You multiplied correctly but didn’t follow the instruction to write a mixed number. Convert 15/2 to a mixed number.
+  - Misconception: Nice try. You have the right improper fraction. Change it to a mixed number for the final answer.
 - D. 5/24 [WRONG]
-  - Misconception: Misconception: You treated the multiplication like dividing or like making the fraction smaller. Multiplying by 6 should make the amount larger here.
+  - Misconception: Nice try. You put 6 in the bottom. Multiplying by a whole number usually makes the answer bigger.
 
 **Correct Answer(s):** B. 7 1/2
 
@@ -587,12 +586,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 18/36 [WRONG]
-  - Misconception: Misconception: You multiplied correctly but stopped before simplifying. 18/36 can be reduced by dividing numerator and denominator by 18.
+  - Misconception: Nice try. Good start. Divide top and bottom of 18/36 by the same number to make it simplest.
 - B. 1/2 [CORRECT]
 - C. 1/4 [WRONG]
-  - Misconception: Misconception: You used a wrong rule like adding numerators while multiplying denominators. In multiplication, you must multiply both numerators and both denominators.
+  - Misconception: Nice try. You mixed up the rule. When multiplying fractions, go straight across: top×top and bottom×bottom.
 - D. 2 [WRONG]
-  - Misconception: Misconception: You multiplied the numerators but forgot to multiply the denominators. In fraction multiplication, both parts change: (6×3)/(9×4).
+  - Misconception: Nice try. You only multiplied the tops. Multiply top×top and bottom×bottom to get the new fraction.
 
 **Correct Answer(s):** B. 1/2
 
@@ -607,11 +606,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 1/2 cup [CORRECT]
 - B. 1 5/12 cup [WRONG]
-  - Misconception: Misconception: You treated “of” like addition and added the fractions. “3/4 of 2/3” means multiply, not add.
+  - Misconception: Nice try. You added the amounts. The word "of" tells us to multiply, so multiply the two numbers.
 - C. 2/9 cup [WRONG]
-  - Misconception: Misconception: You multiplied only the denominators and kept the numerator the same. In multiplication, you must multiply the numerators too.
+  - Misconception: Nice try. You only multiplied the bottoms. Multiply the tops together too to finish the problem.
 - D. 8/9 cup [WRONG]
-  - Misconception: Misconception: You treated “of” like division and flipped a fraction. The problem is asking for a part of 2/3, so you should multiply.
+  - Misconception: Nice try. It looks like you flipped a fraction, like in divide. We want part of 2/3, so multiply.
 
 **Correct Answer(s):** A. 1/2 cup
 
@@ -625,12 +624,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 3/2 [WRONG]
-  - Misconception: Misconception: You added the fractions instead of multiplying. Multiplication means multiply across, not find a common denominator and add.
+  - Misconception: Nice try. You added. For times, multiply across without matching bottoms.
 - B. 5/9 [CORRECT]
 - C. 7/18 [WRONG]
-  - Misconception: Misconception: You used a wrong rule like adding numerators but multiplying denominators. For multiplication, you multiply the numerators and multiply the denominators.
+  - Misconception: Nice try. You added tops and kept bottoms. Multiply tops and bottoms straight across for the right answer.
 - D. 10/18 [WRONG]
-  - Misconception: Misconception: You multiplied correctly but didn’t simplify to simplest form. 10/18 can be reduced by dividing numerator and denominator by 2.
+  - Misconception: Nice try. You have the right product. Now divide top and bottom by their largest common factor to simplify.
 
 **Correct Answer(s):** B. 5/9
 
@@ -648,12 +647,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 2 [WRONG]
-  - Misconception: Misconception: You divided in the wrong direction.
+  - Misconception: Nice try. You divided the big number by the small one. Flip it: divide the small fraction into 4 parts.
 - B. 1/8 [CORRECT]
 - C. 2/4 [WRONG]
-  - Misconception: Misconception: You did not simplify and used an incorrect operation.
+  - Misconception: Nice try. Dividing by 4 makes the pieces smaller. Half split into 4 equal parts is 1/8.
 - D. 4/2 [WRONG]
-  - Misconception: Misconception: You inverted the expression incorrectly.
+  - Misconception: Nice try. Keep the numbers in their first order.
 
 **Correct Answer(s):** B. 1/8
 
@@ -667,12 +666,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 3/4 [WRONG]
-  - Misconception: Misconception: You multiplied by 1/4 instead of dividing by it.
+  - Misconception: Nice try. This asks how many fourths are in 3, not 3 × 1/4. There are 12 fourths in 3.
 - B. 12 [CORRECT]
 - C. 7 [WRONG]
-  - Misconception: Misconception: You added the denominator instead of counting fourths.
+  - Misconception: Nice try. It looks like you added the whole number and the bottom part. Try multiplying to count all the fourths.
 - D. 1/12 [WRONG]
-  - Misconception: Misconception: You inverted the full result.
+  - Misconception: Nice try. The answer looks flipped. We want how many small pieces fit in 3 wholes, so the answer should be bigger.
 
 **Correct Answer(s):** B. 12
 
@@ -686,12 +685,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 2/3 [WRONG]
-  - Misconception: Misconception: You multiplied by 2 instead of dividing by 2.
+  - Misconception: Nice try. It looks like you multiplied by 2. Dividing by 2 makes the piece smaller, so (1/3) ÷ 2 is 1/6.
 - B. 1/5 [WRONG]
-  - Misconception: Misconception: You added denominators instead of splitting the fraction.
+  - Misconception: Nice try. You added the number to the bottom. Think of sharing 1/3 equally between two people.
 - C. 1/6 [CORRECT]
 - D. 2/6 [WRONG]
-  - Misconception: Misconception: You did not simplify after using the wrong operation.
+  - Misconception: Nice try. The answer is very close. Just write the fraction the short way (1/6) for the final answer.
 
 **Correct Answer(s):** C. 1/6
 
@@ -705,12 +704,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 2/5 serving [WRONG]
-  - Misconception: Misconception: You multiplied by 1/5 instead of dividing by 1/5.
+  - Misconception: Nice try. To see how many servings fit, divide the 2 cups by the size of one serving.
 - B. 7 servings [WRONG]
-  - Misconception: Misconception: You counted with incorrect partitioning.
+  - Misconception: Nice try. Each cup holds 5 fifths, so multiply 2 by 5 to count the total servings.
 - C. 10 servings [CORRECT]
 - D. 1/10 serving [WRONG]
-  - Misconception: Misconception: You inverted the unit-fraction division result.
+  - Misconception: Nice try. Less than one serving cannot be right. 2 cups is much bigger than 1/5 cup, so we have many.
 
 **Correct Answer(s):** C. 10 servings
 
@@ -725,11 +724,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 1/18 m [CORRECT]
 - B. 1/2 m [WRONG]
-  - Misconception: Misconception: You treated division by 3 as division of denominator only in the wrong way.
+  - Misconception: Nice try. When you cut a small strip into 3 equal pieces, each new piece is even smaller.
 - C. 3/6 m [WRONG]
-  - Misconception: Misconception: You multiplied by 3 instead of dividing.
+  - Misconception: Nice try. You multiplied, but cutting the strip means each piece should get shorter, not longer.
 - D. 1/9 m [WRONG]
-  - Misconception: Misconception: You divided denominator incorrectly.
+  - Misconception: Nice try. Check the bottom number. Think of 3 split into groups of 1/6 to see how many groups we get.
 
 **Correct Answer(s):** A. 1/18 m
 
@@ -753,12 +752,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 3/8 cup [WRONG]
-  - Misconception: Misconception: You divided by 2 instead of multiplying by 2.
+  - Misconception: Nice try. Two batches need twice as much, so we multiply by 2.
 - B. 1 1/2 cups [CORRECT]
 - C. 2 3/4 cups [WRONG]
-  - Misconception: Misconception: You added 2 and 3/4 instead of multiplying.
+  - Misconception: Nice try. Do not add. Multiply 3/4 by 2 to get both batches.
 - D. 6/4 cups [WRONG]
-  - Misconception: Misconception: You did not simplify the fraction result.
+  - Misconception: Nice try. You have the right amount. Just write 6/4 as 1 1/2.
 
 **Correct Answer(s):** B. 1 1/2 cups
 
@@ -772,12 +771,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 6/15 [WRONG]
-  - Misconception: Misconception: You did not simplify the product.
+  - Misconception: Nice try. 6/15 is not simplest yet. Divide the top and bottom by the same factor to simplify.
 - B. 2/5 [CORRECT]
 - C. 5/2 [WRONG]
-  - Misconception: Misconception: You inverted a factor incorrectly.
+  - Misconception: Nice try. Do not flip. Just multiply top by top and bottom by bottom.
 - D. 1 [WRONG]
-  - Misconception: Misconception: You canceled incorrectly and over-simplified.
+  - Misconception: Nice try. Multiply all first, then simplify the answer.
 
 **Correct Answer(s):** B. 2/5
 
@@ -792,11 +791,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 2 1/3 m [CORRECT]
 - B. 1 3/4 m [WRONG]
-  - Misconception: Misconception: You took 1/2 of the rope, not 2/3.
+  - Misconception: Nice try. We need two-thirds, not one-half.
 - C. 3 2/3 m [WRONG]
-  - Misconception: Misconception: You added instead of multiplying by a fraction.
+  - Misconception: Nice try. You added the numbers. Multiply the rope length by 2/3 to find the part used.
 - D. 7/6 m [WRONG]
-  - Misconception: Misconception: You multiplied without converting mixed number correctly.
+  - Misconception: Nice try. Change the mixed number to an improper fraction, then multiply.
 
 **Correct Answer(s):** A. 2 1/3 m
 
@@ -810,12 +809,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 4 1/4 miles [WRONG]
-  - Misconception: Misconception: You added 1 each day but not the fractional part correctly.
+  - Misconception: Nice try. You added 1 each day. Do not forget to add the fraction part too.
 - B. 5 miles [CORRECT]
 - C. 16/4 miles [WRONG]
-  - Misconception: Misconception: You multiplied only whole-number parts and ignored the quarter.
+  - Misconception: Nice try. Count both the whole and the quarter each day.
 - D. 6 miles [WRONG]
-  - Misconception: Misconception: You overestimated the repeated addition.
+  - Misconception: Nice try. Count each add one and one quarter step carefully.
 
 **Correct Answer(s):** B. 5 miles
 
@@ -830,11 +829,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 1 4/5 L [CORRECT]
 - B. 3 3/20 L [WRONG]
-  - Misconception: Misconception: You added instead of multiplying.
+  - Misconception: Nice try. You need to multiply, not add.
 - C. 1 1/4 L [WRONG]
-  - Misconception: Misconception: You multiplied with incorrect common denominator handling.
+  - Misconception: Nice try. First make the denominators match, then multiply.
 - D. 2 2/5 L [WRONG]
-  - Misconception: Misconception: You ignored the 3/4 factor and kept the original amount.
+  - Misconception: Nice try. You kept the old amount, but we need to multiply by 3/4 to find the new amount.
 
 **Correct Answer(s):** A. 1 4/5 L
 
@@ -852,12 +851,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. greater than 12 [WRONG]
-  - Misconception: Misconception: You treated multiplying by a fraction less than 1 as enlargement.
+  - Misconception: Nice try. Multiplying by a fraction less than 1 makes the number smaller, not bigger.
 - B. equal to 12 [WRONG]
-  - Misconception: Misconception: You ignored scaling by 3/4.
+  - Misconception: Nice try. You missed the times 3/4 step. Do not skip it.
 - C. less than 12 [CORRECT]
 - D. cannot be determined [WRONG]
-  - Misconception: Misconception: You missed the scaling rule for factors below 1.
+  - Misconception: Nice try. A factor below 1 shrinks the number. Do not forget this rule.
 
 **Correct Answer(s):** C. less than 12
 
@@ -871,12 +870,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. less than 8 [WRONG]
-  - Misconception: Misconception: You treated a factor greater than 1 as shrinking.
+  - Misconception: Nice try. A factor bigger than 1 grows the number. It does not shrink.
 - B. equal to 8 [WRONG]
-  - Misconception: Misconception: You ignored scaling by 5/4.
+  - Misconception: Nice try. You still need to scale by 5/4. That step was missed.
 - C. greater than 8 [CORRECT]
 - D. zero [WRONG]
-  - Misconception: Misconception: You confused multiplication by a fraction with multiplication by 0.
+  - Misconception: Nice try. Multiplying by a fraction is not the same as multiplying by 0.
 
 **Correct Answer(s):** C. greater than 8
 
@@ -890,12 +889,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 7/6 [WRONG]
-  - Misconception: Misconception: You a factor greater than 1 enlarges, not shrinks.
+  - Misconception: Nice try. A factor bigger than 1 makes the number larger, not smaller.
 - B. 1 [WRONG]
-  - Misconception: Misconception: You multiplying by 1 keeps value the same.
+  - Misconception: Nice try. Multiplying by 1 keeps the same value. No change happens.
 - C. 9/10 [CORRECT]
 - D. 12/11 [WRONG]
-  - Misconception: Misconception: You this factor is greater than 1, so it increases 15.
+  - Misconception: Nice try. The factor is bigger than 1, so 15 gets larger.
 
 **Correct Answer(s):** C. 9/10
 
@@ -909,12 +908,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 6 x 2/3 is larger [WRONG]
-  - Misconception: Misconception: You reversed scaling effects of factors below and above 1.
+  - Misconception: Nice try. A factor less than 1 makes the result smaller, and a factor greater than 1 makes it larger. Since 2/3 < 1 and 4/3 > 1, 6 x 4/3 is larger.
 - B. They are equal [WRONG]
-  - Misconception: Misconception: You ignored different multipliers.
+  - Misconception: Nice try. Watch how the multipliers size your answer.
 - C. 6 x 4/3 is larger [CORRECT]
 - D. Cannot compare without exact multiplication [WRONG]
-  - Misconception: Misconception: You scaling comparison is enough to decide.
+  - Misconception: Nice try. Compare how big the multipliers are, then find the answer.
 
 **Correct Answer(s):** C. 6 x 4/3 is larger
 
@@ -928,12 +927,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 4/4 is greater than 1 so it increases 9 [WRONG]
-  - Misconception: Misconception: You 4/4 equals 1, not greater than 1.
+  - Misconception: Nice try. 4/4 equals 1, so it is not bigger than 1.
 - B. 4/4 equals 1, so multiplying by it keeps the number unchanged [CORRECT]
 - C. Any fraction multiplied by 9 gives 9 [WRONG]
-  - Misconception: Misconception: You only multiplying by 1 leaves a number unchanged.
+  - Misconception: Nice try. Multiplying by 1 keeps the number the same.
 - D. Because 9 is odd, fraction multiplication does not change it [WRONG]
-  - Misconception: Misconception: You parity is unrelated to this scaling rule.
+  - Misconception: Nice try. Odd or even does not matter here. Only the size of the fraction matters.
 
 **Correct Answer(s):** B. 4/4 equals 1, so multiplying by it keeps the number unchanged
 
@@ -957,12 +956,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 9.08 [WRONG]
-  - Misconception: Misconception: You added only the whole numbers and kept the .08. You also need to add the tenths and hundredths from 2.90.
+  - Misconception: Nice try. You added the whole parts and kept .08. Also add the tenths and hundredths from 2.90.
 - B. 9.98 [CORRECT]
 - C. 7.37 [WRONG]
-  - Misconception: Misconception: You lined up digits instead of lining up the decimal points, so 2.90 acted like 0.29. Always align the decimal points first.
+  - Misconception: Nice try. Line up the decimal points first, not just the digits.
 - D. 9.17 [WRONG]
-  - Misconception: Misconception: You placed the 9 from 2.9 into the hundredths place (like 2.09). But 2.9 means 2.90, so the 9 is in the tenths place.
+  - Misconception: Nice try. 2.9 is the same as 2.90, so the 9 is in the tenths place, not the hundredths. Line up the decimal points and try again.
 
 **Correct Answer(s):** B. 9.98
 
@@ -976,12 +975,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 3.67 [WRONG]
-  - Misconception: Misconception: You subtracted the whole numbers and then kept 0.67 instead of borrowing. Because 0.00 is smaller than 0.67, you must borrow across the decimal.
+  - Misconception: Nice try. You kept 0.67 but 0 is smaller. Borrow across the decimal so you can subtract.
 - B. 2.33 [CORRECT]
 - C. 2.43 [WRONG]
-  - Misconception: Misconception: You borrowed from 5.00 but didn’t adjust the tenths correctly after borrowing to the hundredths. After borrowing 1 tenth to make 10 hundredths, the tenths should be 9, not 10.
+  - Misconception: Nice try. After you borrow 1 tenth, that tenth becomes 10 hundredths, and the tenths digit drops to 9, not 10.
 - D. 2.93 [WRONG]
-  - Misconception: Misconception: You treated 2.67 like it was 2.067 by misaligning the digits. In subtraction, the decimal points must line up so tenths subtract from tenths and hundredths from hundredths.
+  - Misconception: Nice try. Keep the decimal points stacked. Tenths must subtract tenths, and hundredths must subtract hundredths.
 
 **Correct Answer(s):** B. 2.33
 
@@ -995,12 +994,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 2850 [WRONG]
-  - Misconception: Misconception: You ignored the decimal point and multiplied 475 × 6. The digits are right, but the decimal value must stay correct: 4.75 is less than 5, so the product can’t be in the thousands.
+  - Misconception: Nice try. You used 475 instead of 4.75. 4.75 is less than 5, so your answer should be much smaller.
 - B. 28.50 [CORRECT]
 - C. 10.75 [WRONG]
-  - Misconception: Misconception: You added instead of multiplying. Multiplication means 6 groups of 4.75, not 4.75 + 6.
+  - Misconception: Nice try. This problem wants 6 groups of 4.75, so multiply, don’t add. 4.75 × 6 gives the total.
 - D. 24.75 [WRONG]
-  - Misconception: Misconception: You multiplied only the whole-number part (4×6) and left the .75 unchanged. The decimal part is also multiplied by 6.
+  - Misconception: Nice try. You only multiplied the 4 part. Multiply the .75 part by 6 too.
 
 **Correct Answer(s):** B. 28.50
 
@@ -1014,12 +1013,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 10 [WRONG]
-  - Misconception: Misconception: You placed the decimal too far to the right by not counting all the decimal places. The product of two decimals less than 1 should be less than 1.
+  - Misconception: Nice try. Count every decimal place in both numbers, then put that many in the product. Two decimals under 1 stay under 1.
 - B. 1 [WRONG]
-  - Misconception: Misconception: You counted too few decimal places in the product. Since both factors are less than 1, the product should be smaller than each factor, not equal to 1.
+  - Misconception: Nice try. You missed some decimal places. Both numbers are less than 1, so the answer must be smaller than 1.
 - C. 0.10 [CORRECT]
 - D. 0.01 [WRONG]
-  - Misconception: Misconception: You placed the decimal too far to the left (too many decimal places). Count the total decimal places in both factors to place the decimal correctly.
+  - Misconception: Nice try. You moved the decimal too far left. Add the decimal places from both numbers and place it right.
 
 **Correct Answer(s):** C. 0.10
 
@@ -1033,12 +1032,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 0.07 [WRONG]
-  - Misconception: Misconception: You moved the decimal in the divisor (0.09 → 9) but didn’t move the decimal in the dividend the same way. If you multiply the divisor by 100, you must multiply the dividend by 100 too.
+  - Misconception: Nice try. You moved the decimal in 0.09 but not in 0.63. Move both two places right to stay fair.
 - B. 7 [CORRECT]
 - C. 0.7 [WRONG]
-  - Misconception: Misconception: You treated 0.09 like 9 and also shifted the dividend only a little. When you make 0.09 into 9, you have to shift the dividend the same number of places.
+  - Misconception: Nice try. Move the decimal in 0.63 two places right, just like you did for 0.09.
 - D. 700 [WRONG]
-  - Misconception: Misconception: You moved the decimal in the dividend (0.63 → 63) but didn’t move the divisor to match. In decimal division, you must scale both numbers by the same power of 10.
+  - Misconception: Nice try. Move both decimals the same amount so the problem stays balanced, then divide the new whole numbers.
 
 **Correct Answer(s):** B. 7
 
@@ -1062,12 +1061,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 0.063 [WRONG]
-  - Misconception: Misconception: You shifted digits in the wrong direction.
+  - Misconception: Nice try. Multiplying by 10 moves each digit one place value bigger, not smaller.
 - B. 6.3 [CORRECT]
 - C. 63 [WRONG]
-  - Misconception: Misconception: You shifted by too many places.
+  - Misconception: Nice try. The digits moved one extra spot. Multiplying by 10 moves one place value, not two.
 - D. 0.73 [WRONG]
-  - Misconception: Misconception: You changed digits instead of shifting place value.
+  - Misconception: Nice try. The digits stayed same shape. Keep the digits and move their spot to the left.
 
 **Correct Answer(s):** B. 6.3
 
@@ -1081,12 +1080,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 48 [WRONG]
-  - Misconception: Misconception: You shifted by one place instead of two.
+  - Misconception: Nice try. The digits slid one step alone. To multiply by 100, slide every digit two steps left at once.
 - B. 480 [CORRECT]
 - C. 0.048 [WRONG]
-  - Misconception: Misconception: You shifted in the wrong direction.
+  - Misconception: Nice try. Multiplying by 100 makes the number bigger. The digits moved the wrong way.
 - D. 40.8 [WRONG]
-  - Misconception: Misconception: You moved only one digit and kept decimal placement incorrect.
+  - Misconception: Nice try. You moved digits apart. Keep the whole number together and slide every digit two steps left.
 
 **Correct Answer(s):** B. 480
 
@@ -1100,12 +1099,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 532 [WRONG]
-  - Misconception: Misconception: You shifted digits left instead of right when dividing by 10.
+  - Misconception: Nice try. The digits slid left, so the number got bigger. To divide, slide every digit one step right.
 - B. 0.532 [WRONG]
-  - Misconception: Misconception: You shifted one place too far.
+  - Misconception: Nice try. The digits slid two spots to the right. They should slide only one.
 - C. 5.32 [CORRECT]
 - D. 53.02 [WRONG]
-  - Misconception: Misconception: You inserted digits instead of shifting place value.
+  - Misconception: Nice try. A zero jumped inside. To divide by 10, just slide each digit one spot right, no extra zero.
 
 **Correct Answer(s):** C. 5.32
 
@@ -1119,11 +1118,11 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 0.705 [WRONG]
-  - Misconception: Misconception: You shifted one place instead of two.
+  - Misconception: Nice try. Dividing by 100 moves every digit two places to the right. It looks like you moved them only one place.
 - B. 70.5 [WRONG]
-  - Misconception: Misconception: You shifted in the wrong direction.
+  - Misconception: Nice try. The digits seem to have slid left, so the number got bigger. Division by 100 should make it smaller.
 - C. 7.5 [WRONG]
-  - Misconception: Misconception: You dropped zeros and mis-shifted decimal position.
+  - Misconception: Nice try. Keep every digit, even the zero, in its new place. Each place matters for the right answer.
 - D. 0.0705 [CORRECT]
 
 **Correct Answer(s):** D. 0.0705
@@ -1138,11 +1137,11 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 0.89 [WRONG]
-  - Misconception: Misconception: You shifted by one place instead of three.
+  - Misconception: Nice try. Multiplying by 1000 slides every digit three places left. It looks like you slid them only one place.
 - B. 8.9 [WRONG]
-  - Misconception: Misconception: You shifted by two places instead of three.
+  - Misconception: Nice try. The digits moved two places, but 1000 needs three. Slide them one more spot to the left.
 - C. 890 [WRONG]
-  - Misconception: Misconception: You shifted by four places.
+  - Misconception: Nice try. The digits hopped four spots. They need to hop three spots.
 - D. 89 [CORRECT]
 
 **Correct Answer(s):** D. 89
@@ -1161,12 +1160,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 4.270 [WRONG]
-  - Misconception: Misconception: You read twenty-seven thousandths as two hundred seventy thousandths.
+  - Misconception: Nice try. The digits for twenty-seven need to start one place to the right. Then we get the right words.
 - B. 4.027 [CORRECT]
 - C. 4.27 [WRONG]
-  - Misconception: Misconception: You stopped at hundredths instead of thousandths.
+  - Misconception: Nice try. That reads four and twenty-seven hundredths. Put a zero in tenths so 27 lands in thousandths.
 - D. 4.0027 [WRONG]
-  - Misconception: Misconception: You placed digits in ten-thousandths instead of thousandths.
+  - Misconception: Nice try. Those digits slid one place too far right. Slide them back one spot.
 
 **Correct Answer(s):** B. 4.027
 
@@ -1180,12 +1179,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. five hundred six tenths [WRONG]
-  - Misconception: Misconception: You used the wrong place-value unit.
+  - Misconception: Nice try. Count the spots after the decimal point. That count tells you the place value name.
 - B. five hundred six hundredths [WRONG]
-  - Misconception: Misconception: You read three decimal places as hundredths.
+  - Misconception: Nice try. Three spots after the decimal means thousandths. Two spots mean hundredths.
 - C. five hundred six thousandths [CORRECT]
 - D. fifty-six thousandths [WRONG]
-  - Misconception: Misconception: You dropped the zero in the tenths place and changed the value.
+  - Misconception: Nice try. Do not skip the middle zero. It keeps every digit in its own place.
 
 **Correct Answer(s):** C. five hundred six thousandths
 
@@ -1199,12 +1198,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 0.47 > 0.507 [WRONG]
-  - Misconception: Misconception: You compared digit length instead of place value.
+  - Misconception: Nice try. Start at the tenths place. 0.5 beats 0.4.
 - B. 0.507 > 0.57 [WRONG]
-  - Misconception: Misconception: You ignored that 0.57 is 0.570.
+  - Misconception: Nice try. Add a zero to 0.57 so it becomes 0.570. Then 570 is clearly bigger than 507.
 - C. 0.507 > 0.497 [CORRECT]
 - D. 0.507 = 0.57 [WRONG]
-  - Misconception: Misconception: You treated missing digits as no change in place value.
+  - Misconception: Nice try. The digits look alike, but their spots change the value.
 
 **Correct Answer(s):** C. 0.507 > 0.497
 
@@ -1219,11 +1218,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 0.46, 0.604, 0.64, 0.640 [CORRECT]
 - B. 0.604, 0.46, 0.64, 0.640 [WRONG]
-  - Misconception: Misconception: You compared tenths only and misplaced 0.46.
+  - Misconception: Nice try. Check the tenths place first. 4 is smaller than 6, so 0.46 comes first.
 - C. 0.46, 0.64, 0.640, 0.604 [WRONG]
-  - Misconception: Misconception: You treated 0.604 as larger than 0.640.
+  - Misconception: Nice try. Compare 0.604 and 0.64. Six hundred forty thousandths beats six hundred four.
 - D. 0.604, 0.64, 0.640, 0.46 [WRONG]
-  - Misconception: Misconception: You treated 0.46 as if it were 0.046.
+  - Misconception: Nice try. 0.46 has 4 tenths, so it is fairly close to the other numbers.
 
 **Correct Answer(s):** A. 0.46, 0.604, 0.64, 0.640
 
@@ -1237,12 +1236,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 3 ones [WRONG]
-  - Misconception: Misconception: You placed the digit in the ones place.
+  - Misconception: Nice try. Left of the point is ones. Right of the point is less than one.
 - B. 3 tenths [CORRECT]
 - C. 3 hundredths [WRONG]
-  - Misconception: Misconception: You shifted one place too far right.
+  - Misconception: Nice try. The first spot after the point is tenths. The second spot is hundredths.
 - D. 3 thousandths [WRONG]
-  - Misconception: Misconception: You shifted two places too far right.
+  - Misconception: Nice try. Count the spots after the decimal again. Stay close to the point.
 
 **Correct Answer(s):** B. 3 tenths
 
@@ -1260,12 +1259,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 470 [WRONG]
-  - Misconception: Misconception: You multiplied by 10 once instead of 1000.
+  - Misconception: Nice try. The little 3 tells us to multiply by 10 three times. It looks like you did it only once.
 - B. 4700 [WRONG]
-  - Misconception: Misconception: You multiplied by 100 instead of 1000.
+  - Misconception: Nice try. Move the digits three place-value spots left when you multiply by ten three times.
 - C. 47000 [CORRECT]
 - D. 470000 [WRONG]
-  - Misconception: Misconception: You multiplied by 10000 instead of 1000.
+  - Misconception: Nice try. It looks like the digits moved four places instead of three. 47 × 10^3 is 47000.
 
 **Correct Answer(s):** C. 47000
 
@@ -1279,12 +1278,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 62.5 [WRONG]
-  - Misconception: Misconception: You shifted one place instead of two.
+  - Misconception: Nice try. Multiplying by 100 slides digits two places left. It looks like you slid them only one place.
 - B. 625 [CORRECT]
 - C. 0.0625 [WRONG]
-  - Misconception: Misconception: You divided instead of multiplying by 100.
+  - Misconception: Nice try. The digits slid right, so the number shrank. Multiplying by 100 makes digits slide left and grow.
 - D. 6.2500 [WRONG]
-  - Misconception: Misconception: You added zeros without changing value.
+  - Misconception: Nice try. Putting zeros on the end of a decimal does not change its value. Slide the real digits left two places.
 
 **Correct Answer(s):** B. 625
 
@@ -1298,12 +1297,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 0.048 [WRONG]
-  - Misconception: Misconception: You divided by 10 once, not by 100.
+  - Misconception: Nice try. The exponent 2 means divide by 10 twice. You divided only once.
 - B. 0.0048 [CORRECT]
 - C. 48 [WRONG]
-  - Misconception: Misconception: You multiplied by 100 instead of dividing.
+  - Misconception: Nice try. Division makes the number smaller. Slide the digits to the right, not left.
 - D. 0.48 [WRONG]
-  - Misconception: Misconception: You ignored the power-of-10 divisor.
+  - Misconception: Nice try. You still need to divide. Powers of ten always change the size.
 
 **Correct Answer(s):** B. 0.0048
 
@@ -1317,12 +1316,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 9 x 10^4 [WRONG]
-  - Misconception: Misconception: You 10^4 gives 90000, one zero short.
+  - Misconception: Nice try. We need a six-digit number. Add one more power of ten to reach it.
 - B. 9 x 10^5 [CORRECT]
 - C. 9 x 10^6 [WRONG]
-  - Misconception: Misconception: You 10^6 gives one extra zero.
+  - Misconception: Nice try. Nine million is too big. We need a smaller number of zeros.
 - D. 90 x 10^5 [WRONG]
-  - Misconception: Misconception: You this is ten times too large.
+  - Misconception: Nice try. This answer is ten times too big. We only need six zeros after 90, not seven.
 
 **Correct Answer(s):** B. 9 x 10^5
 
@@ -1336,12 +1335,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 1 [WRONG]
-  - Misconception: Misconception: You 10^1 gives 37, not 3700.
+  - Misconception: Nice try. Ten times 37 is 37, not 3700. Slide the digits two more places.
 - B. 2 [WRONG]
-  - Misconception: Misconception: You 10^2 gives 370, still one place short.
+  - Misconception: Nice try. 10^2 makes 370. Move the decimal one more place to get 3700, so n = 3.
 - C. 3 [CORRECT]
 - D. 4 [WRONG]
-  - Misconception: Misconception: You 10^4 gives 37000, one place too far.
+  - Misconception: Nice try. This would make 37,000, which is one place too far. We need 3700, so n = 3.
 
 **Correct Answer(s):** C. 3
 
@@ -1365,12 +1364,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 6.2 [WRONG]
-  - Misconception: Misconception: You dropped digits without checking the hundredths place.
+  - Misconception: Nice try. Look at the next digit. 8 is big, so we round up to 6.3.
 - B. 6.3 [CORRECT]
 - C. 6.28 [WRONG]
-  - Misconception: Misconception: You rounded to the nearest hundredth instead of tenth.
+  - Misconception: Nice try. You kept two places after the point. We only want one, the tenths place.
 - D. 7.0 [WRONG]
-  - Misconception: Misconception: You rounded to the nearest whole number.
+  - Misconception: Nice try. You rounded to a whole number. Stay at the tenths place, one spot after the point.
 
 **Correct Answer(s):** B. 6.3
 
@@ -1384,12 +1383,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 9.74 [WRONG]
-  - Misconception: Misconception: You did not round up when the thousandths digit was 6.
+  - Misconception: Nice try. The 6 tells us to round the hundredths up one notch.
 - B. 9.75 [CORRECT]
 - C. 9.8 [WRONG]
-  - Misconception: Misconception: You rounded to tenths, not hundredths.
+  - Misconception: Nice try. You kept one place after the point. We need two, the hundredths place.
 - D. 10.00 [WRONG]
-  - Misconception: Misconception: You over-rounded to a whole number.
+  - Misconception: Nice try. You rounded to a whole number. Keep two places after the point.
 
 **Correct Answer(s):** B. 9.75
 
@@ -1404,11 +1403,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 12 [CORRECT]
 - B. 13 [WRONG]
-  - Misconception: Misconception: You rounded up even though the tenths digit is 4.
+  - Misconception: Nice try. The tenths digit is 4, so we round down. The answer stays 12.
 - C. 12.5 [WRONG]
-  - Misconception: Misconception: You rounded to tenths instead of whole numbers.
+  - Misconception: Nice try. You kept one place after the point. We want a whole number with no point.
 - D. 12.4 [WRONG]
-  - Misconception: Misconception: You changed the decimal place instead of rounding to a whole number.
+  - Misconception: Nice try. You kept the point. Stop at the ones place for a whole number.
 
 **Correct Answer(s):** A. 12
 
@@ -1422,12 +1421,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 3.6 [WRONG]
-  - Misconception: Misconception: You treated a 5 in the hundredths place as round down.
+  - Misconception: Nice try. A 5 in the hundredths place tells us to add one to the tenths place.
 - B. 3.7 [CORRECT]
 - C. 3.65 [WRONG]
-  - Misconception: Misconception: You rounded to hundredths instead of tenths.
+  - Misconception: Nice try. You kept two places after the point. We only want one, the tenths place.
 - D. 4.0 [WRONG]
-  - Misconception: Misconception: You rounded to whole numbers instead of tenths.
+  - Misconception: Nice try. You rounded to a whole number. Keep one place after the point.
 
 **Correct Answer(s):** B. 3.7
 
@@ -1442,11 +1441,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 1.98 L [CORRECT]
 - B. 1.99 L [WRONG]
-  - Misconception: Misconception: You rounded up even though the thousandths digit is 3.
+  - Misconception: Nice try. Because the next digit is 3 and 3 is less than 5, the 8 in the hundredths place stays put.
 - C. 2.00 L [WRONG]
-  - Misconception: Misconception: You rounded to the nearest whole number.
+  - Misconception: Nice try. This gives a whole number answer, but we need to keep two decimal places.
 - D. 1.9 L [WRONG]
-  - Misconception: Misconception: You rounded to tenths and changed too much precision.
+  - Misconception: Nice try. This shows one decimal place. The question asked for the hundredths place, so keep two decimals after the decimal point.
 
 **Correct Answer(s):** A. 1.98 L
 
@@ -1471,11 +1470,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 20 [CORRECT]
 - B. 36 [WRONG]
-  - Misconception: Misconception: You added first and then multiplied.
+  - Misconception: Nice try. Do the multiplication step first, then add the parts to finish the problem in order.
 - C. 24 [WRONG]
-  - Misconception: Misconception: You multiplied and stopped before adding 8.
+  - Misconception: Nice try. The multiplying is done. Now add that onto the 8 and you will be done.
 - D. 44 [WRONG]
-  - Misconception: Misconception: You combined operations in the wrong order.
+  - Misconception: Nice try. Check the order of steps to be sure you multiply before you add.
 
 **Correct Answer(s):** A. 20
 
@@ -1489,12 +1488,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 20 [WRONG]
-  - Misconception: Misconception: You ignored parentheses and multiplied before adding.
+  - Misconception: Nice try. When you see parentheses, do that part first. Then you add, not multiply.
 - B. 36 [CORRECT]
 - C. 24 [WRONG]
-  - Misconception: Misconception: You added inside parentheses but forgot to multiply by 3.
+  - Misconception: Nice try. You added inside the parentheses, great. Next, multiply that answer by 3.
 - D. 15 [WRONG]
-  - Misconception: Misconception: You added and multiplied the wrong terms.
+  - Misconception: Nice try. The steps got mixed up a bit. Try the parentheses first, then multiply.
 
 **Correct Answer(s):** B. 36
 
@@ -1508,12 +1507,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 36 [WRONG]
-  - Misconception: Misconception: You multiplied 24 by 2 and 3 instead of dividing by the grouped value.
+  - Misconception: Nice try. First multiply 2 and 3. Then use that answer to divide 24 and you are done.
 - B. 12 [WRONG]
-  - Misconception: Misconception: You divided by 2 but forgot to divide by 3.
+  - Misconception: Nice try. You divided 24 by 2. Now take that new number and divide it by the other part.
 - C. 4 [CORRECT]
 - D. 1 [WRONG]
-  - Misconception: Misconception: You may have divided by 24 instead of dividing 24.
+  - Misconception: Nice try. The numbers were used in the wrong order. Multiply first, then divide.
 
 **Correct Answer(s):** C. 4
 
@@ -1527,11 +1526,11 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. (7 + 5) x 6 [WRONG]
-  - Misconception: Misconception: You added before taking the product of 5 and 6.
+  - Misconception: Nice try. Add came first, but we need 5 and 6 multiplied first. Do that pair.
 - B. 7 x (5 + 6) [WRONG]
-  - Misconception: Misconception: You turned the phrase into multiplication of a sum.
+  - Misconception: Nice try. You tried to multiply 7 by a total. First multiply 5 and 6, then add 7.
 - C. 5 x (6 + 7) [WRONG]
-  - Misconception: Misconception: You changed the structure to multiply 5 by a sum.
+  - Misconception: Nice try. Add came before multiply, but save the add for last.
 - D. 7 + (5 x 6) [CORRECT]
 
 **Correct Answer(s):** D. 7 + (5 x 6)
@@ -1546,12 +1545,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 19 [WRONG]
-  - Misconception: Misconception: You did addition before multiplication.
+  - Misconception: Nice try. Add happened too soon. Finish all divide and multiply before you add.
 - B. 14 [CORRECT]
 - C. 22 [WRONG]
-  - Misconception: Misconception: You combined operations in the wrong order.
+  - Misconception: Nice try. The steps were done out of order. Check the signs again.
 - D. 8 [WRONG]
-  - Misconception: Misconception: You may have stopped after the division part.
+  - Misconception: Nice try. You did the first division. Keep going with the next step.
 
 **Correct Answer(s):** B. 14
 
@@ -1570,11 +1569,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 19 [CORRECT]
 - B. 35 [WRONG]
-  - Misconception: Misconception: You concatenated or multiplied incorrectly instead of evaluating 3 x 5 + 4.
+  - Misconception: Nice try. It looks like you joined 3 and 5 to make 35. When a number sits next to a letter, you multiply.
 - C. 17 [WRONG]
-  - Misconception: Misconception: You subtracted 4 instead of adding 4.
+  - Misconception: Nice try. Look again at the plus sign. You will want to add, not subtract, the 4 this time.
 - D. 12 [WRONG]
-  - Misconception: Misconception: You computed 3n only and stopped.
+  - Misconception: Nice try. You multiplied 3 by 5 to get 15. Next add the 4 and you will be done.
 
 **Correct Answer(s):** A. 19
 
@@ -1588,12 +1587,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 54 [WRONG]
-  - Misconception: Misconception: You multiplied by m instead of dividing by m.
+  - Misconception: Nice try. This time we need to divide 18 into 3 equal parts, not multiply.
 - B. 6 [CORRECT]
 - C. 15 [WRONG]
-  - Misconception: Misconception: You subtracted m from 18 instead of dividing.
+  - Misconception: Nice try. You used subtract. The problem asks for division, so divide 18 by m.
 - D. 3 [WRONG]
-  - Misconception: Misconception: You confused dividend and divisor.
+  - Misconception: Nice try. Check how 18 divides by 3 to get the right number.
 
 **Correct Answer(s):** B. 6
 
@@ -1607,12 +1606,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 5 - 2p [WRONG]
-  - Misconception: Misconception: You reversed the subtraction order.
+  - Misconception: Nice try. This says "2p less than 5." Start with 2p, then subtract 5.
 - B. 2(p - 5) [WRONG]
-  - Misconception: Misconception: You subtracted before doubling.
+  - Misconception: Nice try. It looks like you subtracted first before doubling. Try adding first, then doubling that amount.
 - C. 2p - 5 [CORRECT]
 - D. p - 10 [WRONG]
-  - Misconception: Misconception: You doubled 5 instead of doubling p.
+  - Misconception: Nice try. You doubled 5 instead of p. "Twice p" means p times 2.
 
 **Correct Answer(s):** C. 2p - 5
 
@@ -1626,11 +1625,11 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 3 [WRONG]
-  - Misconception: Misconception: You divided x by 4 and ignored adding 8 first.
+  - Misconception: Nice try. The parentheses mean to add x and 8 first. After that, divide by 4 and you will have it.
 - B. 11 [WRONG]
-  - Misconception: Misconception: You added but forgot to divide by 4.
+  - Misconception: Nice try. First add 12 + 8 = 20. Then divide 20 by 4.
 - C. 8 [WRONG]
-  - Misconception: Misconception: You added and divided in the wrong order.
+  - Misconception: Nice try. Do the part inside the parentheses first. Then do the rest.
 - D. 5 [CORRECT]
 
 **Correct Answer(s):** D. 5
@@ -1646,11 +1645,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 2 [CORRECT]
 - B. 34 [WRONG]
-  - Misconception: Misconception: You combined digits instead of substituting and calculating.
+  - Misconception: Nice try. When a number and a letter touch, we multiply them.
 - C. -2 [WRONG]
-  - Misconception: Misconception: You subtracted in the wrong order after substitution.
+  - Misconception: Nice try. After you multiply both parts, take the second answer away from the first.
 - D. 22 [WRONG]
-  - Misconception: Misconception: You computed 4a and 2b incorrectly.
+  - Misconception: Nice try. It looks like there was a small slip during the multiplication step. Multiplying 4 times 3 and 2 times 5 separately first will clear things up.
 
 **Correct Answer(s):** A. 2
 
@@ -1674,12 +1673,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. A is always twice B [WRONG]
-  - Misconception: Misconception: You reversed which pattern is larger.
+  - Misconception: Nice try. It looks like the patterns were switched. Since B grows by 6 while A grows by 3, Pattern B will be the larger one.
 - B. B is always twice A [CORRECT]
 - C. A and B are always equal [WRONG]
-  - Misconception: Misconception: You ignored different step sizes.
+  - Misconception: Nice try. They start together, but B takes bigger steps, so B moves ahead.
 - D. B is always A + 1 [WRONG]
-  - Misconception: Misconception: You used a constant difference that does not fit the pattern.
+  - Misconception: Nice try. The difference changes, so look for a multiplier. Pattern A is 3, 6, 9... and Pattern B is 6, 12, 18..., so B is twice A.
 
 **Correct Answer(s):** B. B is always twice A
 
@@ -1693,12 +1692,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. (10, 18) [WRONG]
-  - Misconception: Misconception: You stopped at term 3 instead of term 4.
+  - Misconception: Nice try. You found the third term. Take one more step to get the fourth.
 - B. (14, 26) [CORRECT]
 - C. (12, 24) [WRONG]
-  - Misconception: Misconception: You likely applied incorrect start values or step sizes.
+  - Misconception: Nice try. The steps got a bit mixed up. Start from 2 and list the numbers one by one.
 - D. (16, 30) [WRONG]
-  - Misconception: Misconception: You likely counted one extra step.
+  - Misconception: Nice try. It looks like there might have been an extra step added on at the end.
 
 **Correct Answer(s):** B. (14, 26)
 
@@ -1712,12 +1711,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. B is always A + 3 [WRONG]
-  - Misconception: Misconception: You used an additive relationship for multiplicative patterns.
+  - Misconception: Nice try. Multiplying makes the gap grow bigger each time.
 - B. B is always 4 times A [CORRECT]
 - C. A is always 4 times B [WRONG]
-  - Misconception: Misconception: You inverted the scale factor.
+  - Misconception: Nice try. It looks like you've found the right relationship, but the order is reversed. Since B starts at 4 and A starts at 1, B is the larger number.
 - D. A and B become equal after enough steps [WRONG]
-  - Misconception: Misconception: You assumed scaling factor can disappear over time.
+  - Misconception: Nice try. Both patterns grow by the same factor, so B stays ahead.
 
 **Correct Answer(s):** B. B is always 4 times A
 
@@ -1731,12 +1730,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. y = x + 2 [WRONG]
-  - Misconception: Misconception: You used only the first pair and ignored others.
+  - Misconception: Nice try. That works for the first pair, but not for the rest. Try a multiply rule that fits every pair.
 - B. y = 2x [WRONG]
-  - Misconception: Misconception: You assumed doubling instead of checking ratio.
+  - Misconception: Nice try. Doubling gives 6, 12, 18. Your y-numbers are just a little smaller than those.
 - C. y = (5/3)x [CORRECT]
 - D. y = x - 2 [WRONG]
-  - Misconception: Misconception: You used subtraction with the wrong sign.
+  - Misconception: Nice try. It looks like the subtract was done with different numbers.
 
 **Correct Answer(s):** C. y = (5/3)x
 
@@ -1750,12 +1749,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. It stays 5 [WRONG]
-  - Misconception: Misconception: You ignored that B grows faster than A.
+  - Misconception: Nice try. B adds 3 and A adds 2, so B pulls ahead by one each time.
 - B. It decreases by 1 each term [WRONG]
-  - Misconception: Misconception: You reversed which pattern has larger step size.
+  - Misconception: Nice try. Pattern B grows faster, so the gap between them keeps getting bigger.
 - C. It increases by 1 each term [CORRECT]
 - D. It alternates between 5 and 6 [WRONG]
-  - Misconception: Misconception: You introduced alternation not present in arithmetic sequences.
+  - Misconception: Nice try. Both rules stay the same, so the gap between the patterns changes in a steady way.
 
 **Correct Answer(s):** C. It increases by 1 each term
 
@@ -1780,11 +1779,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 3 [CORRECT]
 - B. 5 [WRONG]
-  - Misconception: Misconception: You used the y-coordinate for horizontal movement.
+  - Misconception: Nice try. You shared the y number. The pair (x, y) always shows across first, so use the first number.
 - C. 8 [WRONG]
-  - Misconception: Misconception: You added x and y instead of reading the ordered pair.
+  - Misconception: Nice try. The two numbers were added. Just take the first number to get the x value.
 - D. 0 [WRONG]
-  - Misconception: Misconception: You treated the point as if it were on the y-axis.
+  - Misconception: Nice try. The point was thought to sit on a vertical line. The value 3 means three units right.
 
 **Correct Answer(s):** A. 3
 
@@ -1798,12 +1797,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. (2, 4) [WRONG]
-  - Misconception: Misconception: You reversed x and y.
+  - Misconception: Nice try. It is easy to flip x and y. Think across then up, so 4 comes first.
 - B. (4, 2) [CORRECT]
 - C. (-4, 2) [WRONG]
-  - Misconception: Misconception: You moved left instead of right on the x-axis.
+  - Misconception: Nice try. Moving right gives a positive x. A minus sign would move you left instead.
 - D. (4, -2) [WRONG]
-  - Misconception: Misconception: You moved down instead of up on the y-axis.
+  - Misconception: Nice try. Moving up gives a positive y on the axis. A minus would move you down.
 
 **Correct Answer(s):** B. (4, 2)
 
@@ -1817,12 +1816,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. (1, 6) [WRONG]
-  - Misconception: Misconception: You reversed the order of coordinates.
+  - Misconception: Nice try. The x and y were flipped. Always write the across number first in the pair.
 - B. (6, 1) [CORRECT]
 - C. (6, -1) [WRONG]
-  - Misconception: Misconception: You changed the sign of the y-coordinate.
+  - Misconception: Nice try. Check the sign of the y. It needs to be positive 1.
 - D. (7, 1) [WRONG]
-  - Misconception: Misconception: You changed the x-coordinate value.
+  - Misconception: Nice try. The x got changed a bit. Keep it at 6 to land on the right spot.
 
 **Correct Answer(s):** B. (6, 1)
 
@@ -1836,12 +1835,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. Point B is on the x-axis. [WRONG]
-  - Misconception: Misconception: You treated y=0 as x=0.
+  - Misconception: Nice try. It looks like y = 0 was treated as the y-axis line x = 0.
 - B. Point B is on the y-axis. [CORRECT]
 - C. Point B is the origin. [WRONG]
-  - Misconception: Misconception: You treated any point with a zero as the origin.
+  - Misconception: Nice try. A point with a zero is not always the origin. Check both numbers to be sure.
 - D. Point B is in quadrant II. [WRONG]
-  - Misconception: Misconception: You points on an axis are not inside a quadrant.
+  - Misconception: Nice try. Points that sit on an axis are not inside a quadrant.
 
 **Correct Answer(s):** B. Point B is on the y-axis.
 
@@ -1855,11 +1854,11 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. Maya only [WRONG]
-  - Misconception: Misconception: You may be assuming order does not matter in an ordered pair.
+  - Misconception: Nice try. In an ordered pair, the first number is the x and the second is the y. Order always counts.
 - B. Leo only [WRONG]
-  - Misconception: Misconception: You may have swapped axis names.
+  - Misconception: Nice try. x is first, y is second. Check which axis you called which.
 - C. Both are correct. [WRONG]
-  - Misconception: Misconception: You treated ordered pairs as interchangeable.
+  - Misconception: Nice try. Ordered pairs are not swaps. First spot means x, second spot means y.
 - D. They cannot both be correct because ordered pairs are order-sensitive. [CORRECT]
 
 **Correct Answer(s):** D. They cannot both be correct because ordered pairs are order-sensitive.
@@ -1878,12 +1877,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 28 days and 4 pages [WRONG]
-  - Misconception: Misconception: You reversed the meaning of x and y.
+  - Misconception: Nice try. You swapped x and y. The first number tells the side move; the second tells up or down.
 - B. On day 4, 28 pages were read [CORRECT]
 - C. 4 pages total in 28 days [WRONG]
-  - Misconception: Misconception: You reversed axes and context.
+  - Misconception: Nice try. You mixed up the axes and the story. Match the first number with the side move.
 - D. Day 32 with no pages [WRONG]
-  - Misconception: Misconception: You added coordinates instead of interpreting ordered pair.
+  - Misconception: Nice try. An ordered pair shows where to go. Do not add x and y.
 
 **Correct Answer(s):** B. On day 4, 28 pages were read
 
@@ -1897,12 +1896,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. (15, 3) [WRONG]
-  - Misconception: Misconception: You reversed x and y values.
+  - Misconception: Nice try. x is first, y is second. Swap them and the point lands far away.
 - B. (3, 15) [CORRECT]
 - C. (18, 0) [WRONG]
-  - Misconception: Misconception: You combined values incorrectly.
+  - Misconception: Nice try. Use each number once. Do not mix the values.
 - D. (12, 3) [WRONG]
-  - Misconception: Misconception: You used a difference instead of the given y-value.
+  - Misconception: Nice try. Read the y value. Do not subtract values.
 
 **Correct Answer(s):** B. (3, 15)
 
@@ -1916,12 +1915,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. Each bag has 1 apple [WRONG]
-  - Misconception: Misconception: You ignored that y is double x.
+  - Misconception: Nice try. y must be double x on this line. Check each pair again.
 - B. Each bag has 2 apples [CORRECT]
 - C. Each bag has 3 apples [WRONG]
-  - Misconception: Misconception: You used the change in x+y, not y/x.
+  - Misconception: Nice try. We need y divided by x, not x plus y. Look at the ratio.
 - D. Number of apples decreases as bags increase [WRONG]
-  - Misconception: Misconception: You misread increasing coordinates.
+  - Misconception: Nice try. The line goes up, so both x and y grow together.
 
 **Correct Answer(s):** B. Each bag has 2 apples
 
@@ -1935,12 +1934,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. At week 9 there are 0 plants [WRONG]
-  - Misconception: Misconception: You reversed x and y.
+  - Misconception: Nice try. You mixed up x and y. Swap them back.
 - B. At week 0 there are 9 plants [CORRECT]
 - C. The graph is invalid because x cannot be 0 [WRONG]
-  - Misconception: Misconception: You x = 0 is valid in first-quadrant coordinate contexts.
+  - Misconception: Nice try. x = 0 is okay in the first part.
 - D. There are 9 weeks and 9 plants [WRONG]
-  - Misconception: Misconception: You duplicated y into x without evidence.
+  - Misconception: Nice try. Copied y into x without proof.
 
 **Correct Answer(s):** B. At week 0 there are 9 plants
 
@@ -1955,11 +1954,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. The runner goes 5 laps per minute in both points [CORRECT]
 - B. The runner goes 2 laps per minute in both points [WRONG]
-  - Misconception: Misconception: You divided x by y instead of y by x.
+  - Misconception: Nice try. You did x ÷ y. It needs y ÷ x.
 - C. The rate is different at the two points [WRONG]
-  - Misconception: Misconception: You both points show the same y/x ratio.
+  - Misconception: Nice try. Both pairs keep same y ÷ x.
 - D. Cannot compare because x-values differ [WRONG]
-  - Misconception: Misconception: You rate comparison uses ratio, not equal x-values.
+  - Misconception: Nice try. Ratio is used to match the rates.
 
 **Correct Answer(s):** A. The runner goes 5 laps per minute in both points
 
@@ -1983,12 +1982,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. Squares can have three right angles [WRONG]
-  - Misconception: Misconception: You broke the inherited rectangle property.
+  - Misconception: Nice try. Rectangles give this rule to all.
 - B. Squares have four right angles [CORRECT]
 - C. Squares cannot be rectangles [WRONG]
-  - Misconception: Misconception: You ignored the subcategory relationship.
+  - Misconception: Nice try. Every square is a kind of rectangle first.
 - D. Squares have no parallel sides [WRONG]
-  - Misconception: Misconception: You used a false property of squares.
+  - Misconception: Nice try. Check that trait again; it is false.
 
 **Correct Answer(s):** B. Squares have four right angles
 
@@ -2002,12 +2001,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. Exactly one pair of parallel sides [WRONG]
-  - Misconception: Misconception: You described a trapezoid property.
+  - Misconception: Nice try. You used a trapezoid rule by mistake.
 - B. Two pairs of parallel sides [CORRECT]
 - C. Four right angles [WRONG]
-  - Misconception: Misconception: You not all rhombuses are squares.
+  - Misconception: Nice try. Rhombuses are not all squares.
 - D. No equal sides [WRONG]
-  - Misconception: Misconception: You rhombuses actually have all sides equal.
+  - Misconception: Nice try. Rhombus has all four sides equal.
 
 **Correct Answer(s):** B. Two pairs of parallel sides
 
@@ -2021,12 +2020,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. Correct, because squares are separate from parallelograms [WRONG]
-  - Misconception: Misconception: You ignored class inclusion by properties.
+  - Misconception: Nice try. Check the shape’s rules again.
 - B. Incorrect, because all squares have two pairs of parallel sides [CORRECT]
 - C. Correct, because squares have equal sides only [WRONG]
-  - Misconception: Misconception: You equal sides do not remove parallel-side properties.
+  - Misconception: Nice try. Equal sides still keep the parallel sides.
 - D. Cannot tell without measuring each square [WRONG]
-  - Misconception: Misconception: You definition already determines the category.
+  - Misconception: Nice try. The rule already sets the group.
 
 **Correct Answer(s):** B. Incorrect, because all squares have two pairs of parallel sides
 
@@ -2040,12 +2039,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. Exactly three sides [WRONG]
-  - Misconception: Misconception: You described a triangle.
+  - Misconception: Nice try. That sounds like a triangle.
 - B. Exactly four sides [CORRECT]
 - C. All sides equal [WRONG]
-  - Misconception: Misconception: You not all rectangles are squares.
+  - Misconception: Nice try. Some rectangles are not squares.
 - D. No right angles [WRONG]
-  - Misconception: Misconception: You rectangles are defined by right angles.
+  - Misconception: Nice try. Right angles make the rectangle.
 
 **Correct Answer(s):** B. Exactly four sides
 
@@ -2059,12 +2058,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. A square has equal sides, so it cannot be a rectangle. [WRONG]
-  - Misconception: Misconception: You treated extra properties as disqualifying.
+  - Misconception: Nice try. A square still follows every rectangle rule, so it stays in the rectangle family.
 - B. A square is a rectangle, so square properties are exactly the same as all rectangle properties. [WRONG]
-  - Misconception: Misconception: You ignored that squares have additional properties.
+  - Misconception: Nice try. A square meets every rectangle rule, plus the extra rule of equal sides.
 - C. A square is a rectangle, so it has all rectangle properties plus possible extra properties. [CORRECT]
 - D. Categories are unrelated unless the names are similar. [WRONG]
-  - Misconception: Misconception: You category membership depends on definitions, not names.
+  - Misconception: Nice try. Names do not decide; the rule decides.
 
 **Correct Answer(s):** C. A square is a rectangle, so it has all rectangle properties plus possible extra properties.
 
@@ -2083,11 +2082,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. Quadrilateral -> Rectangle -> Square [CORRECT]
 - B. Square -> Rectangle -> Quadrilateral [WRONG]
-  - Misconception: Misconception: You reversed parent and subcategory order.
+  - Misconception: Nice try. Start with the big group, then list smaller groups inside.
 - C. Rectangle -> Triangle -> Square [WRONG]
-  - Misconception: Misconception: You triangle is not in the rectangle/square branch.
+  - Misconception: Nice try. Rectangles have four sides, but a triangle only has three.
 - D. Square -> Rhombus -> Triangle [WRONG]
-  - Misconception: Misconception: You triangle does not contain quadrilateral categories.
+  - Misconception: Nice try. Triangles have three sides, so they go in a different group.
 
 **Correct Answer(s):** A. Quadrilateral -> Rectangle -> Square
 
@@ -2102,11 +2101,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. Square, rectangle, rhombus, parallelogram, quadrilateral [CORRECT]
 - B. Square only [WRONG]
-  - Misconception: Misconception: You ignored parent categories in the hierarchy.
+  - Misconception: Nice try. You saw the square! A square is also a rectangle and a quadrilateral, because it keeps every rule those shapes need.
 - C. Rectangle and triangle [WRONG]
-  - Misconception: Misconception: You a triangle cannot have four sides.
+  - Misconception: Nice try. The shape has four sides, so it is a quadrilateral, not a triangle. Triangles have only three sides.
 - D. Rhombus only [WRONG]
-  - Misconception: Misconception: You omitted valid parent categories.
+  - Misconception: Nice try. You found the rhombus! It can also be called a parallelogram, a quadrilateral, and even a square if it has right angles.
 
 **Correct Answer(s):** A. Square, rectangle, rhombus, parallelogram, quadrilateral
 
@@ -2120,12 +2119,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. All parallelograms are rectangles [WRONG]
-  - Misconception: Misconception: You parallelograms do not all have right angles.
+  - Misconception: Nice try. Parallelograms only need both pairs of opposite sides parallel. Only the ones with right angles are rectangles.
 - B. All rectangles are squares [WRONG]
-  - Misconception: Misconception: You rectangles do not require all sides equal.
+  - Misconception: Nice try. Rectangles must have four right angles. If all four sides are also equal, then the rectangle is a square.
 - C. All squares are rectangles [CORRECT]
 - D. All quadrilaterals are rhombuses [WRONG]
-  - Misconception: Misconception: You quadrilaterals include many non-rhombus shapes.
+  - Misconception: Nice try. Rhombuses need four equal sides and two pairs of parallel sides. Other foursided shapes, like trapezoids, do not fit that rule.
 
 **Correct Answer(s):** C. All squares are rectangles
 
@@ -2139,12 +2138,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. Parallelogram [WRONG]
-  - Misconception: Misconception: You parallelograms have two pairs of parallel sides.
+  - Misconception: Nice try. Parallelograms must have two pairs of parallel sides, not just one pair. Keep looking for that second pair.
 - B. Trapezoid (a quadrilateral, but not a parallelogram) [CORRECT]
 - C. Rectangle [WRONG]
-  - Misconception: Misconception: You rectangles have two pairs of parallel sides and right angles.
+  - Misconception: Nice try. A rectangle needs two pairs of parallel sides. This shape only has one pair, so it is not a rectangle.
 - D. Square [WRONG]
-  - Misconception: Misconception: You squares have two pairs of parallel sides and equal sides.
+  - Misconception: Nice try. Squares need four equal sides and two pairs of parallel sides. This shape only has one pair, so it is not a square.
 
 **Correct Answer(s):** B. Trapezoid (a quadrilateral, but not a parallelogram)
 
@@ -2159,11 +2158,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. Rhombus -> Parallelogram -> Quadrilateral [CORRECT]
 - B. Quadrilateral -> Triangle -> Polygon [WRONG]
-  - Misconception: Misconception: You triangle is not a subcategory of quadrilateral.
+  - Misconception: Nice try. Triangles have three sides and quadrilaterals have four. A triangle is never a quadrilateral.
 - C. Square -> Rectangle -> Triangle [WRONG]
-  - Misconception: Misconception: You triangle is outside the four-sided hierarchy.
+  - Misconception: Nice try. Triangles have three sides and quadrilaterals have four. They belong in different shape families.
 - D. Parallelogram -> Square -> Rectangle [WRONG]
-  - Misconception: Misconception: You square is a subcategory of rectangle, not the reverse.
+  - Misconception: Nice try. A square is a special rectangle with four equal sides. Every square is a rectangle, but not every rectangle is a square.
 
 **Correct Answer(s):** A. Rhombus -> Parallelogram -> Quadrilateral
 
@@ -2187,12 +2186,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 3 1/4 units [WRONG]
-  - Misconception: Misconception: You likely missed one full unit or one fractional group.
+  - Misconception: Nice try. One of the numbers looks left out. Add every data point again and check the total.
 - B. 4 1/4 units [CORRECT]
 - C. 4 units [WRONG]
-  - Misconception: Misconception: You rounded fractional lengths to whole numbers.
+  - Misconception: Nice try. Rounding the numbers before you total them changes the answer. Keep every fraction exact until the end.
 - D. 2 3/4 units [WRONG]
-  - Misconception: Misconception: You omitted part of the data set.
+  - Misconception: Nice try. Some ribbon lengths were skipped. Look back at the plot, add every single value shown.
 
 **Correct Answer(s):** B. 4 1/4 units
 
@@ -2207,11 +2206,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 1/2 [CORRECT]
 - B. 3/8 [WRONG]
-  - Misconception: Misconception: You subtracted using wrong common-denominator steps.
+  - Misconception: Nice try. A tiny subtracting mistake with the fractions slipped in. Pay extra attention to the bottom numbers while subtracting.
 - C. 1/4 [WRONG]
-  - Misconception: Misconception: You compared middle values instead of greatest and least.
+  - Misconception: Nice try. We need the biggest and the smallest numbers of all, not just any close pair.
 - D. 5/8 [WRONG]
-  - Misconception: Misconception: You selected one endpoint instead of the difference.
+  - Misconception: Nice try. Picking one value does not give the range. Subtract the smallest from the biggest and you will.
 
 **Correct Answer(s):** A. 1/2
 
@@ -2225,12 +2224,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 1/2 [WRONG]
-  - Misconception: Misconception: You chose the midpoint of endpoints, not the mean of all data.
+  - Misconception: Nice try. Add all four numbers. Then divide that sum by 4 to find the mean.
 - B. 5/8 [CORRECT]
 - C. 3/4 [WRONG]
-  - Misconception: Misconception: You selected a common value instead of computing average.
+  - Misconception: Nice try. The mean is the average of all four points. Add them together first, then divide by four.
 - D. 1 [WRONG]
-  - Misconception: Misconception: You chose the maximum value.
+  - Misconception: Nice try. The largest number alone is not the mean. Add all values up, then find the perfect middle value.
 
 **Correct Answer(s):** B. 5/8
 
@@ -2244,12 +2243,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 3/8 [WRONG]
-  - Misconception: Misconception: You chose the mode instead of equal-share amount.
+  - Misconception: Nice try. Add all four numbers. Then divide the total by 4 to share fairly.
 - B. 7/16 [CORRECT]
 - C. 5/8 [WRONG]
-  - Misconception: Misconception: You chose the largest value instead of computing average.
+  - Misconception: Nice try. You chose the biggest. For equal shares, we need the middle value that balances every point.
 - D. 1/2 [WRONG]
-  - Misconception: Misconception: You rounded instead of exact fraction division.
+  - Misconception: Nice try. You are close. Keep exact fractions at each step; do not round, and the average will be perfect.
 
 **Correct Answer(s):** B. 7/16
 
@@ -2264,11 +2263,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 1 1/4 [CORRECT]
 - B. 3/4 [WRONG]
-  - Misconception: Misconception: You compared one 3/4 value to one 1/2 value only.
+  - Misconception: Nice try. You compared one stick only. Look at the full groups together; the real gap is a bit bigger.
 - C. 2 1/4 [WRONG]
-  - Misconception: Misconception: You computed only the 3/4 sum and forgot to subtract.
+  - Misconception: Nice try. You added the first group. Now subtract the other group’s sum to see how much extra you have.
 - D. 1/4 [WRONG]
-  - Misconception: Misconception: You subtracted 3/4 - 1/2 and ignored counts.
+  - Misconception: Nice try. Count every 3/4 and every 1/2 on the plot. Then find the full difference.
 
 **Correct Answer(s):** A. 1 1/4
 
@@ -2292,12 +2291,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 35 cm [WRONG]
-  - Misconception: Misconception: You multiplied by 10 instead of 100.
+  - Misconception: Nice try. You multiplied by 10. To change meters to centimeters, multiply by 100.
 - B. 350 cm [CORRECT]
 - C. 0.35 cm [WRONG]
-  - Misconception: Misconception: You divided instead of multiplying when moving to smaller units.
+  - Misconception: Nice try. Centimeters are tiny, so we need more of them. Your number should grow bigger.
 - D. 3500 cm [WRONG]
-  - Misconception: Misconception: You multiplied by 1000 instead of 100.
+  - Misconception: Nice try. You multiplied by 1000. Meters to centimeters uses 100, not 1000.
 
 **Correct Answer(s):** B. 350 cm
 
@@ -2311,12 +2310,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 42 L [WRONG]
-  - Misconception: Misconception: You divided by 100 instead of 1000.
+  - Misconception: Nice try. You divided by 100. To change milliliters to liters, divide by 1000.
 - B. 4.2 L [CORRECT]
 - C. 0.42 L [WRONG]
-  - Misconception: Misconception: You divided one place too far.
+  - Misconception: Nice try. You moved the decimal four spots. For 1000, slide it left three places.
 - D. 420 L [WRONG]
-  - Misconception: Misconception: You multiplied instead of dividing.
+  - Misconception: Nice try. Liters are bigger, so we need fewer of them. The number goes down.
 
 **Correct Answer(s):** B. 4.2 L
 
@@ -2330,12 +2329,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 72 in [WRONG]
-  - Misconception: Misconception: You multiplied by 8 instead of 12.
+  - Misconception: Nice try. You used 8, but one foot has 12 inches. Multiply the 9 by 12.
 - B. 96 in [WRONG]
-  - Misconception: Misconception: You used an incorrect feet-to-inches conversion factor.
+  - Misconception: Nice try. Multiply the feet by 12 to get the exact inches.
 - C. 108 in [CORRECT]
 - D. 900 in [WRONG]
-  - Misconception: Misconception: You scaled by 100 as if feet were metric.
+  - Misconception: Nice try. This is feet to inches, not metric. Multiply by 12 inches per foot.
 
 **Correct Answer(s):** C. 108 in
 
@@ -2349,12 +2348,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 1 pint [WRONG]
-  - Misconception: Misconception: You treated cups and pints as equal units.
+  - Misconception: Nice try. A pint is bigger than a cup. You will need more than one pint.
 - B. 1.5 pints [CORRECT]
 - C. 2 pints [WRONG]
-  - Misconception: Misconception: You rounded up instead of converting exactly.
+  - Misconception: Nice try. Don't round yet. Since 2 cups = 1 pint, 3 cups is 1.5 pints.
 - D. 6 pints [WRONG]
-  - Misconception: Misconception: You multiplied by 2 in the wrong direction.
+  - Misconception: Nice try. You flipped the units. Pints are bigger, so we need fewer.
 
 **Correct Answer(s):** B. 1.5 pints
 
@@ -2368,12 +2367,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 235 m [WRONG]
-  - Misconception: Misconception: You treated 1 km as 100 m.
+  - Misconception: Nice try. 1 kilometer is 1000 meters. 2 km is 2000 m, and 2000 + 350 = 2350 m.
 - B. 200350 m [WRONG]
-  - Misconception: Misconception: You concatenated numbers instead of adding converted units.
+  - Misconception: Nice try. Listing the digits side-by-side mixes them. Convert kilometers into meters first, then add the numbers.
 - C. 2350 m [CORRECT]
 - D. 2500 m [WRONG]
-  - Misconception: Misconception: You rounded 350 up to 500 before adding.
+  - Misconception: Nice try. Rounding 350 before you add changes the answer. Keep the exact value to find the true total.
 
 **Correct Answer(s):** C. 2350 m
 
@@ -2391,12 +2390,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. How long the shape is [WRONG]
-  - Misconception: Misconception: You described length, not volume.
+  - Misconception: Nice try. Length is one side. Volume is the space inside all three sides.
 - B. How much space the solid figure takes up [CORRECT]
 - C. How far around the shape is [WRONG]
-  - Misconception: Misconception: You described perimeter.
+  - Misconception: Nice try. Perimeter is the edge total. Volume measures the space inside the shape.
 - D. How much surface is on the outside [WRONG]
-  - Misconception: Misconception: You described surface area.
+  - Misconception: Nice try. That’s surface area, the skin. Volume checks the space inside the box, not the outside.
 
 **Correct Answer(s):** B. How much space the solid figure takes up
 
@@ -2410,12 +2409,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. square centimeters [WRONG]
-  - Misconception: Misconception: You square units measure area, not volume.
+  - Misconception: Nice try. Square units are flat. Cubic units measure space inside a 3D box.
 - B. centimeters [WRONG]
-  - Misconception: Misconception: You linear units measure length, not volume.
+  - Misconception: Nice try. Centimeters measure one edge. Volume needs cubic units that fill the whole box.
 - C. cubic centimeters [CORRECT]
 - D. degrees [WRONG]
-  - Misconception: Misconception: You degrees measure angles.
+  - Misconception: Nice try. Degrees measure angles. To measure a box’s space, we use cubic units, not degrees.
 
 **Correct Answer(s):** C. cubic centimeters
 
@@ -2429,12 +2428,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 1 square cm [WRONG]
-  - Misconception: Misconception: You used an area unit instead of a volume unit.
+  - Misconception: Nice try. "Square" units show flat area. This solid cube needs the 3D name "cubic" centimeter.
 - B. 1 cubic cm [CORRECT]
 - C. 3 cubic cm [WRONG]
-  - Misconception: Misconception: You added the three side lengths instead of multiplying dimensions.
+  - Misconception: Nice try. You added the sides. For volume we multiply the three dimensions together.
 - D. 1 cm [WRONG]
-  - Misconception: Misconception: You used a length unit instead of a volume unit.
+  - Misconception: Nice try. That number is just a length. A cube needs a 3D unit like cubic cm.
 
 **Correct Answer(s):** B. 1 cubic cm
 
@@ -2449,11 +2448,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. The one with more cubes has greater volume. [CORRECT]
 - B. The taller one always has greater volume. [WRONG]
-  - Misconception: Misconception: You ignored base area and total cubes.
+  - Misconception: Nice try. A short shape can still hold more cubes if it is wide or deep.
 - C. Volume depends only on outside shape. [WRONG]
-  - Misconception: Misconception: You confused volume with surface appearance.
+  - Misconception: Nice try. Volume counts the cubes inside the shape, not its outside look.
 - D. If they have the same height, they must have same volume. [WRONG]
-  - Misconception: Misconception: You ignored length and width.
+  - Misconception: Nice try. We must check length and width too before we know the volume.
 
 **Correct Answer(s):** A. The one with more cubes has greater volume.
 
@@ -2468,11 +2467,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 24 cubic units [CORRECT]
 - B. 24 square units [WRONG]
-  - Misconception: Misconception: You used area units instead of volume units.
+  - Misconception: Nice try. Flat surfaces use square units. A solid prism is measured in cubic units.
 - C. 12 cubic units [WRONG]
-  - Misconception: Misconception: You halved without reason.
+  - Misconception: Nice try. Every cube in the box counts toward the total volume.
 - D. 48 cubic units [WRONG]
-  - Misconception: Misconception: You doubled instead of counting cubes directly.
+  - Misconception: Nice try. Count the cubes exactly as they are to find the right volume.
 
 **Correct Answer(s):** A. 24 cubic units
 
@@ -2490,12 +2489,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 11 cubic units [WRONG]
-  - Misconception: Misconception: You added instead of multiplying layers by cubes per layer.
+  - Misconception: Nice try. You added layers and cubes. Multiply the layers by cubes in each layer.
 - B. 24 cubic units [CORRECT]
 - C. 16 cubic units [WRONG]
-  - Misconception: Misconception: You counted only two layers.
+  - Misconception: Nice try. It looks like you missed one layer. Count all three layers for the full total.
 - D. 32 cubic units [WRONG]
-  - Misconception: Misconception: You overcounted one extra layer.
+  - Misconception: Nice try. It seems an extra layer was added. Count only the real layers.
 
 **Correct Answer(s):** B. 24 cubic units
 
@@ -2510,11 +2509,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 18 cubic inches [CORRECT]
 - B. 18 square inches [WRONG]
-  - Misconception: Misconception: You used area units.
+  - Misconception: Nice try. Flat shapes use square inches. Space inside a box needs cubic inches.
 - C. 9 cubic inches [WRONG]
-  - Misconception: Misconception: You halved the cube count.
+  - Misconception: Nice try. Each cube fills space inside. Count all 18 to get the total.
 - D. 36 cubic inches [WRONG]
-  - Misconception: Misconception: You doubled the cube count.
+  - Misconception: Nice try. Count every cube one time only.
 
 **Correct Answer(s):** A. 18 cubic inches
 
@@ -2528,12 +2527,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 9 [WRONG]
-  - Misconception: Misconception: You added dimensions instead of multiplying.
+  - Misconception: Nice try. Adding will not give the space inside. Multiply the three sides to find the volume.
 - B. 24 [CORRECT]
 - C. 12 [WRONG]
-  - Misconception: Misconception: You multiplied only two dimensions.
+  - Misconception: Nice try. You multiplied two sides. Multiply all three sides to finish.
 - D. 48 [WRONG]
-  - Misconception: Misconception: You multiplied correctly, then doubled.
+  - Misconception: Nice try. Use each side one time in multiplication.
 
 **Correct Answer(s):** B. 24
 
@@ -2548,11 +2547,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 15 cubic feet [CORRECT]
 - B. 15 feet [WRONG]
-  - Misconception: Misconception: You used linear units instead of cubic units.
+  - Misconception: Nice try. Feet measures lines, not space. Use cubic feet for volume.
 - C. 15 square feet [WRONG]
-  - Misconception: Misconception: You used area units instead of volume units.
+  - Misconception: Nice try. Flat area uses square feet. This storage cube is 3D, so we say cubic feet.
 - D. 5 cubic feet [WRONG]
-  - Misconception: Misconception: You divided cube count without reason.
+  - Misconception: Nice try. Count every cube. Each one adds to the full volume.
 
 **Correct Answer(s):** A. 15 cubic feet
 
@@ -2567,11 +2566,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 3 cubic units [CORRECT]
 - B. 37 cubic units [WRONG]
-  - Misconception: Misconception: You added instead of finding difference.
+  - Misconception: Nice try. Subtract to see how much bigger one is.
 - C. 17 cubic units [WRONG]
-  - Misconception: Misconception: You used only one solid's volume.
+  - Misconception: Nice try. That's just one block. We need to compare the two blocks by subtracting.
 - D. 20 cubic units [WRONG]
-  - Misconception: Misconception: You chose the larger volume instead of difference.
+  - Misconception: Nice try. Subtract to see the difference between the two blocks.
 
 **Correct Answer(s):** A. 3 cubic units
 
@@ -2589,12 +2588,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 13 cubic cm [WRONG]
-  - Misconception: Misconception: You added dimensions instead of multiplying.
+  - Misconception: Nice try. It looks like the numbers were added. For volume, multiply length, width, and height together.
 - B. 24 cubic cm [WRONG]
-  - Misconception: Misconception: You multiplied only length and width.
+  - Misconception: Nice try. You used two numbers. Multiply length, width, and height for the full volume.
 - C. 72 cubic cm [CORRECT]
 - D. 144 cubic cm [WRONG]
-  - Misconception: Misconception: You doubled the correct product.
+  - Misconception: Nice try. You multiplied well, but the answer got doubled at the end.
 
 **Correct Answer(s):** C. 72 cubic cm
 
@@ -2608,12 +2607,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 23 cubic ft [WRONG]
-  - Misconception: Misconception: You added area and height instead of multiplying.
+  - Misconception: Nice try. You added area and height. Multiply the base area by height for volume.
 - B. 90 cubic ft [CORRECT]
 - C. 90 square ft [WRONG]
-  - Misconception: Misconception: You used square units for volume.
+  - Misconception: Nice try. The number is right. Volume needs cubic feet, not square feet.
 - D. 13 cubic ft [WRONG]
-  - Misconception: Misconception: You subtracted instead of multiplying.
+  - Misconception: Nice try. The numbers were subtracted. Multiply them to get the space inside.
 
 **Correct Answer(s):** B. 90 cubic ft
 
@@ -2627,12 +2626,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 6 cubic units [WRONG]
-  - Misconception: Misconception: You subtracted instead of adding the parts.
+  - Misconception: Nice try. You subtracted. Add the two volumes to find the total.
 - B. 42 cubic units [CORRECT]
 - C. 432 cubic units [WRONG]
-  - Misconception: Misconception: You multiplied the two volumes.
+  - Misconception: Nice try. You tried multiplying, but adding the two volumes gives the total.
 - D. 24 cubic units [WRONG]
-  - Misconception: Misconception: You counted only one part.
+  - Misconception: Nice try. You found one piece. Add the second volume to finish.
 
 **Correct Answer(s):** B. 42 cubic units
 
@@ -2646,12 +2645,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 20 [WRONG]
-  - Misconception: Misconception: You may have multiplied only two dimensions.
+  - Misconception: Nice try. You used two numbers. Multiply length, width, and height to count all the cubes.
 - B. 40 [WRONG]
-  - Misconception: Misconception: You may have used only length x height.
+  - Misconception: Nice try. You used two numbers. Multiply length, width, and height for the right count.
 - C. 240 [CORRECT]
 - D. 120 [WRONG]
-  - Misconception: Misconception: You may have halved the full product.
+  - Misconception: Nice try. Your answer was cut in half. Check your multiply again.
 
 **Correct Answer(s):** C. 240
 
@@ -2665,12 +2664,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 6 cubic cm [WRONG]
-  - Misconception: Misconception: You found base-area difference but forgot to apply height.
+  - Misconception: Nice try. You found the gap between bases. Now multiply that gap by 3 cm to get the difference.
 - B. 18 cubic cm [CORRECT]
 - C. 34 cubic cm [WRONG]
-  - Misconception: Misconception: You added base areas then multiplied.
+  - Misconception: Nice try. You added volumes, but we need the difference. Subtract small from big to find what’s left.
 - D. 102 cubic cm [WRONG]
-  - Misconception: Misconception: You multiplied sum and difference incorrectly.
+  - Misconception: Nice try. Some numbers were mixed and grew too big. Subtract the volumes to get the right gap.
 
 **Correct Answer(s):** B. 18 cubic cm
 
@@ -2694,12 +2693,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 83 [WRONG]
-  - Misconception: Misconception: You likely chose 8 instead of 9 for 37 ÷ 4, and then you also dropped a digit when the next part was 52 ÷ 4 = 13. In long division, each step must use the biggest whole number that still fits.
+  - Misconception: Nice try. In the first step, see how many nines fit in 37.
 - B. 93 [CORRECT]
 - C. 90 [WRONG]
-  - Misconception: Misconception: You brought down the 2 without combining it with the remainder. After 37 − 36 = 1, the next number is 12 (not 2).
+  - Misconception: Nice try. You stopped part-way. Finish the division with the leftover number to get the whole answer.
 - D. 98 [WRONG]
-  - Misconception: Misconception: You made a subtraction mistake after multiplying. If 9 × 4 = 36, then 37 − 36 should leave a remainder of 1, not 3.
+  - Misconception: Nice try. Check the subtraction 37 - 36 again.
 
 **Correct Answer(s):** B. 93
 
@@ -2713,12 +2712,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 106 [WRONG]
-  - Misconception: Misconception: You forgot to place a 0 in the quotient when you reached a place where 4 went in 0 times. Zeros in the quotient are important placeholders for place value.
+  - Misconception: Nice try. When 4 cannot fit at all, put 0 in that place value; it keeps every digit lined up.
 - B. 1006 [CORRECT]
 - C. 101 [WRONG]
-  - Misconception: Misconception: You likely skipped a digit when bringing down numbers. In long division you must bring down digits one at a time, in order.
+  - Misconception: Nice try. Bring each digit down slowly, one at a time, so nothing gets skipped in the long divide.
 - D. 1001 [WRONG]
-  - Misconception: Misconception: You treated the last step like it was 4 ÷ 4 instead of 24 ÷ 4. When you bring down the last digit, you divide the whole new number you formed (24), not just the final digit.
+  - Misconception: Nice try. Look at 24 and see how many 4s fit inside it.
 
 **Correct Answer(s):** B. 1006
 
@@ -2732,12 +2731,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 60 [WRONG]
-  - Misconception: Misconception: You found 24 goes into 151 about 6 times, but then you didn’t use the remainder to make 72. After subtracting, you must bring down the next digit and divide the new number.
+  - Misconception: Nice try. You found the first digit just right! Keep dividing with that remainder to finish the problem.
 - B. 63 [CORRECT]
 - C. 61 [WRONG]
-  - Misconception: Misconception: You likely subtracted wrong after 6×24=144. If 151−144 is not correct, the next number you form after bringing down 2 will also be wrong.
+  - Misconception: Nice try. Subtract 144 from 151 once more and see what you get.
 - D. 66 [WRONG]
-  - Misconception: Misconception: You made a division fact mistake with 72 ÷ 24. Since 24×3=72, the next quotient digit should be 3, not 6.
+  - Misconception: Nice try. A tiny slip happened in the last multiply step. Try it once more carefully.
 
 **Correct Answer(s):** B. 63
 
@@ -2751,12 +2750,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 247 R0 [WRONG]
-  - Misconception: Misconception: You treated the final remainder as 0, which usually comes from a subtraction mistake at the end. Since 5×7=35, 37−35 should leave 2, not 0.
+  - Misconception: Nice try. The last subtraction is a bit off. Since 5 times 7 is 35, you should have 2 left as the remainder.
 - B. 247 R2 [CORRECT]
 - C. 254 R3 [WRONG]
-  - Misconception: Misconception: You brought down digits in the wrong order or skipped a step. In long division, you must bring down the next digit one at a time (first the 3, then the 7).
+  - Misconception: Nice try. Some digits came down too fast. Bring them one at a time to stay on track.
 - D. 247.4 [WRONG]
-  - Misconception: Misconception: You converted the remainder into a decimal even though the problem asked for a remainder. Here you should stop after the remainder and write it as R2.
+  - Misconception: Nice try. Your decimal is right! The question just wants the answer with a "remainder" (like R2).
 
 **Correct Answer(s):** B. 247 R2
 
@@ -2770,12 +2769,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 12 [WRONG]
-  - Misconception: Misconception: You forgot to write a 0 in the quotient when you reached the 0 in 306. Even if 3 goes into 0 zero times, you still need the 0 as a placeholder.
+  - Misconception: Nice try. That middle zero is easy to skip. Write a 0 there so every digit stays in place.
 - B. 102 [CORRECT]
 - C. 112 [WRONG]
-  - Misconception: Misconception: You brought down two digits at once (making 36) instead of dividing the 0 place first. In long division, you must bring down one digit at a time to keep place value correct.
+  - Misconception: Nice try. Two digits were brought down together. Do one digit at a time for a correct answer.
 - D. 100 [WRONG]
-  - Misconception: Misconception: You stopped too early and didn’t divide the last digit. After you handle 30, you still need to bring down and divide the 6.
+  - Misconception: Nice try. You stopped one step early. Divide the last 6 to finish the problem.
 
 **Correct Answer(s):** B. 102
 
@@ -2799,12 +2798,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 6 [WRONG]
-  - Misconception: Misconception: You found a common factor, but you stopped too early. Both numbers are divisible by 12, which is greater than 6.
+  - Misconception: Nice try. You found a factor of both 36 and 48. Keep looking for the biggest one that fits both.
 - B. 12 [CORRECT]
 - C. 16 [WRONG]
-  - Misconception: Misconception: You chose a factor of 48 but didn’t check 36. A GCF must divide both numbers exactly.
+  - Misconception: Nice try. 16 fits 48 but not 36. The GCF must fit both numbers.
 - D. 144 [WRONG]
-  - Misconception: Misconception: You found a common multiple (actually the LCM), not a common factor. The GCF must be a number that goes into both 36 and 48.
+  - Misconception: Nice try. A common multiple grows from both numbers. For GCF, pick the biggest number that hides inside both.
 
 **Correct Answer(s):** B. 12
 
@@ -2818,12 +2817,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 2 [WRONG]
-  - Misconception: Misconception: You noticed both numbers are even and stopped at 2. Keep checking—there is a larger number that divides both.
+  - Misconception: Nice try. Two works, but an even bigger number also goes into both. Hunt for the largest one.
 - B. 14 [CORRECT]
 - C. 7 [WRONG]
-  - Misconception: Misconception: You found a common factor, but it is not the greatest. Since both numbers are also divisible by 14, 7 can’t be the GCF.
+  - Misconception: Nice try. Seven is common, but 14 is also common and larger. 14 is the greatest common factor.
 - D. 84 [WRONG]
-  - Misconception: Misconception: You found a common multiple (the LCM), not a common factor. The GCF must be smaller than or equal to both numbers and divide both.
+  - Misconception: Nice try. That’s the least common multiple. For GCF, find the largest number that hides inside 28 and 42.
 
 **Correct Answer(s):** B. 14
 
@@ -2837,12 +2836,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 2 [WRONG]
-  - Misconception: Misconception: You gave the greatest common factor instead of the least common multiple. LCM is a number both 6 and 8 can multiply to make.
+  - Misconception: Nice try. You found the greatest common factor. For LCM, find the smallest number both 6 and 8 can reach.
 - B. 24 [CORRECT]
 - C. 48 [WRONG]
-  - Misconception: Misconception: You multiplied 6×8, but the LCM is not always the product. Since 6 and 8 share a factor (2), the LCM is smaller than 48.
+  - Misconception: Nice try. You found a common multiple. 24 is smaller and also works, so it is the least common multiple.
 - D. 12 [WRONG]
-  - Misconception: Misconception: You may have listed multiples of 6 and stopped too soon. 12 is not a multiple of 8, so it can’t be the LCM.
+  - Misconception: Nice try. 12 is a multiple of 6, but it is not a multiple of 8.
 
 **Correct Answer(s):** B. 24
 
@@ -2856,12 +2855,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 3 [WRONG]
-  - Misconception: Misconception: You found a common factor (GCF), not a common multiple. LCM must be a number that both 9 and 12 go into.
+  - Misconception: Nice try. You found the greatest common factor. For LCM, find the smallest number that 9 and 12 can reach.
 - B. 36 [CORRECT]
 - C. 108 [WRONG]
-  - Misconception: Misconception: You used 9×12, but the LCM is not always the product. Because 9 and 12 share a factor (3), the LCM is smaller than 108.
+  - Misconception: Nice try. You used 9×12, yet the LCM is not always that product. Since both share 3, the LCM is smaller than 108.
 - D. 24 [WRONG]
-  - Misconception: Misconception: You picked a multiple of 12 but didn’t check 9. 24 is not divisible by 9, so it can’t be a common multiple.
+  - Misconception: Nice try. You picked a multiple of 12 but did not check 9. Twenty-four is not divisible by 9, so it can’t be a common multiple.
 
 **Correct Answer(s):** B. 36
 
@@ -2875,12 +2874,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 4(9 + 6) [WRONG]
-  - Misconception: Misconception: You factored out a common factor, but not the greatest one. Since 9 and 6 still share a factor (3), you can factor more.
+  - Misconception: Nice try. You factored out a common factor, but not the greatest one. Nine and six still share 3, so you can factor more.
 - B. 12(3 + 2) [CORRECT]
 - C. 12(3 + 24) [WRONG]
-  - Misconception: Misconception: You divided only 36 by 12, but you must divide both addends. When you factor out 12, 24 must become 2, not stay 24.
+  - Misconception: Nice try. You divided only 36 by 12, but you must divide both addends. When you factor out 12, 24 becomes 2, not stay 24.
 - D. 12(36 + 24) [WRONG]
-  - Misconception: Misconception: You pulled out 12 but didn’t change the numbers inside the parentheses. Factoring means each addend is rewritten as 12 times a smaller number.
+  - Misconception: Nice try. You took out 12 but left the inside unchanged. Each addend becomes 12 times a smaller number.
 
 **Correct Answer(s):** B. 12(3 + 2)
 
@@ -2904,11 +2903,11 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 15/32 [WRONG]
-  - Misconception: Misconception: You multiplied instead of dividing. For division, you should multiply by the reciprocal of 3/4, not multiply the fractions as-is.
+  - Misconception: Nice try. You multiplied instead of dividing. Flip the second fraction and multiply to divide fractions.
 - B. 1/2 [WRONG]
-  - Misconception: Misconception: You divided "top by top" and "bottom by bottom" using whole-number thinking (like 5÷3=1). That changes the fractions and doesn't represent the real quotient.
+  - Misconception: Nice try. You did top ÷ top and bottom ÷ bottom. Keep the first fraction and flip the second, then multiply.
 - C. 6/5 [WRONG]
-  - Misconception: Misconception: You inverted the wrong fraction. Only the divisor (3/4) should be flipped, not (5/8).
+  - Misconception: Nice try. You flipped the first fraction instead of the second. Only flip the fraction you are dividing by.
 - D. 5/6 [CORRECT]
 
 **Correct Answer(s):** D. 5/6
@@ -2923,11 +2922,11 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 7/8 [WRONG]
-  - Misconception: Misconception: You multiplied instead of dividing. Dividing by 1/4 should make the result larger, not smaller.
+  - Misconception: Nice try. You multiplied instead of dividing. Division by 1/4 should give a larger answer.
 - B. 12 [WRONG]
-  - Misconception: Misconception: You ignored the 1/2 and used only 3. The mixed number 3 1/2 must be treated as one value.
+  - Misconception: Nice try. Keep 3 1/2 as one number. Do not drop 1/2.
 - C. 28 [WRONG]
-  - Misconception: Misconception: You set it up correctly but forgot to divide by 2 after multiplying: 7/2 × 4 = 28/2, not 28.
+  - Misconception: Nice try. After you multiply, remember to divide that answer by 2.
 - D. 14 [CORRECT]
 
 **Correct Answer(s):** D. 14
@@ -2942,11 +2941,11 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 9/2 [WRONG]
-  - Misconception: Misconception: You multiplied by 6 instead of dividing. Dividing by 6 should make the result smaller than 3/4.
+  - Misconception: Nice try. Dividing by 6 makes the answer smaller than 3/4.
 - B. 1/6 [WRONG]
-  - Misconception: Misconception: You set up 3/24 but simplified incorrectly. When you divide 3 and 24 by 3, you get 1/8, not 1/6.
+  - Misconception: Nice try. 3/24 simplifies to 1/8, not 1/6. Divide 3 and 24 by 3.
 - C. 2/9 [WRONG]
-  - Misconception: Misconception: You inverted the wrong number. You flipped 3/4 instead of using the reciprocal of 6, which is 1/6.
+  - Misconception: Nice try. Flip only the 6. Keep 3/4 just as it is.
 - D. 1/8 [CORRECT]
 
 **Correct Answer(s):** D. 1/8
@@ -2961,11 +2960,11 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 1/9 [WRONG]
-  - Misconception: Misconception: You multiplied instead of dividing. This question asks how many 1/6-cups fit into 2/3, which is division.
+  - Misconception: Nice try. You multiplied instead of divided. We need to see how many 1/6-cups fit into 2/3, so please divide.
 - B. 9 [WRONG]
-  - Misconception: Misconception: You inverted the wrong fraction. You flipped 2/3 instead of flipping the serving size 1/6.
+  - Misconception: Nice try. Flip 1/6, not 2/3.
 - C. 6 [WRONG]
-  - Misconception: Misconception: You set it up correctly but made an arithmetic slip: 2/3 × 6 = 12/3, and 12/3 = 4, not 6.
+  - Misconception: Nice try. 2/3 × 6 is 12/3, and 12/3 is 4.
 - D. 4 [CORRECT]
 
 **Correct Answer(s):** D. 4
@@ -2980,11 +2979,11 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 9/2 [WRONG]
-  - Misconception: Misconception: You multiplied instead of dividing. Sharing equally into 3 bottles means divide by 3, not multiply by 3.
+  - Misconception: Nice try. You multiplied by 3, but sharing means divide by 3.
 - B. 2 [WRONG]
-  - Misconception: Misconception: You inverted the wrong number. You flipped the mixed number instead of dividing it by 3.
+  - Misconception: Nice try. You flipped the wrong number. Keep the mixed number as it is and divide it by 3.
 - C. 1/6 [WRONG]
-  - Misconception: Misconception: You forgot to convert the mixed number and used only 1/2 ÷ 3. The total is 1 1/2, not 1/2.
+  - Misconception: Nice try. Use 1 1/2 gallons, not 1/2.
 - D. 1/2 [CORRECT]
 
 **Correct Answer(s):** D. 1/2
@@ -3010,11 +3009,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 16.15 [CORRECT]
 - B. 46.15 [WRONG]
-  - Misconception: Misconception: You might have lined up digits instead of decimal points and treated 12.7 like 127.0. In addition, decimals must be aligned by the decimal point so tenths add with tenths.
+  - Misconception: Nice try. Line up the decimal points, not the digits. 12.7 stays 12.7.
 - C. 12.745 [WRONG]
-  - Misconception: Misconception: You may have just “stuck” the numbers together or added only the decimal parts. You need to add the whole-number parts and the decimal parts using place value.
+  - Misconception: Nice try. The numbers were stuck together. Add the tens, ones, and decimals with their place values.
 - D. 16.52 [WRONG]
-  - Misconception: Misconception: You likely added 7 + 45 as if they were in the same place value. Write 12.7 as 12.70 so hundredths line up before adding.
+  - Misconception: Nice try. Write 12.7 as 12.70 so the hundredths line up before adding.
 
 **Correct Answer(s):** A. 16.15
 
@@ -3029,11 +3028,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 42.35 [CORRECT]
 - B. 43.17 [WRONG]
-  - Misconception: Misconception: You likely subtracted without borrowing correctly across the decimal. In 50.20 − 7.85, you must borrow 1 tenth as 10 hundredths (and possibly borrow from the whole number too).
+  - Misconception: Nice try. You may have skipped borrowing past the decimal. In 50.20 − 7.85, borrow 1 tenth to make 10 hundredths so you can subtract.
 - C. 42.17 [WRONG]
-  - Misconception: Misconception: You may have subtracted 85 from 20 as if you could do 20 − 85 without regrouping. You need to rename 50.20 by borrowing so the hundredths place is large enough.
+  - Misconception: Nice try. Borrow from the tens place so you can subtract 85 from a bigger number.
 - D. 48.35 [WRONG]
-  - Misconception: Misconception: You might have subtracted only the decimal part (0.2 − 0.85) incorrectly and kept 50 − 7 as 48. You must subtract the whole number and decimal parts together after lining up decimals.
+  - Misconception: Nice try. Line up the decimals first. Then subtract the whole part and decimal part together.
 
 **Correct Answer(s):** A. 42.35
 
@@ -3048,11 +3047,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 43.8 [CORRECT]
 - B. 4.38 [WRONG]
-  - Misconception: Misconception: You placed the decimal too far left. Multiply as whole numbers (146 × 3 = 438) and then put the decimal back using the one decimal place in 14.6.
+  - Misconception: Nice try. Multiply 146 x 3 = 438, then put the decimal back. 14.6 has one decimal place, so the answer is 43.8.
 - C. 438 [WRONG]
-  - Misconception: Misconception: You forgot to put the decimal back in the product. Since 14.6 has one digit after the decimal, the answer must also have one digit after the decimal.
+  - Misconception: Nice try. You forgot to show the decimal in the answer. 14.6 has one place after the decimal, so your product needs one too.
 - D. 44.6 [WRONG]
-  - Misconception: Misconception: You may have multiplied only the whole-number part and then added the decimal part. The 0.6 is part of 14.6, so it must also be multiplied by 3.
+  - Misconception: Nice try. Multiply all of 14.6 by 3, including the 0.6 part.
 
 **Correct Answer(s):** A. 43.8
 
@@ -3067,11 +3066,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 0.84 [CORRECT]
 - B. 8.4 [WRONG]
-  - Misconception: Misconception: You multiplied 24 × 35 correctly but didn’t place the decimal. The product must have 1 + 2 = 3 decimal places total.
+  - Misconception: Nice try. Move the decimal three spots left to show the correct place value.
 - C. 0.084 [WRONG]
-  - Misconception: Misconception: You counted one extra decimal place. 2.4 has 1 decimal place and 0.35 has 2, so the answer should have 3 decimal places, not 4.
+  - Misconception: Nice try. Count the decimal places again. 2.4 gives one and 0.35 gives two, so the answer needs three places.
 - D. 0.89 [WRONG]
-  - Misconception: Misconception: You likely made a multiplication error with the whole-number version. 24 × 35 should be 840, and then you place the decimal.
+  - Misconception: Nice try. A small multiplication slip happened. 24 × 35 should be 840, then move the decimal three spots.
 
 **Correct Answer(s):** A. 0.84
 
@@ -3086,11 +3085,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 4.16 [CORRECT]
 - B. 41.6 [WRONG]
-  - Misconception: Misconception: You moved the decimal in the quotient the wrong way. When dividing by a whole number, keep the decimal in the quotient lined up with the decimal in the dividend.
+  - Misconception: Nice try. Keep the decimal point straight up and down when you divide.
 - C. 0.416 [WRONG]
-  - Misconception: Misconception: You placed the decimal too far left, as if you divided by 30 instead of 3. In long division, bring the decimal point straight up into the quotient.
+  - Misconception: Nice try. The decimal shifted left and made the number too small. Just bring the decimal straight up into your answer line.
 - D. 4.6 [WRONG]
-  - Misconception: Misconception: You likely stopped too early or didn’t divide the hundredths place. 12.48 has hundredths, so you must continue dividing past the decimal to include them.
+  - Misconception: Nice try. Keep dividing to show the hundredths in 12.48.
 
 **Correct Answer(s):** A. 4.16
 
@@ -3115,11 +3114,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. -7 [CORRECT]
 - B. +7 [WRONG]
-  - Misconception: Misconception: You ignored that 'below zero' means negative.
+  - Misconception: Nice try. "Below zero" always means a negative number. Use the minus sign in front.
 - C. 0 [WRONG]
-  - Misconception: Misconception: You 0 means exactly at zero, not below zero.
+  - Misconception: Nice try. 0 is right on the zero line. Seven below means we move 7 steps down.
 - D. 7/0 [WRONG]
-  - Misconception: Misconception: You used an invalid expression instead of an integer sign.
+  - Misconception: Nice try. A division slash is not needed. Just put a minus sign to show below zero.
 
 **Correct Answer(s):** A. -7
 
@@ -3133,12 +3132,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 12 [WRONG]
-  - Misconception: Misconception: You ignored that below sea level is negative.
+  - Misconception: Nice try. "Below sea level" needs a negative sign. Put − in front of the number.
 - B. -12 [CORRECT]
 - C. 0 [WRONG]
-  - Misconception: Misconception: You 0 represents sea level, not below it.
+  - Misconception: Nice try. 0 marks sea level. The diver is under it, so we use a negative number.
 - D. 1/12 [WRONG]
-  - Misconception: Misconception: You converted the value to a fraction instead of using a signed integer.
+  - Misconception: Nice try. Skip the fraction. Use a plain positive or negative integer for the elevation.
 
 **Correct Answer(s):** B. -12
 
@@ -3152,12 +3151,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. Deposit is negative, withdrawal is positive. [WRONG]
-  - Misconception: Misconception: You reversed the usual sign convention for gains and losses.
+  - Misconception: Nice try. A deposit adds money, so it is positive. A withdrawal takes money out, so it is negative.
 - B. Deposit is positive, withdrawal is negative. [CORRECT]
 - C. Both deposit and withdrawal are positive. [WRONG]
-  - Misconception: Misconception: You using the same sign loses the idea of opposite directions of change.
+  - Misconception: Nice try. If both had the same sign, we could not see money coming or going. Different signs show if the balance grows or shrinks.
 - D. Both deposit and withdrawal are negative. [WRONG]
-  - Misconception: Misconception: You using the same sign loses the distinction between adding and removing value.
+  - Misconception: Nice try. One action adds money, the other takes it. We need one plus sign and one minus sign.
 
 **Correct Answer(s):** B. Deposit is positive, withdrawal is negative.
 
@@ -3171,12 +3170,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 0 means no temperature exists. [WRONG]
-  - Misconception: Misconception: You 0 is a point on the number line, not the absence of the quantity.
+  - Misconception: Nice try. Zero is just another spot on the scale. Cold temps can still be above or below it.
 - B. 0 means the temperature is exactly at the reference point between positive and negative values. [CORRECT]
 - C. 0 means the temperature is positive. [WRONG]
-  - Misconception: Misconception: You 0 is neither positive nor negative.
+  - Misconception: Nice try. Zero is right in the middle. It is not positive and it is not negative.
 - D. 0 means the temperature is negative. [WRONG]
-  - Misconception: Misconception: You 0 is not negative; it separates positive and negative values.
+  - Misconception: Nice try. Zero is the fence between the plus side and the minus side.
 
 **Correct Answer(s):** B. 0 means the temperature is exactly at the reference point between positive and negative values.
 
@@ -3190,12 +3189,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. -9 [WRONG]
-  - Misconception: Misconception: You negative values represent losses or opposite direction, not gains.
+  - Misconception: Nice try. Big or small, the minus sign shows a loss, not a gain.
 - B. +5 [WRONG]
-  - Misconception: Misconception: You this is a gain, but not the larger one among the options.
+  - Misconception: Nice try. This number is a gain. Look for the other positive number that is even bigger.
 - C. +9 [CORRECT]
 - D. 0 [WRONG]
-  - Misconception: Misconception: You 0 means no gain or loss, not a larger gain.
+  - Misconception: Nice try. Zero means no change. There was no gain and no loss.
 
 **Correct Answer(s):** C. +9
 
@@ -3214,11 +3213,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. −1.75, −1.5, −0.25, 0.2 [CORRECT]
 - B. −1.5, −1.75, −0.25, 0.2 [WRONG]
-  - Misconception: Misconception: You compared the digits and treated the negatives like positives. For negatives, the number closer to 0 is actually greater.
+  - Misconception: Nice try. On the number line, -1.75 is farther left, so it is smaller than -1.5.
 - C. −1.75, −0.25, −1.5, 0.2 [WRONG]
-  - Misconception: Misconception: You placed −0.25 to the left of −1.5 as if "0.25 is smaller than 1.5." The sign matters: −0.25 is closer to 0, so it should be to the right of −1.5.
+  - Misconception: Nice try. -0.25 is closer to zero than -1.5, so -0.25 is bigger on the number line.
 - D. 0.2, −0.25, −1.5, −1.75 [WRONG]
-  - Misconception: Misconception: You reversed the direction of the number line. Numbers increase as you move right, not left.
+  - Misconception: Nice try. The list goes from big to small. For least to greatest, start at the most negative.
 
 **Correct Answer(s):** A. −1.75, −1.5, −0.25, 0.2
 
@@ -3233,11 +3232,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. (−2/3 < −0.6) [CORRECT]
 - B. (−2/3 > −0.6) [WRONG]
-  - Misconception: Misconception: You compared the sizes 0.67 and 0.6 and forgot that with negatives, the one farther from 0 is actually smaller.
+  - Misconception: Nice try. You are right that 0.67 is bigger than 0.6, but both are negative. The number further from zero, -2/3, is smaller on the line.
 - C. (−2/3 = −0.6) [WRONG]
-  - Misconception: Misconception: You rounded −0.666... to −0.6 and treated it as exact. A rounded value doesn't make them equal.
+  - Misconception: Nice try. -0.666... is close to -0.6, but it is not equal. So -2/3 is less than -0.6.
 - D. (−0.6 < −2/3) [WRONG]
-  - Misconception: Misconception: You treated "less than" like it means "closer to zero" without checking which side is actually farther left on the number line.
+  - Misconception: Nice try. Pick the number that sits farther left on the number line. That one is smaller.
 
 **Correct Answer(s):** A. (−2/3 < −0.6)
 
@@ -3252,11 +3251,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 7.5 m [CORRECT]
 - B. −7.5 m [WRONG]
-  - Misconception: Misconception: You kept the negative sign, but distance is how far, not which direction. Distance cannot be negative.
+  - Misconception: Nice try. You found the diver’s spot. Distance is always a positive measure, so drop the minus sign.
 - C. 0 m [WRONG]
-  - Misconception: Misconception: You treated sea level as the answer without measuring the gap from (−7.5) to 0.
+  - Misconception: Nice try. The water level is 0, but the diver is a few meters from it. We need that total distance.
 - D. 15 m [WRONG]
-  - Misconception: Misconception: You measured from (−7.5) to (+7.5) instead of from (−7.5) to 0.
+  - Misconception: Nice try. Count only from the diver up to 0. Do not double the depth.
 
 **Correct Answer(s):** A. 7.5 m
 
@@ -3271,11 +3270,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. −0.6 [CORRECT]
 - B. −0.75 [WRONG]
-  - Misconception: Misconception: You thought "75 is bigger than 60 so it must be bigger." With negatives, the number closer to 0 is greater.
+  - Misconception: Nice try. Sevent-five looks larger than 60, yet for negatives, the one closer to zero, -0.6, is greatest in the group.
 - C. (−2/3) [WRONG]
-  - Misconception: Misconception: You focused on the fraction looking "big" and didn't compare its decimal value. (−2/3 ≈ −0.666...) which is less than −0.6.
+  - Misconception: Nice try. -2/3 is about -0.666. That tiny extra distance from zero makes it smaller than -0.6.
 - D. (−5/8) [WRONG]
-  - Misconception: Misconception: You compared 5 and 8 without converting or estimating. (−5/8 = −0.625), which is close, but still less than −0.6.
+  - Misconception: Nice try. -5/8 equals -0.625. It is just a bit farther from zero than -0.6.
 
 **Correct Answer(s):** A. −0.6
 
@@ -3290,11 +3289,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. (−3) is to the right of (−8) on the number line, so (−3) is greater. [CORRECT]
 - B. Because 8 is greater than 3, (−8) must be greater than (−3). [WRONG]
-  - Misconception: Misconception: You compared the digits and ignored how negatives work. A larger absolute value means the number is farther left, not greater.
+  - Misconception: Nice try. With minus numbers, bigger absolute value means the number is smaller on the line.
 - C. Since |−8| > |−3|, (−8) is greater. [WRONG]
-  - Misconception: Misconception: You used absolute value to decide which is greater. Absolute value tells distance from 0, not which number is larger.
+  - Misconception: Nice try. Absolute value tells distance, but distance alone does not show order on the line.
 - D. Any negative number is greater than any other negative number if it has the minus sign. [WRONG]
-  - Misconception: Misconception: You treated the negative sign like it makes numbers all "the same kind." Negatives still have an order based on position on the number line.
+  - Misconception: Nice try. Negative numbers keep order. Closer to zero is always greater than farther away.
 
 **Correct Answer(s):** A. (−3) is to the right of (−8) on the number line, so (−3) is greater.
 
@@ -3318,12 +3317,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. -8 [WRONG]
-  - Misconception: Misconception: You opposites are the same distance from 0 but on opposite sides.
+  - Misconception: Nice try. Opposites are mirror images. They are the same distance from zero, but on the other side.
 - B. 8 [CORRECT]
 - C. -16 [WRONG]
-  - Misconception: Misconception: You doubled the value instead of reflecting across 0.
+  - Misconception: Nice try. It looks like you doubled the number. Just jump across zero from negative to positive.
 - D. 0 [WRONG]
-  - Misconception: Misconception: You 0 is the center point, not the opposite of -8.
+  - Misconception: Nice try. 0 sits between opposite numbers. It is the starting point on the number line.
 
 **Correct Answer(s):** B. 8
 
@@ -3337,12 +3336,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. Quadrant I [WRONG]
-  - Misconception: Misconception: You quadrant I requires both coordinates positive.
+  - Misconception: Nice try. In Quadrant I both x and y are positive. Here x is -3, so we are not there.
 - B. Quadrant II [CORRECT]
 - C. Quadrant III [WRONG]
-  - Misconception: Misconception: You quadrant III requires both coordinates negative.
+  - Misconception: Nice try. In Quadrant III, both x and y must be negative.
 - D. Quadrant IV [WRONG]
-  - Misconception: Misconception: You quadrant IV requires positive x and negative y.
+  - Misconception: Nice try. Quadrant IV has positive x and negative y; our point has the opposite signs.
 
 **Correct Answer(s):** B. Quadrant II
 
@@ -3357,11 +3356,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. (3, -1) [CORRECT]
 - B. (-7, -1) [WRONG]
-  - Misconception: Misconception: You moved left 5 instead of right 5.
+  - Misconception: Nice try. Moving right adds to the x-value; it looks like you moved 5 steps left instead.
 - C. (3, 7) [WRONG]
-  - Misconception: Misconception: You moved up 4 instead of down 4.
+  - Misconception: Nice try. Moving down subtracts from the y-value; you moved up 4 instead.
 - D. (-1, 3) [WRONG]
-  - Misconception: Misconception: You changed the wrong coordinate for each movement.
+  - Misconception: Nice try. It seems the x and y moves were swapped.
 
 **Correct Answer(s):** A. (3, -1)
 
@@ -3376,11 +3375,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. (0, -4) [CORRECT]
 - B. (-4, 0) [WRONG]
-  - Misconception: Misconception: You this lies on the x-axis because y = 0.
+  - Misconception: Nice try. This point is on the x-axis because y is 0. Y-axis points have x = 0.
 - C. (3, 0) [WRONG]
-  - Misconception: Misconception: You points on y-axis must have x = 0, not y = 0.
+  - Misconception: Nice try. On the y-axis, x must be 0.
 - D. (2, -4) [WRONG]
-  - Misconception: Misconception: You both coordinates are nonzero, so it is not on an axis.
+  - Misconception: Nice try. Since both numbers are non-zero, the point floats in a quadrant, not on an axis.
 
 **Correct Answer(s):** A. (0, -4)
 
@@ -3394,12 +3393,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. (2/3, -1/2) [WRONG]
-  - Misconception: Misconception: You signs are reversed: x is positive and y is negative.
+  - Misconception: Nice try. The signs are swapped; this point has positive x and negative y.
 - B. (-2/3, 1/2) [CORRECT]
 - C. (-2/3, -1/2) [WRONG]
-  - Misconception: Misconception: You both coordinates are negative.
+  - Misconception: Nice try. Both numbers are negative, so the point lands in Quadrant III.
 - D. (2/3, 1/2) [WRONG]
-  - Misconception: Misconception: You both coordinates are positive.
+  - Misconception: Nice try. Both numbers are positive, so the point belongs in Quadrant I.
 
 **Correct Answer(s):** B. (-2/3, 1/2)
 
@@ -3424,11 +3423,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 2:3 [CORRECT]
 - B. 3:2 [WRONG]
-  - Misconception: Misconception: You reversed the order. The question asks apples to oranges.
+  - Misconception: Nice try. The question asked for apples to oranges, so list the apples number first.
 - C. 8:12 [WRONG]
-  - Misconception: Misconception: You this ratio is correct but not simplified.
+  - Misconception: Nice try. Your numbers are right. Now divide both by the same small number to simplify it more.
 - D. 4:6 [WRONG]
-  - Misconception: Misconception: You simplified only partway; ratio can be reduced further.
+  - Misconception: Nice try. You simplified once, but another divide step will give the simplest form.
 
 **Correct Answer(s):** A. 2:3
 
@@ -3443,11 +3442,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. The ratio of girls to boys is 15 to 10. [CORRECT]
 - B. The ratio of girls to boys is 10 to 15. [WRONG]
-  - Misconception: Misconception: You reversed girls and boys in the ratio.
+  - Misconception: Nice try. Girls came first in the sentence, so put girls first in the ratio too.
 - C. The ratio of girls to boys is 25. [WRONG]
-  - Misconception: Misconception: You a ratio compares two quantities; it is not their sum.
+  - Misconception: Nice try. Ratios show one group to another group, not one big total of everyone.
 - D. The ratio of girls to boys is 15/25. [WRONG]
-  - Misconception: Misconception: You compared girls to total students, not girls to boys.
+  - Misconception: Nice try. This shows girls to the whole class, but we need girls to boys.
 
 **Correct Answer(s):** A. The ratio of girls to boys is 15 to 10.
 
@@ -3462,11 +3461,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 2:5 [CORRECT]
 - B. 2:3 [WRONG]
-  - Misconception: Misconception: You found red to blue, not red to total.
+  - Misconception: Nice try. You gave red to blue, but the question wants red to all marbles combined.
 - C. 5:2 [WRONG]
-  - Misconception: Misconception: You reversed the ratio red to total.
+  - Misconception: Nice try. The order was flipped. List red first, then the total of all marbles.
 - D. 6:9 [WRONG]
-  - Misconception: Misconception: You used red to blue and did not simplify.
+  - Misconception: Nice try. That is red to blue. Try red to the total of all marbles.
 
 **Correct Answer(s):** A. 2:5
 
@@ -3481,11 +3480,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 9 [CORRECT]
 - B. 16 [WRONG]
-  - Misconception: Misconception: You scaled the wrong term in the ratio.
+  - Misconception: Nice try. Match the 12 dogs to the 4 in the ratio. Multiply the other parts the same way.
 - C. 8 [WRONG]
-  - Misconception: Misconception: You may have used additive reasoning instead of multiplicative ratio scaling.
+  - Misconception: Nice try. Ratios grow by multiplying both parts by the same number, not by adding.
 - D. 15 [WRONG]
-  - Misconception: Misconception: You added the ratio parts then subtracted incorrectly.
+  - Misconception: Nice try. Adding mixes it up. Use multiplication to scale both parts of the ratio.
 
 **Correct Answer(s):** A. 9
 
@@ -3500,11 +3499,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 8:14 [CORRECT]
 - B. 7:4 [WRONG]
-  - Misconception: Misconception: You reversed the order of the ratio terms.
+  - Misconception: Nice try. Order matters in ratios. Switching the numbers changes what the ratio tells us.
 - C. 12:14 [WRONG]
-  - Misconception: Misconception: You only one term was scaled correctly.
+  - Misconception: Nice try. You scaled only one number. To keep the ratio fair, multiply both numbers by the same amount.
 - D. 4:11 [WRONG]
-  - Misconception: Misconception: You changing only one term does not keep ratios equivalent.
+  - Misconception: Nice try. Change just one number and the 4:7 match is lost.
 
 **Correct Answer(s):** A. 8:14
 
@@ -3523,11 +3522,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. $3.33 per notebook [CORRECT]
 - B. $0.30 per notebook [WRONG]
-  - Misconception: Misconception: You divided notebooks by dollars, which flips the rate. That gives notebooks per dollar, not dollars per notebook.
+  - Misconception: Nice try. You flipped the division. Divide dollars by the number of notebooks to get the price for one.
 - C. $10 per 3 notebooks [WRONG]
-  - Misconception: Misconception: You kept the ratio "per 3" instead of converting it to "per 1 notebook.".
+  - Misconception: Nice try. You found the total cost. To get unit price, divide that total by the number of notebooks.
 - D. $3.30 per notebook [WRONG]
-  - Misconception: Misconception: You rounded too early and stopped at one decimal place before writing the final answer to the nearest cent.
+  - Misconception: Nice try. You almost have it. Keep dividing to two decimal places to round the price correctly.
 
 **Correct Answer(s):** A. $3.33 per notebook
 
@@ -3542,11 +3541,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 40 miles per hour [CORRECT]
 - B. 0.67 miles per minute [WRONG]
-  - Misconception: Misconception: You used minutes instead of hours, so your "per" unit doesn't match miles per hour.
+  - Misconception: Nice try. You changed hours to minutes, but we still need miles each hour.
 - C. 120 miles per hour [WRONG]
-  - Misconception: Misconception: You treated 120 miles as if it happened in 1 hour and forgot to divide by 3 hours.
+  - Misconception: Nice try. 120 is for three hours. We need the miles for just one hour.
 - D. 0.025 hours per mile [WRONG]
-  - Misconception: Misconception: You flipped the rate; that's hours per mile, not miles per hour.
+  - Misconception: Nice try. That gives hours for one mile. Flip it to get miles in one hour.
 
 **Correct Answer(s):** A. 40 miles per hour
 
@@ -3561,11 +3560,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 1 mile per 10 minutes [CORRECT]
 - B. 0.1 mile per minute [WRONG]
-  - Misconception: Misconception: You found a unit rate, but it's per 1 minute, not per 10 minutes.
+  - Misconception: Nice try. You found the rate for 1 minute. Now multiply it by 10 to get the asked-for time.
 - C. 6 miles per hour [WRONG]
-  - Misconception: Misconception: You converted to per hour instead of per 10 minutes.
+  - Misconception: Nice try. You switched the time to one hour. Try the same math for just 10 minutes.
 - D. 3 miles per 30 minutes [WRONG]
-  - Misconception: Misconception: You kept the original ratio and didn't convert it to "per 10 minutes.".
+  - Misconception: Nice try. That is the whole amount. Split it to find the ten-minute rate.
 
 **Correct Answer(s):** A. 1 mile per 10 minutes
 
@@ -3580,11 +3579,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 3 cookies per $1 [CORRECT]
 - B. $0.33 per cookie [WRONG]
-  - Misconception: Misconception: You found dollars per cookie, which is the opposite of cookies per dollar.
+  - Misconception: Nice try. That is dollars per cookie. We need cookies per one dollar.
 - C. 12 cookies per $4 [WRONG]
-  - Misconception: Misconception: You didn't convert the rate to "per $1.".
+  - Misconception: Nice try. Good start! For a unit rate we need the amount for exactly one dollar.
 - D. 0.33 cookies per $1 [WRONG]
-  - Misconception: Misconception: You divided $4 by 12 instead of 12 by $4, so the numerator/denominator got swapped.
+  - Misconception: Nice try. Divide cookies by cost to see how many cookies one dollar buys.
 
 **Correct Answer(s):** A. 3 cookies per $1
 
@@ -3599,11 +3598,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. The cyclist rides 8 miles per hour. [CORRECT]
 - B. The cyclist rides 6 miles per hour. [WRONG]
-  - Misconception: Misconception: You rounded 1.5 hours to 2 hours before dividing, which changes the rate.
+  - Misconception: Nice try. Stay exact. Divide by 1.5 right away and you will get a cleaner decimal result.
 - C. The cyclist rides 12 miles per hour. [WRONG]
-  - Misconception: Misconception: You used the 12 miles as if it happened in 1 hour and didn't divide by 1.5 hours.
+  - Misconception: Nice try. That would work only if the trip lasted one full hour.
 - D. The cyclist rides 0.125 hours per mile. [WRONG]
-  - Misconception: Misconception: You flipped the rate; that's hours per mile, not miles per hour.
+  - Misconception: Nice try. Flip the division to get miles in one hour, not hours per mile.
 
 **Correct Answer(s):** A. The cyclist rides 8 miles per hour.
 
@@ -3627,12 +3626,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 1000 [WRONG]
-  - Misconception: Misconception: You treated 20% like the number 20 and did 20 × 50. Percent means "out of 100," not "times 20.".
+  - Misconception: Nice try. 20% means 20 for each 100, so we need a part of 50, not 20 times 50.
 - B. 10 [CORRECT]
 - C. 2.5 [WRONG]
-  - Misconception: Misconception: You divided 50 ÷ 20, but "20% of 50" means take a part of 50, which uses multiplication by a percent.
+  - Misconception: Nice try. When finding a percent of something, multiply the number by the decimal form of the percent.
 - D. 30 [WRONG]
-  - Misconception: Misconception: You subtracted 20 from 50 as if 20% meant "take away 20." A percent is not the same as subtracting that number.
+  - Misconception: Nice try. We need 20% of 50, not 50 take away 20. Think of the portion of the whole.
 
 **Correct Answer(s):** B. 10
 
@@ -3646,12 +3645,12 @@ Status: generated export for review workflows. Do not manually curate business r
 
 **Choices:**
 - A. 1440 [WRONG]
-  - Misconception: Misconception: You treated 60% like 60 and did 24 × 60. Percent is a ratio out of 100, not a whole-number multiplier.
+  - Misconception: Nice try. A percent is a ratio out of 100, so you divide, not multiply, to find the whole.
 - B. 40 [CORRECT]
 - C. 0.4 [WRONG]
-  - Misconception: Misconception: You did 24 ÷ 60 and forgot that 60% means 60/100, not 60.
+  - Misconception: Nice try. You almost have it. Just remember 60% means 0.6 when you multiply.
 - D. 84 [WRONG]
-  - Misconception: Misconception: You added the part and the percent: 24 + 60. The percent is not another amount to add to the part.
+  - Misconception: Nice try. Percents work by multiplying a fraction. You divide, not add, to find the whole.
 
 **Correct Answer(s):** B. 40
 
@@ -3666,11 +3665,11 @@ Status: generated export for review workflows. Do not manually curate business r
 **Choices:**
 - A. 25% of 60 [CORRECT]
 - B. 30% of 40 [WRONG]
-  - Misconception: Misconception: You chose the bigger percent (30%) without checking the wholes. A bigger percent of a smaller number can still be smaller.
+  - Misconception: Nice try. 30% looks bigger, yet a smaller percent of a bigger number can win. Always multiply and compare the real amounts.
 - C. They are equal [WRONG]
-  - Misconception: Misconception: You assumed the higher percent "balances out" the smaller whole. You still need to compare the actual amounts.
+  - Misconception: Nice try. They look close, but if you multiply each percent by its number, you will see different answers.
 - D. Not enough information [WRONG]
-  - Misconception: Misconception: You can find each amount from the given numbers. You don't need any extra information.
+  - Misconception: Nice try. You already have the numbers you need. Just multiply each percent by its amount.
 
 **Correct Answer(s):** A. 25% of 60
 
@@ -3692,12 +3691,12 @@ What is 25% of the number?
 
 **Choices:**
 - A. 150 [WRONG]
-  - Misconception: Misconception: You used 25 like a whole number and multiplied 25 × 6. But 25% means 25 out of 100, not "times 25.".
+  - Misconception: Nice try. 25% is a small slice, so we need a part of 60, not 25 times 6.
 - B. 15 [CORRECT]
 - C. 2.4 [WRONG]
-  - Misconception: Misconception: You divided 60 ÷ 25, but 25% is not 25; it's 25/100.
+  - Misconception: Nice try. 25% is one fourth, so we find that small slice, not 60 split by 25.
 - D. 35 [WRONG]
-  - Misconception: Misconception: You did 60 − 25, mixing a percent with a whole-number subtraction. You can't subtract "25%" as if it's 25.
+  - Misconception: Nice try. We need 25% of 60, not 60 minus 25. The percent gives us the slice size.
 
 **Correct Answer(s):** B. 15
 
@@ -3711,12 +3710,12 @@ What is 25% of the number?
 
 **Choices:**
 - A. 45G = 180 [WRONG]
-  - Misconception: Misconception: You treated 45% like 45. Percent means per 100, so 45% should be written as 0.45 or 45/100.
+  - Misconception: Nice try. 45% as a decimal is 0.45. Use 0.45 in the equation.
 - B. 0.45G = 180 [CORRECT]
 - C. G ÷ 0.45 = 180 [WRONG]
-  - Misconception: Misconception: You put the division in the wrong place. The situation says "part = percent of whole," so the percent should multiply the whole.
+  - Misconception: Nice try. The rule says "part = percent of whole." That means multiply, not divide.
 - D. 0.45 × 180 = G [WRONG]
-  - Misconception: Misconception: You multiplied the percent by the part, which mixes up part and whole. The percent should be applied to the goal (G), not to 180.
+  - Misconception: Nice try. Multiply the percent by the goal, not by the part.
 
 **Correct Answer(s):** B. 0.45G = 180
 
@@ -3740,12 +3739,12 @@ What is 25% of the number?
 
 **Choices:**
 - A. 12 [WRONG]
-  - Misconception: Misconception: You treated the exponent like a multiplier and did 3 × 4. Exponents mean repeated multiplication, not "times the exponent.".
+  - Misconception: Nice try. 3^4 is not 3x4. It means 3x3x3x3.
 - B. 64 [WRONG]
-  - Misconception: Misconception: You switched the base and exponent and did 4³. The base is 3 and the exponent is 4 here.
+  - Misconception: Nice try. You swapped base and power. Use 3 as base and multiply it four times.
 - C. 81 [CORRECT]
 - D. 27 [WRONG]
-  - Misconception: Misconception: You used the wrong exponent and did 3³. The exponent tells how many 3's to multiply, and here it's 4.
+  - Misconception: Nice try. You only multiplied 3 three times. Add one more 3 to finish 3 to the fourth power.
 
 **Correct Answer(s):** C. 81
 
@@ -3759,12 +3758,12 @@ What is 25% of the number?
 
 **Choices:**
 - A. 15 [WRONG]
-  - Misconception: Misconception: You did 5 × 3. But 5³ means three 5's multiplied together, not 5 times 3.
+  - Misconception: Nice try. It looks like 5×3. Cube means 5×5×5.
 - B. 125 [CORRECT]
 - C. 243 [WRONG]
-  - Misconception: Misconception: You flipped it and did 3⁵. Don't swap base and exponent—5³ is different from 3⁵.
+  - Misconception: Nice try. 5³ and 3⁵ give different answers. Be sure the base and exponent stay in place.
 - D. 25 [WRONG]
-  - Misconception: Misconception: You only multiplied two 5's, like 5². The exponent 3 needs three 5's: 5 × 5 × 5.
+  - Misconception: Nice try. You used two 5’s. Cube needs three: 5×5×5.
 
 **Correct Answer(s):** B. 125
 
@@ -3778,12 +3777,12 @@ What is 25% of the number?
 
 **Choices:**
 - A. 12 [WRONG]
-  - Misconception: Misconception: You treated 4 × 2 like just "+4" and didn't multiply by 2. The × means multiply first, then add.
+  - Misconception: Nice try. Do the power and multiplication before you add. That keeps every step in order.
 - B. 14 [WRONG]
-  - Misconception: Misconception: You treated 2³ like 2 × 3. Exponents mean repeated multiplication: 2³ = 2 × 2 × 2.
+  - Misconception: Nice try. 2³ means 2×2×2, not 2×3.
 - C. 16 [CORRECT]
 - D. 24 [WRONG]
-  - Misconception: Misconception: You added 2³ + 4 first and then multiplied by 2. Multiplication comes before addition unless parentheses say otherwise.
+  - Misconception: Nice try. Do multiplication and powers before you add. That is the order of operations.
 
 **Correct Answer(s):** C. 16
 
@@ -3798,11 +3797,11 @@ What is 25% of the number?
 **Choices:**
 - A. 9 and −9 [CORRECT]
 - B. −9 and −9 [WRONG]
-  - Misconception: Misconception: You acted like the parentheses don't matter. But (−3)² squares the negative number inside the parentheses.
+  - Misconception: Nice try. The whole −3 is squared, so the answer is positive.
 - C. 9 and 9 [WRONG]
-  - Misconception: Misconception: You assumed "squaring always makes it positive," but in −3² the square happens first, then the negative sign is applied.
+  - Misconception: Nice try. For −3², square 3 first, then keep the minus.
 - D. −9 and 9 [WRONG]
-  - Misconception: Misconception: You swapped which expression has the negative included in the square. The parentheses decide whether the −3 is squared or not.
+  - Misconception: Nice try. Parentheses tell which number is squared. Keep track of what is inside them.
 
 **Correct Answer(s):** A. 9 and −9
 
@@ -3817,11 +3816,11 @@ What is 25% of the number?
 **Choices:**
 - A. (2 + 5)² [CORRECT]
 - B. 2² + 5² [WRONG]
-  - Misconception: Misconception: You squared each number separately. The words say square the sum, so you must add first, then square.
+  - Misconception: Nice try. First add the numbers, then square the total. Do not square each number alone.
 - C. 2 + 5² [WRONG]
-  - Misconception: Misconception: You squared only the 5. The phrase "square of the sum" means the entire (2 + 5) gets squared.
+  - Misconception: Nice try. You squared only 5. Add 2 and 5 first, then square that whole sum.
 - D. (2 + 5) × 2 [WRONG]
-  - Misconception: Misconception: You treated "square" like "multiply by 2." Squaring means multiply the quantity by itself.
+  - Misconception: Nice try. Square means multiply the number by itself, not multiply by 2.
 
 **Correct Answer(s):** A. (2 + 5)²
 
@@ -3840,11 +3839,11 @@ What is 25% of the number?
 **Choices:**
 - A. Three times a number, then add five [CORRECT]
 - B. Three times the sum of a number and five [WRONG]
-  - Misconception: Misconception: You that phrase corresponds to 3(x + 5), not 3x + 5.
+  - Misconception: Nice try. That phrase is for 3(x + 5), where the whole group is multiplied. In 3x + 5, only x is multiplied by 3.
 - C. Five times a number, then add three [WRONG]
-  - Misconception: Misconception: You swapped coefficients and constants.
+  - Misconception: Nice try. It looks like the numbers were swapped around.
 - D. Three plus a number, times five [WRONG]
-  - Misconception: Misconception: You this implies (3 + x) x 5, a different expression.
+  - Misconception: Nice try. That would mean (3 + x) * 5, which is a different calculation.
 
 **Correct Answer(s):** A. Three times a number, then add five
 
@@ -3859,11 +3858,11 @@ What is 25% of the number?
 **Choices:**
 - A. 5 [CORRECT]
 - B. 17 [WRONG]
-  - Misconception: Misconception: You may have added 12 and 7 instead of subtracting 7.
+  - Misconception: Nice try. It looks like 7 was added to 12. Check the minus sign again.
 - C. -5 [WRONG]
-  - Misconception: Misconception: You reversed subtraction order and likely computed 7 - 12.
+  - Misconception: Nice try. It looks like the subtraction was done the other way (7 - 12).
 - D. 12 [WRONG]
-  - Misconception: Misconception: You stopped after 2a and forgot to subtract 7.
+  - Misconception: Nice try. You found 2a. Now just subtract 7 to finish.
 
 **Correct Answer(s):** A. 5
 
@@ -3878,11 +3877,11 @@ What is 25% of the number?
 **Choices:**
 - A. 13 [CORRECT]
 - B. 10 [WRONG]
-  - Misconception: Misconception: You used n x 2 instead of n squared.
+  - Misconception: Nice try. Use n times n, not n times 2.
 - C. 49 [WRONG]
-  - Misconception: Misconception: You likely squared the full sum instead of only n.
+  - Misconception: Nice try. You squared the whole sum, but we only square n.
 - D. 7 [WRONG]
-  - Misconception: Misconception: You added n and 4 without evaluating n squared.
+  - Misconception: Nice try. You added n and 4 without squaring n first.
 
 **Correct Answer(s):** A. 13
 
@@ -3897,11 +3896,11 @@ What is 25% of the number?
 **Choices:**
 - A. 2m - 5 [CORRECT]
 - B. 5 - 2m [WRONG]
-  - Misconception: Misconception: You reversed 'five less than' and changed the order.
+  - Misconception: Nice try. The words 'five less than' need to flip the order.
 - C. 2(m - 5) [WRONG]
-  - Misconception: Misconception: You subtracted before doubling, which changes the expression.
+  - Misconception: Nice try. First double m, then take away five.
 - D. m - 10 [WRONG]
-  - Misconception: Misconception: You doubled 5 instead of doubling m.
+  - Misconception: Nice try. Double the letter m, not the 5.
 
 **Correct Answer(s):** A. 2m - 5
 
@@ -3916,11 +3915,11 @@ What is 25% of the number?
 **Choices:**
 - A. 10 [CORRECT]
 - B. 14 [WRONG]
-  - Misconception: Misconception: You added 4 and 3 first, then multiplied by x.
+  - Misconception: Nice try. You added 4 and 3 first. Do the multiply by x before adding.
 - C. 9 [WRONG]
-  - Misconception: Misconception: You may have used 3 + x then added 4.
+  - Misconception: Nice try. Add 4 after you add 3 and x.
 - D. 24 [WRONG]
-  - Misconception: Misconception: You multiplied all terms instead of evaluating the expression structure.
+  - Misconception: Nice try. Multiply only what needs to be multiplied.
 
 **Correct Answer(s):** A. 10
 
@@ -3945,11 +3944,11 @@ What is 25% of the number?
 **Choices:**
 - A. Yes, x = 2 makes the equation true. [CORRECT]
 - B. No, x = 2 does not make the equation true. [WRONG]
-  - Misconception: Misconception: You added 3 + 2 instead of multiplying 3 × 2, so you didn’t actually check 3x.
+  - Misconception: Nice try. You added 3+2, but we need 3×2 to test 3x.
 - C. Yes, because 6 ÷ 3 = 3. [WRONG]
-  - Misconception: Misconception: You solved for x and got 3, but the question is asking whether x = 2 works; you still need to substitute 2.
+  - Misconception: Nice try. You solved for x. Just plug in 2 to see if it fits.
 - D. No, because 2 ÷ 3 = 0.67, not 6. [WRONG]
-  - Misconception: Misconception: You divided the numbers the wrong way; the equation is 3 × x, not x ÷ 3.
+  - Misconception: Nice try. The equation is 3 times x. Do not divide x over 3.
 
 **Correct Answer(s):** A. Yes, x = 2 makes the equation true.
 
@@ -3964,11 +3963,11 @@ What is 25% of the number?
 **Choices:**
 - A. {1.5} [CORRECT]
 - B. {1.1} [WRONG]
-  - Misconception: Misconception: You chose the number on the right side without substituting; x has to be tested in x − 0.4, not matched to 1.1.
+  - Misconception: Nice try. Don't just pick 1.1. Try each x in x - 0.4 and see which one equals 1.1.
 - C. {0.7} [WRONG]
-  - Misconception: Misconception: You did 1.1 − 0.4 and treated that as x, but the equation says x is the number you subtract 0.4 from.
+  - Misconception: Nice try. The equation is x take away 0.4, not 1.1 take away 0.4.
 - D. {0.7, 1.5} [WRONG]
-  - Misconception: Misconception: You didn’t check each value carefully; only one of these makes the left side equal 1.1.
+  - Misconception: Nice try. Only one of these values makes the left side equal 1.1. Check each one carefully.
 
 **Correct Answer(s):** A. {1.5}
 
@@ -3983,11 +3982,11 @@ What is 25% of the number?
 **Choices:**
 - A. No, x = 7 does not make the inequality true. [CORRECT]
 - B. Yes, x = 7 makes the inequality true. [WRONG]
-  - Misconception: Misconception: You included the “equal” case; 7 + 3 equals 10, but the inequality is “< 10,” not “≤ 10.”.
+  - Misconception: Nice try. The sign is < 10, so 10 itself is not included. 7 + 3 equals 10, so it does not fit.
 - C. Yes, because 10 − 3 = 7. [WRONG]
-  - Misconception: Misconception: You solved like it was an equation and stopped; you still need to substitute 7 and check whether the result is strictly less than 10.
+  - Misconception: Nice try. Put 7 in and add. Make sure that total stays under 10.
 - D. Yes, because 7 is less than 10. [WRONG]
-  - Misconception: Misconception: You compared x to 10 but forgot to add 3 first; the inequality is about x + 3.
+  - Misconception: Nice try. First add 3 to x, then compare that sum to 10. The inequality is about x + 3.
 
 **Correct Answer(s):** A. No, x = 7 does not make the inequality true.
 
@@ -4002,11 +4001,11 @@ What is 25% of the number?
 **Choices:**
 - A. Substitute 2: 2 + 5 = 7, and 7 ≠ 9, so x = 2 is NOT a solution. [CORRECT]
 - B. 9 − 5 = 4, so x = 2 IS a solution. [WRONG]
-  - Misconception: Misconception: You found what x should be, but you didn’t compare that to the given value x = 2.
+  - Misconception: Nice try. You found x, but you still need to check if that x equals 2.
 - C. Substitute 2: 2 + 5 = 9, so x = 2 IS a solution. [WRONG]
-  - Misconception: Misconception: You made an arithmetic error; 2 + 5 equals 7, not 9.
+  - Misconception: Nice try. 2 + 5 is 7, not 9. Check your add again.
 - D. Substitute 2: 2 + 5 = 7, and 7 < 9, so x = 2 IS a solution. [WRONG]
-  - Misconception: Misconception: You treated an equation like an inequality; equations require both sides to be equal.
+  - Misconception: Nice try. An equation needs both sides to match exactly. You used an inequality idea instead.
 
 **Correct Answer(s):** A. Substitute 2: 2 + 5 = 7, and 7 ≠ 9, so x = 2 is NOT a solution.
 
@@ -4020,12 +4019,12 @@ What is 25% of the number?
 
 **Choices:**
 - A. 3.4 [WRONG]
-  - Misconception: Misconception: You chose the result (3.4) as x, but you need x such that x − 0.6 equals 3.4.
+  - Misconception: Nice try. 3.4 is the answer. Find the x that makes x - 0.6 equal that.
 - B. 4.0 [CORRECT]
 - C. 4.6 [WRONG]
-  - Misconception: Misconception: You added 0.6 to the wrong side in your thinking; check by substituting to see whether 4.6 − 0.6 equals 3.4.
+  - Misconception: Nice try. Try 4.6 − x = 3.4 to see if x = 0.6 fits.
 - D. 5.2 [WRONG]
-  - Misconception: Misconception: You likely treated 0.6 like 6 or made a place-value slip; subtracting 0.6 should change the number by less than 1.
+  - Misconception: Nice try. You may have used 6 instead of 0.6. The change should stay smaller than 1.
 
 **Correct Answer(s):** B. 4.0
 
@@ -4044,11 +4043,11 @@ What is 25% of the number?
 **Choices:**
 - A. 5n [CORRECT]
 - B. n + 5 [WRONG]
-  - Misconception: Misconception: You used addition instead of repeated multiplication for equal groups.
+  - Misconception: Nice try. You used add. Try multiply to show the equal groups.
 - C. n/5 [WRONG]
-  - Misconception: Misconception: You divided by 5 instead of multiplying by 5 groups.
+  - Misconception: Nice try. Multiply by 5 groups, do not divide.
 - D. 5 + n + n [WRONG]
-  - Misconception: Misconception: You mixed constants and variables without representing 5 full groups.
+  - Misconception: Nice try. You mixed parts. Show all 5 full groups first.
 
 **Correct Answer(s):** A. 5n
 
@@ -4062,12 +4061,12 @@ What is 25% of the number?
 
 **Choices:**
 - A. l + 4 [WRONG]
-  - Misconception: Misconception: You added one length and one width but perimeter includes all four sides.
+  - Misconception: Nice try. You added one length and one width. Perimeter adds all four sides.
 - B. 2l + 8 [CORRECT]
 - C. 4l [WRONG]
-  - Misconception: Misconception: You treated all sides as length l.
+  - Misconception: Nice try. You made every side the letter l. We still need width w.
 - D. l x 4 [WRONG]
-  - Misconception: Misconception: You used area formula structure instead of perimeter.
+  - Misconception: Nice try. You used the area plan. Switch to the perimeter plan.
 
 **Correct Answer(s):** B. 2l + 8
 
@@ -4081,12 +4080,12 @@ What is 25% of the number?
 
 **Choices:**
 - A. a - 3 [WRONG]
-  - Misconception: Misconception: You subtracted even though 'older' means add.
+  - Misconception: Nice try. You subtracted. The word older tells us to add.
 - B. 3a [WRONG]
-  - Misconception: Misconception: You multiplied by 3 instead of adding 3 years.
+  - Misconception: Nice try. Add 3 years, do not multiply by 3.
 - C. a + 3 [CORRECT]
 - D. a/3 [WRONG]
-  - Misconception: Misconception: You divided by 3 instead of representing an age difference.
+  - Misconception: Nice try. Show an age difference, do not divide by 3.
 
 **Correct Answer(s):** C. a + 3
 
@@ -4100,12 +4099,12 @@ What is 25% of the number?
 
 **Choices:**
 - A. Only the number 1 [WRONG]
-  - Misconception: Misconception: You variables are not fixed to one value unless specified.
+  - Misconception: Nice try. A variable can hold any number unless a rule says it can’t.
 - B. Any number in the allowed set [CORRECT]
 - C. Only positive integers [WRONG]
-  - Misconception: Misconception: You variables can represent many types of numbers unless restricted.
+  - Misconception: Nice try. A variable can stand for many different numbers until a limit is set.
 - D. No number at all [WRONG]
-  - Misconception: Misconception: You a variable is a placeholder for a number.
+  - Misconception: Nice try. A variable is a placeholder for any number.
 
 **Correct Answer(s):** B. Any number in the allowed set
 
@@ -4120,11 +4119,11 @@ What is 25% of the number?
 **Choices:**
 - A. 4g + 7 [CORRECT]
 - B. 4(g + 7) [WRONG]
-  - Misconception: Misconception: You multiplied the bonus by 4, but bonus is added once.
+  - Misconception: Nice try. Add the bonus once after you count the games.
 - C. g + 11 [WRONG]
-  - Misconception: Misconception: You replaced repeated 4-point scoring with addition.
+  - Misconception: Nice try. You added the 4 points. Since we get 4 points for every game, we multiply.
 - D. 7g + 4 [WRONG]
-  - Misconception: Misconception: You swapped the coefficient and constant roles.
+  - Misconception: Nice try. The 7 and 4 swapped places. Keep the 4 with each game by multiplying first.
 
 **Correct Answer(s):** A. 4g + 7
 
@@ -4143,11 +4142,11 @@ What is 25% of the number?
 **Choices:**
 - A. 14 [CORRECT]
 - B. 32 [WRONG]
-  - Misconception: Misconception: You added 9 and 23 instead of subtracting 9.
+  - Misconception: Nice try. You added the numbers. To find x, subtract 9 from 23 instead.
 - C. 12 [WRONG]
-  - Misconception: Misconception: You subtracted incorrectly.
+  - Misconception: Nice try. You almost had it. Try 23 minus 9 one more time.
 - D. 2 [WRONG]
-  - Misconception: Misconception: You likely subtracted in the wrong order.
+  - Misconception: Nice try. We need to subtract in the right order. Check which number should come first.
 
 **Correct Answer(s):** A. 14
 
@@ -4162,11 +4161,11 @@ What is 25% of the number?
 **Choices:**
 - A. 7 [CORRECT]
 - B. 36 [WRONG]
-  - Misconception: Misconception: You subtracted instead of dividing by 6.
+  - Misconception: Nice try. You subtracted, but we need to divide to get x by itself.
 - C. 252 [WRONG]
-  - Misconception: Misconception: You multiplied instead of dividing.
+  - Misconception: Nice try. To undo the times 6, divide 42 by 6. That will give x.
 - D. 8 [WRONG]
-  - Misconception: Misconception: You made an arithmetic error in division.
+  - Misconception: Nice try. Divide 42 by 6 carefully. 42 / 6 = 7.
 
 **Correct Answer(s):** A. 7
 
@@ -4181,11 +4180,11 @@ What is 25% of the number?
 **Choices:**
 - A. 3.6 [CORRECT]
 - B. 8.6 [WRONG]
-  - Misconception: Misconception: You added the terms instead of isolating x.
+  - Misconception: Nice try. It looks like the numbers were added. To get x alone, subtract 2.5 from 6.1.
 - C. 3.1 [WRONG]
-  - Misconception: Misconception: You subtracted incorrectly after aligning decimals.
+  - Misconception: Nice try. Almost right! You set it up well, but check the subtraction again.
 - D. 2.44 [WRONG]
-  - Misconception: Misconception: You divided instead of subtracting the constant term.
+  - Misconception: Nice try. You used divide when you needed subtract. Add means you take away, so use subtract.
 
 **Correct Answer(s):** A. 3.6
 
@@ -4200,11 +4199,11 @@ What is 25% of the number?
 **Choices:**
 - A. 8 [CORRECT]
 - B. 4.5 [WRONG]
-  - Misconception: Misconception: You multiplied by 3/4 instead of dividing by 3/4.
+  - Misconception: Nice try. To undo times 3/4, divide by 3/4. That is the same as times 4/3.
 - C. 2 [WRONG]
-  - Misconception: Misconception: You divided by the numerator only.
+  - Misconception: Nice try. Use both the top and the bottom of the fraction to find x.
 - D. 24 [WRONG]
-  - Misconception: Misconception: You multiplied by denominator without accounting for numerator.
+  - Misconception: Nice try. You need both 3 and 4. First multiply by 4, then divide by 3 to solve for x.
 
 **Correct Answer(s):** A. 8
 
@@ -4219,11 +4218,11 @@ What is 25% of the number?
 **Choices:**
 - A. 3x = 27, so x = 9 [CORRECT]
 - B. x + 3 = 27, so x = 24 [WRONG]
-  - Misconception: Misconception: You used addition instead of multiplication for equal groups.
+  - Misconception: Nice try. Three equal-price groups are shown best with multiplication. Try 3x to show the total.
 - C. 27x = 3, so x = 9 [WRONG]
-  - Misconception: Misconception: You reversed the relationship between total and each pack.
+  - Misconception: Nice try. Check the order: 27 is the total cost, and 3 is the number of packs.
 - D. 3x = 27, so x = 30 [WRONG]
-  - Misconception: Misconception: You wrote the right equation but solved it incorrectly.
+  - Misconception: Nice try. You have the right setup. Now divide 27 by 3 to get the cost.
 
 **Correct Answer(s):** A. 3x = 27, so x = 9
 
@@ -4247,12 +4246,12 @@ What is 25% of the number?
 
 **Choices:**
 - A. Independent: c, Dependent: t [WRONG]
-  - Misconception: Misconception: You swapped them. The total cost depends on how many tickets you buy, not the other way around.
+  - Misconception: Nice try. The total cost changes when you pick more tickets, so cost depends on tickets.
 - B. Independent: t, Dependent: c [CORRECT]
 - C. Independent: 6, Dependent: c [WRONG]
-  - Misconception: Misconception: You treated the price "6" like a variable that changes. The $6 is a constant, not one of the changing quantities.
+  - Misconception: Nice try. The $6 never moves. Look for the things that can go up or down.
 - D. Independent: c, Dependent: 6 [WRONG]
-  - Misconception: Misconception: You chose the cost as "independent" because it looks like the main number. But cost changes because the number of tickets changes.
+  - Misconception: Nice try. As ticket count grows, the cost grows with it. Cost depends on tickets.
 
 **Correct Answer(s):** B. Independent: t, Dependent: c
 
@@ -4267,11 +4266,11 @@ What is 25% of the number?
 **Choices:**
 - A. y = 3x + 2 [CORRECT]
 - B. y = 2x + 3 [WRONG]
-  - Misconception: Misconception: You switched the starting bonus and the "points per level." The bonus is the constant, and the per-level points multiply x.
+  - Misconception: Nice try. You swapped the starting bonus and the per-level part. Keep the bonus alone.
 - C. y = 3x − 2 [WRONG]
-  - Misconception: Misconception: You subtracted the bonus instead of adding it. The situation says you start with extra points, so it should increase the total.
+  - Misconception: Nice try. The free points come one time at the start. Add them after the level points.
 - D. y = 3(x + 2) [WRONG]
-  - Misconception: Misconception: You multiplied the bonus by 3 as if the bonus repeats every level. The bonus happens once at the start, so it should be added, not multiplied.
+  - Misconception: Nice try. A starting bonus only lands once. You get it at the very start.
 
 **Correct Answer(s):** A. y = 3x + 2
 
@@ -4290,11 +4289,11 @@ y: 1, 5, 9, 13
 **Choices:**
 - A. y = 4x + 1 [CORRECT]
 - B. y = 4x − 1 [WRONG]
-  - Misconception: Misconception: You used the right "+4 each pack" pattern but chose the wrong starting value. When x = 0, the table shows y = 1, not −1.
+  - Misconception: Nice try. You saw the add 4 pattern. Now check the start number when x is 0 to finish.
 - C. y = x + 4 [WRONG]
-  - Misconception: Misconception: You noticed "add 4" in the table, but you made the multiplier 1. The table increases by 4 each time x increases by 1, so the coefficient should be 4.
+  - Misconception: Nice try. The numbers go up by 4 each time, so we write 4x. It means 4 times the packs you buy.
 - D. y = 5x + 1 [WRONG]
-  - Misconception: Misconception: You picked the wrong step size. The stickers go up by 4 each pack, not 5.
+  - Misconception: Nice try. The growth is just a bit off. Each new pack adds exactly 4 stickers.
 
 **Correct Answer(s):** A. y = 4x + 1
 
@@ -4313,11 +4312,11 @@ y: 5, 7, __
 **Choices:**
 - A. 13 [CORRECT]
 - B. 10 [WRONG]
-  - Misconception: Misconception: You did 2 × 5 but forgot to add the +3. The +3 is part of the rule every time.
+  - Misconception: Nice try. You did 2 x 5 right. Now add the last 3 to get the total.
 - C. 16 [WRONG]
-  - Misconception: Misconception: You multiplied after adding: 2(5 + 3). In 2x + 3, the +3 is added after multiplying 2x, not inside the multiplication.
+  - Misconception: Nice try. It looks like you added before you multiply. Follow the rule in order.
 - D. 8 [WRONG]
-  - Misconception: Misconception: You added 5 + 3 and forgot to multiply by 2. The rule says "2 times x" first, then +3.
+  - Misconception: Nice try. You added 5 and 3. Remember, 2x means multiply 2 by your x-value first, then use that result.
 
 **Correct Answer(s):** A. 13
 
@@ -4332,11 +4331,11 @@ y: 5, 7, __
 **Choices:**
 - A. When x increases by 1 ride, y increases by $2. [CORRECT]
 - B. When x increases by 1 ride, y increases by $4. [WRONG]
-  - Misconception: Misconception: You used the entry fee as the change each ride. The $4 happens once, not every time x goes up.
+  - Misconception: Nice try. The $4 is the one-time entry fee. The $2 is what you add for every ride.
 - C. Each time x increases by 1, y doubles. [WRONG]
-  - Misconception: Misconception: You treated 2x like "multiply the whole cost by 2 each step." But 2x means add $2 per ride, not doubling.
+  - Misconception: Nice try. Adding $2 for each ride is not the same as doubling the whole total.
 - D. When x increases by 1 ride, y increases by $6. [WRONG]
-  - Misconception: Misconception: You combined the entry fee and per-ride cost as if both repeat each ride. The entry fee doesn't repeat when you take another ride.
+  - Misconception: Nice try. You pay the entry fee only one time. Do not add it for every ride.
 
 **Correct Answer(s):** A. When x increases by 1 ride, y increases by $2.
 
@@ -4360,12 +4359,12 @@ y: 5, 7, __
 
 **Choices:**
 - A. h < 140 [WRONG]
-  - Misconception: Misconception: You reversed the direction of the inequality.
+  - Misconception: Nice try. Flip the sign. "Taller than 140" means heights bigger than 140.
 - B. h > 140 [CORRECT]
 - C. h = 140 [WRONG]
-  - Misconception: Misconception: You used equality for a strict condition.
+  - Misconception: Nice try. This says exactly 140 cm. Anyone taller can ride, so we need the > sign.
 - D. h + 140 [WRONG]
-  - Misconception: Misconception: You this is an expression, not an inequality.
+  - Misconception: Nice try. This puts the letter and number together. We need the > symbol to show a rule.
 
 **Correct Answer(s):** B. h > 140
 
@@ -4379,12 +4378,12 @@ y: 5, 7, __
 
 **Choices:**
 - A. w > 5 [WRONG]
-  - Misconception: Misconception: You reversed the inequality direction.
+  - Misconception: Nice try. Flip the sign. "Less than 5 kg" means weights smaller than 5.
 - B. w < 5 [CORRECT]
 - C. w = 5 [WRONG]
-  - Misconception: Misconception: You less than does not include 5.
+  - Misconception: Nice try. "Less than 5" means any number smaller than 5, not 5 itself.
 - D. w - 5 [WRONG]
-  - Misconception: Misconception: You this is not an inequality statement.
+  - Misconception: Nice try. You still need a sign to show one thing is less than the other. Add that symbol.
 
 **Correct Answer(s):** B. w < 5
 
@@ -4399,11 +4398,11 @@ y: 5, 7, __
 **Choices:**
 - A. Open circle at -2, arrow to the left [CORRECT]
 - B. Open circle at -2, arrow to the right [WRONG]
-  - Misconception: Misconception: You used greater-than direction.
+  - Misconception: Nice try. Turn the arrow left to show the smaller numbers. Less than means left on the line.
 - C. Closed circle at -2, arrow to the left [WRONG]
-  - Misconception: Misconception: You strict less-than uses open, not closed, circle.
+  - Misconception: Nice try. Use an open circle because -2 itself is not included. Less than skips the exact point.
 - D. Closed circle at -2, arrow to the right [WRONG]
-  - Misconception: Misconception: You both endpoint inclusion and direction are incorrect.
+  - Misconception: Nice try. Fix two things: a solid or open dot and which way the arrow points.
 
 **Correct Answer(s):** A. Open circle at -2, arrow to the left
 
@@ -4417,11 +4416,11 @@ y: 5, 7, __
 
 **Choices:**
 - A. 0 [WRONG]
-  - Misconception: Misconception: You ignored numbers greater than 3.
+  - Misconception: Nice try. There are endless numbers bigger than 3.
 - B. 1 [WRONG]
-  - Misconception: Misconception: You an inequality usually has more than one value.
+  - Misconception: Nice try. Inequalities give a whole range of numbers, not one exact answer.
 - C. 3 [WRONG]
-  - Misconception: Misconception: You treated 3 as the count of solutions.
+  - Misconception: Nice try. Any number bigger than 3 works, not only 3 itself.
 - D. Infinitely many [CORRECT]
 
 **Correct Answer(s):** D. Infinitely many
@@ -4436,12 +4435,12 @@ y: 5, 7, __
 
 **Choices:**
 - A. a > 16, and 14 is a solution [WRONG]
-  - Misconception: Misconception: You reversed the inequality.
+  - Misconception: Nice try. Flip the sign. "Younger than 16" means ages smaller than 16.
 - B. a < 16, and 14 is a solution [CORRECT]
 - C. a < 16, and 16 is a solution [WRONG]
-  - Misconception: Misconception: You strict less-than does not include 16.
+  - Misconception: Nice try. 16 is not less than 16. Pick any number smaller than 16.
 - D. a = 16, and 16 is a solution [WRONG]
-  - Misconception: Misconception: You equality does not match a strict inequality condition.
+  - Misconception: Nice try. Many ages work, not just one. We need a sign that shows them all.
 
 **Correct Answer(s):** B. a < 16, and 14 is a solution
 
@@ -4466,11 +4465,11 @@ y: 5, 7, __
 **Choices:**
 - A. 8 + 4x [CORRECT]
 - B. 8 + x [WRONG]
-  - Misconception: Misconception: You distributed 4 to 2 but not to x.
+  - Misconception: Nice try. You only multiplied 4 times 2. Remember to multiply 4 by x too.
 - C. 6x [WRONG]
-  - Misconception: Misconception: You combined unlike terms incorrectly.
+  - Misconception: Nice try. 8 and 4x are different, so we leave them as 8 + 4x.
 - D. 4x + 2 [WRONG]
-  - Misconception: Misconception: You forgot to multiply 2 by 4.
+  - Misconception: Nice try. The 2 also needs to multiply by the 4 outside.
 
 **Correct Answer(s):** A. 8 + 4x
 
@@ -4485,11 +4484,11 @@ y: 5, 7, __
 **Choices:**
 - A. 5(3a + 2) [CORRECT]
 - B. 15(a + 10) [WRONG]
-  - Misconception: Misconception: You treated 15 as a common factor of both terms.
+  - Misconception: Nice try. Pick a number that fits into 10 and 15 both.
 - C. 10(15a + 1) [WRONG]
-  - Misconception: Misconception: You introduced an incorrect outside factor.
+  - Misconception: Nice try. Pick the number that divides both terms evenly.
 - D. 5(3a + 5) [WRONG]
-  - Misconception: Misconception: You used the wrong constant term inside parentheses.
+  - Misconception: Nice try. 10 divided by 5 gives 2, not 10.
 
 **Correct Answer(s):** A. 5(3a + 2)
 
@@ -4503,12 +4502,12 @@ y: 5, 7, __
 
 **Choices:**
 - A. 7y [WRONG]
-  - Misconception: Misconception: You added an extra y-term.
+  - Misconception: Nice try. Check the y’s one more time; we may have counted too many of them.
 - B. 5y [CORRECT]
 - C. y^4 [WRONG]
-  - Misconception: Misconception: You treated repeated addition as exponentiation.
+  - Misconception: Nice try. Adding y’s makes 3y, not y cubed.
 - D. 2y^2 [WRONG]
-  - Misconception: Misconception: You multiplied terms instead of combining like terms.
+  - Misconception: Nice try. When we just add, we keep the plain sum; no need for exponents or fancy marks.
 
 **Correct Answer(s):** B. 5y
 
@@ -4523,11 +4522,11 @@ y: 5, 7, __
 **Choices:**
 - A. 10 - 2n [CORRECT]
 - B. 10 - n [WRONG]
-  - Misconception: Misconception: You distributed 2 to 5 but not to n.
+  - Misconception: Nice try. Multiply both 5 and n by 2.
 - C. 10 + 2n [WRONG]
-  - Misconception: Misconception: You lost the subtraction sign when distributing.
+  - Misconception: Nice try. Keep that minus sign safe; make sure the 2 multiplies both its number and its sign.
 - D. 7n [WRONG]
-  - Misconception: Misconception: You combined unlike terms incorrectly.
+  - Misconception: Nice try. Numbers and letters cannot smush into one; they stay as separate pieces when we simplify.
 
 **Correct Answer(s):** A. 10 - 2n
 
@@ -4542,11 +4541,11 @@ y: 5, 7, __
 **Choices:**
 - A. 5x + 12 [CORRECT]
 - B. 3x + 6 [WRONG]
-  - Misconception: Misconception: You distributed incorrectly and undercounted constants.
+  - Misconception: Nice try. Take the outside 3 and give it to each term inside; do not skip anyone.
 - C. 5x + 4 [WRONG]
-  - Misconception: Misconception: You forgot to multiply 4 by 3.
+  - Misconception: Nice try. Multiply the 3 by the 4 as well; both numbers need the 3’s hug.
 - D. 6x + 4 [WRONG]
-  - Misconception: Misconception: You incorrectly distributed the 3 to x only.
+  - Misconception: Nice try. The outside 3 must multiply both the x and the plain number. Double-check each part.
 
 **Correct Answer(s):** A. 5x + 12
 
@@ -4565,11 +4564,11 @@ y: 5, 7, __
 **Choices:**
 - A. Yes, always [CORRECT]
 - B. No, never [WRONG]
-  - Misconception: Misconception: You did not recognize repeated addition as multiplication.
+  - Misconception: Nice try. Adding a number three times is the same as times 3.
 - C. Only when y = 1 [WRONG]
-  - Misconception: Misconception: You equivalent expressions work for all values, not one value.
+  - Misconception: Nice try. Equivalent expressions give the same answer no matter what number you plug in.
 - D. Only when y = 0 [WRONG]
-  - Misconception: Misconception: You checked a single value, not all values.
+  - Misconception: Nice try. These expressions match for zero and for every other number you try.
 
 **Correct Answer(s):** A. Yes, always
 
@@ -4584,11 +4583,11 @@ y: 5, 7, __
 **Choices:**
 - A. Yes, by distributive property [CORRECT]
 - B. No, because one has parentheses [WRONG]
-  - Misconception: Misconception: You parentheses do not prevent equivalence after expansion.
+  - Misconception: Nice try. They look different, but distribution makes them the same.
 - C. Only for even x [WRONG]
-  - Misconception: Misconception: You equivalent expressions are not restricted by parity here.
+  - Misconception: Nice try. These will match for even, odd, or any x.
 - D. Only for positive x [WRONG]
-  - Misconception: Misconception: You sign of x does not change this equivalence.
+  - Misconception: Nice try. These expressions are equivalent for any value, even negatives.
 
 **Correct Answer(s):** A. Yes, by distributive property
 
@@ -4602,12 +4601,12 @@ y: 5, 7, __
 
 **Choices:**
 - A. 4(a + 1) and 4a + 4 [WRONG]
-  - Misconception: Misconception: You these are equivalent by distribution.
+  - Misconception: Nice try. If you distribute the 4, the two expressions match.
 - B. 5x + 2 and 5(x + 2) [CORRECT]
 - C. 3m + 3m and 6m [WRONG]
-  - Misconception: Misconception: You these are equivalent by combining like terms.
+  - Misconception: Nice try. Adding 3m and 3m will always give 6m.
 - D. 7 - n and -(n - 7) [WRONG]
-  - Misconception: Misconception: You these are equivalent after distributing -1.
+  - Misconception: Nice try. Rewrite the second one and you will see they are the same.
 
 **Correct Answer(s):** B. 5x + 2 and 5(x + 2)
 
@@ -4622,11 +4621,11 @@ y: 5, 7, __
 **Choices:**
 - A. Yes [CORRECT]
 - B. No, it should be 3a + 2 [WRONG]
-  - Misconception: Misconception: You subtracted from 4 before multiplying by 3.
+  - Misconception: Nice try. Finish the distribution before you subtract.
 - C. No, it should be 3a + 14 [WRONG]
-  - Misconception: Misconception: You added instead of subtracting 2 after distribution.
+  - Misconception: Nice try. You added 2 at the end, but we need to subtract 2 instead.
 - D. No, it should be 12a - 2 [WRONG]
-  - Misconception: Misconception: You multiplied 3 and 4 incorrectly with variables.
+  - Misconception: Nice try. The parts got moved in a way that changed the value.
 
 **Correct Answer(s):** A. Yes
 
@@ -4640,12 +4639,12 @@ y: 5, 7, __
 
 **Choices:**
 - A. Check one value of the variable [WRONG]
-  - Misconception: Misconception: You one value can match by chance.
+  - Misconception: Nice try. One number can fool us. We need a rule that works for every number.
 - B. Check two values of the variable [WRONG]
-  - Misconception: Misconception: You a few checks do not prove all values.
+  - Misconception: Nice try. Two matching numbers do not prove all billions will match. We need a stronger test.
 - C. Use properties of operations to transform one expression into the other [CORRECT]
 - D. Compare which expression looks longer [WRONG]
-  - Misconception: Misconception: You appearance does not determine equivalence.
+  - Misconception: Nice try. Short or long looks do not tell us if two bits are the same.
 
 **Correct Answer(s):** C. Use properties of operations to transform one expression into the other
 
@@ -4669,12 +4668,12 @@ y: 5, 7, __
 
 **Choices:**
 - A. 5 [WRONG]
-  - Misconception: Misconception: You subtracted incorrectly.
+  - Misconception: Nice try. Try 7 - 1 again.
 - B. 6 [CORRECT]
 - C. 8 [WRONG]
-  - Misconception: Misconception: You added coordinates instead of finding distance.
+  - Misconception: Nice try. We subtract to find the gap, not add.
 - D. 3 [WRONG]
-  - Misconception: Misconception: You used x-values even though they are equal.
+  - Misconception: Nice try. The x-values are the same, so look at the y-values.
 
 **Correct Answer(s):** B. 6
 
@@ -4689,11 +4688,11 @@ y: 5, 7, __
 **Choices:**
 - A. 7 [CORRECT]
 - B. 6 [WRONG]
-  - Misconception: Misconception: You subtracted in the wrong order or value.
+  - Misconception: Nice try. Check your subtraction one more time.
 - C. 16 [WRONG]
-  - Misconception: Misconception: You added x-values.
+  - Misconception: Nice try. We subtract the x-values, not add them.
 - D. 5 [WRONG]
-  - Misconception: Misconception: You used the common y-value as distance.
+  - Misconception: Nice try. That shared y-value is not the distance. We need the x-difference.
 
 **Correct Answer(s):** A. 7
 
@@ -4707,12 +4706,12 @@ y: 5, 7, __
 
 **Choices:**
 - A. 4 and 6 [WRONG]
-  - Misconception: Misconception: You used endpoint values instead of differences.
+  - Misconception: Nice try. Subtract to find the gaps first.
 - B. 4 and 4 [CORRECT]
 - C. 1 and 5 [WRONG]
-  - Misconception: Misconception: You used x-coordinates directly.
+  - Misconception: Nice try. Use the gaps, not the x-coordinates alone.
 - D. 2 and 6 [WRONG]
-  - Misconception: Misconception: You used y-coordinates directly.
+  - Misconception: Nice try. Subtract to find length and width.
 
 **Correct Answer(s):** B. 4 and 4
 
@@ -4727,11 +4726,11 @@ y: 5, 7, __
 **Choices:**
 - A. PQ = 4 and QR = 5 [CORRECT]
 - B. PQ = 2 and QR = 3 [WRONG]
-  - Misconception: Misconception: You undercounted coordinate differences.
+  - Misconception: Nice try. Count again when you subtract the x-coordinates and the y-coordinates. This gives the true side length.
 - C. PQ = 6 and QR = 2 [WRONG]
-  - Misconception: Misconception: You mixed subtraction across coordinates.
+  - Misconception: Nice try. Check each subtract step again. Mix-ups happen, but a quick double-check keeps the numbers right.
 - D. PQ = 5 and QR = 4 [WRONG]
-  - Misconception: Misconception: You swapped the two distances.
+  - Misconception: Nice try. It looks like the two answers traded places. Swap them back and the lengths will fit.
 
 **Correct Answer(s):** A. PQ = 4 and QR = 5
 
@@ -4745,12 +4744,12 @@ y: 5, 7, __
 
 **Choices:**
 - A. 10 [WRONG]
-  - Misconception: Misconception: You doubled one side instead of using four sides.
+  - Misconception: Nice try. You found the side length. Now add that length four times to get the perimeter.
 - B. 20 [CORRECT]
 - C. 25 [WRONG]
-  - Misconception: Misconception: You used side squared instead of perimeter.
+  - Misconception: Nice try. 25 is the area. For perimeter, add the four side lengths around the outside.
 - D. 9 [WRONG]
-  - Misconception: Misconception: You added coordinates rather than side lengths.
+  - Misconception: Nice try. Add the side lengths, not the raw coordinates. Find each side first, then add them.
 
 **Correct Answer(s):** B. 20
 
@@ -4768,12 +4767,12 @@ y: 5, 7, __
 
 **Choices:**
 - A. Quadrant I [WRONG]
-  - Misconception: Misconception: You treated the negative sign on x like it doesn't matter. Quadrant I needs both coordinates positive.
+  - Misconception: Nice try. Do not forget the negative sign on 3. Quadrant I is only for points where both numbers are positive.
 - B. Quadrant II [CORRECT]
 - C. Quadrant III [WRONG]
-  - Misconception: Misconception: You assumed "negative somewhere" means Quadrant III, but Quadrant III has both x and y negative.
+  - Misconception: Nice try. Quadrant III needs both x and y to be negative. Our y-value here is positive 5.
 - D. Quadrant IV [WRONG]
-  - Misconception: Misconception: You mixed up which coordinate is negative. Quadrant IV has a positive x and a negative y.
+  - Misconception: Nice try. Quadrant IV has x positive and y negative. The given point has y positive, so no.
 
 **Correct Answer(s):** B. Quadrant II
 
@@ -4787,11 +4786,11 @@ y: 5, 7, __
 
 **Choices:**
 - A. (−7, −1) [WRONG]
-  - Misconception: Misconception: You moved left 5 instead of right 5. Moving right increases the x-value.
+  - Misconception: Nice try. First move went left. Moving right makes the x-value grow, not shrink.
 - B. (3, 7) [WRONG]
-  - Misconception: Misconception: You moved up 4 instead of down 4. Moving down decreases the y-value.
+  - Misconception: Nice try. Second move went up. Moving down makes the y-value smaller, not larger.
 - C. (−6, 8) [WRONG]
-  - Misconception: Misconception: You changed the wrong coordinate for each move. Left/right changes x, and up/down changes y.
+  - Misconception: Nice try. Check the order. It looks like x and y were swapped by mistake.
 - D. (3, −1) [CORRECT]
 
 **Correct Answer(s):** D. (3, −1)
@@ -4806,12 +4805,12 @@ y: 5, 7, __
 
 **Choices:**
 - A. 9 [WRONG]
-  - Misconception: Misconception: You added the y-values instead of finding how far apart they are. Distance uses the difference, not the sum.
+  - Misconception: Nice try. You added the numbers. To find distance, subtract the y-values to see the gap between them.
 - B. 0 [WRONG]
-  - Misconception: Misconception: You used the x-values, but the x-values are the same. Same x means the distance is vertical, so use y-values.
+  - Misconception: Nice try. The x-values are the same, so the points line up straight up and down. Subtract the y-values.
 - C. 5 [CORRECT]
 - D. −5 [WRONG]
-  - Misconception: Misconception: You subtracted to get −5, but distance can't be negative. You must take the absolute value.
+  - Misconception: Nice try. Your gap size is right! Distance is always positive, so drop any minus sign.
 
 **Correct Answer(s):** C. 5
 
@@ -4825,11 +4824,11 @@ y: 5, 7, __
 
 **Choices:**
 - A. 5 [WRONG]
-  - Misconception: Misconception: You added the x-values and took an absolute value. Distance is the absolute difference: subtract the x-values.
+  - Misconception: Nice try. You added instead of finding the gap. Subtract the two x-values to get the distance.
 - B. 0 [WRONG]
-  - Misconception: Misconception: You used the y-values, but the y-values are the same. Same y means the distance is horizontal, so use x-values.
+  - Misconception: Nice try. The y-values match, so the points lie flat. Check the gap between the two x-values.
 - C. −7 [WRONG]
-  - Misconception: Misconception: You found the difference but forgot distance is always positive. Use absolute value.
+  - Misconception: Nice try. Your gap is right! Just write distance as a positive number, with no minus sign.
 - D. 7 [CORRECT]
 
 **Correct Answer(s):** D. 7
@@ -4844,11 +4843,11 @@ y: 5, 7, __
 
 **Choices:**
 - A. 4 [WRONG]
-  - Misconception: Misconception: You added coordinates like −2 + 4 and −5 + 3. Distance comes from absolute differences, not adding coordinates.
+  - Misconception: Nice try. You added everything at once. Find each short move first, then add those small trips together.
 - B. 6 [WRONG]
-  - Misconception: Misconception: You only counted the first part of the trip (Camp to Waterfall). You forgot to include the walk from Waterfall to Treasure.
+  - Misconception: Nice try. You got the first move. Now add the steps for the second part of the trip.
 - C. 8 [WRONG]
-  - Misconception: Misconception: You treated −5 like +5 when finding the horizontal distance. That makes you subtract 3 − 5 instead of 3 − (−5).
+  - Misconception: Nice try. From -5 to 3 is 8 steps across. Use that for the side-to-side part.
 - D. 14 [CORRECT]
 
 **Correct Answer(s):** D. 14
@@ -4873,12 +4872,12 @@ y: 5, 7, __
 
 **Choices:**
 - A. 48 cm² [WRONG]
-  - Misconception: Misconception: You multiplied 8 × 6 but forgot the ½. A triangle is half of a rectangle with the same base and height.
+  - Misconception: Nice try. You multiplied 8 × 6. A triangle is half of a rectangle with those sizes, so divide by 2.
 - B. 24 cm² [CORRECT]
 - C. 40 cm² [WRONG]
-  - Misconception: Misconception: You used a non-perpendicular side as the height. The area uses the height that makes a right angle with the base.
+  - Misconception: Nice try. Use the height that makes a right angle with the base, not a slanted side.
 - D. 14 cm² [WRONG]
-  - Misconception: Misconception: You added 8 + 6. Adding lengths is related to perimeter, not area.
+  - Misconception: Nice try. You added the base and height. Area needs multiplication, not addition.
 
 **Correct Answer(s):** B. 24 cm²
 
@@ -4892,12 +4891,12 @@ y: 5, 7, __
 
 **Choices:**
 - A. 70 m² [WRONG]
-  - Misconception: Misconception: You did 10 × 7 but forgot the ½. Triangle area is half of bh.
+  - Misconception: Nice try. You multiplied base × height. For a triangle, take half of that product to get the area.
 - B. 35 m² [CORRECT]
 - C. 45 m² [WRONG]
-  - Misconception: Misconception: You used the slanted side (9 m) as the height. The height must be perpendicular to the base.
+  - Misconception: Nice try. The slanted side is not the height. Use the straight up and down distance from the base.
 - D. 17 m² [WRONG]
-  - Misconception: Misconception: You added 10 + 7. That combines lengths, but area needs multiplication of base and height.
+  - Misconception: Nice try. Adding the sides will not give the area. Multiply base × height, then divide by 2.
 
 **Correct Answer(s):** B. 35 m²
 
@@ -4911,12 +4910,12 @@ y: 5, 7, __
 
 **Choices:**
 - A. 64 cm² [WRONG]
-  - Misconception: Misconception: You added the bases and multiplied by the height, but forgot to take half. Trapezoid area uses the average of the bases.
+  - Misconception: Nice try. First find the average of the two bases, then use that in the trapezoid formula.
 - B. 32 cm² [CORRECT]
 - C. 40 cm² [WRONG]
-  - Misconception: Misconception: You treated it like a rectangle using only the longer base: 10 × 4. A trapezoid has two bases, so you must use both.
+  - Misconception: Nice try. You used only the long base. A trapezoid has two bases, so use both.
 - D. 30 cm² [WRONG]
-  - Misconception: Misconception: You multiplied the bases and then halved. Trapezoid area does not use "base times base.".
+  - Misconception: Nice try. Multiplying the two bases and halving is not the trapezoid rule. Add the bases first, then average.
 
 **Correct Answer(s):** B. 32 cm²
 
@@ -4930,11 +4929,11 @@ y: 5, 7, __
 
 **Choices:**
 - A. 64 m² [WRONG]
-  - Misconception: Misconception: You treated the triangle like a rectangle and did 8 × 3 instead of ½ × 8 × 3.
+  - Misconception: Nice try. You treated the triangle like a rectangle and did 8 × 3. Use ½ × 8 × 3.
 - B. 60 m² [WRONG]
-  - Misconception: Misconception: You used a side length that isn't the perpendicular height. The triangle's area needs the perpendicular height of 3 m.
+  - Misconception: Nice try. Use the perpendicular height, not a slanted side. The height straight up is 3 m.
 - C. 37 m² [WRONG]
-  - Misconception: Misconception: You subtracted the triangle's area. The triangle is added on top, so its area should be added, not removed.
+  - Misconception: Nice try. The triangle sits on top, so add its area. Do not subtract it.
 - D. 52 m² [CORRECT]
 
 **Correct Answer(s):** D. 52 m²
@@ -4949,11 +4948,11 @@ y: 5, 7, __
 
 **Choices:**
 - A. 96 ft² [WRONG]
-  - Misconception: Misconception: You found the rectangle's area but forgot to subtract the cut-out triangle. The garden is missing that corner.
+  - Misconception: Nice try. You found the big rectangle. Now subtract the missing triangle corner to get the garden.
 - B. 84 ft² [WRONG]
-  - Misconception: Misconception: You subtracted 4 × 3 instead of ½ × 4 × 3. The cut-out is a triangle, not a rectangle.
+  - Misconception: Nice try. You subtracted 4 × 3. The cut-out is a triangle, so subtract ½ × 4 × 3.
 - C. 86 ft² [WRONG]
-  - Misconception: Misconception: You used the wrong triangle area. The legs 4 ft and 3 ft are the base and height, so you shouldn't use a different side or method.
+  - Misconception: Nice try. You picked a wrong side. Use the legs 4 ft and 3 ft for base and height.
 - D. 90 ft² [CORRECT]
 
 **Correct Answer(s):** D. 90 ft²
@@ -4979,11 +4978,11 @@ y: 5, 7, __
 **Choices:**
 - A. 92 cm² [CORRECT]
 - B. 48 cm² [WRONG]
-  - Misconception: Misconception: You multiplied 8 × 3 × 2, which finds volume, not the total area of all the faces.
+  - Misconception: Nice try. 8 x 3 x 2 finds volume. Surface area adds the areas of all the faces.
 - C. 46 cm² [WRONG]
-  - Misconception: Misconception: You added the three different face areas only once; each type comes in a pair on a prism.
+  - Misconception: Nice try. Each flat side has a twin. Be sure to count both twins.
 - D. 52 cm² [WRONG]
-  - Misconception: Misconception: You added lengths instead of areas, like doing a perimeter-type calculation.
+  - Misconception: Nice try. You added lengths. Add the areas of all the flat faces.
 
 **Correct Answer(s):** A. 92 cm²
 
@@ -4998,11 +4997,11 @@ y: 5, 7, __
 **Choices:**
 - A. 96 m² [CORRECT]
 - B. 64 m² [WRONG]
-  - Misconception: Misconception: You used 4³, which is volume, not surface area.
+  - Misconception: Nice try. You used 4³, which is volume. Surface area is the sum of all face areas, not volume.
 - C. 80 m² [WRONG]
-  - Misconception: Misconception: You counted only 5 faces instead of all 6 faces of the cube.
+  - Misconception: Nice try. You counted only 5 faces. A cube has 6 equal faces, so add the missing one.
 - D. 24 m² [WRONG]
-  - Misconception: Misconception: You did 6 × 4 but forgot each face is a square with area 4².
+  - Misconception: Nice try. You did 6 × 4. Each face is a square with side 4, so its area is 4 × 4.
 
 **Correct Answer(s):** A. 96 m²
 
@@ -5017,11 +5016,11 @@ y: 5, 7, __
 **Choices:**
 - A. 94 in² [CORRECT]
 - B. 54 in² [WRONG]
-  - Misconception: Misconception: You left out one pair of faces: the two 5×4 faces (top and bottom).
+  - Misconception: Nice try. You left out the top and bottom 5×4 faces. Add those two areas to finish.
 - C. 60 in² [WRONG]
-  - Misconception: Misconception: You multiplied 5 × 4 × 3, which gives volume, not surface area.
+  - Misconception: Nice try. You multiplied 5 × 4 × 3, which gives volume. Surface area adds face areas, not volume.
 - D. 12 in² [WRONG]
-  - Misconception: Misconception: You added the edge lengths (5 + 4 + 3) instead of adding areas of faces.
+  - Misconception: Nice try. You added edge lengths. Add the areas of all six faces instead, not the edges.
 
 **Correct Answer(s):** A. 94 in²
 
@@ -5036,11 +5035,11 @@ y: 5, 7, __
 **Choices:**
 - A. Two triangles (3–4–5) and three rectangles: 3×6, 4×6, and 5×6 [CORRECT]
 - B. Two triangles (3–4–5) and two rectangles: 3×6 and 4×6 [WRONG]
-  - Misconception: Misconception: You forgot one of the three rectangular side faces that wraps around the prism.
+  - Misconception: Nice try. One rectangle was missed. There are three wrapping rectangles in all.
 - C. One triangle (3–4–5) and three rectangles: 3×6, 4×6, and 5×6 [WRONG]
-  - Misconception: Misconception: You included only one base; a prism has two congruent bases.
+  - Misconception: Nice try. You left out the second base. A prism has two bases.
 - D. Two triangles (3–4–5) and three rectangles: 3×4, 4×6, and 5×6 [WRONG]
-  - Misconception: Misconception: You used 3×4 as a rectangle face, but the rectangles must use the prism length 6 as one side.
+  - Misconception: Nice try. You used 3 × 4 for a rectangle. The rectangles must use the prism length 6 as one side.
 
 **Correct Answer(s):** A. Two triangles (3–4–5) and three rectangles: 3×6, 4×6, and 5×6
 
@@ -5055,11 +5054,11 @@ y: 5, 7, __
 **Choices:**
 - A. 108 cm² [CORRECT]
 - B. 72 cm² [WRONG]
-  - Misconception: Misconception: You multiplied 6 × 4 × 3, which is volume, not the area needed to cover the outside.
+  - Misconception: Nice try. You multiplied 6 × 4 × 3, which is volume. Find the area that wraps the outside.
 - C. 84 cm² [WRONG]
-  - Misconception: Misconception: You missed one pair of faces: the two 4×3 faces on the sides.
+  - Misconception: Nice try. You skipped the two 4×3 faces on the sides. Count every face to cover the whole box.
 - D. 52 cm² [WRONG]
-  - Misconception: Misconception: You added lengths like 4(l + w + h) instead of adding the areas of the faces.
+  - Misconception: Nice try. You added the lengths 4(l + w + h). Add the face areas to get the total wrap.
 
 **Correct Answer(s):** A. 108 cm²
 
@@ -5078,11 +5077,11 @@ y: 5, 7, __
 **Choices:**
 - A. 6 cubic units [CORRECT]
 - B. 7 1/2 cubic units [WRONG]
-  - Misconception: Misconception: You added dimensions instead of multiplying.
+  - Misconception: Nice try. You added the sides, but we need to multiply them to get volume.
 - C. 12 cubic units [WRONG]
-  - Misconception: Misconception: You ignored the 1/2 factor.
+  - Misconception: Nice try. Remember to multiply by the 1/2 that is shown in the formula.
 - D. 1 1/2 cubic units [WRONG]
-  - Misconception: Misconception: You multiplied only two dimensions.
+  - Misconception: Nice try. Be sure to multiply all three numbers to find the full volume.
 
 **Correct Answer(s):** A. 6 cubic units
 
@@ -5097,11 +5096,11 @@ y: 5, 7, __
 **Choices:**
 - A. 10 cubic units [CORRECT]
 - B. 13 1/4 cubic units [WRONG]
-  - Misconception: Misconception: You added instead of multiplying area by height.
+  - Misconception: Nice try. You added the numbers, but we need to multiply area by height.
 - C. 5/32 cubic units [WRONG]
-  - Misconception: Misconception: You divided instead of multiplying.
+  - Misconception: Nice try. You divided the numbers, yet we must multiply to get volume.
 - D. 8 cubic units [WRONG]
-  - Misconception: Misconception: You ignored the fractional base area.
+  - Misconception: Nice try. Keep the fraction with the base area before you multiply by height.
 
 **Correct Answer(s):** A. 10 cubic units
 
@@ -5115,12 +5114,12 @@ y: 5, 7, __
 
 **Choices:**
 - A. 8 1/2 cubic units [WRONG]
-  - Misconception: Misconception: You likely added factors or multiplied incompletely.
+  - Misconception: Nice try. Check that you multiply every factor so no part is missed.
 - B. 9 cubic units [CORRECT]
 - C. 6 cubic units [WRONG]
-  - Misconception: Misconception: You likely used whole-number parts only.
+  - Misconception: Nice try. Use the decimal or fraction part, not just the whole number.
 - D. 3 cubic units [WRONG]
-  - Misconception: Misconception: You used one dimension as the volume.
+  - Misconception: Nice try. One side alone cannot give the volume; multiply all sides.
 
 **Correct Answer(s):** B. 9 cubic units
 
@@ -5134,12 +5133,12 @@ y: 5, 7, __
 
 **Choices:**
 - A. 24 cubic units [WRONG]
-  - Misconception: Misconception: You treated each cube as 1 cubic unit.
+  - Misconception: Nice try. Each cube is not one unit. Count its real size to get the correct volume.
 - B. 12 cubic units [WRONG]
-  - Misconception: Misconception: You halved cube count instead of cube volume.
+  - Misconception: Nice try. Halve the volume of each little cube, not the cube count.
 - C. 3 cubic units [CORRECT]
 - D. 6 cubic units [WRONG]
-  - Misconception: Misconception: You used an incorrect unit-cube volume.
+  - Misconception: Nice try. Check the size of one unit cube and use it again.
 
 **Correct Answer(s):** C. 3 cubic units
 
@@ -5153,12 +5152,12 @@ y: 5, 7, __
 
 **Choices:**
 - A. (3/4) + 2 + (2/3) [WRONG]
-  - Misconception: Misconception: You volume uses multiplication, not addition.
+  - Misconception: Nice try. We multiply the three lengths, not add them.
 - B. (3/4) x 2 x (2/3) [CORRECT]
 - C. 2 x (3/4 + 2/3) [WRONG]
-  - Misconception: Misconception: You changed the prism formula structure.
+  - Misconception: Nice try. We need to multiply length, width, and height all together.
 - D. (3/4) x (2/3) [WRONG]
-  - Misconception: Misconception: You omitted one dimension.
+  - Misconception: Nice try. We need all three numbers to multiply for volume.
 
 **Correct Answer(s):** B. (3/4) x 2 x (2/3)
 
@@ -5190,12 +5189,12 @@ Which number of pages is the most common (the mode)?
 
 **Choices:**
 - A. 6 pages [WRONG]
-  - Misconception: Misconception: You picked the largest number of pages. The mode is the value with the most dots, not the biggest value.
+  - Misconception: Nice try. The mode is the page number with the tallest dot stack, not the biggest page number.
 - B. 4 pages [WRONG]
-  - Misconception: Misconception: You counted the dots incorrectly for 3 and 4. The mode depends on which row has the most dots.
+  - Misconception: Nice try. The stacks for 3 and 4 pages may look alike. Pick the page with the tallest dot stack.
 - C. 3 pages [CORRECT]
 - D. 5 pages [WRONG]
-  - Misconception: Misconception: You chose the value that "stands out" as different, but mode is about the tallest stack (most dots).
+  - Misconception: Nice try. 5 is special, yet the mode is the number that shows up most. Choose the page with the highest dot pile.
 
 **Correct Answer(s):** C. 3 pages
 
@@ -5216,12 +5215,12 @@ How many students practiced at least 20 minutes?
 
 **Choices:**
 - A. 6 students [WRONG]
-  - Misconception: Misconception: You counted only the 20–29 bin and forgot that "at least 20" also includes 30–39.
+  - Misconception: Nice try. You only counted the 20–29 bar. "At least 20" also means add the students in the 30–39 bar.
 - B. 8 students [CORRECT]
 - C. 15 students [WRONG]
-  - Misconception: Misconception: You included the 10–19 bin, but "at least 20" does not include any of 10–19.
+  - Misconception: Nice try. You added some from the 10-19 bar, yet "at least 20" means only count bars that start at 20 or higher.
 - D. 20 students [WRONG]
-  - Misconception: Misconception: You added the bin labels (like 20 and 39) instead of using the frequencies. Histogram questions use the counts in each bin.
+  - Misconception: Nice try. Add the students in each bin, not the bin labels. Count heads, not edges.
 
 **Correct Answer(s):** B. 8 students
 
@@ -5237,12 +5236,12 @@ What is the median score?
 
 **Choices:**
 - A. 14 [WRONG]
-  - Misconception: Misconception: You chose Q1. The median is the middle value, which is listed separately from Q1 and Q3.
+  - Misconception: Nice try. 14 is Q1. The median is the middle value in the ordered list, which is 16.
 - B. 16 [CORRECT]
 - C. 20 [WRONG]
-  - Misconception: Misconception: You chose Q3. Q3 is the third quartile, not the median.
+  - Misconception: Nice try. 20 is the third quartile. The median is the value that sits right in the center of all the data.
 - D. 17 [WRONG]
-  - Misconception: Misconception: You averaged Q1 and Q3. The median is given in the 5-number summary; you don't compute it by averaging quartiles.
+  - Misconception: Nice try. The box plot already shows the median is 16. No averaging Q1 and Q3 needed.
 
 **Correct Answer(s):** B. 16
 
@@ -5256,12 +5255,12 @@ What is the median score?
 
 **Choices:**
 - A. Dot plot [WRONG]
-  - Misconception: Misconception: You're choosing a dot plot even though there are many data points. With 240 points, dots can get crowded and hard to read.
+  - Misconception: Nice try. With 240 students, a dot plot would be too busy. A histogram shows the same data in neat bars.
 - B. Histogram [CORRECT]
 - C. Box plot [WRONG]
-  - Misconception: Misconception: You chose a box plot, but it won't show how many students are in each height range. It summarizes with quartiles instead of bin counts.
+  - Misconception: Nice try. A box plot shows a quick summary, but a histogram shows how many students are in each height group.
 - D. Dot plot and box plot are equally best [WRONG]
-  - Misconception: Misconception: You're treating all plots as the same, but only a histogram is designed to show frequencies in bins/ranges.
+  - Misconception: Nice try. Each plot has a job. For seeing data in piles or bins, a histogram is best.
 
 **Correct Answer(s):** B. Histogram
 
@@ -5275,12 +5274,12 @@ What is the median score?
 
 **Choices:**
 - A. "20 belongs in 10–19 because bins overlap." [WRONG]
-  - Misconception: Misconception: You're assuming bins overlap, but well-made histogram bins do not overlap.
+  - Misconception: Nice try. In a histogram the bars touch but do not cross. Every number fits in one place.
 - B. "20 belongs in 20–29 because 10–19 stops at 19." [CORRECT]
 - C. "20 belongs in both 10–19 and 20–29." [WRONG]
-  - Misconception: Misconception: You're double-counting. A data value should go into exactly one bin.
+  - Misconception: Nice try. Put the number 20 in one bin only. Count each value once to keep it tidy.
 - D. "20 belongs in 30–39 because you round 20 up." [WRONG]
-  - Misconception: Misconception: You're using rounding rules that don't apply. Histogram bins are about exact boundaries, not rounding.
+  - Misconception: Nice try. No guessing or rounding needed. The bin range tells you exactly where the number belongs.
 
 **Correct Answer(s):** B. "20 belongs in 20–29 because 10–19 stops at 19."
 
@@ -5304,12 +5303,12 @@ What is the median score?
 
 **Choices:**
 - A. How many letters are in my first name? [WRONG]
-  - Misconception: Misconception: You this asks about one fixed value, not variability across data.
+  - Misconception: Nice try. This question has only one answer. A statistical question needs many different answers from a group.
 - B. What are the shoe sizes of students in this class? [CORRECT]
 - C. What is 8 x 7? [WRONG]
-  - Misconception: Misconception: You this has one exact mathematical answer.
+  - Misconception: Nice try. This math fact has one exact answer. We want a question with different answers from each person.
 - D. What day is today? [WRONG]
-  - Misconception: Misconception: You this has one direct answer, not a data distribution.
+  - Misconception: Nice try. Today is the same for everyone, so there is no spread of data. Pick a question with variety.
 
 **Correct Answer(s):** B. What are the shoe sizes of students in this class?
 
@@ -5323,12 +5322,12 @@ What is the median score?
 
 **Choices:**
 - A. Because every student will have the same answer. [WRONG]
-  - Misconception: Misconception: You statistical questions expect different answers, not identical ones.
+  - Misconception: Nice try. In a statistical question we expect different answers. The variety is what makes it statistical.
 - B. Because it anticipates different values from different students. [CORRECT]
 - C. Because it can be answered without collecting data. [WRONG]
-  - Misconception: Misconception: You statistical questions rely on data collection from a group.
+  - Misconception: Nice try. We need real data from students to see how the answers vary. Then we can decide.
 - D. Because it has exactly one correct number. [WRONG]
-  - Misconception: Misconception: You one exact value would make it non-statistical.
+  - Misconception: Nice try. If every answer were the same, there would be no spread to study. We need variety.
 
 **Correct Answer(s):** B. Because it anticipates different values from different students.
 
@@ -5342,12 +5341,12 @@ What is the median score?
 
 **Choices:**
 - A. How tall are the trees in this park? [WRONG]
-  - Misconception: Misconception: You tree heights vary, so this is statistical.
+  - Misconception: Nice try. Tree heights in a park vary. That variety makes this a statistical question.
 - B. How many books did each student read this month? [WRONG]
-  - Misconception: Misconception: You different students can have different counts, so this is statistical.
+  - Misconception: Nice try. Students read different numbers of books. Those different counts make it a statistical question.
 - C. What is the height of this specific tree? [CORRECT]
 - D. What are the daily high temperatures this week? [WRONG]
-  - Misconception: Misconception: You temperatures vary by day, making this statistical.
+  - Misconception: Nice try. Daily high temperatures change. The changing values give us data to study statistically.
 
 **Correct Answer(s):** C. What is the height of this specific tree?
 
@@ -5361,12 +5360,12 @@ What is the median score?
 
 **Choices:**
 - A. What is the color of this one student's backpack? [WRONG]
-  - Misconception: Misconception: You this targets one individual, so it does not create a useful data distribution.
+  - Misconception: Nice try. We need to ask a whole group, not just one kid. Then we can see how answers differ!
 - B. How many siblings do students in this class have? [CORRECT]
 - C. What is the classroom number? [WRONG]
-  - Misconception: Misconception: You this has one fixed answer for the class.
+  - Misconception: Nice try. One room number can’t change, so we won’t see any differences to study.
 - D. What is 100 divided by 4? [WRONG]
-  - Misconception: Misconception: You this is a single arithmetic answer, not a data question.
+  - Misconception: Nice try. This math has one exact answer. We need many answers to make a data set.
 
 **Correct Answer(s):** B. How many siblings do students in this class have?
 
@@ -5381,11 +5380,11 @@ What is the median score?
 **Choices:**
 - A. From 'How old am I?' to 'How old are students in Grade 6?' [CORRECT]
 - B. From 'What is my shoe size?' to 'What is my shoe size exactly?' [WRONG]
-  - Misconception: Misconception: You this still asks about one person with one value.
+  - Misconception: Nice try. We still need to ask a group, not one kid. Then the answers can vary.
 - C. From 'What is the class number?' to 'What is the class number today?' [WRONG]
-  - Misconception: Misconception: You this still has one fixed answer.
+  - Misconception: Nice try. Even on one day, the class still has only one room number. No change to see!
 - D. From 'What is 5 + 7?' to 'What is 5 + 7 quickly?' [WRONG]
-  - Misconception: Misconception: You this remains a single-answer arithmetic question.
+  - Misconception: Nice try. A quick math problem gives one right answer. We need many answers to study.
 
 **Correct Answer(s):** A. From 'How old am I?' to 'How old are students in Grade 6?'
 
@@ -5403,12 +5402,12 @@ What is the median score?
 
 **Choices:**
 - A. 4 [WRONG]
-  - Misconception: Misconception: You chose a near-middle value but not the middle value in ordered data.
+  - Misconception: Nice try. You got close to the middle. Now line up the data and pick the dead-center number.
 - B. 5 [CORRECT]
 - C. 6 [WRONG]
-  - Misconception: Misconception: You chose the value above the true center.
+  - Misconception: Nice try. 6 is not the middle value. Look for the number that splits the list in half.
 - D. 7 [WRONG]
-  - Misconception: Misconception: You selected the maximum instead of a center.
+  - Misconception: Nice try. 7 is the biggest number. We want the median, the value that sits in the center.
 
 **Correct Answer(s):** B. 5
 
@@ -5422,12 +5421,12 @@ What is the median score?
 
 **Choices:**
 - A. 5 [WRONG]
-  - Misconception: Misconception: You subtracted two middle values instead of max minus min.
+  - Misconception: Nice try. You used middle numbers. Range is big number minus small number, always.
 - B. 7 [CORRECT]
 - C. 15 [WRONG]
-  - Misconception: Misconception: You chose the maximum value instead of spread.
+  - Misconception: Nice try. 15 is the top. Range is the whole distance from bottom to top.
 - D. 11.5 [WRONG]
-  - Misconception: Misconception: You computed a center value rather than spread.
+  - Misconception: Nice try. That looks like a center. Range tells how far the data spreads, not the middle.
 
 **Correct Answer(s):** B. 7
 
@@ -5441,12 +5440,12 @@ What is the median score?
 
 **Choices:**
 - A. Roughly symmetric [WRONG]
-  - Misconception: Misconception: You a long tail on one side indicates asymmetry.
+  - Misconception: Nice try. A symmetric graph would look the same on both sides. The extra point at 40 stretches it out.
 - B. Skewed right [CORRECT]
 - C. Skewed left [WRONG]
-  - Misconception: Misconception: You the long tail is on the high-value side, not the low-value side.
+  - Misconception: Nice try. The long tail points right, so we call it skewed right.
 - D. Uniform [WRONG]
-  - Misconception: Misconception: You uniform means values spread evenly, not clustered with a tail.
+  - Misconception: Nice try. Uniform means dots spread evenly. Here they bunch up with a few far-out dots.
 
 **Correct Answer(s):** B. Skewed right
 
@@ -5460,12 +5459,12 @@ What is the median score?
 
 **Choices:**
 - A. Both sets have the same center and same spread. [WRONG]
-  - Misconception: Misconception: You the centers match, but spreads differ.
+  - Misconception: Nice try. Both sets center on 10, but Set B is more spread out.
 - B. Both sets have center 10, but Set B has greater spread. [CORRECT]
 - C. Set A has greater spread because all values are 10. [WRONG]
-  - Misconception: Misconception: You no variation means zero spread.
+  - Misconception: Nice try. Set A has every number the same, so its spread is zero. Set B spreads more.
 - D. Set B has center 12 and smaller spread. [WRONG]
-  - Misconception: Misconception: You overestimated center and misread variability.
+  - Misconception: Nice try. Set B centers on 10 and is much more spread out than Set A.
 
 **Correct Answer(s):** B. Both sets have center 10, but Set B has greater spread.
 
@@ -5480,11 +5479,11 @@ What is the median score?
 **Choices:**
 - A. Center is where most data lie, spread is how far values vary, and shape describes pattern of distribution. [CORRECT]
 - B. Center is always the largest value, spread is always zero, and shape is not useful. [WRONG]
-  - Misconception: Misconception: You this confuses all three distribution features.
+  - Misconception: Nice try. Mix-up! Center, spread, and shape all help us see the data clearly.
 - C. Center and spread are the same thing. [WRONG]
-  - Misconception: Misconception: You center describes typical value; spread describes variability.
+  - Misconception: Nice try. Center shows the middle. Spread shows how far the rest are from that middle.
 - D. Shape is only for geometry, not data. [WRONG]
-  - Misconception: Misconception: You distribution shape is a core data concept.
+  - Misconception: Nice try. In stats, shape matters. It tells how the data values cluster together.
 
 **Correct Answer(s):** A. Center is where most data lie, spread is how far values vary, and shape describes pattern of distribution.
 
@@ -5503,11 +5502,11 @@ What is the median score?
 **Choices:**
 - A. Mean [CORRECT]
 - B. Range [WRONG]
-  - Misconception: Misconception: You range measures spread, not center.
+  - Misconception: Nice try. Range shows overall spread, not the middle.
 - C. Interquartile range [WRONG]
-  - Misconception: Misconception: You iQR is variation.
+  - Misconception: Nice try. The interquartile range tells how much the data spreads.
 - D. Mean absolute deviation [WRONG]
-  - Misconception: Misconception: You mAD is variation.
+  - Misconception: Nice try. This shows how far points are from the mean, so it measures spread.
 
 **Correct Answer(s):** A. Mean
 
@@ -5521,12 +5520,12 @@ What is the median score?
 
 **Choices:**
 - A. Median [WRONG]
-  - Misconception: Misconception: You median is center, not spread from mean.
+  - Misconception: Nice try. Median is the middle. We want the spread, the gap between numbers.
 - B. Mean absolute deviation [CORRECT]
 - C. Mode [WRONG]
-  - Misconception: Misconception: You mode is a common value, not variation.
+  - Misconception: Nice try. Mode is the most common value. It does not tell how far apart numbers are.
 - D. Total sum [WRONG]
-  - Misconception: Misconception: You sum alone does not describe spread.
+  - Misconception: Nice try. Adding gives the total. It does not show the gaps between numbers.
 
 **Correct Answer(s):** B. Mean absolute deviation
 
@@ -5540,12 +5539,12 @@ What is the median score?
 
 **Choices:**
 - A. Both center and variation are the same [WRONG]
-  - Misconception: Misconception: You same mean does not imply same spread.
+  - Misconception: Nice try. The means match, but Set B is more spread out. So the variation is different.
 - B. Center is same, variation is different [CORRECT]
 - C. Variation is same, center is different [WRONG]
-  - Misconception: Misconception: You prompt already states equal means.
+  - Misconception: Nice try. Both means are 20, so the center matches. The spread is what differs.
 - D. Neither center nor variation can be compared [WRONG]
-  - Misconception: Misconception: You the scenario gives enough info to compare both.
+  - Misconception: Nice try. We can see the centers match. The spreads do not match.
 
 **Correct Answer(s):** B. Center is same, variation is different
 
@@ -5560,11 +5559,11 @@ What is the median score?
 **Choices:**
 - A. Mean is 6 and range is 4 [CORRECT]
 - B. Mean is 4 and range is 6 [WRONG]
-  - Misconception: Misconception: You swapped center and spread values.
+  - Misconception: Nice try. 6 is the mean and 4 is the range. Swap them back.
 - C. Mean is 6 and range is 2 [WRONG]
-  - Misconception: Misconception: You used adjacent difference, not max-minus-min.
+  - Misconception: Nice try. Range is max minus min, so 8 - 4 = 4.
 - D. Mean is 8 and range is 2 [WRONG]
-  - Misconception: Misconception: You used max as center.
+  - Misconception: Nice try. 8 is the biggest. The mean is the average of all.
 
 **Correct Answer(s):** A. Mean is 6 and range is 4
 
@@ -5578,12 +5577,12 @@ What is the median score?
 
 **Choices:**
 - A. Because center alone describes everything about a data set [WRONG]
-  - Misconception: Misconception: You center does not describe spread.
+  - Misconception: Nice try. Center shows the middle. It does not show if data is tight or wide.
 - B. Because variation alone gives the typical value [WRONG]
-  - Misconception: Misconception: You variation does not identify typical central value.
+  - Misconception: Nice try. Variation shows spread. We also need center for the typical value.
 - C. Because center shows a typical value and variation shows how values differ around it [CORRECT]
 - D. Because both numbers are always equal [WRONG]
-  - Misconception: Misconception: You center and spread measure different features.
+  - Misconception: Nice try. Center and variation are two different ideas. They are not the same.
 
 **Correct Answer(s):** C. Because center shows a typical value and variation shows how values differ around it
 
@@ -5602,11 +5601,11 @@ What is the median score?
 **Choices:**
 - A. Units of measurement [CORRECT]
 - B. A color for the graph [WRONG]
-  - Misconception: Misconception: You visual style is not a core statistical summary element.
+  - Misconception: Nice try. Colors look nice, but we need to see if 152 is cm, inches, or something else.
 - C. Whether the average is an integer [WRONG]
-  - Misconception: Misconception: You integer status is less essential than units.
+  - Misconception: Nice try. A whole number or not is tiny news next to knowing what we are measuring.
 - D. A second decimal place [WRONG]
-  - Misconception: Misconception: You precision is secondary to missing units.
+  - Misconception: Nice try. Extra decimals help, but the unit like cm is the big must-know here.
 
 **Correct Answer(s):** A. Units of measurement
 
@@ -5620,12 +5619,12 @@ What is the median score?
 
 **Choices:**
 - A. Median [WRONG]
-  - Misconception: Misconception: You median is center, not variability.
+  - Misconception: Nice try. Median is the middle value. We want the number that tells how spread out the data is.
 - B. Interquartile range [CORRECT]
 - C. Mode [WRONG]
-  - Misconception: Misconception: You mode is a central tendency measure.
+  - Misconception: Nice try. Mode just shows the most common value, not how wide the data stretches.
 - D. Sample size [WRONG]
-  - Misconception: Misconception: You count alone is not variability.
+  - Misconception: Nice try. Sample size only says how many items we have, not how different they are.
 
 **Correct Answer(s):** B. Interquartile range
 
@@ -5640,11 +5639,11 @@ What is the median score?
 **Choices:**
 - A. All scores are clustered near 73 with one high outlier-like value 95 [CORRECT]
 - B. Scores are perfectly symmetric with no unusual values [WRONG]
-  - Misconception: Misconception: You 95 is a clear deviation from the cluster.
+  - Misconception: Nice try. The 95 is way bigger than the 70s, so it is an outlier.
 - C. Scores show two equal clusters around 72 and 95 [WRONG]
-  - Misconception: Misconception: You there is one high value, not a second cluster.
+  - Misconception: Nice try. One 95 is just one dot. A cluster needs more dots together.
 - D. Scores cannot be summarized because there are only five values [WRONG]
-  - Misconception: Misconception: You small sets can still be summarized.
+  - Misconception: Nice try. Even with just a few points we can still spot the data shape.
 
 **Correct Answer(s):** A. All scores are clustered near 73 with one high outlier-like value 95
 
@@ -5658,12 +5657,12 @@ What is the median score?
 
 **Choices:**
 - A. Only the mean [WRONG]
-  - Misconception: Misconception: You mean alone misses spread, count, and context.
+  - Misconception: Nice try. The mean helps, but it does not tell the count or the spread.
 - B. Count, what was measured with units, center, variability, and notable patterns/deviations [CORRECT]
 - C. Only a graph title and axis labels [WRONG]
-  - Misconception: Misconception: You labels help, but do not complete a statistical summary.
+  - Misconception: Nice try. Labels are good, yet we also need to say what the numbers mean.
 - D. Only minimum and maximum [WRONG]
-  - Misconception: Misconception: You min and max omit center and richer context.
+  - Misconception: Nice try. Range is useful, but we still need to see what happens in the middle.
 
 **Correct Answer(s):** B. Count, what was measured with units, center, variability, and notable patterns/deviations
 
@@ -5678,11 +5677,11 @@ What is the median score?
 **Choices:**
 - A. Class A scores are more spread out [CORRECT]
 - B. Class A has higher center [WRONG]
-  - Misconception: Misconception: You means are stated as equal.
+  - Misconception: Nice try. The words say both classes have the same mean, so their middles are matched. You do not need to change that.
 - C. Class B must have more students [WRONG]
-  - Misconception: Misconception: You iQR does not determine sample size.
+  - Misconception: Nice try. The IQR shows how scores spread, not how many kids are in class. Keep the spread idea and the count idea apart.
 - D. The two classes have identical distributions [WRONG]
-  - Misconception: Misconception: You different IQR means different spread.
+  - Misconception: Nice try. Class A has a wider spread, so the shapes differ even if the means are twins. Check the spread more than the middle.
 
 **Correct Answer(s):** A. Class A scores are more spread out
 
@@ -5706,12 +5705,12 @@ What is the median score?
 
 **Choices:**
 - A. −11 [WRONG]
-  - Misconception: Misconception: You added the absolute values but kept the negative sign even though 7 has the larger absolute value.
+  - Misconception: Nice try. 7 is positive and bigger, so the answer stays positive. Do not treat both numbers as negatives.
 - B. 3 [CORRECT]
 - C. −3 [WRONG]
-  - Misconception: Misconception: You subtracted 7 − 4 but chose the wrong sign for the result.
+  - Misconception: Nice try. You subtracted fine, but keep the sign of the bigger number. 7 is bigger, so stay positive.
 - D. 11 [WRONG]
-  - Misconception: Misconception: You ignored the negative sign and added 4 + 7 as if both were positive.
+  - Misconception: Nice try. Start at -4 and move 7 steps right. The negative sign on 4 matters.
 
 **Correct Answer(s):** B. 3
 
@@ -5725,12 +5724,12 @@ What is the median score?
 
 **Choices:**
 - A. −7 [WRONG]
-  - Misconception: Misconception: You treated subtracting a negative like subtracting a positive: −5 − 2.
+  - Misconception: Nice try. Subtracting a negative becomes adding. -5 - (-2) is -5 + 2.
 - B. −3 [CORRECT]
 - C. 7 [WRONG]
-  - Misconception: Misconception: You flipped both signs and computed 5 + 2 instead of keeping the −5.
+  - Misconception: Nice try. Keep the first sign the same. Only the second minus flips, so -5 minus -2 becomes -5 plus 2.
 - D. 3 [WRONG]
-  - Misconception: Misconception: You reversed the order and effectively did (−2) − (−5) instead of −5 − (−2).
+  - Misconception: Nice try. Keep -5 first and follow the double sign rule. Start at -5 and add the change.
 
 **Correct Answer(s):** B. −3
 
@@ -5745,11 +5744,11 @@ What is the median score?
 **Choices:**
 - A. −10 [CORRECT]
 - B. −4 [WRONG]
-  - Misconception: Misconception: You subtracted the numbers (7 − 3) but kept a negative sign without thinking about direction on the number line.
+  - Misconception: Nice try. Start at -3 and subtract 7, so you move 7 more steps left to -10.
 - C. 4 [WRONG]
-  - Misconception: Misconception: You took the distance between 7 and 3 and forgot that −3 − 7 moves left on the number line.
+  - Misconception: Nice try. On a number line, start at -3 and move 7 steps left. You land on -10.
 - D. 10 [WRONG]
-  - Misconception: Misconception: You added absolute values but chose the wrong sign even though you're moving further into negatives.
+  - Misconception: Nice try. 3 and 7 make 10, and the result is negative because you start at -3 and move left. So the answer is -10.
 
 **Correct Answer(s):** A. −10
 
@@ -5764,11 +5763,11 @@ What is the median score?
 **Choices:**
 - A. −1.7 [CORRECT]
 - B. 1.7 [WRONG]
-  - Misconception: Misconception: You subtracted 3.2 − 1.5 but chose a positive sign even though the negative part is larger.
+  - Misconception: Nice try. You found the gap, but -3.2 has more pull, so the answer keeps its minus sign.
 - C. −4.7 [WRONG]
-  - Misconception: Misconception: You added absolute values (3.2 + 1.5) as if both numbers had the same sign.
+  - Misconception: Nice try. The signs are opposite, so subtract the smaller from the larger. Keep the sign of the stronger one.
 - D. 4.7 [WRONG]
-  - Misconception: Misconception: You ignored the negative sign and added 3.2 + 1.5.
+  - Misconception: Nice try. Since one number is negative and one is positive, we subtract the absolute values and keep the sign of the bigger absolute value.
 
 **Correct Answer(s):** A. −1.7
 
@@ -5782,12 +5781,12 @@ What is the median score?
 
 **Choices:**
 - A. Start at −1. Subtracting −4 means move 4 units left to −5. [WRONG]
-  - Misconception: Misconception: You moved the wrong direction: subtracting a negative doesn't move left.
+  - Misconception: Nice try. Move left when you subtract a positive. Move right when you subtract a negative.
 - B. Start at −1. Subtracting −4 is the same as adding 4, so move 4 units right to 3. [CORRECT]
 - C. Start at −4 and move to −1, so the answer is −3. [WRONG]
-  - Misconception: Misconception: You found a difference but reversed the order and changed the problem.
+  - Misconception: Nice try. Start at the first number, then move the way the second number tells you.
 - D. Negatives always make it smaller, so the answer must be less than −1. [WRONG]
-  - Misconception: Misconception: You used the false rule that subtraction always decreases the value.
+  - Misconception: Nice try. Taking away a negative makes the number bigger, so we slide right on the line.
 
 **Correct Answer(s):** B. Start at −1. Subtracting −4 is the same as adding 4, so move 4 units right to 3.
 
@@ -5812,11 +5811,11 @@ What is the median score?
 **Choices:**
 - A. -12 [CORRECT]
 - B. 12 [WRONG]
-  - Misconception: Misconception: You multiplied the absolute values correctly but ignored the sign rule for a negative times a positive.
+  - Misconception: Nice try. You did 4 × 3, but a negative times a positive is negative.
 - C. -1 [WRONG]
-  - Misconception: Misconception: You may have mixed multiplication and division and treated 4 and 3 as a ratio instead of a product.
+  - Misconception: Nice try. Looks like 4 and 3 were subtracted. We need to multiply them instead.
 - D. 7 [WRONG]
-  - Misconception: Misconception: You added 4 and 3 instead of multiplying.
+  - Misconception: Nice try. You added 4 and 3. We need to multiply them.
 
 **Correct Answer(s):** A. -12
 
@@ -5830,12 +5829,12 @@ What is the median score?
 
 **Choices:**
 - A. -3/2 [WRONG]
-  - Misconception: Misconception: You simplified correctly but used the wrong sign. A negative times a negative is positive.
+  - Misconception: Nice try. A minus times a minus always makes a plus. Your fraction steps were great, just flip the sign.
 - B. 3/2 [CORRECT]
 - C. 18/12 [WRONG]
-  - Misconception: Misconception: You multiplied correctly but did not simplify to lowest terms.
+  - Misconception: Nice try. 18/12 is on the way. Simplify to lowest terms and you are done.
 - D. 2/27 [WRONG]
-  - Misconception: Misconception: You divided instead of multiplying fractions.
+  - Misconception: Nice try. We multiply: top times top, bottom times bottom. Division is not needed here.
 
 **Correct Answer(s):** B. 3/2
 
@@ -5850,11 +5849,11 @@ What is the median score?
 **Choices:**
 - A. -5 [CORRECT]
 - B. 5 [WRONG]
-  - Misconception: Misconception: You divided the absolute values correctly but ignored the sign rule for positive divided by negative.
+  - Misconception: Nice try. 15 divided by 3 is 5, but different signs make it negative.
 - C. -45 [WRONG]
-  - Misconception: Misconception: You multiplied instead of dividing.
+  - Misconception: Nice try. You used multiply. For 15 divided by -3, count how many -3 fit inside 15.
 - D. -12 [WRONG]
-  - Misconception: Misconception: You subtracted 3 from 15 instead of dividing.
+  - Misconception: Nice try. You did 15 minus 3. For division, share 15 into 3 equal negative groups.
 
 **Correct Answer(s):** A. -5
 
@@ -5869,11 +5868,11 @@ What is the median score?
 **Choices:**
 - A. -3 [CORRECT]
 - B. 3 [WRONG]
-  - Misconception: Misconception: You found 1.8 ÷ 0.6 correctly but ignored the negative sign.
+  - Misconception: Nice try. 1.8 divided by 0.6 is 3. Since 1.8 is negative, the answer is -3.
 - C. -1.2 [WRONG]
-  - Misconception: Misconception: You may have subtracted decimals instead of dividing.
+  - Misconception: Nice try. Use division, not subtraction. Find how many 0.6 parts fit into 1.8.
 - D. -0.3 [WRONG]
-  - Misconception: Misconception: You moved the decimal in the wrong direction while dividing by a decimal less than 1.
+  - Misconception: Nice try. Dividing 1.8 by a small decimal like 0.6 gives a result bigger than 1.
 
 **Correct Answer(s):** A. -3
 
@@ -5887,12 +5886,12 @@ What is the median score?
 
 **Choices:**
 - A. A negative divided by a negative is always negative. [WRONG]
-  - Misconception: Misconception: You mixed up the sign rule. Same signs give a positive result.
+  - Misconception: Nice try. If both signs are minus, they team up and make a plus answer.
 - B. A negative multiplied by a positive is always positive. [WRONG]
-  - Misconception: Misconception: You reversed the sign rule for multiplication.
+  - Misconception: Nice try. When the signs are different, the answer is always negative.
 - C. A positive divided by a negative is always negative. [CORRECT]
 - D. A positive multiplied by a positive is always negative. [WRONG]
-  - Misconception: Misconception: You applied the negative-sign rule where both factors are positive.
+  - Misconception: Nice try. Two positives give a positive answer. Put in a negative and the sign may flip.
 
 **Correct Answer(s):** C. A positive divided by a negative is always negative.
 
@@ -5911,11 +5910,11 @@ What is the median score?
 **Choices:**
 - A. 5 deg C [CORRECT]
 - B. -11 deg C [WRONG]
-  - Misconception: Misconception: You subtracted 8 from -3 instead of adding the rise.
+  - Misconception: Nice try. The temp drops. It rose 8, so add 8 to the start -3.
 - C. -5 deg C [WRONG]
-  - Misconception: Misconception: You used the wrong sign after combining opposite-signed integers.
+  - Misconception: Nice try. Since 8 is bigger than 3, the temp goes past zero into positive.
 - D. 11 deg C [WRONG]
-  - Misconception: Misconception: You added absolute values and ignored the negative starting value.
+  - Misconception: Nice try. You added both as positives. We started at -3 before it warmed.
 
 **Correct Answer(s):** A. 5 deg C
 
@@ -5929,12 +5928,12 @@ What is the median score?
 
 **Choices:**
 - A. -$9 [WRONG]
-  - Misconception: Misconception: You may have reversed the sign of the final value after combining all transactions.
+  - Misconception: Nice try. We need the final balance, not the start. Add all credits and debits to find it.
 - B. $9 credit [CORRECT]
 - C. $29 credit [WRONG]
-  - Misconception: Misconception: You likely added payments and spending without including the starting debt correctly.
+  - Misconception: Nice try. Add what he pays and subtract what he spends to find the total balance.
 - D. $1 credit [WRONG]
-  - Misconception: Misconception: You made an arithmetic error when combining the middle two transactions.
+  - Misconception: Nice try. Please add the payments again and subtract the debts to check the final balance.
 
 **Correct Answer(s):** B. $9 credit
 
@@ -5949,11 +5948,11 @@ What is the median score?
 **Choices:**
 - A. 1 7/8 cups [CORRECT]
 - B. 3 1/4 cups [WRONG]
-  - Misconception: Misconception: You added 3/4 and 2 1/2 instead of multiplying per-batch amount by number of batches.
+  - Misconception: Nice try. You added 3/4 and 2 1/2. We multiply by batch count.
 - C. 15/4 cups [WRONG]
-  - Misconception: Misconception: You multiplied numerators and denominators but did not simplify correctly.
+  - Misconception: Nice try. After we multiply the top and bottom, we must simplify the new fraction fully.
 - D. 1 1/8 cups [WRONG]
-  - Misconception: Misconception: You likely multiplied one factor incorrectly after converting the mixed number.
+  - Misconception: Nice try. One number multiplied wrong after changing the mixed number.
 
 **Correct Answer(s):** A. 1 7/8 cups
 
@@ -5968,11 +5967,11 @@ What is the median score?
 **Choices:**
 - A. -4.2 [CORRECT]
 - B. 4.2 [WRONG]
-  - Misconception: Misconception: You divided correctly but ignored the sign rule for positive divided by negative.
+  - Misconception: Nice try. You divided right but forgot the sign. Positive divided by negative gives negative.
 - C. -3.2 [WRONG]
-  - Misconception: Misconception: You subtracted instead of dividing.
+  - Misconception: Nice try. You subtracted instead of dividing. Divide the decimals and watch the sign.
 - D. -42 [WRONG]
-  - Misconception: Misconception: You misplaced the decimal point by treating 12.6 as 126.
+  - Misconception: Nice try. You moved the decimal, so 12.6 looked like 126. Check the place value again.
 
 **Correct Answer(s):** A. -4.2
 
@@ -5986,12 +5985,12 @@ What is the median score?
 
 **Choices:**
 - A. -2 [WRONG]
-  - Misconception: Misconception: You added first and then multiplied, ignoring order of operations.
+  - Misconception: Nice try. You added first, then multiplied. Please follow the order: multiply and divide before you add or subtract.
 - B. 2 [WRONG]
-  - Misconception: Misconception: You used multiplication first but lost a negative sign.
+  - Misconception: Nice try. You multiplied first, but a negative sign slipped away. Keep the minus with its number.
 - C. -10 [CORRECT]
 - D. 10 [WRONG]
-  - Misconception: Misconception: You multiplied and added absolute values while ignoring both negative signs.
+  - Misconception: Nice try. You lost both negative signs when you found absolute values. Keep each sign with its number.
 
 **Correct Answer(s):** C. -10
 
@@ -6016,11 +6015,11 @@ What is the median score?
 **Choices:**
 - A. $36.72 [CORRECT]
 - B. $37.20 [WRONG]
-  - Misconception: Misconception: You calculated the discount correctly, but you applied the 8% tax to the original $40 instead of to the discounted price.
+  - Misconception: Nice try. You found the discount okay, but apply the 8% tax to the sale price, not the old price.
 - C. $33.00 [WRONG]
-  - Misconception: Misconception: You subtracted 15 and added 8 as if they were dollar amounts, instead of taking 15% and 8% of a price.
+  - Misconception: Nice try. 15 percent and 8 percent are rates, not dollars. Find each percent of the price, then adjust.
 - D. $61.20 [WRONG]
-  - Misconception: Misconception: You treated 8% as 0.8, which makes the tax 80% instead of 8%.
+  - Misconception: Nice try. 8% is 0.08, not 0.8. 0.8 would mean 80% tax instead of 8%.
 
 **Correct Answer(s):** A. $36.72
 
@@ -6035,11 +6034,11 @@ What is the median score?
 **Choices:**
 - A. $33.04 [CORRECT]
 - B. $46.00 [WRONG]
-  - Misconception: Misconception: You added 18 as if "18%" meant $18, instead of finding 18% of $28.
+  - Misconception: Nice try. 18% does not mean $18. Find 18% of $28, then add it to $28.
 - C. $28.18 [WRONG]
-  - Misconception: Misconception: You added $0.18, but 18% means 0.18 of the bill, not $0.18.
+  - Misconception: Nice try. 18% means 0.18 of the bill, not $0.18. Multiply $28 by 0.18 for the tip.
 - D. $30.24 [WRONG]
-  - Misconception: Misconception: You found 18% of 28 incorrectly due to a decimal place-value slip; the tip should be several dollars, not just a little over $2.
+  - Misconception: Nice try. Check your place value. 18% of 28 is more than $2.
 
 **Correct Answer(s):** A. $33.04
 
@@ -6054,11 +6053,11 @@ What is the median score?
 **Choices:**
 - A. $75 [CORRECT]
 - B. $85 [WRONG]
-  - Misconception: Misconception: You added 25 dollars instead of adding 25% of $60.
+  - Misconception: Nice try. 25% of $60 is not $25. Find 0.25 x $60, then add it to $60.
 - C. $15 [WRONG]
-  - Misconception: Misconception: You found 25% of $60 but stopped there; the question asks for the new total price.
+  - Misconception: Nice try. You found 25% of $60. Now add that to $60 to get the new total.
 - D. $60.25 [WRONG]
-  - Misconception: Misconception: You added 0.25 as if 25% were $0.25, not 0.25 of the price.
+  - Misconception: Nice try. 25% means 0.25 of the price, not $0.25. Add 0.25 x $60 to $60.
 
 **Correct Answer(s):** A. $75
 
@@ -6073,11 +6072,11 @@ What is the median score?
 **Choices:**
 - A. $40.50 [CORRECT]
 - B. $40.00 [WRONG]
-  - Misconception: Misconception: You added the percents (10% + 10% = 20%) and took 20% off the original $50, but the second 10% should be taken off the reduced price.
+  - Misconception: Nice try. Do not add the percents. Take 10% off first, then 10% off that new price.
 - C. $45.00 [WRONG]
-  - Misconception: Misconception: You only applied one 10% discount and didn't do the second discount.
+  - Misconception: Nice try. Use 10% twice. One discount is not enough.
 - D. $44.50 [WRONG]
-  - Misconception: Misconception: You took 10% of $50, then took 10% of that discount amount, instead of taking 10% of the new price in February.
+  - Misconception: Nice try. You took 10% of $50, then 10% of that little bit. Instead, take 10% of the new February price.
 
 **Correct Answer(s):** A. $40.50
 
@@ -6092,11 +6091,11 @@ What is the median score?
 **Choices:**
 - A. $100.00 [CORRECT]
 - B. $90.00 [WRONG]
-  - Misconception: Misconception: You removed only the 5% tax by dividing by 1.05, but you didn't undo the 10% discount.
+  - Misconception: Nice try. You divided by 1.05 to drop the 5% tax. Now also undo the 10% discount to get the start price.
 - C. $105.00 [WRONG]
-  - Misconception: Misconception: You undid the discount by dividing by 0.90, but you didn't remove the 5% tax first.
+  - Misconception: Nice try. You divided by 0.90 to undo the discount. First remove the 5% tax, then undo the discount.
 - D. $99.47 [WRONG]
-  - Misconception: Misconception: You treated "10% off then 5% tax" as a simple net 5% off and divided by 0.95, but successive percent changes don't combine that way.
+  - Misconception: Nice try. You joined 10% off and 5% tax into 5% off. Percents stack in order, so handle each step one by one.
 
 **Correct Answer(s):** A. $100.00
 
@@ -6120,12 +6119,12 @@ What is the median score?
 
 **Choices:**
 - A. 3/8 mph [WRONG]
-  - Misconception: Misconception: You multiplied the fractions instead of dividing distance by time.
+  - Misconception: Nice try. You multiplied the two fractions. Instead, divide distance by time to find the speed or rate.
 - B. 1 1/2 mph [CORRECT]
 - C. 2/3 mph [WRONG]
-  - Misconception: Misconception: You reversed the ratio and divided time by distance.
+  - Misconception: Nice try. You flipped the ratio and divided time by distance. Keep it as distance divided by time.
 - D. 1 1/4 mph [WRONG]
-  - Misconception: Misconception: You added the fractions instead of computing a rate.
+  - Misconception: Nice try. You added the two fractions. To find a rate, divide distance by time, not add.
 
 **Correct Answer(s):** B. 1 1/2 mph
 
@@ -6139,12 +6138,12 @@ What is the median score?
 
 **Choices:**
 - A. $3.75 per kg [WRONG]
-  - Misconception: Misconception: You multiplied 4.50 by 5/6 instead of dividing by 5/6.
+  - Misconception: Nice try. You multiplied 4.50 by 5/6. Instead, divide 4.50 by 5/6 to find the unit cost.
 - B. $5.40 per kg [CORRECT]
 - C. $4.20 per kg [WRONG]
-  - Misconception: Misconception: You used an incorrect decimal conversion while scaling to one kilogram.
+  - Misconception: Nice try. The decimal moved to the wrong spot while you scaled to one kilogram. Take another look.
 - D. $2.70 per kg [WRONG]
-  - Misconception: Misconception: You treated 5/6 as 0.6 and divided by the wrong value.
+  - Misconception: Nice try. You saw 5/6 as 0.6 and then divided by the wrong number. Try the fraction again.
 
 **Correct Answer(s):** B. $5.40 per kg
 
@@ -6159,11 +6158,11 @@ What is the median score?
 **Choices:**
 - A. 1/16 cup [CORRECT]
 - B. 1/2 cup [WRONG]
-  - Misconception: Misconception: You simplified the numerator and denominator without dividing by the total number of cookies.
+  - Misconception: Nice try. You simplified top and bottom, but forgot to divide by the total cookies. Finish the division.
 - C. 7/14 cup [WRONG]
-  - Misconception: Misconception: You ignored the denominator in 7/8 and used only 7 as the total sugar amount.
+  - Misconception: Nice try. 7/8 is the total sugar, not just 7. Use the whole 7/8 and divide by 14.
 - D. 7/112 cups [WRONG]
-  - Misconception: Misconception: You multiplied denominators but did not simplify the fraction rate.
+  - Misconception: Nice try. You multiplied the denominators. Simplify distance divided by cookies to find the sugar per cookie.
 
 **Correct Answer(s):** A. 1/16 cup
 
@@ -6178,11 +6177,11 @@ What is the median score?
 **Choices:**
 - A. 0.75 liters per minute [CORRECT]
 - B. 1.33 liters per minute [WRONG]
-  - Misconception: Misconception: You divided 3 by 2.25 instead of 2.25 by 3.
+  - Misconception: Nice try. The division was flipped. Divide total liters by minutes to get liters each minute.
 - C. 6.75 liters per minute [WRONG]
-  - Misconception: Misconception: You multiplied liters and minutes instead of dividing to get a unit rate.
+  - Misconception: Nice try. You multiplied when you needed to divide. Divide 2.25 liters by 3 minutes.
 - D. 2.25 liters per minute [WRONG]
-  - Misconception: Misconception: You used the total amount and ignored that unit rate must be per 1 minute.
+  - Misconception: Nice try. 2.25 liters is for all 3 minutes. Find the amount for just 1 minute.
 
 **Correct Answer(s):** A. 0.75 liters per minute
 
@@ -6197,11 +6196,11 @@ What is the median score?
 **Choices:**
 - A. 3/2 meters per second [CORRECT]
 - B. 27/50 meters per second [WRONG]
-  - Misconception: Misconception: You multiplied the fractions instead of dividing distance by time.
+  - Misconception: Nice try. You multiplied the fractions. Please divide distance by time to get meters for one second.
 - C. 2/3 meters per second [WRONG]
-  - Misconception: Misconception: You inverted the ratio and divided time by distance.
+  - Misconception: Nice try. Your fraction flipped. Keep meters on top and seconds on bottom, then divide straight across.
 - D. 6/5 meters per second [WRONG]
-  - Misconception: Misconception: You made an inversion error when multiplying by the reciprocal.
+  - Misconception: Nice try. Something went wrong when you flipped and multiplied. Let’s walk through the flip-and-multiply step again carefully.
 
 **Correct Answer(s):** A. 3/2 meters per second
 
@@ -6219,12 +6218,12 @@ What is the median score?
 
 **Choices:**
 - A. 2 [WRONG]
-  - Misconception: Misconception: You compared differences instead of using the ratio y/x.
+  - Misconception: Nice try. You subtracted the numbers. Please divide y by x to find the constant k that fits everywhere.
 - B. 2.5 [CORRECT]
 - C. 5 [WRONG]
-  - Misconception: Misconception: You used y from the first row and ignored x.
+  - Misconception: Nice try. 5 is the first y, but match it with its x, which is 2.
 - D. 0.4 [WRONG]
-  - Misconception: Misconception: You reversed the ratio and computed x/y instead of y/x.
+  - Misconception: Nice try. You did x divided by y. Please do y divided by x to find k.
 
 **Correct Answer(s):** B. 2.5
 
@@ -6238,12 +6237,12 @@ What is the median score?
 
 **Choices:**
 - A. y = 3x [WRONG]
-  - Misconception: Misconception: You used x-value as the constant instead of y/x.
+  - Misconception: Nice try. The x-value 3 became the constant. Divide y by x: 12 divided by 3.
 - B. y = 4x [CORRECT]
 - C. y = x + 9 [WRONG]
-  - Misconception: Misconception: You wrote a non-proportional linear equation with a nonzero intercept.
+  - Misconception: Nice try. 3 plus 9 gives 12, but y = kx with no plus.
 - D. y = 12x [WRONG]
-  - Misconception: Misconception: You used y-value directly as k without dividing by x.
+  - Misconception: Nice try. 12 is just one y-value. We want k, the number we multiply every x by.
 
 **Correct Answer(s):** B. y = 4x
 
@@ -6257,12 +6256,12 @@ What is the median score?
 
 **Choices:**
 - A. x: 1, 2, 3; y: 4, 8, 12 [WRONG]
-  - Misconception: Misconception: You this one is proportional because y/x is constant at 4.
+  - Misconception: Nice try. This table is proportional. If you divide y by x each time, you get 4 every row.
 - B. x: 2, 4, 6; y: 6, 12, 18 [WRONG]
-  - Misconception: Misconception: You this one is proportional because y/x is constant at 3.
+  - Misconception: Nice try. This one is proportional too. Each y divided by x is 3 every time.
 - C. x: 1, 2, 3; y: 3, 7, 11 [CORRECT]
 - D. x: 5, 10, 15; y: 2, 4, 6 [WRONG]
-  - Misconception: Misconception: You this one is proportional because y/x is constant at 0.4.
+  - Misconception: Nice try. The ratio y to x is always 0.4, so the link is still proportional. Check the line to see if every point fits that rule.
 
 **Correct Answer(s):** C. x: 1, 2, 3; y: 3, 7, 11
 
@@ -6276,12 +6275,12 @@ What is the median score?
 
 **Choices:**
 - A. (0, 3.5) [WRONG]
-  - Misconception: Misconception: You treated the relationship as having a y-intercept of 3.5. Proportional graphs pass through the origin.
+  - Misconception: Nice try. Proportional graphs must go through the point (0, 0). If x is 0, y must be 0 too.
 - B. (2, 7) [CORRECT]
 - C. (2, 5.5) [WRONG]
-  - Misconception: Misconception: You used an incorrect product for 3.5 x 2.
+  - Misconception: Nice try. Try 3.5 times 2 again. You will make it!
 - D. (3.5, 2) [WRONG]
-  - Misconception: Misconception: You reversed x and y coordinates.
+  - Misconception: Nice try. It looks like x and y were swapped. Plug 2 in for x and find the correct y value.
 
 **Correct Answer(s):** B. (2, 7)
 
@@ -6295,12 +6294,12 @@ What is the median score?
 
 **Choices:**
 - A. 24 [WRONG]
-  - Misconception: Misconception: You used additive change instead of scaling by a constant of proportionality.
+  - Misconception: Nice try. You added 6 to both x and y, but we need to multiply, not add, in proportional problems.
 - B. 35 [CORRECT]
 - C. 28 [WRONG]
-  - Misconception: Misconception: You doubled 14 without matching the change in x from 4 to 10.
+  - Misconception: Nice try. x did not double; it went from 4 to 10. Find k = y ÷ x first.
 - D. 140 [WRONG]
-  - Misconception: Misconception: You multiplied by x directly without first finding k.
+  - Misconception: Nice try. Multiply by 14 is too big. First see how y links to x (4) to find the jump factor.
 
 **Correct Answer(s):** B. 35
 
@@ -6325,11 +6324,11 @@ What is the median score?
 **Choices:**
 - A. 3.7 degrees [CORRECT]
 - B. -10.7 degrees [WRONG]
-  - Misconception: Misconception: You subtracted instead of adding the rise.
+  - Misconception: Nice try. The temp rose, so add 7.2 to the start, not subtract.
 - C. -3.7 degrees [WRONG]
-  - Misconception: Misconception: You handled signs incorrectly.
+  - Misconception: Nice try. 7.2 is bigger than 3.5, so the temp goes past zero and lands in the warm plus side.
 - D. 10.7 degrees [WRONG]
-  - Misconception: Misconception: You ignored the starting negative value.
+  - Misconception: Nice try. Start at -3.5, then add 7.2. Watch the negative sign.
 
 **Correct Answer(s):** A. 3.7 degrees
 
@@ -6344,11 +6343,11 @@ What is the median score?
 **Choices:**
 - A. 64.5 meters [CORRECT]
 - B. 175.5 meters [WRONG]
-  - Misconception: Misconception: You added descents instead of subtracting.
+  - Misconception: Nice try. Descend means go down. Take the steps away from 120, do not add them.
 - C. 101.5 meters [WRONG]
-  - Misconception: Misconception: You subtracted once, not three times.
+  - Misconception: Nice try. You still need to subtract the other two steps so we count all three drops.
 - D. -64.5 meters [WRONG]
-  - Misconception: Misconception: You changed sign of final elevation incorrectly.
+  - Misconception: Nice try. The number is right, but the hiker is still above sea level so keep the sign positive.
 
 **Correct Answer(s):** A. 64.5 meters
 
@@ -6363,11 +6362,11 @@ What is the median score?
 **Choices:**
 - A. 2 3/20 liters [CORRECT]
 - B. 1 3/20 liters [WRONG]
-  - Misconception: Misconception: You may have subtracted both changes.
+  - Misconception: Nice try. The last step was add water back, so do not subtract that final amount.
 - C. 2 7/10 liters [WRONG]
-  - Misconception: Misconception: You likely converted fractions with inconsistent denominators.
+  - Misconception: Nice try. Check the common denominator step again so the fractions line up perfectly.
 - D. 1 13/20 liters [WRONG]
-  - Misconception: Misconception: You mixed subtraction and addition in wrong order.
+  - Misconception: Nice try. Do the add before the subtract, in the right order.
 
 **Correct Answer(s):** A. 2 3/20 liters
 
@@ -6382,11 +6381,11 @@ What is the median score?
 **Choices:**
 - A. 180 minutes [CORRECT]
 - B. 330 minutes [WRONG]
-  - Misconception: Misconception: You divided full bill by rate without removing fixed fee.
+  - Misconception: Nice try. Take away the $12 fee first, then divide.
 - C. 145 minutes [WRONG]
-  - Misconception: Misconception: You subtracted incorrectly before dividing.
+  - Misconception: Nice try. Look again at the subtract or divide step for a small math slip.
 - D. 14.4 minutes [WRONG]
-  - Misconception: Misconception: You divided by 1 instead of by 0.08.
+  - Misconception: Nice try. Divide by a small decimal like 0.08 makes the answer bigger than 14.4.
 
 **Correct Answer(s):** A. 180 minutes
 
@@ -6400,12 +6399,12 @@ What is the median score?
 
 **Choices:**
 - A. about 10 [WRONG]
-  - Misconception: Misconception: You dividing by 0.5 makes numbers larger, not smaller.
+  - Misconception: Nice try. Dividing by 0.5 doubles the number. It asks how many halves fit inside 20.
 - B. about 20 [WRONG]
-  - Misconception: Misconception: You treated division by 0.5 as no change.
+  - Misconception: Nice try. 0.5 is smaller than 1, so the answer will be larger than the original.
 - C. about 40 [CORRECT]
 - D. about 4 [WRONG]
-  - Misconception: Misconception: You moved decimal in wrong direction.
+  - Misconception: Nice try. Divide by 0.5 is the same as multiply by 2.
 
 **Correct Answer(s):** C. about 40
 
@@ -6430,11 +6429,11 @@ What is the median score?
 **Choices:**
 - A. -21 [CORRECT]
 - B. 21 [WRONG]
-  - Misconception: Misconception: You subtracted correctly but lost the negative sign.
+  - Misconception: Nice try. A minus number take away a plus stays minus. Keep the sign and try again.
 - C. -5 [WRONG]
-  - Misconception: Misconception: You added 8 to -13 instead of subtracting 8 from both sides.
+  - Misconception: Nice try. To free x, subtract 8 from both sides, not add. That keeps the balance and shows x.
 - D. 5 [WRONG]
-  - Misconception: Misconception: You combined numbers with wrong sign handling.
+  - Misconception: Nice try. Watch the sign when you subtract from a minus number. Stay calm and check again.
 
 **Correct Answer(s):** A. -21
 
@@ -6449,11 +6448,11 @@ What is the median score?
 **Choices:**
 - A. x = 7 [CORRECT]
 - B. x = 11 [WRONG]
-  - Misconception: Misconception: You added 5 but forgot to divide by 3.
+  - Misconception: Nice try. You added 5. Now divide that total by 3 to finish.
 - C. x = 21 [WRONG]
-  - Misconception: Misconception: You multiplied by 3 instead of dividing by 3.
+  - Misconception: Nice try. After you add 5, divide by 3 to find one x.
 - D. x = -7 [WRONG]
-  - Misconception: Misconception: You made a sign error while isolating x.
+  - Misconception: Nice try. 3x = 21 and both are plus, so x will be plus too.
 
 **Correct Answer(s):** A. x = 7
 
@@ -6468,11 +6467,11 @@ What is the median score?
 **Choices:**
 - A. x = -3 [CORRECT]
 - B. x = 3 [WRONG]
-  - Misconception: Misconception: You solved 2x = 6 but forgot the coefficient is -2, not 2.
+  - Misconception: Nice try. You saw 2x links to 6, but the real mate is -2x. Divide by -2 next.
 - C. x = -7 [WRONG]
-  - Misconception: Misconception: You subtracted 4 from 10 incorrectly and then divided by 2.
+  - Misconception: Nice try. Check 10 minus 4 once more. It should leave 6 before we divide.
 - D. x = 7 [WRONG]
-  - Misconception: Misconception: You treated the equation like 4 + 2x = 10.
+  - Misconception: Nice try. Bring -2x to one side first. Then we can clear x.
 
 **Correct Answer(s):** A. x = -3
 
@@ -6487,11 +6486,11 @@ What is the median score?
 **Choices:**
 - A. x = 12 [CORRECT]
 - B. x = 6 [WRONG]
-  - Misconception: Misconception: You subtracted 3 but forgot dividing by 0.5 doubles the value.
+  - Misconception: Nice try. 9 - 3 = 6 is right. Now divide by 0.5, which is the same as doubling, so x = 12.
 - C. x = 3 [WRONG]
-  - Misconception: Misconception: You divided the constant term by 0.5 without isolating x first.
+  - Misconception: Nice try. Do 9 minus 3 first. Then we can face the 0.5.
 - D. x = 18 [WRONG]
-  - Misconception: Misconception: You added and multiplied in the wrong order after moving terms.
+  - Misconception: Nice try. Take it step by step. Get x alone before moving on.
 
 **Correct Answer(s):** A. x = 12
 
@@ -6506,11 +6505,11 @@ What is the median score?
 **Choices:**
 - A. 12 [CORRECT]
 - B. 10 [WRONG]
-  - Misconception: Misconception: You used only the +2 scoring and ignored that wrong answers deduct points.
+  - Misconception: Nice try. Each miss takes away one point. Remember to subtract the missed ones from the total.
 - C. 9 [WRONG]
-  - Misconception: Misconception: You likely formed an equation with wrong total-question constraint.
+  - Misconception: Nice try. If only 9 are right, we still subtract 6 for the wrong ones. That score is too low.
 - D. 13 [WRONG]
-  - Misconception: Misconception: You treated wrong answers as 0 points instead of -1 point.
+  - Misconception: Nice try. If she got 13 correct, that's 26 points, then subtract 2 for two wrong answers: 24, not 21. So it must be fewer correct.
 
 **Correct Answer(s):** A. 12
 
@@ -6535,11 +6534,11 @@ What is the median score?
 **Choices:**
 - A. 10x - 15 [CORRECT]
 - B. 10x - 5 [WRONG]
-  - Misconception: Misconception: You distributed 3 incorrectly to the constant term.
+  - Misconception: Nice try. The 3 must multiply both 2x and 5. Share it with each part.
 - C. 6x - 1 [WRONG]
-  - Misconception: Misconception: You combined unlike terms incorrectly.
+  - Misconception: Nice try. -15 has no x, and 4x has an x. They are not like terms, so let them stay apart.
 - D. 7x - 15 [WRONG]
-  - Misconception: Misconception: You forgot one x-term while combining.
+  - Misconception: Nice try. 6x + 4x = 10x.
 
 **Correct Answer(s):** A. 10x - 15
 
@@ -6554,11 +6553,11 @@ What is the median score?
 **Choices:**
 - A. 7(2y + 3) [CORRECT]
 - B. 14(y + 21) [WRONG]
-  - Misconception: Misconception: You did not extract a true common factor.
+  - Misconception: Nice try. 14 does not divide 21 evenly. Hunt for a smaller number that can divide both 14 and 21.
 - C. 3(14y + 7) [WRONG]
-  - Misconception: Misconception: You 3 is not a common factor of both terms.
+  - Misconception: Nice try. 3 fits into 21, but not into 14. Try 7 instead; it slides into both numbers neatly.
 - D. 7(2y + 21) [WRONG]
-  - Misconception: Misconception: You did not divide the second term by 7 correctly.
+  - Misconception: Nice try. You pulled out the 7. Now split the 21 by 7 too.
 
 **Correct Answer(s):** A. 7(2y + 3)
 
@@ -6573,11 +6572,11 @@ What is the median score?
 **Choices:**
 - A. -a + 3 [CORRECT]
 - B. -a - 13 [WRONG]
-  - Misconception: Misconception: You likely made a sign error when distributing.
+  - Misconception: Nice try. Negative times negative is positive.
 - C. a + 3 [WRONG]
-  - Misconception: Misconception: You flipped the sign of the variable term.
+  - Misconception: Nice try. Check the sign when you add -6a and 5a.
 - D. 11a - 3 [WRONG]
-  - Misconception: Misconception: You added coefficients before distribution.
+  - Misconception: Nice try. Give every number its own group first. After that, you can safely add up all the a’s together.
 
 **Correct Answer(s):** A. -a + 3
 
@@ -6592,11 +6591,11 @@ What is the median score?
 **Choices:**
 - A. 2.5x - 3 [CORRECT]
 - B. 2.5x + 3 [WRONG]
-  - Misconception: Misconception: You changed the constant sign during distribution.
+  - Misconception: Nice try. Keep the -3 as minus, not plus.
 - C. 5.5x - 3 [WRONG]
-  - Misconception: Misconception: You subtracted variable terms incorrectly.
+  - Misconception: Nice try. When you subtract 1.5x from 4x, the x part should get smaller.
 - D. 4x - 9 [WRONG]
-  - Misconception: Misconception: You distributed and combined inconsistently.
+  - Misconception: Nice try. Go one step at a time so no parts get lost.
 
 **Correct Answer(s):** A. 2.5x - 3
 
@@ -6611,11 +6610,11 @@ What is the median score?
 **Choices:**
 - A. 6(3m - 3) [CORRECT]
 - B. 6(2m - 3) [WRONG]
-  - Misconception: Misconception: You combined like terms incorrectly before factoring.
+  - Misconception: Nice try. Add 12m and 6m to get 18m before you factor.
 - C. 3(6m - 6) [WRONG]
-  - Misconception: Misconception: You this is not equivalent to the simplified expression.
+  - Misconception: Nice try. Three works, but we can pull out a bigger number. Find the largest one.
 - D. 18m - 18 [WRONG]
-  - Misconception: Misconception: You simplified but did not factor as asked.
+  - Misconception: Nice try. You got 18m + 18. Now pull out the same number from both parts.
 
 **Correct Answer(s):** A. 6(3m - 3)
 
@@ -6634,11 +6633,11 @@ What is the median score?
 **Choices:**
 - A. 12 + 3c [CORRECT]
 - B. 15c [WRONG]
-  - Misconception: Misconception: You treated the fixed monthly fee as repeated per class.
+  - Misconception: Nice try. The $12 is paid only once each month, not for every class.
 - C. 3(12 + c) [WRONG]
-  - Misconception: Misconception: You multiplied the monthly fee by 3 incorrectly.
+  - Misconception: Nice try. Keep the $12 alone. Only the 3 should multiply the class count c.
 - D. 12c + 3 [WRONG]
-  - Misconception: Misconception: You swapped fixed and variable parts.
+  - Misconception: Nice try. Swap the fee and the class price back.
 
 **Correct Answer(s):** A. 12 + 3c
 
@@ -6652,12 +6651,12 @@ What is the median score?
 
 **Choices:**
 - A. 4x + 2 [WRONG]
-  - Misconception: Misconception: You distributed incorrectly to the constant.
+  - Misconception: Nice try. Multiply the 3 by the 2 inside the parentheses again.
 - B. 4x + 6 [WRONG]
-  - Misconception: Misconception: You simplified but did not show a factored form.
+  - Misconception: Nice try. You have 4 and 6. Pull out the same small number from both.
 - C. 2(2x + 3) [CORRECT]
 - D. x(3 + 2) + x [WRONG]
-  - Misconception: Misconception: You factored incorrectly inside parentheses.
+  - Misconception: Nice try. Only pull out letters that really belong to both parts.
 
 **Correct Answer(s):** C. 2(2x + 3)
 
@@ -6671,12 +6670,12 @@ What is the median score?
 
 **Choices:**
 - A. p - 0.2p + 5 [WRONG]
-  - Misconception: Misconception: You correct form, but not the most simplified equivalent.
+  - Misconception: Nice try. This math is correct! The answer can be just a bit shorter: write 0.8p for the discount.
 - B. 0.8p + 5 [CORRECT]
 - C. 1.2p + 5 [WRONG]
-  - Misconception: Misconception: You increased price instead of discounting.
+  - Misconception: Nice try. 1.2p means the price goes up by 20%. For a discount, subtract 20% from the whole.
 - D. 0.8(p + 5) [WRONG]
-  - Misconception: Misconception: You incorrectly applied discount to shipping too.
+  - Misconception: Nice try. The 20% off only touches the item cost, not the shipping. Only the item gets the discount.
 
 **Correct Answer(s):** B. 0.8p + 5
 
@@ -6690,12 +6689,12 @@ What is the median score?
 
 **Choices:**
 - A. Plan A is always cheaper [WRONG]
-  - Misconception: Misconception: You did not expand Plan B correctly.
+  - Misconception: Nice try. Look again at Plan B. It is the exact same math as Plan A.
 - B. Plan B is always cheaper [WRONG]
-  - Misconception: Misconception: You compared forms without simplifying.
+  - Misconception: Nice try. Multiply by 3 in Plan B. You will see it matches Plan A perfectly.
 - C. The plans are equivalent for all n [CORRECT]
 - D. They are equal only when n = 0 [WRONG]
-  - Misconception: Misconception: You checked a single value only.
+  - Misconception: Nice try. They are equal at zero, and they stay equal no matter what n is.
 
 **Correct Answer(s):** C. The plans are equivalent for all n
 
@@ -6710,11 +6709,11 @@ What is the median score?
 **Choices:**
 - A. P = 4(s + 2) [CORRECT]
 - B. P = s + 12 [WRONG]
-  - Misconception: Misconception: You ignored repeated side contribution.
+  - Misconception: Nice try. A square has four equal sides, so count all four sides (4s).
 - C. P = 8s + 4 [WRONG]
-  - Misconception: Misconception: You swapped coefficients and constants.
+  - Misconception: Nice try. Check again. The number of sides and the bonus seem to be swapped.
 - D. P = 2(2s + 8) [WRONG]
-  - Misconception: Misconception: You this expands to 4s + 16, not the original.
+  - Misconception: Nice try. If you multiply, you get 4s + 16. That is not the same as the start.
 
 **Correct Answer(s):** A. P = 4(s + 2)
 
@@ -6739,11 +6738,11 @@ What is the median score?
 **Choices:**
 - A. 2 cm [CORRECT]
 - B. 20 cm [WRONG]
-  - Misconception: Misconception: You likely converted meters to centimeters incorrectly by missing one power of 10.
+  - Misconception: Nice try. Check the zeros when you change meters to centimeters. Try the conversion once more.
 - C. 0.2 cm [WRONG]
-  - Misconception: Misconception: You divided by an extra factor of 10 after applying the scale.
+  - Misconception: Nice try. You divided by ten too many times. 90,000 divided by 45,000 is just 2.
 - D. 4.5 cm [WRONG]
-  - Misconception: Misconception: You treated 1:45,000 as if it meant divide meters directly by 45,000 without unit conversion.
+  - Misconception: Nice try. First turn 900 meters into centimeters. Then use the map scale.
 
 **Correct Answer(s):** A. 2 cm
 
@@ -6758,11 +6757,11 @@ What is the median score?
 **Choices:**
 - A. 36 m [CORRECT]
 - B. 3.6 m [WRONG]
-  - Misconception: Misconception: You divided by an extra factor of 10 when converting centimeters to meters.
+  - Misconception: Nice try. When you change centimeters to meters, watch for an extra divide-by-ten that slipped in.
 - C. 0.36 m [WRONG]
-  - Misconception: Misconception: You divided by 1,000 in the final conversion instead of 100.
+  - Misconception: Nice try. 100 cm makes one meter. You used 1,000 for the switch.
 - D. 14.4 m [WRONG]
-  - Misconception: Misconception: You doubled the drawing length instead of applying the given scale factor.
+  - Misconception: Nice try. Multiply the drawing size by the full 500 to get the real length.
 
 **Correct Answer(s):** A. 36 m
 
@@ -6777,11 +6776,11 @@ What is the median score?
 **Choices:**
 - A. 4 cm [CORRECT]
 - B. 9 cm [WRONG]
-  - Misconception: Misconception: You multiplied by 30/20 instead of shrinking to the new scale.
+  - Misconception: Nice try. A smaller scale means the drawing shrinks. The new 1:30 drawing will be smaller.
 - C. 10 cm [WRONG]
-  - Misconception: Misconception: You used the denominator difference (30 - 20) instead of scale ratios.
+  - Misconception: Nice try. Scale problems use multiply and divide, not adding the scale numbers together.
 - D. 3 cm [WRONG]
-  - Misconception: Misconception: You halved the old drawing length instead of using equivalent actual length.
+  - Misconception: Nice try. First find the real length, 120 cm. Then see how many 30 cm pieces fit inside.
 
 **Correct Answer(s):** A. 4 cm
 
@@ -6795,12 +6794,12 @@ What is the median score?
 
 **Choices:**
 - A. 1500 m^2 [WRONG]
-  - Misconception: Misconception: You scaled one dimension correctly but treated area scaling like a single linear scale.
+  - Misconception: Nice try. You scaled the area once, but we must scale both the length and the width.
 - B. 15 m^2 [CORRECT]
 - C. 0.15 m^2 [WRONG]
-  - Misconception: Misconception: You converted square centimeters to square meters incorrectly by two powers of 10.
+  - Misconception: Nice try. Check the zeros when you change cm² to m².
 - D. 150 m^2 [WRONG]
-  - Misconception: Misconception: You applied one extra factor of 10 when converting scaled lengths to meters.
+  - Misconception: Nice try. Count the zeros again after you change each side from cm to m.
 
 **Correct Answer(s):** B. 15 m^2
 
@@ -6815,11 +6814,11 @@ What is the median score?
 **Choices:**
 - A. 1:80 [CORRECT]
 - B. 1:120 [WRONG]
-  - Misconception: Misconception: You assumed a larger denominator means a larger drawing, but it means more reduction.
+  - Misconception: Nice try. A smaller bottom number means each drawing unit shows less real space, so the drawing stays big.
 - C. Both produce the same drawing size [WRONG]
-  - Misconception: Misconception: You ignored that different scale ratios produce different drawing lengths.
+  - Misconception: Nice try. Different scales always give different sized drawings for the same real thing.
 - D. Cannot be determined [WRONG]
-  - Misconception: Misconception: You can compare drawing size directly: smaller denominator gives larger drawing for same object.
+  - Misconception: Nice try. The 1:80 scale reduces the object less, so it gives the bigger drawing.
 
 **Correct Answer(s):** A. 1:80
 
@@ -6844,11 +6843,11 @@ What is the median score?
 **Choices:**
 - A. About 1,260 cm^2 [CORRECT]
 - B. About 2,510 cm^2 [WRONG]
-  - Misconception: Misconception: You used diameter as radius in A = pi r^2.
+  - Misconception: Nice try. Take half of the diameter to get the radius, then use that radius in the area formula.
 - C. About 630 cm^2 [WRONG]
-  - Misconception: Misconception: You used r^2 incorrectly, likely halving area instead of squaring the radius.
+  - Misconception: Nice try. Square the 20 cm first, then multiply by PI. Do not divide the final area by two.
 - D. About 125 cm^2 [WRONG]
-  - Misconception: Misconception: You confused area with circumference and used the wrong formula.
+  - Misconception: Nice try. That looks like a circumference answer. Use PI times radius squared to find the area.
 
 **Correct Answer(s):** A. About 1,260 cm^2
 
@@ -6863,11 +6862,11 @@ What is the median score?
 **Choices:**
 - A. 44 cm [CORRECT]
 - B. 154 cm [WRONG]
-  - Misconception: Misconception: You used area formula pi r^2 instead of circumference formula.
+  - Misconception: Nice try. That answer comes from the area formula. Use 2 times PI times the radius for circumference.
 - C. 22 cm [WRONG]
-  - Misconception: Misconception: You forgot the factor 2 in C = 2pi r.
+  - Misconception: Nice try. Use 2πr for the circle’s distance. Don’t drop the two.
 - D. 14 cm [WRONG]
-  - Misconception: Misconception: You used diameter only and omitted pi.
+  - Misconception: Nice try. After you find the diameter, multiply by π to go all the way around.
 
 **Correct Answer(s):** A. 44 cm
 
@@ -6882,11 +6881,11 @@ What is the median score?
 **Choices:**
 - A. 10 cm [CORRECT]
 - B. 5 cm [WRONG]
-  - Misconception: Misconception: You divided by 2 twice by confusing radius and diameter.
+  - Misconception: Nice try. 5 is the radius, but we need the diameter, which is twice the radius.
 - C. 9.99 cm [WRONG]
-  - Misconception: Misconception: You rounded too early in a multi-step calculation.
+  - Misconception: Nice try. Rounding is okay, yet 31.4 divided by 3.14 is exactly 10.
 - D. 100 cm [WRONG]
-  - Misconception: Misconception: You moved the decimal incorrectly while dividing by pi.
+  - Misconception: Nice try. Watch the decimal point. 31.4 divided by 3.14 gives 10, not 100.
 
 **Correct Answer(s):** A. 10 cm
 
@@ -6901,11 +6900,11 @@ What is the median score?
 **Choices:**
 - A. 38.5 cm^2 [CORRECT]
 - B. 22 cm^2 [WRONG]
-  - Misconception: Misconception: You used pi only and did not include r^2.
+  - Misconception: Nice try. Multiply PI by the radius, then multiply by the radius again to square it.
 - C. 77 cm^2 [WRONG]
-  - Misconception: Misconception: You treated diameter as radius while squaring.
+  - Misconception: Nice try. Keep the radius as 3.5 cm and square that, not the diameter.
 - D. 24.5 cm^2 [WRONG]
-  - Misconception: Misconception: You used C = 2pi r and reported it as area.
+  - Misconception: Nice try. That answer looks like a circumference. Use PI times radius squared for area.
 
 **Correct Answer(s):** A. 38.5 cm^2
 
@@ -6919,12 +6918,12 @@ What is the median score?
 
 **Choices:**
 - A. pi d [WRONG]
-  - Misconception: Misconception: You that expression gives circumference, not area.
+  - Misconception: Nice try. πr² gives the space inside the circle, not the distance around it.
 - B. pi d^2 [WRONG]
-  - Misconception: Misconception: You forgot to divide diameter by 2 before squaring.
+  - Misconception: Nice try. Split the diameter in half to get the radius. Then multiply pi by radius times radius.
 - C. pi(d/2)^2 [CORRECT]
 - D. 2pi(d/2)^2 [WRONG]
-  - Misconception: Misconception: You added an extra factor of 2 that does not belong in the area formula.
+  - Misconception: Nice try. The area is pi times radius times radius. Do not put an extra 2 in the formula.
 
 **Correct Answer(s):** C. pi(d/2)^2
 
@@ -6949,11 +6948,11 @@ What is the median score?
 **Choices:**
 - A. 35 square units [CORRECT]
 - B. 70 square units [WRONG]
-  - Misconception: Misconception: You forgot the 1/2 factor for triangle area.
+  - Misconception: Nice try. For a triangle, take half the rectangle’s area.
 - C. 17 square units [WRONG]
-  - Misconception: Misconception: You added base and height.
+  - Misconception: Nice try. Multiply base times height, do not add them.
 - D. 24.5 square units [WRONG]
-  - Misconception: Misconception: You used an incorrect multiplication.
+  - Misconception: Nice try. First find 10 × 7, then split that in half.
 
 **Correct Answer(s):** A. 35 square units
 
@@ -6967,12 +6966,12 @@ What is the median score?
 
 **Choices:**
 - A. 12 cubic units [WRONG]
-  - Misconception: Misconception: You multiplied only two dimensions.
+  - Misconception: Nice try. Multiply all three side lengths, not just two.
 - B. 60 cubic units [CORRECT]
 - C. 47 cubic units [WRONG]
-  - Misconception: Misconception: You added dimensions with multiplication mixed.
+  - Misconception: Nice try. Use volume, not surface area steps.
 - D. 120 cubic units [WRONG]
-  - Misconception: Misconception: You doubled the correct product.
+  - Misconception: Nice try. 5 times 4 times 3 equals 60.
 
 **Correct Answer(s):** B. 60 cubic units
 
@@ -6986,12 +6985,12 @@ What is the median score?
 
 **Choices:**
 - A. 36 square units [WRONG]
-  - Misconception: Misconception: You found area of one face only.
+  - Misconception: Nice try. You only found one face’s area. Most solids have six faces to add.
 - B. 216 square units [CORRECT]
 - C. 72 square units [WRONG]
-  - Misconception: Misconception: You used two faces instead of six.
+  - Misconception: Nice try. You used two faces, but the whole box has six to count.
 - D. 180 square units [WRONG]
-  - Misconception: Misconception: You used an incorrect formula.
+  - Misconception: Nice try. The formula you chose was a bit off. Check the surface rule again.
 
 **Correct Answer(s):** B. 216 square units
 
@@ -7005,12 +7004,12 @@ What is the median score?
 
 **Choices:**
 - A. 6 square units [WRONG]
-  - Misconception: Misconception: You subtracted areas instead of adding.
+  - Misconception: Nice try. Areas should be added, not subtracted. Try adding all the parts.
 - B. 42 square units [CORRECT]
 - C. 432 square units [WRONG]
-  - Misconception: Misconception: You multiplied instead of summing parts.
+  - Misconception: Nice try. You multiplied the parts, but you need to add them.
 - D. 24 square units [WRONG]
-  - Misconception: Misconception: You counted only one part.
+  - Misconception: Nice try. You only counted one part. Make sure you add every part.
 
 **Correct Answer(s):** B. 42 square units
 
@@ -7025,11 +7024,11 @@ What is the median score?
 **Choices:**
 - A. 100 cubic units [CORRECT]
 - B. 20.5 cubic units [WRONG]
-  - Misconception: Misconception: You added base area and height.
+  - Misconception: Nice try. You added the base to the height. For a prism we multiply base times height.
 - C. 4.5 cubic units [WRONG]
-  - Misconception: Misconception: You subtracted instead of multiplying.
+  - Misconception: Nice try. You subtracted, but we need to multiply base area by height.
 - D. 96 cubic units [WRONG]
-  - Misconception: Misconception: You used a nearby product with arithmetic error.
+  - Misconception: Nice try. The numbers were close, but the product slipped a bit. Try multiplying again slowly.
 
 **Correct Answer(s):** A. 100 cubic units
 
@@ -7053,12 +7052,12 @@ What is the median score?
 
 **Choices:**
 - A. Ask only students in the advanced math club. [WRONG]
-  - Misconception: Misconception: You this is a biased subgroup and not representative of all students.
+  - Misconception: Nice try. This group is biased. It does not fairly represent all students in the school.
 - B. Randomly select students from all grade levels in the school. [CORRECT]
 - C. Ask the first 20 students who arrive early. [WRONG]
-  - Misconception: Misconception: You convenience samples can overrepresent specific behaviors.
+  - Misconception: Nice try. Convenience samples can favor certain habits. They may not show the true picture of everyone.
 - D. Ask only students who volunteer online. [WRONG]
-  - Misconception: Misconception: You volunteer samples can bias results toward students with stronger opinions.
+  - Misconception: Nice try. Picking only volunteers can tilt the answers toward kids with strong views.
 
 **Correct Answer(s):** B. Randomly select students from all grade levels in the school.
 
@@ -7072,12 +7071,12 @@ What is the median score?
 
 **Choices:**
 - A. Choosing every 10th name from an alphabetized list. [WRONG]
-  - Misconception: Misconception: You systematic sampling can still be representative if the list has no harmful pattern.
+  - Misconception: Nice try. Picking every tenth name can work if the list has no hidden loop. Check twice.
 - B. Surveying only students in the cafeteria line at lunch. [CORRECT]
 - C. Using random number generator to pick IDs. [WRONG]
-  - Misconception: Misconception: You this is generally an unbiased random method.
+  - Misconception: Nice try. Pulling names from a hat is usually fair. Everyone gets the same chance.
 - D. Sampling students from each grade proportionally. [WRONG]
-  - Misconception: Misconception: You stratified sampling by grade is often used to improve representativeness.
+  - Misconception: Nice try. Splitting the kids by grade first can balance the survey. Each grade shows its view.
 
 **Correct Answer(s):** B. Surveying only students in the cafeteria line at lunch.
 
@@ -7091,12 +7090,12 @@ What is the median score?
 
 **Choices:**
 - A. You can never use a sample to learn about a population. [WRONG]
-  - Misconception: Misconception: You statistics is specifically used to infer population characteristics from samples.
+  - Misconception: Nice try. We use stats to guess the whole group from just a slice. That is its job.
 - B. The sample can be used to estimate the population if it is representative. [CORRECT]
 - C. The sample gives exact values for every student. [WRONG]
-  - Misconception: Misconception: You samples provide estimates, not exact information for each individual.
+  - Misconception: Nice try. A sample gives a close guess, not the exact truth for each kid.
 - D. A sample smaller than 100 is always invalid. [WRONG]
-  - Misconception: Misconception: You validity depends on sampling method and context, not a fixed sample-size cutoff.
+  - Misconception: Nice try. Good data depends on how we pick, not on a magic number.
 
 **Correct Answer(s):** B. The sample can be used to estimate the population if it is representative.
 
@@ -7110,12 +7109,12 @@ What is the median score?
 
 **Choices:**
 - A. Sample A, because smaller samples are always better. [WRONG]
-  - Misconception: Misconception: You smaller random samples usually have more variability.
+  - Misconception: Nice try. Smaller random groups bounce around more. Their guesses can be far off.
 - B. Sample B, because larger random samples usually give more stable estimates. [CORRECT]
 - C. Both are exactly equally reliable in all cases. [WRONG]
-  - Misconception: Misconception: You larger random samples generally reduce sampling error.
+  - Misconception: Nice try. Bigger random groups smooth the bumps. They usually land closer to the truth.
 - D. Neither can ever estimate population sleep time. [WRONG]
-  - Misconception: Misconception: You samples can provide useful estimates when collected appropriately.
+  - Misconception: Nice try. Even a small slice can give a decent guess if we pick with care.
 
 **Correct Answer(s):** B. Sample B, because larger random samples usually give more stable estimates.
 
@@ -7129,12 +7128,12 @@ What is the median score?
 
 **Choices:**
 - A. It is random because park users are easy to identify. [WRONG]
-  - Misconception: Misconception: You ease of sampling does not make a sample random or representative.
+  - Misconception: Nice try. Easy is not the same as random. We still need a fair way to choose.
 - B. It overrepresents people likely to favor parks, so the sample is biased. [CORRECT]
 - C. It is unbiased because park users are part of the population. [WRONG]
-  - Misconception: Misconception: You using only one subgroup can still bias the estimate.
+  - Misconception: Nice try. Using just the front row leaves out the rest. One group can tilt the answer.
 - D. It is valid only if exactly 100 families are surveyed. [WRONG]
-  - Misconception: Misconception: You sample size alone does not fix selection bias.
+  - Misconception: Nice try. More kids does not fix a crooked start. Fair picking comes first.
 
 **Correct Answer(s):** B. It overrepresents people likely to favor parks, so the sample is biased.
 
@@ -7153,11 +7152,11 @@ What is the median score?
 **Choices:**
 - A. 144 [CORRECT]
 - B. 72 [WRONG]
-  - Misconception: Misconception: You scaled to 200 students instead of 400.
+  - Misconception: Nice try. You scaled to 200 students, but we need 400. Just double your number.
 - C. 180 [WRONG]
-  - Misconception: Misconception: You used 18/40 instead of 18/50 when finding the sample proportion.
+  - Misconception: Nice try. Use 18/50, not 18/40. Then scale that proportion to 400.
 - D. 225 [WRONG]
-  - Misconception: Misconception: You treated 18 as 45% instead of 36%.
+  - Misconception: Nice try. You read 18 as 45% instead of 36%. Check the division again.
 
 **Correct Answer(s):** A. 144
 
@@ -7172,11 +7171,11 @@ What is the median score?
 **Choices:**
 - A. 75 [CORRECT]
 - B. 150 [WRONG]
-  - Misconception: Misconception: You doubled the estimate by treating 3/20 as 30%.
+  - Misconception: Nice try. 3/20 is 15%, not 30%. Use that rate to scale to 500.
 - C. 60 [WRONG]
-  - Misconception: Misconception: You used 3/25 instead of 3/20 when scaling.
+  - Misconception: Nice try. Keep the sample fraction 3/20 when you scale. Using 3/25 changes the rate.
 - D. 15 [WRONG]
-  - Misconception: Misconception: You used the sample count directly without scaling to the full shipment.
+  - Misconception: Nice try. You used the sample count only. Scale 3 out of 20 up to the full 500.
 
 **Correct Answer(s):** A. 75
 
@@ -7190,12 +7189,12 @@ What is the median score?
 
 **Choices:**
 - A. At least one sample must be invalid because estimates are different. [WRONG]
-  - Misconception: Misconception: You different random samples can naturally produce slightly different estimates.
+  - Misconception: Nice try. Each random sample can give a slightly different answer. That is normal.
 - B. Sampling variability can cause different estimates from different random samples. [CORRECT]
 - C. The population percentage is exactly the average, 44.5%. [WRONG]
-  - Misconception: Misconception: You the true population value is unknown; sample averages do not guarantee exactness.
+  - Misconception: Nice try. We never know the true number. Samples only give close guesses.
 - D. The larger estimate is always the true population value. [WRONG]
-  - Misconception: Misconception: You a larger sample estimate is not automatically more accurate.
+  - Misconception: Nice try. Bigger samples are better, but they can still be a bit off.
 
 **Correct Answer(s):** B. Sampling variability can cause different estimates from different random samples.
 
@@ -7209,12 +7208,12 @@ What is the median score?
 
 **Choices:**
 - A. To eliminate all variation so every estimate is identical. [WRONG]
-  - Misconception: Misconception: You sampling variation is expected and cannot be fully eliminated this way.
+  - Misconception: Nice try. We can not remove all variation. More samples just show how much the numbers jump around.
 - B. To understand how much estimates can vary due to random sampling. [CORRECT]
 - C. Because one random sample can never be used for inference. [WRONG]
-  - Misconception: Misconception: You one random sample can still be used for inference; multiple samples help gauge variability.
+  - Misconception: Nice try. One sample is good, but more samples help us see the wiggle room.
 - D. To guarantee the true population value is found exactly. [WRONG]
-  - Misconception: Misconception: You sampling provides estimates, not guaranteed exact population values.
+  - Misconception: Nice try. A sample gives a good guess, but it rarely hits the exact population number.
 
 **Correct Answer(s):** B. To understand how much estimates can vary due to random sampling.
 
@@ -7229,11 +7228,11 @@ What is the median score?
 **Choices:**
 - A. 1,600 [CORRECT]
 - B. 640 [WRONG]
-  - Misconception: Misconception: You treated 64% as 0.64 of 1,000 instead of 2,500.
+  - Misconception: Nice try. Use all 2,500 households. Multiply 0.64 x 2,500.
 - C. 2,040 [WRONG]
-  - Misconception: Misconception: You subtracted 64% from 100% and estimated non-recycling households.
+  - Misconception: Nice try. You found the houses that do not recycle. We want the ones that do recycle instead.
 - D. 1,250 [WRONG]
-  - Misconception: Misconception: You used 50% instead of the given 64%.
+  - Misconception: Nice try. 50% was a tidy guess, but the survey says about 64%.
 
 **Correct Answer(s):** A. 1,600
 
@@ -7251,12 +7250,12 @@ What is the median score?
 
 **Choices:**
 - A. 1 [WRONG]
-  - Misconception: Misconception: You used half the center difference.
+  - Misconception: Nice try. The gap between centers is 4. That is two steps of size 2.
 - B. 2 [CORRECT]
 - C. 4 [WRONG]
-  - Misconception: Misconception: You used raw center difference, not a multiple.
+  - Misconception: Nice try. You found 4. Now divide 4 by 2 to see how many MAD units fit in.
 - D. 8 [WRONG]
-  - Misconception: Misconception: You multiplied instead of dividing by variability.
+  - Misconception: Nice try. 46 - 42 = 4 is the gap. To count variability units, divide 4 by 2.
 
 **Correct Answer(s):** B. 2
 
@@ -7270,12 +7269,12 @@ What is the median score?
 
 **Choices:**
 - A. The groups are definitely identical [WRONG]
-  - Misconception: Misconception: You overlap does not prove identical populations.
+  - Misconception: Nice try. When centers are close, the groups can still mix a little. Not every dot has to match.
 - B. Any center difference is likely small relative to spread [CORRECT]
 - C. Centers must differ by at least 5 spread units [WRONG]
-  - Misconception: Misconception: You large multiples would usually reduce overlap.
+  - Misconception: Nice try. Far-apart centers would make the clouds sit on opposite sides with hardly any overlap.
 - D. Variability is zero [WRONG]
-  - Misconception: Misconception: You overlap with similar spread still implies nonzero variation.
+  - Misconception: Nice try. Zero variability would stack every dot in one spot. Small spread just lets the circles mix.
 
 **Correct Answer(s):** B. Any center difference is likely small relative to spread
 
@@ -7289,12 +7288,12 @@ What is the median score?
 
 **Choices:**
 - A. 1 [WRONG]
-  - Misconception: Misconception: You used difference 9 but divided incorrectly.
+  - Misconception: Nice try. 27 minus 18 is 9. Divide 9 by 3 to get the MADs.
 - B. 2 [WRONG]
-  - Misconception: Misconception: You rounded the multiple too low.
+  - Misconception: Nice try. 9 divided by 3 is a neat whole number.
 - C. 3 [CORRECT]
 - D. 9 [WRONG]
-  - Misconception: Misconception: You used raw center difference instead of dividing by MAD.
+  - Misconception: Nice try. 27 - 18 = 9 is the gap. Divide 9 by the MAD of 3 to get 3 MADs.
 
 **Correct Answer(s):** C. 3
 
@@ -7308,12 +7307,12 @@ What is the median score?
 
 **Choices:**
 - A. Center difference is 0.5 MAD [WRONG]
-  - Misconception: Misconception: You small center difference often means strong overlap.
+  - Misconception: Nice try! When the centers are only half a MAD apart, the two groups pile together and overlap a lot.
 - B. Center difference is 1 MAD [WRONG]
-  - Misconception: Misconception: You still usually moderate overlap.
+  - Misconception: Nice try! With just 1 MAD between centers, the groups still mix in the middle.
 - C. Center difference is 3 MADs [CORRECT]
 - D. Center difference is 0 MAD [WRONG]
-  - Misconception: Misconception: You same centers often imply most overlap.
+  - Misconception: Nice try! If the centers match exactly, the groups land on top of each other and overlap the most.
 
 **Correct Answer(s):** C. Center difference is 3 MADs
 
@@ -7328,11 +7327,11 @@ What is the median score?
 **Choices:**
 - A. Groups differ by 3 variability units, so centers are substantially separated [CORRECT]
 - B. Groups differ by 6 variability units [WRONG]
-  - Misconception: Misconception: You used center difference without dividing by variability.
+  - Misconception: Nice try! 6 is the plain gap. Divide 6 by the scale 2 to get the variability units.
 - C. Groups differ by 1 variability unit [WRONG]
-  - Misconception: Misconception: You divided by an incorrect value.
+  - Misconception: Nice try. Sixty four minus 58 equals 6. Divide 6 by 2 to count how many 2s fit.
 - D. Groups cannot be compared without exact same data values [WRONG]
-  - Misconception: Misconception: You center and variability are sufficient for informal comparison.
+  - Misconception: Nice try! We can still learn plenty by comparing centers and spread, even without every number.
 
 **Correct Answer(s):** A. Groups differ by 3 variability units, so centers are substantially separated
 
@@ -7351,11 +7350,11 @@ What is the median score?
 **Choices:**
 - A. School B likely has higher average score than School A [CORRECT]
 - B. Schools must have exactly identical populations [WRONG]
-  - Misconception: Misconception: You different sample centers suggest likely population difference.
+  - Misconception: Nice try. One score is 78, the other is 85. That gap hints the schools are different.
 - C. No inference is possible from random samples [WRONG]
-  - Misconception: Misconception: You random samples are specifically used for inference.
+  - Misconception: Nice try! Random samples help us make smart "likely" guesses about the whole group.
 - D. School A is definitely better with certainty [WRONG]
-  - Misconception: Misconception: You direction and certainty are both incorrect.
+  - Misconception: Nice try! School A’s 78 is lower than 85, so the data does not support that claim.
 
 **Correct Answer(s):** A. School B likely has higher average score than School A
 
@@ -7370,11 +7369,11 @@ What is the median score?
 **Choices:**
 - A. Centers look similar, but consistency differs [CORRECT]
 - B. Populations must have different means [WRONG]
-  - Misconception: Misconception: You sample means are stated equal.
+  - Misconception: Nice try! The means are equal here. It is the spread that differs between the groups.
 - C. Variability has no effect on inference [WRONG]
-  - Misconception: Misconception: You variation affects how strongly we compare groups.
+  - Misconception: Nice try! Variability shows if the data stays close or scatters all around.
 - D. Sample X has no spread [WRONG]
-  - Misconception: Misconception: You larger variability means more spread, not less.
+  - Misconception: Nice try! Larger variability means Sample X spreads out more than Sample Y.
 
 **Correct Answer(s):** A. Centers look similar, but consistency differs
 
@@ -7389,11 +7388,11 @@ What is the median score?
 **Choices:**
 - A. There may be only a small population difference, if any [CORRECT]
 - B. Population 2 is certainly much larger in center [WRONG]
-  - Misconception: Misconception: You small center gap with high spread does not support strong certainty.
+  - Misconception: Nice try. The two groups overlap a lot, so a tiny gap does not give big proof of a huge difference.
 - C. Population 1 must be larger because 14 is smaller [WRONG]
-  - Misconception: Misconception: You interpretation direction is incorrect.
+  - Misconception: Nice try. 14 is the smaller number. Even then, the big overlap makes us unsure about any real gap.
 - D. Random samples cannot be used for inference [WRONG]
-  - Misconception: Misconception: You random sampling supports inference.
+  - Misconception: Nice try. We can guess, but the data shows only a small difference, so stay cautious.
 
 **Correct Answer(s):** A. There may be only a small population difference, if any
 
@@ -7408,11 +7407,11 @@ What is the median score?
 **Choices:**
 - A. Centers far apart and variability small [CORRECT]
 - B. Centers very close and variability large [WRONG]
-  - Misconception: Misconception: You this weakens comparison.
+  - Misconception: Nice try. When centers are close and data is spread out, we cannot claim the groups are truly different.
 - C. Non-random convenience samples only [WRONG]
-  - Misconception: Misconception: You random sampling improves reliability.
+  - Misconception: Nice try. Random samples give the best proof, so they make the strongest, most trusted inference.
 - D. Ignoring variability entirely [WRONG]
-  - Misconception: Misconception: You variation is essential for comparison.
+  - Misconception: Nice try. We always check variability; it shows how much we can trust the typical center value.
 
 **Correct Answer(s):** A. Centers far apart and variability small
 
@@ -7427,11 +7426,11 @@ What is the median score?
 **Choices:**
 - A. B has a higher center but much greater spread [CORRECT]
 - B. A has higher center and greater spread [WRONG]
-  - Misconception: Misconception: You both center and variability are reversed.
+  - Misconception: Nice try. Switch the tags: Data B has mean 55 and MAD 8, so it is more spread out.
 - C. The samples must come from identical populations [WRONG]
-  - Misconception: Misconception: You centers and spreads differ notably.
+  - Misconception: Nice try. Because the centers and the spreads are both quite different, the groups are likely not the same.
 - D. MAD does not matter for inference [WRONG]
-  - Misconception: Misconception: You mAD directly describes variability.
+  - Misconception: Nice try. The MAD shows that Group B is less steady and predictable than Group A.
 
 **Correct Answer(s):** A. B has a higher center but much greater spread
 
@@ -7456,11 +7455,11 @@ What is the median score?
 **Choices:**
 - A. 1/4 [CORRECT]
 - B. 2/3 [WRONG]
-  - Misconception: Misconception: You compared red sections to non-red sections instead of total sections.
+  - Misconception: Nice try. Compare red to the whole board: 2 red sections out of 8 total sections.
 - C. 1/8 [WRONG]
-  - Misconception: Misconception: You counted one red section instead of two.
+  - Misconception: Nice try. Two parts are red, so the top of the fraction is 2, not 1.
 - D. 2 [WRONG]
-  - Misconception: Misconception: You used the number of favorable outcomes but did not form a probability.
+  - Misconception: Nice try. A chance must be between 0 and 1. 2 is how many red parts, but we need the fraction red.
 
 **Correct Answer(s):** A. 1/4
 
@@ -7474,11 +7473,11 @@ What is the median score?
 
 **Choices:**
 - A. 0 [WRONG]
-  - Misconception: Misconception: You 0 is valid and means impossible.
+  - Misconception: Nice try. 0 is a real chance. It just means the thing can’t happen, like getting a 7 on a six-side die.
 - B. 0.62 [WRONG]
-  - Misconception: Misconception: You 0.62 is valid because it is between 0 and 1.
+  - Misconception: Nice try. 0.62 sits between 0 and 1, so it is a fine probability.
 - C. 1 [WRONG]
-  - Misconception: Misconception: You 1 is valid and means certain.
+  - Misconception: Nice try. 1 is the biggest chance. It means the thing will surely happen, 100 percent!
 - D. 1.4 [CORRECT]
 
 **Correct Answer(s):** D. 1.4
@@ -7494,11 +7493,11 @@ What is the median score?
 **Choices:**
 - A. Event A with probability 0.72 [CORRECT]
 - B. Event B with probability 3/5 [WRONG]
-  - Misconception: Misconception: You did not convert 3/5 to decimal (0.6) before comparing.
+  - Misconception: Nice try. 3/5 equals 0.60. Since 0.60 is less than 0.72, Event B is less likely.
 - C. They are equally likely [WRONG]
-  - Misconception: Misconception: You 0.72 and 0.6 are not equal.
+  - Misconception: Nice try. Change 3/5 to 0.60. Then you can see 0.60 is smaller than 0.72.
 - D. Cannot be determined [WRONG]
-  - Misconception: Misconception: You both probabilities are given numerically, so they are directly comparable.
+  - Misconception: Nice try. We already have the numbers. Just write both as decimals to compare them easily.
 
 **Correct Answer(s):** A. Event A with probability 0.72
 
@@ -7512,12 +7511,12 @@ What is the median score?
 
 **Choices:**
 - A. Likely [WRONG]
-  - Misconception: Misconception: You a value near 0 means the event is unlikely, not likely.
+  - Misconception: Nice try. Likely means near 1, like 0.90. 0.03 is tiny, almost zero.
 - B. Neither likely nor unlikely [WRONG]
-  - Misconception: Misconception: You a value around 1/2 represents neither likely nor unlikely.
+  - Misconception: Nice try. That word fits probabilities near 0.50. 0.03 is way smaller.
 - C. Unlikely [CORRECT]
 - D. Certain [WRONG]
-  - Misconception: Misconception: You certain events have probability 1.
+  - Misconception: Nice try. A certain event has probability 1. 0.03 means the event is very rare.
 
 **Correct Answer(s):** C. Unlikely
 
@@ -7531,12 +7530,12 @@ What is the median score?
 
 **Choices:**
 - A. 0.28 [WRONG]
-  - Misconception: Misconception: You repeated the original probability instead of using complements.
+  - Misconception: Nice try. 0.28 is the chance it will rain. No rain is the rest: 1 - 0.28 = 0.72.
 - B. 0.72 [CORRECT]
 - C. 1.28 [WRONG]
-  - Misconception: Misconception: You added the event probability to 1 instead of subtracting from 1.
+  - Misconception: Nice try. A chance can’t be bigger than 1. To find the other part, subtract 0.28 from 1.
 - D. 0.5 [WRONG]
-  - Misconception: Misconception: You treated unknown weather outcomes as equally likely without using the given probability.
+  - Misconception: Nice try. Use the 0.28 chance to find the exact opposite chance, 0.72.
 
 **Correct Answer(s):** B. 0.72
 
@@ -7555,11 +7554,11 @@ What is the median score?
 **Choices:**
 - A. 0.52 [CORRECT]
 - B. 0.48 [WRONG]
-  - Misconception: Misconception: You used tails instead of heads.
+  - Misconception: Nice try. 0.48 is how often the coin landed tails. We want to know how many times it landed heads.
 - C. 52 [WRONG]
-  - Misconception: Misconception: You used favorable outcomes only and did not divide by total trials.
+  - Misconception: Nice try. You counted 52. Write it as 52 out of 100, or 0.52.
 - D. 5.2 [WRONG]
-  - Misconception: Misconception: You moved the decimal incorrectly when converting 52/100.
+  - Misconception: Nice try. 52 out of 100 is 0.52. Keep your answer between 0 and 1.
 
 **Correct Answer(s):** A. 0.52
 
@@ -7574,11 +7573,11 @@ What is the median score?
 **Choices:**
 - A. 0.30 [CORRECT]
 - B. 0.70 [WRONG]
-  - Misconception: Misconception: You found probability of not red instead of red.
+  - Misconception: Nice try. 0.70 is the chance the spinner skips red. We want the chance it lands on red.
 - C. 0.18 [WRONG]
-  - Misconception: Misconception: You divided by 100 instead of total trials 60.
+  - Misconception: Nice try. Use 60 spins, not 100. Divide 18 by 60 to get the right answer.
 - D. 3.33 [WRONG]
-  - Misconception: Misconception: You divided 60 by 18 instead of 18 by 60.
+  - Misconception: Nice try. Turn the division the right way. Put the wins 18 on top and the total tries 60 below.
 
 **Correct Answer(s):** A. 0.30
 
@@ -7592,12 +7591,12 @@ What is the median score?
 
 **Choices:**
 - A. Moves farther away from theoretical probability. [WRONG]
-  - Misconception: Misconception: You long-run relative frequency generally stabilizes toward theoretical probability.
+  - Misconception: Nice try. The more tries we make, the closer the results settle to the math theory.
 - B. Becomes exactly equal to theoretical probability after 10 trials. [WRONG]
-  - Misconception: Misconception: You small fixed trial counts do not guarantee an exact match.
+  - Misconception: Nice try. 10 tries is still tiny. We need lots more turns before the numbers settle close to the theory.
 - C. Tends to get closer to theoretical probability. [CORRECT]
 - D. Has no relationship to theoretical probability. [WRONG]
-  - Misconception: Misconception: You experimental probability is specifically used to estimate theoretical likelihood.
+  - Misconception: Nice try. Both go together. Trials let us test if our theory values are right.
 
 **Correct Answer(s):** C. Tends to get closer to theoretical probability.
 
@@ -7612,11 +7611,11 @@ What is the median score?
 **Choices:**
 - A. 70 [CORRECT]
 - B. 35 [WRONG]
-  - Misconception: Misconception: You applied the probability to 100 trials, not 200.
+  - Misconception: Nice try. 35 fits for 100 tries. We have 200, so we need to double the result.
 - C. 130 [WRONG]
-  - Misconception: Misconception: You computed the expected count of the complement event.
+  - Misconception: Nice try. 130 is how many times we think it will not land on the space. Let's find the 0.35 part instead.
 - D. 57 [WRONG]
-  - Misconception: Misconception: You multiplied by an incorrect trial count.
+  - Misconception: Nice try. A small math step was off. Please multiply 0.35 by 200 once more.
 
 **Correct Answer(s):** A. 70
 
@@ -7630,12 +7629,12 @@ What is the median score?
 
 **Choices:**
 - A. Student A, because 0.60 is farther from 0.5. [WRONG]
-  - Misconception: Misconception: You being farther from 0.5 does not make an estimate more reliable.
+  - Misconception: Nice try. Farther away does not mean better. Student A might have just had a short lucky run.
 - B. Student B, because more trials usually reduce random fluctuation. [CORRECT]
 - C. Both are equally reliable because both used random tosses. [WRONG]
-  - Misconception: Misconception: You trial count affects reliability even when both are random.
+  - Misconception: Nice try. 20 tries is okay. More tries like 400 make the answer much safer to trust.
 - D. Neither is useful because experimental probability cannot estimate true probability. [WRONG]
-  - Misconception: Misconception: You experimental probability is used specifically as an estimate.
+  - Misconception: Nice try. Big trials give good estimates.
 
 **Correct Answer(s):** B. Student B, because more trials usually reduce random fluctuation.
 
@@ -7654,11 +7653,11 @@ What is the median score?
 **Choices:**
 - A. 1/6 [CORRECT]
 - B. 1/5 [WRONG]
-  - Misconception: Misconception: You a die has six equally likely outcomes.
+  - Misconception: Nice try. A normal die has six sides. Put 6 on the bottom of your fraction.
 - C. 5/6 [WRONG]
-  - Misconception: Misconception: You counted non-favorable outcomes.
+  - Misconception: Nice try. 5/6 means not getting a five. We only want the chance of rolling a five.
 - D. 1/2 [WRONG]
-  - Misconception: Misconception: You treated event as two-outcome only.
+  - Misconception: Nice try. 1/2 fits evens or odds. For one exact side, the chance is 1 out of 6.
 
 **Correct Answer(s):** A. 1/6
 
@@ -7673,11 +7672,11 @@ What is the median score?
 **Choices:**
 - A. 3/5 [CORRECT]
 - B. 2/5 [WRONG]
-  - Misconception: Misconception: You used probability of blue.
+  - Misconception: Nice try. 2/5 is the chance for blue. The question asks for red.
 - C. 3/2 [WRONG]
-  - Misconception: Misconception: You probability cannot exceed 1.
+  - Misconception: Nice try. Probability can't be bigger than 1. Put 3 over 5, so the probability is 3/5.
 - D. 1/5 [WRONG]
-  - Misconception: Misconception: You used one favorable outcome instead of three.
+  - Misconception: Nice try. Three red marbles mean three ways to win, not just one.
 
 **Correct Answer(s):** A. 3/5
 
@@ -7691,12 +7690,12 @@ What is the median score?
 
 **Choices:**
 - A. The model must be wrong in every case [WRONG]
-  - Misconception: Misconception: You small samples can vary from model values.
+  - Misconception: Nice try. One odd result does not break the model. It can just be luck.
 - B. Random variation in a small number of trials [CORRECT]
 - C. Probability guarantees exact outcomes every time [WRONG]
-  - Misconception: Misconception: You probability models predict long-run behavior, not exact short-run counts.
+  - Misconception: Nice try. Probability shows the long-run story. Short runs can still be wild.
 - D. Green is impossible on this spinner [WRONG]
-  - Misconception: Misconception: You observed green outcomes show it is possible.
+  - Misconception: Nice try. Green happened 9 times, so it is clearly possible.
 
 **Correct Answer(s):** B. Random variation in a small number of trials
 
@@ -7711,11 +7710,11 @@ What is the median score?
 **Choices:**
 - A. Observed frequency is reasonably consistent with the model [CORRECT]
 - B. The coin is definitely biased [WRONG]
-  - Misconception: Misconception: You difference of 2 in 1000 is very small.
+  - Misconception: Nice try. 502 out of 1000 is still very close to half. A small gap is just normal chance.
 - C. Model probability should be changed to 0.502 exactly [WRONG]
-  - Misconception: Misconception: You single experiment does not require exact replacement of model.
+  - Misconception: Nice try. We do not rewrite rules after one test. Our results show the fair coin idea still works!
 - D. No probability model can be used for coins [WRONG]
-  - Misconception: Misconception: You coins are standard probability-model examples.
+  - Misconception: Nice try. Coins are a great way to learn how probability models work.
 
 **Correct Answer(s):** A. Observed frequency is reasonably consistent with the model
 
@@ -7730,11 +7729,11 @@ What is the median score?
 **Choices:**
 - A. Observed 0.42 is far below 0.7, so investigate model assumptions and game fairness [CORRECT]
 - B. 0.42 is essentially equal to 0.7 [WRONG]
-  - Misconception: Misconception: You difference is large and not close.
+  - Misconception: Nice try. 0.42 and 0.70 are quite far apart. A gap that big can mean the model might be wrong.
 - C. Model is proven correct [WRONG]
-  - Misconception: Misconception: You data do not support this claim.
+  - Misconception: Nice try. 21/50 is 0.42, which is much less than 0.7. This suggests the game may not match the claim.
 - D. Probability models are never useful [WRONG]
-  - Misconception: Misconception: You models are useful even when needing revision.
+  - Misconception: Nice try. Models help us see hidden tricks, like spotting that this game might not be fair.
 
 **Correct Answer(s):** A. Observed 0.42 is far below 0.7, so investigate model assumptions and game fairness
 
@@ -7752,12 +7751,12 @@ What is the median score?
 
 **Choices:**
 - A. 1/4 [WRONG]
-  - Misconception: Misconception: You counted one favorable outcome instead of two.
+  - Misconception: Nice try. There are two ways to get one head: HT or TH. That gives 2 chances out of 4!
 - B. 1/2 [CORRECT]
 - C. 3/4 [WRONG]
-  - Misconception: Misconception: You counted outcomes with at least one head.
+  - Misconception: Nice try. 3/4 is the chance for at least one head. We want only one head!
 - D. 2/3 [WRONG]
-  - Misconception: Misconception: You used incorrect total outcome count.
+  - Misconception: Nice try. With two coins there are four outcomes: HH, HT, TH, TT. Count all four for the total.
 
 **Correct Answer(s):** B. 1/2
 
@@ -7771,12 +7770,12 @@ What is the median score?
 
 **Choices:**
 - A. 1/6 [WRONG]
-  - Misconception: Misconception: You used only one event probability.
+  - Misconception: Nice try. That might be the chance for one event. Do not forget we need both the die and the coin!
 - B. 1/4 [CORRECT]
 - C. 1/3 [WRONG]
-  - Misconception: Misconception: You ignored coin probability.
+  - Misconception: Nice try. Half the die rolls are even, that is 1/2. Half of those get heads again, 1/2 of 1/2 equals 1/4.
 - D. 1/12 [WRONG]
-  - Misconception: Misconception: You used odd count of even outcomes.
+  - Misconception: Nice try. There are 3 even numbers on a die (2, 4, 6). With heads, that makes 3 winning outcomes out of 12 total.
 
 **Correct Answer(s):** B. 1/4
 
@@ -7790,12 +7789,12 @@ What is the median score?
 
 **Choices:**
 - A. 9/25 [WRONG]
-  - Misconception: Misconception: You treated draws as independent with replacement.
+  - Misconception: Nice try. The first marble was not put back, so there are now fewer red marbles for the next pick.
 - B. 3/10 [CORRECT]
 - C. 6/25 [WRONG]
-  - Misconception: Misconception: You used incorrect second-draw probability.
+  - Misconception: Nice try. After you take one marble out, only 4 marbles are left for the next draw.
 - D. 1/2 [WRONG]
-  - Misconception: Misconception: You overestimated chance of two reds.
+  - Misconception: Nice try. Multiply 3/5 by 2/4 to get the exact answer instead of estimating too high.
 
 **Correct Answer(s):** B. 3/10
 
@@ -7809,12 +7808,12 @@ What is the median score?
 
 **Choices:**
 - A. 3/9 [WRONG]
-  - Misconception: Misconception: You added probabilities instead of multiplying.
+  - Misconception: Nice try. These two events happen together, so multiply the chances instead of adding them.
 - B. 1/10 [CORRECT]
 - C. 2/9 [WRONG]
-  - Misconception: Misconception: You used incorrect denominators.
+  - Misconception: Nice try. Multiply 4 sectors by 5 sectors to see 20 different bottom combinations in total.
 - D. 3/20 [WRONG]
-  - Misconception: Misconception: You mixed event counts inconsistently.
+  - Misconception: Nice try. For the top we multiply 1 green by 2 greens to get 2 winning pairs out of 20.
 
 **Correct Answer(s):** B. 1/10
 
@@ -7829,11 +7828,11 @@ What is the median score?
 **Choices:**
 - A. 92/600 [CORRECT]
 - B. 1/7 [WRONG]
-  - Misconception: Misconception: You used the sum value as denominator.
+  - Misconception: Nice try. 7 is the sum we want, but the chance is wins 92 over total 600 tries.
 - C. 7/600 [WRONG]
-  - Misconception: Misconception: You used event value instead of event count.
+  - Misconception: Nice try. Seven is just the target. We need the real count, 92, for how many times seven came.
 - D. 600/92 [WRONG]
-  - Misconception: Misconception: You inverted the experimental probability ratio.
+  - Misconception: Nice try. Flip the fraction: divide successes by total tries, never total by successes.
 
 **Correct Answer(s):** A. 92/600
 
@@ -7857,12 +7856,12 @@ What is the median score?
 
 **Choices:**
 - A. No triangle [WRONG]
-  - Misconception: Misconception: You angles sum to 180, so a triangle is possible.
+  - Misconception: Nice try. The angles add to 180°, so it makes a perfect equilateral triangle.
 - B. Exactly one shape type (equilateral), with many sizes [CORRECT]
 - C. Exactly two different triangles [WRONG]
-  - Misconception: Misconception: You angle information alone does not force just two.
+  - Misconception: Nice try. You can draw many sizes, but every one will still be equilateral.
 - D. Infinite triangles of unrelated angle types [WRONG]
-  - Misconception: Misconception: You all triangles with these angles are similar, same angle type.
+  - Misconception: Nice try. All 60-60-60 triangles match, just big or small.
 
 **Correct Answer(s):** B. Exactly one shape type (equilateral), with many sizes
 
@@ -7876,12 +7875,12 @@ What is the median score?
 
 **Choices:**
 - A. Yes, one unique triangle [WRONG]
-  - Misconception: Misconception: You missed triangle inequality.
+  - Misconception: Nice try. The two short sides must add to more than the long side. Two plus three is only five.
 - B. Yes, more than one triangle [WRONG]
-  - Misconception: Misconception: You triangle inequality still fails.
+  - Misconception: Nice try. These sides are too short to meet and close the shape.
 - C. No triangle [CORRECT]
 - D. Only a right triangle [WRONG]
-  - Misconception: Misconception: You side lengths do not satisfy a valid right-triangle relation.
+  - Misconception: Nice try. For a right triangle we need a² + b² = c². These numbers do not fit.
 
 **Correct Answer(s):** C. No triangle
 
@@ -7895,12 +7894,12 @@ What is the median score?
 
 **Choices:**
 - A. 0 [WRONG]
-  - Misconception: Misconception: You triangle inequality is actually satisfied.
+  - Misconception: Nice try. Five plus five is ten, and ten is bigger than eight, so the triangle works.
 - B. 1 [CORRECT]
 - C. 2 [WRONG]
-  - Misconception: Misconception: You sSS gives a unique triangle up to congruence.
+  - Misconception: Nice try. With three set side lengths, only one triangle shape can fit together.
 - D. Infinitely many [WRONG]
-  - Misconception: Misconception: You exact side lengths fix the triangle shape and size.
+  - Misconception: Nice try. Given side lengths fix the size, so there is no room left to change it.
 
 **Correct Answer(s):** B. 1
 
@@ -7914,12 +7913,12 @@ What is the median score?
 
 **Choices:**
 - A. No triangle is possible [WRONG]
-  - Misconception: Misconception: You third angle can be 90, so triangle exists.
+  - Misconception: Nice try. Two angles give the third: 180 minus their sum. It can make a 90° corner.
 - B. Exactly one triangle size and shape is determined [CORRECT]
 - C. Angles determine infinitely many unrelated shapes [WRONG]
-  - Misconception: Misconception: You one side length fixes scale as well.
+  - Misconception: Nice try. One side plus two angles anchors the triangle into only one possible size.
 - D. Exactly two non-congruent triangles [WRONG]
-  - Misconception: Misconception: You with two angles and one side, the triangle is unique.
+  - Misconception: Nice try. Two angles and one side leave just one way to finish the triangle.
 
 **Correct Answer(s):** B. Exactly one triangle size and shape is determined
 
@@ -7933,12 +7932,12 @@ What is the median score?
 
 **Choices:**
 - A. Only three angles [WRONG]
-  - Misconception: Misconception: You aAA gives shape but not size.
+  - Misconception: Nice try. The angles fix the shape, but you could draw it big or small.
 - B. Only one side [WRONG]
-  - Misconception: Misconception: You one side leaves many possibilities.
+  - Misconception: Nice try. One side alone does not tell the other sides how far to tilt or meet.
 - C. Three side lengths [CORRECT]
 - D. One angle only [WRONG]
-  - Misconception: Misconception: You one angle does not determine a triangle.
+  - Misconception: Nice try. Knowing just one corner gives no clues about the other corners or side lengths.
 
 **Correct Answer(s):** C. Three side lengths
 
@@ -7957,11 +7956,11 @@ What is the median score?
 **Choices:**
 - A. Rectangle [CORRECT]
 - B. Triangle [WRONG]
-  - Misconception: Misconception: You parallel-to-base cuts keep base shape for prisms.
+  - Misconception: Nice try. Slice a box flat and parallel to the base and you get a same-size rectangle.
 - C. Circle [WRONG]
-  - Misconception: Misconception: You prisms do not produce circular sections with such cuts.
+  - Misconception: Nice try. A straight cut through a box always leaves a flat shape with straight edges.
 - D. Pentagon [WRONG]
-  - Misconception: Misconception: You face structure does not support this section.
+  - Misconception: Nice try. A straight cut through a rectangular prism gives four sides, not five.
 
 **Correct Answer(s):** A. Rectangle
 
@@ -7976,11 +7975,11 @@ What is the median score?
 **Choices:**
 - A. Triangle [CORRECT]
 - B. Rectangle [WRONG]
-  - Misconception: Misconception: You cuts through apex of a pyramid typically produce triangular sections.
+  - Misconception: Nice try. A straight-down cut from the top point of a pyramid gives a triangle slice, not a circle.
 - C. Circle [WRONG]
-  - Misconception: Misconception: You pyramids with flat faces do not form circles by planar cuts.
+  - Misconception: Nice try. Pyramid faces are flat triangles, so a straight cut makes straight edges, never a curved circle.
 - D. Hexagon [WRONG]
-  - Misconception: Misconception: You too many edges for this simple apex-based cut.
+  - Misconception: Nice try. One quick slice through the pyramid’s triangle point can’t give six sides.
 
 **Correct Answer(s):** A. Triangle
 
@@ -7994,12 +7993,12 @@ What is the median score?
 
 **Choices:**
 - A. Rectangle [WRONG]
-  - Misconception: Misconception: You this is common for many slice orientations.
+  - Misconception: Nice try. Cutting a box straight gives a rectangle, which is what we see most often.
 - B. Parallelogram [WRONG]
-  - Misconception: Misconception: You oblique slices can form parallelograms.
+  - Misconception: Nice try. A tilted slice through the prism can give a slanty parallelogram shape, not just rectangles.
 - C. Circle [CORRECT]
 - D. Square [WRONG]
-  - Misconception: Misconception: You a square is a special rectangle and is possible.
+  - Misconception: Nice try. A square is a rectangle with equal sides, so it shows up when we cut straight across.
 
 **Correct Answer(s):** C. Circle
 
@@ -8014,11 +8013,11 @@ What is the median score?
 **Choices:**
 - A. Rectangle [CORRECT]
 - B. Circle [WRONG]
-  - Misconception: Misconception: You this solid and cut do not create curved boundaries.
+  - Misconception: Nice try. This solid and this cut give straight edges, so the slice shows no curves.
 - C. Triangle [WRONG]
-  - Misconception: Misconception: You a full through-cut of opposite edges in a prism gives four sides.
+  - Misconception: Nice try. A full straight cut between opposite edges of a prism gives a four-sided shape.
 - D. Trapezoid [WRONG]
-  - Misconception: Misconception: You in this orientation opposite sides remain parallel and equal.
+  - Misconception: Nice try. A tilted slice can make a trapezoid, but a flat slice parallel to the base stays a rectangle.
 
 **Correct Answer(s):** A. Rectangle
 
@@ -8033,11 +8032,11 @@ What is the median score?
 **Choices:**
 - A. Cross-section is a smaller rectangle similar to the base [CORRECT]
 - B. Cross-section is always a triangle [WRONG]
-  - Misconception: Misconception: You parallel-to-base slices of pyramids match base shape.
+  - Misconception: Nice try. A slice that stays parallel to the base of a pyramid keeps the base shape.
 - C. Cross-section is always a circle [WRONG]
-  - Misconception: Misconception: You pyramid faces are polygonal.
+  - Misconception: Nice try. Pyramid faces are flat polygons, so the slice edge stays a straight-edged polygon.
 - D. Cross-section has no relation to the base [WRONG]
-  - Misconception: Misconception: You parallel sections preserve shape type.
+  - Misconception: Nice try. Cutting parallel to the base keeps the same flat polygon shape on the slice.
 
 **Correct Answer(s):** A. Cross-section is a smaller rectangle similar to the base
 
@@ -8056,11 +8055,11 @@ What is the median score?
 **Choices:**
 - A. 53 degrees [CORRECT]
 - B. 143 degrees [WRONG]
-  - Misconception: Misconception: You used supplementary instead of complementary.
+  - Misconception: Nice try. You picked supplementary, but we need complementary.
 - C. 37 degrees [WRONG]
-  - Misconception: Misconception: You complementary angles do not have to be equal.
+  - Misconception: Nice try. Complementary angles can be different sizes.
 - D. 63 degrees [WRONG]
-  - Misconception: Misconception: You subtracted from 100, not 90.
+  - Misconception: Nice try. You took away from 100, not 90.
 
 **Correct Answer(s):** A. 53 degrees
 
@@ -8075,11 +8074,11 @@ What is the median score?
 **Choices:**
 - A. 68 degrees [CORRECT]
 - B. 22 degrees [WRONG]
-  - Misconception: Misconception: You subtracted from 90 instead of 180.
+  - Misconception: Nice try. You took away from 90, not 180.
 - C. 112 degrees [WRONG]
-  - Misconception: Misconception: You assumed supplementary means equal.
+  - Misconception: Nice try. Supplementary does not always mean equal.
 - D. 292 degrees [WRONG]
-  - Misconception: Misconception: You added instead of finding missing angle.
+  - Misconception: Nice try. You added, but we need the missing angle.
 
 **Correct Answer(s):** A. 68 degrees
 
@@ -8093,12 +8092,12 @@ What is the median score?
 
 **Choices:**
 - A. 6 [WRONG]
-  - Misconception: Misconception: You solved with arithmetic error.
+  - Misconception: Nice try. Check the arithmetic one more time.
 - B. 12 [CORRECT]
 - C. 7 [WRONG]
-  - Misconception: Misconception: You may have subtracted constants incorrectly.
+  - Misconception: Nice try. Try the subtraction again carefully.
 - D. 24 [WRONG]
-  - Misconception: Misconception: You doubled the correct value.
+  - Misconception: Nice try. The answer is half of what you got.
 
 **Correct Answer(s):** B. 12
 
@@ -8113,11 +8112,11 @@ What is the median score?
 **Choices:**
 - A. 58 [CORRECT]
 - B. 54 [WRONG]
-  - Misconception: Misconception: You likely made a subtraction error after combining terms.
+  - Misconception: Nice try. Check your subtract step after you combine like terms.
 - C. 62 [WRONG]
-  - Misconception: Misconception: You likely added constants with the wrong sign.
+  - Misconception: Nice try. Watch the plus and minus signs when you add the numbers.
 - D. 30 [WRONG]
-  - Misconception: Misconception: You treated them as complementary.
+  - Misconception: Nice try. Add (x + 10) + 40 = 90, then solve for x.
 
 **Correct Answer(s):** A. 58
 
@@ -8131,11 +8130,11 @@ What is the median score?
 
 **Choices:**
 - A. 50 degrees [WRONG]
-  - Misconception: Misconception: You solved the linear equation with an arithmetic error.
+  - Misconception: Nice try. Check your add or subtract step in the equation.
 - B. 130 degrees [WRONG]
-  - Misconception: Misconception: You chose the larger supplementary angle.
+  - Misconception: Nice try. It looks like you picked the bigger supplementary angle.
 - C. 30 degrees [WRONG]
-  - Misconception: Misconception: You treated 2x + 30 as if x were 0.
+  - Misconception: Nice try. You plugged x = 0 into 2x + 30.
 - D. 80 degrees [CORRECT]
 
 **Correct Answer(s):** D. 80 degrees

@@ -21,11 +21,9 @@ Open `http://localhost:5173`.
 1. `docs/README.md`
 2. `docs/CORE.md`
 3. `docs/CODEBASE-MAP.md`
-4. `docs/ARCHITECTURE.md`
-5. `docs/DATA-MODEL.md`
-6. `docs/RUNBOOK.md`
-7. `docs/CONTRIBUTING.md`
-8. `docs/AI-SYSTEM.md` (only when touching AI features)
+4. `docs/SYSTEM.md`
+5. `docs/OPERATIONS.md`
+6. `docsForMe/README.md` (plain-language guide)
 
 ## Architecture Snapshot
 
@@ -52,3 +50,7 @@ npm run test:run
 npm run build
 npx convex deploy -y
 ```
+
+## Workspace Layout
+
+Non-runtime artifacts (manual harnesses, readable diagnostic exports, and legacy one-off files) live under `workspace/` to keep the project root clean.

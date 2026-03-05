@@ -213,11 +213,22 @@ function writeReport(reportPath, results) {
 
 function main() {
   const root = process.cwd();
-  const reportPath = path.join(root, "readable", "misconception-tone-normalization-report.md");
-  const targets = [
+  const reportPath = path.join(
+    root,
+    "workspace",
+    "diagnostic-readable",
+    "parts",
+    "misconception-tone-normalization-report.md"
+  );
+  const sourceCandidates = [
+    path.join(root, "workspace", "diagnostic-source", "web", "public", "diagnostic_v2", "mastery_data.json"),
     path.join(root, "Diagnostic V2", "web", "public", "diagnostic_v2", "mastery_data.json"),
-    path.join(root, "public", "diagnostic_v2", "mastery_data.json"),
   ];
+  const resolvedSource = sourceCandidates.find((candidate) => fs.existsSync(candidate));
+  const targets = [resolvedSource, path.join(root, "public", "diagnostic_v2", "mastery_data.json")].filter(
+    Boolean
+  );
+  fs.mkdirSync(path.dirname(reportPath), { recursive: true });
 
   const results = targets.map((target) => normalizeFile(target));
   writeReport(reportPath, results);

@@ -36,10 +36,10 @@ node --experimental-strip-types scripts/<script>.ts
 
 - Curriculum reports: `docs/curriculum/*.md`
 - Generated seed block: `scripts/generated-seed-block.ts`
-- Misconception reports: `readable/*report*.md`
+- Misconception reports: `workspace/diagnostic-readable/parts/*report*.md`
 
 ## Primary references
 
-- `docs/curriculum/WORKFLOW.md`
-- `docs/curriculum/QUALITY-CONTRACT.md`
+- `docs/OPERATIONS.md`
+- `docs/curriculum/README.md`
 - `scripts/context.md`

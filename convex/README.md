@@ -22,6 +22,6 @@ Use `--prod` only when explicitly targeting production.
 
 ## References
 
-- `docs/DATA-MODEL.md`
-- `docs/RUNBOOK.md`
+- `docs/SYSTEM.md`
+- `docs/OPERATIONS.md`
 - `docs/CODEBASE-MAP.md`

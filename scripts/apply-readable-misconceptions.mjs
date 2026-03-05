@@ -423,14 +423,37 @@ function writeReport(args) {
 
 function main() {
   const root = process.cwd();
-  const partsDir = path.join(root, "readable");
-  const fullReadablePath = path.join(root, "diagnostic-v2-readable.md");
-  const reportPath = path.join(root, "readable", "misconception-sync-report.md");
+  const partsCandidates = [
+    path.join(root, "workspace", "diagnostic-readable", "parts"),
+    path.join(root, "readable"),
+  ];
+  const baselineCandidates = [
+    path.join(root, "workspace", "diagnostic-readable", "diagnostic-v2-readable.md"),
+    path.join(root, "diagnostic-v2-readable.md"),
+  ];
+  const partsDir = partsCandidates.find((candidate) => fs.existsSync(candidate));
+  const fullReadablePath = baselineCandidates.find((candidate) => fs.existsSync(candidate));
+  const reportPath = path.join(
+    root,
+    "workspace",
+    "diagnostic-readable",
+    "parts",
+    "misconception-sync-report.md"
+  );
+  fs.mkdirSync(path.dirname(reportPath), { recursive: true });
+
+  if (!partsDir) {
+    throw new Error(`Readable parts directory not found. Tried: ${partsCandidates.join(", ")}`);
+  }
+  if (!fullReadablePath) {
+    throw new Error(`Readable baseline file not found. Tried: ${baselineCandidates.join(", ")}`);
+  }
 
   const partsInfo = loadReadableParts(partsDir);
   const baselineMap = loadReadableBaseline(fullReadablePath);
 
   const targets = [
+    path.join(root, "workspace", "diagnostic-source", "web", "public", "diagnostic_v2", "mastery_data.json"),
     path.join(root, "Diagnostic V2", "web", "public", "diagnostic_v2", "mastery_data.json"),
     path.join(root, "public", "diagnostic_v2", "mastery_data.json"),
   ];

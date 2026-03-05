@@ -26,7 +26,7 @@ dist-ssr
 
 # External repos
 .external/
-diagnostic-check/.git/
+workspace/manual-tests/diagnostic-check/.git/
 
 # Serena cache
 .serena/cache/
@@ -37,16 +37,16 @@ diagnostic-check/.git/
 # Local Netlify folder
 .netlify
 
-# Generated diagnostic data (rebuilt from diagnostic-check/archive/)
+# Generated diagnostic data (rebuilt from workspace/manual-tests/diagnostic-check/archive/)
 public/diagnostic/
 
 # Web preview directory
 web/
 
 # Generated misconception rewrite artifacts
-readable/misconception-groq-rewrite-report*.md
-readable/misconception-groq-sample*.json
-readable/misconception-manual-sample*.json
-readable/misconception-pass*-target-keys.txt
-readable/misconception-remaining-*.json
-readable/manual-misconception-rewrites-pass*.json
+workspace/diagnostic-readable/parts/misconception-groq-rewrite-report*.md
+workspace/diagnostic-readable/parts/misconception-groq-sample*.json
+workspace/diagnostic-readable/parts/misconception-manual-sample*.json
+workspace/diagnostic-readable/parts/misconception-pass*-target-keys.txt
+workspace/diagnostic-readable/parts/misconception-remaining-*.json
+workspace/diagnostic-readable/parts/manual-misconception-rewrites-pass*.json

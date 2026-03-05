@@ -10,8 +10,11 @@ const DEFAULT_TIMEOUT_MS = 90_000;
 function parseArgs(argv) {
   const out = {
     source: path.join("public", "diagnostic_v2", "mastery_data.json"),
-    mirrors: [path.join("Diagnostic V2", "web", "public", "diagnostic_v2", "mastery_data.json")],
-    report: path.join("readable", "misconception-groq-rewrite-report.md"),
+    mirrors: [
+      path.join("workspace", "diagnostic-source", "web", "public", "diagnostic_v2", "mastery_data.json"),
+      path.join("Diagnostic V2", "web", "public", "diagnostic_v2", "mastery_data.json"),
+    ],
+    report: path.join("workspace", "diagnostic-readable", "parts", "misconception-groq-rewrite-report.md"),
     batchSize: DEFAULT_BATCH_SIZE,
     limit: null,
     dryRun: false,
@@ -77,7 +80,7 @@ Required env:
 Options:
   --source <path>           Source JSON (default: public/diagnostic_v2/mastery_data.json)
   --mirrors <csv>           Comma-separated mirror JSONs to apply same rewrites
-  --report <path>           Report path (default: readable/misconception-groq-rewrite-report.md)
+  --report <path>           Report path (default: workspace/diagnostic-readable/parts/misconception-groq-rewrite-report.md)
   --batch-size <n>          Batch size per API call (default: ${DEFAULT_BATCH_SIZE})
   --limit <n>               Process first n wrong-choice misconceptions only
   --dry-run                 No file writes (API still called)
@@ -554,6 +557,7 @@ async function main() {
   if (!fs.existsSync(args.source)) {
     throw new Error(`Source file not found: ${args.source}`);
   }
+  fs.mkdirSync(path.dirname(args.report), { recursive: true });
 
   const sourcePayload = readJson(args.source);
   let rows = extractRows(sourcePayload);
