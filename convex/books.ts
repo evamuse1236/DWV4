@@ -7,6 +7,12 @@ import {
 } from "./characterAwards";
 
 const DONE_STATUSES = new Set(["review_approved", "presented"]);
+const REVIEW_QUEUE_STATUSES = [
+  "review_submitted",
+  "presentation_requested",
+  "completed",
+] as const;
+const APPROVED_REVIEW_STATUSES = ["review_approved", "presented"] as const;
 
 function hasReviewText(review?: string) {
   return Boolean(review && review.trim().length > 0);
@@ -33,6 +39,44 @@ function ensureValidRating(rating?: number) {
   if (!Number.isInteger(rating) || rating < 1 || rating > 5) {
     throw new Error("Rating must be an integer between 1 and 5");
   }
+}
+
+async function getStudentBooksByStatuses(
+  ctx: any,
+  statuses: readonly string[],
+) {
+  const studentBooksByStatus = await Promise.all(
+    statuses.map((status) =>
+      ctx.db
+        .query("studentBooks")
+        .withIndex("by_status", (q: any) => q.eq("status", status))
+        .collect()
+    )
+  );
+
+  return studentBooksByStatus.flat();
+}
+
+async function hydrateStudentBookSubmission(ctx: any, studentBook: any) {
+  const [user, book] = await Promise.all([
+    ctx.db.get(studentBook.userId),
+    ctx.db.get(studentBook.bookId),
+  ]);
+
+  return {
+    ...studentBook,
+    user: user
+      ? {
+          _id: user._id,
+          username: user.username,
+          displayName: user.displayName,
+          avatarUrl: user.avatarUrl ?? null,
+          batch: user.batch ?? null,
+          role: user.role,
+        }
+      : null,
+    book: book ?? null,
+  };
 }
 
 async function ensureCommentableReview(ctx: any, studentBookId: any) {
@@ -521,26 +565,10 @@ export const getReadingStats = query({
 export const getReviewSubmissions = query({
   args: {},
   handler: async (ctx) => {
-    const studentBooks = await ctx.db.query("studentBooks").collect();
-    const submissions = studentBooks
-      .filter((studentBook) =>
-        studentBook.status === "review_submitted" ||
-        studentBook.status === "presentation_requested" ||
-        studentBook.status === "completed"
-      )
+    const submissions = (await getStudentBooksByStatuses(ctx, REVIEW_QUEUE_STATUSES))
       .sort((a, b) => getDoneTimestamp(b) - getDoneTimestamp(a));
 
-    return await Promise.all(
-      submissions.map(async (submission) => {
-        const user = await ctx.db.get(submission.userId);
-        const book = await ctx.db.get(submission.bookId);
-        return {
-          ...submission,
-          user,
-          book,
-        };
-      })
-    );
+    return await Promise.all(submissions.map((submission) => hydrateStudentBookSubmission(ctx, submission)));
   },
 });
 
@@ -548,26 +576,10 @@ export const getReviewSubmissions = query({
 export const getPresentationRequests = query({
   args: {},
   handler: async (ctx) => {
-    const studentBooks = await ctx.db.query("studentBooks").collect();
-    const submissions = studentBooks
-      .filter((studentBook) =>
-        studentBook.status === "review_submitted" ||
-        studentBook.status === "presentation_requested" ||
-        studentBook.status === "completed"
-      )
+    const submissions = (await getStudentBooksByStatuses(ctx, REVIEW_QUEUE_STATUSES))
       .sort((a, b) => getDoneTimestamp(b) - getDoneTimestamp(a));
 
-    return await Promise.all(
-      submissions.map(async (submission) => {
-        const user = await ctx.db.get(submission.userId);
-        const book = await ctx.db.get(submission.bookId);
-        return {
-          ...submission,
-          user,
-          book,
-        };
-      })
-    );
+    return await Promise.all(submissions.map((submission) => hydrateStudentBookSubmission(ctx, submission)));
   },
 });
 
@@ -608,24 +620,11 @@ export const approvePresentationRequest = mutation({
 export const getApprovedReviews = query({
   args: {},
   handler: async (ctx) => {
-    const studentBooks = await ctx.db.query("studentBooks").collect();
-    const approvedReviews = studentBooks
-      .filter((studentBook) =>
-        isDoneStatus(studentBook.status) && hasReviewText(studentBook.review)
-      )
+    const approvedReviews = (await getStudentBooksByStatuses(ctx, APPROVED_REVIEW_STATUSES))
+      .filter((studentBook) => hasReviewText(studentBook.review))
       .sort((a, b) => getDoneTimestamp(b) - getDoneTimestamp(a));
 
-    return await Promise.all(
-      approvedReviews.map(async (review) => {
-        const user = await ctx.db.get(review.userId);
-        const book = await ctx.db.get(review.bookId);
-        return {
-          ...review,
-          user,
-          book,
-        };
-      })
-    );
+    return await Promise.all(approvedReviews.map((review) => hydrateStudentBookSubmission(ctx, review)));
   },
 });
 
