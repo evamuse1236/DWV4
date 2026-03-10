@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Dashboard | IM Mapping</title>
+  <link rel="icon" href="data:,">
+
+  <!-- Typography & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+
+  <!-- Material Web Components (as primitives) -->
+  <script type="importmap">
+    {
+      "imports": {
+        "@material/web/": "https://esm.run/@material/web/"
+      }
+    }
+  </script>
+  <script type="module">
+    import '@material/web/all.js';
+  </script>
+
+  <style>
+    :root {
+      color-scheme: dark;
+      /* Palette: Deep Navy & Neon Accents */
+      --bg-base: #0b0e14;
+      --bg-surface: #141820;
+      --bg-surface-raised: #1c222d;
+      --bg-glass: rgba(20, 24, 32, 0.7);
+      
+      --text-main: #e2e8f0;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+
+      --accent-direct: #10b981; /* Emerald */
+      --accent-direct-glow: rgba(16, 185, 129, 0.15);
+      --accent-advanced: #8b5cf6; /* Violet */
+      --accent-advanced-glow: rgba(139, 92, 246, 0.15);
+      
+      --border-main: rgba(255, 255, 255, 0.08);
+      --border-bright: rgba(255, 255, 255, 0.15);
+
+      --font-main: 'Inter', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      --shadow-soft: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+      --shadow-bright: 0 0 20px rgba(16, 185, 129, 0.1);
+
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Base Reset */
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      font-family: var(--font-main);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* Ambient Background Elements */
+    .ambient-glow {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: 
+        radial-gradient(circle at 0% 0%, rgba(16, 185, 129, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 100% 100%, rgba(139, 92, 246, 0.05) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .grid-overlay {
+      position: fixed;
+      inset: 0;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    /* Layout Structure */
+    .app-container {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      min-height: 100vh;
+      max-width: 1800px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 1100px) {
+      .app-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Sidebar / Sidebar-as-Header */
+    .sidebar {
+      padding: 40px 32px;
+      border-right: 1px solid var(--border-main);
+      background: var(--bg-glass);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    @media (max-width: 1100px) {
+      .sidebar {
+        position: relative;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid var(--border-main);
+      }
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .brand h1 {
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0;
+      letter-spacing: -0.03em;
+      background: linear-gradient(to right, #fff, var(--text-muted));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .brand p {
+      font-size: 13px;
+      color: var(--text-dim);
+      margin: 0;
+      line-height: 1.4;
+    }
+
+    /* Controls */
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    md-outlined-text-field {
+      --md-outlined-text-field-container-shape: 12px;
+      --md-sys-color-primary: var(--accent-direct);
+      --md-sys-color-outline: var(--border-main);
+      --md-sys-color-on-surface: var(--text-main);
+      --md-sys-color-on-surface-variant: var(--text-muted);
+      width: 100%;
+    }
+
+    /* Custom dark dropdown */
+    .select-shell {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px 14px 12px;
+      background: rgba(11, 18, 28, 0.92);
+      border: 1px solid var(--accent-direct);
+      border-radius: 12px;
+      box-shadow: inset 0 0 0 1px rgba(16, 185, 129, 0.08);
+    }
+
+    .select-label {
+      position: absolute;
+      top: -10px;
+      left: 14px;
+      padding: 0 8px;
+      background: var(--bg-base);
+      color: var(--accent-direct);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+
+    .select-trigger {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      border: none;
+      outline: none;
+      background: transparent;
+      color: var(--text-main);
+      font: 500 15px/1.4 var(--font-main);
+      padding: 12px 0 4px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .select-trigger .material-symbols-outlined {
+      color: var(--accent-direct);
+      font-size: 20px;
+      transition: transform 0.2s ease;
+    }
+
+    .select-shell.open .select-trigger .material-symbols-outlined {
+      transform: rotate(180deg);
+    }
+
+    .select-menu {
+      display: none;
+      position: absolute;
+      top: calc(100% + 4px);
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: #141820;
+      border: 1px solid var(--border-bright);
+      border-radius: 12px;
+      padding: 4px;
+      box-shadow: 0 12px 32px -4px rgba(0, 0, 0, 0.6);
+      max-height: 260px;
+      overflow-y: auto;
+    }
+
+    .select-shell.open .select-menu {
+      display: block;
+    }
+
+    .select-option {
+      padding: 10px 14px;
+      border-radius: 8px;
+      color: var(--text-main);
+      font: 400 14px/1.4 var(--font-main);
+      cursor: pointer;
+      transition: background 0.15s ease;
+    }
+
+    .select-option:hover {
+      background: var(--bg-surface-raised);
+    }
+
+    .select-option.selected {
+      color: var(--accent-direct);
+      font-weight: 500;
+      background: var(--accent-direct-glow);
+    }
+
+    /* Global Mode Toggle */
+    .mode-toggle-container {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-main);
+      border-radius: 16px;
+      padding: 4px;
+      display: flex;
+      gap: 4px;
+    }
+
+    .mode-btn {
+      flex: 1;
+      border: none;
+      background: transparent;
+      padding: 10px;
+      border-radius: 12px;
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .mode-btn.active {
+      background: var(--bg-surface-raised);
+      color: #fff;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .mode-btn.direct.active { color: var(--accent-direct); }
+    .mode-btn.advanced.active { color: var(--accent-advanced); }
+
+    /* Stats Dashboard */
+    .stats-mini {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .stat-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-main);
+      border-radius: 16px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .stat-box .label { font-size: 11px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; }
+    .stat-box .value { font-size: 20px; font-weight: 700; color: #fff; font-family: var(--font-mono); }
+
+    /* Main Content Area */
+    .main-content {
+      padding: 40px 60px;
+    }
+
+    @media (max-width: 800px) {
+      .main-content { padding: 24px; }
+    }
+
+    .topic-section {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      margin-bottom: 100px;
+    }
+
+    .topic-group {
+      scroll-margin-top: 40px;
+    }
+
+    .topic-header-fancy {
+      display: flex;
+      align-items: flex-end;
+      gap: 24px;
+    }
+
+    .topic-number {
+      font-family: var(--font-mono);
+      font-size: 48px;
+      font-weight: 700;
+      color: var(--border-bright);
+      line-height: 0.8;
+      user-select: none;
+    }
+
+    .topic-title-box h2 {
+      font-size: 40px;
+      font-weight: 700;
+      margin: 0;
+      letter-spacing: -0.04em;
+    }
+
+    .topic-title-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .topic-title-row h2 {
+      flex: 0 1 auto;
+    }
+
+    .topic-aliases-wrap {
+      display: flex;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .alias-tag {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-dim);
+      background: var(--bg-surface);
+      padding: 4px 10px;
+      border-radius: 6px;
+      border: 1px solid var(--border-main);
+    }
+
+    /* Mappings Grid */
+    .mappings-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      gap: 24px;
+    }
+
+    @media (max-width: 600px) {
+      .mappings-grid { grid-template-columns: 1fr; }
+    }
+
+    .mapping-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-main);
+      border-radius: 24px;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .mapping-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--border-bright);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .mapping-card.direct { border-left: 4px solid var(--accent-direct); }
+    .mapping-card.advanced { border-left: 4px solid var(--accent-advanced); }
+
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .code-badge {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      background: var(--bg-base);
+      color: var(--text-muted);
+      padding: 4px 12px;
+      border-radius: 99px;
+      border: 1px solid var(--border-main);
+    }
+
+    .grade-badge {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--text-dim);
+    }
+
+    .card-content h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0 0 12px 0;
+      line-height: 1.4;
+      color: #fff;
+    }
+
+    .card-content p {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .why-it-fits {
+      margin-top: 16px;
+      padding: 16px;
+      background: var(--accent-advanced-glow);
+      border-radius: 12px;
+      font-size: 13px;
+      color: var(--accent-advanced);
+      border: 1px solid rgba(139, 92, 246, 0.2);
+    }
+
+    /* IM Links — inline with topic header */
+    .im-header-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      justify-content: flex-start;
+      flex: 1 1 320px;
+    }
+
+    .im-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 12px;
+      border-radius: 99px;
+      font-size: 12px;
+      font-weight: 500;
+      text-decoration: none;
+      color: var(--text-muted);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-main);
+      transition: var(--transition);
+      white-space: nowrap;
+      line-height: 1.3;
+    }
+
+    .im-pill md-icon {
+      font-size: 14px;
+    }
+
+    .im-pill:hover {
+      color: #fff;
+      border-color: var(--accent-direct);
+      background: var(--accent-direct-glow);
+    }
+
+    .im-pill.advanced:hover {
+      border-color: var(--accent-advanced);
+      background: var(--accent-advanced-glow);
+    }
+
+    @media (max-width: 600px) {
+      .topic-title-row {
+        align-items: flex-start;
+      }
+
+      .im-header-links {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+      }
+    }
+
+    /* Empty States */
+    .empty-state {
+      text-align: center;
+      padding: 100px 40px;
+      color: var(--text-dim);
+    }
+
+    .empty-state md-icon { font-size: 64px; margin-bottom: 24px; opacity: 0.5; }
+
+    /* Animations */
+    @keyframes fadeInSlide {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-in {
+      animation: fadeInSlide 0.5s ease forwards;
+    }
+
+    /* Accordion / Collapsible Topics */
+    .topic-header-fancy {
+      cursor: pointer;
+      user-select: none;
+      border-radius: 16px;
+      padding: 12px 16px;
+      margin: -12px -16px;
+      transition: background 0.2s ease;
+    }
+
+    .topic-header-fancy:hover {
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .topic-header-fancy:focus-visible {
+      outline: 2px solid var(--accent-direct);
+      outline-offset: 4px;
+      border-radius: 16px;
+    }
+
+    .topic-chevron {
+      font-size: 28px;
+      color: var(--text-dim);
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      flex-shrink: 0;
+      align-self: center;
+    }
+
+    .topic-group.expanded .topic-chevron {
+      transform: rotate(180deg);
+    }
+
+    .topic-group.expanded .topic-chevron {
+      color: var(--text-muted);
+    }
+
+    .topic-body {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .topic-group.expanded .topic-body {
+      grid-template-rows: 1fr;
+    }
+
+    .topic-body-inner {
+      overflow: hidden;
+    }
+
+    .topic-body-inner .mappings-grid {
+      padding-top: 24px;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: var(--bg-base); }
+    ::-webkit-scrollbar-thumb { background: var(--border-main); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--border-bright); }
+
+  </style>
+</head>
+<body>
+  <div class="ambient-glow"></div>
+  <div class="grid-overlay"></div>
+
+  <div class="app-container">
+    <aside class="sidebar">
+      <div class="brand">
+        <h1>Curriculum Map</h1>
+        <p>A teaching bridge between project work, Common Core, and Illustrative Math.</p>
+      </div>
+
+      <div class="mode-toggle-container">
+        <button id="modeDirect" class="mode-btn direct active">
+          <md-icon style="font-size:18px">check_circle</md-icon> Direct
+        </button>
+        <button id="modeAdvanced" class="mode-btn advanced">
+          <md-icon style="font-size:18px">stars</md-icon> Advanced
+        </button>
+      </div>
+
+      <div class="control-group">
+        <md-outlined-text-field id="searchInput" label="Search Topics" placeholder="e.g. Fractions, Slope...">
+          <md-icon slot="leading-icon">search</md-icon>
+        </md-outlined-text-field>
+
+        <div class="select-shell" id="gradeDropdown">
+          <span class="select-label">Grade Level</span>
+          <div class="select-trigger" tabindex="0" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-label="Grade Level">
+            <span class="select-display">All Grades</span>
+            <span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
+          </div>
+          <div class="select-menu" role="listbox">
+            <div class="select-option selected" data-value="" role="option">All Grades</div>
+            <div class="select-option" data-value="3" role="option">Grade 3</div>
+            <div class="select-option" data-value="4" role="option">Grade 4</div>
+            <div class="select-option" data-value="5" role="option">Grade 5</div>
+            <div class="select-option" data-value="6" role="option">Grade 6</div>
+            <div class="select-option" data-value="7" role="option">Grade 7</div>
+            <div class="select-option" data-value="8" role="option">Grade 8</div>
+          </div>
+        </div>
+
+        <md-outlined-text-field id="codeFilter" label="CC Code" placeholder="e.g. 6.NS, 7.RP">
+          <md-icon slot="leading-icon">terminal</md-icon>
+        </md-outlined-text-field>
+      </div>
+
+      <div class="stats-mini">
+        <div class="stat-box">
+          <span class="label">Topics</span>
+          <span id="statTopics" class="value">0</span>
+        </div>
+        <div class="stat-box">
+          <span class="label">Matches</span>
+          <span id="statMatches" class="value">0</span>
+        </div>
+      </div>
+
+      <div style="margin-top: auto;">
+        <md-filled-tonal-button id="clearFilters" style="width: 100%;">
+          <md-icon slot="icon">refresh</md-icon> Reset View
+        </md-filled-tonal-button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <div id="topicList" class="topic-section">
+        <!-- Content injected by JS -->
+      </div>
+    </main>
+  </div>
+
+  <script>
+    /* Data Strings (TSV) - Fully Restored */
+    const DIRECT_TSV = `Fraction Fundamentals	Develop intuition for what a fraction means in real world	3.NF.A.1	Understand a fraction 1/b as the quantity formed by 1 part when a whole is partitioned into b equal parts	3
+Fraction Fundamentals	Identify and compare fractions using visual models (circles, rectangles, number lines)	3.NF.A.3d / 4.NF.A.2	Compare fractions with same numerator or denominator using visual models; compare fractions with different numerators and denominators	3-4
+Fraction Fundamentals	Compare unlike fractions by making numerators or denominators the same	4.NF.A.1 / 4.NF.A.2	Generate equivalent fractions; compare two fractions with different numerators and denominators by creating common denominators or numerators	4
+Fraction Fundamentals	Find LCM and use it to compare fractions	6.NS.B.4 (partial)	Find least common multiple of two whole numbers <=12	6
+Fraction Fundamentals	Simplify a fraction; explain why simplification doesn't change value	4.NF.A.1	Explain why a/b = (nxa)/(nxb) using visual models	4
+Fraction Fundamentals	Find GCF and use it to simplify fractions in one step	6.NS.B.4 (partial)	Find greatest common factor of two whole numbers <=100	6
+Fraction Fundamentals	Add and subtract like fractions and mixed fractions	4.NF.B.3a-d	Add and subtract fractions/mixed numbers with like denominators	4
+Fraction Fundamentals	Multiply a fraction by a whole number and explain visually	4.NF.B.4a-c	Multiply a fraction by a whole number using visual models	4
+Decimal Fundamentals	Explain decimals as fractions in base-10 form	4.NF.C.5 / 4.NF.C.6	Express fractions with denominator 10 or 100; use decimal notation for such fractions	4
+Decimal Fundamentals	Identify tenths and hundredths	4.NF.C.6	Use decimal notation for fractions with denominators 10 or 100	4
+Decimal Fundamentals	Locate decimals on a number line using place-value reasoning	4.NF.C.6	Locate decimal on a number line diagram	4
+Decimal Fundamentals	Compare and order decimals by place value	4.NF.C.7 / 5.NBT.A.3b	Compare two decimals to hundredths; compare decimals to thousandths	4-5
+Decimal Fundamentals	Add and subtract decimals by aligning place values	5.NBT.B.7	Add and subtract decimals to hundredths using place value strategies	5
+Decimal Fundamentals	Multiply and divide decimals using place value and long division	5.NBT.B.7	Multiply and divide decimals to hundredths	5
+Arithmetic MYP 1	Multi-digit multiplication (3-digit x 2-digit)	5.NBT.B.5	Fluently multiply multi-digit whole numbers using the standard algorithm	5
+Arithmetic MYP 1	Multi-digit division (4-digit / 2-digit)	5.NBT.B.6	Find whole-number quotients with up to 4-digit dividends and 2-digit divisors	5
+Arithmetic MYP 1	Solve simple word problems (+, -, x, /)	4.OA.A.3	Solve multistep word problems with whole numbers using four operations	4
+Arithmetic MYP 1	Solve multi-step word problems (+, -, x, /)	4.OA.A.3 / 5.NBT.B.5-6	Solve multistep word problems; fluency with multi-digit operations	4-5
+Arithmetic MYP 1	Mentally estimate results using rounding	4.OA.A.3 / 5.NBT.A.4	Assess reasonableness using estimation; round decimals to any place	4-5
+Arithmetic MYP 1	Use rounding and inverse operations to verify answers	4.OA.A.3	Represent problems and assess reasonableness of answers using mental computation and estimation	4
+Arithmetic MYP 1	Compare and order positive and negative numbers	6.NS.C.5 / 6.NS.C.7	Understand positive and negative numbers; order rational numbers	6
+Arithmetic MYP 1	Add and subtract with negative numbers	6.NS.C.5 (intro) / 7.NS.A.1	Understand positive/negative as opposite directions (grade 6); add/subtract rational numbers (grade 7)	6-7
+Factors & Multiples	Find every factor pair for numbers 1-100	4.OA.B.4	Find all factor pairs for a whole number in the range 1-100	4
+Factors & Multiples	Understand every whole number is a multiple of its factors	4.OA.B.4	Recognize that a whole number is a multiple of each of its factors	4
+Factors & Multiples	Determine if a number is a multiple of a given one-digit number (divisibility rules)	4.OA.B.4	Determine whether a given whole number (1-100) is a multiple of a given one-digit number	4
+Factors & Multiples	Classify numbers 1-100 as prime or composite	4.OA.B.4	Determine whether a given whole number (1-100) is prime or composite	4
+Factors & Multiples	Find LCM of any 2 numbers	6.NS.B.4	Find LCM of two whole numbers <=12	6
+Factors & Multiples	Find HCF/GCF of any 2 numbers	6.NS.B.4	Find GCF of two whole numbers <=100; use distributive property to express a sum with a common factor	6
+Fractions (MYP 1)	Add and subtract fractions with unlike denominators	5.NF.A.1	Add and subtract fractions with unlike denominators by replacing with equivalent fractions	5
+Fractions (MYP 1)	Add and subtract mixed fractions	5.NF.A.1	Add and subtract fractions with unlike denominators (including mixed numbers)	5
+Fractions (MYP 1)	Multiply a fraction by a whole number and by another fraction	5.NF.B.4	Apply and extend previous understandings of multiplication to multiply a fraction by a fraction	5
+Fractions (MYP 1)	Divide a fraction by a whole number	5.NF.B.7a	Interpret division of a unit fraction by a non-zero whole number and compute such quotients	5
+Fractions (MYP 1)	Divide a fraction by another fraction	6.NS.A.1	Interpret and compute quotients of fractions; solve word problems involving division of fractions by fractions	6
+Fractions (MYP 1)	Solve word problems with all four fraction operations	5.NF.A.2 / 5.NF.B.6 / 6.NS.A.1	Solve word problems involving +, -, x, / of fractions using visual models and equations	5-6
+Decimals (MYP 1)	Add and subtract decimals to thousandths	5.NBT.A.3a / 5.NBT.B.7	Read, write, compare decimals to thousandths; add and subtract decimals to hundredths	5
+Decimals (MYP 1)	Multiply decimals by whole numbers	5.NBT.B.7	Multiply decimals to hundredths using place value strategies	5
+Decimals (MYP 1)	Multiply two decimal numbers	5.NBT.B.7 / 6.NS.B.3	Multiply decimals (grade 5 to hundredths; grade 6 fluency with standard algorithm)	5-6
+Decimals (MYP 1)	Divide a decimal by a whole number	5.NBT.B.7	Divide decimals to hundredths	5
+Decimals (MYP 1)	Divide a decimal by another decimal	6.NS.B.3	Fluently add, subtract, multiply, and divide multi-digit decimals using the standard algorithm	6
+Decimals (MYP 1)	Explain patterns when multiplying/dividing by powers of 10	5.NBT.A.2	Explain patterns in number of zeros and decimal point placement when multiplying/dividing by powers of 10; use whole-number exponents	5
+Decimals (MYP 1)	Solve word problems with all four decimal operations	5.NBT.B.7 / 6.NS.B.3	Solve problems involving decimal operations using models and equations	5-6
+Geometry	Plot points, lines, shapes on coordinate plane (Q1 -> all quadrants)	5.G.A.1 / 6.NS.C.6b / 6.NS.C.8	Graph points in first quadrant (grade 5); extend to all four quadrants (grade 6)	5-6
+Geometry	Understand relationship between 2D figures and 3D objects	6.G.A.4 (partial)	Represent 3D figures using nets of 2D shapes; find surface area	6
+Geometry	Identify and classify triangles and their properties	5.G.B.3 / 5.G.B.4	Understand attributes of categories of 2D figures; classify 2D figures in a hierarchy based on properties	5
+Geometry	Classify quadrilaterals based on angles, sides, parallel, perpendicular	5.G.B.3 / 5.G.B.4	Classify 2D figures based on properties such as parallel sides, perpendicular sides, angle measures	5
+Measurement & Areas	Apply area and perimeter formulas for rectangles/squares	4.MD.A.3	Apply the area and perimeter formulas for rectangles in real-world and mathematical problems	4
+Measurement & Areas	Solve problems involving area of triangles, parallelograms, composite shapes	6.G.A.1	Find the area of triangles, special quadrilaterals, and polygons by composing/decomposing into known shapes	6
+Algebra Foundations	Read and write simple powers; explain as repeated multiplication	6.EE.A.1	Write and evaluate numerical expressions involving whole-number exponents	6
+Algebra Foundations	Write and evaluate expressions with whole-number exponents	6.EE.A.1	Write and evaluate numerical expressions involving whole-number exponents	6
+Algebra Foundations	Identify rules in number/shape patterns and find unknowns	4.OA.C.5 / 5.OA.B.3	Generate a number or shape pattern following a given rule; generate and graph two numerical patterns	4-5
+Algebra Foundations	Use order of operations with parentheses, brackets, braces	5.OA.A.1	Use parentheses, brackets, or braces in numerical expressions and evaluate expressions with these symbols	5
+Algebra	Represent an unknown using a letter/symbol	6.EE.B.6	Use variables to represent numbers and write expressions when solving real-world or mathematical problems	6
+Algebra	Write expressions from word phrases	6.EE.A.2a	Write expressions that record operations with numbers and letters standing for numbers	6
+Algebra	Distinguish variables and constants in an expression/equation	6.EE.A.2b	Identify parts of an expression using mathematical terms (sum, term, product, factor, quotient, coefficient)	6
+Algebra	Use properties of operations to rewrite expressions	6.EE.A.3 / 6.EE.A.4	Apply properties of operations to generate equivalent expressions; identify when two expressions are equivalent	6
+Algebra	Solve an equation to find an unknown (substitution, balancing)	6.EE.B.5 / 6.EE.B.7	Understand solving as finding values that make equation true; solve x + p = q and px = q	6
+Algebra	Solve word problems using equations x + p = q and px = q	6.EE.B.7	Solve real-world and mathematical problems by writing and solving equations of the form x + p = q and px = q	6
+Algebra	Represent two changing quantities, write equation, use tables/graphs	6.EE.C.9	Use variables to represent two quantities that change in relationship; write an equation expressing dependent variable in terms of independent variable	6
+Rates	Understand unit rate a/b as ratio a:b; use 'per' language	6.RP.A.1 / 6.RP.A.2	Understand ratio concepts and unit rate language in context of a ratio relationship	6
+Rates	Solve word problems involving unit rates (pricing, speed, work)	6.RP.A.3b	Solve unit rate problems including unit pricing and constant speed	6
+Percentage	Understand percent as rate per 100, as fraction and decimal	6.RP.A.3c	Find a percent of a quantity as a rate per 100	6
+Percentage	Convert between fraction, percent, and decimal	6.RP.A.3c / 7.NS (extended)	Use ratio reasoning to convert between fractions, decimals, and percents	6
+Percentage	Find a given percent of a number	6.RP.A.3c	Find a percent of a quantity as a rate per 100; solve problems involving finding the whole given a part and the percent	6
+Percentage	Find what percent one quantity is of another	6.RP.A.3c	Solve problems involving finding the whole, given a part and the percent	6
+Percentage	Solve problems with percent increase, decrease, discounts, tips, taxes	7.RP.A.3	Use proportional relationships to solve multistep ratio and percent problems (markups, markdowns, tax, tip, etc.)	7
+Data	Read and interpret a line graph	5.MD.B.2 / 5.G.A.2	Represent and interpret data; graph points on coordinate plane	5
+Data	Plot a line graph	5.G.A.1 / 6.SP (intro)	Use a pair of perpendicular number lines to define a coordinate system and plot points	5-6
+Problem Solving	Arithmetic fluency via game + puzzle	4.OA / 5.NBT (practice)	Fluency with four operations - enrichment/practice strand	4-5
+Problem Solving	Multiplication & strategy (Math Pickle games)	4.OA / 5.NBT (practice)	Fluency with multiplication - enrichment/practice strand	4-5
+Problem Solving	FTUE handout for AOPS Alcumus	Various (competition math)	Extension/enrichment - draws on standards across grades 4-7	4-7`;
+
+    const ADVANCED_TSV = `Fractions (MYP 1)	Multiply and divide rational numbers (including negative fractions)	7.NS.A.2	Apply and extend previous understandings of multiplication and division and of fractions to multiply and divide rational numbers	7	Same operations your kids already do - just extend to negative fractions and mixed forms
+Fractions (MYP 1)	Solve real-world problems involving all four operations with rational numbers (fractions, decimals, negatives mixed together)	7.NS.A.3	Solve real-world and mathematical problems involving the four operations with rational numbers	7	Combines your Fractions + Decimals + Negatives units into one integrated problem set
+Fractions (MYP 1)	Work with complex fractions (fractions within fractions)	7.NS.A.3 (extended)	Computations with rational numbers extend the rules for manipulating fractions to complex fractions	7	Direct extension of fraction division - same skill, higher complexity
+Decimals (MYP 1)	Understand that rational numbers have terminating or repeating decimal expansions; convert repeating decimals to fractions	8.NS.A.1	Know that numbers that are not rational are called irrational. For rational numbers, show that the decimal expansion repeats eventually, and convert a repeating decimal to a rational number	8	Deepens your 'decimals as fractions' concept - why do some decimals repeat?
+Decimals (MYP 1)	Use scientific notation for very large/small quantities	8.EE.A.3 / 8.EE.A.4	Use numbers expressed as a single digit x power of 10 to estimate very large or very small quantities; perform operations in scientific notation	8	Extends your 'powers of 10' SWBAT into real scientific applications
+Arithmetic MYP 1	Add and subtract rational numbers on a number line (including negative fractions and decimals)	7.NS.A.1	Apply and extend previous understandings of addition and subtraction to add and subtract rational numbers; represent on a number line	7	Extends your negative numbers SWBAT to full rational number operations
+Arithmetic MYP 1	Solve multi-step problems with positive and negative rational numbers in any form, converting between forms as needed	7.EE.B.3	Solve multi-step real-life problems posed with positive and negative rational numbers in any form (whole numbers, fractions, decimals)	7	Same multi-step word problems - but now fractions, decimals, and negatives are all mixed in
+Factors & Multiples	Know that irrational numbers exist (sqrt 2 etc.) and approximate them on a number line	8.NS.A.1 / 8.NS.A.2	Know that numbers that are not rational are called irrational; use rational approximations to locate irrational numbers on a number line	8	Extends prime/composite thinking - some square roots can't be simplified to fractions
+Algebra Foundations	Know and apply properties of integer exponents (including negative and zero exponents)	8.EE.A.1	Know and apply the properties of integer exponents to generate equivalent numerical expressions. Example: 3^2 x 3^-5 = 3^-3 = 1/27	8	Direct upgrade of your 'powers as repeated multiplication' SWBAT to exponent laws
+Algebra Foundations	Use square root and cube root symbols; evaluate perfect squares and cubes	8.EE.A.2	Use square root and cube root symbols to represent solutions to x^2 = p and x^3 = p; evaluate square roots of perfect squares and cube roots of perfect cubes	8	Natural inverse of your exponents content - 'what number squared gives 25?'
+Algebra	Add, subtract, factor, and expand linear expressions with rational coefficients	7.EE.A.1	Apply properties of operations as strategies to add, subtract, factor, and expand linear expressions with rational coefficients	7	Same distributive/commutative properties - now with harder coefficients like fractions
+Algebra	Understand that rewriting an expression reveals relationships (for example, a + 0.05a = 1.05a means 'increase by 5%')	7.EE.A.2	Understand that rewriting an expression in different forms can shed light on the problem and how quantities relate	7	Deepens your 'equivalent expressions' SWBAT with real insight - connects to your Percentage unit
+Algebra	Solve two-step equations: px + q = r and p(x + q) = r	7.EE.B.4a	Solve word problems leading to equations of the form px + q = r and p(x + q) = r, where p, q, r are rational numbers	7	Direct upgrade from your x + p = q and px = q equations to two-step equations
+Algebra	Solve word problems leading to inequalities px + q > r	7.EE.B.4b	Solve word problems leading to inequalities of the form px + q > r or px + q < r; graph solution set	7	Same equation-solving skills applied to inequalities - new but accessible
+Algebra	Solve linear equations with rational coefficients, including distributive property and collecting like terms	8.EE.C.7b	Solve linear equations with rational number coefficients, including equations requiring expanding expressions using distributive property and collecting like terms	8	Full-power version of your equation solving - multi-step with fractions as coefficients
+Algebra	Understand what a function is; interpret y = mx + b as a linear function	8.F.A.1 / 8.F.A.3	Understand that a function assigns each input exactly one output; interpret y = mx + b as defining a linear function whose graph is a straight line	8	Formalises your 'two changing quantities' SWBAT - the taxi fare example becomes a function
+Rates	Compute unit rates with ratios of fractions (for example, 1/2 mile per 1/4 hour)	7.RP.A.1	Compute unit rates associated with ratios of fractions, including ratios of lengths, areas and other quantities measured in like or different units	7	Same unit rate concept - but the numbers are now fractions, not just whole numbers
+Rates	Recognise and represent proportional relationships (tables, graphs, equations, y = kx)	7.RP.A.2	Recognise and represent proportional relationships between quantities; decide if two quantities are proportional; identify constant of proportionality; write equations	7	Extends your unit rate + two-variable equation SWBATs into a unified proportional reasoning framework
+Rates	Graph proportional relationships; interpret unit rate as slope	8.EE.B.5	Graph proportional relationships, interpreting the unit rate as the slope of the graph; compare two proportional relationships represented in different ways	8	Connects your Rates unit directly to graphing and slope - bridges to linear functions
+Percentage	Solve multi-step percent problems: simple interest, tax, markups, markdowns, commissions, tips, percent error	7.RP.A.3	Use proportional relationships to solve multistep ratio and percent problems (simple interest, tax, markups/markdowns, gratuities, commissions, percent increase/decrease, percent error)	7	You already have basic percent increase/decrease - this adds the full real-world toolkit
+Geometry	Construct triangles from given angle/side conditions; determine when conditions give a unique triangle, more than one, or none	7.G.A.2	Draw geometric shapes with given conditions; focus on constructing triangles from three measures of angles or sides, noticing when conditions determine a unique triangle, more than one, or no triangle	7	Extends your triangle classification into triangle construction and uniqueness
+Geometry	Cross-sections: describe 2D figures that result from slicing 3D figures	7.G.A.3	Describe the two-dimensional figures that result from slicing three-dimensional figures (plane sections of prisms and pyramids)	7	Deepens your '2D <-> 3D relationship' SWBAT with slicing and cross-sections
+Geometry	Use supplementary, complementary, vertical, and adjacent angle relationships to solve for unknowns	7.G.B.5	Use facts about supplementary, complementary, vertical, and adjacent angles in a multi-step problem to write and solve simple equations for an unknown angle	7	Combines your angle properties knowledge with your algebra equation-solving skills
+Geometry	Understand and apply the Pythagorean Theorem	8.G.B.6 / 8.G.B.7 / 8.G.B.8	Explain a proof of the Pythagorean Theorem; apply it to find unknown side lengths in real-world problems; apply it to find distance between two points on a coordinate plane	8	Bridges your triangles + coordinate plane units - huge payoff for advanced students
+Measurement & Areas	Know and use formulas for area and circumference of a circle	7.G.B.4	Know the formulas for the area and circumference of a circle and use them to solve problems; give an informal derivation of the relationship between circumference and area	7	You explicitly excluded circles - this is the natural next step for advanced kids
+Measurement & Areas	Solve problems involving surface area and volume of 3D figures (prisms, pyramids)	7.G.B.6	Solve real-life and mathematical problems involving area, surface area, and volume of 2D and 3D objects composed of triangles, quadrilaterals, polygons, cubes, and right prisms	7	Extends your 2D area work into 3D - surface area and volume of prisms
+Measurement & Areas	Solve problems involving volume of cylinders, cones, and spheres	8.G.C.9	Know the formulas for the volumes of cones, cylinders, and spheres and use them to solve real-world and mathematical problems	8	Further extends 3D measurement once circles and basic volume are established
+Data	Use random sampling to draw inferences about a population	7.SP.A.1 / 7.SP.A.2	Understand that statistics can be used to gain information about a population from a sample; use data from a random sample to draw inferences	7	Upgrades your 'read and plot line graphs' into statistical reasoning about data
+Data	Investigate chance processes; develop and use probability models	7.SP.C.5 / 7.SP.C.6 / 7.SP.C.7	Understand probability as a number between 0 and 1; approximate probability through experiments; develop probability models	7	Entirely new but accessible - connects naturally to your data and games/puzzles strands`;
+
+    const TOPIC_ORDER = ["Fractions", "Decimals", "Arithmetic MYP 1", "Factors & Multiples", "Geometry", "Measurement & Areas", "Algebra Foundations", "Algebra", "Rates", "Percentage", "Data", "Problem Solving"];
+    const ALIAS_MAP = { "Fraction Fundamentals": "Fractions", "Fractions (MYP 1)": "Fractions", "Decimal Fundamentals": "Decimals", "Decimals (MYP 1)": "Decimals", "Arithmetic MYP 1": "Arithmetic MYP 1", "Factors & Multiples": "Factors & Multiples", "Geometry": "Geometry", "Measurement & Areas": "Measurement & Areas", "Algebra Foundations": "Algebra Foundations", "Algebra": "Algebra", "Rates": "Rates", "Percentage": "Percentage", "Data": "Data", "Problem Solving": "Problem Solving" };
+
+    const IM_LINKS = {
+      "Fractions": {
+        direct: [
+          { label: "Grade 6 · Unit 4 · Dividing Fractions", url: "https://accessim.org/6-8/grade-6/unit-4?a=teacher", note: "Best direct IM entry point for fraction operations and division." },
+          { label: "Grade 6 · Unit 7 · Rational Numbers", url: "https://accessim.org/6-8/grade-6/unit-7?a=teacher", note: "Useful for GCF/LCM and number-line extensions that support comparison work." }
+        ],
+        advanced: [
+          { label: "Grade 7 · Unit 5 · Rational Number Arithmetic", url: "https://accessim.org/6-8/grade-7/unit-5?a=teacher", note: "Advanced extension for rational-number operations, including negative fractions." }
+        ]
+      },
+      "Decimals": {
+        direct: [
+          { label: "Grade 6 · Unit 5 · Arithmetic in Base Ten", url: "https://accessim.org/6-8/grade-6/unit-5?a=teacher", note: "Best direct IM entry point for decimal operations." },
+          { label: "Grade 6 · Unit 6 · Expressions and Equations", url: "https://accessim.org/6-8/grade-6/unit-6?a=teacher", note: "Helpful for powers-of-10 pattern work that bridges into expressions." }
+        ],
+        advanced: [
+          { label: "Grade 8 · Unit 7 · Exponents and Scientific Notation", url: "https://accessim.org/6-8/grade-8/unit-7?a=teacher", note: "Best fit for scientific notation and exponent-based extensions." },
+          { label: "Grade 8 · Unit 8 · Pythagorean Theorem and Irrational Numbers", url: "https://accessim.org/6-8/grade-8/unit-8?a=teacher", note: "Useful for rational vs. irrational decimal expansions and repeating decimals." }
+        ]
+      },
+      "Arithmetic MYP 1": {
+        direct: [
+          { label: "Grade 6 · Unit 5 · Arithmetic in Base Ten", url: "https://accessim.org/6-8/grade-6/unit-5?a=teacher", note: "Supports multi-digit computation fluency." },
+          { label: "Grade 6 · Unit 7 · Rational Numbers", url: "https://accessim.org/6-8/grade-6/unit-7?a=teacher", note: "Supports negative-number ordering and introductory signed arithmetic." }
+        ],
+        advanced: [
+          { label: "Grade 7 · Unit 5 · Rational Number Arithmetic", url: "https://accessim.org/6-8/grade-7/unit-5?a=teacher", note: "Best advanced fit for signed fractions and decimals." },
+          { label: "Grade 7 · Unit 6 · Expressions, Equations, and Inequalities", url: "https://accessim.org/6-8/grade-7/unit-6?a=teacher", note: "Useful for multi-step real-world problems with rational numbers." }
+        ]
+      },
+      "Factors & Multiples": {
+        direct: [
+          { label: "Grade 6 · Unit 7 · Rational Numbers", url: "https://accessim.org/6-8/grade-6/unit-7?a=teacher", note: "Direct IM match for common factors and common multiples." }
+        ],
+        advanced: [
+          { label: "Grade 8 · Unit 8 · Pythagorean Theorem and Irrational Numbers", url: "https://accessim.org/6-8/grade-8/unit-8?a=teacher", note: "Useful extension into irrational numbers and square roots." }
+        ]
+      },
+      "Geometry": {
+        direct: [
+          { label: "Grade 6 · Unit 7 · Rational Numbers", url: "https://accessim.org/6-8/grade-6/unit-7?a=teacher", note: "Supports coordinate-plane plotting in four quadrants." },
+          { label: "Grade 7 · Unit 7 · Angles, Triangles, and Prisms", url: "https://accessim.org/6-8/grade-7/unit-7?a=teacher", note: "Best direct IM fit for classifying shapes, angles, and 3D relationships." }
+        ],
+        advanced: [
+          { label: "Grade 7 · Unit 7 · Angles, Triangles, and Prisms", url: "https://accessim.org/6-8/grade-7/unit-7?a=teacher", note: "Best advanced fit for construction, angle relationships, and cross-sections." },
+          { label: "Grade 8 · Unit 8 · Pythagorean Theorem and Irrational Numbers", url: "https://accessim.org/6-8/grade-8/unit-8?a=teacher", note: "Best advanced fit for Pythagorean Theorem applications." }
+        ]
+      },
+      "Measurement & Areas": {
+        direct: [
+          { label: "Grade 6 · Unit 1 · Area and Surface Area", url: "https://accessim.org/6-8/grade-6/unit-1?a=teacher", note: "Best direct IM fit for area and perimeter foundations." }
+        ],
+        advanced: [
+          { label: "Grade 7 · Unit 3 · Measuring Circles", url: "https://accessim.org/6-8/grade-7/unit-3?a=teacher", note: "Best fit for area and circumference of circles." },
+          { label: "Grade 7 · Unit 7 · Angles, Triangles, and Prisms", url: "https://accessim.org/6-8/grade-7/unit-7?a=teacher", note: "Useful for surface area and prism work." },
+          { label: "Grade 8 · Unit 5 · Functions and Volume", url: "https://accessim.org/6-8/grade-8/unit-5?a=teacher", note: "Best advanced fit for cylinder, cone, and sphere volume extensions." }
+        ]
+      },
+      "Algebra Foundations": {
+        direct: [
+          { label: "Grade 6 · Unit 6 · Expressions and Equations", url: "https://accessim.org/6-8/grade-6/unit-6?a=teacher", note: "Best direct IM fit for exponents, rules, and order of operations." }
+        ],
+        advanced: [
+          { label: "Grade 8 · Unit 7 · Exponents and Scientific Notation", url: "https://accessim.org/6-8/grade-8/unit-7?a=teacher", note: "Best advanced fit for exponent laws and scientific notation." },
+          { label: "Grade 8 · Unit 8 · Pythagorean Theorem and Irrational Numbers", url: "https://accessim.org/6-8/grade-8/unit-8?a=teacher", note: "Useful for square-root and cube-root style extensions." }
+        ]
+      },
+      "Algebra": {
+        direct: [
+          { label: "Grade 6 · Unit 6 · Expressions and Equations", url: "https://accessim.org/6-8/grade-6/unit-6?a=teacher", note: "Best direct IM fit for variables, expressions, and one-step equations." }
+        ],
+        advanced: [
+          { label: "Grade 7 · Unit 6 · Expressions, Equations, and Inequalities", url: "https://accessim.org/6-8/grade-7/unit-6?a=teacher", note: "Best fit for two-step equations, inequalities, and rewriting expressions." },
+          { label: "Grade 8 · Unit 3 · Linear Relationships", url: "https://accessim.org/6-8/grade-8/unit-3?a=teacher", note: "Useful for graphing relationships and slope-based thinking." },
+          { label: "Grade 8 · Unit 4 · Linear Equations and Linear Systems", url: "https://accessim.org/6-8/grade-8/unit-4?a=teacher", note: "Best advanced fit for multi-step linear equations." },
+          { label: "Grade 8 · Unit 5 · Functions and Volume", url: "https://accessim.org/6-8/grade-8/unit-5?a=teacher", note: "Useful for function language and linear function interpretation." }
+        ]
+      },
+      "Rates": {
+        direct: [
+          { label: "Grade 6 · Unit 2 · Introducing Ratios", url: "https://accessim.org/6-8/grade-6/unit-2?a=teacher", note: "Best direct entry point for ratio concepts and unit language." },
+          { label: "Grade 6 · Unit 3 · Unit Rates and Percentages", url: "https://accessim.org/6-8/grade-6/unit-3?a=teacher", note: "Best direct fit for unit-rate problem solving." }
+        ],
+        advanced: [
+          { label: "Grade 7 · Unit 2 · Introducing Proportional Relationships", url: "https://accessim.org/6-8/grade-7/unit-2?a=teacher", note: "Best fit for proportional reasoning, tables, graphs, and equations." },
+          { label: "Grade 8 · Unit 3 · Linear Relationships", url: "https://accessim.org/6-8/grade-8/unit-3?a=teacher", note: "Useful for linking proportional relationships to slope." }
+        ]
+      },
+      "Percentage": {
+        direct: [
+          { label: "Grade 6 · Unit 3 · Unit Rates and Percentages", url: "https://accessim.org/6-8/grade-6/unit-3?a=teacher", note: "Best direct fit for percent as a rate per 100." }
+        ],
+        advanced: [
+          { label: "Grade 7 · Unit 4 · Proportional Relationships and Percentages", url: "https://accessim.org/6-8/grade-7/unit-4?a=teacher", note: "Best advanced fit for multistep percent problems." }
+        ]
+      },
+      "Data": {
+        direct: [
+          { label: "Grade 6 · Unit 8 · Data Sets and Distributions", url: "https://accessim.org/6-8/grade-6/unit-8?a=teacher", note: "Best direct fit for data displays and distributions." }
+        ],
+        advanced: [
+          { label: "Grade 7 · Unit 8 · Probability and Sampling", url: "https://accessim.org/6-8/grade-7/unit-8?a=teacher", note: "Best advanced fit for sampling and probability." },
+          { label: "Grade 8 · Unit 6 · Associations in Data", url: "https://accessim.org/6-8/grade-8/unit-6?a=teacher", note: "Useful for bivariate data and association work." }
+        ]
+      },
+      "Problem Solving": {
+        direct: [
+          { label: "Grade 6 · Unit 9 · Putting It All Together", url: "https://accessim.org/6-8/grade-6/unit-9?a=teacher", note: "General problem-based IM entry point." },
+          { label: "Grade 7 · Unit 9 · Putting It All Together", url: "https://accessim.org/6-8/grade-7/unit-9?a=teacher", note: "General integrated problem-based IM entry point." },
+          { label: "Grade 8 · Unit 9 · Putting It All Together", url: "https://accessim.org/6-8/grade-8/unit-9?a=teacher", note: "General advanced integrated problem-based IM entry point." }
+        ],
+        advanced: []
+      }
+    };
+
+    /* State Management */
+    let currentMode = 'direct'; // 'direct' or 'advanced'
+    const TOPICS = [];
+
+    /* Initialization */
+    function parseTSV(raw, columns) {
+      return raw.trim().split("\n").map(line => {
+        const parts = line.split("\t");
+        const row = {};
+        columns.forEach((key, i) => row[key] = (parts[i] || "").trim());
+        return row;
+      });
+    }
+
+    function buildData() {
+      const directRows = parseTSV(DIRECT_TSV, ["sourceTopic", "swbat", "code", "description", "grade"]);
+      const advancedRows = parseTSV(ADVANCED_TSV, ["sourceTopic", "swbat", "code", "description", "grade", "whyItFits"]);
+
+      TOPIC_ORDER.forEach(title => {
+        TOPICS.push({
+          title,
+          aliases: new Set(),
+          direct: directRows.filter(r => (ALIAS_MAP[r.sourceTopic] || r.sourceTopic) === title),
+          advanced: advancedRows.filter(r => (ALIAS_MAP[r.sourceTopic] || r.sourceTopic) === title),
+          links: IM_LINKS[title] || { direct: [], advanced: [] }
+        });
+      });
+
+      // Populate aliases
+      [...directRows, ...advancedRows].forEach(r => {
+        const canonical = ALIAS_MAP[r.sourceTopic] || r.sourceTopic;
+        const topic = TOPICS.find(t => t.title === canonical);
+        if (topic && r.sourceTopic !== topic.title) topic.aliases.add(r.sourceTopic);
+      });
+    }
+
+    /* Grade dropdown state */
+    let gradeFilterValue = "";
+
+    function readControlValue(id) {
+      if (id === 'gradeFilter') return gradeFilterValue;
+      const element = document.getElementById(id);
+      if (!element) return "";
+
+      if (typeof element.value === "string") return element.value;
+      if (element.value != null) return String(element.value);
+
+      const attributeValue = element.getAttribute("value");
+      return typeof attributeValue === "string" ? attributeValue : "";
+    }
+
+    function writeControlValue(id, value) {
+      if (id === 'gradeFilter') {
+        gradeFilterValue = value;
+        const shell = document.getElementById('gradeDropdown');
+        if (!shell) return;
+        const display = shell.querySelector('.select-display');
+        const options = shell.querySelectorAll('.select-option');
+        options.forEach(opt => {
+          const isMatch = opt.dataset.value === value;
+          opt.classList.toggle('selected', isMatch);
+          if (isMatch && display) display.textContent = opt.textContent;
+        });
+        return;
+      }
+      const element = document.getElementById(id);
+      if (!element) return;
+
+      element.value = value;
+      if (value === "") {
+        element.removeAttribute("value");
+      } else {
+        element.setAttribute("value", value);
+      }
+    }
+
+    function normalizeText(value) {
+      return String(value || "").toLowerCase();
+    }
+
+    /* Filtering Logic */
+    function getFilteredData() {
+      const search = normalizeText(readControlValue('searchInput')).trim();
+      const grade = readControlValue('gradeFilter').trim();
+      const code = normalizeText(readControlValue('codeFilter')).trim();
+
+      return TOPICS.map(topic => {
+        const filteredRows = topic[currentMode].filter(row => {
+          const searchableParts = [topic.title, ...topic.aliases, row.swbat, row.description];
+          const mSearch = !search || searchableParts.some(s => normalizeText(s).includes(search));
+          const mGrade = !grade || ((String(row.grade || "").match(/\d+/g)) || []).includes(grade);
+          const mCode = !code || normalizeText(row.code).includes(code);
+          return mSearch && mGrade && mCode;
+        });
+
+        if (filteredRows.length === 0) return null;
+
+        return { ...topic, visibleRows: filteredRows };
+      }).filter(Boolean);
+    }
+
+    /* Rendering */
+    function render() {
+      const filtered = getFilteredData();
+      const list = document.getElementById('topicList');
+      list.innerHTML = "";
+
+      // Update Stats
+      document.getElementById('statTopics').textContent = filtered.length;
+      document.getElementById('statMatches').textContent = filtered.reduce((a, b) => a + b.visibleRows.length, 0);
+
+      if (filtered.length === 0) {
+        list.innerHTML = `<div class="empty-state"><md-icon>search_off</md-icon><h2>No matches found.</h2><p>Try adjusting your search terms or filters.</p></div>`;
+        return;
+      }
+
+      filtered.forEach((topic, idx) => {
+        const groupEl = document.createElement('div');
+        groupEl.className = 'topic-group animate-in';
+        groupEl.style.animationDelay = `${idx * 0.05}s`;
+
+        const aliasesHtml = Array.from(topic.aliases).map(a => `<span class="alias-tag">${a}</span>`).join('');
+
+        const imLinks = topic.links[currentMode] || [];
+        const imLinksHtml = imLinks.length > 0 ? `
+          <div class="im-header-links">
+            ${imLinks.map(link => `
+              <a href="${link.url}" target="_blank" rel="noopener" class="im-pill ${currentMode}" title="${link.note}">
+                <md-icon>open_in_new</md-icon> ${link.label}
+              </a>
+            `).join('')}
+          </div>
+        ` : '';
+
+        groupEl.innerHTML = `
+          <div class="topic-header-fancy" role="button" tabindex="0" aria-expanded="false" aria-controls="topic-body-${idx}">
+            <div style="display:flex;align-items:flex-end;gap:24px;width:100%">
+              <div class="topic-number">${(idx + 1).toString().padStart(2, '0')}</div>
+              <div class="topic-title-box" style="flex:1;min-width:0">
+                <div class="topic-title-row">
+                  <h2>${topic.title}</h2>
+                  ${imLinksHtml}
+                </div>
+                <div class="topic-aliases-wrap">${aliasesHtml}</div>
+              </div>
+              <span class="material-symbols-outlined topic-chevron" aria-hidden="true">expand_more</span>
+            </div>
+          </div>
+
+          <div class="topic-body" id="topic-body-${idx}">
+            <div class="topic-body-inner">
+              <div class="mappings-grid">
+                ${topic.visibleRows.map(row => `
+                  <div class="mapping-card ${currentMode}">
+                    <div class="card-meta">
+                      <span class="code-badge">${row.code}</span>
+                      <span class="grade-badge">Grade ${row.grade}</span>
+                    </div>
+                    <div class="card-content">
+                      <h3>${row.swbat}</h3>
+                      <p>${row.description}</p>
+                      ${row.whyItFits ? `<div class="why-it-fits"><strong>Why it fits:</strong> ${row.whyItFits}</div>` : ''}
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </div>
+        `;
+
+        // Accordion toggle
+        const header = groupEl.querySelector('.topic-header-fancy');
+        header.addEventListener('click', (e) => {
+          // Don't toggle if clicking an IM link
+          if (e.target.closest('.im-pill')) return;
+          const isExpanded = groupEl.classList.toggle('expanded');
+          header.setAttribute('aria-expanded', isExpanded);
+        });
+        header.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            header.click();
+          }
+        });
+
+        list.appendChild(groupEl);
+      });
+    }
+
+    /* Event Listeners */
+    document.getElementById('modeDirect').onclick = () => {
+      currentMode = 'direct';
+      document.getElementById('modeDirect').classList.add('active');
+      document.getElementById('modeAdvanced').classList.remove('active');
+      render();
+    };
+
+    document.getElementById('modeAdvanced').onclick = () => {
+      currentMode = 'advanced';
+      document.getElementById('modeAdvanced').classList.add('active');
+      document.getElementById('modeDirect').classList.remove('active');
+      render();
+    };
+
+    ['searchInput', 'codeFilter'].forEach(id => {
+      const element = document.getElementById(id);
+      if (!element) return;
+      element.addEventListener('input', render);
+      element.addEventListener('change', render);
+    });
+
+    /* Custom grade dropdown behavior */
+    (function initGradeDropdown() {
+      const shell = document.getElementById('gradeDropdown');
+      if (!shell) return;
+      const trigger = shell.querySelector('.select-trigger');
+      const menu = shell.querySelector('.select-menu');
+
+      trigger.addEventListener('click', () => {
+        const opening = !shell.classList.contains('open');
+        shell.classList.toggle('open');
+        trigger.setAttribute('aria-expanded', opening);
+      });
+
+      trigger.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          trigger.click();
+        } else if (e.key === 'Escape' && shell.classList.contains('open')) {
+          shell.classList.remove('open');
+          trigger.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      menu.addEventListener('click', (e) => {
+        const opt = e.target.closest('.select-option');
+        if (!opt) return;
+        writeControlValue('gradeFilter', opt.dataset.value);
+        shell.classList.remove('open');
+        trigger.setAttribute('aria-expanded', 'false');
+        render();
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!shell.contains(e.target)) {
+          shell.classList.remove('open');
+          trigger.setAttribute('aria-expanded', 'false');
+        }
+      });
+    })();
+
+    document.getElementById('clearFilters').onclick = () => {
+      writeControlValue('searchInput', "");
+      writeControlValue('gradeFilter', "");
+      writeControlValue('codeFilter', "");
+      render();
+    };
+
+    // Initialize
+    buildData();
+    render();
+  </script>
+</body>
+</html>

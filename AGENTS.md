@@ -42,12 +42,12 @@ Single source of truth: this file. `CLAUDE.md` exists only as a compatibility po
 ## UI Workflow Policy
 
 1. For every frontend/UI task, run the frontend design skill first and apply it before coding.
-2. Frontend design skill source: `C:/Users/vishw/.codex/skills/claude-code/SKILL.md` (until a dedicated frontend-design skill is added).
-3. When invoking Claude for frontend work, append the full frontend design skill content to the Claude prompt.
+2. When invoking Claude for frontend work, explicitly tell Claude Code to use its own `frontend-design` skill/context.
+3. Use the local `claude-code` skill at `C:/Users/vishw/.codex/skills/claude-code/SKILL.md` as the routing and guardrail policy for when and how Codex delegates frontend work to Claude.
 4. Claude Code is allowed for visual/UX-only frontend tasks using `--dangerously-skip-permissions`.
 5. Guardrails: keep edits inside `src/` (and `public/` only if needed); do not edit `convex/`, auth flows, or docs unless explicitly requested.
 6. Never read `.env*` files or secrets; require diff-style output from Claude; implementing agent must review and verify locally.
-7. If Claude Code is unavailable, use Gemini CLI advisory-only (ideas + suggested diffs), then implement locally.
+7. If Claude Code is unavailable, do not switch to Gemini automatically; implement locally in Codex or stop and surface the blocker.
 
 ## Code Simplifier Policy
 
