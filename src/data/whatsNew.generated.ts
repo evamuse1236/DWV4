@@ -13,6 +13,12 @@ export const WHATS_NEW: WhatsNewEntry[] = [
   {
     date: "Mar 21",
     sortDate: "2026-03-21",
+    title: "Simplify admin shell and dashboard",
+    description: "Code updates shipped in commit 740f612.",
+  },
+  {
+    date: "Mar 21",
+    sortDate: "2026-03-21",
     title: "Fill Q3 daily goals from reporting data",
     description: "Code updates shipped in commit a949612.",
   },
@@ -183,12 +189,6 @@ export const WHATS_NEW: WhatsNewEntry[] = [
     sortDate: "2026-02-12",
     title: "Require Diagnostic V2 and redesign Viva Queue triage UX",
     description: "Code updates shipped in commit b4d0844.",
-  },
-  {
-    date: "Feb 12",
-    sortDate: "2026-02-12",
-    title: "Improve comment modal image upload UX and remove title bar",
-    description: "Code updates shipped in commit 1d80197.",
   },
 ];
 
