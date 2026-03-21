@@ -27,6 +27,7 @@ import type * as progress from "../progress.js";
 import type * as projectLinks from "../projectLinks.js";
 import type * as projectReflections from "../projectReflections.js";
 import type * as projects from "../projects.js";
+import type * as reporting from "../reporting.js";
 import type * as seed from "../seed.js";
 import type * as sprints from "../sprints.js";
 import type * as studentComments from "../studentComments.js";
@@ -61,6 +62,7 @@ declare const fullApi: ApiFromModules<{
   projectLinks: typeof projectLinks;
   projectReflections: typeof projectReflections;
   projects: typeof projects;
+  reporting: typeof reporting;
   seed: typeof seed;
   sprints: typeof sprints;
   studentComments: typeof studentComments;

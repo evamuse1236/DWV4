@@ -13,6 +13,7 @@
     "test": "vitest",
     "test:run": "vitest run",
     "preview": "vite preview",
+    "fill:q3:daily-goals": "node --experimental-strip-types scripts/fill-q3-daily-goals.ts",
     "diagnostic:v2:sync": "node scripts/sync-diagnostic-v2.mjs",
     "diagnostic:misconceptions:rewrite:groq": "node scripts/rewrite-misconceptions-groq.mjs"
   },

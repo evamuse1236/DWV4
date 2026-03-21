@@ -1,0 +1,2587 @@
+{
+  "dryRun": false,
+  "generatedAt": "2026-03-14T04:47:14.210Z",
+  "sprintWindow": [
+    {
+      "endDate": "2026-01-20",
+      "id": "kh7bspbvkqrdq81xzvwv9nj6617z4xxv",
+      "name": "Sprint test 1",
+      "startDate": "2026-01-14"
+    },
+    {
+      "endDate": "2026-01-26",
+      "id": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+      "name": "Sprint trial 2",
+      "startDate": "2026-01-19"
+    },
+    {
+      "endDate": "2026-02-09",
+      "id": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+      "name": "Sprint Trial 3",
+      "startDate": "2026-01-26"
+    }
+  ],
+  "students": [
+    {
+      "batch": "2153",
+      "displayName": "Adi",
+      "username": "adi",
+      "evidence": {
+        "batch": "2153",
+        "derived": {
+          "completedGoals": 0,
+          "completedTasks": 0,
+          "focusCandidates": [
+            "Reach Level 200 In Rivals",
+            "Stop Buying Emotes",
+            "Read 10 Books"
+          ],
+          "habitConsistencyPercent": 0,
+          "inProgressGoals": 0,
+          "strongestCompletedFocus": null,
+          "taskCompletionPercent": 0,
+          "totalGoals": 5,
+          "totalHabitCompletions": 0,
+          "totalHabitExpected": 0,
+          "totalHabits": 0,
+          "totalTasks": 36,
+          "weakestFollowThrough": "Reach Level 200 in Rivals"
+        },
+        "displayName": "Adi",
+        "goals": [
+          {
+            "measurable": "Gain 33 levels total",
+            "relevant": "Achieve higher status and recognition in the game",
+            "specific": "Increase Rivals level from 167 to 200",
+            "sprintEndDate": "2026-01-20",
+            "sprintId": "kh7bspbvkqrdq81xzvwv9nj6617z4xxv",
+            "sprintName": "Sprint test 1",
+            "sprintStartDate": "2026-01-14",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 7,
+            "title": "Reach Level 200 in Rivals"
+          },
+          {
+            "measurable": "Zero emote purchases for 6 days",
+            "relevant": "You want to break the habit of buying emotes",
+            "specific": "Avoid purchasing any emotes during the 6-day sprint",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 3,
+            "title": "Stop buying emotes"
+          },
+          {
+            "measurable": "10 books fully read by sprint end",
+            "relevant": "Student wants to complete significant reading challenge",
+            "specific": "Read 10 complete books from cover to cover",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 6,
+            "title": "Read 10 books"
+          },
+          {
+            "measurable": "Scale shows 58 kg or less on Sunday morning",
+            "relevant": "Need to make weight class for important competition",
+            "specific": "Cut weight from 60 kg to 58 kg for Sunday's taekwondo competition",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 6,
+            "title": "Make 58 kg for competition"
+          },
+          {
+            "measurable": "Complete the habit every day.",
+            "relevant": "Builds consistency toward your goals.",
+            "specific": "reduce 1 kg' — every day, 1 hour each",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 14,
+            "title": "Reduce 1 Kg'"
+          }
+        ],
+        "habits": [],
+        "sprintNames": [
+          "Sprint test 1",
+          "Sprint trial 2",
+          "Sprint Trial 3"
+        ],
+        "studentId": "kx7d2j7e0ezdcdkzjxtyzamra17z031h",
+        "username": "adi"
+      },
+      "draft": {
+        "couldImprove": "The child needs to begin task work so at least one goal moves past ‘not started’.",
+        "goalHabit": "Focus on completing one gaming or reading goal to build follow-through.",
+        "wentWell": "The student set ambitious, measurable goals across gaming, reading, and fitness."
+      }
+    },
+    {
+      "batch": "2153",
+      "displayName": "Aria",
+      "username": "aria",
+      "evidence": {
+        "batch": "2153",
+        "derived": {
+          "completedGoals": 0,
+          "completedTasks": 36,
+          "focusCandidates": [
+            "Complete 2 Coursiv Ais",
+            "Ai Freind",
+            "Nighty"
+          ],
+          "habitConsistencyPercent": 73,
+          "inProgressGoals": 0,
+          "strongestCompletedFocus": "AI FREIND",
+          "taskCompletionPercent": 88,
+          "totalGoals": 12,
+          "totalHabitCompletions": 66,
+          "totalHabitExpected": 90,
+          "totalHabits": 9,
+          "totalTasks": 41,
+          "weakestFollowThrough": "Daily Night Report System"
+        },
+        "displayName": "Aria",
+        "goals": [
+          {
+            "measurable": "100% of days with report collected and assignments given, confirmed by father's feedback",
+            "relevant": "Prevents billing errors and ensures staff have clear direction during peak season",
+            "specific": "Collect 9PM night report and create clear work assignments with what/when/how much details",
+            "sprintEndDate": "2026-01-20",
+            "sprintId": "kh7bspbvkqrdq81xzvwv9nj6617z4xxv",
+            "sprintName": "Sprint test 1",
+            "sprintStartDate": "2026-01-14",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 0,
+            "title": "Daily Night Report System"
+          },
+          {
+            "measurable": "Record 7 successful serves out of every 10 attempted",
+            "relevant": "Beating my friend in our next match",
+            "specific": "Improve serve power and land 7/10 in the back third of the court",
+            "sprintEndDate": "2026-01-20",
+            "sprintId": "kh7bspbvkqrdq81xzvwv9nj6617z4xxv",
+            "sprintName": "Sprint test 1",
+            "sprintStartDate": "2026-01-14",
+            "status": "not_started",
+            "tasksCompleted": 2,
+            "tasksTotal": 2,
+            "title": "Stronger Accurate Badminton Serve"
+          },
+          {
+            "measurable": "Food skill shows as gold (completed) in Duolingo",
+            "relevant": "First step in learning new languages, starting with fun food vocabulary",
+            "specific": "Complete the entire German food skill on Duolingo to gold level",
+            "sprintEndDate": "2026-01-20",
+            "sprintId": "kh7bspbvkqrdq81xzvwv9nj6617z4xxv",
+            "sprintName": "Sprint test 1",
+            "sprintStartDate": "2026-01-14",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 0,
+            "title": "German Food Skill to Gold"
+          },
+          {
+            "measurable": "Successfully joined and participated in the class",
+            "relevant": "Starting IPM studies as planned",
+            "specific": "Enroll in and attend the first IPM class session",
+            "sprintEndDate": "2026-01-20",
+            "sprintId": "kh7bspbvkqrdq81xzvwv9nj6617z4xxv",
+            "sprintName": "Sprint test 1",
+            "sprintStartDate": "2026-01-14",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 0,
+            "title": "Join IPM class today"
+          },
+          {
+            "measurable": "Complete solve in under 10 minutes",
+            "relevant": "Want to master the full cube solve",
+            "specific": "Learn and practice the final layer algorithms to solve the Rubik's cube",
+            "sprintEndDate": "2026-01-20",
+            "sprintId": "kh7bspbvkqrdq81xzvwv9nj6617z4xxv",
+            "sprintName": "Sprint test 1",
+            "sprintStartDate": "2026-01-14",
+            "status": "not_started",
+            "tasksCompleted": 3,
+            "tasksTotal": 3,
+            "title": "Solve cube in 10 minutes"
+          },
+          {
+            "measurable": "Mark 100% of daily tasks done before bed",
+            "relevant": "Keeps productivity on track",
+            "specific": "Complete all planned tasks each day",
+            "sprintEndDate": "2026-01-20",
+            "sprintId": "kh7bspbvkqrdq81xzvwv9nj6617z4xxv",
+            "sprintName": "Sprint test 1",
+            "sprintStartDate": "2026-01-14",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 2,
+            "title": "Daily Tasks"
+          },
+          {
+            "measurable": "100% of daily tasks checked off before midnight",
+            "relevant": "Keeps projects moving and reduces backlog",
+            "specific": "Finish all planned tasks by end of each day",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 6,
+            "tasksTotal": 8,
+            "title": "Daily Tasks Completed"
+          },
+          {
+            "measurable": "2 course completion certificates earned",
+            "relevant": "Advances AI knowledge and skills",
+            "specific": "Finish 2 artificial intelligence courses on Coursiv platform",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 4,
+            "tasksTotal": 5,
+            "title": "Complete 2 Coursiv AIs"
+          },
+          {
+            "measurable": "Complete Hindi practice sessions with grandmother",
+            "relevant": "Improves his focus and strengthens our bond",
+            "specific": "Practice Hindi language skills with my grandmother",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 4,
+            "tasksTotal": 4,
+            "title": "Do Hindi with Grandmother"
+          },
+          {
+            "measurable": "2 course completion certificates earned",
+            "relevant": "Advances AI knowledge and skills",
+            "specific": "Finish 2 artificial intelligence courses on Coursiv platform",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "status": "not_started",
+            "tasksCompleted": 4,
+            "tasksTotal": 4,
+            "title": "Complete 2 Coursiv AIs"
+          },
+          {
+            "measurable": "Complete trading practice sessions with mother",
+            "relevant": "Improves his focus and strengthens our bond",
+            "specific": "Practice Trading skills with my mother",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "status": "not_started",
+            "tasksCompleted": 8,
+            "tasksTotal": 8,
+            "title": "Do Trading with my mother"
+          },
+          {
+            "measurable": "Complete the habit every day.",
+            "relevant": "Builds consistency toward your goals.",
+            "specific": "score 100% in ipm exam — every day, 15 minutes each",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "status": "not_started",
+            "tasksCompleted": 5,
+            "tasksTotal": 5,
+            "title": "Score 100% In IPM Exam"
+          }
+        ],
+        "habits": [
+          {
+            "completedCount": 5,
+            "consistencyPercent": 71,
+            "expectedCount": 7,
+            "howToPractice": "How you'll practice it",
+            "name": "Do 1 Germany lesson on Duolingo.",
+            "sprintEndDate": "2026-01-20",
+            "sprintId": "kh7bspbvkqrdq81xzvwv9nj6617z4xxv",
+            "sprintName": "Sprint test 1",
+            "sprintStartDate": "2026-01-14",
+            "whatIsHabit": "German"
+          },
+          {
+            "completedCount": 5,
+            "consistencyPercent": 71,
+            "expectedCount": 7,
+            "howToPractice": "How you'll practice it",
+            "name": "Get the daily night report everyday.",
+            "sprintEndDate": "2026-01-20",
+            "sprintId": "kh7bspbvkqrdq81xzvwv9nj6617z4xxv",
+            "sprintName": "Sprint test 1",
+            "sprintStartDate": "2026-01-14",
+            "whatIsHabit": "Reporting"
+          },
+          {
+            "completedCount": 5,
+            "consistencyPercent": 71,
+            "expectedCount": 7,
+            "howToPractice": "How you'll practice it",
+            "name": "Do coursive",
+            "sprintEndDate": "2026-01-20",
+            "sprintId": "kh7bspbvkqrdq81xzvwv9nj6617z4xxv",
+            "sprintName": "Sprint test 1",
+            "sprintStartDate": "2026-01-14",
+            "whatIsHabit": "German"
+          },
+          {
+            "completedCount": 7,
+            "consistencyPercent": 88,
+            "expectedCount": 8,
+            "howToPractice": "How you'll practice it",
+            "name": "AI FREIND",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "whatIsHabit": "Do coursive"
+          },
+          {
+            "completedCount": 7,
+            "consistencyPercent": 88,
+            "expectedCount": 8,
+            "howToPractice": "How you'll practice it",
+            "name": "Nighty",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "whatIsHabit": "Night Report"
+          },
+          {
+            "completedCount": 7,
+            "consistencyPercent": 88,
+            "expectedCount": 8,
+            "howToPractice": "How you'll practice it",
+            "name": "Hindu",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "whatIsHabit": "Write Hindi Words"
+          },
+          {
+            "completedCount": 10,
+            "consistencyPercent": 67,
+            "expectedCount": 15,
+            "howToPractice": "How you'll practice it",
+            "name": "Coursive",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "whatIsHabit": "Do 2 Coursive lessons"
+          },
+          {
+            "completedCount": 10,
+            "consistencyPercent": 67,
+            "expectedCount": 15,
+            "howToPractice": "How you'll practice it",
+            "name": "Trade Treat",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "whatIsHabit": "Do trading practice"
+          },
+          {
+            "completedCount": 10,
+            "consistencyPercent": 67,
+            "expectedCount": 15,
+            "howToPractice": "How you'll practice it",
+            "name": "Eedi!!",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "whatIsHabit": "Do Eedi lessons"
+          }
+        ],
+        "sprintNames": [
+          "Sprint test 1",
+          "Sprint trial 2",
+          "Sprint Trial 3"
+        ],
+        "studentId": "kx71kj3gyxwhf004fcw38d078n7z1vsh",
+        "username": "aria"
+      },
+      "draft": {
+        "couldImprove": "The student needs to collect the 9 p.m. night report every day to prevent billing errors and provide clear staff direction.",
+        "goalHabit": "Strengthen the daily night-report habit to 100% consistency.",
+        "wentWell": "The child finished 88% of all sprint tasks and maintained 73% habit consistency, with perfect completion of trading practice and Hindi sessions."
+      }
+    },
+    {
+      "batch": "2153",
+      "displayName": "Dev",
+      "username": "dev",
+      "evidence": {
+        "batch": "2153",
+        "derived": {
+          "completedGoals": 0,
+          "completedTasks": 0,
+          "focusCandidates": [
+            "Drink 2l Daily",
+            "Reconnect With Special Friend",
+            "Start Going Outside"
+          ],
+          "habitConsistencyPercent": 0,
+          "inProgressGoals": 0,
+          "strongestCompletedFocus": null,
+          "taskCompletionPercent": 0,
+          "totalGoals": 5,
+          "totalHabitCompletions": 0,
+          "totalHabitExpected": 0,
+          "totalHabits": 0,
+          "totalTasks": 30,
+          "weakestFollowThrough": "Drink 2L Daily"
+        },
+        "displayName": "Dev",
+        "goals": [
+          {
+            "measurable": "Finish 2 full bottles (2L total) tracked by refills",
+            "relevant": "Helps with dry lips and overall hydration",
+            "specific": "Drink 2 liters of water each day using my 1L bottle",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 6,
+            "title": "Drink 2L Daily"
+          },
+          {
+            "measurable": "2-3 meetups completed",
+            "relevant": "I really like her and want to build our friendship",
+            "specific": "Meet up with my friend 2-3 times this week",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 4,
+            "title": "Reconnect with special friend"
+          },
+          {
+            "measurable": "Finish 2 full bottles (2L total) tracked by refills",
+            "relevant": "Helps with dry lips and overall hydration",
+            "specific": "Drink 2 liters of water each day using my 1L bottle",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 6,
+            "title": "Drink 2L Daily"
+          },
+          {
+            "measurable": "2-3 meetups completed",
+            "relevant": "I really like her and want to build our friendship",
+            "specific": "Meet up with my friend 2-3 times this week",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 4,
+            "title": "Reconnect with special friend"
+          },
+          {
+            "measurable": "Complete the habit on weekdays.",
+            "relevant": "Builds consistency toward your goals.",
+            "specific": "start going outside exercise — on weekdays, 45 minutes each",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 10,
+            "title": "Start Going Outside"
+          }
+        ],
+        "habits": [],
+        "sprintNames": [
+          "Sprint test 1",
+          "Sprint trial 2",
+          "Sprint Trial 3"
+        ],
+        "studentId": "kx71zgzg8qadksrjychszek7bh7z06vc",
+        "username": "dev"
+      },
+      "draft": {
+        "couldImprove": "The student needs to begin tracking daily refills to convert the goal into consistent action.",
+        "goalHabit": "Drink 2L Daily",
+        "wentWell": "The child set a clear, measurable hydration goal and recognized its personal relevance for relieving dry lips."
+      }
+    },
+    {
+      "batch": "2153",
+      "displayName": "Ibrahim",
+      "username": "ibrahim",
+      "evidence": {
+        "batch": "2153",
+        "derived": {
+          "completedGoals": 0,
+          "completedTasks": 0,
+          "focusCandidates": [
+            "Finish Kay S Marvellous Medicine"
+          ],
+          "habitConsistencyPercent": 0,
+          "inProgressGoals": 0,
+          "strongestCompletedFocus": null,
+          "taskCompletionPercent": 0,
+          "totalGoals": 1,
+          "totalHabitCompletions": 0,
+          "totalHabitExpected": 0,
+          "totalHabits": 0,
+          "totalTasks": 7,
+          "weakestFollowThrough": "Finish Kay's Marvellous Medicine"
+        },
+        "displayName": "Ibrahim",
+        "goals": [
+          {
+            "measurable": "Complete the entire book by tracking daily page count",
+            "relevant": "Continue enjoying the series after loving the first book",
+            "specific": "Read all 509 pages of Kay's Marvellous Medicine",
+            "sprintEndDate": "2026-01-20",
+            "sprintId": "kh7bspbvkqrdq81xzvwv9nj6617z4xxv",
+            "sprintName": "Sprint test 1",
+            "sprintStartDate": "2026-01-14",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 7,
+            "title": "Finish Kay's Marvellous Medicine"
+          }
+        ],
+        "habits": [],
+        "sprintNames": [
+          "Sprint test 1",
+          "Sprint trial 2",
+          "Sprint Trial 3"
+        ],
+        "studentId": "kx7b60pg3dk7441he6nysjt2k97z1548",
+        "username": "ibrahim"
+      },
+      "draft": {
+        "couldImprove": "The child should begin daily reading to reach the 509-page target by 20 Jan.",
+        "goalHabit": "Finish reading Kay's Marvellous Medicine",
+        "wentWell": "The child selected an engaging goal tied to a series they enjoy."
+      }
+    },
+    {
+      "batch": "2153",
+      "displayName": "Jagaraam",
+      "username": "jagaraam",
+      "evidence": {
+        "batch": "2153",
+        "derived": {
+          "completedGoals": 0,
+          "completedTasks": 4,
+          "focusCandidates": [
+            "Finish Reading Holes",
+            "Do Excersise",
+            "20 Pages Reading"
+          ],
+          "habitConsistencyPercent": 0,
+          "inProgressGoals": 0,
+          "strongestCompletedFocus": null,
+          "taskCompletionPercent": 8,
+          "totalGoals": 6,
+          "totalHabitCompletions": 0,
+          "totalHabitExpected": 0,
+          "totalHabits": 0,
+          "totalTasks": 51,
+          "weakestFollowThrough": "Finish reading Holes"
+        },
+        "displayName": "Jagaraam",
+        "goals": [
+          {
+            "measurable": "50 pages read and book finished",
+            "relevant": "It's a fun way to relax and pass time",
+            "specific": "Complete the remaining 50 pages of Holes by Louis Sachar",
+            "sprintEndDate": "2026-01-20",
+            "sprintId": "kh7bspbvkqrdq81xzvwv9nj6617z4xxv",
+            "sprintName": "Sprint test 1",
+            "sprintStartDate": "2026-01-14",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 7,
+            "title": "Finish reading Holes"
+          },
+          {
+            "measurable": "50 pages read and book finished",
+            "relevant": "It's a fun way to relax and pass time",
+            "specific": "Complete the remaining 50 pages of Holes by Louis Sachar",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 1,
+            "tasksTotal": 5,
+            "title": "Finish reading Holes"
+          },
+          {
+            "measurable": "Present in class on Wednesday",
+            "relevant": "Getting back to studies on time",
+            "specific": "Travel back from Nainital and attend school on Wednesday",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 3,
+            "title": "Return to school Wednesday"
+          },
+          {
+            "measurable": "Complete the habit every day.",
+            "relevant": "Builds consistency toward your goals.",
+            "specific": "do excersise — every day, 30 minutes each",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "status": "not_started",
+            "tasksCompleted": 1,
+            "tasksTotal": 12,
+            "title": "Do Excersise"
+          },
+          {
+            "measurable": "Complete the habit every day.",
+            "relevant": "Builds consistency toward your goals.",
+            "specific": "read 20 pages — every day, 1 hour each",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "status": "not_started",
+            "tasksCompleted": 1,
+            "tasksTotal": 12,
+            "title": "20 Pages Reading"
+          },
+          {
+            "measurable": "Complete the habit every day.",
+            "relevant": "Builds consistency toward your goals.",
+            "specific": "attend classes — every day, 1 hour each",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "status": "not_started",
+            "tasksCompleted": 1,
+            "tasksTotal": 12,
+            "title": "Attend Classes"
+          }
+        ],
+        "habits": [],
+        "sprintNames": [
+          "Sprint test 1",
+          "Sprint trial 2",
+          "Sprint Trial 3"
+        ],
+        "studentId": "kx70h90xft1c0x0db0pm28fn6h7z0hqd",
+        "username": "jagaraam"
+      },
+      "draft": {
+        "couldImprove": "Increase daily follow-through, as only 1 of 12 expected reading sessions were completed.",
+        "goalHabit": "Establish a consistent daily reading habit of 20 pages.",
+        "wentWell": "The child logged one completed reading session in Sprint Trial 3, showing initial engagement with the new habit."
+      }
+    },
+    {
+      "batch": "2153",
+      "displayName": "Johan",
+      "username": "johan",
+      "evidence": {
+        "batch": "2153",
+        "derived": {
+          "completedGoals": 0,
+          "completedTasks": 0,
+          "focusCandidates": [
+            "Drink Water Do Duolingo",
+            "Do Duolingo",
+            "Finish Building Cardboard Car In 2 Weeks"
+          ],
+          "habitConsistencyPercent": 38,
+          "inProgressGoals": 0,
+          "strongestCompletedFocus": "drink water do duolingo",
+          "taskCompletionPercent": 0,
+          "totalGoals": 8,
+          "totalHabitCompletions": 3,
+          "totalHabitExpected": 8,
+          "totalHabits": 1,
+          "totalTasks": 55,
+          "weakestFollowThrough": "do duolingo"
+        },
+        "displayName": "Johan",
+        "goals": [
+          {
+            "measurable": "if i did everything correct for 15 mins",
+            "relevant": "learning french means going to paris",
+            "specific": "do french for 15 mins",
+            "sprintEndDate": "2026-01-20",
+            "sprintId": "kh7bspbvkqrdq81xzvwv9nj6617z4xxv",
+            "sprintName": "Sprint test 1",
+            "sprintStartDate": "2026-01-14",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 4,
+            "title": "do duolingo"
+          },
+          {
+            "measurable": "Successfully identify and record 5 distinct bird species with their names",
+            "relevant": "Trying something new like bird watching brings joy and connects you with nature",
+            "specific": "Watch and identify 5 different bird species in your yard or nearby park",
+            "sprintEndDate": "2026-01-20",
+            "sprintId": "kh7bspbvkqrdq81xzvwv9nj6617z4xxv",
+            "sprintName": "Sprint test 1",
+            "sprintStartDate": "2026-01-14",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 5,
+            "title": "finish building cardboard car in 2 weeks"
+          },
+          {
+            "measurable": "14 consecutive days of completing at least one French lesson",
+            "relevant": "Building consistent French learning habit",
+            "specific": "Maintain a 14-day Duolingo streak learning French",
+            "sprintEndDate": "2026-01-20",
+            "sprintId": "kh7bspbvkqrdq81xzvwv9nj6617z4xxv",
+            "sprintName": "Sprint test 1",
+            "sprintStartDate": "2026-01-14",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 4,
+            "title": "14-Day French Streak"
+          },
+          {
+            "measurable": "Complete 15 minutes daily for 7 days",
+            "relevant": "Building French language skills",
+            "specific": "Practice French on Duolingo for 15 minutes",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 7,
+            "title": "15 min Duolingo French"
+          },
+          {
+            "measurable": "All three parts (roof, back, front) will be attached and the car will be structurally complete",
+            "relevant": "I want to finish this creative project I've been working on",
+            "specific": "Complete building the roof, back, and front of my cardboard car",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 8,
+            "title": "Finish Cardboard Car"
+          },
+          {
+            "measurable": "3 successful landings in a row",
+            "relevant": "Will feel extremely proud and accomplished",
+            "specific": "Successfully complete 3 consecutive ollies over the slab",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 8,
+            "title": "Land 3 slab ollies"
+          },
+          {
+            "measurable": "Complete 3 sessions per week.",
+            "relevant": "Builds consistency toward your goals.",
+            "specific": "do proper pro rock fakie — 3x per week, 1 hour each",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 6,
+            "title": "Do Proper Pro"
+          },
+          {
+            "measurable": "Complete the habit every day.",
+            "relevant": "Builds consistency toward your goals.",
+            "specific": "do french — every day, 15 minutes each",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 13,
+            "title": "Do French"
+          }
+        ],
+        "habits": [
+          {
+            "completedCount": 3,
+            "consistencyPercent": 38,
+            "expectedCount": 8,
+            "howToPractice": "How you'll practice it",
+            "name": "drink water do duolingo",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "whatIsHabit": "Define what this habit is"
+          }
+        ],
+        "sprintNames": [
+          "Sprint test 1",
+          "Sprint trial 2",
+          "Sprint Trial 3"
+        ],
+        "studentId": "kx7b4rtp7kezae45bwva1tqx6n7z1cxe",
+        "username": "johan"
+      },
+      "draft": {
+        "couldImprove": "Shift from planning to action by starting and tracking at least one French lesson this quarter.",
+        "goalHabit": "Establish a daily 15-minute Duolingo French routine",
+        "wentWell": "The child set clear, measurable French-learning goals across every sprint."
+      }
+    },
+    {
+      "batch": "2153",
+      "displayName": "Norah",
+      "username": "norah",
+      "evidence": {
+        "batch": "2153",
+        "derived": {
+          "completedGoals": 0,
+          "completedTasks": 32,
+          "focusCandidates": [
+            "Water Mission",
+            "Multi Sport Skill Sprint Copy",
+            "In Duolingo Do"
+          ],
+          "habitConsistencyPercent": 36,
+          "inProgressGoals": 0,
+          "strongestCompletedFocus": "Water Mission",
+          "taskCompletionPercent": 57,
+          "totalGoals": 4,
+          "totalHabitCompletions": 8,
+          "totalHabitExpected": 22,
+          "totalHabits": 2,
+          "totalTasks": 56,
+          "weakestFollowThrough": "Multi-Sport Skill Sprint"
+        },
+        "displayName": "Norah",
+        "goals": [
+          {
+            "measurable": "Move to advanced anime class, get positive mentor feedback on swimming skills, successfully execute smashes in badminton, complete 20 cycling laps",
+            "relevant": "Combining fun activities with skill improvement across multiple interests",
+            "specific": "Attend anime art class and level up, improve 3 swimming skills (backstroke dolphin kick, butterfly backstroke, diving), learn badminton smashes and beat dad, cycle 20 apartment laps",
+            "sprintEndDate": "2026-01-20",
+            "sprintId": "kh7bspbvkqrdq81xzvwv9nj6617z4xxv",
+            "sprintName": "Sprint test 1",
+            "sprintStartDate": "2026-01-14",
+            "status": "not_started",
+            "tasksCompleted": 7,
+            "tasksTotal": 14,
+            "title": "Multi-Sport Skill Sprint"
+          },
+          {
+            "measurable": "Move to advanced anime class, get positive mentor feedback on swimming skills, successfully execute smashes in badminton, complete 20 cycling laps",
+            "relevant": "Combining fun activities with skill improvement across multiple interests",
+            "specific": "Attend anime art class and level up, improve 3 swimming skills (backstroke dolphin kick, butterfly backstroke, diving), learn badminton smashes and beat dad, cycle 20 apartment laps",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 7,
+            "tasksTotal": 14,
+            "title": "Multi-Sport Skill Sprint (copy)"
+          },
+          {
+            "measurable": "Move to advanced anime class, get positive mentor feedback on swimming skills, successfully execute smashes in badminton, complete 20 cycling laps",
+            "relevant": "Combining fun activities with skill improvement across multiple interests",
+            "specific": "Attend anime art class and level up, improve 3 swimming skills (backstroke dolphin kick, butterfly backstroke, diving), learn badminton smashes and beat dad, cycle 20 apartment laps",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "status": "not_started",
+            "tasksCompleted": 9,
+            "tasksTotal": 14,
+            "title": "Multi-Sport Skill Sprint (copy)"
+          },
+          {
+            "measurable": "Complete the habit every day.",
+            "relevant": "Builds consistency toward your goals.",
+            "specific": "in duolingo do japanese — every day, 15 minutes each",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "status": "not_started",
+            "tasksCompleted": 9,
+            "tasksTotal": 14,
+            "title": "In Duolingo Do"
+          }
+        ],
+        "habits": [
+          {
+            "completedCount": 7,
+            "consistencyPercent": 100,
+            "expectedCount": 7,
+            "howToPractice": "How you'll practice it",
+            "name": "Water Mission",
+            "sprintEndDate": "2026-01-20",
+            "sprintId": "kh7bspbvkqrdq81xzvwv9nj6617z4xxv",
+            "sprintName": "Sprint test 1",
+            "sprintStartDate": "2026-01-14",
+            "whatIsHabit": "I would like to drink 5 litre's of water everyday"
+          },
+          {
+            "completedCount": 1,
+            "consistencyPercent": 7,
+            "expectedCount": 15,
+            "howToPractice": "How you'll practice it",
+            "name": "Water  mission",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "whatIsHabit": "I would like to drink litres a day"
+          }
+        ],
+        "sprintNames": [
+          "Sprint test 1",
+          "Sprint trial 2",
+          "Sprint Trial 3"
+        ],
+        "studentId": "kx7f620kkegn5vy7jxkyr5we297z07ym",
+        "username": "norah"
+      },
+      "draft": {
+        "couldImprove": "Consistency dropped sharply to 7% in Sprint Trial 3, so re-establishing the daily 5-litre routine is needed.",
+        "goalHabit": "Maintain daily hydration at 5 litres.",
+        "wentWell": "The child achieved perfect consistency on the first Water Mission sprint, hitting 5 litres every day."
+      }
+    },
+    {
+      "batch": "2153",
+      "displayName": "Rochi",
+      "username": "rochi",
+      "evidence": {
+        "batch": "2153",
+        "derived": {
+          "completedGoals": 0,
+          "completedTasks": 22,
+          "focusCandidates": [
+            "Reduce My Screen Time",
+            "Drink 1l Water Daily",
+            "Drink Water"
+          ],
+          "habitConsistencyPercent": 37,
+          "inProgressGoals": 0,
+          "strongestCompletedFocus": "reduce my screen time",
+          "taskCompletionPercent": 61,
+          "totalGoals": 5,
+          "totalHabitCompletions": 11,
+          "totalHabitExpected": 30,
+          "totalHabits": 3,
+          "totalTasks": 36,
+          "weakestFollowThrough": "Drink 1L water daily"
+        },
+        "displayName": "Rochi",
+        "goals": [
+          {
+            "measurable": "Finish one full 1L bottle each day, tracking through smoother lips as confirmation",
+            "relevant": "Will help with dry lips and general hydration to feel better",
+            "specific": "Drink 1 liter of water throughout each day using a 1L water bottle",
+            "sprintEndDate": "2026-01-20",
+            "sprintId": "kh7bspbvkqrdq81xzvwv9nj6617z4xxv",
+            "sprintName": "Sprint test 1",
+            "sprintStartDate": "2026-01-14",
+            "status": "not_started",
+            "tasksCompleted": 1,
+            "tasksTotal": 5,
+            "title": "Drink 1L water daily"
+          },
+          {
+            "measurable": "Track 1L consumed daily",
+            "relevant": "Stay hydrated for better focus",
+            "specific": "Drink 1 liter of water every day",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 6,
+            "tasksTotal": 6,
+            "title": "Drink 1L water daily"
+          },
+          {
+            "measurable": "1 ratio sections completed daily",
+            "relevant": "Building core math foundation",
+            "specific": "Finish 1 parts of ratios material each day",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 3,
+            "tasksTotal": 5,
+            "title": "Complete ratio sections daily"
+          },
+          {
+            "measurable": "Complete the habit every day.",
+            "relevant": "Builds consistency toward your goals.",
+            "specific": "drink water — every day, 1 hour each",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "status": "not_started",
+            "tasksCompleted": 7,
+            "tasksTotal": 10,
+            "title": "Drink Water"
+          },
+          {
+            "measurable": "Complete the habit every day.",
+            "relevant": "Builds consistency toward your goals.",
+            "specific": "visual algebra — every day, 45 minutes each",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "status": "not_started",
+            "tasksCompleted": 5,
+            "tasksTotal": 10,
+            "title": "Visual Algebra"
+          }
+        ],
+        "habits": [
+          {
+            "completedCount": 1,
+            "consistencyPercent": 14,
+            "expectedCount": 7,
+            "howToPractice": "How you'll practice it",
+            "name": "reduce my screen time",
+            "sprintEndDate": "2026-01-20",
+            "sprintId": "kh7bspbvkqrdq81xzvwv9nj6617z4xxv",
+            "sprintName": "Sprint test 1",
+            "sprintStartDate": "2026-01-14",
+            "whatIsHabit": "Define what this habit is"
+          },
+          {
+            "completedCount": 1,
+            "consistencyPercent": 13,
+            "expectedCount": 8,
+            "howToPractice": "How you'll practice it",
+            "name": "reduce my screen time",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "whatIsHabit": "Define what this habit is"
+          },
+          {
+            "completedCount": 9,
+            "consistencyPercent": 60,
+            "expectedCount": 15,
+            "howToPractice": "How you'll practice it",
+            "name": "reduce my screen time",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "whatIsHabit": "reduce my screen time by an hour"
+          }
+        ],
+        "sprintNames": [
+          "Sprint test 1",
+          "Sprint trial 2",
+          "Sprint Trial 3"
+        ],
+        "studentId": "kx729vwjsk3szdjvvc6dfk82fs7z07xm",
+        "username": "rochi"
+      },
+      "draft": {
+        "couldImprove": "The child still finishes only 61% of hydration tasks, so setting phone reminders and keeping the 1L bottle in sight could raise daily completion.",
+        "goalHabit": "Drink 1L water daily",
+        "wentWell": "The student completed 7 of 10 water-drinking tasks in Sprint Trial 3, showing steady improvement. Consistency rose from 14% to 60% across the quarter."
+      }
+    },
+    {
+      "batch": "2156",
+      "displayName": "Aadithya",
+      "username": "aadithya",
+      "evidence": {
+        "batch": "2156",
+        "derived": {
+          "completedGoals": 0,
+          "completedTasks": 0,
+          "focusCandidates": [
+            "Writing Journal",
+            "Basketball",
+            "Minecraft"
+          ],
+          "habitConsistencyPercent": 53,
+          "inProgressGoals": 0,
+          "strongestCompletedFocus": "writing journal",
+          "taskCompletionPercent": 0,
+          "totalGoals": 4,
+          "totalHabitCompletions": 17,
+          "totalHabitExpected": 32,
+          "totalHabits": 4,
+          "totalTasks": 25,
+          "weakestFollowThrough": "Build Treasure Hunt Game"
+        },
+        "displayName": "Aadithya",
+        "goals": [
+          {
+            "measurable": "Complete game with main menu, 3 grid sizes (3x3, 5x5, 9x9), hot/cold feedback, score system, and game loop",
+            "relevant": "Practice loops and variables while building something fun to share with friends",
+            "specific": "Create a Python treasure hunt game with 3 difficulty levels, score tracking, and replay functionality",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 6,
+            "title": "Build Treasure Hunt Game"
+          },
+          {
+            "measurable": "Both progress bars changed from orange to blue",
+            "relevant": "Required for class assignment",
+            "specific": "Get both addition and subtraction bars to blue (mastered) level in Alcumus",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 7,
+            "title": "Master Alcumus Addition/Subtraction"
+          },
+          {
+            "measurable": "Reach the halfway point of the book (approximately 150 pages)",
+            "relevant": "Wants to read more and chose this book to enjoy",
+            "specific": "Read the first half of 'Immune' by Philipp Dettmer",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 7,
+            "title": "Read Half of Immune"
+          },
+          {
+            "measurable": "Video completed, posted to YouTube, and achieves 50 views",
+            "relevant": "Creates educational content about cultural heritage",
+            "specific": "Edit and post a 10-minute educational video about Pongal's history with effects, animations, graphics, and voiceover",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 5,
+            "title": "Create Pongal History Video"
+          }
+        ],
+        "habits": [
+          {
+            "completedCount": 4,
+            "consistencyPercent": 50,
+            "expectedCount": 8,
+            "howToPractice": "How you'll practice it",
+            "name": "Basketball",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "whatIsHabit": "Define what this habit is"
+          },
+          {
+            "completedCount": 3,
+            "consistencyPercent": 38,
+            "expectedCount": 8,
+            "howToPractice": "How you'll practice it",
+            "name": "Minecraft",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "whatIsHabit": "Define what this habit is"
+          },
+          {
+            "completedCount": 3,
+            "consistencyPercent": 38,
+            "expectedCount": 8,
+            "howToPractice": "How you'll practice it",
+            "name": "Coding",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "whatIsHabit": "Define what this habit is"
+          },
+          {
+            "completedCount": 7,
+            "consistencyPercent": 88,
+            "expectedCount": 8,
+            "howToPractice": "How you'll practice it",
+            "name": "writing journal",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "whatIsHabit": "Test For Fun to check if this platform is working."
+          }
+        ],
+        "sprintNames": [
+          "Sprint test 1",
+          "Sprint trial 2",
+          "Sprint Trial 3"
+        ],
+        "studentId": "kx7e1pfahm5zken81fhbp70gpn7z0jyc",
+        "username": "aadithya"
+      },
+      "draft": {
+        "couldImprove": "No coding, math, reading, or video-creation tasks were started, so the child should break each goal into smaller daily actions.",
+        "goalHabit": "Establish a daily coding routine to progress on the Treasure Hunt Game.",
+        "wentWell": "The student maintained 88 % consistency in journal writing, showing strong follow-through on personal reflection."
+      }
+    },
+    {
+      "batch": "2156",
+      "displayName": "Aarav",
+      "username": "aarav",
+      "evidence": {
+        "batch": "2156",
+        "derived": {
+          "completedGoals": 0,
+          "completedTasks": 0,
+          "focusCandidates": [
+            "Get Dragon Talon In Blox Fruits"
+          ],
+          "habitConsistencyPercent": 0,
+          "inProgressGoals": 0,
+          "strongestCompletedFocus": null,
+          "taskCompletionPercent": 0,
+          "totalGoals": 1,
+          "totalHabitCompletions": 0,
+          "totalHabitExpected": 0,
+          "totalHabits": 0,
+          "totalTasks": 6,
+          "weakestFollowThrough": "Get Dragon Talon in Blox Fruits"
+        },
+        "displayName": "Aarav",
+        "goals": [
+          {
+            "measurable": "Successfully get at least 1 fire essence drop from boss rolls",
+            "relevant": "Unlocks powerful dragon talon moves you've been working toward",
+            "specific": "Obtain fire essence through 50-bone rolls to unlock dragon talon fighting style",
+            "sprintEndDate": "2026-01-20",
+            "sprintId": "kh7bspbvkqrdq81xzvwv9nj6617z4xxv",
+            "sprintName": "Sprint test 1",
+            "sprintStartDate": "2026-01-14",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 6,
+            "title": "Get Dragon Talon in Blox Fruits"
+          }
+        ],
+        "habits": [],
+        "sprintNames": [
+          "Sprint test 1",
+          "Sprint trial 2",
+          "Sprint Trial 3"
+        ],
+        "studentId": "kx72kaa9x13c665scktwak77bx7z1ef7",
+        "username": "aarav"
+      },
+      "draft": {
+        "couldImprove": "The student has not started any tasks toward this goal, so progress needs to be initiated.",
+        "goalHabit": "Get Dragon Talon in Blox Fruits",
+        "wentWell": "The child has a clear goal to obtain fire essence through 50-bone rolls to unlock dragon talon fighting style. The goal is specific and relevant to unlocking powerful moves."
+      }
+    },
+    {
+      "batch": "2156",
+      "displayName": "Krishna",
+      "username": "krishna",
+      "evidence": {
+        "batch": "2156",
+        "derived": {
+          "completedGoals": 0,
+          "completedTasks": 0,
+          "focusCandidates": [],
+          "habitConsistencyPercent": 0,
+          "inProgressGoals": 0,
+          "strongestCompletedFocus": null,
+          "taskCompletionPercent": 0,
+          "totalGoals": 0,
+          "totalHabitCompletions": 0,
+          "totalHabitExpected": 0,
+          "totalHabits": 0,
+          "totalTasks": 0,
+          "weakestFollowThrough": null
+        },
+        "displayName": "Krishna",
+        "goals": [],
+        "habits": [],
+        "sprintNames": [
+          "Sprint test 1",
+          "Sprint trial 2",
+          "Sprint Trial 3"
+        ],
+        "studentId": "kx7e513ray7g9afz66wrhnsqvd7z1xws",
+        "username": "krishna"
+      },
+      "draft": {
+        "couldImprove": "The child should select at least one personal goal or habit to start tracking progress this quarter.",
+        "goalHabit": "Establish a consistent weekly habit to build routine and engagement.",
+        "wentWell": "The child has enrolled and is present in the system, ready to begin setting goals and habits."
+      }
+    },
+    {
+      "batch": "2156",
+      "displayName": "Riya",
+      "username": "riya",
+      "evidence": {
+        "batch": "2156",
+        "derived": {
+          "completedGoals": 0,
+          "completedTasks": 10,
+          "focusCandidates": [
+            "Do 8 Blocks Of Xseed",
+            "Finish A 400 Paged Book",
+            "Classes Homework 6 00 7 00"
+          ],
+          "habitConsistencyPercent": 19,
+          "inProgressGoals": 0,
+          "strongestCompletedFocus": "Classes’ Homework 6:00 - 7:00",
+          "taskCompletionPercent": 37,
+          "totalGoals": 4,
+          "totalHabitCompletions": 14,
+          "totalHabitExpected": 72,
+          "totalHabits": 9,
+          "totalTasks": 27,
+          "weakestFollowThrough": "Do 8 Blocks of Xseed"
+        },
+        "displayName": "Riya",
+        "goals": [
+          {
+            "measurable": "2 books completed",
+            "relevant": "Keeps pace with curriculum",
+            "specific": "Read at least 2 books from the SQ reading list",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 4,
+            "tasksTotal": 8,
+            "title": "Do 8 Blocks of Xseed"
+          },
+          {
+            "measurable": "2 books finished by end of sprint",
+            "relevant": "Builds knowledge and reading habit",
+            "specific": "Read 2 complete books",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 5,
+            "tasksTotal": 10,
+            "title": "Read 2 Books in this sprint"
+          },
+          {
+            "measurable": "2 books completed",
+            "relevant": "Keeps pace with curriculum",
+            "specific": "Read at least 2 books from the SQ reading list",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 8,
+            "title": "Do 8 Blocks of Xseed"
+          },
+          {
+            "measurable": "2 books finished by end of sprint",
+            "relevant": "Builds knowledge and reading habit",
+            "specific": "Read 2 complete books",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "status": "not_started",
+            "tasksCompleted": 1,
+            "tasksTotal": 1,
+            "title": "Finish a 400 paged book"
+          }
+        ],
+        "habits": [
+          {
+            "completedCount": 1,
+            "consistencyPercent": 13,
+            "expectedCount": 8,
+            "howToPractice": "How you'll practice it",
+            "name": "Wake up early 8:30",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "whatIsHabit": "Define what this habit is"
+          },
+          {
+            "completedCount": 0,
+            "consistencyPercent": 0,
+            "expectedCount": 8,
+            "howToPractice": "How you'll practice it",
+            "name": "Study 8:00 - 8:45",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "whatIsHabit": "Define what this habit is"
+          },
+          {
+            "completedCount": 1,
+            "consistencyPercent": 13,
+            "expectedCount": 8,
+            "howToPractice": "How you'll practice it",
+            "name": "Study 4:00 - 5:00",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "whatIsHabit": "Define what this habit is"
+          },
+          {
+            "completedCount": 2,
+            "consistencyPercent": 25,
+            "expectedCount": 8,
+            "howToPractice": "How you'll practice it",
+            "name": "Classes’ Homework 6:00 - 7:00",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "whatIsHabit": "Define what this habit is"
+          },
+          {
+            "completedCount": 2,
+            "consistencyPercent": 25,
+            "expectedCount": 8,
+            "howToPractice": "How you'll practice it",
+            "name": "Eat 8:30 - 8:50",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "whatIsHabit": "Define what this habit is"
+          },
+          {
+            "completedCount": 2,
+            "consistencyPercent": 25,
+            "expectedCount": 8,
+            "howToPractice": "How you'll practice it",
+            "name": "Brush my teeth",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "whatIsHabit": "Define what this habit is"
+          },
+          {
+            "completedCount": 2,
+            "consistencyPercent": 25,
+            "expectedCount": 8,
+            "howToPractice": "How you'll practice it",
+            "name": "Do Journal",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "whatIsHabit": "Define what this habit is"
+          },
+          {
+            "completedCount": 2,
+            "consistencyPercent": 25,
+            "expectedCount": 8,
+            "howToPractice": "How you'll practice it",
+            "name": "Sleep 9:30",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "whatIsHabit": "Define what this habit is"
+          },
+          {
+            "completedCount": 2,
+            "consistencyPercent": 25,
+            "expectedCount": 8,
+            "howToPractice": "How you'll practice it",
+            "name": "Drink 1 liter of Water",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "whatIsHabit": "Define what this habit is"
+          }
+        ],
+        "sprintNames": [
+          "Sprint test 1",
+          "Sprint trial 2",
+          "Sprint Trial 3"
+        ],
+        "studentId": "kx7312pffkeep0nrh5426wrze97z1anp",
+        "username": "riya"
+      },
+      "draft": {
+        "couldImprove": "The 'Do 8 Blocks of Xseed' goal has the weakest follow-through, with only 4 out of 8 tasks completed in Sprint trial 2 and 0 out of 8 in Sprint Trial 3.",
+        "goalHabit": "Read 2 books from the SQ reading list",
+        "wentWell": "The student completed 10 out of 27 tasks, achieving a 37% task completion rate. The 'Classes’ Homework 6:00 - 7:00' habit was the strongest, with 2 out of 8 completions."
+      }
+    },
+    {
+      "batch": "2156",
+      "displayName": "Test Student",
+      "username": "student1",
+      "evidence": {
+        "batch": "2156",
+        "derived": {
+          "completedGoals": 0,
+          "completedTasks": 11,
+          "focusCandidates": [
+            "Example",
+            "Test",
+            "Di"
+          ],
+          "habitConsistencyPercent": 40,
+          "inProgressGoals": 0,
+          "strongestCompletedFocus": "Example",
+          "taskCompletionPercent": 17,
+          "totalGoals": 9,
+          "totalHabitCompletions": 18,
+          "totalHabitExpected": 45,
+          "totalHabits": 5,
+          "totalTasks": 66,
+          "weakestFollowThrough": "Piano Practice"
+        },
+        "displayName": "Test Student",
+        "goals": [
+          {
+            "measurable": "x\n",
+            "relevant": "xx",
+            "specific": "x",
+            "sprintEndDate": "2026-01-20",
+            "sprintId": "kh7bspbvkqrdq81xzvwv9nj6617z4xxv",
+            "sprintName": "Sprint test 1",
+            "sprintStartDate": "2026-01-14",
+            "status": "not_started",
+            "tasksCompleted": 3,
+            "tasksTotal": 6,
+            "title": "x"
+          },
+          {
+            "measurable": "Track daily completion of 2L before class starts",
+            "relevant": "Improves my health and energy for the day",
+            "specific": "Drink 2 liters of water every morning before class",
+            "sprintEndDate": "2026-01-20",
+            "sprintId": "kh7bspbvkqrdq81xzvwv9nj6617z4xxv",
+            "sprintName": "Sprint test 1",
+            "sprintStartDate": "2026-01-14",
+            "status": "not_started",
+            "tasksCompleted": 2,
+            "tasksTotal": 5,
+            "title": "Morning Hydration Habit"
+          },
+          {
+            "measurable": "Complete the habit on weekends.",
+            "relevant": "Builds consistency toward your goals.",
+            "specific": "practice piano — on weekends, 30 minutes each",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 4,
+            "title": "Piano Practice"
+          },
+          {
+            "measurable": "Complete the habit on weekdays.",
+            "relevant": "Builds consistency toward your goals.",
+            "specific": "read my book — on weekdays after school, 1 hour each",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 10,
+            "title": "My Book Reading"
+          },
+          {
+            "measurable": "Complete the habit on mon.",
+            "relevant": "Builds consistency toward your goals.",
+            "specific": "practise piano — on mon, 1 hour each",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 2,
+            "tasksTotal": 2,
+            "title": "Practise Piano"
+          },
+          {
+            "measurable": "Complete the habit every day.",
+            "relevant": "Builds consistency toward your goals.",
+            "specific": "eat breakfast — every day, 15 minutes each",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "status": "not_started",
+            "tasksCompleted": 1,
+            "tasksTotal": 14,
+            "title": "Morning Breakfast"
+          },
+          {
+            "measurable": "Complete the habit on weekdays.",
+            "relevant": "Builds consistency toward your goals.",
+            "specific": "a goal — on weekdays, 15 minutes each",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "status": "not_started",
+            "tasksCompleted": 2,
+            "tasksTotal": 10,
+            "title": "A Goal"
+          },
+          {
+            "measurable": "Complete 3 sessions per week.",
+            "relevant": "Builds consistency toward your goals.",
+            "specific": "hawutvh and swim and run and doa big diipper — 3x per week, 15 minutes each",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 6,
+            "title": "Hawutvh And Swim"
+          },
+          {
+            "measurable": "Complete the habit on weekdays.",
+            "relevant": "Builds consistency toward your goals.",
+            "specific": "run — on weekdays, 30 minutes each",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "status": "not_started",
+            "tasksCompleted": 1,
+            "tasksTotal": 9,
+            "title": "Running"
+          }
+        ],
+        "habits": [
+          {
+            "completedCount": 4,
+            "consistencyPercent": 57,
+            "expectedCount": 7,
+            "howToPractice": "di",
+            "name": "di",
+            "sprintEndDate": "2026-01-20",
+            "sprintId": "kh7bspbvkqrdq81xzvwv9nj6617z4xxv",
+            "sprintName": "Sprint test 1",
+            "sprintStartDate": "2026-01-14",
+            "whatIsHabit": "di"
+          },
+          {
+            "completedCount": 5,
+            "consistencyPercent": 71,
+            "expectedCount": 7,
+            "howToPractice": "How you'll practice it",
+            "name": "Example",
+            "sprintEndDate": "2026-01-20",
+            "sprintId": "kh7bspbvkqrdq81xzvwv9nj6617z4xxv",
+            "sprintName": "Sprint test 1",
+            "sprintStartDate": "2026-01-14",
+            "whatIsHabit": "Define what this habit is"
+          },
+          {
+            "completedCount": 5,
+            "consistencyPercent": 63,
+            "expectedCount": 8,
+            "howToPractice": "How you'll practice it",
+            "name": "Test",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "whatIsHabit": "Define what this habit is"
+          },
+          {
+            "completedCount": 3,
+            "consistencyPercent": 38,
+            "expectedCount": 8,
+            "howToPractice": "How you'll practice it",
+            "name": "drink",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "whatIsHabit": "Define what this habit is"
+          },
+          {
+            "completedCount": 1,
+            "consistencyPercent": 7,
+            "expectedCount": 15,
+            "howToPractice": "How you'll practice it",
+            "name": "die",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "whatIsHabit": "Define what this habit is"
+          }
+        ],
+        "sprintNames": [
+          "Sprint test 1",
+          "Sprint trial 2",
+          "Sprint Trial 3"
+        ],
+        "studentId": "kx782550q2w2d2r21vyyajb4qx7z3rfm",
+        "username": "student1"
+      },
+      "draft": {
+        "couldImprove": "The student could improve follow-through on Piano Practice, which has 0 tasks completed out of 4.",
+        "goalHabit": "Morning Hydration Habit",
+        "wentWell": "The student completed 2 out of 5 tasks for the Morning Hydration Habit in Sprint test 1. The Example habit had a 71% consistency rate."
+      }
+    },
+    {
+      "batch": "2156",
+      "displayName": "Vihaan",
+      "username": "vihaan",
+      "evidence": {
+        "batch": "2156",
+        "derived": {
+          "completedGoals": 0,
+          "completedTasks": 0,
+          "focusCandidates": [
+            "Do 3 Sets Dead Hang"
+          ],
+          "habitConsistencyPercent": 20,
+          "inProgressGoals": 0,
+          "strongestCompletedFocus": "Do 3 sets Dead Hang",
+          "taskCompletionPercent": 0,
+          "totalGoals": 0,
+          "totalHabitCompletions": 3,
+          "totalHabitExpected": 15,
+          "totalHabits": 1,
+          "totalTasks": 0,
+          "weakestFollowThrough": "Do 3 sets Dead Hang"
+        },
+        "displayName": "Vihaan",
+        "goals": [],
+        "habits": [
+          {
+            "completedCount": 3,
+            "consistencyPercent": 20,
+            "expectedCount": 15,
+            "howToPractice": "How you'll practice it",
+            "name": "Do 3 sets Dead Hang",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "whatIsHabit": "Define what this habit is"
+          }
+        ],
+        "sprintNames": [
+          "Sprint test 1",
+          "Sprint trial 2",
+          "Sprint Trial 3"
+        ],
+        "studentId": "kx7d0db9f0tyfhfze99hjmgjbs7z14jm",
+        "username": "vihaan"
+      },
+      "draft": {
+        "couldImprove": "Aim to increase consistency from 20 % to daily practice to strengthen grip effectively.",
+        "goalHabit": "Build grip strength through 3 sets of dead hangs",
+        "wentWell": "The child successfully completed 3 dead-hang sessions, showing initial engagement with the routine."
+      }
+    },
+    {
+      "batch": "2156",
+      "displayName": "Zara",
+      "username": "zara",
+      "evidence": {
+        "batch": "2156",
+        "derived": {
+          "completedGoals": 0,
+          "completedTasks": 3,
+          "focusCandidates": [
+            "Workout From Monday To Friday",
+            "Read 10 Pages Weekly",
+            "Workout Everyday"
+          ],
+          "habitConsistencyPercent": 9,
+          "inProgressGoals": 0,
+          "strongestCompletedFocus": "Workout from monday to friday",
+          "taskCompletionPercent": 11,
+          "totalGoals": 7,
+          "totalHabitCompletions": 2,
+          "totalHabitExpected": 23,
+          "totalHabits": 2,
+          "totalTasks": 28,
+          "weakestFollowThrough": "Learn Crochet Circle"
+        },
+        "displayName": "Zara",
+        "goals": [
+          {
+            "measurable": "10 lessons finished with at least 70% accuracy",
+            "relevant": "Want to understand angles for dancing and fashion design",
+            "specific": "Complete 10 Khan Academy lessons on angles",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 1,
+            "tasksTotal": 4,
+            "title": "Master 10 Angle Lessons"
+          },
+          {
+            "measurable": "Complete 10 pages total per week (5 pages each session)",
+            "relevant": "Develops regular reading practice and makes progress through a book",
+            "specific": "Read 5 pages on Monday and 5 pages on Thursday each week",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 2,
+            "tasksTotal": 4,
+            "title": "Read 10 Pages Weekly"
+          },
+          {
+            "measurable": "Successfully create 3 consistent circles, 4 inches in diameter",
+            "relevant": "Building foundational skill for future crochet projects",
+            "specific": "Learn to make a basic crochet circle using magic ring technique",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 4,
+            "title": "Learn Crochet Circle"
+          },
+          {
+            "measurable": "Complete the habit on mon, tue, fri.",
+            "relevant": "Builds consistency toward your goals.",
+            "specific": "khan math angles — on mon, tue, fri, 30 minutes each",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 6,
+            "title": "Khan Math Angles"
+          },
+          {
+            "measurable": "Complete the habit on wed, thu.",
+            "relevant": "Builds consistency toward your goals.",
+            "specific": "read 10 pages or more — on wed, thu, 30 minutes each",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 4,
+            "title": "10 Pages Or More Reading"
+          },
+          {
+            "measurable": "Complete the habit on mon.",
+            "relevant": "Builds consistency toward your goals.",
+            "specific": "read 5 pages or more — on mon, 15 minutes each",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 2,
+            "title": "5 Pages Or More Reading"
+          },
+          {
+            "measurable": "Complete the habit on sat, sun.",
+            "relevant": "Builds consistency toward your goals.",
+            "specific": "practice guitar — on sat, sun, 30 minutes each",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 4,
+            "title": "Guitar Practice"
+          }
+        ],
+        "habits": [
+          {
+            "completedCount": 2,
+            "consistencyPercent": 25,
+            "expectedCount": 8,
+            "howToPractice": "How you'll practice it",
+            "name": "Workout from monday to friday",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "whatIsHabit": "Define what this habit is"
+          },
+          {
+            "completedCount": 0,
+            "consistencyPercent": 0,
+            "expectedCount": 15,
+            "howToPractice": "How you'll practice it",
+            "name": "workout everyday",
+            "sprintEndDate": "2026-02-09",
+            "sprintId": "kh70a3d5sw6vh3th42w45v1ta1801xax",
+            "sprintName": "Sprint Trial 3",
+            "sprintStartDate": "2026-01-26",
+            "whatIsHabit": "Define what this habit is"
+          }
+        ],
+        "sprintNames": [
+          "Sprint test 1",
+          "Sprint trial 2",
+          "Sprint Trial 3"
+        ],
+        "studentId": "kx723pemq0d7rsp4tebaexbd5x7z14sk",
+        "username": "zara"
+      },
+      "draft": {
+        "couldImprove": "Increase consistency by scheduling specific workout times and tracking progress daily.",
+        "goalHabit": "Establish a consistent weekly workout routine",
+        "wentWell": "The child completed 2 out of 8 planned workouts in Sprint trial 2, showing initial engagement with the habit."
+      }
+    },
+    {
+      "batch": "2156",
+      "displayName": "Zuhayr",
+      "username": "zuhayr",
+      "evidence": {
+        "batch": "2156",
+        "derived": {
+          "completedGoals": 0,
+          "completedTasks": 0,
+          "focusCandidates": [
+            "Practice Nfo And Maths",
+            "Land Nollie Shove It",
+            "Perfect Cover Drive"
+          ],
+          "habitConsistencyPercent": 43,
+          "inProgressGoals": 0,
+          "strongestCompletedFocus": "Practice nfo and maths",
+          "taskCompletionPercent": 0,
+          "totalGoals": 2,
+          "totalHabitCompletions": 3,
+          "totalHabitExpected": 7,
+          "totalHabits": 1,
+          "totalTasks": 11,
+          "weakestFollowThrough": "Land Nollie Shove It"
+        },
+        "displayName": "Zuhayr",
+        "goals": [
+          {
+            "measurable": "Land the trick one solid time with both feet staying on the board",
+            "relevant": "Learning this trick will boost confidence and skateboarding skills",
+            "specific": "Successfully land a Nollie shove it skateboard trick",
+            "sprintEndDate": "2026-01-20",
+            "sprintId": "kh7bspbvkqrdq81xzvwv9nj6617z4xxv",
+            "sprintName": "Sprint test 1",
+            "sprintStartDate": "2026-01-14",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 6,
+            "title": "Land Nollie Shove It"
+          },
+          {
+            "measurable": "Record and review 10 practice swings daily, achieving consistent technique by end of sprint",
+            "relevant": "Builds confidence and satisfaction in favorite cricket shot",
+            "specific": "Master the bat swing technique for cover drives",
+            "sprintEndDate": "2026-01-26",
+            "sprintId": "kh7feg0d99vfa60wsq2072qykd7zg5dg",
+            "sprintName": "Sprint trial 2",
+            "sprintStartDate": "2026-01-19",
+            "status": "not_started",
+            "tasksCompleted": 0,
+            "tasksTotal": 5,
+            "title": "Perfect Cover Drive"
+          }
+        ],
+        "habits": [
+          {
+            "completedCount": 3,
+            "consistencyPercent": 43,
+            "expectedCount": 7,
+            "howToPractice": "How you'll practice it",
+            "name": "Practice nfo and maths",
+            "sprintEndDate": "2026-01-20",
+            "sprintId": "kh7bspbvkqrdq81xzvwv9nj6617z4xxv",
+            "sprintName": "Sprint test 1",
+            "sprintStartDate": "2026-01-14",
+            "whatIsHabit": "Define what this habit is"
+          }
+        ],
+        "sprintNames": [
+          "Sprint test 1",
+          "Sprint trial 2",
+          "Sprint Trial 3"
+        ],
+        "studentId": "kx7c51qq8cmxj21nqxn5nehvhn7z1wk8",
+        "username": "zuhayr"
+      },
+      "draft": {
+        "couldImprove": "Increase consistency to meet the daily practice target and strengthen the habit loop.",
+        "goalHabit": "Practice nfo and maths",
+        "wentWell": "The child logged 3 out of 7 expected habit sessions, showing some engagement with the routine."
+      }
+    }
+  ],
+  "results": [
+    {
+      "batch": "2153",
+      "student": "Adi",
+      "row": 59,
+      "column": "G",
+      "cell": "G59",
+      "field": "goalHabit",
+      "value": "Focus on completing one gaming or reading goal to build follow-through.",
+      "status": "written"
+    },
+    {
+      "batch": "2153",
+      "student": "Adi",
+      "row": 60,
+      "column": "G",
+      "cell": "G60",
+      "field": "wentWell",
+      "value": "The student set ambitious, measurable goals across gaming, reading, and fitness.",
+      "status": "written"
+    },
+    {
+      "batch": "2153",
+      "student": "Adi",
+      "row": 61,
+      "column": "G",
+      "cell": "G61",
+      "field": "couldImprove",
+      "value": "The child needs to begin task work so at least one goal moves past ‘not started’.",
+      "status": "written"
+    },
+    {
+      "batch": "2153",
+      "student": "Aria",
+      "row": 59,
+      "column": "C",
+      "cell": "C59",
+      "field": "goalHabit",
+      "value": "Strengthen the daily night-report habit to 100% consistency.",
+      "status": "written"
+    },
+    {
+      "batch": "2153",
+      "student": "Aria",
+      "row": 60,
+      "column": "C",
+      "cell": "C60",
+      "field": "wentWell",
+      "value": "The child finished 88% of all sprint tasks and maintained 73% habit consistency, with perfect completion of trading practice and Hindi sessions.",
+      "status": "written"
+    },
+    {
+      "batch": "2153",
+      "student": "Aria",
+      "row": 61,
+      "column": "C",
+      "cell": "C61",
+      "field": "couldImprove",
+      "value": "The student needs to collect the 9 p.m. night report every day to prevent billing errors and provide clear staff direction.",
+      "status": "written"
+    },
+    {
+      "batch": "2153",
+      "student": "Dev",
+      "row": 59,
+      "column": "F",
+      "cell": "F59",
+      "field": "goalHabit",
+      "value": "Drink 2L Daily",
+      "status": "written"
+    },
+    {
+      "batch": "2153",
+      "student": "Dev",
+      "row": 60,
+      "column": "F",
+      "cell": "F60",
+      "field": "wentWell",
+      "value": "The child set a clear, measurable hydration goal and recognized its personal relevance for relieving dry lips.",
+      "status": "written"
+    },
+    {
+      "batch": "2153",
+      "student": "Dev",
+      "row": 61,
+      "column": "F",
+      "cell": "F61",
+      "field": "couldImprove",
+      "value": "The student needs to begin tracking daily refills to convert the goal into consistent action.",
+      "status": "written"
+    },
+    {
+      "batch": "2153",
+      "student": "Ibrahim",
+      "row": 59,
+      "column": "J",
+      "cell": "J59",
+      "field": "goalHabit",
+      "value": "Finish reading Kay's Marvellous Medicine",
+      "status": "written"
+    },
+    {
+      "batch": "2153",
+      "student": "Ibrahim",
+      "row": 60,
+      "column": "J",
+      "cell": "J60",
+      "field": "wentWell",
+      "value": "The child selected an engaging goal tied to a series they enjoy.",
+      "status": "written"
+    },
+    {
+      "batch": "2153",
+      "student": "Ibrahim",
+      "row": 61,
+      "column": "J",
+      "cell": "J61",
+      "field": "couldImprove",
+      "value": "The child should begin daily reading to reach the 509-page target by 20 Jan.",
+      "status": "written"
+    },
+    {
+      "batch": "2153",
+      "student": "Jagaraam",
+      "row": 59,
+      "column": "H",
+      "cell": "H59",
+      "field": "goalHabit",
+      "value": "Establish a consistent daily reading habit of 20 pages.",
+      "status": "written"
+    },
+    {
+      "batch": "2153",
+      "student": "Jagaraam",
+      "row": 60,
+      "column": "H",
+      "cell": "H60",
+      "field": "wentWell",
+      "value": "The child logged one completed reading session in Sprint Trial 3, showing initial engagement with the new habit.",
+      "status": "written"
+    },
+    {
+      "batch": "2153",
+      "student": "Jagaraam",
+      "row": 61,
+      "column": "H",
+      "cell": "H61",
+      "field": "couldImprove",
+      "value": "Increase daily follow-through, as only 1 of 12 expected reading sessions were completed.",
+      "status": "written"
+    },
+    {
+      "batch": "2153",
+      "student": "Johan",
+      "row": 59,
+      "column": "I",
+      "cell": "I59",
+      "field": "goalHabit",
+      "value": "Establish a daily 15-minute Duolingo French routine",
+      "status": "written"
+    },
+    {
+      "batch": "2153",
+      "student": "Johan",
+      "row": 60,
+      "column": "I",
+      "cell": "I60",
+      "field": "wentWell",
+      "value": "The child set clear, measurable French-learning goals across every sprint.",
+      "status": "written"
+    },
+    {
+      "batch": "2153",
+      "student": "Johan",
+      "row": 61,
+      "column": "I",
+      "cell": "I61",
+      "field": "couldImprove",
+      "value": "Shift from planning to action by starting and tracking at least one French lesson this quarter.",
+      "status": "written"
+    },
+    {
+      "batch": "2153",
+      "student": "Norah",
+      "row": 59,
+      "column": "E",
+      "cell": "E59",
+      "field": "goalHabit",
+      "value": "Maintain daily hydration at 5 litres.",
+      "status": "written"
+    },
+    {
+      "batch": "2153",
+      "student": "Norah",
+      "row": 60,
+      "column": "E",
+      "cell": "E60",
+      "field": "wentWell",
+      "value": "The child achieved perfect consistency on the first Water Mission sprint, hitting 5 litres every day.",
+      "status": "written"
+    },
+    {
+      "batch": "2153",
+      "student": "Norah",
+      "row": 61,
+      "column": "E",
+      "cell": "E61",
+      "field": "couldImprove",
+      "value": "Consistency dropped sharply to 7% in Sprint Trial 3, so re-establishing the daily 5-litre routine is needed.",
+      "status": "written"
+    },
+    {
+      "batch": "2153",
+      "student": "Rochi",
+      "row": 59,
+      "column": "D",
+      "cell": "D59",
+      "field": "goalHabit",
+      "value": "Drink 1L water daily",
+      "status": "written"
+    },
+    {
+      "batch": "2153",
+      "student": "Rochi",
+      "row": 60,
+      "column": "D",
+      "cell": "D60",
+      "field": "wentWell",
+      "value": "The student completed 7 of 10 water-drinking tasks in Sprint Trial 3, showing steady improvement. Consistency rose from 14% to 60% across the quarter.",
+      "status": "written"
+    },
+    {
+      "batch": "2153",
+      "student": "Rochi",
+      "row": 61,
+      "column": "D",
+      "cell": "D61",
+      "field": "couldImprove",
+      "value": "The child still finishes only 61% of hydration tasks, so setting phone reminders and keeping the 1L bottle in sight could raise daily completion.",
+      "status": "written"
+    },
+    {
+      "batch": "2156",
+      "student": "Aadithya",
+      "row": 59,
+      "column": "G",
+      "cell": "G59",
+      "field": "goalHabit",
+      "value": "Establish a daily coding routine to progress on the Treasure Hunt Game.",
+      "status": "written"
+    },
+    {
+      "batch": "2156",
+      "student": "Aadithya",
+      "row": 60,
+      "column": "G",
+      "cell": "G60",
+      "field": "wentWell",
+      "value": "The student maintained 88 % consistency in journal writing, showing strong follow-through on personal reflection.",
+      "status": "written"
+    },
+    {
+      "batch": "2156",
+      "student": "Aadithya",
+      "row": 61,
+      "column": "G",
+      "cell": "G61",
+      "field": "couldImprove",
+      "value": "No coding, math, reading, or video-creation tasks were started, so the child should break each goal into smaller daily actions.",
+      "status": "written"
+    },
+    {
+      "batch": "2156",
+      "student": "Aarav",
+      "row": 59,
+      "column": "D",
+      "cell": "D59",
+      "field": "goalHabit",
+      "value": "Get Dragon Talon in Blox Fruits",
+      "status": "written"
+    },
+    {
+      "batch": "2156",
+      "student": "Aarav",
+      "row": 60,
+      "column": "D",
+      "cell": "D60",
+      "field": "wentWell",
+      "value": "The child has a clear goal to obtain fire essence through 50-bone rolls to unlock dragon talon fighting style. The goal is specific and relevant to unlocking powerful moves.",
+      "status": "written"
+    },
+    {
+      "batch": "2156",
+      "student": "Aarav",
+      "row": 61,
+      "column": "D",
+      "cell": "D61",
+      "field": "couldImprove",
+      "value": "The student has not started any tasks toward this goal, so progress needs to be initiated.",
+      "status": "written"
+    },
+    {
+      "batch": "2156",
+      "student": "Krishna",
+      "row": 59,
+      "column": "E",
+      "cell": "E59",
+      "field": "goalHabit",
+      "value": "Establish a consistent weekly habit to build routine and engagement.",
+      "status": "written"
+    },
+    {
+      "batch": "2156",
+      "student": "Krishna",
+      "row": 60,
+      "column": "E",
+      "cell": "E60",
+      "field": "wentWell",
+      "value": "The child has enrolled and is present in the system, ready to begin setting goals and habits.",
+      "status": "written"
+    },
+    {
+      "batch": "2156",
+      "student": "Krishna",
+      "row": 61,
+      "column": "E",
+      "cell": "E61",
+      "field": "couldImprove",
+      "value": "The child should select at least one personal goal or habit to start tracking progress this quarter.",
+      "status": "written"
+    },
+    {
+      "batch": "2156",
+      "student": "Riya",
+      "row": 59,
+      "column": "H",
+      "cell": "H59",
+      "field": "goalHabit",
+      "value": "Read 2 books from the SQ reading list",
+      "status": "written"
+    },
+    {
+      "batch": "2156",
+      "student": "Riya",
+      "row": 60,
+      "column": "H",
+      "cell": "H60",
+      "field": "wentWell",
+      "value": "The student completed 10 out of 27 tasks, achieving a 37% task completion rate. The 'Classes’ Homework 6:00 - 7:00' habit was the strongest, with 2 out of 8 completions.",
+      "status": "written"
+    },
+    {
+      "batch": "2156",
+      "student": "Riya",
+      "row": 61,
+      "column": "H",
+      "cell": "H61",
+      "field": "couldImprove",
+      "value": "The 'Do 8 Blocks of Xseed' goal has the weakest follow-through, with only 4 out of 8 tasks completed in Sprint trial 2 and 0 out of 8 in Sprint Trial 3.",
+      "status": "written"
+    },
+    {
+      "batch": "2156",
+      "student": "Test Student",
+      "row": 59,
+      "column": null,
+      "cell": null,
+      "field": "goalHabit",
+      "value": "Morning Hydration Habit",
+      "status": "skipped_missing_column"
+    },
+    {
+      "batch": "2156",
+      "student": "Test Student",
+      "row": 60,
+      "column": null,
+      "cell": null,
+      "field": "wentWell",
+      "value": "The student completed 2 out of 5 tasks for the Morning Hydration Habit in Sprint test 1. The Example habit had a 71% consistency rate.",
+      "status": "skipped_missing_column"
+    },
+    {
+      "batch": "2156",
+      "student": "Test Student",
+      "row": 61,
+      "column": null,
+      "cell": null,
+      "field": "couldImprove",
+      "value": "The student could improve follow-through on Piano Practice, which has 0 tasks completed out of 4.",
+      "status": "skipped_missing_column"
+    },
+    {
+      "batch": "2156",
+      "student": "Vihaan",
+      "row": 59,
+      "column": "C",
+      "cell": "C59",
+      "field": "goalHabit",
+      "value": "Build grip strength through 3 sets of dead hangs",
+      "status": "written"
+    },
+    {
+      "batch": "2156",
+      "student": "Vihaan",
+      "row": 60,
+      "column": "C",
+      "cell": "C60",
+      "field": "wentWell",
+      "value": "The child successfully completed 3 dead-hang sessions, showing initial engagement with the routine.",
+      "status": "written"
+    },
+    {
+      "batch": "2156",
+      "student": "Vihaan",
+      "row": 61,
+      "column": "C",
+      "cell": "C61",
+      "field": "couldImprove",
+      "value": "Aim to increase consistency from 20 % to daily practice to strengthen grip effectively.",
+      "status": "written"
+    },
+    {
+      "batch": "2156",
+      "student": "Zara",
+      "row": 59,
+      "column": "I",
+      "cell": "I59",
+      "field": "goalHabit",
+      "value": "Establish a consistent weekly workout routine",
+      "status": "written"
+    },
+    {
+      "batch": "2156",
+      "student": "Zara",
+      "row": 60,
+      "column": "I",
+      "cell": "I60",
+      "field": "wentWell",
+      "value": "The child completed 2 out of 8 planned workouts in Sprint trial 2, showing initial engagement with the habit.",
+      "status": "written"
+    },
+    {
+      "batch": "2156",
+      "student": "Zara",
+      "row": 61,
+      "column": "I",
+      "cell": "I61",
+      "field": "couldImprove",
+      "value": "Increase consistency by scheduling specific workout times and tracking progress daily.",
+      "status": "written"
+    },
+    {
+      "batch": "2156",
+      "student": "Zuhayr",
+      "row": 59,
+      "column": null,
+      "cell": null,
+      "field": "goalHabit",
+      "value": "Practice nfo and maths",
+      "status": "skipped_missing_column"
+    },
+    {
+      "batch": "2156",
+      "student": "Zuhayr",
+      "row": 60,
+      "column": null,
+      "cell": null,
+      "field": "wentWell",
+      "value": "The child logged 3 out of 7 expected habit sessions, showing some engagement with the routine.",
+      "status": "skipped_missing_column"
+    },
+    {
+      "batch": "2156",
+      "student": "Zuhayr",
+      "row": 61,
+      "column": null,
+      "cell": null,
+      "field": "couldImprove",
+      "value": "Increase consistency to meet the daily practice target and strengthen the habit loop.",
+      "status": "skipped_missing_column"
+    }
+  ]
+}
