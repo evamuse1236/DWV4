@@ -11,6 +11,30 @@ export interface WhatsNewEntry {
 
 export const WHATS_NEW: WhatsNewEntry[] = [
   {
+    date: "Mar 21",
+    sortDate: "2026-03-21",
+    title: "Fill Q3 daily goals from reporting data",
+    description: "Code updates shipped in commit a949612.",
+  },
+  {
+    date: "Mar 10",
+    sortDate: "2026-03-10",
+    title: "Fix curriculum map dropdown behavior",
+    description: "Code updates shipped in commit 783d359.",
+  },
+  {
+    date: "Mar 6",
+    sortDate: "2026-03-06",
+    title: "convex fixes",
+    description: "Code updates shipped in commit 80dc703.",
+  },
+  {
+    date: "Mar 5",
+    sortDate: "2026-03-05",
+    title: "Lib changed from present to review",
+    description: "Code updates shipped in commit 054d19e.",
+  },
+  {
     date: "Mar 5",
     sortDate: "2026-03-05",
     title: "docs updated",
@@ -165,30 +189,6 @@ export const WHATS_NEW: WhatsNewEntry[] = [
     sortDate: "2026-02-12",
     title: "Improve comment modal image upload UX and remove title bar",
     description: "Code updates shipped in commit 1d80197.",
-  },
-  {
-    date: "Feb 12",
-    sortDate: "2026-02-12",
-    title: "Clean misconception tooling artifacts and document rewrite workflow",
-    description: "Code updates shipped in commit cde1d22.",
-  },
-  {
-    date: "Feb 12",
-    sortDate: "2026-02-12",
-    title: "Finalize warm misconception feedback and diagnostic tone",
-    description: "Code updates shipped in commit fa52f86.",
-  },
-  {
-    date: "Feb 11",
-    sortDate: "2026-02-11",
-    title: "Normalize full misconception bank tone and formatting",
-    description: "Code updates shipped in commit 07fcfa6.",
-  },
-  {
-    date: "Feb 11",
-    sortDate: "2026-02-11",
-    title: "Polish rollback misconception tone and extend sync audit",
-    description: "Code updates shipped in commit 443cd84.",
   },
 ];
 

@@ -121,14 +121,18 @@ export function StudentDetailPage() {
     }
   };
 
-  const getStatusBadge = (status: string) => {
+  const getStatusBadge = (status: string, vivaStatus?: string) => {
+    if (vivaStatus === "requested") {
+      return <Badge variant="outline" className="bg-yellow-50 text-yellow-700 border-yellow-200"><AlertCircle className="h-3 w-3 mr-1" />Viva Pending</Badge>;
+    }
+    if (vivaStatus === "not_ready") {
+      return <Badge variant="outline" className="bg-amber-50 text-amber-700 border-amber-200"><AlertCircle className="h-3 w-3 mr-1" />Needs Work</Badge>;
+    }
     switch (status) {
       case "assigned":
         return <Badge variant="secondary"><Clock className="h-3 w-3 mr-1" />Assigned</Badge>;
       case "in_progress":
         return <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200"><AlertCircle className="h-3 w-3 mr-1" />In Progress</Badge>;
-      case "viva_requested":
-        return <Badge variant="outline" className="bg-yellow-50 text-yellow-700 border-yellow-200"><AlertCircle className="h-3 w-3 mr-1" />Viva Requested</Badge>;
       case "mastered":
         return <Badge className="bg-green-100 text-green-800"><Award className="h-3 w-3 mr-1" />Mastered</Badge>;
       default:
@@ -167,7 +171,7 @@ export function StudentDetailPage() {
   const totalAssigned = assignedMajors?.length || 0;
   const masteredCount = assignedMajors?.filter((a: any) => a.assignment?.status === "mastered").length || 0;
   const inProgressCount = assignedMajors?.filter((a: any) => a.assignment?.status === "in_progress").length || 0;
-  const vivaRequestedCount = assignedMajors?.filter((a: any) => a.assignment?.status === "viva_requested").length || 0;
+  const vivaRequestedCount = assignedMajors?.filter((a: any) => a.assignment?.vivaStatus === "requested").length || 0;
 
   return (
     <div className="space-y-6">
@@ -440,7 +444,7 @@ export function StudentDetailPage() {
                               {major.majorObjective.description}
                             </p>
                             <div className="mt-2">
-                              {getStatusBadge(major.assignment?.status || "assigned")}
+                              {getStatusBadge(major.assignment?.status || "assigned", major.assignment?.vivaStatus)}
                             </div>
                           </div>
                         </div>

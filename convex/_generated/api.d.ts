@@ -20,6 +20,7 @@ import type * as domains from "../domains.js";
 import type * as emotions from "../emotions.js";
 import type * as goals from "../goals.js";
 import type * as habits from "../habits.js";
+import type * as mastery from "../mastery.js";
 import type * as migrations from "../migrations.js";
 import type * as norms from "../norms.js";
 import type * as objectives from "../objectives.js";
@@ -55,6 +56,7 @@ declare const fullApi: ApiFromModules<{
   emotions: typeof emotions;
   goals: typeof goals;
   habits: typeof habits;
+  mastery: typeof mastery;
   migrations: typeof migrations;
   norms: typeof norms;
   objectives: typeof objectives;

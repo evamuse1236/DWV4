@@ -227,10 +227,21 @@ export default defineSchema({
       v.literal("viva_requested"),
       v.literal("mastered")
     ),
+    vivaStatus: v.optional(
+      v.union(
+        v.literal("not_requested"),
+        v.literal("requested"),
+        v.literal("approved"),
+        v.literal("not_ready")
+      )
+    ),
     vivaRequestedAt: v.optional(v.number()),
+    vivaDecisionAt: v.optional(v.number()),
+    vivaDecisionBy: v.optional(v.id("users")),
     masteredAt: v.optional(v.number()),
     adminNotes: v.optional(v.string()),
     vivaRequestNotes: v.optional(v.string()),
+    vivaDecisionNotes: v.optional(v.string()),
   })
     .index("by_user", ["userId"])
     .index("by_major_objective", ["majorObjectiveId"])
@@ -264,6 +275,7 @@ export default defineSchema({
     ),
     handledBy: v.optional(v.id("users")),
     handledAt: v.optional(v.number()),
+    decisionNotes: v.optional(v.string()),
   })
     .index("by_status", ["status", "requestedAt"])
     .index("by_user_major", ["userId", "majorObjectiveId", "requestedAt"]),

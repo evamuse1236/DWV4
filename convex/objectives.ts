@@ -747,13 +747,17 @@ export const updateStatus = mutation({
     const updates: any = { status: args.status };
 
     if (args.status === "viva_requested") {
+      updates.status = "in_progress";
+      updates.vivaStatus = "requested";
       updates.vivaRequestedAt = Date.now();
-      // Save notes if provided when requesting viva
       if (args.vivaRequestNotes !== undefined) {
         updates.vivaRequestNotes = args.vivaRequestNotes;
       }
     } else if (args.status === "mastered") {
       updates.masteredAt = Date.now();
+      updates.vivaStatus = "approved";
+    } else if (args.status === "in_progress" && assignment.vivaStatus === "requested") {
+      updates.vivaStatus = "not_ready";
     }
 
     await ctx.db.patch(args.studentMajorObjectiveId, updates);
@@ -781,11 +785,15 @@ export const getVivaRequests = query({
   handler: async (ctx) => {
     const requests = await ctx.db
       .query("studentMajorObjectives")
-      .filter((q) => q.eq(q.field("status"), "viva_requested"))
       .collect();
 
+    const pending = requests.filter((req: any) => {
+      const vivaStatus = req.vivaStatus ?? (req.status === "viva_requested" ? "requested" : "not_requested");
+      return req.status !== "mastered" && vivaStatus === "requested";
+    });
+
     return await Promise.all(
-      requests.map(async (req) => {
+      pending.map(async (req) => {
         const user = await ctx.db.get(req.userId);
         const majorObjective = await ctx.db.get(req.majorObjectiveId);
         const domain = majorObjective

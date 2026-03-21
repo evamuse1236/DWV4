@@ -290,6 +290,17 @@ export function ReviewPage() {
                 </span>
               </div>
 
+              {details.majorObjective?._id ? (
+                <div>
+                  <Link
+                    to={`/deep-work/mastery/${details.majorObjective._id}`}
+                    className="inline-flex items-center rounded-full border px-3 py-1.5 text-sm hover:bg-black/[0.03]"
+                  >
+                    Open Mastery Flow
+                  </Link>
+                </div>
+              ) : null}
+
               {wrongQuestions.length === 0 ? (
                 <div className="text-sm text-muted-foreground py-6">
                   Amazing work. No wrong questions recorded for this attempt.

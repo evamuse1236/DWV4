@@ -32,10 +32,22 @@ React (Vite + Router)
 
 ## Status lifecycles
 
-- `studentMajorObjectives.status`: `assigned -> in_progress -> viva_requested -> mastered`
+- `studentMajorObjectives.status`: `assigned -> in_progress -> mastered`
+- `studentMajorObjectives.vivaStatus`: `not_requested -> requested -> approved | not_ready`
 - `diagnosticUnlockRequests.status`: `pending -> approved | denied | canceled`
 - `diagnosticUnlocks.status`: `approved -> consumed | expired | revoked`
 - `studentBooks.status`: `reading -> review_draft -> review_submitted -> review_changes_requested -> review_submitted -> review_approved` (`completed`, `presentation_requested`, and `presented` are legacy-compatible)
+
+## Mastery workflow contracts
+
+- Student mastery state is normalized in `convex/mastery.ts` through `getMajorMasteryState`.
+- Student-facing mastery actions live on `src/pages/student/MasteryPage.tsx`.
+- `src/pages/student/DiagnosticPage.tsx` is for taking diagnostics, not for owning viva or retake workflow decisions.
+- `src/pages/student/ReviewPage.tsx` is history/reference and links back into the active mastery flow.
+- Admin viva decisions live on `src/pages/admin/VivaQueuePage.tsx`.
+- Admin retake approvals and attempt review live on `src/pages/admin/DiagnosticsPage.tsx`.
+- Retake approvals no longer depend on viva state.
+- Legacy `studentMajorObjectives.status === "viva_requested"` is migrated/read as `status: "in_progress"` plus `vivaStatus: "requested"` for compatibility.
 
 ## Reading UX contracts
 

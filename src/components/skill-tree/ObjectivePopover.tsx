@@ -9,11 +9,11 @@ import {
   Circle,
   Check,
 } from "@phosphor-icons/react";
-import { useNavigate } from "react-router-dom";
 import { api } from "../../../convex/_generated/api";
 import type { Id } from "../../../convex/_generated/dataModel";
 import { getDomainConfig } from "../../lib/skill-tree-utils";
 import { cn } from "../../lib/utils";
+import { MasteryStatusCard } from "@/components/mastery/MasteryStatusCard";
 import styles from "./skill-tree.module.css";
 
 const activityIcons: Record<string, typeof Circle> = {
@@ -103,13 +103,10 @@ export function ObjectivePopover({
   userId,
   domainName,
   selectedNode,
-  onVivaRequested,
+  onVivaRequested: _onVivaRequested,
   onSelectSubObjective,
 }: ObjectivePopoverProps) {
-  const navigate = useNavigate();
   const toggleActivity = useMutation(api.progress.toggleActivity);
-  const updateStatus = useMutation(api.objectives.updateStatus);
-  const requestUnlock = useMutation(api.diagnostics.requestUnlock);
 
   const selectedMajorObjectiveId = useMemo(() => {
     if (!selectedNode) return null;
@@ -117,8 +114,8 @@ export function ObjectivePopover({
     return selectedNode.data.majorObjective._id;
   }, [selectedNode]);
 
-  const unlockState = useQuery(
-    api.diagnostics.getUnlockState,
+  const masteryState = useQuery(
+    api.mastery.getMajorMasteryState,
     selectedMajorObjectiveId
       ? { userId, majorObjectiveId: selectedMajorObjectiveId }
       : "skip"
@@ -164,25 +161,6 @@ export function ObjectivePopover({
   if (!selectedNode) return null;
 
   const domainConfig = domainName ? getDomainConfig(domainName) : null;
-  const hasFailedDiagnostic = Boolean(
-    unlockState?.latestAttempt && unlockState.latestAttempt.passed === false
-  );
-  const hasActiveUnlock = Boolean(unlockState?.activeUnlock);
-  const hasPendingUnlockRequest = Boolean(unlockState?.pendingRequest);
-
-  const handleRequestDiagnostic = async () => {
-    if (!selectedMajorObjectiveId) return;
-    await requestUnlock({
-      userId,
-      majorObjectiveId: selectedMajorObjectiveId,
-    });
-  };
-
-  const handleStartDiagnostic = () => {
-    if (!selectedMajorObjectiveId) return;
-    navigate(`/deep-work/diagnostic/${selectedMajorObjectiveId}?type=mastery`);
-  };
-
   const handleToggleActivity = (
     activityId: Id<"activities">,
     studentObjectiveId: Id<"studentObjectives">,
@@ -235,7 +213,6 @@ export function ObjectivePopover({
     const firstActivityType = activities[0]?.type || "default";
     const IconComponent = activityIcons[firstActivityType] || activityIcons.default;
 
-    const vivaRequested = majorAssignment?.status === "viva_requested";
     const mastered = majorAssignment?.status === "mastered";
 
     return (
@@ -305,49 +282,14 @@ export function ObjectivePopover({
             </ul>
           )}
 
-          {/* Show viva button when all sub-objectives complete */}
-          {!mastered && majorAssignment && (
-            <>
-              {hasFailedDiagnostic ? (
-                <button
-                  type="button"
-                  className={cn(styles["viva-btn"], styles.active)}
-                  onClick={() => {
-                    if (vivaRequested && hasActiveUnlock) {
-                      handleStartDiagnostic();
-                      return;
-                    }
-                    if (vivaRequested) {
-                      handleRequestDiagnostic();
-                      return;
-                    }
-                    updateStatus({
-                      studentMajorObjectiveId: majorAssignment._id,
-                      status: "viva_requested",
-                    });
-                    onVivaRequested?.();
-                  }}
-                  disabled={vivaRequested && hasPendingUnlockRequest}
-                >
-                  {vivaRequested
-                    ? hasActiveUnlock
-                      ? "Start Diagnostic"
-                      : hasPendingUnlockRequest
-                        ? "Diagnostic Requested"
-                        : "Request Diagnostic"
-                    : "Request Viva"}
-                </button>
-              ) : (
-                <button
-                  type="button"
-                  className={cn(styles["viva-btn"], styles.active)}
-                  onClick={handleStartDiagnostic}
-                >
-                  Start Diagnostic
-                </button>
-              )}
-            </>
-          )}
+          {masteryState ? (
+            <div className="mt-6">
+              <MasteryStatusCard
+                state={masteryState as any}
+                masteryHref={`/deep-work/mastery/${selectedMajorObjectiveId}`}
+              />
+            </div>
+          ) : null}
 
           {mastered && (
             <div className="text-center py-2 text-green-600 font-medium font-display italic text-lg">
@@ -366,7 +308,6 @@ export function ObjectivePopover({
   }
 
   const { majorObjective, subObjectives, assignment } = selectedNode.data;
-  const vivaRequested = assignment?.status === "viva_requested";
   const mastered = assignment?.status === "mastered";
 
   return (
@@ -410,51 +351,14 @@ export function ObjectivePopover({
           </ul>
         )}
 
-        {!mastered && assignment && (
-          <>
-            {hasFailedDiagnostic ? (
-              <button
-                type="button"
-                className={cn(
-                  styles["viva-btn"],
-                  styles.active
-                )}
-                onClick={() => {
-                  if (vivaRequested && hasActiveUnlock) {
-                    handleStartDiagnostic();
-                    return;
-                  }
-                  if (vivaRequested) {
-                    handleRequestDiagnostic();
-                    return;
-                  }
-                  updateStatus({
-                    studentMajorObjectiveId: assignment._id,
-                    status: "viva_requested",
-                  });
-                  onVivaRequested?.();
-                }}
-                disabled={vivaRequested && hasPendingUnlockRequest}
-              >
-                {vivaRequested
-                  ? hasActiveUnlock
-                    ? "Start Diagnostic"
-                    : hasPendingUnlockRequest
-                      ? "Diagnostic Requested"
-                      : "Request Diagnostic"
-                  : "Request Viva"}
-              </button>
-            ) : (
-              <button
-                type="button"
-                className={cn(styles["viva-btn"], styles.active)}
-                onClick={handleStartDiagnostic}
-              >
-                Start Diagnostic
-              </button>
-            )}
-          </>
-        )}
+        {masteryState ? (
+          <div className="mt-6">
+            <MasteryStatusCard
+              state={masteryState as any}
+              masteryHref={`/deep-work/mastery/${selectedMajorObjectiveId}`}
+            />
+          </div>
+        ) : null}
 
         {mastered && (
           <div className="text-center py-2 text-green-600 font-medium font-display italic text-lg">

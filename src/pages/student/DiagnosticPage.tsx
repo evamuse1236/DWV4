@@ -37,9 +37,7 @@ export function DiagnosticPage() {
   const navigate = useNavigate();
   const attemptType: AttemptType = "mastery";
 
-  const requestUnlock = useMutation(api.diagnostics.requestUnlock);
   const submitAttempt = useMutation(api.diagnostics.submitAttempt);
-  const updateMajorStatus = useMutation(api.objectives.updateStatus);
 
   const majorMeta = useQuery(
     api.diagnostics.getCurriculumModuleIndex,
@@ -88,8 +86,6 @@ export function DiagnosticPage() {
   const [completedDurationMs, setCompletedDurationMs] = useState<number | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
-  const [unlockActionError, setUnlockActionError] = useState<string | null>(null);
-
   const group = useMemo(() => {
     if (!modules || !majorMeta) return null;
     return findDiagnosticGroup(modules as any, majorMeta.section, majorMeta.moduleIndex);
@@ -100,9 +96,6 @@ export function DiagnosticPage() {
     ? Math.ceil((questions.length * passThresholdPercent) / 100)
     : 0;
 
-  const majorStatus = unlockState?.majorAssignment?.status;
-  const hasPendingUnlockRequest = Boolean(unlockState?.pendingRequest);
-  const requiresVivaRequest = unlockState?.policy?.requiresVivaRequest ?? false;
   const requiresUnlock = unlockState?.policy?.requiresUnlock ?? false;
   const canStartNow = unlockState?.policy?.canStart ?? false;
 
@@ -116,30 +109,6 @@ export function DiagnosticPage() {
       })
       .catch((err: any) => setDataLoadingError(err?.message || "Failed to load diagnostic data"));
   }, []);
-
-  const handleRequestUnlock = async () => {
-    if (!user || !majorObjectiveId) return;
-    try {
-      setUnlockActionError(null);
-      await requestUnlock({ userId: user._id as any, majorObjectiveId: majorObjectiveId as any });
-    } catch (err: any) {
-      setUnlockActionError(err?.message || "Failed to request unlock");
-    }
-  };
-
-  const handleRequestViva = async () => {
-    const studentMajorObjectiveId = unlockState?.majorAssignment?.studentMajorObjectiveId;
-    if (!studentMajorObjectiveId) {
-      setSubmitError("Could not find the module assignment for viva request.");
-      return;
-    }
-
-    await updateMajorStatus({
-      studentMajorObjectiveId: studentMajorObjectiveId as any,
-      status: "viva_requested",
-    });
-    navigate("/deep-work");
-  };
 
   const resetQuiz = () => {
     setStartedAt(null);
@@ -175,7 +144,6 @@ export function DiagnosticPage() {
     setCompletedAttemptId(null);
     setCompletedPassed(null);
     setSubmitError(null);
-    setUnlockActionError(null);
   };
 
   const currentQuestion = questions?.[qIndex] ?? null;
@@ -254,7 +222,6 @@ export function DiagnosticPage() {
       setSubmitError(message);
 
       const likelyGateIssue =
-        message.includes("Request viva before taking a retake.") ||
         message.includes("Diagnostic unlock required for retake.") ||
         message.includes("Diagnostic approval expired");
 
@@ -393,42 +360,23 @@ export function DiagnosticPage() {
         <p className="text-muted-foreground mt-2">{group.moduleName}</p>
 
         <div className="mt-6 p-4 rounded border bg-white/70 space-y-3">
-          {requiresVivaRequest && (
-            <>
-              <p className="text-sm text-muted-foreground">
-                You must request viva after a failed attempt before retakes can be unlocked.
-              </p>
-              <button
-                type="button"
-                className="px-4 py-2 rounded bg-black text-white"
-                onClick={handleRequestViva}
-                disabled={!unlockState?.majorAssignment?.studentMajorObjectiveId}
-              >
-                Request Viva
-              </button>
-            </>
+          {requiresUnlock ? (
+            <p className="text-sm text-muted-foreground">
+              Another diagnostic attempt needs coach approval first. Use the mastery page for the
+              next step, notes, and retake request.
+            </p>
+          ) : (
+            <p className="text-sm text-muted-foreground">
+              Use the mastery page to manage the next step for this objective.
+            </p>
           )}
-
-          {!requiresVivaRequest && requiresUnlock && (
-            <>
-              <p className="text-sm text-muted-foreground">
-                Retakes require coach unlock (24h, 1 attempt by default).
-              </p>
-              <button
-                type="button"
-                className="px-4 py-2 rounded bg-black text-white disabled:opacity-50"
-                onClick={handleRequestUnlock}
-                disabled={hasPendingUnlockRequest}
-              >
-                {hasPendingUnlockRequest ? "Diagnostic Requested" : "Request Diagnostic"}
-              </button>
-              {hasPendingUnlockRequest && (
-                <p className="text-xs text-muted-foreground">Waiting for coach approval.</p>
-              )}
-            </>
-          )}
-
-          {unlockActionError && <p className="text-sm text-destructive">{unlockActionError}</p>}
+          <button
+            type="button"
+            className="px-4 py-2 rounded bg-black text-white"
+            onClick={() => navigate(`/deep-work/mastery/${majorObjectiveId}`)}
+          >
+            Open Mastery Page
+          </button>
         </div>
       </div>
     );
@@ -486,7 +434,6 @@ export function DiagnosticPage() {
   // Results screen
   if (completedPassed !== null && questions) {
     const incorrect = results.filter((r) => !r.correct);
-    const vivaAlreadyRequested = majorStatus === "viva_requested";
 
     return (
       <div className="p-6 max-w-3xl mx-auto">
@@ -559,17 +506,12 @@ export function DiagnosticPage() {
             <div className="mt-6 flex items-center gap-3">
               <button
                 type="button"
-                className="px-4 py-2 rounded bg-black text-white disabled:opacity-50"
-                onClick={handleRequestViva}
-                disabled={!unlockState?.majorAssignment?.studentMajorObjectiveId || vivaAlreadyRequested}
+                className="px-4 py-2 rounded bg-black text-white"
+                onClick={() => navigate(`/deep-work/mastery/${majorObjectiveId}`)}
               >
-                {vivaAlreadyRequested ? "Viva Requested" : "Request Viva"}
+                Open Mastery Page
               </button>
-              <button
-                type="button"
-                className="px-4 py-2 rounded border"
-                onClick={resetQuiz}
-              >
+              <button type="button" className="px-4 py-2 rounded border" onClick={resetQuiz}>
                 Done
               </button>
             </div>

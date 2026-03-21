@@ -1,10 +1,9 @@
-import { render, screen, waitFor } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 vi.mock("convex/react", () => ({
   useQuery: vi.fn(),
-  useMutation: vi.fn(() => vi.fn().mockResolvedValue({})),
 }));
 
 vi.mock("../../../../convex/_generated/api", () => ({
@@ -18,15 +17,18 @@ vi.mock("../../../../convex/_generated/api", () => ({
     },
     objectives: {
       getAll: "objectives.getAll",
-      getVivaRequests: "objectives.getVivaRequests",
-      updateStatus: "objectives.updateStatus",
+    },
+    mastery: {
+      getAdminVivaQueue: "mastery.getAdminVivaQueue",
+    },
+    diagnostics: {
+      getPendingUnlockRequests: "diagnostics.getPendingUnlockRequests",
     },
     emotions: {
       getTodayCheckIns: "emotions.getTodayCheckIns",
     },
     books: {
       getReviewSubmissions: "books.getReviewSubmissions",
-      approveReview: "books.approveReview",
     },
   },
 }));
@@ -51,21 +53,7 @@ vi.mock("@/hooks/useDelayedLoading", () => ({
   useDelayedLoading: vi.fn(() => false),
 }));
 
-vi.mock("@/components/ui/tooltip", () => ({
-  Tooltip: ({ children }: any) => <>{children}</>,
-  TooltipTrigger: ({ children }: any) => <>{children}</>,
-  TooltipContent: ({ children }: any) => <div>{children}</div>,
-}));
-
-vi.mock("sonner", () => ({
-  toast: {
-    success: vi.fn(),
-    error: vi.fn(),
-  },
-}));
-
-import { useMutation, useQuery } from "convex/react";
-import { toast } from "sonner";
+import { useQuery } from "convex/react";
 import { AdminDashboard } from "../AdminDashboard";
 
 const students = [
@@ -90,13 +78,20 @@ const vivaRequests = [
   },
 ];
 
+const unlockRequests = [
+  {
+    _id: "unlock_1",
+    user: { displayName: "Alice Johnson" },
+    majorObjective: { title: "Fractions mastery" },
+  },
+];
+
 const reviewSubmissions = [
   {
     _id: "studentBook_1",
     userId: "student_2",
     user: { displayName: "Bob Smith" },
     book: { title: "The Hobbit", author: "J.R.R. Tolkien" },
-    review: "Great journey.",
   },
 ];
 
@@ -116,7 +111,8 @@ function setupQueries(overrides: Partial<Record<string, any>> = {}) {
   const data: Record<string, any> = {
     "users.getAll": students,
     "sprints.getActive": activeSprint,
-    "objectives.getVivaRequests": vivaRequests,
+    "mastery.getAdminVivaQueue": vivaRequests,
+    "diagnostics.getPendingUnlockRequests": unlockRequests,
     "books.getReviewSubmissions": reviewSubmissions,
     "users.getTodayCheckInCount": 1,
     "emotions.getTodayCheckIns": checkIns,
@@ -132,88 +128,64 @@ function renderDashboard() {
 }
 
 describe("AdminDashboard", () => {
-  let mockUpdateStatus: ReturnType<typeof vi.fn>;
-  let mockApproveReview: ReturnType<typeof vi.fn>;
-
   beforeEach(() => {
     vi.clearAllMocks();
-    mockUpdateStatus = vi.fn().mockResolvedValue({});
-    mockApproveReview = vi.fn().mockResolvedValue({});
-
-    (useMutation as any).mockImplementation((mutation: string) => {
-      if (mutation === "objectives.updateStatus") return mockUpdateStatus;
-      if (mutation === "books.approveReview") return mockApproveReview;
-      return vi.fn().mockResolvedValue({});
-    });
-
     setupQueries();
   });
 
-  it("renders dashboard summary with review queue", () => {
+  it("renders the calmer queue-first dashboard and removes the old student overview", () => {
     renderDashboard();
+
     expect(screen.getByText("Welcome back, Coach")).toBeInTheDocument();
-    for (const title of ["Total Students", "Pending Vivas", "Reviews"]) {
-      expect(screen.getByText(title)).toBeInTheDocument();
-    }
-    expect(screen.getByText("The Hobbit")).toBeInTheDocument();
+    expect(screen.getByText("Pending vivas")).toBeInTheDocument();
+    expect(screen.getAllByText("Diagnostics").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("Reviews").length).toBeGreaterThan(0);
+    expect(screen.getByText("Check-ins today")).toBeInTheDocument();
+
+    expect(screen.getByText("Needs attention now")).toBeInTheDocument();
+    expect(screen.getByText("Open student")).toBeInTheDocument();
+    expect(screen.getByText("Today's check-ins")).toBeInTheDocument();
+    expect(screen.queryByText("Students Overview")).not.toBeInTheDocument();
   });
 
-  it("approves viva request on double-click", async () => {
+  it("opens core workspaces from the dashboard", async () => {
     const user = userEvent.setup();
     renderDashboard();
 
-    const vivaCard = screen.getByText("Viva Queue").closest(".rounded-xl");
-    const approveButton = vivaCard?.querySelector(".p-3 button");
-    expect(approveButton).toBeTruthy();
+    await user.click(screen.getByRole("button", { name: /open viva/i }));
+    await user.click(screen.getByRole("button", { name: /open diagnostics/i }));
+    await user.click(screen.getByRole("button", { name: /open reviews/i }));
 
-    await user.dblClick(approveButton!);
-    await waitFor(() => {
-      expect(mockUpdateStatus).toHaveBeenCalledWith({
-        studentMajorObjectiveId: "viva_1",
-        status: "mastered",
-      });
-    });
-    expect(toast.success).toHaveBeenCalledWith("Viva approved for Alice Johnson");
-  });
-
-  it("approves review on double-click", async () => {
-    const user = userEvent.setup();
-    renderDashboard();
-
-    const reviewsCard = screen.getByText("Reviews").closest(".rounded-xl");
-    const approveButton = reviewsCard?.querySelector(".p-3 button");
-    expect(approveButton).toBeTruthy();
-
-    await user.dblClick(approveButton!);
-    await waitFor(() => {
-      expect(mockApproveReview).toHaveBeenCalledWith({
-        studentBookId: "studentBook_1",
-        approvedBy: "admin_123",
-      });
-    });
-    expect(toast.success).toHaveBeenCalledWith("Review approved for Bob Smith");
-  });
-
-  it("shows empty review queue state when no submissions", () => {
-    setupQueries({ "books.getReviewSubmissions": [] });
-    renderDashboard();
-    expect(screen.getByText("No pending reviews.")).toBeInTheDocument();
-  });
-
-  it("navigates to /admin/reviews from queue button", async () => {
-    const user = userEvent.setup();
-    setupQueries({
-      "books.getReviewSubmissions": [
-        ...reviewSubmissions,
-        { ...reviewSubmissions[0], _id: "studentBook_2" },
-        { ...reviewSubmissions[0], _id: "studentBook_3" },
-        { ...reviewSubmissions[0], _id: "studentBook_4" },
-      ],
-    });
-
-    renderDashboard();
-    await user.click(screen.getByRole("button", { name: /view all \(4\)/i }));
+    expect(mockNavigate).toHaveBeenCalledWith("/admin/viva");
+    expect(mockNavigate).toHaveBeenCalledWith("/admin/diagnostics");
     expect(mockNavigate).toHaveBeenCalledWith("/admin/reviews");
+  });
+
+  it("links check-ins and student jump rows to student detail", async () => {
+    const user = userEvent.setup();
+    renderDashboard();
+
+    const openStudentCard = screen.getByText("Open student").closest(".rounded-xl");
+    expect(openStudentCard).toBeTruthy();
+    await user.click(within(openStudentCard as HTMLElement).getByText("Alice Johnson"));
+    expect(mockNavigate).toHaveBeenCalledWith("/admin/students/student_1");
+  });
+
+  it("shows empty queue states when there is no pending work", () => {
+    setupQueries({
+      "mastery.getAdminVivaQueue": [],
+      "diagnostics.getPendingUnlockRequests": [],
+      "books.getReviewSubmissions": [],
+      "emotions.getTodayCheckIns": [],
+      "users.getTodayCheckInCount": 0,
+    });
+
+    renderDashboard();
+
+    expect(screen.getByText("No viva decisions waiting.")).toBeInTheDocument();
+    expect(screen.getByText("No retake requests waiting.")).toBeInTheDocument();
+    expect(screen.getByText("No review decisions waiting.")).toBeInTheDocument();
+    expect(screen.getByText("No check-ins yet today.")).toBeInTheDocument();
   });
 
   it("shows setup checklist when prerequisites are missing", () => {
@@ -222,10 +194,12 @@ describe("AdminDashboard", () => {
       "sprints.getActive": null,
       "objectives.getAll": [],
     });
+
     renderDashboard();
-    expect(screen.getByText("Getting Started")).toBeInTheDocument();
-    for (const text of ["Add Students", "Create a Sprint"]) {
-      expect(screen.getByText(text)).toBeInTheDocument();
-    }
+
+    expect(screen.getByText("Getting started")).toBeInTheDocument();
+    expect(screen.getByText("Add students")).toBeInTheDocument();
+    expect(screen.getByText("Create a sprint")).toBeInTheDocument();
+    expect(screen.getByText("Add objectives")).toBeInTheDocument();
   });
 });

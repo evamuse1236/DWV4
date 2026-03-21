@@ -139,14 +139,25 @@ export const toggleActivity = mutation({
         } else if (majorAssignment.status === "in_progress" && !anyStarted) {
           nextMajorStatus = "assigned";
         } else if (
-          majorAssignment.status === "viva_requested" &&
+          (majorAssignment.status === "viva_requested" ||
+            majorAssignment.vivaStatus === "requested") &&
           !allSubsCompleted
         ) {
           nextMajorStatus = "in_progress";
         }
 
         if (nextMajorStatus !== majorAssignment.status) {
-          await ctx.db.patch(majorAssignment._id, { status: nextMajorStatus });
+          await ctx.db.patch(majorAssignment._id, {
+            status: nextMajorStatus,
+            ...(majorAssignment.vivaStatus === "requested" && !allSubsCompleted
+              ? {
+                  vivaStatus: "not_ready",
+                  vivaDecisionAt: Date.now(),
+                  vivaDecisionNotes:
+                    "Viva request was reset because the objective is no longer fully complete.",
+                }
+              : {}),
+          });
         }
       }
     }

@@ -12,8 +12,8 @@ Both interfaces share one Convex backend.
 
 1. Student checks in.
 2. Student works sprint and learning objectives.
-3. Student requests mastery checks (viva and diagnostics).
-4. Admin reviews queues and advances progress.
+3. Student uses one mastery flow per major objective to take a diagnostic, request a viva, or request a retake.
+4. Admin reviews two separate queues: viva decisions and diagnostic retake decisions.
 
 ## Non-negotiable invariants
 
@@ -29,3 +29,4 @@ Both interfaces share one Convex backend.
 2. Keep student UX calm and guided.
 3. Keep admin UX fast and operational.
 4. Keep docs short, current, and non-overlapping.
+5. Keep viva meaning coach mastery review everywhere; keep retake approval in diagnostics only.

@@ -88,13 +88,6 @@ export const getUnlockState = query({
   handler: async (ctx, args) => {
     const now = Date.now();
 
-    const majorAssignment = await ctx.db
-      .query("studentMajorObjectives")
-      .withIndex("by_user_major", (q: any) =>
-        q.eq("userId", args.userId).eq("majorObjectiveId", args.majorObjectiveId)
-      )
-      .first();
-
     const latestUnlock = await ctx.db
       .query("diagnosticUnlocks")
       .withIndex("by_user_major", (q: any) =>
@@ -129,14 +122,18 @@ export const getUnlockState = query({
       .order("desc")
       .first();
 
+    const majorAssignment = await ctx.db
+      .query("studentMajorObjectives")
+      .withIndex("by_user_major", (q: any) =>
+        q.eq("userId", args.userId).eq("majorObjectiveId", args.majorObjectiveId)
+      )
+      .first();
+
     const mastered = majorAssignment?.status === "mastered";
     const latestAttemptFailed = latestAttempt?.passed === false;
-    const vivaRequested = majorAssignment?.status === "viva_requested";
-    const requiresVivaRequest = Boolean(latestAttemptFailed && !vivaRequested);
-    const requiresUnlock = Boolean(latestAttemptFailed && vivaRequested && !activeUnlock);
-    const canStart =
-      !mastered &&
-      (!latestAttemptFailed || (vivaRequested && Boolean(activeUnlock)));
+    const requiresVivaRequest = false;
+    const requiresUnlock = Boolean(latestAttemptFailed && !activeUnlock);
+    const canStart = !mastered && (!latestAttemptFailed || Boolean(activeUnlock));
 
     return {
       majorAssignment: majorAssignment
@@ -200,17 +197,6 @@ export const requestUnlock = mutation({
 
     if (!latestAttempt || latestAttempt.passed) {
       throw new Error("Unlock requests are only available after a failed attempt.");
-    }
-
-    const majorAssignment = await ctx.db
-      .query("studentMajorObjectives")
-      .withIndex("by_user_major", (q: any) =>
-        q.eq("userId", args.userId).eq("majorObjectiveId", args.majorObjectiveId)
-      )
-      .first();
-
-    if (!majorAssignment || majorAssignment.status !== "viva_requested") {
-      throw new Error("Request viva before asking for a diagnostic unlock.");
     }
 
     const latestUnlock = await ctx.db
@@ -279,6 +265,7 @@ export const denyUnlock = mutation({
   args: {
     requestId: v.id("diagnosticUnlockRequests"),
     deniedBy: v.id("users"),
+    decisionNotes: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
     const request = await ctx.db.get(args.requestId);
@@ -292,6 +279,7 @@ export const denyUnlock = mutation({
       status: "denied",
       handledBy: args.deniedBy,
       handledAt: now,
+      decisionNotes: args.decisionNotes,
     });
 
     return { success: true };
@@ -588,10 +576,6 @@ export const submitAttempt = mutation({
       (majorAssignment?.assignedBy as Id<"users"> | undefined) ?? args.userId;
 
     if (latestAttempt && latestAttempt.passed === false) {
-      if (majorAssignment?.status !== "viva_requested") {
-        throw new Error("Request viva before taking a retake.");
-      }
-
       const latestUnlock = await ctx.db
         .query("diagnosticUnlocks")
         .withIndex("by_user_major", (q: any) =>

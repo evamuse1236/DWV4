@@ -68,7 +68,7 @@ describe("Sidebar", () => {
       renderWithRouter(<Sidebar />, { route: "/dashboard" });
 
       // Admin-only items should NOT be visible
-      for (const label of ["Students", "Sprints", "Objectives", "Viva Queue", "Reviews", "Books", "Norms"] as const) {
+      for (const label of ["Students", "Sprints", "Objectives", "Viva", "Diagnostics", "Reviews", "Books", "Norms"] as const) {
         expect(screen.queryByText(label)).not.toBeInTheDocument();
       }
     });
@@ -101,8 +101,11 @@ describe("Sidebar", () => {
       renderWithRouter(<Sidebar />, { route: "/admin" });
 
       // Admin nav items should be visible
-      for (const label of ["Dashboard", "Students", "Norms", "Sprints", "Objectives", "Viva Queue", "Reviews", "Books", "Trust Jar"] as const) {
+      for (const label of ["Dashboard", "Students", "Objectives", "Viva", "Diagnostics", "Reviews", "Sprints", "Books", "Norms", "Trust Jar"] as const) {
         expect(screen.getByText(label)).toBeInTheDocument();
+      }
+      for (const label of ["Projects", "Character", "Comments"] as const) {
+        expect(screen.queryByText(label)).not.toBeInTheDocument();
       }
     });
 
@@ -314,7 +317,7 @@ describe("Sidebar", () => {
       expect(objectivesLink).toHaveClass("active");
     });
 
-    it("/admin/viva highlights Viva Queue link", () => {
+    it("/admin/viva highlights Viva link", () => {
       mockUseAuth.mockReturnValue({
         user: { role: "admin", displayName: "Admin User" },
         logout: vi.fn(),
@@ -322,7 +325,7 @@ describe("Sidebar", () => {
 
       renderWithRouter(<Sidebar />, { route: "/admin/viva" });
 
-      const vivaLink = screen.getByRole("link", { name: /viva queue/i });
+      const vivaLink = screen.getByRole("link", { name: /^viva$/i });
       expect(vivaLink).toHaveClass("active");
     });
   });

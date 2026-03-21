@@ -29,6 +29,7 @@ Purpose: fast navigation to where behavior actually lives.
 - `/sprint`
 - `/deep-work`
 - `/deep-work/:domainId`
+- `/deep-work/mastery/:majorObjectiveId`
 - `/deep-work/diagnostic/:majorObjectiveId`
 - `/reading`
 - `/review`
@@ -43,15 +44,12 @@ Purpose: fast navigation to where behavior actually lives.
 - `/admin/students`
 - `/admin/students/:studentId`
 - `/admin/sprints`
-- `/admin/projects`
-- `/admin/projects/:projectId`
 - `/admin/objectives`
 - `/admin/viva`
+- `/admin/diagnostics`
 - `/admin/reviews` (with `/admin/presentations` redirected)
 - `/admin/books`
 - `/admin/norms`
-- `/admin/comments`
-- `/admin/character`
 - `/admin/trust-jar`
 - `/admin/settings`
 
@@ -59,7 +57,8 @@ Purpose: fast navigation to where behavior actually lives.
 
 - Auth/session: `src/hooks/useAuth.tsx`, `convex/auth.ts`
 - Deep work/progress: `convex/objectives.ts`, `convex/progress.ts`
-- Diagnostics: `src/pages/student/DiagnosticPage.tsx`, `src/lib/diagnostic.ts`, `convex/diagnostics.ts`
+- Mastery flow: `src/pages/student/MasteryPage.tsx`, `src/components/mastery/MasteryStatusCard.tsx`, `src/lib/mastery.ts`, `convex/mastery.ts`
+- Diagnostics: `src/pages/student/DiagnosticPage.tsx`, `src/pages/admin/DiagnosticsPage.tsx`, `src/lib/diagnostic.ts`, `convex/diagnostics.ts`
 - AI actions: `convex/ai.ts`
 - Reading flow: `src/pages/student/ReadingPage.tsx`, `src/pages/student/ReviewPage.tsx`, `convex/books.ts` (modal `Read Book` CTA + optimistic Reading list updates + review prompt suggestions)
-- Admin queues: `src/pages/admin/*` (including `ReviewQueuePage.tsx` inline changes-request editor), `convex/objectives.ts`, `convex/books.ts`, `convex/diagnostics.ts`
+- Admin shell and queues: `src/components/layout/AdminLayout.tsx`, `src/pages/admin/AdminDashboard.tsx`, `src/pages/admin/*` (including `VivaQueuePage.tsx`, `DiagnosticsPage.tsx`, and `ReviewQueuePage.tsx`), `convex/mastery.ts`, `convex/books.ts`, `convex/diagnostics.ts`

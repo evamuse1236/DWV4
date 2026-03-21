@@ -119,13 +119,13 @@ const studentNavItems: NavItem[] = [
 const adminNavItems: NavItem[] = [
   { path: "/admin", label: "Dashboard", icon: Icons.home },
   { path: "/admin/students", label: "Students", icon: Icons.users },
-  { path: "/admin/norms", label: "Norms", icon: Icons.listChecks },
-  { path: "/admin/sprints", label: "Sprints", icon: Icons.calendar },
   { path: "/admin/objectives", label: "Objectives", icon: Icons.clipboard },
-  { path: "/admin/viva", label: "Viva Queue", icon: Icons.check },
+  { path: "/admin/viva", label: "Viva", icon: Icons.check },
+  { path: "/admin/diagnostics", label: "Diagnostics", icon: Icons.listChecks },
   { path: "/admin/reviews", label: "Reviews", icon: Icons.presentation },
+  { path: "/admin/sprints", label: "Sprints", icon: Icons.calendar },
   { path: "/admin/books", label: "Books", icon: Icons.books },
-  { path: "/admin/character", label: "Character", icon: Icons.character },
+  { path: "/admin/norms", label: "Norms", icon: Icons.listChecks },
   { path: "/admin/trust-jar", label: "Trust Jar", icon: Icons.jar },
   { path: "/admin/settings", label: "Settings", icon: Icons.settings },
 ];

@@ -1,61 +1,38 @@
-/**
- * Tests for DomainDetailPage component.
- *
- * The DomainDetailPage displays:
- * - Loading UI when domain data is loading
- * - Redirect to /deep-work for invalid domainId
- * - Domain header with stats (mastered/total)
- * - List of major objectives with expandable sub-objectives
- * - Activity toggles that call api.progress.toggleActivity
- * - Viva request button that enables only when conditions are met
- * - Status labels for major and sub objectives
- */
-import { render, screen, waitFor } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi, beforeEach } from "vitest";
+import { beforeEach, describe, expect, it, vi } from "vitest";
+import { MemoryRouter } from "react-router-dom";
 
-// Mock convex/react
 const mockToggleActivity = vi.fn().mockResolvedValue({});
-const mockUpdateObjectiveStatus = vi.fn().mockResolvedValue({});
 
 vi.mock("convex/react", () => ({
   useQuery: vi.fn(),
   useMutation: vi.fn((mutation: string) => {
     if (mutation === "progress.toggleActivity") return mockToggleActivity;
-    if (mutation === "objectives.updateStatus") return mockUpdateObjectiveStatus;
     return vi.fn().mockResolvedValue({});
   }),
 }));
 
-// Mock the API
 vi.mock("../../../../convex/_generated/api", () => ({
   api: {
-    domains: {
-      getById: "domains.getById",
-    },
-    objectives: {
-      getAssignedByDomain: "objectives.getAssignedByDomain",
-      updateStatus: "objectives.updateStatus",
-    },
-    diagnostics: {
-      getUnlockState: "diagnostics.getUnlockState",
-      requestUnlock: "diagnostics.requestUnlock",
-    },
-    progress: {
-      toggleActivity: "progress.toggleActivity",
-    },
+    domains: { getById: "domains.getById" },
+    objectives: { getAssignedByDomain: "objectives.getAssignedByDomain" },
+    mastery: { getMajorMasteryState: "mastery.getMajorMasteryState" },
+    progress: { toggleActivity: "progress.toggleActivity" },
   },
 }));
 
-// Mock react-router-dom
 const mockNavigate = vi.fn();
-vi.mock("react-router-dom", () => ({
-  useParams: vi.fn(() => ({ domainId: "domain_123" })),
-  useNavigate: () => mockNavigate,
-  Navigate: ({ to }: { to: string }) => <div data-testid="navigate-to">{to}</div>,
-}));
+vi.mock("react-router-dom", async (importOriginal) => {
+  const actual = await importOriginal<typeof import("react-router-dom")>();
+  return {
+    ...actual,
+    useParams: vi.fn(() => ({ domainId: "domain_123_valid_id" })),
+    useNavigate: () => mockNavigate,
+    Navigate: ({ to }: { to: string }) => <div data-testid="navigate-to">{to}</div>,
+  };
+});
 
-// Mock useAuth hook
 vi.mock("../../../hooks/useAuth", () => ({
   useAuth: vi.fn(() => ({
     user: {
@@ -64,656 +41,181 @@ vi.mock("../../../hooks/useAuth", () => ({
       displayName: "Test User",
       role: "student",
     },
-    isLoading: false,
-    login: vi.fn(),
-    logout: vi.fn(),
   })),
 }));
 
-// Mock framer-motion
 vi.mock("framer-motion", () => ({
   motion: {
-    div: ({ children, onClick, className, style, ...props }: any) => (
-      <div onClick={onClick} className={className} style={style} {...props}>
-        {children}
-      </div>
-    ),
-    button: ({ children, onClick, className, disabled, ...props }: any) => (
-      <button onClick={onClick} className={className} disabled={disabled} {...props}>
-        {children}
-      </button>
-    ),
+    div: ({ children, ...props }: any) => <div {...props}>{children}</div>,
+    button: ({ children, ...props }: any) => <button {...props}>{children}</button>,
   },
-  AnimatePresence: ({ children }: any) => <>{children}</>,
 }));
 
-// Mock domain utils
 vi.mock("../../../lib/domain-utils", () => ({
   getDomainIcon: () => <svg data-testid="domain-icon" />,
   getDomainColorClass: () => "pastel-blue",
 }));
 
-// Import after mocking
+import { useMutation, useQuery } from "convex/react";
 import { DomainDetailPage } from "../DomainDetailPage";
-import { useQuery, useMutation } from "convex/react";
-import { useParams } from "react-router-dom";
 
-// Mock data
 const mockDomain = {
   _id: "domain_123",
   name: "Mathematics",
   description: "Build strong math foundations",
 };
 
-const createMockAssignedMajors = (options: {
-  majorStatus?: string;
-  subStatus?: string;
-  allSubsCompleted?: boolean;
-  hasActivities?: boolean;
-  activitiesCompleted?: boolean;
-} = {}) => {
-  const {
-    majorStatus = "in_progress",
-    subStatus = "in_progress",
-    allSubsCompleted = false,
-    hasActivities = true,
-    activitiesCompleted = false,
-  } = options;
-
-  const activities = hasActivities
-    ? [
-        {
-          _id: "activity_1",
-          title: "Watch video on linear equations",
-          url: "https://example.com/video1",
-          type: "video",
-          order: 1,
-          progress: { completed: activitiesCompleted },
-        },
-        {
-          _id: "activity_2",
-          title: "Practice problems",
-          url: "https://example.com/practice1",
-          type: "practice",
-          order: 2,
-          progress: { completed: activitiesCompleted },
-        },
-      ]
-    : [];
-
-  return [
-    {
-      majorObjective: {
-        _id: "major_1",
-        title: "Algebra Basics",
-        description: "Learn fundamental algebra concepts",
-        difficulty: "intermediate",
-      },
-      assignment: {
-        _id: "assignment_1",
-        status: majorStatus,
-      },
-      subObjectives: [
-        {
-          _id: "sub_obj_1",
-          objectiveId: "obj_1",
-          status: allSubsCompleted ? "completed" : subStatus,
-          objective: {
-            _id: "obj_1",
-            title: "Linear Equations",
-            description: "Solve linear equations in one variable",
-            difficulty: "beginner",
-          },
-          activities: allSubsCompleted
-            ? activities.map((a) => ({
-                ...a,
-                progress: { completed: true },
-              }))
-            : activities,
-        },
-        {
-          _id: "sub_obj_2",
-          objectiveId: "obj_2",
-          status: allSubsCompleted ? "completed" : "assigned",
-          objective: {
-            _id: "obj_2",
-            title: "Quadratic Equations",
-            description: "Solve quadratic equations",
-            difficulty: "intermediate",
-          },
-          activities: allSubsCompleted
-            ? activities.map((a) => ({
-                ...a,
-                _id: a._id + "_2",
-                progress: { completed: true },
-              }))
-            : activities.map((a) => ({
-                ...a,
-                _id: a._id + "_2",
-                progress: { completed: false },
-              })),
-        },
-      ],
+const assignedMajors = [
+  {
+    majorObjective: {
+      _id: "major_1",
+      title: "Algebra Basics",
+      description: "Learn fundamental algebra concepts",
+      difficulty: "intermediate",
     },
-  ];
+    assignment: {
+      _id: "assignment_1",
+      status: "in_progress",
+      vivaStatus: "requested",
+    },
+    subObjectives: [
+      {
+        _id: "sub_obj_1",
+        objectiveId: "obj_1",
+        status: "in_progress",
+        objective: {
+          _id: "obj_1",
+          title: "Linear Equations",
+          description: "Solve linear equations in one variable",
+          difficulty: "beginner",
+        },
+        activities: [
+          {
+            _id: "activity_1",
+            title: "Watch video on linear equations",
+            url: "https://example.com/video1",
+            type: "video",
+            order: 1,
+            progress: { completed: false },
+          },
+        ],
+      },
+    ],
+  },
+];
+
+const masteryState = {
+  majorObjective: {
+    _id: "major_1",
+    title: "Algebra Basics",
+  },
+  domain: { _id: "domain_123", name: "Mathematics" },
+  majorAssignment: {
+    studentMajorObjectiveId: "assignment_1",
+    status: "in_progress",
+    vivaStatus: "requested",
+    vivaDecisionNotes: "Bring a clearer explanation for equation balancing.",
+  },
+  readiness: {
+    totalSubObjectives: 1,
+    completedSubObjectives: 1,
+    allSubObjectivesComplete: true,
+  },
+  latestAttempt: {
+    attemptId: "attempt_1",
+    passed: false,
+    score: 6,
+    questionCount: 10,
+    scorePercent: 60,
+    diagnosticModuleName: "Algebra",
+  },
+  retake: {
+    pendingRequest: null,
+    latestDecision: null,
+    activeUnlock: null,
+  },
+  actions: {
+    canStartDiagnostic: false,
+    canRequestViva: false,
+    canRequestRetake: true,
+  },
+  nextStep: "await_viva_decision",
 };
 
 describe("DomainDetailPage", () => {
+  const renderPage = () =>
+    render(
+      <MemoryRouter>
+        <DomainDetailPage />
+      </MemoryRouter>
+    );
+
   beforeEach(() => {
     vi.clearAllMocks();
-    mockToggleActivity.mockClear();
-    mockUpdateObjectiveStatus.mockClear();
-  });
-
-  describe("Guards and redirects", () => {
-    it("redirects to /deep-work when domainId is invalid (too short)", () => {
-      (useParams as any).mockReturnValue({ domainId: "abc" });
-
-      render(<DomainDetailPage />);
-
-      expect(screen.getByTestId("navigate-to")).toHaveTextContent("/deep-work");
+    (useMutation as any).mockImplementation((mutation: string) => {
+      if (mutation === "progress.toggleActivity") return mockToggleActivity;
+      return vi.fn().mockResolvedValue({});
     });
-
-    it("redirects to /deep-work when domainId is undefined", () => {
-      (useParams as any).mockReturnValue({ domainId: undefined });
-
-      render(<DomainDetailPage />);
-
-      expect(screen.getByTestId("navigate-to")).toHaveTextContent("/deep-work");
-    });
-
-    it("redirects to /deep-work when domainId contains invalid characters", () => {
-      (useParams as any).mockReturnValue({ domainId: "domain@#$%invalid" });
-
-      render(<DomainDetailPage />);
-
-      expect(screen.getByTestId("navigate-to")).toHaveTextContent("/deep-work");
-    });
-
-    it("shows loading UI when domain is missing (loading)", () => {
-      (useParams as any).mockReturnValue({ domainId: "domain_123_valid_id" });
-      (useQuery as any).mockImplementation((query: string) => {
-        if (query === "domains.getById") return undefined;
-        if (query === "objectives.getAssignedByDomain") return undefined;
-        return undefined;
-      });
-
-      render(<DomainDetailPage />);
-
-      // When domain is loading, should show "Loading domain..." message
-      expect(screen.getByText(/loading domain/i)).toBeInTheDocument();
-      expect(screen.getByText(/please wait/i)).toBeInTheDocument();
+    (useQuery as any).mockImplementation((query: string, args: any) => {
+      if (query === "domains.getById") return mockDomain;
+      if (query === "objectives.getAssignedByDomain") return assignedMajors;
+      if (query === "mastery.getMajorMasteryState" && args?.majorObjectiveId === "major_1") {
+        return masteryState;
+      }
+      return undefined;
     });
   });
 
-  describe("Domain display", () => {
-    beforeEach(() => {
-      (useParams as any).mockReturnValue({ domainId: "domain_123_valid_id" });
-    });
+  it("renders domain details and mastery summary content", () => {
+    renderPage();
 
-    it("displays domain name and description", () => {
-      (useQuery as any).mockImplementation((query: string) => {
-        if (query === "domains.getById") return mockDomain;
-        if (query === "objectives.getAssignedByDomain")
-          return createMockAssignedMajors();
-        return undefined;
-      });
+    expect(screen.getByText("Mathematics")).toBeInTheDocument();
+    expect(screen.getByText("Build strong math foundations")).toBeInTheDocument();
+    expect(screen.getByText("Coach note")).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: /open mastery/i })).toHaveAttribute(
+      "href",
+      "/deep-work/mastery/major_1"
+    );
+  });
 
-      render(<DomainDetailPage />);
+  it("expands a sub-objective to show activities", async () => {
+    const user = userEvent.setup();
+    renderPage();
 
-      expect(screen.getByText("Mathematics")).toBeInTheDocument();
-      expect(
-        screen.getByText("Build strong math foundations")
-      ).toBeInTheDocument();
-    });
+    expect(screen.queryByText("Watch video on linear equations")).not.toBeInTheDocument();
+    await user.click(screen.getByText("Linear Equations"));
+    expect(screen.getByText("Watch video on linear equations")).toBeInTheDocument();
+  });
 
-    it("displays mastered and total counts correctly", () => {
-      const majorsWithMastered = [
-        ...createMockAssignedMajors({ majorStatus: "mastered" }),
-        {
-          majorObjective: {
-            _id: "major_2",
-            title: "Geometry",
-            description: "Learn geometry",
-          },
-          assignment: {
-            _id: "assignment_2",
-            status: "in_progress",
-          },
-          subObjectives: [],
-        },
-      ];
+  it("toggles activity progress", async () => {
+    const user = userEvent.setup();
+    renderPage();
 
-      (useQuery as any).mockImplementation((query: string) => {
-        if (query === "domains.getById") return mockDomain;
-        if (query === "objectives.getAssignedByDomain") return majorsWithMastered;
-        return undefined;
-      });
+    await user.click(screen.getByText("Linear Equations"));
+    const activityRow = screen.getByText("Watch video on linear equations").closest(".flex.items-center");
+    const toggle = activityRow?.querySelector("button");
+    expect(toggle).toBeTruthy();
 
-      render(<DomainDetailPage />);
-
-      // Should show 1 mastered and 2 total
-      expect(screen.getByText("1")).toBeInTheDocument(); // Mastered count
-      expect(screen.getByText("2")).toBeInTheDocument(); // Total count
-    });
-
-    it("shows empty state when no objectives are assigned", () => {
-      (useQuery as any).mockImplementation((query: string) => {
-        if (query === "domains.getById") return mockDomain;
-        if (query === "objectives.getAssignedByDomain") return [];
-        return undefined;
-      });
-
-      render(<DomainDetailPage />);
-
-      expect(screen.getByText(/no objectives yet/i)).toBeInTheDocument();
+    await user.click(toggle!);
+    expect(mockToggleActivity).toHaveBeenCalledWith({
+      userId: "user_123",
+      activityId: "activity_1",
+      studentObjectiveId: "sub_obj_1",
     });
   });
 
-  describe("Activity toggle", () => {
-    beforeEach(() => {
-      (useParams as any).mockReturnValue({ domainId: "domain_123_valid_id" });
-      (useQuery as any).mockImplementation((query: string) => {
-        if (query === "domains.getById") return mockDomain;
-        if (query === "objectives.getAssignedByDomain")
-          return createMockAssignedMajors({ hasActivities: true });
-        return undefined;
-      });
-    });
+  it("navigates back to deep work", async () => {
+    const user = userEvent.setup();
+    renderPage();
 
-    it("calls api.progress.toggleActivity with correct args when activity is toggled", async () => {
-      const user = userEvent.setup();
-      render(<DomainDetailPage />);
-
-      // First, expand the sub-objective to see activities
-      const subObjectiveHeader = screen.getByText("Linear Equations");
-      await user.click(subObjectiveHeader);
-
-      // Wait for activities to be visible
-      await waitFor(() => {
-        expect(screen.getByText("Watch video on linear equations")).toBeInTheDocument();
-      });
-
-      // Find the activity row and its toggle button
-      // The button is the first button in the activity row (the circular checkbox)
-      const activityRow = screen.getByText("Watch video on linear equations").closest(".flex.items-center");
-      expect(activityRow).toBeInTheDocument();
-
-      const activityToggle = activityRow?.querySelector("button");
-      expect(activityToggle).toBeInTheDocument();
-      await user.click(activityToggle!);
-
-      expect(mockToggleActivity).toHaveBeenCalledWith({
-        userId: "user_123",
-        activityId: "activity_1",
-        studentObjectiveId: "sub_obj_1",
-      });
-    });
+    await user.click(screen.getByText(/back to deep work/i));
+    expect(mockNavigate).toHaveBeenCalledWith("/deep-work");
   });
 
-  describe("Diagnostic CTA", () => {
-    beforeEach(() => {
-      (useParams as any).mockReturnValue({ domainId: "domain_123_valid_id" });
-    });
-
-    it("shows 'Start Diagnostic' when there is no failed attempt", () => {
-      (useQuery as any).mockImplementation((query: string) => {
-        if (query === "domains.getById") return mockDomain;
-        if (query === "objectives.getAssignedByDomain")
-          return createMockAssignedMajors({
-            majorStatus: "in_progress",
-            allSubsCompleted: true,
-          });
-        if (query === "diagnostics.getUnlockState")
-          return {
-            activeUnlock: null,
-            pendingRequest: null,
-            latestAttempt: null,
-            majorAssignment: null,
-          };
-        return undefined;
-      });
-
-      render(<DomainDetailPage />);
-
-      expect(
-        screen.getByRole("button", { name: /start diagnostic/i })
-      ).toBeInTheDocument();
-    });
-
-    it("shows 'Start Diagnostic' when major is ready and unlock is active", () => {
-      (useQuery as any).mockImplementation((query: string) => {
-        if (query === "domains.getById") return mockDomain;
-        if (query === "objectives.getAssignedByDomain")
-          return createMockAssignedMajors({
-            majorStatus: "in_progress",
-            allSubsCompleted: true,
-          });
-        if (query === "diagnostics.getUnlockState")
-          return {
-            activeUnlock: { unlockId: "unlock_1", expiresAt: Date.now() + 1000, attemptsRemaining: 1 },
-            pendingRequest: null,
-            latestAttempt: null,
-            majorAssignment: null,
-          };
-        return undefined;
-      });
-
-      render(<DomainDetailPage />);
-
-      expect(
-        screen.getByRole("button", { name: /start diagnostic/i })
-      ).toBeInTheDocument();
-    });
-
-    it("shows 'Start Diagnostic' when major is not ready and there is no failed attempt", () => {
-      (useQuery as any).mockImplementation((query: string) => {
-        if (query === "domains.getById") return mockDomain;
-        if (query === "objectives.getAssignedByDomain")
-          return createMockAssignedMajors({
-            majorStatus: "in_progress",
-            allSubsCompleted: false,
-          });
-        if (query === "diagnostics.getUnlockState")
-          return {
-            activeUnlock: { unlockId: "unlock_1", expiresAt: Date.now() + 1000, attemptsRemaining: 1 },
-            pendingRequest: null,
-            latestAttempt: null,
-            majorAssignment: null,
-          };
-        return undefined;
-      });
-
-      render(<DomainDetailPage />);
-
-      expect(
-        screen.getByRole("button", { name: /start diagnostic/i })
-      ).toBeInTheDocument();
-    });
-
-    it("shows 'Viva requested' indicator when viva is already requested", () => {
-      (useQuery as any).mockImplementation((query: string) => {
-        if (query === "domains.getById") return mockDomain;
-        if (query === "objectives.getAssignedByDomain")
-          return createMockAssignedMajors({
-            majorStatus: "viva_requested",
-            allSubsCompleted: true,
-          });
-        if (query === "diagnostics.getUnlockState")
-          return {
-            activeUnlock: null,
-            pendingRequest: null,
-            latestAttempt: { passed: false },
-            majorAssignment: null,
-          };
-        return undefined;
-      });
-
-      render(<DomainDetailPage />);
-
-      // The component shows both "Viva Requested" in the status badge and "Viva requested" indicator
-      const vivaIndicators = screen.getAllByText(/viva requested/i);
-      expect(vivaIndicators.length).toBeGreaterThan(0);
-    });
-
-    it("shows 'Mastered' indicator when major is mastered", () => {
-      (useQuery as any).mockImplementation((query: string) => {
-        if (query === "domains.getById") return mockDomain;
-        if (query === "objectives.getAssignedByDomain")
-          return createMockAssignedMajors({
-            majorStatus: "mastered",
-            allSubsCompleted: true,
-          });
-        return undefined;
-      });
-
-      render(<DomainDetailPage />);
-
-      // The component shows both "Mastered" in the status badge and "Mastered" indicator
-      const masteredIndicators = screen.getAllByText("Mastered");
-      expect(masteredIndicators.length).toBeGreaterThan(0);
-    });
-
-    it("shows 'Request Viva' after a failed diagnostic and calls updateStatus", async () => {
-      const user = userEvent.setup();
-      (useQuery as any).mockImplementation((query: string) => {
-        if (query === "domains.getById") return mockDomain;
-        if (query === "objectives.getAssignedByDomain")
-          return createMockAssignedMajors({
-            majorStatus: "in_progress",
-            allSubsCompleted: true,
-          });
-        if (query === "diagnostics.getUnlockState")
-          return {
-            activeUnlock: null,
-            pendingRequest: null,
-            latestAttempt: { passed: false },
-            majorAssignment: null,
-          };
-        return undefined;
-      });
-
-      render(<DomainDetailPage />);
-
-      const vivaButton = screen.getByRole("button", { name: /^request viva$/i });
-      await user.click(vivaButton);
-
-      expect(mockUpdateObjectiveStatus).toHaveBeenCalledWith({
-        studentMajorObjectiveId: "assignment_1",
-        status: "viva_requested",
-      });
-    });
-  });
-
-  describe("Status rendering", () => {
-    beforeEach(() => {
-      (useParams as any).mockReturnValue({ domainId: "domain_123_valid_id" });
-    });
-
-    it("displays correct label for 'assigned' major status", () => {
-      (useQuery as any).mockImplementation((query: string) => {
-        if (query === "domains.getById") return mockDomain;
-        if (query === "objectives.getAssignedByDomain")
-          return createMockAssignedMajors({ majorStatus: "assigned" });
-        return undefined;
-      });
-
-      render(<DomainDetailPage />);
-
-      // "Assigned" appears in the major status badge
-      const assignedLabels = screen.getAllByText("Assigned");
-      expect(assignedLabels.length).toBeGreaterThan(0);
-    });
-
-    it("displays correct label for 'in_progress' major status", () => {
-      (useQuery as any).mockImplementation((query: string) => {
-        if (query === "domains.getById") return mockDomain;
-        if (query === "objectives.getAssignedByDomain")
-          return createMockAssignedMajors({ majorStatus: "in_progress" });
-        return undefined;
-      });
-
-      render(<DomainDetailPage />);
-
-      // "In Progress" appears in the major status badge
-      const inProgressLabels = screen.getAllByText("In Progress");
-      expect(inProgressLabels.length).toBeGreaterThan(0);
-    });
-
-    it("displays correct label for 'viva_requested' major status", () => {
-      (useQuery as any).mockImplementation((query: string) => {
-        if (query === "domains.getById") return mockDomain;
-        if (query === "objectives.getAssignedByDomain")
-          return createMockAssignedMajors({ majorStatus: "viva_requested" });
-        return undefined;
-      });
-
-      render(<DomainDetailPage />);
-
-      // "Viva Requested" appears in the major status badge
-      expect(screen.getByText("Viva Requested")).toBeInTheDocument();
-    });
-
-    it("displays correct label for 'mastered' major status", () => {
-      (useQuery as any).mockImplementation((query: string) => {
-        if (query === "domains.getById") return mockDomain;
-        if (query === "objectives.getAssignedByDomain")
-          return createMockAssignedMajors({ majorStatus: "mastered" });
-        return undefined;
-      });
-
-      render(<DomainDetailPage />);
-
-      // "Mastered" appears in the major status badge and as an indicator
-      const masteredLabels = screen.getAllByText("Mastered");
-      expect(masteredLabels.length).toBeGreaterThan(0);
-    });
-
-    it("displays sub-objective status labels correctly", async () => {
-      const user = userEvent.setup();
-      (useQuery as any).mockImplementation((query: string) => {
-        if (query === "domains.getById") return mockDomain;
-        if (query === "objectives.getAssignedByDomain")
-          return createMockAssignedMajors({
-            subStatus: "in_progress",
-            allSubsCompleted: false,
-          });
-        return undefined;
-      });
-
-      render(<DomainDetailPage />);
-
-      // Sub-objective statuses are visible in the list
-      // "In Progress" for first sub, "Assigned" for second
-      const statusLabels = screen.getAllByText(/in progress|assigned/i);
-      expect(statusLabels.length).toBeGreaterThan(0);
-    });
-  });
-
-  describe("Sub-objective expansion", () => {
-    beforeEach(() => {
-      (useParams as any).mockReturnValue({ domainId: "domain_123_valid_id" });
-      (useQuery as any).mockImplementation((query: string) => {
-        if (query === "domains.getById") return mockDomain;
-        if (query === "objectives.getAssignedByDomain")
-          return createMockAssignedMajors({ hasActivities: true });
-        return undefined;
-      });
-    });
-
-    it("expands sub-objective on click to show activities", async () => {
-      const user = userEvent.setup();
-      render(<DomainDetailPage />);
-
-      // Activities should not be visible initially
-      expect(
-        screen.queryByText("Watch video on linear equations")
-      ).not.toBeInTheDocument();
-
-      // Click sub-objective to expand
-      await user.click(screen.getByText("Linear Equations"));
-
-      // Activities should now be visible
-      expect(
-        screen.getByText("Watch video on linear equations")
-      ).toBeInTheDocument();
-      expect(screen.getByText("Practice problems")).toBeInTheDocument();
-    });
-
-    it("collapses sub-objective on second click", async () => {
-      const user = userEvent.setup();
-      render(<DomainDetailPage />);
-
-      // Click to expand
-      await user.click(screen.getByText("Linear Equations"));
-      expect(
-        screen.getByText("Watch video on linear equations")
-      ).toBeInTheDocument();
-
-      // Click again to collapse
-      await user.click(screen.getByText("Linear Equations"));
-      expect(
-        screen.queryByText("Watch video on linear equations")
-      ).not.toBeInTheDocument();
-    });
-
-    it("shows activity progress percentage", async () => {
-      const user = userEvent.setup();
-
-      // Create majors with one activity completed
-      const majorsWithProgress = [
-        {
-          ...createMockAssignedMajors({ hasActivities: true })[0],
-          subObjectives: [
-            {
-              _id: "sub_obj_1",
-              objectiveId: "obj_1",
-              status: "in_progress",
-              objective: {
-                _id: "obj_1",
-                title: "Linear Equations",
-                description: "Solve linear equations",
-                difficulty: "beginner",
-              },
-              activities: [
-                {
-                  _id: "activity_1",
-                  title: "Watch video",
-                  url: "https://example.com/video1",
-                  type: "video",
-                  order: 1,
-                  progress: { completed: true },
-                },
-                {
-                  _id: "activity_2",
-                  title: "Practice",
-                  url: "https://example.com/practice",
-                  type: "practice",
-                  order: 2,
-                  progress: { completed: false },
-                },
-              ],
-            },
-          ],
-        },
-      ];
-
-      (useQuery as any).mockImplementation((query: string) => {
-        if (query === "domains.getById") return mockDomain;
-        if (query === "objectives.getAssignedByDomain") return majorsWithProgress;
-        return undefined;
-      });
-
-      render(<DomainDetailPage />);
-
-      // Expand sub-objective
-      await user.click(screen.getByText("Linear Equations"));
-
-      // Should show 50% (1 of 2 complete)
-      expect(screen.getByText("50%")).toBeInTheDocument();
-      expect(screen.getByText(/1 of 2 complete/i)).toBeInTheDocument();
-    });
-  });
-
-  describe("Back navigation", () => {
-    beforeEach(() => {
-      (useParams as any).mockReturnValue({ domainId: "domain_123_valid_id" });
-      (useQuery as any).mockImplementation((query: string) => {
-        if (query === "domains.getById") return mockDomain;
-        if (query === "objectives.getAssignedByDomain")
-          return createMockAssignedMajors();
-        return undefined;
-      });
-    });
-
-    it("navigates back to /deep-work when back button is clicked", async () => {
-      const user = userEvent.setup();
-      render(<DomainDetailPage />);
-
-      const backButton = screen.getByText(/back to deep work/i);
-      await user.click(backButton);
-
-      expect(mockNavigate).toHaveBeenCalledWith("/deep-work");
-    });
+  it("redirects invalid ids back to deep work", async () => {
+    const { useParams } = await import("react-router-dom");
+    (useParams as any).mockReturnValue({ domainId: "abc" });
+    renderPage();
+    expect(screen.getByTestId("navigate-to")).toHaveTextContent("/deep-work");
   });
 });

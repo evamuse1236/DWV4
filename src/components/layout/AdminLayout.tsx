@@ -34,6 +34,7 @@ import {
   CommandGroup,
   CommandItem,
 } from "@/components/ui/command";
+import { Button } from "@/components/ui/button";
 import { useAuth } from "@/hooks/useAuth";
 import {
   Home,
@@ -46,30 +47,46 @@ import {
   ChevronUp,
   Cookie,
   Mic,
-  FolderKanban,
   Search,
   ListChecks,
   Settings,
-  MessageSquare,
-  Sparkles,
 } from "lucide-react";
 
-// Admin navigation items
-const adminNavItems = [
+const coachWorkNavItems = [
   { path: "/admin", label: "Dashboard", icon: Home },
   { path: "/admin/students", label: "Students", icon: Users },
-  { path: "/admin/norms", label: "Norms", icon: ListChecks },
-  { path: "/admin/sprints", label: "Sprints", icon: Calendar },
-  { path: "/admin/projects", label: "Projects", icon: FolderKanban },
   { path: "/admin/objectives", label: "Objectives", icon: Target },
-  { path: "/admin/viva", label: "Viva Queue", icon: CheckCircle },
+  { path: "/admin/viva", label: "Viva", icon: CheckCircle },
+  { path: "/admin/diagnostics", label: "Diagnostics", icon: ListChecks },
   { path: "/admin/reviews", label: "Reviews", icon: Mic },
+];
+
+const manageNavItems = [
+  { path: "/admin/sprints", label: "Sprints", icon: Calendar },
   { path: "/admin/books", label: "Books", icon: BookOpen },
-  { path: "/admin/character", label: "Character", icon: Sparkles },
-  { path: "/admin/comments", label: "Comments", icon: MessageSquare },
+  { path: "/admin/norms", label: "Norms", icon: ListChecks },
   { path: "/admin/trust-jar", label: "Trust Jar", icon: Cookie },
   { path: "/admin/settings", label: "Settings", icon: Settings },
 ];
+
+type AdminNavItem = (typeof coachWorkNavItems)[number];
+
+function renderNavSection(items: AdminNavItem[], currentPath: string) {
+  return items.map((item) => (
+    <SidebarMenuItem key={item.path}>
+      <SidebarMenuButton
+        asChild
+        isActive={isNavItemActive(item.path, currentPath)}
+        tooltip={item.label}
+      >
+        <NavLink to={item.path}>
+          <item.icon className="h-4 w-4" />
+          <span>{item.label}</span>
+        </NavLink>
+      </SidebarMenuButton>
+    </SidebarMenuItem>
+  ));
+}
 
 /**
  * Checks if a nav item is active based on current pathname.
@@ -127,23 +144,32 @@ export function AdminLayout() {
 
         <SidebarContent>
           <SidebarGroup>
-            <SidebarGroupLabel>Navigation</SidebarGroupLabel>
+            <SidebarGroupLabel>Coach Work</SidebarGroupLabel>
+            <SidebarGroupContent>
+              <Button
+                variant="outline"
+                className="mb-3 w-full justify-between border-dashed"
+                onClick={() => setSearchOpen(true)}
+              >
+                <span className="flex items-center gap-2">
+                  <Search className="h-4 w-4" />
+                  Open student
+                </span>
+                <span className="rounded border border-border/60 bg-muted/60 px-1.5 py-0.5 font-mono text-[10px]">
+                  Cmd+K
+                </span>
+              </Button>
+              <SidebarMenu>
+                {renderNavSection(coachWorkNavItems, location.pathname)}
+              </SidebarMenu>
+            </SidebarGroupContent>
+          </SidebarGroup>
+
+          <SidebarGroup>
+            <SidebarGroupLabel>Manage</SidebarGroupLabel>
             <SidebarGroupContent>
               <SidebarMenu>
-                {adminNavItems.map((item) => (
-                  <SidebarMenuItem key={item.path}>
-                    <SidebarMenuButton
-                      asChild
-                      isActive={isNavItemActive(item.path, location.pathname)}
-                      tooltip={item.label}
-                    >
-                      <NavLink to={item.path}>
-                        <item.icon className="h-4 w-4" />
-                        <span>{item.label}</span>
-                      </NavLink>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
-                ))}
+                {renderNavSection(manageNavItems, location.pathname)}
               </SidebarMenu>
             </SidebarGroupContent>
           </SidebarGroup>
@@ -216,23 +242,6 @@ export function AdminLayout() {
           <Outlet />
         </main>
       </SidebarInset>
-
-      {/* Floating search pill */}
-      <button
-        onClick={() => setSearchOpen(true)}
-        className="fixed bottom-6 right-6 z-40 flex items-center gap-2 rounded-full
-          border border-border/60 bg-background/80 px-4 py-2.5 text-sm text-muted-foreground
-          shadow-lg backdrop-blur-md transition-all duration-200
-          hover:bg-background hover:text-foreground hover:shadow-xl hover:scale-105
-          active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-        aria-label="Search students (Cmd+K)"
-      >
-        <Search className="h-4 w-4" />
-        <kbd className="pointer-events-none flex h-5 select-none items-center gap-0.5
-          rounded border border-border/40 bg-muted/60 px-1.5 font-mono text-[10px] font-medium">
-          <span>⌘</span>K
-        </kbd>
-      </button>
 
       {/* Global search dialog */}
       <CommandDialog open={searchOpen} onOpenChange={setSearchOpen}>

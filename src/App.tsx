@@ -15,6 +15,7 @@ import { SprintPage } from "./pages/student/SprintPage";
 import { DeepWorkPage } from "./pages/student/DeepWorkPage";
 import { DomainDetailPage } from "./pages/student/DomainDetailPage";
 import { DiagnosticPage } from "./pages/student/DiagnosticPage";
+import { MasteryPage } from "./pages/student/MasteryPage";
 import { ReadingPage } from "./pages/student/ReadingPage";
 import { TrustJarPage } from "./pages/student/TrustJarPage";
 import { VisionBoardPage } from "./pages/student/VisionBoardPage";
@@ -27,20 +28,17 @@ import {
   AdminDashboard,
   StudentsPage,
   SprintsPage,
-  ProjectsPage,
   ObjectivesPage,
+  DiagnosticsPage,
   VivaQueuePage,
   ReviewQueuePage,
   BooksPage,
   NormsPage,
-  CommentsPage,
   AdminSettingsPage,
 } from "./pages/admin";
 
-import { ProjectDetailPage } from "./pages/admin/ProjectDetailPage";
 import { StudentDetailPage } from "./pages/admin/StudentDetailPage";
 import { AdminTrustJarPage } from "./pages/admin/TrustJarPage";
-import { CharacterCatalogPage } from "./pages/admin/CharacterCatalogPage";
 import { STUDENT_CHARACTER_SYSTEM_ENABLED } from "./lib/featureFlags";
 
 // Initialize Convex client
@@ -79,6 +77,7 @@ function App() {
               <Route path="/sprint" element={<SprintPage />} />
               <Route path="/deep-work" element={<DeepWorkPage />} />
               <Route path="/deep-work/:domainId" element={<DomainDetailPage />} />
+              <Route path="/deep-work/mastery/:majorObjectiveId" element={<MasteryPage />} />
               <Route path="/deep-work/diagnostic/:majorObjectiveId" element={<DiagnosticPage />} />
               <Route path="/reading" element={<ReadingPage />} />
               <Route path="/review" element={<ReviewPage />} />
@@ -109,16 +108,17 @@ function App() {
               <Route path="/admin/students" element={<StudentsPage />} />
               <Route path="/admin/students/:studentId" element={<StudentDetailPage />} />
               <Route path="/admin/sprints" element={<SprintsPage />} />
-              <Route path="/admin/projects" element={<ProjectsPage />} />
-              <Route path="/admin/projects/:projectId" element={<ProjectDetailPage />} />
+              <Route path="/admin/projects" element={<Navigate to="/admin" replace />} />
+              <Route path="/admin/projects/:projectId" element={<Navigate to="/admin" replace />} />
               <Route path="/admin/objectives" element={<ObjectivesPage />} />
               <Route path="/admin/viva" element={<VivaQueuePage />} />
+              <Route path="/admin/diagnostics" element={<DiagnosticsPage />} />
               <Route path="/admin/reviews" element={<ReviewQueuePage />} />
               <Route path="/admin/presentations" element={<Navigate to="/admin/reviews" replace />} />
               <Route path="/admin/books" element={<BooksPage />} />
               <Route path="/admin/norms" element={<NormsPage />} />
-              <Route path="/admin/comments" element={<CommentsPage />} />
-              <Route path="/admin/character" element={<CharacterCatalogPage />} />
+              <Route path="/admin/comments" element={<Navigate to="/admin" replace />} />
+              <Route path="/admin/character" element={<Navigate to="/admin" replace />} />
               <Route path="/admin/trust-jar" element={<AdminTrustJarPage />} />
               <Route path="/admin/settings" element={<AdminSettingsPage />} />
             </Route>

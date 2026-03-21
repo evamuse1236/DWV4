@@ -4,6 +4,7 @@ import { useQuery, useMutation } from "convex/react";
 import { motion } from "framer-motion";
 import { api } from "../../../convex/_generated/api";
 import { useAuth } from "../../hooks/useAuth";
+import { MasteryStatusCard } from "@/components/mastery/MasteryStatusCard";
 import { getDomainIcon, getDomainColorClass } from "../../lib/domain-utils";
 import {
   getObjectiveStatusClass,
@@ -42,103 +43,28 @@ const ActivityIcons = {
   ),
 };
 
-function MajorDiagnosticActions({
+function MajorMasterySummary({
   userId,
   majorObjectiveId,
-  studentMajorObjectiveId,
-  majorStatus,
-  majorReady: _majorReady,
 }: {
   userId: string;
   majorObjectiveId: string;
-  studentMajorObjectiveId: string;
-  majorStatus: ObjectiveStatus;
-  majorReady: boolean;
 }) {
-  const navigate = useNavigate();
-  const requestUnlock = useMutation(api.diagnostics.requestUnlock);
-  const updateMajorStatus = useMutation(api.objectives.updateStatus);
-  const unlockState = useQuery(api.diagnostics.getUnlockState, {
+  const masteryState = useQuery(api.mastery.getMajorMasteryState, {
     userId: userId as any,
     majorObjectiveId: majorObjectiveId as any,
   });
 
-  const hasFailedDiagnostic = Boolean(
-    unlockState?.latestAttempt && unlockState.latestAttempt.passed === false
-  );
-  const hasActiveUnlock = Boolean(unlockState?.activeUnlock);
-  const hasPendingUnlockRequest = Boolean(unlockState?.pendingRequest);
-
-  const vivaRequested = majorStatus === "viva_requested";
-  const mastered = majorStatus === "mastered";
-
-  if (mastered) {
-    return (
-      <div className="text-xs text-[#15803d] bg-[#15803d]/10 px-3 py-2 rounded-full">
-        Mastered
-      </div>
-    );
-  }
-
-  if (hasFailedDiagnostic) {
-    if (!vivaRequested) {
-      return (
-        <button
-          type="button"
-          onClick={() =>
-            updateMajorStatus({
-              studentMajorObjectiveId: studentMajorObjectiveId as any,
-              status: "viva_requested",
-            })
-          }
-          className="px-4 py-2 rounded-full text-xs uppercase tracking-[0.1em] transition-colors bg-black text-white"
-        >
-          Request Viva
-        </button>
-      );
-    }
-
-    if (hasActiveUnlock) {
-      return (
-        <button
-          type="button"
-          onClick={() =>
-            navigate(`/deep-work/diagnostic/${majorObjectiveId}?type=mastery`)
-          }
-          className="px-4 py-2 rounded-full text-xs uppercase tracking-[0.1em] transition-colors bg-black text-white"
-        >
-          Start Diagnostic
-        </button>
-      );
-    }
-
-    return (
-      <button
-        type="button"
-        onClick={() =>
-          requestUnlock({
-            userId: userId as any,
-            majorObjectiveId: majorObjectiveId as any,
-          })
-        }
-        disabled={hasPendingUnlockRequest}
-        className={`px-4 py-2 rounded-full text-xs uppercase tracking-[0.1em] transition-colors ${
-          hasPendingUnlockRequest ? "bg-black/5 text-[#888]" : "bg-black text-white"
-        }`}
-      >
-        {hasPendingUnlockRequest ? "Diagnostic Requested" : "Request Diagnostic"}
-      </button>
-    );
+  if (masteryState === undefined || !masteryState) {
+    return <div className="text-xs text-[#888]">Loading mastery…</div>;
   }
 
   return (
-    <button
-      type="button"
-      onClick={() => navigate(`/deep-work/diagnostic/${majorObjectiveId}?type=mastery`)}
-      className="px-4 py-2 rounded-full text-xs uppercase tracking-[0.1em] transition-colors bg-black text-white"
-    >
-      Start Diagnostic
-    </button>
+    <MasteryStatusCard
+      state={masteryState as any}
+      masteryHref={`/deep-work/mastery/${majorObjectiveId}`}
+      className="min-w-[320px] max-w-[420px]"
+    />
   );
 }
 
@@ -176,8 +102,6 @@ export function DomainDetailPage() {
       studentObjectiveId: studentObjectiveId as any,
     });
   };
-
-  // Viva is now requested only after a failed diagnostic attempt.
 
   const getActivityIcon = (type: string) => {
     const key = type.toLowerCase();
@@ -272,8 +196,6 @@ export function DomainDetailPage() {
                   : sub.activities.every((activity: any) => activity.progress?.completed)
               ).length;
               const totalSubs = major.subObjectives.length;
-              const majorReady = totalSubs > 0 && completedSubs === totalSubs;
-
               return (
                 <motion.div
                   key={major.majorObjective._id}
@@ -307,17 +229,14 @@ export function DomainDetailPage() {
                           </p>
                         )}
                       </div>
-                      {major.assignment && user && (
-                        <div className="flex items-center gap-2">
-                          <MajorDiagnosticActions
+                      {major.assignment && user ? (
+                        <div className="w-full max-w-[420px]">
+                          <MajorMasterySummary
                             userId={user._id as any}
                             majorObjectiveId={major.majorObjective._id}
-                            studentMajorObjectiveId={major.assignment._id}
-                            majorStatus={majorStatus}
-                            majorReady={majorReady}
                           />
                         </div>
-                      )}
+                      ) : null}
                     </div>
                   </div>
 
