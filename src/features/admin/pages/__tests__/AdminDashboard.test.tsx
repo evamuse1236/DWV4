@@ -6,7 +6,7 @@ vi.mock("convex/react", () => ({
   useQuery: vi.fn(),
 }));
 
-vi.mock("../@convex/_generated/api", () => ({
+vi.mock("@convex/_generated/api", () => ({
   api: {
     users: {
       getAll: "users.getAll",
@@ -26,9 +26,6 @@ vi.mock("../@convex/_generated/api", () => ({
     },
     emotions: {
       getTodayCheckIns: "emotions.getTodayCheckIns",
-    },
-    books: {
-      getReviewSubmissions: "books.getReviewSubmissions",
     },
   },
 }));
@@ -86,15 +83,6 @@ const unlockRequests = [
   },
 ];
 
-const reviewSubmissions = [
-  {
-    _id: "studentBook_1",
-    userId: "student_2",
-    user: { displayName: "Bob Smith" },
-    book: { title: "The Hobbit", author: "J.R.R. Tolkien" },
-  },
-];
-
 const checkIns = [
   {
     _id: "check_1",
@@ -113,7 +101,6 @@ function setupQueries(overrides: Partial<Record<string, any>> = {}) {
     "sprints.getActive": activeSprint,
     "mastery.getAdminVivaQueue": vivaRequests,
     "diagnostics.getPendingUnlockRequests": unlockRequests,
-    "books.getReviewSubmissions": reviewSubmissions,
     "users.getTodayCheckInCount": 1,
     "emotions.getTodayCheckIns": checkIns,
     "objectives.getAll": [{ _id: "objective_1", title: "Fractions" }],
@@ -139,7 +126,6 @@ describe("AdminDashboard", () => {
     expect(screen.getByText("Welcome back, Coach")).toBeInTheDocument();
     expect(screen.getByText("Pending vivas")).toBeInTheDocument();
     expect(screen.getAllByText("Diagnostics").length).toBeGreaterThan(0);
-    expect(screen.getAllByText("Reviews").length).toBeGreaterThan(0);
     expect(screen.getByText("Check-ins today")).toBeInTheDocument();
 
     expect(screen.getByText("Needs attention now")).toBeInTheDocument();
@@ -154,11 +140,9 @@ describe("AdminDashboard", () => {
 
     await user.click(screen.getByRole("button", { name: /open viva/i }));
     await user.click(screen.getByRole("button", { name: /open diagnostics/i }));
-    await user.click(screen.getByRole("button", { name: /open reviews/i }));
 
     expect(mockNavigate).toHaveBeenCalledWith("/admin/viva");
     expect(mockNavigate).toHaveBeenCalledWith("/admin/diagnostics");
-    expect(mockNavigate).toHaveBeenCalledWith("/admin/reviews");
   });
 
   it("links check-ins and student jump rows to student detail", async () => {
@@ -175,7 +159,6 @@ describe("AdminDashboard", () => {
     setupQueries({
       "mastery.getAdminVivaQueue": [],
       "diagnostics.getPendingUnlockRequests": [],
-      "books.getReviewSubmissions": [],
       "emotions.getTodayCheckIns": [],
       "users.getTodayCheckInCount": 0,
     });
@@ -184,7 +167,6 @@ describe("AdminDashboard", () => {
 
     expect(screen.getByText("No viva decisions waiting.")).toBeInTheDocument();
     expect(screen.getByText("No retake requests waiting.")).toBeInTheDocument();
-    expect(screen.getByText("No review decisions waiting.")).toBeInTheDocument();
     expect(screen.getByText("No check-ins yet today.")).toBeInTheDocument();
   });
 

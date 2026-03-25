@@ -3,6 +3,9 @@ import userEvent from "@testing-library/user-event";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 const mockStartReading = vi.fn().mockResolvedValue("studentBook_new");
+const mockMarkAlreadyRead = vi.fn().mockResolvedValue("studentBook_marked");
+const mockCreateStudentSubmission = vi.fn().mockResolvedValue({ bookId: "book_new" });
+const mockFinishBook = vi.fn().mockResolvedValue({});
 const mockSaveReviewDraft = vi.fn().mockResolvedValue({});
 const mockSubmitReview = vi.fn().mockResolvedValue({});
 const mockAddReviewComment = vi.fn().mockResolvedValue({});
@@ -12,6 +15,9 @@ vi.mock("convex/react", () => ({
   useQuery: vi.fn(),
   useMutation: vi.fn((mutation: string) => {
     if (mutation === "books.startReading") return mockStartReading;
+    if (mutation === "books.markAlreadyRead") return mockMarkAlreadyRead;
+    if (mutation === "books.createStudentSubmission") return mockCreateStudentSubmission;
+    if (mutation === "books.finishBook") return mockFinishBook;
     if (mutation === "books.saveReviewDraft") return mockSaveReviewDraft;
     if (mutation === "books.submitReview") return mockSubmitReview;
     if (mutation === "books.addReviewComment") return mockAddReviewComment;
@@ -20,7 +26,7 @@ vi.mock("convex/react", () => ({
   }),
 }));
 
-vi.mock("../@convex/_generated/api", () => ({
+vi.mock("@convex/_generated/api", () => ({
   api: {
     books: {
       getAll: "books.getAll",
@@ -30,6 +36,9 @@ vi.mock("../@convex/_generated/api", () => ({
       getApprovedReviews: "books.getApprovedReviews",
       getReviewComments: "books.getReviewComments",
       startReading: "books.startReading",
+      markAlreadyRead: "books.markAlreadyRead",
+      createStudentSubmission: "books.createStudentSubmission",
+      finishBook: "books.finishBook",
       saveReviewDraft: "books.saveReviewDraft",
       submitReview: "books.submitReview",
       addReviewComment: "books.addReviewComment",
@@ -93,19 +102,19 @@ const mockStudentBooks = [
   {
     _id: "studentBook_1",
     bookId: "book_2",
-    status: "review_submitted",
-    review: "Good pacing and world building.",
+    status: "reading",
+    review: "Draft opening note.",
     rating: 4,
-    reviewSubmittedAt: Date.now() - 1000,
     book: mockAllBooks[1],
   },
   {
     _id: "studentBook_2",
     bookId: "book_3",
-    status: "review_approved",
+    status: "completed",
     review: "Loved it.",
     rating: 5,
-    reviewApprovedAt: Date.now() - 500,
+    completedAt: Date.now() - 500,
+    reviewSubmittedAt: Date.now() - 500,
     book: mockAllBooks[2],
   },
 ];
@@ -114,7 +123,7 @@ const mockApprovedReviews = [
   {
     _id: "studentBook_2",
     bookId: "book_3",
-    status: "review_approved",
+    status: "completed",
     review: "Loved it.",
     rating: 5,
     book: mockAllBooks[2],
@@ -126,7 +135,7 @@ function setupQueryMocks(overrides: Partial<Record<string, any>> = {}) {
   const data: Record<string, any> = {
     "books.getAll": mockAllBooks,
     "books.getStudentBooks": mockStudentBooks,
-    "books.getReadingStats": { reading: 1, pendingReview: 1, approved: 1 },
+    "books.getReadingStats": { reading: 1, finished: 1, reviewed: 1 },
     "books.getReadingHistory": [],
     "books.getApprovedReviews": mockApprovedReviews,
     "books.getReviewComments": [
@@ -169,7 +178,7 @@ describe("ReadingPage", () => {
     }
   });
 
-  it("shows unstarted books in Library and approved books in Finished", async () => {
+  it("shows unstarted books in Library and finished books in Finished", async () => {
     const user = userEvent.setup();
     renderPage();
 
@@ -180,7 +189,7 @@ describe("ReadingPage", () => {
     expect(screen.getByText("Charlotte's Web")).toBeInTheDocument();
   });
 
-  it("shows pending review books in Reading tab", async () => {
+  it("shows active reading books in Reading tab", async () => {
     const user = userEvent.setup();
     renderPage();
     await goToTab(user, "reading");
@@ -188,7 +197,7 @@ describe("ReadingPage", () => {
     expect(screen.queryByText("Charlotte's Web")).not.toBeInTheDocument();
   });
 
-  it("submits a review for a new book using startReading first", async () => {
+  it("finishes a new book using startReading first", async () => {
     const user = userEvent.setup();
     renderPage();
 
@@ -196,7 +205,7 @@ describe("ReadingPage", () => {
     const stars = screen.getAllByRole("button", { name: "★" });
     await user.click(stars[3]);
     await user.type(screen.getByPlaceholderText("Write your review..."), "Great pacing and characters.");
-    await user.click(screen.getByRole("button", { name: "Submit For Approval" }));
+    await user.click(screen.getByRole("button", { name: "Finish Book" }));
 
     await waitFor(() => {
       expect(mockStartReading).toHaveBeenCalledWith({
@@ -205,7 +214,7 @@ describe("ReadingPage", () => {
       });
     });
     await waitFor(() => {
-      expect(mockSubmitReview).toHaveBeenCalledWith({
+      expect(mockFinishBook).toHaveBeenCalledWith({
         studentBookId: "studentBook_new",
         rating: 4,
         review: "Great pacing and characters.",
@@ -253,33 +262,80 @@ describe("ReadingPage", () => {
     });
   });
 
-  it("shows coach feedback banner for changes requested status", async () => {
+  it("lets a student share a review from a finished book", async () => {
     setupQueryMocks({
       "books.getStudentBooks": [
         {
-          _id: "studentBook_changes",
+          _id: "studentBook_finished",
           bookId: "book_2",
-          status: "review_changes_requested",
-          coachFeedback: "Add concrete examples.",
+          status: "completed",
           rating: 3,
-          review: "Initial pass",
+          review: "",
+          completedAt: Date.now() - 1000,
           book: mockAllBooks[1],
         },
       ],
-      "books.getReadingStats": { reading: 1, pendingReview: 0, approved: 0 },
+      "books.getReadingStats": { reading: 0, finished: 1, reviewed: 0 },
       "books.getApprovedReviews": [],
     });
 
     const user = userEvent.setup();
     renderPage();
-    await goToTab(user, "reading");
+    await goToTab(user, "finished");
     await user.click(screen.getByText("Dune"));
-    expect(screen.getByText(/Coach feedback/i)).toBeInTheDocument();
-    expect(screen.getByText(/Add concrete examples\./)).toBeInTheDocument();
+    await user.type(screen.getByPlaceholderText("Write your review..."), "Worth reading for the world-building.");
+    await user.click(screen.getByRole("button", { name: "Share Review" }));
+
+    await waitFor(() => {
+      expect(mockSubmitReview).toHaveBeenCalledWith({
+        studentBookId: "studentBook_finished",
+        rating: 3,
+        review: "Worth reading for the world-building.",
+      });
+    });
   });
 
   it("renders Book Buddy", () => {
     renderPage();
     expect(screen.getByTestId("book-buddy")).toBeInTheDocument();
+  });
+
+  it("marks a library book as already read from the quick tick button", async () => {
+    const user = userEvent.setup();
+    renderPage();
+
+    await user.click(screen.getByRole("button", { name: /mark the hobbit as already read/i }));
+
+    await waitFor(() => {
+      expect(mockMarkAlreadyRead).toHaveBeenCalledWith({
+        userId: "user_123",
+        bookId: "book_1",
+      });
+    });
+  });
+
+  it("lets a student add a missing book and mark it as already read", async () => {
+    const user = userEvent.setup();
+    renderPage();
+
+    const textboxes = screen.getAllByRole("textbox");
+    await user.type(textboxes[1], "New Library Book");
+    await user.type(textboxes[2], "New Author");
+    await user.click(screen.getByRole("button", { name: /^mark already read$/i }));
+
+    await waitFor(() => {
+      expect(mockCreateStudentSubmission).toHaveBeenCalledWith({
+        userId: "user_123",
+        title: "New Library Book",
+        author: "New Author",
+      });
+    });
+
+    await waitFor(() => {
+      expect(mockMarkAlreadyRead).toHaveBeenCalledWith({
+        userId: "user_123",
+        bookId: "book_new",
+      });
+    });
   });
 });

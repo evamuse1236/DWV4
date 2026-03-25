@@ -1,9 +1,9 @@
-# Docs For Humans (Plain English)
+# Docs For Humans
 
-Use this folder when you want practical explanations without engineering jargon.
+Use this folder when you want the simple version.
 
-Read order:
+Read these first:
 1. `docs-for-humans/What-This-App-Does.md`
 2. `docs-for-humans/Daily-Ops-Checklist.md`
 
-If something conflicts, trust runtime code and `docs/` (agent docs) as source of truth.
+If these docs ever conflict with the app itself, trust the app and the technical docs in `docs/`.

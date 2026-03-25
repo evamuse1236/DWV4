@@ -1322,90 +1322,395 @@ interface AvailableBook {
   description?: string;
 }
 
-function buildCreativeBookBuddyPrompt(
-  personality: BookBuddyPersonality,
-  readingHistory: ReadingHistoryItem[],
-  availableBooks: AvailableBook[]
-): string {
-  const personalitySection = PERSONALITY_PROMPTS[personality];
+type BookBuddyPreferenceProfile = {
+  genre?: string;
+  vibe?: string;
+  pace?: string;
+  novelty?: "familiar" | "mix" | "fresh";
+  freeText?: string;
+};
 
-  const historySection =
-    readingHistory.length > 0
-      ? `READING HISTORY:\n${readingHistory
-          .map(
-            (b) =>
-              `- "${b.title}" by ${b.author}${b.genre ? ` (${b.genre})` : ""}${b.rating ? ` - rated ${b.rating}/5` : ""}`
-          )
-          .join("\n")}`
-      : "READING HISTORY: None yet - first time reader!";
+type RecommendedBook = {
+  id: string;
+  title: string;
+  author: string;
+  teaser: string;
+  whyYoullLikeIt: string;
+};
 
-  const booksSection = `AVAILABLE BOOKS (use exact IDs when recommending):\n${availableBooks
-    .map(
-      (b) =>
-        `- ID="${b.id}" "${b.title}" by ${b.author}${b.genre ? ` [${b.genre}]` : ""}${b.description ? ` - ${b.description.slice(0, 80)}` : ""}`
-    )
-    .join("\n")}`;
+type SuggestedReply = {
+  label: string;
+  fullText: string;
+};
 
-  return `${personalitySection}
+type BookBuddyPayload = {
+  message: string;
+  suggestedReplies: SuggestedReply[];
+  books: RecommendedBook[];
+};
 
-${historySection}
+type RankedRecommendation = {
+  book: AvailableBook;
+  score: number;
+  freshnessScore: number;
+  reasons: string[];
+  genreKey: string;
+};
 
-${booksSection}
+const FICTION_HINTS = [
+  "fiction",
+  "fantasy",
+  "mystery",
+  "adventure",
+  "novel",
+  "story",
+  "stories",
+];
 
-YOUR TASK:
-1. Respond to what the user said in your character's voice
-2. If they're asking for recommendations, suggest 1-3 books from the AVAILABLE BOOKS list
-3. For each book, include: the exact ID, a fun 2-sentence teaser, and why they'll like it based on their history
-4. End with 2-4 suggested follow-up options the kid might want to click
+const VIBE_KEYWORDS: Record<string, string[]> = {
+  funny: ["funny", "humor", "humour", "laugh", "comedy"],
+  adventure: ["adventure", "quest", "journey", "action"],
+  mystery: ["mystery", "detective", "clue", "secret"],
+  realworld: ["history", "science", "real", "true", "biography", "facts"],
+  cozy: ["cozy", "gentle", "friendship", "warm"],
+  thoughtful: ["thoughtful", "ideas", "big questions", "reflection"],
+};
 
-KEEP IT SHORT AND FUN! No lectures. Be the character.
+const PACE_KEYWORDS: Record<string, string[]> = {
+  fast: ["fast", "quick", "page-turner", "action"],
+  cozy: ["cozy", "gentle", "slow", "quiet"],
+  thoughtful: ["thoughtful", "deep", "ideas", "reflective"],
+};
 
-When recommending books, use this format:
-BOOK: id="X" title="..." author="..."
-TEASER: [exciting 2 sentences]
-WHY YOU'LL LOVE IT: [connection to their interests]
-
-SUGGESTED REPLIES: [2-4 short options like "More like this!", "Different genre", etc.]`;
+function normalizeGenreKey(value?: string) {
+  if (!value) return "";
+  return value.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 }
 
-function buildFormatterPrompt(
-  creativeResponse: string,
-  availableBooks: Array<{ id: string; title: string; author: string }>
-): string {
-  const bookIds = availableBooks.map((b) => `"${b.id}"`).join(", ");
+function tokenize(value?: string) {
+  if (!value) return [];
+  return value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .split(" ")
+    .map((token) => token.trim())
+    .filter((token) => token.length >= 3);
+}
 
-  return `Convert this book buddy response into valid JSON format.
+function isFictionBook(book: AvailableBook) {
+  const haystack = `${book.genre ?? ""} ${book.description ?? ""}`.toLowerCase();
+  return FICTION_HINTS.some((hint) => haystack.includes(hint));
+}
 
-CREATIVE RESPONSE:
-${creativeResponse}
+function deterministicScore(seed: string) {
+  let hash = 0;
+  for (let index = 0; index < seed.length; index += 1) {
+    hash = (hash * 31 + seed.charCodeAt(index)) % 1000003;
+  }
+  return (hash % 1000) / 1000;
+}
 
-OUTPUT EXACTLY THIS FORMAT (start with \`\`\`buddy-response, end with \`\`\`):
-\`\`\`buddy-response
+function detectRecommendationIntent(message: string) {
+  return /\b(book|books|read|reading|recommend|recommendation|fiction|mystery|adventure|funny|surprise)\b/i.test(
+    message
+  );
+}
+
+function buildReaderProfile(readingHistory: ReadingHistoryItem[]) {
+  const genreScores = new Map<string, number>();
+
+  for (const entry of readingHistory) {
+    const genreKey = normalizeGenreKey(entry.genre);
+    if (!genreKey) continue;
+
+    const ratingBoost = entry.rating ? Math.max(entry.rating - 2, 0.5) : 1;
+    const completionBoost =
+      entry.status === "already_read" ||
+      entry.status === "completed" ||
+      entry.status === "review_submitted" ||
+      entry.status === "review_approved" ||
+      entry.status === "presented"
+        ? 1.2
+        : 0.7;
+
+    genreScores.set(genreKey, (genreScores.get(genreKey) ?? 0) + ratingBoost * completionBoost);
+  }
+
+  return {
+    genreScores,
+    topGenres: [...genreScores.entries()]
+      .sort((a, b) => b[1] - a[1])
+      .map(([genre]) => genre)
+      .slice(0, 3),
+  };
+}
+
+function buildReasonPhrase(rawReason: string) {
+  if (rawReason === "fiction boost") return "it leans into fiction, which is the default priority";
+  if (rawReason.startsWith("matches your")) return rawReason.toLowerCase();
+  if (rawReason.startsWith("fits the")) return rawReason.toLowerCase();
+  if (rawReason === "similar to books you've liked before") return rawReason;
+  if (rawReason === "adds a fresher flavor to your mix") return rawReason;
+  if (rawReason.startsWith("picks up on")) return rawReason.toLowerCase();
+  return rawReason.toLowerCase();
+}
+
+function buildWhyText(reasons: string[]) {
+  if (reasons.length === 0) return "It gives you a different flavor without feeling random.";
+  if (reasons.length === 1) return buildReasonPhrase(reasons[0]);
+  return `${buildReasonPhrase(reasons[0])}, and ${buildReasonPhrase(reasons[1])}.`;
+}
+
+function selectBookRecommendations(
+  availableBooks: AvailableBook[],
+  readingHistory: ReadingHistoryItem[],
+  preferenceProfile?: BookBuddyPreferenceProfile,
+  seedText = ""
+) {
+  const readerProfile = buildReaderProfile(readingHistory);
+  const desiredGenre = normalizeGenreKey(preferenceProfile?.genre);
+  const desiredVibe = normalizeGenreKey(preferenceProfile?.vibe);
+  const desiredPace = normalizeGenreKey(preferenceProfile?.pace);
+  const novelty = preferenceProfile?.novelty ?? "mix";
+  const textTokens = tokenize(`${preferenceProfile?.freeText ?? ""} ${seedText}`);
+
+  const ranked: RankedRecommendation[] = availableBooks.map((book) => {
+    const genreKey = normalizeGenreKey(book.genre);
+    const haystack = `${book.title} ${book.author} ${book.genre ?? ""} ${book.description ?? ""}`.toLowerCase();
+    const reasons: string[] = [];
+    let score = 0;
+
+    if (desiredGenre && genreKey.includes(desiredGenre)) {
+      score += 18;
+      reasons.push(`matches your ${preferenceProfile?.genre} pick`);
+    }
+
+    if (desiredVibe) {
+      const vibeTokens = VIBE_KEYWORDS[desiredVibe] ?? tokenize(desiredVibe);
+      const vibeMatches = vibeTokens.filter((token) => haystack.includes(token)).length;
+      if (vibeMatches > 0) {
+        score += 6 + vibeMatches;
+        reasons.push(`fits the ${preferenceProfile?.vibe} mood`);
+      }
+    }
+
+    if (desiredPace) {
+      const paceTokens = PACE_KEYWORDS[desiredPace] ?? tokenize(desiredPace);
+      const paceMatches = paceTokens.filter((token) => haystack.includes(token)).length;
+      if (paceMatches > 0) {
+        score += 4 + paceMatches;
+      }
+    }
+
+    if (genreKey && readerProfile.genreScores.has(genreKey)) {
+      score += (readerProfile.genreScores.get(genreKey) ?? 0) * 3;
+      reasons.push("similar to books you've liked before");
+    } else if (novelty !== "familiar") {
+      score += novelty === "fresh" ? 4 : 2;
+    }
+
+    if (isFictionBook(book)) {
+      score += 5;
+      reasons.push("fiction boost");
+    }
+
+    const tokenMatches = textTokens.filter((token) => haystack.includes(token));
+    if (tokenMatches.length > 0) {
+      score += tokenMatches.length * 2;
+      reasons.push(`picks up on "${tokenMatches[0]}"`);
+    }
+
+    const freshnessScore = deterministicScore(`${book.id}:${seedText}:${genreKey || "none"}`);
+    score += freshnessScore * 1.5;
+    if (novelty !== "familiar" && freshnessScore > 0.72) {
+      reasons.push("adds a fresher flavor to your mix");
+    }
+
+    return {
+      book,
+      score,
+      freshnessScore,
+      reasons: [...new Set(reasons)],
+      genreKey,
+    };
+  });
+
+  const sorted = ranked.sort((a, b) => b.score - a.score || b.freshnessScore - a.freshnessScore);
+  if (sorted.length === 0) return [];
+
+  const picks: RankedRecommendation[] = [sorted[0]];
+  const firstGenre = sorted[0].genreKey;
+
+  const secondPick =
+    sorted.find(
+      (candidate) =>
+        candidate.book.id !== picks[0].book.id &&
+        ((novelty === "familiar" && candidate.score >= sorted[0].score - 3) ||
+          (candidate.genreKey && candidate.genreKey !== firstGenre))
+    ) ?? sorted.find((candidate) => candidate.book.id !== picks[0].book.id);
+
+  if (secondPick) {
+    picks.push(secondPick);
+  }
+
+  const thirdPick =
+    (novelty === "fresh"
+      ? [...sorted]
+          .filter((candidate) => !picks.some((pick) => pick.book.id === candidate.book.id))
+          .sort((a, b) => b.freshnessScore - a.freshnessScore)[0]
+      : undefined) ??
+    sorted.find((candidate) => !picks.some((pick) => pick.book.id === candidate.book.id));
+
+  if (thirdPick) {
+    picks.push(thirdPick);
+  }
+
+  return picks.slice(0, 3);
+}
+
+function getSuggestionSet(hasRecommendations: boolean): SuggestedReply[] {
+  return hasRecommendations
+    ? [
+        { label: "More fiction", fullText: "Show me more fiction please" },
+        { label: "Try a surprise", fullText: "Give me a fresher surprise pick" },
+        { label: "Different mood", fullText: "Let's try a different mood" },
+      ]
+    : [
+        { label: "Find fiction", fullText: "Can you recommend some fiction books?" },
+        { label: "Mystery picks", fullText: "I want mystery recommendations" },
+        { label: "Surprise me", fullText: "Surprise me with a good unread book" },
+      ];
+}
+
+function buildFallbackRecommendationPayload(
+  personality: BookBuddyPersonality,
+  rankedBooks: RankedRecommendation[]
+): BookBuddyPayload {
+  const introByPersonality: Record<BookBuddyPersonality, string> = {
+    luna: "I picked a few stories that feel like a good match for your reading trail.",
+    dash: "Boom. I found a few strong matches for you.",
+    hagrid: "I found a few solid reads I reckon yeh might really enjoy.",
+  };
+
+  return {
+    message: introByPersonality[personality],
+    suggestedReplies: getSuggestionSet(true),
+    books: rankedBooks.map((entry) => ({
+      id: entry.book.id,
+      title: entry.book.title,
+      author: entry.book.author,
+      teaser:
+        entry.book.description?.trim() ||
+        `${entry.book.title} looks like a promising next read with a strong ${entry.book.genre ?? "story"} feel.`,
+      whyYoullLikeIt: buildWhyText(entry.reasons),
+    })),
+  };
+}
+
+function buildConversationPayload(personality: BookBuddyPersonality, message: string): BookBuddyPayload {
+  const responses: Record<BookBuddyPersonality, string> = {
+    luna: message
+      ? "I hear you. When you want a recommendation, tap a few mood chips or ask me for a specific kind of story."
+      : "Tell me the kind of story you want, or tap the mood chips and I'll narrow things down.",
+    dash: message
+      ? "Got you. I won't throw random books at you. Hit the chips when you want real recommendations."
+      : "Pick a vibe, and I'll go hunting for better matches.",
+    hagrid: message
+      ? "Right, I hear yeh. I won't rush into tossin' books at yeh. Use the chips when yeh want me ter search properly."
+      : "Pick a mood, and I'll help yeh find summat worth reading.",
+  };
+
+  return {
+    message: responses[personality],
+    suggestedReplies: getSuggestionSet(false),
+    books: [],
+  };
+}
+
+function buildRecommendationVoicePrompt(
+  personality: BookBuddyPersonality,
+  requestText: string,
+  rankedBooks: RankedRecommendation[]
+) {
+  const personalitySection = PERSONALITY_PROMPTS[personality];
+  return `${personalitySection}
+
+Write a short JSON response for a guided book recommender.
+
+Reader request: ${requestText || "guided recommendation"}
+
+Books:
+${rankedBooks
+  .map(
+    (entry, index) =>
+      `${index + 1}. ID=${entry.book.id}; Title=${entry.book.title}; Author=${entry.book.author}; Genre=${entry.book.genre ?? "Unknown"}; Reasons=${entry.reasons.join("; ")}`
+  )
+  .join("\n")}
+
+Return ONLY valid JSON with this exact shape:
 {
-  "message": "The conversational message from the response above",
+  "message": "1-2 short sentences in character",
   "suggestedReplies": [
-    {"label": "Short label", "fullText": "Full message to send"},
-    {"label": "Another option", "fullText": "Another full message"}
+    { "label": "Short chip", "fullText": "What the chip sends" }
   ],
   "books": [
     {
-      "id": "exact_id_from_response",
-      "title": "Book Title",
-      "author": "Author Name",
-      "teaser": "The teaser from the response",
-      "whyYoullLikeIt": "The why they'll love it reason"
+      "id": "exact book id",
+      "title": "exact title",
+      "author": "exact author",
+      "teaser": "1 short exciting sentence",
+      "whyYoullLikeIt": "1 short sentence tied to the provided reasons"
     }
   ]
 }
-\`\`\`
 
-RULES:
-- Start with EXACTLY \`\`\`buddy-response (not \`\`\`json)
-- Extract the message, keeping the character's voice
-- Book IDs must be from this list: ${bookIds}
-- If no books mentioned, use empty array: "books": []
-- If no suggestions found, create 2-3 generic ones like "More books", "Different genre", "Surprise me"
-- Output ONLY the code block, nothing before or after`;
+Rules:
+- Keep all IDs, titles, and authors exact
+- Use 2-3 suggested replies
+- Do not invent books
+- Keep the tone warm and short`;
+}
+
+function safeParseBookBuddyPayload(content: string): BookBuddyPayload | null {
+  const trimmed = content.trim();
+  const withoutFence = trimmed
+    .replace(/^```(?:json)?/i, "")
+    .replace(/```$/i, "")
+    .trim();
+
+  try {
+    return JSON.parse(withoutFence);
+  } catch {
+    return null;
+  }
+}
+
+function formatBuddyResponseBlock(payload: BookBuddyPayload) {
+  return `\`\`\`buddy-response\n${JSON.stringify(payload)}\n\`\`\``;
+}
+
+async function tryBuildStyledRecommendationPayload(
+  personality: BookBuddyPersonality,
+  requestText: string,
+  rankedBooks: RankedRecommendation[]
+) {
+  try {
+    const result = await callAIWithFallback(
+      [{ role: "system", content: buildRecommendationVoicePrompt(personality, requestText, rankedBooks) }],
+      0.6,
+      `BookBuddy:${personality}:guided`
+    );
+    const parsed = safeParseBookBuddyPayload(result.content);
+    if (!parsed) return null;
+    return {
+      payload: parsed,
+      usage: result.usage,
+      provider: result.provider,
+    };
+  } catch (error) {
+    console.warn(`[BookBuddy:${personality}] Styled recommendation fallback: ${error instanceof Error ? error.message : error}`);
+    return null;
+  }
 }
 
 // ============================================================================
@@ -1637,48 +1942,71 @@ export const libraryChat = action({
         description: v.optional(v.string()),
       })
     ),
+    requestRecommendations: v.optional(v.boolean()),
+    preferenceProfile: v.optional(
+      v.object({
+        genre: v.optional(v.string()),
+        vibe: v.optional(v.string()),
+        pace: v.optional(v.string()),
+        novelty: v.optional(
+          v.union(v.literal("familiar"), v.literal("mix"), v.literal("fresh"))
+        ),
+        freeText: v.optional(v.string()),
+      })
+    ),
   },
   handler: async (_ctx, args) => {
-    // Stage 1: Creative response from Kimi K2
-    const creativePrompt = buildCreativeBookBuddyPrompt(
-      args.personality,
+    const lastUserMessage = [...args.messages]
+      .reverse()
+      .find((message) => message.role === "user")?.content
+      ?.trim() ?? "";
+
+    const shouldRecommend =
+      Boolean(args.requestRecommendations) || detectRecommendationIntent(lastUserMessage);
+
+    if (!shouldRecommend) {
+      const payload = buildConversationPayload(args.personality, lastUserMessage);
+      return {
+        content: formatBuddyResponseBlock(payload),
+        usage: null,
+        provider: "deterministic",
+      };
+    }
+
+    const rankedBooks = selectBookRecommendations(
+      args.availableBooks,
       args.readingHistory ?? [],
-      args.availableBooks
+      args.preferenceProfile,
+      lastUserMessage
     );
+    const fallbackPayload =
+      rankedBooks.length > 0
+        ? buildFallbackRecommendationPayload(args.personality, rankedBooks)
+        : {
+            message:
+              "I need a few more books in the library before I can give you a good pick. Try adding one you already know or change the mood.",
+            suggestedReplies: getSuggestionSet(false),
+            books: [] as RecommendedBook[],
+          };
 
-    const creativeMessages: ChatMessage[] = [
-      { role: "system", content: creativePrompt },
-      ...args.messages.map((m) => ({ role: m.role, content: m.content })),
-    ];
+    if (rankedBooks.length === 0) {
+      return {
+        content: formatBuddyResponseBlock(fallbackPayload),
+        usage: null,
+        provider: "deterministic",
+      };
+    }
 
-    console.log(`[BookBuddy:${args.personality}] Stage 1: Creative response`);
-    const creativeResult = await callAIWithFallback(
-      creativeMessages,
-      0.85,
-      `BookBuddy:${args.personality}:creative`
-    );
-
-    // Stage 2: JSON formatting with Llama 8B
-    const formatterPrompt = buildFormatterPrompt(
-      creativeResult.content,
-      args.availableBooks.map((b) => ({ id: b.id, title: b.title, author: b.author }))
-    );
-
-    console.log(`[BookBuddy:${args.personality}] Stage 2: JSON formatting`);
-    const formattedResult = await callGroqWithRetry(
-      GROQ_FORMATTER_MODEL,
-      [{ role: "user", content: formatterPrompt }],
-      0.1,
-      `BookBuddy:${args.personality}:formatter`
+    const styledPayload = await tryBuildStyledRecommendationPayload(
+      args.personality,
+      lastUserMessage || `${args.preferenceProfile?.genre ?? ""} ${args.preferenceProfile?.vibe ?? ""}`.trim(),
+      rankedBooks
     );
 
     return {
-      content: formattedResult.content,
-      usage: {
-        creative: creativeResult.usage,
-        formatter: formattedResult.usage,
-      },
-      provider: `${creativeResult.provider}+groq-formatter`,
+      content: formatBuddyResponseBlock(styledPayload?.payload ?? fallbackPayload),
+      usage: styledPayload?.usage ?? null,
+      provider: styledPayload?.provider ?? "deterministic",
     };
   },
 });

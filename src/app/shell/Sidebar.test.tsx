@@ -68,7 +68,7 @@ describe("Sidebar", () => {
       renderWithRouter(<Sidebar />, { route: "/dashboard" });
 
       // Admin-only items should NOT be visible
-      for (const label of ["Students", "Sprints", "Objectives", "Viva", "Diagnostics", "Reviews", "Books", "Norms"] as const) {
+      for (const label of ["Students", "Sprints", "Objectives", "Viva", "Diagnostics", "Books", "Norms"] as const) {
         expect(screen.queryByText(label)).not.toBeInTheDocument();
       }
     });
@@ -101,7 +101,7 @@ describe("Sidebar", () => {
       renderWithRouter(<Sidebar />, { route: "/admin" });
 
       // Admin nav items should be visible
-      for (const label of ["Dashboard", "Students", "Objectives", "Viva", "Diagnostics", "Reviews", "Sprints", "Books", "Norms", "Trust Jar"] as const) {
+      for (const label of ["Dashboard", "Students", "Objectives", "Viva", "Diagnostics", "Sprints", "Books", "Norms", "Trust Jar"] as const) {
         expect(screen.getByText(label)).toBeInTheDocument();
       }
       for (const label of ["Projects", "Character", "Comments"] as const) {

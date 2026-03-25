@@ -122,7 +122,6 @@ const adminNavItems: NavItem[] = [
   { path: "/admin/objectives", label: "Objectives", icon: Icons.clipboard },
   { path: "/admin/viva", label: "Viva", icon: Icons.check },
   { path: "/admin/diagnostics", label: "Diagnostics", icon: Icons.listChecks },
-  { path: "/admin/reviews", label: "Reviews", icon: Icons.presentation },
   { path: "/admin/sprints", label: "Sprints", icon: Icons.calendar },
   { path: "/admin/books", label: "Books", icon: Icons.books },
   { path: "/admin/norms", label: "Norms", icon: Icons.listChecks },

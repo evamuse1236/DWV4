@@ -16,7 +16,6 @@ import { Badge } from "@/shared/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/shared/ui/avatar";
 import { Skeleton } from "@/shared/ui/skeleton";
 import {
-  BookOpen,
   Calendar,
   CheckCircle,
   ChevronRight,
@@ -58,7 +57,6 @@ export function AdminDashboard() {
   const activeSprint = useQuery(api.sprints.getActive);
   const vivaRequests = useQuery(api.mastery.getAdminVivaQueue) as any[] | undefined;
   const pendingUnlockRequests = useQuery(api.diagnostics.getPendingUnlockRequests) as any[] | undefined;
-  const reviewSubmissions = useQuery(api.books.getReviewSubmissions) as any[] | undefined;
   const todayCheckIns = useQuery(api.users.getTodayCheckInCount);
   const todayCheckInsDetails = useQuery(api.emotions.getTodayCheckIns) as any[] | undefined;
   const objectives = useQuery(api.objectives.getAll);
@@ -81,7 +79,6 @@ export function AdminDashboard() {
     activeSprint === undefined ||
     vivaRequests === undefined ||
     pendingUnlockRequests === undefined ||
-    reviewSubmissions === undefined ||
     todayCheckIns === undefined ||
     todayCheckInsDetails === undefined ||
     objectives === undefined;
@@ -182,7 +179,7 @@ export function AdminDashboard() {
       ) : null}
 
       <Card className="border-black/10 bg-white/80 shadow-none">
-        <CardContent className="grid gap-4 p-5 md:grid-cols-2 xl:grid-cols-4">
+        <CardContent className="grid gap-4 p-5 md:grid-cols-3">
           {[
             {
               label: "Pending vivas",
@@ -197,13 +194,6 @@ export function AdminDashboard() {
               hint: "Retake requests waiting",
               icon: ListChecks,
               path: "/admin/diagnostics",
-            },
-            {
-              label: "Reviews",
-              value: reviewSubmissions?.length ?? 0,
-              hint: "Book reviews pending",
-              icon: BookOpen,
-              path: "/admin/reviews",
             },
             {
               label: "Check-ins today",
@@ -278,7 +268,7 @@ export function AdminDashboard() {
               )}
             </section>
 
-            <section className="space-y-3 border-b border-border/70 pb-6">
+            <section className="space-y-3">
               <div className="flex items-center justify-between gap-3">
                 <div>
                   <h3 className="font-medium text-foreground">Diagnostics</h3>
@@ -315,38 +305,6 @@ export function AdminDashboard() {
                 </div>
               ) : (
                 <EmptyState title="No retake requests waiting." body="Diagnostics approval is clear right now." />
-              )}
-            </section>
-
-            <section className="space-y-3">
-              <div className="flex items-center justify-between gap-3">
-                <div>
-                  <h3 className="font-medium text-foreground">Reviews</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Book reviews that still need coach attention.
-                  </p>
-                </div>
-                <Button variant="outline" size="sm" onClick={() => navigate("/admin/reviews")}>
-                  Open reviews
-                  <ChevronRight className="ml-1 h-4 w-4" />
-                </Button>
-              </div>
-              {reviewSubmissions && reviewSubmissions.length > 0 ? (
-                <div className="space-y-3">
-                  {reviewSubmissions.slice(0, 3).map((review: any) => (
-                    <button
-                      key={review._id}
-                      type="button"
-                      onClick={() => navigate("/admin/reviews")}
-                      className="w-full rounded-2xl border border-black/10 bg-background/80 px-4 py-4 text-left transition-colors hover:bg-background"
-                    >
-                      <p className="font-medium text-foreground">{review.user?.displayName}</p>
-                      <p className="text-sm text-muted-foreground">{review.book?.title}</p>
-                    </button>
-                  ))}
-                </div>
-              ) : (
-                <EmptyState title="No review decisions waiting." body="Reading reviews are all caught up." />
               )}
             </section>
           </CardContent>

@@ -39,7 +39,6 @@ function renderLayout(route = "/admin") {
           <Route path="/admin/objectives" element={<div>Objectives page</div>} />
           <Route path="/admin/viva" element={<div>Viva page</div>} />
           <Route path="/admin/diagnostics" element={<div>Diagnostics page</div>} />
-          <Route path="/admin/reviews" element={<div>Reviews page</div>} />
           <Route path="/admin/sprints" element={<div>Sprints page</div>} />
           <Route path="/admin/books" element={<div>Books page</div>} />
           <Route path="/admin/norms" element={<div>Norms page</div>} />
@@ -78,7 +77,7 @@ describe("AdminLayout", () => {
     expect(screen.getByText("Coach Work")).toBeInTheDocument();
     expect(screen.getByText("Manage")).toBeInTheDocument();
 
-    for (const label of ["Dashboard", "Students", "Objectives", "Viva", "Diagnostics", "Reviews"]) {
+    for (const label of ["Dashboard", "Students", "Objectives", "Viva", "Diagnostics"]) {
       expect(screen.getByText(label)).toBeInTheDocument();
     }
 

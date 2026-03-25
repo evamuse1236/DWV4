@@ -523,7 +523,12 @@ export async function evaluateAndAwardBadges(ctx: any, userId: Id<"users">) {
 
   const readingPresented = readingPresentedRows.filter(
     (studentBook: any) =>
-      studentBook.status === "review_approved" || studentBook.status === "presented"
+      studentBook.status === "completed" ||
+      studentBook.status === "review_submitted" ||
+      studentBook.status === "review_changes_requested" ||
+      studentBook.status === "review_approved" ||
+      studentBook.status === "presentation_requested" ||
+      studentBook.status === "presented"
   ).length;
 
   const habitStreak = await getAnyHabitMaxStreak(ctx, userId);

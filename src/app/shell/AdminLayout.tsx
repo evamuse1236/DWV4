@@ -46,7 +46,6 @@ import {
   LogOut,
   ChevronUp,
   Cookie,
-  Mic,
   Search,
   ListChecks,
   Settings,
@@ -58,7 +57,6 @@ const coachWorkNavItems = [
   { path: "/admin/objectives", label: "Objectives", icon: Target },
   { path: "/admin/viva", label: "Viva", icon: CheckCircle },
   { path: "/admin/diagnostics", label: "Diagnostics", icon: ListChecks },
-  { path: "/admin/reviews", label: "Reviews", icon: Mic },
 ];
 
 const manageNavItems = [

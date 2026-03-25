@@ -24,6 +24,9 @@ describe("books lifecycle data rules", () => {
     ctx.db._seed(bookId, {
       title: "The Hobbit",
       author: "J.R.R. Tolkien",
+      source: "seed",
+      libraryStatus: "curated",
+      needsAdminReview: false,
       isPrePopulated: true,
       createdAt: Date.now(),
     });
@@ -47,7 +50,7 @@ describe("books lifecycle data rules", () => {
     expect(existing?._id).toBe(first);
   });
 
-  it("supports review draft -> submitted -> changes requested -> approved", async () => {
+  it("supports review draft notes before a book is finished", async () => {
     const studentBookId = await ctx.db.insert("studentBooks", {
       userId,
       bookId,
@@ -61,35 +64,17 @@ describe("books lifecycle data rules", () => {
       rating: 4,
     });
 
-    await ctx.db.patch(studentBookId, {
-      status: "review_submitted",
-      reviewSubmittedAt: Date.now(),
-    });
-
-    await ctx.db.patch(studentBookId, {
-      status: "review_changes_requested",
-      coachFeedback: "Add more detail.",
-      coachFeedbackAt: Date.now(),
-    });
-
-    await ctx.db.patch(studentBookId, {
-      status: "review_approved",
-      reviewApprovedAt: Date.now(),
-      reviewApprovedBy: createMockId("users"),
-    });
-
     const updated = await ctx.db.get(studentBookId);
-    expect(updated?.status).toBe("review_approved");
+    expect(updated?.status).toBe("review_draft");
     expect(updated?.review).toBe("Draft text");
-    expect(updated?.coachFeedback).toBe("Add more detail.");
-    expect(updated?.reviewSubmittedAt).toBeDefined();
-    expect(updated?.reviewApprovedAt).toBeDefined();
+    expect(updated?.rating).toBe(4);
   });
 
-  it("counts reading, pending, and approved using review workflow + legacy", async () => {
+  it("counts active, finished, and reviewed books using the no-approval flow plus legacy rows", async () => {
     const statuses = [
       "reading",
       "review_draft",
+      "already_read",
       "review_changes_requested",
       "review_submitted",
       "completed",
@@ -113,36 +98,36 @@ describe("books lifecycle data rules", () => {
       .collect();
 
     const reading = rows.filter(
-      (row) =>
-        row.status === "reading" ||
-        row.status === "review_draft" ||
-        row.status === "review_changes_requested"
+      (row) => row.status === "reading" || row.status === "review_draft"
     ).length;
 
-    const pending = rows.filter(
+    const finished = rows.filter(
       (row) =>
-        row.status === "review_submitted" ||
+        row.status === "already_read" ||
         row.status === "completed" ||
-        row.status === "presentation_requested"
+        row.status === "review_submitted" ||
+        row.status === "review_changes_requested" ||
+        row.status === "review_approved" ||
+        row.status === "presentation_requested" ||
+        row.status === "presented"
     ).length;
 
-    const approved = rows.filter(
-      (row) => row.status === "review_approved" || row.status === "presented"
-    ).length;
+    const reviewed = rows.filter((row) => Boolean(row.review?.trim())).length;
 
-    expect(reading).toBe(3);
-    expect(pending).toBe(3);
-    expect(approved).toBe(2);
+    expect(reading).toBe(2);
+    expect(finished).toBe(7);
+    expect(reviewed).toBe(0);
   });
 
-  it("treats only approved rows with text as community-visible reviews", async () => {
+  it("treats any finished row with text as a community-visible review", async () => {
     await ctx.db.insert("studentBooks", {
       userId,
       bookId,
-      status: "review_approved",
+      status: "completed",
       review: "Great themes and pacing.",
       startedAt: Date.now(),
-      reviewApprovedAt: Date.now(),
+      completedAt: Date.now(),
+      reviewSubmittedAt: Date.now(),
     });
 
     await ctx.db.insert("studentBooks", {
@@ -158,19 +143,37 @@ describe("books lifecycle data rules", () => {
       userId,
       bookId,
       status: "review_submitted",
-      review: "Not approved yet",
+      review: "Shared right away",
       startedAt: Date.now(),
       reviewSubmittedAt: Date.now(),
+    });
+
+    await ctx.db.insert("studentBooks", {
+      userId,
+      bookId,
+      status: "review_draft",
+      review: "Still private",
+      startedAt: Date.now(),
     });
 
     const rows = await ctx.db.query("studentBooks").collect();
     const visible = rows.filter(
       (row) =>
-        (row.status === "review_approved" || row.status === "presented") &&
+        (
+          row.status === "completed" ||
+          row.status === "review_submitted" ||
+          row.status === "review_changes_requested" ||
+          row.status === "review_approved" ||
+          row.status === "presentation_requested" ||
+          row.status === "presented"
+        ) &&
         Boolean(row.review?.trim())
     );
 
-    expect(visible).toHaveLength(1);
-    expect(visible[0].review).toBe("Great themes and pacing.");
+    expect(visible).toHaveLength(2);
+    expect(visible.map((row) => row.review)).toEqual([
+      "Great themes and pacing.",
+      "Shared right away",
+    ]);
   });
 });

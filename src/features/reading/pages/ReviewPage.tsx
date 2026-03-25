@@ -5,7 +5,7 @@ import { api } from "@convex/_generated/api";
 import { useAuth } from "@/features/auth/hooks/useAuth";
 import { extractImageSrc, loadDiagnosticData } from "@/shared/lib/diagnostic";
 import { MathText } from "@/shared/ui/math/MathText";
-import { getBookBadgeClass, type BookStatus } from "@/shared/lib/status-utils";
+import { bookStatusConfig, getBookBadgeClass, type BookStatus } from "@/shared/lib/status-utils";
 
 type AttemptListRow = {
   attemptId: string;
@@ -66,10 +66,18 @@ type ReviewBookRow = {
   _id: string;
   status: StudentBookStatus;
   coachFeedback?: string;
+  review?: string;
   book?: { _id: string; title?: string; author?: string } | null;
 };
 
-const DONE_BOOK_STATUSES = new Set<StudentBookStatus>(["review_approved", "presented"]);
+const DONE_BOOK_STATUSES = new Set<StudentBookStatus>([
+  "completed",
+  "review_submitted",
+  "review_changes_requested",
+  "review_approved",
+  "presentation_requested",
+  "presented",
+]);
 
 export function ReviewPage() {
   const { user } = useAuth();
@@ -94,10 +102,13 @@ export function ReviewPage() {
     user ? { userId: user._id as any } : "skip"
   ) as ReviewBookRow[] | undefined;
 
-  const pendingBookReviews = useMemo(
+  const suggestedBookReviews = useMemo(
     () =>
       (reviewBooks || []).filter(
-        (studentBook) => !DONE_BOOK_STATUSES.has(studentBook.status) && studentBook.book
+        (studentBook) =>
+          DONE_BOOK_STATUSES.has(studentBook.status) &&
+          studentBook.book &&
+          !(studentBook.review && studentBook.review.trim())
       ),
     [reviewBooks]
   );
@@ -164,19 +175,19 @@ export function ReviewPage() {
           <div>
             <h2 className="text-lg font-semibold">Book Review Suggestions</h2>
             <p className="text-sm text-muted-foreground">
-              Use these prompts while writing your book reviews.
+              Finished a book? Use these prompts if you want to share a review.
             </p>
           </div>
         </div>
         {reviewBooks === undefined ? (
           <p className="text-sm text-muted-foreground">Loading your reading list...</p>
-        ) : pendingBookReviews.length === 0 ? (
+        ) : suggestedBookReviews.length === 0 ? (
           <p className="text-sm text-muted-foreground">
-            No active book reviews right now. Start reading a book to get review prompts here.
+            No finished books are waiting for a review right now. Finish a book and it will show up here.
           </p>
         ) : (
           <div className="grid gap-3 md:grid-cols-2">
-            {pendingBookReviews.map((studentBook) => (
+            {suggestedBookReviews.map((studentBook) => (
               <article key={studentBook._id} className="rounded-lg border bg-background/70 p-3">
                 <div className="flex items-start justify-between gap-2">
                   <div>
@@ -190,7 +201,7 @@ export function ReviewPage() {
                       studentBook.status as BookStatus
                     )}`}
                   >
-                    {studentBook.status.replaceAll("_", " ")}
+                    {bookStatusConfig[studentBook.status as BookStatus]?.label || studentBook.status}
                   </span>
                 </div>
                 <ul className="mt-3 space-y-1 text-sm text-muted-foreground list-disc pl-4">
@@ -198,15 +209,6 @@ export function ReviewPage() {
                   <li>Which idea or moment stayed with you most, and why?</li>
                   <li>Who should read this, and what star rating would you give it?</li>
                 </ul>
-                {studentBook.status === "review_changes_requested" &&
-                studentBook.coachFeedback?.trim() ? (
-                  <div className="mt-3 rounded-md border border-amber-300/80 bg-amber-50 px-3 py-2 text-sm text-amber-900">
-                    <p className="text-[11px] font-semibold uppercase tracking-wide text-amber-700">
-                      Coach Note
-                    </p>
-                    <p className="mt-1 whitespace-pre-wrap">{studentBook.coachFeedback.trim()}</p>
-                  </div>
-                ) : null}
                 {studentBook.book?._id ? (
                   <div className="mt-3">
                     <Link

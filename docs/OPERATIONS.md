@@ -64,5 +64,7 @@ Generated curriculum reports are written under `docs/curriculum/`.
    - Login and role routing
    - Check-in gating
    - Diagnostic attempt submit flow
-   - Reading modal flow (`Read Book` opens link, adds to Reading immediately, hover-remove works)
+   - Reading library flow (student can add a missing book, mark a library book as already read, `Read Book` opens link, adds to Reading immediately, hover-remove works)
+   - Book Buddy guided flow (guided chips advance correctly, already-read/current books do not come back as recommendations, typed chat does not auto-trigger recommendations unless asked)
+   - Admin books flow (bulk paste/import dedupes, draft books show curation state, editing a draft marks it curated)
    - Admin queue actions (viva, reading, comments)

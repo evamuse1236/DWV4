@@ -1,38 +1,38 @@
 # Root Layout
 
-Purpose: keep the app repo readable.
+This repo stays readable only if the root stays strict.
 
-## Allowed top-level folders
+## Allowed Top-Level Folders
 
-- `src/`: runtime frontend code
+- `src/`: frontend runtime code
 - `convex/`: backend functions and schema
-- `public/`: runtime static assets
+- `public/`: static runtime assets
 - `scripts/`: repeatable tooling
-- `docs/`: technical source of truth
-- `docs-for-humans/`: plain-language operator docs
-- `workspace/`: non-runtime scratch, reports, mirrors, and legacy material
-- `tests/`: automated tests if added at repo root later
+- `docs/`: technical documentation
+- `docs-for-humans/`: plain-language guidance
+- `workspace/`: non-runtime material
+- `tests/`: repo-level automated tests if needed later
 
-## `workspace/` rules
+## What Belongs In `workspace/`
 
-Use `workspace/` for:
+Put these here:
 - manual harnesses
 - generated reports
 - readable exports
-- data mirrors
+- mirrored source assets
 - reference code
-- old standalone assets
+- legacy standalone assets
 
-Do not put runtime code, deployed assets, or canonical source data here.
+Do not put app runtime code, deployed assets, or source-of-truth data here.
 
-## Naming rules
+## Naming Rules
 
-- Prefer plain nouns: `student`, `admin`, `diagnostics`, `reading`
-- Prefer purpose over history
-- Avoid vague buckets like `output`, `misc`, `web`, or `im`
-- Avoid version names in active folders
+- use plain purpose-first names like `student`, `admin`, `diagnostics`, `reading`
+- prefer present purpose over old history
+- avoid vague names like `output`, `misc`, `web`, or `im`
+- avoid version labels in active folders
 
-## Current workspace folders
+## Current `workspace/` Folders
 
 - `workspace/manual-tests/`
 - `workspace/diagnostic-source-assets/`

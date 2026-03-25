@@ -476,18 +476,29 @@ export default defineSchema({
     gradeLevel: v.optional(v.string()),
     genre: v.optional(v.string()),
     pageCount: v.optional(v.number()),
+    source: v.union(
+      v.literal("seed"),
+      v.literal("admin"),
+      v.literal("student")
+    ),
+    libraryStatus: v.union(v.literal("draft"), v.literal("curated")),
+    needsAdminReview: v.boolean(),
+    submittedBy: v.optional(v.id("users")),
     isPrePopulated: v.boolean(),
     addedBy: v.optional(v.id("users")),
     createdAt: v.number(),
   })
     .index("by_grade", ["gradeLevel"])
-    .index("by_genre", ["genre"]),
+    .index("by_genre", ["genre"])
+    .index("by_library_status", ["libraryStatus"])
+    .index("by_admin_review", ["needsAdminReview"]),
 
   studentBooks: defineTable({
     userId: v.id("users"),
     bookId: v.id("books"),
     status: v.union(
       v.literal("reading"),
+      v.literal("already_read"),
       v.literal("completed"), // Legacy status for existing data
       v.literal("review_draft"),
       v.literal("review_submitted"),

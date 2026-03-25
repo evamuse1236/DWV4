@@ -31,7 +31,6 @@ import {
   ObjectivesPage,
   DiagnosticsPage,
   VivaQueuePage,
-  ReviewQueuePage,
   BooksPage,
   NormsPage,
   AdminSettingsPage,
@@ -113,8 +112,8 @@ function App() {
               <Route path="/admin/objectives" element={<ObjectivesPage />} />
               <Route path="/admin/viva" element={<VivaQueuePage />} />
               <Route path="/admin/diagnostics" element={<DiagnosticsPage />} />
-              <Route path="/admin/reviews" element={<ReviewQueuePage />} />
-              <Route path="/admin/presentations" element={<Navigate to="/admin/reviews" replace />} />
+              <Route path="/admin/reviews" element={<Navigate to="/admin" replace />} />
+              <Route path="/admin/presentations" element={<Navigate to="/admin" replace />} />
               <Route path="/admin/books" element={<BooksPage />} />
               <Route path="/admin/norms" element={<NormsPage />} />
               <Route path="/admin/comments" element={<Navigate to="/admin" replace />} />

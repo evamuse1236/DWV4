@@ -36,7 +36,8 @@ React (Vite + Router)
 - `studentMajorObjectives.vivaStatus`: `not_requested -> requested -> approved | not_ready`
 - `diagnosticUnlockRequests.status`: `pending -> approved | denied | canceled`
 - `diagnosticUnlocks.status`: `approved -> consumed | expired | revoked`
-- `studentBooks.status`: `reading -> review_draft -> review_submitted -> review_changes_requested -> review_submitted -> review_approved` (`completed`, `presentation_requested`, and `presented` are legacy-compatible)
+- `books.libraryStatus`: `draft -> curated` as admins enrich student-submitted or incomplete library entries.
+- `studentBooks.status`: active reading stays in `reading | review_draft`; quick history logging uses `already_read`; finishing moves to `completed`; optional reviews can be saved after completion without approval. Legacy `review_submitted`, `review_changes_requested`, `review_approved`, `presentation_requested`, and `presented` rows are read as done/non-blocking for compatibility.
 
 ## Mastery workflow contracts
 
@@ -52,14 +53,15 @@ React (Vite + Router)
 ## Reading UX contracts
 
 - In `src/features/reading/pages/ReadingPage.tsx`, clicking modal `Read Book` opens `readingUrl` in a new tab and starts reading (`books.startReading`) if needed.
+- Students can add a missing book with only title and author. The book becomes visible in the shared library immediately with draft/review-needed metadata until an admin curates it.
+- Library cards expose a one-tap `already read` action. `already_read` rows count for history and recommendation filtering, but not for community review visibility.
 - Newly started books appear immediately in the Reading tab via optimistic UI, then reconcile with Convex query results.
 - Reading-card remove (`×`) is a hover/focus affordance and removes the book from visible lists immediately while mutation completes.
-- In `src/features/reading/pages/ReviewPage.tsx`, students see book-review prompt suggestions (including coach feedback when changes are requested) in addition to diagnostic review history.
+- Students can finish books without coach action. Reviews are optional and can be added or edited after a book is finished.
+- Community review visibility depends on a finished book having non-empty review text; there is no approval gate.
+- In `src/features/reading/pages/ReviewPage.tsx`, students see review prompt suggestions for finished books that still need a review, in addition to diagnostic review history.
 - `ReviewPage` suggestion links deep-link into `ReadingPage` with `?openBook=<bookId>` and auto-open that book's review modal on the Library tab.
-
-## Admin review queue contracts
-
-- In `src/features/admin/pages/ReviewQueuePage.tsx`, `Request Changes` expands an inline feedback editor inside each card; feedback submission does not open a modal dialog.
+- `src/features/reading/components/BookBuddy.tsx` uses a guided chip flow plus optional free text. Deterministic recommendation ranking happens before AI voice wrapping, and candidate books exclude every book already linked to the student.
 
 ## AI response contracts
 

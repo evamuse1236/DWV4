@@ -8,6 +8,7 @@ export type SubObjectiveStatus = "assigned" | "in_progress" | "completed";
 export type GoalStatus = "not_started" | "in_progress" | "completed";
 export type BookStatus =
   | "reading"
+  | "already_read"
   | "completed"
   | "review_draft"
   | "review_submitted"
@@ -46,12 +47,13 @@ export const goalStatusConfig: Record<GoalStatus, { label: string; variant: stri
  */
 export const bookStatusConfig: Record<BookStatus, { label: string; variant: string; emoji: string }> = {
   reading: { label: "Reading", variant: "warning", emoji: "📖" },
-  completed: { label: "Completed", variant: "success", emoji: "✅" }, // Legacy status
+  already_read: { label: "Already Read", variant: "success", emoji: "✓" },
+  completed: { label: "Finished", variant: "success", emoji: "✅" },
   review_draft: { label: "Review Draft", variant: "warning", emoji: "✍️" },
-  review_submitted: { label: "Awaiting Approval", variant: "info", emoji: "⏳" },
-  review_changes_requested: { label: "Changes Requested", variant: "destructive", emoji: "🛠️" },
+  review_submitted: { label: "Finished", variant: "success", emoji: "✅" },
+  review_changes_requested: { label: "Finished", variant: "success", emoji: "✅" },
   review_approved: { label: "Finished", variant: "success", emoji: "✅" },
-  presentation_requested: { label: "Pending Presentation", variant: "info", emoji: "🙋" },
+  presentation_requested: { label: "Finished", variant: "success", emoji: "✅" },
   presented: { label: "Finished", variant: "success", emoji: "✅" },
 };
 
@@ -116,24 +118,26 @@ export const goalStatusLabels: Record<GoalStatus, string> = {
 // Book status indicator colors (solid dots)
 export const bookStatusIndicatorColors: Record<BookStatus, string> = {
   reading: "bg-[#ca8a04]",
-  completed: "bg-[#15803d]", // Legacy status
+  already_read: "bg-[#0f766e]",
+  completed: "bg-[#15803d]",
   review_draft: "bg-[#ca8a04]",
-  review_submitted: "bg-[#7c3aed]",
-  review_changes_requested: "bg-[#b45309]",
+  review_submitted: "bg-[#15803d]",
+  review_changes_requested: "bg-[#15803d]",
   review_approved: "bg-[#15803d]",
-  presentation_requested: "bg-[#7c3aed]",
+  presentation_requested: "bg-[#15803d]",
   presented: "bg-[#15803d]",
 };
 
 // Book status badge colors for inline styling
 export const bookStatusBadgeColors: Record<BookStatus, { bg: string; text: string }> = {
   reading: { bg: "bg-[#ca8a04]/20", text: "text-[#ca8a04]" },
-  completed: { bg: "bg-[#15803d]/20", text: "text-[#15803d]" }, // Legacy status
+  already_read: { bg: "bg-[#0f766e]/20", text: "text-[#0f766e]" },
+  completed: { bg: "bg-[#15803d]/20", text: "text-[#15803d]" },
   review_draft: { bg: "bg-[#ca8a04]/20", text: "text-[#ca8a04]" },
-  review_submitted: { bg: "bg-[#7c3aed]/20", text: "text-[#7c3aed]" },
-  review_changes_requested: { bg: "bg-[#b45309]/20", text: "text-[#b45309]" },
+  review_submitted: { bg: "bg-[#15803d]/20", text: "text-[#15803d]" },
+  review_changes_requested: { bg: "bg-[#15803d]/20", text: "text-[#15803d]" },
   review_approved: { bg: "bg-[#15803d]/20", text: "text-[#15803d]" },
-  presentation_requested: { bg: "bg-[#7c3aed]/20", text: "text-[#7c3aed]" },
+  presentation_requested: { bg: "bg-[#15803d]/20", text: "text-[#15803d]" },
   presented: { bg: "bg-[#15803d]/20", text: "text-[#15803d]" },
 };
 

@@ -1,6 +1,6 @@
-# Documentation (Agent-Facing)
+# Documentation Hub
 
-Purpose: minimal, deterministic docs for AI agents and engineers.
+Use this folder for the technical source of truth.
 
 ## Read Order
 
@@ -12,25 +12,27 @@ Purpose: minimal, deterministic docs for AI agents and engineers.
 6. `docs/ROOT-LAYOUT.md`
 7. `docs/DATA_FLOW.md`
 
-## Task Routing
+## If You Need...
 
-| Task | Read |
+| Question | Read |
 |---|---|
-| Product intent and invariants | `docs/CORE.md` |
-| Routes, file ownership, navigation | `docs/CODEBASE-MAP.md` |
-| Architecture, schema contracts, AI contracts | `docs/SYSTEM.md` |
-| Setup, deploy, rollback, verification | `docs/OPERATIONS.md` |
-| Curriculum script outputs | `docs/curriculum/README.md` |
+| What the product is trying to do | `docs/CORE.md` |
+| Where code lives and who owns what | `docs/CODEBASE-MAP.md` |
+| How the system is wired together | `docs/SYSTEM.md` |
+| How to run, deploy, and verify it | `docs/OPERATIONS.md` |
+| How curriculum scripts fit together | `docs/curriculum/README.md` |
 
-## Source of Truth Priority
+## When Docs And Code Disagree
 
-1. Runtime code (`src/`, `convex/`, `scripts/`)
+Trust these in order:
+
+1. runtime code in `src/`, `convex/`, and `scripts/`
 2. `convex/schema.ts`
 3. `src/app/router/App.tsx`
 4. `docs/CORE.md`
 5. `docs/SYSTEM.md`
 6. `docs/OPERATIONS.md`
 
-## Human Docs
+## Plain-English Docs
 
-For plain-language explanations, use `docs-for-humans/`.
+For simpler explanations, use `docs-for-humans/`.

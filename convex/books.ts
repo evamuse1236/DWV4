@@ -6,13 +6,123 @@ import {
   getReadingDomainId,
 } from "./characterAwards";
 
-const DONE_STATUSES = new Set(["review_approved", "presented"]);
+const DONE_STATUSES = new Set([
+  "already_read",
+  "completed",
+  "review_submitted",
+  "review_changes_requested",
+  "review_approved",
+  "presentation_requested",
+  "presented",
+]);
+const ACTIVE_READING_STATUSES = new Set(["reading", "review_draft"]);
 const REVIEW_QUEUE_STATUSES = [
   "review_submitted",
   "presentation_requested",
   "completed",
 ] as const;
-const APPROVED_REVIEW_STATUSES = ["review_approved", "presented"] as const;
+const COMMUNITY_REVIEW_STATUSES = [
+  "completed",
+  "review_submitted",
+  "review_changes_requested",
+  "review_approved",
+  "presentation_requested",
+  "presented",
+] as const;
+
+type BookInput = {
+  title: string;
+  author: string;
+  coverImageUrl?: string;
+  readingUrl?: string;
+  description?: string;
+  gradeLevel?: string;
+  genre?: string;
+  pageCount?: number;
+};
+
+function cleanOptionalText(value?: string) {
+  if (typeof value !== "string") return undefined;
+  const trimmed = value.trim();
+  return trimmed.length > 0 ? trimmed : undefined;
+}
+
+function normalizeBookIdentityPart(value: string) {
+  return value
+    .toLowerCase()
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function normalizeBookIdentity(title: string, author: string) {
+  return `${normalizeBookIdentityPart(title)}::${normalizeBookIdentityPart(author)}`;
+}
+
+function normalizeBookInput(input: BookInput): BookInput {
+  return {
+    title: input.title.trim(),
+    author: input.author.trim(),
+    coverImageUrl: cleanOptionalText(input.coverImageUrl),
+    readingUrl: cleanOptionalText(input.readingUrl),
+    description: cleanOptionalText(input.description),
+    gradeLevel: cleanOptionalText(input.gradeLevel),
+    genre: cleanOptionalText(input.genre),
+    pageCount:
+      typeof input.pageCount === "number" && Number.isFinite(input.pageCount)
+        ? input.pageCount
+        : undefined,
+  };
+}
+
+function sortLibraryBooks<T extends { title: string; author: string; libraryStatus?: string; needsAdminReview?: boolean }>(books: T[]) {
+  return [...books].sort((a, b) => {
+    const reviewDelta = Number(Boolean(a.needsAdminReview)) - Number(Boolean(b.needsAdminReview));
+    if (reviewDelta !== 0) return reviewDelta;
+
+    const statusWeight = (book: T) => (book.libraryStatus === "draft" ? 1 : 0);
+    const statusDelta = statusWeight(a) - statusWeight(b);
+    if (statusDelta !== 0) return statusDelta;
+
+    const titleCompare = a.title.localeCompare(b.title);
+    if (titleCompare !== 0) return titleCompare;
+    return a.author.localeCompare(b.author);
+  });
+}
+
+async function getAllBooks(ctx: any) {
+  return await ctx.db.query("books").collect();
+}
+
+async function findBookByIdentity(ctx: any, title: string, author: string) {
+  const targetIdentity = normalizeBookIdentity(title, author);
+  const books = await getAllBooks(ctx);
+  return books.find(
+    (book: any) => normalizeBookIdentity(book.title, book.author) === targetIdentity
+  );
+}
+
+function getMissingMetadataPatch(existing: any, input: BookInput) {
+  const patch: Record<string, unknown> = {};
+  const normalizedInput = normalizeBookInput(input);
+
+  if (!existing.coverImageUrl && normalizedInput.coverImageUrl) patch.coverImageUrl = normalizedInput.coverImageUrl;
+  if (!existing.readingUrl && normalizedInput.readingUrl) patch.readingUrl = normalizedInput.readingUrl;
+  if (!existing.description && normalizedInput.description) patch.description = normalizedInput.description;
+  if (!existing.gradeLevel && normalizedInput.gradeLevel) patch.gradeLevel = normalizedInput.gradeLevel;
+  if (!existing.genre && normalizedInput.genre) patch.genre = normalizedInput.genre;
+  if (!existing.pageCount && normalizedInput.pageCount) patch.pageCount = normalizedInput.pageCount;
+
+  return patch;
+}
+
+async function findStudentBook(ctx: any, userId: any, bookId: any) {
+  return await ctx.db
+    .query("studentBooks")
+    .withIndex("by_user_book", (q: any) => q.eq("userId", userId).eq("bookId", bookId))
+    .first();
+}
 
 function hasReviewText(review?: string) {
   return Boolean(review && review.trim().length > 0);
@@ -24,14 +134,29 @@ function isDoneStatus(status: string) {
 
 function getDoneTimestamp(studentBook: any) {
   return (
+    studentBook.reviewSubmittedAt ??
+    studentBook.completedAt ??
+    studentBook.reviewApprovedAt ??
+    studentBook.presentedAt ??
+    studentBook.presentationRequestedAt ??
+    studentBook.startedAt ??
+    0
+  );
+}
+
+function getNormalizedCompletedAt(studentBook: any, now: number) {
+  return (
+    studentBook.completedAt ??
     studentBook.reviewApprovedAt ??
     studentBook.presentedAt ??
     studentBook.reviewSubmittedAt ??
     studentBook.presentationRequestedAt ??
-    studentBook.completedAt ??
-    studentBook.startedAt ??
-    0
+    now
   );
+}
+
+function getNormalizedDoneStatus(studentBook: any) {
+  return studentBook.status === "presented" ? "presented" : "completed";
 }
 
 function ensureValidRating(rating?: number) {
@@ -85,15 +210,15 @@ async function ensureCommentableReview(ctx: any, studentBookId: any) {
     throw new Error("Review not found");
   }
   if (!isDoneStatus(studentBook.status)) {
-    throw new Error("Comments are only allowed on approved reviews");
+    throw new Error("Comments are only allowed on finished books with reviews");
   }
   if (!hasReviewText(studentBook.review)) {
-    throw new Error("Comments require a published review");
+    throw new Error("Comments require a submitted review");
   }
   return studentBook;
 }
 
-async function awardReviewDoneXp(ctx: any, studentBook: any) {
+async function awardFinishedBookXp(ctx: any, studentBook: any) {
   const readingDomainId = await getReadingDomainId(ctx);
   await awardXpIfNotExists(ctx, {
     userId: studentBook.userId,
@@ -113,7 +238,7 @@ async function awardReviewDoneXp(ctx: any, studentBook: any) {
 export const getAll = query({
   args: {},
   handler: async (ctx) => {
-    return await ctx.db.query("books").collect();
+    return sortLibraryBooks(await getAllBooks(ctx));
   },
 });
 
@@ -121,10 +246,12 @@ export const getAll = query({
 export const getByGenre = query({
   args: { genre: v.string() },
   handler: async (ctx, args) => {
-    return await ctx.db
+    return sortLibraryBooks(
+      await ctx.db
       .query("books")
       .filter((q) => q.eq(q.field("genre"), args.genre))
-      .collect();
+      .collect()
+    );
   },
 });
 
@@ -201,17 +328,15 @@ export const startReading = mutation({
     bookId: v.id("books"),
   },
   handler: async (ctx, args) => {
-    const existing = await ctx.db
-      .query("studentBooks")
-      .filter((q) =>
-        q.and(
-          q.eq(q.field("userId"), args.userId),
-          q.eq(q.field("bookId"), args.bookId)
-        )
-      )
-      .first();
+    const existing = await findStudentBook(ctx, args.userId, args.bookId);
 
     if (existing) {
+      if (existing.status === "already_read") {
+        await ctx.db.patch(existing._id, {
+          status: "reading",
+          startedAt: existing.startedAt ?? Date.now(),
+        });
+      }
       return existing._id;
     }
 
@@ -224,12 +349,82 @@ export const startReading = mutation({
   },
 });
 
+export const markAlreadyRead = mutation({
+  args: {
+    userId: v.id("users"),
+    bookId: v.id("books"),
+  },
+  handler: async (ctx, args) => {
+    const existing = await findStudentBook(ctx, args.userId, args.bookId);
+    const now = Date.now();
+
+    if (existing) {
+      await ctx.db.patch(existing._id, {
+        status: "already_read",
+        completedAt: existing.completedAt ?? now,
+      });
+      return existing._id;
+    }
+
+    return await ctx.db.insert("studentBooks", {
+      userId: args.userId,
+      bookId: args.bookId,
+      status: "already_read",
+      startedAt: now,
+      completedAt: now,
+    });
+  },
+});
+
+export const finishBook = mutation({
+  args: {
+    studentBookId: v.id("studentBooks"),
+    rating: v.optional(v.number()),
+    review: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    const studentBook = await ctx.db.get(args.studentBookId);
+    if (!studentBook) {
+      throw new Error("Student book not found");
+    }
+
+    ensureValidRating(args.rating);
+    const now = Date.now();
+    const updates: any = {
+      status: getNormalizedDoneStatus(studentBook),
+      completedAt: getNormalizedCompletedAt(studentBook, now),
+    };
+
+    if (args.rating !== undefined) {
+      updates.rating = args.rating;
+    }
+
+    if (args.review !== undefined) {
+      const normalizedReview = args.review.trim();
+      updates.review = normalizedReview;
+      if (normalizedReview) {
+        updates.reviewSubmittedAt = now;
+      }
+    }
+
+    await ctx.db.patch(args.studentBookId, updates);
+
+    if (!isDoneStatus(studentBook.status)) {
+      await awardFinishedBookXp(ctx, {
+        ...studentBook,
+        _id: args.studentBookId,
+      });
+    }
+  },
+});
+
 // Legacy status updater (kept for compatibility)
 export const updateStatus = mutation({
   args: {
     studentBookId: v.id("studentBooks"),
     status: v.union(
       v.literal("reading"),
+      v.literal("already_read"),
       v.literal("completed"),
       v.literal("review_draft"),
       v.literal("review_submitted"),
@@ -248,7 +443,7 @@ export const updateStatus = mutation({
     const now = Date.now();
     const updates: any = { status: args.status };
 
-    if (args.status === "completed") {
+    if (args.status === "already_read" || args.status === "completed") {
       updates.completedAt = now;
     } else if (args.status === "presentation_requested") {
       updates.presentationRequestedAt = now;
@@ -279,7 +474,7 @@ export const updateStatus = mutation({
     }
 
     if (args.status === "review_approved" && !isDoneStatus(studentBook.status)) {
-      await awardReviewDoneXp(ctx, {
+      await awardFinishedBookXp(ctx, {
         ...studentBook,
         _id: args.studentBookId,
       });
@@ -361,6 +556,9 @@ export const submitReview = mutation({
     if (!studentBook) {
       throw new Error("Student book not found");
     }
+    if (!isDoneStatus(studentBook.status)) {
+      throw new Error("Finish the book before sharing a review");
+    }
 
     ensureValidRating(args.rating);
     const normalizedReview = args.review.trim();
@@ -372,15 +570,12 @@ export const submitReview = mutation({
     const updates: any = {
       review: normalizedReview,
       reviewSubmittedAt: now,
-      status: "review_submitted",
+      status: getNormalizedDoneStatus(studentBook),
+      completedAt: getNormalizedCompletedAt(studentBook, now),
     };
 
     if (args.rating !== undefined) {
       updates.rating = args.rating;
-    }
-
-    if (studentBook.status === "review_approved" || studentBook.status === "presented") {
-      updates.status = studentBook.status;
     }
 
     await ctx.db.patch(args.studentBookId, updates);
@@ -414,7 +609,7 @@ export const approveReview = mutation({
     await ctx.db.patch(args.studentBookId, updates);
 
     if (!isDoneStatus(studentBook.status)) {
-      await awardReviewDoneXp(ctx, {
+      await awardFinishedBookXp(ctx, {
         ...studentBook,
         _id: args.studentBookId,
       });
@@ -467,11 +662,144 @@ export const create = mutation({
     addedBy: v.optional(v.id("users")),
   },
   handler: async (ctx, args) => {
+    const normalized = normalizeBookInput(args);
+    const existing = await findBookByIdentity(ctx, normalized.title, normalized.author);
+
+    if (existing) {
+      const metadataPatch = getMissingMetadataPatch(existing, normalized);
+      if (Object.keys(metadataPatch).length > 0 || existing.needsAdminReview || existing.libraryStatus !== "curated") {
+        await ctx.db.patch(existing._id, {
+          ...metadataPatch,
+          needsAdminReview: false,
+          libraryStatus: "curated",
+          addedBy: args.addedBy ?? existing.addedBy,
+        });
+      }
+      return existing._id;
+    }
+
     return await ctx.db.insert("books", {
-      ...args,
+      ...normalized,
+      source: "admin",
+      libraryStatus: "curated",
+      needsAdminReview: false,
+      submittedBy: undefined,
       isPrePopulated: false,
+      addedBy: args.addedBy,
       createdAt: Date.now(),
     });
+  },
+});
+
+export const createStudentSubmission = mutation({
+  args: {
+    userId: v.id("users"),
+    title: v.string(),
+    author: v.string(),
+  },
+  handler: async (ctx, args) => {
+    const normalized = normalizeBookInput({
+      title: args.title,
+      author: args.author,
+    });
+    const existing = await findBookByIdentity(ctx, normalized.title, normalized.author);
+
+    if (existing) {
+      return {
+        bookId: existing._id,
+        created: false,
+        mergedWithExisting: true,
+      };
+    }
+
+    const bookId = await ctx.db.insert("books", {
+      ...normalized,
+      source: "student",
+      libraryStatus: "draft",
+      needsAdminReview: true,
+      submittedBy: args.userId,
+      isPrePopulated: false,
+      addedBy: args.userId,
+      createdAt: Date.now(),
+    });
+
+    return {
+      bookId,
+      created: true,
+      mergedWithExisting: false,
+    };
+  },
+});
+
+export const bulkImport = mutation({
+  args: {
+    rows: v.array(
+      v.object({
+        title: v.string(),
+        author: v.string(),
+        genre: v.optional(v.string()),
+        gradeLevel: v.optional(v.string()),
+        description: v.optional(v.string()),
+        coverImageUrl: v.optional(v.string()),
+        readingUrl: v.optional(v.string()),
+        pageCount: v.optional(v.number()),
+      })
+    ),
+    addedBy: v.optional(v.id("users")),
+  },
+  handler: async (ctx, args) => {
+    const invalidRows: Array<{ rowNumber: number; reason: string }> = [];
+    let createdCount = 0;
+    let updatedCount = 0;
+    let unchangedCount = 0;
+
+    for (const [index, row] of args.rows.entries()) {
+      const normalized = normalizeBookInput(row);
+      if (!normalized.title || !normalized.author) {
+        invalidRows.push({
+          rowNumber: index + 1,
+          reason: "Title and author are required",
+        });
+        continue;
+      }
+
+      const existing = await findBookByIdentity(ctx, normalized.title, normalized.author);
+      if (existing) {
+        const metadataPatch = getMissingMetadataPatch(existing, normalized);
+        const shouldClearReview = existing.needsAdminReview || existing.libraryStatus !== "curated";
+        if (Object.keys(metadataPatch).length > 0 || shouldClearReview) {
+          await ctx.db.patch(existing._id, {
+            ...metadataPatch,
+            needsAdminReview: false,
+            libraryStatus: "curated",
+            addedBy: args.addedBy ?? existing.addedBy,
+          });
+          updatedCount += 1;
+        } else {
+          unchangedCount += 1;
+        }
+        continue;
+      }
+
+      await ctx.db.insert("books", {
+        ...normalized,
+        source: "admin",
+        libraryStatus: "curated",
+        needsAdminReview: false,
+        submittedBy: undefined,
+        isPrePopulated: false,
+        addedBy: args.addedBy,
+        createdAt: Date.now(),
+      });
+      createdCount += 1;
+    }
+
+    return {
+      createdCount,
+      updatedCount,
+      unchangedCount,
+      invalidRows,
+    };
   },
 });
 
@@ -491,9 +819,22 @@ export const update = mutation({
   handler: async (ctx, args) => {
     const { bookId, ...updates } = args;
     const filteredUpdates = Object.fromEntries(
-      Object.entries(updates).filter(([, value]) => value !== undefined)
+      Object.entries({
+        ...updates,
+        title: cleanOptionalText(updates.title) ?? updates.title,
+        author: cleanOptionalText(updates.author) ?? updates.author,
+        coverImageUrl: cleanOptionalText(updates.coverImageUrl),
+        readingUrl: cleanOptionalText(updates.readingUrl),
+        description: cleanOptionalText(updates.description),
+        gradeLevel: cleanOptionalText(updates.gradeLevel),
+        genre: cleanOptionalText(updates.genre),
+      }).filter(([, value]) => value !== undefined)
     );
-    await ctx.db.patch(bookId, filteredUpdates);
+    await ctx.db.patch(bookId, {
+      ...filteredUpdates,
+      needsAdminReview: false,
+      libraryStatus: "curated",
+    });
     return bookId;
   },
 });
@@ -535,28 +876,23 @@ export const getReadingStats = query({
       .collect();
 
     const reading = studentBooks.filter((studentBook) =>
-      studentBook.status === "reading" ||
-      studentBook.status === "review_draft" ||
-      studentBook.status === "review_changes_requested"
+      ACTIVE_READING_STATUSES.has(studentBook.status)
     ).length;
 
-    const pendingReview = studentBooks.filter((studentBook) =>
-      studentBook.status === "review_submitted" ||
-      studentBook.status === "presentation_requested" ||
-      studentBook.status === "completed"
-    ).length;
-
-    const approved = studentBooks.filter((studentBook) =>
-      studentBook.status === "review_approved" || studentBook.status === "presented"
+    const finished = studentBooks.filter((studentBook) => isDoneStatus(studentBook.status)).length;
+    const reviewed = studentBooks.filter(
+      (studentBook) => isDoneStatus(studentBook.status) && hasReviewText(studentBook.review)
     ).length;
 
     return {
       total: studentBooks.length,
       reading,
-      pendingReview,
-      approved,
-      pendingPresentation: pendingReview,
-      presented: approved,
+      finished,
+      reviewed,
+      pendingReview: 0,
+      approved: finished,
+      pendingPresentation: 0,
+      presented: finished,
     };
   },
 });
@@ -602,7 +938,7 @@ export const approvePresentationRequest = mutation({
         reviewApprovedAt: now,
       });
       if (!isDoneStatus(studentBook.status)) {
-        await awardReviewDoneXp(ctx, {
+        await awardFinishedBookXp(ctx, {
           ...studentBook,
           _id: args.studentBookId,
         });
@@ -620,7 +956,7 @@ export const approvePresentationRequest = mutation({
 export const getApprovedReviews = query({
   args: {},
   handler: async (ctx) => {
-    const approvedReviews = (await getStudentBooksByStatuses(ctx, APPROVED_REVIEW_STATUSES))
+    const approvedReviews = (await getStudentBooksByStatuses(ctx, COMMUNITY_REVIEW_STATUSES))
       .filter((studentBook) => hasReviewText(studentBook.review))
       .sort((a, b) => getDoneTimestamp(b) - getDoneTimestamp(a));
 

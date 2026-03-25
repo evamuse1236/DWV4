@@ -1,12 +1,14 @@
 # Deep Work Tracker
 
-Deep Work Tracker is a dual-surface learning platform:
-- Student surface: calm daily learning flow (check-in, deep work, sprint, reading).
-- Coach/Admin surface: operational control (students, objectives, queues, projects).
+Deep Work Tracker is the active app repo for the Deep Work system.
 
-This README is intentionally short. Use the docs hub for full context.
+It has two main surfaces:
+- students: daily learning flow, check-ins, deep work, sprint, reading
+- coaches/admins: students, objectives, queues, projects, and operations
 
-## Quick Start
+## Start Here
+
+Install and run the app:
 
 ```bash
 npm install
@@ -16,7 +18,7 @@ npm run dev
 
 Open `http://localhost:5173`.
 
-## Core Documentation (Read In Order)
+## Read These Next
 
 1. `docs/README.md`
 2. `docs/MAINTAINER_START_HERE.md`
@@ -26,26 +28,19 @@ Open `http://localhost:5173`.
 6. `docs/OPERATIONS.md`
 7. `docs/ROOT-LAYOUT.md`
 8. `docs/DATA_FLOW.md`
-9. `docs-for-humans/README.md` (plain-language guide)
+9. `docs-for-humans/README.md`
 
-## Architecture Snapshot
+## How The App Is Built
 
 ```text
-React (Vite) frontend
-  -> Convex hooks (query/mutation/action)
-  -> Convex backend (schema + functions)
+React + Vite frontend
+  -> Convex hooks
+  -> Convex backend functions
   -> Convex database
-  -> External AI providers via Convex actions
+  -> external AI calls through Convex actions
 ```
 
-## Environments
-
-- Dev Convex: `ardent-penguin-515`
-- Prod Convex: `greedy-marten-449`
-
-Deploy Convex before shipping frontend code that calls new Convex functions.
-
-## Commands
+## Important Commands
 
 ```bash
 npm run lint
@@ -54,13 +49,20 @@ npm run build
 npx convex deploy -y
 ```
 
-## Workspace Layout
+## Convex Environments
 
-Non-runtime artifacts live under `workspace/` to keep the project root clean.
+- dev: `ardent-penguin-515`
+- prod: `greedy-marten-449`
 
-- `workspace/manual-tests/`: manual harnesses and sandboxes
-- `workspace/diagnostic-reports/`: readable exports and misconception reports
-- `workspace/diagnostic-source-assets/`: mirror inputs used to sync runtime diagnostic assets
-- `workspace/reports/`: generated reports and exports that are not runtime assets
+If you add or change Convex functions, deploy Convex before shipping the frontend.
+
+## About `workspace/`
+
+`workspace/` is for non-runtime material. Keep the app root clean.
+
+- `workspace/manual-tests/`: sandboxes and manual checks
+- `workspace/diagnostic-reports/`: readable exports and sync reports
+- `workspace/diagnostic-source-assets/`: mirrored source inputs for diagnostic sync work
+- `workspace/reports/`: generated reports that are not runtime assets
 - `workspace/reference-projects/`: outside code kept only for reference
-- `workspace/legacy-web-assets/`: old standalone web material not used by the app runtime
+- `workspace/legacy-web-assets/`: old standalone web material not used by the app

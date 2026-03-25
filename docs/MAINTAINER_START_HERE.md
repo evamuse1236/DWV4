@@ -1,25 +1,25 @@
 # Maintainer Start Here
 
-Purpose: answer the three setup questions fast.
+This file answers the first three questions a maintainer usually has.
 
-## Which repo is active?
+## 1. Which repo should I work in?
 
-- Active app repo: `C:\WProjects\DW`
-- Human-facing name: `deep-work-app`
+- active app repo: `C:\WProjects\DW`
+- human name: `deep-work-app`
 
-## Which repo owns the source data?
+## 2. Where does source data live?
 
-- Data repo: `C:\WProjects\01DWDATA`
-- Human-facing name: `deep-work-data`
+- data repo: `C:\WProjects\01DWDATA`
+- human name: `deep-work-data`
 
-## Which repo is legacy only?
+## 3. What is legacy only?
 
-- Archive repo: `C:\projects\DWV4`
-- Human-facing name: `deep-work-legacy`
+- archive repo: `C:\projects\DWV4`
+- human name: `deep-work-legacy`
 
-Do not split active app work across `DW` and `DWV4`.
+Do not treat `DWV4` as a second active app repo.
 
-## What should I read next?
+## Read Next
 
 1. `docs/CORE.md`
 2. `docs/CODEBASE-MAP.md`
@@ -29,7 +29,7 @@ Do not split active app work across `DW` and `DWV4`.
 6. `docs/DATA_FLOW.md`
 7. `docs-for-humans/README.md`
 
-## Normal commands
+## Normal Commands
 
 ```bash
 npm install
@@ -40,7 +40,7 @@ npm run test:run
 npm run build
 ```
 
-## Naming rule
+## House Rule
 
 Every folder should answer: "What is this for?"
 

@@ -47,7 +47,6 @@ Purpose: fast navigation to where behavior actually lives.
 - `/admin/objectives`
 - `/admin/viva`
 - `/admin/diagnostics`
-- `/admin/reviews` (with `/admin/presentations` redirected)
 - `/admin/books`
 - `/admin/norms`
 - `/admin/trust-jar`
@@ -60,5 +59,5 @@ Purpose: fast navigation to where behavior actually lives.
 - Mastery flow: `src/features/mastery/pages/MasteryPage.tsx`, `src/features/mastery/components/MasteryStatusCard.tsx`, `src/shared/lib/mastery.ts`, `convex/mastery.ts`
 - Diagnostics: `src/features/diagnostics/pages/DiagnosticPage.tsx`, `src/features/admin/pages/DiagnosticsPage.tsx`, `src/shared/lib/diagnostic.ts`, `convex/diagnostics.ts`
 - AI actions: `convex/ai.ts`
-- Reading flow: `src/features/reading/pages/ReadingPage.tsx`, `src/features/reading/pages/ReviewPage.tsx`, `convex/books.ts` (modal `Read Book` CTA + optimistic Reading list updates + review prompt suggestions)
-- Admin shell and queues: `src/app/shell/AdminLayout.tsx`, `src/features/admin/pages/AdminDashboard.tsx`, `src/features/admin/pages/*` (including `VivaQueuePage.tsx`, `DiagnosticsPage.tsx`, and `ReviewQueuePage.tsx`), `convex/mastery.ts`, `convex/books.ts`, `convex/diagnostics.ts`
+- Reading flow: `src/features/reading/pages/ReadingPage.tsx`, `src/features/reading/components/BookBuddy.tsx`, `src/features/reading/pages/ReviewPage.tsx`, `convex/books.ts` (student-added draft books, quick `already read`, guided Book Buddy recommendations, finish-book flow, optional community reviews)
+- Admin shell and queues: `src/app/shell/AdminLayout.tsx`, `src/features/admin/pages/AdminDashboard.tsx`, `src/features/admin/pages/*` (especially `VivaQueuePage.tsx`, `DiagnosticsPage.tsx`, and `BooksPage.tsx`), `convex/mastery.ts`, `convex/books.ts`, `convex/diagnostics.ts`

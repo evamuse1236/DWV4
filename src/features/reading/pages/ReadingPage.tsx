@@ -4,12 +4,13 @@ import { AnimatePresence, motion } from "framer-motion";
 import { api } from "@convex/_generated/api";
 import type { Id } from "@convex/_generated/dataModel";
 import { useAuth } from "@/features/auth/hooks/useAuth";
-import { getBookBadgeClass, type BookStatus } from "@/shared/lib/status-utils";
+import { bookStatusConfig, getBookBadgeClass, type BookStatus } from "@/shared/lib/status-utils";
 import BookBuddy from "@/features/reading/components/BookBuddy";
 
 type TabType = "library" | "reading" | "finished" | "community";
 type StudentBookStatus =
   | "reading"
+  | "already_read"
   | "completed"
   | "review_draft"
   | "review_submitted"
@@ -26,6 +27,9 @@ type BookRecord = {
   description?: string;
   coverImageUrl?: string;
   readingUrl?: string;
+  source?: "seed" | "admin" | "student";
+  libraryStatus?: "draft" | "curated";
+  needsAdminReview?: boolean;
 };
 
 type StudentBookRecord = {
@@ -35,6 +39,7 @@ type StudentBookRecord = {
   review?: string;
   rating?: number;
   coachFeedback?: string;
+  completedAt?: number;
   reviewSubmittedAt?: number;
   reviewApprovedAt?: number;
   book?: BookRecord | null;
@@ -42,8 +47,15 @@ type StudentBookRecord = {
 
 type SelectedBook = BookRecord & { myBook: StudentBookRecord | null };
 
-const DONE_STATUSES = new Set<StudentBookStatus>(["review_approved", "presented"]);
-const PENDING_STATUSES = new Set<StudentBookStatus>(["review_submitted", "completed", "presentation_requested"]);
+const DONE_STATUSES = new Set<StudentBookStatus>([
+  "already_read",
+  "completed",
+  "review_submitted",
+  "review_changes_requested",
+  "review_approved",
+  "presentation_requested",
+  "presented",
+]);
 
 function StarRating({ rating }: { rating: number }) {
   return (
@@ -110,12 +122,15 @@ export function ReadingPage() {
   const [reviewText, setReviewText] = useState("");
   const [reviewRating, setReviewRating] = useState(0);
   const [commentText, setCommentText] = useState("");
+  const [missingBookTitle, setMissingBookTitle] = useState("");
+  const [missingBookAuthor, setMissingBookAuthor] = useState("");
+  const [isSavingMissingBook, setIsSavingMissingBook] = useState(false);
   const deferredSearchQuery = useDeferredValue(searchQuery);
 
   const allBooks = useQuery(api.books.getAll) as BookRecord[] | undefined;
   const myBooks = useQuery(api.books.getStudentBooks, user ? { userId: user._id as any } : "skip") as StudentBookRecord[] | undefined;
   const readingStats = useQuery(api.books.getReadingStats, user ? { userId: user._id as any } : "skip") as
-    | { reading: number; pendingReview?: number; pendingPresentation?: number; approved?: number; presented?: number }
+    | { reading: number; finished?: number; reviewed?: number; approved?: number; presented?: number }
     | undefined;
   const approvedReviews = useQuery(api.books.getApprovedReviews) as Array<StudentBookRecord & { user?: any }> | undefined;
   const readingHistory = useQuery(api.books.getReadingHistory, user ? { userId: user._id as any } : "skip") as
@@ -127,6 +142,9 @@ export function ReadingPage() {
   ) as Array<{ _id: Id<"bookReviewComments">; message: string; createdAt: number; user?: any }> | undefined;
 
   const startReading = useMutation(api.books.startReading);
+  const markAlreadyRead = useMutation(api.books.markAlreadyRead);
+  const createStudentSubmission = useMutation(api.books.createStudentSubmission);
+  const finishBook = useMutation(api.books.finishBook);
   const saveReviewDraft = useMutation(api.books.saveReviewDraft);
   const submitReview = useMutation(api.books.submitReview);
   const addReviewComment = useMutation(api.books.addReviewComment);
@@ -164,9 +182,10 @@ export function ReadingPage() {
       filterText(review.user?.displayName)
   );
 
-  const pendingCount = readingStats?.pendingReview ?? readingStats?.pendingPresentation ?? 0;
-  const approvedCount = readingStats?.approved ?? readingStats?.presented ?? 0;
+  const finishedCount = readingStats?.finished ?? readingStats?.approved ?? readingStats?.presented ?? 0;
+  const reviewedCount = readingStats?.reviewed ?? 0;
   const selectedCommunityReview = (approvedReviews || []).find((review) => review._id === activeReviewId) || null;
+  const hasMissingBookDraft = missingBookTitle.trim().length > 0 && missingBookAuthor.trim().length > 0;
 
   const openBook = (book: BookRecord) => {
     const myBook = myBooksMap.get(book._id) || null;
@@ -215,6 +234,61 @@ export function ReadingPage() {
     return studentBookId;
   };
 
+  const handleMarkAlreadyRead = async (book: BookRecord) => {
+    if (!user) return;
+    setRemovedBookIds((previous) => new Set(previous).add(book._id));
+    const studentBookId = (await markAlreadyRead({
+      userId: user._id as any,
+      bookId: book._id as any,
+    })) as Id<"studentBooks">;
+
+    setSelectedBook((previous) =>
+      previous && previous._id === book._id
+        ? {
+            ...previous,
+            myBook: {
+              _id: studentBookId,
+              bookId: book._id,
+              status: "already_read",
+              review: previous.myBook?.review,
+              rating: previous.myBook?.rating,
+              completedAt: Date.now(),
+              book,
+            },
+          }
+        : previous
+    );
+    setActiveTab("finished");
+  };
+
+  const handleCreateMissingBook = async (mode: "reading" | "already_read") => {
+    if (!user || !hasMissingBookDraft || isSavingMissingBook) return;
+
+    setIsSavingMissingBook(true);
+    try {
+      const result = (await createStudentSubmission({
+        userId: user._id as any,
+        title: missingBookTitle.trim(),
+        author: missingBookAuthor.trim(),
+      })) as { bookId: Id<"books"> };
+
+      if (mode === "reading") {
+        setOptimisticBookIds((previous) => new Set(previous).add(result.bookId));
+        await startReading({ userId: user._id as any, bookId: result.bookId as any });
+        setActiveTab("reading");
+      } else {
+        setRemovedBookIds((previous) => new Set(previous).add(result.bookId));
+        await markAlreadyRead({ userId: user._id as any, bookId: result.bookId as any });
+        setActiveTab("finished");
+      }
+
+      setMissingBookTitle("");
+      setMissingBookAuthor("");
+    } finally {
+      setIsSavingMissingBook(false);
+    }
+  };
+
   const onSaveDraft = async () => {
     const studentBookId = await ensureBookStarted();
     if (!studentBookId || !selectedBook) return;
@@ -229,27 +303,68 @@ export function ReadingPage() {
   const onSubmitReview = async () => {
     const text = reviewText.trim();
     if (!text) return;
-    const studentBookId = await ensureBookStarted();
-    if (!studentBookId || !selectedBook) return;
-    await submitReview({ studentBookId: studentBookId as any, rating: reviewRating || undefined, review: text });
+    if (!selectedBook?.myBook?._id || !selectedBook) return;
+    if (!DONE_STATUSES.has(selectedBook.myBook.status)) return;
+    await submitReview({
+      studentBookId: selectedBook.myBook._id as any,
+      rating: reviewRating || undefined,
+      review: text,
+    });
     setSelectedBook((prev) =>
       prev && prev.myBook
-        ? { ...prev, myBook: { ...prev.myBook, status: DONE_STATUSES.has(prev.myBook.status) ? prev.myBook.status : "review_submitted", review: text, rating: reviewRating || undefined, reviewSubmittedAt: Date.now() } }
+        ? {
+            ...prev,
+            myBook: {
+              ...prev.myBook,
+              status: prev.myBook.status === "presented" ? "presented" : "completed",
+              review: text,
+              rating: reviewRating || undefined,
+              reviewSubmittedAt: Date.now(),
+              completedAt: prev.myBook.completedAt ?? Date.now(),
+            },
+          }
         : prev
     );
+  };
+
+  const onFinishBook = async () => {
+    const studentBookId = await ensureBookStarted();
+    if (!studentBookId || !selectedBook) return;
+    await finishBook({
+      studentBookId: studentBookId as any,
+      rating: reviewRating || undefined,
+      review: reviewText || undefined,
+    });
+    setSelectedBook((prev) =>
+      prev
+        ? {
+            ...prev,
+            myBook: {
+              ...(prev.myBook ?? { _id: studentBookId, bookId: prev._id, status: "completed" as StudentBookStatus, book: prev }),
+              status: "completed",
+              review: reviewText || undefined,
+              rating: reviewRating || undefined,
+              reviewSubmittedAt: reviewText.trim() ? Date.now() : prev.myBook?.reviewSubmittedAt,
+              completedAt: Date.now(),
+            },
+          }
+        : prev
+    );
+    setActiveTab("finished");
+    setSelectedBook(null);
   };
 
   return (
     <div>
       <div className="text-center mb-8">
         <h1 className="text-[3rem]">Reading Journeys</h1>
-        <p className="opacity-60">Read, write a review, and finish after approval.</p>
+        <p className="opacity-60">Read, finish books freely, and share a review at the end if you want.</p>
       </div>
 
       <div className="glass-card p-6 mb-8 flex justify-center gap-12 text-center">
         <div><div className="text-4xl text-[#ca8a04]">{readingStats?.reading || 0}</div><div className="text-xs uppercase opacity-60">Reading</div></div>
-        <div><div className="text-4xl text-[#7c3aed]">{pendingCount}</div><div className="text-xs uppercase opacity-60">Pending</div></div>
-        <div><div className="text-4xl text-[#15803d]">{approvedCount}</div><div className="text-xs uppercase opacity-60">Finished</div></div>
+        <div><div className="text-4xl text-[#15803d]">{finishedCount}</div><div className="text-xs uppercase opacity-60">Finished</div></div>
+        <div><div className="text-4xl text-[#0f766e]">{reviewedCount}</div><div className="text-xs uppercase opacity-60">Shared Reviews</div></div>
       </div>
 
       <div className="mb-6">
@@ -259,6 +374,45 @@ export function ReadingPage() {
           placeholder="Search books or reviews..."
           className="w-full max-w-md mx-auto block rounded-full border px-4 py-2 bg-white/70"
         />
+      </div>
+
+      <div className="glass-card p-5 mb-6 max-w-3xl mx-auto">
+        <div className="flex flex-col gap-3">
+          <div>
+            <p className="text-sm font-semibold text-[var(--color-espresso)]">Add a missing book</p>
+            <p className="text-sm opacity-60">If a book is not in the library yet, add just the title and author. Everyone can see it right away, and an admin can fill in the rest later.</p>
+          </div>
+          <div className="grid gap-3 md:grid-cols-[1.2fr_1fr_auto]">
+            <input
+              value={missingBookTitle}
+              onChange={(event) => setMissingBookTitle(event.target.value)}
+              placeholder="Book title"
+              className="rounded-2xl border px-4 py-3 bg-white/80"
+            />
+            <input
+              value={missingBookAuthor}
+              onChange={(event) => setMissingBookAuthor(event.target.value)}
+              placeholder="Author"
+              className="rounded-2xl border px-4 py-3 bg-white/80"
+            />
+            <div className="flex flex-col gap-2 md:flex-row">
+              <button
+                className="btn btn-secondary whitespace-nowrap disabled:opacity-50"
+                disabled={!hasMissingBookDraft || isSavingMissingBook}
+                onClick={() => void handleCreateMissingBook("reading")}
+              >
+                Add To Reading
+              </button>
+              <button
+                className="btn btn-primary whitespace-nowrap disabled:opacity-50"
+                disabled={!hasMissingBookDraft || isSavingMissingBook}
+                onClick={() => void handleCreateMissingBook("already_read")}
+              >
+                Mark Already Read
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="flex gap-2 mb-6">
@@ -272,11 +426,40 @@ export function ReadingPage() {
       {activeTab === "library" && (
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {visibleLibrary.map((book) => (
-            <button key={book._id} className="pastel-card p-4 text-left" onClick={() => openBook(book)}>
-              <BookCover title={book.title} coverImageUrl={book.coverImageUrl} />
-              <p className="font-semibold">{book.title}</p>
-              <p className="text-xs opacity-60">{book.author}</p>
-            </button>
+            <div key={book._id} className="pastel-card p-4 relative group">
+              <button
+                aria-label={`Mark ${book.title} as already read`}
+                className="absolute top-3 right-3 z-10 h-10 w-10 rounded-full bg-[var(--color-card-active)]/95 border border-[var(--color-divider)] text-sm font-semibold text-[var(--color-espresso)] shadow-sm opacity-95 md:opacity-0 md:group-hover:opacity-100 md:group-focus-within:opacity-100 transition-all hover:bg-[var(--color-pastel-green)]"
+                onClick={(event) => {
+                  event.stopPropagation();
+                  void handleMarkAlreadyRead(book);
+                }}
+              >
+                ✓
+              </button>
+              <button className="text-left w-full" onClick={() => openBook(book)}>
+                <BookCover title={book.title} coverImageUrl={book.coverImageUrl} />
+                <p className="font-semibold">{book.title}</p>
+                <p className="text-xs opacity-60">{book.author}</p>
+                <div className="mt-2 flex flex-wrap gap-2">
+                  {book.genre ? (
+                    <span className="text-[10px] px-2 py-1 rounded-full bg-black/5 text-black/55 uppercase tracking-wider">
+                      {book.genre}
+                    </span>
+                  ) : null}
+                  {book.libraryStatus === "draft" || book.needsAdminReview ? (
+                    <span className="text-[10px] px-2 py-1 rounded-full bg-[var(--color-pastel-orange)] text-[var(--color-espresso)] uppercase tracking-wider">
+                      Needs details
+                    </span>
+                  ) : null}
+                  {book.source === "student" ? (
+                    <span className="text-[10px] px-2 py-1 rounded-full bg-[var(--color-pastel-blue)] text-[var(--color-espresso)] uppercase tracking-wider">
+                      Student added
+                    </span>
+                  ) : null}
+                </div>
+              </button>
+            </div>
           ))}
         </div>
       )}
@@ -308,7 +491,9 @@ export function ReadingPage() {
                 <BookCover title={item.book?.title || "Unknown"} coverImageUrl={item.book?.coverImageUrl} />
                 <p className="font-semibold">{item.book?.title || "Unknown"}</p>
                 <p className="text-xs opacity-60">{item.book?.author || "Unknown"}</p>
-                <span className={`text-[10px] px-2 py-1 rounded-full ${getBookBadgeClass(item.status as BookStatus)}`}>{item.status}</span>
+                <span className={`text-[10px] px-2 py-1 rounded-full ${getBookBadgeClass(item.status as BookStatus)}`}>
+                  {bookStatusConfig[item.status as BookStatus]?.label || item.status}
+                </span>
               </button>
             </div>
           ))}
@@ -322,6 +507,11 @@ export function ReadingPage() {
               <BookCover title={item.book?.title || "Unknown"} coverImageUrl={item.book?.coverImageUrl} />
               <p className="font-semibold">{item.book?.title || "Unknown"}</p>
               <p className="text-xs opacity-60">{item.book?.author || "Unknown"}</p>
+              <div className="mt-2">
+                <span className={`text-[10px] px-2 py-1 rounded-full ${getBookBadgeClass(item.status as BookStatus)}`}>
+                  {bookStatusConfig[item.status as BookStatus]?.label || item.status}
+                </span>
+              </div>
               {item.rating ? <StarRating rating={item.rating} /> : null}
             </button>
           ))}
@@ -364,50 +554,73 @@ export function ReadingPage() {
                   <div>
                     <h2 className="text-3xl md:text-4xl font-bold leading-tight tracking-tight">{selectedBook.title}</h2>
                     <p className="text-lg text-[var(--color-taupe)] mt-1">by {selectedBook.author}</p>
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {selectedBook.genre ? (
+                        <span className="text-[10px] px-2 py-1 rounded-full bg-black/5 text-black/55 uppercase tracking-wider">
+                          {selectedBook.genre}
+                        </span>
+                      ) : null}
+                      {selectedBook.libraryStatus === "draft" || selectedBook.needsAdminReview ? (
+                        <span className="text-[10px] px-2 py-1 rounded-full bg-[var(--color-pastel-orange)] text-[var(--color-espresso)] uppercase tracking-wider">
+                          Details still being filled in
+                        </span>
+                      ) : null}
+                    </div>
                   </div>
 
                   {/* Read Book button */}
-                  {selectedBook.readingUrl && (
-                    <button
-                      className="btn btn-primary inline-flex items-center gap-2"
-                      onClick={async () => {
-                        if (!selectedBook || !user) return;
-                        const book = selectedBook;
-                        window.open(book.readingUrl, "_blank", "noopener,noreferrer");
-                        const alreadyStarted = Boolean(book.myBook?._id);
-                        if (!alreadyStarted) {
-                          setOptimisticBookIds((prev) => new Set(prev).add(book._id));
-                        }
-                        setRemovedBookIds((previous) => {
-                          if (!previous.has(book._id)) return previous;
-                          const next = new Set(previous);
-                          next.delete(book._id);
-                          return next;
-                        });
-                        setActiveTab("reading");
-                        setSelectedBook(null);
-                        if (!alreadyStarted) {
-                          await startReading({ userId: user._id as any, bookId: book._id as any });
-                        }
-                      }}
-                    >
-                      <span className="text-lg">📖</span> Read Book
-                    </button>
-                  )}
+                  <div className="flex flex-wrap gap-3">
+                    {selectedBook.readingUrl ? (
+                      <button
+                        className="btn btn-primary inline-flex items-center gap-2"
+                        onClick={async () => {
+                          if (!selectedBook || !user) return;
+                          const book = selectedBook;
+                          window.open(book.readingUrl, "_blank", "noopener,noreferrer");
+                          const alreadyStarted = Boolean(book.myBook?._id);
+                          if (!alreadyStarted) {
+                            setOptimisticBookIds((prev) => new Set(prev).add(book._id));
+                          }
+                          setRemovedBookIds((previous) => {
+                            if (!previous.has(book._id)) return previous;
+                            const next = new Set(previous);
+                            next.delete(book._id);
+                            return next;
+                          });
+                          setActiveTab("reading");
+                          setSelectedBook(null);
+                          if (!alreadyStarted) {
+                            await startReading({ userId: user._id as any, bookId: book._id as any });
+                          }
+                        }}
+                      >
+                        <span className="text-lg">📖</span> Read Book
+                      </button>
+                    ) : null}
+                    {(!selectedBook.myBook || !DONE_STATUSES.has(selectedBook.myBook.status)) ? (
+                      <button
+                        className="btn btn-secondary inline-flex items-center gap-2"
+                        onClick={() => void handleMarkAlreadyRead(selectedBook)}
+                      >
+                        <span className="text-lg">✓</span> Mark Already Read
+                      </button>
+                    ) : null}
+                  </div>
 
                   {/* Status banners */}
-                  {selectedBook.myBook?.status === "review_changes_requested" && selectedBook.myBook.coachFeedback ? (
-                    <div className="flex items-start gap-2 p-3 rounded-xl bg-[var(--color-pastel-orange)] border border-[var(--color-divider)] text-[var(--color-espresso)] text-sm">
-                      <span className="mt-0.5 flex-shrink-0">&#9888;</span>
-                      <span><span className="font-medium">Coach feedback:</span> {selectedBook.myBook.coachFeedback}</span>
-                    </div>
-                  ) : null}
-                  {selectedBook.myBook && PENDING_STATUSES.has(selectedBook.myBook.status) ? (
-                    <div className="p-3 rounded-xl bg-[var(--color-pastel-blue)] border border-[var(--color-divider)] text-[var(--color-espresso)] text-sm">Waiting for coach approval&hellip;</div>
-                  ) : null}
                   {selectedBook.myBook && DONE_STATUSES.has(selectedBook.myBook.status) ? (
-                    <div className="p-3 rounded-xl bg-[var(--color-pastel-green)] border border-[var(--color-divider)] text-[var(--color-espresso)] text-sm">Completed. You can still edit; approval stays active.</div>
-                  ) : null}
+                    <div className="p-3 rounded-xl bg-[var(--color-pastel-green)] border border-[var(--color-divider)] text-[var(--color-espresso)] text-sm">
+                      {selectedBook.myBook.status === "already_read"
+                        ? "Marked as already read. You can still leave a review later if you want to share it."
+                        : reviewText.trim()
+                          ? "Finished. Your review is saved and visible in Community."
+                          : "Finished. Add a review anytime if you want to share your thoughts."}
+                    </div>
+                  ) : (
+                    <div className="p-3 rounded-xl bg-[var(--color-pastel-blue)] border border-[var(--color-divider)] text-[var(--color-espresso)] text-sm">
+                      Start reading when you're ready, or mark it as already read if you finished it before adding it here.
+                    </div>
+                  )}
 
                   {/* Star rating */}
                   <div>
@@ -427,8 +640,16 @@ export function ReadingPage() {
 
                   {/* Action buttons */}
                   <div className="flex gap-3 pt-1">
-                    <button className="btn btn-secondary flex-1" onClick={onSaveDraft}>Save Draft</button>
-                    <button className="btn btn-primary flex-1 disabled:opacity-50" onClick={onSubmitReview} disabled={!reviewText.trim()}>Submit For Approval</button>
+                    {!selectedBook.myBook || !DONE_STATUSES.has(selectedBook.myBook.status) ? (
+                      <>
+                        <button className="btn btn-secondary flex-1" onClick={onSaveDraft}>Save Draft</button>
+                        <button className="btn btn-primary flex-1" onClick={onFinishBook}>Finish Book</button>
+                      </>
+                    ) : (
+                      <button className="btn btn-primary flex-1 disabled:opacity-50" onClick={onSubmitReview} disabled={!reviewText.trim()}>
+                        {selectedBook.myBook.review?.trim() ? "Update Review" : "Share Review"}
+                      </button>
+                    )}
                   </div>
                 </div>
               </div>

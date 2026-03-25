@@ -131,4 +131,18 @@ describe("App admin route redirects", () => {
 
     expect(screen.getByText("Admin dashboard")).toBeInTheDocument();
   });
+
+  it("redirects /admin/reviews to the admin dashboard", () => {
+    window.history.pushState({}, "", "/admin/reviews");
+    render(<App />);
+
+    expect(screen.getByText("Admin dashboard")).toBeInTheDocument();
+  });
+
+  it("redirects /admin/presentations to the admin dashboard", () => {
+    window.history.pushState({}, "", "/admin/presentations");
+    render(<App />);
+
+    expect(screen.getByText("Admin dashboard")).toBeInTheDocument();
+  });
 });

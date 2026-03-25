@@ -140,19 +140,12 @@ export function BookCard({
               </Button>
             )}
 
-            {(status === "review_submitted" || status === "presentation_requested") && (
-              <div className="text-center text-sm text-purple-600 font-medium">
-                Waiting for approval
-              </div>
-            )}
-
-            {(status === "review_changes_requested") && (
-              <div className="text-center text-sm text-amber-600 font-medium">
-                Changes requested
-              </div>
-            )}
-
-            {(status === "presented" || status === "review_approved") && (
+            {(status === "completed" ||
+              status === "review_submitted" ||
+              status === "review_changes_requested" ||
+              status === "review_approved" ||
+              status === "presentation_requested" ||
+              status === "presented") && (
               <div className="text-center text-sm text-green-600 font-medium">
                 Finished!
               </div>

@@ -310,6 +310,9 @@ export const seedAll = mutation({
         pageCount: book.pageCount,
         readingUrl: book.readingUrl,
         coverImageUrl: book.coverImageUrl,
+        source: "seed",
+        libraryStatus: "curated",
+        needsAdminReview: false,
         isPrePopulated: true,
         createdAt: Date.now(),
       });
@@ -508,6 +511,9 @@ export const reseedBooks = mutation({
         pageCount: book.pageCount,
         readingUrl: book.readingUrl,
         coverImageUrl: book.coverImageUrl,
+        source: "seed",
+        libraryStatus: "curated",
+        needsAdminReview: false,
         isPrePopulated: true,
         createdAt: Date.now(),
       });

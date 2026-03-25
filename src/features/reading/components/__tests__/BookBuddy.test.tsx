@@ -118,6 +118,12 @@ function renderBuddy(overrides: Partial<typeof defaultProps> & { disabled?: bool
   return { ...result, onStartReading: props.onStartReading };
 }
 
+async function completeGuide(user: ReturnType<typeof userEvent.setup>) {
+  await user.click(screen.getByRole("button", { name: /something funny/i }));
+  await user.click(screen.getByRole("button", { name: /fast/i }));
+  await user.click(screen.getByRole("button", { name: /mix it up/i }));
+}
+
 // ---------------------------------------------------------------------------
 // Tests
 // ---------------------------------------------------------------------------
@@ -156,8 +162,7 @@ describe("BookBuddy", () => {
       // Open the panel
       await user.click(screen.getByRole("button", { name: /open book buddy/i }));
 
-      // Click a default suggestion chip to trigger a send
-      await user.click(screen.getByRole("button", { name: /something funny/i }));
+      await completeGuide(user);
 
       // Wait for the AI message to appear
       expect(await screen.findByText("Here are some books for you!")).toBeInTheDocument();
@@ -172,7 +177,7 @@ describe("BookBuddy", () => {
       expect(screen.getByRole("button", { name: "Something else" })).toBeInTheDocument();
 
       // Default chips should be gone
-      expect(screen.queryByRole("button", { name: /big adventure/i })).not.toBeInTheDocument();
+      expect(screen.queryByRole("button", { name: /adventure/i })).not.toBeInTheDocument();
     });
   });
 
@@ -188,7 +193,7 @@ describe("BookBuddy", () => {
       renderBuddy();
 
       await user.click(screen.getByRole("button", { name: /open book buddy/i }));
-      await user.click(screen.getByRole("button", { name: /something funny/i }));
+      await completeGuide(user);
 
       // Error message appears
       expect(
@@ -223,9 +228,9 @@ describe("BookBuddy", () => {
 
       renderBuddy();
 
-      // Open and trigger a response with Luna (default)
+      // Open and complete the guide with Luna (default)
       await user.click(screen.getByRole("button", { name: /open book buddy/i }));
-      await user.click(screen.getByRole("button", { name: /something funny/i }));
+      await completeGuide(user);
 
       // Wait for AI message and book card
       expect(await screen.findByText("Luna's picks")).toBeInTheDocument();
@@ -241,14 +246,14 @@ describe("BookBuddy", () => {
       // Book cards should be cleared
       expect(screen.queryByText("The Great Book")).not.toBeInTheDocument();
 
-      // Dash's intro should now be visible (empty state shows)
-      expect(screen.getByText(/ready to find your next favorite book/i)).toBeInTheDocument();
+      // Dash's guide intro should now be visible
+      expect(screen.getByText(/quick picks, better filters/i)).toBeInTheDocument();
 
       // Suggested replies reset to defaults
       expect(screen.getByRole("button", { name: /something funny/i })).toBeInTheDocument();
-      expect(screen.getByRole("button", { name: /big adventure/i })).toBeInTheDocument();
+      expect(screen.getByRole("button", { name: /adventure/i })).toBeInTheDocument();
       expect(screen.getByRole("button", { name: /mystery/i })).toBeInTheDocument();
-      expect(screen.getByRole("button", { name: /surprise me!/i })).toBeInTheDocument();
+      expect(screen.getByRole("button", { name: /surprise me/i })).toBeInTheDocument();
 
       // Custom reply is gone
       expect(screen.queryByRole("button", { name: "Luna custom" })).not.toBeInTheDocument();
@@ -319,7 +324,7 @@ describe("BookBuddy", () => {
 
       // Open panel and trigger AI response
       await user.click(screen.getByRole("button", { name: /open book buddy/i }));
-      await user.click(screen.getByRole("button", { name: /something funny/i }));
+      await completeGuide(user);
 
       // Wait for the book card to render
       const bookCard = await screen.findByText("Another Book");
