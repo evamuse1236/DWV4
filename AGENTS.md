@@ -20,13 +20,15 @@ Single source of truth: this file. `CLAUDE.md` exists only as a compatibility po
 | Architecture, schema/status contracts, AI contracts | `docs/SYSTEM.md` |
 | Deploy, rollback, setup, verification | `docs/OPERATIONS.md` |
 | Curriculum pipeline outputs | `docs/curriculum/README.md` |
-| Non-jargon human docs | `docsForMe/README.md` |
+| Root layout and folder policy | `docs/ROOT-LAYOUT.md` |
+| App/data repo handoff | `docs/DATA_FLOW.md` |
+| Non-jargon human docs | `docs-for-humans/README.md` |
 
 ## Source-of-Truth Priority
 
 1. Runtime code (`src/`, `convex/`, `scripts/`)
 2. `convex/schema.ts`
-3. `src/App.tsx`
+3. `src/app/router/App.tsx`
 4. `docs/CORE.md`
 5. `docs/SYSTEM.md`
 6. `docs/OPERATIONS.md`
@@ -36,7 +38,7 @@ Single source of truth: this file. `CLAUDE.md` exists only as a compatibility po
 1. Do not implement from deleted or historical docs; use current docs + runtime code.
 2. Update owner docs instead of creating overlapping docs.
 3. If behavior changes, update the matching owner doc.
-4. Validate route assumptions in `src/App.tsx`.
+4. Validate route assumptions in `src/app/router/App.tsx`.
 5. Validate data assumptions in `convex/schema.ts`.
 
 ## UI Workflow Policy

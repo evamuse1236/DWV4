@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grade 7 Textbook Pilot Tests</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: #111a2d;
+      --card-alt: #0f1728;
+      --panel: #0d1527;
+      --text: #e5eefc;
+      --muted: #9fb2cc;
+      --border: #24334d;
+      --primary: #34d399;
+      --primary-soft: #0f2f2a;
+      --challenge: #f59e0b;
+      --challenge-soft: #2b2111;
+      --info: #93c5fd;
+      --info-soft: #12263f;
+      --shadow: 0 10px 24px rgba(0,0,0,0.35);
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Nunito", sans-serif;
+      background: radial-gradient(circle at 20% 0%, #0f233f 0%, #0b1220 42%);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 1.2rem;
+    }
+    .container { max-width: 1040px; margin: 0 auto; }
+    .head {
+      background: linear-gradient(135deg, #10243f 0%, #142038 100%);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1rem 1.1rem;
+      margin-bottom: 1rem;
+    }
+    .head h1 { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.01em; }
+    .head p { color: var(--muted); font-weight: 700; margin-top: 0.35rem; }
+    .meta {
+      margin-top: 0.7rem;
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .pill {
+      font-size: 0.8rem;
+      font-weight: 800;
+      border-radius: 999px;
+      padding: 0.22rem 0.55rem;
+      border: 1px solid rgba(15,118,110,0.22);
+      color: var(--primary);
+      background: var(--primary-soft);
+    }
+    .tabs {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .tab {
+      appearance: none;
+      border: 1px solid var(--border);
+      background: var(--card-alt);
+      color: var(--text);
+      font-weight: 900;
+      border-radius: 12px;
+      padding: 0.48rem 0.75rem;
+      cursor: pointer;
+    }
+    .tab.active {
+      border-color: rgba(15,118,110,0.4);
+      background: var(--primary-soft);
+      color: var(--primary);
+    }
+    .set-summary {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 0.9rem 1rem;
+      margin-bottom: 0.8rem;
+    }
+    .set-summary.challenge {
+      border-color: rgba(124,45,18,0.25);
+      background: linear-gradient(135deg, var(--card-alt) 0%, var(--challenge-soft) 100%);
+    }
+    .set-summary h2 { font-size: 1.1rem; font-weight: 800; }
+    .set-summary p { color: var(--muted); font-weight: 700; margin-top: 0.3rem; }
+    .standards {
+      margin-top: 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .std-tag {
+      font-size: 0.74rem;
+      font-weight: 900;
+      border-radius: 999px;
+      padding: 0.18rem 0.5rem;
+      border: 1px solid var(--info);
+      color: var(--info);
+      background: var(--info-soft);
+    }
+    .list {
+      display: grid;
+      gap: 0.7rem;
+    }
+    .q {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 0.9rem 1rem;
+    }
+    .qhead {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.8rem;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 0.5rem;
+    }
+    .qid {
+      font-size: 0.83rem;
+      font-weight: 900;
+      color: var(--primary);
+      background: var(--primary-soft);
+      border: 1px solid rgba(15,118,110,0.2);
+      border-radius: 999px;
+      padding: 0.2rem 0.5rem;
+    }
+    .source {
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+    .prompt { font-weight: 800; margin-bottom: 0.55rem; }
+    .map-grid {
+      margin: 0.45rem 0 0.55rem;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--panel);
+      padding: 0.5rem 0.6rem;
+      display: grid;
+      gap: 0.35rem;
+    }
+    .map-row {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 0.5rem;
+      align-items: start;
+    }
+    .map-label {
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+    .map-value {
+      color: var(--text);
+      font-size: 0.88rem;
+      font-weight: 800;
+    }
+    .map-value.missing {
+      color: var(--challenge);
+    }
+    .map-lines {
+      display: grid;
+      gap: 0.25rem;
+    }
+    .map-line {
+      color: var(--text);
+      font-size: 0.86rem;
+      font-weight: 800;
+    }
+    .map-line.missing {
+      color: var(--challenge);
+    }
+    .svg-wrap {
+      margin: 0.6rem 0 0.7rem;
+      border: 1px dashed var(--border);
+      border-radius: 12px;
+      background: var(--panel);
+      padding: 0.45rem;
+      overflow-x: auto;
+    }
+    .answer {
+      margin-top: 0.5rem;
+      border-top: 1px dashed var(--border);
+      padding-top: 0.45rem;
+    }
+    .answer button {
+      appearance: none;
+      border: 1px solid var(--border);
+      background: var(--card-alt);
+      border-radius: 10px;
+      padding: 0.38rem 0.62rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .answer p {
+      margin-top: 0.5rem;
+      color: var(--muted);
+      font-weight: 800;
+      display: none;
+    }
+    .answer p.show { display: block; }
+    .resp {
+      margin-top: 0.55rem;
+      width: 100%;
+      min-height: 72px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.5rem 0.6rem;
+      font: inherit;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .legend {
+      margin-top: 0.9rem;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 0.7rem;
+      color: var(--muted);
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+    @media (max-width: 700px) {
+      .head h1 { font-size: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="head">
+      <h1>Grade 7 Textbook Pilot Tests</h1>
+      <p>Two manual sets from textbook wording: <strong>Power Focus</strong> (core mastery) and <strong>Challenge</strong> (optional stretch).</p>
+      <div class="meta">
+        <span class="pill">Source: Grade 7 textbooks</span>
+        <span class="pill">Open-response format</span>
+        <span class="pill">Distractors intentionally deferred</span>
+      </div>
+    </div>
+
+    <div class="tabs" id="tabs"></div>
+    <div id="summary"></div>
+    <div class="list" id="list"></div>
+    <div class="legend">
+      Coverage note: this pilot intentionally prioritizes Grade 7 critical areas from `cc.md` (proportions, rational operations/equations, geometry, and probability/statistics). It is a draft review surface, not final production diagnostic format.
+    </div>
+  </div>
+
+  <script src="grade7_textbook_tests.js"></script>
+  <script>
+    (function () {
+      var payload = window.GRADE7_TEXTBOOK_TESTS;
+      if (!payload || !Array.isArray(payload.sets)) return;
+
+      var tabsEl = document.getElementById("tabs");
+      var summaryEl = document.getElementById("summary");
+      var listEl = document.getElementById("list");
+      var activeId = payload.sets[0].id;
+
+      function safe(s) { return s == null ? "" : String(s); }
+
+      function renderTabs() {
+        tabsEl.innerHTML = "";
+        for (var i = 0; i < payload.sets.length; i++) {
+          var set = payload.sets[i];
+          var b = document.createElement("button");
+          b.className = "tab" + (set.id === activeId ? " active" : "");
+          b.textContent = set.title + " (" + set.questions.length + ")";
+          b.setAttribute("type", "button");
+          b.onclick = (function (id) {
+            return function () { activeId = id; render(); };
+          })(set.id);
+          tabsEl.appendChild(b);
+        }
+      }
+
+      function renderSummary(set) {
+        var cls = set.id === "challenge" ? "set-summary challenge" : "set-summary";
+        var standards = (set.coverage_summary && Array.isArray(set.coverage_summary.standards_targeted))
+          ? set.coverage_summary.standards_targeted
+          : [];
+        var html = '<div class="' + cls + '">';
+        html += '<h2>' + safe(set.title) + '</h2>';
+        html += '<p>' + safe(set.purpose) + '</p>';
+        if (standards.length) {
+          html += '<div class="standards">';
+          for (var i = 0; i < standards.length; i++) {
+            html += '<span class="std-tag">' + safe(standards[i]) + '</span>';
+          }
+          html += "</div>";
+        }
+        html += "</div>";
+        summaryEl.innerHTML = html;
+      }
+
+      function renderQuestions(set) {
+        listEl.innerHTML = "";
+        for (var i = 0; i < set.questions.length; i++) {
+          var q = set.questions[i];
+          var ccStandards = Array.isArray(q.standard_ids) ? q.standard_ids : [];
+          var ccText = ccStandards.length ? ccStandards.join(", ") : "Not tagged";
+          var neoText = "Not mapped";
+          var neoClass = "map-value";
+          if (q.neo_mapping && q.neo_mapping.status === "mapped_all") {
+            neoText = safe(q.neo_mapping.note || "All standards mapped.");
+          } else if (q.neo_mapping && q.neo_mapping.status === "partial") {
+            neoText = safe(q.neo_mapping.note || "Partial mapping.");
+            neoClass = "map-value missing";
+          } else if (q.neo_mapping && q.neo_mapping.status === "not_mapped") {
+            neoText = safe(q.neo_mapping.note || "No mapping in current Neo scope.");
+            neoClass = "map-value missing";
+          } else if (q.neo_mapping && q.neo_mapping.status === "not_tagged") {
+            neoText = safe(q.neo_mapping.note || "No CC standard tag.");
+            neoClass = "map-value missing";
+          }
+
+          var perStandardHtml = "";
+          var standardMappings = Array.isArray(q.standard_mappings) ? q.standard_mappings : [];
+          if (standardMappings.length) {
+            for (var k = 0; k < standardMappings.length; k++) {
+              var sm = standardMappings[k];
+              var lineClass = sm.status === "mapped" ? "map-line" : "map-line missing";
+              var lineText = safe(sm.standard_id) + " -> ";
+              if (sm.status === "mapped") {
+                lineText += safe(sm.module) + " | Topic " + safe(sm.topic_id) + " - " + safe(sm.topic_title);
+              } else {
+                lineText += safe(sm.note || "No Neo mapping in current scope.");
+              }
+              perStandardHtml += '<div class="' + lineClass + '">' + lineText + "</div>";
+            }
+          } else {
+            perStandardHtml = '<div class="map-line missing">No per-standard mapping data.</div>';
+          }
+
+          var card = document.createElement("article");
+          card.className = "q";
+          var html = "";
+          html += '<div class="qhead">';
+          html += '<div class="qid">' + safe(q.id) + "</div>";
+          html += '<div class="source">' + safe(q.source_book) + " | " + safe(q.source_ref) + "</div>";
+          html += "</div>";
+          html += '<div class="prompt">' + safe(q.prompt) + "</div>";
+          html += '<div class="map-grid">';
+          html += '<div class="map-row"><div class="map-label">CC Standard(s)</div><div class="map-value">' + safe(ccText) + "</div></div>";
+          html += '<div class="map-row"><div class="map-label">Neo Status</div><div class="' + neoClass + '">' + safe(neoText) + "</div></div>";
+          html += '<div class="map-row"><div class="map-label">Neo by CC</div><div class="map-lines">' + perStandardHtml + "</div></div>";
+          html += "</div>";
+          if (Array.isArray(q.standard_ids) && q.standard_ids.length) {
+            html += '<div class="standards">';
+            for (var j = 0; j < q.standard_ids.length; j++) {
+              html += '<span class="std-tag">' + safe(q.standard_ids[j]) + "</span>";
+            }
+            html += "</div>";
+          }
+          if (q.svg) {
+            html += '<div class="svg-wrap">' + q.svg + "</div>";
+          }
+          html += '<textarea class="resp" placeholder="Student response..."></textarea>';
+          html += '<div class="answer"><button type="button">Toggle Suggested Answer</button><p>' + safe(q.answer_key || "Not added yet.") + "</p></div>";
+          card.innerHTML = html;
+          var btn = card.querySelector(".answer button");
+          var ans = card.querySelector(".answer p");
+          btn.addEventListener("click", function (el) {
+            return function () { el.classList.toggle("show"); };
+          }(ans));
+          listEl.appendChild(card);
+        }
+      }
+
+      function render() {
+        renderTabs();
+        var set = null;
+        for (var i = 0; i < payload.sets.length; i++) {
+          if (payload.sets[i].id === activeId) { set = payload.sets[i]; break; }
+        }
+        if (!set) return;
+        renderSummary(set);
+        renderQuestions(set);
+      }
+
+      render();
+    })();
+  </script>
+</body>
+</html>

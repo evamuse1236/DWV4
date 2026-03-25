@@ -12,10 +12,10 @@ Purpose: fast navigation to where behavior actually lives.
 ## Entrypoints
 
 - Frontend bootstrap: `src/main.tsx`
-- App routes: `src/App.tsx`
+- App routes: `src/app/router/App.tsx`
 - Schema source of truth: `convex/schema.ts`
 
-## Route map (`src/App.tsx`)
+## Route map (`src/app/router/App.tsx`)
 
 ### Public
 
@@ -55,10 +55,10 @@ Purpose: fast navigation to where behavior actually lives.
 
 ## High-impact files by domain
 
-- Auth/session: `src/hooks/useAuth.tsx`, `convex/auth.ts`
+- Auth/session: `src/features/auth/hooks/useAuth.tsx`, `convex/auth.ts`
 - Deep work/progress: `convex/objectives.ts`, `convex/progress.ts`
-- Mastery flow: `src/pages/student/MasteryPage.tsx`, `src/components/mastery/MasteryStatusCard.tsx`, `src/lib/mastery.ts`, `convex/mastery.ts`
-- Diagnostics: `src/pages/student/DiagnosticPage.tsx`, `src/pages/admin/DiagnosticsPage.tsx`, `src/lib/diagnostic.ts`, `convex/diagnostics.ts`
+- Mastery flow: `src/features/mastery/pages/MasteryPage.tsx`, `src/features/mastery/components/MasteryStatusCard.tsx`, `src/shared/lib/mastery.ts`, `convex/mastery.ts`
+- Diagnostics: `src/features/diagnostics/pages/DiagnosticPage.tsx`, `src/features/admin/pages/DiagnosticsPage.tsx`, `src/shared/lib/diagnostic.ts`, `convex/diagnostics.ts`
 - AI actions: `convex/ai.ts`
-- Reading flow: `src/pages/student/ReadingPage.tsx`, `src/pages/student/ReviewPage.tsx`, `convex/books.ts` (modal `Read Book` CTA + optimistic Reading list updates + review prompt suggestions)
-- Admin shell and queues: `src/components/layout/AdminLayout.tsx`, `src/pages/admin/AdminDashboard.tsx`, `src/pages/admin/*` (including `VivaQueuePage.tsx`, `DiagnosticsPage.tsx`, and `ReviewQueuePage.tsx`), `convex/mastery.ts`, `convex/books.ts`, `convex/diagnostics.ts`
+- Reading flow: `src/features/reading/pages/ReadingPage.tsx`, `src/features/reading/pages/ReviewPage.tsx`, `convex/books.ts` (modal `Read Book` CTA + optimistic Reading list updates + review prompt suggestions)
+- Admin shell and queues: `src/app/shell/AdminLayout.tsx`, `src/features/admin/pages/AdminDashboard.tsx`, `src/features/admin/pages/*` (including `VivaQueuePage.tsx`, `DiagnosticsPage.tsx`, and `ReviewQueuePage.tsx`), `convex/mastery.ts`, `convex/books.ts`, `convex/diagnostics.ts`

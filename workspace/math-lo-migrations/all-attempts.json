@@ -1,0 +1,791 @@
+[
+  {
+    "attempt": {
+      "_creationTime": 1770867561976.728,
+      "_id": "nd75s0pfevrd3c5zt5faw67cj58107kd",
+      "attemptType": "mastery",
+      "diagnosticModuleIds": [
+        "1.1",
+        "1.4",
+        "1.1",
+        "1.3"
+      ],
+      "diagnosticModuleName": "Module 1: Whole Number Foundations",
+      "domainId": "m177a211jtk8n92msk6w5dyvnx7z09en",
+      "durationMs": 27745,
+      "majorObjectiveId": "ms7cka5qhryt754m8dcd9wzwgd805sd5",
+      "passThresholdPercent": 90,
+      "passed": false,
+      "questionCount": 20,
+      "results": [
+        {
+          "chosenLabel": "B",
+          "correct": true,
+          "correctLabel": "B",
+          "explanation": "Prime factorize: 36 = 2×2×3×3 and 48 = 2×2×2×2×3. The shared factors are 2×2×3 = 12, so the GCF is 12.",
+          "misconception": "",
+          "questionId": "q_cc_6ns4_gcf_swap_small_001",
+          "stem": "What is the greatest common factor (GCF) of 36 and 48?",
+          "topic": "6.NS.4 • Number Theory (Factors & Multiples)"
+        },
+        {
+          "chosenLabel": "C",
+          "correct": false,
+          "correctLabel": "B",
+          "explanation": "12÷5=2 remainder 2; bring down 3 to make 23, so 23÷5=4 remainder 3; bring down 7 to make 37, so 37÷5=7 remainder 2. The result is 247 R2.",
+          "misconception": "Nice try. Some digits came down too fast. Bring them one at a time to stay on track.",
+          "questionId": "q_cc_6ns2_004",
+          "stem": "Use long division to find 1237 ÷ 5. Give the quotient with remainder.",
+          "topic": "6.NS.2 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "D",
+          "correct": false,
+          "correctLabel": "B",
+          "explanation": "4 goes into 37 nine times (9×4=36), leaving remainder 1. Bring down the 2 to make 12, and 12÷4=3, so the quotient is 93.",
+          "misconception": "Nice try. Check the subtraction 37 - 36 again.",
+          "questionId": "q_cc_6ns2_001",
+          "stem": "Use long division to find 372 ÷ 4.",
+          "topic": "6.NS.2 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "D",
+          "correct": false,
+          "correctLabel": "A",
+          "explanation": "6×4=24 (write 4, carry 2), 1×4+2=6, 3×4=12 (write 2, carry 1), 2×4+1=9. The product is 9,264.",
+          "misconception": "Nice try. You multiplied by 40, but we only need to multiply by 4. Check you are using ones, not tens.",
+          "questionId": "q_cc_5nbt5_carry_placevalue_001",
+          "stem": "Use the standard algorithm to multiply. What is 2,316 × 4?",
+          "topic": "5.NBT.5 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "D",
+          "correct": false,
+          "correctLabel": "B",
+          "explanation": "24 goes into 151 six times (6×24=144), leaving 7. Bring down 2 to make 72, and 72÷24=3, so the quotient is 63.",
+          "misconception": "Nice try. A tiny slip happened in the last multiply step. Try it once more carefully.",
+          "questionId": "q_cc_6ns2_003",
+          "stem": "Use long division to find 1512 ÷ 24.",
+          "topic": "6.NS.2 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "D",
+          "correct": false,
+          "correctLabel": "C",
+          "explanation": "25 x 99 = 2475, so 2475 / 25 = 99.",
+          "misconception": "Nice try. Estimating with 100 is a good start, but the question wants the exact final division answer.",
+          "questionId": "q_mst_5nbt6_003",
+          "stem": "Compute: 2475 / 25",
+          "topic": "5.NBT.6 • Multi-Digit Division & Quotients"
+        },
+        {
+          "chosenLabel": "D",
+          "correct": false,
+          "correctLabel": "C",
+          "explanation": "Compute 27×4=108 and 27×10=270, then add 108+270=378. That’s the standard algorithm result.",
+          "misconception": "Nice try. Check the carry from 7 times 4 and add it in the next step.",
+          "questionId": "q_cc_5nbt5_forgot_shift_001",
+          "stem": "Use the standard algorithm to multiply. What is 27 × 14?",
+          "topic": "5.NBT.5 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "D",
+          "correct": false,
+          "correctLabel": "C",
+          "explanation": "This is 2016 / 36. Since 36 x 56 = 2016, there are 56 boxes.",
+          "misconception": "Nice try. Your guess for the number of boxes was a little too big.",
+          "questionId": "q_mst_5nbt6_004",
+          "stem": "A warehouse packs 36 pencils in each box. If there are 2016 pencils, how many boxes are filled completely?",
+          "topic": "5.NBT.6 • Multi-Digit Division & Quotients"
+        },
+        {
+          "chosenLabel": "B",
+          "correct": true,
+          "correctLabel": "B",
+          "explanation": "3 goes into 3 once, then bring down 0 so 0÷3=0, then bring down 6 so 6÷3=2. The correct quotient is 102.",
+          "misconception": "",
+          "questionId": "q_cc_6ns2_005",
+          "stem": "A student used long division for 306 ÷ 3 and wrote 12. Which answer is the correct quotient?",
+          "topic": "6.NS.2 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "A",
+          "correct": false,
+          "correctLabel": "B",
+          "explanation": "List factors: 28 has factors 1,2,4,7,14,28 and 42 has factors 1,2,3,6,7,14,21,42. The greatest shared factor is 14.",
+          "misconception": "Nice try. Two works, but an even bigger number also goes into both. Hunt for the largest one.",
+          "questionId": "q_cc_6ns4_gcf_002",
+          "stem": "What is the greatest common factor (GCF) of 28 and 42?",
+          "topic": "6.NS.4 • Number Theory (Factors & Multiples)"
+        },
+        {
+          "chosenLabel": "D",
+          "correct": false,
+          "correctLabel": "A",
+          "explanation": "The 2 in 25 means 20. Compute 36×2=72, then shift one place left (×10) to get 720.",
+          "misconception": "Nice try. The 2 means 20, so shift the second row only one place left.",
+          "questionId": "q_cc_5nbt5_secondrow_shift_001",
+          "stem": "You are using the standard algorithm to multiply 36 × 25. The first partial product (36 × 5) is 180. What should the second row (for the 2 in 25) be?",
+          "topic": "5.NBT.5 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "C",
+          "correct": false,
+          "correctLabel": "B",
+          "explanation": "Multiples of 6: 6, 12, 18, 24… Multiples of 8: 8, 16, 24… The first match is 24, so the LCM is 24.",
+          "misconception": "Nice try. You found a common multiple. 24 is smaller and also works, so it is the least common multiple.",
+          "questionId": "q_cc_6ns4_lcm_swap_001",
+          "stem": "What is the least common multiple (LCM) of 6 and 8?",
+          "topic": "6.NS.4 • Number Theory (Factors & Multiples)"
+        },
+        {
+          "chosenLabel": "C",
+          "correct": false,
+          "correctLabel": "B",
+          "explanation": "4÷4=1, then bring down 0 so 0÷4=0, then bring down 2 so 2÷4=0 remainder 2, then bring down 4 to make 24 and 24÷4=6. The quotient is 1006.",
+          "misconception": "Nice try. Bring each digit down slowly, one at a time, so nothing gets skipped in the long divide.",
+          "questionId": "q_cc_6ns2_002",
+          "stem": "Use long division to find 4024 ÷ 4.",
+          "topic": "6.NS.2 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "B",
+          "correct": true,
+          "correctLabel": "B",
+          "explanation": "Multiply right to left: 8×7=56 (write 6, carry 5), 4×7+5=33 (write 3, carry 3), 7×7+3=52 (write 2, carry 5), 3×7+5=26. The product is 26,236.",
+          "misconception": "",
+          "questionId": "q_cc_5nbt5_mult4x1_001",
+          "stem": "Use the standard algorithm to multiply. What is 3,748 × 7?",
+          "topic": "5.NBT.5 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "B",
+          "correct": true,
+          "correctLabel": "B",
+          "explanation": "Multiples of 9: 9, 18, 27, 36… Multiples of 12: 12, 24, 36… The first match is 36, so the LCM is 36.",
+          "misconception": "",
+          "questionId": "q_cc_6ns4_lcm_002",
+          "stem": "What is the least common multiple (LCM) of 9 and 12?",
+          "topic": "6.NS.4 • Number Theory (Factors & Multiples)"
+        },
+        {
+          "chosenLabel": "B",
+          "correct": true,
+          "correctLabel": "B",
+          "explanation": "The GCF of 36 and 24 is 12. Rewrite 36 as 12×3 and 24 as 12×2, so 36 + 24 = 12(3 + 2).",
+          "misconception": "",
+          "questionId": "q_cc_6ns4_distributive_factor_001",
+          "stem": "Which expression uses the distributive property to rewrite 36 + 24 by factoring out the greatest common factor?",
+          "topic": "6.NS.4 • Number Theory (Factors & Multiples)"
+        },
+        {
+          "chosenLabel": "B",
+          "correct": false,
+          "correctLabel": "C",
+          "explanation": "To check division, multiply quotient by divisor. 48 x 38 = 1824 confirms the quotient.",
+          "misconception": "Nice try. Subtraction is linked to division, yet multiplying is the quick way to check your division answer.",
+          "questionId": "q_mst_5nbt6_005",
+          "stem": "Which equation can be used to check that 1824 / 48 = 38?",
+          "topic": "5.NBT.6 • Multi-Digit Division & Quotients"
+        },
+        {
+          "chosenLabel": "B",
+          "correct": true,
+          "correctLabel": "B",
+          "explanation": "24 x 64 = 1536, so 1536 / 24 = 64.",
+          "misconception": "",
+          "questionId": "q_mst_5nbt6_001",
+          "stem": "Compute: 1536 / 24",
+          "topic": "5.NBT.6 • Multi-Digit Division & Quotients"
+        },
+        {
+          "chosenLabel": "B",
+          "correct": true,
+          "correctLabel": "B",
+          "explanation": "First do 2,030×4=8,120. Because 40=4×10, shift one place left (add one zero): 81,200.",
+          "misconception": "",
+          "questionId": "q_cc_5nbt5_zeros_alignment_001",
+          "stem": "Use the standard algorithm to multiply. What is 2,030 × 40?",
+          "topic": "5.NBT.5 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "B",
+          "correct": false,
+          "correctLabel": "A",
+          "explanation": "32 x 84 = 2688, so the quotient is 84.",
+          "misconception": "Nice try. This stops one group short. Keep dividing until you have taken away all the groups you can.",
+          "questionId": "q_mst_5nbt6_002",
+          "stem": "Compute: 2688 / 32",
+          "topic": "5.NBT.6 • Multi-Digit Division & Quotients"
+        }
+      ],
+      "score": 7,
+      "scorePercent": 35,
+      "startedAt": 1770867534126,
+      "studentMajorObjectiveId": "mx7dtwrg01dnwzwr827g8f9vnd804vdp",
+      "submittedAt": 1770867561976,
+      "unlockId": "nn70rq02vh55jv4gxzwtf6rza180zp5a",
+      "userId": "kx782550q2w2d2r21vyyajb4qx7z3rfm"
+    },
+    "attemptId": "nd75s0pfevrd3c5zt5faw67cj58107kd",
+    "domain": {
+      "_creationTime": 1768108995455.0122,
+      "_id": "m177a211jtk8n92msk6w5dyvnx7z09en",
+      "color": "orange",
+      "description": "Numbers, algebra, geometry, and problem solving",
+      "icon": "🔢",
+      "name": "Math",
+      "order": 1
+    },
+    "majorAssignment": {
+      "_creationTime": 1769717237086.1555,
+      "_id": "mx7dtwrg01dnwzwr827g8f9vnd804vdp",
+      "assignedAt": 1769717237086,
+      "assignedBy": "kx72qphtsbb11v951rtxy1e0817z0n0b",
+      "majorObjectiveId": "ms7cka5qhryt754m8dcd9wzwgd805sd5",
+      "status": "viva_requested",
+      "userId": "kx782550q2w2d2r21vyyajb4qx7z3rfm",
+      "vivaRequestedAt": 1770786325490
+    },
+    "majorObjective": {
+      "_creationTime": 1769712335389.9177,
+      "_id": "ms7cka5qhryt754m8dcd9wzwgd805sd5",
+      "createdAt": 1769712335390,
+      "createdBy": "kx72qphtsbb11v951rtxy1e0817z0n0b",
+      "curriculum": "MYP Y1",
+      "description": "Foundations",
+      "domainId": "m177a211jtk8n92msk6w5dyvnx7z09en",
+      "title": "Foundations"
+    },
+    "user": {
+      "_creationTime": 1768244298839.5127,
+      "_id": "kx782550q2w2d2r21vyyajb4qx7z3rfm",
+      "batch": "2156",
+      "createdAt": 1768244298842,
+      "displayName": "Test Student",
+      "lastLoginAt": 1770803581995,
+      "passwordHash": "12589d20e6c5463ee4fefa7ae6652e2f69e4ea83ea552a99acfbadaad2a93890",
+      "role": "student",
+      "username": "student1"
+    }
+  },
+  {
+    "attempt": {
+      "_creationTime": 1770786375670.617,
+      "_id": "nd7bmc43tsrb1dwd1fgqvk6mw180zt4z",
+      "attemptType": "mastery",
+      "diagnosticModuleIds": [
+        "1.1",
+        "1.4",
+        "1.1",
+        "1.3"
+      ],
+      "diagnosticModuleName": "Module 1: Whole Number Foundations",
+      "domainId": "m177a211jtk8n92msk6w5dyvnx7z09en",
+      "durationMs": 46994,
+      "majorObjectiveId": "ms7cka5qhryt754m8dcd9wzwgd805sd5",
+      "passThresholdPercent": 90,
+      "passed": false,
+      "questionCount": 20,
+      "results": [
+        {
+          "chosenLabel": "A",
+          "correct": false,
+          "correctLabel": "B",
+          "explanation": "12÷5=2 remainder 2; bring down 3 to make 23, so 23÷5=4 remainder 3; bring down 7 to make 37, so 37÷5=7 remainder 2. The result is 247 R2.",
+          "misconception": "Misconception: You treated the final remainder as 0, which usually comes from a subtraction mistake at the end. Since 5×7=35, 37−35 should leave 2, not 0.",
+          "questionId": "q_cc_6ns2_004",
+          "stem": "Use long division to find 1237 ÷ 5. Give the quotient with remainder.",
+          "topic": "6.NS.2 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "B",
+          "correct": true,
+          "correctLabel": "B",
+          "explanation": "List factors: 28 has factors 1,2,4,7,14,28 and 42 has factors 1,2,3,6,7,14,21,42. The greatest shared factor is 14.",
+          "misconception": "",
+          "questionId": "q_cc_6ns4_gcf_002",
+          "stem": "What is the greatest common factor (GCF) of 28 and 42?",
+          "topic": "6.NS.4 • Number Theory (Factors & Multiples)"
+        },
+        {
+          "chosenLabel": "B",
+          "correct": false,
+          "correctLabel": "C",
+          "explanation": "This is 2016 / 36. Since 36 x 56 = 2016, there are 56 boxes.",
+          "misconception": "Misconception: You may have divided by a nearby divisor like 40.",
+          "questionId": "q_mst_5nbt6_004",
+          "stem": "A warehouse packs 36 pencils in each box. If there are 2016 pencils, how many boxes are filled completely?",
+          "topic": "5.NBT.6 • Multi-Digit Division & Quotients"
+        },
+        {
+          "chosenLabel": "A",
+          "correct": false,
+          "correctLabel": "B",
+          "explanation": "3 goes into 3 once, then bring down 0 so 0÷3=0, then bring down 6 so 6÷3=2. The correct quotient is 102.",
+          "misconception": "Misconception: You forgot to write a 0 in the quotient when you reached the 0 in 306. Even if 3 goes into 0 zero times, you still need the 0 as a placeholder.",
+          "questionId": "q_cc_6ns2_005",
+          "stem": "A student used long division for 306 ÷ 3 and wrote 12. Which answer is the correct quotient?",
+          "topic": "6.NS.2 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "B",
+          "correct": true,
+          "correctLabel": "B",
+          "explanation": "4÷4=1, then bring down 0 so 0÷4=0, then bring down 2 so 2÷4=0 remainder 2, then bring down 4 to make 24 and 24÷4=6. The quotient is 1006.",
+          "misconception": "",
+          "questionId": "q_cc_6ns2_002",
+          "stem": "Use long division to find 4024 ÷ 4.",
+          "topic": "6.NS.2 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "A",
+          "correct": false,
+          "correctLabel": "B",
+          "explanation": "Multiples of 6: 6, 12, 18, 24… Multiples of 8: 8, 16, 24… The first match is 24, so the LCM is 24.",
+          "misconception": "Misconception: You gave the greatest common factor instead of the least common multiple. LCM is a number both 6 and 8 can multiply to make.",
+          "questionId": "q_cc_6ns4_lcm_swap_001",
+          "stem": "What is the least common multiple (LCM) of 6 and 8?",
+          "topic": "6.NS.4 • Number Theory (Factors & Multiples)"
+        },
+        {
+          "chosenLabel": "B",
+          "correct": true,
+          "correctLabel": "B",
+          "explanation": "Multiply right to left: 8×7=56 (write 6, carry 5), 4×7+5=33 (write 3, carry 3), 7×7+3=52 (write 2, carry 5), 3×7+5=26. The product is 26,236.",
+          "misconception": "",
+          "questionId": "q_cc_5nbt5_mult4x1_001",
+          "stem": "Use the standard algorithm to multiply. What is 3,748 × 7?",
+          "topic": "5.NBT.5 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "C",
+          "correct": false,
+          "correctLabel": "A",
+          "explanation": "32 x 84 = 2688, so the quotient is 84.",
+          "misconception": "Misconception: You overestimated how many groups of 32 fit.",
+          "questionId": "q_mst_5nbt6_002",
+          "stem": "Compute: 2688 / 32",
+          "topic": "5.NBT.6 • Multi-Digit Division & Quotients"
+        },
+        {
+          "chosenLabel": "A",
+          "correct": false,
+          "correctLabel": "B",
+          "explanation": "Multiples of 9: 9, 18, 27, 36… Multiples of 12: 12, 24, 36… The first match is 36, so the LCM is 36.",
+          "misconception": "Misconception: You found a common factor (GCF), not a common multiple. LCM must be a number that both 9 and 12 go into.",
+          "questionId": "q_cc_6ns4_lcm_002",
+          "stem": "What is the least common multiple (LCM) of 9 and 12?",
+          "topic": "6.NS.4 • Number Theory (Factors & Multiples)"
+        },
+        {
+          "chosenLabel": "A",
+          "correct": false,
+          "correctLabel": "B",
+          "explanation": "4 goes into 37 nine times (9×4=36), leaving remainder 1. Bring down the 2 to make 12, and 12÷4=3, so the quotient is 93.",
+          "misconception": "Misconception: You likely chose 8 instead of 9 for 37 ÷ 4, and then you also dropped a digit when the next part was 52 ÷ 4 = 13. In long division, each step must use the biggest whole number that still fits.",
+          "questionId": "q_cc_6ns2_001",
+          "stem": "Use long division to find 372 ÷ 4.",
+          "topic": "6.NS.2 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "A",
+          "correct": false,
+          "correctLabel": "C",
+          "explanation": "Compute 27×4=108 and 27×10=270, then add 108+270=378. That’s the standard algorithm result.",
+          "misconception": "Misconception: You found both partial products but added them without shifting the tens row. The row for the ‘1’ in 14 represents 10, so it must be one place to the left.",
+          "questionId": "q_cc_5nbt5_forgot_shift_001",
+          "stem": "Use the standard algorithm to multiply. What is 27 × 14?",
+          "topic": "5.NBT.5 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "B",
+          "correct": true,
+          "correctLabel": "B",
+          "explanation": "24 x 64 = 1536, so 1536 / 24 = 64.",
+          "misconception": "",
+          "questionId": "q_mst_5nbt6_001",
+          "stem": "Compute: 1536 / 24",
+          "topic": "5.NBT.6 • Multi-Digit Division & Quotients"
+        },
+        {
+          "chosenLabel": "D",
+          "correct": false,
+          "correctLabel": "A",
+          "explanation": "6×4=24 (write 4, carry 2), 1×4+2=6, 3×4=12 (write 2, carry 1), 2×4+1=9. The product is 9,264.",
+          "misconception": "Misconception: You multiplied by 40 instead of 4 by adding an extra zero. Make sure you’re multiplying by 4 (ones), not 40 (tens).",
+          "questionId": "q_cc_5nbt5_carry_placevalue_001",
+          "stem": "Use the standard algorithm to multiply. What is 2,316 × 4?",
+          "topic": "5.NBT.5 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "B",
+          "correct": true,
+          "correctLabel": "B",
+          "explanation": "Prime factorize: 36 = 2×2×3×3 and 48 = 2×2×2×2×3. The shared factors are 2×2×3 = 12, so the GCF is 12.",
+          "misconception": "",
+          "questionId": "q_cc_6ns4_gcf_swap_small_001",
+          "stem": "What is the greatest common factor (GCF) of 36 and 48?",
+          "topic": "6.NS.4 • Number Theory (Factors & Multiples)"
+        },
+        {
+          "chosenLabel": "A",
+          "correct": false,
+          "correctLabel": "C",
+          "explanation": "25 x 99 = 2475, so 2475 / 25 = 99.",
+          "misconception": "Misconception: You underestimated by one group of 25.",
+          "questionId": "q_mst_5nbt6_003",
+          "stem": "Compute: 2475 / 25",
+          "topic": "5.NBT.6 • Multi-Digit Division & Quotients"
+        },
+        {
+          "chosenLabel": "A",
+          "correct": true,
+          "correctLabel": "A",
+          "explanation": "The 2 in 25 means 20. Compute 36×2=72, then shift one place left (×10) to get 720.",
+          "misconception": "",
+          "questionId": "q_cc_5nbt5_secondrow_shift_001",
+          "stem": "You are using the standard algorithm to multiply 36 × 25. The first partial product (36 × 5) is 180. What should the second row (for the 2 in 25) be?",
+          "topic": "5.NBT.5 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "B",
+          "correct": false,
+          "correctLabel": "C",
+          "explanation": "To check division, multiply quotient by divisor. 48 x 38 = 1824 confirms the quotient.",
+          "misconception": "Misconception: You used subtraction instead of multiplication for checking division.",
+          "questionId": "q_mst_5nbt6_005",
+          "stem": "Which equation can be used to check that 1824 / 48 = 38?",
+          "topic": "5.NBT.6 • Multi-Digit Division & Quotients"
+        },
+        {
+          "chosenLabel": "B",
+          "correct": true,
+          "correctLabel": "B",
+          "explanation": "First do 2,030×4=8,120. Because 40=4×10, shift one place left (add one zero): 81,200.",
+          "misconception": "",
+          "questionId": "q_cc_5nbt5_zeros_alignment_001",
+          "stem": "Use the standard algorithm to multiply. What is 2,030 × 40?",
+          "topic": "5.NBT.5 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "B",
+          "correct": true,
+          "correctLabel": "B",
+          "explanation": "24 goes into 151 six times (6×24=144), leaving 7. Bring down 2 to make 72, and 72÷24=3, so the quotient is 63.",
+          "misconception": "",
+          "questionId": "q_cc_6ns2_003",
+          "stem": "Use long division to find 1512 ÷ 24.",
+          "topic": "6.NS.2 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "A",
+          "correct": false,
+          "correctLabel": "B",
+          "explanation": "The GCF of 36 and 24 is 12. Rewrite 36 as 12×3 and 24 as 12×2, so 36 + 24 = 12(3 + 2).",
+          "misconception": "Misconception: You factored out a common factor, but not the greatest one. Since 9 and 6 still share a factor (3), you can factor more.",
+          "questionId": "q_cc_6ns4_distributive_factor_001",
+          "stem": "Which expression uses the distributive property to rewrite 36 + 24 by factoring out the greatest common factor?",
+          "topic": "6.NS.4 • Number Theory (Factors & Multiples)"
+        }
+      ],
+      "score": 8,
+      "scorePercent": 40,
+      "startedAt": 1770786328549,
+      "studentMajorObjectiveId": "mx7dtwrg01dnwzwr827g8f9vnd804vdp",
+      "submittedAt": 1770786375670,
+      "unlockId": "nn7dyb84s0t756fj10f1np5hh180zd0e",
+      "userId": "kx782550q2w2d2r21vyyajb4qx7z3rfm"
+    },
+    "attemptId": "nd7bmc43tsrb1dwd1fgqvk6mw180zt4z",
+    "domain": {
+      "_creationTime": 1768108995455.0122,
+      "_id": "m177a211jtk8n92msk6w5dyvnx7z09en",
+      "color": "orange",
+      "description": "Numbers, algebra, geometry, and problem solving",
+      "icon": "🔢",
+      "name": "Math",
+      "order": 1
+    },
+    "majorAssignment": {
+      "_creationTime": 1769717237086.1555,
+      "_id": "mx7dtwrg01dnwzwr827g8f9vnd804vdp",
+      "assignedAt": 1769717237086,
+      "assignedBy": "kx72qphtsbb11v951rtxy1e0817z0n0b",
+      "majorObjectiveId": "ms7cka5qhryt754m8dcd9wzwgd805sd5",
+      "status": "viva_requested",
+      "userId": "kx782550q2w2d2r21vyyajb4qx7z3rfm",
+      "vivaRequestedAt": 1770786325490
+    },
+    "majorObjective": {
+      "_creationTime": 1769712335389.9177,
+      "_id": "ms7cka5qhryt754m8dcd9wzwgd805sd5",
+      "createdAt": 1769712335390,
+      "createdBy": "kx72qphtsbb11v951rtxy1e0817z0n0b",
+      "curriculum": "MYP Y1",
+      "description": "Foundations",
+      "domainId": "m177a211jtk8n92msk6w5dyvnx7z09en",
+      "title": "Foundations"
+    },
+    "user": {
+      "_creationTime": 1768244298839.5127,
+      "_id": "kx782550q2w2d2r21vyyajb4qx7z3rfm",
+      "batch": "2156",
+      "createdAt": 1768244298842,
+      "displayName": "Test Student",
+      "lastLoginAt": 1770803581995,
+      "passwordHash": "12589d20e6c5463ee4fefa7ae6652e2f69e4ea83ea552a99acfbadaad2a93890",
+      "role": "student",
+      "username": "student1"
+    }
+  },
+  {
+    "attempt": {
+      "_creationTime": 1770785659929.9033,
+      "_id": "nd7a9why4cc0s644q4c4mzm19n80zxj1",
+      "attemptType": "mastery",
+      "diagnosticModuleIds": [
+        "1.1",
+        "1.4",
+        "1.1",
+        "1.3"
+      ],
+      "diagnosticModuleName": "Module 1: Whole Number Foundations",
+      "domainId": "m177a211jtk8n92msk6w5dyvnx7z09en",
+      "durationMs": 873075,
+      "majorObjectiveId": "ms7cka5qhryt754m8dcd9wzwgd805sd5",
+      "passThresholdPercent": 90,
+      "passed": false,
+      "questionCount": 20,
+      "results": [
+        {
+          "chosenLabel": "B",
+          "correct": true,
+          "correctLabel": "B",
+          "explanation": "4 goes into 37 nine times (9×4=36), leaving remainder 1. Bring down the 2 to make 12, and 12÷4=3, so the quotient is 93.",
+          "misconception": "",
+          "questionId": "q_cc_6ns2_001",
+          "topic": "6.NS.2 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "C",
+          "correct": true,
+          "correctLabel": "C",
+          "explanation": "Compute 27×4=108 and 27×10=270, then add 108+270=378. That’s the standard algorithm result.",
+          "misconception": "",
+          "questionId": "q_cc_5nbt5_forgot_shift_001",
+          "topic": "5.NBT.5 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "A",
+          "correct": false,
+          "correctLabel": "B",
+          "explanation": "4÷4=1, then bring down 0 so 0÷4=0, then bring down 2 so 2÷4=0 remainder 2, then bring down 4 to make 24 and 24÷4=6. The quotient is 1006.",
+          "misconception": "Misconception: You forgot to place a 0 in the quotient when you reached a place where 4 went in 0 times. Zeros in the quotient are important placeholders for place value.",
+          "questionId": "q_cc_6ns2_002",
+          "topic": "6.NS.2 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "D",
+          "correct": false,
+          "correctLabel": "B",
+          "explanation": "12÷5=2 remainder 2; bring down 3 to make 23, so 23÷5=4 remainder 3; bring down 7 to make 37, so 37÷5=7 remainder 2. The result is 247 R2.",
+          "misconception": "Misconception: You converted the remainder into a decimal even though the problem asked for a remainder. Here you should stop after the remainder and write it as R2.",
+          "questionId": "q_cc_6ns2_004",
+          "topic": "6.NS.2 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "A",
+          "correct": false,
+          "correctLabel": "B",
+          "explanation": "Multiples of 6: 6, 12, 18, 24… Multiples of 8: 8, 16, 24… The first match is 24, so the LCM is 24.",
+          "misconception": "Misconception: You gave the greatest common factor instead of the least common multiple. LCM is a number both 6 and 8 can multiply to make.",
+          "questionId": "q_cc_6ns4_lcm_swap_001",
+          "topic": "6.NS.4 • Number Theory (Factors & Multiples)"
+        },
+        {
+          "chosenLabel": "D",
+          "correct": false,
+          "correctLabel": "C",
+          "explanation": "This is 2016 / 36. Since 36 x 56 = 2016, there are 56 boxes.",
+          "misconception": "Misconception: You overestimated the number of groups.",
+          "questionId": "q_mst_5nbt6_004",
+          "topic": "5.NBT.6 • Multi-Digit Division & Quotients"
+        },
+        {
+          "chosenLabel": "B",
+          "correct": false,
+          "correctLabel": "C",
+          "explanation": "25 x 99 = 2475, so 2475 / 25 = 99.",
+          "misconception": "Misconception: You used 25 x 96 = 2400 instead of checking the full dividend.",
+          "questionId": "q_mst_5nbt6_003",
+          "topic": "5.NBT.6 • Multi-Digit Division & Quotients"
+        },
+        {
+          "chosenLabel": "A",
+          "correct": false,
+          "correctLabel": "B",
+          "explanation": "3 goes into 3 once, then bring down 0 so 0÷3=0, then bring down 6 so 6÷3=2. The correct quotient is 102.",
+          "misconception": "Misconception: You forgot to write a 0 in the quotient when you reached the 0 in 306. Even if 3 goes into 0 zero times, you still need the 0 as a placeholder.",
+          "questionId": "q_cc_6ns2_005",
+          "topic": "6.NS.2 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "C",
+          "correct": false,
+          "correctLabel": "B",
+          "explanation": "24 x 64 = 1536, so 1536 / 24 = 64.",
+          "misconception": "Misconception: You overestimated the quotient.",
+          "questionId": "q_mst_5nbt6_001",
+          "topic": "5.NBT.6 • Multi-Digit Division & Quotients"
+        },
+        {
+          "chosenLabel": "B",
+          "correct": true,
+          "correctLabel": "B",
+          "explanation": "Multiply right to left: 8×7=56 (write 6, carry 5), 4×7+5=33 (write 3, carry 3), 7×7+3=52 (write 2, carry 5), 3×7+5=26. The product is 26,236.",
+          "misconception": "",
+          "questionId": "q_cc_5nbt5_mult4x1_001",
+          "topic": "5.NBT.5 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "B",
+          "correct": true,
+          "correctLabel": "B",
+          "explanation": "Prime factorize: 36 = 2×2×3×3 and 48 = 2×2×2×2×3. The shared factors are 2×2×3 = 12, so the GCF is 12.",
+          "misconception": "",
+          "questionId": "q_cc_6ns4_gcf_swap_small_001",
+          "topic": "6.NS.4 • Number Theory (Factors & Multiples)"
+        },
+        {
+          "chosenLabel": "A",
+          "correct": false,
+          "correctLabel": "C",
+          "explanation": "To check division, multiply quotient by divisor. 48 x 38 = 1824 confirms the quotient.",
+          "misconception": "Misconception: You used addition instead of the inverse operation.",
+          "questionId": "q_mst_5nbt6_005",
+          "topic": "5.NBT.6 • Multi-Digit Division & Quotients"
+        },
+        {
+          "chosenLabel": "A",
+          "correct": false,
+          "correctLabel": "B",
+          "explanation": "The GCF of 36 and 24 is 12. Rewrite 36 as 12×3 and 24 as 12×2, so 36 + 24 = 12(3 + 2).",
+          "misconception": "Misconception: You factored out a common factor, but not the greatest one. Since 9 and 6 still share a factor (3), you can factor more.",
+          "questionId": "q_cc_6ns4_distributive_factor_001",
+          "topic": "6.NS.4 • Number Theory (Factors & Multiples)"
+        },
+        {
+          "chosenLabel": "B",
+          "correct": false,
+          "correctLabel": "A",
+          "explanation": "32 x 84 = 2688, so the quotient is 84.",
+          "misconception": "Misconception: You stopped one group too early.",
+          "questionId": "q_mst_5nbt6_002",
+          "topic": "5.NBT.6 • Multi-Digit Division & Quotients"
+        },
+        {
+          "chosenLabel": "A",
+          "correct": false,
+          "correctLabel": "B",
+          "explanation": "24 goes into 151 six times (6×24=144), leaving 7. Bring down 2 to make 72, and 72÷24=3, so the quotient is 63.",
+          "misconception": "Misconception: You found 24 goes into 151 about 6 times, but then you didn’t use the remainder to make 72. After subtracting, you must bring down the next digit and divide the new number.",
+          "questionId": "q_cc_6ns2_003",
+          "topic": "6.NS.2 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "A",
+          "correct": true,
+          "correctLabel": "A",
+          "explanation": "The 2 in 25 means 20. Compute 36×2=72, then shift one place left (×10) to get 720.",
+          "misconception": "",
+          "questionId": "q_cc_5nbt5_secondrow_shift_001",
+          "topic": "5.NBT.5 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "C",
+          "correct": false,
+          "correctLabel": "B",
+          "explanation": "Multiples of 9: 9, 18, 27, 36… Multiples of 12: 12, 24, 36… The first match is 36, so the LCM is 36.",
+          "misconception": "Misconception: You used 9×12, but the LCM is not always the product. Because 9 and 12 share a factor (3), the LCM is smaller than 108.",
+          "questionId": "q_cc_6ns4_lcm_002",
+          "topic": "6.NS.4 • Number Theory (Factors & Multiples)"
+        },
+        {
+          "chosenLabel": "B",
+          "correct": false,
+          "correctLabel": "A",
+          "explanation": "6×4=24 (write 4, carry 2), 1×4+2=6, 3×4=12 (write 2, carry 1), 2×4+1=9. The product is 9,264.",
+          "misconception": "Misconception: You forgot to add the carry from 6×4=24 into the tens step. The carry must be added to 1×4.",
+          "questionId": "q_cc_5nbt5_carry_placevalue_001",
+          "topic": "5.NBT.5 • Multi-Digit Operations"
+        },
+        {
+          "chosenLabel": "B",
+          "correct": true,
+          "correctLabel": "B",
+          "explanation": "List factors: 28 has factors 1,2,4,7,14,28 and 42 has factors 1,2,3,6,7,14,21,42. The greatest shared factor is 14.",
+          "misconception": "",
+          "questionId": "q_cc_6ns4_gcf_002",
+          "topic": "6.NS.4 • Number Theory (Factors & Multiples)"
+        },
+        {
+          "chosenLabel": "A",
+          "correct": false,
+          "correctLabel": "B",
+          "explanation": "First do 2,030×4=8,120. Because 40=4×10, shift one place left (add one zero): 81,200.",
+          "misconception": "Misconception: You multiplied by 4 but forgot that 40 is ten times bigger than 4. Your final answer should be shifted one place left (one extra zero).",
+          "questionId": "q_cc_5nbt5_zeros_alignment_001",
+          "topic": "5.NBT.5 • Multi-Digit Operations"
+        }
+      ],
+      "score": 6,
+      "scorePercent": 30,
+      "startedAt": 1770784786725,
+      "studentMajorObjectiveId": "mx7dtwrg01dnwzwr827g8f9vnd804vdp",
+      "submittedAt": 1770785659929,
+      "userId": "kx782550q2w2d2r21vyyajb4qx7z3rfm"
+    },
+    "attemptId": "nd7a9why4cc0s644q4c4mzm19n80zxj1",
+    "domain": {
+      "_creationTime": 1768108995455.0122,
+      "_id": "m177a211jtk8n92msk6w5dyvnx7z09en",
+      "color": "orange",
+      "description": "Numbers, algebra, geometry, and problem solving",
+      "icon": "🔢",
+      "name": "Math",
+      "order": 1
+    },
+    "majorAssignment": {
+      "_creationTime": 1769717237086.1555,
+      "_id": "mx7dtwrg01dnwzwr827g8f9vnd804vdp",
+      "assignedAt": 1769717237086,
+      "assignedBy": "kx72qphtsbb11v951rtxy1e0817z0n0b",
+      "majorObjectiveId": "ms7cka5qhryt754m8dcd9wzwgd805sd5",
+      "status": "viva_requested",
+      "userId": "kx782550q2w2d2r21vyyajb4qx7z3rfm",
+      "vivaRequestedAt": 1770786325490
+    },
+    "majorObjective": {
+      "_creationTime": 1769712335389.9177,
+      "_id": "ms7cka5qhryt754m8dcd9wzwgd805sd5",
+      "createdAt": 1769712335390,
+      "createdBy": "kx72qphtsbb11v951rtxy1e0817z0n0b",
+      "curriculum": "MYP Y1",
+      "description": "Foundations",
+      "domainId": "m177a211jtk8n92msk6w5dyvnx7z09en",
+      "title": "Foundations"
+    },
+    "user": {
+      "_creationTime": 1768244298839.5127,
+      "_id": "kx782550q2w2d2r21vyyajb4qx7z3rfm",
+      "batch": "2156",
+      "createdAt": 1768244298842,
+      "displayName": "Test Student",
+      "lastLoginAt": 1770803581995,
+      "passwordHash": "12589d20e6c5463ee4fefa7ae6652e2f69e4ea83ea552a99acfbadaad2a93890",
+      "role": "student",
+      "username": "student1"
+    }
+  }
+]

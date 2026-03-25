@@ -7,7 +7,7 @@
 
 import { describe, it, expect, beforeEach, vi } from "vitest";
 import { createMockCtx, createMockId, resetMockIdCounter } from "./mockDb";
-import type { Id } from "../../../convex/_generated/dataModel";
+import type { Id } from "@convex/_generated/dataModel";
 
 // We'll test the handler functions directly by extracting their logic
 // In a real Convex setup, you might use convex-test package

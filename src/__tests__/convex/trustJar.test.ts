@@ -7,7 +7,7 @@
 
 import { describe, it, expect, beforeEach, vi } from "vitest";
 import { createMockCtx, createMockId, resetMockIdCounter } from "./mockDb";
-import type { Id } from "../../../convex/_generated/dataModel";
+import type { Id } from "@convex/_generated/dataModel";
 
 // The trust jar has a max count of 50 (from the actual implementation)
 const MAX_COUNT = 50;

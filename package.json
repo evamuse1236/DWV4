@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "changelog:generate": "node scripts/generate-whats-new.mjs",
+    "changelog:generate": "node scripts/reporting/generate-whats-new.mjs",
     "predev": "npm run changelog:generate",
     "prebuild": "npm run changelog:generate",
     "dev": "vite",
@@ -13,9 +13,9 @@
     "test": "vitest",
     "test:run": "vitest run",
     "preview": "vite preview",
-    "fill:q3:daily-goals": "node --experimental-strip-types scripts/fill-q3-daily-goals.ts",
-    "diagnostic:v2:sync": "node scripts/sync-diagnostic-v2.mjs",
-    "diagnostic:misconceptions:rewrite:groq": "node scripts/rewrite-misconceptions-groq.mjs"
+    "fill:q3:daily-goals": "node --experimental-strip-types scripts/migration/fill-q3-daily-goals.ts",
+    "diagnostic:v2:sync": "node scripts/sync/sync-diagnostic-v2.mjs",
+    "diagnostic:misconceptions:rewrite:groq": "node scripts/diagnostics/rewrite-misconceptions-groq.mjs"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",

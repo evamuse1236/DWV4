@@ -7,7 +7,7 @@
 
 import { describe, it, expect, beforeEach, vi } from "vitest";
 import { createMockCtx, createMockId, resetMockIdCounter } from "./mockDb";
-import type { Id } from "../../../convex/_generated/dataModel";
+import type { Id } from "@convex/_generated/dataModel";
 
 describe("Progress - toggleActivity", () => {
   let mockCtx: ReturnType<typeof createMockCtx>;

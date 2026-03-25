@@ -13,7 +13,7 @@ vi.mock("convex/react", () => ({
   }),
 }));
 
-vi.mock("../../../../convex/_generated/api", () => ({
+vi.mock("../@convex/_generated/api", () => ({
   api: {
     domains: { getById: "domains.getById" },
     objectives: { getAssignedByDomain: "objectives.getAssignedByDomain" },
@@ -33,7 +33,7 @@ vi.mock("react-router-dom", async (importOriginal) => {
   };
 });
 
-vi.mock("../../../hooks/useAuth", () => ({
+vi.mock("@/features/auth/hooks/useAuth", () => ({
   useAuth: vi.fn(() => ({
     user: {
       _id: "user_123",
@@ -51,7 +51,7 @@ vi.mock("framer-motion", () => ({
   },
 }));
 
-vi.mock("../../../lib/domain-utils", () => ({
+vi.mock("@/shared/lib/domain-utils", () => ({
   getDomainIcon: () => <svg data-testid="domain-icon" />,
   getDomainColorClass: () => "pastel-blue",
 }));

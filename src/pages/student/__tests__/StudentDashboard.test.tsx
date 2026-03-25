@@ -18,7 +18,7 @@ vi.mock("convex/react", () => ({
 }));
 
 // Mock the API
-vi.mock("../../../../convex/_generated/api", () => ({
+vi.mock("../@convex/_generated/api", () => ({
   api: {
     domains: { getAll: "domains.getAll" },
     sprints: { getActive: "sprints.getActive" },
@@ -35,7 +35,7 @@ vi.mock("react-router-dom", () => ({
   useNavigate: () => vi.fn(),
 }));
 
-vi.mock("../../../hooks/useAuth", () => ({
+vi.mock("@/features/auth/hooks/useAuth", () => ({
   useAuth: vi.fn(() => ({
     user: {
       _id: "user_123",
@@ -49,7 +49,7 @@ vi.mock("../../../hooks/useAuth", () => ({
   })),
 }));
 
-vi.mock("../../../hooks/useDelayedLoading", () => ({
+vi.mock("@/shared/hooks/useDelayedLoading", () => ({
   useDelayedLoading: vi.fn((isLoading: boolean) => isLoading),
 }));
 
@@ -64,7 +64,7 @@ vi.mock("framer-motion", () => ({
 // Import after mocking
 import { StudentDashboard } from "../StudentDashboard";
 import { useQuery } from "convex/react";
-import { useDelayedLoading } from "../../../hooks/useDelayedLoading";
+import { useDelayedLoading } from "@/shared/hooks/useDelayedLoading";
 
 // Mock data
 const mockDomains = [

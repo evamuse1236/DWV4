@@ -14,7 +14,7 @@ React (Vite + Router)
 
 1. Domain and status transitions live in Convex mutations/actions, not ad-hoc UI logic.
 2. External AI calls stay in `convex/ai.ts` actions.
-3. Route protection lives in `src/App.tsx` and `ProtectedRoute`.
+3. Route protection lives in `src/app/router/App.tsx` and `src/features/auth/components/ProtectedRoute.tsx`.
 4. Schema changes must start in `convex/schema.ts`.
 
 ## Data model groups (`convex/schema.ts`)
@@ -41,25 +41,25 @@ React (Vite + Router)
 ## Mastery workflow contracts
 
 - Student mastery state is normalized in `convex/mastery.ts` through `getMajorMasteryState`.
-- Student-facing mastery actions live on `src/pages/student/MasteryPage.tsx`.
-- `src/pages/student/DiagnosticPage.tsx` is for taking diagnostics, not for owning viva or retake workflow decisions.
-- `src/pages/student/ReviewPage.tsx` is history/reference and links back into the active mastery flow.
-- Admin viva decisions live on `src/pages/admin/VivaQueuePage.tsx`.
-- Admin retake approvals and attempt review live on `src/pages/admin/DiagnosticsPage.tsx`.
+- Student-facing mastery actions live on `src/features/mastery/pages/MasteryPage.tsx`.
+- `src/features/diagnostics/pages/DiagnosticPage.tsx` is for taking diagnostics, not for owning viva or retake workflow decisions.
+- `src/features/reading/pages/ReviewPage.tsx` is history/reference and links back into the active mastery flow.
+- Admin viva decisions live on `src/features/admin/pages/VivaQueuePage.tsx`.
+- Admin retake approvals and attempt review live on `src/features/admin/pages/DiagnosticsPage.tsx`.
 - Retake approvals no longer depend on viva state.
 - Legacy `studentMajorObjectives.status === "viva_requested"` is migrated/read as `status: "in_progress"` plus `vivaStatus: "requested"` for compatibility.
 
 ## Reading UX contracts
 
-- In `src/pages/student/ReadingPage.tsx`, clicking modal `Read Book` opens `readingUrl` in a new tab and starts reading (`books.startReading`) if needed.
+- In `src/features/reading/pages/ReadingPage.tsx`, clicking modal `Read Book` opens `readingUrl` in a new tab and starts reading (`books.startReading`) if needed.
 - Newly started books appear immediately in the Reading tab via optimistic UI, then reconcile with Convex query results.
 - Reading-card remove (`×`) is a hover/focus affordance and removes the book from visible lists immediately while mutation completes.
-- In `src/pages/student/ReviewPage.tsx`, students see book-review prompt suggestions (including coach feedback when changes are requested) in addition to diagnostic review history.
+- In `src/features/reading/pages/ReviewPage.tsx`, students see book-review prompt suggestions (including coach feedback when changes are requested) in addition to diagnostic review history.
 - `ReviewPage` suggestion links deep-link into `ReadingPage` with `?openBook=<bookId>` and auto-open that book's review modal on the Library tab.
 
 ## Admin review queue contracts
 
-- In `src/pages/admin/ReviewQueuePage.tsx`, `Request Changes` expands an inline feedback editor inside each card; feedback submission does not open a modal dialog.
+- In `src/features/admin/pages/ReviewQueuePage.tsx`, `Request Changes` expands an inline feedback editor inside each card; feedback submission does not open a modal dialog.
 
 ## AI response contracts
 

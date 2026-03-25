@@ -20,7 +20,7 @@ vi.mock("convex/react", () => ({
 }));
 
 // Mock the API
-vi.mock("../../../../convex/_generated/api", () => ({
+vi.mock("../@convex/_generated/api", () => ({
   api: {
     objectives: {
       getTreeData: "objectives.getTreeData",
@@ -38,7 +38,7 @@ vi.mock("react-router-dom", () => ({
 }));
 
 // Mock useAuth hook
-vi.mock("../../../hooks/useAuth", () => ({
+vi.mock("@/features/auth/hooks/useAuth", () => ({
   useAuth: vi.fn(() => ({
     user: {
       _id: "user_123",
@@ -70,7 +70,7 @@ vi.mock("framer-motion", () => ({
 }));
 
 // Mock child components with simplified versions
-vi.mock("../../../components/skill-tree", () => ({
+vi.mock("@/features/deep-work/components/skill-tree", () => ({
   SkillTreeCanvas: ({
     domains,
     onSelectDomain,
@@ -106,7 +106,7 @@ vi.mock("../../../components/skill-tree", () => ({
     ) : null,
 }));
 
-vi.mock("../../../components/skill-tree/HorizontalTreeCanvas", () => ({
+vi.mock("@/features/deep-work/components/skill-tree/HorizontalTreeCanvas", () => ({
   default: ({
     domain,
     selectedNode,
@@ -145,7 +145,7 @@ vi.mock("../../../components/skill-tree/HorizontalTreeCanvas", () => ({
 // Import after mocking
 import { DeepWorkPage } from "../DeepWorkPage";
 import { useQuery } from "convex/react";
-import { useAuth } from "../../../hooks/useAuth";
+import { useAuth } from "@/features/auth/hooks/useAuth";
 
 // Mock data
 const mockDomains = [

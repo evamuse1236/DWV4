@@ -20,7 +20,7 @@ vi.mock("convex/react", () => ({
   }),
 }));
 
-vi.mock("../../../../convex/_generated/api", () => ({
+vi.mock("../@convex/_generated/api", () => ({
   api: {
     books: {
       getAll: "books.getAll",
@@ -38,7 +38,7 @@ vi.mock("../../../../convex/_generated/api", () => ({
   },
 }));
 
-vi.mock("../../../hooks/useAuth", () => ({
+vi.mock("@/features/auth/hooks/useAuth", () => ({
   useAuth: vi.fn(() => ({
     user: {
       _id: "user_123",
@@ -49,7 +49,7 @@ vi.mock("../../../hooks/useAuth", () => ({
   })),
 }));
 
-vi.mock("../../../components/reading/BookBuddy", () => ({
+vi.mock("@/features/reading/components/BookBuddy", () => ({
   default: () => <div data-testid="book-buddy">Book Buddy</div>,
 }));
 

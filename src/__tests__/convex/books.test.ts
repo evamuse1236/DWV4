@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it } from "vitest";
 import { createMockCtx, createMockId, resetMockIdCounter } from "./mockDb";
-import type { Id } from "../../../convex/_generated/dataModel";
+import type { Id } from "@convex/_generated/dataModel";
 
 describe("books lifecycle data rules", () => {
   let ctx: ReturnType<typeof createMockCtx>;

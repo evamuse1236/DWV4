@@ -50,7 +50,7 @@ vi.mock("convex/react", () => ({
 }));
 
 // Mock the API module
-vi.mock("../../../convex/_generated/api", () => ({
+vi.mock("@convex/_generated/api", () => ({
   api: {
     auth: {
       checkNeedsBootstrap: "auth.checkNeedsBootstrap",
@@ -126,7 +126,7 @@ vi.mock("framer-motion", () => ({
 }));
 
 // Mock useDelayedLoading to avoid timer issues
-vi.mock("../../hooks/useDelayedLoading", () => ({
+vi.mock("@/shared/hooks/useDelayedLoading", () => ({
   useDelayedLoading: vi.fn((isLoading: boolean) => isLoading),
 }));
 
@@ -158,7 +158,7 @@ vi.mock("@radix-ui/react-tooltip", () => ({
 }));
 
 // Mock paper components for SetupPage
-vi.mock("../../components/paper", () => ({
+vi.mock("@/shared/paper", () => ({
   Button: ({ children, onClick, type, disabled, isLoading, fullWidth: _fullWidth, ...props }: any) => (
     <button onClick={onClick} type={type} disabled={disabled || isLoading} {...props}>
       {isLoading ? "Loading..." : children}
@@ -188,7 +188,7 @@ vi.mock("../../components/paper", () => ({
 }));
 
 // Mock sprint components
-vi.mock("../../components/sprint", () => ({
+vi.mock("@/features/sprint/components", () => ({
   GoalEditor: ({ onSave, onCancel }: any) => (
     <div data-testid="goal-editor">
       <input data-testid="goal-title-input" placeholder="Goal title" />
@@ -202,25 +202,25 @@ vi.mock("../../components/sprint", () => ({
 }));
 
 // Mock TaskAssigner
-vi.mock("../../components/student/TaskAssigner", () => ({
+vi.mock("@/features/student/components/TaskAssigner", () => ({
   TaskAssigner: () => <div data-testid="task-assigner">Task Assigner</div>,
 }));
 
 // Mock Skeleton UI component
-vi.mock("../../components/ui/skeleton", () => ({
+vi.mock("@/shared/ui/skeleton", () => ({
   Skeleton: ({ className }: any) => <div className={`skeleton ${className}`} data-testid="skeleton" />,
 }));
 
 // ============================================================
 // Import components AFTER mocking
 // ============================================================
-import { LoginPage } from "../../pages/LoginPage";
-import { SetupPage } from "../../pages/SetupPage";
-import { StudentDashboard } from "../../pages/student/StudentDashboard";
-import { SprintPage } from "../../pages/student/SprintPage";
-import { CheckInGate } from "../../components/layout/CheckInGate";
+import { LoginPage } from "@/features/auth/pages/LoginPage";
+import { SetupPage } from "@/features/auth/pages/SetupPage";
+import { StudentDashboard } from "@/features/student/pages/StudentDashboard";
+import { SprintPage } from "@/features/sprint/pages/SprintPage";
+import { CheckInGate } from "@/app/shell/CheckInGate";
 import { useQuery, useMutation } from "convex/react";
-import { useDelayedLoading } from "../../hooks/useDelayedLoading";
+import { useDelayedLoading } from "@/shared/hooks/useDelayedLoading";
 
 // ============================================================
 // MOCK USER DATA
@@ -305,7 +305,7 @@ let mockAuthState = {
 };
 
 // Mock useAuth at module level
-vi.mock("../../hooks/useAuth", () => ({
+vi.mock("@/features/auth/hooks/useAuth", () => ({
   useAuth: vi.fn(() => ({
     user: mockAuthState.user,
     isLoading: mockAuthState.isLoading,

@@ -19,7 +19,7 @@ vi.mock("convex/react", () => ({
   }),
 }));
 
-vi.mock("../../../../convex/_generated/api", () => ({
+vi.mock("../@convex/_generated/api", () => ({
   api: {
     auth: {
       changeOwnUsername: "auth.changeOwnUsername",
@@ -30,7 +30,7 @@ vi.mock("../../../../convex/_generated/api", () => ({
   },
 }));
 
-vi.mock("../../../hooks/useAuth", () => ({
+vi.mock("@/features/auth/hooks/useAuth", () => ({
   useAuth: () => mockUseAuth(),
   useSessionToken: () => mockUseSessionToken(),
 }));

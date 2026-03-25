@@ -28,7 +28,7 @@ vi.mock("convex/react", () => ({
 }));
 
 // Mock the API
-vi.mock("../../../convex/_generated/api", () => ({
+vi.mock("@convex/_generated/api", () => ({
   api: {
     auth: {
       initializeAdmin: "auth.initializeAdmin",
@@ -65,7 +65,7 @@ vi.mock("framer-motion", () => ({
 }));
 
 // Mock paper components
-vi.mock("../../components/paper", () => ({
+vi.mock("@/shared/paper", () => ({
   Button: ({
     children,
     onClick,

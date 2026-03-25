@@ -5,7 +5,7 @@
  * so we can test mutation/query handlers in isolation without hitting a real database.
  */
 
-import type { Id } from "../../../convex/_generated/dataModel";
+import type { Id } from "@convex/_generated/dataModel";
 
 // Type for our in-memory "database" - a simple record of ID to document
 type MockDocument = {

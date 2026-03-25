@@ -25,7 +25,7 @@ dist-ssr
 *:Zone.Identifier
 
 # External repos
-.external/
+workspace/reference-projects/
 workspace/manual-tests/diagnostic-check/.git/
 
 # Serena cache
@@ -40,13 +40,13 @@ workspace/manual-tests/diagnostic-check/.git/
 # Generated diagnostic data (rebuilt from workspace/manual-tests/diagnostic-check/archive/)
 public/diagnostic/
 
-# Web preview directory
-web/
+# Legacy standalone web material
+workspace/legacy-web-assets/
 
 # Generated misconception rewrite artifacts
-workspace/diagnostic-readable/parts/misconception-groq-rewrite-report*.md
-workspace/diagnostic-readable/parts/misconception-groq-sample*.json
-workspace/diagnostic-readable/parts/misconception-manual-sample*.json
-workspace/diagnostic-readable/parts/misconception-pass*-target-keys.txt
-workspace/diagnostic-readable/parts/misconception-remaining-*.json
-workspace/diagnostic-readable/parts/manual-misconception-rewrites-pass*.json
+workspace/diagnostic-reports/parts/misconception-groq-rewrite-report*.md
+workspace/diagnostic-reports/parts/misconception-groq-sample*.json
+workspace/diagnostic-reports/parts/misconception-manual-sample*.json
+workspace/diagnostic-reports/parts/misconception-pass*-target-keys.txt
+workspace/diagnostic-reports/parts/misconception-remaining-*.json
+workspace/diagnostic-reports/parts/manual-misconception-rewrites-pass*.json

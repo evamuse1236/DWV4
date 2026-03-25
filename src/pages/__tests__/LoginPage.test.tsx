@@ -27,7 +27,7 @@ vi.mock("convex/react", () => ({
 }));
 
 // Mock the API
-vi.mock("../../../convex/_generated/api", () => ({
+vi.mock("@convex/_generated/api", () => ({
   api: {
     auth: {
       checkNeedsBootstrap: "auth.checkNeedsBootstrap",
@@ -45,7 +45,7 @@ vi.mock("react-router-dom", () => ({
 }));
 
 // Mock useAuth
-vi.mock("../../hooks/useAuth", () => ({
+vi.mock("@/features/auth/hooks/useAuth", () => ({
   useAuth: vi.fn(() => ({
     user: null,
     isLoading: false,
@@ -77,7 +77,7 @@ vi.mock("framer-motion", () => ({
 // Import after mocking
 import { LoginPage } from "../LoginPage";
 import { useQuery } from "convex/react";
-import { useAuth } from "../../hooks/useAuth";
+import { useAuth } from "@/features/auth/hooks/useAuth";
 
 describe("LoginPage", () => {
   beforeEach(() => {

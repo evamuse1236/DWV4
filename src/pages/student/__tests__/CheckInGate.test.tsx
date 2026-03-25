@@ -15,7 +15,7 @@ vi.mock("convex/react", () => ({
 }));
 
 // Mock the API
-vi.mock("../../../../convex/_generated/api", () => ({
+vi.mock("../@convex/_generated/api", () => ({
   api: {
     emotions: {
       saveCheckIn: "emotions.saveCheckIn",
@@ -26,7 +26,7 @@ vi.mock("../../../../convex/_generated/api", () => ({
 }));
 
 // Mock dependencies
-vi.mock("../../../hooks/useAuth", () => ({
+vi.mock("@/features/auth/hooks/useAuth", () => ({
   useAuth: vi.fn(() => ({
     user: {
       _id: "user_123",
@@ -40,7 +40,7 @@ vi.mock("../../../hooks/useAuth", () => ({
   })),
 }));
 
-vi.mock("../../../hooks/useDelayedLoading", () => ({
+vi.mock("@/shared/hooks/useDelayedLoading", () => ({
   useDelayedLoading: vi.fn((isLoading: boolean) => isLoading),
 }));
 
@@ -108,9 +108,9 @@ vi.mock("@phosphor-icons/react", () => ({
 }));
 
 // Import after mocking
-import { CheckInGate } from "../../../components/layout/CheckInGate";
+import { CheckInGate } from "@/app/shell/CheckInGate";
 import { useQuery, useMutation } from "convex/react";
-import { useDelayedLoading } from "../../../hooks/useDelayedLoading";
+import { useDelayedLoading } from "@/shared/hooks/useDelayedLoading";
 
 // Mock data
 const mockEmotionCategories = [

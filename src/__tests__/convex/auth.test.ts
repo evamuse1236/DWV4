@@ -21,7 +21,7 @@
 
 import { describe, it, expect, beforeEach, vi } from "vitest";
 import { createMockCtx, createMockId, resetMockIdCounter } from "./mockDb";
-import type { Id } from "../../../convex/_generated/dataModel";
+import type { Id } from "@convex/_generated/dataModel";
 import { hashPassword } from "../../../convex/utils";
 
 // Extend the mock query builder to support `unique()` method

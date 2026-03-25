@@ -24,7 +24,7 @@ vi.mock("convex/react", () => ({
 }));
 
 // Mock the API
-vi.mock("../../../../convex/_generated/api", () => ({
+vi.mock("../@convex/_generated/api", () => ({
   api: {
     sprints: { getActive: "sprints.getActive", getAll: "sprints.getAll" },
     goals: {
@@ -51,7 +51,7 @@ vi.mock("react-router-dom", () => ({
   useNavigate: () => vi.fn(),
 }));
 
-vi.mock("../../../hooks/useAuth", () => ({
+vi.mock("@/features/auth/hooks/useAuth", () => ({
   useAuth: vi.fn(() => ({
     user: {
       _id: "user_123",
@@ -83,7 +83,7 @@ vi.mock("framer-motion", () => ({
 }));
 
 // Mock child components
-vi.mock("../../../components/sprint", () => ({
+vi.mock("@/features/sprint/components", () => ({
   GoalEditor: ({ onSave, onCancel }: any) => (
     <div data-testid="goal-editor">
       <button onClick={() => onSave({ title: "Test Goal" })}>Save</button>
@@ -93,11 +93,11 @@ vi.mock("../../../components/sprint", () => ({
   HabitTracker: () => <div data-testid="habit-tracker">Habit Tracker</div>,
 }));
 
-vi.mock("../../../components/student/TaskAssigner", () => ({
+vi.mock("@/features/student/components/TaskAssigner", () => ({
   TaskAssigner: () => <div data-testid="task-assigner">Task Assigner</div>,
 }));
 
-vi.mock("../../../components/paper", () => ({
+vi.mock("@/shared/paper", () => ({
   Modal: ({ children, isOpen, title }: any) =>
     isOpen ? (
       <div data-testid="modal" role="dialog" aria-label={title}>

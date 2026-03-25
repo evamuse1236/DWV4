@@ -4,10 +4,13 @@ Purpose: minimal, deterministic docs for AI agents and engineers.
 
 ## Read Order
 
-1. `docs/CORE.md`
-2. `docs/CODEBASE-MAP.md`
-3. `docs/SYSTEM.md`
-4. `docs/OPERATIONS.md`
+1. `docs/MAINTAINER_START_HERE.md`
+2. `docs/CORE.md`
+3. `docs/CODEBASE-MAP.md`
+4. `docs/SYSTEM.md`
+5. `docs/OPERATIONS.md`
+6. `docs/ROOT-LAYOUT.md`
+7. `docs/DATA_FLOW.md`
 
 ## Task Routing
 
@@ -23,11 +26,11 @@ Purpose: minimal, deterministic docs for AI agents and engineers.
 
 1. Runtime code (`src/`, `convex/`, `scripts/`)
 2. `convex/schema.ts`
-3. `src/App.tsx`
+3. `src/app/router/App.tsx`
 4. `docs/CORE.md`
 5. `docs/SYSTEM.md`
 6. `docs/OPERATIONS.md`
 
 ## Human Docs
 
-For plain-language explanations, use `docsForMe/`.
+For plain-language explanations, use `docs-for-humans/`.

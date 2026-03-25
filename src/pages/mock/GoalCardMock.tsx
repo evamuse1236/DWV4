@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { GoalCard } from "../../components/sprint/GoalCard";
-import type { GoalStatus } from "../../lib/status-utils";
+import { GoalCard } from "@/features/sprint/components/GoalCard";
+import type { GoalStatus } from "@/shared/lib/status-utils";
 
 /**
  * Isolated mock page for GoalCard development
