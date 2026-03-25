@@ -6,7 +6,14 @@
  */
 
 import { describe, it, expect, beforeEach, vi } from "vitest";
-import { createMockCtx, createMockId, resetMockIdCounter } from "./mockDb";
+import {
+  createMockCtx,
+  createMockId,
+  resetMockIdCounter,
+  seedSprint,
+  seedUser,
+  stripUndefinedValues,
+} from "./mockDb";
 import type { Id } from "@convex/_generated/dataModel";
 
 // We'll test the handler functions directly by extracting their logic
@@ -25,14 +32,13 @@ describe("Goals Mutations", () => {
     mockUserId = createMockId("users");
     mockSprintId = createMockId("sprints");
 
-    mockCtx.db._seed(mockUserId, {
+    seedUser(mockCtx, mockUserId, {
       username: "testuser",
       role: "student",
       displayName: "Test User",
-      createdAt: Date.now(),
     });
 
-    mockCtx.db._seed(mockSprintId, {
+    seedSprint(mockCtx, mockSprintId, {
       name: "Sprint 1",
       startDate: "2025-01-01",
       endDate: "2025-01-14",
@@ -118,10 +124,10 @@ describe("Goals Mutations", () => {
 
       // Update it (mimics the update mutation)
       const updates = { title: "Updated Title" };
-      const filteredUpdates = Object.fromEntries(
-        Object.entries(updates).filter(([_, v]) => v !== undefined)
-      );
-      await mockCtx.db.patch(goalId, { ...filteredUpdates, updatedAt: Date.now() });
+      await mockCtx.db.patch(goalId, {
+        ...stripUndefinedValues(updates),
+        updatedAt: Date.now(),
+      });
 
       const updatedGoal = await mockCtx.db.get(goalId);
       expect(updatedGoal?.title).toBe("Updated Title");

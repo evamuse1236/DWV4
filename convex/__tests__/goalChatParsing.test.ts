@@ -3,29 +3,20 @@ import { describe, expect, it } from "vitest";
 import { __goalChatTesting } from "../ai";
 
 describe("goal chat parsing (hybrid)", () => {
-  it("parses simple schedule answers like 'one day'", () => {
-    expect(__goalChatTesting.parseSchedule("one day")).toBe("1x per week");
-    expect(__goalChatTesting.parseSchedule("just one day")).toBe("1x per week");
-    expect(__goalChatTesting.parseSchedule("once a week")).toBe("1x per week");
-    expect(__goalChatTesting.parseSchedule("twice a week")).toBe("2x per week");
-  });
-
-  it("treats 'after school' as weekdays + time qualifier", () => {
-    expect(__goalChatTesting.parseSchedule("after school")).toBe("on weekdays after school");
-    expect(__goalChatTesting.parseSchedule("weekdays after school")).toBe("on weekdays after school");
-    expect(__goalChatTesting.parseSchedule("mon tues and fri after school")).toBe(
-      "on mon, tue, fri after school"
-    );
-  });
-
-  it("does not duplicate morning/night qualifiers", () => {
-    expect(__goalChatTesting.parseSchedule("every morning")).toBe("every morning");
-    expect(__goalChatTesting.parseSchedule("mornings")).toBe("every morning");
-  });
-
-  it("parses combined base + time qualifiers", () => {
-    expect(__goalChatTesting.parseSchedule("weekdays mornings")).toBe("on weekdays in the morning");
-    expect(__goalChatTesting.parseSchedule("on weekends at 7pm")).toBe("on weekends at 7pm");
+  it.each([
+    ["one day", "1x per week"],
+    ["just one day", "1x per week"],
+    ["once a week", "1x per week"],
+    ["twice a week", "2x per week"],
+    ["after school", "on weekdays after school"],
+    ["weekdays after school", "on weekdays after school"],
+    ["mon tues and fri after school", "on mon, tue, fri after school"],
+    ["every morning", "every morning"],
+    ["mornings", "every morning"],
+    ["weekdays mornings", "on weekdays in the morning"],
+    ["on weekends at 7pm", "on weekends at 7pm"],
+  ])("parses %s to %s", (input, expected) => {
+    expect(__goalChatTesting.parseSchedule(input)).toBe(expected);
   });
 
   it("supports removing/adding days in modification text", () => {

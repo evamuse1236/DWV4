@@ -6,7 +6,14 @@
  */
 
 import { describe, it, expect, beforeEach, vi } from "vitest";
-import { createMockCtx, createMockId, resetMockIdCounter } from "./mockDb";
+import {
+  createMockCtx,
+  createMockId,
+  resetMockIdCounter,
+  seedSprint,
+  seedUser,
+  stripUndefinedValues,
+} from "./mockDb";
 import type { Id } from "@convex/_generated/dataModel";
 
 describe("Habits Mutations", () => {
@@ -22,14 +29,13 @@ describe("Habits Mutations", () => {
     mockUserId = createMockId("users");
     mockSprintId = createMockId("sprints");
 
-    mockCtx.db._seed(mockUserId, {
+    seedUser(mockCtx, mockUserId, {
       username: "testuser",
       role: "student",
       displayName: "Test User",
-      createdAt: Date.now(),
     });
 
-    mockCtx.db._seed(mockSprintId, {
+    seedSprint(mockCtx, mockSprintId, {
       name: "Sprint 1",
       startDate: "2025-01-01",
       endDate: "2025-01-14",
@@ -102,10 +108,7 @@ describe("Habits Mutations", () => {
 
       // Simulate update mutation
       const updates = { name: "Updated Name" };
-      const filteredUpdates = Object.fromEntries(
-        Object.entries(updates).filter(([_, v]) => v !== undefined)
-      );
-      await mockCtx.db.patch(habitId, filteredUpdates);
+      await mockCtx.db.patch(habitId, stripUndefinedValues(updates));
 
       const habit = await mockCtx.db.get(habitId);
       expect(habit?.name).toBe("Updated Name");

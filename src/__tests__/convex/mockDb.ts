@@ -16,6 +16,21 @@ type MockDocument = {
 
 type MockStore = Map<string, MockDocument>;
 
+type SeedUserInput = {
+  username: string;
+  role: "admin" | "student";
+  displayName: string;
+  createdAt?: number;
+};
+
+type SeedSprintInput = {
+  name: string;
+  startDate: string;
+  endDate: string;
+  isActive: boolean;
+  createdBy: Id<"users">;
+};
+
 // Helper to generate fake Convex IDs
 let idCounter = 0;
 export function createMockId<T extends string>(tableName: T): Id<T> {
@@ -27,6 +42,35 @@ export function createMockId<T extends string>(tableName: T): Id<T> {
 // Reset the ID counter between tests
 export function resetMockIdCounter(): void {
   idCounter = 0;
+}
+
+export function seedUser(mockCtx: ReturnType<typeof createMockCtx>, userId: Id<"users">, user: SeedUserInput): void {
+  mockCtx.db._seed(userId, {
+    username: user.username,
+    role: user.role,
+    displayName: user.displayName,
+    createdAt: user.createdAt ?? Date.now(),
+  });
+}
+
+export function seedSprint(
+  mockCtx: ReturnType<typeof createMockCtx>,
+  sprintId: Id<"sprints">,
+  sprint: SeedSprintInput
+): void {
+  mockCtx.db._seed(sprintId, {
+    name: sprint.name,
+    startDate: sprint.startDate,
+    endDate: sprint.endDate,
+    isActive: sprint.isActive,
+    createdBy: sprint.createdBy,
+  });
+}
+
+export function stripUndefinedValues<T extends Record<string, unknown>>(updates: T): Record<string, unknown> {
+  return Object.fromEntries(
+    Object.entries(updates).filter(([, value]) => value !== undefined)
+  );
 }
 
 /**

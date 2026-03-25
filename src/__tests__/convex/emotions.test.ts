@@ -6,7 +6,13 @@
  */
 
 import { describe, it, expect, beforeEach, vi } from "vitest";
-import { createMockCtx, createMockId, resetMockIdCounter } from "./mockDb";
+import {
+  createMockCtx,
+  createMockId,
+  resetMockIdCounter,
+  seedUser,
+  stripUndefinedValues,
+} from "./mockDb";
 import type { Id } from "@convex/_generated/dataModel";
 
 describe("Emotions Mutations", () => {
@@ -21,11 +27,10 @@ describe("Emotions Mutations", () => {
 
     // Seed with a user
     mockUserId = createMockId("users");
-    mockCtx.db._seed(mockUserId, {
+    seedUser(mockCtx, mockUserId, {
       username: "testuser",
       role: "student",
       displayName: "Test User",
-      createdAt: Date.now(),
     });
 
     // Seed with emotion categories and subcategories
@@ -98,10 +103,7 @@ describe("Emotions Mutations", () => {
 
       // Simulate updateCheckIn mutation
       const updates = { journalEntry: "Updated entry" };
-      const filteredUpdates = Object.fromEntries(
-        Object.entries(updates).filter(([_, v]) => v !== undefined)
-      );
-      await mockCtx.db.patch(checkInId, filteredUpdates);
+      await mockCtx.db.patch(checkInId, stripUndefinedValues(updates));
 
       const checkIn = await mockCtx.db.get(checkInId);
       expect(checkIn?.journalEntry).toBe("Updated entry");
@@ -219,11 +221,10 @@ describe("Emotions Queries", () => {
     mockCtx = createMockCtx();
 
     mockUserId = createMockId("users");
-    mockCtx.db._seed(mockUserId, {
+    seedUser(mockCtx, mockUserId, {
       username: "testuser",
       role: "student",
       displayName: "Test User",
-      createdAt: Date.now(),
     });
 
     mockCategoryId = createMockId("emotionCategories");

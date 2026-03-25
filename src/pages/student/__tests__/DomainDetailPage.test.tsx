@@ -13,7 +13,7 @@ vi.mock("convex/react", () => ({
   }),
 }));
 
-vi.mock("../@convex/_generated/api", () => ({
+vi.mock("@convex/_generated/api", () => ({
   api: {
     domains: { getById: "domains.getById" },
     objectives: { getAssignedByDomain: "objectives.getAssignedByDomain" },

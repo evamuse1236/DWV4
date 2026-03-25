@@ -6,27 +6,16 @@
  */
 
 import { describe, it, expect, beforeEach, vi } from "vitest";
-import { createMockCtx, createMockId, resetMockIdCounter } from "./mockDb";
+import {
+  createMockCtx,
+  createMockId,
+  resetMockIdCounter,
+  seedUser,
+  stripUndefinedValues,
+} from "./mockDb";
 import type { Id } from "@convex/_generated/dataModel";
 
 type MockCtx = ReturnType<typeof createMockCtx>;
-
-const seedUser = (
-  mockCtx: MockCtx,
-  userId: Id<"users">,
-  {
-    username,
-    role,
-    displayName,
-  }: { username: string; role: "admin" | "student"; displayName: string }
-) => {
-  mockCtx.db._seed(userId, {
-    username,
-    role,
-    displayName,
-    createdAt: Date.now(),
-  });
-};
 
 const seedDomain = (
   mockCtx: MockCtx,
@@ -194,10 +183,7 @@ describe("Objectives - Major CRUD", () => {
 
       // Simulate update mutation
       const updates = { title: "Updated Title", description: "Updated description" };
-      const filteredUpdates = Object.fromEntries(
-        Object.entries(updates).filter(([_, v]) => v !== undefined)
-      );
-      await mockCtx.db.patch(majorId, filteredUpdates);
+      await mockCtx.db.patch(majorId, stripUndefinedValues(updates));
 
       const major = await mockCtx.db.get(majorId);
       expect(major?.title).toBe("Updated Title");

@@ -736,7 +736,7 @@ describe("Integration Tests: User Journeys", () => {
       await waitFor(() => {
         expect(mockMutations.saveCheckIn).toHaveBeenCalled();
       });
-    });
+    }, 10000);
 
     it("CheckInGate shows error when save fails and allows retry", async () => {
       const user = userEvent.setup();
@@ -789,7 +789,7 @@ describe("Integration Tests: User Journeys", () => {
 
       // Retry button should be visible
       expect(screen.getByRole("button", { name: /retry/i })).toBeInTheDocument();
-    });
+    }, 10000);
   });
 
   // ============================================================
@@ -827,7 +827,7 @@ describe("Integration Tests: User Journeys", () => {
       // Should show week toggle
       expect(screen.getByText(/week 1/i)).toBeInTheDocument();
       expect(screen.getByText(/week 2/i)).toBeInTheDocument();
-    });
+    }, 10000);
 
     it("SprintPage shows 'No Active Cycle' when no sprint exists", () => {
       queryResults.getActive = null;

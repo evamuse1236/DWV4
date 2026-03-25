@@ -24,7 +24,7 @@ vi.mock("convex/react", () => ({
 }));
 
 // Mock the API
-vi.mock("../@convex/_generated/api", () => ({
+vi.mock("@convex/_generated/api", () => ({
   api: {
     sprints: { getActive: "sprints.getActive", getAll: "sprints.getAll" },
     goals: {
@@ -173,6 +173,25 @@ const mockPreviousGoals = [
 
 const mockAllSprints = [mockActiveSprint, mockPreviousSprint];
 
+function mockSprintQueries({
+  currentSprintGoals = mockGoals,
+  previousSprintGoals = mockPreviousGoals,
+}: {
+  currentSprintGoals?: any[];
+  previousSprintGoals?: any[];
+} = {}) {
+  (useQuery as any).mockImplementation((query: any, args: any) => {
+    if (args === "skip") return undefined;
+    if (query === "sprints.getActive") return mockActiveSprint;
+    if (query === "sprints.getAll") return mockAllSprints;
+    if (query === "goals.getByUserAndSprint") {
+      return args?.sprintId === "sprint_0" ? previousSprintGoals : currentSprintGoals;
+    }
+    if (query === "goals.getPreviousSprintGoals") return [];
+    return undefined;
+  });
+}
+
 describe("SprintPage", () => {
   beforeEach(() => {
     vi.clearAllMocks();
@@ -205,17 +224,7 @@ describe("SprintPage", () => {
 
   describe("With active sprint", () => {
     beforeEach(() => {
-      // Use query name to return appropriate data
-      (useQuery as any).mockImplementation((query: any, args: any) => {
-        if (args === "skip") return undefined;
-        if (query === "sprints.getActive") return mockActiveSprint;
-        if (query === "sprints.getAll") return mockAllSprints;
-        if (query === "goals.getByUserAndSprint") {
-          return args?.sprintId === "sprint_0" ? mockPreviousGoals : mockGoals;
-        }
-        if (query === "goals.getPreviousSprintGoals") return [];
-        return undefined;
-      });
+      mockSprintQueries();
     });
 
     it("displays the sprint name", () => {
@@ -269,16 +278,7 @@ describe("SprintPage", () => {
 
   describe("Week view", () => {
     beforeEach(() => {
-      (useQuery as any).mockImplementation((query: any, args: any) => {
-        if (args === "skip") return undefined;
-        if (query === "sprints.getActive") return mockActiveSprint;
-        if (query === "sprints.getAll") return mockAllSprints;
-        if (query === "goals.getByUserAndSprint") {
-          return args?.sprintId === "sprint_0" ? mockPreviousGoals : mockGoals;
-        }
-        if (query === "goals.getPreviousSprintGoals") return [];
-        return undefined;
-      });
+      mockSprintQueries();
     });
 
     it("displays all 7 days of the week", () => {
@@ -302,14 +302,7 @@ describe("SprintPage", () => {
 
   describe("No goals state", () => {
     beforeEach(() => {
-      (useQuery as any).mockImplementation((query: any, args: any) => {
-        if (args === "skip") return undefined;
-        if (query === "sprints.getActive") return mockActiveSprint;
-        if (query === "sprints.getAll") return mockAllSprints;
-        if (query === "goals.getByUserAndSprint") return []; // No goals
-        if (query === "goals.getPreviousSprintGoals") return [];
-        return undefined;
-      });
+      mockSprintQueries({ currentSprintGoals: [] });
     });
 
     it("shows all empty goal slots when user has no goals", () => {
@@ -322,49 +315,41 @@ describe("SprintPage", () => {
 
   describe("Goal interaction", () => {
     beforeEach(() => {
-      (useQuery as any).mockImplementation((query: any, args: any) => {
-        if (args === "skip") return undefined;
-        if (query === "sprints.getActive") return mockActiveSprint;
-        if (query === "sprints.getAll") return mockAllSprints;
-        if (query === "goals.getByUserAndSprint") {
-          return args?.sprintId === "sprint_0" ? mockPreviousGoals : mockGoals;
-        }
-        if (query === "goals.getPreviousSprintGoals") return [];
-        return undefined;
-      });
+      mockSprintQueries();
     });
 
     it("expands goal on click to add expanded class", async () => {
       const user = userEvent.setup();
       render(<SprintPage />);
 
-      // Find goal card (has goal-slot class)
-      const goalSlots = document.querySelectorAll("._goal-slot_d0d5e3._filled_d0d5e3");
-      expect(goalSlots.length).toBe(2);
+      const goalSlots = Array.from(
+        document.querySelectorAll<HTMLElement>('div[class*="goal-slot"]')
+      ).filter((element) => element.className.includes("filled"));
+      expect(goalSlots).toHaveLength(2);
 
-      // First goal should not be expanded initially
-      expect(goalSlots[0].classList.contains("_expanded_d0d5e3")).toBe(false);
+      expect(goalSlots[0].className).not.toContain("expanded");
 
-      // Click the goal (clicking the card should toggle expansion)
       await user.click(goalSlots[0]);
 
-      // Now it should have expanded class
-      expect(goalSlots[0].classList.contains("_expanded_d0d5e3")).toBe(true);
+      expect(goalSlots[0].className).toContain("expanded");
     });
 
     it("toggles goal expansion on click", async () => {
       const user = userEvent.setup();
       render(<SprintPage />);
 
-      const goalSlots = document.querySelectorAll("._goal-slot_d0d5e3._filled_d0d5e3");
+      const goalSlots = Array.from(
+        document.querySelectorAll<HTMLElement>('div[class*="goal-slot"]')
+      ).filter((element) => element.className.includes("filled"));
+      expect(goalSlots).toHaveLength(2);
 
       // Click to expand
       await user.click(goalSlots[0]);
-      expect(goalSlots[0].classList.contains("_expanded_d0d5e3")).toBe(true);
+      expect(goalSlots[0].className).toContain("expanded");
 
       // Click again to collapse
       await user.click(goalSlots[0]);
-      expect(goalSlots[0].classList.contains("_expanded_d0d5e3")).toBe(false);
+      expect(goalSlots[0].className).not.toContain("expanded");
     });
   });
 });

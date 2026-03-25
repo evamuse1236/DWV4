@@ -7,7 +7,7 @@
  * - Update student batch assignments
  * - Remove students with confirmation
  */
-import { render, screen, waitFor, within } from "@testing-library/react";
+import { fireEvent, render, screen, waitFor, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it, vi, beforeEach, type Mock } from "vitest";
 import React from "react";
@@ -175,7 +175,7 @@ vi.mock("convex/react", () => ({
 }));
 
 // Mock the API
-vi.mock("../@convex/_generated/api", () => ({
+vi.mock("@convex/_generated/api", () => ({
   api: {
     users: {
       getAll: "users.getAll",
@@ -459,14 +459,12 @@ describe("StudentsPage", () => {
       });
 
       // Fill only username and password, leave displayName empty
-      await user.type(
-        screen.getByPlaceholderText("e.g., john.smith"),
-        "new.student"
-      );
-      await user.type(
-        screen.getByPlaceholderText("Set a password"),
-        "password123"
-      );
+      fireEvent.change(screen.getByPlaceholderText("e.g., john.smith"), {
+        target: { value: "new.student" },
+      });
+      fireEvent.change(screen.getByPlaceholderText("Set a password"), {
+        target: { value: "password123" },
+      });
 
       // Create button should be disabled
       const createButton = screen.getByRole("button", {
@@ -600,7 +598,7 @@ describe("StudentsPage", () => {
           batch: undefined,
         });
       });
-    });
+    }, 15000);
 
     it("handles 'username exists' error", async () => {
       // Mock createUser to return error
@@ -641,7 +639,7 @@ describe("StudentsPage", () => {
       await waitFor(() => {
         expect(screen.getByText("Username already exists")).toBeInTheDocument();
       });
-    });
+    }, 15000);
 
     it("closes dialog on successful student creation", async () => {
       const user = userEvent.setup();

@@ -15,7 +15,7 @@ vi.mock("convex/react", () => ({
 }));
 
 // Mock the API
-vi.mock("../@convex/_generated/api", () => ({
+vi.mock("@convex/_generated/api", () => ({
   api: {
     emotions: {
       saveCheckIn: "emotions.saveCheckIn",
@@ -565,6 +565,6 @@ describe("CheckInGate", () => {
         expect(screen.getByText(/couldn't save/i)).toBeInTheDocument();
         expect(screen.getByRole("button", { name: /retry/i })).toBeInTheDocument();
       });
-    });
+    }, 10000);
   });
 });

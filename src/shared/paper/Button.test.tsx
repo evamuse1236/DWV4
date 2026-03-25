@@ -4,25 +4,26 @@ import { describe, expect, it, vi } from "vitest";
 import { Button } from "./Button";
 
 describe("Button", () => {
-  // --- Happy Path Tests ---
+  function getButton(name: RegExp | string) {
+    return screen.getByRole("button", { name });
+  }
+
   it("disables the button and shows spinner when loading", () => {
     render(<Button isLoading>Save</Button>);
-    const button = screen.getByRole("button", { name: /save/i });
+    const button = getButton(/save/i);
     expect(button).toBeDisabled();
     expect(button.querySelector("svg.animate-spin")).toBeTruthy();
   });
 
   it("adds full width class when fullWidth=true", () => {
     render(<Button fullWidth>Wide</Button>);
-    expect(screen.getByRole("button", { name: /wide/i })).toHaveClass("w-full");
+    expect(getButton(/wide/i)).toHaveClass("w-full");
   });
-
-  // --- Error State / Edge Case Tests ---
 
   describe("disabled state", () => {
     it("disables the button when disabled prop is true", () => {
       render(<Button disabled>Disabled</Button>);
-      expect(screen.getByRole("button", { name: /disabled/i })).toBeDisabled();
+      expect(getButton(/disabled/i)).toBeDisabled();
     });
 
     it("prevents click handler from being called when disabled", async () => {
@@ -57,68 +58,39 @@ describe("Button", () => {
 
     it("applies disabled opacity class when disabled", () => {
       render(<Button disabled>Faded</Button>);
-      expect(screen.getByRole("button", { name: /faded/i })).toHaveClass(
-        "disabled:opacity-50"
-      );
+      expect(getButton(/faded/i)).toHaveClass("disabled:opacity-50");
     });
   });
 
   describe("variants", () => {
-    it("applies danger variant styles", () => {
-      render(<Button variant="danger">Delete</Button>);
-      const button = screen.getByRole("button", { name: /delete/i });
-      expect(button).toHaveClass("bg-red-600");
-    });
+    it.each([
+      ["danger", "Delete", ["bg-red-600"]],
+      ["success", "Confirm", ["bg-green-600"]],
+      ["ghost", "Ghost", ["bg-transparent"]],
+      ["outline", "Outlined", ["border-2", "border-primary-600"]],
+      ["secondary", "Secondary", ["bg-gray-100"]],
+    ] as const)("applies %s variant styles", (variant, label, classes) => {
+      render(<Button variant={variant}>{label}</Button>);
+      const button = getButton(new RegExp(label, "i"));
 
-    it("applies success variant styles", () => {
-      render(<Button variant="success">Confirm</Button>);
-      const button = screen.getByRole("button", { name: /confirm/i });
-      expect(button).toHaveClass("bg-green-600");
-    });
-
-    it("applies ghost variant styles", () => {
-      render(<Button variant="ghost">Ghost</Button>);
-      const button = screen.getByRole("button", { name: /ghost/i });
-      expect(button).toHaveClass("bg-transparent");
-    });
-
-    it("applies outline variant styles", () => {
-      render(<Button variant="outline">Outlined</Button>);
-      const button = screen.getByRole("button", { name: /outlined/i });
-      expect(button).toHaveClass("border-2");
-      expect(button).toHaveClass("border-primary-600");
-    });
-
-    it("applies secondary variant styles", () => {
-      render(<Button variant="secondary">Secondary</Button>);
-      const button = screen.getByRole("button", { name: /secondary/i });
-      expect(button).toHaveClass("bg-gray-100");
+      for (const className of classes) {
+        expect(button).toHaveClass(className);
+      }
     });
   });
 
   describe("sizes", () => {
-    it("applies small size class", () => {
-      render(<Button size="sm">Small</Button>);
-      const button = screen.getByRole("button", { name: /small/i });
-      expect(button).toHaveClass("px-3");
-      expect(button).toHaveClass("py-1.5");
-      expect(button).toHaveClass("text-sm");
-    });
+    it.each([
+      ["sm", "Small", ["px-3", "py-1.5", "text-sm"]],
+      ["lg", "Large", ["px-6", "py-3", "text-lg"]],
+      ["xl", "Extra Large", ["px-8", "py-4", "text-xl"]],
+    ] as const)("applies %s size class", (size, label, classes) => {
+      render(<Button size={size}>{label}</Button>);
+      const button = getButton(new RegExp(label, "i"));
 
-    it("applies large size class", () => {
-      render(<Button size="lg">Large</Button>);
-      const button = screen.getByRole("button", { name: /large/i });
-      expect(button).toHaveClass("px-6");
-      expect(button).toHaveClass("py-3");
-      expect(button).toHaveClass("text-lg");
-    });
-
-    it("applies extra large size class", () => {
-      render(<Button size="xl">Extra Large</Button>);
-      const button = screen.getByRole("button", { name: /extra large/i });
-      expect(button).toHaveClass("px-8");
-      expect(button).toHaveClass("py-4");
-      expect(button).toHaveClass("text-xl");
+      for (const className of classes) {
+        expect(button).toHaveClass(className);
+      }
     });
   });
 
@@ -147,10 +119,8 @@ describe("Button", () => {
           Next
         </Button>
       );
-      // Right icon should still be visible even when loading
       expect(screen.getByTestId("right-icon")).toBeInTheDocument();
-      // Spinner should also be present
-      const button = screen.getByRole("button", { name: /next/i });
+      const button = getButton(/next/i);
       expect(button.querySelector("svg.animate-spin")).toBeTruthy();
     });
 
@@ -175,7 +145,7 @@ describe("Button", () => {
 
       render(<Button onClick={onClick}>Click Me</Button>);
 
-      await user.click(screen.getByRole("button", { name: /click me/i }));
+      await user.click(getButton(/click me/i));
 
       expect(onClick).toHaveBeenCalledTimes(1);
     });
@@ -186,9 +156,8 @@ describe("Button", () => {
 
       render(<Button onClick={onClick}>Click Me</Button>);
 
-      await user.click(screen.getByRole("button", { name: /click me/i }));
+      await user.click(getButton(/click me/i));
 
-      // Verify the event object was passed
       expect(onClick).toHaveBeenCalledWith(expect.objectContaining({}));
     });
   });
@@ -200,30 +169,28 @@ describe("Button", () => {
 
       await user.tab();
 
-      expect(screen.getByRole("button", { name: /focusable/i })).toHaveFocus();
+      expect(getButton(/focusable/i)).toHaveFocus();
     });
 
     it("applies custom className alongside default classes", () => {
       render(<Button className="my-custom-class">Custom</Button>);
-      const button = screen.getByRole("button", { name: /custom/i });
+      const button = getButton(/custom/i);
       expect(button).toHaveClass("my-custom-class");
-      expect(button).toHaveClass("rounded-lg"); // Default class still present
+      expect(button).toHaveClass("rounded-lg");
     });
   });
 
   describe("button type", () => {
     it("defaults to button type to prevent form submission", () => {
       render(<Button>Default Type</Button>);
-      // Check that button doesn't have type="submit" by default
-      const button = screen.getByRole("button", { name: /default type/i });
+      const button = getButton(/default type/i);
       expect(button).not.toHaveAttribute("type", "submit");
     });
 
     it("accepts type prop override", () => {
       render(<Button type="submit">Submit</Button>);
-      const button = screen.getByRole("button", { name: /submit/i });
+      const button = getButton(/submit/i);
       expect(button).toHaveAttribute("type", "submit");
     });
   });
 });
-

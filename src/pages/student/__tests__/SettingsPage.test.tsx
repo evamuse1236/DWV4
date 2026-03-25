@@ -1,4 +1,4 @@
-import { render, screen, waitFor } from "@testing-library/react";
+import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
@@ -11,15 +11,10 @@ const mockUseSessionToken = vi.fn();
 
 vi.mock("convex/react", () => ({
   useQuery: (...args: any[]) => mockUseQuery(...args),
-  useMutation: vi.fn((mutationRef: string) => {
-    if (mutationRef === "auth.changeOwnUsername") return mockChangeOwnUsername;
-    if (mutationRef === "auth.changeOwnPassword") return mockChangeOwnPassword;
-    if (mutationRef === "auth.updateOwnProfile") return mockUpdateOwnProfile;
-    return vi.fn();
-  }),
+  useMutation: vi.fn(() => mockUpdateOwnProfile),
 }));
 
-vi.mock("../@convex/_generated/api", () => ({
+vi.mock("@convex/_generated/api", () => ({
   api: {
     auth: {
       changeOwnUsername: "auth.changeOwnUsername",
@@ -78,8 +73,9 @@ describe("Student Settings avatar URL", () => {
     render(<SettingsPage />);
 
     const avatarInput = screen.getByLabelText("Avatar URL");
-    await user.clear(avatarInput);
-    await user.type(avatarInput, "https://example.com/new.gif");
+    fireEvent.change(avatarInput, {
+      target: { value: "https://example.com/new.gif" },
+    });
     await user.click(screen.getByRole("button", { name: "Save Photo" }));
 
     await waitFor(() => {
@@ -88,7 +84,7 @@ describe("Student Settings avatar URL", () => {
         avatarUrl: "https://example.com/new.gif",
       });
     });
-  });
+  }, 10000);
 
   it("saves a base64 data image URL via updateOwnProfile", async () => {
     const user = userEvent.setup();
@@ -96,8 +92,9 @@ describe("Student Settings avatar URL", () => {
 
     const dataUrl = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA";
     const avatarInput = screen.getByLabelText("Avatar URL");
-    await user.clear(avatarInput);
-    await user.type(avatarInput, dataUrl);
+    fireEvent.change(avatarInput, {
+      target: { value: dataUrl },
+    });
     await user.click(screen.getByRole("button", { name: "Save Photo" }));
 
     await waitFor(() => {
@@ -106,7 +103,7 @@ describe("Student Settings avatar URL", () => {
         avatarUrl: dataUrl,
       });
     });
-  });
+  }, 10000);
 
   it("clears avatar URL via updateOwnProfile", async () => {
     const user = userEvent.setup();

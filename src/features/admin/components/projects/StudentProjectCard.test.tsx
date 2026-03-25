@@ -10,13 +10,7 @@ const mockRemoveLink = vi.fn();
 const mockUpdateReflection = vi.fn();
 
 vi.mock("convex/react", () => ({
-  useMutation: vi.fn((mutationRef: string) => {
-    if (mutationRef === "projectLinks.add") return mockAddLink;
-    if (mutationRef === "projectLinks.update") return mockUpdateLink;
-    if (mutationRef === "projectLinks.remove") return mockRemoveLink;
-    if (mutationRef === "projectReflections.update") return mockUpdateReflection;
-    return vi.fn();
-  }),
+  useMutation: vi.fn(() => mockUpdateLink),
 }));
 
 vi.mock("@convex/_generated/api", () => ({

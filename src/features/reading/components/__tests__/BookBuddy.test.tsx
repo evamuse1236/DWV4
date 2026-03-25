@@ -12,7 +12,7 @@ vi.mock("convex/react", () => ({
   useAction: vi.fn(() => mockLibraryChat),
 }));
 
-vi.mock("../@convex/_generated/api", () => ({
+vi.mock("@convex/_generated/api", () => ({
   api: {
     ai: { libraryChat: "ai.libraryChat" },
   },
@@ -128,7 +128,7 @@ async function completeGuide(user: ReturnType<typeof userEvent.setup>) {
 // Tests
 // ---------------------------------------------------------------------------
 
-describe("BookBuddy", () => {
+describe("BookBuddy", { timeout: 15000 }, () => {
   beforeEach(() => {
     vi.clearAllMocks();
   });

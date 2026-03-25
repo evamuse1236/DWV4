@@ -110,7 +110,7 @@ vi.mock("convex/react", () => ({
 }));
 
 // Mock the API
-vi.mock("../@convex/_generated/api", () => ({
+vi.mock("@convex/_generated/api", () => ({
   api: {
     sprints: {
       getAll: "sprints.getAll",

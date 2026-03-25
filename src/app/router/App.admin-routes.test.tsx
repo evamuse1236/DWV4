@@ -111,36 +111,14 @@ describe("App admin route redirects", () => {
     window.history.pushState({}, "", "/admin");
   });
 
-  it("redirects /admin/projects to the admin dashboard", () => {
-    window.history.pushState({}, "", "/admin/projects");
-    render(<App />);
-
-    expect(screen.getByText("Admin dashboard")).toBeInTheDocument();
-  });
-
-  it("redirects /admin/comments to the admin dashboard", () => {
-    window.history.pushState({}, "", "/admin/comments");
-    render(<App />);
-
-    expect(screen.getByText("Admin dashboard")).toBeInTheDocument();
-  });
-
-  it("redirects /admin/character to the admin dashboard", () => {
-    window.history.pushState({}, "", "/admin/character");
-    render(<App />);
-
-    expect(screen.getByText("Admin dashboard")).toBeInTheDocument();
-  });
-
-  it("redirects /admin/reviews to the admin dashboard", () => {
-    window.history.pushState({}, "", "/admin/reviews");
-    render(<App />);
-
-    expect(screen.getByText("Admin dashboard")).toBeInTheDocument();
-  });
-
-  it("redirects /admin/presentations to the admin dashboard", () => {
-    window.history.pushState({}, "", "/admin/presentations");
+  it.each([
+    "/admin/projects",
+    "/admin/comments",
+    "/admin/character",
+    "/admin/reviews",
+    "/admin/presentations",
+  ])("redirects %s to the admin dashboard", (path) => {
+    window.history.pushState({}, "", path);
     render(<App />);
 
     expect(screen.getByText("Admin dashboard")).toBeInTheDocument();

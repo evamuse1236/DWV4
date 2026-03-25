@@ -6,7 +6,13 @@
  */
 
 import { describe, it, expect, beforeEach } from "vitest";
-import { createMockCtx, createMockId, resetMockIdCounter } from "./mockDb";
+import {
+  createMockCtx,
+  createMockId,
+  resetMockIdCounter,
+  seedUser,
+  stripUndefinedValues,
+} from "./mockDb";
 import type { Id } from "@convex/_generated/dataModel";
 
 describe("Sprints Mutations", () => {
@@ -19,11 +25,10 @@ describe("Sprints Mutations", () => {
 
     // Seed with an admin user (sprints are typically created by admins)
     mockUserId = createMockId("users");
-    mockCtx.db._seed(mockUserId, {
+    seedUser(mockCtx, mockUserId, {
       username: "admin",
       role: "admin",
       displayName: "Admin User",
-      createdAt: Date.now(),
     });
   });
 
@@ -96,10 +101,7 @@ describe("Sprints Mutations", () => {
       });
 
       const updates = { name: "Updated Sprint Name" };
-      const filteredUpdates = Object.fromEntries(
-        Object.entries(updates).filter(([_, v]) => v !== undefined)
-      );
-      await mockCtx.db.patch(sprintId, filteredUpdates);
+      await mockCtx.db.patch(sprintId, stripUndefinedValues(updates));
 
       const sprint = await mockCtx.db.get(sprintId);
       expect(sprint?.name).toBe("Updated Sprint Name");

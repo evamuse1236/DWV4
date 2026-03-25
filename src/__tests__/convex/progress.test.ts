@@ -6,7 +6,7 @@
  */
 
 import { describe, it, expect, beforeEach, vi } from "vitest";
-import { createMockCtx, createMockId, resetMockIdCounter } from "./mockDb";
+import { createMockCtx, createMockId, resetMockIdCounter, seedUser } from "./mockDb";
 import type { Id } from "@convex/_generated/dataModel";
 
 describe("Progress - toggleActivity", () => {
@@ -33,18 +33,16 @@ describe("Progress - toggleActivity", () => {
     mockStudentObjId = createMockId("studentObjectives");
     mockMajorAssignmentId = createMockId("studentMajorObjectives");
 
-    mockCtx.db._seed(mockAdminId, {
+    seedUser(mockCtx, mockAdminId, {
       username: "admin",
       role: "admin",
       displayName: "Admin",
-      createdAt: Date.now(),
     });
 
-    mockCtx.db._seed(mockStudentId, {
+    seedUser(mockCtx, mockStudentId, {
       username: "student",
       role: "student",
       displayName: "Student",
-      createdAt: Date.now(),
     });
 
     mockCtx.db._seed(mockDomainId, {

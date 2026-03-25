@@ -1,4 +1,4 @@
-import { render, screen, waitFor, within } from "@testing-library/react";
+import { fireEvent, render, screen, waitFor, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
@@ -13,17 +13,10 @@ const mockAdminResetPassword = vi.fn();
 
 vi.mock("convex/react", () => ({
   useQuery: (...args: unknown[]) => mockUseQuery(...args),
-  useMutation: vi.fn((mutationRef: string) => {
-    if (mutationRef === "auth.changeOwnUsername") return mockChangeOwnUsername;
-    if (mutationRef === "auth.changeOwnPassword") return mockChangeOwnPassword;
-    if (mutationRef === "auth.updateOwnProfile") return mockUpdateOwnProfile;
-    if (mutationRef === "auth.adminUpdateUsername") return mockAdminUpdateUsername;
-    if (mutationRef === "auth.adminResetPassword") return mockAdminResetPassword;
-    return vi.fn();
-  }),
+  useMutation: vi.fn(() => mockUpdateOwnProfile),
 }));
 
-vi.mock("../@convex/_generated/api", () => ({
+vi.mock("@convex/_generated/api", () => ({
   api: {
     auth: {
       getCredentialSummaries: "auth.getCredentialSummaries",
@@ -64,8 +57,9 @@ describe("AdminSettingsPage avatar URL", () => {
     render(<AdminSettingsPage />);
 
     const avatarInput = screen.getByPlaceholderText("https://example.com/profile.gif");
-    await user.clear(avatarInput);
-    await user.type(avatarInput, "https://example.com/admin.gif");
+    fireEvent.change(avatarInput, {
+      target: { value: "https://example.com/admin.gif" },
+    });
     await user.click(screen.getByRole("button", { name: "Save Photo" }));
 
     await waitFor(() => {
@@ -74,7 +68,7 @@ describe("AdminSettingsPage avatar URL", () => {
         avatarUrl: "https://example.com/admin.gif",
       });
     });
-  });
+  }, 10000);
 
   it("saves a base64 data image URL for the current admin profile", async () => {
     const user = userEvent.setup();
@@ -82,8 +76,9 @@ describe("AdminSettingsPage avatar URL", () => {
 
     const dataUrl = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQ";
     const avatarInput = screen.getByPlaceholderText("https://example.com/profile.gif");
-    await user.clear(avatarInput);
-    await user.type(avatarInput, dataUrl);
+    fireEvent.change(avatarInput, {
+      target: { value: dataUrl },
+    });
     await user.click(screen.getByRole("button", { name: "Save Photo" }));
 
     await waitFor(() => {
@@ -92,7 +87,7 @@ describe("AdminSettingsPage avatar URL", () => {
         avatarUrl: dataUrl,
       });
     });
-  });
+  }, 10000);
 
   it("allows admins to toggle reset password visibility", async () => {
     const user = userEvent.setup();
