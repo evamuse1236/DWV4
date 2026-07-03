@@ -1,6 +1,59 @@
-import { mutation } from "./_generated/server";
+import { internalMutation, mutation } from "./_generated/server";
 import { v } from "convex/values";
 import { requireMaintenanceKey } from "./authz";
+import type { Doc } from "./_generated/dataModel";
+
+/**
+ * One-time backfill: books created before the 2026 library overhaul lack
+ * source / libraryStatus / needsAdminReview. They are the live curated
+ * library, so they become curated + no review; source derives from
+ * isPrePopulated / submittedBy.
+ *
+ * Dry run:  npx convex run migrations:backfillBookLibraryFields --prod
+ * Apply:    npx convex run migrations:backfillBookLibraryFields '{"dryRun": false}' --prod
+ */
+export const backfillBookLibraryFields = internalMutation({
+  args: {
+    dryRun: v.optional(v.boolean()),
+  },
+  handler: async (ctx, args) => {
+    const dryRun = args.dryRun ?? true;
+    const books = await ctx.db.query("books").collect();
+
+    const planned: Array<{ book: Doc<"books">; patch: Partial<Doc<"books">> }> = [];
+    for (const book of books) {
+      const raw = book as Record<string, unknown>;
+      const patch: Partial<Doc<"books">> = {};
+      if (raw.source === undefined) {
+        patch.source = book.isPrePopulated
+          ? "seed"
+          : book.submittedBy
+            ? "student"
+            : "admin";
+      }
+      if (raw.libraryStatus === undefined) patch.libraryStatus = "curated";
+      if (raw.needsAdminReview === undefined) patch.needsAdminReview = false;
+      if (Object.keys(patch).length > 0) planned.push({ book, patch });
+    }
+
+    if (!dryRun) {
+      for (const { book, patch } of planned) {
+        await ctx.db.patch(book._id, patch);
+      }
+    }
+
+    return {
+      dryRun,
+      totalBooks: books.length,
+      matched: planned.length,
+      updated: dryRun ? 0 : planned.length,
+      sample: planned.slice(0, 10).map(({ book, patch }) => ({
+        title: book.title,
+        patch,
+      })),
+    };
+  },
+});
 
 /**
  * One-time migration: convert global trustJar doc to batch-specific docs.
