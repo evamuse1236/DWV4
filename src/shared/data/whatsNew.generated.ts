@@ -10,6 +10,12 @@ export interface WhatsNewEntry {
 
 export const WHATS_NEW: WhatsNewEntry[] = [
   {
+    date: "Jul 3",
+    sortDate: "2026-07-03",
+    title: "Simplify into a daily planner: retire diagnostics, add assignment done→confirm flow",
+    description: "Product pivot away from the diagnostic/viva mastery pipeline toward a",
+  },
+  {
     date: "Mar 25",
     sortDate: "2026-03-25",
     title: "Stabilize and simplify test suite coverage",
@@ -182,12 +188,6 @@ export const WHATS_NEW: WhatsNewEntry[] = [
     sortDate: "2026-02-13",
     title: "Fix student comment widget overlap across pages",
     description: "Code updates shipped in commit 9ed1870.",
-  },
-  {
-    date: "Feb 13",
-    sortDate: "2026-02-13",
-    title: "Automate in-app What's New from git history",
-    description: "Code updates shipped in commit bb8ca1f.",
   },
 ];
 
