@@ -1,6 +1,30 @@
 import { query, mutation } from "./_generated/server";
 import { v } from "convex/values";
-import { requireAdmin, toSafeUser } from "./authz";
+import { requireAdmin, requireSession, toSafeUser } from "./authz";
+
+// Set the session user's dialogue buddy (character + chat mode)
+export const setBuddyPreferences = mutation({
+  args: {
+    token: v.string(),
+    buddyCharacter: v.optional(
+      v.union(v.literal("luffy"), v.literal("steve"), v.literal("percy"))
+    ),
+    buddyMode: v.optional(v.union(v.literal("quick"), v.literal("talkative"))),
+  },
+  handler: async (ctx, args) => {
+    const { user } = await requireSession(ctx, args.token);
+    const patch: Partial<{
+      buddyCharacter: "luffy" | "steve" | "percy";
+      buddyMode: "quick" | "talkative";
+    }> = {};
+    if (args.buddyCharacter !== undefined) patch.buddyCharacter = args.buddyCharacter;
+    if (args.buddyMode !== undefined) patch.buddyMode = args.buddyMode;
+    if (Object.keys(patch).length > 0) {
+      await ctx.db.patch(user._id, patch);
+    }
+    return { success: true };
+  },
+});
 
 // Get all students
 export const getAll = query({

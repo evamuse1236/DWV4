@@ -41,9 +41,13 @@ vi.mock("@convex/_generated/api", () => ({
       importGoal: "goals.importGoal",
     },
     habits: { update: "habits.update" },
-    ai: { chat: "ai.chat" },
-    chatLogs: { log: "chatLogs.log", clearAll: "chatLogs.clearAll", exportLogs: "chatLogs.exportLogs" },
+    users: { setBuddyPreferences: "users.setBuddyPreferences" },
   },
+}));
+
+// Mock the dialogue buddy - it has its own engine/localStorage behavior
+vi.mock("@/features/sprint/components/PlannerBuddy", () => ({
+  PlannerBuddy: () => <div data-testid="planner-buddy" />,
 }));
 
 // Mock dependencies

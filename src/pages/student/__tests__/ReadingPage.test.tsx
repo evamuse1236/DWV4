@@ -59,7 +59,7 @@ vi.mock("@/features/auth/hooks/useAuth", () => ({
   })),
 }));
 
-vi.mock("@/features/reading/components/BookBuddy", () => ({
+vi.mock("@/features/reading/components/LibraryBuddy", () => ({
   default: () => <div data-testid="book-buddy">Book Buddy</div>,
 }));
 

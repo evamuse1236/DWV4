@@ -5,7 +5,7 @@ import { api } from "@convex/_generated/api";
 import type { Id } from "@convex/_generated/dataModel";
 import { useAuth } from "@/features/auth/hooks/useAuth";
 import { bookStatusConfig, getBookBadgeClass, type BookStatus } from "@/shared/lib/status-utils";
-import BookBuddy from "@/features/reading/components/BookBuddy";
+import LibraryBuddy from "@/features/reading/components/LibraryBuddy";
 
 type TabType = "library" | "reading" | "finished" | "community";
 type StudentBookStatus =
@@ -714,8 +714,9 @@ export function ReadingPage() {
       </AnimatePresence>
 
       {allBooks ? (
-        <BookBuddy
-          token={token}
+        <LibraryBuddy
+          userId={user ? (user._id as string) : null}
+          kidName={user?.displayName}
           readingHistory={(readingHistory || []).map((item) => ({ ...item, status: item.status || "unknown" }))}
           availableBooks={(allBooks || [])
             .filter((book) => !myBooksMap.has(book._id))

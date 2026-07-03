@@ -10,6 +10,8 @@ export type SafeUser = {
   displayName: string;
   avatarUrl?: string;
   batch?: string;
+  buddyCharacter?: "luffy" | "steve" | "percy";
+  buddyMode?: "quick" | "talkative";
   createdAt: number;
   lastLoginAt?: number;
 };
@@ -22,6 +24,8 @@ export function toSafeUser(user: Doc<"users">): SafeUser {
     displayName: user.displayName,
     avatarUrl: user.avatarUrl,
     batch: user.batch,
+    buddyCharacter: user.buddyCharacter,
+    buddyMode: user.buddyMode,
     createdAt: user.createdAt,
     lastLoginAt: user.lastLoginAt,
   };

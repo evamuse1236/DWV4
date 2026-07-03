@@ -94,9 +94,13 @@ vi.mock("@convex/_generated/api", () => ({
       getCompletionsInRange: "habits.getCompletionsInRange",
       toggleCompletion: "habits.toggleCompletion",
     },
-    ai: { chat: "ai.chat" },
-    chatLogs: { log: "chatLogs.log", clearAll: "chatLogs.clearAll", exportLogs: "chatLogs.exportLogs" },
+    users: { setBuddyPreferences: "users.setBuddyPreferences" },
   },
+}));
+
+// Mock the dialogue buddies - they have their own engine/localStorage behavior
+vi.mock("@/features/sprint/components/PlannerBuddy", () => ({
+  PlannerBuddy: () => <div data-testid="planner-buddy" />,
 }));
 
 // Mock react-router-dom navigation

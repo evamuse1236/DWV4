@@ -14,6 +14,8 @@ export interface User {
   displayName: string;
   avatarUrl?: string;
   batch?: string;
+  buddyCharacter?: "luffy" | "steve" | "percy";
+  buddyMode?: "quick" | "talkative";
   createdAt: number;
   lastLoginAt?: number;
 }

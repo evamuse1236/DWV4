@@ -1,0 +1,1157 @@
+/* =============================================================================
+   DIALOGUE STAGE — Hades-style character dialogue on editorial paper.
+
+   The character owns the moment: an oversized portrait breaks the stage's top
+   edge, the nameplate sits like a letterpress plate, one line of dialogue
+   types itself out, and choices stack like keel-rows below. Everything is
+   tinted by three CSS custom properties set inline per character:
+     --buddy-accent      (deep character color)
+     --buddy-accent-bg   (soft tint)
+     --buddy-ink         (dark ink on tint)
+   ============================================================================= */
+
+.container {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 1000;
+  font-family: var(--font-body);
+}
+
+/* ---------------------------------------------------------------------------
+   MINIMIZED BLOB — the cute morphing blob survives, retinted per character.
+   --------------------------------------------------------------------------- */
+
+.blobWrapper {
+  animation: buddyFloat 6s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+.blob {
+  width: 62px;
+  height: 62px;
+  background: var(--buddy-blob-gradient, radial-gradient(circle at 30% 30%, #ffd1dc, #a8c5b5, #fff5e6));
+  background-size: 200% 200%;
+  border-radius: 42% 58% 68% 32% / 42% 48% 60% 52%;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 12px 28px color-mix(in srgb, var(--buddy-accent, #a8c5b5) 35%, transparent);
+  animation: buddyBreath 8s ease-in-out infinite;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+  position: relative;
+  z-index: 1002;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  line-height: 1;
+  will-change: transform, opacity;
+}
+
+.blob:hover {
+  transform: scale(1.1) rotate(-4deg);
+}
+
+.blobHidden .blob {
+  transform: scale(0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.blobSymbol {
+  filter: drop-shadow(0 1px 2px rgba(45, 36, 32, 0.25));
+  animation: symbolBob 3.4s ease-in-out infinite;
+}
+
+/* ---------------------------------------------------------------------------
+   BACKDROP — the character owns the moment.
+   --------------------------------------------------------------------------- */
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(45, 36, 32, 0.16);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  z-index: 1000;
+  opacity: 0;
+  animation: backdropIn 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+/* ---------------------------------------------------------------------------
+   THE STAGE
+   --------------------------------------------------------------------------- */
+
+.stage {
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+  width: min(620px, calc(100vw - 32px));
+  max-height: min(600px, calc(100vh - 40px));
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(140% 90% at 85% 0%, color-mix(in srgb, var(--buddy-accent-bg, #eee5d8) 45%, transparent) 0%, transparent 55%),
+    linear-gradient(180deg, #fffdf9 0%, #faf5ec 100%);
+  border: 1px solid rgba(45, 36, 32, 0.09);
+  border-radius: 26px;
+  box-shadow:
+    0 34px 90px rgba(45, 36, 32, 0.22),
+    0 4px 18px rgba(45, 36, 32, 0.08),
+    inset 0 1.5px 0 rgba(255, 255, 255, 0.85);
+  transform-origin: bottom right;
+  animation: stageIn 0.55s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  z-index: 1001;
+  overflow: visible; /* the portrait breaks the frame */
+}
+
+/* Letterpress binding strip along the top edge */
+.stage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 26px;
+  right: 26px;
+  height: 5px;
+  border-radius: 0 0 6px 6px;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--buddy-accent, #a8c5b5) 80%, #fff) 0%,
+    var(--buddy-accent, #a8c5b5) 50%,
+    color-mix(in srgb, var(--buddy-accent, #a8c5b5) 70%, #2d2420) 100%
+  );
+  opacity: 0.85;
+}
+
+/* ---------------------------------------------------------------------------
+   PORTRAIT — breaks out of the top edge, Hades-style.
+   --------------------------------------------------------------------------- */
+
+.portraitSlot {
+  position: absolute;
+  top: -52px;
+  left: 26px;
+  width: 116px;
+  height: 116px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.portrait {
+  width: 100%;
+  height: 100%;
+  border-radius: 44% 56% 52% 48% / 48% 44% 56% 52%;
+  background: var(--buddy-accent-bg, #eee5d8);
+  border: 2.5px solid var(--buddy-accent, #a8c5b5);
+  box-shadow:
+    0 14px 30px color-mix(in srgb, var(--buddy-accent, #a8c5b5) 32%, transparent),
+    inset 0 2px 6px rgba(255, 255, 255, 0.65);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.portraitImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portraitSymbol {
+  font-size: 46px;
+  line-height: 1;
+  filter: drop-shadow(0 2px 3px rgba(45, 36, 32, 0.2));
+}
+
+/* Expression cues for the placeholder (and a gentle overlay motion for real art) */
+.exprNeutral { animation: exprBreath 4.5s ease-in-out infinite; }
+.exprExcited { animation: exprBounce 0.9s cubic-bezier(0.28, 0.84, 0.42, 1) infinite; }
+.exprThinking { animation: exprSway 2.6s ease-in-out infinite; }
+.exprProud { animation: exprPuff 2.4s ease-in-out infinite; }
+.exprLaughing { animation: exprWiggle 0.75s ease-in-out infinite; }
+
+/* Cross-fade when the expression swaps */
+.portraitInner {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  animation: exprSwap 0.28s ease-out;
+}
+
+/* Visual-novel one-word "voice" burst — pops beside the portrait per line,
+   holds a beat, then fades. Retriggered by remounting (key = line id). */
+.emoteBurst {
+  position: absolute;
+  top: 2px;
+  right: -14px;
+  transform-origin: bottom left;
+  background: linear-gradient(180deg, #fffdf9, #faf3e7);
+  border: 1.5px solid var(--buddy-accent, #a8c5b5);
+  border-radius: 12px 12px 12px 3px;
+  padding: 4px 10px;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  white-space: nowrap;
+  color: var(--buddy-ink, #2d2420);
+  box-shadow: 0 6px 16px color-mix(in srgb, var(--buddy-accent, #a8c5b5) 30%, transparent);
+  opacity: 0;
+  animation: emotePop 2s cubic-bezier(0.34, 1.5, 0.5, 1) forwards;
+  pointer-events: none;
+  z-index: 4;
+}
+
+@keyframes emotePop {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) rotate(-8deg) translateY(6px);
+  }
+  12% {
+    opacity: 1;
+    transform: scale(1.08) rotate(2deg) translateY(0);
+  }
+  18% {
+    transform: scale(1) rotate(0deg);
+  }
+  75% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.92) translateY(-8px);
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   HEADER ROW — nameplate to the right of the portrait's footprint.
+   --------------------------------------------------------------------------- */
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px 20px 10px 158px;
+  min-height: 76px;
+  flex-shrink: 0; /* never let the scroll slot compress the nameplate */
+}
+
+.nameplate {
+  background: none;
+  border: none;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.nameplate:disabled {
+  cursor: default;
+}
+
+.characterName {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.1;
+  color: var(--color-espresso, #2d2420);
+  letter-spacing: 0.01em;
+}
+
+.characterName::after {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 2px;
+  margin-top: 5px;
+  border-radius: 2px;
+  background: var(--buddy-accent, #a8c5b5);
+}
+
+.tagline {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-taupe, #786b62);
+  margin-top: 4px;
+}
+
+.nameplate:hover .characterName {
+  color: var(--buddy-ink, #2d2420);
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.modeChip {
+  border: 1px dashed color-mix(in srgb, var(--buddy-accent, #a8c5b5) 55%, transparent);
+  background: transparent;
+  color: var(--color-taupe, #786b62);
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 5px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.modeChip:hover {
+  background: var(--buddy-accent-bg, #eee5d8);
+  color: var(--buddy-ink, #2d2420);
+}
+
+.closeBtn {
+  border: none;
+  background: transparent;
+  color: var(--color-taupe, #786b62);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.closeBtn:hover {
+  background: rgba(45, 36, 32, 0.06);
+  color: var(--color-espresso, #2d2420);
+}
+
+/* ---------------------------------------------------------------------------
+   SPEECH AREA — one line at a time, typewriter, ghost of the previous line.
+   --------------------------------------------------------------------------- */
+
+.speech {
+  padding: 4px 26px 14px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  flex-shrink: 0; /* the slot scrolls; the spoken line never collapses */
+}
+
+.ghostLine {
+  font-family: "Lora", var(--font-serif), serif;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--color-taupe, #786b62);
+  opacity: 0.5;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.currentLine {
+  font-family: "Lora", var(--font-serif), serif;
+  font-size: 16.5px;
+  line-height: 1.65;
+  color: var(--color-espresso, #2d2420);
+  min-height: 56px;
+}
+
+.caret {
+  display: inline-block;
+  width: 2.5px;
+  height: 1em;
+  margin-left: 2px;
+  vertical-align: -0.12em;
+  background: var(--buddy-accent, #a8c5b5);
+  border-radius: 2px;
+  animation: caretBlink 0.85s steps(1) infinite;
+}
+
+.skipHint {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-taupe, #786b62);
+  opacity: 0.55;
+  margin-top: 6px;
+  user-select: none;
+}
+
+/* ---------------------------------------------------------------------------
+   CONTENT SLOT — choices, bubbles, cards, input. Fades in when typing ends.
+   --------------------------------------------------------------------------- */
+
+.slot {
+  flex: 1;
+  overflow-y: auto;
+  padding: 2px 26px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--buddy-accent, #a8c5b5) 45%, transparent) transparent;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.slotWaiting {
+  opacity: 0;
+  transform: translateY(6px);
+  pointer-events: none;
+}
+
+/* ---------------------------------------------------------------------------
+   CHOICE LIST — Hades keel-rows: accent bar slides in, row nudges right.
+   --------------------------------------------------------------------------- */
+
+.choiceList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.choiceRow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-espresso, #2d2420);
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(45, 36, 32, 0.1);
+  border-radius: 13px;
+  padding: 11px 16px 11px 20px;
+  cursor: pointer;
+  transition: transform 0.22s cubic-bezier(0.2, 0.8, 0.2, 1), background 0.22s ease,
+    border-color 0.22s ease, box-shadow 0.22s ease;
+  opacity: 0;
+  animation: rowIn 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  animation-delay: calc(var(--row-index, 0) * 55ms);
+}
+
+.choiceRow::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 9px;
+  bottom: 9px;
+  width: 3.5px;
+  border-radius: 3px;
+  background: var(--buddy-accent, #a8c5b5);
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: transform 0.22s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.choiceRow:hover,
+.choiceRow:focus-visible {
+  transform: translateX(5px);
+  background: #ffffff;
+  border-color: color-mix(in srgb, var(--buddy-accent, #a8c5b5) 55%, transparent);
+  box-shadow: 0 6px 18px color-mix(in srgb, var(--buddy-accent, #a8c5b5) 18%, transparent);
+  outline: none;
+}
+
+.choiceRow:hover::before,
+.choiceRow:focus-visible::before {
+  transform: scaleY(1);
+}
+
+.choiceRow:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.choiceMarker {
+  color: var(--buddy-accent, #a8c5b5);
+  font-size: 12px;
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: all 0.22s ease;
+}
+
+.choiceRow:hover .choiceMarker,
+.choiceRow:focus-visible .choiceMarker {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.choiceHint {
+  margin-left: auto;
+  font-size: 11px;
+  color: var(--color-taupe, #786b62);
+  font-weight: 400;
+}
+
+/* ---------------------------------------------------------------------------
+   SUGGESTION BUBBLES — the quick-tap pills. Standout feature: kids finish
+   whole flows without typing.
+   --------------------------------------------------------------------------- */
+
+.bubbleRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.bubble {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--buddy-ink, #2d2420);
+  background: color-mix(in srgb, var(--buddy-accent-bg, #eee5d8) 55%, #ffffff);
+  border: 1px dashed color-mix(in srgb, var(--buddy-accent, #a8c5b5) 50%, transparent);
+  border-radius: 999px;
+  padding: 7px 14px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+  opacity: 0;
+  animation: rowIn 0.35s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  animation-delay: calc(var(--row-index, 0) * 40ms);
+}
+
+.bubble:hover,
+.bubble:focus-visible {
+  background: var(--buddy-accent-bg, #eee5d8);
+  border-style: solid;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 5px 14px color-mix(in srgb, var(--buddy-accent, #a8c5b5) 22%, transparent);
+  outline: none;
+}
+
+.bubble:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.bubbleLabel {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-taupe, #786b62);
+  margin-bottom: -4px;
+}
+
+/* ---------------------------------------------------------------------------
+   FREE-TEXT INPUT — the rare typing moment, styled as a handwriting line.
+   --------------------------------------------------------------------------- */
+
+.inputRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 2px;
+}
+
+.input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-family: "Lora", var(--font-serif), serif;
+  font-size: 15px;
+  color: var(--color-espresso, #2d2420);
+  border-bottom: 2px dotted color-mix(in srgb, var(--buddy-accent, #a8c5b5) 65%, transparent);
+  padding: 7px 2px;
+  outline: none;
+  transition: border-color 0.25s ease;
+}
+
+.input:focus {
+  border-bottom-style: solid;
+  border-bottom-color: var(--buddy-accent, #a8c5b5);
+}
+
+.input::placeholder {
+  color: var(--color-taupe, #786b62);
+  opacity: 0.6;
+  font-style: italic;
+}
+
+.sendBtn {
+  border: none;
+  background: var(--buddy-accent, #a8c5b5);
+  color: #fffdf9;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+  box-shadow: 0 4px 12px color-mix(in srgb, var(--buddy-accent, #a8c5b5) 35%, transparent);
+}
+
+.sendBtn:hover {
+  transform: scale(1.08);
+}
+
+.sendBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ---------------------------------------------------------------------------
+   BUDDY PICKER — a mini-scene: three portraits, each pitching themselves.
+   --------------------------------------------------------------------------- */
+
+.pickerTitle {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 19px;
+  color: var(--color-espresso, #2d2420);
+  text-align: center;
+  margin: 4px 0 2px;
+}
+
+.pickerGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pickerCard {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1.5px solid rgba(45, 36, 32, 0.1);
+  border-radius: 18px;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+  opacity: 0;
+  animation: rowIn 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  animation-delay: calc(var(--row-index, 0) * 90ms);
+}
+
+.pickerCard:hover,
+.pickerCard:focus-visible {
+  transform: translateY(-3px);
+  border-color: var(--card-accent, #a8c5b5);
+  background: #ffffff;
+  box-shadow: 0 12px 28px color-mix(in srgb, var(--card-accent, #a8c5b5) 22%, transparent);
+  outline: none;
+}
+
+.pickerCardActive {
+  border-color: var(--card-accent, #a8c5b5);
+  background: color-mix(in srgb, var(--card-accent-bg, #eee5d8) 40%, #ffffff);
+}
+
+.pickerPortrait {
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  border-radius: 44% 56% 52% 48% / 48% 44% 56% 52%;
+  background: var(--card-accent-bg, #eee5d8);
+  border: 2px solid var(--card-accent, #a8c5b5);
+  display: grid;
+  place-items: center;
+  font-size: 26px;
+  overflow: hidden;
+}
+
+.pickerPortrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pickerName {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 18px;
+  color: var(--color-espresso, #2d2420);
+  line-height: 1.2;
+}
+
+.pickerPitch {
+  font-family: "Lora", var(--font-serif), serif;
+  font-size: 12.5px;
+  color: var(--color-taupe, #786b62);
+  line-height: 1.45;
+  margin-top: 2px;
+}
+
+.modeToggleRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding-top: 4px;
+}
+
+.modeToggleLabel {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-taupe, #786b62);
+}
+
+.modeToggleBtn {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 13px;
+  border-radius: 999px;
+  border: 1px solid rgba(45, 36, 32, 0.14);
+  background: transparent;
+  color: var(--color-taupe, #786b62);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.modeToggleBtnActive {
+  background: var(--color-espresso, #2d2420);
+  border-color: var(--color-espresso, #2d2420);
+  color: #fffdf9;
+}
+
+/* ---------------------------------------------------------------------------
+   BUDDY BARK — a quick speech bubble popping from the blob.
+   --------------------------------------------------------------------------- */
+
+.bark {
+  position: absolute;
+  bottom: 74px;
+  right: 0;
+  width: max-content;
+  max-width: min(300px, calc(100vw - 56px));
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: linear-gradient(180deg, #fffdf9, #faf5ec);
+  border: 1px solid rgba(45, 36, 32, 0.1);
+  border-left: 3.5px solid var(--buddy-accent, #a8c5b5);
+  border-radius: 16px 16px 4px 16px;
+  padding: 11px 14px;
+  box-shadow: 0 14px 36px rgba(45, 36, 32, 0.16);
+  transform-origin: bottom right;
+  animation: barkIn 0.4s cubic-bezier(0.34, 1.4, 0.5, 1) forwards;
+  z-index: 1003;
+  cursor: pointer;
+}
+
+.barkLeaving {
+  animation: barkOut 0.3s ease forwards;
+}
+
+.barkPortrait {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 44% 56% 52% 48% / 48% 44% 56% 52%;
+  background: var(--buddy-accent-bg, #eee5d8);
+  border: 1.5px solid var(--buddy-accent, #a8c5b5);
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.barkPortrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.barkText {
+  font-family: "Lora", var(--font-serif), serif;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--color-espresso, #2d2420);
+}
+
+/* ---------------------------------------------------------------------------
+   IN-STAGE CARDS — quest scrolls and book pitches the character "hands over".
+   --------------------------------------------------------------------------- */
+
+.card {
+  background: linear-gradient(180deg, #ffffff, #fdfaf4);
+  border: 1px solid rgba(45, 36, 32, 0.1);
+  border-radius: 18px;
+  padding: 16px 18px;
+  box-shadow: 0 10px 26px rgba(45, 36, 32, 0.09);
+  position: relative;
+  opacity: 0;
+  animation: cardIn 0.5s cubic-bezier(0.2, 0.9, 0.3, 1.05) forwards;
+  animation-delay: calc(var(--row-index, 0) * 90ms);
+}
+
+/* wax-seal accent dot */
+.cardSeal {
+  position: absolute;
+  top: -8px;
+  right: 18px;
+  width: 22px;
+  height: 22px;
+  border-radius: 46% 54% 50% 50% / 50% 46% 54% 50%;
+  background: radial-gradient(circle at 35% 30%, color-mix(in srgb, var(--buddy-accent, #a8c5b5) 70%, #fff), var(--buddy-accent, #a8c5b5));
+  box-shadow: 0 3px 8px color-mix(in srgb, var(--buddy-accent, #a8c5b5) 45%, transparent);
+}
+
+.cardKicker {
+  font-size: 9.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--buddy-accent, #a8c5b5);
+}
+
+.cardTitle {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 20px;
+  color: var(--color-espresso, #2d2420);
+  margin: 4px 0 2px;
+  line-height: 1.2;
+}
+
+.cardRows {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardRow {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 7px 0;
+  border-top: 1px dashed rgba(45, 36, 32, 0.12);
+  font-size: 13.5px;
+  color: var(--color-espresso, #2d2420);
+}
+
+.cardRowLabel {
+  flex-shrink: 0;
+  width: 66px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-taupe, #786b62);
+}
+
+.cardFootnote {
+  margin-top: 8px;
+  font-size: 11.5px;
+  color: var(--color-taupe, #786b62);
+  font-style: italic;
+}
+
+/* Book pitch card layout */
+.bookCard {
+  display: flex;
+  gap: 14px;
+}
+
+.bookCover {
+  flex-shrink: 0;
+  width: 64px;
+  height: 92px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: linear-gradient(160deg, var(--buddy-accent-bg, #eee5d8), color-mix(in srgb, var(--buddy-accent, #a8c5b5) 45%, #fff));
+  border: 1px solid rgba(45, 36, 32, 0.12);
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 22px;
+  color: var(--buddy-ink, #2d2420);
+  box-shadow: 2px 3px 8px rgba(45, 36, 32, 0.14);
+}
+
+.bookCover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bookMeta {
+  flex: 1;
+  min-width: 0;
+}
+
+.bookTitle {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.25;
+  color: var(--color-espresso, #2d2420);
+}
+
+.bookAuthor {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--color-taupe, #786b62);
+  margin-top: 2px;
+}
+
+.bookTeaser {
+  font-family: "Lora", var(--font-serif), serif;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--color-espresso, #2d2420);
+  margin-top: 6px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.bookWhy {
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: var(--buddy-ink, #2d2420);
+  background: color-mix(in srgb, var(--buddy-accent-bg, #eee5d8) 55%, transparent);
+  border-left: 2.5px solid var(--buddy-accent, #a8c5b5);
+  border-radius: 0 8px 8px 0;
+  padding: 5px 9px;
+  margin-top: 8px;
+}
+
+.cardActions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.primaryBtn {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #fffdf9;
+  background: var(--buddy-accent, #a8c5b5);
+  border: none;
+  border-radius: 999px;
+  padding: 8px 18px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 5px 14px color-mix(in srgb, var(--buddy-accent, #a8c5b5) 35%, transparent);
+}
+
+.primaryBtn:hover {
+  transform: translateY(-1.5px) scale(1.02);
+}
+
+.primaryBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.secondaryBtn {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-taupe, #786b62);
+  background: transparent;
+  border: 1px solid rgba(45, 36, 32, 0.14);
+  border-radius: 999px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.secondaryBtn:hover {
+  border-color: var(--buddy-accent, #a8c5b5);
+  color: var(--color-espresso, #2d2420);
+}
+
+@keyframes cardIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-14px) rotate(-0.6deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0);
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   MOBILE — full-width bottom sheet.
+   --------------------------------------------------------------------------- */
+
+@media (max-width: 640px) {
+  .container {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .stage {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    width: auto;
+    max-height: min(78vh, 620px);
+  }
+
+  .portraitSlot {
+    top: -40px;
+    left: 18px;
+    width: 92px;
+    height: 92px;
+  }
+
+  .header {
+    padding: 16px 16px 8px 122px;
+    min-height: 62px;
+  }
+
+  .characterName {
+    font-size: 21px;
+  }
+
+  .speech {
+    padding: 4px 18px 12px;
+  }
+
+  .slot {
+    padding: 2px 18px 18px;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   MOTION
+   --------------------------------------------------------------------------- */
+
+@keyframes buddyFloat {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-9px); }
+}
+
+@keyframes buddyBreath {
+  0%, 100% {
+    border-radius: 42% 58% 68% 32% / 42% 48% 60% 52%;
+    background-position: 0% 50%;
+  }
+  33% {
+    border-radius: 68% 32% 50% 50% / 32% 32% 68% 68%;
+    background-position: 100% 50%;
+  }
+  66% {
+    border-radius: 58% 42% 42% 58% / 58% 58% 42% 42%;
+    background-position: 50% 100%;
+  }
+}
+
+@keyframes symbolBob {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-2.5px) rotate(3deg); }
+}
+
+@keyframes backdropIn {
+  to { opacity: 1; }
+}
+
+@keyframes stageIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.55) translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes rowIn {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes caretBlink {
+  0%, 55% { opacity: 1; }
+  56%, 100% { opacity: 0; }
+}
+
+@keyframes exprSwap {
+  0% { opacity: 0; transform: scale(0.92); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes exprBreath {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
+
+@keyframes exprBounce {
+  0%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-5px); }
+  60% { transform: translateY(-2px); }
+}
+
+@keyframes exprSway {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3.5deg); }
+}
+
+@keyframes exprPuff {
+  0%, 100% { transform: scale(1); }
+  40% { transform: scale(1.06); }
+}
+
+@keyframes exprWiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-4deg) translateY(-1px); }
+  75% { transform: rotate(4deg) translateY(-1px); }
+}
+
+@keyframes barkIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6) translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes barkOut {
+  0% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0.8) translateY(6px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blobWrapper,
+  .blob,
+  .blobSymbol,
+  .exprNeutral,
+  .exprExcited,
+  .exprThinking,
+  .exprProud,
+  .exprLaughing {
+    animation: none;
+  }
+}

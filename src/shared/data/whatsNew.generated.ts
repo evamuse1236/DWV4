@@ -12,6 +12,18 @@ export const WHATS_NEW: WhatsNewEntry[] = [
   {
     date: "Jul 3",
     sortDate: "2026-07-03",
+    title: "Regenerate What's New feed with pivot release entry",
+    description: "Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
+  },
+  {
+    date: "Jul 3",
+    sortDate: "2026-07-03",
+    title: "Add books backfill migration for pre-overhaul rows",
+    description: "Prod books created before the library overhaul lacked the required",
+  },
+  {
+    date: "Jul 3",
+    sortDate: "2026-07-03",
     title: "Simplify into a daily planner: retire diagnostics, add assignment done→confirm flow",
     description: "Product pivot away from the diagnostic/viva mastery pipeline toward a",
   },
@@ -176,18 +188,6 @@ export const WHATS_NEW: WhatsNewEntry[] = [
     sortDate: "2026-02-13",
     title: "Refine Viva Queue empty states for clearer layout",
     description: "Code updates shipped in commit 497414a.",
-  },
-  {
-    date: "Feb 13",
-    sortDate: "2026-02-13",
-    title: "Improve Viva review clarity and attempts metrics",
-    description: "Code updates shipped in commit 1bd06ae.",
-  },
-  {
-    date: "Feb 13",
-    sortDate: "2026-02-13",
-    title: "Fix student comment widget overlap across pages",
-    description: "Code updates shipped in commit 9ed1870.",
   },
 ];
 

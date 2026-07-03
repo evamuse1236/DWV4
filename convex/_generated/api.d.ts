@@ -16,7 +16,6 @@ import type * as authz from "../authz.js";
 import type * as books from "../books.js";
 import type * as character from "../character.js";
 import type * as characterAwards from "../characterAwards.js";
-import type * as chatLogs from "../chatLogs.js";
 import type * as diagnostics from "../diagnostics.js";
 import type * as domains from "../domains.js";
 import type * as emotions from "../emotions.js";
@@ -54,7 +53,6 @@ declare const fullApi: ApiFromModules<{
   books: typeof books;
   character: typeof character;
   characterAwards: typeof characterAwards;
-  chatLogs: typeof chatLogs;
   diagnostics: typeof diagnostics;
   domains: typeof domains;
   emotions: typeof emotions;

@@ -191,6 +191,8 @@ export const getCurrentUser = query({
       role: user.role,
       avatarUrl: user.avatarUrl,
       batch: user.batch,
+      buddyCharacter: user.buddyCharacter,
+      buddyMode: user.buddyMode,
       createdAt: user.createdAt,
       lastLoginAt: user.lastLoginAt,
     };

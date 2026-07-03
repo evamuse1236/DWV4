@@ -10,6 +10,11 @@ export default defineSchema({
     displayName: v.string(),
     avatarUrl: v.optional(v.string()),
     batch: v.optional(v.string()), // Student class grouping: "2156", "2153", etc.
+    // Dialogue buddy (Hades-style character assistant) preferences
+    buddyCharacter: v.optional(
+      v.union(v.literal("luffy"), v.literal("steve"), v.literal("percy"))
+    ),
+    buddyMode: v.optional(v.union(v.literal("quick"), v.literal("talkative"))),
     createdAt: v.number(),
     lastLoginAt: v.optional(v.number()),
   })
@@ -608,13 +613,6 @@ export default defineSchema({
   })
     .index("by_project", ["projectId"])
     .index("by_project_user", ["projectId", "userId"]),
-
-  // ============ AI CHAT LOGS (Dev) ============
-  chatLogs: defineTable({
-    type: v.string(),
-    data: v.any(),
-    timestamp: v.number(),
-  }).index("by_timestamp", ["timestamp"]),
 
   // ============ VISION BOARD ============
   visionBoardAreas: defineTable({
