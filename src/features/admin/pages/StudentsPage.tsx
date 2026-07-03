@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "@convex/_generated/api";
-import { useSessionToken } from "@/features/auth/hooks/useAuth";
+import { useAuth } from "@/features/auth/hooks/useAuth";
 import {
   Card,
   CardContent,
@@ -19,7 +19,6 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
 } from "@/shared/ui/dialog";
 import {
   Table,
@@ -51,9 +50,41 @@ import {
   Loader2,
   Pencil,
 } from "lucide-react";
+import { AdminPageHeader } from "@/features/admin/components/AdminPageHeader";
 
 // Available batch options
 const BATCH_OPTIONS = ["2156", "2153"];
+
+const DAY_MS = 24 * 60 * 60 * 1000;
+
+/** Activity recency bucket for the presence dot. */
+function getActivityStatus(lastLoginAt?: number): {
+  tone: string;
+  label: string;
+} {
+  if (!lastLoginAt) {
+    return { tone: "bg-border", label: "Never" };
+  }
+  const now = new Date();
+  const startOfToday = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+  if (lastLoginAt >= startOfToday) {
+    return { tone: "bg-emerald-500", label: "Today" };
+  }
+  const daysAgo = Math.floor((startOfToday - lastLoginAt) / DAY_MS) + 1;
+  if (daysAgo === 1) {
+    return { tone: "bg-emerald-400/80", label: "Yesterday" };
+  }
+  if (daysAgo <= 7) {
+    return { tone: "bg-amber-400", label: `${daysAgo}d ago` };
+  }
+  return {
+    tone: "bg-border",
+    label: new Date(lastLoginAt).toLocaleDateString("en-US", {
+      month: "short",
+      day: "numeric",
+    }),
+  };
+}
 
 /**
  * Students Management Page
@@ -61,9 +92,10 @@ const BATCH_OPTIONS = ["2156", "2153"];
  */
 export function StudentsPage() {
   const navigate = useNavigate();
-  const token = useSessionToken();
-  const students = useQuery(api.users.getAll);
-  const batches = useQuery(api.users.getBatches);
+  const { token } = useAuth();
+  const adminArgs = token ? { adminToken: token } : "skip";
+  const students = useQuery(api.users.getAll, adminArgs);
+  const batches = useQuery(api.users.getBatches, adminArgs);
   const createUser = useMutation(api.auth.createUser);
   const updateBatch = useMutation(api.users.updateBatch);
   const removeUser = useMutation(api.users.remove);
@@ -138,11 +170,12 @@ export function StudentsPage() {
   };
 
   const handleUpdateBatch = async (batch: string | undefined) => {
-    if (!selectedStudent) return;
+    if (!selectedStudent || !token) return;
     setIsLoading(true);
 
     try {
       await updateBatch({
+        adminToken: token,
         userId: selectedStudent._id,
         batch: batch || undefined,
       });
@@ -162,11 +195,11 @@ export function StudentsPage() {
   };
 
   const handleConfirmDelete = async () => {
-    if (!deletingStudent) return;
+    if (!deletingStudent || !token) return;
     setIsLoading(true);
 
     try {
-      await removeUser({ userId: deletingStudent._id as any });
+      await removeUser({ adminToken: token, userId: deletingStudent._id as any });
       setIsDeleteDialogOpen(false);
       setDeletingStudent(null);
     } catch (err) {
@@ -188,20 +221,19 @@ export function StudentsPage() {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-        <div>
-          <h1 className="text-2xl font-serif font-semibold">Students</h1>
-          <p className="text-muted-foreground">
-            Manage student accounts and track their progress
-          </p>
-        </div>
-        <Dialog open={isAddDialogOpen} onOpenChange={setIsAddDialogOpen}>
-          <DialogTrigger asChild>
-            <Button>
-              <Plus className="mr-2 h-4 w-4" />
-              Add Student
-            </Button>
-          </DialogTrigger>
+      <AdminPageHeader
+        eyebrow="Coach Work"
+        title="Students"
+        description="Manage student accounts and track their progress."
+        actions={
+          <Button onClick={() => setIsAddDialogOpen(true)}>
+            <Plus className="mr-2 h-4 w-4" />
+            Add Student
+          </Button>
+        }
+      />
+
+      <Dialog open={isAddDialogOpen} onOpenChange={setIsAddDialogOpen}>
           <DialogContent>
             <DialogHeader>
               <DialogTitle>Add New Student</DialogTitle>
@@ -289,8 +321,7 @@ export function StudentsPage() {
               </Button>
             </DialogFooter>
           </DialogContent>
-        </Dialog>
-      </div>
+      </Dialog>
 
       {/* Edit Batch Dialog */}
       <Dialog open={isEditBatchDialogOpen} onOpenChange={setIsEditBatchDialogOpen}>
@@ -426,7 +457,7 @@ export function StudentsPage() {
                 {filteredStudents.map((student: any) => (
                   <TableRow
                     key={student._id}
-                    className="cursor-pointer"
+                    className="cursor-pointer transition-colors hover:bg-muted/40"
                     onClick={() => navigate(`/admin/students/${student._id}`)}
                   >
                     <TableCell>
@@ -457,9 +488,18 @@ export function StudentsPage() {
                       {formatDate(student.createdAt)}
                     </TableCell>
                     <TableCell className="text-muted-foreground">
-                      {student.lastLoginAt
-                        ? formatDate(student.lastLoginAt)
-                        : "Never"}
+                      {(() => {
+                        const activity = getActivityStatus(student.lastLoginAt);
+                        return (
+                          <span className="flex items-center gap-2">
+                            <span
+                              aria-hidden
+                              className={`inline-block h-2 w-2 shrink-0 rounded-full ${activity.tone}`}
+                            />
+                            {activity.label}
+                          </span>
+                        );
+                      })()}
                     </TableCell>
                     <TableCell>
                       <DropdownMenu>

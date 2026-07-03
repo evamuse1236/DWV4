@@ -24,22 +24,24 @@ export default {
           coding: '#A29BFE',
           writing: '#FFD93D',
         },
-        // App theme colors
+        // App theme colors — warm espresso ramp so paper components
+        // (buttons, checkboxes, progress, focus rings) sit inside the
+        // Structured Serenity palette instead of scaffold indigo.
         primary: {
-          50: '#EEF2FF',
-          100: '#E0E7FF',
-          200: '#C7D2FE',
-          300: '#A5B4FC',
-          400: '#818CF8',
-          500: '#6366F1',
-          600: '#4F46E5',
-          700: '#4338CA',
-          800: '#3730A3',
-          900: '#312E81',
+          50: '#F7F4F1',
+          100: '#EDE7E1',
+          200: '#DCD2C8',
+          300: '#C2B2A4',
+          400: '#9C8878',
+          500: '#6E5C50',
+          600: '#453931',
+          700: '#382E28',
+          800: '#2D2420',
+          900: '#221B17',
         },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['DM Sans', 'system-ui', 'sans-serif'],
       },
       animation: {
         'bounce-slow': 'bounce 2s infinite',

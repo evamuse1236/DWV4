@@ -1,17 +1,20 @@
 import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
+import { requireAdmin } from "./authz";
 
 export const getAll = query({
-  args: {},
-  handler: async (ctx) => {
+  args: { adminToken: v.string() },
+  handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const projects = await ctx.db.query("projects").collect();
     return projects.sort((a, b) => b.cycleNumber - a.cycleNumber);
   },
 });
 
 export const getActive = query({
-  args: {},
-  handler: async (ctx) => {
+  args: { adminToken: v.string() },
+  handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const project = await ctx.db
       .query("projects")
       .withIndex("by_active", (q) => q.eq("isActive", true))
@@ -21,15 +24,17 @@ export const getActive = query({
 });
 
 export const getById = query({
-  args: { projectId: v.id("projects") },
+  args: { adminToken: v.string(), projectId: v.id("projects") },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     return await ctx.db.get(args.projectId);
   },
 });
 
 export const getWithStats = query({
-  args: { projectId: v.id("projects") },
+  args: { adminToken: v.string(), projectId: v.id("projects") },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const project = await ctx.db.get(args.projectId);
     if (!project) return null;
 
@@ -58,6 +63,7 @@ export const getWithStats = query({
 
 export const create = mutation({
   args: {
+    adminToken: v.string(),
     name: v.string(),
     description: v.optional(v.string()),
     startDate: v.string(),
@@ -66,6 +72,7 @@ export const create = mutation({
     createdBy: v.id("users"),
   },
   handler: async (ctx, args) => {
+    const { user: admin } = await requireAdmin(ctx, args.adminToken);
     // Deactivate any current active project
     const activeProject = await ctx.db
       .query("projects")
@@ -83,7 +90,7 @@ export const create = mutation({
       endDate: args.endDate,
       cycleNumber: args.cycleNumber,
       isActive: true,
-      createdBy: args.createdBy,
+      createdBy: admin._id,
       createdAt: Date.now(),
     });
 
@@ -93,6 +100,7 @@ export const create = mutation({
 
 export const update = mutation({
   args: {
+    adminToken: v.string(),
     projectId: v.id("projects"),
     name: v.optional(v.string()),
     description: v.optional(v.string()),
@@ -101,7 +109,8 @@ export const update = mutation({
     cycleNumber: v.optional(v.number()),
   },
   handler: async (ctx, args) => {
-    const { projectId, ...updates } = args;
+    await requireAdmin(ctx, args.adminToken);
+    const { adminToken: _adminToken, projectId, ...updates } = args;
     const filteredUpdates = Object.fromEntries(
       Object.entries(updates).filter(([, v]) => v !== undefined)
     );
@@ -112,9 +121,11 @@ export const update = mutation({
 
 export const setActive = mutation({
   args: {
+    adminToken: v.string(),
     projectId: v.id("projects"),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     // Deactivate all projects
     const allProjects = await ctx.db.query("projects").collect();
     for (const project of allProjects) {
@@ -131,9 +142,11 @@ export const setActive = mutation({
 
 export const remove = mutation({
   args: {
+    adminToken: v.string(),
     projectId: v.id("projects"),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     // Delete all links for this project
     const links = await ctx.db
       .query("projectLinks")
@@ -159,8 +172,9 @@ export const remove = mutation({
 });
 
 export const getNextCycleNumber = query({
-  args: {},
-  handler: async (ctx) => {
+  args: { adminToken: v.string() },
+  handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const projects = await ctx.db.query("projects").collect();
     if (projects.length === 0) return 1;
     const maxCycle = Math.max(...projects.map((p) => p.cycleNumber));

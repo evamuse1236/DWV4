@@ -46,6 +46,7 @@ vi.mock("@/features/auth/hooks/useAuth", () => ({
       displayName: "Test User",
       role: "student",
     },
+    token: "test-token",
     isLoading: false,
     login: vi.fn(),
     logout: vi.fn(),
@@ -199,6 +200,7 @@ describe("DeepWorkPage", () => {
       // Mock useAuth to return no user
       (useAuth as any).mockReturnValue({
         user: null,
+        token: null,
         isLoading: true,
         login: vi.fn(),
         logout: vi.fn(),
@@ -208,8 +210,7 @@ describe("DeepWorkPage", () => {
 
       render(<DeepWorkPage />);
 
-      expect(screen.getByText(/loading/i)).toBeInTheDocument();
-      expect(screen.getByText(/please wait/i)).toBeInTheDocument();
+      expect(screen.getByText(/mapping your learning journey/i)).toBeInTheDocument();
     });
 
     it("shows loading state when treeData is undefined", () => {
@@ -221,6 +222,7 @@ describe("DeepWorkPage", () => {
           displayName: "Test User",
           role: "student",
         },
+        token: "test-token",
         isLoading: false,
         login: vi.fn(),
         logout: vi.fn(),
@@ -231,7 +233,7 @@ describe("DeepWorkPage", () => {
       render(<DeepWorkPage />);
 
       expect(
-        screen.getByText(/loading your learning journey/i)
+        screen.getByText(/mapping your learning journey/i)
       ).toBeInTheDocument();
     });
   });
@@ -245,6 +247,7 @@ describe("DeepWorkPage", () => {
           displayName: "Test User",
           role: "student",
         },
+        token: "test-token",
         isLoading: false,
         login: vi.fn(),
         logout: vi.fn(),
@@ -275,6 +278,7 @@ describe("DeepWorkPage", () => {
           displayName: "Test User",
           role: "student",
         },
+        token: "test-token",
         isLoading: false,
         login: vi.fn(),
         logout: vi.fn(),
@@ -325,6 +329,7 @@ describe("DeepWorkPage", () => {
           displayName: "Test User",
           role: "student",
         },
+        token: "test-token",
         isLoading: false,
         login: vi.fn(),
         logout: vi.fn(),
@@ -398,6 +403,7 @@ describe("DeepWorkPage", () => {
           displayName: "Test User",
           role: "student",
         },
+        token: "test-token",
         isLoading: false,
         login: vi.fn(),
         logout: vi.fn(),
@@ -455,6 +461,7 @@ describe("DeepWorkPage", () => {
           displayName: "Test User",
           role: "student",
         },
+        token: "test-token",
         isLoading: false,
         login: vi.fn(),
         logout: vi.fn(),

@@ -34,6 +34,7 @@ vi.mock("@/features/auth/hooks/useAuth", () => ({
       displayName: "Test User",
       role: "student",
     },
+    token: "test-token",
     isLoading: false,
     login: vi.fn(),
     logout: vi.fn(),

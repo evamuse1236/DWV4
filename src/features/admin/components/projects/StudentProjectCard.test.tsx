@@ -54,6 +54,7 @@ const defaultProps = {
     reflection: null,
   },
   projectId: "project_1" as Id<"projects">,
+  adminToken: "test-admin-token",
   isExpanded: true,
   onToggleExpand: vi.fn(),
 };
@@ -82,6 +83,7 @@ describe("StudentProjectCard link editing", () => {
 
     await waitFor(() => {
       expect(mockUpdateLink).toHaveBeenCalledWith({
+        adminToken: "test-admin-token",
         linkId: "link_1",
         title: "Updated deck",
         url: "https://example.com/new-deck",

@@ -57,7 +57,7 @@ describe("Sidebar", () => {
       const nav = screen.getByRole("navigation");
 
       // Student nav items should be visible in the navigation
-      for (const label of ["Home", "Sprint", "DeepWork", "Library"] as const) {
+      for (const label of ["Today", "Planner", "Assignments", "Library"] as const) {
         expect(within(nav).getByText(label)).toBeInTheDocument();
       }
       expect(within(nav).queryByText("Character")).not.toBeInTheDocument();
@@ -68,7 +68,7 @@ describe("Sidebar", () => {
       renderWithRouter(<Sidebar />, { route: "/dashboard" });
 
       // Admin-only items should NOT be visible
-      for (const label of ["Students", "Sprints", "Objectives", "Viva", "Diagnostics", "Books", "Norms"] as const) {
+      for (const label of ["Students", "Sprints", "Units", "Confirmations", "Books", "Norms", "Data"] as const) {
         expect(screen.queryByText(label)).not.toBeInTheDocument();
       }
     });
@@ -101,10 +101,10 @@ describe("Sidebar", () => {
       renderWithRouter(<Sidebar />, { route: "/admin" });
 
       // Admin nav items should be visible
-      for (const label of ["Dashboard", "Students", "Objectives", "Viva", "Diagnostics", "Sprints", "Books", "Norms", "Trust Jar"] as const) {
+      for (const label of ["Today", "Students", "Units", "Confirmations", "Sprints", "Data", "Books", "Norms", "Trust Jar"] as const) {
         expect(screen.getByText(label)).toBeInTheDocument();
       }
-      for (const label of ["Projects", "Character", "Comments"] as const) {
+      for (const label of ["Projects", "Character", "Comments", "Viva", "Diagnostics"] as const) {
         expect(screen.queryByText(label)).not.toBeInTheDocument();
       }
     });
@@ -132,7 +132,7 @@ describe("Sidebar", () => {
   });
 
   describe("Exact match highlighting (root paths)", () => {
-    it("/dashboard highlights only Dashboard for student, not other items", () => {
+    it("/dashboard highlights only Today for student, not other items", () => {
       mockUseAuth.mockReturnValue({
         user: { role: "student", displayName: "Test Student" },
         logout: vi.fn(),
@@ -141,12 +141,12 @@ describe("Sidebar", () => {
       renderWithRouter(<Sidebar />, { route: "/dashboard" });
 
       // Home (Dashboard) link should have active class
-      const homeLink = screen.getByRole("link", { name: /home/i });
+      const homeLink = screen.getByRole("link", { name: /today/i });
       expect(homeLink).toHaveClass("active");
 
       // Other links should NOT have active class
-      const sprintLink = screen.getByRole("link", { name: /sprint/i });
-      const deepWorkLink = screen.getByRole("link", { name: /deepwork/i });
+      const sprintLink = screen.getByRole("link", { name: /planner/i });
+      const deepWorkLink = screen.getByRole("link", { name: /assignments/i });
       const libraryLink = screen.getByRole("link", { name: /library/i });
       const trustJarLink = screen.getByRole("link", { name: /trust jar/i });
 
@@ -156,7 +156,7 @@ describe("Sidebar", () => {
       expect(trustJarLink).not.toHaveClass("active");
     });
 
-    it("/admin highlights only Dashboard for admin, not other items", () => {
+    it("/admin highlights only Today for admin, not other items", () => {
       mockUseAuth.mockReturnValue({
         user: { role: "admin", displayName: "Admin User" },
         logout: vi.fn(),
@@ -165,20 +165,20 @@ describe("Sidebar", () => {
       renderWithRouter(<Sidebar />, { route: "/admin" });
 
       // Dashboard link should have active class
-      const dashboardLink = screen.getByRole("link", { name: /dashboard/i });
+      const dashboardLink = screen.getByRole("link", { name: /^today$/i });
       expect(dashboardLink).toHaveClass("active");
 
       // Other links should NOT have active class
       const studentsLink = screen.getByRole("link", { name: /students/i });
       const sprintsLink = screen.getByRole("link", { name: /sprints/i });
-      const objectivesLink = screen.getByRole("link", { name: /objectives/i });
+      const objectivesLink = screen.getByRole("link", { name: /units/i });
 
       expect(studentsLink).not.toHaveClass("active");
       expect(sprintsLink).not.toHaveClass("active");
       expect(objectivesLink).not.toHaveClass("active");
     });
 
-    it("/dashboards does NOT highlight Home because path must start with /dashboard", () => {
+    it("/dashboards does NOT highlight Today because path must start with /dashboard", () => {
       mockUseAuth.mockReturnValue({
         user: { role: "student", displayName: "Test Student" },
         logout: vi.fn(),
@@ -187,12 +187,12 @@ describe("Sidebar", () => {
       // A different route that doesn't match /dashboard exactly
       renderWithRouter(<Sidebar />, { route: "/dashboards" });
 
-      const homeLink = screen.getByRole("link", { name: /home/i });
+      const homeLink = screen.getByRole("link", { name: /today/i });
       // Should NOT be active because /dashboard requires exact match
       expect(homeLink).not.toHaveClass("active");
     });
 
-    it("/admins does NOT highlight admin Dashboard because path must match /admin exactly", () => {
+    it("/admins does NOT highlight admin Today because path must match /admin exactly", () => {
       mockUseAuth.mockReturnValue({
         user: { role: "admin", displayName: "Admin User" },
         logout: vi.fn(),
@@ -201,7 +201,7 @@ describe("Sidebar", () => {
       // A different route that starts with /admin but has more characters
       renderWithRouter(<Sidebar />, { route: "/admins" });
 
-      const dashboardLink = screen.getByRole("link", { name: /dashboard/i });
+      const dashboardLink = screen.getByRole("link", { name: /^today$/i });
       // Should NOT be active because /admin requires exact match
       expect(dashboardLink).not.toHaveClass("active");
     });
@@ -245,7 +245,7 @@ describe("Sidebar", () => {
       expect(studentsLink).toHaveClass("active");
     });
 
-    it("/sprint highlights Sprint link for student", () => {
+    it("/sprint highlights Planner link for student", () => {
       mockUseAuth.mockReturnValue({
         user: { role: "student", displayName: "Test Student" },
         logout: vi.fn(),
@@ -253,11 +253,11 @@ describe("Sidebar", () => {
 
       renderWithRouter(<Sidebar />, { route: "/sprint" });
 
-      const sprintLink = screen.getByRole("link", { name: /sprint/i });
+      const sprintLink = screen.getByRole("link", { name: /planner/i });
       expect(sprintLink).toHaveClass("active");
     });
 
-    it("/sprint/goals highlights Sprint link (prefix match)", () => {
+    it("/sprint/goals highlights Planner link (prefix match)", () => {
       mockUseAuth.mockReturnValue({
         user: { role: "student", displayName: "Test Student" },
         logout: vi.fn(),
@@ -265,11 +265,11 @@ describe("Sidebar", () => {
 
       renderWithRouter(<Sidebar />, { route: "/sprint/goals" });
 
-      const sprintLink = screen.getByRole("link", { name: /sprint/i });
+      const sprintLink = screen.getByRole("link", { name: /planner/i });
       expect(sprintLink).toHaveClass("active");
     });
 
-    it("/deep-work highlights DeepWork link for student", () => {
+    it("/deep-work highlights Assignments link for student", () => {
       mockUseAuth.mockReturnValue({
         user: { role: "student", displayName: "Test Student" },
         logout: vi.fn(),
@@ -277,11 +277,11 @@ describe("Sidebar", () => {
 
       renderWithRouter(<Sidebar />, { route: "/deep-work" });
 
-      const deepWorkLink = screen.getByRole("link", { name: /deepwork/i });
+      const deepWorkLink = screen.getByRole("link", { name: /assignments/i });
       expect(deepWorkLink).toHaveClass("active");
     });
 
-    it("/deep-work/domain-123 highlights DeepWork link (prefix match)", () => {
+    it("/deep-work/domain-123 highlights Assignments link (prefix match)", () => {
       mockUseAuth.mockReturnValue({
         user: { role: "student", displayName: "Test Student" },
         logout: vi.fn(),
@@ -289,7 +289,7 @@ describe("Sidebar", () => {
 
       renderWithRouter(<Sidebar />, { route: "/deep-work/domain-123" });
 
-      const deepWorkLink = screen.getByRole("link", { name: /deepwork/i });
+      const deepWorkLink = screen.getByRole("link", { name: /assignments/i });
       expect(deepWorkLink).toHaveClass("active");
     });
 
@@ -305,7 +305,7 @@ describe("Sidebar", () => {
       expect(libraryLink).toHaveClass("active");
     });
 
-    it("/admin/objectives highlights Objectives link", () => {
+    it("/admin/objectives highlights Units link", () => {
       mockUseAuth.mockReturnValue({
         user: { role: "admin", displayName: "Admin User" },
         logout: vi.fn(),
@@ -313,19 +313,19 @@ describe("Sidebar", () => {
 
       renderWithRouter(<Sidebar />, { route: "/admin/objectives" });
 
-      const objectivesLink = screen.getByRole("link", { name: /objectives/i });
+      const objectivesLink = screen.getByRole("link", { name: /units/i });
       expect(objectivesLink).toHaveClass("active");
     });
 
-    it("/admin/viva highlights Viva link", () => {
+    it("/admin/confirmations highlights Confirmations link", () => {
       mockUseAuth.mockReturnValue({
         user: { role: "admin", displayName: "Admin User" },
         logout: vi.fn(),
       });
 
-      renderWithRouter(<Sidebar />, { route: "/admin/viva" });
+      renderWithRouter(<Sidebar />, { route: "/admin/confirmations" });
 
-      const vivaLink = screen.getByRole("link", { name: /^viva$/i });
+      const vivaLink = screen.getByRole("link", { name: /^confirmations$/i });
       expect(vivaLink).toHaveClass("active");
     });
   });
@@ -347,7 +347,7 @@ describe("Sidebar", () => {
 
       // Only Sprint should be active
       expect(activeLinks).toHaveLength(1);
-      expect(activeLinks[0]).toHaveTextContent(/sprint/i);
+      expect(activeLinks[0]).toHaveTextContent(/planner/i);
     });
 
     it("correct navigation item is active for admin routes", () => {
@@ -362,7 +362,7 @@ describe("Sidebar", () => {
       // Get nav links from within the navigation element only
       const nav = screen.getByRole("navigation");
       const objectivesLink = within(nav).getByRole("link", {
-        name: /objectives/i,
+        name: /units/i,
       });
 
       // The target link should be active
@@ -512,7 +512,7 @@ describe("Sidebar", () => {
       renderWithRouter(<Sidebar />, { route: "/dashboard" });
 
       // Student nav items should be shown (fallback to student)
-      expect(screen.getByText("Home")).toBeInTheDocument();
+      expect(screen.getByText("Today")).toBeInTheDocument();
     });
   });
 });

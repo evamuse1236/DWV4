@@ -55,11 +55,8 @@ vi.mock("@/features/deep-work/pages/DeepWorkPage", () => ({
 vi.mock("@/features/deep-work/pages/DomainDetailPage", () => ({
   DomainDetailPage: () => <div>Domain detail page</div>,
 }));
-vi.mock("@/features/diagnostics/pages/DiagnosticPage", () => ({
-  DiagnosticPage: () => <div>Diagnostic page</div>,
-}));
-vi.mock("@/features/mastery/pages/MasteryPage", () => ({
-  MasteryPage: () => <div>Mastery page</div>,
+vi.mock("@/features/assignments/pages/AssignmentPage", () => ({
+  AssignmentPage: () => <div>Assignment page</div>,
 }));
 vi.mock("@/features/reading/pages/ReadingPage", () => ({
   ReadingPage: () => <div>Reading page</div>,
@@ -80,13 +77,16 @@ vi.mock("@/features/settings/pages/SettingsPage", () => ({
   SettingsPage: () => <div>Student settings page</div>,
 }));
 
+vi.mock("@/features/admin/pages/AdminDashboard", () => ({
+  AdminDashboard: () => <div>Admin dashboard</div>,
+}));
+
 vi.mock("@/features/admin/pages", () => ({
   AdminDashboard: () => <div>Admin dashboard</div>,
   StudentsPage: () => <div>Students page</div>,
   SprintsPage: () => <div>Sprints page</div>,
   ObjectivesPage: () => <div>Objectives page</div>,
-  DiagnosticsPage: () => <div>Diagnostics page</div>,
-  VivaQueuePage: () => <div>Viva page</div>,
+  ConfirmationsPage: () => <div>Confirmations page</div>,
   ReviewQueuePage: () => <div>Reviews page</div>,
   BooksPage: () => <div>Books page</div>,
   NormsPage: () => <div>Norms page</div>,
@@ -98,6 +98,15 @@ vi.mock("@/features/admin/pages/StudentDetailPage", () => ({
 }));
 vi.mock("@/features/admin/pages/TrustJarPage", () => ({
   AdminTrustJarPage: () => <div>Admin trust jar page</div>,
+}));
+vi.mock("@/features/admin/pages/ConfirmationsPage", () => ({
+  ConfirmationsPage: () => <div>Confirmations page</div>,
+}));
+vi.mock("@/features/admin/pages/ProjectsPage", () => ({
+  ProjectsPage: () => <div>Projects page</div>,
+}));
+vi.mock("@/features/admin/pages/ProjectDetailPage", () => ({
+  ProjectDetailPage: () => <div>Project detail page</div>,
 }));
 
 vi.mock("@/app/config/featureFlags", () => ({
@@ -112,15 +121,31 @@ describe("App admin route redirects", () => {
   });
 
   it.each([
-    "/admin/projects",
     "/admin/comments",
     "/admin/character",
     "/admin/reviews",
     "/admin/presentations",
-  ])("redirects %s to the admin dashboard", (path) => {
+  ])("redirects %s to the admin dashboard", async (path) => {
     window.history.pushState({}, "", path);
     render(<App />);
 
-    expect(screen.getByText("Admin dashboard")).toBeInTheDocument();
+    expect(await screen.findByText("Admin dashboard")).toBeInTheDocument();
+  });
+
+  it.each(["/admin/viva", "/admin/diagnostics"])(
+    "redirects retired queue route %s to confirmations",
+    async (path) => {
+      window.history.pushState({}, "", path);
+      render(<App />);
+
+      expect(await screen.findByText("Confirmations page")).toBeInTheDocument();
+    }
+  );
+
+  it("routes /admin/projects to the data collection workspace", async () => {
+    window.history.pushState({}, "", "/admin/projects");
+    render(<App />);
+
+    expect(await screen.findByText("Projects page")).toBeInTheDocument();
   });
 });

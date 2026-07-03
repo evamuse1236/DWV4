@@ -105,7 +105,7 @@ function SendIcon({ className = "w-5 h-5" }: { className?: string }) {
  * Goals at top, 7-day week view in middle, habit tracker at bottom
  */
 export function SprintPage() {
-  const { user } = useAuth();
+  const { user, token } = useAuth();
   const [showTaskAssigner, setShowTaskAssigner] = useState(false);
   const [newGoalId, setNewGoalId] = useState<string | null>(null);
   const [newGoalTitle, setNewGoalTitle] = useState("");
@@ -186,27 +186,27 @@ export function SprintPage() {
   // Get user's goals and habits for the sprint
   const goals = useQuery(
     api.goals.getByUserAndSprint,
-    displayedSprint && user
-      ? { userId: user._id as any, sprintId: displayedSprint._id }
+    displayedSprint && user && token
+      ? { token, userId: user._id as any, sprintId: displayedSprint._id }
       : "skip"
   );
 
   // Query for previous sprint goals (for AI import feature)
   const previousSprintGoals = useQuery(
     api.goals.getPreviousSprintGoals,
-    activeSprint && user
-      ? { userId: user._id as any, currentSprintId: activeSprint._id }
+    activeSprint && user && token
+      ? { token, userId: user._id as any, currentSprintId: activeSprint._id }
       : "skip"
   );
 
   // Query for standalone tasks (tasks without a goal)
   const standaloneTasksWeek1 = useQuery(
     api.goals.getStandaloneActionItems,
-    user ? { userId: user._id as any, weekNumber: 1 } : "skip"
+    user && token ? { token, userId: user._id as any, weekNumber: 1 } : "skip"
   );
   const standaloneTasksWeek2 = useQuery(
     api.goals.getStandaloneActionItems,
-    user ? { userId: user._id as any, weekNumber: 2 } : "skip"
+    user && token ? { token, userId: user._id as any, weekNumber: 2 } : "skip"
   );
 
   // Mutations
@@ -251,10 +251,11 @@ export function SprintPage() {
     goal: GoalSummary,
     tasks: { title: string; weekNumber: number; dayOfWeek: number }[]
   ) => {
-    if (!user || !activeSprint) return;
+    if (!user || !token || !activeSprint) return;
 
     const smartGoal = buildSmartGoalFromSummary(goal);
     const result = await createGoal({
+      token,
       userId: user._id as any,
       sprintId: activeSprint._id,
       ...smartGoal,
@@ -263,6 +264,7 @@ export function SprintPage() {
     if (result.goalId) {
       for (const task of tasks) {
         await addActionItem({
+          token,
           goalId: result.goalId as any,
           userId: user._id as any,
           title: task.title,
@@ -277,8 +279,9 @@ export function SprintPage() {
 
   // Handle AI duplicate goal action
   const handleAIDuplicateGoal = async (goalId: string) => {
-    if (!activeSprint) return;
+    if (!activeSprint || !token) return;
     await duplicateGoal({
+      token,
       goalId: goalId as any,
       targetSprintId: activeSprint._id,
       includeActionItems: true,
@@ -287,8 +290,9 @@ export function SprintPage() {
 
   // Handle AI import goal action
   const handleAIImportGoal = async (goalId: string) => {
-    if (!activeSprint) return;
+    if (!activeSprint || !token) return;
     await importGoal({
+      token,
       goalId: goalId as any,
       targetSprintId: activeSprint._id,
       includeActionItems: true,
@@ -297,15 +301,18 @@ export function SprintPage() {
 
   // Handle AI edit goal action
   const handleAIEditGoal = async (goalId: string, updates: Partial<{ title: string; specific: string; measurable: string; achievable: string; relevant: string; timeBound: string }>) => {
+    if (!token) return;
     await updateGoal({
+      token,
       goalId: goalId as any,
       ...updates,
     });
   };
 
   const handleUpdateGoal = async (goalData: any) => {
-    if (!editingGoal) return;
+    if (!editingGoal || !token) return;
     await updateGoal({
+      token,
       goalId: editingGoal._id,
       ...goalData,
     });
@@ -313,11 +320,12 @@ export function SprintPage() {
   };
 
   const handleToggleAction = async (itemId: string, currentCompleted: boolean) => {
+    if (!token) return;
     // Optimistically toggle immediately for instant feedback
     setOptimisticCompletions((prev) => ({ ...prev, [itemId]: !currentCompleted }));
 
     try {
-      await toggleActionItem({ itemId: itemId as any });
+      await toggleActionItem({ token, itemId: itemId as any });
     } finally {
       // Clear optimistic state after server responds (real data takes over)
       setOptimisticCompletions((prev) => {
@@ -328,8 +336,9 @@ export function SprintPage() {
   };
 
   const handleUpdateHabit = async (data: any) => {
-    if (!editingHabit) return;
+    if (!editingHabit || !token) return;
     await updateHabit({
+      token,
       habitId: editingHabit._id as any,
       ...data,
     });
@@ -342,7 +351,9 @@ export function SprintPage() {
       setEditingTaskTitle(null);
       return;
     }
+    if (!token) return;
     await updateActionItem({
+      token,
       itemId: taskId as any,
       title: taskTitleValue.trim(),
     });
@@ -356,7 +367,9 @@ export function SprintPage() {
       setEditingGoalTitle(null);
       return;
     }
+    if (!token) return;
     await updateGoal({
+      token,
       goalId: goalId as any,
       title: goalTitleValue.trim(),
     });
@@ -366,8 +379,9 @@ export function SprintPage() {
 
   // Quick add task with goal color selection (or standalone if goalId is null)
   const handleQuickAddTask = async (dayOfWeek: number, goalId: string | null) => {
-    if (!user || !activeSprint || isHistoryView) return;
+    if (!user || !token || !activeSprint || isHistoryView) return;
     await addActionItem({
+      token,
       goalId: goalId ? (goalId as any) : undefined,
       userId: user._id as any,
       title: goalId ? "New task" : "Quick task",
@@ -383,6 +397,7 @@ export function SprintPage() {
       // Disable global shortcuts while any inline editor/dropdown is active
       if (openTimeSelectTaskId || editingTaskTitle || editingGoalTitle) return;
       if (isHistoryView) return;
+      if (!token) return;
 
       // Ignore if typing in an input field
       const target = e.target as HTMLElement;
@@ -416,7 +431,7 @@ export function SprintPage() {
         // Moving left from Monday (JS day 1) goes to Sunday of previous week
         if (task.dayOfWeek === 1 && activeWeek > 1) {
           // Go to Sunday (day 0) of previous week
-          updateActionItem({ itemId: task._id as any, dayOfWeek: 0, weekNumber: activeWeek - 1 });
+          updateActionItem({ token, itemId: task._id as any, dayOfWeek: 0, weekNumber: activeWeek - 1 });
           setActiveWeek(activeWeek - 1);
         } else {
           // Normal left movement: Mon→Sun wrap, otherwise decrement
@@ -426,14 +441,14 @@ export function SprintPage() {
           if (task.dayOfWeek === 1) newDay = 0; // Mon→Sun (can't go prev week)
           else if (task.dayOfWeek === 0) newDay = 6; // Sun→Sat
           else newDay = task.dayOfWeek - 1; // Normal decrement
-          updateActionItem({ itemId: task._id as any, dayOfWeek: newDay });
+          updateActionItem({ token, itemId: task._id as any, dayOfWeek: newDay });
         }
       } else if (e.key === "ArrowRight") {
         e.preventDefault();
         // Moving right from Sunday (JS day 0) goes to Monday of next week
         if (task.dayOfWeek === 0 && activeWeek < 2) {
           // Go to Monday (day 1) of next week
-          updateActionItem({ itemId: task._id as any, dayOfWeek: 1, weekNumber: activeWeek + 1 });
+          updateActionItem({ token, itemId: task._id as any, dayOfWeek: 1, weekNumber: activeWeek + 1 });
           setActiveWeek(activeWeek + 1);
         } else {
           // Normal right movement: Sun→Mon wrap, otherwise increment
@@ -441,17 +456,17 @@ export function SprintPage() {
           if (task.dayOfWeek === 0) newDay = 1; // Sun→Mon (can't go next week)
           else if (task.dayOfWeek === 6) newDay = 0; // Sat→Sun
           else newDay = task.dayOfWeek + 1; // Normal increment
-          updateActionItem({ itemId: task._id as any, dayOfWeek: newDay });
+          updateActionItem({ token, itemId: task._id as any, dayOfWeek: newDay });
         }
       } else if (e.key === "Escape") {
         setSelectedTaskId(null);
       } else if (e.key === " " || e.key === "Enter") {
         e.preventDefault();
-        toggleActionItem({ itemId: task._id as any });
+        toggleActionItem({ token, itemId: task._id as any });
       } else if (e.key === "Delete" || e.key === "Backspace") {
         e.preventDefault();
         if (confirm("Delete this task?")) {
-          removeActionItem({ itemId: task._id as any });
+          removeActionItem({ token, itemId: task._id as any });
           setSelectedTaskId(null);
         }
       }
@@ -472,6 +487,7 @@ export function SprintPage() {
     editingGoalTitle,
     standaloneTasksWeek1,
     standaloneTasksWeek2,
+    token,
   ]);
 
   // No active sprint
@@ -594,10 +610,11 @@ export function SprintPage() {
   };
 
   const handleCopyGoalToCurrentSprint = async (goalId: string) => {
-    if (!activeSprint || !isHistoryView) return;
+    if (!activeSprint || !token || !isHistoryView) return;
     setCopyingGoalId(goalId);
     try {
       await importGoal({
+        token,
         goalId: goalId as any,
         targetSprintId: activeSprint._id,
         includeActionItems: true,
@@ -792,8 +809,8 @@ export function SprintPage() {
                   <button
                     onClick={(e) => {
                       e.stopPropagation();
-                      if (confirm(`Delete "${goal.title}" and all its tasks?`)) {
-                        removeGoal({ goalId: goal._id as any });
+                      if (token && confirm(`Delete "${goal.title}" and all its tasks?`)) {
+                        removeGoal({ token, goalId: goal._id as any });
                       }
                     }}
                     style={{
@@ -950,6 +967,7 @@ export function SprintPage() {
                             open={isTimeSelectOpen}
                             onOpenChange={(open) => setOpenTimeSelectTaskId(open ? task._id : null)}
                             onValueChange={async (selectedValue) => {
+                              if (!token) return;
                               const newTime = selectedValue === NO_TIME_VALUE ? "" : selectedValue;
                               if (newTime === displayTimeValue) return;
 
@@ -960,6 +978,7 @@ export function SprintPage() {
                               // Persist to server
                               try {
                                 await updateActionItem({
+                                  token,
                                   itemId: task._id as any,
                                   scheduledTime: newTime,
                                 });
@@ -1250,6 +1269,7 @@ export function SprintPage() {
       {/* Habit Tracker */}
       {user && !isHistoryView && activeSprint && (
         <HabitTracker
+          token={token}
           userId={user._id as any}
           sprintId={activeSprint._id}
           weekDates={weekDates}
@@ -1259,6 +1279,8 @@ export function SprintPage() {
       {/* The Muse: AI Chatbox */}
       {!isHistoryView && (
         <TheMuse
+          token={token}
+          isAdmin={user?.role === "admin"}
           expanded={museExpanded}
           onToggle={() => setMuseExpanded(!museExpanded)}
           onClose={() => setMuseExpanded(false)}
@@ -1314,8 +1336,9 @@ export function SprintPage() {
 
       {/* Task Assigner Modal */}
       <AnimatePresence>
-        {showTaskAssigner && newGoalId && user && (
+        {showTaskAssigner && newGoalId && user && token && (
           <TaskAssigner
+            token={token}
             goalId={newGoalId}
             userId={user._id as string}
             goalTitle={newGoalTitle}
@@ -1470,6 +1493,8 @@ const AI_MODELS = [
 type AIPersona = "muse" | "captain";
 
 function TheMuse({
+  token,
+  isAdmin,
   expanded,
   onToggle,
   onClose,
@@ -1481,6 +1506,8 @@ function TheMuse({
   onImportGoal,
   onEditGoal,
 }: {
+  token: string | null;
+  isAdmin: boolean;
   expanded: boolean;
   onToggle: () => void;
   onClose: () => void;
@@ -1516,18 +1543,21 @@ function TheMuse({
       console.log(`[AI Chat] ${type}:`, data);
     }
     if (!shouldPersistChatLog(type)) return;
-    logMutation({ type, data }).catch((e) => console.error("[AI Chat] Log failed:", e));
+    if (!token) return;
+    logMutation({ token, type, data }).catch((e) => console.error("[AI Chat] Log failed:", e));
   };
 
   const clearChatLogs = () => {
-    clearLogsMutation({}).then(() => {
+    if (!isAdmin || !token) return;
+    clearLogsMutation({ adminToken: token }).then(() => {
       console.log("[AI Chat] Logs cleared");
     });
   };
 
   const exportChatLogs = async () => {
+    if (!isAdmin || !token) return;
     try {
-      const logsJson = await exportLogsAction({ limit: 500 });
+      const logsJson = await exportLogsAction({ adminToken: token, limit: 500 });
       const blob = new Blob([logsJson], { type: "application/json" });
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
@@ -1588,7 +1618,7 @@ function TheMuse({
 
   const handleSend = async (overrideText?: string) => {
     const trimmed = (overrideText ?? inputValue).trim();
-    if (!trimmed || isLoading) return;
+    if (!token || !trimmed || isLoading) return;
 
     const userMessage: MuseMessage = {
       id: `user-${Date.now()}`,
@@ -1620,6 +1650,7 @@ function TheMuse({
       });
 
       const response = await chatAction({
+        token,
         messages: apiMessages,
         sprintDaysRemaining,
         model: selectedModel,
@@ -1880,21 +1911,24 @@ function TheMuse({
             </div>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-            {/* Debug: Export/Clear logs */}
-            <button
-              onClick={exportChatLogs}
-              style={{ background: "none", border: "none", cursor: "pointer", opacity: 0.4, padding: "4px", fontSize: "10px" }}
-              title="Export chat logs as JSON"
-            >
-              <i className="ph ph-download-simple" style={{ fontSize: "14px" }} />
-            </button>
-            <button
-              onClick={clearChatLogs}
-              style={{ background: "none", border: "none", cursor: "pointer", opacity: 0.4, padding: "4px", fontSize: "10px" }}
-              title="Clear chat logs"
-            >
-              <i className="ph ph-trash" style={{ fontSize: "14px" }} />
-            </button>
+            {isAdmin && (
+              <>
+                <button
+                  onClick={exportChatLogs}
+                  style={{ background: "none", border: "none", cursor: "pointer", opacity: 0.4, padding: "4px", fontSize: "10px" }}
+                  title="Export chat logs as JSON"
+                >
+                  <i className="ph ph-download-simple" style={{ fontSize: "14px" }} />
+                </button>
+                <button
+                  onClick={clearChatLogs}
+                  style={{ background: "none", border: "none", cursor: "pointer", opacity: 0.4, padding: "4px", fontSize: "10px" }}
+                  title="Clear chat logs"
+                >
+                  <i className="ph ph-trash" style={{ fontSize: "14px" }} />
+                </button>
+              </>
+            )}
             <button
               onClick={onClose}
               style={{ background: "none", border: "none", cursor: "pointer", opacity: 0.5, padding: "4px" }}

@@ -10,19 +10,16 @@ vi.mock("@convex/_generated/api", () => ({
   api: {
     users: {
       getAll: "users.getAll",
-      getTodayCheckInCount: "users.getTodayCheckInCount",
     },
     sprints: {
       getActive: "sprints.getActive",
+      getStudentInsights: "sprints.getStudentInsights",
     },
     objectives: {
       getAll: "objectives.getAll",
     },
-    mastery: {
-      getAdminVivaQueue: "mastery.getAdminVivaQueue",
-    },
-    diagnostics: {
-      getPendingUnlockRequests: "diagnostics.getPendingUnlockRequests",
+    assignments: {
+      getConfirmationQueue: "assignments.getConfirmationQueue",
     },
     emotions: {
       getTodayCheckIns: "emotions.getTodayCheckIns",
@@ -43,6 +40,7 @@ vi.mock("@/features/auth/hooks/useAuth", () => ({
       displayName: "Coach Smith",
       role: "admin",
     },
+    token: "test-admin-token",
   })),
 }));
 
@@ -50,11 +48,15 @@ vi.mock("@/shared/hooks/useDelayedLoading", () => ({
   useDelayedLoading: vi.fn(() => false),
 }));
 
+vi.mock("sonner", () => ({
+  toast: { success: vi.fn(), error: vi.fn() },
+}));
+
 import { useQuery } from "convex/react";
 import { AdminDashboard } from "../AdminDashboard";
 
 const students = [
-  { _id: "student_1", username: "alice", displayName: "Alice Johnson" },
+  { _id: "student_1", username: "alice", displayName: "Alice Johnson", lastLoginAt: Date.now() },
   { _id: "student_2", username: "bob", displayName: "Bob Smith" },
 ];
 
@@ -65,21 +67,15 @@ const activeSprint = {
   endDate: new Date(Date.now() + 8 * 24 * 60 * 60 * 1000).toISOString(),
 };
 
-const vivaRequests = [
+const confirmations = [
   {
-    _id: "viva_1",
+    _id: "conf_1",
     userId: "student_1",
     user: { displayName: "Alice Johnson" },
     objective: { title: "Master fractions" },
     domain: { name: "Math" },
-  },
-];
-
-const unlockRequests = [
-  {
-    _id: "unlock_1",
-    user: { displayName: "Alice Johnson" },
-    majorObjective: { title: "Fractions mastery" },
+    work: { totalSubObjectives: 2, completedSubObjectives: 2, allWorkComplete: true },
+    submittedAt: Date.now(),
   },
 ];
 
@@ -89,19 +85,49 @@ const checkIns = [
     userId: "student_1",
     timestamp: Date.now(),
     user: { displayName: "Alice Johnson" },
-    category: { name: "Happy", emoji: "😊" },
+    category: { name: "Happy", emoji: "😊", color: "#4ade80" },
     subcategory: { name: "Optimistic" },
-    journalEntry: "Ready to learn",
   },
 ];
+
+const insights = {
+  sprint: {
+    _id: "sprint_1",
+    name: "Spring Sprint",
+    startDate: "2026-06-29",
+    endDate: "2026-07-12",
+    totalDays: 14,
+    elapsedDays: 4,
+  },
+  students: [
+    {
+      student: { _id: "student_1", displayName: "Alice Johnson", username: "alice" },
+      metrics: {
+        goalsTotal: 2,
+        goalsCompleted: 1,
+        goalCompletionPercent: 50,
+        tasksTotal: 10,
+        tasksCompleted: 8,
+        taskCompletionPercent: 80,
+        habitsTotal: 1,
+        habitCompletedTotal: 3,
+        habitExpectedTotal: 5,
+        habitConsistencyPercent: 60,
+        engagementScore: 63,
+      },
+      currentFocus: { goals: [], tasks: [] },
+      goals: [],
+      habits: [],
+    },
+  ],
+};
 
 function setupQueries(overrides: Partial<Record<string, any>> = {}) {
   const data: Record<string, any> = {
     "users.getAll": students,
     "sprints.getActive": activeSprint,
-    "mastery.getAdminVivaQueue": vivaRequests,
-    "diagnostics.getPendingUnlockRequests": unlockRequests,
-    "users.getTodayCheckInCount": 1,
+    "sprints.getStudentInsights": insights,
+    "assignments.getConfirmationQueue": confirmations,
     "emotions.getTodayCheckIns": checkIns,
     "objectives.getAll": [{ _id: "objective_1", title: "Fractions" }],
     ...overrides,
@@ -120,54 +146,66 @@ describe("AdminDashboard", () => {
     setupQueries();
   });
 
-  it("renders the calmer queue-first dashboard and removes the old student overview", () => {
+  it("renders the morning console sections", () => {
     renderDashboard();
 
-    expect(screen.getByText("Welcome back, Coach")).toBeInTheDocument();
-    expect(screen.getByText("Pending vivas")).toBeInTheDocument();
-    expect(screen.getAllByText("Diagnostics").length).toBeGreaterThan(0);
-    expect(screen.getByText("Check-ins today")).toBeInTheDocument();
-
-    expect(screen.getByText("Needs attention now")).toBeInTheDocument();
-    expect(screen.getByText("Open student")).toBeInTheDocument();
-    expect(screen.getByText("Today's check-ins")).toBeInTheDocument();
-    expect(screen.queryByText("Students Overview")).not.toBeInTheDocument();
+    expect(screen.getByText("Good day, Coach")).toBeInTheDocument();
+    expect(screen.getAllByText("To confirm").length).toBeGreaterThan(0);
+    expect(screen.getByText("Checked in")).toBeInTheDocument();
+    expect(screen.getByText("Quiet this week")).toBeInTheDocument();
+    expect(screen.getByText("This morning's moods")).toBeInTheDocument();
+    expect(screen.getByText("Goals & habits pulse")).toBeInTheDocument();
+    expect(screen.getByText("Sprint pulse")).toBeInTheDocument();
   });
 
-  it("opens core workspaces from the dashboard", async () => {
+  it("shows mood tiles for checked-in students and lists the missing", () => {
+    renderDashboard();
+
+    const wall = screen.getByText("This morning's moods").closest(".rounded-xl");
+    expect(wall).toBeTruthy();
+    expect(within(wall as HTMLElement).getByText("Alice")).toBeInTheDocument();
+    expect(within(wall as HTMLElement).getByText("Bob")).toBeInTheDocument();
+    expect(within(wall as HTMLElement).getByText(/Not checked in:/)).toBeInTheDocument();
+    expect(within(wall as HTMLElement).getByText(/Bob Smith/)).toBeInTheDocument();
+    expect(
+      within(wall as HTMLElement).getByRole("button", { name: /copy names/i })
+    ).toBeInTheDocument();
+  });
+
+  it("renders pulse rows with task and habit percentages", () => {
+    renderDashboard();
+
+    const pulse = screen.getByText("Goals & habits pulse").closest(".rounded-xl");
+    expect(pulse).toBeTruthy();
+    expect(within(pulse as HTMLElement).getByText("Alice Johnson")).toBeInTheDocument();
+    expect(within(pulse as HTMLElement).getByText("80%")).toBeInTheDocument();
+    expect(within(pulse as HTMLElement).getByText("60%")).toBeInTheDocument();
+    expect(within(pulse as HTMLElement).getByText("1/2")).toBeInTheDocument();
+  });
+
+  it("shows the confirmations strip and opens the workspace", async () => {
     const user = userEvent.setup();
     renderDashboard();
 
-    await user.click(screen.getByRole("button", { name: /open viva/i }));
-    await user.click(screen.getByRole("button", { name: /open diagnostics/i }));
+    const strip = screen
+      .getAllByText("To confirm")
+      .map((el) => el.closest(".rounded-xl"))
+      .find((el) => el && within(el as HTMLElement).queryByText("Master fractions"));
+    expect(strip).toBeTruthy();
 
-    expect(mockNavigate).toHaveBeenCalledWith("/admin/viva");
-    expect(mockNavigate).toHaveBeenCalledWith("/admin/diagnostics");
+    await user.click(within(strip as HTMLElement).getByText("Master fractions"));
+    expect(mockNavigate).toHaveBeenCalledWith("/admin/confirmations");
   });
 
-  it("links check-ins and student jump rows to student detail", async () => {
-    const user = userEvent.setup();
-    renderDashboard();
-
-    const openStudentCard = screen.getByText("Open student").closest(".rounded-xl");
-    expect(openStudentCard).toBeTruthy();
-    await user.click(within(openStudentCard as HTMLElement).getByText("Alice Johnson"));
-    expect(mockNavigate).toHaveBeenCalledWith("/admin/students/student_1");
-  });
-
-  it("shows empty queue states when there is no pending work", () => {
+  it("celebrates when nothing needs confirmation", () => {
     setupQueries({
-      "mastery.getAdminVivaQueue": [],
-      "diagnostics.getPendingUnlockRequests": [],
+      "assignments.getConfirmationQueue": [],
       "emotions.getTodayCheckIns": [],
-      "users.getTodayCheckInCount": 0,
     });
 
     renderDashboard();
 
-    expect(screen.getByText("No viva decisions waiting.")).toBeInTheDocument();
-    expect(screen.getByText("No retake requests waiting.")).toBeInTheDocument();
-    expect(screen.getByText("No check-ins yet today.")).toBeInTheDocument();
+    expect(screen.getByText("All confirmed. Nothing waiting.")).toBeInTheDocument();
   });
 
   it("shows setup checklist when prerequisites are missing", () => {
@@ -175,6 +213,7 @@ describe("AdminDashboard", () => {
       "users.getAll": [],
       "sprints.getActive": null,
       "objectives.getAll": [],
+      "sprints.getStudentInsights": undefined,
     });
 
     renderDashboard();
@@ -182,6 +221,6 @@ describe("AdminDashboard", () => {
     expect(screen.getByText("Getting started")).toBeInTheDocument();
     expect(screen.getByText("Add students")).toBeInTheDocument();
     expect(screen.getByText("Create a sprint")).toBeInTheDocument();
-    expect(screen.getByText("Add objectives")).toBeInTheDocument();
+    expect(screen.getByText("Add assignments")).toBeInTheDocument();
   });
 });

@@ -108,6 +108,7 @@ import { HabitTracker } from "./HabitTracker";
 
 describe("HabitTracker", () => {
   const defaultProps = {
+    token: "test-token",
     userId: "user_123" as any,
     sprintId: "sprint_456" as any,
     weekDates: [
@@ -200,6 +201,7 @@ describe("HabitTracker", () => {
       await user.click(dayOrbContainers[0]);
 
       expect(mockToggleCompletion).toHaveBeenCalledWith({
+        token: "test-token",
         habitId: "habit_1",
         userId: "user_123",
         date: "2024-01-08",
@@ -263,6 +265,7 @@ describe("HabitTracker", () => {
       await user.click(dayOrbContainers[2]);
 
       expect(mockToggleCompletion).toHaveBeenCalledWith({
+        token: "test-token",
         habitId: "habit_1",
         userId: "user_123",
         date: "2024-01-10",
@@ -368,6 +371,7 @@ describe("HabitTracker", () => {
       await user.click(screen.getByRole("button", { name: "Create" }));
 
       expect(mockCreateHabit).toHaveBeenCalledWith({
+        token: "test-token",
         userId: "user_123",
         sprintId: "sprint_456",
         name: "New Morning Routine",
@@ -459,6 +463,7 @@ describe("HabitTracker", () => {
       await user.tab(); // Blur
 
       expect(mockUpdateHabit).toHaveBeenCalledWith({
+        token: "test-token",
         habitId: "habit_1",
         name: "New Name",
       });
@@ -484,6 +489,7 @@ describe("HabitTracker", () => {
       await user.type(input, "New Name{Enter}");
 
       expect(mockUpdateHabit).toHaveBeenCalledWith({
+        token: "test-token",
         habitId: "habit_1",
         name: "New Name",
       });
@@ -532,7 +538,7 @@ describe("HabitTracker", () => {
       await user.click(deleteButton!);
 
       expect(window.confirm).toHaveBeenCalledWith('Delete "Habit to Delete"?');
-      expect(mockRemoveHabit).toHaveBeenCalledWith({ habitId: "habit_1" });
+      expect(mockRemoveHabit).toHaveBeenCalledWith({ token: "test-token", habitId: "habit_1" });
     });
 
     it("does not delete when confirmation is cancelled", async () => {
@@ -602,6 +608,7 @@ describe("HabitTracker", () => {
       await user.click(iconOptions[0]);
 
       expect(mockUpdateHabit).toHaveBeenCalledWith({
+        token: "test-token",
         habitId: "habit_1",
         description: expect.any(String),
       });

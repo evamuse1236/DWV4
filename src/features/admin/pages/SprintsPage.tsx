@@ -26,7 +26,6 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
 } from "@/shared/ui/dialog";
 import {
   Table,
@@ -51,6 +50,7 @@ import {
   Calendar,
   Loader2,
 } from "lucide-react";
+import { AdminPageHeader } from "@/features/admin/components/AdminPageHeader";
 
 const DAY_LABELS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
@@ -59,14 +59,14 @@ const DAY_LABELS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
  * Create, manage, and track learning sprints
  */
 export function SprintsPage() {
-  const { user } = useAuth();
+  const { user, token } = useAuth();
   const sprints = useQuery(api.sprints.getAll);
   const activeSprint = useQuery(api.sprints.getActive);
   const [selectedInsightsSprintId, setSelectedInsightsSprintId] = useState("");
   const studentInsights = useQuery(
     api.sprints.getStudentInsights,
-    selectedInsightsSprintId
-      ? { sprintId: selectedInsightsSprintId as any }
+    selectedInsightsSprintId && token
+      ? { adminToken: token, sprintId: selectedInsightsSprintId as any }
       : "skip"
   );
   const createSprint = useMutation(api.sprints.create);
@@ -174,13 +174,14 @@ export function SprintsPage() {
   }, [filteredStudentInsights]);
 
   const handleCreateSprint = async () => {
-    if (!user?._id) return;
+    if (!user?._id || !token) return;
 
     setIsLoading(true);
     setError(null);
 
     try {
       await createSprint({
+        adminToken: token,
         name: newSprint.name,
         startDate: newSprint.startDate,
         endDate: newSprint.endDate,
@@ -207,13 +208,14 @@ export function SprintsPage() {
   };
 
   const handleUpdateSprint = async () => {
-    if (!editingSprint) return;
+    if (!editingSprint || !token) return;
 
     setIsLoading(true);
     setError(null);
 
     try {
       await updateSprint({
+        adminToken: token,
         sprintId: editingSprint._id,
         name: editForm.name,
         startDate: editForm.startDate,
@@ -231,8 +233,9 @@ export function SprintsPage() {
   };
 
   const handleSetActive = async (sprintId: string) => {
+    if (!token) return;
     try {
-      await setActive({ sprintId: sprintId as any });
+      await setActive({ adminToken: token, sprintId: sprintId as any });
     } catch (err) {
       console.error("Failed to set active sprint:", err);
     }
@@ -244,11 +247,11 @@ export function SprintsPage() {
   };
 
   const handleConfirmDelete = async () => {
-    if (!deletingSprint) return;
+    if (!deletingSprint || !token) return;
 
     setIsLoading(true);
     try {
-      await deleteSprint({ sprintId: deletingSprint._id as any });
+      await deleteSprint({ adminToken: token, sprintId: deletingSprint._id as any });
       setIsDeleteDialogOpen(false);
       setDeletingSprint(null);
     } catch (err) {
@@ -299,20 +302,19 @@ export function SprintsPage() {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-        <div>
-          <h1 className="text-2xl font-serif font-semibold">Sprints</h1>
-          <p className="text-muted-foreground">
-            Manage learning sprints and time-boxed goals
-          </p>
-        </div>
-        <Dialog open={isAddDialogOpen} onOpenChange={setIsAddDialogOpen}>
-          <DialogTrigger asChild>
-            <Button>
-              <Plus className="mr-2 h-4 w-4" />
-              New Sprint
-            </Button>
-          </DialogTrigger>
+      <AdminPageHeader
+        eyebrow="Manage"
+        title="Sprints"
+        description="Manage learning sprints and time-boxed goals."
+        actions={
+          <Button onClick={() => setIsAddDialogOpen(true)}>
+            <Plus className="mr-2 h-4 w-4" />
+            New Sprint
+          </Button>
+        }
+      />
+
+      <Dialog open={isAddDialogOpen} onOpenChange={setIsAddDialogOpen}>
           <DialogContent>
             <DialogHeader>
               <DialogTitle>Create New Sprint</DialogTitle>
@@ -381,8 +383,7 @@ export function SprintsPage() {
               </Button>
             </DialogFooter>
           </DialogContent>
-        </Dialog>
-      </div>
+      </Dialog>
 
       {/* Edit Sprint Dialog */}
       <Dialog open={isEditDialogOpen} onOpenChange={(open) => {
@@ -513,14 +514,36 @@ export function SprintsPage() {
           <CardHeader>
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
-                <Badge>Active</Badge>
+                <Badge variant={getDaysLeft(activeSprint.endDate) < 0 ? "outline" : "default"}>
+                  {getDaysLeft(activeSprint.endDate) < 0 ? "Ended" : "Active"}
+                </Badge>
                 <CardTitle>{activeSprint.name}</CardTitle>
               </div>
               <div className="text-right">
-                <p className="text-3xl font-bold text-primary">
-                  {getDaysLeft(activeSprint.endDate)}
-                </p>
-                <p className="text-sm text-muted-foreground">days left</p>
+                {(() => {
+                  const daysLeft = getDaysLeft(activeSprint.endDate);
+                  if (daysLeft > 0) {
+                    return (
+                      <>
+                        <p className="font-mono text-3xl font-bold text-primary">{daysLeft}</p>
+                        <p className="text-sm text-muted-foreground">days left</p>
+                      </>
+                    );
+                  }
+                  if (daysLeft === 0) {
+                    return <p className="text-lg font-semibold text-primary">Ends today</p>;
+                  }
+                  return (
+                    <>
+                      <p className="text-lg font-semibold text-muted-foreground">
+                        Ended {Math.abs(daysLeft)} day{Math.abs(daysLeft) === 1 ? "" : "s"} ago
+                      </p>
+                      <p className="text-sm text-muted-foreground">
+                        Create the next sprint to keep the cycle going
+                      </p>
+                    </>
+                  );
+                })()}
               </div>
             </div>
             <CardDescription>

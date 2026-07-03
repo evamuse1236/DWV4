@@ -206,6 +206,22 @@
   border-color: #16a34a;
 }
 
+/* Assignment flow (2026 pivot) */
+.status-submitted {
+  background: #fde68a;
+  border-color: #d97706;
+}
+
+.status-approved {
+  background: #bbf7d0;
+  border-color: #16a34a;
+}
+
+.status-rejected {
+  background: #fecdd3;
+  border-color: #e11d48;
+}
+
 .node-ready {
   box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.35);
 }
@@ -596,6 +612,49 @@
 
 .horizontal-scroll-container:active {
   cursor: grabbing;
+}
+
+/* Right-edge fade signals that the tree continues past the viewport */
+.horizontal-stage::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 72px;
+  height: 100%;
+  background: linear-gradient(to right, transparent, var(--bg-warm, #fdfbf7));
+  pointer-events: none;
+  z-index: 20;
+}
+
+/* One-time hint that the canvas scrolls sideways */
+.scroll-hint {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 6px 18px rgba(26, 26, 26, 0.08);
+  color: var(--text-soft, #666);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  pointer-events: none;
+  animation: hintPulse 2.4s ease-in-out infinite;
+}
+
+@keyframes hintPulse {
+  0%, 100% { opacity: 0.85; transform: translateX(-50%) translateY(0); }
+  50% { opacity: 1; transform: translateX(-50%) translateY(-4px); }
 }
 
 .back-btn-floating {

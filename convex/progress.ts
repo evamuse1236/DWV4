@@ -1,11 +1,16 @@
 import { query, mutation } from "./_generated/server";
 import { v } from "convex/values";
 import { CHARACTER_XP, awardXpIfNotExists } from "./characterAwards";
+import { requireUserMatch } from "./authz";
 
 // Get progress for a student objective
 export const getByStudentObjective = query({
-  args: { studentObjectiveId: v.id("studentObjectives") },
+  args: { token: v.string(), studentObjectiveId: v.id("studentObjectives") },
   handler: async (ctx, args) => {
+    const studentObjective = await ctx.db.get(args.studentObjectiveId);
+    if (!studentObjective) return [];
+    await requireUserMatch(ctx, args.token, studentObjective.userId);
+
     return await ctx.db
       .query("activityProgress")
       .withIndex("by_student_objective", (q) =>
@@ -18,6 +23,7 @@ export const getByStudentObjective = query({
 // Toggle activity completion
 export const toggleActivity = mutation({
   args: {
+    token: v.string(),
     userId: v.id("users"),
     activityId: v.id("activities"),
     studentObjectiveId: v.id("studentObjectives"),
@@ -25,6 +31,10 @@ export const toggleActivity = mutation({
   handler: async (ctx, args) => {
     const studentObjective = await ctx.db.get(args.studentObjectiveId);
     if (!studentObjective) return;
+    await requireUserMatch(ctx, args.token, studentObjective.userId);
+    if (studentObjective.userId.toString() !== args.userId.toString()) {
+      throw new Error("Unauthorized");
+    }
     const objective = await ctx.db.get(studentObjective.objectiveId);
 
     // Check if already exists (include studentObjectiveId to prevent collisions
@@ -166,8 +176,9 @@ export const toggleActivity = mutation({
 
 // Get student's domain progress summary
 export const getDomainSummary = query({
-  args: { userId: v.id("users") },
+  args: { token: v.string(), userId: v.id("users") },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     const domains = await ctx.db.query("domains").collect();
 
     const summary = await Promise.all(

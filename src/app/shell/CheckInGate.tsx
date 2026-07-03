@@ -122,7 +122,7 @@ interface CheckInGateProps {
  * Allows selecting multiple emotions
  */
 export function CheckInGate({ children }: CheckInGateProps) {
-  const { user } = useAuth();
+  const { user, token } = useAuth();
   const saveCheckIn = useMutation(api.emotions.saveCheckIn);
 
   // State for the check-in flow
@@ -153,7 +153,7 @@ export function CheckInGate({ children }: CheckInGateProps) {
   // Get today's check-in if exists
   const todayCheckIn = useQuery(
     api.emotions.getTodayCheckIn,
-    user ? { userId: user._id as any } : "skip"
+    user && token ? { token, userId: user._id as any } : "skip"
   );
 
   // Delayed skeleton - only show if loading takes >200ms to avoid flash
@@ -259,7 +259,7 @@ export function CheckInGate({ children }: CheckInGateProps) {
 
   // Save check-in
   const handleSave = async () => {
-    if (!user || selectedShades.length === 0) return;
+    if (!user || !token || selectedShades.length === 0) return;
 
     setIsSubmitting(true);
     setSaveError(false);
@@ -279,6 +279,7 @@ export function CheckInGate({ children }: CheckInGateProps) {
         : `Feeling: ${emotionsList}`;
 
       await saveCheckIn({
+        token,
         userId: user._id as any,
         categoryId: ids.categoryId as any,
         subcategoryId: ids.subcategoryId as any,

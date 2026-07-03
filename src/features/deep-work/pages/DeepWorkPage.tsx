@@ -17,7 +17,7 @@ import styles from "@/features/deep-work/components/skill-tree/skill-tree.module
  * - Viva request workflow
  */
 export function DeepWorkPage() {
-  const { user } = useAuth();
+  const { user, token } = useAuth();
 
   // Selection state
   const [selectedDomainId, setSelectedDomainId] = useState<string | null>(null);
@@ -26,7 +26,7 @@ export function DeepWorkPage() {
   // Fetch tree data (domains + objectives grouped by domain)
   const treeData = useQuery(
     api.objectives.getTreeData,
-    user ? { userId: user._id as Id<"users"> } : "skip"
+    user && token ? { token, userId: user._id as Id<"users"> } : "skip"
   );
 
   // Extract domains and objectives
@@ -88,23 +88,17 @@ export function DeepWorkPage() {
   };
 
   // Loading state
-  if (!user) {
+  if (!user || !token || treeData === undefined) {
     return (
       <div className="flex items-center justify-center h-[60vh]">
-        <div className="text-center">
-          <div className="animate-pulse text-2xl mb-2">Loading...</div>
-          <p className="text-muted">Please wait while we load your data.</p>
-        </div>
-      </div>
-    );
-  }
-
-  if (treeData === undefined) {
-    return (
-      <div className="flex items-center justify-center h-[60vh]">
-        <div className="text-center">
-          <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gray-100 animate-pulse" />
-          <p className="text-muted">Loading your learning journey...</p>
+        <div className="flex flex-col items-center gap-3 text-center">
+          <span
+            aria-hidden
+            className="h-8 w-8 animate-spin rounded-full border-2 border-[var(--color-divider)] border-t-[var(--color-espresso)]"
+          />
+          <p className="font-display text-lg italic text-[var(--color-taupe)]">
+            Mapping your learning journey…
+          </p>
         </div>
       </div>
     );
@@ -166,6 +160,7 @@ export function DeepWorkPage() {
 
         {/* Right Panel (Details) */}
         <ObjectivePopover
+          token={token}
           userId={user._id as Id<"users">}
           domainName={selectedDomain?.name || null}
           selectedNode={selectedNodeDetails}

@@ -15,6 +15,12 @@ import {
   refreshProfileFromDomainLevels,
   unlockEligibleCards,
 } from "./characterAwards";
+import {
+  requireAdmin,
+  requireMaintenanceKey,
+  requireUserMatch,
+  toSafeUser,
+} from "./authz";
 
 const tarotRarity = v.union(
   v.literal("common"),
@@ -240,8 +246,9 @@ async function buildCharacterPayload(
 }
 
 export const getMyCharacter = query({
-  args: { userId: v.id("users") },
+  args: { token: v.string(), userId: v.id("users") },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     if (!isStudentCharacterSystemEnabled()) return null;
     return await buildCharacterPayload(ctx, args.userId, {
       timelineLimit: 25,
@@ -251,8 +258,9 @@ export const getMyCharacter = query({
 });
 
 export const getMyCollection = query({
-  args: { userId: v.id("users") },
+  args: { token: v.string(), userId: v.id("users") },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     if (!isStudentCharacterSystemEnabled()) {
       return {
         activeTarotCardId: null,
@@ -277,10 +285,12 @@ export const getMyCollection = query({
 
 export const getMyTimeline = query({
   args: {
+    token: v.string(),
     userId: v.id("users"),
     limit: v.optional(v.number()),
   },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     if (!isStudentCharacterSystemEnabled()) return [];
 
     const limit = Math.max(1, Math.min(args.limit ?? 25, 100));
@@ -301,10 +311,12 @@ export const getMyTimeline = query({
 
 export const equipCard = mutation({
   args: {
+    token: v.string(),
     userId: v.id("users"),
     tarotCardId: v.id("tarotCards"),
   },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     if (!isStudentCharacterSystemEnabled()) {
       throw new Error("Character system is currently inactive.");
     }
@@ -356,8 +368,9 @@ export const equipCard = mutation({
 });
 
 export const getTarotCatalog = query({
-  args: {},
-  handler: async (ctx) => {
+  args: { adminToken: v.string() },
+  handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const cards = await ctx.db.query("tarotCards").collect();
     const sorted = [...cards].sort((a, b) => {
       const activeDiff = Number(b.isActive) - Number(a.isActive);
@@ -372,8 +385,9 @@ export const getTarotCatalog = query({
 });
 
 export const generateTarotUploadUrl = mutation({
-  args: {},
-  handler: async (ctx) => {
+  args: { adminToken: v.string() },
+  handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const uploadUrl = await ctx.storage.generateUploadUrl();
     return { uploadUrl };
   },
@@ -381,6 +395,7 @@ export const generateTarotUploadUrl = mutation({
 
 export const createTarotCard = mutation({
   args: {
+    adminToken: v.string(),
     name: v.string(),
     slug: v.optional(v.string()),
     description: v.optional(v.string()),
@@ -392,6 +407,7 @@ export const createTarotCard = mutation({
     displayOrder: v.optional(v.number()),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const slug = normalizeSlug(args.slug || args.name);
     const existingSlug = await ctx.db
       .query("tarotCards")
@@ -431,6 +447,7 @@ export const createTarotCard = mutation({
 
 export const updateTarotCard = mutation({
   args: {
+    adminToken: v.string(),
     tarotCardId: v.id("tarotCards"),
     name: v.optional(v.string()),
     slug: v.optional(v.string()),
@@ -443,6 +460,7 @@ export const updateTarotCard = mutation({
     displayOrder: v.optional(v.number()),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const card = await ctx.db.get(args.tarotCardId);
     if (!card) throw new Error("Tarot card not found.");
 
@@ -481,8 +499,9 @@ export const updateTarotCard = mutation({
 });
 
 export const archiveTarotCard = mutation({
-  args: { tarotCardId: v.id("tarotCards") },
+  args: { adminToken: v.string(), tarotCardId: v.id("tarotCards") },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const card = await ctx.db.get(args.tarotCardId);
     if (!card) throw new Error("Tarot card not found.");
     await ctx.db.patch(args.tarotCardId, {
@@ -494,15 +513,16 @@ export const archiveTarotCard = mutation({
 });
 
 export const getStudentCharacter = query({
-  args: { userId: v.id("users") },
+  args: { adminToken: v.string(), userId: v.id("users") },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const [user, character] = await Promise.all([
       ctx.db.get(args.userId),
       buildCharacterPayload(ctx, args.userId, { timelineLimit: 20 }),
     ]);
 
     return {
-      user,
+      user: user ? toSafeUser(user) : null,
       ...character,
       summary: {
         totalXp: character.profile.totalXp,
@@ -515,8 +535,9 @@ export const getStudentCharacter = query({
 });
 
 export const backfillPartialCharacterXp = mutation({
-  args: {},
-  handler: async (ctx) => {
+  args: { maintenanceKey: v.optional(v.string()) },
+  handler: async (ctx, args) => {
+    requireMaintenanceKey(args.maintenanceKey);
     const students = await ctx.db
       .query("users")
       .withIndex("by_role", (q: any) => q.eq("role", "student"))
@@ -587,8 +608,9 @@ export const backfillPartialCharacterXp = mutation({
 });
 
 export const backfillMissingXpDomains = mutation({
-  args: {},
-  handler: async (ctx) => {
+  args: { maintenanceKey: v.optional(v.string()) },
+  handler: async (ctx, args) => {
+    requireMaintenanceKey(args.maintenanceKey);
     const readingDomainId = await getReadingDomainId(ctx);
     const momentumDomainId = await ensureMomentumDomain(ctx);
     const ledgerRows = await ctx.db.query("characterXpLedger").collect();
@@ -666,8 +688,9 @@ export const backfillMissingXpDomains = mutation({
 });
 
 export const backfillStarterTarotAffinities = mutation({
-  args: {},
-  handler: async (ctx) => {
+  args: { maintenanceKey: v.optional(v.string()) },
+  handler: async (ctx, args) => {
+    requireMaintenanceKey(args.maintenanceKey);
     const cards = await ctx.db.query("tarotCards").collect();
     const now = Date.now();
 
@@ -707,8 +730,9 @@ export const backfillStarterTarotAffinities = mutation({
 });
 
 export const migrateTasksAndHabitsToMomentum = mutation({
-  args: {},
-  handler: async (ctx) => {
+  args: { maintenanceKey: v.optional(v.string()) },
+  handler: async (ctx, args) => {
+    requireMaintenanceKey(args.maintenanceKey);
     const momentumDomainId = await ensureMomentumDomain(ctx);
     const [goals, actionItems, habits, ledgerRows] = await Promise.all([
       ctx.db.query("goals").collect(),
@@ -833,8 +857,9 @@ export const migrateTasksAndHabitsToMomentum = mutation({
 });
 
 export const recomputeCharacterDomainLevels = mutation({
-  args: {},
-  handler: async (ctx) => {
+  args: { maintenanceKey: v.optional(v.string()) },
+  handler: async (ctx, args) => {
+    requireMaintenanceKey(args.maintenanceKey);
     const [domains, stats, students] = await Promise.all([
       ctx.db.query("domains").collect(),
       ctx.db.query("characterDomainStats").collect(),

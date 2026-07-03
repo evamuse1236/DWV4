@@ -2,6 +2,12 @@ import { query, mutation } from "./_generated/server";
 import { v } from "convex/values";
 import type { Id } from "./_generated/dataModel";
 import { CHARACTER_XP, awardXpIfNotExists } from "./characterAwards";
+import {
+  requireAdmin,
+  requireMaintenanceKey,
+  requireUserMatch,
+  toSafeUser,
+} from "./authz";
 
 const difficulty = v.union(
   v.literal("beginner"),
@@ -212,8 +218,9 @@ async function buildStudentMajorData(
 
 // Get all major objectives (admin)
 export const getAll = query({
-  args: {},
-  handler: async (ctx) => {
+  args: { adminToken: v.string() },
+  handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const majors = await ctx.db.query("majorObjectives").collect();
 
     return await Promise.all(
@@ -270,8 +277,9 @@ export const getByDomain = query({
 
 // Get all sub objectives (admin)
 export const getAllSubObjectives = query({
-  args: {},
-  handler: async (ctx) => {
+  args: { adminToken: v.string() },
+  handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const [subs, majors, domains] = await Promise.all([
       ctx.db.query("learningObjectives").collect(),
       ctx.db.query("majorObjectives").collect(),
@@ -298,6 +306,7 @@ export const getAllSubObjectives = query({
 // Create a major objective (admin only)
 export const create = mutation({
   args: {
+    adminToken: v.string(),
     domainId: v.id("domains"),
     title: v.string(),
     description: v.string(),
@@ -307,8 +316,10 @@ export const create = mutation({
     createdBy: v.id("users"),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
+    const { adminToken: _adminToken, ...objective } = args;
     return await ctx.db.insert("majorObjectives", {
-      ...args,
+      ...objective,
       createdAt: Date.now(),
     });
   },
@@ -317,6 +328,7 @@ export const create = mutation({
 // Update a major objective (admin only)
 export const update = mutation({
   args: {
+    adminToken: v.string(),
     objectiveId: v.id("majorObjectives"),
     title: v.optional(v.string()),
     description: v.optional(v.string()),
@@ -324,7 +336,8 @@ export const update = mutation({
     estimatedHours: v.optional(v.number()),
   },
   handler: async (ctx, args) => {
-    const { objectiveId, ...updates } = args;
+    await requireAdmin(ctx, args.adminToken);
+    const { adminToken: _adminToken, objectiveId, ...updates } = args;
     const filteredUpdates = Object.fromEntries(
       Object.entries(updates).filter(([_, v]) => v !== undefined)
     );
@@ -335,8 +348,9 @@ export const update = mutation({
 
 // Remove a major objective and its related data (admin only)
 export const remove = mutation({
-  args: { objectiveId: v.id("majorObjectives") },
+  args: { adminToken: v.string(), objectiveId: v.id("majorObjectives") },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const subObjectives = await ctx.db
       .query("learningObjectives")
       .withIndex("by_major_objective", (q: any) =>
@@ -369,6 +383,7 @@ export const remove = mutation({
 // Create a sub objective (admin only)
 export const createSubObjective = mutation({
   args: {
+    adminToken: v.string(),
     majorObjectiveId: v.id("majorObjectives"),
     title: v.string(),
     description: v.string(),
@@ -377,6 +392,7 @@ export const createSubObjective = mutation({
     createdBy: v.id("users"),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const major = await ctx.db.get(args.majorObjectiveId);
     if (!major) {
       throw new Error("Major objective not found");
@@ -398,6 +414,7 @@ export const createSubObjective = mutation({
 // Update a sub objective (admin only)
 export const updateSubObjective = mutation({
   args: {
+    adminToken: v.string(),
     objectiveId: v.id("learningObjectives"),
     title: v.optional(v.string()),
     description: v.optional(v.string()),
@@ -405,7 +422,8 @@ export const updateSubObjective = mutation({
     estimatedHours: v.optional(v.number()),
   },
   handler: async (ctx, args) => {
-    const { objectiveId, ...updates } = args;
+    await requireAdmin(ctx, args.adminToken);
+    const { adminToken: _adminToken, objectiveId, ...updates } = args;
     const filteredUpdates = Object.fromEntries(
       Object.entries(updates).filter(([_, v]) => v !== undefined)
     );
@@ -416,8 +434,9 @@ export const updateSubObjective = mutation({
 
 // Remove a sub objective and its related data (admin only)
 export const removeSubObjective = mutation({
-  args: { objectiveId: v.id("learningObjectives") },
+  args: { adminToken: v.string(), objectiveId: v.id("learningObjectives") },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     await removeSubObjectiveData(ctx, args.objectiveId);
     await ctx.db.delete(args.objectiveId);
     return { success: true };
@@ -427,11 +446,13 @@ export const removeSubObjective = mutation({
 // Assign sub objective to student
 export const assignToStudent = mutation({
   args: {
+    adminToken: v.string(),
     userId: v.id("users"),
     objectiveId: v.id("learningObjectives"),
     assignedBy: v.id("users"),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const objective = await ctx.db.get(args.objectiveId);
     if (!objective?.majorObjectiveId) {
       throw new Error("Sub objective is missing a major objective");
@@ -484,11 +505,13 @@ export const assignToStudent = mutation({
 // Assign sub objective to multiple students at once
 export const assignToMultipleStudents = mutation({
   args: {
+    adminToken: v.string(),
     studentIds: v.array(v.id("users")),
     objectiveId: v.id("learningObjectives"),
     assignedBy: v.id("users"),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const objective = await ctx.db.get(args.objectiveId);
     if (!objective?.majorObjectiveId) {
       throw new Error("Sub objective is missing a major objective");
@@ -547,10 +570,12 @@ export const assignToMultipleStudents = mutation({
 // Unassign sub objective from student
 export const unassignFromStudent = mutation({
   args: {
+    adminToken: v.string(),
     userId: v.id("users"),
     objectiveId: v.id("learningObjectives"),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const existing = await ctx.db
       .query("studentObjectives")
       .filter((q) =>
@@ -592,8 +617,9 @@ export const unassignFromStudent = mutation({
 
 // Get students assigned to a specific sub objective (admin)
 export const getAssignedStudents = query({
-  args: { objectiveId: v.id("learningObjectives") },
+  args: { adminToken: v.string(), objectiveId: v.id("learningObjectives") },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const assignments = await ctx.db
       .query("studentObjectives")
       .filter((q) => q.eq(q.field("objectiveId"), args.objectiveId))
@@ -604,7 +630,7 @@ export const getAssignedStudents = query({
         const user = await ctx.db.get(assignment.userId);
         return {
           ...assignment,
-          user,
+          user: user ? toSafeUser(user) : null,
         };
       })
     );
@@ -613,8 +639,9 @@ export const getAssignedStudents = query({
 
 // Get students assigned to ALL sub-objectives of a chapter (admin)
 export const getAssignedStudentsForChapter = query({
-  args: { majorObjectiveId: v.id("majorObjectives") },
+  args: { adminToken: v.string(), majorObjectiveId: v.id("majorObjectives") },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     // Get all sub-objectives for this major
     const subObjectives = await ctx.db
       .query("learningObjectives")
@@ -647,7 +674,7 @@ export const getAssignedStudentsForChapter = query({
 
       if (studentSubAssignments.length >= subObjectives.length) {
         const user = await ctx.db.get(ma.userId);
-        fullyAssigned.push({ ...ma, user });
+        fullyAssigned.push({ ...ma, user: user ? toSafeUser(user) : null });
       }
     }
 
@@ -658,11 +685,13 @@ export const getAssignedStudentsForChapter = query({
 // Assign all sub-objectives of a chapter to multiple students
 export const assignChapterToMultipleStudents = mutation({
   args: {
+    adminToken: v.string(),
     majorObjectiveId: v.id("majorObjectives"),
     studentIds: v.array(v.id("users")),
     assignedBy: v.id("users"),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const major = await ctx.db.get(args.majorObjectiveId);
     if (!major) {
       throw new Error("Major objective not found");
@@ -734,11 +763,13 @@ export const assignChapterToMultipleStudents = mutation({
 // Update major objective status (viva workflow)
 export const updateStatus = mutation({
   args: {
+    adminToken: v.string(),
     studentMajorObjectiveId: v.id("studentMajorObjectives"),
     status: majorStatus,
     vivaRequestNotes: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const assignment = await ctx.db.get(args.studentMajorObjectiveId);
     if (!assignment) {
       throw new Error("Student major objective not found");
@@ -781,8 +812,9 @@ export const updateStatus = mutation({
 
 // Get all objectives with viva requests (admin)
 export const getVivaRequests = query({
-  args: {},
-  handler: async (ctx) => {
+  args: { adminToken: v.string() },
+  handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const requests = await ctx.db
       .query("studentMajorObjectives")
       .collect();
@@ -801,7 +833,7 @@ export const getVivaRequests = query({
           : null;
         return {
           ...req,
-          user,
+          user: user ? toSafeUser(user) : null,
           objective: majorObjective,
           domain,
         };
@@ -812,8 +844,9 @@ export const getVivaRequests = query({
 
 // Get objectives assigned to a student (admin)
 export const getAssignedToStudent = query({
-  args: { userId: v.id("users") },
+  args: { adminToken: v.string(), userId: v.id("users") },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     return await buildStudentMajorData(ctx, args.userId, {
       includeActivities: false,
     });
@@ -822,8 +855,9 @@ export const getAssignedToStudent = query({
 
 // Get objectives assigned to student by domain
 export const getAssignedByDomain = query({
-  args: { userId: v.id("users"), domainId: v.id("domains") },
+  args: { token: v.string(), userId: v.id("users"), domainId: v.id("domains") },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     return await buildStudentMajorData(ctx, args.userId, {
       domainId: args.domainId,
       includeActivities: true,
@@ -833,8 +867,9 @@ export const getAssignedByDomain = query({
 
 // Get all tree data for skill tree visualization
 export const getTreeData = query({
-  args: { userId: v.id("users") },
+  args: { token: v.string(), userId: v.id("users") },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     const [domains, assignments] = await Promise.all([
       ctx.db.query("domains").collect(),
       buildStudentMajorData(ctx, args.userId, { includeActivities: true }),
@@ -859,8 +894,9 @@ export const getTreeData = query({
 
 // Migrate existing objectives to major/sub structure
 export const migrateObjectivesToMajorSub = mutation({
-  args: {},
-  handler: async (ctx) => {
+  args: { maintenanceKey: v.optional(v.string()) },
+  handler: async (ctx, args) => {
+    requireMaintenanceKey(args.maintenanceKey);
     const objectives = await ctx.db.query("learningObjectives").collect();
     const studentObjectives = await ctx.db.query("studentObjectives").collect();
     const studentMajors = await ctx.db.query("studentMajorObjectives").collect();

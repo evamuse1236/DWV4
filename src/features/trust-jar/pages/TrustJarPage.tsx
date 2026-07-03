@@ -50,10 +50,20 @@ export function TrustJarPage() {
   }
 
   return (
-    <TrustJar
-      count={jarData.count}
-      maxCount={jarData.maxCount}
-      isAdmin={false}
-    />
+    <div className="relative">
+      <div className="absolute right-6 top-6 z-20 rounded-2xl border border-white/60 bg-white/70 px-4 py-2 text-center shadow-sm backdrop-blur">
+        <p className="text-[10px] uppercase tracking-[0.2em] text-[#7b8ca0]">Batch {batch}</p>
+        <p className="mt-0.5 text-sm font-medium text-[#5b6b80]">
+          {jarData.timesCompleted > 0
+            ? `Filled ${jarData.timesCompleted}× before`
+            : "First collection in progress"}
+        </p>
+      </div>
+      <TrustJar
+        count={jarData.count}
+        maxCount={jarData.maxCount}
+        isAdmin={false}
+      />
+    </div>
   );
 }

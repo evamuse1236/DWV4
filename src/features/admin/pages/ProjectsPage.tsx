@@ -22,8 +22,8 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
 } from "@/shared/ui/dialog";
+import { AdminPageHeader } from "@/features/admin/components/AdminPageHeader";
 import {
   Table,
   TableBody,
@@ -64,11 +64,12 @@ interface Project {
 
 export function ProjectsPage() {
   const navigate = useNavigate();
-  const { user } = useAuth();
-  const projects = useQuery(api.projects.getAll);
-  const activeProject = useQuery(api.projects.getActive);
-  const nextCycleNumber = useQuery(api.projects.getNextCycleNumber);
-  const studentCount = useQuery(api.users.getStudentCount);
+  const { user, token } = useAuth();
+  const adminArgs = token ? { adminToken: token } : "skip";
+  const projects = useQuery(api.projects.getAll, adminArgs);
+  const activeProject = useQuery(api.projects.getActive, adminArgs);
+  const nextCycleNumber = useQuery(api.projects.getNextCycleNumber, adminArgs);
+  const studentCount = useQuery(api.users.getStudentCount, adminArgs);
 
   const createProject = useMutation(api.projects.create);
   const updateProject = useMutation(api.projects.update);
@@ -101,13 +102,14 @@ export function ProjectsPage() {
   });
 
   const handleCreateProject = async () => {
-    if (!user?._id || nextCycleNumber === undefined) return;
+    if (!user?._id || !token || nextCycleNumber === undefined) return;
 
     setIsLoading(true);
     setError(null);
 
     try {
       await createProject({
+        adminToken: token,
         name: newProject.name,
         description: newProject.description || undefined,
         startDate: newProject.startDate,
@@ -138,13 +140,14 @@ export function ProjectsPage() {
   };
 
   const handleUpdateProject = async () => {
-    if (!editingProject) return;
+    if (!editingProject || !token) return;
 
     setIsLoading(true);
     setError(null);
 
     try {
       await updateProject({
+        adminToken: token,
         projectId: editingProject._id,
         name: editForm.name,
         description: editForm.description || undefined,
@@ -170,8 +173,9 @@ export function ProjectsPage() {
   };
 
   const handleSetActive = async (projectId: Id<"projects">) => {
+    if (!token) return;
     try {
-      await setActive({ projectId });
+      await setActive({ adminToken: token, projectId });
     } catch (err) {
       console.error("Failed to set active project:", err);
     }
@@ -183,11 +187,11 @@ export function ProjectsPage() {
   };
 
   const handleConfirmDelete = async () => {
-    if (!deletingProject) return;
+    if (!deletingProject || !token) return;
 
     setIsLoading(true);
     try {
-      await deleteProject({ projectId: deletingProject._id });
+      await deleteProject({ adminToken: token, projectId: deletingProject._id });
       setIsDeleteDialogOpen(false);
       setDeletingProject(null);
     } catch (err) {
@@ -219,20 +223,19 @@ export function ProjectsPage() {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-        <div>
-          <h1 className="text-2xl font-serif font-semibold">Projects</h1>
-          <p className="text-muted-foreground">
-            Manage 6-week learning project cycles
-          </p>
-        </div>
-        <Dialog open={isAddDialogOpen} onOpenChange={setIsAddDialogOpen}>
-          <DialogTrigger asChild>
-            <Button>
-              <Plus className="mr-2 h-4 w-4" />
-              New Project
-            </Button>
-          </DialogTrigger>
+      <AdminPageHeader
+        eyebrow="Manage · Data"
+        title="Data collection"
+        description="Six-week project cycles: reflections and deliverable links per student, ready to export."
+        actions={
+          <Button onClick={() => setIsAddDialogOpen(true)}>
+            <Plus className="mr-2 h-4 w-4" />
+            New Project
+          </Button>
+        }
+      />
+
+      <Dialog open={isAddDialogOpen} onOpenChange={setIsAddDialogOpen}>
           <DialogContent>
             <DialogHeader>
               <DialogTitle>Create New Project</DialogTitle>
@@ -314,8 +317,7 @@ export function ProjectsPage() {
               </Button>
             </DialogFooter>
           </DialogContent>
-        </Dialog>
-      </div>
+      </Dialog>
 
       {/* Edit Project Dialog */}
       <Dialog

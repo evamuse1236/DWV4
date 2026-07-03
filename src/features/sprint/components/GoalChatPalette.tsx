@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { useAction } from "convex/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { api } from "@convex/_generated/api";
+import { useAuth } from "@/features/auth/hooks/useAuth";
 
 interface Message {
   id: string;
@@ -104,6 +105,7 @@ export function GoalChatPalette({
   onComplete,
   onCancel,
 }: GoalChatPaletteProps) {
+  const { token } = useAuth();
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputValue, setInputValue] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -144,7 +146,7 @@ export function GoalChatPalette({
 
   const handleSend = async () => {
     const trimmedInput = inputValue.trim();
-    if (!trimmedInput || isLoading) return;
+    if (!token || !trimmedInput || isLoading) return;
 
     const userMessage = createMessage("user", trimmedInput);
     setMessages((prev) => [...prev, userMessage]);
@@ -175,6 +177,7 @@ export function GoalChatPalette({
       }
 
       const response = await chatAction({
+        token,
         messages: apiMessages,
         sprintDaysRemaining,
         model: selectedModel,
@@ -320,7 +323,7 @@ export function GoalChatPalette({
           />
           <button
             onClick={handleSend}
-            disabled={!inputValue.trim() || isLoading}
+            disabled={!token || !inputValue.trim() || isLoading}
             className="px-6 py-3 bg-[#1a1a1a] text-white rounded-xl disabled:opacity-40 transition-opacity"
           >
             Send

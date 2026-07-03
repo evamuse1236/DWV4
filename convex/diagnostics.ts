@@ -2,6 +2,7 @@ import { query, mutation } from "./_generated/server";
 import { v } from "convex/values";
 import type { Id } from "./_generated/dataModel";
 import { CHARACTER_XP, awardXpIfNotExists } from "./characterAwards";
+import { requireAdmin, requireUserMatch, toSafeUser } from "./authz";
 
 const PASS_THRESHOLD_PERCENT = 90;
 const DEFAULT_UNLOCK_EXPIRY_MS = 24 * 60 * 60 * 1000;
@@ -84,8 +85,21 @@ export const getCurriculumModuleIndex = query({
 });
 
 export const getUnlockState = query({
-  args: { userId: v.id("users"), majorObjectiveId: v.id("majorObjectives") },
+  args: {
+    token: v.optional(v.string()),
+    adminToken: v.optional(v.string()),
+    userId: v.id("users"),
+    majorObjectiveId: v.id("majorObjectives"),
+  },
   handler: async (ctx, args) => {
+    if (args.adminToken) {
+      await requireAdmin(ctx, args.adminToken);
+    } else if (args.token) {
+      await requireUserMatch(ctx, args.token, args.userId);
+    } else {
+      throw new Error("Unauthorized");
+    }
+
     const now = Date.now();
 
     const latestUnlock = await ctx.db
@@ -171,8 +185,9 @@ export const getUnlockState = query({
 });
 
 export const requestUnlock = mutation({
-  args: { userId: v.id("users"), majorObjectiveId: v.id("majorObjectives") },
+  args: { token: v.string(), userId: v.id("users"), majorObjectiveId: v.id("majorObjectives") },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     const now = Date.now();
 
     const latest = await ctx.db
@@ -225,12 +240,14 @@ export const requestUnlock = mutation({
 
 export const approveUnlock = mutation({
   args: {
+    adminToken: v.string(),
     requestId: v.id("diagnosticUnlockRequests"),
     approvedBy: v.id("users"),
     expiresInMinutes: v.optional(v.number()), // default: 1440 (24h)
     attemptsGranted: v.optional(v.number()), // default: 1
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const request = await ctx.db.get(args.requestId);
     if (!request) throw new Error("Unlock request not found");
     if (request.status !== "pending") {
@@ -263,11 +280,13 @@ export const approveUnlock = mutation({
 
 export const denyUnlock = mutation({
   args: {
+    adminToken: v.string(),
     requestId: v.id("diagnosticUnlockRequests"),
     deniedBy: v.id("users"),
     decisionNotes: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const request = await ctx.db.get(args.requestId);
     if (!request) throw new Error("Unlock request not found");
     if (request.status !== "pending") {
@@ -287,8 +306,9 @@ export const denyUnlock = mutation({
 });
 
 export const revokeUnlock = mutation({
-  args: { unlockId: v.id("diagnosticUnlocks") },
+  args: { adminToken: v.string(), unlockId: v.id("diagnosticUnlocks") },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const unlock = await ctx.db.get(args.unlockId);
     if (!unlock) throw new Error("Unlock not found");
     if (unlock.status !== "approved") return { success: true };
@@ -298,8 +318,9 @@ export const revokeUnlock = mutation({
 });
 
 export const getPendingUnlockRequests = query({
-  args: {},
-  handler: async (ctx) => {
+  args: { adminToken: v.string() },
+  handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const pending = await ctx.db
       .query("diagnosticUnlockRequests")
       .withIndex("by_status", (q: any) => q.eq("status", "pending"))
@@ -308,12 +329,12 @@ export const getPendingUnlockRequests = query({
 
     return await Promise.all(
       pending.map(async (req: any) => {
-        const user = await ctx.db.get(req.userId);
+        const user = await ctx.db.get(req.userId as Id<"users">);
         const major = await ctx.db.get(req.majorObjectiveId as Id<"majorObjectives">);
         const domain = major ? await ctx.db.get(major.domainId) : null;
         return {
           ...req,
-          user,
+          user: user ? toSafeUser(user) : null,
           majorObjective: major,
           domain,
         };
@@ -323,8 +344,9 @@ export const getPendingUnlockRequests = query({
 });
 
 export const getFailuresForQueue = query({
-  args: {},
-  handler: async (ctx) => {
+  args: { adminToken: v.string() },
+  handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const failures = await ctx.db
       .query("diagnosticAttempts")
       .withIndex("by_passed", (q: any) => q.eq("passed", false))
@@ -344,7 +366,7 @@ export const getFailuresForQueue = query({
     const enriched = await Promise.all(
       latestByPair.map(async (attempt: any) => {
         const [user, major, assignment] = await Promise.all([
-          ctx.db.get(attempt.userId),
+          ctx.db.get(attempt.userId as Id<"users">),
           ctx.db.get(attempt.majorObjectiveId as Id<"majorObjectives">),
           ctx.db
             .query("studentMajorObjectives")
@@ -362,7 +384,7 @@ export const getFailuresForQueue = query({
         return {
           attemptId: attempt._id,
           attempt,
-          user,
+          user: user ? toSafeUser(user) : null,
           majorObjective: major,
           domain,
           majorAssignment: assignment || null,
@@ -375,14 +397,15 @@ export const getFailuresForQueue = query({
 });
 
 export const getAllAttemptsForAdmin = query({
-  args: {},
-  handler: async (ctx) => {
+  args: { adminToken: v.string() },
+  handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const attempts = await ctx.db.query("diagnosticAttempts").order("desc").take(500);
 
     return await Promise.all(
       attempts.map(async (attempt: any) => {
         const [user, major, assignment] = await Promise.all([
-          ctx.db.get(attempt.userId),
+          ctx.db.get(attempt.userId as Id<"users">),
           ctx.db.get(attempt.majorObjectiveId as Id<"majorObjectives">),
           ctx.db
             .query("studentMajorObjectives")
@@ -399,7 +422,7 @@ export const getAllAttemptsForAdmin = query({
         return {
           attemptId: attempt._id,
           attempt,
-          user,
+          user: user ? toSafeUser(user) : null,
           majorObjective: major,
           domain,
           majorAssignment: assignment || null,
@@ -410,8 +433,20 @@ export const getAllAttemptsForAdmin = query({
 });
 
 export const getStudentAttempts = query({
-  args: { userId: v.id("users") },
+  args: {
+    token: v.optional(v.string()),
+    adminToken: v.optional(v.string()),
+    userId: v.id("users"),
+  },
   handler: async (ctx, args) => {
+    if (args.adminToken) {
+      await requireAdmin(ctx, args.adminToken);
+    } else if (args.token) {
+      await requireUserMatch(ctx, args.token, args.userId);
+    } else {
+      throw new Error("Unauthorized");
+    }
+
     const attempts = await ctx.db
       .query("diagnosticAttempts")
       .order("desc")
@@ -456,8 +491,21 @@ export const getStudentAttempts = query({
 });
 
 export const getStudentAttemptDetails = query({
-  args: { userId: v.id("users"), attemptId: v.id("diagnosticAttempts") },
+  args: {
+    token: v.optional(v.string()),
+    adminToken: v.optional(v.string()),
+    userId: v.id("users"),
+    attemptId: v.id("diagnosticAttempts"),
+  },
   handler: async (ctx, args) => {
+    if (args.adminToken) {
+      await requireAdmin(ctx, args.adminToken);
+    } else if (args.token) {
+      await requireUserMatch(ctx, args.token, args.userId);
+    } else {
+      throw new Error("Unauthorized");
+    }
+
     const attempt = await ctx.db.get(args.attemptId);
     if (!attempt) return null;
     if (attempt.userId.toString() !== args.userId.toString()) return null;
@@ -484,8 +532,21 @@ export const getStudentAttemptDetails = query({
 });
 
 export const getAttemptCount = query({
-  args: { userId: v.id("users"), majorObjectiveId: v.id("majorObjectives") },
+  args: {
+    token: v.optional(v.string()),
+    adminToken: v.optional(v.string()),
+    userId: v.id("users"),
+    majorObjectiveId: v.id("majorObjectives"),
+  },
   handler: async (ctx, args) => {
+    if (args.adminToken) {
+      await requireAdmin(ctx, args.adminToken);
+    } else if (args.token) {
+      await requireUserMatch(ctx, args.token, args.userId);
+    } else {
+      throw new Error("Unauthorized");
+    }
+
     const attempts = await ctx.db
       .query("diagnosticAttempts")
       .withIndex("by_user_major", (q: any) =>
@@ -497,19 +558,21 @@ export const getAttemptCount = query({
 });
 
 export const getAttemptDetails = query({
-  args: { attemptId: v.id("diagnosticAttempts") },
+  args: { adminToken: v.string(), attemptId: v.id("diagnosticAttempts") },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const attempt = await ctx.db.get(args.attemptId);
     if (!attempt) return null;
     const user = await ctx.db.get(attempt.userId);
     const major = await ctx.db.get(attempt.majorObjectiveId);
     const domain = major ? await ctx.db.get(major.domainId) : null;
-    return { attempt, user, majorObjective: major, domain };
+    return { attempt, user: user ? toSafeUser(user) : null, majorObjective: major, domain };
   },
 });
 
 export const submitAttempt = mutation({
   args: {
+    token: v.string(),
     userId: v.id("users"),
     majorObjectiveId: v.id("majorObjectives"),
     domainId: v.id("domains"),
@@ -536,6 +599,7 @@ export const submitAttempt = mutation({
     ),
   },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     const now = Date.now();
     const safeQuestionCount = Math.max(1, args.questionCount);
     const scorePercent = toScorePercent(args.score, safeQuestionCount);

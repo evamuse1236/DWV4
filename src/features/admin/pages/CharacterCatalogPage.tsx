@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "@convex/_generated/api";
+import { useAuth } from "@/features/auth/hooks/useAuth";
 import { Card, CardContent, CardHeader, CardTitle } from "@/shared/ui/card";
 import { Button } from "@/shared/ui/button";
 import { Input } from "@/shared/ui/input";
@@ -50,9 +51,10 @@ const defaultFormState: CardFormState = {
 
 async function uploadCardImage(
   generateTarotUploadUrl: ReturnType<typeof useMutation>,
+  adminToken: string,
   file: File
 ) {
-  const { uploadUrl } = await generateTarotUploadUrl({});
+  const { uploadUrl } = await generateTarotUploadUrl({ adminToken });
   const uploadRes = await fetch(uploadUrl, {
     method: "POST",
     headers: {
@@ -90,7 +92,11 @@ function toMutationArgs(form: CardFormState) {
 }
 
 export function CharacterCatalogPage() {
-  const catalog = useQuery(api.character.getTarotCatalog);
+  const { token } = useAuth();
+  const catalog = useQuery(
+    api.character.getTarotCatalog,
+    token ? { adminToken: token } : "skip"
+  );
   const domains = useQuery(api.domains.getAll);
 
   const generateTarotUploadUrl = useMutation(api.character.generateTarotUploadUrl);
@@ -118,6 +124,7 @@ export function CharacterCatalogPage() {
   };
 
   const handleCreate = async () => {
+    if (!token) return;
     if (!form.name.trim()) {
       setError("Name is required.");
       return;
@@ -130,8 +137,9 @@ export function CharacterCatalogPage() {
     setIsSubmitting(true);
     setError(null);
     try {
-      const imageStorageId = await uploadCardImage(generateTarotUploadUrl, form.imageFile);
+      const imageStorageId = await uploadCardImage(generateTarotUploadUrl, token, form.imageFile);
       await createTarotCard({
+        adminToken: token,
         ...toMutationArgs(form),
         imageStorageId: imageStorageId as any,
       });
@@ -160,7 +168,7 @@ export function CharacterCatalogPage() {
   };
 
   const handleSaveEdit = async () => {
-    if (!editCard) return;
+    if (!editCard || !token) return;
     if (!editForm.name.trim()) {
       setEditError("Name is required.");
       return;
@@ -173,11 +181,13 @@ export function CharacterCatalogPage() {
       if (editForm.imageFile) {
         imageStorageId = await uploadCardImage(
           generateTarotUploadUrl,
+          token,
           editForm.imageFile
         );
       }
 
       await updateTarotCard({
+        adminToken: token,
         tarotCardId: editCard._id,
         ...toMutationArgs(editForm),
         imageStorageId: imageStorageId as any,
@@ -191,7 +201,8 @@ export function CharacterCatalogPage() {
   };
 
   const handleArchive = async (tarotCardId: string) => {
-    await archiveTarotCard({ tarotCardId: tarotCardId as any });
+    if (!token) return;
+    await archiveTarotCard({ adminToken: token, tarotCardId: tarotCardId as any });
   };
 
   return (

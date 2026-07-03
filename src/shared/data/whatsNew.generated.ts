@@ -10,6 +10,24 @@ export interface WhatsNewEntry {
 
 export const WHATS_NEW: WhatsNewEntry[] = [
   {
+    date: "Mar 25",
+    sortDate: "2026-03-25",
+    title: "Stabilize and simplify test suite coverage",
+    description: "Code updates shipped in commit 1538937.",
+  },
+  {
+    date: "Mar 25",
+    sortDate: "2026-03-25",
+    title: "feat: overhaul reading library and book buddy",
+    description: "Code updates shipped in commit 5c4a949.",
+  },
+  {
+    date: "Mar 25",
+    sortDate: "2026-03-25",
+    title: "chore: reorganize deep work app structure",
+    description: "Code updates shipped in commit 81a0807.",
+  },
+  {
     date: "Mar 21",
     sortDate: "2026-03-21",
     title: "Update whats new entry",
@@ -170,24 +188,6 @@ export const WHATS_NEW: WhatsNewEntry[] = [
     sortDate: "2026-02-13",
     title: "Automate in-app What's New from git history",
     description: "Code updates shipped in commit bb8ca1f.",
-  },
-  {
-    date: "Feb 13",
-    sortDate: "2026-02-13",
-    title: "Add viva batch toggle and friend GIF expansion in settings",
-    description: "Code updates shipped in commit 63fd321.",
-  },
-  {
-    date: "Feb 12",
-    sortDate: "2026-02-12",
-    title: "Refine diagnostic question flow and last-question skip",
-    description: "Code updates shipped in commit e6e1ed1.",
-  },
-  {
-    date: "Feb 12",
-    sortDate: "2026-02-12",
-    title: "Improve diagnostic review clarity and add question skip flow",
-    description: "Code updates shipped in commit 770c5c7.",
   },
 ];
 

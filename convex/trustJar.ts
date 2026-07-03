@@ -1,30 +1,8 @@
 import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
-import type { MutationCtx } from "./_generated/server";
-import type { Doc } from "./_generated/dataModel";
+import { requireAdmin } from "./authz";
 
 const MAX_COUNT = 50;
-
-/**
- * Verify admin token and return the admin user
- * Returns null if unauthorized
- */
-async function verifyAdmin(
-  ctx: MutationCtx,
-  adminToken: string
-): Promise<Doc<"users"> | null> {
-  const session = await ctx.db
-    .query("sessions")
-    .withIndex("by_token", (q) => q.eq("token", adminToken))
-    .unique();
-
-  if (!session) return null;
-
-  const user = await ctx.db.get(session.userId);
-  if (!user || user.role !== "admin") return null;
-
-  return user;
-}
 
 /**
  * Get current trust jar count for a specific batch
@@ -57,10 +35,7 @@ export const add = mutation({
     batch: v.string(),
   },
   handler: async (ctx, args) => {
-    const user = await verifyAdmin(ctx, args.adminToken);
-    if (!user) {
-      return { success: false, error: "Unauthorized" };
-    }
+    const { user } = await requireAdmin(ctx, args.adminToken);
 
     const jar = await ctx.db
       .query("trustJar")
@@ -99,10 +74,7 @@ export const remove = mutation({
     batch: v.string(),
   },
   handler: async (ctx, args) => {
-    const user = await verifyAdmin(ctx, args.adminToken);
-    if (!user) {
-      return { success: false, error: "Unauthorized" };
-    }
+    const { user } = await requireAdmin(ctx, args.adminToken);
 
     const jar = await ctx.db
       .query("trustJar")
@@ -133,10 +105,7 @@ export const reset = mutation({
     batch: v.string(),
   },
   handler: async (ctx, args) => {
-    const user = await verifyAdmin(ctx, args.adminToken);
-    if (!user) {
-      return { success: false, error: "Unauthorized" };
-    }
+    const { user } = await requireAdmin(ctx, args.adminToken);
 
     const jar = await ctx.db
       .query("trustJar")

@@ -1,5 +1,8 @@
 import { v } from "convex/values";
 import { action } from "./_generated/server";
+import { api } from "./_generated/api";
+import type { ActionCtx } from "./_generated/server";
+import { requireMaintenanceKey } from "./authz";
 
 // ============================================================================
 // Types
@@ -11,6 +14,22 @@ type ChatMessage = { role: "user" | "assistant" | "system"; content: string };
 type GoalDraft = { what: string | null; when: string | null; howLong: string | null };
 type SuggestedTask = { title: string; weekNumber: number; dayOfWeek: number };
 type GoalSummary = { title: string; what: string; when: string; howLong: string };
+
+async function requireActionSession(ctx: ActionCtx, token: string) {
+  const user = await ctx.runQuery(api.auth.getCurrentUser, { token });
+  if (!user) {
+    throw new Error("Unauthorized");
+  }
+  return user;
+}
+
+async function requireActionAdmin(ctx: ActionCtx, adminToken: string) {
+  const user = await requireActionSession(ctx, adminToken);
+  if (user.role !== "admin") {
+    throw new Error("Unauthorized");
+  }
+  return user;
+}
 
 interface GoalInfo {
   id: string;
@@ -1831,6 +1850,7 @@ RULES:
 
 export const chat = action({
   args: {
+    token: v.string(),
     messages: v.array(
       v.object({
         role: v.union(v.literal("user"), v.literal("assistant")),
@@ -1855,7 +1875,8 @@ export const chat = action({
       })
     ),
   },
-  handler: async (_ctx, args) => {
+  handler: async (ctx, args) => {
+    await requireActionSession(ctx, args.token);
     const persona = args.persona ?? "muse";
     const lastUserMessage = args.messages[args.messages.length - 1]?.content ?? "";
     const draft: (GoalDraft & { awaitingConfirm?: boolean }) | null = args.draft
@@ -1915,6 +1936,7 @@ export const chat = action({
 
 export const libraryChat = action({
   args: {
+    token: v.string(),
     messages: v.array(
       v.object({
         role: v.union(v.literal("user"), v.literal("assistant")),
@@ -1955,7 +1977,8 @@ export const libraryChat = action({
       })
     ),
   },
-  handler: async (_ctx, args) => {
+  handler: async (ctx, args) => {
+    await requireActionSession(ctx, args.token);
     const lastUserMessage = [...args.messages]
       .reverse()
       .find((message) => message.role === "user")?.content
@@ -2023,6 +2046,7 @@ export const __goalChatTesting = {
 
 export const projectDataChat = action({
   args: {
+    adminToken: v.string(),
     messages: v.array(
       v.object({
         role: v.union(v.literal("user"), v.literal("assistant")),
@@ -2038,7 +2062,8 @@ export const projectDataChat = action({
       })
     ),
   },
-  handler: async (_ctx, args) => {
+  handler: async (ctx, args) => {
+    await requireActionAdmin(ctx, args.adminToken);
     const systemPrompt = buildProjectDataPrompt(args.projectName, args.students);
 
     const apiMessages: ChatMessage[] = [
@@ -2090,6 +2115,7 @@ export const projectDataChat = action({
  */
 export const testChat = action({
   args: {
+    maintenanceKey: v.optional(v.string()),
     messages: v.array(
       v.object({
         role: v.union(v.literal("user"), v.literal("assistant")),
@@ -2101,6 +2127,7 @@ export const testChat = action({
     model: v.optional(v.string()),
   },
   handler: async (_ctx, args) => {
+    requireMaintenanceKey(args.maintenanceKey);
     const apiMessages: ChatMessage[] = [
       { role: "system", content: args.systemPrompt },
       ...args.messages.map((m) => ({ role: m.role, content: m.content })),

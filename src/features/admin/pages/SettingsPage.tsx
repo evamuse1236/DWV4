@@ -25,6 +25,7 @@ import {
 import { Badge } from "@/shared/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/shared/ui/avatar";
 import { Eye, EyeOff } from "lucide-react";
+import { AdminPageHeader } from "@/features/admin/components/AdminPageHeader";
 
 type CredentialUser = {
   _id: Id<"users">;
@@ -390,12 +391,11 @@ export function AdminSettingsPage() {
 
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-serif font-semibold">Settings</h1>
-        <p className="text-muted-foreground">
-          Manage your account and credential administration.
-        </p>
-      </div>
+      <AdminPageHeader
+        eyebrow="Manage"
+        title="Settings"
+        description="Manage your account and credential administration."
+      />
 
       <Card>
         <CardHeader>

@@ -215,7 +215,8 @@ export default defineSchema({
     .index("by_user_major", ["userId", "majorObjectiveId"])
     .index("by_status", ["status"]),
 
-  // Student assignments to major objectives (viva requests live here)
+  // Student assignments to major objectives (unit assignments; the
+  // done -> coach-confirm flow lives here)
   studentMajorObjectives: defineTable({
     userId: v.id("users"),
     majorObjectiveId: v.id("majorObjectives"),
@@ -224,9 +225,21 @@ export default defineSchema({
     status: v.union(
       v.literal("assigned"),
       v.literal("in_progress"),
+      // Assignment flow (2026 pivot): student marks done -> coach confirms.
+      v.literal("submitted"),
+      v.literal("approved"),
+      v.literal("rejected"),
+      // Legacy mastery-era statuses kept valid for historical rows.
       v.literal("viva_requested"),
       v.literal("mastered")
     ),
+    // Assignment submission trail
+    submittedAt: v.optional(v.number()),
+    submittedNotes: v.optional(v.string()),
+    confirmedAt: v.optional(v.number()),
+    confirmedBy: v.optional(v.id("users")),
+    confirmationNotes: v.optional(v.string()),
+    // Legacy viva fields (archived flow; retained for history)
     vivaStatus: v.optional(
       v.union(
         v.literal("not_requested"),
@@ -623,6 +636,8 @@ export default defineSchema({
       v.literal("mini_tile"),
       v.literal("motivation"),
       v.literal("journal"),
+      v.literal("countdown"),
+      v.literal("photo_strip"),
     ),
     title: v.string(),
     subtitle: v.optional(v.string()),
@@ -635,14 +650,20 @@ export default defineSchema({
       v.literal("orange"),
       v.literal("yellow"),
     ),
-    size: v.union(
-      v.literal("sm"),
-      v.literal("md"),
-      v.literal("lg"),
-      v.literal("tall"),
-      v.literal("wide"),
-      v.literal("hero"),
+    // Legacy named size (v1 boards); superseded by sizeStep
+    size: v.optional(
+      v.union(
+        v.literal("sm"),
+        v.literal("md"),
+        v.literal("lg"),
+        v.literal("tall"),
+        v.literal("wide"),
+        v.literal("hero"),
+      )
     ),
+    // Collage v2: discrete size step 1..4 (S/M/L/XL) resolved per card shape
+    sizeStep: v.optional(v.number()),
+    schemaVersion: v.optional(v.number()),
     order: v.number(),
     // image_hero
     imageUrl: v.optional(v.string()),
@@ -667,6 +688,10 @@ export default defineSchema({
     // journal
     textContent: v.optional(v.string()),
     entryDate: v.optional(v.string()),
+    // countdown
+    targetDate: v.optional(v.string()),
+    // photo_strip
+    imageUrls: v.optional(v.array(v.string())),
     createdAt: v.number(),
   })
     .index("by_user", ["userId"])

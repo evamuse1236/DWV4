@@ -35,8 +35,11 @@ function StarRating({ rating }: { rating: number }) {
 }
 
 export function ReviewQueuePage() {
-  const { user } = useAuth();
-  const reviewSubmissions = useQuery(api.books.getReviewSubmissions);
+  const { user, token } = useAuth();
+  const reviewSubmissions = useQuery(
+    api.books.getReviewSubmissions,
+    token ? { adminToken: token } : "skip"
+  );
   const approveReview = useMutation(api.books.approveReview);
   const requestReviewChanges = useMutation(api.books.requestReviewChanges);
 
@@ -45,10 +48,12 @@ export function ReviewQueuePage() {
   const [pendingActionFor, setPendingActionFor] = useState<string | null>(null);
 
   const handleApprove = async (submission: any) => {
+    if (!token) return;
     const submissionId = String(submission._id);
     setPendingActionFor(submissionId);
     try {
       await approveReview({
+        adminToken: token,
         studentBookId: submission._id as any,
         approvedBy: user?._id as any,
       });
@@ -68,12 +73,14 @@ export function ReviewQueuePage() {
   };
 
   const submitFeedback = async (submission: any) => {
+    if (!token) return;
     const submissionId = String(submission._id);
     const feedback = (feedbackBySubmission[submissionId] || "").trim();
     if (!feedback) return;
     setPendingActionFor(submissionId);
     try {
       await requestReviewChanges({
+        adminToken: token,
         studentBookId: submission._id as any,
         feedback,
         feedbackBy: user?._id as any,

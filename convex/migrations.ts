@@ -1,5 +1,6 @@
 import { mutation } from "./_generated/server";
 import { v } from "convex/values";
+import { requireMaintenanceKey } from "./authz";
 
 /**
  * One-time migration: convert global trustJar doc to batch-specific docs.
@@ -10,8 +11,11 @@ import { v } from "convex/values";
  * creates two batch-specific copies (2153 and 2156), and deletes the old doc.
  */
 export const migrateTrustJarToBatches = mutation({
-  args: {},
-  handler: async (ctx) => {
+  args: {
+    maintenanceKey: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    requireMaintenanceKey(args.maintenanceKey);
     const allJars = await ctx.db.query("trustJar").collect();
 
     // Find the old global doc (one without a batch field, or with empty batch)
@@ -69,9 +73,11 @@ export const migrateTrustJarToBatches = mutation({
  */
 export const migrateKhanAcademyActivityLinks = mutation({
   args: {
+    maintenanceKey: v.optional(v.string()),
     dryRun: v.optional(v.boolean()),
   },
   handler: async (ctx, args) => {
+    requireMaintenanceKey(args.maintenanceKey);
     const dryRun = args.dryRun ?? true;
 
     const replacements: Record<string, string> = {

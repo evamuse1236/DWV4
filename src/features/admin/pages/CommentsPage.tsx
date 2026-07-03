@@ -7,14 +7,20 @@ import { Badge } from "@/shared/ui/badge";
 import { Button } from "@/shared/ui/button";
 
 export function CommentsPage() {
-  const { user } = useAuth();
+  const { token } = useAuth();
   const [statusFilter, setStatusFilter] = useState<"all" | "open" | "resolved">("open");
   const [search, setSearch] = useState("");
 
-  const comments = useQuery(api.studentComments.getForAdmin, {
-    status: statusFilter,
-    limit: 300,
-  });
+  const comments = useQuery(
+    api.studentComments.getForAdmin,
+    token
+      ? {
+          adminToken: token,
+          status: statusFilter,
+          limit: 300,
+        }
+      : "skip"
+  );
   const resolveComment = useMutation(api.studentComments.resolve);
 
   const filteredComments = useMemo(() => {
@@ -27,10 +33,10 @@ export function CommentsPage() {
   }, [comments, search]);
 
   const handleResolve = async (commentId: string) => {
-    if (!user?._id) return;
+    if (!token) return;
     await resolveComment({
+      adminToken: token,
       commentId: commentId as any,
-      resolvedBy: user._id as any,
     });
   };
 

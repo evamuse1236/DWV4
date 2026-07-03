@@ -102,9 +102,9 @@ const Icons = {
 // Student navigation items
 // Note: /check-in removed - gate enforces check-in before dashboard access
 const studentNavItems: NavItem[] = [
-  { path: "/dashboard", label: "Home", icon: Icons.home },
-  { path: "/sprint", label: "Sprint", icon: Icons.listChecks },
-  { path: "/deep-work", label: "DeepWork", icon: Icons.book },
+  { path: "/dashboard", label: "Today", icon: Icons.home },
+  { path: "/sprint", label: "Planner", icon: Icons.listChecks },
+  { path: "/deep-work", label: "Assignments", icon: Icons.book },
   { path: "/reading", label: "Library", icon: Icons.books },
   { path: "/review", label: "Review", icon: Icons.clipboard },
   ...(STUDENT_CHARACTER_SYSTEM_ENABLED
@@ -115,14 +115,14 @@ const studentNavItems: NavItem[] = [
   { path: "/settings", label: "Settings", icon: Icons.settings },
 ];
 
-// Admin navigation items
+// Admin navigation items (fallback shell; the real admin shell is AdminLayout)
 const adminNavItems: NavItem[] = [
-  { path: "/admin", label: "Dashboard", icon: Icons.home },
+  { path: "/admin", label: "Today", icon: Icons.home },
   { path: "/admin/students", label: "Students", icon: Icons.users },
-  { path: "/admin/objectives", label: "Objectives", icon: Icons.clipboard },
-  { path: "/admin/viva", label: "Viva", icon: Icons.check },
-  { path: "/admin/diagnostics", label: "Diagnostics", icon: Icons.listChecks },
+  { path: "/admin/objectives", label: "Units", icon: Icons.clipboard },
+  { path: "/admin/confirmations", label: "Confirmations", icon: Icons.check },
   { path: "/admin/sprints", label: "Sprints", icon: Icons.calendar },
+  { path: "/admin/projects", label: "Data", icon: Icons.listChecks },
   { path: "/admin/books", label: "Books", icon: Icons.books },
   { path: "/admin/norms", label: "Norms", icon: Icons.listChecks },
   { path: "/admin/trust-jar", label: "Trust Jar", icon: Icons.jar },

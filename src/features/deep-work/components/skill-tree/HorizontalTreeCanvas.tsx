@@ -88,6 +88,9 @@ export function HorizontalTreeCanvas({
     // Animation state - tree content visibility only (domain slides via CSS animation)
     const [showTreeContent, setShowTreeContent] = useState(false);
 
+    // Discoverability hint: shown until the student scrolls the tree once
+    const [showScrollHint, setShowScrollHint] = useState(true);
+
     // Drag-to-scroll state
     const isDragging = useRef(false);
     const startX = useRef(0);
@@ -238,6 +241,19 @@ export function HorizontalTreeCanvas({
         return () => container.removeEventListener("wheel", handleWheel);
     }, []);
 
+    // Dismiss the scroll hint once the student has moved the canvas
+    useEffect(() => {
+        const container = containerRef.current;
+        if (!container) return;
+
+        const handleScroll = () => {
+            if (container.scrollLeft > 40) setShowScrollHint(false);
+        };
+
+        container.addEventListener("scroll", handleScroll, { passive: true });
+        return () => container.removeEventListener("scroll", handleScroll);
+    }, []);
+
     const handleMajorClick = useCallback(
         (majorId: string) => {
             onSelectNode({ type: "major", id: majorId });
@@ -282,6 +298,12 @@ export function HorizontalTreeCanvas({
                 <CaretLeft size={18} weight="bold" />
                 <span>Back to Overview</span>
             </button>
+
+            {showScrollHint && showTreeContent && (
+                <div className={styles['scroll-hint']} aria-hidden>
+                    Drag or scroll to explore →
+                </div>
+            )}
 
             <div
                 className={styles['horizontal-scroll-container']}

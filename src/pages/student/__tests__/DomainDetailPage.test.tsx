@@ -17,7 +17,10 @@ vi.mock("@convex/_generated/api", () => ({
   api: {
     domains: { getById: "domains.getById" },
     objectives: { getAssignedByDomain: "objectives.getAssignedByDomain" },
-    mastery: { getMajorMasteryState: "mastery.getMajorMasteryState" },
+    assignments: {
+      getAssignmentState: "assignments.getAssignmentState",
+      submitWork: "assignments.submitWork",
+    },
     progress: { toggleActivity: "progress.toggleActivity" },
   },
 }));
@@ -41,6 +44,7 @@ vi.mock("@/features/auth/hooks/useAuth", () => ({
       displayName: "Test User",
       role: "student",
     },
+    token: "test-token",
   })),
 }));
 
@@ -104,42 +108,21 @@ const assignedMajors = [
   },
 ];
 
-const masteryState = {
+const assignmentState = {
+  studentMajorObjectiveId: "assignment_1",
   majorObjective: {
     _id: "major_1",
     title: "Algebra Basics",
   },
   domain: { _id: "domain_123", name: "Mathematics" },
-  majorAssignment: {
-    studentMajorObjectiveId: "assignment_1",
-    status: "in_progress",
-    vivaStatus: "requested",
-    vivaDecisionNotes: "Bring a clearer explanation for equation balancing.",
-  },
-  readiness: {
+  status: "rejected",
+  rawStatus: "rejected",
+  work: {
     totalSubObjectives: 1,
     completedSubObjectives: 1,
-    allSubObjectivesComplete: true,
+    allWorkComplete: true,
   },
-  latestAttempt: {
-    attemptId: "attempt_1",
-    passed: false,
-    score: 6,
-    questionCount: 10,
-    scorePercent: 60,
-    diagnosticModuleName: "Algebra",
-  },
-  retake: {
-    pendingRequest: null,
-    latestDecision: null,
-    activeUnlock: null,
-  },
-  actions: {
-    canStartDiagnostic: false,
-    canRequestViva: false,
-    canRequestRetake: true,
-  },
-  nextStep: "await_viva_decision",
+  confirmationNotes: "Bring a clearer explanation for equation balancing.",
 };
 
 describe("DomainDetailPage", () => {
@@ -159,20 +142,20 @@ describe("DomainDetailPage", () => {
     (useQuery as any).mockImplementation((query: string, args: any) => {
       if (query === "domains.getById") return mockDomain;
       if (query === "objectives.getAssignedByDomain") return assignedMajors;
-      if (query === "mastery.getMajorMasteryState" && args?.majorObjectiveId === "major_1") {
-        return masteryState;
+      if (query === "assignments.getAssignmentState" && args?.majorObjectiveId === "major_1") {
+        return assignmentState;
       }
       return undefined;
     });
   });
 
-  it("renders domain details and mastery summary content", () => {
+  it("renders domain details and assignment summary content", () => {
     renderPage();
 
     expect(screen.getByText("Mathematics")).toBeInTheDocument();
     expect(screen.getByText("Build strong math foundations")).toBeInTheDocument();
     expect(screen.getByText("Coach note")).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: /open mastery/i })).toHaveAttribute(
+    expect(screen.getByRole("link", { name: /open assignment/i })).toHaveAttribute(
       "href",
       "/deep-work/mastery/major_1"
     );
@@ -198,6 +181,7 @@ describe("DomainDetailPage", () => {
 
     await user.click(toggle!);
     expect(mockToggleActivity).toHaveBeenCalledWith({
+      token: "test-token",
       userId: "user_123",
       activityId: "activity_1",
       studentObjectiveId: "sub_obj_1",

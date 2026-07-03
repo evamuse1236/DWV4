@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useQuery } from "convex/react";
 import { api } from "@convex/_generated/api";
 import type { Id } from "@convex/_generated/dataModel";
+import { useAuth } from "@/features/auth/hooks/useAuth";
 import { Card, CardContent } from "@/shared/ui/card";
 import { Button } from "@/shared/ui/button";
 import { Input } from "@/shared/ui/input";
@@ -19,6 +20,7 @@ import {
   Users,
   CheckCircle2,
   Circle,
+  Download,
   Search,
   MessageSquarePlus,
 } from "lucide-react";
@@ -47,21 +49,29 @@ type StudentWithData = {
 export function ProjectDetailPage() {
   const { projectId } = useParams<{ projectId: string }>();
   const navigate = useNavigate();
+  const { token } = useAuth();
 
   // Queries
   const project = useQuery(
     api.projects.getById,
-    projectId ? { projectId: projectId as Id<"projects"> } : "skip"
+    projectId && token
+      ? { adminToken: token, projectId: projectId as Id<"projects"> }
+      : "skip"
   );
-  const students = useQuery(api.users.getAll);
-  const batches = useQuery(api.users.getBatches);
+  const adminArgs = token ? { adminToken: token } : "skip";
+  const students = useQuery(api.users.getAll, adminArgs);
+  const batches = useQuery(api.users.getBatches, adminArgs);
   const allLinks = useQuery(
     api.projectLinks.getByProject,
-    projectId ? { projectId: projectId as Id<"projects"> } : "skip"
+    projectId && token
+      ? { adminToken: token, projectId: projectId as Id<"projects"> }
+      : "skip"
   );
   const allReflections = useQuery(
     api.projectReflections.getByProject,
-    projectId ? { projectId: projectId as Id<"projects"> } : "skip"
+    projectId && token
+      ? { adminToken: token, projectId: projectId as Id<"projects"> }
+      : "skip"
   );
 
   // Local state
@@ -178,6 +188,56 @@ export function ProjectDetailPage() {
     });
   };
 
+  // One row per student: reflections, links, completion — Sheets-ready.
+  const handleExportCsv = () => {
+    const escape = (value: string | undefined | null) =>
+      `"${String(value ?? "").replaceAll('"', '""')}"`;
+    const header = [
+      "Student",
+      "Username",
+      "Batch",
+      "Status",
+      "What went well",
+      "Project description",
+      "Could improve",
+      "Links",
+    ];
+    const rows = studentsWithData.map((student) => {
+      const hasLinks = student.links.length > 0;
+      const isComplete = hasLinks && student.reflection?.isComplete;
+      const hasPartial = !!(
+        student.reflection?.didWell ||
+        student.reflection?.projectDescription ||
+        student.reflection?.couldImprove
+      );
+      const status = isComplete
+        ? "Complete"
+        : hasLinks || hasPartial
+          ? "Partial"
+          : "No data";
+      return [
+        student.displayName,
+        student.username,
+        student.batch ?? "",
+        status,
+        student.reflection?.didWell,
+        student.reflection?.projectDescription,
+        student.reflection?.couldImprove,
+        student.links.map((l) => `${l.title}: ${l.url}`).join(" | "),
+      ]
+        .map(escape)
+        .join(",");
+    });
+    const csv = [header.map(escape).join(","), ...rows].join("\r\n");
+    const blob = new Blob(["﻿" + csv], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+    const anchor = document.createElement("a");
+    anchor.href = url;
+    anchor.download = `${project.name.replaceAll(/[^\w-]+/g, "-")}-data.csv`;
+    anchor.click();
+    URL.revokeObjectURL(url);
+  };
+
   return (
     <div className="space-y-6">
       {/* Header */}
@@ -205,10 +265,16 @@ export function ProjectDetailPage() {
             </p>
           </div>
         </div>
-        <Button onClick={() => setIsChatOpen(true)}>
-          <MessageSquarePlus className="mr-2 h-4 w-4" />
-          AI Assistant
-        </Button>
+        <div className="flex gap-2">
+          <Button variant="outline" onClick={handleExportCsv}>
+            <Download className="mr-2 h-4 w-4" />
+            Export CSV
+          </Button>
+          <Button onClick={() => setIsChatOpen(true)}>
+            <MessageSquarePlus className="mr-2 h-4 w-4" />
+            AI Assistant
+          </Button>
+        </div>
       </div>
 
       {/* Stats Card */}
@@ -296,6 +362,7 @@ export function ProjectDetailPage() {
           filteredStudents.map((student) => (
             <StudentProjectCard
               key={student._id}
+              adminToken={token}
               student={student}
               projectId={projectId as Id<"projects">}
               isExpanded={expandedStudentId === student._id}
@@ -320,6 +387,7 @@ export function ProjectDetailPage() {
       {/* AI Chat */}
       {isChatOpen && projectId && (
         <ProjectDataChat
+          adminToken={token}
           projectId={projectId as Id<"projects">}
           projectName={project.name}
           students={studentsWithData}

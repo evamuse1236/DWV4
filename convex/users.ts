@@ -1,29 +1,35 @@
 import { query, mutation } from "./_generated/server";
 import { v } from "convex/values";
+import { requireAdmin, toSafeUser } from "./authz";
 
 // Get all students
 export const getAll = query({
-  args: {},
-  handler: async (ctx) => {
-    return await ctx.db
+  args: { adminToken: v.string() },
+  handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
+    const students = await ctx.db
       .query("users")
       .filter((q) => q.eq(q.field("role"), "student"))
       .collect();
+    return students.map(toSafeUser);
   },
 });
 
 // Get user by ID
 export const getById = query({
-  args: { userId: v.id("users") },
+  args: { adminToken: v.string(), userId: v.id("users") },
   handler: async (ctx, args) => {
-    return await ctx.db.get(args.userId);
+    await requireAdmin(ctx, args.adminToken);
+    const user = await ctx.db.get(args.userId);
+    return user ? toSafeUser(user) : null;
   },
 });
 
 // Get student count
 export const getStudentCount = query({
-  args: {},
-  handler: async (ctx) => {
+  args: { adminToken: v.string() },
+  handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const students = await ctx.db
       .query("users")
       .filter((q) => q.eq(q.field("role"), "student"))
@@ -34,16 +40,19 @@ export const getStudentCount = query({
 
 // Get ALL users (including admins) - for debugging
 export const getAllUsers = query({
-  args: {},
-  handler: async (ctx) => {
-    return await ctx.db.query("users").collect();
+  args: { adminToken: v.string() },
+  handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
+    const users = await ctx.db.query("users").collect();
+    return users.map(toSafeUser);
   },
 });
 
 // Get today's check-in count
 export const getTodayCheckInCount = query({
-  args: {},
-  handler: async (ctx) => {
+  args: { adminToken: v.string() },
+  handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const today = new Date().toISOString().split("T")[0];
     const checkIns = await ctx.db
       .query("emotionCheckIns")
@@ -61,10 +70,11 @@ export const getTodayCheckInCount = query({
 
 // Get students by batch
 export const getByBatch = query({
-  args: { batch: v.optional(v.string()) },
+  args: { adminToken: v.string(), batch: v.optional(v.string()) },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     if (args.batch) {
-      return await ctx.db
+      const students = await ctx.db
         .query("users")
         .filter((q) =>
           q.and(
@@ -73,22 +83,26 @@ export const getByBatch = query({
           )
         )
         .collect();
+      return students.map(toSafeUser);
     }
     // Return all students if no batch specified
-    return await ctx.db
+    const students = await ctx.db
       .query("users")
       .filter((q) => q.eq(q.field("role"), "student"))
       .collect();
+    return students.map(toSafeUser);
   },
 });
 
 // Update user's batch
 export const updateBatch = mutation({
   args: {
+    adminToken: v.string(),
     userId: v.id("users"),
     batch: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     await ctx.db.patch(args.userId, { batch: args.batch });
     return { success: true };
   },
@@ -96,8 +110,9 @@ export const updateBatch = mutation({
 
 // Get all unique batches
 export const getBatches = query({
-  args: {},
-  handler: async (ctx) => {
+  args: { adminToken: v.string() },
+  handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const students = await ctx.db
       .query("users")
       .filter((q) => q.eq(q.field("role"), "student"))
@@ -116,8 +131,9 @@ export const getBatches = query({
 
 // Remove a student (and their related data)
 export const remove = mutation({
-  args: { userId: v.id("users") },
+  args: { adminToken: v.string(), userId: v.id("users") },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     // Delete associated emotion check-ins
     const checkIns = await ctx.db
       .query("emotionCheckIns")

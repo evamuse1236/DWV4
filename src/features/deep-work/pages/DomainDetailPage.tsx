@@ -4,7 +4,7 @@ import { useQuery, useMutation } from "convex/react";
 import { motion } from "framer-motion";
 import { api } from "@convex/_generated/api";
 import { useAuth } from "@/features/auth/hooks/useAuth";
-import { MasteryStatusCard } from "@/features/mastery/components/MasteryStatusCard";
+import { AssignmentCard } from "@/features/assignments/components/AssignmentCard";
 import { getDomainIcon, getDomainColorClass } from "@/shared/lib/domain-utils";
 import {
   getObjectiveStatusClass,
@@ -44,25 +44,20 @@ const ActivityIcons = {
 };
 
 function MajorMasterySummary({
+  token,
   userId,
   majorObjectiveId,
 }: {
+  token: string;
   userId: string;
   majorObjectiveId: string;
 }) {
-  const masteryState = useQuery(api.mastery.getMajorMasteryState, {
-    userId: userId as any,
-    majorObjectiveId: majorObjectiveId as any,
-  });
-
-  if (masteryState === undefined || !masteryState) {
-    return <div className="text-xs text-[#888]">Loading mastery…</div>;
-  }
-
   return (
-    <MasteryStatusCard
-      state={masteryState as any}
-      masteryHref={`/deep-work/mastery/${majorObjectiveId}`}
+    <AssignmentCard
+      token={token}
+      userId={userId as any}
+      majorObjectiveId={majorObjectiveId as any}
+      assignmentHref={`/deep-work/mastery/${majorObjectiveId}`}
       className="min-w-[320px] max-w-[420px]"
     />
   );
@@ -71,7 +66,7 @@ function MajorMasterySummary({
 export function DomainDetailPage() {
   const { domainId } = useParams<{ domainId: string }>();
   const navigate = useNavigate();
-  const { user } = useAuth();
+  const { user, token } = useAuth();
   const [expandedSubObjective, setExpandedSubObjective] = useState<string | null>(null);
 
   const validDomainId = isValidConvexId(domainId);
@@ -83,8 +78,8 @@ export function DomainDetailPage() {
 
   const assignedMajors = useQuery(
     api.objectives.getAssignedByDomain,
-    user && validDomainId
-      ? { userId: user._id as any, domainId: domainId as any }
+    user && token && validDomainId
+      ? { token, userId: user._id as any, domainId: domainId as any }
       : "skip"
   );
 
@@ -95,8 +90,9 @@ export function DomainDetailPage() {
   const toggleActivity = useMutation(api.progress.toggleActivity);
 
   const handleActivityToggle = async (activityId: string, studentObjectiveId: string) => {
-    if (!user) return;
+    if (!user || !token) return;
     await toggleActivity({
+      token,
       userId: user._id as any,
       activityId: activityId as any,
       studentObjectiveId: studentObjectiveId as any,
@@ -229,9 +225,10 @@ export function DomainDetailPage() {
                           </p>
                         )}
                       </div>
-                      {major.assignment && user ? (
+                      {major.assignment && user && token ? (
                         <div className="w-full max-w-[420px]">
                           <MajorMasterySummary
+                            token={token}
                             userId={user._id as any}
                             majorObjectiveId={major.majorObjective._id}
                           />

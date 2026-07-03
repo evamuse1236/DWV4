@@ -1,5 +1,6 @@
 import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
+import { requireAdmin } from "./authz";
 
 const MS_PER_DAY = 1000 * 60 * 60 * 24;
 
@@ -64,9 +65,11 @@ export const getAll = query({
  */
 export const getStudentInsights = query({
   args: {
+    adminToken: v.string(),
     sprintId: v.id("sprints"),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const sprint = await ctx.db.get(args.sprintId);
     if (!sprint) {
       return null;
@@ -258,12 +261,14 @@ export const getStudentInsights = query({
  */
 export const create = mutation({
   args: {
+    adminToken: v.string(),
     name: v.string(),
     startDate: v.string(),
     endDate: v.string(),
     createdBy: v.id("users"),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     // Deactivate any current active sprint
     const activeSprint = await ctx.db
       .query("sprints")
@@ -291,13 +296,15 @@ export const create = mutation({
  */
 export const update = mutation({
   args: {
+    adminToken: v.string(),
     sprintId: v.id("sprints"),
     name: v.optional(v.string()),
     startDate: v.optional(v.string()),
     endDate: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
-    const { sprintId, ...updates } = args;
+    await requireAdmin(ctx, args.adminToken);
+    const { adminToken: _adminToken, sprintId, ...updates } = args;
     const filteredUpdates = Object.fromEntries(
       Object.entries(updates).filter(([_, v]) => v !== undefined)
     );
@@ -311,9 +318,11 @@ export const update = mutation({
  */
 export const setActive = mutation({
   args: {
+    adminToken: v.string(),
     sprintId: v.id("sprints"),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     // Deactivate all sprints
     const allSprints = await ctx.db.query("sprints").collect();
     for (const sprint of allSprints) {
@@ -333,9 +342,11 @@ export const setActive = mutation({
  */
 export const remove = mutation({
   args: {
+    adminToken: v.string(),
     sprintId: v.id("sprints"),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     await ctx.db.delete(args.sprintId);
     return { success: true };
   },

@@ -52,6 +52,7 @@ interface StudentData {
 }
 
 interface StudentProjectCardProps {
+  adminToken: string | null;
   student: StudentData;
   projectId: Id<"projects">;
   isExpanded: boolean;
@@ -59,6 +60,7 @@ interface StudentProjectCardProps {
 }
 
 export function StudentProjectCard({
+  adminToken,
   student,
   projectId,
   isExpanded,
@@ -114,11 +116,12 @@ export function StudentProjectCard({
     !!localReflection.couldImprove;
 
   const handleAddLink = async () => {
-    if (!newLink.url || !newLink.title) return;
+    if (!adminToken || !newLink.url || !newLink.title) return;
 
     setIsSavingLink(true);
     try {
       await addLink({
+        adminToken,
         projectId,
         userId: student._id,
         url: newLink.url,
@@ -135,8 +138,9 @@ export function StudentProjectCard({
   };
 
   const handleRemoveLink = async (linkId: Id<"projectLinks">) => {
+    if (!adminToken) return;
     try {
-      await removeLink({ linkId });
+      await removeLink({ adminToken, linkId });
     } catch (err) {
       console.error("Failed to remove link:", err);
     }
@@ -159,7 +163,7 @@ export function StudentProjectCard({
   };
 
   const handleSaveEditedLink = async () => {
-    if (!editingLinkId) return;
+    if (!editingLinkId || !adminToken) return;
 
     const trimmedTitle = editingLink.title.trim();
     const trimmedUrl = editingLink.url.trim();
@@ -172,6 +176,7 @@ export function StudentProjectCard({
     setIsUpdatingLink(true);
     try {
       await updateLink({
+        adminToken,
         linkId: editingLinkId,
         title: trimmedTitle,
         url: trimmedUrl,
@@ -187,9 +192,11 @@ export function StudentProjectCard({
   };
 
   const handleSaveReflection = async () => {
+    if (!adminToken) return;
     setIsSavingReflection(true);
     try {
       await updateReflection({
+        adminToken,
         projectId,
         userId: student._id,
         didWell: localReflection.didWell || undefined,

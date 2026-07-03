@@ -1,8 +1,11 @@
 import { mutation, query } from "./_generated/server";
 import { v } from "convex/values";
+import { requireAdmin, requireSession, requireUserMatch, toSafeUser } from "./authz";
+import type { Id } from "./_generated/dataModel";
 
 export const submit = mutation({
   args: {
+    token: v.string(),
     userId: v.id("users"),
     message: v.string(),
     route: v.optional(v.string()),
@@ -22,6 +25,7 @@ export const submit = mutation({
     diagnosticAttemptId: v.optional(v.id("diagnosticAttempts")),
   },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     const message = args.message.trim();
     const attachments = args.attachments ?? [];
     if (!message && attachments.length === 0) {
@@ -53,8 +57,11 @@ export const submit = mutation({
 });
 
 export const generateUploadUrl = mutation({
-  args: {},
-  handler: async (ctx) => {
+  args: {
+    token: v.string(),
+  },
+  handler: async (ctx, args) => {
+    await requireSession(ctx, args.token);
     const uploadUrl = await ctx.storage.generateUploadUrl();
     return { uploadUrl };
   },
@@ -62,10 +69,12 @@ export const generateUploadUrl = mutation({
 
 export const getMine = query({
   args: {
+    token: v.string(),
     userId: v.id("users"),
     limit: v.optional(v.number()),
   },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     const limit = Math.min(args.limit ?? 100, 300);
     const rows = await ctx.db
       .query("studentComments")
@@ -93,12 +102,14 @@ export const getMine = query({
 
 export const getForAdmin = query({
   args: {
+    adminToken: v.string(),
     status: v.optional(v.union(v.literal("all"), v.literal("open"), v.literal("resolved"))),
     userId: v.optional(v.id("users")),
     majorObjectiveId: v.optional(v.id("majorObjectives")),
     limit: v.optional(v.number()),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const limit = Math.min(args.limit ?? 200, 500);
     const requestedStatus = args.status ?? "all";
 
@@ -121,7 +132,7 @@ export const getForAdmin = query({
 
     return await Promise.all(
       sliced.map(async (row: any) => {
-        const user = await ctx.db.get(row.userId);
+        const user = await ctx.db.get(row.userId as Id<"users">);
         const majorObjective = row.majorObjectiveId
           ? await ctx.db.get(row.majorObjectiveId)
           : null;
@@ -134,7 +145,7 @@ export const getForAdmin = query({
 
         return {
           ...row,
-          user,
+          user: user ? toSafeUser(user) : null,
           majorObjective,
           attachments: attachmentsWithUrls,
         };
@@ -145,15 +156,16 @@ export const getForAdmin = query({
 
 export const resolve = mutation({
   args: {
+    adminToken: v.string(),
     commentId: v.id("studentComments"),
-    resolvedBy: v.id("users"),
   },
   handler: async (ctx, args) => {
+    const { user: admin } = await requireAdmin(ctx, args.adminToken);
     const row = await ctx.db.get(args.commentId);
     if (!row) throw new Error("Comment not found.");
     await ctx.db.patch(args.commentId, {
       status: "resolved",
-      resolvedBy: args.resolvedBy,
+      resolvedBy: admin._id,
       resolvedAt: Date.now(),
     });
 

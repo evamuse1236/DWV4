@@ -5,16 +5,19 @@ import {
   awardXpIfNotExists,
   ensureMomentumDomain,
 } from "./characterAwards";
+import { requireUserMatch } from "./authz";
 
 /**
  * Get goals for a user in a sprint (with action items)
  */
 export const getByUserAndSprint = query({
   args: {
+    token: v.string(),
     userId: v.id("users"),
     sprintId: v.id("sprints"),
   },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     const goals = await ctx.db
       .query("goals")
       .withIndex("by_user_sprint", (q) =>
@@ -45,11 +48,13 @@ export const getByUserAndSprint = query({
  */
 export const getWithActions = query({
   args: {
+    token: v.string(),
     goalId: v.id("goals"),
   },
   handler: async (ctx, args) => {
     const goal = await ctx.db.get(args.goalId);
     if (!goal) return null;
+    await requireUserMatch(ctx, args.token, goal.userId);
 
     const actionItems = await ctx.db
       .query("actionItems")
@@ -65,6 +70,7 @@ export const getWithActions = query({
  */
 export const create = mutation({
   args: {
+    token: v.string(),
     userId: v.id("users"),
     sprintId: v.id("sprints"),
     domainId: v.optional(v.id("domains")),
@@ -76,9 +82,11 @@ export const create = mutation({
     timeBound: v.string(),
   },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
+    const { token: _token, ...goalInput } = args;
     const now = Date.now();
     const goalId = await ctx.db.insert("goals", {
-      ...args,
+      ...goalInput,
       status: "not_started",
       createdAt: now,
       updatedAt: now,
@@ -92,6 +100,7 @@ export const create = mutation({
  */
 export const update = mutation({
   args: {
+    token: v.string(),
     goalId: v.id("goals"),
     domainId: v.optional(v.id("domains")),
     title: v.optional(v.string()),
@@ -107,7 +116,10 @@ export const update = mutation({
     )),
   },
   handler: async (ctx, args) => {
-    const { goalId, ...updates } = args;
+    const { token: _token, goalId, ...updates } = args;
+    const goal = await ctx.db.get(goalId);
+    if (!goal) return { success: false };
+    await requireUserMatch(ctx, args.token, goal.userId);
     const filteredUpdates = Object.fromEntries(
       Object.entries(updates).filter(([_, v]) => v !== undefined)
     );
@@ -121,9 +133,14 @@ export const update = mutation({
  */
 export const remove = mutation({
   args: {
+    token: v.string(),
     goalId: v.id("goals"),
   },
   handler: async (ctx, args) => {
+    const goal = await ctx.db.get(args.goalId);
+    if (!goal) return { success: false };
+    await requireUserMatch(ctx, args.token, goal.userId);
+
     // Delete action items first
     const actionItems = await ctx.db
       .query("actionItems")
@@ -144,6 +161,7 @@ export const remove = mutation({
  */
 export const addActionItem = mutation({
   args: {
+    token: v.string(),
     goalId: v.optional(v.id("goals")), // Optional - null for standalone tasks
     userId: v.id("users"),
     domainId: v.optional(v.id("domains")),
@@ -153,10 +171,15 @@ export const addActionItem = mutation({
     dayOfWeek: v.number(),
   },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     let maxOrder = -1;
     const momentumDomainId = await ensureMomentumDomain(ctx);
 
     if (args.goalId) {
+      const goal = await ctx.db.get(args.goalId);
+      if (!goal || goal.userId.toString() !== args.userId.toString()) {
+        throw new Error("Unauthorized");
+      }
       // Get current max order for this goal
       const existingItems = await ctx.db
         .query("actionItems")
@@ -199,11 +222,13 @@ export const addActionItem = mutation({
  */
 export const toggleActionItem = mutation({
   args: {
+    token: v.string(),
     itemId: v.id("actionItems"),
   },
   handler: async (ctx, args) => {
     const item = await ctx.db.get(args.itemId);
     if (!item) return { success: false };
+    await requireUserMatch(ctx, args.token, item.userId);
     const momentumDomainId = await ensureMomentumDomain(ctx);
 
     const completing = !item.isCompleted;
@@ -240,6 +265,7 @@ export const toggleActionItem = mutation({
  */
 export const updateActionItem = mutation({
   args: {
+    token: v.string(),
     itemId: v.id("actionItems"),
     domainId: v.optional(v.id("domains")),
     title: v.optional(v.string()),
@@ -249,9 +275,10 @@ export const updateActionItem = mutation({
     scheduledTime: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
-    const { itemId, ...updates } = args;
+    const { token: _token, itemId, ...updates } = args;
     const item = await ctx.db.get(itemId);
     if (!item) return { success: false };
+    await requireUserMatch(ctx, args.token, item.userId);
 
     const filteredUpdates = Object.fromEntries(
       Object.entries(updates).filter(([_, v]) => v !== undefined)
@@ -267,9 +294,13 @@ export const updateActionItem = mutation({
  */
 export const removeActionItem = mutation({
   args: {
+    token: v.string(),
     itemId: v.id("actionItems"),
   },
   handler: async (ctx, args) => {
+    const item = await ctx.db.get(args.itemId);
+    if (!item) return { success: false };
+    await requireUserMatch(ctx, args.token, item.userId);
     await ctx.db.delete(args.itemId);
     return { success: true };
   },
@@ -280,11 +311,13 @@ export const removeActionItem = mutation({
  */
 export const getActionItemsByDay = query({
   args: {
+    token: v.string(),
     userId: v.id("users"),
     weekNumber: v.number(),
     dayOfWeek: v.number(),
   },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     const items = await ctx.db
       .query("actionItems")
       .withIndex("by_user_day", (q) =>
@@ -312,10 +345,12 @@ export const getActionItemsByDay = query({
  */
 export const getStandaloneActionItems = query({
   args: {
+    token: v.string(),
     userId: v.id("users"),
     weekNumber: v.number(),
   },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     // Get all action items for the user in this week
     const allItems = await ctx.db
       .query("actionItems")
@@ -337,10 +372,12 @@ export const getStandaloneActionItems = query({
  */
 export const getPreviousSprintGoals = query({
   args: {
+    token: v.string(),
     userId: v.id("users"),
     currentSprintId: v.id("sprints"),
   },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     // Get all sprints to find the previous one
     const sprints = await ctx.db
       .query("sprints")
@@ -414,6 +451,7 @@ async function copyActionItems(
  */
 export const duplicate = mutation({
   args: {
+    token: v.string(),
     goalId: v.id("goals"),
     targetSprintId: v.optional(v.id("sprints")),
     includeActionItems: v.optional(v.boolean()),
@@ -423,6 +461,7 @@ export const duplicate = mutation({
     if (!sourceGoal) {
       return { success: false, error: "Goal not found" };
     }
+    await requireUserMatch(ctx, args.token, sourceGoal.userId);
 
     const now = Date.now();
     const newGoalId = await ctx.db.insert("goals", {
@@ -453,6 +492,7 @@ export const duplicate = mutation({
  */
 export const importGoal = mutation({
   args: {
+    token: v.string(),
     goalId: v.id("goals"),
     targetSprintId: v.id("sprints"),
     includeActionItems: v.optional(v.boolean()),
@@ -462,6 +502,7 @@ export const importGoal = mutation({
     if (!sourceGoal) {
       return { success: false, error: "Goal not found" };
     }
+    await requireUserMatch(ctx, args.token, sourceGoal.userId);
 
     const now = Date.now();
     const newGoalId = await ctx.db.insert("goals", {

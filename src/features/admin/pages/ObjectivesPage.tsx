@@ -13,8 +13,8 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
 } from "@/shared/ui/dialog";
+import { AdminPageHeader } from "@/features/admin/components/AdminPageHeader";
 import {
   Select,
   SelectContent,
@@ -59,9 +59,10 @@ const ACTIVITY_ICONS: Record<ActivityType, React.ReactNode> = {
 };
 
 export function ObjectivesPage() {
-  const { user } = useAuth();
+  const { user, token } = useAuth();
+  const adminArgs = token ? { adminToken: token } : "skip";
   const domains = useQuery(api.domains.getAll);
-  const students = useQuery(api.users.getAll);
+  const students = useQuery(api.users.getAll, adminArgs);
 
   const createMajor = useMutation(api.objectives.create);
   const updateMajor = useMutation(api.objectives.update);
@@ -136,12 +137,16 @@ export function ObjectivesPage() {
 
   const assignedStudents = useQuery(
     api.objectives.getAssignedStudents,
-    selectedSubObjective ? { objectiveId: selectedSubObjective._id } : "skip"
+    selectedSubObjective && token
+      ? { adminToken: token, objectiveId: selectedSubObjective._id }
+      : "skip"
   );
 
   const chapterAssignedStudents = useQuery(
     api.objectives.getAssignedStudentsForChapter,
-    selectedMajorForAssign ? { majorObjectiveId: selectedMajorForAssign._id } : "skip"
+    selectedMajorForAssign && token
+      ? { adminToken: token, majorObjectiveId: selectedMajorForAssign._id }
+      : "skip"
   );
 
   const activities = useQuery(
@@ -171,12 +176,13 @@ export function ObjectivesPage() {
   }, [majors]);
 
   const handleCreateMajor = async () => {
-    if (!user?._id || !newMajor.domainId) return;
+    if (!user?._id || !token || !newMajor.domainId) return;
     setIsLoading(true);
     setError(null);
 
     try {
       await createMajor({
+        adminToken: token,
         domainId: newMajor.domainId as any,
         title: newMajor.title,
         description: newMajor.description,
@@ -201,12 +207,13 @@ export function ObjectivesPage() {
   };
 
   const handleUpdateMajor = async () => {
-    if (!editingMajor) return;
+    if (!editingMajor || !token) return;
     setIsLoading(true);
     setError(null);
 
     try {
       await updateMajor({
+        adminToken: token,
         objectiveId: editingMajor._id,
         title: editMajorForm.title,
         description: editMajorForm.description,
@@ -230,10 +237,11 @@ export function ObjectivesPage() {
   };
 
   const handleDeleteMajor = async (objectiveId: string) => {
+    if (!token) return;
     if (!confirm("Delete this major objective and all its sub objectives?")) return;
 
     try {
-      await removeMajor({ objectiveId: objectiveId as any });
+      await removeMajor({ adminToken: token, objectiveId: objectiveId as any });
     } catch (err) {
       setError("Failed to delete major objective");
     }
@@ -273,13 +281,14 @@ export function ObjectivesPage() {
   };
 
   const handleSaveSubObjective = async () => {
-    if (!selectedMajorForSub || !newSubObjective.title || !newSubObjective.description) return;
+    if (!selectedMajorForSub || !token || !newSubObjective.title || !newSubObjective.description) return;
     setIsLoading(true);
     setError(null);
 
     try {
       if (editingSubObjective) {
         await updateSubObjective({
+          adminToken: token,
           objectiveId: editingSubObjective._id,
           title: newSubObjective.title,
           description: newSubObjective.description,
@@ -288,6 +297,7 @@ export function ObjectivesPage() {
         });
       } else {
         await createSubObjective({
+          adminToken: token,
           majorObjectiveId: selectedMajorForSub._id,
           title: newSubObjective.title,
           description: newSubObjective.description,
@@ -314,10 +324,11 @@ export function ObjectivesPage() {
   };
 
   const handleDeleteSubObjective = async (objectiveId: string) => {
+    if (!token) return;
     if (!confirm("Delete this sub objective and its activities?")) return;
 
     try {
-      await removeSubObjective({ objectiveId: objectiveId as any });
+      await removeSubObjective({ adminToken: token, objectiveId: objectiveId as any });
     } catch (err) {
       setError("Failed to delete sub objective");
     }
@@ -367,7 +378,7 @@ export function ObjectivesPage() {
   }, [availableStudents]);
 
   const handleAssignStudents = async () => {
-    if (!user?._id || selectedStudentIds.size === 0) return;
+    if (!user?._id || !token || selectedStudentIds.size === 0) return;
     if (!selectedSubObjective && !selectedMajorForAssign) return;
 
     setIsLoading(true);
@@ -376,12 +387,14 @@ export function ObjectivesPage() {
     try {
       if (selectedMajorForAssign) {
         await assignChapterToMultiple({
+          adminToken: token,
           majorObjectiveId: selectedMajorForAssign._id,
           studentIds: Array.from(selectedStudentIds) as any[],
           assignedBy: user._id as any,
         });
       } else {
         await assignToMultiple({
+          adminToken: token,
           objectiveId: selectedSubObjective._id,
           studentIds: Array.from(selectedStudentIds) as any[],
           assignedBy: user._id as any,
@@ -422,7 +435,7 @@ export function ObjectivesPage() {
   };
 
   const handleSaveActivity = async () => {
-    if (!expandedSubObjectiveId || !newActivity.title || !newActivity.url) return;
+    if (!expandedSubObjectiveId || !token || !newActivity.title || !newActivity.url) return;
 
     setIsLoading(true);
     setError(null);
@@ -430,6 +443,7 @@ export function ObjectivesPage() {
     try {
       if (editingActivity) {
         await updateActivity({
+          adminToken: token,
           activityId: editingActivity._id,
           title: newActivity.title,
           type: newActivity.type,
@@ -439,6 +453,7 @@ export function ObjectivesPage() {
       } else {
         const activityCount = activities?.length || 0;
         await createActivity({
+          adminToken: token,
           objectiveId: expandedSubObjectiveId as any,
           title: newActivity.title,
           type: newActivity.type,
@@ -459,10 +474,11 @@ export function ObjectivesPage() {
   };
 
   const handleDeleteActivity = async (activityId: string) => {
+    if (!token) return;
     if (!confirm("Are you sure you want to delete this activity?")) return;
 
     try {
-      await removeActivity({ activityId: activityId as any });
+      await removeActivity({ adminToken: token, activityId: activityId as any });
     } catch (err) {
       setError("Failed to delete activity");
     }
@@ -492,20 +508,19 @@ export function ObjectivesPage() {
 
   return (
     <div className="space-y-6">
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-        <div>
-          <h1 className="text-2xl font-serif font-semibold">Learning Objectives</h1>
-          <p className="text-muted-foreground">
-            Create major objectives and attach sub objectives with activities
-          </p>
-        </div>
-        <Dialog open={isAddMajorDialogOpen} onOpenChange={setIsAddMajorDialogOpen}>
-          <DialogTrigger asChild>
-            <Button>
-              <Plus className="mr-2 h-4 w-4" />
-              Add Major Objective
-            </Button>
-          </DialogTrigger>
+      <AdminPageHeader
+        eyebrow="Coach Work"
+        title="Learning Objectives"
+        description="Create major objectives and attach sub objectives with activities"
+        actions={
+          <Button onClick={() => setIsAddMajorDialogOpen(true)}>
+            <Plus className="mr-2 h-4 w-4" />
+            Add Major Objective
+          </Button>
+        }
+      />
+
+      <Dialog open={isAddMajorDialogOpen} onOpenChange={setIsAddMajorDialogOpen}>
           <DialogContent>
             <DialogHeader>
               <DialogTitle>Create Major Objective</DialogTitle>
@@ -615,8 +630,7 @@ export function ObjectivesPage() {
               </Button>
             </DialogFooter>
           </DialogContent>
-        </Dialog>
-      </div>
+      </Dialog>
 
       <Dialog open={isEditMajorDialogOpen} onOpenChange={(open) => {
         setIsEditMajorDialogOpen(open);

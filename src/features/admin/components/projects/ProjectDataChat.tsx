@@ -60,6 +60,7 @@ interface ExtractedData {
 }
 
 interface ProjectDataChatProps {
+  adminToken: string | null;
   projectId: Id<"projects">;
   projectName: string;
   students: StudentData[];
@@ -323,6 +324,7 @@ function TypingIndicator() {
 }
 
 export function ProjectDataChat({
+  adminToken,
   projectId,
   projectName,
   students,
@@ -367,7 +369,7 @@ export function ProjectDataChat({
 
   const handleSend = async (overrideInput?: string) => {
     const trimmedInput = (overrideInput ?? inputValue).trim();
-    if (!trimmedInput || isLoading) return;
+    if (!adminToken || !trimmedInput || isLoading) return;
 
     const userMessage = createMessage("user", trimmedInput);
     const intentPrefix = selectedIntent ? `[INTENT:${selectedIntent}] ` : "";
@@ -388,6 +390,7 @@ export function ProjectDataChat({
 
     try {
       const response = await chatAction({
+        adminToken,
         messages: nextHistory,
         projectName,
         students: students.map((s) => ({
@@ -429,7 +432,7 @@ export function ProjectDataChat({
   };
 
   const handleSaveData = async () => {
-    if (!pendingData) return;
+    if (!pendingData || !adminToken) return;
 
     setIsSaving(true);
     setError(null);
@@ -444,6 +447,7 @@ export function ProjectDataChat({
 
           for (const link of command.links) {
             await addLink({
+              adminToken,
               projectId,
               userId: studentId,
               url: link.url,
@@ -459,6 +463,7 @@ export function ProjectDataChat({
 
           if (hasReflectionData) {
             await updateReflection({
+              adminToken,
               projectId,
               userId: studentId,
               didWell: command.reflections.didWell || undefined,
@@ -474,6 +479,7 @@ export function ProjectDataChat({
 
         if (command.type === "add_book") {
           await createBook({
+            adminToken,
             title: command.book.title,
             author: command.book.author,
             readingUrl: command.book.readingUrl || undefined,

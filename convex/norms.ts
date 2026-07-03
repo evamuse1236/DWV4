@@ -1,30 +1,15 @@
 import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
-import type { MutationCtx } from "./_generated/server";
-import type { Doc } from "./_generated/dataModel";
+import { requireAdmin } from "./authz";
 
 const MAX_STRIKES = 3;
 
-async function verifyAdmin(
-  ctx: MutationCtx,
-  adminToken: string
-): Promise<Doc<"users"> | null> {
-  const session = await ctx.db
-    .query("sessions")
-    .withIndex("by_token", (q) => q.eq("token", adminToken))
-    .unique();
-
-  if (!session) return null;
-
-  const user = await ctx.db.get(session.userId);
-  if (!user || user.role !== "admin") return null;
-
-  return user;
-}
-
 export const getAll = query({
-  args: {},
-  handler: async (ctx) => {
+  args: {
+    adminToken: v.string(),
+  },
+  handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const students = await ctx.db
       .query("users")
       .filter((q) => q.eq(q.field("role"), "student"))
@@ -57,10 +42,7 @@ export const addStrike = mutation({
     userId: v.id("users"),
   },
   handler: async (ctx, args) => {
-    const admin = await verifyAdmin(ctx, args.adminToken);
-    if (!admin) {
-      return { success: false, error: "Unauthorized" };
-    }
+    const { user: admin } = await requireAdmin(ctx, args.adminToken);
 
     const existing = await ctx.db
       .query("studentNorms")
@@ -105,10 +87,7 @@ export const completePenalty = mutation({
     userId: v.id("users"),
   },
   handler: async (ctx, args) => {
-    const admin = await verifyAdmin(ctx, args.adminToken);
-    if (!admin) {
-      return { success: false, error: "Unauthorized" };
-    }
+    const { user: admin } = await requireAdmin(ctx, args.adminToken);
 
     const existing = await ctx.db
       .query("studentNorms")

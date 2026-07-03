@@ -32,6 +32,7 @@ interface AvailableBook {
 }
 
 interface BookBuddyProps {
+  token: string | null;
   readingHistory: ReadingHistoryItem[];
   availableBooks: AvailableBook[];
   onStartReading: (bookId: string) => void;
@@ -247,6 +248,7 @@ function BookRecCard({
 }
 
 export function BookBuddy({
+  token,
   readingHistory,
   availableBooks,
   onStartReading,
@@ -338,7 +340,7 @@ export function BookBuddy({
     recommend: boolean;
     nextAnswers?: GuideAnswers;
   }) => {
-    if (!messageText.trim() || isLoading) return;
+    if (!token || !messageText.trim() || isLoading) return;
 
     setInputValue("");
     setIsLoading(true);
@@ -351,6 +353,7 @@ export function BookBuddy({
 
     try {
       const response = await libraryChat({
+        token,
         messages: [{ role: "user", content: messageText }],
         personality,
         readingHistory,
@@ -648,7 +651,7 @@ export function BookBuddy({
                   handleChipClick(item as SuggestedReply);
                 }
               }}
-              disabled={isLoading || disabled || availableBooks.length === 0}
+              disabled={isLoading || disabled || !token || availableBooks.length === 0}
               className="prompt-chip"
               style={{
                 borderColor: `${config.accentColor}40`,
@@ -672,14 +675,14 @@ export function BookBuddy({
               }
             }}
             placeholder="What kind of book do you want?"
-            disabled={isLoading || disabled}
+            disabled={isLoading || disabled || !token}
             className="muse-input"
           />
           <button
             type="button"
             aria-label="Send message"
             onClick={() => void handleSend()}
-            disabled={!inputValue.trim() || isLoading || disabled}
+            disabled={!inputValue.trim() || isLoading || disabled || !token}
             className="muse-send-btn"
             style={{ color: config.accentColor }}
           >

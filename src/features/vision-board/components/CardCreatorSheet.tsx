@@ -12,10 +12,11 @@ import type {
   VisionBoardArea,
   VisionBoardCard,
   CardType,
-  CardSize,
   ColorVariant,
 } from "@/features/vision-board/hooks/useVisionBoard";
-import { DEFAULT_SIZE, ALLOWED_SIZES } from "@/features/vision-board/hooks/useVisionBoard";
+import { DEFAULT_STEP } from "@/features/vision-board/hooks/useVisionBoard";
+import type { SizeStep } from "@/features/vision-board/engine/types";
+import { STEP_LABELS as SIZE_STEP_LABELS } from "@/features/vision-board/engine/sizeLadder";
 import { PhIcon, ICON_OPTIONS } from "./PhIcon";
 
 // ---------------------------------------------------------------------------
@@ -31,7 +32,11 @@ const CARD_TYPE_META: { type: CardType; label: string; icon: string; desc: strin
   { type: "mini_tile", label: "Mini Tile", icon: "Diamond", desc: "Small icon + label" },
   { type: "motivation", label: "Motivation", icon: "Lightning", desc: "Inspiring title card" },
   { type: "journal", label: "Journal", icon: "Notebook", desc: "Text + reflection" },
+  { type: "countdown", label: "Countdown", icon: "HourglassHigh", desc: "Days until a big moment" },
+  { type: "photo_strip", label: "Photo Strip", icon: "Images", desc: "Pictures of the vision" },
 ];
+
+const SIZE_STEP_OPTIONS: SizeStep[] = [1, 2, 3, 4];
 
 const COLOR_OPTIONS: { value: ColorVariant; label: string; className: string }[] = [
   { value: "green", label: "Green", className: "bg-[var(--color-pastel-green)]" },
@@ -119,7 +124,11 @@ interface Props {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   areas: VisionBoardArea[];
-  onAdd: (card: Omit<VisionBoardCard, "id" | "order" | "createdAt">) => void;
+  onAdd: (
+    card: Omit<VisionBoardCard, "id" | "order" | "createdAt" | "sizeStep"> & {
+      sizeStep?: SizeStep;
+    },
+  ) => void;
   defaultAreaId?: string | null;
 }
 
@@ -142,7 +151,7 @@ export function CardCreatorSheet({ open, onOpenChange, areas, onAdd, defaultArea
   const [subtitle, setSubtitle] = useState("");
   const [icon, setIcon] = useState("");
   const [color, setColor] = useState<ColorVariant>("green");
-  const [size, setSize] = useState<CardSize>("md");
+  const [sizeStep, setSizeStepState] = useState<SizeStep>(2);
   const [imageUrl, setImageUrl] = useState("");
   const [progressPercent, setProgressPercent] = useState(0);
   const [targetCount, setTargetCount] = useState(10);
@@ -153,6 +162,8 @@ export function CardCreatorSheet({ open, onOpenChange, areas, onAdd, defaultArea
   const [quote, setQuote] = useState("");
   const [habitsText, setHabitsText] = useState("");
   const [textContent, setTextContent] = useState("");
+  const [targetDate, setTargetDate] = useState("");
+  const [photoUrlsText, setPhotoUrlsText] = useState("");
 
   // When opening, if a defaultAreaId is provided, skip step 0
   useEffect(() => {
@@ -177,7 +188,7 @@ export function CardCreatorSheet({ open, onOpenChange, areas, onAdd, defaultArea
     setSubtitle("");
     setIcon("");
     setColor("green");
-    setSize("md");
+    setSizeStepState(2);
     setImageUrl("");
     setProgressPercent(0);
     setTargetCount(10);
@@ -188,19 +199,23 @@ export function CardCreatorSheet({ open, onOpenChange, areas, onAdd, defaultArea
     setQuote("");
     setHabitsText("");
     setTextContent("");
+    setTargetDate("");
+    setPhotoUrlsText("");
   }
 
   function handleCreate() {
     if (!selectedType || !selectedArea || !title.trim()) return;
 
-    const card: Omit<VisionBoardCard, "id" | "order" | "createdAt"> = {
+    const card: Omit<VisionBoardCard, "id" | "order" | "createdAt" | "sizeStep"> & {
+      sizeStep?: SizeStep;
+    } = {
       areaId: selectedArea,
       cardType: selectedType,
       title: title.trim(),
       subtitle: subtitle.trim() || undefined,
       emoji: icon || undefined,
       colorVariant: color,
-      size,
+      sizeStep,
     };
 
     // Type-specific fields
@@ -245,6 +260,16 @@ export function CardCreatorSheet({ open, onOpenChange, areas, onAdd, defaultArea
           year: "numeric",
         });
         break;
+      case "countdown":
+        card.targetDate = targetDate || undefined;
+        break;
+      case "photo_strip":
+        card.imageUrls = photoUrlsText
+          .split("\n")
+          .map((l) => l.trim())
+          .filter(Boolean)
+          .slice(0, 4);
+        break;
     }
 
     onAdd(card);
@@ -252,10 +277,10 @@ export function CardCreatorSheet({ open, onOpenChange, areas, onAdd, defaultArea
     onOpenChange(false);
   }
 
-  // When a type is selected, set its default size
+  // When a type is selected, set its default size step
   function selectType(t: CardType) {
     setSelectedType(t);
-    setSize(DEFAULT_SIZE[t]);
+    setSizeStepState(DEFAULT_STEP[t]);
   }
 
   return (
@@ -585,6 +610,33 @@ export function CardCreatorSheet({ open, onOpenChange, areas, onAdd, defaultArea
                 </div>
               )}
 
+              {selectedType === "countdown" && (
+                <div>
+                  <SectionLabel>Counting down to</SectionLabel>
+                  <input
+                    type="date"
+                    value={targetDate}
+                    onChange={(e) => setTargetDate(e.target.value)}
+                    className="w-full p-3 rounded-xl border border-black/5 bg-white/60 font-body text-sm
+                               outline-none focus:border-[var(--color-primary)] transition-colors"
+                  />
+                </div>
+              )}
+
+              {selectedType === "photo_strip" && (
+                <div>
+                  <SectionLabel>Photo URLs (one per line, up to 4)</SectionLabel>
+                  <textarea
+                    value={photoUrlsText}
+                    onChange={(e) => setPhotoUrlsText(e.target.value)}
+                    rows={3}
+                    className="w-full p-3 rounded-xl border border-black/5 bg-white/60 font-body text-sm
+                               outline-none focus:border-[var(--color-primary)] transition-colors resize-none"
+                    placeholder={"https://…/dream-car.jpg\nhttps://…/beach.jpg"}
+                  />
+                </div>
+              )}
+
               {/* ---- Divider ---- */}
               <div className="border-t border-black/[0.06] my-1" />
 
@@ -625,26 +677,29 @@ export function CardCreatorSheet({ open, onOpenChange, areas, onAdd, defaultArea
 
               {/* ---- Size picker ---- */}
               <div>
-                <SectionLabel>Size</SectionLabel>
+                <SectionLabel>Starting size</SectionLabel>
                 <div className="flex gap-2 flex-wrap">
-                  {ALLOWED_SIZES[selectedType].map((s) => (
+                  {SIZE_STEP_OPTIONS.map((s) => (
                     <motion.button
                       key={s}
                       type="button"
-                      onClick={() => setSize(s)}
+                      onClick={() => setSizeStepState(s)}
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       className={cn(
                         "px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-[0.08em] transition-all duration-200",
-                        s === size
+                        s === sizeStep
                           ? "bg-[var(--color-text)] text-white shadow-sm"
                           : "bg-white/60 border border-black/[0.06] hover:bg-white/80 hover:border-black/10",
                       )}
                     >
-                      {s}
+                      {SIZE_STEP_LABELS[s]}
                     </motion.button>
                   ))}
                 </div>
+                <p className="mt-2 text-[10px] opacity-40">
+                  You can grow or shrink any card later — the collage adjusts around it.
+                </p>
               </div>
 
               {/* ---- Actions ---- */}

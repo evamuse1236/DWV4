@@ -1,5 +1,6 @@
 import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
+import { requireAdmin } from "./authz";
 
 const linkTypeValidator = v.union(
   v.literal("presentation"),
@@ -9,8 +10,9 @@ const linkTypeValidator = v.union(
 );
 
 export const getByProject = query({
-  args: { projectId: v.id("projects") },
+  args: { adminToken: v.string(), projectId: v.id("projects") },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     return await ctx.db
       .query("projectLinks")
       .withIndex("by_project", (q) => q.eq("projectId", args.projectId))
@@ -20,10 +22,12 @@ export const getByProject = query({
 
 export const getByProjectAndUser = query({
   args: {
+    adminToken: v.string(),
     projectId: v.id("projects"),
     userId: v.id("users"),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     return await ctx.db
       .query("projectLinks")
       .withIndex("by_project_user", (q) =>
@@ -35,6 +39,7 @@ export const getByProjectAndUser = query({
 
 export const add = mutation({
   args: {
+    adminToken: v.string(),
     projectId: v.id("projects"),
     userId: v.id("users"),
     url: v.string(),
@@ -42,6 +47,7 @@ export const add = mutation({
     linkType: linkTypeValidator,
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const linkId = await ctx.db.insert("projectLinks", {
       projectId: args.projectId,
       userId: args.userId,
@@ -56,6 +62,7 @@ export const add = mutation({
 
 export const addMany = mutation({
   args: {
+    adminToken: v.string(),
     links: v.array(
       v.object({
         projectId: v.id("projects"),
@@ -67,6 +74,7 @@ export const addMany = mutation({
     ),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const linkIds = [];
     for (const link of args.links) {
       const linkId = await ctx.db.insert("projectLinks", {
@@ -81,13 +89,15 @@ export const addMany = mutation({
 
 export const update = mutation({
   args: {
+    adminToken: v.string(),
     linkId: v.id("projectLinks"),
     url: v.optional(v.string()),
     title: v.optional(v.string()),
     linkType: v.optional(linkTypeValidator),
   },
   handler: async (ctx, args) => {
-    const { linkId, ...updates } = args;
+    await requireAdmin(ctx, args.adminToken);
+    const { adminToken: _adminToken, linkId, ...updates } = args;
     const filteredUpdates = Object.fromEntries(
       Object.entries(updates).filter(([, v]) => v !== undefined)
     );
@@ -98,9 +108,11 @@ export const update = mutation({
 
 export const remove = mutation({
   args: {
+    adminToken: v.string(),
     linkId: v.id("projectLinks"),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     await ctx.db.delete(args.linkId);
     return { success: true };
   },
@@ -108,10 +120,12 @@ export const remove = mutation({
 
 export const removeAllForUser = mutation({
   args: {
+    adminToken: v.string(),
     projectId: v.id("projects"),
     userId: v.id("users"),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const links = await ctx.db
       .query("projectLinks")
       .withIndex("by_project_user", (q) =>

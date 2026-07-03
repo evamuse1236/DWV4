@@ -1,5 +1,21 @@
 import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
+import { requireUserMatch } from "./authz";
+
+/** Collage v2 size steps are 1..4 (S/M/L/XL). */
+function clampSizeStep(step: number): number {
+  return Math.min(4, Math.max(1, Math.round(step)));
+}
+
+/** Legacy named size → v2 step (mirrors src engine adapter). */
+const LEGACY_SIZE_TO_STEP: Record<string, number> = {
+  sm: 1,
+  md: 2,
+  tall: 2,
+  wide: 3,
+  lg: 3,
+  hero: 4,
+};
 
 // ---------------------------------------------------------------------------
 // Preset areas seeded on first load
@@ -18,8 +34,9 @@ const PRESET_AREAS = [
 // ---------------------------------------------------------------------------
 
 export const getAreas = query({
-  args: { userId: v.id("users") },
+  args: { token: v.string(), userId: v.id("users") },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     return ctx.db
       .query("visionBoardAreas")
       .withIndex("by_user", (q) => q.eq("userId", args.userId))
@@ -28,8 +45,9 @@ export const getAreas = query({
 });
 
 export const getCards = query({
-  args: { userId: v.id("users") },
+  args: { token: v.string(), userId: v.id("users") },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     return ctx.db
       .query("visionBoardCards")
       .withIndex("by_user", (q) => q.eq("userId", args.userId))
@@ -45,8 +63,9 @@ export const getCards = query({
  * Idempotent: inserts 5 preset areas if the user has none.
  */
 export const seedPresetAreas = mutation({
-  args: { userId: v.id("users") },
+  args: { token: v.string(), userId: v.id("users") },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     const existing = await ctx.db
       .query("visionBoardAreas")
       .withIndex("by_user", (q) => q.eq("userId", args.userId))
@@ -69,11 +88,13 @@ export const seedPresetAreas = mutation({
 
 export const addArea = mutation({
   args: {
+    token: v.string(),
     userId: v.id("users"),
     name: v.string(),
     emoji: v.string(),
   },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     const areaId = await ctx.db.insert("visionBoardAreas", {
       userId: args.userId,
       name: args.name,
@@ -86,12 +107,16 @@ export const addArea = mutation({
 
 export const updateArea = mutation({
   args: {
+    token: v.string(),
     areaId: v.id("visionBoardAreas"),
     name: v.optional(v.string()),
     emoji: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
-    const { areaId, ...fields } = args;
+    const { token: _token, areaId, ...fields } = args;
+    const area = await ctx.db.get(areaId);
+    if (!area) throw new Error("Area not found");
+    await requireUserMatch(ctx, args.token, area.userId);
     const updates: Record<string, unknown> = { isPreset: false };
     if (fields.name !== undefined) updates.name = fields.name;
     if (fields.emoji !== undefined) updates.emoji = fields.emoji;
@@ -101,10 +126,11 @@ export const updateArea = mutation({
 });
 
 export const deleteArea = mutation({
-  args: { areaId: v.id("visionBoardAreas") },
+  args: { token: v.string(), areaId: v.id("visionBoardAreas") },
   handler: async (ctx, args) => {
     const area = await ctx.db.get(args.areaId);
     if (!area) throw new Error("Area not found");
+    await requireUserMatch(ctx, args.token, area.userId);
 
     // Cascade-delete all cards in this area
     const cards = await ctx.db
@@ -129,6 +155,7 @@ export const deleteArea = mutation({
 
 export const createCard = mutation({
   args: {
+    token: v.string(),
     userId: v.id("users"),
     areaId: v.id("visionBoardAreas"),
     cardType: v.union(
@@ -140,6 +167,8 @@ export const createCard = mutation({
       v.literal("mini_tile"),
       v.literal("motivation"),
       v.literal("journal"),
+      v.literal("countdown"),
+      v.literal("photo_strip"),
     ),
     title: v.string(),
     subtitle: v.optional(v.string()),
@@ -152,13 +181,18 @@ export const createCard = mutation({
       v.literal("orange"),
       v.literal("yellow"),
     ),
-    size: v.union(
-      v.literal("sm"),
-      v.literal("md"),
-      v.literal("lg"),
-      v.literal("tall"),
-      v.literal("wide"),
-      v.literal("hero"),
+    // Collage v2 size step (1..4). Legacy named size still accepted so the
+    // transition can roll back safely.
+    sizeStep: v.optional(v.number()),
+    size: v.optional(
+      v.union(
+        v.literal("sm"),
+        v.literal("md"),
+        v.literal("lg"),
+        v.literal("tall"),
+        v.literal("wide"),
+        v.literal("hero"),
+      ),
     ),
     // optional type-specific fields
     imageUrl: v.optional(v.string()),
@@ -178,10 +212,20 @@ export const createCard = mutation({
     dayCount: v.optional(v.number()),
     textContent: v.optional(v.string()),
     entryDate: v.optional(v.string()),
+    targetDate: v.optional(v.string()),
+    imageUrls: v.optional(v.array(v.string())),
   },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
+    const area = await ctx.db.get(args.areaId);
+    if (!area || area.userId.toString() !== args.userId.toString()) {
+      throw new Error("Unauthorized");
+    }
+    const { token: _token, ...cardInput } = args;
     const cardId = await ctx.db.insert("visionBoardCards", {
-      ...args,
+      ...cardInput,
+      sizeStep: clampSizeStep(args.sizeStep ?? 2),
+      schemaVersion: 2,
       order: Date.now(),
       createdAt: Date.now(),
     });
@@ -191,6 +235,7 @@ export const createCard = mutation({
 
 export const updateCard = mutation({
   args: {
+    token: v.string(),
     cardId: v.id("visionBoardCards"),
     title: v.optional(v.string()),
     subtitle: v.optional(v.string()),
@@ -232,20 +277,62 @@ export const updateCard = mutation({
     dayCount: v.optional(v.number()),
     textContent: v.optional(v.string()),
     entryDate: v.optional(v.string()),
+    targetDate: v.optional(v.string()),
+    imageUrls: v.optional(v.array(v.string())),
+    // Collage v2
+    sizeStep: v.optional(v.number()),
+    order: v.optional(v.number()),
   },
   handler: async (ctx, args) => {
-    const { cardId, ...updates } = args;
+    const { token: _token, cardId, ...updates } = args;
+    const card = await ctx.db.get(cardId);
+    if (!card) throw new Error("Card not found");
+    await requireUserMatch(ctx, args.token, card.userId);
     const filtered = Object.fromEntries(
       Object.entries(updates).filter(([_, v]) => v !== undefined),
     );
+    if (typeof filtered.sizeStep === "number") {
+      filtered.sizeStep = clampSizeStep(filtered.sizeStep);
+      filtered.schemaVersion = 2;
+    }
     await ctx.db.patch(cardId, filtered);
     return { success: true };
   },
 });
 
-export const deleteCard = mutation({
-  args: { cardId: v.id("visionBoardCards") },
+/**
+ * Lazy per-user migration of v1 cards into the collage v2 model.
+ * Idempotent; fired once from the client when unmigrated cards exist.
+ */
+export const migrateMyCards = mutation({
+  args: { token: v.string(), userId: v.id("users") },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
+    const cards = await ctx.db
+      .query("visionBoardCards")
+      .withIndex("by_user", (q) => q.eq("userId", args.userId))
+      .collect();
+
+    let migrated = 0;
+    for (const card of cards) {
+      if (typeof card.sizeStep === "number") continue;
+      await ctx.db.patch(card._id, {
+        sizeStep: LEGACY_SIZE_TO_STEP[card.size ?? ""] ?? 2,
+        schemaVersion: 2,
+      });
+      migrated += 1;
+    }
+
+    return { migrated };
+  },
+});
+
+export const deleteCard = mutation({
+  args: { token: v.string(), cardId: v.id("visionBoardCards") },
+  handler: async (ctx, args) => {
+    const card = await ctx.db.get(args.cardId);
+    if (!card) throw new Error("Card not found");
+    await requireUserMatch(ctx, args.token, card.userId);
     await ctx.db.delete(args.cardId);
     return { success: true };
   },
@@ -256,10 +343,11 @@ export const deleteCard = mutation({
 // ---------------------------------------------------------------------------
 
 export const incrementCounter = mutation({
-  args: { cardId: v.id("visionBoardCards") },
+  args: { token: v.string(), cardId: v.id("visionBoardCards") },
   handler: async (ctx, args) => {
     const card = await ctx.db.get(args.cardId);
     if (!card) throw new Error("Card not found");
+    await requireUserMatch(ctx, args.token, card.userId);
     const next = Math.min(
       (card.currentCount ?? 0) + 1,
       card.targetCount ?? Infinity,
@@ -270,10 +358,11 @@ export const incrementCounter = mutation({
 });
 
 export const incrementProgress = mutation({
-  args: { cardId: v.id("visionBoardCards") },
+  args: { token: v.string(), cardId: v.id("visionBoardCards") },
   handler: async (ctx, args) => {
     const card = await ctx.db.get(args.cardId);
     if (!card) throw new Error("Card not found");
+    await requireUserMatch(ctx, args.token, card.userId);
     const next = Math.min(
       (card.completedSteps ?? 0) + 1,
       card.totalSteps ?? Infinity,
@@ -284,10 +373,11 @@ export const incrementProgress = mutation({
 });
 
 export const incrementStreak = mutation({
-  args: { cardId: v.id("visionBoardCards") },
+  args: { token: v.string(), cardId: v.id("visionBoardCards") },
   handler: async (ctx, args) => {
     const card = await ctx.db.get(args.cardId);
     if (!card) throw new Error("Card not found");
+    await requireUserMatch(ctx, args.token, card.userId);
     const next = (card.streakCount ?? 0) + 1;
     await ctx.db.patch(args.cardId, { streakCount: next });
     return { streakCount: next };
@@ -296,12 +386,14 @@ export const incrementStreak = mutation({
 
 export const toggleHabit = mutation({
   args: {
+    token: v.string(),
     cardId: v.id("visionBoardCards"),
     habitIndex: v.number(),
   },
   handler: async (ctx, args) => {
     const card = await ctx.db.get(args.cardId);
     if (!card) throw new Error("Card not found");
+    await requireUserMatch(ctx, args.token, card.userId);
     if (!card.habits) throw new Error("Card has no habits");
 
     const habits = card.habits.map((h, i) =>

@@ -107,6 +107,7 @@ const defaultBooks = [
 ];
 
 const defaultProps = {
+  token: "test-token",
   readingHistory: [],
   availableBooks: defaultBooks,
   onStartReading: vi.fn(),

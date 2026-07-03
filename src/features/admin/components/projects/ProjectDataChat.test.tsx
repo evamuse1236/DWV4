@@ -45,6 +45,7 @@ import { ProjectDataChat } from "./ProjectDataChat";
 const defaultProps = {
   projectId: "project_1" as Id<"projects">,
   projectName: "Science Expo",
+  adminToken: "test-admin-token",
   students: [
     {
       _id: "user_1" as Id<"users">,

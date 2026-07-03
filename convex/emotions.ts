@@ -1,5 +1,6 @@
 import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
+import { requireAdmin, requireUserMatch, requireUserOrAdmin, toSafeUser } from "./authz";
 
 /**
  * Get all emotion categories with their subcategories
@@ -28,12 +29,14 @@ export const getCategories = query({
  */
 export const saveCheckIn = mutation({
   args: {
+    token: v.string(),
     userId: v.id("users"),
     categoryId: v.id("emotionCategories"),
     subcategoryId: v.id("emotionSubcategories"),
     journalEntry: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     const checkInId = await ctx.db.insert("emotionCheckIns", {
       userId: args.userId,
       categoryId: args.categoryId,
@@ -52,15 +55,17 @@ export const saveCheckIn = mutation({
  */
 export const updateCheckIn = mutation({
   args: {
+    token: v.string(),
     checkInId: v.id("emotionCheckIns"),
     categoryId: v.optional(v.id("emotionCategories")),
     subcategoryId: v.optional(v.id("emotionSubcategories")),
     journalEntry: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
-    const { checkInId, ...updates } = args;
+    const { token: _token, checkInId, ...updates } = args;
     const checkIn = await ctx.db.get(checkInId);
     if (!checkIn) return { success: false };
+    await requireUserMatch(ctx, args.token, checkIn.userId);
 
     const filteredUpdates = Object.fromEntries(
       Object.entries(updates).filter(([_, v]) => v !== undefined)
@@ -76,9 +81,12 @@ export const updateCheckIn = mutation({
  */
 export const getTodayCheckIn = query({
   args: {
+    token: v.optional(v.string()),
+    adminToken: v.optional(v.string()),
     userId: v.id("users"),
   },
   handler: async (ctx, args) => {
+    await requireUserOrAdmin(ctx, args);
     const startOfDay = new Date();
     startOfDay.setHours(0, 0, 0, 0);
 
@@ -110,10 +118,13 @@ export const getTodayCheckIn = query({
  */
 export const getHistory = query({
   args: {
+    token: v.optional(v.string()),
+    adminToken: v.optional(v.string()),
     userId: v.id("users"),
     limit: v.optional(v.number()),
   },
   handler: async (ctx, args) => {
+    await requireUserOrAdmin(ctx, args);
     const limit = args.limit || 30;
 
     const checkIns = await ctx.db
@@ -144,10 +155,13 @@ export const getHistory = query({
  */
 export const getStats = query({
   args: {
+    token: v.optional(v.string()),
+    adminToken: v.optional(v.string()),
     userId: v.id("users"),
     days: v.optional(v.number()),
   },
   handler: async (ctx, args) => {
+    await requireUserOrAdmin(ctx, args);
     const days = args.days || 7;
     const startDate = Date.now() - days * 24 * 60 * 60 * 1000;
 
@@ -185,8 +199,11 @@ export const getStats = query({
  * Get all today's check-ins (admin view)
  */
 export const getTodayCheckIns = query({
-  args: {},
-  handler: async (ctx) => {
+  args: {
+    adminToken: v.string(),
+  },
+  handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const startOfDay = new Date();
     startOfDay.setHours(0, 0, 0, 0);
 
@@ -202,7 +219,7 @@ export const getTodayCheckIns = query({
         const user = await ctx.db.get(checkIn.userId);
         const category = await ctx.db.get(checkIn.categoryId);
         const subcategory = await ctx.db.get(checkIn.subcategoryId);
-        return { ...checkIn, user, category, subcategory };
+        return { ...checkIn, user: user ? toSafeUser(user) : null, category, subcategory };
       })
     );
 
@@ -221,9 +238,12 @@ function formatDateKey(date: Date): string {
  */
 export const deleteTodayCheckIn = mutation({
   args: {
+    token: v.optional(v.string()),
+    adminToken: v.optional(v.string()),
     userId: v.id("users"),
   },
   handler: async (ctx, args) => {
+    await requireUserOrAdmin(ctx, args);
     const startOfDay = new Date();
     startOfDay.setHours(0, 0, 0, 0);
 

@@ -1,6 +1,7 @@
 import { mutation } from "./_generated/server";
 import { v } from "convex/values";
 import { hashPassword } from "./utils";
+import { requireMaintenanceKey } from "./authz";
 
 const defaultBadgeDefinitions = [
   {
@@ -332,8 +333,11 @@ export const seedAll = mutation({
  * Username and password are the lowercase version of the name
  */
 export const seedStudents = mutation({
-  args: {},
-  handler: async (ctx) => {
+  args: {
+    maintenanceKey: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    requireMaintenanceKey(args.maintenanceKey);
     const batch2156 = [
       "Riya",
       "Zuhayr",
@@ -427,8 +431,11 @@ export const seedStudents = mutation({
  * Username and password will both be the provided value
  */
 export const createTestStudent = mutation({
-  args: {},
-  handler: async (ctx) => {
+  args: {
+    maintenanceKey: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    requireMaintenanceKey(args.maintenanceKey);
     const username = "student";
     const password = "student";
     
@@ -461,8 +468,11 @@ export const createTestStudent = mutation({
  * Use this to replace old mock data with real books
  */
 export const reseedBooks = mutation({
-  args: {},
-  handler: async (ctx) => {
+  args: {
+    maintenanceKey: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    requireMaintenanceKey(args.maintenanceKey);
     // Delete all studentBooks entries first (foreign key constraint)
     const allStudentBooks = await ctx.db.query("studentBooks").collect();
     for (const sb of allStudentBooks) {
@@ -529,8 +539,11 @@ export const reseedBooks = mutation({
 
 // Seed 10 test objectives for each domain (for UI testing)
 export const seedTestObjectives = mutation({
-  args: {},
-  handler: async (ctx) => {
+  args: {
+    maintenanceKey: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    requireMaintenanceKey(args.maintenanceKey);
     // Get all domains
     const domains = await ctx.db.query("domains").collect();
     if (domains.length === 0) {
@@ -636,9 +649,11 @@ export const seedTestObjectives = mutation({
 // Assign all objectives to a student (for UI testing)
 export const assignAllObjectivesToStudent = mutation({
   args: {
+    maintenanceKey: v.optional(v.string()),
     studentUsername: v.string(),
   },
   handler: async (ctx, args) => {
+    requireMaintenanceKey(args.maintenanceKey);
     // Find the student
     const student = await ctx.db
       .query("users")
@@ -715,8 +730,11 @@ export const assignAllObjectivesToStudent = mutation({
  * Replace Reading objectives with 4 proper major objectives, each with 4 sub-objectives
  */
 export const seedReadingObjectives = mutation({
-  args: {},
-  handler: async (ctx) => {
+  args: {
+    maintenanceKey: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    requireMaintenanceKey(args.maintenanceKey);
     // Find Reading domain
     const readingDomain = await ctx.db
       .query("domains")
@@ -897,8 +915,11 @@ export const seedReadingObjectives = mutation({
  * Assign all Reading objectives to all students
  */
 export const assignReadingToAllStudents = mutation({
-  args: {},
-  handler: async (ctx) => {
+  args: {
+    maintenanceKey: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    requireMaintenanceKey(args.maintenanceKey);
     // Find Reading domain
     const readingDomain = await ctx.db
       .query("domains")
@@ -995,8 +1016,11 @@ export const assignReadingToAllStudents = mutation({
  * Adds activities to Reading sub-objectives
  */
 export const seedTestActivities = mutation({
-  args: {},
-  handler: async (ctx) => {
+  args: {
+    maintenanceKey: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    requireMaintenanceKey(args.maintenanceKey);
     // Get Reading domain
     const readingDomain = await ctx.db
       .query("domains")
@@ -1081,8 +1105,11 @@ export const seedTestActivities = mutation({
  * - Inserts new curriculum with sequential timestamps for ordering
  */
 export const migrateCurriculum = mutation({
-  args: {},
-  handler: async (ctx) => {
+  args: {
+    maintenanceKey: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    requireMaintenanceKey(args.maintenanceKey);
     // Get admin user for createdBy
     const admin = await ctx.db
       .query("users")
@@ -1348,8 +1375,11 @@ export const migrateCurriculum = mutation({
  * Run: npx convex run seed:seedMathFromPlaylist
  */
 export const seedMathFromPlaylist = mutation({
-  args: {},
-  handler: async (ctx) => {
+  args: {
+    maintenanceKey: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    requireMaintenanceKey(args.maintenanceKey);
     // Get admin user
     const admin = await ctx.db
       .query("users")
@@ -2593,8 +2623,11 @@ export const seedMathFromPlaylist = mutation({
  * Run: npx convex run seed:seedBrilliantCurriculum
  */
 export const seedBrilliantCurriculum = mutation({
-  args: {},
-  handler: async (ctx) => {
+  args: {
+    maintenanceKey: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    requireMaintenanceKey(args.maintenanceKey);
     const admin = await ctx.db
       .query("users")
       .filter((q) => q.eq(q.field("role"), "admin"))

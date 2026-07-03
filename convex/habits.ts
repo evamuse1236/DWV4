@@ -5,16 +5,19 @@ import {
   awardXpIfNotExists,
   ensureMomentumDomain,
 } from "./characterAwards";
+import { requireUserMatch } from "./authz";
 
 /**
  * Get habits for a user in a sprint (with completions)
  */
 export const getByUserAndSprint = query({
   args: {
+    token: v.string(),
     userId: v.id("users"),
     sprintId: v.id("sprints"),
   },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     const habits = await ctx.db
       .query("habits")
       .withIndex("by_user_sprint", (q) =>
@@ -42,11 +45,13 @@ export const getByUserAndSprint = query({
  */
 export const getWithCompletions = query({
   args: {
+    token: v.string(),
     habitId: v.id("habits"),
   },
   handler: async (ctx, args) => {
     const habit = await ctx.db.get(args.habitId);
     if (!habit) return null;
+    await requireUserMatch(ctx, args.token, habit.userId);
 
     const completions = await ctx.db
       .query("habitCompletions")
@@ -62,6 +67,7 @@ export const getWithCompletions = query({
  */
 export const create = mutation({
   args: {
+    token: v.string(),
     userId: v.id("users"),
     sprintId: v.id("sprints"),
     domainId: v.optional(v.id("domains")),
@@ -73,9 +79,11 @@ export const create = mutation({
     reward: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
+    const { token: _token, ...habitInput } = args;
     const momentumDomainId = await ensureMomentumDomain(ctx);
     const habitId = await ctx.db.insert("habits", {
-      ...args,
+      ...habitInput,
       domainId: momentumDomainId,
       createdAt: Date.now(),
     });
@@ -88,6 +96,7 @@ export const create = mutation({
  */
 export const update = mutation({
   args: {
+    token: v.string(),
     habitId: v.id("habits"),
     domainId: v.optional(v.id("domains")),
     name: v.optional(v.string()),
@@ -98,7 +107,10 @@ export const update = mutation({
     reward: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
-    const { habitId, ...updates } = args;
+    const { token: _token, habitId, ...updates } = args;
+    const habit = await ctx.db.get(habitId);
+    if (!habit) return { success: false };
+    await requireUserMatch(ctx, args.token, habit.userId);
     const filteredUpdates = Object.fromEntries(
       Object.entries(updates).filter(([_, v]) => v !== undefined)
     );
@@ -112,9 +124,14 @@ export const update = mutation({
  */
 export const remove = mutation({
   args: {
+    token: v.string(),
     habitId: v.id("habits"),
   },
   handler: async (ctx, args) => {
+    const habit = await ctx.db.get(args.habitId);
+    if (!habit) return { success: false };
+    await requireUserMatch(ctx, args.token, habit.userId);
+
     // Delete completions first
     const completions = await ctx.db
       .query("habitCompletions")
@@ -135,6 +152,7 @@ export const remove = mutation({
  */
 export const toggleCompletion = mutation({
   args: {
+    token: v.string(),
     habitId: v.id("habits"),
     userId: v.id("users"),
     date: v.string(),
@@ -142,6 +160,10 @@ export const toggleCompletion = mutation({
   handler: async (ctx, args) => {
     const habit = await ctx.db.get(args.habitId);
     if (!habit) throw new Error("Habit not found");
+    await requireUserMatch(ctx, args.token, habit.userId);
+    if (habit.userId.toString() !== args.userId.toString()) {
+      throw new Error("Unauthorized");
+    }
     const momentumDomainId = await ensureMomentumDomain(ctx);
 
     // Check if completion exists
@@ -195,11 +217,13 @@ export const toggleCompletion = mutation({
  */
 export const getCompletionsInRange = query({
   args: {
+    token: v.string(),
     userId: v.id("users"),
     startDate: v.string(),
     endDate: v.string(),
   },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     const completions = await ctx.db
       .query("habitCompletions")
       .withIndex("by_user_date", (q) => q.eq("userId", args.userId))
@@ -219,9 +243,14 @@ export const getCompletionsInRange = query({
  */
 export const getStreak = query({
   args: {
+    token: v.string(),
     habitId: v.id("habits"),
   },
   handler: async (ctx, args) => {
+    const habit = await ctx.db.get(args.habitId);
+    if (!habit) return 0;
+    await requireUserMatch(ctx, args.token, habit.userId);
+
     const completions = await ctx.db
       .query("habitCompletions")
       .withIndex("by_habit", (q) => q.eq("habitId", args.habitId))

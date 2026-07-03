@@ -23,7 +23,7 @@ React (Vite + Router)
 - Daily rhythm: `emotion*`, `sprints`, `goals`, `actionItems`, `habits`, `habitCompletions`
 - Learning graph: `domains`, `majorObjectives`, `learningObjectives`, `activities`
 - Student progress: `studentMajorObjectives`, `studentObjectives`, `activityProgress`
-- Diagnostics: `diagnosticUnlockRequests`, `diagnosticUnlocks`, `diagnosticAttempts`
+- Diagnostics (archived; no UI reaches these): `diagnosticUnlockRequests`, `diagnosticUnlocks`, `diagnosticAttempts`
 - Reading: `books`, `studentBooks`
 - Admin/community: `studentComments`, `bookReviewComments`, `trustJar`, `studentNorms`
 - Character: `character*`, `tarotCards`, `badgeDefinitions`, `studentBadges`
@@ -32,23 +32,20 @@ React (Vite + Router)
 
 ## Status lifecycles
 
-- `studentMajorObjectives.status`: `assigned -> in_progress -> mastered`
-- `studentMajorObjectives.vivaStatus`: `not_requested -> requested -> approved | not_ready`
-- `diagnosticUnlockRequests.status`: `pending -> approved | denied | canceled`
-- `diagnosticUnlocks.status`: `approved -> consumed | expired | revoked`
+- `studentMajorObjectives.status` (assignment flow): `assigned -> in_progress -> submitted -> approved`, with `submitted -> rejected -> submitted` on coach send-back. Legacy `mastered` reads as approved; legacy `viva_requested` reads as submitted (`convex/assignments.ts:toAssignmentStatus`).
+- `studentMajorObjectives.vivaStatus` (archived): retained for history only.
+- `diagnosticUnlockRequests.status` / `diagnosticUnlocks.status` (archived): retained for history only.
 - `books.libraryStatus`: `draft -> curated` as admins enrich student-submitted or incomplete library entries.
 - `studentBooks.status`: active reading stays in `reading | review_draft`; quick history logging uses `already_read`; finishing moves to `completed`; optional reviews can be saved after completion without approval. Legacy `review_submitted`, `review_changes_requested`, `review_approved`, `presentation_requested`, and `presented` rows are read as done/non-blocking for compatibility.
 
-## Mastery workflow contracts
+## Assignment workflow contracts
 
-- Student mastery state is normalized in `convex/mastery.ts` through `getMajorMasteryState`.
-- Student-facing mastery actions live on `src/features/mastery/pages/MasteryPage.tsx`.
-- `src/features/diagnostics/pages/DiagnosticPage.tsx` is for taking diagnostics, not for owning viva or retake workflow decisions.
-- `src/features/reading/pages/ReviewPage.tsx` is history/reference and links back into the active mastery flow.
-- Admin viva decisions live on `src/features/admin/pages/VivaQueuePage.tsx`.
-- Admin retake approvals and attempt review live on `src/features/admin/pages/DiagnosticsPage.tsx`.
-- Retake approvals no longer depend on viva state.
-- Legacy `studentMajorObjectives.status === "viva_requested"` is migrated/read as `status: "in_progress"` plus `vivaStatus: "requested"` for compatibility.
+- Assignment state is normalized in `convex/assignments.ts` through `getAssignmentState`; the student's mark-done action is `submitWork`, the coach's decisions are `approveWork` / `rejectWork`.
+- `submitWork` requires every part of the unit's work to be complete (`studentObjectives.status === "completed"` for all subs) unless the unit has no subs.
+- `rejectWork` requires a coach note; the note is shown to the student on their assignment card.
+- Student-facing assignment actions live on `src/features/assignments/` (AssignmentCard is the single source of "what do I do next").
+- Coach confirmations live on `src/features/admin/pages/ConfirmationsPage.tsx`; legacy viva requests surface in the same queue so nothing is lost.
+- `approveWork` awards XP through the existing ledger with the `major_mastered` sourceType key, so a unit can never award twice across the old and new flows.
 
 ## Reading UX contracts
 
@@ -59,7 +56,7 @@ React (Vite + Router)
 - Reading-card remove (`×`) is a hover/focus affordance and removes the book from visible lists immediately while mutation completes.
 - Students can finish books without coach action. Reviews are optional and can be added or edited after a book is finished.
 - Community review visibility depends on a finished book having non-empty review text; there is no approval gate.
-- In `src/features/reading/pages/ReviewPage.tsx`, students see review prompt suggestions for finished books that still need a review, in addition to diagnostic review history.
+- In `src/features/reading/pages/ReviewPage.tsx`, students see review prompt suggestions for finished books that still need a review, plus the reviews they have written with coach feedback.
 - `ReviewPage` suggestion links deep-link into `ReadingPage` with `?openBook=<bookId>` and auto-open that book's review modal on the Library tab.
 - `src/features/reading/components/BookBuddy.tsx` uses a guided chip flow plus optional free text. Deterministic recommendation ranking happens before AI voice wrapping, and candidate books exclude every book already linked to the student.
 

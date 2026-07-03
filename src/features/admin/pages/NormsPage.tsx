@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "@convex/_generated/api";
-import { useSessionToken } from "@/features/auth/hooks/useAuth";
+import { useAuth } from "@/features/auth/hooks/useAuth";
 import { toast } from "sonner";
 import {
   Card,
@@ -14,9 +14,9 @@ import { Button } from "@/shared/ui/button";
 import { Badge } from "@/shared/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/shared/ui/avatar";
 import { Loader2 } from "lucide-react";
+import { AdminPageHeader } from "@/features/admin/components/AdminPageHeader";
 
 const STRIKE_LIMIT = 3;
-const PRIMARY_BATCHES = ["2156", "2153"];
 
 const CLASS_RULES = [
   "Be on time and ready to work",
@@ -39,40 +39,40 @@ type NormStudent = {
 };
 
 export function NormsPage() {
-  const token = useSessionToken();
-  const students = useQuery(api.norms.getAll);
+  const { token } = useAuth();
+  const students = useQuery(
+    api.norms.getAll,
+    token ? { adminToken: token } : "skip"
+  );
   const addStrike = useMutation(api.norms.addStrike);
   const completePenalty = useMutation(api.norms.completePenalty);
 
   const [strikeLoadingId, setStrikeLoadingId] = useState<string | null>(null);
   const [penaltyLoadingId, setPenaltyLoadingId] = useState<string | null>(null);
 
-  const { batches, otherStudents } = useMemo(() => {
-    const initial: Record<string, NormStudent[]> = {
-      "2156": [],
-      "2153": [],
-    };
+  const { batchGroups, otherStudents } = useMemo(() => {
+    const groups = new Map<string, NormStudent[]>();
     const extras: NormStudent[] = [];
 
-    if (!students) {
-      return { batches: initial, otherStudents: extras };
-    }
-
-    for (const student of students as NormStudent[]) {
+    for (const student of (students ?? []) as NormStudent[]) {
       const batch = student.batch ?? "";
-      if (PRIMARY_BATCHES.includes(batch)) {
-        initial[batch].push(student);
+      if (batch) {
+        if (!groups.has(batch)) groups.set(batch, []);
+        groups.get(batch)!.push(student);
       } else {
         extras.push(student);
       }
     }
 
-    for (const batch of PRIMARY_BATCHES) {
-      initial[batch].sort((a, b) => a.displayName.localeCompare(b.displayName));
-    }
+    const sortedGroups = [...groups.entries()]
+      .sort(([a], [b]) => b.localeCompare(a))
+      .map(([batch, list]) => ({
+        batch,
+        students: list.sort((a, b) => a.displayName.localeCompare(b.displayName)),
+      }));
     extras.sort((a, b) => a.displayName.localeCompare(b.displayName));
 
-    return { batches: initial, otherStudents: extras };
+    return { batchGroups: sortedGroups, otherStudents: extras };
   }, [students]);
 
   const handleAddStrike = async (student: NormStudent) => {
@@ -141,12 +141,11 @@ export function NormsPage() {
 
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-serif font-semibold">Norms</h1>
-        <p className="text-muted-foreground">
-          Class rules, strikes, and penalties across both batches.
-        </p>
-      </div>
+      <AdminPageHeader
+        eyebrow="Manage"
+        title="Norms"
+        description="Class rules, strikes, and penalties across every batch."
+      />
 
       <div className="grid gap-6 xl:grid-cols-[1fr_2fr]">
         <Card>
@@ -168,8 +167,14 @@ export function NormsPage() {
         </Card>
 
         <div className="grid gap-6 lg:grid-cols-2">
-          {PRIMARY_BATCHES.map((batch) => {
-            const batchStudents = batches[batch] || [];
+          {batchGroups.length === 0 && (
+            <Card>
+              <CardContent className="py-10 text-center text-sm text-muted-foreground">
+                No students are assigned to a batch yet.
+              </CardContent>
+            </Card>
+          )}
+          {batchGroups.map(({ batch, students: batchStudents }) => {
             return (
               <Card key={batch}>
                 <CardHeader>
@@ -263,7 +268,7 @@ export function NormsPage() {
         <Card>
           <CardHeader>
             <CardTitle>Unassigned Students</CardTitle>
-            <CardDescription>These students are not in batch 2156 or 2153.</CardDescription>
+            <CardDescription>These students have no batch yet.</CardDescription>
           </CardHeader>
           <CardContent className="grid gap-3 md:grid-cols-2">
             {otherStudents.map((student) => (

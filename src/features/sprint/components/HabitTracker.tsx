@@ -88,12 +88,13 @@ const DEFAULT_ICONS = [
 ];
 
 interface HabitTrackerProps {
+  token: string | null;
   userId: Id<"users">;
   sprintId: Id<"sprints">;
   weekDates: { date: string; dayOfWeek: number; dayNum: number; displayIndex: number }[];
 }
 
-export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps) {
+export function HabitTracker({ token, userId, sprintId, weekDates }: HabitTrackerProps) {
   const [editingHabitId, setEditingHabitId] = useState<string | null>(null);
   const [editingField, setEditingField] = useState<"name" | "description" | null>(null);
   const [editValue, setEditValue] = useState("");
@@ -102,7 +103,10 @@ export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps)
   const [newHabitName, setNewHabitName] = useState("");
   const [optimisticCompletions, setOptimisticCompletions] = useState<Record<string, boolean>>({});
 
-  const habits = useQuery(api.habits.getByUserAndSprint, { userId, sprintId });
+  const habits = useQuery(
+    api.habits.getByUserAndSprint,
+    token ? { token, userId, sprintId } : "skip"
+  );
 
   const createHabit = useMutation(api.habits.create);
   const updateHabit = useMutation(api.habits.update);
@@ -117,10 +121,12 @@ export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps)
   }
 
   const handleToggleCompletion = useCallback(async (habitId: string, date: string, currentCompleted: boolean) => {
+    if (!token) return;
     const key = `${habitId}:${date}`;
     setOptimisticCompletions((prev) => ({ ...prev, [key]: !currentCompleted }));
     try {
       await toggleCompletion({
+        token,
         habitId: habitId as Id<"habits">,
         userId,
         date,
@@ -131,7 +137,7 @@ export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps)
         return rest;
       });
     }
-  }, [toggleCompletion, userId]);
+  }, [toggleCompletion, token, userId]);
 
   async function handleSaveEdit(habitId: string): Promise<void> {
     if (!editValue.trim()) {
@@ -141,12 +147,16 @@ export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps)
     }
 
     if (editingField === "name") {
+      if (!token) return;
       await updateHabit({
+        token,
         habitId: habitId as Id<"habits">,
         name: editValue.trim(),
       });
     } else if (editingField === "description") {
+      if (!token) return;
       await updateHabit({
+        token,
         habitId: habitId as Id<"habits">,
         whatIsHabit: editValue.trim(),
       });
@@ -158,7 +168,9 @@ export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps)
   }
 
   async function handleSelectIcon(habitId: string, iconClass: string): Promise<void> {
+    if (!token) return;
     await updateHabit({
+      token,
       habitId: habitId as Id<"habits">,
       description: iconClass, // Using description field to store icon
     });
@@ -166,11 +178,12 @@ export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps)
   }
 
   async function handleCreateHabit(): Promise<void> {
-    if (!newHabitName.trim() || !habits) return;
+    if (!token || !newHabitName.trim() || !habits) return;
 
     const iconIndex = habits.length % DEFAULT_ICONS.length;
 
     await createHabit({
+      token,
       userId,
       sprintId,
       name: newHabitName.trim(),
@@ -185,8 +198,8 @@ export function HabitTracker({ userId, sprintId, weekDates }: HabitTrackerProps)
   }
 
   async function handleDeleteHabit(habitId: string, habitName: string): Promise<void> {
-    if (confirm(`Delete "${habitName}"?`)) {
-      await removeHabit({ habitId: habitId as Id<"habits"> });
+    if (token && confirm(`Delete "${habitName}"?`)) {
+      await removeHabit({ token, habitId: habitId as Id<"habits"> });
     }
   }
 

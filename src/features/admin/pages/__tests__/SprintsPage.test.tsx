@@ -133,6 +133,7 @@ vi.mock("@/features/auth/hooks/useAuth", () => ({
       displayName: "Admin User",
       role: "admin",
     },
+    token: "test-admin-token",
     isLoading: false,
   })),
 }));
@@ -277,7 +278,7 @@ describe("SprintsPage", () => {
       render(<SprintsPage />);
       expect(screen.getByText("Sprints")).toBeInTheDocument();
       expect(
-        screen.getByText("Manage learning sprints and time-boxed goals")
+        screen.getByText("Manage learning sprints and time-boxed goals.")
       ).toBeInTheDocument();
     });
 
@@ -499,6 +500,7 @@ describe("SprintsPage", () => {
 
       await waitFor(() => {
         expect(mockCreateSprint).toHaveBeenCalledWith({
+          adminToken: "test-admin-token",
           name: "New Test Sprint",
           startDate: "2024-02-01",
           endDate: "2024-02-14",
@@ -648,6 +650,7 @@ describe("SprintsPage", () => {
 
       await waitFor(() => {
         expect(mockUpdateSprint).toHaveBeenCalledWith({
+          adminToken: "test-admin-token",
           sprintId: "sprint_1",
           name: "Updated Sprint Name",
           startDate: mockActiveSprint.startDate,
@@ -769,6 +772,7 @@ describe("SprintsPage", () => {
 
       await waitFor(() => {
         expect(mockDeleteSprint).toHaveBeenCalledWith({
+          adminToken: "test-admin-token",
           sprintId: "sprint_2",
         });
       });
@@ -861,6 +865,7 @@ describe("SprintsPage", () => {
 
       await waitFor(() => {
         expect(mockSetActive).toHaveBeenCalledWith({
+          adminToken: "test-admin-token",
           sprintId: "sprint_2",
         });
       });

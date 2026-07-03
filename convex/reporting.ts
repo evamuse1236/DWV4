@@ -1,7 +1,8 @@
 import { v } from "convex/values";
-import { action } from "./_generated/server";
-import { api } from "./_generated/api";
+import { action, internalQuery } from "./_generated/server";
+import { api, internal } from "./_generated/api";
 import type { Id } from "./_generated/dataModel";
+import { requireMaintenanceKey } from "./authz";
 
 type ChatMessage = {
   role: "system" | "user" | "assistant";
@@ -76,6 +77,64 @@ type StudentDailyGoalDraft = {
   evidence: StudentEvidencePacket;
   draft: DailyGoalDraft;
 };
+
+export const getBatchStudentsForReporting = internalQuery({
+  args: { batch: v.string() },
+  handler: async (ctx, args) => {
+    return await ctx.db
+      .query("users")
+      .withIndex("by_batch", (q) => q.eq("batch", args.batch))
+      .filter((q) => q.eq(q.field("role"), "student"))
+      .collect();
+  },
+});
+
+export const getSprintGoalsForReporting = internalQuery({
+  args: { userId: v.id("users"), sprintId: v.id("sprints") },
+  handler: async (ctx, args) => {
+    const goals = await ctx.db
+      .query("goals")
+      .withIndex("by_user_sprint", (q) =>
+        q.eq("userId", args.userId).eq("sprintId", args.sprintId)
+      )
+      .collect();
+
+    return await Promise.all(
+      goals.map(async (goal) => {
+        const actionItems = await ctx.db
+          .query("actionItems")
+          .withIndex("by_goal", (q) => q.eq("goalId", goal._id))
+          .collect();
+        return {
+          ...goal,
+          actionItems: actionItems.sort((a, b) => a.order - b.order),
+        };
+      })
+    );
+  },
+});
+
+export const getSprintHabitsForReporting = internalQuery({
+  args: { userId: v.id("users"), sprintId: v.id("sprints") },
+  handler: async (ctx, args) => {
+    const habits = await ctx.db
+      .query("habits")
+      .withIndex("by_user_sprint", (q) =>
+        q.eq("userId", args.userId).eq("sprintId", args.sprintId)
+      )
+      .collect();
+
+    return await Promise.all(
+      habits.map(async (habit) => {
+        const completions = await ctx.db
+          .query("habitCompletions")
+          .withIndex("by_habit", (q) => q.eq("habitId", habit._id))
+          .collect();
+        return { ...habit, completions };
+      })
+    );
+  },
+});
 
 const GROQ_PRIMARY_MODEL = "moonshotai/kimi-k2-instruct";
 const OPENROUTER_FALLBACK_MODEL = "xiaomi/mimo-v2-flash";
@@ -317,6 +376,7 @@ async function generateDraft(evidence: StudentEvidencePacket) {
 
 export const generateQ3DailyGoalsDrafts = action({
   args: {
+    maintenanceKey: v.optional(v.string()),
     batches: v.optional(v.array(v.string())),
   },
   handler: async (ctx, args): Promise<{
@@ -324,6 +384,7 @@ export const generateQ3DailyGoalsDrafts = action({
     sprintWindow: { id: Id<"sprints">; name: string; startDate: string; endDate: string }[];
     students: StudentDailyGoalDraft[];
   }> => {
+    requireMaintenanceKey(args.maintenanceKey);
     const batches = args.batches && args.batches.length > 0 ? args.batches : ["2153", "2156"];
     const sprintWindow = (await ctx.runQuery(api.sprints.getAll, {}))
       .sort((a, b) => a.startDate.localeCompare(b.startDate))
@@ -338,18 +399,18 @@ export const generateQ3DailyGoalsDrafts = action({
     const students: StudentDailyGoalDraft[] = [];
 
     for (const batch of batches) {
-      const batchStudents = await ctx.runQuery(api.users.getByBatch, { batch });
+      const batchStudents = await ctx.runQuery(internal.reporting.getBatchStudentsForReporting, { batch });
 
       for (const student of batchStudents) {
         const goals: GoalEvidence[] = [];
         const habits: HabitEvidence[] = [];
 
         for (const sprint of sprintWindow) {
-          const sprintGoals = await ctx.runQuery(api.goals.getByUserAndSprint, {
+          const sprintGoals = await ctx.runQuery(internal.reporting.getSprintGoalsForReporting, {
             userId: student._id,
             sprintId: sprint.id,
           });
-          const sprintHabits = await ctx.runQuery(api.habits.getByUserAndSprint, {
+          const sprintHabits = await ctx.runQuery(internal.reporting.getSprintHabitsForReporting, {
             userId: student._id,
             sprintId: sprint.id,
           });

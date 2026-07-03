@@ -32,8 +32,9 @@ const mockMutations: Record<string, ReturnType<typeof vi.fn>> = {
   logout: vi.fn(),
   saveCheckIn: vi.fn(),
   createGoal: vi.fn(),
-  addActionItem: vi.fn(),
-  toggleActionItem: vi.fn(),
+  addActionItem: vi.fn().mockResolvedValue({}),
+  toggleActionItem: vi.fn().mockResolvedValue({}),
+  toggleCompletion: vi.fn().mockResolvedValue({}),
   updateGoal: vi.fn(),
   deleteTodayCheckIn: vi.fn(),
 };
@@ -73,6 +74,7 @@ vi.mock("@convex/_generated/api", () => ({
     goals: {
       getByUserAndSprint: "goals.getByUserAndSprint",
       getPreviousSprintGoals: "goals.getPreviousSprintGoals",
+      getActionItemsByDay: "goals.getActionItemsByDay",
       create: "goals.create",
       update: "goals.update",
       remove: "goals.remove",
@@ -82,6 +84,7 @@ vi.mock("@convex/_generated/api", () => ({
       duplicate: "goals.duplicate",
       importGoal: "goals.importGoal",
     },
+    objectives: { getTreeData: "objectives.getTreeData" },
     progress: { getDomainSummary: "progress.getDomainSummary" },
     character: { getMyCharacter: "character.getMyCharacter" },
     books: { getCurrentlyReading: "books.getCurrentlyReading" },
@@ -216,7 +219,7 @@ vi.mock("@/shared/ui/skeleton", () => ({
 // ============================================================
 import { LoginPage } from "@/features/auth/pages/LoginPage";
 import { SetupPage } from "@/features/auth/pages/SetupPage";
-import { StudentDashboard } from "@/features/student/pages/StudentDashboard";
+import { TodayPage } from "@/features/today/pages/TodayPage";
 import { SprintPage } from "@/features/sprint/pages/SprintPage";
 import { CheckInGate } from "@/app/shell/CheckInGate";
 import { useQuery, useMutation } from "convex/react";
@@ -301,6 +304,7 @@ const mockDomainProgress = [
 // Create a mock auth context that we can control
 let mockAuthState = {
   user: null as typeof mockStudentUser | typeof mockAdminUser | null,
+  token: null as string | null,
   isLoading: false,
 };
 
@@ -308,6 +312,7 @@ let mockAuthState = {
 vi.mock("@/features/auth/hooks/useAuth", () => ({
   useAuth: vi.fn(() => ({
     user: mockAuthState.user,
+    token: mockAuthState.token,
     isLoading: mockAuthState.isLoading,
     login: mockMutations.login,
     logout: mockMutations.logout,
@@ -339,7 +344,7 @@ function TestApp({ initialRoute = "/login", children }: TestAppProps) {
             path="/dashboard"
             element={
               <CheckInGate>
-                <StudentDashboard />
+                <TodayPage />
               </CheckInGate>
             }
           />
@@ -383,7 +388,7 @@ const renderDashboardWithGate = () =>
           path="/dashboard"
           element={
             <CheckInGate>
-              <StudentDashboard />
+              <TodayPage />
             </CheckInGate>
           }
         />
@@ -420,7 +425,7 @@ describe("Integration Tests: User Journeys", () => {
 
     // Reset all state
     queryResults = {};
-    mockAuthState = { user: null, isLoading: false };
+    mockAuthState = { user: null, token: null, isLoading: false };
     mockLocationState = null;
     mockLocationPathname = "/login";
 
@@ -606,6 +611,7 @@ describe("Integration Tests: User Journeys", () => {
     it("CheckInGate blocks dashboard until check-in is complete", async () => {
       // Set up as logged-in student
       mockAuthState.user = mockStudentUser;
+      mockAuthState.token = "test-token";
 
       // Set up query results - no check-in yet
       queryResults.getCategories = mockEmotionCategories;
@@ -628,7 +634,7 @@ describe("Integration Tests: User Journeys", () => {
 
       // Should show CheckInGate UI, not dashboard
       expect(screen.getByText(/the palette of presence/i)).toBeInTheDocument();
-      expect(screen.queryByText(/the daily overview/i)).not.toBeInTheDocument();
+      expect(screen.queryByText(/the daily ritual/i)).not.toBeInTheDocument();
     });
 
     it("CheckInGate allows access after completing check-in", async () => {
@@ -636,6 +642,7 @@ describe("Integration Tests: User Journeys", () => {
 
       // Set up as logged-in student with completed check-in
       mockAuthState.user = mockStudentUser;
+      mockAuthState.token = "test-token";
 
       // Set up query results - already checked in
       queryResults.getCategories = mockEmotionCategories;
@@ -657,7 +664,7 @@ describe("Integration Tests: User Journeys", () => {
 
       // Should show dashboard, not check-in gate
       expect(screen.queryByText(/the palette of presence/i)).not.toBeInTheDocument();
-      expect(screen.getByText(/the daily overview/i)).toBeInTheDocument();
+      expect(screen.getByText(/the daily ritual/i)).toBeInTheDocument();
     });
 
     it("CheckInGate flow: select emotion -> journal -> save -> dashboard renders", async () => {
@@ -665,6 +672,7 @@ describe("Integration Tests: User Journeys", () => {
 
       // Set up as logged-in student
       mockAuthState.user = mockStudentUser;
+      mockAuthState.token = "test-token";
 
       // Initially not checked in
       let hasCheckedIn = false;
@@ -742,6 +750,7 @@ describe("Integration Tests: User Journeys", () => {
       const user = userEvent.setup();
 
       mockAuthState.user = mockStudentUser;
+      mockAuthState.token = "test-token";
       queryResults.getCategories = mockEmotionCategories;
       queryResults.getTodayCheckIn = null;
 
@@ -799,6 +808,7 @@ describe("Integration Tests: User Journeys", () => {
     beforeEach(() => {
       // Set up as logged-in student with completed check-in
       mockAuthState.user = mockStudentUser;
+      mockAuthState.token = "test-token";
       queryResults.getCategories = mockEmotionCategories;
       queryResults.getTodayCheckIn = { _id: "checkin_1" };
       // Add habits query results (needed by HabitTracker)
@@ -849,35 +859,85 @@ describe("Integration Tests: User Journeys", () => {
       expect(setGoalButtons).toHaveLength(1);
     });
 
-    it("StudentDashboard displays correct task counts from goals", () => {
-      queryResults.getAll = mockDomains;
-      queryResults.getDomainSummary = mockDomainProgress;
+    it("TodayPage displays today's tasks with done counter", () => {
       queryResults.getActive = mockActiveSprint;
-      queryResults.getByUserAndSprint = mockGoals; // 1 in_progress goal
+      delete queryResults.getByUserAndSprint;
+      queryResults["goals.getByUserAndSprint"] = mockGoals;
+      queryResults["habits.getByUserAndSprint"] = [];
+      queryResults.getActionItemsByDay = [
+        { _id: "item_1", title: "Read chapter 1", isCompleted: true, goal: null },
+        { _id: "item_2", title: "Read chapter 2", isCompleted: false, goal: mockGoals[0] },
+      ];
+      queryResults.getCompletionsInRange = [];
       queryResults.getCurrentlyReading = null;
       renderDashboardWithGate();
 
-      // Should show "1 Tasks Left" (1 incomplete task for today)
-      expect(screen.getByText(/1 tasks left/i)).toBeInTheDocument();
-
-      // Should show sprint name
-      expect(screen.getByText(/january sprint/i)).toBeInTheDocument();
-
-      // Should show Day 1
-      expect(screen.getByText(/day 1/i)).toBeInTheDocument();
+      expect(screen.getByText("Today's plan")).toBeInTheDocument();
+      expect(screen.getByText("Read chapter 1")).toBeInTheDocument();
+      expect(screen.getByText("Read chapter 2")).toBeInTheDocument();
+      expect(screen.getByText(/1\/2 done/i)).toBeInTheDocument();
     });
 
-    it("StudentDashboard displays mastered objectives count", () => {
-      queryResults.getAll = mockDomains;
-      queryResults.getDomainSummary = mockDomainProgress; // 5 + 3 = 8 mastered
+    it("TodayPage lists sprint goals with their status", () => {
       queryResults.getActive = mockActiveSprint;
-      queryResults.getByUserAndSprint = mockGoals;
+      delete queryResults.getByUserAndSprint;
+      queryResults["goals.getByUserAndSprint"] = mockGoals;
+      queryResults["habits.getByUserAndSprint"] = [];
+      queryResults.getActionItemsByDay = [];
+      queryResults.getCompletionsInRange = [];
       queryResults.getCurrentlyReading = null;
       renderDashboardWithGate();
 
-      // Total mastered should be 5 + 3 = 8
-      expect(screen.getByText("8")).toBeInTheDocument();
-      expect(screen.getByText(/mastered/i)).toBeInTheDocument();
+      expect(screen.getByText("My goals")).toBeInTheDocument();
+      expect(screen.getByText("Read 20 pages daily")).toBeInTheDocument();
+      expect(screen.getByText("Going")).toBeInTheDocument();
+    });
+
+    it("TodayPage lets the student check off a habit for today", async () => {
+      const user = userEvent.setup();
+      queryResults.getActive = mockActiveSprint;
+      delete queryResults.getByUserAndSprint;
+      queryResults["goals.getByUserAndSprint"] = [];
+      queryResults["habits.getByUserAndSprint"] = [
+        { _id: "habit_1", name: "Drink water" },
+      ];
+      queryResults.getActionItemsByDay = [];
+      queryResults.getCompletionsInRange = [];
+      queryResults.getCurrentlyReading = null;
+      renderDashboardWithGate();
+
+      expect(screen.getByText("Habits today")).toBeInTheDocument();
+      const habitToggle = screen.getByRole("checkbox", {
+        name: /mark habit drink water/i,
+      });
+      await user.click(habitToggle);
+      expect(mockMutations.toggleCompletion).toHaveBeenCalled();
+    });
+
+    it("TodayPage surfaces a sent-back assignment first", () => {
+      queryResults.getActive = mockActiveSprint;
+      delete queryResults.getByUserAndSprint;
+      queryResults["goals.getByUserAndSprint"] = [];
+      queryResults["habits.getByUserAndSprint"] = [];
+      queryResults.getActionItemsByDay = [];
+      queryResults.getCompletionsInRange = [];
+      queryResults.getCurrentlyReading = null;
+      queryResults.getTreeData = {
+        domains: [{ _id: "domain_1", name: "Math" }],
+        majorsByDomain: {
+          domain_1: [
+            {
+              majorObjective: { _id: "major_1", title: "Fractions" },
+              assignment: { _id: "smo_1", status: "rejected" },
+              subObjectives: [],
+            },
+          ],
+        },
+      };
+      renderDashboardWithGate();
+
+      expect(screen.getByText(/your coach sent back/i)).toBeInTheDocument();
+      expect(screen.getByText(/“Fractions”/)).toBeInTheDocument();
     });
 
     it("SprintPage renders all day columns in week view", async () => {
@@ -917,39 +977,13 @@ describe("Integration Tests: User Journeys", () => {
       expect(screen.getByTestId("habit-tracker")).toBeInTheDocument();
     });
 
-    it("StudentDashboard shows domain progress correctly", () => {
-      queryResults.getAll = mockDomains;
-      queryResults.getDomainSummary = mockDomainProgress;
+    it("TodayPage shows current book nudge when reading", () => {
       queryResults.getActive = mockActiveSprint;
-      queryResults.getByUserAndSprint = mockGoals;
-      queryResults.getCurrentlyReading = null;
-      renderDashboardWithGate();
-
-      // Should show domain names
-      expect(screen.getByText("Math")).toBeInTheDocument();
-      expect(screen.getByText("Reading")).toBeInTheDocument();
-
-      // Should show progress fractions
-      expect(screen.getByText("5/8")).toBeInTheDocument(); // Math: 5 mastered / 8 total
-      expect(screen.getByText("3/4")).toBeInTheDocument(); // Reading: 3 mastered / 4 total
-    });
-
-    it("StudentDashboard shows 'Start a Book' when no book is being read", () => {
-      queryResults.getAll = mockDomains;
-      queryResults.getDomainSummary = mockDomainProgress;
-      queryResults.getActive = mockActiveSprint;
-      queryResults.getByUserAndSprint = mockGoals;
-      queryResults.getCurrentlyReading = null;
-      renderDashboardWithGate();
-
-      expect(screen.getByText(/start a book/i)).toBeInTheDocument();
-    });
-
-    it("StudentDashboard shows current book when reading", () => {
-      queryResults.getAll = mockDomains;
-      queryResults.getDomainSummary = mockDomainProgress;
-      queryResults.getActive = mockActiveSprint;
-      queryResults.getByUserAndSprint = mockGoals;
+      delete queryResults.getByUserAndSprint;
+      queryResults["goals.getByUserAndSprint"] = [];
+      queryResults["habits.getByUserAndSprint"] = [];
+      queryResults.getActionItemsByDay = [];
+      queryResults.getCompletionsInRange = [];
       queryResults.getCurrentlyReading = {
         book: {
           _id: "book_1",
@@ -960,18 +994,15 @@ describe("Integration Tests: User Journeys", () => {
       renderDashboardWithGate();
 
       expect(screen.getByText(/harry potter/i)).toBeInTheDocument();
-      expect(screen.getByText(/j\.k\. rowling/i)).toBeInTheDocument();
+      expect(screen.getByText(/keep reading/i)).toBeInTheDocument();
     });
 
-    it("StudentDashboard shows 'No Sprint' when no active sprint exists", () => {
-      queryResults.getAll = mockDomains;
-      queryResults.getDomainSummary = mockDomainProgress;
+    it("TodayPage shows the between-sprints state when no active sprint exists", () => {
       queryResults.getActive = null;
-      queryResults.getByUserAndSprint = [];
       queryResults.getCurrentlyReading = null;
       renderDashboardWithGate();
 
-      expect(screen.getByText(/no sprint/i)).toBeInTheDocument();
+      expect(screen.getByText(/between sprints/i)).toBeInTheDocument();
     });
   });
 
@@ -979,17 +1010,22 @@ describe("Integration Tests: User Journeys", () => {
   // LOADING STATES
   // ============================================================
   describe("Loading States", () => {
-    it("StudentDashboard shows skeleton when data is loading", () => {
+    it("TodayPage shows the mood chip from today's check-in", () => {
       mockAuthState.user = mockStudentUser;
-      queryResults.getTodayCheckIn = { _id: "checkin_1" };
+      mockAuthState.token = "test-token";
+      queryResults.getTodayCheckIn = {
+        _id: "checkin_1",
+        category: { name: "Happy", emoji: "😊", color: "#FFD93D" },
+        subcategory: { name: "Excited" },
+      };
       queryResults.getCategories = mockEmotionCategories;
-
-      // Data is loading (undefined)
-      queryResults.getAll = undefined;
-      queryResults.getDomainSummary = undefined;
-
-      // Show skeleton when loading
-      (useDelayedLoading as any).mockReturnValue(true);
+      queryResults.getActive = mockActiveSprint;
+      delete queryResults.getByUserAndSprint;
+      queryResults["goals.getByUserAndSprint"] = [];
+      queryResults["habits.getByUserAndSprint"] = [];
+      queryResults.getActionItemsByDay = [];
+      queryResults.getCompletionsInRange = [];
+      queryResults.getCurrentlyReading = null;
 
       render(
         <MemoryRouter initialEntries={["/dashboard"]}>
@@ -998,7 +1034,7 @@ describe("Integration Tests: User Journeys", () => {
               path="/dashboard"
               element={
                 <CheckInGate>
-                  <StudentDashboard />
+                  <TodayPage />
                 </CheckInGate>
               }
             />
@@ -1006,13 +1042,12 @@ describe("Integration Tests: User Journeys", () => {
         </MemoryRouter>
       );
 
-      // Should show skeleton elements
-      const skeletons = screen.getAllByTestId("skeleton");
-      expect(skeletons.length).toBeGreaterThan(0);
+      expect(screen.getByText(/feeling excited/i)).toBeInTheDocument();
     });
 
     it("CheckInGate shows skeleton when categories are loading", () => {
       mockAuthState.user = mockStudentUser;
+      mockAuthState.token = "test-token";
 
       // Data is loading
       queryResults.getCategories = undefined;
@@ -1027,7 +1062,7 @@ describe("Integration Tests: User Journeys", () => {
               path="/dashboard"
               element={
                 <CheckInGate>
-                  <StudentDashboard />
+                  <TodayPage />
                 </CheckInGate>
               }
             />

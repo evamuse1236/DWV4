@@ -1,5 +1,6 @@
 import { query, mutation } from "./_generated/server";
 import { v } from "convex/values";
+import { requireAdmin } from "./authz";
 
 // Get activities for an objective
 export const getByObjective = query({
@@ -15,6 +16,7 @@ export const getByObjective = query({
 // Create an activity (admin only)
 export const create = mutation({
   args: {
+    adminToken: v.string(),
     objectiveId: v.id("learningObjectives"),
     title: v.string(),
     type: v.union(
@@ -29,13 +31,16 @@ export const create = mutation({
     order: v.number(),
   },
   handler: async (ctx, args) => {
-    return await ctx.db.insert("activities", args);
+    await requireAdmin(ctx, args.adminToken);
+    const { adminToken: _adminToken, ...activity } = args;
+    return await ctx.db.insert("activities", activity);
   },
 });
 
 // Update activity
 export const update = mutation({
   args: {
+    adminToken: v.string(),
     activityId: v.id("activities"),
     title: v.optional(v.string()),
     type: v.optional(
@@ -52,15 +57,17 @@ export const update = mutation({
     order: v.optional(v.number()),
   },
   handler: async (ctx, args) => {
-    const { activityId, ...updates } = args;
+    await requireAdmin(ctx, args.adminToken);
+    const { adminToken: _adminToken, activityId, ...updates } = args;
     await ctx.db.patch(activityId, updates);
   },
 });
 
 // Delete activity
 export const remove = mutation({
-  args: { activityId: v.id("activities") },
+  args: { adminToken: v.string(), activityId: v.id("activities") },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     await ctx.db.delete(args.activityId);
   },
 });

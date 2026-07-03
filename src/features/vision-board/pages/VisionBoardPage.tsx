@@ -3,14 +3,15 @@ import { motion } from "framer-motion";
 import { Sparkle } from "@phosphor-icons/react";
 import { useVisionBoard } from "@/features/vision-board/hooks/useVisionBoard";
 import type { VisionBoardCard } from "@/features/vision-board/hooks/useVisionBoard";
-import { VisionBoardGrid } from "@/features/vision-board/components/VisionBoardGrid";
+import { BoardCanvas } from "@/features/vision-board/components/BoardCanvas";
 import { CardCreatorSheet } from "@/features/vision-board/components/CardCreatorSheet";
 import { CardDetailSheet } from "@/features/vision-board/components/CardDetailSheet";
 import { VisionBoardFAB } from "@/features/vision-board/components/VisionBoardFAB";
 
 /**
- * Vision Board — immersive full-bleed mosaic of goals.
- * No header, no top chrome. All controls live in the floating bubble (bottom-right).
+ * Vision Board — an auto-adjusting collage of the student's vision.
+ * Tap a card to grow/shrink or reorder it; the collage reflows around it.
+ * All other controls live in the floating bubble (bottom-right).
  */
 export function VisionBoardPage() {
   const {
@@ -26,6 +27,8 @@ export function VisionBoardPage() {
     incrementProgress,
     incrementStreak,
     toggleHabit,
+    setSizeStep,
+    reorderCard,
   } = useVisionBoard();
 
   const [selectedAreaId, setSelectedAreaId] = useState<string | null>(null);
@@ -66,14 +69,16 @@ export function VisionBoardPage() {
   return (
     <div>
       {filteredCards.length > 0 ? (
-        <VisionBoardGrid
+        <BoardCanvas
           key={selectedAreaId ?? "all"}
           cards={filteredCards}
+          onOpen={handleCardClick}
+          onStep={setSizeStep}
+          onReorder={reorderCard}
           onIncrement={incrementCounter}
           onIncrementProgress={incrementProgress}
           onIncrementStreak={incrementStreak}
           onToggleHabit={toggleHabit}
-          onCardClick={handleCardClick}
         />
       ) : (
         <motion.div

@@ -10,6 +10,7 @@ interface Task {
 }
 
 interface TaskAssignerProps {
+  token: string;
   goalId: string;
   userId: string;
   goalTitle: string;
@@ -31,6 +32,7 @@ const DAYS_OF_WEEK = [
  * Shows a weekly calendar view with day selection
  */
 export function TaskAssigner({
+  token,
   goalId,
   userId,
   goalTitle,
@@ -83,6 +85,7 @@ export function TaskAssigner({
     try {
       for (const task of tasks) {
         await addActionItem({
+          token,
           goalId: goalId as any,
           userId: userId as any,
           title: task.title,

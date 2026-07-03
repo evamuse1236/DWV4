@@ -195,9 +195,9 @@ vi.mock("react-router-dom", () => ({
   useNavigate: () => mockNavigate,
 }));
 
-// Mock useSessionToken
+// Mock auth
 vi.mock("@/features/auth/hooks/useAuth", () => ({
-  useSessionToken: () => "test-admin-token",
+  useAuth: () => ({ token: "test-admin-token" }),
 }));
 
 // Import after mocking
@@ -771,7 +771,10 @@ describe("StudentsPage", () => {
       await user.click(confirmButton);
 
       await waitFor(() => {
-        expect(mockRemoveUser).toHaveBeenCalledWith({ userId: "student_1" });
+        expect(mockRemoveUser).toHaveBeenCalledWith({
+          adminToken: "test-admin-token",
+          userId: "student_1",
+        });
       });
     });
 
@@ -893,7 +896,7 @@ describe("StudentsPage", () => {
       render(<StudentsPage />);
 
       expect(
-        screen.getByText("Manage student accounts and track their progress")
+        screen.getByText("Manage student accounts and track their progress.")
       ).toBeInTheDocument();
     });
   });

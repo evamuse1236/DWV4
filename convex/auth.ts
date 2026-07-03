@@ -3,6 +3,7 @@ import { mutation, query } from "./_generated/server";
 import { hashPassword } from "./utils";
 import type { MutationCtx } from "./_generated/server";
 import type { Doc } from "./_generated/dataModel";
+import { requireMaintenanceKey } from "./authz";
 
 /**
  * Generate a random session token
@@ -553,11 +554,14 @@ export const initializeAdmin = mutation({
  */
 export const initializeStudent = mutation({
   args: {
+    maintenanceKey: v.optional(v.string()),
     username: v.string(),
     password: v.string(),
     displayName: v.string(),
   },
   handler: async (ctx, args) => {
+    requireMaintenanceKey(args.maintenanceKey);
+
     // Check if any student users exist
     const existingStudents = await ctx.db
       .query("users")
@@ -600,8 +604,12 @@ export const initializeStudent = mutation({
  * Run: npx convex run auth:seedAdmins
  */
 export const seedAdmins = mutation({
-  args: {},
-  handler: async (ctx) => {
+  args: {
+    maintenanceKey: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    requireMaintenanceKey(args.maintenanceKey);
+
     const admins = [
       { username: "devisha", displayName: "devisha" },
       { username: "vishwa", displayName: "vishwa" },
@@ -644,8 +652,11 @@ export const seedAdmins = mutation({
  * Should be called periodically to prevent sessions table from growing
  */
 export const cleanupExpiredSessions = mutation({
-  args: {},
-  handler: async (ctx) => {
+  args: {
+    maintenanceKey: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    requireMaintenanceKey(args.maintenanceKey);
     const now = Date.now();
     const sessions = await ctx.db.query("sessions").collect();
 

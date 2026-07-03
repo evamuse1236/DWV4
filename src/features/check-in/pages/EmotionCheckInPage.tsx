@@ -83,7 +83,7 @@ const normalizeEmotion = (value: string) => value.trim().toLowerCase();
  */
 export function EmotionCheckInPage() {
   const navigate = useNavigate();
-  const { user } = useAuth();
+  const { user, token } = useAuth();
   const saveCheckIn = useMutation(api.emotions.saveCheckIn);
   const updateCheckIn = useMutation(api.emotions.updateCheckIn);
 
@@ -93,7 +93,7 @@ export function EmotionCheckInPage() {
   // Get today's check-in if exists
   const todayCheckIn = useQuery(
     api.emotions.getTodayCheckIn,
-    user ? { userId: user._id as any } : "skip"
+    user && token ? { token, userId: user._id as any } : "skip"
   );
 
   const [activeQuadrant, setActiveQuadrant] = useState<QuadrantKey | null>(null);
@@ -128,7 +128,7 @@ export function EmotionCheckInPage() {
   };
 
   const handleSave = async () => {
-    if (!user || !selectedShade || !activeQuadrant) return;
+    if (!user || !token || !selectedShade || !activeQuadrant) return;
 
     setIsSubmitting(true);
 
@@ -137,6 +137,7 @@ export function EmotionCheckInPage() {
       if (ids?.categoryId && ids?.subcategoryId) {
         if (isEditing && todayCheckIn?._id) {
           await updateCheckIn({
+            token,
             checkInId: todayCheckIn._id as any,
             categoryId: ids.categoryId as any,
             subcategoryId: ids.subcategoryId as any,
@@ -144,6 +145,7 @@ export function EmotionCheckInPage() {
           });
         } else {
           await saveCheckIn({
+            token,
             userId: user._id as any,
             categoryId: ids.categoryId as any,
             subcategoryId: ids.subcategoryId as any,

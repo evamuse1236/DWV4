@@ -5,6 +5,7 @@ import {
   awardXpIfNotExists,
   getReadingDomainId,
 } from "./characterAwards";
+import { requireAdmin, requireUserMatch, toSafeUser } from "./authz";
 
 const DONE_STATUSES = new Set([
   "already_read",
@@ -190,16 +191,7 @@ async function hydrateStudentBookSubmission(ctx: any, studentBook: any) {
 
   return {
     ...studentBook,
-    user: user
-      ? {
-          _id: user._id,
-          username: user.username,
-          displayName: user.displayName,
-          avatarUrl: user.avatarUrl ?? null,
-          batch: user.batch ?? null,
-          role: user.role,
-        }
-      : null,
+    user: user ? toSafeUser(user) : null,
     book: book ?? null,
   };
 }
@@ -257,8 +249,9 @@ export const getByGenre = query({
 
 // Get student's books
 export const getStudentBooks = query({
-  args: { userId: v.id("users") },
+  args: { token: v.string(), userId: v.id("users") },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     const studentBooks = await ctx.db
       .query("studentBooks")
       .filter((q) => q.eq(q.field("userId"), args.userId))
@@ -278,8 +271,9 @@ export const getStudentBooks = query({
 
 // Get reading history for AI context (Book Buddy)
 export const getReadingHistory = query({
-  args: { userId: v.id("users") },
+  args: { token: v.string(), userId: v.id("users") },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     const studentBooks = await ctx.db
       .query("studentBooks")
       .filter((q) => q.eq(q.field("userId"), args.userId))
@@ -302,8 +296,9 @@ export const getReadingHistory = query({
 
 // Get currently reading book
 export const getCurrentlyReading = query({
-  args: { userId: v.id("users") },
+  args: { token: v.string(), userId: v.id("users") },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     const reading = await ctx.db
       .query("studentBooks")
       .filter((q) =>
@@ -324,10 +319,12 @@ export const getCurrentlyReading = query({
 // Start reading a book
 export const startReading = mutation({
   args: {
+    token: v.string(),
     userId: v.id("users"),
     bookId: v.id("books"),
   },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     const existing = await findStudentBook(ctx, args.userId, args.bookId);
 
     if (existing) {
@@ -351,10 +348,12 @@ export const startReading = mutation({
 
 export const markAlreadyRead = mutation({
   args: {
+    token: v.string(),
     userId: v.id("users"),
     bookId: v.id("books"),
   },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     const existing = await findStudentBook(ctx, args.userId, args.bookId);
     const now = Date.now();
 
@@ -378,6 +377,7 @@ export const markAlreadyRead = mutation({
 
 export const finishBook = mutation({
   args: {
+    token: v.string(),
     studentBookId: v.id("studentBooks"),
     rating: v.optional(v.number()),
     review: v.optional(v.string()),
@@ -387,6 +387,7 @@ export const finishBook = mutation({
     if (!studentBook) {
       throw new Error("Student book not found");
     }
+    await requireUserMatch(ctx, args.token, studentBook.userId);
 
     ensureValidRating(args.rating);
     const now = Date.now();
@@ -421,6 +422,7 @@ export const finishBook = mutation({
 // Legacy status updater (kept for compatibility)
 export const updateStatus = mutation({
   args: {
+    adminToken: v.string(),
     studentBookId: v.id("studentBooks"),
     status: v.union(
       v.literal("reading"),
@@ -435,6 +437,7 @@ export const updateStatus = mutation({
     ),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const studentBook = await ctx.db.get(args.studentBookId);
     if (!studentBook) {
       throw new Error("Student book not found");
@@ -501,11 +504,17 @@ export const updateStatus = mutation({
 // Legacy review writer (kept for compatibility)
 export const addReview = mutation({
   args: {
+    token: v.string(),
     studentBookId: v.id("studentBooks"),
     rating: v.number(),
     review: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
+    const studentBook = await ctx.db.get(args.studentBookId);
+    if (!studentBook) {
+      throw new Error("Student book not found");
+    }
+    await requireUserMatch(ctx, args.token, studentBook.userId);
     ensureValidRating(args.rating);
     await ctx.db.patch(args.studentBookId, {
       rating: args.rating,
@@ -516,6 +525,7 @@ export const addReview = mutation({
 
 export const saveReviewDraft = mutation({
   args: {
+    token: v.string(),
     studentBookId: v.id("studentBooks"),
     rating: v.optional(v.number()),
     review: v.optional(v.string()),
@@ -525,6 +535,7 @@ export const saveReviewDraft = mutation({
     if (!studentBook) {
       throw new Error("Student book not found");
     }
+    await requireUserMatch(ctx, args.token, studentBook.userId);
 
     ensureValidRating(args.rating);
     const updates: any = {};
@@ -547,6 +558,7 @@ export const saveReviewDraft = mutation({
 
 export const submitReview = mutation({
   args: {
+    token: v.string(),
     studentBookId: v.id("studentBooks"),
     rating: v.optional(v.number()),
     review: v.string(),
@@ -556,6 +568,7 @@ export const submitReview = mutation({
     if (!studentBook) {
       throw new Error("Student book not found");
     }
+    await requireUserMatch(ctx, args.token, studentBook.userId);
     if (!isDoneStatus(studentBook.status)) {
       throw new Error("Finish the book before sharing a review");
     }
@@ -584,10 +597,12 @@ export const submitReview = mutation({
 
 export const approveReview = mutation({
   args: {
+    adminToken: v.string(),
     studentBookId: v.id("studentBooks"),
     approvedBy: v.optional(v.id("users")),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const studentBook = await ctx.db.get(args.studentBookId);
     if (!studentBook) {
       throw new Error("Student book not found");
@@ -619,11 +634,13 @@ export const approveReview = mutation({
 
 export const requestReviewChanges = mutation({
   args: {
+    adminToken: v.string(),
     studentBookId: v.id("studentBooks"),
     feedback: v.string(),
     feedbackBy: v.optional(v.id("users")),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const studentBook = await ctx.db.get(args.studentBookId);
     if (!studentBook) {
       throw new Error("Student book not found");
@@ -651,6 +668,7 @@ export const requestReviewChanges = mutation({
 // Create a new book (admin only)
 export const create = mutation({
   args: {
+    adminToken: v.string(),
     title: v.string(),
     author: v.string(),
     coverImageUrl: v.optional(v.string()),
@@ -662,6 +680,7 @@ export const create = mutation({
     addedBy: v.optional(v.id("users")),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const normalized = normalizeBookInput(args);
     const existing = await findBookByIdentity(ctx, normalized.title, normalized.author);
 
@@ -693,11 +712,13 @@ export const create = mutation({
 
 export const createStudentSubmission = mutation({
   args: {
+    token: v.string(),
     userId: v.id("users"),
     title: v.string(),
     author: v.string(),
   },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     const normalized = normalizeBookInput({
       title: args.title,
       author: args.author,
@@ -733,6 +754,7 @@ export const createStudentSubmission = mutation({
 
 export const bulkImport = mutation({
   args: {
+    adminToken: v.string(),
     rows: v.array(
       v.object({
         title: v.string(),
@@ -748,6 +770,7 @@ export const bulkImport = mutation({
     addedBy: v.optional(v.id("users")),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const invalidRows: Array<{ rowNumber: number; reason: string }> = [];
     let createdCount = 0;
     let updatedCount = 0;
@@ -806,6 +829,7 @@ export const bulkImport = mutation({
 // Update an existing book (admin only)
 export const update = mutation({
   args: {
+    adminToken: v.string(),
     bookId: v.id("books"),
     title: v.optional(v.string()),
     author: v.optional(v.string()),
@@ -817,7 +841,8 @@ export const update = mutation({
     pageCount: v.optional(v.number()),
   },
   handler: async (ctx, args) => {
-    const { bookId, ...updates } = args;
+    await requireAdmin(ctx, args.adminToken);
+    const { adminToken: _adminToken, bookId, ...updates } = args;
     const filteredUpdates = Object.fromEntries(
       Object.entries({
         ...updates,
@@ -841,8 +866,9 @@ export const update = mutation({
 
 // Delete a book (admin only)
 export const remove = mutation({
-  args: { bookId: v.id("books") },
+  args: { adminToken: v.string(), bookId: v.id("books") },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const studentBooks = await ctx.db
       .query("studentBooks")
       .filter((q) => q.eq(q.field("bookId"), args.bookId))
@@ -859,8 +885,13 @@ export const remove = mutation({
 
 // Remove a book from student's reading list
 export const removeFromMyBooks = mutation({
-  args: { studentBookId: v.id("studentBooks") },
+  args: { token: v.string(), studentBookId: v.id("studentBooks") },
   handler: async (ctx, args) => {
+    const studentBook = await ctx.db.get(args.studentBookId);
+    if (!studentBook) {
+      throw new Error("Student book not found");
+    }
+    await requireUserMatch(ctx, args.token, studentBook.userId);
     await ctx.db.delete(args.studentBookId);
     return { success: true };
   },
@@ -868,8 +899,9 @@ export const removeFromMyBooks = mutation({
 
 // Get reading stats for a student
 export const getReadingStats = query({
-  args: { userId: v.id("users") },
+  args: { token: v.string(), userId: v.id("users") },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     const studentBooks = await ctx.db
       .query("studentBooks")
       .filter((q) => q.eq(q.field("userId"), args.userId))
@@ -899,8 +931,9 @@ export const getReadingStats = query({
 
 // Get all pending review submissions for coach approval queue
 export const getReviewSubmissions = query({
-  args: {},
-  handler: async (ctx) => {
+  args: { adminToken: v.string() },
+  handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const submissions = (await getStudentBooksByStatuses(ctx, REVIEW_QUEUE_STATUSES))
       .sort((a, b) => getDoneTimestamp(b) - getDoneTimestamp(a));
 
@@ -910,8 +943,9 @@ export const getReviewSubmissions = query({
 
 // Backward-compatible alias
 export const getPresentationRequests = query({
-  args: {},
-  handler: async (ctx) => {
+  args: { adminToken: v.string() },
+  handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const submissions = (await getStudentBooksByStatuses(ctx, REVIEW_QUEUE_STATUSES))
       .sort((a, b) => getDoneTimestamp(b) - getDoneTimestamp(a));
 
@@ -922,10 +956,12 @@ export const getPresentationRequests = query({
 // Backward-compatible alias
 export const approvePresentationRequest = mutation({
   args: {
+    adminToken: v.string(),
     studentBookId: v.id("studentBooks"),
     approved: v.boolean(),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const studentBook = await ctx.db.get(args.studentBookId);
     if (!studentBook) {
       throw new Error("Student book not found");
@@ -979,7 +1015,7 @@ export const getReviewComments = query({
         const user = await ctx.db.get(comment.userId);
         return {
           ...comment,
-          user,
+          user: user ? toSafeUser(user) : null,
         };
       })
     );
@@ -988,11 +1024,13 @@ export const getReviewComments = query({
 
 export const addReviewComment = mutation({
   args: {
+    token: v.string(),
     studentBookId: v.id("studentBooks"),
     userId: v.id("users"),
     message: v.string(),
   },
   handler: async (ctx, args) => {
+    await requireUserMatch(ctx, args.token, args.userId);
     await ensureCommentableReview(ctx, args.studentBookId);
 
     const message = args.message.trim();

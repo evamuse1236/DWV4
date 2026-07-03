@@ -1,3 +1,4 @@
+import { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { ConvexProvider, ConvexReactClient } from "convex/react";
 import { AuthProvider } from "@/features/auth/hooks/useAuth";
@@ -5,45 +6,102 @@ import { ProtectedRoute, PublicOnlyRoute } from "@/features/auth/components";
 import { DashboardLayout, AdminLayout } from "@/app/shell";
 import { Toaster } from "@/shared/ui/sonner";
 import { TooltipProvider } from "@/shared/ui/tooltip";
-
-// Pages
-import LoginPage from "@/features/auth/pages/LoginPage";
-import SetupPage from "@/features/auth/pages/SetupPage";
-import { StudentDashboard } from "@/features/student/pages/StudentDashboard";
-import { EmotionCheckInPage } from "@/features/check-in/pages/EmotionCheckInPage";
-import { SprintPage } from "@/features/sprint/pages/SprintPage";
-import { DeepWorkPage } from "@/features/deep-work/pages/DeepWorkPage";
-import { DomainDetailPage } from "@/features/deep-work/pages/DomainDetailPage";
-import { DiagnosticPage } from "@/features/diagnostics/pages/DiagnosticPage";
-import { MasteryPage } from "@/features/mastery/pages/MasteryPage";
-import { ReadingPage } from "@/features/reading/pages/ReadingPage";
-import { TrustJarPage } from "@/features/trust-jar/pages/TrustJarPage";
-import { VisionBoardPage } from "@/features/vision-board/pages/VisionBoardPage";
-import { ReviewPage } from "@/features/reading/pages/ReviewPage";
-import { CharacterPage } from "@/features/vision-board/pages/CharacterPage";
-import { SettingsPage as StudentSettingsPage } from "@/features/settings/pages/SettingsPage";
-
-// Admin pages
-import {
-  AdminDashboard,
-  StudentsPage,
-  SprintsPage,
-  ObjectivesPage,
-  DiagnosticsPage,
-  VivaQueuePage,
-  BooksPage,
-  NormsPage,
-  AdminSettingsPage,
-} from "@/features/admin/pages";
-
-import { StudentDetailPage } from "@/features/admin/pages/StudentDetailPage";
-import { AdminTrustJarPage } from "@/features/admin/pages/TrustJarPage";
 import { STUDENT_CHARACTER_SYSTEM_ENABLED } from "@/app/config/featureFlags";
+
+const LoginPage = lazy(() => import("@/features/auth/pages/LoginPage"));
+const SetupPage = lazy(() => import("@/features/auth/pages/SetupPage"));
+const TodayPage = lazy(() =>
+  import("@/features/today/pages/TodayPage").then((module) => ({ default: module.TodayPage }))
+);
+const EmotionCheckInPage = lazy(() =>
+  import("@/features/check-in/pages/EmotionCheckInPage").then((module) => ({ default: module.EmotionCheckInPage }))
+);
+const SprintPage = lazy(() =>
+  import("@/features/sprint/pages/SprintPage").then((module) => ({ default: module.SprintPage }))
+);
+const DeepWorkPage = lazy(() =>
+  import("@/features/deep-work/pages/DeepWorkPage").then((module) => ({ default: module.DeepWorkPage }))
+);
+const DomainDetailPage = lazy(() =>
+  import("@/features/deep-work/pages/DomainDetailPage").then((module) => ({ default: module.DomainDetailPage }))
+);
+const AssignmentPage = lazy(() =>
+  import("@/features/assignments/pages/AssignmentPage").then((module) => ({ default: module.AssignmentPage }))
+);
+const ReadingPage = lazy(() =>
+  import("@/features/reading/pages/ReadingPage").then((module) => ({ default: module.ReadingPage }))
+);
+const ReviewPage = lazy(() =>
+  import("@/features/reading/pages/ReviewPage").then((module) => ({ default: module.ReviewPage }))
+);
+const TrustJarPage = lazy(() =>
+  import("@/features/trust-jar/pages/TrustJarPage").then((module) => ({ default: module.TrustJarPage }))
+);
+const VisionBoardPage = lazy(() =>
+  import("@/features/vision-board/pages/VisionBoardPage").then((module) => ({ default: module.VisionBoardPage }))
+);
+const CharacterPage = lazy(() =>
+  import("@/features/vision-board/pages/CharacterPage").then((module) => ({ default: module.CharacterPage }))
+);
+const StudentSettingsPage = lazy(() =>
+  import("@/features/settings/pages/SettingsPage").then((module) => ({ default: module.SettingsPage }))
+);
+
+const AdminDashboard = lazy(() =>
+  import("@/features/admin/pages/AdminDashboard").then((module) => ({ default: module.AdminDashboard }))
+);
+const StudentsPage = lazy(() =>
+  import("@/features/admin/pages/StudentsPage").then((module) => ({ default: module.StudentsPage }))
+);
+const StudentDetailPage = lazy(() =>
+  import("@/features/admin/pages/StudentDetailPage").then((module) => ({ default: module.StudentDetailPage }))
+);
+const SprintsPage = lazy(() =>
+  import("@/features/admin/pages/SprintsPage").then((module) => ({ default: module.SprintsPage }))
+);
+const ObjectivesPage = lazy(() =>
+  import("@/features/admin/pages/ObjectivesPage").then((module) => ({ default: module.ObjectivesPage }))
+);
+const ConfirmationsPage = lazy(() =>
+  import("@/features/admin/pages/ConfirmationsPage").then((module) => ({ default: module.ConfirmationsPage }))
+);
+const ProjectsPage = lazy(() =>
+  import("@/features/admin/pages/ProjectsPage").then((module) => ({ default: module.ProjectsPage }))
+);
+const ProjectDetailPage = lazy(() =>
+  import("@/features/admin/pages/ProjectDetailPage").then((module) => ({ default: module.ProjectDetailPage }))
+);
+const BooksPage = lazy(() =>
+  import("@/features/admin/pages/BooksPage").then((module) => ({ default: module.BooksPage }))
+);
+const NormsPage = lazy(() =>
+  import("@/features/admin/pages/NormsPage").then((module) => ({ default: module.NormsPage }))
+);
+const AdminTrustJarPage = lazy(() =>
+  import("@/features/admin/pages/TrustJarPage").then((module) => ({ default: module.AdminTrustJarPage }))
+);
+const AdminSettingsPage = lazy(() =>
+  import("@/features/admin/pages/SettingsPage").then((module) => ({ default: module.AdminSettingsPage }))
+);
 
 // Initialize Convex client
 // Note: Replace with your actual Convex URL after running `npx convex dev`
 const convexUrl = import.meta.env.VITE_CONVEX_URL || "https://placeholder.convex.cloud";
 const convex = new ConvexReactClient(convexUrl);
+
+function RouteFallback() {
+  return (
+    <div className="flex min-h-screen flex-col items-center justify-center gap-3">
+      <span
+        aria-hidden
+        className="h-8 w-8 animate-spin rounded-full border-2 border-[var(--color-divider)] border-t-[var(--color-espresso)]"
+      />
+      <span className="font-display text-lg italic text-[var(--color-taupe)]">
+        Setting the page…
+      </span>
+    </div>
+  );
+}
 
 function App() {
   return (
@@ -51,7 +109,8 @@ function App() {
       <AuthProvider>
         <TooltipProvider>
           <BrowserRouter>
-            <Routes>
+            <Suspense fallback={<RouteFallback />}>
+              <Routes>
             {/* Public routes */}
             <Route
               path="/login"
@@ -71,13 +130,16 @@ function App() {
                 </ProtectedRoute>
               }
             >
-              <Route path="/dashboard" element={<StudentDashboard />} />
+              <Route path="/dashboard" element={<TodayPage />} />
               <Route path="/check-in" element={<EmotionCheckInPage />} />
               <Route path="/sprint" element={<SprintPage />} />
               <Route path="/deep-work" element={<DeepWorkPage />} />
               <Route path="/deep-work/:domainId" element={<DomainDetailPage />} />
-              <Route path="/deep-work/mastery/:majorObjectiveId" element={<MasteryPage />} />
-              <Route path="/deep-work/diagnostic/:majorObjectiveId" element={<DiagnosticPage />} />
+              <Route path="/deep-work/mastery/:majorObjectiveId" element={<AssignmentPage />} />
+              <Route
+                path="/deep-work/diagnostic/:majorObjectiveId"
+                element={<Navigate to="/deep-work" replace />}
+              />
               <Route path="/reading" element={<ReadingPage />} />
               <Route path="/review" element={<ReviewPage />} />
               <Route path="/trust-jar" element={<TrustJarPage />} />
@@ -107,11 +169,12 @@ function App() {
               <Route path="/admin/students" element={<StudentsPage />} />
               <Route path="/admin/students/:studentId" element={<StudentDetailPage />} />
               <Route path="/admin/sprints" element={<SprintsPage />} />
-              <Route path="/admin/projects" element={<Navigate to="/admin" replace />} />
-              <Route path="/admin/projects/:projectId" element={<Navigate to="/admin" replace />} />
+              <Route path="/admin/projects" element={<ProjectsPage />} />
+              <Route path="/admin/projects/:projectId" element={<ProjectDetailPage />} />
               <Route path="/admin/objectives" element={<ObjectivesPage />} />
-              <Route path="/admin/viva" element={<VivaQueuePage />} />
-              <Route path="/admin/diagnostics" element={<DiagnosticsPage />} />
+              <Route path="/admin/confirmations" element={<ConfirmationsPage />} />
+              <Route path="/admin/viva" element={<Navigate to="/admin/confirmations" replace />} />
+              <Route path="/admin/diagnostics" element={<Navigate to="/admin/confirmations" replace />} />
               <Route path="/admin/reviews" element={<Navigate to="/admin" replace />} />
               <Route path="/admin/presentations" element={<Navigate to="/admin" replace />} />
               <Route path="/admin/books" element={<BooksPage />} />
@@ -125,7 +188,8 @@ function App() {
             {/* Default redirect */}
             <Route path="/" element={<Navigate to="/login" replace />} />
             <Route path="*" element={<Navigate to="/login" replace />} />
-            </Routes>
+              </Routes>
+            </Suspense>
             <Toaster />
           </BrowserRouter>
         </TooltipProvider>

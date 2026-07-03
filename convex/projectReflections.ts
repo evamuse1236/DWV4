@@ -1,5 +1,6 @@
 import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
+import { requireAdmin } from "./authz";
 
 interface ReflectionFields {
   didWell?: string;
@@ -12,8 +13,9 @@ function isReflectionComplete(fields: ReflectionFields): boolean {
 }
 
 export const getByProject = query({
-  args: { projectId: v.id("projects") },
+  args: { adminToken: v.string(), projectId: v.id("projects") },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     return await ctx.db
       .query("projectReflections")
       .withIndex("by_project", (q) => q.eq("projectId", args.projectId))
@@ -23,10 +25,12 @@ export const getByProject = query({
 
 export const getByProjectAndUser = query({
   args: {
+    adminToken: v.string(),
     projectId: v.id("projects"),
     userId: v.id("users"),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     return await ctx.db
       .query("projectReflections")
       .withIndex("by_project_user", (q) =>
@@ -38,10 +42,12 @@ export const getByProjectAndUser = query({
 
 export const getOrCreate = mutation({
   args: {
+    adminToken: v.string(),
     projectId: v.id("projects"),
     userId: v.id("users"),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const existing = await ctx.db
       .query("projectReflections")
       .withIndex("by_project_user", (q) =>
@@ -67,6 +73,7 @@ export const getOrCreate = mutation({
 
 export const update = mutation({
   args: {
+    adminToken: v.string(),
     projectId: v.id("projects"),
     userId: v.id("users"),
     didWell: v.optional(v.string()),
@@ -74,6 +81,7 @@ export const update = mutation({
     couldImprove: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const reflection = await ctx.db
       .query("projectReflections")
       .withIndex("by_project_user", (q) =>
@@ -121,6 +129,7 @@ export const update = mutation({
 
 export const batchUpdate = mutation({
   args: {
+    adminToken: v.string(),
     updates: v.array(
       v.object({
         projectId: v.id("projects"),
@@ -132,6 +141,7 @@ export const batchUpdate = mutation({
     ),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const results = [];
 
     for (const item of args.updates) {
@@ -180,10 +190,12 @@ export const batchUpdate = mutation({
 
 export const remove = mutation({
   args: {
+    adminToken: v.string(),
     projectId: v.id("projects"),
     userId: v.id("users"),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const reflection = await ctx.db
       .query("projectReflections")
       .withIndex("by_project_user", (q) =>
@@ -200,8 +212,9 @@ export const remove = mutation({
 });
 
 export const getProjectStats = query({
-  args: { projectId: v.id("projects") },
+  args: { adminToken: v.string(), projectId: v.id("projects") },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const reflections = await ctx.db
       .query("projectReflections")
       .withIndex("by_project", (q) => q.eq("projectId", args.projectId))

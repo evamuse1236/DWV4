@@ -2,6 +2,7 @@ import { mutation, query } from "./_generated/server";
 import { v } from "convex/values";
 import type { Id } from "./_generated/dataModel";
 import { CHARACTER_XP, awardXpIfNotExists } from "./characterAwards";
+import { requireAdmin, requireMaintenanceKey, requireUserMatch, toSafeUser } from "./authz";
 
 const DEFAULT_UNLOCK_EXPIRY_MS = 24 * 60 * 60 * 1000;
 
@@ -64,10 +65,20 @@ async function getReadinessSummary(ctx: any, userId: Id<"users">, majorObjective
 
 export const getMajorMasteryState = query({
   args: {
+    token: v.optional(v.string()),
+    adminToken: v.optional(v.string()),
     userId: v.id("users"),
     majorObjectiveId: v.id("majorObjectives"),
   },
   handler: async (ctx, args) => {
+    if (args.adminToken) {
+      await requireAdmin(ctx, args.adminToken);
+    } else if (args.token) {
+      await requireUserMatch(ctx, args.token, args.userId);
+    } else {
+      throw new Error("Unauthorized");
+    }
+
     const now = Date.now();
     const [assignment, majorObjective, latestAttempt, latestUnlock, latestUnlockRequest, readiness] =
       await Promise.all([
@@ -221,12 +232,14 @@ export const getMajorMasteryState = query({
 
 export const requestViva = mutation({
   args: {
+    token: v.string(),
     studentMajorObjectiveId: v.id("studentMajorObjectives"),
     vivaRequestNotes: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
     const assignment = await ctx.db.get(args.studentMajorObjectiveId);
     if (!assignment) throw new Error("Student major objective not found");
+    await requireUserMatch(ctx, args.token, assignment.userId);
     if (assignment.status === "mastered") throw new Error("This objective is already mastered.");
 
     const readiness = await getReadinessSummary(ctx, assignment.userId, assignment.majorObjectiveId);
@@ -251,12 +264,14 @@ export const requestViva = mutation({
 
 export const decideViva = mutation({
   args: {
+    adminToken: v.string(),
     studentMajorObjectiveId: v.id("studentMajorObjectives"),
     decision: v.union(v.literal("mastered"), v.literal("not_ready")),
     decidedBy: v.id("users"),
     decisionNotes: v.string(),
   },
   handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const assignment = await ctx.db.get(args.studentMajorObjectiveId);
     if (!assignment) throw new Error("Student major objective not found");
 
@@ -302,8 +317,9 @@ export const decideViva = mutation({
 });
 
 export const getAdminVivaQueue = query({
-  args: {},
-  handler: async (ctx) => {
+  args: { adminToken: v.string() },
+  handler: async (ctx, args) => {
+    await requireAdmin(ctx, args.adminToken);
     const assignments = await ctx.db
       .query("studentMajorObjectives")
       .collect();
@@ -316,7 +332,7 @@ export const getAdminVivaQueue = query({
     const enriched = await Promise.all(
       vivaRows.map(async (assignment: any) => {
         const [user, majorObjectiveDoc, latestAttempt] = await Promise.all([
-          ctx.db.get(assignment.userId),
+          ctx.db.get(assignment.userId as Id<"users">),
           ctx.db.get(assignment.majorObjectiveId),
           ctx.db
             .query("diagnosticAttempts")
@@ -333,7 +349,7 @@ export const getAdminVivaQueue = query({
         return {
           _id: assignment._id,
           userId: assignment.userId,
-          user,
+          user: user ? toSafeUser(user) : null,
           objective: majorObjective,
           domain,
           latestAttempt,
@@ -349,8 +365,9 @@ export const getAdminVivaQueue = query({
 });
 
 export const migrateLegacyVivaStatus = mutation({
-  args: {},
-  handler: async (ctx) => {
+  args: { maintenanceKey: v.optional(v.string()) },
+  handler: async (ctx, args) => {
+    requireMaintenanceKey(args.maintenanceKey);
     const assignments = await ctx.db
       .query("studentMajorObjectives")
       .collect();

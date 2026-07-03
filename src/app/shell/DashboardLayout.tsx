@@ -17,7 +17,7 @@ import { ImagePlus, MessageSquare } from "lucide-react";
  * Wrapped in CheckInGate to enforce daily emotional check-in
  */
 export function DashboardLayout() {
-  const { user } = useAuth();
+  const { user, token } = useAuth();
   const location = useLocation();
   const { pathname } = location;
   const hideChangelog = pathname === "/vision-board";
@@ -65,7 +65,7 @@ export function DashboardLayout() {
   };
 
   const handleSubmitComment = async () => {
-    if (!user?._id) return;
+    if (!user?._id || !token) return;
     const message = commentText.trim();
     if (!message && commentImages.length === 0) {
       setCommentError("Please add a comment or at least one image.");
@@ -83,7 +83,7 @@ export function DashboardLayout() {
       }> = [];
 
       for (const file of commentImages) {
-        const { uploadUrl } = await generateUploadUrl({});
+        const { uploadUrl } = await generateUploadUrl({ token });
         const uploadRes = await fetch(uploadUrl, {
           method: "POST",
           headers: {
@@ -111,6 +111,7 @@ export function DashboardLayout() {
 
       const route = `${location.pathname}${location.search}${location.hash}`;
       await submitComment({
+        token,
         userId: user._id as any,
         message,
         route,

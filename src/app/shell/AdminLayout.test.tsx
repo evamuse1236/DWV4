@@ -11,6 +11,9 @@ vi.mock("@convex/_generated/api", () => ({
     users: {
       getAll: "users.getAll",
     },
+    assignments: {
+      getConfirmationQueue: "assignments.getConfirmationQueue",
+    },
   },
 }));
 
@@ -77,19 +80,20 @@ describe("AdminLayout", () => {
     expect(screen.getByText("Coach Work")).toBeInTheDocument();
     expect(screen.getByText("Manage")).toBeInTheDocument();
 
-    for (const label of ["Dashboard", "Students", "Objectives", "Viva", "Diagnostics"]) {
+    for (const label of ["Today", "Students", "Units", "Confirmations"]) {
       expect(screen.getByText(label)).toBeInTheDocument();
     }
 
-    for (const label of ["Sprints", "Books", "Norms", "Trust Jar", "Settings"]) {
+    for (const label of ["Sprints", "Data", "Books", "Norms", "Trust Jar", "Settings"]) {
       expect(screen.getByText(label)).toBeInTheDocument();
     }
   });
 
-  it("removes projects, character, and comments from the admin shell", () => {
+  it("removes retired queues, character, and comments from the admin shell", () => {
     renderLayout();
 
-    expect(screen.queryByText("Projects")).not.toBeInTheDocument();
+    expect(screen.queryByText("Viva")).not.toBeInTheDocument();
+    expect(screen.queryByText("Diagnostics")).not.toBeInTheDocument();
     expect(screen.queryByText("Character")).not.toBeInTheDocument();
     expect(screen.queryByText("Comments")).not.toBeInTheDocument();
   });

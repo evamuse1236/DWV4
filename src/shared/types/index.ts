@@ -256,6 +256,7 @@ export interface StudentBook {
 // ============ AUTH CONTEXT TYPES ============
 export interface AuthContextType {
   user: User | null;
+  token: string | null;
   isLoading: boolean;
   login: (username: string, password: string) => Promise<boolean>;
   logout: () => Promise<void>;

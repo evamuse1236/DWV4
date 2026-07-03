@@ -55,6 +55,7 @@ vi.mock("@/features/auth/hooks/useAuth", () => ({
       displayName: "Test Student",
       role: "student",
     },
+    token: "test-token",
   })),
 }));
 
@@ -209,12 +210,14 @@ describe("ReadingPage", () => {
 
     await waitFor(() => {
       expect(mockStartReading).toHaveBeenCalledWith({
+        token: "test-token",
         userId: "user_123",
         bookId: "book_1",
       });
     });
     await waitFor(() => {
       expect(mockFinishBook).toHaveBeenCalledWith({
+        token: "test-token",
         studentBookId: "studentBook_new",
         rating: 4,
         review: "Great pacing and characters.",
@@ -234,6 +237,7 @@ describe("ReadingPage", () => {
 
     await waitFor(() => {
       expect(mockSaveReviewDraft).toHaveBeenCalledWith({
+        token: "test-token",
         studentBookId: "studentBook_1",
         rating: 4,
         review: "Draft update",
@@ -255,6 +259,7 @@ describe("ReadingPage", () => {
 
     await waitFor(() => {
       expect(mockAddReviewComment).toHaveBeenCalledWith({
+        token: "test-token",
         studentBookId: "studentBook_2",
         userId: "user_123",
         message: "I agree",
@@ -288,6 +293,7 @@ describe("ReadingPage", () => {
 
     await waitFor(() => {
       expect(mockSubmitReview).toHaveBeenCalledWith({
+        token: "test-token",
         studentBookId: "studentBook_finished",
         rating: 3,
         review: "Worth reading for the world-building.",
@@ -308,6 +314,7 @@ describe("ReadingPage", () => {
 
     await waitFor(() => {
       expect(mockMarkAlreadyRead).toHaveBeenCalledWith({
+        token: "test-token",
         userId: "user_123",
         bookId: "book_1",
       });
@@ -325,6 +332,7 @@ describe("ReadingPage", () => {
 
     await waitFor(() => {
       expect(mockCreateStudentSubmission).toHaveBeenCalledWith({
+        token: "test-token",
         userId: "user_123",
         title: "New Library Book",
         author: "New Author",
@@ -333,6 +341,7 @@ describe("ReadingPage", () => {
 
     await waitFor(() => {
       expect(mockMarkAlreadyRead).toHaveBeenCalledWith({
+        token: "test-token",
         userId: "user_123",
         bookId: "book_new",
       });

@@ -5,6 +5,23 @@ import { WHATS_NEW } from "@/shared/data/whatsNew.generated";
 // Key for storing last viewed date in localStorage
 const LAST_VIEWED_KEY = "changelog-last-viewed";
 
+// Entries are generated from git commits; students should read release notes,
+// not commit logs. Strip conventional-commit prefixes and dev-facing fallbacks.
+const COMMIT_PREFIX_PATTERN = /^(feat|fix|chore|docs|refactor|style|test|perf|build|ci)(\([^)]*\))?!?:\s*/i;
+
+function humanizeTitle(title: string): string {
+  const cleaned = title.replace(COMMIT_PREFIX_PATTERN, "").trim();
+  if (!cleaned) return "Improvements around the app";
+  return cleaned.charAt(0).toUpperCase() + cleaned.slice(1);
+}
+
+function humanizeDescription(description: string): string {
+  if (/shipped in commit [0-9a-f]{7,}/i.test(description) || !description.trim()) {
+    return "Fresh improvements are live across the app.";
+  }
+  return description;
+}
+
 export function Changelog() {
   const [isExpanded, setIsExpanded] = useState(false);
   const [hasUnread, setHasUnread] = useState(false);
@@ -100,8 +117,10 @@ export function Changelog() {
             WHATS_NEW.map((entry, index) => (
               <div key={index} className={styles["changelog-entry"]}>
                 <div className={styles["entry-date"]}>{entry.date}</div>
-                <h3 className={styles["entry-title"]}>{entry.title}</h3>
-                <p className={styles["entry-description"]}>{entry.description}</p>
+                <h3 className={styles["entry-title"]}>{humanizeTitle(entry.title)}</h3>
+                <p className={styles["entry-description"]}>
+                  {humanizeDescription(entry.description)}
+                </p>
               </div>
             ))
           ) : (

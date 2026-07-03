@@ -244,9 +244,19 @@ function writeCell(target: SheetConfig, cell: string, value: string) {
 }
 
 function getDraftReport() {
+  const maintenanceKey = process.env.CONVEX_MAINTENANCE_KEY;
+  if (!maintenanceKey) {
+    throw new Error("CONVEX_MAINTENANCE_KEY is required to generate Q3 daily goal drafts.");
+  }
+
   return runJson<DraftReport>(
     NPX,
-    ["convex", "run", "reporting:generateQ3DailyGoalsDrafts"],
+    [
+      "convex",
+      "run",
+      "reporting:generateQ3DailyGoalsDrafts",
+      JSON.stringify({ maintenanceKey }),
+    ],
     DW_REPO
   );
 }

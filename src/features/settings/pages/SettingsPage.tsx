@@ -203,9 +203,9 @@ export function SettingsPage() {
 
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-3xl">Settings</h1>
-        <p className="text-sm text-gray-600 mt-1">
+      <div className="mb-10">
+        <h1>Settings</h1>
+        <p className="mt-2 text-sm text-[var(--color-taupe)]">
           Manage your account credentials and profile photo.
         </p>
       </div>
@@ -228,7 +228,7 @@ export function SettingsPage() {
           )}
 
           <div className="flex items-center gap-4">
-            <div className="h-16 w-16 rounded-full border border-gray-200 bg-gray-100 overflow-hidden flex items-center justify-center text-lg font-semibold text-gray-600">
+            <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-full border border-[var(--color-divider)] bg-[var(--color-ss-sage)] text-lg font-semibold text-[var(--color-espresso)]">
               {avatarUrlInput.trim() ? (
                 <img
                   src={avatarUrlInput.trim()}
@@ -239,7 +239,7 @@ export function SettingsPage() {
                 (user?.displayName?.charAt(0).toUpperCase() ?? "?")
               )}
             </div>
-            <p className="text-sm text-gray-600">
+            <p className="text-sm text-[var(--color-taupe)]">
               Use <code>https://.../profile.gif</code> or <code>data:image/...;base64,...</code>.
             </p>
           </div>
@@ -371,11 +371,11 @@ export function SettingsPage() {
         />
         <CardContent className="space-y-4">
           {!token ? (
-            <p className="text-sm text-gray-600">Sign in to view friends.</p>
+            <p className="text-sm text-[var(--color-taupe)]">Sign in to view friends.</p>
           ) : friendProfiles === undefined ? (
-            <p className="text-sm text-gray-600">Loading friends…</p>
+            <p className="text-sm text-[var(--color-taupe)]">Loading friends…</p>
           ) : friendsWithPhotos.length === 0 ? (
-            <p className="text-sm text-gray-600">No friends with profile photos yet.</p>
+            <p className="text-sm text-[var(--color-taupe)]">No friends with profile photos yet.</p>
           ) : (
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
               {friendsWithPhotos.map((friend: any) => (
@@ -383,9 +383,9 @@ export function SettingsPage() {
                   key={friend._id}
                   type="button"
                   onClick={() => setExpandedFriendId(friend._id)}
-                  className="rounded-xl border border-gray-200 bg-white p-2 text-left hover:border-gray-300 hover:shadow-sm transition"
+                  className="rounded-xl border border-[var(--color-divider)] bg-white/70 p-2 text-left transition hover:bg-white hover:shadow-sm"
                 >
-                  <div className="aspect-square w-full overflow-hidden rounded-lg bg-gray-100">
+                  <div className="aspect-square w-full overflow-hidden rounded-lg bg-[var(--color-canvas)]">
                     <img
                       src={friend.avatarUrl}
                       alt={`${friend.displayName} profile`}
@@ -393,10 +393,10 @@ export function SettingsPage() {
                       loading="lazy"
                     />
                   </div>
-                  <p className="mt-2 text-sm font-medium text-gray-900 truncate">
+                  <p className="mt-2 text-sm font-medium text-[var(--color-espresso)] truncate">
                     {friend.displayName}
                   </p>
-                  <p className="text-xs text-gray-600 truncate">@{friend.username}</p>
+                  <p className="text-xs text-[var(--color-taupe)] truncate">@{friend.username}</p>
                 </button>
               ))}
             </div>
@@ -415,7 +415,7 @@ export function SettingsPage() {
             <img
               src={expandedFriend.avatarUrl}
               alt={`${expandedFriend.displayName} expanded profile`}
-              className="max-h-[70vh] w-auto max-w-full rounded-xl border border-gray-200"
+              className="max-h-[70vh] w-auto max-w-full rounded-xl border border-[var(--color-divider)]"
             />
           </div>
         ) : null}

@@ -11,10 +11,12 @@ import { cn } from "@/shared/lib/utils";
 import type {
   VisionBoardCard,
   ColorVariant,
-  CardSize,
 } from "@/features/vision-board/hooks/useVisionBoard";
-import { ALLOWED_SIZES } from "@/features/vision-board/hooks/useVisionBoard";
+import type { SizeStep } from "@/features/vision-board/engine/types";
+import { STEP_LABELS } from "@/features/vision-board/engine/sizeLadder";
 import { PhIcon, ICON_OPTIONS } from "./PhIcon";
+
+const SIZE_STEP_OPTIONS: SizeStep[] = [1, 2, 3, 4];
 
 // ---------------------------------------------------------------------------
 // Constants
@@ -58,8 +60,6 @@ export function CardDetailSheet({ card, open, onOpenChange, onUpdate, onDelete }
   function patch(p: Partial<VisionBoardCard>) {
     onUpdate(card!.id, p);
   }
-
-  const allowed = ALLOWED_SIZES[card.cardType];
 
   return (
     <Sheet open={open} onOpenChange={(v) => { if (!v) handleClose(); else onOpenChange(v); }}>
@@ -375,19 +375,19 @@ export function CardDetailSheet({ card, open, onOpenChange, onUpdate, onDelete }
               Size
             </label>
             <div className="flex gap-2 flex-wrap">
-              {allowed.map((s: CardSize) => (
+              {SIZE_STEP_OPTIONS.map((s) => (
                 <button
                   key={s}
                   type="button"
-                  onClick={() => patch({ size: s })}
+                  onClick={() => patch({ sizeStep: s })}
                   className={cn(
                     "px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-[0.08em] transition-all",
-                    s === card.size
+                    s === card.sizeStep
                       ? "bg-[var(--color-text)] text-white"
                       : "bg-white/60 border border-black/5 hover:bg-white/80",
                   )}
                 >
-                  {s}
+                  {STEP_LABELS[s]}
                 </button>
               ))}
             </div>

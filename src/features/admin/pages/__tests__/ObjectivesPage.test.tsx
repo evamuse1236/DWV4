@@ -80,6 +80,7 @@ vi.mock("@/features/auth/hooks/useAuth", () => ({
       displayName: "Admin User",
       role: "admin",
     },
+    token: "test-admin-token",
     isLoading: false,
     login: vi.fn(),
     logout: vi.fn(),
@@ -680,7 +681,10 @@ describe("ObjectivesPage", () => {
       );
 
       await waitFor(() => {
-        expect(mockRemoveMajor).toHaveBeenCalledWith({ objectiveId: "major_1" });
+        expect(mockRemoveMajor).toHaveBeenCalledWith({
+          adminToken: "test-admin-token",
+          objectiveId: "major_1",
+        });
       });
 
       confirmSpy.mockRestore();
@@ -846,7 +850,10 @@ describe("ObjectivesPage", () => {
       );
 
       await waitFor(() => {
-        expect(mockRemoveSubObjective).toHaveBeenCalledWith({ objectiveId: "sub_1" });
+        expect(mockRemoveSubObjective).toHaveBeenCalledWith({
+          adminToken: "test-admin-token",
+          objectiveId: "sub_1",
+        });
       });
 
       confirmSpy.mockRestore();
@@ -1326,7 +1333,10 @@ describe("ObjectivesPage", () => {
 
       // Verify the mutation was attempted
       await waitFor(() => {
-        expect(mockRemoveMajor).toHaveBeenCalledWith({ objectiveId: "major_1" });
+        expect(mockRemoveMajor).toHaveBeenCalledWith({
+          adminToken: "test-admin-token",
+          objectiveId: "major_1",
+        });
       });
 
       // The error is stored in state but only displayed in dialogs

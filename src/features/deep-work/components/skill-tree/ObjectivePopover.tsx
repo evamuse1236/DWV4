@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect, useCallback, useMemo } from "react";
-import { useMutation, useQuery } from "convex/react";
+import { useMutation } from "convex/react";
 import {
   Play,
   PencilLine,
@@ -13,7 +13,7 @@ import { api } from "@convex/_generated/api";
 import type { Id } from "@convex/_generated/dataModel";
 import { getDomainConfig } from "@/shared/lib/skill-tree-utils";
 import { cn } from "@/shared/lib/utils";
-import { MasteryStatusCard } from "@/features/mastery/components/MasteryStatusCard";
+import { AssignmentCard } from "@/features/assignments/components/AssignmentCard";
 import styles from "./skill-tree.module.css";
 
 const activityIcons: Record<string, typeof Circle> = {
@@ -81,6 +81,7 @@ type SelectedNode =
   | { type: "sub"; data: SubNode };
 
 interface ObjectivePopoverProps {
+  token: string;
   userId: Id<"users">;
   domainName: string | null;
   selectedNode: SelectedNode | null;
@@ -100,6 +101,7 @@ function isSubObjectiveCompleted(sub: SubObjectiveNode): boolean {
 }
 
 export function ObjectivePopover({
+  token,
   userId,
   domainName,
   selectedNode,
@@ -113,13 +115,6 @@ export function ObjectivePopover({
     if (selectedNode.type === "sub") return selectedNode.data.majorObjective._id;
     return selectedNode.data.majorObjective._id;
   }, [selectedNode]);
-
-  const masteryState = useQuery(
-    api.mastery.getMajorMasteryState,
-    selectedMajorObjectiveId
-      ? { userId, majorObjectiveId: selectedMajorObjectiveId }
-      : "skip"
-  );
 
   // Panel width state for resizing
   const [panelWidth, setPanelWidth] = useState(DEFAULT_WIDTH);
@@ -174,6 +169,7 @@ export function ObjectivePopover({
 
     // Fire mutation (don't await - let it sync in background)
     toggleActivity({
+      token,
       userId,
       activityId,
       studentObjectiveId,
@@ -208,12 +204,10 @@ export function ObjectivePopover({
   };
 
   if (selectedNode.type === "sub") {
-    const { subObjective, majorAssignment } = selectedNode.data;
+    const { subObjective } = selectedNode.data;
     const { objective, activities } = subObjective;
     const firstActivityType = activities[0]?.type || "default";
     const IconComponent = activityIcons[firstActivityType] || activityIcons.default;
-
-    const mastered = majorAssignment?.status === "mastered";
 
     return (
       <div
@@ -282,20 +276,16 @@ export function ObjectivePopover({
             </ul>
           )}
 
-          {masteryState ? (
+          {selectedMajorObjectiveId ? (
             <div className="mt-6">
-              <MasteryStatusCard
-                state={masteryState as any}
-                masteryHref={`/deep-work/mastery/${selectedMajorObjectiveId}`}
+              <AssignmentCard
+                token={token}
+                userId={userId}
+                majorObjectiveId={selectedMajorObjectiveId as Id<"majorObjectives">}
+                assignmentHref={`/deep-work/mastery/${selectedMajorObjectiveId}`}
               />
             </div>
           ) : null}
-
-          {mastered && (
-            <div className="text-center py-2 text-green-600 font-medium font-display italic text-lg">
-              Mastered
-            </div>
-          )}
         </div>
 
         {/* Resize handle */}
@@ -307,8 +297,7 @@ export function ObjectivePopover({
     );
   }
 
-  const { majorObjective, subObjectives, assignment } = selectedNode.data;
-  const mastered = assignment?.status === "mastered";
+  const { majorObjective, subObjectives } = selectedNode.data;
 
   return (
     <div
@@ -351,20 +340,16 @@ export function ObjectivePopover({
           </ul>
         )}
 
-        {masteryState ? (
+        {selectedMajorObjectiveId ? (
           <div className="mt-6">
-            <MasteryStatusCard
-              state={masteryState as any}
-              masteryHref={`/deep-work/mastery/${selectedMajorObjectiveId}`}
+            <AssignmentCard
+              token={token}
+              userId={userId}
+              majorObjectiveId={selectedMajorObjectiveId as Id<"majorObjectives">}
+              assignmentHref={`/deep-work/mastery/${selectedMajorObjectiveId}`}
             />
           </div>
         ) : null}
-
-        {mastered && (
-          <div className="text-center py-2 text-green-600 font-medium font-display italic text-lg">
-            Mastered
-          </div>
-        )}
       </div>
 
       {/* Resize handle */}

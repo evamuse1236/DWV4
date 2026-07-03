@@ -111,7 +111,7 @@ function BookCover({
 }
 
 export function ReadingPage() {
-  const { user } = useAuth();
+  const { user, token } = useAuth();
   const [activeTab, setActiveTab] = useState<TabType>("library");
   const [handledDeepLink, setHandledDeepLink] = useState(false);
   const [optimisticBookIds, setOptimisticBookIds] = useState<Set<Id<"books">>>(new Set());
@@ -128,12 +128,12 @@ export function ReadingPage() {
   const deferredSearchQuery = useDeferredValue(searchQuery);
 
   const allBooks = useQuery(api.books.getAll) as BookRecord[] | undefined;
-  const myBooks = useQuery(api.books.getStudentBooks, user ? { userId: user._id as any } : "skip") as StudentBookRecord[] | undefined;
-  const readingStats = useQuery(api.books.getReadingStats, user ? { userId: user._id as any } : "skip") as
+  const myBooks = useQuery(api.books.getStudentBooks, user && token ? { token, userId: user._id as any } : "skip") as StudentBookRecord[] | undefined;
+  const readingStats = useQuery(api.books.getReadingStats, user && token ? { token, userId: user._id as any } : "skip") as
     | { reading: number; finished?: number; reviewed?: number; approved?: number; presented?: number }
     | undefined;
   const approvedReviews = useQuery(api.books.getApprovedReviews) as Array<StudentBookRecord & { user?: any }> | undefined;
-  const readingHistory = useQuery(api.books.getReadingHistory, user ? { userId: user._id as any } : "skip") as
+  const readingHistory = useQuery(api.books.getReadingHistory, user && token ? { token, userId: user._id as any } : "skip") as
     | Array<{ title: string; author: string; genre?: string; rating?: number; status?: string }>
     | undefined;
   const reviewComments = useQuery(
@@ -223,9 +223,9 @@ export function ReadingPage() {
   }, [handledDeepLink, allBooks, openBook]);
 
   const ensureBookStarted = async () => {
-    if (!selectedBook || !user) return null;
+    if (!selectedBook || !user || !token) return null;
     if (selectedBook.myBook?._id) return selectedBook.myBook._id;
-    const studentBookId = (await startReading({ userId: user._id as any, bookId: selectedBook._id as any })) as Id<"studentBooks">;
+    const studentBookId = (await startReading({ token, userId: user._id as any, bookId: selectedBook._id as any })) as Id<"studentBooks">;
     setSelectedBook((prev) =>
       prev
         ? { ...prev, myBook: { _id: studentBookId, bookId: prev._id, status: "reading", book: prev } as StudentBookRecord }
@@ -235,9 +235,10 @@ export function ReadingPage() {
   };
 
   const handleMarkAlreadyRead = async (book: BookRecord) => {
-    if (!user) return;
+    if (!user || !token) return;
     setRemovedBookIds((previous) => new Set(previous).add(book._id));
     const studentBookId = (await markAlreadyRead({
+      token,
       userId: user._id as any,
       bookId: book._id as any,
     })) as Id<"studentBooks">;
@@ -262,11 +263,12 @@ export function ReadingPage() {
   };
 
   const handleCreateMissingBook = async (mode: "reading" | "already_read") => {
-    if (!user || !hasMissingBookDraft || isSavingMissingBook) return;
+    if (!user || !token || !hasMissingBookDraft || isSavingMissingBook) return;
 
     setIsSavingMissingBook(true);
     try {
       const result = (await createStudentSubmission({
+        token,
         userId: user._id as any,
         title: missingBookTitle.trim(),
         author: missingBookAuthor.trim(),
@@ -274,11 +276,11 @@ export function ReadingPage() {
 
       if (mode === "reading") {
         setOptimisticBookIds((previous) => new Set(previous).add(result.bookId));
-        await startReading({ userId: user._id as any, bookId: result.bookId as any });
+        await startReading({ token, userId: user._id as any, bookId: result.bookId as any });
         setActiveTab("reading");
       } else {
         setRemovedBookIds((previous) => new Set(previous).add(result.bookId));
-        await markAlreadyRead({ userId: user._id as any, bookId: result.bookId as any });
+        await markAlreadyRead({ token, userId: user._id as any, bookId: result.bookId as any });
         setActiveTab("finished");
       }
 
@@ -291,8 +293,8 @@ export function ReadingPage() {
 
   const onSaveDraft = async () => {
     const studentBookId = await ensureBookStarted();
-    if (!studentBookId || !selectedBook) return;
-    await saveReviewDraft({ studentBookId: studentBookId as any, rating: reviewRating || undefined, review: reviewText });
+    if (!studentBookId || !selectedBook || !token) return;
+    await saveReviewDraft({ token, studentBookId: studentBookId as any, rating: reviewRating || undefined, review: reviewText });
     setSelectedBook((prev) =>
       prev && prev.myBook
         ? { ...prev, myBook: { ...prev.myBook, status: prev.myBook.status === "reading" ? "review_draft" : prev.myBook.status, rating: reviewRating || undefined, review: reviewText } }
@@ -303,9 +305,10 @@ export function ReadingPage() {
   const onSubmitReview = async () => {
     const text = reviewText.trim();
     if (!text) return;
-    if (!selectedBook?.myBook?._id || !selectedBook) return;
+    if (!token || !selectedBook?.myBook?._id || !selectedBook) return;
     if (!DONE_STATUSES.has(selectedBook.myBook.status)) return;
     await submitReview({
+      token,
       studentBookId: selectedBook.myBook._id as any,
       rating: reviewRating || undefined,
       review: text,
@@ -329,8 +332,9 @@ export function ReadingPage() {
 
   const onFinishBook = async () => {
     const studentBookId = await ensureBookStarted();
-    if (!studentBookId || !selectedBook) return;
+    if (!studentBookId || !selectedBook || !token) return;
     await finishBook({
+      token,
       studentBookId: studentBookId as any,
       rating: reviewRating || undefined,
       review: reviewText || undefined,
@@ -376,13 +380,25 @@ export function ReadingPage() {
         />
       </div>
 
-      <div className="glass-card p-5 mb-6 max-w-3xl mx-auto">
-        <div className="flex flex-col gap-3">
+      <details className="glass-card group mb-6 max-w-3xl mx-auto overflow-hidden">
+        <summary className="flex cursor-pointer items-center justify-between gap-3 p-5 list-none [&::-webkit-details-marker]:hidden">
           <div>
-            <p className="text-sm font-semibold text-[var(--color-espresso)]">Add a missing book</p>
-            <p className="text-sm opacity-60">If a book is not in the library yet, add just the title and author. Everyone can see it right away, and an admin can fill in the rest later.</p>
+            <p className="text-sm font-semibold text-[var(--color-espresso)]">
+              Can&apos;t find your book? Add it
+            </p>
+            <p className="text-sm opacity-60">
+              Just the title and author — an admin fills in the rest later.
+            </p>
           </div>
-          <div className="grid gap-3 md:grid-cols-[1.2fr_1fr_auto]">
+          <span
+            aria-hidden
+            className="shrink-0 text-[var(--color-taupe)] transition-transform group-open:rotate-45"
+          >
+            ＋
+          </span>
+        </summary>
+        <div className="flex flex-col gap-3 px-5 pb-5">
+          <div className="grid gap-3 md:grid-cols-2">
             <input
               value={missingBookTitle}
               onChange={(event) => setMissingBookTitle(event.target.value)}
@@ -395,29 +411,33 @@ export function ReadingPage() {
               placeholder="Author"
               className="rounded-2xl border px-4 py-3 bg-white/80"
             />
-            <div className="flex flex-col gap-2 md:flex-row">
-              <button
-                className="btn btn-secondary whitespace-nowrap disabled:opacity-50"
-                disabled={!hasMissingBookDraft || isSavingMissingBook}
-                onClick={() => void handleCreateMissingBook("reading")}
-              >
-                Add To Reading
-              </button>
-              <button
-                className="btn btn-primary whitespace-nowrap disabled:opacity-50"
-                disabled={!hasMissingBookDraft || isSavingMissingBook}
-                onClick={() => void handleCreateMissingBook("already_read")}
-              >
-                Mark Already Read
-              </button>
-            </div>
+          </div>
+          <div className="flex flex-wrap justify-end gap-2">
+            <button
+              className="btn btn-secondary whitespace-nowrap disabled:opacity-50"
+              disabled={!token || !hasMissingBookDraft || isSavingMissingBook}
+              onClick={() => void handleCreateMissingBook("reading")}
+            >
+              Add To Reading
+            </button>
+            <button
+              className="btn btn-primary whitespace-nowrap disabled:opacity-50"
+              disabled={!token || !hasMissingBookDraft || isSavingMissingBook}
+              onClick={() => void handleCreateMissingBook("already_read")}
+            >
+              Mark Already Read
+            </button>
           </div>
         </div>
-      </div>
+      </details>
 
       <div className="flex gap-2 mb-6">
         {(["library", "reading", "finished", "community"] as TabType[]).map((tab) => (
-          <button key={tab} className={`btn ${activeTab === tab ? "btn-primary" : "btn-secondary"}`} onClick={() => setActiveTab(tab)}>
+          <button
+            key={tab}
+            className={`btn capitalize ${activeTab === tab ? "btn-primary" : "btn-secondary"}`}
+            onClick={() => setActiveTab(tab)}
+          >
             {tab}
           </button>
         ))}
@@ -473,6 +493,7 @@ export function ReadingPage() {
                 className="absolute top-2 right-2 z-10 h-10 w-10 min-h-[2.5rem] min-w-[2.5rem] rounded-full bg-[var(--color-card-active)]/95 border border-[var(--color-divider)] text-[var(--color-espresso)] text-xl leading-none flex items-center justify-center shadow-sm opacity-95 md:opacity-0 md:group-hover:opacity-100 md:group-focus-within:opacity-100 hover:bg-red-100 hover:text-red-600 active:bg-red-200 transition-all"
                 onClick={async (event) => {
                   event.stopPropagation();
+                  if (!token) return;
                   setRemovedBookIds((previous) => new Set(previous).add(item.bookId));
                   setOptimisticBookIds((previous) => {
                     if (!previous.has(item.bookId)) return previous;
@@ -481,7 +502,7 @@ export function ReadingPage() {
                     return next;
                   });
                   if (!String(item._id).startsWith("optimistic-")) {
-                    await removeFromMyBooks({ studentBookId: item._id as any });
+                    await removeFromMyBooks({ token, studentBookId: item._id as any });
                   }
                 }}
               >
@@ -574,7 +595,7 @@ export function ReadingPage() {
                       <button
                         className="btn btn-primary inline-flex items-center gap-2"
                         onClick={async () => {
-                          if (!selectedBook || !user) return;
+                          if (!selectedBook || !user || !token) return;
                           const book = selectedBook;
                           window.open(book.readingUrl, "_blank", "noopener,noreferrer");
                           const alreadyStarted = Boolean(book.myBook?._id);
@@ -590,7 +611,7 @@ export function ReadingPage() {
                           setActiveTab("reading");
                           setSelectedBook(null);
                           if (!alreadyStarted) {
-                            await startReading({ userId: user._id as any, bookId: book._id as any });
+                            await startReading({ token, userId: user._id as any, bookId: book._id as any });
                           }
                         }}
                       >
@@ -678,10 +699,10 @@ export function ReadingPage() {
               <textarea className="w-full border rounded-lg p-3 min-h-[90px]" value={commentText} onChange={(event) => setCommentText(event.target.value)} placeholder="Add a comment..." />
               <button
                 className="btn btn-primary mt-3 disabled:opacity-50"
-                disabled={!commentText.trim() || !user}
+                disabled={!commentText.trim() || !user || !token}
                 onClick={async () => {
-                  if (!user || !activeReviewId || !commentText.trim()) return;
-                  await addReviewComment({ studentBookId: activeReviewId as any, userId: user._id as any, message: commentText });
+                  if (!user || !token || !activeReviewId || !commentText.trim()) return;
+                  await addReviewComment({ token, studentBookId: activeReviewId as any, userId: user._id as any, message: commentText });
                   setCommentText("");
                 }}
               >
@@ -694,16 +715,17 @@ export function ReadingPage() {
 
       {allBooks ? (
         <BookBuddy
+          token={token}
           readingHistory={(readingHistory || []).map((item) => ({ ...item, status: item.status || "unknown" }))}
           availableBooks={(allBooks || [])
             .filter((book) => !myBooksMap.has(book._id))
             .map((book) => ({ id: book._id, title: book.title, author: book.author, genre: book.genre, description: book.description, coverImageUrl: book.coverImageUrl }))}
           onStartReading={(bookId) => {
-            if (!user) return;
-            void startReading({ userId: user._id as any, bookId: bookId as any });
+            if (!user || !token) return;
+            void startReading({ token, userId: user._id as any, bookId: bookId as any });
             setActiveTab("reading");
           }}
-          disabled={Boolean(selectedBook || activeReviewId)}
+          disabled={Boolean(selectedBook || activeReviewId) || !token}
         />
       ) : null}
     </div>

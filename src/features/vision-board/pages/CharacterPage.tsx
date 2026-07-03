@@ -25,10 +25,10 @@ function CharacterSkeleton() {
 }
 
 export function CharacterPage() {
-  const { user } = useAuth();
+  const { user, token } = useAuth();
   const character = useQuery(
     api.character.getMyCharacter,
-    user ? { userId: user._id as any } : "skip"
+    user && token ? { token, userId: user._id as any } : "skip"
   );
   const equipCard = useMutation(api.character.equipCard);
   const [equippingCardId, setEquippingCardId] = useState<string | null>(null);
@@ -44,10 +44,11 @@ export function CharacterPage() {
   }, [character, displayActiveCardId]);
 
   const handleEquip = async (tarotCardId: string) => {
-    if (!user) return;
+    if (!user || !token) return;
     setEquippingCardId(tarotCardId);
     try {
       await equipCard({
+        token,
         userId: user._id as any,
         tarotCardId: tarotCardId as any,
       });

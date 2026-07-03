@@ -16,7 +16,10 @@ vi.mock("convex/react", () => ({
 vi.mock("@convex/_generated/api", () => ({
   api: {
     progress: { toggleActivity: "progress.toggleActivity" },
-    mastery: { getMajorMasteryState: "mastery.getMajorMasteryState" },
+    assignments: {
+      getAssignmentState: "assignments.getAssignmentState",
+      submitWork: "assignments.submitWork",
+    },
   },
 }));
 
@@ -55,35 +58,18 @@ vi.mock("@phosphor-icons/react", () => ({
 import { useQuery } from "convex/react";
 import { ObjectivePopover } from "./ObjectivePopover";
 
-const masteryState = {
+const assignmentState = {
+  studentMajorObjectiveId: "major_assignment_1",
   majorObjective: { _id: "major_1", title: "Programming Basics" },
   domain: { _id: "domain_1", name: "Coding" },
-  majorAssignment: {
-    studentMajorObjectiveId: "major_assignment_1",
-    status: "in_progress",
-    vivaStatus: "requested",
-    vivaDecisionNotes: "Explain variables in your own words.",
-  },
-  readiness: {
+  status: "rejected",
+  rawStatus: "rejected",
+  work: {
     totalSubObjectives: 1,
     completedSubObjectives: 1,
-    allSubObjectivesComplete: true,
+    allWorkComplete: true,
   },
-  latestAttempt: {
-    attemptId: "attempt_1",
-    passed: false,
-    score: 4,
-    questionCount: 10,
-    scorePercent: 40,
-    diagnosticModuleName: "Variables",
-  },
-  retake: { pendingRequest: null, latestDecision: null, activeUnlock: null },
-  actions: {
-    canStartDiagnostic: false,
-    canRequestViva: false,
-    canRequestRetake: true,
-  },
-  nextStep: "await_viva_decision",
+  confirmationNotes: "Explain variables in your own words.",
 };
 
 const subNode = {
@@ -165,7 +151,7 @@ describe("ObjectivePopover", () => {
   beforeEach(() => {
     vi.clearAllMocks();
     (useQuery as any).mockImplementation((query: string) => {
-      if (query === "mastery.getMajorMasteryState") return masteryState;
+      if (query === "assignments.getAssignmentState") return assignmentState;
       return undefined;
     });
   });
@@ -177,7 +163,7 @@ describe("ObjectivePopover", () => {
     expect(container.firstChild).toBeNull();
   });
 
-  it("renders mastery summary inside the major view", () => {
+  it("renders the assignment summary inside the major view", () => {
     renderPopover({
       userId: "user_1" as any,
       domainName: "Coding",
@@ -186,7 +172,7 @@ describe("ObjectivePopover", () => {
 
     expect(screen.getByText("Programming Basics")).toBeInTheDocument();
     expect(screen.getByText("Coach note")).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: /open mastery/i })).toHaveAttribute(
+    expect(screen.getByRole("link", { name: /open assignment/i })).toHaveAttribute(
       "href",
       "/deep-work/mastery/major_1"
     );

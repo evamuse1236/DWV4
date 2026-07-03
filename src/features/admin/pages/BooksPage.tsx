@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "@convex/_generated/api";
+import { useAuth } from "@/features/auth/hooks/useAuth";
 import { Card, CardContent, CardHeader } from "@/shared/ui/card";
 import { Button } from "@/shared/ui/button";
 import { Input } from "@/shared/ui/input";
@@ -31,11 +32,11 @@ import {
   SelectValue,
 } from "@/shared/ui/select";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/shared/ui/tabs";
-import { parseBulkPaste, parseSpreadsheetFile, type ImportBookRow, type ImportIssue } from "@/features/admin/lib/bookImport";
+import { parseBulkPaste, parseDelimitedBookFile, type ImportBookRow, type ImportIssue } from "@/features/admin/lib/bookImport";
 import {
   BookOpen,
   ExternalLink,
-  FileSpreadsheet,
+  FileText,
   Loader2,
   Pencil,
   Plus,
@@ -167,6 +168,7 @@ function buildImportSummary(rows: ImportBookRow[], issues: ImportIssue[]) {
 }
 
 export function BooksPage() {
+  const { token } = useAuth();
   const books = (useQuery(api.books.getAll) as Book[] | undefined) ?? [];
   const createBook = useMutation(api.books.create);
   const updateBook = useMutation(api.books.update);
@@ -232,11 +234,13 @@ export function BooksPage() {
   };
 
   const handleCreateBook = async () => {
+    if (!token) return;
     setIsLoading(true);
     setError(null);
 
     try {
       await createBook({
+        adminToken: token,
         title: bookForm.title,
         author: bookForm.author,
         genre: bookForm.genre || undefined,
@@ -271,12 +275,13 @@ export function BooksPage() {
   };
 
   const handleUpdateBook = async () => {
-    if (!selectedBook) return;
+    if (!selectedBook || !token) return;
     setIsLoading(true);
     setError(null);
 
     try {
       await updateBook({
+        adminToken: token,
         bookId: selectedBook._id as any,
         title: bookForm.title,
         author: bookForm.author,
@@ -298,10 +303,10 @@ export function BooksPage() {
   };
 
   const handleDeleteBook = async () => {
-    if (!selectedBook) return;
+    if (!selectedBook || !token) return;
     setIsLoading(true);
     try {
-      await removeBook({ bookId: selectedBook._id as any });
+      await removeBook({ adminToken: token, bookId: selectedBook._id as any });
       setIsDeleteDialogOpen(false);
       setSelectedBook(null);
     } catch {
@@ -318,25 +323,26 @@ export function BooksPage() {
     setImportError(rows.length === 0 ? "No valid rows were found in the pasted text." : null);
   };
 
-  const prepareSpreadsheetImport = async (file: File | undefined) => {
+  const prepareDelimitedFileImport = async (file: File | undefined) => {
     if (!file) return;
     setSelectedFileName(file.name);
     setImportError(null);
     try {
-      const { rows, invalidRows } = await parseSpreadsheetFile(file);
+      const { rows, invalidRows } = await parseDelimitedBookFile(file);
       setPreparedRows(rows);
       setPreparedIssues(invalidRows);
       if (rows.length === 0) {
-        setImportError("No valid rows were found in that spreadsheet.");
+        setImportError("No valid rows were found in that file.");
       }
     } catch {
       setPreparedRows([]);
       setPreparedIssues([]);
-      setImportError("That file could not be read. Try a CSV, TSV, or XLSX export.");
+      setImportError("That file could not be read. Try a CSV or TSV export.");
     }
   };
 
   const handleRunImport = async () => {
+    if (!token) return;
     if (preparedRows.length === 0) {
       setImportError("Add some valid rows before importing.");
       return;
@@ -346,6 +352,7 @@ export function BooksPage() {
     setImportError(null);
     try {
       const result = (await bulkImport({
+        adminToken: token,
         rows: preparedRows.map((row) => ({
           title: row.title,
           author: row.author,
@@ -379,12 +386,18 @@ export function BooksPage() {
 
   return (
     <div className="space-y-6">
-      <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+      <div className="mb-2 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
         <div>
-          <h1 className="text-2xl font-serif font-semibold">Book Library</h1>
-          <p className="text-muted-foreground">Curate the student library, clean up drafts, and bulk-add existing books without one-by-one pain.</p>
+          <p className="mb-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+            Manage
+          </p>
+          <h1>Book Library</h1>
+          <p className="mt-1.5 max-w-2xl text-sm text-muted-foreground">
+            Curate the student library, clean up drafts, and bulk-add existing books without
+            one-by-one pain.
+          </p>
         </div>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2 pb-1">
           <Dialog
             open={isImportDialogOpen}
             onOpenChange={(open) => {
@@ -402,14 +415,14 @@ export function BooksPage() {
               <DialogHeader>
                 <DialogTitle>Bulk Import Books</DialogTitle>
                 <DialogDescription>
-                  Paste `Title - Author` rows or upload a spreadsheet export. Existing matches are updated only where details are missing.
+                  Paste `Title - Author` rows or upload a CSV/TSV export. Existing matches are updated only where details are missing.
                 </DialogDescription>
               </DialogHeader>
 
               <Tabs value={importMode} onValueChange={(value) => setImportMode(value as "paste" | "upload")}>
                 <TabsList>
                   <TabsTrigger value="paste">Paste list</TabsTrigger>
-                  <TabsTrigger value="upload">Upload spreadsheet</TabsTrigger>
+                  <TabsTrigger value="upload">Upload file</TabsTrigger>
                 </TabsList>
                 <TabsContent value="paste" className="space-y-4">
                   <Textarea
@@ -427,16 +440,16 @@ export function BooksPage() {
                 <TabsContent value="upload" className="space-y-4">
                   <div className="rounded-xl border border-dashed border-muted-foreground/30 p-6">
                     <label className="flex cursor-pointer flex-col items-center gap-3 text-center">
-                      <FileSpreadsheet className="h-8 w-8 text-muted-foreground" />
+                      <FileText className="h-8 w-8 text-muted-foreground" />
                       <div>
-                        <p className="font-medium">Upload CSV, TSV, or XLSX</p>
+                        <p className="font-medium">Upload CSV or TSV</p>
                         <p className="text-sm text-muted-foreground">Required columns: title, author. Optional columns match the current book fields.</p>
                       </div>
                       <Input
                         type="file"
-                        accept=".csv,.tsv,.xlsx"
+                        accept=".csv,.tsv,.txt,text/csv,text/tab-separated-values"
                         className="max-w-sm"
-                        onChange={(event) => void prepareSpreadsheetImport(event.target.files?.[0])}
+                        onChange={(event) => void prepareDelimitedFileImport(event.target.files?.[0])}
                       />
                     </label>
                   </div>

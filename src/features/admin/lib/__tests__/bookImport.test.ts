@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { parseBulkPaste } from "../bookImport";
+import { parseBulkPaste, parseDelimitedBookFile } from "../bookImport";
 
 describe("bookImport helpers", () => {
   it("parses paste rows with supported separators", () => {
@@ -20,6 +20,43 @@ describe("bookImport helpers", () => {
     expect(rows).toEqual([{ title: "Valid Book", author: "Valid Author" }]);
     expect(invalidRows).toEqual([
       { rowNumber: 1, reason: "Use Title - Author or Title | Author" },
+    ]);
+  });
+
+  it("parses headered CSV uploads", async () => {
+    const file = new File(
+      ['title,author,genre,page count\n"Charlotte, the Spider",E.B. White,Fiction,192'],
+      "books.csv",
+      { type: "text/csv" }
+    );
+
+    const { rows, invalidRows } = await parseDelimitedBookFile(file);
+
+    expect(rows).toEqual([
+      {
+        title: "Charlotte, the Spider",
+        author: "E.B. White",
+        genre: "Fiction",
+        pageCount: 192,
+      },
+    ]);
+    expect(invalidRows).toEqual([]);
+  });
+
+  it("parses TSV uploads and reports invalid data rows", async () => {
+    const file = new File(
+      ["title\tauthor\tgrade\nThe Hobbit\tJ.R.R. Tolkien\t6\nMissing Author\t\t7"],
+      "books.tsv",
+      { type: "text/tab-separated-values" }
+    );
+
+    const { rows, invalidRows } = await parseDelimitedBookFile(file);
+
+    expect(rows).toEqual([
+      { title: "The Hobbit", author: "J.R.R. Tolkien", gradeLevel: "6" },
+    ]);
+    expect(invalidRows).toEqual([
+      { rowNumber: 3, reason: "Title and author are required" },
     ]);
   });
 });
